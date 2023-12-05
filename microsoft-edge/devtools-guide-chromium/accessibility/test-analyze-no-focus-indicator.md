@@ -13,7 +13,7 @@ ms.date: 12/04/2023
 
 Keyboard users need to know where they are on a webpage.  When a keyboard user tabs to a link or a button, the link or button should have a visual indication that it has focus.  This visual indication is usually an outline around the focused element.
 
-In the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/), the sidebar navigation menu with blue links doesn't visually indicate which link has focus, when using a keyboard.  Try to tab to the blue links on this page to find out why the lack of visual keyboard focus indication is confusing.  In the following screenshot, the **Cats** link has focus, as evidecend by the target link information displayed in the bottom left corner of the browser window, but there's no visual indication on the link:
+In the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/), the sidebar navigation menu with blue links doesn't visually indicate which link has focus, when using a keyboard.  To find out why the lack of visual keyboard focus indication is confusing, try to tab to the blue links on the demo page.  The blue **Cats** button has focus, as evidenced by the target link information that's displayed in the bottom left corner of the browser window, but there's no visual indication that focus is on that button:
 
 ![The demo webpage, with the Cats links focused, but no visual indication of the focus](./test-analyze-no-focus-indicator-images/no-focus-indication.png)
 
@@ -21,25 +21,25 @@ In the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demo
 <!-- ====================================================================== -->
 ## Analyze the lack of focus indication by using the Sources tool
 
-Use the **Sources** tool to review the CSS styles applied to the link:
+To see what CSS styles are applied to a link, such as a linked button, use the **Sources** tool:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage, and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. Click the **Inspect** (![Inspect icon](./test-analyze-no-focus-indicator-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
-1. Hover over the blue **Cats** link in the page's sidebar navigation menu.  The Inspect overlay appears, showing that the `a` element is keyboard-focusable:
+1. Hover over the blue **Cats** button in the page's sidebar navigation menu.  The Inspect overlay appears, and indicates that the `a` element is **Keyboard-focusable**:
 
    ![The Inspect tool overlay on the link element](./test-analyze-no-focus-indicator-images/using-inspect-tool.png)
 
-   The Inspect overlay doesn't show that the element lacks a visual indication when the link has focus.
+   But the Inspect overlay doesn't show that the element lacks a visual indication when the link has focus.
 
-1. In the rendered webpage, click the **Cats** link.
+1. In the rendered webpage, click the **Cats** button.
 
    The **Inspect** tool turns off, and the **Elements** tool opens, highlighting the `a` node in the DOM tree. The CSS rule `#sidebar nav li a` appears in the **Styles** tab, along with a link to a line number in `styles.css`:
 
-   ![The Elements tool, with the a node highlighted](./test-analyze-no-focus-indicator-images/link-selected.png)
+   ![The Elements tool, with the 'a' node highlighted](./test-analyze-no-focus-indicator-images/link-selected.png)
 
 1. Click the `styles.css` link.  The CSS file opens within the **Sources** tool:
 
@@ -59,7 +59,7 @@ Instead of focusing the link by using a keyboard, you can simulate the focus sta
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.
+1. Right-click anywhere in the webpage, and then select **Inspect**.
 
 1. Click the **Inspect** (![Inspect icon](./test-analyze-no-focus-indicator-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools, and then click the **Cats** link in the rendered webpage. The `<a href="#cats">Cats</a>` node is highlighted in the **Elements** tool.
 

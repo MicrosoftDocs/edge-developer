@@ -14,8 +14,10 @@ This article uses the **Inspect** tool and **Event Listeners** tab to analyze th
 In the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/), in the **Donate** form, the amount buttons and **Donate** button are not accessible with a keyboard.  To test this:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
-1. In the **Help us with a donation**, click in the **Other** text box to focus it.
-1. Try to press **Tab** or **Shift-Tab** to focus the **Donate** button and the **50**, **100**, and **200** donation buttons.  The buttons are not keyboard-accessible.
+
+1. In the **Help us with a donation** section, click in the **Other** text box to put focus on it.
+
+1. Try to press **Tab** or **Shift-Tab** to move focus onto the **Donate**, **50**, **100**, or **200** buttons.  The buttons are not keyboard-accessible.
 
 Debugging the donation form requires understanding why the lack of focus styling isn't flagged as a problem with automatic testing tools like the **Issues** tool.  In this example, the buttons are implemented using `<div>` HTML elements, which aren't recognized by these tools as form controls.
 
@@ -91,6 +93,6 @@ The form's functionality is created by using JavaScript, and you can test this b
     })
     ```
     
-   Using a `click` event listener to run code when a button is used is good practice, because a `click` event fires both on mouse pointer and keyboard interaction.  However, the **Donate** button is implemented by using a `<div>` HTML element which can't be focused with the keyboard. The `click` event only runs when you use a mouse or another source of a `click` event, such as a special button available on some keyboards.
+Using a `click` event listener to run code when a button is used is a good practice, because a `click` event fires both on mouse pointer and keyboard interaction.  However, the **Donate** button is implemented by using a `<div>` HTML element, which can't be focused with the keyboard.  The `click` event only runs when you use a mouse or another source of a `click` event, such as a special button that's available on some keyboards.
 
 This is a classic example where JavaScript was added to recreate the functionality that `<button>` elements provide natively.  Simulating the functionality of buttons by using `<div>` elements ended up producing an inaccessible experience.

@@ -21,11 +21,11 @@ For elements that have text, the **Inspect** tool's information overlay shows th
 
 In some cases, contrast is affected by setting the browser to light theme or dark theme.
 
-As an example, on the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/), the blue links of the sidebar navigation menu have enough contrast, but the green **Dogs** link in the **Donation status** section doesn't have enough contrast.  Review those elements using the **Inspect** tool, as follows:
+As an example, on the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/), the blue links of the sidebar navigation menu have enough contrast, but the green **Dogs** link in the **Donation status** section doesn't have enough contrast.  Examine those elements by using the **Inspect** tool, as follows:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage, and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. Click the **Inspect** (![Inspect button](./test-inspect-text-contrast-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 

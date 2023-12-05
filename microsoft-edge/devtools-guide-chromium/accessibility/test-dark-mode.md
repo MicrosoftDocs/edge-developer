@@ -23,13 +23,15 @@ To emulate a user's selection of preferred color theme:
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. Press **Esc** to open the **Quick View** panel at the bottom of DevTools.  Click the **More tools** (![The More Tools icon](./test-dark-mode-images/more-tools-icon.png)) button at the top of the Quick View toolbar to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
+1. Press **Esc** to open the **Quick View** panel at the bottom of DevTools.
 
-1. In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: light**.  The webpage is re-rendered using `light-theme.css`.
+1. In the **Quick View** toolbar, click the **More tools** (![The More Tools icon](./test-dark-mode-images/more-tools-icon.png)) button, and then select **Rendering**.  The **Rendering** tool opens in the **Quick View** panel.
+
+1. Scroll down to the **Emulate CSS media feature prefers-color-scheme** dropdown list, and then select **prefers-color-scheme: light**.  The webpage is re-rendered using `light-theme.css`:
 
    ![Using the Rendering tool to simulate a light mode and triggering the other theme of the document](./test-dark-mode-images/a11y-testing-simulating-light-mode.png)
 
-1. Open the **Issues** tool in the **Quick View** panel, and then expand the **Accessibility** section.  Depending on various factors, you might get `Insufficient color contrast` warnings. Notice in **AFFECTED RESOURCES** there are 6 elements with insufficient color contrast.
+1. In the **Quick View** panel, select the **Issues** tool, and then expand the **Accessibility** section.  Depending on various factors, you might get `Insufficient color contrast` warnings.  In the **AFFECTED RESOURCES** section of the issue, there are 6 elements that have insufficient color contrast:
 
    ![New contrast issues detected because of the change to light theme](./test-dark-mode-images/a11y-testing-new-contrast-issues-in-light-mode.png)
 
@@ -37,11 +39,11 @@ To emulate a user's selection of preferred color theme:
 
    ![The Donation Status section has contrast issues in light mode](./test-dark-mode-images/a11y-testing-donation-state-light-contrast.png)
 
-1. In DevTools, open the **Elements** tool, and then press **Ctrl+F** on Windows/Linux or **Command+F** on macOS.  The **Find** text box appears, to search within the HTML DOM tree.
+1. In DevTools, open the **Elements** tool, and then press **Ctrl+F** on Windows/Linux or **Command+F** on macOS.  The **Find** text box appears, to search within the HTML DOM tree:
 
    ![The Find text box for the DOM tree in the Elements tool](./test-dark-mode-images/find-in-dom-tree.png)
 
-1. Enter **scheme**.  The following CSS media queries are found, and the corresponding CSS files can now be updated.
+1. Enter **scheme**.  The following CSS media queries are found, and the corresponding CSS files can now be updated:
 
     ```html
     <link rel="stylesheet" href="css/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">

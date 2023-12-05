@@ -23,13 +23,13 @@ To check whether a webpage is usable with blurred vision:
 
 1. In the **Rendering** tool, scroll to the **Emulate vision deficiencies** section.
 
-1. In the **Emulate vision deficiencies** section, select **Blurred vision**.
+1. In the **Emulate vision deficiencies** section, select **Blurred vision**:
 
    ![Simulating a blurred page](./test-blurred-vision-images/testing-simulating-blur.png)
 
-    Notice that the `text-shadow` CSS property makes the text of the menu items difficult to read on the upper menu. For example, see the **Home**, **Adopt a Pet**, and other menu items.
+    Blurred-vision simulation reveals that on the upper menu, the `text-shadow` CSS property makes the text of the menu items (such as **Home** and **Adopt a Pet**) difficult to read.
 
-1. In the **Rendering** tool, in **Emulate vision deficiencies**, select **No emulation** to remove the blurred vision simulation.
+1. To remove the blurred-vision simulation, in the **Rendering** tool, in **Emulate vision deficiencies**, select **No emulation**.
 
 
 <!-- ====================================================================== -->

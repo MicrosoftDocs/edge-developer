@@ -63,7 +63,7 @@ The Live Expression value is displayed in the **Console** as a text preview only
 * An anchor element `<a href="#alpacas">Alpacas</a>` is displayed `a#alpacas` in the Live Expression result.
 * A text box `<input>` is displayed `input` in the Live Expression result.
 
-To know exactly which element has focus in the rendered webpage, use the **Elements** tool as described in the next section.
+To indicate which element has focus in the rendered webpage, use the **Elements** tool as described in the next section.
 
 
 <!-- ====================================================================== -->
@@ -99,7 +99,7 @@ To manipulate the focused element in the **Console** tool, create a reference to
 
    ![The focused element as a new variable in the Console tool](./focus-images/focused-element-variable.png)
 
-1. Use the element in the **Console** tool as necessary by using the `temp1` variable. For example run `temp1.value = "cat"` to change the value of the focused element to "cat":
+1. Use the element in the **Console** tool as necessary by using the `temp1` variable.  For example, run `temp1.value = "cat"` to change the value of the focused element to "cat":
 
    ![The focused element's value is changed to "cat"](./focus-images/focused-element-variable-changed.png)
 

@@ -14,11 +14,11 @@ In contrast, the **Issues** tool automatically reports issues for the entire web
 
 The **Inspect** tool button (![Inspect](./test-inspect-tool-images/inspect-tool-icon-light-theme.png)) is in the upper-left corner of DevTools.  When you click the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
 
-When the **Inspect** tool is active, hovering over any element on the rendered webpage displays the **Inspect** overlay. This overlay displays general information and accessibility information about that element.  The **Accessibility** section of the **Inspect** overlay displays information about text-color contrast, screen reader text, and keyboard support.
+When the **Inspect** tool is active, hovering over any element on the rendered webpage displays the **Inspect** overlay. This overlay displays general information and accessibility information about that element.  The **Accessibility** section of the **Inspect** overlay displays information about text-color contrast, screen reader text, and keyboard support:
 
 ![The Inspect tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay](./test-inspect-tool-images/basics-inspector-overlay.png)
 
-The main article about the **Inspect** tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md). This article focuses on the accessibility features of the **Inspect** tool.
+The main article about the **Inspect** tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).  The present article focuses on the accessibility features of the **Inspect** tool.
 
 
 <!-- ====================================================================== -->
@@ -45,7 +45,7 @@ The **Accessibility** section contains the following information:
   * An orange exclamation-point icon indicates that the contrast is insufficient.
 
 * **Name** and **Role** are what assistive technology such as screen readers will report about the element.
-  * The **Name** is the text content of the hovered element.  For the element `<a href="/">About Us</a>`, the **Name** shown in the Inspect tool is **About Us**.
+  * The **Name** is the text content of the hovered element.  For the element `<a href="/">About Us</a>`, the **Name** that's shown in the **Inspect** tool is **About Us**.
   * The **Role** of the element.  This is usually the element name, such as `article`, `img` , `link`, or `heading`.  The `div` and `span` elements are referred to as `generic`.
 
 * **Keyboard-focusable** indicates whether users can reach the element regardless of input device.

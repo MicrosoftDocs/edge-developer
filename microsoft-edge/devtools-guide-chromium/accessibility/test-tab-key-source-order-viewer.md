@@ -9,7 +9,7 @@ ms.date: 12/05/2023
 ---
 # Test keyboard support using the Source Order Viewer
 
-The source order of a document is important for assistive technology, and can be different than the order in which elements appear on the rendered page.  The source order is the order in which the elements of the webpage appear in the HTML source code.  Using CSS, you can re-order page elements in a visual way, which means that it's possible for the visual and source order of a webpage to be different.
+The source order of a document is important for assistive technology, and can be different than the order in which elements appear on the rendered page.  The _source order_ is the order in which the elements of the webpage appear in the HTML source code.  Using CSS, you can re-order page elements in a visual way, which means that it's possible for the visual and source order of a webpage to be different.
 
 Assistive technology, such as screen readers, usually follow the source order and ignore the visual order of the elements in the webpage.
 

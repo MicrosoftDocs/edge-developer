@@ -11,7 +11,7 @@ ms.date: 12/04/2023
 
 CSS animation can be an accessibility problem.  Operating systems deal with this problem by including an option to turn off animations to avoid user confusion and potential health-related problems, such as triggering seizures.
 
-On a webpage, you can use the [prefers-reduced-motion](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion) CSS media query to detect the user's preference with regards to animations.  Then wrap your animation code in a test, to conditionally run animations. For example:
+On a webpage, you can use the [prefers-reduced-motion](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion) CSS media query to detect the user's preference for animations.  Then wrap your animation code in a test, to conditionally run animations.  For example:
 
 ```css
 header {
@@ -44,4 +44,4 @@ To test that your code works as expected, without having to change your operatin
 <!-- ====================================================================== -->
 ## See also
 
-*  [Verify that the page is usable with UI animation turned off](./test-reduced-ui-motion.md) - A walkthrough using a demo page, with explanations.
+*  [Verify that the page is usable with UI animation turned off](./test-reduced-ui-motion.md) - A walkthrough using a demo page.

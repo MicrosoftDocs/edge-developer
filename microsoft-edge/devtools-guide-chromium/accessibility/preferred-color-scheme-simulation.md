@@ -35,7 +35,7 @@ This article is about changing the appearance of the webpage under development. 
 
    The rendered webpage renders as if the user had selected dark or light mode in their operating system. The webpage uses the CSS that you have specified for that mode.
 
-1. Modify your CSS and view the rendered result the same way as for any other web page.  See [Get started viewing and changing CSS](../css/index.md).
+1. Modify your CSS and view the rendered result the same way as for any other webpage.  See [Get started viewing and changing CSS](../css/index.md).
 
 1. To restore the setting, in the **Rendering** tool, in the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **No emulation**. Your own operating system's setting for light or dark mode is applied.
 
@@ -53,7 +53,7 @@ This article is about changing the appearance of the webpage under development. 
 
    Select a **Rendering** command rather than an **Appearance** command.  The **Rendering** commands affect the rendered webpage under development.  The **Appearance** commands instead affect the DevTools part of the window.
 
-1. Modify your CSS and view the rendered result the same way as for any other web page.  See [Get started viewing and changing CSS](../css/index.md).
+1. Modify your CSS and view the rendered result the same way as for any other webpage.  See [Get started viewing and changing CSS](../css/index.md).
 
 1. To restore the setting, in the Command Menu, type **emulate** or **scheme** and then select **Do not emulate CSS prefers-color-scheme**. Your own operating system's setting for light or dark mode is applied.
 

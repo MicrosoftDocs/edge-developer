@@ -9,7 +9,7 @@ ms.date: 12/04/2023
 ---
 # Emulate vision deficiencies
 
-To better meet the needs of your users with [color vision deficiency](https://www.colourblindawareness.org) (color blindness) or blurred vision, Microsoft Edge DevTools allows you to simulate blurred vision and specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories:
+To better meet the needs of users with [color vision deficiency](https://www.colourblindawareness.org) (color blindness) or blurred vision, Microsoft Edge DevTools allows you to simulate blurred vision and specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories:
 
 | Color vision deficiency | Details |
 |:--- |:--- |
@@ -25,7 +25,7 @@ The **Emulate vision deficiencies** tools simulate approximations of how a perso
 <!-- ====================================================================== -->
 ## Open the Rendering tool
 
-To simulate how a person with a vision deficiency would see your web page, use the **Rendering** tool:
+To simulate how a person with a vision deficiency would see your webpage, use the **Rendering** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
@@ -37,7 +37,7 @@ To simulate how a person with a vision deficiency would see your web page, use t
 
 1. Click the **No emulation** dropdown list, and then select an option. The browser window simulates the selected vision deficiency in the rendered webpage:
 
-   ![The browser window, with modified colors in the web page to simulate the selected color vision deficiency](./emulate-vision-deficiencies-images/accessibility-blurred-vision-emulation.png)
+   ![The browser window, with modified colors in the webpage to simulate the selected color vision deficiency](./emulate-vision-deficiencies-images/accessibility-blurred-vision-emulation.png)
 
 
 <!-- ====================================================================== -->

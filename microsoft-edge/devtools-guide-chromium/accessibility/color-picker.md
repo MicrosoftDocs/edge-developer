@@ -51,9 +51,11 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
    * One check mark means that the element meets the minimum recommendation.
    * Two check marks means that the element meets the [enhanced recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced).
 
-1. For more information, click the **Contrast ratio** section to expand it.  In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color doesn't meet recommendations, then anything on the same side also doesn't meet recommendations.
+1. For more information, click the **Contrast ratio** section to expand it:
 
    ![The 'Contrast Ratio' Line in the visual picker](./color-picker-images/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.png)
+
+   In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color doesn't meet recommendations, then anything on the same side also doesn't meet recommendations.
 
 1. To try different colors, click within the visual picker, or select a color swatch at the bottom of the Color Picker.
 

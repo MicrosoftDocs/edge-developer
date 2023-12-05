@@ -9,7 +9,7 @@ ms.date: 12/05/2023
 ---
 # Accessibility-testing features
 
-This article lists the typical accessibility aspects to test, and the corresponding features in Microsoft DevTools.
+This article lists typical accessibility aspects to test for webpages, and the corresponding features in Microsoft DevTools.
 
 
 <!-- ====================================================================== -->

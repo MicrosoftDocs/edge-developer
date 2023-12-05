@@ -31,7 +31,7 @@ When there isn't enough space, your multi-column layout should turn into a singl
 
 1. Use the arrow keys to scroll down the page and assess the accessibility of the content.
 
-   The two-column layout is now a single-column layout. But the top navigation bar occupies a lot of vertical space, which makes it harder to read the content. The search form is also hard to use because it's too narrow:
+   The two-column layout is now a single-column layout. But the top navigation bar occupies a lot of vertical space, which makes it harder to read the content. The search form is also hard to use, because it's too narrow:
 
    ![The narrow layout, showing that half of the page is covered by the navigation bar](./narrow-images/large-header.png)
 

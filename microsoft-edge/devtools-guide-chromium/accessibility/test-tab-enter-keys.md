@@ -9,12 +9,23 @@ ms.date: 12/05/2023
 ---
 # Check for keyboard support by using the Tab and Enter keys
 
-Not all users have a pointer or touch device, and not all users can see the webpages we create.  This is why it's important that the user interface works at least with a keyboard.  Ensure you can use the **Tab** key to move the focus to each form control on a webpage, and ensure you can use the **Enter** key to submit forms.
+It's important that the user interface of a webpage works when using just a keyboard, because not all users have a pointer or touch device, and not all users can see webpages.  Make sure that you can use the **Tab** key to move the focus to each form control on a webpage, and make sure that you can use the **Enter** key to submit forms.
+
+
+<!-- ------------------------------ -->
+## Ways to test keyboard support
 
 You can test the usability of a webpage for keyboard users in several ways:
+
 *  By using the keyboard, particularly the **Tab**, **Shift+Tab**, and **Enter** keys.  This approach is described in this article.
-*  Check for keyboard support for an individual element by using the **Inspect** tool.  The Inspect tool's information overlay includes an **Accessibility** section that includes a **Keyboard-focusable** row. To learn more, see [Use the Inspect tool to detect accessibility issues by hovering over the webpage](./test-inspect-tool.md).
-*  Check the **Issues** report's **Accessibility** section for keyboard support issues. To learn more, see [Automatically test a webpage for accessibility issues](./test-issues-tool.md).
+
+*  Check for keyboard support for an individual element by using the **Inspect** tool.  The **Inspect** tool's information overlay includes an **Accessibility** section that includes a **Keyboard-focusable** row.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](./test-inspect-tool.md).
+
+*  Check the **Issues** report's **Accessibility** section for keyboard support issues.  See [Automatically test a webpage for accessibility issues](./test-issues-tool.md).
+
+
+<!-- ====================================================================== -->
+## Checking a webpage for keyboard accessibility issues
 
 To check the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) for accessibility issues by using a keyboard rather than a mouse:
 
@@ -41,6 +52,10 @@ To check the [accessibility-testing demo webpage](https://microsoftedge.github.i
 1. Selecting **Tab** again puts focus on the top navigation bar of the page, with menu buttons for **Home**, **Adopt a Pet**, **Donate**, **Jobs**, and **About Us**.  Press **Tab** or **Shift+Tab** to put focus on a menu button, as indicated by a focus outline.  Then press **Enter** to access that section of the webpage.
 
    ![The main menu has a highlight and a focus outline, and thus is keyboard-accessible](./test-tab-enter-keys-images/a11y-testing-menu-with-outline.png)
+
+
+<!-- ------------------------------ -->
+#### Issues found that need to be fixed
 
 Based on the above walkthrough, we found the following issues that need to be fixed:
 

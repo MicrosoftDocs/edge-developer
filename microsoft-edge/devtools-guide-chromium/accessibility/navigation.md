@@ -26,7 +26,7 @@ This article helps you use DevTools through the keyboard and through assistive t
 
 <!-- DevTools is a suite of web developer tools built into the Microsoft Edge browser. -->
 
-For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features](reference.md).
+For DevTools features related to improving the accessibility of a webpage, see [Accessibility-testing features](./reference.md).
 
 
 ### Tabbed tool panels containing tabs and pages
@@ -98,7 +98,7 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 ### Navigate by Command Menu
 
-To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is called a _Panel_ or _Quick View_ item.
+To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is indicated as either a _Panel_ or _Quick View_ item.
 
 1. With DevTools open, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
