@@ -22,9 +22,7 @@ ms.date: 12/04/2023
    limitations under the License.  -->
 # Track which element has focus
 
-Suppose that you're testing the keyboard navigation accessibility of a page.  When you navigate the rendered webpage by pressing **Tab** or **Shift+Tab**, the focus ring indicator in the webpage sometimes disappears, because the element that has focus is hidden or out of view.
-
-To know which element has focus at all times, use a Live Expression in the **Console** tool.
+To indicate at all times which element has focus, use a Live Expression in the **Console** tool.  This is helpful because when you're testing the keyboard navigation accessibility of a page, when you navigate the rendered webpage by pressing **Tab** or **Shift+Tab**, the focus ring indicator in the webpage sometimes disappears, because the element that has focus is hidden or out of view.
 
 
 <!-- ====================================================================== -->
@@ -36,15 +34,17 @@ To track the **Tab**-focused element in the **Console** in DevTools by using a L
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Quick View toolbar, select the **Console** tab. If the Quick View isn't visible, press **Esc** to show it.
+1. If the **Quick View** toolbar isn't visible in DevTools, press **Esc** to show the **Quick View** panel.
+
+1. On the **Quick View** toolbar, select the **Console** tab:
 
    ![The Console tool, in the Quick View panel](./focus-images/console-in-quickview.png)
 
-1. Click the **Create live expression** (![Create live expression](./focus-images/create-live-expression-icon.png)) button. The Live Expression section appears:
+1. Click the **Create live expression** (![Create live expression](./focus-images/create-live-expression-icon.png)) button.  The Live Expression section appears:
 
    ![Create a Live Expression](./focus-images/accessibility-console-create-live-expression-empty.png)
 
-1. Type **document.activeElement** in the **Expression** text box. 
+1. In the **Expression** text box, type the following: **document.activeElement**
 
 1. Click outside of the **Expression** text box to save the Live Expression. The Live Expression is evaluated, and the result is displayed below the **Expression** text box:
 
