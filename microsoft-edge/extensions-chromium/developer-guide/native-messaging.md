@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/04/2023
+ms.date: 12/05/2023
 ---
 # Native messaging
 
