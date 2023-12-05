@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/13/2023
+ms.date: 12/04/2023
 ---
 # Native messaging
 
@@ -27,7 +27,7 @@ To create your extension to send and receive messages with native app hosts, do 
 
 Writing the chrome_native_messaging_host.exe app - this section provides code examples in multiple programming languages.
 
-How you actually write the chrome_native_messaging_host.exe application.
+How you actually write the `chrome_native_messaging_host.exe` application.
 
 stdin and stdout are used to communicate with the host.
 
@@ -38,7 +38,7 @@ The first four bytes is a number that specifies packet length, and the rest is t
 
 How to encode the information that is sent back to the extension: tbd
 
-How the chrome_native_messaging_host.exe application knows when to exit: tbd
+How the `chrome_native_messaging_host.exe` application knows when to exit: tbd
 
 
 <!-- ====================================================================== -->
@@ -261,13 +261,14 @@ To store the native messaging host manifest file:
    ~/.config/microsoft-edge/NativeMessagingHosts
    ```
 
-* * *
+---
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/extensions/nativeMessaging).
+<!-- todo: 404.  related: https://developer.chrome.com/docs/extensions/develop/concepts/native-messaging -->
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
