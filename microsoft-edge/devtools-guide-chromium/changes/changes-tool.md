@@ -9,21 +9,21 @@ ms.date: 11/30/2023
 ---
 # Track changes to files using the Changes tool
 
-The **Changes** tool tracks any changes you've made to CSS or JavaScript in DevTools.  It shows you what changes to make to your actual source files after you've successfully used DevTools to modify your webpage files sent from the server.
-
-Use the **Changes** tool to quickly display all your changes in order to re-apply those changes to the actual source files in your editor (in your Integrated Development Environment; IDE).
+The **Changes** tool tracks any changes that you've made to CSS or JavaScript in DevTools.  It shows you what changes to make to your actual source files after you've successfully used DevTools to modify a copy of your webpage files that are sent from the server:
 
 ![The Changes tool showing two files that have been modified, and the modifications of the selected file](changes-tool-images/changes-tool-open.png)
+
+Use the **Changes** tool to quickly display all your changes in order to re-apply those changes to the actual source files in your source code editor.
 
 
 <!-- ====================================================================== -->
 ## Open the Changes tool by clicking the More Tools icon
 
-On the **Activity Bar** or **Quick View** toolbar, click the **More Tools** (![The More Tools icon](./changes-tool-images/more-tools-icon.png)) icon and then select **Changes**:
+On the **Activity Bar** or **Quick View** toolbar, click the **More tools** (![The 'More tools' icon](./changes-tool-images/more-tools-icon.png)) button, and then select **Changes**:
 
-![The More Tools (+) icon and menu in the Activity Bar, with the Changes tool selected](changes-tool-images/changes-tool-via-plus-menu.png)
+![The 'More tools' (+) icon and menu in the Activity Bar, with the Changes tool selected](changes-tool-images/changes-tool-via-plus-menu.png)
 
-The **Changes** tool appears in the **Activity Bar** or in the **Quick View**, depending on which toolbar you used.
+The **Changes** tool opens in the **Activity Bar** or in the **Quick View**, depending on which toolbar you used.
 
 
 <!-- ====================================================================== -->
@@ -33,15 +33,16 @@ To open the **Changes** tool using the **Command Menu**:
 
 1. To open the **Command Menu**, press **Ctrl+Shift+P** on Windows/Linux or **Command+Shift+P** on Mac.
 
-1. Start typing **changes**.  The **Show Changes** command is highlighted.
+1. Start typing **changes**.  The **Show Changes** command is highlighted:
 
    ![The Show Changes command in the Command Menu](changes-tool-images/changes-tool-command-menu.png)
 
-1. Press **Enter**. The **Changes** tool appears in the **Quick View** panel:
+1. Press **Enter**.  The **Changes** tool opens in the **Quick View** panel:
    
    ![The Changes tool in the Quick View panel](changes-tool-images/changes-tool-in-quick-view.png)
 
-To learn more about running commands using the **Command Menu**, see [Run commands in the Command Menu](../command-menu/index.md).
+See also:
+* [Run commands in the Command Menu](../command-menu/index.md)
 
 
 <!-- ====================================================================== -->
@@ -71,7 +72,7 @@ Clicking a modified line in the **Changes** tool opens the file in the [Sources]
 <!-- ====================================================================== -->
 ## Undo all changes
 
-To undo all changes, click the **Revert all changes to current file** (![The Revert all changes to current file icon](./changes-tool-images/revert-icon.png)) button:
+To undo all changes, at the bottom of the **Changes** tool, click the **Revert all changes to current file** (![The Revert all changes to current file icon](./changes-tool-images/revert-icon.png)) button:
 
 ![Reverting changes](changes-tool-images/changes-tool-undo-all.png)
 
@@ -79,6 +80,8 @@ To undo all changes, click the **Revert all changes to current file** (![The Rev
 <!-- ====================================================================== -->
 ## Horizontally scroll entries
 
-When you have made a change to a minified file, the **Changes** tool enables you to scroll horizontally to display all of your minified code.  To scroll horizontally, click the horizontal scrollbar or press the arrow keys.
+When you've made a change to a minified file, the **Changes** tool enables you to scroll horizontally, to display all of your minified code:
 
 ![Displaying a long line of code](changes-tool-images/changes.png)
+
+To scroll horizontally, click the horizontal scrollbar, or press the left or right arrow keys.
