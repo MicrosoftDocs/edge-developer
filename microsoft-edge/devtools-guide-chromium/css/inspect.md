@@ -112,4 +112,3 @@ To hide the **Inspect** tool's overlay while you move the mouse pointer over the
 ## See also
 
 * [Use the Inspect tool to detect accessibility issues by hovering over the webpage](../accessibility/test-inspect-tool.md)
-* [Overview of accessibility testing using DevTools](../accessibility/accessibility-testing-in-devtools.md) - long article that's a superset of the above linked article.

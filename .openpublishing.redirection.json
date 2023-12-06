@@ -1029,6 +1029,11 @@
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/index",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/devtools-guide-chromium/accessibility-testing-in-devtools.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/accessibility/reference",
+        "redirect_document_id": false
+      },
       /* redirect to extensions */
       {
         "source_path": "microsoft-edge/extensions-chromium/enterprise/declare-permissions.md",
