@@ -40,4 +40,3 @@ To check whether a webpage is usable by people with color blindness:
 ## See also
 
 *  [Emulate vision deficiencies](emulate-vision-deficiencies.md) - Defines the items in the **Emulate vision deficiencies** dropdown list, including Protanopia, Deuteranopia, Tritanopia, and Achromatopsia.
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

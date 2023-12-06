@@ -20,8 +20,6 @@ Use the following tools and testing procedures to evaluate your website for acce
 
 *   [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md) - A list of accessibility aspects to test, and which features of DevTools to use for each test.
 
-*   [Overview of accessibility testing using DevTools](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) - A walkthrough of using various DevTools features to test for accessibility problems.
-
 
 <!-- ====================================================================== -->
 ## External articles and websites
