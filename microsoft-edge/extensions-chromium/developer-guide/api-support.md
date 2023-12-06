@@ -11,17 +11,18 @@ ms.date: 08/28/2023
 
 When building extensions for the Microsoft Edge browser, you can use the following APIs.
 
+todo: Manifest V3, or V2?  Updated this list per V3 TOC.  base links, to view V2 TOC vs. V3 TOC:
+* V2: https://developer.chrome.com/docs/extensions/mv2/reference/
+* V3: https://developer.chrome.com/docs/extensions/reference/api/
 
-<!-- latest at https://developer.chrome.com/docs/extensions/reference/api/ -->
-
-| API                                   | Description
-|---------------------------------------|----------------------------------------------------------|
+| API | Description |
+|---|---|
 | [accessibilityFeatures](https://developer.chrome.com/docs/extensions/reference/api/accessibilityFeatures) | todo: supported? |
 | [action](https://developer.chrome.com/docs/extensions/reference/api/action) | todo: supported? |
 | [alarms](https://developer.chrome.com/docs/extensions/reference/api/alarms) | Schedule code to run periodically or at a specified time in the future. |
 | [audio](https://developer.chrome.com/docs/extensions/reference/api/audio) | todo: supported? |
 | [bookmarks](https://developer.chrome.com/docs/extensions/reference/api/bookmarks) | Create, organize, and manipulate bookmarks. |
-| [browserAction](https://developer.chrome.com/docs/extensions/reference/api/browserAction) | Use browser actions to place icons on the toolbar in Microsoft Edge. You can also use browser actions to add a tooltip, badge, or popup.  todo: not listed in toc at Chrome site |
+| [browserAction](https://developer.chrome.com/docs/extensions/mv2/reference/browserAction) | Use browser actions to place icons on the toolbar in Microsoft Edge. You can also use browser actions to add a tooltip, badge, or popup.  todo: Manifest V2, not in V3 |
 | [browsingData](https://developer.chrome.com/docs/extensions/reference/api/browsingData) | Remove browsing data from a user's local profile. |
 | [certificateProvider](https://developer.chrome.com/docs/extensions/reference/api/certificateProvider) | todo: supported? |
 | [commands](https://developer.chrome.com/docs/extensions/reference/api/commands) | Add keyboard shortcuts that trigger actions in your extension. For example, an action to open the browser or send a command to the extension. |
@@ -59,7 +60,7 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [management](https://developer.chrome.com/docs/extensions/reference/api/management) | Manage the list of installed or running extensions. It's useful for extensions that override the built-in New Tab page. |
 | [notifications](https://developer.chrome.com/docs/extensions/reference/api/notifications) | Create rich notifications using templates and display them in the system tray. |
 | [omnibox](https://developer.chrome.com/docs/extensions/reference/api/omnibox) | Register keywords in the Microsoft Edge address bar, also known as the omnibox. |
-| [pageAction](https://developer.chrome.com/docs/extensions/reference/api/pageAction) | Add icons to the Microsoft Edge toolbar, to the right of the address bar. Page actions are actions that can be taken on the current page, and aren't applicable to all pages. Page actions appear grayed out when inactive. |
+| [pageAction](https://developer.chrome.com/docs/extensions/mv2/reference/pageAction) | todo: MV2, not MV3.  Add icons to the Microsoft Edge toolbar, to the right of the address bar. Page actions are actions that can be taken on the current page, and aren't applicable to all pages. Page actions appear grayed out when inactive. |
 | [pageCapture](https://developer.chrome.com/docs/extensions/reference/api/pageCapture) | Save tabs as MHTML files.|
 | [permissions](https://developer.chrome.com/docs/extensions/reference/api/permissions) | Retrieve declared, optional permissions at runtime, instead of at install time. You can use this API to display needed and approved permissions to your users. |
 | [platformKeys](https://developer.chrome.com/docs/extensions/reference/api/platformKeys) | todo: supported? |
@@ -78,8 +79,8 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [storage](https://developer.chrome.com/docs/extensions/reference/api/storage) | Store, retrieve, and track changes to user data. |
 | [system.cpu](https://developer.chrome.com/docs/extensions/reference/api/system/cpu) | todo: supported? |
 | [system.display](https://developer.chrome.com/docs/extensions/reference/api/system/display) | todo: supported? |
-| [system.memory](https://developer.chrome.com/docs/extensions/reference/api/system_memory) | The `system.memory` API. |
-| [system.storage](https://developer.chrome.com/docs/extensions/reference/api/system_storage) | Query information about storage devices. You can also receive notifications when storage devices are attached or detached. |
+| [system.memory](https://developer.chrome.com/docs/extensions/reference/api/system/memory) | The `system.memory` API. |
+| [system.storage](https://developer.chrome.com/docs/extensions/reference/api/system/storage) | Query information about storage devices. You can also receive notifications when storage devices are attached or detached. |
 | [tabCapture](https://developer.chrome.com/docs/extensions/reference/api/tabCapture) | Interact with tab media streams. |
 | [tabGroups](https://developer.chrome.com/docs/extensions/reference/api/tabGroups) | todo: supported? |
 | [tabs](https://developer.chrome.com/docs/extensions/reference/api/tabs) | Interact with the browser's tab system to create, modify, and rearrange tabs. |
@@ -126,7 +127,7 @@ Microsoft Edge doesn't support the following Extension APIs:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/apps/external_extensions).
+> The original page is found [here](https://developer.chrome.com/docs/extensions/reference/api).
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
