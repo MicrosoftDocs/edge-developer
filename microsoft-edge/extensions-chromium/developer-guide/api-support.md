@@ -55,7 +55,7 @@ todo: Manifest V3, or V2?  Updated this list per V3 TOC.  base links, to view V2
 | [i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n) | Implement internationalization across your whole app or extension. |
 | [identity](https://developer.chrome.com/docs/extensions/reference/api/identity) | todo: supported?  the "not supported" section below lists `identity.getAccounts` & `.getAuthToken` |
 | [idle](https://developer.chrome.com/docs/extensions/reference/api/idle) | Detect when the machine's idle state changes. |
-| [input.ime] | todo: supported? | todo: 404 at Chrome site though listed in that TOC -->
+| [input.ime] | todo: supported?  todo: 404 at Chrome site though listed in that TOC |
 | [loginState](https://developer.chrome.com/docs/extensions/reference/api/loginState) | todo: supported? |
 | [management](https://developer.chrome.com/docs/extensions/reference/api/management) | Manage the list of installed or running extensions. It's useful for extensions that override the built-in New Tab page. |
 | [notifications](https://developer.chrome.com/docs/extensions/reference/api/notifications) | Create rich notifications using templates and display them in the system tray. |
