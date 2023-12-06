@@ -330,7 +330,7 @@ To use the Fixed Version distribution mode:
 
       Verify that the `bin\**designated architecture**\Release` folder has a matching FixedRuntime\\(version number) folder with the runtime files in it.
 
-1. On Windows 10 devices, starting with Fixed Version 120, developers of unpackaged Win32 applications using Fixed Version are required to run the following commands, for Fixed Version to continue to work.  This is due to the security improvement in v120 to run the Renderer process inside the App Container.  This change doesn't affect Windows 11, the older runtime, or packaged apps.
+1. On Windows 10 devices, starting with Fixed Version 120, developers of unpackaged Win32 applications using Fixed Version are required to run the following commands, for Fixed Version to continue to work.  This is due to a security improvement in v120 to run the Renderer process inside the App Container.  This change doesn't affect Windows 11, the older runtime, or packaged apps.
 
    1. Locate the path where you deploy the Fixed Version package on the user's device, such as the following location:
 
