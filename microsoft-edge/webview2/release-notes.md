@@ -324,8 +324,8 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 <!-- ------------------------------ -->
 #### Bug fixes
-<!-- TBD -->
-
+* Adds support for promise cancelation of async methods in WinRT.(Runtime and SDK)
+* Disable https upgrades to WebView2 API navigations (Runtime-only) ([Issue #4104](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4104))
 <!-- ====================================================================== -->
 ## 1.0.####-prerelease
 
