@@ -1,6 +1,6 @@
 ---
 title: Explain DevTools Console errors and source code using Copilot in Edge
-description: Discover new experimental features to explain Console errors and source code by using Copilot in Edge
+description: Discover new experimental features to explain DevTools Console errors and source code in the Sources tool by using Copilot in Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
