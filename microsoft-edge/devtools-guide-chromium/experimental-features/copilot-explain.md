@@ -1,13 +1,13 @@
 ---
-title: Explain errors and source code in Copilot in Microsoft Edge
-description: Discover new experimental features to explain Console errors and source code by using Copilot in Microsoft Edge
+title: Explain errors and source code in Copilot in Edge
+description: Discover new experimental features to explain Console errors and source code by using Copilot in Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/07/2023
 ---
-# Explain errors and source code in Copilot in Microsoft Edge
+# Explain errors and source code in Copilot in Edge
 
 The **Console** and **Sources** tools in Microsoft Edge DevTools integrate with Copilot in Microsoft Edge to help you understand errors and source code. These are experimental features, enabled by a flag in Microsoft Edge.
 
@@ -15,7 +15,7 @@ The **Console** and **Sources** tools in Microsoft Edge DevTools integrate with 
 <!-- ------------------------------ -->
 #### The "Explain this error" feature
 
-When inspecting a webpage with DevTools, you often see errors and warnings in the **Console** tool. These errors and warnings can sometimes be difficult to understand and fix. By using the **Explain this error** feature, you get more information about the error or warning in Copilot in Microsoft Edge:
+When inspecting a webpage with DevTools, you often see errors and warnings in the **Console** tool. These errors and warnings can sometimes be difficult to understand and fix. By using the **Explain this error** feature, you get more information about the error or warning in Copilot in Edge:
 
 ![Copilot in the Microsoft Edge sidebar, showing the error message and the explanation.](./copilot-explain-images/copilot-error-explanation.png)<!-- instance 1 of using this png -->
 
@@ -23,7 +23,7 @@ When inspecting a webpage with DevTools, you often see errors and warnings in th
 <!-- ------------------------------ -->
 #### The "Explain these lines of code" feature
 
-When inspecting a webpage you didn't build, you might not be familiar with the source code displayed in the **Sources** tool. By using the **Explain these lines of code** feature, you get more information about the source code in Copilot in Microsoft Edge:
+When inspecting a webpage you didn't build, you might not be familiar with the source code displayed in the **Sources** tool. By using the **Explain these lines of code** feature, you get more information about the source code in Copilot in Edge:
 
 ![Copilot in the Microsoft Edge sidebar, showing the source code and the explanation.](./copilot-explain-images/copilot-code-explanation.png)<!-- instance 1 of using this png -->
 
@@ -42,7 +42,7 @@ The **Explain DevTools with AI** features are for use in standard browser window
 <!-- ====================================================================== -->
 ## Enable the features
 
-To use these explanation features, enable Copilot in Microsoft Edge and set the flag that enables the features in DevTools.
+To use these explanation features, enable Copilot in Edge and set the flag that enables the features in DevTools.
 
 
 <!-- ------------------------------ -->
@@ -124,4 +124,4 @@ To use Copilot to explain code in the **Sources** tool:
 <!-- ====================================================================== -->
 ## Provide feedback
 
-The responses that Copilot in Microsoft Edge provides when you use the above features are automatically generated, so surprises and mistakes are possible. We're constantly improving the level of quality and accuracy of the responses, but if you see an incorrect response, let us know by adding a comment at: [Feedback for the Explain errors and source code in Copilot in Edge experiment](https://github.com/MicrosoftEdge/DevTools/issues/203).
+The responses that Copilot in Edge provides when you use the above features are automatically generated, so surprises and mistakes are possible. We're constantly improving the level of quality and accuracy of the responses, but if you see an incorrect response, let us know by adding a comment at: [Feedback for the Explain errors and source code in Copilot in Edge experiment](https://github.com/MicrosoftEdge/DevTools/issues/203).
