@@ -42,7 +42,7 @@ The **Explain DevTools with AI** features are for use in standard browser window
 <!-- ====================================================================== -->
 ## Enable the features
 
-To use these explanation features, enable Copilot in Microsoft Edge, set the flag to enable the features in DevTools, and use a standard browser window.
+To use these explanation features, enable Copilot in Microsoft Edge and set the flag that enables the features in DevTools.
 
 
 <!-- ------------------------------ -->
