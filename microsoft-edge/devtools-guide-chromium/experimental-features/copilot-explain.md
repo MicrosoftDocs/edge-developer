@@ -74,15 +74,15 @@ To enable explanations of errors and source code in DevTools using Copilot:
 
 To use Copilot to explain an error or warning in the **Console** tool:
 
-1. Open a web page that contains the errors you want to explain. For example, open the [Console error explainer test page](https://microsoftedge.github.io/Demos/devtools-explain-error/).
+1. Open a web page that contains the errors you want to explain. For example, open the [Console error explainer test page](https://microsoftedge.github.io/Demos/devtools-explain-error/) in a new window or tab.
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. In DevTools, on the Activity Bar, select the **Console** tab.
 
-1. In the rendered web page, click the **Run** button next to one or more error descriptions. The demo page generates errors when you click the **Run** buttons.
-  
-   The corresponding errors are shown in the **Console**:
+1. In the rendered web page, click the **Run** button next to one or more error descriptions.
+
+   The demo page then generates errors, which are shown in the **Console**:
 
    ![The demo web page in Edge, with the DevTools Console next to it, showing a few error messages](./copilot-explain-images/some-console-errors.png)
 
@@ -100,7 +100,7 @@ To use Copilot to explain an error or warning in the **Console** tool:
 
 To use Copilot to explain code in the **Sources** tool:
 
-1. Open a web page that contains the source code you want to explain. For example, in a new window or tab, open the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page.
+1. Open a web page that contains the source code you want to explain. For example, open the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page in a new window or tab.
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
@@ -112,7 +112,7 @@ To use Copilot to explain code in the **Sources** tool:
 
    ![The Sources tool in Edge, with the to-do.js file open, and a few lines of code selected](./copilot-explain-images/selected-code.png)
 
-1. Right-click the selected text, and then select **Copilot: Explain these lines of code**.
+1. Right-click the code, and then select **Copilot: Explain these lines of code**.
 
    Copilot opens in the Microsoft Edge sidebar, showing the source code, an **Explain these lines of code from the Sources tool in DevTools** request message, and then a response explaining the source code:
 
