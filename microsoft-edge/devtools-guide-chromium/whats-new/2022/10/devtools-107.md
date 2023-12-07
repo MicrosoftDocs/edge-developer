@@ -40,9 +40,6 @@ When the Activity Bar is horizontal, a tooltip appears when a tool icon doesn't 
 
 ![Tooltips for horizontal Activity Bar icons](./devtools-107-images/activity-bar-tooltips-horizontal.png)
 
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
-
 
 <!-- ====================================================================== -->
 ## New keyboard shortcut for the Command Palette experiment

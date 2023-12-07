@@ -5,25 +5,22 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/02/2022
+ms.date: 07/17/2023
 ---
 # About the list of tools
 
-DevTools provides 35 tools:
-*  2 toolbar icons, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
-*  3 permanent toolbar tabs, for the **Elements**, **Console**, and **Sources** tools.
-*  30 optional toolbar tabs, for the optional tools.
+DevTools provides more than 30 tools:
 
-The default tools, including toolbar icons, toolbar tabs, and tools on the **More tabs** (![More tabs icon](./about-tools-images/more-tabs-icon-light-theme.png)) menu:
+*  Two icons on the **Activity Bar**, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
+*  Three permanent tool tabs on the **Activity Bar**, for the **Elements**, **Console**, and **Sources** tools.
+*  Optional tabs, for optional tools such as the **Welcome** and **Network** tools.
+*  More optional tools, on the **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu, such as the **3D View** and **Detached Elements** tools.
 
-![All of the default tools of DevTools, including 2 toolbar icons and 11 toolbar tabs on the toolbar or More tabs menu](./about-tools-images/all-default-tools.png)
-
-The optional tools that aren't open by default, on the **More Tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu:
-
-![All of the optional tools of DevTools, on the More Tools menu, with 22 optional tools](./about-tools-images/all-optional-tools.png)
+![The default tools, including two icons and eight tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
 
 The following features are additional ways to access the tools:
-*  The **Drawer** is an additional toolbar and area to hold tool tabs.
+
+*  The **Quick View** panel is an additional toolbar and area to hold tools, below or to the right of the **Activity Bar** panel.
 *  The **Command Menu** is a way to directly use features of tools.
 *  The **Settings** pages can turn on additional features of tools.
 
@@ -70,34 +67,35 @@ Microsoft Edge DevTools includes the following tools.
 | **WebAuthn** tool | Use the **WebAuthn** tool to create and interact with software-based virtual authenticators. | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
 | **Welcome** tool | The **Welcome** tool opens when you first open DevTools.  It displays links to developer docs, latest features, Release Notes, and an option to contact the Microsoft Edge DevTools team. | [Welcome tool](welcome/welcome-tool.md) |
 
-<!-- when no longer experimental, move into table:
-| **CSP Violations** tool | Displays any Content Security Policy (CSP) violations that are detected on the inspected webpage. | [CSP Violations tool](csp-violations/csp-violations-tool.md) |
-https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
--->
+
+<!-- ------------------------------ -->
+#### Experimental tools
+
+Microsoft Edge DevTools potentially includes additional tools, if you select the experiment's check box in DevTools **Settings > Experiments**.  For example:
+
+| Tool | Purpose | Article |
+| --- | --- | --- |
+| **CSP Violations** tool | Displays any Content Security Policy (CSP) violations that are detected on the inspected webpage. | [Show CSP Violations view](./experimental-features/index.md#show-csp-violations-view) in _Experimental features_.<!--[CSP Violations tool](./csp-violations/csp-violations-tool.md)--> |
 
 
 <!-- ====================================================================== -->
 ## The More Tools menus
 
-The **More Tools** (**+**) menu on the main toolbar and on the Drawer toolbar is dynamic: it omits any tab tools that are open on that toolbar.
-
-The **More tools** menu in the **Customize and control DevTools** (![Customize icon](./about-tools-images/customize-devtools-icon-light-theme.png)) menu is static: it always lists all of the optional tools.  The selected tool opens in the main toolbar if it's a Panel tool, or on the Drawer if it's a Drawer tool.  You can right-click the tool's tab to move it to the other toolbar.
+The **More tools** (**+**) menu in the **Activity Bar** and in the **Quick View** toolbar is dynamic: it omits any tab tools that are open on that toolbar.
 
 
 <!-- ====================================================================== -->
-## Panel tools vs. Drawer tools
+## Activity Bar tools vs. Quick View tools
 
-In the **Command Menu**:
+_Activity Bar tools_ are tools that open in the **Activity Bar** (the upper pane) by default.  _Quick View_ tools are tools that open in the **Quick View** panel (the lower pane) by default.  To show or hide the **Quick View** panel: when focus is on DevTools, press **Esc**.
 
-* _Panel tools_ are tools which open in the main toolbar by default.
+The **Command Menu** first lists the **Activity Bar** tools (indicated by the **Panel** label), and then the **Quick View** tools:
 
-* _Drawer tools_ are tools which open in the Drawer toolbar by default, at the bottom of DevTools.  Press **Esc** to show or hide the Drawer.
+![The Command Menu, showing the Panel tools grouped together, and then the Quick View tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
 
-The **Command Menu** first lists the Panel tools, and then the Drawer tools:
+To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View**, **Move to side Quick View**, **Move to top Activity Bar**, or **Move to left Activity Bar**:
 
-![The Command Menu, showing the Panel tools grouped together, and then the Drawer tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
-
-To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom** or **Move to top**.
+![The right-click menu for a tool in the Quick View toolbar, including the 'Move to top Activity Bar' command](./about-tools-images/move-from-quickview-to-activitybar.png)
 
 To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](./about-tools-images/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
 
@@ -105,36 +103,26 @@ To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Comma
 <!-- ====================================================================== -->
 ## Closing tool tabs
 
-To close a tool tab that's on a toolbar:
+To close a tool tab that's on a toolbar, right-click the tab, and then select **Remove from Activity Bar** or **Remove from Quick View**:
 
-*  Click the **x** on the tab.
+![The right-click menu for the Network tool in the Activity Bar, including the 'Remove from Activity Bar' command](./about-tools-images/remove-from-activitybar.png)
 
-   The **Elements**, **Console**, and **Sources** tool tabs cannot be closed.
+The **Elements**, **Console**, and **Sources** tools are permanent tabs and cannot be closed or moved from the Activity Bar to the **Quick View** panel.  You can drag their tabs to reorder them in the **Activity Bar**.
 
-
-To close all of the optional tabs at once:
-
-*  Right-click an optional tab on the toolbar (a tab that has an **x** button), and then select **Close all**.
-
-   Only the **Elements**, **Console**, and **Sources** remain on the main toolbar.  (The **Drawer** toolbar is unaffected.)
-
-   If you closed all tabs on the **Drawer**, only the **Console** tab remains on the **Drawer** toolbar.  (The main toolbar is unaffected.)
+The **Console** tool is also a permanent tab on the **Quick View** toolbar.  In contrast, the **Issues** tool on the **Quick View** toolbar can be removed.
 
 
 <!-- ====================================================================== -->
 ## Restoring the default tool tabs
 
-To restore all of the default tabs on the main toolbar:
+To restore all of the default tool tabs in the **Activity Bar** and **Quick View**:
 
-1. In DevTools, select **Settings** (![Settings icon](./about-tools-images/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, select **Customize and control DevTools** (![Customize and control DevTools icon](./about-tools-images/customize-devtools-icon-light-theme.png)) > **Settings** (![Settings icon](./about-tools-images/settings-gear-icon-light-theme.png)) > **Preferences**.
 
-1. Click the **Restore defaults and refresh** button.
-
-   The main toolbar again has all of the default tabs.  The **Drawer** then has only the **Console** tab.
+1. Click the **Restore defaults and refresh** button.  DevTools restarts, and the default tabs appear in both toolbars.
 
 
 <!-- ====================================================================== -->
 ## See also
  
-* [Overview of DevTools](overview.md) - Similar to the present article, but broader coverage, with a top-level introduction of DevTools.
-* [Simplify DevTools using Focus Mode](experimental-features/focus-mode.md) - In **Focus Mode**, the **Activity Bar** is a compact replacement for the main toolbar, and the **Quick View** list is a replacement for the tabs on the Drawer toolbar.
+* [Overview of DevTools](overview.md) - Similar to the present article, but broader coverage, with a top-level introduction to DevTools.
