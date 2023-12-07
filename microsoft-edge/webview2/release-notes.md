@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/29/2023
+ms.date: 12/08/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -143,16 +143,14 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 [NuGet package for WebView2 SDK 1.0.2210.55](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2210.55)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 1.0.2210.55 or higher.
-
-#### Breaking changes
-
-> [!IMPORTANT]
-> **Breaking Change**:  Developers developing unpackaged Win32 app using Fixed Version runtime v120 or above and targeting Windows 10 devices needs ACL to avoid crashing due to new security feature implemented in WebView2. See post in [WebView2Announcements](https://github.com/MicrosoftEdge/WebView2Announcements/issues/82) for more details.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 120.0.2210.55 or higher.
 
 
 <!-- ------------------------------ -->
-#### General features
+#### Breaking changes
+
+> [!IMPORTANT]
+> **Breaking Change**: If you're developing an unpackaged Win32 app using Fixed Version Runtime v120 or above and targeting Windows 10 devices, you need to run a couple of ACL shell commands (`icacls`), to avoid crashing, because of a new security feature implemented in WebView2.  See [[Breaking Change] Unpackaged Win32 app using Fixed Version v120+ on Win10 need ACL](https://github.com/MicrosoftEdge/WebView2Announcements/issues/82).  The fix is in the article _Distribute your app and the WebView2 Runtime_, section [Details about the Fixed Version runtime distribution mode](./concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode), step "On Windows 10 devices, starting with Fixed Version 120, developers of unpackaged Win32 applications using Fixed Version are required to run the following commands."
 
 
 <!-- ------------------------------ -->
@@ -160,6 +158,8 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
+
+<!-- ------------------------------ -->
 * Support for browser extensions in WebView2:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -203,6 +203,8 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ---
 
+
+<!-- ------------------------------ -->
 * The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process. This API enables the host application to detect which part of WebView2 is consuming resources such as memory or CPU usage:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -226,7 +228,6 @@ The following APIs have been promoted to Stable and are now included in this Rel
     * [CoreWebView2FrameInfo.ParentFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo.parentframeinfo?view=webview2-dotnet-1.0.2210.55&preserve-view=true)
 
 * [CoreWebView2FrameKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2framekind?view=webview2-dotnet-1.0.2210.55&preserve-view=true)
-
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -273,9 +274,12 @@ The following APIs have been promoted to Stable and are now included in this Rel
     * [ICoreWebView2FrameInfo2::get_FrameKind](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2210.55&preserve-view=true#get_framekind)
 
 * [COREWEBVIEW2_FRAME_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2210.55&preserve-view=true#corewebview2_frame_kind)
+
 ---
 
-* Extending the ICoreWebView2AcceleratorKeyPressedEventArgs with a new IsBrowserAcceleratorKeyEnabled property to allow developers to control whether the browser handles accelerator keys such as Ctrl+P or F3, etc
+
+<!-- ------------------------------ -->
+* `ICoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow developers to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -292,10 +296,12 @@ The following APIs have been promoted to Stable and are now included in this Rel
 * [ICoreWebView2AcceleratorKeyPressedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2?view=webview2-1.0.2210.55&preserve-view=true)
     * [ICoreWebView2AcceleratorKeyPressedEventArgs2::get_IsBrowserAcceleratorKeyEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2?view=webview2-1.0.2210.55&preserve-view=true#get_isbrowseracceleratorkeyenabled)
     * [ICoreWebView2AcceleratorKeyPressedEventArgs2::put_IsBrowserAcceleratorKeyEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2?view=webview2-1.0.2210.55&preserve-view=true#put_isbrowseracceleratorkeyenabled)
+
 ---
 
 
-* Add support for managing profile deletion:
+<!-- ------------------------------ -->
+* Added support for managing profile deletion:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -319,13 +325,20 @@ The following APIs have been promoted to Stable and are now included in this Rel
     * [ICoreWebView2Profile7::remove_Deleted](/microsoft-edge/webview2/reference/win32/icorewebview2profile7?view=webview2-1.0.2210.57&preserve-view=true#remove_deleted)
 
 * [ICoreWebView2ProfileDeletedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2profiledeletedeventhandler?view=webview2-1.0.2210.57&preserve-view=true)
+
 ---
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
-* Adds support for promise cancelation of async methods in WinRT.(Runtime and SDK)
-* Disable https upgrades to WebView2 API navigations (Runtime-only) ([Issue #4104](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4104))
+
+* Added support for promise cancellation of async methods in WinRT.  (Runtime and SDK)
+
+* Disabled HTTPS upgrades to WebView2 API navigations.  (Runtime-only)  ([Issue #4104](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4104))
+
+<!-- end of Dec 2023 Release SDK -->
+
+
 <!-- ====================================================================== -->
 ## 1.0.####-prerelease
 
@@ -356,6 +369,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 <!-- ------------------------------ -->
 #### Bug fixes
+
+<!-- end of Dec 2023 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->
