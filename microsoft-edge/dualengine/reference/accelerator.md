@@ -4,7 +4,7 @@ title: DualEngine Win32 C++ ACCELERATOR
 author: MSEdgeTeam
 ms.author: edgededev
 ms.prod: microsoft-edge
-ms.date: 11/16/2023
+ms.date: 12/06/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, ACCELERATOR
 topic_type: 
 - APIRef
@@ -32,7 +32,7 @@ Contains the information representing a keyboard accelerator.
 --------------------------------|---------------------------------------------
 [eventType](#eventtype) | Specifies the type of keyboard event that the accelerator is processed on.
 [flags](#flags) | Specifies the modifier keys present in the accelerator keystroke.
-[keyCode](#keycode) | Specifies the virtual-key code keystroke.
+[keyCode](#keycode) | Specifies the virtual-key code of the keystroke.
 
 ## Members
 
@@ -50,7 +50,7 @@ Specifies the modifier keys present in the accelerator keystroke.
 
 #### keyCode
 
-Specifies the virtual-key code keystroke.
+Specifies the virtual-key code of the keystroke.
 
 > public DWORD [keyCode](#keycode)
 

@@ -4,7 +4,7 @@ title: DualEngine Win32 C++ IDualEngine20BrowserSession
 author: MSEdgeTeam
 ms.author: edgededev
 ms.prod: microsoft-edge
-ms.date: 11/16/2023
+ms.date: 12/06/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserSession
 topic_type: 
 - APIRef
@@ -57,7 +57,7 @@ Represents an Internet Explorer process session.
 [GetRequestedHostForwardedAccelerators](#getrequestedhostforwardedaccelerators) | Returns a list of keyboard accelerators that should be forwarded from the Host.
 [Initialize](#initialize) | Initializes the session.
 [ParseEmieSitelist](#parseemiesitelist) | Parses the sitelist xml at the provided path.
-[SetConfigurableSitesFlags](#setconfigurablesitesflags) | Sets flags that determines how configurable sites are handled.
+[SetConfigurableSitesFlags](#setconfigurablesitesflags) | Sets flags that determine how configurable sites are handled.
 [SetHangDetectionMessages](#sethangdetectionmessages) | Sets hang detection messages that will be sent to the Session by the host to detect hangs.
 [SetHostIntranetInInternetExplorer](#sethostintranetininternetexplorer) | Sets whether to open all Intranet sites in the session.
 [SetHybridMode](#sethybridmode) | Sets whether to enable Hybrid Mode site list handling.
@@ -153,9 +153,9 @@ Initializes the session.
 
 * `pSessionObserver` An observer for events from this Session. 
 
-* `pszProfilePath` The path to hosts profile path where Session will store relevant files. 
+* `pszProfilePath` The path to host's profile path where Session will store relevant files. 
 
-* `pszProfileId` The hosts profile id to associate with this session.
+* `pszProfileId` The host's profile id to associate with this session.
 
 #### ParseEmieSitelist
 
@@ -168,7 +168,7 @@ Parses the sitelist xml at the provided path.
 
 #### SetConfigurableSitesFlags
 
-Sets flags that determines how configurable sites are handled.
+Sets flags that determine how configurable sites are handled.
 
 > public HRESULT [SetConfigurableSitesFlags](#setconfigurablesitesflags)(DualEngineConfigurableSitesFlags flags)
 
@@ -277,7 +277,7 @@ Sets whether to enable additional hang detections.
 > public HRESULT [SetUseAdditionalHangDetection](#setuseadditionalhangdetection)(BOOL fEnable)
 
 #### Parameters
-* `fEnable` If true additional hang detections will be enable, otherwise they will not.
+* `fEnable` If true additional hang detections will be enabled, otherwise they will not.
 
 #### ShowDownloadWindow
 

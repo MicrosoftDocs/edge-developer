@@ -4,7 +4,7 @@ title: Globals
 author: MSEdgeTeam
 ms.author: edgededev
 ms.prod: microsoft-edge
-ms.date: 11/16/2023
+ms.date: 12/06/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html
 topic_type: 
 - APIRef
@@ -47,7 +47,7 @@ api_loction:
 [SECURELOCKICON](#securelockicon) | Represents the current page content's security state.
 [SITE_PERMISSION_FEATURE_MODE](#site_permission_feature_mode) | Represents the state of a site permission request.
 [SITE_PERMISSION_KIND](#site_permission_kind) | Represents the type of site permission being requested.
-[SITE_PERMISSION_RESPONSE](#site_permission_response) | Represents a users response to a site permission request.
+[SITE_PERMISSION_RESPONSE](#site_permission_response) | Represents a user's response to a site permission request.
 [VisibleEntryUpdateOperation](#visibleentryupdateoperation) | Indicates the type of operation of the VisibleListUpdateEntry.
 [DualEngineInitialize](#dualengineinitialize) | 
 [DualEngineReady](#dualengineready) | 
@@ -139,7 +139,7 @@ Represents the direction of a focus change.
 DualEngineConfigurableSitesFlags_Disabled            | Disables the configurable sites feature.
 DualEngineConfigurableSitesFlags_EnableConfigurableSuccessResponse            | Allow configurable site switching on a successful navigation.
 DualEngineConfigurableSitesFlags_EnableConfigurableRedirectResponse            | Allow configurable site switching on a redirected navigation.
-DualEngineConfigurableSitesFlags_IntranetIsConfigurable            | Treat all intranet sites as configurable by default.
+DualEngineConfigurableSitesFlags_IntranetIsConfigurable            | Treat all Intranet sites as configurable by default.
 DualEngineConfigurableSitesFlags_AllowConfigurableRedirectToImplicitNeutral            | Allow configurable site switching when redirecting to neutral sites regardless of site list if the navigation is sticky.
 
 Flags to control special engine switching headers and behaviors for configurable sites.
@@ -164,7 +164,7 @@ Configuration options to define desired behavior for the hosted browser window.
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
-DualEngineCookieIntegrity_Auto            | Automatically determine integrity level based on cookies domain.
+DualEngineCookieIntegrity_Auto            | Automatically determine integrity level based on the cookie's domain.
 DualEngineCookieIntegrity_Low            | Cookie is Low IL.
 DualEngineCookieIntegrity_Medium            | Cookie is Medium IL.
 DualEngineCookieIntegrity_Both            | Cookie is both Medium and Low IL.
@@ -221,7 +221,7 @@ Represents the reason a region exit is occurring.
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
-ENTER_FULLSCREEN            | Repesents media going full screen.
+ENTER_FULLSCREEN            | Represents media entering full screen.
 EXIT_FULLSCREEN            | Represents media exiting full screen.
 ENTER_THEATER_FULLSCREEN            | Represents entering theater mode full screen.
 EXIT_THEATER_FULLSCREEN            | Represents exiting theater mode full screen.
@@ -337,7 +337,7 @@ SITE_PERMISSION_REQUEST_DENIED            | Request for the permission was denie
 SITE_PERMISSION_REQUEST_ALLOWED            | Request for the permission was appoved.
 SITE_PERMISSION_REQUEST_DISMISSED            | Request for the permission was dismissed without a response.
 
-Represents a users response to a site permission request.
+Represents a user's response to a site permission request.
 
 #### VisibleEntryUpdateOperation
 

@@ -4,7 +4,7 @@ title: DualEngine Win32 C++ IDualEngine20BrowserObserver
 author: MSEdgeTeam
 ms.author: edgededev
 ms.prod: microsoft-edge
-ms.date: 11/16/2023
+ms.date: 12/06/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserObserver
 topic_type: 
 - APIRef
@@ -114,7 +114,7 @@ Receives events from the Browser.
 [OnTabCrashed](#ontabcrashed) | Raised when the tab has crashed.
 [OnTabHangReported](#ontabhangreported) | Raised when the browser is hung.
 [OnUnexpectedRundown](#onunexpectedrundown) | Raised when the browser has closed unexpectedly.
-[OnUnhandledKeyboardAccelerator](#onunhandledkeyboardaccelerator) | Raised when processing a keyboard accelerator and it is determined that browser does not, or should not based on rgHostPriorityAccels, handle that accelerator.
+[OnUnhandledKeyboardAccelerator](#onunhandledkeyboardaccelerator) | Raised when processing a keyboard accelerator and it is determined that the browser does not, or should not based on rgHostPriorityAccels, handle that accelerator.
 [OnUnhandledKeyboardAcceleratorAsync](#onunhandledkeyboardacceleratorasync) | Raised when processing a keyboard accelerator and it is determined that browser does not, or should not based on rgHostPriorityAccels, handle that accelerator.
 [OnVisibleComplete](#onvisiblecomplete) | Raised when the content of the page is being made visible.
 [OnZoomChanged](#onzoomchanged) | Raised when the zoom has changed.
@@ -374,7 +374,7 @@ Raised when a navigation has been completed.
 
 * `dwSecurityFlags` Flags indicating any certificate errors for the page. 
 
-* `pDualEngineCertificates` A list containing certificate chain for the current entry's page. 
+* `pDualEngineCertificates` A list containing the certificate chain for the current entry's page. 
 
 * `cCertificateChainBlobs` The number of items in `pDualEngineCertificates`.
 
@@ -463,7 +463,7 @@ Raised when the browser has closed unexpectedly.
 
 #### OnUnhandledKeyboardAccelerator
 
-Raised when processing a keyboard accelerator and it is determined that browser does not, or should not based on rgHostPriorityAccels, handle that accelerator.
+Raised when processing a keyboard accelerator and it is determined that the browser does not, or should not based on rgHostPriorityAccels, handle that accelerator.
 
 > public HRESULT [OnUnhandledKeyboardAccelerator](#onunhandledkeyboardaccelerator)(LPMSG lpMsg)
 
@@ -476,7 +476,7 @@ Raised when processing a keyboard accelerator and it is determined that browser 
 
 > public HRESULT [OnUnhandledKeyboardAcceleratorAsync](#onunhandledkeyboardacceleratorasync)(LPMSG pMsg, BOOL isShiftDown, BOOL isCtrlDown, BOOL isAltDown)
 
-In this version the event is raised asynchronously and keyboard state may have changed since it was processed so the state of modifier keys are provided. 
+In this version the event is raised asynchronously and keyboard state may have changed since it was processed so the state of the modifier keys is provided. 
 #### Parameters
 * `pMsg` The win32 message for the unhandled keyboard accelerator. 
 

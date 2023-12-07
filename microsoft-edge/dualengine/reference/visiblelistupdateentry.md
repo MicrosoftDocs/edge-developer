@@ -4,7 +4,7 @@ title: DualEngine Win32 C++ VisibleListUpdateEntry
 author: MSEdgeTeam
 ms.author: edgededev
 ms.prod: microsoft-edge
-ms.date: 11/16/2023
+ms.date: 12/06/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, VisibleListUpdateEntry
 topic_type: 
 - APIRef
@@ -32,7 +32,7 @@ Represents a change to a travel log entry.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[fIsFrameEntry](#fisframeentry) | Indicates whether the entry was for an subframe.
+[fIsFrameEntry](#fisframeentry) | Indicates whether the entry was for a subframe.
 [operation](#operation) | The type of change.
 [pszTitle](#psztitle) | The page title of the entry.
 [pszUrl](#pszurl) | The url of the entry.
@@ -42,7 +42,7 @@ Represents a change to a travel log entry.
 
 #### fIsFrameEntry
 
-Indicates whether the entry was for an subframe.
+Indicates whether the entry was for a subframe.
 
 > public BOOL [fIsFrameEntry](#fisframeentry)
 

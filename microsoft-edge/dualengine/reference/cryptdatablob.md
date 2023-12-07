@@ -4,7 +4,7 @@ title: DualEngine Win32 C++ CryptDataBlob
 author: MSEdgeTeam
 ms.author: edgededev
 ms.prod: microsoft-edge
-ms.date: 11/16/2023
+ms.date: 12/06/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, CryptDataBlob
 topic_type: 
 - APIRef
@@ -30,7 +30,7 @@ Represents an SSL Certificate.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [cbData](#cbdata) | The number of bytes in pbData.
-[pbData](#pbdata) | A buffer containing DER encoded X509 certificate string.
+[pbData](#pbdata) | A buffer containing DER encoded X.509 certificate string.
 
 ## Members
 
@@ -42,7 +42,7 @@ The number of bytes in pbData.
 
 #### pbData
 
-A buffer containing DER encoded X509 certificate string.
+A buffer containing DER encoded X.509 certificate string.
 
 > public BYTE * [pbData](#pbdata)
 
