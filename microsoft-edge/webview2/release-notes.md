@@ -145,6 +145,11 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 1.0.2210.55 or higher.
 
+#### Breaking changes
+
+> [!IMPORTANT]
+> **Breaking Change**:  Developers developing unpackaged Win32 app using Fixed Version runtime v120 or above and targeting Windows 10 devices needs ACL to avoid crashing due to new security feature implemented in WebView2. See post in [WebView2Announcements](https://github.com/MicrosoftEdge/WebView2Announcements/issues/82) for more details.
+
 
 <!-- ------------------------------ -->
 #### General features
@@ -257,6 +262,8 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 * [ICoreWebView2ProcessExtendedInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfocollection?view=webview2-1.0.2210.55&preserve-view=true)
 
+* [ICoreWebView2_20](/microsoft-edge/webview2/reference/win32/icorewebview2_20?view=webview2-1.0.2210.57&preserve-view=true)
+
 * [ICoreWebView2Frame5](/microsoft-edge/webview2/reference/win32/icorewebview2frame5?view=webview2-1.0.2210.55&preserve-view=true)
     * [ICoreWebView2Frame5::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2frame5?view=webview2-1.0.2210.55&preserve-view=true#get_frameid)
 
@@ -286,6 +293,34 @@ The following APIs have been promoted to Stable and are now included in this Rel
     * [ICoreWebView2AcceleratorKeyPressedEventArgs2::get_IsBrowserAcceleratorKeyEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2?view=webview2-1.0.2210.55&preserve-view=true#get_isbrowseracceleratorkeyenabled)
     * [ICoreWebView2AcceleratorKeyPressedEventArgs2::put_IsBrowserAcceleratorKeyEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2?view=webview2-1.0.2210.55&preserve-view=true#put_isbrowseracceleratorkeyenabled)
 ---
+
+
+* Add support for managing profile deletion:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile` Class:
+    * [CoreWebView2Profile.Delete Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.delete?view=webview2-dotnet-1.0.2210.57&preserve-view=true)
+    * [CoreWebView2Profile.Deleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.deleted?view=webview2-dotnet-1.0.2210.57&preserve-view=true)
+
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class:
+    * [CoreWebView2Profile.Delete Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.2210.57&preserve-view=true#delete)
+    * [CoreWebView2Profile.Deleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.2210.57&preserve-view=true#deleted)
+  
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Profile7](/microsoft-edge/webview2/reference/win32/icorewebview2profile7?view=webview2-1.0.2210.57&preserve-view=true)
+    * [ICoreWebView2Profile7::Delete](/microsoft-edge/webview2/reference/win32/icorewebview2profile7?view=webview2-1.0.2210.57&preserve-view=true#delete)
+    * [ICoreWebView2Profile7::add_Deleted](/microsoft-edge/webview2/reference/win32/icorewebview2profile7?view=webview2-1.0.2210.57&preserve-view=true#add_deleted)
+    * [ICoreWebView2Profile7::remove_Deleted](/microsoft-edge/webview2/reference/win32/icorewebview2profile7?view=webview2-1.0.2210.57&preserve-view=true#remove_deleted)
+
+* [ICoreWebView2ProfileDeletedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2profiledeletedeventhandler?view=webview2-1.0.2210.57&preserve-view=true)
+---
+
 
 <!-- ------------------------------ -->
 #### Bug fixes
