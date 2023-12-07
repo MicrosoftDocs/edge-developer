@@ -31,7 +31,7 @@ When inspecting a webpage you didn't build, you might not be familiar with the s
 <!-- ------------------------------ -->
 #### Supported scenarios
 
-The **Explain DevTools with AI** features are for use in standard browser windows, and are not available in the following scenarios:
+These features are for use in standard browser windows, and are not available in the following scenarios:
 
 * Browsing in an InPrivate window.  For information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
 * Browsing with Kids Mode in Microsoft Edge.  For information about Kids Mode, see [Learn more about Kids Mode in Microsoft Edge](https://support.microsoft.com/microsoft-edge/learn-more-about-kids-mode-in-microsoft-edge-4bf0273c-1cbd-47a9-a8f3-895bc1f95bdd).
