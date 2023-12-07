@@ -15,13 +15,28 @@ The **Console** and **Sources** tools in Microsoft Edge DevTools integrate with 
 <!-- ------------------------------ -->
 #### The "Explain this error" feature
 
-When inspecting a webpage with DevTools, you often see errors and warnings in the **Console** tool. These errors and warnings can sometimes be difficult to understand and fix. By using the **Explain this error** feature, you get more information about the error or warning in Copilot in Microsoft Edge.
+When inspecting a webpage with DevTools, you often see errors and warnings in the **Console** tool. These errors and warnings can sometimes be difficult to understand and fix. By using the **Explain this error** feature, you get more information about the error or warning in Copilot in Microsoft Edge:
+
+![Copilot in the Microsoft Edge sidebar, showing the error message and the explanation.](./copilot-explain-images/copilot-error-explanation.png)<!-- instance 1 of using this png -->
 
 
 <!-- ------------------------------ -->
 #### The "Explain these lines of code" feature
 
-When inspecting a webpage you didn't build, you might not be familiar with the source code displayed in the **Sources** tool. By using the **Explain these lines of code** feature, you get more information about the source code in Copilot in Microsoft Edge.
+When inspecting a webpage you didn't build, you might not be familiar with the source code displayed in the **Sources** tool. By using the **Explain these lines of code** feature, you get more information about the source code in Copilot in Microsoft Edge:
+
+![Copilot in the Microsoft Edge sidebar, showing the source code and the explanation.](./copilot-explain-images/copilot-code-explanation.png)<!-- instance 1 of using this png -->
+
+
+<!-- ------------------------------ -->
+#### Supported scenarios
+
+The **Explain DevTools with AI** features are for use in standard browser windows, and are not available in the following scenarios:
+
+* Browsing in an InPrivate window.  For information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
+* Browsing with Kids Mode in Microsoft Edge.  For information about Kids Mode, see [Learn more about Kids Mode in Microsoft Edge](https://support.microsoft.com/microsoft-edge/learn-more-about-kids-mode-in-microsoft-edge-4bf0273c-1cbd-47a9-a8f3-895bc1f95bdd).
+* Using DevTools with a Microsoft Edge WebView2 control.  For information about DevTools with WebView2 apps, see [Debug WebView2 apps with Microsoft Edge DevTools](../../webview2/how-to/debug-devtools.md).
+* Using DevTools in a standalone Progressive Web App window.
 
 
 <!-- ====================================================================== -->
@@ -54,21 +69,10 @@ To enable explanations of errors and source code in DevTools using Copilot:
    ![The 'Explain DevTools with AI' flag in edge://flags](./copilot-explain-images/flag.png)
 
 
-<!-- ------------------------------ -->
-#### Use a standard browser window
-
-The **Explain DevTools with AI** features are for use in standard browser windows, and are not available in the following scenarios:
-
-* Browsing in an InPrivate window.  For information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
-* Browsing with Kids Mode in Microsoft Edge.  For information about Kids Mode, see [Learn more about Kids Mode in Microsoft Edge](https://support.microsoft.com/microsoft-edge/learn-more-about-kids-mode-in-microsoft-edge-4bf0273c-1cbd-47a9-a8f3-895bc1f95bdd).
-* Using DevTools with a Microsoft Edge WebView2 control.  For information about DevTools with WebView2 apps, see [Debug WebView2 apps with Microsoft Edge DevTools](../../webview2/how-to/debug-devtools.md).
-* Using DevTools in a standalone Progressive Web App window.
-
-
 <!-- ====================================================================== -->
 ## Explain errors and warnings in the Console tool
 
-To explain an error or warning in the **Console** tool:
+To use Copilot to explain an error or warning in the **Console** tool:
 
 1. Open a web page that contains the errors you want to explain. For example, open the [Console error explainer test page](https://microsoftedge.github.io/Demos/devtools-explain-error/).
 
@@ -86,7 +90,7 @@ To explain an error or warning in the **Console** tool:
 
    Copilot opens in the Microsoft Edge sidebar, showing the error message, an **Explain the error message from DevTools console** request message, and then a response explaining the error:
 
-   ![Copilot in the Microsoft Edge sidebar, showing the error message and the explanation](./copilot-explain-images/copilot-error-explanation.png)
+   ![Copilot in the Microsoft Edge sidebar, showing the error message and the explanation](./copilot-explain-images/copilot-error-explanation.png)<!-- instance 2 of using this png -->
 
 1. To get more information about the error, in Copilot, enter additional questions.
 
@@ -94,7 +98,7 @@ To explain an error or warning in the **Console** tool:
 <!-- ====================================================================== -->
 ## Explain source code in the Sources tool
 
-To explain code in the **Sources** tool:
+To use Copilot to explain code in the **Sources** tool:
 
 1. Open a web page that contains the source code you want to explain. For example, in a new window or tab, open the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page.
 
@@ -112,7 +116,7 @@ To explain code in the **Sources** tool:
 
    Copilot opens in the Microsoft Edge sidebar, showing the source code, an **Explain these lines of code from the Sources tool in DevTools** request message, and then a response explaining the source code:
 
-   ![Copilot in the Microsoft Edge sidebar, showing the source code and the explanation](./copilot-explain-images/copilot-code-explanation.png)
+   ![Copilot in the Microsoft Edge sidebar, showing the source code and the explanation](./copilot-explain-images/copilot-code-explanation.png)<!-- instance 2 of using this png -->
 
 1. To get more information about the source code, in Copilot, enter additional questions.
 
