@@ -246,7 +246,7 @@ In the following figure, `document.querySelector('a')` and `document.querySelect
 
 ### Select JavaScript context
 
-By default, the **JavaScript Context** dropdown is set to **top**, which represents the main webpage's [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context).
+By default, the **JavaScript Context** dropdown list is set to **top**, which represents the main webpage's [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context).
 
 ![The JavaScript Context dropdown list](./reference-images/console-dom-level-top.png)
 

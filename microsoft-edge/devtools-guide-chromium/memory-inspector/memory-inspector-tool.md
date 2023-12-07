@@ -129,7 +129,7 @@ Click **Toggle value type settings** (![Toggle value type settings](./memory-ins
 
 ![Value type settings](./memory-inspector-tool-images/memory-inspector-panel-value-type-settings.png)
 
-You can change the encoding view using the drop-down list. For integers you can choose from decimal `dec`, hexadecimal `hex`, and octal `oct`. For floats you can choose between decimal notation `dec` and scientific notation `sci`.
+You can change the encoding view using the dropdown list. For integers you can choose from decimal `dec`, hexadecimal `hex`, and octal `oct`. For floats you can choose between decimal notation `dec` and scientific notation `sci`.
 
 
 <!-- ====================================================================== -->
@@ -157,7 +157,7 @@ Complete the following steps to debug a webpage in Memory Inspector.
 
 1. Click **Toggle value type settings** (![Toggle value type settings blue](./memory-inspector-tool-images/memory-inspector-value-type-settings-toggle-back.png)) to close the value type settings.
 
-1. Use the drop-down menus to change the encoding from `dec` to `sci`. The value representations are updated.
+1. Use the dropdown lists to change the encoding from `dec` to `sci`. The value representations are updated.
     
     ![Memory Inspector address values updated view](./memory-inspector-tool-images/memory-inspector-address-values-updated-sci.png)
     
