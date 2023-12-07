@@ -1030,7 +1030,7 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "microsoft-edge/devtools-guide-chromium/accessibility-testing-in-devtools.md",
+        "source_path": "microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md",
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/accessibility/reference",
         "redirect_document_id": false
       },
