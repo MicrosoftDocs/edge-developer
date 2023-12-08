@@ -704,7 +704,7 @@ To see both the transferred size and the uncompressed size of a resource at the 
 
 1. In the upper right within the **Network** tool, click the **Network settings** (gear) icon.  A row of checkboxes appears.
 
-1. Turn on the **Use large request rows** checkbox.
+1. Turn on the **Big request rows** checkbox.
 
 1. Examine the **Size** column in the Request table. The top value is the transferred size, and the bottom value is the size of the resource after the browser uncompresses it:
 
