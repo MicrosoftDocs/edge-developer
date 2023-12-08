@@ -25,7 +25,7 @@ The Microsoft DualEngine API enables you to host and control an Internet Explore
 * [IDualEngine20BrowserObserver](idualengine20browserobserver.md)
 * [IDualEngine20Browser](idualengine20browser.md)
 
-### Structs
+## Structs
 
 * [ACCELERATOR](accelerator.md)
 * [CryptDataBlob](cryptdatablob.md)

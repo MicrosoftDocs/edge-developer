@@ -17,10 +17,9 @@ To have Internet Explorer successfully load your DLL, do the following.
 
 
 <!-- ====================================================================== -->
-## Limited Access Feature Requirements
+## Unlock the Limited Access Feature
 
-The DualEngine API is a Limited Access Feature (LAF); that is, a feature that needs to be unlocked before it can be used. 
-For more information, see [LimitedAccessFeatures Class](/uwp/api/windows.applicationmodel.limitedaccessfeatures).
+The DualEngine API is a Limited Access Feature (LAF); that is, a feature that needs to be unlocked before it can be used.  For more information, see [LimitedAccessFeatures Class](/uwp/api/windows.applicationmodel.limitedaccessfeatures).
 
 The DualEngine API is not a typical LAF and `Windows.ApplicationModel.TryUnlockFeature` is not used to unlock the feature.  This is because LAF typically uses the application identity of the calling process to grant access, and as a plugin DLL, this will always be Internet Explorer. Therefore, to unlock the API, you need to call [DualEngineSessionFactory::TryUnlockFeature](../reference/dualenginesessionfactory.md#tryunlockfeature).
 
@@ -34,7 +33,7 @@ Your specific identity string will be provided to you by Microsoft when LAF acce
 
 
 <!-- ====================================================================== -->
-## Exports
+## Implement function exports
 
 Your adapter DLL must implement the following function exports:
 * `DualEngineInitialize`
@@ -75,7 +74,7 @@ This export is called after Internet Explorer has finished all of its initial se
 
 
 <!-- ====================================================================== -->
-## Signing
+## Bypass signing the adapter DLL
 
 Internet Explorer has a requirement that for an adapter DLL to be loaded, it must be signed with a trusted signature.  For testing and development purposes, this check can be bypassed, by turning `TestSigning` on for the device that you're testing on, as follows:
 
