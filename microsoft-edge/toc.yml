@@ -151,10 +151,6 @@
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
 
-            - name: Simplify DevTools using Focus Mode
-              href: devtools-guide-chromium/experimental-features/focus-mode.md
-              displayName: Experimental features, Focus Mode
-
             - name: Run commands via keyboard with Command Palette
               href: devtools-guide-chromium/experimental-features/edge-command-palette.md
               displayName: Experimental features, Edge Command Palette
@@ -684,10 +680,6 @@
               href: devtools-guide-chromium/accessibility/reference.md
               displayName: Elements tool, Accessibility tab
 
-            - name: Overview of accessibility testing using DevTools  # added article
-              href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
-              displayName: Elements tool, Accessibility tab  # many tools
-
 # Inspect tool (distinct from Tools > Inspect tool bucket)
             - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage  # added article
               href: devtools-guide-chromium/accessibility/test-inspect-tool.md
@@ -719,7 +711,7 @@
                   href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
                   displayName: keyboard support
 
-                - name: Analyze the lack of indication of keyboard focus in a sidebar menu  # added article
+                - name: Analyze the lack of indication of keyboard focus  # added article
                   href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
                   displayName: keyboard focus
 

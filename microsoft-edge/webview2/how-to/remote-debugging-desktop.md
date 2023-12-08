@@ -36,7 +36,7 @@ Attach Microsoft Edge DevTools remotely to a desktop WebView2 WinUI 2 (UWP) app 
 
     ![Install Windows Developer Mode package](./remote-debugging-desktop-images/install-developer-mode-package.png)
 
-    After the installation is complete, note the URL that will be used for the remote debugging connection. To find this URL, expand the **Device Portal** dropdown.  In this case, the Device Portal URL that will be used is `http://localhost:50080`:
+    After the installation is complete, note the URL that will be used for the remote debugging connection. To find this URL, expand the **Device Portal** dropdown list.  In this case, the Device Portal URL that will be used is `http://localhost:50080`:
 
     ![Remote Debugging URL](./remote-debugging-desktop-images/remote-debugging-url.png)
 

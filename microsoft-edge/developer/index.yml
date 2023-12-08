@@ -220,8 +220,6 @@ landingContent:
             url: /microsoft-edge/accessibility/
       - linkListType: how-to-guide
         links:
-          - text: Overview of accessibility testing using DevTools
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
           - text: Accessibility testing
             url: /microsoft-edge/accessibility/test
 # =============================================================================

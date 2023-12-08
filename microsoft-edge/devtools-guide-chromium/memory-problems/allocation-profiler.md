@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 07/21/2023
 ---
 <!-- Copyright Meggin Kearney
 
@@ -38,10 +38,9 @@ In the **Memory** tool, use the **Allocation instrumentation on timeline** radio
 
 **Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording (as frequently as every 50 ms) and one final snapshot at the end of the recording.
 
-![Allocation instrumentation on timeline](./allocation-profiler-images/memory-problems-memory-allocation-timeline-snapshot-highlighted.png)
+![Allocation instrumentation on timeline](./allocation-profiler-images/timeline-snapshot-highlighted.png)
 
-> [!NOTE]
-> The number after the `@` is an object ID that persists across the multiple snapshots taken during the recording session.  The persistent object ID enables precise comparison between heap states.  Objects are moved during garbage collections, so displaying the address of an object makes no sense.
+The number after the `@` is an object ID that persists across the multiple snapshots taken during the recording session.  The persistent object ID enables precise comparison between heap states.  Objects are moved during garbage collections, so displaying the address of an object makes no sense.
 
 
 <!-- ====================================================================== -->
@@ -51,7 +50,7 @@ To begin using **Allocation instrumentation on timeline**:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Memory** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./allocation-profiler-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./allocation-profiler-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, in the **Activity Bar**, select the **Memory** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./allocation-profiler-images/more-tools-icon.png)) button.
 
 1. Select the **Allocation instrumentation on timeline** radio button.
 
@@ -59,7 +58,7 @@ To begin using **Allocation instrumentation on timeline**:
 
 The record heap allocations profiler:
 
-![Record heap allocations profiler.  Use the 'Allocation instrumentation on timeline' radio button in the Memory tool](./allocation-profiler-images/memory-problems-memory-allocation-instrumentation-on-timeline-selected.png)
+![Record heap allocations profiler.  Use the 'Allocation instrumentation on timeline' radio button in the Memory tool](./allocation-profiler-images/instrumentation-on-timeline-selected.png)
 
 
 <!-- ====================================================================== -->
@@ -69,14 +68,14 @@ The heap allocation timeline shows where objects are being created and identifie
 
 The height of each bar corresponds to the size of the recently allocated objects, and the color of the bars indicate whether or not those objects are still live in the final heap snapshot.  Blue bars indicate objects that are still live at the end of the timeline, Gray bars indicate objects that were allocated during the timeline, but have since been garbage collected.
 
-![Allocation instrumentation on timeline snapshot](./allocation-profiler-images/memory-problems-memory-allocation-timelines-snapshot.png)
+![Allocation instrumentation on timeline snapshot](./allocation-profiler-images/timelines-snapshot.png)
 
 <!-- In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem. -->
 <!-- todo: redo figure 4 with multiple click actions -->
 
 You can use the sliders in the timeline above to zoom into that particular snapshot and review the objects that were recently allocated at that point:
 
-![Zoom into snapshot](./allocation-profiler-images/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.png)
+![Zoom into snapshot](./allocation-profiler-images/timeline-snapshot-highlighted-annotated.png)
 
 Clicking on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.
 

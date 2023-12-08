@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 09/09/2022
+ms.date: 07/21/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,15 +30,16 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 <!-- ====================================================================== -->
 ## Open the Cookies pane
 
-1. Open DevTools on the webpage you want to edit.  For example, right-click the page and then select **Inspect**, or press **F12**.  For additional ways, see [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
+1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-2. Click the **Application** tab to open the **Application** tool. The **Manifest** pane opens:
+1. In DevTools, on the **Activity Bar**, select the **Application** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./cookies-images/more-tools-icon.png)) button, and then click **Application**. The **Manifest** pane usually opens by default:
 
-   ![The Manifest pane](cookies-images/pick-application-no-manifest.png)
+   ![The Manifest pane](./cookies-images/pick-application-no-manifest.png)
 
-3. Under **Storage**, expand **Cookies**, then select an origin:
+1. Under **Storage**, expand **Cookies**, then select an origin:
 
-   ![The Cookies pane](cookies-images/open-cookies-select-source.png)
+   ![The Cookies pane](./cookies-images/open-cookies-select-source.png)
+
 
 <!-- ====================================================================== -->
 ## Fields
@@ -75,7 +76,7 @@ The **Cookies** table contains the following fields:
 
 To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
-![Filtering out any cookies that don't contain the text ID](cookies-images/filter-cookies-name.png)
+![Filtering out any cookies that don't contain the text ID](./cookies-images/filter-cookies-name.png)
 
 **Note:** Filtering by other fields isn't supported.
 
@@ -84,18 +85,18 @@ To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
 The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.  Double-click a field to edit it:
 
-![Setting the name of a cookie to 'DEVTOOLS!'](cookies-images/rename-cookie.png)
+![Setting the name of a cookie to 'DEVTOOLS!'](./cookies-images/rename-cookie.png)
 
 <!-- ====================================================================== -->
 ## Delete cookies
 
-To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](cookies-images/delete-cookie-icon.png)):
+To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](./cookies-images/delete-cookie-icon.png)):
 
-![Deleting a specific cookie](cookies-images/delete-selected-cookie.png)
+![Deleting a specific cookie](./cookies-images/delete-selected-cookie.png)
 
-To delete all cookies, click **Clear all cookies** (![Clear all cookies icon](cookies-images/clear-all-cookies-icon.png)):
+To delete all cookies, click **Clear all cookies** (![Clear all cookies icon](./cookies-images/clear-all-cookies-icon.png)):
 
-![Clearing all cookies](cookies-images/clear-all-cookies.png)
+![Clearing all cookies](./cookies-images/clear-all-cookies.png)
 
 
 
