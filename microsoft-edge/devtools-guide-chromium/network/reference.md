@@ -71,7 +71,7 @@ This article is a feature-driven inventory of the **Network** tool.  Use the **N
    * [Copy property values from network requests to your clipboard](#copy-property-values-from-network-requests-to-your-clipboard)
 * [Change the layout of the Network panel](#change-the-layout-of-the-network-panel)
    * [Hide the Filters pane](#hide-the-filters-pane)
-   * [Use large request rows](#use-large-request-rows)
+   * [Big request rows](#big-request-rows)
    * [Hide the Overview pane](#hide-the-overview-pane)
 
 
