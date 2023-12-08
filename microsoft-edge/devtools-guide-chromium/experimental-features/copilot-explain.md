@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/07/2023
+ms.date: 12/08/2023
 ---
 # Explain DevTools Console errors and source code using Copilot in Edge
 
@@ -56,7 +56,7 @@ To enable Copilot in Microsoft Edge:
 
 
 <!-- ------------------------------ -->
-#### Enable the feature in DevTools
+#### Enable the features in DevTools
 
 To enable explanations of errors and source code in DevTools using Copilot:
 
@@ -67,6 +67,8 @@ To enable explanations of errors and source code in DevTools using Copilot:
 1. In the **Explain DevTools with AI** flag, select **Enabled** from the dropdown, and then click **Restart** to restart the browser:
 
    ![The 'Explain DevTools with AI' flag in edge://flags](./copilot-explain-images/flag.png)
+
+   The flag might already be enabled, in which case you don't need to change it.
 
 
 <!-- ====================================================================== -->
