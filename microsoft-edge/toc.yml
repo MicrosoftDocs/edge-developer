@@ -1667,32 +1667,28 @@
           displayName: 
 
 #==============================================================================
-# Dual Engine
+# DualEngine
     - name: DualEngine
       items:
-        - name: Introduction to Microsoft DualEngine API  # existing firstchild article
-          href: dualengine/index.md
-          displayName: 
+        - name: Introduction to the Microsoft DualEngine API
+          href: dualengine/intro.md
+          displayName: Internet Explorer
 
-        - name: Getting Started with DualEngine API
+        - name: Getting started with the DualEngine API
           href: dualengine/get-started.md
           displayName:
 
-        - name: DualEngine API Reference
+        - name: Creating a DualEngine adapter plugin DLL
+          href: dualengine/concepts/adapter-dll.md
+          displayName: 
+
+        - name: Launching Internet Explorer
+          href: dualengine/concepts/launching-internet-explorer.md
+          displayName:
+
+        - name: DualEngine Win32 C++ Reference
           href: dualengine/reference/index.md
-          displayName: functions, methods  # list relevant platforms
-
-        - name: Concepts
-          items:
-            - name: Understanding the DualEngine Adapter DLL
-              href: dualengine/concepts/adapter-dll.md
-              displayName: 
-
-            - name: Launching Internet Explorer
-              href: dualengine/concepts/launching-internet-explorer.md
-              displayName:
-
-      
+          displayName: functions, methods
 
 # =============================================================================
 # bottom leaf nodes

@@ -1,10 +1,9 @@
 ---
-description: Factory object for DualEngine interfaces.
 title: DualEngine Win32 C++ DualEngineSessionFactory
+description: Factory object for DualEngine interfaces.
 author: MSEdgeTeam
 ms.author: edgededev
 ms.prod: microsoft-edge
-ms.date: 12/06/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, DualEngineSessionFactory
 topic_type: 
 - APIRef
@@ -17,8 +16,8 @@ api_type:
 - COM
 api_location:
 - ieframe.dll
+ms.date: 12/06/2023
 ---
-
 # interface DualEngineSessionFactory
 
 > [!IMPORTANT]
@@ -26,6 +25,8 @@ api_location:
 
 Factory object for DualEngine interfaces.
 
+
+<!-- ====================================================================== -->
 ## Summary
 
  Members                        | Descriptions
@@ -34,20 +35,30 @@ Factory object for DualEngine interfaces.
 [GetVersionedBrowserSession](#getversionedbrowsersession) | Gets a DualEngine Session object of the requested version.
 [TryUnlockFeature](#tryunlockfeature) | Called to unlock the DualEngine interface.
 
+
+<!-- ====================================================================== -->
 ## Members
 
+
+<!-- ------------------------------ -->
 #### GetSpecifiedVersion
 
 Returns the known DualEngine interface version, if there is one.
 
 > public STDMETHOD([GetSpecifiedVersion](#getspecifiedversion))(__out UINT * version) const
 
-#### Parameters
+
+###### Parameters
+
 * `version` A pointer to a UINT where the version will be stored if there is one. 
 
-#### Returns
+
+###### Returns
+
 S_OK if a known version was found, E_FAIL if it was not.
 
+
+<!-- ------------------------------ -->
 #### GetVersionedBrowserSession
 
 Gets a DualEngine Session object of the requested version.
@@ -55,15 +66,20 @@ Gets a DualEngine Session object of the requested version.
 > public STDMETHOD([GetVersionedBrowserSession](#getversionedbrowsersession))(__in UINT version, __out IUnknown ** ppSession)
 
 > [!IMPORTANT]
-> This method must be called after Internet Explorer calls the export on DualEngineReady, see [Understanding the DualEngine Adapter DLL](../concepts/adapter-dll.md) for more information. 
-#### Parameters
-* `version` The version of the Session object to get. 
+> This method must be called after Internet Explorer calls the export on DualEngineReady.  See [Creating a DualEngine adapter plugin DLL](../concepts/adapter-dll.md).
 
+
+###### Parameters
+
+* `version` The version of the Session object to get. 
 * `ppSession` The Session object if the version requested is supported. 
 
-#### Returns
+###### Returns
+
 An HRESULT that indicates whether session creation was successful.
 
+
+<!-- ------------------------------ -->
 #### TryUnlockFeature
 
 Called to unlock the DualEngine interface.
@@ -71,12 +87,13 @@ Called to unlock the DualEngine interface.
 > public STDMETHOD([TryUnlockFeature](#tryunlockfeature))(PCWSTR token, PCWSTR attestation)
 
 > [!IMPORTANT]
-> This MUST be called successfully before any other methods on this interface can be called. Equivalent to Windows::ApplicationModel::LimitedAccessFeatures::TryUnlockFeature except it checks the adapter dll for the identity resource instead of the process exe. 
-#### Parameters
-* `token` The LAF token provided by Microsoft. 
+> This MUST be called successfully before any other methods on this interface can be called. Equivalent to `Windows::ApplicationModel::LimitedAccessFeatures::TryUnlockFeature` except it checks the adapter dll for the identity resource instead of the process .exe.
 
+###### Parameters
+
+* `token` The LAF token provided by Microsoft. 
 * `attestation` The attestation string provided by Microsoft. 
 
-#### Returns
-An HRESULT that indicates whether unlocking was successful.
+###### Returns
 
+An HRESULT that indicates whether unlocking was successful.
