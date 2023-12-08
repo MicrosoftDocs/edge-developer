@@ -1,4 +1,4 @@
-- name: Win32 C++
+- name: DualEngine Win32 C++ Reference
   href: index.md
   items:
     - name: DualEngineSessionFactory

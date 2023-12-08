@@ -2,7 +2,7 @@
 description: Contains the information representing a keyboard accelerator.
 title: DualEngine Win32 C++ ACCELERATOR
 author: MSEdgeTeam
-ms.author: edgededev
+ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.date: 12/06/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, ACCELERATOR

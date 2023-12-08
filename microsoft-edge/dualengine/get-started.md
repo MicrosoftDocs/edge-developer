@@ -2,7 +2,7 @@
 title: Getting started with the DualEngine API
 description: Get started using the Microsoft DualEngine API to embed and control an Internet Explorer instance within your app, to provide a browsing experience that's equivalent to a normal Internet Explorer tab, providing increased compatibility with legacy websites.
 author: MSEdgeTeam
-ms.author: edgededev
+ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
@@ -19,7 +19,7 @@ This article walks you through the steps to start using the DualEngine API.
 
 Access to the DualEngine API is controlled via a Limited Access Feature (LAF).  To gain access to the feature, reach out to dualengineapiaccess@microsoft.com.
 
-The DualEngine LAF is handled somewhat atypically; for details, see [Unlock the Limited Access Feature](concepts/adapter-dll.md#limited-access-feature-requirements) in _Creating a DualEngine adapter plugin DLL_.
+The DualEngine LAF is handled somewhat atypically; for details, see [Unlock the Limited Access Feature](concepts/adapter-dll.md#unlock-the-limited-access-feature) in _Creating a DualEngine adapter plugin DLL_.
 
 
 <!-- ====================================================================== -->

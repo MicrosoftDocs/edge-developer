@@ -2,7 +2,7 @@
 title: Creating a DualEngine adapter plugin DLL
 description: Understanding the requirements and uses of the DualEngine Adapter DLL.
 author: MSEdgeTeam
-ms.author: edgededev
+ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high

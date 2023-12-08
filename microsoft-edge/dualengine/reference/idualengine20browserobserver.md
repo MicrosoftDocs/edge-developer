@@ -2,7 +2,7 @@
 description: Receives events from the Browser.
 title: DualEngine Win32 C++ IDualEngine20BrowserObserver
 author: MSEdgeTeam
-ms.author: edgededev
+ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.date: 12/06/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserObserver

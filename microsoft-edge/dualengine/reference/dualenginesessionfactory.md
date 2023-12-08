@@ -2,7 +2,7 @@
 title: DualEngine Win32 C++ DualEngineSessionFactory
 description: Factory object for DualEngine interfaces.
 author: MSEdgeTeam
-ms.author: edgededev
+ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, DualEngineSessionFactory
 topic_type: 
