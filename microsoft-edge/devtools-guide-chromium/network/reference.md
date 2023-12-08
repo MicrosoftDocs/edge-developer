@@ -799,7 +799,7 @@ Use big request rows when you want more whitespace in your network requests tabl
 
 To enable large rows, select the **Big request rows** checkbox. An example of large request rows in the **Requests** pane:
 
-![An example of big request rows in the Requests pane](./reference-images/large-request-rows.png)
+![An example of big request rows in the Requests pane](./reference-images/big-request-rows.png)
 
 
 <!-- ------------------------------ -->
