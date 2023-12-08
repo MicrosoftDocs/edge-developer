@@ -71,7 +71,7 @@ This article is a feature-driven inventory of the **Network** tool.  Use the **N
    * [Copy property values from network requests to your clipboard](#copy-property-values-from-network-requests-to-your-clipboard)
 * [Change the layout of the Network panel](#change-the-layout-of-the-network-panel)
    * [Hide the Filters pane](#hide-the-filters-pane)
-   * [Use large request rows](#use-large-request-rows)
+   * [Big request rows](#big-request-rows)
    * [Hide the Overview pane](#hide-the-overview-pane)
 
 
@@ -704,7 +704,7 @@ To see both the transferred size and the uncompressed size of a resource at the 
 
 1. In the upper right within the **Network** tool, click the **Network settings** (gear) icon.  A row of checkboxes appears.
 
-1. Turn on the **Use large request rows** checkbox.
+1. Turn on the **Big request rows** checkbox.
 
 1. Examine the **Size** column in the Request table. The top value is the transferred size, and the bottom value is the size of the resource after the browser uncompresses it:
 
@@ -793,13 +793,13 @@ By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, 
 
 
 <!-- ------------------------------ -->
-#### Use large request rows
+#### Big request rows
 
-Use large rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
+Use big request rows when you want more whitespace in your network requests table. Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
 
-To enable large rows, select the **Use large request rows** checkbox.  An example of large request rows in the **Requests** pane:
+To enable large rows, select the **Big request rows** checkbox. An example of large request rows in the **Requests** pane:
 
-![An example of large request rows in the Requests pane](./reference-images/large-request-rows.png)
+![An example of big request rows in the Requests pane](./reference-images/big-request-rows.png)
 
 
 <!-- ------------------------------ -->
