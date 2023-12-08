@@ -795,11 +795,11 @@ By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, 
 <!-- ------------------------------ -->
 #### Big request rows
 
-Use large rows when you want more whitespace in your network requests table. Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
+Use big request rows when you want more whitespace in your network requests table. Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
 
 To enable large rows, select the **Big request rows** checkbox. An example of large request rows in the **Requests** pane:
 
-![An example of large request rows in the Requests pane](./reference-images/large-request-rows.png)
+![An example of big request rows in the Requests pane](./reference-images/large-request-rows.png)
 
 
 <!-- ------------------------------ -->
