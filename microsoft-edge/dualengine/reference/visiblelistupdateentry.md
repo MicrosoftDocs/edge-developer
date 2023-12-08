@@ -35,8 +35,8 @@ Represents a change to a travel log entry.
 [fIsFrameEntry](#fisframeentry) | Indicates whether the entry was for a subframe.
 [operation](#operation) | The type of change.
 [pszTitle](#psztitle) | The page title of the entry.
-[pszUrl](#pszurl) | The url of the entry.
-[ulEntryId](#ulentryid) | The id of the entry.
+[pszUrl](#pszurl) | The URL of the entry.
+[ulEntryId](#ulentryid) | The ID of the entry.
 
 ## Members
 
@@ -60,13 +60,13 @@ The page title of the entry.
 
 #### pszUrl
 
-The url of the entry.
+The URL of the entry.
 
 > public LPWSTR [pszUrl](#pszurl)
 
 #### ulEntryId
 
-The id of the entry.
+The ID of the entry.
 
 > public ULONG [ulEntryId](#ulentryid)
 

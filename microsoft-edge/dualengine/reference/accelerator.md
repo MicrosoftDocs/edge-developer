@@ -24,33 +24,32 @@ api_location:
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
-Contains the information representing a keyboard accelerator.
+Contains the information representing a keyboard accelerator (keyboard shortcut).
 
 ## Summary
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[eventType](#eventtype) | Specifies the type of keyboard event that the accelerator is processed on.
-[flags](#flags) | Specifies the modifier keys present in the accelerator keystroke.
-[keyCode](#keycode) | Specifies the virtual-key code of the keystroke.
+[eventType](#eventtype) | The type of keyboard event that the accelerator is processed on.
+[flags](#flags) | The modifier keys present in the accelerator keystroke.
+[keyCode](#keycode) | The virtual-key code of the keystroke.
 
 ## Members
 
 #### eventType
 
-Specifies the type of keyboard event that the accelerator is processed on.
+The type of keyboard event that the accelerator is processed on.
 
 > public ACCELERATOREVENTTYPE [eventType](#eventtype)
 
 #### flags
 
-Specifies the modifier keys present in the accelerator keystroke.
+The modifier keys present in the accelerator keystroke.
 
 > public ACCELERATORFLAGS [flags](#flags)
 
 #### keyCode
 
-Specifies the virtual-key code of the keystroke.
+The virtual-key code of the keystroke.
 
 > public DWORD [keyCode](#keycode)
-

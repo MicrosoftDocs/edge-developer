@@ -42,17 +42,17 @@ Represents the requested state of a new window.
 --------------------------------|---------------------------------------------
 [disposition](#disposition) | Type of tab or window that the host should create to host the window.
 [height](#height) | Specifies the requested height of the window.
-[heightSpecified](#heightspecified) | Indicates whether a DualEngineNewWindowOptions.height value was specified.
+[heightSpecified](#heightspecified) | Indicates whether a `DualEngineNewWindowOptions.height` value was specified.
 [left](#left) | Specifies the requested x-coordinate of the upper-left corner of the window.
-[leftSpecified](#leftspecified) | Indicates whether a DualEngineNewWindowOptions.left value was specified.
+[leftSpecified](#leftspecified) | Indicates whether a `DualEngineNewWindowOptions.left` value was specified.
 [menuBarVisible](#menubarvisible) | Indicates whether the window should should have a visible menu bar.
 [scrollbarsVisible](#scrollbarsvisible) | Indicates whether the window should should have visible scroll bars.
 [statusBarVisible](#statusbarvisible) | Indicates whether the window should should have a visible status bar.
 [toolbarVisible](#toolbarvisible) | Indicates whether the window should should have a visible toolbar.
 [top](#top) | Specifies the requested y-coordinate of the upper-left corner of the window.
-[topSpecified](#topspecified) | Indicates whether a DualEngineNewWindowOptions.top value was specified.
+[topSpecified](#topspecified) | Indicates whether a `DualEngineNewWindowOptions.top` value was specified.
 [width](#width) | Specifies the requested width of the window.
-[widthSpecified](#widthspecified) | Indicates whether a DualEngineNewWindowOptions.width value was specified.
+[widthSpecified](#widthspecified) | Indicates whether a `DualEngineNewWindowOptions.width` value was specified.
 
 ## Members
 
@@ -70,7 +70,7 @@ Specifies the requested height of the window.
 
 #### heightSpecified
 
-Indicates whether a DualEngineNewWindowOptions.height value was specified.
+Indicates whether a `DualEngineNewWindowOptions.height` value was specified.
 
 > public BOOL [heightSpecified](#heightspecified)
 
@@ -82,7 +82,7 @@ Specifies the requested x-coordinate of the upper-left corner of the window.
 
 #### leftSpecified
 
-Indicates whether a DualEngineNewWindowOptions.left value was specified.
+Indicates whether a `DualEngineNewWindowOptions.left` value was specified.
 
 > public BOOL [leftSpecified](#leftspecified)
 
@@ -118,7 +118,7 @@ Specifies the requested y-coordinate of the upper-left corner of the window.
 
 #### topSpecified
 
-Indicates whether a DualEngineNewWindowOptions.top value was specified.
+Indicates whether a `DualEngineNewWindowOptions.top` value was specified.
 
 > public BOOL [topSpecified](#topspecified)
 
@@ -130,7 +130,6 @@ Specifies the requested width of the window.
 
 #### widthSpecified
 
-Indicates whether a DualEngineNewWindowOptions.width value was specified.
+Indicates whether a `DualEngineNewWindowOptions.width` value was specified.
 
 > public BOOL [widthSpecified](#widthspecified)
-

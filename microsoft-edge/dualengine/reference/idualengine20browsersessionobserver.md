@@ -35,7 +35,7 @@ Receives events from the Session.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[NavigateDownloadLink](#navigatedownloadlink) | Raised when the Session Download window is requesting to navigate to a url.
+[NavigateDownloadLink](#navigatedownloadlink) | Raised when the Session Download window is requesting to navigate to a URL.
 [ReverseSyncCookies](#reversesynccookies) | Raised when a cookie is set in the Session if reverse cookie sync is enabled.
 [UpdateDownloadState](#updatedownloadstate) | Raised when downloads are stopped or started.
 
@@ -50,7 +50,7 @@ Windows 11, Version 22H2   |KB5032288
 
 #### NavigateDownloadLink
 
-Raised when the Session Download window is requesting to navigate to a url.
+Raised when the Session Download window is requesting to navigate to a URL.
 
 > public HRESULT [NavigateDownloadLink](#navigatedownloadlink)(BSTR url, VARIANT * PostData)
 
@@ -69,7 +69,7 @@ See IDualEngine20BrowserSession::SetReverseCookieSync().
 #### Parameters
 * `pCookies` The cookies that were set. 
 
-* `cCookies` The number of cookies in pCookies. 
+* `cCookies` The number of cookies in `pCookies`.
 
 * `ulCookieSyncVersion` A number that can be used to correlate the specific cookie state with a navigation.
 
@@ -80,5 +80,4 @@ Raised when downloads are stopped or started.
 > public HRESULT [UpdateDownloadState](#updatedownloadstate)(BOOL fOnGoingDownloads)
 
 #### Parameters
-* `fOnGoingDownloads` If true the Session has ongoing downloads, false if it does not.
-
+* `fOnGoingDownloads` If `true`, the Session has ongoing downloads; `false` if it does not.

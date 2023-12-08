@@ -56,7 +56,7 @@ api_location:
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
-```
+```cpp
 interface IDualEngine20Browser
   : public IUnknown
 ```
@@ -67,32 +67,32 @@ Represents an Internet Explorer tab.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[DualEngineBrowserCommitted](#dualenginebrowsercommitted) | Notify the browser that it has been committed and is no longer speculative.
-[DualEngineClose](#dualengineclose) | Close the browser instance.
+[DualEngineBrowserCommitted](#dualenginebrowsercommitted) | Notifies the browser that it has been committed and is no longer speculative.
+[DualEngineClose](#dualengineclose) | Closes the browser instance.
 [DualEngineDeleteTabRecoveryData](#dualenginedeletetabrecoverydata) | Deletes tab recovery data.
-[DualEngineDoOnBeforeUnloadAndStop](#dualenginedoonbeforeunloadandstop) | Stops any navigations that are in progress and runs the onBeforeUnload handlers.
-[DualEngineDPIChanged](#dualenginedpichanged) | Notify that DPI has changed and page layout should be recalculated.
+[DualEngineDoOnBeforeUnloadAndStop](#dualenginedoonbeforeunloadandstop) | Stops any navigations that are in progress and runs the `onBeforeUnload` handlers.
+[DualEngineDPIChanged](#dualenginedpichanged) | Notifies that DPI has changed and page layout should be recalculated.
 [DualEngineEnableCaretMode](#dualengineenablecaretmode) | Enables or disables Caret Browsing mode.
 [DualEngineExecNavigationCommand](#dualengineexecnavigationcommand) | Executes a navigation command.
 [DualEngineFindOnPage](#dualenginefindonpage) | Finds an instance of text on the page.
-[DualEngineForceClose](#dualengineforceclose) | Force close the browser instance.
+[DualEngineForceClose](#dualengineforceclose) | Force-closes the browser instance.
 [DualEngineGeolocationPermissionResponse](#dualenginegeolocationpermissionresponse) | Provides a response to a geolocation permission request.
-[DualEngineGoToEntry](#dualenginegotoentry) | Navigate to a specific travel log entry.
-[DualEngineInitialize](#dualengineinitialize) | Initialize the browser object with an URL.
-[DualEngineInitialize2](#dualengineinitialize2) | Initialize the browser object with an URL; this versions allows for additional information about the initial navigation to be passed in.
-[DualEngineInitializeWithRecoveryData](#dualengineinitializewithrecoverydata) | Initialize the browser object using tab recovery data.
-[DualEngineLostFocus](#dualenginelostfocus) | Notify the browser that it has lost focus.
-[DualEngineNavigate](#dualenginenavigate) | Navigate to a URL.
-[DualEngineNavigate2](#dualenginenavigate2) | Navigate to a URL; this version allows for additional information about the navigation to be passed in.
+[DualEngineGoToEntry](#dualenginegotoentry) | Navigates to a specific travel log entry.
+[DualEngineInitialize](#dualengineinitialize) | Initializes the browser object with an URL.
+[DualEngineInitialize2](#dualengineinitialize2) | Initializes the browser object with an URL; this versions allows for additional information about the initial navigation to be passed in.
+[DualEngineInitializeWithRecoveryData](#dualengineinitializewithrecoverydata) | Initializes the browser object using tab recovery data.
+[DualEngineLostFocus](#dualenginelostfocus) | Notifies the browser that it has lost focus.
+[DualEngineNavigate](#dualenginenavigate) | Navigates to a URL.
+[DualEngineNavigate2](#dualenginenavigate2) | Navigates to a URL, with additional information about the navigation.
 [DualEngineNotifyNavigationEntriesDeleted](#dualenginenotifynavigationentriesdeleted) | Notifies that navigation entries have been deleted.
-[DualEnginePrepareToExitRegion](#dualenginepreparetoexitregion) | Notify the browser that a navigation is occuring to a page that will be handled by the host.
-[DualEnginePrint](#dualengineprint) | Invoke the print dialog for the current page.
-[DualEngineProtectFocus](#dualengineprotectfocus) | Control whether the browser tries to change focus to itself or not.
-[DualEngineSavePageAs](#dualenginesavepageas) | Invoke the "Save Webpage" dialog for the current page.
+[DualEnginePrepareToExitRegion](#dualenginepreparetoexitregion) | Notifies the browser that a navigation is occurring to a page that will be handled by the host.
+[DualEnginePrint](#dualengineprint) | Invokes the print dialog for the current page.
+[DualEngineProtectFocus](#dualengineprotectfocus) | Controls whether the browser tries to change focus to itself or not.
+[DualEngineSavePageAs](#dualenginesavepageas) | Invokes the "Save Webpage" dialog for the current page.
 [DualEngineSetEngineSwitchingPolicyFlags](#dualenginesetengineswitchingpolicyflags) | Sets flags that determine how the browser handles engine switching.
-[DualEngineSetFocus](#dualenginesetfocus) | Set focus inside the hosted browser.
-[DualEngineSetMediaFullscreen](#dualenginesetmediafullscreen) | Changes the fullscreen state of the media playing in the browser.
-[DualEngineSetPosition](#dualenginesetposition) | Set the size and position of the browser window.
+[DualEngineSetFocus](#dualenginesetfocus) | Sets focus inside the hosted browser.
+[DualEngineSetMediaFullscreen](#dualenginesetmediafullscreen) | Changes the full-screen state of the media playing in the browser.
+[DualEngineSetPosition](#dualenginesetposition) | Sets the size and position of the browser window.
 [DualEngineSetTheaterFullscreen](#dualenginesettheaterfullscreen) | Changes the Theater mode state of the browser.
 [DualEngineSetTheaterMargins](#dualenginesettheatermargins) | Adjusts the top margin of the browser window when it is being displayed in theater mode.
 [DualEngineSetVisible](#dualenginesetvisible) | Notifies the browser of a visibility change.
@@ -114,13 +114,13 @@ Windows 11, Version 22H2   |KB5032288
 
 #### DualEngineBrowserCommitted
 
-Notify the browser that it has been committed and is no longer speculative.
+Notifies the browser that it has been committed and is no longer speculative.
 
 > public HRESULT [DualEngineBrowserCommitted](#dualenginebrowsercommitted)()
 
 #### DualEngineClose
 
-Close the browser instance.
+Closes the browser instance.
 
 > public HRESULT [DualEngineClose](#dualengineclose)()
 
@@ -135,13 +135,13 @@ Deletes tab recovery data.
 
 #### DualEngineDoOnBeforeUnloadAndStop
 
-Stops any navigations that are in progress and runs the onBeforeUnload handlers.
+Stops any navigations that are in progress and runs the `onBeforeUnload` handlers.
 
 > public HRESULT [DualEngineDoOnBeforeUnloadAndStop](#dualenginedoonbeforeunloadandstop)()
 
 #### DualEngineDPIChanged
 
-Notify that DPI has changed and page layout should be recalculated.
+Notifies that DPI has changed and page layout should be recalculated.
 
 > public HRESULT [DualEngineDPIChanged](#dualenginedpichanged)()
 
@@ -180,7 +180,7 @@ Finds an instance of text on the page.
 
 #### DualEngineForceClose
 
-Force close the browser instance.
+Force-closes the browser instance.
 
 > public HRESULT [DualEngineForceClose](#dualengineforceclose)()
 
@@ -197,16 +197,16 @@ Provides a response to a geolocation permission request.
 
 #### DualEngineGoToEntry
 
-Navigate to a specific travel log entry.
+Navigates to a specific travel log entry.
 
 > public HRESULT [DualEngineGoToEntry](#dualenginegotoentry)(ULONG ulEntryId)
 
 #### Parameters
-* `ulEntryId` The travel log entry id to navigate to.
+* `ulEntryId` The travel log entry ID to navigate to.
 
 #### DualEngineInitialize
 
-Initialize the browser object with an URL.
+Initializes the browser object with an URL.
 
 > public HRESULT [DualEngineInitialize](#dualengineinitialize)(IDualEngine20BrowserObserver * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, SentinelEntryInfo sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
@@ -227,7 +227,7 @@ Initialize the browser object with an URL.
 
 #### DualEngineInitialize2
 
-Initialize the browser object with an URL; this versions allows for additional information about the initial navigation to be passed in.
+Initializes the browser object with an URL; this versions allows for additional information about the initial navigation to be passed in.
 
 > public HRESULT [DualEngineInitialize2](#dualengineinitialize2)(IDualEngine20BrowserObserver * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, SentinelEntryInfo sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
@@ -254,14 +254,14 @@ Initialize the browser object with an URL; this versions allows for additional i
 
 #### DualEngineInitializeWithRecoveryData
 
-Initialize the browser object using tab recovery data.
+Initializes the browser object using tab recovery data.
 
 > public HRESULT [DualEngineInitializeWithRecoveryData](#dualengineinitializewithrecoverydata)(REFGUID guidTabId, ULONG ulEntryId, IDualEngine20BrowserObserver * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, SentinelEntryInfo sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
 #### Parameters
 * `guidTabId` The GUID for the source recovery data file to initialize this instance with. 
 
-* `ulEntryId` The id of the entry in the travel log to navigate to after recovery. 
+* `ulEntryId` The ID of the entry in the travel log to navigate to after recovery. 
 
 * `pDualEngineObserver` A pointer to the observer for this browser. 
 
@@ -279,7 +279,7 @@ Initialize the browser object using tab recovery data.
 
 #### DualEngineLostFocus
 
-Notify the browser that it has lost focus.
+Notifies the browser that it has lost focus.
 
 > public HRESULT [DualEngineLostFocus](#dualenginelostfocus)(HWND hwndLostFocus)
 
@@ -288,7 +288,7 @@ Notify the browser that it has lost focus.
 
 #### DualEngineNavigate
 
-Navigate to a URL.
+Navigates to a URL.
 
 > public HRESULT [DualEngineNavigate](#dualenginenavigate)(LPCWSTR pszUrl, BOOL fSkipOnBeforeUnload)
 
@@ -299,14 +299,14 @@ Navigate to a URL.
 
 #### DualEngineNavigate2
 
-Navigate to a URL; this version allows for additional information about the navigation to be passed in.
+Navigates to a URL, with additional information about the navigation.
 
 > public HRESULT [DualEngineNavigate2](#dualenginenavigate2)(LPCWSTR pszUrl, BOOL fSkipOnBeforeUnload, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
 #### Parameters
 * `pszUrl` The URL to navigate to. 
 
-* `fSkipOnBeforeUnload` Whether or not to skip the onBeforeUnload handling. 
+* `fSkipOnBeforeUnload` Whether to skip the `onBeforeUnload` handling. 
 
 * `pszReferrer` The HTTP Referer request header for this navigation. 
 
@@ -327,7 +327,7 @@ Notifies that navigation entries have been deleted.
 
 #### DualEnginePrepareToExitRegion
 
-Notify the browser that a navigation is occuring to a page that will be handled by the host.
+Notifies the browser that a navigation is occurring to a page that will be handled by the host.
 
 > public HRESULT [DualEnginePrepareToExitRegion](#dualenginepreparetoexitregion)(EXIT_REGION_TYPE type)
 
@@ -336,22 +336,22 @@ Notify the browser that a navigation is occuring to a page that will be handled 
 
 #### DualEnginePrint
 
-Invoke the print dialog for the current page.
+Invokes the Print dialog for the current page.
 
 > public HRESULT [DualEnginePrint](#dualengineprint)()
 
 #### DualEngineProtectFocus
 
-Control whether the browser tries to change focus to itself or not.
+Controls whether the browser tries to change focus to itself.
 
 > public HRESULT [DualEngineProtectFocus](#dualengineprotectfocus)(BOOL fProtectFocus)
 
 #### Parameters
-* `fProtectFocus` If true the browser will not try to steal focus, if false stealing focus is allowed.
+* `fProtectFocus` If `true`, the browser will not try to steal focus; if `false`, stealing focus is allowed.
 
 #### DualEngineSavePageAs
 
-Invoke the "Save Webpage" dialog for the current page.
+Invokes the **Save Webpage** dialog for the current page.
 
 > public HRESULT [DualEngineSavePageAs](#dualenginesavepageas)()
 
@@ -362,11 +362,11 @@ Sets flags that determine how the browser handles engine switching.
 > public HRESULT [DualEngineSetEngineSwitchingPolicyFlags](#dualenginesetengineswitchingpolicyflags)(EngineSwitchingPolicyFlags engineSwitchingPolicyFlags)
 
 #### Parameters
-* `engineSwitchingPolicyFlags` The flags representing the engine switching behavior that is desired.
+* `engineSwitchingPolicyFlags` Flags representing the desired engine switching behavior.
 
 #### DualEngineSetFocus
 
-Set focus inside the hosted browser.
+Sets focus inside the hosted browser.
 
 > public HRESULT [DualEngineSetFocus](#dualenginesetfocus)(DUALENGINE_FOCUSDIRECTION focusDirection)
 
@@ -375,23 +375,25 @@ Set focus inside the hosted browser.
 
 #### DualEngineSetMediaFullscreen
 
-Changes the fullscreen state of the media playing in the browser.
+Changes the full-screen state of the media playing in the browser.
 
 > public HRESULT [DualEngineSetMediaFullscreen](#dualenginesetmediafullscreen)(BOOL fFullscreen)
 
 > [!WARNING]
-> Despite its name this function only exits fullscreen and will do nothing if no media is fullscreen.
+> Despite its name, this function only exits fullscreen and will do nothing if no media is fullscreen.
 > Passing `true` into the function is always a no-op.
+
 #### Parameters
-* `fFullscreen` If false fullscreen will be exited if media is fullscreen, if true nothing happens.
+* `fFullscreen` If `false`, fullscreen will be exited if media is fullscreen; if `true`, nothing happens.
 
 #### DualEngineSetPosition
 
-Set the size and position of the browser window.
+Sets the size and position of the browser window.
 
 > public HRESULT [DualEngineSetPosition](#dualenginesetposition)(int x, int y, int iWidth, int iHeight)
 
 #### Parameters
+
 * `x` The new position of the left side of the window, in client coordinates. 
 
 * `y` The new position of the top of the window, in client coordinates. 
@@ -406,9 +408,9 @@ Changes the Theater mode state of the browser.
 
 > public HRESULT [DualEngineSetTheaterFullscreen](#dualenginesettheaterfullscreen)(BOOL fFullscreen)
 
-In theater mode, the browsers window fills the entire screen and displays a toolbar that has a minimal set of navigational buttons. A status bar is also provided in the upper-right corner of the screen. Explorer bars, such as History and Favorites, are displayed as an autohide pane on the left edge of the screen in theater mode. 
+In theater mode, the browsers window fills the entire screen and displays a toolbar that has a minimal set of navigation buttons. A status bar is also provided in the upper-right corner of the screen. Explorer bars, such as History and Favorites, are displayed as an autohide pane on the left edge of the screen in theater mode. 
 #### Parameters
-* `fFullscreen` If true and not currently in theater mode the browser will enter theater mode, if false and currently in theater mode the browser will exit theater mode.
+* `fFullscreen` If `true` and not currently in theater mode, the browser will enter theater mode; if `false` and currently in theater mode, the browser will exit theater mode.
 
 #### DualEngineSetTheaterMargins
 
@@ -481,7 +483,7 @@ Stops the find operation.
 > public HRESULT [DualEngineStopFindOnPage](#dualenginestopfindonpage)(BOOL fClean)
 
 #### Parameters
-* `fClean` If true the highlighted results and current selected result will be cleared, if false the current selected result will remain selected.
+* `fClean` If `true`, the highlighted results and current selected result will be cleared; if `false`, the current selected result will remain selected.
 
 #### DualEngineTranslateAccelerator
 
@@ -491,4 +493,3 @@ Processes an accelerator message.
 
 #### Parameters
 * `lpMsg` A pointer to a MSG structure that specifies the message to be translated.
-

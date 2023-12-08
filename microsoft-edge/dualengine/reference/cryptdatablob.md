@@ -29,20 +29,19 @@ Represents an SSL Certificate.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[cbData](#cbdata) | The number of bytes in pbData.
-[pbData](#pbdata) | A buffer containing DER encoded X.509 certificate string.
+[cbData](#cbdata) | The number of bytes in `pbData`.
+[pbData](#pbdata) | A buffer containing a DER-encoded X.509 certificate string.
 
 ## Members
 
 #### cbData
 
-The number of bytes in pbData.
+The number of bytes in `pbData`.
 
 > public DWORD [cbData](#cbdata)
 
 #### pbData
 
-A buffer containing DER encoded X.509 certificate string.
+A buffer containing a DER-encoded X.509 certificate string.
 
 > public BYTE * [pbData](#pbdata)
-

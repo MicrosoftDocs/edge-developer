@@ -72,7 +72,7 @@ Gets a DualEngine Session object of the requested version.
 ###### Parameters
 
 * `version` The version of the Session object to get. 
-* `ppSession` The Session object if the version requested is supported. 
+* `ppSession` The Session object, if the version requested is supported. 
 
 ###### Returns
 

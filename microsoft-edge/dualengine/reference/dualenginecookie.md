@@ -54,7 +54,7 @@ The cookie domain.
 
 #### expiry
 
-Expiry time for persistent cookies Should only be used if INTERNET_COOKIE_IS_SESSION is *not* set in flags, or if this is a delete (an expiry set to a past date)
+Expiry time for persistent cookies Should only be used if INTERNET_COOKIE_IS_SESSION is *not* set in flags, or if this is a delete (an expiry set to a past date).
 
 > public FILETIME [expiry](#expiry)
 
@@ -97,4 +97,3 @@ The cookie path. May be NULL.
 The cookie value.
 
 > public LPCWSTR [value](#value)
-

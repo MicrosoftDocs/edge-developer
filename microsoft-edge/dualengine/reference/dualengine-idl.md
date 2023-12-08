@@ -29,7 +29,7 @@ api_loction:
 [ACCELERATOREVENTTYPE](#acceleratoreventtype) | Specifies the type of accelerator event.
 [ACCELERATORFLAGS](#acceleratorflags) | Specifies the virtual key modifiers present in the accelerator keystroke.
 [ATTENTIONSTATE](#attentionstate) | Represents the reason attention is being requested.
-[BROWSERVISIBILITY](#browservisibility) | Represents a Browser visibility state.
+[BROWSERVISIBILITY](#browservisibility) | Represents a browser visibility state.
 [CERTERRORFLAG](#certerrorflag) | Represents a certificate error.
 [DUALENGINE_FOCUSDIRECTION](#dualengine_focusdirection) | Represents the direction of a focus change.
 [DualEngineConfigurableSitesFlags](#dualengineconfigurablesitesflags) | Flags to control special engine switching headers and behaviors for configurable sites.
@@ -49,8 +49,8 @@ api_loction:
 [SITE_PERMISSION_KIND](#site_permission_kind) | Represents the type of site permission being requested.
 [SITE_PERMISSION_RESPONSE](#site_permission_response) | Represents a user's response to a site permission request.
 [VisibleEntryUpdateOperation](#visibleentryupdateoperation) | Indicates the type of operation of the VisibleListUpdateEntry.
-[DualEngineInitialize](#dualengineinitialize) | 
-[DualEngineReady](#dualengineready) | 
+[DualEngineInitialize](#dualengineinitialize) | Initializes the DualEngine.
+[DualEngineReady](#dualengineready) | Called after Internet Explorer has finished all of its initial setup and the API is ready to use.
 
 ## Members
 
@@ -100,7 +100,7 @@ VISIBILITY_INACTIVE            | The Browser is inactive.
 VISIBILITY_MINIMIZED            | The Browser is minimized.
 VISIBILITY_VISIBLE            | The Browser is visible.
 
-Represents a Browser visibility state.
+Represents a browser visibility state.
 
 #### CERTERRORFLAG
 
@@ -197,8 +197,8 @@ EngineSwitchingPolicyFlags_FormSubmitsSticky            | Form submissions to si
 EngineSwitchingPolicyFlags_UserInitiatedHyperlinkClicksSticky            | User initiated hyperlink navigations to sites not in the site list stay in the browser.
 EngineSwitchingPolicyFlags_OtherNavigationsSticky            | All other types of navigation to sites not in the site list stay in the browser.
 EngineSwitchingPolicyFlags_RespectAllowRedirectAttribute            | Whether the navigation stays in the browser is respective of the site list entry's `allow-redirect` attribute.
-EngineSwitchingPolicyFlags_Max            | 
-EngineSwitchingPolicyFlags_Mask            | 
+EngineSwitchingPolicyFlags_Max            | todo
+EngineSwitchingPolicyFlags_Mask            | todo
 
 Represents the engine switching policy This policy along with the site list determines when navigations are handled by the browser and when they are sent to the host to handle.
 
@@ -280,6 +280,8 @@ Represents a reason that a navigation failed.
 
 #### NAVIGATIONFLAGS
 
+Flags that indicate the type of navigation that occurred.
+
 > enum [NAVIGATIONFLAGS](#navigationflags)
 
  Values                         | Descriptions
@@ -291,9 +293,10 @@ NAVIGATIONFLAGS_NEWPAGE            | Indicates that the navigation was to a new 
 NAVIGATIONFLAGS_LOCATIONREPLACE            | Indicates that the current page navigated because of location.replace.
 NAVIGATIONFLAGS_ERRORPAGE            | Indicates that the page navigated to was an internal error page.
 
-Flags that indicate the type of navigation that occurred.
 
 #### SECURELOCKICON
+
+Represents the current page content's security state.
 
 > enum [SECURELOCKICON](#securelockicon)
 
@@ -303,9 +306,10 @@ SECURELOCKICON_UNSECURE            | The current page is not secure.
 SECURELOCKICON_MIXED            | The current page is displaying mixed content.
 SECURELOCKICON_SECURE            | The current page is secure.
 
-Represents the current page content's security state.
 
 #### SITE_PERMISSION_FEATURE_MODE
+
+Represents the state of a site permission request.
 
 > enum [SITE_PERMISSION_FEATURE_MODE](#site_permission_feature_mode)
 
@@ -314,7 +318,6 @@ Represents the current page content's security state.
 SITE_PERMISSION_FEATURE_MODE_BLOCKED            | Access to the feature was blocked.
 SITE_PERMISSION_FEATURE_MODE_ALLOWED            | Access to the feature was allowed.
 
-Represents the state of a site permission request.
 
 #### SITE_PERMISSION_KIND
 
@@ -329,17 +332,20 @@ Represents the type of site permission being requested.
 
 #### SITE_PERMISSION_RESPONSE
 
+Represents a user's response to a site permission request.
+
 > enum [SITE_PERMISSION_RESPONSE](#site_permission_response)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
 SITE_PERMISSION_REQUEST_DENIED            | Request for the permission was denied.
-SITE_PERMISSION_REQUEST_ALLOWED            | Request for the permission was appoved.
+SITE_PERMISSION_REQUEST_ALLOWED            | Request for the permission was granted.
 SITE_PERMISSION_REQUEST_DISMISSED            | Request for the permission was dismissed without a response.
 
-Represents a user's response to a site permission request.
 
 #### VisibleEntryUpdateOperation
+
+Indicates the type of operation of the `VisibleListUpdateEntry`.
 
 > enum [VisibleEntryUpdateOperation](#visibleentryupdateoperation)
 
@@ -350,13 +356,20 @@ VisibleEntry_Delete            | The entry has been deleted.
 VisibleEntry_Update            | The entry has been updated.
 VisibleEntry_Done            | For internal use only; do not use.
 
-Indicates the type of operation of the VisibleListUpdateEntry.
 
 #### DualEngineInitialize
 
+Initializes the DualEngine.
+
 > public HRESULT APIENTRY [DualEngineInitialize](#dualengineinitialize)(const DualEngineSessionFactory * pSessionFactory, PCWSTR pipeName)
+
+A function that you export.  This function is called immediately after Internet Explorer successfully loads the DLL.  This is your first chance to set up anything necessary for your application.  See [DualEngineInitialize](../concepts/adapter-dll.md#dualengineinitialize) in _Creating a DualEngine adapter plugin DLL_.
+
 
 #### DualEngineReady
 
+Called after Internet Explorer has finished all of its initial setup and the API is ready to use.
+
 > public HRESULT APIENTRY [DualEngineReady](#dualengineready)()
 
+A function that you export.  At this point, it's now possible to call `GetVersionedBrowserSession` and get the Session object, assuming a successful call to `TryUnlockFeature` has been made.  See [DualEngineReady](../concepts/adapter-dll.md#dualengineready) in _Creating a DualEngine adapter plugin DLL_.
