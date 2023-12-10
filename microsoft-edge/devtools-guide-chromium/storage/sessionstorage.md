@@ -86,7 +86,7 @@ To delete a key/value pair for session storage:
 
 1. In the **Key/Value** table on the right, select a key-value pair to highlight it.
 
-1. Press `Delete`, or click the **Delete Selected** (![Delete Selected](./sessionstorage-images/delete-icon.png)) button.
+1. Press `Delete`, or click the **Delete Selected** (![Delete Selected](./sessionstorage-images/delete-icon.png)) button, or right-click on the row and select **Delete**.
 
 
 <!-- ====================================================================== -->
