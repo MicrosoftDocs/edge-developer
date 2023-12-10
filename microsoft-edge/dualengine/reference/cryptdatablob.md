@@ -1,10 +1,10 @@
 ---
-description: Represents an SSL Certificate.
 title: DualEngine Win32 C++ CryptDataBlob
+description: Represents an SSL Certificate.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 12/06/2023
+ms.date: 12/09/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, CryptDataBlob
 topic_type: 
 - APIRef
@@ -45,3 +45,4 @@ The number of bytes in `pbData`.
 A buffer containing a DER-encoded X.509 certificate string.
 
 > public BYTE * [pbData](#pbdata)
+

@@ -1,10 +1,10 @@
 ---
-description: Represents an Internet Explorer tab.
 title: DualEngine Win32 C++ IDualEngine20Browser
+description: Represents an Internet Explorer tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 11/16/2023
+ms.date: 12/09/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20Browser
 topic_type: 
 - APIRef
@@ -79,16 +79,16 @@ Represents an Internet Explorer tab.
 [DualEngineGeolocationPermissionResponse](#dualenginegeolocationpermissionresponse) | Provides a response to a geolocation permission request.
 [DualEngineGoToEntry](#dualenginegotoentry) | Navigates to a specific travel log entry.
 [DualEngineInitialize](#dualengineinitialize) | Initializes the browser object with an URL.
-[DualEngineInitialize2](#dualengineinitialize2) | Initializes the browser object with an URL; this versions allows for additional information about the initial navigation to be passed in.
+[DualEngineInitialize2](#dualengineinitialize2) | Initializes the browser object with an URL; this version allows for additional information about the initial navigation to be passed in.
 [DualEngineInitializeWithRecoveryData](#dualengineinitializewithrecoverydata) | Initializes the browser object using tab recovery data.
 [DualEngineLostFocus](#dualenginelostfocus) | Notifies the browser that it has lost focus.
 [DualEngineNavigate](#dualenginenavigate) | Navigates to a URL.
 [DualEngineNavigate2](#dualenginenavigate2) | Navigates to a URL, with additional information about the navigation.
 [DualEngineNotifyNavigationEntriesDeleted](#dualenginenotifynavigationentriesdeleted) | Notifies that navigation entries have been deleted.
 [DualEnginePrepareToExitRegion](#dualenginepreparetoexitregion) | Notifies the browser that a navigation is occurring to a page that will be handled by the host.
-[DualEnginePrint](#dualengineprint) | Invokes the print dialog for the current page.
-[DualEngineProtectFocus](#dualengineprotectfocus) | Controls whether the browser tries to change focus to itself or not.
-[DualEngineSavePageAs](#dualenginesavepageas) | Invokes the "Save Webpage" dialog for the current page.
+[DualEnginePrint](#dualengineprint) | Invokes the Print dialog for the current page.
+[DualEngineProtectFocus](#dualengineprotectfocus) | Controls whether the browser tries to change focus to itself.
+[DualEngineSavePageAs](#dualenginesavepageas) | Invokes the **Save Webpage** dialog for the current page.
 [DualEngineSetEngineSwitchingPolicyFlags](#dualenginesetengineswitchingpolicyflags) | Sets flags that determine how the browser handles engine switching.
 [DualEngineSetFocus](#dualenginesetfocus) | Sets focus inside the hosted browser.
 [DualEngineSetMediaFullscreen](#dualenginesetmediafullscreen) | Changes the full-screen state of the media playing in the browser.
@@ -208,7 +208,7 @@ Navigates to a specific travel log entry.
 
 Initializes the browser object with an URL.
 
-> public HRESULT [DualEngineInitialize](#dualengineinitialize)(IDualEngine20BrowserObserver * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, SentinelEntryInfo sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
+> public HRESULT [DualEngineInitialize](#dualengineinitialize)([IDualEngine20BrowserObserver](idualengine20browserobserver.md#idualengine20browserobserver) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
 #### Parameters
 * `pDualEngineObserver` A pointer to the observer for this browser. 
@@ -227,9 +227,9 @@ Initializes the browser object with an URL.
 
 #### DualEngineInitialize2
 
-Initializes the browser object with an URL; this versions allows for additional information about the initial navigation to be passed in.
+Initializes the browser object with an URL; this version allows for additional information about the initial navigation to be passed in.
 
-> public HRESULT [DualEngineInitialize2](#dualengineinitialize2)(IDualEngine20BrowserObserver * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, SentinelEntryInfo sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
+> public HRESULT [DualEngineInitialize2](#dualengineinitialize2)([IDualEngine20BrowserObserver](idualengine20browserobserver.md#idualengine20browserobserver) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
 #### Parameters
 * `pDualEngineObserver` A pointer to the observer for this browser. 
@@ -256,7 +256,7 @@ Initializes the browser object with an URL; this versions allows for additional 
 
 Initializes the browser object using tab recovery data.
 
-> public HRESULT [DualEngineInitializeWithRecoveryData](#dualengineinitializewithrecoverydata)(REFGUID guidTabId, ULONG ulEntryId, IDualEngine20BrowserObserver * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, SentinelEntryInfo sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
+> public HRESULT [DualEngineInitializeWithRecoveryData](#dualengineinitializewithrecoverydata)(REFGUID guidTabId, ULONG ulEntryId, [IDualEngine20BrowserObserver](idualengine20browserobserver.md#idualengine20browserobserver) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
 #### Parameters
 * `guidTabId` The GUID for the source recovery data file to initialize this instance with. 
@@ -295,7 +295,7 @@ Navigates to a URL.
 #### Parameters
 * `pszUrl` The URL to navigate to. 
 
-* `fSkipOnBeforeUnload` Whether or not to skip the onBeforeUnload handling.
+* `fSkipOnBeforeUnload` Whether to skip the `onBeforeUnload` handling.
 
 #### DualEngineNavigate2
 
@@ -318,7 +318,7 @@ Navigates to a URL, with additional information about the navigation.
 
 Notifies that navigation entries have been deleted.
 
-> public HRESULT [DualEngineNotifyNavigationEntriesDeleted](#dualenginenotifynavigationentriesdeleted)(BOOL fShouldDeleteEntries, SentinelEntryInfo sentinelEntryInfo)
+> public HRESULT [DualEngineNotifyNavigationEntriesDeleted](#dualenginenotifynavigationentriesdeleted)(BOOL fShouldDeleteEntries, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo)
 
 #### Parameters
 * `fShouldDeleteEntries` Indicates whether the browser should delete all the entries in it's list. 
@@ -382,7 +382,6 @@ Changes the full-screen state of the media playing in the browser.
 > [!WARNING]
 > Despite its name, this function only exits fullscreen and will do nothing if no media is fullscreen.
 > Passing `true` into the function is always a no-op.
-
 #### Parameters
 * `fFullscreen` If `false`, fullscreen will be exited if media is fullscreen; if `true`, nothing happens.
 
@@ -393,7 +392,6 @@ Sets the size and position of the browser window.
 > public HRESULT [DualEngineSetPosition](#dualenginesetposition)(int x, int y, int iWidth, int iHeight)
 
 #### Parameters
-
 * `x` The new position of the left side of the window, in client coordinates. 
 
 * `y` The new position of the top of the window, in client coordinates. 

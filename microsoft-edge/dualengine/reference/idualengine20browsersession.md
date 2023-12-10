@@ -1,10 +1,10 @@
 ---
-description: Represents an Internet Explorer process session.
 title: DualEngine Win32 C++ IDualEngine20BrowserSession
+description: Represents an Internet Explorer process session.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 12/06/2023
+ms.date: 12/09/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserSession
 topic_type: 
 - APIRef
@@ -38,7 +38,7 @@ api_location:
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
-```
+```cpp
 interface IDualEngine20BrowserSession
   : public IUnknown
 ```
@@ -104,7 +104,7 @@ Duplicates an inactive tab's recovery data.
 
 Creates a Browser object in this session.
 
-> public HRESULT [CreateDualEngineBrowser](#createdualenginebrowser)(IDualEngine20Browser ** ppDualEngineBrowser)
+> public HRESULT [CreateDualEngineBrowser](#createdualenginebrowser)([IDualEngine20Browser](idualengine20browser.md#idualengine20browser) ** ppDualEngineBrowser)
 
 #### Parameters
 * `ppDualEngineBrowser` The new Browser object.
@@ -133,7 +133,7 @@ Deletes an inactive region's tab recovery data.
 
 Returns a list of keyboard accelerators that should be forwarded from the Host.
 
-> public HRESULT [GetRequestedHostForwardedAccelerators](#getrequestedhostforwardedaccelerators)(DWORD * pcAccels, ACCELERATOR ** prgAccels)
+> public HRESULT [GetRequestedHostForwardedAccelerators](#getrequestedhostforwardedaccelerators)(DWORD * pcAccels, [ACCELERATOR](accelerator.md#accelerator) ** prgAccels)
 
 #### Parameters
 * `pcAccels` The number of accelerators in `prgAccels`. 
@@ -144,10 +144,10 @@ Returns a list of keyboard accelerators that should be forwarded from the Host.
 
 Initializes the session.
 
-> public HRESULT [Initialize](#initialize)(DWORD cAccels, ACCELERATOR * rgHostPriorityAccels, IDualEngine20BrowserSessionObserver * pSessionObserver, LPCWSTR pszProfilePath, LPCWSTR pszProfileId)
+> public HRESULT [Initialize](#initialize)(DWORD cAccels, [ACCELERATOR](accelerator.md#accelerator) * rgHostPriorityAccels, [IDualEngine20BrowserSessionObserver](idualengine20browsersessionobserver.md#idualengine20browsersessionobserver) * pSessionObserver, LPCWSTR pszProfilePath, LPCWSTR pszProfileId)
 
 #### Parameters
-* `cAccels` The number of accelerators in `rgHostPriorityAccels`.
+* `cAccels` The number of accelerators in `rgHostPriorityAccels`. 
 
 * `rgHostPriorityAccels` A list of keyboard accelerators to have the session forward to the host. 
 
@@ -184,7 +184,7 @@ Sets hang detection messages that will be sent to the session by the host to det
 #### Parameters
 * `uiSyncHungCheckMsg` The window message ID of the message that the host will synchronously wait on to be handled. 
 
-* `uiAsyncHungCheckMsg` The window message ID of the message that the host will asynchronously wait on. Browsers signal the host by calling `IDualEngine20BrowserObserver::OnAsyncHungCheckReply()`.
+* `uiAsyncHungCheckMsg` The window message ID of the message that the host will asynchronously wait on. Browsers signal the host by calling [IDualEngine20BrowserObserver::OnAsyncHungCheckReply()](idualengine20browserobserver.md#onasynchungcheckreply).
 
 #### SetHostIntranetInInternetExplorer
 
@@ -193,7 +193,7 @@ Sets whether to open all Intranet sites in the session.
 > public HRESULT [SetHostIntranetInInternetExplorer](#sethostintranetininternetexplorer)(BOOL fEnable)
 
 #### Parameters
-* `fEnable` If `true`, navigation to Intranet sites will stay in the session; otherwise, whether navigation will stay in the session or not follows default determination logic.
+* `fEnable` If `true`, navigation to Intranet sites will stay in the session; otherwise, whether a navigation will stay in the session or not follows default determination logic.
 
 #### SetHybridMode
 
@@ -211,7 +211,7 @@ Sets whether cookie changes are synced back to the host.
 > public HRESULT [SetReverseCookieSync](#setreversecookiesync)(BOOL fEnable)
 
 #### Parameters
-* `fEnable` If `true`, the host will be notified of cookie changes by the `IDualEngine20BrowserSessionObserver::ReverseSyncCookies()` event; otherwise, it is not.
+* `fEnable` If `true`, the host will be notified of cookie changes by the [IDualEngine20BrowserSessionObserver::ReverseSyncCookies()](idualengine20browsersessionobserver.md#reversesynccookies) event; otherwise, it is not.
 
 #### SetSitePermissions
 
@@ -225,7 +225,6 @@ Sets site permissions for the session.
 * `pszPermissionData` A serialized string of the permission data to set.
 
 `pszPermissionData` is a string in the following BNF format: 
-
 ```
 permission-data     = default-action CRLF site-permissions
 
@@ -270,10 +269,9 @@ port                = *DIGIT
 ; For definitions of the following rules, see RFC 3986 Appendix A (https://www.rfc-editor.org/rfc/rfc3986#appendix-A):
 ;   scheme, reg-name, IPv4address, IP-literal, path
 ```
+ See also:
 
-See also:
-* [Appendix A.  Collected ABNF for URI](https://www.rfc-editor.org/rfc/rfc3986#appendix-A) in _RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax_.
-
+* [Appendix A. Collected ABNF for URI](https://www.rfc-editor.org/rfc/rfc3986#appendix-A) in _RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax_.
 
 #### SetUseAdditionalHangDetection
 
@@ -294,10 +292,9 @@ Shows the Internet Explorer download window.
 
 Sends cookie data to the session process.
 
-> public HRESULT [SyncCookies](#synccookies)(const [DualEngineCookie](dualenginecookie.md) * pCookies, DWORD cCookies)
+> public HRESULT [SyncCookies](#synccookies)(const [DualEngineCookie](dualenginecookie.md#dualenginecookie) * pCookies, DWORD cCookies)
 
 #### Parameters
 * `pCookies` An array of cookies to be sent to the session. 
 
 * `cCookies` The number of items in `pCookies`.
-

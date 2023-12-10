@@ -1,10 +1,10 @@
 ---
-description: Represents the constituent parts of a cookie.
 title: DualEngine Win32 C++ DualEngineCookie
+description: Represents the constituent parts of a cookie.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 12/06/2023
+ms.date: 12/09/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, DualEngineCookie
 topic_type: 
 - APIRef
@@ -36,7 +36,7 @@ Represents the constituent parts of a cookie.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [domain](#domain) | The cookie domain.
-[expiry](#expiry) | Expiry time for persistent cookies Should only be used if INTERNET_COOKIE_IS_SESSION is *not* set in flags, or if this is a delete (an expiry set to a past date)
+[expiry](#expiry) | Expiry time for persistent cookies.
 [flags](#flags) | Flags for additional cookie details.
 [forceSync](#forcesync) | Indicates that when setting the cookie whether to wait for a process of the appropriate integrity level to be created and ready to receive the cookie before returning.
 [integrity](#integrity) | The Integrity Level of the cookie.
@@ -54,9 +54,11 @@ The cookie domain.
 
 #### expiry
 
-Expiry time for persistent cookies Should only be used if INTERNET_COOKIE_IS_SESSION is *not* set in flags, or if this is a delete (an expiry set to a past date).
+Expiry time for persistent cookies.
 
 > public FILETIME [expiry](#expiry)
+
+Should only be used if INTERNET_COOKIE_IS_SESSION is *not* set in flags, or if this is a delete (an expiry set to a past date).
 
 #### flags
 
@@ -97,3 +99,4 @@ The cookie path. May be NULL.
 The cookie value.
 
 > public LPCWSTR [value](#value)
+

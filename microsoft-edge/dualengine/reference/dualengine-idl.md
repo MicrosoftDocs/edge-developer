@@ -1,10 +1,10 @@
 ---
-description: DualEngine Win32 Globals
 title: Globals
+description: DualEngine Win32 Globals
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 12/06/2023
+ms.date: 12/09/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html
 topic_type: 
 - APIRef
@@ -48,13 +48,15 @@ api_loction:
 [SITE_PERMISSION_FEATURE_MODE](#site_permission_feature_mode) | Represents the state of a site permission request.
 [SITE_PERMISSION_KIND](#site_permission_kind) | Represents the type of site permission being requested.
 [SITE_PERMISSION_RESPONSE](#site_permission_response) | Represents a user's response to a site permission request.
-[VisibleEntryUpdateOperation](#visibleentryupdateoperation) | Indicates the type of operation of the VisibleListUpdateEntry.
+[VisibleEntryUpdateOperation](#visibleentryupdateoperation) | Indicates the type of operation of the [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry).
 [DualEngineInitialize](#dualengineinitialize) | Initializes the DualEngine.
 [DualEngineReady](#dualengineready) | Called after Internet Explorer has finished all of its initial setup and the API is ready to use.
 
 ## Members
 
 #### ACCELERATOREVENTTYPE
+
+Specifies the type of accelerator event.
 
 > enum [ACCELERATOREVENTTYPE](#acceleratoreventtype)
 
@@ -64,9 +66,9 @@ ACCELERATOREVENTTYPE_KEYDOWN            | The keydown event.
 ACCELERATOREVENTTYPE_CHAR            | The char event.
 ACCELERATOREVENTTYPE_KEYUP            | The key up event.
 
-Specifies the type of accelerator event.
-
 #### ACCELERATORFLAGS
+
+Specifies the virtual key modifiers present in the accelerator keystroke.
 
 > enum [ACCELERATORFLAGS](#acceleratorflags)
 
@@ -77,9 +79,9 @@ ACCELERATORFLAGS_CTRL            | The Ctrl virtual key.
 ACCELERATORFLAGS_ALT            | The Alt virtual key.
 ACCELERATORFLAGS_SHIFT            | The Shift virtual key.
 
-Specifies the virtual key modifiers present in the accelerator keystroke.
-
 #### ATTENTIONSTATE
+
+Represents the reason attention is being requested.
 
 > enum [ATTENTIONSTATE](#attentionstate)
 
@@ -88,9 +90,9 @@ Specifies the virtual key modifiers present in the accelerator keystroke.
 ATTENTIONSTATE_DIALOG            | Attention is being requested because of a modal dialog.
 ATTENTIONSTATE_FRAMETARGET            | Attention is being requested because the browser was navigated by frame targeting.
 
-Represents the reason attention is being requested.
-
 #### BROWSERVISIBILITY
+
+Represents a browser visibility state.
 
 > enum [BROWSERVISIBILITY](#browservisibility)
 
@@ -100,9 +102,9 @@ VISIBILITY_INACTIVE            | The Browser is inactive.
 VISIBILITY_MINIMIZED            | The Browser is minimized.
 VISIBILITY_VISIBLE            | The Browser is visible.
 
-Represents a browser visibility state.
-
 #### CERTERRORFLAG
+
+Represents a certificate error.
 
 > enum [CERTERRORFLAG](#certerrorflag)
 
@@ -116,9 +118,9 @@ CERTERRORFLAG_WEAK_SIGNATURE            | Signed by a weak digital signature.
 CERTERRORFLAG_INSECURE_FALLBACK            | The connection has been downgraded to a less secure protocol.
 CERTERRORFLAG_SEC_CERT_REV_FAILED            | The revocation check for the certificate has failed.
 
-Represents a certificate error.
-
 #### DUALENGINE_FOCUSDIRECTION
+
+Represents the direction of a focus change.
 
 > enum [DUALENGINE_FOCUSDIRECTION](#dualengine_focusdirection)
 
@@ -128,9 +130,9 @@ FOCUSDIRECTION_NONE            | The constant for specifying no focus direction.
 FOCUSDIRECTION_FORWARD            | The constant for specifying the forward focus direction.
 FOCUSDIRECTION_BACKWARD            | The constant for specifying the back focus direction.
 
-Represents the direction of a focus change.
-
 #### DualEngineConfigurableSitesFlags
+
+Flags to control special engine switching headers and behaviors for configurable sites.
 
 > enum [DualEngineConfigurableSitesFlags](#dualengineconfigurablesitesflags)
 
@@ -142,9 +144,9 @@ DualEngineConfigurableSitesFlags_EnableConfigurableRedirectResponse            |
 DualEngineConfigurableSitesFlags_IntranetIsConfigurable            | Treat all Intranet sites as configurable by default.
 DualEngineConfigurableSitesFlags_AllowConfigurableRedirectToImplicitNeutral            | Allow configurable site switching when redirecting to neutral sites regardless of site list if the navigation is sticky.
 
-Flags to control special engine switching headers and behaviors for configurable sites.
-
 #### DUALENGINECONFIGURATION
+
+Configuration options to define desired behavior for the hosted browser window.
 
 > enum [DUALENGINECONFIGURATION](#dualengineconfiguration)
 
@@ -156,9 +158,9 @@ DUALENGINECONFIGURATION_POPUP_WINDOW            | Indicates that the hosted wind
 DUALENGINECONFIGURATION_HYBRID_ENTERPRISE_MODE            | Indicates that the browser is running in Hybrid Enterprise mode.
 DUALENGINECONFIGURATION_ALWAYS_WAIT_FOR_UNLOAD            | Indicates that the browser should defer signaling that it closed until it is about to unload.
 
-Configuration options to define desired behavior for the hosted browser window.
-
 #### DualEngineCookieIntegrity
+
+Represents the Process Integrity Context Level of a cookie.
 
 > enum [DualEngineCookieIntegrity](#dualenginecookieintegrity)
 
@@ -169,9 +171,9 @@ DualEngineCookieIntegrity_Low            | Cookie is Low IL.
 DualEngineCookieIntegrity_Medium            | Cookie is Medium IL.
 DualEngineCookieIntegrity_Both            | Cookie is both Medium and Low IL.
 
-Represents the Process Integrity Context Level of a cookie.
-
 #### DualEngineWindowOpenDisposition
+
+Represents the disposition of a new window.
 
 > enum [DualEngineWindowOpenDisposition](#dualenginewindowopendisposition)
 
@@ -182,9 +184,9 @@ DualEngineWindowOpenDisposition_NewBackgroundTab            | Window is a new ba
 DualEngineWindowOpenDisposition_NewPopup            | Window is a new popup window.
 DualEngineWindowOpenDisposition_NewWindow            | Window is a new window.
 
-Represents the disposition of a new window.
-
 #### EngineSwitchingPolicyFlags
+
+Represents the engine switching policy This policy along with the site list determines when navigations are handled by the browser and when they are sent to the host to handle.
 
 > enum [EngineSwitchingPolicyFlags](#engineswitchingpolicyflags)
 
@@ -197,12 +199,12 @@ EngineSwitchingPolicyFlags_FormSubmitsSticky            | Form submissions to si
 EngineSwitchingPolicyFlags_UserInitiatedHyperlinkClicksSticky            | User initiated hyperlink navigations to sites not in the site list stay in the browser.
 EngineSwitchingPolicyFlags_OtherNavigationsSticky            | All other types of navigation to sites not in the site list stay in the browser.
 EngineSwitchingPolicyFlags_RespectAllowRedirectAttribute            | Whether the navigation stays in the browser is respective of the site list entry's `allow-redirect` attribute.
-EngineSwitchingPolicyFlags_Max            | todo
-EngineSwitchingPolicyFlags_Mask            | todo
-
-Represents the engine switching policy This policy along with the site list determines when navigations are handled by the browser and when they are sent to the host to handle.
+EngineSwitchingPolicyFlags_Max            | For internal use only; do not use.
+EngineSwitchingPolicyFlags_Mask            | For internal use only; do not use.
 
 #### EXIT_REGION_TYPE
+
+Represents the reason a region exit is occurring.
 
 > enum [EXIT_REGION_TYPE](#exit_region_type)
 
@@ -213,9 +215,9 @@ EXIT_REGION_TYPE_FOR_CLOSE            | The region is exiting due to the browser
 EXIT_REGION_TYPE_FOR_HISTORY_NAVIGATION            | The region is exiting due to a history navigation.
 EXIT_REGION_TYPE_FOR_NEW_NAVIGATION            | The region is exiting due to a new navigation.
 
-Represents the reason a region exit is occurring.
-
 #### FULLSCREENACTION
+
+Represents a change in full screen state.
 
 > enum [FULLSCREENACTION](#fullscreenaction)
 
@@ -226,9 +228,9 @@ EXIT_FULLSCREEN            | Represents media exiting full screen.
 ENTER_THEATER_FULLSCREEN            | Represents entering theater mode full screen.
 EXIT_THEATER_FULLSCREEN            | Represents exiting theater mode full screen.
 
-Represents a change in full screen state.
-
 #### KEYACTION
+
+Represents a type of key event.
 
 > enum [KEYACTION](#keyaction)
 
@@ -238,9 +240,9 @@ KEYACTION_NONE            | The constant for specifying no key event.
 KEYACTION_DOWN            | The constant for specifying a key down event.
 KEYACTION_UP            | The constant for specifying a key up event.
 
-Represents a type of key event.
-
 #### MOUSEACTION
+
+Represents a type of mouse event.
 
 > enum [MOUSEACTION](#mouseaction)
 
@@ -249,9 +251,9 @@ Represents a type of key event.
 MOUSEACTION_NONE            | The constant for specifying no mouse event.
 MOUSEACTION_LEFT_CLICK            | The constant for specifying a left click mouse event.
 
-Represents a type of mouse event.
-
 #### NAVIGATION_COMMAND
+
+Represents a type of Navigation command.
 
 > enum [NAVIGATION_COMMAND](#navigation_command)
 
@@ -264,9 +266,9 @@ NAVIGATION_COMMAND_RELOAD            | The constant for specifying a reload navi
 NAVIGATION_COMMAND_RELOAD_COMPLETELY            | The constant for specifying a reload navigation command, requests the latest version of the current page.
 NAVIGATION_COMMAND_STOP            | The constant for specifying a stop navigation command.
 
-Represents a type of Navigation command.
-
 #### NAVIGATIONFAILEDREASON
+
+Represents a reason that a navigation failed.
 
 > enum [NAVIGATIONFAILEDREASON](#navigationfailedreason)
 
@@ -275,8 +277,6 @@ Represents a type of Navigation command.
 NAVIGATIONFAILEDREASON_DEFAULT            | Navigation was aborted, may not necessarily be for a failure.
 NAVIGATIONFAILEDREASON_BAD_NETPATH            | Navigation failed because the path could not be found.
 NAVIGATIONFAILEDREASON_FAILED            | Navigation failed for some other unspecified reason.
-
-Represents a reason that a navigation failed.
 
 #### NAVIGATIONFLAGS
 
@@ -293,7 +293,6 @@ NAVIGATIONFLAGS_NEWPAGE            | Indicates that the navigation was to a new 
 NAVIGATIONFLAGS_LOCATIONREPLACE            | Indicates that the current page navigated because of location.replace.
 NAVIGATIONFLAGS_ERRORPAGE            | Indicates that the page navigated to was an internal error page.
 
-
 #### SECURELOCKICON
 
 Represents the current page content's security state.
@@ -306,7 +305,6 @@ SECURELOCKICON_UNSECURE            | The current page is not secure.
 SECURELOCKICON_MIXED            | The current page is displaying mixed content.
 SECURELOCKICON_SECURE            | The current page is secure.
 
-
 #### SITE_PERMISSION_FEATURE_MODE
 
 Represents the state of a site permission request.
@@ -318,8 +316,9 @@ Represents the state of a site permission request.
 SITE_PERMISSION_FEATURE_MODE_BLOCKED            | Access to the feature was blocked.
 SITE_PERMISSION_FEATURE_MODE_ALLOWED            | Access to the feature was allowed.
 
-
 #### SITE_PERMISSION_KIND
+
+Represents the type of site permission being requested.
 
 > enum [SITE_PERMISSION_KIND](#site_permission_kind)
 
@@ -327,8 +326,6 @@ SITE_PERMISSION_FEATURE_MODE_ALLOWED            | Access to the feature was allo
 --------------------------------|---------------------------------------------
 SITE_PERMISSION_KIND_POPUP_BLOCKER            | Requesting to set popup blocker permissions.
 SITE_PERMISSION_KIND_GEOLOCATION            | Requesting to set geolocation permissions.
-
-Represents the type of site permission being requested.
 
 #### SITE_PERMISSION_RESPONSE
 
@@ -342,10 +339,9 @@ SITE_PERMISSION_REQUEST_DENIED            | Request for the permission was denie
 SITE_PERMISSION_REQUEST_ALLOWED            | Request for the permission was granted.
 SITE_PERMISSION_REQUEST_DISMISSED            | Request for the permission was dismissed without a response.
 
-
 #### VisibleEntryUpdateOperation
 
-Indicates the type of operation of the `VisibleListUpdateEntry`.
+Indicates the type of operation of the [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry).
 
 > enum [VisibleEntryUpdateOperation](#visibleentryupdateoperation)
 
@@ -356,20 +352,18 @@ VisibleEntry_Delete            | The entry has been deleted.
 VisibleEntry_Update            | The entry has been updated.
 VisibleEntry_Done            | For internal use only; do not use.
 
-
 #### DualEngineInitialize
 
 Initializes the DualEngine.
 
-> public HRESULT APIENTRY [DualEngineInitialize](#dualengineinitialize)(const DualEngineSessionFactory * pSessionFactory, PCWSTR pipeName)
+> public HRESULT APIENTRY [DualEngineInitialize](#dualengineinitialize)(const [DualEngineSessionFactory](dualenginesessionfactory.md#dualenginesessionfactory) * pSessionFactory, PCWSTR pipeName)
 
-A function that you export.  This function is called immediately after Internet Explorer successfully loads the DLL.  This is your first chance to set up anything necessary for your application.  See [DualEngineInitialize](../concepts/adapter-dll.md#dualengineinitialize) in _Creating a DualEngine adapter plugin DLL_.
-
-
+A function that you export. This function is called immediately after Internet Explorer successfully loads the DLL. This is your first chance to set up anything necessary for your application. See [DualEngineInitialize](../concepts/adapter-dll.md#dualengineinitialize) in _Creating a DualEngine adapter plugin DLL_.
 #### DualEngineReady
 
 Called after Internet Explorer has finished all of its initial setup and the API is ready to use.
 
 > public HRESULT APIENTRY [DualEngineReady](#dualengineready)()
 
-A function that you export.  At this point, it's now possible to call `GetVersionedBrowserSession` and get the Session object, assuming a successful call to `TryUnlockFeature` has been made.  See [DualEngineReady](../concepts/adapter-dll.md#dualengineready) in _Creating a DualEngine adapter plugin DLL_.
+A function that you export. At this point, it's now possible to call `GetVersionedBrowserSession` and get the Session object, assuming a successful call to `TryUnlockFeature` has been made. See [DualEngineReady](../concepts/adapter-dll.md#dualengineready) in _Creating a DualEngine adapter plugin DLL_.
+

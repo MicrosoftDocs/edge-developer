@@ -1,10 +1,10 @@
 ---
-description: Receives events from the Browser.
 title: DualEngine Win32 C++ IDualEngine20BrowserObserver
+description: Receives events from the Browser.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 12/06/2023
+ms.date: 12/09/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserObserver
 topic_type: 
 - APIRef
@@ -71,7 +71,7 @@ api_location:
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
-```
+```cpp
 interface IDualEngine20BrowserObserver
   : public IUnknown
 ```
@@ -83,10 +83,10 @@ Receives events from the Browser.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [ContinueNavigationInEdge](#continuenavigationinedge) | Raised when the browser wants to stop hosting content and have the navigation to the URL continue in the hosting process.
-[ContinueNavigationInEdge2](#continuenavigationinedge2) | Raised when the browser wants to stop hosting content and have the navigation to the URL continue in the hosting process, this version provides extra information about the navigation.
+[ContinueNavigationInEdge2](#continuenavigationinedge2) | Raised when the browser wants to stop hosting content and have the navigation to the URL continue in the hosting process; this version provides extra information about the navigation.
 [NavigateToOffsetInEdge](#navigatetooffsetinedge) | Raised when the browser requests to navigate to a travel log entry offset.
 [OnAllButCurrentEntryDeleted](#onallbutcurrententrydeleted) | Raised when the browser has deleted all entries in its travel log except for the current entry.
-[OnAsyncHungCheckReply](#onasynchungcheckreply) | Raised when the browser processes an async hang check message. See [IDualEngine20BrowserSession::SetHangDetectionMessages()](./idualengine20browsersession.md#sethangdetectionmessages).
+[OnAsyncHungCheckReply](#onasynchungcheckreply) | Raised when the browser processes an async hang check message, see [IDualEngine20BrowserSession::SetHangDetectionMessages()](idualengine20browsersession.md#sethangdetectionmessages).
 [OnAttentionState](#onattentionstate) | Raised when requesting user attention.
 [OnBeforeUnloadAndStopComplete](#onbeforeunloadandstopcomplete) | Raised when the beforeUnload event has finished being processed.
 [OnCloseCompleted](#onclosecompleted) | Raised when the browser has closed.
@@ -94,9 +94,9 @@ Receives events from the Browser.
 [OnDialogShown](#ondialogshown) | Raised when a the browser shows or hides a modal dialog.
 [OnDocumentComplete](#ondocumentcomplete) | Raised when a document is completely loaded and initialized.
 [OnDocumentModeSet](#ondocumentmodeset) | Raised when the document mode has changed.
-[OnEnterpriseIDSet](#onenterpriseidset) | Raised when a navigation has been completed; provides information about the enterprise id.
+[OnEnterpriseIDSet](#onenterpriseidset) | Raised when a navigation has been completed; provides information about the enterprise ID.
 [OnFindOnPageResult](#onfindonpageresult) | Raised when find on page results change.
-[OnFinishedSetFocus](#onfinishedsetfocus) | Raised when a `IDualEngine20Browser::DualEngineSetFocus()` request has finished being processed.
+[OnFinishedSetFocus](#onfinishedsetfocus) | Raised when a [IDualEngine20Browser::DualEngineSetFocus()](idualengine20browser.md#dualenginesetfocus) request has finished being processed.
 [OnGeolocationFeatureInUse](#ongeolocationfeatureinuse) | Raised when geolocation data is accessed.
 [OnGeolocationPermissionRequested](#ongeolocationpermissionrequested) | Raised when user permission is needed to enable geolocation.
 [OnHasBeforeUnloadChanged](#onhasbeforeunloadchanged) | Raised when an `OnBeforeUnload` handler has been registered or removed.
@@ -109,8 +109,8 @@ Receives events from the Browser.
 [OnNavigationToDownload](#onnavigationtodownload) | Raised when a navigation has ended in a download.
 [OnNewWindow](#onnewwindow) | Raised when a new window has been created.
 [OnPopupBlocked](#onpopupblocked) | Raised when a popup window was blocked.
-[OnPrepareToExitRegionFailed](#onpreparetoexitregionfailed) | Raised when the browser has failed to a handle a previous `IDualEngine20Browser::DualEnginePrepareToExitRegion()` call.
-[OnReadyToExitRegion](#onreadytoexitregion) | Raised when the browser has successfully handled a previous `IDualEngine20Browser::DualEnginePrepareToExitRegion()` call.
+[OnPrepareToExitRegionFailed](#onpreparetoexitregionfailed) | Raised when the browser has failed to a handle a previous [IDualEngine20Browser::DualEnginePrepareToExitRegion()](idualengine20browser.md#dualenginepreparetoexitregion) call.
+[OnReadyToExitRegion](#onreadytoexitregion) | Raised when the browser has successfully handled a previous [IDualEngine20Browser::DualEnginePrepareToExitRegion()](idualengine20browser.md#dualenginepreparetoexitregion) call.
 [OnTabCrashed](#ontabcrashed) | Raised when the tab has crashed.
 [OnTabHangReported](#ontabhangreported) | Raised when the browser is hung.
 [OnUnexpectedRundown](#onunexpectedrundown) | Raised when the browser has closed unexpectedly.
@@ -119,7 +119,7 @@ Receives events from the Browser.
 [OnVisibleComplete](#onvisiblecomplete) | Raised when the content of the page is being made visible.
 [OnZoomChanged](#onzoomchanged) | Raised when the zoom has changed.
 [OpenURLInEdge](#openurlinedge) | Raised when the browser is requesting the host to navigate to a URL in a new window.
-[OpenURLInEdge2](#openurlinedge2) | Raised when the browser is requesting the host to navigate to a URL in a new window, this version provides extra information about the navigation.
+[OpenURLInEdge2](#openurlinedge2) | Raised when the browser is requesting the host to navigate to a URL in a new window; this version provides extra information about the navigation.
 [RequestHostAddFavorite](#requesthostaddfavorite) | Raised when a page has been requested to be added to favorites.
 [RequestHostCreateUrlTip](#requesthostcreateurltip) | Raised when requesting to show a tooltip containing a URL.
 [RequestHostFocus](#requesthostfocus) | Raised when focus is being requested to move to the host window.
@@ -128,7 +128,7 @@ Receives events from the Browser.
 [RequestHostPositionChanged](#requesthostpositionchanged) | Raised when the browser requests that the host change its size or position.
 [RequestHostShowTheater](#requesthostshowtheater) | Raised when the browser is requesting the host to enter or leave theater mode.
 [RequestHostWindowFocus](#requesthostwindowfocus) | Raised when the host is requested to take or give up focus.
-[RequestHostWindowFocusSync](#requesthostwindowfocussync) | Raised when the host is requested to take or give up focus, in this version the browser will wait until the provided event is signaled.
+[RequestHostWindowFocusSync](#requesthostwindowfocussync) | Raised when the host is requested to take or give up focus.
 [UpdateHostFavicon](#updatehostfavicon) | Raised when the favicon has changed.
 [UpdateHostTitle](#updatehosttitle) | Raised when the title of the page has been updated.
 [UpdateSecureLockIcon](#updatesecurelockicon) | Raised when security information of the page has changed.
@@ -155,7 +155,7 @@ Raised when the browser wants to stop hosting content and have the navigation to
 
 #### ContinueNavigationInEdge2
 
-Raised when the browser wants to stop hosting content and have the navigation to the URL continue in the hosting process, this version provides extra information about the navigation.
+Raised when the browser wants to stop hosting content and have the navigation to the URL continue in the hosting process; this version provides extra information about the navigation.
 
 > public HRESULT [ContinueNavigationInEdge2](#continuenavigationinedge2)(LPCWSTR pszUrl, ULONG ulCookieSyncVersion, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
@@ -183,7 +183,7 @@ Raised when the browser requests to navigate to a travel log entry offset.
 
 Raised when the browser has deleted all entries in its travel log except for the current entry.
 
-> public HRESULT [OnAllButCurrentEntryDeleted](#onallbutcurrententrydeleted)(VisibleListUpdateEntry * pVisibleListEntries, int cVisibleListEntries)
+> public HRESULT [OnAllButCurrentEntryDeleted](#onallbutcurrententrydeleted)([VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntries, int cVisibleListEntries)
 
 #### Parameters
 * `pVisibleListEntries` A list containing the new travel log entries since the last update. In this case it will only have the current active entry. 
@@ -192,7 +192,7 @@ Raised when the browser has deleted all entries in its travel log except for the
 
 #### OnAsyncHungCheckReply
 
-Raised when the browser processes an async hang check message. See [IDualEngine20BrowserSession::SetHangDetectionMessages()](./idualengine20browsersession.md#sethangdetectionmessages).
+Raised when the browser processes an async hang check message, see [IDualEngine20BrowserSession::SetHangDetectionMessages()](idualengine20browsersession.md#sethangdetectionmessages).
 
 > public HRESULT [OnAsyncHungCheckReply](#onasynchungcheckreply)(ULONG correlationId)
 
@@ -242,7 +242,7 @@ Raised when a the browser shows or hides a modal dialog.
 
 Raised when a document is completely loaded and initialized.
 
-> public HRESULT [OnDocumentComplete](#ondocumentcomplete)(ULONG ulCurrentEntryId, VisibleListUpdateEntry * pVisibleListEntries, int cVisibleListEntries)
+> public HRESULT [OnDocumentComplete](#ondocumentcomplete)(ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntries, int cVisibleListEntries)
 
 #### Parameters
 * `ulCurrentEntryId` The travel log entry ID for the page that raised this event. 
@@ -262,7 +262,7 @@ Raised when the document mode has changed.
 
 #### OnEnterpriseIDSet
 
-Raised when a navigation has been completed; provides information about the enterprise id.
+Raised when a navigation has been completed; provides information about the enterprise ID.
 
 > public HRESULT [OnEnterpriseIDSet](#onenterpriseidset)(BOOL fEnterpriseID)
 
@@ -276,7 +276,7 @@ Raised when find on page results change.
 > public HRESULT [OnFindOnPageResult](#onfindonpageresult)(int iRequestID, int cMatches, int iActiveMatch)
 
 #### Parameters
-* `iRequestID` An ID to correlate results with `IDualEngine20Browser::DualEngineFindOnPage()` requests. 
+* `iRequestID` An ID to correlate results with [IDualEngine20Browser::DualEngineFindOnPage()](idualengine20browser.md#dualenginefindonpage) requests. 
 
 * `cMatches` The count of matches. 
 
@@ -284,7 +284,7 @@ Raised when find on page results change.
 
 #### OnFinishedSetFocus
 
-Raised when a `IDualEngine20Browser::DualEngineSetFocus()` request has finished being processed.
+Raised when a [IDualEngine20Browser::DualEngineSetFocus()](idualengine20browser.md#dualenginesetfocus) request has finished being processed.
 
 > public HRESULT [OnFinishedSetFocus](#onfinishedsetfocus)()
 
@@ -357,12 +357,12 @@ Raised when Mixed Content has been blocked.
 
 Raised when a navigation has been completed.
 
-> public HRESULT [OnNavigationComplete](#onnavigationcomplete)(REFGUID guidTabId, ULONG ulCurrentEntryId, VisibleListUpdateEntry * pVisibleListEntries, int cVisibleListEntries, DWORD dwNavFlags, SECURELOCKICON secureLockIcon, DWORD dwSecurityFlags, CryptDataBlob * pDualEngineCertificates, int cCertificateChainBlobs)
+> public HRESULT [OnNavigationComplete](#onnavigationcomplete)(REFGUID guidTabId, ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntries, int cVisibleListEntries, DWORD dwNavFlags, SECURELOCKICON secureLockIcon, DWORD dwSecurityFlags, [CryptDataBlob](cryptdatablob.md#cryptdatablob) * pDualEngineCertificates, int cCertificateChainBlobs)
 
 #### Parameters
 * `guidTabId` The recovery GUID for tab. 
 
-* `ulCurrentEntryId` The ID representing this navigation in the visible entries list. 
+* `ulCurrentEntryId` The ID representing this navigation in the visible-entries list. 
 
 * `pVisibleListEntries` A list containing the new travel log entries since the last update. 
 
@@ -397,7 +397,7 @@ Raised when a navigation has ended in a download.
 
 Raised when a new window has been created.
 
-> public HRESULT [OnNewWindow](#onnewwindow)(IDualEngine20Browser * pNewBrowser, HWND hwnd, const DualEngineNewWindowOptions * options, IDualEngine20BrowserObserver ** ppObserver)
+> public HRESULT [OnNewWindow](#onnewwindow)([IDualEngine20Browser](idualengine20browser.md#idualengine20browser) * pNewBrowser, HWND hwnd, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md#dualenginenewwindowoptions) * options, [IDualEngine20BrowserObserver](#idualengine20browserobserver) ** ppObserver)
 
 #### Parameters
 * `pNewBrowser` The browser object for the new window. 
@@ -421,15 +421,15 @@ Raised when a popup window was blocked.
 
 #### OnPrepareToExitRegionFailed
 
-Raised when the browser has failed to a handle a previous `IDualEngine20Browser::DualEnginePrepareToExitRegion()` call.
+Raised when the browser has failed to a handle a previous [IDualEngine20Browser::DualEnginePrepareToExitRegion()](idualengine20browser.md#dualenginepreparetoexitregion) call.
 
 > public HRESULT [OnPrepareToExitRegionFailed](#onpreparetoexitregionfailed)()
 
 #### OnReadyToExitRegion
 
-Raised when the browser has successfully handled a previous `IDualEngine20Browser::DualEnginePrepareToExitRegion()` call.
+Raised when the browser has successfully handled a previous [IDualEngine20Browser::DualEnginePrepareToExitRegion()](idualengine20browser.md#dualenginepreparetoexitregion) call.
 
-> public HRESULT [OnReadyToExitRegion](#onreadytoexitregion)(REFGUID guidClonedTabId, ULONG ulCurrentEntryId, VisibleListUpdateEntry * pVisibleListEntriesComplete, int cVisibleListEntriesComplete)
+> public HRESULT [OnReadyToExitRegion](#onreadytoexitregion)(REFGUID guidClonedTabId, ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntriesComplete, int cVisibleListEntriesComplete)
 
 #### Parameters
 * `guidClonedTabId` The GUID of the tab recovery data file backing the exited region. 
@@ -477,9 +477,7 @@ Raised when processing a keyboard accelerator and it is determined that browser 
 > public HRESULT [OnUnhandledKeyboardAcceleratorAsync](#onunhandledkeyboardacceleratorasync)(LPMSG pMsg, BOOL isShiftDown, BOOL isCtrlDown, BOOL isAltDown)
 
 In this version of the method, the event is raised asynchronously and keyboard state may have changed since it was processed, so the state of the modifier keys is provided. 
-
 #### Parameters
-
 * `pMsg` The win32 message for the unhandled keyboard accelerator. 
 
 * `isShiftDown` Indicates whether the **Shift** key was pressed. 
@@ -507,10 +505,10 @@ Raised when the zoom has changed.
 
 Raised when the browser is requesting the host to navigate to a URL in a new window.
 
-> public HRESULT [OpenURLInEdge](#openurlinedge)(LPCWSTR pszUrl, const DualEngineNewWindowOptions * options, ULONG ulCookieSyncVersion)
+> public HRESULT [OpenURLInEdge](#openurlinedge)(LPCWSTR pszUrl, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md#dualenginenewwindowoptions) * options, ULONG ulCookieSyncVersion)
 
 #### Parameters
-* `pszUrl` The URL to navigate to.
+* `pszUrl` The URL to navigate to. 
 
 * `options` Options to apply to the new window. 
 
@@ -518,9 +516,9 @@ Raised when the browser is requesting the host to navigate to a URL in a new win
 
 #### OpenURLInEdge2
 
-Raised when the browser is requesting the host to navigate to a URL in a new window.  This version of the method provides extra information about the navigation.
+Raised when the browser is requesting the host to navigate to a URL in a new window; this version provides extra information about the navigation.
 
-> public HRESULT [OpenURLInEdge2](#openurlinedge2)(LPCWSTR pszUrl, const DualEngineNewWindowOptions * options, ULONG ulCookieSyncVersion, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
+> public HRESULT [OpenURLInEdge2](#openurlinedge2)(LPCWSTR pszUrl, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md#dualenginenewwindowoptions) * options, ULONG ulCookieSyncVersion, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
 #### Parameters
 * `pszUrl` The URL to navigate to. 
@@ -531,7 +529,7 @@ Raised when the browser is requesting the host to navigate to a URL in a new win
 
 * `pszReferrer` The HTTP Referer request header. 
 
-* `pszHeaders` Additional HTTP headers.
+* `pszHeaders` Additional HTTP headers. 
 
 * `postData` HTTP POST data such as form data.
 
@@ -605,7 +603,7 @@ Raised when the browser is requesting the host to enter or leave theater mode.
 > public HRESULT [RequestHostShowTheater](#requesthostshowtheater)(BOOL fShow)
 
 #### Parameters
-* `fShow` If `true`, the host is being requested to enter theater mode; if `false, it is being requested to leave theater mode.
+* `fShow` If `true`, the host is being requested to enter theater mode; if `false`, it is being requested to leave theater mode.
 
 #### RequestHostWindowFocus
 
@@ -614,14 +612,15 @@ Raised when the host is requested to take or give up focus.
 > public HRESULT [RequestHostWindowFocus](#requesthostwindowfocus)(BOOL fFocus)
 
 #### Parameters
-* `fFocus` Indicates what should be done with focus.  If `true`, focus should be taken; otherwise it should be relinquished.
+* `fFocus` Indicates what should be done with focus. If `true`, focus should be taken; otherwise it should be relinquished.
 
 #### RequestHostWindowFocusSync
 
-Raised when the host is requested to take or give up focus. In this version of the method, the browser will wait until the provided event is signaled.
+Raised when the host is requested to take or give up focus.
 
 > public HRESULT [RequestHostWindowFocusSync](#requesthostwindowfocussync)(BOOL fFocus, ULONGLONG hSyncEvent)
 
+In this version of the method, the browser will wait until the provided event is signaled. 
 #### Parameters
 * `fFocus` Indicates what should be done with focus. If `true`, focus should be taken; otherwise it should be relinquished. 
 
@@ -634,7 +633,7 @@ Raised when the favicon has changed.
 > public HRESULT [UpdateHostFavicon](#updatehostfavicon)(ULONG ulCurrentEntryId, LPCWSTR spszCurrentUrl, LPCWSTR * pIconUrls, int cIconUrls)
 
 #### Parameters
-* `ulCurrentEntryId` The travel log entry ID for the page that raised this event.
+* `ulCurrentEntryId` The travel log entry ID for the page that raised this event. 
 
 * `spszCurrentUrl` The URL of the page. 
 
@@ -663,4 +662,3 @@ Raised when security information of the page has changed.
 * `ulCurrentEntryId` The travel log entry for this change. 
 
 * `secureLockIcon` The state of the security information.
-

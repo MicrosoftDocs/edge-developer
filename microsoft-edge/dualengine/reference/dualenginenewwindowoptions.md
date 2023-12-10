@@ -1,10 +1,10 @@
 ---
-description: Represents the requested state of a new window.
 title: DualEngine Win32 C++ DualEngineNewWindowOptions
+description: Represents the requested state of a new window.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 11/16/2023
+ms.date: 12/09/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, DualEngineNewWindowOptions
 topic_type: 
 - APIRef
@@ -133,3 +133,4 @@ Specifies the requested width of the window.
 Indicates whether a `DualEngineNewWindowOptions.width` value was specified.
 
 > public BOOL [widthSpecified](#widthspecified)
+

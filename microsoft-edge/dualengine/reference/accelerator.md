@@ -1,10 +1,10 @@
 ---
-description: Contains the information representing a keyboard accelerator.
 title: DualEngine Win32 C++ ACCELERATOR
+description: Represents a keyboard accelerator (keyboard shortcut).
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 12/06/2023
+ms.date: 12/09/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, ACCELERATOR
 topic_type: 
 - APIRef
@@ -24,7 +24,7 @@ api_location:
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
-Contains the information representing a keyboard accelerator (keyboard shortcut).
+Represents a keyboard accelerator (keyboard shortcut).
 
 ## Summary
 
@@ -53,3 +53,4 @@ The modifier keys present in the accelerator keystroke.
 The virtual-key code of the keystroke.
 
 > public DWORD [keyCode](#keycode)
+
