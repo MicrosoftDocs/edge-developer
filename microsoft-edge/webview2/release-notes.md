@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 12/09/2023
+ms.date: 12/12/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -141,8 +141,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ====================================================================== -->
 ## 121.0.2261-prerelease
 
-<!-- Version TBD -->
+<!-- todo: Version # TBD; update throughout section -->
 
+Release Date: December 12, 2023<!-- todo: finalize date -->
 
 [NuGet package for WebView2 SDK 121.0.2261-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2261-prerelease)
 
@@ -150,18 +151,17 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### General features
-
-
-<!-- ------------------------------ -->
 #### Experimental APIs
 
 
-<!-- ------------------------------ -->
-
+<!-- ---------- -->
 * Added the Runtime selection feature to support more prerelease testing and flighting scenarios. Developers can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
 
+<!-- todo: make sure lists are sync'd across tabs -->
+
 ##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: test links -->
 
 * `CoreWebView2EnvironmentOptions` Class:
     * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
@@ -174,6 +174,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- todo: test links -->
+
 * `CoreWebView2EnvironmentOptions` Class:
     * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#channelsearchkind)
     * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#releasechannels)
@@ -184,11 +186,13 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 ##### [Win32/C++](#tab/win32cpp)
 
+<!-- todo: test links -->
+
 * [ICoreWebView2ExperimentalEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.2261-prerelease&preserve-view=true)
-    * [ICoreWebView2ExperimentalEnvironmentOptions::get_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.2261-prerelease&preserve-view=true#get_releasechannels)
-    * [ICoreWebView2ExperimentalEnvironmentOptions::put_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.2261-prerelease&preserve-view=true#put_releasechannels)
     * [ICoreWebView2ExperimentalEnvironmentOptions::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.2261-prerelease&preserve-view=true#get_channelsearchkind)
+    * [ICoreWebView2ExperimentalEnvironmentOptions::get_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.2261-prerelease&preserve-view=true#get_releasechannels)
     * [ICoreWebView2ExperimentalEnvironmentOptions::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.2261-prerelease&preserve-view=true#put_channelsearchkind)
+    * [ICoreWebView2ExperimentalEnvironmentOptions::put_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.2261-prerelease&preserve-view=true#put_releasechannels)
 
 * [COREWEBVIEW2_CHANNEL_SEARCH_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2261-prerelease&preserve-view=true#corewebview2_channel_search_kind)
 
@@ -196,44 +200,73 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 ---
 
-<!-- ------------------------------ -->
 
+<!-- ---------- -->
 * Added a new API to provide hit testing results on the regions that it contains. This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
 
+<!-- todo: make sure lists are sync'd across tabs -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: API list -->
+<!-- todo: test links -->
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+<!-- todo: API list -->
+<!-- todo: test links -->
+
+##### [Win32/C++](#tab/win32cpp)
+
 * [ICoreWebView2ExperimentalCompositionController5](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true)
-* [ICoreWebView2ExperimentalCompositionController5::GetNonClientRegionAtPoint](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#getnonclientregionatpoint)
-* [ICoreWebView2ExperimentalCompositionController5::QueryNonClientRegion](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#querynonclientregion)
-* [ICoreWebView2ExperimentalCompositionController5::add_NonClientRegionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#add_nonclientregionchanged)
-* [ICoreWebView2ExperimentalCompositionController5::remove_NonClientRegionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#remove_nonclientregionchanged)
+   * [ICoreWebView2ExperimentalCompositionController5::GetNonClientRegionAtPoint](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#getnonclientregionatpoint)
+   * [ICoreWebView2ExperimentalCompositionController5::QueryNonClientRegion](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#querynonclientregion)
+   * [ICoreWebView2ExperimentalCompositionController5::add_NonClientRegionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#add_nonclientregionchanged)
+   * [ICoreWebView2ExperimentalCompositionController5::remove_NonClientRegionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#remove_nonclientregionchanged)
 
 * [ICoreWebView2ExperimentalNonClientRegionChangedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnonclientregionchangedeventargs?view=webview2-1.0.2261-prerelease&preserve-view=true)
-* [ICoreWebView2ExperimentalNonClientRegionChangedEventArgs::get_RegionKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnonclientregionchangedeventargs?view=webview2-1.0.2261-prerelease&preserve-view=true#get_regionkind)
+   * [ICoreWebView2ExperimentalNonClientRegionChangedEventArgs::get_RegionKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnonclientregionchangedeventargs?view=webview2-1.0.2261-prerelease&preserve-view=true#get_regionkind)
+
 * [ICoreWebView2ExperimentalNonClientRegionChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnonclientregionchangedeventhandler?view=webview2-1.0.2261-prerelease&preserve-view=true)
+
 * [ICoreWebView2ExperimentalRegionRectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalregionrectcollectionview?view=webview2-1.0.2261-prerelease&preserve-view=true)
+
 * [ICoreWebView2ExperimentalSettings8](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-view=true)
-* [ICoreWebView2ExperimentalSettings8::get_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-
+   * [ICoreWebView2ExperimentalSettings8::get_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-
 view=true#get_isnonclientregionsupportenabled)
-* [ICoreWebView2ExperimentalSettings8::put_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-view=true#put_isnonclientregionsupportenabled)
+   * [ICoreWebView2ExperimentalSettings8::put_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-view=true#put_isnonclientregionsupportenabled)
+
+---
 
 
+<!-- ------------------------------ -->
 #### Promotions
 
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
-<!-- ------------------------------ -->
+
+<!-- ---------- -->
 * `ICoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow developers to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
 
+<!-- todo: make sure lists are sync'd across tabs -->
+
 ##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: test links -->
 
 * `CoreWebView2AcceleratorKeyPressedEventArgs` Class:
     * [CoreWebView2AcceleratorKeyPressedEventArgs.IsBrowserAcceleratorKeyEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs.isbrowseracceleratorkeyenabled?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- todo: test links -->
+
 * `CoreWebView2AcceleratorKeyPressedEventArgs` Class:
     * [CoreWebView2AcceleratorKeyPressedEventArgs.IsBrowserAcceleratorKeyEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2acceleratorkeypressedeventargs?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#isbrowseracceleratorkeyenabled)
 
 ##### [Win32/C++](#tab/win32cpp)
+
+<!-- todo: test links -->
 
 * [ICoreWebView2AcceleratorKeyPressedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2?view=webview2-1.0.2261-prerelease&preserve-view=true)
     * [ICoreWebView2AcceleratorKeyPressedEventArgs2::get_IsBrowserAcceleratorKeyEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_isbrowseracceleratorkeyenabled)
@@ -241,10 +274,15 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ---
 
-<!-- ------------------------------ -->
+
+<!-- ---------- -->
 * The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process. This API enables the host application to detect which part of WebView2 is consuming resources such as memory or CPU usage:
 
+<!-- todo: make sure lists are sync'd across tabs -->
+
 ##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: test links -->
 
 * `CoreWebView2Environment` Class:
     * [CoreWebView2Environment.GetProcessExtendedInfosAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getprocessextendedinfosasync?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
@@ -268,6 +306,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- todo: test links -->
+
 * `CoreWebView2Environment` Class:
     * [CoreWebView2Environment.GetProcessExtendedInfosAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#getprocessextendedinfosasync)
 
@@ -289,6 +329,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ##### [Win32/C++](#tab/win32cpp)
 
+<!-- todo: test links -->
+
 * [ICoreWebView2Environment13](/microsoft-edge/webview2/reference/win32/icorewebview2environment13?view=webview2-1.0.2261-prerelease&preserve-view=true)
     * [ICoreWebView2Environment13::GetProcessExtendedInfos](/microsoft-edge/webview2/reference/win32/icorewebview2environment13?view=webview2-1.0.2261-prerelease&preserve-view=true#getprocessextendedinfos)
 
@@ -307,18 +349,23 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 * [ICoreWebView2FrameInfo2](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true)
     * [ICoreWebView2FrameInfo2::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_frameid)
-    * [ICoreWebView2FrameInfo2::get_ParentFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_parentframeinfo)
     * [ICoreWebView2FrameInfo2::get_FrameKind](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_framekind)
+    * [ICoreWebView2FrameInfo2::get_ParentFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_parentframeinfo)
     * [ICoreWebView2FrameInfo2::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#invoke)
 
 * [COREWEBVIEW2_FRAME_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2261-prerelease&preserve-view=true#corewebview2_frame_kind)
 
 ---
 
-<!-- ------------------------------ -->
+
+<!-- ---------- -->
 * Added the `ExecuteScriptWithResult` method, which will provide exception information if the executed script failed, and additionally adds a new method `TryGetResultAsString` that tries to get the script execution result as a string rather than as JSON in order to make it more convenient to interact with string results.
 
+<!-- todo: make sure lists are sync'd across tabs -->
+
 ##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: test links -->
 
 * [CoreWebView2.CreateFromComICoreWebView2 Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
     * [CoreWebView2.ExecuteScriptWithResultAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.executescriptwithresultasync?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
@@ -338,6 +385,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
     
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- todo: test links -->
+
 * [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true)
     * [CoreWebView2.ExecuteScriptWithResultAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#executescriptwithresultasync)
 
@@ -355,6 +404,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
     * [LineNumber Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/linenumber?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true)
     
 ##### [Win32/C++](#tab/win32cpp)
+
+<!-- todo: test links -->
 
 * [ICoreWebView2_21](/microsoft-edge/webview2/reference/win32/icorewebview2_21?view=webview2-1.0.2261-prerelease&preserve-view=true)
     * [ICoreWebView2_21::ExecuteScriptWithResult](/microsoft-edge/webview2/reference/win32/icorewebview2_21?view=webview2-1.0.2261-prerelease&preserve-view=true#executescriptwithresult)
@@ -376,14 +427,18 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ---
 
 
-
 <!-- ------------------------------ -->
 #### Bug fixes
-* Fixed a bug where closing WebView with an embedded PDF viewer could lead to a crash. (Runtime-only) ([Issue #3832](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3832))
-* Fixed an issue where the WebView2 controls in .NET was failing to find the WebView2Loader.dll on UNC paths. (SDK-only) ([Issue #4081](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4081))
-* Fixed child process taskbar icon stacking issues (Runtime-only) ([Issue #3245](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3245))
-* Fixed a bug that sent unnecessary Edge Cloud Config Service network request. (Runtime-only) ([Issue #4180](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4180))
-* Updated the behavior of the app-region CSS property so that changes to it's value trigger a page re-layout
+
+* Fixed a bug where closing a WebView that has an embedded PDF viewer could lead to a crash. (Runtime-only)  ([Issue #3832](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3832))
+
+* Fixed an issue where the WebView2 control in .NET was failing to find the `WebView2Loader.dll` on UNC paths.  (SDK-only)  ([Issue #4081](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4081))
+
+* Fixed issues with stacking of child process taskbar icons.  (Runtime-only)  ([Issue #3245](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3245))
+
+* Fixed a bug that sent an unnecessary network request for Edge Cloud Config Service.  (Runtime-only)  ([Issue #4180](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4180))
+
+* Updated the behavior of the `app-region` CSS property so that changes to its value trigger a page re-layout.
 
 <!-- end of Dec 2023 Prerelease SDK -->
 
