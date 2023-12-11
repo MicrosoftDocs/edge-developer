@@ -198,7 +198,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 
-* Added a new API to provide hit testing results on the regions that it contains. This API is useful for applications that want to handle mouse events on the non-client area of the WebView2 window.
+* Added a new API to provide hit testing results on the regions that it contains. This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
 
 * [ICoreWebView2ExperimentalCompositionController5](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true)
 * [ICoreWebView2ExperimentalCompositionController5::GetNonClientRegionAtPoint](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#getnonclientregionatpoint)
