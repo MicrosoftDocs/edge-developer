@@ -355,7 +355,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- ------------------------------ -->
 #### Bug fixes
 
-* Added support for promise cancellation on host objects' (AddHostObjectToScript) async methods in WinRT JS projection.  (Runtime and SDK)
+* Added support for promise cancellation on host objects' async methods in WinRT JS projection.  For information about `AddHostObjectToScript`, see [Call native-side WinRT code from web-side code](./how-to/winrt-from-js.md).  (Runtime and SDK)
 
 * Disabled automatic HTTPS upgrades for WebView2 API navigations.  (Runtime-only)  ([Issue #4104](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4104))
 
