@@ -390,21 +390,20 @@ To stop Microsoft Edge from finding related matches in **Find on page**:
 <!-- ====================================================================== -->
 ## Geolocation
 
-While you browse the web, websites may request your device's location from Microsoft Edge. Data about your device's location can be either precise or imprecise. For example, a precise location is needed to provide driving directions to or from your specific location. An imprecise location may be used to provide search results, news, and weather relevant to your general area.
+While you browse the web, websites can request your device's location from Microsoft Edge. Data about your device's location can be either precise or imprecise. For example, a precise location is needed to provide driving directions to or from your specific location. An imprecise location might be used to provide search results, news, and weather relevant to your general area.
 
-Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which allows websites to access your precise location with your permission. Microsoft Edge always asks for your permission before granting websites access to your precise location. To manage the site-specific permissions or to always block sites from accessing your precise location, go to `edge://settings/content/location`.
+Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which provides websites access to your device's location. By default, Microsoft Edge asks for your permission before granting a site access to your precise location. To manage site permissions or to always block sites from accessing your precise location, go to `edge://settings/content/location`.
 
-Microsoft Edge indicates when your precise location is being shared on the right side of the address bar. 
+Microsoft Edge provides the site with a location using your device's location services when they're turned on. For more information about how to enable location services on Windows, see [Windows location service and privacy](https://support.microsoft.com/help/4468240). 
+If your device's location services are turned off, Microsoft Edge tries to estimate your location by sending local network information (which might contain nearby Wi-Fi access point information and your device’s IP address) to a Microsoft service. 
+
+When the site you are on has access to your location, Microsoft Edge shows a location icon in the address bar. You can select this icon to get more information and to manage the location access permissions for this site.
 
 ![Location](./index-images/geolocation2.png)
 
-You can allow Microsoft Edge to provide the requesting site with a precise location on Windows 10 and Windows 11. Open **Start** > **Settings** > **Privacy** > **Location** and turn on the **Allow access to location on this device** and **Allow apps to access your location** settings. These settings enable the Windows location service. When enabled, Microsoft services may also estimate your imprecise location via the Windows location service to provide locally relevant browsing experiences.
+Microsoft Edge doesn't collect or store the location data that is shared with the site, and generates a new random identifier for each request.
 
-If you turn off the **Allow access to location on this device** and **Allow apps to access your location** settings, some sites may still estimate your location using other technologies (such as Bluetooth, WiFi, cellular modem, or IP address) with varying degrees of accuracy. With Windows location settings disabled, precise location experiences that you allow in Microsoft Edge may also be inaccurate. For more information about Windows location settings, see [Windows location service and privacy](https://support.microsoft.com/help/4468240).
-
-Microsoft Edge doesn't store your geolocation coordinates. When making requests to the Windows location service, Microsoft Edge generates a new random ID for each request.
-
-**InPrivate** browsing uses the precise location permission setting of the profile from which the **InPrivate** session was launched. **Guest** mode always asks you for permission before granting the site your precise location.
+**InPrivate** browsing uses the location permission settings of the browser profile from which the **InPrivate** session was launched. **Guest** mode always asks you for permission before granting a site access to your precise location.
 
 
 <!-- ====================================================================== -->

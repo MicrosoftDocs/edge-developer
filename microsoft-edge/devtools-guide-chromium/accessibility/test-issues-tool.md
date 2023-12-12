@@ -145,4 +145,3 @@ The DOM tree in the **Elements** tool flags issues directly in the HTML with wav
 ## See also
 
 *  [Find and fix problems using the Issues tool](../issues/index.md)
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

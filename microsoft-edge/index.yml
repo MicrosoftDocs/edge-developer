@@ -335,9 +335,6 @@ conceptualContent:
             - url: /microsoft-edge/accessibility/
               itemType: overview
               text: Accessibility overview
-            - url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
-              itemType: how-to-guide
-              text: Overview of accessibility testing using DevTools
             - url: /microsoft-edge/accessibility/test
               itemType: how-to-guide
               text: Accessibility testing
