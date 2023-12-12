@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/28/2021
+ms.date: 09/11/2023
 ---
 # Find source files for a page using the Search tool
 
@@ -27,7 +27,7 @@ To quickly open the **Search** tool:
 
    Or, press **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS).
 
-The **Search** tool appears in the **Drawer**, with a search toolbar:
+The **Search** tool opens in the **Quick View** panel:
 
 ![The Search tool, with the search toolbar](./search-tool-images/search-tool-first-open.png)
 
@@ -43,7 +43,7 @@ To open the **Search** tool from the **Command Menu**:
 
 1. Open the [Command Menu](../command-menu/index.md), by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
-1. Type **search**, and then press **Enter**.
+1. Start typing **search**, and then select **Show Search**:
 
 ![The Command Menu with the Show Search item selected](./search-tool-images/open-search-tool.png)
 
@@ -74,7 +74,7 @@ To only find results that match a particular case (lowercase or uppercase charac
 <!-- ====================================================================== -->
 ## Search for regular expressions
 
-You can use regular expressions to find matching results.  To use a regular expression, click the **Use Regular Expression** (**.\***) button in the toolbar and enter a valid [JavaScript regular expression](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) in the search input field.
+You can use regular expressions to find matching results.  To use a regular expression, click the **Use Regular Expression** (**.\***) button in the toolbar and enter a valid [JavaScript regular expression](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) in the **Search** text box:
 
 ![Searching for a regular expression](./search-tool-images/search-tool-regexp.png)
 
@@ -95,7 +95,7 @@ See also:
 <!-- ====================================================================== -->
 ## Open a found file in the Sources tool
 
-After doing a search, click a result line to open the corresponding file.  The **Sources** tool opens in the main panel and loads the resource file, scrolled to the matching line.
+After doing a search, click a result line to open the corresponding file.  The **Sources** tool opens in the main panel and loads the resource file, scrolled to the matching line:
 
 ![Clicking on a search line opens the Sources tool and loads the corresponding resource](./search-tool-images/search-tool-open-in-sources.png)
 
@@ -103,11 +103,11 @@ After doing a search, click a result line to open the corresponding file.  The *
 <!-- ====================================================================== -->
 ## Update search results
 
-A webpage can continue to request resources after it has finished loading, so the results displayed in the **Search** panel may become stale after a while.
+A webpage can continue to request resources after it has finished loading, so the results displayed in the **Search** panel might become outdated after a while.
 
 To update the search results, do either of the following:
-*  Search again by typing a term in the search input field.
 *  Click the **Refresh** (![Refresh search button](./search-tool-images/search-tool-refresh.png)) button in the toolbar.
+*  Search again by typing a term in the search input field.
 
 
 <!-- ====================================================================== -->

@@ -39,7 +39,7 @@ last sync'd Feb. 2, 2023
 | TODO app | Simple To Do app with vanilla JavaScript.  Used for screenshots in the [Microsoft Edge DevTools documentation](/microsoft-edge/devtools-guide-chromium/landing/), and for [Opening DevTools and the DevTools browser](../../visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md) for the DevTools extension for Visual Studio Code. | [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) | [My tasks](https://microsoftedge.github.io/Demos/demo-to-do/) |
 | Detached elements | Chat-like demo.  Used for [Debug DOM memory leaks with the Detached Elements tool](../memory-problems/dom-leaks.md). | [/detached-elements/](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) | [Simulate traffic](https://microsoftedge.github.io/Demos/detached-elements/) |
 | 3D View | Used for [Navigate webpage layers, z-index, and DOM using the 3D View tool](../3d-view/index.md). | [/devtools-3d/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-3d) | [Microsoft Edge DevTools 3D View tool demo](https://microsoftedge.github.io/Demos/devtools-3d/) |
-| Accessibility testing | Used for [Overview of accessibility testing using DevTools](../accessibility/accessibility-testing-in-devtools.md). | [/devtools-a11y-testing/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) | [Animal shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) |
+| Accessibility testing | Used for [Accessibility-testing features](../accessibility/reference.md). | [/devtools-a11y-testing/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) | [Animal shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) |
 | Console panel demo pages | Used for [Console overview](../console/index.md), [Log messages in the Console tool](../console/console-log.md), and [Fix JavaScript errors that are reported in the Console](../console/console-debug-javascript.md). | [/devtools-console/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-console) | [DevTools Console panel demo pages](https://microsoftedge.github.io/Demos/devtools-console/) |
 | Contrast bug fix | Used for [Improving contrast in Microsoft Edge DevTools: A bugfix case study](https://blogs.windows.com/msedgedev/2021/06/15/improving-contrast-in-microsoft-edge-devtools-a-bugfix-case-study/). | [/devtools-contrast-bugfix/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-contrast-bugfix) | [Testing all badges in DevTools for contrast issues](https://microsoftedge.github.io/Demos/devtools-contrast-bugfix/) |
 | CSS Examples | Used for [Get started viewing and changing CSS](../css/index.md). | [/devtools-css-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) | [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) |
@@ -88,8 +88,6 @@ This Animal Shelter demo webpage is useful for exploring various DevTools featur
 #### Articles
 
 These articles walk you through using this demo webpage:
-
-* [Overview of accessibility testing using DevTools](../accessibility/accessibility-testing-in-devtools.md) - Long article with sections that demonstrate using various DevTools features to do accessibility testing, by using the "Demo webpage with accessibility issues".
 
 * [Use the Inspect tool to detect accessibility issues by hovering over the webpage](../accessibility/test-inspect-tool.md) - One of several short articles that are derived from sections of the above article.
 

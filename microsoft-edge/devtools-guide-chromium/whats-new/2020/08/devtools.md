@@ -225,7 +225,7 @@ Third-party issues are now hidden by default in the **Issues** tool.  Select the
 
 Chromium issues: [1096481](https://crbug.com/1096481), [1068116](https://crbug.com/1068116), [1080589](https://crbug.com/1080589)
 
-For more information, see [Filter by origin](../../../issues/index.md#filter-by-origin) in _Find and fix problems using the Issues tool_.
+For more information, see [Filter issues by origin](../../../issues/index.md#filter-issues-by-origin) in _Find and fix problems using the Issues tool_.
 
 
 <!-- ====================================================================== -->
@@ -260,7 +260,7 @@ See also [Analyze rendering performance with the Rendering tool](../../../evalua
 <!-- ====================================================================== -->
 ### Emulate inactive users
 
-The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool from the [Drawer](../../../customize/index.md#drawer).
+The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool from the [Drawer](../../../customize/index.md#quick-view).
 
 ![Emulate inactive users](./devtools-images/emulate-idle.png)
 
