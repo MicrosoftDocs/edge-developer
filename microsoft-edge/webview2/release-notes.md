@@ -157,8 +157,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ---------- -->
 * Added the Runtime selection feature to support more prerelease testing and flighting scenarios. Developers can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
 
-<!-- todo: make sure lists are sync'd across tabs -->
-
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- todo: test links -->
@@ -174,7 +172,11 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: test links -->
+<!-- todo: test links
+navigate rendered WinRT PR (temp params):
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-preview&branch=pr-en-us-46
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?branch=pr-en-us-46&view=webview2-winrt-preview
+-->
 
 * `CoreWebView2EnvironmentOptions` Class:
     * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#channelsearchkind)
@@ -186,7 +188,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 ##### [Win32/C++](#tab/win32cpp)
 
-<!-- todo: test links -->
+<!-- todo: test links
+navigate rendered Win32 PR (temp params):
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-win32-preview&branch=pr-en-us-76
+-->
 
 * [ICoreWebView2ExperimentalEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.2261-prerelease&preserve-view=true)
     * [ICoreWebView2ExperimentalEnvironmentOptions::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.2261-prerelease&preserve-view=true#get_channelsearchkind)
@@ -204,34 +209,64 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ---------- -->
 * Added a new API to provide hit testing results on the regions that it contains. This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
 
-<!-- todo: make sure lists are sync'd across tabs -->
-
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- todo: API list -->
-<!-- todo: test links -->
+<!-- todo: test links (manually added); use the open PR [not created yet]
+Rendered (temp params):
+pending
+-->
+
+* `CoreWebView2CompositionController` Class:
+   * [CoreWebView2CompositionController.GetNonClientRegionAtPoint Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.getnonclientregionatpoint?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
+   * [CoreWebView2CompositionController.QueryNonClientRegion Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.querynonclientregion?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
+   * [CoreWebView2CompositionController.NonClientRegionChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
+   
+* [CoreWebView2NonClientRegionChangedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionchangedeventargs?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
+   * [CoreWebView2NonClientRegionChangedEventArgs.RegionKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionchangedeventargs.regionkind?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
+
+* `CoreWebView2Settings` Class:
+   * [CoreWebView2Settings.IsNonClientRegionSupportEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isnonclientregionsupportenabled?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: API list -->
-<!-- todo: test links -->
+<!-- todo: test links (manually added); use the open PR https://github.com/MicrosoftDocs/webview2-winrt-reference/pull/46
+rendered WinRT PR (temp params):
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-preview&branch=pr-en-us-46
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?branch=pr-en-us-46&view=webview2-winrt-preview
+-->
+
+* `CoreWebView2CompositionController` Class:
+   * [CoreWebView2CompositionController.GetNonClientRegionAtPoint Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#getnonclientregionatpoint)
+   * [CoreWebView2CompositionController.QueryNonClientRegion Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#querynonclientregion)
+   * [CoreWebView2CompositionController.NonClientRegionChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#nonclientregionchanged)
+
+* [CoreWebView2NonClientRegionChangedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2nonclientregionchangedeventargs?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true)
+   * [CoreWebView2NonClientRegionChangedEventArgs.RegionKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2nonclientregionchangedeventargs?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#regionkind)
+
+* `CoreWebView2Settings` Class:
+   * [CoreWebView2Settings.IsNonClientRegionSupportEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#isnonclientregionsupportenabled)
 
 ##### [Win32/C++](#tab/win32cpp)
 
+<!-- todo: test links
+navigate rendered Win32 PR (temp params):
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-win32-preview&branch=pr-en-us-76
+-->
+
 * [ICoreWebView2ExperimentalCompositionController5](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalCompositionController5::add_NonClientRegionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#add_nonclientregionchanged)
    * [ICoreWebView2ExperimentalCompositionController5::GetNonClientRegionAtPoint](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#getnonclientregionatpoint)
    * [ICoreWebView2ExperimentalCompositionController5::QueryNonClientRegion](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#querynonclientregion)
-   * [ICoreWebView2ExperimentalCompositionController5::add_NonClientRegionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#add_nonclientregionchanged)
    * [ICoreWebView2ExperimentalCompositionController5::remove_NonClientRegionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller5?view=webview2-1.0.2261-prerelease&preserve-view=true#remove_nonclientregionchanged)
 
 * [ICoreWebView2ExperimentalNonClientRegionChangedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnonclientregionchangedeventargs?view=webview2-1.0.2261-prerelease&preserve-view=true)
-   * [ICoreWebView2ExperimentalNonClientRegionChangedEventArgs::get_RegionKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnonclientregionchangedeventargs?view=webview2-1.0.2261-prerelease&preserve-view=true#get_regionkind)
+   * [ICoreWebView2ExperimentalNonClientRegionChangedEventArgs::get_RegionKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnonclientregionchangedeventargs?view=webview2-1.0.2261-prerelease&preserve-view=true#get_regionkind)<!--no put-->
 
-* [ICoreWebView2ExperimentalNonClientRegionChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnonclientregionchangedeventhandler?view=webview2-1.0.2261-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalNonClientRegionChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnonclientregionchangedeventhandler?view=webview2-1.0.2261-prerelease&preserve-view=true)<!-- handler in Win32 only -->
 
-* [ICoreWebView2ExperimentalRegionRectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalregionrectcollectionview?view=webview2-1.0.2261-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalRegionRectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalregionrectcollectionview?view=webview2-1.0.2261-prerelease&preserve-view=true)<!-- collection type in Win32 only -->
 
-* [ICoreWebView2ExperimentalSettings8](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalSettings8](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-view=true)<!-- new type/link in Win32 only -->
    * [ICoreWebView2ExperimentalSettings8::get_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-
 view=true#get_isnonclientregionsupportenabled)
    * [ICoreWebView2ExperimentalSettings8::put_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-view=true#put_isnonclientregionsupportenabled)
@@ -246,9 +281,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ---------- -->
-* `ICoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow developers to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
-
-<!-- todo: make sure lists are sync'd across tabs -->
+* `CoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow you to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -259,14 +292,21 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: test links -->
+<!-- todo: test links
+navigate rendered WinRT PR (temp params):
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-preview&branch=pr-en-us-46
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?branch=pr-en-us-46&view=webview2-winrt-preview
+-->
 
 * `CoreWebView2AcceleratorKeyPressedEventArgs` Class:
     * [CoreWebView2AcceleratorKeyPressedEventArgs.IsBrowserAcceleratorKeyEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2acceleratorkeypressedeventargs?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#isbrowseracceleratorkeyenabled)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-<!-- todo: test links -->
+<!-- todo: test links
+navigate rendered Win32 PR (temp params):
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-win32-preview&branch=pr-en-us-76
+-->
 
 * [ICoreWebView2AcceleratorKeyPressedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2?view=webview2-1.0.2261-prerelease&preserve-view=true)
     * [ICoreWebView2AcceleratorKeyPressedEventArgs2::get_IsBrowserAcceleratorKeyEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_isbrowseracceleratorkeyenabled)
@@ -278,7 +318,12 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ---------- -->
 * The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process. This API enables the host application to detect which part of WebView2 is consuming resources such as memory or CPU usage:
 
-<!-- todo: make sure lists are sync'd across tabs -->
+<!-- todo: make sure lists are sync'd across tabs
+WinRT rendered PR:
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?branch=pr-en-us-46&view=webview2-winrt-preview
+Win32 rendered PR:
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-win32-preview&branch=pr-en-us-76
+-->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -301,12 +346,19 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
     * [CoreWebView2FrameInfo.FrameId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo.frameid?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
     * [CoreWebView2FrameInfo.FrameKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo.framekind?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
     * [CoreWebView2FrameInfo.ParentFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo.parentframeinfo?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
+<!-- 
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo?view=webview2-winrt-preview&branch=pr-en-us-46
+-->
 
 * [CoreWebView2FrameKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2framekind?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: test links -->
+<!-- todo: test links
+navigate rendered WinRT PR (temp params):
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-preview&branch=pr-en-us-46
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?branch=pr-en-us-46&view=webview2-winrt-preview
+-->
 
 * `CoreWebView2Environment` Class:
     * [CoreWebView2Environment.GetProcessExtendedInfosAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#getprocessextendedinfosasync)
@@ -322,6 +374,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
     * [CoreWebView2Frame.FrameId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#frameid)
 
 * `CoreWebView2FrameInfo` Class:
+    * [CoreWebView2FrameInfo.FrameId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#frameid)
     * [CoreWebView2FrameInfo.FrameKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#framekind)
     * [CoreWebView2FrameInfo.ParentFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#parentframeinfo)
 
@@ -329,29 +382,33 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ##### [Win32/C++](#tab/win32cpp)
 
-<!-- todo: test links -->
+<!-- todo: test links
+navigate rendered Win32 PR (temp params):
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-win32-preview&branch=pr-en-us-76
+-->
 
 * [ICoreWebView2Environment13](/microsoft-edge/webview2/reference/win32/icorewebview2environment13?view=webview2-1.0.2261-prerelease&preserve-view=true)
     * [ICoreWebView2Environment13::GetProcessExtendedInfos](/microsoft-edge/webview2/reference/win32/icorewebview2environment13?view=webview2-1.0.2261-prerelease&preserve-view=true#getprocessextendedinfos)
 
-* [ICoreWebView2GetProcessExtendedInfosCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2getprocessextendedinfoscompletedhandler?view=webview2-1.0.2261-prerelease&preserve-view=true)
+* [ICoreWebView2GetProcessExtendedInfosCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2getprocessextendedinfoscompletedhandler?view=webview2-1.0.2261-prerelease&preserve-view=true)<!-- handler is Win32 only -->
 
 * [ICoreWebView2ProcessExtendedInfo](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfo?view=webview2-1.0.2261-prerelease&preserve-view=true)
-    * [ICoreWebView2ProcessExtendedInfo::get_ProcessInfo](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfo?view=webview2-1.0.2261-prerelease&preserve-view=true#get_processinfo)
     * [ICoreWebView2ProcessExtendedInfo::get_AssociatedFrameInfos](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfo?view=webview2-1.0.2261-prerelease&preserve-view=true#get_associatedframeinfos)
+    * [ICoreWebView2ProcessExtendedInfo::get_ProcessInfo](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfo?view=webview2-1.0.2261-prerelease&preserve-view=true#get_processinfo)
 
-* [ICoreWebView2ProcessExtendedInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfocollection?view=webview2-1.0.2261-prerelease&preserve-view=true)
+* [ICoreWebView2ProcessExtendedInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfocollection?view=webview2-1.0.2261-prerelease&preserve-view=true)<!-- collection is Win32 only -->
 
-* [ICoreWebView2_20](/microsoft-edge/webview2/reference/win32/icorewebview2_20?view=webview2-1.0.2210.57&preserve-view=true)
+* [ICoreWebView2_20](/microsoft-edge/webview2/reference/win32/icorewebview2_20?view=webview2-1.0.2261-prerelease&preserve-view=true)
+    * [ICoreWebView2_20::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2_20?view=view=webview2-1.0.2261-prerelease&preserve-view=true#get_frameid)<!--no put-->
 
 * [ICoreWebView2Frame5](/microsoft-edge/webview2/reference/win32/icorewebview2frame5?view=webview2-1.0.2261-prerelease&preserve-view=true)
-    * [ICoreWebView2Frame5::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2frame5?view=webview2-1.0.2261-prerelease&preserve-view=true#get_frameid)
+    * [ICoreWebView2Frame5::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2frame5?view=webview2-1.0.2261-prerelease&preserve-view=true#get_frameid)<!--no put-->
 
 * [ICoreWebView2FrameInfo2](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true)
     * [ICoreWebView2FrameInfo2::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_frameid)
     * [ICoreWebView2FrameInfo2::get_FrameKind](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_framekind)
     * [ICoreWebView2FrameInfo2::get_ParentFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_parentframeinfo)
-    * [ICoreWebView2FrameInfo2::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#invoke)
+    * [ICoreWebView2FrameInfo2::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#invoke)<!-- todo: no "Invoke" member near https://review.learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-win32-preview&branch=pr-en-us-76 - for WinRT, no Invoke member, either: https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo?view=webview2-winrt-preview&branch=pr-en-us-46 -->
 
 * [COREWEBVIEW2_FRAME_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2261-prerelease&preserve-view=true#corewebview2_frame_kind)
 
@@ -359,15 +416,21 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ---------- -->
-* Added the `ExecuteScriptWithResult` method, which will provide exception information if the executed script failed, and additionally adds a new method `TryGetResultAsString` that tries to get the script execution result as a string rather than as JSON in order to make it more convenient to interact with string results.
+* `ExecuteScriptWithResult` provides exception information if the script failed.  `TryGetResultAsString` gets the script execution result as a string rather than as JSON, to make it more convenient to interact with string results:
 
-<!-- todo: make sure lists are sync'd across tabs -->
+<!-- todo: make sure lists are sync'd across tabs
+WinRT rendered PR:
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?branch=pr-en-us-46&view=webview2-winrt-preview
+Win32 rendered PR:
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-win32-preview&branch=pr-en-us-76
+-->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- todo: test links -->
 
-* [CoreWebView2.CreateFromComICoreWebView2 Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
+* `CoreWebView2` Class:
+    * [CoreWebView2.CreateFromComICoreWebView2 Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
     * [CoreWebView2.ExecuteScriptWithResultAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.executescriptwithresultasync?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
 
 * [CoreWebView2ExecuteScriptResult Class](/dotnet/api/microsoft.web.webview2.core.corewebview2executescriptresult?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
@@ -385,10 +448,19 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
     
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: test links -->
+<!-- todo: test links
+navigate rendered WinRT PR (temp params):
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-preview&branch=pr-en-us-46
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?branch=pr-en-us-46&view=webview2-winrt-preview
+-->
 
 * [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true)
     * [CoreWebView2.ExecuteScriptWithResultAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#executescriptwithresultasync)
+<!-- not found:
+    * [CoreWebView2.CreateFromComICoreWebView2 Method]()
+in
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?branch=pr-en-us-46&view=webview2-winrt-preview
+-->
 
 * [CoreWebView2ExecuteScriptResult Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2executescriptresult?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true)
     * [CoreWebView2ExecuteScriptResult.Exception Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2executescriptresult?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#exception)
@@ -399,31 +471,35 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 * [CoreWebView2ScriptException Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true)
     * [CoreWebView2ScriptException.ColumnNumber Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#columnnumber)
+    * [CoreWebView2ScriptException.LineNumber Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#linenumber)
     * [CoreWebView2ScriptException.Message Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#message)
     * [CoreWebView2ScriptException.ToJson Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#tojson)
-    * [LineNumber Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/linenumber?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true)
-    
+
 ##### [Win32/C++](#tab/win32cpp)
 
-<!-- todo: test links -->
+<!-- todo: test links
+navigate rendered Win32 PR (temp params):
+https://review.learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-win32-preview&branch=pr-en-us-76
+-->
 
 * [ICoreWebView2_21](/microsoft-edge/webview2/reference/win32/icorewebview2_21?view=webview2-1.0.2261-prerelease&preserve-view=true)
     * [ICoreWebView2_21::ExecuteScriptWithResult](/microsoft-edge/webview2/reference/win32/icorewebview2_21?view=webview2-1.0.2261-prerelease&preserve-view=true#executescriptwithresult)
 
 * [ICoreWebView2ExecuteScriptResult](/microsoft-edge/webview2/reference/win32/icorewebview2executescriptresult?view=webview2-1.0.2261-prerelease&preserve-view=true)
-    * [ICoreWebView2ExecuteScriptResult::get_Succeeded](/microsoft-edge/webview2/reference/win32/icorewebview2executescriptresult?view=webview2-1.0.2261-prerelease&preserve-view=true#get_succeeded)
-    * [ICoreWebView2ExecuteScriptResult::get_ResultAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2executescriptresult?view=webview2-1.0.2261-prerelease&preserve-view=true#get_resultasjson)
-    * [ICoreWebView2ExecuteScriptResult::TryGetResultAsString](/microsoft-edge/webview2/reference/win32/icorewebview2executescriptresult?view=webview2-1.0.2261-prerelease&preserve-view=true#trygetresultasstring)
     * [ICoreWebView2ExecuteScriptResult::get_Exception](/microsoft-edge/webview2/reference/win32/icorewebview2executescriptresult?view=webview2-1.0.2261-prerelease&preserve-view=true#get_exception)
+    * [ICoreWebView2ExecuteScriptResult::get_ResultAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2executescriptresult?view=webview2-1.0.2261-prerelease&preserve-view=true#get_resultasjson)
+    * [ICoreWebView2ExecuteScriptResult::get_Succeeded](/microsoft-edge/webview2/reference/win32/icorewebview2executescriptresult?view=webview2-1.0.2261-prerelease&preserve-view=true#get_succeeded)
+    * [ICoreWebView2ExecuteScriptResult::TryGetResultAsString](/microsoft-edge/webview2/reference/win32/icorewebview2executescriptresult?view=webview2-1.0.2261-prerelease&preserve-view=true#trygetresultasstring)
 
 * [ICoreWebView2ExecuteScriptWithResultCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2executescriptwithresultcompletedhandler?view=webview2-1.0.2261-prerelease&preserve-view=true)
 
 * [ICoreWebView2ScriptException](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2261-prerelease&preserve-view=true)
-    * [ICoreWebView2ScriptException::get_LineNumber](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2261-prerelease&preserve-view=true#get_linenumber)
     * [ICoreWebView2ScriptException::get_ColumnNumber](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2261-prerelease&preserve-view=true#get_columnnumber)
+    * [ICoreWebView2ScriptException::get_LineNumber](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2261-prerelease&preserve-view=true#get_linenumber)
     * [ICoreWebView2ScriptException::get_Name](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2261-prerelease&preserve-view=true#get_name)
     * [ICoreWebView2ScriptException::get_Message](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2261-prerelease&preserve-view=true#get_message)
     * [ICoreWebView2ScriptException::get_ToJson](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2261-prerelease&preserve-view=true#get_tojson)
+
 ---
 
 
