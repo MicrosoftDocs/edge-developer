@@ -403,7 +403,7 @@ When the site you are on has access to your location, Microsoft Edge shows a loc
 
 Microsoft Edge doesn't collect or store the location data that is shared with the site, and generates a new random identifier for each request.
 
-**InPrivate** browsing and **Guest** mode always ask you for permission before granting a site access to your precise location.
+When you browse the web **InPrivate**, **Ask** and **Block** permissions to access location are inherited from the profile you used to open the **InPrivate** window. However, **Allow** is not automatically inherited and Microsoft Edge asks for your permission again before granting the site access to your precise location. In **Guest** mode, Microsoft Edge always asks for permission before granting a site access to your precise location.
 
 
 <!-- ====================================================================== -->
