@@ -36,8 +36,6 @@ See:
 
 * [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md) - a list of accessibility aspects to test and the corresponding DevTools features.
 
-* [Overview of accessibility testing using DevTools](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) - a walkthrough of testing a demo page for accessibility by using the DevTools features.
-
 
 <!-- ====================================================================== -->
 ## Microsoft UI Automation API

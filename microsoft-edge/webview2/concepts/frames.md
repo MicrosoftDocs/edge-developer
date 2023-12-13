@@ -307,7 +307,7 @@ See also:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-See the latest prerelease APIs.  The following links contain `1.0.1466-prerelease`.  In the **Version** drop-down list in the upper left of the API Reference docs, select the latest prerelease.
+See the latest prerelease APIs.  The following links contain `1.0.1466-prerelease`.  In the **Version** dropdown list in the upper left of the API Reference docs, select the latest prerelease.
 
 <!-- keep ?view as long as experimental-only.  keep # updated. -->
 
@@ -318,7 +318,7 @@ See the latest prerelease APIs.  The following links contain `1.0.1466-prereleas
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-See the latest prerelease APIs.  The following links contain `1.0.1466-prerelease`.  In the **Version** drop-down list in the upper left of the API Reference docs, select the latest prerelease.
+See the latest prerelease APIs.  The following links contain `1.0.1466-prerelease`.  In the **Version** dropdown list in the upper left of the API Reference docs, select the latest prerelease.
 
 <!-- keep ?view as long as experimental-only.  keep # updated. -->
 

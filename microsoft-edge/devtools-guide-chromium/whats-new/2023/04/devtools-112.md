@@ -109,15 +109,15 @@ See also:
 <!-- ------------------------------ -->
 #### Pressing Esc shows or entirely hides Quick View
 
-In previous versions of Microsoft Edge, in **Focus Mode**, **Quick View** was always displayed, as either collapsed or expanded.  Pressing **Esc** expanded **Quick View** if it was collapsed, and vice versa.  However, when the **Console** tool was selected in the **Activity Bar**, pressing **Esc** when the **Quick View** was collapsed displayed a blank view.  In Microsoft Edge 112, this issue has been fixed.
+In previous versions of Microsoft Edge, in **Focus Mode**, the **Quick View** panel was always displayed, as either collapsed or expanded.  Pressing **Esc** expanded the **Quick View** panel if it was collapsed, and vice versa.  However, when the **Console** tool was selected in the **Activity Bar**, pressing **Esc** when the **Quick View** panel was collapsed displayed a blank view.  In Microsoft Edge 112, this issue has been fixed.
 
-Pressing **Esc** now shows or entirely hides **Quick View**.  If **Quick View** is currently hidden, pressing **Esc** shows **Quick View**, expanded:
+Pressing **Esc** now shows or entirely hides the **Quick View** panel.  If the **Quick View** panel is currently hidden, pressing **Esc** shows the **Quick View** panel, expanded:
 
-![Quick View expanded, by pressing Esc](./devtools-112-images/focus-mode-esc-shows-quick-view.png)
+![The Quick View panel expanded, by pressing Esc](./devtools-112-images/focus-mode-esc-shows-quick-view.png)
 
-If **Quick View** is currently shown (whether collapsed or expanded), pressing **Esc** entirely hides **Quick View**:
+If the **Quick View** toolbar is currently displayed (whether the **Quick View** panel is collapsed or expanded), pressing **Esc** entirely hides the **Quick View** toolbar and panel:
 
-![Quick View entirely hidden by pressing Esc, not just collapsed](./devtools-112-images/focus-mode-esc-hides-quick-view.png)
+![The Quick View toolbar and panel entirely hidden by pressing Esc](./devtools-112-images/focus-mode-esc-hides-quick-view.png)
 
 
 <!-- ------------------------------ -->
@@ -143,9 +143,6 @@ In **Focus Mode**, when the **Activity Bar** is in the vertical orientation, a t
 Previously, selecting an icon with the keyboard or hovering over an icon with the mouse displayed two labels simultaneously.  This issue has now been fixed; only one label is displayed:
 
 ![A label is displayed when hovering over an icon in the Activity Bar](./devtools-112-images/focus-mode-label-vertical-activity-bar.png)
-
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->

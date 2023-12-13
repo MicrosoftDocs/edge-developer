@@ -102,9 +102,6 @@ In previous versions of Microsoft Edge, in Focus Mode, hovering over a tool's ic
 
 ![Hovering over a tool icon in the Activity Bar produces a tooltip with the name of the tool](./devtools-113-images/focus-mode-tooltip.png)
 
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
-
 
 <!-- ====================================================================== -->
 ## The Customize DevTools menu has better support for VS Code themes
