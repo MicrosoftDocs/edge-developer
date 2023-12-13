@@ -651,9 +651,10 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ---
 
 <!-- ---------- -->
-* Adds the new `CoreWebView2.CreateFromComICoreWebView2` function for wrapping an existing `ICoreWebView2` object in a `CoreWebView2` to allow .NET devs to interact with an control created in C++.
+* Adds the new `CoreWebView2.CreateFromComICoreWebView2` function for wrapping an existing `ICoreWebView2` object in a `CoreWebView2` instance, to allow .NET developers to interact with an control that was created in C++.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
+
 * `CoreWebView2` Class:
     * [CoreWebView2.CreateFromComICoreWebView2Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
 
