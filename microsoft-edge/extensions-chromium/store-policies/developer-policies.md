@@ -9,7 +9,7 @@ ms.date: 12/13/2023
 ---
 # Microsoft Edge Add-ons store developer policies
 
-Thank you<!-- todo: go easy on "thank you", per corp-level style guide --> for your interest in developing extensions for the Microsoft Edge Add-ons store.  The Microsoft Edge Add-ons store developer policies (Add-ons store developer policies) apply to your extensions, including your submission of extensions through [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and the provision of such extensions through the Microsoft Edge Add-ons.
+To develop an extension to be published through the Microsoft Edge Add-ons store, follow these Microsoft Edge Add-ons store developer policies (_Add-ons store developer policies_), which apply to submitting extensions through [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and providing extensions through the Microsoft Edge Add-ons store.
 
 The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons website_.
 
@@ -19,24 +19,21 @@ The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons we
 
 A few principles to get you started:
 
-* You should offer unique and distinct value within your extensions for Microsoft Edge.  Provide a compelling reason to download your extensions from the Microsoft Edge Add-ons store (Microsoft Edge Add-ons).
+* Offer unique and distinct value within your extensions for Microsoft Edge.  Provide a compelling reason to download your extensions from the Microsoft Edge Add-ons store (Microsoft Edge Add-ons).
 
-* You must not mislead our<!-- todo: reduce "we", "our" --> joint users about what your extension does, who is offering it, and so on.
+* Do not mislead users about what your extension does, who is offering it, and so on.
 
-* You must not attempt to cheat users, the system or the ecosystem.  There is no place in Microsoft Edge Add-ons for any kind of fraud; be it ratings and review manipulation, credit card fraud or other fraudulent activity.
+* Do not attempt to cheat users, the system or the ecosystem.  There is no place in Microsoft Edge Add-ons for any kind of fraud; be it ratings and review manipulation, credit card fraud or other fraudulent activity.
 
-Adhering to the Microsoft Edge Add-ons store developer policies should help you make choices that enhance the appeal and audience of your extension.
+Adhering to the Microsoft Edge Add-ons store developer policies helps you make choices that enhance the appeal and audience of your extension.
 
-Your extensions are crucial to the experience of hundreds of millions of users.  We<!-- todo: reduce "we", "our" --> look forward to experiencing what you create and are thrilled to help deliver your extensions to the world.
+Your extensions are crucial to the experience of hundreds of millions of users.  We look forward to experiencing what you create and are thrilled to help deliver your extensions to the world.<!-- todo: delete paragraph?  not a principle, not essential, not substantive - fits better in Intro section.  focuses on "we in relation to you", not on technology or policies -->
 
 
 <!-- ====================================================================== -->
 ## Building quality products
 
-Microsoft is committed to delivering quality products to its customers. Hence, we<!-- todo: reduce "we", "our" --> do not allow extensions which do not follow the quality guidelines; for example:
-<!-- todo: rewrite as passive to reduce the use of "we"/"our"? ie:
-Hence, extensions that don't follow the quality guidelines are not allowed, such as:
--->
+Microsoft is committed to delivering quality products to its customers.  Therefore, extensions which don't follow the quality guidelines aren't allowed, such as:
 
 * Content deemed not family-friendly.
 
@@ -54,7 +51,7 @@ Hence, extensions that don't follow the quality guidelines are not allowed, such
 <!-- ====================================================================== -->
 ## 1. Product policies
 
-<!-- todo: add content between headings if corp-level style guide applies here -->
+<!-- todo: add content between headings -->
 
 
 <!-- ------------------------------ -->
@@ -310,12 +307,12 @@ Your extension must respect system settings for notifications. Any presentation 
 
 If the user disables notifications, either on a product-specific or system-wide basis, then your extension must adhere to the user's notification settings and remain functional even though notifications may be disabled.
 
-Also, you will be receiving notifications related to your accounts, including but not limited to, login attempts, account changes, and security alerts. Hence, please ensure to verify your accounts through a secure and approved method to ensure the security of your accounts and the add-ons you submit.
+You'll be receiving notifications related to your accounts, including but not limited to, login attempts, account changes, and security alerts.  To ensure the security of your accounts and the add-ons you submit, verify your accounts through a secure and approved method.
 
 
 ###### 1.9.1 General guidance
 
-Notifications provided through WNS or MPNS are considered product content and are subject to all Add-ons Catalog Developer Policies.
+Notifications provided through WNS or MPNS are considered product content and are subject to all Microsoft Edge Add-ons store developer policies.
 
 
 ###### 1.9.2 Ownership of notifications
@@ -330,7 +327,7 @@ You must not include in a notification any information users may reasonably cons
 
 ###### 1.9.4 Purpose of notifications
 
-Notifications sent from your extension must relate to that extension or to other extensions you publish in Microsoft Edge Add-ons store and must not include promotional messages of any kind that aren't related to your extensions.
+Notifications sent from your extension must relate to that extension or to other extensions you publish in the Microsoft Edge Add-ons store, and must not include promotional messages of any kind that aren't related to your extensions.
 
 
 <!-- ------------------------------ -->
@@ -378,7 +375,7 @@ If your extension is directed at children under the age of 13, as defined in the
 <!-- ====================================================================== -->
 ## 2 Content policies
 
-The following policies apply to content and metadata (including publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata) offered for distribution in Microsoft Edge Add-ons.
+The following policies apply to content and metadata (including publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata) offered for distribution in the Microsoft Edge Add-ons store.
 
 Content means the images, sounds, videos, and text contained in your extension, the tiles, notifications, error messages, or ads exposed through your extension, and anything delivered from a server or to which your extension connects.
 
@@ -386,13 +383,9 @@ Because extensions and Microsoft Edge Add-ons are used around the world, these r
 
 
 <!-- ------------------------------ -->
-#### 2.1 Content requirements for listing in the Microsoft Edge add-ons catalog
-<!-- todo: change to just:
 #### 2.1 Content requirements
-b/c the entire article is requirements for listing in the Microsoft Edge add-ons catalog; this section is specifically about content requirements for that
--->
 
-Your extension and metadata you submit should not contain mature, explicit, or otherwise inappropriate content.
+For your extension to be listed in the Microsoft Edge Add-ons store, your extension and metadata you submit should not contain mature, explicit, or otherwise inappropriate content.
 
 This includes content that is:
 * Discriminatory, hateful, or offensive.
@@ -400,7 +393,7 @@ This includes content that is:
 * Misleading or fraudulent.
 * Spam or malware.
 
-Examples of specific types of content that would be considered inappropriate for Edge add-ons include:
+Examples of specific types of content that would be considered inappropriate for Microsoft Edge Add-ons include:
 * Pornography or nudity.
 * Hate speech or symbols.
 * Violence or gore.
@@ -410,7 +403,7 @@ Examples of specific types of content that would be considered inappropriate for
 * Misleading or fraudulent claims.
 * Spam or malware.
 
-The above list of inappropriate content is not exhaustive. Edge add-ons store may reject or remove any extension that they deem to be inappropriate, even if it does not violate any specific policy.
+The above list of inappropriate content is not exhaustive.  The Microsoft Edge Add-ons store may reject or remove any extension that they deem to be inappropriate, even if it does not violate any specific policy.
 
 An extension that doesn't meet the requirements for Microsoft Edge Add-ons store listings may be rejected or promptly removed.
 
@@ -533,7 +526,7 @@ Content that is offensive in any country or region to which your extension is ta
 
 When you submit your extension to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), you must indicate whether your extension displays content that should be marked "Mature".  When determining the rating for your extension, consider all the content in your app, including user generated content and ads, and to the content that your extension links.  If you indicate that your extension doesn't contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.
 
-Regardless of the rating given to your extension, it must still adhere to all the content requirements of Microsoft Edge Add-ons Developer policies.
+Regardless of the rating given to your extension, it must still adhere to all the content requirements of the Microsoft Edge Add-ons store developer policies.
 
 
 ###### 2.12.2 Ratings change
@@ -548,13 +541,13 @@ If you submit a promotional video in the listing, it should follow all the conte
 
 
 <!-- ====================================================================== -->
-## Complaint and appeal process for Microsoft Edge add-ons certification 
+## Complaint and appeal process for Microsoft Edge Add-ons certification 
 
-All the extensions should adhere to the store policies listed above. If your extension failed in the review process, please review the store policies to understand the reason for failure. After submitting your extension using Partner Center, to ask a question about the review or certification status of it, go to [New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) and complete the form.
+All extensions must adhere to the store policies listed above.  If your extension failed in the review process, review the store policies to understand the reason for failure.  After submitting your extension using Partner Center, to ask a question about the review or certification status of it, go to [New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) and complete the form.
 
 
 <!-- ------------------------------ -->
-#### Appeal statistics for Microsoft Edge add-ons for FY2022
+#### Appeal statistics for Microsoft Edge Add-ons for FY2022
 
 | Statistic                                                             | Count     |
 |-----------------------------------------------------------------------|-----------|
