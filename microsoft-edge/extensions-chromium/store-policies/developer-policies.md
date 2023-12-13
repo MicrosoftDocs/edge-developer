@@ -11,7 +11,7 @@ ms.date: 12/13/2023
 
 Thank you<!-- todo: go easy on "thank you", per corp-level style guide --> for your interest in developing extensions for the Microsoft Edge Add-ons store.  The Microsoft Edge Add-ons store developer policies (Add-ons store developer policies) apply to your extensions, including your submission of extensions through [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and the provision of such extensions through the Microsoft Edge Add-ons.
 
-The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons website_.  The _Microsoft Edge Add-ons store developer policies_ are also called the _Microsoft Edge Add-ons website developer policies_.
+The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons website_.
 
 
 <!-- ====================================================================== -->
