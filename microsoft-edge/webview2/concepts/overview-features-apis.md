@@ -77,7 +77,7 @@ See also:
 <!-- ====================================================================== -->
 ## Web/native interop
 
-The Microsoft Edge WebView2 control lets you embed web content into native applications. You can communicate between native code and web code using simple messages, JavaScript code, and native objects. 
+The Microsoft Edge WebView2 control lets you embed web content into native applications. You can communicate between native code and web code using simple messages, JavaScript code, and native objects.
 
 Some common use cases include:
 *  Update the native host window title after navigating to a different website.
@@ -136,7 +136,7 @@ Host objects can be projected into JavaScript, so that you can call native objec
 <!-- ------------------------------ -->
 #### Script execution
 
-Allows host app to add JavaScript in the web content within the WebView2 control. 
+Allows host app to add JavaScript in the web content within the WebView2 control.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -566,7 +566,7 @@ See also:
    * [CoreWebView2Frame.PermissionRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.permissionrequested)
 * [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
 * `CoreWebView2PermissionRequestedEventArgs` Class:
-   * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.savesinprofile)   
+   * [CoreWebView2PermissionRequestedEventArgs.SavesInProfile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.savesinprofile)
 * [CoreWebView2PermissionSetting Class](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting)
    * [CoreWebView2PermissionSetting.PermissionKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting.permissionkind)
    * [CoreWebView2PermissionSetting.PermissionOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionsetting.permissionorigin)
@@ -624,7 +624,7 @@ See also:
 <!-- ------------------------------ -->
 #### Context menus
 
-The WebView2 control provides a default context menu (right-click menu) which you can customize or disable, and you can also create your own context menu. 
+The WebView2 control provides a default context menu (right-click menu) which you can customize or disable, and you can also create your own context menu.
 
 See also:
 * [Customize context menus in WebView2](../how-to/context-menus.md)
@@ -674,7 +674,7 @@ See also:
 <!-- ------------------------------ -->
 #### Status bar
 
-A status bar is located in the bottom left of the page and displays the state of the webpage being displayed. In WebView2 you can enable/disable the status bar, get the text in the status bar, and find out when the status bar text has changed. 
+A status bar is located in the bottom left of the page and displays the state of the webpage being displayed. In WebView2 you can enable/disable the status bar, get the text in the status bar, and find out when the status bar text has changed.
 
 <!--
 See also:
@@ -779,7 +779,7 @@ Your app can mute and unmute all audio, and find out when audio is playing.
    * [CoreWebView2.IsMutedChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.ismutedchanged)
    * [CoreWebView2.IsDocumentPlayingAudio Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.isdocumentplayingaudio)
    * [CoreWebView2.IsMuted Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.ismuted)
-   
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
@@ -787,7 +787,7 @@ Your app can mute and unmute all audio, and find out when audio is playing.
    * [CoreWebView2.IsMutedChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#ismutedchanged)
    * [CoreWebView2.IsDocumentPlayingAudio Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#isdocumentplayingaudio)
    * [CoreWebView2.IsMuted Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#ismuted)
-   
+
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2_8` interface:
@@ -1027,7 +1027,7 @@ Your app can detect when the title of the current top-level document has changed
 ---
 
 <!-- ------------------------------ -->
-#### Favicon 
+#### Favicon
 
 In WebView2, you can set a [Favicon](https://developer.mozilla.org/docs/Glossary/Favicon) for a website, or get notified when it changes.
 
@@ -1036,13 +1036,13 @@ In WebView2, you can set a [Favicon](https://developer.mozilla.org/docs/Glossary
 * `CoreWebView2` Class:
    * [CoreWebView2.FaviconChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconchanged)
    * [CoreWebView2.FaviconUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconuri)
- 
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
    * [CoreWebView2.FaviconChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#faviconchanged)
    * [CoreWebView2.FaviconUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#faviconuri)
- 
+
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2_15` interface:
@@ -1064,7 +1064,7 @@ In WebView2, you can set a [Favicon](https://developer.mozilla.org/docs/Glossary
 <!-- from RelNotes 111 -->
 Tracking prevention enables the host app to control the level of tracking prevention of the WebView2 control that's associated with the user profile.
 
-<!-- 
+<!--
 there's not a regular article about tracking prevention, to cross-link
 See also:
 * []()
@@ -1351,7 +1351,7 @@ The history methods allow back and forward navigation in WebView2, and the histo
 <!-- ------------------------------ -->
 #### Navigation kind
 
-`NavigationKind` gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document. 
+`NavigationKind` gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1538,7 +1538,7 @@ The `CustomSchemeRegistration` allows registration of custom schemes in WebView2
 * `ICoreWebView2EnvironmentOptions4` interface:
    * [ICoreWebView2EnvironmentOptions4::GetCustomSchemeRegistrations method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4#getcustomschemeregistrations)
    * [ICoreWebView2EnvironmentOptions4::SetCustomSchemeRegistrations method](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions4#setcustomschemeregistrations)
-   
+
 ---
 
 
@@ -1549,7 +1549,7 @@ In WebView2, you can use the Client Certificate API to select the client certifi
 *  Display a UI to the user, if desired.
 *  Replace the default client certificate dialog prompt.
 *  Programmatically query the certificates.
-*  Select a certificate from the list to respond to the server, when WebView2 is making a request to an HTTP server that needs a client certificate for HTTP authentication. 
+*  Select a certificate from the list to respond to the server, when WebView2 is making a request to an HTTP server that needs a client certificate for HTTP authentication.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1579,7 +1579,7 @@ In WebView2, you can use the Client Certificate API to select the client certifi
 <!-- ------------------------------ -->
 #### Server certificates
 
-In WebView2, you can use the Server Certificate API to trust the server's TLS certificate at the application level.  This way, your host app can render the page without prompting the user about the TLS error, or your host app can automatically cancel the request. 
+In WebView2, you can use the Server Certificate API to trust the server's TLS certificate at the application level.  This way, your host app can render the page without prompting the user about the TLS error, or your host app can automatically cancel the request.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2310,7 +2310,7 @@ Analyze and debug performance, handle performance-related events, and manage mem
    * [CoreWebView2.TrySuspendAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
    * [CoreWebView2.IsSuspended Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
    * [CoreWebView2.Resume Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
-   * [CoreWebView2.OpenTaskManagerWindow Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow) 
+   * [CoreWebView2.OpenTaskManagerWindow Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -2523,7 +2523,7 @@ The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snap
     * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.associatedframeinfos)
     * [CoreWebView2ProcessExtendedInfo.ProcessInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.processinfo)
 
-* `CoreWebView2` Class:   
+* `CoreWebView2` Class:
     * [CoreWebView2.FrameId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.frameid)
 
 * `CoreWebView2Frame` Class:
@@ -2622,13 +2622,11 @@ Added support for managing profile deletion:
     * [CoreWebView2Profile.Delete Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.delete)
     * [CoreWebView2Profile.Deleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.deleted)
 
-
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Profile` Class:
     * [CoreWebView2Profile.Delete Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#delete)
     * [CoreWebView2Profile.Deleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#deleted)
-  
 
 ##### [Win32/C++](#tab/win32cpp)
 
