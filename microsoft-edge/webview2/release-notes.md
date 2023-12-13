@@ -479,6 +479,22 @@ view=true#get_isnonclientregionsupportenabled)
 
 ---
 
+<!-- ---------- -->
+* Adds the new `CoreWebView2.CreateFromComICoreWebView2` function for wrapping an existing `ICoreWebView2` object in a `CoreWebView2` to allow .NET devs to interact with a control (like the Unity Hololens WebView2 control) built in C++.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+* `CoreWebView2` Class:
+    * [CoreWebView2.CreateFromComICoreWebView2Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+N/A
+
+##### [Win32/C++](#tab/win32cpp)
+
+N/A
+
+---
 
 <!-- ------------------------------ -->
 #### Promotions
