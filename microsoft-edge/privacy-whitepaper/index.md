@@ -403,7 +403,7 @@ When the site you are on has access to your location, Microsoft Edge shows a loc
 
 Microsoft Edge doesn't collect or store the location data that is shared with the site, and generates a new random identifier for each request.
 
-**InPrivate** browsing uses the location permission settings of the browser profile from which the **InPrivate** session was launched. **Guest** mode always asks you for permission before granting a site access to your precise location.
+**InPrivate** browsing and **Guest** mode always ask you for permission before granting a site access to your precise location.
 
 
 <!-- ====================================================================== -->
