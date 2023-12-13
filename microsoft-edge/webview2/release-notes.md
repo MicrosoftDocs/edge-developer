@@ -350,7 +350,6 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
     * [ICoreWebView2FrameInfo2::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_frameid)<!--no put-->
     * [ICoreWebView2FrameInfo2::get_FrameKind](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_framekind)<!--no put-->
     * [ICoreWebView2FrameInfo2::get_ParentFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#get_parentframeinfo)<!--no put-->
-    * [ICoreWebView2FrameInfo2::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-1.0.2261-prerelease&preserve-view=true#invoke)<!-- todo: no "Invoke" member near https://review.learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2?view=webview2-win32-preview&branch=pr-en-us-76 - for WinRT, no Invoke member, either: https://review.learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo?view=webview2-winrt-preview&branch=pr-en-us-46 -->
 
 * [COREWEBVIEW2_FRAME_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2261-prerelease&preserve-view=true#corewebview2_frame_kind)
 
@@ -388,7 +387,6 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 * [CoreWebView2ExecuteScriptResult Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2executescriptresult?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true)
     * [CoreWebView2ExecuteScriptResult.Exception Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2executescriptresult?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#exception)
-    * [CoreWebView2ExecuteScriptResult.FrameId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2executescriptresult?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#frameid)<!--todo: FrameId is not listed in Ref docs, delete it? https://review.learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2executescriptresult?view=webview2-winrt-preview&branch=pr-en-us-46 -->
     * [CoreWebView2ExecuteScriptResult.ResultAsJson Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2executescriptresult?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#resultasjson)
     * [CoreWebView2ExecuteScriptResult.Succeeded Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2executescriptresult?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#succeeded)
     * [CoreWebView2ExecuteScriptResult.TryGetResultAsString Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2executescriptresult?view=webview2-winrt-1.0.2261-prerelease&preserve-view=true#trygetresultasstring)
