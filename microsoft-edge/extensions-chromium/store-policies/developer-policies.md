@@ -27,8 +27,6 @@ A few principles to get you started:
 
 Adhering to the Microsoft Edge Add-ons store developer policies helps you make choices that enhance the appeal and audience of your extension.
 
-Your extensions are crucial to the experience of hundreds of millions of users.  We look forward to experiencing what you create and are thrilled to help deliver your extensions to the world.<!-- todo: delete paragraph?  not a principle, not essential, not substantive - fits better in Intro section.  focuses on "we in relation to you", not on technology or policies -->
-
 
 <!-- ====================================================================== -->
 ## Building quality products
