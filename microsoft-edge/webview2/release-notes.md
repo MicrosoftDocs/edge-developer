@@ -479,23 +479,6 @@ view=true#get_isnonclientregionsupportenabled)
 
 ---
 
-<!-- ---------- -->
-* Adds the new `CoreWebView2.CreateFromComICoreWebView2` function for wrapping an existing `ICoreWebView2` object in a `CoreWebView2` to allow .NET devs to interact with a control (like the Unity Hololens WebView2 control) built in C++.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-* `CoreWebView2` Class:
-    * [CoreWebView2.CreateFromComICoreWebView2Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-N/A
-
-##### [Win32/C++](#tab/win32cpp)
-
-N/A
-
----
-
 <!-- ------------------------------ -->
 #### Promotions
 
@@ -664,6 +647,23 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
     * [ICoreWebView2ScriptException::get_Message](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2261-prerelease&preserve-view=true#get_message)<!--no put-->
     * [ICoreWebView2ScriptException::get_Name](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2261-prerelease&preserve-view=true#get_name)<!--no put-->
     * [ICoreWebView2ScriptException::get_ToJson](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2261-prerelease&preserve-view=true#get_tojson)<!--no put-->
+
+---
+
+<!-- ---------- -->
+* Adds the new `CoreWebView2.CreateFromComICoreWebView2` function for wrapping an existing `ICoreWebView2` object in a `CoreWebView2` to allow .NET devs to interact with an control created in C++.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+* `CoreWebView2` Class:
+    * [CoreWebView2.CreateFromComICoreWebView2Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+N/A
+
+##### [Win32/C++](#tab/win32cpp)
+
+N/A
 
 ---
 
