@@ -473,8 +473,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 * [ICoreWebView2ExperimentalRegionRectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalregionrectcollectionview?view=webview2-1.0.2261-prerelease&preserve-view=true)<!-- collection type in Win32 only -->
 
 * [ICoreWebView2ExperimentalSettings8](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-view=true)<!-- new type/link in Win32 only -->
-   * [ICoreWebView2ExperimentalSettings8::get_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-
-view=true#get_isnonclientregionsupportenabled)
+   * [ICoreWebView2ExperimentalSettings8::get_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-view=true#get_isnonclientregionsupportenabled)
    * [ICoreWebView2ExperimentalSettings8::put_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings8?view=webview2-1.0.2261-prerelease&preserve-view=true#put_isnonclientregionsupportenabled)
 
 ---
@@ -655,6 +654,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 * The `CoreWebView2.CreateFromComICoreWebView2` method wraps an existing `ICoreWebView2` object in a `CoreWebView2` instance, to enable .NET developers to interact with an control that was created in C++.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: test links -->
 
 * `CoreWebView2` Class:
     * [CoreWebView2.CreateFromComICoreWebView2Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
