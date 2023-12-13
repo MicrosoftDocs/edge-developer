@@ -596,7 +596,6 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- todo: test links -->
 
 * `CoreWebView2` Class:
-    * [CoreWebView2.CreateFromComICoreWebView2 Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)<!--todo: check if exists; delete?-->
     * [CoreWebView2.ExecuteScriptWithResultAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.executescriptwithresultasync?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
 
 * [CoreWebView2ExecuteScriptResult Class](/dotnet/api/microsoft.web.webview2.core.corewebview2executescriptresult?view=webview2-dotnet-1.0.2261-prerelease&preserve-view=true)
