@@ -16,11 +16,9 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [accessibilityFeatures](https://developer.chrome.com/docs/extensions/reference/api/accessibilityFeatures) | todo: supported?  Manages Chrome's accessibility features. | MV2+ |
 | [action](https://developer.chrome.com/docs/extensions/reference/api/action) | todo: supported?  Controls the extension's icon in the browser's toolbar. | MV3+ |
 | [alarms](https://developer.chrome.com/docs/extensions/reference/api/alarms) | Schedules code to run periodically or at a specified time in the future. | MV2+ |
-| [audio](https://developer.chrome.com/docs/extensions/reference/api/audio) | todo: supported?  Allows users to get information about and control the audio devices attached to the system.  This API is currently only available in kiosk mode for ChromeOS. | MV2+.  ChromeOS only. |
 | [bookmarks](https://developer.chrome.com/docs/extensions/reference/api/bookmarks) | Creates, organizes, and manipulates bookmarks. | MV2+ |
 | [browserAction](https://developer.chrome.com/docs/extensions/mv2/reference/browserAction) | Uses browser actions to place icons on the toolbar in Microsoft Edge. You can also use browser actions to add a tooltip, badge, or popup.  todo: This API exists for Manifest V2 only, not Manifest V3. | MV2 only |
 | [browsingData](https://developer.chrome.com/docs/extensions/reference/api/browsingData) | Removes browsing data from a user's local profile. | MV2+ |
-| [certificateProvider](https://developer.chrome.com/docs/extensions/reference/api/certificateProvider) | todo: supported?  Exposes certificates to the platform, which can use these certificates for TLS authentications. | MV2+.  ChromeOS only. |
 | [commands](https://developer.chrome.com/docs/extensions/reference/api/commands) | Adds keyboard shortcuts that trigger actions in your extension, such as an action to open the browser or send a command to the extension. | MV2+ |
 | [contentSettings](https://developer.chrome.com/docs/extensions/reference/api/contentSettings) | Customizes the behavior of Microsoft Edge on each site, instead of globally. Changes settings that control whether websites can use features such as cookies, JavaScript, and plugins. | MV2+ |
 | [contextMenus](https://developer.chrome.com/docs/extensions/reference/api/contextMenus) | Adds items to the context menu (right-click menu) in Microsoft Edge.  Menu items can apply to different objects, such as images, hyperlinks, and pages. | MV2+ |
@@ -32,27 +30,19 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [devtools.inspectedWindow](https://developer.chrome.com/docs/extensions/reference/api/devtools/inspectedWindow) | Interacts with the inspected window.  For example, obtains the tab ID of pages, evaluate code, refresh pages, or obtain resources on a page. | MV2+ |
 | [devtools.network](https://developer.chrome.com/docs/extensions/reference/api/devtools/network) | Retrieves information about network requests that are displayed by the DevTools **Network** tool. | MV2+ |
 | [devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels) | Integrates your extension into the Developer Tools window UI by creating your own panels, accessing existing panels, or adding sidebars. | MV2+ |
-| [devtools.recorder](https://developer.chrome.com/docs/extensions/reference/api/devtools/recorder) | todo: supported? (probably not.)  Customizes the **Recorder** tool in DevTools. | MV2+.  Chrome DevTools only. |
 | [dns](https://developer.chrome.com/docs/extensions/reference/api/dns) | todo: supported?  Resolves DNS addresses. | MV2+.  Dev channel. |
-| [documentScan](https://developer.chrome.com/docs/extensions/reference/api/documentScan) | todo: supported?  Discovers and retrieves images from attached paper document scanners. | MV2+.  ChromeOS only. |
 | [dom](https://developer.chrome.com/docs/extensions/reference/api/dom) | todo: supported?  Accesses special DOM APIs for Extensions. | MV2+ |
 | [downloads](https://developer.chrome.com/docs/extensions/reference/api/downloads) | Programmatically starts, monitors, manipulates, and searches for downloads. | MV2+ |
-| [enterprise.deviceAttributes](https://developer.chrome.com/docs/extensions/reference/api/enterprise/deviceAttributes) | todo: supported?  Reads device attributes.  For extensions that are installed by enterprise policy. | MV2+.  ChromeOS only. |
 | [enterprise.hardwarePlatform](https://developer.chrome.com/docs/extensions/reference/api/enterprise/hardwarePlatform) | Gets the manufacturer and model of the hardware platform where the browser runs.  For extensions that are installed by enterprise policy. | MV2+ |
-| [enterprise.networkingAttributes](https://developer.chrome.com/docs/extensions/reference/api/enterprise/networkingAttributes) | todo: supported?  Reads information about your current network.  For extensions that are installed by enterprise policy. | MV2+.  ChromeOS only. |
-| [enterprise.platformKeys](https://developer.chrome.com/docs/extensions/reference/api/enterprise/platformKeys) | todo: supported?  Generates keys and installs certificates for them.  The certificates will be managed by the platform and can be used for TLS authentication, network access or by other extension through the [platformKeys](https://developer.chrome.com/docs/extensions/reference/api/platformKeys) API. | MV2+.  ChromeOS only. |
 | [events](https://developer.chrome.com/docs/extensions/reference/api/events) | Common types used by APIs that raise events to notify you when an interesting event occurs. | MV2+ |
 | [extension](https://developer.chrome.com/docs/extensions/reference/api/extension) | Utilities that can be used by any extension page.  Includes support for exchanging messages between an extension and its content scripts, or between extensions. | MV2+ |
 | [extensionTypes](https://developer.chrome.com/docs/extensions/reference/api/extensionTypes) | Type declarations for Microsoft Edge extensions. | MV2+ |
-| [fileBrowserHandler](https://developer.chrome.com/docs/extensions/reference/api/fileBrowserHandler) | todo: supported?  Extends the Chrome OS file browser. For example, you can use this API to enable users to upload files to your website. | MV2+.  ChromeOS only.  Foreground only. |
-| [fileSystemProvider](https://developer.chrome.com/docs/extensions/reference/api/fileSystemProvider) | todo: supported?  Creates file systems that can be accessed from the file manager on the OS. | MV2+.  ChromeOS only. |
 | [fontSettings](https://developer.chrome.com/docs/extensions/reference/api/fontSettings) | Manages font settings in Microsoft Edge. | MV2+ |
 | [history](https://developer.chrome.com/docs/extensions/reference/api/history) | Interacts with the browser's record of visited pages. You can add, remove, or query for URLs in the browser's history. To override the history page with your own version, navigate to Override Pages. | MV2+ |
 | [i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n) | Implements internationalization across your whole app or extension. | MV2+ |
-| [identity](https://developer.chrome.com/docs/extensions/reference/api/identity) | todo: supported?  Gets OAuth2 access tokens.  Not supported: [identity.getAccounts](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAccounts), [identity.getAuthToken](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAuthToken) - As an alternate, you can use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users. | MV2+ |
+| [identity](https://developer.chrome.com/docs/extensions/reference/api/identity) | todo: supported?  Gets OAuth2 access tokens.  Not supported: [identity.getAccounts](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAccounts), [identity.getAuthToken](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAuthToken) - As an alternate, you can use [identity.launchWebAuthFlow](https://developer.chrome.com/docs/extensions/reference/api/identity#method-launchWebAuthFlow) to fetch an OAuth2 token to authenticate users. | MV2+ |
 | [idle](https://developer.chrome.com/docs/extensions/reference/api/idle) | Detects when the machine's idle state changes. | MV2+ |
 | [input.ime](https://developer.chrome.com/docs/extensions/reference/api/input/ime) | todo: supported?  Implements a custom IME for the OS, allowing an extension to handle keystrokes, set the composition, and manage the candidate window. | MV2+ |
-| [loginState](https://developer.chrome.com/docs/extensions/reference/api/loginState) | todo: supported?  Reads and monitors the login state. | MV2+.  ChromeOS only. |
 | [management](https://developer.chrome.com/docs/extensions/reference/api/management) | Manages the list of installed or running extensions.  Can override the built-in New Tab page. | MV2+ |
 | [notifications](https://developer.chrome.com/docs/extensions/reference/api/notifications) | Creates rich notifications using templates and displays them in the system tray. | MV2+ |
 | [offscreen](https://developer.chrome.com/docs/extensions/reference/api/offscreen) | todo: supported?  Creates and manages offscreen documents. | MV3+ |
@@ -60,11 +50,8 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [pageAction](https://developer.chrome.com/docs/extensions/mv2/reference/pageAction) | Adds icons to the Microsoft Edge toolbar, to the right of the address bar. Page actions are actions that can be taken on the current page, and aren't applicable to all pages. Page actions appear grayed out when inactive. | MV2 only |
 | [pageCapture](https://developer.chrome.com/docs/extensions/reference/api/pageCapture) | Saves tabs as MHTML files. | MV2+ |
 | [permissions](https://developer.chrome.com/docs/extensions/reference/api/permissions) | Retrieves declared, optional permissions at runtime, instead of at install time. You can use this API to display needed and approved permissions to your users. | MV2+ |
-| [platformKeys](https://developer.chrome.com/docs/extensions/reference/api/platformKeys) | todo: supported?  Accesses client certificates that are managed by the platform.  If the user or policy grants the permission, an extension can use such a certficate in its custom authentication protocol.  For example, this allows using platform-managed certificates in third-party VPNs (see [vpnProvider](https://developer.chrome.com/docs/extensions/reference/api/vpnProvider)). | MV2+.  ChromeOS only. |
 | [power](https://developer.chrome.com/docs/extensions/reference/api/power) | Overrides the system's power management features. | MV2+ |
 | [printerProvider](https://developer.chrome.com/docs/extensions/reference/api/printerProvider) | Uses events to query printers, their capabilities, and to submit print jobs. | MV2+ |
-| [printing](https://developer.chrome.com/docs/extensions/reference/api/printing) | todo: supported?  Sends print jobs to printers installed on Chromebook. | MV2+.  ChromeOS only. |
-| [printingMetrics](https://developer.chrome.com/docs/extensions/reference/api/printingMetrics) | todo: supported?  Fetches data about printing usage. | MV2+.  ChromeOS only. |
 | [privacy](https://developer.chrome.com/docs/extensions/reference/api/privacy) | Controls features in Microsoft Edge that affects a user's privacy. This API depends on the `EdgeSetting` prototype of `types` to get and set the configuration of Microsoft Edge. | MV2+ |
 | [processes](https://developer.chrome.com/docs/extensions/reference/api/processes) | todo: supported?  Interacts with the browser's processes. | MV2+.  Dev channel. |
 | [proxy](https://developer.chrome.com/docs/extensions/reference/api/proxy) | Manages proxy settings for Microsoft Edge. This API depends on the `EdgeSetting` prototype of the `types` API to get and set the proxy configuration of Microsoft Edge. | MV2+ |
@@ -86,8 +73,6 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [ttsEngine](https://developer.chrome.com/docs/extensions/reference/api/ttsEngine) | Implements a text-to-speech (TTS) engine using an extension.  Extensions that register to use this API receive events that contain utterances to be spoken and other parameters.  Extensions can then use any available web technology to synthesize and output speech, and send events back to the calling function to report the status. | MV2+ |
 | [types](https://developer.chrome.com/docs/extensions/reference/api/types) | Type declarations for Microsoft Edge. | MV2+ |
 | [userScripts](https://developer.chrome.com/docs/extensions/reference/api/userScripts) | todo: supported?  Executes user scripts in the User Scripts context. | MV3+ |
-| [vpnProvider](https://developer.chrome.com/docs/extensions/reference/api/vpnProvider) | todo: supported?  Implements a VPN client. | MV2+.  ChromeOS only. |
-| [wallpaper](https://developer.chrome.com/docs/extensions/reference/api/wallpaper) | todo: supported?  Changes the OS wallpaper. | MV2+.  ChromeOS only. |
 | [webAuthenticationProxy](https://developer.chrome.com/docs/extensions/reference/api/webAuthenticationProxy) | todo: supported?  Lets remote desktop software that's running on a remote host intercept Web Authentication API (WebAuthn) requests in order to handle them on a local client. | MV3+ |
 | [webNavigation](https://developer.chrome.com/docs/extensions/reference/api/webNavigation) | Receives notifications about the status of navigation requests. | MV2+ |
 | [webRequest](https://developer.chrome.com/docs/extensions/reference/api/webRequest) | Observes and analyzes traffic.  Intercepts, blocks, or modifies requests. | MV2+ |
@@ -97,15 +82,30 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 <!-- ====================================================================== -->
 ## Unsupported extension APIs
 
-Microsoft Edge doesn't support the following Extension APIs:
+These Extensions APIs are not supported for Microsoft Edge.
 
-<!-- todo: move Chrome-only rows to here, convert section to table -->
-
-* [gcm](https://developer.chrome.com/docs/extensions/reference/api/gcm)
-* [identity.getAccounts](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAccounts)
-* [identity.getAuthToken](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAuthToken) - As an alternate, you can use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.
-* [instanceID](https://developer.chrome.com/docs/extensions/reference/api/instanceID)
-* [readingList](https://developer.chrome.com/docs/extensions/reference/api/readingList)<!-- Pending.  MV3+ -->
+| API | Description | Manifest versions |
+|---|---|---|
+| [audio](https://developer.chrome.com/docs/extensions/reference/api/audio) | todo: supported?  Allows users to get information about and control the audio devices attached to the system.  This API is currently only available in kiosk mode for ChromeOS. | MV2+.  ChromeOS only. |
+| [certificateProvider](https://developer.chrome.com/docs/extensions/reference/api/certificateProvider) | todo: supported?  Exposes certificates to the platform, which can use these certificates for TLS authentications. | MV2+.  ChromeOS only. |
+| [devtools.recorder](https://developer.chrome.com/docs/extensions/reference/api/devtools/recorder) | todo: supported? (probably not.)  Customizes the **Recorder** tool in DevTools. | MV2+.  Chrome DevTools only. |
+| [documentScan](https://developer.chrome.com/docs/extensions/reference/api/documentScan) | todo: supported?  Discovers and retrieves images from attached paper document scanners. | MV2+.  ChromeOS only. |
+| [enterprise.deviceAttributes](https://developer.chrome.com/docs/extensions/reference/api/enterprise/deviceAttributes) | todo: supported?  Reads device attributes.  For extensions that are installed by enterprise policy. | MV2+.  ChromeOS only. |
+| [enterprise.networkingAttributes](https://developer.chrome.com/docs/extensions/reference/api/enterprise/networkingAttributes) | todo: supported?  Reads information about your current network.  For extensions that are installed by enterprise policy. | MV2+.  ChromeOS only. |
+| [enterprise.platformKeys](https://developer.chrome.com/docs/extensions/reference/api/enterprise/platformKeys) | todo: supported?  Generates keys and installs certificates for them.  The certificates will be managed by the platform and can be used for TLS authentication, network access or by other extension through the [platformKeys](https://developer.chrome.com/docs/extensions/reference/api/platformKeys) API. | MV2+.  ChromeOS only. |
+| [fileBrowserHandler](https://developer.chrome.com/docs/extensions/reference/api/fileBrowserHandler) | todo: supported?  Extends the Chrome OS file browser. For example, you can use this API to enable users to upload files to your website. | MV2+.  ChromeOS only.  Foreground only. |
+| [fileSystemProvider](https://developer.chrome.com/docs/extensions/reference/api/fileSystemProvider) | todo: supported?  Creates file systems that can be accessed from the file manager on the OS. | MV2+.  ChromeOS only. |
+| [gcm](https://developer.chrome.com/docs/extensions/reference/api/gcm) | Enables apps and extensions to send and receive messages through Firebase Cloud Messaging (FCM). | MV2+ |
+| [identity.getAccounts](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAccounts) | Retrieves a list of `AccountInfo` objects describing the accounts present on the profile. | MV2+.  Dev channel only. |
+| [identity.getAuthToken](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAuthToken) | Gets an OAuth2 access token using the client ID and scopes specified in the oauth2 section of `manifest.json`. | MV2+.  As an alternate, you can use [identity.launchWebAuthFlow](https://developer.chrome.com/docs/extensions/reference/api/identity#method-launchWebAuthFlow) to fetch an OAuth2 token to authenticate users. |
+| [instanceID](https://developer.chrome.com/docs/extensions/reference/api/instanceID) | Accesses the Instance ID service. | MV2+ |
+| [loginState](https://developer.chrome.com/docs/extensions/reference/api/loginState) | todo: supported?  Reads and monitors the login state. | MV2+.  ChromeOS only. |
+| [platformKeys](https://developer.chrome.com/docs/extensions/reference/api/platformKeys) | todo: supported?  Accesses client certificates that are managed by the platform.  If the user or policy grants the permission, an extension can use such a certficate in its custom authentication protocol.  For example, this allows using platform-managed certificates in third-party VPNs (see [vpnProvider](https://developer.chrome.com/docs/extensions/reference/api/vpnProvider)). | MV2+.  ChromeOS only. |
+| [printing](https://developer.chrome.com/docs/extensions/reference/api/printing) | todo: supported?  Sends print jobs to printers installed on Chromebook. | MV2+.  ChromeOS only. |
+| [printingMetrics](https://developer.chrome.com/docs/extensions/reference/api/printingMetrics) | todo: supported?  Fetches data about printing usage. | MV2+.  ChromeOS only. |
+| [readingList](https://developer.chrome.com/docs/extensions/reference/api/readingList) | Reads from and modifies the items in the Reading List. | MV3+.  Pending. |
+| [vpnProvider](https://developer.chrome.com/docs/extensions/reference/api/vpnProvider) | todo: supported?  Implements a VPN client. | MV2+.  ChromeOS only. |
+| [wallpaper](https://developer.chrome.com/docs/extensions/reference/api/wallpaper) | todo: supported?  Changes the OS wallpaper. | MV2+.  ChromeOS only. |
 
 
 <!-- ====================================================================== -->
