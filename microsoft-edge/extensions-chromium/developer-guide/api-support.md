@@ -80,32 +80,32 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 
 
 <!-- ====================================================================== -->
-## Unsupported extension APIs
+## Unsupported APIs
 
 These Extensions APIs are not supported for Microsoft Edge.
 
-| API | Description | Manifest versions |
-|---|---|---|
-| [audio](https://developer.chrome.com/docs/extensions/reference/api/audio) | todo: supported?  Allows users to get information about and control the audio devices attached to the system.  This API is currently only available in kiosk mode for ChromeOS. | MV2+.  ChromeOS only. |
-| [certificateProvider](https://developer.chrome.com/docs/extensions/reference/api/certificateProvider) | todo: supported?  Exposes certificates to the platform, which can use these certificates for TLS authentications. | MV2+.  ChromeOS only. |
-| [devtools.recorder](https://developer.chrome.com/docs/extensions/reference/api/devtools/recorder) | todo: supported? (probably not.)  Customizes the **Recorder** tool in DevTools. | MV2+.  Chrome DevTools only. |
-| [documentScan](https://developer.chrome.com/docs/extensions/reference/api/documentScan) | todo: supported?  Discovers and retrieves images from attached paper document scanners. | MV2+.  ChromeOS only. |
-| [enterprise.deviceAttributes](https://developer.chrome.com/docs/extensions/reference/api/enterprise/deviceAttributes) | todo: supported?  Reads device attributes.  For extensions that are installed by enterprise policy. | MV2+.  ChromeOS only. |
-| [enterprise.networkingAttributes](https://developer.chrome.com/docs/extensions/reference/api/enterprise/networkingAttributes) | todo: supported?  Reads information about your current network.  For extensions that are installed by enterprise policy. | MV2+.  ChromeOS only. |
-| [enterprise.platformKeys](https://developer.chrome.com/docs/extensions/reference/api/enterprise/platformKeys) | todo: supported?  Generates keys and installs certificates for them.  The certificates will be managed by the platform and can be used for TLS authentication, network access or by other extension through the [platformKeys](https://developer.chrome.com/docs/extensions/reference/api/platformKeys) API. | MV2+.  ChromeOS only. |
-| [fileBrowserHandler](https://developer.chrome.com/docs/extensions/reference/api/fileBrowserHandler) | todo: supported?  Extends the Chrome OS file browser. For example, you can use this API to enable users to upload files to your website. | MV2+.  ChromeOS only.  Foreground only. |
-| [fileSystemProvider](https://developer.chrome.com/docs/extensions/reference/api/fileSystemProvider) | todo: supported?  Creates file systems that can be accessed from the file manager on the OS. | MV2+.  ChromeOS only. |
-| [gcm](https://developer.chrome.com/docs/extensions/reference/api/gcm) | Enables apps and extensions to send and receive messages through Firebase Cloud Messaging (FCM). | MV2+ |
-| [identity.getAccounts](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAccounts) | Retrieves a list of `AccountInfo` objects describing the accounts present on the profile. | MV2+.  Dev channel only. |
-| [identity.getAuthToken](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAuthToken) | Gets an OAuth2 access token using the client ID and scopes specified in the oauth2 section of `manifest.json`. | MV2+.  As an alternate, you can use [identity.launchWebAuthFlow](https://developer.chrome.com/docs/extensions/reference/api/identity#method-launchWebAuthFlow) to fetch an OAuth2 token to authenticate users. |
-| [instanceID](https://developer.chrome.com/docs/extensions/reference/api/instanceID) | Accesses the Instance ID service. | MV2+ |
-| [loginState](https://developer.chrome.com/docs/extensions/reference/api/loginState) | todo: supported?  Reads and monitors the login state. | MV2+.  ChromeOS only. |
-| [platformKeys](https://developer.chrome.com/docs/extensions/reference/api/platformKeys) | todo: supported?  Accesses client certificates that are managed by the platform.  If the user or policy grants the permission, an extension can use such a certficate in its custom authentication protocol.  For example, this allows using platform-managed certificates in third-party VPNs (see [vpnProvider](https://developer.chrome.com/docs/extensions/reference/api/vpnProvider)). | MV2+.  ChromeOS only. |
-| [printing](https://developer.chrome.com/docs/extensions/reference/api/printing) | todo: supported?  Sends print jobs to printers installed on Chromebook. | MV2+.  ChromeOS only. |
-| [printingMetrics](https://developer.chrome.com/docs/extensions/reference/api/printingMetrics) | todo: supported?  Fetches data about printing usage. | MV2+.  ChromeOS only. |
-| [readingList](https://developer.chrome.com/docs/extensions/reference/api/readingList) | Reads from and modifies the items in the Reading List. | MV3+.  Pending. |
-| [vpnProvider](https://developer.chrome.com/docs/extensions/reference/api/vpnProvider) | todo: supported?  Implements a VPN client. | MV2+.  ChromeOS only. |
-| [wallpaper](https://developer.chrome.com/docs/extensions/reference/api/wallpaper) | todo: supported?  Changes the OS wallpaper. | MV2+.  ChromeOS only. |
+| API | Notes |
+|---|---|
+| [audio](https://developer.chrome.com/docs/extensions/reference/api/audio) | ChromeOS only. |
+| [certificateProvider](https://developer.chrome.com/docs/extensions/reference/api/certificateProvider) | ChromeOS only. |
+| [devtools.recorder](https://developer.chrome.com/docs/extensions/reference/api/devtools/recorder) | Chrome DevTools only. |
+| [documentScan](https://developer.chrome.com/docs/extensions/reference/api/documentScan) | ChromeOS only. |
+| [enterprise.deviceAttributes](https://developer.chrome.com/docs/extensions/reference/api/enterprise/deviceAttributes) | ChromeOS only. |
+| [enterprise.networkingAttributes](https://developer.chrome.com/docs/extensions/reference/api/enterprise/networkingAttributes) | ChromeOS only. |
+| [enterprise.platformKeys](https://developer.chrome.com/docs/extensions/reference/api/enterprise/platformKeys) | ChromeOS only. |
+| [fileBrowserHandler](https://developer.chrome.com/docs/extensions/reference/api/fileBrowserHandler) | ChromeOS only. |
+| [fileSystemProvider](https://developer.chrome.com/docs/extensions/reference/api/fileSystemProvider) | ChromeOS only. |
+| [gcm](https://developer.chrome.com/docs/extensions/reference/api/gcm) | |
+| [identity.getAccounts](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAccounts) | |
+| [identity.getAuthToken](https://developer.chrome.com/docs/extensions/reference/api/identity#method-getAuthToken) | Gets an OAuth2 access token using the client ID and scopes specified in the oauth2 section of `manifest.json`.  As an alternate, you can use [identity.launchWebAuthFlow](https://developer.chrome.com/docs/extensions/reference/api/identity#method-launchWebAuthFlow) to fetch an OAuth2 token to authenticate users. |
+| [instanceID](https://developer.chrome.com/docs/extensions/reference/api/instanceID) | |
+| [loginState](https://developer.chrome.com/docs/extensions/reference/api/loginState) | ChromeOS only. |
+| [platformKeys](https://developer.chrome.com/docs/extensions/reference/api/platformKeys) | ChromeOS only. |
+| [printing](https://developer.chrome.com/docs/extensions/reference/api/printing) | ChromeOS only. |
+| [printingMetrics](https://developer.chrome.com/docs/extensions/reference/api/printingMetrics) | ChromeOS only. |
+| [readingList](https://developer.chrome.com/docs/extensions/reference/api/readingList) | |
+| [vpnProvider](https://developer.chrome.com/docs/extensions/reference/api/vpnProvider) | ChromeOS only. |
+| [wallpaper](https://developer.chrome.com/docs/extensions/reference/api/wallpaper) | ChromeOS only. |
 
 
 <!-- ====================================================================== -->
