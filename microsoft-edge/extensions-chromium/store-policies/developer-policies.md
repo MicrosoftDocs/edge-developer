@@ -19,7 +19,7 @@ The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons we
 
 A few principles to get you started:
 
-* Offer unique and distinct value within your extensions for Microsoft Edge.  Provide a compelling reason to download your extensions from the Microsoft Edge Add-ons store (Microsoft Edge Add-ons).
+* Offer unique and distinct value within your extensions for Microsoft Edge.  Provide a compelling reason to download your extensions (Microsoft Edge Add-ons) from the Microsoft Edge Add-ons store.
 
 * Do not mislead users about what your extension does, who is offering it, and so on.
 
