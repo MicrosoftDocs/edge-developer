@@ -371,9 +371,11 @@ If your extension is directed at children under the age of 13, as defined in the
 <!-- ====================================================================== -->
 ## 2 Content policies
 
-The following policies apply to content and metadata (including publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata) offered for distribution in [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
+The following policies apply to content and metadata offered for distribution in [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
-Content means the images, sounds, videos, and text contained in your extension, the tiles, notifications, error messages, or ads exposed through your extension, and anything delivered from a server or to which your extension connects.
+_Content_ means the images, sounds, videos, and text contained in your extension; the tiles, notifications, error messages, or ads exposed through your extension; and anything delivered from a server, or anything to which your extension connects.
+
+_Metadata_ includes publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata.
 
 Because extensions and Microsoft Edge Add-ons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.
 
