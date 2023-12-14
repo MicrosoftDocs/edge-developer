@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 11/13/2023
+ms.date: 12/14/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -403,13 +403,13 @@ When the site you are on has access to your location, Microsoft Edge shows a loc
 
 Microsoft Edge doesn't collect or store the location data that is shared with the site, and generates a new random identifier for each request.
 
-When you browse the web **InPrivate**, **Ask** and **Block** permissions to access location are inherited from the profile you used to open the **InPrivate** window. However, **Allow** is not automatically inherited and Microsoft Edge asks for your permission again before granting the site access to your precise location. In **Guest** mode, Microsoft Edge always asks for permission before granting a site access to your precise location.
+When you browse the web using **InPrivate**, the **Ask** and **Block** permissions, which control accessing your precise location, are inherited from the profile that you used to open the **InPrivate** window. However, the **Allow** permissions are not automatically inherited, and Microsoft Edge asks for your permission again before granting the site access to your precise location.  In **Guest** mode, Microsoft Edge always asks for permission before granting a site access to your precise location.
 
 
 <!-- ====================================================================== -->
 ## Image descriptions
 
-When browsing the web in Microsoft Edge, screen reader users may encounter images that are not annotated with alt text. Without alt text to describe these images, they are effectively invisible to screen reader users. When Image Descriptions is turned on, Microsoft Edge will detect these images without alt text and send them to Azure Cognitive Services to generate captions. The generated captions are then announced to screen reader users. Even when **Get image descriptions from Microsoft for screen readers** is turned on, images are only sent to the service when a screen reader (or other assistive technology) is connected to Microsoft Edge. 
+When browsing the web in Microsoft Edge, screen reader users may encounter images that are not annotated with alt text. Without alt text to describe these images, they are effectively invisible to screen reader users. When Image Descriptions is turned on, Microsoft Edge will detect these images without alt text and send them to Azure Cognitive Services to generate captions. The generated captions are then announced to screen reader users. Even when **Get image descriptions from Microsoft for screen readers** is turned on, images are only sent to the service when a screen reader (or other assistive technology) is connected to Microsoft Edge.
 
 Only raw image data is sent to Azure Cognitive Services. Images are sent un-encrypted, to reduce latency. No user identifiers are included in the requests to the service. Images aren't stored or saved on Microsoft servers; images are discarded immediately after the captions are generated.
 
