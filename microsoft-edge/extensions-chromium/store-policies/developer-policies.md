@@ -5,11 +5,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/13/2023
+ms.date: 12/14/2023
 ---
 # Microsoft Edge Add-ons store developer policies
 
-To develop an extension to be published through the Microsoft Edge Add-ons store, follow these Microsoft Edge Add-ons store developer policies (_Add-ons store developer policies_), which apply to submitting extensions through [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and providing extensions through the Microsoft Edge Add-ons store.
+To develop an extension to be published through the Microsoft Edge Add-ons store, follow these Microsoft Edge Add-ons store developer policies (_Add-ons store developer policies_), which apply to submitting extensions through [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and providing extensions through the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) store.
 
 The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons website_.
 
@@ -48,8 +48,6 @@ Microsoft is committed to delivering quality products to its customers.  Therefo
 
 <!-- ====================================================================== -->
 ## 1. Product policies
-
-<!-- todo: add content between headings -->
 
 
 <!-- ------------------------------ -->
@@ -103,7 +101,7 @@ Extensions with obfuscated code aren't allowed.  This includes code within your 
 
 ###### 1.1.8 Altering browser settings
 
-Your extension must not, without appropriate user consent, alter, or appear to alter, browser functionality or settings including, but not limited to: the address bar search provider and suggestions, the start or home page, the new tab page, and adding or removing favorite.
+Your extension must not, without appropriate user consent, alter, or appear to alter, browser functionality or settings including, but not limited to: the address bar search provider and suggestions, the start or home page, the new tab page, and adding or removing favorites.
 
 Any changes made to the device settings must be done with the user's knowledge and consent and must be easily reversible by the user.
 
@@ -139,7 +137,7 @@ If you make any changes to your extension beyond the described functionality, an
 
 Your extension must not contain or enable malware that may harm the operation of the network, servers, and infrastructure of Microsoft or any third parties. Spyware, malicious scripts, and phishing scams are also prohibited.
 
-Your extension must comply with the Microsoft criteria for unwanted and malicious software, listed in [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria).
+Your extension must comply with the Microsoft criteria for Unwanted and Malicious Software, listed in [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria).
 
 
 ###### 1.2.3 Dependency on other software
@@ -305,7 +303,7 @@ Your extension must respect system settings for notifications. Any presentation 
 
 If the user disables notifications, either on a product-specific or system-wide basis, then your extension must adhere to the user's notification settings and remain functional even though notifications may be disabled.
 
-You'll be receiving notifications related to your accounts, including but not limited to, login attempts, account changes, and security alerts.  To ensure the security of your accounts and the add-ons you submit, verify your accounts through a secure and approved method.
+Also, you'll be receiving notifications related to your accounts, including but not limited to, login attempts, account changes, and security alerts.  To ensure the security of your accounts and the add-ons you submit, verify your accounts through a secure and approved method.
 
 
 ###### 1.9.1 General guidance
@@ -373,7 +371,7 @@ If your extension is directed at children under the age of 13, as defined in the
 <!-- ====================================================================== -->
 ## 2 Content policies
 
-The following policies apply to content and metadata (including publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata) offered for distribution in the Microsoft Edge Add-ons store.
+The following policies apply to content and metadata (including publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata) offered for distribution in [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
 Content means the images, sounds, videos, and text contained in your extension, the tiles, notifications, error messages, or ads exposed through your extension, and anything delivered from a server or to which your extension connects.
 
@@ -391,7 +389,7 @@ This includes content that is:
 * Misleading or fraudulent.
 * Spam or malware.
 
-Examples of specific types of content that would be considered inappropriate for Microsoft Edge Add-ons include:
+Examples of specific types of content that would be considered inappropriate for Edge Add-ons include:
 * Pornography or nudity.
 * Hate speech or symbols.
 * Violence or gore.
@@ -418,8 +416,6 @@ If not created or appropriately licensed, a disclaimer should be added stating t
 
 <!-- ------------------------------ -->
 #### 2.3 Risk of harm
-
-<!-- todo: add content between headings if corp-level style guide applies here -->
 
 
 ###### 2.3.1 Requirements
@@ -515,8 +511,6 @@ Content that is offensive in any country or region to which your extension is ta
 <!-- ------------------------------ -->
 #### 2.12 Age ratings
 
-<!-- todo: add content between headings -->
-
 
 ###### 2.12.1 Mature content
 
@@ -533,7 +527,7 @@ If your extension provides content (such as user-generated, retail, or other web
 <!-- ------------------------------ -->
 #### 2.13 Videos
 
-If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are turned off for the specific videos that you want to embed.  For more information on turning on or off ads on YouTube, see [YouTube advertising formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
+If you submit a promotional video in the listing, then it should strictly adhere to our content guidelines.  If you choose to provide a YouTube link, you must ensure that advertisements are turned off for the specific videos that you want to embed.  For more information on turning on or off ads on YouTube, see [YouTube advertising formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
 
 
 <!-- ====================================================================== -->
