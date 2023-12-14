@@ -461,10 +461,8 @@ Your extension and associated data must not contain any content that facilitates
 
 Your extension and associated data must not contain or display content that a reasonable person would consider pornographic or sexually explicit.
 
-For example, we don't allow content that contains nudity, graphic sex acts, sexually explicit material, or content that drives traffic to a pornography site.
-<!-- todo: reduce "we"; eg:
-For example, content is not allowed that contains nudity, graphic sex acts, sexually explicit material, or content that drives traffic to a pornography site.
--->
+For example, content is not allowed that contains nudity, graphic sex acts, or sexually explicit material, or that drives traffic to a pornography site.
+
 
 <!-- ------------------------------ -->
 #### 2.8 Prohibited content, services, and activity
@@ -517,7 +515,7 @@ Content that is offensive in any country or region to which your extension is ta
 <!-- ------------------------------ -->
 #### 2.12 Age ratings
 
-<!-- todo: add content between headings if corp-level style guide applies here -->
+<!-- todo: add content between headings -->
 
 
 ###### 2.12.1 Mature content
