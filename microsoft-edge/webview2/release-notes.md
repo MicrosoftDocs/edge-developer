@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 12/13/2023
+ms.date: 12/14/2023
 ---
 # Release Notes for the WebView2 SDK
 
@@ -375,7 +375,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 <!-- todo: Version # TBD; update throughout section -->
 
-Release Date: December 13, 2023<!-- todo: finalize date -->
+Release Date: December 14, 2023<!-- todo: finalize date -->
 
 [NuGet package for WebView2 SDK 121.0.2261-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2261-prerelease)
 
@@ -651,7 +651,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ---------- -->
-* The `CoreWebView2.CreateFromComICoreWebView2` method wraps an existing `ICoreWebView2` object in a `CoreWebView2` instance, to enable .NET developers to interact with an control that was created in C++.
+* The `CoreWebView2.CreateFromComICoreWebView2` method wraps an existing `ICoreWebView2` object in a `CoreWebView2` instance, to enable .NET developers to interact with a control that was created in C++.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
