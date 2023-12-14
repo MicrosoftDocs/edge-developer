@@ -411,9 +411,9 @@ An extension that doesn't meet the requirements for Microsoft Edge Add-ons store
 
 All content in your extension and associated metadata must be originally created by you or appropriately licensed from a rights holder and must be used only as permitted by the rights holder or as otherwise permitted by law.
 
-The content must reference Microsoft trademarks only to the extent necessary and should not modify or alter the trademarks in any way.
+The content must reference Microsoft trademarks only to the extent necessary, and should not modify or alter the trademarks in any way.
 
-If not created or appropriately licensed, a disclaimer should be added stating the same
+If not created or appropriately licensed, a disclaimer should be added stating the same.
 
 
 <!-- ------------------------------ -->
