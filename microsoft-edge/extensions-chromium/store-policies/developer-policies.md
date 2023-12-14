@@ -132,14 +132,14 @@ In general, your extension must not jeopardize or compromise user security, or t
 
 ###### 1.2.1 Content security policies
 
-If you make any changes to your extension beyond the described functionality, any changes to code must be compliant with the [Microsoft Edge content security policy](csp.md#relaxing-the-default-policy).  For example, your extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.
+If you make any changes to your extension beyond the described functionality, any changes to code must be compliant with the Content Security Policy for Microsoft Edge extensions; see [Content Security Policy (CSP)](./csp.md).  For example, your extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.
 
 
 ###### 1.2.2 Unwanted and malicious software
 
 Your extension must not contain or enable malware that may harm the operation of the network, servers, and infrastructure of Microsoft or any third parties. Spyware, malicious scripts, and phishing scams are also prohibited.
 
-It must comply with the Microsoft criteria for [Unwanted and Malicious Software](/windows/security/threat-protection/intelligence/criteria).
+Your extension must comply with the Microsoft criteria for unwanted and malicious software, listed in [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria).
 
 
 ###### 1.2.3 Dependency on other software
