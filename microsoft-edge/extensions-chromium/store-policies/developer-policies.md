@@ -533,7 +533,7 @@ If your extension provides content (such as user-generated, retail, or other web
 <!-- ------------------------------ -->
 #### 2.13 Videos
 
-If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are turned off for the specific videos that you want to embed.  For more information on turning on or off ads on YouTube, see [Set your default ad formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
+If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are turned off for the specific videos that you want to embed.  For more information on turning on or off ads on YouTube, see [YouTube advertising formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
 
 
 <!-- ====================================================================== -->
