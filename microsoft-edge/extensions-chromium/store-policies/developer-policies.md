@@ -19,7 +19,7 @@ The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons we
 
 A few principles to get you started:
 
-* Offer unique and distinct value within your extensions for Microsoft Edge.  Provide a compelling reason to download your extensions (Microsoft Edge Add-ons) from the Microsoft Edge Add-ons store.
+* Offer unique and distinct value within your extension for Microsoft Edge.  Provide a compelling reason to download your extension from the Microsoft Edge Add-ons store.
 
 * Do not mislead users about what your extension does, who is offering it, and so on.
 
@@ -63,69 +63,69 @@ Your extension must have a single purpose with narrow functionality. For example
 
 ###### 1.1.2 Describe your extension
 
-All aspects of your extension should accurately describe the functions, features and any important limitations of your extension, including required or supported input devices.  The value proposition of your extension must be clear during the first run experience.  Your extension may not use a name or icon similar to that of other extensions, must not reference other browsers and must not claim to represent a company, government body, or other entity if you don't have permission to make that representation.
+All aspects of your extension should accurately describe the functions, features and any important limitations of your extension, including required or supported input devices.  The value proposition of your extension must be clear during the first run experience.  Your extension may not use a name or icon similar to that of other extensions, must not reference other browsers, and must not claim to represent a company, government body, or other entity if you don't have permission to make that representation.
 
 If screenshots are provided, they must:
 - Be clear and informative.
 - Render properly; for example, must not be stretched or blurry.
 
-All functionality of extensions should be clearly disclosed to the user. Any extensions that attempt to deceive or mislead users will be removed from the store.
+All functionality of an extension should be clearly disclosed to the user.  Any extension that attempts to deceive or mislead users will be removed from the store.
 
 
 ###### 1.1.3 Functionality
 
-Your extension must be fully functional as in there should not be any blockers including, but not limited to, broken URLs, blocked links and pages.
+Your extension must be fully functional, as in, there should not be any blockers, including but not limited to, broken URLs or blocked webpage links.
 
 
 ###### 1.1.4 Search and discovery
 
-Search terms may not exceed seven unique terms and should be relevant to your extension.
+Search terms may not exceed seven unique terms, and should be relevant to your extension.
 
 
 ###### 1.1.5 Provide appropriate details
 
-There should be distinct and informative details about your extension and the functionality in listing (metadata) for your extension.
+There should be distinct and informative details about your extension and its functionality in the listing (metadata) for your extension.
 
 
 ###### 1.1.6 Stability and performance
 
-Developers must ensure that their extensions are stable, do not cause the browser to freeze or crash.
+You must ensure that your extension is stable and does not cause the browser to freeze or crash.
 
 In general, the extension cannot interfere with the normal functioning of the browser or operating system.
 
 
 ###### 1.1.7 Obfuscation
 
-Extensions with obfuscated code aren't allowed.  This includes code within your extension package as well as any external code or resource fetched from the web.  You may be asked to refactor parts of your code if it is not reviewable.
+Extensions with obfuscated code aren't allowed.  This includes code within your extension package, as well as any external code or resource fetched from the web.  You may be asked to refactor parts of your code, if it is not reviewable.
 
 
 ###### 1.1.8 Altering browser settings
 
 Your extension must not, without appropriate user consent, alter, or appear to alter, browser functionality or settings including, but not limited to: the address bar search provider and suggestions, the start or home page, the new tab page, and adding or removing favorites.
 
-Any changes made to the device settings must be done with the user's knowledge and consent and must be easily reversible by the user.
+Any changes made to the device settings must be done with the user's knowledge and consent, and must be easily reversible by the user.
 
-Any alteration of browser settings such as new tabs and search engines should be mentioned in the listing or description, and they should use standard APIs to achieve that functionality.  They must not override default settings without user permission.
+Any alteration of browser settings, such as new tabs and search engines, should be mentioned in the listing or description, and they should use standard APIs to achieve that functionality.  They must not override default settings without user permission.
 
 
 <!-- ------------------------------ -->
 #### 1.2 Security
 
-Extensions must declare all permissions required for their functionality in the manifest.  Your Extension must only request those permissions that are essential for functioning.
+Extensions must declare all permissions required for their functionality in the manifest.  Your extension must only request those permissions that are essential for functioning.
 
-Declarative Net Request rules must be clearly declared within the extension and should not be imported remotely unless necessary for functionality.
+Any [declarativeNetRequest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/declarativeNetRequest) rules must be clearly declared within the extension, and should not be imported remotely unless necessary for functionality.
 
-Extensions must not collect or track sensitive user information without clear consent and must clearly state any user data handling in their privacy policy and user sensitive data must be encrypted with proper mechanisms like SSL and not transported via insecure channels.
+Extensions must not collect or track sensitive user information without clear consent, and must clearly state any user data handling in their privacy policy.  User-sensitive data must be encrypted with proper mechanisms like SSL, and must not be transported via insecure channels.
 
 Extensions must not promote deceptive installation of other extensions.
 
 Bulk submissions of extensions with the same functionality and code are not allowed.
 
-Extensions should not exploit security vulnerabilities of other extensions or applications and must keep authentication information secure.
+Extensions should not exploit security vulnerabilities of other extensions or applications, and must keep authentication information secure.
 
-Extensions that function as crypto wallets can only be published by verified company accounts
+Extensions that function as crypto wallets can only be published by verified company accounts.
 
-In general, your extension must not jeopardize or compromise user security, or the security or functionality of the device, system or related systems.
+In general, your extension must not jeopardize or compromise user security, or the security or functionality of the device, system, or related systems.
 
 
 ###### 1.2.1 Content security policies
@@ -145,9 +145,9 @@ Your extension must comply with the Microsoft criteria for Unwanted and Maliciou
 Your extension may depend on non-integrated software (such as another product, module, or service) to deliver the primary functionality. However, this information should be clearly disclosed in the description.
 
 
-###### 1.2.4 Extensions update
+###### 1.2.4 Extension updates
 
-Unless otherwise permitted by Microsoft, your extensions must be updated only through Microsoft Edge Add-ons.
+Unless otherwise permitted by Microsoft, your extension must be updated only through Microsoft Edge Add-ons.
 
 
 <!-- ------------------------------ -->
@@ -323,7 +323,7 @@ You must not include in a notification any information users may reasonably cons
 
 ###### 1.9.4 Purpose of notifications
 
-Notifications sent from your extension must relate to that extension or to other extensions you publish in the Microsoft Edge Add-ons store, and must not include promotional messages of any kind that aren't related to your extensions.
+Notifications sent from your extension must relate to that extension or to other extensions you publish in the Microsoft Edge Add-ons store, and must not include promotional messages of any kind that aren't related to your extension.
 
 
 <!-- ------------------------------ -->
@@ -355,7 +355,7 @@ If your extension displays ads, all content displayed must conform to the advert
 
 ###### 1.10.4 Promotions
 
-If you purchase or create promotional ad campaigns to promote your extensions through the ad campaign functionality in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/policies/creative-specs) and [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
+If you purchase or create promotional ad campaigns to promote your extension through the ad campaign functionality in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/policies/creative-specs) and [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
 
 
 ###### 1.10.5 Notifying users of opt-out for interest-based advertising
@@ -375,7 +375,7 @@ The following policies apply to content and metadata (including publisher name, 
 
 Content means the images, sounds, videos, and text contained in your extension, the tiles, notifications, error messages, or ads exposed through your extension, and anything delivered from a server or to which your extension connects.
 
-Because extensions and Microsoft Edge Add-ons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms
+Because extensions and Microsoft Edge Add-ons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.
 
 
 <!-- ------------------------------ -->
