@@ -431,7 +431,15 @@ To control Image Enhancement, go to `edge://settings/privacy` and turn on or off
 
 Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time. You can import your browser data to Microsoft Edge from another browser. The data includes your favorites, browsing history, cookies, autofill data, extensions, settings, and other browsing data.
 
-With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
+With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.
+
+Importing your data is completed locally on your device and is stored locally.  The imported data is sent to Microsoft only after you do at least one of the following actions: 
+
+* Sign into Microsoft Edge with a Microsoft account, and turn on sync'ing of your browsing data across all signed-in devices.
+
+* In Microsoft Edge settings, turn on the toggle **Privacy, search, and services** > **Personalization & advertising** > **Allow Microsoft to save your browsing activity including history, usage, favorites, web content, and other browsing data to personalize Microsoft Edge and Microsoft services like ads, search, shopping and news**.
+
+You can manage your browsing history that's stored on Microsoft servers by visiting [https://account.microsoft.com](https://account.microsoft.com).
 
 You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`.
 

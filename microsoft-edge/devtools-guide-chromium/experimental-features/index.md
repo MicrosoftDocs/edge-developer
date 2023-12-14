@@ -628,7 +628,7 @@ Enables the background page selector, such as for prerendering debugging.
 
 See also:
 * [Overview and timelines for migrating to Manifest V3](../../extensions-chromium/developer-guide/manifest-v3.md) - service workers instead of background pages, for Microsoft Edge extensions.
-* [chrome.runtime](https://developer.chrome.com/extensions/runtime) - retrieves the background page.
+* [chrome.runtime](https://developer.chrome.com/docs/extensions/reference/api/runtime) - retrieves the background page.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 120.
