@@ -23,7 +23,7 @@ A few principles to get you started:
 
 * Do not mislead users about what your extension does, who is offering it, and so on.
 
-* Do not attempt to cheat users, the system or the ecosystem.  There is no place in Microsoft Edge Add-ons for any kind of fraud; be it ratings and review manipulation, credit card fraud or other fraudulent activity.
+* Do not attempt to cheat users, the system, or the ecosystem.  There is no place in Microsoft Edge Add-ons for any kind of fraud; be it ratings and review manipulation, credit card fraud, or other fraudulent activity.
 
 Adhering to the Microsoft Edge Add-ons store developer policies helps you make choices that enhance the appeal and audience of your extension.
 
@@ -35,13 +35,13 @@ Microsoft is committed to delivering quality products to its customers.  Therefo
 
 * Content deemed not family-friendly.
 
-* Bots: Any extension that automatically generates spam-like or unsolicited messages on the user's behalf or that which performs automated actions to manipulate a platform's features, such as artificially inflating engagement metrics.
+* Bots: Any extension that automatically generates spam-like or unsolicited messages on the user's behalf, or that performs automated actions to manipulate a platform's features, such as artificially inflating engagement metrics.
 
 * Cryptocurrency: Crypto mining and any other illegitimate activities that involve crypto wallets and currency.
 
-* Non-production builds: For example, an extension that is still in an experimental stage, prone to crashes or instability and any extension that is designed for internal testing purposes only and not intended for public release.
+* Non-production builds: For example, an extension that's still in an experimental stage, that's prone to crashes or instability, or that's designed for internal testing purposes only and not intended for public release.
 
-* Prohibited products: An extension that promotes or facilitates the sale of illegal drugs, firearms, or counterfeit goods would be considered a prohibited product and also any extension that violates intellectual property rights, such as offering pirated software or copyrighted content without authorization, would be restricted.
+* Prohibited products: An extension that promotes or facilitates the sale of illegal drugs, firearms, or counterfeit goods would be considered a prohibited product, and any extension that violates intellectual property rights, such as offering pirated software or copyrighted content without authorization, would be restricted.
 
 * Gambling content.
 
@@ -58,7 +58,7 @@ Your extension and associated metadata must accurately and clearly reflect the s
 
 ###### 1.1.1 Extensions must have a single purpose
 
-Your extension must have a single purpose with narrow functionality. For example, your extension cannot function as a simple calculator and as a code remote scanner simultaneously.
+Your extension must have a single purpose with narrow functionality.  For example, your extension cannot function as a simple calculator and as a code remote scanner simultaneously.
 
 
 ###### 1.1.2 Describe your extension
@@ -105,17 +105,17 @@ Your extension must not, without appropriate user consent, alter, or appear to a
 
 Any changes made to the device settings must be done with the user's knowledge and consent, and must be easily reversible by the user.
 
-Any alteration of browser settings, such as new tabs and search engines, should be mentioned in the listing or description, and they should use standard APIs to achieve that functionality.  They must not override default settings without user permission.
+Any alteration of browser settings, such as new tabs and search engines, should be mentioned in the listing or description, and such alterations should use standard APIs to achieve that functionality.  They must not override default settings without user permission.
 
 
 <!-- ------------------------------ -->
 #### 1.2 Security
 
-Extensions must declare all permissions required for their functionality in the manifest.  Your extension must only request those permissions that are essential for functioning.
+Extensions must declare all permissions that are required for their functionality in the manifest.  Your extension must only request those permissions that are essential for functioning.
 
 Any [declarativeNetRequest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/declarativeNetRequest) rules must be clearly declared within the extension, and should not be imported remotely unless necessary for functionality.
 
-Extensions must not collect or track sensitive user information without clear consent, and must clearly state any user data handling in their privacy policy.  User-sensitive data must be encrypted with proper mechanisms like SSL, and must not be transported via insecure channels.
+Extensions must not collect or track sensitive user information without clear consent, and must clearly state any user data handling in their privacy policy.  User-sensitive data must be encrypted by using proper mechanisms such as SSL, and must not be transported via insecure channels.
 
 Extensions must not promote deceptive installation of other extensions.
 
@@ -135,35 +135,35 @@ If you make any changes to your extension beyond the described functionality, an
 
 ###### 1.2.2 Unwanted and malicious software
 
-Your extension must not contain or enable malware that may harm the operation of the network, servers, and infrastructure of Microsoft or any third parties. Spyware, malicious scripts, and phishing scams are also prohibited.
+Your extension must not contain or enable malware that may harm the operation of the network, servers, and infrastructure of Microsoft or any third parties.  Spyware, malicious scripts, and phishing scams are also prohibited.
 
-Your extension must comply with the Microsoft criteria for Unwanted and Malicious Software, listed in [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria).
+Your extension must comply with the Microsoft criteria for unwanted and malicious software, listed in [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria).
 
 
 ###### 1.2.3 Dependency on other software
 
-Your extension may depend on non-integrated software (such as another product, module, or service) to deliver the primary functionality. However, this information should be clearly disclosed in the description.
+Your extension may depend on non-integrated software (such as another product, module, or service) to deliver the primary functionality.  However, this information should be clearly disclosed in the description.
 
 
 ###### 1.2.4 Extension updates
 
-Unless otherwise permitted by Microsoft, your extension must be updated only through Microsoft Edge Add-ons.
+Unless otherwise permitted by Microsoft, your extension must be updated only through Partner Center and the Edge Add-ons store.
 
 
 <!-- ------------------------------ -->
 #### 1.3 Product is testable
 
-Your extension must be fully testable and all the steps required for testing the product must be provided at the time of submission.
+Your extension must be fully testable, and all the steps required for testing the product must be provided at the time of submission.
 
 
 ###### 1.3.1 User credentials
 
-If your extension requires login credentials, then provide a test account and credentials or provide a clear and reasonable explanation as to why test credentials cannot be provided for the extension in the `Submission Options > Notes for certification.`
+If your extension requires login credentials, then provide a test account and credentials or provide a clear and reasonable explanation as to why test credentials cannot be provided for the extension in the `Submission Options > Notes for certification`.
 
 
 ###### 1.3.2 Availability of services
 
-If your extension requires access to a server, the server must be functional to verify that it works correctly.
+If your extension requires access to a server, the server must be functional, to verify that the extension works correctly.
 
 
 <!-- ------------------------------ -->
@@ -174,38 +174,38 @@ Your extension must meet Microsoft Edge Add-ons store standards for usability, i
 
 ###### 1.4.1 Compatibility across platforms
 
-Your extension should be compatible with Microsoft Edge on all the devices and platforms on which they may be downloaded.  If an extension is downloaded on a device with which it is not compatible, it should detect that at launch and display a message to the user detailing the requirements that devices must meet in order to be compatible with your extension.
+Your extension should be compatible with Microsoft Edge on all the devices and platforms on which it may be downloaded.  If an extension is downloaded on a device with which it is not compatible, it should detect that at launch, and display a message to the user detailing the requirements that devices must meet in order to be compatible with the extension.
 
 
 ###### 1.4.2 User experience
 
-Your extension must start up promptly and must stay responsive to user input. It must also shut down gracefully and not close unexpectedly.
+Your extension must start up promptly, and must stay responsive to user input.  It must also shut down gracefully, and not close unexpectedly.
 
 
 <!-- ------------------------------ -->
 #### 1.5 Personal information
 
-The following requirements apply to extensions that access Personal Information.  Personal Information includes all information or data that identifies or could be used to identify a person, or that is associated with such information or data.
+The following requirements apply to extensions that access Personal Information.  _Personal Information_ includes all information or data that identifies or could be used to identify a person, or that is associated with such information or data.
 
 
 ###### 1.5.1 Collect personal information only when necessary
 
-Your extension may collect, access, use, or transmit Personal Information (including web browsing activity); only if required by and only for use in a prominently disclosed, user-facing feature.
+Your extension may collect, access, use, or transmit Personal Information (including web browsing activity) only if required by and only for use in a prominently disclosed, user-facing feature.
 
-Developers must clearly state the data handling practices of their extension at the time of installation, including any transfer or use of user data.
+You must clearly state the data handling practices of your extension at the time of installation, including any transfer or use of user data.
 
-Developers must obtain explicit prior consent from the user before any merger, acquisition, or sale of assets of the developer that may involve the transfer of user data.
+You must obtain explicit prior consent from the user before any merger, acquisition, or sale of your assets that may involve the transfer of user data.
 
-Developers must obtain explicit prior consent from the user and have a clear policy before accessing and providing the user re-access information when the user has lost their password for the product or service.
+You must obtain explicit prior consent from the user and have a clear policy before accessing and providing the user with re-access information when the user has lost their password for the product or service.
 
-Developers must have a clear and comprehensive privacy policy that outlines their data handling practices, including the use of any third-party services.
+You must have a clear and comprehensive privacy policy that outlines your data handling practices, including the use of any third-party services.
 
 
 ###### 1.5.2 Maintain a privacy policy
 
-Your privacy policy must describe the controls that users have over the use and sharing of their information, how they access their information, and it must comply with applicable laws and regulations. Your privacy policy must be kept up-to-date as you add new features and functionality to your extension.
+Your privacy policy must describe the controls that users have over the use and sharing of their information, how they access their information, and it must comply with applicable laws and regulations.  Your privacy policy must be kept up-to-date as you add new features and functionality to your extension.
 
-The privacy policy provided should be relevant to the product and should not use the Microsoft privacy statement unless the extension is an official Microsoft extension. Additionally, the privacy policy should primarily refer to the Edge browser and not other browsers, and any data collected should be aggregated and anonymized and used in accordance with applicable privacy and other jurisdictional legal requirements.
+The privacy policy provided should be relevant to the product and should not use the Microsoft privacy statement unless the extension is an official Microsoft extension.  Additionally, the privacy policy should primarily refer to the Microsoft Edge browser and not other browsers, and any data collected should be aggregated and anonymized and used in accordance with applicable privacy and other jurisdictional legal requirements.
 
 If you provide Microsoft with your privacy policy, then you agree to permit Microsoft to share such privacy policy with users of your extension.
 
@@ -223,26 +223,26 @@ You may publish the Personal Information of users of your extension to an outsid
 
 If you publish a person's Personal Information to an outside service or third-party through your extension or the metadata, but the person whose information is being shared is not a user of your extension:
 
-1.  You must obtain express written consent to publish that Personal Information.
+1. You must obtain express written consent to publish that Personal Information.
 
-1.  You must permit the person whose information is shared to withdraw that consent at any time.
+1. You must permit the person whose information is shared to withdraw that consent at any time.
 
-1.  Your privacy policy must clearly disclose that you may collect personal information in this manner.
+1. Your privacy policy must clearly disclose that you may collect personal information in this manner.
 
-1.  If required by applicable law you must delete the Personal Information of any individual upon request, including individuals whose information you collect in this manner.
+1. If required by applicable law you must delete the Personal Information of any individual upon request, including individuals whose information you collect in this manner.
 
-1.  If your extension provides users with access to another person's Personal Information, this requirement also applies.
+1. If your extension provides users with access to another person's Personal Information, this requirement also applies.
 
 
 ###### 1.5.5 Transmit information securely
 
 Your extension must only use modern and secure cryptography methods to collect, store, or transmit Personal Information.
 
-Developers must not publicly disclose any financial or payment information related to their extension or its users.
+You must not publicly disclose any financial or payment information related to your extension or its users.
 
-Developers must not publicly disclose any authentication information related to their extension or its users.
+You must not publicly disclose any authentication information related to your extension or its users.
 
-In the event of a security breach involving financial or payment information or authentication information, developers must immediately inform affected users and entities, including applicable authorities, and must also take necessary steps to address the breach.
+In the event of a security breach involving financial or payment information or authentication information, you must immediately inform affected users and entities, including applicable authorities, and must also take necessary steps to address the breach.
 
 
 ###### 1.5.6 Highly sensitive information
@@ -263,7 +263,7 @@ Requesting permissions or features solely for the purpose of "future proofing" i
 
 You should localize your extension for all languages that your extension claims to support.  The text of the description of your extension should be localized in each language that you declare.
 
-If your extension is localized such that some features aren't available in a localized version, you must clearly state or display the limits of localization in your extension description. The experience provided by an Extension must be reasonably similar in all languages that it supports.
+If your extension is localized such that some features aren't available in a localized version, you must clearly state or display the limits of localization in your extension description.  The experience provided by an Extension must be reasonably similar in all languages that it supports.
 
 
 <!-- ------------------------------ -->
@@ -289,7 +289,7 @@ In-product offerings sold in your extension must not be converted to any legally
 
 ###### 1.8.2 Disclosing paid features
 
-Your extension and associated metadata must clearly provide information about the types of in-product purchases offered and the range of prices. You must not mislead users and must be clear about the nature of your in-product promotions and offerings including the scope and terms of any trial experiences.
+Your extension and associated metadata must clearly provide information about the types of in-product purchases offered and the range of prices.  You must not mislead users and must be clear about the nature of your in-product promotions and offerings including the scope and terms of any trial experiences.
 
 If your extension restricts access to user-created content during or after a trial, then you must notify users in every step of the process.
 
@@ -299,7 +299,7 @@ In addition, your extension must make it clear to users that they are initiating
 <!-- ------------------------------ -->
 #### 1.9 Notifications
 
-Your extension must respect system settings for notifications. Any presentation of ads and notifications to users must be consistent with user preferences, regardless of whether the notifications are provided by the Microsoft Push Notification Service (MPNS), Windows Push Notification Service (WNS), or any other service.
+Your extension must respect system settings for notifications.  Any presentation of ads and notifications to users must be consistent with user preferences, regardless of whether the notifications are provided by the Microsoft Push Notification Service (MPNS), Windows Push Notification Service (WNS), or any other service.
 
 If the user disables notifications, either on a product-specific or system-wide basis, then your extension must adhere to the user's notification settings and remain functional even though notifications may be disabled.
 
@@ -479,9 +479,9 @@ Your extension must adhere to the following conditions:
 
 Extensions manipulating, cheating, or exploiting Microsoft systems, causing revenue loss, or extensions engaging in fraudulent activities, are strictly prohibited.
 
-This prohibition applies to all developers, partners, and third parties. Non-compliance may result in extension removal and account suspension or termination.
+This prohibition applies to all developers, partners, and third parties.  Non-compliance may result in extension removal and account suspension or termination.
 
-Your extension must adhere to applicable laws and regulations, Microsoft's terms of service, and applicable privacy policies. Microsoft reserves the right to review extensions for compliance and to promptly remove any noncompliant extension.
+Your extension must adhere to applicable laws and regulations, Microsoft's terms of service, and applicable privacy policies.  Microsoft reserves the right to review extensions for compliance and to promptly remove any noncompliant extension.
 
 
 <!-- ------------------------------ -->
