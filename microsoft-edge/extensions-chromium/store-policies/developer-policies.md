@@ -1,23 +1,23 @@
 ---
-title: Microsoft Edge Add-ons store developer policies
-description: Microsoft Edge Add-ons store developer policies.
+title: Developer policies for the Microsoft Edge Add-ons store
+description: Developer policies for submitting extensions via Partner Center to be published at the Microsoft Edge Add-ons store website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/14/2023
+ms.date: 12/15/2023
 ---
-# Microsoft Edge Add-ons store developer policies
+# Developer policies for the Microsoft Edge Add-ons store
 
-To develop an extension to be published through the Microsoft Edge Add-ons store, follow these Microsoft Edge Add-ons store developer policies (_Add-ons store developer policies_), which apply to submitting extensions through [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and providing extensions through the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) store.
+To develop an extension to be published through the Microsoft Edge Add-ons store, follow these policies.  These policies apply to submitting extensions through [Partner Center](https://partner.microsoft.com/dashboard/home) and publishing the extensions at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) store.
 
-The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons website_.
+The _Microsoft Edge Add-ons store_<!--36--> is also called the _Edge Add-ons store_,<!--12--> the _Microsoft Edge Add-ons website_,<!--89--> or the _Edge Add-ons website_.<!--5-->
 
 
 <!-- ====================================================================== -->
 ## Principles
 
-A few principles to get you started:
+The following principles are reflected in these developer policies:
 
 * Offer unique and distinct value within your extension for Microsoft Edge.  Provide a compelling reason to download your extension from the Microsoft Edge Add-ons store.
 
@@ -25,7 +25,7 @@ A few principles to get you started:
 
 * Do not attempt to cheat users, the system, or the ecosystem.  There is no place in Microsoft Edge Add-ons for any kind of fraud; be it ratings and review manipulation, credit card fraud, or other fraudulent activity.
 
-Adhering to the Microsoft Edge Add-ons store developer policies helps you make choices that enhance the appeal and audience of your extension.
+Adhering to these policies for the Microsoft Edge Add-ons store helps you make choices that enhance the appeal and audience of your extension.
 
 
 <!-- ====================================================================== -->
@@ -308,7 +308,7 @@ Also, you'll be receiving notifications related to your accounts, including but 
 
 ###### 1.9.1 General guidance
 
-Notifications provided through WNS or MPNS are considered product content and are subject to all Microsoft Edge Add-ons store developer policies.
+Notifications provided through WNS or MPNS are considered product content, and are subject to all developer policies for the Microsoft Edge Add-ons store.
 
 
 ###### 1.9.2 Ownership of notifications
@@ -341,9 +341,10 @@ Users should not be misled to click on advertisements to fully use the extension
 
 ###### 1.10.2 Policies and agreements
 
-Any advertising content your extension displays must adhere to [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
-
-If your extension displays ads, all content displayed must conform to the advertising requirements of the [App Developer Agreement](/legal/windows/agreements/app-developer-agreement) and this Policy.
+Any ad content that's displayed by your extension must conform to the following:
+* The [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
+* The advertising requirements of the [App Developer Agreement](/legal/windows/agreements/app-developer-agreement).
+* The advertising requirements of the developer policies for the Microsoft Edge Add-ons store.
 
 
 ###### 1.10.3 Quality of advertising
@@ -355,7 +356,7 @@ If your extension displays ads, all content displayed must conform to the advert
 
 ###### 1.10.4 Promotions
 
-If you purchase or create promotional ad campaigns to promote your extension through the ad campaign functionality in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/policies/creative-specs) and [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
+If you purchase or create promotional ad campaigns to promote your extension through the ad campaign functionality in Partner Center, all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/policies/creative-specs) and [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
 
 
 ###### 1.10.5 Notifying users of opt-out for interest-based advertising
@@ -365,7 +366,7 @@ Your privacy statement or terms of use must let users know you plan to send Pers
 
 ###### 1.10.6 Other guidelines
 
-If your extension is directed at children under the age of 13, as defined in the [Children's Online Privacy Protection Act](https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy); you must notify Microsoft of this fact in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and ensure that all ad content displayed in your extension is appropriate for children under the age of 13.
+If your extension is directed at children under the age of 13, as defined in the [Children's Online Privacy Protection Act](https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy); you must notify Microsoft of this fact in Partner Center and ensure that all ad content displayed in your extension is appropriate for children under the age of 13.
 
 
 <!-- ====================================================================== -->
@@ -516,7 +517,7 @@ Content that is offensive in any country or region to which your extension is ta
 
 ###### 2.12.1 Mature content
 
-When you submit your extension to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), you must indicate whether your extension displays content that should be marked "Mature".  When determining the rating for your extension, consider all the content in your app, including user generated content and ads, and to the content that your extension links.  If you indicate that your extension doesn't contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.
+When you submit your extension to Partner Center, you must indicate whether your extension displays content that should be marked "Mature".  When determining the rating for your extension, consider all the content in your app, including user generated content and ads, and to the content that your extension links.  If you indicate that your extension doesn't contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.
 
 Regardless of the rating given to your extension, it must still adhere to all the content requirements of the Microsoft Edge Add-ons store developer policies.
 
@@ -552,4 +553,4 @@ All extensions must adhere to the store policies listed above.  If your extensio
 | Overturned decisions                                                  |        28 |
 | Average processing time                                               | 6.58 days |
 
-These numbers were reported on July 1, 2023|January 7, 2023.<!-- todo: which? -->
+These numbers were reported on July 1, 2023.
