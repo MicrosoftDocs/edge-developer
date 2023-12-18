@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 116)
-description: "Move the location of the Activity Bar in Focus Mode. React Developer Tools extensions works in Focus Mode.  Containment Diff view in the Memory tool when multiple heap snapshots.  And more."
+description: "In Focus Mode, Activity bar has a "Move Activity Bar" button.  React Developer Tools extension works in Focus Mode.  A Containment Diff view in the Memory tool when multiple heap snapshots.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -17,11 +17,11 @@ ms.date: 08/01/2023
 <!-- ====================================================================== -->
 ## Activity bar has a "Move Activity Bar" button
 
-While in Focus Mode, you now have the ability to easily move the Activity bar's location with a click of a button.  In the upper left of DevTools, to the right of the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button.  The new button is always available in the Activity bar, instead of having to go into the DevTools **Settings** (...) menu.
+While in Focus Mode, you now have the ability to easily move the Activity bar's location with a single button-click.  In the upper left of DevTools, to the right of the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button:
 
-For example, by default, the Activity bar's orientation is horizontal, but you can change it to vertical by simply clicking the new **Move Activity Bar to left** button:
+![The 'Move Activity Bar' button directly on the Activity bar](./devtools-116-images/move-location-activity-bar.gif)
 
-![Moving the location of the Activity Bar in Focus Mode](./devtools-116-images/move-location-activity-bar.gif)
+For example, by default, the Activity bar's orientation is horizontal, but you can change it to vertical by simply clicking the new **Move Activity Bar to left** button in the Activity bar, instead of having to go into the DevTools **Settings** (...) menu.
 
 See also:
 * [What's New entries about Focus Mode](/search/?scope=Microsoft%20Edge&terms=focus%20mode)
@@ -32,7 +32,7 @@ See also:
 <!-- ====================================================================== -->
 ## React Developer Tools extension retains state of tools
 
-Prior to Microsoft Edge 116, if you were in Focus Mode while using the React Developer Tools extension, the state of a tool in DevTools wasn't maintained when you switched to another tool and then switched back.  This issue has been resolved.
+Prior to Microsoft Edge 116, if you were in Focus Mode while using the React Developer Tools extension, the state of a tool in DevTools wasn't maintained when you switched to another tool and then switched back.  This issue has been fixed.
 
 See also:
 * [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) - extension at the Edge Add-ons store
