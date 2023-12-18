@@ -64,23 +64,21 @@ The following experimental features are turned on by default. You can use these 
 * [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
 * [Enable Speculative Loads Panel in Application panel](#enable-speculative-loads-panel-in-application-panel)
 
-**Turned on by default in Microsoft Edge Stable 119:**
+**Turned on by default in Microsoft Edge Stable 120:**
 * [Automatically pretty print minified sources](#automatically-pretty-print-minified-sources)
 * [Source order viewer](#source-order-viewer)
-* [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
 * [WebAssembly Debugging: Enable DWARF support](#webassembly-debugging-enable-dwarf-support)
 * [Set all breakpoints eagerly at startup](#set-all-breakpoints-eagerly-at-startup)
 * [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
 * [Local overrides for response headers](#local-overrides-for-response-headers)
 * [Enable color picking outside the browser window](#enable-color-picking-outside-the-browser-window)
-* [Disable the deprecated 'Color format' setting (requires reloading DevTools)](#disable-the-deprecated-color-format-setting-requires-reloading-devtools)
 * [Enable background page selector (e.g. for prerendering debugging)](#enable-background-page-selector-eg-for-prerendering-debugging)
+* [Show warning about Self-XSS when pasting code](#show-warning-about-self-xss-when-pasting-code)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 * [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
-* [Enable Preloading Status Panel in Application panel](#enable-preloading-status-panel-in-application-panel)
-<!-- [Emulate Microsoft-recommended hardware and network performance presets] - internal only -->
+* [Enable Speculative Loads Panel in Application panel](#enable-speculative-loads-panel-in-application-panel)
 
 
 <!-- ====================================================================== -->
@@ -266,20 +264,6 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 119.
-
-
-<!-- ====================================================================== -->
-## Enable keyboard shortcut editor
-<!-- no (?) link -->
-
-Whether to enable editing keyboard shortcuts.
-
-See also:
-* [Customize keyboard shortcuts](../customize/shortcuts.md)
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 121.
 * This checkbox is present in Microsoft Edge Stable 119.
 
 
@@ -495,19 +479,6 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Enable "Delete all overrides" temporarily
-<!-- no (?) link -->
-
-_new as of Microsoft Edge 119_
-
-Adds a **Delete all overrides** menuitem in the right-click menu for folders in the **Overrides** tab of the **Sources** tool.  When you select **Delete all overrides**, a dialog appears: "Are you sure you want to delete all overrides in this folder?"<!-- todo old: clarify result of clicking OK button-->
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 119.
-
-
-<!-- ====================================================================== -->
 ## Enable color picking outside the browser window
 <!-- no (?) link -->
 
@@ -592,26 +563,6 @@ To see the Object Properties viewer in the **Sources** tool:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 119.
-
-
-<!-- ====================================================================== -->
-## Disable the deprecated 'Color format' setting (requires reloading DevTools)
-<!-- no (?) link -->
-
-_new as of Microsoft Edge 110_
-
-In DevTools **Settings** > **Preferences**, when you hover over the **Information** (**i**) icon on the grayed-out **Color format** dropdown list, the tooltip reads: "This setting is deprecated because it is incompatible with modern color spaces.  To reenable it, you can disable the according experiment."
-
-The **Color format** dropdown list was previously enabled by default.  This control enables you to choose what color format you prefer to see in the **Styles** tab in the **Elements** tool by default. So, for example, if the CSS code specified `color: red;` but you had set the **hex** color format as your preference, then you would see `color: #f00;` in the **Styles** tab instead.
-
-Recently, CSS has gained new color formats that can be used to describe colors in color spaces that weren't available before.  This auto-switch of the color format can't work anymore, because if the source code contains a color in a new color space, then it isn't always possible to convert this color in one of the older color formats, because the color spaces don't match 1-to-1.
-
-In **Settings** > **Experiments**, this **Disable the deprecated 'Color format' setting** checkbox is selected by default, and its effect is to grey out the **Color format** dropdown list in the **Settings** > **Preferences** page.  After a while, this experiment checkbox and the **Color format** dropdown list in **Preferences** will be removed.
-For now, these controls enable you to disable the experiment and re-activate the **Color format** dropdown list.
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 121.
 * This checkbox is present in Microsoft Edge Stable 119.
 
 
@@ -721,7 +672,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is not present in Microsoft Edge Stable 119.
+* This checkbox is not present in Microsoft Edge Stable 120.
 
 
 <!-- ====================================================================== -->
@@ -979,47 +930,12 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Enable Preloading Status Panel in Application panel
-<!-- no (?) link -->
-
-_new as of Microsoft Edge 110_
-
-In certain situations, for example when using the Speculation Rules API, Microsoft Edge prefetches and prerenders the next page that a user will visit, to display that page faster.
-
-This experiment enables the **Prefetching & Prerendering** section in the **Application** Tool. The new section displays the list of pages that the browser prefetched and prerendered and why, which gives you a way to debug your code.
-
-To learn more about prerendering pages, see [Prerender pages in Chrome for instant page navigations](https://developer.chrome.com/blog/prerender-pages/).
-
-Selecting this experiment checkbox adds the **Preloading** section within the **Application** tool:
-
-![The Preloading page in the Application tool](./index-images/preloading-page-of-application-tool.png)
-<!--
-Select an element for more details.
-todo old: how select element, where?  that instruction is prominent in UI, so clarify here
--->
-
-The **Preloading** section of the list of pages contains a **Prefetching & Prerendering** page, which contains columns:
-* **Validity**
-* **Location**
-* **URL**
-* **Action**
-* **Status**
-
-Use the dropdown list to select rule sets, such as **All rule sets**.
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 119.
-
-
-<!-- ====================================================================== -->
 ## Enable Speculative Loads Panel in Application panel
 <!-- no (?) link -->
 
 _new as of Microsoft Edge 121_
 
 Adds a **Speculative loads** page within the **Background services** section of the **Application** tool, including a **Rules** page and a **Speculations** page:
-<!-- todo: explain speculative loads -->
 
 ![The `Speculative Loads` page within the Application tool](./index-images/speculative-loads-page.png)
 
@@ -1069,7 +985,11 @@ Status:
 
 _new as of Microsoft Edge 121_
 
-Adds a right-click menu that allows modifying trees in the flame chart in the **Performance** tool.  Menuitems:
+Adds a right-click menu that allows modifying trees in the flame chart in the **Performance** tool.  With this experiment enabled, you can right-click events in the flame chart of the **Performance** tool, and modify the chart at that location:
+
+![Context menu to modify flame chart trees](./index-images/context-menu-modify-flame-chart-trees.png)
+
+The right-click menu potentially has the following menuitems, depending on context:
 * **Merge function**
 * **Collapse function**
 * **Collapse repeating descendants**
@@ -1078,10 +998,6 @@ Adds a right-click menu that allows modifying trees in the flame chart in the **
 * **Undo all actions**
 * **Load profile**
 * **Save profile**
-
-With this experiment enabled, you can right-click events in the flame chart of the **Performance** tool, and modify the chart at that location.
-
-![Context menu to modify flame chart trees](./index-images/context-menu-modify-flame-chart-trees.png)
 
 See also:
 * [Find the bottleneck](../evaluate-performance/index.md#find-the-bottleneck) in _Introduction to the Performance tool_.
