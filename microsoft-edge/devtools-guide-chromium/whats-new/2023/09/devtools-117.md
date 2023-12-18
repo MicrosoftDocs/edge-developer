@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 117)
-description: "New Experiment: Explain console errors/warnings with Copilot in Sidebar. Console in Quick View opens with normal content while in Focus Mode. Accessibility Fixes."
+1. description: "New Experiment: Explain console errors/warnings with Copilot in Sidebar. Console in Quick View opens with normal content while in Focus Mode. Accessibility Fixes."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 09/14/2023
 <!-- ====================================================================== -->
 ## New Experiment: Explain console errors/warnings with Copilot in Sidebar
 
-You can use Copilot in the Edge Sidebar to explain DevTools console errors. This feature is available as an experiment starting in Edge 117. If sidebar is enabled, you can search for or explain console errors using Copilot in Sidebar by clicking the "Explain this message in sidebar" button next to a message in the Console. You won't be able to use this feature if sidebar is disabled. 
+You can use Copilot in the Edge Sidebar to explain DevTools console errors. This feature is available as an experiment starting in Edge 117. If sidebar is enabled, you can search for or explain console errors using Copilot in Sidebar by clicking the **Explain this message in sidebar** button next to a message in the Console. You won't be able to use this feature if sidebar is disabled. 
 
 This experiment is disabled by default and can be enabled with feature flag `msEdgeAIExplainConsoleError`. For example, run Edge browser from command line `msedge.exe --enable-features=msEdgeAIExplainConsoleError`.
 
