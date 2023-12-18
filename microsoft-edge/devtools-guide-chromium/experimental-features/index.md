@@ -967,9 +967,6 @@ The **Speculations** page has columns:
 * **Rule set**
 * **Status**
 
-See also:
-* [Enable Preloading Status Panel in Application panel](#enable-preloading-status-panel-in-application-panel), above.
-
 Status:
 * This checkbox is present in Microsoft Edge Canary 122.
 * This checkbox is present in Microsoft Edge Stable 120.
