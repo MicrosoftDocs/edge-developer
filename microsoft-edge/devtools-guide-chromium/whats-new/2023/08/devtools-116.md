@@ -5,20 +5,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/01/2023
+ms.date: 08/17/2023
 ---
 # What's New in DevTools (Microsoft Edge 116)
-
-<!-- todo: ms.date above: put date of 116 Stable -->
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
 ## "Move Activity Bar" button in the Activity bar
-
-<!-- Subtitle: __ -->
-<!-- todo: need Subtitle sentence -->
 
 While in Focus Mode, you now have the ability to easily move the Activity bar's location with a click of a button.  In the upper left of DevTools, to the right of the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button.  The new button is always available in the Activity bar, instead of having to go into the DevTools **Settings** (...) menu.
 
@@ -35,9 +30,6 @@ See also:
 <!-- ====================================================================== -->
 ## React Developer Tools extension retains state of tools in Focus Mode
 
-<!-- Subtitle: The React Developer Tools extension retains the state of tools while in Focus Mode. -->
-<!-- todo: write actual subtitle -->
-
 Prior to Microsoft Edge 116, if you were in Focus Mode while using the React Developer Tools extension, the state of a tool in DevTools wasn't maintained when you switched to another tool and then switched back.  This issue has been resolved.
 
 See also:
@@ -49,9 +41,6 @@ See also:
 
 <!-- ====================================================================== -->
 ## Containment Diff view in Memory tool when multiple heap snapshots
-
-<!-- Subtitle: __ -->
-<!-- todo: need Subtitle sentence -->
 
 When there's more than one heap snapshot, the "Containment Diff" view will be available in the View dropdown:
 
@@ -65,9 +54,6 @@ See also:
 
 <!-- ====================================================================== -->
 ## Added an icon in the Recorder tool's tab
-
-<!-- Subtitle: __ -->
-<!-- todo: need Subtitle sentence -->
 
 <!-- todo: can't just mention update of Recorder tool, since the Recorder tool has never been mentioned or introduced as new in What's New.  Need What's New entry "Microsoft Edge v123 added the Recorder tool from the Chromium engine" -->
 
@@ -95,9 +81,7 @@ Microsoft Edge 116 also includes the following updates from the Chromium project
 * [Improved debugging of missing stylesheets](https://developer.chrome.com/blog/new-in-devtools-116/#stylesheets)
 * [Linear timing support in Elements > Styles > Easing Editor](https://developer.chrome.com/blog/new-in-devtools-116/#linear)
 * [Storage buckets support and metadata view](https://developer.chrome.com/blog/new-in-devtools-116/#storage)
-* [Lighthouse 10.3.0](https://developer.chrome.com/blog/new-in-devtools-116/#lighthouse)
 * [Accessibility: Keyboard commands and improved screen reading](https://developer.chrome.com/blog/new-in-devtools-116/#accessibility)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-116/#misc)
 
 
 <!-- ====================================================================== -->
