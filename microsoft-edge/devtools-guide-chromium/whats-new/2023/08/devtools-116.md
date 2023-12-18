@@ -13,7 +13,7 @@ ms.date: 08/17/2023
 
 
 <!-- ====================================================================== -->
-## "Move Activity Bar" button in the Activity bar
+## Activity bar has a "Move Activity Bar" button
 
 While in Focus Mode, you now have the ability to easily move the Activity bar's location with a click of a button.  In the upper left of DevTools, to the right of the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button.  The new button is always available in the Activity bar, instead of having to go into the DevTools **Settings** (...) menu.
 
@@ -28,7 +28,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## React Developer Tools extension retains state of tools in Focus Mode
+## React Developer Tools extension retains state of tools
 
 Prior to Microsoft Edge 116, if you were in Focus Mode while using the React Developer Tools extension, the state of a tool in DevTools wasn't maintained when you switched to another tool and then switched back.  This issue has been resolved.
 
@@ -40,9 +40,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Containment Diff view in Memory tool when multiple heap snapshots
+## "Containment Diff" view in Memory tool when multiple heap snapshots
 
-When there's more than one heap snapshot, the "Containment Diff" view will be available in the View dropdown:
+In the **Memory** tool, if there's more than one heap snapshot, a **Containment Diff** view is now available through the **View** dropdown menu in the upper left of the **Memory** tool:
 
 ![The Containment Diff view in the Memory tool](./devtools-116-images/new-view-memory-panel.gif)
 
@@ -53,7 +53,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Added an icon in the Recorder tool's tab
+## Recorder tool's tab includes an icon
 
 <!-- todo: can't just mention update of Recorder tool, since the Recorder tool has never been mentioned or introduced as new in What's New.  Need What's New entry "Microsoft Edge v123 added the Recorder tool from the Chromium engine" -->
 
