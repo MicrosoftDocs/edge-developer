@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 116)
-description: "Improvements for connecting DevTools to Azure Artifacts symbol server. Snapshotting improvements for the Memory tool. Refreshing the DevTools icons and buttons. And more."
+description: "Move the location of the Activity Bar in Focus Mode. React Developer Tools extensions works in Focus Mode. Added a new view in the Memory panel for Heap Snapshots . And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
