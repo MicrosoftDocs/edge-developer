@@ -686,19 +686,16 @@ Status:
 
 _new as of Microsoft Edge 121_
 
-Adds a timing-breadcrumbs path in the **Application** tool, such as:
+Adds the ability to zoom in on time ranges of a recording in the **Application** tool. Also adds a timing-breadcrumbs path to go back to previous ranges.
 
-Full range (5111.69ms) > 437.30ms > 46.52ms > 7.44ms
+To zoom in on a time range:
 
-![The timing breadcrumbs path](./index-images/timing-breadcrumbs-path.png)
-<!-- todo: redo png -->
+1. To create a time range, drag your mouse in the **Overview** section.
+1. Hover over the selected time range, and then click the magnifier icon that appears on hover. A new item is added to the timing-breadcrumbs path.
 
-When you drag your mouse over the overview, to select a time range, you have the added option of clicking on a magnifier icon in the middle of the range to zoom in on that range only, and ignore everything else. When you do that, a new item is added to the breadcrumbs path.  You can then click on any item in the breadcrumbs path to go back to a previous range.
+To zoom out to a previous time range, click the item in the timing-breadcrumbs path.
 
-Here's what zooming in on a range looks like:
-
-![Zooming in on a range by using the breadcrumbs path](./index-images/timing-breadcrumbs-zoom.png)
-<!-- todo: redo png -->
+![The Application tool, showing a performance recording. There is a timing breadcrumbs path at the top and a zoom icon on the selected range](./index-images/timing-breadcrumbs-path.png)
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
@@ -1085,7 +1082,6 @@ Adds a right-click menu that allows modifying trees in the flame chart in the **
 With this experiment enabled, you can right-click events in the flame chart of the **Performance** tool, and modify the chart at that location.
 
 ![Context menu to modify flame chart trees](./index-images/context-menu-modify-flame-chart-trees.png)
-<!-- todo: redo png -->
 
 See also:
 * [Find the bottleneck](../evaluate-performance/index.md#find-the-bottleneck) in _Introduction to the Performance tool_.
