@@ -77,7 +77,6 @@ The following experimental features are turned on by default. You can use these 
 * [Enable background page selector (e.g. for prerendering debugging)](#enable-background-page-selector-eg-for-prerendering-debugging)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
-* [Focus Mode](#focus-mode) - selected by default on some machines.
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 * [View console.profile() results in the Performance panel for Node.js](#view-consoleprofile-results-in-the-performance-panel-for-nodejs)
 * [Enable Preloading Status Panel in Application panel](#enable-preloading-status-panel-in-application-panel)
@@ -93,15 +92,15 @@ To turn an experiment on or off in Microsoft Edge:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./index-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, on the main toolbar, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-devtools-icon.png)) button, and then click the **Settings** (![Settings icon](./index-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
 
-1. On the left side of the **Settings** panel, select the **Experiments** page.
+1. On the left side of the **Settings** panel, select the **Experiments** page:
 
    ![The Experiments page in Settings](./index-images/experiments-devtools.png)
 
-1. On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
+1. Select or clear the checkbox for an experiment. Some experiments are selected by default.
 
-1. Click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
+1. Click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) in the upper right of DevTools **Settings**.
 
 1. Click the **Reload DevTools** button.
 
@@ -140,8 +139,6 @@ You can filter the experimental features by text included in the title.
 ## Providing feedback about the experiments
 
 We're eager to hear your feedback about experimental features.  To share feedback with us, [Contact the Microsoft Edge DevTools team](../contact.md).
-
-One of the UI experiments adds a new way to provide feedback: when the **Focus Mode** experiment is turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](./index-images/help-icon-of-focus-mode.png)) > **Feedback**.
 
 
 <!-- ====================================================================== -->
@@ -221,7 +218,7 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1. Click the **Reload DevTools** button that appears next to the message.
 
-1. The **Protocol monitor** tool is displayed in the **Drawer** at the bottom of DevTools.
+1. The **Protocol monitor** tool is displayed in the **Quick View** panel at the bottom of DevTools.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
@@ -604,14 +601,14 @@ Status:
 
 _new as of Microsoft Edge 110_
 
-In DevTools **Settings** > **Preferences**, when you hover over the **Information** (**i**) icon on the grayed-out **Color format** drop-down list, the tooltip reads: "This setting is deprecated because it is incompatible with modern color spaces.  To reenable it, you can disable the according experiment."
+In DevTools **Settings** > **Preferences**, when you hover over the **Information** (**i**) icon on the grayed-out **Color format** dropdown list, the tooltip reads: "This setting is deprecated because it is incompatible with modern color spaces.  To reenable it, you can disable the according experiment."
 
-The **Color format** drop-down list was previously enabled by default.  This control enables you to choose what color format you prefer to see in the **Styles** tab in the **Elements** tool by default. So, for example, if the CSS code specified `color: red;` but you had set the **hex** color format as your preference, then you would see `color: #f00;` in the **Styles** tab instead.
+The **Color format** dropdown list was previously enabled by default.  This control enables you to choose what color format you prefer to see in the **Styles** tab in the **Elements** tool by default. So, for example, if the CSS code specified `color: red;` but you had set the **hex** color format as your preference, then you would see `color: #f00;` in the **Styles** tab instead.
 
 Recently, CSS has gained new color formats that can be used to describe colors in color spaces that weren't available before.  This auto-switch of the color format can't work anymore, because if the source code contains a color in a new color space, then it isn't always possible to convert this color in one of the older color formats, because the color spaces don't match 1-to-1.
 
-In **Settings** > **Experiments**, this **Disable the deprecated 'Color format' setting** checkbox is selected by default, and its effect is to grey out the **Color format** drop-down list in the **Settings** > **Preferences** page.  After a while, this experiment checkbox and the **Color format** drop-down list in **Preferences** will be removed.
-For now, these controls enable you to disable the experiment and re-activate the **Color format** drop-down list.
+In **Settings** > **Experiments**, this **Disable the deprecated 'Color format' setting** checkbox is selected by default, and its effect is to grey out the **Color format** dropdown list in the **Settings** > **Preferences** page.  After a while, this experiment checkbox and the **Color format** dropdown list in **Preferences** will be removed.
+For now, these controls enable you to disable the experiment and re-activate the **Color format** dropdown list.
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 121.
@@ -629,7 +626,7 @@ Enables the background page selector, such as for prerendering debugging.
 
 See also:
 * [Overview and timelines for migrating to Manifest V3](../../extensions-chromium/developer-guide/manifest-v3.md) - service workers instead of background pages, for Microsoft Edge extensions.
-* [chrome.runtime](https://developer.chrome.com/extensions/runtime) - retrieves the background page.
+* [chrome.runtime](https://developer.chrome.com/docs/extensions/reference/api/runtime) - retrieves the background page.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
@@ -755,7 +752,7 @@ Status:
 *  Progressive Web Apps (PWAs)
 *  Other common web development issues
 
-The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
+The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant tool, such as **Network**, **Sources**, or **Elements**:
 
 ![webhint feedback in the Issues panel](./index-images/experiments-webhint.png)
 
@@ -772,23 +769,6 @@ Enable this experiment to view syntax errors under HTML in the **DOM** view of t
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 121.
-* This checkbox is present in Microsoft Edge Stable 119.
-
-
-<!-- ====================================================================== -->
-## Focus Mode
-<!-- checkbox has a (?) link to this anchor wording -->
-
-Focus Mode is a new user interface for DevTools.  Focus Mode is designed to simplify and streamline the DevTools UI, without compromising its feature set.
-
-Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a compact toolbar with distinctive icons.  The **Activity Bar** makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The **Activity Bar** also provides access to user settings, help, and other features.
-
-Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
-
-See [Reduce the complexity of DevTools with Focus Mode](focus-mode.md).
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 121.
 * This checkbox is present in Microsoft Edge Stable 119.
 
 
@@ -1013,19 +993,22 @@ This experiment enables the **Prefetching & Prerendering** section in the **Appl
 
 To learn more about prerendering pages, see [Prerender pages in Chrome for instant page navigations](https://developer.chrome.com/blog/prerender-pages/).
 
-Selecting this experiment checkbox adds the **Preloading** section within the **Application** tool.  The **Preloading** section of the list of pages contains a **Prefetching & Prerendering** page, which contains columns:
-* **Started at**
-* **Type**
-* **Trigger**
-* **URL**
-* **Status**
+Selecting this experiment checkbox adds the **Preloading** section within the **Application** tool:
 
 ![The Preloading page in the Application tool](./index-images/preloading-page-of-application-tool.png)
-
 <!--
 Select an element for more details.
 todo old: how select element, where?  that instruction is prominent in UI, so clarify here
 -->
+
+The **Preloading** section of the list of pages contains a **Prefetching & Prerendering** page, which contains columns:
+* **Validity**
+* **Location**
+* **URL**
+* **Action**
+* **Status**
+
+Use the dropdown list to select rule sets, such as **All rule sets**.
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 121.

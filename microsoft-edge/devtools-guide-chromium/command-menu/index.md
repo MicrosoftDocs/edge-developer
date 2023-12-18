@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 09/12/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -32,24 +32,36 @@ The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI 
 
 To open the Command Menu:
 
-*  Click the **Customize and control DevTools** (![Customize icon](./index-images/customize-devtools-icon-light-theme.png)) menu button, and then select **Run command**:
+1. To open DevTools, right-click a webpage and then select **Inspect**.
+
+1. Click the **Customize and control DevTools** (![Customize icon](./index-images/customize-devtools-icon.png)) button, and then select **Run command**:
 
    ![The Run Command](./index-images/command-menu-options-run-command.png)
 
    Or, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
+   The Command Menu initially opens with a `>` character prepended to its text box:
+
+   ![The command character](./index-images/command-menu-run-command.png)
+
+1. Start typing a keyword, and then select a command from the filtered list.
 
 
 <!-- ====================================================================== -->
 ## Display other available actions
 
-The Command Menu initially opens with a `>` character prepended to its text box:
-
-![The command character](./index-images/command-menu-run-command.png)
-
-To show other actions that are available from the Command Menu, delete the `>` character and then type **?**:
+To show other kinds of Command Menu actions besides **Run Command**, delete the `>` character and then type **?**:
 
 ![Other available actions](./index-images/command-menu-help.png)
+
+Available actions include:
+* **Open File**
+* **Run Command**
+* **Go to Symbol**
+* **Go to Line**
+* **Run Snippet**
+
+The actions other than **Run Command** require input, such as a filename or line number.
 
 
 <!-- ====================================================================== -->

@@ -53,13 +53,13 @@ You can now use **Edit and Replay** on requests in the [Network Log](../../../ne
 
 ![Edit and Replay a request in the NetworkLog with the Network Console](./devtools-images/experiments-network-console-edit-and-replay.png)
 
-A new panel, the **Network Console** opens in the [DevTools Drawer](../../../customize/index.md#drawer) and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request (if needed) and select **Send**.
+A new panel, the **Network Console** opens in the [DevTools Drawer](../../../customize/index.md#quick-view) and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request (if needed) and select **Send**.
 
 You can also use the **Network Console** to create and send HTTP requests directly from the DevTools.
 
 ![The Network Console panel](./devtools-images/experiments-network-console.png)
 
-Tip: To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#drawer), see [moving tools between panels](#move-tools-between-panels).
+Tip: To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#quick-view), see [moving tools between panels](#move-tools-between-panels).
 
 Update: This feature has been released and is no longer experimental.<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
 
@@ -114,7 +114,7 @@ Update: This feature has been released and is no longer experimental.<!-- Note: 
 Chromium issue [#897944](https://crbug.com/897944)
 
 See also:
-* [About Panel and Drawer tools](../../../overview.md#about-panel-and-drawer-tools) in _Overview of DevTools_.
+* [About Activity Bar and Quick View tools](../../../overview.md#about-activity-bar-and-quick-view-tools) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
