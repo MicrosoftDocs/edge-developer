@@ -97,7 +97,7 @@ Click **inspect** for the tab or PWA that you want to debug, to open DevTools.  
 <!-- ====================================================================== -->
 ### Resize the DevTools drawer more easily
 
-In Microsoft Edge 83 or earlier, you resized the [DevTools Drawer](../../../customize/index.md#drawer) by hovering inside the toolbar of the drawer.  The drawer behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it.  The following image shows how resizing the drawer worked in Microsoft Edge version 83 or earlier:
+In Microsoft Edge 83 or earlier, you resized the [DevTools Drawer](../../../customize/index.md#quick-view) by hovering inside the toolbar of the drawer.  The drawer behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it.  The following image shows how resizing the drawer worked in Microsoft Edge version 83 or earlier:
 
 ![Resizing the DevTools Drawer in Microsoft Edge 83](./devtools-images/drawer-83.png)
 
@@ -294,7 +294,7 @@ The **Properties** pane in the **Elements** tool is deprecated.  Run `console.di
 #### Reference
 
 * [console.dir()](../../../console/api.md#dir)
-* [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object)
+* [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object-0-4)
 
 
 <!-- ====================================================================== -->

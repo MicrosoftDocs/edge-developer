@@ -134,7 +134,7 @@ External links:
 *  [Port a Google Chrome extension](https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension)
 *  [Build a Safari App extension](https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension)
 *  [Your first extension (Firefox)](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
-*  [Get started tutorial (Chrome)](https://developer.chrome.com/extensions/getstarted)
+*  [Extensions > Get started](https://developer.chrome.com/docs/extensions/get-started/)
 *  [Get started (Opera)](https://dev.opera.com/extensions/getting-started)
 
 Extensions for Visual Studio Code rather than for Microsoft Edge:
