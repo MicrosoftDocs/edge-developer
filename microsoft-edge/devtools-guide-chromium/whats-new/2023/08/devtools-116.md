@@ -42,7 +42,7 @@ Prior to Microsoft Edge 116, if you were in Focus Mode while using the React Dev
 
 See also:
 * [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) - extension at the Edge Add-ons store
-* [What's New entries about Focus Mode](https://learn.microsoft.com/search/?scope=Microsoft%20Edge&terms=focus%20mode)
+* [What's New entries about Focus Mode](/search/?scope=Microsoft%20Edge&terms=focus%20mode)
 <!--
 * [Dec. 2023 blog post about Focus Mode]() - todo: link -->
 
