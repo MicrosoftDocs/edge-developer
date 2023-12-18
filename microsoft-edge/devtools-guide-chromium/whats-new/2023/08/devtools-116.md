@@ -77,7 +77,6 @@ See also:
 
 Microsoft Edge 116 also includes the following updates from the Chromium project:
 
-<!-- todo: maybe delete some links -->
 * [Improved debugging of missing stylesheets](https://developer.chrome.com/blog/new-in-devtools-116/#stylesheets)
 * [Linear timing support in Elements > Styles > Easing Editor](https://developer.chrome.com/blog/new-in-devtools-116/#linear)
 * [Storage buckets support and metadata view](https://developer.chrome.com/blog/new-in-devtools-116/#storage)
