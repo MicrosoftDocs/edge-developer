@@ -292,7 +292,6 @@ Status:
 
 <!-- ====================================================================== -->
 ## Disable Indentation Markers temporarily
-
 <!-- no (?) link -->
 
 _new as of Microsoft Edge 122_
