@@ -5,33 +5,53 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/15/2023
+ms.date: 08/01/2023
 ---
 # What's New in DevTools (Microsoft Edge 116)
+
+<!-- todo: ms.date above: put date of 116 Stable -->
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
-## Move the location of the Activity Bar in Focus Mode
+## "Move Activity Bar" button in the Activity bar
 
-<!-- Subtitle: You can now use Microsoft Entra ID for authentication instead of Personal Access Tokens (PATs). You can connect to multiple symbol servers and filter which sourcemaps you want DevTools to fetch. -->
+<!-- Subtitle: __ -->
+<!-- todo: need Subtitle sentence -->
 
-While in Focus Mode, you now have the ability to easily move the activity bar location with a click of a button. By default, the activity bar's orientation will be horizontal, but you can also make it vertical by clicking the "Move activity bar" button.
+While in Focus Mode, you now have the ability to easily move the Activity bar's location with a click of a button.  In the upper left of DevTools, to the right of the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button.  The new button is always available in the Activity bar, instead of having to go into the DevTools **Settings** (...) menu.
 
-![Move the location of hte Activity Bar in Focus Mode](./devtools-116-images/move-location-activity-bar.gif)
+For example, by default, the Activity bar's orientation is horizontal, but you can change it to vertical by simply clicking the new **Move Activity Bar to left** button:
+
+![Moving the location of the Activity Bar in Focus Mode](./devtools-116-images/move-location-activity-bar.gif)
+
+See also:
+* [What's New entries about Focus Mode](/search/?scope=Microsoft%20Edge&terms=focus%20mode)
+<!--
+* [Dec. 2023 blog post about Focus Mode]() - todo: link -->
 
 
 <!-- ====================================================================== -->
-## The React Developer Tools extensions works in Focus Mode
+## React Developer Tools extension retains state of tools in Focus Mode
 
-Prior to Edge 116, if you were in Focus Mode, the state of a panel wasn't maintained when you switched to another panel and switched back while using the React Developer Tools extension. This issue has been resolved.
+<!-- Subtitle: The React Developer Tools extension retains the state of tools while in Focus Mode. -->
+<!-- todo: write actual subtitle -->
+
+Prior to Microsoft Edge 116, if you were in Focus Mode while using the React Developer Tools extension, the state of a tool in DevTools wasn't maintained when you switched to another tool and then switched back.  This issue has been resolved.
+
+See also:
+* [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) - extension at the Edge Add-ons store
+* [What's New entries about Focus Mode](https://learn.microsoft.com/search/?scope=Microsoft%20Edge&terms=focus%20mode)
+<!--
+* [Dec. 2023 blog post about Focus Mode]() - todo: link -->
 
 
 <!-- ====================================================================== -->
-## Containment Diff view in the Memory tool when multiple heap snapshots
+## Containment Diff view in Memory tool when multiple heap snapshots
 
-<!-- Subtitle: New icons and buttons give an update to the DevTools look and feel. -->
+<!-- Subtitle: __ -->
+<!-- todo: need Subtitle sentence -->
 
 When there's more than one heap snapshot, the "Containment Diff" view will be available in the View dropdown:
 
@@ -39,16 +59,23 @@ When there's more than one heap snapshot, the "Containment Diff" view will be av
 
 The Containment Diff view shows only the new objects, deleted objects, or objects in the retaining chain that will eventually lead to either a new or deleted node.  The "." symbol means that it's a node in the retaining chain.  Expanding the view displays the node that's new or deleted.
 
+See also:
+* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+
 
 <!-- ====================================================================== -->
-## Added a new icon for the Recorder panel
+## Added an icon in the Recorder tool's tab
 
-Before Microsoft Edge 116, there was no icon for the Recorder tool:
+<!-- Subtitle: __ -->
+<!-- todo: need Subtitle sentence -->
+
 <!-- todo: can't just mention update of Recorder tool, since the Recorder tool has never been mentioned or introduced as new in What's New.  Need What's New entry "Microsoft Edge v123 added the Recorder tool from the Chromium engine" -->
+
+Before Microsoft Edge 116, there was no icon in the **Recorder** tool's tab on the Activity bar:
 
 ![Recorder panel with no icon](./devtools-116-images/recorder-before.png)
 
-Microsoft Edge 116 adds a new icon:
+Microsoft Edge 116 adds an icon in the **Recorder** tool's tab on the Activity bar:
 
 ![Recorder panel with new icon](./devtools-116-images/recorder-after.png)
 
