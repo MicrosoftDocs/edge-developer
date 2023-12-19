@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 117)
-description: "New Experiment: Explain console errors/warnings with Copilot in Sidebar. Console in Quick View opens with normal content while in Focus Mode. Accessibility Fixes. And more."
+description: "New Experiment: Explain console errors/warnings with Copilot in Sidebar. Console in Quick View opens with content while in Focus Mode. Accessibility Fixes. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -34,13 +34,13 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Console in Quick View opens with normal content while in Focus Mode
+## Console has content when re-opened in Quick View
 
-Before Microsoft Edge 117, when you opened the Console tool in Quick View (the secondary toolbar and panel in Focus Mode), the contents would be blank after closing and re-opening. This issue has been resolved; the Console re-opens with the expected content.
+Before Microsoft Edge 117, the Console was blank after closing and then re-opening the Console tool in Quick View (the secondary toolbar and panel in Focus Mode).  This issue has been resolved; the Console re-opens with the expected content.
 
 
 <!-- ====================================================================== -->
-## Accessibility Fixes 
+## Accessibility fixes 
 
 In Microsoft Edge 117, the following accessibility issues have been addressed:
 
