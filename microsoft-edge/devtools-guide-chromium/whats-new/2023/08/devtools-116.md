@@ -40,7 +40,7 @@ See also:
 <!-- ====================================================================== -->
 ## "Containment Diff" view in Memory tool when multiple heap snapshots
 
-In the **Memory** tool, if there's more than one heap snapshot, a **Containment Diff** view is now available in the **Perspective** dropdown menu in the upper left of the **Memory** tool:
+In the **Memory** tool, when there's more than one heap snapshot, a **Containment Diff** view is now available in the **Perspective** dropdown menu in the upper left of the **Memory** tool:
 
 ![The Containment Diff view in the Memory tool](./devtools-116-images/containment-diff.png)
 
