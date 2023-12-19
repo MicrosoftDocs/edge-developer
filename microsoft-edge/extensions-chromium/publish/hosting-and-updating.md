@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/04/2022
+ms.date: 12/18/2023
 ---
 # Extension hosting
 
@@ -17,10 +17,9 @@ Most extensions are published to the [Microsoft Edge Add-ons website](https://mi
 
 All extensions are distributed to users as a special archive (`.zip`) file with a `.crx` suffix.  Extensions published to the Microsoft Edge Add-ons website are uploaded as `.zip` files.  The publishing process automatically converts the `.zip` file into a `.crx` file.
 
-The following two scenarios don't require you to publish your extension in the Microsoft Edge Add-ons website.
-
-*   Extensions distributed using Enterprise policy.
-*   Using unpacked extension directories on a local machine when Microsoft Edge is in developer mode.
+The following two scenarios don't require you to publish your extension in the Microsoft Edge Add-ons website:
+*  Extensions that are distributed using Enterprise policy.
+*  Using unpacked extension directories on a local machine when Microsoft Edge is in developer mode.
 
 In both cases, Microsoft Edge periodically checks extension hosts for new versions of installed extensions and automatically updates them without user intervention.
 
