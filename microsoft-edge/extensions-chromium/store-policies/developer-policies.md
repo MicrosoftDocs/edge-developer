@@ -113,7 +113,7 @@ Any alteration of browser settings, such as new tabs and search engines, should 
 
 Extensions must declare all permissions that are required for their functionality in the manifest.  Your extension must only request those permissions that are essential for functioning.
 
-Any [declarativeNetRequest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/declarativeNetRequest) rules must be clearly declared within the extension, and should not be imported remotely unless necessary for functionality.
+Any `declarativeNetRequest` rules must be clearly declared within the extension, and should not be imported remotely unless necessary for functionality.
 
 Extensions must not collect or track sensitive user information without clear consent, and must clearly state any user data handling in their privacy policy.  User-sensitive data must be encrypted by using proper mechanisms such as SSL, and must not be transported via insecure channels.
 
@@ -185,12 +185,12 @@ Your extension must start up promptly, and must stay responsive to user input.  
 <!-- ------------------------------ -->
 #### 1.5 Personal information
 
-The following requirements apply to extensions that access Personal Information.  _Personal Information_ includes all information or data that identifies or could be used to identify a person, or that is associated with such information or data.
+The following requirements apply to extensions that access personal information.   _Personal information_ includes all information or data that identifies or could be used to identify a person, or that is associated with such information or data.
 
 
 ###### 1.5.1 Collect personal information only when necessary
 
-Your extension may collect, access, use, or transmit Personal Information (including web browsing activity) only if required by and only for use in a prominently disclosed, user-facing feature.
+Your extension may collect, access, use, or transmit personal information (including web browsing activity) only if required by and only for use in a prominently disclosed, user-facing feature.
 
 You must clearly state the data handling practices of your extension at the time of installation, including any transfer or use of user data.
 
@@ -205,14 +205,14 @@ You must have a clear and comprehensive privacy policy that outlines your data h
 
 Your privacy policy must describe the controls that users have over the use and sharing of their information, how they access their information, and it must comply with applicable laws and regulations.  Your privacy policy must be kept up-to-date as you add new features and functionality to your extension.
 
-The privacy policy provided should be relevant to the product and should not use the Microsoft privacy statement unless the extension is an official Microsoft extension.  Additionally, the privacy policy should primarily refer to the Microsoft Edge browser and not other browsers, and any data collected should be aggregated and anonymized and used in accordance with applicable privacy and other jurisdictional legal requirements.
+The privacy policy provided should be relevant to the product and should not use the Microsoft privacy statement unless the extension is an official Microsoft extension.  Additionally, the privacy policy should primarily refer to the Microsoft Edge browser and not other browsers.  Any data that's collected should be aggregated and anonymized, and must used in accordance with applicable privacy and other jurisdictional legal requirements.
 
 If you provide Microsoft with your privacy policy, then you agree to permit Microsoft to share such privacy policy with users of your extension.
 
 
 ###### 1.5.3 Sharing data with third parties
 
-You may publish the Personal Information of users of your extension to an outside service or third-party through your extension or associated metadata only after obtaining opt-in consent from those users.  Opt-in consent means the users give their express permission in the user interface of your extension for the requested activity, after you:
+You may publish the personal information of users of your extension to an outside service or third-party through your extension or associated metadata only after obtaining opt-in consent from those users.  Opt-in consent means the users give their express permission in the user interface of your extension for the requested activity, after you:
 
 * Describe to your users how the information is accessed, used or shared and indicate the types of parties to whom it is disclosed.
 
@@ -221,22 +221,22 @@ You may publish the Personal Information of users of your extension to an outsid
 
 ###### 1.5.4 Sharing information of non-users
 
-If you publish a person's Personal Information to an outside service or third-party through your extension or the metadata, but the person whose information is being shared is not a user of your extension:
+If you publish a person's personal information to an outside service or third-party through your extension or the metadata, but the person whose information is being shared is not a user of your extension:
 
-1. You must obtain express written consent to publish that Personal Information.
+1. You must obtain express written consent to publish that personal information.
 
 1. You must permit the person whose information is shared to withdraw that consent at any time.
 
 1. Your privacy policy must clearly disclose that you may collect personal information in this manner.
 
-1. If required by applicable law you must delete the Personal Information of any individual upon request, including individuals whose information you collect in this manner.
+1. If required by applicable law you must delete the personal information of any individual upon request, including individuals whose information you collect in this manner.
 
-1. If your extension provides users with access to another person's Personal Information, this requirement also applies.
+1. If your extension provides users with access to another person's personal information, this requirement also applies.
 
 
 ###### 1.5.5 Transmit information securely
 
-Your extension must only use modern and secure cryptography methods to collect, store, or transmit Personal Information.
+Your extension must only use modern and secure cryptography methods to collect, store, or transmit personal information.
 
 You must not publicly disclose any financial or payment information related to your extension or its users.
 
@@ -361,7 +361,7 @@ If you purchase or create promotional ad campaigns to promote your extension thr
 
 ###### 1.10.5 Notifying users of opt-out for interest-based advertising
 
-Your privacy statement or terms of use must let users know you plan to send Personal Information to the ad service provider and must tell users how they may opt-out of interest-based advertising.
+Your privacy statement or terms of use must let users know you plan to send personal information to the ad service provider and must tell users how they may opt-out of interest-based advertising.
 
 
 ###### 1.10.6 Other guidelines
@@ -370,7 +370,7 @@ If your extension is directed at children under the age of 13, as defined in the
 
 
 <!-- ====================================================================== -->
-## 2 Content policies
+## 2. Content policies
 
 The following policies apply to content and metadata offered for distribution in [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
@@ -530,7 +530,7 @@ If your extension provides content (such as user-generated, retail, or other web
 <!-- ------------------------------ -->
 #### 2.13 Videos
 
-If you submit a promotional video in the listing, then it should strictly adhere to our content guidelines.  If you choose to provide a YouTube link, you must ensure that advertisements are turned off for the specific videos that you want to embed.  For more information on turning on or off ads on YouTube, see [YouTube advertising formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
+If you submit a promotional video in the listing, then it should strictly adhere to these content policies.  If you choose to provide a YouTube link, you must ensure that advertisements are turned off for the specific videos that you want to embed.  For more information on turning on or off ads on YouTube, see [YouTube advertising formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
 
 
 <!-- ====================================================================== -->
