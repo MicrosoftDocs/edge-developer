@@ -68,14 +68,9 @@ Microsoft Edge 117 also includes the following updates from the Chromium project
 * [Sources settings enabled by default: Code folding and automatic file reveal](https://developer.chrome.com/blog/new-in-devtools-117#sources)
 * [Improved debugging of third-party cookie issues](https://developer.chrome.com/blog/new-in-devtools-117#third-party-cookies)
 * [Debug preloading in the Application panel](https://developer.chrome.com/blog/new-in-devtools-117#preloading)
-* [New colors](https://developer.chrome.com/blog/new-in-devtools-117#colors)
-* [Lighthouse 10.4.0](https://developer.chrome.com/blog/new-in-devtools-117#lighthouse)
 * [The C/C++ WebAssembly debugging extension for DevTools is now open source](https://developer.chrome.com/blog/new-in-devtools-117#debug-cpp)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-117#misc)
 * [New experimental features](https://developer.chrome.com/blog/new-in-devtools-117#experimental)
    * [New rendering emulation: `prefers-reduced-transparency`](https://developer.chrome.com/blog/new-in-devtools-117#reduced-transparency)
-   * [Enhanced Protocol monitor](https://developer.chrome.com/blog/new-in-devtools-117#protocol-monitor)
-<!-- todo: maybe delete some links -->
 
 
 <!-- ====================================================================== -->
