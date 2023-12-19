@@ -15,7 +15,7 @@ ms.date: 08/17/2023
 <!-- ====================================================================== -->
 ## New "Move Activity Bar" button directly on the Activity Bar
 
-You now can quickly move the Activity Bar (the main toolbar) with a single mouse-click.  In the upper left of DevTools, next to the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button:
+In Focus Mode, you now can quickly move the Activity Bar with a single mouse-click.  In the upper left of DevTools, next to the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button:
 
 ![The 'Move Activity Bar to left' button directly on the Activity Bar](./devtools-116-images/move-activity-bar-to-left.png)
 
