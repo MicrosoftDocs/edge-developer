@@ -296,8 +296,9 @@ Status:
 
 _new as of Microsoft Edge 122_
 
-Enables temporarily disabling indentation markers.
-<!-- todo: need description -->
+Temporarily disables the indentation markers in the **Sources** tool. The indentation markers are the vertical lines that indicate the indentation level of the code:
+
+![The Sources tool, showing indentation markers](./index-images/indentation-markers.png)
 
 <!-- See also:
 * []()
