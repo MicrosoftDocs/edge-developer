@@ -13,6 +13,7 @@ The following What's New entries cover older releases.
 
 <!-- maintenance notes: adjust placement and indent in toc.yml too -->
 
+* [What's New in DevTools (Microsoft Edge 107)](2022/10/devtools-107.md)
 * [What's New in DevTools (Microsoft Edge 106)](2022/09/devtools-106.md)
 * [What's New in DevTools (Microsoft Edge 105)](2022/09/devtools-105.md)
 * [What's New in DevTools (Microsoft Edge 104)](2022/08/devtools-104.md)
