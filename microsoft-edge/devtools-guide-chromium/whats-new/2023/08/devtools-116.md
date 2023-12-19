@@ -44,7 +44,7 @@ In the **Memory** tool, when there's more than one heap snapshot, a **Containmen
 
 ![The Containment Diff view in the Memory tool](./devtools-116-images/containment-diff.png)
 
-The Containment Diff view shows only the new objects, deleted objects, or objects in the retaining chain that will eventually lead to either a new or deleted node.  The "." symbol means that it's a node in the retaining chain.  Expanding the view displays the node that's new or deleted.
+The **Containment Diff** view shows only the new objects, deleted objects, or objects in the retaining chain that will eventually lead to either a new or deleted node.  The • dot symbol means that it's a node in the retaining chain.  Expanding the view displays the node that's new or deleted.
 
 For example: 
 
@@ -52,7 +52,7 @@ For example:
 
 1. Right-click the webpage and then select **Inspect**.  DevTools opens.
 
-1. In the Activity bar, open the **Memory** tool.
+1. In the Activity bar, select the **Memory** tool.
 
 1. Click the **Take heap snapshot** button, in the upper left.  **Snapshot 1** is listed in the **Profiles** section.
 
@@ -62,7 +62,7 @@ For example:
 
 1. In the **Perspective** dropdown menu, instead of **Summary**, select **Containment Diff**.
 
-1. In the **Object** pane, expand an entry.
+1. In the **Object** column, expand an entry.
 
 See also:
 * [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
