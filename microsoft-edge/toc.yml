@@ -1015,7 +1015,7 @@
                 - name: App Developer Agreement Addendum for Microsoft Edge program users
                   href: extensions-chromium/store-policies/ada-addendum.md
 
-                - name: Microsoft Edge Add-ons store developer policies
+                - name: Developer policies for the Microsoft Edge Add-ons store
                   href: extensions-chromium/store-policies/developer-policies.md
 
             - name: Microsoft Edge Add-ons API
