@@ -40,14 +40,33 @@ See also:
 <!-- ====================================================================== -->
 ## "Containment Diff" view in Memory tool when multiple heap snapshots
 
-In the **Memory** tool, if there's more than one heap snapshot, a **Containment Diff** view is now available through the **View** dropdown menu in the upper left of the **Memory** tool:
+In the **Memory** tool, if there's more than one heap snapshot, a **Containment Diff** view is now available in the **Perspective** dropdown menu in the upper left of the **Memory** tool:
 
-![The Containment Diff view in the Memory tool](./devtools-116-images/new-view-memory-panel.gif)
+![The Containment Diff view in the Memory tool](./devtools-116-images/containment-diff.png)
 
 The Containment Diff view shows only the new objects, deleted objects, or objects in the retaining chain that will eventually lead to either a new or deleted node.  The "." symbol means that it's a node in the retaining chain.  Expanding the view displays the node that's new or deleted.
 
+For example: 
+
+1. Open the example webpage [Example 9: DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html) in a new window or tab.
+
+1. Right-click the webpage and then select **Inspect**.  DevTools opens.
+
+1. In the Activity bar, open the **Memory** tool.
+
+1. Click the **Take heap snapshot** button, in the upper left.  **Snapshot 1** is listed in the **Profiles** section.
+
+1. In the rendered example webpage, click the **Create tree** button.
+
+1. In the **Memory** tool, click the **Take heap snapshot** button again.  **Snapshot 2** is added in the **Profiles** section.
+
+1. In the **Perspective** dropdown menu, instead of **Summary**, select **Containment Diff**.
+
+1. In the **Object** pane, expand an entry.
+
 See also:
 * [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+* [Demo webpage: Example 9: DOM leaks bigger than expected](../../../memory-problems/heap-snapshots.md#demo-webpage-example-9-dom-leaks-bigger-than-expected) in _Record heap snapshots using the Memory tool_.
 
 
 <!-- ====================================================================== -->
