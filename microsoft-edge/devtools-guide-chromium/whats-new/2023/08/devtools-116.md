@@ -17,7 +17,9 @@ ms.date: 08/17/2023
 
 While in Focus Mode, you now have the ability to easily move the Activity bar's location with a single button-click.  In the upper left of DevTools, to the right of the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button:
 
-![The 'Move Activity Bar' button directly on the Activity bar](./devtools-116-images/move-location-activity-bar.gif)
+![The 'Move Activity Bar to left' button directly on the Activity bar](./devtools-116-images/move-activity-bar-to-left.png)
+
+![The 'Move Activity Bar to top' button directly on the Activity bar](./devtools-116-images/move-activity-bar-to-top.png)
 
 For example, by default, the Activity bar's orientation is horizontal, but you can change it to vertical by simply clicking the new **Move Activity Bar to left** button in the Activity bar, instead of having to go into the DevTools **Settings** (...) menu.
 
