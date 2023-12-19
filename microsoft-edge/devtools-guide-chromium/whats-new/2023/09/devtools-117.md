@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 117)
-1. description: "New Experiment: Explain console errors/warnings with Copilot in Sidebar. Console in Quick View opens with normal content while in Focus Mode. Accessibility Fixes."
+description: "New Experiment: Explain console errors/warnings with Copilot in Sidebar. Console in Quick View opens with normal content while in Focus Mode. Accessibility Fixes."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
