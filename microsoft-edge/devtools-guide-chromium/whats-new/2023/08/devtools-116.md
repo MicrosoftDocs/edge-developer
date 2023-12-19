@@ -53,26 +53,6 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Recorder tool's tab includes an icon
-
-<!-- todo: can't just mention update of Recorder tool, since the Recorder tool has never been mentioned or introduced as new in What's New.  Need What's New entry "Microsoft Edge v123 added the Recorder tool from the Chromium engine" -->
-
-Before Microsoft Edge 116, there was no icon in the **Recorder** tool's tab on the Activity bar:
-
-![Recorder panel with no icon](./devtools-116-images/recorder-before.png)
-
-Microsoft Edge 116 adds an icon in the **Recorder** tool's tab on the Activity bar:
-
-![Recorder panel with new icon](./devtools-116-images/recorder-after.png)
-
-See also:
-* [Record, replay, and measure user flows (Recorder tool)](https://developer.chrome.com/docs/devtools/recorder)
-* [Recorder features reference](https://developer.chrome.com/docs/devtools/recorder/reference)
-* [Customize the Recorder with extensions](https://developer.chrome.com/docs/devtools/recorder/extensions)
-<!-- todo: link to local articles -->
-
-
-<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 Microsoft Edge 116 also includes the following updates from the Chromium project:
