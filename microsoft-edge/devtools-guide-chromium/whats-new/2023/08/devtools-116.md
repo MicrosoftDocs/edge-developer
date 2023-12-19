@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 116)
-description: "Activity bar has a Move Activity Bar button.  React Developer Tools extension works in Focus Mode.  A Containment Diff view in the Memory tool when multiple heap snapshots.  And more."
+description: "Activity Bar has a Move Activity Bar button.  React Developer Tools extension works in Focus Mode.  A Containment Diff view in the Memory tool when multiple heap snapshots.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -13,15 +13,15 @@ ms.date: 08/17/2023
 
 
 <!-- ====================================================================== -->
-## New "Move Activity Bar" button directly on the Activity bar
+## New "Move Activity Bar" button directly on the Activity Bar
 
-While in Focus Mode, you now can quickly move the Activity bar's location with a single button-click.  In the upper left of DevTools, next to the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button:
+While in Focus Mode, you now can quickly move the Activity Bar's location with a single button-click.  In the upper left of DevTools, next to the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button:
 
-![The 'Move Activity Bar to left' button directly on the Activity bar](./devtools-116-images/move-activity-bar-to-left.png)
+![The 'Move Activity Bar to left' button directly on the Activity Bar](./devtools-116-images/move-activity-bar-to-left.png)
 
-![The 'Move Activity Bar to top' button directly on the Activity bar](./devtools-116-images/move-activity-bar-to-top.png)
+![The 'Move Activity Bar to top' button directly on the Activity Bar](./devtools-116-images/move-activity-bar-to-top.png)
 
-For example, by default, the Activity bar's orientation is horizontal, but you can change it to vertical by simply clicking the new **Move Activity Bar to left** button in the Activity bar, instead of having to go into the DevTools **Settings** (...) menu.
+For example, by default, the Activity Bar's orientation is horizontal, but you can change it to vertical by simply clicking the new **Move Activity Bar to left** button in the Activity Bar, instead of having to go into the DevTools **Settings** (...) menu.
 
 See also:
 * [What's New entries about Focus Mode](/search/?scope=Microsoft%20Edge&terms=focus%20mode)
@@ -52,7 +52,7 @@ For example:
 
 1. Right-click the webpage and then select **Inspect**.  DevTools opens.
 
-1. In the Activity bar, select the **Memory** tool.
+1. In the Activity Bar, select the **Memory** tool.
 
 1. Click the **Take heap snapshot** button, in the upper left.  **Snapshot 1** is listed in the **Profiles** section.
 
