@@ -27,9 +27,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Updates to the "Explain console errors/warnings with Copilot in Sidebar" experiment
+## Updates to the "Explain Console errors using Copilot in Sidebar" experiment
 
-To explain errors that are listed in the DevTools Console, you can use Microsoft Copilot in the Microsoft Edge Sidebar.  To enable this experiment, do either of the following:
+There are several updates to the feature which explains errors or warnings that are listed in the DevTools Console by using Microsoft Copilot in the Microsoft Edge Sidebar.  To enable this experimental feature, do either of the following:
 
 * In Microsoft Edge, go to `edge://flags/`, find the **Explain DevTools with AI** section, select **Enabled** in the drop-down menu, and then click the **Restart** button.
 
@@ -37,7 +37,7 @@ To explain errors that are listed in the DevTools Console, you can use Microsoft
 
 
 <!-- --------------------------------- -->
-#### Updated icon and tooltip on each error in Console
+#### Updated icon and tooltip on each error
 
 In Console error entries, the Copilot chat icon has been updated, and the tooltip text has been updated to **ask Copilot: "Explain this error"**:
 
