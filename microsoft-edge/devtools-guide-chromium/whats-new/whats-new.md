@@ -19,6 +19,7 @@ What's New articles correspond to historical releases of Microsoft Edge, and are
 -->
 
 * [What's New in DevTools (Microsoft Edge 117)](2023/09/devtools-117.md)
+* [What's New in DevTools (Microsoft Edge 116)](2023/08/devtools-116.md)
 * [What's New in DevTools (Microsoft Edge 115)](2023/07/devtools-115.md)
 * [What's New in DevTools (Microsoft Edge 114)](2023/06/devtools-114.md)
 * [What's New in DevTools (Microsoft Edge 113)](2023/05/devtools-113.md)
