@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 118)
-description: "DevTools defaults to no throttling. Updates to the 'Explain console errors/warnings with Copilot in Sidebar' experiment. And more."
+description: "DevTools defaults to no throttling instead of offline. Updates to the 'Explain console errors/warnings with Copilot in Sidebar' experiment. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -20,6 +20,11 @@ Before Microsoft Edge 118, there was a bug where DevTools would default to offli
 
 ![DevTools defaults to no throttling](./devtools-118-images/no-throttling.png)
 
+<!-- todo: section is hidden, so can't link there:
+See also:
+* [Emulate Microsoft-recommended hardware and network performance presets](../../../experimental-features/index.md#emulate-microsoft-recommended-hardware-and-network-performance-presets) in _Experimental features in Microsoft Edge DevTools_.
+-->
+
 
 <!-- ====================================================================== -->
 ## Updates to the "Explain console errors/warnings with Copilot in Sidebar" experiment
@@ -31,17 +36,30 @@ To explain errors that are listed in the DevTools Console, you can use Microsoft
 * Start Microsoft Edge from the command line using the feature flag `msEdgeAIExplainConsoleError`.
 
 
+<!-- --------------------------------- -->
+#### Updated icon and tooltip on each error in Console
+
 In Console error entries, the Copilot chat icon has been updated, and the tooltip text has been updated to **ask Copilot: "Explain this error"**:
 
 ![Copilot icon and tooltip text in DevTools](./devtools-118-images/chat-icon-and-message.png)
 
 
-The first time you use this feature, a consent form dialog now appears:
+<!-- --------------------------------- -->
+#### Consent dialog
+
+The first time you use this feature, a consent dialog now appears, titled **Allow Microsoft to access page content**, containing a **Confirm and continue chatting** button:
 
 ![Explain console errors/warnings with Copilot consent form](./devtools-118-images/consent-form.png)
 
 
+<!-- --------------------------------- -->
+#### Chat includes error message and stack info
+
 The chat prompt now includes the error message and stack information.
+
+
+See also:
+* [Explain DevTools Console errors and source code using Copilot in Edge](../../../experimental-features/copilot-explain.md)
 
 
 <!-- ====================================================================== -->
