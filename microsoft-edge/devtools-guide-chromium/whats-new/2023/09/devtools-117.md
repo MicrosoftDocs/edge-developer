@@ -15,9 +15,9 @@ ms.date: 09/14/2023
 <!-- ====================================================================== -->
 ## New experiment: Explain console errors/warnings with Copilot in Sidebar
 
-You can use Copilot in the Microsoft Edge Sidebar to explain DevTools console errors.  If the Sidebar is enabled in Microsoft Edge, you can search for or explain console errors using Copilot in Sidebar, by clicking the **Explain this message in sidebar** button next to a message in the Console:
+You can use Microsoft Copilot in the Microsoft Edge Sidebar to explain DevTools console errors.  If the Sidebar is enabled in Microsoft Edge, you can search for or explain console errors using Microsoft Copilot in the Sidebar, by clicking the **Explain this message in sidebar** button next to a message in the Console:
 
-![Explain console errors/warnings with Copilot](./devtools-117-images/explain-console-errors-in-sidebar.gif)
+![Explain console errors/warnings with Copilot](./devtools-117-images/copilot-error-explanation.png)
 
 This feature is available as an experiment starting in Microsoft Edge 117.  This feature is not available when the Sidebar is turned off.
 
