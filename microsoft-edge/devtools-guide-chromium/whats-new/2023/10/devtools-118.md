@@ -75,8 +75,6 @@ Microsoft Edge 118 also includes the following updates from the Chromium project
    * [Syntax highlighting and pretty-printing for more script types](https://developer.chrome.com/blog/new-in-devtools-118#syntax)
 * [Emulate prefers-reduced-transparency media feature](https://developer.chrome.com/blog/new-in-devtools-118#reduced-transparency)
 * [Accessibility improvements](https://developer.chrome.com/blog/new-in-devtools-118#accessibility)
-<!-- todo: maybe remove some links -->
-
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
