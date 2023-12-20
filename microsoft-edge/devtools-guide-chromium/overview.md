@@ -361,7 +361,7 @@ If there isn't enough space in the **Activity Bar** to display all of the pinned
 
 To unpin a tool from the **Activity Bar**, right-click the tool's tab and then select **Remove from Activity Bar**:
 
-![The right-click menu of the Performance tool's tab, to remove the tool from the Activity bar](./overview-images/remove-tool.png)
+![The right-click menu of the Performance tool's tab, to remove the tool from the Activity Bar](./overview-images/remove-tool.png)
 
 
 <!-- ------------------------------ -->
@@ -624,17 +624,11 @@ See also:
 <!-- ====================================================================== -->
 <!-- ## Clipboard: How to open DevTools and any specific tool tab
 
-todo: after more Focus Mode updates of docs, around Aug 2023, update this template to reflect Focus Mode UI (eg no "More Tabs" icon/button).
-
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **__** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./overview-images/more-tabs-icon-light-theme.png)) button [that's not in Focus Mode], or else the **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the Activity Bar, select the **__** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
 
-
-don't need, if have the above step:
-1. In DevTools, on the main toolbar, click the **More tools** (![More Tools icon](./overview-images/more-tools-icon-light-theme.png)) button, and then select **(toolname)**.
-
-1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tabs** (![More tabs icon](./overview-images/more-tabs-icon-light-theme.png)) button.
+1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
 
 
 #### Clipboard entry for opening a specific Settings page:
@@ -655,7 +649,6 @@ icon tagging to maintain here & propagate:
 to paste these into articles, always need to add ../ prefix:
 click the **Inspect tool** (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) button.
 click the **Device Emulation** (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button.
-click the **More tabs** (![More tabs icon](./overview-images/more-tabs-icon-light-theme.png)) button.
 click the **More tools** (![More Tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
 click the **JavaScript errors counter** (![JavaScript errors counter icon](./overview-images/javascript-counter-icon-light-theme.png)) button.
 click the **Issues counter** (![Issues counter icon](./overview-images/issues-counter-icon-light-theme.png)) button.

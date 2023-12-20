@@ -98,7 +98,7 @@ See also:
 
 <!-- Subtitle: With the Activity Bar in the horizontal orientation, you can now see the name of each tool and hover over the tool icon to see a tooltip. -->
 
-In previous versions of Microsoft Edge, in Focus Mode, hovering over a tool's icon in the Activity Bar in horizontal mode caused the names of the other tools in the Activity Bar to disappear.  In Microsoft Edge 113, this issue has been fixed.  When you hover over a tool icon to see the name of the tool in a tooltip, the names of the other tools remain displayed in the Activity bar:
+In previous versions of Microsoft Edge, in Focus Mode, hovering over a tool's icon in the Activity Bar in horizontal mode caused the names of the other tools in the Activity Bar to disappear.  In Microsoft Edge 113, this issue has been fixed.  When you hover over a tool icon to see the name of the tool in a tooltip, the names of the other tools remain displayed in the Activity Bar:
 
 ![Hovering over a tool icon in the Activity Bar produces a tooltip with the name of the tool](./devtools-113-images/focus-mode-tooltip.png)
 
