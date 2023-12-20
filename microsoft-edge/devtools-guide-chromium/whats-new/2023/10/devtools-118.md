@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 118)
-description: "DevTools defaults to no throttling. Updates to Explain console errors/warnings with Copilot in Sidebar Experiment."
+description: "DevTools defaults to no throttling. Updates to the 'Explain console errors/warnings with Copilot in Sidebar' experiment. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -15,22 +15,52 @@ ms.date: 10/12/2023
 <!-- ====================================================================== -->
 ## DevTools defaults to no throttling instead of offline
 
-Prior to Edge 118, there was a bug where DevTools would default to offline or become unresponsive when opened. This happened if the "Emulate Microsoft-recommended hardware and network performance presents" experiment was enabled, then disabled, and DevTools was reloaded. We have now fixed this issue so that DevTools defaults to no throttling instead of offline.
+Before Microsoft Edge 118, there was a bug where DevTools would default to offline or become unresponsive when opened.  This happened if the **Emulate Microsoft-recommended hardware and network performance presets** experiment was enabled, then disabled, and DevTools was reloaded.  This issue has been fixed; DevTools defaults to **no throttling** instead of **offline**.
+<!-- todo: this experiment is internal-only; remove this What's New entry? -->
 
 ![DevTools defaults to no throttling](./devtools-118-images/no-throttling.png)
 
+
 <!-- ====================================================================== -->
-## Updates to Explain console errors/warnings with Copilot in Sidebar Experiment
+## Updates to the "Explain console errors/warnings with Copilot in Sidebar" experiment
 
-You can use Microsoft Copilot in the Microsoft Edge Sidebar to explain DevTools console errors. This experiment is disabled by default and can be enabled with feature flag msEdgeAIExplainConsoleError. 
+To explain errors that are listed in the DevTools Console, you can use Microsoft Copilot in the Microsoft Edge Sidebar.  To enable this experiment, do either of the following:
 
-We've updated the chat icon and the tooltip text:
+* In Microsoft Edge, go to `edge://flags/`, find the **Explain DevTools with AI** section, select **Enabled** in the drop-down menu, and then click the **Restart** button.
+
+* Start Microsoft Edge from the command line using the feature flag `msEdgeAIExplainConsoleError`.
+
+
+In Console error entries, the Copilot chat icon has been updated, and the tooltip text has been updated to **ask Copilot: "Explain this error"**:
+
 ![Copilot icon and tooltip text in DevTools](./devtools-118-images/chat-icon-and-message.png)
 
-We've added a consent form dialog that appears the first time you use this feature. If you confirm, then Copilot will proceed to explain the selected console error. 
+
+The first time you use this feature, a consent form dialog now appears:
+
 ![Explain console errors/warnings with Copilot consent form](./devtools-118-images/consent-form.png)
 
-Also, the chat prompt was updated to include the error messages and stack information whenever you invoke the feature.
+
+The chat prompt now includes the error message and stack information.
+
+
+<!-- ====================================================================== -->
+## Announcements from the Chromium project
+
+Microsoft Edge 118 also includes the following updates from the Chromium project:
+
+* [New section for custom properties in Elements > Styles](https://developer.chrome.com/blog/new-in-devtools-118#css)
+* [More local overrides improvements](https://developer.chrome.com/blog/new-in-devtools-118#overrides)
+* [Enhanced search](https://developer.chrome.com/blog/new-in-devtools-118#search)
+* [Improved Sources panel](https://developer.chrome.com/blog/new-in-devtools-118#sources)
+   * [Streamlined workspace in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-118#workspace)
+   * [Reorder panes in Sources](https://developer.chrome.com/blog/new-in-devtools-118#reorder-panes)
+   * [Syntax highlighting and pretty-printing for more script types](https://developer.chrome.com/blog/new-in-devtools-118#syntax)
+* [Emulate prefers-reduced-transparency media feature](https://developer.chrome.com/blog/new-in-devtools-118#reduced-transparency)
+* [Lighthouse 11](https://developer.chrome.com/blog/new-in-devtools-118#lighthouse)
+* [Accessibility improvements](https://developer.chrome.com/blog/new-in-devtools-118#accessibility)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-118#misc)
+<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
@@ -38,7 +68,7 @@ Also, the chat prompt was updated to include the error messages and stack inform
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 117)](https://developer.chrome.com/blog/new-in-devtools-117) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 118)](https://developer.chrome.com/blog/new-in-devtools-118) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
 
 
 <!-- ====================================================================== -->
