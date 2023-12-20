@@ -361,7 +361,7 @@ If there isn't enough space in the **Activity Bar** to display all of the pinned
 
 To unpin a tool from the **Activity Bar**, right-click the tool's tab and then select **Remove from Activity Bar**:
 
-![The right-click menu of the Performance tool's tab, to remove the tool from the Activity bar](./overview-images/remove-tool.png)
+![The right-click menu of the Performance tool's tab, to remove the tool from the Activity Bar](./overview-images/remove-tool.png)
 
 
 <!-- ------------------------------ -->
