@@ -49,7 +49,6 @@ The chat prompt now includes the error message and stack information.
 
 Microsoft Edge 118 also includes the following updates from the Chromium project:
 
-* [New section for custom properties in Elements > Styles](https://developer.chrome.com/blog/new-in-devtools-118#css)
 * [More local overrides improvements](https://developer.chrome.com/blog/new-in-devtools-118#overrides)
 * [Enhanced search](https://developer.chrome.com/blog/new-in-devtools-118#search)
 * [Improved Sources panel](https://developer.chrome.com/blog/new-in-devtools-118#sources)
@@ -57,9 +56,7 @@ Microsoft Edge 118 also includes the following updates from the Chromium project
    * [Reorder panes in Sources](https://developer.chrome.com/blog/new-in-devtools-118#reorder-panes)
    * [Syntax highlighting and pretty-printing for more script types](https://developer.chrome.com/blog/new-in-devtools-118#syntax)
 * [Emulate prefers-reduced-transparency media feature](https://developer.chrome.com/blog/new-in-devtools-118#reduced-transparency)
-* [Lighthouse 11](https://developer.chrome.com/blog/new-in-devtools-118#lighthouse)
 * [Accessibility improvements](https://developer.chrome.com/blog/new-in-devtools-118#accessibility)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-118#misc)
 <!-- todo: maybe remove some links -->
 
 
