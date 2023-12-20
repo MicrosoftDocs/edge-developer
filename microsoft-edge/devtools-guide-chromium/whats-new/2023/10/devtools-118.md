@@ -29,11 +29,7 @@ See also:
 <!-- ====================================================================== -->
 ## Updates to the "Explain Console errors using Copilot in Sidebar" experiment
 
-There are several updates to the feature which explains errors or warnings that are listed in the DevTools Console by using Microsoft Copilot in the Microsoft Edge Sidebar.  To enable this experimental feature, do either of the following:
-
-* In Microsoft Edge, go to `edge://flags/`, find the **Explain DevTools with AI** section, select **Enabled** in the drop-down menu, and then click the **Restart** button.
-
-* Start Microsoft Edge from the command line using the feature flag `msEdgeAIExplainConsoleError`.
+A recent experimental feature explains errors or warnings that are listed in the DevTools Console by using Microsoft Copilot in the Microsoft Edge Sidebar.  In Microsoft Edge 118, this feature has the following updates.
 
 
 <!-- --------------------------------- -->
@@ -47,7 +43,7 @@ In Console error entries, the Copilot chat icon has been updated, and the toolti
 <!-- --------------------------------- -->
 #### Consent dialog
 
-The first time you use this feature, a consent dialog now appears, titled **Allow Microsoft to access page content**, containing a **Confirm and continue chatting** button:
+The first time you use the "explain Console errors using Copilot" feature, a consent dialog now appears, titled **Allow Microsoft to access page content**, containing a **Confirm and continue chatting** button:
 
 ![Explain console errors/warnings with Copilot consent form](./devtools-118-images/consent-form.png)
 
@@ -57,6 +53,15 @@ The first time you use this feature, a consent dialog now appears, titled **Allo
 
 The chat prompt now includes the error message and stack information.
 
+
+<!-- --------------------------------- -->
+#### Enabling the experimental feature
+
+To enable the "explain Console errors using Copilot" feature, do either of the following:
+
+* In Microsoft Edge, go to `edge://flags/`, find the **Explain DevTools with AI** section, select **Enabled** in the drop-down menu, and then click the **Restart** button.
+
+* Start Microsoft Edge from the command line using the feature flag `msEdgeAIExplainConsoleError`.
 
 See also:
 * [Explain DevTools Console errors and source code using Copilot in Edge](../../../experimental-features/copilot-explain.md)
