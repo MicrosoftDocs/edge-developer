@@ -530,7 +530,8 @@ If your extension provides content (such as user-generated, retail, or other web
 <!-- ------------------------------ -->
 #### 2.13 Videos
 
-If you submit a promotional video in the listing, then it should strictly adhere to our [content guidelines](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/store-policies/developer-policies#2-content-policies).
+If you submit a promotional video in the listing, it should strictly adhere to these [content policies](/microsoft-edge/extensions-chromium/store-policies/developer-policies#2-content-policies).
+
 
 <!-- ====================================================================== -->
 ## Complaint and appeal process for Microsoft Edge Add-ons certification 
