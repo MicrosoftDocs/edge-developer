@@ -13,20 +13,6 @@ ms.date: 10/12/2023
 
 
 <!-- ====================================================================== -->
-## DevTools defaults to no throttling instead of offline
-
-Before Microsoft Edge 118, there was a bug where DevTools would default to offline or become unresponsive when opened.  This happened if the **Emulate Microsoft-recommended hardware and network performance presets** experiment was enabled, then disabled, and DevTools was reloaded.  This issue has been fixed; DevTools defaults to **no throttling** instead of **offline**.
-<!-- todo: this experiment is internal-only; remove this What's New entry? -->
-
-![DevTools defaults to no throttling](./devtools-118-images/no-throttling.png)
-
-<!-- todo: section is hidden, so can't link there:
-See also:
-* [Emulate Microsoft-recommended hardware and network performance presets](../../../experimental-features/index.md#emulate-microsoft-recommended-hardware-and-network-performance-presets) in _Experimental features in Microsoft Edge DevTools_.
--->
-
-
-<!-- ====================================================================== -->
 ## Updates to the "Explain Console errors using Copilot in Sidebar" experiment
 
 A recent experimental feature explains errors or warnings that are listed in the DevTools Console by using Microsoft Copilot in the Microsoft Edge Sidebar.  In Microsoft Edge 118, this feature has the following updates.
