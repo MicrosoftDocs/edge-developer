@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 119)
-description: "Updated text color for error pills under the Issues tool. Updated text color for tree items under the Application panel. And more."
+description: "Increased text color contrast for Error pills (badges) in the Issues tool. Increased text color contrast for tree items on the left side of the Application tool. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -13,7 +13,7 @@ ms.date: 11/02/2023
 
 
 <!-- ====================================================================== -->
-## Updated text color for Error pills (badges) in the Issues tool
+## Increased text color contrast for Error pills (badges) in the Issues tool
 
 Before Microsoft Edge 119, users with low vision might face difficulties with the color contrast ratio for the orange oval **Error** pills (or badges) in the **Issues** tool.  The contrast ratio between the foreground color and background color has been increased, to meet the Web Content Accessibility Guidelines for minimum contrast:
 
@@ -25,7 +25,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Updated text color for tree items under the Application tool
+## Increased text color contrast for tree items on the left side of the Application tool
 
 While navigating or hovering over a tree item in the left part of the **Application** tool, the tree item wasn't clearly visible, which might impact users with low vision, or keyboard users.  The text color is now darker, and the tree item is now clearly visible when selected:
 
