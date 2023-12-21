@@ -38,7 +38,7 @@ See also:
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-Microsoft Edge 118 also includes the following updates from the Chromium project:
+Microsoft Edge 119 also includes the following updates from the Chromium project:
 
 * [Improved @property section in Elements > Styles](https://developer.chrome.com/blog/new-in-devtools-119#css)
    * [Editable @property rule](https://developer.chrome.com/blog/new-in-devtools-119#edit-property)
