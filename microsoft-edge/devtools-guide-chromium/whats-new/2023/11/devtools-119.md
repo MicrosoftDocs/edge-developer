@@ -15,16 +15,34 @@ ms.date: 11/02/2023
 <!-- ====================================================================== -->
 ## Updated text color for error pills under the Issues panel
 
-Before Microsoft Edge 119, users with low vision might face difficulties with the color contrast ratio for the error pills. We updated the contrast ratio between the foreground color and background color to meet WCAG 1.4.3 requirements.
+Before Microsoft Edge 119, users with low vision might face difficulties with the color contrast ratio for the error pills.<!-- todo: define -->  The contrast ratio between the foreground color and background color has been updated to meet Web Content Accessibility Guidelines (WCAG) 1.4.3 requirements:
 
 ![Updated text color for error pills under the Issues panel](./devtools-119-images/dark-text-color-on-pills.png)
+
+<!-- 
+todo: why 1.4.3, it's at WCAG 3
+https://www.w3.org/WAI/search/?q=wcag+1.4.3
+-->
+
+<!--
+See also:
+* []()
+todo: link Web Content Accessibility Guidelines (WCAG) 1.4.3 requirements
+https://www.w3.org/WAI/search/?q=wcag+1.4.3
+-->
+
 
 <!-- ====================================================================== -->
 ## Updated text color for tree items under the Application panel
 
-While navigating or hovering on any selected tree item in the Application panel, the tree item wasn't clearly visible which may impact users with low vision or keyboard users. We've fixed this by updating the text color to be darker and the tree item is now clearly visible when selected.
+While navigating or hovering over any selected tree item in the **Application** tool, the tree item wasn't clearly visible, which may impact users with low vision or keyboard users.  The text color is now darker, and the tree item is now clearly visible when selected:
 
-![Updated text color for tree items under the Application panel](./devtools-119-images/visible-tree-item-application-panel.png)
+![Updated text color for tree items in the Application tool](./devtools-119-images/visible-tree-item-application-panel.png)
+
+<!--
+See also:
+* []()
+-->
 
 
 <!-- ====================================================================== -->
