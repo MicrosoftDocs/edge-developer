@@ -46,12 +46,9 @@ Microsoft Edge 119 also includes the following updates from the Chromium project
 * [Updated list of devices to emulate](https://developer.chrome.com/blog/new-in-devtools-119#devices)
 * [Pretty-print inline JSON in script tags in Sources](https://developer.chrome.com/blog/new-in-devtools-119#sources)
 * [Autocomplete private fields in Console](https://developer.chrome.com/blog/new-in-devtools-119#autocomplete-console)
-* [Lighthouse 11.1.0](https://developer.chrome.com/blog/new-in-devtools-119#lighthouse)
 * [Accessibility improvements](https://developer.chrome.com/blog/new-in-devtools-119#accessibility)
 * [Web SQL deprecation](https://developer.chrome.com/blog/new-in-devtools-119#web-sql)
 * [Screenshot aspect ratio validation in Application > Manifest](https://developer.chrome.com/blog/new-in-devtools-119#manifest-aspect-ratio)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-119#misc)
-<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
