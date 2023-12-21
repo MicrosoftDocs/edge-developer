@@ -36,6 +36,25 @@ See also:
 
 
 <!-- ====================================================================== -->
+## Announcements from the Chromium project
+
+Microsoft Edge 118 also includes the following updates from the Chromium project:
+
+* [Improved @property section in Elements > Styles](https://developer.chrome.com/blog/new-in-devtools-119#css)
+   * [Editable @property rule](https://developer.chrome.com/blog/new-in-devtools-119#edit-property)
+   * [Issues with invalid @property rules are reported](https://developer.chrome.com/blog/new-in-devtools-119#property-issues)
+* [Updated list of devices to emulate](https://developer.chrome.com/blog/new-in-devtools-119#devices)
+* [Pretty-print inline JSON in script tags in Sources](https://developer.chrome.com/blog/new-in-devtools-119#sources)
+* [Autocomplete private fields in Console](https://developer.chrome.com/blog/new-in-devtools-119#autocomplete-console)
+* [Lighthouse 11.1.0](https://developer.chrome.com/blog/new-in-devtools-119#lighthouse)
+* [Accessibility improvements](https://developer.chrome.com/blog/new-in-devtools-119#accessibility)
+* [Web SQL deprecation](https://developer.chrome.com/blog/new-in-devtools-119#web-sql)
+* [Screenshot aspect ratio validation in Application > Manifest](https://developer.chrome.com/blog/new-in-devtools-119#manifest-aspect-ratio)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-119#misc)
+<!-- todo: maybe remove some links -->
+
+
+<!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
 <!-- > [!NOTE]
