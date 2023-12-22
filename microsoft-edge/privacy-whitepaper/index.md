@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 12/01/2023
+ms.date: 12/14/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -403,7 +403,7 @@ When the site you are on has access to your location, Microsoft Edge shows a loc
 
 Microsoft Edge doesn't collect or store the location data that is shared with the site, and generates a new random identifier for each request.
 
-**InPrivate** browsing uses the location permission settings of the browser profile from which the **InPrivate** session was launched. **Guest** mode always asks you for permission before granting a site access to your precise location.
+When you browse the web using **InPrivate**, the **Ask** and **Block** permissions, which control accessing your precise location, are inherited from the profile that you used to open the **InPrivate** window. However, the **Allow** permissions are not automatically inherited, and Microsoft Edge asks for your permission again before granting the site access to your precise location.  In **Guest** mode, Microsoft Edge always asks for permission before granting a site access to your precise location.
 
 
 <!-- ====================================================================== -->

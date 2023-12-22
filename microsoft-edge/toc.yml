@@ -33,6 +33,15 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 118
+              href: devtools-guide-chromium/whats-new/2023/10/devtools-118.md
+
+            - name: Microsoft Edge 117
+              href: devtools-guide-chromium/whats-new/2023/09/devtools-117.md
+
+            - name: Microsoft Edge 116
+              href: devtools-guide-chromium/whats-new/2023/08/devtools-116.md
+
             - name: Microsoft Edge 115
               href: devtools-guide-chromium/whats-new/2023/07/devtools-115.md
 
@@ -54,20 +63,20 @@
             - name: Microsoft Edge 109
               href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
 
-            - name: Microsoft Edge 108
-              href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
-
-            - name: Microsoft Edge 107
-              href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
-
-            - name: Microsoft Edge 106
-              href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 108
+                  href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
+
+                - name: Microsoft Edge 107
+                  href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
+
+                - name: Microsoft Edge 106
+                  href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
 
                 - name: Microsoft Edge 105
                   href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
@@ -1015,7 +1024,7 @@
                 - name: App Developer Agreement Addendum for Microsoft Edge program users
                   href: extensions-chromium/store-policies/ada-addendum.md
 
-                - name: Microsoft Edge Add-ons store developer policies
+                - name: Developer policies for the Microsoft Edge Add-ons store
                   href: extensions-chromium/store-policies/developer-policies.md
 
             - name: Microsoft Edge Add-ons API
