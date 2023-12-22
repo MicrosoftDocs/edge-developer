@@ -33,7 +33,7 @@ Indicates the path to the DualEngine API adapter DLL to load.  For information o
 
 `-DualEnginePipe=<pipe-string>`
 
-This argument provides a string that is eventually passed to the adapter DLL via the `DualEngineInitialize` export.  This can be used to pass a pipe name to your adapter code in order to bootstrap communication between your adapter and main application.  Although this is a required command-line parameter, it's only used when passed to your code through `DualEngineInitialize`.  Therefore, despite its name, this need not be a pipe name; it can be any arbitrary string that you require.
+This argument provides a string that is eventually passed to the adapter DLL via the `DualEngineInitialize` export.  This can be used to pass a pipe name to your adapter code in order to bootstrap communication between your adapter and main application.  Although `DualEnginePipe` is a required command-line parameter, it's only used if it's passed to your code through `DualEngineInitialize`.  Therefore, despite its name, this need not be a pipe name; it can be any arbitrary string that you require.
 
 
 <!-- ------------------------------ -->
@@ -61,7 +61,7 @@ Forces Internet Explorer to instantiate DualEngine objects of the provided versi
 <!-- ====================================================================== -->
 ## Diagnosing launch issues
 
-There are a number of reasons that Internet Explorer may fail when launching.  If this occurs before or while loading your DLL, it can be difficult to determine the exact reason and communicate it back to your application.  Therefore, if Internet Explorer fails to launch while launching for DualEngine use, get detailed error handling information by checking the `StartupFailurePoint` registry value:
+There are a number of reasons that Internet Explorer may fail when launching.  If this occurs before or while loading your DLL, it can be difficult to determine the exact reason and communicate it back to your application.  Therefore, if Internet Explorer fails to launch while launching it for DualEngine use, get detailed error handling information by checking the `StartupFailurePoint` registry value.
 
 
 <!-- ------------------------------ -->
@@ -73,22 +73,22 @@ Contains a DWORD that indicates the location of the failure in the DualEngine st
 
 The DWORD maps to the following reasons:
 
-| DWORD |   Reason                                                                                        |
-|:-----:|-------------------------------------------------------------------------------------------------|
-|   0   |   No failure.                                                                                   |
-|   1   |   Unused.                                                                                       |
-|   2   |   Unused.                                                                                       |
-|   3   |   The version specified by the DualEngineVersion argument was 0.                                |
-|   4   |   Failed to canonicalize the path passed in via DualEngineAdapter; see `StartupFailureHresult`. |
-|   5   |   Unused.                                                                                       |
-|   6   |   Unused.                                                                                       |
-|   7   |   `LoadLibrary` failed for the provided adapter DLL; see `StartupFailureHresult`.               |
-|   8   |   Could not find `DualEngineInitialize` in the adapter DLL.                                     |
-|   9   |   The call to `DualEngineInitialize` failed; see `StartupFailureHresult`.                       |
-|   10  |   Failed to set the provided Application User Model ID; see `StartupFailureHresult`.            |
-|   11  |   DLL failed signature check.                                                                   |
-|   12  |   Unused.                                                                                       |
-|   13  |   DLL did not have IDENTITY LIMITEDACCESSFEATURE resource.                                      |
+| DWORD | Reason                                                                                              |
+|:-----:|-----------------------------------------------------------------------------------------------------|
+|   0   | No failure.                                                                                         |
+|   1   | Unused.                                                                                             |
+|   2   | Unused.                                                                                             |
+|   3   | The version specified by the `DualEngineVersion` argument was 0.                                    |
+|   4   | Failed to canonicalize the path passed in via `DualEngineAdapter`; see the `StartupFailureHresult`. |
+|   5   | Unused.                                                                                             |
+|   6   | Unused.                                                                                             |
+|   7   | `LoadLibrary` failed for the provided adapter DLL; see the `StartupFailureHresult`.                 |
+|   8   | Could not find `DualEngineInitialize` in the adapter DLL.                                           |
+|   9   | The call to `DualEngineInitialize` failed; see the `StartupFailureHresult`.                         |
+|   10  | Failed to set the provided Application User Model ID; see the `StartupFailureHresult`.              |
+|   11  | DLL failed signature check.                                                                         |
+|   12  | Unused.                                                                                             |
+|   13  | DLL did not have IDENTITY LIMITEDACCESSFEATURE resource.                                            |
 
 
 <!-- ------------------------------ -->
@@ -96,4 +96,4 @@ The DWORD maps to the following reasons:
 
 `HKCU\Software\Microsoft\Internet Explorer\EdgeIntegration\StartupFailureHresult`
 
-Contains a DWORD that's the failing HRESULT from the `StartupFailurePoint`, if there was one.  See the above table to see if a given reason provides a `StartupFailureHresult`.
+Contains a DWORD that's the failing HRESULT from the `StartupFailurePoint`, if there was a `StartupFailureHresult`.  To see whether a given reason provides a `StartupFailureHresult`, see the above table.

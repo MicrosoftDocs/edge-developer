@@ -262,15 +262,15 @@ subdomain-wildcard  = "[*.]"
 ; Can be either a specific path or a wildcard to match all paths.
 path-part           = "*" | path
 
-; Can be either a specific port or a wildcard to match all port.
+; Can be either a specific port or a wildcard to match all ports.
 port-part           = "*" | port
 port                = *DIGIT
 
 ; For definitions of the following rules, see RFC 3986 Appendix A (https://www.rfc-editor.org/rfc/rfc3986#appendix-A):
 ;   scheme, reg-name, IPv4address, IP-literal, path
 ```
- See also:
 
+See also:
 * [Appendix A. Collected ABNF for URI](https://www.rfc-editor.org/rfc/rfc3986#appendix-A) in _RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax_.
 
 #### SetUseAdditionalHangDetection
@@ -295,6 +295,6 @@ Sends cookie data to the session process.
 > public HRESULT [SyncCookies](#synccookies)(const [DualEngineCookie](dualenginecookie.md#dualenginecookie) * pCookies, DWORD cCookies)
 
 #### Parameters
-* `pCookies` An array of cookies to be sent to the session. 
+* `pCookies` An array of cookies to be sent to the session.
 
 * `cCookies` The number of items in `pCookies`.

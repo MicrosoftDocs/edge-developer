@@ -12,7 +12,7 @@ ms.date: 11/16/2023
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
-The Microsoft DualEngine API enables you to host and control an Internet Explorer in your application.  For more information, see [Introduction to the Microsoft DualEngine API](../intro.md) and [Getting started with the DualEngine API](../get-started.md). 
+The Microsoft DualEngine API enables you to host and control an Internet Explorer instance within your app.  For more information, see [Introduction to the Microsoft DualEngine API](../intro.md) and [Getting started with the DualEngine API](../get-started.md).
 
 ## Globals
 

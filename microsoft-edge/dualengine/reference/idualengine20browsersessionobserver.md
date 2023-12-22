@@ -57,11 +57,11 @@ Raised when the session Download window is requesting to navigate to a URL.
 #### Parameters
 * `url` The URL that should be navigated to. 
 
-* `PostData` HTTP POST data such as form data.
+* `PostData` HTTP POST data, such as form data.
 
 #### ReverseSyncCookies
 
-Raised when a cookie is set in the session if reverse cookie sync is enabled.
+Raised when a cookie is set in the session, if reverse cookie sync is enabled.
 
 > public HRESULT [ReverseSyncCookies](#reversesynccookies)(const [DualEngineCookie](dualenginecookie.md#dualenginecookie) * pCookies, DWORD cCookies, ULONG ulCookieSyncVersion)
 
@@ -70,7 +70,7 @@ See [IDualEngine20BrowserSession::SetReverseCookieSync](idualengine20browsersess
 #### Parameters
 * `pCookies` The cookies that were set. 
 
-* `cCookies` The number of cookies in `pCookies`. 
+* `cCookies` The number of cookies in `pCookies`.
 
 * `ulCookieSyncVersion` A number that can be used to correlate the specific cookie state with a navigation.
 
