@@ -2427,13 +2427,13 @@ Not applicable.
 
 Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
 
-See also:
-* [Manage user data folders](./user-data-folder.md)
-* [Clear browsing data from the user data folder](./clear-browsing-data.md)
-
 **Subsections below:**
 * [Multiple profiles](#multiple-profiles)
 * [Delete a profile](#delete-a-profile-incoming-4)
+
+See also:
+* [Manage user data folders](./user-data-folder.md)
+* [Clear browsing data from the user data folder](./clear-browsing-data.md)
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
