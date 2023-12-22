@@ -1179,8 +1179,10 @@ See also:
 <!-- ------------------------------ -->
 #### Browser extensions
 
-This API enables your app to embed a WebView2 control that uses browser extensions (add-ons).
+Your app can embed a WebView2 control that uses browser extensions (add-ons).
 <!-- todo: get overview sentence from overview article.  why would someone be/become interested, for their app, in this API?  what func'y/features for end-users does this API enable? -->
+
+<!-- todo: in each h2, manual nav block/list of h4's -->
 
 See also:
 * [Overview of Microsoft Edge extensions](../../extensions-chromium/index.md)
@@ -1304,6 +1306,89 @@ Get information about running WebView2 processes, exiting processes, and failed 
 * [ICoreWebView2ProcessInfoCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2processinfocollection)
 * [COREWEBVIEW2_PROCESS_FAILED_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_kind)
 * [COREWEBVIEW2_PROCESS_FAILED_REASON enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_reason)
+
+---
+
+
+<!-- todo: ~ move 2 to here -->
+<!-- ------------------------------ -->
+#### Frame process info
+<!-- todo: maybe move to near "iframes" instead of in Process management -->
+
+The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process.  This API enables your app to detect which part of WebView2 is consuming resources such as memory or CPU usage.
+
+See also:
+<!-- todo -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.GetProcessExtendedInfosAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getprocessextendedinfosasync)
+
+* `CoreWebView2ProcessExtendedInfo` Class:
+   * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.associatedframeinfos)
+   * [CoreWebView2ProcessExtendedInfo.ProcessInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.processinfo)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.FrameId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.frameid)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.frameid)
+
+* `CoreWebView2FrameInfo` Class:
+   * [CoreWebView2FrameInfo.FrameId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo.frameid)
+   * [CoreWebView2FrameInfo.FrameKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo.framekind)
+   * [CoreWebView2FrameInfo.ParentFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo.parentframeinfo)
+
+* [CoreWebView2FrameKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2framekind)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.GetProcessExtendedInfosAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#getprocessextendedinfosasync)
+
+* `CoreWebView2ProcessExtendedInfo` Class:
+   * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processextendedinfo#associatedframeinfos)
+   * [CoreWebView2ProcessExtendedInfo.ProcessInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processextendedinfo#processinfo)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.FrameId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#frameid)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#frameid)
+
+* `CoreWebView2FrameInfo` Class:
+   * [CoreWebView2FrameInfo.FrameId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo#frameid)
+   * [CoreWebView2FrameInfo.FrameKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo#framekind)
+   * [CoreWebView2FrameInfo.ParentFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo#parentframeinfo)
+
+* [CoreWebView2FrameKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framekind)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Environment13](/microsoft-edge/webview2/reference/win32/icorewebview2environment13)
+   * [ICoreWebView2Environment13::GetProcessExtendedInfos](/microsoft-edge/webview2/reference/win32/icorewebview2environment13#getprocessextendedinfos)
+
+* [ICoreWebView2GetProcessExtendedInfosCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2getprocessextendedinfoscompletedhandler)<!-- handler is Win32-only -->
+
+* [ICoreWebView2ProcessExtendedInfo](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfo)
+   * [ICoreWebView2ProcessExtendedInfo::get_AssociatedFrameInfos](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfo#get_associatedframeinfos)
+   * [ICoreWebView2ProcessExtendedInfo::get_ProcessInfo](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfo#get_processinfo)
+
+* [ICoreWebView2ProcessExtendedInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfocollection)<!-- collection is Win32-only -->
+
+* [ICoreWebView2_20](/microsoft-edge/webview2/reference/win32/icorewebview2_20)
+   * [ICoreWebView2_20::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2_20#get_frameid)
+
+* [ICoreWebView2Frame5](/microsoft-edge/webview2/reference/win32/icorewebview2frame5)
+   * [ICoreWebView2Frame5::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2frame5#get_frameid)
+
+* [ICoreWebView2FrameInfo2](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2)
+   * [ICoreWebView2FrameInfo2::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2#get_frameid)
+   * [ICoreWebView2FrameInfo2::get_FrameKind](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2#get_framekind)
+   * [ICoreWebView2FrameInfo2::get_ParentFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2#get_parentframeinfo)
+
+* [COREWEBVIEW2_FRAME_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_frame_kind)
 
 ---
 
@@ -2519,87 +2604,11 @@ Receiver:
 
 
 <!-- ------------------------------ -->
-#### 2. Frame Process Info
-<!-- todo: put in Process management, or near "iframes" -->
-
-The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process.  This API enables the host application to detect which part of WebView2 is consuming resources such as memory or CPU usage:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.GetProcessExtendedInfosAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getprocessextendedinfosasync)
-
-* `CoreWebView2ProcessExtendedInfo` Class:
-   * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.associatedframeinfos)
-   * [CoreWebView2ProcessExtendedInfo.ProcessInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.processinfo)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.FrameId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.frameid)
-
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.frameid)
-
-* `CoreWebView2FrameInfo` Class:
-   * [CoreWebView2FrameInfo.FrameId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo.frameid)
-   * [CoreWebView2FrameInfo.FrameKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo.framekind)
-   * [CoreWebView2FrameInfo.ParentFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo.parentframeinfo)
-
-* [CoreWebView2FrameKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2framekind)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.GetProcessExtendedInfosAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#getprocessextendedinfosasync)
-
-* `CoreWebView2ProcessExtendedInfo` Class:
-   * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processextendedinfo#associatedframeinfos)
-   * [CoreWebView2ProcessExtendedInfo.ProcessInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processextendedinfo#processinfo)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.FrameId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#frameid)
-
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#frameid)
-
-* `CoreWebView2FrameInfo` Class:
-   * [CoreWebView2FrameInfo.FrameId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo#frameid)
-   * [CoreWebView2FrameInfo.FrameKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo#framekind)
-   * [CoreWebView2FrameInfo.ParentFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo#parentframeinfo)
-
-* [CoreWebView2FrameKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framekind)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2Environment13](/microsoft-edge/webview2/reference/win32/icorewebview2environment13)
-   * [ICoreWebView2Environment13::GetProcessExtendedInfos](/microsoft-edge/webview2/reference/win32/icorewebview2environment13#getprocessextendedinfos)
-
-* [ICoreWebView2GetProcessExtendedInfosCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2getprocessextendedinfoscompletedhandler)<!-- handler is Win32-only -->
-
-* [ICoreWebView2ProcessExtendedInfo](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfo)
-   * [ICoreWebView2ProcessExtendedInfo::get_AssociatedFrameInfos](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfo#get_associatedframeinfos)
-   * [ICoreWebView2ProcessExtendedInfo::get_ProcessInfo](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfo#get_processinfo)
-
-* [ICoreWebView2ProcessExtendedInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2processextendedinfocollection)<!-- collection is Win32-only -->
-
-* [ICoreWebView2_20](/microsoft-edge/webview2/reference/win32/icorewebview2_20)
-   * [ICoreWebView2_20::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2_20#get_frameid)
-
-* [ICoreWebView2Frame5](/microsoft-edge/webview2/reference/win32/icorewebview2frame5)
-   * [ICoreWebView2Frame5::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2frame5#get_frameid)
-
-* [ICoreWebView2FrameInfo2](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2)
-   * [ICoreWebView2FrameInfo2::get_FrameId](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2#get_frameid)
-   * [ICoreWebView2FrameInfo2::get_FrameKind](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2#get_framekind)
-   * [ICoreWebView2FrameInfo2::get_ParentFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2#get_parentframeinfo)
-
-* [COREWEBVIEW2_FRAME_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_frame_kind)
-
----
-
-
-<!-- ------------------------------ -->
 #### 3. AcceleratorKeyPressedEventArgs.IsBrowserAcceleratorKeyEnabled
 <!-- todo: put near Browser features > Swipe gesture navigation -->
+
+See also:
+<!-- todo -->
 
 `ICoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow developers to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
 
@@ -2625,6 +2634,9 @@ The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snap
 <!-- ------------------------------ -->
 #### 4. Managing profile deletion
 <!-- todo: put near User data > Multiple profiles -->
+
+See also:
+<!-- todo -->
 
 Added support for managing profile deletion:
 
