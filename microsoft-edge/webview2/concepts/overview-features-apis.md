@@ -77,9 +77,16 @@ See also:
 <!-- ====================================================================== -->
 ## Web/native interop
 
-The Microsoft Edge WebView2 control lets you embed web content into native applications. You can communicate between native code and web code using simple messages, JavaScript code, and native objects.
+The Microsoft Edge WebView2 control lets you embed web content into native applications.  You can communicate between native code and web code using simple messages, JavaScript code, and native objects.  The following are the main APIs for communicating between web and native code.
 
-Some common use cases include:
+**Subsections below:**
+* [Host/web object sharing](#hostweb-object-sharing)
+* [Script execution](#script-execution)
+* [Web messaging](#web-messaging)
+* [Script dialogs](#script-dialogs)
+* [Shared buffer](#shared-buffer)
+
+Common use cases for web/native interop:
 *  Update the native host window title after navigating to a different website.
 *  Send a native camera object and use its methods from a web app.
 *  Run a dedicated JavaScript file on the web side of an application.
@@ -90,8 +97,6 @@ See also:
 * [Call native-side code from web-side code](../how-to/hostobject.md)
 * [Call native-side WinRT code from web-side code](../how-to/winrt-from-js.md)
 * [JavaScript APIs in WebView2](/microsoft-edge/webview2/reference/javascript/) for `window.chrome.webview` JavaScript APIs
-
-The following are the main APIs for communicating between web and native code.
 
 
 <!-- ------------------------------ -->
@@ -338,6 +343,32 @@ See also:
 ## Browser features
 
 The WebView2 control gives your app access to many browser features.  You can modify these browser features and turn them on or off.
+
+**Subsections below:**
+* [Printing](#printing)
+* [Cookies](#cookies)
+* [Image capture](#image-capture)
+* [Downloads](#downloads)
+* [Permissions](#permissions)
+* [Context menus](#context-menus)
+* [Status bar](#status-bar)
+* [User Agent](#user-agent)
+* [Autofill](#autofill)
+* [Audio](#audio)
+* [Swipe gesture navigation](#swipe-gesture-navigation)
+* [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys-incoming-3)
+* [Fullscreen](#fullscreen)
+* [PDF toolbar](#pdf-toolbar)
+* [Theming](#theming)
+* [Language](#language)
+* [New window](#new-window)
+* [Close window](#close-window)
+* [Document title](#document-title)
+* [Favicon](#favicon)
+* [Security and privacy](#security-and-privacy)
+   * [Tracking prevention](#tracking-prevention)
+   * [SmartScreen](#smartscreen)
+   * [Custom crash reporting](#custom-crash-reporting)
 
 
 <!-- ------------------------------ -->
@@ -836,6 +867,34 @@ This feature is currently disabled by default in the browser.  To enable this fe
 
 ---
 
+
+<!-- ------------------------------ -->
+#### Enable or disable the browser responding to accelerator keys (shortcut keys) (incoming 3)
+
+`ICoreWebView2AcceleratorKeyPressedEventArgs` has a `IsBrowserAcceleratorKeyEnabled` property to allow you to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**.
+
+See also:
+* [Keyboard accelerators](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys-incoming-3), below.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2AcceleratorKeyPressedEventArgs` Class:
+   * [CoreWebView2AcceleratorKeyPressedEventArgs.IsBrowserAcceleratorKeyEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs.isbrowseracceleratorkeyenabled)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2AcceleratorKeyPressedEventArgs` Class:
+   * [CoreWebView2AcceleratorKeyPressedEventArgs.IsBrowserAcceleratorKeyEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2acceleratorkeypressedeventargs#isbrowseracceleratorkeyenabled)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2AcceleratorKeyPressedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2)
+   * [ICoreWebView2AcceleratorKeyPressedEventArgs2::get_IsBrowserAcceleratorKeyEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2#get_isbrowseracceleratorkeyenabled)
+   * [ICoreWebView2AcceleratorKeyPressedEventArgs2::put_IsBrowserAcceleratorKeyEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2#put_isbrowseracceleratorkeyenabled)
+
+---
+
+
 <!-- ------------------------------ -->
 #### Fullscreen
 
@@ -1177,7 +1236,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Browser extensions
+#### Browser extensions (incoming 1)
 
 Your app can embed a WebView2 control that uses browser extensions (add-ons).
 <!-- todo: get overview sentence from overview article.  why would someone be/become interested, for their app, in this API?  what func'y/features for end-users does this API enable? -->
@@ -1256,6 +1315,9 @@ See also:
 
 Get information about running WebView2 processes, exiting processes, and failed processes, so that your app can take action accordingly.
 
+**Subsections below:**
+* [Frame process info](#frame-process-info-incoming-2)
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2` Class:
@@ -1312,7 +1374,7 @@ Get information about running WebView2 processes, exiting processes, and failed 
 
 <!-- todo: ~ move 2 to here -->
 <!-- ------------------------------ -->
-#### Frame process info
+#### Frame process info (incoming 2)
 <!-- todo: maybe move to near "iframes" instead of in Process management -->
 
 The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process.  This API enables your app to detect which part of WebView2 is consuming resources such as memory or CPU usage.
@@ -1397,6 +1459,18 @@ See also:
 ## Navigate to pages and manage loaded content
 
 Through the WebView2 control, your app can manage navigation to webpages and manage content that's loaded in the webpages.
+
+**Subsections below:**
+* [Manage content loaded into WebView2](#manage-content-loaded-into-webview2)
+* [Navigation history](#navigation-history)
+* [Navigation kind](#navigation-kind)
+* [Block unwanted navigating](#block-unwanted-navigating)
+* [Navigation events](#navigation-events)
+* [Manage network requests in WebView2](#manage-network-requests-in-webview2)
+* [Custom scheme registration](#custom-scheme-registration)
+* [Client certificates](#client-certificates)
+* [Server certificates](#server-certificates)
+* [Launch an external URI scheme](#launch-an-external-uri-scheme)
 
 
 <!-- ------------------------------ -->
@@ -1902,11 +1976,26 @@ See also:
 
 Use these APIs to set up the WebView2 rendering system if your host app doesn't use a UI framework.  This rendering setup controls how WebView2 renders output into your host app, and how WebView2 handles input, focus, and accessibility.
 
+
+<!-- ------------------------------ -->
+#### When to use these APIs
+
 * **UI framework** - If you're using a UI framework for your app, you should use the WebView2 element that's provided by that UI framework, rather than using these APIs.
 
 * **No UI framework, and not using Composition** - If you're not using a UI framework for your app (for example, if you're using pure Win32 directly), or if your UI framework doesn't have a WebView2 element, then you need to create `CoreWebView2Controller` and render it into your app, using these APIs in this section.
 
 * **No UI framework, and using Composition** - If your app UI is built using [DirectComposition](/windows/win32/directcomp/directcomposition-portal) or [Windows.UI.Composition](/uwp/api/Windows.UI.Composition), you should use `CoreWebView2CompositionController` rather than using these APIs; see [Rendering WebView2 using Composition](#rendering-webview2-using-composition), below.
+
+
+**Subsections below:**
+* [Sizing, positioning, and visibility](#sizing-positioning-and-visibility)
+* [Zooming](#zooming)
+* [Rasterization scale](#rasterization-scale)
+* [Focus and tabbing](#focus-and-tabbing)
+* [Parent window](#parent-window)
+* [Keyboard accelerators](#keyboard-accelerators)
+* [Default background color](#default-background-color)
+
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2113,7 +2202,9 @@ WebView2 can be reparented to a different parent window handle (`HWND`).  WebVie
 <!-- ------------------------------ -->
 #### Keyboard accelerators
 
-When WebView2 has focus, it directly receives input from the user. An app may want to intercept and handle certain accelerator key combinations, or disable the normal browser accelerator key behaviors.
+When WebView2 has focus, it directly receives input from the user. An app may want to intercept and handle certain accelerator key combinations (shortcut keys), or disable the normal browser accelerator key behaviors.
+
+See also [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys-incoming-3), above.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2172,6 +2263,13 @@ WebView2 can specify a default background color.  The color can be any opaque co
 ## Rendering WebView2 using Composition
 
 For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  `CoreWebView2CompositionController` provides the same APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering.
+
+**Subsections below:**
+* [Connecting to the visual tree](#connecting-to-the-visual-tree)
+* [Forwarding input](#forwarding-input)
+* [Drag and drop](#drag-and-drop)
+* [Accessibility](#accessibility)
+
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2333,6 +2431,11 @@ See also:
 * [Manage user data folders](./user-data-folder.md)
 * [Clear browsing data from the user data folder](./clear-browsing-data.md)
 
+**Subsections below:**
+* [Multiple profiles](#multiple-profiles)
+* [Delete a profile](#delete-a-profile)
+
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2Environment` Class:
@@ -2457,10 +2560,47 @@ Access and manipulate the profile:
 ---
 
 
+<!-- ------------------------------ -->
+#### Delete a profile (incoming 4)
+
+Your app can delete profiles.
+<!-- todo: lead-in -->
+
+See also:
+<!-- todo -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.Delete Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.delete)
+   * [CoreWebView2Profile.Deleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.deleted)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.Delete Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#delete)
+   * [CoreWebView2Profile.Deleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#deleted)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Profile8](/microsoft-edge/webview2/reference/win32/icorewebview2profile8)
+   * [ICoreWebView2Profile8::add_Deleted](/microsoft-edge/webview2/reference/win32/icorewebview2profile8#add_deleted)
+   * [ICoreWebView2Profile8::Delete](/microsoft-edge/webview2/reference/win32/icorewebview2profile8#delete)
+   * [ICoreWebView2Profile8::remove_Deleted](/microsoft-edge/webview2/reference/win32/icorewebview2profile8#remove_deleted)
+
+* [ICoreWebView2ProfileDeletedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2profiledeletedeventhandler)<!-- handler is Win32-only -->
+
+---
+
+
 <!-- ====================================================================== -->
 ## Performance and debugging
 
 Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app.
+
+**Subsections below:**
+* [Memory usage target](#memory-usage-target)
+
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2595,70 +2735,3 @@ Receiver:
 
 * [Introduction to Microsoft Edge WebView2](../index.md)
 * [WebView2 API Reference](../webview2-api-reference.md) - API Reference links for additional platforms and languages, such as WinRT/C++ (COM).
-
-
-<!-- ====================================================================== -->
-## Incoming APIs Dec 2023 v120
-
-
-
-
-<!-- ------------------------------ -->
-#### 3. AcceleratorKeyPressedEventArgs.IsBrowserAcceleratorKeyEnabled
-<!-- todo: put near Browser features > Swipe gesture navigation -->
-
-See also:
-<!-- todo -->
-
-`ICoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow developers to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2AcceleratorKeyPressedEventArgs` Class:
-   * [CoreWebView2AcceleratorKeyPressedEventArgs.IsBrowserAcceleratorKeyEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs.isbrowseracceleratorkeyenabled)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2AcceleratorKeyPressedEventArgs` Class:
-   * [CoreWebView2AcceleratorKeyPressedEventArgs.IsBrowserAcceleratorKeyEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2acceleratorkeypressedeventargs#isbrowseracceleratorkeyenabled)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2AcceleratorKeyPressedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2)
-   * [ICoreWebView2AcceleratorKeyPressedEventArgs2::get_IsBrowserAcceleratorKeyEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2#get_isbrowseracceleratorkeyenabled)
-   * [ICoreWebView2AcceleratorKeyPressedEventArgs2::put_IsBrowserAcceleratorKeyEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs2#put_isbrowseracceleratorkeyenabled)
-
----
-
-
-<!-- ------------------------------ -->
-#### 4. Managing profile deletion
-<!-- todo: put near User data > Multiple profiles -->
-
-See also:
-<!-- todo -->
-
-Added support for managing profile deletion:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.Delete Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.delete)
-   * [CoreWebView2Profile.Deleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.deleted)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.Delete Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#delete)
-   * [CoreWebView2Profile.Deleted Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#deleted)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2Profile8](/microsoft-edge/webview2/reference/win32/icorewebview2profile8)
-   * [ICoreWebView2Profile8::add_Deleted](/microsoft-edge/webview2/reference/win32/icorewebview2profile8#add_deleted)
-   * [ICoreWebView2Profile8::Delete](/microsoft-edge/webview2/reference/win32/icorewebview2profile8#delete)
-   * [ICoreWebView2Profile8::remove_Deleted](/microsoft-edge/webview2/reference/win32/icorewebview2profile8#remove_deleted)
-
-* [ICoreWebView2ProfileDeletedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2profiledeletedeventhandler)<!-- handler is Win32-only -->
-
----
