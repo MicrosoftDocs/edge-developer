@@ -127,14 +127,13 @@ The **Detached Elements** tool's UI is displayed correctly in high-contrast mode
 
 ![Detached Elements tool in high-contrast mode](devtools-102-images/high-contrast-detached-elements.png)
 
-The **Activity Bar** and **Quick View** (of Focus Mode) are displayed correctly in high-contrast mode:
+The **Activity Bar** and **Quick View** panel (when using Focus Mode) are displayed correctly in high-contrast mode:
 
 ![Activity Bar in Focus Mode](devtools-102-images/high-contrast-activity-bar.png)
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 * [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->

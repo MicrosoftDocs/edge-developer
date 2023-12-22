@@ -9,10 +9,14 @@ ms.date: 11/28/2022
 ---
 # Detecting Microsoft Edge from your website
 
-<!-- restricted lexicon to use:
-User-Agent Client Hints
-User-Agent string
-user agent string - not used
+<!-- restricted lexicon; spellings to use:
+User-Agent Client Hints  (it's the name of an API; https://www.bing.com/searchq=User-Agent+Client+Hints)
+User-Agent string        (it's the formal name of a specialized string)
+
+spellings to avoid:
+user agent client hints
+user-agent client hints
+user agent string
 -->
 
 Microsoft Edge enables your website to retrieve user agent information.  You use the user agent information to present webpages correctly for each user's browser.  Browsers provide mechanisms for websites to detect browser information such as brand, version number, and host operating system.
@@ -41,11 +45,11 @@ If you must detect browsers, Microsoft recommends using User-Agent Client Hints,
 
 <!-- ====================================================================== -->
 ## User-Agent Client Hints
+<!-- caution about changing this heading: in the Network Conditions tool, for the "User agent client hints" section, the "Learn more" link points to here -->
 
-Microsoft Edge supports User-Agent Client Hints starting with version 90.
+Microsoft Edge supports User-Agent Client Hints (since Microsoft Edge 90).
 
 User-Agent Client Hints is a method that addresses privacy concerns while allowing web pages to detect browser information such as browser name, version number, platform, and more. Soon the User-Agent string will be frozen and deprecated by various browsers. For example, the Chrome Platform Status site describes the change in [Feature: Reduce User Agent string information](https://www.chromestatus.com/feature/5704553745874944).
-
 
 Employ User-Agent Client Hints when you want to:
 - Determine if new browser activity is from the expected user.
@@ -57,9 +61,11 @@ Don't use User-Agent Client Hints to:
 
 For more information, see the specification at [W3C Community Group Draft Report: User-Agent Client Hints](https://wicg.github.io/ua-client-hints/).
 
-### User-Agent Client Hints HTTPS header
 
-When Microsoft Edge sends an HTTPS request to a server, it sends a set of low entropy User-Agent Client Hints headers. For more information, see [Low entropy hint table](https://wicg.github.io/client-hints-infrastructure/#low-entropy-table). If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the specified User-Agent Client Hints headers.
+<!-- ------------------------------ -->
+#### User-Agent Client Hints HTTPS header
+
+When Microsoft Edge sends an HTTPS request to a server, it sends a set of low-entropy User-Agent Client Hints headers. For more information, see [Low entropy hint table](https://wicg.github.io/client-hints-infrastructure/#low-entropy-table). If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the specified User-Agent Client Hints headers.
 
 By default, Microsoft Edge sends the `Sec-CH-UA`, `Sec-CH-UA-Mobile`, and `Sec-CH-UA-Platform` request headers in the following format.
 
@@ -82,12 +88,13 @@ The following table shows all available hints request headers with sample values
 | `Sec-CH-UA-Bitness` | `64` |
 | `Sec-CH-UA-Model` | `Surface Pro` |
 
-> [!NOTE]
-> User-Agent Client Hints are only sent over secure connections using `HTTPS`.
+User-Agent Client Hints are only sent over secure connections using `HTTPS`.
 
-### User-Agent Client Hints JavaScript API
 
-You can access User-Agent Client Hints using JavaScript on the client side. When you call the default `navigator.userAgentData`, it returns the following response.
+<!-- ------------------------------ -->
+#### User-Agent Client Hints JavaScript API
+
+You can access User-Agent Client Hints by using JavaScript on the client side. When you call the default `navigator.userAgentData`, it returns the following response.
 
 ```JSON
 {
@@ -131,14 +138,17 @@ The response has the following format:
 
 For more information, see [getHighEntropyValues()](https://wicg.github.io/ua-client-hints#getHighEntropyValues).
 
-### platformVersion Hint
+
+<!-- ------------------------------ -->
+#### platformVersion Hint
 
 The operating system version token in the `User-Agent` header hasn't been updated for Windows 11, and still reports `Windows NT 10.0`.
 
 To distinguish between Windows 10 and Windows 11, request the `platformVersion` client hint in Microsoft Edge. Values between and including `1.0.0` and `12.0.0` represent releases of Windows 10, while values of `14.0.0` or later represent releases of Windows 11.
 
 
-### Combine User-Agent Client Hints with feature detection
+<!-- ------------------------------ -->
+#### Combine User-Agent Client Hints with feature detection
 
 Combining User-Agent Client Hints with [feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) is an effective way to deliver compatible web content. Microsoft recommends using this pattern to:
 * Improve code maintainability.
@@ -202,7 +212,9 @@ The response value from `navigator.userAgent` method uses the following format:
 
 Platform identifiers change based on the operating system, and version numbers increment over time. The format is the same as the Chromium user agent with the addition of a new `Edg` token at the end. Microsoft chose the `Edg` token to avoid compatibility issues caused by `Edge` string, which was previously used for the legacy Microsoft Edge browser based on EdgeHTML. The `Edg` token is also consistent with [existing tokens](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer) used for iOS and Android.
 
-### Microsoft Edge version increment change
+
+<!-- ------------------------------ -->
+#### Microsoft Edge version increment change
 
 Microsoft Edge's major version number will soon be incrementing from two digits, such as `Edg/99`, to three digits as in `Edg/100`. Site owners should make sure their User-Agent parsing logic is robust and works as expected.
 
