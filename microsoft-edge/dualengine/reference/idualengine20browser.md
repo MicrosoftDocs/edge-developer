@@ -130,7 +130,7 @@ Deletes tab recovery data.
 
 > public HRESULT [DualEngineDeleteTabRecoveryData](#dualenginedeletetabrecoverydata)(REFGUID guidTabId)
 
-#### Parameters
+###### Parameters
 * `guidTabId` The GUID for the source recovery data file to delete.
 
 #### DualEngineDoOnBeforeUnloadAndStop
@@ -151,7 +151,7 @@ Enables or disables Caret Browsing mode.
 
 > public HRESULT [DualEngineEnableCaretMode](#dualengineenablecaretmode)(BOOL fEnable)
 
-#### Parameters
+###### Parameters
 * `fEnable` Specifies whether caret browsing should be enabled. 
 
 #### DualEngineExecNavigationCommand
@@ -160,7 +160,7 @@ Executes a navigation command.
 
 > public HRESULT [DualEngineExecNavigationCommand](#dualengineexecnavigationcommand)(NAVIGATION_COMMAND command)
 
-#### Parameters
+###### Parameters
 * `command` The navigation command to execute.
 
 #### DualEngineFindOnPage
@@ -169,7 +169,7 @@ Finds an instance of text on the page.
 
 > public HRESULT [DualEngineFindOnPage](#dualenginefindonpage)(int iRequestID, LPCWSTR pszFindText, BOOL fFindNext, BOOL fForward)
 
-#### Parameters
+###### Parameters
 * `iRequestID` An ID to use correlate find on page requests and events. 
 
 * `pszFindText` The text to find on the page. 
@@ -190,7 +190,7 @@ Provides a response to a geolocation permission request.
 
 > public HRESULT [DualEngineGeolocationPermissionResponse](#dualenginegeolocationpermissionresponse)(LPCWSTR pszUri, SITE_PERMISSION_RESPONSE response)
 
-#### Parameters
+###### Parameters
 * `pszUri` The URI the geolocation request was from. 
 
 * `response` The response to the request.
@@ -201,7 +201,7 @@ Navigates to a specific travel log entry.
 
 > public HRESULT [DualEngineGoToEntry](#dualenginegotoentry)(ULONG ulEntryId)
 
-#### Parameters
+###### Parameters
 * `ulEntryId` The travel log entry ID to navigate to.
 
 #### DualEngineInitialize
@@ -210,7 +210,7 @@ Initializes the browser object with an URL.
 
 > public HRESULT [DualEngineInitialize](#dualengineinitialize)([IDualEngine20BrowserObserver](idualengine20browserobserver.md#idualengine20browserobserver) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
-#### Parameters
+###### Parameters
 * `pDualEngineObserver` A pointer to the observer for this browser. 
 
 * `config` Configuration flags for the desired browser behavior. 
@@ -231,7 +231,7 @@ Initializes the browser object with an URL; this version allows for additional i
 
 > public HRESULT [DualEngineInitialize2](#dualengineinitialize2)([IDualEngine20BrowserObserver](idualengine20browserobserver.md#idualengine20browserobserver) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
-#### Parameters
+###### Parameters
 * `pDualEngineObserver` A pointer to the observer for this browser. 
 
 * `config` Configuration flags for the desired browser behavior. 
@@ -258,7 +258,7 @@ Initializes the browser object using tab recovery data.
 
 > public HRESULT [DualEngineInitializeWithRecoveryData](#dualengineinitializewithrecoverydata)(REFGUID guidTabId, ULONG ulEntryId, [IDualEngine20BrowserObserver](idualengine20browserobserver.md#idualengine20browserobserver) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
-#### Parameters
+###### Parameters
 * `guidTabId` The GUID for the source recovery data file to initialize this instance with. 
 
 * `ulEntryId` The ID of the entry in the travel log to navigate to after recovery. 
@@ -283,7 +283,7 @@ Notifies the browser that it has lost focus.
 
 > public HRESULT [DualEngineLostFocus](#dualenginelostfocus)(HWND hwndLostFocus)
 
-#### Parameters
+###### Parameters
 * `hwndLostFocus` The window that focus is moving to.
 
 #### DualEngineNavigate
@@ -292,7 +292,7 @@ Navigates to a URL.
 
 > public HRESULT [DualEngineNavigate](#dualenginenavigate)(LPCWSTR pszUrl, BOOL fSkipOnBeforeUnload)
 
-#### Parameters
+###### Parameters
 * `pszUrl` The URL to navigate to. 
 
 * `fSkipOnBeforeUnload` Whether to skip the `onBeforeUnload` handling.
@@ -303,7 +303,7 @@ Navigates to a URL, with additional information about the navigation.
 
 > public HRESULT [DualEngineNavigate2](#dualenginenavigate2)(LPCWSTR pszUrl, BOOL fSkipOnBeforeUnload, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
-#### Parameters
+###### Parameters
 * `pszUrl` The URL to navigate to. 
 
 * `fSkipOnBeforeUnload` Whether to skip the `onBeforeUnload` handling. 
@@ -320,7 +320,7 @@ Notifies that navigation entries have been deleted.
 
 > public HRESULT [DualEngineNotifyNavigationEntriesDeleted](#dualenginenotifynavigationentriesdeleted)(BOOL fShouldDeleteEntries, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo)
 
-#### Parameters
+###### Parameters
 * `fShouldDeleteEntries` Indicates whether the browser should delete all the entries in it's list. 
 
 * `sentinelEntryInfo` The number of history items before and after the initial navigation for this instance.
@@ -331,7 +331,7 @@ Notifies the browser that a navigation is occurring to a page that will be handl
 
 > public HRESULT [DualEnginePrepareToExitRegion](#dualenginepreparetoexitregion)(EXIT_REGION_TYPE type)
 
-#### Parameters
+###### Parameters
 * `type` The type of navigation that is causing this exit.
 
 #### DualEnginePrint
@@ -346,7 +346,7 @@ Controls whether the browser tries to change focus to itself.
 
 > public HRESULT [DualEngineProtectFocus](#dualengineprotectfocus)(BOOL fProtectFocus)
 
-#### Parameters
+###### Parameters
 * `fProtectFocus` If `true`, the browser will not try to steal focus; if `false`, stealing focus is allowed.
 
 #### DualEngineSavePageAs
@@ -361,7 +361,7 @@ Sets flags that determine how the browser handles engine switching.
 
 > public HRESULT [DualEngineSetEngineSwitchingPolicyFlags](#dualenginesetengineswitchingpolicyflags)(EngineSwitchingPolicyFlags engineSwitchingPolicyFlags)
 
-#### Parameters
+###### Parameters
 * `engineSwitchingPolicyFlags` Flags representing the desired engine switching behavior.
 
 #### DualEngineSetFocus
@@ -370,7 +370,7 @@ Sets focus inside the hosted browser.
 
 > public HRESULT [DualEngineSetFocus](#dualenginesetfocus)(DUALENGINE_FOCUSDIRECTION focusDirection)
 
-#### Parameters
+###### Parameters
 * `focusDirection` The direction that focus is moving within the browser.
 
 #### DualEngineSetMediaFullscreen
@@ -382,7 +382,7 @@ Changes the full-screen state of the media playing in the browser.
 > [!WARNING]
 > Despite its name, this function only exits fullscreen and will do nothing if no media is fullscreen.
 > Passing `true` into the function is always a no-op.
-#### Parameters
+###### Parameters
 * `fFullscreen` If `false`, fullscreen will be exited if media is fullscreen; if `true`, nothing happens.
 
 #### DualEngineSetPosition
@@ -391,7 +391,7 @@ Sets the size and position of the browser window.
 
 > public HRESULT [DualEngineSetPosition](#dualenginesetposition)(int x, int y, int iWidth, int iHeight)
 
-#### Parameters
+###### Parameters
 * `x` The new position of the left side of the window, in client coordinates. 
 
 * `y` The new position of the top of the window, in client coordinates. 
@@ -407,7 +407,7 @@ Changes the Theater mode state of the browser.
 > public HRESULT [DualEngineSetTheaterFullscreen](#dualenginesettheaterfullscreen)(BOOL fFullscreen)
 
 In theater mode, the browsers window fills the entire screen and displays a toolbar that has a minimal set of navigation buttons. A status bar is also provided in the upper-right corner of the screen. Explorer bars, such as History and Favorites, are displayed as an autohide pane on the left edge of the screen in theater mode. 
-#### Parameters
+###### Parameters
 * `fFullscreen` If `true` and not currently in theater mode, the browser will enter theater mode; if `false` and currently in theater mode, the browser will exit theater mode.
 
 #### DualEngineSetTheaterMargins
@@ -416,7 +416,7 @@ Adjusts the top margin of the browser window when it is being displayed in theat
 
 > public HRESULT [DualEngineSetTheaterMargins](#dualenginesettheatermargins)(BOOL fTheaterShowing, int yTheaterThreshold)
 
-#### Parameters
+###### Parameters
 * `fTheaterShowing` Indicates whether the host is currently in theater mode. 
 
 * `yTheaterThreshold` The size in pixels of the margin between the top of the screen and the fullscreen browser window.
@@ -427,7 +427,7 @@ Notifies the browser of a visibility change.
 
 > public HRESULT [DualEngineSetVisible](#dualenginesetvisible)(BROWSERVISIBILITY visibility)
 
-#### Parameters
+###### Parameters
 * `visibility` The visibility state we are entering.
 
 #### DualEngineSetWindowStyle
@@ -436,7 +436,7 @@ Changes the style of the browser window.
 
 > public HRESULT [DualEngineSetWindowStyle](#dualenginesetwindowstyle)(int wlStyle, int wlExStyle)
 
-#### Parameters
+###### Parameters
 * `wlStyle` The Window Style value to set. 
 
 * `wlExStyle` The Extended Windows Style value to set.
@@ -447,7 +447,7 @@ Changes the zoom value of the browser.
 
 > public HRESULT [DualEngineSetZoom](#dualenginesetzoom)(int iZoomPercent)
 
-#### Parameters
+###### Parameters
 * `iZoomPercent` The zoom percentage to set the browser to.
 
 #### DualEngineSimulateKeyInput
@@ -456,7 +456,7 @@ Sends a simulated key input.
 
 > public HRESULT [DualEngineSimulateKeyInput](#dualenginesimulatekeyinput)(DWORD vKey, KEYACTION keyAction)
 
-#### Parameters
+###### Parameters
 * `vKey` The virtual keycode to simulate. 
 
 * `keyAction` The key action to simulate.
@@ -467,7 +467,7 @@ Sends a simulated mouse input.
 
 > public HRESULT [DualEngineSimulateMouseInput](#dualenginesimulatemouseinput)(DWORD x, DWORD y, MOUSEACTION mouseAction)
 
-#### Parameters
+###### Parameters
 * `x` The x coordinate. 
 
 * `y` The y coordinate. 
@@ -480,7 +480,7 @@ Stops the find operation.
 
 > public HRESULT [DualEngineStopFindOnPage](#dualenginestopfindonpage)(BOOL fClean)
 
-#### Parameters
+###### Parameters
 * `fClean` If `true`, the highlighted results and current selected result will be cleared; if `false`, the current selected result will remain selected.
 
 #### DualEngineTranslateAccelerator
@@ -489,5 +489,5 @@ Processes an accelerator message.
 
 > public HRESULT [DualEngineTranslateAccelerator](#dualenginetranslateaccelerator)(LPMSG lpMsg)
 
-#### Parameters
+###### Parameters
 * `lpMsg` A pointer to a MSG structure that specifies the message to be translated.

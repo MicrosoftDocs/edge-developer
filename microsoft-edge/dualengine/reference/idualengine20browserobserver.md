@@ -148,7 +148,7 @@ Raised when the browser wants to stop hosting content and have the navigation to
 
 > public HRESULT [ContinueNavigationInEdge](#continuenavigationinedge)(LPCWSTR pszUrl, ULONG ulCookieSyncVersion)
 
-#### Parameters
+###### Parameters
 * `pszUrl` The URL that should be navigated to. 
 
 * `ulCookieSyncVersion` A number that can be used to correlate a navigation with a specific cookie state.
@@ -159,7 +159,7 @@ Raised when the browser wants to stop hosting content and have the navigation to
 
 > public HRESULT [ContinueNavigationInEdge2](#continuenavigationinedge2)(LPCWSTR pszUrl, ULONG ulCookieSyncVersion, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
-#### Parameters
+###### Parameters
 * `pszUrl` The URL that should be navigated to. 
 
 * `ulCookieSyncVersion` A number that can be used to correlate a navigation with a specific cookie state. 
@@ -176,7 +176,7 @@ Raised when the browser requests to navigate to a travel log entry offset.
 
 > public HRESULT [NavigateToOffsetInEdge](#navigatetooffsetinedge)(int iOffset)
 
-#### Parameters
+###### Parameters
 * `iOffset` The offset to navigate to.
 
 #### OnAllButCurrentEntryDeleted
@@ -185,7 +185,7 @@ Raised when the browser has deleted all entries in its travel log except for the
 
 > public HRESULT [OnAllButCurrentEntryDeleted](#onallbutcurrententrydeleted)([VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntries, int cVisibleListEntries)
 
-#### Parameters
+###### Parameters
 * `pVisibleListEntries` A list containing the new travel log entries since the last update. In this case it will only have the current active entry. 
 
 * `cVisibleListEntries` The number of items in `pVisibleListEntries`
@@ -196,7 +196,7 @@ Raised when the browser processes an async hang check message, see [IDualEngine2
 
 > public HRESULT [OnAsyncHungCheckReply](#onasynchungcheckreply)(ULONG correlationId)
 
-#### Parameters
+###### Parameters
 * `correlationId` Id to correlate the reply with the sent message.
 
 #### OnAttentionState
@@ -205,7 +205,7 @@ Raised when requesting user attention.
 
 > public HRESULT [OnAttentionState](#onattentionstate)(ATTENTIONSTATE attentionState)
 
-#### Parameters
+###### Parameters
 * `attentionState` The reason that user attention is being requested.
 
 #### OnBeforeUnloadAndStopComplete
@@ -214,7 +214,7 @@ Raised when the beforeUnload event has finished being processed.
 
 > public HRESULT [OnBeforeUnloadAndStopComplete](#onbeforeunloadandstopcomplete)(BOOL agreeToClose)
 
-#### Parameters
+###### Parameters
 * `agreeToClose` Indicates whether the user has agreed to leave the page.
 
 #### OnCloseCompleted
@@ -235,7 +235,7 @@ Raised when a the browser shows or hides a modal dialog.
 
 > public HRESULT [OnDialogShown](#ondialogshown)(BOOL fShown)
 
-#### Parameters
+###### Parameters
 * `fShown` Indicates whether the dialog was shown or hidden.
 
 #### OnDocumentComplete
@@ -244,7 +244,7 @@ Raised when a document is completely loaded and initialized.
 
 > public HRESULT [OnDocumentComplete](#ondocumentcomplete)(ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntries, int cVisibleListEntries)
 
-#### Parameters
+###### Parameters
 * `ulCurrentEntryId` The travel log entry ID for the page that raised this event. 
 
 * `pVisibleListEntries` A list containing the new travel log entries since the last update. 
@@ -257,7 +257,7 @@ Raised when the document mode has changed.
 
 > public HRESULT [OnDocumentModeSet](#ondocumentmodeset)(ULONG documentMode)
 
-#### Parameters
+###### Parameters
 * `documentMode` The new document mode version.
 
 #### OnEnterpriseIDSet
@@ -266,7 +266,7 @@ Raised when a navigation has been completed; provides information about the ente
 
 > public HRESULT [OnEnterpriseIDSet](#onenterpriseidset)(BOOL fEnterpriseID)
 
-#### Parameters
+###### Parameters
 * `fEnterpriseID` Indicates whether the browser has an enterprise ID set.
 
 #### OnFindOnPageResult
@@ -275,7 +275,7 @@ Raised when find on page results change.
 
 > public HRESULT [OnFindOnPageResult](#onfindonpageresult)(int iRequestID, int cMatches, int iActiveMatch)
 
-#### Parameters
+###### Parameters
 * `iRequestID` An ID to correlate results with [IDualEngine20Browser::DualEngineFindOnPage()](idualengine20browser.md#dualenginefindonpage) requests. 
 
 * `cMatches` The count of matches. 
@@ -294,7 +294,7 @@ Raised when geolocation data is accessed.
 
 > public HRESULT [OnGeolocationFeatureInUse](#ongeolocationfeatureinuse)(LPCWSTR pszContextUrl, SITE_PERMISSION_FEATURE_MODE featureMode)
 
-#### Parameters
+###### Parameters
 * `pszContextUrl` The URL of the page accessing geolocation data. 
 
 * `featureMode` Indicates whether the access was blocked or allowed.
@@ -305,7 +305,7 @@ Raised when user permission is needed to enable geolocation.
 
 > public HRESULT [OnGeolocationPermissionRequested](#ongeolocationpermissionrequested)(LPCWSTR pszContextUrl)
 
-#### Parameters
+###### Parameters
 * `pszContextUrl` The URL of the page requesting geolocation permission.
 
 #### OnHasBeforeUnloadChanged
@@ -314,7 +314,7 @@ Raised when an `OnBeforeUnload` handler has been registered or removed.
 
 > public HRESULT [OnHasBeforeUnloadChanged](#onhasbeforeunloadchanged)(BOOL fBeforeUnload)
 
-#### Parameters
+###### Parameters
 * `fBeforeUnload` `true` indicates that an `OnBeforeUnload` handler was registered; `false` indicates it was removed.
 
 #### OnIndicatorItemsSet
@@ -323,7 +323,7 @@ Raised when a navigation has been completed; provides status information about t
 
 > public HRESULT [OnIndicatorItemsSet](#onindicatoritemsset)(BOOL fProtectedMode, BOOL fEnhancedProtectedMode, DWORD dwUrlZone, BOOL fEnterpriseMode)
 
-#### Parameters
+###### Parameters
 * `fProtectedMode` Indicates whether the browser is in Protected Mode. 
 
 * `fEnhancedProtectedMode` Indicates whether the browser is in Enhanced Protected Mode. 
@@ -344,7 +344,7 @@ Raised when the page's loading state changes.
 
 > public HRESULT [OnLoadingActivityChanged](#onloadingactivitychanged)(BOOL fLoading)
 
-#### Parameters
+###### Parameters
 * `fLoading` Indicates whether the page is loading or not.
 
 #### OnMixedContentBlocked
@@ -359,7 +359,7 @@ Raised when a navigation has been completed.
 
 > public HRESULT [OnNavigationComplete](#onnavigationcomplete)(REFGUID guidTabId, ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntries, int cVisibleListEntries, DWORD dwNavFlags, SECURELOCKICON secureLockIcon, DWORD dwSecurityFlags, [CryptDataBlob](cryptdatablob.md#cryptdatablob) * pDualEngineCertificates, int cCertificateChainBlobs)
 
-#### Parameters
+###### Parameters
 * `guidTabId` The recovery GUID for tab. 
 
 * `ulCurrentEntryId` The ID representing this navigation in the visible-entries list. 
@@ -384,7 +384,7 @@ Raised when a navigation fails.
 
 > public HRESULT [OnNavigationFailed](#onnavigationfailed)(NAVIGATIONFAILEDREASON failureReason)
 
-#### Parameters
+###### Parameters
 * `failureReason` The reason the navigation failed.
 
 #### OnNavigationToDownload
@@ -399,7 +399,7 @@ Raised when a new window has been created.
 
 > public HRESULT [OnNewWindow](#onnewwindow)([IDualEngine20Browser](idualengine20browser.md#idualengine20browser) * pNewBrowser, HWND hwnd, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md#dualenginenewwindowoptions) * options, [IDualEngine20BrowserObserver](#idualengine20browserobserver) ** ppObserver)
 
-#### Parameters
+###### Parameters
 * `pNewBrowser` The browser object for the new window. 
 
 * `hwnd` The handle for the new window. 
@@ -414,7 +414,7 @@ Raised when a popup window was blocked.
 
 > public HRESULT [OnPopupBlocked](#onpopupblocked)(LPCWSTR pszContextUrl, LPCWSTR pszPopupUrl)
 
-#### Parameters
+###### Parameters
 * `pszContextUrl` The URL of the page that issued the command to open the popup. 
 
 * `pszPopupUrl` The URL of the popup page.
@@ -431,7 +431,7 @@ Raised when the browser has successfully handled a previous [IDualEngine20Browse
 
 > public HRESULT [OnReadyToExitRegion](#onreadytoexitregion)(REFGUID guidClonedTabId, ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntriesComplete, int cVisibleListEntriesComplete)
 
-#### Parameters
+###### Parameters
 * `guidClonedTabId` The GUID of the tab recovery data file backing the exited region. 
 
 * `ulCurrentEntryId` The travel log entry ID for the page that raised this event. 
@@ -446,7 +446,7 @@ Raised when the tab has crashed.
 
 > public HRESULT [OnTabCrashed](#ontabcrashed)(BOOL fUnrecoverable)
 
-#### Parameters
+###### Parameters
 * `fUnrecoverable` Indicates whether the tab is recoverable.
 
 #### OnTabHangReported
@@ -467,7 +467,7 @@ Raised when processing a keyboard accelerator and it is determined that the brow
 
 > public HRESULT [OnUnhandledKeyboardAccelerator](#onunhandledkeyboardaccelerator)(LPMSG lpMsg)
 
-#### Parameters
+###### Parameters
 * `lpMsg` The win32 message for the unhandled keyboard accelerator. 
 
 #### OnUnhandledKeyboardAcceleratorAsync
@@ -477,7 +477,7 @@ Raised when processing a keyboard accelerator and it is determined that browser 
 > public HRESULT [OnUnhandledKeyboardAcceleratorAsync](#onunhandledkeyboardacceleratorasync)(LPMSG pMsg, BOOL isShiftDown, BOOL isCtrlDown, BOOL isAltDown)
 
 In this version of the method, the event is raised asynchronously and keyboard state may have changed since it was processed, so the state of the modifier keys is provided. 
-#### Parameters
+###### Parameters
 * `pMsg` The win32 message for the unhandled keyboard accelerator. 
 
 * `isShiftDown` Indicates whether the **Shift** key was pressed. 
@@ -498,7 +498,7 @@ Raised when the zoom has changed.
 
 > public HRESULT [OnZoomChanged](#onzoomchanged)(ULONG ulZoomPercent)
 
-#### Parameters
+###### Parameters
 * `ulZoomPercent` The new zoom percentage.
 
 #### OpenURLInEdge
@@ -507,7 +507,7 @@ Raised when the browser is requesting the host to navigate to a URL in a new win
 
 > public HRESULT [OpenURLInEdge](#openurlinedge)(LPCWSTR pszUrl, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md#dualenginenewwindowoptions) * options, ULONG ulCookieSyncVersion)
 
-#### Parameters
+###### Parameters
 * `pszUrl` The URL to navigate to. 
 
 * `options` Options to apply to the new window. 
@@ -520,7 +520,7 @@ Raised when the browser is requesting the host to navigate to a URL in a new win
 
 > public HRESULT [OpenURLInEdge2](#openurlinedge2)(LPCWSTR pszUrl, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md#dualenginenewwindowoptions) * options, ULONG ulCookieSyncVersion, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
-#### Parameters
+###### Parameters
 * `pszUrl` The URL to navigate to. 
 
 * `options` Options to apply to the navigation. 
@@ -539,7 +539,7 @@ Raised when a page has been requested to be added to favorites.
 
 > public HRESULT [RequestHostAddFavorite](#requesthostaddfavorite)(LPCWSTR pszTitle, LPCWSTR pszUrl)
 
-#### Parameters
+###### Parameters
 * `pszTitle` The title of the page. 
 
 * `pszUrl` The URL of the page.
@@ -550,7 +550,7 @@ Raised when requesting to show a tooltip containing a URL.
 
 > public HRESULT [RequestHostCreateUrlTip](#requesthostcreateurltip)(LPCWSTR pszUrl)
 
-#### Parameters
+###### Parameters
 * `pszUrl` The URL to display in the tooltip.
 
 #### RequestHostFocus
@@ -559,7 +559,7 @@ Raised when focus is being requested to move to the host window.
 
 > public HRESULT [RequestHostFocus](#requesthostfocus)(DUALENGINE_FOCUSDIRECTION focusDirection, const MSG * msg)
 
-#### Parameters
+###### Parameters
 * `focusDirection` The direction that focus is moving. 
 
 * `msg` A pointer to the message that caused the focus change.
@@ -570,7 +570,7 @@ Raised when the page is requesting that the host display content in fullscreen.
 
 > public HRESULT [RequestHostFullscreen](#requesthostfullscreen)(FULLSCREENACTION fullScreenAction)
 
-#### Parameters
+###### Parameters
 * `fullScreenAction` The fullscreen action that is being requested.
 
 #### RequestHostHideUrlTip
@@ -585,7 +585,7 @@ Raised when the browser requests that the host change its size or position.
 
 > public HRESULT [RequestHostPositionChanged](#requesthostpositionchanged)(LONG nX, LONG nY, LONG nWidth, LONG nHeight, ULONGLONG hSyncEvent)
 
-#### Parameters
+###### Parameters
 * `nX` The requested window X position. 
 
 * `nY` The requested window Y position. 
@@ -602,7 +602,7 @@ Raised when the browser is requesting the host to enter or leave theater mode.
 
 > public HRESULT [RequestHostShowTheater](#requesthostshowtheater)(BOOL fShow)
 
-#### Parameters
+###### Parameters
 * `fShow` If `true`, the host is being requested to enter theater mode; if `false`, it is being requested to leave theater mode.
 
 #### RequestHostWindowFocus
@@ -611,7 +611,7 @@ Raised when the host is requested to take or give up focus.
 
 > public HRESULT [RequestHostWindowFocus](#requesthostwindowfocus)(BOOL fFocus)
 
-#### Parameters
+###### Parameters
 * `fFocus` Indicates what should be done with focus. If `true`, focus should be taken; otherwise it should be relinquished.
 
 #### RequestHostWindowFocusSync
@@ -621,7 +621,7 @@ Raised when the host is requested to take or give up focus.
 > public HRESULT [RequestHostWindowFocusSync](#requesthostwindowfocussync)(BOOL fFocus, ULONGLONG hSyncEvent)
 
 In this version of the method, the browser will wait until the provided event is signaled. 
-#### Parameters
+###### Parameters
 * `fFocus` Indicates what should be done with focus. If `true`, focus should be taken; otherwise it should be relinquished. 
 
 * `hSyncEvent` A handle to the event object that should be signaled when the change is complete.
@@ -632,7 +632,7 @@ Raised when the favicon has changed.
 
 > public HRESULT [UpdateHostFavicon](#updatehostfavicon)(ULONG ulCurrentEntryId, LPCWSTR spszCurrentUrl, LPCWSTR * pIconUrls, int cIconUrls)
 
-#### Parameters
+###### Parameters
 * `ulCurrentEntryId` The travel log entry ID for the page that raised this event. 
 
 * `spszCurrentUrl` The URL of the page. 
@@ -647,7 +647,7 @@ Raised when the title of the page has been updated.
 
 > public HRESULT [UpdateHostTitle](#updatehosttitle)(ULONG ulCurrentEntryId, LPCWSTR pszTitle)
 
-#### Parameters
+###### Parameters
 * `ulCurrentEntryId` The ID of the page in the visible-entries list that raised this event. 
 
 * `pszTitle` The new title.
@@ -658,7 +658,7 @@ Raised when security information of the page has changed.
 
 > public HRESULT [UpdateSecureLockIcon](#updatesecurelockicon)(ULONG ulCurrentEntryId, SECURELOCKICON secureLockIcon)
 
-#### Parameters
+###### Parameters
 * `ulCurrentEntryId` The travel log entry for this change. 
 
 * `secureLockIcon` The state of the security information.

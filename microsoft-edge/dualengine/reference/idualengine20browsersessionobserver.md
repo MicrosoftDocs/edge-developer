@@ -54,7 +54,7 @@ Raised when the session Download window is requesting to navigate to a URL.
 
 > public HRESULT [NavigateDownloadLink](#navigatedownloadlink)(BSTR url, VARIANT * PostData)
 
-#### Parameters
+###### Parameters
 * `url` The URL that should be navigated to. 
 
 * `PostData` HTTP POST data, such as form data.
@@ -67,7 +67,7 @@ Raised when a cookie is set in the session, if reverse cookie sync is enabled.
 
 See [IDualEngine20BrowserSession::SetReverseCookieSync](idualengine20browsersession.md#setreversecookiesync).
 
-#### Parameters
+###### Parameters
 * `pCookies` The cookies that were set. 
 
 * `cCookies` The number of cookies in `pCookies`.
@@ -80,5 +80,5 @@ Raised when downloads are stopped or started.
 
 > public HRESULT [UpdateDownloadState](#updatedownloadstate)(BOOL fOnGoingDownloads)
 
-#### Parameters
+###### Parameters
 * `fOnGoingDownloads` If `true`, the session has ongoing downloads; `false` if it does not.

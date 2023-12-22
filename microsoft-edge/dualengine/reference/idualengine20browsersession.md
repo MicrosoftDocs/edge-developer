@@ -82,7 +82,7 @@ Duplicates an active tab's recovery data.
 
 > public HRESULT [CloneActiveTabRecoveryData](#cloneactivetabrecoverydata)(HWND hwndBrowser, REFGUID guidSrcFile, REFGUID guidDestFile)
 
-#### Parameters
+###### Parameters
 * `hwndBrowser` The HWND of the hosted browser window. 
 
 * `guidSrcFile` The GUID for the source recovery data file to copy. 
@@ -95,7 +95,7 @@ Duplicates an inactive tab's recovery data.
 
 > public HRESULT [CloneInactiveTabRecoveryData](#cloneinactivetabrecoverydata)(REFGUID guidSrcFile, REFGUID guidDestFile)
 
-#### Parameters
+###### Parameters
 * `guidSrcFile` The GUID for the source recovery data file to copy. 
 
 * `guidDestFile` The GUID to associate with the new tab recovery data file.
@@ -106,7 +106,7 @@ Creates a Browser object in this session.
 
 > public HRESULT [CreateDualEngineBrowser](#createdualenginebrowser)([IDualEngine20Browser](idualengine20browser.md#idualengine20browser) ** ppDualEngineBrowser)
 
-#### Parameters
+###### Parameters
 * `ppDualEngineBrowser` The new Browser object.
 
 #### DeleteAllButRecoverableRecoveryFiles
@@ -115,7 +115,7 @@ Deletes all but the provided tab recovery data files.
 
 > public HRESULT [DeleteAllButRecoverableRecoveryFiles](#deleteallbutrecoverablerecoveryfiles)(int cRecoverableGUIDs, LPCWSTR * rgpszRecoverableGUIDs)
 
-#### Parameters
+###### Parameters
 * `cRecoverableGUIDs` The number of GUIDs in `rgpszRecoverableGUIDs`. 
 
 * `rgpszRecoverableGUIDs` An array of GUIDs representing tab recovery data files that are not to be deleted.
@@ -126,7 +126,7 @@ Deletes an inactive region's tab recovery data.
 
 > public HRESULT [DeleteInactiveRegionRecoveryData](#deleteinactiveregionrecoverydata)(REFGUID guidTabId)
 
-#### Parameters
+###### Parameters
 * `guidTabId` The GUID of the recovery data to delete.
 
 #### GetRequestedHostForwardedAccelerators
@@ -135,7 +135,7 @@ Returns a list of keyboard accelerators that should be forwarded from the Host.
 
 > public HRESULT [GetRequestedHostForwardedAccelerators](#getrequestedhostforwardedaccelerators)(DWORD * pcAccels, [ACCELERATOR](accelerator.md#accelerator) ** prgAccels)
 
-#### Parameters
+###### Parameters
 * `pcAccels` The number of accelerators in `prgAccels`. 
 
 * `prgAccels` A list of keyboard accelerators that should be forwarded. When finished the caller must free the memory allocated for the list with `CoTaskMemFree`.
@@ -146,7 +146,7 @@ Initializes the session.
 
 > public HRESULT [Initialize](#initialize)(DWORD cAccels, [ACCELERATOR](accelerator.md#accelerator) * rgHostPriorityAccels, [IDualEngine20BrowserSessionObserver](idualengine20browsersessionobserver.md#idualengine20browsersessionobserver) * pSessionObserver, LPCWSTR pszProfilePath, LPCWSTR pszProfileId)
 
-#### Parameters
+###### Parameters
 * `cAccels` The number of accelerators in `rgHostPriorityAccels`. 
 
 * `rgHostPriorityAccels` A list of keyboard accelerators to have the session forward to the host. 
@@ -163,7 +163,7 @@ Parses the sitelist XML at the provided path.
 
 > public HRESULT [ParseEmieSitelist](#parseemiesitelist)(LPCWSTR emieXmlPath)
 
-#### Parameters
+###### Parameters
 * `emieXmlPath` Path to the sitelist XML to parse.
 
 #### SetConfigurableSitesFlags
@@ -172,7 +172,7 @@ Sets flags that determine how configurable sites are handled.
 
 > public HRESULT [SetConfigurableSitesFlags](#setconfigurablesitesflags)(DualEngineConfigurableSitesFlags flags)
 
-#### Parameters
+###### Parameters
 * `flags` The flags indicating how configurable sites are handled.
 
 #### SetHangDetectionMessages
@@ -181,7 +181,7 @@ Sets hang detection messages that will be sent to the session by the host to det
 
 > public HRESULT [SetHangDetectionMessages](#sethangdetectionmessages)(UINT uiSyncHungCheckMsg, UINT uiAsyncHungCheckMsg)
 
-#### Parameters
+###### Parameters
 * `uiSyncHungCheckMsg` The window message ID of the message that the host will synchronously wait on to be handled. 
 
 * `uiAsyncHungCheckMsg` The window message ID of the message that the host will asynchronously wait on. Browsers signal the host by calling [IDualEngine20BrowserObserver::OnAsyncHungCheckReply()](idualengine20browserobserver.md#onasynchungcheckreply).
@@ -192,7 +192,7 @@ Sets whether to open all Intranet sites in the session.
 
 > public HRESULT [SetHostIntranetInInternetExplorer](#sethostintranetininternetexplorer)(BOOL fEnable)
 
-#### Parameters
+###### Parameters
 * `fEnable` If `true`, navigation to Intranet sites will stay in the session; otherwise, whether a navigation will stay in the session or not follows default determination logic.
 
 #### SetHybridMode
@@ -201,7 +201,7 @@ Sets whether to enable Hybrid Mode site list handling.
 
 > public HRESULT [SetHybridMode](#sethybridmode)(BOOL fEnable)
 
-#### Parameters
+###### Parameters
 * `fEnable` If `true`, Hybrid Mode behavior is enabled when handling site list URLs; otherwise, normal navigation behavior occurs.
 
 #### SetReverseCookieSync
@@ -210,7 +210,7 @@ Sets whether cookie changes are synced back to the host.
 
 > public HRESULT [SetReverseCookieSync](#setreversecookiesync)(BOOL fEnable)
 
-#### Parameters
+###### Parameters
 * `fEnable` If `true`, the host will be notified of cookie changes by the [IDualEngine20BrowserSessionObserver::ReverseSyncCookies()](idualengine20browsersessionobserver.md#reversesynccookies) event; otherwise, it is not.
 
 #### SetSitePermissions
@@ -219,7 +219,7 @@ Sets site permissions for the session.
 
 > public HRESULT [SetSitePermissions](#setsitepermissions)(SITE_PERMISSION_KIND sitePermissionKind, LPCWSTR pszPermissionData)
 
-#### Parameters
+###### Parameters
 * `sitePermissionKind` The type of site permission that is being set. 
 
 * `pszPermissionData` A serialized string of the permission data to set.
@@ -279,7 +279,7 @@ Sets whether to enable additional hang detections.
 
 > public HRESULT [SetUseAdditionalHangDetection](#setuseadditionalhangdetection)(BOOL fEnable)
 
-#### Parameters
+###### Parameters
 * `fEnable` If `true`, additional hang detections will be enabled; otherwise, they will not.
 
 #### ShowDownloadWindow
@@ -294,7 +294,7 @@ Sends cookie data to the session process.
 
 > public HRESULT [SyncCookies](#synccookies)(const [DualEngineCookie](dualenginecookie.md#dualenginecookie) * pCookies, DWORD cCookies)
 
-#### Parameters
+###### Parameters
 * `pCookies` An array of cookies to be sent to the session.
 
 * `cCookies` The number of items in `pCookies`.
