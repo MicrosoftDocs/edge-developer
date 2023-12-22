@@ -48,7 +48,7 @@ api_loction:
 [SITE_PERMISSION_FEATURE_MODE](#site_permission_feature_mode) | Represents the state of a site permission request.
 [SITE_PERMISSION_KIND](#site_permission_kind) | Represents the type of site permission being requested.
 [SITE_PERMISSION_RESPONSE](#site_permission_response) | Represents a user's response to a site permission request.
-[VisibleEntryUpdateOperation](#visibleentryupdateoperation) | Indicates the type of operation of the [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry).
+[VisibleEntryUpdateOperation](#visibleentryupdateoperation) | Indicates the type of operation of the [VisibleListUpdateEntry](visiblelistupdateentry.md).
 [DualEngineInitialize](#dualengineinitialize) | Initializes the DualEngine.
 [DualEngineReady](#dualengineready) | Called after Internet Explorer has finished all of its initial setup and the API is ready to use.
 
@@ -341,7 +341,7 @@ SITE_PERMISSION_REQUEST_DISMISSED            | Request for the permission was di
 
 #### VisibleEntryUpdateOperation
 
-Indicates the type of operation of the [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry).
+Indicates the type of operation of the [VisibleListUpdateEntry](visiblelistupdateentry.md).
 
 > enum [VisibleEntryUpdateOperation](#visibleentryupdateoperation)
 
@@ -356,7 +356,7 @@ VisibleEntry_Done            | For internal use only; do not use.
 
 Initializes the DualEngine.
 
-> public HRESULT APIENTRY [DualEngineInitialize](#dualengineinitialize)(const [DualEngineSessionFactory](dualenginesessionfactory.md#dualenginesessionfactory) * pSessionFactory, PCWSTR pipeName)
+> public HRESULT APIENTRY [DualEngineInitialize](#dualengineinitialize)(const [DualEngineSessionFactory](dualenginesessionfactory.md) * pSessionFactory, PCWSTR pipeName)
 
 A function that you export. This function is called immediately after Internet Explorer successfully loads the DLL. This is your first chance to set up anything necessary for your application. See [DualEngineInitialize](../concepts/adapter-dll.md#dualengineinitialize) in _Creating a DualEngine adapter plugin DLL_.
 #### DualEngineReady

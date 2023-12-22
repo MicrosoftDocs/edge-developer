@@ -183,7 +183,7 @@ Raised when the browser requests to navigate to a travel log entry offset.
 
 Raised when the browser has deleted all entries in its travel log except for the current entry.
 
-> public HRESULT [OnAllButCurrentEntryDeleted](#onallbutcurrententrydeleted)([VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntries, int cVisibleListEntries)
+> public HRESULT [OnAllButCurrentEntryDeleted](#onallbutcurrententrydeleted)([VisibleListUpdateEntry](visiblelistupdateentry.md) * pVisibleListEntries, int cVisibleListEntries)
 
 ###### Parameters
 * `pVisibleListEntries` A list containing the new travel log entries since the last update. In this case it will only have the current active entry. 
@@ -242,7 +242,7 @@ Raised when a the browser shows or hides a modal dialog.
 
 Raised when a document is completely loaded and initialized.
 
-> public HRESULT [OnDocumentComplete](#ondocumentcomplete)(ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntries, int cVisibleListEntries)
+> public HRESULT [OnDocumentComplete](#ondocumentcomplete)(ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md) * pVisibleListEntries, int cVisibleListEntries)
 
 ###### Parameters
 * `ulCurrentEntryId` The travel log entry ID for the page that raised this event. 
@@ -357,7 +357,7 @@ Raised when Mixed Content has been blocked.
 
 Raised when a navigation has been completed.
 
-> public HRESULT [OnNavigationComplete](#onnavigationcomplete)(REFGUID guidTabId, ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntries, int cVisibleListEntries, DWORD dwNavFlags, SECURELOCKICON secureLockIcon, DWORD dwSecurityFlags, [CryptDataBlob](cryptdatablob.md#cryptdatablob) * pDualEngineCertificates, int cCertificateChainBlobs)
+> public HRESULT [OnNavigationComplete](#onnavigationcomplete)(REFGUID guidTabId, ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md) * pVisibleListEntries, int cVisibleListEntries, DWORD dwNavFlags, SECURELOCKICON secureLockIcon, DWORD dwSecurityFlags, [CryptDataBlob](cryptdatablob.md) * pDualEngineCertificates, int cCertificateChainBlobs)
 
 ###### Parameters
 * `guidTabId` The recovery GUID for tab. 
@@ -397,7 +397,7 @@ Raised when a navigation has ended in a download.
 
 Raised when a new window has been created.
 
-> public HRESULT [OnNewWindow](#onnewwindow)([IDualEngine20Browser](idualengine20browser.md#idualengine20browser) * pNewBrowser, HWND hwnd, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md#dualenginenewwindowoptions) * options, [IDualEngine20BrowserObserver](#idualengine20browserobserver) ** ppObserver)
+> public HRESULT [OnNewWindow](#onnewwindow)([IDualEngine20Browser](idualengine20browser.md) * pNewBrowser, HWND hwnd, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md) * options, [IDualEngine20BrowserObserver](idualengine20browserobserver.md) ** ppObserver)
 
 ###### Parameters
 * `pNewBrowser` The browser object for the new window. 
@@ -429,7 +429,7 @@ Raised when the browser has failed to a handle a previous [IDualEngine20Browser:
 
 Raised when the browser has successfully handled a previous [IDualEngine20Browser::DualEnginePrepareToExitRegion()](idualengine20browser.md#dualenginepreparetoexitregion) call.
 
-> public HRESULT [OnReadyToExitRegion](#onreadytoexitregion)(REFGUID guidClonedTabId, ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md#visiblelistupdateentry) * pVisibleListEntriesComplete, int cVisibleListEntriesComplete)
+> public HRESULT [OnReadyToExitRegion](#onreadytoexitregion)(REFGUID guidClonedTabId, ULONG ulCurrentEntryId, [VisibleListUpdateEntry](visiblelistupdateentry.md) * pVisibleListEntriesComplete, int cVisibleListEntriesComplete)
 
 ###### Parameters
 * `guidClonedTabId` The GUID of the tab recovery data file backing the exited region. 
@@ -505,7 +505,7 @@ Raised when the zoom has changed.
 
 Raised when the browser is requesting the host to navigate to a URL in a new window.
 
-> public HRESULT [OpenURLInEdge](#openurlinedge)(LPCWSTR pszUrl, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md#dualenginenewwindowoptions) * options, ULONG ulCookieSyncVersion)
+> public HRESULT [OpenURLInEdge](#openurlinedge)(LPCWSTR pszUrl, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md) * options, ULONG ulCookieSyncVersion)
 
 ###### Parameters
 * `pszUrl` The URL to navigate to. 
@@ -518,7 +518,7 @@ Raised when the browser is requesting the host to navigate to a URL in a new win
 
 Raised when the browser is requesting the host to navigate to a URL in a new window; this version provides extra information about the navigation.
 
-> public HRESULT [OpenURLInEdge2](#openurlinedge2)(LPCWSTR pszUrl, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md#dualenginenewwindowoptions) * options, ULONG ulCookieSyncVersion, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
+> public HRESULT [OpenURLInEdge2](#openurlinedge2)(LPCWSTR pszUrl, const [DualEngineNewWindowOptions](dualenginenewwindowoptions.md) * options, ULONG ulCookieSyncVersion, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
 ###### Parameters
 * `pszUrl` The URL to navigate to. 

@@ -208,7 +208,7 @@ Navigates to a specific travel log entry.
 
 Initializes the browser object with an URL.
 
-> public HRESULT [DualEngineInitialize](#dualengineinitialize)([IDualEngine20BrowserObserver](idualengine20browserobserver.md#idualengine20browserobserver) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
+> public HRESULT [DualEngineInitialize](#dualengineinitialize)([IDualEngine20BrowserObserver](idualengine20browserobserver.md) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
 ###### Parameters
 * `pDualEngineObserver` A pointer to the observer for this browser. 
@@ -229,7 +229,7 @@ Initializes the browser object with an URL.
 
 Initializes the browser object with an URL; this version allows for additional information about the initial navigation to be passed in.
 
-> public HRESULT [DualEngineInitialize2](#dualengineinitialize2)([IDualEngine20BrowserObserver](idualengine20browserobserver.md#idualengine20browserobserver) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
+> public HRESULT [DualEngineInitialize2](#dualengineinitialize2)([IDualEngine20BrowserObserver](idualengine20browserobserver.md) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
 ###### Parameters
 * `pDualEngineObserver` A pointer to the observer for this browser. 
@@ -256,7 +256,7 @@ Initializes the browser object with an URL; this version allows for additional i
 
 Initializes the browser object using tab recovery data.
 
-> public HRESULT [DualEngineInitializeWithRecoveryData](#dualengineinitializewithrecoverydata)(REFGUID guidTabId, ULONG ulEntryId, [IDualEngine20BrowserObserver](idualengine20browserobserver.md#idualengine20browserobserver) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
+> public HRESULT [DualEngineInitializeWithRecoveryData](#dualengineinitializewithrecoverydata)(REFGUID guidTabId, ULONG ulEntryId, [IDualEngine20BrowserObserver](idualengine20browserobserver.md) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
 ###### Parameters
 * `guidTabId` The GUID for the source recovery data file to initialize this instance with. 
@@ -318,7 +318,7 @@ Navigates to a URL, with additional information about the navigation.
 
 Notifies that navigation entries have been deleted.
 
-> public HRESULT [DualEngineNotifyNavigationEntriesDeleted](#dualenginenotifynavigationentriesdeleted)(BOOL fShouldDeleteEntries, [SentinelEntryInfo](tagsentinelentryinfo.md#tagsentinelentryinfo) sentinelEntryInfo)
+> public HRESULT [DualEngineNotifyNavigationEntriesDeleted](#dualenginenotifynavigationentriesdeleted)(BOOL fShouldDeleteEntries, [SentinelEntryInfo](tagsentinelentryinfo.md) sentinelEntryInfo)
 
 ###### Parameters
 * `fShouldDeleteEntries` Indicates whether the browser should delete all the entries in it's list. 

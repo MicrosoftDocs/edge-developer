@@ -63,7 +63,7 @@ Raised when the session Download window is requesting to navigate to a URL.
 
 Raised when a cookie is set in the session, if reverse cookie sync is enabled.
 
-> public HRESULT [ReverseSyncCookies](#reversesynccookies)(const [DualEngineCookie](dualenginecookie.md#dualenginecookie) * pCookies, DWORD cCookies, ULONG ulCookieSyncVersion)
+> public HRESULT [ReverseSyncCookies](#reversesynccookies)(const [DualEngineCookie](dualenginecookie.md) * pCookies, DWORD cCookies, ULONG ulCookieSyncVersion)
 
 See [IDualEngine20BrowserSession::SetReverseCookieSync](idualengine20browsersession.md#setreversecookiesync).
 

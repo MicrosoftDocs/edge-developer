@@ -104,7 +104,7 @@ Duplicates an inactive tab's recovery data.
 
 Creates a Browser object in this session.
 
-> public HRESULT [CreateDualEngineBrowser](#createdualenginebrowser)([IDualEngine20Browser](idualengine20browser.md#idualengine20browser) ** ppDualEngineBrowser)
+> public HRESULT [CreateDualEngineBrowser](#createdualenginebrowser)([IDualEngine20Browser](idualengine20browser.md) ** ppDualEngineBrowser)
 
 ###### Parameters
 * `ppDualEngineBrowser` The new Browser object.
@@ -133,7 +133,7 @@ Deletes an inactive region's tab recovery data.
 
 Returns a list of keyboard accelerators that should be forwarded from the Host.
 
-> public HRESULT [GetRequestedHostForwardedAccelerators](#getrequestedhostforwardedaccelerators)(DWORD * pcAccels, [ACCELERATOR](accelerator.md#accelerator) ** prgAccels)
+> public HRESULT [GetRequestedHostForwardedAccelerators](#getrequestedhostforwardedaccelerators)(DWORD * pcAccels, [ACCELERATOR](accelerator.md) ** prgAccels)
 
 ###### Parameters
 * `pcAccels` The number of accelerators in `prgAccels`. 
@@ -144,7 +144,7 @@ Returns a list of keyboard accelerators that should be forwarded from the Host.
 
 Initializes the session.
 
-> public HRESULT [Initialize](#initialize)(DWORD cAccels, [ACCELERATOR](accelerator.md#accelerator) * rgHostPriorityAccels, [IDualEngine20BrowserSessionObserver](idualengine20browsersessionobserver.md#idualengine20browsersessionobserver) * pSessionObserver, LPCWSTR pszProfilePath, LPCWSTR pszProfileId)
+> public HRESULT [Initialize](#initialize)(DWORD cAccels, [ACCELERATOR](accelerator.md) * rgHostPriorityAccels, [IDualEngine20BrowserSessionObserver](idualengine20browsersessionobserver.md) * pSessionObserver, LPCWSTR pszProfilePath, LPCWSTR pszProfileId)
 
 ###### Parameters
 * `cAccels` The number of accelerators in `rgHostPriorityAccels`. 
@@ -292,7 +292,7 @@ Shows the Internet Explorer download window.
 
 Sends cookie data to the session process.
 
-> public HRESULT [SyncCookies](#synccookies)(const [DualEngineCookie](dualenginecookie.md#dualenginecookie) * pCookies, DWORD cCookies)
+> public HRESULT [SyncCookies](#synccookies)(const [DualEngineCookie](dualenginecookie.md) * pCookies, DWORD cCookies)
 
 ###### Parameters
 * `pCookies` An array of cookies to be sent to the session.
