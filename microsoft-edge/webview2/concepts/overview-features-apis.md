@@ -2433,7 +2433,7 @@ See also:
 
 **Subsections below:**
 * [Multiple profiles](#multiple-profiles)
-* [Delete a profile](#delete-a-profile)
+* [Delete a profile](#delete-a-profile-incoming-4)
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
