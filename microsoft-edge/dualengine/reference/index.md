@@ -5,14 +5,14 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode
-ms.date: 11/16/2023
+ms.date: 12/27/2023
 ---
 # DualEngine Win32 C++ Reference
 
 > [!IMPORTANT]
 > The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
 
-The Microsoft DualEngine API enables you to host and control an Internet Explorer instance within your app.  For more information, see [Introduction to the Microsoft DualEngine API](../intro.md) and [Getting started with the DualEngine API](../get-started.md).
+The Microsoft DualEngine API enables you to host and control an Internet Explorer instance within your app.  For more information, see [Introduction to the Microsoft DualEngine API](../intro.md) and [Getting started with the DualEngine API](../get-started.md). 
 
 ## Globals
 

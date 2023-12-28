@@ -4,7 +4,7 @@ description: Represents an Internet Explorer process session.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 12/09/2023
+ms.date: 12/27/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserSession
 topic_type: 
 - APIRef
@@ -271,6 +271,7 @@ port                = *DIGIT
 ```
 
 See also:
+
 * [Appendix A. Collected ABNF for URI](https://www.rfc-editor.org/rfc/rfc3986#appendix-A) in _RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax_.
 
 #### SetUseAdditionalHangDetection
@@ -295,6 +296,6 @@ Sends cookie data to the session process.
 > public HRESULT [SyncCookies](#synccookies)(const [DualEngineCookie](dualenginecookie.md) * pCookies, DWORD cCookies)
 
 ###### Parameters
-* `pCookies` An array of cookies to be sent to the session.
+* `pCookies` An array of cookies to be sent to the session. 
 
 * `cCookies` The number of items in `pCookies`.

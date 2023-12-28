@@ -4,7 +4,7 @@ description: Receives events from the Browser.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 12/09/2023
+ms.date: 12/27/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserObserver
 topic_type: 
 - APIRef
@@ -168,7 +168,7 @@ Raised when the browser wants to stop hosting content and have the navigation to
 
 * `pszHeaders` Additional HTTP headers. 
 
-* `postData` HTTP POST data such as form data.
+* `postData` HTTP POST data, such as form data.
 
 #### NavigateToOffsetInEdge
 
@@ -531,7 +531,7 @@ Raised when the browser is requesting the host to navigate to a URL in a new win
 
 * `pszHeaders` Additional HTTP headers. 
 
-* `postData` HTTP POST data such as form data.
+* `postData` HTTP POST data, such as form data.
 
 #### RequestHostAddFavorite
 

@@ -4,7 +4,7 @@ description: Represents an Internet Explorer tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-ms.date: 12/09/2023
+ms.date: 12/27/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20Browser
 topic_type: 
 - APIRef
@@ -208,7 +208,7 @@ Navigates to a specific travel log entry.
 
 Initializes the browser object with an URL.
 
-> public HRESULT [DualEngineInitialize](#dualengineinitialize)([IDualEngine20BrowserObserver](idualengine20browserobserver.md) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md#) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
+> public HRESULT [DualEngineInitialize](#dualengineinitialize)([IDualEngine20BrowserObserver](idualengine20browserobserver.md) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
 ###### Parameters
 * `pDualEngineObserver` A pointer to the observer for this browser. 
