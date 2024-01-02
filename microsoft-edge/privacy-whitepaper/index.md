@@ -1049,6 +1049,27 @@ If your device is managed by using group policies set by your organization, the 
 
 Text prediction is only available in select languages and regions.
 
+#### Windows Ink
+Windows Ink allows you to write with a digital pen directly into an input field on Windows touch devices. This helps you stay in your workflow by reducing the need to switch back and forth from your keyboard to digital pen. Supported fields include text areas, `contenteditable` elements, and the address bar. Password fields are not supported. The following writing actions are supported: 
+
+|Action | Description| Before | After |
+|-------|--------|-------|-------|
+|Insert text|Write in/near input field|![Insert text (before)](./index-images/Abydos-add-text-before.png)|![Insert text (after)](./index-images/Abydos-add-text-after.png)|
+|Delete text |Scribble over words to delete|![Delete text (before)](./index-images/Abydos-delete-text-before.png)|![Delete text (after)](./index-images/Abydos-delete-text-after.png)|
+|Add space|Draw vertical line where space should be inserted|![Add space (before)](./index-images/Abydos-insert-space-before.png)|![Add space (after)](./index-images/Abydos-insert-space-after.png)|
+|Remove space|Draw vertical line on space to remove|![Remove space (before)](./index-images/Abydos-remove-space-before.png)|![Remove space (after)](./index-images/Abydos-remove-space-after.png)|
+|Select text|Draw horizontal line across text to select|![Select text (before)](./index-images/Abydos-select-text-before.png)|![Select text (after)](./index-images/Abydos-select-text-after.png)|
+|Add newline|Draw "backwards L" at the end of text|![Add newline (before)](./index-images/Abydos-add-newline-before.png)|![Add newline (after)](./index-images/Abydos-add-newline-after.png)|
+
+Aggregate feature usage data to measure frequency of usage and latency are collected. Text you’ve inputted and personal identifiers are not sent to Microsoft.  
+
+You can opt out of Windows Ink by going to `edge://settings/content/HandwritingToText`. You can also disable Windows Ink for your entire Windows device in `Settings > Bluetooth and Devices > Pen & Windows Ink > Shell Handwriting`.  
+
+![Windows Ink Edge Settings](./index-images/Abydos-edge-settings.png)
+*Windows Ink settings in Microsoft Edge*
+
+![Windows Ink Windows Settings](./index-images/Abydos-windows-settings.png)
+*Windows Ink settings in Windows*
 
 <!-- ====================================================================== -->
 ## Thank you!
