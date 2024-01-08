@@ -448,7 +448,7 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
             {
                 MessageBox.Show(pageUri, "Page Uri", MessageBoxButton.OK);
             }, null);
-        }
+        };
     menuList.Insert(menuList.Count, newItem);
 };
 ``` 
