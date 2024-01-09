@@ -328,9 +328,9 @@ Check the following:
 
 * Is the name spelled correctly in the extension and in the manifest file?
 
-* Is the manifest in the right directory and with the correct name? See [native messaging host location](#step-3---copy-the-native-messaging-host-manifest-file-to-your-system) for the expected formats.
+* Is the manifest in the right directory and with the correct name? See [native messaging host location](#step-3-copy-the-native-messaging-host-manifest-file-to-your-system) for the expected formats.
 
-* Is the manifest file in the correct format? In particular, is the JSON valid and well-formed and do the values match the definition of a [native messaging host manifest](#native-messaging-host)?
+* Is the manifest file in the correct format?  In particular, is the JSON valid and well-formed, and do the values match the definition of a _native messaging host manifest_, per [Step 2: Create your native messaging host manifest file](#step-2-create-your-native-messaging-host-manifest-file) above?
 
 * Does the file specified in `path` exist? On Windows, paths may be relative, but on macOS and Linux, the paths must be absolute.
 
@@ -338,7 +338,7 @@ Check the following:
 <!-- ------------------------------ -->
 **Native messaging host _host name_ is not registered. (Windows-only)**
 
-The native messaging host was not found in the Windows registry.  Double-check using `regedit` whether the key was really created and matches the required format as documented at [native messaging host location](#step-3---copy-the-native-messaging-host-manifest-file-to-your-system).
+The native messaging host was not found in the Windows registry.  Double-check using `regedit` whether the key was really created and matches the required format as documented at [native messaging host location](#step-3-copy-the-native-messaging-host-manifest-file-to-your-system).
 
 
 <!-- ------------------------------ -->
