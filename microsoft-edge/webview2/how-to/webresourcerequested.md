@@ -165,7 +165,7 @@ webView.CoreWebView2.WebResourceRequested += delegate (
    }
    CoreWebView2HttpRequestHeaders requestHeaders = args.Request.Headers;
    requestHeaders.SetHeader("Custom", "Value");
-}
+};
 ```
 
 ##### [Win32](#tab/win32)
