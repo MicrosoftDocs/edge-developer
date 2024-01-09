@@ -52,7 +52,7 @@ Visual Studio Code source path mapping now requires an URL, so your app now rece
 
 1. On the **Run** tab, select the launch configuration from the dropdown menu.
 
-1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown:
+1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown list:
 
    ![The Run tab in Visual Studio Code](./debug-visual-studio-code-images/run-vscode.png)
 

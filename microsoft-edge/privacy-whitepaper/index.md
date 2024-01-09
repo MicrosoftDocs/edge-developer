@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 11/13/2023
+ms.date: 12/14/2023
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -390,21 +390,20 @@ To stop Microsoft Edge from finding related matches in **Find on page**:
 <!-- ====================================================================== -->
 ## Geolocation
 
-While you browse the web, websites may request your device's location from Microsoft Edge. Data about your device's location can be either precise or imprecise. For example, a precise location is needed to provide driving directions to or from your specific location. An imprecise location may be used to provide search results, news, and weather relevant to your general area.
+While you browse the web, websites can request your device's location from Microsoft Edge. Data about your device's location can be either precise or imprecise. For example, a precise location is needed to provide driving directions to or from your specific location. An imprecise location might be used to provide search results, news, and weather relevant to your general area.
 
-Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which allows websites to access your precise location with your permission. Microsoft Edge always asks for your permission before granting websites access to your precise location. To manage the site-specific permissions or to always block sites from accessing your precise location, go to `edge://settings/content/location`.
+Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which provides websites access to your device's location. By default, Microsoft Edge asks for your permission before granting a site access to your precise location. To manage site permissions or to always block sites from accessing your precise location, go to `edge://settings/content/location`.
 
-Microsoft Edge indicates when your precise location is being shared on the right side of the address bar. 
+Microsoft Edge provides the site with a location using your device's location services when they're turned on. For more information about how to enable location services on Windows, see [Windows location service and privacy](https://support.microsoft.com/help/4468240). 
+If your device's location services are turned off, Microsoft Edge tries to estimate your location by sending local network information (which might contain nearby Wi-Fi access point information and your device’s IP address) to a Microsoft service. 
+
+When the site you are on has access to your location, Microsoft Edge shows a location icon in the address bar. You can select this icon to get more information and to manage the location access permissions for this site.
 
 ![Location](./index-images/geolocation2.png)
 
-You can allow Microsoft Edge to provide the requesting site with a precise location on Windows 10 and Windows 11. Open **Start** > **Settings** > **Privacy** > **Location** and turn on the **Allow access to location on this device** and **Allow apps to access your location** settings. These settings enable the Windows location service. When enabled, Microsoft services may also estimate your imprecise location via the Windows location service to provide locally relevant browsing experiences.
+Microsoft Edge doesn't collect or store the location data that is shared with the site, and generates a new random identifier for each request.
 
-If you turn off the **Allow access to location on this device** and **Allow apps to access your location** settings, some sites may still estimate your location using other technologies (such as Bluetooth, WiFi, cellular modem, or IP address) with varying degrees of accuracy. With Windows location settings disabled, precise location experiences that you allow in Microsoft Edge may also be inaccurate. For more information about Windows location settings, see [Windows location service and privacy](https://support.microsoft.com/help/4468240).
-
-Microsoft Edge doesn't store your geolocation coordinates. When making requests to the Windows location service, Microsoft Edge generates a new random ID for each request.
-
-**InPrivate** browsing uses the precise location permission setting of the profile from which the **InPrivate** session was launched. **Guest** mode always asks you for permission before granting the site your precise location.
+When you browse the web using **InPrivate**, the **Ask** and **Block** permissions, which control accessing your precise location, are inherited from the profile that you used to open the **InPrivate** window. However, the **Allow** permissions are not automatically inherited, and Microsoft Edge asks for your permission again before granting the site access to your precise location.  In **Guest** mode, Microsoft Edge always asks for permission before granting a site access to your precise location.
 
 
 <!-- ====================================================================== -->
@@ -432,7 +431,15 @@ To control Image Enhancement, go to `edge://settings/privacy` and turn on or off
 
 Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time. You can import your browser data to Microsoft Edge from another browser. The data includes your favorites, browsing history, cookies, autofill data, extensions, settings, and other browsing data.
 
-With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
+With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.
+
+Importing your data is completed locally on your device and is stored locally.  The imported data is sent to Microsoft only after you do at least one of the following actions: 
+
+* Sign into Microsoft Edge with a Microsoft account, and turn on sync'ing of your browsing data across all signed-in devices.
+
+* In Microsoft Edge settings, turn on the toggle **Privacy, search, and services** > **Personalization & advertising** > **Allow Microsoft to save your browsing activity including history, usage, favorites, web content, and other browsing data to personalize Microsoft Edge and Microsoft services like ads, search, shopping and news**.
+
+You can manage your browsing history that's stored on Microsoft servers by visiting [https://account.microsoft.com](https://account.microsoft.com).
 
 You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`.
 
