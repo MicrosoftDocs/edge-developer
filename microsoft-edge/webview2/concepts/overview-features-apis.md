@@ -874,7 +874,7 @@ This feature is currently disabled by default in the browser.  To enable this fe
 `ICoreWebView2AcceleratorKeyPressedEventArgs` has a `IsBrowserAcceleratorKeyEnabled` property to allow you to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**.
 
 See also:
-* [Keyboard accelerators](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys-incoming-3), below.
+* [Keyboard accelerators](#keyboard-accelerators), below.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1238,10 +1238,7 @@ See also:
 <!-- ------------------------------ -->
 #### Browser extensions (incoming 1)
 
-Your app can embed a WebView2 control that uses browser extensions (add-ons).
-<!-- todo: get overview sentence from overview article.  why would someone be/become interested, for their app, in this API?  what func'y/features for end-users does this API enable? -->
-
-<!-- todo: in each h2, manual nav block/list of h4's -->
+Your app can embed a WebView2 control that uses browser extensions (add-ons).  A Microsoft Edge *extension* is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.
 
 See also:
 * [Overview of Microsoft Edge extensions](../../extensions-chromium/index.md)
@@ -1372,15 +1369,10 @@ Get information about running WebView2 processes, exiting processes, and failed 
 ---
 
 
-<!-- todo: ~ move 2 to here -->
 <!-- ------------------------------ -->
 #### Frame process info (incoming 2)
-<!-- todo: maybe move to near "iframes" instead of in Process management -->
 
 The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process.  This API enables your app to detect which part of WebView2 is consuming resources such as memory or CPU usage.
-
-See also:
-<!-- todo -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1892,8 +1884,8 @@ iframes allow you to embed other webpages into your own webpage.  In WebView2, y
 Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. -->
 
 See also:
-* [Host/web object sharing](#hostweb-object-sharing), in this article.
-* [Using frames in WebView2 apps](./frames.md).
+* [Host/web object sharing](#hostweb-object-sharing), above
+* [Using frames in WebView2 apps](./frames.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2563,11 +2555,11 @@ Access and manipulate the profile:
 <!-- ------------------------------ -->
 #### Delete a profile (incoming 4)
 
-Your app can delete profiles.
-<!-- todo: lead-in -->
+Your app can delete user profiles for a WebView2 web browser control.
 
 See also:
-<!-- todo -->
+* [Manage user data folders](./user-data-folder.md)
+
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
