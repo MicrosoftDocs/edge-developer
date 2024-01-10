@@ -45,7 +45,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | Feature | Default state | Configurable | Details |
 | --- | --- | --- | --- |
 | Autofill for Addresses | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
-| Autofill for Passwords | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
+| Autofill for Passwords | Off | Yes | This feature is turned off by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
 | Autofill for Payments | Off | No | This feature is turned off. |
 | Browser Extensions | Off | No | This feature is turned off. |
 | Browser Task Manager | Off | No | This feature is turned off. |
