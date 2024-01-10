@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/05/2023
 ---
 # Debug DOM memory leaks with the Detached Elements tool

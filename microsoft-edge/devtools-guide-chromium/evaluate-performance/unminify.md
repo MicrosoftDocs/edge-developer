@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 03/08/2022
 ---
 # Display original function names in performance profiles

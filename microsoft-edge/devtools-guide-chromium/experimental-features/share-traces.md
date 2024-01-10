@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/06/2023
 ---
 # Share enhanced performance and memory traces

@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 10/24/2023
 ---
 # What's New in Progressive Web Apps

@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/05/2023
 ---
 # Use the Inspect tool to detect accessibility issues by hovering over the webpage

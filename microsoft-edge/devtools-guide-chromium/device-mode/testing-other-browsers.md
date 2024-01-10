@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 02/24/2023
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus

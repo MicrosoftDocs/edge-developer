@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 09/15/2021
 ---
 # Use Progressive Web Apps in Microsoft Edge

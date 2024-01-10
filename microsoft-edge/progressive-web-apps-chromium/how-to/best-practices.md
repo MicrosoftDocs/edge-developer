@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 11/24/2022
 ---
 # Best practices for PWAs

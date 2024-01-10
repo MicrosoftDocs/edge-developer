@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 02/15/2022
 ---
 # Inspect, edit, and debug HTML and CSS with the Elements tool

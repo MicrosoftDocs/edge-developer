@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/30/2023
 ---
 # Navigate webpage layers, z-index, and DOM using the 3D View tool
