@@ -1,13 +1,13 @@
 ---
 title: Microsoft Edge Privacy Whitepaper
-description: Microsoft Edge Privacy Whitepaper.
+description: Privacy aspects of features of Microsoft Edge, including how your data is shared with Microsoft and how to change settings for this data sharing.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 01/02/2024
+ms.date: 01/09/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -308,7 +308,7 @@ Microsoft Edge supports a variety of first-party enterprise security and complia
 | Microsoft Insider Risk Management | [Insider risk management](/microsoft-365/compliance/insider-risk-management-solution-overview)|
 | Microsoft Edge management service | [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) |
 
-<!-- todo (Aug 2023): when the forthcoming anchor link section like https://learn.microsoft.com/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview exists in destination page, replace row by:
+<!-- todo (Aug 2023): when the forthcoming anchor link section like https://learn.microsoft.com/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview exists in destination page, replace the "Microsoft Defender for Cloud Apps (Preview)" row by:
 | Microsoft Defender for Cloud Apps | [Integration with Microsoft Edge for business preview](/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview) in _Session policies_ |
 -->
 
@@ -1057,46 +1057,28 @@ Text prediction is only available in select languages and regions.
 <!-- ------------------------------ -->
 #### Windows Ink
 
-Windows Ink allows you to write with a digital pen directly into an input field on Windows touch devices.  This helps you stay in your workflow by reducing the need to switch back and forth between the keyboard and a digital pen.  Supported fields include text boxes, `contenteditable` elements, and the Address bar.  Password fields are not supported.
+Windows Ink allows you to write with a digital pen directly into an input field on Windows 11 touch devices.  This helps you stay in your workflow by reducing the need to switch back and forth between the keyboard and a digital pen.  Supported fields include text boxes, `contenteditable` elements, and the Address bar.  Password fields are not supported.
 
-The following writing tasks are supported:
+Windows Ink supports the following writing tasks:
 
-<!-- todo: 'task' vs. 'action', in context of whitepaper rather than design doc
-The terminology usage could be either:
-* a task is accomplished by an action/gesture
-* an action is accomplished by a gesture
--->
-
-| Task | Action | Before | After |
+| Task | How to accomplish | Before | After |
 |---|---|---|---|
-| Insert text | Write in or near the text box. | ![Insert text (before)](./index-images/Abydos-add-text-before.png) | ![Insert text (after)](./index-images/Abydos-add-text-after.png) |
-| Delete text | Scribble over the words that you want to delete. | ![Delete text (before)](./index-images/Abydos-delete-text-before.png) | ![Delete text (after)](./index-images/Abydos-delete-text-after.png)|
-| Add space | Draw a vertical line where you want a space to be inserted. | ![Add space (before)](./index-images/Abydos-insert-space-before.png) | ![Add space (after)](./index-images/Abydos-insert-space-after.png) |
-| Remove space | Draw a vertical line on the space that you want to remove. | ![Remove space (before)](./index-images/Abydos-remove-space-before.png) | ![Remove space (after)](./index-images/Abydos-remove-space-after.png) |
-| Select text | Draw a horizontal line across the text to select. | ![Select text (before)](./index-images/Abydos-select-text-before.png) | ![Select text (after)](./index-images/Abydos-select-text-after.png) |
-| Add newline | Draw a "backwards L" at the end of a line of text. | ![Add newline (before)](./index-images/Abydos-add-newline-before.png) | ![Add newline (after)](./index-images/Abydos-add-newline-after.png) |
-<!-- todo: rename pngs lowercase and not Abydos product code name per style guide: https://review.learn.microsoft.com/help/platform/seo-optimize-urls?branch=main#name-your-files -->
+| Insert text | Write in or near the text box. | ![Insert text (before)](./index-images/windows-ink-add-text-before.png) | ![Insert text (after)](./index-images/windows-ink-add-text-after.png) |
+| Delete text | Scribble over the words that you want to delete. | ![Delete text (before)](./index-images/windows-ink-delete-text-before.png) | ![Delete text (after)](./index-images/windows-ink-delete-text-after.png)|
+| Add space | Draw a vertical line where you want a space to be inserted. | ![Add space (before)](./index-images/windows-ink-insert-space-before.png) | ![Add space (after)](./index-images/windows-ink-insert-space-after.png) |
+| Remove space | Draw a vertical line on the space that you want to remove. | ![Remove space (before)](./index-images/windows-ink-remove-space-before.png) | ![Remove space (after)](./index-images/windows-ink-remove-space-after.png) |
+| Select text | Draw a horizontal line across the text to select. | ![Select text (before)](./index-images/windows-ink-select-text-before.png) | ![Select text (after)](./index-images/windows-ink-select-text-after.png) |
+| Add newline | Draw a "backwards L" at the end of a line of text. | ![Add newline (before)](./index-images/windows-ink-add-newline-before.png) | ![Add newline (after)](./index-images/windows-ink-add-newline-after.png) |
 
 Aggregate feature usage data is collected to measure frequency of usage and latency.  Text that you've inputted and personal identifiers are not sent to Microsoft.
 
-To opt out of Windows Ink for Microsoft Edge, go to `edge://settings/content/HandwritingToText`:
-<!-- todo: m.h.: first give the basic GUI/WIMP way, before the special URL way-->
-<!-- todo: edge://settings/content/HandwritingToText not found on m.h. machine (end up at edge://settings/profiles), is it in Stable yet? -->
+To opt out of Windows Ink for Microsoft Edge, go to `edge://settings/content/HandwritingToText`, and then in the **Site permissions > Handwriting To Text** section, turn off the **Turn handwriting into text on input fields** toggle:
 
-![Windows Ink settings in Microsoft Edge](./index-images/Abydos-edge-settings.png)
-<!-- todo: m.h.: re-create using standard style for screenshots -->
+![Windows Ink settings in Microsoft Edge](./index-images/windows-ink-edge-settings.png)
 
-To disable Windows Ink for an entire Windows device, go to **Settings > Bluetooth & devices > Pen & Windows Ink > Shell Handwriting**:
-<!-- todo: Shell Handwriting not found on m.h. machine, is it in Stable yet? -->
+To disable Windows Ink for an entire Windows device, go to **Settings > Bluetooth & devices > Pen & Windows Ink > Shell Handwriting**, and then turn off the **Use your handwriting to enter text** toggle:
 
-![Windows Ink settings in Windows](./index-images/Abydos-windows-settings.png)
-<!-- todo: m.h.: re-create using standard style for screenshots -->
-
-<!--
-See also:
-* [shellhandwriting.h header](https://learn.microsoft.com/windows/win32/api/shellhandwriting/)
--->
-<!-- todo: remove temp See Also link -->
+![Windows Ink settings in Windows](./index-images/windows-ink-windows-settings.png)
 
 
 <!-- ====================================================================== -->
