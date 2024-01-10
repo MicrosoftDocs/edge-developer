@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/04/2022
 ---
 # Submission states for extensions in the Microsoft Edge Add-ons website

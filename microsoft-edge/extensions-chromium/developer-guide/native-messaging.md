@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 03/31/2021
 ---
 # Native messaging

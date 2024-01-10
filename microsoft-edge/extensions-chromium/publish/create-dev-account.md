@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/01/2022
 ---
 # Register as a Microsoft Edge extension developer

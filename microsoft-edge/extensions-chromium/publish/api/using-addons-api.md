@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 07/19/2023
 ---
 # Using the Microsoft Edge Add-ons API 
