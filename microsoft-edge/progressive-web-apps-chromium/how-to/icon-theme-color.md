@@ -73,7 +73,7 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 44x44 - app icon
     * 71x71 - small tile
     * 150x150 - medium tile
-    * 350x150 - wide tile
+    * 310x150 - wide tile
     * 310x310 - large tile
     * 50x50 - store logo
     * 620x300 - splash screen
@@ -95,7 +95,7 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 225x225 - medium tile 1.5x display scale
     * 300x300 - medium tile 2x display scale
     * 600x600 - medium tile 4x display scale
-    * 350x150 - wide tile
+    * 310x150 - wide tile
     * 388x188 - wide tile 1.25x display scale
     * 465x225 - wide tile 1.5x display scale
     * 620x300 - wide tile 2x display scale
@@ -133,7 +133,7 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 225x225 - medium tile 1.5x display scale
     * 300x300 - medium tile 2x display scale
     * 600x600 - medium tile 4x display scale
-    * 350x150 - wide tile
+    * 310x150 - wide tile
     * 388x188 - wide tile 1.25x display scale
     * 465x225 - wide tile 1.5x display scale
     * 620x300 - wide tile 2x display scale
