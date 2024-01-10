@@ -4,7 +4,7 @@ description: Updating or removing extensions from the Microsoft Edge Add-ons web
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/04/2022
 ---
 # Update a Microsoft Edge extension

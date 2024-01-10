@@ -4,7 +4,7 @@ description: "Introducing the Command Palette. Filter and automatically fix code
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 09/29/2022
 ---
 # What's New in DevTools (Microsoft Edge 106)

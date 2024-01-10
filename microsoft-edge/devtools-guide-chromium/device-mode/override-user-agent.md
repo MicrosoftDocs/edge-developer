@@ -4,7 +4,7 @@ description: Open the Network conditions tool, disable 'Select automatically', a
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/19/2021
 ---
 <!-- Copyright Kayce Basques

@@ -4,7 +4,7 @@ description: A reference on all the ways to record and analyze performance in Mi
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/23/2023
 ---
 <!-- Copyright Kayce Basques

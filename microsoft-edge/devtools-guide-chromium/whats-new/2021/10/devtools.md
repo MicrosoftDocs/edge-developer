@@ -4,7 +4,7 @@ description: Changes in the CSS Styles editor now show up in your CSS files insi
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/20/2021
 ---
 # What's New in DevTools (Microsoft Edge 95)

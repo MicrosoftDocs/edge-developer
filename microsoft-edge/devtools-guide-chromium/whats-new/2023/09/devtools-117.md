@@ -4,7 +4,7 @@ description: "New Experiment: Explain console errors/warnings with Copilot in Si
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 09/14/2023
 ---
 # What's New in DevTools (Microsoft Edge 117)

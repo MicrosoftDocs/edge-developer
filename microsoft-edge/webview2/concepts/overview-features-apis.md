@@ -4,8 +4,8 @@ description: Overview of WebView2 features and APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 11/06/2023
 ---
 # Overview of WebView2 features and APIs

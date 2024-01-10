@@ -4,7 +4,7 @@ description: The Add-ons API Reference, for REST endpoints to automate publishin
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/07/2022
 ---
 # Microsoft Edge Add-ons API Reference

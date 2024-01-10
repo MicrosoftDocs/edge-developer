@@ -4,7 +4,7 @@ description: Automatically test a webpage for accessibility issues by using the 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 06/07/2021
 ---
 # Automatically test a webpage for accessibility issues

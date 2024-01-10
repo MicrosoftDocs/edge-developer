@@ -4,7 +4,7 @@ description: In Microsoft Edge DevTools, use the Cookies pane of the Application
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/21/2023
 ---
 <!-- Copyright Kayce Basques

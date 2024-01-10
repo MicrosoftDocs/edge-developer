@@ -4,7 +4,7 @@ description: How to change the DevTools language settings, such as using English
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/17/2023
 ---
 # Change DevTools language settings

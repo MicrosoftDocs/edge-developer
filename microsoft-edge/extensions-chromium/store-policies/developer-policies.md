@@ -4,7 +4,7 @@ description: Developer policies for submitting extensions via Partner Center to 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/15/2023
 ---
 # Developer policies for the Microsoft Edge Add-ons store

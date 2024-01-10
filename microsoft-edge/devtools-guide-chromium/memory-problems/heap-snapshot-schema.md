@@ -4,7 +4,7 @@ description: How the heap snapshot files are structured, when exported from the 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 9/16/2022
 ---
 # The heap snapshot file format

@@ -4,7 +4,7 @@ description: Learn about the format of the manifest file in an extension package
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 06/23/2023
 ---
 # Manifest file format for extensions

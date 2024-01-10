@@ -4,7 +4,7 @@ description: The JavaScript Profiler tool in Microsoft Edge DevTools has been re
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: devtools
 ms.date: 02/15/2022
 ---

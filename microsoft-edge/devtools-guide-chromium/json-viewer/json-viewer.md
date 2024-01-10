@@ -4,7 +4,7 @@ description: How to use the JSON viewer to view formatted and highlighted JSON r
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/17/2023
 ---
 # View formatted JSON

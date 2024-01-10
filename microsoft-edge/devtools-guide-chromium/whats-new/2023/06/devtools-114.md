@@ -4,7 +4,7 @@ description: "Aggregate Selector Stats in Performance tool. Issues tool warns wh
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 06/15/2023
 ---
 # What's New in DevTools (Microsoft Edge 114)

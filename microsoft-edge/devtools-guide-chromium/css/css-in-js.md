@@ -4,7 +4,7 @@ description: Copy declarations for a style rule in a way that's formatted for Ja
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 08/25/2021
 ---
 <!-- Copyright Alex Rudenko

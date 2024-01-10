@@ -4,7 +4,7 @@ description: The latest updates about new Partner Center features for Microsoft 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 06/27/2023
 ---
 # Roadmap for Microsoft Edge Add-ons

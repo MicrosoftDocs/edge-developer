@@ -4,7 +4,7 @@ description: Use the Application tool to test protocols you've defined in your P
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 08/23/2022
 ---
 

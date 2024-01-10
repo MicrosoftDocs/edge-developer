@@ -4,7 +4,7 @@ description: 2021 year-in-review blog post.  Automate IE mode with Internet Expl
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 02/02/2022
 ---
 # What's New in DevTools (Microsoft Edge 98)

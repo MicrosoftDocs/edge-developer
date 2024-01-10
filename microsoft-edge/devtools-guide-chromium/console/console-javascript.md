@@ -4,7 +4,7 @@ description: An introduction to using the Console tool inside the Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/12/2023
 ---
 # Run JavaScript in the Console

@@ -4,7 +4,7 @@ description: Learn how to use the Push API to provide re-engaging functionality 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: pwa
 ms.date: 11/13/2023
 ---

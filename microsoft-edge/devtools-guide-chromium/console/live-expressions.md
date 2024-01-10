@@ -4,7 +4,7 @@ description: Watch JavaScript expression values in real time with Live Expressio
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 08/29/2023
 ---
 # Monitor changes in JavaScript using Live Expressions

@@ -4,7 +4,7 @@ description: "The Performance tool can now unminify JavaScript running in out-of
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 04/11/2023
 ---
 # What's New in DevTools (Microsoft Edge 112)

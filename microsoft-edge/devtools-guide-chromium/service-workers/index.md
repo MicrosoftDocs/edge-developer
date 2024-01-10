@@ -4,7 +4,7 @@ description: How to use each Service Worker improvement.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 02/19/2021
 ---
 # Service Worker improvements

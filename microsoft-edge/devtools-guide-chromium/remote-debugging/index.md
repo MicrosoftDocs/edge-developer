@@ -4,7 +4,7 @@ description: Remote debug live content on an Android device from a Windows or ma
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques

@@ -4,7 +4,7 @@ description: Get started with remote debugging of Windows devices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 04/23/2021
 ---
 # Remotely debug Windows devices

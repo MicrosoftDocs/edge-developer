@@ -4,7 +4,7 @@ description: Best Practices to implement an extension and list it on the Microso
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: extensions
 ms.date: 11/20/2023
 ---

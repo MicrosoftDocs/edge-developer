@@ -4,7 +4,7 @@ description: Tutorial about how to evaluate runtime performance in Microsoft Edg
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 09/04/2023
 ---
 <!-- Copyright Kayce Basques

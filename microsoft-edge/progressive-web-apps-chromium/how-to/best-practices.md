@@ -4,7 +4,7 @@ description: Learn best practices to build great PWAs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/24/2022
 ---
 # Best practices for PWAs

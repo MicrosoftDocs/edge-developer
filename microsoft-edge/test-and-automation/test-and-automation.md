@@ -4,7 +4,7 @@ description: DevTools Protocol instruments, debugs, profiles browsers.  Origin T
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: devtools
 ms.date: 02/02/2023
 ---

@@ -4,7 +4,7 @@ description: How host permission and content script pattern matching works, with
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 03/17/2021
 ---
 <!-- Copyright A. W. Fuchs

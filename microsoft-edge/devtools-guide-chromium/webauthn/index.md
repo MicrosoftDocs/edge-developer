@@ -4,7 +4,7 @@ description: Emulate Authenticators and Debug WebAuthn in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 05/04/2021
 ---
 # Emulate authenticators and debug WebAuthn

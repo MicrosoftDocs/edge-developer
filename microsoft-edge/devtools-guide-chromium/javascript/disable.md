@@ -4,7 +4,7 @@ description: To disable JavaScript in DevTools, open the Command Menu and run th
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/27/2023
 ---
 <!-- Copyright Kayce Basques

@@ -4,7 +4,7 @@ description: How to use the 3D View tool, including navigating the 3D canvas and
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/30/2023
 ---
 # Navigate webpage layers, z-index, and DOM using the 3D View tool

@@ -4,7 +4,7 @@ description: Use the Command Palette experimental feature to quickly run browser
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 01/02/2023
 ---
 # Run commands via keyboard with Command Palette

@@ -4,7 +4,7 @@ description: Learn to export and import enhanced performance and memory traces i
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 01/06/2023
 ---
 # Share enhanced performance and memory traces

@@ -4,8 +4,8 @@ description: Using Playwright to automate and test webpages in a WebView2 contro
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: how-to
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 06/06/2023
 ---
 # Use Playwright to automate and test in WebView2

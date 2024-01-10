@@ -4,7 +4,7 @@ description: How to view nodes, search for nodes, edit nodes, reference nodes in
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/20/2023
 ---
 <!-- Copyright Kayce Basques

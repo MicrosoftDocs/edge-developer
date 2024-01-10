@@ -4,7 +4,7 @@ description: List of supported APIs to use when building Microsoft Edge extensio
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/13/2023
 ---
 # Supported APIs for Microsoft Edge extensions

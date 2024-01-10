@@ -4,7 +4,7 @@ description: Microsoft Edge Privacy Whitepaper.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
 ms.date: 12/14/2023

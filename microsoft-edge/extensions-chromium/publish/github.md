@@ -4,7 +4,7 @@ description: Optionally log in to Partner Center by using your GitHub account cr
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/03/2022
 ---
 # Publish a Microsoft Edge extension by using a GitHub account

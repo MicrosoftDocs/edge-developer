@@ -4,7 +4,7 @@ description: How to move Microsoft Edge DevTools to the bottom or left of the br
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/17/2023
 ---
 # Change DevTools placement (Undock, Dock to bottom, Dock to left)

@@ -4,8 +4,8 @@ description: Learn about what's coming next for WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 01/07/2021
 ---
 # WebView2 Roadmap

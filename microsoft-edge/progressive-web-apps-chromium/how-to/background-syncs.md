@@ -4,7 +4,7 @@ description: How to do work in the background when the app isn't running, to syn
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: pwa
 ms.date: 09/14/2021
 ---

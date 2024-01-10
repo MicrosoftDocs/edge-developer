@@ -4,7 +4,7 @@ description: How to debug Background Fetch, Background Sync, Notifications, and 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 04/06/2022
 ---
 <!-- Copyright Kayce Basques

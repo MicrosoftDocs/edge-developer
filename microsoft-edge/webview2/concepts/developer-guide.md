@@ -4,8 +4,8 @@ description: Learn about development best practices to use when developing your 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 08/03/2021
 ---
 # Development best practices for WebView2 apps

@@ -4,7 +4,7 @@ description: "Focus Mode: Improved location controls for DevTools, Activity Bar,
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 09/01/2022
 ---
 # What's New in DevTools (Microsoft Edge 105)

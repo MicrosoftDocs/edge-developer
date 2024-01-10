@@ -4,7 +4,7 @@ description: How to use the Elements tool in Microsoft Edge DevTools to inspect,
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 02/15/2022
 ---
 # Inspect, edit, and debug HTML and CSS with the Elements tool

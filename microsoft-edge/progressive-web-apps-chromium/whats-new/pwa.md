@@ -4,7 +4,7 @@ description: New features and origin trials for Progressive Web Apps (PWAs).
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/24/2023
 ---
 # What's New in Progressive Web Apps

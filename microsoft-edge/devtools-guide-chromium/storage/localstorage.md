@@ -4,7 +4,7 @@ description: How to view and edit localStorage key-value pairs by using the Loca
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques

@@ -4,7 +4,7 @@ description: Discover new experimental features to explain DevTools Console erro
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/08/2023
 ---
 # Explain DevTools Console errors and source code using Copilot in Edge

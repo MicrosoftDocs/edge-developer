@@ -4,7 +4,7 @@ description: Each stage in the pixel pipeline represents an opportunity to intro
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 2/22/2023
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney

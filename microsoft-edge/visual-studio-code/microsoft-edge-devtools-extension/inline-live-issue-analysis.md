@@ -4,7 +4,7 @@ description: Inline and live issue analysis in the Microsoft Edge Developer Tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Inline and live issue analysis

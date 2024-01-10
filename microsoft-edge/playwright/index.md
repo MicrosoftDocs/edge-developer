@@ -4,7 +4,7 @@ description: Use Playwright to automate and test in Microsoft Edge.  The Playwri
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: devtools
 ms.date: 06/05/2023
 ---

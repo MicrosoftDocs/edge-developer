@@ -4,7 +4,7 @@ description: Microsoft Edge Add-ons released features provides information about
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 06/23/2023
 ---
 # Released features for Microsoft Edge Add-ons

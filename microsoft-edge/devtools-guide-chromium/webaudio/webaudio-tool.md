@@ -4,7 +4,7 @@ description: How to use the WebAudio tool in Microsoft Edge DevTools to monitor 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 02/24/2022
 ---
 # WebAudio tool

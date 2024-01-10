@@ -4,7 +4,7 @@ description: Get started with remote debugging of Surface Duo emulators.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 03/25/2021
 ---
 # Remotely debug Surface Duo emulators

@@ -4,7 +4,7 @@ description: Learn to build your first Progressive Web App.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/24/2022
 ---
 # Get started with Progressive Web Apps

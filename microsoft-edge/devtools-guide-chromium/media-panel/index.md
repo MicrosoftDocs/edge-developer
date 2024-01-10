@@ -4,7 +4,7 @@ description: Use the Media tool to view information and debug the media players 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 05/04/2021
 ---
 <!-- Copyright Jecelyn Yeen

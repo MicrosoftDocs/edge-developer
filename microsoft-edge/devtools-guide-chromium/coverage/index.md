@@ -4,7 +4,7 @@ description: How to find and analyze unused JavaScript and CSS code in Microsoft
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/20/2023
 ---
 <!-- Copyright Kayce Basques

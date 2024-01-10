@@ -4,7 +4,7 @@ description: Build an extension that pops up the NASA picture of the day.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 06/28/2022
 ---
 # Create an extension tutorial, part 1

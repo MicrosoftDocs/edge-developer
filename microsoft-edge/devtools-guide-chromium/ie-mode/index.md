@@ -4,7 +4,7 @@ description: Using Microsoft Edge DevTools in Internet Explorer mode (IE mode).
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 09/10/2021
 ---
 # Use DevTools in Internet Explorer mode (IE mode)

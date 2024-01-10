@@ -4,7 +4,7 @@ description: Customize keyboard shortcuts, including matching shortcuts from Vis
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/20/2023
 ---
 # Customize keyboard shortcuts

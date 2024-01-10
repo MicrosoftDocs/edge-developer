@@ -4,7 +4,7 @@ description: Use the Selector Stats feature in the Performance tool to understan
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 06/20/2023
 ---
 # Analyze selector performance during Recalculate Style events

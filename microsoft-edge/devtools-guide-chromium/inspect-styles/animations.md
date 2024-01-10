@@ -4,7 +4,7 @@ description: Inspect and modify CSS animation effects by using the Animation Ins
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 05/11/2021
 ---
 <!-- Copyright Kayce Basques

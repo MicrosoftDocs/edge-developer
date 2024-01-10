@@ -4,8 +4,8 @@ description: Process-related events in WebView2 and how apps can handle them for
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 07/13/2023
 ---
 # Handling process-related events in WebView2

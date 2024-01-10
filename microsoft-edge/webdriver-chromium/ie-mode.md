@@ -4,7 +4,7 @@ description: How to test your legacy website or app in IE mode in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: devtools
 ms.date: 11/23/2021
 ---

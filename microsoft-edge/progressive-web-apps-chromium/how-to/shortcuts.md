@@ -4,7 +4,7 @@ description: How to make your app's common tasks available in the Windows Taskba
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: pwa
 ms.date: 09/13/2021
 ---

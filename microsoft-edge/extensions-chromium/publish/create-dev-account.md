@@ -4,7 +4,7 @@ description: Learn how to register a Partner Center developer account to publish
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/01/2022
 ---
 # Register as a Microsoft Edge extension developer

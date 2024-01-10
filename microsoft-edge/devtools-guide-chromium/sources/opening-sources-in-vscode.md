@@ -4,7 +4,7 @@ description: If you work on a local project and you have Microsoft Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/12/2023
 ---
 # Opening source files in Visual Studio Code

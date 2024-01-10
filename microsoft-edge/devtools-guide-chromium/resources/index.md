@@ -4,7 +4,7 @@ description: Browse and inspect the resource files that make up a webpage, and f
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/30/2023
 ---
 <!-- Copyright Kayce Basques

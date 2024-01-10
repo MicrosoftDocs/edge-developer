@@ -4,7 +4,7 @@ description: Debugging support for CSS Flexbox, performance heads-up display on 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
 ---

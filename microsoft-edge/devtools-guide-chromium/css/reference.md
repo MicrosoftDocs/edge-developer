@@ -4,7 +4,7 @@ description: Features for viewing and changing CSS rules in Microsoft Edge DevTo
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/29/2021
 ---
 <!-- Copyright Kayce Basques

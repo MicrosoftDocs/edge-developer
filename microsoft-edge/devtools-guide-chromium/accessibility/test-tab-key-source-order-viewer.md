@@ -4,7 +4,7 @@ description: To quickly see the tab order of the sections of a page, use the Sou
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/05/2023
 ---
 # Test keyboard support using the Source Order Viewer

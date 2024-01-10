@@ -4,7 +4,7 @@ description: "Debug JavaScript error stack traces with the experimental Crash an
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 05/25/2023
 ---
 # What's New in DevTools (Microsoft Edge 113)

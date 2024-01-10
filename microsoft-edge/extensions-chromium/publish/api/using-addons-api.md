@@ -4,7 +4,7 @@ description: REST endpoints to automate publishing updates to add-ons that are s
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/19/2023
 ---
 # Using the Microsoft Edge Add-ons API 

@@ -4,7 +4,7 @@ description: Webpage accessibility aspects to test, and the corresponding featur
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/05/2023
 ---
 # Accessibility-testing features

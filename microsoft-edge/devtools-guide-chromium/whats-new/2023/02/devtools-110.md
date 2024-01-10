@@ -4,7 +4,7 @@ description: "Faster heap snapshots in Memory tool. Move tools between Activity 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 02/09/2023
 ---
 # What's New in DevTools (Microsoft Edge 110)

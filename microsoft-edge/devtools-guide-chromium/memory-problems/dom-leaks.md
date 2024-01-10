@@ -4,7 +4,7 @@ description: Use the Detached Elements tool in the Microsoft Edge DevTools to fi
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/05/2023
 ---
 # Debug DOM memory leaks with the Detached Elements tool

@@ -4,7 +4,7 @@ description: "Microsoft Edge WebDriver is now available for macOS running on App
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/01/2022
 ---
 # What's New in DevTools (Microsoft Edge 108)

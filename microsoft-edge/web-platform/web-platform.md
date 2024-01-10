@@ -4,7 +4,7 @@ description: Testing for coming changes that could impact compatibility of your 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: devtools
 ms.date: 07/24/2023
 ---

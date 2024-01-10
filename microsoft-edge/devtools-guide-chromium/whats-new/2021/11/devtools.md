@@ -4,7 +4,7 @@ description: Focus Mode and a vertical Activity Bar.  Auto-minimizing of the Con
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/16/2021
 ---
 # What's New in DevTools (Microsoft Edge 96)

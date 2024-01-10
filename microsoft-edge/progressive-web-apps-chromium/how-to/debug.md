@@ -4,7 +4,7 @@ description: Learn about the tools to inspect and debug Progressive Web Apps, se
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/25/2022
 ---
 # Debug Progressive Web Apps

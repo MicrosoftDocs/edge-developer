@@ -4,7 +4,7 @@ description: Use Allocation instrumentation on timeline to find objects that are
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/21/2023
 ---
 <!-- Copyright Meggin Kearney

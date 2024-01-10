@@ -4,7 +4,7 @@ description: How to test your website or app in Microsoft Edge, and how to autom
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: devtools
 ms.date: 06/15/2023
 ---

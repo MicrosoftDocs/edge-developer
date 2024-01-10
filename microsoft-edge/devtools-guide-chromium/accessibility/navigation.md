@@ -4,7 +4,7 @@ description: A guide on navigating Microsoft Edge DevTools using assistive techn
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 06/07/2021
 ---
 <!-- Copyright Rob Dodson

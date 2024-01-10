@@ -4,7 +4,7 @@ description: Make function names in the flame chart of a performance profile mor
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 03/08/2022
 ---
 # Display original function names in performance profiles

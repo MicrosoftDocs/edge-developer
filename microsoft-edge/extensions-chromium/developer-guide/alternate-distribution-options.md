@@ -4,7 +4,7 @@ description: How to distribute extensions using alternate methods that don't use
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 05/05/2023
 ---
 # Alternative ways to distribute extensions

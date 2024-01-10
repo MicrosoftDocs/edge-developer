@@ -4,7 +4,7 @@ description: Publishing a Microsoft Edge extension to the Microsoft Edge Add-ons
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/03/2022
 ---
 # Publish a Microsoft Edge extension

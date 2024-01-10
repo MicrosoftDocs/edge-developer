@@ -4,7 +4,7 @@ description: Your job doesn't end with making sure your site runs great across M
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 02/24/2023
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus

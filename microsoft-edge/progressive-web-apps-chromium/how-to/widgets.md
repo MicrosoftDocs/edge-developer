@@ -4,7 +4,7 @@ description: How to build lightweight PWA-driven widgets that integrate in the o
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.technology: pwa
 ms.date: 08/10/2023
 ---

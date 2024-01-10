@@ -4,7 +4,7 @@ description: "Automate WebView2 with Playwright. Focus Mode Activity Bar icons h
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/31/2022
 ---
 # What's New in DevTools (Microsoft Edge 107)

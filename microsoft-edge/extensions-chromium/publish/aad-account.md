@@ -4,7 +4,7 @@ description: Adding and managing users from your organization onto the Microsoft
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/03/2022
 ---
 # Add users to the Microsoft Edge program

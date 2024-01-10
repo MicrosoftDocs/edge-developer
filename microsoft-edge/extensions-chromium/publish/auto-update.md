@@ -4,7 +4,7 @@ description: Learn about automatic updates to extensions in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/04/2022
 ---
 <!-- Copyright A. W. Fuchs

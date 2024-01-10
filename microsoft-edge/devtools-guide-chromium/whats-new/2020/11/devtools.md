@@ -4,7 +4,7 @@ description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
 ---

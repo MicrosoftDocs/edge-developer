@@ -4,7 +4,7 @@ description: Safely experiment for a fixed period of time and provide feedback o
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/25/2023
 ---
 # Use Origin Trials in Microsoft Edge

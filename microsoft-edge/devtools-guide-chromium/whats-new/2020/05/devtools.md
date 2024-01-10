@@ -4,7 +4,7 @@ description: Use DevTools in Windows high contrast mode, match keyboard shortcut
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/13/2021
 ---
 <!-- Copyright Kayce Basques
