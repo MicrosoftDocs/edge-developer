@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.technology: pwa
+ms.subservice: pwa
 ms.date: 12/02/2022
 ---
 # Store data on the device

@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.technology: devtools
+ms.subservice: devtools
 ms.date: 01/17/2023
 ---
 # Develop for the web with Microsoft Edge

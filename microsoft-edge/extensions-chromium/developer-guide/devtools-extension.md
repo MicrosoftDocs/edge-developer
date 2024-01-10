@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.technology: extensions
+ms.subservice: extensions
 ms.date: 9/27/2022
 ---
 # Create an extension that customizes the DevTools UI

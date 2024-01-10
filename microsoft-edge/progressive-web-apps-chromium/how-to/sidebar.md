@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.technology: pwa
+ms.subservice: pwa
 ms.date: 04/27/2023
 ---
 # Build PWAs for the sidebar in Microsoft Edge

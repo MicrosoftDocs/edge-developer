@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.technology: pwa
+ms.subservice: pwa
 ms.date: 04/03/2023
 ---
 # Handle files in Progressive Web Apps

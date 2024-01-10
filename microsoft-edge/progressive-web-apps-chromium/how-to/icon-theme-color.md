@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.technology: pwa
+ms.subservice: pwa
 ms.date: 09/27/2021
 ---
 # Define icons and a theme color

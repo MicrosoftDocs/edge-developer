@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.technology: devtools
+ms.subservice: devtools
 ms.date: 07/17/2023
 ---
 # Overview of DevTools

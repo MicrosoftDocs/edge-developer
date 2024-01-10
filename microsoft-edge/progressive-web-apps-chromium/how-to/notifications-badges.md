@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.technology: pwa
+ms.subservice: pwa
 ms.date: 06/16/2023
 ---
 # Re-engage users with badges and notifications

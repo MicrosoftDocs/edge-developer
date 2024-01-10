@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.technology: extensions
+ms.subservice: extensions
 ms.date: 11/29/2022
 ---
 # Overview and timelines for migrating to Manifest V3

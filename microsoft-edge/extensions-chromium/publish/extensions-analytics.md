@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.technology: extensions
+ms.subservice: extensions
 ms.date: 11/07/2022
 ---
 # View Microsoft Edge extensions analytics dashboard
