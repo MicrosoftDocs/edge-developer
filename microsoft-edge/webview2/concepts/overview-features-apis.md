@@ -356,7 +356,7 @@ The WebView2 control gives your app access to many browser features.  You can mo
 * [Autofill](#autofill)
 * [Audio](#audio)
 * [Swipe gesture navigation](#swipe-gesture-navigation)
-* [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys-incoming-3)
+* [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys)
 * [Fullscreen](#fullscreen)
 * [PDF toolbar](#pdf-toolbar)
 * [Theming](#theming)
@@ -869,7 +869,7 @@ This feature is currently disabled by default in the browser.  To enable this fe
 
 
 <!-- ------------------------------ -->
-#### Enable or disable the browser responding to accelerator keys (shortcut keys) (incoming 3)
+#### Enable or disable the browser responding to accelerator keys (shortcut keys)
 
 `ICoreWebView2AcceleratorKeyPressedEventArgs` has a `IsBrowserAcceleratorKeyEnabled` property to allow you to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**.
 
@@ -1236,7 +1236,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Browser extensions (incoming 1)
+#### Browser extensions
 
 Your app can embed a WebView2 control that uses browser extensions (add-ons).  A Microsoft Edge *extension* is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.
 
@@ -1313,7 +1313,7 @@ See also:
 Get information about running WebView2 processes, exiting processes, and failed processes, so that your app can take action accordingly.
 
 **Subsections below:**
-* [Frame process info](#frame-process-info-incoming-2)
+* [Frame process info](#frame-process-info)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1370,7 +1370,7 @@ Get information about running WebView2 processes, exiting processes, and failed 
 
 
 <!-- ------------------------------ -->
-#### Frame process info (incoming 2)
+#### Frame process info
 
 The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process.  This API enables your app to detect which part of WebView2 is consuming resources such as memory or CPU usage.
 
@@ -2196,7 +2196,7 @@ WebView2 can be reparented to a different parent window handle (`HWND`).  WebVie
 
 When WebView2 has focus, it directly receives input from the user. An app may want to intercept and handle certain accelerator key combinations (shortcut keys), or disable the normal browser accelerator key behaviors.
 
-See also [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys-incoming-3), above.
+See also [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys), above.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2421,7 +2421,7 @@ Manage the user data folder (UDF), which is a folder on the user's machine.  The
 
 **Subsections below:**
 * [Multiple profiles](#multiple-profiles)
-* [Delete a profile](#delete-a-profile-incoming-4)
+* [Delete a profile](#delete-a-profile)
 
 See also:
 * [Manage user data folders](./user-data-folder.md)
@@ -2553,7 +2553,7 @@ Access and manipulate the profile:
 
 
 <!-- ------------------------------ -->
-#### Delete a profile (incoming 4)
+#### Delete a profile
 
 Your app can delete user profiles for a WebView2 web browser control.
 
