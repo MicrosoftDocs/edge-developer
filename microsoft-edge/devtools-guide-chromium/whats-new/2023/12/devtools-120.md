@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 120)
-description: "Edge DevTools has a new user interface. Explain with Copilot in DevTools is generally available. And more."
+description: "Edge DevTools has a new user interface. Explain with Copilot in DevTools is generally available. New Recorder tool to record and replay common user flows and measure performance. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -13,34 +13,64 @@ ms.date: 12/07/2023
 
 
 <!-- ====================================================================== -->
-## Edge DevTools has a new user interface
+## DevTools has a new user interface
 
-DevTools has a new look starting with Edge 120! The major design updates are the new Activity Bar with icons, Quick View, and the ability to easily open, close, and move tools around. Check out our blog post to learn more about the new updates: https://blogs.windows.com/msedgedev/2023/12/20/inside-the-all-new-edge-devtools-ui/ 
-
-If you prefer the legacy UI, you can switch back by going to Settings > Preferences and selecting the "Switch back to the legacy DevTools UI" checkbox. After reloading DevTools, the UI will be updated.
+DevTools has a new look, starting with Microsoft Edge 120!  The major design updates are the new **Activity Bar** with icons; **Quick View** in place of the Drawer at bottom of DevTools; and the ability to easily open, close, and move tools around:
 
 ![Updated DevTools UI](./devtools-120-images/new-devtools-ui.png)
+
+See blog post: [Inside the all-new Edge DevTools user interface](https://blogs.windows.com/msedgedev/2023/12/20/inside-the-all-new-edge-devtools-ui/).
+
+If you prefer the legacy UI, you can switch back by going to DevTools > **Settings** > **Preferences** and selecting the **Switch back to the legacy DevTools UI** checkbox.  After reloading DevTools, the legacy UI appears.
 
 
 <!-- ====================================================================== -->
 ## Explain with Copilot in DevTools is generally available
 
-You can now ask DevTools to explain any error or warning, and any code snippet by using Copilot in Edge. This feature will be enabled by default for all starting with Edge 120. Check out our blog post to learn more: https://blogs.windows.com/msedgedev/2023/12/14/navigate-the-unexpected-using-copilot-in-edge-and-devtools/
-
- If you don't see the feature, you might need to enable it. To enable this feature, follow the steps outlined [here.](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/copilot-explain#enable-the-features )
-
-If you have any questions, comments, or feedback about the feature, please leave a comment on this [GitHub issue](https://github.com/MicrosoftEdge/DevTools/issues/203).
+You can now ask DevTools to explain any error, warning, or code snippet by using Copilot in Edge:
 
 ![Explain with Copilot in DevTools](./devtools-120-images/copilot-error-explanation.png)
+
+This feature is enabled by default, starting with Microsoft Edge 120.  See blog post: [Navigate the unexpected: using Copilot in Edge and DevTools](https://blogs.windows.com/msedgedev/2023/12/14/navigate-the-unexpected-using-copilot-in-edge-and-devtools/).
+
+If you don't see the feature, you might need to enable it.  To enable this feature, follow the steps in [Enable the features](../../../experimental-features/copilot-explain.md#enable-the-features) in _Explain DevTools Console errors and source code using Copilot in Edge_.
+
+If you have any questions, comments, or feedback about the feature, please leave a comment in the GitHub Issue: [\[Feedback\]\[Experiment\] Explain errors, warnings, and source code in the Console and Sources tools](https://github.com/MicrosoftEdge/DevTools/issues/203).
 
 
 <!-- ====================================================================== -->
 ## Recorder tool is available
 
-Use the recorder tool to help you record and replay common user flows and measure its performance. You can edit your recordings and share them by importing and exporting. 
+Use the **Recorder** tool to help you record and replay common user flows and measure performance.  You can edit your recordings and share them by importing and exporting. 
 
 See also:
 * [Recorder tool](https://developer.chrome.com/docs/devtools/recorder)
+
+
+<!-- ====================================================================== -->
+## Announcements from the Chromium project
+
+Microsoft Edge 120 also includes the following updates from the Chromium project:
+
+* [Third-party cookie phaseout](https://developer.chrome.com/blog/new-in-devtools-120#3pc)
+* [Analyze your website's cookies with the Privacy Sandbox Analysis Tool](https://developer.chrome.com/blog/new-in-devtools-120#ps-analysis-tool)
+* [Enhanced ignore listing](https://developer.chrome.com/blog/new-in-devtools-120#ignore-listing)
+   * [Default exclusion pattern for `node_modules`](https://developer.chrome.com/blog/new-in-devtools-120#default-regex)
+   * [Exceptions now stop execution if caught or passing through non-ignored code](https://developer.chrome.com/blog/new-in-devtools-120#exceptions)
+   * [`x_google_ignoreList` renamed to `ignoreList` in source maps](https://developer.chrome.com/blog/new-in-devtools-120#ignore-list-spec)
+* [New input mode toggle during remote debugging](https://developer.chrome.com/blog/new-in-devtools-120#remote-input-mode)
+* [The Elements panel now shows URLs for `#document` nodes](https://developer.chrome.com/blog/new-in-devtools-120#document-urls)
+* [Effective Content Security Policy in the Application panel](https://developer.chrome.com/blog/new-in-devtools-120#csp)
+* [Improved animation debugging](https://developer.chrome.com/blog/new-in-devtools-120#animations)
+* ['Do you trust this code?' dialog in Sources and self-XSS warning in Console](https://developer.chrome.com/blog/new-in-devtools-120#self-xss)
+* [Event listener breakpoints in web workers and worklets](https://developer.chrome.com/blog/new-in-devtools-120#worker-breakpoints)
+* [The new media badge for `<audio>` and `<video>`](https://developer.chrome.com/blog/new-in-devtools-120#media)
+* [Preloading renamed to Speculative loading](https://developer.chrome.com/blog/new-in-devtools-120#speculative-loading)
+* [Lighthouse 11.2.0](https://developer.chrome.com/blog/new-in-devtools-120#lighthouse)
+* [Accessibility improvements](https://developer.chrome.com/blog/new-in-devtools-120#accessibility)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-120#misc)
+<!-- todo: maybe remove some links -->
+
 
 
 <!-- ====================================================================== -->
