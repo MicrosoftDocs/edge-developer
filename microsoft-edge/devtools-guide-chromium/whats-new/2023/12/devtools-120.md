@@ -19,8 +19,8 @@ DevTools has a new look starting with Edge 120! The major design updates are the
 
 If you prefer the legacy UI, you can switch back by going to Settings > Preferences and selecting the "Switch back to the legacy DevTools UI" checkbox. After reloading DevTools, the UI will be updated.
 
-
 ![Updated DevTools UI](./devtools-120-images/new-devtools-ui.png)
+
 
 <!-- ====================================================================== -->
 ## Explain with Copilot in DevTools is generally available
@@ -31,16 +31,16 @@ You can now ask DevTools to explain any error or warning, and any code snippet b
 
 If you have any questions, comments, or feedback about the feature, please leave a comment on this [GitHub issue](https://github.com/MicrosoftEdge/DevTools/issues/203).
 
-
 ![Explain with Copilot in DevTools](./devtools-120-images/copilot-error-explanation.png)
+
+
 <!-- ====================================================================== -->
 ## Recorder tool is available
 
-Use the recorder tool to help you record and replay common user flows and measure its performance. You can edit your recordings and share them by importing/exporting. 
+Use the recorder tool to help you record and replay common user flows and measure its performance. You can edit your recordings and share them by importing and exporting. 
 
 See also:
-* [Recorder tool](https://developer.chrome.com/docs/devtools/recorder?utm_source=devtools)
-<!-- Not sure if we're allowed to put a Chrome link in this section or if we should put it under the chrome announcements. This tool isn't new to Chrome, but Edge devtools only started supporting it in 120. I'll let you be the judge of where this should go. -LT -->
+* [Recorder tool](https://developer.chrome.com/docs/devtools/recorder)
 
 
 <!-- ====================================================================== -->
@@ -48,7 +48,7 @@ See also:
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 119)](https://developer.chrome.com/blog/new-in-devtools-119) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 120)](https://developer.chrome.com/blog/new-in-devtools-120) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
 
 
 <!-- ====================================================================== -->
