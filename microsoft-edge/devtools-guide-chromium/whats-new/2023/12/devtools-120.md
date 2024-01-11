@@ -58,7 +58,6 @@ Microsoft Edge 120 also includes the following updates from the Chromium project
    * [Default exclusion pattern for `node_modules`](https://developer.chrome.com/blog/new-in-devtools-120#default-regex)
    * [Exceptions now stop execution if caught or passing through non-ignored code](https://developer.chrome.com/blog/new-in-devtools-120#exceptions)
    * [`x_google_ignoreList` renamed to `ignoreList` in source maps](https://developer.chrome.com/blog/new-in-devtools-120#ignore-list-spec)
-* [New input mode toggle during remote debugging](https://developer.chrome.com/blog/new-in-devtools-120#remote-input-mode)
 * [The Elements panel now shows URLs for `#document` nodes](https://developer.chrome.com/blog/new-in-devtools-120#document-urls)
 * [Effective Content Security Policy in the Application panel](https://developer.chrome.com/blog/new-in-devtools-120#csp)
 * [Improved animation debugging](https://developer.chrome.com/blog/new-in-devtools-120#animations)
@@ -66,9 +65,7 @@ Microsoft Edge 120 also includes the following updates from the Chromium project
 * [Event listener breakpoints in web workers and worklets](https://developer.chrome.com/blog/new-in-devtools-120#worker-breakpoints)
 * [The new media badge for `<audio>` and `<video>`](https://developer.chrome.com/blog/new-in-devtools-120#media)
 * [Preloading renamed to Speculative loading](https://developer.chrome.com/blog/new-in-devtools-120#speculative-loading)
-* [Lighthouse 11.2.0](https://developer.chrome.com/blog/new-in-devtools-120#lighthouse)
 * [Accessibility improvements](https://developer.chrome.com/blog/new-in-devtools-120#accessibility)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-120#misc)
 <!-- todo: maybe remove some links -->
 
 
