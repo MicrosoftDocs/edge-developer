@@ -15,6 +15,9 @@ ms.date: 12/07/2023
 <!-- ====================================================================== -->
 ## DevTools has a new user interface
 
+<!-- Subtitle: Introducing the all-new Edge DevTools user interface.  Check out our blog post to learn about the new Activity Bar, Quick View, and how to customize your developer tools in the redesigned DevTools UI. -->
+<!-- todo: the above is from Welcome 119 -->
+
 DevTools has a new look, starting with Microsoft Edge 120!  The major design updates are the new **Activity Bar** with icons; **Quick View** in place of the Drawer at bottom of DevTools; and the ability to easily open, close, and move tools around:
 
 ![Updated DevTools UI](./devtools-120-images/new-devtools-ui.png)
@@ -25,7 +28,10 @@ If you prefer the legacy UI, you can switch back by going to DevTools > **Settin
 
 
 <!-- ====================================================================== -->
-## Explain with Copilot in DevTools is generally available
+## The "Explain with Copilot in DevTools" feature is generally available
+
+<!-- Subtitle: Debug source code by having Copilot explain lines of code.  You can ask Copilot to read lines of code for you and describe what the code is doing for an easier time debugging. -->
+<!-- todo: the above is from Welcome 119 -->
 
 You can now ask DevTools to explain any error, warning, or code snippet by using Copilot in Edge:
 
@@ -41,7 +47,15 @@ If you have any questions, comments, or feedback about the feature, please leave
 <!-- ====================================================================== -->
 ## Recorder tool is available
 
+<!-- Subtitle: todo. -->
+
 Use the **Recorder** tool to help you record and replay common user flows and measure performance.  You can edit your recordings and share them by importing and exporting. 
+
+![Recorder tool initial view](./devtools-120-images/recorder-tool-1.png)
+
+![Recorder tool 2nd view](./devtools-120-images/recorder-tool-2.png)
+
+![Recorder tool while recording](./devtools-120-images/recorder-tool-3.png)
 
 See also:
 * [Recorder tool](https://developer.chrome.com/docs/devtools/recorder)
@@ -66,8 +80,6 @@ Microsoft Edge 120 also includes the following updates from the Chromium project
 * [The new media badge for `<audio>` and `<video>`](https://developer.chrome.com/blog/new-in-devtools-120#media)
 * [Preloading renamed to Speculative loading](https://developer.chrome.com/blog/new-in-devtools-120#speculative-loading)
 * [Accessibility improvements](https://developer.chrome.com/blog/new-in-devtools-120#accessibility)
-<!-- todo: maybe remove some links -->
-
 
 
 <!-- ====================================================================== -->
