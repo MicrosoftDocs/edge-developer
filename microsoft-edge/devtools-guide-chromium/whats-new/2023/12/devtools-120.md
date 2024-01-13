@@ -22,7 +22,7 @@ DevTools has a new look, starting with Microsoft Edge 120!  The major design upd
 
 ![Updated DevTools UI](./devtools-120-images/new-devtools-ui.png)
 
-See blog post: [Inside the all-new Edge DevTools user interface](https://blogs.windows.com/msedgedev/2023/12/20/inside-the-all-new-edge-devtools-ui/).
+See the blog post: [Inside the all-new Edge DevTools user interface](https://blogs.windows.com/msedgedev/2023/12/20/inside-the-all-new-edge-devtools-ui/).
 
 If you prefer the legacy UI, you can switch back by going to DevTools > **Settings** > **Preferences** and selecting the **Switch back to the legacy DevTools UI** checkbox.  After reloading DevTools, the legacy UI appears.
 
@@ -37,9 +37,9 @@ You can now ask DevTools to explain any Console error, Console warning, or code 
 
 ![Explain with Copilot in DevTools](./devtools-120-images/copilot-error-explanation.png)
 
-This feature is enabled by default, starting with Microsoft Edge 120.  See blog post: [Navigate the unexpected: using Copilot in Edge and DevTools](https://blogs.windows.com/msedgedev/2023/12/14/navigate-the-unexpected-using-copilot-in-edge-and-devtools/).
+This feature is enabled by default, starting with Microsoft Edge 120.  See the blog post: [Navigate the unexpected: using Copilot in Edge and DevTools](https://blogs.windows.com/msedgedev/2023/12/14/navigate-the-unexpected-using-copilot-in-edge-and-devtools/).
 
-If you don't see the feature, you might need to enable it.  To enable this feature, follow the steps in [Enable the features](../../../experimental-features/copilot-explain.md#enable-the-features) in _Explain DevTools Console errors and source code using Copilot in Edge_.
+If you don't see the feature, you might need to enable it.  To enable this feature, follow the steps in [Enable the features](../../../experimental-features/copilot-explain.md#enable-the-features), in the article _Explain DevTools Console errors and source code using Copilot in Edge_.
 
 If you have any questions, comments, or feedback about the feature, please leave a comment in the GitHub Issue: [\[Feedback\]\[Experiment\] Explain errors, warnings, and source code in the Console and Sources tools](https://github.com/MicrosoftEdge/DevTools/issues/203).
 
@@ -64,7 +64,7 @@ During recording, interactions with the webpage are listed:
 ![Recorder tool while recording](./devtools-120-images/recorder-tool-3.png)
 
 See also:
-* [Recorder tool](https://developer.chrome.com/docs/devtools/recorder)
+* [Record, replay, and measure user flows](https://developer.chrome.com/docs/devtools/recorder)
 
 
 <!-- ====================================================================== -->
