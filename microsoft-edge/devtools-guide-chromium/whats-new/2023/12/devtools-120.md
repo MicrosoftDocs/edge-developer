@@ -45,7 +45,7 @@ If you have any questions, comments, or feedback about the feature, please leave
 
 
 <!-- ====================================================================== -->
-## Recorder tool is available
+## New Recorder tool to record and replay user flows and measure performance
 
 <!-- Subtitle: todo. -->
 
