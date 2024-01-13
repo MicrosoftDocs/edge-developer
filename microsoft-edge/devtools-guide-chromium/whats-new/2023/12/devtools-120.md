@@ -33,7 +33,7 @@ If you prefer the legacy UI, you can switch back by going to DevTools > **Settin
 <!-- Subtitle: Debug source code by having Copilot explain lines of code.  You can ask Copilot to read lines of code for you and describe what the code is doing for an easier time debugging. -->
 <!-- todo: the above is from Welcome 119 -->
 
-You can now ask DevTools to explain any error, warning, or code snippet by using Copilot in Edge:
+You can now ask DevTools to explain any Console error, Console warning, or code snippet by using Copilot in Edge:
 
 ![Explain with Copilot in DevTools](./devtools-120-images/copilot-error-explanation.png)
 
@@ -51,9 +51,15 @@ If you have any questions, comments, or feedback about the feature, please leave
 
 Use the **Recorder** tool to help you record and replay common user flows and measure performance.  You can edit your recordings and share them by importing and exporting. 
 
+The initial view in the **Recorder** tool gives an overview of how to use the tool:
+
 ![Recorder tool initial view](./devtools-120-images/recorder-tool-1.png)
 
+After you click the **Create a new recording** button, you can name the recording and specify a selector attribute:
+
 ![Recorder tool 2nd view](./devtools-120-images/recorder-tool-2.png)
+
+During recording, interactions with the webpage are listed:
 
 ![Recorder tool while recording](./devtools-120-images/recorder-tool-3.png)
 
