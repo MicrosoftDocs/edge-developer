@@ -96,7 +96,9 @@ To stop recording requests:
 <!-- ------------------------------ -->
 #### Clear requests
 
-Click the **Clear** (![Clear](./reference-images/clear-requests-icon.png)) button on the **Network** tool to clear all requests from the Requests table.
+1. Click the **Clear network log** (![Clear](./reference-images/clear-requests-icon.png)) button on the **Network** tool to clear all requests from the Requests table.
+
+1. Press **Ctrl+L** (Windows, Linux) or **Command+K** (macOS) while the **Network** tool is in focus.
 
 ![The Clear button](./reference-images/clear-requests.png)
 
