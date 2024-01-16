@@ -17,7 +17,11 @@ ms.date: 12/07/2023
 
 <!-- Subtitle: Introducing the all-new Edge DevTools user interface.  Check out our blog post to learn about the new Activity Bar, Quick View, and how to customize your developer tools in the redesigned DevTools UI. -->
 
-DevTools has a new look, starting with Microsoft Edge 120!  The major design updates are the new **Activity Bar** with icons; **Quick View** in place of the Drawer at bottom of DevTools; and the ability to easily open, close, and move tools around:
+DevTools has a new look, starting with Microsoft Edge 120!  The major design updates are:
+* The new **Activity Bar** with icons.
+* **Quick View** in place of the Drawer at bottom of DevTools.
+* The **Activity Bar** and **Quick View** can be switched to a vertical orientation.
+* You can easily open, close, and move tools around.
 
 ![Updated DevTools UI](./devtools-120-images/new-devtools-ui.png)
 
@@ -45,7 +49,7 @@ If you have any questions, comments, or feedback about the feature, please leave
 <!-- ====================================================================== -->
 ## New Recorder tool to record and replay user flows and measure performance
 
-<!-- Subtitle: Debug and share common user journeys by recording them. You can generate a performance trace and analyze its performance with the Performance panel. -->
+<!-- Subtitle: Debug and share common user journeys by recording them. You can generate a performance trace, and then analyze it by using the Performance tool. -->
 
 Use the **Recorder** tool to help you record and replay common user flows and measure performance.  You can edit your recordings and share them by importing and exporting. 
 
