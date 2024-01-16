@@ -16,7 +16,6 @@ ms.date: 12/07/2023
 ## DevTools has a new user interface
 
 <!-- Subtitle: Introducing the all-new Edge DevTools user interface.  Check out our blog post to learn about the new Activity Bar, Quick View, and how to customize your developer tools in the redesigned DevTools UI. -->
-<!-- todo: the above is from Welcome 119 -->
 
 DevTools has a new look, starting with Microsoft Edge 120!  The major design updates are the new **Activity Bar** with icons; **Quick View** in place of the Drawer at bottom of DevTools; and the ability to easily open, close, and move tools around:
 
@@ -31,7 +30,6 @@ If you prefer the legacy UI, you can switch back by going to DevTools > **Settin
 ## The "Explain with Copilot in DevTools" feature is generally available
 
 <!-- Subtitle: Debug source code by having Copilot explain lines of code.  You can ask Copilot to read lines of code for you and describe what the code is doing for an easier time debugging. -->
-<!-- todo: the above is from Welcome 119 -->
 
 You can now ask DevTools to explain any Console error, Console warning, or code snippet by using Copilot in Edge:
 
@@ -47,7 +45,7 @@ If you have any questions, comments, or feedback about the feature, please leave
 <!-- ====================================================================== -->
 ## New Recorder tool to record and replay user flows and measure performance
 
-<!-- Subtitle: todo. -->
+<!-- Subtitle: Debug and share common user journeys by recording them. You can generate a performance trace and analyze its performance with the Performance panel. -->
 
 Use the **Recorder** tool to help you record and replay common user flows and measure performance.  You can edit your recordings and share them by importing and exporting. 
 
