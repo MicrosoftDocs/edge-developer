@@ -1,5 +1,5 @@
 ---
-title: What's new in DevTools (Microsoft Edge 120)
+title: What's New in DevTools (Microsoft Edge 120)
 description: "Edge DevTools has a new user interface. Explain with Copilot in DevTools is generally available. New Recorder tool to record and replay common user flows and measure performance. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel

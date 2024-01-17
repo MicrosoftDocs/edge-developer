@@ -1,5 +1,5 @@
 ---
-title: What's new in DevTools (Microsoft Edge 114)
+title: What's New in DevTools (Microsoft Edge 114)
 description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger Layout. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS Overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -38,7 +38,7 @@ Thank you for using the **Selector Stats** feature and sharing your feedback wit
 See also:
 * [Analyze selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
 * [GitHub Issue #98: \[Feedback\] Selector Performance Tracing Explainer](https://github.com/MicrosoftEdge/DevTools/issues/98)
-* [Debug long-running Recalculate Style events with new selector stats](../01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's new in DevTools (Microsoft Edge 109)_.
+* [Debug long-running Recalculate Style events with new selector stats](../01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's New in DevTools (Microsoft Edge 109)_.
 
 
 <!-- ====================================================================== -->

@@ -1,5 +1,5 @@
 ---
-title: What's new in DevTools (Microsoft Edge 80)
+title: What's New in DevTools (Microsoft Edge 80)
 description: Accessibility improvements, using the DevTools in other languages, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 12/13/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's new in DevTools (Microsoft Edge 80)
+# What's New in DevTools (Microsoft Edge 80)
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
