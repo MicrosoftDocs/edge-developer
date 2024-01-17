@@ -4,8 +4,8 @@ description: Basic authentication for WebView2 apps includes a sequence of authe
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 03/16/2022
 ---
 # Basic authentication for WebView2 apps

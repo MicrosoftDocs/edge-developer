@@ -4,7 +4,8 @@ description: Content Security Policy for Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/09/2022
 ---
 # Content Security Policy (CSP)
@@ -305,9 +306,10 @@ While the initial script runs, the call to `eval` is blocked.  That is, while th
 Since content scripts aren't affected by the CSP of the page, this a great reason to put as much behavior as possible of your Extension into the content script, rather than DOM injected scripts.
 
 
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/extensions/contentSecurityPolicy).
+> The original page is found [here](https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy).<!-- or: https://developer.chrome.com/docs/privacy-security/csp -->
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

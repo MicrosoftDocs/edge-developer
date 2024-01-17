@@ -4,7 +4,8 @@ description: "Automate WebView2 with Playwright. Focus Mode Activity Bar icons h
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/31/2022
 ---
 # What's New in DevTools (Microsoft Edge 107)
@@ -39,9 +40,6 @@ Starting in Microsoft Edge 107, in Focus Mode, the Activity Bar now displays too
 When the Activity Bar is horizontal, a tooltip appears when a tool icon doesn't already have a text label next to it:
 
 ![Tooltips for horizontal Activity Bar icons](./devtools-107-images/activity-bar-tooltips-horizontal.png)
-
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->

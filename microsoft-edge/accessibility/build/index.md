@@ -4,7 +4,7 @@ description: How best practices and Accessible Rich Internet Applications (ARIA)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 ms.custom: seodec18
 ms.date: 05/11/2021

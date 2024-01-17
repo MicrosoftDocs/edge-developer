@@ -4,8 +4,8 @@ description: Develop for the web with Microsoft Edge by using Microsoft Edge Dev
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/17/2023
 ---
 # Develop for the web with Microsoft Edge

@@ -4,8 +4,8 @@ description: How to publish a Universal Windows Platform (UWP) app that hosts th
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2022
 ---
 # Publish a UWP WebView2 app to the Microsoft Store

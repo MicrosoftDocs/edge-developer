@@ -4,7 +4,8 @@ description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Co
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Jecelyn Yeen
@@ -33,9 +34,9 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 *  The strings in the **Lighthouse** tool.
 *  The term `service worker`.
 *  Some of the **Network** tool filters such as `URL`, `XHR`, `JS`, and `CSS`.
-*  The [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object) Console Utilities API.
+*  The [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object-0-4) Console Utilities API.
 
-[$0](../../../console/utilities.md#recently-selected-element-or-javascript-object) is now available in the [Console](../../../console/index.md) for users on localized versions of the DevTools.   Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](../../../contact.md) to improve support for DevTools in all locales.  For real-time updates on this feature in the Chromium open-source project, see Issue [#1136655](https://crbug.com/1136655).
+[$0](../../../console/utilities.md#recently-selected-element-or-javascript-object-0-4) is now available in the [Console](../../../console/index.md) for users on localized versions of the DevTools.   Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](../../../contact.md) to improve support for DevTools in all locales.  For real-time updates on this feature in the Chromium open-source project, see Issue [#1136655](https://crbug.com/1136655).
 
 ![Network tool with non-localized filters](./devtools-images/bing-network-japanese.png)
 
@@ -59,7 +60,7 @@ To move any bottom tool to the top, right-click a tab and then select **Move to 
 For the history of this feature in the Chromium open-source project, see Issue [#1075732](https://crbug.com/1075732).
 
 See also:
-* [Panel tools vs. Drawer tools](../../../about-tools.md#panel-tools-vs-drawer-tools) in _About the list of tools_
+* [Activity Bar tools vs. Quick View tools](../../../about-tools.md#activity-bar-tools-vs-quick-view-tools) in _About the list of tools_
 
 
 <!-- ====================================================================== -->

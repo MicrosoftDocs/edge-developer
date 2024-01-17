@@ -4,8 +4,8 @@ description: How to use WinRT types and members from within web-side JavaScript 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 01/13/2023
 ---
 # How WinRT types and members are represented in JavaScript

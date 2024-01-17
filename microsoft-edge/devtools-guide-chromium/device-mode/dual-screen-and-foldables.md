@@ -4,8 +4,9 @@ description: Use virtual devices in Microsoft Edge to enhance your website for d
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/21/2023
 ---
 # Emulate dual-screen and foldable devices
 

@@ -4,8 +4,8 @@ description: Get started with WebView2 in HoloLens 2 Unity apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 08/10/2023
 ---
 # Get started with WebView2 in HoloLens 2 Unity apps (Preview)

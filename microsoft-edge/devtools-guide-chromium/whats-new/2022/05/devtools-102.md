@@ -4,7 +4,8 @@ description: "DevTools extension: browser preview device/mode emulation and sour
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/24/2022
 ---
 # What's New in DevTools (Microsoft Edge 102)
@@ -127,14 +128,13 @@ The **Detached Elements** tool's UI is displayed correctly in high-contrast mode
 
 ![Detached Elements tool in high-contrast mode](devtools-102-images/high-contrast-detached-elements.png)
 
-The **Activity Bar** and **Quick View** (of Focus Mode) are displayed correctly in high-contrast mode:
+The **Activity Bar** and **Quick View** panel (when using Focus Mode) are displayed correctly in high-contrast mode:
 
 ![Activity Bar in Focus Mode](devtools-102-images/high-contrast-activity-bar.png)
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 * [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->

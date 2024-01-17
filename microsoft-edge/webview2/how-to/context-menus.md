@@ -4,8 +4,8 @@ description: How to add a right-click menu (context menu) to a WebView2 app.  Ad
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2022
 ---
 # Customize context menus in WebView2
@@ -448,7 +448,7 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
             {
                 MessageBox.Show(pageUri, "Page Uri", MessageBoxButton.OK);
             }, null);
-        }
+        };
     menuList.Insert(menuList.Count, newItem);
 };
 ``` 

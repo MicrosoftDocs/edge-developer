@@ -4,8 +4,8 @@ description: Using the WebResourceRequested event and the WebResourceResponseRec
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 08/03/2023
 ---
 # Custom management of network requests
@@ -165,7 +165,7 @@ webView.CoreWebView2.WebResourceRequested += delegate (
    }
    CoreWebView2HttpRequestHeaders requestHeaders = args.Request.Headers;
    requestHeaders.SetHeader("Custom", "Value");
-}
+};
 ```
 
 ##### [Win32](#tab/win32)

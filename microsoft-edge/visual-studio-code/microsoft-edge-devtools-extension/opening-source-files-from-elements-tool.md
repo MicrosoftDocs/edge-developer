@@ -4,7 +4,7 @@ description: Opening source files from the Elements tool in the Microsoft Edge D
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Opening source files from the Elements tool

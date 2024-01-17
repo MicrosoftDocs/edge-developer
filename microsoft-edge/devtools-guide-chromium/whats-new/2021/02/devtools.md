@@ -4,7 +4,7 @@ description: Debugging support for CSS Flexbox, performance heads-up display on 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
 ---
@@ -38,8 +38,6 @@ To turn on the experiment, see [Turning an experiment on or off](../../../experi
 
 ![Display the Activity Bar.](./devtools-images/focus-mode.png)
 
-See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
-
 
 <!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
@@ -66,16 +64,13 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 *  **Enable + button tab menus to open more tools**
 -->
 
-Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in [Focus Mode](../../../experimental-features/focus-mode.md).
+Note: As of May 2022, tooltips aren't supported from the **Activity Bar**.
 <!--Click the Help (**?**) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.-->
 <!-- ![Click the Help (?) icon in the Activity Bar to display tooltips](../../media/2021/02/focus-mode-and-tooltips-help.png) -->
 <!--
 See also:
 * [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features in Microsoft Edge DevTools_.
 -->
-
-See also:
-* [Display DevTools Tooltips](../../../overview.md#display-devtools-tooltips) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
@@ -217,7 +212,7 @@ To emulate the CSS color-gamut media feature:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 1. In DevTools, on the main toolbar, select the **Rendering** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./devtools-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./devtools-images/more-tools-icon-light-theme.png)) button.  The **Rendering** tool opens.
-1. In the **Emulate CSS media feature color-gamut** dropdown, select a **color-gamut** option:
+1. In the **Emulate CSS media feature color-gamut** dropdown list, select a **color-gamut** option:
 
 ![Emulate the CSS color-gamut media feature](./devtools-images/rendering-css-color-gamut.png)
 

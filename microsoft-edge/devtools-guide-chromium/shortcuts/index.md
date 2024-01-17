@@ -4,7 +4,8 @@ description: The default keyboard shortcuts for Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
@@ -55,11 +56,11 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Toggle [Device emulation](../device-mode/index.md) | **Ctrl+Shift+M** | **Command+Shift+M** |
 | Toggle **Inspect Element Mode** | **Ctrl+Shift+C** | **Command+Shift+C** |
 | Open the [Command Menu](../command-menu/index.md) | **Ctrl+Shift+P** | **Command+Shift+P** |
-| Toggle the [Drawer](../customize/index.md#drawer) | **Esc** | **Esc** |
+| Toggle the [Quick View](../customize/index.md#quick-view) panel | **Esc** | **Esc** |
 | Normal refresh | **F5** or **Ctrl+R** | **Command+R** |
 | Hard refresh | **Ctrl+F5** or **Ctrl+Shift+R** | **Command+Shift+R** |
 | Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** tools | **Ctrl+F** | **Command+F** |
-| Opens the **Search** tab in the [Drawer](../customize/index.md#drawer), which lets you search for text across all loaded resources | **Ctrl+Shift+F** | **Command+Option+F** |
+| Opens the **Search** tool in the [Quick View](../customize/index.md#quick-view), which lets you search for text across all loaded resources | **Ctrl+Shift+F** | **Command+Option+F** |
 | Open a file in the **Sources** tool | **Ctrl+O** or **Ctrl+P** | **Command+O** or **Command+P** |
 | Zoom in | **Ctrl**+**+** | **Command**+**+** |
 | Zoom out | **Ctrl**+**-** | **Command**+**-** |

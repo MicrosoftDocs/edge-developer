@@ -4,8 +4,8 @@ description: How to pass WinRT host objects to JavaScript using the AddHostObjec
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 02/21/2023
 ---
 # Call native-side WinRT code from web-side code
@@ -322,7 +322,7 @@ In the WinRTAdapter project, also install a prerelease version of the WebView2 S
 
 1. Click the **Microsoft.Web.WebView2** card.  Detailed info appears in the middle area of the window.
 
-1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  The version must be 1.0.1243.0 or higher.  Note which version number you select.
+1. In the **Version** dropdown list, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  The version must be 1.0.1243.0 or higher.  Note which version number you select.
 
    ![NuGet Package Manager, selecting the WebView2 SDK package, for the WinRTAdapter project](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
 
@@ -347,7 +347,7 @@ In the WinRTAdapter project, also install a prerelease version of the WebView2 S
 
 1. Click the **Microsoft.Web.WebView2** card.  Detailed info appears in the middle area of the window.
 
-1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  The version must be 1.0.1243.0 or higher.  Note which version number you select.
+1. In the **Version** dropdown list, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  The version must be 1.0.1243.0 or higher.  Note which version number you select.
 
    ![NuGet Package Manager, selecting the WebView2 SDK package, for the WinRTAdapter project (WinUI 3)](winrt-from-js-images/pkg-mgr-wv2-sdk-winui3.png)
 
@@ -378,7 +378,7 @@ In the main project, such as **MyUWPGetStartApp**, install the same prerelease v
 
 1. Click the **Microsoft.Web.WebView2** card.  Detailed information appears in the middle area of the window.
 
-1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  Make sure to use the same version as used by the **WinRTAdapter project**; for WinRT WebView2 apps that target WinUI 2 (UWP), this needs to be the same version as for the **WinRTAdapter** project.  The version must be 1.0.1243.0 or higher.
+1. In the **Version** dropdown list, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  Make sure to use the same version as used by the **WinRTAdapter project**; for WinRT WebView2 apps that target WinUI 2 (UWP), this needs to be the same version as for the **WinRTAdapter** project.  The version must be 1.0.1243.0 or higher.
 
 1. Click the **Install** button.  The Preview Changes dialog opens, to add WebView2 to the main project.
 
@@ -425,7 +425,7 @@ Specify the namespace and class as follows:
 
 1. Set **Use JavaScript case** to **Yes**.
 
-1. In the **Include filters** row, click the column on the right, click the drop-down menu in that cell, and then click **Edit**.  The **Include filters** dialog opens.
+1. In the **Include filters** row, click the column on the right, click the dropdown menu in that cell, and then click **Edit**.  The **Include filters** dialog opens.
 
 1. In the topmost text box, paste the following strings on separate lines, without leading or trailing whitespace:
 

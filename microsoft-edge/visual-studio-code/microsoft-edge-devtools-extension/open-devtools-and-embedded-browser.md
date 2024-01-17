@@ -4,7 +4,7 @@ description: "Opening the Edge DevTools tab and the the Edge DevTools: Browser t
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/06/2022
 ---
 # Opening DevTools and the DevTools browser

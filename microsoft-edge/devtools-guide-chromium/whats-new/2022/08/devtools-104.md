@@ -4,7 +4,8 @@ description: "Use Layers in 3D View. Improved display of request URLs in Issues 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 08/02/2022
 ---
 # What's New in DevTools (Microsoft Edge 104)

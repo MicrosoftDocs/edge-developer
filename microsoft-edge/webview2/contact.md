@@ -4,8 +4,8 @@ description: Contacting the Microsoft Edge WebView2 team to submit feature reque
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/29/2021
 ---
 # Contact the WebView2 Team
