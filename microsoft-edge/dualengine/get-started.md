@@ -4,9 +4,8 @@ description: Get started using the Microsoft DualEngine API to embed and control
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
-ms.technology: windows-integration
 ms.date: 11/17/2023
 ---
 # Getting started with the DualEngine API

@@ -4,9 +4,8 @@ description: Host web content in your Win32 apps with the Microsoft DualEngine i
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
-ms.technology: windows-integration
 ms.date: 11/06/2023
 ---
 # Introduction to the Microsoft DualEngine API

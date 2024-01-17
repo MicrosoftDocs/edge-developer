@@ -3,7 +3,8 @@ title: DualEngine Win32 C++ IDualEngine20Browser
 description: Represents an Internet Explorer tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.prod: microsoft-edge
+ms.topic: conceptual
+ms.service: microsoft-edge
 ms.date: 12/27/2023
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20Browser
 topic_type: 

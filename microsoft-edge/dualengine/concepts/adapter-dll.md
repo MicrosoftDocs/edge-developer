@@ -4,9 +4,8 @@ description: Understanding the requirements and uses of the DualEngine Adapter D
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
-ms.technology: windows-integration
 ms.date: 11/06/2023
 ---
 # Creating a DualEngine adapter plugin DLL
