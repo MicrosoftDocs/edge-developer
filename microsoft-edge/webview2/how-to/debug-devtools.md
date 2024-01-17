@@ -4,8 +4,8 @@ description: How to open Microsoft Edge DevTools when using a WebView2 app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 07/07/2022
 ---
 # Debug WebView2 apps with Microsoft Edge DevTools

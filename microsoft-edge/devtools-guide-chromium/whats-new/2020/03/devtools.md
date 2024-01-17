@@ -4,7 +4,8 @@ description: Emulate color vision deficiencies, Dock To Left in the Command Menu
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
@@ -55,9 +56,6 @@ You can also open **Settings** from the **Main Menu** under **More tools**.
 ![Main Menu > More tools > Settings](./devtools-images/settings2.png)
 
 Chromium issue [#1050855](https://crbug.com/1050855)
-
-See also:
-* [DevTools customization and settings](../../../experimental-features/focus-mode.md#devtools-customization-and-settings) in _Simplify DevTools using Focus Mode_
 
 
 <!-- ====================================================================== -->
@@ -211,9 +209,9 @@ Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead o
 
 The **Sources** panel has new icons for breakpoints, conditional breakpoints, and logpoints:
 
-*  Breakpoints (![Breakpoint](./devtools-images/breakpoint.png)) are represented by red circles.
-*  Conditional Breakpoints (![Conditional Breakpoint](./devtools-images/conditional.png)) are represented by half-red half-white circles.
-*  Logpoints (![Logpoint](./devtools-images/logpoint.png)) are represented by red circles with Console icons.
+*  Breakpoints (![Breakpoint icon, a red circle](./devtools-images/breakpoint.png)) are represented by red circles.
+*  Conditional Breakpoints (![Conditional Breakpoint icon, a circle half red and half black](./devtools-images/conditional.png)) are represented by half-red half-white circles.
+*  Logpoints (![Logpoint icon, a red circle with a black arrow](./devtools-images/logpoint.png)) are represented by red circles with Console icons.
 
 The motivation for the new icons was to make the UI more consistent with other GUI debugging tools (which usually color breakpoints red) and to make it easier to distinguish between the 3 features at a glance.
 

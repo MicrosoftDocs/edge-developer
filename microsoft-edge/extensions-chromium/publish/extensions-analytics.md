@@ -4,8 +4,8 @@ description: View extension metrics from your Partner Center dashboard and evalu
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: extensions
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/07/2022
 ---
 # View Microsoft Edge extensions analytics dashboard

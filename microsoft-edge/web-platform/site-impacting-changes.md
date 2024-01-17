@@ -4,7 +4,7 @@ description: Summary of high-impact changes that are planned for Microsoft Edge 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/06/2023
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge

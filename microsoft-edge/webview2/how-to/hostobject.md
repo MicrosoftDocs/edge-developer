@@ -4,8 +4,8 @@ description: How to pass host objects to JavaScript using the AddHostObjectToScr
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 11/16/2022
 ---
 # Call native-side code from web-side code

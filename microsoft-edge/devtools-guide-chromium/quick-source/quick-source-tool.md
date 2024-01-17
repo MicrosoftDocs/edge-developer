@@ -4,7 +4,8 @@ description: Use the Quick source tool to display or edit source files when usin
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/20/2022
 ---
 # Display or edit source files using the Quick source tool

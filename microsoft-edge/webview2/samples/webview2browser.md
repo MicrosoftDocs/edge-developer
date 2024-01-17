@@ -4,8 +4,8 @@ description: "A web browser built with the Microsoft Edge WebView2 control."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 07/18/2022
 ---
 # Win32 sample WebView2Browser
@@ -132,7 +132,7 @@ The WebView2Browser sample app uses multiple WebView2 instances.
 
 WebView2Browser has a multi-WebView approach to integrate web content and application UI into a Windows Desktop application. This allows the browser to use standard web technologies (HTML, CSS, JavaScript) to light up the interface but also enables the app to fetch favicons from the web and use IndexedDB for storing favorites and history.
 
-The multi-WebView approach involves using two separate WebView environments (each with its own user data directory): one for the UI WebViews and the other for all content WebViews. UI WebViews (controls and options dropdown) use the UI environment while web content WebViews (one per tab) use the content environment.
+The multi-WebView approach involves using two separate WebView environments (each with its own user data directory): one for the UI WebViews and the other for all content WebViews. UI WebViews (controls and options dropdown list) use the UI environment, while web content WebViews (one per tab) use the content environment.
 
 ![Browser layout](./webview2browser-images/layout.png)
 <!-- todo: remove png from other repo, in PR 140: 
@@ -167,14 +167,14 @@ API | Features
 `CreateCoreWebView2EnvironmentWithOptions` | Used to create the environments for UI and content WebViews. Different user data directories are passed to isolate UI from web content. |
 `ICoreWebView2` | There are several WebViews in WebView2Browser and most features make use of members in this interface, the table below shows how they're used.
 `ICoreWebView2DevToolsProtocolEventReceivedEventHandler` | Used along with add_DevToolsProtocolEventReceived to listen for CDP security events to update the lock icon in the browser UI. |
-`ICoreWebView2DevToolsProtocolEventReceiver` | Used along with add_DevToolsProtocolEventReceived to listen for CDP security events to update the lock icon in the browser UI. |
-`ICoreWebView2ExecuteScriptCompletedHandler` | Used along with ExecuteScript to get the title and favicon from the visited page. |
-`ICoreWebView2FocusChangedEventHandler` | Used along with add_LostFocus to hide the browser options dropdown when it loses focus.
-`ICoreWebView2HistoryChangedEventHandler` | Used along with add_HistoryChanged to update the navigation buttons in the browser UI. |
+`ICoreWebView2DevToolsProtocolEventReceiver` | Used along with `add_DevToolsProtocolEventReceived` to listen for CDP security events to update the lock icon in the browser UI. |
+`ICoreWebView2ExecuteScriptCompletedHandler` | Used along with `ExecuteScript` to get the title and favicon from the visited page. |
+`ICoreWebView2FocusChangedEventHandler` | Used along with `add_LostFocus` to hide the browser options dropdown list when it loses focus.
+`ICoreWebView2HistoryChangedEventHandler` | Used along with `add_HistoryChanged` to update the navigation buttons in the browser UI. |
 `ICoreWebView2Controller` | There are several WebViewControllers in WebView2Browser and we fetch the associated WebViews from them.
-`ICoreWebView2NavigationCompletedEventHandler` | Used along with add_NavigationCompleted to update the reload button in the browser UI.
+`ICoreWebView2NavigationCompletedEventHandler` | Used along with `add_NavigationCompleted` to update the reload button in the browser UI.
 `ICoreWebView2Settings` | Used to disable DevTools in the browser UI.
-`ICoreWebView2SourceChangedEventHandler` | Used along with add_SourceChanged to update the address bar in the browser UI. |
+`ICoreWebView2SourceChangedEventHandler` | Used along with `add_SourceChanged` to update the address bar in the browser UI. |
 `ICoreWebView2WebMessageReceivedEventHandler` | This is one of the most important APIs to WebView2Browser. Most functionalities involving communication across WebViews use this.
 
 ICoreWebView2 API | Features
@@ -191,7 +191,7 @@ ICoreWebView2 API | Features
 ICoreWebView2Controller API | Feature(s)
 :--- | :---
 `get_CoreWebView2` | Used to get the CoreWebView2 associated with this CoreWebView2Controller.
-`add_LostFocus` | Used to hide the options dropdown when the user clicks away from it.
+`add_LostFocus` | Used to hide the options dropdown list when the user clicks away from it.
 
 
 <!-- ====================================================================== -->

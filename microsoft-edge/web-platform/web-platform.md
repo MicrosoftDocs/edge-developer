@@ -4,8 +4,8 @@ description: Testing for coming changes that could impact compatibility of your 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/24/2023
 ---
 # Development tips for Microsoft Edge

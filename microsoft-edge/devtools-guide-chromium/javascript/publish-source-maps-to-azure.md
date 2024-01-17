@@ -4,7 +4,8 @@ description: Learn how to publish source maps to the Azure Artifacts symbol serv
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/26/2022
 ---
 

@@ -4,7 +4,8 @@ description: Learn about the tools to inspect and debug Progressive Web Apps, se
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 11/25/2022
 ---
 # Debug Progressive Web Apps
@@ -54,7 +55,7 @@ The service worker does this by running in parallel to your app and intercepting
 
 To check if your service worker was installed correctly, and which state of its lifecycle it currently is in, use the **Service Workers** pane of the **Application** tool. To learn more, see [Service workers](../../devtools-guide-chromium/progressive-web-apps/index.md#service-workers) in _Debug Progressive Web Apps (PWAs)_.
 
-To debug the JavaScript code running in the service worker thread, by using breakpoints, switch to the service worker thread in the **Sources** tool. To learn more, see [Change thread context](../../devtools-guide-chromium/javascript/reference.md#change-thread-context) in _JavaScript debugging features_.
+To debug the JavaScript code running in the service worker thread, by using breakpoints, switch to the service worker thread in the **Sources** tool. To learn more, see [Change the thread context](../../devtools-guide-chromium/javascript/reference.md#change-the-thread-context) in _JavaScript debugging features_.
 
 Service workers can run even when your app isn't running and execute background tasks to keep your app up to date. For example, they can fetch data from the server or receive push messages.
 

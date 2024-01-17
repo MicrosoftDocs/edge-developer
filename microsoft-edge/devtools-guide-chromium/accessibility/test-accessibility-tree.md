@@ -4,8 +4,9 @@ description: Checking the Accessibility Tree for keyboard and screen reader supp
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 06/07/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 12/04/2023
 ---
 # Check the Accessibility Tree for keyboard and screen reader support
 
@@ -17,23 +18,26 @@ The **Accessibility Tree** is a subset of the DOM tree, which contains elements 
 
 To explore using the Accessibility Tree:
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab.  Then press **F12** to open DevTools.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. Select the **Inspect** (![the Inspect icon](./test-accessibility-tree-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1. In the rendered webpage, in the **Donation** section, hover over the **100** button.  The **Inspect** tool overlay appears.
 
-1. In the rendered webpage, select the **100** button.  In DevTools, the **Elements** tool is displayed.  The DOM tree shows the `div` element for the **100** button.  The **Styles** pane shows the CSS settings for the element.
+1. In the rendered webpage, click the **100** button.  In DevTools, the **Elements** tool is displayed.  The DOM tree shows the `<div class="donationbutton">100</div>` element for the **100** button.  The **Styles** pane shows the CSS rules that apply to the element.
 
-1. To the right of the **Styles** tab, select the **Accessibility** tab.  The **Accessibility Tree** for the element is displayed, and is expanded.
+   ![The Donation button selected in the Elements tool](./test-accessibility-tree-images/selected-donation-button.png)
+
+1. To the right of the **Styles** tab, select the **Accessibility** tab.  The **Accessibility Tree** for the element is displayed, and is expanded:
 
    ![Donation form button in the Accessibility Tree tool](./test-accessibility-tree-images/a11y-testing-accessibility-tree.png)
 
-Any element in the tree that doesn't have a name, or has a role of `generic` (such as the `div` element) is a problem, because that element won't be available to keyboard users, or to users who are using assistive technology.
+Any element in the tree that doesn't have a name, or has a role of `generic` (such as the `<div class="donationbutton">100</div>` element) is a problem, because that element won't be available to keyboard users, or to users who are using assistive technology.
 
 
 <!-- ====================================================================== -->
 ## See also
 
 *  [View the position of an element in the Accessibility Tree](accessibility-tab.md#view-the-position-of-an-element-in-the-accessibility-tree)
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

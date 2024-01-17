@@ -4,7 +4,7 @@ description: Syncing live changes from the Styles tab by using CSS mirror editin
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Update .css files from within the Styles tab (CSS mirror editing)

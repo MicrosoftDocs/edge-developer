@@ -33,6 +33,21 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 120
+              href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
+
+            - name: Microsoft Edge 119
+              href: devtools-guide-chromium/whats-new/2023/11/devtools-119.md
+
+            - name: Microsoft Edge 118
+              href: devtools-guide-chromium/whats-new/2023/10/devtools-118.md
+
+            - name: Microsoft Edge 117
+              href: devtools-guide-chromium/whats-new/2023/09/devtools-117.md
+
+            - name: Microsoft Edge 116
+              href: devtools-guide-chromium/whats-new/2023/08/devtools-116.md
+
             - name: Microsoft Edge 115
               href: devtools-guide-chromium/whats-new/2023/07/devtools-115.md
 
@@ -48,26 +63,26 @@
             - name: Microsoft Edge 111
               href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
 
-            - name: Microsoft Edge 110
-              href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
-
-            - name: Microsoft Edge 109
-              href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
-
-            - name: Microsoft Edge 108
-              href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
-
-            - name: Microsoft Edge 107
-              href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
-
-            - name: Microsoft Edge 106
-              href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 110
+                  href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
+
+                - name: Microsoft Edge 109
+                  href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
+
+                - name: Microsoft Edge 108
+                  href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
+
+                - name: Microsoft Edge 107
+                  href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
+
+                - name: Microsoft Edge 106
+                  href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
 
                 - name: Microsoft Edge 105
                   href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
@@ -151,10 +166,6 @@
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
 
-            - name: Simplify DevTools using Focus Mode
-              href: devtools-guide-chromium/experimental-features/focus-mode.md
-              displayName: Experimental features, Focus Mode
-
             - name: Run commands via keyboard with Command Palette
               href: devtools-guide-chromium/experimental-features/edge-command-palette.md
               displayName: Experimental features, Edge Command Palette
@@ -162,6 +173,10 @@
             - name: Share enhanced performance and memory traces
               href: devtools-guide-chromium/experimental-features/share-traces.md
               displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
+
+            - name: Explain DevTools Console errors and source code using Copilot in Edge
+              href: devtools-guide-chromium/experimental-features/copilot-explain.md
+              displayName: Experimental features, Explain errors, Explain code, AI, Copilot in Edge, Copilot
 
 # TOOLS =======================================================================
         - name: Tools
@@ -680,10 +695,6 @@
               href: devtools-guide-chromium/accessibility/reference.md
               displayName: Elements tool, Accessibility tab
 
-            - name: Overview of accessibility testing using DevTools  # added article
-              href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
-              displayName: Elements tool, Accessibility tab  # many tools
-
 # Inspect tool (distinct from Tools > Inspect tool bucket)
             - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage  # added article
               href: devtools-guide-chromium/accessibility/test-inspect-tool.md
@@ -715,7 +726,7 @@
                   href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
                   displayName: keyboard support
 
-                - name: Analyze the lack of indication of keyboard focus in a sidebar menu  # added article
+                - name: Analyze the lack of indication of keyboard focus  # added article
                   href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
                   displayName: keyboard focus
 
@@ -1019,7 +1030,7 @@
                 - name: App Developer Agreement Addendum for Microsoft Edge program users
                   href: extensions-chromium/store-policies/ada-addendum.md
 
-                - name: Microsoft Edge Add-ons store developer policies
+                - name: Developer policies for the Microsoft Edge Add-ons store
                   href: extensions-chromium/store-policies/developer-policies.md
 
             - name: Microsoft Edge Add-ons API

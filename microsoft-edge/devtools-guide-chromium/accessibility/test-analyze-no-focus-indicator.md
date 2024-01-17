@@ -1,51 +1,77 @@
 ---
-title: Analyze the lack of indication of keyboard focus in a sidebar menu
-description: Analyzing the lack of indication of keyboard focus in a sidebar menu, due to lacking a CSS pseudo-class rule for the focus state on a link, combined with the link having no outline setting.
+title: Analyze the lack of indication of keyboard focus
+description: Analyzing the lack of indication of keyboard focus, due to missing a CSS pseudo-class rule for the focus state on a link, combined with the link having no outline setting.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 06/07/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 12/04/2023
 ---
-# Analyze the lack of indication of keyboard focus in a sidebar menu
+# Analyze the lack of indication of keyboard focus
 
 <!-- Inspect tool, and CSS rules: pseudo-classes for states -->
 
-In the accessibility-testing demo page, the sidebar navigation menu with blue links doesn't visually indicate which link has focus, when using a keyboard.  To find out why the sidebar menu is confusing to keyboard users, we'll look for CSS pseudo-class rules for the `hover` and `focus` states, along with the CSS property for link outlines.
+Keyboard users need to know where they are on a webpage.  When a keyboard user tabs to a link or a button, the link or button should have a visual indication that it has focus.  This visual indication is usually an outline around the focused element.
 
-This analysis finds that the lack of indication of keyboard focus in the links of the page's sidebar navigation menu is because:
-*  The `a` links have a CSS property setting of `outline: none`.
-*  The `a` links lack a CSS pseudo-class rule for the `:focus` state.
+In the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/), the sidebar navigation menu with blue links doesn't visually indicate which link has focus, when using a keyboard.  To find out why the lack of visual keyboard focus indication is confusing, try to tab to the blue links on the demo page.  The blue **Cats** button has focus, as evidenced by the target link information that's displayed in the bottom left corner of the browser window, but there's no visual indication that focus is on that button:
 
-To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link on the page's sidebar navigation menu, and then view the DOM tree and CSS for the `a` element that defines that link.
+![The demo webpage, with the Cats links focused, but no visual indication of the focus](./test-analyze-no-focus-indicator-images/no-focus-indication.png)
+
+
+<!-- ====================================================================== -->
+## Analyze the lack of focus indication by using the Sources tool
+
+To see what CSS styles are applied to a link, such as a linked button, use the **Sources** tool:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage, and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
 1. Click the **Inspect** (![Inspect icon](./test-analyze-no-focus-indicator-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
-1. Hover over the blue **Cats** link in the page's sidebar navigation menu.  The Inspect overlay appears, showing that the `a` element is keyboard-focusable.  But the overlay doesn't show that there's no visual indication when the link has focus.
+1. Hover over the blue **Cats** button in the page's sidebar navigation menu.  The Inspect overlay appears, and indicates that the `a` element is **Keyboard-focusable**:
 
-   Next, we'll inspect the CSS styling of this link.
+   ![The Inspect tool overlay on the link element](./test-analyze-no-focus-indicator-images/using-inspect-tool.png)
 
-1. Click the **Cats** link in the sidebar navigation menu.  The **Inspect** tool turns off, and the **Elements** tool opens, highlighting the `a` node in the DOM tree.
+   But the Inspect overlay doesn't show that the element lacks a visual indication when the link has focus.
 
-1. In DevTools, select the **Styles** tab.  The CSS rule `#sidebar nav li a` appears, along with a link to a line number in `styles.css`.
+1. In the rendered webpage, click the **Cats** button.
 
-   ![Inspecting the source code and the applied styles of a link in the menu](./test-analyze-no-focus-indicator-images/a11y-testing-menu-link.png)
+   The **Inspect** tool turns off, and the **Elements** tool opens, highlighting the `a` node in the DOM tree. The CSS rule `#sidebar nav li a` appears in the **Styles** tab, along with a link to a line number in `styles.css`:
 
-1. Click the `styles.css` link.  The CSS file opens within the **Sources** tool.
+   ![The Elements tool, with the 'a' node highlighted](./test-analyze-no-focus-indicator-images/link-selected.png)
 
-   ![The styles applied to the link in the Sources tool](./test-analyze-no-focus-indicator-images/a11y-testing-menu-link-styles.png)
+1. Click the `styles.css` link.  The CSS file opens within the **Sources** tool:
 
-   The styles of the page have a CSS pseudo-class rule for the `hover` state that indicates which menu item you're on when you use a mouse: `#sidebar nav li a:hover`.  However, there is no CSS pseudo-class rule for the `focus` state to visually indicate which menu item you're on when you use a keyboard, such as `#sidebar nav li a:focus`.
+   ![The styles applied to the link in the Sources tool](./test-analyze-no-focus-indicator-images/styles-in-sources-tool.png)
 
-   Also, notice that the links have a CSS property setting of `outline: none`.  This is a common practice, to remove the outline which browsers automatically add to elements when you focus on them using a keyboard.  Not using `focus` styling causes confusion for your users.
+   Notice that the `#sidebar nav li a` CSS rule has a CSS property setting of `outline: none`, which removes the outline that browsers automatically add when you focus links using a keyboard.
+
+   The CSS file contains a CSS rule that uses the `:hover` pseudo-class, which is used to indicate which menu item you're on when you use a mouse: `#sidebar nav li a:hover`.  However, the CSS file doesn't contain a CSS rule that uses the `:focus` pseudo-class, such as `#sidebar nav li a:focus`. This means that there is no CSS styles used to visually indicate which menu item you're on when you use a keyboard.
+
+   ![The outline:none property and the :hover styles](./test-analyze-no-focus-indicator-images/no-focus-css-code.png)
+
+
+<!-- ====================================================================== -->
+## Simulate the focus state by using the Styles pane
+
+Instead of focusing the link by using a keyboard, you can simulate the focus state by using the **Styles** pane:
+
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
+
+1. Right-click anywhere in the webpage, and then select **Inspect**.
+
+1. Click the **Inspect** (![Inspect icon](./test-analyze-no-focus-indicator-images/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools, and then click the **Cats** link in the rendered webpage. The `<a href="#cats">Cats</a>` node is highlighted in the **Elements** tool.
+
+1. In the **Styles** pane, click the **Toggle element state** (`:hov`) button. The **Force element state** section appears.
+
+1. Select the `:focus` checkbox. The focus state is applied to the link, but the link doesn't have a visual indication of focus:
+
+   ![The Cats link with the focus state applied](./test-analyze-no-focus-indicator-images/focus-state-applied.png)
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Track which element has focus](focus.md)
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
+*  [Track which element has focus](./focus.md)

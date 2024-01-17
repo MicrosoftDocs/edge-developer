@@ -4,8 +4,8 @@ description: The WebView2 Runtime process model, and how it works with the user 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/01/2022
 ---
 # Process model for WebView2 apps

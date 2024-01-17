@@ -4,8 +4,8 @@ description: Get started guide with WebView2 for WinUI 2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 10/31/2023
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps
@@ -207,7 +207,7 @@ Next, you install the **Microsoft.UI.Xaml** package for this project.  Microsoft
 
    For HoloLens 2 development, the **Microsoft.Web.WebView2** package must be version 1.0.1722.45 or higher, which may be higher than the default.  WebView2 on HoloLens 2 is in Preview and is subject to change before general availability. WebView2 is only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 
-1. In the middle panel, in the **Version** drop-down, make sure **Latest stable** is selected, version 2.8.0 or later.
+1. In the middle panel, in the **Version** dropdown list, make sure **Latest stable** is selected, version 2.8.0 or later.
 
 1. Click the  **Install** button.
 

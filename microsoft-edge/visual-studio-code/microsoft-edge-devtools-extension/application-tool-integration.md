@@ -4,7 +4,7 @@ description: Application tool integration in the Microsoft Edge Developer Tools 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Application tool integration

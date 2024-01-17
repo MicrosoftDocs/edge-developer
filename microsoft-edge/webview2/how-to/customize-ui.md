@@ -4,8 +4,8 @@ description: Customizing the UI in WebView2 apps.  Add custom right-click menus 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 02/08/2022
 ---
 # Customizing the UI in WebView2 apps

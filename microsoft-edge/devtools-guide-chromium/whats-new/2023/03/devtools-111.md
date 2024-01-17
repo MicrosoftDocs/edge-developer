@@ -4,7 +4,8 @@ description: "Remote debugging of Microsoft Edge, PWAs, and WebView2 controls on
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 03/15/2023
 ---
 # What's New in DevTools (Microsoft Edge 111)
@@ -99,7 +100,6 @@ To display only a few of the tabs within the **Styles** pane, click the **More t
 
 See also:
 * [CSS features reference](../../../css/reference.md)
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -126,12 +126,11 @@ See also:
 <!-- ====================================================================== -->
 ## In Focus Mode, assistive technology announces when you move a tool to Quick View
 
-In previous versions of Microsoft Edge, assistive technology, such as screen readers, didn't announce confirmation when moving a tool from the Activity Bar to Quick View.  In Microsoft Edge 111, this issue has been fixed.  Screen readers now announce "Successfully added Network to Quick View" when you move the **Network** tool from the Activity Bar to Quick View:
+In previous versions of Microsoft Edge, assistive technology, such as screen readers, didn't announce confirmation when moving a tool from the Activity Bar to the **Quick View** toolbar.  In Microsoft Edge 111, this issue has been fixed.  Screen readers now announce "Successfully added Network to Quick View" when you move the **Network** tool from the Activity Bar to the **Quick View** toolbar:
 
-![Moving the Network tool from the Activity Bar to Quick View](./devtools-111-images/move-network-tool-to-quickview.png)
+![Moving the Network tool from the Activity Bar to the Quick View toolbar](./devtools-111-images/move-network-tool-to-quickview.png)
 
 See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 

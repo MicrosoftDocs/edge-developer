@@ -4,7 +4,8 @@ description: Updating your extension from Manifest V2 to V3.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 05/26/2021
 ---
 # Migrate an extension from Manifest V2 to V3

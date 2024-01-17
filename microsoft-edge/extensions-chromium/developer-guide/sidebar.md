@@ -4,7 +4,8 @@ description: The sidebar (or side panel) feature of Microsoft Edge extensions en
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 10/09/2023
 ---
 # Extensions in the Microsoft Edge sidebar

@@ -4,8 +4,8 @@ description: Feature differences between Microsoft Edge and WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
 ms.date: 03/14/2022
 ---
@@ -45,7 +45,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | Feature | Default state | Configurable | Details |
 | --- | --- | --- | --- |
 | Autofill for Addresses | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
-| Autofill for Passwords | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
+| Autofill for Passwords | Off | Yes | This feature is turned off by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
 | Autofill for Payments | Off | No | This feature is turned off. |
 | Browser Extensions | Off | No | This feature is turned off. |
 | Browser Task Manager | Off | No | This feature is turned off. |

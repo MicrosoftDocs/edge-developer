@@ -4,7 +4,8 @@ description: To communicate with a native Win32 app that's installed on a user's
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 03/31/2021
 ---
 # Native messaging
@@ -248,7 +249,7 @@ To store the native messaging host manifest file:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/extensions/nativeMessaging).
+> The original page is found [here](https://developer.chrome.com/docs/extensions/develop/concepts/native-messaging).
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
