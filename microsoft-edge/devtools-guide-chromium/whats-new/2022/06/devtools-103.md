@@ -4,7 +4,8 @@ description: "New node types in the Memory tool. DevTools extension for Visual S
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 06/23/2022
 ---
 # What's New in DevTools (Microsoft Edge 103)

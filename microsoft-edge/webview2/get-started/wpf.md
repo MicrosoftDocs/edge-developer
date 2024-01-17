@@ -4,8 +4,8 @@ description: Get started guide with WebView2 for Windows Presentation Foundation
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 09/19/2022
 ---
 # Get started with WebView2 in WPF apps

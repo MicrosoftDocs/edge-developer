@@ -4,7 +4,7 @@ description: The latest experimental features in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
 ms.date: 12/18/2023
 ---

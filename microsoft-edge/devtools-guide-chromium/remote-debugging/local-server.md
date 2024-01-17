@@ -4,7 +4,8 @@ description: How to host a site on a development machine web server, and then ac
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/11/2021
 ---
 <!-- Copyright Kayce Basques

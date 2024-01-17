@@ -4,8 +4,8 @@ description: In this tutorial, you learn to build a Microsoft Edge extension tha
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: extensions
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 9/27/2022
 ---
 # Create an extension that customizes the DevTools UI

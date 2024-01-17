@@ -4,7 +4,8 @@ description: How to use the Network Console tool in Microsoft Edge DevTools to m
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/12/2023
 ---
 # Compose and send web API requests using the Network Console tool

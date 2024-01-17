@@ -4,7 +4,8 @@ description: How to use Lighthouse and other tools in DevTools to find ways to m
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 02/15/2023
 ---
 <!-- Copyright Kayce Basques

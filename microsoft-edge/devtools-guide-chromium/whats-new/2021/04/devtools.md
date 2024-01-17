@@ -4,7 +4,8 @@ description: Wavy underlines highlight code issues in the Elements tool, Service
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/06/2021
 ---
 <!-- Copyright Jecelyn Yeen

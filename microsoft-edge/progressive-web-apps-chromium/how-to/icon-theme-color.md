@@ -4,8 +4,8 @@ description: Learn how to define an app icon for your PWA, a theme color for the
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 09/27/2021
 ---
 # Define icons and a theme color

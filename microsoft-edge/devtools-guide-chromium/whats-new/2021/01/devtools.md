@@ -4,7 +4,7 @@ description: The What's New tool is now Welcome, Visual Font Editor in the Style
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
 ---

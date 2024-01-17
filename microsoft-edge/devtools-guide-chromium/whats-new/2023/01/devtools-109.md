@@ -4,7 +4,8 @@ description: "Export DevTools instances with enhanced traces.  Debug Recalculate
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/13/2023
 ---
 # What's New in DevTools (Microsoft Edge 109)

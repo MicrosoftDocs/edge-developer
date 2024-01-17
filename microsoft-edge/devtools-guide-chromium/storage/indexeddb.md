@@ -4,7 +4,8 @@ description: How to view and change IndexedDB data by using the Application tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/17/2023
 ---
 <!-- Copyright Kayce Basques

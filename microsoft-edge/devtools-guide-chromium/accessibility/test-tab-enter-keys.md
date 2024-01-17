@@ -4,7 +4,8 @@ description: Check for keyboard support by using the Tab and Enter keys.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/05/2023
 ---
 # Check for keyboard support by using the Tab and Enter keys

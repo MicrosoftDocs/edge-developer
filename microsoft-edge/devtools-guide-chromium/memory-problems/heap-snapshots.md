@@ -4,7 +4,8 @@ description: How to record heap snapshots with the Microsoft Edge DevTools heap 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/21/2023
 ---
 <!-- Copyright Meggin Kearney

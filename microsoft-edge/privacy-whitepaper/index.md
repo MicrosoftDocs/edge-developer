@@ -4,7 +4,7 @@ description: Privacy aspects of features of Microsoft Edge, including how your d
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
 ms.date: 01/09/2024

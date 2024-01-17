@@ -4,7 +4,7 @@ description: The More Tools button, in-context documentation to get started usin
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 06/02/2021
 ---

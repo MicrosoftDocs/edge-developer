@@ -4,7 +4,8 @@ description: "Activity Bar has a Move Activity Bar button.  React Developer Tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 08/17/2023
 ---
 # What's New in DevTools (Microsoft Edge 116)

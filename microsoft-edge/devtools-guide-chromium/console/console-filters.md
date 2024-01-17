@@ -4,7 +4,8 @@ description: Use the filter options of the DevTools Console to reduce the noise 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 04/13/2021
 ---
 # Filter Console messages

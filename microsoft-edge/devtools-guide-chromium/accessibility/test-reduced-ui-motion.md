@@ -4,7 +4,8 @@ description: Check that webpages are usable with UI animation turned off (reduce
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/05/2023
 ---
 # Verify that a page is usable with UI animation turned off

@@ -4,7 +4,7 @@ description: Learn to develop experiences for the sidebar in Microsoft Edge, by 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 08/04/2023
 ---
 # Develop for the sidebar
