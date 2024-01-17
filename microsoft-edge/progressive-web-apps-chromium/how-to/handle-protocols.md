@@ -4,8 +4,8 @@ description: How to register your PWA as a protocol handler to more deeply integ
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 01/12/2022
 ---
 # Handle protocols in Progressive Web Apps

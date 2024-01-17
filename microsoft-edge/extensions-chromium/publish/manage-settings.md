@@ -4,7 +4,8 @@ description: Managing a Partner Center account for the Microsoft Edge program.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/07/2022
 ---
 # Manage account settings

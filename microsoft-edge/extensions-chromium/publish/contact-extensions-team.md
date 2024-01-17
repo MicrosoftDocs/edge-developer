@@ -4,7 +4,8 @@ description: Contacting the support team for Microsoft Edge extension developmen
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/29/2022
 ---
 # Contact Microsoft Edge extensions support

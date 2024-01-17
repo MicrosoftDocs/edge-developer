@@ -4,8 +4,8 @@ description: Get to know the Microsoft Edge Developer Tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/17/2023
 ---
 # Overview of DevTools

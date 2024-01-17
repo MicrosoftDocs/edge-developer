@@ -4,7 +4,8 @@ description: The default keyboard shortcuts for Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques

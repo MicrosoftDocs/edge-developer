@@ -4,8 +4,8 @@ description: How to remotely debug WebView2 WinUI 2 (UWP) apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 09/27/2023
 ---
 # Remote debugging WebView2 WinUI 2 (UWP) apps

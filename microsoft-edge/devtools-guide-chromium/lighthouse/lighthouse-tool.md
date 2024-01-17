@@ -4,7 +4,8 @@ description: Use the Lighthouse tool to identify and fix common problems that af
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/20/2022
 ---
 # Lighthouse tool

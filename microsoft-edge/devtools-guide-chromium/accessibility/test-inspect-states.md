@@ -4,7 +4,8 @@ description: Inspect accessibility of all states of elements, such as text contr
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/04/2023
 ---
 # Verify accessibility of all states of elements

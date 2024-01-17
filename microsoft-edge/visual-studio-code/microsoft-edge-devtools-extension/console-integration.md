@@ -4,7 +4,7 @@ description: Console integration in the Microsoft Edge Developer Tools extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Console integration

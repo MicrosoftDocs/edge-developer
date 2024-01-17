@@ -4,7 +4,8 @@ description: Easily search the web for console error message strings, DevTools e
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/03/2021
 ---
 # What's New in DevTools (Microsoft Edge 94)

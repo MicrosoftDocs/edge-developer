@@ -4,7 +4,8 @@ description: How to use the Security panel in DevTools to make sure that a page 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/22/2023
 ---
 <!-- Copyright Kayce Basques

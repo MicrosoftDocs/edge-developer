@@ -4,8 +4,8 @@ description: Migrating from Manifest V2 to V3 will help reduce fragmentation of 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: extensions
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/29/2022
 ---
 # Overview and timelines for migrating to Manifest V3

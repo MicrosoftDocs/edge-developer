@@ -4,7 +4,8 @@ description: To communicate with a native Win32 app that's installed on a user's
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 03/31/2021
 ---
 # Native messaging

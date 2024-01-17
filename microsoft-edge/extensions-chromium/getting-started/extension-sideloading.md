@@ -4,7 +4,8 @@ description: How to test an extension by sideloading it in the browser.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/07/2022
 ---
 # Sideload an extension

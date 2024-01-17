@@ -4,7 +4,8 @@ description: Check that webpages are usable by people with color blindness using
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/17/2023
 ---
 # Verify that a page is usable by people with color blindness

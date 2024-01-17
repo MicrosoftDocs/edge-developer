@@ -4,7 +4,8 @@ description: Get started with remote debugging WebViews in native Android apps u
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Meggin Kearney

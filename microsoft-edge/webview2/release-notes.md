@@ -4,8 +4,8 @@ description: Release notes for Microsoft Edge WebView2 for Win32, WPF, and WinFo
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 12/11/2023
 ---
 # Release Notes for the WebView2 SDK

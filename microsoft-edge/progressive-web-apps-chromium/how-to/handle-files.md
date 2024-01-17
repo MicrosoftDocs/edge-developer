@@ -4,8 +4,8 @@ description: How to register your PWA as a file handler to more deeply integrate
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 04/03/2023
 ---
 # Handle files in Progressive Web Apps

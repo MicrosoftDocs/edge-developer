@@ -4,7 +4,8 @@ description: Keep your client-side code readable and debuggable even after you c
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 03/02/2022
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus

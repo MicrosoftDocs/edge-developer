@@ -4,7 +4,8 @@ description: Learn how to configure DevTools to use source maps from the Azure A
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/19/2023
 ---
 

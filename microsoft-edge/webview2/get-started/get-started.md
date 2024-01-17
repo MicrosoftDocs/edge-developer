@@ -4,8 +4,8 @@ description: Get started building WebView2 for various platforms.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 02/22/2023
 ---
 # Getting Started tutorials

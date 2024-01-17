@@ -4,7 +4,7 @@ description: The launch.json file for the Microsoft Edge DevTools extension for 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # The launch.json file for the DevTools extension

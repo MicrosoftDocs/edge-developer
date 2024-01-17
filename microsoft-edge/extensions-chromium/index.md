@@ -4,7 +4,8 @@ description: An overview of building and publishing Microsoft Edge Extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 04/03/2023
 ---
 # Overview of Microsoft Edge extensions

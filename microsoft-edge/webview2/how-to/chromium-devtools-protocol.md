@@ -4,8 +4,8 @@ description: How to use the Chrome DevTools Protocol in your WebView2 app by usi
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2023
 ---
 # Use the Chrome DevTools Protocol (CDP) in WebView2 apps

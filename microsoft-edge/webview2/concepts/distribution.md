@@ -4,8 +4,8 @@ description: How to distribute the WebView2 Runtime when releasing an app that u
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 12/05/2023
 ---
 # Distribute your app and the WebView2 Runtime

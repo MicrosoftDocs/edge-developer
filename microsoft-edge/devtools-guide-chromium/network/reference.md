@@ -4,7 +4,8 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/18/2023
 ---
 <!-- Copyright Kayce Basques

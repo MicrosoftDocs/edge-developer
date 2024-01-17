@@ -4,7 +4,7 @@ description: Installing the Microsoft Edge Developer Tools extension for Visual 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Installing the DevTools extension for Visual Studio Code

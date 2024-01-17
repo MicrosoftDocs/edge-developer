@@ -4,7 +4,7 @@ description: Use the extension with the Visual Studio Code debugging workflow in
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Integration with Visual Studio Code debugging

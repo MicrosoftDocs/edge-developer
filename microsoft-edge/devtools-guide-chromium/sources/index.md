@@ -4,7 +4,8 @@ description: Use the Sources tool to view, modify, and debug JavaScript that's r
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/21/2023
 ---
 <!-- Copyright Kayce Basques

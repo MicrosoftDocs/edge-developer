@@ -4,7 +4,8 @@ description: Analyzing the lack of keyboard support on a form that uses the div 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 06/07/2021
 ---
 # Analyze keyboard support on forms
