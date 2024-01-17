@@ -4,7 +4,8 @@ description: The architecture of Microsoft Edge extensions, and core concepts to
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 02/06/2022
 ---
 # Extension concepts and architecture

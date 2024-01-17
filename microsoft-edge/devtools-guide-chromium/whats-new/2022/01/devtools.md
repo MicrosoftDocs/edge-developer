@@ -4,7 +4,8 @@ description: Detached Elements tool is now on by default.  Improvements and bug 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/14/2022
 ---
 # What's New in DevTools (Microsoft Edge 97)

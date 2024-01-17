@@ -4,7 +4,8 @@ description: Sample Progressive Web Apps that demonstrate how to use PWA feature
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 11/19/2021
 ---
 # Progressive Web App demos

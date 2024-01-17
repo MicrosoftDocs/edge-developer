@@ -4,7 +4,8 @@ description: Apply color themes from Visual Studio Code, debug DOM node memory l
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/30/2021
 ---
 # What's New in DevTools (Microsoft Edge 93)

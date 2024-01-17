@@ -4,7 +4,8 @@ description: Open the Console, create a Live Expression, and set the expression 
 author: MSEdgeTeam 
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/04/2023
 ---
 <!-- Copyright Kayce Basques

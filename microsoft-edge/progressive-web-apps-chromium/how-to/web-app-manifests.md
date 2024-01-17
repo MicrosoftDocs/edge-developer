@@ -4,8 +4,8 @@ description: How to use the web app manifest to integrate your Progressive Web A
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 11/28/2022
 ---
 # Use a web app manifest to integrate a Progressive Web App into the operating system

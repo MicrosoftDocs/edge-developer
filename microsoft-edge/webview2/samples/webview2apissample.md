@@ -4,8 +4,8 @@ description: This WebView2 sample, WebView2APISample, demonstrates how to use th
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 08/11/2023
 ---
 # Win32 sample app

@@ -4,8 +4,8 @@ description: How to manage user data folders in a WebView2 host app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 08/31/2022
 ---
 # Manage user data folders

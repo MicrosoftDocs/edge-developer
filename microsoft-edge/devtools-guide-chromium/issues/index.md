@@ -4,7 +4,8 @@ description: Use the Issues tool to identify and fix problems with the current w
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/25/2023
 ---
 <!-- Copyright Sam Dutton

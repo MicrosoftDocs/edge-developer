@@ -4,8 +4,8 @@ description: How to test your legacy website or app in IE mode in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/23/2021
 ---
 # Use Internet Explorer Driver to automate IE mode in Microsoft Edge

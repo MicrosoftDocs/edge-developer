@@ -4,7 +4,8 @@ description: Render a webpage emulating the user's dark or light scheme operatin
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/22/2023
 ---
 # Emulate dark or light schemes in the rendered page

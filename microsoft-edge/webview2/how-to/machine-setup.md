@@ -4,8 +4,8 @@ description: Set up your Dev environment for WebView2 development.  Set up git, 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 10/26/2022
 ---
 # Set up your Dev environment for WebView2

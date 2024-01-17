@@ -4,8 +4,8 @@ description: Get started guide with WebView2 for WinUI 3 (Windows App SDK) apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 07/06/2022
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK) apps

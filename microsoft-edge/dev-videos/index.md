@@ -4,7 +4,7 @@ description: Watch announcement and demo videos about Microsoft Edge web develop
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 05/24/2022
 ---
 # Videos about web development with Microsoft Edge

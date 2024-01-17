@@ -4,8 +4,8 @@ description: Deployment and distribution of WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 02/16/2022
 ---
 # Deployment and distribution

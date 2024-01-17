@@ -4,7 +4,8 @@ description: Analyzing the lack of indication of keyboard focus, due to missing 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/04/2023
 ---
 # Analyze the lack of indication of keyboard focus

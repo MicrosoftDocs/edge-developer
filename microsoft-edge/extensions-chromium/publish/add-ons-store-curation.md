@@ -4,7 +4,8 @@ description: How submissions to the Microsoft Edge Add-ons store are curated and
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 10/13/2023
 ---
 # Curation and review process for the Edge Add-ons store

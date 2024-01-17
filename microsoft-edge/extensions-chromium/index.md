@@ -4,7 +4,8 @@ description: An overview of building and publishing Microsoft Edge Extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 04/03/2023
 ---
 # Overview of Microsoft Edge extensions
@@ -19,7 +20,7 @@ An extension should include at least the following features:
 *   A JavaScript file that defines the function.
 *   HTML and CSS files that define the user interface.
 
-To work directly with a specific part of the browser, such as a window or tab, you must send API requests and must often reference the browser by name.
+To work directly with a specific part of the browser, such as a window or tab, you must send API requests, and must often reference the browser by name.
 
 ![A Microsoft Edge extension](./index-images/example-extension-screenshot.png)
 
@@ -29,7 +30,7 @@ To work directly with a specific part of the browser, such as a window or tab, y
 
 Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  Some of the popular browsers to build extensions for include Microsoft Edge, Safari, Firefox, Chrome, Opera, and Brave. 
 
-The following table isn't exhaustive or definitive. It is just a starting point for your research.
+The following table isn't exhaustive or definitive; it's just a starting point for your research.
 
 | Web browser | Chromium-based? | Extension development webpage |
 |:--- |:--- |:--- |

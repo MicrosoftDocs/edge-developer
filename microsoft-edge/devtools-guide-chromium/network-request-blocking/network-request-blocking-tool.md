@@ -4,7 +4,8 @@ description: Use the Network request blocking tool in Microsoft Edge DevTools to
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/23/2013
 ---
 # Network request blocking tool

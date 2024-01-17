@@ -4,7 +4,8 @@ description: Discover new debugging workflows in this comprehensive reference of
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/26/2023
 ---
 <!-- Copyright Kayce Basques

@@ -4,8 +4,8 @@ description: This WebView2 sample demonstrates how to use the WebView2 control a
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2022
 ---
 # WinForms sample app

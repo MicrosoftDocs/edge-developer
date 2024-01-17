@@ -4,7 +4,8 @@ description: How to analyze HTML pages using the Inspect tool in Microsoft Edge 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/18/2023
 ---
 # Analyze pages using the Inspect tool

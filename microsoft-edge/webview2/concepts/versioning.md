@@ -4,8 +4,8 @@ description: Understand the different WebView2 SDK versions, and version models 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/25/2023
 ---
 # Understand the different WebView2 SDK versions

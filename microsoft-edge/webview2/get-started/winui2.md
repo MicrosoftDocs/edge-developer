@@ -4,8 +4,8 @@ description: Get started guide with WebView2 for WinUI 2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 10/31/2023
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps

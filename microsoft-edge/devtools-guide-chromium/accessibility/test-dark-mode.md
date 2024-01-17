@@ -4,7 +4,8 @@ description: Check for contrast issues with dark theme and light theme (for dark
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 06/07/2021
 ---
 # Check for contrast issues with dark theme and light theme
