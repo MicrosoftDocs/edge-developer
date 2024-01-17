@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: windows-integration
 ms.localizationpriority: high
 ms.date: 11/17/2023
 ---

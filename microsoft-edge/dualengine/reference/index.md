@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
+ms.subservice: windows-integration
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode
 ms.date: 12/27/2023
 ---
