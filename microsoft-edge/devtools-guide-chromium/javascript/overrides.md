@@ -4,7 +4,8 @@ description: The Overrides feature is a feature within the Sources tool of Micro
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/25/2023
 ---
 # Override webpage resources with local copies (Overrides tab)

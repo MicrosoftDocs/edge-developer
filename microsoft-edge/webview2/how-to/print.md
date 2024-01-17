@@ -4,8 +4,8 @@ description: How to print a webpage to a printer, PDF file, or PDF stream in a W
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 02/17/2023
 ---
 # Printing from WebView2 apps

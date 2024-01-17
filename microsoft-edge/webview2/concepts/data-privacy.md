@@ -4,8 +4,8 @@ description: WebView2 data collection and practices, privacy, and the 'Diagnosti
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 06/02/2023
 ---
 # Data and privacy in WebView2

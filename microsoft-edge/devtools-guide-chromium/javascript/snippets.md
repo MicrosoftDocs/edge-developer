@@ -4,7 +4,8 @@ description: Snippets are small scripts that you can author and run within the S
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/17/2023
 ---
 <!-- Copyright Kayce Basques

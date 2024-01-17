@@ -4,7 +4,8 @@ description: The Performance monitor tool in DevTools provides real-time perform
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/22/2023
 ---
 # Measure runtime performance of a page using the Performance monitor tool

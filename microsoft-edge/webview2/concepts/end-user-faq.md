@@ -4,8 +4,8 @@ description: Information for end users about WebView2 processes, memory and CPU 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 03/30/2023
 ---
 # WebView2 end-user FAQ

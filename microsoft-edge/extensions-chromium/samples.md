@@ -4,8 +4,8 @@ description: Samples for Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/27/2023
 ---
 # Samples for Microsoft Edge extensions

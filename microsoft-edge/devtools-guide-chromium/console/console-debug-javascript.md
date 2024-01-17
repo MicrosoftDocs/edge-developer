@@ -4,7 +4,8 @@ description: Debugging and resolving JavaScript-related errors that are reported
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/12/2023
 ---
 # Fix JavaScript errors that are reported in the Console

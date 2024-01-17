@@ -4,8 +4,8 @@ description: Deciding whether to have your app use windowed hosting vs. visual h
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 10/24/2022
 ---
 # Windowed vs. visual hosting of WebView2

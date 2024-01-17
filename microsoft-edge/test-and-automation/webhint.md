@@ -4,7 +4,7 @@ description: The webhint extension for Visual Studio Code is a customizable lint
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 02/02/2023
 ---
 # webhint extension for Visual Studio Code

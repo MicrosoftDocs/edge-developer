@@ -4,7 +4,8 @@ description: Host source maps on Azure DevOps Symbol Server to debug your origin
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 03/09/2022
 ---
 # What's New in DevTools (Microsoft Edge 99)

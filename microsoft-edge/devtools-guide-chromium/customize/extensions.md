@@ -4,7 +4,8 @@ description: Add a tab for a custom tool in the Activity Bar of DevTools by inst
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/18/2023
 ---
 # Add custom UI to DevTools using extensions
@@ -33,7 +34,7 @@ To install an Edge Add-ons extension that extends DevTools:
 
 1. Click the **Add extension** button.  A dialog indicates that the extension has been installed, and the Extensions (![Extensions icon](./extensions-images/extensions-icon.png)) button now lists the extension.
 
-1. Open a new tab or window, and then go to a page that contains content that's relevant for the DevTools extension.  For example, use the [TodoMVC React example page](https://todomvc.com/examples/react/#/), or go to a live [Microsoft Edge Demos repo](https://github.com/MicrosoftEdge/Demos#demos) page, such as [demo-to-do](https://microsoftedge.github.io/Demos/demo-to-do/).
+1. Open a new tab or window, and then go to a page that contains content that's relevant for the DevTools extension.  For example, use the [TodoMVC React example page](https://todomvc.com/examples/react/dist/), or go to a live [Microsoft Edge Demos repo](https://github.com/MicrosoftEdge/Demos#demos) page, such as [demo-to-do](https://microsoftedge.github.io/Demos/demo-to-do/).
 
 1. Open DevTools, such as by pressing **F12**.  In the case of this React extension, two new tabs are opened in the Activity Bar: **Components** and **Profiler**:
 

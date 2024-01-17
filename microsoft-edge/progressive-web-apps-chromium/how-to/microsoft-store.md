@@ -4,8 +4,8 @@ description: Make your Progressive Web App (PWA) more discoverable by publishing
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 10/06/2023
 ---
 # Publish a Progressive Web App to the Microsoft Store

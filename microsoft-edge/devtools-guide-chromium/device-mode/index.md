@@ -4,7 +4,8 @@ description: Use virtual devices in Microsoft Edge to build mobile-first website
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/20/2023
 ---
 <!-- Copyright Kayce Basques

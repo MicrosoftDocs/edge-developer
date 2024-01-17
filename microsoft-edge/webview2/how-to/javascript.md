@@ -4,8 +4,8 @@ description: Learn how to use JavaScript in complex scenarios in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: how-to
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 4/1/2022
 ---
 # Call web-side code from native-side code

@@ -4,7 +4,8 @@ description: Microsoft Edge developer ADA Addendum.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 02/17/2021
 ---
 # App Developer Agreement Addendum for Microsoft Edge program users

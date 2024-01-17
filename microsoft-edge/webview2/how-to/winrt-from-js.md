@@ -4,8 +4,8 @@ description: How to pass WinRT host objects to JavaScript using the AddHostObjec
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 02/21/2023
 ---
 # Call native-side WinRT code from web-side code

@@ -4,7 +4,8 @@ description: New DevTools repo at GitHub, to send feedback. Use filters to focus
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 03/31/2022
 ---
 # What's New in DevTools (Microsoft Edge 100)

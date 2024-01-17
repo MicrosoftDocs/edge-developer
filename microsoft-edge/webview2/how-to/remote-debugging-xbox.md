@@ -4,8 +4,8 @@ description: How to remotely debug Xbox WebView2 WinUI 2 (UWP) apps by using Rem
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 10/17/2023
 ---
 # Remote debugging Xbox WebView2 WinUI 2 (UWP) apps

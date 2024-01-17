@@ -4,7 +4,8 @@ description: "Remote debugging of Microsoft Edge, PWAs, and WebView2 controls on
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 03/15/2023
 ---
 # What's New in DevTools (Microsoft Edge 111)

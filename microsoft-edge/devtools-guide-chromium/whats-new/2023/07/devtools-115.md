@@ -4,7 +4,8 @@ description: "Improvements for connecting DevTools to Azure Artifacts symbol ser
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 08/18/2023
 ---
 # What's New in DevTools (Microsoft Edge 115)
