@@ -4,7 +4,8 @@ description: "Edge DevTools has a new user interface. Explain with Copilot in De
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/07/2023
 ---
 # What's New in DevTools (Microsoft Edge 120)
