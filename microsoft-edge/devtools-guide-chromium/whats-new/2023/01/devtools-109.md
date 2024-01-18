@@ -1,5 +1,5 @@
 ---
-title: What's new in DevTools (Microsoft Edge 109)
+title: What's New in DevTools (Microsoft Edge 109)
 description: "Export DevTools instances with enhanced traces.  Debug Recalculate Styles events in Performance tool with selector stats.  Track GC'd objects when Allocation sampling in Memory tool.  Heap Snapshot Visualizer.  Quick View in Focus Mode has all tools.  Navigate directly to Styles in Elements tool.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel

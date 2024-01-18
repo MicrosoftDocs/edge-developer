@@ -33,7 +33,7 @@ To view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/Indexe
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Application** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./indexeddb-images/more-tools-icon.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Application** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./indexeddb-images/more-tools-icon.png)) button.
 
    The **Manifest** pane usually opens by default:
 
@@ -81,7 +81,7 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 
 #### Edit IndexedDB data by using the Console tool
 
-1. In DevTools, on the Activity Bar, select the **Console** tab.
+1. In DevTools, on the **Activity Bar**, select the **Console** tab.
 
 1. In the **Console** tool, run JavaScript code to edit the IndexedDB data. For example, to add a new value to the `keyval` object store, run the following code:
    

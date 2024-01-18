@@ -37,7 +37,7 @@ To use the sections in this page, open the **Performance** tool in DevTools:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS). DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Performance** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Performance** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -571,7 +571,7 @@ To open the **Rendering** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
+1. In DevTools, on the **Activity Bar**, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
 
 1. Click **Rendering** in the dropdown menu. The **Rendering** tool appears:
 
