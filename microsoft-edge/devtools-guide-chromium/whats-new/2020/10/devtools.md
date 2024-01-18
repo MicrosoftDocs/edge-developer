@@ -1,5 +1,5 @@
 ---
-title: What's new in DevTools (Microsoft Edge 87)
+title: What's New in DevTools (Microsoft Edge 87)
 description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Computed sidebar panel.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -283,7 +283,7 @@ In the **Security & Isolation** section of the frame detail page, view the Cross
 For real-time updates on this feature in the Chromium open-source project, see Issue [#1051466](https://crbug.com/1051466).
 
 See also:
-* [Display opener frame details for opened windows](../11/devtools.md#display-opener-frame-details-for-opened-windows) in _What's new in DevTools (Microsoft Edge 88)_
+* [Display opener frame details for opened windows](../11/devtools.md#display-opener-frame-details-for-opened-windows) in _What's New in DevTools (Microsoft Edge 88)_
 * [The Application tool, to manage storage](../../../storage/application-tool.md)
 
 
@@ -299,7 +299,7 @@ The **Security & Isolation** section of the frame detail page now displays the `
 For real-time updates on this feature in the Chromium open-source project, see Issue [#1051466](https://crbug.com/1051466).
 
 See also:
-* [Display opener frame details for opened windows](../11/devtools.md#display-opener-frame-details-for-opened-windows) in _What's new in DevTools (Microsoft Edge 88)_
+* [Display opener frame details for opened windows](../11/devtools.md#display-opener-frame-details-for-opened-windows) in _What's New in DevTools (Microsoft Edge 88)_
 * [The Application tool, to manage storage](../../../storage/application-tool.md)
 
 

@@ -1,5 +1,5 @@
 ---
-title: What's new in DevTools (Microsoft Edge 89)
+title: What's New in DevTools (Microsoft Edge 89)
 description: The What's New tool is now Welcome, Visual Font Editor in the Styles pane, CSS Flexbox debugging tools, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -86,7 +86,7 @@ See also:
 
 Grid:
 * [CSS grids](../../../css/grid.md)
-* [Improved CSS Grid tooling](../../2020/10/devtools.md#improved-css-grid-tooling) in _What's new in DevTools (Microsoft Edge 87)_.
+* [Improved CSS Grid tooling](../../2020/10/devtools.md#improved-css-grid-tooling) in _What's New in DevTools (Microsoft Edge 87)_.
 <!-- todo: doc flexbox, probably next to grid.md -->
 
 MDN:
@@ -249,7 +249,7 @@ In Microsoft Edge version 89, node screenshots are more accurate, capturing the 
 For the history of this feature in the Chromium open-source project, see Issue [1003629](https://crbug.com/1003629).
 
 See also:
-* [Capture node screenshots using the Elements tool context menu](../../2020/08/devtools.md#capture-node-screenshots-using-the-elements-tool-context-menu) in _What's new in DevTools (Microsoft Edge 86)_
+* [Capture node screenshots using the Elements tool context menu](../../2020/08/devtools.md#capture-node-screenshots-using-the-elements-tool-context-menu) in _What's New in DevTools (Microsoft Edge 86)_
 
 
 <!-- ------------------------------ -->

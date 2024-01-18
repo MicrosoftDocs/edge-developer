@@ -59,7 +59,7 @@ As a result of CSS mirror editing, Visual Studio Code also automatically navigat
 
 If you have writable, trusted source files, and you want your CSS changes in DevTools to be automatically edited in the source files, select the **CSS mirror editing** checkbox.  It is selected by default.
 
-Clear the **CSS mirror editing** check box if you're experimenting only, and there's a URL rather than a file path in the address bar in the **Edge DevTools: Browser** tab, and don't have source files locally via Activity Bar > **Explorer** > the **Open Folder** button, and don't want error messages about mapping and mirror editing.
+Clear the **CSS mirror editing** check box if you're experimenting only, and there's a URL rather than a file path in the address bar in the **Edge DevTools: Browser** tab, and don't have source files locally via **Activity Bar** > **Explorer** > the **Open Folder** button, and don't want error messages about mapping and mirror editing.
 
 To enable or disable CSS mirror editing:
 
