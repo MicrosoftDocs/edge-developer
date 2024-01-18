@@ -25,7 +25,7 @@ The DualEngine LAF is handled somewhat atypically; for details, see [Unlock the 
 <!-- ====================================================================== -->
 ## Step 2: Download the DualEngine API header
 
-The DualEngine API is a COM interface that's only officially supported via C++, and is not part of the normal Windows SDK.  Therefore, you must include the following header in your adapter DLL project: [DualEngine API Header Download]().<!-- todo: link -->
+The DualEngine API is a COM interface that's only officially supported via C++, and is not part of the normal Windows SDK.  Therefore, you must include the following header in your adapter DLL project: [DualEngine API Header Download](https://download.microsoft.com/download/c/5/0/c5035487-bd78-4fd0-9cc4-e1c5a3b654b7/dualengine.h).
 
 
 <!-- ====================================================================== -->
