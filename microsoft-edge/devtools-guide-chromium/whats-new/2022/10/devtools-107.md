@@ -1,5 +1,5 @@
 ---
-title: What's new in DevTools (Microsoft Edge 107)
+title: What's New in DevTools (Microsoft Edge 107)
 description: "Automate WebView2 with Playwright. Focus Mode Activity Bar icons have tooltips. New shortcut key for Command Palette. Memory tool loads larger heap snapshots. Links in Application tool render in high contrast mode. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -33,11 +33,11 @@ See also:
 
 <!-- Subtitle: When text labels are not visible in the Activity Bar, the name of the tool will appear while hovering over the icon. -->
 
-Starting in Microsoft Edge 107, in Focus Mode, the Activity Bar now displays tooltips when you hover over tool icons.  These tooltips appear immediately and help you quickly identify and switch between tools:
+Starting in Microsoft Edge 107, in Focus Mode, the **Activity Bar** now displays tooltips when you hover over tool icons.  These tooltips appear immediately and help you quickly identify and switch between tools:
 
 ![Activity Bar tooltips](./devtools-107-images/activity-bar-tooltips.png)
 
-When the Activity Bar is horizontal, a tooltip appears when a tool icon doesn't already have a text label next to it:
+When the **Activity Bar** is horizontal, a tooltip appears when a tool icon doesn't already have a text label next to it:
 
 ![Tooltips for horizontal Activity Bar icons](./devtools-107-images/activity-bar-tooltips-horizontal.png)
 

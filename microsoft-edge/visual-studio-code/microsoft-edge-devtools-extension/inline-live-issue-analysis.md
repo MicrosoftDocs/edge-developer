@@ -15,7 +15,7 @@ Issues in your source code (`.html`, `.css`, or `.js` files) are highlighted wit
 
 This feature requires Node.js and npm (Node Package Manager).  See [Step 4: Install Node.js and Node Package Manager (npm)](./install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
 
-This feature is on by default; the **Webhint** checkbox is selected in **Settings**.  To turn this feature on or off, select Activity Bar > **Microsoft Edge Tools** > hover to the right of **Targets** > **More Actions** (**...**) > **Open Settings** > select or clear the **Webhint** checkbox:
+This feature is on by default; the **Webhint** checkbox is selected in **Settings**.  To turn this feature on or off, select **Activity Bar** > **Microsoft Edge Tools** > hover to the right of **Targets** > **More Actions** (**...**) > **Open Settings** > select or clear the **Webhint** checkbox:
 
 ![Webhint checkbox in Settings](./inline-live-issue-analysis-images/webhint-checkbox-settings.png)
 

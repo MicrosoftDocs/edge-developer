@@ -55,7 +55,7 @@ To try using the logging functions in the **Console**:
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-   DevTools opens, with the **Console** open in the Activity Bar.  The demo page has already sent the above log messages to the **Console**:
+   DevTools opens, with the **Console** open in the **Activity Bar**.  The demo page has already sent the above log messages to the **Console**:
 
    ![The Console shows the messages from different log APIs](./console-log-images/console-log-examples.png)
 
@@ -109,7 +109,7 @@ To use the `log` function to display different variable types:
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-   DevTools opens, with the **Console** open in the Activity Bar, displaying several types of values.  Each type of result is displayed in a different way.
+   DevTools opens, with the **Console** open in the **Activity Bar**, displaying several types of values.  Each type of result is displayed in a different way.
 
 1. Expand each output entry to analyze each result in more detail.
 
@@ -176,7 +176,7 @@ console.log('%cImportant message follows','color:red;font-size:40px')
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-   DevTools opens, with the **Console** open in the Activity Bar.  The webpage has already populated the **Console** with output.
+   DevTools opens, with the **Console** open in the **Activity Bar**.  The webpage has already populated the **Console** with output.
 
    The first example demonstrates that the order of replacement of format specifiers is the parameter order following the string:
 
@@ -244,7 +244,7 @@ for (tech in technologies) {
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-   DevTools opens, with the **Console** open in the Activity Bar.  The webpage has already populated the **Console** with output, logging many values as groups:
+   DevTools opens, with the **Console** open in the **Activity Bar**.  The webpage has already populated the **Console** with output, logging many values as groups:
 
    ![Log lots of values as groups](./console-log-images/console-log-groups.png)
 
@@ -294,7 +294,7 @@ To show complex data as tables:
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-   DevTools opens, with the **Console** open in the Activity Bar.  The webpage has already populated the **Console** with output.
+   DevTools opens, with the **Console** open in the **Activity Bar**.  The webpage has already populated the **Console** with output.
 
 1. In the **Console**, click the expander triangles.
 

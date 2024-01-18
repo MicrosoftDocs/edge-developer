@@ -28,7 +28,7 @@ This article is about changing the appearance of the webpage under development. 
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar or on the Quick View, select the **Rendering** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./preferred-color-scheme-simulation-images/more-tools-icon.png)) button.
+1. In DevTools, on the **Activity Bar** or on the **Quick View**, select the **Rendering** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./preferred-color-scheme-simulation-images/more-tools-icon.png)) button.
 
 1. In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: dark** or **prefers-color-scheme: light**:
 

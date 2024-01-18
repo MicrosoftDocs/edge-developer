@@ -1,5 +1,5 @@
 ---
-title: What's new in DevTools (Microsoft Edge 112)
+title: What's New in DevTools (Microsoft Edge 112)
 description: "The Performance tool can now unminify JavaScript running in out-of-process iframes, the CSS Overview tool displays a list of non-simple selectors for quick performance wins, and more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -38,7 +38,7 @@ In Microsoft Edge 112, the **Performance** tool now loads sourcemaps and applies
 -->
 
 See also:
-* [Performance tool unminifies file and function names when profiling production code](../03/devtools-111.md#performance-tool-unminifies-file-and-function-names-when-profiling-production-code) in _What's new in DevTools (Microsoft Edge 111)_.
+* [Performance tool unminifies file and function names when profiling production code](../03/devtools-111.md#performance-tool-unminifies-file-and-function-names-when-profiling-production-code) in _What's New in DevTools (Microsoft Edge 111)_.
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
 * [Record performance](../../../evaluate-performance/reference.md#record-performance) in _Performance features reference_.

@@ -64,7 +64,7 @@ To open the UI that enables you to simulate a mobile viewport:
 
 1. Open DevTools.  For example, right-click in a webpage and then select **Inspect**.
 
-1. In the Activity Bar, click the **Toggle device emulation** (![Toggle Device Toolbar](./index-images/toggle-device-toolbar-dark-icon.png)) button.  Or, in DevTools, select **Customize and control DevTools** (`...`) > **Device Emulation**:
+1. In the **Activity Bar**, click the **Toggle device emulation** (![Toggle Device Toolbar](./index-images/toggle-device-toolbar-dark-icon.png)) button.  Or, in DevTools, select **Customize and control DevTools** (`...`) > **Device Emulation**:
 
    ![The Device Toolbar](./index-images/device-toolbar-highlighted.png)
 
