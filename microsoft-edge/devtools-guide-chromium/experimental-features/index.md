@@ -313,7 +313,7 @@ Status:
 ## WebAssembly Debugging: Enable DWARF support
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Enables DWARF support for WebAssembly debugging.  See [Improved WebAssembly debugging](../whats-new/2019/12/devtools.md#improved-webassembly-debugging) in _What's new in DevTools (Microsoft Edge 80)_.
+Enables DWARF support for WebAssembly debugging.  See [Improved WebAssembly debugging](../whats-new/2019/12/devtools.md#improved-webassembly-debugging) in _What's New in DevTools (Microsoft Edge 80)_.
 <!-- todo old: need text -->
 
 Status:

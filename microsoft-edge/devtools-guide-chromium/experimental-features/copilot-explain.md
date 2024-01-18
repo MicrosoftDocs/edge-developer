@@ -81,7 +81,7 @@ To use Copilot to explain an error or warning in the **Console** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Console** tab.
+1. In DevTools, on the **Activity Bar**, select the **Console** tab.
 
 1. In the rendered web page, click the **Run** button next to one or more error descriptions.
 
@@ -107,7 +107,7 @@ To use Copilot to explain code in the **Sources** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Sources** tab. If that tab isn't visible, click the **More tools** (![More tools icon](./copilot-explain-images/more-tools-icon.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Sources** tab. If that tab isn't visible, click the **More tools** (![More tools icon](./copilot-explain-images/more-tools-icon.png)) button.
 
 1. In the **Page** tab in the **Sources** tool, select the `to-do.js` file. The source code of that file appears in the Editor pane.
 

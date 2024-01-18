@@ -30,7 +30,7 @@ To add a new video:
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 105
+## DevTools - What's New in DevTools 105
 
 _Published on 6 September 2022._
 
@@ -52,7 +52,7 @@ In this video, we go over the UI structure, with its main toolbar and panel and 
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 104
+## DevTools - What's New in DevTools 104
 
 _Published on 5 August 2022._
 
@@ -62,7 +62,7 @@ Learn more about our latest announcements from the Microsoft Edge DevTools team 
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 103
+## DevTools - What's New in DevTools 103
 
 _Published on 5 July 2022._
 
@@ -104,7 +104,7 @@ To report any translation errors, check out [Contact the Microsoft Edge DevTools
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 102
+## DevTools - What's New in DevTools 102
 
 _Published on 1 June 2022._
 
@@ -172,7 +172,7 @@ This video covers how to dock or undock DevTools, open new tools, and close thos
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 101
+## DevTools - What's New in DevTools 101
 
 _Published on 28 Apr 2022._
 
@@ -196,7 +196,7 @@ For more information see [CSS Custom Highlight API: The Future of Highlighting T
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 100
+## DevTools - What's New in DevTools 100
 
 _Published on 19 Apr 2022._
 
@@ -206,7 +206,7 @@ Learn more about our latest announcements from the Microsoft Edge DevTools team 
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 99
+## DevTools - What's New in DevTools 99
 
 _Published on 21 Mar 2022._
 
@@ -216,7 +216,7 @@ Learn more about our latest announcements from the Microsoft Edge DevTools team 
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 98
+## DevTools - What's New in DevTools 98
 
 _Published on 23 Feb 2022._
 
@@ -226,7 +226,7 @@ Learn more about our latest announcements from the Microsoft Edge DevTools team 
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 97
+## DevTools - What's New in DevTools 97
 
 _Published on 1 Feb 2022._
 
@@ -236,7 +236,7 @@ Learn more about our latest announcements from the Microsoft Edge DevTools team 
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 96
+## DevTools - What's New in DevTools 96
 
 _Published on 9 Dec 2021._
 
@@ -261,7 +261,7 @@ For more information see [Debug DOM memory leaks with the Detached Elements tool
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 95
+## DevTools - What's New in DevTools 95
 
 _Published on 8 Dec 2021._
 
@@ -285,7 +285,7 @@ For more information see [Picking colors of any pixel on the screen with the Eye
 
 
 <!-- ====================================================================== -->
-## DevTools - What's new in DevTools 94
+## DevTools - What's New in DevTools 94
 
 _Published on 12 Nov 2021._
 
