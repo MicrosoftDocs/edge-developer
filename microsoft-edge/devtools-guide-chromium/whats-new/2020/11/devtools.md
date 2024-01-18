@@ -1,5 +1,5 @@
 ---
-title: What's new in DevTools (Microsoft Edge 88)
+title: What's New in DevTools (Microsoft Edge 88)
 description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, new service worker debugging features, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel

@@ -48,7 +48,7 @@ This tab is also called:
 
 To change or check the setting for which type of browser window to use:
 
-1. In Visual Studio Code, select Activity Bar > **Microsoft Edge Tools**.  The **Microsoft Edge Tools** Side Bar opens.
+1. In Visual Studio Code, select **Activity Bar** > **Microsoft Edge Tools**.  The **Microsoft Edge Tools** Side Bar opens.
 
 1. Hover to the right of **Targets**, and then click **More Actions** (**...**) > **Open Settings**.
 
