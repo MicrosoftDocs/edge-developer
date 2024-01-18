@@ -1,5 +1,5 @@
 ---
-title: What's new in DevTools (Microsoft Edge 83)
+title: What's New in DevTools (Microsoft Edge 83)
 description: Emulate color vision deficiencies, Dock To Left in the Command Menu, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel

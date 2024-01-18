@@ -105,7 +105,7 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 <!-- ====================================================================== -->
 ## Step 5: Step through JavaScript code in the Debugger
 
-1. Select Activity Bar > Explorer (![Explorer icon in Activity Bar](./get-started-right-click-html-images/explorer-icon.png)).
+1. Select **Activity Bar** > Explorer (![Explorer icon in Activity Bar](./get-started-right-click-html-images/explorer-icon.png)).
 
 1. In the **demo-to-do** directory, click **to-do.js** to open it.  Scroll down to the `changeTask` function and then click to the left of a line number to set a breakpoint:
 
