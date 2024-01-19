@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 01/09/2024
+ms.date: 01/19/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
