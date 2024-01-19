@@ -26,12 +26,11 @@ Check this article often as the Microsoft Edge team updates this article as thin
 
 This table lists:
 *  Changes where the rollout schedule for Microsoft Edge differs from the upstream Chromium project.
-*  High-impact changes which the Microsoft Edge team is tracking closely.
-<!-- This table doesn't include low-impact changes which are unlikely to have compatibility impact. -->
+*  High-impact changes which the Microsoft Edge team is tracking closely.<!-- doesn't include low-impact changes, which are unlikely to have compatibility impact -->
 
-<!-- Order: newest TBD at top, then greatest to smallest version # -->
+<!-- order of rows: newest version (such as "Future/TBD") at top, then greatest to smallest version # -->
 
-<!-- 10 most recent versions (Stable channel); as of Jan. 19, 2024, latest Stable = 120, so the 10 most recent versions = 111 through 120+ -->
+<!-- latest = 10 most recent versions (Stable channel); as of Jan. 19, 2024, latest Stable = 120, so the 10 most recent versions = 111 through 120+ -->
 ##### [Latest versions](#tab/latest)
 
 | Change | Stable channel | Experimentation | Additional information |
