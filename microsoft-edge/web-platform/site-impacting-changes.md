@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 11/06/2023
+ms.date: 01/19/2024
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge
 
@@ -31,22 +31,21 @@ This table lists:
 
 <!-- Order: newest TBD at top, then greatest to smallest version # -->
 
-<!-- 10 most recent versions; eg: v107-v116: -->
+<!-- 10 most recent versions (Stable channel); as of Jan. 19, 2024, latest Stable = 120, so the 10 most recent versions = 111 through 120+ -->
 ##### [Latest versions](#tab/latest)
 
-| Change | Stable Channel | Experimentation | Additional information |
+| Change | Stable channel | Experimentation | Additional information |
 | --- | --- | --- | --- |
 | Deprecate unload event | Future release (TBD) | | Introduces a new Permission-Policy to allow creating unload event listeners. The default policy is `allow`, but the default policy will gradually be migrated to `deny`, such that unload handlers stop firing on pages, unless a page explicitly opts in to re-enable them.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Deprecate: Deprecate unload event](https://groups.google.com/a/chromium.org/g/blink-dev/c/dvusqw9-IhI/m/SBkm_u1RAQAJ). |
 | Removal of cross-origin subframe JavaScript dialogs | Future release (TBD) | | Removes `window.alert`, `window.prompt`, and `window.confirm` from cross-origin iframes.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Remove: Cross origin subframe JS Dialogs](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ). |
 | Removal of mutation events | v127 | | Removes support for mutation events in Chromium. Use the [MutationObserver](https://developer.mozilla.org/docs/Web/API/MutationObserver) API instead.  See [Intent to Deprecate: Mutation Events](https://groups.google.com/a/chromium.org/g/blink-dev/c/qDsKRU-cQ_4/m/isA1mZ_aAAAJ). |
-| Ignore modifications to `document.domain` by default | v119 | | The `document.domain` property historically could be set to relax the same-origin policy and allow subdomains from a site to interact. This behavior will be disabled by default such that setting the `document.domain` property will have no effect.  For more information and workarounds, see [Microsoft Edge will disable modifying document.domain](/deployedge/edge-learnmore-origin-keyed-agent-cluster). |
-| New TLS server certificate verifier | v109 (unmanaged devices), v111 (managed devices) | | No site compatibility impacts are anticipated.  If you have uncommon TLS server certificate deployments, you should test in v109 to confirm there's no impact. For more information and testing guidance, see [Changes to Microsoft Edge browser TLS server certificate verification](/deployedge/microsoft-edge-security-cert-verification). |
 | Added support for AVIF and AV1 file formats | v121 | | Microsoft Edge now supports the AVIF and AV1 file formats, which offer better compression and higher quality images and videos.  Users can enjoy faster loading times and better quality media on websites. |
+| Ignore modifications to `document.domain` by default | v119 | | The `document.domain` property historically could be set to relax the same-origin policy and allow subdomains from a site to interact. This behavior will be disabled by default such that setting the `document.domain` property will have no effect.  For more information and workarounds, see [Microsoft Edge will disable modifying document.domain](/deployedge/edge-learnmore-origin-keyed-agent-cluster). |
+| New TLS server certificate verifier | v111 (managed devices), v109 (unmanaged devices) | | No site compatibility impacts are anticipated.  If you have uncommon TLS server certificate deployments, you should test in v109 to confirm there's no impact. For more information and testing guidance, see [Changes to Microsoft Edge browser TLS server certificate verification](/deployedge/microsoft-edge-security-cert-verification). |
 
-<!-- earlier than the 10 most recent versions: -->
 ##### [Earlier versions](#tab/earlier)
 
-| Change | Stable Channel | Experimentation | Additional information |
+| Change | Stable channel | Experimentation | Additional information |
 | --- | --- | --- | --- |
 | Send CORS preflight requests for private network access | v104 | | Starting with v104, Microsoft Edge sends a CORS [preflight](https://developer.chrome.com/blog/private-network-access-preflight/) request before a page from the internet is allowed to request resources from a local network (intranet).  The intranet server should respond to the preflight by providing explicit permission to access the resource.  The result of this check is not yet enforced.  Enforcement will begin in v111 at the earliest.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see the [Chrome Platform Status entry](https://chromestatus.com/feature/5737414355058688) and [_Chrome Developers_ blog post](https://developer.chrome.com/blog/private-network-access-preflight/#rollout-plan).  Two compatibility policies are available to suppress the CORS preflight request: [InsecurePrivateNetworkRequestAllowed](/deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowed) and [InsecurePrivateNetworkRequestAllowedForUrls](/deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowedforurls). |
 | Block external protocols in sandboxed frames by default | v103 | | Blocks the use of external protocols (that interact with non-browser applications) from sandboxed iframes unless permission is explicitly granted by the `sandbox` attribute on the frame. This change is happening in the Chromium project, on which Microsoft Edge is based. For more information, see the [Chrome Platform Status entry](https://chromestatus.com/feature/5680742077038592). |
