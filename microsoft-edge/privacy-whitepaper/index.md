@@ -425,6 +425,7 @@ To control Image Descriptions, go to `edge://settings/accessibility`. Toggle the
 
 Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, right-click the webpage, and select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing. 
 
+
 <!-- ====================================================================== -->
 ## Import browser data
 
