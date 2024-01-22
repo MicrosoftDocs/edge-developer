@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 01/09/2024
+ms.date: 01/19/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -424,14 +424,6 @@ Only raw image data is sent to Azure Cognitive Services. Images are sent un-encr
 To control Image Descriptions, go to `edge://settings/accessibility`. Toggle the **Get image descriptions from Microsoft for screen readers** setting. 
 
 Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, right-click the webpage, and select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing. 
-
-
-<!-- ====================================================================== -->
-## Image Enhancement
-
-To provide a better browsing experience, Microsoft Edge offers Image Enhancement by improving color, lighting, contrast, and sharpness of images. When Image Enhancement is turned on, Microsoft Edge encrypts and transmits image URLs to Microsoft servers to perform image enhancement. No user identifiers are included in the requests to the servers. The image URL and enhanced image are cached for 7 days solely to improve performance. 
-
-To control Image Enhancement, go to `edge://settings/privacy` and turn on or off the **Enhance images in Microsoft Edge** setting. 
 
 
 <!-- ====================================================================== -->
