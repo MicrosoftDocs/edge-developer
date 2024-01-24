@@ -59,9 +59,9 @@ Advanced filtering capabilities were added to the Bottom-up, Call Tree, and Even
 ![Advanced filters in the Bottom-up, Call Tree, and Event Log tabs](./devtools-121-images/advanced-filters.png)
 
 <!-- ====================================================================== -->
-## Tooling for PWA
+## Tooling for PWA Window Controls Overlay
 
-<!-- Quickly identify and eliminate unused code with the improved source map support in the Coverage tool. -->
+<!-- Easily view window controls for your PWA without having to install it multiple times. -->
 
 We added a feature in the Application panel to help PWA developers see a preview of how their application handles window controls without having to install it and make the styling changes necessary to accommodate them. In the Application panel, under Manifest, the new section Window Controls Overlay give developers the ability to emulate window controls for Linux, macOS, and Windows.
 
