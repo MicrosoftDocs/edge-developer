@@ -42,6 +42,31 @@ In Microsoft Edge 121, the correct icon is now shown:
 See also:
 * [Sources tool overview](../../../sources/index.md)
 
+<!-- ====================================================================== -->
+## Added source map support in the Coverage tool
+
+<!-- Quickly identify and eliminate unused code with the improved source map support in the Coverage tool. -->
+
+Before Microsoft Edge 121, the Coverage tool only displayed information for generated files and omitted source files even when a source map was attached. We improved the Coverage tool so that when a generated file has a source map attached, it will display information for both the generated and source files.
+
+<!-- ====================================================================== -->
+## Advanced filtering capabilities in the Bottom-up, Call Tree, and Event Log tabs under Performance panel
+
+<!-- Use advanced filters in the Bottom-up, Call Tree, and Event Log tabs to avoid cluttered results. -->
+
+Advanced filtering capabilities were added to the Bottom-up, Call Tree, and Event Log tabs: "Match case", "Use regular expression", and "Match whole word". Also, in the Bottom-up tab, the filter was updated to now only apply to the top-level items, instead of matching every node.
+
+![Advanced filters in the Bottom-up, Call Tree, and Event Log tabs](./devtools-121-images/advanced-filters.png)
+
+<!-- ====================================================================== -->
+## Tooling for PWA
+
+<!-- Quickly identify and eliminate unused code with the improved source map support in the Coverage tool. -->
+
+We added a feature in the Application panel to help PWA developers see a preview of how their application handles window controls without having to install it and make the styling changes necessary to accommodate them. In the Application panel, under Manifest, the new section Window Controls Overlay give developers the ability to emulate window controls for Linux, macOS, and Windows.
+
+![Window Overlay Controls in Application panel](./devtools-121-images/PWA-window-controls.png)
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
