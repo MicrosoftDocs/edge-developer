@@ -4,7 +4,8 @@ description: "Z-index and DOM tabs in 3D View tool are now working. Correct Hide
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/25/2024
 ---
 # What's New in DevTools (Microsoft Edge 121)
