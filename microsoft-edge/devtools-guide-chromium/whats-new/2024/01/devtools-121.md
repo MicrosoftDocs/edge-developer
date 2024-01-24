@@ -18,7 +18,7 @@ ms.date: 01/25/2024
 
 <!-- Subtitle: In recent versions of Microsoft Edge, the Z-index and DOM tabs weren't working. In Microsoft Edge 121, this issue has been resolved. -->
 
-In recent versions of Microsoft Edge, there was a bug in the **3D View** panel that caused the **Z-index** and **DOM** tabs to not work correctly.  The tabs would crash or freeze and show the content for the **Composited Layers** tab instead.  This has been fixed in Microsoft Edge 121.
+In recent versions of Microsoft Edge, there was a bug in the **3D View** tool that caused the **Z-index** and **DOM** tabs to not work correctly.  The tabs would crash or freeze and show the content for the **Composited Layers** tab instead.  This has been fixed in Microsoft Edge 121.
 
 See also:
 * [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
