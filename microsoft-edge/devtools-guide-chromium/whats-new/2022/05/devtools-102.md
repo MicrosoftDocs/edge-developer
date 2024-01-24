@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 102)
+title: What's New in DevTools (Microsoft Edge 102)
 description: "DevTools extension: browser preview device/mode emulation and sourcemaps to debug/edit Sass/React.  Save heap snapshot strings to JSON.  Retainers filters in Memory tool.  Inspect tooltip persists.  Better high-contrast display.  Experiments have Help icons.  Improved Network tool layout. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/24/2022
 ---
 # What's New in DevTools (Microsoft Edge 102)
@@ -110,7 +111,7 @@ See also:
 ## Improved rendering of dropdown menus, buttons, and icons in high-contrast mode
 
 <!-- Title: Accessibility improvements for high contrast mode -->
-<!-- Subtitle: Dropdown menu in the Issues tool, buttons in the Detached Elements tool, and the activity bar in Focus Mode now display better in high contrast. -->
+<!-- Subtitle: Dropdown menu in the Issues tool, buttons in the Detached Elements tool, and the Activity Bar in Focus Mode now display better in high contrast. -->
 
 In previous versions of Microsoft Edge, the following items didn't render correctly in high-contrast mode:
 *  Dropdown menus in the **Issues** tool.

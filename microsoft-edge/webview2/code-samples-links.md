@@ -4,8 +4,8 @@ description: Sample apps for WebView2, for various frameworks or platforms inclu
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 08/29/2022
 ---
 # Sample apps

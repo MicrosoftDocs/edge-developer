@@ -4,7 +4,8 @@ description: How to use the Security panel in DevTools to make sure that a page 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/22/2023
 ---
 <!-- Copyright Kayce Basques
@@ -36,7 +37,7 @@ To open the **Security** tool:
 
 1. To open DevTools, right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, click the **Security** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, click the **Security** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
 
    The **Security** tool opens:
 

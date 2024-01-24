@@ -4,7 +4,8 @@ description: Use the Issues tool to identify and fix problems with the current w
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/25/2023
 ---
 <!-- Copyright Sam Dutton
@@ -68,7 +69,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 <!-- ------------------------------ -->
 #### Placement of Issues tool: Quick View or Activity Bar
 
-By default, such as from the Command Menu, the **Issues** tool opens in the **Quick View** panel.  You can instead open it in the Activity Bar, or move it to the Activity Bar: 
+By default, such as from the Command Menu, the **Issues** tool opens in the **Quick View** panel.  You can instead open it in the **Activity Bar**, or move it to the **Activity Bar**: 
 
 *  In the **Quick View** toolbar, right-click the **Inspect** tab and then select **Move to top Activity Bar** or **Move to left Activity Bar**.
 

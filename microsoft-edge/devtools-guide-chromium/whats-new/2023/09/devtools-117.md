@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 117)
+title: What's New in DevTools (Microsoft Edge 117)
 description: "New Experiment: Explain console errors/warnings with Copilot in Sidebar. Console has content when re-opened in Quick View. Accessibility fixes. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/14/2023
 ---
 # What's New in DevTools (Microsoft Edge 117)
@@ -36,7 +37,7 @@ See also:
 <!-- ====================================================================== -->
 ## Console has content when re-opened in Quick View
 
-Before Microsoft Edge 117, the Console was blank after closing and then re-opening the Console tool in Quick View (the secondary toolbar and panel in Focus Mode).  This issue has been resolved; the Console re-opens with the expected content.
+Before Microsoft Edge 117, the Console was blank after closing and then re-opening the Console tool in **Quick View** (the secondary toolbar and panel in Focus Mode).  This issue has been resolved; the Console re-opens with the expected content.
 
 
 <!-- ====================================================================== -->

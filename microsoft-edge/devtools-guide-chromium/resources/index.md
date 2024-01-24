@@ -4,7 +4,8 @@ description: Browse and inspect the resource files that make up a webpage, and f
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/30/2023
 ---
 <!-- Copyright Kayce Basques
@@ -67,7 +68,7 @@ In the **Network** tool, you can inspect the resource files that make up the cur
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Network** tab.  If that tab isn't visible, click the **More Tools** (![The 'More Tools' icon](./index-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Network** tab.  If that tab isn't visible, click the **More Tools** (![The 'More Tools' icon](./index-images/more-tools-icon-light-theme.png)) button.
 
 1. Make sure the **Record network log** button in the upper left is selected (red).
 
@@ -93,7 +94,7 @@ For example, to only display CSS files:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Network** tab.  If that tab isn't visible, click the **More Tools** (![The 'More Tools' icon](./index-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Network** tab.  If that tab isn't visible, click the **More Tools** (![The 'More Tools' icon](./index-images/more-tools-icon-light-theme.png)) button.
 
 1. Refresh the page.  By default, the **All** filter button is selected, so all the webpage's resource files are listed in the **Network** tool.
 
@@ -115,11 +116,11 @@ For example, to go from the **Page** tab's resource list in the **Sources** tool
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Network** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Network** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
 
 1. Press **Ctrl+R** to refresh the page.  The received resource files that make up the webpage are now added as rows in the **Network** tab.  The **network-tutorial/** folder row represents the HTML page - in this case, [index.html](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutoriql).
 
-1. In DevTools, on the Activity Bar, click the **Sources** tab.
+1. In DevTools, on the **Activity Bar**, click the **Sources** tab.
 
 1. In the **Page** tab in the upper left, right-click a resource file, and then select **Reveal in Network panel**:
 
@@ -135,7 +136,7 @@ You can use the **Sources** tool to view the webpage's resource files organized 
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Sources** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./index-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Sources** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./index-images/more-tools-icon-light-theme.png)) button.
 
 1. In the **Navigator** pane in the upper left, select the **Page** tab.
 
@@ -167,7 +168,7 @@ By default, the **Page** tab in the **Sources** tool groups resource files by fo
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Sources** tab.  If that tab isn't visible, click the **More tools** (![The More tools icon](./index-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Sources** tab.  If that tab isn't visible, click the **More tools** (![The More tools icon](./index-images/more-tools-icon-light-theme.png)) button.
 
 1. In the **Navigator** pane in the upper left, select the **Page** tab.
 
@@ -187,7 +188,7 @@ One way to view webpage resources grouped by file type is by using the **Frames*
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Application** tab.  If that tab isn't visible, click the **More Tools** (![The More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Application** tab.  If that tab isn't visible, click the **More Tools** (![The More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
 
    The **Application** tool opens and by default shows the **Manifest** pane first:
    

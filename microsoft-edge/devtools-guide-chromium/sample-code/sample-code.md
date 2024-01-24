@@ -4,7 +4,8 @@ description: Sample code for Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 02/01/2023
 ---
 # Sample code for DevTools
@@ -187,7 +188,7 @@ To clone the repo:
 
    ![Cloning the MicrosoftEdge/Demos repo](./sample-code-images/clone-repo.png)
 
-1. In Visual Studio Code, in the Activity Bar, click the **Source Control** (![Source Control icon](./sample-code-images/source-control-icon.png)) button, and then click the **Clone Repository** button.
+1. In Visual Studio Code, in the **Activity Bar**, click the **Source Control** (![Source Control icon](./sample-code-images/source-control-icon.png)) button, and then click the **Clone Repository** button.
 
 1. In the **Provide repository URL** text box, paste the copied URL: **https://github.com/MicrosoftEdge/Demos.git** and then press **Enter**.  A folder selection dialog opens.
 
@@ -301,7 +302,7 @@ To open an `.html` file and edit it:
 
 After downloading or cloning the Demos repo:
 
-1. In Visual Studio Code, in the Activity Bar, click the **Explorer** (![Explorer icon](./sample-code-images/explorer-icon.png)) button.  The **Explorer** pane opens.
+1. In Visual Studio Code, in the **Activity Bar**, click the **Explorer** (![Explorer icon](./sample-code-images/explorer-icon.png)) button.  The **Explorer** pane opens.
 
 1. In the **Explorer** pane, click the **Open Folder** button.  The **Open Folder** dialog opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
 

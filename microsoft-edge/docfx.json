@@ -40,13 +40,6 @@
       "uhfHeaderId": "MSDocsHeader-MSEdge"
     },
     "fileMetadata": {
-      "ms.technology":{
-        "devtools-guide-chromium/**.md": "devtools",
-        "devtools-protocol/**.md": "devtools",
-        "extensions-chromium/**.md": "extensions",
-        "webview2/**.md": "webview2",
-        "progressive-web-apps-chromium/**.md": "pwa"
-      }
     },
     "template": [
       "docs.html"

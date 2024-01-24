@@ -4,8 +4,8 @@ description: Service Workers are Web Workers that help improve performance, resp
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 11/28/2022
 ---
 # Use Service Workers to manage network requests

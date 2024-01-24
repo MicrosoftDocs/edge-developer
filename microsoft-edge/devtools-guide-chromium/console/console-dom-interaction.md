@@ -4,7 +4,8 @@ description: How to interact with the current webpage in the browser by using th
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/18/2023
 ---
 # Interact with the DOM using the Console

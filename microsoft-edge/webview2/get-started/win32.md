@@ -4,8 +4,8 @@ description: Get started building WebView2 for Win32 by working with sample apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 07/29/2022
 ---
 # Get started with WebView2 in Win32 apps

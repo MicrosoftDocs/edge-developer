@@ -4,8 +4,8 @@ description: This WebView2 sample demonstrates creating an application that embe
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 06/14/2022
 ---
 # Win32 sample app with Visual Composition

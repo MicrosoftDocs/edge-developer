@@ -4,7 +4,8 @@ description: Emulate the print CSS media on your webpage to debug your print sty
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/29/2023
 ---
 <!-- Copyright Kayce Basques

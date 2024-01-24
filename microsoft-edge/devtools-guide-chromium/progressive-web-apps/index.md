@@ -4,7 +4,8 @@ description: Use the Application panel to inspect, modify, and debug web app man
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/12/2023
 ---
 <!-- Copyright Kayce Basques

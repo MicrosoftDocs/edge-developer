@@ -4,8 +4,8 @@ description: A WebView2 sample demonstrating how to use a WiX Burn Bundle to dep
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2022
 
 ---

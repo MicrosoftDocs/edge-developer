@@ -4,7 +4,8 @@ description: The Performance monitor tool in DevTools provides real-time perform
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/22/2023
 ---
 # Measure runtime performance of a page using the Performance monitor tool
@@ -24,7 +25,7 @@ To open the **Performance monitor** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Performance monitor** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./performance-monitor-tool-images/more-tools-icon-light-theme.png)) button:
+1. In DevTools, on the **Activity Bar**, select the **Performance monitor** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./performance-monitor-tool-images/more-tools-icon-light-theme.png)) button:
 
 ![The More Tools menu, showing the Performance monitor menu command](./performance-monitor-tool-images/open.png)
 

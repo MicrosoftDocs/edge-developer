@@ -4,7 +4,8 @@ description: How to use the Source Maps Monitor tool in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/05/2023
 ---
 # Source Maps Monitor tool
@@ -57,4 +58,4 @@ The **Source Maps Monitor** tool shows which URL lookups have or haven't been at
 * [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../javascript/consume-source-maps-from-azure.md)
-* [Sources tool now notifies you when sourcemaps can't be loaded](../whats-new/2021/11/devtools.md#sources-tool-now-notifies-you-when-sourcemaps-cant-be-loaded) in _What's new in DevTools (Microsoft Edge 96)_.
+* [Sources tool now notifies you when sourcemaps can't be loaded](../whats-new/2021/11/devtools.md#sources-tool-now-notifies-you-when-sourcemaps-cant-be-loaded) in _What's New in DevTools (Microsoft Edge 96)_.

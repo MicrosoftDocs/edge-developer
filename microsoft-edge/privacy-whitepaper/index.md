@@ -1,13 +1,13 @@
 ---
 title: Microsoft Edge Privacy Whitepaper
-description: Microsoft Edge Privacy Whitepaper.
+description: Privacy aspects of features of Microsoft Edge, including how your data is shared with Microsoft and how to change settings for this data sharing.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 12/14/2023
+ms.date: 01/19/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -308,7 +308,7 @@ Microsoft Edge supports a variety of first-party enterprise security and complia
 | Microsoft Insider Risk Management | [Insider risk management](/microsoft-365/compliance/insider-risk-management-solution-overview)|
 | Microsoft Edge management service | [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) |
 
-<!-- todo (Aug 2023): when the forthcoming anchor link section like https://learn.microsoft.com/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview exists in destination page, replace row by:
+<!-- todo (Aug 2023): when the forthcoming anchor link section like https://learn.microsoft.com/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview exists in destination page, replace the "Microsoft Defender for Cloud Apps (Preview)" row by:
 | Microsoft Defender for Cloud Apps | [Integration with Microsoft Edge for business preview](/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview) in _Session policies_ |
 -->
 
@@ -407,6 +407,14 @@ When you browse the web using **InPrivate**, the **Ask** and **Block** permissio
 
 
 <!-- ====================================================================== -->
+## History
+
+History supports views to display images of your web navigations and enhance your history experience.  All history data is stored locally on the device, and is organized per Microsoft Edge profile.  Images are saved for the duration the history exists (90 days).
+
+If you want Microsoft Edge not to capture images for your history, select the **Turn off images** button in the history hub.  Or, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Save screenshots of site for History**.  All previously saved images will be erased.
+
+
+<!-- ====================================================================== -->
 ## Image descriptions
 
 When browsing the web in Microsoft Edge, screen reader users may encounter images that are not annotated with alt text. Without alt text to describe these images, they are effectively invisible to screen reader users. When Image Descriptions is turned on, Microsoft Edge will detect these images without alt text and send them to Azure Cognitive Services to generate captions. The generated captions are then announced to screen reader users. Even when **Get image descriptions from Microsoft for screen readers** is turned on, images are only sent to the service when a screen reader (or other assistive technology) is connected to Microsoft Edge. 
@@ -416,14 +424,6 @@ Only raw image data is sent to Azure Cognitive Services. Images are sent un-encr
 To control Image Descriptions, go to `edge://settings/accessibility`. Toggle the **Get image descriptions from Microsoft for screen readers** setting. 
 
 Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, right-click the webpage, and select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing. 
-
-
-<!-- ====================================================================== -->
-## Image Enhancement
-
-To provide a better browsing experience, Microsoft Edge offers Image Enhancement by improving color, lighting, contrast, and sharpness of images. When Image Enhancement is turned on, Microsoft Edge encrypts and transmits image URLs to Microsoft servers to perform image enhancement. No user identifiers are included in the requests to the servers. The image URL and enhanced image are cached for 7 days solely to improve performance. 
-
-To control Image Enhancement, go to `edge://settings/privacy` and turn on or off the **Enhance images in Microsoft Edge** setting. 
 
 
 <!-- ====================================================================== -->
@@ -1027,10 +1027,14 @@ To turn off all spelling and grammar capabilities:
 1. Go to `edge://settings/languages`.
 1. Turn off the **Use writing assistance** toggle.
 
+
+<!-- ------------------------------ -->
 #### Languages
 
 When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device over HTTPS. The dictionary is used for the basic spellcheck service or for languages that aren't supported by Microsoft Editor spelling and grammar checking. Deleting the language from your Microsoft Edge settings deletes the dictionary from the device. 
  
+
+<!-- ------------------------------ -->
 #### Text prediction 
 
 Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press **Tab** or the **Right Arrow** key to accept them. Password fields will not offer text predictions.
@@ -1048,6 +1052,29 @@ If you are browsing while using **InPrivate** or **Guest** mode, text prediction
 If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.  
 
 Text prediction is only available in select languages and regions.
+
+
+<!-- ------------------------------ -->
+#### Windows Ink
+
+Windows Ink allows you to write with a digital pen directly into an input field on Windows 11 touch devices.  This helps you stay in your workflow by reducing the need to switch back and forth between the keyboard and a digital pen.  Supported fields include text boxes, `contenteditable` elements, and the Address bar.  Password fields are not supported.
+
+Windows Ink supports the following writing tasks:
+
+| Task | How to accomplish | Before | After |
+|---|---|---|---|
+| Insert text | Write in or near the text box. | ![Insert text (before)](./index-images/windows-ink-add-text-before.png) | ![Insert text (after)](./index-images/windows-ink-add-text-after.png) |
+| Delete text | Scribble over the words that you want to delete. | ![Delete text (before)](./index-images/windows-ink-delete-text-before.png) | ![Delete text (after)](./index-images/windows-ink-delete-text-after.png)|
+| Add space | Draw a vertical line where you want a space to be inserted. | ![Add space (before)](./index-images/windows-ink-insert-space-before.png) | ![Add space (after)](./index-images/windows-ink-insert-space-after.png) |
+| Remove space | Draw a vertical line on the space that you want to remove. | ![Remove space (before)](./index-images/windows-ink-remove-space-before.png) | ![Remove space (after)](./index-images/windows-ink-remove-space-after.png) |
+| Select text | Draw a horizontal line across the text to select. | ![Select text (before)](./index-images/windows-ink-select-text-before.png) | ![Select text (after)](./index-images/windows-ink-select-text-after.png) |
+| Add newline | Draw a "backwards L" at the end of a line of text. | ![Add newline (before)](./index-images/windows-ink-add-newline-before.png) | ![Add newline (after)](./index-images/windows-ink-add-newline-after.png) |
+
+Aggregate feature usage data is collected to measure frequency of usage and latency.  Text that you've inputted and personal identifiers are not sent to Microsoft.
+
+To opt out of Windows Ink for Microsoft Edge, go to `edge://settings/content/HandwritingToText`, and then in the **Site permissions > Handwriting To Text** section, turn off the **Turn handwriting into text on input fields** toggle.
+
+To disable Windows Ink for an entire Windows device, go to **Settings > Bluetooth & devices > Pen & Windows Ink > Shell Handwriting**, and then turn off the **Use your handwriting to enter text** toggle.
 
 
 <!-- ====================================================================== -->

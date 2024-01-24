@@ -4,7 +4,8 @@ description: Snippets are small scripts that you can author and run within the S
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/17/2023
 ---
 <!-- Copyright Kayce Basques
@@ -63,7 +64,7 @@ To open the **Snippets** tab:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**. Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS). DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Sources** tab. If that tab isn't visible, click the **More tools** (![More tools icon](./snippets-images/more-tools-icon.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Sources** tab. If that tab isn't visible, click the **More tools** (![More tools icon](./snippets-images/more-tools-icon.png)) button.
 
    ![The Sources tool with the Page tab open on the left](./snippets-images/sources-tool-page-pane.png)
 

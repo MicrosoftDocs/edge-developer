@@ -4,7 +4,8 @@ description: Use the Network request blocking tool in Microsoft Edge DevTools to
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/23/2013
 ---
 # Network request blocking tool
@@ -25,7 +26,7 @@ To block a network request:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, on the Activity Bar, click the **Network request blocking** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./network-request-blocking-tool-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, click the **Network request blocking** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./network-request-blocking-tool-images/more-tools-icon-light-theme.png)) button.
 
 1. Click the **Add pattern** (![Add pattern icon](./network-request-blocking-tool-images/add-pattern-icon.png)) button.  The **Enable network request blocking** checkbox is automatically selected.
 
@@ -101,7 +102,7 @@ To block network requests by using the **Network** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, click the **Network** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./network-request-blocking-tool-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, click the **Network** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./network-request-blocking-tool-images/more-tools-icon-light-theme.png)) button.
 
 1. In the table of network requests in the bottom pane, find the network request that you want to block.
 

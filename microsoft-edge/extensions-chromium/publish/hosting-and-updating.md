@@ -4,7 +4,8 @@ description: Host and publish Microsoft Edge extensions in the enterprise.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 12/18/2023
 ---
 # Extension hosting

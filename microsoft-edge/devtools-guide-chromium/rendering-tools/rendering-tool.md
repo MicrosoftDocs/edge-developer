@@ -4,7 +4,8 @@ description: Using the Rendering tool in Microsoft Edge DevTools, to see what a 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/29/2023
 ---
 # Rendering tool, to see what a webpage looks like with different display options or vision deficiencies

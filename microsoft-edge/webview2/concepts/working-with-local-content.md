@@ -4,8 +4,8 @@ description: Ways to work with local content in WebView2 apps, including navigat
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 01/10/2023
 ---
 # Working with local content in WebView2 apps

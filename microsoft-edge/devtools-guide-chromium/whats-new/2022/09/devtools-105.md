@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 105)
+title: What's New in DevTools (Microsoft Edge 105)
 description: "Focus Mode: Improved location controls for DevTools, Activity Bar, Quick View, and Improved reliability in Issues tool. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/01/2022
 ---
 # What's New in DevTools (Microsoft Edge 105)

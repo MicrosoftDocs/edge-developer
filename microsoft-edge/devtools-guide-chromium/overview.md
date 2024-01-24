@@ -4,8 +4,8 @@ description: Get to know the Microsoft Edge Developer Tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/17/2023
 ---
 # Overview of DevTools
@@ -393,7 +393,7 @@ Includes information about the new features of DevTools, how to contact the team
 
 Allows you to inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.
 
-The **Elements** tool is always present on the Activity Bar.
+The **Elements** tool is always present on the **Activity Bar**.
 
 
 <!-- ------------------------------ -->
@@ -404,7 +404,7 @@ In the **Console** tool, you can:
 *  View and filter logged messages from network requests or from JavaScript log statements.
 *  Enter JavaScript statements to evaluate in realtime.  Expressions are evaluated in the current context, such as when the JavaScript debugger in the **Sources** tool is paused at a breakpoint.
 
-The **Console** tool is always present on the Activity Bar and on the **Quick View** toolbar.
+The **Console** tool is always present on the **Activity Bar** and on the **Quick View** toolbar.
 
 See [Console](console/index.md).
 
@@ -414,7 +414,7 @@ See [Console](console/index.md).
 
 The [Sources](sources/index.md) tool is a code editor and JavaScript debugger.  You can edit projects, maintain snippets, and debug your current project.
 
-The **Sources** tool is always present on the Activity Bar.
+The **Sources** tool is always present on the **Activity Bar**.
 
 
 <!-- ------------------------------ -->

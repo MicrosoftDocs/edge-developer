@@ -4,7 +4,8 @@ description: The Application tool, to manage storage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/17/2023
 ---
 # Application tool, to manage storage

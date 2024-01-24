@@ -4,8 +4,8 @@ description: How to develop secure WebView2 applications.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 10/14/2020
 ---
 # Develop secure WebView2 apps

@@ -4,7 +4,8 @@ description: New features and fixes in older releases of Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/25/2024
 ---
 # What's New in DevTools archive

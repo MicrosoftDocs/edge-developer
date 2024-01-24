@@ -4,7 +4,8 @@ description: Use virtual devices in Microsoft Edge to build mobile-first website
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/20/2023
 ---
 <!-- Copyright Kayce Basques
@@ -63,7 +64,7 @@ To open the UI that enables you to simulate a mobile viewport:
 
 1. Open DevTools.  For example, right-click in a webpage and then select **Inspect**.
 
-1. In the Activity Bar, click the **Toggle device emulation** (![Toggle Device Toolbar](./index-images/toggle-device-toolbar-dark-icon.png)) button.  Or, in DevTools, select **Customize and control DevTools** (`...`) > **Device Emulation**:
+1. In the **Activity Bar**, click the **Toggle device emulation** (![Toggle Device Toolbar](./index-images/toggle-device-toolbar-dark-icon.png)) button.  Or, in DevTools, select **Customize and control DevTools** (`...`) > **Device Emulation**:
 
    ![The Device Toolbar](./index-images/device-toolbar-highlighted.png)
 

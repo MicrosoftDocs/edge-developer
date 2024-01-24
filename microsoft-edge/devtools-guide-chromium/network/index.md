@@ -4,7 +4,8 @@ description: A tutorial on the most popular network-related features in Microsof
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/11/2023
 ---
 <!-- Copyright Kayce Basques

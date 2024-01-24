@@ -4,7 +4,8 @@ description: Discover new debugging workflows in this comprehensive reference of
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/26/2023
 ---
 <!-- Copyright Kayce Basques
@@ -39,7 +40,7 @@ To view and edit a JavaScript file:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Sources** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Sources** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
 
 1. In the **Navigator** pane, select the file you want to change, to open it in the **Editor** pane. If you're using the demo page, select **get-started.js**.
 
@@ -75,7 +76,7 @@ To set a line-of-code breakpoint:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Sources** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Sources** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
 
 1. In the **Navigator** pane, select the file that contains the line of code you want to debug. If you're using the demo page, select **get-started.js**.
 

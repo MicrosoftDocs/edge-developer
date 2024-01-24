@@ -4,7 +4,8 @@ description: About the list of tools in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/17/2023
 ---
 # About the list of tools

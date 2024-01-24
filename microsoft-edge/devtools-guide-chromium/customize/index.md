@@ -4,7 +4,8 @@ description: A list of ways to customize Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/17/2023
 ---
 <!-- Copyright Kayce Basques
@@ -60,7 +61,7 @@ You can move tools between the **Activity Bar** (at the top) and the **Quick Vie
 
 To change the ordering of tabs on a toolbar, drag a tool's tab to the desired location.  Your custom tool order persists across DevTools sessions.
 
-For example, by default, the **Network** tool is the fifth tab on the Activity Bar.  You can drag the **Network** tab to become the first tab:
+For example, by default, the **Network** tool is the fifth tab on the **Activity Bar**.  You can drag the **Network** tab to become the first tab:
 
 ![Custom order of DevTools in a toolbar](./index-images/network-first-position.png)
 

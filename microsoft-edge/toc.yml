@@ -1152,7 +1152,7 @@
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: WebView2
       items:
-        - name: Introduction to Microsoft Edge WebView2  # existing firstchild article
+        - name: Introduction to Microsoft Edge WebView2
           href: webview2/index.md
           displayName: 
 
@@ -1679,6 +1679,30 @@
         - name: Accessibility testing
           href: accessibility/test.md
           displayName: 
+
+#==============================================================================
+# DualEngine
+    - name: DualEngine
+      items:
+        - name: Introduction to the Microsoft DualEngine API
+          href: dualengine/intro.md
+          displayName: Internet Explorer
+
+        - name: Getting started with the DualEngine API
+          href: dualengine/get-started.md
+          displayName:
+
+        - name: Creating a DualEngine adapter plugin DLL
+          href: dualengine/concepts/adapter-dll.md
+          displayName: 
+
+        - name: Launching Internet Explorer
+          href: dualengine/concepts/launching-internet-explorer.md
+          displayName:
+
+        - name: DualEngine Win32 C++ Reference
+          href: dualengine/reference/index.md
+          displayName: functions, methods
 
 # =============================================================================
 # bottom leaf nodes

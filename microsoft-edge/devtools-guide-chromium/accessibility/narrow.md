@@ -4,7 +4,8 @@ description: Verifying that the webpage layout is usable when narrow, as part of
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/04/2023
 ---
 # Verify that the webpage layout is usable when narrow
