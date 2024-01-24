@@ -48,7 +48,6 @@ See also:
 
 Microsoft Edge 121 also includes the following updates from the Chromium project:
 
-<!-- todo: maybe delete some links -->
 * [Elements improvements](https://developer.chrome.com/blog/new-in-devtools-121#elements)
    * [@font-palette-values support](https://developer.chrome.com/blog/new-in-devtools-121#font-palette)
    * [Supported case: Custom property as a fallback of another custom property](https://developer.chrome.com/blog/new-in-devtools-121#custom-fallback)
@@ -60,9 +59,7 @@ Microsoft Edge 121 also includes the following updates from the Chromium project
 * [Helpful tooltips for overridden headers and content in the Network panel](https://developer.chrome.com/blog/new-in-devtools-121#overrides)
 * [New Command Menu options for adding and removing request blocking patterns](https://developer.chrome.com/blog/new-in-devtools-121#command-menu)
 * [The CSP violations experiment is removed](https://developer.chrome.com/blog/new-in-devtools-121#csp-violations)
-* [Lighthouse 11.3.0](https://developer.chrome.com/blog/new-in-devtools-121#lighthouse)
 * [Accessibility](https://developer.chrome.com/blog/new-in-devtools-121#accessibility)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-121#misc)
 
 
 <!-- ====================================================================== -->
