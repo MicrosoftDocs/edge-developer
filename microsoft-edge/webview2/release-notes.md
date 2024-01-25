@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/18/2024
+ms.date: 01/25/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -153,8 +153,14 @@ Release Date: January 25, 2024
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 121.0.2277.82 or higher.
 
+
+<!-- ------------------------------ -->
 #### Promotions
 
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
+
+<!-- ------------------------------ -->
 * `ExecuteScriptWithResult` provides exception information if the script failed.  `TryGetResultAsString` gets the script execution result as a string rather than as JSON, to make it more convenient to interact with string results:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -221,13 +227,13 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 <!-- ------------------------------ -->
 #### Bug fixes
 
-* Ensure spellcheck language match put_Language programmatically and customized context menu is also updated with correct spellchecks
+* Ensured that the spellcheck language matches `put_Language` programmatically.  The customized context menu is also updated with correct spellchecks.
 
-* Fixed a bug that stopped raising NavigationCompleted event for some websites that loads AV1 encoded videos. (Runtime-only)  ([Issue #3801](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3801))
+* Fixed a bug that stopped raising the `NavigationCompleted` event for some websites that load AV1-encoded videos.  (Runtime-only)  ([Issue #3801](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3801))
 
-* Fixed an issue where host process COM resources would be released during WebView tear down. (Runtime-only) ([Issue #4226](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4226))
+* Fixed an issue where host-process COM resources would be released during WebView tear-down.  (Runtime-only)  ([Issue #4226](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4226))
 
-* Fixed a bug that broke to load some social media apps like Facebook, Twitter and Linkedin. This change is Runtime-specific. (Runtime-only) ([Issue #4281](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4281))
+* Fixed a bug that broke loading some social media apps such as Facebook, Twitter, and Linkedin.  This change is Runtime-specific.  (Runtime-only)  ([Issue #4281](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4281))
 
 
 <!-- end of Jan 2024 Release SDK -->
