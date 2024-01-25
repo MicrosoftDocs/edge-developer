@@ -42,30 +42,49 @@ In Microsoft Edge 121, the correct icon is now shown:
 See also:
 * [Sources tool overview](../../../sources/index.md)
 
+
 <!-- ====================================================================== -->
 ## Added source map support in the Coverage tool
 
-<!-- Quickly identify and eliminate unused code with the improved source map support in the Coverage tool. -->
+<!-- Subtitle: Quickly identify and eliminate unused code with the improved source map support in the Coverage tool. -->
 
-Before Microsoft Edge 121, the Coverage tool only displayed information for generated files and omitted source files even when a source map was attached. We improved the Coverage tool so that when a generated file has a source map attached, it will display information for both the generated and source files.
+Before Microsoft Edge 121, the **Coverage** tool only displayed information for generated files, and omitted source files even when a source map was attached.  The **Coverage** tool has now been improved so that when a generated file has a source map attached, the **Coverage** tool displays information for the source file as well as for the generated file.
+
+See also:
+* [Find unused JavaScript and CSS code with the Coverage tool](../../../coverage/)
+
 
 <!-- ====================================================================== -->
-## Advanced filtering capabilities in the Bottom-up, Call Tree, and Event Log tabs under Performance panel
+## Advanced filtering capabilities in the Bottom-Up, Call Tree, and Event Log tabs in the Performance tool
 
-<!-- Use advanced filters in the Bottom-up, Call Tree, and Event Log tabs to avoid cluttered results. -->
+<!-- Subtitle: Use advanced filters (Match Case, Use Regular Expression, and Match whole word) in the Performance tool's Bottom-Up, Call Tree, and Event Log tabs, to give more focused results. -->
 
-Advanced filtering capabilities were added to the Bottom-up, Call Tree, and Event Log tabs: "Match case", "Use regular expression", and "Match whole word". Also, in the Bottom-up tab, the filter was updated to now only apply to the top-level items, instead of matching every node.
+In the **Performance** tool, the following advanced filtering buttons were added to the **Bottom-Up**, **Call Tree**, and **Event Log** tabs:
+* **Match Case**.
+* **Use Regular Expression**.
+* **Match whole word**.
 
-![Advanced filters in the Bottom-up, Call Tree, and Event Log tabs](./devtools-121-images/advanced-filters.png)
+![The 'Match Case', 'Use Regular Expression', and 'Match whole word' buttons in the Performance tool's Bottom-Up, Call Tree, and Event Log tabs](./devtools-121-images/advanced-filters.png)
+
+Also, in the **Bottom-Up** tab, the filter has been updated to now only apply to the top-level items, instead of matching every node.
+
+See also:
+* [Introduction to the Performance tool](../../../evaluate-performance/index.md)
+
 
 <!-- ====================================================================== -->
 ## Tooling for PWA
 
-<!-- Quickly identify and eliminate unused code with the improved source map support in the Coverage tool. -->
+<!-- Subtitle: todo. -->
 
-We added a feature in the Application panel to help PWA developers see a preview of how their application handles window controls without having to install it and make the styling changes necessary to accommodate them. In the Application panel, under Manifest, the new section Window Controls Overlay give developers the ability to emulate window controls for Linux, macOS, and Windows.
+The **Application** tool has a new **Window Controls Overlay** section under **Manifest**, to help PWA developers see a preview of how their application handles window controls, without having to install the PWA and make the styling changes that are necessary to accommodate window controls:
 
-![Window Overlay Controls in Application panel](./devtools-121-images/PWA-window-controls.png)
+![The 'Window Overlay Controls' section in the Application tool](./devtools-121-images/PWA-window-controls.png)
+
+Use the **Window Controls Overlay** section to emulate window controls for Linux, macOS, and Windows.
+
+See also:
+* [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
 <!-- ====================================================================== -->
