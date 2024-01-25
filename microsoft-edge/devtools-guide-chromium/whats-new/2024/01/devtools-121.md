@@ -51,7 +51,7 @@ See also:
 Before Microsoft Edge 121, the **Coverage** tool only displayed information for generated files, and omitted source files even when a source map was attached.  The **Coverage** tool has now been improved so that when a generated file has a source map attached, the **Coverage** tool displays information for the source file as well as for the generated file.
 
 See also:
-* [Find unused JavaScript and CSS code with the Coverage tool](../../../coverage/)
+* [Find unused JavaScript and CSS code with the Coverage tool](../../../coverage/index.md)
 
 
 <!-- ====================================================================== -->
