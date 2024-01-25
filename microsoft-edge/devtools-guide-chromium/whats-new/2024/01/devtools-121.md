@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 121)
-description: "Z-index and DOM tabs in 3D View tool are now working. Correct Hide debugger or Show debugger icon is shown in Sources tool. And more."
+description: "Z-index and DOM tabs in 3D View tool working correctly. Correct Hide debugger or Show debugger icon in Sources tool. Source map support in Coverage tool. Advanced filtering in Bottom-Up, Call Tree, and Event Log tabs in Performance tool. Window Controls Overlay section for PWAs, in Application tool's Manifest section. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -74,6 +74,10 @@ See also:
 
 <!-- ====================================================================== -->
 ## Tooling for PWA Window Controls Overlay
+<!-- todo: alts:
+## Application tool's Manifest section adds a Window Controls Overlay section for PWAs
+## Window Controls Overlay section for PWAs, in Application tool's Manifest section
+-->
 
 <!-- Subtitle: Easily view window controls for your PWA without having to install it multiple times. -->
 
@@ -81,7 +85,7 @@ The **Application** tool has a new **Window Controls Overlay** section under **M
 
 ![The 'Window Overlay Controls' section in the Application tool](./devtools-121-images/PWA-window-controls.png)
 
-Use the **Window Controls Overlay** section to emulate window controls for Linux, macOS, and Windows.
+Use the **Window Controls Overlay** section to emulate window controls for Windows, Linux, and macOS.
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
