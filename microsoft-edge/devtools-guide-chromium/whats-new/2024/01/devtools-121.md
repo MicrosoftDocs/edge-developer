@@ -73,9 +73,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Tooling for PWA
+## Tooling for PWA Window Controls Overlay
 
-<!-- Subtitle: todo. -->
+<!-- Subtitle: Easily view window controls for your PWA without having to install it multiple times. -->
 
 The **Application** tool has a new **Window Controls Overlay** section under **Manifest**, to help PWA developers see a preview of how their application handles window controls, without having to install the PWA and make the styling changes that are necessary to accommodate window controls:
 
