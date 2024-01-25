@@ -145,37 +145,26 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.2210.161
 
-Release Date: January nn, 2024
+Release Date: January 25, 2024
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.2210.161](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2210.161)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-
-<!-- ------------------------------ -->
-#### General features
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-No additional APIs have been promoted to Stable and added in this Release SDK.
-
-The following APIs have been promoted to Stable and are now included in this Release SDK.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 120.0.2210.161 or higher.
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
+
+* Ensure spellcheck language match put_Language programmatically and customized context menu is also updated with correct spellchecks
+
+* Fixed a bug that stopped raising NavigationCompleted event for some websites that loads AV1 encoded videos. (Runtime-only)  ([Issue #3801](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3801))
+
+* Fixed an issue where host process COM resources would be released during WebView tear down. (Runtime-only) ([Issue #4226](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4226))
+
+* Fixed a bug that broke to load some social media apps like Facebook, Twitter and Linkedin. This change is Runtime-specific. (Runtime-only) ([Issue #4281](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4281))
+
 
 <!-- end of Jan 2024 Release SDK -->
 
