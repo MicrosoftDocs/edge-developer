@@ -50,6 +50,22 @@ See also:
 
 Before Microsoft Edge 121, the **Coverage** tool only displayed information for generated files, and omitted source files even when a source map was attached.  The **Coverage** tool has now been improved so that when a generated file has a source map attached, the **Coverage** tool displays information for the source file as well as for the generated file.
 
+For example:
+
+1. Go to the [Slow Calendar demo page](https://microsoftedge.github.io/Demos/slow-calendar/public/).  (Source files: [https://github.com/MicrosoftEdge/Demos/tree/main/slow-calendar](https://github.com/MicrosoftEdge/Demos/tree/main/slow-calendar).)
+
+1. Right-click the webpage and then select **Inspect**.  DevTools opens.
+
+1. In DevTools, select **Customize and control DevTools** (![Settings icon](./devtools-121-images/settings-icon.png)) > **Run command**.  Or, press **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS).  The Command Menu opens.
+
+1. Start typing **show coverage**, and then select and run the **Show Coverage** command.  The **Coverage** tool opens in **Quick View** at the bottom of DevTools.
+
+1. In the **Coverage** tool, click the **Refresh** button (![Refresh icon](./devtools-121-images/refresh-coverage-icon.png)) (tooltip: **Start instrumenting coverage and refresh the page**).
+
+   Before Microsoft Edge 121, this coverage report contained only a single, static line, for the `bundle.js` file.  The `bundle.js` line in the coverage report can now be expanded to show all of the original source files that make up this compiled `bundle.js` file:
+
+![Coverage tool showing info for source-mapped source files as well as generated files](./devtools-121-images/coverage-tool.png)
+
 See also:
 * [Find unused JavaScript and CSS code with the Coverage tool](../../../coverage/index.md)
 
@@ -74,10 +90,6 @@ See also:
 
 <!-- ====================================================================== -->
 ## Tooling for PWA Window Controls Overlay
-<!-- todo: alts:
-## Application tool's Manifest section adds a Window Controls Overlay section for PWAs
-## Window Controls Overlay section for PWAs, in Application tool's Manifest section
--->
 
 <!-- Subtitle: Easily view window controls for your PWA without having to install it multiple times. -->
 

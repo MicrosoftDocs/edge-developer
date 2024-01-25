@@ -205,7 +205,7 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) to close **Settings**.
 
-1. Open the **Command Menu** (**Ctrl+Shift+P**), and then type **protocol** in the text box.
+1. Open the **Command Menu**, such as by pressing **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS), and then type **protocol** in the text box.
 
 1. Select **Show Protocol monitor**.  The message appears: "One or more settings have changed which requires a reload to take effect."
 
