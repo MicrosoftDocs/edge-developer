@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/18/2024
+ms.date: 01/25/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -147,14 +147,16 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ====================================================================== -->
 ## 1.0.2357-prerelease
 
+<!-- todo: update version number & date -->
+
 Release Date: January 25, 2024
 
 [NuGet package for WebView2 SDK 1.0.2357-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2357-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 122.0.2363.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 122.0.2363.0 or higher.
 
-<!-- todo:version number and date to be updated -->
 
+<!-- ------------------------------ -->
 #### Experimental APIs
 
 
@@ -199,7 +201,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 
 <!-- ---------- -->
-* Added a new API to provide hit testing results on the regions that it contains. This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
+* Added a new API to provide hit-testing results on the regions that it contains. This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -261,7 +263,7 @@ view=true#get_isnonclientregionsupportenabled)
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
-<!-- ---------- -->
+<!-- ------------------------------ -->
 * `CoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow you to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -285,8 +287,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ---
 
 
-<!-- ---------- -->
-* The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process. This API enables the host application to detect which part of WebView2 is consuming resources such as memory or CPU usage:
+<!-- ------------------------------ -->
+* The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process.  This API enables the host application to detect which part of WebView2 is consuming resources such as memory or CPU usage:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -363,7 +365,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ---
 
 
-<!-- ---------- -->
+<!-- ------------------------------ -->
 * `ExecuteScriptWithResult` provides exception information if the script failed.  `TryGetResultAsString` gets the script execution result as a string rather than as JSON, to make it more convenient to interact with string results:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -426,7 +428,8 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ---
 
-<!-- ---------- -->
+
+<!-- ------------------------------ -->
 * Adds the new `CoreWebView2.CreateFromComICoreWebView2` function for wrapping an existing `ICoreWebView2` object in a `CoreWebView2` to allow .NET devs to interact with an control created in C++.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -443,8 +446,9 @@ N/A
 
 ---
 
-<!-- ---------- -->
-* Support for browser extensions in WebView2. Added GetBrowserExtensions for WinRT
+
+<!-- ------------------------------ -->
+* Support for browser extensions in WebView2.  Added `GetBrowserExtensions` for WinRT:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -460,7 +464,8 @@ N/A
 
 ---
 
-<!-- ---------- -->
+
+<!-- ------------------------------ -->
 *  Added support for `WebResourceRequested` for workers which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iframes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -487,25 +492,23 @@ N/A
    
 ---
 
-<!-- ------------------------------ -->
 
+<!-- ------------------------------ -->
 #### Bug fixes
 
-* Fixed a bug where closing a WebView that has an embedded PDF viewer could lead to a crash. (Runtime-only)  ([Issue #3832](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3832))
+* Fixed a bug where closing a WebView control that has an embedded PDF viewer could lead to a crash.  (Runtime-only)  ([Issue #3832](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3832))
 
 * Fixed an issue where the WebView2 control in .NET was failing to find the `WebView2Loader.dll` on UNC paths.  (SDK-only)  ([Issue #4081](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4081))
 
-* Fixed issues with stacking of child process taskbar icons.  (Runtime-only)  ([Issue #3245](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3245))
+* Fixed issues with stacking of child-process taskbar icons.  (Runtime-only)  ([Issue #3245](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3245))
 
 * Fixed a bug that sent an unnecessary network request for Edge Cloud Config Service.  (Runtime-only)  ([Issue #4180](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4180))
 
 * Updated the behavior of the `app-region` CSS property so that changes to its value trigger a page re-layout.
 
-* Fixed an issue with put_AreBrowserAcceleratorKeysEnabled API not able to update settings for WebView2 when there isn't any AcceleratorKeyPressed event handler registered. (Runtime-only)  ([Issue #4278](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4278))
+* Fixed an issue where `put_AreBrowserAcceleratorKeysEnabled` wasn't able to update settings for WebView2 when no `AcceleratorKeyPressed` event handler is registered. (Runtime-only)  ([Issue #4278](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4278))
 
-* Fixed some issues causing InvalidOperationExceptions in the .NET controls that weren't helpful to developers. (SDK-only) ([Issue #4272](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4272))
-
-
+* Fixed some issues causing instances of `InvalidOperationException` in .NET controls, that weren't helpful to developers.  (SDK-only)  ([Issue #4272](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4272))
 
 <!-- end of Jan 2024 Prerelease SDK -->
 
