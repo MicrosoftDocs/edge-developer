@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/25/2024
+ms.date: 01/26/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -147,7 +147,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ====================================================================== -->
 ## 1.0.2277.82
 
-Release Date: January 25, 2024
+<!-- todo: update date & version numbers throughout entire section -->
+
+Release Date: January 26, 2024
 
 [NuGet package for WebView2 SDK 1.0.2277.82](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2277.82)
 
