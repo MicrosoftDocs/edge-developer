@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/25/2024
+ms.date: 01/26/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -149,7 +149,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 <!-- todo: update version number & date -->
 
-Release Date: January 25, 2024
+Release Date: January 26, 2024
 
 [NuGet package for WebView2 SDK 1.0.2357-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2357-prerelease)
 
@@ -261,12 +261,6 @@ view=true#get_isnonclientregionsupportenabled)
 #### Promotions
 
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-
-<!-- todo: add enum
-CoreWebView2WebResourceRequestSourceKinds - 5 hits below; copypaste
-COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS - 0 hits below (why 0? typo?)
--->
 
 
 <!-- ------------------------------ -->
@@ -436,11 +430,12 @@ COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS - 0 hits below (why 0? typo?)
 
 
 <!-- ------------------------------ -->
-* Adds the new `CoreWebView2.CreateFromComICoreWebView2` function for wrapping an existing `ICoreWebView2` object in a `CoreWebView2` to allow .NET devs to interact with an control created in C++.
+* `CreateFromComICoreWebView2` wraps an existing `ICoreWebView2` object in a `CoreWebView2` instance, to allow .NET devs to interact with an control that was created in C++.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
+
 * `CoreWebView2` Class:
-    * [CoreWebView2.CreateFromComICoreWebView2Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
+    * [CoreWebView2.CreateFromComICoreWebView2 Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.createfromcomicorewebview2?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -461,8 +456,7 @@ N/A
 N/A
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Profile Class](/microsoft-
-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true)
+* [CoreWebView2Profile Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true)
     * [CoreWebView2Profile.GetBrowserExtensionsAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true#getbrowserextensionsasync)
 
 ##### [Win32/C++](#tab/win32cpp)
@@ -476,15 +470,23 @@ N/A
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2.AddWebResourceRequestedFilter(RequestSourceKinds) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-addwebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))
-* [CoreWebView2.RemoveWebResourceRequestedFilter(RequestSourceKinds) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-removewebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))
+* `CoreWebView2` Class:
+   * [CoreWebView2.AddWebResourceRequestedFilter(RequestSourceKinds) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
+   * [CoreWebView2.RemoveWebResourceRequestedFilter(RequestSourceKinds) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
+
 * [CoreWebView2WebResourceRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
+
+<!-- todo: add enum url: -->
+* [CoreWebView2WebResourceRequestSourceKinds Enum]
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2.AddWebResourceRequestedFilter(requestSourceKinds) Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true#addwebresourcerequestedfilter)
 * [CoreWebView2.RemoveWebResourceRequestedFilter(requestSourceKinds) Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true#removewebresourcerequestedfilter)
 * [CoreWebView2WebResourceRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true)
+
+<!-- todo: add enum url: -->
+* [CoreWebView2WebResourceRequestSourceKinds Enum]
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -495,6 +497,9 @@ N/A
 * [ICoreWebView2WebResourceRequestedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs2?view=webview2-1.0.2357-prerelease&preserve-view=true)
     * [ICoreWebView2WebResourceRequestedEventArgs2::get_RequestedSourceKind](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs2?view=webview2-1.0.2357-prerelease&preserve-view=true#get_requestedsourcekind)
     * [ICoreWebView2WebResourceRequestedEventArgs2::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs2?view=webview2-1.0.2357-prerelease&preserve-view=true#invoke)
+
+<!-- todo: add enum url: -->
+* [COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS enum]
    
 ---
 
