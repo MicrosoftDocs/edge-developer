@@ -263,6 +263,12 @@ view=true#get_isnonclientregionsupportenabled)
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
+<!-- todo: add enum
+CoreWebView2WebResourceRequestSourceKinds - 5 hits below; copypaste
+COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS - 0 hits below (why 0? typo?)
+-->
+
+
 <!-- ------------------------------ -->
 * `CoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow you to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
 
@@ -929,6 +935,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+
+<!-- ---------- -->
 * Added the `FailureSourceModulePath` property to the `ProcessFailedEventArgs` type, to specify the full path of the module that caused the crash in cases of Windows code integrity failures - that is, when a process exited with `STATUS_INVALID_IMAGE_HASH`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
