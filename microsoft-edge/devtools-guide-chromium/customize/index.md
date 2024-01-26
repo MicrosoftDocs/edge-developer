@@ -65,6 +65,8 @@ For example, by default, the **Network** tool is the fifth tab on the **Activity
 
 ![Custom order of DevTools in a toolbar](./index-images/network-first-position.png)
 
+Tabs added by DevTools extensions are always added to the end of the **Activity Bar**.  You can reorder them, but they will always be moved to the end of the **Activity Bar** when DevTools is opened.
+
 
 <!-- ====================================================================== -->
 ## Open and close tools
