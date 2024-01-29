@@ -51,7 +51,7 @@ To activate and use the Source Order Viewer, with the demo page:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Elements** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./test-tab-key-source-order-viewer-images/more-tools-icon.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Elements** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./test-tab-key-source-order-viewer-images/more-tools-icon.png)) button.
 
 1. In the **Elements** tool, to the right of the **Styles** tab, select the **Accessibility** tab.
 

@@ -30,7 +30,7 @@ To simulate how a person with a vision deficiency would see your webpage, use th
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **Rendering** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./emulate-vision-deficiencies-images/more-tools-icon.png)) button. The **Rendering** tool opens.
+1. In DevTools, on the **Activity Bar**, select the **Rendering** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./emulate-vision-deficiencies-images/more-tools-icon.png)) button. The **Rendering** tool opens.
 
 1. Scroll down to the **Emulate vision deficiencies** section:
 
