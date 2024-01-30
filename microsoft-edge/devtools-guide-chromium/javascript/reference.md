@@ -371,7 +371,7 @@ See [Run snippets of JavaScript on any webpage](./snippets.md).
 
 The `//# sourceURL` pragma, such as `//# sourceURL=file-name.js`, is a special comment that makes it easier to work with evaluated JavaScript code and JavaScript code found in `<script>` tags in an HTML document.
 
-When JavaScript code is run by the browser, DevTools can only name it if it was loaded from an file. When running JavaScript directly from a `<script>` tag or by using the `eval()` function, the **Sources** tool doesn't have a file name to display these files in the **Navigator** pane.
+When JavaScript code is run by the browser, DevTools can only name it if it was loaded from a file. When running JavaScript directly from a `<script>` tag or by using the `eval()` function, the **Sources** tool doesn't have a file name to display these files in the **Navigator** pane.
 
 Use the `//# sourceURL` pragma to give a name to evaluated files, inline scripts, and styles, so that each one appears as a recognizable file name in the **Sources** tool.  For example:
 
