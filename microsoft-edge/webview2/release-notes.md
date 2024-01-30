@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/26/2024
+ms.date: 01/29/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -147,13 +147,11 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ====================================================================== -->
 ## 1.0.2357-prerelease
 
-<!-- todo: update version number & date -->
-
-Release Date: January 26, 2024
+Release Date: January 29, 2024
 
 [NuGet package for WebView2 SDK 1.0.2357-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2357-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 122.0.2363.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 122.0.2363.0 or higher.<!-- todo: differs from prerelease # this time? -->
 
 
 <!-- ------------------------------ -->
@@ -161,11 +159,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ---------- -->
-* Added the Runtime selection feature to support more prerelease testing and flighting scenarios. Developers can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
+* Added the Runtime selection feature to support more prerelease testing and flighting scenarios.  Developers can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
-
-<!-- todo: test links -->
 
 * `CoreWebView2EnvironmentOptions` Class:
     * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
@@ -180,7 +176,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 * `CoreWebView2EnvironmentOptions` Class:
     * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true#channelsearchkind)
     * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true#releasechannels)
-    
+
 * [CoreWebView2ChannelSearchKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2channelsearchkind?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true)
 
 * [CoreWebView2ReleaseChannels Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2releasechannels?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true)
@@ -201,17 +197,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ---------- -->
-* Added a new API to provide hit-testing results on the regions that it contains. This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
+* Added a new API to provide hit-testing results on the regions that a WebView2 contains.  This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
-
-<!-- todo: test links -->
 
 * `CoreWebView2CompositionController` Class:
    * [CoreWebView2CompositionController.GetNonClientRegionAtPoint Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.getnonclientregionatpoint?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
    * [CoreWebView2CompositionController.QueryNonClientRegion Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.querynonclientregion?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
    * [CoreWebView2CompositionController.NonClientRegionChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
-   
+
 * [CoreWebView2NonClientRegionChangedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionchangedeventargs?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
    * [CoreWebView2NonClientRegionChangedEventArgs.RegionKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionchangedeventargs.regionkind?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
 
@@ -268,8 +262,6 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- todo: test links -->
-
 * `CoreWebView2AcceleratorKeyPressedEventArgs` Class:
     * [CoreWebView2AcceleratorKeyPressedEventArgs.IsBrowserAcceleratorKeyEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs.isbrowseracceleratorkeyenabled?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
 
@@ -292,8 +284,6 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- todo: test links -->
-
 * `CoreWebView2Environment` Class:
     * [CoreWebView2Environment.GetProcessExtendedInfosAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getprocessextendedinfosasync?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
 
@@ -301,7 +291,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
     * [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.associatedframeinfos?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
     * [CoreWebView2ProcessExtendedInfo.ProcessInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processextendedinfo.processinfo?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
 
-* `CoreWebView2` Class:   
+* `CoreWebView2` Class:
     * [CoreWebView2.FrameId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.frameid?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
 
 * `CoreWebView2Frame` Class:
@@ -370,8 +360,6 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- todo: test links -->
-
 * `CoreWebView2` Class:
     * [CoreWebView2.ExecuteScriptWithResultAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.executescriptwithresultasync?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
 
@@ -387,7 +375,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
     * [CoreWebView2ScriptException.Message Property](/dotnet/api/microsoft.web.webview2.core.corewebview2scriptexception.message?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
     * [CoreWebView2ScriptException.Name Property](/dotnet/api/microsoft.web.webview2.core.corewebview2scriptexception.name?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
     * [CoreWebView2ScriptException.ToJson Property](/dotnet/api/microsoft.web.webview2.core.corewebview2scriptexception.tojson?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
-    
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
@@ -449,24 +437,26 @@ N/A
 
 
 <!-- ------------------------------ -->
-* Support for browser extensions in WebView2.  Added `GetBrowserExtensions` for WinRT:
+* To support browser extensions in WebView2, added `GetBrowserExtensions` for WinRT:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 N/A
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Profile Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true)
+* `CoreWebView2Profile` Class:
     * [CoreWebView2Profile.GetBrowserExtensionsAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true#getbrowserextensionsasync)
 
 ##### [Win32/C++](#tab/win32cpp)
+
 N/A
 
 ---
 
 
 <!-- ------------------------------ -->
-*  Added support for `WebResourceRequested` for workers which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iframes.
+*  Added support for `WebResourceRequested` for workers, which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iframes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -476,8 +466,7 @@ N/A
 
 * [CoreWebView2WebResourceRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
 
-<!-- todo: add enum url: -->
-* [CoreWebView2WebResourceRequestSourceKinds Enum]
+* [CoreWebView2WebResourceRequestSourceKinds Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestsourcekinds?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -485,8 +474,7 @@ N/A
 * [CoreWebView2.RemoveWebResourceRequestedFilter(requestSourceKinds) Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true#removewebresourcerequestedfilter)
 * [CoreWebView2WebResourceRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true)
 
-<!-- todo: add enum url: -->
-* [CoreWebView2WebResourceRequestSourceKinds Enum]
+* [CoreWebView2WebResourceRequestSourceKinds Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestsourcekinds?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -496,11 +484,9 @@ N/A
 
 * [ICoreWebView2WebResourceRequestedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs2?view=webview2-1.0.2357-prerelease&preserve-view=true)
     * [ICoreWebView2WebResourceRequestedEventArgs2::get_RequestedSourceKind](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs2?view=webview2-1.0.2357-prerelease&preserve-view=true#get_requestedsourcekind)
-    * [ICoreWebView2WebResourceRequestedEventArgs2::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs2?view=webview2-1.0.2357-prerelease&preserve-view=true#invoke)
 
-<!-- todo: add enum url: -->
-* [COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS enum]
-   
+* [COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2357-prerelease&preserve-view=true#corewebview2_web_resource_request_source_kinds)
+
 ---
 
 
