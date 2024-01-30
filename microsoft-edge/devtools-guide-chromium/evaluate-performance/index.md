@@ -59,15 +59,13 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. In DevTools, open the **Performance** tool.
 
-1. Select the **Screenshots** checkbox.
-
 1. Click **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)).  DevTools reveals settings related to how it captures performance metrics.
 
 1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
 
    ![CPU throttle](./index-images/capture-settings.png)
 
-   If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
+   If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.
 
 
 <!-- ------------------------------ -->

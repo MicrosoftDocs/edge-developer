@@ -94,7 +94,7 @@ In previous versions of Microsoft Edge, in Focus Mode, disabling JavaScript in t
 
    ![Using Command Menu to select Disable JavaScript](./devtools-108-images/disable-javascript.png)
 
-   A yellow warning icon is added to the **Sources** tool icon on the Activity Bar to indicate that JavaScript is disabled:
+   A yellow warning icon is added to the **Sources** tool icon on the **Activity Bar** to indicate that JavaScript is disabled:
 
    ![JavaScript Disabled indicator next to Sources tool icon on Activity Bar](./devtools-108-images/javascript-disabled.png)
 

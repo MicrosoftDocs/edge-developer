@@ -108,7 +108,7 @@ To close a tool tab that's on a toolbar, right-click the tab, and then select **
 
 ![The right-click menu for the Network tool in the Activity Bar, including the 'Remove from Activity Bar' command](./about-tools-images/remove-from-activitybar.png)
 
-The **Elements**, **Console**, and **Sources** tools are permanent tabs and cannot be closed or moved from the Activity Bar to the **Quick View** panel.  You can drag their tabs to reorder them in the **Activity Bar**.
+The **Elements**, **Console**, and **Sources** tools are permanent tabs and cannot be closed or moved from the **Activity Bar** to the **Quick View** panel.  You can drag their tabs to reorder them in the **Activity Bar**.
 
 The **Console** tool is also a permanent tab on the **Quick View** toolbar.  In contrast, the **Issues** tool on the **Quick View** toolbar can be removed.
 
