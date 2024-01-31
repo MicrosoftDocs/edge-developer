@@ -155,6 +155,11 @@ Release Date: January 26, 2024
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 121.0.2277.82 or higher.
 
+<!-- ------------------------------ -->
+#### Breaking changes
+
+> [!IMPORTANT]
+> **Breaking Change**: Navigations to `about:blank` is now cancellable via the `NavigationStarting` event. To revert to old behavior, disable the `msWebView2CancellableAboutNavigations` feature flag.
 
 <!-- ------------------------------ -->
 #### Promotions
