@@ -114,9 +114,9 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 ![The 3D View in DevTools](./devtools-images/3dview.png)
 
-To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press **F1** in DevTools, or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, press **Ctrl+Shift+P**, type in **3D View** and select **Show 3D View**.
+To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press **F1** in DevTools, or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, press **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS), type in **3D View**, and then select **Show 3D View**.
 
-We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](../../../contact.md).
+We're working on the UI and adding more functionality to the 3D View, so please send us your [feedback](../../../contact.md).
 
 Chromium issue [#987787](https://crbug.com/987787)
 
