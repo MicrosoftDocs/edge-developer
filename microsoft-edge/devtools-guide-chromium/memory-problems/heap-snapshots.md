@@ -140,6 +140,7 @@ To reveal the list of objects that were instantiated by a given constructor, exp
 
 The **Summary** view also contains special category names that aren't based on constructors. These special categories are:
 
+<!-- Taken from https://github.com/sethbrenith/sethbrenith.github.io/blob/main/heap-snapshot-names.md -->
 | Category name | Description |
 |:--- |:--- |
 | **(array)** | Various internal array-like objects which don't directly correspond to objects visible from JavaScript, such as the contents of JavaScript Arrays, or the named properties of JavaScript objects. |
