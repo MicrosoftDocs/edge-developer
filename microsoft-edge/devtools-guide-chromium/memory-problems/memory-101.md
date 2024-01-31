@@ -105,12 +105,13 @@ Nevertheless, even a small object can hold a large amount of memory indirectly, 
 <!-- ------------------------------ -->
 #### Retained size
 
-The _retained size_ is the size of memory that is implicitly held by an object and that would be freed once the object is deleted along with all the dependent objects that were made unreachable from GC roots.
+The _retained size_ is the size of the memory that's implicitly held by an object and that could be freed once the object and other existing retainers are deleted along with all the dependent objects that were made unreachable from GC roots.
 
 That is, the retained size of an object is the amount of memory that would be regained if the object and all of its dependent objects were removed from the memory graph.
 
 The retained size can't be smaller than the shallow size.
 
+When an object is retained by multiple nodes, the object's size appears in the retained size of the retainer node that has the shortest path to the GC root.
 
 <!-- ------------------------------ -->
 #### Distance
@@ -171,7 +172,7 @@ Memory for new JavaScript objects is allocated from a dedicated JavaScript heap 
 
 * **Concatenated strings**: strings that are stored and then joined together, as a result of a string concatenation in JavaScript, are stored as _concatenated strings_ in V8. The joining of the string contents occurs only as needed, such as when a substring of a joined string needs to be constructed.
 
-  For example, if you concatenate `a` and `b`, you get a concatenated string `(a, b)` which represents the result of concatenation. If you later concatenate `c` with that result, you get another concatenated string: `((a, b, c)`.
+  For example, if you concatenate `a` and `b`, you get a concatenated string `(a, b)` which represents the result of concatenation. If you later concatenate `c` with that result, you get another concatenated string: `((a, b), c)`.
 
 * **Arrays**: an _array_ is an object that has numeric keys. Arrays are used extensively in the V8 VM for storing large amounts of data. Sets of key-value pairs that are used like dictionaries are implemented as **arrays**.
 
