@@ -41,7 +41,7 @@ We are aware that Chromium has revised the timelines for Manifest V2 sunset. We 
 | TBD - See note above | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge using Enterprise policies. |
 | TBD - See note above | No change. | Manifest V2 extensions will no longer function in Microsoft Edge even with the use of Enterprise policies. |
 
-Manifest V2 extensions will continue to be supported through Enterprise policies at least until Chromium Manifest V2 support timeline (which is currently January 2024). 
+Manifest V2 extensions will continue to be supported through Enterprise policies at least until Chromium Manifest V2 support timeline (which is currently June 2024). 
 
 Microsoft continues to iteratively improve the platform and address the feedback shared by extension developers.
 
