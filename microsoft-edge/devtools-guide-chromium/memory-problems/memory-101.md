@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 01/24/2024
+ms.date: 01/30/2024
 ---
 <!-- Copyright Meggin Kearney
 
@@ -23,7 +23,7 @@ ms.date: 01/24/2024
    limitations under the License. -->
 # Memory terminology
 
-This article describes common terms used in the **Memory** tool, a tool for investigating memory issues, but is applicable to memory analysis in general and to various memory profiling tools for different languages. If you've worked with memory profilers for languages such as Java or .NET, this article may be a refresher.
+The following terms are used in the **Memory** tool, which is for investigating memory issues.  These memory terms are applicable to memory analysis in general, as well as memory profiling tools for languages such as Java or .NET.
 
 To learn more about using the **Memory** tool, see [Record heap snapshots using the Memory tool](./heap-snapshots.md).
 
@@ -31,11 +31,11 @@ To learn more about using the **Memory** tool, see [Record heap snapshots using 
 <!-- ====================================================================== -->
 ## The memory graph
 
-Think of the memory used by a webpage as a graph: a structure that contains nodes that are connected together by edges. The nodes in the memory graph represent the objects used by the page, such as primitive types like JavaScript numbers or strings, or objects like associative arrays.
+Think of the memory that's used by a webpage as a graph: a structure that contains _nodes_ that are connected together by _edges_:
 
 ![Visual representation of memory](./memory-101-images/thinkgraph.png)
 
-Nodes and edges in the memory graph are given the following labels:
+The nodes in the memory graph represent the objects used by the page, including primitive types such as JavaScript numbers or strings, and objects such as associative arrays. Nodes and edges in the memory graph are given the following labels:
 
 *  _Nodes_ (or _objects_) are labelled using the name of the _constructor_ function that was used to build them.
 
@@ -45,7 +45,7 @@ A node in the graph can hold memory in two ways:
 
 *  Directly; the memory is held by the object itself.
 
-*  Implicitly, by holding references to other objects. An object holding references to other objects prevents those objects from being automatically disposed by a garbage collector (GC).
+*  Implicitly, by holding references to other objects. An object that's holding references to other objects prevents those objects from being automatically disposed of by garbage collection (GC).
 
 
 <!-- ====================================================================== -->
@@ -55,29 +55,31 @@ The JavaScript heap is a memory region in the browser process where all the Java
 
 The JavaScript heap is part of the renderer memory. The renderer memory is the memory used by the browser process where the webpage is rendered. The renderer memory is comprised of the following:
 
-* Native memory (such as the one used by the C++ objects that represent the DOM nodes).
+* Native memory, such as the memory that's used by C++ objects that represent the DOM nodes.
 * JavaScript heap memory of the page.
-* JavaScript heap memory of all dedicated workers started by the page.
+* JavaScript heap memory of all dedicated workers that are started by the page.
 
-The **Memory** tool shows both the V8 memory and the objects allocated in the native memory that are relevant to the rendered webpage.
+The **Memory** tool shows both:
+* The V8 memory.
+* The objects allocated in the native memory that are relevant to the rendered webpage.
 
 
 <!-- ====================================================================== -->
 ## Garbage-collection roots
 
-_Garbage-collection roots_, or GC roots, are created by the browser when a reference from the browser's native code to a JavaScript object outside of the V8 virtual machine is made. These references are called _handles_.
+_Garbage-collection roots_ (_GC roots_) are created by the browser when a reference is made from the browser's native code to a JavaScript object that's outside of the V8 virtual machine. These references are called _handles_.
 
 There are many internal GC roots, most of which aren't interesting for web developers. From the webpage's standpoint, the following types of GC roots exist:
 
-*  Window global object (in each iframe).
+*  Window global objects (one in each iframe).
 
 *  Sometimes objects are retained by the debugging context that's set by the **Sources** or the **Console** tool, such as when evaluating a JavaScript expression in the **Console** tool. To remove these objects from the **Memory** tool, before recording a heap snapshot, clear the **Console** tool and deactivate breakpoints in the **Sources** tool.
 
-The memory graph starts with a GC root, which may be the `window` object of the browser or the `Global` object of a Node.js module. You don't control how the root object is garbage-collected.
-
-Nodes that aren't reachable from the root can get garbage-collected.
+The memory graph starts with a GC root, which may be the `window` object of the browser or the `Global` object of a Node.js module. You don't control how the root object is garbage-collected:
 
 ![You can't control how the root object is garbage-collected](./memory-101-images/dontcontrol.png)
+
+Nodes that aren't reachable from the root can get garbage-collected.
 
 
 <!-- ====================================================================== -->
@@ -140,7 +142,7 @@ When profiling memory, it's helpful to understand why heap snapshots look a cert
 
 In JavaScript, there are three primitive types:
 
-*  Numbers (such as `3.14159...`).
+*  Numbers (such as `3.14159`).
 *  Booleans (`true` or `false`).
 *  Strings (such as `"Werner Heisenberg"`).
 
@@ -168,15 +170,15 @@ Memory for new JavaScript objects is allocated from a dedicated JavaScript heap 
 <!-- ------------------------------ -->
 #### Other objects
 
-* **Native objects**: anything not in the JavaScript heap is called a _native object_. A native object, in contrast to a heap object, isn't managed by the V8 garbage collector throughout its lifetime, and can only be accessed from JavaScript by using its JavaScript wrapper object.
+* **Native objects**: Anything not in the JavaScript heap is called a _native object_. A native object, in contrast to a heap object, isn't managed by the V8 garbage collector throughout its lifetime, and can only be accessed from JavaScript by using its JavaScript wrapper object.
 
-* **Concatenated strings**: strings that are stored and then joined together, as a result of a string concatenation in JavaScript, are stored as _concatenated strings_ in V8. The joining of the string contents occurs only as needed, such as when a substring of a joined string needs to be constructed.
+* **Concatenated strings**: Strings that are stored and then joined together, as a result of a string concatenation in JavaScript, are stored as _concatenated strings_ in V8. The joining of the string contents occurs only as needed, such as when a substring of a joined string needs to be constructed.
 
   For example, if you concatenate `a` and `b`, you get a concatenated string `(a, b)` which represents the result of concatenation. If you later concatenate `c` with that result, you get another concatenated string: `((a, b), c)`.
 
-* **Arrays**: an _array_ is an object that has numeric keys. Arrays are used extensively in the V8 VM for storing large amounts of data. Sets of key-value pairs that are used like dictionaries are implemented as **arrays**.
+* **Arrays**: An _array_ is an object that has numeric keys. Arrays are used extensively in the V8 VM for storing large amounts of data. Sets of key-value pairs that are used like dictionaries are implemented as arrays.
 
-  A typical JavaScript object is stored as only one of two **array** types:
+  A typical JavaScript object is stored as only one of two array types:
   
   * An array for storing named properties.
   * An array for storing numeric elements.
@@ -189,7 +191,7 @@ Memory for new JavaScript objects is allocated from a dedicated JavaScript heap 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/memory-problems/memory-101/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/memory-problems/get-started) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
