@@ -128,27 +128,29 @@ After expanding a total line in the **Summary** view, all of the instances are d
 
 ###### Constructor entries in the Summary view
 
-The **Summary** view in the **Memory** tool lists expandable groups of constructors, such as an expandable group of **(array)** constructors:
+The **Summary** view in the **Memory** tool lists object constructor groups:
 
 ![Constructor groups](./heap-snapshots-images/heap-snapshots-constructor-highlight.png)
 
-The various constructor (group) entries in the heap profiler correspond to the following types of objects:
+The constructor groups in the **Summary** view might be built-in functions such as `Array` or `Object` or they might be functions defined in your own code.
 
-| Constructor (group) entry | Description |
+To reveal the list of objects that were instantiated by a given constructor, expand the constructor group.
+
+###### Special category names in the Summary view
+
+The **Summary** view also contains special category names that aren't based on constructors. These special categories are:
+
+| Category name | Description |
 |:--- |:--- |
-| **(global property)** | The intermediate objects between a global object (like `window`) and an object referenced by it.  If an object is created using a constructor `Person` and is held by a global object, the retaining path would be represented as `[global] > (global property) > Person`.  This contrasts with the norm, where objects directly reference each other.  Intermediate objects exist for performance.  Globals are modified regularly and property access optimizations do a good job for non-global objects aren't applicable for globals.  |
-| **(roots)** | The root entries in the retaining tree view are the entities that have references to the selected object.  These can also be references created by the engine for its own purposes.  The engine has caches which reference objects, but all such references are weak and don't prevent an object from being collected, given that there are no truly strong references.  |
-| **(closure)** | A count of references to a group of objects through function closures. |
-| **(array, string, number, regexp)** | A list of object types with properties which reference an Array, String, Number, or regular expression. |
-| **(compiled code)** | Everything related to compiled code.  Script is similar to a function, but corresponds to a `<script>` body.  SharedFunctionInfos (SFI) are objects standing between functions and compiled code.  Functions usually have a context, while SFIs do not. |
-| **HTMLDivElement**, **HTMLAnchorElement**, **DocumentFragment**, and so on.  | References to elements or document objects of a particular type referenced by your code. |
-| **(object shape)** | References to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties in objects.  See [HiddenClasses and DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays). |
-| **(BigInt)** | References to the **BigInt** object, which is used to represent and manipulate values that are too large to be represented by the **Number** object.  See [BigInt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt). |
+| **(array)** | Various internal array-like objects which don't directly correspond to objects visible from JavaScript, such as the contents of JavaScript Arrays, or the named properties of JavaScript objects. |
+| **(compiled code)** | Internal data that V8 (Microsoft Edge's JavaScript engine) needs to run functions defined by JavaScript or WebAssembly. V8 automatically manages memory usage in this category: if a function runs many times, V8 uses more memory for that function so that the function runs faster. If a function hasn't run in a while, V8 might delete the internal data for that function. |
+| **(concatenated string)** | When two strings are concatenated together, such as when using the JavaScript `+` operator, V8 might choose to represent the result internally as a _concatenated string_. Rather than copying all of the characters of the two strings into a new string, V8 creates a small object which points to the two strings. |
+| **InternalNode**  | Objects allocated outside of V8, such as C++ objects defined by Blink, Microsoft Edge's rendering engine. |
+| **(object shape)** | Information about objects, such as the number of properties they have and a reference to their prototypes, which V8 maintains internally when objects are created and updated. This allows V8 to efficiently represent objects with the same properties. |
+| **(sliced string)** | When creating a substring, such as when using the JavaScript `substring` method, V8 might choose to create a _sliced string_ object rather than copying all of the relevant characters from the original string. This new object contains a pointer to the original string and describes which range of characters from the original string to use. |
+| **system / Context** | Local variables from a JavaScript scope which can be accessed by some nested function. Every function instance contains an internal pointer to the context in which it executes, so that it can access those variables. |
+| **(system)** | Various internal objects that haven't yet been categorized in any more meaningful way. |
 
-<!--
-#### Heap profiling summary
-todo: add heap profiling summary section when available
--->
 
 <!-- ------------------------------ -->
 #### Comparison view
@@ -221,21 +223,6 @@ Use filters to focus on specific parts of a heap snapshot.
 When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  Use the **Node Types** filter when looking at a heap snapshot, to focus on only specific types of nodes.  For example, to see only the arrays and string objects that are in the heap, select the **Array** and **String** entries in the **Node Types** filter.
 
 ![Node Types in a heap snapshot in the Memory tool](heap-snapshots-images/node-types-heap-snapshot.png)
-
-
-<!-- ====================================================================== -->
-## Look up color coding
-
-Properties and property values of objects have different types and are colored accordingly.  Each property has one of four types:
-
-| Property Type | Description |
-|:--- |:--- |
-| **a: property** | A regular property with a name, accessed via the `.` (dot) operator, or via `[` `]` (brackets) notation, for example `["foo bar"]`.  |
-| **0: element** | A regular property with a numeric index, accessed via `[` `]` (brackets) notation.  |
-| **a: context var** |  A variable in a function context, accessible by the variable name from inside a function closure.  |
-| **a: system prop** | A property added by the JavaScript VM, not accessible from JavaScript code.  |
-
-Objects designated as `System` don't have a corresponding JavaScript type.  Each is part of the object system implementation of the Javascript VM.  V8 allocates most of the internal objects in the same heap as the user's JS objects.  So these are just V8 internals.
 
 
 <!-- ====================================================================== -->
