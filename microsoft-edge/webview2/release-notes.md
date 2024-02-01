@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/30/2024
+ms.date: 02/01/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -143,22 +143,25 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 -->
 <!-- end of Jan 2024 Prerelease SDK -->
 
+
 <!-- ====================================================================== -->
 ## 1.0.2277.82
 
 <!-- todo: update date & version numbers throughout entire section -->
 
-Release Date: January 26, 2024
+Release Date: February 1, 2024
 
 [NuGet package for WebView2 SDK 1.0.2277.82](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2277.82)
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 121.0.2277.82 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 121.0.2277.82 or higher.
+
 
 <!-- ------------------------------ -->
 #### Breaking changes
 
 > [!IMPORTANT]
-> **Breaking Change**: Navigations to `about:blank` is now cancellable via the `NavigationStarting` event. To revert to old behavior, disable the `msWebView2CancellableAboutNavigations` feature flag.
+> **Breaking Change**: Navigations to `about:blank` are now cancellable via the `NavigationStarting` event.  To revert to the old behavior, disable the `msWebView2CancellableAboutNavigations` feature flag.
+
 
 <!-- ------------------------------ -->
 #### Promotions
@@ -241,8 +244,8 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 * Fixed a bug that broke loading some social media apps such as Facebook, Twitter, and Linkedin.  This change is Runtime-specific.  (Runtime-only)  ([Issue #4281](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4281))
 
-
 <!-- end of Jan 2024 Release SDK -->
+
 
 <!-- ====================================================================== -->
 ## 1.0.2357-prerelease
