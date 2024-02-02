@@ -30,7 +30,7 @@ Use the heap profiler in the **Memory** tool to do the following:
 *  Compare snapshots.
 *  Find memory leaks.
 
-The DevTools heap profiler shows memory distribution used by the JavaScript objects and related DOM nodes on the rendered webpage.
+The DevTools heap profiler shows the memory distribution used by the JavaScript objects and by related DOM nodes on the rendered webpage.
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder.
 
@@ -72,7 +72,7 @@ The snapshot only displays the objects from the memory graph that are reachable 
 <!-- ------------------------------ -->
 #### Take another snapshot
 
-To take another snapshot when one is already displayed in the **Memory** tool, click **Profiles** above the existing snapshot in the sidebar:
+To take another snapshot when one is already displayed in the **Memory** tool, in the sidebar, click **Profiles** above the existing snapshot:
 
 ![The Profiles button to take another snapshot](./heap-snapshots-images/take-another-snapshot.png)
 
@@ -88,13 +88,13 @@ To clear all snapshots from the **Memory** tool, click the **Clear all profiles*
 <!-- ====================================================================== -->
 ## View snapshots
 
-Heap snapshots can be viewed in multiple different ways in the **Memory** tool. Each way corresponds to a different task:
+Heap snapshots can be viewed in multiple different ways in the **Memory** tool. Each way of viewing a heap snapshot in the UI corresponds to a different task:
 
-* The **Summary** view shows objects grouped by their constructor name.  Use it to find objects, and the memory they use, based on types grouped by constructor name. The **Summary** view is particularly helpful for **tracking down DOM leaks**.
+* The **Summary** view shows objects grouped by their constructor name.  Use the *Summary* view to find objects, and the memory they use, based on types grouped by constructor name. The **Summary** view is particularly helpful for tracking down DOM leaks.
 
 <!--todo: add profile memory problems memory diagnosis (tracking down DOM leaks) section when available  -->
 
-* The **Comparison** view displays the differences between two snapshots. Use it to compare two (or more) memory snapshots from before and after an operation.  Inspecting the delta in freed memory and reference count lets you confirm the presence and cause of a memory leak.
+* The **Comparison** view displays the differences between two snapshots. Use it to compare two (or more) memory snapshots from before and after an operation.  Inspecting the delta in freed memory and inspecting the reference count helps you confirm the presence of a memory leak, and helps determine its cause.
 
 * The **Containment** view allows the exploration of the heap contents.  The **Containment** view provides a better view of object structure, helping analyze objects referenced in the global namespace (window) to find out what is keeping objects around.  Use it to analyze closures and dive into your objects at a low level.
 
@@ -121,7 +121,7 @@ Top-level entries in the list of constructors are _total lines_.
 | **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  See [Shallow size](./memory-101.md#shallow-size) in _Memory terminology_. |
 | **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Retained size](./memory-101.md#retained-size) in _Memory terminology_. |
 
-After expanding a total line in the **Summary** view, all of the instances are displayed.  For each instance, the shallow and retained sizes are displayed in the corresponding columns.  The number after the `@` character is the unique ID of the object, allowing you to compare heap snapshots on per-object basis.
+After expanding a top-level entry in the **Summary** view, all of the instances are displayed.  For each instance, the shallow and retained sizes are displayed in the corresponding columns.  The number after the `@` character is the unique ID of the object, allowing you to compare heap snapshots on per-object basis.
 
 * Yellow objects have JavaScript references.
 * Red objects are detached nodes.  A detached node is referenced from a node that has a yellow background.
@@ -140,10 +140,10 @@ To reveal the list of objects that were instantiated by a given constructor, exp
 
 The **Summary** view also contains special category names that aren't based on constructors. These special categories are:
 
-<!-- Taken from https://github.com/sethbrenith/sethbrenith.github.io/blob/main/heap-snapshot-names.md -->
+<!-- from https://github.com/sethbrenith/sethbrenith.github.io/blob/main/heap-snapshot-names.md -->
 | Category name | Description |
 |:--- |:--- |
-| **(array)** | Various internal array-like objects which don't directly correspond to objects visible from JavaScript, such as the contents of JavaScript Arrays, or the named properties of JavaScript objects. |
+| **(array)** | Various internal array-like objects that don't directly correspond to objects visible from JavaScript, such as the contents of JavaScript arrays, or the named properties of JavaScript objects. |
 | **(compiled code)** | Internal data that V8 (Microsoft Edge's JavaScript engine) needs to run functions defined by JavaScript or WebAssembly. V8 automatically manages memory usage in this category: if a function runs many times, V8 uses more memory for that function so that the function runs faster. If a function hasn't run in a while, V8 might delete the internal data for that function. |
 | **(concatenated string)** | When two strings are concatenated together, such as when using the JavaScript `+` operator, V8 might choose to represent the result internally as a _concatenated string_. Rather than copying all of the characters of the two strings into a new string, V8 creates a small object which points to the two strings. |
 | **InternalNode**  | Objects allocated outside of V8, such as C++ objects defined by Blink, Microsoft Edge's rendering engine. |
@@ -221,7 +221,7 @@ To hide internal nodes from the **Retainers** section, in the **Filter edges** d
 
 Use filters to focus on specific parts of a heap snapshot.
 
-When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  Use the **Node Types** filter when looking at a heap snapshot, to focus on only specific types of nodes.  For example, to see only the arrays and string objects that are in the heap, select the **Array** and **String** entries in the **Node Types** filter.
+When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  When looking at a heap snapshot, to focus on only specific types of nodes, use the **Node Types** filter, in the upper right.  For example, to see only the arrays and string objects in the heap, in the **Node Types** dropdown menu in the upper right, select the **Array** and **String** entries:
 
 ![Node Types in a heap snapshot in the Memory tool](heap-snapshots-images/node-types-heap-snapshot.png)
 
@@ -237,17 +237,17 @@ To find an object in the collected heap, you can search using **Ctrl+F** and giv
 
 The heap profiler has the ability to reflect bidirectional dependencies between browser native objects (DOM nodes, CSS rules) and JavaScript objects.  This helps to discover otherwise invisible leaks that happen because of forgotten detached DOM subtrees that remain in memory.
 
-Consider the following code sample.  When is the element with ID `tree` garbage-collected?
+Consider the following code sample: when is the element with ID `tree` garbage-collected?
 
 ```javascript
-// Getting a reference to the #tree element.
+// Get a reference to the #tree element.
 var treeRef = document.querySelector("#tree");
 
-// Getting a reference to the #leaf element,
+// Get a reference to the #leaf element,
 // which is a descendant of the #tree element.
 var leafRef = document.querySelector("#leaf");
 
-// Removing the #tree element from the DOM.
+// Remove the #tree element from the DOM.
 document.body.removeChild(treeRef);
 
 // The #tree element can't be garbage-collected yet
@@ -259,27 +259,27 @@ treeRef = null;
 // The #tree element is still not garbage-collected
 // because of the indirect reference from the leafRef variable.
 
-// Removing the leafRef variable.
+// Remove the leafRef variable.
 leafRef = null;
 
 // Now the #tree element can be garbage-collected.
 ```
 
-The element with ID `leaf` maintains a reference to its ancestor nodes in the DOM, which includes the element with ID `tree`. Both `treeRef` and `leafRef` must be nullified for the whole DOM tree under the element with ID `tree` to be garbage-collected.
+The element with ID `leaf` maintains a reference to its ancestor nodes in the DOM, which includes the element with ID `tree`. Both `treeRef` and `leafRef` must first be nullified, for the whole DOM tree under the element with ID `tree` to be garbage-collected.
 
 ![DOM subtrees](./heap-snapshots-images/memory-problems-tree-gc.png)
 
 <!-- ------------------------------ -->
 #### Demo webpage: Example 6: Leaking DOM nodes
 
-Open the example webpage [Example 6: Leaking DOM nodes](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) in a new window or tab, to understand where DOM nodes might leak, and how to detect such leakage.
+To understand where DOM nodes might leak, and how to detect such leakage, open the example webpage [Example 6: Leaking DOM nodes](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) in a new window or tab.
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 <!-- ------------------------------ -->
 #### Demo webpage: Example 9: DOM leaks bigger than expected
 
-Open the example webpage [Example 9: DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html) in a new window or tab.
+To see why a DOM leak might be bigger than expected, open the example webpage [Example 9: DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html) in a new window or tab.
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
@@ -303,7 +303,7 @@ To analyze the impact of closures on memory, try out this example:
 
 1. Open the [Eval is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) demo webpage in a new window or tab.
 
-1. Record a first heap snapshot.
+1. Record a heap snapshot.
 
 1. In the rendered webpage, click the **Closures with eval** button.
 
@@ -311,11 +311,11 @@ To analyze the impact of closures on memory, try out this example:
 
    In the sidebar, the number below the second snapshot should be larger than the number below the first snapshot. This indicates that more memory is being used by the webpage after clicking the **Closures with eval** button.
 
-1. In the second heap snapshot, change the view to **Comparison**, comparing it to the first one.
+1. In the second heap snapshot, change the view to **Comparison**, and then compare the second heap snapshot to the first heap snapshot.
 
    The **Comparison** view shows that new strings were created in the second heap snapshot:
 
-   ![The comparison view, showing that new strings were created in the second snapshot](./heap-snapshots-images/closure-retained-strings.png)
+   ![The Comparison view, showing that new strings were created in the second snapshot](./heap-snapshots-images/closure-retained-strings.png)
 
 1. In the **Comparison** view, expand the **(string)** constructor.
 
@@ -348,7 +348,7 @@ function createLargeClosure() {
 }
 ```
 
-The following example names the function, which makes it easier to distinguish between closures in the recorder heap snapshot:
+The following example names the function, which makes it easier to distinguish between closures in the heap snapshot:
 
 ```javascript
 function createLargeClosure() {

@@ -87,22 +87,22 @@ Nodes that aren't reachable from the root can get garbage-collected.
 
 When working with the **Memory** tool, you will likely find yourself looking at the following columns of information:
 
+* **Distance**
 * **Shallow Size**
 * **Retained Size**
-* **Distance**
 
 The numbers in the **Shallow size** and **Retained size** columns are the number of bytes.
 
-![Shallow and Retained size](./memory-101-images/shallow-retained.png)
+![The Distance, Shallow Size, and Retained Size columns in the Memory tool](./memory-101-images/shallow-retained.png)
 
 <!-- ------------------------------ -->
 #### Shallow size
 
 The _shallow size_ is the size of the memory that is held by the object directly.
 
-The shallow size of an object is usually small because JavaScript objects often only store the descriptions of the object in memory, and not their values. Arrays and strings are exceptions to this and can have a significant shallow size. Most JavaScript objects store their values elsewhere in the renderer memory, and only expose a small wrapper object on the JavaScript heap.
+The shallow size of an object is usually small, because JavaScript objects often only store the descriptions of the object in memory, and not their values. Arrays and strings are exceptions to this, and can have a significant shallow size. Most JavaScript objects store their values elsewhere in the renderer memory, and only expose a small wrapper object on the JavaScript heap.
 
-Nevertheless, even a small object can hold a large amount of memory indirectly, by preventing other objects from being disposed of by the garbage collection process.
+Nevertheless, even a small object can hold a large amount of memory _indirectly_, by preventing other objects from being disposed of by the garbage collection process.
 
 <!-- ------------------------------ -->
 #### Retained size
@@ -124,11 +124,11 @@ The _distance_ of an object in the JavaScript heap is the number of nodes on the
 <!-- ====================================================================== -->
 ## Retainers
 
-An object's retainers are the others objects that hold references to it. The **Retainers** section of the **Memory** tool shows the objects that hold references to the object selected in the **Summary** view.
+An object's _retainers_ are the other objects that hold references to the object. The **Retainers** section of the **Memory** tool shows the objects that hold references to the object selected in the **Summary** view.
 
 The **Retainers** section of the **Memory** tool is sorted by distance by default, which means that the simplest retaining paths for an object are shown first.
 
-Any object with no retainers can be discarded by the browser’s garbage collector, which reduces memory usage.
+Any object with no retainers can be discarded by the browser's garbage collector, which reduces memory usage.
 
 
 <!-- ====================================================================== -->
@@ -146,13 +146,13 @@ In JavaScript, there are three primitive types:
 *  Booleans (`true` or `false`).
 *  Strings (such as `"Werner Heisenberg"`).
 
-Primitives cannot reference other values, and are always leaf nodes in the memory graph (also called _terminating nodes_).
+Primitives cannot reference other values, and are always leaf nodes (also called _terminating nodes_) in the memory graph.
 
 **Numbers** can be stored as either:
 
 *  Immediate 31-bit integer values that are called **small integers** (_SMIs_).
 
-*  Heap objects, referred to as **heap numbers**. Heap numbers are used for storing values that don't fit into the SMI form, such as **doubles**, or when a value needs to be **boxed**, such as setting properties on it.
+*  Heap objects, which are referred to as _heap numbers_. Heap numbers are used for storing values that don't fit into the small-integer (SMI) form, such as values of type `double`, or when a value needs to be boxed, such as setting properties on it.
 
 **Strings** can be stored in either:
 
@@ -170,7 +170,7 @@ Memory for new JavaScript objects is allocated from a dedicated JavaScript heap 
 <!-- ------------------------------ -->
 #### Other objects
 
-* **Native objects**: Anything not in the JavaScript heap is called a _native object_. A native object, in contrast to a heap object, isn't managed by the V8 garbage collector throughout its lifetime, and can only be accessed from JavaScript by using its JavaScript wrapper object.
+* **Native objects**: Anything that's not stored in the JavaScript heap is called a _native object_. A native object, in contrast to a heap object, isn't managed by the V8 garbage collector throughout its lifetime, and can only be accessed from JavaScript by using its JavaScript wrapper object.
 
 * **Concatenated strings**: Strings that are stored and then joined together, as a result of a string concatenation in JavaScript, are stored as _concatenated strings_ in V8. The joining of the string contents occurs only as needed, such as when a substring of a joined string needs to be constructed.
 
