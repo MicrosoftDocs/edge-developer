@@ -90,13 +90,13 @@ To clear all snapshots from the **Memory** tool, click the **Clear all profiles*
 
 Heap snapshots can be viewed in multiple different ways in the **Memory** tool. Each way of viewing a heap snapshot in the UI corresponds to a different task:
 
-* The **Summary** view shows objects grouped by their constructor name.  Use the *Summary* view to find objects, and the memory they use, based on types grouped by constructor name. The **Summary** view is particularly helpful for tracking down DOM leaks.
+| View | Content | Use for |
+|---|---|---|
+| **Summary** | Shows objects grouped by their constructor name. | Finding objects, and the memory they use, based on types that are grouped by constructor name. Helpful for tracking down DOM leaks. |
+| **Comparison** | Displays the differences between two snapshots. | Comparing two (or more) memory snapshots from before and after an operation. Inspecting the delta in freed memory and inspecting the reference count helps you confirm the presence and cause of a memory leak, and helps determine its cause. |
+| **Containment** | Allows exploration of heap contents. | Provides a better view of object structure, helping analyze objects referenced in the global namespace (window) to find out what is keeping objects around. Use it to analyze closures and dive into your objects at a low level. |
 
 <!--todo: add profile memory problems memory diagnosis (tracking down DOM leaks) section when available  -->
-
-* The **Comparison** view displays the differences between two snapshots. Use it to compare two (or more) memory snapshots from before and after an operation.  Inspecting the delta in freed memory and inspecting the reference count helps you confirm the presence of a memory leak, and helps determine its cause.
-
-* The **Containment** view allows the exploration of the heap contents.  The **Containment** view provides a better view of object structure, helping analyze objects referenced in the global namespace (window) to find out what is keeping objects around.  Use it to analyze closures and dive into your objects at a low level.
 
 To switch between views, use the dropdown list at the top of the **Memory** tool:
 
@@ -108,20 +108,21 @@ To switch between views, use the dropdown list at the top of the **Memory** tool
 <!-- ------------------------------ -->
 #### Summary view
 
-Initially, a heap snapshot opens in the **Summary** view, which displays a list of constructors. Each constructor in the list can be expanded to show the objects that were instantiated using that constructor:
+Initially, a heap snapshot opens in the **Summary** view, which displays a list of constructors:
 
 ![Summary view](./heap-snapshots-images/heap-snapshots-constructor-retainers.png)
 
-Top-level entries in the list of constructors are _total lines_.
+Each constructor in the list can be expanded to show the objects that were instantiated using that constructor.
 
-| Top-level entries | Description |
+For each constructor in the list, the **Summary** view also shows a number such as **x123**, indicating the total number of objects created with the constructor. The **Summary** view also shows the following columns:
+
+| Column name | Description |
 |:--- |:--- |
-| **Constructor** | Represents all objects created using this constructor. |
 | **Distance** | Displays the distance to the root using the shortest simple path of nodes.  See [Distance](./memory-101.md#distance) in _Memory terminology_. |
 | **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  See [Shallow size](./memory-101.md#shallow-size) in _Memory terminology_. |
 | **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Retained size](./memory-101.md#retained-size) in _Memory terminology_. |
 
-After expanding a top-level entry in the **Summary** view, all of the instances are displayed.  For each instance, the shallow and retained sizes are displayed in the corresponding columns.  The number after the `@` character is the unique ID of the object, allowing you to compare heap snapshots on per-object basis.
+After expanding a constructor in the **Summary** view, all of the constructor's instances are displayed.  For each instance, the shallow and retained sizes are displayed in the corresponding columns.  The number after the `@` character is the unique ID of the object, allowing you to compare heap snapshots on per-object basis.
 
 * Yellow objects have JavaScript references.
 * Red objects are detached nodes.  A detached node is referenced from a node that has a yellow background.
@@ -170,24 +171,29 @@ To verify that certain operations don't create leaks:
 
 1. In the second heap snapshot, change the view to **Comparison**, comparing it to **Snapshot 1**.
 
-In the **Comparison** view, the difference between two snapshots is displayed.  When expanding a total entry, added and deleted object instances are shown.
+In the **Comparison** view, the difference between two snapshots is displayed:
 
 ![Comparison view](./heap-snapshots-images/heap-snapshots-comparison-dropdown.png)
 
+When expanding a constructor in the list, added and deleted object instances are shown.
+
 <!--todo: add HeapProfilingComparison section when available  -->
+
 
 <!-- ------------------------------ -->
 #### Containment view
 
-The **Containment** view is essentially a "bird's eye view" of the objects structure of your application.  It allows you to peek inside function closures, to observe virtual machine (VM) internal objects that together make up your JavaScript objects, and to understand how much memory your application uses at a very low level. <!-- Low level makes little sense since we just said it provided a bird's eye view. -->
+The **Containment** view allows you to peek inside function closures, to observe virtual machine (VM) internal objects that make up your JavaScript objects, and to understand how much memory your application uses at a very low level:
+
+![Containment view](./heap-snapshots-images/heap-snapshots-containment-dropdown.png)
+
+The **Containment** view shows the following types of objects:
 
 | Containment view entry points | Description |
 |:--- |:--- |
 | **DOMWindow objects** | Global objects for JavaScript code.  |
-| **GC roots** | The actual GC roots used by the garbage of the VM.  GC roots are comprised of built-in object maps, symbol tables, VM thread stacks, compilation caches, handle scopes, and global handles.  |
-| **Native objects** | Browser objects "pushed" inside the JavaScript virtual machine (JavaScript VM) to allow automation, for example, DOM nodes, CSS rules.  |
-
-![Containment view](./heap-snapshots-images/heap-snapshots-containment-dropdown.png)
+| **GC roots** | The GC roots used by the garbage collector of the JavaScript virtual machine.  GC roots are comprised of built-in object maps, symbol tables, VM thread stacks, compilation caches, handle scopes, and global handles.  |
+| **Native objects** | Objects created by the browser such as DOM nodes and CSS rules, which are shown in the JavaScript virtual machine to allow automation. |
 
 <!--todo: add heap profiling containment section when available  -->
 
@@ -219,11 +225,17 @@ To hide internal nodes from the **Retainers** section, in the **Filter edges** d
 <!-- ====================================================================== -->
 ## Filter heap snapshots by node types
 
-Use filters to focus on specific parts of a heap snapshot.
+Use filters to focus on specific parts of a heap snapshot. When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.
 
-When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  When looking at a heap snapshot, to focus on only specific types of nodes, use the **Node Types** filter, in the upper right.  For example, to see only the arrays and string objects in the heap, in the **Node Types** dropdown menu in the upper right, select the **Array** and **String** entries:
+To focus only on specific types of nodes, use the **Node Types** filter, in the upper right.  For example, to see only the arrays and string objects in the heap snapshot:
 
-![Node Types in a heap snapshot in the Memory tool](heap-snapshots-images/node-types-heap-snapshot.png)
+1. To open the **Node Types** filter, click **Default** in the upper right.
+
+1. Select the **Array** and **String** entries.
+
+   The heap snapshot is updated to show only the array and string objects:
+
+   ![Node Types in a heap snapshot in the Memory tool](heap-snapshots-images/node-types-heap-snapshot.png)
 
 
 <!-- ====================================================================== -->
@@ -235,39 +247,46 @@ To find an object in the collected heap, you can search using **Ctrl+F** and giv
 <!-- ====================================================================== -->
 ## Uncover DOM leaks
 
-The heap profiler has the ability to reflect bidirectional dependencies between browser native objects (DOM nodes, CSS rules) and JavaScript objects.  This helps to discover otherwise invisible leaks that happen because of forgotten detached DOM subtrees that remain in memory.
+The **Memory** tool has the ability to show the bidirectional dependencies that sometimes exist between browser native objects (DOM nodes, CSS rules) and JavaScript objects.  This helps to discover memory leaks that happen because of forgotten detached DOM nodes that remain in memory.
 
-Consider the following code sample: when is the element with ID `tree` garbage-collected?
+Consider the following DOM tree:
+
+![DOM subtrees](./heap-snapshots-images/memory-problems-tree-gc.png)
+
+The following code sample creates the JavaScript variables `treeRef` and `leafRef`, which reference two of the DOM nodes in the tree:
 
 ```javascript
 // Get a reference to the #tree element.
-var treeRef = document.querySelector("#tree");
+const treeRef = document.querySelector("#tree");
 
 // Get a reference to the #leaf element,
 // which is a descendant of the #tree element.
-var leafRef = document.querySelector("#leaf");
-
-// Remove the #tree element from the DOM.
-document.body.removeChild(treeRef);
-
-// The #tree element can't be garbage-collected yet
-// because the treeRef variable still exists.
-
-// Removing the treeRef variable.
-treeRef = null;
-
-// The #tree element is still not garbage-collected
-// because of the indirect reference from the leafRef variable.
-
-// Remove the leafRef variable.
-leafRef = null;
-
-// Now the #tree element can be garbage-collected.
+const leafRef = document.querySelector("#leaf");
 ```
 
-The element with ID `leaf` maintains a reference to its ancestor nodes in the DOM, which includes the element with ID `tree`. Both `treeRef` and `leafRef` must first be nullified, for the whole DOM tree under the element with ID `tree` to be garbage-collected.
+In the following code sample, the `<div id="tree">` element is removed from the DOM tree:
 
-![DOM subtrees](./heap-snapshots-images/memory-problems-tree-gc.png)
+```javascript
+// Remove the #tree element from the DOM.
+document.body.removeChild(treeRef);
+```
+
+The `<div id="tree">` element can't be garbage-collected because the JavaScript variable `treeRef` still exists. The `treeRef` variable directly references the `<div id="tree">` element. In the following code sample, the `treeRef` variable is nullified:
+
+```javascript
+// Remove the treeRef variable.
+treeRef = null;
+```
+
+The `<div id="tree">` element still can't be garbage-collected because the JavaScript variable `leafRef` still exists. The `leafRef.parentNode` property references the `<div id="tree">` element. In the following code sample, the `leafRef` variable is nullified:
+
+```javascript
+// Remove the leafRef variable.
+leafRef = null;
+```
+
+At this point, the `<div id="tree">` element can be garbage-collected. Both `treeRef` and `leafRef` must first be nullified, for the whole DOM tree under the `<div id="tree">` element to be garbage-collected.
+
 
 <!-- ------------------------------ -->
 #### Demo webpage: Example 6: Leaking DOM nodes

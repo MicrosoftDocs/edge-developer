@@ -91,9 +91,14 @@ When working with the **Memory** tool, you will likely find yourself looking at 
 * **Shallow Size**
 * **Retained Size**
 
-The numbers in the **Shallow size** and **Retained size** columns are the number of bytes.
-
 ![The Distance, Shallow Size, and Retained Size columns in the Memory tool](./memory-101-images/shallow-retained.png)
+
+The numbers in the **Shallow Size** and **Retained Size** columns are the number of bytes.
+
+<!-- ------------------------------ -->
+#### Distance
+
+The _distance_ of an object in the JavaScript heap is the number of nodes on the shortest path between the object and the GC root. The shorter the distance, the more likely it is that this object plays an important role in the memory usage of the webpage.
 
 <!-- ------------------------------ -->
 #### Shallow size
@@ -114,11 +119,6 @@ That is, the retained size of an object is the amount of memory that would be re
 The retained size can't be smaller than the shallow size.
 
 When an object is retained by multiple nodes, the object's size appears in the retained size of the retainer node that has the shortest path to the GC root.
-
-<!-- ------------------------------ -->
-#### Distance
-
-The _distance_ of an object in the JavaScript heap is the number of nodes on the shortest path between the object and the GC root. The shorter the distance, the more likely it is that this object plays an important role in the memory usage of the webpage.
 
 
 <!-- ====================================================================== -->
