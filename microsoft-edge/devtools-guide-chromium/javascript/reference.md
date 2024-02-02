@@ -367,7 +367,7 @@ See [Run snippets of JavaScript on any webpage](./snippets.md).
 
 
 <!-- ====================================================================== -->
-## Use `# sourceURL` to name evaluated and inline files in the Sources tool
+## Use `# sourceURL` to name evaluated and inline code in the Sources tool
 
 The `# sourceURL` pragma, with syntax `//# sourceURL=my-assigned-file-name.js` or `/*# sourceURL=my-assigned-file-name.css*/`, is a special comment that makes it easier to work with evaluated and inline code in the **Sources** tool.
 
