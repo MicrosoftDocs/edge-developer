@@ -40,13 +40,13 @@ This article explains how to enable source maps in DevTools, and how to use them
 <!-- ====================================================================== -->
 ## Source maps in DevTools
 
-Source maps from build tools cause DevTools to load your original files in addition to your minified files and replace the minified code with the original code. For example:
+Source maps from build tools cause DevTools to load your original files in addition to your minified files, and replace the minified code with the original code. For example:
 
 * In the **Sources** tool, you can see the original files and set breakpoints in them.
 * In the **Performance** tool, you can see your original function names in the flame chart.
 * In the **Console** tool, you can see your original file names and line numbers in stack traces.
 
-Meanwhile, Microsoft Edge actually runs your minified code to render the webpage. Source maps are only used by DevTools, and only for display purposes.
+Meanwhile, Microsoft Edge actually runs your minified code to render the webpage. Source maps are only used by DevTools, and only for displaying source code to developers.
 
 DevTools knows how to load a source map when a `//# sourceMappingURL=` comment is found in a compiled file. For example, the following comment tells DevTools to load the source map from `http://example.com/path/to/your/sourcemap.map`:
 
@@ -80,7 +80,7 @@ By default, DevTools doesn't load source maps when the source map URL is a file 
 
 1. In DevTools, click **Customize and control DevTools** (![The Customize and control DevTools icon](./source-maps-images/customize-and-control-devtools-icon.png)) > **Settings** (![Settings icon](./source-maps-images/settings-gear-icon-light-theme.png)) > **Preferences**.
 
-1. In the **Preferences** page, in the **Sources** section, select the **Allow DevTools to load resources, such as source maps, from remote file paths. Disabled by default for security reasons.** checkbox.
+1. In the **Preferences** page, in the **Sources** section, select the checkbox **Allow DevTools to load resources, such as source maps, from remote file paths. Disabled by default for security reasons.**
 
 
 <!-- ====================================================================== -->
