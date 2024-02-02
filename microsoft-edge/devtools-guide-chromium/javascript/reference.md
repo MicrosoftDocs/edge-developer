@@ -367,17 +367,38 @@ See [Run snippets of JavaScript on any webpage](./snippets.md).
 
 
 <!-- ====================================================================== -->
-## Use `//# sourceURL` to name evaluated files in the Sources tool
+## Use `# sourceURL` to name evaluated and inline files in the Sources tool
 
-The `//# sourceURL` pragma, such as `//# sourceURL=file-name.js`, is a special comment that makes it easier to work with evaluated JavaScript code and JavaScript code found in `<script>` tags in an HTML document.
+The `# sourceURL` pragma, with syntax `//# sourceURL=my-assigned-file-name.js` or `/*# sourceURL=my-assigned-file-name.css*/`, is a special comment that makes it easier to work with evaluated and inline code in the **Sources** tool.
 
-When JavaScript code is run by the browser, DevTools can only name it if it was loaded from an file. When running JavaScript directly from a `<script>` tag or by using the `eval()` function, the **Sources** tool doesn't have a file name to display these files in the **Navigator** pane.
+When a block of code is run by the browser, DevTools can only give that block of code a name if it was loaded from an network resource. When running the following kinds of code, the **Sources** tool doesn't have a file name to display these blocks of code in the **Navigator** pane:
 
-Use the `//# sourceURL` pragma to give a name to evaluated files, inline scripts, and styles, so that each one appears as a recognizable file name in the **Sources** tool.  For example:
+* JavaScript code that's run by using the `eval()` function.
+* JavaScript code that's in a `<script>` tag.
+* CSS code that's in a `<style>` tag.
 
-```javascript
-//# sourceURL=file-name.js
-```
+Use the `# sourceURL` pragma to give a virtual name to the above kinds of code. For example:
+
+* For JavaScript:
+
+  ```javascript
+  function sum(a, b) {
+    return a + b;
+  }
+  
+  //# sourceURL=math-utilities.js
+  ```
+
+* For CSS:
+
+  ```css
+  .card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  /*# sourceURL=card-styles.css*/
+  ```
 
 
 <!-- ====================================================================== -->
