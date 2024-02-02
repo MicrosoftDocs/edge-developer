@@ -74,9 +74,9 @@ To make sure that source maps are enabled:
 
 
 <!-- ------------------------------ -->
-#### Enable loading source maps from file paths
+#### Enable loading source maps from remote file paths
 
-By default, DevTools doesn't load source maps when the source map URL is a file path, such as when the source map URL starts with `file://`. To enable loading source maps from file paths:
+By default, DevTools doesn't load source maps when the source map URL is a remote file path, such as when the source map URL starts with `file://` and targets a file that's not on the current device. To enable loading source maps from file paths:
 
 1. In DevTools, click **Customize and control DevTools** (![The Customize and control DevTools icon](./source-maps-images/customize-and-control-devtools-icon.png)) > **Settings** (![Settings icon](./source-maps-images/settings-gear-icon-light-theme.png)) > **Preferences**.
 
