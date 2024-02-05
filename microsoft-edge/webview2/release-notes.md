@@ -192,8 +192,6 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: test links -->
-
 * `CoreWebView2` Class:
     * [CoreWebView2.ExecuteScriptWithResultAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2277.86&preserve-view=true#executescriptwithresultasync)
 
@@ -211,8 +209,6 @@ The following APIs have been promoted to Stable and are now included in this Rel
     * [CoreWebView2ScriptException.ToJson Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view=webview2-winrt-1.0.2277.86&preserve-view=true#tojson)
 
 ##### [Win32/C++](#tab/win32cpp)
-
-<!-- tested -->
 
 * [ICoreWebView2_21](/microsoft-edge/webview2/reference/win32/icorewebview2_21?view=webview2-1.0.2277.86&preserve-view=true)
     * [ICoreWebView2_21::ExecuteScriptWithResult](/microsoft-edge/webview2/reference/win32/icorewebview2_21?view=webview2-1.0.2277.86&preserve-view=true#executescriptwithresult)
