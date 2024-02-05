@@ -140,7 +140,7 @@ When profiling memory, it's helpful to understand why heap snapshots look a cert
 <!-- ------------------------------ -->
 #### JavaScript primitives
 
-In JavaScript, there are three primitive types:
+In JavaScript, there are several primitive types, such as:
 
 *  Numbers (such as `3.14159`).
 *  Booleans (`true` or `false`).

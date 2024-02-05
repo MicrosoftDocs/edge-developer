@@ -54,7 +54,7 @@ This article uses five demo webpages, all sourced at https://github.com/Microsof
 
 1. In the **Select profiling type** section, select the **Heap snapshot** option button.
 
-1. Under **Select JavaScript VM instance**, select the process that you want to profile.
+1. Under **Select JavaScript VM instance**, select the JavaScript VM that you want to profile.
 
 1. Click the **Take snapshot** button:
 
@@ -114,7 +114,7 @@ Initially, a heap snapshot opens in the **Summary** view, which displays a list 
 
 Each constructor in the list can be expanded to show the objects that were instantiated using that constructor.
 
-For each constructor in the list, the **Summary** view also shows a number such as **x123**, indicating the total number of objects created with the constructor. The **Summary** view also shows the following columns:
+For each constructor in the list, the **Summary** view also shows a number such as **×123**, indicating the total number of objects created with the constructor. The **Summary** view also shows the following columns:
 
 | Column name | Description |
 |:--- |:--- |
@@ -123,9 +123,6 @@ For each constructor in the list, the **Summary** view also shows a number such 
 | **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Retained size](./memory-101.md#retained-size) in _Memory terminology_. |
 
 After expanding a constructor in the **Summary** view, all of the constructor's instances are displayed.  For each instance, the shallow and retained sizes are displayed in the corresponding columns.  The number after the `@` character is the unique ID of the object, allowing you to compare heap snapshots on per-object basis.
-
-* Yellow objects have JavaScript references.
-* Red objects are detached nodes.  A detached node is referenced from a node that has a yellow background.
 
 ###### Constructor entries in the Summary view
 
@@ -203,7 +200,7 @@ The **Containment** view shows the following types of objects:
 
 The **Retainers** section is displayed at the bottom of the **Memory** tool and shows all the objects which point to the selected object. The **Retainers** section is updated when you select a different object in the **Summary**, **Containment**, or **Comparison** view.
 
-In the following screenshot, a string object was selected in the **Summary** view, and the **Retainers** section shows that the string is retained by the `x` property of the `Item` class, found in the `example-03.js` file:
+In the following screenshot, a string object was selected in the **Summary** view, and the **Retainers** section shows that the string is retained by the `x` property of an instance of the `Item` class, found in the `example-03.js` file:
 
 ![The Retainers section](./heap-snapshots-images/retainers-section.png)
 
