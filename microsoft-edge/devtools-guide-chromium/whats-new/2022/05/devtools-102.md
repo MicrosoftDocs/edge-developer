@@ -83,7 +83,7 @@ The second and potentially subsequent appearances of the node are still displaye
 _Internal nodes_ are objects that are specific to V8 (the JavaScript engine in Microsoft Edge).  Internal nodes are also displayed in the **Retainers** section.
 
 See also:
-* [Cycles](../../../memory-problems/memory-101.md#cycles) in _Memory terminology_.
+* [Hide cycles](../../../memory-problems/heap-snapshots.md#hide-cycles) in _Record heap snapshots using the Memory tool_.
 
 
 <!-- ====================================================================== -->
