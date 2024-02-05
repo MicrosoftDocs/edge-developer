@@ -13,7 +13,8 @@ jobs:
   check-old-versions:
     name: Check for references of old versions of Edge
     runs-on: ubuntu-latest
-
+    permissions:
+      issues: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
