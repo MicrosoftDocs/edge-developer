@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/21/2023
+ms.date: 01/30/2024
 ---
 <!-- Copyright Meggin Kearney
 
@@ -24,12 +24,13 @@ ms.date: 07/21/2023
 # Record heap snapshots using the Memory tool
 
 Use the heap profiler in the **Memory** tool to do the following:
+
 *  Record JavaScript heap (JS heap) snapshots.
 *  Analyze memory graphs.
 *  Compare snapshots.
 *  Find memory leaks.
 
-The DevTools heap profiler shows memory distribution used by your page's JavaScript objects and related DOM nodes.  See also [Objects retaining tree](memory-101.md#objects-retaining-tree)) in _Memory terminology_.
+The DevTools heap profiler shows the memory distribution used by the JavaScript objects and by related DOM nodes on the rendered webpage.
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder.
 
@@ -45,213 +46,193 @@ This article uses five demo webpages, all sourced at https://github.com/Microsof
 <!-- ====================================================================== -->
 ## Take a snapshot
 
-<!--
-1. Open the __ demo page in a new tab or window.
--->
+1. Open the webpage you want to analyze. For example, open the [Scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) demo page in a new window or tab.
 
-1. In DevTools, open the **Memory** tool.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+
+1. In DevTools, on the **Activity Bar**, select the **Memory** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./heap-snapshots-images/more-tools-icon.png)) button.
 
 1. In the **Select profiling type** section, select the **Heap snapshot** option button.
 
-1. Click the **Take snapshot** button, and then click **Start**.  Or, press **Ctrl+E** (Windows, Linux) or **Command+E** (macOS).
+1. Under **Select JavaScript VM instance**, select the JavaScript VM that you want to profile.
 
-![Selecting the 'Heap snapshot' profiling type in the Memory tool](./heap-snapshots-images/heap-snapshots.png)
+1. Click the **Take snapshot** button:
 
-**Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you click the snapshot icon to view it.
+  ![The Memory tool, the Heap snapshot option is selected, and the Take snapshot button is highlighted](./heap-snapshots-images/heap-snapshots.png)
 
-After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects](memory-101.md#object-sizes).
+After the newly recorded heap snapshot has been loaded into DevTools and has been parsed, the snapshot is displayed and a new entry appears in the **Profiles** sidebar under **HEAP SNAPSHOTS**:
 
 ![Total size of reachable objects](./heap-snapshots-images/heap-snapshots-all.png)
 
-> [!NOTE]
-> Only reachable objects are included in snapshots.  Also, taking a snapshot always starts with a garbage collection.
+The number below the new sidebar item shows the total size of the reachable JavaScript objects. To learn more about object sizes in the heap snapshot, see [Object sizes and distances](./memory-101.md#object-sizes-and-distances) in _Memory terminology_.
+
+The snapshot only displays the objects from the memory graph that are reachable from the global object. Taking a snapshot always starts with a garbage collection.
+
+
+<!-- ------------------------------ -->
+#### Take another snapshot
+
+To take another snapshot when one is already displayed in the **Memory** tool, in the sidebar, click **Profiles** above the existing snapshot:
+
+![The Profiles button to take another snapshot](./heap-snapshots-images/take-another-snapshot.png)
 
 
 <!-- ====================================================================== -->
 ## Clear snapshots
 
-Click the **Clear all profiles** icon to remove snapshots (both from DevTools and any memory associated with the renderer process).
+To clear all snapshots from the **Memory** tool, click the **Clear all profiles** (![The clear icon](./heap-snapshots-images/clear-icon.png)) icon:
 
 ![Remove snapshots](./heap-snapshots-images/heap-snapshots-all-hover-clear-all-profiles.png)
-
-Closing the DevTools window doesn't delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
-
-
-## Demo webpage: Example 3: Scattered objects
-
-*  Open this demo example webpage: [Example 3: Scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) in a new window or tab.  Profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
-
-<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 
 <!-- ====================================================================== -->
 ## View snapshots
 
-View snapshots from different perspectives for different tasks.
+Heap snapshots can be viewed in multiple different ways in the **Memory** tool. Each way of viewing a heap snapshot in the UI corresponds to a different task:
 
-**Summary view** shows objects grouped by the constructor name.  Use it to hunt down objects (and the memory use) based on type grouped by constructor name.  **Summary view** is particularly helpful for **tracking down DOM leaks**.
+| View | Content | Use for |
+|---|---|---|
+| **Summary** | Shows objects grouped by their constructor name. | Finding objects, and the memory they use, based on types that are grouped by constructor name. Helpful for tracking down DOM leaks. |
+| **Comparison** | Displays the differences between two snapshots. | Comparing two (or more) memory snapshots from before and after an operation. Inspecting the delta in freed memory and inspecting the reference count helps you confirm the presence and cause of a memory leak, and helps determine its cause. |
+| **Containment** | Allows exploration of heap contents. | Provides a better view of object structure, helping analyze objects referenced in the global namespace (window) to find out what is keeping objects around. Use it to analyze closures and dive into your objects at a low level. |
 
 <!--todo: add profile memory problems memory diagnosis (tracking down DOM leaks) section when available  -->
 
-**Comparison view**.  Displays the difference between two snapshots.  Use it to compare two (or more) memory snapshots from before and after an operation.  Inspecting the delta in freed memory and reference count lets you confirm the presence and cause of a memory leak.
-
-**Containment view**.  Allows exploration of heap contents.  **Containment view** provides a better view of object structure, helping analyze objects referenced in the global namespace (window) to find out what is keeping objects around.  Use it to analyze closures and dive into your objects at a low level.
-
-To switch between views, use the selector at the top of the view.
+To switch between views, use the dropdown list at the top of the **Memory** tool:
 
 ![Switch views selector](./heap-snapshots-images/heap-snapshots-view-dropdown.png)
 
 > [!NOTE]
 > Not all properties are stored on the JavaScript heap.  Properties implemented using getters that run native code aren't captured.  Also, non-string values such as numbers aren't captured.
 
-### Summary view
+<!-- ------------------------------ -->
+#### Summary view
 
-Initially, a snapshot opens in the Summary view, displaying object totals, which can be expanded to show instances:
+Initially, a heap snapshot opens in the **Summary** view, which displays a list of constructors:
 
 ![Summary view](./heap-snapshots-images/heap-snapshots-constructor-retainers.png)
 
-Top-level entries are "total" lines.
+Each constructor in the list can be expanded to show the objects that were instantiated using that constructor.
 
-| Top-level entries | Description |
+For each constructor in the list, the **Summary** view also shows a number such as **×123**, indicating the total number of objects created with the constructor. The **Summary** view also shows the following columns:
+
+| Column name | Description |
 |:--- |:--- |
-| **Constructor** | Represents all objects created using this constructor.  |
-| **Distance** | Displays the distance to the root using the shortest simple path of nodes.  |
-| **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  See [Object sizes](memory-101.md#object-sizes).  |
-| **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Object sizes](memory-101.md#object-sizes).  |
+| **Distance** | Displays the distance to the root using the shortest simple path of nodes.  See [Distance](./memory-101.md#distance) in _Memory terminology_. |
+| **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  See [Shallow size](./memory-101.md#shallow-size) in _Memory terminology_. |
+| **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Retained size](./memory-101.md#retained-size) in _Memory terminology_. |
 
-<!--| **Number of object instances** | Displayed in the # column.  |  -->
+After expanding a constructor in the **Summary** view, all of the constructor's instances are displayed.  For each instance, the shallow and retained sizes are displayed in the corresponding columns.  The number after the `@` character is the unique ID of the object, allowing you to compare heap snapshots on per-object basis.
 
-After expanding a total line in the upper view, all of the instances are displayed.  For each instance, the shallow and retained sizes are displayed in the corresponding columns.  The number after the `@` character is the unique ID of the object, allowing you to compare heap snapshots on per-object basis.
+###### Constructor entries in the Summary view
 
-* Yellow objects have JavaScript references.
-* Red objects are detached nodes.  A detached node is referenced from a node that has a yellow background.
-
-### Constructor (group) entries in the heap profiler
-
-The **Memory** tool's heap profiler has a **Constructor** section that lists expandable groups of constructors, such as an expandable group of **(array)** constructors:
+The **Summary** view in the **Memory** tool lists object constructor groups:
 
 ![Constructor groups](./heap-snapshots-images/heap-snapshots-constructor-highlight.png)
 
-The various constructor (group) entries in the heap profiler correspond to the following types of objects:
+The constructor groups in the **Summary** view might be built-in functions such as `Array` or `Object` or they might be functions defined in your own code.
 
-| Constructor (group) entry | Description |
+To reveal the list of objects that were instantiated by a given constructor, expand the constructor group.
+
+###### Special category names in the Summary view
+
+The **Summary** view also contains special category names that aren't based on constructors. These special categories are:
+
+<!-- from https://github.com/sethbrenith/sethbrenith.github.io/blob/main/heap-snapshot-names.md -->
+| Category name | Description |
 |:--- |:--- |
-| **(global property)** | The intermediate objects between a global object (like `window`) and an object referenced by it.  If an object is created using a constructor `Person` and is held by a global object, the retaining path would be represented as `[global] > (global property) > Person`.  This contrasts with the norm, where objects directly reference each other.  Intermediate objects exist for performance.  Globals are modified regularly and property access optimizations do a good job for non-global objects aren't applicable for globals.  |
-| **(roots)** | The root entries in the retaining tree view are the entities that have references to the selected object.  These can also be references created by the engine for its own purposes.  The engine has caches which reference objects, but all such references are weak and don't prevent an object from being collected, given that there are no truly strong references.  |
-| **(closure)** | A count of references to a group of objects through function closures. |
-| **(array, string, number, regexp)** | A list of object types with properties which reference an Array, String, Number, or regular expression. |
-| **(compiled code)** | Everything related to compiled code.  Script is similar to a function, but corresponds to a `<script>` body.  SharedFunctionInfos (SFI) are objects standing between functions and compiled code.  Functions usually have a context, while SFIs do not. |
-| **HTMLDivElement**, **HTMLAnchorElement**, **DocumentFragment**, and so on.  | References to elements or document objects of a particular type referenced by your code. |
-| **(object shape)** | References to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties in objects.  See [HiddenClasses and DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays). |
-| **(BigInt)** | References to the **BigInt** object, which is used to represent and manipulate values that are too large to be represented by the **Number** object.  See [BigInt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt). |
+| **(array)** | Various internal array-like objects that don't directly correspond to objects visible from JavaScript, such as the contents of JavaScript arrays, or the named properties of JavaScript objects. |
+| **(compiled code)** | Internal data that V8 (Microsoft Edge's JavaScript engine) needs to run functions defined by JavaScript or WebAssembly. V8 automatically manages memory usage in this category: if a function runs many times, V8 uses more memory for that function so that the function runs faster. If a function hasn't run in a while, V8 might delete the internal data for that function. |
+| **(concatenated string)** | When two strings are concatenated together, such as when using the JavaScript `+` operator, V8 might choose to represent the result internally as a _concatenated string_. Rather than copying all of the characters of the two strings into a new string, V8 creates a small object which points to the two strings. |
+| **InternalNode**  | Objects allocated outside of V8, such as C++ objects defined by Blink, Microsoft Edge's rendering engine. |
+| **(object shape)** | Information about objects, such as the number of properties they have and a reference to their prototypes, which V8 maintains internally when objects are created and updated. This allows V8 to efficiently represent objects with the same properties. |
+| **(sliced string)** | When creating a substring, such as when using the JavaScript `substring` method, V8 might choose to create a _sliced string_ object rather than copying all of the relevant characters from the original string. This new object contains a pointer to the original string and describes which range of characters from the original string to use. |
+| **system / Context** | Local variables from a JavaScript scope which can be accessed by some nested function. Every function instance contains an internal pointer to the context in which it executes, so that it can access those variables. |
+| **(system)** | Various internal objects that haven't yet been categorized in any more meaningful way. |
 
 
-<!--
-### Heap profiling summary
-todo: add heap profiling summary section when available
--->
+<!-- ------------------------------ -->
+#### Comparison view
 
+To find leaked objects, compare multiple snapshots to each other.  In a web application, usually, doing an action and then the reverse action shouldn't lead to more objects in memory. For example, when opening a document and then closing it, the number of objects in memory should be the same as before opening the document.
 
-### Comparison view
-
-Find leaked objects by comparing multiple snapshots to each other.  Usually, a pair of direct and reverse operations, such as opening a document and then closing it, shouldn't leave any garbage.
-
-To verify that a certain application operation doesn't create leaks:
+To verify that certain operations don't create leaks:
 
 1. Take a heap snapshot before performing an operation.
 
-1. Perform an operation.  That is, interact with a page in some way that might be causing a leak.
+1. Perform the operation.  That is, interact with the page in some way that might be causing a leak.
 
-1. Perform a reverse operation.  That is, do the opposite interaction and repeat it a few times.
+1. Perform the reverse operation.  That is, do the opposite interaction and repeat it a few times.
 
-1. Take a second heap snapshot and change the view of this one to **Comparison**, comparing it to **Snapshot 1**.
+1. Take a second heap snapshot.
 
-In the **Comparison** view, the difference between two snapshots is displayed.  When expanding a total entry, added and deleted object instances are shown.
+1. In the second heap snapshot, change the view to **Comparison**, comparing it to **Snapshot 1**.
+
+In the **Comparison** view, the difference between two snapshots is displayed:
 
 ![Comparison view](./heap-snapshots-images/heap-snapshots-comparison-dropdown.png)
 
+When expanding a constructor in the list, added and deleted object instances are shown.
+
 <!--todo: add HeapProfilingComparison section when available  -->
 
-### Containment view
 
-The **Containment** view is essentially a "bird's eye view" of the objects structure of your application.  It allows you to peek inside function closures, to observe virtual machine (VM) internal objects that together make up your JavaScript objects, and to understand how much memory your application uses at a very low level.
+<!-- ------------------------------ -->
+#### Containment view
+
+The **Containment** view allows you to peek inside function closures, to observe virtual machine (VM) internal objects that make up your JavaScript objects, and to understand how much memory your application uses at a very low level:
+
+![Containment view](./heap-snapshots-images/heap-snapshots-containment-dropdown.png)
+
+The **Containment** view shows the following types of objects:
 
 | Containment view entry points | Description |
 |:--- |:--- |
 | **DOMWindow objects** | Global objects for JavaScript code.  |
-| **GC roots** | The actual GC roots used by the garbage of the VM.  GC roots are comprised of built-in object maps, symbol tables, VM thread stacks, compilation caches, handle scopes, and global handles.  |
-| **Native objects** | Browser objects "pushed" inside the JavaScript virtual machine (JavaScript VM) to allow automation, for example, DOM nodes, CSS rules.  |
-
-![Containment view](./heap-snapshots-images/heap-snapshots-containment-dropdown.png)
+| **GC roots** | The GC roots used by the garbage collector of the JavaScript virtual machine.  GC roots are comprised of built-in object maps, symbol tables, VM thread stacks, compilation caches, handle scopes, and global handles.  |
+| **Native objects** | Objects created by the browser such as DOM nodes and CSS rules, which are shown in the JavaScript virtual machine to allow automation. |
 
 <!--todo: add heap profiling containment section when available  -->
 
-### Naming functions to differentiate between closures in the snapshot
 
-Name the functions, so that you can easily distinguish between closures in the snapshot.  For example, this example doesn't use named functions:
+<!-- ------------------------------ -->
+#### The retainers section
 
-```javascript
-function createLargeClosure() {
-    var largeStr = 'x'.repeat(1000000).toLowerCase();
-    var lC = function() { // This is not a named function
-        return largeStr;
-    };
-    return lC;
-}
-```
+The **Retainers** section is displayed at the bottom of the **Memory** tool and shows all the objects which point to the selected object. The **Retainers** section is updated when you select a different object in the **Summary**, **Containment**, or **Comparison** view.
 
-The following code uses named functions, to easily distinguish between closures in the snapshot:
+In the following screenshot, a string object was selected in the **Summary** view, and the **Retainers** section shows that the string is retained by the `x` property of an instance of the `Item` class, found in the `example-03.js` file:
 
-```javascript
-function createLargeClosure() {
-    var largeStr = 'x'.repeat(1000000).toLowerCase();
-    var lC = function lC() { // This is a named function
-        return largeStr;
-    };
-    return lC;
-}
-```
+![The Retainers section](./heap-snapshots-images/retainers-section.png)
 
-#### Demo webpage: Example 7: Eval is evil
+###### Hide cycles
 
-To analyze the impact of closures on memory, try out this example: open the demo webpage [Example 7: Eval is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) in a new window or tab.
+In the **Retainers** section, when you analyze the objects which retain the selected object, you might encounter _cycles_. Cycles occur when the same object appears more than once in the retainer path of the selected object. In the **Retainers** section, a cycled object is indicated by being grayed out.
 
-<!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
+To help simplify the retainer path, hide cycles in the **Retainers** section by clicking the **Filter edges** dropdown menu and then selecting **Hide cycled**:
 
-#### Demo webpage: Example 8: Recording heap allocations
+![The Filter edges dropdown menu in the Retainers section, 'Hide cycled' is selected](./heap-snapshots-images/filters-retainers-memory-tool-no-hide-cycled.png)
 
-You may also be interested in following up the above demo with this example that takes you through recording heap allocations: open the demo webpage [Example 8: Recording heap allocations](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html) in a new window or tab.
+###### Hide internal nodes
 
-<!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
+_Internal nodes_ are objects that are specific to V8 (the JavaScript engine in Microsoft Edge).
 
-<!--
-![Name functions to distinguish between closures](../media/memory-problems-domleaks.png)
--->
+To hide internal nodes from the **Retainers** section, in the **Filter edges** dropdown menu, select **Hide internal**.
 
 
 <!-- ====================================================================== -->
-## Filter a heap snapshot by node type
+## Filter heap snapshots by node types
 
-Use filters to focus on specific parts of a heap snapshot.  You can filter by node type if, for example, you're only interested in the strings or arrays from the heap.
+Use filters to focus on specific parts of a heap snapshot. When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.
 
-When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  Use the **Node Types** filter when looking at a heap snapshot, to focus on only specific types of nodes.  For example, to see only the arrays and string objects that are in the heap, select the **Array** and **String** entries in the **Node Types** filter.
+To focus only on specific types of nodes, use the **Node Types** filter, in the upper right.  For example, to see only the arrays and string objects in the heap snapshot:
 
-![Node Types in a heap snapshot in the Memory tool](heap-snapshots-images/node-types-heap-snapshot.png)
+1. To open the **Node Types** filter, click **Default** in the upper right.
 
+1. Select the **Array** and **String** entries.
 
-<!-- ====================================================================== -->
-## Look up color coding
+   The heap snapshot is updated to show only the array and string objects:
 
-Properties and property values of objects have different types and are colored accordingly.  Each property has one of four types:
-
-| Property Type | Description |
-|:--- |:--- |
-| **a: property** | A regular property with a name, accessed via the `.` (dot) operator, or via `[` `]` (brackets) notation, for example `["foo bar"]`.  |
-| **0: element** | A regular property with a numeric index, accessed via `[` `]` (brackets) notation.  |
-| **a: context var** |  A variable in a function context, accessible by the variable name from inside a function closure.  |
-| **a: system prop** | A property added by the JavaScript VM, not accessible from JavaScript code.  |
-
-Objects designated as `System` don't have a corresponding JavaScript type.  Each is part of the object system implementation of the Javascript VM.  V8 allocates most of the internal objects in the same heap as the user's JS objects.  So these are just V8 internals.
+   ![Node Types in a heap snapshot in the Memory tool](heap-snapshots-images/node-types-heap-snapshot.png)
 
 
 <!-- ====================================================================== -->
@@ -263,46 +244,60 @@ To find an object in the collected heap, you can search using **Ctrl+F** and giv
 <!-- ====================================================================== -->
 ## Uncover DOM leaks
 
-The heap profiler has the ability to reflect bidirectional dependencies between browser native objects (DOM nodes, CSS rules) and JavaScript objects.  This helps to discover otherwise invisible leaks happening due to forgotten detached DOM subtrees floating around.
+The **Memory** tool has the ability to show the bidirectional dependencies that sometimes exist between browser native objects (DOM nodes, CSS rules) and JavaScript objects.  This helps to discover memory leaks that happen because of forgotten detached DOM nodes that remain in memory.
 
-DOM leaks may be bigger than you think.  Consider the following sample.  When is the `#tree` garbage-collected?
-
-```javascript
-var treeRef = document.querySelector("#tree");
-var leafRef = document.querySelector("#leaf");
-var body = document.querySelector("body");
-
-body.removeChild(treeRef);
-
-//#tree in not GC yet due to treeRef
-treeRef = null;
-
-//#tree is not GC yet due to indirect reference from leafRef
-
-leafRef = null;
-//#NOW can be #tree GC
-```
-
-The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when `leafRef` is nullified is the WHOLE tree under `#tree` a candidate for garbage-collection (GC).
+Consider the following DOM tree:
 
 ![DOM subtrees](./heap-snapshots-images/memory-problems-tree-gc.png)
 
+The following code sample creates the JavaScript variables `treeRef` and `leafRef`, which reference two of the DOM nodes in the tree:
 
-### Demo webpage: Example 6: Leaking DOM nodes
+```javascript
+// Get a reference to the #tree element.
+const treeRef = document.querySelector("#tree");
 
-Open the example webpage [Example 6: Leaking DOM nodes](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) in a new window or tab, to understand where DOM nodes might leak, and how to detect such leakage.
+// Get a reference to the #leaf element,
+// which is a descendant of the #tree element.
+const leafRef = document.querySelector("#leaf");
+```
+
+In the following code sample, the `<div id="tree">` element is removed from the DOM tree:
+
+```javascript
+// Remove the #tree element from the DOM.
+document.body.removeChild(treeRef);
+```
+
+The `<div id="tree">` element can't be garbage-collected because the JavaScript variable `treeRef` still exists. The `treeRef` variable directly references the `<div id="tree">` element. In the following code sample, the `treeRef` variable is nullified:
+
+```javascript
+// Remove the treeRef variable.
+treeRef = null;
+```
+
+The `<div id="tree">` element still can't be garbage-collected because the JavaScript variable `leafRef` still exists. The `leafRef.parentNode` property references the `<div id="tree">` element. In the following code sample, the `leafRef` variable is nullified:
+
+```javascript
+// Remove the leafRef variable.
+leafRef = null;
+```
+
+At this point, the `<div id="tree">` element can be garbage-collected. Both `treeRef` and `leafRef` must first be nullified, for the whole DOM tree under the `<div id="tree">` element to be garbage-collected.
+
+
+<!-- ------------------------------ -->
+#### Demo webpage: Example 6: Leaking DOM nodes
+
+To understand where DOM nodes might leak, and how to detect such leakage, open the example webpage [Example 6: Leaking DOM nodes](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) in a new window or tab.
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
+<!-- ------------------------------ -->
+#### Demo webpage: Example 9: DOM leaks bigger than expected
 
-### Demo webpage: Example 9: DOM leaks bigger than expected
-
-Open the example webpage [Example 9: DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html) in a new window or tab.
+To see why a DOM leak might be bigger than expected, open the example webpage [Example 9: DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html) in a new window or tab.
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
-
-
-To read more about DOM leaks and memory analysis fundamentals, check out [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
 
 <!-- Example: Try this **demo** to play with detached DOM trees. -->
 
@@ -318,6 +313,74 @@ To read more about DOM leaks and memory analysis fundamentals, check out [Findin
 
 
 <!-- ====================================================================== -->
+## Analyze the impact of closures on memory
+
+To analyze the impact of closures on memory, try out this example:
+
+1. Open the [Eval is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) demo webpage in a new window or tab.
+
+1. Record a heap snapshot.
+
+1. In the rendered webpage, click the **Closures with eval** button.
+
+1. Record a second heap snapshot.
+
+   In the sidebar, the number below the second snapshot should be larger than the number below the first snapshot. This indicates that more memory is being used by the webpage after clicking the **Closures with eval** button.
+
+1. In the second heap snapshot, change the view to **Comparison**, and then compare the second heap snapshot to the first heap snapshot.
+
+   The **Comparison** view shows that new strings were created in the second heap snapshot:
+
+   ![The Comparison view, showing that new strings were created in the second snapshot](./heap-snapshots-images/closure-retained-strings.png)
+
+1. In the **Comparison** view, expand the **(string)** constructor.
+
+1. Click the first **(string)** entry.
+
+   The **Retainers** section is updated and shows that the `largeStr` variable retains the string selected in the **Comparison** view.
+
+   The `largeStr` entry is automatically expanded and shows that the variable is retained by the `eC` function, which is the closure where the variable is defined:
+
+   ![The Retainers section, showing that the string is retained by the eC function](./heap-snapshots-images/closure-retained-strings-details.png)
+
+
+<!-- ------------------------------ -->
+#### Tip: name functions to differentiate between closures in a snapshot
+
+To easily distinguish between JavaScript closures in a heap snapshot, give your functions names.
+
+The following example uses an unnamed function to return the `largeStr` variable:
+
+```javascript
+function createLargeClosure() {
+    const largeStr = 'x'.repeat(1000000).toLowerCase();
+
+    // This function is unnamed.
+    const lC = function() {
+        return largeStr;
+    };
+
+    return lC;
+}
+```
+
+The following example names the function, which makes it easier to distinguish between closures in the heap snapshot:
+
+```javascript
+function createLargeClosure() {
+    const largeStr = 'x'.repeat(1000000).toLowerCase();
+
+    // This function is named.
+    const lC = function lC() {
+        return largeStr;
+    };
+
+    return lC;
+}
+```
+
+
+<!-- ====================================================================== -->
 ## Save and export strings from a heap snapshot to JSON
 
 When taking a heap snapshot in the **Memory** tool, you can export all string objects from the snapshot to a JSON file.  In the **Memory** tool, in the **Constructor** section, click the **Save all to file** button next to the `(string)` entry:
@@ -327,6 +390,13 @@ When taking a heap snapshot in the **Memory** tool, you can export all string ob
 The **Memory** tool exports a JSON file that contains all of the string objects from the heap snapshot:
 
 ![Strings from the heap snapshot, in the JSON file](heap-snapshots-images/heap-snapshot-strings-json-file.png)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Memory terminology](./memory-101.md).
+* [Finding and debugging memory leaks in JavaScript with Chrome DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa, which also applies to Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
