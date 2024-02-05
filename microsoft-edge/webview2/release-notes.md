@@ -113,6 +113,9 @@ The following APIs have been promoted to Stable and are now included in this Rel
 ---
 
 #### Bug fixes
+###### Runtime and SDK
+###### Runtime-only
+###### SDK-only
 -->
 <!-- end of Jan 2024 Release SDK -->
 
@@ -140,6 +143,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ---
 
 #### Bug fixes
+###### Runtime and SDK
+###### Runtime-only
+###### SDK-only
 -->
 <!-- end of Jan 2024 Prerelease SDK -->
 
