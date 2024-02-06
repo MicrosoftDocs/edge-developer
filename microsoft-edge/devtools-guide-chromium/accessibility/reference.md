@@ -81,7 +81,7 @@ This article lists typical accessibility aspects to test for webpages, and the c
 <!-- ====================================================================== -->
 ## See also
 
-*  [Navigate DevTools with assistive technology](navigation.md)
-*  [Accessibility testing](../../accessibility/test.md)
+*  [Navigate DevTools with assistive technology](./navigation.md)
+*  [Resources for accessibility testing](../../accessibility/test.md)
 *  [Accessibility principles and best practices](https://developer.mozilla.org/docs/Web/Accessibility) at MDN
 *  [Screen reader](https://developer.mozilla.org/docs/Glossary/Screen_reader) at MDN
