@@ -18,7 +18,41 @@ Use the following tools and testing procedures to evaluate your website for acce
 <!-- ====================================================================== -->
 ## Accessibility testing in DevTools
 
-*   [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md) - A list of accessibility aspects to test, and which features of DevTools to use for each test.
+DevTools includes accessibility-testing features, such as tools that automatically generate accessibility reports for a webpage, including the **Issues** tool and the **Lighthouse** tool.
+
+DevTools also supports manual accessibility testing, such as:
+
+* Inspect different parts of the page by using the **Inspect** tool.
+* Use the keyboard to navigate the page.
+* Look for issues that arise when interacting with the page.
+* Look for issues related to changes in display, such as making the window narrow.
+
+To learn more about the accessibility testing features of DEvTools, see [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md).
+
+
+<!-- ====================================================================== -->
+## Additional manual accessibility testing
+
+You might need to perform additional checks to ensure your website is usable by people with different needs, such as:
+
+* Testing when zoomed-in.
+* Testing with screen readers.
+* Testing with voice recognition.
+* Testing in high-contrast mode.
+
+
+<!-- ====================================================================== -->
+## Use testers who have different accessibility needs
+
+Ideally, have testers with different accessibility needs do manual accessibility testing.
+
+Automated tools can't find all the accessibility problems of a website, because many of the barriers show up only during interactive use.  None of the accessibility-testing features can replace testing with people that use assistive technologies and following a plan to check for all the required tests.
+
+
+<!-- ====================================================================== -->
+#### Use Accessibility Insights
+
+You can also use the assessment feature of [Accessibility Insights](https://accessibilityinsights.io) to measure your website's compliance the [Web Content Accessibility Guidelines (WCAG) 2.2 Level AA](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&levels=aaa) success criteria. To learn more, see [Assessment in Accessibility Insights for Web](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/).
 
 
 <!-- ====================================================================== -->
