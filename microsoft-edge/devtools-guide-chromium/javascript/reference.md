@@ -367,6 +367,59 @@ See [Run snippets of JavaScript on any webpage](./snippets.md).
 
 
 <!-- ====================================================================== -->
+## Use `# sourceURL` to name evaluated and inline code in DevTools
+
+To make a code block that isn't a file have a file name throughout DevTools, including in the **Sources** tool, use the `# sourceURL` pragma in a comment.
+
+Code blocks that aren't files include:
+
+* JavaScript code that's run by using the `eval()` function.
+* JavaScript code that's in a `<script>` tag.
+* CSS code that's in a `<style>` tag.
+
+When the browser runs the above kinds of code, DevTools doesn't have a file name to display these blocks of code, and the blocks of code are given generic names or don't appear at all.
+
+File names are displayed throughout the DevTools UI, such as in the following locations:
+
+* The **Navigator** pane of the **Sources** tool.
+* The **Call Stack** in the **Debugger** pane of the **Sources** tool.
+* The file's tab in the **Editor** pane of the **Sources** tool.
+* Log, warning, and error messages in the **Console** tool.
+* The flame chart in the **Performance** tool.
+
+The `# sourceURL` pragma, with syntax `//# sourceURL=my-assigned-file-name.js` or `/*# sourceURL=my-assigned-file-name.css*/`, is a special comment that gives evaluated and inline code a virtual file name throughout DevTools.
+
+Use the `# sourceURL` pragma to give a virtual file name to code blocks that aren't files, to display that file name in the **Sources** tool and throughout DevTools. For example:
+
+* For JavaScript:
+
+  ```javascript
+  function sum(a, b) {
+    return a + b;
+  }
+
+  console.log(sum(1, 2));
+  
+  //# sourceURL=math-utilities.js
+  ```
+
+* For CSS:
+
+  ```css
+  .card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  /*# sourceURL=card-styles.css*/
+  ```
+
+As a result, DevTools displays these code blocks, along with your specified virtual file names for them (`math-utilities.js` and `card-styles.css`):
+
+![The Sources and Console tools, showing the virtual file names](./reference-images/source-url-virtual-names.png)
+
+
+<!-- ====================================================================== -->
 ## See also
 
 *  [Get started debugging JavaScript](./index.md) - A simple, short tutorial using existing code, with screen captures.
