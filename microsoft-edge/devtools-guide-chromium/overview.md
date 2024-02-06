@@ -353,7 +353,7 @@ Besides the permanent **Elements**, **Console**, and **Sources** tools, you can 
 
    ![The More tools menu in the Activity Bar, with the expanded list of all tools](./overview-images/more-tools.png)
 
-1. Select a tool to pin it to the **Activity Bar**.  The tool is then present in the Activity Bar whenever DevTools is opened.
+1. Select a tool to pin it to the **Activity Bar**.  The tool is then present in the **Activity Bar** whenever DevTools is opened.
 
 If there isn't enough space in the **Activity Bar** to display all of the pinned tools, some tools may overflow into the **More tools** menu:
 
@@ -626,7 +626,7 @@ See also:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the Activity Bar, select the **__** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **__** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
 
 1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
 

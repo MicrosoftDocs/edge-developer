@@ -9,6 +9,8 @@ jobs:
   create_ado_item:
     name: Create an ADO work item for labeled issues
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - uses: MicrosoftEdge/action-issue-to-workitem@main
         env:
