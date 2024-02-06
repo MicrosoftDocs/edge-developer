@@ -33,7 +33,7 @@ To test that your code works as expected, without having to change your operatin
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, press **Ctrl+Shift+P** on Windows/Linux or **Command+Shift+P** on macOS to open the **Command Menu**.
+1. In DevTools, press **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
 1. Start typing **reduced**, select the **Emulate CSS prefers-reduced-motion** option, and then press **Enter**:
 

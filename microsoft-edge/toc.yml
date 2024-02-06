@@ -33,6 +33,9 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 121
+              href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
+
             - name: Microsoft Edge 120
               href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
 
@@ -60,14 +63,14 @@
             - name: Microsoft Edge 112
               href: devtools-guide-chromium/whats-new/2023/04/devtools-112.md
 
-            - name: Microsoft Edge 111
-              href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 111
+                  href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
 
                 - name: Microsoft Edge 110
                   href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
@@ -1135,7 +1138,7 @@
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: WebView2
       items:
-        - name: Introduction to Microsoft Edge WebView2  # existing firstchild article
+        - name: Introduction to Microsoft Edge WebView2
           href: webview2/index.md
           displayName: 
 
@@ -1662,6 +1665,30 @@
         - name: Accessibility testing
           href: accessibility/test.md
           displayName: 
+
+#==============================================================================
+# DualEngine
+    - name: DualEngine
+      items:
+        - name: Introduction to the Microsoft DualEngine API
+          href: dualengine/intro.md
+          displayName: Internet Explorer
+
+        - name: Getting started with the DualEngine API
+          href: dualengine/get-started.md
+          displayName:
+
+        - name: Creating a DualEngine adapter plugin DLL
+          href: dualengine/concepts/adapter-dll.md
+          displayName: 
+
+        - name: Launching Internet Explorer
+          href: dualengine/concepts/launching-internet-explorer.md
+          displayName:
+
+        - name: DualEngine Win32 C++ Reference
+          href: dualengine/reference/index.md
+          displayName: functions, methods
 
 # =============================================================================
 # bottom leaf nodes
