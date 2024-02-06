@@ -241,6 +241,8 @@ Allows host app to add JavaScript in the web content within the WebView2 control
     * [ICoreWebView2ScriptException::get_Name](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2277.86#get_name)<!--no put-->
     * [ICoreWebView2ScriptException::get_ToJson](/microsoft-edge/webview2/reference/win32/icorewebview2scriptexception?view=webview2-1.0.2277.86#get_tojson)<!--no put-->
 
+---
+
 
 <!-- ------------------------------ -->
 #### Web messaging
