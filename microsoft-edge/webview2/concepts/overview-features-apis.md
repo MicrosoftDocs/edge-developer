@@ -141,7 +141,7 @@ Host objects can be projected into JavaScript, so that you can call native objec
 <!-- ------------------------------ -->
 #### Script execution
 
-Allows host app to add JavaScript in the web content within the WebView2 control.
+Allows the host app to add JavaScript code in the web content within the WebView2 control.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
