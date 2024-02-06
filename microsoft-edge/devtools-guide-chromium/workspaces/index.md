@@ -67,7 +67,7 @@ If you run into issues while using workspaces with your framework of choice, or 
 <!-- ------------------------------ -->
 #### Related feature: Overrides
 
-**Overrides** is a DevTools feature that's similar to a workspace. You can use an override when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage. However, your changes aren’t saved when you refresh the webpage. 
+**Overrides** is a DevTools feature that's similar to a workspace. You can use an override when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage. However, your changes aren't saved when you refresh the webpage. 
 
 The **Overrides** feature lets you store a local copy of the webpage files on the server. When you refresh the page, Microsoft Edge loads the local copy of files instead of the files on the server.  To learn more about overrides, see [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
 
