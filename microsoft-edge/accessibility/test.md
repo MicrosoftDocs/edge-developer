@@ -27,7 +27,7 @@ DevTools also supports manual accessibility testing, such as:
 * Look for issues that arise when interacting with the page.
 * Look for issues related to changes in display, such as making the window narrow.
 
-To learn more about the accessibility testing features of DEvTools, see [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md).
+To learn more about the accessibility testing features of DevTools, see [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md).
 
 
 <!-- ====================================================================== -->
