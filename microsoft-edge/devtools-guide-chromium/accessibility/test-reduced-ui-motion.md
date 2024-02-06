@@ -22,7 +22,7 @@ To check whether the page is usable with animations turned off:
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. In DevTools, on the Activity Bar, select the **Sources** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./test-reduced-ui-motion-images/more-tools-icon.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Sources** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./test-reduced-ui-motion-images/more-tools-icon.png)) button.
 
 1. In the **Sources** tool's **Navigation** pane on the left, select `styles.css`.  The CSS file appears in the **Editor** pane.
 
