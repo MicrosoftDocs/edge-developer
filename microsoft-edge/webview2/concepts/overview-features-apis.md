@@ -154,38 +154,7 @@ Allows host app to add JavaScript in the web content within the WebView2 control
 * `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.ExecuteScriptAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.executescriptasync)
 
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync)
-   * [CoreWebView2.ExecuteScriptAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#executescriptasync)
-   * [CoreWebView2.RemoveScriptToExecuteOnDocumentCreated Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#removescripttoexecuteondocumentcreated)
-* `CoreWebView2Settings` Class:
-   * [CoreWebView2Settings.IsScriptEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isscriptenabled)
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.ExecuteScriptAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#executescriptasync)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `ICoreWebView2` interface:
-   * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated)
-   * [ICoreWebView2::ExecuteScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#executescript)
-   * [ICoreWebView2::RemoveScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#removescripttoexecuteondocumentcreated)
-* `ICoreWebView2Settings` interface:
-   * [ICoreWebView2Settings::get_IsScriptEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isscriptenabled)
-   * [ICoreWebView2Settings::put_IsScriptEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isscriptenabled)
-* `ICoreWebView2Frame2` interface:
-   * [ICoreWebView2Frame2::ExecuteScript method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#executescript)
-
----
-
-
-<!-- ---------- -->
-###### ExecuteScriptWithResult, TryGetResultAsString - INCOMING
-
-* `ExecuteScriptWithResult` provides exception information if the script failed.  `TryGetResultAsString` gets the script execution result as a string rather than as JSON, to make it more convenient to interact with string results:
-
-##### [.NET/C#](#tab/dotnetcsharp)
+**INCOMING:**
 
 * `CoreWebView2` Class:
     * [CoreWebView2.ExecuteScriptWithResultAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.executescriptwithresultasync?view=webview2-dotnet-1.0.2277.86)
@@ -203,7 +172,19 @@ Allows host app to add JavaScript in the web content within the WebView2 control
     * [CoreWebView2ScriptException.Name Property](/dotnet/api/microsoft.web.webview2.core.corewebview2scriptexception.name?view=webview2-dotnet-1.0.2277.86)
     * [CoreWebView2ScriptException.ToJson Property](/dotnet/api/microsoft.web.webview2.core.corewebview2scriptexception.tojson?view=webview2-dotnet-1.0.2277.86)
 
+
 ##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addscripttoexecuteondocumentcreatedasync)
+   * [CoreWebView2.ExecuteScriptAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#executescriptasync)
+   * [CoreWebView2.RemoveScriptToExecuteOnDocumentCreated Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#removescripttoexecuteondocumentcreated)
+* `CoreWebView2Settings` Class:
+   * [CoreWebView2Settings.IsScriptEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isscriptenabled)
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.ExecuteScriptAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#executescriptasync)
+
+**INCOMING:**
 
 * `CoreWebView2` Class:
     * [CoreWebView2.ExecuteScriptWithResultAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2277.86#executescriptwithresultasync)
@@ -222,6 +203,18 @@ Allows host app to add JavaScript in the web content within the WebView2 control
     * [CoreWebView2ScriptException.ToJson Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view=webview2-winrt-1.0.2277.86#tojson)
 
 ##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2` interface:
+   * [ICoreWebView2::AddScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated)
+   * [ICoreWebView2::ExecuteScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#executescript)
+   * [ICoreWebView2::RemoveScriptToExecuteOnDocumentCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2#removescripttoexecuteondocumentcreated)
+* `ICoreWebView2Settings` interface:
+   * [ICoreWebView2Settings::get_IsScriptEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isscriptenabled)
+   * [ICoreWebView2Settings::put_IsScriptEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isscriptenabled)
+* `ICoreWebView2Frame2` interface:
+   * [ICoreWebView2Frame2::ExecuteScript method](/microsoft-edge/webview2/reference/win32/icorewebview2frame2#executescript)
+
+**INCOMING:**
 
 * [ICoreWebView2_21](/microsoft-edge/webview2/reference/win32/icorewebview2_21?view=webview2-1.0.2277.86)
     * [ICoreWebView2_21::ExecuteScriptWithResult](/microsoft-edge/webview2/reference/win32/icorewebview2_21?view=webview2-1.0.2277.86#executescriptwithresult)
