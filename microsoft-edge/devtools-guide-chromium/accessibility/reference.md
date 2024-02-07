@@ -79,53 +79,9 @@ This article lists typical accessibility aspects to test for webpages, and the c
 
 
 <!-- ====================================================================== -->
-## Further automated and manual testing
-
-Testing the accessibility of your website is important to ensure that people with different needs can use your website.  The DevTools features described above are a good start to catch accessibility problems in your products.  These features range from automated checks and manual detail checks to simulation of different states and environments.
-
-
-#### First, use DevTools automated reports and manual testing
-
-As covered in the tables above, DevTools includes automated accessibility-testing features, such as tools that automatically generate accessibility reports for a webpage, including the **Issues** tool and the **Lighthouse** tool.  You can also use the Assessments feature of Accessibility Insights, per below.
-
-Microsoft Edge, including DevTools, also supports manual accessibility testing, such as: 
-* Inspect different parts of the page by using the **Inspect** tool.
-* Use the keyboard to navigate the page.
-* Look for issues that arise when interacting with the page.
-* Look for issues related to changes in display, such as making the window narrow.
-
-
-#### Perform additional checks
-
-After the tests that are listed above, you may need to perform additional checks, such as:
-
-* Testing when zoomed-in.
-* Testing with screen readers.
-* Testing with voice recognition.
-* Testing in high-contrast mode.
-
-
-#### Use testers who have different accessibility needs
-
-Ideally, have testers with different accessibility needs use these automated testing features and do manual accessibility testing.
-
-Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.  None of these features can replace a proper round of testing with people that use assistive technologies and following a plan to check for all the required tests.
-
-
-#### Use Accessibility Insights
-
-You can also use the [Assessments](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/) feature of [Accessibility Insights](https://accessibilityinsights.io).
-
-
-#### Use webhint in Visual Studio Code
-
-Another way to find out what to do to improve your webpage is to use the [webhint extension for Visual Studio Code](https://aka.ms/webhint4code).  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them.
-
-
-<!-- ====================================================================== -->
 ## See also
 
-*  [Navigate DevTools with assistive technology](navigation.md)
-*  [Accessibility testing](../../accessibility/test.md)
+*  [Navigate DevTools with assistive technology](./navigation.md)
+*  [Resources for accessibility testing](../../accessibility/test.md)
 *  [Accessibility principles and best practices](https://developer.mozilla.org/docs/Web/Accessibility) at MDN
 *  [Screen reader](https://developer.mozilla.org/docs/Glossary/Screen_reader) at MDN
