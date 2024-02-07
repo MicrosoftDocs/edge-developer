@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 104)
+title: What's New in DevTools (Microsoft Edge 104)
 description: "Use Layers in 3D View. Improved display of request URLs in Issues tool. Improving accessibility for the Detached Elements tool. Fix: Arrows representing web socket traffic now render correctly in the Network tool. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 08/02/2022
 ---
 # What's New in DevTools (Microsoft Edge 104)

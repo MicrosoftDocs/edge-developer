@@ -4,7 +4,8 @@ description: Dynamically inserting a NASA picture below the page body tag by usi
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 10/26/2022
 ---
 # Create an extension tutorial, part 2

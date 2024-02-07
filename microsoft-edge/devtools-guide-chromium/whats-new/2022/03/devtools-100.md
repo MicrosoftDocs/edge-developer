@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 100)
+title: What's New in DevTools (Microsoft Edge 100)
 description: New DevTools repo at GitHub, to send feedback. Use filters to focus on parts of a heap snapshot. Czech and Vietnamese UI. Network tool displays how a request was fulfilled. Links in a performance profile map to your original code. Network tool's Waterfall view matches Visual Studio Code themes.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 03/31/2022
 ---
 # What's New in DevTools (Microsoft Edge 100)

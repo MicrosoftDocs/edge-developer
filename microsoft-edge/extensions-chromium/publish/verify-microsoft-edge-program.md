@@ -4,7 +4,8 @@ description: Learn how to verify your account information when your company enro
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/02/2022
 ---
 # Verify the company account information associated with your Microsoft Partner Center account

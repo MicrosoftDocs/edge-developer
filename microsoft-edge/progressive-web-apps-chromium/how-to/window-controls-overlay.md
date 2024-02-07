@@ -4,8 +4,8 @@ description: Learn how to use the Window Controls Overlay API to make use of the
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 09/01/2022
 ---
 # Display content in the title bar

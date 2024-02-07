@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 81)
+title: What's New in DevTools (Microsoft Edge 81)
 description: 3D View, Visual Studio integration with Microsoft Edge, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
@@ -117,7 +118,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 ![The 3D View in the DevTools](./devtools-images/3dview.png)
 
-To access the 3D View, press **Ctrl+Shift+P** to open the Command Menu, start typing `3d view`, and then select **Show 3D View**.
+To open the **3D View** tool, press **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS) to open the Command Menu, start typing `3d view`, and then select **Show 3D View**.
 
 The Microsoft Edge team is working with the Chromium team on the UI and adding more functionality to the 3D View, so please use the **Send Feedback** icon!
 

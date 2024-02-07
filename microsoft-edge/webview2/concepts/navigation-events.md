@@ -4,8 +4,8 @@ description: "Navigation events for WebView2: NavigationStarting, SourceChanged,
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 11/07/2022
 ---
 # Navigation events for WebView2 apps

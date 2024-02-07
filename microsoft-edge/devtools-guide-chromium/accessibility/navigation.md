@@ -4,7 +4,8 @@ description: A guide on navigating Microsoft Edge DevTools using assistive techn
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 06/07/2021
 ---
 <!-- Copyright Rob Dodson
@@ -26,7 +27,7 @@ This article helps you use DevTools through the keyboard and through assistive t
 
 <!-- DevTools is a suite of web developer tools built into the Microsoft Edge browser. -->
 
-For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features](reference.md) and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
+For DevTools features related to improving the accessibility of a webpage, see [Accessibility-testing features](./reference.md).
 
 
 ### Tabbed tool panels containing tabs and pages
@@ -86,9 +87,9 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 ### Navigate by keyboard
 
-*  With DevTools open, press **Ctrl**+**]** (Windows, Linux) or **Command**+**]** (macOS) to move focus to the next tool on the main toolbar.
-*  Press **Ctrl**+**[** (Windows, Linux) or **Command**+**[** (macOS) to move focus to the previous tool on the main toolbar.
-*  Press **Tab** or **Shift+Tab** repeatedly until focus moves to the tabs of the main toolbar or drawer toolbar, and then use the arrow keys to move among the tools.
+*  With DevTools open, press **Ctrl+]** (Windows, Linux) or **Command+]** (macOS) to move focus to the next tool on the **Activity Bar**.
+*  Press **Ctrl+[** (Windows, Linux) or **Command+[** (macOS) to move focus to the previous tool on the **Activity Bar**.
+*  Press **Tab** or **Shift+Tab** repeatedly until focus moves to the tabs of the **Activity Bar** or **Quick View** toolbar, and then use the arrow keys to move among the tools.
 
 #### Known issues
 
@@ -98,13 +99,13 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 ### Navigate by Command Menu
 
-To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is called a _panel_ or _drawer_ item.
+To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is indicated as either a _Panel_ or _Quick View_ item.
 
 1. With DevTools open, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
    The **Command Menu** is a fuzzy-search autocomplete combobox.
 
-1. Type the name of a panel (tool), and then use the **Down Arrow** on the keyboard to navigate to the correct option.
+1. Type the name of a tool, and then use the **Down Arrow** on the keyboard to navigate to the correct option.
 
 1. Press **Enter** to run a command.
 
@@ -113,7 +114,7 @@ To open the **Elements** tool:
 
 1. Open the **Command Menu**.
 
-1. Start typing **elements**, select the **Panel > Show Elements** command, and then press **Enter**.
+1. Start typing **elements**, select the **Show Elements** command, and then press **Enter**.
 
 Opening a tool this way puts focus in the content area of the tool.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.
 

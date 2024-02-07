@@ -4,9 +4,9 @@ description: Host web content in your Win32, .NET, UWP apps with the Microsoft E
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
-ms.technology: webview
+ms.subservice: webview
 ms.date: 10/31/2023
 ---
 # Introduction to Microsoft Edge WebView2

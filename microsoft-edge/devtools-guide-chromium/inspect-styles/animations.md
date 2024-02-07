@@ -4,7 +4,8 @@ description: Inspect and modify CSS animation effects by using the Animation Ins
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/11/2021
 ---
 <!-- Copyright Kayce Basques
@@ -65,7 +66,7 @@ To open the Animation Inspector, use any of these approaches, in DevTools:
 
 *  From the **Customize** menu: Click the **Customize and control DevTools** (![Customize icon](./animations-images/customize-devtools-icon-light-theme.png)) menu button, point to the **More tools** sub-menu, and then select **Animations**.
 
-*  From the **Command Menu**:  When DevTools has focus, press **Shift+Ctrl+P** on Windows/Linux or **Command+Shift+P** on macOS to open the **Command Menu**, start typing `animations`, and then select **Drawer: Show Animations**.
+*  From the **Command Menu**:  When DevTools has focus, press **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**, start typing `animations`, and then select **Drawer: Show Animations**.
 
 By default, the **Animations** tool opens in the **Drawer**, next to the **Console** tool.  By using the **Animations** tool on the **Drawer**, you can use it at the same time as using another tools on the main toolbar.
 

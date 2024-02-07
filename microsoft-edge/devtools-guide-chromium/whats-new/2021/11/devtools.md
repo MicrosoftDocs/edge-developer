@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 96)
+title: What's New in DevTools (Microsoft Edge 96)
 description: Focus Mode and a vertical Activity Bar.  Auto-minimizing of the Console.  Display a webpage in Visual Studio Code, emulate devices, and see issues while editing.  Sources tool notifies you when sourcemaps can't be loaded.  If Sources is open, it's used rather than Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/16/2021
 ---
 # What's New in DevTools (Microsoft Edge 96)
@@ -18,7 +19,7 @@ ms.date: 11/16/2021
 <!-- Title: New DevTools UI available (in preview) -->
 <!-- Subtitle: A more minimal, modern UI is coming to Microsoft Edge DevTools. Enable the "Focus Mode" experiment to preview new UI features such a more compact toolbar that keeps DevTools uncluttered and better adapts to small window sizes. -->
 
-The Microsoft Edge DevTools team is experimenting with a new DevTools UI: **Focus Mode**.  Focus Mode reduces distractions and clutter with a more modern and simplified layout.  The new Activity Bar allows you to pin your favorite tools in a horizontal or vertical toolbar to use screen space more efficiently.
+The Microsoft Edge DevTools team is experimenting with a new DevTools UI: **Focus Mode**.  Focus Mode reduces distractions and clutter with a more modern and simplified layout.  The new **Activity Bar** allows you to pin your favorite tools in a horizontal or vertical toolbar to use screen space more efficiently.
 
 To give this new UI a try in Microsoft Edge version 96, select **Settings** (![the Settings gear icon in DevTools](./devtools-images/settings-gear-icon-light-mode.png)) > **Experiments** > **Focus Mode**.
 
@@ -29,7 +30,6 @@ This UI is still in development and may change in future versions of Microsoft E
 ![Focus Mode, including the Activity Bar](./devtools-images/focus-mode.png)
 
 See also:
-*  [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
 *  [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md) in the `MSEdgeExplainers` repo.
 
 
@@ -56,7 +56,7 @@ If you want to only allow the Console tool to open in a single place, you can co
 1. In the **Console** section, clear the checkbox **Show Console tab in main panel and drawer**, then click **Close** (**x**).
 
 See also:
-* [Panel tools vs. Drawer tools](../../../about-tools.md#panel-tools-vs-drawer-tools) in _About the list of tools_.
+* [Activity Bar tools vs. Quick View tools](../../../about-tools.md#activity-bar-tools-vs-quick-view-tools) in _About the list of tools_
 * [Move tools between top and bottom panels](../../2020/10/devtools.md#move-tools-between-top-and-bottom-panels) in _What's New in DevTools (Microsoft Edge 87)_.
 
 

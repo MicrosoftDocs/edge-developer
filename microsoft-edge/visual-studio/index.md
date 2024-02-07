@@ -4,7 +4,7 @@ description: Microsoft Edge and Visual Studio web development.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/27/2021
 ---
 # Visual Studio for web development

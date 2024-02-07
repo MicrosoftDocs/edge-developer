@@ -4,7 +4,8 @@ description: Use the filter options of the DevTools Console to reduce the noise 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 04/13/2021
 ---
 # Filter Console messages
@@ -33,7 +34,7 @@ Since no filter is applied, the following figure displays dozens of messages.  N
 
 ![No filter set means that you can display many console messages](./console-filters-images/console-filter-displays-all.png)
 
-To hide all the Warning-level messages to cut down on the noise, click the **Log Levels** dropdown and then clear the `Warnings` level.
+To hide all the Warning-level messages to cut down on the noise, click the **Log Levels** dropdown list, and then clear the `Warnings` level.
 
 ![Hiding all the warning level messages in the Console to filter much of the noise](./console-filters-images/console-filter-hide-warning.png)
 

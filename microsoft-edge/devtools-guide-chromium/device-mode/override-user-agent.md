@@ -4,7 +4,8 @@ description: Open the Network conditions tool, disable 'Select automatically', a
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/19/2021
 ---
 <!-- Copyright Kayce Basques
@@ -29,6 +30,8 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
    ![The Command Menu](./override-user-agent-images/device-mode-console-command-menu.png)
     
 1. Type `network conditions`, select **Show Network conditions**, and then press **Enter** to open the **Network conditions** tool.
+
+   ![Network Conditions from Command Menu](./override-user-agent-images/device-mode-console-command-menu-network-conditions.png)
 
 1. In the **User agent** section, clear the **Use browser default** checkbox.
 

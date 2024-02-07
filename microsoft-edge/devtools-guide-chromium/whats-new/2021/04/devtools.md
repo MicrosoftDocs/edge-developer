@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 91)
+title: What's New in DevTools (Microsoft Edge 91)
 description: Wavy underlines highlight code issues in the Elements tool, Service worker update timeline, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/06/2021
 ---
 <!-- Copyright Jecelyn Yeen
@@ -71,15 +72,11 @@ To turn off Tooltips, press **Esc**.
 
 Update: This feature has been released and is no longer experimental.<!-- valid. -->
 
-Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in [Focus Mode](../../../experimental-features/focus-mode.md).
+Note: As of May 2022, tooltips aren't supported from the **Activity Bar**.
 <!-- Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you can also click the **Toggle the DevTools Tooltips** (**?**) button at the bottom of the **Activity Bar**. -->
 <!-- ![Hover on anywhere in the highlighted region of the Issues tool to display more details](../../media/2021/04/elements-issues-focus-mode-tooltips.png) -->
-
-See also:
-* [Display DevTools Tooltips](../../../overview.md#display-devtools-tooltips) in _Overview of DevTools_.
-
 <!--
-* [Learn about DevTools with informative tooltips](../02/devtools.md#learn-about-devtools-with-informative-tooltips) in _What's new in DevTools (Microsoft Edge 90)_.
+* [Learn about DevTools with informative tooltips](../02/devtools.md#learn-about-devtools-with-informative-tooltips) in _What's New in DevTools (Microsoft Edge 90)_.
 -->
 
 
@@ -325,7 +322,7 @@ Now, to display the computed CSS value in the **Styles** tab in the **Elements**
 
 See also:
 * [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_.
-* [View the Computed sidebar pane in the Styles pane](../../2020/10/devtools.md#view-the-computed-sidebar-pane-in-the-styles-pane) in _What's new in DevTools (Microsoft Edge 87)_.
+* [View the Computed sidebar pane in the Styles pane](../../2020/10/devtools.md#view-the-computed-sidebar-pane-in-the-styles-pane) in _What's New in DevTools (Microsoft Edge 87)_.
 * [Explore all computed styles](../../../accessibility/navigation.md#explore-all-computed-styles) in _Navigate DevTools with assistive technology_.
 
 To view the history of this feature in the Chromium open-source project, see Issue [1076198](https://crbug.com/1076198).

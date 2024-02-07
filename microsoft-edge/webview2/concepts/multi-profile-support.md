@@ -4,8 +4,8 @@ description: How to have different profiles of a WebView2 app running with diffe
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 10/25/2022
 ---
 # Support multiple profiles under a single user data folder

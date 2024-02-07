@@ -1,10 +1,10 @@
 ---
-title: What's new in DevTools (Microsoft Edge 89)
+title: What's New in DevTools (Microsoft Edge 89)
 description: The What's New tool is now Welcome, Visual Font Editor in the Styles pane, CSS Flexbox debugging tools, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
 ---
@@ -81,13 +81,12 @@ Update: This feature has been released and is no longer experimental.<!-- To tur
 
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
-* [Using the Inspect tool to detect accessibility issues](../../../accessibility/accessibility-testing-in-devtools.md#using-the-inspect-tool-to-detect-accessibility-issues) in _Overview of accessibility testing using DevTools_.
+* [Use the Inspect tool to detect accessibility issues by hovering over the webpage](../../../accessibility/test-inspect-tool.md).
 * [Update .css files from within the Styles tab (CSS mirror editing)](../../../../visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md).
 
 Grid:
 * [CSS grids](../../../css/grid.md)
-* [Improved CSS Grid tooling](../../2020/10/devtools.md#improved-css-grid-tooling) in _What's new in DevTools (Microsoft Edge 87)_.
+* [Improved CSS Grid tooling](../../2020/10/devtools.md#improved-css-grid-tooling) in _What's New in DevTools (Microsoft Edge 87)_.
 <!-- todo: doc flexbox, probably next to grid.md -->
 
 MDN:
@@ -121,7 +120,6 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
 * [Inspect CSS Grid](../../../css/grid.md).
 
 
@@ -149,7 +147,6 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
 * [Inspect CSS Grid](../../../css/grid.md).
 
 
@@ -252,7 +249,7 @@ In Microsoft Edge version 89, node screenshots are more accurate, capturing the 
 For the history of this feature in the Chromium open-source project, see Issue [1003629](https://crbug.com/1003629).
 
 See also:
-* [Capture node screenshots using the Elements tool context menu](../../2020/08/devtools.md#capture-node-screenshots-using-the-elements-tool-context-menu) in _What's new in DevTools (Microsoft Edge 86)_
+* [Capture node screenshots using the Elements tool context menu](../../2020/08/devtools.md#capture-node-screenshots-using-the-elements-tool-context-menu) in _What's New in DevTools (Microsoft Edge 86)_
 
 
 <!-- ------------------------------ -->

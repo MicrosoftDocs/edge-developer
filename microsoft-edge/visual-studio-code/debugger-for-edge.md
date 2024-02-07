@@ -4,7 +4,7 @@ description: You can debug Microsoft Edge from Visual Studio Code using the buil
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 11/10/2021
 ---
 # Debug Microsoft Edge in Visual Studio Code

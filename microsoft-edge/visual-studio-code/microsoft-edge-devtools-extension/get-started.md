@@ -4,7 +4,7 @@ description: Step-by-step tutorial about opening and closing DevTools and using 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/06/2022
 ---
 # Get started using the DevTools extension for Visual Studio Code

@@ -4,8 +4,9 @@ description: How to apply different color themes to Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 09/20/2022
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/17/2023
 ---
 <!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,8 +21,6 @@ ms.date: 09/20/2022
 # Apply a color theme to DevTools
 
 You can apply various color themes to Microsoft Edge DevTools, including several themes from [Visual Studio Code](https://code.visualstudio.com), such as Monokai and Solarized Dark.  Themes affect the color of panes, buttons, and code syntax highlighting.
-
-![Various DevTools color themes](./theme-images/all-devtools-themes.png)
 
 This article is about changing the appearance of DevTools.  To instead change how the webpage under development is displayed, see [Emulate dark or light schemes in the rendered page](../accessibility/preferred-color-scheme-simulation.md).
 
@@ -46,17 +45,20 @@ Dark themes:
 - Solarized Dark
 - Tomorrow Night Blue
 
+The following screenshot shows four different DevTools themes, from top left to bottom right: Tomorrow Night Blue, Kimbie Dark, Solarized Dark, and Red:
+
+![Four Microsoft Edge windows, each with DevTools opened, and each with a different DevTools color theme](./theme-images/all-devtools-themes.png)
 
 <!-- ====================================================================== -->
 ## Changing the color theme from Settings
 
-1. Open DevTools, and then select **Settings** (the gear icon).
+1. In DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./theme-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./theme-images/settings-icon.png)) button.  Or, press **F1**.
 
    ![The Settings (gear) icon](./theme-images/setting-button.png)
 
-1. Select **Preferences**, and then in the **Appearance** section, select a theme from the **Theme** dropdown list.
+1. Select **Preferences**, and then in the **Appearance** section, select a theme from the **Theme** dropdown list:
 
-![Selecting a theme in Preferences](./theme-images/customize-theme-setting.png)
+   ![Selecting a theme in Preferences](./theme-images/setting.png)
 
 
 <!-- ====================================================================== -->
@@ -64,13 +66,16 @@ Dark themes:
 
 To use the Command Menu to change which color theme is applied to DevTools:
 
-1. [Open the Command Menu](../command-menu/index.md).
+1. In DevTools, open the Command Menu, such as by pressing **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS).
 
-1. Type `theme`, and then select an **Appearance** command, such as **Appearance: Switch to Abyss theme** or **Appearance: Switch to Light+ (Default) theme**.
+1. Start typing `theme`, and then select an **Appearance** command, such as **Switch to Abyss theme** or **Switch to Light+ (Default) theme**:
+
+![The list of themes in the Command Menu](./theme-images/command-menu.png)
 
 1. Press **Enter**.
 
-![The list of themes in the Command Menu](./theme-images/customize-theme-command-menu.png)
+See also:
+* [Run commands in the Command Menu](../command-menu/index.md)
 
 
 <!-- ====================================================================== -->

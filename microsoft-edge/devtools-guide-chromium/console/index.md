@@ -4,8 +4,9 @@ description: An introduction to the Console tool inside the Microsoft Edge Devel
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/12/2023
 ---
 # Console overview
 
@@ -19,13 +20,13 @@ The **Console** tool helps with several tasks, which are covered in more detail 
 * **Try JavaScript expressions** live in a [REPL](https://wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  See [Run JavaScript in the Console](console-javascript.md).
 * **Interact with the web project in the browser** using JavaScript.  See [Interact with the DOM using the Console](console-dom-interaction.md).
 
-You can open the **Console** tool in the top or bottom of DevTools; it's shown here in upper part, on the main toolbar:
+You can open the **Console** tool in the top or bottom of DevTools; it's shown here in upper part, on the **Activity Bar**:
 
-![The Console tool open in the upper panel](./index-images/console-intro-console-main.png)
+![The Console tool open in the upper panel](./index-images/console-main.png)
 
-The **Console** is shown here in the lower part of DevTools (the **Drawer**), with the **Elements** tool open above it:
+The **Console** is shown here in the lower part of DevTools (the **Quick View** panel), with the **Elements** tool open above it:
 
-![The Console in the lower panel with the Elements tool open above it](./index-images/console-intro-console-panel.png)
+![The Console in the lower panel with the Elements tool open above it](./index-images/console-quick-view.png)
 
 The fastest way to directly open the **Console** is to press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
@@ -33,11 +34,11 @@ The fastest way to directly open the **Console** is to press **Ctrl+Shift+J** (W
 <!-- ====================================================================== -->
 ## Error reports and the Console
 
-The **Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, the **Issues counter** is displayed next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Click the **Issues counter** to open the **Issues** tool and display the problem.  For more information, see [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
+The **Console** is the default place where JavaScript and connectivity errors are reported.  For more information, see [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
 
 DevTools gives detailed information about the error in the **Console**:
 
-![DevTools gives detailed information about the error in the Console](./index-images/console-debug-displays-error.png)
+![DevTools gives detailed information about the error in the Console](./index-images/displays-error.png)
 
 
 <!-- ====================================================================== -->
@@ -64,7 +65,7 @@ Issues are gradually being moved from the **Console** to the **Issues** tool.  H
 
 DevTools with a **Console** full of messages:
 
-![DevTools with a Console full of messages](./index-images/console-intro-noise.png)
+![DevTools with a Console full of messages](./index-images/noise.png)
 
 
 <!-- ====================================================================== -->
@@ -112,7 +113,7 @@ To log information to display in the Console:
 
    The **Console** displays the resulting messages that are caused by the demo code:
 
-   ![Console full of messages caused by demo code](./index-images/console-intro-logging.png)
+   ![Console full of messages caused by demo code](./index-images/logging.png)
 
 1. Paste the above code into the **Console**, and then press **Enter**.
 
@@ -141,7 +142,7 @@ To try running JavaScript in the Console:
 
 The **Console** displays the result of `2+2` live as you type it, displaying the result `4` on the following line:
 
-![The Console displays the result of 2+2 live as you type it](./index-images/console-javascript-eager-evaluation.png)
+![The Console displays the result of 2+2 live as you type it](./index-images/eager-evaluation.png)
 
 This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.
 
@@ -149,7 +150,7 @@ To run the JavaScript expression in the **Console** and optionally display a res
 
 Running several lines of JavaScript code in succession:
 
-![Run several lines of JavaScript code in succession](./index-images/console-javascript-several-expressions.png)
+![Run several lines of JavaScript code in succession](./index-images/several-expressions.png)
 
 By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then press **Enter**.  To work around the single-line limitation, press **Shift+Enter** instead of **Enter**.
 
@@ -169,7 +170,7 @@ For more information about all the ways to work with **Console**, see [Console a
 
 Autocompletion of JavaScript expressions in the **Console**:
 
-![Console autocompletion of JavaScript expressions](./index-images/console-javascript-autocomplete.png)
+![Console autocompletion of JavaScript expressions](./index-images/autocomplete.png)
 
 
 <!-- ====================================================================== -->
@@ -192,7 +193,7 @@ To use a JavaScript expression to read from the current page by reading a select
 
    This expression selects the first heading-level 1 from the DOM and then selects the HTML content that's contained between the `<h1>` start and end tags.  The **Console** displays the output of the expression, which is the text of the heading:
 
-   ![The Console displays the output of the expression, which is the text of the heading](./index-images/console-intro-reading-DOM.png)
+   ![The Console displays the output of the expression, which is the text of the heading](./index-images/reading-DOM.png)
 
 You have read from the DOM representation of the webpage, by entering a JavaScript expression in the **Console** and displaying the output in the **Console**.
 
@@ -213,7 +214,7 @@ To change the rendered webpage:
 
    The above JavaScript expression uses the `=` sign to assign a value to the selected DOM item.  The evaluated value of the expression is a string for a heading, in this example.  The expression's value (the heading string) is shown both in the **Console** and in the rendered webpage:
 
-   ![Write text to the DOM in the Console](./index-images/console-intro-wrtiting-DOM.png)
+   ![Write text to the DOM in the Console](./index-images/wrtiting-DOM.png)
 
    You changed the main heading of the webpage to **Rocking the Console**.
 
@@ -234,7 +235,7 @@ For example, to add a green border around all the links in the current webpage:
 
    The `$$(selector)` console utility function is "Query selector all".  This DOM query selector function returns an array of all the elements that match the specified CSS selector, like the JavaScript function `document.querySelectorAll()`.  In this example, we select all the `<a>` hyperlink elements and then apply a green box around them:
 
-   ![Manipulate a selection of elements using the Console](./index-images/console-intro-changing-styles.png)
+   ![Manipulate a selection of elements using the Console](./index-images/changing-styles.png)
 
 For more information, see [Console tool utility functions and selectors](utilities.md).
 

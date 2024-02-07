@@ -1,13 +1,13 @@
 ---
 title: Microsoft Edge Privacy Whitepaper
-description: Microsoft Edge Privacy Whitepaper.
+description: Privacy aspects of features of Microsoft Edge, including how your data is shared with Microsoft and how to change settings for this data sharing.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 11/13/2023
+ms.date: 01/19/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -308,13 +308,13 @@ Microsoft Edge supports a variety of first-party enterprise security and complia
 | Microsoft Insider Risk Management | [Insider risk management](/microsoft-365/compliance/insider-risk-management-solution-overview)|
 | Microsoft Edge management service | [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) |
 
-<!-- todo (Aug 2023): when the forthcoming anchor link section like https://learn.microsoft.com/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview exists in destination page, replace row by:
+<!-- todo (Aug 2023): when the forthcoming anchor link section like https://learn.microsoft.com/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview exists in destination page, replace the "Microsoft Defender for Cloud Apps (Preview)" row by:
 | Microsoft Defender for Cloud Apps | [Integration with Microsoft Edge for business preview](/defender-cloud-apps/session-policy-aad#integration-with-microsoft-edge-for-business-preview) in _Session policies_ |
 -->
 
 These features become functional only on enterprise-managed devices by acquiring the right license for the feature or by the administrator deploying specific policies on the device.
 
-When these enterprise features are on, the browser sends auditing and diagnostic data to the administrator as per the feature’s requirement to function, manage or diagnose properly. This data collection is controlled by the enterprise administrator and end user is not able to opt-out.
+When these enterprise features are on, the browser sends auditing and diagnostic data to the administrator as per the feature's requirement to function, manage or diagnose properly. This data collection is controlled by the enterprise administrator and end user is not able to opt-out.
 
 Please contact your enterprise administrator to understand your company's policies for such data collection.
 
@@ -390,21 +390,28 @@ To stop Microsoft Edge from finding related matches in **Find on page**:
 <!-- ====================================================================== -->
 ## Geolocation
 
-While you browse the web, websites may request your device's location from Microsoft Edge. Data about your device's location can be either precise or imprecise. For example, a precise location is needed to provide driving directions to or from your specific location. An imprecise location may be used to provide search results, news, and weather relevant to your general area.
+While you browse the web, websites can request your device's location from Microsoft Edge. Data about your device's location can be either precise or imprecise. For example, a precise location is needed to provide driving directions to or from your specific location. An imprecise location might be used to provide search results, news, and weather relevant to your general area.
 
-Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which allows websites to access your precise location with your permission. Microsoft Edge always asks for your permission before granting websites access to your precise location. To manage the site-specific permissions or to always block sites from accessing your precise location, go to `edge://settings/content/location`.
+Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which provides websites access to your device's location. By default, Microsoft Edge asks for your permission before granting a site access to your precise location. To manage site permissions or to always block sites from accessing your precise location, go to `edge://settings/content/location`.
 
-Microsoft Edge indicates when your precise location is being shared on the right side of the address bar. 
+Microsoft Edge provides the site with a location using your device's location services when they're turned on. For more information about how to enable location services on Windows, see [Windows location service and privacy](https://support.microsoft.com/help/4468240). 
+If your device's location services are turned off, Microsoft Edge tries to estimate your location by sending local network information (which might contain nearby Wi-Fi access point information and your device's IP address) to a Microsoft service. 
+
+When the site you are on has access to your location, Microsoft Edge shows a location icon in the address bar. You can select this icon to get more information and to manage the location access permissions for this site.
 
 ![Location](./index-images/geolocation2.png)
 
-You can allow Microsoft Edge to provide the requesting site with a precise location on Windows 10 and Windows 11. Open **Start** > **Settings** > **Privacy** > **Location** and turn on the **Allow access to location on this device** and **Allow apps to access your location** settings. These settings enable the Windows location service. When enabled, Microsoft services may also estimate your imprecise location via the Windows location service to provide locally relevant browsing experiences.
+Microsoft Edge doesn't collect or store the location data that is shared with the site, and generates a new random identifier for each request.
 
-If you turn off the **Allow access to location on this device** and **Allow apps to access your location** settings, some sites may still estimate your location using other technologies (such as Bluetooth, WiFi, cellular modem, or IP address) with varying degrees of accuracy. With Windows location settings disabled, precise location experiences that you allow in Microsoft Edge may also be inaccurate. For more information about Windows location settings, see [Windows location service and privacy](https://support.microsoft.com/help/4468240).
+When you browse the web using **InPrivate**, the **Ask** and **Block** permissions, which control accessing your precise location, are inherited from the profile that you used to open the **InPrivate** window. However, the **Allow** permissions are not automatically inherited, and Microsoft Edge asks for your permission again before granting the site access to your precise location.  In **Guest** mode, Microsoft Edge always asks for permission before granting a site access to your precise location.
 
-Microsoft Edge doesn't store your geolocation coordinates. When making requests to the Windows location service, Microsoft Edge generates a new random ID for each request.
 
-**InPrivate** browsing uses the precise location permission setting of the profile from which the **InPrivate** session was launched. **Guest** mode always asks you for permission before granting the site your precise location.
+<!-- ====================================================================== -->
+## History
+
+History supports views to display images of your web navigations and enhance your history experience.  All history data is stored locally on the device, and is organized per Microsoft Edge profile.  Images are saved for the duration the history exists (90 days).
+
+If you want Microsoft Edge not to capture images for your history, select the **Turn off images** button in the history hub.  Or, go to `edge://settings/privacy`, scroll down to the **Services** section, and then turn off the toggle for **Save screenshots of site for History**.  All previously saved images will be erased.
 
 
 <!-- ====================================================================== -->
@@ -420,19 +427,19 @@ Image Descriptions can be turned on for the current web page without enabling fo
 
 
 <!-- ====================================================================== -->
-## Image Enhancement
-
-To provide a better browsing experience, Microsoft Edge offers Image Enhancement by improving color, lighting, contrast, and sharpness of images. When Image Enhancement is turned on, Microsoft Edge encrypts and transmits image URLs to Microsoft servers to perform image enhancement. No user identifiers are included in the requests to the servers. The image URL and enhanced image are cached for 7 days solely to improve performance. 
-
-To control Image Enhancement, go to `edge://settings/privacy` and turn on or off the **Enhance images in Microsoft Edge** setting. 
-
-
-<!-- ====================================================================== -->
 ## Import browser data
 
 Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time. You can import your browser data to Microsoft Edge from another browser. The data includes your favorites, browsing history, cookies, autofill data, extensions, settings, and other browsing data.
 
-With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
+With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.
+
+Importing your data is completed locally on your device and is stored locally.  The imported data is sent to Microsoft only after you do at least one of the following actions: 
+
+* Sign into Microsoft Edge with a Microsoft account, and turn on sync'ing of your browsing data across all signed-in devices.
+
+* In Microsoft Edge settings, turn on the toggle **Privacy, search, and services** > **Personalization & advertising** > **Allow Microsoft to save your browsing activity including history, usage, favorites, web content, and other browsing data to personalize Microsoft Edge and Microsoft services like ads, search, shopping and news**.
+
+You can manage your browsing history that's stored on Microsoft servers by visiting [https://account.microsoft.com](https://account.microsoft.com).
 
 You can manage your import preferences any time from `edge://settings/profiles/importBrowsingData`.
 
@@ -1020,10 +1027,14 @@ To turn off all spelling and grammar capabilities:
 1. Go to `edge://settings/languages`.
 1. Turn off the **Use writing assistance** toggle.
 
+
+<!-- ------------------------------ -->
 #### Languages
 
 When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device over HTTPS. The dictionary is used for the basic spellcheck service or for languages that aren't supported by Microsoft Editor spelling and grammar checking. Deleting the language from your Microsoft Edge settings deletes the dictionary from the device. 
  
+
+<!-- ------------------------------ -->
 #### Text prediction 
 
 Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press **Tab** or the **Right Arrow** key to accept them. Password fields will not offer text predictions.
@@ -1041,6 +1052,29 @@ If you are browsing while using **InPrivate** or **Guest** mode, text prediction
 If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.  
 
 Text prediction is only available in select languages and regions.
+
+
+<!-- ------------------------------ -->
+#### Windows Ink
+
+Windows Ink allows you to write with a digital pen directly into an input field on Windows 11 touch devices.  This helps you stay in your workflow by reducing the need to switch back and forth between the keyboard and a digital pen.  Supported fields include text boxes, `contenteditable` elements, and the Address bar.  Password fields are not supported.
+
+Windows Ink supports the following writing tasks:
+
+| Task | How to accomplish | Before | After |
+|---|---|---|---|
+| Insert text | Write in or near the text box. | ![Insert text (before)](./index-images/windows-ink-add-text-before.png) | ![Insert text (after)](./index-images/windows-ink-add-text-after.png) |
+| Delete text | Scribble over the words that you want to delete. | ![Delete text (before)](./index-images/windows-ink-delete-text-before.png) | ![Delete text (after)](./index-images/windows-ink-delete-text-after.png)|
+| Add space | Draw a vertical line where you want a space to be inserted. | ![Add space (before)](./index-images/windows-ink-insert-space-before.png) | ![Add space (after)](./index-images/windows-ink-insert-space-after.png) |
+| Remove space | Draw a vertical line on the space that you want to remove. | ![Remove space (before)](./index-images/windows-ink-remove-space-before.png) | ![Remove space (after)](./index-images/windows-ink-remove-space-after.png) |
+| Select text | Draw a horizontal line across the text to select. | ![Select text (before)](./index-images/windows-ink-select-text-before.png) | ![Select text (after)](./index-images/windows-ink-select-text-after.png) |
+| Add newline | Draw a "backwards L" at the end of a line of text. | ![Add newline (before)](./index-images/windows-ink-add-newline-before.png) | ![Add newline (after)](./index-images/windows-ink-add-newline-after.png) |
+
+Aggregate feature usage data is collected to measure frequency of usage and latency.  Text that you've inputted and personal identifiers are not sent to Microsoft.
+
+To opt out of Windows Ink for Microsoft Edge, go to `edge://settings/content/HandwritingToText`, and then in the **Site permissions > Handwriting To Text** section, turn off the **Turn handwriting into text on input fields** toggle.
+
+To disable Windows Ink for an entire Windows device, go to **Settings > Bluetooth & devices > Pen & Windows Ink > Shell Handwriting**, and then turn off the **Use your handwriting to enter text** toggle.
 
 
 <!-- ====================================================================== -->

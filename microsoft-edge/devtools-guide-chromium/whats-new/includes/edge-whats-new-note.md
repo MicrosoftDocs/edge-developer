@@ -1,7 +1,7 @@
 ---
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.topic: include
 ms.date: 05/24/2021
 ---

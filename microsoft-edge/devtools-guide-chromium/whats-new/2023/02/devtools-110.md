@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 110)
+title: What's New in DevTools (Microsoft Edge 110)
 description: "Faster heap snapshots in Memory tool. Move tools between Activity Bar and Quick View in Focus Mode. Screen readers report when More Tools is expanded. Change Dock and Activity Bar location via keyboard. Screen readers announce which theme is selected. Improved support for contrast themes. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 02/09/2023
 ---
 # What's New in DevTools (Microsoft Edge 110)
@@ -32,17 +33,17 @@ See also:
 
 <!-- Subtitle: Customize both the Activity Bar and Quick View in Focus Mode to see only the tools you care about. -->
 
-Microsoft Edge 110 contains various improvements to [Focus Mode](../../../experimental-features/focus-mode.md) in DevTools.  The following changes make it easier to customize the Activity Bar and Quick View, to show only the tools that you're currently interested in.
+Microsoft Edge 110 contains various improvements to Focus Mode in DevTools.  The following changes make it easier to customize the **Activity Bar** and the **Quick View** panel, to show only the tools that you're currently interested in.
 
 
 <!-- ------------------------------ -->
 #### When moving a tool, the right-click menu shows the current placement of the destination toolbar
 
-The right-click menu command for moving a tool between Quick View and the Activity Bar now indicates the placement of the destination toolbar, such as:
+The right-click menu command for moving a tool between the **Quick View** panel and the **Activity Bar** now indicates the placement of the destination toolbar, such as:
 * **Move to bottom Quick View**
 * **Move to side Quick View**
-* **Move to left Activity Bar**
 * **Move to top Activity Bar**
+* **Move to left Activity Bar**
 
 ![Right-click menu showing 'Move to bottom Quick View'](./devtools-110-images/move-to-bottom-quick-view.png)
 
@@ -50,13 +51,13 @@ The right-click menu command for moving a tool between Quick View and the Activi
 <!-- ------------------------------ -->
 #### The right-click menu is no longer displayed over the tool's tab in the toolbar
 
-The right-click menu for moving a tool between the Activity Bar and Quick View no longer obscures the tool's name in the toolbar.
+The right-click menu for moving a tool between the **Activity Bar** and the **Quick View** toolbar no longer obscures the tool's name in the toolbar.
 
-For example, the **Network Conditions** tool name remains visible when you right-click the tool's tab in Quick View:
+For example, the **Network Conditions** tool name remains visible when you right-click the tool's tab in the **Quick View** toolbar:
 
 ![The right-click menu in Quick View](./devtools-110-images/focus-mode-moving-tools-context-menu.png)
 
-As another example, the **Network** tool name remains visible when you right-click the tool's tab in the Activity Bar:
+As another example, the **Network** tool name remains visible when you right-click the tool's tab in the **Activity Bar**:
 
 ![The right-click menu in the Activity Bar](./devtools-110-images/tool-name-remains-visible.png)
 
@@ -64,19 +65,15 @@ As another example, the **Network** tool name remains visible when you right-cli
 <!-- ------------------------------ -->
 #### Focus is preserved in Activity Bar or Quick View when moving a tool between them
 
-For keyboard shortcut and assistive technology users, focus is preserved in the Activity Bar or Quick View when moving the currently selected tool from one toolbar to the other, or when removing a tool from the toolbar.
+For keyboard shortcut and assistive technology users, focus is preserved in the **Activity Bar** or **Quick View** toolbar when moving the currently selected tool from one toolbar to the other, or when removing a tool from the toolbar.
 
-For example, suppose the **Network** tool has been moved to Quick View, and you right-click the **Network** tab on the Quick View toolbar:
+For example, suppose the **Network** tool has been moved to the **Quick View** toolbar, and you right-click the **Network** tab on the **Quick View** toolbar:
 
 ![Right-clicking the Network tool in Quick View](./devtools-110-images/right-click-network-tool-to-move.png)
 
-If you then select **Remove from Quick View**, focus stays in the Quick View toolbar and moves to the **Network conditions** tool, which is the next tool in Quick View:
+If you then select **Remove from Quick View**, focus stays in the **Quick View** toolbar and moves to the **Network conditions** tool, which is the next tool in the **Quick View** toolbar:
 
-![Focus stays in Quick View and moves to another tool in Quick View](./devtools-110-images/focus-moves-to-other-tool-same-toolbar.png)
-
-
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
+![Focus stays in the Quick View toolbar and moves to another tool in the Quick View toolbar](./devtools-110-images/focus-moves-to-other-tool-same-toolbar.png)
 
 
 <!-- ====================================================================== -->
@@ -102,7 +99,7 @@ Screen readers now correctly report when the **More tools** (![Plus sign icon](.
 
 In previous versions of Microsoft Edge, in Focus Mode, it wasn't possible to change the **Dock location** or the **Activity Bar location** via the keyboard.  In Microsoft Edge 110, this issue has been fixed.
 
-In Focus Mode, you can now change the Dock location and the Activity Bar location from the **Customize and control DevTools** (![Ellipses icon](./devtools-110-images/customize-devtools-focus-mode-icon.png)) menu by using the arrow keys:
+In Focus Mode, you can now change the Dock location and the **Activity Bar** location from the **Customize and control DevTools** (![Ellipses icon](./devtools-110-images/customize-devtools-focus-mode-icon.png)) menu by using the arrow keys:
 
 ![Changing the Dock location in Focus Mode by pressing arrow keys](./devtools-110-images/a11y-focus-mode-dock-location.png)
 

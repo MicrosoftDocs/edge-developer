@@ -4,7 +4,7 @@ description: Learn how to change CSS font styles and settings using the Styles p
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 no-loc: ["Enable new font editor tool within the Styles pane"]
 ms.date: 03/11/2021
 ---

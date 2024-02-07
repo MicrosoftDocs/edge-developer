@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 103)
+title: What's New in DevTools (Microsoft Edge 103)
 description: "New node types in the Memory tool. DevTools extension for Visual Studio Code: Right-click an HTML file to launch, and Application tool. Focus Mode bug fixes. 3D View tool responsive layout. Fix: The Close button for DevTools is now accessible in high contrast mode. Welcome tool redesign. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 06/23/2022
 ---
 # What's New in DevTools (Microsoft Edge 103)
@@ -27,7 +28,7 @@ In Microsoft Edge 103, when taking a heap snapshot in the **Memory** tool, there
 For history, see [Issue 12769: Improve categorization of objects in heap snapshots](https://bugs.chromium.org/p/v8/issues/detail?id=12769).
 
 See also:
-* [Constructor (group) entries in the heap profiler](../../../memory-problems/heap-snapshots.md#constructor-group-entries-in-the-heap-profiler) in _Record heap snapshots using the Memory tool_.
+* [Constructor entries in the Summary view](../../../memory-problems/heap-snapshots.md#constructor-entries-in-the-summary-view) in _Record heap snapshots using the Memory tool_.
 
 
 <!-- ====================================================================== -->
@@ -61,12 +62,9 @@ In the new **Focus Mode** DevTools UI, various bugs affecting controls and keybo
 *  Improved reliability of **Quick View** controls.
 *  Improved behavior of opening DevTools by using keyboard shortcuts.
 *  Fixed an issue with navigating to a specific line of code in the **Sources** tool by using keyboard shortcuts.
-*  Restored the keyboard shortcut to open **Search** in **Quick View**, which is **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS):
+*  Restored the keyboard shortcut to open **Search** in the **Quick View** panel, which is **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS):
 
-![The Search keyboard shortcut opens the Search tool in Quick View](devtools-103-images/focus-mode-search-shortcut.png)
-
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
+![The Search keyboard shortcut opens the Search tool in the Quick View panel](devtools-103-images/focus-mode-search-shortcut.png)
 
 
 <!-- ====================================================================== -->

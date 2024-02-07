@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 86)
+title: What's New in DevTools (Microsoft Edge 86)
 description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo and Samsung Galaxy Fold, CSS grid overlay improvements, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Jecelyn Yeen
@@ -76,7 +77,7 @@ The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on add
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**. -->
 
 See also:
-* [CSS grid debugging features](../06/devtools.md#css-grid-debugging-features) in _What's new in DevTools (Microsoft Edge 85)_.
+* [CSS grid debugging features](../06/devtools.md#css-grid-debugging-features) in _What's New in DevTools (Microsoft Edge 85)_.
 * [Inspect CSS Grid in Microsoft Edge DevTools](../../../css/grid.md).
 
 Chromium issue: [#1047356](https://crbug.com/1047356)
@@ -202,7 +203,7 @@ For example, to take a screenshot of the table of contents, right-click the elem
 Chromium issue: [#1100253](https://crbug.com/1100253)
 
 See also:
-* [Capture node screenshot beyond viewport](../../2021/01/devtools.md#capture-node-screenshot-beyond-viewport) in _What's new in DevTools (Microsoft Edge 89)_
+* [Capture node screenshot beyond viewport](../../2021/01/devtools.md#capture-node-screenshot-beyond-viewport) in _What's New in DevTools (Microsoft Edge 89)_
 
 
 <!-- ====================================================================== -->
@@ -225,7 +226,7 @@ Third-party issues are now hidden by default in the **Issues** tool.  Select the
 
 Chromium issues: [1096481](https://crbug.com/1096481), [1068116](https://crbug.com/1068116), [1080589](https://crbug.com/1080589)
 
-For more information, see [Filter by origin](../../../issues/index.md#filter-by-origin) in _Find and fix problems using the Issues tool_.
+For more information, see [Filter issues by origin](../../../issues/index.md#filter-issues-by-origin) in _Find and fix problems using the Issues tool_.
 
 
 <!-- ====================================================================== -->
@@ -260,7 +261,7 @@ See also [Analyze rendering performance with the Rendering tool](../../../evalua
 <!-- ====================================================================== -->
 ### Emulate inactive users
 
-The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool from the [Drawer](../../../customize/index.md#drawer).
+The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool from the [Drawer](../../../customize/index.md#quick-view).
 
 ![Emulate inactive users](./devtools-images/emulate-idle.png)
 

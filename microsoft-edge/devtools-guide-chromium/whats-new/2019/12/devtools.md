@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 80)
+title: What's New in DevTools (Microsoft Edge 80)
 description: Accessibility improvements, using the DevTools in other languages, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/13/2021
 ---
 <!-- Copyright Kayce Basques
@@ -20,7 +21,7 @@ ms.date: 12/13/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's new in DevTools (Microsoft Edge 80)
+# What's New in DevTools (Microsoft Edge 80)
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
@@ -113,9 +114,9 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 ![The 3D View in DevTools](./devtools-images/3dview.png)
 
-To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press **F1** in DevTools, or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, press **Ctrl+Shift+P**, type in **3D View** and select **Show 3D View**.
+To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press **F1** in DevTools, or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, press **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS), type in **3D View**, and then select **Show 3D View**.
 
-We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](../../../contact.md).
+We're working on the UI and adding more functionality to the 3D View, so please send us your [feedback](../../../contact.md).
 
 Chromium issue [#987787](https://crbug.com/987787)
 

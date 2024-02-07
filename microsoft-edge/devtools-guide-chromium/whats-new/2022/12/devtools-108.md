@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 108)
+title: What's New in DevTools (Microsoft Edge 108)
 description: "Microsoft Edge WebDriver is now available for macOS running on Apple M1. Improved DevTools navigation via Command Palette. Better support for high contrast mode in DevTools. In Focus Mode, disabling JavaScript now produces a warning icon for the Sources tool.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/01/2022
 ---
 # What's New in DevTools (Microsoft Edge 108)
@@ -85,7 +86,7 @@ See also:
 
 <!-- Subtitle: The Sources tool in Focus Mode will warn you when you disable JavaScript in the DevTools. -->
 
-In previous versions of Microsoft Edge, in Focus Mode, disabling JavaScript in the DevTools didn't produce a visual indication in the **Sources** tool.  In Microsoft Edge version 107, this issue has been fixed.  Disabling JavaScript will now produce a warning icon (![JavaScript Disabled warning icon](./devtools-108-images/javascript-disabled-warning-icon.png)) next to the **Sources** tool icon on the Activity Bar.
+In previous versions of Microsoft Edge, in Focus Mode, disabling JavaScript in the DevTools didn't produce a visual indication in the **Sources** tool.  In Microsoft Edge version 107, this issue has been fixed.  Disabling JavaScript will now produce a warning icon (![JavaScript Disabled warning icon](./devtools-108-images/javascript-disabled-warning-icon.png)) next to the **Sources** tool icon on the **Activity Bar**.
 
 1. Open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
@@ -93,7 +94,7 @@ In previous versions of Microsoft Edge, in Focus Mode, disabling JavaScript in t
 
    ![Using Command Menu to select Disable JavaScript](./devtools-108-images/disable-javascript.png)
 
-   A yellow warning icon is added to the **Sources** tool icon on the Activity Bar to indicate that JavaScript is disabled:
+   A yellow warning icon is added to the **Sources** tool icon on the **Activity Bar** to indicate that JavaScript is disabled:
 
    ![JavaScript Disabled indicator next to Sources tool icon on Activity Bar](./devtools-108-images/javascript-disabled.png)
 

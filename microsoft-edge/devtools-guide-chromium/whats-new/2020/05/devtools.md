@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 84)
+title: What's New in DevTools (Microsoft Edge 84)
 description: Use DevTools in Windows high contrast mode, match keyboard shortcuts in DevTools to Visual Studio Code, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/13/2021
 ---
 <!-- Copyright Kayce Basques
@@ -20,7 +21,7 @@ ms.date: 12/13/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's new in DevTools (Microsoft Edge 84)
+# What's New in DevTools (Microsoft Edge 84)
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
@@ -97,7 +98,7 @@ Click **inspect** for the tab or PWA that you want to debug, to open DevTools.  
 <!-- ====================================================================== -->
 ### Resize the DevTools drawer more easily
 
-In Microsoft Edge 83 or earlier, you resized the [DevTools Drawer](../../../customize/index.md#drawer) by hovering inside the toolbar of the drawer.  The drawer behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it.  The following image shows how resizing the drawer worked in Microsoft Edge version 83 or earlier:
+In Microsoft Edge 83 or earlier, you resized the [DevTools Drawer](../../../customize/index.md#quick-view) by hovering inside the toolbar of the drawer.  The drawer behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it.  The following image shows how resizing the drawer worked in Microsoft Edge version 83 or earlier:
 
 ![Resizing the DevTools Drawer in Microsoft Edge 83](./devtools-images/drawer-83.png)
 
@@ -294,7 +295,7 @@ The **Properties** pane in the **Elements** tool is deprecated.  Run `console.di
 #### Reference
 
 * [console.dir()](../../../console/api.md#dir)
-* [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object)
+* [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object-0-4)
 
 
 <!-- ====================================================================== -->

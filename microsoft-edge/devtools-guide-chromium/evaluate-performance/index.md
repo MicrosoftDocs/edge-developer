@@ -4,7 +4,8 @@ description: Tutorial about how to evaluate runtime performance in Microsoft Edg
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/04/2023
 ---
 <!-- Copyright Kayce Basques
@@ -58,15 +59,13 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. In DevTools, open the **Performance** tool.
 
-1. Select the **Screenshots** checkbox.
-
 1. Click **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)).  DevTools reveals settings related to how it captures performance metrics.
 
 1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
 
    ![CPU throttle](./index-images/capture-settings.png)
 
-   If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
+   If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.
 
 
 <!-- ------------------------------ -->
@@ -271,9 +270,7 @@ To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rai
 
 To get more comfortable with the **Performance** tool, practice profiling your pages and analyzing the results.
 
-If you have any questions about your results, click the **Send Feedback** (![Send Feedback icon](./index-images/send-feedback-icon.png)) button on the main toolbar (or press **Alt+Shift+I** on Windows and Linux or **Option+Shift+I** on macOS):
-
-![The **Send Feedback** icon in Microsoft Edge DevTools](./index-images/feedback-icon.png)
+If you have any questions about your results, in the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar](./index-images/help-icon.png)) > **Feedback**.  Or, press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS).
  
 Or, [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).
 

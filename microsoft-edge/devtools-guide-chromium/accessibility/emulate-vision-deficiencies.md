@@ -4,12 +4,13 @@ description: Emulating vision deficiencies in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 06/07/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 12/04/2023
 ---
 # Emulate vision deficiencies
 
-To better meet the needs of your users with [color vision deficiency](https://www.colourblindawareness.org) (color blindness) or blurred vision, [Microsoft Edge DevTools](../index.md) allows you to simulate blurred vision and specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories:
+To better meet the needs of users with [color vision deficiency](https://www.colourblindawareness.org) (color blindness) or blurred vision, Microsoft Edge DevTools allows you to simulate blurred vision and specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories:
 
 | Color vision deficiency | Details |
 |:--- |:--- |
@@ -25,37 +26,31 @@ The **Emulate vision deficiencies** tools simulate approximations of how a perso
 <!-- ====================================================================== -->
 ## Open the Rendering tool
 
-To simulate how a person with a vision deficiency would see your web page, open the [Rendering Tools](../rendering-tools/index.md).
+To simulate how a person with a vision deficiency would see your webpage, use the **Rendering** tool:
 
-1. Click **Customize and control DevTools** (`...`) in the toolbar.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. Go to **More tools** > **Rendering** to open the **Rendering** panel in the drawer.
+1. In DevTools, on the **Activity Bar**, select the **Rendering** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./emulate-vision-deficiencies-images/more-tools-icon.png)) button. The **Rendering** tool opens.
 
-   > [!div class="mx-imgBorder"]
-   > ![Opening the Rendering panel from the More tools menu](./emulate-vision-deficiencies-images/getting-to-the-rendering-tools.png)
+1. Scroll down to the **Emulate vision deficiencies** section:
 
-1. Scroll down to the **Emulate vision deficiencies** section, click the **No emulation** dropdown list, and then select an option.
+   ![The Emulate vision deficiencies section in the Rendering tool](./emulate-vision-deficiencies-images/accessibility-emulate-vision-menu-options.png)
 
-   > [!div class="mx-imgBorder"]
-   > ![The Emulate vision deficiencies section in the Rendering panel](./emulate-vision-deficiencies-images/accessibility-emulate-vision-menu-options.png)
+1. Click the **No emulation** dropdown list, and then select an option. The browser window simulates the selected vision deficiency in the rendered webpage:
 
-1. The browser window simulates the selected vision deficiency on the current page.
-
-   > [!div class="mx-imgBorder"]
-   > ![The browser window, with modified colors in the web page to simulate the selected color vision deficiency](./emulate-vision-deficiencies-images/accessibility-blurred-vision-emulation.png)
+   ![The browser window, with modified colors in the webpage to simulate the selected color vision deficiency](./emulate-vision-deficiencies-images/accessibility-blurred-vision-emulation.png)
 
 
 <!-- ====================================================================== -->
 ## Use the Command Menu
 
-As an alternative approach, you can use the **Command Menu** to access the different simulations.
+As an alternative approach, you can use the **Command Menu** to access the different simulations:
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
 1. Type **emulate**, select the type of vision deficiency you want to simulate, and then press **Enter**.
 
-   > [!div class="mx-imgBorder"]
-   > ![The command menu showing the different types of vision deficiencies](./emulate-vision-deficiencies-images/accessibility-emulation-command-menu-results.png)
+   ![The command menu showing the different types of vision deficiencies](./emulate-vision-deficiencies-images/accessibility-emulation-command-menu-results.png)
 
 
 <!-- ====================================================================== -->

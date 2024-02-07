@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 106)
+title: What's New in DevTools (Microsoft Edge 106)
 description: "Introducing the Command Palette. Filter and automatically fix code issues in DevTools for Visual Studio Code. DevTools now uses less disk space when caching sourcemaps. Chromium color themes have been deprecated. Accessibility improvements in Focus Mode and high contrast mode. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/29/2022
 ---
 # What's New in DevTools (Microsoft Edge 106)
@@ -142,9 +143,8 @@ Screen readers now announce which **Dock location** button or which **Activity B
 ![The redesigned Docking menu in Focus Mode](./devtools-106-images/focus-mode-redesigned-docking-menu.png)
 
 See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
-* [Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View](../../../whats-new/2022/09/devtools-105.md#focus-mode-improved-location-controls-for-devtools-activity-bar-and-quick-view) in _What's new in DevTools (Microsoft Edge 105)_.
+* [Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View](../../../whats-new/2022/09/devtools-105.md#focus-mode-improved-location-controls-for-devtools-activity-bar-and-quick-view) in _What's New in DevTools (Microsoft Edge 105)_.
 
 
 #### Computed styles are easier to see in high contrast mode

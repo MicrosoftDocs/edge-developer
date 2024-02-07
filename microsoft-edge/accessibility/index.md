@@ -4,7 +4,7 @@ description: Learn how to build, design, and test accessible websites within Mic
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 ms.date: 04/16/2020
 ---
@@ -35,8 +35,6 @@ Microsoft Edge DevTools is built into the Microsoft Edge browser, and includes m
 See:
 
 * [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md) - a list of accessibility aspects to test and the corresponding DevTools features.
-
-* [Overview of accessibility testing using DevTools](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) - a walkthrough of testing a demo page for accessibility by using the DevTools features.
 
 
 <!-- ====================================================================== -->

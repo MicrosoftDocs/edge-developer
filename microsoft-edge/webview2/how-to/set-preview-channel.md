@@ -4,8 +4,8 @@ description: How to specify a Microsoft Edge preview channel to use, to test exp
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 02/24/2023
 ---
 # Test upcoming APIs and features

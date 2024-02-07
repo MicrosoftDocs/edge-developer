@@ -4,7 +4,7 @@ description: "Using an external browser window rather than the embedded (headles
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Using an external browser window
@@ -48,7 +48,7 @@ This tab is also called:
 
 To change or check the setting for which type of browser window to use:
 
-1. In Visual Studio Code, select Activity Bar > **Microsoft Edge Tools**.  The **Microsoft Edge Tools** Side Bar opens.
+1. In Visual Studio Code, select **Activity Bar** > **Microsoft Edge Tools**.  The **Microsoft Edge Tools** Side Bar opens.
 
 1. Hover to the right of **Targets**, and then click **More Actions** (**...**) > **Open Settings**.
 

@@ -4,8 +4,8 @@ description: How to build your PWA for installation in the Microsoft Edge sideba
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 04/27/2023
 ---
 # Build PWAs for the sidebar in Microsoft Edge
@@ -194,7 +194,7 @@ You can, however, use the `Edge Side Panel` User Agent Client Hint brand to reus
 Follow these recommendations when using a mobile-variant of your app in the sidebar:
 
 * Remove all "Open in App" messages instructing users to download your app from an app store.
-* Test the accessibility and usability of your app with all input methods: mouse, keyboard, and touch. To learn about testing the accessibility of your app, see [Overview of accessibility testing using DevTools](../../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md).
+* Test the accessibility and usability of your app with all input methods: mouse, keyboard, and touch. To learn about testing the accessibility of your app, see [Accessibility-testing features](../../devtools-guide-chromium/accessibility/reference.md).
 
 
 <!-- ====================================================================== -->

@@ -4,8 +4,8 @@ description: In the WebView2 threading model, the WebView2 must be created on a 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 09/21/2021
 ---
 # Threading model for WebView2 apps

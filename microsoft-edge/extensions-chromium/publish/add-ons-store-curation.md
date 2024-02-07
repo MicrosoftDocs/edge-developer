@@ -4,7 +4,8 @@ description: How submissions to the Microsoft Edge Add-ons store are curated and
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 10/13/2023
 ---
 # Curation and review process for the Edge Add-ons store
@@ -66,5 +67,5 @@ Items are ranked for popularity based on user ratings at the store.
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge Add-ons store developer policies](../store-policies/developer-policies.md)
+* [Developer policies for the Microsoft Edge Add-ons store](../store-policies/developer-policies.md)
 * [Content Security Policy (CSP)](../store-policies/csp.md)

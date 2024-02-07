@@ -4,7 +4,7 @@ description: How users and web developers can use the OS regional format in Micr
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 08/19/2022
 ---
 # Operating System regional data display
