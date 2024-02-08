@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 04/27/2023
+ms.date: 02/07/2024
 ---
 # Build PWAs for the sidebar in Microsoft Edge
 
@@ -210,7 +210,7 @@ PWAmp is a music player PWA demo application that can be pinned to the sidebar i
 
 1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/).
 
-1. In the sidebar, click **Customize sidebar**, and then click **Add current page**:
+1. In the sidebar, click **Customize**, and then click **Open in sidebar**:
 
     ![The "Customize sidebar" panel, with the "Add current page" button](./sidebar-images/add-pwamp-to-sidebar.png)
 
