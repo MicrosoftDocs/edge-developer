@@ -119,7 +119,7 @@ For each constructor in the list, the **Summary** view also shows a number such 
 | Column name | Description |
 |:--- |:--- |
 | **Distance** | Displays the distance to the root using the shortest simple path of nodes.  See [Distance](./memory-101.md#distance) in _Memory terminology_. |
-| **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  See [Shallow size](./memory-101.md#shallow-size) in _Memory terminology_. |
+| **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory directly held by an object. Most objects have a small shallow size because they only store their own object descriptions in memory, while their values are stored elsewhere in the renderer memory. See [Shallow size](./memory-101.md#shallow-size) in _Memory terminology_. |
 | **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Retained size](./memory-101.md#retained-size) in _Memory terminology_. |
 
 After expanding a constructor in the **Summary** view, all of the constructor's instances are displayed.  For each instance, the shallow and retained sizes are displayed in the corresponding columns.  The number after the `@` character is the unique ID of the object, allowing you to compare heap snapshots on per-object basis.
@@ -217,6 +217,26 @@ To help simplify the retainer path, hide cycles in the **Retainers** section by 
 _Internal nodes_ are objects that are specific to V8 (the JavaScript engine in Microsoft Edge).
 
 To hide internal nodes from the **Retainers** section, in the **Filter edges** dropdown menu, select **Hide internal**.
+
+
+<!-- ====================================================================== -->
+## Configure the Shallow Size column to include an entire object's size
+
+By default, the **Shallow Size** column in the **Memory** tool only includes the size of the object itself. Most objects have a small shallow size because they only store their own object descriptions in memory. For example, JavaScript `Array` instances store the contents of the array in a separate memory location that's not included in the array's shallow size.
+
+Starting with Microsoft Edge 123, you can configure the **Shallow Size** column to report the entire size of objects, including the object description and contents.
+
+To include the entire size of objects in the **Shallow Size** column:
+
+1. In DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./heap-snapshots-images/customize-icon.png)) button, and then click **Settings** (![Settings icon](./heap-snapshots-images/settings-icon.png)).  Or, while DevTools has focus, press **F1**.
+
+1. In the **Experiments** section, select the checkbox **In heap snapshots, treat backing store size as part of the containing object**.
+
+1. Reload DevTools.
+
+1. Take a new heap snapshot. The **Shallow Size** column now includes the entire size of objects:
+
+   ![The Shallow Size column of a heap snapshot](./heap-snapshots-images/shallow-size-entire-object.png)
 
 
 <!-- ====================================================================== -->
