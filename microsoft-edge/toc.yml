@@ -1305,13 +1305,20 @@
           items:
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
-    
+
+            - name: Prerelease testing
+              href: webview2/how-to/prerelease-testing.md
+
             - name: Use Playwright to automate and test in WebView2
               href: webview2/how-to/playwright.md
-    
+
             - name: Automate and test WebView2 apps with Microsoft Edge WebDriver
               href: webview2/how-to/webdriver.md
-    
+
+            - name: Self-hosting  # todo: move this TOC entry
+              href: webview2/how-to/self-hosting.md
+
+
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
           items: 
