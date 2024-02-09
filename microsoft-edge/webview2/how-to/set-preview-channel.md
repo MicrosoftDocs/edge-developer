@@ -6,10 +6,14 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/24/2023
+ms.date: 02/09/2024
 ---
 # Test upcoming APIs and features
-<!-- old title: # Switch to a preview channel to test upcoming APIs and features -->
+<!-- old title: 
+# Switch to a preview channel to test upcoming APIs and features
+-->
+
+<!-- todo: update the article to use the new API -->
 
 <!-- todo: update behavior description -->
 
