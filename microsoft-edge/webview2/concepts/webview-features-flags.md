@@ -17,16 +17,19 @@ There are multiple ways you can set browser arguments. You can use browser args 
 | Feature | Details |
 |:--- |:--- |
 | accept-lang | Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639. |
-| allow-run-as-system |  By default, WebView2 will exit if launched as System (which is not recommended). This switch bypasses that check. |
+| allow-file-access-from-files | This switch overrides for developers to read file:// URIs from other file:// URIs. |
+| allow-insecure-localhost | Enables TLS/SSL errors on localhost to be ignored (no interstitial, no blocking of requests). |
+| allow-run-as-system |  By default, Edge WebView browser will exit if launched as System (which is not recommended). This switch bypasses that check. |
 | allow-running-insecure-content | Switch to enable insecure content in Cast Web Runtime. This unblocks MSPs that serve content from HTTP sources. |
 | auto-open-devtools-for-tabs | This flag makes Edge WebView auto-open DevTools window for each tab. It is intended to be used by developers and automation. |
 | autoplay-policy | Command line flag name to set the autoplay policy. |
 | block-new-web-contents | If true, then all pop-ups and calls to window.open will fail. |
 | disable-background-timer-throttling | Disable task throttling of timer tasks from background pages. |
 | disable-domain-action-user-agent-override | Disable the per-domain User Agent override from the Domain Actions feature. |
-| disable-gpu | This switch disables GPU hardware acceleration.  If software renderer is not in place, then the GPU process won't launch. |
+| disable-gpu | This switch disables GPU hardware acceleration. If software renderer is not in place, then the GPU process won't launch. |
 | disable-gpu-driver-bug-workarounds | Switch to disable workarounds for various GPU driver bugs. |
 | disable-site-isolation-trials | Switch to disable site isolation. |
+| disable-web-security | Switch to disable cross origin policy. Don't enforce the same-origin policy, meant for website testing only. |
 | disk-cache-size | Switch to force the maximum disk space to be used by the disk cache, in bytes. |
 | do-not-de-elevate | Do not de-elevate the WebView2 on launch. Used after de-elevating to prevent infinite loops. |
 | edge-webview-debugging-script | Switch that runs PostWebMessage script asynchronously. |
@@ -43,9 +46,12 @@ There are multiple ways you can set browser arguments. You can use browser args 
 | enable-logging | Enable logging at the error level. |
 | force-color-profile | Force all monitors to be treated as though they have the specified color profile. Accepted values are "srgb" and "generic-rgb". |
 | force-device-scale-factor | Switch to override the device scale factor for the Edge WebView browser UI and the contents. |
+| force-fieldtrials | This option can be used to force field trials when testing changes locally. The argument is a list of name and value pairs, separated by slashes. If a trial name is prefixed with an asterisk, that trial will start activated. For example, the following argument defines two trials, with the second one activated: "EdgeNow/Enable/*MaterialDesignNTP/Default/" This option can also be used by the browser process to send the list of trials to a non-browser process, using the same format. See FieldTrialList::CreateTrialsFromString() in field_trial.h for details. |
+| force-fieldtrial-params | This switch can be used to force parameters of field trials when testing changes locally. The argument is a param list of (key, value) pairs prefixed by an associated (trial, group) pair. You specify the param list for multiple (trial, group) pairs with a comma separator. |
 | force-renderer-accessibility | Switch to force renderer accessibility to be on instead of enabling it on demand when a screen reader is detected. The disable-renderer-accessibility switch overrides this if present. |
 | ignore-certificate-errors | Ignores certificate-related errors |
 | ignore-gpu-blocklist | Switch to ignore GPU blocklist. |
+| incognito | Forces Incognito mode even if user data directory is specified using the --user-data-dir switch. |
 | isolate-origins | Require dedicated processes for a set of origins, specified as a comma-separated list. For example: --isolate-origins=https://www.foo.com,https://www.bar.com. |
 | js-flags | Specifies the flags passed to JS engine. |
 | lang | The language file that WebView2 want to try to open. Of the form language[-country] where language is the 2 letter code from ISO-639. |
@@ -57,6 +63,7 @@ There are multiple ways you can set browser arguments. You can use browser args 
 | msEnhancedTextContrast | The feature improves the contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications. Font rendering will also now respect user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
 | msEnhancedTrackingPreventionEnabled | If enabled, native privacy protection features are enabled, blocking cookies and web requests from known tracking domains. |
 | msOverlayScrollbarWinStyle | This feature flag controls whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
+| msPdfEnableAsPreview | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
 | msSmartScreenProtection | If enabled, SmartScreen protection will be available. |
 | msWebView2TextureStream | If enabled, allows to stream captured or composed video frames to the WebView2 where JavaScript can render or otherwise interact with the frames via W3C standard DOM APIs including the Video element, and MediaStream. |
 | msWebView2EnableDraggableRegions | This flag enables webpages within WebView2 make use of the app-region: drag/nodrag CSS style which causes elements with that style to behave like a titlebar. Without this flag the style will have no effect. |
@@ -68,7 +75,11 @@ There are multiple ways you can set browser arguments. You can use browser args 
 | PartitionedCookies | When enabled, sites can opt-in to having their cookies partitioned by top-level site with the Partitioned attribute. Partitioned cookies will only be sent when the browser is on the same top-level site that it was on when the cookie was set. |
 | proxy-auto-detect | Switch to force proxy auto-detection. |
 | proxy-bypass-list | Specifies a list of hosts for whom we bypass proxy settings and use direct connections. |
+| proxy-server | If specified uses a specified proxy server that overrides system settings. This switch only affects HTTP and HTTPS requests. |
 | remote-allow-origins | Enables web socket connections from the specified origins only. '*' allows any origin. |
+| remote-debugging-port | Enables remote debug over HTTP on the specified port |
+| RendererAppContainer | Enables Renderer AppContainer |
+| Restart | Indicates that Edge WebView browser process was restarted (e.g., after a flag change). This is used to ignore the launch when recording the Launch.Mode2 metric. |
 | sdsm-state | Super Duper Secure Mode state. Possible values are 'off', 'basic', 'balanced' and 'strict' |
 | SharedArrayBuffer | If enabled, SharedArrayBuffer thread is present.  |
 | ThirdPartyStoragePartitioning | Enables partitioning of third party storage (IndexedDB, CacheStorage, etc.) by the top level site to reduce fingerprinting. |
@@ -76,6 +87,7 @@ There are multiple ways you can set browser arguments. You can use browser args 
 | use-fake-device-for-media-stream | Use fake device for Media Stream to replace actual camera and microphone. |
 | use-fake-ui-for-media-stream | Bypass the media stream infobar by selecting the default device for media streams (e.g. WebRTC). Works with --use-fake-device-for-media-stream. Prefer --auto-accept-camera-and-microphone-capture which does not interact with screen/tab capture. |
 | use-system-proxy-resolver | Uses WinHttp to resolve proxies instead of using WebView2's normal proxy resolution logic. This is only supported in Windows. |
+| user-agent | A string used to override the default user agent with a custom one. |
 | user-data-migrated | Indicates that this process is the product of a relaunch following migration of user data. |
 | V8Maglev | Enables Maglev compiler. Note that this only sets the V8 flag when manually overridden, otherwise it defers to whatever the V8 default is. |
 
