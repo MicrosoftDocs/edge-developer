@@ -8,8 +8,11 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 1/31/2024
 ---
+
 # WebView2 Browser Arguments
-The following table displays the WebView2, browser and chromium features that can be used in WebView2...
+One of the ways you can interact with Microsoft Edge WebView2 and impact behavior is by passing browser flags to WebView2. Generally, the flags are owned by both Chromium and Edge and are useful for testing early features and diagnosing issues. We do not recommend apps to use these in production as they can be removed or altered at any time and are not supported long term. Additionally, note that Chromium flags are not owned or controlled by Microsoft Edge so Edge does not have control over when/how the flags are removed or altered.
+ 
+There are multiple ways you can set browser arguments. You can use browser args in your local device environment or through code. For testing features and diagnosing issues we recommend using browser arguments in your local device environment via setting the WEBVIEW2_BROWSER_ARGUMENTS environment variable or via reg keys. You can also set it programmatically by passing the browser arguments to the AdditionalBrowserArguments API. Note if you do it programmatically, you should remove the flags in code before shipping your app to avoid accidentally shipping the flags in production. Here is a list of some of the flags we have been seeing in the wild. 
 
 | Feature | Details |
 |:--- |:--- |
@@ -77,7 +80,6 @@ The following table displays the WebView2, browser and chromium features that ca
 | V8Maglev | Enables Maglev compiler. Note that this only sets the V8 flag when manually overridden, otherwise it defers to whatever the V8 default is. |
 
 ---
-
 
 <!-- ====================================================================== -->
 ## See also
