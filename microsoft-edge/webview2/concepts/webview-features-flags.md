@@ -1,95 +1,158 @@
 ---
-title: WebView2 browser arguments
-description: Overview of browser arguments with descriptions.
+title: WebView2 browser flags
+description: Overview of browser flags (arguments, or switches) that affect the WebView2 control, for testing forthcoming features or diagnosing issues.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 1/31/2024
+ms.date: 02/12/2024
+---
+# WebView2 browser flags
+
+One of the ways you can interact with Microsoft Edge WebView2 and impact behavior is by passing browser flags (arguments, or switches) to WebView2.  These browser flags are useful for testing forthcoming features, and for diagnosing issues.  
+
+> [!WARNING]
+> Apps in production shouldn't use WebView2 browser flags, because these flags might be removed or altered at any time, and aren't necessarily supported long-term.
+
+Generally, the flags are owned<!-- todo: "are supported by"?--> by both the Chromium<!-- todo: do we actually mean the Google Chrome browser? --> browser engine and by Microsoft Edge.  Chromium flags are not owned or controlled by Microsoft Edge, so Microsoft Edge doesn't have control over when or how the flags are altered in their behavior or removed.
+
+You can set browser flags in your local device environment, or set browser flags programmatically through code.  Both approaches are described below.
+
+
+<!-- ====================================================================== -->
+## Setting browser flags in your local device environment
+
+For testing forthcoming features or diagnosing issues, we recommend using browser flags in your local device environment, via setting the `WEBVIEW2_BROWSER_ARGUMENTS` environment variable or via registry keys.  For more information, see `CreateCoreWebView2EnvironmentWithOptions`:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CreateCoreWebView2EnvironmentWithOptions]<!-- todo: url for .NET equivalent of the Win32 global `CreateCoreWebView2EnvironmentWithOptions`? -->
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CreateCoreWebView2EnvironmentWithOptions]<!-- todo: url for WinRT equivalent of the Win32 global `CreateCoreWebView2EnvironmentWithOptions`? -->
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)
+
 ---
 
-# WebView2 Browser Arguments
-One of the ways you can interact with Microsoft Edge WebView2 and impact behavior is by passing browser flags to WebView2. Generally, the flags are owned by both Chromium and Edge and are useful for testing early features and diagnosing issues. We do not recommend apps to use these in production as they can be removed or altered at any time and are not supported long term. Additionally, note that Chromium flags are not owned or controlled by Microsoft Edge so Edge does not have control over when/how the flags are removed or altered.
- 
-There are multiple ways you can set browser arguments. You can use browser args in your local device environment or through code. For testing features and diagnosing issues we recommend using browser arguments in your local device environment via setting the WEBVIEW2_BROWSER_ARGUMENTS environment variable or via reg keys. You can also set it programmatically by passing the browser arguments to the AdditionalBrowserArguments API. Note if you do it programmatically, you should remove the flags in code before shipping your app to avoid accidentally shipping the flags in production. Here is a list of some of the flags we have been seeing in the wild. 
+
+<!-- ====================================================================== -->
+## Setting browser flags programmatically through code
+
+Or, you can set browser flags programmatically, by passing the browser flags as the `AdditionalBrowserArguments` property of `EnvironmentOptions`:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#additionalbrowserarguments)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2EnvironmentOptions`:
+   * [ICoreWebView2EnvironmentOptions::get_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_additionalbrowserarguments)
+   * [ICoreWebView2EnvironmentOptions::put_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_additionalbrowserarguments)
+
+---
+
+If you set browser flags programmatically, you should remove the flags in code before shipping your app, to avoid accidentally shipping the flags in production.
+
+
+<!-- ====================================================================== -->
+## Available WebView2 browser flags
+
+The following are some of the flags we've seen used.<!--todo: explain why we're (reactively) reporting some of the flags ppl have used, rather than reporting the complete list of all flags that are supported, from eg a Chromium spec. -->
+
+<!-- todo: link to `navigator.language` -->
+
+<!-- todo: link to `FieldTrialList::CreateTrialsFromString()` in `field_trial.h` -->
 
 | Feature | Details |
 |:--- |:--- |
-| accept-lang | Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639. |
-| allow-file-access-from-files | This switch overrides for developers to read file:// URIs from other file:// URIs. |
-| allow-insecure-localhost | Enables TLS/SSL errors on localhost to be ignored (no interstitial, no blocking of requests). |
-| allow-run-as-system |  By default, Edge WebView browser will exit if launched as System (which is not recommended). This switch bypasses that check. |
-| allow-running-insecure-content | Switch to enable insecure content in Cast Web Runtime. This unblocks MSPs that serve content from HTTP sources. |
-| auto-open-devtools-for-tabs | This flag makes Edge WebView auto-open DevTools window for each tab. It is intended to be used by developers and automation. |
-| autoplay-policy | Command line flag name to set the autoplay policy. |
-| block-new-web-contents | If true, then all pop-ups and calls to window.open will fail. |
-| disable-background-timer-throttling | Disable task throttling of timer tasks from background pages. |
-| disable-domain-action-user-agent-override | Disable the per-domain User Agent override from the Domain Actions feature. |
-| disable-gpu | This switch disables GPU hardware acceleration. If software renderer is not in place, then the GPU process won't launch. |
-| disable-gpu-driver-bug-workarounds | Switch to disable workarounds for various GPU driver bugs. |
-| disable-site-isolation-trials | Switch to disable site isolation. |
-| disable-web-security | Switch to disable cross origin policy. Don't enforce the same-origin policy, meant for website testing only. |
-| disk-cache-size | Switch to force the maximum disk space to be used by the disk cache, in bytes. |
-| do-not-de-elevate | Do not de-elevate the WebView2 on launch. Used after de-elevating to prevent infinite loops. |
-| edge-webview-debugging-script | Switch that runs PostWebMessage script asynchronously. |
-| edge-webview-foreground-boost-opt-in | Opt-into foreground boost. |
-| edge-webview-foreground-boost-opt-out | Opt-out of foreground boost. |
-| edge-webview-force-personal-context | Switch to force Edge WebView browser processes to run in WIP personal context. |
-| edge-webview-interactive-dragging | Switch to run WebView with interactive dragging enabled. |
-| edge-webview-is-background | Denotes that WebView is being launched in the background. |
-| edge-webview-no-dpi-workaround | Switch to disable dpi awareness app compat shim workaround, which launches Edge WebView browser process via shell so that it doesn't inherit app compat shim. |
-| edge-webview-run-with-package-id | Switch to run WebView process with package identity for bridged Desktop app. |
-| edge-webview-run-without-package-id | Switch to run WebView processes without package identity for bridged Desktop app. |
-| embedded-browser-webview-dpi-awareness | Sets the DPI awareness level of the server side processes. |
-| enable-experimental-web-platform-features | Switch to enable Web Platform features that are in development. |
-| enable-logging | Enable logging at the error level. |
-| force-color-profile | Force all monitors to be treated as though they have the specified color profile. Accepted values are "srgb" and "generic-rgb". |
-| force-device-scale-factor | Switch to override the device scale factor for the Edge WebView browser UI and the contents. |
-| force-fieldtrials | This option can be used to force field trials when testing changes locally. The argument is a list of name and value pairs, separated by slashes. If a trial name is prefixed with an asterisk, that trial will start activated. For example, the following argument defines two trials, with the second one activated: "EdgeNow/Enable/*MaterialDesignNTP/Default/" This option can also be used by the browser process to send the list of trials to a non-browser process, using the same format. See FieldTrialList::CreateTrialsFromString() in field_trial.h for details. |
-| force-fieldtrial-params | This switch can be used to force parameters of field trials when testing changes locally. The argument is a param list of (key, value) pairs prefixed by an associated (trial, group) pair. You specify the param list for multiple (trial, group) pairs with a comma separator. |
-| force-renderer-accessibility | Switch to force renderer accessibility to be on instead of enabling it on demand when a screen reader is detected. The disable-renderer-accessibility switch overrides this if present. |
-| ignore-certificate-errors | Ignores certificate-related errors |
-| ignore-gpu-blocklist | Switch to ignore GPU blocklist. |
-| incognito | Forces Incognito mode even if user data directory is specified using the --user-data-dir switch. |
-| isolate-origins | Require dedicated processes for a set of origins, specified as a comma-separated list. For example: --isolate-origins=https://www.foo.com,https://www.bar.com. |
-| js-flags | Specifies the flags passed to JS engine. |
-| lang | The language file that WebView2 want to try to open. Of the form language[-country] where language is the 2 letter code from ISO-639. |
-| log-net-log | Enables saving net log events to a file. If a value is given, it used as the path the the file, otherwise the file is named netlog.json and placed in the user data directory. |
-| msAbydos | Enables the "handwriting-to-text" experience. |
-| msAbydosGestureSupport | If enabled, allows for users to use gestures (like scratchout) to delete text using pen. This flag is valid only if msAbydos is enabled. |
-| msAbydosHandwritingAttr | It is an attribute that can be used to disable the "handwriting-to-text" experience for input elements at the DOM level. This flag is valid only if msAbydos is enabled. |
-| msEdgeFluentOverlayScrollbar| This feature flag force-enables Fluent Overlay scrollbars, overriding whatever value `kFluentScrollbar` may hold at the moment. |
-| msEnhancedTextContrast | The feature improves the contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications. Font rendering will also now respect user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
-| msEnhancedTrackingPreventionEnabled | If enabled, native privacy protection features are enabled, blocking cookies and web requests from known tracking domains. |
-| msOverlayScrollbarWinStyle | This feature flag controls whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
-| msPdfEnableAsPreview | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
-| msSmartScreenProtection | If enabled, SmartScreen protection will be available. |
-| msWebView2TextureStream | If enabled, allows to stream captured or composed video frames to the WebView2 where JavaScript can render or otherwise interact with the frames via W3C standard DOM APIs including the Video element, and MediaStream. |
-| msWebView2EnableDraggableRegions | This flag enables webpages within WebView2 make use of the app-region: drag/nodrag CSS style which causes elements with that style to behave like a titlebar. Without this flag the style will have no effect. |
-| msWebView2CodeCache | If enabled, JavaScript resources loaded in a WebView2 app via SetVirtualHostNameToFolderMapping or add_WebResourceRequested are eligible for bytecode caching, which should speed up the third and subsequent loads. This feature also enables bytecode caching for any other components which use the devtools network interception mechanism to provide custom responses. |
-| no-proxy-server | Switch that overrides any other proxy server flags that are passed. |
-| net-log-capture-mode | Sets the granularity of events to capture in the network log. The mode can be set to one of the following values: "Default" "IncludeSensitive" "Everything". |
-| no-sandbox | Disables the sandbox for all process types that are normally sandboxed. Meant to be used as a browser-level switch for testing purposes only. |
-| no-first-run | Skip First Run tasks, whether or not it's actually the First Run, and the What's New page. Overridden by kForceFirstRun (for FRE) and kForceWhatsNew (for What's New). This does not drop the First Run sentinel and thus doesn't prevent first run from occurring the next time Edge WebView browser is launched without this flag. It also does not update the last What's New milestone, so does not prevent What's New from occurring the next time Edge WebView browser is launched without this flag. |
-| PartitionedCookies | When enabled, sites can opt-in to having their cookies partitioned by top-level site with the Partitioned attribute. Partitioned cookies will only be sent when the browser is on the same top-level site that it was on when the cookie was set. |
-| proxy-auto-detect | Switch to force proxy auto-detection. |
-| proxy-bypass-list | Specifies a list of hosts for whom we bypass proxy settings and use direct connections. |
-| proxy-server | If specified uses a specified proxy server that overrides system settings. This switch only affects HTTP and HTTPS requests. |
-| remote-allow-origins | Enables web socket connections from the specified origins only. '*' allows any origin. |
-| remote-debugging-port | Enables remote debug over HTTP on the specified port |
-| RendererAppContainer | Enables Renderer AppContainer |
-| Restart | Indicates that Edge WebView browser process was restarted (e.g., after a flag change). This is used to ignore the launch when recording the Launch.Mode2 metric. |
-| sdsm-state | Super Duper Secure Mode state. Possible values are 'off', 'basic', 'balanced' and 'strict' |
-| SharedArrayBuffer | If enabled, SharedArrayBuffer thread is present.  |
-| ThirdPartyStoragePartitioning | Enables partitioning of third party storage (IndexedDB, CacheStorage, etc.) by the top level site to reduce fingerprinting. |
-| unsafely-treat-insecure-origin-as-secure | Treat given (insecure) origins as secure origins. Multiple origins can be supplied as a comma-separated list. For the definition of secure contexts, see https://w3c.github.io/webappsec-secure-contexts/ and https://www.w3.org/TR/powerful-features/#is-origin-trustworthy Example: --unsafely-treat-insecure-origin-as-secure=http://a.test,http://b.test |
-| use-fake-device-for-media-stream | Use fake device for Media Stream to replace actual camera and microphone. |
-| use-fake-ui-for-media-stream | Bypass the media stream infobar by selecting the default device for media streams (e.g. WebRTC). Works with --use-fake-device-for-media-stream. Prefer --auto-accept-camera-and-microphone-capture which does not interact with screen/tab capture. |
-| use-system-proxy-resolver | Uses WinHttp to resolve proxies instead of using WebView2's normal proxy resolution logic. This is only supported in Windows. |
-| user-agent | A string used to override the default user agent with a custom one. |
-| user-data-migrated | Indicates that this process is the product of a relaunch following migration of user data. |
-| V8Maglev | Enables Maglev compiler. Note that this only sets the V8 flag when manually overridden, otherwise it defers to whatever the V8 default is. |
+| `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the `navigator.language` DOM property. language[-country] where language is the 2 letter code from ISO-639. |
+| `allow-file-access-from-files` | Allows reading `file://` URIs from other `file://` URIs. |
+| `allow-insecure-localhost` | Enables TLS/SSL errors on localhost to be ignored, so that no interstitial is done and no blocking of requests is done. |
+| `allow-run-as-system` |  By default, the Edge WebView browser exits if launched as System (launching as System is not recommended).  This flag bypasses that check, so that even if the Edge WebView browser is launched as System, the Edge WebView browser doesn't exit. |
+| `allow-running-insecure-content` | Enables insecure content in Cast Web Runtime.  This flag unblocks MSPs that serve content from HTTP sources. |
+| `auto-open-devtools-for-tabs` | Makes Edge WebView auto-open the DevTools window for each tab.  For use by developers and by automation. |
+| `autoplay-policy` | Command-line flag name to set the autoplay policy. |
+| `block-new-web-contents` | If `true`, all pop-ups and calls to `window.open` fail. |
+| `disable-background-timer-throttling` | Disables task throttling of timer tasks from background pages. |
+| `disable-domain-action-user-agent-override` | Disables the per-domain User Agent override from the Domain Actions feature. |
+| `disable-gpu` | Disables GPU hardware acceleration.  If a software renderer isn't in place, the GPU process doesn't launch. |
+| `disable-gpu-driver-bug-workarounds` | Disables workarounds for various GPU driver bugs. |
+| `disable-site-isolation-trials` | Disables site isolation. |
+| `disable-web-security` | Disables cross-origin policy and doesn't enforce the same-origin policy.  Use for website testing only. |
+| `disk-cache-size` | Forces the maximum disk space to be used by the disk cache, in bytes. |
+| `do-not-de-elevate` | Prevents de-elevation of the WebView2 on launch.  Used after de-elevating, to prevent infinite loops. |
+| `edge-webview-debugging-script` | Runs `PostWebMessage` script asynchronously. |
+| `edge-webview-foreground-boost-opt-in` | Opts-in to foreground boost. |
+| `edge-webview-foreground-boost-opt-out` | Opts-out of foreground boost. |
+| `edge-webview-force-personal-context` | Forces Edge WebView browser processes to run in WIP personal context. |
+| `edge-webview-interactive-dragging` | Enables interactive dragging. |
+| `edge-webview-is-background` | Indicates that WebView is being launched in the background. |
+| `edge-webview-no-dpi-workaround` | Disables the "DPI awareness app compatibility shim" workaround, which launches Edge WebView browser process via a shell, so that the process doesn't inherit the "app compat" shim. |
+| `edge-webview-run-with-package-id` | Runs WebView processes with a package identity (package ID) for a bridged Desktop app. |
+| `edge-webview-run-without-package-id` | Runs WebView processes without a package identity (package ID) for a bridged Desktop app. |
+| `embedded-browser-webview-dpi-awareness` | Sets the DPI awareness level of the server-side processes. |
+| `enable-experimental-web-platform-features` | Enables Web Platform features that are in development. |
+| `enable-logging` | Enable logging at the error level. |
+| `force-color-profile` | Force all monitors to be treated as though they have the specified color profile.  Valid values: `srgb`, `generic-rgb`. |
+| `force-device-scale-factor` | Overrides the device scale factor for the Edge WebView browser UI and the contents. |
+| `force-fieldtrials` | Can be used to force field trials when testing changes locally.  The argument is a list of name/value pairs, separated by forward slashes.  If a trial name is prefixed with an asterisk, that trial will start activated.  For example, the following argument defines two trials, with the second one activated: `EdgeNow/Enable/*MaterialDesignNTP/Default/`.  This option can also be used by the browser process to send the list of trials to a non-browser process, using the same format.  For details, see `FieldTrialList::CreateTrialsFromString()` in `field_trial.h`. |
+| `force-fieldtrial-params` | Can be used to force parameters of field trials when testing changes locally.  The argument is a parameter list of (key, value) pairs, prefixed by an associated (trial, group) pair.  For multiple (trial, group) pairs, use a comma separator. |
+| `force-renderer-accessibility` | Whether to force renderer accessibility to be on, instead of enabling renderer accessibility on-demand when a screen reader is detected.  The `disable-renderer-accessibility` flag overrides this flag, if the `disable-renderer-accessibility` flag is present. |
+| `ignore-certificate-errors` | Ignores certificate-related errors. |
+| `ignore-gpu-blocklist` | Whether to ignore the GPU blocklist. |
+| `incognito` | Forces Incognito mode even if user data directory is specified by using the `--user-data-dir` flag. |
+| `isolate-origins` | Require dedicated processes for a set of origins, specified as a comma-separated list. For example: --isolate-origins=https://www.foo.com,https://www.bar.com. |
+| `js-flags` | Specifies the flags passed to JS engine. |
+| `lang` | The language file that WebView2 want to try to open. Of the form language[-country] where language is the 2-letter code from ISO-639. |
+| `log-net-log` | Enables saving net log events to a file.  If a value is given, that value is used as the directory path and file name.  If no value is given, the file is named `netlog.json`, and is placed in the user data directory. |
+| `msAbydos` | Enables the "handwriting-to-text" experience. |
+| `msAbydosGestureSupport` | Allows users to use gestures (such as the scratchout gesture) to delete text by using a pen.  Valid only if the `msAbydos` flag is enabled. |
+| `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled. |
+| `msEdgeFluentOverlayScrollbar` | Force-enables Fluent Overlay scrollbars, overriding whatever value `kFluentScrollbar` may hold at the moment. |
+| `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
+| `msEnhancedTrackingPreventionEnabled` | Enables native privacy protection features, such as blocking cookies and web requests that reside in domains that are known to be tracking domains. |
+| `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
+| `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
+| `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
+| `msWebView2TextureStream` | If enabled, allows to stream captured or composed video frames to the WebView2 where JavaScript can render or otherwise interact with the frames via W3C standard DOM APIs including the Video element, and MediaStream. |
+| `msWebView2EnableDraggableRegions` | This flag enables webpages within WebView2 make use of the app-region: drag/nodrag CSS style which causes elements with that style to behave like a titlebar.  Without this flag, the style has no effect. |
+| `msWebView2CodeCache` | If enabled, JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses. |
+| `no-proxy-server` | Overrides any other proxy server flags that are passed. |
+| `net-log-capture-mode` | Sets the granularity of events to capture in the network log.  Valid values: `Default`, `IncludeSensitive`, `Everything`. |
+| `no-sandbox` | Disables the sandbox for all process types that are normally sandboxed.  Meant to be used as a browser-level flag for testing purposes only. |
+| `no-first-run` | Skips First-Run tasks, regardless of whether it's actually the First Run, and skips displaying the What's New page.  This flag is overridden by `kForceFirstRun` (for the First-Run Experience (FRE)) and by `kForceWhatsNew` (for displaying What's New).  This flag doesn't drop the First Run sentinel, and thus doesn't prevent the First-Run experience from occurring the next time the Edge WebView browser is launched without this flag.  This flag doesn't update the last What's New milestone, so doesn't prevent What's New from being displayed the next time the Edge WebView browser is launched without this flag. |
+| `PartitionedCookies` | When enabled, sites can opt-in to having their cookies partitioned by the top-level site by using the `Partitioned` attribute.  Partitioned cookies are only sent when the browser is on the same top-level site that it was on when the cookie was set. |
+| `proxy-auto-detect` | Forces proxy auto-detection. |
+| `proxy-bypass-list` | A list of hosts for which proxy settings are bypassed; the hosts then use direct connections instead. |
+| `proxy-server` | A proxy server that overrides system settings.  This flag only affects HTTP and HTTPS requests. |
+| `remote-allow-origins` | Enables web socket connections from the specified origins only.  The '*' wildcard allows any origin. |
+| `remote-debugging-port` | Enables remote debugging over HTTP on the specified port. |
+| `RendererAppContainer` | Enables Renderer `AppContainer`. |
+| `Restart` | Indicates that Microsoft Edge WebView2 browser process was restarted (such as after a flag change).  Use this flag to ignore the launch when recording the `Launch.Mode2` metric. |
+| `sdsm-state` | The "Super Duper Secure Mode" state.  Valid values: `off`, `basic`, `balanced`, `strict`. |
+| `SharedArrayBuffer` | If enabled, indicates that a `SharedArrayBuffer` thread is present. |
+| `ThirdPartyStoragePartitioning` | Enables partitioning of third-party storage, such as `IndexedDB` or `CacheStorage`, by the top-level site, to reduce fingerprinting. |
+| `unsafely-treat-insecure-origin-as-secure` | Treats given (insecure) origins as secure origins.  Multiple origins can be specified, as a comma-separated list.  For the definition of secure contexts, see [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), including the section [Is `origin` potentially trustworthy?](https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy).  Example: `--unsafely-treat-insecure-origin-as-secure=http://a.test,http://b.test` |
+| `use-fake-device-for-media-stream` | Uses a fake device for Media Stream to replace an actual camera and microphone. |
+| `use-fake-ui-for-media-stream` | Bypasses the media stream infobar, by selecting the default device for media streams (such as WebRTC).  Works with `--use-fake-device-for-media-stream`.  Prefer using `--auto-accept-camera-and-microphone-capture` instead, which doesn't interact with screen capture, such as capturing a browser tab. |
+| `use-system-proxy-resolver` | Uses WinHttp to resolve proxies instead of using WebView2's normal proxy resolution logic.  This flag is only supported in Windows. |
+| `user-agent` | A string used to override the default user agent with a custom user agent. |
+| `user-data-migrated` | Indicates that this process is the product of a relaunch following migration of user data. |
+| `V8Maglev` | Enables the Maglev compiler.  This only sets the V8 flag when manually overridden; otherwise, it defers to whatever the V8 default is. |
+
+<!-- todo: for `proxy-bypass-list`: comma delim'd?  Is a space char to the right of comma supported? -->
 
 ---
 
