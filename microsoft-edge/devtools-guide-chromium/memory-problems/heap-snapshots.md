@@ -196,7 +196,7 @@ The **Containment** view shows the following types of objects:
 
 
 <!-- ------------------------------ -->
-#### The retainers section
+#### The Retainers section
 
 The **Retainers** section is displayed at the bottom of the **Memory** tool and shows all the objects which point to the selected object. The **Retainers** section is updated when you select a different object in the **Summary**, **Containment**, or **Comparison** view.
 
@@ -365,7 +365,7 @@ To analyze the impact of closures on memory, try out this example:
 
 
 <!-- ------------------------------ -->
-#### Tip: name functions to differentiate between closures in a snapshot
+#### Tip: Name functions to differentiate between closures in a snapshot
 
 To easily distinguish between JavaScript closures in a heap snapshot, give your functions names.
 
