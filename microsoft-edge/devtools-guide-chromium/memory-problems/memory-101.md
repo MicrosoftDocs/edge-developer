@@ -103,7 +103,7 @@ The _distance_ of an object in the JavaScript heap is the number of nodes on the
 <!-- ------------------------------ -->
 #### Shallow size
 
-The _shallow size_ is the size of the JavaScript heap that's _directly_ held by an object. The shallow size of an object is usually small, because a JavaScript object often only stores its description of the object, not the values, in the object's directly held memory. Most JavaScript objects store their values in a _backing store_ that's elsewhere in the renderer memory, and only expose a small wrapper object on the portion of the JavaScript heap that's directly owned by the object.
+The _shallow size_ is the size of the JavaScript heap that's _directly_ held by an object. The shallow size of an object is usually small, because a JavaScript object often only stores its description of the object, not the values, in the object's directly held memory. Most JavaScript objects store their values in a _backing store_ that's elsewhere in the JavaScript heap, and only expose a small wrapper object on the portion of the JavaScript heap that's directly owned by the object.
 
 Starting with Microsoft Edge 123, the **Memory** tool can be configured to report the total memory size of objects instead of only the memory size they directly hold. To learn more, see [Configure the Shallow Size column to include an entire object's size](./heap-snapshots.md#configure-the-shallow-size-column-to-include-an-entire-objects-size) in _Record heap snapshots using the Memory tool_.
 
