@@ -14,7 +14,7 @@ _Prerelease testing_ means testing your WebView2 app by using the preview channe
 
 Prerelease testing helps apps catch bugs in prerelease channels of WebView2, before the WebView2 changes ship in a stable release and degrade the app experience for end users.
 
-Prerelease testing means validating your app against early builds of WebView2 to ensure that your app works with upcoming changes.  This can be accomplished through automated testing and flighting with the preview channels of Microsoft Edge, which contain the WebView2 preview runtimes.  The preview (or "insider") channels of Microsoft Edge consist of:
+Prerelease testing means validating your app against early builds of WebView2 to ensure that your app works with upcoming changes.  This can be accomplished through automated testing with the preview channels of Microsoft Edge, which contain the WebView2 preview runtimes.  The preview (or "insider") channels of Microsoft Edge consist of:
 * Edge Canary - releases daily.
 * Edge Dev - releases weekly.
 * Edge Beta - releases every 4 weeks.
