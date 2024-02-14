@@ -567,6 +567,15 @@
                 - name: Display or edit source files using the Quick source tool
                   href: devtools-guide-chromium/quick-source/quick-source-tool.md
                   displayName: Quick source tool  # also indexed elsewhere in this file
+# Recorder tool -----------------------------------------------------------
+            - name: Recorder tool  # new jump page
+              items:
+                - name: Record and replay user flows and measure performance
+                  href: devtools-guide-chromium/recorder/index.md
+                  displayName: Recorder tool
+                - name: Recorder features reference
+                  href: devtools-guide-chromium/recorder/reference.md
+                  displayName: Recorder tool features reference
 # Rendering tool --------------------------------------------------------------
             - name: Rendering tool
               items:
