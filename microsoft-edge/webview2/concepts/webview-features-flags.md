@@ -23,27 +23,13 @@ You can set browser flags in your local device environment, or set browser flags
 <!-- ====================================================================== -->
 ## Setting browser flags in your local device environment
 
-For testing forthcoming features or diagnosing issues, we recommend using browser flags in your local device environment, via setting the `WEBVIEW2_BROWSER_ARGUMENTS` environment variable or via registry keys.  For more information, see `CreateCoreWebView2EnvironmentWithOptions`:
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CreateCoreWebView2EnvironmentWithOptions]<!-- todo: url for .NET equivalent of the Win32 global `CreateCoreWebView2EnvironmentWithOptions`? -->
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CreateCoreWebView2EnvironmentWithOptions]<!-- todo: url for WinRT equivalent of the Win32 global `CreateCoreWebView2EnvironmentWithOptions`? -->
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)
-
----
+To test forthcoming features or to diagnose issues, we recommend using browser flags in your local device environment, via setting the `WEBVIEW2_BROWSER_ARGUMENTS` environment variable or via registry keys.  For more information, see the following Win32 API Reference: [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
 
 
 <!-- ====================================================================== -->
 ## Setting browser flags programmatically through code
 
-Or, you can set browser flags programmatically, by passing the browser flags as the `AdditionalBrowserArguments` property of `EnvironmentOptions`:
+Or, you can set browser flags programmatically, by passing the browser flags as the `AdditionalBrowserArguments` property of `CoreWebView2EnvironmentOptions`:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -60,6 +46,9 @@ Or, you can set browser flags programmatically, by passing the browser flags as 
 * `ICoreWebView2EnvironmentOptions`:
    * [ICoreWebView2EnvironmentOptions::get_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_additionalbrowserarguments)
    * [ICoreWebView2EnvironmentOptions::put_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_additionalbrowserarguments)
+
+See also Globals:
+* [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)
 
 ---
 
