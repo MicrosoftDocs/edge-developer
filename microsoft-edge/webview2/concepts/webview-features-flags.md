@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/12/2024
+ms.date: 02/14/2024
 ---
 # WebView2 browser flags
 
@@ -15,7 +15,7 @@ One of the ways you can interact with Microsoft Edge WebView2 and impact behavio
 > [!WARNING]
 > Apps in production shouldn't use WebView2 browser flags, because these flags might be removed or altered at any time, and aren't necessarily supported long-term.
 
-Generally, the flags are owned<!-- todo: "are supported by"?--> by both the Chromium<!-- todo: do we actually mean the Google Chrome browser? --> browser engine and by Microsoft Edge.  Chromium flags are not owned or controlled by Microsoft Edge, so Microsoft Edge doesn't have control over when or how the flags are altered in their behavior or removed.
+Generally, the flags are owned by both Chromium and Microsoft Edge.  Chromium flags are not owned or controlled by Microsoft Edge, so Microsoft Edge doesn't have control over when or how the flags are altered in their behavior or removed.
 
 You can set browser flags in your local device environment, or set browser flags programmatically through code.  Both approaches are described below.
 
@@ -69,7 +69,7 @@ If you set browser flags programmatically, you should remove the flags in code b
 <!-- ====================================================================== -->
 ## Available WebView2 browser flags
 
-The following are some of the flags we've seen used.<!--todo: explain why we're (reactively) reporting some of the flags ppl have used, rather than reporting the complete list of all flags that are supported, from eg a Chromium spec. -->
+The following are some of the flags we've seen used.
 
 <!-- todo: link to `navigator.language` -->
 
