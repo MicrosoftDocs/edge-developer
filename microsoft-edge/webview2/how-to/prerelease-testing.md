@@ -93,17 +93,17 @@ Value: `1`
 By default, the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property is `CoreWebView2ChannelSearchKind.MostStable` (an enum value).  Instead, reverse the search order by setting the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property to `CoreWebView2ChannelSearchKind.LeastStable`.
 
 .NET:
-* [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
-* [CoreWebView2ChannelSearchKind Enum](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2channelsearchkind)
+* [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
+* [CoreWebView2ChannelSearchKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2channelsearchkind)
 
 WinRT:
-* [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#channelsearchkind)
-* [CoreWebView2ChannelSearchKind Enum](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2channelsearchkind)
+* [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#channelsearchkind)
+* [CoreWebView2ChannelSearchKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2channelsearchkind)
 
 Win32:
-* [ICoreWebView2ExperimentalEnvironmentOptions::get_ChannelSearchKind](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#get_channelsearchkind)
-* [ICoreWebView2ExperimentalEnvironmentOptions::put_ChannelSearchKind](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#put_channelsearchkind)
-* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2experimental-idl#corewebview2_channel_search_kind)
+* [ICoreWebView2ExperimentalEnvironmentOptions::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#get_channelsearchkind)
+* [ICoreWebView2ExperimentalEnvironmentOptions::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#put_channelsearchkind)
+* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl#corewebview2_channel_search_kind)
 
 #### [Group policy](#tab/group-policy)
 
