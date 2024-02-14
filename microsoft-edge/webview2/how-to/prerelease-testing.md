@@ -40,18 +40,15 @@ Many issues in specific WebView2 apps can be discovered before WebView2 changes 
 <!-- ====================================================================== -->
 ## Start prerelease testing by doing automated testing against Edge Canary
 
+Start with automated testing against the Microsoft Edge **Canary** channel, which ships daily.  This enables you to catch issues as early as possible. The Microsoft Edge **Dev** channel ships weekly, and is also a good option.
+
 You would need to set up the following:
-1. [Set the preview channel for your app](#how-to-set-preview-channel)
+1. [Set the preview channel for your app](#ways-to-set-the-preview-channel)
 1. [Deploy the non-stable channels](#how-to-deploy-non-stable-channels)
 1. [Conduct automated testing on your app running against the non-stable channels](#how-to-use-conduct-automated-testing)
 1. [Compare the results with the baseline](#what-to-use-as-a-baseline)
 
 Upon finding issues, you can report them to the [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback).
-
-##### Tooling and Guidance
-Start with automated testing against the Microsoft Edge **Canary** channel, which ships daily.  This enables you to catch issues as early as possible.  To test your app against Edge Canary, you set the preview channel, as described below.
-
-The Microsoft Edge **Dev** channel ships weekly, and is also a good option.
 
 
 <!-- ====================================================================== -->
@@ -179,7 +176,7 @@ Do either of the following:
 
 ---
 
-###### How to deploy non-stable channels
+## How to deploy non-stable channels
 
 Insider channels
 
@@ -208,10 +205,10 @@ Note: Dev & Beta channels contain MSI Links, while Canary has a separate link
 | Beta | [https://edgeupdates.microsoft.com/api/products/beta](https://edgeupdates.microsoft.com/api/products/beta) |
 
 
-###### How to use conduct automated testing
+## How to use conduct automated testing
 See [Automate and test WebView2 apps with Microsoft Edge WebDriver](https://learn.microsoft.com/en-us/microsoft-edge/webdriver) for more information.
 
-###### What to use as a baseline?
+## What to use as a baseline?
 The baseline for testing should be the latest stable release of WebView2. You can use either the Evergreen WebView2 Runtime or a fixed version of the Runtime. You can download the runtimes from [here](https://developer.microsoft.com/microsoft-edge/webview2/).
 
 
