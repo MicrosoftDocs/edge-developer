@@ -10,14 +10,14 @@ ms.date: 02/09/2024
 ---
 # Prerelease testing
 
-Prerelease testing helps apps catch bugs in prerelease channels of WebView2, before they ship in a stable release and degrade the app experience for end users. This document provide guiding principles and tools to help partners get started.
+Prerelease testing helps apps catch bugs in prerelease channels of WebView2, before they ship in a stable release and degrade the app experience for end users. This document provide guiding principles and tools to help developers get started.
 
 <!-- ====================================================================== -->
 #### What is prerelease testing?
-Prerelease testing means validating your app against early builds of WebView2 to ensure that your app works with upcoming changes. This can be accomplished through automated testing and flighting with Edge preview channels, which contain the WebView2 prerelease bits. The [Edge preview channels](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-channels) consist of Canary (daily), Dev (weekly), and Beta (every 4 weeks).
+Prerelease testing means validating your app against early builds of WebView2 to ensure that your app works with upcoming changes. This can be accomplished through automated testing with Edge preview channels, which contain the WebView2 preview runtime bits. The stable runtime is the Evergreen WebView2 Runtime, while the preview runtime is the runtime that ships with the Edge preview channels. The [Edge preview channels](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-channels) consist of Canary (daily), Dev (weekly), and Beta (every 4 weeks).
 
 #### Why is prerelease testing important?
-Evergreen WebView2 is based on the evergreen Chromium platform that receives monthly major updates. Testing against prerelease channels is the de facto way for web developers to validate their apps against incoming browser updates for the past decade and more. A common discovery from investigations that we have conducted in the past year, is that we regression tends to be application specific. WebView2 is tested in a variety of scenarios, but it is impossible to cover all the scenarios that an app might encounter. This means that the only way to catch certain app specific regressions before it ships to stable is to test against prerelease channels.
+Evergreen WebView2 is based on the evergreen Chromium platform that receives monthly major updates. Testing against prerelease channels is the de facto way for web developers to validate their apps against incoming browser updates for the past decade and more. A common discovery from investigations that we have conducted in the past year, is that regression tends to be application specific. WebView2 is tested in a variety of scenarios, but it is impossible to cover all the scenarios that an app might encounter. This means that the only way to catch regressions that affect specific apps before it ships to stable is to test against prerelease channels.
 
 Some examples of the issues that could have been caught prior to stable prerelease testing include:
 - [Unable to open https://www.facebook.com, once load will directly ProcessFailed](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4281)
@@ -27,6 +27,14 @@ Some examples of the issues that could have been caught prior to stable prerelea
 #### How to get started with prerelease testing?
 
 We highly recommend that you start with automated testing against the Edge Canary channel, which ships daily, to catch issues as early as possible. Edge Dev that ships weekly is also a good option.
+
+You would need to set up the following:
+1. [Set the preview channel for your app](#how-to-set-preview-channel)
+1. [Deploy the non-stable channels](#how-to-deploy-non-stable-channels)
+1. [Conduct automated testing on your app running against the non-stable channels](#how-to-use-conduct-automated-testing)
+1. [Compare the results with the baseline](#what-to-use-as-a-baseline)
+
+Upon finding issues, you can report them to the [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback).
 
 ##### Tooling and Guidance
 
@@ -110,10 +118,46 @@ Download the Edge policy files, which include the WebView2 policy files, from th
 
 ---
 
+###### How to deploy non-stable channels
 
+Insider channels
+
+**Option 1: Manual install on test machines**
+
+Insider channels can be manually installed through the following links:
+
+| Channel | Link |
+| --- | --- |
+| Canary | [Download](https://go.microsoft.com/fwlink/?linkid=2084649&Channel=Canary&language=en) |
+| Dev | [Download](https://go.microsoft.com/fwlink/?linkid=2093291) |
+| Beta | [Download](https://go.microsoft.com/fwlink/?linkid=2093376) |
+
+This only needs to be done once per machine. Prerelease channels are evergreen so will automatically get updated when newer versions are available.
+
+**Option 2: Programmatic depolyment throguh API**
+
+Periodically poll the following pages to get the latest version for each channel:
+
+Note: Dev & Beta channels contain MSI Links, while Canary has a separate link
+
+| Channel | Link |
+| --- | --- |
+| Canary | [https://edgeupdates.microsoft.com/api/products/canary](https://edgeupdates.microsoft.com/api/products/canary)<br>[MSI Link](https://go.microsoft.com/fwlink/?linkid=2084649&Channel=Canary&language=en)|
+| Dev | [https://edgeupdates.microsoft.com/api/products/dev](https://edgeupdates.microsoft.com/api/products/dev) |
+| Beta | [https://edgeupdates.microsoft.com/api/products/beta](https://edgeupdates.microsoft.com/api/products/beta) |
+
+
+###### How to use conduct automated testing
+See [Automate and test WebView2 apps with Microsoft Edge WebDriver](https://learn.microsoft.com/en-us/microsoft-edge/webdriver) for more information.
+
+###### What to use as a baseline?
+The baseline for testing should be the latest stable release of WebView2. You can use either the Evergreen WebView2 Runtime or a fixed version of the Runtime. You can download the runtimes from [here](https://developer.microsoft.com/microsoft-edge/webview2/).
 
 
 <!-- ====================================================================== -->
 ## See also
 
 * [Test upcoming APIs and features](./set-preview-channel.md)
+* [Automate and test WebView2 apps with Microsoft Edge WebDriver](https://learn.microsoft.com/en-us/microsoft-edge/webdriver)
+* [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
+* [Site compatibility-impacting changes coming to Microsoft Edge](https://learn.microsoft.com/en-us/microsoft-edge/web-platform/site-impacting-changes)
