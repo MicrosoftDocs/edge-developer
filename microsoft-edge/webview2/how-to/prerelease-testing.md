@@ -155,17 +155,17 @@ Value: `<path to desired Microsoft Edge preview channel>`
 
 Pass the path to the browser executable folder during environment creation:
 
-##### [.NET/C#](#tab/dotnetcsharp)
+**.NET:**
 
 * `CoreWebView2EnvironmentOptions` Class:
    * [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments)
 
-##### [WinRT/C#](#tab/winrtcsharp)
+**WinRT:**
 
 * `CoreWebView2EnvironmentOptions` Class:
    * [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#additionalbrowserarguments)
 
-##### [Win32/C++](#tab/win32cpp)
+**Win32:**
 
 Globals:
    * [CreateCoreWebView2EnvironmentWithOptions(browserExecutableFolder, userDataFolder, environmentOptions, environmentCreatedHandler)](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions -->
@@ -173,8 +173,6 @@ Globals:
 * `ICoreWebView2EnvironmentOptions`:
    * [ICoreWebView2EnvironmentOptions::get_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_additionalbrowserarguments)
    * [ICoreWebView2EnvironmentOptions::put_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_additionalbrowserarguments)
-
----
 
 
 #### [Group policy](#tab/group-policy)
