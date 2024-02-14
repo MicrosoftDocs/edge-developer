@@ -1,6 +1,6 @@
 ---
 title: Prerelease testing using the preview channels of Microsoft Edge
-description: Test your WebView2 app by using the preview channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta) to find issues that will affect your particular WebView2 app, before WebView2 changes migrate to Edge Stable.
+description: Test your WebView2 app by using the preview channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta) to find issues that will affect your particular WebView2 app, before WebView2 changes migrate to the Evergreen WebView2 Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,11 +10,11 @@ ms.date: 02/09/2024
 ---
 # Prerelease testing using the preview channels of Microsoft Edge
 
-_Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta) to find issues that will affect your particular WebView2 app, before WebView2 changes migrate to Edge Stable.
+_Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta) to find issues that will affect your particular WebView2 app, before WebView2 changes migrate to Evergreen WebView2 Runtime.
 
 Prerelease testing helps apps catch bugs in prerelease channels of WebView2, before the WebView2 changes ship in a stable release and degrade the app experience for end users.
 
-Prerelease testing means validating your app against early builds of WebView2 to ensure that your app works with upcoming changes.  This can be accomplished through automated testing and flighting with the preview channels of Microsoft Edge, which contain the WebView2 prerelease bits.  The preview (or "insider") channels of Microsoft Edge consist of:
+Prerelease testing means validating your app against early builds of WebView2 to ensure that your app works with upcoming changes.  This can be accomplished through automated testing and flighting with the preview channels of Microsoft Edge, which contain the WebView2 preview runtimes.  The preview (or "insider") channels of Microsoft Edge consist of:
 * Edge Canary - releases daily.
 * Edge Dev - releases weekly.
 * Edge Beta - releases every 4 weeks.
