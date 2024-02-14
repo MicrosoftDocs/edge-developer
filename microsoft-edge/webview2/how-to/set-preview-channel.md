@@ -146,7 +146,7 @@ WinForms uses an approach similar to the Win32/C++ approach described above.
 
 WPF uses an approach similar to the Win32/C++ approach described above.
 
-Refer to [CoreWebView2CreationProperties.BrowserExecutableFolder Property](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties.browserexecutablefolder#Microsoft_Web_WebView2_Wpf_CoreWebView2CreationProperties_BrowserExecutableFolder).
+See [CoreWebView2CreationProperties.BrowserExecutableFolder Property](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties.browserexecutablefolder#Microsoft_Web_WebView2_Wpf_CoreWebView2CreationProperties_BrowserExecutableFolder).
 
 
 <!-- 2. Registry Override ================================================= -->
