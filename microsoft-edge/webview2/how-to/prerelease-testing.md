@@ -172,7 +172,6 @@ Set `BrowserExecutableFolder`.
 Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
 Value: `<path to desired Microsoft Edge preview channel>`
 
-Download the Microsoft Edge policy files, which include the WebView2 policy files, from the Edge Enterprise site,<!-- todo: link --> or use the built-in policy on Intune.<!-- todo: link -->
 Do either of the following:
 * Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  Click any of the three **Download Windows Policy** links.<!-- todo: no "Edge policy" download link there -->
 * Use the built-in policy on Intune.<!-- todo: link to more info -->
