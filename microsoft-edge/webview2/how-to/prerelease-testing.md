@@ -31,7 +31,7 @@ Evergreen WebView2 is based on the evergreen Chromium platform, which receives m
 
 The only way to catch app-specific regressions before WebView2 changes ship in Edge Stable is to test your particular app against the prerelease channels of Microsoft Edge.  WebView2 is tested in a variety of general scenarios, but it's not feasible for that general testing to cover all the scenarios that various specific apps might encounter.
 
-Many issues in specific WebView2 apps can be discovered before WebView2 changes reach Edge Stable by doing prerelease testing (such as in Edge Canary).  For example, the following issues have been caught:
+Many issues in specific WebView2 apps can be discovered before WebView2 changes reach the Stable WebView2 Runtime, by doing prerelease testing, such as in Edge Canary.  For example, the following issues have been caught:
 - [Unable to open https://www.facebook.com, once load will directly ProcessFailed](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4281)
 - [MSEdgeWebView2 crashes when trying to preview a file through Monaco in file explorer using PowerToys](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4228)
 - [CoreWebView2PrintSettings.ScaleFactor is not working](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4082)
@@ -44,9 +44,9 @@ Start with automated testing against the Microsoft Edge **Canary** channel, whic
 
 Do the following steps:
 1. Set the preview channel for your app.  See [Ways to set the preview channel](#ways-to-set-the-preview-channel), below.
-1. Deploy the non-stable channels.  See [todo](#how-to-deploy-non-stable-channels), below.
-1. Conduct automated testing on your app running against the non-stable channels.  See [todo](#how-to-use-conduct-automated-testing), below.
-1. Compare the results with the baseline.  See [todo](#what-to-use-as-a-baseline), below.
+1. Deploy the non-stable channels.  See [How to deploy non-stable channels](#how-to-deploy-non-stable-channels), below.
+1. Conduct automated testing on your app running against the non-stable channels.  See [How to do automated testing](#how-to-do-automated-testing), below.
+1. Compare the results with the baseline.  See [The baseline release of WebView2 for testing](#the-baseline-release-of-webview2-for-testing), below.
 
 Upon finding issues, you can report them via the [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback).
 
