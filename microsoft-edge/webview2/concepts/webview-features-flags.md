@@ -60,7 +60,7 @@ The following are some of the flags we've seen used.
 
 | Feature | Details |
 |:--- |:--- |
-| `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the `navigator.language` DOM property. language[-country] where language is the 2 letter code from ISO-639. |
+| `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
 | `allow-file-access-from-files` | Allows reading `file://` URIs from other `file://` URIs. |
 | `allow-insecure-localhost` | Enables TLS/SSL errors on localhost to be ignored, so that no interstitial is done and no blocking of requests is done. |
 | `allow-run-as-system` |  By default, the Edge WebView browser exits if launched as System (launching as System is not recommended).  This flag bypasses that check, so that even if the Edge WebView browser is launched as System, the Edge WebView browser doesn't exit. |
