@@ -1,14 +1,14 @@
 ---
-title: Prerelease testing using the preview channels of Microsoft Edge
+title: Prerelease testing using preview channels
 description: How to test your WebView2 app by using the preview channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta) to find issues that will affect your particular WebView2 app, before WebView2 changes migrate to the Evergreen WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/14/2024
+ms.date: 02/15/2024
 ---
-# Prerelease testing using the preview channels of Microsoft Edge
+# Prerelease testing using preview channels
 
 _Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge to find issues that will affect your particular WebView2 app, before WebView2 changes migrate to Evergreen WebView2 Runtime.  Prerelease testing helps your app catch bugs in prerelease channels of WebView2, before the WebView2 changes ship in a stable release and degrade the app experience for end users.  In prerelease testing, you validate your app against early builds of WebView2, to ensure that your app will work with the upcoming changes.
 
@@ -22,6 +22,7 @@ The preview (or "insider") channels of Microsoft Edge consist of:
 See also: 
 * [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels)
 * [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download Edge Canary, Edge Dev, or Edge Beta
+* [Self-hosting by deploying preview channels](./self-hosting.md)
 
 
 <!-- ====================================================================== -->
@@ -248,8 +249,10 @@ The baseline for testing should be the latest stable release of WebView2.  You c
 <!-- ====================================================================== -->
 ## See also
 
+* [Self-hosting by deploying preview channels](./self-hosting.md)
 * [Test upcoming APIs and features](./set-preview-channel.md)
 * [Automate and test WebView2 apps with Microsoft Edge WebDriver](/microsoft-edge/webdriver)
 * [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
 * [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes)
-* [Microsoft Edge Insider website](https://www.microsoft.com/edge/download/insider) - download the Canary, Dev, or Beta channel of Microsoft Edge
+* [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels)
+* [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download Edge Canary, Edge Dev, or Edge Beta
