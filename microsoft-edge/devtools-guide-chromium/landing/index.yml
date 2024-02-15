@@ -7,12 +7,12 @@ metadata:
   # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
   # description: default to root title above. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-edge
+  ms.subservice: devtools
   ms.topic: landing-page
   # ms.collection: collection # Optional; Remove if no collection is used.
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 02/15/2024
-  ms.subservice: web-apps
 
 # =============================================================================
 # Valid article types (sections of a card)
