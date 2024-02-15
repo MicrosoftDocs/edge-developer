@@ -82,7 +82,7 @@ The channel search kind can be set per app through a registry key, environment v
 The value `1` indicates reversed search order; that is, from least-stable (Edge Canary) to most-stable.
 
 
-#### [Registry key](#tab/registry-key)
+##### [Registry key](#tab/registry-key)
 
 ```reg
 REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\ChannelSearchKind /v WebView2APISample.exe /t REG_DWORD /d 1
@@ -91,13 +91,13 @@ REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\ChannelSearchKind 
 Replace `WebView2APISample.exe` with your own app executable name or the application user model ID.
 
 
-#### [Environment variable](#tab/environment-variable)
+##### [Environment variable](#tab/environment-variable)
 
 Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`  
 Value: `1`
 
 
-#### [API](#tab/api)
+##### [API](#tab/api)
 
 By default, the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property is `CoreWebView2ChannelSearchKind.MostStable` (an enum value).  Instead, reverse the search order by setting the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property to `CoreWebView2ChannelSearchKind.LeastStable`.
 
@@ -115,7 +115,7 @@ Win32:
 * [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl#corewebview2_channel_search_kind)
 
 
-#### [Group policy](#tab/group-policy)
+##### [Group policy](#tab/group-policy)
 
 Set the `ChannelSearchKind` policy.
 
@@ -135,7 +135,7 @@ Do either of the following:
 The browser executable folder is the path to the folder that contains the WebView2 Runtime binaries.  This option is useful if you're using a fixed Runtime.  The browser executable folder path can be set per app through a registry key, environment variable, API, or group policy.
 
 
-#### [Registry key](#tab/registry-key)
+##### [Registry key](#tab/registry-key)
 
 ```reg
 REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /v WebView2APISample.exe /t REG_SZ /d "C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0"
@@ -146,13 +146,13 @@ REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableF
 * Replace the example path with the path to the desired Microsoft Edge preview channel.
 
 
-#### [Environment variable](#tab/environment-variable)
+##### [Environment variable](#tab/environment-variable)
 
 Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`  
 Value: `<path to desired Microsoft Edge preview channel>`
 
 
-#### [API](#tab/api)
+##### [API](#tab/api)
 
 Pass the path to the browser executable folder during environment creation:
 
@@ -176,7 +176,7 @@ Globals:
    * [ICoreWebView2EnvironmentOptions::put_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_additionalbrowserarguments)
 
 
-#### [Group policy](#tab/group-policy)
+##### [Group policy](#tab/group-policy)
 
 Set `BrowserExecutableFolder`.
 

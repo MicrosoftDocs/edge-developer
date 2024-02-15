@@ -110,7 +110,7 @@ Do either of the following:
 The browser executable folder is the path to the folder that contains the WebView2 Runtime binaries.  This option is useful if you're using a fixed Runtime.  The browser executable folder path can be set per app through a registry key, environment variable, API, or group policy.
 
 
-#### [Registry key](#tab/registry-key)
+##### [Registry key](#tab/registry-key)
 
 ```reg
 REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /v WebView2APISample.exe /t REG_SZ /d "C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0"
@@ -121,7 +121,7 @@ REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableF
 * Replace the sample path with the path to the desired Microsoft Edge preview channel.
 
 
-#### [Environment variable](#tab/environment-variable)
+##### [Environment variable](#tab/environment-variable)
 
 * Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`
 * Value: `<path to desired Microsoft Edge preview channel>`
@@ -129,7 +129,7 @@ REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableF
 Note that the environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per-app.
 
 
-#### [Group policy](#tab/group-policy)
+##### [Group policy](#tab/group-policy)
 
 Set `BrowserExecutableFolder`.
 
