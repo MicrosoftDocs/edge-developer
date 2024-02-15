@@ -15,7 +15,7 @@ One of the ways you can interact with Microsoft Edge WebView2 and impact behavio
 > [!WARNING]
 > Apps in production shouldn't use WebView2 browser flags, because these flags might be removed or altered at any time, and aren't necessarily supported long-term.
 
-Generally, the flags are owned by both Chromium and Microsoft Edge.  Chromium flags are not owned or controlled by Microsoft Edge, so Microsoft Edge doesn't have control over when or how the flags are altered in their behavior or removed.
+Generally, the flags are owned by both Chromium and Microsoft Edge.  Chromium flags are not owned or controlled by Microsoft Edge, so Microsoft Edge doesn't have control over when or how the flags are removed or altered in their behavior.
 
 You can set browser flags in your local device environment, or set browser flags programmatically through code.  Both approaches are described below.
 
