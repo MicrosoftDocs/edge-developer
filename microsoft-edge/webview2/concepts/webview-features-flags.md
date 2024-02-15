@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/14/2024
+ms.date: 02/15/2024
 ---
 # WebView2 browser flags
 
@@ -29,7 +29,7 @@ To test forthcoming features or to diagnose issues, we recommend using browser f
 <!-- ====================================================================== -->
 ## Setting browser flags programmatically through code
 
-Or, you can set browser flags programmatically, by passing the browser flags as the `AdditionalBrowserArguments` property of `CoreWebView2EnvironmentOptions`:
+Instead of setting browser flags in your local device environment, an alternative approach is to set browser flags programmatically, by passing the browser flags as the `AdditionalBrowserArguments` property of `CoreWebView2EnvironmentOptions`.  If you set browser flags programmatically, be sure to remove the flags in code before shipping your app, to avoid accidentally shipping the flags in production.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -52,17 +52,11 @@ See also Globals:
 
 ---
 
-If you set browser flags programmatically, you should remove the flags in code before shipping your app, to avoid accidentally shipping the flags in production.
-
 
 <!-- ====================================================================== -->
 ## Available WebView2 browser flags
 
 The following are some of the flags we've seen used.
-
-<!-- todo: link to `navigator.language` -->
-
-<!-- todo: link to `FieldTrialList::CreateTrialsFromString()` in `field_trial.h` -->
 
 | Feature | Details |
 |:--- |:--- |
@@ -96,7 +90,7 @@ The following are some of the flags we've seen used.
 | `enable-logging` | Enable logging at the error level. |
 | `force-color-profile` | Force all monitors to be treated as though they have the specified color profile.  Valid values: `srgb`, `generic-rgb`. |
 | `force-device-scale-factor` | Overrides the device scale factor for the Edge WebView browser UI and the contents. |
-| `force-fieldtrials` | Can be used to force field trials when testing changes locally.  The argument is a list of name/value pairs, separated by forward slashes.  If a trial name is prefixed with an asterisk, that trial will start activated.  For example, the following argument defines two trials, with the second one activated: `EdgeNow/Enable/*MaterialDesignNTP/Default/`.  This option can also be used by the browser process to send the list of trials to a non-browser process, using the same format.  For details, see `FieldTrialList::CreateTrialsFromString()` in `field_trial.h`. |
+| `force-fieldtrials` | Can be used to force field trials when testing changes locally.  The argument is a list of name/value pairs, separated by forward slashes.  If a trial name is prefixed with an asterisk, that trial will start activated.  For example, the following argument defines two trials, with the second one activated: `EdgeNow/Enable/*MaterialDesignNTP/Default/`.  This option can also be used by the browser process to send the list of trials to a non-browser process, using the same format. |
 | `force-fieldtrial-params` | Can be used to force parameters of field trials when testing changes locally.  The argument is a parameter list of (key, value) pairs, prefixed by an associated (trial, group) pair.  For multiple (trial, group) pairs, use a comma separator. |
 | `force-renderer-accessibility` | Whether to force renderer accessibility to be on, instead of enabling renderer accessibility on-demand when a screen reader is detected.  The `disable-renderer-accessibility` flag overrides this flag, if the `disable-renderer-accessibility` flag is present. |
 | `ignore-certificate-errors` | Ignores certificate-related errors. |
@@ -124,7 +118,7 @@ The following are some of the flags we've seen used.
 | `no-first-run` | Skips First-Run tasks, regardless of whether it's actually the First Run, and skips displaying the What's New page.  This flag is overridden by `kForceFirstRun` (for the First-Run Experience (FRE)) and by `kForceWhatsNew` (for displaying What's New).  This flag doesn't drop the First Run sentinel, and thus doesn't prevent the First-Run experience from occurring the next time the Edge WebView browser is launched without this flag.  This flag doesn't update the last What's New milestone, so doesn't prevent What's New from being displayed the next time the Edge WebView browser is launched without this flag. |
 | `PartitionedCookies` | When enabled, sites can opt-in to having their cookies partitioned by the top-level site by using the `Partitioned` attribute.  Partitioned cookies are only sent when the browser is on the same top-level site that it was on when the cookie was set. |
 | `proxy-auto-detect` | Forces proxy auto-detection. |
-| `proxy-bypass-list` | A list of hosts for which proxy settings are bypassed; the hosts then use direct connections instead. |
+| `proxy-bypass-list` | A list of hosts for which proxy settings are bypassed; the specified hosts then use direct connections instead.  This flag is ignored unless `--proxy-server` is also specified.  Multiple hosts can be supplied as a comma-separated list. |
 | `proxy-server` | A proxy server that overrides system settings.  This flag only affects HTTP and HTTPS requests. |
 | `remote-allow-origins` | Enables web socket connections from the specified origins only.  The '*' wildcard allows any origin. |
 | `remote-debugging-port` | Enables remote debugging over HTTP on the specified port. |
@@ -140,8 +134,6 @@ The following are some of the flags we've seen used.
 | `user-agent` | A string used to override the default user agent with a custom user agent. |
 | `user-data-migrated` | Indicates that this process is the product of a relaunch following migration of user data. |
 | `V8Maglev` | Enables the Maglev compiler.  This only sets the V8 flag when manually overridden; otherwise, it defers to whatever the V8 default is. |
-
-<!-- todo: for `proxy-bypass-list`: comma delim'd?  Is a space char to the right of comma supported? -->
 
 ---
 
