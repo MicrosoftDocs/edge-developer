@@ -573,9 +573,6 @@
                 - name: Record and replay user flows and measure performance
                   href: devtools-guide-chromium/recorder/index.md
                   displayName: Recorder tool
-                - name: Recorder features reference
-                  href: devtools-guide-chromium/recorder/reference.md
-                  displayName: Recorder tool features reference
 # Rendering tool --------------------------------------------------------------
             - name: Rendering tool
               items:

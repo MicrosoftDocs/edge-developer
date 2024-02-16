@@ -12,8 +12,6 @@ ms.date: 02/14/2024
 
 Use the **Recorder** tool to record a series of steps in the browser window or tab where DevTools is opened, and then replay the steps automatically, while optionally also measuring performance.
 
-This article is a step-by-step tutorial walkthrough of the **Recorder** tool. For a comprehensive description of the features of the **Recorder** tool, see [Recorder features reference](./reference.md).
-
 
 <!-- ====================================================================== -->
 ## When to use the Recorder tool
@@ -108,6 +106,32 @@ You can replay user flows either from the list of recorded user flows, or when v
    When the replay is complete, the animation stops, and the **Recorder** tool displays the recording's steps.
 
 
+<!-- ------------------------------ -->
+#### Slowly replay a user flow to investigate issues
+
+To see what's happening in the rendered page while the user interactions are being replayed, slow down the replay speed. By default, the **Recorder** tool replays user flows as fast as it can. To slow down the replay speed:
+
+1. Click the dropdown arrow next to **Replay** in the top-right corner of the **Recorder** tool, and then select a speed from the dropdown menu, such as **Slow**, **Very slow**, or **Extremely slow**:
+
+   ![The Replay button and the replay speed dropdown menu](./index-images/replay-slow.png)
+
+
+<!-- ------------------------------ -->
+#### Pause while replaying a user flow by using step breakpoints
+
+To inspect the rendered webpage at a specific point of the user flow, pause the replay by using a breakpoint. To add a breakpoint to a user flow:
+
+1. Click the **Open step actions** (![The Open step actions icon](./index-images/step-actions-icon.png)) icon next to the step you want to pause at, and then select **Add breakpoint**:
+
+    ![The Open step actions icon and the Add breakpoint button](./index-images/add-breakpoint.png)
+
+1. To start the user flow, click **Replay** in the top-right corner of the **Recorder** tool. The replay pauses when it reaches the step with the breakpoint. The **Continue** and **Execute one step** buttons also become available in the toolbar:
+
+    ![The paused replay at a step with a breakpoint](./index-images/paused-replay.png)
+
+1. Click the **Execute one step** button to execute the next step and pause again, or click the **Continue** button to continue the replay until the next breakpoint, or the end of the user flow, is reached.
+
+
 <!-- ====================================================================== -->
 ## Measure performance
 
@@ -127,6 +151,102 @@ To measure how fast a website runs while replaying a series of user interactions
 
 
 <!-- ====================================================================== -->
-## See also
+## Edit the steps of a user flow
 
-* [Recorder features reference](./reference.md)
+After you've recorded a user flow, you can edit the steps of the user flow. For example, you can add new steps, remove existing steps, or edit the details of a step.
+
+
+<!-- ------------------------------ -->
+#### Add a new step
+
+To add a new step to an existing user flow:
+
+1. Click the **Open step actions** (![The Open step actions icon](./index-images/step-actions-icon.png)) icon next to the step before or after which you want to add a new step, and then select **Add step before**, or **Add step after**:
+
+   ![The Open step actions icon and the Add step button](./index-images/add-step.png)
+
+1. Follow the instructions in [Edit a step](#edit-a-step) to edit the details of the new step that you added. The new step is temporarily called **Wait for element**.
+
+
+<!-- ------------------------------ -->
+#### Edit a step
+
+To edit the details of an existing step:
+
+1. To open the details section of the step you want to edit, click the triangle (![The triangle expand icon](./index-images/expand-icon.png)) icon next to the step. The details section of the step opens:
+
+   ![The expanded detailed section for a step of the user flow](./index-images/step-details.png)
+
+1. Edit the details of the step, such as the **type** of step, the **selectors** of the DOM element the step applies to, or the properties of the step. See below for more information about the different types of steps and their properties. Your changes are saved automatically.
+
+###### Change the type of step
+
+To change the type of step when editing the details of a step:
+
+1. Click the input box next to **type**. For example, if the step you're editing has the type **waitForElement**, click the input box that contains the value **waitForElement**.
+
+1. Delete the contents of the input box, and then select the new type of step you want to use from the dropdown menu that appears:
+
+   ![The Type dropdown menu](./index-images/step-type-dropdown.png)
+
+Below are the different types of steps that you can use when editing a step in a user flow. For each step type, the list of properties that apply to the step is also shown.
+
+| Step type | Description | Properties |
+|:--- |:--- |:--- |
+| `change` | Change the value of a form input field. | **selectors**: ways to find the element this step applies to, **value**: the value to set the form input field to. |
+| `click` | Click an element. | **selectors**: ways to find the element this step applies to, **offsetX**/**offsetY**: how far from the top left corner of the element to click. |
+| `close` | Close the browser window. | None |
+| `doubleClick` | Double-click an element. |  **selectors**: ways to find the element this step applies to, **offsetX**/**offsetY**: how far from the top left corner of the element to double-click. |
+| `emulateNetworkConditions` | Emulate different network conditions. | **download**/**upload**: the download and upload speeds, in bytes per second, **latency**: the minimum latency from a request being sent to the response being received, in milliseconds. |
+| `hover` | Emulate the pointer hovering over an element. | **selectors**: ways to find the element this step applies to. |
+| `keyDown` | Press a key down. | **selectors**: ways to find the element this step applies to, **key**: which key to press. |
+| `keyUp` | Release a pressed key. | **selectors**: ways to find the element this step applies to, **key**: which key to release. |
+| `navigate` | Navigate to a different webpage. | **url**: the URL of the page to navigate to. |
+| `scroll` | Scroll to a position in the webpage. | **x**/**y**: the optional horizontal and vertical coordinates of the position to scroll to in the page. |
+| `setViewport` | Change the viewport size, device pixel ratio, and capabilities. | **width**/**height**: the size of the viewport, **deviceScaleFactor**: the device pixel ratio, **isMobile**: whether the viewport is a mobile device viewport, **hasTouch**: whether the viewport supports touch events, **isLandscape**: whether the viewport is in a landscape orientation. |
+| `waitForElement` | Wait for an element, or for multiple elements, to be present in the webpage. | **selectors**: ways to find the element this step applies to. |
+| `waitForExpression` | Wait until a JavaScript expression evaluates to `true`. | **expression**: the JavaScript expression to evaluate. |
+
+###### Edit the selectors of a step
+
+Many step types have a **selectors** property, which specifies the DOM element that the step applies to. For example, a `click` step has a **selectors** property to define which element in the page is clicked when that step of the user flow runs.
+
+The **selectors** property is a list of one or more selectors, where each selector in the list can be a different way to find the element in the page. The **Recorder** tool tries each selector in the list, in order, until it finds an element in the page that matches the selector. A selectors can be:
+
+* A CSS selector, such as `#my-element-with-id` or `.my-class`.
+* A XPath selector, prefixed with `xpath/`, such as `xpath//html/body/form/div/label`.
+* The text content of the element, prefixed with `text/`, such as `text/Add a task`.
+
+You can edit the selectors of a step either manually, or by selecting an element in the rendered webpage.
+
+* To edit the selectors by selecting an element in the rendered webpage, click **Select an element in the page to update selectors**, and then click the element in the rendered webpage that you want to select. The **Recorder** tool updates the list of selectors to match the selected element:
+
+  ![The Select element button](./index-images/select-element-in-page.png)
+
+* To edit the selectors manually, add, edit, or delete selectors: 
+
+  * To add or remove a selector, under **Selectors**, hover over a selector, and then click **Add a selector** or **Remove a selector**:
+
+    ![The Add and Remove a selector buttons](./index-images/add-remove-selector.png)
+
+  * To change the value of a selector, under **Selectors**, click the input box that contains the value of the selector, and then enter the new value of the selector:
+
+    ![The selector value input box](./index-images/edit-selector-value.png)
+
+
+<!-- ------------------------------ -->
+#### Delete a step
+
+To delete a step from an existing user flow:
+
+1. Click the **Open step actions** (![The Open step actions icon](./index-images/step-actions-icon.png)) icon next to the step you want to delete, and then select **Remove step**:
+
+   ![The Open step actions icon and the Remove step button](./index-images/remove-step.png)
+
+
+<!-- ====================================================================== -->
+## Delete a user flow
+
+To delete a previously recorded user flow, when viewing the list of recordings, click **Delete recording** (![The Delete recording icon](./index-images/delete-icon.png)) next to the recording you want to delete:
+
+![The list of recordings, and the delete button next to each recording](./index-images/delete-recording.png)
