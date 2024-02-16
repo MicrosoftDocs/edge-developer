@@ -1,18 +1,18 @@
 ### YamlMime:Landing
 
-title: Microsoft Edge DevTools documentation # < 60 chars
-summary: Development using Microsoft Edge DevTools. # < 160 chars
+title: Microsoft Edge DevTools documentation
+summary: Development using Microsoft Edge DevTools.
 
 metadata:
   # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
   # description: default to root title above. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: app-service#Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.topic: landing-page # Required
+  ms.service: microsoft-edge
+  ms.subservice: devtools
+  ms.topic: landing-page
   # ms.collection: collection # Optional; Remove if no collection is used.
-  author: MSEdgeTeam #Required; your GitHub user alias, with correct capitalization.
-  ms.author: msedgedevrel #Required; microsoft alias of author; optional team alias.
-  ms.date: 01/07/2022 #Required; mm/dd/yyyy format.
-  ms.subservice: web-apps
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 02/15/2024
 
 # =============================================================================
 # Valid article types (sections of a card)
