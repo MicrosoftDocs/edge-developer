@@ -250,3 +250,55 @@ To delete a step from an existing user flow:
 To delete a previously recorded user flow, when viewing the list of recordings, click **Delete recording** (![The Delete recording icon](./index-images/delete-icon.png)) next to the recording you want to delete:
 
 ![The list of recordings, and the delete button next to each recording](./index-images/delete-recording.png)
+
+
+<!-- ====================================================================== -->
+## Export and import user flows as files
+
+To share user flows with other people, for example to help other people reproduce a bug by running the same set of steps as you, export the user flows you recorded as files.
+
+
+<!-- ------------------------------ -->
+#### Export a user flow as a file
+
+To share a user flow with another person, export the user flow as a JSON file:
+
+1. When viewing the steps of a user flow, click the **Export** (![The Export button](./index-images/export-icon.png)) button in the **Recorder** tool toolbar, and then select **JSON**:
+
+   ![The Export button dropdown menu and the JSON option](./index-images/export-json.png)
+
+1. Choose a location to save the file on your computer. The file is saved with the name of the user flow, and the extension `.json`.
+
+
+<!-- ------------------------------ -->
+#### Import a user flow from a file
+
+To import a user flow from a JSON file:
+
+1. In the **Recorder** tool toolbar, click the **Import recording** (![The Import recording icon](./index-images/import-icon.png)) button:
+
+   ![The Import recording button](./index-images/import-recording.png)
+
+1. In the file picker dialog that opens, select the JSON file that contains the user flow you want to import, and then click **Open**. The user flow is imported, and appears in the list of recordings in the **Recorder** tool.
+
+
+<!-- ====================================================================== -->
+## Export a user flow for test automation
+
+To generate test scripts and run them automatically with a test automation framework, export your user flows as test script files.
+
+You can export user flows as test scripts in the following formats:
+
+| Test automation framework | Description |
+|:--- |:--- |
+| `@puppeteer/replay` | Export the user flow as a test script for the **Replay** library. To learn more, see the [Replay repo on GitHub](https://github.com/puppeteer/replay). |
+| Puppeteer | Export the user flow as a test script for the Puppeteer test automation framework. To learn more, see [Puppeteer](https://pptr.dev/). |
+| Puppeteer (including Lighthouse analysis) | Export the user flow as a test script for the Puppeteer test automation framework, and include a Lighthouse analysis of the performance of the website. |
+
+To export a user flow as a test script file:
+
+1. When viewing the steps of a user flow, click the **Export** (![The Export button](./index-images/export-icon.png)) button in the **Recorder** tool toolbar, and then select the format you want to export the user flow as:
+
+   ![The Export button dropdown menu and the various test automation formats](./index-images/export-for-test.png)
+
+1. Choose a location to save the file on your computer. The file is saved with the name of the user flow, and the extension `.js`.
