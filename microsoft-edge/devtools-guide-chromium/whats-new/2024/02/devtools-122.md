@@ -50,9 +50,29 @@ The context menu was unresponsive and would not open when you clicked it, preven
 We updated the prompt to include a fix plan in addition to the error explanation when using Copilot to help explain console errors:
 ![Fix plan added to Copilot error explain prompt](./devtools-122-images/updated-copilot-prompt.png)
 
+
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
+* [The official collection of Recorder extensions is live](https://developer.chrome.com/blog/new-in-devtools-122#recorder-extensions)
+* [Network improvements](https://developer.chrome.com/blog/new-in-devtools-122#network)
+   * [Failure reason in the Status column](https://developer.chrome.com/blog/new-in-devtools-122#failure-status)
+   * [Improved Copy submenu](https://developer.chrome.com/blog/new-in-devtools-122#copy-submenu)
+* [Performance improvements](https://developer.chrome.com/blog/new-in-devtools-122#perf-improvements)
+   * [Breadcrumbs in the Timeline](https://developer.chrome.com/blog/new-in-devtools-122#perf-breadcrumbs)
+   * [Event initiators in the Main track](https://developer.chrome.com/blog/new-in-devtools-122#event-initiators)
+   * [JavaScript VM instance selector menu for Node.js DevTools](https://developer.chrome.com/blog/new-in-devtools-122#js-vm-menu)
+* [Elements improvements](https://developer.chrome.com/blog/new-in-devtools-122#elements-improvements)
+   * [The ::view-transition pseudo-element is now editable in Styles](https://developer.chrome.com/blog/new-in-devtools-122#view-transition)
+   * [The align-content property support for block containers](https://developer.chrome.com/blog/new-in-devtools-122#align-content-in-blocks)
+* [New shortcut and command in Sources](https://developer.chrome.com/blog/new-in-devtools-122#sources)
+* [Posture support for emulated foldable devices](https://developer.chrome.com/blog/new-in-devtools-122#device-posture)
+* [Dynamic theming](https://developer.chrome.com/blog/new-in-devtools-122#dynamic-theming)
+* [Third-party cookies phaseout warnings in the Network and Application panels](https://developer.chrome.com/blog/new-in-devtools-122#3pc)
+* [Lighthouse 11.4.0](https://developer.chrome.com/blog/new-in-devtools-122#lighthouse)
+* [Accessibility](https://developer.chrome.com/blog/new-in-devtools-122#accessibility)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-122#misc)
+<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
@@ -60,7 +80,7 @@ We updated the prompt to include a fix plan in addition to the error explanation
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 121)](https://developer.chrome.com/blog/new-in-devtools-121) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 122)](https://developer.chrome.com/blog/new-in-devtools-122) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
 
 
 <!-- ====================================================================== -->
