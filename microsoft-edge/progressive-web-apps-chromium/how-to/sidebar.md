@@ -6,11 +6,9 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 02/07/2024
+ms.date: 02/20/2024
 ---
 # Build PWAs for the sidebar in Microsoft Edge
-
-![Experimental feature](./sidebar-images/experimental-tag.png)
 
 Progressive Web Apps (PWAs) can opt-in to be pinned to the sidebar in Microsoft Edge.
 
@@ -21,28 +19,6 @@ By signaling intent to be pinned to the sidebar, your PWA gets the following ben
 * Your PWA can be promoted in the Microsoft Edge sidebar store.
 * Your PWA can detect whether it is running in the Microsoft Edge sidebar or not.
 * Your PWA defines its own style and layout to provide a user-friendly sidebar experience.
-
-
-<!-- ====================================================================== -->
-## Enable sidebar support of PWAs in Microsoft Edge
-
-To locally enable PWA sidebar support in Microsoft Edge:
-
-1. Download and install the Canary channel of Microsoft Edge from the [Microsoft Edge Insider website](https://www.microsoft.com/edge/download/insider).
-
-1. Start Microsoft Edge with sidebar support for PWAs, as follows:
-
-    * On Windows:
-        
-        1. Find the path where Microsoft Edge Canary is installed on your device. For example: `C:\Users\your_name\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe`.
-        1. Enter **cmd** in the Windows search text box, and then select the **Command Prompt** app.
-        1. Enter the following command: `"C:\Users\your_name\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe" --enable-features=msWebAppManifestSidePanel,msAddEdgeSidePaneBrandUA`
-
-    * On macOS:
-
-        1. Find the path where Microsoft Edge Canary is installed on your device. For example: `/Applications/Microsoft Edge Canary.app`.
-        1. Open the **Terminal** app.
-        1. Enter the following command: `/Applications/Microsoft Edge Canary.app --enable-features=msWebAppManifestSidePanel,msAddEdgeSidePaneBrandUA`
 
 
 <!-- ====================================================================== -->
@@ -201,8 +177,6 @@ Follow these recommendations when using a mobile-variant of your app in the side
 ## Demo app
 
 PWAmp is a music player PWA demo application that can be pinned to the sidebar in Microsoft Edge. To test PWAmp as a sidebar app:
-
-1. Enable sidebar support as described in [Enable sidebar support of PWAs in Microsoft Edge](#enable-sidebar-support-of-pwas-in-microsoft-edge).
 
 1. Open Microsoft Edge and make sure the sidebar is displayed. If the sidebar is not displayed, go to `edge://settings/sidebar` and then turn on the **Always show sidebar** toggle:
 
