@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 122)
-description: "Z-index and DOM tabs in 3D View tool working correctly. Correct Hide debugger or Show debugger icon in Sources tool. Source map support in Coverage tool. Advanced filtering in Bottom-Up, Call Tree, and Event Log tabs in Performance tool. Window Controls Overlay section for PWAs, in Application tool's Manifest section. And more."
+description: "Icons are displayed correctly in high-contrast mode. Keyboard shortcut to move through the open tools is working correctly. Copilot's explanation of a Console error includes a suggested fix. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,41 +14,37 @@ ms.date: 02/22/2024
 
 
 <!-- ====================================================================== -->
-## Icons are fixed in DevTools UI
+## Icons are displayed correctly in high-contrast mode
 
 <!-- Subtitle: In recent versions of Microsoft Edge, icons were missing or were colored incorrectly. In Microsoft Edge 122, this issue has been resolved. -->
 
-There was a bug where numerous any icons were missing, had the wrong background color, or didn't work with high contrast mode throughout DevTools. In Microsoft Edge 122, all these icons have been fixed and are compatible when high contrast mode is enabled.
+When using high contrast mode, icons were missing, had the wrong background color, or didn't work, throughout DevTools.  In Microsoft Edge 122, these icons have been fixed and are correctly displayed when high contrast mode is enabled.
+
 
 <!-- ====================================================================== -->
-## Keyboard shortcut to change panels is now working correctly
+## Keyboard shortcut to move through the open tools is working correctly
 
 <!-- Subtitle: In previous versions of Microsoft Edge, the Ctrl + ]/[ keyboard shortcut wasn't working correctly. In Microsoft Edge 122, this issue has been resolved. -->
 
-There was a bug with the Ctrl + ]/Ctrl + [ keyboard shortcut where the next tool in the Activity Bar wasn't selected and the Activity Bar wouldn't update so it looked like the previous tool was selected. For example, starting on the Elements panel:
-![Initial state, in Elements tool](./devtools-122-images/keyboard-shortcut-initial-state.png)
+In previous releases, when pressing the **Ctrl+]** and **Ctrl+[** keyboard shortcuts, the next tool's tab in the **Activity Bar** wasn't selected and the **Activity Bar** wouldn't update, so it looked like the previous tool was still selected, even though the content of the panel changed to show the correct content for the next tool.  For example, suppose the **Elements** tool's tab and panel content were displayed:
 
-Using the shortcut to move across tools, the Elements tab is still highlighted, but the Network tool is displayed:
-![Incorrect tool and tab name displayed](./devtools-122-images/keyboard-shortcut-error.png)
+![The Elements tool, with the Elements tab highlighted and the Elements panel content displayed](./devtools-122-images/keyboard-shortcut-initial-state.png)
 
-This issue has been resolved with Microsoft Edge 122 and works as expected.
+After pressing **Ctrl+]** or **Ctrl+[** to move through the tool tabs on the **Activity Bar**, the **Elements** tab remained highlighted, incorrectly, although the **Network** tool's content was correctly displayed:
 
-<!-- ====================================================================== -->
-## Context menu is fixed
+![The Elements tab incorrectly highlighted while displaying the Network tool's content](./devtools-122-images/keyboard-shortcut-error.png)
 
-<!-- Subtitle: In previous versions of Microsoft Edge, Devtools' context menu was broken and unresponsive. In Microsoft Edge 122, this issue has been resolved. -->
+This issue has been fixed in Microsoft Edge 122.
 
-The context menu was unresponsive and would not open when you clicked it, preventing you from customizing DevTools. This is now fixed in Microsoft Edge 122.
-
-![Context menu opened](./devtools-122-images/context-menu.png)
 
 <!-- ====================================================================== -->
-## Updated Devtools Copilot explain console errors prompt
+## Copilot's explanation of a Console error includes a suggested fix
 
-<!-- Subtitle: Use Copilot to explain console errors and fix suggestions. -->
+<!-- Subtitle: Use Copilot to explain Console errors and also view a suggested fix for many of the errors. -->
 
-We updated the prompt to include a fix plan in addition to the error explanation when using Copilot to help explain console errors:
-![Fix plan added to Copilot error explain prompt](./devtools-122-images/updated-copilot-prompt.png)
+When using Copilot to help explain errors that are shown in the **Console**, a fix plan has been added, in addition to the error explanation:
+
+![A fix plan added to the Copilot "explain error" prompt](./devtools-122-images/updated-copilot-prompt.png)
 
 
 <!-- ====================================================================== -->
