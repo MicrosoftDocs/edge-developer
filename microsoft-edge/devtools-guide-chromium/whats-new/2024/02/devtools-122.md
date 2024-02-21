@@ -46,8 +46,11 @@ This issue has been fixed in Microsoft Edge 122.
 
 When using high contrast mode, icons were missing, had the wrong background color, or didn't work, throughout DevTools.  In Microsoft Edge 122, these icons have been fixed and are correctly displayed when high contrast mode is enabled.
 
+
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
+
+Microsoft Edge 122 also includes the following updates from the Chromium project:
 
 * [The official collection of Recorder extensions is live](https://developer.chrome.com/blog/new-in-devtools-122#recorder-extensions)
 * [Network improvements](https://developer.chrome.com/blog/new-in-devtools-122#network)
