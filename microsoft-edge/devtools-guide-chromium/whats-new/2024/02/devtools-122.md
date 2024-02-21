@@ -57,18 +57,13 @@ When using Copilot to help explain errors that are shown in the **Console**, a f
 * [Performance improvements](https://developer.chrome.com/blog/new-in-devtools-122#perf-improvements)
    * [Breadcrumbs in the Timeline](https://developer.chrome.com/blog/new-in-devtools-122#perf-breadcrumbs)
    * [Event initiators in the Main track](https://developer.chrome.com/blog/new-in-devtools-122#event-initiators)
-   * [JavaScript VM instance selector menu for Node.js DevTools](https://developer.chrome.com/blog/new-in-devtools-122#js-vm-menu)
 * [Elements improvements](https://developer.chrome.com/blog/new-in-devtools-122#elements-improvements)
-   * [The ::view-transition pseudo-element is now editable in Styles](https://developer.chrome.com/blog/new-in-devtools-122#view-transition)
    * [The align-content property support for block containers](https://developer.chrome.com/blog/new-in-devtools-122#align-content-in-blocks)
 * [New shortcut and command in Sources](https://developer.chrome.com/blog/new-in-devtools-122#sources)
 * [Posture support for emulated foldable devices](https://developer.chrome.com/blog/new-in-devtools-122#device-posture)
 * [Dynamic theming](https://developer.chrome.com/blog/new-in-devtools-122#dynamic-theming)
 * [Third-party cookies phaseout warnings in the Network and Application panels](https://developer.chrome.com/blog/new-in-devtools-122#3pc)
-* [Lighthouse 11.4.0](https://developer.chrome.com/blog/new-in-devtools-122#lighthouse)
 * [Accessibility](https://developer.chrome.com/blog/new-in-devtools-122#accessibility)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-122#misc)
-<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
