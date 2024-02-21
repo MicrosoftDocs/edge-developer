@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/14/2024
+ms.date: 02/21/2024
 ---
 # Record and replay user flows and measure performance
 
@@ -54,7 +54,7 @@ To start recording a new user flow:
 
    ![The recorded user interactions displayed as a list in the Recorder tool](./index-images/list-of-interactions.png)
 
-1. To stop the recording, at the bottom of the list of recorded interactions, click **End recording**.
+1. To stop the recording, at the bottom of the list of recorded interactions, click the **End recording** button.
 
    The recording stops, and the circle next to the recording name turns blue, indicating that the recording is complete:
 
@@ -64,9 +64,13 @@ To start recording a new user flow:
 <!-- ====================================================================== -->
 ## Record other user flows
 
-To record a new user flow, once you've stopped the recording of the previous user flow, click the **Create a new recording** (![Create a new recording button](./index-images/new-recording-icon.png)) button in the top-left corner of the **Recorder** tool, and then repeat the steps from [Record a user flow](#record-a-user-flow):
+To record a new user flow, after you've stopped the recording of the previous user flow: 
 
-![The Create a new recording button](./index-images/create-new-recording.png)
+1. Click the **Create a new recording** (![Create a new recording button](./index-images/new-recording-icon.png)) button in the top-left corner of the **Recorder** tool:
+
+   ![The 'Create a new recording' button](./index-images/create-new-recording.png)
+
+1. Repeat the steps from [Record a user flow](#record-a-user-flow), above.
 
 
 <!-- ====================================================================== -->
@@ -74,16 +78,17 @@ To record a new user flow, once you've stopped the recording of the previous use
 
 You can replay user flows either from the list of recorded user flows, or when viewing the details of a given user flow.
 
-* To view the list of recorded user flows, click the dropdown menu that's in the **Recorder** tool toolbar, at the top, and select **2 recording(s)**. The label might show a different number of recordings, depending on how many recordings you've made.
-* To view the details of a given user flow, click the dropdown menu that's in the **Recorder** tool toolbar, at the top, and click the name of the user flow you want to view.
+* To view the list of recorded user flows, click the dropdown menu that's in the **Recorder** tool toolbar, at the top, and then select **2 recording(s)**. The label might show a different number of recordings, depending on how many recordings you've made.
+
+* To view the details of a given user flow, click the dropdown list that's in the **Recorder** tool toolbar, at the top, and then click the name of a user flow.
 
 
 <!-- ------------------------------ -->
 #### Replay a user flow from the list of recordings
 
-1. Click **Play recording** next to the recording that you want to replay:
+1. Click the **Play recording** button next to a recording:
 
-   ![The list of recordings, and the play button next to each recording](./index-images/play-from-list.png)
+   ![The list of recordings, with a 'Play recording' button next to each recording](./index-images/play-from-list.png)
 
 1. Wait while the **Recorder** tool replays the previously recorded user interactions. An animation of the steps that are being replayed appears in the **Recorder** tool:
 
@@ -95,7 +100,7 @@ You can replay user flows either from the list of recorded user flows, or when v
 <!-- ------------------------------ -->
 #### Replay a user flow from a recording
 
-1. Click **Replay** in the top-right corner of the **Recorder** tool:
+1. Click the **Replay** button in the top-right corner of the **Recorder** tool:
 
    ![The Replay button on a recorded user flow details page](./index-images/play-from-recording.png)
 
@@ -109,27 +114,33 @@ You can replay user flows either from the list of recorded user flows, or when v
 <!-- ------------------------------ -->
 #### Slowly replay a user flow to investigate issues
 
-To see what's happening in the rendered page while the user interactions are being replayed, slow down the replay speed. By default, the **Recorder** tool replays user flows as fast as it can. To slow down the replay speed:
+To see what's happening in the rendered page while the user interactions are being replayed, slow down the replay speed. By default, the **Recorder** tool replays user flows as fast as it can.
 
-1. Click the dropdown arrow next to **Replay** in the top-right corner of the **Recorder** tool, and then select a speed from the dropdown menu, such as **Slow**, **Very slow**, or **Extremely slow**:
+To slow down the replay speed:
 
-   ![The Replay button and the replay speed dropdown menu](./index-images/replay-slow.png)
+*  Click the dropdown arrow next to **Replay** in the top-right corner of the **Recorder** tool, and then select a speed from the dropdown menu, such as **Slow**, **Very slow**, or **Extremely slow**:
+
+   ![The Replay button and the Speed dropdown menu](./index-images/replay-slow.png)
 
 
 <!-- ------------------------------ -->
-#### Pause while replaying a user flow by using step breakpoints
+#### Pause while replaying a user flow, by using breakpoints
 
-To inspect the rendered webpage at a specific point of the user flow, pause the replay by using a breakpoint. To add a breakpoint to a user flow:
+To inspect the rendered webpage at a specific point of the user flow, pause the replay by using a breakpoint.
 
-1. Click the **Open step actions** (![The Open step actions icon](./index-images/step-actions-icon.png)) icon next to the step you want to pause at, and then select **Add breakpoint**:
+To add a breakpoint to a user flow:
 
-    ![The Open step actions icon and the Add breakpoint button](./index-images/add-breakpoint.png)
+1. Next to the flow step at which to pause, click the **Open step actions** (![The Open step actions icon](./index-images/step-actions-icon.png)) button , and then select **Add breakpoint**:
 
-1. To start the user flow, click **Replay** in the top-right corner of the **Recorder** tool. The replay pauses when it reaches the step with the breakpoint. The **Continue** and **Execute one step** buttons also become available in the toolbar:
+   ![The 'Open step actions' button and the 'Add breakpoint' menu item](./index-images/add-breakpoint.png)
 
-    ![The paused replay at a step with a breakpoint](./index-images/paused-replay.png)
+1. To start the user flow, click **Replay** in the top-right corner of the **Recorder** tool.
 
-1. Click the **Execute one step** button to execute the next step and pause again, or click the **Continue** button to continue the replay until the next breakpoint, or the end of the user flow, is reached.
+   The replay pauses when it reaches the step that has a breakpoint. The **Continue** and **Execute one step** buttons also become available in the toolbar:
+
+   ![The paused replay at a step with a breakpoint](./index-images/paused-replay.png)
+
+1. Click the **Execute one step** button to execute the next step and pause again, or click the **Continue** button to continue the replay until the next breakpoint (or the end of the user flow) is reached.
 
 
 <!-- ====================================================================== -->
@@ -161,11 +172,11 @@ After you've recorded a user flow, you can edit the steps of the user flow. For 
 
 To add a new step to an existing user flow:
 
-1. Click the **Open step actions** (![The Open step actions icon](./index-images/step-actions-icon.png)) icon next to the step before or after which you want to add a new step, and then select **Add step before**, or **Add step after**:
+1. Click the **Open step actions** (![The 'Open step actions' icon](./index-images/step-actions-icon.png)) button next to the step before or after which you want to add a new step, and then select **Add step before** or **Add step after**:
 
-   ![The Open step actions icon and the Add step button](./index-images/add-step.png)
+   ![The 'Open step actions' icon and the 'Add step' button](./index-images/add-step.png)
 
-1. Follow the instructions in [Edit a step](#edit-a-step) to edit the details of the new step that you added. The new step is temporarily called **Wait for element**.
+1. Follow the instructions in [Edit a step](#edit-a-step) below, to edit the details of the new step that you added.  The new step is temporarily named **Wait for element**.
 
 
 <!-- ------------------------------ -->
@@ -173,12 +184,14 @@ To add a new step to an existing user flow:
 
 To edit the details of an existing step:
 
-1. To open the details section of the step you want to edit, click the triangle (![The triangle expand icon](./index-images/expand-icon.png)) icon next to the step. The details section of the step opens:
+1. To open the details section of the step you want to edit, click the triangle (![The triangle expand icon](./index-images/expand-icon.png)) button next to the step. The details section of the step opens:
 
-   ![The expanded detailed section for a step of the user flow](./index-images/step-details.png)
+   ![The expanded details section for a step of the user flow](./index-images/step-details.png)
 
-1. Edit the details of the step, such as the **type** of step, the **selectors** of the DOM element the step applies to, or the properties of the step. See below for more information about the different types of steps and their properties. Your changes are saved automatically.
+1. Edit the details of the step, such as the **type** of step, the **selectors** of the DOM element the step applies to, or the properties of the step.  The various types of steps and their properties are listed in the section below.  Your changes are saved automatically.
 
+
+<!-- ---------- -->
 ###### Change the type of step
 
 To change the type of step when editing the details of a step:
@@ -189,7 +202,7 @@ To change the type of step when editing the details of a step:
 
    ![The Type dropdown menu](./index-images/step-type-dropdown.png)
 
-Below are the different types of steps that you can use when editing a step in a user flow. For each step type, the list of properties that apply to the step is also shown.
+You can use the following types of steps when editing a step in a user flow.  Each step type has a list of properties that apply to the step.
 
 | Step type | Description | Properties |
 |:--- |:--- |:--- |
@@ -207,29 +220,37 @@ Below are the different types of steps that you can use when editing a step in a
 | `waitForElement` | Wait for an element, or for multiple elements, to be present in the webpage. | **selectors**: ways to find the element this step applies to. |
 | `waitForExpression` | Wait until a JavaScript expression evaluates to `true`. | **expression**: the JavaScript expression to evaluate. |
 
+
+<!-- ---------- -->
 ###### Edit the selectors of a step
 
-Many step types have a **selectors** property, which specifies the DOM element that the step applies to. For example, a `click` step has a **selectors** property to define which element in the page is clicked when that step of the user flow runs.
+Many step types have a **selectors** property, which specifies the DOM element that the step applies to.  For example, a `click` step has a **selectors** property to define which element in the page is clicked when that step of the user flow runs.
 
-The **selectors** property is a list of one or more selectors, where each selector in the list can be a different way to find the element in the page. The **Recorder** tool tries each selector in the list, in order, until it finds an element in the page that matches the selector. A selectors can be:
+The **selectors** property is a list of one or more selectors.  Each selector in the list can be a different way to find the element in the page.  The **Recorder** tool tries each selector in the list, in order, until it finds an element in the page that matches the selector.
+
+A selector can be any of the following types:
 
 * A CSS selector, such as `#my-element-with-id` or `.my-class`.
 * A XPath selector, prefixed with `xpath/`, such as `xpath//html/body/form/div/label`.
 * The text content of the element, prefixed with `text/`, such as `text/Add a task`.
 
-You can edit the selectors of a step either manually, or by selecting an element in the rendered webpage.
+You can edit the selectors of a step by either approach:
+* Selecting an element in the rendered webpage.
+* Manually add, remove, or modify a selector.
 
-* To edit the selectors by selecting an element in the rendered webpage, click **Select an element in the page to update selectors**, and then click the element in the rendered webpage that you want to select. The **Recorder** tool updates the list of selectors to match the selected element:
+
+* To edit the selectors by selecting an element in the rendered webpage, click **Select an element in the page to update selectors**, and then click the element in the rendered webpage that you want to select.  The **Recorder** tool updates the list of selectors to match the selected element:
 
   ![The Select element button](./index-images/select-element-in-page.png)
 
-* To edit the selectors manually, add, edit, or delete selectors: 
+
+* You can manually add, remove, or modify a selector:
 
   * To add or remove a selector, under **Selectors**, hover over a selector, and then click **Add a selector** or **Remove a selector**:
 
     ![The Add and Remove a selector buttons](./index-images/add-remove-selector.png)
 
-  * To change the value of a selector, under **Selectors**, click the input box that contains the value of the selector, and then enter the new value of the selector:
+  * To modify the value of a selector, under **Selectors**, click the input box that contains the value of the selector, and then enter the new value for the selector:
 
     ![The selector value input box](./index-images/edit-selector-value.png)
 
@@ -239,9 +260,9 @@ You can edit the selectors of a step either manually, or by selecting an element
 
 To delete a step from an existing user flow:
 
-1. Click the **Open step actions** (![The Open step actions icon](./index-images/step-actions-icon.png)) icon next to the step you want to delete, and then select **Remove step**:
+1. Click the **Open step actions** (![The Open step actions icon](./index-images/step-actions-icon.png)) button next to the step you want to delete, and then select **Remove step**:
 
-   ![The Open step actions icon and the Remove step button](./index-images/remove-step.png)
+   ![The 'Open step actions' button and the 'Remove step' button](./index-images/remove-step.png)
 
 
 <!-- ====================================================================== -->
@@ -249,13 +270,13 @@ To delete a step from an existing user flow:
 
 To delete a previously recorded user flow, when viewing the list of recordings, click **Delete recording** (![The Delete recording icon](./index-images/delete-icon.png)) next to the recording you want to delete:
 
-![The list of recordings, and the delete button next to each recording](./index-images/delete-recording.png)
+![The list of recordings, and the 'Delete recording' button next to each recording](./index-images/delete-recording.png)
 
 
 <!-- ====================================================================== -->
 ## Export and import user flows as files
 
-To share user flows with other people, for example to help other people reproduce a bug by running the same set of steps as you, export the user flows you recorded as files.
+To share a user flow with other people, export your recorded user flow as a JSON file.  For example, sharing a user flow can help other people reproduce a bug by running the same set of steps as you.
 
 
 <!-- ------------------------------ -->
@@ -267,7 +288,7 @@ To share a user flow with another person, export the user flow as a JSON file:
 
    ![The Export button dropdown menu and the JSON option](./index-images/export-json.png)
 
-1. Choose a location to save the file on your computer. The file is saved with the name of the user flow, and the extension `.json`.
+1. Select a location at which to save the file. The file is saved with the name of the user flow, and the extension `.json`.
 
 
 <!-- ------------------------------ -->
@@ -279,26 +300,24 @@ To import a user flow from a JSON file:
 
    ![The Import recording button](./index-images/import-recording.png)
 
-1. In the file picker dialog that opens, select the JSON file that contains the user flow you want to import, and then click **Open**. The user flow is imported, and appears in the list of recordings in the **Recorder** tool.
+1. In the file chooser dialog that opens, select a user flow JSON file, and then click the **Open** button.  The user flow is imported, and appears in the list of recordings in the **Recorder** tool.
 
 
 <!-- ====================================================================== -->
 ## Export a user flow for test automation
 
-To generate test scripts and run them automatically with a test automation framework, export your user flows as test script files.
+To generate a test script and run it automatically with a test automation framework, export a user flow as a `.js` test script file, as follows:
 
-You can export user flows as test scripts in the following formats:
-
-| Test automation framework | Description |
-|:--- |:--- |
-| `@puppeteer/replay` | Export the user flow as a test script for the **Replay** library. To learn more, see the [Replay repo on GitHub](https://github.com/puppeteer/replay). |
-| Puppeteer | Export the user flow as a test script for the Puppeteer test automation framework. To learn more, see [Puppeteer](https://pptr.dev/). |
-| Puppeteer (including Lighthouse analysis) | Export the user flow as a test script for the Puppeteer test automation framework, and include a Lighthouse analysis of the performance of the website. |
-
-To export a user flow as a test script file:
-
-1. When viewing the steps of a user flow, click the **Export** (![The Export button](./index-images/export-icon.png)) button in the **Recorder** tool toolbar, and then select the format you want to export the user flow as:
+1. When viewing the steps of a user flow, in the **Recorder** tool toolbar, click the **Export** (![The Export button](./index-images/export-icon.png)) button, and then select an export format:
 
    ![The Export button dropdown menu and the various test automation formats](./index-images/export-for-test.png)
 
-1. Choose a location to save the file on your computer. The file is saved with the name of the user flow, and the extension `.js`.
+   | Export format | Test automation framework |
+   |:--- |:--- |
+   | `@puppeteer/replay` | Exports the user flow as a test script for the **Replay** library.  See the [puppeteer / replay](https://github.com/puppeteer/replay) repo. |
+   | Puppeteer | Exports the user flow as a test script for the Puppeteer test automation framework.  See [Puppeteer](https://pptr.dev). |
+   | Puppeteer (including Lighthouse analysis) | Exports the user flow as a test script for the Puppeteer test automation framework, and includes a Lighthouse analysis of the performance of the website. |
+
+   The **Save As** dialog opens.
+
+1. Select a location in which to save the file.  The file is saved with the name of the user flow, and the extension `.js`.
