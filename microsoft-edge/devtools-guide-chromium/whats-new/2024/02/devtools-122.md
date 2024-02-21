@@ -40,11 +40,11 @@ This issue has been fixed in Microsoft Edge 122.
 <!-- ====================================================================== -->
 ## Copilot's explanation of a Console error includes a suggested fix
 
-<!-- Subtitle: Use Copilot to explain Console errors and also view a suggested fix for many of the errors. -->
+<!-- Subtitle: Use Copilot to explain Console errors along with a suggested fix in a new Possible solution section. -->
 
-When using Copilot to help explain errors that are shown in the **Console**, a fix plan has been added, in addition to the error explanation:
+When using Copilot to help explain errors that are shown in the **Console**, a **Possible solution** section has been added, below the error explanation:
 
-![A fix plan added to the Copilot "explain error" prompt](./devtools-122-images/updated-copilot-prompt.png)
+![The new 'Possible solution' section in the Copilot "Explain Console error" response](./devtools-122-images/updated-copilot-prompt.png)
 
 
 <!-- ====================================================================== -->
