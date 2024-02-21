@@ -14,11 +14,13 @@ ms.date: 02/22/2024
 
 
 <!-- ====================================================================== -->
-## Icons are displayed correctly in high-contrast mode
+## Copilot's explanation of a Console error includes a suggested fix
 
-<!-- Subtitle: In recent versions of Microsoft Edge, icons were missing or were colored incorrectly. In Microsoft Edge 122, this issue has been resolved. -->
+<!-- Subtitle: Use Copilot to explain Console errors along with a suggested fix in a new Possible solution section. -->
 
-When using high contrast mode, icons were missing, had the wrong background color, or didn't work, throughout DevTools.  In Microsoft Edge 122, these icons have been fixed and are correctly displayed when high contrast mode is enabled.
+When using Copilot to help explain errors that are shown in the **Console**, a **Possible solution** section has been added, below the error explanation:
+
+![The new 'Possible solution' section in the Copilot "Explain Console error" response](./devtools-122-images/updated-copilot-prompt.png)
 
 
 <!-- ====================================================================== -->
@@ -38,14 +40,11 @@ This issue has been fixed in Microsoft Edge 122.
 
 
 <!-- ====================================================================== -->
-## Copilot's explanation of a Console error includes a suggested fix
+## Icons are displayed correctly in high-contrast mode
 
-<!-- Subtitle: Use Copilot to explain Console errors along with a suggested fix in a new Possible solution section. -->
+<!-- Subtitle: In recent versions of Microsoft Edge, icons were missing or were colored incorrectly. In Microsoft Edge 122, this issue has been resolved. -->
 
-When using Copilot to help explain errors that are shown in the **Console**, a **Possible solution** section has been added, below the error explanation:
-
-![The new 'Possible solution' section in the Copilot "Explain Console error" response](./devtools-122-images/updated-copilot-prompt.png)
-
+When using high contrast mode, icons were missing, had the wrong background color, or didn't work, throughout DevTools.  In Microsoft Edge 122, these icons have been fixed and are correctly displayed when high contrast mode is enabled.
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
