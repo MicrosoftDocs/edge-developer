@@ -206,19 +206,19 @@ You can use the following types of steps when editing a step in a user flow.  Ea
 
 | Step type | Description | Properties |
 |:--- |:--- |:--- |
-| `change` | Change the value of a form input field. | **selectors**: ways to find the element this step applies to, **value**: the value to set the form input field to. |
-| `click` | Click an element. | **selectors**: ways to find the element this step applies to, **offsetX**/**offsetY**: how far from the top left corner of the element to click. |
-| `close` | Close the browser window. | None |
-| `doubleClick` | Double-click an element. |  **selectors**: ways to find the element this step applies to, **offsetX**/**offsetY**: how far from the top left corner of the element to double-click. |
-| `emulateNetworkConditions` | Emulate different network conditions. | **download**/**upload**: the download and upload speeds, in bytes per second, **latency**: the minimum latency from a request being sent to the response being received, in milliseconds. |
-| `hover` | Emulate the pointer hovering over an element. | **selectors**: ways to find the element this step applies to. |
-| `keyDown` | Press a key down. | **selectors**: ways to find the element this step applies to, **key**: which key to press. |
-| `keyUp` | Release a pressed key. | **selectors**: ways to find the element this step applies to, **key**: which key to release. |
-| `navigate` | Navigate to a different webpage. | **url**: the URL of the page to navigate to. |
-| `scroll` | Scroll to a position in the webpage. | **x**/**y**: the optional horizontal and vertical coordinates of the position to scroll to in the page. |
-| `setViewport` | Change the viewport size, device pixel ratio, and capabilities. | **width**/**height**: the size of the viewport, **deviceScaleFactor**: the device pixel ratio, **isMobile**: whether the viewport is a mobile device viewport, **hasTouch**: whether the viewport supports touch events, **isLandscape**: whether the viewport is in a landscape orientation. |
-| `waitForElement` | Wait for an element, or for multiple elements, to be present in the webpage. | **selectors**: ways to find the element this step applies to. |
-| `waitForExpression` | Wait until a JavaScript expression evaluates to `true`. | **expression**: the JavaScript expression to evaluate. |
+| `change` | Change the value of a form input field. | **selectors**: Ways to find the element that this step applies to. <br/>**value**: The value to set the form input field to. |
+| `click` | Click an element. | **selectors**: Ways to find the element this step applies to. <br/>**offsetX**/**offsetY**: How far from the top left corner of the element to click. |
+| `close` | Close the browser window. | None. |
+| `doubleClick` | Double-click an element. | **selectors**: Ways to find the element that this step applies to. <br/>**offsetX**/**offsetY**: How far from the top left corner of the element to double-click. |
+| `emulateNetworkConditions` | Emulate different network conditions. | **download**/**upload**: The download and upload speeds, in bytes per second. <br/>**latency**: The minimum latency from a request being sent to the response being received, in milliseconds. |
+| `hover` | Emulate the pointer hovering over an element. | **selectors**: Ways to find the element that this step applies to. |
+| `keyDown` | Press a key down. | **selectors**: Ways to find the element that this step applies to. <br/>**key**: Which key to press. |
+| `keyUp` | Release a pressed key. | **selectors**: Ways to find the element that this step applies to. <br/>**key**: Which key to release. |
+| `navigate` | Navigate to a different webpage. | **url**: The URL of the page to navigate to. |
+| `scroll` | Scroll to a position in the webpage. | **x**/**y**: The optional horizontal and vertical coordinates of the position to scroll to in the page. |
+| `setViewport` | Change the viewport size, device pixel ratio, and capabilities. | **width**/**height**: The size of the viewport. <br/>**deviceScaleFactor**: The device pixel ratio. <br/>**isMobile**: Whether the viewport is a mobile device viewport. <br/>**hasTouch**: Whether the viewport supports touch events. <br/>**isLandscape**: Whether the viewport is in a landscape orientation. |
+| `waitForElement` | Wait for an element, or for multiple elements, to be present in the webpage. | **selectors**: Ways to find the element that this step applies to. |
+| `waitForExpression` | Wait until a JavaScript expression evaluates to `true`. | **expression**: The JavaScript expression to evaluate. |
 
 
 <!-- ---------- -->
