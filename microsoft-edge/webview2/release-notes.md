@@ -147,7 +147,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ###### Runtime-only
 ###### SDK-only
 -->
-<!-- end of Jan 2024 Prerelease SDK -->
+<!-- end of Feb 2024 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->
@@ -232,7 +232,7 @@ N/A
 * Fixed issues causing InvalidOperationExceptions in the .NET controls that weren't helpful to developers. ([Issue #4272](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4272))
 * Fix an issue with put_AreBrowserAcceleratorKeysEnabled API not able to update settings for WebView2 when there isn't any AcceleratorKeyPressed event handler registered. ([Issue #4278](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4278))
 
-<!-- end of Jan 2024 Release SDK -->
+<!-- end of Feb 2024 Release SDK -->
 
 
 <!-- ====================================================================== -->
