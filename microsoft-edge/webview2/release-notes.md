@@ -228,9 +228,9 @@ N/A
 #### Bug fixes
 
 ###### Runtime-only
-* Ensure spellcheck language match put_Language programmatically and customized context menu is also updated with correct spellchecks  ([Issue #2340](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2340))
-* Fixed issues causing InvalidOperationExceptions in the .NET controls that weren't helpful to developers. ([Issue #4272](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4272))
-* Fix an issue with put_AreBrowserAcceleratorKeysEnabled API not able to update settings for WebView2 when there isn't any AcceleratorKeyPressed event handler registered. ([Issue #4278](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4278))
+* Fixes a regression, which affected handling of NewWindowRequested event when the new window is set to be the source webview. ([Issue #4250](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4250))
+* Fixed a bug where closing WebView with an embedded PDF viewer could lead to a crash. ([Issue #3832](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3832))
+* Fixed regression where mouse clicks stopped working when application enabled SetWindowDisplayAffinity.([Issue #4325](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4325))
 
 <!-- end of Feb 2024 Release SDK -->
 
