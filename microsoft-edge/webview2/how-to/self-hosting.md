@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/15/2024
+ms.date: 02/23/2024
 ---
 # Self-hosting by deploying preview channels
 
@@ -229,7 +229,7 @@ Using the WebView2 Utilities, you can collect logs for the WebView2 Runtime and 
 ## See also
 
 * [Test upcoming APIs and features](./set-preview-channel.md)
-* [Pre-release testing](https://docs.microsoft.com/microsoft-edge/webview2/how-to/pre-release-testing)
+* [Prerelease testing using preview channels](./prerelease-testing.md)
 * [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
-* [Site compatibility-impacting changes coming to Microsoft Edge](https://learn.microsoft.com/en-us/microsoft-edge/web-platform/site-impacting-changes)
+* [Site compatibility-impacting changes coming to Microsoft Edge](../../web-platform/site-impacting-changes.md)
 * [Microsoft Edge Insider website](https://www.microsoft.com/edge/download/insider) - download the Canary, Dev, or Beta channel of Microsoft Edge
