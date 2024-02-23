@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/20/2024
+ms.date: 02/26/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -24,9 +24,9 @@ WebView2 changes may require an update to the Runtime, SDK, or both.  Most new A
 
 | Indicator | Meaning |
 |---|---|
-| **(Runtime and SDK)**, or no indicator | Both the Runtime and the SDK need to be updated. |
-| **(Runtime-only)** | Only the Runtime needs to be updated. |
-| **(SDK-only)** | Only the SDK needs to be updated. |
+| **Runtime and SDK**, or no indicator | Both the Runtime and the SDK need to be updated. |
+| **Runtime-only** | Only the Runtime needs to be updated. |
+| **SDK-only** | Only the SDK needs to be updated. |
 
 WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time.  As a result, WebView2 Runtime releases generally also include Microsoft Edge updates.
 
@@ -169,7 +169,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
-*  Added support for `WebResourceRequested` for workers, which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iframes.
+*  Added support for `WebResourceRequested` for workers, which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different-origin iframes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -206,6 +206,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ---
 
+
 <!-- ------------------------------ -->
 * To support browser extensions in WebView2, added `GetBrowserExtensions` for WinRT:
 
@@ -224,13 +225,17 @@ N/A
 
 ---
 
+
 <!-- ------------------------------ -->
 #### Bug fixes
 
 ###### Runtime-only
-* Fixes a regression, which affected handling of NewWindowRequested event when the new window is set to be the source webview. ([Issue #4250](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4250))
-* Fixed a bug where closing WebView with an embedded PDF viewer could lead to a crash. ([Issue #3832](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3832))
-* Fixed regression where mouse clicks stopped working when application enabled SetWindowDisplayAffinity.([Issue #4325](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4325))
+
+* Fixed a regression that affected handling of the `NewWindowRequested` event when the new window is set to be the source WebView.  ([Issue #4250](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4250))
+
+* Fixed a bug where closing a WebView that has an embedded PDF viewer could lead to a crash.  ([Issue #3832](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3832))
+
+* Fixed a regression where mouse-clicks stopped working when the application enabled `SetWindowDisplayAffinity`.  ([Issue #4325](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4325))
 
 <!-- end of Feb 2024 Release SDK -->
 
