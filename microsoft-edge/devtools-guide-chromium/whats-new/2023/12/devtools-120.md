@@ -67,7 +67,7 @@ During recording, interactions with the webpage are listed:
 ![Recorder tool while recording](./devtools-120-images/recorder-tool-3.png)
 
 See also:
-* [Record, replay, and measure user flows](https://developer.chrome.com/docs/devtools/recorder)
+* [Record and replay user flows and measure performance](../../../recorder/index.md)
 
 
 <!-- ====================================================================== -->
