@@ -1,12 +1,12 @@
 ---
 title: What's New in DevTools (Microsoft Edge 122)
-description: "Icons are displayed correctly in high-contrast mode. Keyboard shortcut to move through the open tools is working correctly. Copilot's explanation of a Console error includes a suggested fix. And more."
+description: "Copilot's explanation of Console errors includes a suggested fix. Keyboard shortcut to move through the open tools is working correctly. Icons are displayed correctly in high-contrast mode. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/22/2024
+ms.date: 02/23/2024
 ---
 # What's New in DevTools (Microsoft Edge 122)
 
@@ -14,7 +14,7 @@ ms.date: 02/22/2024
 
 
 <!-- ====================================================================== -->
-## Copilot's explanation of a Console error includes a suggested fix
+## Copilot's explanation of Console errors includes a suggested fix
 
 <!-- Subtitle: Use Copilot to explain Console errors along with a suggested fix in a new Possible solution section. -->
 
@@ -28,7 +28,7 @@ When using Copilot to help explain errors that are shown in the **Console**, a *
 
 <!-- Subtitle: In previous versions of Microsoft Edge, the Ctrl + ]/[ keyboard shortcut wasn't working correctly. In Microsoft Edge 122, this issue has been resolved. -->
 
-In previous releases, when pressing the **Ctrl+]** and **Ctrl+[** keyboard shortcuts, the next tool's tab in the **Activity Bar** wasn't selected and the **Activity Bar** wouldn't update, so it looked like the previous tool was still selected, even though the content of the panel changed to show the correct content for the next tool.  For example, suppose the **Elements** tool's tab and panel content were displayed:
+In previous releases, when pressing the **Ctrl+]** and **Ctrl+[** keyboard shortcuts, the next tool's tab in the **Activity Bar** wasn't selected and the **Activity Bar** wouldn't update, so it looked like the previous tool was still selected, even though the content of the panel changed to show the correct content for the next tool.  For example, suppose that initially, the **Elements** tool's tab and panel content are displayed:
 
 ![The Elements tool, with the Elements tab highlighted and the Elements panel content displayed](./devtools-122-images/keyboard-shortcut-initial-state.png)
 
@@ -36,7 +36,7 @@ After pressing **Ctrl+]** or **Ctrl+[** to move through the tool tabs on the **A
 
 ![The Elements tab incorrectly highlighted while displaying the Network tool's content](./devtools-122-images/keyboard-shortcut-error.png)
 
-This issue has been fixed in Microsoft Edge 122.
+This issue has been fixed in Microsoft Edge 122; the correct tool tab is highlighted.
 
 
 <!-- ====================================================================== -->
@@ -44,7 +44,7 @@ This issue has been fixed in Microsoft Edge 122.
 
 <!-- Subtitle: In recent versions of Microsoft Edge, icons were missing or were colored incorrectly. In Microsoft Edge 122, this issue has been resolved. -->
 
-When using high contrast mode, icons were missing, had the wrong background color, or didn't work, throughout DevTools.  In Microsoft Edge 122, these icons have been fixed and are correctly displayed when high contrast mode is enabled.
+When using high-contrast mode, icons were missing, had the wrong background color, or didn't work, throughout DevTools.  In Microsoft Edge 122, these icons are correctly displayed in high-contrast mode.
 
 
 <!-- ====================================================================== -->
