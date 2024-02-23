@@ -562,11 +562,17 @@
                   href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
                   displayName: Performance monitor tool
 # Quick source tool -----------------------------------------------------------
-            - name: Quick source tool  # new jump page
+            - name: Quick source tool  # jump page
               items:
                 - name: Display or edit source files using the Quick source tool
                   href: devtools-guide-chromium/quick-source/quick-source-tool.md
                   displayName: Quick source tool  # also indexed elsewhere in this file
+# Recorder tool -----------------------------------------------------------
+            - name: Recorder tool
+              items:
+                - name: Record and replay user flows and measure performance
+                  href: devtools-guide-chromium/recorder/index.md
+                  displayName: Recorder tool
 # Rendering tool --------------------------------------------------------------
             - name: Rendering tool
               items:
@@ -1238,6 +1244,9 @@
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
               
+            - name: WebView2 browser flags
+              href: webview2/concepts/webview-features-flags.md
+
             - name: "Main classes for WebView2: Environment, Controller, and Core"
               href: webview2/concepts/environment-controller-core.md
               
