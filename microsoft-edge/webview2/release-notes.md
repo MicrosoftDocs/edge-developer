@@ -163,9 +163,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Breaking changes
 
-* Change in `LaunchingExternalURISchemeEventArgs` behavior.  If the `InitiatingOrigin` is opaque,<!-- todo: define 'opaque' --> the `InitiatingOrigin` reported in the event args will be its precursor origin.<!-- todo: link for more info -->
+* Change in `LaunchingExternalURISchemeEventArgs` behavior.  If the `InitiatingOrigin` is an [opaque origin](https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque),the `InitiatingOrigin` reported in the event args will be its precursor origin.<!-- todo: link for more info -->
 
-* Change in the naming of `TextureStreamErrrorKind` enum.
+* Change in the naming of `TextureStreamErrrorKind` enum. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -279,8 +279,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 * Disabled the global `UserDataFolder` registry key, so that this registry key can only be applied per-app.
 
-* Fixed the `NewWindowRequested` event not being fired when opened by extension. ([Issue #3841](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3841))
-                                           <!-- todo: "when the app is opened by a browser extension"? -->
+* Fixed the `NewWindowRequested` event not being fired when opened by a browser extension. ([Issue #3841](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3841))
 
 * Fixed the `NewWindowRequested` event not being fired when opening a view source. ([Issue #4162](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4162))
 
