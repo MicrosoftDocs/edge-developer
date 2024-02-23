@@ -161,10 +161,6 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### General features
-
-
-<!-- ------------------------------ -->
 #### Promotions
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
