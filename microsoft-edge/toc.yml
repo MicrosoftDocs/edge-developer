@@ -562,11 +562,17 @@
                   href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
                   displayName: Performance monitor tool
 # Quick source tool -----------------------------------------------------------
-            - name: Quick source tool  # new jump page
+            - name: Quick source tool  # jump page
               items:
                 - name: Display or edit source files using the Quick source tool
                   href: devtools-guide-chromium/quick-source/quick-source-tool.md
                   displayName: Quick source tool  # also indexed elsewhere in this file
+# Recorder tool -----------------------------------------------------------
+            - name: Recorder tool
+              items:
+                - name: Record and replay user flows and measure performance
+                  href: devtools-guide-chromium/recorder/index.md
+                  displayName: Recorder tool
 # Rendering tool --------------------------------------------------------------
             - name: Rendering tool
               items:
@@ -1255,6 +1261,9 @@
 # -----------------------------------------------------------------------------
         - name: Customization and UI
           items:
+            - name: WebView2 browser flags  # todo: move entry
+              href: webview2/concepts/webview-features-flags.md
+              
             - name: Custom management of network requests
               href: webview2/how-to/webresourcerequested.md
               displayName: WebResourceRequested, WebResourceResponseReceived
