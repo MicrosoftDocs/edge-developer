@@ -163,8 +163,23 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Breaking changes
 
-> [!IMPORTANT]
-> **Breaking Change**:* Change in `LaunchingExternalURISchemeEventArgs` behavior.  If the `InitiatingOrigin` is opaque,<!-- todo: define 'opaque' --> the `InitiatingOrigin` reported in the event args will be its precursor origin.<!-- todo: link for more info -->
+* Change in `LaunchingExternalURISchemeEventArgs` behavior.  If the `InitiatingOrigin` is opaque,<!-- todo: define 'opaque' --> the `InitiatingOrigin` reported in the event args will be its precursor origin.<!-- todo: link for more info -->
+
+* Change in the naming of `TextureStreamErrrorKind` enum.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2TextureStreamErrorKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.2415-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2TextureStreamErrorKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2texturestreamerrorkind?view=webview2-winrt-1.0.2415-prerelease&preserve-view=true)
+    
+##### [Win32/C++](#tab/win32cpp)
+
+* [COREWEBVIEW2_TEXTURE_STREAM_ERROR_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2415-prerelease&preserve-view=true#corewebview2_texture_stream_error_kind)
+
+---
 
 
 <!-- ------------------------------ -->
