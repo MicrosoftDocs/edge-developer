@@ -163,8 +163,29 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Breaking changes
 
-* Change in `LaunchingExternalURISchemeEventArgs` behavior.  If the `InitiatingOrigin` is an [opaque origin](https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque),the `InitiatingOrigin` reported in the event args will be its precursor origin.<!-- todo: link for more info -->
 
+<!-- ---------- -->
+* The behavior of the `InitiatingOrigin` property of `CoreWebView2LaunchingExternalUriSchemeEventArgs` has changed.  If the `InitiatingOrigin` is an [opaque origin](https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque), the `InitiatingOrigin` that's reported in the event args is its precursor origin.<!-- todo: link for more info -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2LaunchingExternalUriSchemeEventArgs` Class:
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.InitiatingOrigin Property](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.initiatingorigin?view=webview2-dotnet-1.0.2415-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2LaunchingExternalUriSchemeEventArgs` Class:
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.InitiatingOrigin Property](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.2415-prerelease&preserve-view=true#initiatingorigin)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2LaunchingExternalUriSchemeEventArgs`:
+   * [ICoreWebView2LaunchingExternalUriSchemeEventArgs::get_InitiatingOrigin](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2launchingexternalurischemeeventargs?view=webview2-1.0.2415-prerelease&preserve-view=true#get_initiatingorigin)<!--no put-->
+
+---
+
+
+<!-- ---------- -->
 * The members of the `CoreWebView2TextureStreamErrorKind` enum have been renamed:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
