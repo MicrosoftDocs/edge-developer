@@ -170,13 +170,13 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 Old member names:
-* [CoreWebView2TextureStreamErrorKind.NoVideoTrackStarted Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
+* [CoreWebView2TextureStreamErrorKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
    * `CoreWebView2TextureStreamErrorNoVideoTrackStarted`
    * `CoreWebView2TextureStreamErrorTextureError`
    * `CoreWebView2TextureStreamErrorTextureInUse`
 
 New member names:
-* [CoreWebView2TextureStreamErrorKind.NoVideoTrackStarted Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.2415-prerelease&preserve-view=true)
+* [CoreWebView2TextureStreamErrorKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.2415-prerelease&preserve-view=true)
    * `NoVideoTrackStarted`
    * `TextureError`
    * `TextureInUse`
