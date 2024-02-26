@@ -19,6 +19,7 @@ What's New articles correspond to historical releases of Microsoft Edge, and are
 * move eleventh oldest link into whats-new-archive.md
 -->
 
+* [What's New in DevTools (Microsoft Edge 122)](2024/02/devtools-122.md)
 * [What's New in DevTools (Microsoft Edge 121)](2024/01/devtools-121.md)
 * [What's New in DevTools (Microsoft Edge 120)](2023/12/devtools-120.md)
 * [What's New in DevTools (Microsoft Edge 119)](2023/11/devtools-119.md)
@@ -28,5 +29,4 @@ What's New articles correspond to historical releases of Microsoft Edge, and are
 * [What's New in DevTools (Microsoft Edge 115)](2023/07/devtools-115.md)
 * [What's New in DevTools (Microsoft Edge 114)](2023/06/devtools-114.md)
 * [What's New in DevTools (Microsoft Edge 113)](2023/05/devtools-113.md)
-* [What's New in DevTools (Microsoft Edge 112)](2023/04/devtools-112.md)
 * [What's New in DevTools archive](./whats-new-archive.md)
