@@ -165,19 +165,49 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 * Change in `LaunchingExternalURISchemeEventArgs` behavior.  If the `InitiatingOrigin` is an [opaque origin](https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque),the `InitiatingOrigin` reported in the event args will be its precursor origin.<!-- todo: link for more info -->
 
-* Renamed the `CoreWebView2TextureStreamErrrorKind` enum to `CoreWebView2TextureStreamErrorKind`, removing an extra 'r':<!-- todo: confirm; get URL for old name for each platform -->
+* The members of the `CoreWebView2TextureStreamErrorKind` enum have been renamed:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2TextureStreamErrorKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.2415-prerelease&preserve-view=true)
+Old member names:
+* [CoreWebView2TextureStreamErrorKind.NoVideoTrackStarted Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.2357-prerelease&preserve-view=true)
+   * `CoreWebView2TextureStreamErrorNoVideoTrackStarted`
+   * `CoreWebView2TextureStreamErrorTextureError`
+   * `CoreWebView2TextureStreamErrorTextureInUse`
+
+New member names:
+* [CoreWebView2TextureStreamErrorKind.NoVideoTrackStarted Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2texturestreamerrorkind?view=webview2-dotnet-1.0.2415-prerelease&preserve-view=true)
+   * `NoVideoTrackStarted`
+   * `TextureError`
+   * `TextureInUse`
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+Old member names:
+* [CoreWebView2TextureStreamErrorKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2texturestreamerrorkind?view=webview2-winrt-1.0.2357-prerelease&preserve-view=true)
+   * `CoreWebView2TextureStreamErrorNoVideoTrackStarted`
+   * `CoreWebView2TextureStreamErrorTextureError`
+   * `CoreWebView2TextureStreamErrorTextureInUse`
+
+New member names:
 * [CoreWebView2TextureStreamErrorKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2texturestreamerrorkind?view=webview2-winrt-1.0.2415-prerelease&preserve-view=true)
+   * `NoVideoTrackStarted`
+   * `TextureError`
+   * `TextureInUse`
 
 ##### [Win32/C++](#tab/win32cpp)
 
+Old member names:
+* [COREWEBVIEW2_TEXTURE_STREAM_ERROR_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2357-prerelease&preserve-view=true#corewebview2_texture_stream_error_kind)
+   * `COREWEBVIEW2_TEXTURE_STREAM_ERROR_NO_VIDEO_TRACK_STARTED`
+   * `COREWEBVIEW2_TEXTURE_STREAM_ERROR_TEXTURE_ERROR`
+   * `COREWEBVIEW2_TEXTURE_STREAM_ERROR_TEXTURE_IN_USE`
+
+New member names:
 * [COREWEBVIEW2_TEXTURE_STREAM_ERROR_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2415-prerelease&preserve-view=true#corewebview2_texture_stream_error_kind)
+   * `COREWEBVIEW2_TEXTURE_STREAM_ERROR_KIND_NO_VIDEO_TRACK_STARTED`
+   * `COREWEBVIEW2_TEXTURE_STREAM_ERROR_KIND_TEXTURE_ERROR`
+   * `COREWEBVIEW2_TEXTURE_STREAM_ERROR_KIND_TEXTURE_IN_USE`
 
 ---
 
