@@ -247,17 +247,17 @@ To open the search box at the bottom of the **Performance** tool:
 
    ![The search box](./reference-images/search-regex.png)
 
-1. Enter a query in the search box, such as "recalculate style" to find all activities that match that query.
+1. Enter a query in the search box, such as "recalculate style", to find all activities that match that query.
 
-   The matching activities are highlighted in the **Main** section as you type and the total number of matches appears in the search box. The first matching activity is selected, outlined in blue:
+   The matching activities are highlighted in the **Main** section as you type, and the total number of matches appears in the search box. The first matching activity is selected, outlined in blue:
 
    ![The search box with a query and highlighted activities](./reference-images/search-highlighted.png)
 
 To navigate among the activities that match your query:
 
-* Press **Enter** or click the **Next** (![Next](./reference-images/next-icon.png)) button to select the next activity.
+* To select the next activity, press **Enter** or click the **Next** (![Next](./reference-images/next-icon.png)) button.
 
-* Press **Shift+Enter** or click the **Previous** (![Previous](./reference-images/previous-icon.png)) button to select the previous activity.
+* To select the previous activity, press **Shift+Enter** or click the **Previous** (![Previous](./reference-images/previous-icon.png)) button.
 
 To modify the query settings:
 
