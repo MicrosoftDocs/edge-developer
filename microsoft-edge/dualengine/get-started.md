@@ -17,7 +17,7 @@ This article walks you through the steps to start using the DualEngine API.
 <!-- ====================================================================== -->
 ## Step 1: Get access to the DualEngine Limited Access Feature
 
-Access to the DualEngine API is controlled via a Limited Access Feature (LAF).  To gain access to the feature, reach out to dualengineapiaccess@microsoft.com.
+The DualEngine API is part of a Limited Access Feature. For more information or to request an unlock token, contact [Microsoft Support](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d15d3aa2-0512-7cb8-1df9-86221f5cbfde).
 
 The DualEngine LAF is handled somewhat atypically; for details, see [Unlock the Limited Access Feature](concepts/adapter-dll.md#unlock-the-limited-access-feature) in _Creating a DualEngine adapter plugin DLL_.
 
