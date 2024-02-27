@@ -236,28 +236,34 @@ To select a portion of a recording by using a trackpad:
 1. Using two fingers, swipe up to zoom out, or down to zoom in.  Using two fingers, swipe left to move left, or right to move right.
 
 
-
 <!-- ------------------------------ -->
 #### Search activities
 
-To open the search box at the bottom of the **Performance** tool, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS):
+To open the search box at the bottom of the **Performance** tool:
 
-![The search box](./reference-images/search-regex.png)
+1. Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).
 
+   The search box appears at the bottom of the **Performance** tool:
+
+   ![The search box](./reference-images/search-regex.png)
+
+1. Enter a query in the search box, such as "recalculate style", to find all activities that match that query.
+
+   The matching activities are highlighted in the **Main** section as you type, and the total number of matches appears in the search box. The first matching activity is selected, outlined in blue:
+
+   ![The search box with a query and highlighted activities](./reference-images/search-highlighted.png)
 
 To navigate among the activities that match your query:
 
-1. Click the **Previous** (![Previous](./reference-images/previous-icon.png)) and **Next** (![Next](./reference-images/next-icon.png)) buttons.
+* To select the next activity, press **Enter** or click the **Next** (![Next](./reference-images/next-icon.png)) button.
 
-1. To select the next activity, press **Enter**.  To select the previous activity, press **Shift+Enter**.
-
+* To select the previous activity, press **Shift+Enter** or click the **Previous** (![Previous](./reference-images/previous-icon.png)) button.
 
 To modify the query settings:
 
 *  To make the query case-sensitive, click the **Case sensitive** (![Case sensitive](./reference-images/search-case-icon.png)) button.
 
 *  To use a regular expression in your query, click the **Regex** (![Regex](./reference-images/search-regex-icon.png)) button.
-
 
 To hide the search box, click the **Cancel** button.
 
