@@ -1751,68 +1751,48 @@ See also:
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2` Class:
-   * [CoreWebView2.WebResourceRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
-   * [CoreWebView2.WebResourceResponseReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourceresponsereceived)
-* [CoreWebView2WebResourceRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs)
-* [CoreWebView2WebResourceResponseReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.WebResourceRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourcerequested)
-   * [CoreWebView2.WebResourceResponseReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourceresponsereceived)
-* [CoreWebView2WebResourceRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs)
-* [CoreWebView2WebResourceResponseReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourceresponsereceivedeventargs)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `ICoreWebView2` interface:
-   * [ICoreWebView2::add_WebResourceRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested)
-   * [ICoreWebView2::remove_WebResourceRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
-* `ICoreWebView2_2` interface:
-   * [ICoreWebView2_2::add_WebResourceResponseReceived method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)
-   * [ICoreWebView2_2::remove_WebResourceResponseReceived method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_webresourceresponsereceived)
-* [ICoreWebView2WebResourceRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)
-* [ICoreWebView2WebResourceResponseReceivedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs)
-
----
-
-
-<!-- ------------------------------ -->
-#### WebResourceRequested for workers - INCOMING
-
-*  `WebResourceRequested` for service workers allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different-origin iframes.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2` Class:
    * [CoreWebView2.AddWebResourceRequestedFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter)
    * [CoreWebView2.RemoveWebResourceRequestedFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter)
+   * [CoreWebView2.WebResourceRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
+   * [CoreWebView2.WebResourceResponseReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourceresponsereceived)
 
-* `CoreWebView2WebResourceRequestedEventArgs` Class:
-   * [CoreWebView2WebResourceRequestedEventArgs.RequestedSourceKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs.requestedsourcekind)
+* [CoreWebView2WebResourceRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs)
 
 * [CoreWebView2WebResourceRequestSourceKinds Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestsourcekinds)
+
+* [CoreWebView2WebResourceResponseReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
    * [CoreWebView2.AddWebResourceRequestedFilter Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addwebresourcerequestedfilter)
    * [CoreWebView2.RemoveWebResourceRequestedFilter Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#removewebresourcerequestedfilter)
+   * [CoreWebView2.WebResourceRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourcerequested)
+   * [CoreWebView2.WebResourceResponseReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourceresponsereceived)
 
-* `CoreWebView2WebResourceRequestedEventArgs` Class:
-   * [CoreWebView2WebResourceRequestedEventArgs.RequestedSourceKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs#requestedsourcekind)
+* [CoreWebView2WebResourceRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs)
 
 * [CoreWebView2WebResourceRequestSourceKinds Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestsourcekinds)
 
+* [CoreWebView2WebResourceResponseReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourceresponsereceivedeventargs)
+
 ##### [Win32/C++](#tab/win32cpp)
 
+* `ICoreWebView2`:
+   * [ICoreWebView2::add_WebResourceRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested)
+   * [ICoreWebView2::remove_WebResourceRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
+* [ICoreWebView2_2`](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)
+   * [ICoreWebView2_2::add_WebResourceResponseReceived](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)
+   * [ICoreWebView2_2::remove_WebResourceResponseReceived](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_webresourceresponsereceived)
 * [ICoreWebView2_22](/microsoft-edge/webview2/reference/win32/icorewebview2_22)
     * [ICoreWebView2_22::AddWebResourceRequestedFilterWithRequestSourceKinds](/microsoft-edge/webview2/reference/win32/icorewebview2_22#addwebresourcerequestedfilterwithrequestsourcekinds)
     * [ICoreWebView2_22::RemoveWebResourceRequestedFilterWithRequestSourceKinds](/microsoft-edge/webview2/reference/win32/icorewebview2_22#removewebresourcerequestedfilterwithrequestsourcekinds)
 
+* [ICoreWebView2WebResourceRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)
 * [ICoreWebView2WebResourceRequestedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs2)
     * [ICoreWebView2WebResourceRequestedEventArgs2::get_RequestedSourceKind](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs2#get_requestedsourcekind)
+
+* [ICoreWebView2WebResourceResponseReceivedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs)
 
 * [COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_web_resource_request_source_kinds)
 
