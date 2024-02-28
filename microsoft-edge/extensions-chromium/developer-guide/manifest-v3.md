@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 02/21/2024
+ms.date: 02/27/2024
 ---
 # Overview and timelines for migrating to Manifest V3
 
