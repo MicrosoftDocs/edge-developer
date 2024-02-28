@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 04/03/2023
+ms.date: 02/27/2024
 ---
 # Overview of Microsoft Edge extensions
 
