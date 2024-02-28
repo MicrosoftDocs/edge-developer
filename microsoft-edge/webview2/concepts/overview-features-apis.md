@@ -1781,14 +1781,17 @@ See also:
 * `ICoreWebView2`:
    * [ICoreWebView2::add_WebResourceRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested)
    * [ICoreWebView2::remove_WebResourceRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
-* [ICoreWebView2_2`](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)
+
+* [ICoreWebView2_2](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)
    * [ICoreWebView2_2::add_WebResourceResponseReceived](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)
    * [ICoreWebView2_2::remove_WebResourceResponseReceived](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_webresourceresponsereceived)
+
 * [ICoreWebView2_22](/microsoft-edge/webview2/reference/win32/icorewebview2_22)
     * [ICoreWebView2_22::AddWebResourceRequestedFilterWithRequestSourceKinds](/microsoft-edge/webview2/reference/win32/icorewebview2_22#addwebresourcerequestedfilterwithrequestsourcekinds)
     * [ICoreWebView2_22::RemoveWebResourceRequestedFilterWithRequestSourceKinds](/microsoft-edge/webview2/reference/win32/icorewebview2_22#removewebresourcerequestedfilterwithrequestsourcekinds)
 
 * [ICoreWebView2WebResourceRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)
+
 * [ICoreWebView2WebResourceRequestedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs2)
     * [ICoreWebView2WebResourceRequestedEventArgs2::get_RequestedSourceKind](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs2#get_requestedsourcekind)
 
