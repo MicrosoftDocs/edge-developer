@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/01/2024
 ---
-## Crash analyzer tool
+# Crash analyzer tool
 
 Use the **Crash analyzer** tool to analyze Microsoft Edge<!--todo: review/expand--> crashes.  In the **Crash analyzer** tool, you can input a JavaScript stack trace, such as for non-fatal JavaScript exceptions, and then have your sourcemaps applied to the stack trace so that you can debug faster.
 
@@ -47,7 +47,7 @@ To report non-fatal JavaScript exceptions or similar data to tools such as Azure
 <!-- ====================================================================== -->
 ## Enabling the tool
 
-As of March 1, 2024, this feature is hidden by default but is available in Stable and Beta, and is present on the **More Tools** menu in the Dev and Canary preview channels of Microsoft Edge.  To access the **Crash analyzer** tool in Microsoft Edge Stable or Beta, select the **Enable Crash Analyzer** experiment in **Settings** > **Experiments**.  See [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off).
+As of March 1, 2024, this feature is hidden by default but is available in Stable and Beta, and is present on the **More Tools** menu in the Dev and Canary preview channels of Microsoft Edge.  To access the **Crash analyzer** tool in Microsoft Edge Stable or Beta, select the **Enable Crash Analyzer** experiment in **Settings** > **Experiments**.  See [Turning an experiment on or off](../experimental-features/index.md#turning-an-experiment-on-or-off) in _Experimental features in Microsoft Edge DevTools_.
 
 
 <!-- ====================================================================== -->
