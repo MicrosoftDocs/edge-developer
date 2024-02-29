@@ -22,8 +22,8 @@ UI items:
 * **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button
 * **Open Symbol Server settings** (![the 'Open Symbol Server settings' icon](./index-images/open-symbol-server-settings-icon.png)) button
 * **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button
-* Left pane
-* Right pane
+* Left pane - The stack trace to analyze.
+* Right pane - Shows the original file and function names that make up the stack trace.
 
 
 <!-- ====================================================================== -->
