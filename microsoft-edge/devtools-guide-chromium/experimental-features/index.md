@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 02/23/2024
+ms.date: 02/29/2024
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -17,7 +17,9 @@ Policies to keep this page comprehensive and maintainable:
 *  Keep h2 sections in same order as DevTools > Settings > Experiments.
 *  In the heading and UI steps, keep the checkbox label UI string as it appears in the UI; do not revise or "fix" it.
 *  Don't change h2 text, that might break a link from UI.
-*  When a checkbox is removed from all the channels, delete its section - unless there was a (?) link next to checkbox label, in which case, add: "The present section is retained because older browsers have a (?) link pointing to it."
+*  When a checkbox is removed from all the channels: 
+   * If there was no (?) link next to checkbox label, add: "The present section will be removed, because current browsers no longer have this checkbox, and older browsers don't have a (?) link pointing to this section."
+   * If there was a (?) link next to checkbox label, add: "The present section is retained because older browsers have a (?) link pointing to it."
 
 Steps to maintain this page monthly: For latest Canary, and for latest Stable:
 1. Go to edge://settings/help, update if needed.
@@ -48,9 +50,10 @@ The following experimental features are turned on by default. You can use these 
 
 <!-- listed in order of the Settings > Experiments pane -->
 
-**Turned on by default in Microsoft Edge Canary 122:**
+**Turned on by default in Microsoft Edge Canary 124:**
 * [Resolve variable names in expressions using source maps](#resolve-variable-names-in-expressions-using-source-maps)
 * [Set all breakpoints eagerly at startup](#set-all-breakpoints-eagerly-at-startup)
+* [Deprecate CSS \<length\> authoring tool in the Styles tab](#deprecate-css-length-authoring-tool-in-the-styles-tab)
 * [Enable background page selector (e.g. for prerendering debugging)](#enable-background-page-selector-eg-for-prerendering-debugging)
 * [Show warning about Self-XSS when pasting code](#show-warning-about-self-xss-when-pasting-code)
 * [Enable webhint](#enable-webhint)
@@ -146,8 +149,12 @@ The experiments checkboxes that appear in the latest version of the Canary previ
 
 Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you install an add-on with a theme, you need to enable the **Allow extensions to load custom stylesheets** experiment to view the add-on themes.
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -157,8 +164,12 @@ Status:
 
 To capture JavaScript stack traces when DOM nodes are added to the DOM at runtime, enable this experiment. The captured stack traces are displayed in the **Stack Trace** pane of the **Elements** panel.
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -186,8 +197,12 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1. The **Protocol monitor** tool is displayed in the **Quick View** panel at the bottom of DevTools.
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -199,8 +214,12 @@ Adds the **CSP Violations** tool, which displays any Content Security Policy (CS
 
 ![The CSP Violations tool](index-images/csp-violations-tool.png)
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is not present in Microsoft Edge Canary 122.
+* This checkbox is not present in Microsoft Edge Canary 124.
 * This checkbox is not present in Microsoft Edge Stable 122.
 
 The present section is retained because older browsers have a (?) link pointing to it.
@@ -219,19 +238,43 @@ See also:
 * [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
+
+
+<!-- ====================================================================== -->
+## In heap snapshots, treat backing store size as part of the containing object
+<!-- no (?) link -->
+
+_new as of Microsoft Edge 124_
+
+Configures the **Shallow Size** column in the **Memory** tool to report the entire size of objects, including the size of the object's backing store.  If this experiment is enabled, when you take a new heap snapshot, the **Shallow Size** column now includes the entire size of objects:
+
+![The Shallow Size column of a heap snapshot](../memory-problems/heap-snapshots-images/shallow-size-entire-object.png)
+
+By default, the **Shallow Size** column in the **Memory** tool only includes the size of the object itself.  The _shallow size_ is the size of the JavaScript heap that's _directly_ held by an object.  The shallow size of an object is usually small, because a JavaScript object often only stores its description of the object, not the values, in the object's directly held memory.  Most JavaScript objects store their values in a _backing store_ that's elsewhere in the JavaScript heap, and only expose a small wrapper object on the portion of the JavaScript heap that's directly owned by the object.  For example, JavaScript `Array` instances store the contents of the array in a backing store, which is a separate memory location that's not included in the array's shallow size.
+
+See also:
+* [Configure the Shallow Size column to include an entire object's size](../memory-problems/heap-snapshots.md#configure-the-shallow-size-column-to-include-an-entire-objects-size) in _Record heap snapshots using the Memory tool_. 
+
+Status:
+* This checkbox is present in Microsoft Edge Canary 124.
+* This checkbox is not present in Microsoft Edge Stable 122.
 
 
 <!-- ====================================================================== -->
 ## Timeline: event initiators
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Whether to include event initiators in the Timeline.
+Whether to include event initiators in the Timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
 <!-- todo old: need text -->
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is not present in Microsoft Edge Canary 124.
 * This checkbox is not present in Microsoft Edge Stable 122.
 
 The present section is retained because older browsers have a (?) link pointing to it.
@@ -249,7 +292,7 @@ See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -263,12 +306,12 @@ Temporarily disables the indentation markers in the **Sources** tool. The indent
 
 ![The Sources tool, showing indentation markers](./index-images/indentation-markers.png)
 
-<!-- See also:
-* []()
--->
+<!-- todo: link
+See also:
+* []() -->
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -279,9 +322,15 @@ Status:
 Enables DWARF support for WebAssembly debugging.  See [Improved WebAssembly debugging](../whats-new/2019/12/devtools.md#improved-webassembly-debugging) in _What's New in DevTools (Microsoft Edge 80)_.
 <!-- todo old: need text -->
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is not present in Microsoft Edge Canary 122.
+* This checkbox is not present in Microsoft Edge Canary 124.
 * This checkbox is not present in Microsoft Edge Stable 122.
+
+The present section is retained because older browsers have a (?) link pointing to it.
 
 
 <!-- ====================================================================== -->
@@ -297,7 +346,7 @@ See also:
 * [Mapping minified code to your source code to show readable code](../sources/index.md#mapping-minified-code-to-your-source-code-to-show-readable-code) in _Sources tool overview_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -311,7 +360,7 @@ See also:
 * [Pause code with breakpoints](../javascript/breakpoints.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -333,7 +382,7 @@ See also:
 * [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -343,13 +392,17 @@ Status:
 
 Adds a button in the **Elements** tool which toggles between the DOM tree and the accessibility tree.
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
 <!-- ====================================================================== -->
-## Enable new Font Editor tool within the Styles pane.
+## Enable new Font Editor tool within the Styles Pane.
 <!-- checkbox has this exact label -->
 
 See [Enable the Font Editor tool within the Styles pane](#enable-the-font-editor-tool-within-the-styles-pane) below.
@@ -380,7 +433,7 @@ See also:
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -391,8 +444,12 @@ Status:
 Enables automatic contrast issue reporting in the **Issues** tool.
 <!-- todo old: need text -->
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -403,19 +460,45 @@ Status:
 Enables experimental cookie features.
 <!-- todo old: need text -->
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
+
+
+<!-- ====================================================================== -->
+## Deprecate CSS \<length\> authoring tool in the Styles tab
+<!-- no (?) link -->
+
+_new as of Microsoft Edge 124_
+
+Turns off the special UI that changes the units or value for CSS \<length\> in the **Styles** tab in the **Elements** tool.  This checkbox doesn't apply to Microsoft Edge, which omits the CSS \<length\> authoring tool.
+
+In Chrome, this UI control in the **Styles** tab changes the units or value for the CSS length.  For example, if you have `width: 20px`, then `px` becomes a dropdown menu to select the units of measurement, and the `20` becomes draggable; dragging left or right changes the value.  But this UI prevents simply clicking on the value to edit it with the keyboard, so this experimental feature checkbox is available to turn off that UI.
+
+<!-- todo: link
+See also:
+* []() -->
+
+Status:
+* This checkbox is present in Microsoft Edge Canary 124.
+* This checkbox is not present in Microsoft Edge Stable 122.
 
 
 <!-- ====================================================================== -->
 ## Display more precise changes in the Changes tab
 <!-- checkbox has a (?) link to this anchor wording -->
 
-See [More precise changes in the Changes tab](https://developer.chrome.com/blog/new-in-devtools-98/#changes).
+Whether to display changes by using a more detailed layout in the **Changes** tool.
+
+See also:
+* [More precise changes in the Changes tab](https://developer.chrome.com/blog/new-in-devtools-98/#changes)
 
 Status:
-* This checkbox is not present in Microsoft Edge Canary 122.
+* This checkbox is not present in Microsoft Edge Canary 124.
 * This checkbox is not present in Microsoft Edge Stable 122.
 
 The present section is retained because older browsers have a (?) link pointing to it.
@@ -428,8 +511,12 @@ The present section is retained because older browsers have a (?) link pointing 
 Whether to sync CSS changes in the **Styles** tab in the **Elements** tool.
 <!-- todo old: need text -->
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -440,8 +527,12 @@ Status:
 _new as of Microsoft Edge 106_
 <!-- todo old: need text -->
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -452,8 +543,12 @@ Status:
 Whether to use local overrides for response headers.
 <!-- todo old: need text -->
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is not present in Microsoft Edge Canary 122.
+* This checkbox is not present in Microsoft Edge Canary 124.
 * This checkbox is not present in Microsoft Edge Stable 122.
 
 The present section is retained because older browsers have a (?) link pointing to it.
@@ -473,8 +568,10 @@ See also:
 * [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_
 
 Status:
-* This checkbox is not present in Microsoft Edge Canary 122.
+* This checkbox is not present in Microsoft Edge Canary 124.
 * This checkbox is not present in Microsoft Edge Stable 122.
+
+The present section will be removed, because current browsers no longer have this checkbox, and older browsers don't have a (?) link pointing to this section.
 
 
 <!-- ====================================================================== -->
@@ -488,8 +585,12 @@ Controls whether to group resources into separate **Authored** and **Deployed** 
 *  Original source files (authored, that is, files with your local edits).
 *  Production files (deployed files that are on the web server after compiling and bundling the source files).
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -499,9 +600,15 @@ Status:
 
 _new as of Microsoft Edge 106_
 
+In the **Sources** tool's tree view, omits code that's included in the Ignore list.
+
+See also:
+* [Add content scripts to the Ignore List](../javascript/guides/mark-content-scripts-library-code.md)
+* [Enhanced ignore listing](https://developer.chrome.com/blog/new-in-devtools-120#ignore-listing)
+* [Improved Ignore list setting](https://developer.chrome.com/blog/new-in-devtools-108/#ignore-list)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -542,8 +649,12 @@ To see the Object Properties viewer in the **Sources** tool:
    Object properties are displayed in the **Scope** section in the right-hand sidebar.  See [View and edit properties and variables](../javascript/reference.md#view-and-edit-properties-and-variables) in _JavaScript debugging features_.
 
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -561,7 +672,7 @@ See also:
 * [chrome.runtime](https://developer.chrome.com/docs/extensions/reference/api/runtime) - retrieves the background page.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -581,7 +692,7 @@ See also:
 * [Self-XSS](https://wikipedia.org/wiki/Self-XSS) at Wikipedia.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -608,7 +719,7 @@ See also:
 * [Filter requests](../network/reference.md#filter-requests) in _Network features reference_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -633,8 +744,10 @@ See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is not present in Microsoft Edge Canary 124.
 * This checkbox is not present in Microsoft Edge Stable 122.
+
+The present section will be removed, because current browsers no longer have this checkbox, and older browsers don't have a (?) link pointing to this section.
 
 
 <!-- ====================================================================== -->
@@ -652,7 +765,7 @@ See also:
 * [Autofill](../../webview2/concepts/overview-features-apis.md?tabs=dotnetcsharp#autofill) in _Overview of WebView2 features and APIs_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -663,8 +776,12 @@ Status:
 Controls whether to log DevTools uncaught exceptions in the **Console** tool.
 <!-- todo old: need text -->
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -685,8 +802,12 @@ The [webhint](https://webhint.io) experiment displays the webhint feedback in th
 
 ![webhint feedback in the Issues panel](./index-images/experiments-webhint.png)
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -696,8 +817,12 @@ Status:
 
 Enable this experiment to view syntax errors under HTML in the **DOM** view of the **Elements** tool. For more information, see [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool).
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -713,8 +838,12 @@ When you select a folder to use as your Workspace, selecting any link to a file 
 
 Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code. You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -732,7 +861,7 @@ See also:
 * [Troubleshooting common performance issues](../rendering-tools/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 -->
 
@@ -750,7 +879,7 @@ See also:
 * [Debug JavaScript error stack traces by using the Crash Analyzer tool](../whats-new/2023/05/devtools-113.md#debug-javascript-error-stack-traces-by-using-the-crash-analyzer-tool) in _What's New in DevTools (Microsoft Edge 113)_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is not present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -767,7 +896,7 @@ See also:
 *  [Throttle the CPU while recording](../evaluate-performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -780,11 +909,15 @@ Status:
 ## Ignore List for JavaScript frames on Timeline
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Whether to include the Ignore list for JavaScript frames on the Timeline.
-<!-- todo old: need text -->
+Whether to include code that's in the Ignore list in JavaScript frames on the Timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
+
+See also:
+* [Add content scripts to the Ignore List](../javascript/guides/mark-content-scripts-library-code.md)
+* [Enhanced ignore listing](https://developer.chrome.com/blog/new-in-devtools-120#ignore-listing)
+* [Improved Ignore list setting](https://developer.chrome.com/blog/new-in-devtools-108/#ignore-list)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -799,7 +932,7 @@ See also:
 * [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -807,14 +940,14 @@ Status:
 ## Sampling heap profiler timeline
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Controls whether to show the Sampling heap profiler timeline.
+Controls whether to show the Sampling heap profiler timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
 <!-- todo old: need text -->
 
 See also:
 * [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -822,10 +955,14 @@ Status:
 ## Timeline: invalidation tracking
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Controls whether to show invalidation tracking on the Timeline.
+Controls whether to show invalidation tracking on the Timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
+
+<!-- todo: link
+See also:
+* []() -->
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -833,10 +970,14 @@ Status:
 ## Timeline: show all events
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Controls whether to show all events on the Timeline.
+Controls whether to show all events on the Timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
+
+<!-- todo: link
+See also:
+* []() -->
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -844,10 +985,14 @@ Status:
 ## Timeline: V8 Runtime Call Stats on Timeline
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Controls whether to show v8 runtime call stats on the Timeline.
+Controls whether to show v8 runtime call stats on the Timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
+
+<!-- todo: link
+See also:
+* []() -->
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -865,12 +1010,12 @@ This is a programmatic way to record JavaScript execution, which can be useful i
 
 When DevTools is used to debug processes that are running in Node.js, this experiment makes whatever `console.profile` generates available to the **Performance** Tool.
 
-Status:
-* This checkbox is present in Microsoft Edge Canary 122.
-* This checkbox is present in Microsoft Edge Stable 122.
-
 See also:
 * [JavaScript Profiler tool](../javascript-profiler/javascript-profiler-tool.md)
+
+Status:
+* This checkbox is present in Microsoft Edge Canary 124.
+* This checkbox is present in Microsoft Edge Stable 122.
 
 
 <!-- ====================================================================== -->
@@ -884,7 +1029,7 @@ See also:
 * [The first time source files are loaded, breakpoints might not trigger](https://bugs.chromium.org/p/chromium/issues/detail?id=1133307&q=%22instrumentation%20breakpoints%22&can=2)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -902,7 +1047,7 @@ See also:
 * [Mapping minified code to your source code to show readable code](../sources/index.md#mapping-minified-code-to-your-source-code-to-show-readable-code) in _Sources tool overview_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -930,8 +1075,12 @@ The **Speculations** page has columns:
 * **Rule set**
 * **Status**
 
+<!-- todo: link
+See also:
+* []() -->
+
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -944,12 +1093,12 @@ _new as of Microsoft Edge 118_
 Whether to enable the Storage Buckets Tree in the **Application** tool.
 <!-- todo old: need text -->
 
-<!-- 
+<!-- todo: link
 See also:
 * []() -->
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
 
 
@@ -978,5 +1127,5 @@ See also:
 * [View main thread activity](../evaluate-performance/reference.md#view-main-thread-activity) in _Performance features reference_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 122.
+* This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
