@@ -1,6 +1,6 @@
 ---
 title: Prerelease testing using preview channels
-description: How to test your WebView2 app by using the preview channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta) to find issues that will affect your particular WebView2 app, before WebView2 changes migrate to the Evergreen WebView2 Runtime.
+description: How to test your WebView2 app by using the preview channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta) to find issues that will affect your particular WebView2 app, before WebView2 changes reach  the Evergreen WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,7 +10,7 @@ ms.date: 02/15/2024
 ---
 # Prerelease testing using preview channels
 
-_Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge to find issues that will affect your particular WebView2 app, before WebView2 changes migrate to Evergreen WebView2 Runtime.  Prerelease testing helps your app catch bugs in prerelease channels of WebView2, before the WebView2 changes ship in a stable release and degrade the app experience for end users.  In prerelease testing, you validate your app against early builds of WebView2, to ensure that your app will work with the upcoming changes.
+_Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge to find issues that will affect your particular WebView2 app, before any changes ship in the Stable Evergreen Runtime.  Prerelease testing helps your app catch bugs in prerelease channels of WebView2, before the WebView2 changes ship in a stable release and degrade the app experience for end users.  In prerelease testing, you validate your app against early builds of WebView2, to ensure that your app will work with the upcoming changes.
 
 To validate your app against early builds of WebView2, do automated testing with the preview channels of Microsoft Edge.  A preview channel contains a WebView2 preview runtime.
 
@@ -28,15 +28,9 @@ See also:
 <!-- ====================================================================== -->
 ## Importance of prerelease testing
 
-Evergreen WebView2 is based on the evergreen Chromium platform, which receives monthly major updates.  To validate your own, particular app against incoming browser updates, test your WebView2 app against the prerelease channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta).  Regressions in WebView2 apps tend to be application-specific, rather than affecting all WebView2 apps.
+Evergreen WebView2 is based on the evergreen Chromium platform, which receives monthly major updates. Regressions in WebView2 apps tend to be application-specific, rather than affecting all WebView2 apps.
 
-The only way to catch app-specific regressions before WebView2 changes ship in Edge Stable is to test your particular app against the prerelease channels of Microsoft Edge.  WebView2 is tested in a variety of general scenarios, but it's not feasible for that general testing to cover all the scenarios that various specific apps might encounter.
-
-Many issues in specific WebView2 apps can be discovered before WebView2 changes reach the Stable WebView2 Runtime, by doing prerelease testing, such as in Edge Canary.  For example, the following issues have been caught:
-- [Unable to open https://www.facebook.com, once load will directly ProcessFailed](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4281)
-- [MSEdgeWebView2 crashes when trying to preview a file through Monaco in file explorer using PowerToys](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4228)
-- [CoreWebView2PrintSettings.ScaleFactor is not working](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4082)
-
+To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your particular app against the prerelease channels of Microsoft Edge. WebView2 is tested in a variety of general scenarios, but it's possible that some of the specific scenarios of your app are not covered.
 
 <!-- ====================================================================== -->
 ## Start by doing automated testing against Edge Canary
@@ -44,7 +38,7 @@ Many issues in specific WebView2 apps can be discovered before WebView2 changes 
 Start with automated testing against the Microsoft Edge **Canary** channel, which ships daily.  This enables you to catch issues as early as possible. The Microsoft Edge **Dev** channel ships weekly, and is also a good option.
 
 Do the following steps:
-1. Set the preview channel for your app.  See [Ways to set the preview channel](#ways-to-set-the-preview-channel), below.
+1. Set the preview channel for your app.  See [How set the preview channel](#how-to-set-the-preview-channel), below.
 1. Deploy the non-stable channels.  See [How to deploy non-stable channels](#how-to-deploy-non-stable-channels), below.
 1. Conduct automated testing on your app running against the non-stable channels.  See [How to do automated testing](#how-to-do-automated-testing), below.
 1. Compare the results with the baseline.  See [The baseline release of WebView2 for testing](#the-baseline-release-of-webview2-for-testing), below.
@@ -53,14 +47,7 @@ Upon finding issues, you can report them via the [WebView2 feedback repo](https:
 
 
 <!-- ====================================================================== -->
-## Ways to set the preview channel
-
-You can set the preview channel by doing either of the following:
-* Use `ChannelSearchKind` to set the channel search order.
-* Use the browser executable folder.
-
-These options are explained below.
-
+## How to set the preview channel
 
 <!-- ====================================================================== -->
 ## Setting the preview channel by using ChannelSearchKind to set the channel search order
@@ -121,67 +108,6 @@ Set the `ChannelSearchKind` policy.
 
 Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`  
 Value: `1`
-
-Do either of the following:
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  Click any of the three **Download Windows Policy** links.<!-- todo: no "Edge policy" download link there -->
-* Use the built-in policy on Intune.<!-- todo: link to more info -->
-
----
-
-
-<!-- ====================================================================== -->
-## Setting the preview channel by using the browser executable folder
-
-The browser executable folder is the path to the folder that contains the WebView2 Runtime binaries.  This option is useful if you're using a fixed Runtime.  The browser executable folder path can be set per app through a registry key, environment variable, API, or group policy.
-
-
-##### [Registry key](#tab/registry-key)
-
-```reg
-REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /v WebView2APISample.exe /t REG_SZ /d "C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0"
-```
-
-* Replace `WebView2APISample.exe` with your app's executable name, or with the application user model ID.
-
-* Replace the example path with the path to the desired Microsoft Edge preview channel.
-
-
-##### [Environment variable](#tab/environment-variable)
-
-Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`  
-Value: `<path to desired Microsoft Edge preview channel>`
-
-
-##### [API](#tab/api)
-
-Pass the path to the browser executable folder during environment creation:
-
-**.NET:**
-
-* `CoreWebView2EnvironmentOptions` Class:
-   * [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments)
-
-**WinRT:**
-
-* `CoreWebView2EnvironmentOptions` Class:
-   * [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#additionalbrowserarguments)
-
-**Win32:**
-
-Globals:
-   * [CreateCoreWebView2EnvironmentWithOptions(browserExecutableFolder, userDataFolder, environmentOptions, environmentCreatedHandler)](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions -->
-
-* `ICoreWebView2EnvironmentOptions`:
-   * [ICoreWebView2EnvironmentOptions::get_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_additionalbrowserarguments)
-   * [ICoreWebView2EnvironmentOptions::put_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_additionalbrowserarguments)
-
-
-##### [Group policy](#tab/group-policy)
-
-Set `BrowserExecutableFolder`.
-
-Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
-Value: `<path to desired Microsoft Edge preview channel>`
 
 Do either of the following:
 * Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  Click any of the three **Download Windows Policy** links.<!-- todo: no "Edge policy" download link there -->
