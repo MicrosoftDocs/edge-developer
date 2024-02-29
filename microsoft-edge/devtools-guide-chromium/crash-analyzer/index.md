@@ -22,7 +22,7 @@ UI items:
 * The **Remove this analysis** (![the 'Remove this analysis' icon](./index-images/remove-this-analysis-icon.png)) button.
 * The **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button.
 * The **Open Symbol Server settings** (![the 'Open Symbol Server settings' icon](./index-images/open-symbol-server-settings-icon.png)) button.
-* The **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button.
+* The **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button - brings up the present article.
 * Left pane - The stack trace (annotated crash dump) to analyze.
 * Right pane - Displays the original file names and function names that make up the stack trace.
 
