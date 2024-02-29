@@ -12,7 +12,8 @@ ms.date: 03/01/2024
 
 Use the **Crash analyzer** tool to analyze Microsoft Edge<!--todo: review/expand--> crashes.  In the **Crash analyzer** tool, you can input a JavaScript stack trace, such as for non-fatal JavaScript exceptions, and then have your sourcemaps applied to the stack trace so that you can debug faster.
 
-![The Crash analyzer tool](./index-images/crash-analyzer.png)
+![The Crash analyzer tool](./index-images/crash-analyzer.png)<!-- todo: show instead a demo page that's meant to cause crashes -->
+
 
 UI items:
 * The **New analysis** (![The 'New analysis' icon](./index-images/new-analysis-icon.png)) button.
