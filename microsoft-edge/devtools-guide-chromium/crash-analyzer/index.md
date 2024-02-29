@@ -23,7 +23,7 @@ UI items:
 * The **Open Symbol Server settings** (![the 'Open Symbol Server settings' icon](./index-images/open-symbol-server-settings-icon.png)) button.
 * The **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button.
 * Left pane - The stack trace to analyze.
-* Right pane - Shows the original file and function names that make up the stack trace.
+* Right pane - Displays the original file names and function names that make up the stack trace.
 
 
 <!-- ====================================================================== -->
@@ -37,7 +37,7 @@ To report non-fatal JavaScript exceptions or similar data to tools such as Azure
 
 1. Once you have a stack trace, paste it into the left pane of the **Crash analyzer** tool.
 
-1. In the **Crash analyzer** tool, click the **Analyze** button (or press **Ctrl+Enter**).  The right-hand pane shows the original file and function names that make up the stack trace:
+1. In the **Crash analyzer** tool, click the **Analyze** button (or press **Ctrl+Enter**).  The right-hand pane shows the original file names and function names that make up the stack trace:
 
    ![Using the Crash analyzer tool to debug a non-fatal JavaScript exception](./index-images/crash-analyzer-tool.png)
 
