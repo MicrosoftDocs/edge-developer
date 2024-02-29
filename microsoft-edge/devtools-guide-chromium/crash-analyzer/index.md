@@ -16,8 +16,8 @@ Use the **Crash analyzer** tool to analyze Microsoft Edge<!--todo: review/expand
 
 UI items:
 * **New analysis** (![The 'New analysis' icon](./index-images/new-analysis-icon.png)) button
-* **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png) button
-* **Analyses** (![The 'Analyses' dropdown list](./index-images/analyses-dropdown-list.png) dropdown list
+* **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button
+* **Analyses** (![The 'Analyses' dropdown list](./index-images/analyses-dropdown-list.png)) dropdown list
 * **Remove this analysis** (![the 'Remove this analysis' icon](./index-images/remove-this-analysis-icon.png)) button
 * **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button
 * **Open Symbol Server settings** (![the 'Open Symbol Server settings' icon](./index-images/open-symbol-server-settings-icon.png)) button
