@@ -403,6 +403,11 @@
                 - name: Find unused JavaScript and CSS code with the Coverage tool
                   href: devtools-guide-chromium/coverage/index.md
                   displayName: Coverage tool
+# Crash analyzer --------------------------------------------------------------
+            - name: Crash analyzer tool
+              items:
+                - name: Crash analyzer tool
+                  href: devtools-guide-chromium/crash-analyzer/index.md
 # CSP Violations --------------------------------------------------------------
             # - name: CSP Violations tool
             #   https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
