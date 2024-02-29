@@ -15,13 +15,13 @@ Use the **Crash analyzer** tool to analyze Microsoft Edge<!--todo: review/expand
 ![The Crash analyzer tool](./index-images/crash-analyzer.png)
 
 UI items:
-* **New analysis** (![The 'New analysis' icon](./index-images/new-analysis-icon.png)) button
-* **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button
-* **Analyses** (![The 'Analyses' dropdown list](./index-images/analyses-dropdown-list.png)) dropdown list
-* **Remove this analysis** (![the 'Remove this analysis' icon](./index-images/remove-this-analysis-icon.png)) button
-* **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button
-* **Open Symbol Server settings** (![the 'Open Symbol Server settings' icon](./index-images/open-symbol-server-settings-icon.png)) button
-* **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button
+* The **New analysis** (![The 'New analysis' icon](./index-images/new-analysis-icon.png)) button.
+* The **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button.
+* The **Analyses** (![The 'Analyses' dropdown list](./index-images/analyses-dropdown-list.png)) dropdown list.
+* The **Remove this analysis** (![the 'Remove this analysis' icon](./index-images/remove-this-analysis-icon.png)) button.
+* The **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button.
+* The **Open Symbol Server settings** (![the 'Open Symbol Server settings' icon](./index-images/open-symbol-server-settings-icon.png)) button.
+* The **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button.
 * Left pane - The stack trace to analyze.
 * Right pane - Shows the original file and function names that make up the stack trace.
 
