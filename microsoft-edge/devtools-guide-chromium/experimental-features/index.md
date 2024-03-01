@@ -183,23 +183,13 @@ The **Protocol monitor** tool displays the messages that are sent and received b
 
 To select this checkbox and then open the **Protocol monitor** tool:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
-
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./index-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.  The **Settings** panel opens, with the **Preferences** page selected.
-
-1. On the left side of the **Settings** panel, select the **Experiments** page.
-
-1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) to close **Settings**.
-
-   The message appears: "One or more settings have changed which requires a reload to take effect."
-
-1. Click the **Reload DevTools** button that appears next to the message.
+1. Select this **Protocol Monitor** checkbox as described in [Turning an experiment on or off](#turning-an-experiment-on-or-off), above.
 
 1. In **Quick View** at the bottom of DevTools, click the **More tools** (+) button, and then select **Protocol monitor**.
 
    Or, open the **Command Menu**, such as by pressing **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS), and then type **protocol** in the text box.  Then select **Show Protocol monitor**.  
 
-1. The **Protocol monitor** tool is displayed in the **Quick View** panel at the bottom of DevTools.
+   The **Protocol monitor** tool is displayed in the **Quick View** panel at the bottom of DevTools.
 
 See also:
 * [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../../webview2/how-to/chromium-devtools-protocol.md)
