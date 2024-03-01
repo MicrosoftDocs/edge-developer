@@ -146,11 +146,10 @@ The experiments checkboxes that appear in the latest version of the Canary previ
 ## Allow extensions to load custom stylesheets
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you install an add-on with a theme, you need to enable the **Allow extensions to load custom stylesheets** experiment to view the add-on themes.
+Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you install an add-on that defines a custom color theme for DevTools, you need to enable the **Allow extensions to load custom stylesheets** experiment to view the add-on themes.
 
-<!-- todo: link
 See also:
-* []() -->
+* [Apply a color theme to DevTools](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/theme)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -161,11 +160,11 @@ Status:
 ## Capture node creation stacks
 <!-- checkbox has a (?) link to this anchor wording -->
 
-To capture JavaScript stack traces when DOM nodes are added to the DOM at runtime, enable this experiment. The captured stack traces are displayed in the **Stack Trace** pane of the **Elements** panel.
+To capture JavaScript stack traces when DOM nodes are added to the DOM at runtime, enable this experiment.  The captured stack traces are displayed in the **Stack Trace** pane of the **Elements** tool.<!-- todo: what tool contains this Stack Trace pane?  Sources tool?  Crash Analyzer tool?  Console?  where in that tool?  Update See Also accordingly -->
 
-<!-- todo: link
 See also:
-* []() -->
+* [Sources tool overview](../sources/index.md)
+<!-- todo: improve links -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -176,9 +175,13 @@ Status:
 ## Protocol Monitor
 <!-- checkbox has a (?) link to this anchor wording -->
 
-DevTools communicates with the inspected page using the DevTools protocol.
+Makes the **Protocol monitor** tool available in DevTools:
 
-To monitor the messages sent and received by DevTools to debug the inspected page:
+![The 'Protocol monitor' tool](./index-images/protocol-monitor-tool.png)
+
+The **Protocol monitor** tool displays the messages that are sent and received by DevTools, to debug the inspected page.  DevTools communicates with the inspected page by using the Chrome DevTools Protocol (CDP).
+
+To select this checkbox and then open the **Protocol monitor** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
@@ -188,17 +191,22 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings](./index-images/settings-close-icon-light-theme.png)) to close **Settings**.
 
-1. Open the **Command Menu**, such as by pressing **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS), and then type **protocol** in the text box.
-
-1. Select **Show Protocol monitor**.  The message appears: "One or more settings have changed which requires a reload to take effect."
+   The message appears: "One or more settings have changed which requires a reload to take effect."
 
 1. Click the **Reload DevTools** button that appears next to the message.
 
+1. In **Quick View** at the bottom of DevTools, click the **More tools** (+) button, and then select **Protocol monitor**.
+
+   Or, open the **Command Menu**, such as by pressing **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS), and then type **protocol** in the text box.  Then select **Show Protocol monitor**.  
+
 1. The **Protocol monitor** tool is displayed in the **Quick View** panel at the bottom of DevTools.
 
-<!-- todo: link
 See also:
-* []() -->
+* [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../../webview2/how-to/chromium-devtools-protocol.md)
+* [[Experimental] Protocol monitor](https://developer.chrome.com/blog/new-in-devtools-92#protocol-monitor) in _What's New In DevTools (Chrome 92)_.
+<!--
+* [Protocol monitor tool](../protocol-monitor/index.md) - article will exist if/when this Experimental Feature becomes non-experimental
+-->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -209,13 +217,14 @@ Status:
 ## Show CSP Violations view
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Adds the **CSP Violations** tool, which displays any Content Security Policy (CSP) violations that are detected on the inspected webpage.
+This experimental tool has been removed from DevTools.
+
+Adds the **CSP Violations** tool to DevTools.  The **CSP Violations** tool displays any Content Security Policy (CSP) violations that are detected on the inspected webpage:
 
 ![The CSP Violations tool](index-images/csp-violations-tool.png)
 
-<!-- todo: link
 See also:
-* []() -->
+* [The CSP violations experiment is removed](https://developer.chrome.com/blog/new-in-devtools-121#csp-violations)
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 124.
@@ -265,12 +274,10 @@ Status:
 ## Timeline: event initiators
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Whether to include event initiators in the Timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
-<!-- todo old: need text -->
+Whether to include event initiators in the **Performance** tool.  This is useful to link a selected event to the other event that initiated it.
 
-<!-- todo: link
 See also:
-* []() -->
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 124.
@@ -305,9 +312,8 @@ Temporarily disables the indentation markers in the **Sources** tool. The indent
 
 ![The Sources tool, showing indentation markers](./index-images/indentation-markers.png)
 
-<!-- todo: link
 See also:
-* []() -->
+* [Sources tool overview](../sources/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -318,12 +324,11 @@ Status:
 ## WebAssembly Debugging: Enable DWARF support
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Enables DWARF support for WebAssembly debugging.  See [Improved WebAssembly debugging](../whats-new/2019/12/devtools.md#improved-webassembly-debugging) in _What's New in DevTools (Microsoft Edge 80)_.
+Enables DWARF support for WebAssembly debugging.
 <!-- todo old: need text -->
 
-<!-- todo: link
 See also:
-* []() -->
+* [Improved WebAssembly debugging](../whats-new/2019/12/devtools.md#improved-webassembly-debugging) in _What's New in DevTools (Microsoft Edge 80)_.
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 124.
@@ -389,11 +394,23 @@ Status:
 ## Enable full accessibility tree view in the Elements panel
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Adds a button in the **Elements** tool which toggles between the DOM tree and the accessibility tree.
+Adds a **Switch to Accessibility Tree view** button in the **Elements** tool that toggles between the DOM tree and the accessibility tree.  The button label toggles to **Switch to DOM Tree view**.
 
-<!-- todo: link
+If this Experiment checkbox is cleared, the **Elements** tool lacks the button:
+
+![The Elements tool without the "Switch to Accessibility Tree view" button](./index-images/elements-tool-wo-button.png)
+
+If this Experiment checkbox is selected, the **Elements** tool has the button:
+
+![The Elements tool with the "Switch to Accessibility Tree view" button](./index-images/elements-tool-w-button.png)
+
+The Accessibility Tree view in the **Elements** tool:
+
+![The Accessibility Tree view in the Elements tool](./index-images/accessibility-tree-view.png)
+
 See also:
-* []() -->
+* [Test accessibility using the Accessibility tab](../accessibility/accessibility-tab.md)
+* [Full accessibility tree view in the Elements tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2021/02/devtools#full-accessibility-tree-view-in-the-elements-tool) in _What's New in DevTools (Microsoft Edge 90)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -443,9 +460,8 @@ Status:
 Enables automatic contrast issue reporting in the **Issues** tool.
 <!-- todo old: need text -->
 
-<!-- todo: link
 See also:
-* []() -->
+* [Find and fix problems using the Issues tool](../issues/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -459,9 +475,8 @@ Status:
 Enables experimental cookie features.
 <!-- todo old: need text -->
 
-<!-- todo: link
 See also:
-* []() -->
+* [View, edit, and delete cookies](../storage/cookies.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -491,9 +506,8 @@ The present section is retained because older browsers have a (?) link pointing 
 Whether to sync CSS changes in the **Styles** tab in the **Elements** tool.
 <!-- todo old: need text -->
 
-<!-- todo: link
 See also:
-* []() -->
+* [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -505,11 +519,12 @@ Status:
 <!-- no (?) link -->
 
 _new as of Microsoft Edge 106_
+
+Highlights a violating node or attribute in the **Elements** tool's DOM tree.
 <!-- todo old: need text -->
 
-<!-- todo: link
 See also:
-* []() -->
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -523,9 +538,9 @@ Status:
 Whether to use local overrides for response headers.
 <!-- todo old: need text -->
 
-<!-- todo: link
 See also:
-* []() -->
+* [Override network response headers](https://developer.chrome.com/blog/new-in-devtools-113/#network)
+* [Add columns for response headers](../network/reference.md#add-columns-for-response-headers) in _Network features reference_.
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 124.
@@ -565,9 +580,8 @@ Controls whether to group resources into separate **Authored** and **Deployed** 
 *  Original source files (authored, that is, files with your local edits).
 *  Production files (deployed files that are on the web server after compiling and bundling the source files).
 
-<!-- todo: link
 See also:
-* []() -->
+* [Using the Page tab to explore resources that construct the current webpage](../sources/index.md#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage) in _Sources tool overview_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -605,6 +619,7 @@ This highlighting is useful because in JavaScript, objects inherit from parent o
 The Object Properties viewer is in several tools, including **Elements**, **Sources**, **Console**, and **Network**.  It provides a tree view of properties of objects.
 
 
+<!-- ------------------------------ -->
 #### In the Elements tool
 
 To see the Object Properties viewer in the **Elements** tool:
@@ -615,7 +630,11 @@ To see the Object Properties viewer in the **Elements** tool:
 
    The **Properties** tab contains the list of properties for the selected element.
 
+See also:
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
 
+
+<!-- ------------------------------ -->
 #### In the Sources tool
 
 To see the Object Properties viewer in the **Sources** tool:
@@ -628,10 +647,9 @@ To see the Object Properties viewer in the **Sources** tool:
 
    Object properties are displayed in the **Scope** section in the right-hand sidebar.  See [View and edit properties and variables](../javascript/reference.md#view-and-edit-properties-and-variables) in _JavaScript debugging features_.
 
-
-<!-- todo: link
 See also:
-* []() -->
+* [Sources tool overview](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/)
+
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -756,9 +774,8 @@ Status:
 Controls whether to log DevTools uncaught exceptions in the **Console** tool.
 <!-- todo old: need text -->
 
-<!-- todo: link
 See also:
-* []() -->
+* [Console overview](../console/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -778,13 +795,12 @@ Status:
 *  Progressive Web Apps (PWAs)
 *  Other common web development issues
 
-The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant tool, such as **Network**, **Sources**, or **Elements**:
+The [webhint](https://webhint.io) experiment displays webhint feedback in the **Issues** tool.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant tool, such as **Network**, **Sources**, or **Elements**:
 
-![webhint feedback in the Issues panel](./index-images/experiments-webhint.png)
+![webhint feedback in the Issues tool](./index-images/experiments-webhint.png)
 
-<!-- todo: link
 See also:
-* []() -->
+* [Find and fix problems using the Issues tool](../issues/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -795,11 +811,10 @@ Status:
 ## Show issues in Elements
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Enable this experiment to view syntax errors under HTML in the **DOM** view of the **Elements** tool. For more information, see [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool).
+Displays syntax errors under HTML in the **DOM** view of the **Elements** tool.
 
-<!-- todo: link
 See also:
-* []() -->
+* [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool) in _What's New in DevTools (Microsoft Edge 91)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -816,11 +831,10 @@ When you select a folder to use as your Workspace, selecting any link to a file 
 
 ![Selecting a file link in the Styles tool opens the file in Visual Studio Code](./index-images/experiment-sources-in-code-editor-open.png)
 
-Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code. You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
+Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code.
 
-<!-- todo: link
 See also:
-* []() -->
+* [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md) - setting up your workspace.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -889,9 +903,10 @@ Status:
 ## Ignore List for JavaScript frames on Timeline
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Whether to include code that's in the Ignore list in JavaScript frames on the Timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
+Whether to include code that's in the Ignore list in JavaScript frames, in the **Performance** tool.
 
 See also:
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 * [Add content scripts to the Ignore List](../javascript/guides/mark-content-scripts-library-code.md)
 * [Enhanced ignore listing](https://developer.chrome.com/blog/new-in-devtools-120#ignore-listing)
 * [Improved Ignore list setting](https://developer.chrome.com/blog/new-in-devtools-108/#ignore-list)
@@ -920,10 +935,10 @@ Status:
 ## Sampling heap profiler timeline
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Controls whether to show the Sampling heap profiler timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
-<!-- todo old: need text -->
+Controls whether to show the sampling heap profiler timeline in the **Performance** tool.
 
 See also:
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 * [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
 
 Status:
@@ -935,11 +950,10 @@ Status:
 ## Timeline: invalidation tracking
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Controls whether to show invalidation tracking on the Timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
+Controls whether to show invalidation tracking in the **Performance** tool.
 
-<!-- todo: link
 See also:
-* []() -->
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -950,11 +964,10 @@ Status:
 ## Timeline: show all events
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Controls whether to show all events on the Timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
+Controls whether to show all events in the **Performance** tool.
 
-<!-- todo: link
 See also:
-* []() -->
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -965,11 +978,10 @@ Status:
 ## Timeline: V8 Runtime Call Stats on Timeline
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Controls whether to show v8 runtime call stats on the Timeline.<!-- todo: in the **Performance** tool and **Memory** tool. -->
+Controls whether to show V8 runtime call statistics in the **Performance** tool.  V8 is the JavaScript engine that's used by Microsoft Edge.
 
-<!-- todo: link
 See also:
-* []() -->
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -1055,9 +1067,8 @@ The **Speculations** page has columns:
 * **Rule set**
 * **Status**
 
-<!-- todo: link
 See also:
-* []() -->
+* [Application tool, to manage storage](../storage/application-tool.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -1073,9 +1084,8 @@ _new as of Microsoft Edge 118_
 Whether to enable the Storage Buckets Tree in the **Application** tool.
 <!-- todo old: need text -->
 
-<!-- todo: link
 See also:
-* []() -->
+* [Application tool, to manage storage](../storage/application-tool.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.

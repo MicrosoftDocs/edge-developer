@@ -400,13 +400,6 @@
                 - name: Find unused JavaScript and CSS code with the Coverage tool
                   href: devtools-guide-chromium/coverage/index.md
                   displayName: Coverage tool
-# CSP Violations --------------------------------------------------------------
-            # - name: CSP Violations tool
-            #   https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
-            #   items:
-            #     - name: Display Content Security Policy (CSP) violations
-            #       href: devtools-guide-chromium/csp-violations/csp-violations-tool.md
-            #       displayName: CSP Violations tool
 # CSS Overview tool -----------------------------------------------------------
             - name: CSS Overview tool
               items:
@@ -554,13 +547,17 @@
                 - name: Analyze selector performance during Recalculate Style events
                   href: devtools-guide-chromium/evaluate-performance/selector-stats.md
                   displayName: Performance tool
-
 # Performance monitor tool ----------------------------------------------------
             - name: Performance monitor tool
               items:
                 - name: Measure runtime performance of a page using the Performance monitor tool  # added article
                   href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
                   displayName: Performance monitor tool
+# Protocol monitor tool ----------------------------------------------------
+#           - name: Protocol monitor tool  #  03/01/2024: https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#protocol-monitor
+#             items:
+#               - name: Protocol monitor tool
+#                 href: devtools-guide-chromium/protocol-monitor/index.md
 # Quick source tool -----------------------------------------------------------
             - name: Quick source tool  # jump page
               items:
