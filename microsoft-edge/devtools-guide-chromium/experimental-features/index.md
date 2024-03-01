@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 02/29/2024
+ms.date: 03/01/2024
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -53,7 +53,6 @@ The following experimental features are turned on by default. You can use these 
 **Turned on by default in Microsoft Edge Canary 124:**
 * [Resolve variable names in expressions using source maps](#resolve-variable-names-in-expressions-using-source-maps)
 * [Set all breakpoints eagerly at startup](#set-all-breakpoints-eagerly-at-startup)
-* [Deprecate CSS \<length\> authoring tool in the Styles tab](#deprecate-css-length-authoring-tool-in-the-styles-tab)
 * [Enable background page selector (e.g. for prerendering debugging)](#enable-background-page-selector-eg-for-prerendering-debugging)
 * [Show warning about Self-XSS when pasting code](#show-warning-about-self-xss-when-pasting-code)
 * [Enable webhint](#enable-webhint)
@@ -467,25 +466,6 @@ See also:
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
-
-
-<!-- ====================================================================== -->
-## Deprecate CSS \<length\> authoring tool in the Styles tab
-<!-- no (?) link -->
-
-_new as of Microsoft Edge 124_
-
-Turns off the special UI that changes the units or value for CSS \<length\> in the **Styles** tab in the **Elements** tool.  This checkbox doesn't apply to Microsoft Edge, which omits the CSS \<length\> authoring tool.
-
-In Chrome, this UI control in the **Styles** tab changes the units or value for the CSS length.  For example, if you have `width: 20px`, then `px` becomes a dropdown menu to select the units of measurement, and the `20` becomes draggable; dragging left or right changes the value.  But this UI prevents simply clicking on the value to edit it with the keyboard, so this experimental feature checkbox is available to turn off that UI.
-
-<!-- todo: link
-See also:
-* []() -->
-
-Status:
-* This checkbox is present in Microsoft Edge Canary 124.
-* This checkbox is not present in Microsoft Edge Stable 122.
 
 
 <!-- ====================================================================== -->
