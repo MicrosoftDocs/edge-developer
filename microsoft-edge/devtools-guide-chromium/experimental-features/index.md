@@ -149,7 +149,7 @@ The experiments checkboxes that appear in the latest version of the Canary previ
 Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you install an add-on that defines a custom color theme for DevTools, you need to enable the **Allow extensions to load custom stylesheets** experiment to view the add-on themes.
 
 See also:
-* [Apply a color theme to DevTools](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/theme)
+* [Apply a color theme to DevTools](../customize/theme.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -400,7 +400,7 @@ The Accessibility Tree view in the **Elements** tool:
 
 See also:
 * [Test accessibility using the Accessibility tab](../accessibility/accessibility-tab.md)
-* [Full accessibility tree view in the Elements tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2021/02/devtools#full-accessibility-tree-view-in-the-elements-tool) in _What's New in DevTools (Microsoft Edge 90)_.
+* [Full accessibility tree view in the Elements tool](../whats-new/2021/02/devtools.md#full-accessibility-tree-view-in-the-elements-tool) in _What's New in DevTools (Microsoft Edge 90)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -514,7 +514,7 @@ Highlights a violating node or attribute in the **Elements** tool's DOM tree.
 <!-- todo old: need text -->
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -621,7 +621,7 @@ To see the Object Properties viewer in the **Elements** tool:
    The **Properties** tab contains the list of properties for the selected element.
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md)
 
 
 <!-- ------------------------------ -->
@@ -638,7 +638,7 @@ To see the Object Properties viewer in the **Sources** tool:
    Object properties are displayed in the **Scope** section in the right-hand sidebar.  See [View and edit properties and variables](../javascript/reference.md#view-and-edit-properties-and-variables) in _JavaScript debugging features_.
 
 See also:
-* [Sources tool overview](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/)
+* [Sources tool overview](../sources/index.md)
 
 
 Status:
