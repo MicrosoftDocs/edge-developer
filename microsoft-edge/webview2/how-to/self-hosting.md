@@ -10,14 +10,14 @@ ms.date: 02/23/2024
 ---
 # Self-hosting by deploying preview channels
 
-_Self-hosting_ means deploying a preview version of the WebView2 Runtime with your app.  This allows you and your development team to use your app daily with the preview version of the WebView2 Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes in the WebView2 Runtime preview migrate to the Evergreen WebView2 Runtime.
+_Self-hosting_ means deploying a preview version of the WebView2 Runtime with your app.  This allows you and your development team to use your app daily with the preview version of the WebView2 Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes reach the Stable Evergreen WebView2 Runtime.
 
 The self-hosting approach provides real-world usage of your app with the latest prerelease version of the WebView2 Runtime, to catch any issues that may arise.  Do this self-hosting approach in tandem with prerelease testing of your app, which instead provides a structured approach to testing your app with the latest version of the WebView2 Runtime.
 
 | Approach | Technique | Purpose/value |
 |---|---|---|
-| Prerelease testing | todo | todo |
-| Self-hosting | Deploy a preview version of WebView Runtime with your app. | Use your app daily with the preview version of WebView2 Runtime, to find issues before WebView2 changes reach Stable WebView2 Runtime. |
+| Prerelease testing | Automated testing on a preview version of WebView2 Runtime with your app | Test your app with the preview version of in a structured way, to find issues before WebView2 changes reach Stable Evergreen Runtime |
+| Self-hosting | Deploy a preview version of WebView2 Runtime with your app. | Use your app daily with the preview version of WebView2 Runtime, to find issues before WebView2 changes reach Stable Evergreen Runtime. |
 
 See also:
 * [Prerelease testing using preview channels](./prerelease-testing.md)
@@ -32,7 +32,7 @@ The Canary channel is also suitable, but do note that it might be less stable. T
 
 To self-host a preview channel of WebView2:
 
-1. Set the preview channel for your app.  See [Ways to set the preview channel](#ways-to-set-the-preview-channel), below.
+1. Set the preview channel for your app.  See [Set the preview channel by using ChannelSearchKind](#set-the-preview-channel-by-using-channelsearchkind), below.
 
 1. Install the preview channel on your team's machines.  See [Install preview channels on your team's machines](#install-preview-channels-on-your-teams-machines), below.
 
@@ -42,17 +42,10 @@ Upon finding issues, you can report them to the [Microsoft Edge WebView2 feedbac
 
 
 <!-- ====================================================================== -->
-## Ways to set the preview channel
-
-You can set the preview channel by doing either of the following:
-* Use `ChannelSearchKind` to set the channel search order.
-* Use the browser executable folder.
-
-These options are explained below.
-
+## Set the preview channel by using ChannelSearchKind
 
 <!-- ====================================================================== -->
-## Setting the preview channel by using ChannelSearchKind to set the channel search order
+
 
 The channel search kind controls the default channel search order.  By default, the WebView2 loader searches for binaries from most-stable to least-stable (Canary), using the first binary that's found:
 
@@ -95,48 +88,6 @@ Set the `ChannelSearchKind` policy.
 * Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
 * Value: `1`
 
-Do either of the following:
-
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  Click any of the three **Download Windows Policy** links.<!-- todo: no "Edge policy" download link there -->
-
-* Use the built-in policy on Intune.<!-- todo: link to more info -->
-
----
-
-
-<!-- ====================================================================== -->
-## Setting the preview channel by using the browser executable folder
-
-The browser executable folder is the path to the folder that contains the WebView2 Runtime binaries.  This option is useful if you're using a fixed Runtime.  The browser executable folder path can be set per app through a registry key, environment variable, API, or group policy.
-
-
-##### [Registry key](#tab/registry-key)
-
-```reg
-REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /v WebView2APISample.exe /t REG_SZ /d "C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0"
-```
-
-* Replace `WebView2APISample.exe` with your own app executable name or the application user model ID.
-
-* Replace the sample path with the path to the desired Microsoft Edge preview channel.
-
-
-##### [Environment variable](#tab/environment-variable)
-
-* Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`
-* Value: `<path to desired Microsoft Edge preview channel>`
-
-Note that the environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per-app.
-
-
-##### [Group policy](#tab/group-policy)
-
-Set `BrowserExecutableFolder`.
-
-* Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
-* Value: `<path to desired Microsoft Edge preview channel>`
-
-Download the Microsoft Edge policy files, which include the WebView2 policy files, from the Edge Enterprise site,<!-- todo: link --> or use the built-in policy on Intune.<!-- todo: link -->
 Do either of the following:
 
 * Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  Click any of the three **Download Windows Policy** links.<!-- todo: no "Edge policy" download link there -->
@@ -194,6 +145,7 @@ To diagnose or troubleshoot potential prerelease WebView2 Runtime issues that ar
 <!-- ------------------------------ -->
 #### Confirm that your app is running a preview channel of WebView2
 
+<!-- Todo Update the WebView2 Utilities link to the new repository -->
 1. Download [WebView2 Utilities](https://github.com/david-risney/WebView2Utilities), a toolkit that helps with debugging Microsoft Edge WebView2 apps.  You can use the [ClickOnce Install](https://david-risney.github.io/WebView2Utilities/install/WebView2Utilities.application) on the page.
 
 1. In the left-hand pane, select the executable of the app.  Make sure the Runtime channel that's indicated is a preview channel (Canary, Dev, or Beta).
