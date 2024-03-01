@@ -66,12 +66,14 @@ To do prerelease testing, reverse the channel search order, so that the loader l
 Edge Canary -> Edge Dev -> Edge Beta -> WebView2 Runtime (Stable)
 ```
 
-The channel search kind can be set per-app through an API, a registry key, an environment variable, or a group policy.
+The channel search kind can be set per-app through an API, a registry key, an environment variable, or a group policy.  Using the API is the recommended approach.
 
 The value `1` indicates reversed search order; that is, from least-stable (Edge Canary) to most-stable.
 
 
 ##### [API](#tab/api)
+
+Using the API is the recommended approach.
 
 By default, the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property is `CoreWebView2ChannelSearchKind.MostStable` (an enum value).  Instead, reverse the search order by setting the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property to `CoreWebView2ChannelSearchKind.LeastStable`.
 
@@ -169,7 +171,7 @@ The Edge Dev and Edge Beta channels contain MSI Links.  The Edge Canary channel 
 <!-- ====================================================================== -->
 ## How to do automated testing
 
-See [Automate and test WebView2 apps with Microsoft Edge WebDriver](/microsoft-edge/webdriver).
+See [Automate and test WebView2 apps with Microsoft Edge WebDriver](./webdriver.md).
 
 
 <!-- ====================================================================== -->
