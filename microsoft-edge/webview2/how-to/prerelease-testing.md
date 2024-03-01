@@ -151,11 +151,9 @@ This only needs to be done once per machine.  Prerelease channels are evergreen,
 
 
 <!-- ------------------------------ -->
-#### Option 2: Programmatically deploy preview channels via API
+#### Option 2: Programmatically deploy preview channels via API endpoints
 
-<!-- todo: which api? -->
-
-In your app's code, periodically poll the following pages to get and deploy the latest version of each preview channel of Microsoft Edge.
+In your app's code, periodically poll the following API endpoints to get and deploy the latest version of each preview channel of Microsoft Edge:
 
 | Channel | Link |
 | --- | --- |
@@ -165,7 +163,7 @@ In your app's code, periodically poll the following pages to get and deploy the 
 
 The Edge Dev and Edge Beta channels contain MSI Links.  The Edge Canary channel has a separate MSI link.
 
-<!-- todo: See Also link? -->
+<!-- todo: link to more info about how to use API to do this -->
 
 
 <!-- ====================================================================== -->
