@@ -12,12 +12,12 @@ ms.date: 02/23/2024
 
 _Self-hosting_ means deploying a preview version of the WebView2 Runtime with your app.  This allows you and your development team to use your app daily with the preview version of the WebView2 Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes reach the Stable Evergreen WebView2 Runtime.
 
-The self-hosting approach provides real-world usage of your app with the latest prerelease version of the WebView2 Runtime, to catch any issues that may arise.  You should self-hosting your app in tandem with doing prerelease testing on your app, which instead provides a structured approach to testing your app with the latest version of the WebView2 Runtime.
+The self-hosting approach provides real-world usage of your app with the latest prerelease version of the WebView2 Runtime, to catch any issues that may arise.  You should self-host your app in tandem with doing prerelease testing on your app, to provide a structured approach to testing your app with the latest version of the WebView2 Runtime.
 
 | Approach | Technique | Purpose/value |
 |---|---|---|
-| Prerelease testing | Automated testing on a preview version of WebView2 Runtime with your app | Test your app with the preview version of in a structured way, to find issues before WebView2 changes reach Stable Evergreen Runtime |
-| Self-hosting | Deploy a preview version of WebView2 Runtime with your app. | Use your app daily with the preview version of WebView2 Runtime, to find issues before WebView2 changes reach Stable Evergreen Runtime. |
+| Prerelease testing | Automated testing on a preview version of WebView2 Runtime with your app. | Test your app with the preview version of in a structured way, to find issues before WebView2 changes reach the Stable Evergreen Runtime. |
+| Self-hosting | Deploy a preview version of WebView2 Runtime with your app. | Use your app daily with the preview version of WebView2 Runtime, to find issues before WebView2 changes reach the Stable Evergreen Runtime. |
 
 See also:
 * [Prerelease testing using preview channels](./prerelease-testing.md)
@@ -29,6 +29,7 @@ See also:
 We recommend that you start self-hosting by using the Dev channel of the WebView2 Runtime, which is in the Dev Channel of the Microsoft Edge browser.  The Dev channel of the WebView2 Runtime is updated weekly, and it allows you to catch issues early, while having sufficient stability for daily use.
 
 The Canary channel is also suitable, but do note that it might be less stable. The Beta channel is available as well, but it is not recommended as you might not be able to catch issues early enough for your app.
+
 
 To self-host a preview channel of WebView2:
 
@@ -56,7 +57,7 @@ To selfhost, you would reverse the channel search order, so that the loader look
 Edge Canary -> Edge Dev -> Edge Beta -> WebView2 Runtime (Stable)
 ```
 
-The channel search kind can be set per app through a registry key, environment variable, API, or group policy.
+The channel search kind can be set per app through a registry key, environment variable, API,<!--todo: confirm; why no API section below?--> or group policy.
 
 The value `1` indicates reversed search order; that is, from least-stable (Edge Canary) to most-stable.
 
@@ -78,6 +79,25 @@ Replace `WebView2APISample.exe` with your own app executable name or the applica
 Note that the environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.
 
 
+##### [API](#tab/api)
+<!-- todo: keep or delete this tab/section? -->
+
+By default, the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property is `CoreWebView2ChannelSearchKind.MostStable` (an enum value).  Instead, reverse the search order by setting the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property to `CoreWebView2ChannelSearchKind.LeastStable`.
+
+.NET:
+* [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
+* [CoreWebView2ChannelSearchKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2channelsearchkind)
+
+WinRT:
+* [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#channelsearchkind)
+* [CoreWebView2ChannelSearchKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2channelsearchkind)
+
+Win32:
+* [ICoreWebView2ExperimentalEnvironmentOptions::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#get_channelsearchkind)
+* [ICoreWebView2ExperimentalEnvironmentOptions::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#put_channelsearchkind)
+* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl#corewebview2_channel_search_kind)
+
+
 ##### [Group policy](#tab/group-policy)
 
 Set the `ChannelSearchKind` policy.
@@ -93,10 +113,13 @@ Do either of the following:
 
 ---
 
+
 <!-- ====================================================================== -->
 ## Install preview channels on your team's machines
 
-Insider channels of Microsoft Edge (which include WebView2) are also called preview channels.  To install the preview channels of Microsoft Edge on your team's machines, you can either:
+Preview channels of Microsoft Edge (which include WebView2) are also called _insider channels_.  These are the non-stable channels of Microsoft Edge.
+
+To install the preview channels of Microsoft Edge on your team's machines, do either of the following:
 * Manually install preview channels on machines.
 * Programmatically deploy preview channels via API.
 
@@ -142,8 +165,7 @@ To diagnose or troubleshoot potential prerelease WebView2 Runtime issues that ar
 <!-- ------------------------------ -->
 #### Confirm that your app is running a preview channel of WebView2
 
-<!-- Todo Update the WebView2 Utilities link to the new repository -->
-1. Download [WebView2 Utilities](https://github.com/david-risney/WebView2Utilities), a toolkit that helps with debugging Microsoft Edge WebView2 apps.  You can use the [ClickOnce Install](https://david-risney.github.io/WebView2Utilities/install/WebView2Utilities.application) on the page.
+1. Download [WebView2 Utilities](https://github.com/david-risney/WebView2Utilities),<!-- todo: update the link to point to the new repo --> a toolkit that helps with debugging Microsoft Edge WebView2 apps.  You can use the [ClickOnce Install](https://david-risney.github.io/WebView2Utilities/install/WebView2Utilities.application) on the page.
 
 1. In the left-hand pane, select the executable of the app.  Make sure the Runtime channel that's indicated is a preview channel (Canary, Dev, or Beta).
 
