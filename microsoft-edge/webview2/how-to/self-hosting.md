@@ -12,7 +12,7 @@ ms.date: 02/23/2024
 
 _Self-hosting_ means deploying a preview version of the WebView2 Runtime with your app.  This allows you and your development team to use your app daily with the preview version of the WebView2 Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes reach the Stable Evergreen WebView2 Runtime.
 
-The self-hosting approach provides real-world usage of your app with the latest prerelease version of the WebView2 Runtime, to catch any issues that may arise.  Do this self-hosting approach in tandem with prerelease testing of your app, which instead provides a structured approach to testing your app with the latest version of the WebView2 Runtime.
+The self-hosting approach provides real-world usage of your app with the latest prerelease version of the WebView2 Runtime, to catch any issues that may arise.  You should self-hosting your app in tandem with doing prerelease testing on your app, which instead provides a structured approach to testing your app with the latest version of the WebView2 Runtime.
 
 | Approach | Technique | Purpose/value |
 |---|---|---|
@@ -43,9 +43,6 @@ Upon finding issues, you can report them to the [Microsoft Edge WebView2 feedbac
 
 <!-- ====================================================================== -->
 ## Set the preview channel by using ChannelSearchKind
-
-<!-- ====================================================================== -->
-
 
 The channel search kind controls the default channel search order.  By default, the WebView2 loader searches for binaries from most-stable to least-stable (Canary), using the first binary that's found:
 

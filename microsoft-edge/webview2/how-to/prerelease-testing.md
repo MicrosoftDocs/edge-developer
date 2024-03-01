@@ -38,16 +38,12 @@ To catch app-specific regressions before WebView2 changes ship in Edge Stable, t
 Start with automated testing against the Microsoft Edge **Canary** channel, which ships daily.  This enables you to catch issues as early as possible. The Microsoft Edge **Dev** channel ships weekly, and is also a good option.
 
 Do the following steps:
-1. Set the preview channel for your app.  See [How set the preview channel](#how-to-set-the-preview-channel), below.
+1. Set the preview channel for your app.  See [Set the preview channel by using ChannelSearchKind](#set-the-preview-channel-by-using-channelsearchkind), below.
 1. Deploy the non-stable channels.  See [How to deploy non-stable channels](#how-to-deploy-non-stable-channels), below.
 1. Conduct automated testing on your app running against the non-stable channels.  See [How to do automated testing](#how-to-do-automated-testing), below.
 1. Compare the results with the baseline.  See [The baseline release of WebView2 for testing](#the-baseline-release-of-webview2-for-testing), below.
 
 Upon finding issues, you can report them via the [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback).
-
-
-<!-- ====================================================================== -->
-## How to set the preview channel
 
 <!-- ====================================================================== -->
 ## Setting the preview channel by using ChannelSearchKind to set the channel search order
