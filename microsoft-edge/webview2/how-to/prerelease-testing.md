@@ -52,7 +52,7 @@ Upon finding issues, you can report them via the [WebView2 feedback repo](https:
 
 
 <!-- ====================================================================== -->
-## Setting the preview channel by using ChannelSearchKind to set the channel search order
+## Set the preview channel by using ChannelSearchKind
 
 The channel search kind controls the channel search order.  By default, the WebView2 loader searches for binaries from most-stable to least-stable (Canary), using the first binary that's found:
 
@@ -66,26 +66,9 @@ To do prerelease testing, reverse the channel search order, so that the loader l
 Edge Canary -> Edge Dev -> Edge Beta -> WebView2 Runtime (Stable)
 ```
 
-The channel search kind can be set per-app through a registry key, an environment variable, an API, or a group policy.
+The channel search kind can be set per-app through an API, a registry key, an environment variable, or a group policy.
 
 The value `1` indicates reversed search order; that is, from least-stable (Edge Canary) to most-stable.
-
-
-##### [Registry key](#tab/registry-key)
-
-```reg
-REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\ChannelSearchKind /v WebView2APISample.exe /t REG_DWORD /d 1
-```
-
-Replace `WebView2APISample.exe` with your own app executable name or the application user model ID.
-
-
-##### [Environment variable](#tab/environment-variable)
-
-Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`  
-Value: `1`
-
-Note that the environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.<!-- todo: confirm this line, copied from self-hosting.md -->
 
 
 ##### [API](#tab/api)
@@ -104,6 +87,23 @@ Win32:
 * [ICoreWebView2ExperimentalEnvironmentOptions::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#get_channelsearchkind)
 * [ICoreWebView2ExperimentalEnvironmentOptions::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#put_channelsearchkind)
 * [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl#corewebview2_channel_search_kind)
+
+
+##### [Registry key](#tab/registry-key)
+
+```reg
+REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\ChannelSearchKind /v WebView2APISample.exe /t REG_DWORD /d 1
+```
+
+Replace `WebView2APISample.exe` with your own app executable name or the application user model ID.
+
+
+##### [Environment variable](#tab/environment-variable)
+
+Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`  
+Value: `1`
+
+Note that the environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.<!-- todo: confirm this line, copied from self-hosting.md -->
 
 
 ##### [Group policy](#tab/group-policy)
