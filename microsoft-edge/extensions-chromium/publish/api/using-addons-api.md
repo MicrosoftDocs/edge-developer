@@ -21,6 +21,8 @@ To submit suggestions and feedback, enter an [Issue about the Add-ons API](https
 | Language | Package | Source code | Notes |
 | --- | --- | --- | --- |
 | Node.js | [Edge Webstore Upload](https://www.npmjs.com/package/@plasmo-corp/ewu) | [GitHub](https://github.com/plasmo-corp/edge-webstore-upload)| This is a third party library. Microsoft makes no warranties, express or implied, with respect to the information provided here. |
+| .NET / C# | [EdgeAddonsAPI](https://www.nuget.org/packages/SantoshPisini.EdgeAddonsAPI) | [GitHub](https://github.com/SantoshPisini/edge-addons-api)| This is a third party library. Microsoft makes no warranties, express or implied, with respect to the information provided here. |
+
 
 
 <!-- ====================================================================== -->
