@@ -71,7 +71,7 @@ api_location:
 # interface IDualEngine20BrowserObserver
 
 > [!IMPORTANT]
-> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](https://learn.microsoft.com/en-us/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or 
+> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or 
 > to request an unlock token, contact [Microsoft Support](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d15d3aa2-0512-7cb8-1df9-86221f5cbfde).
 
 ```cpp
