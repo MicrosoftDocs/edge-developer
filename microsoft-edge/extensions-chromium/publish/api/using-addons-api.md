@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 07/19/2023
+ms.date: 03/05/2024
 ---
 # Using the Microsoft Edge Add-ons API 
 
@@ -20,9 +20,8 @@ To submit suggestions and feedback, enter an [Issue about the Add-ons API](https
 
 | Language | Package | Source code | Notes |
 | --- | --- | --- | --- |
-| Node.js | [Edge Webstore Upload](https://www.npmjs.com/package/@plasmo-corp/ewu) | [GitHub](https://github.com/plasmo-corp/edge-webstore-upload)| This is a third party library. Microsoft makes no warranties, express or implied, with respect to the information provided here. |
-| .NET / C# | [EdgeAddonsAPI](https://www.nuget.org/packages/SantoshPisini.EdgeAddonsAPI) | [GitHub](https://github.com/SantoshPisini/edge-addons-api)| This is a third party library. Microsoft makes no warranties, express or implied, with respect to the information provided here. |
-
+| Node.js | [Microsoft Edge Addons API for NodeJS](https://www.npmjs.com/package/@plasmo-corp/ewu) | [PlasmoHQ / edge-addons-api](https://github.com/PlasmoHQ/edge-addons-api) repo | This is a third-party library.  Microsoft makes no warranties, express or implied, with respect to the information provided here. |
+| .NET / C# | [Microsoft Edge Addons API in .NET](https://www.nuget.org/packages/SantoshPisini.EdgeAddonsAPI) | [SantoshPisini / edge-addons-api](https://github.com/SantoshPisini/edge-addons-api) repo | This is a third-party library.  Microsoft makes no warranties, express or implied, with respect to the information provided here. |
 
 
 <!-- ====================================================================== -->
