@@ -165,6 +165,8 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
+
+<!-- ------------------------------ -->
 *  Added support for `WebResourceRequested` for workers, which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different-origin iframes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
