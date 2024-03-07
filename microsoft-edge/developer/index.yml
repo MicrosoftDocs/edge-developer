@@ -53,7 +53,7 @@ landingContent:
             url: ../develop-web-microsoft-edge.md
 
           - text: Microsoft Edge DevTools documentation  # DevTools landing page
-            url: ../devtools-guide-chromium/landing/index.md
+            url: ../devtools-guide-chromium/landing/index.yml
 
           - text: Overview of DevTools  # renamed from index.md
             url: ../devtools-guide-chromium/overview.md
@@ -74,7 +74,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Keyboard shortcuts
-            url: ../devtools-guide-chromium/shortcuts.md
+            url: ../devtools-guide-chromium/shortcuts/index.md
 # =============================================================================
 # Card r1c2
   - title: DevTools for Visual Studio Code
@@ -125,7 +125,7 @@ landingContent:
             url: ../progressive-web-apps-chromium/how-to/index.md
 
           - text: Debug Progressive Web Apps
-            url: ../devtools-guide-chromium/progressive-web-apps.md
+            url: ../devtools-guide-chromium/progressive-web-apps/index.md
 
       - linkListType: whats-new
         links:
@@ -209,7 +209,7 @@ landingContent:
             url: ../devtools-guide-chromium/sources/opening-sources-in-vscode.md
 
           - text: Visual Studio for web development
-            url: ../visual-studio/.md
+            url: ../visual-studio/index.md
 # =============================================================================
 # Card r3c2
   - title: Accessibility in Microsoft Edge
@@ -220,7 +220,7 @@ landingContent:
             url: ../devtools-guide-chromium/accessibility/reference.md
 
           - text: Accessibility in Microsoft Edge
-            url: ../accessibility/.md
+            url: ../accessibility/index.md
       - linkListType: how-to-guide
         links:
           - text: Accessibility testing
@@ -235,7 +235,7 @@ landingContent:
             url: ../test-and-automation/test-and-automation.md
 
           - text: DevTools Protocol
-            url: ./test-and-automation/devtools-protocol.md
+            url: ./devtools-protocol-chromium/index.md
 
           - text: Origin Trials
             url: ../origin-trials/index.md
@@ -244,10 +244,10 @@ landingContent:
             url: ../playwright/index.md
 
           - text: Puppeteer
-            url: ../puppeteer.md
+            url: ../puppeteer/index.md
 
           - text: WebDriver
-            url: ../webdriver-chromium.md
+            url: ../webdriver-chromium/index.md
 
           - text: webhint extension for Visual Studio Code
             url: ../visual-studio-code/webhint.md

@@ -41,7 +41,7 @@ highlightedContent:
     # Card
     - title: "Get support"
       itemType: reference
-      url: ./index.md#help-and-support
+      url: ../index.yml#help-and-support
     # Card
     - title: "How to use Microsoft Edge"
       itemType: learn
@@ -53,7 +53,7 @@ highlightedContent:
     # Card
     - title: "Discover web developer features"
       itemType: learn
-      url: ./index.md#microsoft-edge-for-developers
+      url: ./index.yml#microsoft-edge-for-developers
 
 # =============================================================================
 # conceptualContent section (optional)
@@ -340,7 +340,7 @@ conceptualContent:
               itemType: how-to-guide
 
             - text: Detect Microsoft Edge from your website
-              url: ./web-platform/user-agent-guidance/index.md
+              url: ./web-platform/user-agent-guidance.md
               itemType: how-to-guide
 
             - text: Detect Windows 11 using User-Agent Client Hints
@@ -387,8 +387,8 @@ additionalContent:
         # Card
         - title: Reference
           links:
-            - text: How to detect Microsoft Edge in your website
-              url: ./web-platform/user-agent-guidance
+            - text: Detecting Microsoft Edge from your website
+              url: ./web-platform/user-agent-guidance.md
 
             - text: Visual Studio Code
               url: ./visual-studio-code/index.md
