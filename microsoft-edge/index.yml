@@ -41,7 +41,7 @@ highlightedContent:
     # Card
     - title: "Get support"
       itemType: reference
-      url: ../index.yml#help-and-support
+      url: ./index.yml#help-and-support
     # Card
     - title: "How to use Microsoft Edge"
       itemType: learn

@@ -235,7 +235,7 @@ landingContent:
             url: ../test-and-automation/test-and-automation.md
 
           - text: DevTools Protocol
-            url: ./devtools-protocol-chromium/index.md
+            url: ../devtools-protocol-chromium/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol-chromium/
 
           - text: Origin Trials
             url: ../origin-trials/index.md
