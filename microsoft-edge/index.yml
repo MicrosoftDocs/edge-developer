@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 09/09/2021
+  ms.date: 03/06/2024
   ms.localizationpriority: high
   ms.service: microsoft-edge
 
@@ -147,27 +147,27 @@ conceptualContent:
         - title: Microsoft Edge DevTools
           links:
             - text: Microsoft Edge Developer documentation  # Edge landing page
-              url: /microsoft-edge/developer/index
+              url: ./developer/index.yml
               itemType: overview
 
             - text: Develop for the web with Microsoft Edge  # topmost article
-              url: /microsoft-edge/develop-web-microsoft-edge
+              url: ./develop-web-microsoft-edge.md
               itemType: overview
 
             - text: Microsoft Edge DevTools documentation  # DevTools landing page
-              url: /microsoft-edge/devtools-guide-chromium/landing/index
+              url: ./devtools-guide-chromium/landing/index.yml
               itemType: overview
 
             - text: Overview of DevTools  # renamed from index.md
-              url: /microsoft-edge/devtools-guide-chromium/overview
+              url: ./devtools-guide-chromium/overview.md
               itemType: overview
 
             - text: What's New in Microsoft Edge DevTools
-              url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+              url: ./devtools-guide-chromium/whats-new/whats-new.md
               itemType: whats-new
 
             - text: Command Menu
-              url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+              url: ./devtools-guide-chromium/command-menu/index.md
               itemType: how-to-guide
 
             - text: View and change CSS
