@@ -42,23 +42,23 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Overview of DevTools
-            url: ../overview
+            url: ../overview.md
 
           - text: Change DevTools placement (Undock, Dock to bottom, Dock to left)
-            url: ../customize/placement
+            url: ../customize/placement.md
 
           - text: Run commands in the Command Menu
-            url: ../command-menu/index
+            url: ../command-menu/index.md
 
           - text: Console overview
-            url: ../console/index
+            url: ../console/index.md
       - linkListType: whats-new
         links:
-          - text: What's New in Microsoft Edge DevTools 
-            url: ../whats-new/whats-new
+          - text: What's New in Microsoft Edge DevTools
+            url: ../whats-new/whats-new.md
 
           - text: Contact the Microsoft Edge DevTools team
-            url: ../contact
+            url: ../contact.md
 
 # =============================================================================
 # Card r1c2
@@ -67,21 +67,21 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Customize DevTools
-            url: ../customize/index
+            url: ../customize/index.md
 
           - text: Apply a color theme to DevTools
-            url: ../customize/theme
+            url: ../customize/theme.md
       - linkListType: whats-new
         links:
           - text: Experimental features in Microsoft Edge DevTools
-            url: ../experimental-features/index
+            url: ../experimental-features/index.md
       - linkListType: how-to-guide
         links:
           - text: Change DevTools language settings
-            url: ../customize/localization
+            url: ../customize/localization.md
 
           - text: Customize keyboard shortcuts
-            url: ../customize/shortcuts
+            url: ../customize/shortcuts.md
 
 # =============================================================================
 # Card r1c3
@@ -90,30 +90,30 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Analyze pages using the Inspect tool
-            url: ../css/inspect
+            url: ../css/inspect.md
       - linkListType: tutorial
         links:
           - text: Get started viewing and changing CSS
-            url: ../css/index
+            url: ../css/index.md
 
           - text: Get started viewing and changing the DOM
-            url: ../dom/index
+            url: ../dom/index.md
       - linkListType: how-to-guide
         links:
           - text: Find and fix problems using the Issues tool
-            url: ../issues/index
+            url: ../issues/index.md
 
           - text: Navigate webpage layers, z-index, and DOM using the 3D View tool
-            url: ../3d-view/index
+            url: ../3d-view/index.md
 
           - text: Inspect animations
-            url: ../inspect-styles/animations
+            url: ../inspect-styles/animations.md
 
           - text: Debug Progressive Web Apps (PWAs)
-            url: ../progressive-web-apps/index
+            url: ../progressive-web-apps/index.md
 
           - text: Inspect network activity
-            url: ../network/index
+            url: ../network/index.md
 
 # =============================================================================
 # Card r2c1
@@ -122,25 +122,25 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Emulate mobile devices (Device Emulation)
-            url: ../device-mode/index
+            url: ../device-mode/index.md
 
           - text: Accessibility-testing features
-            url: ../accessibility/reference
+            url: ../accessibility/reference.md
 
           - text: Emulate dark or light schemes in the rendered page
-            url: ../accessibility/preferred-color-scheme-simulation
+            url: ../accessibility/preferred-color-scheme-simulation.md
 
           - text: Test keyboard support using the Source Order Viewer
-            url: ../accessibility/test-tab-key-source-order-viewer
+            url: ../accessibility/test-tab-key-source-order-viewer.md
 
           - text: Force print preview mode
-            url: ../css/print-preview
+            url: ../css/print-preview.md
 
           - text: Emulate vision deficiencies
-            url: ../accessibility/emulate-vision-deficiencies
+            url: ../accessibility/emulate-vision-deficiencies.md
 
           - text: Simulate reduced motion
-            url: ../accessibility/reduced-motion-simulation
+            url: ../accessibility/reduced-motion-simulation.md
 
 # =============================================================================
 # Card r2c2
@@ -149,31 +149,31 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Run JavaScript in the Console
-            url: ../console/console-javascript
+            url: ../console/console-javascript.md
 
           - text: Fix JavaScript errors that are reported in the Console
-            url: ../console/console-debug-javascript
+            url: ../console/console-debug-javascript.md
 
           - text: Sources tool overview
-            url: ../sources/index
+            url: ../sources/index.md
 
           - text: JavaScript debugging features
-            url: ../javascript/reference
+            url: ../javascript/reference.md
 
           - text: Find unused JavaScript and CSS code with the Coverage tool
-            url: ../coverage/index
+            url: ../coverage/index.md
 
           - text: Fix memory problems
-            url: ../memory-problems/index
+            url: ../memory-problems/index.md
 
           - text: Debug DOM memory leaks with the Detached Elements tool
-            url: ../memory-problems/dom-leaks
+            url: ../memory-problems/dom-leaks.md
 
           - text: Understand security issues using the Security tool
-            url: ../security/index
+            url: ../security/index.md
 
           - text: Troubleshooting common performance issues
-            url: ../rendering-tools/index
+            url: ../rendering-tools/index.md
 
 # =============================================================================
 # Card r2c3
@@ -182,21 +182,21 @@ landingContent:
       - linkListType: reference
         links:
           - text: Keyboard shortcuts
-            url: ../shortcuts/index
+            url: ../shortcuts/index.md
 
           - text: CSS features reference
-            url: ../css/reference
+            url: ../css/reference.md
 
           - text: Console features reference
-            url: ../console/reference
+            url: ../console/reference.md
 
           - text: Console object API Reference
-            url: ../console/api
+            url: ../console/api.md
       - linkListType: how-to-guide
         links:
           - text: Performance features reference
-            url: ../evaluate-performance/reference
+            url: ../evaluate-performance/reference.md
       - linkListType: sample
         links:
           - text: Sample code for DevTools
-            url: ../sample-code/sample-code
+            url: ../sample-code/sample-code.md
