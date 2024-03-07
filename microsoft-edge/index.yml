@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-
+# hub page for Enterprise docset & Edge Dev docset
 title: Microsoft Edge documentation
 summary: Learn to use Microsoft Edge by browsing documentation, tutorials, and samples.  Includes information for users, developers, and administrators.
 brand: m365
@@ -41,7 +41,7 @@ highlightedContent:
     # Card
     - title: "Get support"
       itemType: reference
-      url: ./index#help-and-support
+      url: ./index.md#help-and-support
     # Card
     - title: "How to use Microsoft Edge"
       itemType: learn
@@ -53,8 +53,7 @@ highlightedContent:
     # Card
     - title: "Discover web developer features"
       itemType: learn
-      url: ./index#microsoft-edge-for-developers
-      # url: ./index#microsoft-edge-for-developers #alt-link
+      url: ./index.md#microsoft-edge-for-developers
 
 # =============================================================================
 # conceptualContent section (optional)
@@ -73,6 +72,7 @@ conceptualContent:
             - url: /deployedge/microsoft-edge-channels
               itemType: overview
               text: Microsoft Edge channel overview
+
             - url: /deployedge/edge-ie-mode
               itemType: reference
               text: Use enterprise features
@@ -82,9 +82,11 @@ conceptualContent:
             - itemType: reference
               text: Video - Deploy Microsoft Edge
               url: /deployedge/microsoft-edge-video-deploy
+
             - itemType: reference
               text: Deploy to Windows
               url: /configmgr/apps/deploy-use/deploy-edge
+
             - itemType: reference
               text: Deploy to macOS
               url: /intune/apps/apps-edge-macos
@@ -94,9 +96,11 @@ conceptualContent:
             - itemType: reference
               text: Configure Microsoft Edge on Windows and macOS
               url: /deployedge/configure-microsoft-edge
+
             - itemType: reference
               text: Set Microsoft Edge as the default browser
               url: /deployedge/edge-default-browser
+
             - itemType: reference
               text: Manage Microsoft Edge on iOS and Android with Intune
               url: /mem/intune/apps/manage-microsoft-edge
@@ -106,6 +110,7 @@ conceptualContent:
             - itemType: reference
               text: Security
               url: /deployedge/ms-edge-security-for-business
+
             - itemType: reference
               text: Privacy
               url: /deployedge/microsoft-edge-enterprise-privacy-settings
@@ -115,6 +120,7 @@ conceptualContent:
             - itemType: reference
               text: Browser policy reference
               url: /deployedge/microsoft-edge-policies
+
             - itemType: reference
               text: Update policy reference
               url: /deployedge/microsoft-edge-update-policies
@@ -133,12 +139,14 @@ conceptualContent:
             - itemType: overview
               text: Manage Microsoft Edge extensions in the enterprise
               url: /deployedge/microsoft-edge-manage-extensions
+
             - itemType: reference
               text: Defining match patterns to access file URLs
-              url: ./extensions-chromium/enterprise/match-patterns
+              url: ./extensions-chromium/enterprise/match-patterns.md
+
             - itemType: reference
               text: Extension hosting
-              url: ./extensions-chromium/enterprise/hosting-and-updating
+              url: ./extensions-chromium/enterprise/hosting-and-updating.md
 # =============================================================================
     - title: Microsoft Edge for Developers # < 60 chars (optional)
     # summary:  # < 160 chars (optional)
@@ -175,7 +183,7 @@ conceptualContent:
               itemType: how-to-guide
 
             - text: Keyboard shortcuts
-              url: ./devtools-guide-chromium/shortcuts.md
+              url: ./devtools-guide-chromium/shortcuts/index.md
               itemType: reference
         # Card
         - title: Microsoft Edge IDE integration
@@ -241,7 +249,7 @@ conceptualContent:
               itemType: overview
 
             - text: Debug Progressive Web Apps
-              url: ./devtools-guide-chromium/progressive-web-apps.md
+              url: ./devtools-guide-chromium/progressive-web-apps/index.md
               itemType: overview
 
             - text: What's New in Progressive Web Apps
@@ -298,7 +306,7 @@ conceptualContent:
               itemType: overview
 
             - text: DevTools Protocol
-              url: ./devtools-protocol-chromium.md
+              url: ./test-and-automation/devtools-protocol.md
               itemType: how-to-guide
 
             - text: Origin Trials
@@ -310,11 +318,11 @@ conceptualContent:
               itemType: overview
 
             - text: Puppeteer
-              url: ./puppeteer.md
+              url: ./puppeteer/index.md
               itemType: how-to-guide
 
             - text: WebDriver
-              url: ./webdriver-chromium.md
+              url: ./webdriver-chromium/index.md
               itemType: how-to-guide
 
             - text: webhint extension for Visual Studio Code
@@ -332,7 +340,7 @@ conceptualContent:
               itemType: how-to-guide
 
             - text: Detect Microsoft Edge from your website
-              url: ./web-platform/user-agent-guidance.md
+              url: ./web-platform/user-agent-guidance/index.md
               itemType: how-to-guide
 
             - text: Detect Windows 11 using User-Agent Client Hints
@@ -383,10 +391,10 @@ additionalContent:
               url: ./web-platform/user-agent-guidance
 
             - text: Visual Studio Code
-              url: ./visual-studio-code/index
+              url: ./visual-studio-code/index.md
 
             - text: Privacy Whitepaper
-              url: ./privacy-whitepaper
+              url: ./privacy-whitepaper/index.md
         # Card
         - title: Microsoft Edge Legacy documentation
           links:
