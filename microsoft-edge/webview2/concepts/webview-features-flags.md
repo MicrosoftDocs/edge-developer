@@ -10,7 +10,7 @@ ms.date: 02/15/2024
 ---
 # WebView2 browser flags
 
-One of the ways you can interact with Microsoft Edge WebView2 and impact behavior is by passing browser flags (arguments, or switches) to WebView2.  These browser flags are useful for testing forthcoming features, and for diagnosing issues.  
+One of the ways you can interact with Microsoft Edge WebView2 and impact behavior is by passing browser flags (arguments, or switches) to WebView2.  These browser flags are useful for testing forthcoming features, and for diagnosing issues.
 
 > [!WARNING]
 > Apps in production shouldn't use WebView2 browser flags, because these flags might be removed or altered at any time, and aren't necessarily supported long-term.
@@ -67,6 +67,7 @@ The following are some of the flags we've seen used.
 | `allow-running-insecure-content` | Enables insecure content in Cast Web Runtime.  This flag unblocks MSPs that serve content from HTTP sources. |
 | `auto-open-devtools-for-tabs` | Makes Edge WebView auto-open the DevTools window for each tab.  For use by developers and by automation. |
 | `autoplay-policy` | Command-line flag name to set the autoplay policy. |
+| `BlockInsecurePrivateNetworkRequests` | When this feature is enabled, private network requests initiated from non-secure contexts in the `public` address space are blocked. |
 | `block-new-web-contents` | If `true`, all pop-ups and calls to `window.open` fail. |
 | `disable-background-timer-throttling` | Disables task throttling of timer tasks from background pages. |
 | `disable-domain-action-user-agent-override` | Disables the per-domain User Agent override from the Domain Actions feature. |
@@ -77,6 +78,7 @@ The following are some of the flags we've seen used.
 | `disk-cache-size` | Forces the maximum disk space to be used by the disk cache, in bytes. |
 | `do-not-de-elevate` | Prevents de-elevation of the WebView2 on launch.  Used after de-elevating, to prevent infinite loops. |
 | `edge-webview-debugging-script` | Runs `PostWebMessage` script asynchronously. |
+| `edge-webview-enable-mojo-ipcz` | Enable MojoIpcz for apps using WebView. |
 | `edge-webview-foreground-boost-opt-in` | Opts-in to foreground boost. |
 | `edge-webview-foreground-boost-opt-out` | Opts-out of foreground boost. |
 | `edge-webview-force-personal-context` | Forces Edge WebView browser processes to run in WIP personal context. |
@@ -109,9 +111,12 @@ The following are some of the flags we've seen used.
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
+| `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI will be shown when user clicks on the misspelled/grammar error range. |
+| `msWebView2CodeCache` | If enabled, JavaScript resources loaded in a WebView2 app via SetVirtualHostNameToFolderMapping or add_WebResourceRequested are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components which use the devtools network interception mechanism to provide custom responses. |
 | `msWebView2TextureStream` | If enabled, allows to stream captured or composed video frames to the WebView2 where JavaScript can render or otherwise interact with the frames via W3C standard DOM APIs including the Video element, and MediaStream. |
 | `msWebView2EnableDraggableRegions` | This flag enables webpages within WebView2 make use of the app-region: drag/nodrag CSS style which causes elements with that style to behave like a titlebar.  Without this flag, the style has no effect. |
 | `msWebView2CodeCache` | If enabled, JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses. |
+| `msWebView2SimulateMemoryPressureWhenInactive` | If enabled, simulates memory pressure for inactive WebView. |
 | `no-proxy-server` | Overrides any other proxy server flags that are passed. |
 | `net-log-capture-mode` | Sets the granularity of events to capture in the network log.  Valid values: `Default`, `IncludeSensitive`, `Everything`. |
 | `no-sandbox` | Disables the sandbox for all process types that are normally sandboxed.  Meant to be used as a browser-level flag for testing purposes only. |
@@ -126,6 +131,7 @@ The following are some of the flags we've seen used.
 | `Restart` | Indicates that Microsoft Edge WebView2 browser process was restarted (such as after a flag change).  Use this flag to ignore the launch when recording the `Launch.Mode2` metric. |
 | `sdsm-state` | The "Super Duper Secure Mode" state.  Valid values: `off`, `basic`, `balanced`, `strict`. |
 | `SharedArrayBuffer` | If enabled, indicates that a `SharedArrayBuffer` thread is present. |
+| `SpareRendererForSitePerProcess` | Controls whether Edge Webview spare renderer process tries to always have a warm spare renderer process around for the most recently requested BrowserContext.  This feature is only consulted in site-per-process mode. |
 | `ThirdPartyStoragePartitioning` | Enables partitioning of third-party storage, such as `IndexedDB` or `CacheStorage`, by the top-level site, to reduce fingerprinting. |
 | `unsafely-treat-insecure-origin-as-secure` | Treats given (insecure) origins as secure origins.  Multiple origins can be specified, as a comma-separated list.  For the definition of secure contexts, see [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), including the section [Is `origin` potentially trustworthy?](https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy).  Example: `--unsafely-treat-insecure-origin-as-secure=http://a.test,http://b.test` |
 | `use-fake-device-for-media-stream` | Uses a fake device for Media Stream to replace an actual camera and microphone. |
