@@ -1033,7 +1033,7 @@
                 - name: Using the Microsoft Edge Add-ons REST API
                   href: extensions-chromium/publish/api/using-addons-api.md
 
-                - name: Microsoft Edge Add-ons REST API Reference
+                - name: REST API Reference for Microsoft Edge Add-ons
                   href: extensions-chromium/publish/api/addons-api-reference.md
 
         - name: Samples

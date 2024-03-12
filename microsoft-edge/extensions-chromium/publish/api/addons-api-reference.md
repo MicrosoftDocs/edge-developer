@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge Add-ons REST API Reference
+title: REST API Reference for Microsoft Edge Add-ons
 description: The Add-ons API Reference, for REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons store.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/07/2022
 ---
-# Microsoft Edge Add-ons REST API Reference
+# REST API Reference for Microsoft Edge Add-ons
 
 This article is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons store.
 
