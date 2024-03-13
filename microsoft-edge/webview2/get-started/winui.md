@@ -485,6 +485,12 @@ public MainWindow()
 WinUI 3 doesn't support transparent backgrounds.  See [Transparent background support for WebView2? · Issue #2992](https://github.com/microsoft/microsoft-ui-xaml/issues/2992).
 
 
+<!-- ------------------------------ -->
+#### WinAppSDK support for custom WebView2 environments
+
+See [WinAppSDK supports custom WebView2 environments](#winappsdk-support-for-custom-webview2-environments), above.
+
+
 <!-- ====================================================================== -->
 ## See also
 
