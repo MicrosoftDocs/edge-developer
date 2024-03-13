@@ -435,7 +435,11 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## WinUI 3 WebView2 special considerations
 
+
+<!-- ------------------------------ -->
 #### SmartScreen
+
+_todo: this section is now out of date.  We no longer recommend using environment variables here; instead, use a custom `CoreWebView2Environment`._
 
 WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
 
