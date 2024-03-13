@@ -92,7 +92,7 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
    If you're using Visual Studio 2019, click a project template that has the title **WPF Application** and the description text **A project for creating a .NET Core WPF Application**:
 
    ![Selecting the template 'WPF Application: .NET Core WPF Application' in the 2019 'Create a new project' dialog](./wpf-images/wpf-getting-started-wpf-core.png)
-   <!--todo: after move png to article's dedicated images dir, change filename like for vs2022 above -->
+   <!--todo: after move png to article's dedicated images dir, change file name like for vs2022 above -->
 
    If the above project template isn't listed, see [Step 1 - Install Visual Studio with .NET support](#step-1---install-visual-studio-with-net-support) above, to install **.NET desktop development tools**.
 

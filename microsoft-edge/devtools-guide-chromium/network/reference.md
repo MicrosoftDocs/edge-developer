@@ -417,7 +417,7 @@ Use the **Requests** table to display a log of all requests made while DevTools 
 
 The Requests table displays the following columns by default:
 
-- **Name**. The filename of, or an identifier for, the resource.
+- **Name**. The file name of the resource, or an identifier for the resource.
 - **Status**. The HTTP status code.
 - **Type**. The MIME type of the requested resource.
 - **Initiator**. The following objects or processes can initiate requests:

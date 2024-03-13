@@ -65,9 +65,9 @@ For details, see [Map the processed code to your original source code, for debug
 
    ![The Unminify button in the Performance tool](./unminify-images/perf-profile-unminify-button.png)
 
-   In DevTools, a popup briefly appears, reading: **Status: creating unminfied file**.  Then the **Save As** dialog opens.  The default filename is a pattern starting with date and time like `yymmddThhmmss`, such as: `Profile-20220307T164948-unminified.json`.  The default directory is the **Downloads** directory.
+   In DevTools, a popup briefly appears, reading: **Status: creating unminfied file**.  Then the **Save As** dialog opens.  The default file name is a pattern starting with date and time like `yymmddThhmmss`, such as: `Profile-20220307T164948-unminified.json`.  The default directory is the **Downloads** directory.
 
-1. Select a filename and directory and then click the **Save** button.
+1. Select a file name and directory and then click the **Save** button.
 
    The **Performance** tool creates a new version of the recorded performance profile, with some function names from the flame chart replaced by more meaningful function names by using your source maps.  Some of the minified production names might still appear, because source maps don't always provide the necessary information for the **Performance** tool to map all function names.
 
