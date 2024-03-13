@@ -200,6 +200,26 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
 1.  Close the app.
 
 
+<!-- ---------- -->
+#### WinAppSDK supports custom WebView2 environments
+
+Note (background info):
+
+WinAppSDK supports custom WebView2 environments.  See [WinUI3 WebView2 with a custom CoreWebView2Environment](https://github.com/microsoft/microsoft-ui-xaml/issues/6150).  WebView2 custom environment support has been added in WinAppSDK 1.5 (first appearing in [1.5.0-experimental2](/windows/apps/windows-app-sdk/experimental-channel#version-15-experimental-150-experimental2)).  To implement a custom WebView2 environment, initialize WebView2 with one of the new overrides of `WebView2.EnsureCoreWebView2Async`, and pass in your custom `CoreWebView2Environment` (and, optionally, custom `CoreWebView2ControllerOptions`):
+
+```csharp
+public IAsyncAction EnsureCoreWebView2Async (CoreWebView2Environment environment)
+public IAsyncAction EnsureCoreWebView2Async (CoreWebView2Environment environment, CoreWebView2ControllerOptions controllerOptions)
+```
+
+_todo: tab-set for 3 platforms, linking to API Ref_
+
+The following classes are accessible in WinUI 3:
+
+* `CoreWebView2EnvironmentOptions`
+* `CoreWebView2ControllerOptions`
+
+
 <!-- ====================================================================== -->
 ## Step 5 - Add navigation controls
 
@@ -442,28 +462,6 @@ public MainWindow()
 #### Transparency
 
 WinUI 3 doesn't support transparent backgrounds.  See [Transparent background support for WebView2? · Issue #2992](https://github.com/microsoft/microsoft-ui-xaml/issues/2992).
-
-
-<!-- ---------- -->
-#### WinAppSDK supports custom WebView2 environments
-
-_todo: move this section_
-
-WinAppSDK supports custom WebView2 environments.  See [WinUI3 WebView2 with a custom CoreWebView2Environment](https://github.com/microsoft/microsoft-ui-xaml/issues/6150).  WebView2 custom environment support has been added in WinAppSDK 1.5 (first appearing in [1.5.0-experimental2](/windows/apps/windows-app-sdk/experimental-channel#version-15-experimental-150-experimental2)).  To implement a custom WebView2 environment, initialize WebView2 with one of the new overrides of `WebView2.EnsureCoreWebView2Async`, and pass in your custom `CoreWebView2Environment` (and, optionally, custom `CoreWebView2ControllerOptions`):
-
-<!--
-The following classes are now accessible in WinUI 3:
-
-* `CoreWebView2EnvironmentOptions`
-* `CoreWebView2ControllerOptions`
--->
-
-```csharp
-public IAsyncAction EnsureCoreWebView2Async (CoreWebView2Environment environment)
-public IAsyncAction EnsureCoreWebView2Async (CoreWebView2Environment environment, CoreWebView2ControllerOptions controllerOptions)
-```
-
-_todo: tab-set for 3 platforms, linking to API Ref_
 
 
 <!-- ====================================================================== -->
