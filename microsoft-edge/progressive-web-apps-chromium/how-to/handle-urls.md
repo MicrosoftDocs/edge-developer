@@ -16,7 +16,7 @@ Progressive Web Apps (PWAs) can also handle links in a similar way.
 
 <!--
 link handling vs. url handling:
-Although the present filename is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.
+Although the present file name is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.
 The PWA URL handlers feature was removed from Chromium.
 See also [PWAs as URL Handlers](https://web.dev/pwa-url-handler/).
 -->
