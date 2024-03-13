@@ -62,7 +62,7 @@ Available actions include:
 * **Go to Line**
 * **Run Snippet**
 
-The actions other than **Run Command** require input, such as a filename or line number.
+The actions other than **Run Command** require input, such as a file name or line number.
 
 
 <!-- ====================================================================== -->
