@@ -437,11 +437,28 @@ Congratulations, you built your first WebView2 app!
 
 
 <!-- ------------------------------ -->
-#### SmartScreen
+#### Disabling SmartScreen navigation
 
-_todo: this section is now out of date.  We no longer recommend using environment variables here; instead, use a custom `CoreWebView2Environment`._
+WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure.  If you want to disable this navigation, use a custom `CoreWebView2Environment`, as follows:
 
-WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
+```csharp
+CoreWebView2EnvironmentOptions environmentOptions = new CoreWebView2EnvironmentOptions();
+environmentOptions.AdditionalBrowserArguments = "--disable-features=msSmartScreenProtection";
+
+string browserFolder = null; // Use null to get default browser folder
+string userDataFolder = null; // Use null to get default user data folder
+CoreWebView2Environment environment = await CoreWebView2Environment.CreateWithOptionsAsync(
+    browserFolder, userDataFolder, environmentOptions);
+
+// ...
+
+this.WebView2.EnsureCoreWebView2Async(environment);
+```
+
+
+###### Disabling SmartScreen by using an environment variable
+
+We no longer recommend using an environment variable.  Use the above API code-based approach instead.
 
 * `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
 
