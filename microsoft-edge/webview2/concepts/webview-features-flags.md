@@ -106,8 +106,11 @@ The following are some of the flags we've seen used.
 | `msAbydosGestureSupport` | Allows users to use gestures (such as the scratchout gesture) to delete text by using a pen.  Valid only if the `msAbydos` flag is enabled. |
 | `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled. |
 | `msEdgeFluentOverlayScrollbar` | Force-enables Fluent Overlay scrollbars, overriding whatever value `kFluentScrollbar` may hold at the moment. |
+| `msEdgeDevToolsWdpRemoteDebugging` | Enables remote debugging. |
 | `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
 | `msEnhancedTrackingPreventionEnabled` | Enables native privacy protection features, such as blocking cookies and web requests that reside in domains that are known to be tracking domains. |
+| `msFloatyMode` | Use this to disable Floaty feature, as WebView doesn't support to browser retention experiments. |
+| `msFloatyShouldHonorIndiaHoldout` | Use this to disable Floaty India holdout feature that enables if the user is part of control of the India holdout group, as WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
@@ -116,9 +119,12 @@ The following are some of the flags we've seen used.
 | `msWebView2TextureStream` | If enabled, allows to stream captured or composed video frames to the WebView2 where JavaScript can render or otherwise interact with the frames via W3C standard DOM APIs including the Video element, and MediaStream. |
 | `msWebView2EnableDraggableRegions` | This flag enables webpages within WebView2 make use of the app-region: drag/nodrag CSS style which causes elements with that style to behave like a titlebar.  Without this flag, the style has no effect. |
 | `msWebView2CodeCache` | If enabled, JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses. |
-| `msWebView2SimulateMemoryPressureWhenInactive` | If enabled, simulates memory pressure for an inactive WebView. |
+| `msWebView2NativeEventDispatch` | If enabled, it uses native mojo connection to dispatch internal events like web message to renderer process. |
+| `msWebView2SimulateMemoryPressureWhenInactive` | If enabled, simulates memory pressure for inactive WebView. |
+| `msWebView2TreatAppSuspendAsDeviceSuspend` | If enabled, when all WebViews are suspended, we treat it as if the device is suspended and pause all delayed tasks and timers. |
 | `no-proxy-server` | Overrides any other proxy server flags that are passed. |
 | `net-log-capture-mode` | Sets the granularity of events to capture in the network log.  Valid values: `Default`, `IncludeSensitive`, `Everything`. |
+| `no-network-profile-warning` | Switch to control whether or not the browser should warn if the UDF is on a network share.  This flag is only relevant for Windows currently. |
 | `no-sandbox` | Disables the sandbox for all process types that are normally sandboxed.  Meant to be used as a browser-level flag for testing purposes only. |
 | `no-first-run` | Skips First-Run tasks, regardless of whether it's actually the First Run, and skips displaying the What's New page.  This flag is overridden by `kForceFirstRun` (for the First-Run Experience (FRE)) and by `kForceWhatsNew` (for displaying What's New).  This flag doesn't drop the First Run sentinel, and thus doesn't prevent the First-Run experience from occurring the next time the Edge WebView browser is launched without this flag.  This flag doesn't update the last What's New milestone, so doesn't prevent What's New from being displayed the next time the Edge WebView browser is launched without this flag. |
 | `PartitionedCookies` | When enabled, sites can opt-in to having their cookies partitioned by the top-level site by using the `Partitioned` attribute.  Partitioned cookies are only sent when the browser is on the same top-level site that it was on when the cookie was set. |
@@ -139,6 +145,8 @@ The following are some of the flags we've seen used.
 | `use-system-proxy-resolver` | Uses WinHttp to resolve proxies instead of using WebView2's normal proxy resolution logic.  This flag is only supported in Windows. |
 | `user-agent` | A string used to override the default user agent with a custom user agent. |
 | `user-data-migrated` | Indicates that this process is the product of a relaunch following migration of user data. |
+| `UseNativeThreadPool` | If this is enabled, WebView2 ThreadPoolImpl will use a foreground ThreadGroup backed by a native thread pool implementation. |
+| `UseBackgroundNativeThreadPool` | If this is enabled, WebView2 ThreadPoolImpl will use a background ThreadGroup backed by a native thread pool implementation. |
 | `V8Maglev` | Enables the Maglev compiler.  This only sets the V8 flag when manually overridden; otherwise, it defers to whatever the V8 default is. |
 
 ---
