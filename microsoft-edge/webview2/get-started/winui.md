@@ -215,13 +215,11 @@ public IAsyncAction EnsureCoreWebView2Async (CoreWebView2Environment environment
 ```
 
 API Reference:
+* [WebView2.EnsureCoreWebView2Async](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async)
 * [CoreWebView2ControllerOptions](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions)
 * [CoreWebView2Environment](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
 * [CoreWebView2EnvironmentOptions](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions)
 
-<!-- todo: link to API Ref when available:
-* [WebView2.EnsureCoreWebView2Async] - todo, need URL if available near https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/
- -->
 
 
 <!-- ====================================================================== -->
