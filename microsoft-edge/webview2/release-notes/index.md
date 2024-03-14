@@ -15,8 +15,8 @@ ms.date: 03/14/2024
 Release Notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
 
 <!-- maintenance notes:
-* add the new page to toc.yml
-* move eleventh oldest link into release-notes-archive.md
+* add the new pair of Release + Prerelease .md files to toc.yml
+* move eleventh oldest pair of Release + Prerelease .md files into release-notes-archive.md
 -->
 
 * [Release Notes for WebView2 Release SDK 1.0.2365.46](./1-0-2365-46.md)
