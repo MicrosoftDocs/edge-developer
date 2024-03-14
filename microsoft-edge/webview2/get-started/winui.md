@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/13/2024
+ms.date: 03/14/2024
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK) apps
 
@@ -488,7 +488,7 @@ WinUI 3 doesn't support transparent backgrounds.  See [Transparent background su
 <!-- ------------------------------ -->
 #### WinAppSDK support for custom WebView2 environments
 
-See [WinAppSDK supports custom WebView2 environments](#winappsdk-support-for-custom-webview2-environments), above.
+See [WinAppSDK supports custom WebView2 environments](#winappsdk-supports-custom-webview2-environments), above.
 
 
 <!-- ====================================================================== -->
