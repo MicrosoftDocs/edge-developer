@@ -17,11 +17,13 @@ Release Date: January 30, 2024
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 122.0.2357.0 or higher.
 
 
+<!-- ====================================================================== -->
+## Experimental APIs
+
+This Prerelease SDK adds the following experimental APIs:
+
+
 <!-- ------------------------------ -->
-#### Experimental APIs
-
-
-<!-- ---------- -->
 * Added the Runtime selection feature to support more prerelease testing and flighting scenarios.  Developers can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -59,7 +61,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 ---
 
 
-<!-- ---------- -->
+<!-- ------------------------------ -->
 * Added a new API to provide hit-testing results on the regions that a WebView2 contains.  This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -113,8 +115,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 ---
 
-<!-- ------------------------------ -->
-#### Promotions
+<!-- ====================================================================== -->
+## Promotions
 
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
@@ -356,10 +358,10 @@ N/A
 ---
 
 
-<!-- ------------------------------ -->
-#### Bug fixes
+<!-- ====================================================================== -->
+## Bug fixes
 
-###### Runtime-only
+#### Runtime-only
 
 * Fixed a bug where closing a WebView control that has an embedded PDF viewer could lead to a crash.  (Runtime-only)  ([Issue #3832](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3832))
 
@@ -371,10 +373,15 @@ N/A
 
 * Fixed an issue where `put_AreBrowserAcceleratorKeysEnabled` wasn't able to update settings for WebView2 when no `AcceleratorKeyPressed` event handler is registered. (Runtime-only)  ([Issue #4278](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4278))
 
-###### SDK-only
+#### SDK-only
 
 * Fixed an issue where the WebView2 control in .NET was failing to find the `WebView2Loader.dll` on UNC paths.  (SDK-only)  ([Issue #4081](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4081))
 
 * Fixed some issues causing instances of `InvalidOperationException` in .NET controls, that weren't helpful to developers.  (SDK-only)  ([Issue #4272](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4272))
 
-<!-- end of Jan 2024 Prerelease SDK -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release Notes for the WebView2 SDK](./index.md)
+* [WebView2 Roadmap](../roadmap.md)

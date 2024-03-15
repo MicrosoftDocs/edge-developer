@@ -35,7 +35,7 @@ New APIs are introduced in phases as follows:
 | _Stable in a Release SDK_ | 3. Then the Stable API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK. |
 
 ![Diagram of phases of introducing new APIs](./versioning-images/phases-of-adding-apis.png)
-<!-- .png is used by webview2/release-notes.md and webview2/concepts/versioning.md -->
+<!-- .png is used by webview2/release-notes/index.md and webview2/concepts/versioning.md -->
 
 <!-- terminology:
 APIs are Experimental or Stable

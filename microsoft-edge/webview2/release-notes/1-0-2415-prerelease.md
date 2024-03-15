@@ -17,11 +17,11 @@ Release Date: February 26, 2024
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 123.0.2415.0 or higher.
 
 
+<!-- ====================================================================== -->
+## Breaking changes
+
+
 <!-- ------------------------------ -->
-#### Breaking changes
-
-
-<!-- ---------- -->
 * The behavior of the `InitiatingOrigin` property of `CoreWebView2LaunchingExternalUriSchemeEventArgs` has changed.  If the `InitiatingOrigin` is an [opaque origin](https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque), the `InitiatingOrigin` that's reported in the event args is its precursor origin.  The _precursor origin_ is the origin that created the opaque origin.  For example, if a frame that's at `example.com` opens a subframe that has a different opaque origin, the subframe's precursor origin is `example.com`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -42,7 +42,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 ---
 
 
-<!-- ---------- -->
+<!-- ------------------------------ -->
 * The members of the `CoreWebView2TextureStreamErrorKind` enum have been renamed:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -90,8 +90,10 @@ New member names:
 ---
 
 
-<!-- ------------------------------ -->
-#### Experimental APIs
+<!-- ====================================================================== -->
+## Experimental APIs
+
+This Prerelease SDK adds the following experimental APIs:
 
 * The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input messages (keyboard, mouse, touch, and pen) to pass through the browser window to be received by an app process window.
 
@@ -114,8 +116,8 @@ New member names:
 ---
 
 
-<!-- ------------------------------ -->
-#### Promotions
+<!-- ====================================================================== -->
+## Promotions
 
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
@@ -177,10 +179,10 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ---
 
 
-<!-- ------------------------------ -->
-#### Bug fixes
+<!-- ====================================================================== -->
+## Bug fixes
 
-###### Runtime-only
+#### Runtime-only
 
 * Fixed the camera or mic not being able to open in Google Meet or Microsoft Teams meetings when the permission request is set to "not persisted" (that is, `SavesInProfile = false`).  ([Issue #3592](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3592))
 
@@ -198,4 +200,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 * Fixed an issue where `PrintAsync` prints a blank page if it is called too soon, before the PDF is fully loaded.  ([Issue #3779](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3779))
 
-<!-- end of Feb 2024 Prerelease SDK -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release Notes for the WebView2 SDK](./index.md)
+* [WebView2 Roadmap](../roadmap.md)

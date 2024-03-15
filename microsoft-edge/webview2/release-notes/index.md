@@ -6,13 +6,26 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/14/2024
+ms.date: 03/15/2024
 ---
 # Release Notes for the WebView2 SDK
 
-<!-- [!INCLUDE [Microsoft Edge team note for top of What's New](includes/edge-whats-new-note.md)] -->
+<!-- todo:
+Promote headings eg h4 -> h2.  to do this: S/R in folder:
+   Change \n####  to \n## .  done 
+   Change \n######  to \n#### .  done
+   Revert some of that change in the present file.
+define a redirect for overall relnotes page
+define a redirect for each relnotes h2 anchor
+-->
 
 Release Notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
+
+
+<!-- ====================================================================== -->
+## Recent Release Notes 
+
+<!-- the 10 most recent pairs of Release + Prerelease -->
 
 <!-- maintenance notes:
 * add the new pair of Release + Prerelease .md files to toc.yml
@@ -115,8 +128,8 @@ New APIs are added in phases, as follows:
 1. Then they become Stable APIs in a Prerelease SDK package.
 1. Soon after, they become Stable APIs in a Release SDK package.
 
-![Diagram of phases of introducing new APIs](./release-notes-images/phases-of-adding-apis.png)
-<!-- .png is used by webview2/release-notes.md and webview2/concepts/versioning.md -->
+![Diagram of phases of introducing new APIs](./index-images/phases-of-adding-apis.png)
+<!-- .png is used by webview2/release-notes/index.md and webview2/concepts/versioning.md -->
 
 For more information, see [Phases of introducing APIs](./concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
 
@@ -125,62 +138,11 @@ APIs are Experimental or Stable
 SDKs/packages are Prerelease or Release
 -->
 
-The following sections cover either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
+Each release notes webpage covers either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
 
 
-<!-- Release section template -->
-<!-- ======================================================================
-## 1.0.####.##
+<!-- ====================================================================== -->
+## See also
 
-Release Date: Monthname nn, 2024
-
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-#### General features
-
-#### Promotions
-No additional APIs have been promoted to Stable and added in this Release SDK.
-The following APIs have been promoted to Stable and are now included in this Release SDK.
-##### [.NET/C#](#tab/dotnetcsharp)
-##### [WinRT/C#](#tab/winrtcsharp)
-##### [Win32/C++](#tab/win32cpp)
----
-
-#### Bug fixes
-###### Runtime and SDK
-###### Runtime-only
-###### SDK-only
--->
-<!-- end of Mar. 2024 Release SDK -->
-
-
-<!-- Prerelease section template -->
-<!-- ======================================================================
-## 1.0.####-prerelease
-
-Release Date: Monthname nn, 2024
-
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
-
-#### General features
-
-#### Experimental APIs
-
-#### Promotions
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-##### [.NET/C#](#tab/dotnetcsharp)
-##### [WinRT/C#](#tab/winrtcsharp)
-##### [Win32/C++](#tab/win32cpp)
----
-
-#### Bug fixes
-###### Runtime and SDK
-###### Runtime-only
-###### SDK-only
--->
-<!-- end of Mar. 2024 Prerelease SDK -->
+* [Overview of WebView2 features and APIs](./concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
+* [Contacting the Microsoft Edge WebView2 team](contact.md)

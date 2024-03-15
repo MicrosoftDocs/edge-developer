@@ -14,12 +14,7 @@ The following Release Notes entries cover older releases.
 
 <!-- maintenance notes: adjust placement and indent in toc.yml too -->
 
-<!-- template:
-* [Release Notes for WebView2 Release SDK 1.0.####.##](./1-0-####-##.md)
-   * [Release Notes for WebView2 Prerelease SDK 1.0.####-prerelease](./1-0-####-prerelease.md)
-
--->
-
+<!-- created: -->
 * [Release Notes for WebView2 Release SDK 1.0.1722.45](./1-0-1722-45.md)
 * [Release Notes for WebView2 Prerelease SDK 1.0.1777-prerelease](./1-0-1777-prerelease.md)
 * [Release Notes for WebView2 Release SDK 1.0.1661.34](./1-0-1661-34.md)
