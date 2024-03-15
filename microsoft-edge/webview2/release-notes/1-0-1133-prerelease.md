@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/13/20222
+ms.date: 01/13/2022
 ---
 # Release Notes for WebView2 Prerelease SDK 1.0.1133-prerelease
 

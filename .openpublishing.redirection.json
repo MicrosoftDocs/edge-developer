@@ -1,5 +1,6 @@
 {
   "redirections": [
+      /* https://review.learn.microsoft.com/help/platform/redirect-articles */
       /* redirect to legal */
       {
         "source_path": "microsoft-edge/extensions/microsoft-browser-extension-policy.md",
@@ -445,6 +446,7 @@
         "redirect_document_id": false
       },
       {
+        /* anchor redirects seem ignored, and aren't mentioned in https://review.learn.microsoft.com/help/platform/redirect-articles */
         "source_path": "microsoft-edge/hosting/webview2/release-notes.md#10236546",
         "redirect_url": "/microsoft-edge/webview2/release-notes/1-0-2365-46",
         "redirect_document_id": false
