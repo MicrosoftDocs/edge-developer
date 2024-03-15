@@ -112,8 +112,7 @@ This Prerelease SDK adds the following experimental APIs:
 
 
 <!-- ====================================================================== -->
-## Bug fixes for 1.0.1414-prerelease
-<!-- another section links to here -->
+## Bug fixes
 
 *   Removed three-dot menu with a broken link from the downloads page.  (Runtime-only)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
 *   Fixed a bug in the WebView2 WinRT JS Projection tool (wv2winrt) where C++20 projects failed to compile.  ([Issue #2768](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2768))

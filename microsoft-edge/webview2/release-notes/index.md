@@ -11,6 +11,7 @@ ms.date: 03/15/2024
 # Release Notes for the WebView2 SDK
 
 <!-- todo:
+fix links per build report
 test the redirect for overall relnotes page
 define & test a redirect for a single relnotes h2 anchor
 define & test a redirect for each relnotes h2 anchor
@@ -61,7 +62,7 @@ The WebView2 team updates the WebView2 SDK on a four-week cadence.  This article
 
 You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
-Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 features and APIs](./concepts/overview-features-apis.md).
+Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](../webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md).
 
 
 <!-- ====================================================================== -->
@@ -79,9 +80,9 @@ WebView2 shares code and binaries with the Microsoft Edge browser, and is releas
 
 *  For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
 
-*  To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](./concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
+*  To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
 
-*  To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](./how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
+*  To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
 
 
 <!-- ====================================================================== -->
@@ -93,7 +94,7 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 
 * Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
 
-For more information, see [Matching the Runtime version with the SDK version](concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version).
+For more information, see [Matching the Runtime version with the SDK version](../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version).
 
 
 <!-- ====================================================================== -->
@@ -101,7 +102,7 @@ For more information, see [Matching the Runtime version with the SDK version](co
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
+To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](../how-to/set-preview-channel.md).
 
 <!--
 Cross-framework API conventions
@@ -129,7 +130,7 @@ New APIs are added in phases, as follows:
 ![Diagram of phases of introducing new APIs](./index-images/phases-of-adding-apis.png)
 <!-- .png is used by webview2/release-notes/index.md and webview2/concepts/versioning.md -->
 
-For more information, see [Phases of introducing APIs](./concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
+For more information, see [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
 
 <!-- terminology:
 APIs are Experimental or Stable
@@ -142,5 +143,5 @@ Each release notes webpage covers either a Release SDK package (1.0.####.##) or 
 <!-- ====================================================================== -->
 ## See also
 
-* [Overview of WebView2 features and APIs](./concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
-* [Contacting the Microsoft Edge WebView2 team](contact.md)
+* [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md)
+* [Contacting the Microsoft Edge WebView2 team](../contact.md)

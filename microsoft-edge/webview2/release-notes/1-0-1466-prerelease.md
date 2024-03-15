@@ -105,8 +105,7 @@ This Prerelease SDK adds the following experimental APIs:
 
 
 <!-- ====================================================================== -->
-## Bug fixes for 1.0.1466-prerelease
-<!-- another section links to here -->
+## Bug fixes
 
 *   Fixed a bug in which the custom header title in print settings could be wrong. ([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
 *   Display `AllowedCertificateAuthorities` in `add_ClientCertificateRequested` event as a `Base64` string.  (Runtime-only)  ([Issue #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346))
