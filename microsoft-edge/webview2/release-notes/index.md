@@ -11,9 +11,10 @@ ms.date: 03/15/2024
 # Release Notes for the WebView2 SDK
 
 <!-- todo:
-define a redirect for overall relnotes page
-define a redirect for each relnotes h2 anchor
-make desc yaml field unique in each file
+test the redirect for overall relnotes page
+define & test a redirect for a single relnotes h2 anchor
+define & test a redirect for each relnotes h2 anchor
+make the description: yaml field unique in each file
 -->
 
 Release Notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
@@ -29,25 +30,25 @@ Release Notes entries correspond to historical releases of WebView2, and are not
 * move eleventh oldest pair of Release + Prerelease .md files into release-notes-archive.md
 -->
 
-* [Release Notes for WebView2 Release SDK 1.0.2365.46](./1-0-2365-46.md)
-* [Release Notes for WebView2 Prerelease SDK 1.0.2415-prerelease](./1-0-2415-prerelease.md)
-* [Release Notes for WebView2 Release SDK 1.0.2277.86](./1-0-2277-86.md)
-* [Release Notes for WebView2 Prerelease SDK 1.0.2357-prerelease](./1-0-2357-prerelease.md)
-* [Release Notes for WebView2 Release SDK 1.0.2210.55](./1-0-2210-55.md)
-* [Release Notes for WebView2 Release SDK 1.0.2151.40](./1-0-2151-40.md)
-* [Release Notes for WebView2 Prerelease SDK 1.0.2194-prerelease](./1-0-2194-prerelease.md)
-* [Release Notes for WebView2 Release SDK 1.0.2088.41](./1-0-2088-41.md)
-* [Release Notes for WebView2 Prerelease SDK 1.0.2164-prerelease](./1-0-2164-prerelease.md)
-* [Release Notes for WebView2 Release SDK 1.0.2045.28](./1-0-2045-28.md)
-* [Release Notes for WebView2 Prerelease SDK 1.0.2106-prerelease](./1-0-2106-prerelease.md)
-* [Release Notes for WebView2 Release SDK 1.0.1938.49](./1-0-1938-49.md)
-* [Release Notes for WebView2 Prerelease SDK 1.0.2065-prerelease](./1-0-2065-prerelease.md)
-* [Release Notes for WebView2 Release SDK 1.0.1901.177](./1-0-1901-177.md)
-* [Release Notes for WebView2 Prerelease SDK 1.0.1988-prerelease](./1-0-1988-prerelease.md)
-* [Release Notes for WebView2 Release SDK 1.0.1823.32](./1-0-1823-32.md)
-* [Release Notes for WebView2 Prerelease SDK 1.0.1905-prerelease](./1-0-1905-prerelease.md)
-* [Release Notes for WebView2 Release SDK 1.0.1774.30](./1-0-1774-30.md)
-* [Release Notes for WebView2 Prerelease SDK 1.0.1829-prerelease](./1-0-1829-prerelease.md)
+* [1.0.2365.46](./1-0-2365-46.md)
+* [1.0.2415-prerelease](./1-0-2415-prerelease.md)
+* [1.0.2277.86](./1-0-2277-86.md)
+* [1.0.2357-prerelease](./1-0-2357-prerelease.md)
+* [1.0.2210.55](./1-0-2210-55.md)
+* [1.0.2151.40](./1-0-2151-40.md)
+* [1.0.2194-prerelease](./1-0-2194-prerelease.md)
+* [1.0.2088.41](./1-0-2088-41.md)
+* [1.0.2164-prerelease](./1-0-2164-prerelease.md)
+* [1.0.2045.28](./1-0-2045-28.md)
+* [1.0.2106-prerelease](./1-0-2106-prerelease.md)
+* [1.0.1938.49](./1-0-1938-49.md)
+* [1.0.2065-prerelease](./1-0-2065-prerelease.md)
+* [1.0.1901.177](./1-0-1901-177.md)
+* [1.0.1988-prerelease](./1-0-1988-prerelease.md)
+* [1.0.1823.32](./1-0-1823-32.md)
+* [1.0.1905-prerelease](./1-0-1905-prerelease.md)
+* [1.0.1774.30](./1-0-1774-30.md)
+* [1.0.1829-prerelease](./1-0-1829-prerelease.md)
 * [Release Notes archive](./release-notes-archive.md)
 
 
