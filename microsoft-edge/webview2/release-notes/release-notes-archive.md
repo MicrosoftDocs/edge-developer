@@ -1,12 +1,12 @@
 ---
 title: Release Notes archive
-description: Release Notes for older releases of WebView2.
+description: Release Notes for older releases of Microsoft Edge WebView2, covering new features, APIs, and fixes for Win32, WPF, and WinForms.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 01/25/2024
+ms.date: 03/15/2024
 ---
 # Release Notes archive
 

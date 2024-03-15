@@ -1,6 +1,6 @@
 ---
 title: Release Notes for WebView2 Prerelease SDK 1.0.902-prerelease
-description: Release notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms, covering new features, APIs, and fixes.
+description: New features, APIs, and fixes in WebView2 Prerelease SDK 1.0.902-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
