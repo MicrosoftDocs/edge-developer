@@ -11,10 +11,8 @@ ms.date: 03/15/2024
 # Release Notes for the WebView2 SDK
 
 <!-- todo:
-fix links per build report
-test the redirect for overall relnotes page
 define & test a redirect for a single relnotes h2 anchor
-define & test a redirect for each relnotes h2 anchor
+if works, define & test a redirect for each relnotes h2 anchor
 make the description: yaml field unique in each file
 -->
 
