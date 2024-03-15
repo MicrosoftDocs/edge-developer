@@ -23,9 +23,9 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
 > [!IMPORTANT]
 > **Announcement**:  WebView2 now supports WPF and Windows Forms on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **prerelease package**.
 
-For more information about building WPF apps, see [Get started with WebView2 in WPF apps](get-started/wpf.md) and the WebView2 [WPF Reference](/dotnet/api/microsoft.web.webview2.wpf) for WPF-specific APIs.
+For more information about building WPF apps, see [Get started with WebView2 in WPF apps](../get-started/wpf.md) and the WebView2 [WPF Reference](/dotnet/api/microsoft.web.webview2.wpf) for WPF-specific APIs.
 
-For more information about building Windows Forms apps, see [Get started with WebView2 in WinForms apps](get-started/winforms.md) and the WebView2 [Windows Forms Reference](/dotnet/api/microsoft.web.webview2.winforms) for Windows Forms specific APIs.
+For more information about building Windows Forms apps, see [Get started with WebView2 in WinForms apps](../get-started/winforms.md) and the WebView2 [Windows Forms Reference](/dotnet/api/microsoft.web.webview2.winforms) for Windows Forms specific APIs.
 
 For more information about the CoreWebView2 APIs, see [.NET Reference](/dotnet/api/microsoft.web.webview2.core).
 

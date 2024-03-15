@@ -436,7 +436,17 @@
       },
       {
         "source_path": "microsoft-edge/hosting/webview2/releasenotes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/hosting/webview2/release-notes.md",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/hosting/webview2/release-notes.md#10236546",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/1-0-2365-46",
         "redirect_document_id": false
       },
       {
@@ -501,7 +511,7 @@
       },
       {
         "source_path": "microsoft-edge/webview2/releasenotes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/",
         "redirect_document_id": false
       },
       /* redirects to webview2 dotnet reference */

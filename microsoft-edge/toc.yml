@@ -1439,7 +1439,7 @@
         - name: Release Notes
           items:
             - name: Release Notes for the WebView2 SDK (orig)
-              href: webview2/release-notes.md
+              href: webview2/release-notes/index.md
               displayName: what's new, announcements
 
             - name: Release Notes for the WebView2 SDK

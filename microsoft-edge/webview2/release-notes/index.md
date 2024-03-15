@@ -11,12 +11,9 @@ ms.date: 03/15/2024
 # Release Notes for the WebView2 SDK
 
 <!-- todo:
-Promote headings eg h4 -> h2.  to do this: S/R in folder:
-   Change \n####  to \n## .  done 
-   Change \n######  to \n#### .  done
-   Revert some of that change in the present file.
 define a redirect for overall relnotes page
 define a redirect for each relnotes h2 anchor
+make desc yaml field unique in each file
 -->
 
 Release Notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
