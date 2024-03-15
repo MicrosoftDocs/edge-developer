@@ -1438,271 +1438,351 @@
 # relnotes
         - name: Release Notes
           items:
-            - name: Release Notes for the WebView2 SDK (orig)
-              href: webview2/release-notes/index.md
-              displayName: what's new, announcements
-
             - name: Release Notes for the WebView2 SDK
               href: webview2/release-notes/index.md
               displayName: what's new, announcements
 
-            - name: Release Notes for WebView2 Release SDK 1.0.2365.46
+            - name: SDK 1.0.2365.46
               href: webview2/release-notes/1-0-2365-46.md
+              displayName: Release Notes for WebView2 Release SDK 1.0.2365.46
 
-            - name: Release Notes for WebView2 Prerelease SDK 1.0.2415-prerelease
+            - name: SDK 1.0.2415-prerelease
               href: webview2/release-notes/1-0-2415-prerelease.md
+              displayName: Release Notes for WebView2 Prerelease SDK 1.0.2415-prerelease
 
-            - name: Release Notes for WebView2 Release SDK 1.0.2277.86
+            - name: SDK 1.0.2277.86
               href: webview2/release-notes/1-0-2277-86.md
+              displayName: Release Notes for WebView2 Release SDK 1.0.2277.86
 
-            - name: Release Notes for WebView2 Prerelease SDK 1.0.2357-prerelease
+            - name: SDK 1.0.2357-prerelease
               href: webview2/release-notes/1-0-2357-prerelease.md
+              displayName: Release Notes for WebView2 Prerelease SDK 1.0.2357-prerelease
 
-            - name: Release Notes for WebView2 Release SDK 1.0.2210.55
+            - name: SDK 1.0.2210.55
               href: webview2/release-notes/1-0-2210-55.md
+              displayName: Release Notes for WebView2 Release SDK 1.0.2210.55
 
-            - name: Release Notes for WebView2 Release SDK 1.0.2151.40
+            - name: SDK 1.0.2151.40
               href: webview2/release-notes/1-0-2151-40.md
+              displayName: Release Notes for WebView2 Release SDK 1.0.2151.40
 
-            - name: Release Notes for WebView2 Prerelease SDK 1.0.2194-prerelease
+            - name: SDK 1.0.2194-prerelease
               href: webview2/release-notes/1-0-2194-prerelease.md
+              displayName: Release Notes for WebView2 Prerelease SDK 1.0.2194-prerelease
 
-            - name: Release Notes for WebView2 Release SDK 1.0.2088.41
+            - name: SDK 1.0.2088.41
               href: webview2/release-notes/1-0-2088-41.md
+              displayName: Release Notes for WebView2 Release SDK 1.0.2088.41
 
-            - name: Release Notes for WebView2 Prerelease SDK 1.0.2164-prerelease
+            - name: SDK 1.0.2164-prerelease
               href: webview2/release-notes/1-0-2164-prerelease.md
+              displayName: Release Notes for WebView2 Prerelease SDK 1.0.2164-prerelease
 
-            - name: Release Notes for WebView2 Release SDK 1.0.2045.28
+            - name: SDK 1.0.2045.28
               href: webview2/release-notes/1-0-2045-28.md
+              displayName: Release Notes for WebView2 Release SDK 1.0.2045.28
 
-            - name: Release Notes for WebView2 Prerelease SDK 1.0.2106-prerelease
+            - name: SDK 1.0.2106-prerelease
               href: webview2/release-notes/1-0-2106-prerelease.md
+              displayName: Release Notes for WebView2 Prerelease SDK 1.0.2106-prerelease
 
-            - name: Release Notes for WebView2 Release SDK 1.0.1938.49
+            - name: SDK 1.0.1938.49
               href: webview2/release-notes/1-0-1938-49.md
+              displayName: Release Notes for WebView2 Release SDK 1.0.1938.49
 
-            - name: Release Notes for WebView2 Prerelease SDK 1.0.2065-prerelease
+            - name: SDK 1.0.2065-prerelease
               href: webview2/release-notes/1-0-2065-prerelease.md
+              displayName: Release Notes for WebView2 Prerelease SDK 1.0.2065-prerelease
 
-            - name: Release Notes for WebView2 Release SDK 1.0.1901.177
+            - name: SDK 1.0.1901.177
               href: webview2/release-notes/1-0-1901-177.md
+              displayName: Release Notes for WebView2 Release SDK 1.0.1901.177
 
-            - name: Release Notes for WebView2 Prerelease SDK 1.0.1988-prerelease
+            - name: SDK 1.0.1988-prerelease
               href: webview2/release-notes/1-0-1988-prerelease.md
+              displayName: Release Notes for WebView2 Prerelease SDK 1.0.1988-prerelease
 
-            - name: Release Notes for WebView2 Release SDK 1.0.1823.32
+            - name: SDK 1.0.1823.32
               href: webview2/release-notes/1-0-1823-32.md
+              displayName: Release Notes for WebView2 Release SDK 1.0.1823.32
 
-            - name: Release Notes for WebView2 Prerelease SDK 1.0.1905-prerelease
+            - name: SDK 1.0.1905-prerelease
               href: webview2/release-notes/1-0-1905-prerelease.md
+              displayName: Release Notes for WebView2 Prerelease SDK 1.0.1905-prerelease
 
-            - name: Release Notes for WebView2 Release SDK 1.0.1774.30
+            - name: SDK 1.0.1774.30
               href: webview2/release-notes/1-0-1774-30.md
+              displayName: Release Notes for WebView2 Release SDK 1.0.1774.30
 
-            - name: Release Notes for WebView2 Prerelease SDK 1.0.1829-prerelease
+            - name: SDK 1.0.1829-prerelease
               href: webview2/release-notes/1-0-1829-prerelease.md
+              displayName: Release Notes for WebView2 Prerelease SDK 1.0.1829-prerelease
 
             - name: Archive
               items:
                 - name: Release Notes archive
-                  href: webview2/release-notes/index.md
+                  href: webview2/release-notes/release-notes-archive.md
                   displayName: what's new, announcements
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1722.45
+                - name: SDK 1.0.1722.45
                   href: webview2/release-notes/1-0-1722-45.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1722.45
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1777-prerelease
+                - name: SDK 1.0.1777-prerelease
                   href: webview2/release-notes/1-0-1777-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1777-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1661.34
+                - name: SDK 1.0.1661.34
                   href: webview2/release-notes/1-0-1661-34.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1661.34
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1724-prerelease
+                - name: SDK 1.0.1724-prerelease
                   href: webview2/release-notes/1-0-1724-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1724-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1587.40
+                - name: SDK 1.0.1587.40
                   href: webview2/release-notes/1-0-1587-40.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1587.40
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1671-prerelease
+                - name: SDK 1.0.1671-prerelease
                   href: webview2/release-notes/1-0-1671-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1671-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1518.46
+                - name: SDK 1.0.1518.46
                   href: webview2/release-notes/1-0-1518-46.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1518.46
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1619-prerelease
+                - name: SDK 1.0.1619-prerelease
                   href: webview2/release-notes/1-0-1619-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1619-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1462.37
+                - name: SDK 1.0.1462.37
                   href: webview2/release-notes/1-0-1462-37.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1462.37
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1549-prerelease
+                - name: SDK 1.0.1549-prerelease
                   href: webview2/release-notes/1-0-1549-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1549-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1418.22
+                - name: SDK 1.0.1418.22
                   href: webview2/release-notes/1-0-1418-22.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1418.22
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1466-prerelease
+                - name: SDK 1.0.1466-prerelease
                   href: webview2/release-notes/1-0-1466-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1466-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1370.28
+                - name: SDK 1.0.1370.28
                   href: webview2/release-notes/1-0-1370-28.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1370.28
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1414-prerelease
+                - name: SDK 1.0.1414-prerelease
                   href: webview2/release-notes/1-0-1414-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1414-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1343.22
+                - name: SDK 1.0.1343.22
                   href: webview2/release-notes/1-0-1343-22.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1343.22
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1369-prerelease
+                - name: SDK 1.0.1369-prerelease
                   href: webview2/release-notes/1-0-1369-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1369-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1293.44
+                - name: SDK 1.0.1293.44
                   href: webview2/release-notes/1-0-1293-44.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1293.44
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1340-prerelease
+                - name: SDK 1.0.1340-prerelease
                   href: webview2/release-notes/1-0-1340-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1340-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1264.42
+                - name: SDK 1.0.1264.42
                   href: webview2/release-notes/1-0-1264-42.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1264.42
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1305-prerelease
+                - name: SDK 1.0.1305-prerelease
                   href: webview2/release-notes/1-0-1305-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1305-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1245.22
+                - name: SDK 1.0.1245.22
                   href: webview2/release-notes/1-0-1245-22.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1245.22
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1210.39
+                - name: SDK 1.0.1210.39
                   href: webview2/release-notes/1-0-1210-39.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1210.39
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1248-prerelease
+                - name: SDK 1.0.1248-prerelease
                   href: webview2/release-notes/1-0-1248-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1248-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1185.39
+                - name: SDK 1.0.1185.39
                   href: webview2/release-notes/1-0-1185-39.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1185.39
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1222-prerelease
+                - name: SDK 1.0.1222-prerelease
                   href: webview2/release-notes/1-0-1222-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1222-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1150.38
+                - name: SDK 1.0.1150.38
                   href: webview2/release-notes/1-0-1150-38.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1150.38
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1189-prerelease
+                - name: SDK 1.0.1189-prerelease
                   href: webview2/release-notes/1-0-1189-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1189-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1108.44
+                - name: SDK 1.0.1108.44
                   href: webview2/release-notes/1-0-1108-44.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1108.44
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1158-prerelease
+                - name: SDK 1.0.1158-prerelease
                   href: webview2/release-notes/1-0-1158-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1158-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1072.54
+                - name: SDK 1.0.1072.54
                   href: webview2/release-notes/1-0-1072-54.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1072.54
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1133-prerelease
+                - name: SDK 1.0.1133-prerelease
                   href: webview2/release-notes/1-0-1133-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1133-prerelease
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1083-prerelease
+                - name: SDK 1.0.1083-prerelease
                   href: webview2/release-notes/1-0-1083-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1083-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1054.31
+                - name: SDK 1.0.1054.31
                   href: webview2/release-notes/1-0-1054-31.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1054.31
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1056-prerelease
+                - name: SDK 1.0.1056-prerelease
                   href: webview2/release-notes/1-0-1056-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1056-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.1020.30
+                - name: SDK 1.0.1020.30
                   href: webview2/release-notes/1-0-1020-30.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.1020.30
 
-                - name: Release Notes for WebView2 Release SDK 1.0.992.28
+                - name: SDK 1.0.992.28
                   href: webview2/release-notes/1-0-992-28.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.992.28
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1018-prerelease
+                - name: SDK 1.0.1018-prerelease
                   href: webview2/release-notes/1-0-1018-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1018-prerelease
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.1010-prerelease
+                - name: SDK 1.0.1010-prerelease
                   href: webview2/release-notes/1-0-1010-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.1010-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.961.33
+                - name: SDK 1.0.961.33
                   href: webview2/release-notes/1-0-961-33.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.961.33
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.955-prerelease
+                - name: SDK 1.0.955-prerelease
                   href: webview2/release-notes/1-0-955-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.955-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.902.49
+                - name: SDK 1.0.902.49
                   href: webview2/release-notes/1-0-902-49.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.902.49
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.902-prerelease
+                - name: SDK 1.0.902-prerelease
                   href: webview2/release-notes/1-0-902-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.902-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.864.35
+                - name: SDK 1.0.864.35
                   href: webview2/release-notes/1-0-864-35.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.864.35
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.865-prerelease
+                - name: SDK 1.0.865-prerelease
                   href: webview2/release-notes/1-0-865-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.865-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.818.41
+                - name: SDK 1.0.818.41
                   href: webview2/release-notes/1-0-818-41.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.818.41
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.824-prerelease
+                - name: SDK 1.0.824-prerelease
                   href: webview2/release-notes/1-0-824-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.824-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.774.44
+                - name: SDK 1.0.774.44
                   href: webview2/release-notes/1-0-774-44.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.774.44
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.790-prerelease
+                - name: SDK 1.0.790-prerelease
                   href: webview2/release-notes/1-0-790-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.790-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.705.50
+                - name: SDK 1.0.705.50
                   href: webview2/release-notes/1-0-705-50.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.705.50
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.721-prerelease
+                - name: SDK 1.0.721-prerelease
                   href: webview2/release-notes/1-0-721-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.721-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.664.37
+                - name: SDK 1.0.664.37
                   href: webview2/release-notes/1-0-664-37.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.664.37
 
-                - name: Release Notes for WebView2 Prerelease SDK 1.0.674-prerelease
+                - name: SDK 1.0.674-prerelease
                   href: webview2/release-notes/1-0-674-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 1.0.674-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 1.0.622.22
+                - name: SDK 1.0.622.22
                   href: webview2/release-notes/1-0-622-22.md
+                  displayName: Release Notes for WebView2 Release SDK 1.0.622.22
 
-                - name: Release Notes for WebView2 Release SDK 0.9.622.11
+                - name: SDK 0.9.622.11
                   href: webview2/release-notes/0-9-622-11.md
+                  displayName: Release Notes for WebView2 Release SDK 0.9.622.11
 
-                - name: Release Notes for WebView2 Release SDK 0.9.579
+                - name: SDK 0.9.579
                   href: webview2/release-notes/0-9-579.md
+                  displayName: Release Notes for WebView2 Release SDK 0.9.579
 
-                - name: Release Notes for WebView2 Release SDK 0.9.538
+                - name: SDK 0.9.538
                   href: webview2/release-notes/0-9-538.md
+                  displayName: Release Notes for WebView2 Release SDK 0.9.538
 
-                - name: Release Notes for WebView2 Prerelease SDK 0.9.515-prerelease
+                - name: SDK 0.9.515-prerelease
                   href: webview2/release-notes/0-9-515-prerelease.md
+                  displayName: Release Notes for WebView2 Prerelease SDK 0.9.515-prerelease
 
-                - name: Release Notes for WebView2 Release SDK 0.9.488
+                - name: SDK 0.9.488
                   href: webview2/release-notes/0-9-488.md
+                  displayName: Release Notes for WebView2 Release SDK 0.9.488
 
-                - name: Release Notes for WebView2 Release SDK 0.9.430
+                - name: SDK 0.9.430
                   href: webview2/release-notes/0-9-430.md
+                  displayName: Release Notes for WebView2 Release SDK 0.9.430
 
-                - name: Release Notes for WebView2 Release SDK 0.8.355
+                - name: SDK 0.8.355
                   href: webview2/release-notes/0-8-355.md
+                  displayName: Release Notes for WebView2 Release SDK 0.8.355
 
-                - name: Release Notes for WebView2 Release SDK 0.8.314
+                - name: SDK 0.8.314
                   href: webview2/release-notes/0-8-314.md
+                  displayName: Release Notes for WebView2 Release SDK 0.8.314
 
-                - name: Release Notes for WebView2 Release SDK 0.8.270
+                - name: SDK 0.8.270
                   href: webview2/release-notes/0-8-270.md
+                  displayName: Release Notes for WebView2 Release SDK 0.8.270
 
-                - name: Release Notes for WebView2 Release SDK 0.8.230
+                - name: SDK 0.8.230
                   href: webview2/release-notes/0-8-230.md
+                  displayName: Release Notes for WebView2 Release SDK 0.8.230
 
-                - name: Release Notes for WebView2 Release SDK 0.8.190
+                - name: SDK 0.8.190
                   href: webview2/release-notes/0-8-190.md
+                  displayName: Release Notes for WebView2 Release SDK 0.8.190
 
-                - name: Release Notes for WebView2 Release SDK 0.8.149
+                - name: SDK 0.8.149
                   href: webview2/release-notes/0-8-149.md
+                  displayName: Release Notes for WebView2 Release SDK 0.8.149
 # end of relnotes
 # -----------------------------------------------------------------
         - name: WebView2 Roadmap

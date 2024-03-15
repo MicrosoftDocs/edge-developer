@@ -4,15 +4,15 @@
 
 /* Outline of this file:
 
-TOC bucket 1: DevTools
-TOC bucket 2: Microsoft Edge extensions
-TOC bucket 3: Progressive Web Apps
-TOC bucket 4: WebView2
-TOC bucket 5: Test and automation
-TOC bucket 6: Development tips for Microsoft Edge (was "Web platform")
-TOC bucket 7: Microsoft Edge IDE integration
-TOC bucket 8: Accessibility in Microsoft Edge
-TOC bucket 9: DualEngine
+DevTools
+Microsoft Edge extensions
+Progressive Web Apps
+WebView2
+Test and automation
+Development tips for Microsoft Edge (was "Web platform")
+Microsoft Edge IDE integration
+Accessibility in Microsoft Edge
+DualEngine
 Redirects to Legal
 Redirects to MDN
 Redirects to external webpages
@@ -22,7 +22,7 @@ Old redirects (to /archive/)
 
 */
 
-/* TOC bucket 1: DevTools */
+/* DevTools */
       {
         /* legacy "Overview of DevTools" url redirects to DevTools landing */
         "source_path": "microsoft-edge/devtools-guide-chromium/index.md", 
@@ -86,7 +86,7 @@ Old redirects (to /archive/)
         "redirect_document_id": false
       },
 
-/* TOC bucket 2: Microsoft Edge extensions: */
+/* Microsoft Edge extensions: */
       {
         "source_path": "microsoft-edge/extensions-chromium/enterprise/declare-permissions.md",
         "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/declare-permissions",
@@ -123,7 +123,7 @@ Old redirects (to /archive/)
         "redirect_document_id": false
       },
 
-/* TOC bucket 3: Progressive Web Apps: */
+/* Progressive Web Apps: */
       {
         "source_path": "microsoft-edge/progressive-web-apps/index.md",
         "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/index",
@@ -155,7 +155,7 @@ Old redirects (to /archive/)
         "redirect_document_id": false
       },
 
-/* TOC bucket 4: WebView2: */
+/* WebView2: */
       {
         "source_path": "microsoft-edge/hosting/webview2.md",
         "redirect_url": "/microsoft-edge/webview2/index",
@@ -735,16 +735,16 @@ Old redirects (to /archive/)
       },
 /* end of WebView2 Reference */
 
-/* TOC bucket 5: Test and automation: none */
+/* Test and automation: none */
 
-/* TOC bucket 6: Development tips for Microsoft Edge (was "Web platform"): */
+/* Development tips for Microsoft Edge (was "Web platform"): */
       {
         "source_path": "microsoft-edge/web-platform/user-agent-string.md",
         "redirect_url": "/microsoft-edge/web-platform/user-agent-guidance",
         "redirect_document_id": false
       },
 
-/* TOC bucket 7: Microsoft Edge IDE integration: */
+/* Microsoft Edge IDE integration: */
       {
         "source_path": "microsoft-edge/visual-studio-code/index.md",
         "redirect_url": "/microsoft-edge/visual-studio-code/ide-integration",
@@ -761,9 +761,9 @@ Old redirects (to /archive/)
         "redirect_document_id": false
       },
 
-/* TOC bucket 8: Accessibility in Microsoft Edge: none */
+/* Accessibility in Microsoft Edge: none */
 
-/* TOC bucket 9: DualEngine: none */
+/* DualEngine: none */
 
 /* Redirects to Legal: */
       /* DevTools: */
