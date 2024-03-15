@@ -24,6 +24,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ====================================================================== -->
 ## Experimental APIs
 
+No Experimental APIs are added in this Prerelease SDK.
+
+<!-- or: -->
 This Prerelease SDK adds the following experimental APIs:
 
 ##### [.NET/C#](#tab/dotnetcsharp)

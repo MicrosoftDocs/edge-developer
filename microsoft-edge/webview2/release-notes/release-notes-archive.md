@@ -10,7 +10,7 @@ ms.date: 03/15/2024
 ---
 # Release Notes archive
 
-The following Release Notes entries cover older releases.
+The following Release Notes entries cover older releases of the WebView2 SDK.
 
 <!-- maintenance notes: adjust placement and indent in toc.yml too -->
 
