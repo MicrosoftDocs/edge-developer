@@ -16,7 +16,7 @@ Progressive Web Apps (PWAs) can also handle links in a similar way.
 
 <!--
 link handling vs. url handling:
-Although the present filename is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.
+Although the present file name is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.
 The PWA URL handlers feature was removed from Chromium.
 See also [PWAs as URL Handlers](https://web.dev/pwa-url-handler/).
 -->
@@ -48,7 +48,7 @@ The manifest of a PWA defines which part of the hosting domain the PWA is scoped
 
 Scope extensions make it possible for a PWA to capture navigation to paths, subdomains, or even sites other than its own scope. This can be useful for PWAs that span multiple domains for localization purposes. For example, a PWA may span `contoso.com`, `contoso.co.uk`, and `contoso.fr`.
 
-**Note**: The scope extensions feature is in active development and isn't ready to be used yet. To find out more about the state of development of this feature in Chromium, check out the [Web app scope extensions feature](https://chromestatus.com/feature/5746537956114432) at Chrome Platform Status.
+**Note**: The scope extensions feature is currently in origin trial. See [Experimental features and origin trials](./origin-trials.md). To find out more about the state of development of this feature in Chromium, check out the [Web app scope extensions feature](https://chromestatus.com/feature/5746537956114432) at Chrome Platform Status.
 
 Once the feature can be used in Microsoft Edge, we will document it here. In the meantime, to learn more about how scope extensions will work, see [the explainer document on the WICG repository](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md).
 

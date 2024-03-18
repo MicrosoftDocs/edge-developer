@@ -1,26 +1,18 @@
 ---
-title: Using the Microsoft Edge Add-ons API
+title: Using the Microsoft Edge Add-ons REST API
 description: REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons store.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 07/19/2023
+ms.date: 03/12/2024
 ---
-# Using the Microsoft Edge Add-ons API 
+# Using the Microsoft Edge Add-ons REST API
 
 The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons store.  You can use these REST endpoints to automate the process of uploading and publishing new versions of your add-ons to the Microsoft Edge Add-ons store.  You'll use the **Publish API** page at Partner Center to work with these endpoints.
 
 To submit suggestions and feedback, enter an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
-
-
-<!-- ====================================================================== -->
-## Library Support
-
-| Language | Package | Source code | Notes |
-| --- | --- | --- | --- |
-| Node.js | [Edge Webstore Upload](https://www.npmjs.com/package/@plasmo-corp/ewu) | [GitHub](https://github.com/plasmo-corp/edge-webstore-upload)| This is a third party library. Microsoft makes no warranties, express or implied, with respect to the information provided here. |
 
 
 <!-- ====================================================================== -->
@@ -232,4 +224,4 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 
 See also:
-*  [Using the Microsoft Edge Add-ons API: Check the publishing status](addons-api-reference.md#check-the-publishing-status)
+*  [Using the Microsoft Edge Add-ons REST API: Check the publishing status](addons-api-reference.md#check-the-publishing-status)

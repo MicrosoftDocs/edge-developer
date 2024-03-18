@@ -164,7 +164,7 @@ To make your application use a Microsoft Edge preview channel by using a registr
 
    `REG ADD HKLM\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /v WebView2APISample.exe /t REG_SZ /d "C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0"`
 
-   Replace `WebView2APISample.exe` with the filename of your own app executable or the Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
+   Replace `WebView2APISample.exe` with the file name of your own app executable or the Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
 
    Replace `C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0` by the path to the desired Microsoft Edge preview channel.
 
@@ -184,7 +184,7 @@ To make your application use a Microsoft Edge preview channel by using a registr
 
    `REG ADD HKLM\Software\Policies\Microsoft\Edge\WebView2\ReleaseChannelPreference /v WebView2APISample.exe /t REG_SZ /d "1"`
 
-   Replace `WebView2APISample.exe` with the filename of your own app executable or the Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
+   Replace `WebView2APISample.exe` with the file name of your own app executable or the Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
 
 #### Resuming using the default, WebView2 Evergreen Runtime
 
@@ -255,7 +255,7 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 
 1. Select the **Show** button.
 
-1. Fill-in the **Show Contents** dialog.  In the **Value name** column, enter your app's `.exe` filename or Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
+1. Fill-in the **Show Contents** dialog.  In the **Value name** column, enter your app's `.exe` file name or Application User Model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
 
    ![The Show Contents dialog](./set-preview-channel-images/show-contents.png)
 
