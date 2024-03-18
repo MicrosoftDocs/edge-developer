@@ -27,7 +27,7 @@ Release Notes entries correspond to historical releases of WebView2, and are not
 <!-- ====================================================================== -->
 ## Phases of adding APIs
 
-![Phases of adding APIs](./index-images/phases-of-adding-apis.png)
+![Phases of adding APIs](./about-images/phases-of-adding-apis.png)
 
 The WebView2 team updates the WebView2 SDK on a four-week cadence.  This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 

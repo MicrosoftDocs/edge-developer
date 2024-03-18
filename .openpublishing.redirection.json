@@ -3,7 +3,6 @@
 /* Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles */
 
 /* Outline of this file:
-
 DevTools
 Microsoft Edge extensions
 Progressive Web Apps
@@ -19,7 +18,6 @@ Redirects to external webpages
 WebDriver: "microsoft / edge-selenium-tools" repo
 Archived EdgeHTML content
 Old redirects (to /archive/)
-
 */
 
 /* DevTools */
