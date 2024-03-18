@@ -19,9 +19,6 @@ Oct 2023
 -->
 
 
-The following sections cover either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
-
-
 <!-- Release section template -->
 <!-- ======================================================================
 ## 1.0.####.##
@@ -64,8 +61,13 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 #### Experimental APIs
 
+No Experimental APIs have been added in this Prerelease SDK.
+- OR -
+The following Experimental APIs have been added in this Prerelease SDK.
+
 #### Promotions
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+- OR -
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 ##### [.NET/C#](#tab/dotnetcsharp)
 ##### [WinRT/C#](#tab/winrtcsharp)
@@ -253,6 +255,8 @@ New member names:
 
 <!-- ------------------------------ -->
 #### Experimental APIs
+
+The following Experimental APIs have been added in this Prerelease SDK.
 
 * The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input messages (keyboard, mouse, touch, and pen) to pass through the browser window to be received by an app process window.
 
@@ -476,6 +480,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### Experimental APIs
+
+The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -1252,6 +1258,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### Experimental APIs
+
+The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->

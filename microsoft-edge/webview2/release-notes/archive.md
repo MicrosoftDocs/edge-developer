@@ -10,8 +10,6 @@ ms.date: 03/18/2024
 ---
 # Archived Release Notes for the WebView2 SDK
 
-The following Release Notes sections cover either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
-
 
 <!-- ====================================================================== -->
 ## 1.0.2045.28
@@ -51,6 +49,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### Experimental APIs
+
+The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -241,6 +241,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
 
 <!-- ------------------------------ -->
 * Added source frame info to `NewWindowRequested`, to support identifying the source:
@@ -354,6 +356,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### Experimental APIs
+
+The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -660,7 +664,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -1032,7 +1036,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-No Experimental APIs are added in this Prerelease SDK.
+No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -1344,6 +1348,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### Experimental APIs
+
+The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -1743,6 +1749,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
 *  Added support for the Experimental File API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -2024,6 +2034,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
 
 <!-- ------------------------------ -->
 *  Added support for the Permission management API:
@@ -2212,6 +2224,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
 *  Added support for the Locale Region API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -2230,6 +2246,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 ---
 
 
+<!-- ---------- -->
 *  Added support for the tracking prevention API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -2374,6 +2391,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
 * Added support for creating a shared memory based buffer with a specified size:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -2522,6 +2543,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
 *  Added support for the Print API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -2737,6 +2762,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
 *  Added support for `WebResourceRequested` for workers which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iframes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -3039,6 +3068,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 #### Experimental APIs for 1.0.1222-prerelease
 <!-- another section links to here -->
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
 * Added the [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental15?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
 
 * Added the [Favicon API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental12?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides a way to get the favicon when it changes or is set at a website.
@@ -3098,6 +3129,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### Experimental APIs
+
+The following Experimental APIs have been added in this Prerelease SDK.
 
 *   Added [ContextMenuRequested API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true) to enable host app to create or modify their own context menu.
 
@@ -3174,7 +3207,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
 *  Added [Status bar API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental13?view=webview2-1.0.1158-prerelease&preserve-view=true) to provide info when webiew is showing status message, URL, or empty string.
+
 *  Added [CDP API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental14?view=webview2-1.0.1158-prerelease&preserve-view=true) to provide possibility for developers have multiple `DevToolsProtocol` targets in WebView2.
 
 
@@ -3234,9 +3270,14 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
 *  Added support for [theming](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile2?view=webview2-1.0.1133-prerelease&preserve-view=true) (overall color scheme - light, dark, system) of WebView2.
+
 *  Added a way to set [default download path](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile3?view=webview2-1.0.1133-prerelease&preserve-view=true).
+
 *  Added support for [clearing browser data](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4?view=webview2-1.0.1133-prerelease&preserve-view=true).
+
 *  Added [permission requested](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe3?view=webview2-1.0.1133-prerelease&preserve-view=true) support for iframes.
 
 
@@ -3281,6 +3322,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### Experimental APIs
+
+The following Experimental APIs have been added in this Prerelease SDK.
 
 * Added the following [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe2?view=webview2-1.0.1083-prerelease&preserve-view=true) in WebView2:
    *  `PostWebMessageAsJson`
@@ -3347,10 +3390,17 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
 *  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1056-prerelease&preserve-view=true).  This API enables:
    *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
    *  Programmatically opening and closing the default download dialog.
    *  Making changes in response to the dialog opening and closing.
+
+
+<!-- ---------- -->
 *  The [HTTP Authentication API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental10?view=webview2-1.0.1056-prerelease&preserve-view=true).
 
 
@@ -3429,7 +3479,10 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
 *  Added a [media API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
+
 *  Added support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment8?view=webview2-1.0.1018-prerelease&preserve-view=true) with WebView2.
 
 
@@ -3462,18 +3515,26 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
 *  Removed silent failures by using `EnsureCoreWebView2Async`, which throws an `ArgumentException` when called multiple times with incompatible parameters.
+
 *  Changed default handling of the [UserDataFolder](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5?view=webview2-1.0.1010-prerelease&preserve-view=true#get_userdatafolder) property in the environment object.
 
    > [!CAUTION]
    > **Breaking Change**:  The default handling for the user data folder, if the developer doesn't specify where to put it, will be changing.  See [Announcement: User directory folder default handling updates](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1410).
 
 *  Added [navigation & script APIs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.1010-prerelease&preserve-view=true) for iframes.
+
 *  Added [MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5?view=webview2-1.0.1010-prerelease&preserve-view=true) which allows developers to specify memory consumption levels, such as low, or normal.
+
 *  Added [ExclusiveUserDataFolderAccess](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1010-prerelease&preserve-view=true) to environment options.
+
 *  Added [HiddenPdfToolbarItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.1010-prerelease&preserve-view=true) to customize PDF toolbar items.
+
 *  Added [PrintToPdf](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprinttopdfcompletedhandler?view=webview2-1.0.1010-prerelease&preserve-view=true), which allows printing the current page to PDF. Also, you can use optional custom settings with this new API.
 *  Added [AllowExternalDrop](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller3?view=webview2-1.0.1010-prerelease&preserve-view=true) property to allow the dragging and dropping of objects from outside a WebView2 control into it.
+
 *  Added [ContextMenu APIs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1010-prerelease&preserve-view=true) which allow customization of the WebView2 context menu.
 
 
@@ -3553,8 +3614,11 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 #### Experimental APIs
 
 *  Added [OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2experimental4?view=webview2-1.0.955-prerelease&preserve-view=true#opentaskmanagerwindow) to launch a WebView2 browser task manager.
+
 *  Added [NewWindowRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs?view=webview2-1.0.955-prerelease&preserve-view=true#get_name).
+
 *  Added support for virtual host name mapping to work with Service Workers.
+
 *  Added [HiddenPdfToolbarItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.955-prerelease&preserve-view=true#get_hiddenpdftoolbaritems) to customize the PDF toolbar items.
 
 
@@ -3643,8 +3707,12 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
 *  Added [IsSwipeNavigationEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_isswipenavigationenabled) property to enable or disable the ability of the end user to use swiping gesture on touch input-enabled devices to navigate in WebView2.
+
 *  Added [BrowserProcessExited](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment4?view=webview2-1.0.902-prerelease&preserve-view=true#add_browserprocessexited) event.
+
 *  Added [add_ClientCertificateRequested API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental3?view=webview2-1.0.902-prerelease&preserve-view=true#add_clientcertificaterequested). It allows showing a client certificate dialog prompt if desired and enables access to required metadata to replace default client certificate dialog prompt.
 
 
@@ -3743,10 +3811,16 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
+The following Experimental APIs have been added in this Prerelease SDK.
+
 *  Added [IsPinchZoomEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings4?view=webview2-1.0.865-prerelease&preserve-view=true#ispinchzoomenabled) setting. It allows you to turn on or off page scale zoom control in a setting.
+
 *  Added Custom [add_DownloadStarting](/microsoft-edge/webview2/reference/win32/icorewebview2experimental2?view=webview2-1.0.865-prerelease&preserve-view=true#add_downloadstarting) API.  It allows you to block downloads, save to a different path, and access the required metadata to build custom download UI.
+
 *  Added `iframe` element support from [AddHostObjectToScriptWithOrigins](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.865-prerelease&preserve-view=true#addhostobjecttoscriptwithorigins).
+
 *  Added sample code for [WPF sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser) to use the API to turn off browser function keys.
+
 *  Added the [UpdateRuntime](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment3?view=webview2-1.0.865-prerelease&preserve-view=true#updateruntime) API, to easily update the WebView2 Runtime.
 
 
@@ -3768,7 +3842,10 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 <!-- ---------- -->
 ###### Experimental APIs
 
+The following Experimental APIs for .NET have been added in this Prerelease SDK.
+
 *  Added WebView2 designer tool to WPF Toolbox.  ([Issue #210](https://github.com/MicrosoftEdge/WebViewFeedback/issues/210)).
+
 *  Added WebView2 UI element in .NET Designer Mode.
 
 
