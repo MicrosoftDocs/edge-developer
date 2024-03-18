@@ -28,6 +28,7 @@ Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension s
 
 *Released July 2022*
 
+
 <!-- ====================================================================== -->
 ## You can respond to user reviews about your Microsoft Edge Add-on
 
@@ -37,12 +38,14 @@ To share your feedback and comments about this feature, see [GitHub discussion t
 
 *Released May 2022*
 
+
 <!-- ====================================================================== -->
 ## Publish and update extensions using the Microsoft Edge Add-ons API
 
-You can integrate APIs directly into your Continuous Integration / Continuous Delivery (CI/CD) pipeline. You can also publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. For more information, see [Using the Microsoft Edge Add-ons API](/microsoft-edge/extensions-chromium/publish/api/using-addons-api)
+You can integrate APIs directly into your Continuous Integration / Continuous Delivery (CI/CD) pipeline. You can also publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. For more information, see [Using the Microsoft Edge Add-ons REST API](../publish/api/using-addons-api.md).
 
 *Released March 2022*
+
 
 <!-- ====================================================================== -->
 ## Addition of breadcrumbs to Microsoft Partner Center
@@ -51,12 +54,14 @@ Developers can view the navigation bar / tree path while using Partner Center to
 
 *Released March 2022*
 
+
 <!-- ====================================================================== -->
 ## Microsoft Edge extensions developer portal
 
 The new edition of the developer portal contains relevant resources and documentation for Microsoft Edge extensions. For more information, see [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/microsoft-edge/extensions/).
 
 *Released January 2022*
+
 
 <!-- ====================================================================== -->
 ## Extension Analytics Dashboard on Microsoft Partner Center
@@ -65,12 +70,14 @@ The Extensions Analytics Dashboard enables you to view your extension's usage, a
 
 *Released September 2021*
 
+
 <!-- ====================================================================== -->
 ## Add team members to your Partner Center account
 
 You can add members from your organization and manage the settings on your Partner Center Account.  See [Add users to the Microsoft Edge program](/microsoft-edge/extensions-chromium/publish/aad-account).
 
 *Released August 2021*
+
 
 <!-- ====================================================================== -->
 ## Sign into Microsoft Partner Center using your GitHub account
@@ -79,12 +86,14 @@ You can use your personal GitHub account credentials to sign into Microsoft Part
 
 *Released August 2021*
 
+
 <!-- ====================================================================== -->
 ## Manage your extension submissions on Partner Center
 
 This feature allows you to view your extension submission from the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) dashboard and overview pages.  You can easily track your extension submission review status, view past updates, view the status of submissions, and manage extensions on Partner Center.
 
 *Released May 2021*
+
 
 <!-- ====================================================================== -->
 ## Support for Manifest V3 extensions
@@ -93,6 +102,7 @@ Microsoft Edge Add-ons now support extensions with Manifest V3. For more informa
 
 *Released April 2021*
 
+
 <!-- ====================================================================== -->
 ## Request to get your extension featured
 
@@ -100,12 +110,14 @@ You can request the Collection where your extension should be featured on the Mi
 
 *Released April 2021*
 
+
 <!-- ====================================================================== -->
 ## Extension store listing localization
 
 You can choose a subset of languages instead of manually entering each language in the listing details on Microsoft Partner Center.  You can also elect to use the same marketing assets across all marketplaces.  See [Partner Center improvements related to Microsoft Edge extensions store listing and certification](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981).
 
 *Released February 2021*
+
 
 <!-- ====================================================================== -->
 ## Extension certification report link

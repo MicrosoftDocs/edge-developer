@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: windows-integration
-ms.date: 12/27/2023
+ms.date: 03/04/2024
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, DualEngineSessionFactory
 topic_type: 
 - APIRef
@@ -24,7 +24,8 @@ api_location:
 # interface DualEngineSessionFactory
 
 > [!IMPORTANT]
-> The DualEngine API is a limited access feature. Contact dualengineapiaccess@microsoft.com for more information.
+> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or 
+> to request an unlock token, contact [Microsoft Support](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d15d3aa2-0512-7cb8-1df9-86221f5cbfde).
 
 Factory object for DualEngine interfaces.
 
@@ -73,7 +74,9 @@ Called to unlock the DualEngine interface.
 > public STDMETHOD([TryUnlockFeature](#tryunlockfeature))(PCWSTR token, PCWSTR attestation)
 
 > [!IMPORTANT]
-> This MUST be called successfully before any other methods on this interface can be called. Equivalent to `Windows::ApplicationModel::LimitedAccessFeatures::TryUnlockFeature` except it checks the adapter dll for the identity resource instead of the process .exe. 
+> This MUST be called successfully before any other methods on this interface can be called.
+
+Equivalent to `Windows::ApplicationModel::LimitedAccessFeatures::TryUnlockFeature` except it checks the adapter dll for the identity resource instead of the process .exe. 
 ###### Parameters
 * `token` The LAF token provided by Microsoft. 
 

@@ -22,15 +22,11 @@ To update your extension on the store, follow these steps:
 
 1.  Update either the extension package or the metadata of the extension.  If you update the extension package, make sure that you increase the version number in the manifest file.
 
-1.  After you make the changes, select **Publish** to update your extension listing, and start the certification process.
-
-    > [!NOTE]
-    > The certification process for an update to an extension can take up to 7 business days.
+1.  After you make the changes, click **Publish** to update your extension listing and start the certification process.  The certification process for an update to an extension can take up to 7 business days.
 
 1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons website.
 
-> [!TIP]
-> After your extension has been created initially, you'll be able to update it programmatically [Using the Microsoft Edge Add-ons API (Beta)](api/using-addons-api.md).
+After your extension has been created initially, you can update your extension by [Using the Microsoft Edge Add-ons REST API](./api/using-addons-api.md).
 
 
 <!-- ====================================================================== -->
@@ -46,12 +42,11 @@ To edit your submission, follow these steps:
 
 1. To open the **Extension overview** section, use the left navigation bar.  To cancel the current submission, select **Cancel submission**.
 
-1. Go to other sections and update either the extension package or the metadata of the extension.  If you update the extension package, make sure that you increase the version number in the manifest file to match changes since the previous package submission.
+1. Go to other sections and update either the extension package or the metadata of the extension.  If you update the extension package, make sure that you increase the version number in the manifest file to match changes that were made after the previous package submission.
 
 1. After you finish making changes, select **Publish**.
 
-> [!IMPORTANT]
-> The process stops and removes your current submission from the Microsoft Edge extensions certification pipeline and a new review starts with the latest submission.
+   **Important:** The review process stops, your current submission is removed from the Microsoft Edge extensions certification pipeline, and then a new review starts, using the new submission.
 
 
 <!-- ====================================================================== -->

@@ -4,7 +4,7 @@
 # =============================================================================
     - name: Develop for the web with Microsoft Edge
       href: develop-web-microsoft-edge.md
-      
+
     - name: Microsoft Edge DevTools
       items:
 # Card-based landing page -----------------------------------------------------
@@ -32,6 +32,9 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 122
+              href: devtools-guide-chromium/whats-new/2024/02/devtools-122.md
+
             - name: Microsoft Edge 121
               href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
 
@@ -59,14 +62,14 @@
             - name: Microsoft Edge 113
               href: devtools-guide-chromium/whats-new/2023/05/devtools-113.md
 
-            - name: Microsoft Edge 112
-              href: devtools-guide-chromium/whats-new/2023/04/devtools-112.md
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 112
+                  href: devtools-guide-chromium/whats-new/2023/04/devtools-112.md
 
                 - name: Microsoft Edge 111
                   href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
@@ -384,7 +387,7 @@
                 - name: Test Progressive Web App (PWA) protocol handling
                   href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
                   displayName: Application tool
-                  
+
                 - name: Debug background services
                   href: devtools-guide-chromium/javascript/background-services.md
                   displayName: Application tool
@@ -705,7 +708,7 @@
 # Inspect tool (distinct from Tools > Inspect tool bucket)
             - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage  # added article
               href: devtools-guide-chromium/accessibility/test-inspect-tool.md
-              displayName: Inspect tool  # tests Screen reader support, Keyboard support, Text contrast 
+              displayName: Inspect tool  # tests Screen reader support, Keyboard support, Text contrast
 
 # Lighthouse tool (distinct from Tools > Lighthouse tool bucket)
             - name: Test accessibility using Lighthouse  # was part of "Accessibility features reference"
@@ -841,54 +844,54 @@
 
                 - name: Get started by right-clicking an HTML file
                   href: visual-studio-code/microsoft-edge-devtools-extension/get-started-right-click-html.md
-                  
+
                 - name: Get started by clicking the Launch Instance button
                   href: visual-studio-code/microsoft-edge-devtools-extension/get-started-launch-instance.md
-                  
+
                 - name: Get started by clicking the Launch Project button
                   href: visual-studio-code/microsoft-edge-devtools-extension/get-started-launch-project.md
-                  
+
                 - name: Opening DevTools and the DevTools browser
                   href: visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
-                  
+
             - name: Tools and features
               items:
                 - name: Integration with Visual Studio Code debugging
                   href: visual-studio-code/microsoft-edge-devtools-extension/debugging-a-webpage.md
-                  
+
                 - name: Opening source files from the Elements tool
                   href: visual-studio-code/microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md
-                  
+
                 - name: Inline and live issue analysis
                   href: visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
-                  
+
                 - name: Device and state emulation
                   href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
-                  
+
                 - name: Update .css files from within the Styles tab (CSS mirror editing)
                   href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
                   displayName: Syncing live changes from the Styles tool by using CSS mirror editing # previous title
 
                 - name: Network tool integration
                   href: visual-studio-code/microsoft-edge-devtools-extension/network-tool-integration.md
-                  
+
                 - name: Console integration
                   href: visual-studio-code/microsoft-edge-devtools-extension/console-integration.md
-                  
+
                 - name: Application tool integration
                   href: visual-studio-code/microsoft-edge-devtools-extension/application-tool-integration.md
-                  
+
             - name: Customize
               items:
                 - name: Changing the extension settings
                   href: visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
-                  
+
                 - name: The launch.json file for the DevTools extension
                   href: visual-studio-code/microsoft-edge-devtools-extension/launch-json.md
-                  
+
                 - name: Using an external browser window
                   href: visual-studio-code/microsoft-edge-devtools-extension/external-browser-window.md
-                  
+
                 - name: Troubleshooting the DevTools extension
                   href: visual-studio-code/microsoft-edge-devtools-extension/troubleshooting.md
                   displayName: error messages
@@ -1013,10 +1016,10 @@
         - name: Developer policies for the Microsoft Edge Add-ons store
           href: extensions-chromium/store-policies/developer-policies.md
 
-        - name: Using the Microsoft Edge Add-ons API
+        - name: Using the Microsoft Edge Add-ons REST API
           href: extensions-chromium/publish/api/using-addons-api.md
 
-        - name: Microsoft Edge Add-ons API Reference
+        - name: REST API Reference for Microsoft Edge Add-ons
           href: extensions-chromium/publish/api/addons-api-reference.md
 
         - name: Samples
@@ -1097,34 +1100,34 @@
 
             - name: Display content in the title bar
               href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
-              
+
             - name: Share content with other apps
               href: progressive-web-apps-chromium/how-to/share.md
-              
+
             - name: Define app shortcuts
               href: progressive-web-apps-chromium/how-to/shortcuts.md
-              
+
             - name: Build operating system Widgets
               href: progressive-web-apps-chromium/how-to/widgets.md
               displayName: Build PWA-driven widgets  # top-of-page title
 
             - name: Build PWAs for the sidebar in Microsoft Edge
               href: progressive-web-apps-chromium/how-to/sidebar.md
-              
+
         - name: What's New
           href: progressive-web-apps-chromium/whats-new/pwa.md
           displayName: release notes, announcements, What's New in Progressive Web Apps  # top-of-page title
 
         - name: Progressive Web App demos
           href: progressive-web-apps-chromium/demo-pwas.md
-          
+
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: WebView2
       items:
         - name: Introduction to Microsoft Edge WebView2
           href: webview2/index.md
-          
+
         - name: Overview of WebView2 features and APIs
           href: webview2/concepts/overview-features-apis.md
 
@@ -1132,7 +1135,7 @@
 # machine setup
         - name: Set up your Dev environment for WebView2
           href: webview2/how-to/machine-setup.md
-          
+
 # -----------------------------------------------------------------------------
 # Getting Started tutorials
         - name: Getting Started tutorials
@@ -1171,7 +1174,7 @@
           items:
             - name: Sample apps
               href: webview2/code-samples-links.md
-              
+
             - name: Win32 sample app
               href: webview2/samples/webview2apissample.md
               displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
@@ -1211,7 +1214,7 @@
           items:
             - name: Deployment samples
               href: webview2/samples/deployment-samples.md
-              
+
             - name: WebView2 Deployment Visual Studio installer
               href: webview2/samples/wv2deploymentvsinstallersample.md
               displayName: WV2DeploymentVSInstallerSample  # repo dir name
@@ -1229,13 +1232,13 @@
           items:
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
-              
+
             - name: WebView2 browser flags
               href: webview2/concepts/webview-features-flags.md
 
             - name: "Main classes for WebView2: Environment, Controller, and Core"
               href: webview2/concepts/environment-controller-core.md
-              
+
             - name: Navigation events
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title
@@ -1250,7 +1253,7 @@
 
             - name: Windowed vs. visual hosting of WebView2
               href: webview2/concepts/windowed-vs-visual-hosting.md
-              
+
             - name: Custom management of network requests
               href: webview2/how-to/webresourcerequested.md
               displayName: WebResourceRequested, WebResourceResponseReceived
@@ -1275,7 +1278,7 @@
 
                 - name: How WinRT types and members are represented in JavaScript
                   href: webview2/how-to/winrt-js-conversion.md
-                  
+
             - name: Using frames
               href: webview2/concepts/frames.md
               displayName: Using frames in WebView2 apps, iframe # full title
@@ -1291,28 +1294,28 @@
 
             - name: Distribute your app and the WebView2 Runtime
               href: webview2/concepts/distribution.md
-              
+
             - name: Working with local content in WebView2 apps
               href: webview2/concepts/working-with-local-content.md
-              
+
 # -----------------------------------------------------------------------------
         - name: Test and automation in WebView2 apps
           items:
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
-    
+
             - name: Use Playwright to automate and test in WebView2
               href: webview2/how-to/playwright.md
-    
+
             - name: Automate and test WebView2 apps with Microsoft Edge WebDriver
               href: webview2/how-to/webdriver.md
-    
+
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
-          items: 
+          items:
             - name: Debug WebView2 apps
               href: webview2/how-to/debug.md
-              
+
             - name: Microsoft Edge DevTools
               href: webview2/how-to/debug-devtools.md
               displayName: Debug WebView2 apps with Microsoft Edge DevTools  # top-of-page title
@@ -1326,7 +1329,7 @@
               displayName: Debug WebView2 apps with Visual Studio  # top-of-page title
 
             - name: Remote debugging WebView2 WinUI 2 (UWP) apps
-              items: 
+              items:
                 - name: Remote debugging WebView2 WinUI 2 (UWP) apps
                   href: webview2/how-to/remote-debugging.md
                   displayName: remotely debug
@@ -1367,10 +1370,10 @@
 
             - name: Support multiple profiles under a single user data folder
               href: webview2/concepts/multi-profile-support.md
-              
+
             - name: Clear browsing data from the user data folder
               href: webview2/concepts/clear-browsing-data.md
-              
+
 # -----------------------------------------------------------------------------
         - name: Advanced Topics and Best Practices
           items:
@@ -1380,7 +1383,7 @@
 
             - name: Develop secure WebView2 apps
               href: webview2/concepts/security.md
-              
+
             # - name: Customize the UI   # not needed?  flatten
             #   items:
             #     - name: Customize the UI of WebView2 apps
@@ -1424,7 +1427,7 @@
 
         - name: WebView2 Roadmap
           href: webview2/roadmap.md
-          
+
         - name: WebView2 Reference
           items:
             - name: WebView2 API Reference
@@ -1465,7 +1468,7 @@
               items:
                 - name: Win32 C++ WebView2 API conventions
                   href: webview2/concepts/win32-api-conventions.md
-                  
+
                 - name: Win32 C++ API Reference
                   href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
@@ -1504,19 +1507,19 @@
       items:
         - name: Test and automation in Microsoft Edge  # new firstchild article
           href: test-and-automation/test-and-automation.md
-          
+
         - name: DevTools Protocol
           href: test-and-automation/devtools-protocol.md
-          
+
         - name: Use Origin Trials in Microsoft Edge
           href: origin-trials/index.md
-          
+
         - name: Use Playwright to automate and test in Microsoft Edge
           href: playwright/index.md
-          
+
         - name: Puppeteer overview
           href: puppeteer/index.md
-          
+
         - name: WebDriver
           items:
             - name: Use WebDriver to automate Microsoft Edge
@@ -1532,36 +1535,36 @@
 
         - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
-          
+
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Development tips for Microsoft Edge
       items:
         - name: Development tips for Microsoft Edge
           href: web-platform/web-platform.md
-          
+
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: web-platform/site-impacting-changes.md
-          
+
         - name: Move users to Microsoft Edge from Internet Explorer
           href: web-platform/ie-to-microsoft-edge-redirection.md
-          
+
         - name: Tracking prevention in Microsoft Edge
           href: web-platform/tracking-prevention.md
-          
+
         - name: Detect Microsoft Edge from your website
           href: web-platform/user-agent-guidance.md
-          
+
         - name: Develop for the sidebar
           href: web-platform/sidebar.md
           displayName: sidebar apps, sidebar extensions, pwa, side panel, sidepanel
 
         - name: Detect Windows 11 using User-Agent Client Hints
           href: web-platform/how-to-detect-win11.md
-          
+
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
-          
+
         - name: Operating System Regional Data Display
           href: web-platform/os-regional-settings.md
           displayName: globalization, language, region, limited, intl, date, time, format
@@ -1576,7 +1579,7 @@
       items:
         - name: Microsoft Edge IDE integration
           href: visual-studio-code/ide-integration.md
-          
+
         - name: DevTools extension for Visual Studio Code # aux jump page
           href: visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md
 
@@ -1586,29 +1589,29 @@
 
         - name: Debug Microsoft Edge in Visual Studio Code
           href: visual-studio-code/debugger-for-edge.md
-          
+
         - name: Visual Studio for web development
           href: visual-studio/index.md
-          
+
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Accessibility in Microsoft Edge
       items:
         - name: Accessibility in Microsoft Edge
           href: accessibility/index.md
-          
+
         - name: Design accessible websites
           href: accessibility/design.md
-          
+
         - name: Resources about building accessible websites
           href: accessibility/build/index.md
-          
+
         - name: ARIA and UI automation in Microsoft Edge
           href: accessibility/build/ARIA-and-UI-Automation.md
-          
+
         - name: Resources for accessibility testing
           href: accessibility/test.md
-          
+
 #==============================================================================
 # DualEngine
     - name: DualEngine
@@ -1622,7 +1625,7 @@
 
         - name: Creating a DualEngine adapter plugin DLL
           href: dualengine/concepts/adapter-dll.md
-          
+
         - name: Launching Internet Explorer
           href: dualengine/concepts/launching-internet-explorer.md
 
@@ -1638,6 +1641,6 @@
 
     - name: Privacy whitepaper
       href: privacy-whitepaper/index.md
-      
+
     - name: The Web We Want initiative
       href: web-we-want/index.md
