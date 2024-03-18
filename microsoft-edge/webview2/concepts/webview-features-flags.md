@@ -58,8 +58,13 @@ See also Globals:
 
 The following are some of the flags we've seen used.
 
+<!-- todo: add column containing links:
+| Flag | Description | Article |
+|---|---|---|
+-->
+
 | Flag | Description |
-|:--- |:--- |
+|---|---|
 | `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
 | `allow-file-access-from-files` | Allows reading `file://` URIs from other `file://` URIs. |
 | `allow-insecure-localhost` | Enables TLS/SSL errors on localhost to be ignored, so that no interstitial is done and no blocking of requests is done. |
