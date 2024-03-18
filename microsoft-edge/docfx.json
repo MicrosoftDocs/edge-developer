@@ -35,7 +35,7 @@
       "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/edge-developer",
-      "searchScope": ["Microsoft Edge"],
+      "searchScope": ["Microsoft Edge", "Microsoft Edge Developer"],
       "titleSuffix": "Microsoft Edge Developer documentation",
       "uhfHeaderId": "MSDocsHeader-MSEdge"
     },

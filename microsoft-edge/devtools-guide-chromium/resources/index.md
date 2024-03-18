@@ -54,9 +54,9 @@ When you know the name of a webpage's resource file that you want to inspect, th
 
 1. If there's a greater-than (>) prompt, press **Backspace** to get to the **Open File** prompt.
 
-1. Start typing the filename, and then press **Enter** when the correct file is highlighted in the autocomplete box, or select the file from the dropdown list:
+1. Start typing the file name, and then press **Enter** when the correct file is highlighted in the autocomplete box, or select the file from the dropdown list:
 
-   ![Typing part of a filename in the Open File list of the Command Menu](./index-images/command-menu-file-search.png)
+   ![Typing part of a file name in the Open File list of the Command Menu](./index-images/command-menu-file-search.png)
 
 
 <!-- ====================================================================== -->
@@ -160,7 +160,7 @@ You can use the **Sources** tool to view the webpage's resource files organized 
 
 
 <!-- ====================================================================== -->
-## Browse resource files sorted by filename in the Page tab of the Sources tool
+## Browse resource files sorted by file name in the Page tab of the Sources tool
 
 By default, the **Page** tab in the **Sources** tool groups resource files by folder.  To instead display all the resource files for each domain grouped together in a single alphabetized list:
 

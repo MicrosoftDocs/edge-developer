@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-
+# landing page for DevTools portion of docset
 title: Microsoft Edge DevTools documentation
 summary: Development using Microsoft Edge DevTools.
 
@@ -41,25 +41,24 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-
           - text: Overview of DevTools
-            url: /microsoft-edge/devtools-guide-chromium/overview
+            url: ../overview.md
 
           - text: Change DevTools placement (Undock, Dock to bottom, Dock to left)
-            url: /microsoft-edge/devtools-guide-chromium/customize/placement
+            url: ../customize/placement.md
 
           - text: Run commands in the Command Menu
-            url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+            url: ../command-menu/index.md
 
           - text: Console overview
-            url: /microsoft-edge/devtools-guide-chromium/console/index
+            url: ../console/index.md
       - linkListType: whats-new
         links:
-          - text: What's New in Microsoft Edge DevTools 
-            url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+          - text: What's New in Microsoft Edge DevTools
+            url: ../whats-new/whats-new.md
 
           - text: Contact the Microsoft Edge DevTools team
-            url: /microsoft-edge/devtools-guide-chromium/contact
+            url: ../contact.md
 
 # =============================================================================
 # Card r1c2
@@ -68,19 +67,21 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Customize DevTools
-            url: /microsoft-edge/devtools-guide-chromium/customize/index
+            url: ../customize/index.md
+
           - text: Apply a color theme to DevTools
-            url: /microsoft-edge/devtools-guide-chromium/customize/theme
+            url: ../customize/theme.md
       - linkListType: whats-new
         links:
           - text: Experimental features in Microsoft Edge DevTools
-            url: /microsoft-edge/devtools-guide-chromium/experimental-features/index
+            url: ../experimental-features/index.md
       - linkListType: how-to-guide
         links:
           - text: Change DevTools language settings
-            url: /microsoft-edge/devtools-guide-chromium/customize/localization
+            url: ../customize/localization.md
+
           - text: Customize keyboard shortcuts
-            url: /microsoft-edge/devtools-guide-chromium/customize/shortcuts
+            url: ../customize/shortcuts.md
 
 # =============================================================================
 # Card r1c3
@@ -89,25 +90,30 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Analyze pages using the Inspect tool
-            url: /microsoft-edge/devtools-guide-chromium/css/inspect
+            url: ../css/inspect.md
       - linkListType: tutorial
         links:
           - text: Get started viewing and changing CSS
-            url: /microsoft-edge/devtools-guide-chromium/css/index
+            url: ../css/index.md
+
           - text: Get started viewing and changing the DOM
-            url: /microsoft-edge/devtools-guide-chromium/dom/index
+            url: ../dom/index.md
       - linkListType: how-to-guide
         links:
           - text: Find and fix problems using the Issues tool
-            url: /microsoft-edge/devtools-guide-chromium/issues/index
+            url: ../issues/index.md
+
           - text: Navigate webpage layers, z-index, and DOM using the 3D View tool
-            url: /microsoft-edge/devtools-guide-chromium/3d-view/index
+            url: ../3d-view/index.md
+
           - text: Inspect animations
-            url: /microsoft-edge/devtools-guide-chromium/inspect-styles/animations
+            url: ../inspect-styles/animations.md
+
           - text: Debug Progressive Web Apps (PWAs)
-            url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/index
+            url: ../progressive-web-apps/index.md
+
           - text: Inspect network activity
-            url: /microsoft-edge/devtools-guide-chromium/network/index
+            url: ../network/index.md
 
 # =============================================================================
 # Card r2c1
@@ -116,19 +122,25 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Emulate mobile devices (Device Emulation)
-            url: /microsoft-edge/devtools-guide-chromium/device-mode/index
+            url: ../device-mode/index.md
+
           - text: Accessibility-testing features
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
+            url: ../accessibility/reference.md
+
           - text: Emulate dark or light schemes in the rendered page
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/preferred-color-scheme-simulation
+            url: ../accessibility/preferred-color-scheme-simulation.md
+
           - text: Test keyboard support using the Source Order Viewer
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer
+            url: ../accessibility/test-tab-key-source-order-viewer.md
+
           - text: Force print preview mode
-            url: /microsoft-edge/devtools-guide-chromium/css/print-preview
+            url: ../css/print-preview.md
+
           - text: Emulate vision deficiencies
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/emulate-vision-deficiencies
+            url: ../accessibility/emulate-vision-deficiencies.md
+
           - text: Simulate reduced motion
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/reduced-motion-simulation
+            url: ../accessibility/reduced-motion-simulation.md
 
 # =============================================================================
 # Card r2c2
@@ -137,23 +149,31 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Run JavaScript in the Console
-            url: /microsoft-edge/devtools-guide-chromium/console/console-javascript
+            url: ../console/console-javascript.md
+
           - text: Fix JavaScript errors that are reported in the Console
-            url: /microsoft-edge/devtools-guide-chromium/console/console-debug-javascript
+            url: ../console/console-debug-javascript.md
+
           - text: Sources tool overview
-            url: /microsoft-edge/devtools-guide-chromium/sources/index
+            url: ../sources/index.md
+
           - text: JavaScript debugging features
-            url: /microsoft-edge/devtools-guide-chromium/javascript/reference
+            url: ../javascript/reference.md
+
           - text: Find unused JavaScript and CSS code with the Coverage tool
-            url: /microsoft-edge/devtools-guide-chromium/coverage/index
+            url: ../coverage/index.md
+
           - text: Fix memory problems
-            url: /microsoft-edge/devtools-guide-chromium/memory-problems/index
+            url: ../memory-problems/index.md
+
           - text: Debug DOM memory leaks with the Detached Elements tool
-            url: /microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks
+            url: ../memory-problems/dom-leaks.md
+
           - text: Understand security issues using the Security tool
-            url: /microsoft-edge/devtools-guide-chromium/security/index
+            url: ../security/index.md
+
           - text: Troubleshooting common performance issues
-            url: /microsoft-edge/devtools-guide-chromium/rendering-tools/index
+            url: ../rendering-tools/index.md
 
 # =============================================================================
 # Card r2c3
@@ -162,18 +182,21 @@ landingContent:
       - linkListType: reference
         links:
           - text: Keyboard shortcuts
-            url: /microsoft-edge/devtools-guide-chromium/shortcuts/index
+            url: ../shortcuts/index.md
+
           - text: CSS features reference
-            url: /microsoft-edge/devtools-guide-chromium/css/reference
+            url: ../css/reference.md
+
           - text: Console features reference
-            url: /microsoft-edge/devtools-guide-chromium/console/reference
+            url: ../console/reference.md
+
           - text: Console object API Reference
-            url: /microsoft-edge/devtools-guide-chromium/console/api
+            url: ../console/api.md
       - linkListType: how-to-guide
         links:
           - text: Performance features reference
-            url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference
+            url: ../evaluate-performance/reference.md
       - linkListType: sample
         links:
           - text: Sample code for DevTools
-            url: /microsoft-edge/devtools-guide-chromium/sample-code/sample-code
+            url: ../sample-code/sample-code.md
