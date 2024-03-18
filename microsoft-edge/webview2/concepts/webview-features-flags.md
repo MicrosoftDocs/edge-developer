@@ -58,7 +58,7 @@ See also Globals:
 
 The following are some of the flags we've seen used.
 
-| Feature | Details |
+| Flag | Details |
 |:--- |:--- |
 | `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
 | `allow-file-access-from-files` | Allows reading `file://` URIs from other `file://` URIs. |
@@ -109,7 +109,7 @@ The following are some of the flags we've seen used.
 | `msEdgeDevToolsWdpRemoteDebugging` | Enables remote debugging. |
 | `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
 | `msEnhancedTrackingPreventionEnabled` | Enables native privacy protection features, such as blocking cookies and web requests that reside in domains that are known to be tracking domains. |
-| `msFloatyMode` | Use this to disable Floaty feature, as WebView doesn't support to browser retention experiments. |
+| `msFloatyMode` | Use this flag to disable the Floaty feature, because WebView doesn't support browser retention experiments. |
 | `msFloatyShouldHonorIndiaHoldout` | Use this to disable Floaty India holdout feature that enables if the user is part of control of the India holdout group, as WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
