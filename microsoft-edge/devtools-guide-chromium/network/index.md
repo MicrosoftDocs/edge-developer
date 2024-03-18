@@ -254,7 +254,7 @@ The **Filter** text box supports many different types of filtering.
 
 1. Type `png` into the **Filter** text box.  Only the files that contain the text `png` are shown.  In this case the only files that match the filter are the PNG images.
 
-1. Type `/.*\.[cj]s+$/`, which is a JavaScript regular expression.  DevTools filters out any resource with a filename that doesn't end with a `j` or a `c` followed by 1 or more `s` characters.
+1. Type `/.*\.[cj]s+$/`, which is a JavaScript regular expression.  DevTools filters out any resource with a file name that doesn't end with a `j` or a `c` followed by 1 or more `s` characters.
 
 1. Type `-main.css`.  DevTools filters out `main.css`.  If any file matches that pattern, it's also filtered out.
 
