@@ -10,6 +10,25 @@ ms.date: 03/18/2024
 ---
 # About Release Notes for the WebView2 SDK
 
+<!--
+this is the meta relnotes page
+existing announcement links don't go to this page
+-->
+
+The WebView2 team updates the WebView2 SDK on a four-week cadence.  This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
+
+You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
+
+Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](../webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md).
+
+Release Notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
+
+
+<!-- ====================================================================== -->
+## Phases of adding APIs
+
+![Phases of adding APIs](./index-images/phases-of-adding-apis.png)
+
 The WebView2 team updates the WebView2 SDK on a four-week cadence.  This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
 You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
@@ -17,8 +36,8 @@ You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages
 Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](../webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md).
 
 
-<!-- ------------------------------ -->
-#### Updating the Runtime and SDK
+<!-- ====================================================================== -->
+## Updating the Runtime and SDK
 
 WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.  Starting with the February 2023 release, the update requirement for each bug fix is indicated as follows:
 
@@ -37,8 +56,8 @@ WebView2 shares code and binaries with the Microsoft Edge browser, and is releas
 *  To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
 
 
-<!-- ------------------------------ -->
-#### Recommended browser channel and Runtime
+<!-- ====================================================================== -->
+## Recommended browser channel and Runtime
 
 Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends the following:
 
@@ -49,8 +68,8 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 For more information, see [Matching the Runtime version with the SDK version](../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version).
 
 
-<!-- ------------------------------ -->
-#### Minimum version of the browser or Runtime to load WebView2
+<!-- ====================================================================== -->
+## Minimum version of the browser or Runtime to load WebView2
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
@@ -71,8 +90,8 @@ Async methods:
 -->
 
 
-<!-- ------------------------------ -->
-#### Experimental APIs, Prerelease SDKs, and Release SDKs
+<!-- ====================================================================== -->
+## Experimental APIs, Prerelease SDKs, and Release SDKs
 
 New APIs are added in phases, as follows:
 1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.
@@ -88,8 +107,6 @@ For more information, see [Phases of introducing APIs](../concepts/versioning.md
 APIs are Experimental or Stable
 SDKs/packages are Prerelease or Release
 -->
-
-The Release Notes sections cover either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
 
 
 <!-- ====================================================================== -->
