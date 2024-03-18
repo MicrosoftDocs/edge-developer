@@ -179,12 +179,6 @@ Old redirects (to /archive/)
         "redirect_document_id": false
       },
       {
-        /* attempted anchor redirect, ignored, not mentioned in https://review.learn.microsoft.com/help/platform/redirect-articles */
-        "source_path": "microsoft-edge/webview2/release-notes.md#10236546",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/1-0-2365-46",
-        "redirect_document_id": false
-      },
-      {
         "source_path": "microsoft-edge/webview2/release-notes.md",
         "redirect_url": "/microsoft-edge/webview2/release-notes/",
         "redirect_document_id": false
