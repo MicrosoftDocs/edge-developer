@@ -35,7 +35,7 @@ New APIs are introduced in phases as follows:
 | _Stable in a Release SDK_ | 3. Then the Stable API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK. |
 
 ![Diagram of phases of introducing new APIs](./versioning-images/phases-of-adding-apis.png)
-<!-- .png is used by webview2/release-notes/index.md and webview2/concepts/versioning.md -->
+<!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
 
 <!-- terminology:
 APIs are Experimental or Stable
@@ -99,7 +99,7 @@ On a development machine, the client must have either the Microsoft Edge preview
 <!-- ====================================================================== -->
 ## Forward compatibility of APIs
 
-The WebView2 _release_ SDK has been forward-compatible ever since version 1 (that is, Release SDK 1.0.622.22, covered by [Release Notes for WebView2 Release SDK 1.0.622.22](../release-notes/1-0-622-22.md)).  You can update your WebView2 app to use the latest APIs from the most recent Release version of the SDK.  Your app will continue to work on clients because clients automatically have the latest WebView2 Evergreen Runtime.
+The WebView2 _release_ SDK has been forward-compatible ever since version 1 (Release SDK [1.0.622.22](../release-notes/release-notes-archive.md#1062222) in _Archived Release Notes for the WebView2 SDK_).  You can update your WebView2 app to use the latest APIs from the most recent Release version of the SDK.  Your app will continue to work on clients because clients automatically have the latest WebView2 Evergreen Runtime.
 
 The WebView2 APIs in a Release SDK package are stable and forward-compatible.  A WebView2 API works when using a WebView2 Runtime that has an equal or higher build number as the SDK build number in which the API was introduced.  The build number is the third part of the four-part version number for the Webview2 SDK, and of the four-part version number for Microsoft Edge and the WebView2 Runtime.
 

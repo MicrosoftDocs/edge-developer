@@ -1447,7 +1447,7 @@
               displayName: what's new, announcements
 
             - name: Archived Release Notes for the WebView2 SDK  # new page
-              href: webview2/release-notes/release-notes-archive.md
+              href: webview2/release-notes/archive.md
               displayName: what's new, announcements
 
 
