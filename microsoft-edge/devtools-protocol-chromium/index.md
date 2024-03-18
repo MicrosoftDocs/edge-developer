@@ -189,7 +189,7 @@ None.
         "devtoolsFrontendUrl": "https://devtools.azureedge.net/serve_file/@d6d5aea402510697e05382293a4c6d3da0183736/inspector.html?wss=172.17.75.195:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE",
         "faviconUrl": "https://learn.microsoft.com/favicon.ico",
         "id": "2AE2506D9FDB1C541FB36DD908ED51DE",
-        "title": "Remotely debug Windows devices - Microsoft Edge Development | Microsoft Learn",
+        "title": "Remotely debug Windows devices - Microsoft Edge Developer documentation | Microsoft Learn",
         "type": "page",
         "url": "https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
         "webSocketDebuggerUrl": "wss://172.17.75.195:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE"
@@ -226,7 +226,7 @@ None.
     "devtoolsFrontendUrl": "/msedge/23416/devtools/inspector.html?wss=localhost:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE",
     "faviconUrl": "https://learn.microsoft.com/favicon.ico",
     "id": "2AE2506D9FDB1C541FB36DD908ED51DE",
-    "title": "Remotely debug Windows devices - Microsoft Edge Development | Microsoft Learn",
+    "title": "Remotely debug Windows devices - Microsoft Edge Developer documentation | Microsoft Learn",
     "type": "page",
     "url": "https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
     "webSocketDebuggerUrl": "wss://localhost:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE"

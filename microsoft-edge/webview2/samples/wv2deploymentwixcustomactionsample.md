@@ -164,7 +164,7 @@ If you want to package the Evergreen WebView2 Runtime Standalone Installer with 
 
 1. Comment out other `<Binary>` and `<CustomAction>` elements under `Step 4`.
 
-1. If you're targeting non-X64 devices, you may also want to edit the `MicrosoftEdgeWebView2RuntimeInstallerX64` filename to reflect the correct architecture.
+1. If you're targeting non-X64 devices, you may also want to edit the `MicrosoftEdgeWebView2RuntimeInstallerX64` file name to reflect the correct architecture.
 
 1. Under `<!-- Step 5: Config execute sequence of custom action -->`, uncomment the `<Custom Action='InvokeStandalone' ...>` element below `<!-- [Package Standalone Installer] ...-->`.
 
