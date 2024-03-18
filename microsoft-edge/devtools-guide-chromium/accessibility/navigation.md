@@ -249,7 +249,7 @@ With focus on the **Computed** tab, press **Tab** to move focus inside and explo
 
 #### Explore all computed styles
 
-Press **Tab** until you reach the collection of computed styles.  Computed styles are presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the filename of the stylesheet that contains the selector, and the line number for the selector.
+Press **Tab** until you reach the collection of computed styles.  Computed styles are presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the file name of the stylesheet that contains the selector, and the line number for the selector.
 
 **Known issues**
 
