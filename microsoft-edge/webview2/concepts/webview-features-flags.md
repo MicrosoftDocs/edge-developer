@@ -58,7 +58,7 @@ See also Globals:
 
 The following are some of the flags we've seen used.
 
-| Flag | Details |
+| Flag | Description |
 |:--- |:--- |
 | `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
 | `allow-file-access-from-files` | Allows reading `file://` URIs from other `file://` URIs. |
