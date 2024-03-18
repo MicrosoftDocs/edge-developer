@@ -1438,17 +1438,17 @@
 # relnotes
         - name: Release Notes
           items:
-            - name: About Release Notes for the WebView2 SDK  # new page
+            - name: About  # new page
               href: webview2/release-notes/about.md
-              displayName: what's new, announcements
+              displayName: About Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
-            - name: Release Notes for the WebView2 SDK  # recent months; preserve existing urls
-              href: webview2/release-notes/index.md
-              displayName: what's new, announcements
+            - name: Release Notes
+              href: webview2/release-notes/index.md  # new location & file name, instead of at wv2 root
+              displayName: Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
-            - name: Archived Release Notes for the WebView2 SDK  # new page
+            - name: Archived Release Notes  # new page
               href: webview2/release-notes/archive.md
-              displayName: what's new, announcements
+              displayName: Archived Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
 
 # end of relnotes
