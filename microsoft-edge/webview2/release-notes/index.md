@@ -10,20 +10,13 @@ ms.date: 03/18/2024
 ---
 # Release Notes for the WebView2 SDK
 
-<!--
-*  this is the primary relnotes page, covers last ~5 months' releases
-*  existing announcement links go to anchors in this page (keep those URLs working)
-*  covers ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers:
-      Feb 2024
-      Jan 2024
-      Dec 2023
-      Nov 2023
-      Oct 2023
+<!-- covers ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers:
+Feb 2024
+Jan 2024
+Dec 2023
+Nov 2023
+Oct 2023
 -->
-
-Release Notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
-
-<!-- the below content: paste existing Raw listing but without Meta sections -->
 
 
 The following sections cover either a Release SDK package (1.0.####.##) or a Prerelease SDK package (1.0.####-prerelease).
