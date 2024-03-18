@@ -73,7 +73,7 @@ To create an `HTML file` to find your geolocation, complete following the action
    </html>
    ```
 
-1. Save the `.html` file with the filename `geolocation.html`.
+1. Save the `.html` file with the file name `geolocation.html`.
 
 1. Open Microsoft Edge.
 
