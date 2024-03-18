@@ -412,7 +412,7 @@ To set the user agent string:
    Or, to enter your own user agent string, enter the string in the **Enter a custom user agent** text box:
 
    ![Setting a custom user agent string](./index-images/device-toolbar-network-conditions-macos.png)
-<!-- todo: remove "macos" from filename, or show such a user agent string -->
+<!-- todo: remove "macos" from file name, or show such a user agent string -->
 
 See also:
 * [Override the user agent string](override-user-agent.md)

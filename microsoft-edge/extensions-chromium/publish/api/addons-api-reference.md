@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge Add-ons API Reference
+title: REST API Reference for Microsoft Edge Add-ons
 description: The Add-ons API Reference, for REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons store.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,11 +8,11 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/07/2022
 ---
-# Microsoft Edge Add-ons API Reference
+# REST API Reference for Microsoft Edge Add-ons
 
 This article is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons store.
 
-For an overview, see [Using the Microsoft Edge Add-ons API](using-addons-api.md).
+For an overview, see [Using the Microsoft Edge Add-ons REST API](using-addons-api.md).
 
 
 <!-- ====================================================================== -->
@@ -84,7 +84,7 @@ Gets the status of the package upload.
 
 | URI parameter | Description |
 |---|---|
-| `operationID` | Required.  The operation ID of the upload request submitted in the previous step.  This information is available in the response header.
+| `operationID` | Required.  The operation ID of the upload request submitted in the previous step.  This information is available in the response header. |
 
 ###### Request headers
 
@@ -397,7 +397,7 @@ Here's a list of common error codes and possible reasons.  For a full list, see 
 |---|---|---|
 | 400 Bad Request | The server didn't understand the request. | There's no package (zip file) in the body.  Or, `Content-Type` header is missing or its value is incorrect. |
 | 401 Unauthorized | The request page needs an authorization. | The auth token is missing, expired, or not valid. |
-| 404 Not Found | The server can't find the requested page. | The specified `productID` or `operationID` doesn't have a  valid GUID, isn't valid, or doesn't belong to the developer who is making the request. |
+| 404 Not Found | The server can't find the requested page. | The specified `productID` or `operationID` doesn't have a valid GUID, isn't valid, or doesn't belong to the developer who is making the request. |
 | 408 Request Timeout | The request took longer than the server was prepared to wait. | There was a timeout while uploading a package. |
 | 429 Too many requests | Too many requests were sent by the user. | Too many requests were sent and they got throttled. |
 
@@ -411,4 +411,4 @@ Here's a list of common error codes and possible reasons.  For a full list, see 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Using the Microsoft Edge Add-ons API](using-addons-api.md)
+*  [Using the Microsoft Edge Add-ons REST API](using-addons-api.md)

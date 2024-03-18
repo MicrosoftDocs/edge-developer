@@ -111,7 +111,7 @@ The default user data folder (UDF) location varies per platform.
 <!--
 **What is the default UDF location?**
 -->
-On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The filename of the UDF is the executable (`exe`) path of your app + `.WebView2`.
+On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The file name of the UDF is the executable (`exe`) path of your app + `.WebView2`.
 
 For example, if you ran `D:\WebView2App\WebView2.exe`, a UDF folder would be created: `D:\WebView2App\WebView2.exe.WebView2\`.  As another example: `WebView2APISample.exe.WebView2\`.
 
@@ -134,7 +134,7 @@ Win32 MSIX packaging is a standalone `.exe`.
 <!--
 **What is the default UDF location?**
 -->
-On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The filename of the UDF is the executable (`exe`) path of your app + `.WebView2`.
+On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The file name of the UDF is the executable (`exe`) path of your app + `.WebView2`.
 
 For example, if you ran `D:\WebView2App\WebView2.exe`, a UDF folder would be created: `D:\WebView2App\WebView2.exe.WebView2\`.  As another example: `WebView2APISample.exe.WebView2\`.
 

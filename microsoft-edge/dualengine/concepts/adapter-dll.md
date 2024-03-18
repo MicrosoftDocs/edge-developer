@@ -19,7 +19,7 @@ To have Internet Explorer successfully load your DLL, do the following.
 <!-- ====================================================================== -->
 ## Unlock the Limited Access Feature
 
-The DualEngine API is a Limited Access Feature (LAF); that is, a feature that needs to be unlocked before it can be used.  For more information, see [LimitedAccessFeatures Class](/uwp/api/windows.applicationmodel.limitedaccessfeatures).
+The DualEngine API is a Limited Access Feature (LAF); that is, a feature that needs to be unlocked before it can be used. For more information about implementation, see [LimitedAccessFeatures Class](/uwp/api/windows.applicationmodel.limitedaccessfeatures). To request an unlock token, contact [Microsoft Support](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d15d3aa2-0512-7cb8-1df9-86221f5cbfde).
 
 The DualEngine API is not a typical LAF, in that `Windows.ApplicationModel.TryUnlockFeature` is not used to unlock the feature.  This is because LAF typically uses the application identity of the calling process to grant access, and as a plugin DLL, this will always be Internet Explorer.  Therefore, to unlock the API, you need to call [DualEngineSessionFactory::TryUnlockFeature](../reference/dualenginesessionfactory.md#tryunlockfeature).
 
