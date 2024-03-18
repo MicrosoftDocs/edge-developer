@@ -168,7 +168,7 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
    ![The 'Add New Item' window, expanded to 'Visual C# Items' > 'Windows Forms', selecting 'Form (Windows Forms)'](./winforms-images/add-new-item-form-windows-forms.png)
 
-   The project now has an additional form, with filename `Form2.cs`, shown in the Form Designer and in Solution Explorer:
+   The project now has an additional form, with file name `Form2.cs`, shown in the Form Designer and in Solution Explorer:
 
    ![The added form, Form2.cs, in the Form Designer and in Solution Explorer](./winforms-images/winforms-added-form2.png)
 

@@ -280,7 +280,7 @@ To open an `.html` file and edit it:
 
    If editing isn't enabled, click the **Allow** button to grant read/write access to the folder by doing the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) above.
 
-   The change is displayed in the **Changes** tool in the Drawer, and an asterisk is added to the filename in the **index.html** tab in the **Sources** tool:
+   The change is displayed in the **Changes** tool in the Drawer, and an asterisk is added to the file name in the **index.html** tab in the **Sources** tool:
 
    ![The modified demo-to-do page before saving changes](./sample-code-images/modified-demo-to-do-before-save.png)
 
