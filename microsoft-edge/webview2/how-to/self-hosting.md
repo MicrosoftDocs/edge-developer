@@ -165,10 +165,11 @@ To diagnose or troubleshoot potential prerelease WebView2 Runtime issues that ar
 <!-- ------------------------------ -->
 #### Confirm that your app is running a preview channel of WebView2
 
-1. Download [WebView2 Utilities](https://github.com/david-risney/WebView2Utilities),<!-- todo: update the link to point to the new repo --> a toolkit that helps with debugging Microsoft Edge WebView2 apps.  You can use the [ClickOnce Install](https://david-risney.github.io/WebView2Utilities/install/WebView2Utilities.application) on the page.
+1. Open Task Manager
 
-1. In the left-hand pane, select the executable of the app.  Make sure the Runtime channel that's indicated is a preview channel (Canary, Dev, or Beta).
+1. Find your application's process, then find the Edge WebView2 child process
 
+1. Right click on the Edge WebView2 process, and then `Open file location`. The folder will be version number of the runtime.
 
 <!-- ------------------------------ -->
 #### Switch to the Stable WebView2 Runtime channel to see if the issue reproduces
@@ -187,11 +188,9 @@ For `BrowserExecutableFolder` options, set the following:
 
 
 <!-- ------------------------------ -->
-#### Collect logs (reports)
+#### Collect diagnostics data
 
-Using the WebView2 Utilities, you can collect logs for the WebView2 Runtime and the app, as follows:
-
-1. Select the app in the left-hand pane, and then click the **Create Report** button.
+1. Refer to [Gathering Diagnostics and Logs](https://github.com/MicrosoftEdge/WebView2Feedback/tree/main/diagnostics) on how to gather diagnostic data. Crash dumps and ETW traces are the common ones we require.
 
 1. You can then report the issue to the [Microsoft Edge WebView2 feedback repository](https://github.com/MicrosoftEdge/WebView2Feedback), and include the log file.
 
