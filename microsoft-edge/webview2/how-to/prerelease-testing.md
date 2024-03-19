@@ -105,8 +105,7 @@ Replace `WebView2APISample.exe` with your own app executable name or the applica
 Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`  
 Value: `1`
 
-Note that the environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.<!-- todo: confirm this line, copied from self-hosting.md -->
-
+Note that the environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.
 
 ##### [Group policy](#tab/group-policy)
 
@@ -162,9 +161,6 @@ In your app's code, periodically poll the following API endpoints to get and dep
 | Beta | [https://edgeupdates.microsoft.com/api/products/beta](https://edgeupdates.microsoft.com/api/products/beta) |
 
 The Edge Dev and Edge Beta channels contain MSI Links.  The Edge Canary channel has a separate MSI link.
-
-<!-- todo: link to more info about how to use API to do this -->
-
 
 <!-- ====================================================================== -->
 ## How to do automated testing
