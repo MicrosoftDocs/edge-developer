@@ -140,7 +140,7 @@ Pass the path to the browser executable folder during environment creation with 
 * [CoreWebView2CreationProperties Class](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.winforms.corewebview2creationproperties)
 
 WinRT:
-<!--todo Add information here -->
+<!--todo: Unsure if there's a WinRT api, add information here -->
 
 Win32:
 * [CreateCoreWebView2EnvironmentWithOptions](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?#createcorewebview2environmentwithoptions)
