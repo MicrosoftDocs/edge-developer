@@ -57,7 +57,7 @@ To selfhost, you would reverse the channel search order, so that the loader look
 Edge Canary -> Edge Dev -> Edge Beta -> WebView2 Runtime (Stable)
 ```
 
-The channel search kind can be set per app through an API,<!--todo: confirm, b/c there was no API section below--> a registry key, an environment variable, or a group policy.
+The channel search kind can be set per app through an API, a registry key, an environment variable, or a group policy.
 
 The value `1` indicates reversed search order; that is, from least-stable (Edge Canary) to most-stable.
 
@@ -152,8 +152,6 @@ In your app's code, periodically poll the following API endpoints to get and dep
 | Beta | [https://edgeupdates.microsoft.com/api/products/beta](https://edgeupdates.microsoft.com/api/products/beta) |
 
 The Edge Dev and Edge Beta channels contain MSI Links.  The Edge Canary channel has a separate MSI link.
-
-<!-- todo: link to more info about how to use API to do this -->
 
 
 <!-- ====================================================================== -->
