@@ -78,7 +78,7 @@ The following are some of the commonly useful flags that are being used by WebVi
 | `disk-cache-size` | Forces the maximum disk space to be used by the disk cache, in bytes. |
 | `do-not-de-elevate` | Prevents de-elevation of the WebView2 on launch.  Used after de-elevating, to prevent infinite loops. |
 | `edge-webview-debugging-script` | Runs `PostWebMessage` script asynchronously. |
-| `edge-webview-enable-mojo-ipcz` | Enables MojoIpcz (mojo-ipcz) for apps that use WebView2.  See [todo]. |
+| `edge-webview-enable-mojo-ipcz` | Enables MojoIpcz (mojo-ipcz) for apps that use WebView2. |
 | `edge-webview-foreground-boost-opt-in` | Opts-in to foreground boost. |
 | `edge-webview-foreground-boost-opt-out` | Opts-out of foreground boost. |
 | `edge-webview-force-personal-context` | Forces Edge WebView browser processes to run in WIP personal context. |
@@ -110,7 +110,7 @@ The following are some of the commonly useful flags that are being used by WebVi
 | `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
 | `msEnhancedTrackingPreventionEnabled` | Enables native privacy protection features, such as blocking cookies and web requests that reside in domains that are known to be tracking domains. |
 | `msFloatyMode` | If `false`, disables the Floaty feature.  Use this flag to disable the Floaty feature, because WebView doesn't support browser retention experiments. |
-| `msFloatyShouldHonorIndiaHoldout` | If `true`, honors the India holdout group.  Use this flag, set to `false`, to disable the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention<!--todo: define--> experiments. |
+| `msFloatyShouldHonorIndiaHoldout` | If `true`, honors the India holdout group.  Use this flag, set to `false`, to disable the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
