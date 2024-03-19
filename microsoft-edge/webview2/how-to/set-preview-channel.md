@@ -14,7 +14,7 @@ ms.date: 02/09/2024
 -->
 To test new APIs and features, you would need to switch to a preview channel. The WebView2 Evergreen Runtime updates often to add new APIs and functionalities.
 
-**Why Use a Preview Channel?** The Evergreen WebView2 Runtime lacks the most recent experimental WebView2 APIs. To execute your WebView2 code with these experimental APIs, your app would need to run using WebView2 in an Edge preview channel (Beta, Dev, or Canary). We provide multiple methods to achieve this, and the Canary channel is recommended as it offers the latest experimental APIs.
+**Why use a preview channel of WebView2?** The Evergreen WebView2 Runtime lacks the most recent experimental WebView2 APIs. To run your WebView2 code with these experimental APIs, your app would need to use WebView2 in an Edge preview channel (Beta, Dev, or Canary). We provide multiple methods to achieve this, and the Canary channel is recommended as it offers the latest experimental APIs.
 
 Interplay Between Prerelease SDK and Preview Channel:
 
@@ -24,7 +24,7 @@ Interplay Between Prerelease SDK and Preview Channel:
 
 For a deeper understanding of how SDK versions interact with the WebView2 Runtime and Microsoft Edge preview channels, refer to [Understand the different WebView2 SDK versions](../concepts/versioning.md).
 
-At the same time some of these updates could potentially break your WebView2 app, when the changes are shipped in the Evergreen WebView2 Runtime. We recommend that you test the experimental APIs ahead of time and ensure your app's forward-compatibility, by following these best practices:
+**Forward-compatibility testing using the preview channel** Some of these updates could potentially break your WebView2 app. We recommend that you test the experimental APIs ahead of time and ensure your app's forward-compatibility by following the best practices:
 
 * [Prerelease testing using preview channels](./prerelease-testing.md)
 * [Self-hosting by deploying preview channels](./self-hosting.md)
@@ -174,7 +174,7 @@ Value: `<path to desired Microsoft Edge preview channel>`
 
 Do either of the following:
 
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  Click any of the three **Download Windows Policy** links. Refer to [Configure Microsoft Edge policy settings on Windows devices](https://learn.microsoft.com/en-us/deployedge/configure-microsoft-edge) for more information.
+* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](https://learn.microsoft.com/en-us/deployedge/configure-microsoft-edge) for more information.
 
 * Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/administrative-templates-configure-edge) for more information.
 
@@ -270,7 +270,7 @@ Set the `ReleaseChannel` policy.
 
 Do either of the following:
 
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  Click any of the three **Download Windows Policy** links. Refer to [Configure Microsoft Edge policy settings on Windows devices](https://learn.microsoft.com/en-us/deployedge/configure-microsoft-edge) for more information.
+* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](https://learn.microsoft.com/en-us/deployedge/configure-microsoft-edge) for more information.
 
 * Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/administrative-templates-configure-edge) for more information.
 
