@@ -254,7 +254,8 @@ The following APIs have been promoted to Stable and are now included in this Rel
 #### Bug fixes
 
 ###### SDK-only
-* The .NET assemblies WinForms and WPF are now shipped with optimization enabled.
+* The .NET assemblies WinForms and WPF are now shipped with optimization enabled. ([Issue #4409](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4409))
+
 
 <!-- end of Mar. 2024 Release SDK -->
 
