@@ -96,7 +96,7 @@ Async methods:
 <!-- ====================================================================== -->
 ## See also
 
-* [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md)
-* [Contacting the Microsoft Edge WebView2 team](../contact.md)
 * [Release Notes for the WebView2 SDK](./index.md)
 * [Archived Release Notes for the WebView2 SDK](./archive.md)
+* [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md)
+* [Contacting the Microsoft Edge WebView2 team](../contact.md)

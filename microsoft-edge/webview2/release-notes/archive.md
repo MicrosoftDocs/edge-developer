@@ -10,6 +10,8 @@ ms.date: 03/20/2024
 ---
 # Archived Release Notes for the WebView2 SDK
 
+These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK, for older releases.
+
 
 <!-- ====================================================================== -->
 ## 1.0.2045.28
@@ -4544,7 +4546,7 @@ Initial developer preview release.
 <!-- ====================================================================== -->
 ## See also
 
-* [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
-* [Contacting the Microsoft Edge WebView2 team](../contact.md)
 * [About Release Notes for the WebView2 SDK](./about.md)
 * [Release Notes for the WebView2 SDK](./index.md)
+* [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
+* [Contacting the Microsoft Edge WebView2 team](../contact.md)

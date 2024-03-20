@@ -10,16 +10,7 @@ ms.date: 03/20/2024
 ---
 # Release Notes for the WebView2 SDK
 
-These Release Notes provide information about new features and non-security updates that are included in the Microsoft Edge Stable Channel.
-<!-- todo: 
-is that true for the WebView2 Prerelease SDK, or only for the WebView2 Release SDK?
-mention "WebView2", "Runtime", & "SDK"?
--->
-
-See also:
-* [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security)
-* [Archived release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-archive-stable-channel)
-* [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels)
+These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK.
 
 
 <!-- this webpage covers the most recent ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers:
@@ -1312,7 +1303,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## See also
 
-* [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
-* [Contacting the Microsoft Edge WebView2 team](../contact.md)
 * [About Release Notes for the WebView2 SDK](./about.md)
 * [Archived Release Notes for the WebView2 SDK](./archive.md)
+* [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
+* [Contacting the Microsoft Edge WebView2 team](../contact.md)
