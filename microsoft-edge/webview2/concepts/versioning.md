@@ -100,7 +100,7 @@ On a development machine, the client must have either the Microsoft Edge preview
 ## Forward compatibility of APIs
 
 The WebView2 _release_ SDK has been forward-compatible ever since version 1 (that is, SDK version [1.0.622.22](../release-notes.md#1062222)).
-You can update your WebView2 app to use the latest APIs from the most recent Release version of the SDK.  Your app will continue to work on clients because clients automatically have the latest WebView2 Evergreen Runtime.
+You can update your WebView2 app to use the latest APIs from the most recent Release version of the SDK.  Your app will continue to work on clients because clients automatically have the latest Evergreen WebView2 Runtime.
 
 The WebView2 APIs in a Release SDK package are stable and forward-compatible.  A WebView2 API works when using a WebView2 Runtime that has an equal or higher build number as the SDK build number in which the API was introduced.  The build number is the third part of the four-part version number for the Webview2 SDK, and of the four-part version number for Microsoft Edge and the WebView2 Runtime.
 
@@ -128,7 +128,7 @@ To try out new forthcoming features that are in development, use _Experimental_ 
 
 The Experimental APIs in a WebView2 Prerelease SDK package aren't guaranteed to be forward-compatible, and might be removed in future Runtime updates.
 
-For full support of Experimental APIs, use a Microsoft Edge preview channel, not the WebView2 Evergreen Runtime.  When a Prerelease version of the WebView2 SDK is initially made available, that SDK only works with Microsoft Edge Canary.  Soon after that, the Prerelease SDK also works with the Beta and Dev channels.
+For full support of Experimental APIs, use a Microsoft Edge preview channel, not the Evergreen WebView2 Runtime.  When a Prerelease version of the WebView2 SDK is initially made available, that SDK only works with Microsoft Edge Canary.  Soon after that, the Prerelease SDK also works with the Beta and Dev channels.
 
 Use a Prerelease SDK to try out new, Experimental APIs early and provide feedback before the Experimental APIs are promoted to become Stable, forward-compatible APIs.
 
