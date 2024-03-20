@@ -111,9 +111,9 @@ Set the `ChannelSearchKind` policy.
 
 Do either of the following:
 
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  Click any of the three **Download Windows Policy** links. Refer to [Configure Microsoft Edge policy settings on Windows devices](https://learn.microsoft.com/en-us/deployedge/configure-microsoft-edge) for more information.
+* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  Click any of the three **Download Windows Policy** links. Refer to [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge) for more information.
 
-* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/administrative-templates-configure-edge) for more information.
+* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
 
 ---
 
@@ -132,18 +132,18 @@ If you set the browser executable folder to a specific preview channel of Micros
 Pass the path to the browser executable folder during environment creation with the following APIs
 
 .NET (WPF):
-* [CreationProperties Property](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties)
-* [CoreWebView2CreationProperties Class](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties)
+* [CreationProperties Property](/dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties)
+* [CoreWebView2CreationProperties Class](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties)
 
 .NET (WinForms):
-* [CreationProperties Property](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.winforms.webview2.creationproperties)
-* [CoreWebView2CreationProperties Class](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.winforms.corewebview2creationproperties)
+* [CreationProperties Property](/dotnet/api/microsoft.web.webview2.winforms.webview2.creationproperties)
+* [CoreWebView2CreationProperties Class](/dotnet/api/microsoft.web.webview2.winforms.corewebview2creationproperties)
 
 WinRT:
 <!--todo: Unsure if there's a WinRT api, add information here -->
 
 Win32:
-* [CreateCoreWebView2EnvironmentWithOptions](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/webview2-idl?#createcorewebview2environmentwithoptions)
+* [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl?#createcorewebview2environmentwithoptions)
 
 
 ##### [Registry key](#tab/registry-key)
@@ -174,9 +174,9 @@ Value: `<path to desired Microsoft Edge preview channel>`
 
 Do either of the following:
 
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](https://learn.microsoft.com/en-us/deployedge/configure-microsoft-edge) for more information.
+* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge) for more information.
 
-* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/administrative-templates-configure-edge) for more information.
+* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
 
 ---
 
@@ -270,8 +270,8 @@ Set the `ReleaseChannel` policy.
 
 Do either of the following:
 
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](https://learn.microsoft.com/en-us/deployedge/configure-microsoft-edge) for more information.
+* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge) for more information.
 
-* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/administrative-templates-configure-edge) for more information.
+* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
 
 ---
