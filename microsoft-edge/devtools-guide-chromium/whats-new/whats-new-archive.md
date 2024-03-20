@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 01/25/2024
+ms.date: 03/20/2024
 ---
 # What's New in DevTools archive
 
@@ -14,6 +14,7 @@ The following What's New entries cover older releases.
 
 <!-- maintenance notes: adjust placement and indent in toc.yml too -->
 
+* [What's New in DevTools (Microsoft Edge 113)](2023/05/devtools-113.md)
 * [What's New in DevTools (Microsoft Edge 112)](2023/04/devtools-112.md)
 * [What's New in DevTools (Microsoft Edge 111)](2023/03/devtools-111.md)
 * [What's New in DevTools (Microsoft Edge 110)](2023/02/devtools-110.md)
