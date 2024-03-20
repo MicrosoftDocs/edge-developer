@@ -201,9 +201,9 @@ Value: `<path to desired Microsoft Edge preview channel>`
 
 Do either of the following:
 
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge) for more information.
+* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  See [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge).
 
-* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
+* Use the built-in policy on Intune.  See [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge).
 
 ---
 
@@ -212,7 +212,7 @@ Do either of the following:
 ## FAQs
 
 
-<!-- 3. Environment Variable ============================================== -->
+<!-- ------------------------------ -->
 #### How to use an environment variable
 
 1. In the Windows search bar, enter "environment", and then select **Edit the system environment variables**:

@@ -104,14 +104,18 @@ Microsoft Edge WebDriver launches your WebView2 app and automatically attaches t
 
 *  The "attach" approach: In other scenarios, it's appropriate to attach Microsoft Edge WebDriver to a running WebView2 instance.  You launch your app outside of Microsoft Edge WebDriver, and then attach Microsoft Edge WebDriver to a running WebView2 instance.  This "attach" approach is for a WebView2 app that's not compatible with the "launch" approach.
 
-### Approach 1: Letting Microsoft Edge WebDriver launch your WebView2 app
+
+<!-- ------------------------------ -->
+#### Approach 1: Letting Microsoft Edge WebDriver launch your WebView2 app
 <!-- preferred phrase -->
 
 If you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch, then you can use the "launch" approach; use [Step 4a: Letting Microsoft Edge WebDriver launch your WebView2 app](#step-4a-letting-microsoft-edge-webdriver-launch-your-webview2-app).
 
 In this scenario, there's one WebView2 instance, and it's available upon launch, without needing to navigate through any native UI.
 
-### Approach 2: Attaching Microsoft Edge WebDriver to a running WebView2 app
+
+<!-- ------------------------------ -->
+#### Approach 2: Attaching Microsoft Edge WebDriver to a running WebView2 app
 <!-- preferred phrase -->
 
 If you have any situation that doesn't fit the "launch" scenario above, you should attach Microsoft Edge WebDriver to a running WebView2 instance (instead of letting Microsoft Edge WebDriver handle the WebView2 launch); use [Step 4b: Attaching Microsoft Edge WebDriver to a running WebView2 app](#step-4b-attaching-microsoft-edge-webdriver-to-a-running-webview2-app).
@@ -202,7 +206,9 @@ Microsoft Edge WebDriver doesn't handle native UI automation, but here are some 
 
 In addition to ensuring the WebView2 instance is activated, you need to set its `--remote-debugging-port` command-line parameter.  We'll do this in the steps below.  Microsoft Edge WebDriver will use this remote debugging port to connect to your WebView2 instance.
 
-### Launching the WebView2 app with remote debugging enabled
+
+<!-- ------------------------------ -->
+#### Launching the WebView2 app with remote debugging enabled
 
 The next step happens when you're coding your app.  You need to provide this extra command-line parameter when you're instantiating your WebView2 control.  Enable remote debugging, as follows.
 
@@ -212,7 +218,9 @@ The next step happens when you're coding your app.  You need to provide this ext
 
 At this point, your app is running and its `--remote-debugging-port` command-line parameter has been set.  Next, we'll attach Microsoft Edge WebDriver to the launched WebView2 app.
 
-### Attaching Microsoft Edge WebDriver to the launched WebView2 app
+
+<!-- ------------------------------ -->
+#### Attaching Microsoft Edge WebDriver to the launched WebView2 app
 
 1. Use the `EdgeOptions.DebuggerAddress` property to tell Microsoft Edge WebDriver to connect to the remote debugging port that you specified previously, instead of launching a new application:
 
@@ -227,11 +235,13 @@ At `localhost:9222` above, the port number given on this line should match the p
 
 For more info about the `DebuggerAddress` property of the `EdgeOptions` object, see [EdgeOptions object](../../webdriver-chromium/capabilities-edge-options.md#edgeoptions-object).
 
-### For UWP apps, attach Microsoft Edge WebDriver to WebView2 with Remote Tools
 
-1. Complete the steps described in [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
+<!-- ------------------------------ -->
+#### For UWP apps, attach Microsoft Edge WebDriver to WebView2 with Remote Tools
 
-   This WebView2 feature is currently only supported in the Canary preview channel of Microsoft Edge.  Set the enviroment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1`, to ensure that the WebView2 version is Canary.  For more information, see [Using an environment variable](./set-preview-channel.md#how-to-use-use-an-environment-variable) in _Test upcoming APIs and features_.
+1. Do the steps in [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
+
+   This WebView2 feature is currently only supported in the Canary preview channel of Microsoft Edge.  Set the environment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1`, to ensure that the WebView2 version is Canary.  For more information, see [Using an environment variable](./set-preview-channel.md#how-to-use-an-environment-variable) in _Test upcoming APIs and features_.
 
    ![Settings for UWP app](./webdriver-images/sample-uwp-settings.png)
  
@@ -260,7 +270,9 @@ For more information about launching a WebView2 UWP app with Remote Tools, see [
 
 Congratulations!  You've successfully attached Microsoft Edge WebDriver to a running WebView2 app.
 
-### UWP projects and debugging
+
+<!-- ------------------------------ -->
+#### UWP projects and debugging
 
 To configure the debug settings on launch, you must use the registry to enable debugging for all WebView2 processes on startup. Because of the way that UWP projects are launched, the WebDriver2 control is unable to automatically configure the debug settings on launch. Note that setting this registry key enables debugging support for all launched WebView2 processes while this environment variable is configured.
 
