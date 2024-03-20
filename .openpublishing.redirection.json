@@ -178,7 +178,7 @@ Old redirects (to /archive/)
       },
       {
         "source_path": "microsoft-edge/webview2/release-notes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
         "redirect_document_id": false
       },
 
