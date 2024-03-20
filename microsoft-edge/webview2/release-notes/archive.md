@@ -10,7 +10,7 @@ ms.date: 03/20/2024
 ---
 # Archived Release Notes for the WebView2 SDK
 
-These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK, for older releases.
+These Release Notes provide information about added features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK, for older releases.
 
 
 <!-- ====================================================================== -->
