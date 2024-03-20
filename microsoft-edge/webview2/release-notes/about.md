@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/18/2024
+ms.date: 03/20/2024
 ---
 # About Release Notes for the WebView2 SDK
 
@@ -20,15 +20,23 @@ Release Notes entries correspond to historical releases of WebView2, and are not
 
 
 <!-- ====================================================================== -->
-## Phases of adding APIs
+## Phases of adding APIs: Experimental in Prerelease; Stable in Prerelease; Stable in Release
 
-![Phases of adding APIs](./about-images/phases-of-adding-apis.png)
+New APIs are added in phases, as follows:
+1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.
+1. Then they become Stable APIs in a Prerelease SDK package.
+1. Soon after, they become Stable APIs in a Release SDK package.
 
-The WebView2 team updates the WebView2 SDK on a four-week cadence.  This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
+![Diagram of phases of introducing new APIs](./about-images/phases-of-adding-apis.png)
+<!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
 
-You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
+See also:
+* [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
 
-Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](../webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md).
+<!-- terminology:
+APIs are Experimental or Stable
+SDKs/packages are Prerelease or Release
+-->
 
 
 <!-- ====================================================================== -->
@@ -82,25 +90,6 @@ General event pattern:
 Async methods:
 - Win32: XYZ method + XYZCompletedHandler
 - .NET/WinRT: XYZAsync
--->
-
-
-<!-- ====================================================================== -->
-## Experimental APIs, Prerelease SDKs, and Release SDKs
-
-New APIs are added in phases, as follows:
-1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.
-1. Then they become Stable APIs in a Prerelease SDK package.
-1. Soon after, they become Stable APIs in a Release SDK package.
-
-![Diagram of phases of introducing new APIs](./about-images/phases-of-adding-apis.png)
-<!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
-
-For more information, see [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
-
-<!-- terminology:
-APIs are Experimental or Stable
-SDKs/packages are Prerelease or Release
 -->
 
 
