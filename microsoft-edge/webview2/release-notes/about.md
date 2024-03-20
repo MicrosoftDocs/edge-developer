@@ -20,7 +20,7 @@ Release Notes entries correspond to historical releases of WebView2, and are not
 
 
 <!-- ====================================================================== -->
-## Phases of adding APIs: Experimental in Prerelease; Stable in Prerelease; Stable in Release
+## Phases of adding APIs
 
 New APIs are added in phases, as follows:
 1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.
