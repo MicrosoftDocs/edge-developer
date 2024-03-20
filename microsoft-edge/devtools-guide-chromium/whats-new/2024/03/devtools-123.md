@@ -19,10 +19,10 @@ ms.date: 03/21/2024
 <!-- Subtitle: New experiment is available to make Shallow Size column in the Memory tool more helpful. -->
 
 Microsoft Edge 123 adds a new experiment called **In heap snapshots, treat backing store size as part of the containing object**.  If you enable this experiment, the **Memory** tool reports shallow sizes in a way that more closely matches JavaScript behavior.  By enabling this experiment, containers and their contents can now be represented as a single item, such as:
-* An Object and its properties.
-* An Array and its contents.
-* A Map and its contents.
-* A Set and its contents.
+* An `Object` and its properties.
+* An `Array` and its contents.
+* A `Map` and its contents.
+* A `Set` and its contents.
 
 For example, to find the largest arrays, you can sort `Array`​ instances by shallow size, as shown below.
 
