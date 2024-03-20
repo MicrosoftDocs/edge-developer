@@ -1,6 +1,6 @@
 ---
-title: What's New in DevTools (Microsoft Edge 122)
-description: "New experiment: Memory tool will report backing store sizes as part of an object's shallow size. Crash analyzer tool is available by default. Command Palette is deprecated. And more." 
+title: What's New in DevTools (Microsoft Edge 123)
+description: "Memory tool reports backing store sizes as part of an object's shallow size. Crash analyzer tool is available by default. Command Palette experimental feature has been removed. Undocked DevTools window is kept focused as the topmost window while inspecting a page. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,45 +14,57 @@ ms.date: 03/21/2024
 
 
 <!-- ====================================================================== -->
-## New experiment: Memory tool will report backing store sizes as part of an object's shallow size.
+## Memory tool reports backing store sizes as part of an object's shallow size
 
 <!-- Subtitle: New experiment is available to make Shallow Size column in the Memory tool more helpful. -->
 
-Heap snapshots in the Memory tool show a complete list of everything allocated in the V8 and Blink heaps. However, sometimes that list is a little too fine-grained: for example, it represents each JavaScript Array instance separately from the contents of that Array, which are called (object elements)[]. However, an Array from the perspective of JavaScript code is a single thing, not two. The same problem applies to properties in JavaScript objects, and the contents of Map and Set instances.
+Microsoft Edge 123 adds a new experiment called **In heap snapshots, treat backing store size as part of the containing object**.  If you enable this experiment, the **Memory** tool reports shallow sizes in a way that more closely matches JavaScript behavior.  By enabling this experiment, containers and their contents can now be represented as a single item, such as:
+* An Object and its properties.
+* An Array and its contents.
+* A Map and its contents.
+* A Set and its contents.
 
-In Microsoft Edge 123, we've added a new experiment called "In heap snapshots, treat backing store size as part of the containing object." If you enable this option, then the Memory tool will report shallow sizes in a way that more closely matches JavaScript behavior. For example, you could sort Array​ instances by shallow size to find the largest arrays, as depicted below.
+For example, to find the largest arrays, you can sort Array​ instances by shallow size, as shown below.
 
-Default behaviour for heap snapshot:
+Default behavior for heap snapshots:
 ![Heap snapshot default behavior](./devtools-123-images/heap-snapshot-default.png)
 
-Heap snapshot with the new experiment enabled:
+Heap snapshots with the new experiment enabled:
 ![Heap snapshot with experiment enabled](./devtools-123-images/heap-snapshot-with-experiment.png)
+
+This experiment is helpful because heap snapshots in the Memory tool show a complete list of everything allocated in the V8 and Blink heaps.  Sometimes that list is a little too fine-grained, breaking out an item as if it is multiple items.  For example, the list in the heap snapshot represents each JavaScript Array instance separately from the contents of that Array, which are depicted as _object elements_.<!--todo: link-->  However, in JavaScript code, an Array is a single entity, rather than an array instance and separate contents of the array.
 
 
 <!-- ====================================================================== -->
 ## Crash analyzer tool is available by default
 
-<!-- Subtitle: The Crash analyzer tool has been moved out of DevTools Experiements and is available under More Tools on the Activity Bar. -->
+<!-- Subtitle: The Crash analyzer tool has been moved out of DevTools Experiments and is available under More Tools on the Activity Bar. -->
 
-Starting with Microsoft Edge 123, the Crash analyzer tool is now available by default and no longer an experiment that needs to be enabled. This tool helps you take a JavaScript stack trace and applies your sourcemaps to the stack trace so that you can debug faster. You can access this tool by going to the More tools menu in the Activity Bar.
+The **Crash analyzer** tool is now available by default, and is no longer an experiment that needs to be enabled.  The **Crash analyzer** tool helps you take<!--todo: create? record?--> a JavaScript stack trace, and applies your sourcemaps to the stack trace so that you can debug faster.  To open the **Crash analyzer** tool, in the **Activity Bar**, click the **More tools** (+) menu, and then select **Crash analyzer**.
 
 ![The crash analyzer tool](./devtools-123-images/crash-analyzer-tool.png)
 
 
 <!-- ====================================================================== -->
-## Command Palette is deprecated
+## Command Palette experimental feature has been removed
 
-<!-- Subtitle: Starting with Microsoft Edge 123, the Command Palette experiment has been removed. -->
+<!-- Subtitle: The Command Palette experiment has been removed. -->
 
-The Command Palette experimental feature will be removed from Microsoft Edge, starting with version 123.
+The Command Palette experimental feature has been removed from Microsoft Edge, starting with version 123.
+
+See also:
+* [Navigate directly to the Styles and Computed Styles tabs of the Elements tool](../../2023/01/devtools-109#navigate-directly-to-the-styles-and-computed-styles-tabs-of-the-elements-tool) in _What's New in DevTools (Microsoft Edge 109)_.
+* [Improved DevTools navigation via Command Palette](../../2022/12/devtools-108#improved-devtools-navigation-via-command-palette) in _What's New in DevTools (Microsoft Edge 108)_.
+* [New keyboard shortcut for the Command Palette experiment](../../2022/10/devtools-107#new-keyboard-shortcut-for-the-command-palette-experiment) in _What's New in DevTools (Microsoft Edge 107)_.
+* [Introducing the Command Palette](../../2022/09/devtools-106.md#introducing-the-command-palette) in _What's New in DevTools (Microsoft Edge 106)_.
 
 
 <!-- ====================================================================== -->
-## DevTools no longer loses focus while inspecting a page
+## Undocked DevTools window is kept focused as the topmost window while inspecting a page
 
-<!-- Subtitle: In recent versions of Microsoft Edge, DevTools would lose focus while inspecting a page. In Microsoft Edge 123, this issue has been resolved. -->
+<!-- Subtitle: In recent versions of Microsoft Edge, the undocked DevTools window lost focus while you're inspecting a webpage. The DevTools window now stays in focus as the topmost window. -->
 
-There was a bug with inspecting and element on a webpage when DevTools was undocked. When selecting an element to inspect, the DevTools window would lose focus and would be obscured by the webpage. This bug has been resolved and the DevTools window will stay in focus and the topmost window.
+When DevTools was undocked into its own separate window, and you selected a webpage element to inspect, the DevTools window lost focus and was obscured by the webpage being analyzed.  This bug has been resolved, and the DevTools window stays in focus as the topmost window.
 
 
 <!-- ====================================================================== -->
@@ -60,13 +72,29 @@ There was a bug with inspecting and element on a webpage when DevTools was undoc
 
 Microsoft Edge 123 also includes the following updates from the Chromium project:
 
+* [Find the Easter egg](https://developer.chrome.com/blog/new-in-devtools-123#easter-egg3)
+* [Elements panel updates](https://developer.chrome.com/blog/new-in-devtools-123#elements)
+   * [Emulate a focused page in Elements > Styles](https://developer.chrome.com/blog/new-in-devtools-123#focused-page)
+   * [Color picker, Angle Clock, and Easing Editor in var() fallbacks](https://developer.chrome.com/blog/new-in-devtools-123#var-fallbacks)
+   * [CSS length tool is deprecated](https://developer.chrome.com/blog/new-in-devtools-123#css-length)
+* [Popover for the selected search result in the Performance > Main track](https://developer.chrome.com/blog/new-in-devtools-123#perf-popover)
+* [Network panel updates](https://developer.chrome.com/blog/new-in-devtools-123#network)
+   * [Clear button and search filter in the Network > EventStream tab](https://developer.chrome.com/blog/new-in-devtools-123#event-stream)
+   * [Tooltips with exemption reasons for third-party cookies in Network > Cookies](https://developer.chrome.com/blog/new-in-devtools-123#3pc-exemption)
+* [Enable and disable all breakpoints in Sources](https://developer.chrome.com/blog/new-in-devtools-123#breakpoints)
+* [View loaded scripts in DevTools for Node.js](https://developer.chrome.com/blog/new-in-devtools-123#node-nav-tree)
+* [Lighthouse 11.5.0](https://developer.chrome.com/blog/new-in-devtools-123#lighthouse)
+* [Accessibility](https://developer.chrome.com/blog/new-in-devtools-123#accessibility)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-123#misc)
+<!-- todo: maybe remove some links -->
+
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 122)](https://developer.chrome.com/blog/new-in-devtools-122) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 123)](https://developer.chrome.com/blog/new-in-devtools-123) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
 
 
 <!-- ====================================================================== -->
