@@ -52,7 +52,7 @@ The **Crash analyzer** tool helps you create a JavaScript stack trace, and appli
 <!--
 See also:
 * [Crash analyzer tool](../../../crash-analyzer/index.md)
-the open PR 3086 -->
+todo: after merging PR 3086 (New article "Crash analyzer tool"), un-comment -->
 
 
 <!-- ====================================================================== -->
