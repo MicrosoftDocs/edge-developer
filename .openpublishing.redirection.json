@@ -168,12 +168,12 @@ Old redirects (to /archive/)
       /* WebView2 Release Notes: */
       {
         "source_path": "microsoft-edge/hosting/webview2/releasenotes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
         "redirect_document_id": false
       },
       {
         "source_path": "microsoft-edge/webview2/releasenotes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
         "redirect_document_id": false
       },
       {
