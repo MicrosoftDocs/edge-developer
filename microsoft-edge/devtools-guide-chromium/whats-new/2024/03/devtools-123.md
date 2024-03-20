@@ -34,15 +34,25 @@ Heap snapshots with the new experiment enabled:
 
 This experiment is helpful because heap snapshots in the Memory tool show a complete list of everything allocated in the V8 and Blink heaps.  Sometimes that list is a little too fine-grained, breaking out an item as if it is multiple items.  For example, the list in the heap snapshot represents each JavaScript Array instance separately from the contents of that Array, which are depicted as _object elements_.<!--todo: link-->  However, in JavaScript code, an Array is a single entity, rather than an array instance and separate contents of the array.
 
+See also:
+* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+
 
 <!-- ====================================================================== -->
 ## Crash analyzer tool is available by default
 
-<!-- Subtitle: The Crash analyzer tool has been moved out of DevTools Experiments and is available under More Tools on the Activity Bar. -->
+<!-- Subtitle: The Crash analyzer tool has been moved out of DevTools Experiments and is available in More Tools on the Activity Bar. -->
 
-The **Crash analyzer** tool is now available by default, and is no longer an experiment that needs to be enabled.  The **Crash analyzer** tool helps you take<!--todo: create? record?--> a JavaScript stack trace, and applies your sourcemaps to the stack trace so that you can debug faster.  To open the **Crash analyzer** tool, in the **Activity Bar**, click the **More tools** (+) menu, and then select **Crash analyzer**.
+The **Crash analyzer** tool is now available by default, and is no longer an experiment that needs to be enabled.  To open the **Crash analyzer** tool, in the **Activity Bar**, click the **More tools** (+) menu, and then select **Crash analyzer**.
 
-![The crash analyzer tool](./devtools-123-images/crash-analyzer-tool.png)
+The **Crash analyzer** tool helps you create a JavaScript stack trace, and applies your sourcemaps to the stack trace so that you can debug faster:
+
+![The Crash analyzer tool](./devtools-123-images/crash-analyzer-tool.png)
+
+<!--
+See also:
+* [Crash analyzer tool](../../../crash-analyzer/index.md)
+the open PR 3086 -->
 
 
 <!-- ====================================================================== -->
@@ -53,10 +63,10 @@ The **Crash analyzer** tool is now available by default, and is no longer an exp
 The Command Palette experimental feature has been removed from Microsoft Edge, starting with version 123.
 
 See also:
-* [Navigate directly to the Styles and Computed Styles tabs of the Elements tool](../../2023/01/devtools-109#navigate-directly-to-the-styles-and-computed-styles-tabs-of-the-elements-tool) in _What's New in DevTools (Microsoft Edge 109)_.
-* [Improved DevTools navigation via Command Palette](../../2022/12/devtools-108#improved-devtools-navigation-via-command-palette) in _What's New in DevTools (Microsoft Edge 108)_.
-* [New keyboard shortcut for the Command Palette experiment](../../2022/10/devtools-107#new-keyboard-shortcut-for-the-command-palette-experiment) in _What's New in DevTools (Microsoft Edge 107)_.
 * [Introducing the Command Palette](../../2022/09/devtools-106.md#introducing-the-command-palette) in _What's New in DevTools (Microsoft Edge 106)_.
+* [New keyboard shortcut for the Command Palette experiment](../../2022/10/devtools-107#new-keyboard-shortcut-for-the-command-palette-experiment) in _What's New in DevTools (Microsoft Edge 107)_.
+* [Improved DevTools navigation via Command Palette](../../2022/12/devtools-108#improved-devtools-navigation-via-command-palette) in _What's New in DevTools (Microsoft Edge 108)_.
+* [Navigate directly to the Styles and Computed Styles tabs of the Elements tool](../../2023/01/devtools-109#navigate-directly-to-the-styles-and-computed-styles-tabs-of-the-elements-tool) in _What's New in DevTools (Microsoft Edge 109)_.
 
 
 <!-- ====================================================================== -->
@@ -65,6 +75,9 @@ See also:
 <!-- Subtitle: In recent versions of Microsoft Edge, the undocked DevTools window lost focus while you're inspecting a webpage. The DevTools window now stays in focus as the topmost window. -->
 
 When DevTools was undocked into its own separate window, and you selected a webpage element to inspect, the DevTools window lost focus and was obscured by the webpage being analyzed.  This bug has been resolved, and the DevTools window stays in focus as the topmost window.
+
+See also:
+* [Change DevTools placement (Undock, Dock to bottom, Dock to left)](../../../customize/placement.md)
 
 
 <!-- ====================================================================== -->
