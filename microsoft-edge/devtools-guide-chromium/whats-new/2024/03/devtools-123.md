@@ -24,7 +24,7 @@ Microsoft Edge 123 adds a new experiment called **In heap snapshots, treat backi
 * A Map and its contents.
 * A Set and its contents.
 
-For example, to find the largest arrays, you can sort Array​ instances by shallow size, as shown below.
+For example, to find the largest arrays, you can sort `Array`​ instances by shallow size, as shown below.
 
 Default behavior for heap snapshots:
 ![Heap snapshot default behavior](./devtools-123-images/heap-snapshot-default.png)
@@ -32,7 +32,7 @@ Default behavior for heap snapshots:
 Heap snapshots with the new experiment enabled:
 ![Heap snapshot with experiment enabled](./devtools-123-images/heap-snapshot-with-experiment.png)
 
-This experiment is helpful because heap snapshots in the Memory tool show a complete list of everything allocated in the V8 and Blink heaps.  Sometimes that list is a little too fine-grained, breaking out an item as if it is multiple items.  For example, the list in the heap snapshot represents each JavaScript Array instance separately from the contents of that Array, which are depicted as _object elements_.<!--todo: link-->  However, in JavaScript code, an Array is a single entity, rather than an array instance and separate contents of the array.
+This experiment is helpful because heap snapshots in the Memory tool show a complete list of everything allocated in the V8 and Blink heaps.  Sometimes that list is a little too fine-grained, breaking out an item as if it is multiple items.  For example, the list in the heap snapshot represents each JavaScript `Array` instance separately from the contents of that `Array`, which are called `(object elements)[]`. However, in JavaScript code, an `Array` is a single entity, rather than an array instance and separate contents of the array.
 
 See also:
 * [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
@@ -85,7 +85,6 @@ See also:
 
 Microsoft Edge 123 also includes the following updates from the Chromium project:
 
-* [Find the Easter egg](https://developer.chrome.com/blog/new-in-devtools-123#easter-egg3)
 * [Elements panel updates](https://developer.chrome.com/blog/new-in-devtools-123#elements)
    * [Emulate a focused page in Elements > Styles](https://developer.chrome.com/blog/new-in-devtools-123#focused-page)
    * [Color picker, Angle Clock, and Easing Editor in var() fallbacks](https://developer.chrome.com/blog/new-in-devtools-123#var-fallbacks)
@@ -96,10 +95,6 @@ Microsoft Edge 123 also includes the following updates from the Chromium project
    * [Tooltips with exemption reasons for third-party cookies in Network > Cookies](https://developer.chrome.com/blog/new-in-devtools-123#3pc-exemption)
 * [Enable and disable all breakpoints in Sources](https://developer.chrome.com/blog/new-in-devtools-123#breakpoints)
 * [View loaded scripts in DevTools for Node.js](https://developer.chrome.com/blog/new-in-devtools-123#node-nav-tree)
-* [Lighthouse 11.5.0](https://developer.chrome.com/blog/new-in-devtools-123#lighthouse)
-* [Accessibility](https://developer.chrome.com/blog/new-in-devtools-123#accessibility)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-123#misc)
-<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
