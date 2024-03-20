@@ -64,9 +64,9 @@ The Command Palette experimental feature has been removed from Microsoft Edge, s
 
 See also:
 * [Introducing the Command Palette](../../2022/09/devtools-106.md#introducing-the-command-palette) in _What's New in DevTools (Microsoft Edge 106)_.
-* [New keyboard shortcut for the Command Palette experiment](../../2022/10/devtools-107#new-keyboard-shortcut-for-the-command-palette-experiment) in _What's New in DevTools (Microsoft Edge 107)_.
-* [Improved DevTools navigation via Command Palette](../../2022/12/devtools-108#improved-devtools-navigation-via-command-palette) in _What's New in DevTools (Microsoft Edge 108)_.
-* [Navigate directly to the Styles and Computed Styles tabs of the Elements tool](../../2023/01/devtools-109#navigate-directly-to-the-styles-and-computed-styles-tabs-of-the-elements-tool) in _What's New in DevTools (Microsoft Edge 109)_.
+* [New keyboard shortcut for the Command Palette experiment](../../2022/10/devtools-107.md#new-keyboard-shortcut-for-the-command-palette-experiment) in _What's New in DevTools (Microsoft Edge 107)_.
+* [Improved DevTools navigation via Command Palette](../../2022/12/devtools-108.md#improved-devtools-navigation-via-command-palette) in _What's New in DevTools (Microsoft Edge 108)_.
+* [Navigate directly to the Styles and Computed Styles tabs of the Elements tool](../../2023/01/devtools-109.md#navigate-directly-to-the-styles-and-computed-styles-tabs-of-the-elements-tool) in _What's New in DevTools (Microsoft Edge 109)_.
 
 
 <!-- ====================================================================== -->
