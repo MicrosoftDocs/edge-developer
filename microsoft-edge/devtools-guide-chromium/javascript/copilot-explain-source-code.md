@@ -29,7 +29,7 @@ This feature is for use in standard browser window, and is not available in the 
 
 
 <!-- ====================================================================== -->
-## Enable the feature
+## Enable Copilot in Edge
 
 To use this explanation feature, enable Copilot in Edge:
 

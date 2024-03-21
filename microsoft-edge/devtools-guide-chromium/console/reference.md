@@ -28,28 +28,31 @@ This article is an outline of the features of the **Console**.
 **Contents:**
 
 * [Open the Console](#open-the-console)
-   * [Open the Console tool](#open-the-console-tool)
-   * [Open the Console tool in the Drawer](#open-the-console-tool-in-the-drawer)
-   * [Open Console Settings](#open-console-settings)
-   * [Open the Console Sidebar](#open-the-console-sidebar)
+   * [Open the Console tool in the Activity Bar](#open-the-console-tool-in-the-activity-bar)
+   * [Open the Console tool in the Quick View toolbar](#open-the-console-tool-in-the-quick-view-toolbar)
+   * [Open the Console from the Command Menu](#open-the-console-from-the-command-menu)
+   * [Open Console settings](#open-console-settings)
+   * [Open the sidebar to filter messages](#open-the-sidebar-to-filter-messages)
 * [View messages](#view-messages)
    * [Turn off message grouping](#turn-off-message-grouping)
    * [Log XHR and Fetch requests](#log-xhr-and-fetch-requests)
    * [Persist messages across page loads](#persist-messages-across-page-loads)
-   * [Hide network messages](#hide-network-messages)
+   * [Hide network errors](#hide-network-errors)
    * [Explain Console errors and warnings using Copilot in Edge](#explain-console-errors-and-warnings-using-copilot-in-edge)
 * [Filter messages](#filter-messages)
    * [Filter out browser messages](#filter-out-browser-messages)
    * [Filter by log level](#filter-by-log-level)
-   * [Filter messages by URL](#filter-messages-by-url)
-   * [Filter out messages from different contexts](#filter-out-messages-from-different-contexts)
-   * [Filter out messages that don't match a regular expression pattern](#filter-out-messages-that-dont-match-a-regular-expression-pattern)
+   * [Filter messages by script URL](#filter-messages-by-script-url)
+      * [Reverse the filter with a negative URL filter](#reverse-the-filter-with-a-negative-url-filter)
+      * [Display messages from a single script by using the sidebar](#display-messages-from-a-single-script-by-using-the-sidebar)
+   * [Filter out messages from different JavaScript contexts](#filter-out-messages-from-different-javascript-contexts)
+   * [Filter messages by using a regular expression pattern](#filter-messages-by-using-a-regular-expression-pattern)
 * [Run JavaScript](#run-javascript)
-   * [Rerun expressions from history](#rerun-expressions-from-history)
-   * [Watch the value of an expression in real time with Live Expressions](#watch-the-value-of-an-expression-in-real-time-with-live-expressions)
-   * [Turn off Eager Evaluation](#turn-off-eager-evaluation)
+   * [Run expressions again by using the Console history](#run-expressions-again-by-using-the-console-history)
+   * [Watch the value of an expression in real time by using a live expression](#watch-the-value-of-an-expression-in-real-time-by-using-a-live-expression)
+   * [Disable evaluating JavaScript expressions as you type](#disable-evaluating-javascript-expressions-as-you-type)
    * [Turn off autocomplete from history](#turn-off-autocomplete-from-history)
-   * [Select JavaScript context](#select-javascript-context)
+   * [Select a context to run JavaScript expressions](#select-a-context-to-run-javascript-expressions)
 * [Clear the Console](#clear-the-console)
 
 
@@ -97,7 +100,7 @@ To learn more about the **Command Menu**, see [Run commands in the Command Menu]
 
 
 <!-- ------------------------------ -->
-#### Open Console Settings
+#### Open Console settings
 
 To change settings of the **Console** tool, click the **Console settings** (![Console settings icon](./reference-images/settings-button-icon.png)) button. The settings section appears:
 
@@ -257,7 +260,7 @@ To display messages from a single script, by using the sidebar:
 
 
 <!-- ------------------------------ -->
-#### Filter out messages from different JavaSript contexts
+#### Filter out messages from different JavaScript contexts
 
 By default, the **Console** tool displays messages from all the JavaScript contexts that are running on the webpage. This might include messages from cross-domain `<iframe>` elements that are embedded in the webpage, or service workers that are running in the background.
 
@@ -271,7 +274,7 @@ To only display messages from one JavaScript context:
 
    ![The JavaScript Context dropdown list](./reference-images/single-context-setting.png)
 
-To learn more about selecting other JavaScript context, see [Select a JavaScript context](#select-a-javascript-context).
+To learn more about selecting other JavaScript context, see [Select a context to run JavaScript expressions](#select-a-context-to-run-javascript-expressions).
 
 
 <!-- ------------------------------ -->
