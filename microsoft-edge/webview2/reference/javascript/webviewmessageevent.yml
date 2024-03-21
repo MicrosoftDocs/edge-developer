@@ -13,14 +13,15 @@ properties:
     uid: 'WebView2Script!WebViewMessageEvent#additionalObjects:member'
     package: WebView2Script!
     fullName: additionalObjects
-    summary: >-
+    summary: |-
       Additional DOM objects that are sent via PostJSONMessageWithAdditionalObjects. These objects can be of following
       types:
-      
+
       DOM | Win32
       ------- | ------------
       [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle) | ICoreWebView2FileSystemHandle (kind File)
       [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle) ICoreWebView2FileSystemHandle (kind Directory)
+
       `nullptr` entries will be passed as `null` type.
     remarks: ''
     isPreview: false
@@ -40,5 +41,5 @@ properties:
     syntax:
       content: 'source: WebView;'
       return:
-        type: '<xref uid="WebView2Script!WebView:interface" />'
+        type: '<xref uid="WebView2Script!WebView:class" />'
 extends: MessageEvent
