@@ -14,7 +14,7 @@ The **Console** tool in Microsoft Edge DevTools integrate with Copilot in Micros
 
 When inspecting a webpage with DevTools, you often see errors and warnings in the **Console** tool. These errors and warnings can sometimes be difficult to understand and fix. By using the **Explain this error** feature, you get more information about the error or warning in Copilot in Edge:
 
-![Copilot in the Microsoft Edge sidebar, showing the error message and the explanation.](./copilot-explain-images/copilot-error-explanation.png)
+![Copilot in the Microsoft Edge sidebar, showing the error message and the explanation](./copilot-explain-console-images/copilot-error-explanation.png)
 
 
 <!-- ------------------------------ -->
@@ -35,7 +35,7 @@ To use this explanation feature, enable Copilot in Edge:
 
 1. Sign into Microsoft Edge. See [Sign in to sync Microsoft Edge across devices](https://support.microsoft.com/microsoft-edge/sign-in-to-sync-microsoft-edge-across-devices-e6ffa79b-ed52-aa32-47e2-5d5597fe4674).
 
-1. Make sure the Copilot icon (![The Copilot icon in the browser toolbar](./copilot-explain-images/copilot-icon.png)) is visible in the top-right corner of the browser toolbar. If it's not, in Microsoft Edge, select **Settings and more** (**...**) > **Settings** > **Sidebar** > **Copilot**, and then turn on the **Show Copilot** toggle.
+1. Make sure the Copilot icon (![The Copilot icon in the browser toolbar](./copilot-explain-console-images/copilot-icon.png)) is visible in the top-right corner of the browser toolbar. If it's not, in Microsoft Edge, select **Settings and more** (**...**) > **Settings** > **Sidebar** > **Copilot**, and then turn on the **Show Copilot** toggle.
 
 
 <!-- ====================================================================== -->
@@ -53,13 +53,13 @@ To use Copilot to explain an error or warning in the **Console** tool:
 
    The demo page then generates errors, which are shown in the **Console**:
 
-   ![The demo web page in Edge, with the DevTools Console next to it, showing a few error messages](./copilot-explain-images/some-console-errors.png)
+   ![The demo web page in Edge, with the DevTools Console next to it, showing a few error messages](./copilot-explain-console-images/some-console-errors.png)
 
-1. In the **Console** tool, click the **ask Copilot: "Explain this error"** (![The explain error icon in the Console](./copilot-explain-images/explain-icon.png)) button next to one of the error messages.
+1. In the **Console** tool, click the **ask Copilot: "Explain this error"** (![The explain error icon in the Console](./copilot-explain-console-images/explain-icon.png)) button next to one of the error messages.
 
    Copilot opens in the Microsoft Edge sidebar, showing the error message, an **Explain the error message from DevTools console** request message, and then a response explaining the error:
 
-   ![Copilot in the Microsoft Edge sidebar, showing the error message and the explanation](./copilot-explain-images/copilot-error-explanation.png)
+   ![Copilot in the Microsoft Edge sidebar, showing the error message and the explanation](./copilot-explain-console-images/copilot-error-explanation.png)
 
 1. To get more information about the error, in Copilot, enter additional questions.
 
