@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 05/04/2021
+ms.date: 03/20/2024
 ---
 <!-- Copyright Kayce Basques
 
@@ -37,6 +37,7 @@ This article is an outline of the features of the **Console**.
    * [Log XHR and Fetch requests](#log-xhr-and-fetch-requests)
    * [Persist messages across page loads](#persist-messages-across-page-loads)
    * [Hide network messages](#hide-network-messages)
+   * [Explain Console errors and warnings using Copilot in Edge](#explain-console-errors-and-warnings-using-copilot-in-edge)
 * [Filter messages](#filter-messages)
    * [Filter out browser messages](#filter-out-browser-messages)
    * [Filter by log level](#filter-by-log-level)
@@ -55,83 +56,93 @@ This article is an outline of the features of the **Console**.
 <!-- ====================================================================== -->
 ## Open the Console
 
-You can open the **Console** as a [tool in the upper pane](#open-the-console-tool) or as a [tool in the Drawer](#open-the-console-tool-in-the-drawer).
+You can open the **Console** tool either in the **Activity Bar** or in the **Quick View** toolbar.
 
 
-### Open the Console tool
+<!-- ------------------------------ -->
+#### Open the Console tool in the Activity Bar
 
-Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
+Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS). DevTools opens, with the tab for the **Console** tool selected in the **Activity Bar**:
 
-![The Console tool](./reference-images/console-hello-console.png)
-
-To open the **Console** tool from the [Command Menu](../command-menu/index.md), type `Console` and then run the **Show Console** command that has the **Panel** badge next to it.
-
-![Run the command to display the Console tool](./reference-images/console-command-menu-show-console.png)
+![The Console tool](./reference-images/first-open.png)
 
 
-### Open the Console tool in the Drawer
+<!-- ------------------------------ -->
+#### Open the Console tool in the Quick View toolbar
 
-Press **Esc**.  Or, click **Customize and control DevTools** (`...`) and then select **Show console drawer**.
+To open the **Console** tool in the **Quick View** toolbar, at the bottom of the DevTools window, press **Esc**. If the **Quick View** toolbar was previously hidden, it appears:
 
-![Show console drawer](./reference-images/console-elements-customize-control-devtools-show-console-drawer.png)
+![The Console tool in the Quick View toolbar](./reference-images/console-in-quickview.png)
 
-The Drawer pops up in the bottom of the DevTools window, with the **Console** tool open.
-
-![The Console tool in the Drawer](./reference-images/console-elements-console-drawer-hello-world.png)
-
-To open the **Console** tool from the [Command Menu](../command-menu/index.md), type **Console** and then run the **Show Console** command that has the **Drawer** badge next to it.
-
-![Run the command to display the **Console** tool in the Drawer](./reference-images/console-command-menu-show-console.png)
+Or, click **Customize and control DevTools** (`...`) > **Toggle Quick View panel**.
 
 
-### Open Console Settings
+<!-- ------------------------------ -->
+#### Open the Console from the Command Menu
 
-Click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button.
+To open the **Console** tool from the **Command Menu**:
 
-![Console Settings](./reference-images/console-settings-group-similar-empty.png)
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
+
+   The Command Menu initially opens with a `>` character prepended to its text box.
+
+1. Type **Show Console** and then select either of the **Show Console** options:
+
+   * To open the **Console** in the **Activity Bar**, select the option with the **Panel** badge next to it.
+   * To open the **Console** in the **Quick View** toolbar, select the option with the **Quick View** badge next to it.
+
+   ![Run the command to display the Console tool](./reference-images/command-menu-show-console.png)
+
+To learn more about the **Command Menu**, see [Run commands in the Command Menu](../command-menu/index.md).
 
 
-### Open the Console Sidebar
+<!-- ------------------------------ -->
+#### Open Console Settings
 
-To display the **Sidebar**, click **Show console sidebar** (![Show console sidebar](./reference-images/show-console-sidebar-icon.png)).  The **Sidebar** helps you filter.
+To change settings of the **Console** tool, click the **Console settings** (![Console settings icon](./reference-images/settings-button-icon.png)) button. The settings section appears:
 
-![Console Sidebar](./reference-images/console-sidebar-drawer-empty.png)
+![Console Settings](./reference-images/settings.png)
+
+
+<!-- ------------------------------ -->
+#### Open the sidebar to filter messages
+
+To display the sidebar in the **Console**, to filter messages, click **Show console sidebar** (![Show console sidebar](./reference-images/show-console-sidebar-icon.png)). The sidebar appears:
+
+![Console Sidebar](./reference-images/sidebar.png)
+
+To learn more about filtering messages in the **Console** tool, see [Filter messages](#filter-messages).
 
 
 <!-- ====================================================================== -->
 ## View messages
 
-This section contains features that change how messages are presented in the Console.  For a hands-on walkthrough, see [View messages](index.md#inspect-and-filter-information-on-the-current-webpage).
+This following sections describe features that change how messages are presented in the **Console** tool.  For a hands-on walkthrough, see [Inspect and filter information on the current webpage](./index.md#inspect-and-filter-information-on-the-current-webpage) in _Console overview_.
 
 
-### Turn off message grouping
+<!-- ------------------------------ -->
+#### Turn off message grouping
 
-To turn off the default message grouping behavior of the **Console**, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the checkbox next to **Group similar**.  For an example, see [Log XHR and Fetch requests](#log-xhr-and-fetch-requests).
+To turn off the default message grouping behavior of the **Console**, click the **Console settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the **Group similar messages in console** checkbox.
 
 
-### Log XHR and Fetch requests
+<!-- ------------------------------ -->
+#### Log XHR and Fetch requests
 
-To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the checkbox next to **Log XMLHttpRequests**.
+To log all the network requests that are triggered by the `XMLHttpRequest` and `Fetch` JavaScript APIs, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the **Log XMLHttpRequests** checkbox.
 
+<!-- TODO: either remove this out of context screenshot, or write new instructions based on one of our demo pages. -->
 ![Logging XMLHttpRequest and Fetch requests](./reference-images/console-xhr-fetch.png)
 
-The top message in previous figure displays the default grouping behavior of the **Console**.  <!--  In the following figure, the same log is displayed after you [turn off message grouping](#turn-off-message-grouping).  -->
 
-<!--
-> ##### Old Figure 9
-> How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping
-> ![How the logged XMLHttpRequest and Fetch requests look after ungrouping](./reference-images/console-xhr-fetch-all.png)
--->
-
-<!--todo: add example for ungrouping console items  -->
-
-
-### Persist messages across page loads
+<!-- ------------------------------ -->
+#### Persist messages across page loads
 
 When you load a new webpage, the default action clears the **Console**.  To persist messages across page loads, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the checkbox next to **Preserve Log**.
 
 
-### Hide network messages
+<!-- ------------------------------ -->
+#### Hide network messages
 
 The default action for Microsoft Edge is to logs network messages to the **Console**.  In the following figure, the selected message represents an HTTP status code of `429`.
 
@@ -144,20 +155,32 @@ To hide network messages:
 1. Select the checkbox next to **Hide Network**.
 
 
+<!-- ------------------------------ -->
+#### Explain Console errors and warnings using Copilot in Edge
+
+When inspecting a webpage with DevTools, you often see errors and warnings in the **Console** tool. These errors and warnings can sometimes be difficult to understand and fix. By using the **Explain this error** feature, you get more information about the error or warning in Copilot in Edge:
+
+![Copilot in the Microsoft Edge sidebar, showing the error message and the explanation.](./reference-images/copilot-error-explanation.png)
+
+To learn more about this feature, see [Explain Console errors and warnings using Copilot in Edge](./copilot-explain-console.md).
+
+
 <!-- ====================================================================== -->
 ## Filter messages
 
 There are multiple ways to filter out messages in the **Console**.
 
 
-### Filter out browser messages
+<!-- ------------------------------ -->
+#### Filter out browser messages
 
-To only display messages that came from the JavaScript of the webpage, [Open the Console Sidebar](#open-the-console-sidebar) and then click **# user messages**.
+To only display messages that came from the JavaScript of the webpage, [Open the sidebar to filter messages](#open-the-sidebar-to-filter-messages) and then click **# user messages**.
 
 ![Displaying user messages](./reference-images/console-sidebar-drawer-user-messages.png)
 
 
-### Filter by log level
+<!-- ------------------------------ -->
+#### Filter by log level
 
 DevTools assigns each `console.*` method one of the four severity levels:
 
@@ -179,7 +202,8 @@ To use the log level to filter, [open the Console Sidebar](#open-the-console-sid
 ![Use the Sidebar to view warnings](./reference-images/console-sidebar-warnings.png)
 
 
-### Filter messages by URL
+<!-- ------------------------------ -->
+#### Filter messages by URL
 
 Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:`, DevTools displays all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` allows you to focus on the messages from these two scripts.
 
@@ -191,7 +215,7 @@ To hide messages from a URL, type `-url:`.  It's a negative URL filter.
 
 To display messages from a single URL:
 
-1. [Open the Console Sidebar](#open-the-console-sidebar).
+1. [Open the sidebar to filter messages](#open-the-console-sidebar-to-filter-messages).
 
 1. Expand the **# user messages** section.
 
@@ -200,12 +224,14 @@ To display messages from a single URL:
 ![Displaying the messages that came from wp-ad.min.js](./reference-images/console-filter-text-specified.png)
 
 
-### Filter out messages from different contexts
+<!-- ------------------------------ -->
+#### Filter out messages from different contexts
 
 Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the checkbox next to **Selected Context Only**.
 
 
-### Filter out messages that don't match a regular expression pattern
+<!-- ------------------------------ -->
+#### Filter out messages that don't match a regular expression pattern
 
 Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to filter out any messages that don't match that pattern.  DevTools checks whether the pattern is found in the message text or in the script that caused the message to be logged.
 
@@ -218,17 +244,20 @@ Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to
 This section contains features related to running JavaScript in the **Console**.  For a hands-on walkthrough, see [Run JavaScript](console-javascript.md).
 
 
-### Rerun expressions from history
+<!-- ------------------------------ -->
+#### Rerun expressions from history
 
 Press **Up Arrow** to cycle through the history of JavaScript expressions that you ran earlier in the **Console**.  Press **Enter** to run that expression again.
 
 
-### Watch the value of an expression in real time with Live Expressions
+<!-- ------------------------------ -->
+#### Watch the value of an expression in real time with Live Expressions
 
 If you find yourself typing the same JavaScript expression in the **Console** repeatedly, you might find it easier to create a **Live Expression**.  With **Live Expressions**, you type an expression once and then pin it to the top of your **Console**.  The value of the expression updates in near real time.  See [Watch JavaScript Expression Values In Real-Time With Live Expressions](live-expressions.md).
 
 
-### Turn off Eager Evaluation
+<!-- ------------------------------ -->
+#### Turn off Eager Evaluation
 
 **Eager Evaluation** displays a preview of the return value as you type JavaScript expressions in the **Console**.  To turn off the return value previews:
 
@@ -236,7 +265,8 @@ If you find yourself typing the same JavaScript expression in the **Console** re
 1. Clear the checkbox next to **Eager Evaluation**.
 
 
-### Turn off autocomplete from history
+<!-- ------------------------------ -->
+#### Turn off autocomplete from history
 
 As you type out an expression, the autocomplete popup window for the **Console** displays expressions that you ran earlier.  The expressions are pre-pended with the `>` character.  To stop displaying expressions from your history, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then clear the checkbox next to **Autocomplete From History** checkbox.
 
@@ -245,7 +275,8 @@ In the following figure, `document.querySelector('a')` and `document.querySelect
 ![The autocomplete popup menu displays expressions from history](./reference-images/console-filter-text-autofilter-history.png)
 
 
-### Select JavaScript context
+<!-- ------------------------------ -->
+#### Select JavaScript context
 
 By default, the **JavaScript Context** dropdown list is set to **top**, which represents the main webpage's [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context).
 
