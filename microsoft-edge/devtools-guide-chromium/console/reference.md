@@ -123,36 +123,39 @@ This following sections describe features that change how messages are presented
 <!-- ------------------------------ -->
 #### Turn off message grouping
 
+By default, the **Console** groups similar messages together.  For example, if multiple subsequent messages are logged, only one message is displayed in the **Console**.  The message includes a count of how many times the message was logged, and you can expand the message to see all the instances.
+
 To turn off the default message grouping behavior of the **Console**, click the **Console settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the **Group similar messages in console** checkbox.
 
 
 <!-- ------------------------------ -->
 #### Log XHR and Fetch requests
 
-To log all the network requests that are triggered by the `XMLHttpRequest` and `Fetch` JavaScript APIs, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the **Log XMLHttpRequests** checkbox.
+To log all the network requests that are triggered by the `XMLHttpRequest` and `Fetch` JavaScript APIs:
 
-<!-- TODO: either remove this out of context screenshot, or write new instructions based on one of our demo pages. -->
-![Logging XMLHttpRequest and Fetch requests](./reference-images/console-xhr-fetch.png)
+1. Open the demo webpage [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) in a new window or tab.
+
+1. In the **Console** tool, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button, and then elect the **Log XMLHttpRequests** checkbox.
+
+1. In the rendered webpage, click **Get Data** to trigger a `Fetch` API request. The **Console** logs the request and response details:
+
+   ![A Fetch request logged in the Console](./reference-images/xhr-fetch.png)
 
 
 <!-- ------------------------------ -->
 #### Persist messages across page loads
 
-When you load a new webpage, the default action clears the **Console**.  To persist messages across page loads, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the checkbox next to **Preserve Log**.
+When you load a new webpage, the messages in the **Console** are cleared.  To persist messages across page loads, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the **Preserve log** checkbox.
 
 
 <!-- ------------------------------ -->
-#### Hide network messages
+#### Hide network errors
 
-The default action for Microsoft Edge is to logs network messages to the **Console**.  In the following figure, the selected message represents an HTTP status code of `429`.
+By default, the **Console** tool logs network errors. For example, the following figure shows a network error message in the **Console** tool. The error is due to an HTTP response with the status code of `404`:
 
-![A '429' message in the Console](./reference-images/console-show-network.png)
+![A '404' network error message in the Console](./reference-images/network-404-error.png)
 
-To hide network messages:
-
-1. Click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button.
-
-1. Select the checkbox next to **Hide Network**.
+To hide network errors, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button, and then select the **Hide network** checkbox.
 
 
 <!-- ------------------------------ -->
@@ -174,133 +177,204 @@ There are multiple ways to filter out messages in the **Console**.
 <!-- ------------------------------ -->
 #### Filter out browser messages
 
-To only display messages that came from the JavaScript of the webpage, [Open the sidebar to filter messages](#open-the-sidebar-to-filter-messages) and then click **# user messages**.
+To only display messages that came from the JavaScript of the webpage:
 
-![Displaying user messages](./reference-images/console-sidebar-drawer-user-messages.png)
+1. Open the demo webpage [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) in a new window or tab, and then click the **Play** button.
+
+   The demo webpage logs messages to the **Console** and several browser messages are also logged:
+
+   ![Multiple user and browser messages in the Console](./reference-images/browser-and-user-messages.png)
+
+1. In the **Console** tool, to display the sidebar, click **Show console sidebar** (![Show console sidebar](./reference-images/show-console-sidebar-icon.png)).
+
+1. In the sidebar, click **3 user messages**. The number of user messages might vary depending on the number of messages that the webpage logs.
+
+   The **Console** tool only displays the messages that the webpage logs, and the browser messages are hidden:
+
+   ![Only user messages in the Console, with the sidebar opened](./reference-images/sidebar-user-messages.png)
 
 
 <!-- ------------------------------ -->
 #### Filter by log level
 
-DevTools assigns each `console.*` method one of the four severity levels:
+DevTools assigns each message logged to the **Console** tool one of the four severity levels:
 
 *  `Error`
 *  `Info`
 *  `Verbose`
 *  `Warning`
 
-For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console object API Reference](api.md) describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.
+The four severity levels apply to:
 
-You can hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you can hide the other three groups.
+* Messages that you log from your webpage by using `console` methods such as `console.log()`, `console.error()`, and `console.warn()`.
+* Messages that the browser logs.
 
-To filter the messages, click the **Log Levels** dropdown list and then select `Verbose`, `Info`, `Warning`, or `Error`.
+You can hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you can hide the other three levels.
 
-![The Log Levels dropdown list](./reference-images/console-log-level-default-levels.png)
+To filter messages by level:
 
-To use the log level to filter, [open the Console Sidebar](#open-the-console-sidebar) and then select **Errors**, **Warnings**, **Info**, or **Verbose**.
+1. In the toolbar of the **Console** tool, click the **Log level** dropdown list.
 
-![Use the Sidebar to view warnings](./reference-images/console-sidebar-warnings.png)
+   If the dropdown list isn't available, first hide the sidebar by clicking **Hide console sidebar** (![Hide console sidebar](./reference-images/hide-console-sidebar-icon.png)).
 
+1. In the dropdown list, enable or disable any of the `Verbose`, `Info`, `Warnings`, or `Errors` levels:
 
-<!-- ------------------------------ -->
-#### Filter messages by URL
-
-Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:`, DevTools displays all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` allows you to focus on the messages from these two scripts.
-
-![A URL filter](./reference-images/console-filter-text.png)
-
-To hide messages from a URL, type `-url:`.  It's a negative URL filter.
-
-![A negative URL filter that hides all messages that match the https://b.wal.co URL](./reference-images/console-negative-filter-text.png)
-
-To display messages from a single URL:
-
-1. [Open the sidebar to filter messages](#open-the-console-sidebar-to-filter-messages).
-
-1. Expand the **# user messages** section.
-
-1. Select the URL of the script that contains the messages that you want to focus on.
-
-![Displaying the messages that came from wp-ad.min.js](./reference-images/console-filter-text-specified.png)
+   ![The Log Levels dropdown list](./reference-images/log-levels.png)
 
 
 <!-- ------------------------------ -->
-#### Filter out messages from different contexts
+#### Filter messages by script URL
 
-Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then select the checkbox next to **Selected Context Only**.
+To filter messages by the URL of the script that logged the messages, use the **Filter** text box:
+
+1. Open the demo webpage [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) in a new window or tab. Messages from various scripts are logged to the **Console**.
+
+1. In the toolbar of the **Console** tool, click the **Filter** text box, and then type `url:`. A dropdown list containing the URLs of the scripts that logged messages appears:
+
+   ![The dropdown list of the Filter text box, showing script URLs](./reference-images/url-filter-dropdown.png)
+
+1. Select the URL of the script that you want to focus on. The **Console** tool only displays messages from that script:
+
+   ![Only messages from the selected script URL are displayed in the Console](./reference-images/url-filter-selected.png)
+
+You don't have to choose from the list of URLs that the **Console** tool provides in the **Filter** dropdown list. You can type the URL, or part of the URL, that you want to filter by. For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:example.com` allows you to focus on the messages from these two scripts.
+
+###### Reverse the filter with a negative URL filter
+
+To hide messages logged from a script, in the **Filter** text box, type `-url:` followed by the URL, or part of the URL, of the script. For example, to hide messages from `https://example.com/a.js`, type `-url:example.com/a.js`.
+
+###### Display messages from a single script by using the sidebar
+
+To display messages from a single script, by using the sidebar:
+
+1. To display the sidebar in the **Console**, click **Show console sidebar** (![Show console sidebar](./reference-images/show-console-sidebar-icon.png)). The sidebar appears.
+
+1. Expand the **3 user messages** section. The number might vary depending on the number of messages that the webpage logs. The list of scripts that logged messages appears.
+
+1. Select the script script that contains the messages that you want to focus on. The **Console** only displays messages from that script:
+
+   ![Filtering messages that came from one script by using the sidebar](./reference-images/filter-by-script-sidebar.png)
 
 
 <!-- ------------------------------ -->
-#### Filter out messages that don't match a regular expression pattern
+#### Filter out messages from different JavaSript contexts
 
-Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to filter out any messages that don't match that pattern.  DevTools checks whether the pattern is found in the message text or in the script that caused the message to be logged.
+By default, the **Console** tool displays messages from all the JavaScript contexts that are running on the webpage. This might include messages from cross-domain `<iframe>` elements that are embedded in the webpage, or service workers that are running in the background.
 
-![Filtering out any messages that don't match the regex expression](./reference-images/console-filter-regex.png)
+To only display messages from one JavaScript context:
+
+1. Click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button. The settings section appears.
+
+1. Select the **Selected context only** checkbox. Only the messages that are logged by the **top** JavaScript context are displayed in the **Console**.
+
+1. To choose a difference context, in the toolbar of the **Console** tool, click the **JavaScript context** dropdown list, and then select the context that you want to focus on:
+
+   ![The JavaScript Context dropdown list](./reference-images/single-context-setting.png)
+
+To learn more about selecting other JavaScript context, see [Select a JavaScript context](#select-a-javascript-context).
+
+
+<!-- ------------------------------ -->
+#### Filter messages by using a regular expression pattern
+
+To only display the messages that match a regular expression pattern:
+
+1. In the toolbar of the **Console** tool, click the **Filter** text box.
+
+1. Type a regular expression pattern, such as `/.*\.mp3$/` to match messages that end with **.mp3**.
+
+   The **Console** only shows the message that match the regular expression pattern:
+
+  ![The filtered list of messages, based on the regular expression](./reference-images/filter-regex.png)
 
 
 <!-- ====================================================================== -->
 ## Run JavaScript
 
-This section contains features related to running JavaScript in the **Console**.  For a hands-on walkthrough, see [Run JavaScript](console-javascript.md).
+This section contains features related to running JavaScript in the **Console**.  For a hands-on walkthrough, see [Run JavaScript in the Console](console-javascript.md).
 
 
 <!-- ------------------------------ -->
-#### Rerun expressions from history
+#### Run expressions again by using the Console history
 
-Press **Up Arrow** to cycle through the history of JavaScript expressions that you ran earlier in the **Console**.  Press **Enter** to run that expression again.
+To run an JavaScript expression that you ran earlier in the **Console**:
 
+1. Press **Up Arrow** to cycle through the history of the JavaScript expressions that you ran earlier.
 
-<!-- ------------------------------ -->
-#### Watch the value of an expression in real time with Live Expressions
-
-If you find yourself typing the same JavaScript expression in the **Console** repeatedly, you might find it easier to create a **Live Expression**.  With **Live Expressions**, you type an expression once and then pin it to the top of your **Console**.  The value of the expression updates in near real time.  See [Watch JavaScript Expression Values In Real-Time With Live Expressions](live-expressions.md).
+1. Press **Enter** to run the expression again.
 
 
 <!-- ------------------------------ -->
-#### Turn off Eager Evaluation
+#### Watch the value of an expression in real time by using a live expression
 
-**Eager Evaluation** displays a preview of the return value as you type JavaScript expressions in the **Console**.  To turn off the return value previews:
+To watch the value of a JavaScript expression in real-time, instead of running the expression repeatedly, create a live expression:
+
+1. In the toolbar of the **Console** tool, click the **Create live expression** button (![Create live expression icon](./reference-images/create-live-expression-icon.png)). The **Expression** text box appears below the toolbar.
+
+1. Enter a JavaScript expression, and then click outside of the **Expression** text box. The new expression and its value appear at the top of the **Console** tool.
+
+For more information, see [Monitor changes in JavaScript using Live Expressions](./live-expressions.md).
+
+
+<!-- ------------------------------ -->
+#### Disable evaluating JavaScript expressions as you type
+
+By default, the **Console** tool displays a preview of the value of an expression, as you type the JavaScript expression in the **Console**.
+
+To turn off the live preview as you type: 
 
 1. Click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button.
-1. Clear the checkbox next to **Eager Evaluation**.
+
+1. Clear the **Eager evaluation** checkbox.
 
 
 <!-- ------------------------------ -->
 #### Turn off autocomplete from history
 
-As you type out an expression, the autocomplete popup window for the **Console** displays expressions that you ran earlier.  The expressions are pre-pended with the `>` character.  To stop displaying expressions from your history, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button and then clear the checkbox next to **Autocomplete From History** checkbox.
+When you type a JavaScript expression in the **Console** tool, an autocomplete popup window appears. The autocomplete popup window contains:
 
-In the following figure, `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.
+* Suggestions for global JavaScript objects and functions that match the characters that you've typed.
+* Suggestions for JavaScript expressions that you ran earlier.
 
-![The autocomplete popup menu displays expressions from history](./reference-images/console-filter-text-autofilter-history.png)
+The suggestions for JavaScript expressions that you ran earlier are prefixed with the `>` character and appear at the bottom of the autocomplete window:
+
+![The autocomplete popup window displays expressions from history](./reference-images/autocomplete.png)
+
+To stop displaying suggestions from your previously ran expressions:
+
+1. Click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button.
+
+1. Clear the **Autocomplete from history** checkbox.
 
 
 <!-- ------------------------------ -->
-#### Select JavaScript context
+#### Select a context to run JavaScript expressions
 
-By default, the **JavaScript Context** dropdown list is set to **top**, which represents the main webpage's [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context).
+Webpages have a main [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context) where the webpage's JavaScript runs. However, webpages can have additional JavaScript contexts, such as cross-domain `<iframe>` elements that are embedded in the webpage, or service workers that are running in the background.
 
-![The JavaScript Context dropdown list](./reference-images/console-dom-level-top.png)
+By default, the **JavaScript context** dropdown list that's located in the toolbar of the **Console** tool is set to **top**, which represents the main webpage's browsing context:
 
-Suppose you have an ad on your webpage embedded in an `<iframe>`, and you want to run JavaScript to tweak the DOM of the ad.  Click the **JavaScript Context** dropdown list and then select the browsing context of the ad:
+![The JavaScript context dropdown list, showing that the top context is selected](./reference-images/top-context.png)
 
-![Selecting a different JavaScript context](./reference-images/console-dom-level-multiple.png)
+Any JavaScript expression that you run in the **Console** tool is evaluated in the context that's selected in the **JavaScript context** dropdown list.
+
+To run JavaScript expressions in a different context, such as within a cross-domain `<iframe>` element, click the **JavaScript context** dropdown list, and then select another browsing context.
 
 
 <!-- ====================================================================== -->
 ## Clear the Console
 
-To clear the Console, use any of the following approaches:
+To clear the **Console**, use any of the following approaches:
 
-*  Click **Clear Console** (![Clear Console](./reference-images/clear-console-button-icon.png)).
+*  Click the **Clear console** (![Clear console](./reference-images/clear-console-button-icon.png)) button.
 
-*  Right-click a message and then select **Clear Console**.
+*  Right-click a message and then select **Clear console**.
 
-*  Type `clear()` in the Console and then press **Enter**.
+*  Type `clear()` in the **Console** tool and then press **Enter**.
 
 *  Call `console.clear()` from your webpage's JavaScript.
 
-*  Press **Ctrl+L** while the Console is in focus.
+*  Press **Ctrl+L** while the **Console** tool is in focus.
 
 
 <!-- ====================================================================== -->
