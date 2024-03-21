@@ -117,7 +117,7 @@ The following are some of the commonly useful flags that are being used by WebVi
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
-| `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI is shown when the user clicks on the error range of a misspelling or grammar error. |
+| `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI is shown when the user clicks misspelled word. |
 | `msWebView2CodeCache` | If enabled, JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses (see [Custom management of network requests](..\how-to\webresourcerequested.md)). |
 | `msWebView2TextureStream` | If enabled, allows to stream captured or composed video frames to the WebView2 where JavaScript can render or otherwise interact with the frames via W3C standard DOM APIs including the Video element, and MediaStream. |
 | `msWebView2EnableDraggableRegions` | If `true`, enables webpages within WebView2 make use of the `app-region: drag\|nodrag` CSS style, which causes elements with that style to behave like a titlebar.  Without this flag, the `app-region: drag\|nodrag` CSS style has no effect. |
@@ -140,7 +140,7 @@ The following are some of the commonly useful flags that are being used by WebVi
 | `Restart` | Indicates that Microsoft Edge WebView2 browser process was restarted (such as after a flag change).  Use this flag to ignore the launch when recording the `Launch.Mode2` metric. |
 | `sdsm-state` | The "Super Duper Secure Mode" state.  Valid values: `off`, `basic`, `balanced`, `strict`. |
 | `SharedArrayBuffer` | If enabled, indicates that a `SharedArrayBuffer` thread is present. |
-| `SpareRendererForSitePerProcess` | If this flag is enabled, the Edge Webview spare renderer process tries to always have a warm spare renderer process around for the most recently requested `BrowserContext`.  This feature is only consulted in site-per-process mode. |
+| `SpareRendererForSitePerProcess` | If this flag is enabled, the Edge Webview spare renderer process tries to always have a warm spare renderer process running for the most recently requested `BrowserContext`.  This feature is only consulted in site-per-process mode. |
 | `ThirdPartyStoragePartitioning` | Enables partitioning of third-party storage, such as `IndexedDB` or `CacheStorage`, by the top-level site, to reduce fingerprinting. |
 | `unsafely-treat-insecure-origin-as-secure` | Treats given (insecure) origins as secure origins.  Multiple origins can be specified, as a comma-separated list.  For the definition of secure contexts, see [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), including the section [Is `origin` potentially trustworthy?](https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy).  Example: `--unsafely-treat-insecure-origin-as-secure=http://a.test,http://b.test` |
 | `use-fake-device-for-media-stream` | Uses a fake device for Media Stream to replace an actual camera and microphone. |
