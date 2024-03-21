@@ -1434,11 +1434,25 @@
             - name: Publish a UWP WebView2 app to the Microsoft Store
               href: webview2/how-to/publish-uwp-app-store.md
               displayName: Partner Center, Microsoft Store
+# -----------------------------------------------------------------
+# relnotes
+        - name: Release Notes
+          items:
+            - name: About  # new page
+              href: webview2/release-notes/about.md
+              displayName: About Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
-        - name: Release Notes for the WebView2 SDK
-          href: webview2/release-notes.md
-          displayName: what's new, announcements
+            - name: Release Notes
+              href: webview2/release-notes/index.md  # new location & file name, instead of at wv2 root
+              displayName: Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
+            - name: Archived Release Notes  # new page
+              href: webview2/release-notes/archive.md
+              displayName: Archived Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
+
+
+# end of relnotes
+# -----------------------------------------------------------------
         - name: WebView2 Roadmap
           href: webview2/roadmap.md
 
