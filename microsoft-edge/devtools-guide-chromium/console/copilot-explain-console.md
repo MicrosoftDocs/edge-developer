@@ -33,15 +33,17 @@ This feature is for use in standard browser window, and is not available in the 
 
 To use this explanation feature, enable Copilot in Edge:
 
-1. Sign into Microsoft Edge. See [Sign in to sync Microsoft Edge across devices](https://support.microsoft.com/microsoft-edge/sign-in-to-sync-microsoft-edge-across-devices-e6ffa79b-ed52-aa32-47e2-5d5597fe4674).
+1. Sign into Microsoft Edge.  See [Sign in to sync Microsoft Edge across devices](https://support.microsoft.com/microsoft-edge/sign-in-to-sync-microsoft-edge-across-devices-e6ffa79b-ed52-aa32-47e2-5d5597fe4674).
 
-1. Make sure the Copilot icon (![The Copilot icon in the browser toolbar](./copilot-explain-console-images/copilot-icon.png)) is visible in the top-right corner of the browser toolbar. If it's not, in Microsoft Edge, select **Settings and more** (**...**) > **Settings** > **Sidebar** > **Copilot**, and then turn on the **Show Copilot** toggle.
+1. Make sure the Copilot icon (![The Copilot icon in the browser toolbar](./copilot-explain-console-images/copilot-icon.png)) is visible in the top-right corner of the browser toolbar. If the Copilot icon isn't displayed, in Microsoft Edge, select **Settings and more** (**...**) > **Settings** > **Sidebar** > **Copilot**, and then turn on the **Show Copilot** toggle.
 
 
 <!-- ====================================================================== -->
 ## Explain errors and warnings in the Console tool
 
 To use Copilot to explain an error or warning in the **Console** tool:
+
+1. If not done already, [enable Copilot in Edge](#enable-copilot-in-edge), as described above.
 
 1. Open a web page that contains the errors you want to explain. For example, open the [Console error explainer test page](https://microsoftedge.github.io/Demos/devtools-explain-error/) in a new window or tab.
 
