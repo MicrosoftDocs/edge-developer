@@ -12,7 +12,7 @@ ms.date: 03/20/2024
 
 The **Sources** tool in Microsoft Edge DevTools integrate with Copilot in Microsoft Edge to help you understand source code.
 
-When inspecting a webpage you didn't build, you might not be familiar with the source code displayed in the **Sources** tool. By using the **Explain these lines of code** feature, you get more information about the source code in Copilot in Edge:
+When inspecting a webpage, you might want more information about the source code that's displayed in the **Sources** tool.  By using the **Explain these lines of code** feature, you get more information about the source code in Copilot in Edge:
 
 ![Copilot in the Microsoft Edge sidebar, showing the source code and the explanation.](./copilot-explain-source-code-images/copilot-code-explanation.png)
 

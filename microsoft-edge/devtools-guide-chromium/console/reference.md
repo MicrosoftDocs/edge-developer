@@ -140,7 +140,7 @@ To log all the network requests that are triggered by the `XMLHttpRequest` and `
 
 1. In the **Console** tool, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button, and then elect the **Log XMLHttpRequests** checkbox.
 
-1. In the rendered webpage, click **Get Data** to trigger a `Fetch` API request. The **Console** logs the request and response details:
+1. In the rendered webpage, click the **Get Data** button.  This triggers a `Fetch` API request, and the **Console** then logs the request and response details:
 
    ![A Fetch request logged in the Console](./reference-images/xhr-fetch.png)
 
@@ -154,9 +154,11 @@ When you load a new webpage, the messages in the **Console** are cleared.  To pe
 <!-- ------------------------------ -->
 #### Hide network errors
 
-By default, the **Console** tool logs network errors. For example, the following figure shows a network error message in the **Console** tool. The error is due to an HTTP response with the status code of `404`:
+By default, the **Console** tool logs network errors:
 
 ![A '404' network error message in the Console](./reference-images/network-404-error.png)
+
+The error shown above is due to an HTTP response with the status code of `404`.
 
 To hide network errors, click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button, and then select the **Hide network** checkbox.
 

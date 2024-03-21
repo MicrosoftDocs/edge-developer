@@ -58,7 +58,7 @@ The change you made in DevTools is useful to quickly test a bug fix, but is temp
 <!-- ====================================================================== -->
 ## Explain source code using Copilot in Edge
 
-When inspecting a webpage you didn't build, you might not be familiar with the source code displayed in the **Sources** tool. By using the **Explain these lines of code** feature, you get more information about the source code in Copilot in Edge:
+When inspecting a webpage, you might want more information about the source code that's displayed in the **Sources** tool.  By using the **Explain these lines of code** feature, you get more information about the source code in Copilot in Edge:
 
 ![Copilot in the Microsoft Edge sidebar, showing the source code and the explanation.](./reference-images/copilot-code-explanation.png)
 
