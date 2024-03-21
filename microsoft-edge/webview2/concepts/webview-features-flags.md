@@ -107,7 +107,7 @@ The following are some of the commonly useful flags that are being used by WebVi
 | `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled. |
 | `msEdgeDesignerUI` | Use this flag to disable the Designer Shoreline App. This feature is not supported in WebView2. |
 | `msEdgeHubAppDesigner ` | Use this flag to disable the Designer Shoreline App. This feature is not supported in WebView2. |
-| `msEdgeDesignerDriverFix ` |  Use this flag to disable get content and auto show Designer feature. This feature is not supported in WebView2. |
+| `msEdgeDesignerDriverFix ` |  Use this flag to disable getting content and automatically showing the Designer feature. This feature is not supported in WebView2. |
 | `msEdgeFluentOverlayScrollbar` | Force-enables Fluent Overlay scrollbars, overriding whatever value `kFluentScrollbar` may hold at the moment. |
 | `msEdgeDevToolsWdpRemoteDebugging` | Enables remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging.md), [Remotely debug Windows devices](../../devtools-guide-chromium/remote-debugging/windows.md). |
 | `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
