@@ -178,11 +178,6 @@
             - name: Share enhanced performance and memory traces
               href: devtools-guide-chromium/experimental-features/share-traces.md
               displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
-
-            - name: Explain DevTools Console errors and source code using Copilot in Edge
-              href: devtools-guide-chromium/experimental-features/copilot-explain.md
-              displayName: Experimental features, Explain errors, Explain code, AI, Copilot in Edge, Copilot
-
 # TOOLS =======================================================================
         - name: Tools
           items:

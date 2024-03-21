@@ -10,7 +10,7 @@ ms.date: 03/20/2024
 ---
 # Explain Console errors and warnings using Copilot in Edge
 
-The **Console** tool in Microsoft Edge DevTools integrate with Copilot in Microsoft Edge to help you understand errors and warnings.
+To help you understand errors and warnings, the **Console** tool in Microsoft Edge DevTools integrates Copilot in Microsoft Edge.
 
 When inspecting a webpage with DevTools, you often see errors and warnings in the **Console** tool. These errors and warnings can sometimes be difficult to understand and fix. By using the **Explain this error** feature, you get more information about the error or warning in Copilot in Edge:
 
@@ -20,12 +20,14 @@ When inspecting a webpage with DevTools, you often see errors and warnings in th
 <!-- ------------------------------ -->
 #### Supported scenarios
 
-This feature is for use in standard browser window, and is not available in the following scenarios:
+This feature is for use in standard browser windows, and is not available in the following scenarios:
 
-* Browsing in an InPrivate window.  For information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
-* Browsing with Kids Mode in Microsoft Edge.  For information about Kids Mode, see [Learn more about Kids Mode in Microsoft Edge](https://support.microsoft.com/microsoft-edge/learn-more-about-kids-mode-in-microsoft-edge-4bf0273c-1cbd-47a9-a8f3-895bc1f95bdd).
-* Using DevTools with a Microsoft Edge WebView2 control.  For information about DevTools with WebView2 apps, see [Debug WebView2 apps with Microsoft Edge DevTools](../../webview2/how-to/debug-devtools.md).
-* Using DevTools in a standalone Progressive Web App window.
+| Scenario | Article |
+|---|---|
+| Browsing in an InPrivate window | [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2) |
+| Browsing with Kids Mode in Microsoft Edge | [Learn more about Kids Mode in Microsoft Edge](https://support.microsoft.com/microsoft-edge/learn-more-about-kids-mode-in-microsoft-edge-4bf0273c-1cbd-47a9-a8f3-895bc1f95bdd) |
+| Using DevTools with a Microsoft Edge WebView2 control | [Debug WebView2 apps with Microsoft Edge DevTools](../../webview2/how-to/debug-devtools.md) |
+| Using DevTools in a standalone Progressive Web App window | [Use a standalone app window](../../progressive-web-apps-chromium/how-to/best-practices.md#use-a-standalone-app-window) in _Best practices for PWAs_ |
 
 
 <!-- ====================================================================== -->
@@ -70,3 +72,9 @@ To use Copilot to explain an error or warning in the **Console** tool:
 ## Provide feedback
 
 The responses that Copilot in Edge provides when you use the above feature are automatically generated, so surprises and mistakes are possible. We're constantly improving the level of quality and accuracy of the responses, but if you see an incorrect response, let us know by adding a comment at: [Feedback for the Explain errors and source code in Copilot in Edge experiment](https://github.com/MicrosoftEdge/DevTools/issues/203).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Explain source code using Copilot in Edge](../javascript/copilot-explain-source-code.md)

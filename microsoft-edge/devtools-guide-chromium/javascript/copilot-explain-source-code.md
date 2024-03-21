@@ -68,3 +68,9 @@ To use Copilot to explain code in the **Sources** tool:
 ## Provide feedback
 
 The responses that Copilot in Edge provides when you use the above feature are automatically generated, so surprises and mistakes are possible. We're constantly improving the level of quality and accuracy of the responses, but if you see an incorrect response, let us know by adding a comment at: [Feedback for the Explain errors and source code in Copilot in Edge experiment](https://github.com/MicrosoftEdge/DevTools/issues/203).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Explain Console errors and warnings using Copilot in Edge](../console/copilot-explain-console.md)
