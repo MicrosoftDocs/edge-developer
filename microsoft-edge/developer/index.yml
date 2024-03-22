@@ -168,7 +168,7 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: Release Notes for the WebView2 SDK
-            url: ../webview2/release-notes.md
+            url: ../webview2/release-notes/index.md
       - linkListType: reference
         links:
           - text: WebView2 API Reference

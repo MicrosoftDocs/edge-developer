@@ -284,7 +284,7 @@ The **Selected context only** settings in Console Settings is now persisted.  Pr
 Chromium issue [#1055875](https://crbug.com/1055875)
 
 See also:
-* [Filter out messages from different contexts](../../../console/reference.md#filter-out-messages-from-different-contexts) - in _Console features reference_
+* [Filter out messages from different JavaScript contexts](../../../console/reference.md#filter-out-messages-from-different-javascript-contexts) - in _Console features reference_
 
 
 <!-- ====================================================================== -->
