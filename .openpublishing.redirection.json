@@ -39,6 +39,11 @@ Old redirects (to /archive/)
         "redirect_document_id": false
       },
       {
+        "source_path": "microsoft-edge/devtools-guide-chromium/experimental-features/copilot-explain.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/console/copilot-explain-console",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "microsoft-edge/devtools-guide-chromium/beginners/css.md",
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/css",
         "redirect_document_id": false

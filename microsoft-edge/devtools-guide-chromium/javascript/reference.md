@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/26/2023
+ms.date: 03/20/2024
 ---
 <!-- Copyright Kayce Basques
 
@@ -53,6 +53,16 @@ To view and edit a JavaScript file:
 1. Test the change.  For example, click the **Add Number 1 and Number 2** button on the demo page.  The alert appears.
 
 The change you made in DevTools is useful to quickly test a bug fix, but is temporary.  To make the change permanent, you need to make the change in your source code and then re-upload the file to the server.
+
+
+<!-- ====================================================================== -->
+## Explain source code using Copilot in Edge
+
+When inspecting a webpage, you might want more information about the source code that's displayed in the **Sources** tool.  By using the **Explain these lines of code** feature, you get more information about the source code in Copilot in Edge:
+
+![Copilot in the Microsoft Edge sidebar, showing the source code and the explanation.](./reference-images/copilot-code-explanation.png)
+
+To learn more about this feature, see [Explain source code using Copilot in Edge](./copilot-explain-source-code.md).
 
 
 <!-- ====================================================================== -->
