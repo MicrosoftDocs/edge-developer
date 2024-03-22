@@ -170,8 +170,8 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 * `CoreWebView2FileSystemHandle` Class:
    * [CoreWebView2FileSystemHandle.Kind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2filesystemhandle?view=webview2-winrt-1.0.2470-prerelease&preserve-view=true#kind)
+   * [CoreWebView2FileSystemHandle.Path Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2filesystemhandle?view=webview2-winrt-1.0.2470-prerelease&preserve-view=true#path)
    * [CoreWebView2FileSystemHandle.Permission Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2filesystemhandle?view=webview2-winrt-1.0.2470-prerelease&preserve-view=true#permission)
-   <!-- todo: add Path item, like Win32 & .net tab?  https://review.learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalfilesystemhandle?branch=pr-en-us-87&view=webview2-win32-preview -->
 
 * [CoreWebView2FileSystemHandleKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2filesystemhandlekind?view=webview2-winrt-1.0.2470-prerelease&preserve-view=true)
    * `File`
