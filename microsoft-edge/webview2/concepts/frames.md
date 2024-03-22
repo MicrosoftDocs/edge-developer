@@ -302,7 +302,7 @@ For iframes, you can listen to network events and modify them, by using the `Web
 See also:
 * [Manage network requests in WebView2](./overview-features-apis.md#manage-network-requests-in-webview2) in _Overview of WebView2 features and APIs_.
 * [Custom management of network requests](../how-to/webresourcerequested.md)
-* [Experimental APIs for 1.0.1222-prerelease](../release-notes.md#experimental-apis-for-101222-prerelease) in _Release Notes for the WebView2 SDK_.
+* [Experimental APIs for 1.0.1222-prerelease](../release-notes/archive.md#experimental-apis-for-101222-prerelease) in _Archived Release Notes for the WebView2 SDK_.
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
