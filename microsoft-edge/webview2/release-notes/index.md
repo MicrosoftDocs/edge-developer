@@ -306,13 +306,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ###### Runtime-only
 
 * Fixed a reliability regression that could crash the application process when an old version of WebView2 client DLL is unloaded.
-
-
-###### Runtime and SDK
-
 * Ensured that the WebView2 temporary download folder is unique per user data folder, and doesn't interfere with other apps or the browser.
-<!-- todo: confirm that this is both Runtime & SDK.  vs. the orig commit that added this item in both the "Runtime-only" and "SDK-only" sections -->
-
 
 <!-- end of Mar. 2024 Prerelease SDK -->
 
