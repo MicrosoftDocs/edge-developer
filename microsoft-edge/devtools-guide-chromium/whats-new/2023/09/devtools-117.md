@@ -31,7 +31,9 @@ msedge.exe --enable-features=msEdgeAIExplainConsoleError
 Or, go to `edge://flags` and toggle the flag **Explain DevTools with AI**.
 
 See also:
-* [Explain DevTools Console errors and source code using Copilot in Edge](../../../experimental-features/copilot-explain.md)
+
+* [Explain Console errors and warnings using Copilot in Edge](../../../console/copilot-explain-console.md)
+* [Explain source code using Copilot in Edge](../../../javascript/copilot-explain-source-code.md)
 
 
 <!-- ====================================================================== -->

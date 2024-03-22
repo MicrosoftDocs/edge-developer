@@ -178,11 +178,6 @@
             - name: Share enhanced performance and memory traces
               href: devtools-guide-chromium/experimental-features/share-traces.md
               displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
-
-            - name: Explain DevTools Console errors and source code using Copilot in Edge
-              href: devtools-guide-chromium/experimental-features/copilot-explain.md
-              displayName: Experimental features, Explain errors, Explain code, AI, Copilot in Edge, Copilot
-
 # TOOLS =======================================================================
         - name: Tools
           items:
@@ -259,6 +254,10 @@
                   href: devtools-guide-chromium/console/console-javascript.md
                   displayName: Console tool
 
+                - name: Explain Console errors and warnings using Copilot in Edge
+                  href: devtools-guide-chromium/console/copilot-explain-console.md
+                  displayName: Console tool, Copilot in Edge, Copilot, Explain error
+
                 - name: Console object API Reference
                   href: devtools-guide-chromium/console/api.md
                   displayName: Console tool, API Reference
@@ -300,6 +299,10 @@
                 - name: JavaScript debugging features  # orig: "JavaScript debugging reference"
                   href: devtools-guide-chromium/javascript/reference.md
                   displayName: Sources tool
+
+                - name: Explain source code using Copilot in Edge
+                  href: devtools-guide-chromium/javascript/copilot-explain-source-code.md
+                  displayName: Sources tool, Copilot in Edge, Copilot, Explain source code
 
                 - name: Run snippets of JavaScript on any webpage
                   href: devtools-guide-chromium/javascript/snippets.md
@@ -1443,11 +1446,25 @@
             - name: Publish a UWP WebView2 app to the Microsoft Store
               href: webview2/how-to/publish-uwp-app-store.md
               displayName: Partner Center, Microsoft Store
+# -----------------------------------------------------------------
+# relnotes
+        - name: Release Notes
+          items:
+            - name: About  # new page
+              href: webview2/release-notes/about.md
+              displayName: About Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
-        - name: Release Notes for the WebView2 SDK
-          href: webview2/release-notes.md
-          displayName: what's new, announcements
+            - name: Release Notes
+              href: webview2/release-notes/index.md  # new location & file name, instead of at wv2 root
+              displayName: Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
+            - name: Archived Release Notes  # new page
+              href: webview2/release-notes/archive.md
+              displayName: Archived Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
+
+
+# end of relnotes
+# -----------------------------------------------------------------
         - name: WebView2 Roadmap
           href: webview2/roadmap.md
 

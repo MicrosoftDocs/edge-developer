@@ -39,7 +39,7 @@ Follow the instructions to install [Microsoft Edge WebDriver](../../webdriver-ch
 
 Make sure the version of Microsoft Edge WebDriver matches the version of the WebView2 Runtime that your app uses.  For the WebView2API Sample to work, make sure your version of the WebView2 Runtime is greater than or equal to the supported version of the latest WebView2 SDK release.
 
-*  To locate the latest WebView2 SDK release, see [Release Notes for the WebView2 SDK](../release-notes.md).
+*  To locate the latest WebView2 SDK release, see [Release Notes for the WebView2 SDK](../release-notes/index.md).
 
 *  To find out which version of the WebView2 Runtime you currently have, go to `edge://settings/help`.
 
