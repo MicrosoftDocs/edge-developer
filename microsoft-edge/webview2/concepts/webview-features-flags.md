@@ -56,7 +56,7 @@ See also Globals:
 <!-- ====================================================================== -->
 ## Available WebView2 browser flags
 
-The following are some of the flags that are used by WebView2 apps.
+The following are some of the flags we've seen used.
 
 | Flag | Description |
 |---|---|
