@@ -42,7 +42,10 @@ You can now ask DevTools to explain any Console error, Console warning, or code 
 
 This feature is enabled by default, starting with Microsoft Edge 120.  See the blog post: [Navigate the unexpected: using Copilot in Edge and DevTools](https://blogs.windows.com/msedgedev/2023/12/14/navigate-the-unexpected-using-copilot-in-edge-and-devtools/).
 
-If you don't see the feature, you might need to enable it.  To enable this feature, follow the steps in [Enable the features](../../../experimental-features/copilot-explain.md#enable-the-features), in the article _Explain DevTools Console errors and source code using Copilot in Edge_.
+If you don't see the feature, you might need to enable Copilot in Edge first.  To learn more, see:
+
+* [Explain Console errors and warnings using Copilot in Edge](../../../console/copilot-explain-console.md)
+* [Explain source code using Copilot in Edge](../../../javascript/copilot-explain-source-code.md)
 
 If you have any questions, comments, or feedback about the feature, please leave a comment in the GitHub Issue: [\[Feedback\]\[Experiment\] Explain errors, warnings, and source code in the Console and Sources tools](https://github.com/MicrosoftEdge/DevTools/issues/203).
 
