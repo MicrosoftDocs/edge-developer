@@ -48,4 +48,4 @@ The following What's New entries cover older releases.
 * [What's New in DevTools (Microsoft Edge 80)](2019/12/devtools.md)
 
 See also:
-* [What's New in Microsoft Edge DevTools](whats-new.md)
+* [What's New in Microsoft Edge DevTools](./whats-new.md)
