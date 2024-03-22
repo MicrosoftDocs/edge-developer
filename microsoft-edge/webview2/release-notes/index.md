@@ -156,8 +156,8 @@ The following Experimental APIs have been added in this Prerelease SDK.
    * `ReadWrite`
 
 * `CoreWebView2ObjectCollection` Class:
-   * [CoreWebView2ObjectCollection.InsertValueAtIndex Property] - todo: link
-   * [CoreWebView2ObjectCollection.RemoveValueAtIndex Property] - todo: link
+   * [CoreWebView2ObjectCollection.InsertValueAtIndex Property](/dotnet/api/microsoft.web.webview2.core.corewebview2objectcollection.insertvalueatindex?view=webview2-dotnet-1.0.2470-prerelease&preserve-view=true)
+   * [CoreWebView2ObjectCollection.RemoveValueAtIndex Property](/dotnet/api/microsoft.web.webview2.core.corewebview2objectcollection.removevalueatindex?view=webview2-dotnet-1.0.2470-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
