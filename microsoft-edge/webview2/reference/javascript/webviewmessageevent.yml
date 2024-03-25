@@ -3,7 +3,9 @@ name: WebViewMessageEvent
 uid: 'WebView2Script!WebViewMessageEvent:class'
 package: WebView2Script!
 fullName: WebViewMessageEvent
-summary: ''
+summary: >-
+  Event object for the `chrome.webview.webmessage` event. This event is dispatched when
+  `CoreWebView2.PostWebMessage*` is successfully called.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,7 +22,7 @@ properties:
       | DOM | Win32 |
       | ------- | ------------ |
       | [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle) | ICoreWebView2FileSystemHandle (kind `File`) |
-      | [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle) ICoreWebView2FileSystemHandle (kind `Directory`) |
+      | [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle) | ICoreWebView2FileSystemHandle (kind `Directory`) |
 
       `nullptr` entries will be passed as `null` type.
     remarks: ''
