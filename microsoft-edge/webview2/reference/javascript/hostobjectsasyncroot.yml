@@ -49,7 +49,7 @@ methods:
     uid: 'WebView2Script!HostObjectsAsyncRoot#cancelPromise:member(1)'
     package: WebView2Script!
     fullName: cancelPromise(promise)
-    summary: Performs a best effort cancelation on promises for async method calls.
+    summary: Performs a best-effort cancellation on promises for async method calls.
     remarks: ''
     isPreview: false
     isDeprecated: false

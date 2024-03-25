@@ -14,13 +14,15 @@ properties:
     package: WebView2Script!
     fullName: additionalObjects
     summary: |-
-      Additional DOM objects that are sent via PostJSONMessageWithAdditionalObjects. These objects can be of following
+      Additional DOM objects that are sent via `PostJSONMessageWithAdditionalObjects`. These objects can be of the following
       types:
 
-      DOM | Win32
-      ------- | ------------
-      [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle) | ICoreWebView2FileSystemHandle (kind File)
-      [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle) ICoreWebView2FileSystemHandle (kind Directory)
+      | DOM | Win32 |
+
+      | ------- | ------------ |
+
+      [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle) | ICoreWebView2FileSystemHandle (kind `File`)
+      [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle) ICoreWebView2FileSystemHandle (kind `Directory`)
 
       `nullptr` entries will be passed as `null` type.
     remarks: ''
