@@ -18,11 +18,9 @@ properties:
       types:
 
       | DOM | Win32 |
-
       | ------- | ------------ |
-
-      [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle) | ICoreWebView2FileSystemHandle (kind `File`)
-      [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle) ICoreWebView2FileSystemHandle (kind `Directory`)
+      | [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle) | ICoreWebView2FileSystemHandle (kind `File`) |
+      | [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle) ICoreWebView2FileSystemHandle (kind `Directory`) |
 
       `nullptr` entries will be passed as `null` type.
     remarks: ''
