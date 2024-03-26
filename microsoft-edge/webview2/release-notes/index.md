@@ -190,7 +190,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- ====================================================================== -->
 ## 1.0.2470-prerelease
 
-Release Date: March 15, 2024
+Release Date: March 25, 2024
 
 [NuGet package for WebView2 SDK 1.0.2470-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2470-prerelease)
 
