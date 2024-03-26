@@ -14,3 +14,5 @@ classes:
   - 'WebView2Script!HostObjectSyncProxy:class'
   - 'WebView2Script!SharedBufferReceivedEvent:class'
   - 'WebView2Script!WebView:class'
+  - 'WebView2Script!WebViewEventMap:class'
+  - 'WebView2Script!WebViewMessageEvent:class'
