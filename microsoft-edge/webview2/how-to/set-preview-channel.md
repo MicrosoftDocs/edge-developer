@@ -27,7 +27,7 @@ The prerelease SDK works together with a preview channel as follows:
 
 *  The preview channels of Microsoft Edge contain the Microsoft Edge binaries that are needed to run and render your app, including the implementation of the experimental APIs.
 
-For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, see [Understand the different WebView2 SDK versions](../concepts/versioning.md).
+For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, see [Prerelease and Release SDKs for WebView2](../concepts/versioning.md).
 
 
 <!-- ====================================================================== -->
