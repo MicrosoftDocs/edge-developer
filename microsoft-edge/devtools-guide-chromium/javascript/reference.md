@@ -297,7 +297,7 @@ Click an entry to jump to the line of code where that function was called.  The 
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there isn't right now, so it is here.
 -->
 
-To copy the current call stack to the clipboard, right-click the **Call Stack** pane, and then select **Copy stack trace**.
+To copy the current call stack to the clipboard, right-click the **Call Stack** pane, and then select **Copy stack trace**:
 
 ![The Copy Stack Trace command](./reference-images/copy-stack-trace.png)
 
