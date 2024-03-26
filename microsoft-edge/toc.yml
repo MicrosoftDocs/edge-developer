@@ -1523,6 +1523,10 @@
                   uid: 'WebView2Script!SharedBufferReceivedEvent:class'
                 - name: WebView
                   uid: 'WebView2Script!WebView:class'
+                - name: WebViewEventMap
+                  uid: 'WebView2Script!WebViewEventMap:class'
+                - name: WebViewMessageEvent
+                  uid: 'WebView2Script!WebViewMessageEvent:class'
 
         - name: WebView2 end-user FAQ
           href: webview2/concepts/end-user-faq.md

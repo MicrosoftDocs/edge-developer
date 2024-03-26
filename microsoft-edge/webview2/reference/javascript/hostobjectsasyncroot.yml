@@ -45,6 +45,23 @@ properties:
       return:
         type: '<xref uid="WebView2Script!HostObjectsSyncRoot:class" />'
 methods:
+  - name: cancelPromise(promise)
+    uid: 'WebView2Script!HostObjectsAsyncRoot#cancelPromise:member(1)'
+    package: WebView2Script!
+    fullName: cancelPromise(promise)
+    summary: Performs a best-effort cancellation on promises for async method calls.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cancelPromise(promise: Promise<HostObjectAsyncProxy>): void;'
+      parameters:
+        - id: promise
+          description: ''
+          type: 'Promise&lt;<xref uid="WebView2Script!HostObjectAsyncProxy:class" />&gt;'
+      return:
+        type: void
+        description: ''
   - name: cleanupSome()
     uid: 'WebView2Script!HostObjectsAsyncRoot#cleanupSome:member(1)'
     package: WebView2Script!
