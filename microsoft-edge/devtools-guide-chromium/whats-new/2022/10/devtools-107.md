@@ -45,11 +45,11 @@ When the **Activity Bar** is horizontal, a tooltip appears when a tool icon does
 <!-- ====================================================================== -->
 ## New keyboard shortcut for the Command Palette experiment
 
+_The Command Palette experiment was removed in Microsoft Edge 123._
+
 <!-- Subtitle: Enable the Command Palette experiment in Microsoft Edge 107 and open it with Ctrl+Q (Command+Q on macOS). -->
 
 In [Microsoft Edge 106](../09/devtools-106.md#introducing-the-command-palette), we introduced the Command Palette, an experimental feature for accessing browser management and developer tools commands.  In Microsoft Edge 107, the keyboard shortcut for opening the Command Palette has been updated from **Shift+Ctrl+Spacebar** to **Ctrl+Q** on Windows, macOS, and Linux.
-
-To enable the Command Palette experiment, see [Enable Command Palette](../../../experimental-features/edge-command-palette.md#enable-command-palette) in _Run commands via keyboard with Command Palette_.  After the Command Palette experiment is enabled, press **Ctrl+Q** to open the Command Palette.
 
 ![Command Palette](./devtools-107-images/command-palette.png)
 

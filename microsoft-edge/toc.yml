@@ -217,10 +217,6 @@
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
 
-            - name: Run commands via keyboard with Command Palette
-              href: devtools-guide-chromium/experimental-features/edge-command-palette.md
-              displayName: Experimental features, Edge Command Palette
-
             - name: Share enhanced performance and memory traces
               href: devtools-guide-chromium/experimental-features/share-traces.md
               displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
