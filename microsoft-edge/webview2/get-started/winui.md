@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/14/2024
+ms.date: 03/28/2024
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK) apps
 
@@ -203,9 +203,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
 <!-- ---------- -->
 #### WinAppSDK supports custom WebView2 environments
 
-Background information:
-
-WinAppSDK supports custom WebView2 environments.  See [WinUI3 WebView2 with a custom CoreWebView2Environment](https://github.com/microsoft/microsoft-ui-xaml/issues/6150).  WebView2 custom environment support has been added in WinAppSDK 1.5 (first appearing in [1.5.0-experimental2](/windows/apps/windows-app-sdk/experimental-channel#version-15-experimental-150-experimental2)).
+WinAppSDK supports custom WebView2 environments, starting with WinAppSDK 1.5 ([1.5.0-experimental2](/windows/apps/windows-app-sdk/experimental-channel#version-15-experimental-150-experimental2)).  For more information, see [WinUI3 WebView2 with a custom CoreWebView2Environment](https://github.com/microsoft/microsoft-ui-xaml/issues/6150).
 
 To implement a custom WebView2 environment, initialize WebView2 with one of the overrides of `WebView2.EnsureCoreWebView2Async` (listed below), and pass in your custom `CoreWebView2Environment` (and, optionally, custom `CoreWebView2ControllerOptions`):
 
@@ -213,6 +211,8 @@ To implement a custom WebView2 environment, initialize WebView2 with one of the 
 public IAsyncAction EnsureCoreWebView2Async (CoreWebView2Environment environment)
 public IAsyncAction EnsureCoreWebView2Async (CoreWebView2Environment environment, CoreWebView2ControllerOptions controllerOptions)
 ```
+
+Also see the example code in [Disabling SmartScreen navigation](#disabling-smartscreen-navigation), below.
 
 API Reference:
 * [WebView2.EnsureCoreWebView2Async](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async)
