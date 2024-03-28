@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/06/2022
+ms.date: 03/28/2024
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK) apps
 
@@ -200,6 +200,28 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
 1.  Close the app.
 
 
+<!-- ---------- -->
+#### WinAppSDK supports custom WebView2 environments
+
+WinAppSDK supports custom WebView2 environments, starting with WinAppSDK 1.5 ([1.5.0-experimental2](/windows/apps/windows-app-sdk/experimental-channel#version-15-experimental-150-experimental2)).  For more information, see [WinUI3 WebView2 with a custom CoreWebView2Environment](https://github.com/microsoft/microsoft-ui-xaml/issues/6150).
+
+To implement a custom WebView2 environment, initialize WebView2 with one of the overrides of `WebView2.EnsureCoreWebView2Async` (listed below), and pass in your custom `CoreWebView2Environment` (and, optionally, custom `CoreWebView2ControllerOptions`):
+
+```csharp
+public IAsyncAction EnsureCoreWebView2Async (CoreWebView2Environment environment)
+public IAsyncAction EnsureCoreWebView2Async (CoreWebView2Environment environment, CoreWebView2ControllerOptions controllerOptions)
+```
+
+Also see the example code in [Disabling SmartScreen navigation](#disabling-smartscreen-navigation), below.
+
+API Reference:
+* [WebView2.EnsureCoreWebView2Async](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async)
+* [CoreWebView2ControllerOptions](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions)
+* [CoreWebView2Environment](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
+* [CoreWebView2EnvironmentOptions](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions)
+
+
+
 <!-- ====================================================================== -->
 ## Step 5 - Add navigation controls
 
@@ -372,8 +394,6 @@ You can use host apps to inject JavaScript code into WebView2 controls at runtim
 
 As an example, next, you add scripts that send an alert when a user tries to open non-HTTPS sites.  To do this, you inject a script into the web content that uses
 [ExecuteScriptAsync](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.executescriptasync).
-<!-- todo: correct link? -->
-<!-- [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync). -->
 
 1.  In the `EnsureHttps` method, add the following `ExecuteScriptAsync` line:
 
@@ -415,9 +435,30 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## WinUI 3 WebView2 special considerations
 
-#### SmartScreen
 
-WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
+<!-- ------------------------------ -->
+#### Disabling SmartScreen navigation
+
+WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure.  If you want to disable this navigation, use a custom `CoreWebView2Environment`, as follows:
+
+```csharp
+CoreWebView2EnvironmentOptions environmentOptions = new CoreWebView2EnvironmentOptions();
+environmentOptions.AdditionalBrowserArguments = "--disable-features=msSmartScreenProtection";
+
+string browserFolder = null; // Use null to get default browser folder
+string userDataFolder = null; // Use null to get default user data folder
+CoreWebView2Environment environment = await CoreWebView2Environment.CreateWithOptionsAsync(
+    browserFolder, userDataFolder, environmentOptions);
+
+// ...
+
+this.WebView2.EnsureCoreWebView2Async(environment);
+```
+
+
+###### Disabling SmartScreen by using an environment variable
+
+We no longer recommend using an environment variable.  Use the above API code-based approach instead.
 
 * `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
 
@@ -445,12 +486,9 @@ WinUI 3 doesn't support transparent backgrounds.  See [Transparent background su
 
 
 <!-- ------------------------------ -->
-#### API limitations
+#### WinAppSDK support for custom WebView2 environments
 
-The following classes aren't accessible in WinUI 3:
-
-* `CoreWebView2EnvironmentOptions`
-* `CoreWebView2ControllerOptions`
+See [WinAppSDK supports custom WebView2 environments](#winappsdk-supports-custom-webview2-environments), above.
 
 
 <!-- ====================================================================== -->
