@@ -796,7 +796,7 @@ HRESULT AppWindow::WebResourceRequestedEventHandler(
 
 <!-- ====================================================================== -->
 ## Custom scheme registration
-See [Custom scheme registration](./overview-features-apis#custom-scheme-registration) in _Overview of WebView2 features and APIs_.
+See [Custom scheme registration](./overview-features-apis.md#custom-scheme-registration) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ====================================================================== -->
