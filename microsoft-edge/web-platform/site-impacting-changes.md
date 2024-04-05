@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 01/19/2024
+ms.date: 04/05/2024
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge
 
@@ -35,6 +35,7 @@ This table lists:
 
 | Change | Stable channel | Experimentation | Additional information |
 | --- | --- | --- | --- |
+| Deprecate `textprediction` attribute | v131 |  | Removes support for the `textprediction` attribute, which is a nonstandard attribute that's used to enable or disable the browser-based Text Prediction feature for long-form text inputs.  Instead, use the standardized `writingsuggestions` attribute.  It functions similarly to `textprediction`, but also applies to other writing-assistance features that browsers may provide.  Sites that explicitly set `textprediction` to `true` or `false` can instead explicitly set `writingsuggestions` to the same value. |
 | Deprecate unload event | Future release (TBD) | | Introduces a new Permission-Policy to allow creating unload event listeners. The default policy is `allow`, but the default policy will gradually be migrated to `deny`, such that unload handlers stop firing on pages, unless a page explicitly opts in to re-enable them.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Deprecate: Deprecate unload event](https://groups.google.com/a/chromium.org/g/blink-dev/c/dvusqw9-IhI/m/SBkm_u1RAQAJ). |
 | Removal of cross-origin subframe JavaScript dialogs | Future release (TBD) | | Removes `window.alert`, `window.prompt`, and `window.confirm` from cross-origin iframes.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Remove: Cross origin subframe JS Dialogs](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ). |
 | Removal of mutation events | v127 | | Removes support for mutation events in Chromium. Use the [MutationObserver](https://developer.mozilla.org/docs/Web/API/MutationObserver) API instead.  See [Intent to Deprecate: Mutation Events](https://groups.google.com/a/chromium.org/g/blink-dev/c/qDsKRU-cQ_4/m/isA1mZ_aAAAJ). |
