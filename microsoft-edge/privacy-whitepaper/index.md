@@ -971,20 +971,6 @@ If you want to stop Microsoft Edge from offering to translate webpages, complete
 
 
 <!-- ====================================================================== -->
-## Travel
-
-When you do online activities related to travelling, Microsoft Edge helps you find recommendations for travel.  To help you find recommendations while planning your travel online, Microsoft Edge downloads a list of travel domains to the client from the Microsoft Travel service.
-
-When you visit a website, Microsoft Edge locally determines if the website you're on is a travel domain.  If the website is identified as a Travel-related webpage, Microsoft Edge sends the domain, flight dates, From and To locations, and passenger count, along with information about Microsoft Edge and cookies (if cookies are allowed) to the service.  This data does not include any personally identifiable information, and is sent over HTTPS.
-
-The Microsoft Edge Travel feature requires sharing cookie information with Bing.com.  For example, cookies may be used for debugging, fraud detection, and analytics.  When you visit Bing.com in your browser and update any settings on Bing pages, Bing.com creates a cookie in your browser and stores information in the cookie.  This cookie is shared across Bing.com pages, and Microsoft Edge sends this cookie to the Microsoft Travel service to keep your experience consistent.
-
-The Travel service is turned on by default.  To change the Travel setting in Microsoft Edge:
-1. Go to `edge://settings/privacy`.
-2. In the **Services** section at the bottom of the page, turn off the setting **Show travel recommendations in Microsoft Edge**.
-
-
-<!-- ====================================================================== -->
 ## Web apps and Pinned sites
 
 Microsoft Edge lets you install web apps made by website developers and pin your favorite sites.
