@@ -99,9 +99,9 @@ To search for text within the JSON data, use the **JSON viewer**'s **Find** feat
 
 1. Click anywhere in the formatted JSON data, to put focus in the JSON data.
 
-1. Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS). The search box appears at the top of the **JSON viewer**:
+1. Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS). The search toolbar appears at the top of the **JSON viewer**:
   
-   ![The search feature of the JSON viewer](./json-viewer-images/search.png)
+   ![The search toolbar of the JSON viewer](./json-viewer-images/search.png)
 
 1. In the **Find** text box, start typing the text you want to search for.
 
