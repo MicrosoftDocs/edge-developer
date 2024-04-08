@@ -115,7 +115,7 @@ To search for text within the JSON data, use the **JSON viewer**'s **Find** feat
 <!-- ------------------------------ -->
 #### Move through the search results
 
-To move to the next or previous search results, after results were found, click the **Next** or **Previous** buttons near the search box, the current search result is highlighted in a different color:
+To move to the next or previous search result, after results were found, click the **Next** or **Previous** buttons in the search toolbar.  The currently selected search result is highlighted in a different color:
 
 ![The Next and Previous buttons in the JSON viewer's search toolbar](./json-viewer-images/search-move.png)
 
