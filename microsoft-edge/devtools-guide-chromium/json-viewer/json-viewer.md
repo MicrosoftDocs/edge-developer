@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/14/2024
+ms.date: 04/08/2024
 ---
 # View formatted JSON
 
@@ -88,3 +88,51 @@ To view invalid JSON data:
 1. In a code editor, such as Microsoft Visual Studio Code, go to the indicated column number to inspect the JSON:
 
    ![Viewing the malformed JSON by column number in VS Code](./json-viewer-images/column-number.png)
+
+
+<!-- ====================================================================== -->
+## Search the JSON data
+
+To search for text within the JSON data, use the **JSON viewer**'s search feature:
+
+1. View a JSON response or file in the **JSON viewer**.
+
+1. Put focus in the JSON data by clicking anywhere in the formatted JSON data.
+
+1. Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS). The search box appears at the top of the **JSON viewer**:
+  
+   ![The search feature of the JSON viewer](./json-viewer-images/search.png)
+
+1. Start typing the text you want to search for.
+
+   As you type, the **JSON viewer** highlights the occurrences of the text in the JSON data.
+
+1. To stop search, click the **Cancel** button:
+
+   ![The Cancel button in the JSON viewer's search toolbar](./json-viewer-images/search-cancel.png)
+
+
+<!-- ------------------------------ -->
+#### Move through the search results
+
+To move to the next or previous search results, after results were found, click the **Next** or **Previous** buttons near the search box, the current search result is highlighted in a different color:
+
+![The Next and Previous buttons in the JSON viewer's search toolbar](./json-viewer-images/search-move.png)
+
+
+<!-- ------------------------------ -->
+#### Change how the search is performed
+
+Search is performed with the following default settings:
+
+* Case-insensitive: this means that typing `hello` matches `Hello`, `HELLO`, `hello`, or any string that contains the characters `hello` in any case.
+* Not by regular expression: this means that the search string is treated as a literal string, not as a regular expression.
+* Not by word: this means that typing `hello` matches `hello`, `hello-world`, and `world-hello`, or any string that contains the sequence of characters `hello`.
+
+To make the search case sensitive, click **Match Case** in the search toolbar.
+
+To search by regular expressions, click **Regexp** in the search toolbar.
+
+To search by word, click **By Word** in the search toolbar.
+
+![The Match Case, Regexp, and By Word buttons, which change how the search is performed](./json-viewer-images/search-modes.png)
