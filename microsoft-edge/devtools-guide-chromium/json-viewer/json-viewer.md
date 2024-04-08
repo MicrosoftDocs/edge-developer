@@ -103,9 +103,7 @@ To search for text within the JSON data, use the **JSON viewer**'s **Find** feat
   
    ![The search toolbar of the JSON viewer](./json-viewer-images/search.png)
 
-1. In the **Find** text box, start typing the text you want to search for.
-
-   As you type, the **JSON viewer** highlights the occurrences of the text in the JSON data.
+1. In the **Find** text box, start typing the text you want to search for.  As you type, the **JSON viewer** highlights all of the occurrences of the text string in the JSON data.
 
    To stop the search, click the **Cancel** button:
 
