@@ -97,7 +97,7 @@ To search for text within the JSON data, use the **JSON viewer**'s **Find** feat
 
 1. View a JSON response or file in the **JSON viewer**.
 
-1. Put focus in the JSON data by clicking anywhere in the formatted JSON data.
+1. Click anywhere in the formatted JSON data, to put focus in the JSON data.
 
 1. Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS). The search box appears at the top of the **JSON viewer**:
   
