@@ -93,7 +93,7 @@ To view invalid JSON data:
 <!-- ====================================================================== -->
 ## Search the JSON data
 
-To search for text within the JSON data, use the **JSON viewer**'s search feature:
+To search for text within the JSON data, use the **JSON viewer**'s **Find** feature, as follows:
 
 1. View a JSON response or file in the **JSON viewer**.
 
@@ -103,11 +103,11 @@ To search for text within the JSON data, use the **JSON viewer**'s search featur
   
    ![The search feature of the JSON viewer](./json-viewer-images/search.png)
 
-1. Start typing the text you want to search for.
+1. In the **Find** text box, start typing the text you want to search for.
 
    As you type, the **JSON viewer** highlights the occurrences of the text in the JSON data.
 
-1. To stop search, click the **Cancel** button:
+   To stop the search, click the **Cancel** button:
 
    ![The Cancel button in the JSON viewer's search toolbar](./json-viewer-images/search-cancel.png)
 
@@ -121,18 +121,32 @@ To move to the next or previous search results, after results were found, click 
 
 
 <!-- ------------------------------ -->
-#### Change how the search is performed
+#### Modify the type of search
 
-Search is performed with the following default settings:
+The search toolbar contains **Match Case**, **Regexp**, and **By Word** checkboxes, to modify the type of search:
 
-* Case-insensitive: this means that typing `hello` matches `Hello`, `HELLO`, `hello`, or any string that contains the characters `hello` in any case.
-* Not by regular expression: this means that the search string is treated as a literal string, not as a regular expression.
-* Not by word: this means that typing `hello` matches `hello`, `hello-world`, and `world-hello`, or any string that contains the sequence of characters `hello`.
+![The Match Case, Regexp, and By Word checkboxes, which change how the search is performed](./json-viewer-images/search-modes.png)
 
-To make the search case sensitive, click **Match Case** in the search toolbar.
 
-To search by regular expressions, click **Regexp** in the search toolbar.
+<!-- ---------- -->
+###### Perform a case-sensitive search
 
-To search by word, click **By Word** in the search toolbar.
+By default, the search is case-insensitive.  For example, a search on `hello` matches `Hello`, `HELLO`, `hello`, or any string that contains the characters `hello` with any casing.
 
-![The Match Case, Regexp, and By Word buttons, which change how the search is performed](./json-viewer-images/search-modes.png)
+To make the search case-sensitive, select the **Match Case** checkbox in the search toolbar.
+
+
+<!-- ---------- -->
+###### Search by a regular expression
+
+By default, the search string is treated as a literal string.
+
+To search by using a regular expression, select the **Regexp** checkbox in the search toolbar.
+
+
+<!-- ---------- -->
+###### Search by whole word only
+
+By default, the search is not restricted to finding just the whole, isolated word surrounded by spaces.  For example, a search on `hello` matches `hello`, `hello-world`, and `world-hello`, or any string that contains the sequence of characters `hello`.
+
+To restrict the search to match only the string surrounded by spaces, without adjacent letters, select the **By Word** checkbox in the search toolbar.
