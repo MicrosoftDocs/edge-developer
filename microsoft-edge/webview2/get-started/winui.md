@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/28/2024
+ms.date: 04/08/2024
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK) apps
 
@@ -205,7 +205,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
 
 WinAppSDK supports custom WebView2 environments, starting with WinAppSDK 1.5 ([1.5.0-experimental2](/windows/apps/windows-app-sdk/experimental-channel#version-15-experimental-150-experimental2)).  For more information, see [WinUI3 WebView2 with a custom CoreWebView2Environment](https://github.com/microsoft/microsoft-ui-xaml/issues/6150).
 
-To implement a custom WebView2 environment, initialize WebView2 with one of the overrides of `WebView2.EnsureCoreWebView2Async` (listed below), and pass in your custom `CoreWebView2Environment` (and, optionally, custom `CoreWebView2ControllerOptions`):
+To instantiate a custom WebView2 environment, initialize WebView2 with one of the overrides of `WebView2.EnsureCoreWebView2Async` (listed below), and pass in your custom `CoreWebView2Environment` (and, optionally, custom `CoreWebView2ControllerOptions`):
 
 ```csharp
 public IAsyncAction EnsureCoreWebView2Async (CoreWebView2Environment environment)
