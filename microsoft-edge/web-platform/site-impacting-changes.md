@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 01/19/2024
+ms.date: 04/05/2024
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge
 
@@ -30,23 +30,24 @@ This table lists:
 
 <!-- order of rows: newest version (such as "Future/TBD") at top, then greatest to smallest version # -->
 
-<!-- latest = 10 most recent versions (Stable channel); as of Jan. 19, 2024, latest Stable = 120, so the 10 most recent versions = 111 through 120+ -->
+<!-- latest = 10 most recent versions (Stable channel); as of Apr. 5, 2024, latest Stable = 123, so the 10 most recent versions = 114 through 123+ -->
 ##### [Latest versions](#tab/latest)
 
 | Change | Stable channel | Experimentation | Additional information |
 | --- | --- | --- | --- |
 | Deprecate unload event | Future release (TBD) | | Introduces a new Permission-Policy to allow creating unload event listeners. The default policy is `allow`, but the default policy will gradually be migrated to `deny`, such that unload handlers stop firing on pages, unless a page explicitly opts in to re-enable them.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Deprecate: Deprecate unload event](https://groups.google.com/a/chromium.org/g/blink-dev/c/dvusqw9-IhI/m/SBkm_u1RAQAJ). |
 | Removal of cross-origin subframe JavaScript dialogs | Future release (TBD) | | Removes `window.alert`, `window.prompt`, and `window.confirm` from cross-origin iframes.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Remove: Cross origin subframe JS Dialogs](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ). |
+| Deprecate `textprediction` attribute | v131 |  | Removes support for the `textprediction` HTML attribute, which is a nonstandard attribute that's used to enable or disable the browser-based Text Prediction feature for long-form text inputs.  Instead, use the standardized `writingsuggestions` attribute, which functions similarly to `textprediction`, but also applies to other writing-assistance features that browsers may provide.  Sites that explicitly set `textprediction` to `true` or `false` can instead set `writingsuggestions` to the same value.  For more information, see [Writing suggestions](https://html.spec.whatwg.org/multipage/interaction.html#writing-suggestions) in the HTML specification. |
 | Removal of mutation events | v127 | | Removes support for mutation events in Chromium. Use the [MutationObserver](https://developer.mozilla.org/docs/Web/API/MutationObserver) API instead.  See [Intent to Deprecate: Mutation Events](https://groups.google.com/a/chromium.org/g/blink-dev/c/qDsKRU-cQ_4/m/isA1mZ_aAAAJ). |
 | Removal of Web SQL | v124 | | Fully removes Web SQL support. In prior releases, Web SQL support was disabled by default but could be re-enabled via the [WebSQLAccess policy](/deployedge/microsoft-edge-policies#websqlaccess). After this change, there is no longer any mechanism to enable Web SQL support. This change is happening in the Chromium project, on which Microsoft Edge is based. For more information, see [Intent to Deprecate and Remove Web SQL](https://groups.google.com/a/chromium.org/g/blink-dev/c/fWYb6evVA-w/m/pziWcvboAgAJ). |
 | Added support for AVIF and AV1 file formats | v121 | | Microsoft Edge now supports the AVIF and AV1 file formats, which offer better compression and higher quality images and videos.  Users can enjoy faster loading times and better quality media on websites. |
 | Ignore modifications to `document.domain` by default | v119 | | The `document.domain` property historically could be set to relax the same-origin policy and allow subdomains from a site to interact. This behavior will be disabled by default such that setting the `document.domain` property will have no effect.  For more information and workarounds, see [Microsoft Edge will disable modifying document.domain](/deployedge/edge-learnmore-origin-keyed-agent-cluster). |
-| New TLS server certificate verifier | v111 (managed devices), v109 (unmanaged devices) | | No site compatibility impacts are anticipated.  If you have uncommon TLS server certificate deployments, you should test in v109 to confirm there's no impact. For more information and testing guidance, see [Changes to Microsoft Edge browser TLS server certificate verification](/deployedge/microsoft-edge-security-cert-verification). |
 
 ##### [Earlier versions](#tab/earlier)
 
 | Change | Stable channel | Experimentation | Additional information |
 | --- | --- | --- | --- |
+| New TLS server certificate verifier | v111 (managed devices), v109 (unmanaged devices) | | No site compatibility impacts are anticipated.  If you have uncommon TLS server certificate deployments, you should test in v109 to confirm there's no impact. For more information and testing guidance, see [Changes to Microsoft Edge browser TLS server certificate verification](/deployedge/microsoft-edge-security-cert-verification). |
 | Send CORS preflight requests for private network access | v104 | | Starting with v104, Microsoft Edge sends a CORS [preflight](https://developer.chrome.com/blog/private-network-access-preflight/) request before a page from the internet is allowed to request resources from a local network (intranet).  The intranet server should respond to the preflight by providing explicit permission to access the resource.  The result of this check is not yet enforced.  Enforcement will begin in v111 at the earliest.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see the [Chrome Platform Status entry](https://chromestatus.com/feature/5737414355058688) and [_Chrome Developers_ blog post](https://developer.chrome.com/blog/private-network-access-preflight/#rollout-plan).  Two compatibility policies are available to suppress the CORS preflight request: [InsecurePrivateNetworkRequestAllowed](/deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowed) and [InsecurePrivateNetworkRequestAllowedForUrls](/deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowedforurls). |
 | Block external protocols in sandboxed frames by default | v103 | | Blocks the use of external protocols (that interact with non-browser applications) from sandboxed iframes unless permission is explicitly granted by the `sandbox` attribute on the frame. This change is happening in the Chromium project, on which Microsoft Edge is based. For more information, see the [Chrome Platform Status entry](https://chromestatus.com/feature/5680742077038592). |
 | Three-digit version number in the User-Agent string | v100 | | Starting with v100, Microsoft Edge will send a three-digit version number in the User-Agent header, such as `Edg/100`. This may confuse scripts or server-side analytics that use a buggy parser to determine the User-Agent string version number. Starting with v97, site owners can emulate this condition before v100 by enabling the experiment flag `#force-major-version-to-100` in `edge://flags`. |
