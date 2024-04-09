@@ -378,6 +378,7 @@ In this section, you add code to import the WebView2 Core library.
 
 <!-- ------------------------------ -->
 #### WinRT CoreWebView2 object availability
+<!-- todo: delete section? -->
 
 The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  For a list of available APIs, see:
 * WinUI 3 API Reference (Windows App SDK) - [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2) - in API reference for Windows desktop apps > WinRT APIs.
