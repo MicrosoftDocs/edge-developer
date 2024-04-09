@@ -45,7 +45,7 @@ For a deeper understanding of how SDK versions interact with the WebView2 Runtim
 We recommend that you test the experimental APIs ahead of time, to ensure your app's forward compatibility, by following these best practices:
 
 * [Prerelease testing using preview channels](./prerelease-testing.md)
-* [Self-hosting by deploying preview channels](./self-hosting.md)
+* [Self-host by deploying preview channels](./self-hosting.md)
 
 
 <!-- ====================================================================== -->
@@ -164,7 +164,7 @@ Pass the path to the browser executable folder during environment creation, by u
 * [CoreWebView2CreationProperties Class](/dotnet/api/microsoft.web.webview2.winforms.corewebview2creationproperties)
 
 WinRT:
-* TBD<!--todo: link to WinRT API Ref, if exists -->
+* [CoreWebView2Environment.CreateWithOptionsAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createwithoptionsasync)
 
 Win32:
 * [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl?#createcorewebview2environmentwithoptions)

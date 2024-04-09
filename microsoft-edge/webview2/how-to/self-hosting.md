@@ -1,5 +1,5 @@
 ---
-title: Self-hosting by deploying preview channels
+title: Self-host by deploying preview channels
 description: How to set up self-hosting by deploying using the WebView2 preview channels, which are the Insider preview channels of Microsoft Edge (Canary, Dev, and Beta).
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 02/23/2024
 ---
-# Self-hosting by deploying preview channels
+# Self-host by deploying preview channels
 
 _Self-hosting_ means deploying a preview version of the WebView2 Runtime with your app.  This allows you and your development team to use your app daily with the preview version of the WebView2 Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes reach the Stable Evergreen WebView2 Runtime.
 
@@ -63,7 +63,6 @@ The value `1` indicates reversed search order; that is, from least-stable (Edge 
 
 
 ##### [API](#tab/api)
-<!-- todo: keep or delete this tab/section? -->
 
 By default, the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property is `CoreWebView2ChannelSearchKind.MostStable` (an enum value).  Instead, reverse the search order by setting the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property to `CoreWebView2ChannelSearchKind.LeastStable`.
 

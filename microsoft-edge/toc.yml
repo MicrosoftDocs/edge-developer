@@ -1339,7 +1339,7 @@
             - name: Prerelease testing using preview channels
               href: webview2/how-to/prerelease-testing.md
 
-            - name: Self-hosting by deploying preview channels
+            - name: Self-host by deploying preview channels
               href: webview2/how-to/self-hosting.md
 
 # -----------------------------------------------------------------------------

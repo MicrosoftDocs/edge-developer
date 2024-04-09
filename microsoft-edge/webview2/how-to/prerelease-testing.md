@@ -22,15 +22,15 @@ The preview (or "insider") channels of Microsoft Edge consist of:
 See also: 
 * [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels)
 * [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download Edge Canary, Edge Dev, or Edge Beta
-* [Self-hosting by deploying preview channels](./self-hosting.md)
+* [Self-host by deploying preview channels](./self-hosting.md)
 
 
 <!-- ====================================================================== -->
 ## Importance of prerelease testing
 
-Evergreen WebView2 is based on the evergreen Chromium platform, which receives monthly major updates.  Regressions in WebView2 apps tend to be application-specific, rather than affecting all WebView2 apps.
+Evergreen WebView2 is based on the evergreen Chromium platform, which receives monthly major updates.  Regressions in WebView2 apps tend to be application-specific, rather than affecting all WebView2 apps.  WebView2 is tested in a variety of general scenarios, but it's possible that some of the specific scenarios of your app are not covered.
 
-To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your particular app against the prerelease channels of Microsoft Edge.  WebView2 is tested in a variety of general scenarios, but it's possible that some of the specific scenarios of your app are not covered.
+To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your WebView2 app against the prerelease runtime that's shipped with the prerelease channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta).
 
 
 <!-- ====================================================================== -->
@@ -116,9 +116,11 @@ Set the `ChannelSearchKind` policy.
 
 Do either of the following:
 
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge) for more information.
+* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  For more information, see [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge).
 
-* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
+* Use the built-in policy on Intune.  See the following articles.  The steps for WebView2 are the same as for Microsoft Edge, except use the category "Microsoft Edge WebView2" instead of "Microsoft Edge".
+   * [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) in the Microsoft Intune documentation.
+   * [Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune) in the Microsoft Edge Enterprise documentation.
 
 ---
 
@@ -162,6 +164,7 @@ In your app's code, periodically poll the following API endpoints to get and dep
 
 The Edge Dev and Edge Beta channels contain MSI Links.  The Edge Canary channel has a separate MSI link.
 
+
 <!-- ====================================================================== -->
 ## How to do automated testing
 
@@ -177,7 +180,7 @@ The baseline for testing should be the latest stable release of WebView2.  You c
 <!-- ====================================================================== -->
 ## See also
 
-* [Self-hosting by deploying preview channels](./self-hosting.md)
+* [Self-host by deploying preview channels](./self-hosting.md)
 * [Test upcoming APIs and features](./set-preview-channel.md)
 * [Automate and test WebView2 apps with Microsoft Edge WebDriver](/microsoft-edge/webdriver)
 * [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
