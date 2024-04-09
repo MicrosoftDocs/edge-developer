@@ -73,7 +73,7 @@ These approaches are described below.
 <!-- ====================================================================== -->
 ## Switching the channel search order (recommended)
 
-This section applies to using a group policy, registry override, or environment variable.
+This section applies to using an API, registry override, environment variable, or group policy.
 
 If a specific browser executable folder isn't specified, then the WebView2 will attempt to load a runtime from one of the known default locations.
 
@@ -83,8 +83,7 @@ The default channel-search order is:
 1. Edge Dev; the Dev channel of Microsoft Edge.
 1. Edge Canary; the Canary channel of Microsoft Edge.
 
-If you set the `ChannelSearchKind` to `1` by using an API, a group policy, registry override, or environment variable, that will use the reverse of the default search order.
-
+You can reverse the default search order by setting the `ChannelSearchKind` API to `LeastStable`, or by setting the `ChannelSearchKind` policy, registry key, or environment variable to `1`.
 
 ##### [API](#tab/api)
 
@@ -213,34 +212,6 @@ Do either of the following:
 
 
 <!-- ------------------------------ -->
-#### How to use an environment variable
-
-1. In the Windows search bar, enter "environment", and then select **Edit the system environment variables**:
-
-   ![Using the Windows search bar to find where to edit environment variables](./set-preview-channel-images/search-bar-edit-sys-env-vars.png)
-
-   The **System Properties** dialog opens.
-
-1. Select the **Advanced** tab, and then click the **Environment Variables** button:
-
-   ![The Environment Variables button in the System Properties dialog](./set-preview-channel-images/system-properties-env-vars.png)
-
-   The **Environment Variables** dialog opens.
-
-1. In the **User variables** section at the top, click the **New** button.  The **New User Variable** dialog opens.
-
-1. In the **Variable name** text box, enter `WEBVIEW2_CHANNEL_SEARCH_KIND`.
-
-1. In the **Variable value** text box, do either of the following:
-
-   * Enter the path to your preferred browser channel or fixed-version binaries.
-
-   * Or, enter `1` to reverse the search order from the default, to use the preview channels first (Canary, Beta, then Dev), followed by the WebView2 Runtime.  Any value other than `1` causes the default search order to be used (WebView2 Runtime, Edge Dev, Edge Beta, and then Edge Canary).
-
-1. Click the **OK** buttons to close the dialogs.
-
-
-<!-- ------------------------------ -->
 #### When does the new runtime get picked up?
 
 If you are using an environment variable, registry key, or group policy, they are only applied to any new processes that are created; they do not apply to processes that are already running.  To ensure that all processes use the environment variable, registry key, or group policy, you would need to restart the processes.
@@ -262,7 +233,7 @@ Release Channels: 0 (Stable), 1 (Beta)
 
 This example setting causes the loader to try to run the app with Edge Beta if Edge Beta is installed on the device, and otherwise fall back to using the Stable WebView2 Runtime.
 
-The release channels can similarly be set through the registry key, environment variable, API, or group policy.
+The release channels can similarly be set through the API, registry key, environment variable, or group policy.
 
 
 ##### [API](#tab/api)
@@ -316,6 +287,35 @@ Do either of the following:
 * Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge) for more information.
 
 * Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
+
+
+<!-- ------------------------------ -->
+#### How to use an environment variable
+
+1. In the Windows search bar, enter "environment", and then select **Edit the system environment variables**:
+
+   ![Using the Windows search bar to find where to edit environment variables](./set-preview-channel-images/search-bar-edit-sys-env-vars.png)
+
+   The **System Properties** dialog opens.
+
+1. Select the **Advanced** tab, and then click the **Environment Variables** button:
+
+   ![The Environment Variables button in the System Properties dialog](./set-preview-channel-images/system-properties-env-vars.png)
+
+   The **Environment Variables** dialog opens.
+
+1. In the **User variables** section at the top, click the **New** button.  The **New User Variable** dialog opens.
+
+1. In the **Variable name** text box, enter the environment variable name, either `WEBVIEW2_CHANNEL_SEARCH_KIND` or `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`.
+
+1. In the **Variable value** text box, do either of the following:
+
+   * If setting the ChannelSearchKind, enter `1` to reverse the search order from the default, to use the preview channels first (Canary, Beta, then Dev), followed by the WebView2 Runtime.  Any value other than `1` causes the default search order to be used (WebView2 Runtime, Edge Dev, Edge Beta, and then Edge Canary).
+
+   * If setting the BrowserExecutableFolder, enter the path to your preferred browser channel or fixed-version binaries.
+
+1. Click the **OK** buttons to close the dialogs.
+
 
 ---
 
