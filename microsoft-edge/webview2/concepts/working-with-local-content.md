@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/10/2023
+ms.date: 04/10/2024
 ---
 # Working with local content in WebView2 apps
 
@@ -414,6 +414,11 @@ Another way you can host local content in a WebView2 control is by relying on th
 From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the cross-process communication and processing that's needed for each request.
 
 
+<!-- ------------------------------ -->
+#### Custom scheme registration
+
+If you want to use a custom scheme to make the Web Resource Request that generates the `WebResourceRequested` event, see [Custom scheme registration](./overview-features-apis.md#custom-scheme-registration) in _Overview of WebView2 features and APIs_.
+
 
 <!-- ------------------------------ -->
 #### Considerations for loading local content by handling the WebResourceRequested event
@@ -792,12 +797,6 @@ HRESULT AppWindow::WebResourceRequestedEventHandler(
 ```
 
 ---
-
-
-<!-- ====================================================================== -->
-## Custom scheme registration
-
-See [Custom scheme registration](./overview-features-apis.md#custom-scheme-registration) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ====================================================================== -->
