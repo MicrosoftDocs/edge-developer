@@ -154,8 +154,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
         xmlns:local="using:MyWebView2WinUI3"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
-        xmlns:controls="using:Microsoft.UI.Xaml.Controls">
+        mc:Ignorable="d">
     
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
@@ -294,7 +293,6 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
 
     ![Debugger not configured](winui-images/debugger-not-configd.png)
 
-1.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialogs.
 
 <!--
 maintenance link (keep)
