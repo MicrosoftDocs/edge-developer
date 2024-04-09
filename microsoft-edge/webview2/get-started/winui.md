@@ -17,6 +17,7 @@ In this tutorial, you use the **Blank App, Packaged (WinUI in Desktop)** Visual 
 ![App displaying the Bing website](winui-images/getting-started-bing.png)
 
 
+<!-- ------------------------------ -->
 #### Completed project
 
 A completed version of this tutorial project (as of 2020) is available in the **WebView2Samples** repo:
@@ -113,6 +114,7 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 1.  Close the app.
 
 
+<!-- ------------------------------ -->
 #### Updating target version numbers
 
 For the build step above:  If you're updating a previous project, you might need to update the version numbers for **Target version** and **Minimum version**.  To do this, in Solution right-click the project and then select **Edit Project File**.  Your `.csproj` file opens.  Make sure the values are updated as follows, and then save any changes and build the project.
@@ -200,7 +202,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
 1.  Close the app.
 
 
-<!-- ---------- -->
+<!-- ------------------------------ -->
 #### WinAppSDK supports custom WebView2 environments
 
 WinAppSDK supports custom WebView2 environments, starting with WinAppSDK 1.5 ([1.5.0-experimental2](/windows/apps/windows-app-sdk/experimental-channel#version-15-experimental-150-experimental2)).  For more information, see [WinUI3 WebView2 with a custom CoreWebView2Environment](https://github.com/microsoft/microsoft-ui-xaml/issues/6150).
@@ -376,6 +378,7 @@ In this section, you add code to import the WebView2 Core library.
 1.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialogs.
 
 
+<!-- ------------------------------ -->
 #### WinRT CoreWebView2 object availability
 
 The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  For a list of available APIs, see:
@@ -456,6 +459,7 @@ this.WebView2.EnsureCoreWebView2Async(environment);
 ```
 
 
+<!-- ---------- -->
 ###### Disabling SmartScreen by using an environment variable
 
 We no longer recommend using an environment variable.  Use the above API code-based approach instead.
