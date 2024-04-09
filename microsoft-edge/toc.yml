@@ -1190,6 +1190,9 @@
         - name: Overview of WebView2 features and APIs
           href: webview2/concepts/overview-features-apis.md
 
+        - name: Differences between Microsoft Edge and WebView2
+          href: webview2/concepts/browser-features.md
+
 # -----------------------------------------------------------------------------
 # machine setup
         - name: Set up your Dev environment for WebView2
@@ -1205,7 +1208,7 @@
 
             - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
-              displayName: Get started with WebView2 in WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
+              displayName: WinUI2_GettingStarted, Get started with WebView2 in WinUI 2 (UWP) apps # repo dir name # top-of-page title
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
@@ -1236,11 +1239,11 @@
 
             - name: Win32 sample app
               href: webview2/samples/webview2apissample.md
-              displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
+              displayName: WebView2APISample, SampleApps # repo dir names
 
             - name: Win32 sample app with Visual Composition
               href: webview2/samples/webview2samplewincomp.md
-              displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
+              displayName: WebView2SampleWinComp # repo dir name
 
             - name: Win32 sample WebView2Browser
               href: webview2/samples/webview2browser.md
@@ -1248,16 +1251,16 @@
 
             - name: WinUI 2 (UWP) sample app
               href: webview2/samples/webview2_sample_uwp.md
-              displayName: webview2_sample_uwp, WinUI 2 (UWP) sample app  # repo dir name, top-of-page title
+              displayName: webview2_sample_uwp # repo dir name
 
 # pending, July 26 2022
-#            - name: WinUI 3 sample app
-#              href: webview2/samples/webview2-winui3-sample.md
-#              displayName: WebView2_WinUI3_Sample  # repo dir name
+#           - name: WinUI 3 sample app
+#             href: webview2/samples/webview2-winui3-sample.md
+#             displayName: WebView2_WinUI3_Sample  # repo dir name
 
             - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
-              displayName: WebView2WpfBrowser, WPF sample app  # repo dir name, top-of-page title
+              displayName: WebView2WpfBrowser # repo dir name
 
             - name: WPF sample app with CDP
               href: webview2/samples/wv2cdpextensionwpfsample.md
@@ -1287,56 +1290,33 @@
               displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 
 # -----------------------------------------------------------------------------
-        - name: Fundamentals
+# top-level entries below Samples
+        - name: "Main classes for WebView2: Environment, Controller, and Core"
+          href: webview2/concepts/environment-controller-core.md
+
+        - name: Navigation events
+          href: webview2/concepts/navigation-events.md
+          displayName: Navigation events for WebView2 apps  # top-of-page title
+
+        - name: Process-related events
+          href: webview2/concepts/process-related-events.md
+          displayName: Handling process-related events in WebView2  # top-of-page title
+
+        - name: Basic authentication
+          href: webview2/concepts/basic-authentication.md
+          displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
+
+        - name: Windowed vs. visual hosting of WebView2
+          href: webview2/concepts/windowed-vs-visual-hosting.md
+
+        - name: WebView2 browser flags
+          href: webview2/concepts/webview-features-flags.md
+
+        - name: Customization and UI
           items:
-            - name: Differences between Microsoft Edge and WebView2
-              href: webview2/concepts/browser-features.md
-
-            - name: WebView2 browser flags
-              href: webview2/concepts/webview-features-flags.md
-
-            - name: "Main classes for WebView2: Environment, Controller, and Core"
-              href: webview2/concepts/environment-controller-core.md
-
-            - name: Navigation events
-              href: webview2/concepts/navigation-events.md
-              displayName: Navigation events for WebView2 apps  # top-of-page title
-
-            - name: Process-related events
-              href: webview2/concepts/process-related-events.md
-              displayName: Handling process-related events in WebView2  # top-of-page title
-
-            - name: Basic authentication
-              href: webview2/concepts/basic-authentication.md
-              displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
-
-            - name: Windowed vs. visual hosting of WebView2
-              href: webview2/concepts/windowed-vs-visual-hosting.md
-
             - name: Custom management of network requests
               href: webview2/how-to/webresourcerequested.md
               displayName: WebResourceRequested, WebResourceResponseReceived
-
-            - name: Web and native interop
-              items:
-                - name: Interop of native-side and web-side code
-                  href: webview2/how-to/communicate-btwn-web-native.md
-                  displayName: JavaScript interop, Embed web content into native applications (JavaScript interop)  # old title
-
-                - name: Call web-side code from native-side code
-                  href: webview2/how-to/javascript.md
-                  displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
-
-                - name: Call native-side code from web-side code
-                  href: webview2/how-to/hostobject.md
-                  displayName: AddHostObjectToScript, host objects
-
-                - name: Call native-side WinRT code from web-side code
-                  href: webview2/how-to/winrt-from-js.md
-                  displayName: AddHostObjectToScript, host objects
-
-                - name: How WinRT types and members are represented in JavaScript
-                  href: webview2/how-to/winrt-js-conversion.md
 
             - name: Using frames
               href: webview2/concepts/frames.md
@@ -1346,16 +1326,41 @@
               href: webview2/how-to/print.md
               displayName: Printing from WebView2 apps # full title
 
-            # updated h2: Experimental APIs, added a 2nd, new h3:
-            - name: Understand the different WebView2 SDK versions
-              href: webview2/concepts/versioning.md
-              displayName: Understand WebView2 SDK versions  # old title
-
-            - name: Distribute your app and the WebView2 Runtime
-              href: webview2/concepts/distribution.md
-
             - name: Working with local content in WebView2 apps
               href: webview2/concepts/working-with-local-content.md
+
+# resume here
+
+        - name: Web and native interop
+          items:
+            - name: Interop of native-side and web-side code
+              href: webview2/how-to/communicate-btwn-web-native.md
+              displayName: JavaScript interop, Embed web content into native applications (JavaScript interop)  # old title
+
+            - name: Call web-side code from native-side code
+              href: webview2/how-to/javascript.md
+              displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
+
+            - name: Call native-side code from web-side code
+              href: webview2/how-to/hostobject.md
+              displayName: AddHostObjectToScript, host objects
+
+            - name: Call native-side WinRT code from web-side code
+              href: webview2/how-to/winrt-from-js.md
+              displayName: AddHostObjectToScript, host objects
+
+            - name: How WinRT types and members are represented in JavaScript
+              href: webview2/how-to/winrt-js-conversion.md
+
+
+        # updated h2: Experimental APIs, added a 2nd, new h3:
+        - name: Understand the different WebView2 SDK versions
+          href: webview2/concepts/versioning.md
+          displayName: Understand WebView2 SDK versions  # old title
+
+        - name: Distribute your app and the WebView2 Runtime
+          href: webview2/concepts/distribution.md
+
 
 # -----------------------------------------------------------------------------
         - name: Test and automation in WebView2 apps
@@ -1443,15 +1448,22 @@
             - name: Develop secure WebView2 apps
               href: webview2/concepts/security.md
 
-            # - name: Customize the UI   # not needed?  flatten
-            #   items:
-            #     - name: Customize the UI of WebView2 apps
-            #       href: webview2/how-to/customize-ui.md
-            #       displayName: context menu, right-click menu
+          # - name: Customize the UI in WebView2 apps   # not needed?  file exists, not revealed in TOC
+          #   items:
+          #     - name: Customize the UI of WebView2 apps
+          #       href: webview2/how-to/customize-ui.md
+          #       displayName: context menu, right-click menu
 
             - name: Customize context menus
               href: webview2/how-to/context-menus.md
               displayName: right-click menu, Customize context menus in WebView2  # top-of-page title
+
+
+
+
+
+
+
 
             - name: Use the Chrome DevTools Protocol (CDP)
               href: webview2/how-to/chromium-devtools-protocol.md
