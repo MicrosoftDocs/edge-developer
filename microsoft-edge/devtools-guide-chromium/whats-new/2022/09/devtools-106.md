@@ -16,6 +16,8 @@ ms.date: 09/29/2022
 <!-- ====================================================================== -->
 ## Introducing the Command Palette
 
+_The Command Palette experiment was removed in Microsoft Edge 123._
+
 <!-- Subtitle: Your favorite browser management and DevTools commands in one place. -->
 
 In Microsoft Edge 106, you can now enable and use the Command Palette experiment.  Command Palette makes it possible to access browser management and developer tools commands with just one keyboard shortcut: **Ctrl+Shift+Spacebar**.
@@ -37,9 +39,6 @@ To enable the Command Palette experiment:
 
 1. Click the **Restart** button, which appears in the lower right when you select **Enabled**.
 
-   For more information, see [Enable Command Palette](../../../experimental-features/edge-command-palette.md#enable-command-palette) in _Run commands via keyboard with Command Palette_.
-
-
 To quickly access the available browser management commands and DevTools commands, after you've enabled the experiment:
 
 1. In Microsoft Edge (with or without DevTools open), press **Ctrl+Shift+Spacebar**.
@@ -54,9 +53,6 @@ To quickly access the available browser management commands and DevTools command
 
 
 Let us know what commands you'd like to see in future versions of Microsoft Edge, by posting a comment in [Issue 73: [feedback] Command Palette experiment](https://github.com/MicrosoftEdge/DevTools/issues/73) in the **MicrosoftEdge/DevTools** repo!
-
-See also:
-* [Run commands via keyboard with Command Palette](../../../experimental-features/edge-command-palette.md)
 
 
 <!-- ====================================================================== -->
