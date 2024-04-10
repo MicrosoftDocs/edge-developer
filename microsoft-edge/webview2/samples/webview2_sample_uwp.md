@@ -117,7 +117,7 @@ Update the project's NuGet packages:
 
 1. Select the **Include prerelease** check box.
 
-   A pre-release version of the **Microsoft.UI.Xaml** package is listed, indicating the WinUI 2 SDK.  The **Microsoft.UI.Xaml** package includes the WebView2 SDK; **Microsoft.Web.WebView2** is listed in the **Dependencies** section of the **Microsoft.UI.Xaml** package.  Updating the **Microsoft.UI.Xaml** package will also cause an update to the compatible WebView2 SDK.
+   A Prerelease version of the **Microsoft.UI.Xaml** package is listed, indicating the WinUI 2 SDK.  The **Microsoft.UI.Xaml** package includes the WebView2 SDK; **Microsoft.Web.WebView2** is listed in the **Dependencies** section of the **Microsoft.UI.Xaml** package.  Updating the **Microsoft.UI.Xaml** package will also cause an update to the compatible WebView2 SDK.
 
 1. In the **NuGet Package Manager**, click the **Updates** tab.
 

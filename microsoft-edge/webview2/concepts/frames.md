@@ -491,7 +491,7 @@ The following features, listed in [Overview of WebView2 features and APIs](./ove
 <!-- ====================================================================== -->
 ## See also
 
-* [Call native-side code from web-side code](../how-to/hostobject.md)
+* [Interop of native and web code](../how-to/hostobject.md)
 * [Navigation events for WebView2 apps](./navigation-events.md) - valid for frames as well as webpages.
 
 **External pages:**

@@ -32,45 +32,35 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
-            - name: Microsoft Edge 123
-              href: devtools-guide-chromium/whats-new/2024/03/devtools-123.md
-              displayName: What's New in DevTools (Microsoft Edge 123)
-
             - name: Microsoft Edge 122
               href: devtools-guide-chromium/whats-new/2024/02/devtools-122.md
-              displayName: What's New in DevTools (Microsoft Edge 122)
 
             - name: Microsoft Edge 121
               href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
-              displayName: What's New in DevTools (Microsoft Edge 121)
 
             - name: Microsoft Edge 120
               href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
-              displayName: What's New in DevTools (Microsoft Edge 120)
 
             - name: Microsoft Edge 119
               href: devtools-guide-chromium/whats-new/2023/11/devtools-119.md
-              displayName: What's New in DevTools (Microsoft Edge 119)
 
             - name: Microsoft Edge 118
               href: devtools-guide-chromium/whats-new/2023/10/devtools-118.md
-              displayName: What's New in DevTools (Microsoft Edge 118)
 
             - name: Microsoft Edge 117
               href: devtools-guide-chromium/whats-new/2023/09/devtools-117.md
-              displayName: What's New in DevTools (Microsoft Edge 117)
 
             - name: Microsoft Edge 116
               href: devtools-guide-chromium/whats-new/2023/08/devtools-116.md
-              displayName: What's New in DevTools (Microsoft Edge 116)
 
             - name: Microsoft Edge 115
               href: devtools-guide-chromium/whats-new/2023/07/devtools-115.md
-              displayName: What's New in DevTools (Microsoft Edge 115)
 
             - name: Microsoft Edge 114
               href: devtools-guide-chromium/whats-new/2023/06/devtools-114.md
-              displayName: What's New in DevTools (Microsoft Edge 114)
+
+            - name: Microsoft Edge 113
+              href: devtools-guide-chromium/whats-new/2023/05/devtools-113.md
 
             # keep 10 items above
             - name: Archive
@@ -78,137 +68,101 @@
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
 
-                - name: Microsoft Edge 113
-                  href: devtools-guide-chromium/whats-new/2023/05/devtools-113.md
-                  displayName: What's New in DevTools (Microsoft Edge 113)
-
                 - name: Microsoft Edge 112
                   href: devtools-guide-chromium/whats-new/2023/04/devtools-112.md
-                  displayName: What's New in DevTools (Microsoft Edge 112)
 
                 - name: Microsoft Edge 111
                   href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
-                  displayName: What's New in DevTools (Microsoft Edge 111)
 
                 - name: Microsoft Edge 110
                   href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
-                  displayName: What's New in DevTools (Microsoft Edge 110)
 
                 - name: Microsoft Edge 109
                   href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
-                  displayName: What's New in DevTools (Microsoft Edge 109)
 
                 - name: Microsoft Edge 108
                   href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
-                  displayName: What's New in DevTools (Microsoft Edge 108)
 
                 - name: Microsoft Edge 107
                   href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
-                  displayName: What's New in DevTools (Microsoft Edge 107)
 
                 - name: Microsoft Edge 106
                   href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
-                  displayName: What's New in DevTools (Microsoft Edge 106)
 
                 - name: Microsoft Edge 105
                   href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
-                  displayName: What's New in DevTools (Microsoft Edge 105)
 
                 - name: Microsoft Edge 104
                   href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
-                  displayName: What's New in DevTools (Microsoft Edge 104)
 
                 - name: Microsoft Edge 103
                   href: devtools-guide-chromium/whats-new/2022/06/devtools-103.md
-                  displayName: What's New in DevTools (Microsoft Edge 103)
 
                 - name: Microsoft Edge 102
                   href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
-                  displayName: What's New in DevTools (Microsoft Edge 102)
 
                 - name: Microsoft Edge 101
                   href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
-                  displayName: What's New in DevTools (Microsoft Edge 101)
 
                 - name: Microsoft Edge 100
                   href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
-                  displayName: What's New in DevTools (Microsoft Edge 100)
 
                 - name: Microsoft Edge 99
                   href: devtools-guide-chromium/whats-new/2022/03/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 99)
 
                 - name: Microsoft Edge 98
                   href: devtools-guide-chromium/whats-new/2022/02/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 98)
 
                 - name: Microsoft Edge 97
                   href: devtools-guide-chromium/whats-new/2022/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 97)
 
                 - name: Microsoft Edge 96
                   href: devtools-guide-chromium/whats-new/2021/11/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 96)
 
                 - name: Microsoft Edge 95
                   href: devtools-guide-chromium/whats-new/2021/10/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 95)
 
                 - name: Microsoft Edge 94
                   href: devtools-guide-chromium/whats-new/2021/09/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 94)
 
                 - name: Microsoft Edge 93
                   href: devtools-guide-chromium/whats-new/2021/07/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 93)
 
                 - name: Microsoft Edge 92
                   href: devtools-guide-chromium/whats-new/2021/05/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 92)
 
                 - name: Microsoft Edge 91
                   href: devtools-guide-chromium/whats-new/2021/04/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 91)
 
                 - name: Microsoft Edge 90
                   href: devtools-guide-chromium/whats-new/2021/02/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 90)
 
                 - name: Microsoft Edge 89
                   href: devtools-guide-chromium/whats-new/2021/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 89)
 
                 - name: Microsoft Edge 88
                   href: devtools-guide-chromium/whats-new/2020/11/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 88)
 
                 - name: Microsoft Edge 87
                   href: devtools-guide-chromium/whats-new/2020/10/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 87)
 
                 - name: Microsoft Edge 86
                   href: devtools-guide-chromium/whats-new/2020/08/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 86)
 
                 - name: Microsoft Edge 85
                   href: devtools-guide-chromium/whats-new/2020/06/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 85)
 
                 - name: Microsoft Edge 84
                   href: devtools-guide-chromium/whats-new/2020/05/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 84)
 
                 - name: Microsoft Edge 83
                   href: devtools-guide-chromium/whats-new/2020/03/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 83)
 
                 - name: Microsoft Edge 81
                   href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 82)
 
                 - name: Microsoft Edge 80
                   href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 80)
 # Experimental features ------------------------------------------------------------------
         - name: Experimental features
           items:
@@ -216,6 +170,10 @@
             - name: Experimental features in Microsoft Edge DevTools
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
+
+            - name: Run commands via keyboard with Command Palette
+              href: devtools-guide-chromium/experimental-features/edge-command-palette.md
+              displayName: Experimental features, Edge Command Palette
 
             - name: Share enhanced performance and memory traces
               href: devtools-guide-chromium/experimental-features/share-traces.md
@@ -1193,8 +1151,6 @@
         - name: Differences between Microsoft Edge and WebView2
           href: webview2/concepts/browser-features.md
 
-# -----------------------------------------------------------------------------
-# machine setup
         - name: Set up your Dev environment for WebView2
           href: webview2/how-to/machine-setup.md
 
@@ -1208,7 +1164,7 @@
 
             - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
-              displayName: WinUI2_GettingStarted, Get started with WebView2 in WinUI 2 (UWP) apps # repo dir name # top-of-page title
+              displayName: WinUI2_GettingStarted, Get started with WebView2 in WinUI 2 (UWP) apps  # repo dir name  # top-of-page title
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
@@ -1243,7 +1199,7 @@
 
             - name: Win32 sample app with Visual Composition
               href: webview2/samples/webview2samplewincomp.md
-              displayName: WebView2SampleWinComp # repo dir name
+              displayName: WebView2SampleWinComp  # repo dir name
 
             - name: Win32 sample WebView2Browser
               href: webview2/samples/webview2browser.md
@@ -1251,16 +1207,16 @@
 
             - name: WinUI 2 (UWP) sample app
               href: webview2/samples/webview2_sample_uwp.md
-              displayName: webview2_sample_uwp # repo dir name
+              displayName: webview2_sample_uwp  # repo dir name
 
 # pending, July 26 2022
-#           - name: WinUI 3 sample app
-#             href: webview2/samples/webview2-winui3-sample.md
-#             displayName: WebView2_WinUI3_Sample  # repo dir name
+#            - name: WinUI 3 sample app
+#              href: webview2/samples/webview2-winui3-sample.md
+#              displayName: WebView2_WinUI3_Sample  # repo dir name
 
             - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
-              displayName: WebView2WpfBrowser # repo dir name
+              displayName: WebView2WpfBrowser  # repo dir name
 
             - name: WPF sample app with CDP
               href: webview2/samples/wv2cdpextensionwpfsample.md
@@ -1290,7 +1246,6 @@
               displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 
 # -----------------------------------------------------------------------------
-# top-level entries below Samples
         - name: "Main classes for WebView2: Environment, Controller, and Core"
           href: webview2/concepts/environment-controller-core.md
 
@@ -1309,11 +1264,12 @@
         - name: Windowed vs. visual hosting of WebView2
           href: webview2/concepts/windowed-vs-visual-hosting.md
 
-        - name: WebView2 browser flags
-          href: webview2/concepts/webview-features-flags.md
-
+# -----------------------------------------------------------------------------
         - name: Customization and UI
           items:
+            - name: WebView2 browser flags  # todo: move entry
+              href: webview2/concepts/webview-features-flags.md
+              
             - name: Custom management of network requests
               href: webview2/how-to/webresourcerequested.md
               displayName: WebResourceRequested, WebResourceResponseReceived
@@ -1329,38 +1285,63 @@
             - name: Working with local content in WebView2 apps
               href: webview2/concepts/working-with-local-content.md
 
-# resume here
+            # - name: Customize the UI   # not needed?  flatten
+            #   items:
+            #     - name: Customize the UI of WebView2 apps
+            #       href: webview2/how-to/customize-ui.md
+            #       displayName: context menu, right-click menu
 
-        - name: Web and native interop
+            - name: Customize context menus
+              href: webview2/how-to/context-menus.md
+              displayName: right-click menu, Customize context menus in WebView2  # top-of-page title
+
+# -----------------------------------------------------------------------------
+            - name: Web and native interop
+              items:
+                - name: Interop of native and web code
+                  href: webview2/how-to/communicate-btwn-web-native.md
+                  displayName: JavaScript interop, Embed web content into native applications (JavaScript interop), Interop of native-side and web-side code  # old titles
+
+                - name: Call web-side code from native-side code
+                  href: webview2/how-to/javascript.md
+                  displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
+
+                - name: Call native-side code from web-side code
+                  href: webview2/how-to/hostobject.md
+                  displayName: AddHostObjectToScript, host objects
+
+                - name: Call native-side WinRT code from web-side code
+                  href: webview2/how-to/winrt-from-js.md
+                  displayName: AddHostObjectToScript, host objects
+
+                - name: How WinRT types and members are represented in JavaScript
+                  href: webview2/how-to/winrt-js-conversion.md
+
+# -----------------------------------------------------------------------------
+        - name: Distribution and SDK versions
           items:
-            - name: Interop of native-side and web-side code
-              href: webview2/how-to/communicate-btwn-web-native.md
-              displayName: JavaScript interop, Embed web content into native applications (JavaScript interop)  # old title
+            - name: Deployment and distribution  # new firstchild page
+              href: webview2/concepts/deployment-distribution.md
+              displayName: Manage WebView2 applications  # old title
 
-            - name: Call web-side code from native-side code
-              href: webview2/how-to/javascript.md
-              displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
+            - name: Prerelease and Release SDKs for WebView2
+              href: webview2/concepts/versioning.md
+              displayName: experimental APIs, Understand the different WebView2 SDK versions  # old title
 
-            - name: Call native-side code from web-side code
-              href: webview2/how-to/hostobject.md
-              displayName: AddHostObjectToScript, host objects
+            - name: Distribute your app and the WebView2 Runtime
+              href: webview2/concepts/distribution.md
 
-            - name: Call native-side WinRT code from web-side code
-              href: webview2/how-to/winrt-from-js.md
-              displayName: AddHostObjectToScript, host objects
+            - name: Enterprise management of WebView2 Runtimes
+              href: webview2/concepts/enterprise.md
+              displayName: Manage WebView2 applications  # old title
 
-            - name: How WinRT types and members are represented in JavaScript
-              href: webview2/how-to/winrt-js-conversion.md
+            - name: Distribute an app as a single executable file
+              href: webview2/how-to/static.md
+              displayName: Statically link the WebView2 loader library, single-file app  # old title
 
-
-        # updated h2: Experimental APIs, added a 2nd, new h3:
-        - name: Understand the different WebView2 SDK versions
-          href: webview2/concepts/versioning.md
-          displayName: Understand WebView2 SDK versions  # old title
-
-        - name: Distribute your app and the WebView2 Runtime
-          href: webview2/concepts/distribution.md
-
+            - name: Publish a UWP WebView2 app to the Microsoft Store
+              href: webview2/how-to/publish-uwp-app-store.md
+              displayName: Partner Center, Microsoft Store
 
 # -----------------------------------------------------------------------------
         - name: Test and automation in WebView2 apps
@@ -1368,15 +1349,23 @@
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
 
+            - name: Development best practices
+              href: webview2/concepts/developer-guide.md
+              displayName: Development best practices for WebView2 apps  # top-of-page title
+
+            - name: Develop secure WebView2 apps
+              href: webview2/concepts/security.md
+
+            - name: Use the Chrome DevTools Protocol (CDP)
+              href: webview2/how-to/chromium-devtools-protocol.md
+              displayName: Use the Chrome DevTools Protocol (CDP) in WebView2 apps, chrome developer protocol  # top-of-page title & catch a mis-type
+
             - name: Use Playwright to automate and test in WebView2
               href: webview2/how-to/playwright.md
 
             - name: Automate and test WebView2 apps with Microsoft Edge WebDriver
               href: webview2/how-to/webdriver.md
 
-# -----------------------------------------------------------------------------
-        - name: Debug WebView2 apps
-          items:
             - name: Debug WebView2 apps
               href: webview2/how-to/debug.md
 
@@ -1413,7 +1402,6 @@
 # -----------------------------------------------------------------------------
         - name: Architecture
           items:
-
           # - name: Architecture of WebView2
           #   href: webview2/concepts/architecture.md
 
@@ -1438,60 +1426,11 @@
             - name: Clear browsing data from the user data folder
               href: webview2/concepts/clear-browsing-data.md
 
-# -----------------------------------------------------------------------------
-        - name: Advanced Topics and Best Practices
-          items:
-            - name: Development best practices
-              href: webview2/concepts/developer-guide.md
-              displayName: Development best practices for WebView2 apps  # top-of-page title
-
-            - name: Develop secure WebView2 apps
-              href: webview2/concepts/security.md
-
-          # - name: Customize the UI in WebView2 apps   # not needed?  file exists, not revealed in TOC
-          #   items:
-          #     - name: Customize the UI of WebView2 apps
-          #       href: webview2/how-to/customize-ui.md
-          #       displayName: context menu, right-click menu
-
-            - name: Customize context menus
-              href: webview2/how-to/context-menus.md
-              displayName: right-click menu, Customize context menus in WebView2  # top-of-page title
-
-
-
-
-
-
-
-
-            - name: Use the Chrome DevTools Protocol (CDP)
-              href: webview2/how-to/chromium-devtools-protocol.md
-              displayName: Use the Chrome DevTools Protocol (CDP) in WebView2 apps, chrome developer protocol  # top-of-page title & catch a mis-type
-
             - name: Data and privacy
               href: webview2/concepts/data-privacy.md
               displayName: Data and privacy in WebView2  # top-of-page title
 
 # -----------------------------------------------------------------------------
-        - name: Deployment and distribution
-          items:
-            - name: Deployment and distribution  # new firstchild page
-              href: webview2/concepts/deployment-distribution.md
-              displayName: Manage WebView2 applications  # old title
-
-            - name: Enterprise management of WebView2 Runtimes
-              href: webview2/concepts/enterprise.md
-              displayName: Manage WebView2 applications  # old title
-
-            - name: Distribute an app as a single executable file
-              href: webview2/how-to/static.md
-              displayName: Statically link the WebView2 loader library, single-file app  # old title
-
-            - name: Publish a UWP WebView2 app to the Microsoft Store
-              href: webview2/how-to/publish-uwp-app-store.md
-              displayName: Partner Center, Microsoft Store
-# -----------------------------------------------------------------
 # relnotes
         - name: Release Notes
           items:
@@ -1507,9 +1446,7 @@
               href: webview2/release-notes/archive.md
               displayName: Archived Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
-
-# end of relnotes
-# -----------------------------------------------------------------
+# -----------------------------------------------------------------------------
         - name: WebView2 Roadmap
           href: webview2/roadmap.md
 
@@ -1577,11 +1514,8 @@
                   uid: 'WebView2Script!SharedBufferReceivedEvent:class'
                 - name: WebView
                   uid: 'WebView2Script!WebView:class'
-                - name: WebViewEventMap
-                  uid: 'WebView2Script!WebViewEventMap:class'
-                - name: WebViewMessageEvent
-                  uid: 'WebView2Script!WebViewMessageEvent:class'
 
+# -----------------------------------------------------------------------------
         - name: WebView2 end-user FAQ
           href: webview2/concepts/end-user-faq.md
 
