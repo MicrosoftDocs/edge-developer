@@ -55,9 +55,6 @@ This page only lists APIs that are in Release SDKs; it doesn't list Experimental
    * `Client`
    * `Nowhere`
 
-* `CoreWebView2ProcessFailedEventArgs` Class:
-   * [CoreWebView2ProcessFailedEventArgs.FailureSourceModulePath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.failuresourcemodulepath)
-
 * `CoreWebView2Settings` Class:
    * [CoreWebView2Settings.IsNonClientRegionSupportEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isnonclientregionsupportenabled)
 
@@ -75,9 +72,6 @@ This page only lists APIs that are in Release SDKs; it doesn't list Experimental
    * `Caption`
    * `Client`
    * `Nowhere`
-
-* `CoreWebView2ProcessFailedEventArgs` Class:
-   * [CoreWebView2ProcessFailedEventArgs.FailureSourceModulePath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs#failuresourcemodulepath)
 
 * `CoreWebView2Settings` Class:
    * [CoreWebView2Settings.IsNonClientRegionSupportEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isnonclientregionsupportenabled)
