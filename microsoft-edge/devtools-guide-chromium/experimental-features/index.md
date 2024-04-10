@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 03/01/2024
+ms.date: 04/10/2024
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -160,11 +160,19 @@ Status:
 ## Capture node creation stacks
 <!-- checkbox has a (?) link to this anchor wording -->
 
-To capture JavaScript stack traces when DOM nodes are added to the DOM at runtime, enable this experiment.  The captured stack traces are displayed in the **Stack Trace** pane of the **Elements** tool.<!-- todo: what tool contains this Stack Trace pane?  Sources tool?  Crash Analyzer tool?  Console?  where in that tool?  Update See Also accordingly -->
+To capture JavaScript stack traces when DOM nodes are added to the DOM at runtime, enable this experiment.  This experiment adds the **Stack Trace** tab in the **Elements** tool, grouped with the **Styles** tab:
+
+![The Stack Trace tab in the Elements tool](./index-images/stack-trace-tab.png)
+
+After you enable the experiment, you can test it as follows:
+
+1. In a new window or tab, open a webpage that creates DOM nodes dynamically via JavaScript, such as the [TODO demo app](https://microsoftedge.github.io/Demos/demo-to-do/).
+1. In the rendered demo page, create a new todo item.
+1. In the rendered demo page, right-click the new todo item, and then select **Inspect**.  DevTools opens, showing the **Elements** tool.
+1. Click the **Stack Trace** tab, which is grouped with the **Styles** tab.
 
 See also:
-* [Sources tool overview](../sources/index.md)
-<!-- todo: improve links -->
+* [Get started viewing and changing the DOM](../dom/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
@@ -261,22 +269,6 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Timeline: event initiators
-<!-- checkbox has a (?) link to this anchor wording -->
-
-Whether to include event initiators in the **Performance** tool.  This is useful to link a selected event to the other event that initiated it.
-
-See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 124.
-* This checkbox is not present in Microsoft Edge Stable 122.
-
-The present section is retained because older browsers have a (?) link pointing to it.
-
-
-<!-- ====================================================================== -->
 ## Enable JavaScript Profiler temporarily
 <!-- no (?) link -->
 
@@ -308,23 +300,6 @@ See also:
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
-
-
-<!-- ====================================================================== -->
-## WebAssembly Debugging: Enable DWARF support
-<!-- checkbox has a (?) link to this anchor wording -->
-
-Enables DWARF support for WebAssembly debugging.
-<!-- todo old: need text -->
-
-See also:
-* [Improved WebAssembly debugging](../whats-new/2019/12/devtools.md#improved-webassembly-debugging) in _What's New in DevTools (Microsoft Edge 80)_.
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 124.
-* This checkbox is not present in Microsoft Edge Stable 122.
-
-The present section is retained because older browsers have a (?) link pointing to it.
 
 
 <!-- ====================================================================== -->
@@ -474,22 +449,6 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Display more precise changes in the Changes tab
-<!-- checkbox has a (?) link to this anchor wording -->
-
-Whether to display changes by using a more detailed layout in the **Changes** tool.
-
-See also:
-* [More precise changes in the Changes tab](https://developer.chrome.com/blog/new-in-devtools-98/#changes)
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 124.
-* This checkbox is not present in Microsoft Edge Stable 122.
-
-The present section is retained because older browsers have a (?) link pointing to it.
-
-
-<!-- ====================================================================== -->
 ## Sync CSS changes in the Styles pane
 <!-- checkbox has a (?) link to this anchor wording -->
 
@@ -519,44 +478,6 @@ See also:
 Status:
 * This checkbox is present in Microsoft Edge Canary 124.
 * This checkbox is present in Microsoft Edge Stable 122.
-
-
-<!-- ====================================================================== -->
-## Local overrides for response headers
-<!-- checkbox has a (?) link to this anchor wording -->
-
-Whether to use local overrides for response headers.
-<!-- todo old: need text -->
-
-See also:
-* [Override network response headers](https://developer.chrome.com/blog/new-in-devtools-113/#network)
-* [Add columns for response headers](../network/reference.md#add-columns-for-response-headers) in _Network features reference_.
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 124.
-* This checkbox is not present in Microsoft Edge Stable 122.
-
-The present section is retained because older browsers have a (?) link pointing to it.
-
-
-<!-- ====================================================================== -->
-## Enable color picking outside the browser window
-<!-- no (?) link -->
-
-Allows you to move the mouse cursor when it's an eyedropper tool, over anywhere on your screen, not just within the Microsoft Edge window.
-
-In the **Elements** tool, in the **Styles** tab, click on any color preview.  The Color Picker opens.  Click the **Toggle color picker** (![Eyedropper icon button](index-images/eyedropper-color-picker-icon.png)) button.  The mouse cursor becomes an eyedropper.  Click anywhere on your monitor to select a color.
-
-<!-- https://developer.chrome.com/blog/new-in-devtools-102/#color-picker -->
-
-See also:
-* [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 124.
-* This checkbox is not present in Microsoft Edge Stable 122.
-
-The present section will be removed, because current browsers no longer have this checkbox, and older browsers don't have a (?) link pointing to this section.
 
 
 <!-- ====================================================================== -->

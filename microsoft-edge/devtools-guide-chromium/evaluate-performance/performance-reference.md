@@ -1,6 +1,6 @@
 ---
-title: Timeline event reference
-description: The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.
+title: Performance recording event reference
+description: Describes each event type in the Performance tool, for all events that are triggered while making a recording.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -21,9 +21,9 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Timeline event reference
+# Performance recording event reference
 
-In the **Performance** tool, the timeline events mode displays all events that are triggered while making a recording.  Each timeline event type is described below:
+In the **Performance** tool, the **Main** section displays all events that are triggered while making a recording.  Each event type is described below:
 * [Loading events](#loading-events)
 * [Scripting events](#scripting-events)
 * [Rendering events](#rendering-events)
@@ -31,9 +31,9 @@ In the **Performance** tool, the timeline events mode displays all events that a
 
 
 <!-- ====================================================================== -->
-## Properties common to all timeline events
+## Properties common to all events
 
-The following properties are common to all event types in the **Performance** tool's timeline.  Additional properties that are specific to certain event types are listed in the subsequent sections below.
+The following properties are common to all event types in the **Performance** tool's **Main** section.  Additional properties that are specific to certain event types are listed in the subsequent sections below.
 
 | Property | When is it shown |
 |:--- |:--- |

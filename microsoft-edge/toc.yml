@@ -584,7 +584,7 @@
                   href: devtools-guide-chromium/evaluate-performance/reference.md
                   displayName: Performance tool, Rendering tool
 
-                - name: Timeline event reference
+                - name: Performance recording event reference
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
                   displayName: Performance tool
 
