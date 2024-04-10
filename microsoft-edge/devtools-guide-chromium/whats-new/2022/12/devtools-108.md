@@ -43,6 +43,8 @@ See also:
 <!-- ====================================================================== -->
 ## Improved DevTools navigation via Command Palette
 
+_The Command Palette experiment was removed in Microsoft Edge 123._
+
 <!-- Subtitle: This update fixes a bug related to opening DevTools from the Command Palette in Microsoft Edge. -->
 
 The Microsoft Edge Command Palette is an experimental feature that allows users to perform common tasks in Microsoft Edge.  In previous versions of Microsoft Edge, DevTools-related commands for opening specific parts of a tool didn't navigate correctly, such as the **Styles** tab in the **Elements** tool or the **Snippets** tab in the **Sources** tool.  In Microsoft Edge 108, this issue is fixed, improving the usability of commands such as **Sources: Show Snippets**:
@@ -54,7 +56,6 @@ Now, when you select **Sources: Show Snippets**, the **Sources** tool opens with
 ![Snippets tab of the Sources tool opened from Command Palette](./devtools-108-images/command-palette-opened-snippets.png)
 
 See also:
-* [Run commands via keyboard with Command Palette](../../../experimental-features/edge-command-palette.md)
 * [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md)
 
 

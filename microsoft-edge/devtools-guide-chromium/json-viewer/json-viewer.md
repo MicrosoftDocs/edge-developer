@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/17/2023
+ms.date: 04/08/2024
 ---
 # View formatted JSON
 
@@ -88,3 +88,61 @@ To view invalid JSON data:
 1. In a code editor, such as Microsoft Visual Studio Code, go to the indicated column number to inspect the JSON:
 
    ![Viewing the malformed JSON by column number in VS Code](./json-viewer-images/column-number.png)
+
+
+<!-- ====================================================================== -->
+## Search the JSON data
+
+To search for text within the JSON data, use the **JSON viewer**'s **Find** feature, as follows:
+
+1. View a JSON response or file in the **JSON viewer**.
+
+1. Click anywhere in the formatted JSON data, to put focus in the JSON data.
+
+1. Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS). The search toolbar appears at the top of the **JSON viewer**:
+  
+   ![The search toolbar of the JSON viewer](./json-viewer-images/search.png)
+
+1. In the **Find** text box, start typing the text you want to search for.  As you type, the **JSON viewer** highlights all of the occurrences of the text string in the JSON data.
+
+To stop the search, click the **Cancel** button in the **JSON viewer**'s toolbar.
+
+
+<!-- ------------------------------ -->
+#### Move through the search results
+
+To move to the next or previous search result, after results were found, click the **Next** or **Previous** buttons in the search toolbar.  The currently selected search result is highlighted in a different color:
+
+![The Next and Previous buttons in the JSON viewer's search toolbar](./json-viewer-images/search-move.png)
+
+
+<!-- ------------------------------ -->
+#### Modify the type of search
+
+The search toolbar contains **Match Case**, **Regexp**, and **By Word** checkboxes, to modify the type of search:
+
+![The Match Case, Regexp, and By Word checkboxes, which change how the search is performed](./json-viewer-images/search-modes.png)
+
+
+<!-- ---------- -->
+###### Perform a case-sensitive search
+
+By default, the search is case-insensitive.  For example, a search on `hello` matches `Hello`, `HELLO`, `hello`, or any string that contains the characters `hello` with any casing.
+
+To make the search case-sensitive, select the **Match Case** checkbox in the search toolbar.
+
+
+<!-- ---------- -->
+###### Search by a regular expression
+
+By default, the search string is treated as a literal string.
+
+To search by using a regular expression, select the **Regexp** checkbox in the search toolbar.
+
+
+<!-- ---------- -->
+###### Search by whole word only
+
+By default, the search is not restricted to finding just the whole, isolated word surrounded by spaces.  For example, a search on `hello` matches `hello`, `hello-world`, and `world-hello`, or any string that contains the sequence of characters `hello`.
+
+To restrict the search to match only the string surrounded by spaces, without adjacent letters, select the **By Word** checkbox in the search toolbar.
