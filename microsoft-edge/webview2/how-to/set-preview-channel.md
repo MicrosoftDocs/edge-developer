@@ -288,6 +288,7 @@ Do either of the following:
 
 * Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
 
+---
 
 <!-- ------------------------------ -->
 #### How to use an environment variable
@@ -315,9 +316,6 @@ Do either of the following:
    * If setting the BrowserExecutableFolder, enter the path to your preferred browser channel or fixed-version binaries.
 
 1. Click the **OK** buttons to close the dialogs.
-
-
----
 
 
 <!-- ====================================================================== -->
