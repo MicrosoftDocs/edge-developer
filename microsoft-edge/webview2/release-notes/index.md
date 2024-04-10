@@ -125,6 +125,62 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 
 <!-- ====================================================================== -->
+## 1.0.####-prerelease
+ 
+Release Date: April 20, 2024
+ 
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+ 
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+
+<!-- ------------------------------ -->
+#### General features
+
+ 
+<!-- ------------------------------ -->
+#### Experimental APIs
+
+No Experimental APIs have been added in this Prerelease SDK.
+The following Experimental APIs have been added in this Prerelease SDK.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+ 
+
+<!-- ------------------------------ -->
+#### Promotions
+
+No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+ 
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+###### Runtime and SDK
+
+###### Runtime-only
+
+###### SDK-only
+
+ 
+<!-- end of Mar. 2024 Prerelease SDK -->
+
+
+<!-- ====================================================================== -->
 ## 1.0.2420.47
 
 Release Date: March 25, 2024
