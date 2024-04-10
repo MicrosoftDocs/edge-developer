@@ -6,16 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/19/2024
+ms.date: 04/10/2024
 ---
 # Test upcoming APIs and features
 <!-- old title: 
 # Switch to a preview channel to test upcoming APIs and features
 -->
 
-To test new or forthcoming APIs and feature you should switch to a Microsoft Edge preview channel rather than using the WebView2 Runtime. The Evergreen WebView2 Runtime is updated frequently to add new APIs and functionalities. These updates occur after APIs have been promoted from `Experimental` in a Prerelease WebView2 SDK to `Stable` in the WebView2 Release SDK. Some of the updates in the Evergreen WebView2 Runtime could potentially break your WebView2 app.
+To test new or forthcoming APIs and features, switch to a Microsoft Edge preview channel rather than using the WebView2 Runtime.  The Evergreen WebView2 Runtime is updated frequently to add new APIs and functionalities. These updates occur after APIs have been promoted from `Experimental` in a Prerelease WebView2 SDK to `Stable` in the WebView2 Release SDK.  Some of the updates in the Evergreen WebView2 Runtime could potentially break your WebView2 app.
 
-We recommend that you test the Experimental APIs ahead of time, before they are promoted to Stable in the WebView2 Release SDK, by switching to a preview channel of Microsoft Edge (which includes WebView2), to ensure your app's forward compatibility.
+We recommend that you test the Experimental APIs ahead of time, before they are promoted to Stable in the WebView2 Release SDK, by switching to a preview channel of Microsoft Edge (which includes WebView2), to ensure that your app is forward-compatible.
 
 See also:
 * [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
@@ -24,19 +24,19 @@ See also:
 <!-- ------------------------------ -->
 #### Use a preview channel of WebView2 to test your app against the most recent experimental WebView2 APIs
 
-The Evergreen WebView2 Runtime does not include the most recent experimental WebView2 APIs. To utilize these experimental features in your WebView2 code, your app should use WebView2 within a Microsoft Edge preview channel (Edge Beta, Edge Dev, or Edge Canary). In the rest of the document we will describe how to switch to a preview channel of Microsoft Edge to test experimental APIs in a prerelease package.
+The Evergreen WebView2 Runtime doesn't include experimental WebView2 APIs.  Instead, to use these experimental features in your WebView2 code, have your app use the version of WebView2 that's in a Microsoft Edge preview channel (Edge Beta, Edge Dev, or Edge Canary).  This article explains how to switch to a preview channel of Microsoft Edge, to test experimental APIs that are in a WebView2 Prerelease SDK package.
 
 The Canary channel is recommended, because it offers the latest experimental APIs.
 
+
 <!-- ------------------------------ -->
 #### Interplay between the WebView2 Prerelease SDK and Microsoft Edge Preview Channels
-
 
 *  **Prerelease SDK:** This version of the WebView2 SDK provides method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.
 
 *  **Microsoft Edge Preview Channels:** These channels (Edge Beta, Edge Dev, or Edge Canary) contain the necessary Microsoft Edge binaries. They allow your app to run and render using the experimental APIs.
 
-For a deeper dive into how SDK versions interact with WebView2 Runtime and Microsoft Edge preview channels, refer to [Understand the different WebView2 SDK versions](../concepts/versioning.md).
+For more information about how SDK versions interact with the WebView2 Runtime and the Microsoft Edge preview channels, see [Understand the different WebView2 SDK versions](../concepts/versioning.md).
 
 
 <!-- ------------------------------ -->
@@ -67,7 +67,7 @@ There are two ways to make your WebView2 app use a specified preview channel of 
 
 * [Setting the browser executable folder (for local testing)](#setting-the-browser-executable-folder-for-local-testing).
 
-These approaches are described below:
+These approaches are described below.
 
 
 <!-- ====================================================================== -->
