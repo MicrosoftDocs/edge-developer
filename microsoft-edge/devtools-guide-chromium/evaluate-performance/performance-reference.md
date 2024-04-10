@@ -74,7 +74,7 @@ The following events are in the **Loading** category.
 | MIME Type | MIME type of the requested resource. |
 | Encoded Data Length | Length of requested resource in bytes. |
 
-See also [Properties common to all timeline events](#properties-common-to-all-timeline-events), above.
+See also [Properties common to all events](#properties-common-to-all-events), above.
 
 
 <!-- ====================================================================== -->
@@ -111,7 +111,7 @@ The following events are in the **Scripting** category.
 | Repeats | Boolean that specifies if the timer repeats. |
 | Function Call | A function that was invoked. |
 
-See also [Properties common to all timeline events](#properties-common-to-all-timeline-events), above.
+See also [Properties common to all events](#properties-common-to-all-events), above.
 
 
 <!-- ====================================================================== -->
@@ -139,7 +139,7 @@ The following events are in the **Rendering** category.
 | Elements affected | For Recalculate style records, the number of elements affected by a style recalculation. |
 | Styles invalidated | For Recalculate style records, provides the stack trace of the code that caused the style invalidation. |
 
-See also [Properties common to all timeline events](#properties-common-to-all-timeline-events), above.
+See also [Properties common to all events](#properties-common-to-all-events), above.
 
 
 <!-- ====================================================================== -->
@@ -163,7 +163,7 @@ The following events are in the **Painting** category.
 | Location | For Paint events, the x and y coordinates of the paint rectangle. |
 | Dimensions | For Paint events, the height and width of the painted region. |
 
-See also [Properties common to all timeline events](#properties-common-to-all-timeline-events), above.
+See also [Properties common to all events](#properties-common-to-all-events), above.
 
 
 <!-- ====================================================================== -->
