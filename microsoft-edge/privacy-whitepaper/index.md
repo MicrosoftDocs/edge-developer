@@ -374,7 +374,7 @@ The family group organizer may stop the data collection from the family safety p
 <!-- ====================================================================== -->
 ## Find on page 
 
-Use the "Find on page" feature to search a webpage for key words.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, click **Settings** (**..**), and then select **Find on page**.  A search box opens.  Enter a word, phrase, or other string into this search box.  As you type, all occurrences of the string in the page are highlighted. You can then move through the search results by clicking the **Previous result** and **Next result** buttons.
+Use the "Find on page" feature to search a webpage for key words.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, click **Settings and more** (**...**), and then select **Find on page**.  A search box opens.  Enter a word, phrase, or other string into this search box.  As you type, all occurrences of the string in the page are highlighted. You can then move through the search results by clicking the **Previous result** and **Next result** buttons.
 
 By default, the **Include related matches in Find on page** feature allows **Find on page** to find other related matches, including synonyms and alternate spellings.
 
@@ -384,7 +384,7 @@ Related matches in **Find on page** aren't available when using InPrivate browsi
 
 To stop Microsoft Edge from finding related matches in **Find on page**:
 
-1. Select **Settings and more** (**...**) > **Settings** > **Privacy, search, and services**, and then scroll down to the **Services** section.  Or, go to `edge://settings/privacy`, and then scroll down to the **Services** section.
+1. Select **Settings and more** (**...**) > **Settings** > **Search and services**, or, go to `edge://settings/searchServices`.
 
 1. Turn off the **Include related matches in Find on page** toggle.
 
@@ -439,7 +439,7 @@ Importing your data is completed locally on your device and is stored locally.  
 
 * Sign into Microsoft Edge with a Microsoft account, and turn on sync'ing of your browsing data across all signed-in devices.
 
-* In Microsoft Edge settings, turn on the toggle **Privacy, search, and services** > **Personalization & advertising** > **Allow Microsoft to save your browsing activity including history, usage, favorites, web content, and other browsing data to personalize Microsoft Edge and Microsoft services like ads, search, shopping and news**.
+* In Microsoft Edge settings, turn on the toggle **Privacy and security** > **Personalization & advertising** > **Allow Microsoft to save your browsing activity including history, usage, favorites, web content, and other browsing data to personalize Microsoft Edge and Microsoft services like ads, search, shopping and news**.
 
 You can manage your browsing history that's stored on Microsoft servers by visiting [https://account.microsoft.com](https://account.microsoft.com).
 
@@ -759,7 +759,7 @@ To manage the collection and use of your search results activity for product imp
 
 1. Select **Settings and more** > **Settings**. 
 
-1. Select **Privacy, search, and services**. 
+1. Select **Privacy and security**. 
 
 1. Under **Search and service improvement**, turn on or off the setting for **Help improve Microsoft products by sending the results from searches on the web**. 
 
