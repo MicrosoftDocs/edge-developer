@@ -367,11 +367,7 @@ In this section, you add code to import the WebView2 Core library.
 
     The app navigates to the specified page, because navigation is allowed for HTTPS sites.
 
-1.  Close the app.  The following Visual Studio dialogs might appear:
-
-    ![Debugger not configured](winui-images/debugger-not-configd.png)
-
-1.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialogs.
+1.  Close the app.
 
 
 <!-- ====================================================================== -->
