@@ -827,7 +827,6 @@
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
         - name: DevTools for Visual Studio Code
           items:
 
@@ -904,7 +903,6 @@
 # /DevTools
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge extensions
       items:
         - name: Overview of Microsoft Edge extensions
@@ -1044,7 +1042,6 @@
           displayName: Samples for Microsoft Edge extensions # full title
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Progressive Web Apps
       items:
 
@@ -1139,7 +1136,6 @@
           href: progressive-web-apps-chromium/demo-pwas.md
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: WebView2
       items:
         - name: Introduction to Microsoft Edge WebView2
@@ -1218,13 +1214,13 @@
               href: webview2/samples/webview2wpfbrowser.md
               displayName: WebView2WpfBrowser  # repo dir name
 
-            - name: WPF sample app with CDP
+            - name: WPF sample app with CDP extension
               href: webview2/samples/wv2cdpextensionwpfsample.md
-              displayName: WV2CDPExtensionWPFSample, WPF sample app with CDP extension  # repo dir name, top-of-page title
+              displayName: WV2CDPExtensionWPFSample  # repo dir name
 
             - name: WinForms sample app
               href: webview2/samples/webview2windowsformsbrowser.md
-              displayName: WebView2WindowsFormsBrowser, WinForms sample app  # repo dir name, top-of-page title
+              displayName: WebView2WindowsFormsBrowser  # repo dir name
 
 # -----------------------------------------------------------------------------
 # Deployment samples
@@ -1253,9 +1249,9 @@
           href: webview2/concepts/navigation-events.md
           displayName: Navigation events for WebView2 apps  # top-of-page title
 
-        - name: Process-related events
+        - name: Handle process-related events
           href: webview2/concepts/process-related-events.md
-          displayName: Handling process-related events in WebView2  # top-of-page title
+          displayName: Handle process-related events in WebView2  # top-of-page title
 
         - name: Basic authentication
           href: webview2/concepts/basic-authentication.md
@@ -1278,9 +1274,8 @@
               href: webview2/concepts/frames.md
               displayName: Using frames in WebView2 apps, iframe # full title
 
-            - name: Printing
+            - name: Printing from WebView2 apps
               href: webview2/how-to/print.md
-              displayName: Printing from WebView2 apps # full title
 
             - name: Working with local content in WebView2 apps
               href: webview2/concepts/working-with-local-content.md
@@ -1363,23 +1358,23 @@
             - name: Use Playwright to automate and test in WebView2
               href: webview2/how-to/playwright.md
 
-            - name: Automate and test WebView2 apps with Microsoft Edge WebDriver
+            - name: Automate and test with Microsoft Edge WebDriver
               href: webview2/how-to/webdriver.md
+              displayName: Automate and test WebView2 apps with Microsoft Edge WebDriver  # top-of-page title
 
             - name: Debug WebView2 apps
-              href: webview2/how-to/debug.md
+              items:
+                - name: Debug WebView2 apps
+                  href: webview2/how-to/debug.md
 
-            - name: Microsoft Edge DevTools
-              href: webview2/how-to/debug-devtools.md
-              displayName: Debug WebView2 apps with Microsoft Edge DevTools  # top-of-page title
+                - name: Debug WebView2 apps with Microsoft Edge DevTools
+                  href: webview2/how-to/debug-devtools.md
 
-            - name: Microsoft Visual Studio Code
-              href: webview2/how-to/debug-visual-studio-code.md
-              displayName: Debug WebView2 apps with Visual Studio Code  # top-of-page title
+                - name: Debug WebView2 apps with Visual Studio Code
+                  href: webview2/how-to/debug-visual-studio-code.md
 
-            - name: Microsoft Visual Studio
-              href: webview2/how-to/debug-visual-studio.md
-              displayName: Debug WebView2 apps with Visual Studio  # top-of-page title
+                - name: Debug WebView2 apps with Visual Studio
+                  href: webview2/how-to/debug-visual-studio.md
 
             - name: Remote debugging WebView2 WinUI 2 (UWP) apps
               items:
@@ -1405,13 +1400,11 @@
           # - name: Architecture of WebView2
           #   href: webview2/concepts/architecture.md
 
-            - name: Process model
+            - name: Process model for WebView2 apps
               href: webview2/concepts/process-model.md
-              displayName: Process model for WebView2 apps  # top-of-page title
 
-            - name: Threading model
+            - name: Threading model for WebView2 apps
               href: webview2/concepts/threading-model.md
-              displayName: Threading model for WebView2 apps  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: User data and history
@@ -1426,25 +1419,22 @@
             - name: Clear browsing data from the user data folder
               href: webview2/concepts/clear-browsing-data.md
 
-            - name: Data and privacy
+            - name: Data and privacy in WebView2
               href: webview2/concepts/data-privacy.md
-              displayName: Data and privacy in WebView2  # top-of-page title
 
 # -----------------------------------------------------------------------------
 # relnotes
         - name: Release Notes
           items:
-            - name: About  # new page
+            - name: About Release Notes for the WebView2 SDK
               href: webview2/release-notes/about.md
-              displayName: About Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
-            - name: Release Notes
-              href: webview2/release-notes/index.md  # new location & file name, instead of at wv2 root
-              displayName: Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
+            - name: Release Notes for the WebView2 SDK
+              href: webview2/release-notes/index.md
+              displayName: what's new, announcements
 
-            - name: Archived Release Notes  # new page
+            - name: Archived Release Notes for the WebView2 SDK
               href: webview2/release-notes/archive.md
-              displayName: Archived Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: WebView2 Roadmap
@@ -1525,7 +1515,6 @@
 # / WebView2 articles
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Test and automation
       items:
         - name: Test and automation in Microsoft Edge  # new firstchild article
@@ -1560,7 +1549,6 @@
           href: test-and-automation/webhint.md
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Development tips for Microsoft Edge
       items:
         - name: Development tips for Microsoft Edge
@@ -1597,7 +1585,6 @@
           displayName: JSON viewer, view JSON
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge IDE integration
       items:
         - name: Microsoft Edge IDE integration
@@ -1617,7 +1604,6 @@
           href: visual-studio/index.md
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Accessibility in Microsoft Edge
       items:
         - name: Accessibility in Microsoft Edge
