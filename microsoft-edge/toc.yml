@@ -1223,25 +1223,6 @@
               displayName: WebView2WindowsFormsBrowser  # repo dir name
 
 # -----------------------------------------------------------------------------
-# Deployment samples
-        - name: Deployment samples
-          items:
-            - name: Deployment samples
-              href: webview2/samples/deployment-samples.md
-
-            - name: WebView2 Deployment Visual Studio installer
-              href: webview2/samples/wv2deploymentvsinstallersample.md
-              displayName: WV2DeploymentVSInstallerSample  # repo dir name
-
-            - name: WiX Burn Bundle to deploy the WebView2 Runtime
-              href: webview2/samples/wv2deploymentwixburnbundlesample.md
-              displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
-
-            - name: WiX Custom Action to deploy the WebView2 Runtime
-              href: webview2/samples/wv2deploymentwixcustomactionsample.md
-              displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
-
-# -----------------------------------------------------------------------------
         - name: "Main classes for WebView2: Environment, Controller, and Core"
           href: webview2/concepts/environment-controller-core.md
 
@@ -1318,6 +1299,23 @@
             - name: Deployment and distribution  # new firstchild page
               href: webview2/concepts/deployment-distribution.md
               displayName: Manage WebView2 applications  # old title
+
+            - name: Deployment samples
+              items:
+                - name: Deployment samples
+                  href: webview2/samples/deployment-samples.md
+
+                - name: WebView2 Deployment Visual Studio installer
+                  href: webview2/samples/wv2deploymentvsinstallersample.md
+                  displayName: WV2DeploymentVSInstallerSample  # repo dir name
+
+                - name: WiX Burn Bundle to deploy the WebView2 Runtime
+                  href: webview2/samples/wv2deploymentwixburnbundlesample.md
+                  displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
+
+                - name: WiX Custom Action to deploy the WebView2 Runtime
+                  href: webview2/samples/wv2deploymentwixcustomactionsample.md
+                  displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 
             - name: Prerelease and Release SDKs for WebView2
               href: webview2/concepts/versioning.md
