@@ -1186,7 +1186,7 @@
 # Sample apps
         - name: Sample apps
           items:
-            - name: Sample apps
+            - name: WebView2 sample apps
               href: webview2/code-samples-links.md
 
             - name: Win32 sample app
@@ -1302,7 +1302,7 @@
 
             - name: Deployment samples
               items:
-                - name: Deployment samples
+                - name: WebView2 deployment samples
                   href: webview2/samples/deployment-samples.md
 
                 - name: WebView2 Deployment Visual Studio installer

@@ -459,7 +459,7 @@ The following classes aren't accessible in WinUI 3:
 * [WebView2 API Reference](../webview2-api-reference.md)
 * [Introduction to Microsoft Edge WebView2](../index.md) - overview of features.
 * [Manage user data folders](../concepts/user-data-folder.md)
-* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
+* [WebView2 sample apps](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 appsDevelopment best practices](../concepts/developer-guide.md)
 
 developer.microsoft.com:

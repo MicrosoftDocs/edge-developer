@@ -287,7 +287,7 @@ conceptualContent:
               url: ./webview2/get-started/get-started.md
               itemType: get-started
 
-            - text: Sample Code
+            - text: WebView2 sample apps
               url: ./webview2/code-samples-links.md
               itemType: download
 

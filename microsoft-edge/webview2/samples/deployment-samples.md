@@ -1,5 +1,5 @@
 ---
-title: Deployment samples
+title: WebView2 deployment samples
 description: Deployment samples for WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 07/11/2022
 ---
-# Deployment samples
+# WebView2 deployment samples
 
 These samples demonstrate how to deploy the Evergreen WebView2 Runtime with your app that uses the WebView2 control.
 
@@ -24,3 +24,4 @@ These samples demonstrate how to deploy the Evergreen WebView2 Runtime with your
 
 * [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme)
+* [WebView2 sample apps](../code-samples-links.md)
