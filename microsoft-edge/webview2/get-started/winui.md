@@ -289,9 +289,7 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
 
     An `ArgumentException` exception is thrown, and appears after you close the app, because the URL doesn't start with `http://` or `https://`.
 
-1.  Close the app.  The following Visual Studio dialogs might appear:
-
-    ![Debugger not configured](winui-images/debugger-not-configd.png)
+1.  Close the app.
 
 
 <!--
@@ -416,11 +414,7 @@ As an example, next, you add scripts that send an alert when a user tries to ope
 
     ![The app's WebView2 control displays an alert dialog for non-HTTPS websites](winui-images/getting-started-script.png)
 
-1.  Close the app.  The following Visual Studio dialog boxes might appear:
-
-    ![Debugger not configured](winui-images/debugger-not-configd.png)
-
-1.  These debugger dialog boxes are a known bug.  Click the **OK** button, and then click the **Cancel** button to close the dialog boxes.
+1.  Close the app.
 
 Congratulations, you built your first WebView2 app!
 
