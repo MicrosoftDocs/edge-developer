@@ -1272,26 +1272,26 @@
               displayName: right-click menu, Customize context menus in WebView2  # top-of-page title
 
 # -----------------------------------------------------------------------------
-            - name: Web and native interop
-              items:
-                - name: Interop of native and web code
-                  href: webview2/how-to/communicate-btwn-web-native.md
-                  displayName: JavaScript interop, Embed web content into native applications (JavaScript interop), Interop of native-side and web-side code  # old titles
+        - name: Web and native interop
+          items:
+            - name: Interop of native and web code
+              href: webview2/how-to/communicate-btwn-web-native.md
+              displayName: JavaScript interop, Embed web content into native applications (JavaScript interop), Interop of native-side and web-side code  # old titles
 
-                - name: Call web-side code from native-side code
-                  href: webview2/how-to/javascript.md
-                  displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
+            - name: Call web-side code from native-side code
+              href: webview2/how-to/javascript.md
+              displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
 
-                - name: Call native-side code from web-side code
-                  href: webview2/how-to/hostobject.md
-                  displayName: AddHostObjectToScript, host objects
+            - name: Call native-side code from web-side code
+              href: webview2/how-to/hostobject.md
+              displayName: AddHostObjectToScript, host objects
 
-                - name: Call native-side WinRT code from web-side code
-                  href: webview2/how-to/winrt-from-js.md
-                  displayName: AddHostObjectToScript, host objects
+            - name: Call native-side WinRT code from web-side code
+              href: webview2/how-to/winrt-from-js.md
+              displayName: AddHostObjectToScript, host objects
 
-                - name: How WinRT types and members are represented in JavaScript
-                  href: webview2/how-to/winrt-js-conversion.md
+            - name: How WinRT types and members are represented in JavaScript
+              href: webview2/how-to/winrt-js-conversion.md
 
 # -----------------------------------------------------------------------------
         - name: Distribution and SDK versions
