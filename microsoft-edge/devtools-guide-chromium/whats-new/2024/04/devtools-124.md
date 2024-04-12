@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 124)
-description: "postMessage events are distinguished from other timeline events in the Performance tool. Move a tab left or right in the Activity bar by right-clicking it. Network tool's tab shows a warning icon when using overrides or throttling. And more."
+description: "postMessage events are distinguished from other timeline events. Move a tab left or right in the Activity bar by right-clicking it. Network tab shows a warning icon when using overrides or throttling. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.date: 04/18/2024
 
 
 <!-- ====================================================================== -->
-## postMessage events are distinguished from other timeline events in the Performance tool
+## postMessage events are distinguished from other timeline events
 
 <!-- Subtitle: Easily investigate performance issues related to post messages across various threads in applications.  -->
 
-A new experiment improves the **Performance** timeline to help you quickly identify `postMessage` events and handlers, by distinguishing `postMessage` events from other timeline events.  Before, `postMessage` dispatch events and handler events both appeared as generic scripting function call events.  Now:
+A new experiment improves the **Performance** tool's timeline to help you quickly identify `postMessage` events and handlers, by distinguishing `postMessage` events from other timeline events.  Before, `postMessage` dispatch events and handler events both appeared as generic scripting function call events.  Now:
 * `postMessage` dispatch events appear on the timeline as **Schedule postMessage**.
 * `postMessage` handler events appear on the timeline as **On Message**.
 
@@ -53,7 +53,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Network tool's tab shows a warning icon when using overrides or throttling
+## Network tab shows a warning icon when using overrides or throttling
 
 <!-- Subtitle: Previously, this only worked in DevTools' legacy UI, but it's been fixed to work in the new UI now. -->
 
