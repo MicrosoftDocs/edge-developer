@@ -222,7 +222,7 @@ To turn off crash diagnostic data collection on Windows 10 and later, open **Sta
 <!-- ====================================================================== -->
 ## Developer tools
 
-Microsoft Edge Developer Tools help with website debugging and testing. Open **Settings and more (...)** > **More tools** and select **Developer tools**. When you turn on certain features in Developer Tools, Microsoft Edge requests modules from Microsoft servers and downloads them to your device. The request is sent over a secure HTTPS connection and contains a non-unique identifier representing the version of Microsoft Edge. Specific experiences that require remote download include 3D View and the Elements tool Accessibility pane. Webhint integration requires a remote module that is automatically requested when you open Developer Tools.
+Microsoft Edge Developer Tools help with website debugging and testing.  Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **More tools** > **Developer tools**. When you turn on certain features in Developer Tools, Microsoft Edge requests modules from Microsoft servers and downloads them to your device. The request is sent over a secure HTTPS connection and contains a non-unique identifier representing the version of Microsoft Edge. Specific experiences that require remote download include 3D View and the Elements tool Accessibility pane. Webhint integration requires a remote module that is automatically requested when you open Developer Tools.
 
 
 <!-- ====================================================================== -->
