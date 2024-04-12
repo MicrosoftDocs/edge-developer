@@ -82,16 +82,12 @@ Microsoft Edge 124 also includes the following updates from the Chromium project
 * [Enhanced Performance panel](https://developer.chrome.com/blog/new-in-devtools-124#perf)
    * [Hide functions and their children in the flame chart](https://developer.chrome.com/blog/new-in-devtools-124#hide-func)
    * [Arrows from selected initiators to events they initiated](https://developer.chrome.com/blog/new-in-devtools-124#event-initiators)
-* [Lighthouse 11.6.0](https://developer.chrome.com/blog/new-in-devtools-124#lighthouse)
 * [Tooltips for special categories in Memory > Heap snapshots](https://developer.chrome.com/blog/new-in-devtools-124#heap)
 * [Application > Storage updates](https://developer.chrome.com/blog/new-in-devtools-124#storage)
    * [Bytes used for shared storage](https://developer.chrome.com/blog/new-in-devtools-124#shared-storage-bytes)
    * [Web SQL is fully deprecated](https://developer.chrome.com/blog/new-in-devtools-124#web-sql)
 * [Coverage panel improvements](https://developer.chrome.com/blog/new-in-devtools-124#coverage)
-* [The Layers panel might be deprecated](https://developer.chrome.com/blog/new-in-devtools-124#layers)
 * [JavaScript Profiler deprecation: Phase four, final](https://developer.chrome.com/blog/new-in-devtools-124#js-profiler)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-124#misc)
-<!-- todo: maybe delete some links -->
 
 
 <!-- ====================================================================== -->
