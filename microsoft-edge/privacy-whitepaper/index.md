@@ -21,27 +21,27 @@ This whitepaper focuses on the desktop version of Microsoft Edge. Parts of the d
 <!-- ====================================================================== -->
 ## Address bar and suggestions
 
-The address bar allows you to enter website URLs and search the web.  By default, the address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.
+The Address bar allows you to enter website URLs and search the web.  By default, the Address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.
 
 ![Address bar](./index-images/address-bar.png)
 
-To speed up browsing and searching, characters you type into the address bar are sent to your default search provider. The search provider returns suggested search queries.
+To speed up browsing and searching, characters you type into the Address bar are sent to your default search provider. The search provider returns suggested search queries.
 
-The address bar categorizes entries as a URL, search, or unknown.  This information, along with which suggestion you select, position of selection, and other address bar data is sent to your default search provider.
+The Address bar categorizes entries as a URL, search, or unknown.  This information, along with which suggestion you select, position of selection, and other Address bar data is sent to your default search provider.
 
 If your search provider is Bing, a resettable identifier unique to your browser is sent with the data. It helps Bing understand the search query and query session. Other autosuggest service identifiers are sent to your default search engine to complete the search suggestions. Your IP address and cookies are sent to your default search provider to increase the relevance of the search results.
 
-When you select the address bar, a signal is sent to your default search provider. The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent to Microsoft unless your search provider is Bing.  To enable sending data to your default search provider, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then select **Address bar** and turn on the **Show me search and site suggestions using my typed characters** setting.  If you turn off the setting, your typed characters are no longer sent to your default search provider.  Your search queries are still sent to your default search provider to provide search results.
+When you select the Address bar, a signal is sent to your default search provider. The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent to Microsoft unless your search provider is Bing.  To enable sending data to your default search provider, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then select **Address bar** and turn on the **Show me search and site suggestions using my typed characters** setting.  If you turn off the setting, your typed characters are no longer sent to your default search provider.  Your search queries are still sent to your default search provider to provide search results.
 
 <!-- The Privacy settings have been updated from what is described here -->
 
-If Microsoft Edge detects typing in the address bar that might contain sensitive information, it does not send the typed text. Sensitive information includes authentication credentials, local file names, or URL data that is normally encrypted.
+If Microsoft Edge detects typing in the Address bar that might contain sensitive information, it does not send the typed text. Sensitive information includes authentication credentials, local file names, or URL data that is normally encrypted.
 
-You can configure Microsoft Edge to collect diagnostic data about the address bar. Collected data includes the number of offered queries for all search providers.  Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then in **Personalize your web experience**, turn on the setting **Improve your web experience by allowing Microsoft to use your browsing history from this account for personalizing advertising, search, news, and other Microsoft services**.
+You can configure Microsoft Edge to collect diagnostic data about the Address bar. Collected data includes the number of offered queries for all search providers.  Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then in **Personalize your web experience**, turn on the setting **Improve your web experience by allowing Microsoft to use your browsing history from this account for personalizing advertising, search, news, and other Microsoft services**.
 
 Typed characters and the websites you visit are stored locally on the device per profile.  To delete the data, go to `edge://settings/clearBrowserData`. In the **Clear browsing data** window, select the **Browsing history** checkbox, and select the **Clear now** button.
 
-If Bing is your default search provider and you are signed in, you may delete your searches through the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy/).  You can clear your browsing history and delete websites from appearing as suggestions in the address bar. Go to `edge://history`, and select **Clear browsing data**.  You can delete the data Microsoft collects from the address bar and search suggestions features on Windows 10 and later. Open **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**. In **Delete diagnostic data**, select **Delete**.  All other data is deleted after 36 months.
+If Bing is your default search provider and you are signed in, you may delete your searches through the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy/).  You can clear your browsing history and delete websites from appearing as suggestions in the Address bar. Go to `edge://history`, and select **Clear browsing data**.  You can delete the data Microsoft collects from the Address bar and search suggestions features on Windows 10 and later. Open **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**. In **Delete diagnostic data**, select **Delete**.  All other data is deleted after 36 months.
 
 <!-- Deleting diagnostic data could use rewrite -->
 
@@ -49,7 +49,7 @@ Account-specific search functions are available if you are signed in to Microsof
 
 All data is transmitted securely over HTTPS.  If [Bing](https://bing.com) is your default search provider, the searches and typed characters are saved for up to six months.
 
-If you search for a single word in the address box, Microsoft Edge may send the single word to your DNS server. Sending a single word is a check to see whether it corresponds to a host on your network. If so, Microsoft Edge may try to connect to the corresponding host. This option lets you go to the specific host instead of searching.  For example, if your router uses the hostname `router` and you type `router` in the address bar, you can go to `https://router`, or search for the word `router`.  The feature is not controlled by the **Show me search and site suggestions using my typed characters** setting because it does not involve sending data to your default search engine.
+If you search for a single word in the Address bar, Microsoft Edge may send the single word to your DNS server. Sending a single word is a check to see whether it corresponds to a host on your network. If so, Microsoft Edge may try to connect to the corresponding host. This option lets you go to the specific host instead of searching.  For example, if your router uses the hostname `router` and you type `router` in the Address bar, you can go to `https://router`, or search for the word `router`.  The feature is not controlled by the **Show me search and site suggestions using my typed characters** setting because it does not involve sending data to your default search engine.
 
 You can control whether or not typed characters are sent to your default search provider. Go to `edge://settings/search`. Toggle the **Show me search and site suggestions using my typed characters** setting.
 
@@ -396,7 +396,7 @@ Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api)
 Microsoft Edge provides the site with a location using your device's location services when they're turned on. For more information about how to enable location services on Windows, see [Windows location service and privacy](https://support.microsoft.com/help/4468240). 
 If your device's location services are turned off, Microsoft Edge tries to estimate your location by sending local network information (which might contain nearby Wi-Fi access point information and your device's IP address) to a Microsoft service. 
 
-When the site you are on has access to your location, Microsoft Edge shows a location icon in the address bar. You can select this icon to get more information and to manage the location access permissions for this site.
+When the site you are on has access to your location, Microsoft Edge shows a location icon in the Address bar. You can select this icon to get more information and to manage the location access permissions for this site.
 
 ![Location](./index-images/geolocation2.png)
 
@@ -879,7 +879,7 @@ To turn off speech translated to text, you may deny microphone access from any s
 <!-- ====================================================================== -->
 ## Suggest similar sites
 
-To help resolve URL typos in the address bar that result in a website error, Microsoft Edge may recommend a corrected URL.  When a website navigation error occurs, Microsoft Edge sends the domain of the web address to the Microsoft service to suggest a corrected URL.  Microsoft Edge does not include identifiers or tokens with the domain.  If the service finds a suggestion, it returns the suggested URL.  Microsoft stores the incorrect domain, and suggested domain, to help improve the service.  To help you go to the correct sites, the feature is turned on by default.  To turn off the feature, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy and security**, and then turn off the **Suggest similar sites when a website can't be found** setting.
+To help resolve URL typos in the Address bar that result in a website error, Microsoft Edge may recommend a corrected URL.  When a website navigation error occurs, Microsoft Edge sends the domain of the web address to the Microsoft service to suggest a corrected URL.  Microsoft Edge does not include identifiers or tokens with the domain.  If the service finds a suggestion, it returns the suggested URL.  Microsoft stores the incorrect domain, and suggested domain, to help improve the service.  To help you go to the correct sites, the feature is turned on by default.  To turn off the feature, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy and security**, and then turn off the **Suggest similar sites when a website can't be found** setting.
 
 
 <!-- ====================================================================== -->
@@ -887,7 +887,7 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 
 Microsoft Edge allows you to support nonprofit organizations using Microsoft Rewards points or cash while browsing. When you are signed in to Microsoft Edge with your Microsoft account and navigate to a nonprofit website, the **Support nonprofits** icon appears on the right side of the Address bar. You can then click this icon to donate to the nonprofit organization.
 
-![The 'Support nonprofits' icon in the address bar](./index-images/support-nonprofit.png)
+![The 'Support nonprofits' icon in the Address bar](./index-images/support-nonprofit.png)
  
 To control this feature, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then turn on or off the **Show opportunities to support causes and nonprofits you care about** setting.
  
