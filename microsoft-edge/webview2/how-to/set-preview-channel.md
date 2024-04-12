@@ -13,7 +13,7 @@ ms.date: 04/10/2024
 # Switch to a preview channel to test upcoming APIs and features
 -->
 
-To test new or forthcoming APIs and features, switch to a Microsoft Edge preview channel rather than using the WebView2 Runtime.  The Evergreen WebView2 Runtime is updated frequently to add new APIs and functionalities. These updates occur after APIs have been promoted from `Experimental` in a Prerelease WebView2 SDK to `Stable` in the WebView2 Release SDK.  Some of the updates in the Evergreen WebView2 Runtime could potentially break your WebView2 app.
+To test new or forthcoming APIs and features, switch to a Microsoft Edge preview channel rather than using the stable WebView2 Runtime.  The Evergreen WebView2 Runtime is updated frequently to add new APIs and functionalities. These updates can include APIs have been promoted from `Experimental` in a Prerelease WebView2 SDK to `Stable` in the WebView2 Release SDK.  Some of the updates in the Evergreen WebView2 Runtime could potentially break your WebView2 app.
 
 We recommend that you test the Experimental APIs ahead of time, before they are promoted to Stable in the WebView2 Release SDK, by switching to a preview channel of Microsoft Edge (which includes WebView2), to ensure that your app is forward-compatible.
 
@@ -24,7 +24,7 @@ See also:
 <!-- ------------------------------ -->
 #### Use a preview channel of WebView2 to test your app against the most recent experimental WebView2 APIs
 
-The Evergreen WebView2 Runtime doesn't include experimental WebView2 APIs.  Instead, to use these experimental features in your WebView2 code, have your app use the version of WebView2 that's in a Microsoft Edge preview channel (Edge Beta, Edge Dev, or Edge Canary).  This article explains how to switch to a preview channel of Microsoft Edge, to test experimental APIs that are in a WebView2 Prerelease SDK package.
+The Evergreen WebView2 Runtime doesn't include experimental WebView2 APIs.  Instead, to use these experimental features in your WebView2 code, have your app use the version of WebView2 that is in a Microsoft Edge preview channel (Edge Beta, Edge Dev, or Edge Canary).  This article explains how to switch to a preview channel of Microsoft Edge, to test experimental APIs that are in a WebView2 Prerelease SDK package.
 
 The Canary channel is recommended, because it offers the latest experimental APIs.
 
@@ -42,7 +42,7 @@ For more information about how SDK versions interact with the WebView2 Runtime a
 <!-- ------------------------------ -->
 #### Forward-compatibility testing by using the preview channel
 
-We recommend that you test the experimental APIs ahead of time, to ensure your app's forward compatibility, by following these best practices:
+We recommend that you test upcoming changes using preview channels to ensure your app's forward compatibility, by following these best practices:
 
 * [Prerelease testing using preview channels](./prerelease-testing.md)
 * [Self-host by deploying preview channels](./self-hosting.md)
@@ -214,15 +214,14 @@ Do either of the following:
 <!-- ------------------------------ -->
 #### When does the new runtime get picked up?
 
-If you are using an environment variable, registry key, or group policy, they are only applied to any new processes that are created; they do not apply to processes that are already running.  To ensure that all processes use the environment variable, registry key, or group policy, you would need to restart the processes.
-
+If you are using an environment variable, registry key, or group policy, they are only applied to any new WebView2 Runtime browser processes that are created; they do not apply to WebView2 Runtime browser processes that are already running. For example, if you already have a WebView2 with a specific user data folder (and therefore a corresponding browser process) and change ChannelSearchKind before attempting to create a new WebView2 using that same user data folder, it will use the existing WebView2 Runtime browser process, and not search for a different runtime.  To ensure that all processes use the environment variable, registry key, or group policy, you would need to restart the app, recreate the WebView2 controls, or create a new WebView2 that has a different user data folder than any other currently running WebView2 controls.
 
 <!-- ------------------------------ -->
 #### When using `ChannelSearchKind`, how do I make sure the right channel is picked up when I have multiple preview browser channels?
 
-In addition to reversing the channel search order, you can modify the set of release channels, to provide further control over channel selection.  The loader will search for channels on the device according to the channel search kind, but it will only consider channels that are in the specified set of release channels.
+In addition to reversing the channel search order, you can modify the set of release channels to include in the search, to provide further control over channel selection.  The loader will search for channels on the device in the order specified by the channel search kind, but it will only consider channels that are in the specified set of release channels.
 
-This option is useful if you would like to target a particular channel, instead of simply choosing the least stable channel.  By default, release channels includes all channels: Stable (0), Beta (1), Dev (2), and Canary (3).
+This option is useful if you would like to target a particular channel, instead of simply choosing the most or least stable channel.  By default, the release channels includes all channels: Stable (0), Beta (1), Dev (2), and Canary (3).
 
 Example:
 
@@ -272,7 +271,7 @@ Replace `WebView2APISample.exe` with your own app executable name or the applica
 Name: `WEBVIEW2_RELEASE_CHANNELS`  
 Value: `<string of desired channels (ex: 0,1)>`
 
-The environment variable is applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.
+The environment variable if set globally is applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.
 
 
 ##### [Group policy](#tab/group-policy)
