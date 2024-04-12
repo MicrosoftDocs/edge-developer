@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 04/11/2024
+ms.date: 04/12/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -88,7 +88,7 @@ To open Copilot in the Microsoft Edge sidebar, click the **Copilot** (![Copilot 
 ![Summarize this page](./index-images/summarize-content.png) 
 
 
-<!-- --------------------------------------------------------------------- -->
+<!-- ------------------------------ -->
 #### Data and consent used by Copilot in Microsoft Edge 
 
 Microsoft Edge determines what data to send to Copilot based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, page title, user's query, and previous conversation history to help Copilot answer their query effectively.
@@ -102,7 +102,7 @@ When the user grants permission to share page information, Microsoft Edge sends 
 The user can modify this permission anytime by going to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Copilot** and then turning on or off the **Allow access to any webpage or PDF** toggle.
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ------------------------------ -->
 #### Duration of storage of conversation history
 
 * **Conversation history** is a history of all queries and responses from Copilot.  **Conversation history** is stored for 90 days.  This is independent of whether using Copilot in Bing or Copilot in the Microsoft Edge sidebar or by visiting `www.bing.com/chat`.
@@ -116,13 +116,13 @@ The user can modify this permission anytime by going to Microsoft Edge > **Setti
 * **Page content** from **non-Bing index pages** – information that's used to summarize a non-Bing index page is deleted after 6 hours, and it is only used to answer the query.
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ------------------------------ -->
 #### Our commitment to responsible AI
 
 Copilot has numerous protective measures in place that are constantly evolving.  For details, see [The new Bing: Our approach to Responsible AI](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2023/04/RAI-for-the-new-Bing-April-2023.pdf).
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ------------------------------ -->
 #### Glossary of terms for Copilot
 
 | Term | Definition |
@@ -530,6 +530,8 @@ To speed up load times for the Microsoft Edge new tab page, the page may be load
 
 ![New tab page](./index-images/n-t-p1.png)
 
+
+<!-- ------------------------------ -->
 #### Microsoft News
 
 To tailor content to your interactions and preferences, the new tab page in Microsoft Edge stores cookies with randomly generated identifiers on the device.  A scrubbed version of your IP address is also used to tailor the content to your general region.  TO clear the cookies that persist on your device, go to `edge://settings/siteData`.
@@ -544,6 +546,8 @@ Microsoft Edge collects diagnostic data about how you use the new tab page, such
 
 The new tab page also lets you set a custom image as the background. The image is stored locally on the device and may be deleted by removing the image or uploading a new image. No information about the image is sent to Microsoft.
 
+
+<!-- ------------------------------ -->
 #### Microsoft 365
 
 If you are signed in to Microsoft Edge with a work or school account, your organization may turn on Microsoft 365 as an option for page content on the new tab page. The feature is currently available only for commercial customers under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products). For more information about privacy for Microsoft 365, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls).
@@ -708,12 +712,12 @@ The Rewards dashboard (`rewards.bing.com`):
 
 ![Rewards Dashboard UI](./index-images/rewardsdashboard.png)
 
-Rewards is an opt-in program. To turn off all Rewards experiences and data sharing, go to `edge://settings/profiles/rewards`, and turn off the **Earn Microsoft Rewards in Microsoft Edge** setting.
-
-![Rewards Settings UI](./index-images/rewardssettings.png)
+Rewards is an opt-in program.  To turn off all Rewards experiences and data sharing, select Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Profiles** > **Microsoft Rewards**, and then turn off the setting **Earn Microsoft Rewards in Microsoft Edge**.
 
 Offers may vary by market. 
 
+
+<!-- ------------------------------ -->
 #### How to earn
 
 Microsoft Edge provides the greatest number of avenues to earn rewards points while browsing the web.
@@ -722,10 +726,14 @@ A _search_ is the act of an individual user manually entering text for the good 
 
 An _acquisition_ is the process of purchasing goods or downloading and acquiring a license for digital content from Microsoft, whether free or paid ("Acquisition"). Rewards points are not offered for every purchase from Microsoft. Microsoft may offer additional opportunities to earn points from time to time, and each point-earning offer will not be available in perpetuity.
 
+
+<!-- ------------------------------ -->
 #### Redeeming your points
 
 To redeem your points or contribute points to a listed nonprofit organization, go to the [redeem page](https://aka.ms/redeemrewards). You can also sign up for automatic contributions to non-profit organizations through a giving program.
 
+
+<!-- ------------------------------ -->
 #### Cancelling your participation
 
 If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false). If you opt out, you will immediately lose all of your available points. 
