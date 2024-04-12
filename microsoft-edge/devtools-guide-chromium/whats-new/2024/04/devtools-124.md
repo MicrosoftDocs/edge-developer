@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 124)
-description: "New Experiment: Distinguish postMessage events from other timeline events in the Performance tool. Rearrange tabs in the Activity bar using the tab's context menu. Network tool shows a warning icon when throttling or overrides are used. And more."
+description: "postMessage events are distinguished from other timeline events in the Performance tool. Move a tab left or right in the Activity bar by right-clicking it. Network tool's tab shows a warning icon when using overrides or throttling. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -33,7 +33,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Rearrange tabs in the Activity bar by right-clicking
+## Move a tab left or right in the Activity bar by right-clicking it
 
 <!-- Subtitle: Move the tabs in the Activity bar left or right by using the tab's context menu. -->
 
@@ -53,7 +53,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Network tool's tab shows a warning icon when overrides or throttling is used
+## Network tool's tab shows a warning icon when using overrides or throttling
 
 <!-- Subtitle: Previously, this only worked in DevTools' legacy UI, but it's been fixed to work in the new UI now. -->
 
