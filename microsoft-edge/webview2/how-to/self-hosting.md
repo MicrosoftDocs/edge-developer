@@ -33,133 +33,22 @@ The Canary channel is also suitable, but do note that it might be less stable fo
 
 To self-host a preview channel of WebView2:
 
-1. Set the preview channel for your app.  See [Set the preview channel by using ChannelSearchKind](#set-the-preview-channel-by-using-channelsearchkind), below.
+1. **Set the preview channel for your app**:  
+You can [set the preview channel by using ChannelSearchKind](./set-preview-channel.md#switching-the-channel-search-order-recommended), making it such that your WebView2 app uses the least-stable channel (Canary / Dev). We recommend using either the Registry Key or Group Policy for self-hosting.
 
-1. Install the preview channel on your team's machines.  See [Install preview channels on your team's machines](#install-preview-channels-on-your-teams-machines), below.
+1. **Install the preview channel on your team's machines**:  
+If it's just to a handful of devices, you could download and install them manually from [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider). To deploy them to multiple devices, see [how to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels). 
 
-1. Use your app daily with the preview channel of WebView2, and diagnose potential issues with the WebView2 Runtime.  See [Diagnose potential issues with the WebView2 Runtime](#diagnose-potential-issues-with-the-webview2-runtime), below.
+1. **Use your app daily with the preview channel of WebView2, and diagnose potential issues with the WebView2 Runtime:**  
+See [Diagnose potential issues with the WebView2 Runtime](#diagnose-potential-issues-with-the-webview2-runtime), below.
 
-Upon finding issues, you can report them to the [Microsoft Edge WebView2 feedback repository](https://github.com/MicrosoftEdge/WebView2Feedback).
-
-
-<!-- ====================================================================== -->
-## Set the preview channel by using ChannelSearchKind
-
-The channel search kind controls the default channel search order.  By default, the WebView2 loader searches for binaries from most-stable to least-stable (Canary), using the first binary that's found:
-
-```
-WebView2 Runtime (Stable) -> Edge Beta -> Edge Dev -> Edge Canary
-```
-
-To selfhost, you would reverse the channel search order, so that the loader looks for binaries in order from least-stable (Canary) to most-stable:
-
-```
-Edge Canary -> Edge Dev -> Edge Beta -> WebView2 Runtime (Stable)
-```
-
-The channel search kind can be set per app through an API, a registry key, an environment variable, or a group policy.
-
-For the Registry Key, Environmental variable and Group Policy, the value `1` indicates reversed search order; that is, from least-stable (Edge Canary) to most-stable. The value `0` is the default search order.
-
-We recommend using either the Registry Key or Group Policy for self-hosting.
-
-##### [Registry key](#tab/registry-key)
-
-```reg
-REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\ChannelSearchKind /v WebView2APISample.exe /t REG_DWORD /d 1
-```
-
-Replace `WebView2APISample.exe` with your own app executable name or the application user model ID. Value `1` for the reversed-search order, and `0` for the default search order.
-
-
-##### [Environment variable](#tab/environment-variable)
-
-* Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`
-* Value: `1`
-
-Note that you are not able to specify the target app when using the environment variable. Therefore, when set as a global environment, it will affect all apps that use WebView2 on the machine. Value `1` for the reversed-search order, and `0` for the default search order.
-
-##### [Group policy](#tab/group-policy)
-
-Set the `ChannelSearchKind` policy.
-
-* Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
-* Value: `1`
-
-Value `1` for the reversed-search order, and `0` for the default search order.
-
-Do either of the following:
-
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge) for more information.
-
-* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
-
-##### [API](#tab/api)
-
-By default, the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property is `CoreWebView2ChannelSearchKind.MostStable` (an enum value).  Instead, reverse the search order by setting the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property to `CoreWebView2ChannelSearchKind.LeastStable`.
-
-<!-- todo Update to stable interfaces-->
-
-.NET:
-* [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
-* [CoreWebView2ChannelSearchKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2channelsearchkind)
-
-WinRT:
-* [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#channelsearchkind)
-* [CoreWebView2ChannelSearchKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2channelsearchkind)
-
-Win32:
-* [ICoreWebView2ExperimentalEnvironmentOptions::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#get_channelsearchkind)
-* [ICoreWebView2ExperimentalEnvironmentOptions::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#put_channelsearchkind)
-* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl#corewebview2_channel_search_kind)
-
----
-
-
-<!-- ====================================================================== -->
-## Install preview channels on your team's machines
-
-Preview channels of Microsoft Edge (which include WebView2) are also called _insider channels_.  These are the non-stable channels of Microsoft Edge.
-
-To install the preview channels of Microsoft Edge on your team's machines, do either of the following:
-* Manually install preview channels on machines.
-* Programmatically deploy preview channels via API.
-
-These options are explained below.
-
-
-<!-- ------------------------------ -->
-#### Option 1: Manually install preview channels on machines
-
-Insider channels can be manually installed through the following links:
-
-| Channel | Link |
-| --- | --- |
-| Canary | [Download](https://go.microsoft.com/fwlink/?linkid=2084649&Channel=Canary&language=en) |
-| Dev | [Download](https://go.microsoft.com/fwlink/?linkid=2093291) |
-| Beta | [Download](https://go.microsoft.com/fwlink/?linkid=2093376) |
-
-This only needs to be done once per machine.  Prerelease channels are evergreen, so they will automatically get updated when newer versions are available.
-
-
-<!-- ------------------------------ -->
-#### Option 2: Programmatically deploy preview channels via API endpoints
-
-In your app's code, periodically poll the following API endpoints to get and deploy the latest version of each preview channel of Microsoft Edge:
-
-| Channel | Link |
-| --- | --- |
-| Canary | [https://edgeupdates.microsoft.com/api/products/canary](https://edgeupdates.microsoft.com/api/products/canary)<br>[MSI Link](https://go.microsoft.com/fwlink/?linkid=2084649&Channel=Canary&language=en)|
-| Dev | [https://edgeupdates.microsoft.com/api/products/dev](https://edgeupdates.microsoft.com/api/products/dev) |
-| Beta | [https://edgeupdates.microsoft.com/api/products/beta](https://edgeupdates.microsoft.com/api/products/beta) |
-
-The Edge Dev and Edge Beta channels contain MSI Links.  The Edge Canary channel has a separate MSI link.
+Upon finding issues, you can report them to the [Microsoft Edge WebView2 feedback repository](https://github.com/MicrosoftEdge/WebView2Feedback).  Under the `Runtime Channel` section, do indicate that you found the issue on a preview channel so that we can prioritize the fix before the bug ships to stable.
 
 
 <!-- ====================================================================== -->
 ## Diagnose potential issues with the WebView2 Runtime
 
-To diagnose or troubleshoot potential prerelease WebView2 Runtime issues that are revealed by your app, use the following techniques.
+To diagnose or troubleshoot potential prerelease WebView2 Runtime issues that are revealed by your app, you can do the following
 
 
 <!-- ------------------------------ -->

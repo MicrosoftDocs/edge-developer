@@ -53,8 +53,9 @@ We recommend that you test upcoming changes using preview channels to ensure you
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
 
-To download a Microsoft Edge preview channel, see [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider).
+Preview channels of Microsoft Edge, which include preview WebView2 runtime, are also called _insider channels_. Once installed, they will stay up-to-date and install the latest versions available for that channel. For example, this means the Canary channel will update itself almost daily. To download a Microsoft Edge preview channel, see [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider).
 
+For deployment to multiple machine, please see [how to deploy preview channels](#how-to-deploy-preview-channels)
 
 <!-- ====================================================================== -->
 ## Approaches to making your app use a specific browser channel
@@ -75,19 +76,25 @@ These approaches are described below.
 
 This section applies to using an API, registry override, environment variable, or group policy.
 
-If a specific browser executable folder isn't specified, then the WebView2 will attempt to load a runtime from one of the known default locations.
+If a specific browser executable folder isn't specified, then the WebView2 will attempt to load a runtime from one of the known default locations. By default, the WebView2 loader searches for runtimes from most-stable to least-stable (Canary), using the first runtime that's found.
 
-The default channel-search order is:
-1. The WebView2 Runtime.
-1. Edge Beta; the Beta channel of Microsoft Edge.
-1. Edge Dev; the Dev channel of Microsoft Edge.
-1. Edge Canary; the Canary channel of Microsoft Edge.
+```
+WebView2 Runtime (Stable) ->  Edge Beta -> Edge Dev -> Edge Canary
+```
 
-You can reverse the default search order by setting the `ChannelSearchKind` API to `LeastStable`, or by setting the `ChannelSearchKind` policy, registry key, or environment variable to `1`.
+You can reverse the default search order by setting the `ChannelSearchKind` API to `LeastStable`, or by setting the `ChannelSearchKind` policy, registry key, or environment variable to `1`. Reversing the search order makes it such that WebView2 loader searches from least-stable (Canary) to most-stable:
+
+```
+Edge Canary -> Edge Dev -> Edge Beta -> WebView2 Runtime (Stable)
+```
+
+This must be done before the WebView2 control is initialized.
 
 ##### [API](#tab/api)
 
 By default, the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property is `CoreWebView2ChannelSearchKind.MostStable` (an enum value).  Instead, reverse the search order by setting the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property to `CoreWebView2ChannelSearchKind.LeastStable`.
+
+<!-- todo Update to stable interfaces-->
 
 .NET:
 * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
@@ -113,7 +120,9 @@ Win32:
    REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\ChannelSearchKind /v WebView2APISample.exe /t REG_DWORD /d 1
    ```
 
-Replace `WebView2APISample.exe` with your own app executable name or the application user model ID. Using a wildcard (*) as the value name will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
+Replace `WebView2APISample.exe` with your own app executable name or the application user model ID. Using a wildcard `*` will apply the override to _all_ WebView2 apps on the machine and can result in unexpected behavior.
+
+Value `1` for the reversed-search order, and `0` for the default search order.
 
 
 ##### [Environment variable](#tab/environment-variable)
@@ -121,7 +130,7 @@ Replace `WebView2APISample.exe` with your own app executable name or the applica
 Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`  
 Value: `1`
 
-Note that the environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.
+Note that you are not able to specify the target app when using the environment variable. Therefore, when set as a global environment, it will affect all apps that use WebView2 on the machine. Value `1` for the reversed-search order, and `0` for the default search order.
 
 
 ##### [Group policy](#tab/group-policy)
@@ -131,11 +140,15 @@ Set the `ChannelSearchKind` policy.
 * Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
 * Value: `1`
 
+Value `1` for the reversed-search order, and `0` for the default search order.
+
 Do either of the following:
 
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  Click any of the three **Download Windows Policy** links. Refer to [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge) for more information.
+* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  For more information, see [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge).
 
-* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
+* Use the built-in policy on Intune.  See the following articles.  The steps for WebView2 are the same as for Microsoft Edge, except use the category "Microsoft Edge WebView2" instead of "Microsoft Edge".
+   * [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) in the Microsoft Intune documentation.
+   * [Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune) in the Microsoft Edge Enterprise documentation.
 
 ---
 
@@ -315,6 +328,43 @@ Do either of the following:
    * If setting the BrowserExecutableFolder, enter the path to your preferred browser channel or fixed-version binaries.
 
 1. Click the **OK** buttons to close the dialogs.
+
+<!-- ------------------------------ -->
+#### How to deploy preview channels
+
+To deploy the preview channels of Microsoft Edge to multiple machines, do either of the following:
+* Manually install preview channels on machines.
+* Programmatically deploy preview channels via API.
+
+These options are explained below.
+
+
+<!-- ------------------------------ -->
+#### Option 1: Manually install preview channels on machines
+
+Insider channels can be manually installed (be it by hand or through a deployed script) through the following enterpise links:
+
+| Channel | Link |
+| --- | --- |
+| Canary | [Download](https://go.microsoft.com/fwlink/?linkid=2084649&Channel=Canary&language=en) |
+| Dev | [Download](https://go.microsoft.com/fwlink/?linkid=2093291) |
+| Beta | [Download](https://go.microsoft.com/fwlink/?linkid=2093376) |
+
+This only needs to be done once per machine.  Prerelease channels are evergreen, so they will automatically get updated when newer versions are available.
+
+
+<!-- ------------------------------ -->
+#### Option 2: Programmatically deploy preview channels via API endpoints
+
+In your app's code, periodically poll the following API endpoints to get and deploy the latest version of each preview channel of Microsoft Edge:
+
+| Channel | Link |
+| --- | --- |
+| Canary | [https://edgeupdates.microsoft.com/api/products/canary](https://edgeupdates.microsoft.com/api/products/canary)<br>[MSI Link](https://go.microsoft.com/fwlink/?linkid=2084649&Channel=Canary&language=en)|
+| Dev | [https://edgeupdates.microsoft.com/api/products/dev](https://edgeupdates.microsoft.com/api/products/dev) |
+| Beta | [https://edgeupdates.microsoft.com/api/products/beta](https://edgeupdates.microsoft.com/api/products/beta) |
+
+The Edge Dev and Edge Beta channels contain MSI Links.  The Edge Canary channel has a separate MSI link.
 
 
 <!-- ====================================================================== -->
