@@ -340,7 +340,7 @@ These options are explained below.
 
 
 <!-- ------------------------------ -->
-#### Option 1: Manually install preview channels on machines
+##### Option 1: Manually install preview channels on machines
 
 Insider channels can be manually installed (be it by hand or through a deployed script) through the following enterpise links:
 
@@ -354,7 +354,7 @@ This only needs to be done once per machine.  Prerelease channels are evergreen,
 
 
 <!-- ------------------------------ -->
-#### Option 2: Programmatically deploy preview channels via API endpoints
+##### Option 2: Programmatically deploy preview channels via API endpoints
 
 In your app's code, periodically poll the following API endpoints to get and deploy the latest version of each preview channel of Microsoft Edge:
 

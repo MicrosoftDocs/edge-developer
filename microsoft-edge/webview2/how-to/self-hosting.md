@@ -10,7 +10,7 @@ ms.date: 02/23/2024
 ---
 # Self-host by deploying preview channels
 
-_Self-hosting_ means deploying a preview WebView2 Runtime with your app.  This allows you and your development team to use your app daily with the preview version of the WebView2 Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes reach the Stable Evergreen WebView2 Runtime.
+_Self-hosting_ means deploying a preview WebView2 Runtime with your app.  This allows you and your development team to use your app daily with the preview version of the WebView2 Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes reach the Evergreen WebView2 Runtime (Stable).
 
 The self-hosting approach provides real-world usage of your app with the latest preview WebView2 Runtime to catch any issues that may arise.  You should self-host your app in tandem with doing prerelease testing on your app, to provide a structured approach to testing your app with the latest version of the WebView2 Runtime.
 
@@ -26,18 +26,18 @@ See also:
 <!-- ====================================================================== -->
 ## How to self-host a preview channel of WebView2
 
-We recommend that you start self-hosting by using the Dev channel of the WebView2 Runtime, which is in the Dev Channel of the Microsoft Edge browser.  The Dev channel of the WebView2 Runtime is updated weekly, and it allows you to catch issues early, while having sufficient stability for daily use.
+We recommend that you self-host using the preview WebView2 Runtime in the Dev channel of the Edge browser. The Dev channel is updated weekly, so it allows you to catch issues early while having sufficient stability for daily use.
 
-The Canary channel is also suitable, but do note that it might be less stable for daily use. The Beta channel is available as well, which allows you to test against the version of the runtime that is about to ship to stable, but you might not be able to catch issues early enough for your application.
+The Canary channel is also suitable, but it might be less stable for daily use. The Beta channel allows you to test against the version of the runtime that is about to ship to stable, but you might not be able to catch issues early enough for your application.
 
 
-To self-host a preview channel of WebView2:
+Do the following steps:
 
 1. **Set the preview channel for your app**:  
-You can [set the preview channel by using ChannelSearchKind](./set-preview-channel.md#switching-the-channel-search-order-recommended), making it such that your WebView2 app uses the least-stable channel (Canary / Dev). We recommend using either the Registry Key or Group Policy for self-hosting.
+You can [set the preview channel by using ChannelSearchKind](./set-preview-channel.md#switching-the-channel-search-order-recommended), making it such that your WebView2 app uses the least-stable channel on the device. We recommend using either the Registry Key or Group Policy for self-hosting.
 
 1. **Install the preview channel on your team's machines**:  
-If it's just to a handful of devices, you could download and install them manually from [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider). To deploy them to multiple devices, see [how to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels). 
+To install on handful of devices, you can download and install them manually from [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider). To deploy them to multiple devices, see [how to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels). 
 
 1. **Use your app daily with the preview channel of WebView2, and diagnose potential issues with the WebView2 Runtime:**  
 See [Diagnose potential issues with the WebView2 Runtime](#diagnose-potential-issues-with-the-webview2-runtime), below.
@@ -48,7 +48,7 @@ Upon finding issues, you can report them to the [Microsoft Edge WebView2 feedbac
 <!-- ====================================================================== -->
 ## Diagnose potential issues with the WebView2 Runtime
 
-To diagnose or troubleshoot potential prerelease WebView2 Runtime issues that are revealed by your app, you can do the following
+To diagnose or troubleshoot potential preview WebView2 Runtime issues that are revealed by your app, you can do the following
 
 
 <!-- ------------------------------ -->
