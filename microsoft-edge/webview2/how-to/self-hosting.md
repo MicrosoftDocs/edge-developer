@@ -10,13 +10,13 @@ ms.date: 02/23/2024
 ---
 # Self-host by deploying preview channels
 
-_Self-hosting_ means deploying a preview version of the WebView2 Runtime with your app.  This allows you and your development team to use your app daily with the preview version of the WebView2 Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes reach the Stable Evergreen WebView2 Runtime.
+_Self-hosting_ means deploying a preview WebView2 Runtime with your app.  This allows you and your development team to use your app daily with the preview version of the WebView2 Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes reach the Stable Evergreen WebView2 Runtime.
 
-The self-hosting approach provides real-world usage of your app with the latest prerelease version of the WebView2 Runtime, to catch any issues that may arise.  You should self-host your app in tandem with doing prerelease testing on your app, to provide a structured approach to testing your app with the latest version of the WebView2 Runtime.
+The self-hosting approach provides real-world usage of your app with the latest preview WebView2 Runtime to catch any issues that may arise.  You should self-host your app in tandem with doing prerelease testing on your app, to provide a structured approach to testing your app with the latest version of the WebView2 Runtime.
 
 | Approach | Technique | Purpose/value |
 |---|---|---|
-| Prerelease testing | Automated testing on a preview version of WebView2 Runtime with your app. | Test your app with the preview version of in a structured way, to find issues before WebView2 changes reach the Stable Evergreen Runtime. |
+| Prerelease testing | Automated testing on a preview version of WebView2 Runtime with your app. | Test your app with a preview version of the WebView2 Runtime to find issues before WebView2 upcoming changes reach the Stable Evergreen Runtime. |
 | Self-hosting | Deploy a preview version of WebView2 Runtime with your app. | Use your app daily with the preview version of WebView2 Runtime, to find issues before WebView2 changes reach the Stable Evergreen Runtime. |
 
 See also:
@@ -28,7 +28,7 @@ See also:
 
 We recommend that you start self-hosting by using the Dev channel of the WebView2 Runtime, which is in the Dev Channel of the Microsoft Edge browser.  The Dev channel of the WebView2 Runtime is updated weekly, and it allows you to catch issues early, while having sufficient stability for daily use.
 
-The Canary channel is also suitable, but do note that it might be less stable. The Beta channel is available as well, but it is not recommended as you might not be able to catch issues early enough for your app.
+The Canary channel is also suitable, but do note that it might be less stable for daily use. The Beta channel is available as well, which allows you to test against the version of the runtime that is about to ship to stable, but you might not be able to catch issues early enough for your application.
 
 
 To self-host a preview channel of WebView2:
@@ -59,12 +59,46 @@ Edge Canary -> Edge Dev -> Edge Beta -> WebView2 Runtime (Stable)
 
 The channel search kind can be set per app through an API, a registry key, an environment variable, or a group policy.
 
-The value `1` indicates reversed search order; that is, from least-stable (Edge Canary) to most-stable.
+For the Registry Key, Environmental variable and Group Policy, the value `1` indicates reversed search order; that is, from least-stable (Edge Canary) to most-stable. The value `0` is the default search order.
 
+We recommend using either the Registry Key or Group Policy for self-hosting.
+
+##### [Registry key](#tab/registry-key)
+
+```reg
+REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\ChannelSearchKind /v WebView2APISample.exe /t REG_DWORD /d 1
+```
+
+Replace `WebView2APISample.exe` with your own app executable name or the application user model ID. Value `1` for the reversed-search order, and `0` for the default search order.
+
+
+##### [Environment variable](#tab/environment-variable)
+
+* Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`
+* Value: `1`
+
+Note that you are not able to specify the target app when using the environment variable. Therefore, when set as a global environment, it will affect all apps that use WebView2 on the machine. Value `1` for the reversed-search order, and `0` for the default search order.
+
+##### [Group policy](#tab/group-policy)
+
+Set the `ChannelSearchKind` policy.
+
+* Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
+* Value: `1`
+
+Value `1` for the reversed-search order, and `0` for the default search order.
+
+Do either of the following:
+
+* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge) for more information.
+
+* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
 
 ##### [API](#tab/api)
 
 By default, the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property is `CoreWebView2ChannelSearchKind.MostStable` (an enum value).  Instead, reverse the search order by setting the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property to `CoreWebView2ChannelSearchKind.LeastStable`.
+
+<!-- todo Update to stable interfaces-->
 
 .NET:
 * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
@@ -78,37 +112,6 @@ Win32:
 * [ICoreWebView2ExperimentalEnvironmentOptions::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#get_channelsearchkind)
 * [ICoreWebView2ExperimentalEnvironmentOptions::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#put_channelsearchkind)
 * [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl#corewebview2_channel_search_kind)
-
-
-##### [Registry key](#tab/registry-key)
-
-```reg
-REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\ChannelSearchKind /v WebView2APISample.exe /t REG_DWORD /d 1
-```
-
-Replace `WebView2APISample.exe` with your own app executable name or the application user model ID.
-
-
-##### [Environment variable](#tab/environment-variable)
-
-* Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`
-* Value: `1`
-
-Note that the environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.
-
-
-##### [Group policy](#tab/group-policy)
-
-Set the `ChannelSearchKind` policy.
-
-* Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
-* Value: `1`
-
-Do either of the following:
-
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download). Refer to [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge) for more information.
-
-* Use the built-in policy on Intune. Refer to [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge) for more information.
 
 ---
 
@@ -166,23 +169,16 @@ To diagnose or troubleshoot potential prerelease WebView2 Runtime issues that ar
 
 1. Find your application's process, then find the Edge WebView2 child process
 
-1. Right click on the Edge WebView2 process, and then `Open file location`. The folder will be version number of the runtime.
+1. Right click on the Edge WebView2 process, and then `Open file location`. The folder will be the version number of the runtime.
 
 <!-- ------------------------------ -->
 #### Switch to the Stable WebView2 Runtime channel to see if the issue reproduces
 
 If the issue doesn't reproduce on the Stable channel of the WebView2 Runtime, it's likely that the issue is with the preview channel of WebView2, or how your app interacts with the preview channel of WebView2.
 
-You can easily switch to the stable channel (Stable WebView2 Runtime) by using environmental variables, because revised environment variables override the registry settings (which are set by group policies).  This allows you to easily switch from a preview channel to the stable channel, to see if the issue reproduces.  If you are already using environmental variables, you simply update the values.  Note that changing the environment variables changes the WebView2 channel for all apps that use WebView2 on the machine.
+You can easily switch to the stable channel (Evergreen WebView2 Runtime) by [using environmental variables](tabs=environment-variable#set-the-preview-channel-by-using-channelsearchkind), because revised environment variables override the registry settings (which are what's set by group policies).  This allows you to easily switch from a preview channel to the stable channel, to see if the issue reproduces.  If you are already using environmental variables, you simply update the values.  Note that if you are setting the environment variable globally, it will change the WebView2 channel for all apps that use WebView2 on the machine. 
 
-For `ChannelSearchKind` options, set the following:
-* Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`
-* Value: `0`
-
-For `BrowserExecutableFolder` options, set the following:
-* Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`
-* Value: `<path to stable WebView2 Runtime>`
-
+If you are using the API, then we recommend building UI in your app that allows your users to change between using stable or preview runtimes.
 
 <!-- ------------------------------ -->
 #### Collect diagnostics data

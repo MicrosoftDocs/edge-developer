@@ -10,14 +10,7 @@ ms.date: 03/01/2024
 ---
 # Prerelease testing using preview channels
 
-_Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge to find issues that will affect your particular WebView2 app, before any changes ship in the Stable Evergreen Runtime.  Prerelease testing helps your app catch bugs in prerelease channels of WebView2, before the WebView2 changes ship in a stable release and degrade the app experience for end users.  In prerelease testing, you validate your app against early builds of WebView2, to ensure that your app will work with the upcoming changes.
-
-To validate your app against early builds of WebView2, do automated testing with the preview channels of Microsoft Edge.  A preview channel contains a WebView2 preview runtime.
-
-The preview (or "insider") channels of Microsoft Edge consist of:
-* Edge Canary - releases daily.
-* Edge Dev - releases weekly.
-* Edge Beta - releases every 4 weeks.
+_Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge to find issues that will affect your particular WebView2 app, before any changes ship in the Stable Evergreen WebView2 Runtime. This helps catch any bugs before they degrade app experience for end users.  
 
 See also: 
 * [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels)
@@ -30,7 +23,7 @@ See also:
 
 Evergreen WebView2 is based on the evergreen Chromium platform, which receives monthly major updates.  Regressions in WebView2 apps tend to be application-specific, rather than affecting all WebView2 apps.  WebView2 is tested in a variety of general scenarios, but it's possible that some of the specific scenarios of your app are not covered.
 
-To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your WebView2 app against the prerelease runtime that's shipped with the prerelease channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta).
+To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your WebView2 app against the preview runtime that shipped with the preview channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta).
 
 
 <!-- ====================================================================== -->
@@ -42,19 +35,19 @@ Do the following steps:
 
 1. Set the preview channel for your app.  See [Set the preview channel by using ChannelSearchKind](#set-the-preview-channel-by-using-channelsearchkind), below.
 
-1. Deploy the non-stable channels.  See [How to deploy non-stable channels](#how-to-deploy-non-stable-channels), below.
+1. Deploy the preview channels.  See [How to deploy preview channels](#how-to-deploy-preview-channels), below.
 
-1. Conduct automated testing on your app running against the non-stable channels.  See [How to do automated testing](#how-to-do-automated-testing), below.
+1. Conduct automated testing on your app running against the preview channels.  See [How to do automated testing](#how-to-do-automated-testing), below.
 
 1. Compare the results with the baseline.  See [The baseline release of WebView2 for testing](#the-baseline-release-of-webview2-for-testing), below.
 
-Upon finding issues, you can report them via the [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback).
+Upon finding issues, you can report them via the [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback). Under the `Runtime Channel` section, do indicate that you found the issue on a preview channel so that we can prioritize the fix before the bug ships to stable.
 
 
 <!-- ====================================================================== -->
 ## Set the preview channel by using ChannelSearchKind
 
-The channel search kind controls the channel search order.  By default, the WebView2 loader searches for binaries from most-stable to least-stable (Canary), using the first binary that's found:
+The ChannelSearchKind setting controls the channel search order.  By default, the WebView2 loader searches for runtimes from most-stable to least-stable (Canary), using the first runtime that's found:
 
 ```
 WebView2 Runtime (Stable) ->  Edge Beta -> Edge Dev -> Edge Canary
@@ -66,16 +59,18 @@ To do prerelease testing, reverse the channel search order, so that the loader l
 Edge Canary -> Edge Dev -> Edge Beta -> WebView2 Runtime (Stable)
 ```
 
-The channel search kind can be set per-app through an API, a registry key, an environment variable, or a group policy.  Using the API is the recommended approach.
+The ChannelSearchKind setting can be set per-app through an API, a registry key, an environment variable, or a group policy.  Using the API is the recommended approach. This must be done before the WebView2 control is initialized.
 
-The value `1` indicates reversed search order; that is, from least-stable (Edge Canary) to most-stable.
+For the Registry Key, Environmental variable and Group Policy, the value `1` indicates reversed search order; that is, from least-stable (Edge Canary) to most-stable. The value `0` is the default search order.
 
 
 ##### [API](#tab/api)
 
-Using the API is the recommended approach.
+Using the API is the recommended approach for pre-release testing.
 
 By default, the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property is `CoreWebView2ChannelSearchKind.MostStable` (an enum value).  Instead, reverse the search order by setting the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property to `CoreWebView2ChannelSearchKind.LeastStable`.
+
+<!-- todo Update to stable interfaces-->
 
 .NET:
 * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
@@ -97,7 +92,7 @@ Win32:
 REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\ChannelSearchKind /v WebView2APISample.exe /t REG_DWORD /d 1
 ```
 
-Replace `WebView2APISample.exe` with your own app executable name or the application user model ID.
+Replace `WebView2APISample.exe` with your own app executable name or the application user model ID. Value `1` for the reversed-search order, and `0` for the default search order.
 
 
 ##### [Environment variable](#tab/environment-variable)
@@ -105,7 +100,7 @@ Replace `WebView2APISample.exe` with your own app executable name or the applica
 Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`  
 Value: `1`
 
-Note that the environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.
+Note that you are not able to specify the target app when using the environment variable. Therefore, when set as a global environment, it will affect all apps that use WebView2 on the machine. Value `1` for the reversed-search order, and `0` for the default search order.
 
 ##### [Group policy](#tab/group-policy)
 
@@ -113,6 +108,8 @@ Set the `ChannelSearchKind` policy.
 
 * Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
 * Value: `1`
+
+Value `1` for the reversed-search order, and `0` for the default search order.
 
 Do either of the following:
 
@@ -126,9 +123,9 @@ Do either of the following:
 
 
 <!-- ====================================================================== -->
-## How to deploy non-stable channels
+## How to deploy preview channels
 
-Preview channels of Microsoft Edge (which include WebView2) are also called _insider channels_.  These are the non-stable channels of Microsoft Edge.
+Preview channels of Microsoft Edge (which include WebView2) are also called _insider channels_.  Once installed, they will stay up-to-date and install the latest versions available for that channel. For example, this means the Canary channel will update itself almost daily.
 
 To deploy a preview channel of Microsoft Edge, do either of the following:
 * Manually install preview channels on test machines.
@@ -140,7 +137,7 @@ These options are explained below.
 <!-- ------------------------------ -->
 #### Option 1: Manually install preview channels on test machines
 
-Insider channels can be manually installed through the following links:
+Preview channels can be manually installed through the following links:
 
 | Channel | Link |
 | --- | --- |
@@ -148,7 +145,7 @@ Insider channels can be manually installed through the following links:
 | Dev | [Download](https://go.microsoft.com/fwlink/?linkid=2093291) |
 | Beta | [Download](https://go.microsoft.com/fwlink/?linkid=2093376) |
 
-This only needs to be done once per machine.  Prerelease channels are evergreen, so will automatically get updated when newer versions are available.
+This only needs to be done once per machine.  preview channels are evergreen, so will automatically get updated when newer versions are available.
 
 
 <!-- ------------------------------ -->
