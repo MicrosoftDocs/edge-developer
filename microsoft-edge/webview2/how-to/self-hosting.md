@@ -65,7 +65,7 @@ To diagnose or troubleshoot potential preview WebView2 Runtime issues that are r
 
 If the issue doesn't reproduce on the Stable channel of the WebView2 Runtime, it's likely that the issue is with the preview channel of WebView2, or how your app interacts with the preview channel of WebView2.
 
-You can easily switch to the stable channel (Evergreen WebView2 Runtime) by [using environmental variables](tabs=environment-variable#set-the-preview-channel-by-using-channelsearchkind), because revised environment variables override the registry settings (which are what's set by group policies).  This allows you to easily switch from a preview channel to the stable channel, to see if the issue reproduces.  If you are already using environmental variables, you simply update the values.  Note that if you are setting the environment variable globally, it will change the WebView2 channel for all apps that use WebView2 on the machine. 
+You can easily switch to the stable channel (Evergreen WebView2 Runtime) by [using environmental variables](./set-preview-channel.md?tabs=environment-variable#switching-the-channel-search-order-recommended), because revised environment variables override the registry settings (which are what's set by group policies).  This allows you to easily switch from a preview channel to the stable channel, to see if the issue reproduces.  If you are already using environmental variables, you simply update the values.  Note that if you are setting the environment variable globally, it will change the WebView2 channel for all apps that use WebView2 on the machine. 
 
 If you are using the API, then we recommend building UI in your app that allows your users to change between using stable or preview runtimes.
 
