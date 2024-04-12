@@ -14,36 +14,58 @@ ms.date: 04/18/2024
 
 
 <!-- ====================================================================== -->
-## New Experiment: Distinguish postMessage events from other timeline events in the Performance tool
+## postMessage events are distinguished from other timeline events in the Performance tool
+
 <!-- Subtitle: Easily investigate performance issues related to post messages across various threads in applications.  -->
 
-We improved the performance timeline to help developers quickly identify postMessage events and handlers by distinguishing postMessage events from other timeline events. Before, postMessage dispatch and handler events appeared as generic scripting function call events. Now, postMessage dispatch and handler events appear on the timeline as "Schedule postMessage" and "On Message" respectively.
+A new experiment improves the **Performance** timeline to help you quickly identify `postMessage` events and handlers, by distinguishing `postMessage` events from other timeline events.  Before, `postMessage` dispatch events and handler events both appeared as generic scripting function call events.  Now:
+* `postMessage` dispatch events appear on the timeline as **Schedule postMessage**.
+* `postMessage` handler events appear on the timeline as **On Message**.
 
-The performance timeline has been updated to developers investigate when postMessage calls occur, and how long the message queued for before the handler starts. The dispatch events are linked to handler events with arrow intiators that appear when you click on either event:
+The performance timeline has been updated to help you investigate when a `postMessage` call occurred, and how long the message was queued before the handler starts.  The dispatch events are linked to handler events with arrow initiators that appear when you click on either type of event:
 
 ![Post message events in performance tool improvement](./devtools-124-images/post-message-events.png)
 
-Enable the "Timeline: Show postMessage dispatch and handling flows" experiment to use this feature.
+To use this feature, in DevTools, select **Customize and control DevTools** (![the Customize and control DevTools icon](./devtools-124-images/customize-and-control-devtools-icon.png)) > **Settings** > **Experiments**, select the checkbox **Timeline: Show postMessage dispatch and handling flows**, click the **Close** (X) button, and then click the **Reload DevTools** button.
+
+See also:
+* [Timeline event reference](/microsoft-edge/devtools-guide-chromium/evaluate-performance/performance-reference)
+
 
 <!-- ====================================================================== -->
-## Rearrange tabs in the Activity bar using the tab's context menu
+## Rearrange tabs in the Activity bar by right-clicking
+
 <!-- Subtitle: Move the tabs in the Activity bar left or right by using the tab's context menu. -->
 
-Before Microsoft Edge 124, you could rearrange the tabs in the Activity bar only by dragging and moving them. This would be difficult for users who are using input devices like a trackball or head pointer, so a single pointer mode of operation has been added, without the need to drag the tabs. Now, you can move a tab left/right by opening its context menu:
+Before Microsoft Edge 124, you could rearrange the tabs in the **Activity bar** only by dragging them.  This can be difficult for users who are using input devices such as a trackball or head pointer.  Now, you can also move a tab left or right by right-clicking the tab and then selecting **Move to left** or **Move to right**:
+<!-- todo: revise ui to **Move left** and **Move right**, then update text & png here -->
 
-![Tab context menu](./devtools-124-images/rearrange-tab.png)
+![The context menu from right-clicking a tool's tab on the Activity bar](./devtools-124-images/rearrange-tab.png)
 
-<
+See also:
+* [Pin and rearrange tools in the Activity Bar](/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar) in _Overview of DevTools_.
+
+<!-- todo: update png https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools-images/move-from-quickview-to-activitybar.png in section https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools#activity-bar-tools-vs-quick-view-tools -->
+
+<!-- todo: in section https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar state how to rearrange tool tabs within a toolbar -->
+
+<!-- todo: update right-click menu in png https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview-images/remove-tool.png in section https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar -->
+
+
 <!-- ====================================================================== -->
-## Network tool shows a warning icon when throttling or overrides are used
+## Network tool's tab shows a warning icon when overrides or throttling is used
 
 <!-- Subtitle: Previously, this only worked in DevTools' legacy UI, but it's been fixed to work in the new UI now. -->
 
-If you were using DevTools legacy UI, when enabling local overrides in Sources or turning on throttling in Network, the Network tab displays a warning icon, but this didn't work in the new UI. We've fixed this bug so that it works the same way in the new UI and shows the warning icon when needed.
+When you enable local overrides in the **Sources** tool, or when you turn on throttling in the **Network** tool, the **Network** tab now displays a warning icon:
 
-![Network warning when local overrides are used](./devtools-124-images/network-warning-icon-overrides.png)
+![Network tool's tab showing a warning icon when local overrides are used](./devtools-124-images/network-warning-icon-overrides.png)
 
-![Network warning when throttling is used](./devtools-124-images/network-warning-icon-throttling.png)
+![Network tool's tab showing a warning icon when throttling is used](./devtools-124-images/network-warning-icon-throttling.png)
+
+See also:
+* [Override webpage resources with local copies (Overrides tab)](/microsoft-edge/devtools-guide-chromium/javascript/overrides)
+* [Emulate slow network connections](/microsoft-edge/devtools-guide-chromium/network/reference#emulate-slow-network-connections) in _Network features reference_.
 
 
 <!-- ====================================================================== -->
@@ -51,6 +73,23 @@ If you were using DevTools legacy UI, when enabling local overrides in Sources o
 
 Microsoft Edge 124 also includes the following updates from the Chromium project:
 
+* [New Autofill panel](https://developer.chrome.com/blog/new-in-devtools-124#autofill)
+* [Enhanced network throttling for WebRTC](https://developer.chrome.com/blog/new-in-devtools-124#throttling)
+* [Scroll-driven animations support in the Animations panel](https://developer.chrome.com/blog/new-in-devtools-124#animations)
+* [Improved CSS nesting support in Elements > Styles](https://developer.chrome.com/blog/new-in-devtools-124#nested-css)
+* [Enhanced Performance panel](https://developer.chrome.com/blog/new-in-devtools-124#perf)
+   * [Hide functions and their children in the flame chart](https://developer.chrome.com/blog/new-in-devtools-124#hide-func)
+   * [Arrows from selected initiators to events they initiated](https://developer.chrome.com/blog/new-in-devtools-124#event-initiators)
+* [Lighthouse 11.6.0](https://developer.chrome.com/blog/new-in-devtools-124#lighthouse)
+* [Tooltips for special categories in Memory > Heap snapshots](https://developer.chrome.com/blog/new-in-devtools-124#heap)
+* [Application > Storage updates](https://developer.chrome.com/blog/new-in-devtools-124#storage)
+   * [Bytes used for shared storage](https://developer.chrome.com/blog/new-in-devtools-124#shared-storage-bytes)
+   * [Web SQL is fully deprecated](https://developer.chrome.com/blog/new-in-devtools-124#web-sql)
+* [Coverage panel improvements](https://developer.chrome.com/blog/new-in-devtools-124#coverage)
+* [The Layers panel might be deprecated](https://developer.chrome.com/blog/new-in-devtools-124#layers)
+* [JavaScript Profiler deprecation: Phase four, final](https://developer.chrome.com/blog/new-in-devtools-124#js-profiler)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-124#misc)
+<!-- todo: maybe delete some links -->
 
 
 <!-- ====================================================================== -->
@@ -58,7 +97,7 @@ Microsoft Edge 124 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 123)](https://developer.chrome.com/blog/new-in-devtools-123) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 124)](https://developer.chrome.com/blog/new-in-devtools-124) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
 
 
 <!-- ====================================================================== -->
