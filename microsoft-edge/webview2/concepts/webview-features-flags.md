@@ -66,7 +66,7 @@ The following are some of the flags we've seen used.
 | `allow-run-as-system` |  By default, the Edge WebView browser exits if launched as System (launching as System is not recommended).  This flag bypasses that check, so that even if the Edge WebView browser is launched as System, the Edge WebView browser doesn't exit. |
 | `allow-running-insecure-content` | Enables insecure content in Cast Web Runtime.  This flag unblocks MSPs that serve content from HTTP sources. |
 | `auto-open-devtools-for-tabs` | Makes Edge WebView auto-open the DevTools window for each tab.  For use by developers and by automation. |
-| `AutofillReplaceCachedWebElementsByRendererIds` | If enabled, replaces cached web elements in AutofillAgent and FormTracker by their renderer ids. |
+| `AutofillReplaceCachedWebElementsByRendererIds` | If enabled, replaces cached web elements in AutofillAgent and FormTracker by their renderer IDs. |
 | `autoplay-policy` | Command-line flag name to set the autoplay policy. |
 | `BlockInsecurePrivateNetworkRequests` | When this feature is enabled, private network requests that are initiated from non-secure contexts in the `public` address space are blocked. |
 | `block-new-web-contents` | If `true`, all pop-ups and calls to `window.open` fail. |
