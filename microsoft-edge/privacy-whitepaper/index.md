@@ -140,7 +140,7 @@ Copilot has numerous protective measures in place that are constantly evolving. 
 <!-- ====================================================================== -->
 ## Cast
 
-Cast in Microsoft Edge lets you display your media to another screen using Google Cast.  To access Cast, open **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **More tools** > **Cast media to device**.  Cast relies on the Media Router extension not automatically installed with Microsoft Edge.  When you first use Cast, Microsoft Edge prompts for permission to install the Media Router extension.
+Cast in Microsoft Edge lets you display your media to another screen using Google Cast.  To access Cast, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **More tools** > **Cast media to device**.  Cast relies on the Media Router extension not automatically installed with Microsoft Edge.  When you first use Cast, Microsoft Edge prompts for permission to install the Media Router extension.
 
 Select **restart** to install the Media Router extensions from the Chrome Web Store. On startup and at regular intervals, Microsoft Edge sends update requests to the Chrome Web Store. Update requests include basic data about your version of Microsoft Edge. Regular update requests keep the Media Router extension up to date.
 
@@ -375,7 +375,7 @@ The family group organizer may stop the data collection from the family safety p
 <!-- ====================================================================== -->
 ## Find on page 
 
-Use the "Find on page" feature to search a webpage for key words.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, click **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)), and then select **Find on page**.  A search box opens.  Enter a word, phrase, or other string into this search box.  As you type, all occurrences of the string in the page are highlighted. You can then move through the search results by clicking the **Previous result** and **Next result** buttons.
+Use the "Find on page" feature to search a webpage for key words.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Find on page**.  A search box opens.  Enter a word, phrase, or other string into this search box.  As you type, all occurrences of the string in the page are highlighted. You can then move through the search results by clicking the **Previous result** and **Next result** buttons.
 
 By default, the **Include related matches in Find on page** feature allows **Find on page** to find other related matches, including synonyms and alternate spellings.
 
@@ -473,7 +473,7 @@ Microsoft Edge downloads the list of sites from a location defined by the admini
 
 If your administrator turned on Enterprise Site Discovery, browsing history data is collected periodically to help administrators review the sites that users visit and ensure that system upgrades continue to support those sites.  For more information about Enterprise Site Discovery in IE11, see [Collect data using Enterprise Site Discovery](/internet-explorer/ie11-deploy-guide/collect-data-using-enterprise-site-discovery).
 
-Non-enterprise users on Windows devices may also access IE mode.  To turn on IE mode, go to `edge://settings/defaultBrowser` and select the **Allow sites to be reloaded in Internet Explorer mode** setting.  To open tabs in IE mode, open **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **More tools** and select **Reload in Internet Explorer mode**.  After you turn on IE mode, Microsoft Edge periodically requests a list of unsupported sites from a Microsoft service.  The request is sent over HTTPS and does not contain any identifiers.
+Non-enterprise users on Windows devices may also access IE mode.  To turn on IE mode, go to `edge://settings/defaultBrowser` and select the **Allow sites to be reloaded in Internet Explorer mode** setting.  To open tabs in IE mode, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **More tools** > **Reload in Internet Explorer mode**.  After you turn on IE mode, Microsoft Edge periodically requests a list of unsupported sites from a Microsoft service.  The request is sent over HTTPS and does not contain any identifiers.
 
 Internet Explorer browsing data is stored locally in Microsoft Edge and Internet Explorer.  To delete browsing data while browsing in IE mode, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy and security**, and then clear the data from both the **Clear browsing data** section and the **Clear browsing data for Internet Explorer** section.
 
@@ -668,7 +668,7 @@ For example, when a user is signed in with the work profile user1@contoso.com, C
 <!-- ====================================================================== -->
 ## Read aloud
 
-Microsoft Edge offers Read aloud, which reads the content of a webpage to the user.  To start Read aloud, right-click the webpage or open **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) and select **Read aloud**.  Read aloud offers multiple voices to read the webpage content.  If you are using voices that are [installed on Windows 10 and later](https://support.office.com/article/4c83a8d8-7486-42f7-8e46-2b0fdf753130) under the **Time & Language** section of Windows Settings and want to clear the local cache for any voices you previously used, go to `edge://settings/clearBrowserData`.
+Microsoft Edge offers Read aloud, which reads the content of a webpage to the user.  To start Read aloud, right-click the webpage and then select **Read aloud**.  Or, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **More tools** > **Read aloud**.  Read aloud offers multiple voices to read the webpage content.  If you are using voices that are [installed on Windows 10 and later](https://support.office.com/article/4c83a8d8-7486-42f7-8e46-2b0fdf753130) under the **Time & Language** section of Windows Settings and want to clear the local cache for any voices you previously used, go to `edge://settings/clearBrowserData`.
 
 When you start Read aloud, Microsoft Edge uses the [Web Speech API](https://wicg.github.io/speech-api). Depending on the voice you select, the contents of the page are converted from text to speech using either a platform-supplied, client-side library (for example, one specific to your operating system) or a server-side library powered by Azure Cognitive Services.
 
@@ -784,7 +784,7 @@ The following steps assume that you have already connected your inbox.
 
 To control which retailers' emails are scanned by Microsoft Edge:
 
-1. In Microsoft Edge, click the **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) button, and then select **Shopping**.  The **Shopping** sidebar appears.
+1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Shopping**.  The **Shopping** sidebar appears.
 
 1.  Click the **Your Shopping** tab.
 
@@ -1058,7 +1058,7 @@ Microsoft Edge is made possible by the [Chromium](https://www.chromium.org) open
 <!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Edge team
 
-The Microsoft Edge team is always listening to customers and values your feedback.  To provide feedback in Microsoft Edge, open **Settings and more** > **Help and feedback** and select **Send feedback**.  For Progressive Web Apps (PWAs), open **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) and select **Send feedback to Microsoft**.  Provide details about the feedback, but all other information is optional.
+The Microsoft Edge team is always listening to customers and values your feedback.  To provide feedback in Microsoft Edge, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Help and feedback** > **Send feedback**.  For Progressive Web Apps (PWAs), select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Send feedback to Microsoft**.  Provide details about the feedback, but all other information is optional.
 
 If an email is detected from your Microsoft Edge profile, it is pre-populated with the URL of the current site and relevant diagnostic data. The diagnostic data can include data about Microsoft Edge features you turned on and your browser use. You may optionally include a screenshot, files from your device, and recording of your browser may also be optionally included. If you provide optional content, it can include personal data. The data is only used for diagnostic and product improvement purposes.
 
