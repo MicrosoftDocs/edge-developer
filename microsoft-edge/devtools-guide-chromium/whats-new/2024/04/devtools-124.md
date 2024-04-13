@@ -24,7 +24,7 @@ A new experiment improves the **Performance** tool's timeline to help you quickl
 
 !["Schedule postMessage" events and "On Message" events in the Performance tool](./devtools-124-images/post-message-events.png)
 
-The performance timeline has been updated to help you investigate when a `postMessage` call occurred, and how long the message was queued before the handler starts.  The dispatch events are linked to handler events with arrow initiators that appear when you click on either type of event:
+The performance timeline has been updated to help you investigate when a `postMessage` call occurred, and how long the message was queued before the handler starts.  The dispatch events are linked to handler events by initiator arrows that appear when you click on either type of event:
 
 ![Arrows linking dispatch events to handler events](./devtools-124-images/post-message-events-arrows.png)
 
