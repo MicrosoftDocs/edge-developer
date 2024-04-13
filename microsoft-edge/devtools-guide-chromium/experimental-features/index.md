@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 04/10/2024
+ms.date: 04/12/2024
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -17,8 +17,7 @@ Policies to keep this page comprehensive and maintainable:
 *  Keep h2 sections in same order as DevTools > Settings > Experiments.
 *  In the heading and UI steps, keep the checkbox label UI string as it appears in the UI; do not revise or "fix" it.
 *  Don't change h2 text, that might break a link from UI.
-*  When a checkbox is removed from all the channels: 
-   * If there was no (?) link next to checkbox label, add: "The present section will be removed, because current browsers no longer have this checkbox, and older browsers don't have a (?) link pointing to this section."
+*  When a checkbox is removed from all the channels, remove its h2 section.
 
 Steps to maintain this page monthly: For latest Canary, and for latest Stable:
 1. Go to edge://settings/help, update if needed.
