@@ -52,9 +52,11 @@ See also:
 
 <!-- Subtitle: Previously, this only worked in DevTools' legacy UI, but it's been fixed to work in the new UI now. -->
 
-When you enable local overrides in the **Sources** tool, or when you turn on throttling in the **Network** tool, the **Network** tab now displays a warning icon:
+When you enable local overrides in the **Sources** tool, the **Network** tab now displays a warning icon:
 
 ![Network tool's tab showing a warning icon when local overrides are used](./devtools-124-images/network-warning-icon-overrides.png)
+
+Also, when you turn on throttling in the **Network** tool, the **Network** tab now displays a warning icon:
 
 ![Network tool's tab showing a warning icon when throttling is used](./devtools-124-images/network-warning-icon-throttling.png)
 
