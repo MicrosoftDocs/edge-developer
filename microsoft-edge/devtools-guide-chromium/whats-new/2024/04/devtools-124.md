@@ -31,7 +31,9 @@ The performance timeline has been updated to help you investigate when a `postMe
 To use this feature, in DevTools, select **Customize and control DevTools** (![the Customize and control DevTools icon](./devtools-124-images/customize-and-control-devtools-icon.png)) > **Settings** > **Experiments**, select the checkbox **Timeline: Show postMessage dispatch and handling flows**, click the **Close** (X) button, and then click the **Reload DevTools** button.
 
 See also:
-* [Timeline event reference](/microsoft-edge/devtools-guide-chromium/evaluate-performance/performance-reference)
+* [View activities in a table](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-activities-in-a-table) in _Performance features reference_.
+* [PostMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
+* [PostMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
 
 
 <!-- ====================================================================== -->
