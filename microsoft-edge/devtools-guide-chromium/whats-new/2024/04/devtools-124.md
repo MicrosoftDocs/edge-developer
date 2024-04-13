@@ -46,12 +46,6 @@ Before Microsoft Edge 124, you could rearrange the tabs in the **Activity bar** 
 See also:
 * [Pin and rearrange tools in the Activity Bar](/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar) in _Overview of DevTools_.
 
-<!-- todo: update png https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools-images/move-from-quickview-to-activitybar.png in section https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools#activity-bar-tools-vs-quick-view-tools -->
-
-<!-- todo: in section https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar state how to rearrange tool tabs within a toolbar -->
-
-<!-- todo: update right-click menu in png https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview-images/remove-tool.png in section https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar -->
-
 
 <!-- ====================================================================== -->
 ## Network tab shows a warning icon when using overrides or throttling
