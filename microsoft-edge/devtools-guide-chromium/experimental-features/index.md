@@ -688,7 +688,7 @@ Enables save and load trace with annotations in the **Performance** tool.
 <!-- todo: need desc -->
 
 See also:
-* [Introduction to the Performance tool](/microsoft-edge/devtools-guide-chromium/evaluate-performance/index.md)
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 125.
