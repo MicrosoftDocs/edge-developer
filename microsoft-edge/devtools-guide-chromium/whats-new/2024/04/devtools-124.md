@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 124)
-description: "postMessage events are distinguished from other timeline events. Move a tab left or right in the Activity bar by right-clicking it. Network tab shows a warning icon when using overrides or throttling. And more."
+description: "postMessage events and handlers are distinguished from other events on the timeline. Move a tab left or right in the Activity bar by right-clicking it. Network tab shows a warning icon when using overrides or throttling. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 04/18/2024
 
 
 <!-- ====================================================================== -->
-## postMessage events are distinguished from other timeline events
+## postMessage events and handlers are distinguished from other events on the timeline
 
 <!-- Subtitle: Easily investigate performance issues related to post messages across various threads in applications.  -->
 
