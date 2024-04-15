@@ -18,9 +18,11 @@ ms.date: 04/18/2024
 
 <!-- Subtitle: Easily investigate performance issues related to posting messages across various threads in applications.  -->
 
-A new experiment improves the **Performance** tool's timeline to help you quickly identify `postMessage` events and handlers, by distinguishing `postMessage` events from other timeline events.  Before, `postMessage` dispatch events and handler events both appeared as generic scripting function call events.  Now:
+A new experiment improves the **Performance** tool's timeline to help you quickly identify `postMessage` events and handlers.  This experiment distinguishes events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool, to easily investigate performance issues that are related to posting messages across various threads of an application.
+
+Before, `postMessage` dispatch events and handler events both appeared as generic scripting function call events.  Now:
 * `postMessage` dispatch events appear on the timeline as **Schedule postMessage**.
-* `postMessage` handler events appear on the timeline as **On Message**.
+* `postMessage` handler events appear on the timeline as **On Message**:
 
 !["Schedule postMessage" events and "On Message" events in the Performance tool](./devtools-124-images/post-message-events.png)
 
