@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 11/23/2023
+ms.date: 04/15/2024
 ---
 <!-- Copyright Kayce Basques
 
@@ -566,6 +566,13 @@ To view statistics about the selectors of the CSS rules that got recalculated du
    ![The Selector Stats tab](./reference-images/selector-stats.png)
 
 1. In the **Main** section, select a **Recalculate Style** event. In the **Selector Stats** tab, DevTools displays information about the selectors of the CSS rules that were recalculated during that event.
+
+
+<!-- ------------------------------ -->
+#### View messages between windows, iframes, and workers
+
+How to view the `Scheduled postMessage` and `On Message` markers.
+<!-- todo -->
 
 
 <!-- ====================================================================== -->
