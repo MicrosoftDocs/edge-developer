@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 124)
-description: "postMessage events are distinguished from other timeline events. Move a tab left or right in the Activity bar by right-clicking it. Network tab shows a warning icon when using overrides or throttling. And more."
+description: "postMessage events and handlers are distinguished from other events on the timeline. Move a tab left or right in the Activity bar by right-clicking it. Network tab shows a warning icon when using overrides or throttling. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,44 +14,41 @@ ms.date: 04/18/2024
 
 
 <!-- ====================================================================== -->
-## postMessage events are distinguished from other timeline events
+## postMessage events and handlers are distinguished from other events on the timeline
 
-<!-- Subtitle: Easily investigate performance issues related to post messages across various threads in applications.  -->
+<!-- Subtitle: Easily investigate performance issues related to posting messages across various threads in applications.  -->
 
-A new experiment improves the **Performance** tool's timeline to help you quickly identify `postMessage` events and handlers, by distinguishing `postMessage` events from other timeline events.  Before, `postMessage` dispatch events and handler events both appeared as generic scripting function call events.  Now:
+A new experiment improves the **Performance** tool's timeline to help you quickly identify `postMessage` events and handlers.  This experiment distinguishes events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool, to easily investigate performance issues that are related to posting messages across various threads of an application.
+
+Before, `postMessage` dispatch events and handler events both appeared as generic scripting function call events.  Now:
 * `postMessage` dispatch events appear on the timeline as **Schedule postMessage**.
-* `postMessage` handler events appear on the timeline as **On Message**.
+* `postMessage` handler events appear on the timeline as **On Message**:
 
 !["Schedule postMessage" events and "On Message" events in the Performance tool](./devtools-124-images/post-message-events.png)
 
-The performance timeline has been updated to help you investigate when a `postMessage` call occurred, and how long the message was queued before the handler starts.  The dispatch events are linked to handler events with arrow initiators that appear when you click on either type of event:
+The performance timeline has been updated to help you investigate when a `postMessage` call occurred, and how long the message was queued before the handler starts.  The dispatch events are linked to handler events by initiator arrows that appear when you click on either type of event:
 
 ![Arrows linking dispatch events to handler events](./devtools-124-images/post-message-events-arrows.png)
 
 To use this feature, in DevTools, select **Customize and control DevTools** (![the Customize and control DevTools icon](./devtools-124-images/customize-and-control-devtools-icon.png)) > **Settings** > **Experiments**, select the checkbox **Timeline: Show postMessage dispatch and handling flows**, click the **Close** (X) button, and then click the **Reload DevTools** button.
 
 See also:
-* [Timeline event reference](/microsoft-edge/devtools-guide-chromium/evaluate-performance/performance-reference)
+* [Performance features reference](../../../evaluate-performance/reference.md)
+* [PostMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
+* [PostMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
 
 
 <!-- ====================================================================== -->
 ## Move a tab left or right in the Activity bar by right-clicking it
 
-<!-- Subtitle: Move the tabs in the Activity bar left or right by using the tab's context menu. -->
+<!-- Subtitle: Move the tabs in the Activity bar left or right by using the tab's right-click menu. -->
 
-Before Microsoft Edge 124, you could rearrange the tabs in the **Activity bar** only by dragging them.  This can be difficult for users who are using input devices such as a trackball or head pointer.  Now, you can also move a tab left or right by right-clicking the tab and then selecting **Move to left** or **Move to right**:
-<!-- todo: revise ui to **Move left** and **Move right**, then update text & png here -->
+Before Microsoft Edge 124, you could rearrange the tabs in the **Activity bar** only by dragging them.  This can be difficult for users who are using input devices such as a trackball or head pointer.  Now, you can also move a tab left or right by right-clicking the tab and then selecting **Move left** or **Move right**:
 
 ![The context menu from right-clicking a tool's tab on the Activity bar](./devtools-124-images/rearrange-tab.png)
 
 See also:
 * [Pin and rearrange tools in the Activity Bar](/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar) in _Overview of DevTools_.
-
-<!-- todo: update png https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools-images/move-from-quickview-to-activitybar.png in section https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools#activity-bar-tools-vs-quick-view-tools -->
-
-<!-- todo: in section https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar state how to rearrange tool tabs within a toolbar -->
-
-<!-- todo: update right-click menu in png https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview-images/remove-tool.png in section https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar -->
 
 
 <!-- ====================================================================== -->
@@ -59,9 +56,11 @@ See also:
 
 <!-- Subtitle: The warning icon on the Network tab when overrides or throttling is enabled has been restored. -->
 
-When you enable local overrides in the **Sources** tool, or when you turn on throttling in the **Network** tool, the **Network** tab now displays a warning icon:
+Recent releases stopped showing a warning icon in the **Network** tool's tab when using overrides or throttling.  This issue has been fixed.  When you enable local overrides in the **Sources** tool, the **Network** tab now displays a warning icon:
 
 ![Network tool's tab showing a warning icon when local overrides are used](./devtools-124-images/network-warning-icon-overrides.png)
+
+Also, when you turn on throttling in the **Network** tool, the **Network** tab now displays a warning icon:
 
 ![Network tool's tab showing a warning icon when throttling is used](./devtools-124-images/network-warning-icon-throttling.png)
 
