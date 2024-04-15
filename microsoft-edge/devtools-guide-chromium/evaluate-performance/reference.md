@@ -574,6 +574,10 @@ To view statistics about the selectors of the CSS rules that got recalculated du
 How to view the `Scheduled postMessage` and `On Message` markers.
 <!-- todo -->
 
+See also:
+* [PostMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
+* [PostMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
+
 
 <!-- ====================================================================== -->
 ## Analyze rendering performance with the Rendering tool
