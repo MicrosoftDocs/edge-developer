@@ -569,18 +569,15 @@ To view statistics about the selectors of the CSS rules that got recalculated du
 
 
 <!-- ------------------------------ -->
-#### View messages between windows, iframes, and workers
+#### View messages between windows, iframes, and dedicated workers
 
-How to view the `Scheduled postMessage` and `On Message` markers.
-<!-- todo -->
-
-A DevTools experiment improves the **Performance** tool's timeline to help you quickly identify `postMessage` events and handlers, by distinguishing `postMessage` events from other timeline events.  Before, `postMessage` dispatch events and handler events both appeared as generic scripting function call events.  Now:
+A DevTools experiment improves the **Performance** tool's timeline to help you quickly identify `postMessage` events and handlers, by distinguishing `postMessage` events from other timeline events.  Without this experiment, `postMessage` dispatch events and handler events both appeared as generic scripting function call events.  When this experiment is enabled:
 * `postMessage` dispatch events appear on the timeline as **Schedule postMessage**.
 * `postMessage` handler events appear on the timeline as **On Message**.
 
 !["Schedule postMessage" events and "On Message" events in the Performance tool](./reference-images/post-message-events.png)
 
-The performance timeline has been updated to help you investigate when a `postMessage` call occurred, and how long the message was queued before the handler starts.  The dispatch events are linked to handler events by initiator arrows that appear when you click on either type of event:
+The performance timeline helps you investigate when a `postMessage` call occurred, and how long the message was queued before the handler starts.  The dispatch events are linked to handler events by initiator arrows that appear when you click on either type of event:
 
 ![Arrows linking dispatch events to handler events](./reference-images/post-message-events-arrows.png)
 
