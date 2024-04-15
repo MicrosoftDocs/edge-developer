@@ -57,6 +57,7 @@ last sync'd Feb. 2, 2023
 | Photo gallery demo | Used for [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/). | [/photo-gallery/](https://github.com/MicrosoftEdge/Demos/tree/main/photo-gallery) | [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) |
 | Slow Calendar demo | A simple calendar demo app that's used to test various DevTools features such as the **Performance** tool or source map support. | [/slow-calendar/](https://github.com/MicrosoftEdge/Demos/tree/main/slow-calendar) | [Slow Calendar demo](https://microsoftedge.github.io/Demos/slow-calendar/public) |
 | Workspaces demo | Use for [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md), in the **Sources** tool. | [/workspaces/](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) | [DevTools Workspaces Demo](https://microsoftedge.github.io/Demos/workspaces/) |
+| PostMessage Trace Events | Used for [View messages between windows, iframes, and workers](../evaluate-performance/reference.md#view-messages-between-windows-iframes-and-workers) in _Performance features reference_. | [/devtools-postmessage-perf-timeline/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline) | [PostMessage Trace Events demo](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/) |
 
 A few of these samples are shown below.
 
