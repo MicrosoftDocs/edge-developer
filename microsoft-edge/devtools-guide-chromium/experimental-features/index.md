@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 04/12/2024
+ms.date: 04/15/2024
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -653,9 +653,9 @@ Status:
 
 _new as of Microsoft Edge 124_
 
-Distinguishes postMessage events from other timeline events, to easily investigate performance issues related to post messages across various threads in applications.
+Distinguishes events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool, to easily investigate performance issues that are related to posting messages across various threads of an application.
 
-This experiment improves the **Performance** tool's timeline to help you quickly identify `postMessage` events and handlers, by distinguishing `postMessage` events from other timeline events.  Without this experiment, `postMessage` dispatch events and handler events both appear as generic scripting function call events.  With this experiment enabled:
+This experiment improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing `postMessage` events from other events.  Without this experiment, events that are triggered by dispatching and handling messages between threads of an application appear as generic scripting function-call events.  With this experiment enabled:
 * `postMessage` dispatch events appear on the timeline as **Schedule postMessage**.
 * `postMessage` handler events appear on the timeline as **On Message**.
 
@@ -738,7 +738,7 @@ Status:
 ## Show issues in Elements
 <!-- checkbox has a (?) link to this anchor wording -->
 
-Displays syntax errors under HTML in the **DOM** view of the **Elements** tool.
+Displays syntax errors as wavy underlines under DOM nodes in the **Elements** tool.
 
 See also:
 * [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool) in _What's New in DevTools (Microsoft Edge 91)_.
@@ -921,20 +921,20 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Timeline: Enable track confirmation feature that can reorder or hide a track in the flame chart
+## Timeline: Enable track configuration feature that can reorder or hide a track in the flame chart
 <!-- no (?) link -->
 
 _new as of Microsoft Edge 125_
 
-Enables the track confirmation feature, which can reorder or hide a track in the flame chart.
-<!-- todo: need desc 
-add: in the _Foo_ tool.
--->
+Enables the track configuration feature, which lets you choose which tracks are visible in the **Performance** tool, and the order in which they appear.  After you enable this experiment, to configure tracks:
+1. In the **Performance** tool, create a new performance recording.
+1. In the **Performance** tool, hover over a track, such as **Network**, **Interactions**, or **Main**.  The **Track configuration** (pen icon) button appears on the left of the hovered track.
+1. Click the **Track configuration** (pen icon) button.  The **track configuration** screen opens.
+1. On the **track configuration** screen, click the up or down arrows to change the order of the tracks, or click on the eye icons to toggle tracks.
+1. To confirm the new track configuration, click the checkmark icon to the right of a track.  The performance recording is displayed, with the new track configuration.
 
-<!--
 See also:
-* []()
--->
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 125.
