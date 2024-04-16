@@ -653,15 +653,15 @@ Status:
 
 _new as of Microsoft Edge 124_
 
-Distinguishes events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool, to easily investigate performance issues that are related to posting messages across various threads of an application.
+This experiment improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application.
 
-This experiment improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing `postMessage` events from other events.  Without this experiment, events that are triggered by dispatching and handling messages between threads of an application appear as generic scripting function-call events.  With this experiment enabled:
-* `postMessage` dispatch events appear on the timeline as **Schedule postMessage**.
-* `postMessage` handler events appear on the timeline as **On Message**.
+Without this experiment, events that are triggered by dispatching and handling messages between threads of an application appear as generic scripting function-call events.  With this experiment enabled:
+* `postMessage` dispatch events appear as **Schedule postMessage**.
+* `postMessage` handler events appear as **On Message**:
 
 !["Schedule postMessage" events and "On Message" events in the Performance tool](./index-images/post-message-events.png)
 
-The performance timeline thus helps you investigate when a `postMessage` call occurred, and how long the message was queued before the handler starts.  The dispatch events are linked to handler events with arrow initiators that appear when you click on either type of event:
+This experiment helps you investigate when a `postMessage` call occurred, and how long the message was queued before the `postMessage` handler starts.  The dispatch events are linked to handler events by initiator arrows that appear when you click on either type of event:
 
 ![Arrows linking dispatch events to handler events](./index-images/post-message-events-arrows.png)
 
