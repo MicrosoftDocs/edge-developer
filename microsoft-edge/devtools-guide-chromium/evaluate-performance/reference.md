@@ -571,7 +571,7 @@ To view statistics about the selectors of the CSS rules that got recalculated du
 <!-- ------------------------------ -->
 #### View messages between windows, iframes, and dedicated workers
 
-This DevTools experiment improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application.
+The DevTools experiment **Timeline: Show postMessage dispatch and handling flows** improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application.
 
 Without this experiment, events that are triggered by dispatching and handling messages between threads of an application appear as generic scripting function-call events.  With this experiment enabled:
 * `postMessage` dispatch events appear as **Schedule postMessage**.
@@ -587,8 +587,8 @@ To use this feature, in DevTools, select **Customize and control DevTools** (![t
 
 See also:
 * [Performance recording event reference](../evaluate-performance/performance-reference.md)
-* [PostMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
-* [PostMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
+* [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
+* [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
 <!--
 * [postMessage events and handlers are distinguished from other events on the timeline](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events-on-the-timeline) in _What's New in DevTools (Microsoft Edge 124)_.
 -->
