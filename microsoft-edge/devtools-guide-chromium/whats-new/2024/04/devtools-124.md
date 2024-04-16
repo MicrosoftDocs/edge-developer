@@ -18,7 +18,7 @@ ms.date: 04/18/2024
 
 <!-- Subtitle: Easily investigate performance issues related to posting messages across various threads in applications.  -->
 
-A new experiment improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application, to view messages between windows, iframes, and dedicated workers.
+The new experiment **Timeline: Show postMessage dispatch and handling flows** improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application, to view messages between windows, iframes, and dedicated workers.
 
 Without this experiment, events that are triggered by dispatching and handling messages between threads of an application appear as generic scripting function-call events.  With this experiment enabled:
 * `postMessage` dispatch events appear as **Schedule postMessage**.
@@ -34,8 +34,8 @@ To use this feature, in DevTools, select **Customize and control DevTools** (![t
 
 See also:
 * [Performance features reference](../../../evaluate-performance/reference.md)<!-- todo: update per below after PR 3132 is merged -->
-* [PostMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
-* [PostMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
+* [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
+* [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
 <!--
 * [View messages between windows, iframes, and dedicated workers] in _Performance features reference_.
 (in open PR 3132)-->
