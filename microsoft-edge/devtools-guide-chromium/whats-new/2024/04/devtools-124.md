@@ -18,7 +18,7 @@ ms.date: 04/18/2024
 
 <!-- Subtitle: Easily investigate performance issues related to posting messages across various threads in applications.  -->
 
-A new experiment improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool, to easily investigate performance issues that are related to posting messages across various threads of an application.
+A new experiment improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application.
 
 Without this experiment, events that are triggered by dispatching and handling messages between threads of an application appear as generic scripting function-call events.  With this experiment enabled:
 * `postMessage` dispatch events appear as **Schedule postMessage**.
