@@ -933,11 +933,19 @@ Status:
 
 _new as of Microsoft Edge 125_
 
-Enables the track configuration feature, which lets you choose which tracks are visible in the **Performance** tool, and the order in which they appear.  After you enable this experiment, to configure tracks:
-1. In the **Performance** tool, create a new performance recording.
+Enables the track configuration feature, which lets you choose which tracks are visible in the **Performance** tool, and the order in which they appear:
+
+![up arrows, down arrows, and eye icons in track configuration, in the Performance tool](./index-images/track-configuration.png)
+
+To configure tracks:
+1. Enable this experiment.
+1. Go to a webpage in a new window or tab, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
+1. In the **Performance** tool, click the **Record** button in the upper left to start a new performance recording.
+1. Interact with the webpage; for example, add a new task in the Todo demo.
+1. Stop the recording.
 1. In the **Performance** tool, hover over a track, such as **Network**, **Interactions**, or **Main**.  The **Track configuration** (pen icon) button appears on the left of the hovered track.
 1. Click the **Track configuration** (pen icon) button.  The **track configuration** screen opens.
-1. On the **track configuration** screen, click the up or down arrows to change the order of the tracks, or click on the eye icons to toggle tracks.
+1. On the **track configuration** screen, to change the order of the tracks, click an up arrow icon or down arrow icon.  Or, to show or hide a track, click the eye icon on a track to toggle it.
 1. To confirm the new track configuration, click the checkmark icon to the right of a track.  The performance recording is displayed, with the new track configuration.
 
 See also:
