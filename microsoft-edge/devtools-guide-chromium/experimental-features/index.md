@@ -668,8 +668,8 @@ This experiment helps you investigate when a `postMessage` call occurred, and ho
 See also:
 * [Performance features reference](../evaluate-performance/reference.md)<!-- todo: update per below link after PR 3132 is merged -->
 * [Performance recording event reference](../evaluate-performance/performance-reference.md)
-* [PostMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
-* [PostMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
+* [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
+* [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
 <!--
 * [postMessage events are distinguished from other timeline events](https://review.learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2024/04/devtools-124?branch=pr-en-us-3129#postmessage-events-are-distinguished-from-other-timeline-events) in _What's New in DevTools (Microsoft Edge 124)_.
 * [View messages between windows, iframes, and dedicated workers] in _Performance features reference_.
