@@ -687,11 +687,11 @@ Status:
 
 _new as of Microsoft Edge 125_
 
-Enables save and load trace with annotations in the **Performance** tool.  Adds the ability to persist the following two items inside trace files, and reapply them when importing traces that contain breadcrumbs and altered tracks.
+Adds the ability to persist the following changes made to trace files in the **Performance** tool, and reapply them when importing traces:
 
-* Minimap-driven navigation, also called "breadcrumbs".  This feature enables you to crop into and focus on the more relevant parts of a trace.  See [Breadcrumbs in the Timeline](https://developer.chrome.com/blog/new-in-devtools-122?hl=en#perf-breadcrumbs) in _What's new in DevTools (Chrome 122)_.
+* Changes made by using the breadcrumbs.  This feature enables you to crop into and focus on the more relevant parts of a trace.  See [Breadcrumbs in the Timeline](https://developer.chrome.com/blog/new-in-devtools-122#perf-breadcrumbs) in _What's new in DevTools (Chrome 122)_.
 
-* Track data context-menu.  This feature enables you to merge and hide superfluous or irrelevant entries of a trace, cleaning up the flame charts and trees.  See [Hide functions and their children in the flame chart](https://developer.chrome.com/blog/new-in-devtools-124#hide-func) in _What's new in DevTools (Chrome 124)_.
+* Changes made by right-clicking a track.  This feature enables you to merge and hide superfluous or irrelevant entries of a trace, cleaning up the flame charts and trees.  See [Hide functions and their children in the flame chart](https://developer.chrome.com/blog/new-in-devtools-124#hide-func) in _What's new in DevTools (Chrome 124)_.
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
