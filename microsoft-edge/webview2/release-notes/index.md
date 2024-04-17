@@ -101,9 +101,6 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * `Client`
    * `Nowhere`
 
-* `CoreWebView2ProcessFailedEventArgs` Class:
-   * [CoreWebView2ProcessFailedEventArgs.FailureSourceModulePath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.failuresourcemodulepath?view=webview2-dotnet-1.0.2420.47&preserve-view=true)
-
 * `CoreWebView2Settings` Class:
    * [CoreWebView2Settings.IsNonClientRegionSupportEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isnonclientregionsupportenabled?view=webview2-dotnet-1.0.2420.47&preserve-view=true)
 
@@ -121,9 +118,6 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * `Caption`
    * `Client`
    * `Nowhere`
-
-* `CoreWebView2ProcessFailedEventArgs` Class:
-   * [CoreWebView2ProcessFailedEventArgs.FailureSourceModulePath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.2420.47&preserve-view=true#failuresourcemodulepath)
 
 * `CoreWebView2Settings` Class:
    * [CoreWebView2Settings.IsNonClientRegionSupportEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.2420.47&preserve-view=true#isnonclientregionsupportenabled)
