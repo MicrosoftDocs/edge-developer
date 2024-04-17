@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 11/23/2023
+ms.date: 04/15/2024
 ---
 <!-- Copyright Kayce Basques
 
@@ -566,6 +566,32 @@ To view statistics about the selectors of the CSS rules that got recalculated du
    ![The Selector Stats tab](./reference-images/selector-stats.png)
 
 1. In the **Main** section, select a **Recalculate Style** event. In the **Selector Stats** tab, DevTools displays information about the selectors of the CSS rules that were recalculated during that event.
+
+
+<!-- ------------------------------ -->
+#### View messages between windows, iframes, and dedicated workers
+
+The DevTools experiment **Timeline: Show postMessage dispatch and handling flows** improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application.
+
+Without this experiment, events that are triggered by dispatching and handling messages between threads of an application appear as generic scripting function-call events.  With this experiment enabled:
+* `postMessage` dispatch events appear as **Schedule postMessage**.
+* `postMessage` handler events appear as **On Message**:
+
+!["Schedule postMessage" events and "On Message" events in the Performance tool](./reference-images/post-message-events.png)
+
+This experiment helps you investigate when a `postMessage` call occurred, and how long the message was queued before the `postMessage` handler starts.  The dispatch events are linked to handler events by initiator arrows that appear when you click on either type of event:
+
+![Arrows linking dispatch events to handler events](./reference-images/post-message-events-arrows.png)
+
+To use this feature, in DevTools, select **Customize and control DevTools** (![the Customize and control DevTools icon](./reference-images/customize-and-control-devtools-icon.png)) > **Settings** > **Experiments**, select the checkbox **Timeline: Show postMessage dispatch and handling flows**, click the **Close** (X) button, and then click the **Reload DevTools** button.
+
+See also:
+* [Performance recording event reference](../evaluate-performance/performance-reference.md)
+* [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
+* [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
+<!--
+* [postMessage events and handlers are distinguished from other events on the timeline](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events-on-the-timeline) in _What's New in DevTools (Microsoft Edge 124)_.
+-->
 
 
 <!-- ====================================================================== -->
