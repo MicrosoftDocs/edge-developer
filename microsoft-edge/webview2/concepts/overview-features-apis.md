@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/28/2024
+ms.date: 03/25/2024
 ---
 # Overview of WebView2 features and APIs
 
@@ -393,6 +393,7 @@ The WebView2 control gives your app access to many browser features.  You can mo
 * [User Agent](#user-agent)
 * [Autofill](#autofill)
 * [Audio](#audio)
+* [Hit-testing of mouse-clicks in regions](#hit-testing-of-mouse-clicks-in-regions)
 * [Swipe gesture navigation](#swipe-gesture-navigation)
 * [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys)
 * [Fullscreen](#fullscreen)
@@ -867,6 +868,74 @@ Your app can mute and unmute all audio, and find out when audio is playing.
    * [ICoreWebView2_8::put_IsMuted method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#put_ismuted)
    * [ICoreWebView2_8::remove_IsDocumentPlayingAudioChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#remove_isdocumentplayingaudiochanged)
    * [ICoreWebView2_8::remove_IsMutedChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2_8#remove_ismutedchanged)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Hit-testing of mouse-clicks in regions
+
+Provides hit-testing results on the regions that a WebView2 contains.  Useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2CompositionController` Class:
+   * [CoreWebView2CompositionController.GetNonClientRegionAtPoint Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.getnonclientregionatpoint)
+   * [CoreWebView2CompositionController.NonClientRegionChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.nonclientregionchanged)
+   * [CoreWebView2CompositionController.QueryNonClientRegion Method](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.querynonclientregion)
+
+* `CoreWebView2NonClientRegionChangedEventArgs` Class:
+   * [CoreWebView2NonClientRegionChangedEventArgs.RegionKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionchangedeventargs.regionkind)
+
+* [CoreWebView2NonClientRegionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind)
+   * `Caption`
+   * `Client`
+   * `Nowhere`
+
+* `CoreWebView2Settings` Class:
+   * [CoreWebView2Settings.IsNonClientRegionSupportEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isnonclientregionsupportenabled)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2CompositionController` Class:
+   * [CoreWebView2CompositionController.GetNonClientRegionAtPoint Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#getnonclientregionatpoint)
+   * [CoreWebView2CompositionController.NonClientRegionChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#nonclientregionchanged)
+   * [CoreWebView2CompositionController.QueryNonClientRegion Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#querynonclientregion)
+
+* `CoreWebView2NonClientRegionChangedEventArgs` Class:
+   * [CoreWebView2NonClientRegionChangedEventArgs.RegionKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2nonclientregionchangedeventargs#regionkind)
+
+* [CoreWebView2NonClientRegionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2nonclientregionkind)
+   * `Caption`
+   * `Client`
+   * `Nowhere`
+
+* `CoreWebView2Settings` Class:
+   * [CoreWebView2Settings.IsNonClientRegionSupportEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isnonclientregionsupportenabled)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController4](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller4)
+   * [ICoreWebView2CompositionController4::add_NonClientRegionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller4#add_nonclientregionchanged)
+   * [ICoreWebView2CompositionController4::GetNonClientRegionAtPoint](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller4#getnonclientregionatpoint)
+   * [ICoreWebView2CompositionController4::QueryNonClientRegion](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller4#querynonclientregion)
+   * [ICoreWebView2CompositionController4::remove_NonClientRegionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller4#remove_nonclientregionchanged)
+
+* [ICoreWebView2NonClientRegionChangedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2nonclientregionchangedeventargs)
+   * [ICoreWebView2NonClientRegionChangedEventArgs::get_RegionKind](/microsoft-edge/webview2/reference/win32/icorewebview2nonclientregionchangedeventargs#get_regionkind)<!--no put-->
+
+* [ICoreWebView2NonClientRegionChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2nonclientregionchangedeventhandler)<!-- Win32-only -->
+
+* [ICoreWebView2RegionRectCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2regionrectcollectionview)<!-- Win32-only -->
+
+* [ICoreWebView2Settings9](/microsoft-edge/webview2/reference/win32/icorewebview2settings9)
+   * [ICoreWebView2Settings9::get_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings9#get_isnonclientregionsupportenabled)
+   * [ICoreWebView2Settings9::put_IsNonClientRegionSupportEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings9#put_isnonclientregionsupportenabled)
+
+* [COREWEBVIEW2_NON_CLIENT_REGION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_non_client_region_kind)
+   * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_CAPTION`
+   * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_CLIENT`
+   * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_NOWHERE`
 
 ---
 
@@ -1387,21 +1456,22 @@ Get information about running WebView2 processes, exiting processes, and failed 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2` interface:
-   * [ICoreWebView2::add_ProcessFailed event](/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
-   * [ICoreWebView2::get_BrowserProcessId property](/microsoft-edge/webview2/reference/win32/icorewebview2#get_browserprocessid)<!--no put-->
-   * [ICoreWebView2::remove_ProcessFailed event](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
-* [ICoreWebView2BrowserProcessExitedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)
+   * [ICoreWebView2::add_ProcessFailed](/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)
+   * [ICoreWebView2::get_BrowserProcessId](/microsoft-edge/webview2/reference/win32/icorewebview2#get_browserprocessid)<!--no put-->
+   * [ICoreWebView2::remove_ProcessFailed](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
+* [ICoreWebView2BrowserProcessExitedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)
 * `ICoreWebView2Environment5` interface:
-   * [ICoreWebView2Environment5::add_BrowserProcessExited method](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
-   * [ICoreWebView2Environment5::remove_BrowserProcessExited method](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
+   * [ICoreWebView2Environment5::add_BrowserProcessExited](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)
+   * [ICoreWebView2Environment5::remove_BrowserProcessExited](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
 * `ICoreWebView2Environment8` interface:
-   * [ICoreWebView2Environment8::GetProcessInfos method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#getprocessinfos)
-   * [ICoreWebView2Environment8::add_ProcessInfosChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#add_processinfoschanged)
-   * [ICoreWebView2Environment8::remove_ProcessInfosChanged method](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#remove_processinfoschanged)
-* [ICoreWebView2ProcessFailedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs)
-* [ICoreWebView2ProcessFailedEventArgs2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2)
-* [ICoreWebView2ProcessInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2processinfo)
-* [ICoreWebView2ProcessInfoCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2processinfocollection)
+   * [ICoreWebView2Environment8::GetProcessInfos](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#getprocessinfos)
+   * [ICoreWebView2Environment8::add_ProcessInfosChanged](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#add_processinfoschanged)
+   * [ICoreWebView2Environment8::remove_ProcessInfosChanged](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#remove_processinfoschanged)
+* [ICoreWebView2ProcessFailedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs)
+* [ICoreWebView2ProcessFailedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2)
+* [ICoreWebView2ProcessFailedEventArgs3](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs3)
+* [ICoreWebView2ProcessInfo](/microsoft-edge/webview2/reference/win32/icorewebview2processinfo)
+* [ICoreWebView2ProcessInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2processinfocollection)
 * [COREWEBVIEW2_PROCESS_FAILED_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_kind)
 * [COREWEBVIEW2_PROCESS_FAILED_REASON enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_process_failed_reason)
 
