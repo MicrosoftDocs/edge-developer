@@ -1023,4 +1023,3 @@ Status:
 ## See also
 
 * [What's New in Microsoft Edge DevTools](../whats-new/whats-new.md)
-* [What's New in DevTools archive](../whats-new/whats-new-archive.md)
