@@ -6,16 +6,31 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 03/01/2024
+ms.date: 04/18/2024
 ---
 # Crash analyzer tool
 
-Use the **Crash analyzer** tool to analyze Microsoft Edge<!--todo: review/expand--> crashes.  In the **Crash analyzer** tool, you can input a JavaScript stack trace, such as for non-fatal JavaScript exceptions, and then have your sourcemaps applied to the stack trace so that you can debug faster.
+Use the **Crash analyzer** tool to analyze Microsoft Edge crashes.  In the **Crash analyzer** tool, you can input a JavaScript stack trace, such as for non-fatal JavaScript exceptions, and then have your sourcemaps applied to the stack trace so that you can debug faster.
 
-![The Crash analyzer tool](./index-images/crash-analyzer.png)<!-- todo: show instead a demo page that's meant to cause crashes -->
+![The Crash analyzer tool](./index-images/crash-analyzer.png)<!-- todo: use most relevant demo page, show stacktrace content in DevTools -->
+
+When a web app crashes or hangs unexpectedly, this can result in data loss and a poor user experience.  The **Crash analyzer** tool helps you identify the cause of these crashes.  Use the **Crash analyzer** tool to analyze the memory state of your web app at the time of a crash.  You can access The **Crash analyzer** tool from the **Memory** tool, which displays a list of recent crashes that occurred in your web app.  You can also trigger a crash dump manually by clicking the **Take snapshot** button.
+ 
+When you select a crash from the list, you can see a detailed report of the crash, including:
+* The call stack.
+* The heap snapshot.
+* The exception message.
+
+You can also inspect the values of the variables and objects in the heap, to see how they relate to the code that caused the crash.  This helps pinpoint the exact line of code that triggered the crash, and identify any memory leaks, infinite loops, or other bugs that may have contributed to it.
+ 
+The **Crash analyzer** tool helps debug and diagnose crashes that occur in any web app, regardless of the framework or library you use.  This tool can also help you test and optimize your web app for different browsers and devices, by comparing the crash reports from different scenarios and environments.
 
 
-UI items:
+<!-- ====================================================================== -->
+## UI items
+<!-- todo: rewrite as task-oriented sections -->
+
+The **Crash analyzer** tool has the following UI items:
 * The **New analysis** (![The 'New analysis' icon](./index-images/new-analysis-icon.png)) button.
 * The **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button.
 * The **Analyses** (![The 'Analyses' dropdown list](./index-images/analyses-dropdown-list.png)) dropdown list.
@@ -25,6 +40,7 @@ UI items:
 * The **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button - brings up the present article.
 * Left pane - The stack trace (annotated crash dump) to analyze.
 * Right pane - Displays the original file names and function names that make up the stack trace.
+<!-- todo: format as 2-col table? -->
 
 
 <!-- ====================================================================== -->
@@ -43,12 +59,6 @@ To report non-fatal JavaScript exceptions or similar data to tools such as Azure
    ![Using the Crash analyzer tool to debug a non-fatal JavaScript exception](./index-images/crash-analyzer-tool.png)
 
 1. Click through the individual stack frames to see the lines in your original code that caused the error.
-
-
-<!-- ====================================================================== -->
-## Enabling the tool
-
-As of March 1, 2024, this feature is hidden by default but is available in Stable and Beta, and is present on the **More Tools** menu in the Dev and Canary preview channels of Microsoft Edge.  To access the **Crash analyzer** tool in Microsoft Edge Stable or Beta, select the **Enable Crash Analyzer** experiment in **Settings** > **Experiments**.  See [Turning an experiment on or off](../experimental-features/index.md#turning-an-experiment-on-or-off) in _Experimental features in Microsoft Edge DevTools_.
 
 
 <!-- ====================================================================== -->
