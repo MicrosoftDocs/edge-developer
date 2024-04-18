@@ -1017,3 +1017,10 @@ See also:
 Status:
 * This checkbox is present in Microsoft Edge Canary 122.
 * This checkbox is present in Microsoft Edge Stable 120.
+
+
+<!-- ---------------------------------------------------------------------- -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../whats-new/whats-new.md)
+* [What's New in DevTools archive](../whats-new/whats-new-archive.md)

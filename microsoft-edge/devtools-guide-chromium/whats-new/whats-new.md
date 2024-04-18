@@ -13,3 +13,10 @@ ms.date: 03/20/2024
 [!INCLUDE [Microsoft Edge team note for top of What's New](includes/edge-whats-new-note.md)]
 
 What's New articles correspond to historical releases of Microsoft Edge, and are not updated over time.  References to "new features" and "experiments" might become outdated as new versions of Microsoft Edge are released.
+
+
+<!-- ---------------------------------------------------------------------- -->
+## See also
+
+* [What's New in DevTools archive](./whats-new-archive.md)
+* [Experimental features in Microsoft Edge DevTools](../experimental-features/index.md)
