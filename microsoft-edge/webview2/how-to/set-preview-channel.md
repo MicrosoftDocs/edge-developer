@@ -105,9 +105,9 @@ WinRT:
 * [CoreWebView2ChannelSearchKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2channelsearchkind)
 
 Win32:
-* [ICoreWebView2ExperimentalEnvironmentOptions::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#get_channelsearchkind)
-* [ICoreWebView2ExperimentalEnvironmentOptions::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#put_channelsearchkind)
-* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl#corewebview2_channel_search_kind)
+* [ICoreWebView2EnvironmentOptions7::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_channelsearchkind)
+* [ICoreWebView2EnvironmentOptions7::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_channelsearchkind)
+* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32//webview2-idl#corewebview2_channel_search_kind)
 
 
 ##### [Registry key](#tab/registry-key)
@@ -261,9 +261,9 @@ WinRT:
 * [CoreWebView2ChannelSearchKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2releasechannels)
 
 Win32:
-* [ICoreWebView2ExperimentalEnvironmentOptions::get_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#get_releasechannels)
-* [ICoreWebView2ExperimentalEnvironmentOptions::put_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions#put_releasechannels)
-* [COREWEBVIEW2_RELEASE_CHANNELS enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl#corewebview2_release_channels)
+* [ICoreWebView2EnvironmentOptions7::get_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_releasechannels)
+* [ICoreWebView2EnvironmentOptions7::put_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_releasechannels)
+* [COREWEBVIEW2_RELEASE_CHANNELS enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_release_channels)
 
 
 ##### [Registry key](#tab/registry-key)
@@ -305,6 +305,15 @@ Do either of the following:
 <!-- ------------------------------ -->
 #### How to use an environment variable
 
+##### Setting environmental variables using API
+
+You are able to set your environment variables using the respective `SetEnvrionmentVariable` APIs available in each framework.
+
+- Win32: [SetEnvironmentVariable](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setenvironmentvariable)
+- .NET: [Environment.SetEnvironmentVariable](https://learn.microsoft.com/en-us/dotnet/api/system.environment.setenvironmentvariable)
+- WinRT: [EnvironmentManager.SetEnvironmentVariable](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.windows.system.environmentmanager.setenvironmentvariable)
+
+##### Setting environmental variables globally
 1. In the Windows search bar, enter "environment", and then select **Edit the system environment variables**:
 
    ![Using the Windows search bar to find where to edit environment variables](./set-preview-channel-images/search-bar-edit-sys-env-vars.png)
@@ -342,7 +351,7 @@ These options are explained below.
 <!-- ------------------------------ -->
 ##### Option 1: Manually install preview channels on machines
 
-Insider channels can be manually installed (be it by hand or through a deployed script) through the following enterpise links:
+Insider channels can be manually installed (be it by hand or through a deployed custom script) through the following enterpise links:
 
 | Channel | Link |
 | --- | --- |
@@ -352,11 +361,13 @@ Insider channels can be manually installed (be it by hand or through a deployed 
 
 This only needs to be done once per machine.  Prerelease channels are evergreen, so they will automatically get updated when newer versions are available.
 
-
 <!-- ------------------------------ -->
 ##### Option 2: Programmatically deploy preview channels via API endpoints
 
-In your app's code, periodically poll the following API endpoints to get and deploy the latest version of each preview channel of Microsoft Edge:
+In your app's code, you can write your own custom logic to deploy the latest version of the preview channel of Microsoft Edge by doing the following:
+1. Call the following API endpoints
+2. Fetch the latest package to the device
+3. Install the package
 
 | Channel | Link |
 | --- | --- |
