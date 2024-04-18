@@ -32,45 +32,45 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 124
+              href: devtools-guide-chromium/whats-new/2024/04/devtools-124.md
+              displayName: What's New in DevTools (Microsoft Edge 124)  # top-of-page title
+
             - name: Microsoft Edge 123
               href: devtools-guide-chromium/whats-new/2024/03/devtools-123.md
-              displayName: What's New in DevTools (Microsoft Edge 123)
+              displayName: What's New in DevTools (Microsoft Edge 123)  # top-of-page title
 
             - name: Microsoft Edge 122
               href: devtools-guide-chromium/whats-new/2024/02/devtools-122.md
-              displayName: What's New in DevTools (Microsoft Edge 122)
+              displayName: What's New in DevTools (Microsoft Edge 122)  # top-of-page title
 
             - name: Microsoft Edge 121
               href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
-              displayName: What's New in DevTools (Microsoft Edge 121)
+              displayName: What's New in DevTools (Microsoft Edge 121)  # top-of-page title
 
             - name: Microsoft Edge 120
               href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
-              displayName: What's New in DevTools (Microsoft Edge 120)
+              displayName: What's New in DevTools (Microsoft Edge 120)  # top-of-page title
 
             - name: Microsoft Edge 119
               href: devtools-guide-chromium/whats-new/2023/11/devtools-119.md
-              displayName: What's New in DevTools (Microsoft Edge 119)
+              displayName: What's New in DevTools (Microsoft Edge 119)  # top-of-page title
 
             - name: Microsoft Edge 118
               href: devtools-guide-chromium/whats-new/2023/10/devtools-118.md
-              displayName: What's New in DevTools (Microsoft Edge 118)
+              displayName: What's New in DevTools (Microsoft Edge 118)  # top-of-page title
 
             - name: Microsoft Edge 117
               href: devtools-guide-chromium/whats-new/2023/09/devtools-117.md
-              displayName: What's New in DevTools (Microsoft Edge 117)
+              displayName: What's New in DevTools (Microsoft Edge 117)  # top-of-page title
 
             - name: Microsoft Edge 116
               href: devtools-guide-chromium/whats-new/2023/08/devtools-116.md
-              displayName: What's New in DevTools (Microsoft Edge 116)
+              displayName: What's New in DevTools (Microsoft Edge 116)  # top-of-page title
 
             - name: Microsoft Edge 115
               href: devtools-guide-chromium/whats-new/2023/07/devtools-115.md
-              displayName: What's New in DevTools (Microsoft Edge 115)
-
-            - name: Microsoft Edge 114
-              href: devtools-guide-chromium/whats-new/2023/06/devtools-114.md
-              displayName: What's New in DevTools (Microsoft Edge 114)
+              displayName: What's New in DevTools (Microsoft Edge 115)  # top-of-page title
 
             # keep 10 items above
             - name: Archive
@@ -78,137 +78,145 @@
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
 
+                - name: Microsoft Edge 114
+                  href: devtools-guide-chromium/whats-new/2023/06/devtools-114.md
+                  displayName: What's New in DevTools (Microsoft Edge 114)  # top-of-page title
+
                 - name: Microsoft Edge 113
                   href: devtools-guide-chromium/whats-new/2023/05/devtools-113.md
-                  displayName: What's New in DevTools (Microsoft Edge 113)
+                  displayName: What's New in DevTools (Microsoft Edge 113)  # top-of-page title
 
                 - name: Microsoft Edge 112
                   href: devtools-guide-chromium/whats-new/2023/04/devtools-112.md
-                  displayName: What's New in DevTools (Microsoft Edge 112)
+                  displayName: What's New in DevTools (Microsoft Edge 112)  # top-of-page title
 
                 - name: Microsoft Edge 111
                   href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
-                  displayName: What's New in DevTools (Microsoft Edge 111)
+                  displayName: What's New in DevTools (Microsoft Edge 111)  # top-of-page title
 
                 - name: Microsoft Edge 110
                   href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
-                  displayName: What's New in DevTools (Microsoft Edge 110)
+                  displayName: What's New in DevTools (Microsoft Edge 110)  # top-of-page title
 
                 - name: Microsoft Edge 109
                   href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
-                  displayName: What's New in DevTools (Microsoft Edge 109)
+                  displayName: What's New in DevTools (Microsoft Edge 109)  # top-of-page title
 
                 - name: Microsoft Edge 108
                   href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
-                  displayName: What's New in DevTools (Microsoft Edge 108)
+                  displayName: What's New in DevTools (Microsoft Edge 108)  # top-of-page title
 
                 - name: Microsoft Edge 107
                   href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
-                  displayName: What's New in DevTools (Microsoft Edge 107)
+                  displayName: What's New in DevTools (Microsoft Edge 107)  # top-of-page title
 
                 - name: Microsoft Edge 106
                   href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
-                  displayName: What's New in DevTools (Microsoft Edge 106)
+                  displayName: What's New in DevTools (Microsoft Edge 106)  # top-of-page title
 
                 - name: Microsoft Edge 105
                   href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
-                  displayName: What's New in DevTools (Microsoft Edge 105)
+                  displayName: What's New in DevTools (Microsoft Edge 105)  # top-of-page title
 
                 - name: Microsoft Edge 104
                   href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
-                  displayName: What's New in DevTools (Microsoft Edge 104)
+                  displayName: What's New in DevTools (Microsoft Edge 104)  # top-of-page title
 
                 - name: Microsoft Edge 103
                   href: devtools-guide-chromium/whats-new/2022/06/devtools-103.md
-                  displayName: What's New in DevTools (Microsoft Edge 103)
+                  displayName: What's New in DevTools (Microsoft Edge 103)  # top-of-page title
 
                 - name: Microsoft Edge 102
                   href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
-                  displayName: What's New in DevTools (Microsoft Edge 102)
+                  displayName: What's New in DevTools (Microsoft Edge 102)  # top-of-page title
 
                 - name: Microsoft Edge 101
                   href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
-                  displayName: What's New in DevTools (Microsoft Edge 101)
+                  displayName: What's New in DevTools (Microsoft Edge 101)  # top-of-page title
 
                 - name: Microsoft Edge 100
                   href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
-                  displayName: What's New in DevTools (Microsoft Edge 100)
+                  displayName: What's New in DevTools (Microsoft Edge 100)  # top-of-page title
 
                 - name: Microsoft Edge 99
                   href: devtools-guide-chromium/whats-new/2022/03/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 99)
+                  displayName: What's New in DevTools (Microsoft Edge 99)  # top-of-page title
 
                 - name: Microsoft Edge 98
                   href: devtools-guide-chromium/whats-new/2022/02/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 98)
+                  displayName: What's New in DevTools (Microsoft Edge 98)  # top-of-page title
 
                 - name: Microsoft Edge 97
                   href: devtools-guide-chromium/whats-new/2022/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 97)
+                  displayName: What's New in DevTools (Microsoft Edge 97)  # top-of-page title
 
                 - name: Microsoft Edge 96
                   href: devtools-guide-chromium/whats-new/2021/11/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 96)
+                  displayName: What's New in DevTools (Microsoft Edge 96)  # top-of-page title
 
                 - name: Microsoft Edge 95
                   href: devtools-guide-chromium/whats-new/2021/10/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 95)
+                  displayName: What's New in DevTools (Microsoft Edge 95)  # top-of-page title
 
                 - name: Microsoft Edge 94
                   href: devtools-guide-chromium/whats-new/2021/09/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 94)
+                  displayName: What's New in DevTools (Microsoft Edge 94)  # top-of-page title
 
                 - name: Microsoft Edge 93
                   href: devtools-guide-chromium/whats-new/2021/07/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 93)
+                  displayName: What's New in DevTools (Microsoft Edge 93)  # top-of-page title
 
                 - name: Microsoft Edge 92
                   href: devtools-guide-chromium/whats-new/2021/05/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 92)
+                  displayName: What's New in DevTools (Microsoft Edge 92)  # top-of-page title
 
                 - name: Microsoft Edge 91
                   href: devtools-guide-chromium/whats-new/2021/04/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 91)
+                  displayName: What's New in DevTools (Microsoft Edge 91)  # top-of-page title
 
                 - name: Microsoft Edge 90
                   href: devtools-guide-chromium/whats-new/2021/02/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 90)
+                  displayName: What's New in DevTools (Microsoft Edge 90)  # top-of-page title
 
                 - name: Microsoft Edge 89
                   href: devtools-guide-chromium/whats-new/2021/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 89)
+                  displayName: What's New in DevTools (Microsoft Edge 89)  # top-of-page title
 
                 - name: Microsoft Edge 88
                   href: devtools-guide-chromium/whats-new/2020/11/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 88)
+                  displayName: What's New in DevTools (Microsoft Edge 88)  # top-of-page title
 
                 - name: Microsoft Edge 87
                   href: devtools-guide-chromium/whats-new/2020/10/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 87)
+                  displayName: What's New in DevTools (Microsoft Edge 87)  # top-of-page title
 
                 - name: Microsoft Edge 86
                   href: devtools-guide-chromium/whats-new/2020/08/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 86)
+                  displayName: What's New in DevTools (Microsoft Edge 86)  # top-of-page title
 
                 - name: Microsoft Edge 85
                   href: devtools-guide-chromium/whats-new/2020/06/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 85)
+                  displayName: What's New in DevTools (Microsoft Edge 85)  # top-of-page title
 
                 - name: Microsoft Edge 84
                   href: devtools-guide-chromium/whats-new/2020/05/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 84)
+                  displayName: What's New in DevTools (Microsoft Edge 84)  # top-of-page title
 
                 - name: Microsoft Edge 83
                   href: devtools-guide-chromium/whats-new/2020/03/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 83)
+                  displayName: What's New in DevTools (Microsoft Edge 83)  # top-of-page title
+
+#               - name: Microsoft Edge 82
+#                 href: devtools-guide-chromium/whats-new/2020/02/devtools.md  # no such file
+#                 displayName: What's New in DevTools (Microsoft Edge 82)  # top-of-page title
 
                 - name: Microsoft Edge 81
                   href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 82)
+                  displayName: What's New in DevTools (Microsoft Edge 81)  # top-of-page title
 
                 - name: Microsoft Edge 80
                   href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 80)
+                  displayName: What's New in DevTools (Microsoft Edge 80)  # top-of-page title
 # Experimental features ------------------------------------------------------------------
         - name: Experimental features
           items:
