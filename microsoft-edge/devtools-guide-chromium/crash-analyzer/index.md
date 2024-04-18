@@ -27,23 +27,6 @@ The **Crash analyzer** tool helps debug and diagnose crashes that occur in any w
 
 
 <!-- ====================================================================== -->
-## UI items
-<!-- todo: rewrite as task-oriented sections -->
-
-The **Crash analyzer** tool has the following UI items:
-* The **New analysis** (![The 'New analysis' icon](./index-images/new-analysis-icon.png)) button.
-* The **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button.
-* The **Analyses** (![The 'Analyses' dropdown list](./index-images/analyses-dropdown-list.png)) dropdown list.
-* The **Remove this analysis** (![the 'Remove this analysis' icon](./index-images/remove-this-analysis-icon.png)) button.
-* The **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button.
-* The **Open Symbol Server settings** (![the 'Open Symbol Server settings' icon](./index-images/open-symbol-server-settings-icon.png)) button.
-* The **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button - brings up the present article.
-* Left pane - The stack trace (annotated crash dump) to analyze.
-* Right pane - Displays the original file names and function names that make up the stack trace.
-<!-- todo: format as 2-col table? -->
-
-
-<!-- ====================================================================== -->
 ## Reporting non-fatal JavaScript exceptions or similar data to tools
 
 To report non-fatal JavaScript exceptions or similar data to tools such as Azure Application Insights:
@@ -59,6 +42,25 @@ To report non-fatal JavaScript exceptions or similar data to tools such as Azure
    ![Using the Crash analyzer tool to debug a non-fatal JavaScript exception](./index-images/crash-analyzer-tool.png)
 
 1. Click through the individual stack frames to see the lines in your original code that caused the error.
+
+
+<!-- ====================================================================== -->
+## UI items
+<!-- todo: rewrite as task-oriented sections -->
+
+The **Crash analyzer** tool has the following UI items:
+
+| UI item | Description |
+|---|---|
+| Left pane | The stack trace (annotated crash dump) to analyze. |
+| Right pane | Displays the original file names and function names that make up the stack trace. |
+| The **New analysis** (![The 'New analysis' icon](./index-images/new-analysis-icon.png)) button | Creates a new analysis. |
+| The **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button | Creates a new analysis. |
+| The **Analyses** (![The 'Analyses' dropdown list](./index-images/analyses-dropdown-list.png)) dropdown list | Shows the list of analyses. |
+| The **Remove this analysis** (![the 'Remove this analysis' icon](./index-images/remove-this-analysis-icon.png)) button | Removes the present analysis. |
+| The **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button | Copies the full, unminified stack trace. |
+| The **Open Symbol Server settings** (![the 'Open Symbol Server settings' icon](./index-images/open-symbol-server-settings-icon.png)) button | Display or modify the Symbol Server settings. |
+| The **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button | Opens the present article. |
 
 
 <!-- ====================================================================== -->
