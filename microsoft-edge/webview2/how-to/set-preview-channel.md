@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 04/18/2024
+ms.date: 04/19/2024
 ---
 # Test upcoming APIs and features
 <!-- old title: 
@@ -110,7 +110,13 @@ Win32:
 * [ICoreWebView2EnvironmentOptions7::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_channelsearchkind)
 * [ICoreWebView2EnvironmentOptions7::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_channelsearchkind)
 * [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32//webview2-idl#corewebview2_channel_search_kind)
-<!-- todo: Update these API Ref links to go to stable interfaces, after they are published -->
+<!-- todo: Update these API Ref links to go to stable interfaces, after they are published; 
+after April RelNotes is published in week of Monday, April 22, update these links, and then publish the present article/PR.
+PR #3125 (Release Notes for April 2024 Release SDK & Prerelease SDK):
+https://github.com/MicrosoftDocs/edge-developer/pull/3125
+Live RelNotes to check for presence of April RelNotes:
+https://learn.microsoft.com/microsoft-edge/webview2/release-notes/
+-->
 
 
 ##### [Registry key](#tab/registry-key)
@@ -207,7 +213,11 @@ Win32:
 Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`  <!-- 2 trailing spaces = linebreak -->
 Value: `<path to desired Microsoft Edge preview channel>`
 
-The environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.
+The environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per-app.
+<!-- todo: there are two "per-app" spots in this .md file.  Make them same?
+The environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per-app.
+The environment variable, if set globally, is applied to all apps that use WebView2 on the machine.  In contrast, the registry key can be set per-app.
+-->
 
 
 ##### [Group policy](#tab/group-policy)
@@ -296,7 +306,11 @@ Replace `WebView2APISample.exe` with your own app executable name or the applica
 Name: `WEBVIEW2_RELEASE_CHANNELS`  <!-- 2 trailing spaces = linebreak -->
 Value: `<string of desired channels (ex: 0,1)>`
 
-The environment variable, if set globally, is applied to all apps that use WebView2 on the machine.  In contrast, the registry key can be set per app.
+The environment variable, if set globally, is applied to all apps that use WebView2 on the machine.  In contrast, the registry key can be set per-app.
+<!-- todo: there are two "per-app" spots in this .md file.  Make them same?
+The environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per-app.
+The environment variable, if set globally, is applied to all apps that use WebView2 on the machine.  In contrast, the registry key can be set per-app.
+-->
 
 
 ##### [Group policy](#tab/group-policy)
@@ -387,21 +401,21 @@ Manual installation only needs to be done once per machine.  Prerelease channels
 <!-- ---------- -->
 ###### Option 2: Programmatically deploy preview channels via API endpoints
 
-In your app's code, you can write your own custom logic to deploy the latest version of the preview channel of Microsoft Edge by doing the following:
+In your app's code, write your own custom logic to deploy the latest version of a preview channel of Microsoft Edge as follows:
 
-1. Call <!-- todo: all of? any of? one of? --> the following API endpoints.
+1. Call the following API endpoint that corresponds to the preview channel that you want to deploy:
+
+   | Channel | Link |
+   | --- | --- |
+   | Canary | [https://edgeupdates.microsoft.com/api/products/canary](https://edgeupdates.microsoft.com/api/products/canary)<br>[MSI Link](https://go.microsoft.com/fwlink/?linkid=2084649&Channel=Canary&language=en)|
+   | Dev | [https://edgeupdates.microsoft.com/api/products/dev](https://edgeupdates.microsoft.com/api/products/dev) |
+   | Beta | [https://edgeupdates.microsoft.com/api/products/beta](https://edgeupdates.microsoft.com/api/products/beta) |
+
+   The Canary channel has a separate MSI link.  The Dev and Beta channels contain MSI links.
 
 1. Fetch the latest package to the device.
 
 1. Install the package.
-
-| Channel | Link |
-| --- | --- |
-| Canary | [https://edgeupdates.microsoft.com/api/products/canary](https://edgeupdates.microsoft.com/api/products/canary)<br>[MSI Link](https://go.microsoft.com/fwlink/?linkid=2084649&Channel=Canary&language=en)|
-| Dev | [https://edgeupdates.microsoft.com/api/products/dev](https://edgeupdates.microsoft.com/api/products/dev) |
-| Beta | [https://edgeupdates.microsoft.com/api/products/beta](https://edgeupdates.microsoft.com/api/products/beta) |
-
-The Edge Dev and Edge Beta channels contain MSI Links.  The Edge Canary channel has a separate MSI link.
 
 
 <!-- ====================================================================== -->
