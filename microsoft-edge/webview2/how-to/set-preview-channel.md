@@ -109,9 +109,8 @@ WinRT:
 Win32:
 * [ICoreWebView2EnvironmentOptions7::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_channelsearchkind)
 * [ICoreWebView2EnvironmentOptions7::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_channelsearchkind)
-* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32//webview2-idl#corewebview2_channel_search_kind)
-<!-- todo: Update these API Ref links to go to stable interfaces, after they are published; 
-after April RelNotes is published in week of Monday, April 22, update these links, and then publish the present article/PR.
+* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_channel_search_kind)
+<!-- todo: test API Ref links after April RelNotes is published ~Apr 22
 PR #3125 (Release Notes for April 2024 Release SDK & Prerelease SDK):
 https://github.com/MicrosoftDocs/edge-developer/pull/3125
 Live RelNotes to check for presence of April RelNotes:
