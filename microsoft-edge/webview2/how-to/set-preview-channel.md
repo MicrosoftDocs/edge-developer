@@ -302,10 +302,7 @@ Replace `WebView2APISample.exe` with your own app executable name or the applica
 Name: `WEBVIEW2_RELEASE_CHANNELS`  <!-- 2 trailing spaces = linebreak -->
 Value: `<string of desired channels (ex: 0,1)>`
 
-The environment variable, if set globally, is applied to all apps that use WebView2 on the machine.  In contrast, the registry key can be set per-app.
-<!-- todo: reword like elsewhere in this file?  Elsewhere in this file reads:
 The target app can't be set when using the environment variable approach.  Therefore, when set as a global environment, this setting will affect all apps that use WebView2 on the machine.
--->
 
 
 ##### [Group policy](#tab/group-policy)
