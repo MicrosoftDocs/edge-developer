@@ -211,8 +211,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
    * `HtmlOnly`
    * `SingleFile`
   
-* [CoreWebView2SaveAsUIResult Enum](/microsoft-
-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuiresult?view=webview2-winrt-1.0.2525-prerelease&preserve-view=true)
+* [CoreWebView2SaveAsUIResult Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuiresult?view=webview2-winrt-1.0.2525-prerelease&preserve-view=true)
    * `Cancelled`
    * `FileAlreadyExists`
    * `InvalidPath`
@@ -239,13 +238,13 @@ edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuire
 
 * [ICoreWebView2ExperimentalSaveAsUIShowingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsaveasuishowingeventhandler?view=webview2-1.0.2525-prerelease&preserve-view=true)
 
-* [COREWEBVIEW2_SAVE_AS_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-win32-preview#corewebview2_save_as_kind)
+* [COREWEBVIEW2_SAVE_AS_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2525-prerelease&preserve-view=true#corewebview2_save_as_kind)
    * `COREWEBVIEW2_SAVE_AS_KIND_DEFAULT`
    * `COREWEBVIEW2_SAVE_AS_KIND_HTML_ONLY`
    * `COREWEBVIEW2_SAVE_AS_KIND_SINGLE_FILE`
    * `COREWEBVIEW2_SAVE_AS_KIND_COMPLETE`
 
-* [COREWEBVIEW2_SAVE_AS_UI_RESULT enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-win32-preview#corewebview2_save_as_ui_result)
+* [COREWEBVIEW2_SAVE_AS_UI_RESULT enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2525-prerelease&preserve-view=true#corewebview2_save_as_ui_result)
    * `COREWEBVIEW2_SAVE_AS_UI_RESULT_SUCCESS`
    * `COREWEBVIEW2_SAVE_AS_UI_RESULT_INVALID_PATH`
    * `COREWEBVIEW2_SAVE_AS_UI_RESULT_FILE_ALREADY_EXISTS`
@@ -265,7 +264,7 @@ edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuire
    * [ICoreWebView2ExperimentalSaveAsUIShowingEventArgs::get_AllowReplace](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsaveasuishowingeventargs?view=webview2-1.0.2525-prerelease&preserve-view=true#get_allowreplace)
    * [ICoreWebView2ExperimentalSaveAsUIShowingEventArgs::put_Kind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsaveasuishowingeventargs?view=webview2-1.0.2525-prerelease&preserve-view=true#put_kind)
    * [ICoreWebView2ExperimentalSaveAsUIShowingEventArgs::get_Kind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsaveasuishowingeventargs?view=webview2-1.0.2525-prerelease&preserve-view=true#get_kind)
-   * [ICoreWebView2ExperimentalSaveAsUIShowingEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsaveasuishowingeventargs?view=webview2-1.0.2525-prerelease&preserve-view=true#invoke)
+   * [ICoreWebView2ExperimentalSaveAsUIShowingEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsaveasuishowingeventargs?view=webview2-1.0.2525-prerelease&preserve-view=true#invoke)<!-- todo: delete?  not at https://review.learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsaveasuishowingeventargs?view=webview2-win32-preview&branch=pr-en-us-89#invoke -->
 
 ---
  
