@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/23/2024
+ms.date: 04/18/2024
 ---
 # Self-host by deploying preview channels
 
@@ -26,55 +26,59 @@ See also:
 <!-- ====================================================================== -->
 ## How to self-host a preview channel of WebView2
 
-We recommend that you self-host using the preview WebView2 Runtime in the Dev channel of the Edge browser. The Dev channel is updated weekly, so it allows you to catch issues early while having sufficient stability for daily use.
+We recommend that you self-host using the preview WebView2 Runtime in the Dev channel of the Edge browser.  The Dev channel is updated weekly, so it allows you to catch issues early while having sufficient stability for daily use.
 
-The Canary channel is also suitable, but it might be less stable for daily use. The Beta channel allows you to test against the version of the runtime that is about to ship to stable, but you might not be able to catch issues early enough for your application.
+The Canary channel is also suitable, but it might be less stable for daily use.  The Beta channel allows you to test against the version of the runtime that is about to ship to stable, but you might not be able to catch issues early enough for your application.
 
 
-Do the following steps:
+To self-host a preview channel of WebView2:
 
-1. **Set the preview channel for your app**:  
+1. **Set the preview channel for your app**:  <!-- 2 trailing spaces = linebreak -->
 You can [set the preview channel by using ChannelSearchKind](./set-preview-channel.md#switching-the-channel-search-order-recommended), making it such that your WebView2 app uses the least-stable channel on the device. We recommend using either the Registry Key or Group Policy for self-hosting.
 
-1. **Install the preview channel on your team's machines**:  
+1. **Install the preview channel on your team's machines**:  <!-- 2 trailing spaces = linebreak -->
 To install on handful of devices, you can download and install them manually from [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider). To deploy them to multiple devices, see [how to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels). 
 
-1. **Use your app daily with the preview channel of WebView2, and diagnose potential issues with the WebView2 Runtime:**  
+1. **Use your app daily with the preview channel of WebView2, and diagnose potential issues with the WebView2 Runtime:**  <!-- 2 trailing spaces = linebreak -->
 See [Diagnose potential issues with the WebView2 Runtime](#diagnose-potential-issues-with-the-webview2-runtime), below.
 
-Upon finding issues, you can report them to the [Microsoft Edge WebView2 feedback repository](https://github.com/MicrosoftEdge/WebView2Feedback).  Under the `Runtime Channel` section, do indicate that you found the issue on a preview channel so that we can prioritize the fix before the bug ships to stable.
+Upon finding issues, you can report them via the [Microsoft Edge / WebView2Feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback).  Under the `Runtime Channel` section, be sure to indicate that you found the issue on a preview channel, so that the fix can be prioritized before the bug ships in the Stable release.
 
 
 <!-- ====================================================================== -->
 ## Diagnose potential issues with the WebView2 Runtime
 
-To diagnose or troubleshoot potential preview WebView2 Runtime issues that are revealed by your app, you can do the following
+To diagnose or troubleshoot potential preview WebView2 Runtime issues that are revealed by your app, do the following:
 
 
 <!-- ------------------------------ -->
 #### Confirm that your app is running a preview channel of WebView2
 
-1. Open Task Manager
+1. In Windows, open Task Manager.
 
-1. Find your application's process, then find the Edge WebView2 child process
+1. Find your application's process, and then find the **Edge WebView2** child process.
 
-1. Right click on the Edge WebView2 process, and then `Open file location`. The folder will be the version number of the runtime.
+1. Right-click the **Edge WebView2** process, and then select **Open file location**.  The folder name is the version number of the Runtime.
+
 
 <!-- ------------------------------ -->
-#### Switch to the Stable WebView2 Runtime channel to see if the issue reproduces
+#### Switch to the Stable WebView2 Runtime channel to see if the issue is reproduced
 
-If the issue doesn't reproduce on the Stable channel of the WebView2 Runtime, it's likely that the issue is with the preview channel of WebView2, or how your app interacts with the preview channel of WebView2.
+If the issue isn't reproduced on the Stable channel of the WebView2 Runtime, it's likely that the issue is with the preview channel of WebView2, or how your app interacts with the preview channel of WebView2.
 
-You can easily switch to the stable channel (Evergreen WebView2 Runtime) by [using environmental variables](./set-preview-channel.md?tabs=environment-variable#switching-the-channel-search-order-recommended), because revised environment variables override the registry settings (which are what's set by group policies).  This allows you to easily switch from a preview channel to the stable channel, to see if the issue reproduces.  If you are already using environmental variables, you simply update the values.  Note that if you are setting the environment variable globally, it will change the WebView2 channel for all apps that use WebView2 on the machine. 
+You can easily switch to the stable channel (Evergreen WebView2 Runtime) by [using environmental variables](./set-preview-channel.md?tabs=environment-variable#switching-the-channel-search-order-recommended), because revised environment variables override the registry settings (which are what's set by group policies).  This allows you to easily switch from a preview channel to the stable channel, to see if the issue is reproduced.  If you are already using environmental variables, you simply update the values.
 
-If you are using the API, then we recommend building UI in your app that allows your users to change between using stable or preview runtimes.
+If you set the environment variable globally, it changes the WebView2 channel for all apps that use WebView2 on the machine.
+
+If you are using the API, then we recommend building UI in your app that allows your users to change between using the Stable Runtime or a preview Runtime.
+
 
 <!-- ------------------------------ -->
 #### Collect diagnostics data
 
-1. Refer to [Gathering Diagnostics and Logs](https://github.com/MicrosoftEdge/WebView2Feedback/tree/main/diagnostics) on how to gather diagnostic data. Crash dumps and ETW traces are the common ones we require.
+1. See [Gathering Diagnostics and Logs](https://github.com/MicrosoftEdge/WebView2Feedback/tree/main/diagnostics).  Crash dumps and Event Tracing for Windows (ETW) traces are the common formats that are required.
 
-1. You can then report the issue to the [Microsoft Edge WebView2 feedback repository](https://github.com/MicrosoftEdge/WebView2Feedback), and include the log file.
+1. You can then report the issue to the [Microsoft Edge / WebView2Feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback), and include the log file.
 
 
 <!-- ====================================================================== -->
