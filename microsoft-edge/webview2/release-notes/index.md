@@ -74,7 +74,6 @@ Release Date: April 20, 2024
 [NuGet package for WebView2 SDK 1.0.2478.35](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2478.35)
 
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 124.0.2478.35 or higher.
-<!-- todo: 124, or 125? -->
 
 
 <!-- ------------------------------ -->
@@ -158,7 +157,6 @@ Release Date: April 20, 2024
 [NuGet package for WebView2 SDK 1.0.2525-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2525-prerelease)
  
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 125.0.2525.0 or higher.
-<!-- todo: 124, or 125? -->
 
  
 <!-- ------------------------------ -->
@@ -323,7 +321,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ---------- -->
 ###### Runtime-only
 
-* The Image Auto-captioning feature on the context menu is no longer enabled.
+* Fixed a bug where the Image Auto-captioning feature was enabled by default. It is now disabled.
 
 * Fixed a bug where if the `LaunchingExternalURIScheme` event handler is attached, if the **always remember** checkbox is enabled and the user selects this checkbox, the dialog will incorrectly be shown again. 
 
@@ -351,8 +349,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ---------- -->
 ###### SDK-only
 
-* Fixed missing WinRT `ICoreWebView2EnvironmentOptions6` interface.
-<!-- todo: IFoo6 implies Win32, yet this says WinRT - change to Win32? -->
+* Fixed missing `AreBrowserExtensionsEnabled` API in WinRT projection.
 
 <!-- end of Apr. 2024 Prerelease SDK -->
 
