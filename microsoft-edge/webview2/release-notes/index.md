@@ -73,7 +73,7 @@ Release Date: April 20, 2024
 
 [NuGet package for WebView2 SDK 1.0.2478.35](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2478.35)
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 124.0.2478.35 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 124.0.2478.35 or higher.
 
 
 <!-- ------------------------------ -->
@@ -100,6 +100,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- todo: temp note: tested links against "preview" open PR: -->
+
 * `CoreWebView2EnvironmentOptions` Class:
    * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2478.35&preserve-view=true#channelsearchkind)
    * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2478.35&preserve-view=true#releasechannels)
@@ -116,6 +118,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
    * `Canary`
 
 ##### [Win32/C++](#tab/win32cpp)
+
+<!-- todo: temp note: tested links against "preview" open PR: -->
 
 * [ICoreWebView2EnvironmentOptions7](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7?view=webview2-1.0.2478.35&preserve-view=true)
    * [ICoreWebView2EnvironmentOptions7::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7?view=webview2-1.0.2478.35&preserve-view=true#get_channelsearchkind)
@@ -164,7 +168,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
-* Added `SaveAs` APIs that allow you to programmatically perform the **Save as** operation.  By using the new APIs, you can now block the default **Save as** dialog and then choose to either save silently or build your own UI for **Save as**.  This API pertains only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs.
+* Added `SaveAs` APIs that allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.  These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -321,7 +325,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed a bug where the Image Auto-captioning feature was enabled by default. It is now disabled.
+* Fixed a bug where the Image Auto-captioning feature was enabled by default.  This feature is no longer enabled.
 
 * Fixed a bug where if the `LaunchingExternalURIScheme` event handler is attached, if the **always remember** checkbox is enabled and the user selects this checkbox, the dialog will incorrectly be shown again. 
 
