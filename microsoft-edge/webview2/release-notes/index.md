@@ -315,7 +315,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ---------- -->
 ###### Runtime and SDK
 
-* Fixed a bug in WinRT JaveScript projection where passing in a typed array resulted in an "Interface Not Supported" error.  ([Issue #3486](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3486))
+* Fixed a bug in WinRT JavaScript projection where passing in a typed array resulted in an "Interface Not Supported" error.  ([Issue #3486](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3486))
 
 * Added support for handling `out` array parameters in WinRT JavaScript projection.
 
@@ -323,7 +323,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ---------- -->
 ###### Runtime-only
 
-* Image Auto-captioning feature on context menu is disabled
+* The Image Auto-captioning feature on the context menu is no longer enabled.
 
 * Fixed a bug where if the `LaunchingExternalURIScheme` event handler is attached, if the **always remember** checkbox is enabled and the user selects this checkbox, the dialog will incorrectly be shown again. 
 
@@ -335,7 +335,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 * Fixed a bug where a composable IME was duplicated upon regaining focus.  ([Issue #1610](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1610))
 
-* Ensures that `devicePixelRatio` is synchronized with custom rasterization scales.  ([Issue #3060](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3060))
+* Ensured that `devicePixelRatio` is synchronized with custom rasterization scales.  ([Issue #3060](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3060))
 
 * Fixed a race condition when using `CallDevToolsProtocolMethod` events in `NewWindowRequested`.  ([Issue #4181](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4181))
 
@@ -343,7 +343,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 * Ensured that spellcheck takes input language with case-insensitive format.
 
-* Makes the Language API more robust regarding user input.
+* Made the Language API more robust regarding user input.
 
 * Fixed a bug where the **Save password?** prompt is not displayed.
 
