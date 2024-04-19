@@ -207,7 +207,7 @@ Win32:
 Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`  <!-- 2 trailing spaces = linebreak -->
 Value: `<path to desired Microsoft Edge preview channel>`
 
-The environment variable will be applied to all apps that use WebView2 on the machine, unlike the registry key, which can be set per app.
+The target app can't be set when using the environment variable approach.  Therefore, when set as a global environment, this setting will affect all apps that use WebView2 on the machine.
 
 
 ##### [Group policy](#tab/group-policy)
