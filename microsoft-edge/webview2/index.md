@@ -70,7 +70,7 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 The following programming environments are supported:
 
 *  Win32 C/C++
-*  .NET Framework 4.5 or later
+*  .NET Framework 4.6.2 or later
 *  .NET Core 3.1 or later
 *  .NET 5 or later
 *  [WinUI 2.0](/windows/apps/winui/winui2/)
