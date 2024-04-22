@@ -158,10 +158,12 @@ Release Date: April 22, 2024
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 125.0.2525.0 or higher.
 
+
 <!-- ------------------------------ -->
 #### Breaking changes
 
-The minimum .NET Framework version requirement for .NET WebView2, including WPF and WinForms controls, has been updated from 4.5 to 4.6.2.
+The minimum .NET Framework version requirement for .NET WebView2, including WPF and WinForms controls, has been updated from .NET Framework 4.5 to .NET Framework 4.6.2.
+
 
 <!-- ------------------------------ -->
 #### Experimental APIs
