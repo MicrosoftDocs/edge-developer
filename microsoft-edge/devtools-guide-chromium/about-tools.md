@@ -77,7 +77,7 @@ Microsoft Edge DevTools potentially includes additional tools, if you select the
 
 | Tool | Purpose | Article |
 | --- | --- | --- |
-| **CSP Violations** tool | Displays any Content Security Policy (CSP) violations that are detected on the inspected webpage. | [Show CSP Violations view](./experimental-features/index.md#show-csp-violations-view) in _Experimental features_.<!--[CSP Violations tool](./csp-violations/csp-violations-tool.md)--> |
+| **Protocol monitor** tool | Displays the DevTools protocol messages that are sent and received by DevTools, to debug the inspected page. | [Protocol Monitor](./experimental-features/index.md#protocol-monitor) in _Experimental features_. |
 
 
 <!-- ====================================================================== -->
