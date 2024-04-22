@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 04/20/2024
+ms.date: 04/22/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -28,15 +28,15 @@ Oct 2023 - can move to archive.md
 <!-- ======================================================================
 ## 1.0.####.##
 ## 1.0.####-prerelease
- 
+
 Release Date: Monthname nn, 2024
- 
+
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
- 
+
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
- 
+
 #### Experimental APIs
 No Experimental APIs have been added in this Prerelease SDK.
 The following Experimental APIs have been added in this Prerelease SDK.
@@ -44,7 +44,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 ##### [WinRT/C#](#tab/winrtcsharp)
 ##### [Win32/C++](#tab/win32cpp)
 ---
- 
+
 #### Promotions
 No additional APIs have been promoted to Stable and added in this Release SDK.
 The following APIs have been promoted to Stable and are now included in this Release SDK.
@@ -54,13 +54,13 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 ##### [WinRT/C#](#tab/winrtcsharp)
 ##### [Win32/C++](#tab/win32cpp)
 ---
- 
+
 #### Bug fixes
 ###### Runtime and SDK
 ###### Runtime-only
 ###### SDK-only
 -->
- 
+
 <!-- end of Mar. 2024 Release SDK -->
 <!-- end of Mar. 2024 Prerelease SDK -->
 <!-- end of template -->
@@ -69,7 +69,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ====================================================================== -->
 ## 1.0.2478.35
 
-Release Date: April 20, 2024
+Release Date: April 22, 2024
 
 [NuGet package for WebView2 SDK 1.0.2478.35](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2478.35)
 
@@ -140,7 +140,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 ---
 
- 
+
 <!-- ------------------------------ -->
 #### Bug fixes
 
@@ -148,21 +148,21 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixes a potential integer overflow that could lead to a crash when using `AdditionalObjects` in the WebMessage API. 
+* Fixes a potential integer overflow that could lead to a crash when using `AdditionalObjects` in the WebMessage API.
 
 <!-- end of Apr 2024 Release SDK -->
 
 
 <!-- ====================================================================== -->
 ## 1.0.2525-prerelease
- 
-Release Date: April 20, 2024
- 
+
+Release Date: April 22, 2024
+
 [NuGet package for WebView2 SDK 1.0.2525-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2525-prerelease)
- 
+
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 125.0.2525.0 or higher.
 
- 
+
 <!-- ------------------------------ -->
 #### Experimental APIs
 
@@ -175,20 +175,20 @@ The following Experimental APIs have been added in this Prerelease SDK.
 * `CoreWebView2` Class:
   * [CoreWebView2.SaveAsUIShowing Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.saveasuishowing?view=webview2-dotnet-1.0.2525-prerelease&preserve-view=true)
   * [CoreWebView2.ShowSaveAsUIAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showsaveasuiasync?view=webview2-dotnet-1.0.2525-prerelease&preserve-view=true)
-  
+
 * [CoreWebView2SaveAsKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2525-prerelease&preserve-view=true)
    * `Complete`
    * `Default`
    * `HtmlOnly`
    * `SingleFile`
-  
+
 * [CoreWebView2SaveAsUIResult Class](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult?view=webview2-dotnet-1.0.2525-prerelease&preserve-view=true)
    * `Cancelled`
    * `FileAlreadyExists`
    * `InvalidPath`
    * `KindNotSupported`
    * `Success`
-  
+
 * `CoreWebView2SaveAsUIShowingEventArgs` Class:
   * [CoreWebView2SaveAsUIShowingEventArgs.AllowReplace Property](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs.allowreplace?view=webview2-dotnet-1.0.2525-prerelease&preserve-view=true)
   * [CoreWebView2SaveAsUIShowingEventArgs.Cancel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs.cancel?view=webview2-dotnet-1.0.2525-prerelease&preserve-view=true)
@@ -210,7 +210,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
    * `Default`
    * `HtmlOnly`
    * `SingleFile`
-  
+
 * [CoreWebView2SaveAsUIResult Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuiresult?view=webview2-winrt-1.0.2525-prerelease&preserve-view=true)
    * `Cancelled`
    * `FileAlreadyExists`
@@ -226,14 +226,14 @@ The following Experimental APIs have been added in this Prerelease SDK.
    * [CoreWebView2SaveAsUIShowingEventArgs.Kind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuishowingeventargs?view=webview2-winrt-1.0.2525-prerelease&preserve-view=true#kind)
    * [CoreWebView2SaveAsUIShowingEventArgs.SaveAsFilePath Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuishowingeventargs?view=webview2-winrt-1.0.2525-prerelease&preserve-view=true#saveasfilepath)
    * [CoreWebView2SaveAsUIShowingEventArgs.SuppressDefaultDialog Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuishowingeventargs?view=webview2-winrt-1.0.2525-prerelease&preserve-view=true#suppressdefaultdialog)
-  
+
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Experimental25](/microsoft-edge/webview2/reference/win32/icorewebview2experimental25?view=webview2-1.0.2525-prerelease&preserve-view=true)
    * [ICoreWebView2Experimental25::ShowSaveAsUI](/microsoft-edge/webview2/reference/win32/icorewebview2experimental25?view=webview2-1.0.2525-prerelease&preserve-view=true#showsaveasui)
    * [ICoreWebView2Experimental25::add_SaveAsUIShowing](/microsoft-edge/webview2/reference/win32/icorewebview2experimental25?view=webview2-1.0.2525-prerelease&preserve-view=true#add_saveasuishowing)
    * [ICoreWebView2Experimental25::remove_SaveAsUIShowing](/microsoft-edge/webview2/reference/win32/icorewebview2experimental25?view=webview2-1.0.2525-prerelease&preserve-view=true#remove_saveasuishowing)
-  
+
 * [ICoreWebView2ExperimentalShowSaveAsUICompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalshowsaveasuicompletedhandler?view=webview2-1.0.2525-prerelease&preserve-view=true)
 
 * [ICoreWebView2ExperimentalSaveAsUIShowingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsaveasuishowingeventhandler?view=webview2-1.0.2525-prerelease&preserve-view=true)
@@ -267,7 +267,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
    * [ICoreWebView2ExperimentalSaveAsUIShowingEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsaveasuishowingeventargs?view=webview2-1.0.2525-prerelease&preserve-view=true#invoke)<!-- todo: delete?  not at https://review.learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsaveasuishowingeventargs?view=webview2-win32-preview&branch=pr-en-us-89#invoke -->
 
 ---
- 
+
 
 <!-- ------------------------------ -->
 #### Promotions
@@ -307,7 +307,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
    * `COREWEBVIEW2_SCROLLBAR_STYLE_FLUENT_OVERLAY`
 
 ---
- 
+
 
 <!-- ------------------------------ -->
 #### Bug fixes
@@ -324,9 +324,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed a bug where the Image Auto-captioning feature was enabled by default.  This feature is no longer enabled.
+* Fixed a bug where the Image Auto-captioning feature was enabled by default.
 
-* Fixed a bug where if the `LaunchingExternalURIScheme` event handler is attached, if the **always remember** checkbox is enabled and the user selects this checkbox, the dialog will incorrectly be shown again. 
+* Fixed a bug where if the `LaunchingExternalURIScheme` event handler is attached, if the **always remember** checkbox is enabled and the user selects this checkbox, the dialog will incorrectly be shown again.
 
 * Fixed `GetNonClientRegionAtPoint` incorrectly returning `Nowhere` for some points.
 
