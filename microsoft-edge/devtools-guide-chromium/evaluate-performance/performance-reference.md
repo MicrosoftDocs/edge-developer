@@ -1,6 +1,6 @@
 ---
-title: Timeline event reference
-description: The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.
+title: Performance recording event reference
+description: Describes each event type in the Performance tool, for all events that are triggered while making a recording.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -21,15 +21,19 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Timeline event reference
+# Performance recording event reference
 
-The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.
+In the **Performance** tool, the **Main** section displays all events that are triggered while making a recording.  Each event type is described below:
+* [Loading events](#loading-events)
+* [Scripting events](#scripting-events)
+* [Rendering events](#rendering-events)
+* [Painting events](#painting-events)
 
 
 <!-- ====================================================================== -->
-## Common timeline event properties
+## Properties common to all events
 
-Certain details are present in events of all types, while some only apply to certain event types.  This section lists properties common to different event types.  Properties specific to certain event types are listed in the references for those event types that follow.
+The following properties are common to all event types in the **Performance** tool's **Main** section.  Additional properties that are specific to certain event types are listed in the subsequent sections below.
 
 | Property | When is it shown |
 |:--- |:--- |
@@ -47,7 +51,7 @@ Certain details are present in events of all types, while some only apply to cer
 <!-- ====================================================================== -->
 ## Loading events
 
-This section lists events that belong to Loading category and their properties.
+The following events are in the **Loading** category.
 
 | Event | Description |
 |:--- |:--- |
@@ -57,7 +61,9 @@ This section lists events that belong to Loading category and their properties.
 | Receive Response |  The initial HTTP response from a request. |
 | Send Request |  A network request has been sent. |
 
-### Loading event properties
+
+<!-- ------------------------------ -->
+#### Additional properties for Loading events
 
 | Property | Description |
 |:--- |:--- |
@@ -68,11 +74,13 @@ This section lists events that belong to Loading category and their properties.
 | MIME Type | MIME type of the requested resource. |
 | Encoded Data Length | Length of requested resource in bytes. |
 
+See also [Properties common to all events](#properties-common-to-all-events), above.
+
 
 <!-- ====================================================================== -->
 ## Scripting events
 
-This section lists events that belong to the Scripting category and their properties.
+The following events are in the **Scripting** category.
 
 | Event | Description |
 |:--- |:--- |
@@ -92,7 +100,9 @@ This section lists events that belong to the Scripting category and their proper
 | XHR Ready State Change | The ready state of an XMLHTTPRequest changed. |
 | XHR Load | An `XMLHTTPRequest` finished loading. |
 
-### Scripting event properties
+
+<!-- ------------------------------ -->
+#### Additional properties for Scripting events
 
 | Property | Description |
 |:--- |:--- |
@@ -101,11 +111,13 @@ This section lists events that belong to the Scripting category and their proper
 | Repeats | Boolean that specifies if the timer repeats. |
 | Function Call | A function that was invoked. |
 
+See also [Properties common to all events](#properties-common-to-all-events), above.
+
 
 <!-- ====================================================================== -->
 ## Rendering events
 
-This section lists events that belong to Rendering category and their properties.
+The following events are in the **Rendering** category.
 
 | Event | Description |
 |:--- |:--- |
@@ -114,7 +126,9 @@ This section lists events that belong to Rendering category and their properties
 | Recalculate style | Microsoft Edge recalculated element styles. |
 | Scroll | The content of nested view was scrolled. |
 
-### Rendering event properties
+
+<!-- ------------------------------ -->
+#### Additional properties for Rendering events
 
 | Property | Description |
 |:--- |:--- |
@@ -125,11 +139,13 @@ This section lists events that belong to Rendering category and their properties
 | Elements affected | For Recalculate style records, the number of elements affected by a style recalculation. |
 | Styles invalidated | For Recalculate style records, provides the stack trace of the code that caused the style invalidation. |
 
+See also [Properties common to all events](#properties-common-to-all-events), above.
+
 
 <!-- ====================================================================== -->
 ## Painting events
 
-This section lists events that belong to Painting category and their properties.
+The following events are in the **Painting** category.
 
 | Event | Description |
 |:--- |:--- |
@@ -138,12 +154,16 @@ This section lists events that belong to Painting category and their properties.
 | Image Resize | An image was resized from its native dimensions. |
 | Paint | Composited layers were painted to a region of the display.  Hovering over a Paint record highlights the region of the display that was updated. |
 
-### Painting event properties
+
+<!-- ------------------------------ -->
+#### Additional properties for Painting events
 
 | Property | Description |
 |:--- |:--- |
 | Location | For Paint events, the x and y coordinates of the paint rectangle. |
 | Dimensions | For Paint events, the height and width of the painted region. |
+
+See also [Properties common to all events](#properties-common-to-all-events), above.
 
 
 <!-- ====================================================================== -->
