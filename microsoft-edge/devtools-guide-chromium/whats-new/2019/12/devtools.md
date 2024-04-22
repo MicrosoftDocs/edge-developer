@@ -244,7 +244,6 @@ DevTools has started to support the DWARF Debugging Standard, which means increa
 
 See also:
 * [Filter Wasm resource type in the Network tool](../../../whats-new/2021/05/devtools.md#filter-wasm-resource-type-in-the-network-tool) in _What's New in DevTools (Microsoft Edge 92)_.
-* [WebAssembly Debugging: Enable DWARF support](../../../experimental-features/index.md#webassembly-debugging-enable-dwarf-support) in _Experimental features_.
 
 
 <!-- ====================================================================== -->
