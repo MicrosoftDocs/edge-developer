@@ -232,11 +232,7 @@ Do either of the following:
 
 
 <!-- ====================================================================== -->
-## FAQs
-
-
-<!-- ------------------------------ -->
-#### When does the new runtime get picked up?
+## When the new runtime gets picked up
 
 If you are using an environment variable, registry key, or group policy, they are only applied to any new WebView2 Runtime browser processes that are created; they do not apply to WebView2 Runtime browser processes that are already running.  For example, if you already have a WebView2 with a specific user data folder (and therefore a corresponding browser process) and change `ChannelSearchKind` before attempting to create a new WebView2 using that same user data folder, it will use the existing WebView2 Runtime browser process, and not search for a different runtime.
 
@@ -246,8 +242,8 @@ To ensure that all processes use the environment variable, registry key, or grou
 * Create a new WebView2 that has a different user data folder than any other currently running WebView2 controls.
 
 
-<!-- ------------------------------ -->
-#### When using `ChannelSearchKind`, how do I make sure the right channel is picked up when I have multiple preview browser channels?
+<!-- ====================================================================== -->
+## Use `ChannelSearchKind` to ensure that the correct preview browser channel is used
 
 In addition to reversing the channel search order, you can modify the set of release channels to include in the search, to provide further control over channel selection.  The loader will search for channels on the device in the order specified by the channel search kind, but it will only consider channels that are in the specified set of release channels.
 
@@ -319,14 +315,21 @@ Do either of the following:
 
 ---
 
+
+<!-- ====================================================================== -->
+## How to use an environment variable
+
+You can use multiple approaches to set environment variables:
+* Setting environmental variables by using APIs, for a specific app.
+* Setting environmental variables globally, for all apps.
+
+These approaches are described below.
+
+
 <!-- ------------------------------ -->
-#### How to use an environment variable
+#### Setting environmental variables by using APIs, for a specific app
 
-
-<!-- ---------- -->
-###### Setting environmental variables using API
-
-You can set environment variables by using `SetEnvironmentVariable`.
+You can set environment variables by using `SetEnvironmentVariable`.  Calling this function from your host app limits the scope of the environment variable to just your host app and the WebView2 controls that it creates, and doesn't affect other apps on the system.
 
 * .NET: [Environment.SetEnvironmentVariable Method](/dotnet/api/system.environment.setenvironmentvariable)
 
@@ -335,8 +338,10 @@ You can set environment variables by using `SetEnvironmentVariable`.
 * Win32: [SetEnvironmentVariable function (winbase.h)](/windows/win32/api/winbase/nf-winbase-setenvironmentvariable)
 
 
-<!-- ---------- -->
-###### Setting environmental variables globally
+<!-- ------------------------------ -->
+#### Setting environmental variables globally, for all apps
+
+You can set environment variables by using the Windows system UI.  This approach makes the scope of the environment variable global for the current user or system, and affects all apps that create WebView2 controls.
 
 1. In the Windows search bar, enter "environment", and then select **Edit the system environment variables**:
 
@@ -363,8 +368,8 @@ You can set environment variables by using `SetEnvironmentVariable`.
 1. Click the **OK** buttons to close the dialogs.
 
 
-<!-- ------------------------------ -->
-#### How to deploy preview channels
+<!-- ====================================================================== -->
+## Deploy preview channels
 
 To deploy the preview channels of Microsoft Edge to multiple machines, do either of the following:
 
@@ -375,8 +380,8 @@ To deploy the preview channels of Microsoft Edge to multiple machines, do either
 These options are explained below.
 
 
-<!-- ---------- -->
-###### Option 1: Manually install preview channels on machines
+<!-- ------------------------------ -->
+#### Option 1: Manually install preview channels on machines
 
 Insider channels can be manually installed (either manually or through a deployed custom script) through the following enterprise links:
 
@@ -389,8 +394,8 @@ Insider channels can be manually installed (either manually or through a deploye
 Manual installation only needs to be done once per machine.  Prerelease channels are evergreen, so they will automatically get updated when newer versions are available.
 
 
-<!-- ---------- -->
-###### Option 2: Programmatically deploy preview channels via API endpoints
+<!-- ------------------------------ -->
+#### Option 2: Programmatically deploy preview channels via API endpoints
 
 In your app's code, write your own custom logic to deploy the latest version of a preview channel of Microsoft Edge as follows:
 

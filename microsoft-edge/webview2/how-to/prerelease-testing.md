@@ -6,16 +6,19 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 04/18/2024
+ms.date: 04/22/2024
 ---
 # Prerelease testing using preview channels
 
 _Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge to find issues that will affect your particular WebView2 app, before any changes ship in the Stable Evergreen WebView2 Runtime.  This helps catch any bugs before they degrade the app experience for end users.
 
+Conduct both automated and manual testing:
+* For **automated testing**, do **prerelease testing**, which means testing with a preview version of WebView2 Runtime.  Covered by the present article.
+* For **manual testing**, use **self-hosting**, which means deploying a preview version of WebView2 Runtime with your app, to use daily by your team.  See [Self-host by deploying preview channels](./self-hosting.md).
+
 See also:
 * [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels)
 * [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download Edge Canary, Edge Dev, or Edge Beta.
-* [Self-host by deploying preview channels](./self-hosting.md)
 
 
 <!-- ====================================================================== -->
@@ -41,7 +44,7 @@ You can set the preview channel by using `ChannelSearchKind`, so that your WebVi
    * If you instead choose to deploy preview channels to devices, see [How to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels) in _Test upcoming APIs and features_.
 
 1. **Conduct automated testing on your app running against the preview channels**:  <!-- 2 trailing spaces = linebreak -->
-You can do this automated testing by using WebDriver.  See [Automate and test WebView2 apps with Microsoft Edge WebDriver](./webdriver.md).
+You can use WebDriver to conduct automated testing of your WebView2 app.  See [Automate and test WebView2 apps with Microsoft Edge WebDriver](./webdriver.md).
 
 1. **Compare the results with the baseline**:  <!-- 2 trailing spaces = linebreak -->
 The baseline for testing should be the latest stable release of WebView2, which can be either the Evergreen WebView2 runtime, or the latest fixed-version Runtime.  You can download the Runtime from the [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) page.

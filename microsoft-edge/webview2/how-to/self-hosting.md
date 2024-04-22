@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 04/18/2024
+ms.date: 04/22/2024
 ---
 # Self-host by deploying preview channels
 
@@ -14,13 +14,9 @@ _Self-hosting_ means deploying a preview WebView2 Runtime with your app.  This a
 
 The self-hosting approach provides real-world usage of your app with the latest preview WebView2 Runtime to catch any issues that may arise.  You should self-host your app in tandem with doing prerelease testing on your app, to provide a structured approach to testing your app with the latest version of the WebView2 Runtime.
 
-| Approach | Technique | Purpose/value |
-|---|---|---|
-| Prerelease testing | Automated testing on a preview version of WebView2 Runtime with your app. | Test your app with a preview version of the WebView2 Runtime to find issues before WebView2 upcoming changes reach the Stable Evergreen Runtime. |
-| Self-hosting | Deploy a preview version of WebView2 Runtime with your app. | Use your app daily with the preview version of WebView2 Runtime, to find issues before WebView2 changes reach the Stable Evergreen Runtime. |
-
-See also:
-* [Prerelease testing using preview channels](./prerelease-testing.md)
+Conduct both automated and manual testing:
+* For **automated testing**, do **prerelease testing**, which means testing with a preview version of WebView2 Runtime.  See [Prerelease testing using preview channels](./prerelease-testing.md).
+* For **manual testing**, use **self-hosting**, which means deploying a preview version of WebView2 Runtime with your app, to use daily by your team.  Covered by the present article.
 
 
 <!-- ====================================================================== -->
@@ -56,7 +52,7 @@ To diagnose or troubleshoot potential preview WebView2 Runtime issues that are r
 
 1. In Windows, open Task Manager.
 
-1. Find your application's process, and then find the **Edge WebView2** child process.
+1. Find your application's process, and then find the **WebView2 Manager** child process.
 
 1. Right-click the **Edge WebView2** process, and then select **Open file location**.  The folder name is the version number of the Runtime.
 
