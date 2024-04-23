@@ -36,18 +36,22 @@ Start with automated testing against the Microsoft Edge **Canary** channel, whic
 
 To do automated testing:
 
-1. **Set the preview channel for your app**:  <!-- 2 trailing spaces = linebreak -->
-You can set the preview channel by using `ChannelSearchKind`, so that your WebView2 app uses the least-stable channel (Canary, then Dev).  To do this, see [Switching the channel search order (recommended)](./set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_.
+1. **Set the preview channel for your app.**
 
-1. **Install or deploy the preview channel**:  <!-- 2 trailing spaces = linebreak -->
+   You can set the preview channel by using `ChannelSearchKind`, so that your WebView2 app uses the least-stable channel (Canary, then Dev).  To do this, see [Switching the channel search order (recommended)](./set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_.
+
+1. **Install or deploy the preview channel.**
+
    * If you choose to install preview channels manually, install them from [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider).
    * If you instead choose to deploy preview channels to devices, see [How to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels) in _Test upcoming APIs and features_.
 
-1. **Conduct automated testing on your app running against the preview channels**:  <!-- 2 trailing spaces = linebreak -->
-You can use WebDriver to conduct automated testing of your WebView2 app.  See [Automate and test WebView2 apps with Microsoft Edge WebDriver](./webdriver.md).
+1. **Conduct automated testing on your app running against the preview channels.**
 
-1. **Compare the results with the baseline**:  <!-- 2 trailing spaces = linebreak -->
-The baseline for testing should be the latest stable release of WebView2, which can be either the Evergreen WebView2 runtime, or the latest fixed-version Runtime.  You can download the Runtime from the [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) page.
+   You can use WebDriver to conduct automated testing of your WebView2 app.  See [Automate and test WebView2 apps with Microsoft Edge WebDriver](./webdriver.md).
+
+1. **Compare the results with the baseline.**
+
+   The baseline for testing should be the latest stable release of WebView2, which can be either the Evergreen WebView2 runtime, or the latest fixed-version Runtime.  You can download the Runtime from the [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) page.
 
 Upon finding issues, you can report them via the [Microsoft Edge / WebView2Feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback).  Under the `Runtime Channel` section, be sure to indicate that you found the issue on a preview channel, so that the fix can be prioritized before the bug ships in the Stable release.
 

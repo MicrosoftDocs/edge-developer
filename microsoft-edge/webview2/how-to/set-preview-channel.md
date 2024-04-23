@@ -113,12 +113,6 @@ Win32:
 * [ICoreWebView2EnvironmentOptions7::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_channelsearchkind)
 * [ICoreWebView2EnvironmentOptions7::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_channelsearchkind)
 * [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_channel_search_kind)
-<!-- todo: test API Ref links after April RelNotes is published ~Apr 22
-PR #3125 (Release Notes for April 2024 Release SDK & Prerelease SDK):
-https://github.com/MicrosoftDocs/edge-developer/pull/3125
-Live RelNotes to check for presence of April RelNotes:
-https://learn.microsoft.com/microsoft-edge/webview2/release-notes/
--->
 
 
 ##### [Registry key](#tab/registry-key)
@@ -138,8 +132,8 @@ Use the value `1` for the reversed-search order, or `0` for the default search o
 
 ##### [Environment variable](#tab/environment-variable)
 
-Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`  <!-- 2 trailing spaces = linebreak -->
-Value: `1`
+* Name: `WEBVIEW2_CHANNEL_SEARCH_KIND`
+* Value: `1`
 
 The target app can't be specified when using the environment variable.  Therefore, when set as a global environment, it will affect all apps that use WebView2 on the machine.
 
@@ -153,7 +147,7 @@ See also:
 
 Set the `ChannelSearchKind` policy.
 
-* Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`  <!-- 2 trailing spaces = linebreak -->
+* Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
 * Value: `1`
 
 Use the value `1` for the reversed-search order, or `0` for the default search order.
@@ -223,8 +217,8 @@ Replace `WebView2APISample.exe` with your own app executable name or the applica
 
 ##### [Environment variable](#tab/environment-variable)
 
-Name: `WEBVIEW2_RELEASE_CHANNELS`  <!-- 2 trailing spaces = linebreak -->
-Value: `<string of desired channels (ex: 0,1)>`
+* Name: `WEBVIEW2_RELEASE_CHANNELS`
+* Value: `<string of desired channels (ex: 0,1)>`
 
 The target app can't be set when using the environment variable approach.  Therefore, when set as a global environment, this setting will affect all apps that use WebView2 on the machine.
 
@@ -236,7 +230,7 @@ See also:
 
 Set the `ReleaseChannel` policy.
 
-* Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`  <!-- 2 trailing spaces = linebreak -->
+* Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
 * Value: `<string of desired channels (ex: 0,1)>`
 
 Do either of the following:
@@ -294,8 +288,8 @@ Win32:
 
 ##### [Environment variable](#tab/environment-variable)
 
-Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`  <!-- 2 trailing spaces = linebreak -->
-Value: `<path to desired Microsoft Edge preview channel>`
+* Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`
+* Value: `<path to desired Microsoft Edge preview channel>`
 
 The target app can't be set when using the environment variable approach.  Therefore, when set as a global environment, this setting will affect all apps that use WebView2 on the machine.
 
@@ -307,8 +301,8 @@ See also:
 
 Set the `BrowserExecutableFolder` policy.
 
-Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`  <!-- 2 trailing spaces = linebreak -->
-Value: `<path to desired Microsoft Edge preview channel>`
+* Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`
+* Value: `<path to desired Microsoft Edge preview channel>`
 
 Do either of the following:
 

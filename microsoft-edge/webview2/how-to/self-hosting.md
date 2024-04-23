@@ -29,14 +29,17 @@ The Canary channel is also suitable, but it might be less stable for daily use. 
 
 To self-host a preview channel of WebView2:
 
-1. **Set the preview channel for your app**:  <!-- 2 trailing spaces = linebreak -->
-You can [set the preview channel by using ChannelSearchKind](./set-preview-channel.md#switching-the-channel-search-order-recommended), making it such that your WebView2 app uses the least-stable channel on the device. We recommend using either the Registry Key or Group Policy for self-hosting.
+1. **Set the preview channel for your app.**
 
-1. **Install the preview channel on your team's machines**:  <!-- 2 trailing spaces = linebreak -->
-To install on handful of devices, you can download and install them manually from [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider). To deploy them to multiple devices, see [how to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels). 
+   You can [set the preview channel by using ChannelSearchKind](./set-preview-channel.md#switching-the-channel-search-order-recommended), making it such that your WebView2 app uses the least-stable channel on the device. We recommend using either the Registry Key or Group Policy for self-hosting.
 
-1. **Use your app daily with the preview channel of WebView2, and diagnose potential issues with the WebView2 Runtime:**  <!-- 2 trailing spaces = linebreak -->
-See [Diagnose potential issues with the WebView2 Runtime](#diagnose-potential-issues-with-the-webview2-runtime), below.
+1. **Install the preview channel on your team's machines.**
+
+   To install on handful of devices, you can download and install them manually from [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider). To deploy them to multiple devices, see [how to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels). 
+
+1. **Use your app daily with the preview channel of WebView2, and diagnose potential issues with the WebView2 Runtime.**
+
+   See [Diagnose potential issues with the WebView2 Runtime](#diagnose-potential-issues-with-the-webview2-runtime), below.
 
 Upon finding issues, you can report them via the [Microsoft Edge / WebView2Feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback).  Under the `Runtime Channel` section, be sure to indicate that you found the issue on a preview channel, so that the fix can be prioritized before the bug ships in the Stable release.
 
