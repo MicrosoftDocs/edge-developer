@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 04/19/2024
+ms.date: 04/22/2024
 ---
 # Test upcoming APIs and features
 <!-- old title: 
@@ -21,6 +21,7 @@ We recommend that you test the Experimental APIs ahead of time, before they are 
 
 See also:
 * [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
+* [Understand the different WebView2 SDK versions](../concepts/versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Runtime.
 
 
 <!-- ------------------------------ -->
@@ -57,7 +58,7 @@ To use experimental APIs, download a prerelease version of the WebView2 SDK from
 
 Preview channels of Microsoft Edge, which include preview WebView2 runtime, are also called _insider channels_.  After being installed, the preview channels will stay up-to-date and automatically install the latest versions available for that channel.  For example, this means the Canary channel will update itself almost daily.  To download a Microsoft Edge preview channel, see [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider).
 
-To deploy an app to multiple machines, see [how to deploy preview channels](#how-to-deploy-preview-channels).
+To deploy the preview channel to multiple machines, see [How to deploy preview channels](#how-to-deploy-preview-channels), below.
 
 
 <!-- ====================================================================== -->
@@ -92,6 +93,8 @@ Edge Canary -> Edge Dev -> Edge Beta -> WebView2 Runtime (Stable)
 ```
 
 This must be done before the WebView2 control is initialized.
+
+If you need a more specific order, see [How to use `ChannelSearchKind` to ensure that a particular channel is used](#how-to-use-channelsearchkind-to-ensure-that-a-particular-channel-is-used).
 
 
 ##### [API](#tab/api)
@@ -142,6 +145,9 @@ The target app can't be specified when using the environment variable.  Therefor
 
 Use the value `1` for the reversed-search order, or `0` for the default search order.
 
+See also:
+* [How to set an environment variable](#how-to-set-an-environment-variable), below.
+
 
 ##### [Group policy](#tab/group-policy)
 
@@ -164,86 +170,9 @@ Do either of the following:
 
 
 <!-- ====================================================================== -->
-## Setting the browser executable folder (for local testing)
+## How to use `ChannelSearchKind` to ensure that a particular channel is used
 
-An alternative approach is to use a browser executable folder.  In this approach, you specify a folder that contains runtime binaries.  This folder can be any of the following locations:
-*  The installed location of the WebView2 Runtime.
-*  A preview channel of Microsoft Edge.
-*  A folder containing fixed version binaries that you have deployed to the machine yourself.
-
-If you set the browser executable folder to a specific preview channel of Microsoft Edge, you will need to update the location when that preview channel updates to a newer version.  This is because the location includes the version number as part of its path.  Therefore, we recommend using this approach for local testing only.
-
-
-##### [API](#tab/api)
-
-Pass the path to the browser executable folder during environment creation, by using the following APIs.
-
-.NET (WPF):
-* [CreationProperties Property](/dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties)
-* [CoreWebView2CreationProperties Class](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties)
-
-.NET (WinForms):
-* [CreationProperties Property](/dotnet/api/microsoft.web.webview2.winforms.webview2.creationproperties)
-* [CoreWebView2CreationProperties Class](/dotnet/api/microsoft.web.webview2.winforms.corewebview2creationproperties)
-
-WinRT:
-* [CoreWebView2Environment.CreateWithOptionsAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createwithoptionsasync)
-
-Win32:
-* [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl?#createcorewebview2environmentwithoptions)
-
-
-##### [Registry key](#tab/registry-key)
-
-1. Open a PowerShell terminal or PowerShell-enabled command prompt.
-
-1. Modify and then run the following command:
-
-   ```reg
-   REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /v WebView2APISample.exe /t REG_SZ /d "C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0"
-   ```
-
-   * Replace `WebView2APISample.exe` with your own app executable name or the application user model ID.
-   * Replace the sample path with the path to the desired Microsoft Edge preview channel.
-
-
-##### [Environment variable](#tab/environment-variable)
-
-Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`  <!-- 2 trailing spaces = linebreak -->
-Value: `<path to desired Microsoft Edge preview channel>`
-
-The target app can't be set when using the environment variable approach.  Therefore, when set as a global environment, this setting will affect all apps that use WebView2 on the machine.
-
-
-##### [Group policy](#tab/group-policy)
-
-Set the `BrowserExecutableFolder` policy.
-
-Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`  <!-- 2 trailing spaces = linebreak -->
-Value: `<path to desired Microsoft Edge preview channel>`
-
-Do either of the following:
-
-* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  See [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge).
-
-* Use the built-in policy on Intune.  See [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge).
-
----
-
-
-<!-- ====================================================================== -->
-## When the new runtime gets picked up
-
-If you are using an environment variable, registry key, or group policy, they are only applied to any new WebView2 Runtime browser processes that are created; they do not apply to WebView2 Runtime browser processes that are already running.  For example, if you already have a WebView2 with a specific user data folder (and therefore a corresponding browser process) and change `ChannelSearchKind` before attempting to create a new WebView2 using that same user data folder, it will use the existing WebView2 Runtime browser process, and not search for a different runtime.
-
-To ensure that all processes use the environment variable, registry key, or group policy, you need to do any of the following:
-* Restart the app.
-* Re-create the WebView2 controls.
-* Create a new WebView2 that has a different user data folder than any other currently running WebView2 controls.
-
-
-<!-- ====================================================================== -->
-## Use `ChannelSearchKind` to ensure that the correct preview browser channel is used
+When using `ChannelSearchKind`, here's how you can make sure that a certain preview browser channel is used, when you have multiple preview browser channels installed.
 
 In addition to reversing the channel search order, you can modify the set of release channels to include in the search, to provide further control over channel selection.  The loader will search for channels on the device in the order specified by the channel search kind, but it will only consider channels that are in the specified set of release channels.
 
@@ -299,6 +228,9 @@ Value: `<string of desired channels (ex: 0,1)>`
 
 The target app can't be set when using the environment variable approach.  Therefore, when set as a global environment, this setting will affect all apps that use WebView2 on the machine.
 
+See also:
+* [How to set an environment variable](#how-to-set-an-environment-variable), below.
+
 
 ##### [Group policy](#tab/group-policy)
 
@@ -317,7 +249,89 @@ Do either of the following:
 
 
 <!-- ====================================================================== -->
-## How to use an environment variable
+## Setting the browser executable folder (for local testing)
+
+An alternative approach is to use a browser executable folder.  In this approach, you specify a folder that contains runtime binaries.  This folder can be any of the following locations:
+*  The installed location of the WebView2 Runtime.
+*  A preview channel of Microsoft Edge.
+*  A folder containing Fixed Version binaries that you have deployed to the machine yourself.
+
+If you set the browser executable folder to a specific preview channel of Microsoft Edge, you will need to update the location when that preview channel updates to a newer version.  This is because the location includes the version number as part of its path.  Therefore, we recommend using this approach for local testing only.
+
+
+##### [API](#tab/api)
+
+Pass the path to the browser executable folder during environment creation, by using the following APIs.
+
+.NET (WPF):
+* [CreationProperties Property](/dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties)
+* [CoreWebView2CreationProperties Class](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties)
+
+.NET (WinForms):
+* [CreationProperties Property](/dotnet/api/microsoft.web.webview2.winforms.webview2.creationproperties)
+* [CoreWebView2CreationProperties Class](/dotnet/api/microsoft.web.webview2.winforms.corewebview2creationproperties)
+
+WinRT:
+* [CoreWebView2Environment.CreateWithOptionsAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createwithoptionsasync)
+
+Win32:
+* [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl?#createcorewebview2environmentwithoptions)
+
+
+##### [Registry key](#tab/registry-key)
+
+1. Open a PowerShell terminal or PowerShell-enabled command prompt.
+
+1. Modify and then run the following command:
+
+   ```reg
+   REG ADD <HKLM/HKCU>\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /v WebView2APISample.exe /t REG_SZ /d "C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0"
+   ```
+
+   * Replace `WebView2APISample.exe` with your own app executable name or the application user model ID.
+   * Replace the sample path with the path to the desired Microsoft Edge preview channel.
+
+
+##### [Environment variable](#tab/environment-variable)
+
+Name: `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`  <!-- 2 trailing spaces = linebreak -->
+Value: `<path to desired Microsoft Edge preview channel>`
+
+The target app can't be set when using the environment variable approach.  Therefore, when set as a global environment, this setting will affect all apps that use WebView2 on the machine.
+
+See also:
+* [How to set an environment variable](#how-to-set-an-environment-variable), below.
+
+
+##### [Group policy](#tab/group-policy)
+
+Set the `BrowserExecutableFolder` policy.
+
+Name: `<app exe name or app user model ID - ex: WebView2APISample.exe>`  <!-- 2 trailing spaces = linebreak -->
+Value: `<path to desired Microsoft Edge preview channel>`
+
+Do either of the following:
+
+* Download the Microsoft Edge policy files, which include the WebView2 policy files, from [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).  See [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge).
+
+* Use the built-in policy on Intune.  See [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge).
+
+---
+
+
+<!-- ====================================================================== -->
+## When the new runtime gets picked up
+
+If you are using an environment variable, registry key, or group policy, they are only applied to any new WebView2 Runtime browser processes that are created; they do not apply to WebView2 Runtime browser processes that are already running.  For example, if you already have a WebView2 with a specific user data folder (and therefore a corresponding browser process) and change `ChannelSearchKind` before attempting to create a new WebView2 using that same user data folder, it will use the existing WebView2 Runtime browser process, and not search for a different runtime.
+
+To ensure that all processes use the environment variable, registry key, or group policy, you need to do any of the following:
+* Restart the app.
+* Re-create all of the WebView2 controls that share a user data folder.
+* Create a new WebView2 that has a different user data folder than any other currently running WebView2 controls.
+
+
+<!-- ====================================================================== -->
+## How to set an environment variable
 
 You can use multiple approaches to set environment variables:
 * Setting environmental variables by using APIs, for a specific app.
@@ -369,7 +383,7 @@ You can set environment variables by using the Windows system UI.  This approach
 
 
 <!-- ====================================================================== -->
-## Deploy preview channels
+## How to deploy preview channels
 
 To deploy the preview channels of Microsoft Edge to multiple machines, do either of the following:
 

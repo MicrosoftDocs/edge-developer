@@ -1379,6 +1379,7 @@
 
             - name: Self-host by deploying preview channels
               href: webview2/how-to/self-hosting.md
+              displayName: self-hosting
 
         - name: Best Practices
           items:

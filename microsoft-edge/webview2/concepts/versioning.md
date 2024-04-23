@@ -67,6 +67,10 @@ Preview channels of Microsoft Edge provide the implementations of Experimental W
 
 For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, see [Test upcoming APIs and features](../how-to/set-preview-channel.md).
 
+See also:
+* [Prerelease testing using preview channels](../how-to/prerelease-testing.md)
+* [Self-host by deploying preview channels](../how-to/self-hosting.md)
+
 
 <!-- ====================================================================== -->
 ## Use a release version of the SDK along with the Runtime
