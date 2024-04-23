@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/08/2023
+ms.date: 04/23/2024
 ---
 # WebView2 API Reference
 
@@ -42,10 +42,10 @@ WebView2 is available for the following frameworks or platforms:
 ---
 
 
-<!-- ------------------------------ -->
-#### Use all three tabs
+<!-- ---------- -->
+###### Use all three tabs
 
-When reading articles about WebView2, to see all available documentation for a type or member, click the links in all three tabs: **.NET/C#**, **WinRT/C#**, and **Win32/C++**.
+Tip: When reading articles about WebView2, to see all available documentation for a type or member, click the links in all three tabs in the article: **.NET/C#**, **WinRT/C#**, and **Win32/C++**.
 
 
 <!-- ====================================================================== -->
