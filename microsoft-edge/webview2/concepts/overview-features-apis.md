@@ -35,68 +35,6 @@ This page only lists APIs that are in Release SDKs; it doesn't list Experimental
 
 
 <!-- ====================================================================== -->
-## INCOMING
-
-<!-- ---------- -->
-* Added the Runtime selection feature to support more prerelease testing and flighting scenarios.  You can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2EnvironmentOptions` Class:
-   * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
-   * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.releasechannels)
-
-* [CoreWebView2ChannelSearchKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2channelsearchkind)
-   * `MostStable`
-   * `LeastStable`
-
-* [CoreWebView2ReleaseChannels Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2releasechannels)
-   * `None`
-   * `Stable`
-   * `Beta`
-   * `Dev`
-   * `Canary`
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2EnvironmentOptions` Class:
-   * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#channelsearchkind)
-   * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#releasechannels)
-
-* [CoreWebView2ChannelSearchKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2channelsearchkind)
-   * `MostStable`
-   * `LeastStable`
-
-* [CoreWebView2ReleaseChannels Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2releasechannels)
-   * `None`
-   * `Stable`
-   * `Beta`
-   * `Dev`
-   * `Canary`
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2EnvironmentOptions7](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7)
-   * [ICoreWebView2EnvironmentOptions7::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_channelsearchkind)
-   * [ICoreWebView2EnvironmentOptions7::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_channelsearchkind)
-   * [ICoreWebView2EnvironmentOptions7::get_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_releasechannels)
-   * [ICoreWebView2EnvironmentOptions7::put_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_releasechannels)
-
-* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_channel_search_kind)
-   * `COREWEBVIEW2_CHANNEL_SEARCH_KIND_MOST_STABLE`
-   * `COREWEBVIEW2_CHANNEL_SEARCH_KIND_LEAST_STABLE`
-
-* [COREWEBVIEW2_RELEASE_CHANNELS enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_release_channels)
-   * `COREWEBVIEW2_RELEASE_CHANNELS_NONE`
-   * `COREWEBVIEW2_RELEASE_CHANNELS_STABLE`
-   * `COREWEBVIEW2_RELEASE_CHANNELS_BETA`
-   * `COREWEBVIEW2_RELEASE_CHANNELS_DEV`
-   * `COREWEBVIEW2_RELEASE_CHANNELS_CANARY`
-
----
-
-
-<!-- ====================================================================== -->
 ## Main classes: Environment, Controller, and Core
 
 <!-- keep sync'd:
@@ -2652,7 +2590,7 @@ Clearing browsing data:
 * `ICoreWebView2Environment7` interface:
    * [ICoreWebView2Environment7::get_UserDataFolder method](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!--no put-->
 * `ICoreWebView2Environment10` interface:
-   * [ICoreWebView2Environment10::CreateCoreWebView2CompositionControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)<!-- c#: might ~=CreateCoreWebView2CompositionControllerAsync -->
+   * [ICoreWebView2Environment10::CreateCoreWebView2CompositionControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)<!-- similar to CreateCoreWebView2CompositionControllerAsync in C# -->
    * [ICoreWebView2Environment10::CreateCoreWebView2ControllerOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controlleroptions)
    * [ICoreWebView2Environment10::CreateCoreWebView2ControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controllerwithoptions)
 * `ICoreWebView2EnvironmentOptions2` interface:
@@ -2779,6 +2717,7 @@ See also:
 Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app.
 
 **Subsections below:**
+* [Select browser preview channels for testing](#select-browser-preview-channels-for-testing)
 * [Memory usage target](#memory-usage-target)
 
 
@@ -2804,8 +2743,73 @@ Analyze and debug performance, handle performance-related events, and manage mem
    * [ICoreWebView2_3::TrySuspend method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)
    * [ICoreWebView2_3::get_IsSuspended method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!--no put-->
    * [ICoreWebView2_3::Resume method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)
+
 * `ICoreWebView2_6` interface:
    * [ICoreWebView2_6::OpenTaskManagerWindow method](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Select browser preview channels for testing
+
+The Runtime selection feature supports prerelease testing and flighting scenarios.  You can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
+
+See also:
+* [Test upcoming APIs and features](../how-to/set-preview-channel.md)
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
+   * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.releasechannels)
+
+* [CoreWebView2ChannelSearchKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2channelsearchkind)
+   * `MostStable`
+   * `LeastStable`
+
+* [CoreWebView2ReleaseChannels Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2releasechannels)
+   * `None`
+   * `Stable`
+   * `Beta`
+   * `Dev`
+   * `Canary`
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#channelsearchkind)
+   * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#releasechannels)
+
+* [CoreWebView2ChannelSearchKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2channelsearchkind)
+   * `MostStable`
+   * `LeastStable`
+
+* [CoreWebView2ReleaseChannels Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2releasechannels)
+   * `None`
+   * `Stable`
+   * `Beta`
+   * `Dev`
+   * `Canary`
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2EnvironmentOptions7](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7)
+   * [ICoreWebView2EnvironmentOptions7::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_channelsearchkind)
+   * [ICoreWebView2EnvironmentOptions7::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_channelsearchkind)
+   * [ICoreWebView2EnvironmentOptions7::get_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_releasechannels)
+   * [ICoreWebView2EnvironmentOptions7::put_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_releasechannels)
+
+* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_channel_search_kind)
+   * `COREWEBVIEW2_CHANNEL_SEARCH_KIND_MOST_STABLE`
+   * `COREWEBVIEW2_CHANNEL_SEARCH_KIND_LEAST_STABLE`
+
+* [COREWEBVIEW2_RELEASE_CHANNELS enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_release_channels)
+   * `COREWEBVIEW2_RELEASE_CHANNELS_NONE`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_STABLE`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_BETA`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_DEV`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_CANARY`
 
 ---
 
