@@ -2794,7 +2794,6 @@ See also:
 Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app.
 
 **Subsections below:**
-* [Select browser preview channels for testing](#select-browser-preview-channels-for-testing)
 * [Memory usage target](#memory-usage-target)
 
 
