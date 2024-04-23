@@ -2723,7 +2723,9 @@ See also:
 <!-- ------------------------------ -->
 #### Runtime selection
 
-The Runtime Selection feature supports prerelease testing and self-hosting.  You can specify `ChannelSearchKind` to select a search order, and specify `ReleaseChannels` to choose which browser preview channels are searched for during environment creation.
+The Runtime selection feature supports prerelease testing and self-hosting.  When creating a WebView2 environment:
+* To specify a search order for browser preview channels, use the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property.
+* To specify which browser preview channels are searched for, use the `CoreWebView2EnvironmentOptions.ReleaseChannels` property.
 
 See also:
 * [Test upcoming APIs and features](../how-to/set-preview-channel.md)
