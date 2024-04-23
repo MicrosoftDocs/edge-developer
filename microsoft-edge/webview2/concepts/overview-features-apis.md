@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 04/20/2024
+ms.date: 04/23/2024
 ---
 # Overview of WebView2 features and APIs
 
@@ -32,6 +32,68 @@ When hosting the WebView2 control, your app has access to the following features
 <!-- maintenance notes: add table rows for any new h2 sections -->
 
 This page only lists APIs that are in Release SDKs; it doesn't list Experimental APIs, or Stable APIs that are not yet available in Release SDKs.  For a comprehensive list of APIs including Experimental APIs, see [Release Notes for the WebView2 SDK](../release-notes/index.md).
+
+
+<!-- ====================================================================== -->
+## INCOMING
+
+<!-- ---------- -->
+* Added the Runtime selection feature to support more prerelease testing and flighting scenarios.  You can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
+   * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.releasechannels)
+
+* [CoreWebView2ChannelSearchKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2channelsearchkind)
+   * `MostStable`
+   * `LeastStable`
+
+* [CoreWebView2ReleaseChannels Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2releasechannels)
+   * `None`
+   * `Stable`
+   * `Beta`
+   * `Dev`
+   * `Canary`
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#channelsearchkind)
+   * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#releasechannels)
+
+* [CoreWebView2ChannelSearchKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2channelsearchkind)
+   * `MostStable`
+   * `LeastStable`
+
+* [CoreWebView2ReleaseChannels Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2releasechannels)
+   * `None`
+   * `Stable`
+   * `Beta`
+   * `Dev`
+   * `Canary`
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2EnvironmentOptions7](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7)
+   * [ICoreWebView2EnvironmentOptions7::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_channelsearchkind)
+   * [ICoreWebView2EnvironmentOptions7::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_channelsearchkind)
+   * [ICoreWebView2EnvironmentOptions7::get_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_releasechannels)
+   * [ICoreWebView2EnvironmentOptions7::put_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_releasechannels)
+
+* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_channel_search_kind)
+   * `COREWEBVIEW2_CHANNEL_SEARCH_KIND_MOST_STABLE`
+   * `COREWEBVIEW2_CHANNEL_SEARCH_KIND_LEAST_STABLE`
+
+* [COREWEBVIEW2_RELEASE_CHANNELS enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_release_channels)
+   * `COREWEBVIEW2_RELEASE_CHANNELS_NONE`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_STABLE`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_BETA`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_DEV`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_CANARY`
+
+---
 
 
 <!-- ====================================================================== -->
@@ -482,8 +544,6 @@ See also:
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.cookiemanager)
 
-<!-- link deleted for CookieList Class. Goes to 674 prerelease: https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2cookielist?view=webview2-dotnet-1.0.674-prerelease -->
-
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
@@ -492,11 +552,6 @@ See also:
 * [CoreWebView2CookieManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookiemanager)
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.CookieManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#cookiemanager)
-
-<!-- Link deleted for [CoreWebView2CookieList Class]()
-GetCookies returns Vector of CoreWebView2Cookie:
-https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookiemanager#getcookiesasync
--->
 
 ##### [Win32/C++](#tab/win32cpp)
 
