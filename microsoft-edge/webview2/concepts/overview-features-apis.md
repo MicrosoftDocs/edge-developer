@@ -2546,7 +2546,7 @@ Not applicable.
 
 **Subsections below:**
 * [User data](#user-data)
-* [Runtime selection, to select browser preview channels for testing](#runtime-selection-to-select-browser-preview-channels-for-testing)
+* [Runtime selection](#runtime-selection)
 
 
 <!-- ------------------------------ -->
