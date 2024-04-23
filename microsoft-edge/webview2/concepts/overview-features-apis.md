@@ -25,7 +25,7 @@ When hosting the WebView2 control, your app has access to the following features
 | [Authentication](#authentication) | Your app can handle basic authentication using the WebView2 control.  _Basic authentication_ is a specific authentication approach that's part of the HTTP protocol. |
 | [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Use these APIs to set up the WebView2 rendering system if your host app doesn't use a UI framework.  This rendering setup controls how WebView2 renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
 | [Rendering WebView2 using Composition](#rendering-webview2-using-composition) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  `CoreWebView2CompositionController` provides the same APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering. |
-| [User data](#user-data) | Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.  Manage multiple profiles under a single UDF. |
+| [Environment options](#environment-options) | **User data**: Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.  Manage multiple profiles under a single UDF.<br/> **Runtime selection** supports prerelease testing and self-hosting.  You can specify a search order for browser preview channels, and specify which browser preview channels are searched for. |
 | [Performance and debugging](#performance-and-debugging) | Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app. |
 | [Chrome DevTools Protocol (CDP)](#chrome-devtools-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol (CDP) is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
 
@@ -2723,7 +2723,7 @@ See also:
 <!-- ------------------------------ -->
 #### Runtime selection
 
-The Runtime selection feature supports prerelease testing and self-hosting.  When creating a WebView2 environment:
+Runtime selection supports prerelease testing and self-hosting.  When creating a WebView2 environment:
 * To specify a search order for browser preview channels, use the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property.
 * To specify which browser preview channels are searched for, use the `CoreWebView2EnvironmentOptions.ReleaseChannels` property.
 
