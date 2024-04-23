@@ -2540,8 +2540,17 @@ Not applicable.
 
 ---
 
+
 <!-- ====================================================================== -->
-## User data
+## Environment options
+
+**Subsections below:**
+* [User data](#user-data)
+* [Runtime selection, to select browser preview channels for testing](#runtime-selection-to-select-browser-preview-channels-for-testing)
+
+
+<!-- ------------------------------ -->
+#### User data
 
 Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
 
@@ -2607,8 +2616,8 @@ Clearing browsing data:
 ---
 
 
-<!-- ------------------------------ -->
-#### Multiple profiles
+<!-- ---------- -->
+###### Multiple profiles
 
 Manage multiple profiles under a single user data folder.
 
@@ -2678,8 +2687,8 @@ Access and manipulate the profile:
 ---
 
 
-<!-- ------------------------------ -->
-#### Delete a profile
+<!-- ---------- -->
+###### Delete a profile
 
 Your app can delete user profiles for a WebView2 web browser control.
 
@@ -2711,52 +2720,17 @@ See also:
 ---
 
 
-<!-- ====================================================================== -->
-## Performance and debugging
-
-Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app.
-
-**Subsections below:**
-* [Select browser preview channels for testing](#select-browser-preview-channels-for-testing)
-* [Memory usage target](#memory-usage-target)
-
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.TrySuspendAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
-   * [CoreWebView2.IsSuspended Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
-   * [CoreWebView2.Resume Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
-   * [CoreWebView2.OpenTaskManagerWindow Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.TrySuspendAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#trysuspendasync)
-   * [CoreWebView2.IsSuspended Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#issuspended)
-   * [CoreWebView2.Resume Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#resume)
-   * [CoreWebView2.OpenTaskManagerWindow Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#opentaskmanagerwindow)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `ICoreWebView2_3` interface:
-   * [ICoreWebView2_3::TrySuspend method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)
-   * [ICoreWebView2_3::get_IsSuspended method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!--no put-->
-   * [ICoreWebView2_3::Resume method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)
-
-* `ICoreWebView2_6` interface:
-   * [ICoreWebView2_6::OpenTaskManagerWindow method](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)
-
----
-
-
 <!-- ------------------------------ -->
-#### Select browser preview channels for testing
+#### Runtime selection
 
-The Runtime selection feature supports prerelease testing and flighting scenarios.  You can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
+The Runtime Selection feature supports prerelease testing and self-hosting.  You can specify `ChannelSearchKind` to select a search order, and specify `ReleaseChannels` to choose which browser preview channels are searched for during environment creation.
 
 See also:
 * [Test upcoming APIs and features](../how-to/set-preview-channel.md)
+<!-- todo: link, after PR https://github.com/MicrosoftDocs/edge-developer/pull/3053 is merged:
+* [Prerelease testing using preview channels](../how-to/prerelease-testing.md)
+* [Self-host by deploying preview channels](../how-to/self-hosting.md)
+-->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2810,6 +2784,45 @@ See also:
    * `COREWEBVIEW2_RELEASE_CHANNELS_BETA`
    * `COREWEBVIEW2_RELEASE_CHANNELS_DEV`
    * `COREWEBVIEW2_RELEASE_CHANNELS_CANARY`
+
+---
+
+
+<!-- ====================================================================== -->
+## Performance and debugging
+
+Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app.
+
+**Subsections below:**
+* [Select browser preview channels for testing](#select-browser-preview-channels-for-testing)
+* [Memory usage target](#memory-usage-target)
+
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.TrySuspendAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
+   * [CoreWebView2.IsSuspended Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
+   * [CoreWebView2.Resume Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
+   * [CoreWebView2.OpenTaskManagerWindow Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.TrySuspendAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#trysuspendasync)
+   * [CoreWebView2.IsSuspended Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#issuspended)
+   * [CoreWebView2.Resume Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#resume)
+   * [CoreWebView2.OpenTaskManagerWindow Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#opentaskmanagerwindow)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2_3` interface:
+   * [ICoreWebView2_3::TrySuspend method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)
+   * [ICoreWebView2_3::get_IsSuspended method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!--no put-->
+   * [ICoreWebView2_3::Resume method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)
+
+* `ICoreWebView2_6` interface:
+   * [ICoreWebView2_6::OpenTaskManagerWindow method](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)
 
 ---
 
