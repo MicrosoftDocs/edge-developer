@@ -6,27 +6,24 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/08/2023
+ms.date: 04/23/2024
 ---
 # WebView2 API Reference
 
 The Microsoft Edge WebView2 control enables you to host web content in your application using Chromium-based Microsoft Edge as the rendering engine.
 
-WebView2 is available for the following frameworks or platforms:
 
+<!-- ====================================================================== -->
+## Platforms
+
+WebView2 is available for the following frameworks or platforms:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [Core](/dotnet/api/microsoft.web.webview2.core)
 * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
 * [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)
-* [Unity/HoloLens 2](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)
-<!--
-dest. title:
-   API Reference for Mixed Reality WebView plugin
-dest. TOC title:
-   WebView2 Unity Plugin API
--->
+* [Unity/HoloLens 2](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin)<!-- title at top of webpage: "API Reference for Mixed Reality WebView plugin (Preview)".  title displayed in TOC: "WebView2 Unity Plugin API" -->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -45,8 +42,14 @@ dest. TOC title:
 ---
 
 
-<!-- ------------------------------ -->
-#### JavaScript
+<!-- ---------- -->
+###### Use all three tabs
+
+Tip: When reading articles about WebView2, to see all available documentation for a type or member, click the links in all three tabs in the article: **.NET/C#**, **WinRT/C#**, and **Win32/C++**.
+
+
+<!-- ====================================================================== -->
+## JavaScript
 
 On the web side of a WebView2 app, WebView2 exposes JavaScript APIs to the HTML documents that are running within the WebView2 control.  These JavaScript APIs are mostly to support communication with the host application.
 
