@@ -6,11 +6,15 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/25/2024
+ms.date: 04/23/2024
 ---
 # Overview of WebView2 features and APIs
 
 Embedding the WebView2 control in your app gives your app access to various methods and properties that are provided through the WebView2 classes or interfaces.  WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities, to enabling your app to modify browser experiences.  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
+
+
+<!-- ====================================================================== -->
+## Overview of top-level feature areas
 
 When hosting the WebView2 control, your app has access to the following features and APIs:
 
@@ -25,7 +29,7 @@ When hosting the WebView2 control, your app has access to the following features
 | [Authentication](#authentication) | Your app can handle basic authentication using the WebView2 control.  _Basic authentication_ is a specific authentication approach that's part of the HTTP protocol. |
 | [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Use these APIs to set up the WebView2 rendering system if your host app doesn't use a UI framework.  This rendering setup controls how WebView2 renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
 | [Rendering WebView2 using Composition](#rendering-webview2-using-composition) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  `CoreWebView2CompositionController` provides the same APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering. |
-| [User data](#user-data) | Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.  Manage multiple profiles under a single UDF. |
+| [Environment options](#environment-options) | **User data**: Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.  Manage multiple profiles under a single UDF.<br/> **Runtime selection** supports prerelease testing and self-hosting.  You can specify a search order for browser preview channels, and specify which browser preview channels are searched for. |
 | [Performance and debugging](#performance-and-debugging) | Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app. |
 | [Chrome DevTools Protocol (CDP)](#chrome-devtools-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol (CDP) is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
 
@@ -482,8 +486,6 @@ See also:
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.cookiemanager)
 
-<!-- link deleted for CookieList Class. Goes to 674 prerelease: https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2cookielist?view=webview2-dotnet-1.0.674-prerelease -->
-
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
@@ -492,11 +494,6 @@ See also:
 * [CoreWebView2CookieManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookiemanager)
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.CookieManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#cookiemanager)
-
-<!-- Link deleted for [CoreWebView2CookieList Class]()
-GetCookies returns Vector of CoreWebView2Cookie:
-https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookiemanager#getcookiesasync
--->
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -2547,8 +2544,17 @@ Not applicable.
 
 ---
 
+
 <!-- ====================================================================== -->
-## User data
+## Environment options
+
+**Subsections below:**
+* [User data](#user-data)
+* [Runtime selection](#runtime-selection)
+
+
+<!-- ------------------------------ -->
+#### User data
 
 Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
 
@@ -2597,7 +2603,7 @@ Clearing browsing data:
 * `ICoreWebView2Environment7` interface:
    * [ICoreWebView2Environment7::get_UserDataFolder method](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!--no put-->
 * `ICoreWebView2Environment10` interface:
-   * [ICoreWebView2Environment10::CreateCoreWebView2CompositionControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)<!-- c#: might ~=CreateCoreWebView2CompositionControllerAsync -->
+   * [ICoreWebView2Environment10::CreateCoreWebView2CompositionControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)<!-- similar to CreateCoreWebView2CompositionControllerAsync in C# -->
    * [ICoreWebView2Environment10::CreateCoreWebView2ControllerOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controlleroptions)
    * [ICoreWebView2Environment10::CreateCoreWebView2ControllerWithOptions method](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controllerwithoptions)
 * `ICoreWebView2EnvironmentOptions2` interface:
@@ -2614,8 +2620,8 @@ Clearing browsing data:
 ---
 
 
-<!-- ------------------------------ -->
-#### Multiple profiles
+<!-- ---------- -->
+###### Multiple profiles
 
 Manage multiple profiles under a single user data folder.
 
@@ -2685,8 +2691,8 @@ Access and manipulate the profile:
 ---
 
 
-<!-- ------------------------------ -->
-#### Delete a profile
+<!-- ---------- -->
+###### Delete a profile
 
 Your app can delete user profiles for a WebView2 web browser control.
 
@@ -2714,6 +2720,76 @@ See also:
    * [ICoreWebView2Profile8::remove_Deleted](/microsoft-edge/webview2/reference/win32/icorewebview2profile8#remove_deleted)
 
 * [ICoreWebView2ProfileDeletedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2profiledeletedeventhandler)<!-- handler is Win32-only -->
+
+---
+
+
+<!-- ------------------------------ -->
+#### Runtime selection
+
+Runtime selection supports prerelease testing and self-hosting.  When creating a WebView2 environment:
+* To specify a search order for browser preview channels, use the `CoreWebView2EnvironmentOptions.ChannelSearchKind` property.
+* To specify which browser preview channels are searched for, use the `CoreWebView2EnvironmentOptions.ReleaseChannels` property.
+
+See also:
+* [Test upcoming APIs and features](../how-to/set-preview-channel.md)
+<!-- todo: link, after PR https://github.com/MicrosoftDocs/edge-developer/pull/3053 is merged:
+* [Prerelease testing using preview channels](../how-to/prerelease-testing.md)
+* [Self-host by deploying preview channels](../how-to/self-hosting.md)
+-->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.channelsearchkind)
+   * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.releasechannels)
+
+* [CoreWebView2ChannelSearchKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2channelsearchkind)
+   * `MostStable`
+   * `LeastStable`
+
+* [CoreWebView2ReleaseChannels Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2releasechannels)
+   * `None`
+   * `Stable`
+   * `Beta`
+   * `Dev`
+   * `Canary`
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.ChannelSearchKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#channelsearchkind)
+   * [CoreWebView2EnvironmentOptions.ReleaseChannels Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#releasechannels)
+
+* [CoreWebView2ChannelSearchKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2channelsearchkind)
+   * `MostStable`
+   * `LeastStable`
+
+* [CoreWebView2ReleaseChannels Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2releasechannels)
+   * `None`
+   * `Stable`
+   * `Beta`
+   * `Dev`
+   * `Canary`
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2EnvironmentOptions7](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7)
+   * [ICoreWebView2EnvironmentOptions7::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_channelsearchkind)
+   * [ICoreWebView2EnvironmentOptions7::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_channelsearchkind)
+   * [ICoreWebView2EnvironmentOptions7::get_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#get_releasechannels)
+   * [ICoreWebView2EnvironmentOptions7::put_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions7#put_releasechannels)
+
+* [COREWEBVIEW2_CHANNEL_SEARCH_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_channel_search_kind)
+   * `COREWEBVIEW2_CHANNEL_SEARCH_KIND_MOST_STABLE`
+   * `COREWEBVIEW2_CHANNEL_SEARCH_KIND_LEAST_STABLE`
+
+* [COREWEBVIEW2_RELEASE_CHANNELS enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_release_channels)
+   * `COREWEBVIEW2_RELEASE_CHANNELS_NONE`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_STABLE`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_BETA`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_DEV`
+   * `COREWEBVIEW2_RELEASE_CHANNELS_CANARY`
 
 ---
 
@@ -2749,6 +2825,7 @@ Analyze and debug performance, handle performance-related events, and manage mem
    * [ICoreWebView2_3::TrySuspend method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)
    * [ICoreWebView2_3::get_IsSuspended method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!--no put-->
    * [ICoreWebView2_3::Resume method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)
+
 * `ICoreWebView2_6` interface:
    * [ICoreWebView2_6::OpenTaskManagerWindow method](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)
 
