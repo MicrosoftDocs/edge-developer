@@ -56,7 +56,7 @@ We recommend that you test upcoming changes using preview channels to ensure you
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
 
-Preview channels of Microsoft Edge, which include preview WebView2 runtime, are also called _insider channels_.  After being installed, the preview channels will stay up-to-date and automatically install the latest versions available for that channel.  For example, this means the Canary channel will update itself almost daily.  To download a Microsoft Edge preview channel, see [Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider).
+Preview channels of Microsoft Edge include the preview WebView2 Runtime.  Preview channels are also called _Insider channels_.  After being installed, the preview channels stay up-to-date; the latest version of each preview channel is automatically installed.  For example, this means the Canary channel will update itself almost daily.  To download a Microsoft Edge preview channel (Canary, Dev, or Beta), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 To deploy the preview channel to multiple machines, see [How to deploy preview channels](#how-to-deploy-preview-channels), below.
 
@@ -166,7 +166,7 @@ Do either of the following:
 <!-- ====================================================================== -->
 ## How to use `ChannelSearchKind` to ensure that a particular channel is used
 
-When using `ChannelSearchKind`, here's how you can make sure that a certain preview browser channel is used, when you have multiple preview browser channels installed.
+When using `ChannelSearchKind`, here's how you can make sure that a certain preview browser channel is used when you have multiple preview browser channels installed.
 
 In addition to reversing the channel search order, you can modify the set of release channels to include in the search, to provide further control over channel selection.  The loader will search for channels on the device in the order specified by the channel search kind, but it will only consider channels that are in the specified set of release channels.
 
@@ -391,7 +391,7 @@ These options are explained below.
 <!-- ------------------------------ -->
 #### Option 1: Manually install preview channels on machines
 
-Insider channels can be manually installed (either manually or through a deployed custom script) through the following enterprise links:
+Preview channels can be manually installed (either manually or through a deployed custom script) through the following enterprise links:
 
 | Channel | Link |
 | --- | --- |
