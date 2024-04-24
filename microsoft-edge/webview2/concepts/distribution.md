@@ -267,7 +267,6 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
 <!-- ------------------------------ -->
 #### Test your app for forward-compatibility
-<!-- todo: check this section for any needed changes -->
 
 The Web is constantly evolving.  In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
 
