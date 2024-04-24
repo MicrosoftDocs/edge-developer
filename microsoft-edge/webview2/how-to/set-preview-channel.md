@@ -21,7 +21,7 @@ We recommend that you test the Experimental APIs ahead of time, before they are 
 
 See also:
 * [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
-* [Understand the different WebView2 SDK versions](../concepts/versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Runtime.
+* [Understand the different WebView2 SDK versions](../concepts/versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Evergreen WebView2 Runtime.
 
 
 <!-- ------------------------------ -->

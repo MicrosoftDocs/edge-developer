@@ -75,7 +75,7 @@ See also:
 <!-- ====================================================================== -->
 ## Use a release version of the SDK along with the Runtime
 
-When you use a WebView2 Release SDK package, use the WebView2 Evergreen _Runtime_ on your development client, rather than a Microsoft Edge preview channel.  By default, a WebView2 app targets the Runtime rather than Microsoft Edge.  By design, the Microsoft Edge Stable channel doesn't support WebView2.
+When you use a WebView2 Release SDK package, use the Evergreen WebView2 _Runtime_ on your development client, rather than a Microsoft Edge preview channel.  By default, a WebView2 app targets the Runtime rather than Microsoft Edge.  By design, the Microsoft Edge Stable channel doesn't support WebView2.
 
 The Release SDK package contains all of the Stable Win32 C/C++ and .NET APIs that are in production release, and doesn't include method signatures for Experimental APIs.  All of the APIs that are in a Release SDK package are fully supported, in an equal or higher build number of the WebView2 Runtime.
 
