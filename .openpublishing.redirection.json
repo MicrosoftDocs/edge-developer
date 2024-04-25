@@ -191,6 +191,11 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/webview2/release-notes/index",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/webview2/release-notes/template-prerelease.md",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
+        "redirect_document_id": false
+      },
 
       /* WebView2 Concepts: */
       {
