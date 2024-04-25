@@ -26,9 +26,11 @@ This article covers general-purpose setup of your development environment for We
 <!-- ====================================================================== -->
 ## Install a preview channel of Microsoft Edge
 
-1. Install any [Microsoft Edge Insider (preview) Channel](https://www.microsoft.com/edge/download/insider) (Beta, Dev, or Canary) on a supported operating system (OS):
+Install any Microsoft Edge preview channel (Beta, Dev, or Canary) on a supported operating system:
    *  Windows 10
    *  Windows 11
+
+To do this, go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).  The preview channels are also called _Insider channels_.
 
 We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
 

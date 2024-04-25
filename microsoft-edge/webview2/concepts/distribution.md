@@ -42,6 +42,7 @@ Cons:
 
 
 <!-- ------------------------------ -->
+#### Windows 11 devices and Windows 10 devices
 <!-- #### Which devices already have WebView2 Runtime installed and how to distribute for edge cases -->
 
 The Evergreen Runtime is preinstalled onto all Windows 11 devices as a part of the Windows 11 operating system.  Microsoft installed the WebView2 Runtime to all eligible Windows 10 devices, as described in [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).  Even if your app uses the Evergreen distribution mode, we recommend that you distribute the WebView2 Runtime, to cover edge cases where the Runtime wasn't already installed.  See [Details about the Evergreen Runtime distribution mode](#details-about-the-evergreen-runtime-distribution-mode) below.
@@ -73,7 +74,7 @@ The [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-ed
 
 The Evergreen distribution mode is recommended for most apps.
 
-*  The **Evergreen Bootstrapper** section of the page provides a small Evergreen Runtime bootstrapper that runs on the client machine, for online users.  The bootstrapper downloads and installs the appropriate WebView2 Evergreen Runtime onto the client.  You can use the bootstrapper a couple different ways:
+*  The **Evergreen Bootstrapper** section of the page provides a small Evergreen Runtime bootstrapper that runs on the client machine, for online users.  The bootstrapper downloads and installs the appropriate Evergreen WebView2 Runtime onto the client.  You can use the bootstrapper a couple different ways:
 
    *  Link to the bootstrapper, using a link that you obtain from the **Get the Link** button.  Your app uses this link to programmatically download the bootstrapper onto the client and invoke the bootstrapper.  This approach avoids the need to package the bootstrapper with your app.  This approach has a dependency on Microsoft's Content Delivery Network (CDN), to get the bootstrapper.
 
@@ -91,10 +92,14 @@ When distributing your WebView2 app, make sure that the WebView2 Runtime is pres
 
 If you want to use the Fixed Version distribution mode, you can skip the next couple of sections and jump ahead to [Details about the Fixed Version runtime distribution mode](#details-about-the-fixed-version-runtime-distribution-mode).
 
+
+<!-- ------------------------------ -->
 #### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)
 
 See [Windows Server Update Services (WSUS)](enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
 
+
+<!-- ------------------------------ -->
 #### Runtime or browser support during development or production
 
 During development and testing, a WebView2 app can use either option as the backing web platform:
@@ -105,6 +110,8 @@ During development and testing, a WebView2 app can use either option as the back
 
 A production release of a WebView2 app can only use the WebView2 Runtime as the backing web platform, not Microsoft Edge.
 
+
+<!-- ---------- -->
 ###### Microsoft Edge Stable channel isn't supported for WebView2
 
 WebView2 apps aren't permitted to use the Stable channel of Microsoft Edge as the backing web platform.  This restriction prevents a production release of a WebView2 app from taking a dependency on the browser.  A WebView2 app cannot take a dependency on the browser during production, for the following reasons:
@@ -135,6 +142,7 @@ When you use the Evergreen distribution mode of the WebView2 Runtime, your WebVi
 
 
 <!-- ------------------------------ -->
+#### Windows 11 devices and Windows 10 devices (details)
 <!-- #### Evergreen WebView2 Runtime is preinstalled on Win11 devices and most Win10 devices -->
 
 The vast majority of Windows 10 devices have the WebView2 Runtime installed already, as described in [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).  A small number of Windows 10 devices don't have the WebView2 Runtime installed.  We recommend that you handle this edge case, by using either of the following approaches:
@@ -144,10 +152,11 @@ The vast majority of Windows 10 devices have the WebView2 Runtime installed alre
 *  Redirect your end users to the Microsoft site: [Download Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/consumer/), and have end users download the Evergreen WebView2 Runtime installer from the site and install the Runtime themselves.
 
 See also:
-* [Understand the different WebView2 SDK versions](versioning.md).
+* [Understand the different WebView2 SDK versions](versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Evergreen WebView2 Runtime.
 * [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).
 
 
+<!-- ------------------------------ -->
 #### Deploying the Evergreen WebView2 Runtime
 
 Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device.  Several tools are available at [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) to help you deploy the Evergreen Runtime.
@@ -163,6 +172,7 @@ Only one installation of the Evergreen WebView2 Runtime is needed for all Evergr
 *  If you're using App Installer to deploy MSIX applications, you can specify the WebView2 Runtime as a dependency, to have it be installed with the application.<!-- (instead of using the Evergreen Bootstrapper, Evergreen Standalone Installer, or Fixed Version (Self-Contained) distribution).-->  For details about how to do this, see [win32dependencies:ExternalDependency (Windows 10, Windows 11)](/uwp/schemas/appxpackage/uapmanifestschema/element-win32dependencies-externaldependency) in the App package manifest docs.  See also [Install Windows 10 apps with App Installer](/windows/msix/app-installer/app-installer-root).
 
 
+<!-- ------------------------------ -->
 #### Installing the Runtime as per-machine or per-user
 
 The latest bootstrapper and standalone installer support both _per-machine_ and _per-user_ installs of the WebView2 Runtime.
@@ -172,6 +182,8 @@ If you run the installer from an elevated process or command prompt, the Runtime
 
 Use the following online deployment workflow or offline deployment workflow to ensure that the Runtime is already installed before your app launches.  You can adjust your workflow depending on your scenario.  Sample code is available in the [Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment).
 
+
+<!-- ---------- -->
 ###### Detect if a suitable WebView2 Runtime is already installed
 
 To verify that a WebView2 Runtime is installed, use one of the following approaches:
@@ -198,6 +210,8 @@ To verify that a WebView2 Runtime is installed, use one of the following approac
 
    *  Approach 2: Run [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and evaluate whether the `versionInfo` is `nullptr`.  `nullptr` indicates that the WebView2 Runtime isn't installed.  This API returns version information for the WebView2 Runtime or for any installed preview channels of Microsoft Edge (Beta, Dev, or Canary).
 
+
+<!-- ---------- -->
 ###### Online-only deployment
 
 If you have an online-only deployment scenario where users are assumed to have internet access, use the following workflow.
@@ -228,11 +242,13 @@ The above workflow has several benefits:
 
 Alternatively, instead of programmatically downloading the bootstrapper on-demand by getting a link, as shown above, you can package the Evergreen Bootstrapper for the WebView2 Runtime with your app.
 
+
+<!-- ---------- -->
 ###### Offline deployment
 
 If you have an offline deployment scenario, where app deployment has to work entirely offline, use the following workflow.
 
-1. Download the Evergreen Standalone Installer from [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) to your development machine.  The Evergreen Standalone Installer installs the WebView2 Evergreen Runtime on the client.
+1. Download the Evergreen Standalone Installer from [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) to your development machine.  The Evergreen Standalone Installer installs the Evergreen WebView2 Runtime on the client.
 
 1. Include the Evergreen Standalone Installer in your app installer or updater.
 
@@ -249,17 +265,15 @@ If you have an offline deployment scenario, where app deployment has to work ent
    ```
 
 
+<!-- ------------------------------ -->
 #### Test your app for forward-compatibility
 
 The Web is constantly evolving.  In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
 
-Microsoft Edge preview channels (Beta, Dev, and Canary) provide a sneak peek into what is coming next in the WebView2 Runtime.  Test your WebView2 app regularly against a  Microsoft Edge preview channel, and update your app or [report issues](https://github.com/MicrosoftEdge/WebViewFeedback) if issues arise.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
-
-To help you decide which channel is right, see [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels).  You can [Download Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider) on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.
-
-See [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).  You can also use WebDriver to automate WebView2 testing, as described in [Automate, and test WebView2 with Microsoft Edge WebDriver](../how-to/webdriver.md).
+For best practices on how to test your app for forward-compatibility, see [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
 
 
+<!-- ------------------------------ -->
 #### Feature-detect when using recent APIs
 
 <!-- the main section about QueryInterface is in versioning.md, so limit this section to a couple paragraphs -->
@@ -350,6 +364,7 @@ To use the Fixed Version distribution mode:
       ![Permission for PlayReady](./distribution-images/play-ready-permission.png)
 
 
+<!-- ------------------------------ -->
 #### Known issues for Fixed Version
 
 *  Currently, Fixed Version cannot be run from a network location or UNC path.
