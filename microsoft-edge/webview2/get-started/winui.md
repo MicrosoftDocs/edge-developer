@@ -47,17 +47,11 @@ For this sample, you don't need to separately install the WebView2 SDK.  Below, 
 <!-- ====================================================================== -->
 ## Step 2 - Install a preview channel of Microsoft Edge
 
-1.  Install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2) or any [Microsoft Edge preview channel](https://www.microsoft.com/edge/download/insider) (Beta, Dev, or Canary) installed on Windows 10 version 1803 (build 17134) or later.
+1.  Install the WebView2 Runtime on devices that have Windows 10 version 1803 (build 17134) or later, by installing from either location:
+   * To directly download just the Runtime, use the **Download the WebView2 Runtime** section of the [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) page at `developer.microsoft.com`.
+   * To download and install a Microsoft Edge preview channel (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).  The preview channels are also called _Insider channels_.  The preview channels include the WebView2 Runtime.
 
-Return from that page and continue the steps below.
-
-<!--
-Or, install the WebView2 Runtime, as follows:
-
-1. In a new window or tab, see [Install the WebView2 Runtime](../how-to/machine-setup.md#install-the-webview2-runtime) in _Set up your Dev environment for WebView2_.
-
-Return here and continue with the steps below.
--->
+Then continue with the steps below.
 
 
 <!-- ====================================================================== -->

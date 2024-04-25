@@ -11,7 +11,7 @@ ms.date: 10/31/2023
 ---
 # Introduction to Microsoft Edge WebView2
 
-The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses [Microsoft Edge](https://www.microsoft.com/edge/download/insider) as the rendering engine to display the web content in native apps.
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses Microsoft Edge as the rendering engine to display the web content in native apps.
 
 With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
 
@@ -70,7 +70,7 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 The following programming environments are supported:
 
 *  Win32 C/C++
-*  .NET Framework 4.5 or later
+*  .NET Framework 4.6.2 or later
 *  .NET Core 3.1 or later
 *  .NET 5 or later
 *  [WinUI 2.0](/windows/apps/winui/winui2/)
@@ -117,3 +117,6 @@ See also:
 
 developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
+
+Microsoft.com:
+* [Become a Microsoft Edge Insider](https://www.microsoft.com/en-us/edge/download/insider) - download the preview channels of Microsoft Edge (Canary, Dev, and Beta).
