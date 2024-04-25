@@ -23,9 +23,11 @@ If you use the Evergreen runtime, before running your WebView2 app, test whether
 <!-- ====================================================================== -->
 ## Run compatibility tests regularly when using the Evergreen Runtime
 
-When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests.  To ensure that your WebView2 app will continue to work as expected, test your web content in the WebView2 control against [Microsoft Edge Insider (preview) Channels](https://www.microsoft.com/edge/download/insider) (Beta, Dev, or Canary).
+When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests.  To ensure that your WebView2 app will continue to work as expected, test your web content in the WebView2 control against the Microsoft Edge preview channels (Beta, Dev, or Canary).  The  preview channels are also called _Insider channels_.
 
-This guidance is similar to the guidance that we give to web developers.  See [Test your app for forward-compatibility](../concepts/distribution.md#test-your-app-for-forward-compatibility).
+The above guidance is similar to the guidance for web developers.  To test your app for forward-compatibility, see [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
+
+To download the preview channels of Microsoft Edge, go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 
 <!-- ====================================================================== -->
