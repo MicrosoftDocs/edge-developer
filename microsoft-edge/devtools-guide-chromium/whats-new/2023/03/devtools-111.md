@@ -120,7 +120,7 @@ To export the **Selector Stats** table:
 ![Selecting the entire Selector Stats table for copy-paste](./devtools-111-images/export-selector-stats-table.png)
 
 See also:
-* [Analyze selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->

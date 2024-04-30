@@ -600,7 +600,7 @@
                   href: devtools-guide-chromium/evaluate-performance/unminify.md
                   displayName: Performance tool
 
-                - name: Analyze selector performance during Recalculate Style events
+                - name: Analyze CSS selector performance during Recalculate Style events
                   href: devtools-guide-chromium/evaluate-performance/selector-stats.md
                   displayName: Performance tool
 # Performance monitor tool ----------------------------------------------------

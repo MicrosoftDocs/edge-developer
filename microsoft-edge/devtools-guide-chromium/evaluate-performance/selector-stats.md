@@ -1,16 +1,16 @@
 ---
-title: Analyze selector performance during Recalculate Style events
+title: Analyze CSS selector performance during Recalculate Style events
 description: Use the Selector Stats feature in the Performance tool to understand which of your CSS selectors are taking up the most time during Recalculate Style events.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 06/20/2023
+ms.date: 04/30/2023
 ---
-# Analyze selector performance during Recalculate Style events
+# Analyze CSS selector performance during Recalculate Style events
 
-The **Performance** tool highlights long tasks with red triangles to indicate work on the main thread that takes too long and has slow performance:
+The **Performance** tool highlights long-running tasks with red triangles to indicate work on the main thread that takes too long and has slow performance:
 
 ![Long Task indicators for events on the main thread with slow performance](./selector-stats-images/long-running-task.png)
 
@@ -24,15 +24,21 @@ When you have long-running **Recalculate Style** events, you can use the **Selec
 
 The **Selector Stats** feature provides statistics about the CSS rule selectors that were involved in one or more **Recalculate Style** events within a performance recording.
 
-## View CSS rule selector statistics
 
-#### Record a performance trace with Selector Stats enabled
+<!-- ====================================================================== -->
+## Record a performance trace with Selector Stats enabled
 
 To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events, first record a performance trace with the Selector Stats feature enabled.
 
 The Selector Stats feature isn't always enabled, because it adds more overhead to your performance recordings. You should only leave it turned on when you need to investigate the performance of **Recalculate Style** events and other rendering information.
 
 To record a performance trace with selector statistics:
+
+1. Open a webpage in a new window or tab, such as the [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) demo page.
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+
+1. In DevTools, on the **Activity Bar**, select the **Performance** (![Performance tool icon](./selector-stats-images/performance-tool-icon.png)) tab.  If that tab isn't visible, select **More tools** (![More tools icon](./selector-stats-images/more-tools-icon.png)) > **Performance**.
 
 1. In the **Performance** tool, click **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)).
 
@@ -44,9 +50,15 @@ To record a performance trace with selector statistics:
 
 1. Click **Stop**.
 
-#### View statistics for a single event
+Next, view CSS selector statistics, as described in the sections below.
+
+
+<!-- ====================================================================== -->
+## View CSS rule selector statistics for a single event
 
 To view the statistics of the CSS rule selectors that are involved in a single **Recalculate Style** event:
+
+1. Do the steps in [Record a performance trace with Selector Stats enabled](#record-a-performance-trace-with-selector-stats-enabled), above.
 
 1. Find a **Recalculate Style** event in your performance recording and click it.
 
@@ -60,9 +72,13 @@ The **Selector Stats** section of the **Performance** tool shows a table of CSS 
 * The number of elements the browser engine attempted to match with this selector, and the number of elements it actually matched.
 * The stylesheet that contains the selector.
 
-#### View statistics for multiple events
+
+<!-- ====================================================================== -->
+## View CSS rule selector statistics for multiple events
 
 To view aggregate statistics of the CSS rule selectors that are involved in multiple **Recalculate Style** events, copy multiple **Selector Stats** tables into a spreadsheet:
+
+1. Do the steps in [Record a performance trace with Selector Stats enabled](#record-a-performance-trace-with-selector-stats-enabled), above.
 
 1. Find the first **Recalculate Style** event you're interested in, and then click it.
 
@@ -76,9 +92,13 @@ To view aggregate statistics of the CSS rule selectors that are involved in mult
 
 1. Repeat the previous steps with the other **Recalculate Style** events you're interested in.
 
-#### View aggregate statistics for the full recording
+
+<!-- ====================================================================== -->
+## View aggregate CSS rule selector statistics for the full recording
 
 To view aggregate statistics of the CSS rule selectors that are involved in the entire performance recording:
+
+1. Do the steps in [Record a performance trace with Selector Stats enabled](#record-a-performance-trace-with-selector-stats-enabled), above.
 
 1. Deselect any event that's selected in the performance recording, by clicking an empty area of the flame chart.
 

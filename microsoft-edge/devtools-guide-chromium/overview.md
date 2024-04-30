@@ -334,7 +334,7 @@ Present if Experiments > "Emulate Microsoft-recommended hardware and network per
 
 * Icons:
    *  **Move Activity Bar to left** (![Move Activity Bar to left icon](./overview-images/move-activity-bar-to-left-icon.png)) button.
-   *  **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
+   *  **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button.
    *  **Customize and control DevTools** (![Customize icon](./overview-images/customize-devtools-icon-light-theme.png)) menu button.
    *  **Help** (![Help icon](./overview-images/help-icon.png)) button.
    *  **Close** DevTools (![Close DevTools icon](./overview-images/close-devtools-icon-light-theme.png)) button.
@@ -349,9 +349,9 @@ The **Activity Bar** features are described below.
 
 Besides the permanent **Elements**, **Console**, and **Sources** tools, you can control which tools appear in the **Activity Bar**, to customize DevTools to focus on your current activities.
 
-1. Click **More tools** (**+**) to list all the available tools:
+1. Click the **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button to list all the available tools:
 
-   ![The More tools menu in the Activity Bar, with the expanded list of all tools](./overview-images/more-tools.png)
+   ![The More tools menu in the Activity Bar, with the expanded list of all tools](./overview-images/more-tools.png)<!-- todo: update png -->
 
 1. Select a tool to pin it to the **Activity Bar**.  The tool is then present in the **Activity Bar** whenever DevTools is opened.
 
@@ -446,7 +446,7 @@ See [View, edit, and delete cookies](storage/cookies.md).
 <!-- ------------------------------ -->
 #### More Tools button
 
-To add a tool to the **Activity Bar**, click the **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
+To add a tool to the **Activity Bar**, click the **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button.
 
 
 <!-- ------------------------------ -->
@@ -487,7 +487,7 @@ Use the **Quick View** panel to open a second tool below or to the right of the 
 
 1. Select a tool from the **Activity Bar**.
 
-1. In the **Quick View** toolbar, click **More tools** (**+**), and then select a different tool from the list.
+1. In the **Quick View** toolbar, click **More tools** (![More tools icon](./overview-images/more-tools-icon.png)), and then select a different tool from the list.
 
 For example, open the **Rendering** tool in the **Quick View** panel, below the **Network** tool that's open in the **Activity Bar**:
 
@@ -505,7 +505,7 @@ For a summary of each tool, see [Overview of all tools](about-tools.md#overview-
 <!-- ====================================================================== -->
 ## Tool, tab, or panel
 
-The words "tool", "tab", and "panel" are somewhat interchangeable.  In the Command Menu, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you click the **Elements** tab.  There's a **More tools** (**+**) button and list used to select tools, which are also called _panels_.
+The words "tool", "tab", and "panel" are somewhat interchangeable.  In the Command Menu, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you click the **Elements** tab.  There's a **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button and list used to select tools.  DevTools tools are also called DevTools _panels_.
 
 You can customize each of the tools, and the content of a tool can change based on the context.
 
@@ -513,12 +513,12 @@ You can customize each of the tools, and the content of a tool can change based 
 <!-- ====================================================================== -->
 ## About Activity Bar and Quick View tools
 
-The **More tools** (**+**) button is displayed both in the **Activity Bar** and in the **Quick View** toolbar. When you open a tool from the **More tools** list that's located in the **Activity Bar**, the tool appears in the **Activity Bar**. When you open a tool from the **More tools** list in the **Quick View** toolbar, the tool is opened in the **Quick View** panel.
+The **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button is displayed both in the **Activity Bar** and in the **Quick View** toolbar. When you open a tool from the **More tools** list that's located in the **Activity Bar**, the tool appears in the **Activity Bar**. When you open a tool from the **More tools** list in the **Quick View** toolbar, the tool is opened in the **Quick View** panel.
 
 | Task | Steps |
 | --- | --- |
-| Open a tool in the **Activity Bar** at the top of DevTools | In the **Activity Bar** at the top of DevTools, click **More tools** (**+**) and then select a tool. |
-| Open a tool on the **Quick View** toolbar | When DevTools has focus, press **Esc** to show the **Quick View** toolbar if it's not shown yet.  In the **Quick View** toolbar, click the **More tools** (**+**) button, and then select a tool. |
+| Open a tool in the **Activity Bar** at the top of DevTools | In the **Activity Bar** at the top of DevTools, click **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) and then select a tool. |
+| Open a tool on the **Quick View** toolbar | When DevTools has focus, press **Esc** to show the **Quick View** toolbar if it's not shown yet.  In the **Quick View** toolbar, click the **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button, and then select a tool. |
 | Move a tool from the **Quick View** toolbar to the **Activity Bar** | When DevTools has focus, press **Esc** to show the **Quick View**.  In the **Quick View** toolbar, right-click the tool's tab, and then select **Move to top Activity Bar** or **Move to left Activity Bar**. |
 | Move a tool from the **Activity Bar** to the **Quick View** toolbar | In the **Activity Bar**, right-click the tool's tab, and then select **Move to bottom Quick View** or **Move to side Quick View**. |
 | Open a tool in its default toolbar (**Activity Bar** or **Quick View**) | When DevTools has focus, open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type the name of the tool, and then select a **Show \<tool\>** command. |
@@ -560,7 +560,7 @@ In the Command Menu, the tools are called "panels"; for example, the **Elements*
 
    ![DevTools with the Changes tool open in the Quick View panel](./overview-images/showing-changes.png)
 
-   The **Changes** tool is useful when you edit CSS.  In this example, the Command Menu provides a fast alternative to selecting **More tools** (**+**) and then selecting **Changes**.  This example also provides an alternative to editing a `.js` file in the **Sources** tool, and then right-clicking and selecting **Local modifications**.
+   The **Changes** tool is useful when you edit CSS.  In this example, the Command Menu provides a fast alternative to selecting **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) and then selecting **Changes**.  This example also provides an alternative to editing a `.js` file in the **Sources** tool, and then right-clicking and selecting **Local modifications**.
 
 See also [Run commands with the Microsoft Edge DevTools Command menu](command-menu/index.md).
 
@@ -626,9 +626,10 @@ See also:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the **Activity Bar**, select the **__** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
+1. In DevTools, on the **Activity Bar**, select the **Foo** (![Foo tool icon](./filename-images/performance-tool-icon.png)) tab.  If that tab isn't visible, select **More tools** (![More tools icon](./foo-images/more-tools-icon.png)) > **Foo**.
 
-1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tools** (![More tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
+
+1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button.
 
 
 #### Clipboard entry for opening a specific Settings page:
@@ -649,7 +650,7 @@ icon tagging to maintain here & propagate:
 to paste these into articles, always need to add ../ prefix:
 click the **Inspect tool** (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) button.
 click the **Device Emulation** (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button.
-click the **More tools** (![More Tools icon](./overview-images/more-tools-icon-light-theme.png)) button.
+click the **More tools** (![More Tools icon](./overview-images/more-tools-icon.png)) button.
 click the **JavaScript errors counter** (![JavaScript errors counter icon](./overview-images/javascript-counter-icon-light-theme.png)) button.
 click the **Issues counter** (![Issues counter icon](./overview-images/issues-counter-icon-light-theme.png)) button.
 click the **Settings** (![Settings icon](./overview-images/settings-gear-icon-light-theme.png)) button.
