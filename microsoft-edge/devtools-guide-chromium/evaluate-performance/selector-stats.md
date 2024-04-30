@@ -16,13 +16,13 @@ The **Performance** tool highlights each long-running task with a red triangle i
 
 In your performance recordings, some of these long-running tasks may be **Recalculate Style** events.  A **Recalculate Style** event tracks the time it takes for the browser to do the following:
 * Iterate through the DOM elements on a page, to find all of the CSS style rules that match a given element.
-* Compute the element's actual style based on these rules.  
+* Compute each element's actual style, based on the matching CSS style rules.
 
-These styles<!-- todo: specify which styles: all styles?  or only certain kinds of styles? --> need to be recalculated whenever the applicability of CSS rules may have changed, such as:
+CSS styles need to be recalculated whenever the applicability of CSS rules may have changed, such as:
 
 * When elements are added to or removed from the DOM.
-* When an element's attributes are changed, such as `class` or `id`.
-* When user input occurs, such as a mouse move or focus change, which can affect `:hover` rules.
+* When an element's attributes are changed, such as the value of a `class` or `id` attribute.
+* When user input occurs, such as a mouse move or a change of which element in a webpage has focus, which can affect `:hover` rules.
 
 When you have long-running **Recalculate Style** events, you can use the **Selector Stats** tab to understand which of your CSS selectors are taking up the most time and resulting in slow performance.
 
@@ -48,7 +48,7 @@ To record a performance trace with selector statistics:
 
 1. Select the **Enable advanced rendering instrumentation (slow)** checkbox:
 
-   ![The 'Enable advanced rendering instrumentation' checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
+   ![The "Enable advanced rendering instrumentation" checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
  
 1. Click **Record**, and then run the scenario that you want to improve for your website or app.
 
@@ -68,7 +68,7 @@ To view the statistics of the CSS rule selectors that are involved in a single *
 
 1. In the bottom section of the **Performance** tool, click the **Selector Stats** tab:
 
-   ![The 'Selector Stats' tab in the Performance tool](./selector-stats-images/single-event.png)
+   ![The "Selector Stats" tab in the Performance tool](./selector-stats-images/single-event.png)
 
 The **Selector Stats** tab in the **Performance** tool shows a table of CSS selectors that displays the following information for each selector:
 
