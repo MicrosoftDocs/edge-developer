@@ -62,9 +62,13 @@ To view the statistics of the CSS rule selectors that are involved in a single *
 
 1. Find a **Recalculate Style** event in your performance recording and click it.
 
-1. In the bottom section of the **Performance** tool, click **Selector Stats**:
+1. In the bottom section of the **Performance** tool, click the **Selector Stats** tab:
 
-   ![Selector Stats in the Performance tool](./selector-stats-images/single-event.png)
+   ![The 'Selector Stats' tab in the Performance tool](./selector-stats-images/single-event.png)
+
+1. TEMP TEST alt-text quotes: todo
+
+   ![The "Selector Stats" tab in the Performance tool - test](./selector-stats-images/single-event.png)
  
 The **Selector Stats** section of the **Performance** tool shows a table of CSS selectors that contains the following information for each selector:
 
