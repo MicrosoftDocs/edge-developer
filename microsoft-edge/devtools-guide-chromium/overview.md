@@ -282,7 +282,7 @@ By default, the **Quick View** panel is at the bottom of DevTools.  You can also
 
 To display the **Quick View** panel, press **Esc**.
 
-To change the location of the **Quick View** panel, in the **Quick View** toolbar, click the **Dock Quick View to the right** button or the **Dock Quick View to the bottom** (![The Dock Quick View icon](./overview-images/move-quickview-icon.png)) button:
+To change the location of the **Quick View** panel, in the **Quick View** toolbar, click the **Dock Quick View to the right** (![The "Dock Quick View to the right" icon](./overview-images/move-quickview-icon.png)) button or the **Dock Quick View to the bottom** button:
 
 ![The Dock Quick View icon, displayed in the Quick View toolbar, at the bottom of DevTool](./overview-images/move-quickview.png)
 
@@ -355,7 +355,7 @@ Besides the permanent **Elements**, **Console**, and **Sources** tools, you can 
 
 1. Select a tool to pin it to the **Activity Bar**.  The tool is then present in the **Activity Bar** whenever DevTools is opened.
 
-If there isn't enough space in the **Activity Bar** to display all of the pinned tools, some tools may overflow into the **More tools** menu:
+If there isn't enough space in the **Activity Bar** to display all of the pinned tools, tools that are open but not displayed are moved into the **More tools** menu:
 
 ![The More tools menu, showing some pinned tools that couldn't fit in the Activity Bar](./overview-images/overflow-tools.png)
 
