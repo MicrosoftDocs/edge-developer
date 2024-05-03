@@ -6,13 +6,21 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/18/2024
+ms.date: 05/02/2024
 ---
 # Crash analyzer tool
 
 Use the **Crash analyzer** tool to analyze Microsoft Edge crashes.  In the **Crash analyzer** tool, you can input a JavaScript stack trace, such as for non-fatal JavaScript exceptions, and then have your sourcemaps applied to the stack trace so that you can debug faster.
 
-![The Crash analyzer tool](./index-images/crash-analyzer.png)<!-- todo: use most relevant demo page, show stacktrace content in DevTools -->
+![The Crash analyzer tool](./index-images/crash-analyzer.png)
+<!-- todo: 
+use page/file:
+https://devblogs.microsoft.com/oldnewthing/
+devtools://devtools/bundled/panels/elements/elements.js
+devtools://devtools/bundled/ui/components/tree_outline/tree_outline.js
+
+show stacktrace content in DevTools
+-->
 
 When a web app crashes or hangs unexpectedly, this can result in data loss and a poor user experience.  The **Crash analyzer** tool helps you identify the cause of these crashes.  Use the **Crash analyzer** tool to analyze the memory state of your web app at the time of a crash.  You can access The **Crash analyzer** tool from the **Memory** tool, which displays a list of recent crashes that occurred in your web app.  You can also trigger a crash dump manually by clicking the **Take snapshot** button.
  
@@ -22,8 +30,36 @@ When you select a crash from the list, you can see a detailed report of the cras
 * The exception message.
 
 You can also inspect the values of the variables and objects in the heap, to see how they relate to the code that caused the crash.  This helps pinpoint the exact line of code that triggered the crash, and identify any memory leaks, infinite loops, or other bugs that may have contributed to it.
- 
+
 The **Crash analyzer** tool helps debug and diagnose crashes that occur in any web app, regardless of the framework or library you use.  This tool can also help you test and optimize your web app for different browsers and devices, by comparing the crash reports from different scenarios and environments.
+
+
+<!-- ====================================================================== -->
+## Open the Crash analyzer tool
+
+The **Crash analyzer** tool is a Quick View tool; by default, it opens in the **Quick View** panel, so that you can use it alongside the other tools that are open in the **Activity bar**.
+
+
+<!-- ------------------------------ -->
+#### From the More tools menu
+
+To open the **Crash analyzer** tool by using the DevTools **More tools** menu:
+
+1. In Microsoft Edge, select **Settings and more** (![Edge "Settings and more" icon](./index-images/edge-settings-and-more-icon.png)) > **More tools** > **Open Developer tools** (**Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS)).  DevTools opens.
+
+1. In DevTools, press **Esc** to open the **Quick View** toolbar at the bottom (if not open already).  In the **Quick View** toolbar, click the **More tools** (![The "More tools" icon](./index-images/more-tools-icon.png)) button, and then select **Crash analyzer**.
+
+
+<!-- ------------------------------ -->
+#### From the Command Menu
+
+To open the **Crash analyzer** tool by using the Command Menu:
+
+1. In Microsoft Edge, select **Settings and more** (![Edge "Settings and more" icon](./index-images/edge-settings-and-more-icon.png)) > **More tools** > **Open Developer tools** (**Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS)).  DevTools opens.
+
+1. In DevTools, click the **Customize and control DevTools** (![The "Customize and control DevTools" icon](./index-images/customize-and-control-devtools-icon.png)) button, and then select **Run command**.  Or, when DevTools has focus, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  The Command Menu opens.
+
+1. Start typing **crash analyzer**, and then select the **Show Crash analyzer [Quick View]** command.  The **Crash analyzer** tool opens in the **Quick View** panel.
 
 
 <!-- ====================================================================== -->
@@ -58,7 +94,7 @@ The **Crash analyzer** tool has the following UI items:
 | The **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button | Creates a new analysis. |
 | The **Analyses** (![The 'Analyses' dropdown list](./index-images/analyses-dropdown-list.png)) dropdown list | Shows the list of analyses. |
 | The **Remove this analysis** (![the 'Remove this analysis' icon](./index-images/remove-this-analysis-icon.png)) button | Removes the present analysis. |
-| The **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button | Copies the full, unminified stack trace. |
+| The **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button | Copies the full, unminified stack trace, as a stack trace in the conventional V8 stack trace format, except with resolved function names, source file names, and line and column numbers. |
 | The **Open Symbol Server settings** (![the 'Open Symbol Server settings' icon](./index-images/open-symbol-server-settings-icon.png)) button | Display or modify the Symbol Server settings. |
 | The **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button | Opens the present article. |
 
@@ -67,6 +103,7 @@ The **Crash analyzer** tool has the following UI items:
 ## See also
 
 * [Map the processed code to your original source code, for debugging](../javascript/source-maps.md) - source maps.
+* [Crash analyzer tool is available by default](../whats-new/2024/03/devtools-123.md#crash-analyzer-tool-is-available-by-default) in _What's New in DevTools (Microsoft Edge 123)_.
 * [Debug JavaScript error stack traces by using the Crash Analyzer tool](../whats-new/2023/05/devtools-113.md#debug-javascript-error-stack-traces-by-using-the-crash-analyzer-tool) in _What's New in DevTools (Microsoft Edge 113)_.
 * [throw - JavaScript | MDN Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)
 * [Application Insights overview](/azure/azure-monitor/app/app-insights-overview)
