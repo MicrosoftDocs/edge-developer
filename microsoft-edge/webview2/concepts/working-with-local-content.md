@@ -32,7 +32,6 @@ The various ways of loading local content into a WebView2 control support the fo
 | Additional web resources | ✔️ | ❌ | ✔️  | ✔️ |
 | Additional web resources resolved in WebView2 process | ✔️ | ❌ | ✔️ | ❌ |
 
-<!-- todo: add table row for custom scheme registration? -->
 
 These scenarios are described in more detail below.
 
