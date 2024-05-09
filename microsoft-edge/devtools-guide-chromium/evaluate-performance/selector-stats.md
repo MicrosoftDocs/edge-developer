@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/30/2023
+ms.date: 05/08/2024
 ---
 # Analyze CSS selector performance during Recalculate Style events
 
@@ -32,9 +32,10 @@ The **Selector Stats** tab provides statistics about the CSS rule selectors that
 <!-- ====================================================================== -->
 ## Record a performance trace with Selector Stats enabled
 
-To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events, first record a performance trace with the Selector Stats feature (advanced rendering instrumentation) enabled.
+To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events, first record a performance trace with the Selector Stats feature enabled.  You enable the Selector Stats feature by selecting the **Enable advanced rendering instrumentation (slow)** checkbox, which displays the **Selector Stats** tab.
 
 The Selector Stats feature isn't always enabled, because it adds more overhead to your performance recordings.  You should only leave it turned on when you need to investigate the performance of **Recalculate Style** events and other rendering information.
+
 
 To record a performance trace with selector statistics:
 
@@ -44,11 +45,11 @@ To record a performance trace with selector statistics:
 
 1. In DevTools, on the **Activity Bar**, select the **Performance** (![Performance tool icon](./selector-stats-images/performance-tool-icon.png)) tab.  If that tab isn't visible, select **More tools** (![More tools icon](./selector-stats-images/more-tools-icon.png)) > **Performance**.
 
-1. In the **Performance** tool, click **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)).
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button.
 
 1. Select the **Enable advanced rendering instrumentation (slow)** checkbox:
 
-   ![The "Enable advanced rendering instrumentation" checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
+   ![The "Enable advanced rendering instrumentation (slow)" checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
  
 1. Click **Record**, and then run the scenario that you want to improve for your website or app.
 
@@ -70,6 +71,7 @@ To view the statistics of the CSS rule selectors that are involved in a single *
 
    ![The "Selector Stats" tab in the Performance tool](./selector-stats-images/single-event.png)
 
+
 The **Selector Stats** tab in the **Performance** tool shows a table of CSS selectors that displays the following information for each selector:
 
 * The amount of time the browser spent matching this selector. This time is given in microseconds (µs), where 1 µs is 1/1000 of a millisecond (ms) and 1/1,000,000 of a second.
@@ -77,6 +79,9 @@ The **Selector Stats** tab in the **Performance** tool shows a table of CSS sele
 * The number of elements the browser engine attempted to match with this selector, and the number of elements it actually matched.
 
 * The CSS style sheet that contains the CSS selector.
+
+
+When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable advanced rendering instrumentation (slow)** checkbox.
 
 
 <!-- ====================================================================== -->
@@ -98,6 +103,8 @@ To view aggregate statistics of the CSS rule selectors that are involved in mult
 
 1. Repeat the previous steps with the other **Recalculate Style** events you're interested in.
 
+When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable advanced rendering instrumentation (slow)** checkbox.
+
 
 <!-- ====================================================================== -->
 ## View aggregate CSS rule selector statistics for the full recording
@@ -113,6 +120,8 @@ To view aggregate statistics of the CSS rule selectors that are involved in the 
 1. In the bottom section of the **Performance** tool, click **Selector Stats**:
 
    ![The Selector Stats table for the full recording](./selector-stats-images/full-recording.png)
+
+When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable advanced rendering instrumentation (slow)** checkbox.
 
 
 <!-- ====================================================================== -->
