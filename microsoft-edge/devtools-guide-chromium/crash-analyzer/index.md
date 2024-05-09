@@ -73,7 +73,7 @@ To report non-fatal JavaScript exceptions (or similar data) to tools such as Azu
 
 1. Once you have a stack trace, paste it into the left pane of the **Crash analyzer** tool.
 
-1. In the **Crash analyzer** tool, click the **Analyze** button (or press **Ctrl+Enter**).  The right-hand pane shows the original file names and function names that make up the stack trace:
+1. In the **Crash analyzer** tool, click the **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button (or press **Ctrl+Enter**).  The right-hand pane shows the original file names and function names that make up the stack trace:
 
    ![Using the Crash analyzer tool to debug a non-fatal JavaScript exception](./index-images/crash-analyzer-tool.png)
    <!-- todo: update png, and write out all steps in this list to reproduce the screenshot -->
@@ -300,7 +300,7 @@ To use the **Crash analyzer** tool:
 
    ![The "Crash analyzer" tool, with the enhanced call stack pasted in the left panel](./index-images/call-stack-pasted.png)
 
-1. In the **Crash analyzer** tool, click the **Analyze** button (or press **Ctrl+Enter**).
+1. In the **Crash analyzer** tool, click the **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button (or press **Ctrl+Enter**).
 
    This loads the source maps that correspond to the source modules, and attempts to unminify any stack frames for which JavaScript or TypeScript source content was contained in the source map.  Additionally, if the source content was contained for a frame, clicking on the frame will open that source content in the **Sources** tool and highlight the line in question:
 
