@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 05/02/2024
+ms.date: 05/09/2024
 ---
 # Crash analyzer tool
 
@@ -14,7 +14,7 @@ Use the **Crash analyzer** tool to analyze Microsoft Edge crashes.  In the **Cra
 
 ![The Crash analyzer tool](./index-images/crash-analyzer.png)
 <!-- todo: 
-use page/file:
+maybe use page/file:
 https://devblogs.microsoft.com/oldnewthing/
 devtools://devtools/bundled/panels/elements/elements.js
 devtools://devtools/bundled/ui/components/tree_outline/tree_outline.js
@@ -65,19 +65,20 @@ To open the **Crash analyzer** tool by using the Command Menu:
 <!-- ====================================================================== -->
 ## Reporting non-fatal JavaScript exceptions or similar data to tools
 
-To report non-fatal JavaScript exceptions or similar data to tools such as Azure Application Insights:
+To report non-fatal JavaScript exceptions (or similar data) to tools such as Azure Application Insights:
 
-1. First, in order to use the **Crash analyzer** tool, you need specially-formatted stack traces that include a section called `Source modules`.  This section contains the sourcemap references to the JavaScript functions that were part of the error stack trace.  You can produce these stack traces by using the [Crash Analyzer Support](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support) npm package.
+1. Produce a specially-formatted stack trace that includes a section called `Source modules`.  The `Source modules` section contains the sourcemap references to the JavaScript functions that were part of the error stack trace.  You can produce such a stack trace by using the [Crash Analyzer Support](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support) npm package.  To install that npm package, at a command prompt, such as git bash, enter the install command that's shown at the above page: `npm i @microsoft/edge-devtools-crash-analyzer-support`.
 
-1. Then you need a way to actually receive the stack traces from the browsers that are running your code.  One such way is to use Azure Application Insights; see [Application Insights overview](/azure/azure-monitor/app/app-insights-overview).
+1. Receive the stack trace from a browser that's running your code.  One way to do this is by using Azure Application Insights; see [Application Insights overview](/azure/azure-monitor/app/app-insights-overview).
 
 1. Once you have a stack trace, paste it into the left pane of the **Crash analyzer** tool.
 
 1. In the **Crash analyzer** tool, click the **Analyze** button (or press **Ctrl+Enter**).  The right-hand pane shows the original file names and function names that make up the stack trace:
 
    ![Using the Crash analyzer tool to debug a non-fatal JavaScript exception](./index-images/crash-analyzer-tool.png)
+   <!-- todo: update png, and write out all steps in this list to reproduce the screenshot -->
 
-1. Click through the individual stack frames to see the lines in your original code that caused the error.
+1. Click through the individual stack frames, to see the lines in your original code that caused the error.
 
 
 <!-- ====================================================================== -->
@@ -107,4 +108,7 @@ The **Crash analyzer** tool has the following UI items:
 * [Debug JavaScript error stack traces by using the Crash Analyzer tool](../whats-new/2023/05/devtools-113.md#debug-javascript-error-stack-traces-by-using-the-crash-analyzer-tool) in _What's New in DevTools (Microsoft Edge 113)_.
 * [throw - JavaScript | MDN Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)
 * [Application Insights overview](/azure/azure-monitor/app/app-insights-overview)
-* [Crash Analyzer Support | npm](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support)
+* [Crash Analyzer Support npm module](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support)
+* [devtools-console demo page](https://microsoftedge.github.io/Demos/devtools-console/error.html)
+* [devtools-explain-error demo page](https://microsoftedge.github.io/Demos/devtools-explain-error/)
+* [Fix JavaScript errors that are reported in the Console](../console/console-debug-javascript.md)
