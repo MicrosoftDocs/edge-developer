@@ -85,14 +85,14 @@ To report non-fatal JavaScript exceptions (or similar data) to tools such as Azu
 ## UI items
 <!-- todo: rewrite as task-oriented sections -->
 
-The **Crash analyzer** tool has the following UI items:
+The **Crash analyzer** tool has the following UI features:
 
 | UI item | Description |
 |---|---|
 | Left pane | The stack trace (annotated crash dump) to analyze. |
 | Right pane | Displays the original file names and function names that make up the stack trace. |
-| The **New analysis** (![The 'New analysis' icon](./index-images/new-analysis-icon.png)) button | Creates a new analysis. |
-| The **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button | Creates a new analysis. |
+| The **New analysis** (![The 'New analysis' icon](./index-images/new-analysis-icon.png)) button | Creates a new blank left pane, to paste a new stack trace. |
+| The **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button | Creates a new analysis in the right-hand pane, based on the stack trace in the left pane. |
 | The **Analyses** (![The 'Analyses' dropdown list](./index-images/analyses-dropdown-list.png)) dropdown list | Shows the list of analyses. |
 | The **Remove this analysis** (![the 'Remove this analysis' icon](./index-images/remove-this-analysis-icon.png)) button | Removes the present analysis. |
 | The **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button | Copies the full, unminified stack trace, as a stack trace in the conventional V8 stack trace format, except with resolved function names, source file names, and line and column numbers. |
@@ -302,7 +302,7 @@ To use the **Crash analyzer** tool:
 
 1. In the **Crash analyzer** tool, click the **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button (or press **Ctrl+Enter**).
 
-   This loads the source maps that correspond to the source modules, and attempts to unminify any stack frames for which JavaScript or TypeScript source content was contained in the source map.  Additionally, if the source content was contained for a frame, clicking on the frame will open that source content in the **Sources** tool and highlight the line in question:
+   This loads the source maps that correspond to the source modules, and attempts to unminify any stack frames for which JavaScript or TypeScript source content was contained in the source map.  Additionally, if the source content was contained for a frame, clicking on the frame opens that source content in the **Sources** tool and highlights the line in question:
 
    ![Unminified code file and line of code accessed by clicking in the right-hand pane of the "Crash analyzer" tab](./index-images/code-displayed-from-right-pane.png)
  
