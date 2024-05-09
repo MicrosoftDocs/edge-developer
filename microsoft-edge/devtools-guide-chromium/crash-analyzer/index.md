@@ -101,9 +101,11 @@ The **Crash analyzer** tool has the following UI items:
 
 
 <!-- ====================================================================== -->
-## Securely storing source maps using Azure Artifacts Symbol Server
+## Storing source maps using Azure Artifacts Symbol Server
 
-The **Crash analyzer** tool works best if your source maps are securely stored using Azure Artifacts Symbol Server.  See [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure).  This is because source maps are retrieved on demand when analyzing your error, and the exact version which produced the error message might not be cached on your development machine.
+The **Crash analyzer** tool works best if your source maps are securely stored using Azure Artifacts Symbol Server.  This is because source maps are retrieved on demand when analyzing your error, and the exact version which produced the error message might not be cached on your development machine.
+
+See [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md).
 
 
 <!-- ====================================================================== -->
