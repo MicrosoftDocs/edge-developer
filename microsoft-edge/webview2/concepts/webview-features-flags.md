@@ -118,7 +118,7 @@ The following are some of the flags we've seen used.
 | `msFloatyShouldHonorIndiaHoldout` | If `true`, honors the India holdout group.  Use this flag, set to `false`, to disable the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
-| `msSingleSignOnOSForPrimaryAccountIsShared` | If enabled, allows implicit sign in to Microsoft web pages on any account using the primary os account information. |
+| `msSingleSignOnOSForPrimaryAccountIsShared` | If enabled, allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
 | `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI is shown when the user clicks a misspelled word. |
 | `msWebView2CodeCache` | If enabled, JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses (see [Custom management of network requests](..\how-to\webresourcerequested.md)). |
