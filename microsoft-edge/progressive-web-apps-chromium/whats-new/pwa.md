@@ -16,6 +16,12 @@ Sections of this document correspond to historical releases of Microsoft Edge, a
 
 
 <!-- ====================================================================== -->
+## What's New in Microsoft Edge 121
+
+Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate PWA Window Controls Overlay](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
+
+
+<!-- ====================================================================== -->
 ## What's New in Microsoft Edge 114
 
 Starting with Microsoft Edge 114, you can detect when your PWA runs in the sidebar in Microsoft Edge by using User-Agent Client Hints.
@@ -258,6 +264,8 @@ To have more control over the title bar area that's currently displayed in stand
 Learn more about experimenting with Window Controls Overlay at [Display content in the title bar](../how-to/window-controls-overlay.md).
 
 _2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and is available to all users, so the following no longer applies:_ Register your origin for the **Web App Window Controls Overlay** trial at the Origin Trials Developer Console.
+
+_2024 update:_ Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate PWA Window Controls Overlay](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
 #### URL Handlers origin trial

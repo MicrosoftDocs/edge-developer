@@ -306,8 +306,7 @@ To define a theme color, use the `theme_color` web app manifest member:
 
 Individual web pages can also define a theme color, by using the [`theme-color` meta tag](https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color). When this meta tag is present on the page, its defined color overrides the color that's found in the web app manifest.
 
-> [!NOTE]
-> You can use the [Window Controls Overlay](window-controls-overlay.md) feature to display your app content in the title bar area.
+You can use the Window Controls Overlay feature to display your app content in the title bar area.  See [Display content in the title bar](./window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->
