@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/10/2023
+ms.date: 04/10/2024
 ---
 # Working with local content in WebView2 apps
 
@@ -32,16 +32,23 @@ The various ways of loading local content into a WebView2 control support the fo
 | Additional web resources | ✔️ | ❌ | ✔️  | ✔️ |
 | Additional web resources resolved in WebView2 process | ✔️ | ❌ | ✔️ | ❌ |
 
+
 These scenarios are described in more detail below.
+
 
 <!-- ====================================================================== -->
 ## Loading local content by navigating to a file URL
 
 WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the simplest and most efficient approach to loading local content.  However, it is less flexible than the other approaches.  Like in a web browser, file URLs are limited in some capabilities:
+
 *  The document has an origin that is unique to its file path. This means that web APIs that require an origin such as `localStorage` or `indexedDB` will work, but the stored data will not be available to other local documents loaded from other file paths.
+
 *  Some web APIs are limited to secure HTTPS URLs only and are not available to documents loaded by file URLs. This includes APIs such as `navigator.mediaDevices.getUserMedia()` to acquire video or sound, `navigator.geolocation.getCurrentPosition()` to access the device's location, or `Notification.requestPermission()` to request the user's permission to display notifications.
+
 *  For each resource, the full path must be specified.
+
 *  To allow references to other local files from file URIs, or to display XML files with XSL transformations applied, you can set the `--allow-file-access-from-files` browser argument.  See [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments).
+
 
 <!-- ------------------------------ -->
 #### Considerations for loading local content by navigating to a file URL
@@ -405,6 +412,11 @@ Another way you can host local content in a WebView2 control is by relying on th
 
 From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the cross-process communication and processing that's needed for each request.
 
+
+<!-- ------------------------------ -->
+#### Custom scheme registration
+
+If you want to use a custom scheme to make the Web Resource Request that generates the `WebResourceRequested` event, see [Custom scheme registration](./overview-features-apis.md#custom-scheme-registration) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
