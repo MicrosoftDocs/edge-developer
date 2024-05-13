@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 05/13/2024
+ms.date: 11/25/2022
 ---
 # Debug Progressive Web Apps
 

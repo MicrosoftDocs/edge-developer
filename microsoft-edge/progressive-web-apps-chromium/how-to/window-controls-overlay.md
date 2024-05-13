@@ -37,6 +37,9 @@ The first thing to do is to enable the Window Controls Overlay feature in your a
 }
 ```
 
+See also:
+* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN.
+
 
 <!-- ====================================================================== -->
 ## Toggle the title bar
@@ -163,8 +166,15 @@ The source code for this demo app is in the [1DIV](https://github.com/MicrosoftE
 
 
 <!-- ====================================================================== -->
+## Preview the custom title bar without installing the PWA
+
+In Microsoft Edge DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate PWA Window Controls Overlay](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
+
+
+<!-- ====================================================================== -->
 ## See also
 
-*   [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
-*   [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
-*   [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)
+* [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
+* [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
+* [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)
+* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN.

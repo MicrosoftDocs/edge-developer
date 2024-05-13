@@ -14,7 +14,29 @@ In DevTools, in the **Application** tool, you can simulate the Window Controls O
 
 ![The 'Window Overlay Controls' section in the Application tool](./simulate-window-controls-overlay-images/pwa-window-controls.png)
 
-Use the Window Controls Overlay to have control over the title bar area that's currently displayed in standalone display mode.  Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window.  This layout frees up more space for the web content layer.  WCO is available for installed desktop PWAs.
+1. In the manifest file, set the `display-override` field to `window-controls-overlay`:
+
+   ```json
+   {
+     "display_override": ["window-controls-overlay"]
+   }
+   ```
+
+   For more information, see [Enable the Window Controls Overlay in your app](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md#enable-the-window-controls-overlay-in-your-app) in _Display content in the title bar_.
+
+1. In Microsoft Edge, select **Settings and more** > **More tools** > **Developer tools**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+
+1. On the **Activity Bar**, select  the **Application** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./simulate-window-controls-overlay-images/more-tools-icon.png)) button.
+
+1. In the **Application** tool, expand **Manifest**, and then select **Window Controls Overlay**.
+
+1. In the **Window Controls Overlay** section, select the checkbox **Emulate the Window Controls Overlay on <platform>**, and select a platform, such as Windows.
+
+<!-- todo: then what? 
+1. 
+-->
+
+Use the Window Controls Overlay to have control over the title bar area that's currently displayed in standalone display mode.  Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window.  This layout frees up more space for the web content layer.
 <!-- from https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/whats-new/pwa#window-controls-overlay-origin-trials -->
 
 Use the **Window Controls Overlay** section to emulate window controls for Windows, Linux, and macOS.
