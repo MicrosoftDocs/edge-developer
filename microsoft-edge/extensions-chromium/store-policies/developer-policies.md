@@ -503,13 +503,7 @@ Your extension and the associated data must not contain content or functionality
 <!-- ------------------------------ -->
 #### 2.11 Country- or region-specific requirements
 
-Content that is offensive in any country or region to which your extension is targeted is not allowed.  Content may be considered offensive in certain countries or regions because of local laws or cultural norms.  Examples of potentially offensive content in certain countries or regions include the following:
-
-**China**
-
-* Prohibited sexual content.
-* Disputed territory or region references.
-* Providing or enabling access to content or services that are illegal under applicable local law.
+Content that is offensive in any country or region to which your extension is targeted is not allowed.  Content may be considered offensive in certain countries or regions because of local laws or cultural norms.  
 
 
 <!-- ------------------------------ -->
