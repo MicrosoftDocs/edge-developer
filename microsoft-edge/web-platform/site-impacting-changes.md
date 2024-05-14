@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 04/05/2024
+ms.date: 05/14/2024
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge
 
@@ -30,11 +30,12 @@ This table lists:
 
 <!-- order of rows: newest version (such as "Future/TBD") at top, then greatest to smallest version # -->
 
-<!-- latest = 10 most recent versions (Stable channel); as of Apr. 5, 2024, latest Stable = 123, so the 10 most recent versions = 114 through 123+ -->
+<!-- latest = 10 most recent versions (Stable channel); as of May 14, 2024, latest Stable = 124, so the 10 most recent versions = 115 through 124+ -->
 ##### [Latest versions](#tab/latest)
 
 | Change | Stable channel | Experimentation | Additional information |
 | --- | --- | --- | --- |
+| Insecure downloads over HTTP | Future release (TBD) | | Users that download potentially dangerous content on HTTP sites will receive a UI warning, such as "sample.exe can't be downloaded securely."  The user can still choose to proceed by selecting **Keep** on the downloaded item's **...** menu.  Admins can use the `InsecureContentAllowedForUrls` policy to specify HTTP sites where the warning will be suppressed.  Admins can use the `InsecureDownloadWarnings` feature flag to test the impact of this upcoming feature. |
 | Deprecate unload event | Future release (TBD) | | Introduces a new Permission-Policy to allow creating unload event listeners. The default policy is `allow`, but the default policy will gradually be migrated to `deny`, such that unload handlers stop firing on pages, unless a page explicitly opts in to re-enable them.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Deprecate: Deprecate unload event](https://groups.google.com/a/chromium.org/g/blink-dev/c/dvusqw9-IhI/m/SBkm_u1RAQAJ). |
 | Removal of cross-origin subframe JavaScript dialogs | Future release (TBD) | | Removes `window.alert`, `window.prompt`, and `window.confirm` from cross-origin iframes.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Remove: Cross origin subframe JS Dialogs](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ). |
 | Deprecate `textprediction` attribute | v131 |  | Removes support for the `textprediction` HTML attribute, which is a nonstandard attribute that's used to enable or disable the browser-based Text Prediction feature for long-form text inputs.  Instead, use the standardized `writingsuggestions` attribute, which functions similarly to `textprediction`, but also applies to other writing-assistance features that browsers may provide.  Sites that explicitly set `textprediction` to `true` or `false` can instead set `writingsuggestions` to the same value.  For more information, see [Writing suggestions](https://html.spec.whatwg.org/multipage/interaction.html#writing-suggestions) in the HTML specification. |
@@ -42,6 +43,7 @@ This table lists:
 | Removal of Web SQL | v124 | | Fully removes Web SQL support. In prior releases, Web SQL support was disabled by default but could be re-enabled via the [WebSQLAccess policy](/deployedge/microsoft-edge-policies#websqlaccess). After this change, there is no longer any mechanism to enable Web SQL support. This change is happening in the Chromium project, on which Microsoft Edge is based. For more information, see [Intent to Deprecate and Remove Web SQL](https://groups.google.com/a/chromium.org/g/blink-dev/c/fWYb6evVA-w/m/pziWcvboAgAJ). |
 | Added support for AVIF and AV1 file formats | v121 | | Microsoft Edge now supports the AVIF and AV1 file formats, which offer better compression and higher quality images and videos.  Users can enjoy faster loading times and better quality media on websites. |
 | Ignore modifications to `document.domain` by default | v119 | | The `document.domain` property historically could be set to relax the same-origin policy and allow subdomains from a site to interact. This behavior will be disabled by default such that setting the `document.domain` property will have no effect.  For more information and workarounds, see [Microsoft Edge will disable modifying document.domain](/deployedge/edge-learnmore-origin-keyed-agent-cluster). |
+
 
 ##### [Earlier versions](#tab/earlier)
 
