@@ -12,6 +12,8 @@ ms.date: 09/27/2023
 
 To use [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/landing/) to debug a WebView2 WinUI 2 (UWP) app, use remote debugging.  Remote debugging is necessary for WebView2 WinUI 2 (UWP) apps because currently, the built-in DevTools can't be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
 
-* [Remote debugging desktop WebView2 WinUI 2 (UWP) apps](./remote-debugging-desktop.md) - Desktop.
-* [Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps](./remote-debugging-hololens.md) - HoloLens 2.
-* [Remote debugging Xbox WebView2 WinUI 2 (UWP) apps](./remote-debugging-xbox.md) - Xbox.
+| Platform | Article |
+|---|---|
+| Desktop | [Remote debugging desktop WebView2 WinUI 2 (UWP) apps](./remote-debugging-desktop.md) |
+| HoloLens 2 | [Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps](./remote-debugging-hololens.md) |
+| Xbox | [Remote debugging Xbox WebView2 WinUI 2 (UWP) apps](./remote-debugging-xbox.md) |
