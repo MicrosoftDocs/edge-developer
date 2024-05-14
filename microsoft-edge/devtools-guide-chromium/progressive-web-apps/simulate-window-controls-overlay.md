@@ -28,11 +28,11 @@ In DevTools, in the **Application** tool, you can simulate the Window Controls O
 
 1. On the **Activity Bar**, select  the **Application** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./simulate-window-controls-overlay-images/more-tools-icon.png)) button.
 
-1. In the **Application** tool, expand **Manifest**, and then select **Window Controls Overlay**.
+1. In the **Application** tool, expand **Manifest** in the upper left, and then select **Window Controls Overlay**.
 
-1. In the **Window Controls Overlay** section, select the checkbox **Emulate the Window Controls Overlay on <platform>**, and select a platform, such as Windows.
+1. In the **Window Controls Overlay** section on the right, select the checkbox **Emulate the Window Controls Overlay on** \<platform\>, and select a platform, such as Windows.
 
-<!-- todo: then what? 
+<!-- todo: then what?  what action, what result?
 1. 
 -->
 
