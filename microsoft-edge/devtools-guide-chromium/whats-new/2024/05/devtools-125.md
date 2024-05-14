@@ -28,7 +28,7 @@ The **Selector Stats** tab has the following changes:
 
 * The **Elapsed** column is sorted from high to low by default, to help you find the most time-consuming CSS selectors.
 
-* The **fast reject count** column has been replaced by the **% of slow-path non-matches** column.
+* The **Fast Reject Count** column has been replaced by the **% of slow-path non-matches** column.
 <!-- todo: check UI labels -->
 
 * The unit of time has been changed from microseconds to milliseconds.
@@ -55,7 +55,7 @@ See also:
 
 Microsoft Edge 125 also includes the following updates from the Chromium project:
 
-* [@position-try rules support in Elements > Styles](https://developer.chrome.com/blog/new-in-devtools-125#position-try)
+* [@position-try rules support in Elements > Styles](https://developer.chrome.com/blog/new-in-devtools-125#lposition-try)
 * [Sources panel improvements](https://developer.chrome.com/blog/new-in-devtools-125#sources)
    * [Configure automatic pretty-printing and bracket closing](https://developer.chrome.com/blog/new-in-devtools-125#settings)
    * [Handled rejected promises are recognized as caught](https://developer.chrome.com/blog/new-in-devtools-125#caught-rejection)
@@ -67,9 +67,6 @@ Microsoft Edge 125 also includes the following updates from the Chromium project
    * [Capture CSS selector statistics](https://developer.chrome.com/blog/new-in-devtools-125#selector-stats)
    * [Change order and hide tracks](https://developer.chrome.com/blog/new-in-devtools-125#track-config)
 * [Ignore retainers in the Memory panel](https://developer.chrome.com/blog/new-in-devtools-125#ignore-retainer)
-* [Lighthouse 11.7.1](https://developer.chrome.com/blog/new-in-devtools-125#lighthouse)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-125#misc)
-
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
