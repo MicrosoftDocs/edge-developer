@@ -1,6 +1,6 @@
 ---
 title: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
-description: How to remotely debug Xbox WebView2 WinUI 2 (UWP) apps by using Remote Tools for Microsoft Edge.
+description: How to remotely debug Xbox WebView2 WinUI 2 (UWP) apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -9,7 +9,6 @@ ms.subservice: webview
 ms.date: 10/17/2023
 ---
 # Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
-<!-- todo: description: YAML field: remove "by using Remote Tools for Microsoft Edge"? -->
 
 To use [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/landing/) to debug a WebView2 WinUI 2 (UWP) app, use remote debugging.  Remote debugging is necessary for WebView2 WinUI 2 (UWP) apps because currently, the built-in DevTools can't be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
 
