@@ -456,8 +456,7 @@ See also:
 <!-- ------------------------------ -->
 #### Microsoft Edge Developer Tools
 
-On WinUI 2, Microsoft Edge DevTools cannot be launched inside a store-signed WebView2 WinUI 2 (UWP) app.  However, you can work around this by using remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging.md).
-
+On WinUI 2, Microsoft Edge DevTools cannot be launched inside a store-signed WebView2 WinUI 2 (UWP) app.  However, you can work around this by using remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging.md).<!-- todo: link to a platform-specific article instead of nav page? -->
 
 <!-- ------------------------------ -->
 #### API limitations

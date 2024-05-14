@@ -239,7 +239,7 @@ For more info about the `DebuggerAddress` property of the `EdgeOptions` object, 
 <!-- ------------------------------ -->
 #### For UWP apps, attach Microsoft Edge WebDriver to WebView2 with Remote Tools
 
-1. Do the steps in [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
+1. Do the steps in [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).<!-- todo: link to a platform-specific article instead of nav page? -->
 
    This WebView2 feature is currently only supported in the Canary preview channel of Microsoft Edge.  Set the environment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1`, to ensure that the WebView2 version is Canary.  For more information, see [How to set an environment variable](./set-preview-channel.md#how-to-set-an-environment-variable) in _Test upcoming APIs and features_.
 
@@ -266,7 +266,7 @@ For more info about the `DebuggerAddress` property of the `EdgeOptions` object, 
    EdgeDriver e = new EdgeDriver(eo);
    ```
 
-For more information about launching a WebView2 UWP app with Remote Tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).
+For more information about launching a WebView2 UWP app with Remote Tools, see [Remote debugging UWP apps with Remote Tools for Microsoft Edge](./remote-debugging.md).<!-- todo: link to a platform-specific article instead of nav page? -->
 
 Congratulations!  You've successfully attached Microsoft Edge WebDriver to a running WebView2 app.
 

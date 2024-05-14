@@ -111,7 +111,7 @@ The following are some of the flags we've seen used.
 | `msEdgeHubAppDesigner ` | Use this flag to disable the Designer Shoreline App. This feature is not supported in WebView2. |
 | `msEdgeDesignerDriverFix ` |  Use this flag to disable getting content and automatically showing the Designer feature. This feature is not supported in WebView2. |
 | `msEdgeFluentOverlayScrollbar` | Force-enables Fluent Overlay scrollbars, overriding whatever value `kFluentScrollbar` may hold at the moment. |
-| `msEdgeDevToolsWdpRemoteDebugging` | Enables remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging.md), [Remotely debug Windows devices](../../devtools-guide-chromium/remote-debugging/windows.md). |
+| `msEdgeDevToolsWdpRemoteDebugging` | Enables remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging.md)<!-- todo: link to a platform-specific article instead of nav page? -->, [Remotely debug Windows devices](../../devtools-guide-chromium/remote-debugging/windows.md). |
 | `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
 | `msEnhancedTrackingPreventionEnabled` | Enables native privacy protection features, such as blocking cookies and web requests that reside in domains that are known to be tracking domains. |
 | `msFloatyMode` | If `false`, disables the Floaty feature.  Use this flag to disable the Floaty feature, because WebView doesn't support browser retention experiments. |
