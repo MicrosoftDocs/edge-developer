@@ -29,7 +29,6 @@ The **Selector Stats** tab has the following changes:
 * The **Elapsed** column is sorted from high to low by default, to help you find the most time-consuming CSS selectors.
 
 * The **Fast Reject Count** column has been replaced by the **% of slow-path non-matches** column.
-<!-- todo: check UI labels -->
 
 * The unit of time has been changed from microseconds to milliseconds.
 
