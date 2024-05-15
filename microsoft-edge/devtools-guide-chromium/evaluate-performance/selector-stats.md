@@ -91,15 +91,15 @@ When finished, in the **Performance** tool, click the **Capture settings** (![Ca
 <!-- ====================================================================== -->
 ## View CSS rule selector statistics for multiple events
 
-To view aggregate statistics of the CSS rule selectors that are involved in multiple **Recalculate Style** events, copy multiple **Selector Stats** tables into a spreadsheet:
+To view aggregate statistics of the CSS rule selectors that are involved in multiple **Recalculate Style** events, copy multiple **Selector Stats** tables into a spreadsheet, as follows:
 
 1. Do the steps in [Record a performance trace with Selector Stats enabled](#record-a-performance-trace-with-selector-stats-enabled), above.
 
 1. Find the first **Recalculate Style** event you're interested in, and then click it.
 
-1. In the bottom section of the **Performance** tool, click **Selector Stats**.
+1. In the bottom section of the **Performance** tool, click the **Selector Stats** tab.
 
-1. Right-click the **Selector Stats** table, and then select **Copy Table**:
+1. Right-click the selector stats table, and then select **Copy Table**:
 
    ![The Copy Table menu item in the Selector Stats table](./selector-stats-images/copy-table.png)
 
@@ -121,7 +121,7 @@ To view aggregate statistics of the CSS rule selectors that are involved in the 
 
 1. Select the entire recording range. To do this, double-click in the **CPU** chart at the top of the **Performance** tool or, using your mouse, hover over the flame chart and scroll up until the entire chart is displayed.
 
-1. In the bottom section of the **Performance** tool, click **Selector Stats**:
+1. In the bottom section of the **Performance** tool, click the **Selector Stats** tab:
 
    ![The Selector Stats table for the full recording](./selector-stats-images/full-recording.png)
 
@@ -142,9 +142,9 @@ To try to improve the performance of your web page, focus on the CSS selectors t
 * and which the browser didn't actually match many elements with (low **Match Count** value compared to the **Match Attempts** value),
 * and with a high percentage of slow-path non-matches.
 
-For example, in the screenshot above, the first CSS selector (`.gallery .photo .meta ::selection`) required the most time. The browser engine attempted to match this CSS selector 6017 times, but only matched 3234 elements. Out of the 2783 elements that didn't match, 78% of them required less optimized code to match. This CSS selector is a good candidate to try to improve.
+For example, in the screenshot above, the first CSS selector (`.gallery .photo .meta ::selection`) required the most time. The browser engine attempted to match this CSS selector 6017 times, but only matched 3234 elements. Out of the 2783 elements that didn't match, 78% of them required less optimized code to match. Therefore, this CSS selector is a good candidate to try to improve.
 
-Try to change your CSS selectors so they require less time to calculate, and match fewer elements on the page.  How to improve your CSS selectors depends on your particular use case.  Repeat the steps from the previous section, to confirm that your changes helped decrease the **Recalculate Style** event duration.
+Try to change your CSS selectors so they require less time to calculate, and match fewer elements on the page.  How to improve your CSS selectors depends on your particular use case.  Repeat the steps in the above "Record" and "View" sections, to confirm that your changes helped decrease the **Recalculate Style** event duration, in the **Elapsed (ms)** column.
 
 
 <!-- ====================================================================== -->
