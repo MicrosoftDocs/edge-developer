@@ -22,7 +22,7 @@ devtools://devtools/bundled/ui/components/tree_outline/tree_outline.js
 show stacktrace content in DevTools
 -->
 
-When a web app crashes or hangs unexpectedly, this can result in data loss and a poor user experience.  The **Crash analyzer** tool helps you identify the cause of these crashes.  Use the **Crash analyzer** tool to analyze the memory state of your web app at the time of a crash.  You can access The **Crash analyzer** tool from the **Memory** tool, which displays a list of recent crashes<!-- todo: true? --> that occurred in your web app.
+When a web app crashes or hangs unexpectedly, this can result in data loss and a poor user experience.  The **Crash analyzer** tool helps you identify the cause of these crashes.  Use the **Crash analyzer** tool to analyze the memory state of your web app at the time of a crash.  You can access the **Crash analyzer** tool from the **Memory** tool, which displays a list of recent crashes<!-- todo: true? --> that occurred in your web app.
 
 As a web developer, you collect stack traces from customers in production, and then use the **Crash analyzer** tool to "beautify" the stack traces in DevTools.  DevTools only does the analysis of the stack traces, not the collecting of stack traces.
 
