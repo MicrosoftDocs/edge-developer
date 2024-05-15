@@ -144,6 +144,11 @@ Release Date: May 20, 2024
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 126.0.2584.0 or higher.
 
+#### Experimental Features
+
+* Introduce an option to cancel the initial navigation in WebView2 to improve startup performance. The change is disabled by default and can be enabled by using the `msWebView2CancelInitialNavigation` feature flag. 
+
+
 <!-- ------------------------------ -->
 #### Experimental APIs
 
@@ -169,8 +174,7 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 * Return proper error code when CreateSharedBuffer is called with 0 buffer size. ([Issue #4554](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4554))
 * Fixed activation issue for caret browsing dialog
 * Fixed an issue where WebView2 VisualHosting CursorChanged was not firing for custom cursors
-* Introduce a feature to cancel the initial navigation in WebView2 to improve startup performance. The change is disabled by default but can be enabled by enabling the `msWebView2CancelInitialNavigation` feature flag. 
-* Fixed a bug where web app was able to get location access even if their parent app doesn't have permission.
+* Fixed an issue where a web app could access the user's location without the required permission from the main app.
 
 <!-- ---------- -->
 ###### SDK-only
