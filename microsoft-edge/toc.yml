@@ -910,7 +910,7 @@
                 - name: Inline and live issue analysis
                   href: visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
 
-                - name: Device and state emulation
+                - name: Device emulation
                   href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
 
                 - name: Update .css files from within the Styles tab (CSS mirror editing)
@@ -1409,17 +1409,17 @@
                   href: webview2/how-to/remote-debugging.md
                   displayName: remotely debug
 
-                - name: Remote debugging desktop WebView2 WinUI 2 (UWP) apps
+                - name: Desktop
                   href: webview2/how-to/remote-debugging-desktop.md
-                  displayName: remotely debug, Remote Tools for Microsoft Edge
+                  displayName: Remote debugging desktop WebView2 WinUI 2 (UWP) apps, remotely debug, Remote Tools for Microsoft Edge  # top-of-page title + 2 add'l
 
-                - name: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
+                - name: HoloLens 2
                   href: webview2/how-to/remote-debugging-hololens.md
-                  displayName: remotely debug, Remote Tools for Microsoft Edge
+                  displayName: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps, remotely debug, Remote Tools for Microsoft Edge  # top-of-page title + 2 add'l
 
-                - name: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
+                - name: Xbox
                   href: webview2/how-to/remote-debugging-xbox.md
-                  displayName: remotely debug
+                  displayName: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps, remotely debug  # top-of-page title + 1 add'l
 
 # -----------------------------------------------------------------------------
         - name: Architecture
