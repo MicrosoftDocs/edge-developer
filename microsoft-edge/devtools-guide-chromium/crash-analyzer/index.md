@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 05/14/2024
+ms.date: 05/15/2024
 ---
 # Crash analyzer tool
 
@@ -22,11 +22,9 @@ devtools://devtools/bundled/ui/components/tree_outline/tree_outline.js
 show stacktrace content in DevTools
 -->
 
-When a web app crashes or hangs unexpectedly, this can result in data loss and a poor user experience.  The **Crash analyzer** tool helps you identify the cause of these crashes.  Use the **Crash analyzer** tool to analyze the memory state of your web app at the time of a crash.  You can access the **Crash analyzer** tool from the **Memory** tool, which displays a list of recent crashes<!-- todo: true? --> that occurred in your web app.
+When a web app crashes or hangs unexpectedly, this can result in data loss and a poor user experience.  The **Crash analyzer** tool helps you identify the cause of these crashes.  Use the **Crash analyzer** tool to analyze the memory state of your web app at the time of a crash.
 
 As a web developer, you collect stack traces from customers in production, and then use the **Crash analyzer** tool to "beautify" the stack traces in DevTools.  DevTools only does the analysis of the stack traces, not the collecting of stack traces.
-
-As an alternative approach, you can collect local stack traces by triggering a crash dump manually by clicking the **Take snapshot** button in the **Memory** tool.<!-- todo: true? -->
 
 When you select a crash from the list, you can see a detailed report of the crash, including:
 * The call stack.
