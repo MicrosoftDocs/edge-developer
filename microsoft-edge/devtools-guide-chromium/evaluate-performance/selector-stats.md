@@ -142,7 +142,12 @@ To try to improve the performance of your web page, focus on the CSS selectors t
 * and which the browser didn't actually match many elements with (low **Match Count** value compared to the **Match Attempts** value),
 * and with a high percentage of slow-path non-matches.
 
-For example, in the screenshot above, the first CSS selector (`.gallery .photo .meta ::selection`) required the most time. The browser engine attempted to match this CSS selector 6017 times, but only matched 3234 elements. Out of the 2783 elements that didn't match, 78% of them required less optimized code to match. Therefore, this CSS selector is a good candidate to try to improve.
+For example, in the screenshot above:
+* The first CSS selector (`.gallery .photo .meta ::selection`) required the most time.
+* The browser engine attempted to match this CSS selector 6017 times, but only matched 3234 elements.
+* Out of the 2783 elements that didn't match, 78% of them required less optimized code to match.
+
+Therefore, this CSS selector is a good candidate to try to improve.
 
 Try to change your CSS selectors so they require less time to calculate, and match fewer elements on the page.  How to improve your CSS selectors depends on your particular use case.  Repeat the steps in the above "Record" and "View" sections, to confirm that your changes helped decrease the **Recalculate Style** event duration, in the **Elapsed (ms)** column.
 
