@@ -72,106 +72,105 @@ See also:
 
 
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.2535.41
 
 Release Date: May 20, 2024
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.2535.41](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2535.41)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 125.0.2535.41 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
 The following APIs have been promoted to Stable and are now included in this Release SDK.
+
+
+* Support for the Fluent Style Overlay Scrollbar.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.ScrollBarStyle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.scrollbarstyle?view=webview2-dotnet-1.0.2535.41&preserve-view=true)
+
+* [CoreWebView2ScrollbarStyle Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2scrollbarstyle?view=webview2-dotnet-1.0.2535.41&preserve-view=true)
+   * `Default`
+   * `FluentOverlay`
+
 ##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.ScrollBarStyle Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.2535.41&preserve-view=true#scrollbarstyle)
+
+* [CoreWebView2ScrollbarStyle Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scrollbarstyle?view=webview2-winrt-1.0.2535.41&preserve-view=true)
+   * `Default`
+   * `FluentOverlay`
 
 ##### [Win32/C++](#tab/win32cpp)
 
----
+* [ICoreWebView2EnvironmentOptions8](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions8?view=webview2-1.0.2535.41&preserve-view=true)
+  * [ICoreWebView2EnvironmentOptions8::get_ScrollBarStyle](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions8?view=webview2-1.0.2535.41&preserve-view=true#get_scrollbarstyle)
+  * [ICoreWebView2EnvironmentOptions8::put_ScrollBarStyle](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions8?view=webview2-1.0.2535.41&preserve-view=true#put_scrollbarstyle)
 
+* [COREWEBVIEW2_SCROLLBAR_STYLE enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2535.41&preserve-view=true#corewebview2_scrollbar_style)
+   * `COREWEBVIEW2_SCROLLBAR_STYLE_DEFAULT`
+   * `COREWEBVIEW2_SCROLLBAR_STYLE_FLUENT_OVERLAY`
+
+---
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-See also:
-* [Updating the Runtime and SDK](./about.md#updating-the-runtime-and-sdk) in _About Release Notes for the WebView2 SDK_.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-
 <!-- ---------- -->
 ###### Runtime-only
-
+* Fixed a bug where if the LaunchingExternalURIScheme event handler is attached, the "always remember" checkbox is enabled and the user checks this checkbox, the dialog will incorrectly be displayed again. 
+* Fixed an issue where text edit controls in visual hosting would duplicate IME input when losing/regaining focus
+* Fixed an issue where full trust UWP apps could not display owned windows
 
 <!-- ---------- -->
 ###### SDK-only
-
+* Fixed an issue in the SDK causing erroneous <Platform> values showing up in .NET project platforms list. ([Issue #1755](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1755))
 
 <!-- end of May 2024 Release SDK -->
 
 
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## 1.0.2584-prerelease
 
 Release Date: May 20, 2024
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.2584-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2584-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
-
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 126.0.2584.0 or higher.
 
 <!-- ------------------------------ -->
 #### Experimental APIs
 
 No Experimental APIs have been added in this Prerelease SDK.
-The following Experimental APIs have been added in this Prerelease SDK.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
 
 <!-- ------------------------------ -->
 #### Promotions
 
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-See also:
-* [Updating the Runtime and SDK](./about.md#updating-the-runtime-and-sdk) in _About Release Notes for the WebView2 SDK_.
-
-
 <!-- ---------- -->
 ###### Runtime and SDK
-
+* Fixed a crash when .NET host object async methods returns null result.([Issue #4509](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4509))
 
 <!-- ---------- -->
 ###### Runtime-only
 
+* Fixed a WebView2 Memory leak issue when the window is closed. ([Issue #4286](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4286))
+* Fixed an issue where ignoreMemberNotFoundError was not working for .NET objects. ([Issue #4497](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4497))
+* Return proper error code when CreateSharedBuffer is called with 0 buffer size. ([Issue #4554](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4554))
+* Fixed activation issue for caret browsing dialog
+* Fixed an issue where WebView2 VisualHosting CursorChanged was not firing for custom cursors
+* Introduce a feature to cancel the initial navigation in WebView2 to improve startup performance. The change is disabled by default but can be enabled by enabling the `msWebView2CancelInitialNavigation` feature flag. 
+* Fixed a bug where web app was able to get location access even if their parent app doesn't have permission.
 
 <!-- ---------- -->
 ###### SDK-only
