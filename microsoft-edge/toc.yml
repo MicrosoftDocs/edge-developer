@@ -915,7 +915,7 @@
                 - name: Inline and live issue analysis
                   href: visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
 
-                - name: Device and state emulation
+                - name: Device emulation
                   href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
 
                 - name: Update .css files from within the Styles tab (CSS mirror editing)
