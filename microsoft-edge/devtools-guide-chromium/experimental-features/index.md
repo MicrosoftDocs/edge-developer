@@ -1013,8 +1013,7 @@ Status:
 
 _new as of Microsoft Edge 126_
 
-Whether to enable the legacy tracing model when inspecting Chrome traces by using the **Performance** tool.
-<!-- todo: improve desc -->
+An internal setting that controls whether to enable the legacy tracing model that the **Performance** tool uses.  Do not use.
 
 See also:
 * [Performance features reference](../evaluate-performance/reference.md)
