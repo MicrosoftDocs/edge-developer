@@ -303,6 +303,9 @@ How does a page look and behave when some of the page resources aren't available
 
 1. Clear the **Enable network request blocking** checkbox.
 
+See also:
+* [Block a network request](../network-request-blocking/network-request-blocking-tool.md#block-a-network-request) in _Network request blocking tool_.
+
 
 <!-- ====================================================================== -->
 ## Conclusion

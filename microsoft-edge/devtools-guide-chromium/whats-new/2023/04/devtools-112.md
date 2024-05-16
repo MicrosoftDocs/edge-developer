@@ -65,7 +65,7 @@ To analyze individual CSS selector performance and analyze the impact of your ch
 
 See also:
 * [Optimize CSS styles with the CSS Overview tool](../../../css/css-overview-tool.md)
-* [Analyze selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->
