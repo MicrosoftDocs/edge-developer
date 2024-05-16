@@ -1,74 +1,105 @@
 ---
-title: Analyze selector performance during Recalculate Style events
-description: Use the Selector Stats feature in the Performance tool to understand which of your CSS selectors are taking up the most time during Recalculate Style events.
+title: Analyze CSS selector performance during Recalculate Style events
+description: Use the Selector Stats tab in the Performance tool to understand which of your CSS selectors are taking up the most time during Recalculate Style events.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 06/20/2023
+ms.date: 05/15/2024
 ---
-# Analyze selector performance during Recalculate Style events
+# Analyze CSS selector performance during Recalculate Style events
 
-The **Performance** tool highlights long tasks with red triangles to indicate work on the main thread that takes too long and has slow performance:
+The **Performance** tool highlights each long-running task with a red triangle in the upper right corner, to indicate work on the main thread that takes a long time to run and has slow performance:
 
-![Long Task indicators for events on the main thread with slow performance](./selector-stats-images/long-running-task.png)
+![Long-Running Task indicators for events on the main thread with slow performance](./selector-stats-images/long-running-task.png)
 
-In your performance recordings, some of these long-running tasks may be **Recalculate Style** events.  These events track the time it takes for the browser to iterate through DOM elements on a page, find all of the CSS style rules that match a given element, and then compute the element's actual style based on these rules.  These styles need to be recalculated whenever the applicability of CSS rules may have changed, such as when:
+In your performance recordings, some of these long-running tasks may be **Recalculate Style** events.  A **Recalculate Style** event tracks the time it takes for the browser to do the following:
+* Iterate through the DOM elements on a page, to find all of the CSS style rules that match a given element.
+* Compute each element's actual style, based on the matching CSS style rules.
 
-- Elements are added to or removed from the DOM.
-- An element's attributes are changed, such as `class` or `id`.
-- User input occurs, such as a mouse move or focus change, which can affect `:hover` rules.
+CSS styles need to be recalculated whenever the applicability of CSS rules may have changed, such as:
 
-When you have long-running **Recalculate Style** events, you can use the **Selector Stats** feature to understand which of your CSS selectors are taking up the most time and resulting in slow performance.
+* When elements are added to or removed from the DOM.
+* When an element's attributes are changed, such as the value of a `class` or `id` attribute.
+* When user input occurs, such as a mouse move or a change of which element in a webpage has focus, which can affect `:hover` rules.
 
-The **Selector Stats** feature provides statistics about the CSS rule selectors that were involved in one or more **Recalculate Style** events within a performance recording.
+When you have long-running **Recalculate Style** events, you can use the **Selector Stats** tab to understand which of your CSS selectors are taking up the most time and resulting in slow performance.
 
-## View CSS rule selector statistics
+The **Selector Stats** tab provides statistics about the CSS rule selectors that were involved in one or more **Recalculate Style** events within a performance recording.
 
-#### Record a performance trace with Selector Stats enabled
 
-To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events, first record a performance trace with the Selector Stats feature enabled.
+<!-- ====================================================================== -->
+## Record a performance trace with Selector Stats enabled
 
-The Selector Stats feature isn't always enabled, because it adds more overhead to your performance recordings. You should only leave it turned on when you need to investigate the performance of **Recalculate Style** events and other rendering information.
+To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events, first record a performance trace with the Selector Stats feature enabled.  You enable the Selector Stats feature by selecting the **Enable CSS selector stats** checkbox, which displays the **Selector Stats** tab.
+
+The Selector Stats feature isn't always enabled, because it adds more overhead to your performance recordings.  You should only leave it turned on when you need to investigate the performance of **Recalculate Style** events and other rendering information.
 
 To record a performance trace with selector statistics:
 
-1. In the **Performance** tool, click **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)).
+1. Open a webpage in a new window or tab, such as the [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) demo page.
 
-1. Select the **Enable advanced rendering instrumentation (slow)** checkbox:
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-   ![The 'Enable advanced rendering instrumentation' checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
+1. In DevTools, on the **Activity Bar**, select the **Performance** (![Performance tool icon](./selector-stats-images/performance-tool-icon.png)) tab.  If that tab isn't visible, select **More tools** (![More tools icon](./selector-stats-images/more-tools-icon.png)) > **Performance**.
+
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button.
+
+1. Select the **Enable CSS selector stats** checkbox:
+
+   ![The "Enable CSS selector stats" checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
  
-1. Click **Record**, and then run the scenario that you want to improve for your website or app.
+1. Click the **Record** (![The Record icon](./selector-stats-images/record-icon.png)) button, and then run the scenario that you want to improve for your website or app.
 
-1. Click **Stop**.
+1. Click the **Stop** button.
 
-#### View statistics for a single event
+Next, view CSS selector statistics, as described in the sections below.
+
+
+<!-- ====================================================================== -->
+## View CSS rule selector statistics for a single event
 
 To view the statistics of the CSS rule selectors that are involved in a single **Recalculate Style** event:
 
+1. Do the steps in [Record a performance trace with Selector Stats enabled](#record-a-performance-trace-with-selector-stats-enabled), above.
+
 1. Find a **Recalculate Style** event in your performance recording and click it.
 
-1. In the bottom section of the **Performance** tool, click **Selector Stats**:
+1. In the bottom section of the **Performance** tool, click the **Selector Stats** tab:
 
-   ![Selector Stats in the Performance tool](./selector-stats-images/single-event.png)
- 
-The **Selector Stats** section of the **Performance** tool shows a table of CSS selectors that contains the following information for each selector:
+   ![The "Selector Stats" tab in the Performance tool](./selector-stats-images/single-event.png)
 
-* The amount of time the browser spent matching this selector. This time is given in microseconds (µs), where 1 µs is 1/1000 of a millisecond (ms) and 1/1,000,000 of a second.
-* The number of elements the browser engine attempted to match with this selector, and the number of elements it actually matched.
-* The stylesheet that contains the selector.
 
-#### View statistics for multiple events
+<!-- ------------------------------ -->
+#### Table of CSS selectors in the Selector Stats tab
 
-To view aggregate statistics of the CSS rule selectors that are involved in multiple **Recalculate Style** events, copy multiple **Selector Stats** tables into a spreadsheet:
+The **Selector Stats** tab in the **Performance** tool contains a table of CSS selectors.  The table displays the following information for each CSS selector:
+
+| Column | Description |
+| --- | --- |
+| **Elapsed (ms)** | The amount of time the browser spent matching this CSS selector. This time is given in milliseconds (ms), where 1 ms is 1/1000 of a second. |
+| **Match Attempts** | The number of elements the browser engine attempted to match with this CSS selector. |
+| **Match Count** | The number of elements the browser engine matched with this CSS selector. |
+| **% of slow-path non-matches** | The ratio of elements that didn't match with this CSS selector, to the elements that the browser engine attempted to match, and which required the browser engine to use less optimized code to match. |
+| **Selector** | The CSS selector that was matched. |
+| **Style Sheet** | The CSS style sheet that contains the CSS selector. | 
+
+When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable CSS selector stats** checkbox.
+
+
+<!-- ====================================================================== -->
+## View CSS rule selector statistics for multiple events
+
+To view aggregate statistics of the CSS rule selectors that are involved in multiple **Recalculate Style** events, copy multiple **Selector Stats** tables into a spreadsheet, as follows:
+
+1. Do the steps in [Record a performance trace with Selector Stats enabled](#record-a-performance-trace-with-selector-stats-enabled), above.
 
 1. Find the first **Recalculate Style** event you're interested in, and then click it.
 
-1. In the bottom section of the **Performance** tool, click **Selector Stats**.
+1. In the bottom section of the **Performance** tool, click the **Selector Stats** tab.
 
-1. Right-click the **Selector Stats** table, and then select **Copy Table**:
+1. Right-click the selector stats table, and then select **Copy Table**:
 
    ![The Copy Table menu item in the Selector Stats table](./selector-stats-images/copy-table.png)
 
@@ -76,27 +107,49 @@ To view aggregate statistics of the CSS rule selectors that are involved in mult
 
 1. Repeat the previous steps with the other **Recalculate Style** events you're interested in.
 
-#### View aggregate statistics for the full recording
+When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable CSS selector stats** checkbox.
+
+
+<!-- ====================================================================== -->
+## View aggregate CSS rule selector statistics for the full recording
 
 To view aggregate statistics of the CSS rule selectors that are involved in the entire performance recording:
+
+1. Do the steps in [Record a performance trace with Selector Stats enabled](#record-a-performance-trace-with-selector-stats-enabled), above.
 
 1. Deselect any event that's selected in the performance recording, by clicking an empty area of the flame chart.
 
 1. Select the entire recording range. To do this, double-click in the **CPU** chart at the top of the **Performance** tool or, using your mouse, hover over the flame chart and scroll up until the entire chart is displayed.
 
-1. In the bottom section of the **Performance** tool, click **Selector Stats**:
+1. In the bottom section of the **Performance** tool, click the **Selector Stats** tab:
 
    ![The Selector Stats table for the full recording](./selector-stats-images/full-recording.png)
 
+When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable CSS selector stats** checkbox.
+
 
 <!-- ====================================================================== -->
-## Analyze Selector Stats
+## Analyze CSS selector stats
 
-To sort the data that's displayed in the **Selector Stats** table in ascending or descending order, click a column header.  For example, to see which selectors take up the most time, click the **Elapsed (µs)** column header:
+To sort the data that's displayed in the **Selector Stats** table in ascending or descending order, click a column header.  For example, to see which CSS selectors take up the most time, click the **Elapsed (ms)** column header:
 
-![The Selector Stats table with the selectors sorted by elapsed time, in descending order](./selector-stats-images/sort-by-elapsed-time.png)
+![The Selector Stats table with the CSS selectors sorted by elapsed time, in descending order](./selector-stats-images/sort-by-elapsed-time.png)
 
-If you find a CSS selector that took the browser a long time to calculate and was matched many times, it's a good candidate to try and improve.  Try to change your selector so it requires less time to calculate and matches fewer elements on the page.  How to improve your CSS selectors depend on your particular use case. Repeat the steps from the previous section to confirm that your changes helped decrease the **Recalculate Style** event duration.
+To try to improve the performance of your web page, focus on the CSS selectors that:
+
+* took a long time to calculate (high **Elapsed (ms)** value),
+* and which the browser attempted to match many times (high **Match Attempts** value),
+* and which the browser didn't actually match many elements with (low **Match Count** value compared to the **Match Attempts** value),
+* and with a high percentage of slow-path non-matches.
+
+For example, in the screenshot above:
+* The first CSS selector (`.gallery .photo .meta ::selection`) required the most time.
+* The browser engine attempted to match this CSS selector 6017 times, but only matched 3234 elements.
+* Out of the 2783 elements that didn't match, 78% of them required less optimized code to match.
+
+Therefore, this CSS selector is a good candidate to try to improve.
+
+Try to change your CSS selectors so they require less time to calculate, and match fewer elements on the page.  How to improve your CSS selectors depends on your particular use case.  Repeat the steps in the above "Record" and "View" sections, to confirm that your changes helped decrease the **Recalculate Style** event duration, in the **Elapsed (ms)** column.
 
 
 <!-- ====================================================================== -->

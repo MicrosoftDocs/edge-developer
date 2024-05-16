@@ -96,6 +96,7 @@ The following are some of the flags we've seen used.
 | `force-fieldtrials` | Can be used to force field trials when testing changes locally.  The argument is a list of name/value pairs, separated by forward slashes.  If a trial name is prefixed with an asterisk, that trial will start activated.  For example, the following argument defines two trials, with the second one activated: `EdgeNow/Enable/*MaterialDesignNTP/Default/`.  This option can also be used by the browser process to send the list of trials to a non-browser process, using the same format. |
 | `force-fieldtrial-params` | Can be used to force parameters of field trials when testing changes locally.  The argument is a parameter list of (key, value) pairs, prefixed by an associated (trial, group) pair.  For multiple (trial, group) pairs, use a comma separator. |
 | `force-renderer-accessibility` | Whether to force renderer accessibility to be on, instead of enabling renderer accessibility on-demand when a screen reader is detected.  The `disable-renderer-accessibility` flag overrides this flag, if the `disable-renderer-accessibility` flag is present. |
+| `HardwareMediaKeyHandling` | Enables handling of hardware media keys for controlling media. |
 | `ignore-certificate-errors` | Ignores certificate-related errors. |
 | `ignore-gpu-blocklist` | Whether to ignore the GPU blocklist. |
 | `incognito` | Forces Incognito mode even if user data directory is specified by using the `--user-data-dir` flag. |
@@ -117,6 +118,7 @@ The following are some of the flags we've seen used.
 | `msFloatyShouldHonorIndiaHoldout` | If `true`, honors the India holdout group.  Use this flag, set to `false`, to disable the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
+| `msSingleSignOnOSForPrimaryAccountIsShared` | If enabled, allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
 | `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI is shown when the user clicks a misspelled word. |
 | `msWebView2CodeCache` | If enabled, JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses (see [Custom management of network requests](..\how-to\webresourcerequested.md)). |
