@@ -72,6 +72,13 @@ JavaScript debugging is built in to Visual Studio Code; you can debug in Chrome,
 
 The DevTools extension gives additional functionality, such as the embedded DevTools browser which has a Device Emulation toolbar, and provides additional ways to enter Debug mode in Visual Studio Code.
 
+See also:
+* [Limitations of the embedded DevTools browser](./external-browser-window.md#limitations-of-the-embedded-devtools-browser) in _Using an external browser window_.
+
+
+<!-- ------------------------------ -->
+#### Start the debugger
+
 To start the Visual Studio Code debugger along with DevTools, by using the usual UI that's part of Visual Studio Code:
 
 1. Open a new Visual Studio Code window.  No folder (workspace) is open, and the **DevTools** tabs aren't open.

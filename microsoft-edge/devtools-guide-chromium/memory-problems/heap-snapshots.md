@@ -224,7 +224,7 @@ To hide internal nodes from the **Retainers** section, in the **Filter edges** d
 
 By default, the **Shallow Size** column in the **Memory** tool only includes the size of the object itself. The _shallow size_ is the size of the JavaScript heap that's _directly_ held by an object. The shallow size of an object is usually small, because a JavaScript object often only stores its description of the object, not the values, in the object's directly held memory. Most JavaScript objects store their values in a _backing store_ that's elsewhere in the JavaScript heap, and only expose a small wrapper object on the portion of the JavaScript heap that's directly owned by the object. For example, JavaScript `Array` instances store the contents of the array in a backing store, which is a separate memory location that's not included in the array's shallow size.
 
-Starting with Microsoft Edge 123, you can configure the **Shallow Size** column to report the entire size of objects, including the size of the object's backing store.
+You can configure the **Shallow Size** column to report the entire size of objects, including the size of the object's backing store.
 
 To include the entire size of objects in the **Shallow Size** column:
 
