@@ -43,6 +43,19 @@ This tab is also called:
 *  The _embedded DevTools browser_.
 
 
+<!-- ------------------------------ -->
+#### Limitations of the embedded DevTools browser
+
+The embedded Edge DevTools Browser in the Visual Studio Code DevTools extension provides a simple preview with many restrictions, and doesn't support all the features of a real web browser.  When you need a full-featured browser, use an external browser window instead of the embedded browser.  The embedded DevTools browser is a browser instance that runs without a user interface, and from which screen captures are being streamed.  Therefore, not all user interactions are implemented.
+
+The embedded DevTools browser has limitations including the following:
+
+* Drag-and-drop isn't supported.
+* `onPasteCapture` and `onPaste` events don't trigger.
+* The CSS `cursor` property isn't respected.
+* There might be visual performance issues.
+
+
 <!-- ====================================================================== -->
 ## Changing the setting
 
