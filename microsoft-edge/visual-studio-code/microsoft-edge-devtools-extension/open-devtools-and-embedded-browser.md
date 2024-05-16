@@ -312,3 +312,4 @@ Close instances of DevTools by using any of the following approaches:
 
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
+* [Limitations of the embedded DevTools browser](./external-browser-window.md#limitations-of-the-embedded-devtools-browser) in _Using an external browser window_.
