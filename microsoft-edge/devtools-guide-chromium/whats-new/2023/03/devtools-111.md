@@ -29,7 +29,7 @@ To give us feedback on the remote debugging flow for Microsoft Edge, leave a com
 See also:
 * [Remotely debug Windows devices](../../../remote-debugging/windows.md)
 * [Windows Device Portal for Desktop](/windows/uwp/debug-test-perf/device-portal-desktop)
-* [Remote debugging WebView2 WinUI 2 (UWP) apps](../../../../webview2/how-to/remote-debugging.md)
+* [Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps](../../../../webview2/how-to/remote-debugging-hololens.md)
 
 
 <!-- ====================================================================== -->
@@ -120,7 +120,7 @@ To export the **Selector Stats** table:
 ![Selecting the entire Selector Stats table for copy-paste](./devtools-111-images/export-selector-stats-table.png)
 
 See also:
-* [Analyze selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->

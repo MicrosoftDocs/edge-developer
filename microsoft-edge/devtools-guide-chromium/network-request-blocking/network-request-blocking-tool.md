@@ -56,6 +56,9 @@ To block a network request:
 
    ![The Network request blocking tool, blocking all JPEG images](./network-request-blocking-tool-images/blocked-images.png)
 
+See also:
+* [Block requests](../network/index.md#block-requests) in _Inspect network activity_.
+
 
 <!-- ====================================================================== -->
 ## Delete a blocked network request
