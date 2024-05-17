@@ -441,9 +441,9 @@
                   href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
                   displayName: Application tool
 
-                - name: Simulate PWA Window Controls Overlay
+                - name: Display content in a PWA's title bar using Window Controls Overlay
                   href: devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md
-                  displayName: Application tool
+                  displayName: Application tool, WCO
 
                 - name: Debug background services
                   href: devtools-guide-chromium/javascript/background-services.md

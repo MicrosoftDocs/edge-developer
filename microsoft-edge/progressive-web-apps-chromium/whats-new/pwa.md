@@ -18,7 +18,7 @@ Sections of this document correspond to historical releases of Microsoft Edge, a
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 121
 
-Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate PWA Window Controls Overlay](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
+Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Display content in a PWA's title bar using Window Controls Overlay](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->
@@ -265,7 +265,7 @@ Learn more about experimenting with Window Controls Overlay at [Display content 
 
 _2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and is available to all users, so the following no longer applies:_ Register your origin for the **Web App Window Controls Overlay** trial at the Origin Trials Developer Console.
 
-_2024 update:_ Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate PWA Window Controls Overlay](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
+_2024 update:_ Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Display content in a PWA's title bar using Window Controls Overlay](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
 #### URL Handlers origin trial
