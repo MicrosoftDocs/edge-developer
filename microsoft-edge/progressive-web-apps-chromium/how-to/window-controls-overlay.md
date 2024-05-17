@@ -148,13 +148,34 @@ if ('windowControlsOverlay' in navigator) {
 
 1DIV is a PWA demo app that uses the Window Controls Overlay feature.
 
-1. In Microsoft Edge, go to [1DIV](https://microsoftedge.github.io/Demos/1DIV/dist/) and install the app.
+1. In Microsoft Edge, open the [1DIV](https://microsoftedge.github.io/Demos/1DIV/dist/) demo app in a new window or tab.
 
-1. Click **Hide title bar** in the app title bar.
+1. In the Address bar, click the **App available. Install 1DIV** (![The "App App available. Install 1DIV" icon](./window-controls-overlay-images/app-available-install-icon.png)) button.  The **Install 1DIV app** dialog opens.
 
-   The app now displays content all the way to the top of the window frame, where the title bar used to be.  The top area of the app is a drag handler, to let users move the window.
+1. Click the **Install** button.  The 1DIV app opens in its own window, with the **App installed** dialog open:
+
+   ![The 1DIV app in its own window, displaying the "App installed" dialog](./window-controls-overlay-images/app-installed-dialog.png)
+
+1. Click the **Close** (X) button of the dialog.  (Or, select or clear checkboxes and then click the **Allow** button.)
+
+   The app's title bar contains the following window controls:
+
+   | Icon | Tooltip |
+   | --- | --- |
+   | ![The "Hide title bar" icon](./window-controls-overlay-images/hide-title-bar-icon.png) | **Hide title bar** |
+   | ![The "Open sidebar search" icon](./window-controls-overlay-images/open-sidebar-search-icon.png) | **Open sidebar search** |
+   | ![The "Settings and more" icon](./window-controls-overlay-images/settings-and-more-icon.png) | **Settings and more** |
+   | ![The "Minimize" icon](./window-controls-overlay-images/minimize-icon.png) | **Minimize** |
+   | ![The "Restore" icon](./window-controls-overlay-images/restore-icon.png) | **Restore** |
+   | ![The "Close" icon](./window-controls-overlay-images/close-icon.png) | **Close** |
+
+1. In the title bar, click the **Hide title bar** (![The "Hide title bar" icon](./window-controls-overlay-images/hide-title-bar-icon.png)) button.
+
+   The app now displays content all the way to the top of the window frame, where the title bar used to be:
 
    ![The top area of the map can be used to move the window](./window-controls-overlay-images/wco-draggable-titlebar.png)
+
+   The top area of the app is a drag handler,<!-- todo: 3x: drag handle? --> to let users move the window.
 
 The source code for this demo app is in the [1DIV](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV) repo.
 
