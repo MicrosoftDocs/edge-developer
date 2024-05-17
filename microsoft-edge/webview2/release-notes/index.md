@@ -187,8 +187,6 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 * Now returns a proper error code when `CreateSharedBuffer` is called with 0 buffer size.  ([Issue #4554](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4554))
 * Fixed an activation issue for the caret browsing dialog.
 * Fixed an issue where the WebView2 Visual Hosting `CursorChanged` event wasn't firing for custom cursors.
-* Fixed an issue where a web app could access the user's location without the required permission from the main app.
-
 
 <!-- end of May 2024 Prerelease SDK -->
 
