@@ -154,6 +154,7 @@ The following are some of the flags we've seen used.
 | `UseNativeThreadPool` | If enabled, WebView2 `ThreadPoolImpl` uses a foreground `ThreadGroup` that's backed by a native thread pool implementation. |
 | `UseBackgroundNativeThreadPool` | If this is enabled, WebView2 ThreadPoolImpl will use a background ThreadGroup backed by a native thread pool implementation. |
 | `V8Maglev` | Enables the Maglev compiler.  This only sets the V8 flag when manually overridden; otherwise, it defers to whatever the V8 default is. |
+| `BreakoutBoxPreferCaptureTimestampInVideoFrames` | Reverts the behavior of `Timestamp` property of the `Texture` interface to match legacy behavior of WebView2 runtime version 124 and earlier. |
 
 ---
 
