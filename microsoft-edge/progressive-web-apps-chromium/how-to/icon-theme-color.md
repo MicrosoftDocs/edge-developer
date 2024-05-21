@@ -308,9 +308,9 @@ Individual web pages can also define a theme color, by using the [`theme-color` 
 
 
 <!-- ------------------------------ -->
-#### Display app content in the title bar
+#### Display app content in the title bar area
 
-You can display your app content in the title bar area, by using the Window Controls Overlay feature.  See [Display content in the title bar](./window-controls-overlay.md).
+You can display your app content in the title bar area, by using the Window Controls Overlay feature.  See [Display content in the title bar using Window Controls Overlay](./window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->

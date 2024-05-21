@@ -1,5 +1,5 @@
 ---
-title: Display content in a PWA's title bar using Window Controls Overlay
+title: Simulate a Window Controls Overlay in a PWA's title bar
 description: Display content in a PWA's title bar using Window Controls Overlay.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/17/2024
 ---
-# Display content in a PWA's title bar using Window Controls Overlay
+# Simulate a Window Controls Overlay in a PWA's title bar
 
 In DevTools, in the **Application** tool, you can simulate the Window Controls Overlay (WCO) feature that Progressive Web Apps (PWAs) have, without having to install the PWA first and enable the WCO feature.  By simulating the WCO feature from within DevTools, you can test your title bar area's CSS code changes more quickly.
 
@@ -22,7 +22,7 @@ In your Progressive Web App (PWA), use the Window Controls Overlay (WCO) to have
 
 Use the **Window Controls Overlay** section to emulate window controls for Windows, Linux, and macOS.
 
-For more information about the Window Controls Overlay, see [Display content in the title bar](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md).
+For more information about the Window Controls Overlay, see [Display content in the title bar using Window Controls Overlay](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->
@@ -48,11 +48,11 @@ For more information about the Window Controls Overlay, see [Display content in 
 
    The simulated overlay is a static image of window controls.  The values of the CSS variables `env(titlebar-area-left)`, `env(titlebar-area-top)`, `env(titlebar-area-width)`, and `env(titlebar-area-height)` are set to match the platform that you selected.
 
-For more information about using the Window Controls Overlay in a Progressive Web App, see [Display content in the title bar](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md).
+For more information about using the Window Controls Overlay in a Progressive Web App, see [Display content in the title bar using Window Controls Overlay](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Display content in the title bar](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md) - the Window Controls Overlay feature for PWAs.
+* [Display content in the title bar using Window Controls Overlay](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md) - the Window Controls Overlay feature for PWAs.
 * [Tooling for PWA Window Controls Overlay](../whats-new/2024/01/devtools-121.md#tooling-for-pwa-window-controls-overlay) in _What's New in DevTools (Microsoft Edge 121)_.

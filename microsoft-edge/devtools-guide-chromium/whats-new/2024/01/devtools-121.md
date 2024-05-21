@@ -88,8 +88,8 @@ The **Application** tool has a new **Window Controls Overlay** section under **M
 Use the **Window Controls Overlay** section to emulate window controls for Windows, Linux, and macOS.
 
 See also:
-* [Display content in a PWA's title bar using Window Controls Overlay](../../../progressive-web-apps/simulate-window-controls-overlay.md)
-* [Display content in the title bar](../../../../progressive-web-apps-chromium/how-to/window-controls-overlay.md) - the Window Controls Overlay feature for PWAs.
+* [Simulate a Window Controls Overlay in a PWA's title bar](../../../progressive-web-apps/simulate-window-controls-overlay.md)
+* [Display content in the title bar using Window Controls Overlay](../../../../progressive-web-apps-chromium/how-to/window-controls-overlay.md)
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 

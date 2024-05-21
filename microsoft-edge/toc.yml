@@ -441,7 +441,7 @@
                   href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
                   displayName: Application tool
 
-                - name: Display content in a PWA's title bar using Window Controls Overlay
+                - name: Simulate a Window Controls Overlay in a PWA's title bar
                   href: devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md
                   displayName: Application tool, WCO
 
@@ -1161,7 +1161,7 @@
               href: progressive-web-apps-chromium/how-to/handle-protocols.md
               displayName: Handle protocols in Progressive Web Apps  # top-of-page title
 
-            - name: Display content in the title bar
+            - name: Display content in the title bar using Window Controls Overlay
               href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
 
             - name: Share content with other apps
