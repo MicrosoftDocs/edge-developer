@@ -191,7 +191,7 @@ The source code for this demo app is in the [1DIV](https://github.com/MicrosoftE
 <!-- ====================================================================== -->
 ## Preview the custom title bar without installing the PWA
 
-In Microsoft Edge DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate a Window Controls Overlay in a PWA's title bar](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
+In Microsoft Edge DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate a Window Controls Overlay in a PWA's title bar area](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->
