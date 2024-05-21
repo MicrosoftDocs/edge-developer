@@ -46,9 +46,7 @@ See [Display content in the title bar area using Window Controls Overlay](../../
 
    ![Overlay of window controls in upper right of demo webpage](./simulate-window-controls-overlay-images/demo-with-overlay.png)
 
-   The simulated overlay is a static image of window controls.  The values of the CSS variables `env(titlebar-area-left)`, `env(titlebar-area-top)`, `env(titlebar-area-width)`, and `env(titlebar-area-height)` are set to match the platform that you selected.
-
-For more information about using the Window Controls Overlay in a Progressive Web App, see [Display content in the title bar area using Window Controls Overlay](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md).
+   The simulated overlay is a static image.  The values of the CSS variables `env(titlebar-area-left)`, `env(titlebar-area-top)`, `env(titlebar-area-width)`, and `env(titlebar-area-height)` are set to match the platform that you selected.
 
 
 <!-- ====================================================================== -->
