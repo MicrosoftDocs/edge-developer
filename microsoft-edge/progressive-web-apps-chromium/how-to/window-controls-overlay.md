@@ -1,5 +1,5 @@
 ---
-title: Display content in the title bar using Window Controls Overlay
+title: Display content in the title bar area using Window Controls Overlay
 description: Use the Window Controls Overlay API to make use of the entire window area for your Progressive Web App, including the title bar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 09/01/2022
 ---
-# Display content in the title bar using Window Controls Overlay
+# Display content in the title bar area using Window Controls Overlay
 
 A Progressive Web App (PWA) that's installed on the desktop can display content where the title bar normally is, to make the PWA feel more native, by using the Window Controls Overlay API.
 

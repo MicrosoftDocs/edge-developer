@@ -60,7 +60,7 @@ If your app has several HTML pages, make sure users can go between the pages usi
 
 To create a more immersive, native-like experience, _desktop_ PWAs can also choose to hide the default operating system title bar and display their own content instead. Displaying content where the title bar normally is can help PWAs feel more like native apps.  Many desktop applications, such as Visual Studio Code, Microsoft Teams, and Microsoft Edge already do this.
 
-To replace the title bar, see [Display content in the title bar using Window Controls Overlay](./window-controls-overlay.md).
+To replace the title bar, see [Display content in the title bar area using Window Controls Overlay](./window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->

@@ -1161,7 +1161,7 @@
               href: progressive-web-apps-chromium/how-to/handle-protocols.md
               displayName: Handle protocols in Progressive Web Apps  # top-of-page title
 
-            - name: Display content in the title bar using Window Controls Overlay
+            - name: Display content in the title bar area using Window Controls Overlay
               href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
 
             - name: Share content with other apps

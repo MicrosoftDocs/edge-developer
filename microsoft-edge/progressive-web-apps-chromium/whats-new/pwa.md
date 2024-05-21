@@ -75,7 +75,7 @@ This feature makes PWAs that are installed on desktop operating systems such as 
 ![A PWA, with a custom titlebar](./pwa-images/custom-title-bar.png)
 
 See also:
-* [Display content in the title bar using Window Controls Overlay](../how-to/window-controls-overlay.md).
+* [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md).
 * [Closing a 30 pixel gap between native and web](https://blogs.windows.com/msedgedev/2022/09/27/closing-pixel-gap-native-web-window-controls-overlay/).
 * [Window Controls Overlay API](https://developer.mozilla.org/docs/Web/API/Window_Controls_Overlay_API) on MDN.
 
@@ -260,7 +260,7 @@ Learn more in [Publish a Progressive Web App to the Microsoft Store](../how-to/m
 
 To have more control over the title bar area that's currently displayed in standalone display mode, you may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window. This layout frees up more space for the web content layer. WCO is available for installed desktop PWAs.
 
-See [Display content in the title bar using Window Controls Overlay](../how-to/window-controls-overlay.md).
+See [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md).
 
 _2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and is available to all users, so the following no longer applies:_ Register your origin for the **Web App Window Controls Overlay** trial at the Origin Trials Developer Console.
 

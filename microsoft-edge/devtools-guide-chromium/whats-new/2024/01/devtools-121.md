@@ -89,7 +89,7 @@ Use the **Window Controls Overlay** section to emulate window controls for Windo
 
 See also:
 * [Simulate a Window Controls Overlay in a PWA's title bar area](../../../progressive-web-apps/simulate-window-controls-overlay.md)
-* [Display content in the title bar using Window Controls Overlay](../../../../progressive-web-apps-chromium/how-to/window-controls-overlay.md)
+* [Display content in the title bar area using Window Controls Overlay](../../../../progressive-web-apps-chromium/how-to/window-controls-overlay.md)
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
