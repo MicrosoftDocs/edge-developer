@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 09/01/2022
+ms.date: 05/22/2024
 ---
 # Display content in the title bar area using Window Controls Overlay
 
@@ -160,12 +160,11 @@ if ('windowControlsOverlay' in navigator) {
 
 1. Click the **Close** (X) button of the dialog.  (Or, select or clear checkboxes and then click the **Allow** button.)
 
-   The app's title bar contains the following window controls:
+   The app's title bar contains at least the following window controls:
 
    | Icon | Tooltip |
    | --- | --- |
    | ![The "Hide title bar" icon](./window-controls-overlay-images/hide-title-bar-icon.png) | **Hide title bar** |
-   | ![The "Open sidebar search" icon](./window-controls-overlay-images/open-sidebar-search-icon.png) | **Open sidebar search** |
    | ![The "Settings and more" icon](./window-controls-overlay-images/settings-and-more-icon.png) | **Settings and more** |
    | ![The "Minimize" icon](./window-controls-overlay-images/minimize-icon.png) | **Minimize** |
    | ![The "Restore" icon](./window-controls-overlay-images/restore-icon.png) | **Restore** |
@@ -195,12 +194,13 @@ In Microsoft Edge DevTools, in the **Application** tool, you can simulate the Wi
 
 The simulated overlay is a static image.  The values of the CSS variables `env(titlebar-area-left)`, `env(titlebar-area-top)`, `env(titlebar-area-width)`, and `env(titlebar-area-height)` are set to match the platform that you select.
 
-See [Simulate a Window Controls Overlay in a PWA's title bar area](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
+See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
+* [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md) - DevTools feature.
 * [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
 * [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
 * [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)

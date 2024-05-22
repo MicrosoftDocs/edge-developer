@@ -445,7 +445,7 @@
                   href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
                   displayName: Application tool
 
-                - name: Simulate a Window Controls Overlay in a PWA's title bar area
+                - name: Simulate the Window Controls Overlay API without installing your PWA
                   href: devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md
                   displayName: Application tool, WCO
 

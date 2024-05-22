@@ -1,14 +1,14 @@
 ---
-title: Simulate a Window Controls Overlay in a PWA's title bar area
-description: Display content in a PWA's title bar area by using the Window Controls Overlay API.
+title: Simulate the Window Controls Overlay API without installing your PWA
+description: Simulate enabling the Window Controls Overlay API in your Progressive Web App (PWA), to test your CSS styles, without having to install the PWA first.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 05/21/2024
+ms.date: 05/22/2024
 ---
-# Simulate a Window Controls Overlay in a PWA's title bar area
+# Simulate the Window Controls Overlay API without installing your PWA
 
 In DevTools, in the **Application** tool, you can simulate the Window Controls Overlay (WCO) feature that Progressive Web Apps (PWAs) have, without having to install the PWA first and enable the WCO feature.  By simulating the WCO feature from within DevTools, you can test CSS code changes for your title bar area more quickly than by re-installing the revised PWA.
 
@@ -18,11 +18,9 @@ In DevTools, in the **Application** tool, you can simulate the Window Controls O
 <!-- ====================================================================== -->
 ## Using the WCO feature in your PWA
 
-In your Progressive Web App (PWA), use the Window Controls Overlay (WCO) to have control over the title bar area that's currently displayed in standalone display mode.  Window Controls Overlay is a set of features that work together to provide just the essential controls needed for the app window.  This layout frees up more space for the web content layer.
+In your Progressive Web App (PWA), use the Window Controls Overlay (WCO) to have control over the title bar area that's currently displayed in standalone display mode.  Window Controls Overlay is a set of features that work together to provide just the essential controls needed for the app window.  This layout frees up more space for the web content layer.  See [Display content in the title bar area using Window Controls Overlay](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md).
 
-Use the **Window Controls Overlay** section to emulate window controls for Windows, Linux, and macOS.
-
-See [Display content in the title bar area using Window Controls Overlay](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md).
+To simulate the WCO feature for Windows, Linux, and macOS in your PWA without having to install the PWA first, use the **Window Controls Overlay** section of the **Application** tool in DevTools.
 
 
 <!-- ====================================================================== -->
