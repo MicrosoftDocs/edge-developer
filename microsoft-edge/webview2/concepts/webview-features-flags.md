@@ -69,8 +69,8 @@ The following are some of the flags we've seen used.
 | `AutofillReplaceCachedWebElementsByRendererIds` | If enabled, replaces cached web elements in AutofillAgent and FormTracker by their renderer IDs. |
 | `autoplay-policy` | Command-line flag name to set the autoplay policy. |
 | `BlockInsecurePrivateNetworkRequests` | When this feature is enabled, private network requests that are initiated from non-secure contexts in the `public` address space are blocked. |
-| `BreakoutBoxPreferCaptureTimestampInVideoFrames` | Reverts the behavior of the `Timestamp` property of the `CoreWebView2Texture` class to match legacy behavior of WebView2 Runtime version 124 and earlier. |
 | `block-new-web-contents` | If `true`, all pop-ups and calls to `window.open` fail. |
+| `BreakoutBoxPreferCaptureTimestampInVideoFrames` | Reverts the behavior of the `Timestamp` property of the `CoreWebView2Texture` class to match legacy behavior of WebView2 Runtime version 124 and earlier. |
 | `disable-background-timer-throttling` | Disables task throttling of timer tasks from background pages. |
 | `disable-domain-action-user-agent-override` | Disables the per-domain User Agent override from the Domain Actions feature. |
 | `disable-gpu` | Disables GPU hardware acceleration.  If a software renderer isn't in place, the GPU process doesn't launch. |
