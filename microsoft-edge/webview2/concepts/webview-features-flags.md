@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/19/2024
+ms.date: 05/21/2024
 ---
 # WebView2 browser flags
 
@@ -70,6 +70,7 @@ The following are some of the flags we've seen used.
 | `autoplay-policy` | Command-line flag name to set the autoplay policy. |
 | `BlockInsecurePrivateNetworkRequests` | When this feature is enabled, private network requests that are initiated from non-secure contexts in the `public` address space are blocked. |
 | `block-new-web-contents` | If `true`, all pop-ups and calls to `window.open` fail. |
+| `BreakoutBoxPreferCaptureTimestampInVideoFrames` | Reverts the behavior of the `Timestamp` property of the `CoreWebView2Texture` class to match legacy behavior of WebView2 Runtime version 124 and earlier. |
 | `disable-background-timer-throttling` | Disables task throttling of timer tasks from background pages. |
 | `disable-domain-action-user-agent-override` | Disables the per-domain User Agent override from the Domain Actions feature. |
 | `disable-gpu` | Disables GPU hardware acceleration.  If a software renderer isn't in place, the GPU process doesn't launch. |
@@ -151,8 +152,8 @@ The following are some of the flags we've seen used.
 | `use-system-proxy-resolver` | Uses WinHttp to resolve proxies instead of using WebView2's normal proxy resolution logic.  This flag is only supported in Windows. |
 | `user-agent` | A string used to override the default user agent with a custom user agent. |
 | `user-data-migrated` | Indicates that this process is the product of a relaunch following migration of user data. |
-| `UseNativeThreadPool` | If enabled, WebView2 `ThreadPoolImpl` uses a foreground `ThreadGroup` that's backed by a native thread pool implementation. |
 | `UseBackgroundNativeThreadPool` | If this is enabled, WebView2 ThreadPoolImpl will use a background ThreadGroup backed by a native thread pool implementation. |
+| `UseNativeThreadPool` | If enabled, WebView2 `ThreadPoolImpl` uses a foreground `ThreadGroup` that's backed by a native thread pool implementation. |
 | `V8Maglev` | Enables the Maglev compiler.  This only sets the V8 flag when manually overridden; otherwise, it defers to whatever the V8 default is. |
 
 ---
