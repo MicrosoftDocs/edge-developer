@@ -129,7 +129,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 ###### Runtime-only
 
 * Fixed a bug where if the `LaunchingExternalURIScheme` event handler is attached, and the **always remember** checkbox is enabled, and the user selects this checkbox, the dialog is incorrectly displayed again. 
-* Fixed an issue where text edit controls in visual hosting would duplicate IME input when losing and regaining focus.<!-- todo: when losing OR regaining focus? -->
+* Fixed an issue where text edit controls in visual hosting would duplicate IME input when losing and then regaining focus.
 * Fixed an issue where full-trust UWP apps couldn't display owned windows.
 
 
