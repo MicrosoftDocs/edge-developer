@@ -394,7 +394,7 @@ The WebView2 control gives your app access to many browser features.  You can mo
 * [Permissions](#permissions)
 * [Context menus](#context-menus)
 * [Status bar](#status-bar)
-* [Fluent Style Overlay Scrollbar](#fluent-style-overlay-scrollbar)<!-- todo: capitalization? -->
+* [Fluent overlay scrollbars](#fluent-overlay-scrollbars)
 * [User Agent](#user-agent)
 * [Autofill](#autofill)
 * [Audio](#audio)
@@ -778,13 +778,14 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Fluent Style Overlay Scrollbar
-<!-- todo: correct capitalization?  corp style is Sentence case for headings, unless product name.  exceptions: Release Notes, What's New. -->
+#### Fluent overlay scrollbars
 
-Support for the Fluent Style Overlay Scrollbar.
+Stylyzes scrollbars with Microsoft Fluent design and makes the scrollbars overlay over the web content.  This adaptive scrollbar design adjusts to various devices and window sizes.
+
+To experiment with Fluent overlay scrollbars, in Microsoft Edge, go to `edge://flags` and then enter **Fluent overlay scrollbars**.
 
 See also: 
-* [x]
+* [WebView2 browser flags](./webview-features-flags.md) - `msEdgeFluentOverlayScrollbar`.
 <!-- todo: article to link to? -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
