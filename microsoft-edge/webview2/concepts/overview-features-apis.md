@@ -780,7 +780,7 @@ See also:
 <!-- ------------------------------ -->
 #### Fluent overlay scrollbars
 
-Stylyzes scrollbars with Microsoft Fluent design and makes the scrollbars overlay over the web content.  This adaptive scrollbar design adjusts to various devices and window sizes.
+Stylizes scrollbars with Microsoft Fluent design and makes the scrollbars overlay over the web content.  This adaptive scrollbar design adjusts to various devices and window sizes.
 
 To experiment with Fluent overlay scrollbars, in Microsoft Edge, go to `edge://flags` and then enter **Fluent overlay scrollbars**.
 
