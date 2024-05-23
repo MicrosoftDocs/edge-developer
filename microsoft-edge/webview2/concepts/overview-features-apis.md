@@ -785,7 +785,7 @@ Stylyzes scrollbars with Microsoft Fluent design and makes the scrollbars overla
 To experiment with Fluent overlay scrollbars, in Microsoft Edge, go to `edge://flags` and then enter **Fluent overlay scrollbars**.
 
 See also: 
-* [WebView2 browser flags](./webview-features-flags.md) - `msEdgeFluentOverlayScrollbar`.
+* [WebView2 browser flags](./webview-features-flags.md) - `msEdgeFluentOverlayScrollbar` and `msOverlayScrollbarWinStyle` flags.
 <!-- todo: article to link to? -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
