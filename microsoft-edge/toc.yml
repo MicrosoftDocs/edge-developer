@@ -445,6 +445,10 @@
                   href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
                   displayName: Application tool
 
+                - name: Simulate the Window Controls Overlay API without installing your PWA
+                  href: devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md
+                  displayName: Application tool, WCO
+
                 - name: Debug background services
                   href: devtools-guide-chromium/javascript/background-services.md
                   displayName: Application tool
@@ -1161,7 +1165,7 @@
               href: progressive-web-apps-chromium/how-to/handle-protocols.md
               displayName: Handle protocols in Progressive Web Apps  # top-of-page title
 
-            - name: Display content in the title bar
+            - name: Display content in the title bar area using Window Controls Overlay
               href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
 
             - name: Share content with other apps
