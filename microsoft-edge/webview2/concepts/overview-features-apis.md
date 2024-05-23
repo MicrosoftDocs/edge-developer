@@ -394,6 +394,7 @@ The WebView2 control gives your app access to many browser features.  You can mo
 * [Permissions](#permissions)
 * [Context menus](#context-menus)
 * [Status bar](#status-bar)
+* [Fluent Style Overlay Scrollbar](#fluent-style-overlay-scrollbar)<!-- todo: capitalization? -->
 * [User Agent](#user-agent)
 * [Autofill](#autofill)
 * [Audio](#audio)
@@ -778,7 +779,7 @@ See also:
 
 <!-- ------------------------------ -->
 #### Fluent Style Overlay Scrollbar
-<!-- todo: capitalization? -->
+<!-- todo: correct capitalization?  corp style is Sentence case for headings, unless product name.  exceptions: Release Notes, What's New. -->
 
 Support for the Fluent Style Overlay Scrollbar.
 
