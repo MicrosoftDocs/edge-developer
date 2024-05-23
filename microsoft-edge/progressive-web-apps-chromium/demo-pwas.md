@@ -26,7 +26,7 @@ PWAmp uses the following features:
 
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| Window Controls Overlay | The space normally reserved to the title bar can be used by PWAmp to display a visualization of the current song. | [Display content in the title bar](how-to/window-controls-overlay.md) |
+| Window Controls Overlay | The space normally reserved to the title bar can be used by PWAmp to display a visualization of the current song. | [Display content in the title bar area using Window Controls Overlay](how-to/window-controls-overlay.md) |
 | Protocol Handling | Links that start with `web+amp:` can be used to share remote songs. | [Handle protocols in Progressive Web Apps](how-to/handle-protocols.md) |
 | File Handling | Audio files can be opened with PWAmp directly. Right-click on a file ending with `.mp3` for example and click **Open with**. | [Handle files in Progressive Web Apps](how-to/handle-files.md) |
 | Web Share | Songs can be shared with other apps through the operating system sharing dialog. | [Sharing content](how-to/share.md#sharing-content) |
@@ -48,7 +48,7 @@ Wami uses the following features:
 
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| Window Controls Overlay | The space normally reserved to the title bar can be used by wami. | [Display content in the title bar](how-to/window-controls-overlay.md) |
+| Window Controls Overlay | The space normally reserved to the title bar can be used by wami. | [Display content in the title bar area using Window Controls Overlay](how-to/window-controls-overlay.md) |
 | File System Access | Wami can save transformed images back to disk. | [File System Access API](https://developer.mozilla.org/docs/Web/API/File_System_Access_API) |
 
 
@@ -81,7 +81,7 @@ My Tracks uses the following features:
 
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| Window Controls Overlay | The space normally reserved to the title bar is used by My Tracks to display its own search bar. | [Display content in the title bar](how-to/window-controls-overlay.md) |
+| Window Controls Overlay | The space normally reserved to the title bar is used by My Tracks to display its own search bar. | [Display content in the title bar area using Window Controls Overlay](how-to/window-controls-overlay.md) |
 | Protocol Handling | My Tracks handles URIs that start with the `geo:` protocol to show locations on the map. | [Handle protocols in Progressive Web Apps](how-to/handle-protocols.md) |
 | File Handling | My Tracks natively handles `*.gpx` files. | [Handle files in Progressive Web Apps](how-to/handle-files.md) |
 | Shortcuts | My Tracks defines shortcuts to easily hide and show all tracks from the map. | [Define app shortcuts](how-to/shortcuts.md) |
@@ -137,7 +137,7 @@ BPM Techno uses the following features:
 
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| Window Controls Overlay | 1DIV uses the space normally reserved by the title bar to display a logo, search field, and button. | [Display content in the title bar](how-to/window-controls-overlay.md) |
+| Window Controls Overlay | 1DIV uses the space normally reserved by the title bar to display a logo, search field, and button. | [Display content in the title bar area using Window Controls Overlay](how-to/window-controls-overlay.md) |
 
 
 <!-- ====================================================================== -->
