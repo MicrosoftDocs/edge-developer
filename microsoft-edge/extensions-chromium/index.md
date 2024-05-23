@@ -132,11 +132,13 @@ Just because an extension doesn't have a **Featured** badge, doesn't mean the ex
 *  [Manage Microsoft Edge extensions in the enterprise](/deployedge/microsoft-edge-manage-extensions)
 
 External links:
-*  [Port a Google Chrome extension](https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension)
 *  [Build a Safari App extension](https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension)
 *  [Your first extension (Firefox)](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
 *  [Extensions > Get started](https://developer.chrome.com/docs/extensions/get-started/)
 *  [Get started (Opera)](https://dev.opera.com/extensions/getting-started)
+<!-- April 2024: todo: if/when this page is fixed to not give an xml error listing and thus not give "404" in doc build report, uncomment:
+*  [Port a Google Chrome extension](https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension)
+-->
 
 Extensions for Visual Studio Code rather than for Microsoft Edge:
 *  [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md)
