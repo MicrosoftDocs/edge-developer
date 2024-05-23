@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 ---
 # Overview of WebView2 features and APIs
 
@@ -16,7 +16,42 @@ Embedding the WebView2 control in your app gives your app access to various meth
 <!-- ====================================================================== -->
 ## INCOMING
 
-todo; paste here from Release > Promotions to Stable in PR __ after that PR is merged/published.  Then delete ?view params, here.
+
+<!-- ------------------------------ -->
+#### Support for the Fluent Style Overlay Scrollbar
+
+See also: 
+* [x]
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.ScrollBarStyle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.scrollbarstyle)
+
+* [CoreWebView2ScrollbarStyle Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2scrollbarstyle)
+   * `Default`
+   * `FluentOverlay`
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2EnvironmentOptions` Class:
+   * [CoreWebView2EnvironmentOptions.ScrollBarStyle Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#scrollbarstyle)
+
+* [CoreWebView2ScrollbarStyle Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scrollbarstyle)
+   * `Default`
+   * `FluentOverlay`
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2EnvironmentOptions8](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions8)
+  * [ICoreWebView2EnvironmentOptions8::get_ScrollBarStyle](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions8#get_scrollbarstyle)
+  * [ICoreWebView2EnvironmentOptions8::put_ScrollBarStyle](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions8#put_scrollbarstyle)
+
+* [COREWEBVIEW2_SCROLLBAR_STYLE enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_scrollbar_style)
+   * `COREWEBVIEW2_SCROLLBAR_STYLE_DEFAULT`
+   * `COREWEBVIEW2_SCROLLBAR_STYLE_FLUENT_OVERLAY`
+
+---
 
 
 <!-- ====================================================================== -->
@@ -2739,10 +2774,8 @@ Runtime selection supports prerelease testing and self-hosting.  When creating a
 
 See also:
 * [Test upcoming APIs and features](../how-to/set-preview-channel.md)
-<!-- todo: link, after PR https://github.com/MicrosoftDocs/edge-developer/pull/3053 is merged:
 * [Prerelease testing using preview channels](../how-to/prerelease-testing.md)
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)
--->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
