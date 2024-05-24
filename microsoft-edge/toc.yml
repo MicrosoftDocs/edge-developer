@@ -1734,8 +1734,8 @@
       href: dev-videos/index.md
       displayName: youtube
 
-    - name: Privacy whitepaper
-      href: privacy-whitepaper/index.md
+    - name: Privacy Whitepaper
+      href: /legal/microsoft-edge/privacy
 
     - name: The Web We Want initiative
       href: web-we-want/index.md
