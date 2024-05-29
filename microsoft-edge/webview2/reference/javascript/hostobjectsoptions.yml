@@ -96,6 +96,20 @@ properties:
       content: 'log: (...data: any[]) => void;'
       return:
         type: '(...data: any[]) =&gt; void'
+  - name: shouldPassTypedArraysAsArrays
+    uid: 'WebView2Script!HostObjectsOptions#shouldPassTypedArraysAsArrays:member'
+    package: WebView2Script!
+    fullName: shouldPassTypedArraysAsArrays
+    summary: >-
+      By default, typed arrays will be passed to host as IDispatch. Otherwise, set to true to pass typed arrays to host
+      as array.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shouldPassTypedArraysAsArrays: boolean;'
+      return:
+        type: boolean
   - name: shouldSerializeDates
     uid: 'WebView2Script!HostObjectsOptions#shouldSerializeDates:member'
     package: WebView2Script!
