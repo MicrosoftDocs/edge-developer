@@ -101,8 +101,8 @@ properties:
     package: WebView2Script!
     fullName: shouldPassTypedArraysAsArrays
     summary: >-
-      By default, typed arrays will be passed to host as IDispatch. Otherwise, set to true to pass typed arrays to host
-      as array.
+      By default, typed arrays are passed to the host as `IDispatch`. To instead pass typed arrays to the host
+      as `array`, set this to `true`.
     remarks: ''
     isPreview: false
     isDeprecated: false
