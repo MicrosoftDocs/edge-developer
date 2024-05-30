@@ -36,9 +36,9 @@ The WebView2 WinRT JS Projection tool (**wv2winrt**) converts from WinRT to Java
 | Class static member | JavaScript object property | See below. |
 | Class constructor | JavaScript constructor and function | See below. |
 
-A couple notes for passing JavaScript objects to host objects:
-*  If JavaScript Date objects need to be passed to host objects as `VT_DATE`, the host objects property `shouldSerializeDates` should be set to true. By default, it is passed to host as string using `JSON.stringify`.
-*  If JavaScript typed arrays need to be passed to host objects as array, the host objects property `shouldPassTypedArraysAsArrays` should be set to true. By default, it is passed to host as `IDispatch`.
+When passing JavaScript objects to host objects:
+*  If JavaScript `Date` objects need to be passed to host objects as `VT_DATE`, set the host object's `shouldSerializeDates` property to `true`. By default, `Date` objects are passed to the host as `string`, by using `JSON.stringify`.
+*  If JavaScript typed arrays need to be passed to host objects as `array`, set the host object's `shouldPassTypedArraysAsArrays` property to `true`. By default, typed arrays are passed to the host as `IDispatch`.
 
 See also:
 * [Introduction to Microsoft Interface Definition Language 3.0](/uwp/midl-3/intro)
@@ -128,7 +128,7 @@ console.assert(result.intParam2 == 1);
 console.assert(result.intParam3 == 2);
 ```
 
-For array type `out` parameters, the array will need to be passed into the method's parameter list when calling from JavaScript. For non-`void` return type, the result array will replace the array passed in for the method call. For `void` return type, the result array will be the result of the method call.
+For array type `out` parameters, the array needs to be passed into the method's parameter list when calling the method. For a non-`void` return type, the result array will replace the array that's passed in for the method call. For the `void` return type, the result array will be the result of the method call.
 
 ```cpp
 // Both methods update input array values to index values
@@ -151,7 +151,7 @@ let result2 = object.VoidMethodWithArrayOutParam(input_array2);
 console.assert(result2 == [0, 1, 2]);
 ```
 
-If passing typed arrays as array `out` parameters, `chrome.webview.hostObjects.options.shouldPassTypedArraysAsArrays` will need to be set to true.
+If passing typed arrays as array `out` parameters, `chrome.webview.hostObjects.options.shouldPassTypedArraysAsArrays` needs to be set to `true`.
  
 See also:
 * [Issue #2788](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2788) about WebView2 SDK and Windows App SDK (WinUI3) in C++ WinRT
