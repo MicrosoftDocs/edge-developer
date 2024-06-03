@@ -11,7 +11,9 @@ const FILES_TO_IGNORE = [
     '../microsoft-edge/webview2/release-notes/archive.md',
     '../microsoft-edge/progressive-web-apps-chromium/whats-new/*.md',
     // Experimental features also often have version numbers in them. Let's ignore them too.
-    '../microsoft-edge/devtools-guide-chromium/experimental-features/index.md'
+    '../microsoft-edge/devtools-guide-chromium/experimental-features/index.md',
+    // Ignore the site-impacting-changes article, since this references older versions on purpose.
+    '../microsoft-edge/web-platform/site-impacting-changes.md'
 ];
 // This script attempts to find the current edge release version by looking at this page and finding the first version header occurrence.
 const RELEASE_NOTES_PAGE = 'https://learn.microsoft.com/deployedge/microsoft-edge-relnote-stable-channel';
