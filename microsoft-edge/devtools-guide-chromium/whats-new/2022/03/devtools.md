@@ -13,6 +13,10 @@ ms.date: 03/09/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- todo: thumbnail like in https://learn.microsoft.com/en-us/microsoft-edge/dev-videos/#devtools---whats-new-in-devtools-105 -->
+* [What's New in DevTools 99](https://www.youtube.com/watch?v=Z5-tEE_cNTo)
+
+
 <!-- ====================================================================== -->
 ## Securely debug your production code with source maps from Azure Artifacts Symbol Server
 

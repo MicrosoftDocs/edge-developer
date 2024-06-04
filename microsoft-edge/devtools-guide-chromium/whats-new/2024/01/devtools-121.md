@@ -13,6 +13,10 @@ ms.date: 01/25/2024
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- todo: thumbnail like in https://learn.microsoft.com/en-us/microsoft-edge/dev-videos/#devtools---whats-new-in-devtools-105 -->
+* [What's New in DevTools 115-125] - forthcoming
+
+
 <!-- ====================================================================== -->
 ## Z-index and DOM tabs in 3D View tool are now working
 

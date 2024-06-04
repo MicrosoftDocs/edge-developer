@@ -13,6 +13,10 @@ ms.date: 05/16/2024
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- todo: thumbnail like in https://learn.microsoft.com/en-us/microsoft-edge/dev-videos/#devtools---whats-new-in-devtools-105 -->
+* [What's New in DevTools 115-125] - forthcoming
+
+
 <!-- ====================================================================== -->
 ## New dedicated setting for CSS Selector Stats in Performance tool
 

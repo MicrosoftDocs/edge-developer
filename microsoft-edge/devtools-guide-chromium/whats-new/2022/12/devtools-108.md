@@ -14,6 +14,9 @@ ms.date: 12/01/2022
 
 <!-- find "todo" in this .md file -->
 
+<!-- todo: thumbnail like in https://learn.microsoft.com/en-us/microsoft-edge/dev-videos/#devtools---whats-new-in-devtools-105 -->
+* [What's New in DevTools 108](https://www.youtube.com/watch?v=KmGXnsSCtI4)
+
 
 <!-- ====================================================================== -->
 ## Microsoft Edge WebDriver is now available for macOS running on Apple M1

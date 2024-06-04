@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 05/24/2022
+ms.date: 06/04/2024
 ---
 # Videos about web development with Microsoft Edge
 
@@ -27,6 +27,58 @@ To add a new video:
 - Add a markdown image below the date, with the thumbnail you added before, and link this image tag to the YouTube video.
 - Place the description below that, fixing any links that came from YouTube and that might have been shortened.
 -->
+
+
+<!-- ====================================================================== -->
+## Microsoft Edge channel at YouTube
+
+You can find all videos about development using Microsoft Edge at the [Microsoft Edge (@MSFTEdge) channel at YouTube](https://www.youtube.com/@MSFTEdge/videos).
+
+
+<!-- ====================================================================== -->
+## additional video 1
+
+todo: link
+
+<!-- todo: Add some other video from Microsoft Edge - YouTube to top of article.  Videos for Edge devs, not the Enterprise or end-user videos. -->
+
+
+<!-- ====================================================================== -->
+## additional video 2
+
+todo: link
+
+
+<!-- ====================================================================== -->
+## additional video 3
+
+todo: link
+
+
+<!-- ====================================================================== -->
+## additional video 4
+
+todo: link
+
+
+<!-- ====================================================================== -->
+## additional video 5
+
+todo: link
+
+
+<!-- ====================================================================== -->
+## DevTools - What's New in DevTools 115-125
+
+Forthcoming.<!-- todo: link -->
+
+
+<!-- ====================================================================== -->
+## DevTools - What's New in DevTools 113-114
+
+_Published on 24 July 2023._
+
+* [What's New in DevTools 113 and 114](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
 
 
 <!-- ====================================================================== -->
@@ -292,3 +344,9 @@ _Published on 12 Nov 2021._
 [![Thumbnail image for the DevTools What's New in 94 video](./index-images/devtools-whatsnew-94.png)](https://www.youtube.com/watch?v=S-g1E_W9wQQ)
 
 Learn more about our latest announcements from the Microsoft Edge DevTools team at [What's New in DevTools 94](../devtools-guide-chromium/whats-new/2021/09/devtools.md).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Microsoft Edge (@MSFTEdge) channel at YouTube](https://www.youtube.com/@MSFTEdge/videos)
