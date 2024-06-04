@@ -82,6 +82,48 @@ _Published on 24 July 2023._
 
 
 <!-- ====================================================================== -->
+## DevTools - What's New in DevTools 112
+
+todo: YouTube link, What's New link
+
+
+<!-- ====================================================================== -->
+## DevTools - What's New in DevTools 111
+
+todo: YouTube link, What's New link
+
+
+<!-- ====================================================================== -->
+## DevTools - What's New in DevTools 110
+
+todo: YouTube link, What's New link
+
+
+<!-- ====================================================================== -->
+## DevTools - What's New in DevTools 109
+
+todo: YouTube link, What's New link
+
+
+<!-- ====================================================================== -->
+## DevTools - What's New in DevTools 108
+
+todo: YouTube link, What's New link
+
+
+<!-- ====================================================================== -->
+## DevTools - What's New in DevTools 107
+
+todo: YouTube link, What's New link
+
+
+<!-- ====================================================================== -->
+## DevTools - What's New in DevTools 106
+
+todo: YouTube link, What's New link
+
+
+<!-- ====================================================================== -->
 ## DevTools - What's New in DevTools 105
 
 _Published on 6 September 2022._
@@ -344,6 +386,14 @@ _Published on 12 Nov 2021._
 [![Thumbnail image for the DevTools What's New in 94 video](./index-images/devtools-whatsnew-94.png)](https://www.youtube.com/watch?v=S-g1E_W9wQQ)
 
 Learn more about our latest announcements from the Microsoft Edge DevTools team at [What's New in DevTools 94](../devtools-guide-chromium/whats-new/2021/09/devtools.md).
+
+
+<!-- ====================================================================== -->
+## DevTools - What's New in DevTools 93
+
+todo: YouTube link, What's New link
+
+https://www.youtube.com/watch?v=rDB_a4bUeeA
 
 
 <!-- ====================================================================== -->
