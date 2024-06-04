@@ -9,6 +9,8 @@ ms.date: 06/04/2024
 ---
 # Videos about web development with Microsoft Edge
 
+<!-- todo: Add some other video from Microsoft Edge - YouTube to top of article.  Videos for Edge devs, not the Enterprise or end-user videos. -->
+
 Discover and learn about new Microsoft Edge web development technologies and products including DevTools, web platform APIs and features, Progressive Web Apps, and WebView2.
 
 This page contains links to short videos, each focused on just one feature and including a demo.
@@ -36,11 +38,14 @@ You can find all videos about development using Microsoft Edge at the [Microsoft
 
 
 <!-- ====================================================================== -->
-## additional video 1
+## Explain DevTools Console errors using Copilot in Edge
 
-todo: link
+_Published on Feb. 8, 2024._
 
-<!-- todo: Add some other video from Microsoft Edge - YouTube to top of article.  Videos for Edge devs, not the Enterprise or end-user videos. -->
+[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./index-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
+
+See also:
+* [Explain Console errors and warnings using Copilot in Edge](../devtools-guide-chromium/console/copilot-explain-console.md)
 
 
 <!-- ====================================================================== -->

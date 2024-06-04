@@ -17,6 +17,11 @@ When inspecting a webpage with DevTools, you often see errors and warnings in th
 ![Copilot in the Microsoft Edge sidebar, showing the error message and the explanation](./copilot-explain-console-images/copilot-error-explanation.png)
 
 
+Video: Explain DevTools Console errors using Copilot in Edge:
+
+[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./copilot-explain-console-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
+
+
 <!-- ------------------------------ -->
 #### Supported scenarios
 
