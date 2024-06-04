@@ -12,10 +12,10 @@ ms.date: 12/01/2022
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
-<!-- find "todo" in this .md file -->
 
-<!-- todo: thumbnail like in https://learn.microsoft.com/en-us/microsoft-edge/dev-videos/#devtools---whats-new-in-devtools-105 -->
-* [What's New in DevTools 108](https://www.youtube.com/watch?v=KmGXnsSCtI4)
+Video: What's New in DevTools 108:
+
+[![Thumbnail image for the DevTools What's New in 108 video](./devtools-108-images/devtools-whatsnew-108.png)](https://www.youtube.com/watch?v=KmGXnsSCtI4)
 
 
 <!-- ====================================================================== -->

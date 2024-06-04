@@ -70,7 +70,7 @@ In the following image, the minified object name `e` is shown in a heap snapshot
 Now in Microsoft Edge 113, the **Memory** tool automatically unminifies object names in the heap snapshot:
 
 ![A heap snapshot in the Memory tool displays unminified object names](./devtools-113-images/unminified-object-name-memory-tool.png)
-<!-- todo
+<!-- png:
 1. Open Edge Stable.
 2. Go to: https://outlook-sdf.office.com/mail/
 3. Don't show the Outlook UI - undock DevTools.
