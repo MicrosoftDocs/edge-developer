@@ -78,7 +78,12 @@ Forthcoming.<!-- todo: link -->
 
 _Published on 24 July 2023._
 
-* [What's New in DevTools 113 and 114](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
+[![Thumbnail image for the DevTools What's New in 113-114 video](./index-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
+
+See also:
+* [What's New in DevTools (Microsoft Edge 113)](../devtools-guide-chromium/whats-new/2023/05/devtools-113.md)
+* [What's New in DevTools (Microsoft Edge 114)](../devtools-guide-chromium/whats-new/2023/06/devtools-114.md)
+
 
 
 <!-- ====================================================================== -->
