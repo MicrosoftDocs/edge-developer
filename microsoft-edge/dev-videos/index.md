@@ -18,7 +18,7 @@ Microsoft publishes new videos on a regular basis on the [Microsoft Edge YouTube
 Click on a thumbnail from the following list to watch the corresponding video on YouTube.
 
 <!--
-To add a new video:
+To add a new video (details at wiki > Publishing videos)
 - Create a thumbnail image for the video: 300px wide, no faces of people, big blue play button.
 - Place the video thumbnail image in the ./images folder next to this page.
 - Prepare the YouTube URL, title, and description.
@@ -101,9 +101,9 @@ Covers:
 
 See also:
 * [What's New in DevTools (Microsoft Edge 112)](../devtools-guide-chromium/whats-new/2023/04/devtools-112.md)
-* [Analyze CSS selector performance during Recalculate Style events](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/selector-stats) - CSS selector stats.
-* [View formatted JSON](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer)
-* [Apply a color theme to DevTools](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/theme)
+* [Analyze CSS selector performance during Recalculate Style events](../devtools-guide-chromium/evaluate-performance/selector-stats.md) - CSS selector stats.
+* [View formatted JSON](../devtools-guide-chromium/json-viewer/json-viewer.md)
+* [Apply a color theme to DevTools](../devtools-guide-chromium/customize/theme.md)
 
 
 <!-- ------------------------------ -->
@@ -125,7 +125,7 @@ Covers:
 
 See also:
 * [What's New in DevTools (Microsoft Edge 111)](../devtools-guide-chromium/whats-new/2023/03/devtools-111.md)
-* [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/publish-source-maps-to-azure)
+* [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../devtools-guide-chromium/javascript/publish-source-maps-to-azure.md)
 
 
 <!-- ------------------------------ -->
@@ -144,7 +144,7 @@ Covers:
 
 See also:
 * [What's New in DevTools (Microsoft Edge 110)](../devtools-guide-chromium/whats-new/2023/02/devtools-110.md)
-* [Overview of DevTools](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview)
+* [Overview of DevTools](../devtools-guide-chromium/overview.md)
 
 
 <!-- ------------------------------ -->
@@ -165,10 +165,10 @@ Covers:
 
 See also:
 * [What's New in DevTools (Microsoft Edge 109)](../devtools-guide-chromium/whats-new/2023/01/devtools-109.md)
-* [Share enhanced performance and memory traces](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/share-traces)
-* [Analyze CSS selector performance during Recalculate Style events](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/selector-stats) - selector stats.
-- [Reduce garbage with additional settings for allocation sampling](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-problems/#reduce-garbage-with-additional-settings-for-allocation-sampling) in _Fix memory problems_.
-- [Trash talk: the Orinoco garbage collector](https://v8.dev/blog/trash-talk)
+* [Share enhanced performance and memory traces](../devtools-guide-chromium/experimental-features/share-traces.md)
+* [Analyze CSS selector performance during Recalculate Style events](../devtools-guide-chromium/evaluate-performance/selector-stats.md) - selector stats.
+* [Reduce garbage with additional settings for allocation sampling](../devtools-guide-chromium/memory-problems/index.md#reduce-garbage-with-additional-settings-for-allocation-sampling) in _Fix memory problems_.
+* [Trash talk: the Orinoco garbage collector](https://v8.dev/blog/trash-talk)
 * [Heap Snapshot visualizer](https://microsoftedge.microsoft.com/addons/detail/heap-snapshot-visualizer/fceldlhognbemkgfacnffkdanocidgce) extension.
 
 
@@ -178,11 +178,6 @@ See also:
 December 16, 2022
 
 [![Thumbnail image for the DevTools What's New in 108 video](./index-images/devtools-whatsnew-108.png)](https://www.youtube.com/watch?v=KmGXnsSCtI4)
-
-* Length: 5:52
-* 11K views
-* Dec 16, 2022
-* https://www.youtube.com/watch?v=KmGXnsSCtI4
 
 Covers:
 * Improved navigation in Command Palette.
@@ -195,13 +190,11 @@ Covers:
 
 See also:
 * [What's New in DevTools (Microsoft Edge 108)](../devtools-guide-chromium/whats-new/2022/12/devtools-108.md)
-- More updates on our documentation website: https://learn.microsoft.com/en-us/mic...
-- Join our community on GitHub: https://github.com/MicrosoftEdge/DevT...
-- Documentation to create DevTools extensions: https://aka.ms/devtools-extension
-- Documentation of the heap snapshot schema: https://aka.ms/heap-snapshot-schema
-- Download Edge WebDriver: https://aka.ms/edge-webdriver
+* [Create an extension that customizes the DevTools UI](../extensions-chromium/developer-guide/devtools-extension.md)
+* [The heap snapshot file format](../devtools-guide-chromium/memory-problems/heap-snapshot-schema.md)
+* [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/?form=MA13LH) - download Edge WebDriver.
 
-The [initial video](https://www.youtube.com/watch?v=2fuTHag4EOw) is cut off at the end: length: 4:59, December 6, 2022.  Use the above video instead.
+The [initial, December 6 video](https://www.youtube.com/watch?v=2fuTHag4EOw) is cut off at the end.  Use the above video instead.
 
 
 <!-- ------------------------------ -->
@@ -280,7 +273,7 @@ Covers:
 
 See also:
 * [What's New in DevTools 104](../devtools-guide-chromium/whats-new/2022/08/devtools-104.md)
-- Debugging the web in 3D and Layers tool removal: https://aka.ms/debug-in-3d
+* [Debug the web in 3D with the 3D View tool](https://aka.ms/debug-in-3d) - blog post.
 
 
 <!-- ------------------------------ -->
@@ -463,7 +456,7 @@ Covers:
 
 See also:
 * [What's New in DevTools 94](../devtools-guide-chromium/whats-new/2021/09/devtools.md)
-* [Keyboard shortcuts](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/shortcuts/) - Navigating DevTools with a keyboard.
+* [Keyboard shortcuts](../devtools-guide-chromium/shortcuts/index.md) - Navigating DevTools with a keyboard.
 
 
 <!-- ------------------------------ -->
@@ -555,8 +548,8 @@ Covers:
 * The list of available tools.
 
 See also:
-* [Overview of DevTools](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview)
-* [About the list of tools](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools)
+* [Overview of DevTools](../devtools-guide-chromium/overview.md)
+* [About the list of tools](../devtools-guide-chromium/about-tools.md)
 
 
 <!-- ====================================================================== -->
@@ -767,7 +760,7 @@ Covers:
 
 See also:
 * [The future of Internet Explorer on Windows 10 is in Microsoft Edge](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/) - IE mode.
-* [Adopt Microsoft Edge with FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/microsoft-edge)
+* [Adopt Microsoft Edge with FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/microsoft-edge)
 * ["Microsoft Edge: State of the Platform": Session Resources](https://aka.ms/build-2021-msedge)
 
 
@@ -789,7 +782,7 @@ Covers:
 * Managing WebView2 applications.
 
 See also:
-* [Introduction to Microsoft Edge WebView2](https://learn.microsoft.com/en-us/microsoft-edge/webview2/)
+* [Introduction to Microsoft Edge WebView2](../webview2/index.md)
 
 
 <!-- ====================================================================== -->
@@ -812,7 +805,7 @@ Covers:
 * Get involved with PWAs on Windows.
 
 See also:
-* [Overview of Progressive Web Apps (PWAs)](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/)
+* [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md)
 
 
 <!-- ====================================================================== -->
@@ -832,7 +825,7 @@ Covers:
 * Accessibility in developer tools.
 
 See also:
-* [Microsoft Edge DevTools documentation](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/landing/)
+* [Microsoft Edge DevTools documentation](../devtools-guide-chromium/landing/index.yml)
 
 
 <!-- ====================================================================== -->
