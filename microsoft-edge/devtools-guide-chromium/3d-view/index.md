@@ -23,6 +23,15 @@ On the left, the **3D View** tool has 3 tabs:
 On the right, the 3D canvas represents the webpage according to which tab and options you select.
 
 
+<!-- ------------------------------ -->
+#### Video
+
+[![Thumbnail image for the DevTools 3D View tool video](./index-images/3d-view-tool.png)](https://www.youtube.com/watch?v=LVb1Xzzd72w)
+<!-- todo: thumbnail
+https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---debug-the-web-in-3d
+-->
+
+
 <!-- ====================================================================== -->
 ## Open the 3D View tool
 

@@ -621,9 +621,10 @@ Released products can have issues. Based on your feedback, we added useful ways 
 
 See also:
 * [Find and fix problems using the Issues tool](../devtools-guide-chromium/issues/index.md)
-* [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md)
+* [Inline and live issue analysis](../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md) in the DevTools extension for VS Code
 
 
+<!-- todo: resume here, putting Video section at top of the corresponding regular article -->
 <!-- ====================================================================== -->
 ## DevTools - Customizing Microsoft Edge Developer Tools and quick feature access
 

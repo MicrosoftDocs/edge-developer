@@ -32,6 +32,15 @@ The DevTools UI in Chinese:
 ![The DevTools UI in Chinese](./localization-images/localization-zh.png)
 
 
+<!-- ------------------------------ -->
+#### Video
+
+[![Thumbnail image for the DevTools localization video](./localization-images/devtools-localization.png)](https://www.youtube.com/watch?v=AeF0AvWpUO8)
+<!-- todo: thumbnail
+https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---use-your-preferred-language-in-devtools
+-->
+
+
 <!-- ====================================================================== -->
 ## Reverting the DevTools UI to English
 

@@ -29,6 +29,15 @@ The **Problems** tab in the lower panel lists all the issues that DevTools found
 ![The Problems tab in the lower panel of Visual Studio Code, listing all the issues that are found in the project's files](./inline-live-issue-analysis-images/issues-in-lower-panel.png)
 
 
+<!-- ------------------------------ -->
+#### Video
+
+[![Thumbnail image for the DevTools issues filtering video](./inline-live-issue-analysis-images/advanced-issues-filtering.png)](https://www.youtube.com/watch?v=_dePgo89bq0)
+<!-- todo: thumbnail
+https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---advanced-issues-filtering-in-edge-devtools-and-vscode
+-->
+
+
 <!-- ====================================================================== -->
 ## Live updating of issues reporting
 

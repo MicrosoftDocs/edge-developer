@@ -23,6 +23,15 @@ As explained in [Fix memory problems](index.md), memory issues affect page perfo
 *  The performance of a page is delayed or appears to pause frequently.
 
 
+<!-- ------------------------------ -->
+#### Video
+
+https://www.youtube.com/watch?v=v2iy17ptmBk
+<!-- todo: thumbnail
+https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---debug-memory-leaks-with-the-microsoft-edge-detached-elements-tool
+-->
+
+
 <!-- ====================================================================== -->
 ## Open the Detached Elements tool
 

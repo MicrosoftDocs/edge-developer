@@ -35,6 +35,19 @@ With DevTools, you can do the following:
 <!-- /keep sync'd -->
 
 
+<!-- ------------------------------ -->
+#### Video
+
+This slightly older (September 2022) video shows the legacy UI for DevTools:
+* Instead of the **Activity Bar**, the video shows the main toolbar.
+* Instead of the **Quick View** panel, the video shows the Drawer at bottom of DevTools.
+
+[![Thumbnail image for the Understand the DevTools UI video](./overview-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
+<!-- todo: thumbnail
+https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---understand-the-devtools-user-interface
+-->
+
+
 <!-- ====================================================================== -->
 ## Open DevTools
 <!-- keep sync'd:

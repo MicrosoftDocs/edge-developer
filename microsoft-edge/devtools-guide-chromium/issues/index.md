@@ -39,6 +39,15 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 *  [webhint](https://webhint.io)
 
 
+<!-- ------------------------------ -->
+#### Video
+
+[![Thumbnail image for the DevTools issues filtering video](./index-images/advanced-issues-filtering.png)](https://www.youtube.com/watch?v=_dePgo89bq0)
+<!-- todo: thumbnail
+https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---advanced-issues-filtering-in-edge-devtools-and-vscode
+-->
+
+
 <!-- ====================================================================== -->
 ## Opening the Issues tool
 
