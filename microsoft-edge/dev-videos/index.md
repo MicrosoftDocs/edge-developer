@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 06/06/2024
+ms.date: 06/07/2024
 ---
 # Videos about web development with Microsoft Edge
 
@@ -70,6 +70,8 @@ July 24, 2023
 
 [![Thumbnail image for the DevTools What's New in 113-114 video](./index-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
 
+[![Thumbnail image for the DevTools What's New in 113-114 video - jpg](./index-images/devtools-whatsnew-113-114.jpg)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
+
 Covers:
 * The **Crash Analyzer** tool.
 * Aggregate CSS selector stats.
@@ -90,6 +92,8 @@ See also:
 April 26, 2023
 
 [![Thumbnail image for the DevTools What's New in 112 video](./index-images/devtools-whatsnew-112.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
+
+[![Thumbnail image for the DevTools What's New in 112 video - jpg](./index-images/devtools-whatsnew-112.jpg)](https://www.youtube.com/watch?v=xuICl66F-Ik)
 
 Covers:
 * Unminified JS names for OOPIFs in the **Performance** tool.
@@ -113,6 +117,8 @@ March 28, 2023
 
 [![Thumbnail image for the DevTools What's New in 111 video](./index-images/devtools-whatsnew-111.png)](https://www.youtube.com/watch?v=-0pWQsqlHAg)
 
+[![Thumbnail image for the DevTools What's New in 111 video - jpg](./index-images/devtools-whatsnew-111.jpg)](https://www.youtube.com/watch?v=-0pWQsqlHAg)
+
 Covers:
 * Remotely debug web content on Xbox and HoloLens devices.
 * Unminified file and function names in the **Performance** tool.
@@ -135,6 +141,8 @@ February 16, 2023
 
 [![Thumbnail image for the DevTools What's New in 110 video](./index-images/devtools-whatsnew-110.png)](https://www.youtube.com/watch?v=qrzq3bN_1BY)
 
+[![Thumbnail image for the DevTools What's New in 110 video - jpg](./index-images/devtools-whatsnew-110.jpg)](https://www.youtube.com/watch?v=qrzq3bN_1BY)
+
 Covers:
 * Faster heap snapshot recordings.
 * Improved customization of Focus Mode (DevTools UI).
@@ -153,6 +161,8 @@ See also:
 January 17, 2023
 
 [![Thumbnail image for the DevTools What's New in 109 video](./index-images/devtools-whatsnew-109.png)](https://www.youtube.com/watch?v=b-q-PLmO-ns)
+
+[![Thumbnail image for the DevTools What's New in 109 video - jpg](./index-images/devtools-whatsnew-109.jpg)](https://www.youtube.com/watch?v=b-q-PLmO-ns)
 
 Covers:
 * Enhanced traces to share memory and performance recordings.
@@ -179,6 +189,8 @@ December 16, 2022
 
 [![Thumbnail image for the DevTools What's New in 108 video](./index-images/devtools-whatsnew-108.png)](https://www.youtube.com/watch?v=KmGXnsSCtI4)
 
+[![Thumbnail image for the DevTools What's New in 108 video - jpg](./index-images/devtools-whatsnew-108.jpg)](https://www.youtube.com/watch?v=KmGXnsSCtI4)
+
 Covers:
 * Improved navigation in Command Palette.
 * High-contrast mode fixes.
@@ -204,6 +216,8 @@ November 8, 2022
 
 [![Thumbnail image for the DevTools What's New in 107 video](./index-images/devtools-whatsnew-107.png)](https://www.youtube.com/watch?v=QcAnrbfJN0s)
 
+[![Thumbnail image for the DevTools What's New in 107 video - jpg](./index-images/devtools-whatsnew-107.jpg)](https://www.youtube.com/watch?v=QcAnrbfJN0s)
+
 Covers:
 * Text labels in Focus Mode.
 * New shortcut for Command Palette.
@@ -223,6 +237,8 @@ See also:
 October 3, 2022
 
 [![Thumbnail image for the DevTools What's New in 106 video](./index-images/devtools-whatsnew-106.png)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
+
+[![Thumbnail image for the DevTools What's New in 106 video - jpg](./index-images/devtools-whatsnew-106.jpg)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
 
 Covers:
 * The Command Palette experiment.
@@ -487,6 +503,10 @@ February 8, 2024
 
 [![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./index-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
 
+[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge" .jpg](./index-images/console-errors-copilot.jpg)](https://www.youtube.com/watch?v=xuICl66F-Ik)
+
+
+
 Covers:
 * Unminified JS names for OOPIFs in the **Performance** tool.
 * Non-simple CSS selectors in the **CSS Overview** tool.
@@ -642,6 +662,10 @@ See also:
 
 
 <!-- ====================================================================== -->
+<!-- end of date series for DevTools.  remaining sections are sorted by date: -->
+
+
+<!-- ====================================================================== -->
 ## Web Platform - The JSON viewer
 
 August 17, 2023
@@ -731,20 +755,23 @@ See also:
 
 
 <!-- ====================================================================== -->
-## How developers can add value to search within the workplace (Microsoft Build 2021)
+## Microsoft Search - How developers can add value to search within the workplace (Microsoft Build 2021)
 
 May 26, 2021
 
 https://www.youtube.com/watch?v=T2XJY_BPzKA
 
-How to make popular resources such as Salesforce, Service Now, and Microsoft Dynamics searchable from your web browser, the Windows search box, or from your company sites with an embedded search box.
+How to make popular resources such as Salesforce, Service Now, and Microsoft Dynamics searchable from your web browser, from the Windows search box, or from your company sites by using an embedded Search box based on Microsoft Search.
+
+Microsoft Search is a simple intelligent search that helps you find information across Microsoft 365 and your organization.  This is the native search you'll see
+today in your Microsoft 365 apps and services, bringing one capability across search experience in a consistent and contextual way.
 
 See also:
 * [Microsoft Search admin documentation](/microsoftsearch)
 
 
 <!-- ====================================================================== -->
-## State of the Platform
+## Web Platform - State of the Platform
 
 May 25, 2021
 
@@ -786,7 +813,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## PWAs and Web Platform - Igniting the Web Apps Story (Ignite | March 2021)
+## PWAs - Igniting the Web Apps Story (Ignite | March 2021)
 
 March 2, 2021
 
@@ -809,7 +836,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## The latest in developer tooling (Ignite | September 2020)
+## Web Platform - The latest in developer tooling (Ignite | September 2020)
 
 September 22, 2020
 
