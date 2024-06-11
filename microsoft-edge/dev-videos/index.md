@@ -41,14 +41,14 @@ The Microsoft Edge channel includes the following playlists:
 
 
 <!-- ====================================================================== -->
-## DevTools - What's New in DevTools
+## What's New in DevTools
 
 See also:
 * [What's New in Microsoft Edge DevTools](../devtools-guide-chromium/whats-new/whats-new.md)
 
 
-<!-- ------------------------------ -->
-#### What's New in DevTools 115-125
+<!-- ====================================================================== -->
+## What's New in DevTools 115-125
  DevTools 115-125
 
 June 2024, forthcoming.
@@ -63,8 +63,44 @@ See also:
 * [What's New in DevTools (Microsoft Edge 125)](../devtools-guide-chromium/whats-new/2024/05/devtools-125.md)
 
 
-<!-- ------------------------------ -->
-#### What's New in DevTools 113-114
+<!-- ====================================================================== -->
+## Explain DevTools Console errors using Copilot in Edge
+
+February 8, 2024
+
+[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./index-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
+
+[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge" .jpg](./index-images/console-errors-copilot.jpg)](https://www.youtube.com/watch?v=xuICl66F-Ik)
+
+
+
+Covers:
+* Unminified JS names for OOPIFs in the **Performance** tool.
+* Non-simple CSS selectors in the **CSS Overview** tool.
+* Code folding in the JSON viewer.
+* DevTools UI improvements (Focus Mode).
+* New markers for logpoints and conditional breakpoints.
+* Changing themes in DevTools.
+
+See also:
+* [Explain Console errors and warnings using Copilot in Edge](../devtools-guide-chromium/console/copilot-explain-console.md)
+
+
+<!-- ====================================================================== -->
+## The JSON viewer
+
+August 17, 2023
+
+https://www.youtube.com/watch?v=DO7V6lw1SWA
+
+The JSON viewer automatically formats and highlights JSON responses and files in browser tabs.  When your web server responds to HTTP requests with data encoded as JSON, this data isn't always easy to read and is sometimes returned as one line of text.  The JSON viewer changes the returned data to make it easier to read.  The JSON syntax is highlighted with different colors, object properties are displayed on their own lines and indented, and objects can be collapsed or expanded.
+
+See also:
+* [View formatted JSON](../devtools-guide-chromium/json-viewer/json-viewer.md)
+
+
+<!-- ====================================================================== -->
+## What's New in DevTools 113-114
 
 July 24, 2023
 
@@ -86,8 +122,8 @@ See also:
 * [What's New in DevTools (Microsoft Edge 114)](../devtools-guide-chromium/whats-new/2023/06/devtools-114.md)
 
 
-<!-- ------------------------------ -->
-#### What's New in DevTools 112
+<!-- ====================================================================== -->
+## What's New in DevTools 112
 
 April 26, 2023
 
@@ -110,8 +146,8 @@ See also:
 * [Apply a color theme to DevTools](../devtools-guide-chromium/customize/theme.md)
 
 
-<!-- ------------------------------ -->
-#### What's New in DevTools 111
+<!-- ====================================================================== -->
+## What's New in DevTools 111
 
 March 28, 2023
 
@@ -134,8 +170,8 @@ See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../devtools-guide-chromium/javascript/publish-source-maps-to-azure.md)
 
 
-<!-- ------------------------------ -->
-#### What's New in DevTools 110
+<!-- ====================================================================== -->
+## What's New in DevTools 110
 
 February 16, 2023
 
@@ -155,8 +191,8 @@ See also:
 * [Overview of DevTools](../devtools-guide-chromium/overview.md)
 
 
-<!-- ------------------------------ -->
-#### What's New in DevTools 109
+<!-- ====================================================================== -->
+## What's New in DevTools 109
 
 January 17, 2023
 
@@ -182,8 +218,8 @@ See also:
 * [Heap Snapshot visualizer](https://microsoftedge.microsoft.com/addons/detail/heap-snapshot-visualizer/fceldlhognbemkgfacnffkdanocidgce) extension.
 
 
-<!-- ------------------------------ -->
-#### What's New in DevTools 108
+<!-- ====================================================================== -->
+## What's New in DevTools 108
 
 December 16, 2022
 
@@ -209,8 +245,8 @@ See also:
 The [initial, December 6 video](https://www.youtube.com/watch?v=2fuTHag4EOw) is cut off at the end.  Use the above video instead.
 
 
-<!-- ------------------------------ -->
-#### What's New in DevTools 107
+<!-- ====================================================================== -->
+## What's New in DevTools 107
 
 November 8, 2022
 
@@ -231,296 +267,8 @@ See also:
 * [What's New in DevTools (Microsoft Edge 107)](../devtools-guide-chromium/whats-new/2022/10/devtools-107.md)
 
 
-<!-- ------------------------------ -->
-#### What's New in DevTools 106
-
-October 3, 2022
-
-[![Thumbnail image for the DevTools What's New in 106 video](./index-images/devtools-whatsnew-106.png)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
-
-[![Thumbnail image for the DevTools What's New in 106 video - jpg](./index-images/devtools-whatsnew-106.jpg)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
-
-Covers:
-* The Command Palette experiment.
-* Quick Fix issues in the Edge DevTools VS Code extension.
-* DevTools uses less disk space.
-* Better accessibility in Focus Mode (DevTools UI), and high-contrast bug fix.
-* Deprecated Chromium Light/Dark themes.
-* New interactions track in the **Performance** tool.
-* Using Snippets.
-
-See also:
-* [What's New in DevTools (Microsoft Edge 106)](../devtools-guide-chromium/whats-new/2022/09/devtools-106.md)
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 105
-
-September 6, 2022
-
-[![Thumbnail image for the DevTools What's New in 105 video](./index-images/devtools-whatsnew-105.png)](https://www.youtube.com/watch?v=h0XJH_iLoUk)
-
-Covers:
-* PWA protocol handling debugging.
-* Focus Mode improvements.
-* Focus Mode bug fixes.
-* Improved Network and Issues tools reliability.
-* Live edit function code while debugging.
-* Using log points.
-
-See also:
-* [What's New in DevTools 105](../devtools-guide-chromium/whats-new/2022/09/devtools-105.md)
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 104
-
-August 5, 2022
-
-[![Thumbnail image for the DevTools What's New in 104 video](./index-images/devtools-whatsnew-104.png)](https://www.youtube.com/watch?v=0_ZprFX8x0I)
-
-Covers:
-* Rendering/accessibility bug fixes.
-* Composited layers are now in the 3D View tool and the Layers tool was removed.
-* Group files in the Sources tool.
-* Find where nodes get slotted in web components.
-* Where to find more information.
-* Configure the Activity Bar location in Focus Mode.
-
-See also:
-* [What's New in DevTools 104](../devtools-guide-chromium/whats-new/2022/08/devtools-104.md)
-* [Debug the web in 3D with the 3D View tool](https://aka.ms/debug-in-3d) - blog post.
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 103
-
-July 5, 2022
-
-[![Thumbnail image for the DevTools What's New in 103 video](./index-images/devtools-whatsnew-103.png)](https://www.youtube.com/watch?v=aa0C6BRdaPA)
-
-Covers:
-* Redesigned **Welcome** tool.
-* New color picker.
-* New memory heap snapshot node types.
-* High contrast mode bug fix.
-* Open any HTML page in the VS Code extension.
-
-See also:
-* [What's New in DevTools 103](../devtools-guide-chromium/whats-new/2022/06/devtools-103.md)
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 102
-
-June 1, 2022
-
-[![Thumbnail image for the DevTools What's New in 102 video](./index-images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
-
-Covers:
-* Visual Studio Code.
-* Heap Snapshot Export.
-* Cycles Internal Nodes.
-* Help Icon.
-* Issues Fixed.
-
-See also:
-* [What's New in DevTools 102](../devtools-guide-chromium/whats-new/2022/05/devtools-102.md)
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 101
-
-April 28, 2022
-
-[![Thumbnail image for the DevTools What's New in 101 video](./index-images/devtools-whatsnew-101.png)](https://www.youtube.com/watch?v=kv6Q8a9bsbA)
-
-Covers:
-* Using the Console.
-* Source Maps Cache.
-* Status Text Column.
-* Switching Themes.
-
-See also:
-* [What's New in DevTools 101](../devtools-guide-chromium/whats-new/2022/04/devtools-101.md)
-* Console integration: https://aka.ms/ConsoleIntegration
-* Network Columns: https://aka.ms/NetworkColumns
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 100
-
-April 19, 2022
-
-[![Thumbnail image for the DevTools What's New in 100 video](./index-images/devtools-whatsnew-100.png)](https://www.youtube.com/watch?v=aP6d2PIU7hc)
-
-Covers:
-* The Microsoft Edge Developer Tools repo, to submit feedback and ideas.
-* Added Czech and Vietnamese languages for DevTools UI.
-* In the **Memory** tool, filter heap snapshots by node type.
-* The **Network** tool has a **Fulfilled By** column, showing service worker or cache.
-* The links from an imported performance profile use source maps from Azure Artifacts symbol server to map back to your familiar original source code.
-
-See also:
-* [What's New in DevTools 100](../devtools-guide-chromium/whats-new/2022/03/devtools-100.md)
-* [DevTools feedback repo](https://github.com/MicrosoftEdge/DevTools)
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 99
-
-March 21, 2022
-
-[![Thumbnail image for the DevTools What's New in 99 video](./index-images/devtools-whatsnew-99.png)](https://www.youtube.com/watch?v=Z5-tEE_cNTo)
-
-Covers:
-* Azure Artifacts Symbol Server and sourcemaps.
-* Improved **Layers** pane in the **3D View** tool.
-* Use sourcemaps to unminify performance profiles.
-* Live ASP.NET debugging in DevTools for Visual Studio.
-* Accessibility in **Network Console** tool and **3D View** tool.
-
-See also:
-* [What's New in DevTools 99](../devtools-guide-chromium/whats-new/2022/03/devtools.md)
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 98
-
-February 23, 2022
-
-[![Thumbnail image for the DevTools What's New in 98 video](./index-images/devtools-whatsnew-98.png)](https://www.youtube.com/watch?v=HpaRDwU_AZI)
-
-Covers:
-* Emulate Forced Colors mode.
-* Activity icons in the **Performance** tool event log have tooltips.
-* Shallow sizes in the **Memory** tool are represented as decimal values.
-* In the **Network** tool, the Search box resizes as needed.
-* In the **Application** tool, UI is aligned correctly.
-* Updates for the Chromium browser engine.
-
-See also:
-* [What's New in DevTools 98](../devtools-guide-chromium/whats-new/2022/03/devtools.md)
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 97
-
-February 1, 2022
-
-[![Thumbnail image for the DevTools What's New in 97 video](./index-images/devtools-whatsnew-97.png)](https://www.youtube.com/watch?v=qbDLtE0a_yQ)
-
-Covers:
-* The **Detached Elements** tool is available by default.
-* The **3D View** tool supports changing color themes in DevTools.
-* Focus Mode (DevTools UI) improvements.
-* DevTools extension for VS Code has additional features.
-
-See also:
-* [What's New in DevTools 97](../devtools-guide-chromium/whats-new/2022/01/devtools.md)
-* Refresh the device list: https://aka.ms/RefreshDeviceList
-* Autocomplete with Edit as HTML https://aka.ms/AutocompleteEditHTML
-* Improved debugging experience: https://aka.ms/NewDebugging
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 96
-
-December 9, 2021
-
-[![Thumbnail image for the DevTools What's New in 96 video](./index-images/devtools-whatsnew-96.png)](https://www.youtube.com/watch?v=H6dYeoGOIDk)
-
-Covers:
-* New DevTools UI: Focus Mode.
-* The **Console** tool can be in both the top and bottom panels of DevTools.
-* The **Sources** tool notifies you when sourcemaps can't be loaded.
-* Clicking a dropdown's triangle icon opens the menu.
-* Opening source files in Visual Studio Code integrates with the **Sources** tool.
-
-See also:
-* [What's New in DevTools 96](../devtools-guide-chromium/whats-new/2021/11/devtools.md)
-* [Microsoft Edge DevTools extension for Visual Studio Code](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 95
-
-December 8, 2021
-
-[![Thumbnail image for the DevTools What's New in 95 video](./index-images/devtools-whatsnew-95.png)](https://www.youtube.com/watch?v=JsnW0CU1l80)
-
-Covers:
-* **Search Web** icon for all error and warning messages.
-* Improved access for defining User-Agent Client Hints.
-* Console filters display grouped messages.
-
-See also:
-* [What's New in DevTools 95](../devtools-guide-chromium/whats-new/2021/10/devtools.md)
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 94
-
-November 12, 2021
-
-[![Thumbnail image for the DevTools What's New in 94 video](./index-images/devtools-whatsnew-94.png)](https://www.youtube.com/watch?v=S-g1E_W9wQQ)
-
-Covers:
-* Search for Console errors on the web.
-* Breakpoint icons are displayed when using Visual Studio Code themes.
-* DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links.  JavaScript Debugger connection to remote workspaces.
-
-See also:
-* [What's New in DevTools 94](../devtools-guide-chromium/whats-new/2021/09/devtools.md)
-* [Keyboard shortcuts](../devtools-guide-chromium/shortcuts/index.md) - Navigating DevTools with a keyboard.
-
-
-<!-- ------------------------------ -->
-#### What's New in DevTools 93
-
-October 11, 2021
-
-[![Thumbnail image for the DevTools What's New in 93 video](./index-images/devtools-whatsnew-93.png)](https://www.youtube.com/watch?v=rDB_a4bUeeA)
-
-Covers:
-* DevTools UI.
-* Debug DOM node memory leaks with the **Detached Elements** tool.
-* Change Display Language.
-* Copy CSS declarations in the **Styles** pane for CSS-in-JS libraries.
-* Easier customization of User-Agent Client Hints.
-* Screen readers announce errors, warnings, and issues in toolbar and Console.
-* Copy as PowerShell in the **Network** tool includes cookies.
-* The Visual Studio Code debugger integrates with the DevTools Extension for VS Code.
-
-See also:
-* [What's New in DevTools (Microsoft Edge 93)](../devtools-guide-chromium/whats-new/2021/07/devtools.md)
-
-
 <!-- ====================================================================== -->
-## DevTools - Explain DevTools Console errors using Copilot in Edge
-
-February 8, 2024
-
-[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./index-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
-
-[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge" .jpg](./index-images/console-errors-copilot.jpg)](https://www.youtube.com/watch?v=xuICl66F-Ik)
-
-
-
-Covers:
-* Unminified JS names for OOPIFs in the **Performance** tool.
-* Non-simple CSS selectors in the **CSS Overview** tool.
-* Code folding in the JSON viewer.
-* DevTools UI improvements (Focus Mode).
-* New markers for logpoints and conditional breakpoints.
-* Changing themes in DevTools.
-
-See also:
-* [Explain Console errors and warnings using Copilot in Edge](../devtools-guide-chromium/console/copilot-explain-console.md)
-
-
-<!-- ====================================================================== -->
-## DevTools - Learn to Use the Network Tool
+## Learn to Use the Network Tool
 
 October 6, 2022
 
@@ -545,7 +293,48 @@ See also:
 
 
 <!-- ====================================================================== -->
-## DevTools - Understand the DevTools user interface
+## What's New in DevTools 106
+
+October 3, 2022
+
+[![Thumbnail image for the DevTools What's New in 106 video](./index-images/devtools-whatsnew-106.png)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
+
+[![Thumbnail image for the DevTools What's New in 106 video - jpg](./index-images/devtools-whatsnew-106.jpg)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
+
+Covers:
+* The Command Palette experiment.
+* Quick Fix issues in the Edge DevTools VS Code extension.
+* DevTools uses less disk space.
+* Better accessibility in Focus Mode (DevTools UI), and high-contrast bug fix.
+* Deprecated Chromium Light/Dark themes.
+* New interactions track in the **Performance** tool.
+* Using Snippets.
+
+See also:
+* [What's New in DevTools (Microsoft Edge 106)](../devtools-guide-chromium/whats-new/2022/09/devtools-106.md)
+
+
+<!-- ====================================================================== -->
+## What's New in DevTools 105
+
+September 6, 2022
+
+[![Thumbnail image for the DevTools What's New in 105 video](./index-images/devtools-whatsnew-105.png)](https://www.youtube.com/watch?v=h0XJH_iLoUk)
+
+Covers:
+* PWA protocol handling debugging.
+* Focus Mode improvements.
+* Focus Mode bug fixes.
+* Improved Network and Issues tools reliability.
+* Live edit function code while debugging.
+* Using log points.
+
+See also:
+* [What's New in DevTools 105](../devtools-guide-chromium/whats-new/2022/09/devtools-105.md)
+
+
+<!-- ====================================================================== -->
+## Understand the DevTools user interface
 
 September 1, 2022
 
@@ -573,7 +362,45 @@ See also:
 
 
 <!-- ====================================================================== -->
-## DevTools - Debug the web in 3D
+## What's New in DevTools 104
+
+August 5, 2022
+
+[![Thumbnail image for the DevTools What's New in 104 video](./index-images/devtools-whatsnew-104.png)](https://www.youtube.com/watch?v=0_ZprFX8x0I)
+
+Covers:
+* Rendering/accessibility bug fixes.
+* Composited layers are now in the 3D View tool and the Layers tool was removed.
+* Group files in the Sources tool.
+* Find where nodes get slotted in web components.
+* Where to find more information.
+* Configure the Activity Bar location in Focus Mode.
+
+See also:
+* [What's New in DevTools 104](../devtools-guide-chromium/whats-new/2022/08/devtools-104.md)
+* [Debug the web in 3D with the 3D View tool](https://aka.ms/debug-in-3d) - blog post.
+
+
+<!-- ====================================================================== -->
+## What's New in DevTools 103
+
+July 5, 2022
+
+[![Thumbnail image for the DevTools What's New in 103 video](./index-images/devtools-whatsnew-103.png)](https://www.youtube.com/watch?v=aa0C6BRdaPA)
+
+Covers:
+* Redesigned **Welcome** tool.
+* New color picker.
+* New memory heap snapshot node types.
+* High contrast mode bug fix.
+* Open any HTML page in the VS Code extension.
+
+See also:
+* [What's New in DevTools 103](../devtools-guide-chromium/whats-new/2022/06/devtools-103.md)
+
+
+<!-- ====================================================================== -->
+## Debug the web in 3D
 
 June 21, 2022
 
@@ -594,7 +421,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## DevTools - Use your preferred language in DevTools
+## Use your preferred language in DevTools
 
 June 9, 2022
 
@@ -607,7 +434,39 @@ See also:
 
 
 <!-- ====================================================================== -->
-## DevTools - Advanced issues filtering in Edge DevTools and VSCode
+## What's New in DevTools 102
+
+June 1, 2022
+
+[![Thumbnail image for the DevTools What's New in 102 video](./index-images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
+
+Covers:
+* Visual Studio Code.
+* Heap Snapshot Export.
+* Cycles Internal Nodes.
+* Help Icon.
+* Issues Fixed.
+
+See also:
+* [What's New in DevTools 102](../devtools-guide-chromium/whats-new/2022/05/devtools-102.md)
+
+
+<!-- todo: put Video section at top of the corresponding regular article -->
+<!-- ====================================================================== -->
+## Fully style the drop-down part of a `<select>` with the new `<selectmenu>` element
+
+May 31, 2022
+
+[![Thumbnail image for the selectmenu video](./index-images/selectmenu.png)](https://www.youtube.com/watch?v=Ts7jvRyQACY)
+
+Styling `<select>` elements has been challenging. The experimental<!-- todo: update.  June 2024: the present repo & MDN don't mention selectmenu --> `<selectmenu>` element promises to overcome the remaining limitations by enabling web developers to style all parts of the element.
+
+See also:
+* [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/) - blog post about styling `<select>` elements and the `<selectmenu>` element.
+
+
+<!-- ====================================================================== -->
+## Advanced issues filtering in Edge DevTools and VSCode
 
 May 20, 2022
 
@@ -624,9 +483,27 @@ See also:
 * [Inline and live issue analysis](../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md) in the DevTools extension for VS Code
 
 
-<!-- todo: resume here, putting Video section at top of the corresponding regular article -->
+<!-- todo: put Video section at top of the corresponding regular article -->
 <!-- ====================================================================== -->
-## DevTools - Customizing Microsoft Edge Developer Tools and quick feature access
+## Create a scroll-linked animation without JavaScript
+
+May 12, 2022
+
+[![Thumbnail image for the scroll-linked animation API video](./index-images/scroll-linked-animations.png)](https://www.youtube.com/watch?v=Q0nhiHVVnvI)
+
+Learn about the upcoming CSS scroll-linked animations feature and how it can be used to create a reading progress indicator on a webpage, without using JavaScript.
+
+CSS scroll-linked animations is an experimental feature<!-- todo: update.  repo doesn't mention scroll-linked --> in Microsoft Edge.  To try this feature, go to `edge://flags` and then enable the **Experimental Web Platform features** setting.<!-- exists as of June 2024 -->
+
+To play with the demo application that's shown in the video, see the rendered [Reader demo](https://microsoftedge.github.io/Demos/reader/) and its [source code](https://github.com/MicrosoftEdge/Demos/tree/main/reader).
+
+See also:
+* [@scroll-timeline](https://developer.mozilla.org/docs/Web/CSS/@scroll-timeline) at MDN, about the CSS scroll-linked animations feature.
+
+
+<!-- todo: put Video section at top of the corresponding regular article -->
+<!-- ====================================================================== -->
+## Customizing Microsoft Edge Developer Tools and quick feature access
 
 May 5, 2022
 
@@ -646,8 +523,136 @@ See also:
 * [Run commands in the Command Menu](../devtools-guide-chromium/command-menu/index.md)
 
 
+<!-- todo: put Video section at top of the corresponding regular article -->
 <!-- ====================================================================== -->
-## DevTools - Debug memory leaks with the Microsoft Edge Detached Elements tool
+## Highlight text on the web with the CSS Custom Highlighting API
+
+April 28, 2022
+
+[![Thumbnail image for the CSS Custom Highlighting API video](./index-images/css-custom-highlight-api.png)](https://www.youtube.com/watch?v=1qldqyT324o)
+
+Styling ranges of text on the web is very useful but has historically been a complicated thing to do.
+
+The [CSS Custom Highlight API](https://www.w3.org/TR/css-highlight-api-1/) is the future of highlighting text ranges on the Web.  This API provides web developers with JavaScript and CSS features that make it easier and more efficient to style any range of text.
+
+See also:
+* [CSS Custom Highlight API: The Future of Highlighting Text Ranges on the Web](https://css-tricks.com/css-custom-highlight-api-early-loo/)
+
+
+<!-- ====================================================================== -->
+## What's New in DevTools 101
+
+April 28, 2022
+
+[![Thumbnail image for the DevTools What's New in 101 video](./index-images/devtools-whatsnew-101.png)](https://www.youtube.com/watch?v=kv6Q8a9bsbA)
+
+Covers:
+* Using the Console.
+* Source Maps Cache.
+* Status Text Column.
+* Switching Themes.
+
+See also:
+* [What's New in DevTools 101](../devtools-guide-chromium/whats-new/2022/04/devtools-101.md)
+* Console integration: https://aka.ms/ConsoleIntegration
+* Network Columns: https://aka.ms/NetworkColumns
+
+
+<!-- ====================================================================== -->
+## What's New in DevTools 100
+
+April 19, 2022
+
+[![Thumbnail image for the DevTools What's New in 100 video](./index-images/devtools-whatsnew-100.png)](https://www.youtube.com/watch?v=aP6d2PIU7hc)
+
+Covers:
+* The Microsoft Edge Developer Tools repo, to submit feedback and ideas.
+* Added Czech and Vietnamese languages for DevTools UI.
+* In the **Memory** tool, filter heap snapshots by node type.
+* The **Network** tool has a **Fulfilled By** column, showing service worker or cache.
+* The links from an imported performance profile use source maps from Azure Artifacts symbol server to map back to your familiar original source code.
+
+See also:
+* [What's New in DevTools 100](../devtools-guide-chromium/whats-new/2022/03/devtools-100.md)
+* [DevTools feedback repo](https://github.com/MicrosoftEdge/DevTools)
+
+
+<!-- ====================================================================== -->
+## What's New in DevTools 99
+
+March 21, 2022
+
+[![Thumbnail image for the DevTools What's New in 99 video](./index-images/devtools-whatsnew-99.png)](https://www.youtube.com/watch?v=Z5-tEE_cNTo)
+
+Covers:
+* Azure Artifacts Symbol Server and sourcemaps.
+* Improved **Layers** pane in the **3D View** tool.
+* Use sourcemaps to unminify performance profiles.
+* Live ASP.NET debugging in DevTools for Visual Studio.
+* Accessibility in **Network Console** tool and **3D View** tool.
+
+See also:
+* [What's New in DevTools 99](../devtools-guide-chromium/whats-new/2022/03/devtools.md)
+
+
+<!-- todo: put Video section at top of the corresponding regular article -->
+<!-- ====================================================================== -->
+## Automatic image descriptions in Microsoft Edge (alt text)
+
+March 17, 2022
+
+https://www.youtube.com/watch?v=GhyLc8X_6Mg
+
+Microsoft Edge provides auto-generated alt text for images that don't include it. Auto-generated alt text helps users of assistive technology such as screen readers discover the meaning or intent of an images on the web.
+
+Many people who are blind or low vision experience the web primarily through a screen reader: an assistive technology that reads the content of each page aloud.  Screen readers depend on having image labels (alternative text or "alt text") provided that allows them to describe visual content - like images and charts - so the user can understand the full content of the page.  Alt text is critical for making the web accessible, yet it’s often overlooked.  More than half of the images processed by screen readers are missing alt text. 
+
+See also:
+* [Appears to say: Microsoft Edge now provides auto-generated image labels](https://blogs.windows.com/msedgedev/2022/03/17/appears-to-say-microsoft-edge-auto-generated-image-labels/) - blog post
+
+
+<!-- ====================================================================== -->
+## What's New in DevTools 98
+
+February 23, 2022
+
+[![Thumbnail image for the DevTools What's New in 98 video](./index-images/devtools-whatsnew-98.png)](https://www.youtube.com/watch?v=HpaRDwU_AZI)
+
+Covers:
+* Emulate Forced Colors mode.
+* Activity icons in the **Performance** tool event log have tooltips.
+* Shallow sizes in the **Memory** tool are represented as decimal values.
+* In the **Network** tool, the Search box resizes as needed.
+* In the **Application** tool, UI is aligned correctly.
+* Updates for the Chromium browser engine.
+
+See also:
+* [What's New in DevTools 98](../devtools-guide-chromium/whats-new/2022/03/devtools.md)
+
+
+<!-- ====================================================================== -->
+## What's New in DevTools 97
+
+February 1, 2022
+
+[![Thumbnail image for the DevTools What's New in 97 video](./index-images/devtools-whatsnew-97.png)](https://www.youtube.com/watch?v=qbDLtE0a_yQ)
+
+Covers:
+* The **Detached Elements** tool is available by default.
+* The **3D View** tool supports changing color themes in DevTools.
+* Focus Mode (DevTools UI) improvements.
+* DevTools extension for VS Code has additional features.
+
+See also:
+* [What's New in DevTools 97](../devtools-guide-chromium/whats-new/2022/01/devtools.md)
+* Refresh the device list: https://aka.ms/RefreshDeviceList
+* Autocomplete with Edit as HTML https://aka.ms/AutocompleteEditHTML
+* Improved debugging experience: https://aka.ms/NewDebugging
+
+
+<!-- todo: put Video section at top of the corresponding regular article -->
+<!-- ====================================================================== -->
+## Debug memory leaks with the Microsoft Edge Detached Elements tool
 
 December 9, 2021
 
@@ -663,84 +668,43 @@ See also:
 
 
 <!-- ====================================================================== -->
-<!-- end of date series for DevTools.  remaining sections are sorted by date: -->
+## What's New in DevTools 96
 
+December 9, 2021
 
-<!-- ====================================================================== -->
-## Web Platform - The JSON viewer
+[![Thumbnail image for the DevTools What's New in 96 video](./index-images/devtools-whatsnew-96.png)](https://www.youtube.com/watch?v=H6dYeoGOIDk)
 
-August 17, 2023
-
-https://www.youtube.com/watch?v=DO7V6lw1SWA
-
-The JSON viewer automatically formats and highlights JSON responses and files in browser tabs.  When your web server responds to HTTP requests with data encoded as JSON, this data isn't always easy to read and is sometimes returned as one line of text.  The JSON viewer changes the returned data to make it easier to read.  The JSON syntax is highlighted with different colors, object properties are displayed on their own lines and indented, and objects can be collapsed or expanded.
-
-See also:
-* [View formatted JSON](../devtools-guide-chromium/json-viewer/json-viewer.md)
-
-
-<!-- ====================================================================== -->
-## Web Platform - Fully style the drop-down part of a `<select>` with the new `<selectmenu>` element
-
-May 31, 2022
-
-[![Thumbnail image for the selectmenu video](./index-images/selectmenu.png)](https://www.youtube.com/watch?v=Ts7jvRyQACY)
-
-Styling `<select>` elements has been challenging. The experimental<!-- todo: update.  June 2024: the present repo & MDN don't mention selectmenu --> `<selectmenu>` element promises to overcome the remaining limitations by enabling web developers to style all parts of the element.
+Covers:
+* New DevTools UI: Focus Mode.
+* The **Console** tool can be in both the top and bottom panels of DevTools.
+* The **Sources** tool notifies you when sourcemaps can't be loaded.
+* Clicking a dropdown's triangle icon opens the menu.
+* Opening source files in Visual Studio Code integrates with the **Sources** tool.
 
 See also:
-* [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/) - blog post about styling `<select>` elements and the `<selectmenu>` element.
+* [What's New in DevTools 96](../devtools-guide-chromium/whats-new/2021/11/devtools.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
 
 
 <!-- ====================================================================== -->
-## Web Platform - Create a scroll-linked animation without JavaScript
+## What's New in DevTools 95
 
-May 12, 2022
+December 8, 2021
 
-[![Thumbnail image for the scroll-linked animation API video](./index-images/scroll-linked-animations.png)](https://www.youtube.com/watch?v=Q0nhiHVVnvI)
+[![Thumbnail image for the DevTools What's New in 95 video](./index-images/devtools-whatsnew-95.png)](https://www.youtube.com/watch?v=JsnW0CU1l80)
 
-Learn about the upcoming CSS scroll-linked animations feature and how it can be used to create a reading progress indicator on a webpage, without using JavaScript.
-
-CSS scroll-linked animations is an experimental feature<!-- todo: update.  repo doesn't mention scroll-linked --> in Microsoft Edge.  To try this feature, go to `edge://flags` and then enable the **Experimental Web Platform features** setting.<!-- exists as of June 2024 -->
-
-To play with the demo application that's shown in the video, see the rendered [Reader demo](https://microsoftedge.github.io/Demos/reader/) and its [source code](https://github.com/MicrosoftEdge/Demos/tree/main/reader).
+Covers:
+* **Search Web** icon for all error and warning messages.
+* Improved access for defining User-Agent Client Hints.
+* Console filters display grouped messages.
 
 See also:
-* [@scroll-timeline](https://developer.mozilla.org/docs/Web/CSS/@scroll-timeline) at MDN, about the CSS scroll-linked animations feature.
+* [What's New in DevTools 95](../devtools-guide-chromium/whats-new/2021/10/devtools.md)
 
 
+<!-- todo: put Video section at top of the corresponding regular article -->
 <!-- ====================================================================== -->
-## Web Platform - Highlight text on the web with the CSS Custom Highlighting API
-
-April 28, 2022
-
-[![Thumbnail image for the CSS Custom Highlighting API video](./index-images/css-custom-highlight-api.png)](https://www.youtube.com/watch?v=1qldqyT324o)
-
-Styling ranges of text on the web is very useful but has historically been a complicated thing to do.
-
-The [CSS Custom Highlight API](https://www.w3.org/TR/css-highlight-api-1/) is the future of highlighting text ranges on the Web.  This API provides web developers with JavaScript and CSS features that make it easier and more efficient to style any range of text.
-
-See also:
-* [CSS Custom Highlight API: The Future of Highlighting Text Ranges on the Web](https://css-tricks.com/css-custom-highlight-api-early-loo/)
-
-
-<!-- ====================================================================== -->
-## Web Platform - Automatic image descriptions in Microsoft Edge (alt text)
-
-March 17, 2022
-
-https://www.youtube.com/watch?v=GhyLc8X_6Mg
-
-Microsoft Edge provides auto-generated alt text for images that don't include it. Auto-generated alt text helps users of assistive technology such as screen readers discover the meaning or intent of an images on the web.
-
-Many people who are blind or low vision experience the web primarily through a screen reader: an assistive technology that reads the content of each page aloud.  Screen readers depend on having image labels (alternative text or "alt text") provided that allows them to describe visual content - like images and charts - so the user can understand the full content of the page.  Alt text is critical for making the web accessible, yet it’s often overlooked.  More than half of the images processed by screen readers are missing alt text. 
-
-See also:
-* [Appears to say: Microsoft Edge now provides auto-generated image labels](https://blogs.windows.com/msedgedev/2022/03/17/appears-to-say-microsoft-edge-auto-generated-image-labels/) - blog post
-
-
-<!-- ====================================================================== -->
-## Web Platform - The EyeDropper API
+## The EyeDropper API
 
 November 22, 2021
 
@@ -756,23 +720,46 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Microsoft Search - How developers can add value to search within the workplace (Microsoft Build 2021)
+## What's New in DevTools 94
 
-May 26, 2021
+November 12, 2021
 
-https://www.youtube.com/watch?v=T2XJY_BPzKA
+[![Thumbnail image for the DevTools What's New in 94 video](./index-images/devtools-whatsnew-94.png)](https://www.youtube.com/watch?v=S-g1E_W9wQQ)
 
-How to make popular resources such as Salesforce, Service Now, and Microsoft Dynamics searchable from your web browser, from the Windows search box, or from your company sites by using an embedded Search box based on Microsoft Search.
-
-Microsoft Search is a simple intelligent search that helps you find information across Microsoft 365 and your organization.  This is the native search you'll see
-today in your Microsoft 365 apps and services, bringing one capability across search experience in a consistent and contextual way.
+Covers:
+* Search for Console errors on the web.
+* Breakpoint icons are displayed when using Visual Studio Code themes.
+* DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links.  JavaScript Debugger connection to remote workspaces.
 
 See also:
-* [Microsoft Search admin documentation](/microsoftsearch)
+* [What's New in DevTools 94](../devtools-guide-chromium/whats-new/2021/09/devtools.md)
+* [Keyboard shortcuts](../devtools-guide-chromium/shortcuts/index.md) - Navigating DevTools with a keyboard.
 
 
 <!-- ====================================================================== -->
-## Web Platform - State of the Platform
+## What's New in DevTools 93
+
+October 11, 2021
+
+[![Thumbnail image for the DevTools What's New in 93 video](./index-images/devtools-whatsnew-93.png)](https://www.youtube.com/watch?v=rDB_a4bUeeA)
+
+Covers:
+* DevTools UI.
+* Debug DOM node memory leaks with the **Detached Elements** tool.
+* Change Display Language.
+* Copy CSS declarations in the **Styles** pane for CSS-in-JS libraries.
+* Easier customization of User-Agent Client Hints.
+* Screen readers announce errors, warnings, and issues in toolbar and Console.
+* Copy as PowerShell in the **Network** tool includes cookies.
+* The Visual Studio Code debugger integrates with the DevTools Extension for VS Code.
+
+See also:
+* [What's New in DevTools (Microsoft Edge 93)](../devtools-guide-chromium/whats-new/2021/07/devtools.md)
+
+
+<!-- todo: put Video section at top of the corresponding regular article -->
+<!-- ====================================================================== -->
+## State of the Platform
 
 May 25, 2021
 
@@ -792,8 +779,9 @@ See also:
 * ["Microsoft Edge: State of the Platform": Session Resources](https://aka.ms/build-2021-msedge)
 
 
+<!-- todo: put Video section at top of the corresponding regular article -->
 <!-- ====================================================================== -->
-## WebView2 - Building, Deploying, and Managing WebView2 Applications (Ignite | March 2021)
+## Building, Deploying, and Managing WebView2 Applications (Ignite | March 2021)
 
 March 2, 2021
 
@@ -813,8 +801,9 @@ See also:
 * [Introduction to Microsoft Edge WebView2](../webview2/index.md)
 
 
+<!-- todo: put Video section at top of the corresponding regular article -->
 <!-- ====================================================================== -->
-## PWAs - Igniting the Web Apps Story (Ignite | March 2021)
+## Igniting the Web Apps Story (Ignite | March 2021)
 
 March 2, 2021
 
@@ -836,8 +825,9 @@ See also:
 * [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md)
 
 
+<!-- todo: put Video section at top of the corresponding regular article -->
 <!-- ====================================================================== -->
-## Web Platform - The latest in developer tooling (Ignite | September 2020)
+## The latest in developer tooling (Ignite | September 2020)
 
 September 22, 2020
 
