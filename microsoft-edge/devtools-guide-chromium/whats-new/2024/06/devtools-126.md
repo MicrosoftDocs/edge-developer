@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 126)
-description: "New dedicated setting for CSS Selector Stats in Performance tool. The Edit and Resend function has been restored in the Network tool. And more."
+description: "DevTools displays browser extension icons instead of a blank square. Font for DevTools UI in Chinese has changed back to the accustomed font. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,44 +14,52 @@ ms.date: 06/13/2024
 
 
 <!-- ====================================================================== -->
-## DevTools will display browser extension icons instead of a blank box
+## Icons for browser extensions are displayed instead of blank squares
 
 <!-- Subtitle: The DevTools extensions that you install will display their icons so they're easily identifiable in the Activity Bar.-->
 
-There was a bug where some browser extensions were missing icons when opened in DevTools. For example, when the React extension was activated the icon displayed was a grey box:
+In previous versions of Microsoft Edge, there was a bug where some browser extensions were missing an icon when opened in DevTools.  For example, when the React extension was activated, the icon for the extension in the **Activity Bar** was displayed as a grey box.
 
-<!-- Add photo if someone can repro it-->
+<!-- todo: add screenshot if can get one from Stable 124 -->
 
-This has been fixed and the icons are displayed:
+This has been fixed; icons for browser extensions are correctly displayed in the **Activity Bar**.
 
 ![Display React extension icons](./devtools-126-images/react-extension-icon.png)
 
 
 <!-- ====================================================================== -->
-## Reverted back to the old font for DevTools UI in Chinese
+## Font for DevTools UI in Chinese has changed back to the accustomed font
 
-<!-- Subtitle: The DevTools font has been updated back to the old font that users are familiar with when using the DevTools UI in Chinese. -->
+<!-- Subtitle: When using the DevTools UI in Chinese, the font has been updated back to the previous font that users are familiar with . -->
 
-In previous versions of Microsoft Edge, right-clicking on a network request you want to change and resend, and then selecting **Edit and Resend** was unresponsive and had no effect.  This issue has been resolved, and **Edit and Resend** works as expected.
+In recent versions of Microsoft Edge, when the DevTools UI language was set to Chinese, a new default font was displayed.  Per user feedback, the default font has been changed back to the familiar font.
 
-![Edit and Resend function on a network request](./devtools-125-images/edit-and-resend.png)
-
-See also:
-* [Opening the Network Console tool from within the Network tool](../../../network-console/network-console-tool.md#opening-the-network-console-tool-from-within-the-network-tool) in _Compose and send web API requests using the Network Console tool_.
-
-In recent versions of Microsoft Edge, a new default font was introduced in the DevTools UI when the language was set to Chinese. Due to numerous complaints, we fixed the font and changed it back to the one uses are familiar with.
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 Microsoft Edge 126 also includes the following updates from the Chromium project:
 
+* [Performance panel improvements](https://developer.chrome.com/blog/new-in-devtools-126#perf)
+   * [Move and hide tracks with updated track configuration mode](https://developer.chrome.com/blog/new-in-devtools-126#track-config)
+   * [Ignore scripts in the flame chart](https://developer.chrome.com/blog/new-in-devtools-126#perf-ignore)
+   * [Throttle down the CPU by 20 times](https://developer.chrome.com/blog/new-in-devtools-126#throttle-20x)
+* [Performance insights panel will be deprecated](https://developer.chrome.com/blog/new-in-devtools-126#perf-insights)
+* [Paste entire header strings to override them](https://developer.chrome.com/blog/new-in-devtools-126#overrides)
+* [Find excessive memory usage with new filters in heap snapshots](https://developer.chrome.com/blog/new-in-devtools-126#heap-filters)
+* [Inspect storage buckets in Application > Storage](https://developer.chrome.com/blog/new-in-devtools-126#storage-buckets)
+* [Disable self-XSS warnings with a command-line flag](https://developer.chrome.com/blog/new-in-devtools-126#self-xss-flag)
+* [Lighthouse 12.0.0](https://developer.chrome.com/blog/new-in-devtools-126#lighthouse)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-126#misc)
+<!-- todo: maybe remove some links -->
+
+
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 125)](https://developer.chrome.com/blog/new-in-devtools-125) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 126)](https://developer.chrome.com/blog/new-in-devtools-126) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
 
 
 <!-- ====================================================================== -->
