@@ -73,56 +73,28 @@ See also:
 
 
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.2592.51
 
-Release Date: June ##, 2024
+Release Date: June 12, 2024
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.2592.51](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2592.51)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-
-<!-- ------------------------------ -->
-#### Experimental APIs
-
-No Experimental APIs have been added in this Prerelease SDK.
-The following Experimental APIs have been added in this Prerelease SDK.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 126.0.2592.51 or higher.
 
 <!-- ------------------------------ -->
 #### Promotions
 
 No additional APIs have been promoted to Stable and added in this Release SDK.
-The following APIs have been promoted to Stable and are now included in this Release SDK.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-See also:
-* [Updating the Runtime and SDK](./about.md#updating-the-runtime-and-sdk) in _About Release Notes for the WebView2 SDK_.
-
-###### Runtime and SDK
-
 ###### Runtime-only
-
-###### SDK-only
+* Disable `BreakoutBoxPreferCaptureTimestampInVideoFrame` for WebView2 TextureStream
+* Fixed a regression where WindowCloseRequested event only fires for first window.close() call.
+* Fixed a regression where typed arrays in WinRT JavaScript projection could not be handled as IDispatch in host. 
+* Fixed a bug where autofill popup dismisses immediately and causes focus change 
+* Fixed a bug where WebView2 fails to load because AppPolicyGetWindowingModel ([Issue #4591](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4591))
 
 <!-- end of Jun 2024 Release SDK -->
 
