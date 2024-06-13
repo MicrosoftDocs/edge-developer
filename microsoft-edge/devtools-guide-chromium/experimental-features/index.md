@@ -686,8 +686,10 @@ See the above section, showing the newer label for the checkbox.
 
 _new as of Microsoft Edge 128_
 
-In the **Performance** tool, displays a main page section that shows live metrics and field data.
-<!-- todo: need real desc -->
+In the **Performance** tool, adds a landing page that's displayed when no performance traces have been recorded yet.  The landing page displays performance metrics about the rendered page that are updated live, such as:
+* **Largest Contentful Paint (LCP)**
+* **Cumulative Layout Shift (CLS)**
+* **Interaction to Next Paint (INP)**
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
@@ -863,8 +865,9 @@ Status:
 ## Performance panel: invalidation tracking
 <!-- checkbox has no (?) link pointing to this anchor wording -->
 
-Controls whether to show invalidation tracking in the **Performance** tool.
-<!-- todo: real desc for this older entry -->
+Adds an **Invalidations** section for **Recalculate Style** events in the **Summary** tab of the **Performance** tool.  The **Invalidations** section provides information about the root cause for a **Recalculate Style** event, which might be helpful when investigating long-running **Recalculate Style** events that are causing performance issues.
+
+The **Invalidations** section lists the DOM nodes that were invalidated as a result of a change on the webpage, such as a DOM mutation, and which the browser engine had to restyle during the **Recalculate Style** event.
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
@@ -1003,8 +1006,7 @@ See also:
 
 _new as of Microsoft Edge 128_
 
-In the **Performance** tool, when recording, collects source text (the original source code) for compiled JavaScript code.
-<!-- todo: real desc -->
+In the **Performance** tool, when exporting the trace file, stores the source code of compiled scripts in the trace file.  <!-- This experiment is used when loading an enhanced trace in a new window. -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 128.
@@ -1014,7 +1016,6 @@ See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
 * [Performance features reference](../evaluate-performance/reference.md)
 * [Performance recording event reference](../evaluate-performance/performance-reference.md)
-<!-- todo: best articles? -->
 
 
 <!-- ====================================================================== -->
@@ -1023,8 +1024,7 @@ See also:
 
 _new as of Microsoft Edge 128_
 
-In the **Performance** tool, enables debug mode, such as using trace event details.
-<!-- todo: real desc -->
+Adds a **Trace Event** section to the **Summary** tab of the **Performance** tool.  The **Trace Event** section is displayed when you select an event in a recorded performance trace.  The **Trace Event** section displays debugging information about the selected trace event, such as its name and duration.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 128.
@@ -1034,7 +1034,6 @@ See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
 * [Performance features reference](../evaluate-performance/reference.md)
 * [Performance recording event reference](../evaluate-performance/performance-reference.md)
-<!-- todo: best articles? -->
 
 
 <!-- ====================================================================== -->
@@ -1135,12 +1134,11 @@ Status:
 
 _new as of Microsoft Edge 128_
 
-In the **Performance** tool, enables the Windows Information Protection (WIP) sidebar.
-<!-- todo: real desc - check article -->
+Enables the sidebar in the **Performance** tool.  The sidebar is an experimental work in progress (WIP).
 
-See also:
-* [Protect your enterprise data using Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
-* [Performance features reference](../evaluate-performance/reference.md)
+<!-- omit See Also -->
+
+<!-- todo: screenshot of resulting UI, eg in Canary -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 128.
