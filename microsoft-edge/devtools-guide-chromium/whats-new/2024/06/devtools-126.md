@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 126)
-description: "DevTools displays browser extension icons instead of a blank square. Font for DevTools UI in Chinese has changed back to the accustomed font. And more."
+description: "Icons for browser extensions are displayed instead of blank squares. The DevTools UI in Chinese has changed back to the original font. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -18,19 +18,19 @@ ms.date: 06/13/2024
 
 <!-- Subtitle: The DevTools extensions that you install will display their icons so they're easily identifiable in the Activity Bar.-->
 
-In previous versions of Microsoft Edge, there was a bug where some browser extensions were missing an icon when opened in DevTools.  For example, when the React extension was activated, the icon for the extension in the **Activity Bar** was displayed as a grey box.
+In the DevTools **Activity Bar** in previous versions of Microsoft Edge, there was a bug where the tab for some browser extensions was missing an icon.  For example, when the React extension was activated, the icon for the extension in the **Activity Bar** was displayed as a grey box.
 
 <!-- todo: add screenshot if can get one from Stable 124 -->
 
-This has been fixed; icons for browser extensions are correctly displayed in the **Activity Bar**.
+This issue has been fixed; icons for browser extensions are correctly displayed in the **Activity Bar**.
 
 ![Display React extension icons](./devtools-126-images/react-extension-icon.png)
 
 
 <!-- ====================================================================== -->
-## Font for DevTools UI in Chinese has changed back to the accustomed font
+## The DevTools UI in Chinese has changed back to the original font
 
-<!-- Subtitle: When using the DevTools UI in Chinese, the font has been updated back to the previous font that users are familiar with . -->
+<!-- Subtitle: When using the DevTools UI in Chinese, the font has been updated back to the previous font that users are familiar with. -->
 
 In recent versions of Microsoft Edge, when the DevTools UI language was set to Chinese, a new default font was displayed.  Per user feedback, the default font has been changed back to the familiar font.
 
