@@ -112,6 +112,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 * Introduce a feature flag `msWebView2EnableDownloadContentInWebResourceResponseReceived`, which when enabled, allow responses of navigations that become downloads to be available in `WebResourceResponseReceived`.
 
+#### General features
+
+* Added support for C#/WinRT .NET 6+ in this SDK
+
 <!-- ------------------------------ -->
 #### Experimental APIs
 
@@ -310,7 +314,6 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ###### Runtime-only
 * Fixed a bug in owned window activation logic for visual hosting
-
 
 <!-- end of Jun 2024 Prerelease SDK -->
 
