@@ -343,7 +343,7 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Enable new Font Editor tool within the Styles Pane
+## Enable new font editor within the Styles Pane
 <!-- checkbox has no (?) link pointing to this anchor wording -->
 
 You can use the visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
@@ -371,6 +371,15 @@ See also:
 Status:
 * This checkbox is present in Microsoft Edge Canary 128.
 * This checkbox is present in Microsoft Edge Stable 125.
+
+
+<!-- ====================================================================== -->
+## Enable new Font Editor tool within the Styles Pane.
+<!-- checkbox has no (?) link pointing to this anchor wording -->
+
+This is the checkbox label in Edge Stable 125.
+
+See the above section, showing the newer label for the checkbox.
 
 
 <!-- ====================================================================== -->

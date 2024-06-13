@@ -68,7 +68,7 @@ To turn on this experiment, see [Settings](../../../customize/index.md#settings)
 For the history of this feature in the Chromium open-source project, see Issue [1093229](https://crbug.com/1093229).
 
 See also:
-* [Enable the Font Editor tool within the Styles pane](../../../experimental-features/index.md#enable-the-font-editor-tool-within-the-styles-pane) in _Experimental features in Microsoft Edge DevTools_.
+* [Enable new font editor within the Styles Pane](../../../experimental-features/index.md#enable-new-font-editor-within-the-styles-pane) in _Experimental features in Microsoft Edge DevTools_.
 * [Edit CSS font styles and settings in the Styles pane in DevTools](../../../inspect-styles/edit-fonts.md).
 
 
