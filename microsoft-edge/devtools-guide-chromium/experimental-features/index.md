@@ -996,8 +996,7 @@ See the above section, showing the newer label for the checkbox.
 
 _new as of Microsoft Edge 128_
 
-In the **Performance** tool, when recording, collects enhanced traces.
-<!-- todo: real desc - maybe extract from article -->
+This experiment makes the **Performance** tool capture newly added traces, to support enhanced traces v2.  This feature is being implemented in upstream.  This experiment doesn't affect the capabilities of downstream enhanced traces.  The state of this checkbox doesn't impact a downstream user's experience.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 128.
@@ -1015,7 +1014,9 @@ See also:
 
 _new as of Microsoft Edge 128_
 
-In the **Performance** tool, when exporting the trace file, stores the source code of compiled scripts in the trace file.  <!-- This experiment is used when loading an enhanced trace in a new window. -->
+In the **Performance** tool, when exporting the trace file, stores the source code of compiled scripts in the trace file.
+
+This experiment makes the **Performance** tool capture newly added traces for script source text, to support enhanced traces v2.  This feature is being implemented in upstream.  This experiment doesn't affect the capabilities of downstream enhanced traces.  The state of this checkbox doesn't impact a downstream user's experience.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 128.
