@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/20/2024
+ms.date: 06/12/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -81,10 +81,12 @@ Release Date: June 12, 2024
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 126.0.2592.51 or higher.
 
+
 <!-- ------------------------------ -->
 #### Promotions
 
 No additional APIs have been promoted to Stable and added in this Release SDK.
+
 
 <!-- ------------------------------ -->
 #### Bug fixes
@@ -108,20 +110,30 @@ Release Date: June 12, 2024
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 128.0.2646.0 or higher.
 
-#### Experimental features
 
-* Introduce a feature flag `msWebView2EnableDownloadContentInWebResourceResponseReceived`, which when enabled, allow responses of navigations that become downloads to be available in `WebResourceResponseReceived`.
-
+<!-- ------------------------------ -->
 #### General features
 
-* Added support for C#/WinRT .NET 6+ in this SDK
+* Added support for C#/WinRT .NET 6+.
+
+
+<!-- ------------------------------ -->
+#### Experimental features
+
+* Introduced the feature flag `msWebView2EnableDownloadContentInWebResourceResponseReceived`, an an Experimental feature (rather than as a Stable feature).  When this flag is enabled, allows responses of navigations that become downloads to be available in `WebResourceResponseReceived`.
+
 
 <!-- ------------------------------ -->
 #### Experimental APIs
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
-* Added a new `SaveFileSecurityCheckStarting` event. As a developer, you can register a handler on this event to get the file path, file extension and document origin URI information. Then you can apply your own rules to allow save the file without a default file type policy security warning UI; to cancel the saving; and even to create your own UI to manage runtime file type policies.
+
+<!-- ---------- -->
+* Added a new `SaveFileSecurityCheckStarting` event.  As a developer, you can register a handler on this event to get the file path, filename extension, and document origin URI information.  Then you can apply your own rules to do actions such as the following:
+* Allow saving the file without presenting a default file type policy security warning UI.
+* Cancel the saving.
+* Create your own UI to manage runtime file-type policies.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -171,7 +183,8 @@ edge/webview2/reference/win32/icorewebview2experimentalsavefilesecuritycheckstar
 ---
 
 
-* Added a new `ScreenCaptureStarting` event. This event will be raised whenever the WebView2 and/or iframe corresponding to the `CoreWebView2Frame` or any of its descendant iframes requests permission to use the Screen Capture API before the UI is shown. The end developer can then choose ot block or allow the UI to show.
+<!-- ---------- -->
+* Added a new `ScreenCaptureStarting` event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` or any of its descendant iframes requests permission to use the Screen Capture API before the UI is shown.  As a developer, you can then choose to block the UI from being displayed, or allow the UI to be displayed.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -213,7 +226,6 @@ edge/webview2/reference/win32/icorewebview2experimentalsavefilesecuritycheckstar
    * [ICoreWebView2ExperimentalFrame6::remove_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe6?view=webview2-1.0.2646-prerelease&preserve-view=true#remove_screencapturestarting)
    * [ICoreWebView2ExperimentalFrameScreenCaptureStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframescreencapturestartingeventhandler?view=webview2-1.0.2646-prerelease&preserve-view=true)
 
-
 * [ICoreWebView2ExperimentalScreenCaptureStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalscreencapturestartingeventargs?view=webview2-1.0.2646-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalScreenCaptureStartingEventArgs::get_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalscreencapturestartingeventargs?view=webview2-1.0.2646-prerelease&preserve-view=true#get_cancel)
    * [ICoreWebView2ExperimentalScreenCaptureStartingEventArgs::put_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalscreencapturestartingeventargs?view=webview2-1.0.2646-prerelease&preserve-view=true#put_cancel)
@@ -227,12 +239,15 @@ edge/webview2/reference/win32/icorewebview2experimentalsavefilesecuritycheckstar
 
 ---
 
+
 <!-- ------------------------------ -->
 #### Promotions
 
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
-* Updated the WebMessageObjects API to allow injecting DOM objects into WebView2 content that's constructed via the app and via the `CoreWebView2.PostWebMessage` API in the other direction.  Added a new web object type to represent a file system handle that can be posted to the web content to provide it with filesystem access.
+
+<!-- ---------- -->
+* Updated the WebMessageObjects API to allow injecting DOM objects into WebView2 content that's constructed via the app, and via the `CoreWebView2.PostWebMessage` API in the other direction.  Added a new web object type to represent a file system handle that can be posted to the web content to provide it with filesystem access.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -313,7 +328,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 #### Bug fixes
 
 ###### Runtime-only
-* Fixed a bug in owned window activation logic for visual hosting
+* Fixed a bug in owned-window activation logic for visual hosting.
 
 <!-- end of Jun 2024 Prerelease SDK -->
 
