@@ -44,14 +44,10 @@ Microsoft Edge 126 also includes the following updates from the Chromium project
    * [Move and hide tracks with updated track configuration mode](https://developer.chrome.com/blog/new-in-devtools-126#track-config)
    * [Ignore scripts in the flame chart](https://developer.chrome.com/blog/new-in-devtools-126#perf-ignore)
    * [Throttle down the CPU by 20 times](https://developer.chrome.com/blog/new-in-devtools-126#throttle-20x)
-* [Performance insights panel will be deprecated](https://developer.chrome.com/blog/new-in-devtools-126#perf-insights)
 * [Paste entire header strings to override them](https://developer.chrome.com/blog/new-in-devtools-126#overrides)
 * [Find excessive memory usage with new filters in heap snapshots](https://developer.chrome.com/blog/new-in-devtools-126#heap-filters)
 * [Inspect storage buckets in Application > Storage](https://developer.chrome.com/blog/new-in-devtools-126#storage-buckets)
 * [Disable self-XSS warnings with a command-line flag](https://developer.chrome.com/blog/new-in-devtools-126#self-xss-flag)
-* [Lighthouse 12.0.0](https://developer.chrome.com/blog/new-in-devtools-126#lighthouse)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-126#misc)
-<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
