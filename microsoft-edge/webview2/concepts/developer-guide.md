@@ -12,20 +12,37 @@ ms.date: 08/03/2021
 
 We recommend the following best practices for developing production WebView2 apps:
 
-## Distribution best practices
+## Use the Evergreen WebView2 Runtime if possible
 
 **We recommend using the Evergreen WebView2 Runtime for most WebView2 apps.**  The Evergreen runtime updates automatically on the client, so that the latest features and security patches are available to your WebView2 app.  The Evergreen runtime also requires less storage space on the disk than the Fixed Version runtime. Fixed Version runtime distribution is only recommended for apps that have strict compatibility requirements. For more details on the benefits, see [Details about the Evergreen Runtime distribution mode](../concepts/distribution.md#details-about-the-evergreen-runtime-distribution-mode).
  
-### Recommended best practices for using the Evergreen Runtime
+### Evergreen distribution checklist
 
 #### 1. Ensure that the Evergreen WebView2 Runtime is installed on the client before your app uses the WebView2 control.  
 For more information, see [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
 
 #### 2. Manage new versions of the Evergreen Runtime
 
-New versions of the Evergreen Runtime are automatically downloaded to the client, and the client uses the new version when the app is restarted.  However, if your app runs continuously, it will continue to use the previous version of the runtime.  To use the new version of the runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the runtime. 
+New versions of the Evergreen Runtime are automatically downloaded to the client, and the client uses the new version when your WebView2 app is restarted.  However, if your app runs continuously, it will continue to use the previous version of the runtime. This has security implications, as the previous version of the runtime might have security vulnerabilities that are fixed in the new version. You should consider whether it is important for your app to adopt the latest version of the runtime as soon as possible based on your app's threat model. For example, whether your WebView2 app accesses third-party content, which should be considered untrusted.
 
-When a new version of the runtime is available, your app can automatically take action, such as notifying the user to restart the app.  To detect that a new version of the runtime is available, you can use the [add_NewBrowserVersionAvailable (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) or [CoreWebView2Environment.NewBrowserVersionAvailable (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) event in your code.  If your code handles restarting the app, consider saving the user state before the WebView2 app exits.
+To use the new version of the runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the runtime. You can have an event handler for the `NewBrowserVersionAvailable` event, to have your app automatically notify the user to restart the app.  If your app handles restarting the app, consider saving the user state before the WebView2 app exits. 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Environment` Class:
+    * [NewBrowserVersionAvailable Event](dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Environment` Class:
+    * [NewBrowserVersionAvailable Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#newbrowserversionavailable)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
+    * [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable)
+    * [remove_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#remove_newbrowserversionavailable)
+---
 
 #### 3. Run forward-compatibility tests when using the Evergreen Runtime.
 
@@ -43,9 +60,9 @@ Use feature-detection to make sure that the newer APIs that are used by your Web
 
 
 <!-- ====================================================================== -->
-## Update the Fixed Version Runtime
+### Update regularly if using the Fixed Version Runtime
 
-If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app, to reduce security risks.  When using third-party content in Webview2 apps, always consider the content to be untrusted.  See [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
+If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app to reduce security risks. You should consider your app's threat model to determine how often you should update the Fixed Version Runtime. When using third-party content in Webview2 apps, always consider the content to be untrusted.  See [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
 
 
 <!-- ====================================================================== -->
@@ -79,6 +96,10 @@ To prevent such a memory leak:
 
 
 <!-- ====================================================================== -->
-## Follow recommended WebView2 security best practices
+## Follow security best practices
 
-For any WebView2 app, make sure to follow our recommendations in [Develop secure WebView2 apps](../concepts/security.md).
+WebView2 allow developers to host web content in native applications, which allows for advantages such as using web-based UI, accessing features of the web platform, sharing code cross-platform.
+
+However, hosting web content can also introduce vulnerabilities.  To avoid vulnerabilities that can arise from hosting web content, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application.
+
+Follow security best practices in [Develop secure WebView2 apps](../concepts/security.md).
