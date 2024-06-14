@@ -12,7 +12,7 @@ ms.date: 08/03/2021
 
 We recommend the following best practices for developing production WebView2 apps:
 
-## Use the Evergreen WebView2 Runtime if possible
+## Use the Evergreen WebView2 Runtime
 
 **We recommend using the Evergreen WebView2 Runtime for most WebView2 apps.**  The Evergreen runtime updates automatically on the client, so that the latest features and security patches are available to your WebView2 app.  The Evergreen runtime also requires less storage space on the disk than the Fixed Version runtime. Fixed Version runtime distribution is only recommended for apps that have strict compatibility requirements. For more details on the benefits, see [Details about the Evergreen Runtime distribution mode](../concepts/distribution.md#details-about-the-evergreen-runtime-distribution-mode).
  
