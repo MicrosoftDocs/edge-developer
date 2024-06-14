@@ -240,19 +240,25 @@ edge/webview2/reference/win32/icorewebview2experimentalsavefilesecuritycheckstar
 ---
 
 
-* We add new functions to the `CoreWebView2` .NET class, and added a new WinRT interfrace, to allow you to convert a `CoreWebView2` to and from .NET and COM, as well as to and from WinRT and COM.  This allows you to interoperate between libraries written in different languages.
+<!-- ---------- -->
+* Added a new method to the `CoreWebView2` .NET class that enables you to convert a `CoreWebView2` between .NET and COM.  Added a new WinRT interface that enables you to convert a `CoreWebView2` between WinRT and COM.  This allows you to interoperate between libraries that are written in different languages.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2` Class:
-    * [CoreWebView2.GetComICoreWebView2 Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.getcomicorewebview2?view=webview2-dotnet-1.0.2646-prerelease&preserve-view=true)
+   * [CoreWebView2.GetComICoreWebView2 Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.getcomicorewebview2?view=webview2-dotnet-1.0.2646-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `ICoreWebView2Interop2` Interface:
-    * [ICoreWebView2Interop2.GetComICoreWebView2 Method](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2interop2?view=webview2-winrt-1.0.2646-prerelease&preserve-view=true#getcomicorewebview2)
+   * [ICoreWebView2Interop2::GetComICoreWebView2 Method](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2interop2?view=webview2-winrt-1.0.2646-prerelease&preserve-view=true#getcomicorewebview2)
+
+##### [Win32/C++](#tab/win32cpp)
+
+Not applicable.
 
 ---
+
 
 <!-- ------------------------------ -->
 #### Promotions
