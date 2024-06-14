@@ -62,6 +62,7 @@ Use feature-detection to make sure that the newer APIs that are used by your Web
 <!-- ====================================================================== -->
 ### Update regularly if using the Fixed Version Runtime
 
+<!-- TODO: Consider if we want to even keep this section -->
 If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app to reduce security risks. You should consider your app's threat model to determine how often you should update the Fixed Version Runtime. When using third-party content in Webview2 apps, always consider the content to be untrusted.  See [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
 
 

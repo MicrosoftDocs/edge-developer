@@ -53,9 +53,9 @@ In a web browser, websites are granted limited powers in a sandboxed environment
 
    *  When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2settings) or [CoreWebView2Settings (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2settings), as previously described.
 
-1.  When navigating to a new document, use the `ContentLoading` event and `RemoveHostObjectFromScript` to remove exposed host objects.
+1.  **When navigating to a new document, use the `ContentLoading` event and `RemoveHostObjectFromScript` to remove exposed host objects.**
 
-1. WebView2 cannot be run as a system user.  This restriction blocks scenarios such as building a Credential Provider.
+1. **WebView2 cannot be run as a system user.  This restriction blocks scenarios such as building a Credential Provider.**
 
 
 <!-- ====================================================================== -->
