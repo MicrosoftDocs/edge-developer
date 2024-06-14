@@ -10,59 +10,42 @@ ms.date: 08/03/2021
 ---
 # Development best practices for WebView2 apps
 
-Every development team follows different practices when building their application.  When you build WebView2 production apps, we recommend following these recommendations and best practices.
+We recommend the following best practices for developing production WebView2 apps:
 
+## Distribution best practices
 
-<!-- ====================================================================== -->
-## Use the Evergreen Runtime (recommended)
+**We recommend using the Evergreen WebView2 Runtime for most WebView2 apps.**  The Evergreen runtime updates automatically on the client, so that the latest features and security patches are available to your WebView2 app.  The Evergreen runtime also requires less storage space on the disk than the Fixed Version runtime. Fixed Version runtime distribution is only recommended for apps that have strict compatibility requirements. For more details on the benefits, see [Details about the Evergreen Runtime distribution mode](../concepts/distribution.md#details-about-the-evergreen-runtime-distribution-mode).
+ 
+### Recommended best practices for using the Evergreen Runtime
 
-We generally recommend using the Evergreen WebView2 Runtime.  Fixed Version runtime distribution is only recommended for apps that have strict compatibility requirements.  The Evergreen runtime updates automatically on the client, so that the latest features and security patches are available to your WebView2 app.  The Evergreen runtime also requires less storage space on the disk than the Fixed Version runtime.
+#### 1. Ensure that the Evergreen WebView2 Runtime is installed on the client before your app uses the WebView2 control.  
+For more information, see [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
 
-If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  See [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
+#### 2. Manage new versions of the Evergreen Runtime
 
-<!-- ====================================================================== -->
-## Run compatibility tests regularly when using the Evergreen Runtime
+New versions of the Evergreen Runtime are automatically downloaded to the client, and the client uses the new version when the app is restarted.  However, if your app runs continuously, it will continue to use the previous version of the runtime.  To use the new version of the runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the runtime. 
 
-When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests.  To ensure that your WebView2 app will continue to work as expected, test your web content in the WebView2 control against the Microsoft Edge preview channels (Beta, Dev, or Canary).  The  preview channels are also called _Insider channels_.
+When a new version of the runtime is available, your app can automatically take action, such as notifying the user to restart the app.  To detect that a new version of the runtime is available, you can use the [add_NewBrowserVersionAvailable (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) or [CoreWebView2Environment.NewBrowserVersionAvailable (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) event in your code.  If your code handles restarting the app, consider saving the user state before the WebView2 app exits.
 
-The above guidance is similar to the guidance for web developers.  To test your app for forward-compatibility, see [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
+#### 3. Run forward-compatibility tests when using the Evergreen Runtime.
 
-To download the preview channels of Microsoft Edge, go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+As Evergreen Runtime updates automatically, you should regularly run compatibility tests to ensure that your WebView2 app will continue to work as expected on the new runtime version. This can be done by testing your web content in the WebView2 control against the Microsoft Edge preview channels (Beta, Dev, or Canary).  
 
+We recommend following the guidance in [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
 
-<!-- ====================================================================== -->
-## Test whether newer APIs are supported by the installed WebView2 Runtime
+#### 4. Use feature-detection to test whether the installed Runtime supports recently added APIs.
 
-<!-- the main section about QueryInterface is in versioning.md; this section should be only a couple paragraphs -->
+To run a WebView2 app that was developed with a particular version of the Webview2 SDK, the client must have a compatible version of the WebView2 Runtime installed. 
 
-To run a WebView2 app that was developed with a particular version of the Webview2 SDK, the client must have a compatible version of the WebView2 Runtime installed.  Because APIs are continually being added to WebView2, new versions of the runtime are also released to support the new APIs.  Use feature-detection to make sure that the newer APIs that are used by your WebView2 app are supported by the WebView2 Runtime that's installed on the client.
+When using the Evergreen WebView2 Runtime, there are some scenarios where the runtime on a client hasn't been automatically updated to the latest version. Additionally, some group policies pause updating of the runtime.  As such, when you push an update to your WebView2 app, the app might not work if it tries to call newer APIs that aren't available in the client's installed runtime.
 
-If you use the Evergreen WebView2 Runtime, there are some scenarios where the runtime on a client hasn't been automatically updated to the latest version.  For example, if a client doesn't have internet access, the runtime isn't automatically updated.
-
-Additionally, some group policies pause updating of the runtime.  When you push an update to your WebView2 app, the app might not work if it tries to call newer APIs that aren't available in the client's installed runtime.
-
-To solve this situation, before your code calls a recently added WebView2 API, test whether that API is available in the client's installed runtime.  This test for newer functionality is similar to other web development best practices that detect supported features before using new web APIs.  To test for API availability in the installed runtime, use either:
-
-*  `QueryInterface` in C/C++.
-*  A `try/catch` block in .NET or WinUI.
-
-See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
+Use feature-detection to make sure that the newer APIs that are used by your WebView2 app are supported by the WebView2 Runtime that's installed on the client. See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
 
 
 <!-- ====================================================================== -->
 ## Update the Fixed Version Runtime
 
 If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app, to reduce security risks.  When using third-party content in Webview2 apps, always consider the content to be untrusted.  See [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
-
-
-<!-- ====================================================================== -->
-## Manage new versions of the Evergreen Runtime
-
-When a new version of the Evergreen WebView2 Runtime is downloaded to the client, any WebView2 apps that are running continue to use the previous version of the runtime, until the browser process is released.  This behavior allows apps to run continuously, and prevents the previous runtime from being deleted.  To use the new version of the runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the runtime.
-
-When a new version of the runtime is available, your app can automatically take action, such as notifying the user to restart the app.  To detect that a new version of the runtime is available, you can use the [add_NewBrowserVersionAvailable (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) or [CoreWebView2Environment.NewBrowserVersionAvailable (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) event in your code.  If your code handles restarting the app, consider saving the user state before the WebView2 app exits.
-
-<!-- are the Ref links enough, or link to a regular article or article subsection? -->
 
 
 <!-- ====================================================================== -->
