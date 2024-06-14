@@ -62,6 +62,8 @@ In a web browser, websites are granted limited powers in a sandboxed environment
 <!--
 ## Security
 
+TODO: should we include this section?
+
 Always check the Source property of the WebView2 control before using `ExecuteScript`, `PostWebMessageAsJson`, `PostWebMessageAsString`, or any other method to send information into the WebView2 control. The WebView2 control may have navigated to another page via the end user interacting with the page or script in the page causing navigation. Similarly, be very careful with `AddScriptToExecuteOnDocumentCreated`. All future `navigations` run the same script and if it provides access to information intended only for a certain origin, any HTML document may have access.
 
 When examining the result of an `ExecuteScript` method call, a `WebMessageReceived` event, always check the Source of the sender, or any other mechanism of receiving information from an HTML document in a WebView2 control validate the URI of the HTML document is what you expect.
