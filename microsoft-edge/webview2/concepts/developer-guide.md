@@ -73,13 +73,11 @@ WebView2 apps create a user data folder to store data such as cookies, credentia
 
 
 <!-- ====================================================================== -->
-## Handle runtime-process failures
+## Handle runtime-process failures or exits
 
-Your WebView2 app should listen for and handle the `ProcessFailed` event, so the app can recover from failures of runtime processes that support the WebView2 app process.
+WebView2 apps are supported by a collection of runtime processes that run alongside the app process.  These supporting runtime processes can fail for various reasons, such as running out of memory, or being terminated by the user.  Your WebView2 app should handle these process-related events to ensure that the app can recover from failures and continue to run smoothly.
 
-WebView2 apps are supported by a collection of runtime processes that run alongside the app process.  These supporting runtime processes can fail for various reasons, such as running out of memory, or being terminated by the user.  When a supporting runtime process fails, WebView2 notifies the app by raising the [ProcessFailed event](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs).
-
-<!-- is the Ref link enough, or link to a long section in regular docs? -->
+See [Handling process-related events in WebView2](../concepts/process-related-events.md) for more information on how to handle process-related events in WebView2 apps.
 
 
 <!-- ====================================================================== -->
