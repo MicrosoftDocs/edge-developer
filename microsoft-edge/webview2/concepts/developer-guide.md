@@ -30,7 +30,7 @@ To use the new version of the runtime, you need to either release all references
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2Environment` Class:
-    * [NewBrowserVersionAvailable Event](dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable)
+    * [NewBrowserVersionAvailable Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 

@@ -35,15 +35,15 @@ In a web browser, websites are granted limited powers in a sandboxed environment
     
     ##### [.NET/C#](#tab/dotnetcsharp)
     
-    * [CoreWebView2Settings Class](dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+    * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
     
     ##### [WinRT/C#](#tab/winrtcsharp)
     
-    * [CoreWebView2Settings Class](microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings)
+    * [CoreWebView2Settings Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings)
     
     ##### [Win32/C++](#tab/win32cpp)
     
-    * [ICoreWebView2Settings](microsoft-edge/webview2/reference/win32/icorewebview2settings)
+    * [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)
     ---
             
 
