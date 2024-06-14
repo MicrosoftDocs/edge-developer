@@ -20,9 +20,12 @@ ms.date: 05/25/2023
 > * [Building Chat Plugins for Microsoft Bing and Edge](https://www.youtube.com/watch?v=Q-5M7EYjl6U&list=PL4z1-7pjJU6zJT3PBQ4mTbNg2wtX7Lt52)
 
 
-Video: What's New in DevTools 113 and 114:
+<!-- ------------------------------ -->
+#### Video
 
-[![Thumbnail image for the DevTools What's New in 113-114 video](./devtools-113-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
+What's new in DevTools 113 & 114:
+
+[![Thumbnail image for the "What's new in DevTools 113 & 114" video](./devtools-113-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
 
 
 <!-- ====================================================================== -->

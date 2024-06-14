@@ -47,20 +47,20 @@ See also:
 * [What's New in Microsoft Edge DevTools](../devtools-guide-chromium/whats-new/whats-new.md)
 
 
-<!-- ====================================================================== -->
-## What's New in DevTools 115-125
- DevTools 115-125
+<!-- ====================================================================== 
+## What's New in DevTools 115-125 or 126
 
-June 2024, forthcoming.
+Date
 
-<!-- [![Thumbnail image for the DevTools What's New in 115-125 video](./index-images/devtools-whatsnew-115-125.png)](url) -->
+[![Thumbnail image for the DevTools What's New in 115-125 video](./index-images/devtools-whatsnew-115-125.png)](url)
 
 Covers:
-* todo
+* 
 
 See also:
 * [What's New in DevTools (Microsoft Edge 115)](../devtools-guide-chromium/whats-new/2023/07/devtools-115.md)
 * [What's New in DevTools (Microsoft Edge 125)](../devtools-guide-chromium/whats-new/2024/05/devtools-125.md)
+-->
 
 
 <!-- ====================================================================== -->
@@ -100,13 +100,11 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 113-114
+## What's new in DevTools 113 & 114
 
 July 24, 2023
 
-[![Thumbnail image for the DevTools What's New in 113-114 video](./index-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
-
-[![Thumbnail image for the DevTools What's New in 113-114 video - jpg](./index-images/devtools-whatsnew-113-114.jpg)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
+[![Thumbnail image for the "What's new in DevTools 113 & 114" video](./index-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
 
 Covers:
 * The **Crash Analyzer** tool.
@@ -127,9 +125,7 @@ See also:
 
 April 26, 2023
 
-[![Thumbnail image for the DevTools What's New in 112 video](./index-images/devtools-whatsnew-112.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
-
-[![Thumbnail image for the DevTools What's New in 112 video - jpg](./index-images/devtools-whatsnew-112.jpg)](https://www.youtube.com/watch?v=xuICl66F-Ik)
+[![Thumbnail image for the "What's new in DevTools 112" video](./index-images/devtools-whatsnew-112.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
 
 Covers:
 * Unminified JS names for OOPIFs in the **Performance** tool.
@@ -338,23 +334,27 @@ See also:
 
 September 1, 2022
 
-[![Thumbnail image for the Understand the DevTools UI video](./index-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
+[![Thumbnail image for the "Understand the DevTools user interface" video](./index-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
 
+This slightly older (September 2022) video shows the legacy UI for DevTools:
+* Instead of the **Activity Bar**, the video shows the main toolbar.
+* Instead of the **Quick View** panel, the video shows the **Drawer** at bottom of DevTools.
 
 Covers:
-* The UI structure, with the main toolbar and panel and its drawer (**Quick View**) area.
-   * How the Microsoft Edge DevTools UI is organized.  What the main parts of the DevTools interface do.
+* The UI structure of DevTools, with the main toolbar and panel at top, and the **Drawer** toolbar and panel at bottom.
+* How the Microsoft Edge DevTools UI is organized.
+* What the main parts of the DevTools interface do.
 * What tools are available.
-   * The **Inspect** tool and **Device Emulation** mode.
-   * Tools in the main toolbar.
+   * The **Inspect** tool.
+   * **Device Emulation** mode.
+   * Tools in the main toolbar or in the **Drawer**.
 * The **More tabs** button.
 * The **More tools** button to see all 30+ tools.
 * Closing tools.
-* Reordering tools in the main toolbar (now **Activity Bar**).
-* The Drawer (now **Quick View**) and its toolbar.
-* Moving tools between the main and drawer (**Quick View**) areas.
+* Reordering tools in the main toolbar.
+* The **Drawer** and its toolbar.
+* Moving tools between the main toolbar and **Drawer** toolbar.
 * How to restore the default settings.
-* The list of available tools.
 
 See also:
 * [Overview of DevTools](../devtools-guide-chromium/overview.md)
@@ -451,7 +451,6 @@ See also:
 * [What's New in DevTools 102](../devtools-guide-chromium/whats-new/2022/05/devtools-102.md)
 
 
-<!-- todo: put Video section at top of the corresponding regular article -->
 <!-- ====================================================================== -->
 ## Fully style the drop-down part of a `<select>` with the new `<selectmenu>` element
 
@@ -463,6 +462,7 @@ Styling `<select>` elements has been challenging. The experimental<!-- todo: upd
 
 See also:
 * [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/) - blog post about styling `<select>` elements and the `<selectmenu>` element.
+<!-- put Video section at top of the corresponding regular article, if such article is added here -->
 
 
 <!-- ====================================================================== -->
@@ -483,7 +483,6 @@ See also:
 * [Inline and live issue analysis](../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md) in the DevTools extension for VS Code
 
 
-<!-- todo: put Video section at top of the corresponding regular article -->
 <!-- ====================================================================== -->
 ## Create a scroll-linked animation without JavaScript
 
@@ -499,6 +498,7 @@ To play with the demo application that's shown in the video, see the rendered [R
 
 See also:
 * [@scroll-timeline](https://developer.mozilla.org/docs/Web/CSS/@scroll-timeline) at MDN, about the CSS scroll-linked animations feature.
+<!-- put Video section at top of the corresponding regular article, if such article is added here -->
 
 
 <!-- todo: put Video section at top of the corresponding regular article -->

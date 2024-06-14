@@ -13,9 +13,14 @@ ms.date: 08/18/2023
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
-Video: What's New in DevTools 115-125:
+<!-- ------------------------------ 
+todo video
+#### Video
 
-[![Thumbnail image for the DevTools What's New in 115-125 video](./devtools-115-images/devtools-whatsnew-115-125.png)]<!-- todo -->
+What's New in DevTools 115-125:
+
+[![Thumbnail image for the DevTools What's New in 115-125 video](./devtools-115-images/devtools-whatsnew-115-125.png)]
+-->
 
 
 <!-- ====================================================================== -->
