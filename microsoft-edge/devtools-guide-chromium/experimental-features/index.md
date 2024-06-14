@@ -996,7 +996,7 @@ See the above section, showing the newer label for the checkbox.
 
 _new as of Microsoft Edge 128_
 
-This experiment makes the **Performance** tool capture newly added traces, to support enhanced traces v2.  This feature is being implemented in upstream.  This experiment doesn't affect the capabilities of downstream enhanced traces.  The state of this checkbox doesn't impact a downstream user's experience.
+This experiment makes the **Performance** tool capture newly added traces, to support enhanced traces v2.  This feature is being implemented in the upstream Chromium project.  This experiment doesn't affect the capabilities of Microsoft Edge to capture enhanced traces and doesn't impact DevTools user's experience.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 128.
