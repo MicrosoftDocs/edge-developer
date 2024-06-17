@@ -23,6 +23,8 @@ For more information, see [Detect if a suitable WebView2 Runtime is already inst
 
 #### 2. Manage new versions of the Evergreen Runtime
 
+<!--TODO Consider if we want to move this API / description into distribution.md, and have an overview here instead. -->
+
 New versions of the Evergreen Runtime are automatically downloaded to the client, and the client uses the new version when your WebView2 app is restarted.  However, if your app runs continuously, it will continue to use the previous version of the runtime. This has security implications, as the previous version of the runtime might have security vulnerabilities that are fixed in the new version. You should consider whether it is important for your app to adopt the latest version of the runtime as soon as possible based on your app's threat model. For example, whether your WebView2 app accesses third-party content, which should be considered untrusted.
 
 To use the new version of the runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the runtime. You can have an event handler for the `NewBrowserVersionAvailable` event, to have your app automatically notify the user to restart the app.  If your app handles restarting the app, consider saving the user state before the WebView2 app exits. 
@@ -62,7 +64,10 @@ Use feature-detection to make sure that the newer APIs that are used by your Web
 <!-- ====================================================================== -->
 ### Update regularly if using the Fixed Version Runtime
 
-<!-- TODO: Consider if we want to even keep this section -->
+<!-- TODO: Consider if we want to even keep this section.
+A reason why we wouldn't want to keep this, is because this fixed version isn't our best practice per-say
+ -->
+
 If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app to reduce security risks. You should consider your app's threat model to determine how often you should update the Fixed Version Runtime. When using third-party content in Webview2 apps, always consider the content to be untrusted.  See [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
 
 
@@ -82,6 +87,8 @@ See [Handling process-related events in WebView2](../concepts/process-related-ev
 
 <!-- ====================================================================== -->
 ## Event handlers on the environment object
+
+<!--TODO: I think we should have a performance best practices article in the future -->
 
 If any of your app's event handlers on the [environment object](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) hold a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects, which will leak memory.
 
