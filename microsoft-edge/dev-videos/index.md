@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 06/07/2024
+ms.date: 06/17/2024
 ---
 # Videos about web development with Microsoft Edge
 
@@ -48,7 +48,7 @@ See also:
 
 
 <!-- ====================================================================== 
-## What's New in DevTools 115-125 or 126
+## What's new in DevTools 115-125 or 126
 
 Date
 
@@ -70,10 +70,6 @@ February 8, 2024
 
 [![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./index-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
 
-[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge" .jpg](./index-images/console-errors-copilot.jpg)](https://www.youtube.com/watch?v=xuICl66F-Ik)
-
-
-
 Covers:
 * Unminified JS names for OOPIFs in the **Performance** tool.
 * Non-simple CSS selectors in the **CSS Overview** tool.
@@ -91,7 +87,7 @@ See also:
 
 August 17, 2023
 
-https://www.youtube.com/watch?v=DO7V6lw1SWA
+[![Thumbnail image for video "The JSON viewer"](./index-images/json-viewer.png)](https://www.youtube.com/watch?v=DO7V6lw1SWA)
 
 The JSON viewer automatically formats and highlights JSON responses and files in browser tabs.  When your web server responds to HTTP requests with data encoded as JSON, this data isn't always easy to read and is sometimes returned as one line of text.  The JSON viewer changes the returned data to make it easier to read.  The JSON syntax is highlighted with different colors, object properties are displayed on their own lines and indented, and objects can be collapsed or expanded.
 
@@ -104,7 +100,7 @@ See also:
 
 July 24, 2023
 
-[![Thumbnail image for the "What's new in DevTools 113 & 114" video](./index-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
+[![Thumbnail image for video "What's new in DevTools 113 & 114"](./index-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
 
 Covers:
 * The **Crash Analyzer** tool.
@@ -121,7 +117,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 112
+## What's new in DevTools 112
 
 April 26, 2023
 
@@ -143,13 +139,11 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 111
+## What's new in DevTools 111
 
 March 28, 2023
 
-[![Thumbnail image for the DevTools What's New in 111 video](./index-images/devtools-whatsnew-111.png)](https://www.youtube.com/watch?v=-0pWQsqlHAg)
-
-[![Thumbnail image for the DevTools What's New in 111 video - jpg](./index-images/devtools-whatsnew-111.jpg)](https://www.youtube.com/watch?v=-0pWQsqlHAg)
+[![Thumbnail image for the video "What's new in DevTools 111"](./index-images/devtools-whatsnew-111.png)](https://www.youtube.com/watch?v=-0pWQsqlHAg)
 
 Covers:
 * Remotely debug web content on Xbox and HoloLens devices.
@@ -167,13 +161,11 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 110
+## What's new in DevTools 110
 
 February 16, 2023
 
-[![Thumbnail image for the DevTools What's New in 110 video](./index-images/devtools-whatsnew-110.png)](https://www.youtube.com/watch?v=qrzq3bN_1BY)
-
-[![Thumbnail image for the DevTools What's New in 110 video - jpg](./index-images/devtools-whatsnew-110.jpg)](https://www.youtube.com/watch?v=qrzq3bN_1BY)
+[![Thumbnail image for video "What's new in DevTools 110"](./index-images/devtools-whatsnew-110.png)](https://www.youtube.com/watch?v=qrzq3bN_1BY)
 
 Covers:
 * Faster heap snapshot recordings.
@@ -188,13 +180,11 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 109
+## What's new in DevTools 109
 
 January 17, 2023
 
-[![Thumbnail image for the DevTools What's New in 109 video](./index-images/devtools-whatsnew-109.png)](https://www.youtube.com/watch?v=b-q-PLmO-ns)
-
-[![Thumbnail image for the DevTools What's New in 109 video - jpg](./index-images/devtools-whatsnew-109.jpg)](https://www.youtube.com/watch?v=b-q-PLmO-ns)
+[![Thumbnail image for video "What's new in DevTools 109"](./index-images/devtools-whatsnew-109.png)](https://www.youtube.com/watch?v=b-q-PLmO-ns)
 
 Covers:
 * Enhanced traces to share memory and performance recordings.
@@ -215,13 +205,11 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 108
+## What's new in DevTools 108
 
 December 16, 2022
 
-[![Thumbnail image for the DevTools What's New in 108 video](./index-images/devtools-whatsnew-108.png)](https://www.youtube.com/watch?v=KmGXnsSCtI4)
-
-[![Thumbnail image for the DevTools What's New in 108 video - jpg](./index-images/devtools-whatsnew-108.jpg)](https://www.youtube.com/watch?v=KmGXnsSCtI4)
+[![Thumbnail image for video "What's new in DevTools 108"](./index-images/devtools-whatsnew-108.png)](https://www.youtube.com/watch?v=KmGXnsSCtI4)
 
 Covers:
 * Improved navigation in Command Palette.
@@ -238,17 +226,15 @@ See also:
 * [The heap snapshot file format](../devtools-guide-chromium/memory-problems/heap-snapshot-schema.md)
 * [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/?form=MA13LH) - download Edge WebDriver.
 
-The [initial, December 6 video](https://www.youtube.com/watch?v=2fuTHag4EOw) is cut off at the end.  Use the above video instead.
+<!-- The [initial, December 6 video](https://www.youtube.com/watch?v=2fuTHag4EOw) is cut off at the end.  Use the above video instead. -->
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 107
+## What's new in DevTools 107
 
 November 8, 2022
 
-[![Thumbnail image for the DevTools What's New in 107 video](./index-images/devtools-whatsnew-107.png)](https://www.youtube.com/watch?v=QcAnrbfJN0s)
-
-[![Thumbnail image for the DevTools What's New in 107 video - jpg](./index-images/devtools-whatsnew-107.jpg)](https://www.youtube.com/watch?v=QcAnrbfJN0s)
+[![Thumbnail image for video "What's new in DevTools 107"](./index-images/devtools-whatsnew-107.png)](https://www.youtube.com/watch?v=QcAnrbfJN0s)
 
 Covers:
 * Text labels in Focus Mode.
@@ -268,11 +254,13 @@ See also:
 
 October 6, 2022
 
-https://www.youtube.com/watch?v=niG_Ck6E5L8
+[![Thumbnail image for video "Learn to Use the Network Tool"](./index-images/network-tool.png)](https://www.youtube.com/watch?v=niG_Ck6E5L8)
 
-Learn to use the **Network** tool in Microsoft Edge DevTools.  How websites get the information they need from the internet to get displayed in web browser.  Why the **Network** tool in DevTools is essential for web developers.
+Learn to use the **Network** tool in Microsoft Edge DevTools.
 
 Covers:
+* How websites get the information they need from the internet to get displayed in the web browser.<!-- dup -->
+* Why the **Network** tool in DevTools is essential for web developers.<!-- dup -->
 * How websites get displayed in web browsers.
 * When to use the Network tool.
 * A tour of the Network tool UI.
@@ -289,13 +277,11 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 106
+## What's new in DevTools 106
 
 October 3, 2022
 
-[![Thumbnail image for the DevTools What's New in 106 video](./index-images/devtools-whatsnew-106.png)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
-
-[![Thumbnail image for the DevTools What's New in 106 video - jpg](./index-images/devtools-whatsnew-106.jpg)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
+[![Thumbnail image for video "What's new in DevTools 106"](./index-images/devtools-whatsnew-106.png)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
 
 Covers:
 * The Command Palette experiment.
@@ -311,11 +297,11 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 105
+## What's new in DevTools 105
 
 September 6, 2022
 
-[![Thumbnail image for the DevTools What's New in 105 video](./index-images/devtools-whatsnew-105.png)](https://www.youtube.com/watch?v=h0XJH_iLoUk)
+[![Thumbnail image for video "What's new in DevTools 105"](./index-images/devtools-whatsnew-105.png)](https://www.youtube.com/watch?v=h0XJH_iLoUk)
 
 Covers:
 * PWA protocol handling debugging.
@@ -334,7 +320,7 @@ See also:
 
 September 1, 2022
 
-[![Thumbnail image for the "Understand the DevTools user interface" video](./index-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
+[![Thumbnail image for video "Understand the DevTools user interface"](./index-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
 
 This slightly older (September 2022) video shows the legacy UI for DevTools:
 * Instead of the **Activity Bar**, the video shows the main toolbar.
@@ -362,11 +348,11 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 104
+## What's new in DevTools 104
 
 August 5, 2022
 
-[![Thumbnail image for the DevTools What's New in 104 video](./index-images/devtools-whatsnew-104.png)](https://www.youtube.com/watch?v=0_ZprFX8x0I)
+[![Thumbnail image for video "What's new in DevTools 104"](./index-images/devtools-whatsnew-104.png)](https://www.youtube.com/watch?v=0_ZprFX8x0I)
 
 Covers:
 * Rendering/accessibility bug fixes.
@@ -382,7 +368,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 103
+## What's new in DevTools 103
 
 July 5, 2022
 
@@ -434,7 +420,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 102
+## What's new in DevTools 102
 
 June 1, 2022
 
@@ -540,7 +526,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 101
+## What's new in DevTools 101
 
 April 28, 2022
 
@@ -559,7 +545,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 100
+## What's new in DevTools 100
 
 April 19, 2022
 
@@ -578,7 +564,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 99
+## What's new in DevTools 99
 
 March 21, 2022
 
@@ -612,7 +598,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 98
+## What's new in DevTools 98
 
 February 23, 2022
 
@@ -631,7 +617,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 97
+## What's new in DevTools 97
 
 February 1, 2022
 
@@ -668,7 +654,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 96
+## What's new in DevTools 96
 
 December 9, 2021
 
@@ -687,7 +673,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 95
+## What's new in DevTools 95
 
 December 8, 2021
 
@@ -720,7 +706,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 94
+## What's new in DevTools 94
 
 November 12, 2021
 
@@ -737,7 +723,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## What's New in DevTools 93
+## What's new in DevTools 93
 
 October 11, 2021
 
