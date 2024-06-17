@@ -19,7 +19,7 @@ We recommend the following best practices for developing production WebView2 app
 ### Evergreen distribution checklist
 
 #### 1. Ensure that the Evergreen WebView2 Runtime is installed on the client before your app uses the WebView2 control.  
-For more information, see [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
+For more information, see [Detect if a suitable WebView2 Runtime is already installed](../concepts/distribution.md#detect-if-a-suitable-webview2-runtime-is-already-installed).
 
 #### 2. Manage new versions of the Evergreen Runtime
 
