@@ -13,9 +13,10 @@ ms.date: 02/09/2023
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
-Video: What's New in DevTools 110:
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 110
 
-[![Thumbnail image for the DevTools What's New in 110 video](./devtools-110-images/devtools-whatsnew-110.png)](https://www.youtube.com/watch?v=qrzq3bN_1BY)
+[![Thumbnail image for video "What's new in DevTools 110"](./devtools-110-images/devtools-whatsnew-110.png)](https://www.youtube.com/watch?v=qrzq3bN_1BY)
 
 
 <!-- ====================================================================== -->

@@ -38,9 +38,9 @@ With DevTools, you can do the following:
 <!-- ------------------------------ -->
 #### Video
 
-This slightly older (September 2022) video shows the legacy UI for DevTools:
+This slightly older, September 2022 video shows the legacy UI for DevTools:
 * Instead of the **Activity Bar**, the video shows the main toolbar.
-* Instead of the **Quick View** panel, the video shows the Drawer at bottom of DevTools.
+* Instead of the **Quick View** panel (at bottom of DevTools), the video shows the **Drawer**.
 
 [![Thumbnail image for the "Understand the DevTools user interface" video](./overview-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
 

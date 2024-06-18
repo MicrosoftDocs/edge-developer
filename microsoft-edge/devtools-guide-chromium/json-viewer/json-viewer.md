@@ -23,12 +23,9 @@ The **JSON viewer** improves readability of JSON data in several ways:
 
 
 <!-- ------------------------------ -->
-#### Video
+#### Video: The JSON viewer
 
-https://www.youtube.com/watch?v=DO7V6lw1SWA
-<!-- todo: thumbnail
-https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#web-platform---the-json-viewer
--->
+[![Thumbnail image for video "The JSON viewer"](./json-viewer-images/json-viewer.png)](https://www.youtube.com/watch?v=DO7V6lw1SWA)
 
 
 <!-- ------------------------------ -->

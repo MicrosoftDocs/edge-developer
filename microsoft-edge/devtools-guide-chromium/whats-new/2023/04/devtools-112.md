@@ -14,11 +14,9 @@ ms.date: 04/11/2023
 
 
 <!-- ------------------------------ -->
-#### Video
+#### Video: What's new in DevTools 112
 
-What's new in DevTools 112:
-
-[![Thumbnail image for the "What's new in DevTools 112" video](./devtools-112-images/devtools-whatsnew-112.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
+[![Thumbnail image for video "What's new in DevTools 112"](./devtools-112-images/devtools-whatsnew-112.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
 
 
 <!-- ====================================================================== -->

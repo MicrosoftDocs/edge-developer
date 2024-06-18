@@ -31,14 +31,11 @@ For an overview of the network-related DevTools features, see [Network features 
 
 
 <!-- ------------------------------ -->
-#### Video
+#### Video: Learn to Use the Network Tool
 
 For a video version of this tutorial, view the following video:
 
-[![Thumbnail image for the DevTools Network tool video](./index-images/network-tool-intro-video.png)](https://www.youtube.com/watch?v=niG_Ck6E5L8)
-<!-- todo: thumbnail
-https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---learn-to-use-the-network-tool
--->
+[![Thumbnail image for video "Learn to Use the Network Tool"](./index-images/network-tool-intro-video.png)](https://www.youtube.com/watch?v=niG_Ck6E5L8)
 
 
 <!-- TODO: entire section needs a Microsoft Edge DevTools rewrite  -->

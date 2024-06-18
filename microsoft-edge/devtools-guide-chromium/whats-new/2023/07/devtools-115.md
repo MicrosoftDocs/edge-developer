@@ -15,11 +15,9 @@ ms.date: 08/18/2023
 
 <!-- ------------------------------ 
 todo video
-#### Video
+#### Video: What's new in DevTools 115-125
 
-What's New in DevTools 115-125:
-
-[![Thumbnail image for the DevTools What's New in 115-125 video](./devtools-115-images/devtools-whatsnew-115-125.png)]
+[![Thumbnail image for video "What's new in DevTools 115-125"](./devtools-115-images/devtools-whatsnew-115-125.png)]
 -->
 
 

@@ -21,11 +21,9 @@ ms.date: 05/25/2023
 
 
 <!-- ------------------------------ -->
-#### Video
+#### Video: What's new in DevTools 113 & 114
 
-What's new in DevTools 113 & 114:
-
-[![Thumbnail image for the "What's new in DevTools 113 & 114" video](./devtools-113-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
+[![Thumbnail image for video "What's new in DevTools 113 & 114"](./devtools-113-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
 
 
 <!-- ====================================================================== -->

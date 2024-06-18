@@ -18,12 +18,9 @@ When inspecting a webpage with DevTools, you often see errors and warnings in th
 
 
 <!-- ------------------------------ -->
-#### Video
+#### Video: Explain DevTools Console errors using Copilot in Edge
 
 [![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./copilot-explain-console-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
-<!-- todo: thumbnail
-https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---explain-devtools-console-errors-using-copilot-in-edge
--->
 
 
 <!-- ------------------------------ -->
