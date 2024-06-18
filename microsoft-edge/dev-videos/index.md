@@ -443,12 +443,12 @@ May 31, 2022
 
 [![Thumbnail image for video "Fully style the drop-down part of a HTML select with the new selectmenu element"](./index-images/selectmenu.png)](https://www.youtube.com/watch?v=Ts7jvRyQACY)
 
-Styling `<select>` elements has been challenging. The experimental \<selectmenu\> (or \<selectlist\>) element promises to overcome the remaining limitations by enabling web developers to style all parts of the element.
+Styling `<select>` elements has been challenging. The experimental `<selectmenu>` (or `<selectlist>`) element promises to overcome the remaining limitations by enabling web developers to style all parts of the element.
 
-June 2024 update:  This new element is still experimental.  The \<selectmenu\> element was renamed to <selectlist> in 2023, but the element might be renamed to \<selectmenu\> again.
+June 2024 update:  This new element is still experimental.  The `<selectmenu>` element was renamed to `<selectlist>` in 2023, but the element might be renamed to `<selectmenu>` again.
 
 See also:
-* [Open UI's <selectlist> demos](https://microsoftedge.github.io/Demos/selectlist/)
+* [Open UI's `<selectlist>` demos](https://microsoftedge.github.io/Demos/selectlist/)
 * [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/) - blog post about styling `<select>` elements and the `<selectmenu>` element.
 
 
