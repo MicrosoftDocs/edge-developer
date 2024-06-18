@@ -17,6 +17,12 @@ ms.date: 01/14/2022
 * [What's New in DevTools 97](https://www.youtube.com/watch?v=qbDLtE0a_yQ)
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 97
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 97"](./devtools-images/devtools-whatsnew-97.png)](https://www.youtube.com/watch?v=qbDLtE0a_yQ)
+
+
 <!-- ====================================================================== -->
 ## Introducing the Detached Elements tool
 

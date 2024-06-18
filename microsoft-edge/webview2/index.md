@@ -20,6 +20,12 @@ With WebView2, you can embed web code in different parts of your native app, or 
 To start building a WebView2 app, see [Get started with WebView2](get-started/get-started.md).
 
 
+<!-- ------------------------------ -->
+#### Video: Ignite | March 2021 | Building, Deploying, and Managing WebView2 Applications
+
+[![Thumbnail image for video "Building, Deploying, and Managing WebView2 Applications"](./index-images/build-deploy-wv2-apps.png)](https://www.youtube.com/watch?v=LX-eXvcSx6c)
+
+
 <!-- ====================================================================== -->
 ## Hybrid app approach
 

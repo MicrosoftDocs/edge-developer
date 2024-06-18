@@ -21,7 +21,7 @@ ms.date: 05/24/2022
 <!-- ------------------------------ -->
 #### Video: Microsoft Edge | What's New in DevTools 102
 
-[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 102"](./devtools-102-images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
+[![Thumbnail image for video "What's New in DevTools 102"](./devtools-102-images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
 
 
 <!-- ====================================================================== -->

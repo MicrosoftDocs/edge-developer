@@ -13,8 +13,10 @@ ms.date: 11/16/2021
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
-<!-- todo: thumbnail like in https://learn.microsoft.com/en-us/microsoft-edge/dev-videos/#devtools---whats-new-in-devtools-105 -->
-* [What's New in DevTools 96](https://www.youtube.com/watch?v=H6dYeoGOIDk)
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 96
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 96"](./devtools-images/devtools-whatsnew-96.png)](https://www.youtube.com/watch?v=H6dYeoGOIDk)
 
 
 <!-- ====================================================================== -->

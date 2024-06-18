@@ -24,12 +24,9 @@ As explained in [Fix memory problems](index.md), memory issues affect page perfo
 
 
 <!-- ------------------------------ -->
-#### Video
+#### Video: Debug memory leaks with the Microsoft Edge Detached Elements tool
 
-https://www.youtube.com/watch?v=v2iy17ptmBk
-<!-- todo: thumbnail
-https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---debug-memory-leaks-with-the-microsoft-edge-detached-elements-tool
--->
+[![Thumbnail image for video "Debug memory leaks with the Microsoft Edge Detached Elements tool"](./dom-leaks-images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
 
 
 <!-- ====================================================================== -->

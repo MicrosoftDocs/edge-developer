@@ -40,12 +40,9 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 
 <!-- ------------------------------ -->
-#### Video
+#### Video: Advanced issues filtering in Edge DevTools and VSCode
 
-[![Thumbnail image for the DevTools issues filtering video](./index-images/advanced-issues-filtering.png)](https://www.youtube.com/watch?v=_dePgo89bq0)
-<!-- todo: thumbnail
-https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---advanced-issues-filtering-in-edge-devtools-and-vscode
--->
+[![Thumbnail image for video "Advanced issues filtering in Edge DevTools and VSCode"](./index-images/advanced-issues-filtering.png)](https://www.youtube.com/watch?v=_dePgo89bq0)
 
 
 <!-- ====================================================================== -->
