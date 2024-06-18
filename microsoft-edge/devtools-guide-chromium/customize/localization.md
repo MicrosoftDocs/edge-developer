@@ -33,12 +33,9 @@ The DevTools UI in Chinese:
 
 
 <!-- ------------------------------ -->
-#### Video
+#### Video: Use your preferred language in Microsoft Edge DevTools
 
-[![Thumbnail image for the DevTools localization video](./localization-images/devtools-localization.png)](https://www.youtube.com/watch?v=AeF0AvWpUO8)
-<!-- todo: thumbnail
-https://review.learn.microsoft.com/en-us/microsoft-edge/dev-videos/?branch=pr-en-us-3189#devtools---use-your-preferred-language-in-devtools
--->
+[![Thumbnail image for video "Use your preferred language in Microsoft Edge DevTools"](./localization-images/devtools-localization.png)](https://www.youtube.com/watch?v=AeF0AvWpUO8)
 
 
 <!-- ====================================================================== -->

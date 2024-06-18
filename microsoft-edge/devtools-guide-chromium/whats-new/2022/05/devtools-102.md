@@ -18,8 +18,10 @@ ms.date: 05/24/2022
 > * [Microsoft Edge | Build 2022: Enriching desktop experiences with the power and reach of the web](https://www.youtube.com/watch?v=ahO5nePl4BQ)
 
 
-<!-- todo: thumbnail like in https://learn.microsoft.com/en-us/microsoft-edge/dev-videos/#devtools---whats-new-in-devtools-105 -->
-* [What's New in DevTools 102](https://www.youtube.com/watch?v=JY6DfhSdr_A)
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 102
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 102"](./devtools-102-images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
 
 
 <!-- ====================================================================== -->
