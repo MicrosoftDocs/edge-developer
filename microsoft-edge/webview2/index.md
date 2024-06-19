@@ -20,12 +20,6 @@ With WebView2, you can embed web code in different parts of your native app, or 
 To start building a WebView2 app, see [Get started with WebView2](get-started/get-started.md).
 
 
-<!-- ------------------------------ -->
-#### Video: Ignite | March 2021 | Building, Deploying, and Managing WebView2 Applications
-
-[![Thumbnail image for video "Building, Deploying, and Managing WebView2 Applications"](./index-images/build-deploy-wv2-apps.png)](https://www.youtube.com/watch?v=LX-eXvcSx6c)
-
-
 <!-- ====================================================================== -->
 ## Hybrid app approach
 
@@ -126,3 +120,6 @@ developer.microsoft.com:
 
 Microsoft.com:
 * [Become a Microsoft Edge Insider](https://www.microsoft.com/en-us/edge/download/insider) - download the preview channels of Microsoft Edge (Canary, Dev, and Beta).
+
+YouTube:
+* [Building, Deploying, and Managing WebView2 Applications](https://www.youtube.com/watch?v=LX-eXvcSx6c) - March 2, 2021.

@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 06/18/2024
+ms.date: 06/19/2024
 ---
 # Videos about web development with Microsoft Edge
 
@@ -68,18 +68,12 @@ See also:
 
 February 8, 2024
 
-[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./index-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
+[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./index-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=vfVsAmNFLik)
 
-Covers:
-* Unminified JS names for OOPIFs in the **Performance** tool.
-* Non-simple CSS selectors in the **CSS Overview** tool.
-* Code folding in the JSON viewer.
-* DevTools UI improvements (Focus Mode).
-* New markers for logpoints and conditional breakpoints.
-* Changing themes in DevTools.
+The **Console** and **Sources** tools in Microsoft Edge DevTools now integrate with Copilot in Microsoft Edge to help you understand errors and source code.  Use this feature to get help with debugging your code.
 
 See also:
-* [Explain Console errors and warnings using Copilot in Edge](../devtools-guide-chromium/console/copilot-explain-console.md)<!-- Video section is ok -->
+* [Explain Console errors and warnings using Copilot in Edge](../devtools-guide-chromium/console/copilot-explain-console.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -92,7 +86,7 @@ August 17, 2023
 The JSON viewer automatically formats and highlights JSON responses and files in browser tabs.  When your web server responds to HTTP requests with data encoded as JSON, this data isn't always easy to read and is sometimes returned as one line of text.  The JSON viewer changes the returned data to make it easier to read.  The JSON syntax is highlighted with different colors, object properties are displayed on their own lines and indented, and objects can be collapsed or expanded.
 
 See also:
-* [View formatted JSON](../devtools-guide-chromium/json-viewer/json-viewer.md)<!-- Video section is ok -->
+* [View formatted JSON](../devtools-guide-chromium/json-viewer/json-viewer.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -112,8 +106,8 @@ Covers:
 * `console.table()`.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 114)](../devtools-guide-chromium/whats-new/2023/06/devtools-114.md)<!-- Video section is ok -->
-* [What's New in DevTools (Microsoft Edge 113)](../devtools-guide-chromium/whats-new/2023/05/devtools-113.md)<!-- Video section is ok -->
+* [What's New in DevTools (Microsoft Edge 114)](../devtools-guide-chromium/whats-new/2023/06/devtools-114.md)<!-- has Video section -->
+* [What's New in DevTools (Microsoft Edge 113)](../devtools-guide-chromium/whats-new/2023/05/devtools-113.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -129,10 +123,10 @@ Covers:
 * Code folding in the JSON viewer.
 * Improvements in the DevTools UI.
 * New markers for logpoints and conditional breakpoints.
-* Changing themes in DevTools.
+* How to change themes in DevTools.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 112)](../devtools-guide-chromium/whats-new/2023/04/devtools-112.md)<!-- Video section is ok -->
+* [What's New in DevTools (Microsoft Edge 112)](../devtools-guide-chromium/whats-new/2023/04/devtools-112.md)<!-- has Video section -->
 * [Analyze CSS selector performance during Recalculate Style events](../devtools-guide-chromium/evaluate-performance/selector-stats.md) - CSS selector stats.
 * [View formatted JSON](../devtools-guide-chromium/json-viewer/json-viewer.md)
 * [Apply a color theme to DevTools](../devtools-guide-chromium/customize/theme.md)
@@ -156,7 +150,7 @@ Covers:
 * Customize the **Network** tool's columns.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 111)](../devtools-guide-chromium/whats-new/2023/03/devtools-111.md)<!-- Video section is ok -->
+* [What's New in DevTools (Microsoft Edge 111)](../devtools-guide-chromium/whats-new/2023/03/devtools-111.md)<!-- has Video section -->
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../devtools-guide-chromium/javascript/publish-source-maps-to-azure.md)
 
 
@@ -175,7 +169,7 @@ Covers:
 * Simulate `prefers-color-scheme`.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 110)](../devtools-guide-chromium/whats-new/2023/02/devtools-110.md)<!-- Video section is ok -->
+* [What's New in DevTools (Microsoft Edge 110)](../devtools-guide-chromium/whats-new/2023/02/devtools-110.md)<!-- has Video section -->
 * [Overview of DevTools](../devtools-guide-chromium/overview.md)
 
 
@@ -196,7 +190,7 @@ Covers:
 * Inspecting elements.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 109)](../devtools-guide-chromium/whats-new/2023/01/devtools-109.md)<!-- Video section is ok -->
+* [What's New in DevTools (Microsoft Edge 109)](../devtools-guide-chromium/whats-new/2023/01/devtools-109.md)<!-- has Video section -->
 * [Share enhanced performance and memory traces](../devtools-guide-chromium/experimental-features/share-traces.md)
 * [Analyze CSS selector performance during Recalculate Style events](../devtools-guide-chromium/evaluate-performance/selector-stats.md) - selector stats.
 * [Reduce garbage with additional settings for allocation sampling](../devtools-guide-chromium/memory-problems/index.md#reduce-garbage-with-additional-settings-for-allocation-sampling) in _Fix memory problems_.
@@ -221,7 +215,7 @@ Covers:
 * Use Detached Elements to find DOM leaks.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 108)](../devtools-guide-chromium/whats-new/2022/12/devtools-108.md)<!-- Video section is ok -->
+* [What's New in DevTools (Microsoft Edge 108)](../devtools-guide-chromium/whats-new/2022/12/devtools-108.md)<!-- has Video section -->
 * [Create an extension that customizes the DevTools UI](../extensions-chromium/developer-guide/devtools-extension.md)
 * [The heap snapshot file format](../devtools-guide-chromium/memory-problems/heap-snapshot-schema.md)
 * [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/?form=MA13LH) - download Edge WebDriver.
@@ -237,16 +231,16 @@ November 8, 2022
 [![Thumbnail image for video "What's new in DevTools 107"](./index-images/devtools-whatsnew-107.png)](https://www.youtube.com/watch?v=QcAnrbfJN0s)
 
 Covers:
-* Text labels in Focus Mode.
+* Text labels in the Focus Mode DevTools UI.
 * New shortcut for Command Palette.
-* Large heap snapshots in Memory tool.
-* High contrast fixes.
+* Large heap snapshots in the **Memory** tool.
+* High-contrast mode fixes.
 * Switch off "search as you type".
 * Automate WebView2 with Playwright.
 * Customize shortcuts.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 107)](../devtools-guide-chromium/whats-new/2022/10/devtools-107.md)<!-- Video section is ok -->
+* [What's New in DevTools (Microsoft Edge 107)](../devtools-guide-chromium/whats-new/2022/10/devtools-107.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -261,18 +255,18 @@ Learn to use the **Network** tool in Microsoft Edge DevTools.
 Covers:
 * Why the **Network** tool in DevTools is essential for web developers.
 * How websites get the information they need from the internet to get displayed in the web browser.
-* When to use the Network tool.
-* A tour of the Network tool UI.
-* Displaying requests in the Network tool.
+* When to use the **Network** tool.
+* A tour of the **Network** tool UI.
+* Displaying requests in the **Network** tool.
 * Viewing the details for a request/response.
-* Customizing the Network tool.
+* Customizing the **Network** tool.
 * Sorting, filtering, and searching requests.
 * Investigating performance issues.
 * Blocking requests and exporting as HAR files.
 * Editing and resending requests.
 
 See also:
-* [Inspect network activity](../devtools-guide-chromium/network/index.md)<!-- Video section is ok -->
+* [Inspect network activity](../devtools-guide-chromium/network/index.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -292,7 +286,7 @@ Covers:
 * Using Snippets.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 106)](../devtools-guide-chromium/whats-new/2022/09/devtools-106.md)<!-- Video section is ok -->
+* [What's New in DevTools (Microsoft Edge 106)](../devtools-guide-chromium/whats-new/2022/09/devtools-106.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -311,7 +305,7 @@ Covers:
 * Using log points.
 
 See also:
-* [What's New in DevTools 105](../devtools-guide-chromium/whats-new/2022/09/devtools-105.md)<!-- Video section is ok -->
+* [What's New in DevTools 105](../devtools-guide-chromium/whats-new/2022/09/devtools-105.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -342,7 +336,7 @@ Covers:
 * How to restore the default settings.
 
 See also:
-* [Overview of DevTools](../devtools-guide-chromium/overview.md)<!-- Video section is ok -->
+* [Overview of DevTools](../devtools-guide-chromium/overview.md)<!-- has Video section -->
 * [About the list of tools](../devtools-guide-chromium/about-tools.md)
 
 
@@ -355,14 +349,14 @@ August 5, 2022
 
 Covers:
 * Rendering/accessibility bug fixes.
-* Composited layers are now in the 3D View tool and the Layers tool was removed.
-* Group files in the Sources tool.
+* Composited layers are now in the **3D View** tool, and the **Layers** tool was removed.
+* Group files in the **Sources** tool.
 * Find where nodes get slotted in web components.
 * Where to find more information.
-* Configure the Activity Bar location in Focus Mode.
+* How to change where the **Activity Bar** is placed.
 
 See also:
-* [What's New in DevTools 104](../devtools-guide-chromium/whats-new/2022/08/devtools-104.md)<!-- Video section is ok -->
+* [What's New in DevTools 104](../devtools-guide-chromium/whats-new/2022/08/devtools-104.md)<!-- has Video section -->
 * [Debug the web in 3D with the 3D View tool](https://aka.ms/debug-in-3d) - blog post.
 
 
@@ -381,7 +375,7 @@ Covers:
 * Open any HTML page in the VS Code extension.
 
 See also:
-* [What's New in DevTools 103](../devtools-guide-chromium/whats-new/2022/06/devtools-103.md)<!-- Video section is ok -->
+* [What's New in DevTools 103](../devtools-guide-chromium/whats-new/2022/06/devtools-103.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -391,9 +385,7 @@ June 21, 2022
 
 [![Thumbnail image for video "Debug the web in 3D"](./index-images/3d-view-tool.png)](https://www.youtube.com/watch?v=LVb1Xzzd72w)
 
-The **3D View** tool in Microsoft Edge DevTools provides a 3-dimensional representation of the webpage you're inspecting.  Use the **3D View** tool to debug common web development problems such as:
-
-Covers:
+The **3D View** tool in Microsoft Edge DevTools provides a 3-dimensional representation of the webpage you're inspecting.  Use the **3D View** tool to debug common web development problems, such as:
 * Deeply nested DOM nodes.
 * Out-of-document elements.
 * Unwanted scrollbars.
@@ -401,7 +393,7 @@ Covers:
 * Composited layers performance.
 
 See also:
-* [Navigate webpage layers, z-index, and DOM using the 3D View tool](../devtools-guide-chromium/3d-view/index.md)<!-- Video section is ok -->
+* [Navigate webpage layers, z-index, and DOM using the 3D View tool](../devtools-guide-chromium/3d-view/index.md)<!-- has Video section -->
 * [Debug the web in 3D with the 3D View tool](https://blogs.windows.com/msedgedev/2022/06/21/debug-the-web-in-3d-with-the-3d-view-tool/) - blog post.
 
 
@@ -415,7 +407,7 @@ June 9, 2022
 How to select the UI language that's most comfortable to you for coding and debugging.  Microsoft Edge DevTools supports 13+ different languages.
 
 See also:
-* [Change DevTools language settings](../devtools-guide-chromium/customize/localization.md)<!-- Video section is ok -->
+* [Change DevTools language settings](../devtools-guide-chromium/customize/localization.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -433,7 +425,7 @@ Covers:
 * Issues Fixed.
 
 See also:
-* [What's New in DevTools 102](../devtools-guide-chromium/whats-new/2022/05/devtools-102.md)<!-- Video section is ok -->
+* [What's New in DevTools 102](../devtools-guide-chromium/whats-new/2022/05/devtools-102.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -445,7 +437,7 @@ May 31, 2022
 
 Styling `<select>` elements has been challenging. The experimental `<selectmenu>` (or `<selectlist>`) element promises to overcome the remaining limitations by enabling web developers to style all parts of the element.
 
-June 2024 update:  This new element is still experimental.  The `<selectmenu>` element was renamed to `<selectlist>` in 2023, but the element might be renamed to `<selectmenu>` again.
+June 2024 update: This new element is still experimental.  The `<selectmenu>` element was renamed to `<selectlist>` in 2023.
 
 See also:
 * [Open UI's `<selectlist>` demos](https://microsoftedge.github.io/Demos/selectlist/)
@@ -466,8 +458,8 @@ The Microsoft Edge DevTools extension for Visual Studio Code makes issues availa
 Released products can have issues. Based on your feedback, we added useful ways to filter issues.  You can disable issues coming from third-party libraries, and choose which browsers to view issues about.
 
 See also:
-* [Find and fix problems using the Issues tool](../devtools-guide-chromium/issues/index.md)<!-- Video section is ok -->
-* [Inline and live issue analysis](../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md) in the DevTools extension for VS Code<!-- Video section is ok -->
+* [Find and fix problems using the Issues tool](../devtools-guide-chromium/issues/index.md)<!-- has Video section -->
+* [Inline and live issue analysis](../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md) in the DevTools extension for VS Code<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -538,7 +530,7 @@ Covers:
 * Switching Themes.
 
 See also:
-* [What's New in DevTools 101](../devtools-guide-chromium/whats-new/2022/04/devtools-101.md)<!-- Video section is ok -->
+* [What's New in DevTools 101](../devtools-guide-chromium/whats-new/2022/04/devtools-101.md)<!-- has Video section -->
 * Console integration: https://aka.ms/ConsoleIntegration
 * Network Columns: https://aka.ms/NetworkColumns
 
@@ -558,7 +550,7 @@ Covers:
 * The links from an imported performance profile use source maps from Azure Artifacts symbol server to map back to your familiar original source code.
 
 See also:
-* [What's New in DevTools 100](../devtools-guide-chromium/whats-new/2022/03/devtools-100.md)<!-- Video section is ok -->
+* [What's New in DevTools 100](../devtools-guide-chromium/whats-new/2022/03/devtools-100.md)<!-- has Video section -->
 * [DevTools feedback repo](https://github.com/MicrosoftEdge/DevTools)
 
 
@@ -577,7 +569,7 @@ Covers:
 * Accessibility in **Network Console** tool and **3D View** tool.
 
 See also:
-* [What's New in DevTools 99](../devtools-guide-chromium/whats-new/2022/03/devtools.md)<!-- Video section is ok -->
+* [What's New in DevTools 99](../devtools-guide-chromium/whats-new/2022/03/devtools.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -611,7 +603,7 @@ Covers:
 * Updates for the Chromium browser engine.
 
 See also:
-* [What's New in DevTools 98](../devtools-guide-chromium/whats-new/2022/02/devtools.md)<!-- Video section is ok -->
+* [What's New in DevTools 98](../devtools-guide-chromium/whats-new/2022/02/devtools.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -628,7 +620,7 @@ Covers:
 * DevTools extension for VS Code has additional features.
 
 See also:
-* [What's New in DevTools 97](../devtools-guide-chromium/whats-new/2022/01/devtools.md)<!-- Video section is ok -->
+* [What's New in DevTools 97](../devtools-guide-chromium/whats-new/2022/01/devtools.md)<!-- has Video section -->
 * Refresh the device list: https://aka.ms/RefreshDeviceList
 * Autocomplete with Edit as HTML https://aka.ms/AutocompleteEditHTML
 * Improved debugging experience: https://aka.ms/NewDebugging
@@ -646,7 +638,7 @@ The **Detached Elements** tool helps you investigate and resolve DOM memory leak
 Memory leaks occur when the JavaScript code of an application retains more and more objects in memory instead of releasing them for the browser to garbage-collect.  We built the **Detached Elements** tool with the Microsoft Teams developers, and it has already helped us find and fix memory leaks across many of our own websites and apps.
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements tool](../devtools-guide-chromium/memory-problems/dom-leaks.md)<!-- Video section is ok -->
+* [Debug DOM memory leaks with the Detached Elements tool](../devtools-guide-chromium/memory-problems/dom-leaks.md)<!-- has Video section -->
 * [Debug memory leaks with the Microsoft Edge Detached Elements tool](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/) - blog post.
 
 
@@ -665,7 +657,7 @@ Covers:
 * Opening source files in Visual Studio Code integrates with the **Sources** tool.
 
 See also:
-* [What's New in DevTools 96](../devtools-guide-chromium/whats-new/2021/11/devtools.md)<!-- Video section is ok -->
+* [What's New in DevTools 96](../devtools-guide-chromium/whats-new/2021/11/devtools.md)<!-- has Video section -->
 * [Microsoft Edge DevTools extension for Visual Studio Code](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
 
 
@@ -682,7 +674,7 @@ Covers:
 * Console filters display grouped messages.
 
 See also:
-* [What's New in DevTools 95](../devtools-guide-chromium/whats-new/2021/10/devtools.md)<!-- Video section is ok -->
+* [What's New in DevTools 95](../devtools-guide-chromium/whats-new/2021/10/devtools.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -714,7 +706,7 @@ Covers:
 * DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links.  JavaScript Debugger connection to remote workspaces.
 
 See also:
-* [What's New in DevTools 94](../devtools-guide-chromium/whats-new/2021/09/devtools.md)<!-- Video section is ok -->
+* [What's New in DevTools 94](../devtools-guide-chromium/whats-new/2021/09/devtools.md)<!-- has Video section -->
 * [Keyboard shortcuts](../devtools-guide-chromium/shortcuts/index.md) - Navigating DevTools with a keyboard.
 
 
@@ -729,14 +721,14 @@ Covers:
 * DevTools UI.
 * Debug DOM node memory leaks with the **Detached Elements** tool.
 * Change Display Language.
-* Copy CSS declarations in the **Styles** pane for CSS-in-JS libraries.
+* Copy CSS declarations in the **Elements** tool's **Styles** pane for CSS-in-JS libraries.
 * Easier customization of User-Agent Client Hints.
-* Screen readers announce errors, warnings, and issues in toolbar and Console.
+* Screen readers announce errors, warnings, and issues displayed in the toolbar and **Console**.
 * Copy as PowerShell in the **Network** tool includes cookies.
 * The Visual Studio Code debugger integrates with the DevTools Extension for VS Code.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 93)](../devtools-guide-chromium/whats-new/2021/07/devtools.md)<!-- Video section is ok -->
+* [What's New in DevTools (Microsoft Edge 93)](../devtools-guide-chromium/whats-new/2021/07/devtools.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -761,27 +753,6 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Ignite | March 2021 | Building, Deploying, and Managing WebView2 Applications
-
-March 2, 2021
-
-[![Thumbnail image for video "Building, Deploying, and Managing WebView2 Applications"](./index-images/build-deploy-wv2-apps.png)](https://www.youtube.com/watch?v=LX-eXvcSx6c)
-
-Use web technologies to maximize code reusability in a multi-platform, multi-device world.  WebView2 enables developers to host web content in native applications while using the Microsoft Edge (Chromium) rendering engine and deploying and managing WebView2 applications. 
-
-Covers:
-* Distribution modes.
-* Compatibility.
-* Case Study Config Manager.
-* Case Study: Microsoft Outlook.
-* Getting Started with WebView2.
-* Managing WebView2 applications.
-
-See also:
-* [Introduction to Microsoft Edge WebView2](../webview2/index.md)<!-- Video section is ok -->
-
-
-<!-- ====================================================================== -->
 ## Ignite | March 2021 | Igniting the Web Apps Story
 
 March 2, 2021
@@ -801,7 +772,7 @@ Covers:
 * Get involved with PWAs on Windows.
 
 See also:
-* [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md)<!-- Video section is ok -->
+* [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -827,8 +798,9 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
-* [What's New in Microsoft Edge DevTools](../devtools-guide-chromium/whats-new/whats-new.md)
+YouTube:
 * [Microsoft Edge (@MSFTEdge) channel at YouTube](https://www.youtube.com/@MSFTEdge/videos)
    * [Developer](https://www.youtube.com/playlist?list=PL4z1-7pjJU6zvxxsa2GzzuaXf1neBzrmI) - playlist.
    * [What's New in DevTools](https://www.youtube.com/playlist?list=PL4z1-7pjJU6wCla3QZuWuWjsCB2hCnTvr) - playlist.
    * [Extensions](https://www.youtube.com/playlist?list=PL4z1-7pjJU6ykO2iptfxT7T68W5WEK4ff) - playlist.
+* [Building, Deploying, and Managing WebView2 Applications](https://www.youtube.com/watch?v=LX-eXvcSx6c) - March 2, 2021.<!-- video partly outdated by more recent WebView2 developments, and no longer represents an up-to-date intro -->
