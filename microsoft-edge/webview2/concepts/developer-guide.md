@@ -67,8 +67,6 @@ See [Handling process-related events in WebView2](../concepts/process-related-ev
 <!-- ====================================================================== -->
 ## Event handlers on the environment object
 
-<!--TODO: I think we should have a performance best practices article in the future -->
-
 If any of your app's event handlers on the [environment object](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) hold a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects, which will leak memory.
 
 To prevent such a memory leak:
