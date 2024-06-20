@@ -32,6 +32,12 @@ The DevTools UI in Chinese:
 ![The DevTools UI in Chinese](./localization-images/localization-zh.png)
 
 
+<!-- ------------------------------ -->
+#### Video: Use your preferred language in Microsoft Edge DevTools
+
+[![Thumbnail image for video "Use your preferred language in Microsoft Edge DevTools"](./localization-images/devtools-localization.png)](https://www.youtube.com/watch?v=AeF0AvWpUO8)
+
+
 <!-- ====================================================================== -->
 ## Reverting the DevTools UI to English
 

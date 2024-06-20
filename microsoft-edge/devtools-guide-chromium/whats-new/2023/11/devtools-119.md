@@ -13,6 +13,14 @@ ms.date: 11/02/2023
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ 
+todo video
+#### Video: What's new in DevTools 115-125
+
+[![Thumbnail image for video "What's new in DevTools 115-125"](./devtools-119-images/devtools-whatsnew-115-125.png)]
+-->
+
+
 <!-- ====================================================================== -->
 ## Increased text color contrast for Error pills (badges) in the Issues tool
 

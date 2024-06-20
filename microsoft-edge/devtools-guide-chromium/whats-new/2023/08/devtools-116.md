@@ -13,6 +13,14 @@ ms.date: 08/17/2023
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ 
+todo video
+#### Video: What's new in DevTools 115-125
+
+[![Thumbnail image for video "What's new in DevTools 115-125"](./devtools-116-images/devtools-whatsnew-115-125.png)]
+-->
+
+
 <!-- ====================================================================== -->
 ## New "Move Activity Bar" button directly on the Activity Bar
 

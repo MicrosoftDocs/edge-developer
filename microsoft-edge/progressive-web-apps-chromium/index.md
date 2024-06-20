@@ -17,6 +17,12 @@ PWAs provide native-like experiences to your users on supporting devices. They a
 To start building a PWA, see [Get started with Progressive Web Apps](./how-to/index.md).
 
 
+<!-- ------------------------------ -->
+#### Video: Ignite | March 2021 | Igniting the Web Apps Story
+
+[![Thumbnail image for video "Igniting the Web Apps Story"](./index-images/igniting-web-apps-story.png)](https://www.youtube.com/watch?v=xUNC8MjW_iI)
+
+
 <!-- ====================================================================== -->
 ## PWA benefits
 

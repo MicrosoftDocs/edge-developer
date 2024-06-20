@@ -1016,7 +1016,7 @@ _new as of Microsoft Edge 128_
 
 In the **Performance** tool, when exporting the trace file, stores the source code of compiled scripts in the trace file.
 
-This experiment makes the **Performance** tool record script source text in treaces.  This feature is being implemented in the upstream Chromium project.
+This experiment makes the **Performance** tool record script source text in traces.  This feature is being implemented in the upstream Chromium project.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 128.

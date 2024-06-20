@@ -13,6 +13,12 @@ ms.date: 02/02/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 98
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 98"](./devtools-images/devtools-whatsnew-98.png)](https://www.youtube.com/watch?v=HpaRDwU_AZI)
+
+
 <!-- ====================================================================== -->
 ## Catch up on the latest and greatest features in Microsoft Edge
 
