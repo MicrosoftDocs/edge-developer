@@ -31,7 +31,7 @@ New APIs are added in phases, as follows:
 <!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
 
 See also:
-* [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
+* [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
 
 <!-- terminology:
 APIs are Experimental or Stable

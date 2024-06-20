@@ -1,6 +1,6 @@
 ---
-title: Understand the different WebView2 SDK versions
-description: Understand the different WebView2 SDK versions, and version models used for Microsoft Edge WebView2.
+title: Prerelease and Release SDKs for WebView2
+description: Prerelease SDKs vs. Release SDKs for WebView2, and version models used for Microsoft Edge WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/25/2023
 ---
-# Understand the different WebView2 SDK versions
+# Prerelease and Release SDKs for WebView2
 
 The WebView2 SDK is provided as a Prerelease or Release version of the **Microsoft.Web.WebView2** NuGet package.  Either use a Prerelease SDK with a preview channel of Microsoft Edge, or use a Release SDK with the WebView2 Runtime.
 
