@@ -173,7 +173,6 @@ To check the compatibility between specific build numbers of the SDK and the Run
 <!-- ====================================================================== -->
 ## Feature-detecting to test whether the installed Runtime supports recently added APIs
 
-<!-- this is the main section about QI; other articles should have a couple paragraphs only, and link to here -->
 
 If your app uses the Evergreen Runtime rather than Fixed Version, you should wrap any calls to relatively new WebView2 APIs by using `QueryInterface` or `try-catch`.  There are edge cases where a client's Evergreen Runtime isn't the latest build and therefore falls behind the SDK build number, because the Admin might have turned off updating of the WebView2 Runtime, or the client might be offline.
 

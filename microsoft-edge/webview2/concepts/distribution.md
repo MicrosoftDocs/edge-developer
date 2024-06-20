@@ -266,9 +266,34 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
 
 <!-- ------------------------------ -->
+
+#### Manage new versions of the Evergreen Runtime
+
+New versions of the Evergreen Runtime are automatically downloaded to the client, and the client uses the new version when your WebView2 app is restarted.  However, if your app runs continuously, it will continue to use the previous version of the runtime. This has security implications, as the previous version of the runtime might have security vulnerabilities that are fixed in the new version. You should consider whether it is important for your app to adopt the latest version of the runtime as soon as possible based on your app's threat model. For example, whether your WebView2 app accesses third-party content, which should be considered untrusted.
+
+To use the new version of the runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the runtime. You can have an event handler for the `NewBrowserVersionAvailable` event, to have your app automatically notify the user to restart the app.  If your app handles restarting the app, consider saving the user state before the WebView2 app exits. 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Environment` Class:
+    * [NewBrowserVersionAvailable Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Environment` Class:
+    * [NewBrowserVersionAvailable Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#newbrowserversionavailable)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
+    * [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable)
+    * [remove_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#remove_newbrowserversionavailable)
+---
+
+<!-- ------------------------------ -->
 #### Test your app for forward-compatibility
 
-The Web is constantly evolving.  In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
+In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
 
 For best practices on how to test your app for forward-compatibility, see [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
 
@@ -276,19 +301,11 @@ For best practices on how to test your app for forward-compatibility, see [Prere
 <!-- ------------------------------ -->
 #### Feature-detect when using recent APIs
 
-<!-- the main section about QueryInterface is in versioning.md, so limit this section to a couple paragraphs -->
-
-If you use the Evergreen mode, when your WebView2 app uses a new WebView2 API from a recent SDK, you should use an approach such as `QueryInterface` or `try-catch` to make sure the new API is present on the client's machine.  This feature-detecting is a best practice, because there are cases where the WebView2 Runtime isn't updated.
-
-Even if you use the Evergreen distribution mode, the WebView2 Runtime might not be updated, for the following reasons:
-
-*  An IT Admin can turn off updates of the WebView2 Runtime, because an Admin has control of updating their devices.
-
-*  Clients that are offline don't receive the updated WebView2 Runtime.
-
-The update policies for Microsoft Edge and the WebView2 Runtime are separate.  Even if the IT Admin has disabled automatic updates of Microsoft _Edge_, the WebView2 _Runtime_ is still automatically updated, unless the Admin turns off Runtime updating.  If the Admin disables updating Microsoft Edge (which is somewhat common), that doesn't affect which WebView2 APIs are available on the client machine.
+When using Evergreen mode in WebView2 apps, it's crucial to check for the presence of new APIs on the client's machine using methods like `QueryInterface` or `try-catch`, due to potential lack of runtime updates. Updates to the WebView2 Runtime may not occur if an IT Admin disables them or if clients are offline. 
 
 See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
+
+Note that there's separate update policies for Microsoft Edge and WebView2 Runtime, so disabling Edge updates doesn't impact the availability of WebView2 APIs, as the Runtime can still update automatically unless specifically disabled by an Admin.
 
 
 <!-- ====================================================================== -->

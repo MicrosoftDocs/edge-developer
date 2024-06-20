@@ -23,28 +23,7 @@ For more information, see [Detect if a suitable WebView2 Runtime is already inst
 
 #### 2. Manage new versions of the Evergreen Runtime
 
-<!--TODO Consider if we want to move this API / description into distribution.md, and have an overview here instead. -->
-
-New versions of the Evergreen Runtime are automatically downloaded to the client, and the client uses the new version when your WebView2 app is restarted.  However, if your app runs continuously, it will continue to use the previous version of the runtime. This has security implications, as the previous version of the runtime might have security vulnerabilities that are fixed in the new version. You should consider whether it is important for your app to adopt the latest version of the runtime as soon as possible based on your app's threat model. For example, whether your WebView2 app accesses third-party content, which should be considered untrusted.
-
-To use the new version of the runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the runtime. You can have an event handler for the `NewBrowserVersionAvailable` event, to have your app automatically notify the user to restart the app.  If your app handles restarting the app, consider saving the user state before the WebView2 app exits. 
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Environment` Class:
-    * [NewBrowserVersionAvailable Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Environment` Class:
-    * [NewBrowserVersionAvailable Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#newbrowserversionavailable)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
-    * [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable)
-    * [remove_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#remove_newbrowserversionavailable)
----
+Evergreen Runtime updates are automatically downloaded, but a running WebView2 app will continue using its current version, potentially missing security updates. To adopt the new version, an app must release all references to previous WebView2 objects or restart. Implementing a `NewBrowserVersionAvailable` event handler can prompt users to restart the app for updates, with a recommendation to save user state before exiting for a seamless transition. See [Manage new versions of the Evergreen Runtime](../concepts/distribution.md#manage-new-versions-of-the-evergreen-runtime)
 
 #### 3. Run forward-compatibility tests when using the Evergreen Runtime.
 
