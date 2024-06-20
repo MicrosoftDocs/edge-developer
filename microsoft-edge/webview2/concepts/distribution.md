@@ -152,7 +152,7 @@ The vast majority of Windows 10 devices have the WebView2 Runtime installed alre
 *  Redirect your end users to the Microsoft site: [Download Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/consumer/), and have end users download the Evergreen WebView2 Runtime installer from the site and install the Runtime themselves.
 
 See also:
-* [Understand the different WebView2 SDK versions](versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Evergreen WebView2 Runtime.
+* [Prerelease and Release SDKs for WebView2](versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Evergreen WebView2 Runtime.
 * [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).
 
 
@@ -301,11 +301,11 @@ For best practices on how to test your app for forward-compatibility, see [Prere
 <!-- ------------------------------ -->
 #### Feature-detect when using recent APIs
 
-When using Evergreen mode in WebView2 apps, it's crucial to check for the presence of new APIs on the client's machine using methods like `QueryInterface` or `try-catch`, due to potential lack of runtime updates. Updates to the WebView2 Runtime may not occur if an IT Admin disables them or if clients are offline. 
+When using Evergreen mode in WebView2 apps, it's crucial to check for the presence of new APIs on the client's machine using methods like `QueryInterface` or `try-catch`, due to potential lack of runtime updates. Updates to the WebView2 Runtime might not occur if an IT Admin disables them, or if clients are offline. 
 
-See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
+See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 
-Note that there's separate update policies for Microsoft Edge and WebView2 Runtime, so disabling Edge updates doesn't impact the availability of WebView2 APIs, as the Runtime can still update automatically unless specifically disabled by an Admin.
+Note that there are separate update policies for Microsoft Edge and WebView2 Runtime, so disabling Edge updates doesn't impact the availability of WebView2 APIs, because the Runtime can still update automatically unless specifically disabled by an Admin.
 
 
 <!-- ====================================================================== -->
@@ -390,7 +390,7 @@ To use the Fixed Version distribution mode:
 <!-- ====================================================================== -->
 ## Files to ship with the app
 
-The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking](../how-to/static.md) `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture. Usually this is handled automatically for you by Visual Studio when using the `.targets` file in the WebView2 SDK, but there may be cases when you need to manually specify what files to publish with your app.
+The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking](../how-to/static.md) `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture. Usually this is handled automatically for you by Visual Studio when using the `.targets` file in the WebView2 SDK, but there might be cases when you need to manually specify what files to publish with your app.
 
 `WebView2Loader.dll` is a native and architecture-specific binary, so you need to include all flavors of this binary that you expect your app to run in.  For example:
 

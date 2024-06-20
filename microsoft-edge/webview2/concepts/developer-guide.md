@@ -37,7 +37,7 @@ To run a WebView2 app that was developed with a particular version of the Webvie
 
 When using the Evergreen WebView2 Runtime, there are some scenarios where the runtime on a client hasn't been automatically updated to the latest version. Additionally, some group policies pause updating of the runtime.  As such, when you push an update to your WebView2 app, the app might not work if it tries to call newer APIs that aren't available in the client's installed runtime.
 
-Use feature-detection to make sure that the newer APIs that are used by your WebView2 app are supported by the WebView2 Runtime that's installed on the client. See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
+Use feature-detection to make sure that the newer APIs that are used by your WebView2 app are supported by the WebView2 Runtime that's installed on the client. See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 
 
 <!-- ====================================================================== -->
