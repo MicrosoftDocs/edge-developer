@@ -13,6 +13,12 @@ ms.date: 09/03/2021
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 94
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 94"](./devtools-images/devtools-whatsnew-94.png)](https://www.youtube.com/watch?v=S-g1E_W9wQQ)
+
+
 <!-- ====================================================================== -->
 ## Search for Console errors on the web
 

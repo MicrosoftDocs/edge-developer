@@ -13,6 +13,12 @@ ms.date: 01/14/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 97
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 97"](./devtools-images/devtools-whatsnew-97.png)](https://www.youtube.com/watch?v=qbDLtE0a_yQ)
+
+
 <!-- ====================================================================== -->
 ## Introducing the Detached Elements tool
 
