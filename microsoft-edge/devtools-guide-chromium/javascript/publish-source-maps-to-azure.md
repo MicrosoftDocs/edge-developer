@@ -161,9 +161,9 @@ module.exports = (env, args) => {
 <!-- ====================================================================== -->
 ## Step 3: Publish source maps to the Azure Artifacts symbol server
 
-To publish source maps to the Azure Artifacts symbol server, use either one of the following approaches:
+To publish source maps to the Azure Artifacts symbol server, use either of the following approaches:
 * [Publish source maps using Azure DevOps Pipelines](#publish-source-maps-using-azure-devops-pipelines).
-* [Publish source maps using []`symbol.exe`](#publish-source-maps-using-symbolexe).
+* [Publish source maps using `symbol.exe`](#publish-source-maps-using-symbolexe).
 
 These approaches are described below.
 
@@ -173,13 +173,13 @@ These approaches are described below.
 
 Azure DevOps comes with the [`PublishSymbols@2`](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) pipeline build task. This task can be used to publish your source maps to the Azure Artifacts symbol server.
 
-Make sure that you configure this task with the `indexableFileFormats` parameter set to either `All` or `SourceMap`.
+When configuring this task, set the `indexableFileFormats` parameter to either `All` or `SourceMap`.
 
 
 <!-- ------------------------------ -->
 #### Publish source maps using `symbol.exe`
 
-The Symbol Server team publishes a .NET Core application, `symbol.exe`, which can be downloaded automatically, as described in [Client - Get](/rest/api/azure/devops/symbol/client/get).  After downloading `symbol.exe`, you can run a command to publish your source maps to the Azure Artifacts symbol server:
+The Symbol Server team publishes a .NET Core application, `symbol.exe`, which can be downloaded automatically.  To programmatically download `symbol.exe`, use the `GET` method of the `Client` endpoint in the Symbol Service REST API, as described in [Client - Get](/rest/api/azure/devops/symbol/client/get).  Then run the following command to publish your source maps to the Azure Artifacts symbol server:
 
 ```cmd
 symbol publish
