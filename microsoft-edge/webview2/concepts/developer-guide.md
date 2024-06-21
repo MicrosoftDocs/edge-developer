@@ -19,25 +19,27 @@ We recommend the following best practices for developing production WebView2 app
 ### Evergreen distribution checklist
 
 #### 1. Ensure that the Evergreen WebView2 Runtime is installed on the client before your app uses the WebView2 control.  
-For more information, see [Detect if a suitable WebView2 Runtime is already installed](../concepts/distribution.md#detect-if-a-suitable-webview2-runtime-is-already-installed).
+See [Detect if a suitable WebView2 Runtime is already installed](../concepts/distribution.md#detect-if-a-suitable-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
 
 #### 2. Manage new versions of the Evergreen Runtime
 
-Evergreen Runtime updates are automatically downloaded, but a running WebView2 app will continue using its current version, potentially missing security updates. To adopt the new version, an app must release all references to previous WebView2 objects or restart. Implementing a `NewBrowserVersionAvailable` event handler can prompt users to restart the app for updates, with a recommendation to save user state before exiting for a seamless transition. See [Manage new versions of the Evergreen Runtime](../concepts/distribution.md#manage-new-versions-of-the-evergreen-runtime)
+Evergreen Runtime updates are automatically downloaded, but a running WebView2 app will continue using its current version, potentially missing security updates. To adopt the new version, an app must release all references to previous WebView2 objects or restart. Implementing a `NewBrowserVersionAvailable` event handler can prompt users to restart the app for updates, with a recommendation to save user state before exiting for a seamless transition. 
+
+See [Manage new versions of the Evergreen Runtime](../concepts/distribution.md#manage-new-versions-of-the-evergreen-runtime) in _Distribute your app and the WebView2 Runtime_.
 
 #### 3. Run forward-compatibility tests when using the Evergreen Runtime.
 
 As Evergreen Runtime updates automatically, you should regularly run compatibility tests to ensure that your WebView2 app will continue to work as expected on the new runtime version. This can be done by testing your web content in the WebView2 control against the Microsoft Edge preview channels (Beta, Dev, or Canary).  
 
-We recommend following the guidance in [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
+Follow the guidance in [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
 
 #### 4. Use feature-detection to test whether the installed Runtime supports recently added APIs.
 
 To run a WebView2 app that was developed with a particular version of the Webview2 SDK, the client must have a compatible version of the WebView2 Runtime installed. 
 
-When using the Evergreen WebView2 Runtime, there are some scenarios where the runtime on a client hasn't been automatically updated to the latest version. Additionally, some group policies pause updating of the runtime.  As such, when you push an update to your WebView2 app, the app might not work if it tries to call newer APIs that aren't available in the client's installed runtime.
+When using the Evergreen WebView2 Runtime, there are some scenarios where the runtime on a client hasn't been automatically updated to the latest version. Additionally, some group policies pause updating of the runtime.  As such, when you push an update to your WebView2 app, the app might not work if it tries to call newer APIs that aren't available in the client's installed runtime. As such, you should use feature-detection to make sure that the newer APIs that are used by your WebView2 app are supported by the WebView2 Runtime that's installed on the client. 
 
-Use feature-detection to make sure that the newer APIs that are used by your WebView2 app are supported by the WebView2 Runtime that's installed on the client. See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
+See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 
 
 <!-- ====================================================================== -->
@@ -53,7 +55,9 @@ If you use the Fixed Version WebView2 Runtime, make sure you regularly update th
 <!-- ====================================================================== -->
 ## Manage the lifetime of the user data folder
 
-WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  See [Manage user data folders](../concepts/user-data-folder.md).
+WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  
+
+See [Manage user data folders](../concepts/user-data-folder.md) for further guidance on managing the user data folder.
 
 
 <!-- ====================================================================== -->
@@ -85,4 +89,4 @@ WebView2 allow developers to host web content in native applications, which allo
 
 However, hosting web content can also introduce vulnerabilities.  To avoid vulnerabilities that can arise from hosting web content, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application.
 
-Follow security best practices in [Develop secure WebView2 apps](../concepts/security.md).
+Follow the guidance in [Develop secure WebView2 apps](../concepts/security.md).
