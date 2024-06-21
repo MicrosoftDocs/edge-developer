@@ -196,10 +196,20 @@ In the Copilot pane, the Compose tool uses AI to write for you, starting from a 
 
 To access Compose, click the **Copilot** (![Copilot icon](./index-images/copilot-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of Microsoft Edge, and then select **Compose**. Text and selections that you enter are sent to an internal Microsoft Large Language Model (LLM). 
 
+
 Requests for Compose are sent over a secure HTTPS connection. Each request contains the input prompt, formatting selections, and IDs that are associated with your Microsoft Edge profile and device, to reference for subsequent requests.
 
 To change settings for the sidebar or Copilot pane, go to `edge://settings/sidebar`, and then select **App and notification settings** > **Copilot**.
 
+#### Rewrite on any webpage with Compose 
+Compose can also help rephrase what you've written and iterate using the same **Tone**, **Format**, and **Length** selections. 
+
+To access Compose directly in a webpage, highlight text longer than 5 words in any input text field. Click the "Rewrite with Copilot" button or Alt+I shortcut to start .  Compose may not be available on some webpages and certain input fields.
+
+
+![Compose UI](./index-images/compose-inline.png)
+
+To disable Compose on all webpages, go to `edge://settings/languages`, and then toggle off **Collaborate with Copilot as you write on the web**. 
 
 <!-- ====================================================================== -->
 ## Crashes
