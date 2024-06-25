@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/29/2022
+ms.date: 06/25/2024
 ---
 # Contact Microsoft Edge extensions support
 
