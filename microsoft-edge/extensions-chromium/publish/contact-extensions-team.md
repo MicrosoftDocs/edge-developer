@@ -15,7 +15,7 @@ You can contact the Microsoft Edge extensions support team request help, submit 
 <!-- ====================================================================== -->
 ## Request help or submit feedback
 
-1.  After you submit your extension using Partner Center and you have a question about the review or certification status of it, see [New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) and complete the form.
+1. After submitting your extension via Partner Center, if you have questions regarding its review or certification status, please visit our [GitHub repository](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/new/choose) and create a new issue.
 
 1.  If your extension isn't working with Microsoft Edge as you expect, or you have a question about how to develop an extension, see [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md) and [Port Chromium extensions to Microsoft Edge](../developer-guide/port-chrome-extension.md).
 
