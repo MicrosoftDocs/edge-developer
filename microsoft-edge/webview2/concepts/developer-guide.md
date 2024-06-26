@@ -14,18 +14,22 @@ We recommend the following best practices for developing production WebView2 app
 
 ## Use the Evergreen WebView2 Runtime
 
-**We recommend using the Evergreen WebView2 Runtime for most WebView2 apps.**  The Evergreen runtime updates automatically on the client, so that the latest features and security patches are available to your WebView2 app.  The Evergreen runtime also requires less storage space on the disk than the Fixed Version runtime. Fixed Version runtime distribution is only recommended for apps that have strict compatibility requirements. For more details on the benefits, see [Details about the Evergreen Runtime distribution mode](../concepts/distribution.md#details-about-the-evergreen-runtime-distribution-mode).
+**We recommend using the Evergreen WebView2 Runtime for most WebView2 apps.**  
+
+The Evergreen runtime updates automatically on the client, so that the latest features and security patches are available to your WebView2 app.  The Evergreen runtime also requires less storage space on the disk than the Fixed Version runtime. Fixed Version runtime distribution is only recommended for apps that have strict compatibility requirements. For more details on the benefits, see [Details about the Evergreen Runtime distribution mode](../concepts/distribution.md#details-about-the-evergreen-runtime-distribution-mode).
  
-### Evergreen distribution checklist
+### Recommended steps for using the Evergreen Runtime
+
+Following the steps below will help ensure that your WebView2 app works well with the Evergreen Runtime.
 
 #### 1. Ensure that the Evergreen WebView2 Runtime is installed on the client before your app uses the WebView2 control.  
 See [Detect if a suitable WebView2 Runtime is already installed](../concepts/distribution.md#detect-if-a-suitable-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
 
-#### 2. Manage new versions of the Evergreen Runtime
+#### 2. Handle Evergreen WebView2 Runtime updates
 
 Evergreen Runtime updates are automatically downloaded, but a running WebView2 app will continue using its current version, potentially missing security updates. To adopt the new version, an app must release all references to previous WebView2 objects or restart. Implementing a `NewBrowserVersionAvailable` event handler can prompt users to restart the app for updates, with a recommendation to save user state before exiting for a seamless transition. 
 
-See [Manage new versions of the Evergreen Runtime](../concepts/distribution.md#manage-new-versions-of-the-evergreen-runtime) in _Distribute your app and the WebView2 Runtime_.
+See [Handle Evergreen WebView2 Runtime updates](../concepts/distribution.md#handle-evergreen-webview2-runtime-updates) in _Distribute your app and the WebView2 Runtime_.
 
 #### 3. Run forward-compatibility tests when using the Evergreen Runtime.
 
@@ -43,11 +47,7 @@ See [Feature-detecting to test whether the installed Runtime supports recently a
 
 
 <!-- ====================================================================== -->
-### Update regularly if using the Fixed Version Runtime
-
-<!-- TODO: Consider if we want to even keep this section.
-A reason why we wouldn't want to keep this, is because this fixed version isn't our best practice per-say
- -->
+## Update regularly if using the Fixed Version Runtime
 
 If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app to reduce security risks. You should consider your app's threat model to determine how often you should update the Fixed Version Runtime. When using third-party content in Webview2 apps, always consider the content to be untrusted.  See [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
 

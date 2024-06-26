@@ -267,7 +267,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
 <!-- ------------------------------ -->
 
-#### Manage new versions of the Evergreen Runtime
+#### Handle Evergreen WebView2 Runtime updates
 
 New versions of the Evergreen Runtime are automatically downloaded to the client, and the client uses the new version when your WebView2 app is restarted.  However, if your app runs continuously, it will continue to use the previous version of the runtime. This has security implications, as the previous version of the runtime might have security vulnerabilities that are fixed in the new version. You should consider whether it is important for your app to adopt the latest version of the runtime as soon as possible based on your app's threat model. For example, whether your WebView2 app accesses third-party content, which should be considered untrusted.
 
