@@ -24,7 +24,7 @@ If you have any issues while you submit your extension to Partner Center, see [P
 
 To feature your extension in a collection on the Microsoft Edge Add-ons website, see [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u) and complete the form.
 
-Participate in the [MicrosoftEdge-Extensions discussion forum](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) to flag any issues, raise a feature request, be a part of discussions and to share your ideas regarding the Microsoft Edge Extensions Store.
+Participate in the [MicrosoftEdge-Extensions discussion forum](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) to flag any issues, raise a feature request, be a part of discussions, and share your ideas regarding the Microsoft Edge Extensions Store.
 
 
 <!-- ====================================================================== -->
