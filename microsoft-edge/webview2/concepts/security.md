@@ -26,7 +26,7 @@ In a web browser, websites are granted limited powers in a sandboxed environment
     * When examining the result of an `ExecuteScript` method call, a `WebMessageReceived` event, always check the Source of the sender, or any other mechanism of receiving information from an HTML document in a WebView2 control validate the URI of the HTML document is what you expect.
 
 1. **Design specific web messages and host object interactions, instead of using generic proxies.**
-1. 
+
 1. **Use the `PostWebMessageAsJson` method to send messages to the WebView2 control**:
 
     * When constructing a message to send into a WebView2 control, prefer using `PostWebMessageAsJson` and construct the JSON string parameter using a JSON library. This avoids any potential accidents of encoding information into a JSON string or script and ensure no attacker controlled input can modify the rest of the JSON message or run arbitrary script.
