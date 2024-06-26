@@ -131,9 +131,11 @@ You can access Collections from an InPrivate window when using a signed-out prof
 <!-- ====================================================================== -->
 ## Compose
 
+The Compose tool helps you draft text within the Microsoft Edge Sidebar, or rewrite selected text on any webpage.
+
 
 <!-- ------------------------------ -->
-#### Draft text by using Compose in the Edge Sidebar
+#### Use Compose to draft text within the Edge Sidebar
 
 In the Copilot pane, the Compose tool uses AI to write for you, starting from a short prompt and **Tone**, **Format**, and **Length** selections:
 
@@ -147,9 +149,9 @@ To change settings for the sidebar or Copilot pane, select **Settings and more**
 
 
 <!-- ------------------------------ -->
-#### Rewrite selected text on any webpage by using Compose 
+#### Use Compose to rewrite selected text on any webpage
 
-The Compose tool can also help rephrase what you've written, and iterate using the same **Tone**, **Format**, and **Length** selections. 
+The Compose tool can help rephrase what you've written, and iterate using the same **Tone**, **Format**, and **Length** selections. 
 
 To access the Compose tool directly in a webpage, highlight text longer than five words in any input text field, and then click the **Rewrite with Copilot** button (**Alt+I**):
 
