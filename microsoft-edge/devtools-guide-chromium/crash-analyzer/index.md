@@ -1,12 +1,12 @@
 ---
 title: Crash analyzer tool
-description: How to use the Crash analyzer tool in DevTools to analyze and diagnose crashes of your production web app.
+description: How to use the Crash analyzer tool in Microsoft Edge DevTools to analyze and diagnose crashes of your production web app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 06/12/2024
+ms.date: 06/26/2024
 ---
 # Crash analyzer tool
 
@@ -19,13 +19,13 @@ When a web app crashes or hangs unexpectedly, this can result in data loss and a
 
 There are two steps to analyze minified production stack traces in the **Crash analyzer** tool:
 
-1. First, you collect specially-formatted stack traces from your web app in production.
+1. First, you collect specially formatted stack traces from your web app in production.
 
    There are many ways to collect stack traces from the browsers your users are using. In [Collect stack traces in production](#collect-stack-traces-in-production), below, we provide examples and recommendations. We also explain how to format the stack traces so that they can be analyzed in the **Crash analyzer** tool.
 
 1. Next, you analyze the stack traces in the **Crash analyzer** tool.
 
-   In [Analyze stack traces in the Crash analyzer tool](#analyze-stack-traces-in-the-crash-analyzer-tool), below, we explain how to first make source maps accessible in DevTools, and then how to use the **Crash analyzer** tool to analyze the stack traces.
+   The section [Analyze stack traces in the Crash analyzer tool](#analyze-stack-traces-in-the-crash-analyzer-tool), below, explains how to first make source maps accessible in DevTools, and then how to use the **Crash analyzer** tool to analyze the stack traces.
 
 <!-- TODO: add a diagram explaining how the system works -->
 
@@ -33,9 +33,9 @@ There are two steps to analyze minified production stack traces in the **Crash a
 <!-- ====================================================================== -->
 ## Collect stack traces in production
 
-The **Crash analyzer** tool doesn't collect stack traces for you. You must first collect stack traces from your web app by using the tools and services that are available to you.  Here are some ways to collect stack traces in production:
+The **Crash analyzer** tool doesn't collect stack traces for you.  You must first collect stack traces from your web app by using the tools and services that are available to you.  Here are some ways to collect stack traces in production:
 
-* We recommend using a telemetry system such as [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) which can capture unhandled error information from your JavaScript code in production.
+* We recommend using a telemetry system such as [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) that can capture information about unhandled errors from your JavaScript code.
 
 * You can also write JavaScript code to capture unhandled errors in your web app.  The following example shows how to use the `window.onerror` event handler to capture unhandled errors in a web app:
 
@@ -55,7 +55,7 @@ The **Crash analyzer** tool doesn't collect stack traces for you. You must first
 
 Collecting stack traces in production is not enough. The **Crash analyzer** tool needs stack traces to include a section called **Source modules**.
 
-Here is an example of a stack trace that includes the **Source modules** section:
+Here's an example of a stack trace that includes the **Source modules** section:
 
 ```
 RangeError: Maximum call stack size exceeded
@@ -75,7 +75,7 @@ Source modules:
     https://example.com/bundled/core/platform/platform.js 9a35dc3d31ba75643a6248e885e91caf800e4a293284695d1e96ab519dc563b2
 ```
 
-The **Source modules** section includes the URLs of the JavaScript files that involved in the stack trace, and a hash of the content of each file.  The hash is a 64-character string of hexadecimal characters corresponding to the SHA-256 hash of the script being executed.  This is a byte-for-byte hash of the content for each JavaScript file.  The URLs and hashes later make it possible for the **Crash analyzer** tool to retrieve the source maps used to unminify the stack trace.
+The **Source modules** section includes the URLs of the JavaScript files that involved in the stack trace, and a hash of the content of each file.  The hash is a 64-character string of hexadecimal characters corresponding to the SHA-256 hash of the script being executed.  This is a byte-for-byte hash of the content for each JavaScript file.  The URLs and hashes make it possible for the **Crash analyzer** tool to later retrieve the source maps that were used to unminify the stack trace.
 
 To add the **Source modules** section to your error stack traces, use the [Edge DevTools Crash Analyzer Support](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support) library in your web app:
 
@@ -97,13 +97,13 @@ To add the **Source modules** section to your error stack traces, use the [Edge 
 <!-- ====================================================================== -->
 ## Analyze stack traces in the Crash analyzer tool
 
-The **Crash analyzer** tool in DevTools unminifies the specially-formatted stack traces that you collected from users in production. If your source maps also contain the original source code, the **Crash analyzer** tool will show you the original file names and function names that make up the stack trace.
+The **Crash analyzer** tool in DevTools unminifies the specially formatted stack traces that you collected from users in production. If your source maps also contain the original source code, the **Crash analyzer** tool will show you the original file names and function names that make up the stack trace.
 
 
 <!-- ------------------------------ -->
 #### Make source maps accessible in DevTools
 
-The **Crash analyzer** tool uses the **Source module** information in the stack trace to retrieve the source maps that correspond to the script files in the stack trace, this means that you need to make your source maps accessible in DevTools.
+The **Crash analyzer** tool uses the **Source module** information that's in the stack trace to retrieve the source maps that correspond to the script files in the stack trace.  This means that you need to make your source maps accessible in DevTools.
 
 The **Crash analyzer** tool works best if your source maps are securely stored using Azure Artifacts Symbol Server.  This is because DevTools can retrieve source maps from the Azure Artifacts Symbol Server on demand when analyzing your error.  See [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md).
 
@@ -145,7 +145,7 @@ To use the **Crash analyzer** tool in DevTools:
 
 1. Open the **Crash analyzer** tool of DevTools, as described in [Open the Crash analyzer tool](#open-the-crash-analyzer-tool), above.
 
-1. Enter your specially-formatted stack trace into the left pane of the **Crash analyzer** tool:
+1. Enter your specially formatted stack trace into the left pane of the **Crash analyzer** tool:
 
    ![The Crash analyzer tool, with the enhanced call stack pasted in the left panel](./index-images/call-stack-pasted.png)
 
@@ -158,13 +158,13 @@ To use the **Crash analyzer** tool in DevTools:
 
    This loads the source maps that correspond to the source modules, and attempts to unminify any stack frames for which JavaScript or TypeScript source content was contained in the source map.
 
-1. If the source code is available in your source maps for a frame, click on the frame to display the source code.
+1. If the source code is available in your source maps for a frame, click the frame to display the source code.
 
-   The original source code appears in the **Sources** tool and the line in question is highlighted:
+   The original source code appears in the **Sources** tool, and the line in question is highlighted:
 
    ![Unminified code file and line of code accessed by clicking in the right-hand pane of the Crash analyzer tab](./index-images/code-displayed-from-right-pane.png)
 
-1. You can further copy the unminified stack trace by clicking the **Copy** button on the toolbar.  That produces (and copies to the clipboard) a stack trace in the conventional stack trace format, except with function names, source files, and line/column pairs that match your original code:
+1. To copy the unminified stack trace, in the **Crash analyzer** tab's toolbar, click the **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button.  That produces and copies to the clipboard the full, unminified stack trace, as a stack trace in the conventional stack trace format, except with information that matches your original code, including function names, source file names, and line and column numbers:
 
 ```
 Error: Could not instantiate model for frameId
@@ -190,7 +190,7 @@ The **Crash analyzer** tool has the following UI features:
 | The **Analyze** (![The 'Analyze' icon](./index-images/analyze-icon.png)) button | Creates a new analysis in the right-hand pane, based on the stack trace in the left pane. |
 | The **Analyses** (![The 'Analyses' dropdown list](./index-images/analyses-dropdown-list.png)) dropdown list | Shows the list of analyses. |
 | The **Remove this analysis** (![the 'Remove this analysis' icon](./index-images/remove-this-analysis-icon.png)) button | Removes the present analysis. |
-| The **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button | Copies the full, unminified stack trace, as a stack trace in the conventional stack trace format, except with resolved function names, source file names, and line and column numbers. |
+| The **Copy unminified stack trace** (![the Copy unminified stack trace' icon](./index-images/copy-unminified-stack-trace-icon.png)) button | Produces and copies to the clipboard the full, unminified stack trace, as a stack trace in the conventional stack trace format, except with information that matches your original code, including function names, source file names, and line and column numbers. |
 | The **Open Symbol Server settings** (![the 'Open Symbol Server settings' icon](./index-images/open-symbol-server-settings-icon.png)) button | Display or modify the Azure Artifacts Symbol Server settings. |
 | The **How to use** (![the 'How to use' icon](./index-images/how-to-use-icon.png)) button | Opens the present article. |
 
