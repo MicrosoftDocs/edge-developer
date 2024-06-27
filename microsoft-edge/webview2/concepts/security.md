@@ -11,9 +11,9 @@ ms.date: 06/27/2024
 # Develop secure WebView2 apps
 <!-- old title: # Best practices for developing secure WebView2 applications -->
 
-WebView2 allows developers to host web content in the native applications.  When used correctly, hosting web content offers several advantages, such as using web-based UI, accessing features of the web platform, sharing code cross-platform, and so on.  
+WebView2 allows developers to host web content in the native applications.  When used correctly, hosting web content offers several advantages, such as using web-based UI, accessing features of the web platform, or sharing code cross-platform.
 
-In a web browser, websites are granted limited powers in a sandboxed environment. However, when hosting web content in a native application, the web content can access the native application's resources and APIs.  This can lead to security vulnerabilities if the web content is not properly isolated from the host application.  To avoid these vulnerabilities, follow the below practices to improve the security of your WebView2 application.
+In a web browser, websites are granted limited powers in a sandboxed environment.  However, when hosting web content in a native application, the web content can access the native application's resources and APIs.  This can lead to security vulnerabilities if the web content is not properly isolated from the host application.  To avoid these vulnerabilities, follow the below practices to improve the security of your WebView2 application.
 
 
 <!-- ====================================================================== -->
@@ -21,11 +21,11 @@ In a web browser, websites are granted limited powers in a sandboxed environment
 
 Always check the origin of the document that's running inside WebView2, and assess the trustworthiness of the content, especially before using `ExecuteScript`, `PostWebMessageAsJson`, `PostWebMessageAsString`, or any other method to send information into the WebView2 control.  The WebView2 control may have navigated to another page via the end user interacting with the page or script in the page causing navigation.  The origin of the document can be obtained from the `Source` property of the WebView2 control.
 
-Be careful with `AddScriptToExecuteOnDocumentCreated`. All future `navigations` run the same script and if it provides access to information intended only for a certain origin, any HTML document may have access.
+Be careful with `AddScriptToExecuteOnDocumentCreated`.  All future `navigations` run the same script, and if that script provides access to information that's intended only for a certain origin, any HTML document may have access to the native application's resources and APIs.
 
 Validate web messages and host object parameters before consuming them, because web messages and parameters can be malformed (unintentionally or maliciously) and can cause the app to behave unexpectedly.
 
-When examining the result of an `ExecuteScript` method call, a `WebMessageReceived` event, always check the Source of the sender, or any other mechanism of receiving information from an HTML document in a WebView2 control validate the URI of the HTML document is what you expect.
+When examining the result of an `ExecuteScript` method call, which is a `WebMessageReceived` event, always check the `Source` property of the WebView2 control to check the source of the sender, or check any other mechanism of receiving information from an HTML document in a WebView2 control, to validate that the URI of the HTML document is what you expect.
 
 
 <!-- ====================================================================== -->
@@ -44,7 +44,7 @@ Design specific web messages and host object interactions, instead of using gene
 ## Restrict web content functionality
 
 Restrict web content functionality, if it's not needed.  Update the WebView2 settings in `CoreWebView2Settings` to restrict the functionality of the web content:
-   
+
 *  Set `AreHostObjectsAllowed` to `false`, if you don't expect the web content to access host objects.
 
 *  Set `IsWebMessageEnabled` to `false`, if you don't expect the web content to post web messages to your native application.
@@ -53,7 +53,7 @@ Restrict web content functionality, if it's not needed.  Update the WebView2 set
 
 *  Set `AreDefaultScriptDialogsEnabled` to `false`, if you don't expect the web content to show `alert` or `prompt` dialogs.
 
-    
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
@@ -72,17 +72,17 @@ Restrict web content functionality, if it's not needed.  Update the WebView2 set
 <!-- ====================================================================== -->
 ## Update settings based on the origin of the new page
 
-Update settings based on the origin of the new page:
+Update settings based on the origin of the new page, as follows.
 
-*  To prevent your application from navigating to certain pages, use the `NavigationStarting` and `FrameNavigationStarting` events to check page or frame navigation, and then conditionally block the navigation.
+To prevent your application from navigating to certain pages, use the `NavigationStarting` and `FrameNavigationStarting` events to check page or frame navigation, and then conditionally block the navigation.
 
-*  When navigating to a new page, you may need to adjust the property values on the `CoreWebView2Settings` object to match the security requirements of the new page as described in the previous section.
+When navigating to a new page, you may need to adjust the property values on the `CoreWebView2Settings` object to match the security requirements of the new page as described in the previous section.
 
 
 <!-- ====================================================================== -->
 ## Remove exposed host objects
 
-**When navigating to a new document, use the `ContentLoading` event and `RemoveHostObjectFromScript` to remove exposed host objects.**
+When navigating to a new document, use the `ContentLoading` event and `RemoveHostObjectFromScript` to remove exposed host objects.
 
 
 <!-- ====================================================================== -->
