@@ -37,7 +37,7 @@ Design specific web messages and host object interactions, instead of using gene
 <!-- ====================================================================== -->
 ## Use `PostWebMessageAsJson` to send messages
 
-**Use the `PostWebMessageAsJson` method to send messages to the WebView2 control.  When constructing a message to send into a WebView2 control, prefer using `PostWebMessageAsJson` and construct the JSON string parameter using a JSON library.  This avoids any potential accidents of encoding information into a JSON string or script, and ensures that no attacker-controlled input can modify the rest of the JSON message or run arbitrary JavaScript code.
+Use the `PostWebMessageAsJson` method to send messages to the WebView2 control.  When constructing a message to send into a WebView2 control, prefer using `PostWebMessageAsJson` and construct the JSON string parameter using a JSON library.  This avoids any potential accidents of encoding information into a JSON string or script, and ensures that no attacker-controlled input can modify the rest of the JSON message or run arbitrary JavaScript code.
 
 
 <!-- ====================================================================== -->
@@ -72,11 +72,11 @@ Restrict web content functionality, if it's not needed.  Update the WebView2 set
 <!-- ====================================================================== -->
 ## Update settings based on the origin of the new page
 
-Update settings based on the origin of the new page, as follows.
+Update settings based on the origin of the new page, as follows:
 
-To prevent your application from navigating to certain pages, use the `NavigationStarting` and `FrameNavigationStarting` events to check page or frame navigation, and then conditionally block the navigation.
+* To prevent your application from navigating to certain pages, use the `NavigationStarting` and `FrameNavigationStarting` events to check page or frame navigation, and then conditionally block the navigation.
 
-When navigating to a new page, you may need to adjust the property values on the `CoreWebView2Settings` object to match the security requirements of the new page as described in the previous section.
+* When navigating to a new page, you may need to adjust the property values on the `CoreWebView2Settings` object to match the security requirements of the new page as described in the previous section.
 
 
 <!-- ====================================================================== -->
