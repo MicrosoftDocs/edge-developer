@@ -6,64 +6,86 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 10/14/2020
+ms.date: 06/27/2024
 ---
 # Develop secure WebView2 apps
 <!-- old title: # Best practices for developing secure WebView2 applications -->
 
 WebView2 allows developers to host web content in the native applications.  When used correctly, hosting web content offers several advantages, such as using web-based UI, accessing features of the web platform, sharing code cross-platform, and so on.  
 
-In a web browser, websites are granted limited powers in a sandboxed environment. However, when hosting web content in a native application, the web content can access the native application's resources and APIs.  This can lead to security vulnerabilities if the web content is not properly isolated from the host application.  To avoid these vulnerabilities, follow these steps to improve the security of your WebView2 application:
-
-1. **Treat all web content as insecure**:
-    
-    * Always check the origin of the document that's running inside WebView2, and assess the trustworthiness of the content, especially before using `ExecuteScript`, `PostWebMessageAsJson`, `PostWebMessageAsString`, or any other method to send information into the WebView2 control. The WebView2 control may have navigated to another page via the end user interacting with the page or script in the page causing navigation. The origin of the document can be obtained from the `Source` property of the WebView2 control.
-
-    * Be careful with `AddScriptToExecuteOnDocumentCreated`. All future `navigations` run the same script and if it provides access to information intended only for a certain origin, any HTML document may have access.
-
-    *  Validate web messages and host object parameters before consuming them, because web messages and parameters can be malformed (unintentionally or maliciously) and can cause the app to behave unexpectedly.
-
-    * When examining the result of an `ExecuteScript` method call, a `WebMessageReceived` event, always check the Source of the sender, or any other mechanism of receiving information from an HTML document in a WebView2 control validate the URI of the HTML document is what you expect.
-
-1. **Design specific web messages and host object interactions, instead of using generic proxies.**
-
-1. **Use the `PostWebMessageAsJson` method to send messages to the WebView2 control**:
-
-    * When constructing a message to send into a WebView2 control, prefer using `PostWebMessageAsJson` and construct the JSON string parameter using a JSON library. This avoids any potential accidents of encoding information into a JSON string or script and ensure no attacker controlled input can modify the rest of the JSON message or run arbitrary script.
+In a web browser, websites are granted limited powers in a sandboxed environment. However, when hosting web content in a native application, the web content can access the native application's resources and APIs.  This can lead to security vulnerabilities if the web content is not properly isolated from the host application.  To avoid these vulnerabilities, follow the below practices to improve the security of your WebView2 application.
 
 
+<!-- ====================================================================== -->
+## Treat all web content as insecure
 
-1. **Restrict Web Content Functionality if not needed**:
-    Update the WebView2 settings in `CoreWebView2Settings` to restrict the functionality of the web content
+Always check the origin of the document that's running inside WebView2, and assess the trustworthiness of the content, especially before using `ExecuteScript`, `PostWebMessageAsJson`, `PostWebMessageAsString`, or any other method to send information into the WebView2 control.  The WebView2 control may have navigated to another page via the end user interacting with the page or script in the page causing navigation.  The origin of the document can be obtained from the `Source` property of the WebView2 control.
+
+Be careful with `AddScriptToExecuteOnDocumentCreated`. All future `navigations` run the same script and if it provides access to information intended only for a certain origin, any HTML document may have access.
+
+Validate web messages and host object parameters before consuming them, because web messages and parameters can be malformed (unintentionally or maliciously) and can cause the app to behave unexpectedly.
+
+When examining the result of an `ExecuteScript` method call, a `WebMessageReceived` event, always check the Source of the sender, or any other mechanism of receiving information from an HTML document in a WebView2 control validate the URI of the HTML document is what you expect.
+
+
+<!-- ====================================================================== -->
+## Avoid generic proxies
+
+Design specific web messages and host object interactions, instead of using generic proxies.
+
+
+<!-- ====================================================================== -->
+## Use `PostWebMessageAsJson` to send messages
+
+**Use the `PostWebMessageAsJson` method to send messages to the WebView2 control.  When constructing a message to send into a WebView2 control, prefer using `PostWebMessageAsJson` and construct the JSON string parameter using a JSON library.  This avoids any potential accidents of encoding information into a JSON string or script, and ensures that no attacker-controlled input can modify the rest of the JSON message or run arbitrary JavaScript code.
+
+
+<!-- ====================================================================== -->
+## Restrict web content functionality
+
+Restrict web content functionality, if it's not needed.  Update the WebView2 settings in `CoreWebView2Settings` to restrict the functionality of the web content:
    
-   *  Set `AreHostObjectsAllowed` to `false`, if you don't expect the web content to access host objects.
+*  Set `AreHostObjectsAllowed` to `false`, if you don't expect the web content to access host objects.
 
-   *  Set `IsWebMessageEnabled` to `false`, if you don't expect the web content to post web messages to your native application.
+*  Set `IsWebMessageEnabled` to `false`, if you don't expect the web content to post web messages to your native application.
 
-   *  Set `IsScriptEnabled` to `false`, if you don't expect the web content to run scripts (for example, when showing static HTML content).
+*  Set `IsScriptEnabled` to `false`, if you don't expect the web content to run scripts (for example, when showing static HTML content).
 
-   *  Set `AreDefaultScriptDialogsEnabled` to `false`, if you don't expect the web content to show `alert` or `prompt` dialogs.
+*  Set `AreDefaultScriptDialogsEnabled` to `false`, if you don't expect the web content to show `alert` or `prompt` dialogs.
+
     
-    ##### [.NET/C#](#tab/dotnetcsharp)
-    
-    * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
-    
-    ##### [WinRT/C#](#tab/winrtcsharp)
-    
-    * [CoreWebView2Settings Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings)
-    
-    ##### [Win32/C++](#tab/win32cpp)
-    
-    * [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)
-    ---
-            
+##### [.NET/C#](#tab/dotnetcsharp)
 
-1. **Update settings based on the origin of the new page:**
+* [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
 
-   *  To prevent your application from navigating to certain pages, use the `NavigationStarting` and `FrameNavigationStarting` events to check page or frame navigation, and then conditionally block the navigation.
+##### [WinRT/C#](#tab/winrtcsharp)
 
-   *  When navigating to a new page, you may need to adjust the property values on the `CoreWebView2Settings` object to match the security requirements of the new page as described in the previous section.
+* [CoreWebView2Settings Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings)
 
-1.  **When navigating to a new document, use the `ContentLoading` event and `RemoveHostObjectFromScript` to remove exposed host objects.**
+##### [Win32/C++](#tab/win32cpp)
 
-1. **WebView2 cannot be run as a system user.  This restriction blocks scenarios such as building a Credential Provider.**
+* [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)
+
+---
+
+
+<!-- ====================================================================== -->
+## Update settings based on the origin of the new page
+
+Update settings based on the origin of the new page:
+
+*  To prevent your application from navigating to certain pages, use the `NavigationStarting` and `FrameNavigationStarting` events to check page or frame navigation, and then conditionally block the navigation.
+
+*  When navigating to a new page, you may need to adjust the property values on the `CoreWebView2Settings` object to match the security requirements of the new page as described in the previous section.
+
+
+<!-- ====================================================================== -->
+## Remove exposed host objects
+
+**When navigating to a new document, use the `ContentLoading` event and `RemoveHostObjectFromScript` to remove exposed host objects.**
+
+
+<!-- ====================================================================== -->
+## WebView2 cannot be run as a system user
+
+WebView2 cannot be run as a system user.  This restriction blocks scenarios such as building a Credential Provider.
