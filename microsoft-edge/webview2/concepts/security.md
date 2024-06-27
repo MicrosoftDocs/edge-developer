@@ -19,13 +19,13 @@ In a web browser, websites are granted limited powers in a sandboxed environment
 <!-- ====================================================================== -->
 ## Treat all web content as insecure
 
-Always check the origin of the document that's running inside WebView2, and assess the trustworthiness of the content, especially before using `ExecuteScript`, `PostWebMessageAsJson`, `PostWebMessageAsString`, or any other method to send information into the WebView2 control.  The WebView2 control may have navigated to another page via the end user interacting with the page or script in the page causing navigation.  The origin of the document can be obtained from the `Source` property of the WebView2 control.
+* Always check the origin of the document that's running inside WebView2, and assess the trustworthiness of the content, especially before using `ExecuteScript`, `PostWebMessageAsJson`, `PostWebMessageAsString`, or any other method to send information into the WebView2 control.  The WebView2 control may have navigated to another page via the end user interacting with the page or script in the page causing navigation.  The origin of the document can be obtained from the `Source` property of the WebView2 control.
 
-Be careful with `AddScriptToExecuteOnDocumentCreated`.  All future `navigations` run the same script, and if that script provides access to information that's intended only for a certain origin, any HTML document may have access to the native application's resources and APIs.
+* Be careful with `AddScriptToExecuteOnDocumentCreated`.  All future `navigations` run the same script, and if that script provides access to information that's intended only for a certain origin, any HTML document may have access to the native application's resources and APIs.
 
-Validate web messages and host object parameters before consuming them, because web messages and parameters can be malformed (unintentionally or maliciously) and can cause the app to behave unexpectedly.
+* Validate web messages and host object parameters before consuming them, because web messages and parameters can be malformed (unintentionally or maliciously) and can cause the app to behave unexpectedly.
 
-When examining the result of an `ExecuteScript` method call, which is a `WebMessageReceived` event, always check the `Source` property of the WebView2 control to check the source of the sender, or check any other mechanism of receiving information from an HTML document in a WebView2 control, to validate that the URI of the HTML document is what you expect.
+* When examining the result of an `ExecuteScript` method call, which is a `WebMessageReceived` event, always check the `Source` property of the WebView2 control to check the source of the sender, or check any other mechanism of receiving information from an HTML document in a WebView2 control, to validate that the URI of the HTML document is what you expect.
 
 
 <!-- ====================================================================== -->
