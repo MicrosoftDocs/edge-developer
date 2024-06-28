@@ -13,6 +13,12 @@ ms.date: 11/16/2021
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 96
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 96"](./devtools-images/devtools-whatsnew-96.png)](https://www.youtube.com/watch?v=H6dYeoGOIDk)
+
+
 <!-- ====================================================================== -->
 ## New DevTools UI available (in preview)
 

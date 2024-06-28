@@ -13,6 +13,12 @@ ms.date: 06/23/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 103
+
+[![Thumbnail image for video "What's new in DevTools 103"](./devtools-103-images/devtools-whatsnew-103.png)](https://www.youtube.com/watch?v=aa0C6BRdaPA)
+
+
 <!-- ====================================================================== -->
 ## New node types in the Memory tool
 

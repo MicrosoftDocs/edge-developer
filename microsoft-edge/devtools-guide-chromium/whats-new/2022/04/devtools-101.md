@@ -13,6 +13,12 @@ ms.date: 04/28/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 101
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 101"](./devtools-101-images/devtools-whatsnew-101.png)](https://www.youtube.com/watch?v=kv6Q8a9bsbA)
+
+
 <!-- ====================================================================== -->
 ## The Console tool is now available in Visual Studio Code
 
