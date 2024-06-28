@@ -32,7 +32,11 @@ To help ensure that your WebView2 app works well with the Evergreen WebView2 Run
 <!-- ------------------------------ -->
 #### Check to make sure the WebView2 Runtime is installed
 
-Before your app uses the WebView2 control, programmatically check to make sure that the WebView2 Runtime is installed on the client.
+When using the Evergreen WebView2 Runtime, before your app uses the WebView2 control, programmatically check to make sure that the WebView2 Runtime is installed on the client.
+<!-- todo: check specifically for the "Evergreen" runtime?   which to say?
+check to make sure that the WebView2 Runtime is installed
+check to make sure that the Evergreen WebView2 Runtime is installed
+-->
 
 See [Detect if a suitable WebView2 Runtime is already installed](../concepts/distribution.md#detect-if-a-suitable-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
 
@@ -40,9 +44,7 @@ See [Detect if a suitable WebView2 Runtime is already installed](../concepts/dis
 <!-- ------------------------------ -->
 #### Handle updates of the WebView2 Runtime
 
-Handle Evergreen WebView2 Runtime updates.
-
-Evergreen Runtime updates are automatically downloaded, but a running WebView2 app will continue using its current version, potentially missing security updates.  To adopt the new version, an app must release all references to previous WebView2 objects or restart.  Implementing a `NewBrowserVersionAvailable` event handler can prompt users to restart the app for updates, with a recommendation to save user state before exiting for a seamless transition. 
+When using the Evergreen WebView2 Runtime, handle Evergreen WebView2 Runtime updates.  Updates of the Evergreen WebView2 Runtime are automatically downloaded, but a running WebView2 app will continue using its current version of the WebView2 Runtime, potentially missing security updates.  To adopt the new version, an app must release all references to previous WebView2 objects or restart.  Implementing a `NewBrowserVersionAvailable` event handler can prompt users to restart the app for updates, with a recommendation to save user state before exiting for a seamless transition. 
 
 See [Handle Evergreen WebView2 Runtime updates](../concepts/distribution.md#handle-evergreen-webview2-runtime-updates) in _Distribute your app and the WebView2 Runtime_.
 
@@ -60,7 +62,7 @@ Follow the guidance in [Prerelease testing using preview channels](../how-to/pre
 <!-- ------------------------------ -->
 #### Use feature detection for newer APIs
 
-Use feature detection to test whether the installed Runtime supports recently added APIs.  To run a WebView2 app that was developed with a particular version of the Webview2 SDK, the client must have a compatible version of the WebView2 Runtime installed. 
+When using the Evergreen WebView2 Runtime, use feature detection to test whether the installed Runtime supports recently added APIs.  To run a WebView2 app that was developed with a particular version of the Webview2 SDK, the client must have a compatible version of the WebView2 Runtime installed. 
 
 When using the Evergreen WebView2 Runtime, there are some scenarios where the runtime on a client hasn't been automatically updated to the latest version.  Additionally, some group policies pause updating of the runtime.  As a result, when you push an update to your WebView2 app, the app might not work if it tries to call newer APIs that aren't available in the client's installed runtime.  Therefore, you should use feature detection to make sure that the newer APIs that are used by your WebView2 app are supported by the WebView2 Runtime that's installed on the client. 
 
