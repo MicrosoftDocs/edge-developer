@@ -32,7 +32,7 @@ To help ensure that your WebView2 app works well with the Evergreen WebView2 Run
 <!-- ------------------------------ -->
 #### Check to make sure the WebView2 Runtime is installed
 
-When using the Evergreen WebView2 Runtime, before your app uses the WebView2 control, programmatically check to make sure that the WebView2 Runtime is installed on the client.
+When using the Evergreen WebView2 Runtime, before your app uses the WebView2 control, programmatically check to make sure that the Evergreen WebView2 Runtime is installed on the client.
 <!-- todo: check specifically for the "Evergreen" runtime?   which to say?
 check to make sure that the WebView2 Runtime is installed
 check to make sure that the Evergreen WebView2 Runtime is installed
