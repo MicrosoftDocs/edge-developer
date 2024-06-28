@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/24/2023
+ms.date: 06/28/2024
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -23,6 +23,7 @@ ms.date: 02/24/2023
    limitations under the License.  -->
 # Emulate and test other browsers
 
+<!-- todo: start w/ positive summary -->
 Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though the [Device Emulation](index.md) tool can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
 
 
@@ -50,6 +51,7 @@ Firefox has a [responsive design view](https://developer.mozilla.org/docs/Tools/
 
 <!-- ------------------------------ -->
 #### EdgeHTML emulation
+<!-- todo: delete section, point to MDN? -->
 
 To emulate Windows Phones, use the Microsoft Edge (EdgeHTML) [built-in emulation](/archive/microsoft-edge/legacy/developer/devtools-guide/emulation).
 
@@ -121,6 +123,8 @@ When you are done, learn how to work with the simulator through [Apple Developer
 <!-- ------------------------------ -->
 #### Microsoft Edge (EdgeHTML)
 
+<!-- todo: delete section, point to MDN? -->
+
 If you need to test your website or app with Microsoft browsers and don't have the necessary versions of Windows to do so, you can use BrowserStack, which supports testing of many combinations of Microsoft browsers and operating systems both past and present.  For example, you can test all versions of Microsoft Edge (Chromium) from version 80 onwards, and Microsoft Edge (EdgeHTML) versions 15 through 18.  Testing of Microsoft Edge is free on BrowserStack.  For more information, see [Microsoft Edge Browser Testing](https://www.browserstack.com/test-on-microsoft-edge-browser) at BrowserStack.
 
 
@@ -130,6 +134,8 @@ If you need to test your website or app with Microsoft browsers and don't have t
 If you aren't able to use the emulators and you don't have access to real devices, then cloud-based emulators are the next-best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you can automate unit tests for your site across different platforms.
 
 The following list is a sample of cloud-based emulators and testing sites. Review the descriptions for features or capabilities to consider when selecting a testing site. Conduct your own search to find the best cloud-based emulator for your needs.
+
+<!-- todo: delete section/list, use MDN instead -->
 
 * [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
 
