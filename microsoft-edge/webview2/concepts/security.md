@@ -9,7 +9,6 @@ ms.subservice: webview
 ms.date: 06/27/2024
 ---
 # Develop secure WebView2 apps
-<!-- old title: # Best practices for developing secure WebView2 applications -->
 
 WebView2 allows developers to host web content in the native applications.  When used correctly, hosting web content offers several advantages, such as using web-based UI, accessing features of the web platform, or sharing code cross-platform.
 
@@ -43,7 +42,7 @@ Use the `PostWebMessageAsJson` method to send messages to the WebView2 control. 
 <!-- ====================================================================== -->
 ## Restrict web content functionality
 
-Restrict web content functionality, if it's not needed.  Update the WebView2 settings in `CoreWebView2Settings` to restrict the functionality of the web content:
+Restrict web content functionality, if it's not needed.  Update the WebView2 properties in `CoreWebView2Settings` to restrict the functionality of the web content, as follows:
 
 *  Set `AreHostObjectsAllowed` to `false`, if you don't expect the web content to access host objects.
 
@@ -76,7 +75,7 @@ Update settings based on the origin of the new page, as follows:
 
 * To prevent your application from navigating to certain pages, use the `NavigationStarting` and `FrameNavigationStarting` events to check page or frame navigation, and then conditionally block the navigation.
 
-* When navigating to a new page, you may need to adjust the property values on the `CoreWebView2Settings` object to match the security requirements of the new page as described in the previous section.
+* When navigating to a new page, you may need to adjust the property values on the `CoreWebView2Settings` object to match the security requirements of the new page, as described in [Restrict web content functionality](#restrict-web-content-functionality), above.
 
 
 <!-- ====================================================================== -->
