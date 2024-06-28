@@ -38,7 +38,7 @@ check to make sure that the WebView2 Runtime is installed
 check to make sure that the Evergreen WebView2 Runtime is installed
 -->
 
-See [Detect if a suitable WebView2 Runtime is already installed](../concepts/distribution.md#detect-if-a-suitable-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
+See [Detect if a WebView2 Runtime is already installed](../concepts/distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
 
 
 <!-- ------------------------------ -->

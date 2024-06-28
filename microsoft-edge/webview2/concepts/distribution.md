@@ -183,7 +183,7 @@ Use the following online deployment workflow or offline deployment workflow to e
 
 
 <!-- ---------- -->
-###### Detect if a suitable WebView2 Runtime is already installed
+###### Detect if a WebView2 Runtime is already installed
 
 To verify that a WebView2 Runtime is installed, use one of the following approaches:
 
@@ -215,7 +215,7 @@ To verify that a WebView2 Runtime is installed, use one of the following approac
 
 If you have an online-only deployment scenario where users are assumed to have internet access, use the following workflow.
 
-1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed. See [Detect if a suitable WebView2 Runtime is already installed](#detect-if-a-suitable-webview2-runtime-is-already-installed).
+1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed. See [Detect if a WebView2 Runtime is already installed](#detect-if-a-webview2-runtime-is-already-installed), above.
 
 1. If the Runtime isn't installed, in your app setup process, use the link (from the **Get the Link** button on the download page) to programmatically download the WebView2 Runtime Bootstrapper.
 
@@ -251,7 +251,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
 1. Include the Evergreen Standalone Installer in your app installer or updater.
 
-1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed. See [Detect if a suitable WebView2 Runtime is already installed](#detect-if-a-suitable-webview2-runtime-is-already-installed).
+1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed. See [Detect if a WebView2 Runtime is already installed](#detect-if-a-webview2-runtime-is-already-installed), above.
 
 1. If the WebView2 Runtime isn't installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, you can run the following command.
 
