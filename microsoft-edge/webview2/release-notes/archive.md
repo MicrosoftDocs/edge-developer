@@ -5234,9 +5234,9 @@ This version of the WebView2 SDK requires Microsoft Edge version 85.0.538.0 or h
 #### .NET (0.9.538 prerelease)
 
 *  Released WinForms and WPF WebView2API Samples, which are comprehensive guides of the WebView2 SDK.  See [Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples).
-*  Added support for visual hosting and window features [experimental APIs](../concepts/versioning.md#experimental-apis).
+*  Added support for visual hosting and window features, as [experimental APIs](../concepts/versioning.md#experimental-apis).
 *  > [!IMPORTANT]
-   > **Breaking Change**:  The following deferrals now implement IDisposable:  [ScriptDialogOpening](/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening), [NewWindowRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested), [WebResourceRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested), and [PermissionRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested).
+   > **Breaking Change**:  The following deferrals now implement `IDisposable`:  [ScriptDialogOpening](/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening), [NewWindowRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested), [WebResourceRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested), and [PermissionRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested).
 
 *  Added [GetAvailableBrowserVersionString](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getavailablebrowserversionstring) and [CompareBrowserVersions](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.comparebrowserversions) as [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) statics.
 
@@ -5280,7 +5280,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or h
    > * A Prerelease SDK package containing Experimental APIs (for you to try out), and also APIs that have been promoted to Stable status.
    > * A Release SDK package that consists entirely of APIs that have reached Stable status (for your confidence).
    >
-   > To learn about the differences, see [Understanding browser versions and WebView2](../concepts/versioning.md).
+   > To learn about the differences, see [Prerelease and Release SDKs for WebView2](../concepts/versioning.md).
 
 *  > [!IMPORTANT]
    > **Breaking Change**:  In order to ensure the WebView2 API aligns with the Windows API naming conventions, the WebView2 team updated the names of the following interfaces.
