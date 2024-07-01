@@ -92,11 +92,12 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 #### Bug fixes
 
 ###### Runtime-only
-* Disable `BreakoutBoxPreferCaptureTimestampInVideoFrame` for WebView2 TextureStream
-* Fixed a regression where WindowCloseRequested event only fires for first window.close() call.
-* Fixed a regression where typed arrays in WinRT JavaScript projection could not be handled as IDispatch in host. 
-* Fixed a bug where autofill popup dismisses immediately and causes focus change 
-* Fixed a bug where WebView2 fails to load because AppPolicyGetWindowingModel ([Issue #4591](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4591))
+
+* Disabled `BreakoutBoxPreferCaptureTimestampInVideoFrame` for WebView2 `TextureStream`.
+* Fixed a regression where the `WindowCloseRequested` event only fires for first `window.close()` call.
+* Fixed a regression where typed arrays in WinRT JavaScript projection could not be handled as `IDispatch` in the host. 
+* Fixed a bug where the autofill popup dismisses immediately and causes a focus change.
+* Fixed a bug where WebView2 fails to load because of `AppPolicyGetWindowingModel`.  ([Issue #4591](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4591))
 
 <!-- end of Jun 2024 Release SDK -->
 
@@ -120,7 +121,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental features
 
-* Introduced the feature flag `msWebView2EnableDownloadContentInWebResourceResponseReceived`, an an Experimental feature (rather than as a Stable feature).  When this flag is enabled, allows responses of navigations that become downloads to be available in `WebResourceResponseReceived`.
+* Introduced the feature flag `msWebView2EnableDownloadContentInWebResourceResponseReceived`, an an Experimental feature (rather than as a Stable feature).  When this flag is enabled, this allows responses of navigations that become downloads to be available in `WebResourceResponseReceived`.
 
 
 <!-- ------------------------------ -->
@@ -131,9 +132,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 <!-- ---------- -->
 * Added a new `SaveFileSecurityCheckStarting` event.  As a developer, you can register a handler on this event to get the file path, filename extension, and document origin URI information.  Then you can apply your own rules to do actions such as the following:
-* Allow saving the file without presenting a default file type policy security warning UI.
-* Cancel the saving.
-* Create your own UI to manage runtime file-type policies.
+   * Allow saving the file without presenting a default security-warning UI about the file-type policy.
+   * Cancel the saving.
+   * Create your own UI to manage runtime file-type policies.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -184,7 +185,7 @@ edge/webview2/reference/win32/icorewebview2experimentalsavefilesecuritycheckstar
 
 
 <!-- ---------- -->
-* Added a new `ScreenCaptureStarting` event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` or any of its descendant iframes requests permission to use the Screen Capture API before the UI is shown.  As a developer, you can then choose to block the UI from being displayed, or allow the UI to be displayed.
+* Added a new `ScreenCaptureStarting` event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown.  As a developer, you can then choose to block the UI from being displayed, or allow the UI to be displayed.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -241,7 +242,7 @@ edge/webview2/reference/win32/icorewebview2experimentalsavefilesecuritycheckstar
 
 
 <!-- ---------- -->
-* Added a new method to the `CoreWebView2` .NET class that enables you to convert a `CoreWebView2` between .NET and COM.  Added a new WinRT interface that enables you to convert a `CoreWebView2` between WinRT and COM.  This allows you to interoperate between libraries that are written in different languages.
+* Added a new `GetComICoreWebView2` method to the `CoreWebView2` .NET class that enables you to convert a `CoreWebView2` between .NET and COM.  Added a new WinRT interface that enables you to convert a `CoreWebView2` between WinRT and COM.  This allows you to interoperate between libraries that are written in different languages.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -348,6 +349,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 #### Bug fixes
 
 ###### Runtime-only
+
 * Fixed a bug in owned-window activation logic for visual hosting.
 
 <!-- end of Jun 2024 Prerelease SDK -->

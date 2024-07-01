@@ -1359,9 +1359,9 @@
               displayName: Printing from WebView2 apps # full title
 
             # updated h2: Experimental APIs, added a 2nd, new h3:
-            - name: Understand the different WebView2 SDK versions
+            - name: Prerelease and Release SDKs for WebView2
               href: webview2/concepts/versioning.md
-              displayName: Understand WebView2 SDK versions  # old title
+              displayName: Understand WebView2 SDK versions, Understand the different WebView2 SDK versions  # old titles
 
             - name: Distribute your app and the WebView2 Runtime
               href: webview2/concepts/distribution.md
