@@ -155,11 +155,12 @@ To access the Compose tool directly in a webpage, highlight text longer than fiv
 
 The Compose tool might not be available on some webpages or for certain input fields.
 
-Text that you've highlighted or inputted is sent to Microsoft after you click the **Rewrite** or **Generate** button, not while you're selecting text.  Each request contains the input prompt text, formatting selections, and IDs that are associated with your Microsoft Edge profile and device, to reference for subsequent requests.  Requests for Compose are sent over a secure HTTPS connection.
-
 To disable the Compose tool for all webpages, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Languages**, and then turn off the **Collaborate with Copilot as you write on the web** toggle.
 
-For enterprises, additional options for data protection are available for Compose.  See [Privacy and protections](/copilot/privacy-and-protections) in the Microsoft Copilot documentation.
+**Privacy and data protections**
+- Text that you've highlighted or inputted is sent to Microsoft after you click the **Rewrite** or **Generate** button, not while you're selecting text.  Each request contains the input prompt text, formatting selections, and IDs that are associated with your Microsoft Edge profile and device, to reference for subsequent requests.  Requests for Compose are sent over a secure HTTPS connection.
+
+- For enterprises, additional options for data protection are available for Compose.  See [Privacy and protections](/copilot/privacy-and-protections) in the Microsoft Copilot documentation.
 
 
 <!-- ====================================================================== -->
