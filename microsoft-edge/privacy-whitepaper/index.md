@@ -171,9 +171,7 @@ For enterprises, additional options for data protection are available for Compos
 
 In Copilot in the Microsoft Edge sidebar, you can ask complex questions, find comprehensive answers, get summarized information, and find inspiration to build upon, in a side-by-side view, with no need to flip between tabs.
 
-To open Copilot in the Microsoft Edge sidebar, click the **Copilot** (![Copilot icon.](./index-images/copilot-icon.png)) icon (**Ctrl+Shift+.**) in the upper right of the Microsoft Edge toolbar: 
-
-![Summarize this page](./index-images/summarize-content.png) 
+To open Copilot in the Microsoft Edge sidebar, click the **Copilot** (![Copilot icon.](./index-images/copilot-icon.png)) button (**Ctrl+Shift+.**) in the upper right of the Microsoft Edge toolbar.
 
 
 <!-- --------------------------------------------------------------------- -->
