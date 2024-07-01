@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 06/24/2024
+ms.date: 07/01/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -161,7 +161,7 @@ The Compose tool might not be available on some webpages or for certain input fi
 
 Text that you've highlighted or inputted are sent to Microsoft only after you click the **Rewrite** or **Generate** button, not while you are selecting text.  No additional webpage data is ever shared.  Requests for Compose are sent over a secure HTTPS connection.  Each request contains the input prompt text, formatting selections, and IDs that are associated with your Microsoft Edge profile and device, to reference for subsequent requests.
 
-To disable the Compose tool for all webpages, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Languages**, and then turn off the toggle **Collaborate with Copilot as you write on the web**.
+To disable the Compose tool for all webpages, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Languages**, and then turn off the **Collaborate with Copilot as you write on the web** toggle.
 
 For enterprises, additional options for data protection are available for Compose.  See [Privacy and protections](/copilot/privacy-and-protections) in the Microsoft Copilot documentation.
 
@@ -179,15 +179,15 @@ To open Copilot in the Microsoft Edge sidebar, click the **Copilot** (![Copilot 
 <!-- --------------------------------------------------------------------- -->
 #### Data and consent used by Copilot in Microsoft Edge 
 
-Microsoft Edge determines what data to send to Copilot based on the user's **query** and their consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, page title, user's query, and previous conversation history to help Copilot answer their query effectively.
+Microsoft Edge determines what data to send to Copilot based on your **query** and your consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, the page title, your query, and previous conversation history to help Copilot answer your query effectively.
 
-For questions that need **browsing context**, such as when the user asks Copilot to summarize a large page of text, Microsoft Edge requests permission from the user to access page information:
+For questions that need **browsing context**, such as when you ask Copilot to summarize a large page of text, Microsoft Edge asks for your permission to access page information:
 
 ![Copilot asking for consent to access the page content in Microsoft Edge](./index-images/consent-for-contextual-browsing.png) <!-- Update Bing chat screenshot-->
 
-When the user grants permission to share page information, Microsoft Edge sends the full **browsing context** in addition to the user's **query** and previous **conversation history** to Copilot, to help generate a meaningful **response**.
+When you grant permission to share page information, Microsoft Edge sends the full **browsing context** in addition to your **query** and previous **conversation history** to Copilot, to help generate a meaningful **response**.
 
-The user can modify this permission anytime by going to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Copilot** and then turning on or off the **Allow access to any webpage or PDF** toggle.
+To modify this permission, go to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Copilot**, and then turn on or off the **Allow access to any webpage or PDF** toggle.
 
 
 <!-- ---------------------------------------------------------------------- -->
@@ -195,11 +195,11 @@ The user can modify this permission anytime by going to Microsoft Edge > **Setti
 
 * **Conversation history** is a history of all queries and responses from Copilot.  **Conversation history** is stored for 90 days.  This is independent of whether using Copilot in Bing or Copilot in the Microsoft Edge sidebar or by visiting `www.bing.com/chat`.
 
-   * Users can delete a specific conversation or all the conversations from Copilot in Bing by going to `www.bing.com/chat`, and then deleting the specific conversations in the **Recent activity** section:
+   * To delete a specific conversation or all the conversations from Copilot in Bing, go to `www.bing.com/chat`, and then delete the specific conversations in the **Recent activity** section:
 
      ![Recent conversation history in Copilot](./index-images/bing-chat-recent.png)
 
-* **Page content** from public **pages on the Bing index** – Copilot uses publicly available information from the Bing search engine to summarize pages that are available on the Bing search index.  To answer questions from public pages, Microsoft Edge doesn't need to share this page content with Copilot.
+* **Page content** from public **pages on the Bing index** is not stored.
 
 * **Page content** from **non-Bing index pages** – information that's used to summarize a non-Bing index page is deleted after 6 hours, and it is only used to answer the query.
 
@@ -215,13 +215,13 @@ Copilot has numerous protective measures in place that are constantly evolving. 
 
 | Term | Definition |
 |---|---|
-| _query_ | A question that a user types in the **Ask me anything** text box in Copilot. |
+| _query_ | A question that you type in the **Ask me anything** text box in Copilot. |
 | _Bing index page_ | Any website URL that is publicly available on the internet for Bing to search and can be reached via a URL that starts with `http://` or `https://`. |
 | _non-Bing index page_ | Any webpage or local file that is not available publicly for Bing to search, but is open in Microsoft Edge. |
-| _grounding_ | Centering the response that's provided to a user's query or prompt on high-ranking content from the web, and providing links to websites so that users can learn more.  Bing ranks web search content by heavily weighting features such as relevance, quality, credibility, and freshness. |
+| _grounding_ | Centering the response that's provided to your query or prompt on high-ranking content from the web, and providing links to websites so that you can learn more.  Bing ranks web search content by heavily weighting features such as relevance, quality, credibility, and freshness. |
 | _response_ | The text that Copilot in Bing outputs in response to a prompt.  Synonyms: _completion_, _generation_, _answer_. |
-| _conversation history_ | A combination of user query and response in the Copilot format. |
-| _browsing context_ | The page URL and page content that's open in the active tab of the Microsoft Edge browser. These could be webpages, local PDFs, Microsoft Word documents, or other local files.  For example, the user can ask **Summarize this page** while they are browsing a long topic or webpage.  Copilot in Microsoft Edge uses the page context (such as the page URL) and the page content to summarize the topic for the user. |
+| _conversation history_ | A combination of your query and response in the Copilot format. |
+| _browsing context_ | The page URL and page content that's open in the active tab of the Microsoft Edge browser. These could be webpages, local PDFs, Microsoft Word documents, or other local files.  For example, you can ask **Summarize this page** while you're browsing a long topic or webpage.  Copilot in Microsoft Edge uses the page context (such as the page URL) and the page content to summarize the topic. |
 | _page information_ | The webpage content, or the content of the document, that's open in the active tab of the Microsoft Edge browser. |
 
 
