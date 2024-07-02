@@ -126,6 +126,9 @@ When you are done, learn how to work with the simulator through [Apple Developer
 <!-- todo: delete section, point to MDN? -->
 
 If you need to test your website or app with Microsoft browsers and don't have the necessary versions of Windows to do so, you can use BrowserStack, which supports testing of many combinations of Microsoft browsers and operating systems both past and present.  For example, you can test all versions of Microsoft Edge (Chromium) from version 80 onwards, and Microsoft Edge (EdgeHTML) versions 15 through 18.  Testing of Microsoft Edge is free on BrowserStack.  For more information, see [Microsoft Edge Browser Testing](https://www.browserstack.com/test-on-microsoft-edge-browser) at BrowserStack.
+<!-- todo: 404.  is there a relevant current URL?  
+check search results: https://www.browserstack.com/search?query=microsoft%20edge
+related: https://www.browserstack.com/docs/automate/selenium/ie-mode-on-edge -->
 
 
 <!-- ====================================================================== -->
