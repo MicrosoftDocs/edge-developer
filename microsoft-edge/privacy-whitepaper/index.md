@@ -185,7 +185,7 @@ For questions that need **browsing context**, such as when you ask Copilot to su
 
 When you grant permission to share page information, Microsoft Edge sends the full **browsing context** in addition to your **query** and previous **conversation history** to Copilot, to help generate a meaningful **response**.
 
-To modify this permission, go to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Copilot**, and then turn on or off the **Allow access to any webpage or PDF** toggle.
+To modify this permission, go to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Copilot**, and then toggle the **Allow access to any webpage or PDF** setting.
 
 
 <!-- ---------------------------------------------------------------------- -->
