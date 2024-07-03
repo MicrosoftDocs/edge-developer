@@ -958,10 +958,6 @@
 # /DevTools
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
-#           - name: 
-#             href: 
-
     - name: Microsoft Edge extensions
       items:
         - name: Overview of Microsoft Edge extensions
@@ -1172,6 +1168,7 @@
 
 #           - name: Sample extension using the Sidepanel API
 #             href: 
+# /Extensions
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
