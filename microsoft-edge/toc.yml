@@ -1072,6 +1072,7 @@
 #             href: 
             - name: Verify your company account information  # indented in draft outline
               href: extensions-chromium/publish/verify-microsoft-edge-program.md
+              displayName: Verify the company account information associated with your Microsoft Partner Center account
 
             - name: Add users to the Microsoft Edge program
               href: extensions-chromium/publish/aad-account.md
@@ -1137,7 +1138,7 @@
 
             - name: Reply to user reviews
               href: extensions-chromium/publish/reply-user-reviews.md
-              displayName: Respond to user reviews
+              displayName: Reply to user reviews about your Microsoft Edge extension, Respond to user reviews  # top-of-page title, alt title word
 
 # -------------------------------------
         - name: Best practices
@@ -1160,9 +1161,8 @@
 # -------------------------------------
         - name: Samples
           items:
-            - name: Samples
+            - name: Samples for Microsoft Edge extensions
               href: extensions-chromium/samples.md
-              displayName: Samples for Microsoft Edge extensions  # top-of-page title
 
 #           - name: Sample extension using a content script
 #             href: 
