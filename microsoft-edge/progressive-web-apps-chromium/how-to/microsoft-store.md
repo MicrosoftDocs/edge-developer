@@ -153,7 +153,7 @@ Once the feature can be used in Microsoft Edge, we will document it here. In the
 
 Generally, when you update your PWA code, you don't need to create a new app package and submit it to the Microsoft Store again. For example, suppose you make changes to your app's front-end HTML, CSS, or JavaScript code, or to your service worker. The next time the user launches the app, the changes are downloaded by the browser that's running your app from your web server.
 
-However, if you make changes to the web app manifest file, you must create a new app package and submit it to the Microsoft Store again. For example, in the manifest, you might change the app icon or app name, or add manifest members such as `file_handlers`, `protocol_handlers`, or `share_target`. Creating and submitting a new app package is required when the manifest is changed, because the information in the web app manifest file is copied to the Windows app package, for better integration with Windows.
+However, if you make changes to the web app manifest file, you must create a new app package and submit it to the Microsoft Store again. For example, in the manifest, you might change the app icon or app name, or add manifest members such as `file_handlers`, `protocol_handlers`, or `share_target`. Creating and submitting a new app package is required when the manifest is changed, because the information in the web app manifest file is copied to the Windows app package, for better integration with Windows.<!-- todo: review: is install & service worker sufficiently decoupled? -->
 
 
 <!-- ====================================================================== -->

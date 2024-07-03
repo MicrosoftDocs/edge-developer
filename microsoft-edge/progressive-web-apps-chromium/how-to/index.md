@@ -305,7 +305,7 @@ In this step of the tutorial, we'll create a basic temperature unit conversion a
 
     ![Running your new PWA, with the frontend code, on localhost](./index-images/sample-pwa-app-with-frontend-code.png)
 
-Your app does something useful now, but it can't be installed yet, because there's no service worker. You'll make your app installable in the next step, by creating a service worker.
+Your app does something useful now, but it can't be installed yet, because there's no service worker. You'll make your app installable in the next step, by creating a service worker.<!-- todo: decouple "install" & "service worker" -->
 
 
 <!-- ====================================================================== -->
@@ -319,7 +319,7 @@ Service workers are specialized [Web Workers](https://developer.mozilla.org/docs
 *  Advanced caching.
 *  Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
 
-For Microsoft Edge to be able to install the app, your app must have a service worker file.
+Your PWA doesn't need to have service worker file, for Microsoft Edge to be able to install the app.
 
 A service worker is defined in a JavaScript file that's loaded by your app. To add a service worker to your project:
 
@@ -364,8 +364,8 @@ A service worker is defined in a JavaScript file that's loaded by your app. To a
     });
     ```
 
-    The `sw.js` file will act as your PWA's service worker. The code above listens to the `install` event and uses it to cache all resources the app needs to function: the start HTML page, the converter JavaScript file, and the converter CSS file.
-    
+    The `sw.js` file will act as your PWA's service worker. The code above listens to the `install` event and uses it to cache all resources the app needs to function: the start HTML page, the converter JavaScript file, and the converter CSS file.<!-- todo: decouple "install" & "service worker" -->
+
     The code also intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy. The service worker returns cached resources so your app can work offline, and if that fails attempts to download from the server.
 
 1.  Open `index.html` and add the following code at the end of the `<body>` tag to register your service worker:
@@ -402,7 +402,7 @@ To confirm that your service worker is running:
 <!-- ====================================================================== -->
 ## Step 6 - Install the app
 
-Now that your app has a web app manifest and a service worker, supporting browsers can install it as a PWA.
+Now that your app has a web app manifest, supporting browsers can install your app as a PWA.
 
 In Microsoft Edge, once you refresh your app, the **App available** button appears in the address bar. Clicking the **App available** button prompts you to install the app locally.
 

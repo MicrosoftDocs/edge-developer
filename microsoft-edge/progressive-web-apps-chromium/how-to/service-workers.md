@@ -14,7 +14,7 @@ Service Workers are a special type of [Web Workers](https://developer.mozilla.or
 
 Service Workers can make your PWA faster by caching resources locally, and they can also make your PWA more reliable by making it network-independent.
 
-The first time a user accesses your PWA, its Service Worker is installed. The Service Worker then runs in parallel to your app, and can continue doing work even when your app is not running.
+The first time a user accesses your PWA, its Service Worker is installed.<!-- todo: review: is install & service worker sufficiently decoupled? --> The Service Worker then runs in parallel to your app, and can continue doing work even when your app is not running.
 
 Service Workers are responsible for intercepting, modifying, and responding to network requests. They can be alerted when the app tries to load a resource from the server, or sends a request to get data from the server. When this happens, a Service Worker can decide to let the request go to the server, or intercept it and return a response from the cache instead.
 
@@ -70,7 +70,7 @@ The lifecycle of a Service Worker consists of multiple steps, with each step tri
 
 1.  Register the Service Worker.
 
-1.  The browser downloads the JavaScript file, installs the Service Worker, and triggers the `install` event. You can use the `install` event to pre-cache any important and long-lived files (such as CSS files, JavaScript files, logo images, or offline pages) from your app.
+1.  The browser downloads the JavaScript file, installs the Service Worker,<!-- todo: review: is install & service worker sufficiently decoupled? --> and triggers the `install` event. You can use the `install` event to pre-cache any important and long-lived files (such as CSS files, JavaScript files, logo images, or offline pages) from your app.
 
     ```javascript
     self.addEventListener("install", event => {
@@ -86,7 +86,7 @@ The lifecycle of a Service Worker consists of multiple steps, with each step tri
     });
     ```
 
-1.  The Service Worker is ready to run when the page is refreshed or when the user goes to a new page on the site. If you want to run the Service Worker without waiting, use the `self.skipWaiting()` method during the `install` event, as follows:
+1.  The Service Worker is ready to run when the page is refreshed or when the user goes to a new page on the site. If you want to run the Service Worker without waiting, use the `self.skipWaiting()` method during the `install` event,<!-- todo: review: is install & service worker sufficiently decoupled? --> as follows:
 
     ```javascript
     self.addEventListener("install", event => {
@@ -101,7 +101,7 @@ The lifecycle of a Service Worker consists of multiple steps, with each step tri
 <!-- ====================================================================== -->
 ## Pre-cache resources
 
-When a user accesses your app for the first time, the app's Service Worker is installed. Use the `install` event in your Service Worker to detect when this occurs, and cache all the static resources your app needs. Caching your app's static resources (such as the HTML, CSS, and JavaScript code) that are needed by the start page makes it possible for your app to run even when the user's device is offline.
+When a user accesses your app for the first time, the app's Service Worker is installed.<!-- todo: review: is install & service worker sufficiently decoupled? --> Use the `install` event in your Service Worker to detect when this occurs, and cache all the static resources your app needs. Caching your app's static resources (such as the HTML, CSS, and JavaScript code) that are needed by the start page makes it possible for your app to run even when the user's device is offline.
 
 To cache your app's resources, use the global `caches` object and the `cache.addAll` method, as shown below:
 
@@ -206,7 +206,10 @@ self.addEventListener("fetch", event => {
 <!-- ====================================================================== -->
 ## Update your Service Worker
 
+
+<!-- ------------------------------ -->
 #### Install a new Service Worker version
+<!-- todo: review: is install & service worker sufficiently decoupled? -->
 
 If you make changes to your Service Worker code and deploy the new Service Worker file to your web server, your users' devices will gradually start using the new Service Worker.
 
@@ -218,6 +221,8 @@ You can forcefully activate the new Service Worker as soon as it's installed, by
 
 To learn more about how Service Workers update, see [Updating the Service Worker](https://web.dev/service-worker-lifecycle#updates) on web.dev.
 
+
+<!-- ------------------------------ -->
 #### Update your cached static files
 
 When pre-caching static resources such as CSS stylesheet files, as described in [Pre-cache resources](#pre-cache-resources), your app only uses the cached versions of the files, and doesn't try to download new versions.
@@ -263,7 +268,7 @@ self.addEventListener("activate", event => {
 });
 ```
 
-Compare the `CACHE_NAME` and `PRE_CACHED_RESOURCES` values between the above code snippet and the one in [Pre-cache resources](#pre-cache-resources). When this new Service Worker is installed, a new cache will be created and the new static resources will be downloaded and cached. When the Service Worker is activated, the old cache will be deleted. At this point, the user will have the new version of the app.
+Compare the `CACHE_NAME` and `PRE_CACHED_RESOURCES` values between the above code snippet and the one in [Pre-cache resources](#pre-cache-resources). When this new Service Worker is installed,<!-- todo: review: is install & service worker sufficiently decoupled? --> a new cache will be created and the new static resources will be downloaded and cached. When the Service Worker is activated, the old cache will be deleted. At this point, the user will have the new version of the app.
 
 Making changes to your Service Worker can sometimes be complex. Use a library such as [Workbox](https://developer.chrome.com/docs/workbox/) to simplify your static resources build step and your Service Worker code.
 
@@ -275,12 +280,16 @@ It's helpful to know when a network connection is available, in order to synchro
 
 Use the following options to test for network connectivity:
 
+
+<!-- ------------------------------ -->
 #### navigator.onLine
 
 The `navigator.onLine` property is a boolean that lets you know the current status of the network. If the value is `true`, the user is online; otherwise, the user is offline.
 
 To learn more, see [navigator.onLine](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine) on MDN.
 
+
+<!-- ------------------------------ -->
 #### Online and Offline Events
 
 You can take action when your network connectivity changes.  You can listen and take action in response to network events.  The events are available on the `window`, `document`, and `document.body` elements, as shown below:
@@ -307,6 +316,8 @@ A Service Worker's main responsibility is to make your app faster and more relia
 * Large background file downloads.
 * Handling and notifications of Push messages.
 
+
+<!-- ------------------------------ -->
 #### Background synchronization
 
 Use the Background Sync API to allow users to continue using your app and perform actions even when the user's device is offline.
@@ -315,6 +326,8 @@ For example, an email app can let its users compose and send messages at any tim
 
 To learn more, see [Use the Background Sync API to synchronize data with the server](background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server).
 
+
+<!-- ------------------------------ -->
 #### Period background synchronization
 
 The Periodic Background Sync API lets PWAs retrieve fresh content periodically, in the background, so users can immediately access the content when they later open the app again.
@@ -323,6 +336,8 @@ By using the Periodic Background Sync API, PWAs don't have to download new conte
 
 To learn more, see [Use the Periodic Background Sync API to regularly get fresh content](background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
 
+
+<!-- ------------------------------ -->
 #### Large background file downloads
 
 The Background Fetch API allows PWAs to completely delegate downloading large amounts of data to the browser engine. This way, the app and Service Worker don't have to be running at all while the download is in progress.
@@ -331,6 +346,8 @@ This API is useful for apps that let users download large files (such as music, 
 
 To learn more, see [Use the Background Fetch API to fetch large files when the app or Service Worker isn't running](background-syncs.md#use-the-background-fetch-api-to-fetch-large-files-when-the-app-or-service-worker-isnt-running).
 
+
+<!-- ------------------------------ -->
 #### Push messages
 
 Push messages can be sent to your users without them having to be using the app at the time. A Service Worker can listen to push messages that are sent by your server even if the app isn't running, and display a notification in the operating system's notification center.
