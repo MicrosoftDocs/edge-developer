@@ -54,13 +54,13 @@ You can now use **Edit and Replay** on requests in the [Network Log](../../../ne
 
 ![Edit and Replay a request in the NetworkLog with the Network Console](./devtools-images/experiments-network-console-edit-and-replay.png)
 
-A new panel, the **Network Console** opens in the [DevTools Drawer](../../../customize/index.md#quick-view) and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request (if needed) and select **Send**.
+The new **Network Console** tool opens in the [Quick View](../../../customize/index.md#quick-view) panel at bottom of DevTools, and automatically populates with information for the HTTP request.  To display the response that's returned from the server, edit the request (if needed) and then select **Send**.
 
 You can also use the **Network Console** to create and send HTTP requests directly from the DevTools.
 
 ![The Network Console panel](./devtools-images/experiments-network-console.png)
 
-Tip: To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#quick-view), see [moving tools between panels](#move-tools-between-panels).
+Tip: To display **Network Console** in the main (top) panel instead of in the [Quick View](../../../customize/index.md#quick-view) panel, see [Move tools between panels](#move-tools-between-panels), below.
 
 Update: This feature has been released and is no longer experimental.<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
 
@@ -106,7 +106,7 @@ See also:
 <!-- ====================================================================== -->
 ### Move tools between panels
 
-Normally, tools such as **Elements** and **Network** may only be opened in the main (top) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer (bottom) panel of DevTools.  You can now customize your DevTools layout by moving tools between the top and bottom panels.
+Previously, tools such as **Elements** and **Network** could only be opened in the main (top) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** could only be opened in the **Drawer** (now **Quick View** panel) at the bottom of DevTools.  You can now customize your DevTools layout by moving tools between the top and bottom panels.
 
 ![Move tools between panels](./devtools-images/experiments-move-panels.png)
 
