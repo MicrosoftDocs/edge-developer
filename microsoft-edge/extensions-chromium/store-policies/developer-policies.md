@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 07/2/2024
+ms.date: 07/02/2024
 ---
 # Developer policies for the Microsoft Edge Add-ons store
 
