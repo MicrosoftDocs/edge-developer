@@ -32,6 +32,10 @@
 # What's New pages ------------------------------------------------------------
             # also add new pages to nav page: /whats-new/whats-new.md
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 126
+              href: devtools-guide-chromium/whats-new/2024/06/devtools-126.md
+              displayName: What's New in DevTools (Microsoft Edge 126)  # top-of-page title
+
             - name: Microsoft Edge 125
               href: devtools-guide-chromium/whats-new/2024/05/devtools-125.md
               displayName: What's New in DevTools (Microsoft Edge 125)  # top-of-page title
@@ -68,15 +72,15 @@
               href: devtools-guide-chromium/whats-new/2023/09/devtools-117.md
               displayName: What's New in DevTools (Microsoft Edge 117)  # top-of-page title
 
-            - name: Microsoft Edge 116
-              href: devtools-guide-chromium/whats-new/2023/08/devtools-116.md
-              displayName: What's New in DevTools (Microsoft Edge 116)  # top-of-page title
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 116
+                  href: devtools-guide-chromium/whats-new/2023/08/devtools-116.md
+                  displayName: What's New in DevTools (Microsoft Edge 116)  # top-of-page title
 
                 - name: Microsoft Edge 115
                   href: devtools-guide-chromium/whats-new/2023/07/devtools-115.md
@@ -1431,9 +1435,9 @@
               displayName: Printing from WebView2 apps # full title
 
             # updated h2: Experimental APIs, added a 2nd, new h3:
-            - name: Understand the different WebView2 SDK versions
+            - name: Prerelease and Release SDKs for WebView2
               href: webview2/concepts/versioning.md
-              displayName: Understand WebView2 SDK versions  # old title
+              displayName: Understand WebView2 SDK versions, Understand the different WebView2 SDK versions  # old titles
 
             - name: Distribute your app and the WebView2 Runtime
               href: webview2/concepts/distribution.md

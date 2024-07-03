@@ -80,7 +80,7 @@ The following WebView2 platform features are currently unavailable:
 |:--- | :--- |
 | Push Notifications | This feature isn't implemented in WebView2. |
 | Web Payment API | This feature is turned off. |
-
+| Periodic Background Sync | Periodic Background Sync events will never trigger. |
 
 <!-- ====================================================================== -->
 ## Blocked internal URLs

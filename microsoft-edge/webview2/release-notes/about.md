@@ -31,7 +31,7 @@ New APIs are added in phases, as follows:
 <!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
 
 See also:
-* [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
+* [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
 
 <!-- terminology:
 APIs are Experimental or Stable
@@ -68,7 +68,7 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 
 * Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
 
-For more information, see [Matching the Runtime version with the SDK version](../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version).
+For more information, see [Matching the Runtime version with the SDK version](../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version) in _Prerelease and Release SDKs for WebView2_.
 
 
 <!-- ====================================================================== -->

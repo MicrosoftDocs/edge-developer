@@ -13,6 +13,12 @@ ms.date: 08/02/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 104
+
+[![Thumbnail image for video "What's new in DevTools 104"](./devtools-104-images/devtools-whatsnew-104.png)](https://www.youtube.com/watch?v=0_ZprFX8x0I)
+
+
 <!-- ====================================================================== -->
 ## Use Layers in 3D View
 

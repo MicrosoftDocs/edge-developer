@@ -13,6 +13,12 @@ ms.date: 04/11/2023
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 112
+
+[![Thumbnail image for video "What's new in DevTools 112"](./devtools-112-images/devtools-whatsnew-112.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
+
+
 <!-- ====================================================================== -->
 ## Performance tool unminifies JavaScript running in out-of-process iframes
 

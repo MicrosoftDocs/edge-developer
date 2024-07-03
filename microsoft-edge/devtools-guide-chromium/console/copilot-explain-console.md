@@ -18,6 +18,12 @@ When inspecting a webpage with DevTools, you often see errors and warnings in th
 
 
 <!-- ------------------------------ -->
+#### Video: Explain DevTools Console errors using Copilot in Edge
+
+[![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./copilot-explain-console-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=vfVsAmNFLik)
+
+
+<!-- ------------------------------ -->
 #### Supported scenarios
 
 This feature is for use in standard browser windows, and is not available in the following scenarios:

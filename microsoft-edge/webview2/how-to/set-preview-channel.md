@@ -20,8 +20,8 @@ To test new or forthcoming APIs and features, switch to a Microsoft Edge preview
 We recommend that you test the Experimental APIs ahead of time, before they are promoted to Stable in the WebView2 Release SDK, by switching to a preview channel of Microsoft Edge (which includes WebView2), to ensure that your app is forward-compatible.
 
 See also:
-* [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
-* [Understand the different WebView2 SDK versions](../concepts/versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Evergreen WebView2 Runtime.
+* [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
+* [Prerelease and Release SDKs for WebView2](../concepts/versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Evergreen WebView2 Runtime.
 
 
 <!-- ------------------------------ -->
@@ -39,7 +39,7 @@ The Canary channel is recommended, because it offers the latest experimental API
 
 *  **Microsoft Edge Preview Channels:** These channels (Edge Beta, Edge Dev, or Edge Canary) contain the necessary Microsoft Edge binaries.  These channels allow your app to run and render using the experimental APIs.
 
-For more information about how SDK versions interact with the WebView2 Runtime and the Microsoft Edge preview channels, see [Understand the different WebView2 SDK versions](../concepts/versioning.md).
+For more information about how SDK versions interact with the WebView2 Runtime and the Microsoft Edge preview channels, see [Prerelease and Release SDKs for WebView2](../concepts/versioning.md).
 
 
 <!-- ------------------------------ -->
@@ -425,4 +425,4 @@ In your app's code, write your own custom logic to deploy the latest version of 
 <!-- ====================================================================== -->
 ## See also
 
-* [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Understand the different WebView2 SDK versions_.
+* [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
