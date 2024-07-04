@@ -13,6 +13,14 @@ ms.date: 12/07/2023
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ 
+todo video
+#### Video: What's new in DevTools 115-125
+
+[![Thumbnail image for video "What's new in DevTools 115-125"](./devtools-120-images/devtools-whatsnew-115-125.png)]
+-->
+
+
 <!-- ====================================================================== -->
 ## DevTools has a new user interface
 

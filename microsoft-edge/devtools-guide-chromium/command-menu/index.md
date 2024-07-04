@@ -28,6 +28,12 @@ The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI 
 ![Using the Command Menu to disable JavaScript](./index-images/command-menu-run-command-java.png)
 
 
+<!-- ------------------------------ -->
+#### Video: Customizing Microsoft Edge Developer Tools and quick feature access
+
+[![Thumbnail image for video "Customizing Microsoft Edge Developer Tools and quick feature access"](./index-images/customize-devtools.png)](https://www.youtube.com/watch?v=ypRzEBYNptQ)
+
+
 <!-- ====================================================================== -->
 ## Open the Command Menu
 

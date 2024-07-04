@@ -39,6 +39,12 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 *  [webhint](https://webhint.io)
 
 
+<!-- ------------------------------ -->
+#### Video: Advanced issues filtering in Edge DevTools and VSCode
+
+[![Thumbnail image for video "Advanced issues filtering in Edge DevTools and VSCode"](./index-images/advanced-issues-filtering.png)](https://www.youtube.com/watch?v=_dePgo89bq0)
+
+
 <!-- ====================================================================== -->
 ## Opening the Issues tool
 
