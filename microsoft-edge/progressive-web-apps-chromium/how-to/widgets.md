@@ -262,7 +262,7 @@ When a PWA is installed, the widgets that the app defines in its manifest are ad
 
 When a widget is installed, it is not automatically rendered using the `ms_ac_template` and `data` fields of the widget definition.
 
-To render the widget, listen to the `widgetinstall` event in your service worker,<!-- todo: review: is install & service worker sufficiently decoupled? --> and update the widget by using the `widgets.updateByTag` function:
+To render the widget, listen to the `widgetinstall` event in your service worker, and update the widget by using the `widgets.updateByTag` function:
 
 ```javascript
 // Listen to the widgetinstall event.
@@ -436,7 +436,7 @@ The PWAmp widget displays the current song and buttons to play the previous or n
 <!-- ====================================================================== -->
 <!-- widgets are too early in the making for MDN. But there is enough complexity with the APIs that a reference doc is needed.
 For now we are documenting all functions and objects in this section. When widgets become standard, move this to MDN and remove the section. -->
-## Service Worker API reference
+## Service worker API reference
 
 The service worker global object (or [ServiceWorkerGlobalScope](https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope)) contains a `widgets` attribute that exposes the following Promise-based methods:
 

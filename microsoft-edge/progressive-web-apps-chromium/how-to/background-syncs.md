@@ -10,14 +10,16 @@ ms.date: 09/14/2021
 ---
 # Synchronize and update a PWA in the background
 
-Using a service worker, a Progressive Web App (PWA) can do work in the background, even when the user isn't using the app.  Service workers used to be reserved for native apps, but they are now also available to PWAs, providing a better offline experience.
+Using a service worker, a Progressive Web App (PWA) can do work in the background, even when the user isn't using the app, and provide a better offline experience.
 
 Consider the following use cases:
+
 *  An email app that lets users compose messages and send them at any time, even when offline.
 *  A news app that fetches new articles every day, for the user to read later when they open the app.
 *  A music app that lets users download songs for listening offline.
 
 All three of these use cases are possible with PWAs, by using the following APIs:
+
 *  Background Sync API
 *  Periodic Background Sync API
 *  Background Fetch API

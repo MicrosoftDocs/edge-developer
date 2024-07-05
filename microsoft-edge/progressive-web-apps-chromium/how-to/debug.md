@@ -12,7 +12,7 @@ ms.date: 11/25/2022
 
 Progressive Web Apps (PWAs) are built by using web technologies. Therefore, all the tools available in Microsoft Edge DevTools are also helpful for PWAs. To learn more, refer to the [Microsoft Edge DevTools documentation](../../devtools-guide-chromium/landing/index.yml).
 
-PWAs also use service workers, web app manifests, and other specific features and APIs that require special debugging tools.
+PWAs also use web app manifests and can use service workers and other specific features and APIs that require special debugging tools.
 
 
 <!-- ====================================================================== -->

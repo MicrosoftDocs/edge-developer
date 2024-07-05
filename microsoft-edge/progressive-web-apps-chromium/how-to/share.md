@@ -223,7 +223,7 @@ If the shared data is meant to change your app in any way, such as by updating s
 }
 ```
 
-The `POST` HTTP request contains the shared data, encoded as `multipart/form-data`.  You can access this data on your HTTP server by using server-side code, but this won't work when the user is offline.  To provide a better experience, you can access the data in the service worker, using a `fetch` event listener, as follows:
+The `POST` HTTP request contains the shared data, encoded as `multipart/form-data`.  You can access this data on your HTTP server by using server-side code, but this won't work when the user is offline.  To provide a better experience, use a service worker and access the data from the service worker, using a `fetch` event listener, as follows:
 
 ```javascript
 self.addEventListener('fetch', event => {
