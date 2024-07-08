@@ -10,13 +10,13 @@ ms.date: 11/28/2022
 ---
 # Use service workers to manage network requests
 
-Service workers are a special type of [web workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) with the ability to intercept, modify, and respond to network requests using the `Fetch` API.  Service workers can access the `Cache` API, and asynchronous client-side data stores, such as `IndexedDB`, to store resources.
+Service workers are a special type of [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that are able to intercept, modify, and respond to network requests by using the `Fetch` API.  Service workers can access the `Cache` API, and asynchronous client-side data stores, such as `IndexedDB`, to store resources.
 
 Service workers can make your PWA faster by caching resources locally, and they can also make your PWA more reliable by making it network-independent.
 
-If your PWA has a service worker, the service worker is installed the first time the user accesses your PWA. The service worker then runs in parallel to your app, and can continue doing work even when your app is not running.
+If your PWA has a service worker, the service worker is installed the first time the user accesses your PWA. The service worker then runs in parallel with your app, and can continue doing work even when your app isn't running.
 
-Service workers are responsible for intercepting, modifying, and responding to network requests. They can be alerted when the app tries to load a resource from the server, or sends a request to get data from the server. When this happens, a service worker can decide to let the request go to the server, or intercept it and return a response from the cache instead.
+Service workers are responsible for intercepting, modifying, and responding to network requests. They can be alerted when the app tries to load a resource from the server, or sends a request to get data from the server. When this happens, a service worker can decide to let the request go to the server, or intercept the request and return a response from the cache instead.
 
 ![High-level architecture diagram showing that the service worker is in between the app and the network and cache storage](./service-workers-images/sw-architecture.png)
 
@@ -32,9 +32,9 @@ if ("serviceWorker" in navigator) {
 }
 ```
 
-The web browser that's running your PWA may provide different levels of support for service workers. Also, the context in which your PWA is running might not be secure. As such, it's a good practice to test for the existence of the `navigator.serviceWorker` object before running any service worker-related code. In the above code, a service worker is registered by using the `serviceworker.js` file that's located at the root of the site.
+The web browser that's running your PWA can provide different levels of support for service workers. Also, the context in which your PWA is running might not be secure. Therefore, it's a good practice to test for the existence of the `navigator.serviceWorker` object before running any service worker-related code. In the above code, a service worker is registered by using the `serviceworker.js` file that's located at the root of the site.
 
-Make sure to place the service worker file in the highest-level directory that you want it to manage.  Such a directory is called the _scope_ of the service worker.  In the previous code, the file is stored in the root directory of your app, and the service worker manages all pages that are under the app's domain name.
+Make sure to place the service worker file in the highest-level directory that you want the service worker to manage.  Such a directory is called the _scope_ of the service worker.  In the previous code, the file is stored in the root directory of your app, and the service worker manages all pages that are under the app's domain name.
 
 If the service worker file was stored in a `js` directory, the scope of the service worker would be limited to the `js` directory and any subdirectories.  As a best practice, place the service worker file in the root of your app, unless you need to reduce the scope of your service worker.
 
@@ -56,7 +56,7 @@ Within the `fetch` handler, you can control whether a request goes to the networ
 
 Here are a few examples of what you can do within the `fetch` handler:
 
-* If available, return a response from the cache; otherwise, fallback to requesting the resource over the network.
+* If available, return a response from the cache; otherwise, fall back to requesting the resource over the network.
 * Fetch a resource from the network, cache a copy, and return the response.
 * Allow users to specify a preference to save data.
 * Supply a placeholder image for certain image requests.
@@ -213,7 +213,7 @@ If you make changes to your service worker code and deploy the new service worke
 
 Every time a user navigates to one of your app's pages, the browser that's running the app checks if a new version of the service worker is available on the server. The browser detects new versions by comparing the contents between the existing service worker and the new service worker. When a change is detected, the new service worker is installed (its `install` event is triggered), and then the new service worker waits for the existing service worker to stop being used on the device.
 
-In practice, this means that there can be two service workers running at the same time, but only one intercepts the app's network requests. When the app is closed, the existing service worker stops being used. The next time the app is opened, the new service worker is activated. The `activate` event is triggered, and the new service worker starts intercepting `fetch` events.
+In practice, this means that there can be two service workers running at the same time, but only the existing (original) service worker intercepts the app's network requests. When the app is closed, the existing service worker stops being used. The next time the app is opened, the new service worker is activated. The `activate` event is triggered, and the new service worker starts intercepting `fetch` events.
 
 You can forcefully activate the new service worker as soon as it's installed, by using `self.skipWaiting()` in your service worker's `install` event handler.
 
@@ -288,7 +288,7 @@ To learn more, see [navigator.onLine](https://developer.mozilla.org/docs/Web/API
 
 
 <!-- ------------------------------ -->
-#### Online and Offline Events
+#### Online and offline events
 
 You can take action when your network connectivity changes.  You can listen and take action in response to network events.  The events are available on the `window`, `document`, and `document.body` elements, as shown below:
 
@@ -297,7 +297,7 @@ window.addEventListener("online",  function(){
     console.log("You are online!");
 });
 window.addEventListener("offline", function(){
-    console.log("Oh no, you lost your network connection.");
+    console.log("Network connection lost!");
 });
 ```
 

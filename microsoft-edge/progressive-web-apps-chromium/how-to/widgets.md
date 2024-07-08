@@ -290,7 +290,7 @@ async function renderWidget(widget) {
 <!-- ------------------------------ -->
 #### Update widgets on service worker updates
 
-When the service worker code changes in a PWA, the browser detects that change, installs the new service worker,<!-- todo: review: is install & service worker sufficiently decoupled? --> and then later activates it.
+When the service worker code changes in a PWA, the browser detects that change, installs the new service worker, and then later activates the service worker.
 
 When this happens, it's important to update any widget instances that may already be running. Widgets may have been installed before the service worker `activate` event is emitted. To avoid displaying empty widgets, update your widgets when the `activate` event occurs
 
@@ -342,7 +342,7 @@ For brevity, the actual application code isn't shown in the above code snippet. 
 
 Note that the `action` property of the `widgetEvent` object passed to the event listener above matches the string defined in the `action.verb` field of the widget template.
 
-For more information about the `widgetclick` event and what information you can access from it, see the [Service Worker API reference](#service-worker-api-reference) below.
+For more information about the `widgetclick` event and what information you can access from it, see [Service Worker API reference](#service-worker-api-reference), below.
 
 
 <!-- ------------------------------ -->
@@ -434,29 +434,28 @@ The PWAmp widget displays the current song and buttons to play the previous or n
 
 
 <!-- ====================================================================== -->
-<!-- widgets are too early in the making for MDN. But there is enough complexity with the APIs that a reference doc is needed.
-For now we are documenting all functions and objects in this section. When widgets become standard, move this to MDN and remove the section. -->
 ## Service worker API reference
+<!-- widgets are too early in the making to doc them at MDN, but there's enough complexity with the APIs that a ref doc is needed.  for now, doc all functions and objects in this section.  when widgets become standard, copy this section to MDN and remove it from here -->
 
 The service worker global object (or [ServiceWorkerGlobalScope](https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope)) contains a `widgets` attribute that exposes the following Promise-based methods:
 
 | Method | Description | Parameters | Return value |
 |:--- |:--- |:--- |:--- |
-| `getByTag(tag)` | Get a widget by tag | The widget tag | A Promise that resolves to the [widget object](#widget-object) that matches the tag, or `undefined`. |
-| `getByInstanceId(id)` | Get a widget by instance ID | The widget instance ID | A Promise that resolves to the corresponding [widget object](#widget-object), or `undefined`.
-| `getByHostId(id)` | Get widgets by host ID  | The host ID | An array of [widget objects](#widget-object) found in that host.
-| `matchAll(options)` | Get widgets by matching options | A [widgetOptions object](#widgetoptions-object) | A Promise that resolves to an array of [widget objects](#widget-object) that match the `options` criteria. |
-| `updateByInstanceId(id, payload)` | Update a widget by instance ID  | The instance ID, and a [widgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
-| `updateByTag(tag, payload)` | Update a widget by tag | The widget tag, and a [widgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`.
+| `getByTag(tag)` | Gets a widget by tag. | The widget tag | A Promise that resolves to the [widget object](#widget-object) that matches the tag, or `undefined`. |
+| `getByInstanceId(id)` | Gets a widget by instance ID. | The widget instance ID | A Promise that resolves to the corresponding [widget object](#widget-object), or `undefined`. |
+| `getByHostId(id)` | Gets widgets by host ID. | The host ID | An array of [widget objects](#widget-object) found in that host. |
+| `matchAll(options)` | Gets widgets by matching options. | A [widgetOptions object](#widgetoptions-object) | A Promise that resolves to an array of [widget objects](#widget-object) that match the `options` criteria. |
+| `updateByInstanceId(id, payload)` | Updates a widget by instance ID. | The instance ID, and a [widgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`. |
+| `updateByTag(tag, payload)` | Updates a widget by tag. | The widget tag, and a [widgetPayload object](#widgetpayload-object) | A Promise that resolves to `undefined` or `Error`. |
 
 The service worker global object also defines the following events:
 
-* `widgetinstall`: fired when the widget host is installing a widget.
-* `widgetuninstall`: fired when the widget host is uninstalling a widget.
-* `widgetresume`: fired when the widget host resumes the rendering of installed widgets, which can happen after the host suspended the rendering of widgets to preserve resources.
-* `widgetclick`: fired when the user runs one of the widget actions.
+* `widgetinstall`: Fired when the widget host is installing a widget.
+* `widgetuninstall`: Fired when the widget host is uninstalling a widget.
+* `widgetresume`: Fired when the widget host resumes the rendering of installed widgets, which can happen after the host suspended the rendering of widgets to preserve resources.
+* `widgetclick`: Fired when the user runs one of the widget actions.
 
-For more information about the objects that are provided with these events, see the [widgetEvent object](#widgetevent-object) and the [widgetClickEvent object](#widgetclickevent-object) definitions below.
+For more information about the objects that are provided with these events, see [widgetEvent object](#widgetevent-object) and [widgetClickEvent object](#widgetclickevent-object), below.
 
 
 <!-- ------------------------------ -->

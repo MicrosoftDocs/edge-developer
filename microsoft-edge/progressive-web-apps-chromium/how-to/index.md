@@ -46,7 +46,7 @@ Your front-end code uses HTML, CSS, JavaScript, and a JSON manifest only.
 
 You use HTML to describe the content in your app, such as the text, images, text fields, or buttons that appear in the user interface. You then use CSS to organize the HTML content in a layout, and provide styles to elements. You use JavaScript to add user interactions to your user interface. And finally, you use a JSON manifest file that describes your application to the host operating system.
 
-Note that although your front-end code runs by using the device's web browser, the browser user interface may not be visible as your app can choose to run in a standalone window.
+Although your front-end code runs by using the device's web browser, the browser user interface might not be visible, because your app can choose to run in a standalone window.
 
 On top of the user interface code, you can also use JavaScript to make your application faster, more reliable, and network-independent by using a service worker file. Finally, your front-end code also contains a JSON manifest file that describes your application to the host operating system.
 
@@ -80,7 +80,7 @@ To start developing your PWA, you can use a local web server instead. To start a
 
 You now have a simple local web server running at `http://localhost:8080`.
 
-Key parts of the Progressive Web Apps platform, such as Service Workers, require using HTTPS.  When your PWA goes live, you must publish it to an HTTPS URL.  Many hosts offer HTTPS by default, but if your host doesn't, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
+Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS.  When your PWA goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
 
 For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
 
@@ -305,7 +305,7 @@ In this step of the tutorial, we'll create a temperature unit conversion app.
 
     ![Running your new PWA, with the frontend code, on localhost](./index-images/sample-pwa-app-with-frontend-code.png)
 
-Your app does something useful now, and it can be installed as a standalone app by users. Before installing the app, create a service worker to make the app work offline.
+Your app does something useful now, and it can be installed as a standalone app by users.  Before installing the app, create a service worker to make the app work offline.
 
 
 <!-- ====================================================================== -->
@@ -319,7 +319,10 @@ Service workers are specialized [Web Workers](https://developer.mozilla.org/docs
 *  Advanced caching.
 *  Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
 
-Your PWA doesn't need to have a service worker for Microsoft Edge to be able to install the app. However, we recommend adding a service worker to your PWA to make it more reliable and faster.
+A PWA doesn't need to have a service worker for Microsoft Edge to be able to install the app.  However, we recommend adding a service worker to your PWA:
+* To make it more reliable.
+* To make it faster.
+* To allow it to work offline.
 
 A service worker is defined in a JavaScript file that's loaded by your app. To add a service worker to your project:
 
@@ -418,7 +421,7 @@ To learn more about installing PWAs, see [Use Progressive Web Apps in Microsoft 
 <!-- ====================================================================== -->
 ## Next steps
 
-The temperature converter PWA you built so far only scratches the surface of what PWAs can do. The previous steps are important prerequisites for any PWA, but there are important best practices that will make your PWA feel like a real app when installed.
+The temperature converter PWA that you built so far is only a small sample of what PWAs can do. The previous steps are important prerequisites for any PWA, but there are important best practices that will make your PWA feel like a real app when installed.
 
 When users install applications, they have certain expectations of what these applications can do; for example:
 
