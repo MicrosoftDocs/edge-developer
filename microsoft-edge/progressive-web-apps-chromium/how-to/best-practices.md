@@ -116,7 +116,7 @@ See [Build PWA-driven widgets](./widgets.md).
 
 When connected to a slow or unreliable network, or even with no internet access, installed applications can usually still be opened and used. Users of installed applications expect them to continue working under these conditions. They also expect the network-dependent parts of an application to gracefully handle the lack of connection with a custom message and local caching capabilities.
 
-To improve retention, add a service worker to your PWA. You can use the service worker's `Fetch` and `Cache` APIs, and local data storage access, to provide a good offline experience to your users.
+To improve retention, add a service worker to your PWA. You can use the service worker's `Fetch` and `Cache` APIs, and local data storage access, to provide a good offline experience for your users.
 
 You can provide a good offline experience in several steps:
 
