@@ -10,7 +10,7 @@ ms.date: 11/28/2022
 ---
 # Use service workers to manage network requests
 
-Service workers are a special type of [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that are able to intercept, modify, and respond to network requests by using the `Fetch` API.  Service workers can access the `Cache` API, and asynchronous client-side data stores, such as `IndexedDB`, to store resources.
+A _service worker_ is a special type of [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that's able to intercept, modify, and respond to network requests by using the `Fetch` API.  Service workers can access the `Cache` API, and asynchronous client-side data stores, such as `IndexedDB`, to store resources.
 
 Service workers can make your PWA faster by caching resources locally, and they can also make your PWA more reliable by making it network-independent.
 
