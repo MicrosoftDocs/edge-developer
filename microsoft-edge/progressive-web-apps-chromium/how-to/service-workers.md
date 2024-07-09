@@ -12,7 +12,7 @@ ms.date: 07/09/2024
 
 A _service worker_ is a special type of [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that's able to intercept, modify, and respond to network requests by using the `Fetch` API.  To store resources, a service worker can access the `Cache` API, and can access asynchronous client-side data stores, such as `IndexedDB`.
 
-A service worker can make your PWA faster by caching resources locally, and can also make your PWA more reliable by making it work even with an intermittent network connection.
+A service worker can make your PWA faster by caching resources locally, and can also make your PWA more reliable by enabling it to work even when the user's device is offline or has an intermittent network connection.
 
 If your PWA has a service worker, the service worker is installed the first time the user accesses your PWA. The service worker then runs in parallel with your app, and can continue doing work even when your app isn't running.
 
