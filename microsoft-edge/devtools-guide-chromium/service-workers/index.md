@@ -54,7 +54,7 @@ To make request routing easier to visualize, timelines now display the service w
 <!-- ------------------------------ -->
 #### Fetch events
 
-To learn more about the `respondWith` fetch events, click the dropdown arrow to the left of the `respondWith`.  To find more details about the **Original Request** and **Response Received**, click the corresponding dropdown arrows.
+To learn more about the `respondWith` fetch events, click the dropdown arrow to the left of the `respondWith`.  To see more details about the **Original Request** and **Response Received**, click the corresponding dropdown arrows.
 
 
 <!-- ====================================================================== -->
@@ -72,7 +72,7 @@ The Microsoft Edge DevTools team added a timeline in the **Application** tool to
 <!-- ------------------------------ -->
 #### Request routing and fetch events
 
-You can now access the service worker timelines through the **Network** tool in the console drawer.  This feature benefits performance, minimizes UI duplication, and creates a more comprehensive debugging experience.
+You can now access the service worker timelines through the **Network** tool.  This feature benefits performance, minimizes UI duplication, and creates a more comprehensive debugging experience.
 
 1. Open the service worker that you're debugging.
 

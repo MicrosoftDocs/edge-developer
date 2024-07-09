@@ -272,9 +272,9 @@ To open an `.html` file and edit it:
 
 1. In DevTools, on the left, select the **Page** tab, and then select the HTML file, such as `index.html` or **(index)**.
 
-1. Press **Esc** to open the **Drawer** at the bottom of DevTools.
+1. Press **Esc** to open the **Quick View** panel at the bottom of DevTools.
 
-1. In the Drawer, click the **More Tools** (![More Tools icon](./sample-code-images/more-tools-icon-light-theme.png)) button, and then select the **Changes** tool.
+1. In the **Quick View** toolbar, click the **More Tools** (![More Tools icon](./sample-code-images/more-tools-icon-light-theme.png)) button, and then select the **Changes** tool.
 
 1. In the middle, editor pane of the **Sources** tool, edit the `.html` file.  For example, in `demo-to-do/index.html` folder, in the `<h1>` heading line, change **My tasks** to **My modified tasks**:
 
@@ -284,7 +284,7 @@ To open an `.html` file and edit it:
 
    If editing isn't enabled, click the **Allow** button to grant read/write access to the folder by doing the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) above.
 
-   The change is displayed in the **Changes** tool in the Drawer, and an asterisk is added to the file name in the **index.html** tab in the **Sources** tool:
+   The change is displayed in the **Changes** tool in the **Quick View** panel, and an asterisk is added to the file name in the **index.html** tab in the **Sources** tool:
 
    ![The modified demo-to-do page before saving changes](./sample-code-images/modified-demo-to-do-before-save.png)
 

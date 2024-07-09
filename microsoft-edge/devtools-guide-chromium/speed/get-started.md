@@ -258,7 +258,7 @@ To confirm the amount of unused code and possibly find other resources that are 
 
 1. In the **Coverage** tool, click **Start instrumenting coverage and refresh the page** (![Refresh icon](./get-started-images/reload-icon.png)). The **Coverage** tool provides an overview of how much of the JavaScript and CSS code that's loaded on the page was actually run.
 
-    ![The Coverage tool, in the Drawer panel, showing the report of how much code is unused](./get-started-images/coverage-report.png)
+    ![The Coverage tool in the Quick View panel at the bottom of DevTools, showing the report of how much code is unused](./get-started-images/coverage-report.png)
 
 The coverage report confirms that the Bing Map dependencies contain code that's unused when the page loads. The map on the demo website isn't visible when the page first loads. There's a good opportunity to improve performance by loading the Bing Map only when that section of the page becomes visible to users.
 

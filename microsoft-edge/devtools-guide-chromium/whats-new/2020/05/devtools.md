@@ -96,15 +96,15 @@ Click **inspect** for the tab or PWA that you want to debug, to open DevTools.  
 
 
 <!-- ====================================================================== -->
-### Resize the DevTools drawer more easily
+### Resize the DevTools Quick View panel more easily
 
-In Microsoft Edge 83 or earlier, you resized the [DevTools Drawer](../../../customize/index.md#quick-view) by hovering inside the toolbar of the drawer.  The drawer behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it.  The following image shows how resizing the drawer worked in Microsoft Edge version 83 or earlier:
+In Microsoft Edge 83 or earlier, you resized the **Drawer** (now [Quick View](../../../customize/index.md#quick-view) panel) by hovering inside the **Drawer**'s toolbar.  The **Drawer** behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it.  The following image shows how resizing the **Drawer** worked in Microsoft Edge version 83 or earlier:
 
-![Resizing the DevTools Drawer in Microsoft Edge 83](./devtools-images/drawer-83.png)
+![Resizing the Drawer in Microsoft Edge 83](./devtools-images/drawer-83.png)
 
-Starting with Microsoft Edge 84, you can resize the drawer by hovering over the border.  This change aligns the behavior for resizing the DevTools drawer with other panes in DevTools. The following image shows how resizing the drawer works in Microsoft Edge 84 or later:
+Starting with Microsoft Edge 84, you can resize the **Drawer** by hovering over the border.  This change aligns the behavior for resizing the **Drawer** with other panes in DevTools. The following image shows how resizing the **Drawer** works in Microsoft Edge 84 or later:
 
-![Resizing the DevTools Drawer in Microsoft Edge 84](./devtools-images/drawer-84.png)
+![Resizing the Drawer in Microsoft Edge 84](./devtools-images/drawer-84.png)
 
 Chromium issue [#1076112](https://crbug.com/1076112)
 
@@ -141,7 +141,7 @@ The following sections announce additional features available in Microsoft Edge 
 <!-- ====================================================================== -->
 ### Fix site issues with the new Issues tool in the DevTools Drawer
 
-The new **Issues** tool in the Drawer at the bottom of DevTools reduces the notification fatigue and clutter of the **Console**.  Currently, the **Console** is the central place for website developers, libraries, frameworks, and Microsoft Edge to log messages, warnings, and errors.  The **Issues** tool aggregates warnings from the browser in a structured, aggregated, and actionable way.  The **Issues** tool links to affected resources within DevTools, and provides guidance on how to fix the issues.
+The new **Issues** tool in the **Drawer** (now **Quick View** panel) at the bottom of DevTools reduces the notification fatigue and clutter of the **Console**.  Currently, the **Console** is the central place for website developers, libraries, frameworks, and Microsoft Edge to log messages, warnings, and errors.  The **Issues** tool aggregates warnings from the browser in a structured, aggregated, and actionable way.  The **Issues** tool links to affected resources within DevTools, and provides guidance on how to fix the issues.
 
 Over time, more warnings will be surfaced in the **Issues** tool rather than in the **Console**, to streamline the **Console** messages.
 
