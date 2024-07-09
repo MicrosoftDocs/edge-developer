@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/07/2021
+ms.date: 07/08/2024
 ---
 # WebView2 Roadmap
 
@@ -15,11 +15,6 @@ The Microsoft Edge WebView2 control allows you to embed web technologies in your
 WebView2 is under active development and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here aren't exhaustive and are subject to change.
 
 If you have concerns or questions about the Roadmap, provide your feedback in the [feedback repo](https://github.com/MicrosoftEdge/WebViewFeedback).
-
-The WebView2 team is planning the following major efforts for future updates:
-
-* macOS Preview
-* Linux Preview
 
 
 <!-- ====================================================================== -->
