@@ -454,11 +454,11 @@ See also:
 In the **Application** tool, the **Frames** page has the following updates.
 
 
-###### Service Workers information in Frame details
+###### Service workers information in Frame details
 
-The **Application** tool now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers** and then click a service worker.
+The **Application** tool now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers**<!-- keeping W, to match png --> and then click a service worker.
 
-![Service Workers information in the Frames details](./devtools-images/application-frames-service-workers-details.png)
+![Service workers information in the Frames details](./devtools-images/application-frames-service-workers-details.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1122507](https://crbug.com/1122507).
 

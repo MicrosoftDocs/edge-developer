@@ -122,7 +122,7 @@ The following new features in the **Network** tool, **Application** tool, and **
 The routing of a request displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.
 
 See also:
-* [Service Worker improvements](../../../service-workers/index.md)
+* [Service worker improvements](../../../service-workers/index.md)
 
 
 <!-- ====================================================================== -->
@@ -135,7 +135,7 @@ In the **Application** tool, view all service worker request routing information
 
 To display additional context when debugging a service worker:
 
-1. In the **Application** tool, on the left, select **Service Workers**.
+1. In the **Application** tool, on the left, select **Service Workers**.<!-- keeping old W, to match png, in this section -->
 
 1. Click the **Network requests** link:
 
@@ -151,7 +151,7 @@ To display additional context when debugging a service worker:
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-* [Service Worker improvements](../../../service-workers/index.md)
+* [Service worker improvements](../../../service-workers/index.md)
 
 
 <!-- ====================================================================== -->
@@ -168,7 +168,7 @@ In the **Network** tool, you can debug network requests that are run by service 
 
 See also:
 * [Display the timing breakdown of a request](../../../network/reference.md#display-the-timing-breakdown-of-a-request) in _Network features reference_.
-* [Service Worker improvements](../../../service-workers/index.md)
+* [Service worker improvements](../../../service-workers/index.md)
 
 
 <!-- ====================================================================== -->
@@ -186,7 +186,7 @@ In the following figure, the reference is selected, and has opened the initiator
 
 See also:
 * [View the call stack](../../../javascript/reference.md#view-the-call-stack) in _JavaScript debugging features_
-* [Service Worker improvements](../../../service-workers/index.md)
+* [Service worker improvements](../../../service-workers/index.md)
 
 
 <!-- ====================================================================== -->

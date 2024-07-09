@@ -157,7 +157,7 @@ const notification = new Notification("Hello World!", {
 You can also display notifications from your app's service worker. This is useful because the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function:
 
 ```javascript
-self.registration.showNotification("Hello from the Service Worker!");
+self.registration.showNotification("Hello from the service worker!");
 ```
 
 The `showNotification` function supports the same arguments as the `Notification` constructor used in the previous example.  The `showNotification` function also supports the `actions` property, which is described in the following section.

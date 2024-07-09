@@ -317,18 +317,18 @@ For more information, see [Lighthouse tool](../../../lighthouse/lighthouse-tool.
 
 
 <!-- ====================================================================== -->
-### Deprecation of other origins listing in the Service Workers pane
+### Deprecation of other origins listing in the Service workers pane
 
 The **Application** tool now provides a link from the **Service workers** pane to view the full list of service workers from other origins.  To access the list of service workers without opening DevTools, go to `edge://service-worker-internals/?devtools`.
 
-Previously DevTools displayed a list nested under the **Application** tool > **Service workers** pane.
+Previously DevTools displayed a list nested under the **Application** tool > **Service Workers** pane.<!-- keeping old W to match png -->
 
 ![Link to other origins](./devtools-images/sw-other-origins.png)
 
 Chromium issue: [#807440](https://crbug.com/807440)
 
 See also:
-* [Service Worker improvements](../../../service-workers/index.md)
+* [Service worker improvements](../../../service-workers/index.md)
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 

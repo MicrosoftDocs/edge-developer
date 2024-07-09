@@ -111,7 +111,7 @@ To test background syncing:
 
 1.  Search for movies using the search input field.
 
-1.  Go offline.  To do this, open DevTools (**F12**), and then select the **Application** > **Service Workers** > **Offline** checkbox.
+1.  Go offline.  To do this, open DevTools (**F12**), and then select the **Application** > **Service Workers**<!-- keeping W, to match png --> > **Offline** checkbox.
 
     ![Simulate being offline with DevTools](./background-syncs-images/devtools-go-offline.png)
 
@@ -121,7 +121,7 @@ To test background syncing:
 
     ![The offline message](./background-syncs-images/my-movie-list-pwa-demo-offline.png)
 
-1.  Go online.  To do this, in DevTools, clear the **Application** > **Service Workers** > **Offline** checkbox.
+1.  Go online.  To do this, in DevTools, clear the **Application** > **Service Workers**<!-- keeping W, to match png --> > **Offline** checkbox.
 
 1.  Reload the app. The movie details now appear.
 
@@ -134,7 +134,7 @@ To test your background sync code, you don't have to go offline, then go online,
 To simulate a `sync` event:
 
 1. Open DevTools (**F12**).
-1. Select **Application** > **Service Workers**.
+1. Select **Application** > **Service Workers**.<!-- keeping W, to match png -->
 1. Type the tag name you used when registering the sync in the **Sync** input field.
 1. Select the **Sync** button.
 
@@ -240,7 +240,7 @@ You can use DevTools to simulate `periodicsync` events instead of waiting for th
 To simulate the event:
 
 1. Open DevTools (**F12**).
-1. Select **Application** > **Service Workers**.
+1. Select **Application** > **Service Workers**.<!-- keeping W, to match png -->
 1. Type the tag name you used when registering the periodic sync in the **Periodic Sync** input field.
 1. Select the **Periodic Sync** button.
 

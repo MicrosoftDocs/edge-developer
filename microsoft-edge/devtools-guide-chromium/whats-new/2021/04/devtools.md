@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 91)
-description: Wavy underlines highlight code issues in the Elements tool, Service worker update timeline, and more.
+description: Wavy underlines highlight code issues in the Elements tool, service worker update timeline, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -83,24 +83,24 @@ Note: As of May 2022, tooltips aren't supported from the **Activity Bar**.
 <!-- ====================================================================== -->
 ## Service worker update timeline
 
-<!--todo:  Update the linked [Service Worker improvements](../../../service-workers/index.md) article.  -->
+<!--todo:  Update the linked [Service worker improvements](../../../service-workers/index.md) article.  -->
 
-<!--  Title: The tasks associated with your Service Worker  -->
-<!--  Subtitle: Debug with Service Worker Update Cycle  -->
+<!--  Title: The tasks associated with your service worker  -->
+<!--  Subtitle: Debug with service worker Update Cycle  -->
 
-In Microsoft Edge version 91 or later, if you're a Progressive Web App or Service Worker developer, display the update lifecycle of your Service Workers as a timeline in the **Application** tool.  This feature helps you understand the time your Service Worker spends in each of the following stages:
+In Microsoft Edge version 91 or later, if you're a Progressive Web App or service worker developer, display the update lifecycle of your service workers as a timeline in the **Application** tool.  This feature helps you understand the time your service worker spends in each of the following stages:
 
 *  **Install**
 *  **Wait**
 *  **Activate**
 
-![View the Timeline in the Update Cycle for your Service Worker](./devtools-images/application-service-workers-update-cycle-version-73-focus.png)
+![View the Timeline in the Update Cycle for your service worker](./devtools-images/application-service-workers-update-cycle-version-73-focus.png)
 
 For real-time updates on this feature in the Chromium open-source project, see Issue [1066604](https://crbug.com/1066604).
 
 See also:
 * [The service worker lifecycle](../../../../progressive-web-apps-chromium/how-to/service-workers.md#the-service-worker-lifecycle) in _Use a service worker to manage network requests_.
-* [Service Worker improvements](../../../service-workers/index.md) - DevTools debugging tools for Progressive Web Apps and Service Workers.
+* [Service worker improvements](../../../service-workers/index.md) - DevTools debugging tools for Progressive Web Apps and service workers.
 
 
 <!-- ====================================================================== -->

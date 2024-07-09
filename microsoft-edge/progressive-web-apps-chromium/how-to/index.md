@@ -313,7 +313,7 @@ Your app does something useful now, and it can be installed as a standalone app 
 
 Service workers are a key technology that help make PWAs fast and independent of network conditions.
 
-Service workers are specialized [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that intercept network requests from your PWA and enable scenarios that were previously limited to native apps, including:
+A service workers is a specialized [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that can intercept network requests from your PWA, and enables scenarios that were previously limited to native apps, including:
 
 *  Offline support.
 *  Advanced caching.
@@ -384,9 +384,9 @@ To confirm that your service worker is running:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. Open the **Application** tool, then **Service Workers**.  If the service worker isn't displayed, refresh the page.
+1. Open the **Application** tool, then click **Service workers**.  If the service worker isn't displayed, refresh the page.
 
-    ![The DevTools Application tool, showing the Service Workers panel, with the new sw.js worker running](./index-images/devtools-sw-overview.png)
+    ![The DevTools Application tool, showing the Service workers panel, with the new sw.js worker running](./index-images/devtools-sw-overview.png)
 
 1.  View the service worker cache by expanding **Cache Storage** and selecting **temperature-converter-v1**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, and the initial page.
 

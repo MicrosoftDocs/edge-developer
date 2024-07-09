@@ -250,7 +250,7 @@ You can access widgets and update them from the PWA service worker code. Accessi
 * [Handling user actions on widgets](#handle-widget-actions).
 * [Updating widgets when the application changes](#update-widgets-on-application-changes).
 
-Service workers have access to the `self.widgets` object and several widget events which, together, constitute an API that you use to react to changes and access widgets at runtime.
+A service worker has access to the `self.widgets` object and several widget events which, together, constitute an API that you use to react to changes and access widgets at runtime.
 
 The following sections provide code examples. For a reference of the API, see the [service worker API reference](#service-worker-api-reference).
 
@@ -342,7 +342,7 @@ For brevity, the actual application code isn't shown in the above code snippet. 
 
 Note that the `action` property of the `widgetEvent` object passed to the event listener above matches the string defined in the `action.verb` field of the widget template.
 
-For more information about the `widgetclick` event and what information you can access from it, see [Service Worker API reference](#service-worker-api-reference), below.
+For more information about the `widgetclick` event and what information you can access from it, see [Service worker API reference](#service-worker-api-reference), below.
 
 
 <!-- ------------------------------ -->

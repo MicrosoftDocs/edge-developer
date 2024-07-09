@@ -561,7 +561,7 @@
                   href: devtools-guide-chromium/resources/index.md
                   displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
 
-                - name: Service Worker improvements  # added article
+                - name: Service worker improvements  # added article
                   href: devtools-guide-chromium/service-workers/index.md
                   displayName: Network tool, Application tool, Sources tool
 # Network conditions tool -----------------------------------------------------

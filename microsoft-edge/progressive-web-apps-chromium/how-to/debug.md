@@ -41,7 +41,7 @@ To test your changes, refresh the browser tab where the PWA is loaded by pressin
 Once you have a service worker which caches static files, pressing **F5** might not always reload your latest changes in the browser. To force the browser to reload your changes, use one of the following ways:
 
 * Open DevTools, right-click **Refresh** in the browser toolbar, and click **Empty cache and hard refresh**.
-* Open DevTools, open the **Application** Tool, click **Service Workers**, and then select the **Bypass for network** checkbox.
+* Open DevTools, open the **Application** Tool, click **Service workers**, and then select the **Bypass for network** checkbox.
 
 To test PWA features that are enabled by adding code in your web app manifest, you must install your PWA. If you then make further changes to your web app manifest, you must uninstall and reinstall the PWA. To learn how to uninstall your PWA, see [Managing PWAs](../ux.md#managing-pwas) in _Use Progressive Web Apps in Microsoft Edge_.
 
@@ -53,7 +53,7 @@ Your PWA service worker is responsible for making your app faster and more relia
 
 The service worker does this by running in parallel to your app and intercepting network requests. It has its own lifecycle that's independent from your app's lifecycle.
 
-To check if your service worker was installed correctly, and which state of its lifecycle it currently is in, use the **Service Workers** pane of the **Application** tool. To learn more, see [Service workers](../../devtools-guide-chromium/progressive-web-apps/index.md#service-workers) in _Debug Progressive Web Apps (PWAs)_.
+To check if your service worker was installed correctly, and which state of its lifecycle it currently is in, use the **Service workers** pane of the **Application** tool. To learn more, see [Service workers](../../devtools-guide-chromium/progressive-web-apps/index.md#service-workers) in _Debug Progressive Web Apps (PWAs)_.
 
 To debug the JavaScript code running in the service worker thread, by using breakpoints, switch to the service worker thread in the **Sources** tool. To learn more, see [Change the thread context](../../devtools-guide-chromium/javascript/reference.md#change-the-thread-context) in _JavaScript debugging features_.
 
