@@ -105,7 +105,7 @@ Source modules:
 
 The **Source modules** section includes the URLs of the JavaScript files that are involved in the stack trace, and a hash of the content of each file.  The hash is a 64-character string of hexadecimal characters that corresponds to the SHA-256 hash of the script being executed.  This is a byte-for-byte hash of the content for each JavaScript file.  The URLs and hashes make it possible for the **Crash analyzer** tool to later retrieve the source maps that were used to unminify the stack trace.
 
-To add the **Source modules** section to your error stack traces, use the [Edge DevTools Crash Analyzer Support](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support) library in your web app:
+To add the **Source modules** section to your error stack traces, use the [Edge DevTools Crash Analyzer Support](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support) library in your web app, as follows:
 
 1. Add the Edge DevTools Crash Analyzer Support library in your project by using npm:
 
@@ -245,15 +245,19 @@ Leave feedback in the [MicrosoftEdge / DevTools](https://github.com/microsoftedg
 <!-- ====================================================================== -->
 ## See also
 
-* [Map the processed code to your original source code, for debugging](../javascript/source-maps.md) - source maps.
+<!-- all these links are used in .md above: -->
+* [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md)
+* [Source maps in DevTools](../javascript/source-maps.md#source-maps-in-devtools) in _Map the processed code to your original source code, for debugging_.
+
+External links:
+* [DevTools Crash analyzer demo](https://microsoftedge.github.io/Demos/devtools-crash-analyzer/app/prod.html)
+* [MicrosoftEdge / DevTools](https://github.com/microsoftedge/devtools) - feedback repo.
+* [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) in Azure Monitor docs.
+* [Edge DevTools Crash Analyzer Support](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support) - npm package.
+
+<!--
+not used in .md above:
+What's New entries:
 * [Crash analyzer tool is available by default](../whats-new/2024/03/devtools-123.md#crash-analyzer-tool-is-available-by-default) in _What's New in DevTools (Microsoft Edge 123)_.
 * [Debug JavaScript error stack traces by using the Crash Analyzer tool](../whats-new/2023/05/devtools-113.md#debug-javascript-error-stack-traces-by-using-the-crash-analyzer-tool) in _What's New in DevTools (Microsoft Edge 113)_.
-* [Fix JavaScript errors that are reported in the Console](../console/console-debug-javascript.md)
-
-Demos:
-* [devtools-console demo page](https://microsoftedge.github.io/Demos/devtools-console/error.html)
-* [devtools-explain-error demo page](https://microsoftedge.github.io/Demos/devtools-explain-error/)
-
-External:
-* [throw - JavaScript | MDN Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)
-* [Crash Analyzer Support npm module](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support)
+-->
