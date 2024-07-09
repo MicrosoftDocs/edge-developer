@@ -261,7 +261,7 @@ See also [Analyze rendering performance with the Rendering tool](../../../evalua
 <!-- ====================================================================== -->
 ### Emulate inactive users
 
-The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool from the [Drawer](../../../customize/index.md#quick-view).
+The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool in the [Quick View](../../../customize/index.md#quick-view) panel at the bottom of DevTools.
 
 ![Emulate inactive users](./devtools-images/emulate-idle.png)
 

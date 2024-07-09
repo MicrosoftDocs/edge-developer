@@ -491,7 +491,7 @@ Learn how to customize DevTools to fit your needs.  Covers:
 * Dock or undock DevTools.
 * Open new tools.
 * Close tools that you don't need.
-* Move tools in the bottom drawer (now the **Quick View** panel).
+* Move tools in the bottom **Drawer** (now the **Quick View** panel).
 * Customize the text size.
 * Customize the theme.
 * Use the Command Menu keyboard shortcuts to quickly customize DevTools.

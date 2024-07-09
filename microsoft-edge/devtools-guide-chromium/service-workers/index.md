@@ -41,16 +41,20 @@ You can access the service worker debugging features in the **Network** tool in 
 *  Directly in the **Network** tool.
 *  Started in the **Application** tool.
 
-### Request routing
+
+<!-- ------------------------------ -->
+#### Request routing
 
 To make request routing easier to visualize, timelines now display the service worker start-up and the `respondWith` fetch events.  To debug and visualize a network request that passed through a service worker:
 
 1. Select the network request that went through a service worker.
 1. Open the **Timing** tool.
 
-### Fetch events
 
-To learn more about the `respondWith` fetch events, click the dropdown arrow to the left of the `respondWith`.  To find more details about the **Original Request** and **Response Received**, click the corresponding dropdown arrows.
+<!-- ------------------------------ -->
+#### Fetch events
+
+To learn more about the `respondWith` fetch events, click the dropdown arrow to the left of the `respondWith`.  To see more details about the **Original Request** and **Response Received**, click the corresponding dropdown arrows.
 
 
 <!-- ====================================================================== -->
@@ -58,13 +62,17 @@ To learn more about the `respondWith` fetch events, click the dropdown arrow to 
 
 ![Application view](./index-images/sw-application-timeline.png)
 
-### Service worker update timeline
+
+<!-- ------------------------------ -->
+#### Service worker update timeline
 
 The Microsoft Edge DevTools team added a timeline in the **Application** tool to reflect the update lifecycle of the service worker.  This timeline displays the installation and activation events.  Each of the events have a corresponding dropdown arrow to give you more details.
 
-### Request routing and fetch events
 
-You can now access the service worker timelines through the **Network** tool in the console drawer.  This feature benefits performance, minimizes UI duplication, and creates a more comprehensive debugging experience.
+<!-- ------------------------------ -->
+#### Request routing and fetch events
+
+You can now access the service worker timelines through the **Network** tool.  This feature benefits performance, minimizes UI duplication, and creates a more comprehensive debugging experience.
 
 1. Open the service worker that you're debugging.
 
@@ -86,6 +94,8 @@ To find more stack information, set a break point in the fetch handler.  The det
 
 When the debugger pauses inside a fetch handler, a combined stack information is displayed in the panel to the right.  After that, you can move around in the stack frames.
 
-### Future work
+
+<!-- ------------------------------ -->
+#### Future work
 
 The Microsoft Edge DevTools team plans to further develop the cache detail, and are investigating more ways to improve the service worker debugging experience for [Progressive Web Application (PWA)](https://developer.mozilla.org/docs/Web/Progressive_web_apps) developers.
