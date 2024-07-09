@@ -31,7 +31,7 @@ Displaying content where the title bar normally is can help PWAs feel more nativ
 <!-- ====================================================================== -->
 ## Enable the Window Controls Overlay in your app
 
-First, enable the Window Controls Overlay feature in your app's [Web App Manifest file](web-app-manifests.md).  To do this, in the manifest file, set the `display_override` property:
+First, enable the Window Controls Overlay feature in your app's web app manifest file.  To do this, in the manifest file, set the `display_override` property:
 
 ```json
 {
@@ -41,6 +41,7 @@ First, enable the Window Controls Overlay feature in your app's [Web App Manifes
 
 See also:
 * [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN.
+* [Use a web app manifest to integrate a Progressive Web App into the operating system](./web-app-manifests.md)
 
 
 <!-- ====================================================================== -->

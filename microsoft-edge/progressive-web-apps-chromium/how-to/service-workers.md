@@ -1,30 +1,30 @@
 ---
-title: Use service workers to manage network requests
-description: service workers are Web Workers that help improve performance, respond to varying network conditions, and increase connectivity with your web application.
+title: Use a service worker to manage network requests
+description: A service worker is a web worker that helps improve performance, responds to varying network conditions, and increases connectivity with your web application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 11/28/2022
+ms.date: 07/09/2024
 ---
-# Use service workers to manage network requests
+# Use a service worker to manage network requests
 
-A _service worker_ is a special type of [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that's able to intercept, modify, and respond to network requests by using the `Fetch` API.  Service workers can access the `Cache` API, and asynchronous client-side data stores, such as `IndexedDB`, to store resources.
+A _service worker_ is a special type of [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that's able to intercept, modify, and respond to network requests by using the `Fetch` API.  To store resources, a service worker can access the `Cache` API, and can access asynchronous client-side data stores, such as `IndexedDB`.
 
-Service workers can make your PWA faster by caching resources locally, and they can also make your PWA more reliable by making it network-independent.
+A service worker can make your PWA faster by caching resources locally, and can also make your PWA more reliable by making it work even with an intermittent network connection.
 
 If your PWA has a service worker, the service worker is installed the first time the user accesses your PWA. The service worker then runs in parallel with your app, and can continue doing work even when your app isn't running.
 
-Service workers are responsible for intercepting, modifying, and responding to network requests. They can be alerted when the app tries to load a resource from the server, or sends a request to get data from the server. When this happens, a service worker can decide to let the request go to the server, or intercept the request and return a response from the cache instead.
+A service worker is responsible for intercepting, modifying, and responding to network requests.  The service worker can be alerted when the app tries to load a resource from the server, or when the app sends a request to get data from the server.  When this happens, the service worker can decide to let the request go to the server, or intercept the request and return a response from the cache instead.
 
-![High-level architecture diagram showing that the service worker is in between the app and the network and cache storage](./service-workers-images/sw-architecture.png)
+![Diagram showing the service worker between the app and the network and cache storage](./service-workers-images/sw-architecture.png)
 
 
 <!-- ====================================================================== -->
 ## Register a service worker
 
-Similar to other web workers, service workers must exist in a separate file. You reference this file when registering the service worker, as shown in the following code:
+Similar to other web workers, a service worker must exist in a separate file.  The file contains a single service worker.  You reference this file when registering the service worker, as shown in the following code:
 
 ```javascript
 if ("serviceWorker" in navigator) {
@@ -32,7 +32,7 @@ if ("serviceWorker" in navigator) {
 }
 ```
 
-The web browser that's running your PWA can provide different levels of support for service workers. Also, the context in which your PWA is running might not be secure. Therefore, it's a good practice to test for the existence of the `navigator.serviceWorker` object before running any service worker-related code. In the above code, a service worker is registered by using the `serviceworker.js` file that's located at the root of the site.
+The web browser that's running your PWA can provide different levels of support for your service worker.  Also, the context in which your PWA is running might not be secure. Therefore, it's a good practice to test for the existence of the `navigator.serviceWorker` object before running any service worker-related code.  In the above code, a service worker is registered by using the `serviceworker.js` file that's located at the root of the site.
 
 Make sure to place the service worker file in the highest-level directory that you want the service worker to manage.  Such a directory is called the _scope_ of the service worker.  In the previous code, the file is stored in the root directory of your app, and the service worker manages all pages that are under the app's domain name.
 
@@ -66,7 +66,7 @@ Here are a few examples of what you can do within the `fetch` handler:
 <!-- ====================================================================== -->
 ## The service worker lifecycle
 
-The lifecycle of a service worker consists of multiple steps, with each step triggering an event. You can add listeners to these events to run code to perform an action. The following list presents a high-level view of the lifecycle and related events of service workers:
+The lifecycle of a service worker consists of multiple steps, with each step triggering an event. You can add listeners to these events to run code to perform an action. The following list presents a high-level view of the lifecycle and related events of a service worker:
 
 1.  Register the service worker.
 
@@ -217,7 +217,7 @@ In practice, this means that there can be two service workers running at the sam
 
 You can forcefully activate the new service worker as soon as it's installed, by using `self.skipWaiting()` in your service worker's `install` event handler.
 
-To learn more about how service workers update, see [Updating the service worker](https://web.dev/service-worker-lifecycle#updates) on web.dev.
+To learn more about how a service worker gets updated, see [Updating the service worker](https://web.dev/service-worker-lifecycle#updates) on web.dev.
 
 
 <!-- ------------------------------ -->
@@ -307,7 +307,7 @@ To learn more, see [Navigator.onLine](https://developer.mozilla.org/docs/Web/API
 <!-- ====================================================================== -->
 ## Other capabilities
 
-A service worker's main responsibility is to make your app faster and more reliable in the event of an unstable network connection. Service workers mostly use the `fetch` event and `Cache` API to do this, but they can use other APIs for advanced scenarios, such as:
+A service worker's main responsibility is to make your app faster and more reliable in the event of an unstable network connection.  A service worker typically uses the `fetch` event and `Cache` API to do this, but a service worker can use other APIs for specialized scenarios, such as:
 
 * Background synchronization of data.
 * Periodic synchronization of data.
@@ -364,6 +364,6 @@ To learn more, see [Debug your service worker](debug.md#debug-your-service-worke
 <!-- ====================================================================== -->
 ## See also
 
-*   [Making PWAs work offline with service workers](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers)
+*   [Making PWAs work offline with Service workers](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers)
 *   [How to make PWAs re-engageable using Notifications and Push](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push)
 *   [Workbox](https://developer.chrome.com/docs/workbox/)

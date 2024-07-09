@@ -100,7 +100,7 @@ See [Handle files in Progressive Web Apps](./handle-files.md).
 
 Register your app is a link or protocol handler to automatically launch your app when certain links are used in other applications.
 
-See [Handle links to your Progressive Web Apps](./handle-urls.md) and [Handle protocols in Progressive Web Apps](./handle-protocols.md).
+See [Handle links to your Progressive Web App](./handle-urls.md) and [Handle protocols in Progressive Web Apps](./handle-protocols.md).
 
 #### Widgets
 
@@ -125,7 +125,7 @@ You can provide a good offline experience in several steps:
 1. Gracefully handle the tasks of your app that can't be used with no internet access.
 1. Implement advanced scenarios such as letting users download data for offline viewing.
 
-To learn more, see [Use Service Workers to manage network requests](./service-workers.md).
+To learn more, see [Use a service worker to manage network requests](./service-workers.md).
 
 
 <!-- ====================================================================== -->

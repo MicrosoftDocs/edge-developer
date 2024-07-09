@@ -123,7 +123,7 @@ The app runs in the browser for now, and can't be installed. To make the app ins
 <!-- ====================================================================== -->
 ## Step 3 - Create a web app manifest
 
-A [Web App Manifest](web-app-manifests.md) is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.
+A _web app manifest_ is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.  For details, see [Use a web app manifest to integrate a Progressive Web App into the operating system](./web-app-manifests.md).
 
 To add an app manifest to your app:
 
@@ -319,10 +319,7 @@ Service workers are specialized [Web Workers](https://developer.mozilla.org/docs
 *  Advanced caching.
 *  Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
 
-A PWA doesn't need to have a service worker for Microsoft Edge to be able to install the app.  However, we recommend adding a service worker to your PWA:
-* To make it more reliable.
-* To make it faster.
-* To allow it to work offline.
+A PWA doesn't need to have a service worker for Microsoft Edge to be able to install the app.  However, we recommend adding a service worker to your PWA to make it faster, and to make your PWA more reliable, such as when your device has an intermittent network connection or is offline.
 
 A service worker is defined in a JavaScript file that's loaded by your app. To add a service worker to your project:
 
