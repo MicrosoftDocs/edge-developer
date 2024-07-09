@@ -24,7 +24,7 @@ To quickly open the **Search** tool:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, press **Esc** to open the Drawer, and then on the Drawer toolbar, select the **Search** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./search-tool-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./search-tool-images/more-tools-icon-light-theme.png)) button.
+1. Press **Esc** to open the **Quick View** panel at the bottom of DevTools, and then on the **Quick View** toolbar, select the **Search** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./search-tool-images/more-tools-icon-light-theme.png)) button.
 
    Or, press **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS).
 

@@ -306,9 +306,9 @@ To find and replace text, select the **Replace** (**A-\>B**) button to the left 
 
 To review the changes you made to a file, right-click in the **Editor** pane and then select **Local Modifications**.
 
-The **Drawer** opens at the bottom of DevTools, showing your changes within the **Changes** tab.
+The **Quick View** panel opens at the bottom of DevTools, showing your changes within the **Changes** tab.
 
-![Showing Local Modifications, in the Changes tab of the Drawer](./index-images/local-modifications.png) -->
+![Showing Local Modifications, in the Changes tab in the Quick View panel](./index-images/local-modifications.png) -->
 
 
 <!-- Check: Changes to JS, even inside functions, don't take effect.
@@ -427,7 +427,7 @@ For more information, see [Run commands with the Microsoft Edge DevTools Command
 <!-- ------------------------------ -->
 #### Displaying source files when using a different tool
 
-The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  You use the **Quick source** tool in the [Drawer](../customize/index.md#quick-view), which appears at the bottom of DevTools.
+The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  You use the **Quick source** tool in the [Quick View](../customize/index.md#quick-view) panel at the bottom of DevTools.
 
 To use the **Quick source** tool:
 
@@ -437,7 +437,7 @@ To use the **Quick source** tool:
 
 1. Type **quick**, and then select **Show Quick source**.
 
-    At the bottom of the DevTools window, the Drawer appears, with the **Quick source** tool selected.  The **Quick source** tool contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
+   The **Quick View** panel opens at the bottom of DevTools, with the **Quick source** tool selected.  The **Quick source** tool contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
 
 1. Press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the **Open File** dialog.
 
@@ -499,7 +499,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
    At this point, you could add expressions in the **Watch** pane.  These expressions are the same expressions that you would write within a `console.log` statement to debug your code.
 
-   To run JavaScript commands to manipulate data in the current context, you use the **Console**.  If you want to open the console in the Drawer at the bottom of DevTools, press **Esc**.
+   To run JavaScript commands to manipulate data in the current context, you use the **Console**.  If you want to open the Console in the **Quick View** panel at the bottom of DevTools, press **Esc**.
 
 1. Step through the code by using the controls at the top of the **Debugger** pane, such as **Step** (**F9**).
 

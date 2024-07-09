@@ -90,7 +90,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--
 > [!Tip]
-> Keep the **Console** drawer open while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
+> Keep the **Console** open in the **Quick View** panel at the bottom of DevTools while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
 
 <!--The **Add to Homescreen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you can successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 

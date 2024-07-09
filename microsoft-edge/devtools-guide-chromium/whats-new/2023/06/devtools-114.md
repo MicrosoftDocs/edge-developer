@@ -60,7 +60,7 @@ In the **Styles** pane in the **Elements** tool, a wavy underline and tooltip ha
 
 ![CSS Layout issue in the Styles pane](./devtools-114-images/css-reflow-issue-styles-pane.png)
 
-In the **Issues** tool, in the **Performance** category, a new kind of issue is reported, such as "Changes to this property will trigger: 'Layout', which can impact performance when used inside @Keyframes."  When you're using the **Styles** pane, to open the issue in the **Issues** tool, **Shift**+click the wavy underline on such a property, or right-click the wavy underline and then select **View issues**.  The **Issues** tool opens in the Drawer at the bottom of DevTools:
+In the **Issues** tool, in the **Performance** category, a new kind of issue is reported, such as "Changes to this property will trigger: 'Layout', which can impact performance when used inside @Keyframes."  When you're using the **Styles** pane, to open the issue in the **Issues** tool, **Shift**+click the wavy underline on such a property, or right-click the wavy underline and then select **View issues**.  The **Issues** tool opens in the **Drawer** (now **Quick View** panel) at the bottom of DevTools:
 
 ![CSS Layout issue in the Issues tool](./devtools-114-images/css-reflow-issue-issues-tool.png)
 

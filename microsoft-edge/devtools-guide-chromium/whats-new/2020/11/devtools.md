@@ -141,13 +141,13 @@ To display additional context when debugging a service worker:
 
    ![Opening the Network tool from the Service Workers pane](./devtools-images/service-worker-application-network-requests.png)
 
-   The **Network** tool opens in the **Drawer** and displays all service worker-related network requests.  The network requests are filtered using `is:service-worker-intercepted`:
+   The **Network** tool opens in the **Quick View** panel at the bottom of DevTools, and displays all service worker-related network requests.  The network requests are filtered using `is:service-worker-intercepted`:
 
-   ![The Network tool in the Drawer](./devtools-images/service-worker-application-network-drawer.png)
+   ![The Network tool in Quick View](./devtools-images/service-worker-application-network-quick-view.png)
 
-1. To move the **Network** tool to the top panel, close the **Drawer**:
+1. To move the **Network** tool to the top panel, close the **Quick View** panel:
 
-   ![Close the Drawer to move the Network tool to the main toolbar](./devtools-images/service-worker-application-network-return.png)
+   ![Close Quick View to move the Network tool to the main toolbar](./devtools-images/service-worker-application-network-return.png)
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)

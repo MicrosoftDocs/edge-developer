@@ -47,7 +47,7 @@ See also:
 
 Since Microsoft Edge version 87, you've been able to move any tool between the top and bottom panels, including the Console tool.  However, we heard from developers that moving the Console tool repeatedly was cumbersome.  As of Microsoft Edge version 96, the default experience for the Console tool has been restored, allowing you to quickly switch between a full-screen view of the Console (in the top panel) and a split-screen view (with the Console displayed in the bottom panel), without moving the Console tool.
 
-The **Console** can be opened in the bottom panel (the **Drawer**) while another tool is open:
+The **Console** can be opened in the **Drawer** (now **Quick View**) at the bottom of DevTools, alongside another tool:
 
 ![When a tool other than the Console is selected in the main toolbar, the Drawer opens and shows the Console](./devtools-images/console-displayed-when-elements-tab-selected.png)
 
@@ -59,7 +59,7 @@ If you want to only allow the Console tool to open in a single place, you can co
 
 1. In the main toolbar or the **Drawer** toolbar, right-click the **Console** tab, and then select **Configure console**.  The **Settings** > **Preferences** page is displayed.
 
-1. In the **Console** section, clear the checkbox **Show Console tab in main panel and drawer**, then click **Close** (**x**).
+1. In the **Console** section, clear the checkbox **Show Console tab in main panel and drawer**, and then click **Close** (**x**).
 
 See also:
 * [Activity Bar tools vs. Quick View tools](../../../about-tools.md#activity-bar-tools-vs-quick-view-tools) in _About the list of tools_
@@ -109,7 +109,7 @@ Selecting a file with the warning icon opens the file in the Sources tool with a
 
 ![The Sources tool displaying an issue that reads 'DevTools failed to load source map'](./devtools-images/source-map-not-found-buttons.png)
 
-From the infobar, you can learn more about the issue by selecting the **Open in Issues** button.  The **Issues** tool then opens in the **Drawer** and provides information about how to resolve the issue and get your sourcemap loaded correctly in DevTools:
+From the infobar, you can learn more about the issue by selecting the **Open in Issues** button.  The **Issues** tool then opens in the **Drawer** (now **Quick View** panel) at the bottom of DevTools, and provides information about how to resolve the issue and get your sourcemap loaded correctly in DevTools:
 
 ![The Issues tool in the Drawer, displaying the issue as 'Source map not found', along with information on how to resolve this issue](./devtools-images/source-map-not-found.png)
 
