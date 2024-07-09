@@ -52,7 +52,7 @@ There are two steps to analyze minified production stack traces in the **Crash a
 
 1. First, you collect specially formatted stack traces from your web app in production.
 
-   There are many ways to collect stack traces from the browsers your users are using. In [Collect stack traces in production](#collect-stack-traces-in-production), below, we provide examples and recommendations. We also explain how to format the stack traces so that they can be analyzed in the **Crash analyzer** tool.
+   There are many ways to collect stack traces from the browsers your users are using.  The section [Collect stack traces in production](#collect-stack-traces-in-production), below, provides examples and recommendations.  It also explains how to format the stack traces so that they can be analyzed in the **Crash analyzer** tool.
 
 1. Next, you analyze the stack traces in the **Crash analyzer** tool.
 
@@ -103,7 +103,7 @@ Source modules:
     https://microsoftedge.github.io/Demos/devtools-crash-analyzer/app/prod.bundle.js 8b544e37b35d920a39d0e10f70fddc29b25d0db362741f3071eff86cef8613e9
 ```
 
-The **Source modules** section includes the URLs of the JavaScript files that are involved in the stack trace, and a hash of the content of each file.  The hash is a 64-character string of hexadecimal characters corresponding to the SHA-256 hash of the script being executed.  This is a byte-for-byte hash of the content for each JavaScript file.  The URLs and hashes make it possible for the **Crash analyzer** tool to later retrieve the source maps that were used to unminify the stack trace.
+The **Source modules** section includes the URLs of the JavaScript files that are involved in the stack trace, and a hash of the content of each file.  The hash is a 64-character string of hexadecimal characters that corresponds to the SHA-256 hash of the script being executed.  This is a byte-for-byte hash of the content for each JavaScript file.  The URLs and hashes make it possible for the **Crash analyzer** tool to later retrieve the source maps that were used to unminify the stack trace.
 
 To add the **Source modules** section to your error stack traces, use the [Edge DevTools Crash Analyzer Support](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support) library in your web app:
 
@@ -135,9 +135,9 @@ The **Crash analyzer** tool uses the **Source module** information that's in the
 
 The **Crash analyzer** tool works best if your source maps are securely stored using Azure Artifacts Symbol Server.  This is because DevTools can retrieve source maps from Azure Artifacts Symbol Server on demand when analyzing your error.  See [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md).
 
-If you're not using Azure Artifacts Symbol Server, you can still use the **Crash analyzer** tool by making sure that the source maps that correspond to the stack trace are accessible to DevTools.  For example, if you've loaded source maps before by using the `//# sourceMappingURL=` comment, DevTools caches them for later reuse. To learn more, see [Source maps in DevTools](../javascript/source-maps.md#source-maps-in-devtools) in _Map the processed code to your original source code, for debugging_.
+If you're not using Azure Artifacts Symbol Server, you can still use the **Crash analyzer** tool, by making sure that the source maps that correspond to the stack trace are accessible to DevTools.  For example, if you've loaded source maps before by using the `//# sourceMappingURL=` comment, DevTools caches the source maps for later reuse.  To learn more, see [Source maps in DevTools](../javascript/source-maps.md#source-maps-in-devtools) in _Map the processed code to your original source code, for debugging_.
 
-DevTools doesn't cache source maps when the domain name is localhost. This means that if you're not using Azure Artifacts Symbol Server, the **Crash analyzer** tool will only work for stack traces that are collected from production environments, not from local development environments that use the `localhost` domain.
+DevTools doesn't cache source maps when the domain name is `localhost`.  This means that if you're not using Azure Artifacts Symbol Server, the **Crash analyzer** tool will only work for stack traces that are collected from production environments, not from local development environments that use the `localhost` domain.
 
 
 <!-- ------------------------------ -->
@@ -248,8 +248,12 @@ Leave feedback in the [MicrosoftEdge / DevTools](https://github.com/microsoftedg
 * [Map the processed code to your original source code, for debugging](../javascript/source-maps.md) - source maps.
 * [Crash analyzer tool is available by default](../whats-new/2024/03/devtools-123.md#crash-analyzer-tool-is-available-by-default) in _What's New in DevTools (Microsoft Edge 123)_.
 * [Debug JavaScript error stack traces by using the Crash Analyzer tool](../whats-new/2023/05/devtools-113.md#debug-javascript-error-stack-traces-by-using-the-crash-analyzer-tool) in _What's New in DevTools (Microsoft Edge 113)_.
-* [throw - JavaScript | MDN Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)
-* [Crash Analyzer Support npm module](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support)
+* [Fix JavaScript errors that are reported in the Console](../console/console-debug-javascript.md)
+
+Demos:
 * [devtools-console demo page](https://microsoftedge.github.io/Demos/devtools-console/error.html)
 * [devtools-explain-error demo page](https://microsoftedge.github.io/Demos/devtools-explain-error/)
-* [Fix JavaScript errors that are reported in the Console](../console/console-debug-javascript.md)
+
+External:
+* [throw - JavaScript | MDN Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)
+* [Crash Analyzer Support npm module](https://www.npmjs.com/package/@microsoft/edge-devtools-crash-analyzer-support)
