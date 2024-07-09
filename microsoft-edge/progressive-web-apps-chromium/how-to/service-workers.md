@@ -56,7 +56,7 @@ Within the `fetch` handler, you can control whether a request goes to the networ
 
 Here are a few examples of what you can do within the `fetch` handler:
 
-* If available, return a response from the cache; otherwise, fall back to requesting the resource over the network.
+* If available, return a response from the cache; otherwise, request the resource over the network.
 * Fetch a resource from the network, cache a copy, and return the response.
 * Allow users to specify a preference to save data.
 * Supply a placeholder image for certain image requests.
