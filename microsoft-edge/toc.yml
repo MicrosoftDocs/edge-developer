@@ -1023,14 +1023,6 @@
             - name: Microsoft Edge Add-ons API 101
               href: extensions-chromium/developer-guide/apis-intro.md
 
-            - name: REST API endpoints
-              items:
-                - name: Using the Microsoft Edge Add-ons REST API
-                  href: extensions-chromium/publish/api/using-addons-api.md
-
-                - name: REST API Reference for Microsoft Edge Add-ons
-                  href: extensions-chromium/publish/api/addons-api-reference.md
-
             - name: JavaScript APIs
               items:
                 - name: Supported APIs for Microsoft Edge extensions
@@ -1038,6 +1030,14 @@
 
                 - name: Declare API permissions in extension manifests
                   href: extensions-chromium/developer-guide/declare-permissions.md
+
+            - name: REST API for publishing
+              items:
+                - name: Using the Microsoft Edge Add-ons REST API
+                  href: extensions-chromium/publish/api/using-addons-api.md
+
+                - name: REST API Reference for Microsoft Edge Add-ons
+                  href: extensions-chromium/publish/api/addons-api-reference.md
 
 # -------------------------------------
         - name: Publish an extension
