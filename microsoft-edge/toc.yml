@@ -1018,7 +1018,7 @@
 #             href: 
 
 # -------------------------------------
-        - name: REST API for extensions
+        - name: Use extension APIs
           items:
 #           - name: All about extension APIs
 #             href: 
