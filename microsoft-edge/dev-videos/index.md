@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 06/19/2024
+ms.date: 06/20/2024
 ---
 # Videos about web development with Microsoft Edge
 
@@ -29,13 +29,6 @@ The Microsoft Edge channel includes the following playlists:
 * [Developer](https://www.youtube.com/playlist?list=PL4z1-7pjJU6zvxxsa2GzzuaXf1neBzrmI)
 * [What's New in DevTools](https://www.youtube.com/playlist?list=PL4z1-7pjJU6wCla3QZuWuWjsCB2hCnTvr)
 * [Extensions](https://www.youtube.com/playlist?list=PL4z1-7pjJU6ykO2iptfxT7T68W5WEK4ff)
-
-
-<!-- ====================================================================== -->
-## What's New in DevTools
-
-See also:
-* [What's New in Microsoft Edge DevTools](../devtools-guide-chromium/whats-new/whats-new.md)
 
 
 <!-- ====================================================================== 
