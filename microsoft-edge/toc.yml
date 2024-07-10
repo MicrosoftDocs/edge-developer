@@ -1031,7 +1031,7 @@
                 - name: REST API Reference for Microsoft Edge Add-ons
                   href: extensions-chromium/publish/api/addons-api-reference.md
 
-            - name: Methods
+            - name: JavaScript APIs
               items:
                 - name: Supported APIs for Microsoft Edge extensions
                   href: extensions-chromium/developer-guide/api-support.md
