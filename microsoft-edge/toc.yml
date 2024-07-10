@@ -1020,8 +1020,8 @@
 # -------------------------------------
         - name: APIs for extensions
           items:
-#           - name: Microsoft Edge Add-ons API 101
-#             href: 
+            - name: Microsoft Edge Add-ons API 101
+              href: extensions-chromium/developer-guide/apis-intro.md
 
             - name: REST API endpoints
               items:
