@@ -1018,25 +1018,26 @@
 #             href: 
 
 # -------------------------------------
-        - name: Use extension APIs
+        - name: APIs for extensions
           items:
-#           - name: All about extension APIs
+#           - name: Microsoft Edge Add-ons API 101
 #             href: 
 
-#           - name: Microsoft Edge Add-ons API 101  # brief about all the APIs & be the master page for APIs
-#             href: 
+            - name: REST API endpoints
+              items:
+                - name: Using the Microsoft Edge Add-ons REST API
+                  href: extensions-chromium/publish/api/using-addons-api.md
 
-            - name: Using the Microsoft Edge Add-ons REST API
-              href: extensions-chromium/publish/api/using-addons-api.md
+                - name: REST API Reference for Microsoft Edge Add-ons
+                  href: extensions-chromium/publish/api/addons-api-reference.md
 
-            - name: REST API Reference for Microsoft Edge Add-ons
-              href: extensions-chromium/publish/api/addons-api-reference.md
+            - name: Methods
+              items:
+                - name: Supported APIs for Microsoft Edge extensions
+                  href: extensions-chromium/developer-guide/api-support.md
 
-            - name: Supported APIs for Microsoft Edge extensions
-              href: extensions-chromium/developer-guide/api-support.md
-
-            - name: Declare API permissions in extension manifests
-              href: extensions-chromium/developer-guide/declare-permissions.md  # moved from /enterprise/
+                - name: Declare API permissions in extension manifests
+                  href: extensions-chromium/developer-guide/declare-permissions.md
 
 # -------------------------------------
         - name: Publish an extension
