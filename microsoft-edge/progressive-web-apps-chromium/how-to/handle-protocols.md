@@ -38,7 +38,7 @@ To use Protocol Handling, declare which protocols your app handles. This is done
 In the above example, the app is registered to handle the `mailto` protocol.  When the operating system launches the app in response to the `mailto` protocol, the app navigates to the `/newEmail` URL, replacing the `%s` placeholder with the full URL that's being handled.
 
 See also:
-* [Handle specific protocol schemes](./web-app-manifests.md#handle-specific-protocol-schemes) in _Use a web app manifest to integrate a Progressive Web App into the operating system_.
+* [Handle specific protocol schemes](./web-app-manifests.md#handle-specific-protocol-schemes) in _Use a web app manifest to integrate a PWA into the OS_.
 
 
 <!-- ====================================================================== -->

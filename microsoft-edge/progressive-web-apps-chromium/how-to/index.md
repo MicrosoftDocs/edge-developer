@@ -123,7 +123,7 @@ The app runs in the browser for now, and can't be installed. To make the app ins
 <!-- ====================================================================== -->
 ## Step 3 - Create a web app manifest
 
-A _web app manifest_ is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.  For details, see [Use a web app manifest to integrate a Progressive Web App into the operating system](./web-app-manifests.md).
+A _web app manifest_ is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.  For details, see [Use a web app manifest to integrate a PWA into the OS](./web-app-manifests.md).
 
 To add an app manifest to your app:
 

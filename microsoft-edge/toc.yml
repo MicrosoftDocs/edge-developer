@@ -1128,7 +1128,6 @@
 
             - name: Use a web app manifest to integrate a PWA into the OS
               href: progressive-web-apps-chromium/how-to/web-app-manifests.md
-              displayName: Use a web app manifest to integrate a Progressive Web App into the operating system  # top-of-page title
 
             - name: Use a service worker to manage network requests
               href: progressive-web-apps-chromium/how-to/service-workers.md
