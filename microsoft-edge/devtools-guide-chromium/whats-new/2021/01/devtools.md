@@ -456,7 +456,7 @@ In the **Application** tool, the **Frames** page has the following updates.
 
 ###### Service workers information in Frame details
 
-The **Application** tool now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers**<!-- keeping W, to match png --> and then click a service worker.
+The **Application** tool now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers**<!-- todo: when the below .png is updated to show "Service workers", change to "w" --> and then click a service worker.
 
 ![Service workers information in the Frames details](./devtools-images/application-frames-service-workers-details.png)
 

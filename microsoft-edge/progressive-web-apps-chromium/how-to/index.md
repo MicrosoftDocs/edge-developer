@@ -313,9 +313,9 @@ Your app does something useful now, and it can be installed as a standalone app 
 
 Service workers are a key technology that help make PWAs fast and independent of network conditions.
 
-A service workers is a specialized [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that can intercept network requests from your PWA, and enables scenarios that were previously limited to native apps, including:
+A service worker is a specialized [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that can intercept network requests from your PWA, and enables scenarios such as:
 
-*  Offline support.
+*  Offline support, including intermittent connections.
 *  Advanced caching.
 *  Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
 
