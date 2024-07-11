@@ -22,6 +22,13 @@ The **JSON viewer** improves readability of JSON data in several ways:
 *  The JSON viewer matches your operating system's dark or light theme.
 
 
+<!-- ------------------------------ -->
+#### Video: The JSON viewer
+
+[![Thumbnail image for video "The JSON viewer"](./json-viewer-images/json-viewer.png)](https://www.youtube.com/watch?v=DO7V6lw1SWA)
+
+
+<!-- ------------------------------ -->
 #### Supported scenarios
 
 The **JSON viewer** is not supported in windows that are opened by using the `window.open` JavaScript method. In windows opened with `window.open`, JSON data is displayed as a single line of text, without formatting or syntax highlighting.

@@ -36,13 +36,13 @@ In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools 
 <!-- Title: Add tools quickly with the new More Tools button -->
 <!-- Subtitle: Learn about a new convenient way to open tools in Microsoft Edge DevTools. -->
 
-There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu.  The **More Tools** menu appears on the toolbar in the main panel and on the toolbar of the drawer. Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
+There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu.  The **More Tools** menu appears on the toolbar in the main panel and on the toolbar of the **Drawer** (now **Quick View** panel). Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
 
 To reorder the tabs on either toolbar, select and drag the tabs.
 
 The **More Tools** menu was available as an experiment in Microsoft Edge version 89, and is now always present.
 
-![The More Tools button on the upper toolbar and drawer toolbar](./devtools-images/more-tools-button.png)
+![The More Tools button on the upper toolbar and Drawer toolbar](./devtools-images/more-tools-button.png)
 
 ![The More Tools menu](./devtools-images/more-tools-menu.png)
 
@@ -56,7 +56,7 @@ See also:
 <!-- Title: Improvements to tab interactions -->
 <!-- Subtitle: Interactions related to hovering, selecting, and closing tools are more predictable. -->
 
-Tabs for each tool have been reformatted to reduce the chance of accidentally closing a tool.  On each tab in the main toolbar and in the toolbar of the drawer, we added:
+Tabs for each tool have been reformatted to reduce the chance of accidentally closing a tool.  On each tab in the main toolbar and in the toolbar of the **Drawer** (now **Quick View** panel), the following have been added:
 *  Spacing around the tab.
 *  Spacing around the close (`x`) button in the tab.
 *  A background color when hovering over the tab.
@@ -77,7 +77,7 @@ These improvements are especially relevant for users of localized DevTools, in w
 
 ![Localized DevTools with narrow tabs](./devtools-images/hovering-reduced-chance-of-closing-tab.png)
 
-We also made it easier to re-add a tool that you closed by adding a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) to the main toolbar and drawer toolbar.
+It's now easier to re-add a tool that you closed: a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) has been added to the main toolbar and the **Drawer** (now **Quick View**) toolbar.
 
 See also:
 * [About the list of tools](../../../about-tools.md#the-more-tools-menus)

@@ -18,6 +18,12 @@ ms.date: 05/24/2022
 > * [Microsoft Edge | Build 2022: Enriching desktop experiences with the power and reach of the web](https://www.youtube.com/watch?v=ahO5nePl4BQ)
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 102
+
+[![Thumbnail image for video "What's New in DevTools 102"](./devtools-102-images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
+
+
 <!-- ====================================================================== -->
 ## DevTools extension: New browser with device and mode emulation and sourcemap support
 

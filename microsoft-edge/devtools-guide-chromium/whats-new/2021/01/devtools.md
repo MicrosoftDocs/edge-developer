@@ -68,7 +68,7 @@ To turn on this experiment, see [Settings](../../../customize/index.md#settings)
 For the history of this feature in the Chromium open-source project, see Issue [1093229](https://crbug.com/1093229).
 
 See also:
-* [Enable the Font Editor tool within the Styles pane](../../../experimental-features/index.md#enable-the-font-editor-tool-within-the-styles-pane) in _Experimental features in Microsoft Edge DevTools_.
+* [Enable new font editor within the Styles Pane](../../../experimental-features/index.md#enable-new-font-editor-within-the-styles-pane) in _Experimental features in Microsoft Edge DevTools_.
 * [Edit CSS font styles and settings in the Styles pane in DevTools](../../../inspect-styles/edit-fonts.md).
 
 
@@ -454,11 +454,11 @@ See also:
 In the **Application** tool, the **Frames** page has the following updates.
 
 
-###### Service Workers information in Frame details
+###### Service workers information in Frame details
 
-The **Application** tool now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers** and then click a service worker.
+The **Application** tool now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers**<!-- todo: when the below .png is updated to show "Service workers", change to "w" --> and then click a service worker.
 
-![Service Workers information in the Frames details](./devtools-images/application-frames-service-workers-details.png)
+![Service workers information in the Frames details](./devtools-images/application-frames-service-workers-details.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1122507](https://crbug.com/1122507).
 

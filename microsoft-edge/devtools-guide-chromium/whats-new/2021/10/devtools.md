@@ -13,6 +13,12 @@ ms.date: 10/20/2021
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 95
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 95"](./devtools-images/devtools-whatsnew-95.png)](https://www.youtube.com/watch?v=JsnW0CU1l80)
+
+
 <!-- ====================================================================== -->
 ## Sync live changes from the Styles tool in the Visual Studio Code extension
 

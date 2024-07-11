@@ -35,6 +35,16 @@ With DevTools, you can do the following:
 <!-- /keep sync'd -->
 
 
+<!-- ------------------------------ -->
+#### Video: Understand the DevTools user interface
+
+[![Thumbnail image for video "Understand the DevTools user interface"](./overview-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
+
+This slightly older, September 2022 video shows the legacy UI for DevTools:
+* Instead of the **Activity Bar**, the video shows the legacy main toolbar.
+* Instead of the **Quick View** panel (at bottom of DevTools), the video shows the **Drawer**.
+
+
 <!-- ====================================================================== -->
 ## Open DevTools
 <!-- keep sync'd:

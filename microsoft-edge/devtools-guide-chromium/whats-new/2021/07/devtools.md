@@ -13,6 +13,12 @@ ms.date: 07/30/2021
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 93
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 93"](./devtools-images/devtools-whatsnew-93.png)](https://www.youtube.com/watch?v=rDB_a4bUeeA)
+
+
 <!-- ====================================================================== -->
 ## Apply themes from Visual Studio Code to DevTools
 
