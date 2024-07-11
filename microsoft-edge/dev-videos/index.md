@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 06/19/2024
+ms.date: 06/20/2024
 ---
 # Videos about web development with Microsoft Edge
 
@@ -29,13 +29,6 @@ The Microsoft Edge channel includes the following playlists:
 * [Developer](https://www.youtube.com/playlist?list=PL4z1-7pjJU6zvxxsa2GzzuaXf1neBzrmI)
 * [What's New in DevTools](https://www.youtube.com/playlist?list=PL4z1-7pjJU6wCla3QZuWuWjsCB2hCnTvr)
 * [Extensions](https://www.youtube.com/playlist?list=PL4z1-7pjJU6ykO2iptfxT7T68W5WEK4ff)
-
-
-<!-- ====================================================================== -->
-## What's New in DevTools
-
-See also:
-* [What's New in Microsoft Edge DevTools](../devtools-guide-chromium/whats-new/whats-new.md)
 
 
 <!-- ====================================================================== 
@@ -491,7 +484,7 @@ Learn how to customize DevTools to fit your needs.  Covers:
 * Dock or undock DevTools.
 * Open new tools.
 * Close tools that you don't need.
-* Move tools in the bottom drawer (now the **Quick View** panel).
+* Move tools in the bottom **Drawer** (now the **Quick View** panel).
 * Customize the text size.
 * Customize the theme.
 * Use the Command Menu keyboard shortcuts to quickly customize DevTools.

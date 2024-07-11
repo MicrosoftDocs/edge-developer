@@ -240,11 +240,11 @@ conceptualContent:
         # Card
         - title: Progressive Web Apps
           links:
-            - text: Progressive Web Apps overview
+            - text: Overview of Progressive Web Apps
               url: ./progressive-web-apps-chromium/index.md
               itemType: overview
 
-            - text: Get started with Progressive Web Apps
+            - text: Get started with PWAs
               url: ./progressive-web-apps-chromium/how-to/index.md
               itemType: overview
 
@@ -256,15 +256,15 @@ conceptualContent:
               url: ./progressive-web-apps-chromium/whats-new/pwa.md
               itemType: whats-new
 
-            - text: Offline scenarios
+            - text: Store data on the device
               url: ./progressive-web-apps-chromium/how-to/offline.md
               itemType: concept
 
-            - text: Service Workers
+            - text: Use a service worker to manage network requests
               url: ./progressive-web-apps-chromium/how-to/service-workers.md
               itemType: concept
 
-            - text: Web App Manifests
+            - text: Use a web app manifest to integrate a PWA into the OS
               url: ./progressive-web-apps-chromium/how-to/web-app-manifests.md
               itemType: concept
 

@@ -12,7 +12,7 @@ ms.date: 01/20/2022
 
 Use the **Quick source** tool to display or edit source files when using a tool other than the **Sources** tool.
 
-The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  You use the **Quick source** tool in the **Drawer**, which appears at the bottom of DevTools.
+The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  Use the **Quick source** tool, which by default opens in the **Quick View** panel at the bottom of DevTools.
 
 See:
 * [Displaying source files when using a different tool](../sources/index.md#displaying-source-files-when-using-a-different-tool) in _Sources tool overview_

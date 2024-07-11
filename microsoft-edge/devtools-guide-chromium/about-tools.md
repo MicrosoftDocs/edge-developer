@@ -94,7 +94,7 @@ _Activity Bar tools_ are tools that open in the **Activity Bar** (the upper pane
 
 The **Command Menu** first lists the **Activity Bar** tools (indicated by the **Panel** label), and then the **Quick View** tools:
 
-![The Command Menu, showing the Panel tools grouped together, and then the Quick View tools](./about-tools-images/command-menu-panel-vs-drawer-tools.png)
+![The Command Menu, showing the Panel tools grouped together, and then the Quick View tools](./about-tools-images/command-menu-panel-vs-quick-view-tools.png)
 
 To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View**, **Move to side Quick View**, **Move to top Activity Bar**, or **Move to left Activity Bar**:
 
