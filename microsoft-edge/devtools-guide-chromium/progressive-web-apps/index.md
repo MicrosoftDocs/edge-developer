@@ -27,7 +27,7 @@ Use the **Application** tool to inspect, modify, and debug web app manifests, se
 
 *  Use the **Manifest** pane to inspect your web app manifest and trigger "Add to Homescreen" events.
 
-*  Use the **Service Workers** pane for service-worker-related tasks, such as:
+*  Use the **Service workers** pane for service-worker-related tasks, such as:
    * Unregistering or updating a service.
    * Emulating push events.
    * Going offline.
@@ -90,7 +90,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--
 > [!Tip]
-> Keep the **Console** drawer open while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
+> Keep the **Console** open in the **Quick View** panel at the bottom of DevTools while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
 
 <!--The **Add to Homescreen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you can successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 
@@ -108,16 +108,16 @@ Service workers are a fundamental technology in the web platform.  Service worke
 
 <!--Related Guides:
 
-* [Intro to Service Workers](/web/fundamentals/primers/service-worker)
+* [Intro to Service Workers](/web/fundamentals/primers/service-worker) - not found: https://learn.microsoft.com/web/fundamentals/primers/service-worker
 * [Push Notifications: Timely, Relevant, and Precise](/web/fundamentals/push-notifications)  -->
 
 <!-- [How Push Works](/web/fundamentals/push-notifications/how-push-works) -->
 
 <!--TODO:  Link to sections when available. -->
 
-The **Service Workers** pane in the **Application** tool is the main place in DevTools to inspect and debug service workers:
+The **Service workers** pane in the **Application** tool is the main place in DevTools to inspect and debug service workers:
 
-![The Service Workers pane](./index-images/service-workers-pane.png)
+![The Service workers pane](./index-images/service-workers-pane.png)<!-- todo: latest ui has 'w' -->
 
 *  If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
 
@@ -137,7 +137,7 @@ The **Service Workers** pane in the **Application** tool is the main place in De
 
 *  The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
 
-*  The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in previous figure) is for the currently active Service Worker.  Next to the status, a **start** button (if the service worker is stopped) or a **stop** button (if the service worker is running) is displayed.  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
+*  The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in previous figure) is for the currently active service worker.  Next to the status, a **start** button (if the service worker is stopped) or a **stop** button (if the service worker is running) is displayed.  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
 
 *  The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
 
@@ -147,7 +147,7 @@ If the service worker causes any errors, a new label called **Errors** shows up.
 ![Service worker with errors](../media/sw-error.png)
 -->
 
-<!--TODO:  Capture Service Worker Errors sample when available. -->
+<!--TODO:  Capture "Service Worker Errors" sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
 

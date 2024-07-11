@@ -43,7 +43,7 @@ In the **Quick View** toolbar in the bottom of DevTools, you can select which to
 
 To open (or close) the **Quick View** panel, press **Esc** when focus is on DevTools.
 
-![The Drawer](./index-images/quick-view.png)
+![The Quick View panel](./index-images/quick-view.png)
 
 You can move tools between the **Activity Bar** (at the top) and the **Quick View** toolbar (at the bottom).
 
@@ -122,6 +122,7 @@ See [Customize keyboard shortcuts](../customize/shortcuts.md).
 ## Videos about Customizing the DevTools UI
 
 
+<!-- ------------------------------ -->
 #### Customizing Microsoft Edge Developer Tools and quick feature access
 
 _Published on 5 May 2022._
@@ -130,9 +131,10 @@ _Published on 5 May 2022._
 
 Learn how to customize DevTools to fit your needs.
 
-This video covers how to dock or undock DevTools, open new tools, and close those you don't need. It describes how to move tools in the bottom drawer and customize the text size and theme. The video also explains how you can use the Command Menu keyboard shortcuts to quickly customize DevTools.
+This video covers how to dock or undock DevTools, open new tools, and close those you don't need. It describes how to move tools in the **Drawer** (now **Quick View** panel) at the bottom of DevTools, and how to customize the text size and theme. The video also explains how you can use the Command Menu keyboard shortcuts to quickly customize DevTools.
 
 
+<!-- ------------------------------ -->
 #### Understand the DevTools user interface
 
 _Published on 1 September 2022._
@@ -141,13 +143,14 @@ _Published on 1 September 2022._
 
 Understand how the Microsoft Edge DevTools UI is organized. If you are confused about what tools are available, and what the main parts of the DevTools interface do, this video will help get more comfortable.
 
-In this video, we go over the UI structure, with its main toolbar and panel and its drawer area. We also go over how to find, open, and close tools, restore the default settings, and go over the list of available tools.
+In this video, we go over the UI structure, with its main toolbar and panel, and the **Drawer** (now **Quick View** panel). We also go over how to find, open, and close tools, restore the default settings, and go over the list of available tools.
 
 <!-- additional text, from Welcome panel, which includes 'customize': -->
 
 Check out this video to learn about the main parts of the DevTools UI, how to customize it to meet your needs, learn about the different tools that are available, and where to go for help.
 
 
+<!-- ------------------------------ -->
 #### See also
 
 * [Videos about web development with Microsoft Edge](../../dev-videos/index.md)
