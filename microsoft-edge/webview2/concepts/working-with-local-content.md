@@ -743,7 +743,6 @@ HRESULT AppWindow::WebResourceRequestedEventHandler(
     CHECK_FAILURE(request->get_Uri(&uri));
     std::wstring assetsFilePath = L"C:\\Demo";
     assetsFilePath += (uri.get() + ARRAYSIZE(L"https://demo"));
-    wil::com_ptr<IStream> stream;
     SHCreateStreamOnFileEx(
         assetsFilePath.c_str(), STGM_READ, FILE_ATTRIBUTE_NORMAL, FALSE,
         nullptr, &stream);

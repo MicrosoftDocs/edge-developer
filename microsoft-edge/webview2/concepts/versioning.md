@@ -1,6 +1,6 @@
 ---
 title: Prerelease and Release SDKs for WebView2
-description: Understand the different WebView2 SDK versions, and version models used for Microsoft Edge WebView2.
+description: Prerelease SDKs vs. Release SDKs for WebView2, and version models used for Microsoft Edge WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -173,7 +173,6 @@ To check the compatibility between specific build numbers of the SDK and the Run
 <!-- ====================================================================== -->
 ## Feature-detecting to test whether the installed Runtime supports recently added APIs
 
-<!-- this is the main section about QI; other articles should have a couple paragraphs only, and link to here -->
 
 If your app uses the Evergreen Runtime rather than Fixed Version, you should wrap any calls to relatively new WebView2 APIs by using `QueryInterface` or `try-catch`.  There are edge cases where a client's Evergreen Runtime isn't the latest build and therefore falls behind the SDK build number, because the Admin might have turned off updating of the WebView2 Runtime, or the client might be offline.
 
@@ -186,5 +185,3 @@ When you develop a WebView2 app using a recent version of the WebView2 SDK, if y
 *  **.NET and WinUI**.  Use `try/catch` and check for a `No such interface supported` exception when using methods, properties, and events that were added to more recent versions of the WebView2 SDK.  This exception likely indicates that the client's WebView2 Runtime is an older version that doesn't support that API.
 
 If your code determines that an API is unavailable in the client's installed WebView2 Runtime, you should provide graceful fallback for the associated feature, or inform the user that they must update the WebView2 Runtime to use the feature.
-
-This technique is listed as a WebView2 development best practice, at [Test whether APIs are supported by the installed WebView2 Runtime](developer-guide.md#test-whether-newer-apis-are-supported-by-the-installed-webview2-runtime).

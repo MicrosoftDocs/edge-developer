@@ -13,6 +13,12 @@ ms.date: 03/31/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 100
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 100"](./devtools-100-images/devtools-whatsnew-100.png)](https://www.youtube.com/watch?v=aP6d2PIU7hc)
+
+
 <!-- ====================================================================== -->
 ## Join the Microsoft Edge DevTools community at GitHub
 
@@ -69,7 +75,7 @@ If you don't have the **Fulfilled by** column, right-click the table headers in 
 
 See also:
 * [Filter requests by properties](../../../network/reference.md#display-a-log-of-requests) in _Network features reference_.
-* [Service Worker improvements](../../../service-workers/index.md).
+* [Service worker improvements](../../../service-workers/index.md).
 
 For the history of this feature, see [Issue #16](https://github.com/MicrosoftEdge/DevTools/issues/16).
 

@@ -13,6 +13,12 @@ ms.date: 09/29/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 106
+
+[![Thumbnail image for video "What's new in DevTools 106"](./devtools-106-images/devtools-whatsnew-106.png)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
+
+
 <!-- ====================================================================== -->
 ## Introducing the Command Palette
 

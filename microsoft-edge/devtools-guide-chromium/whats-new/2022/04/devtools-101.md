@@ -13,6 +13,12 @@ ms.date: 04/28/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 101
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 101"](./devtools-101-images/devtools-whatsnew-101.png)](https://www.youtube.com/watch?v=kv6Q8a9bsbA)
+
+
 <!-- ====================================================================== -->
 ## The Console tool is now available in Visual Studio Code
 
@@ -27,11 +33,11 @@ The Console is one of the most popular tools in DevTools.  You can now access th
 
 You can use the Console as the main tool, or use it together with the **Elements** and **Network** tools.
 
-The Console tool in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code:
+The Console tool open in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code:
 
 ![The Console tool in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code](devtools-101-images/console-tool-vsc-1.png)
 
-The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code:
+The Console tool open in the **Drawer** of the Microsoft Edge DevTools extension for Visual Studio Code:
 
 ![The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code](devtools-101-images/console-tool-vsc-2.png)
 

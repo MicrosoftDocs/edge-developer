@@ -13,6 +13,14 @@ ms.date: 04/18/2024
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ 
+todo video
+#### Video: What's new in DevTools 115-125
+
+[![Thumbnail image for video "What's new in DevTools 115-125"](./devtools-124-images/devtools-whatsnew-115-125.png)]
+-->
+
+
 <!-- ====================================================================== -->
 ## postMessage events and handlers are distinguished from other events
 

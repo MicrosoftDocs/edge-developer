@@ -118,10 +118,10 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Progressive Web Apps overview
+          - text: Overview of Progressive Web Apps
             url: ../progressive-web-apps-chromium/index.md
 
-          - text: Get started with Progressive Web Apps
+          - text: Get started with PWAs
             url: ../progressive-web-apps-chromium/how-to/index.md
 
           - text: Debug Progressive Web Apps
@@ -134,13 +134,13 @@ landingContent:
 
       - linkListType: concept
         links:
-          - text: Offline scenarios
+          - text: Store data on the device
             url: ../progressive-web-apps-chromium/how-to/offline.md
 
-          - text: Service Workers
+          - text: Use a service worker to manage network requests
             url: ../progressive-web-apps-chromium/how-to/service-workers.md
 
-          - text: Web App Manifests
+          - text: Use a web app manifest to integrate a PWA into the OS
             url: ../progressive-web-apps-chromium/how-to/web-app-manifests.md
 # =============================================================================
 # Card r2c2

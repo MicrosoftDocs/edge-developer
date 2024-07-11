@@ -17,6 +17,12 @@ PWAs provide native-like experiences to your users on supporting devices. They a
 To start building a PWA, see [Get started with Progressive Web Apps](./how-to/index.md).
 
 
+<!-- ------------------------------ -->
+#### Video: Ignite | March 2021 | Igniting the Web Apps Story
+
+[![Thumbnail image for video "Igniting the Web Apps Story"](./index-images/igniting-web-apps-story.png)](https://www.youtube.com/watch?v=xUNC8MjW_iI)
+
+
 <!-- ====================================================================== -->
 ## PWA benefits
 
@@ -92,7 +98,7 @@ Because Progressive Web Apps (PWAs) are just like other apps in the [Microsoft S
 
 The Microsoft Store provides a trustworthy and familiar experience for users to install your app.  Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 
-Learn how to [publish your PWA to the Microsoft Store](how-to/microsoft-store.md).
+See [Publish a Progressive Web App to the Microsoft Store](how-to/microsoft-store.md).
 
 
 <!-- ====================================================================== -->

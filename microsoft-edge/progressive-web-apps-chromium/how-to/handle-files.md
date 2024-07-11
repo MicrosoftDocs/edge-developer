@@ -19,9 +19,7 @@ When a PWA is registered as a file handler for certain file types, the operating
 <!-- ====================================================================== -->
 ## Define which files your app handles
 
-The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file](web-app-manifests.md), using the `file_handlers` array member.
-
-Each entry in the `file_handlers` array needs to have two properties:
+The first thing to do is to declare which types of files your app handles. This is done in your app manifest file, by using the `file_handlers` array member.  Each entry in the `file_handlers` array needs to have two properties:
 
 *  `action`: The URL the operating system should navigate to when launching your PWA.
 *  `accept`: An object of accepted file types. Keys are MIME-types (partial types, using the wildcard symbol `*`, are accepted), and values are arrays of accepted file extensions.
@@ -44,6 +42,9 @@ Consider the following example:
 ```
 
 In this example, the app registers a single file handler for that accepts text files. When a `.txt` file is opened by the user by, for example, double-clicking its icon on the desktop, then the operating system launches the app using the `/openFile` URL.
+
+See also:
+* [Associate your app with files](./web-app-manifests.md#associate-your-app-with-files) in _Use a web app manifest to integrate a PWA into the OS_.
 
 
 <!-- ====================================================================== -->

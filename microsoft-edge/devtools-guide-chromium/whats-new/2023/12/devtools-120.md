@@ -13,6 +13,14 @@ ms.date: 12/07/2023
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ 
+todo video
+#### Video: What's new in DevTools 115-125
+
+[![Thumbnail image for video "What's new in DevTools 115-125"](./devtools-120-images/devtools-whatsnew-115-125.png)]
+-->
+
+
 <!-- ====================================================================== -->
 ## DevTools has a new user interface
 
@@ -20,7 +28,7 @@ ms.date: 12/07/2023
 
 DevTools has a new look, starting with Microsoft Edge 120!  The major design updates are:
 * The new **Activity Bar** with icons.
-* **Quick View** in place of the Drawer at bottom of DevTools.
+* The **Quick View** panel in place of the **Drawer** at the bottom of DevTools.
 * The **Activity Bar** and **Quick View** can be switched to a vertical orientation.
 * You can easily open, close, and move tools around.
 
