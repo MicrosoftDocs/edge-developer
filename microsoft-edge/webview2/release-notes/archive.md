@@ -4550,7 +4550,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 *  Added [NewWindowRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs?view=webview2-1.0.955-prerelease&preserve-view=true#get_name).
 
-*  Added support for virtual host name mapping to work with Service Workers.
+*  Added support for virtual host name mapping to work with service workers.
 
 *  Added [HiddenPdfToolbarItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.955-prerelease&preserve-view=true#get_hiddenpdftoolbaritems) to customize the PDF toolbar items.
 

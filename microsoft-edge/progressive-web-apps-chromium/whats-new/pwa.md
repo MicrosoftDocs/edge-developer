@@ -274,7 +274,7 @@ Developers can now use the experimental feature Web App URL Handlers in origin t
 _2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and has been removed, so the following no longer applies, and the PWA URL Handlers feature was removed from the Chromium browser engine:_ Register your domain for the **Web App URL Handlers** trial at the Origin Trials Developer Console.
 
 See also:
-* [Handle links to your Progressive Web Apps](../how-to/handle-urls.md)
+* [Handle links to your Progressive Web App](../how-to/handle-urls.md)
 * [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)
 
 
