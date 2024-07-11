@@ -1,6 +1,6 @@
 ---
-title: Service Worker improvements
-description: How to use each Service Worker improvement.
+title: Service worker improvements
+description: How to use each service worker improvement in the Network, Application, and Sources tools in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,25 +8,25 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/19/2021
 ---
-# Service Worker improvements
+# Service worker improvements
 
-This article explains improvements to developer tools for working with [service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) and the network requests that pass through each service worker.  The **service worker improvements** are in the **Network**, **Application**, and **Sources** tools.
+The **Network**, **Application**, and **Sources** tools have been improved to help you work with [service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) and the network requests that pass through each service worker.
 
-The improvements to service workers simplify the following tasks:
+The improvements simplify the following tasks:
 
-*  Debug based on Service Worker timelines.
+*  Debug based on service worker timelines.
     *  The start of a request and duration of the bootstrap.
-    *  Update to Service worker registration.
+    *  Update to service worker registration.
     *  The runtime of a request using the [fetch event](https://developer.mozilla.org/docs/Web/API/FetchEvent) handler.
     *  The runtime of all fetch events for loading a client.
 *  Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.
 *  Step into and out of fetch event handler with [page script information](#sources).
 
-The improved experiences span three different developer tools:
+The improvements span the following tools:
 
 *  The [Network](#network) tool.  Select a network request that runs through a service worker and access the corresponding timeline of the service worker in the **Timing** tool.
 
-*  The [Application](#application) tool.  To debug the service workers, go to the **Service Workers** tool.
+*  The [Application](#application) tool.  To debug service workers, use the **Service workers** page.
 
 *  The [Sources](#sources) tool.  Access page script information when stepping into fetch event handlers.
 
