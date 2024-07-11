@@ -66,7 +66,7 @@ A basic DevTools extension consists of two files, as shown in [Step 1 code](http
     | name | The name of the extension that will appear under `edge://extensions/`. |
     | description | The description of the extension that will be displayed under the name of the extension. |
     | version | The version of the extension that will appear next to the name of the extension. |
-    | manifest_version | Determines the set of features that the extension will be using such as Service workers or Network request modification. The current version is version `3`. To learn more about this version and the differences with version `2`, see [Overview and timelines for migrating to Manifest V3](./manifest-v3.md). |
+    | manifest_version | Determines the set of features that the extension will be using, such as service workers or network request modification. The current version is version `3`. To learn more about this version and the differences with version `2`, see [Overview and timelines for migrating to Manifest V3](./manifest-v3.md). |
     | devtools_page | The path to an HTML file that will be run every time the DevTools UI is opened. Though the page is not rendered in DevTools, it will be used to load the necessary JavaScript files for the extension. |
 
 1. An html file to match the `devtools_page` field in the manifest file.

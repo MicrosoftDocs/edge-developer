@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 12/05/2023
+ms.date: 06/27/2024
 ---
 # Distribute your app and the WebView2 Runtime
 
@@ -143,7 +143,6 @@ When you use the Evergreen distribution mode of the WebView2 Runtime, your WebVi
 
 <!-- ------------------------------ -->
 #### Windows 11 devices and Windows 10 devices (details)
-<!-- #### Evergreen WebView2 Runtime is preinstalled on Win11 devices and most Win10 devices -->
 
 The vast majority of Windows 10 devices have the WebView2 Runtime installed already, as described in [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).  A small number of Windows 10 devices don't have the WebView2 Runtime installed.  We recommend that you handle this edge case, by using either of the following approaches:
 
@@ -152,7 +151,7 @@ The vast majority of Windows 10 devices have the WebView2 Runtime installed alre
 *  Redirect your end users to the Microsoft site: [Download Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/consumer/), and have end users download the Evergreen WebView2 Runtime installer from the site and install the Runtime themselves.
 
 See also:
-* [Understand the different WebView2 SDK versions](versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Evergreen WebView2 Runtime.
+* [Prerelease and Release SDKs for WebView2](versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Evergreen WebView2 Runtime.
 * [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).
 
 
@@ -184,7 +183,7 @@ Use the following online deployment workflow or offline deployment workflow to e
 
 
 <!-- ---------- -->
-###### Detect if a suitable WebView2 Runtime is already installed
+###### Detect if a WebView2 Runtime is already installed
 
 To verify that a WebView2 Runtime is installed, use one of the following approaches:
 
@@ -216,7 +215,7 @@ To verify that a WebView2 Runtime is installed, use one of the following approac
 
 If you have an online-only deployment scenario where users are assumed to have internet access, use the following workflow.
 
-1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed. See [Detect if a suitable WebView2 Runtime is already installed](#detect-if-a-suitable-webview2-runtime-is-already-installed).
+1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed. See [Detect if a WebView2 Runtime is already installed](#detect-if-a-webview2-runtime-is-already-installed), above.
 
 1. If the Runtime isn't installed, in your app setup process, use the link (from the **Get the Link** button on the download page) to programmatically download the WebView2 Runtime Bootstrapper.
 
@@ -252,7 +251,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
 1. Include the Evergreen Standalone Installer in your app installer or updater.
 
-1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed. See [Detect if a suitable WebView2 Runtime is already installed](#detect-if-a-suitable-webview2-runtime-is-already-installed).
+1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed. See [Detect if a WebView2 Runtime is already installed](#detect-if-a-webview2-runtime-is-already-installed), above.
 
 1. If the WebView2 Runtime isn't installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, you can run the following command.
 
@@ -266,35 +265,52 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
 
 <!-- ------------------------------ -->
+#### Handle Evergreen WebView2 Runtime updates
+
+New versions of the Evergreen WebView2 Runtime are automatically downloaded to the client.  The client uses the new version of the WebView2 Runtime when your WebView2 app is restarted.  However, if your app runs continuously, your app will continue to use the previous version of the WebView2 Runtime.  This has security implications, because the previous version of the WebView2 Runtime might have security vulnerabilities that are fixed in the new version.  You should consider whether it is important for your app to adopt the latest version of the WebView2 Runtime as soon as possible, based on your app's threat model.  For example, if your WebView2 app accesses third-party content, that content should be considered untrusted, so your app would need to use the latest version of the WebView2 Runtime.
+
+To use the new version of the WebView2 Runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the WebView2 Runtime.  To accomplish this, you can have an event handler for the `NewBrowserVersionAvailable` event, to have your app automatically notify the user to restart the app.  If your app handles restarting the app, consider saving the user state before the WebView2 app exits. 
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Environment` Class:
+    * [NewBrowserVersionAvailable Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Environment` Class:
+    * [NewBrowserVersionAvailable Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#newbrowserversionavailable)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
+    * [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable)
+    * [remove_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#remove_newbrowserversionavailable)
+---
+
+
+<!-- ------------------------------ -->
 #### Test your app for forward-compatibility
 
-The Web is constantly evolving.  In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
+In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
 
-For best practices on how to test your app for forward-compatibility, see [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
+For best practices about how to test your app for forward-compatibility, see [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
 
 
 <!-- ------------------------------ -->
 #### Feature-detect when using recent APIs
 
-<!-- the main section about QueryInterface is in versioning.md, so limit this section to a couple paragraphs -->
+When using Evergreen mode in WebView2 apps, it's crucial to check for the presence of new APIs on the client's machine, by using methods like `QueryInterface` or `try-catch`, because the client machine might not have the latest WebView2 Runtime, containing the new APIs.  Updates to the WebView2 Runtime might not occur if an IT Admin disables updating, or if the client is offline.
 
-If you use the Evergreen mode, when your WebView2 app uses a new WebView2 API from a recent SDK, you should use an approach such as `QueryInterface` or `try-catch` to make sure the new API is present on the client's machine.  This feature-detecting is a best practice, because there are cases where the WebView2 Runtime isn't updated.
+For details, see [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 
-Even if you use the Evergreen distribution mode, the WebView2 Runtime might not be updated, for the following reasons:
-
-*  An IT Admin can turn off updates of the WebView2 Runtime, because an Admin has control of updating their devices.
-
-*  Clients that are offline don't receive the updated WebView2 Runtime.
-
-The update policies for Microsoft Edge and the WebView2 Runtime are separate.  Even if the IT Admin has disabled automatic updates of Microsoft _Edge_, the WebView2 _Runtime_ is still automatically updated, unless the Admin turns off Runtime updating.  If the Admin disables updating Microsoft Edge (which is somewhat common), that doesn't affect which WebView2 APIs are available on the client machine.
-
-See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
+There are separate update policies for Microsoft Edge and the WebView2 Runtime.  Disabling updates for Microsoft Edge doesn't impact the availability of the latest WebView2 APIs, because the WebView2 Runtime can still update automatically (unless updating the WebView2 Runtime is disabled by an Admin).
 
 
 <!-- ====================================================================== -->
 ## Details about the Fixed Version runtime distribution mode
 
-For constrained environments with strict compatibility requirements, consider using the Fixed Version distribution mode.  The Fixed Version distribution mode was previously called _bring-your-own_.
+For constrained environments that have strict compatibility requirements, consider using the Fixed Version distribution mode.  (The Fixed Version distribution mode was previously called _bring-your-own_.)
 
 In the Fixed Version distribution mode, you control the timing of updates to the WebView2 Runtime for your app.  You download a specific version of the WebView2 Runtime and then package it with your WebView2 app.  The WebView2 Runtime on the client isn't automatically updated.  Instead, you periodically update the WebView2 Runtime that's packaged and distributed together with your updated app.  The Fixed Version approach doesn't use a registry key for the WebView2 Runtime.
 
@@ -373,7 +389,7 @@ To use the Fixed Version distribution mode:
 <!-- ====================================================================== -->
 ## Files to ship with the app
 
-The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking](../how-to/static.md) `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture. Usually this is handled automatically for you by Visual Studio when using the `.targets` file in the WebView2 SDK, but there may be cases when you need to manually specify what files to publish with your app.
+The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking](../how-to/static.md) `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture. Usually this is handled automatically for you by Visual Studio when using the `.targets` file in the WebView2 SDK, but there might be cases when you need to manually specify what files to publish with your app.
 
 `WebView2Loader.dll` is a native and architecture-specific binary, so you need to include all flavors of this binary that you expect your app to run in.  For example:
 

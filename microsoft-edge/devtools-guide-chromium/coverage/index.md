@@ -62,7 +62,7 @@ To find unused code in your page, use the **Coverage** tool:
 
    The **Coverage** tool opens in the **Quick View** panel at the bottom of DevTools:
 
-   ![The Coverage tool](./index-images/coverage-console-drawer-coverage-empty.png)
+   ![The Coverage tool](./index-images/coverage-console-quick-view-coverage-empty.png)
 
 
 <!-- ====================================================================== -->
@@ -82,7 +82,7 @@ To find unused code in your page, use the **Coverage** tool:
 
 The table in the **Coverage** tool displays the resources that were analyzed, and how much code is used within each resource.  Click a row to open that resource in the **Sources** tool and display a code coverage report that gives a line-by-line breakdown of used code and unused code:
 
-![A code coverage report](./index-images/coverage-sources-resource-drawer-coverage-selected.png)
+![A code coverage report](./index-images/coverage-sources-resource-quick-view-coverage-selected.png)
 
 Columns in the code coverage report:
 

@@ -13,6 +13,12 @@ ms.date: 09/01/2022
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 105
+
+[![Thumbnail image for video "What's new in DevTools 105"](./devtools-105-images/devtools-whatsnew-105.png)](https://www.youtube.com/watch?v=h0XJH_iLoUk)
+
+
 <!-- ====================================================================== -->
 ## Test your PWA's protocol handlers from the Application tool
 

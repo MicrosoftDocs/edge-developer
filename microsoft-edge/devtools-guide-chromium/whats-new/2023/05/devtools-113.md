@@ -20,6 +20,12 @@ ms.date: 05/25/2023
 > * [Building Chat Plugins for Microsoft Bing and Edge](https://www.youtube.com/watch?v=Q-5M7EYjl6U&list=PL4z1-7pjJU6zJT3PBQ4mTbNg2wtX7Lt52)
 
 
+<!-- ------------------------------ -->
+#### Video: What's New in DevTools 113 and 114
+
+[![Thumbnail image for video "What's New in DevTools 113 and 114"](./devtools-113-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
+
+
 <!-- ====================================================================== -->
 ## Debug JavaScript error stack traces by using the Crash Analyzer tool
 
@@ -65,7 +71,7 @@ In the following image, the minified object name `e` is shown in a heap snapshot
 Now in Microsoft Edge 113, the **Memory** tool automatically unminifies object names in the heap snapshot:
 
 ![A heap snapshot in the Memory tool displays unminified object names](./devtools-113-images/unminified-object-name-memory-tool.png)
-<!-- todo
+<!-- png:
 1. Open Edge Stable.
 2. Go to: https://outlook-sdf.office.com/mail/
 3. Don't show the Outlook UI - undock DevTools.

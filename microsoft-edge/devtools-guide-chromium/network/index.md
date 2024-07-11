@@ -29,12 +29,16 @@ This is a step-by-step tutorial walkthrough of the **Network** tool, for inspect
 
 For an overview of the network-related DevTools features, see [Network features reference](reference.md).
 
+
+<!-- ------------------------------ -->
+#### Video: Learn to Use the Network Tool
+
 For a video version of this tutorial, view the following video:
 
-[![Thumbnail image for the DevTools Network tool video](./index-images/network-tool-intro-video.png)](https://www.youtube.com/watch?v=niG_Ck6E5L8)
+[![Thumbnail image for video "Learn to Use the Network Tool"](./index-images/network-tool-intro-video.png)](https://www.youtube.com/watch?v=niG_Ck6E5L8)
+
 
 <!-- TODO: entire section needs a Microsoft Edge DevTools rewrite  -->
-
 
 <!-- ====================================================================== -->
 ## When to use the Network tool

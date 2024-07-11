@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 05/14/2024
+ms.date: 07/02/2024
 ---
 # Developer policies for the Microsoft Edge Add-ons store
 
@@ -535,17 +535,17 @@ All extensions must adhere to the store policies listed above.  If your extensio
 
 
 <!-- ------------------------------ -->
-#### Appeal statistics for Microsoft Edge Add-ons for FY2022
+#### Appeal statistics for Microsoft Edge Add-ons for FY2024
 
 | Statistic                                                             | Count     |
 |-----------------------------------------------------------------------|-----------|
-| App and/or account enforcement action appeals                         |        34 |
-| Complaints about technological issues                                 |         0 |
+| App and/or account enforcement action appeals                         |        50 |
+| Complaints about technological issues                                 |        17 |
 | Regulatory compliance complaints                                      |         0 |
-| Questions about certification, policy, submission, and technical help |       131 |
-| Miscellaneous                                                         |         5 |
-| Total issues                                                          |       175 |
-| Overturned decisions                                                  |        28 |
-| Average processing time                                               | 6.58 days |
+| Questions about certification, policy, submission, and technical help |       173 |
+| Miscellaneous                                                         |       358 |
+| Total issues                                                          |       261 |
+| Overturned decisions                                                  |        52 |
+| Average processing time                                               | 1.88 days |
 
-These numbers were reported on July 1, 2023.
+These numbers were reported on July 2, 2024.

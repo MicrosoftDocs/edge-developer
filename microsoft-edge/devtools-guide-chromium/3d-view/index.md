@@ -23,6 +23,12 @@ On the left, the **3D View** tool has 3 tabs:
 On the right, the 3D canvas represents the webpage according to which tab and options you select.
 
 
+<!-- ------------------------------ -->
+#### Video: Debug the web in 3D
+
+[![Thumbnail image for video "Debug the web in 3D"](./index-images/3d-view-tool.png)](https://www.youtube.com/watch?v=LVb1Xzzd72w)
+
+
 <!-- ====================================================================== -->
 ## Open the 3D View tool
 

@@ -101,7 +101,7 @@ self.addEventListener("fetch", event => {
 });
 ```
 
-To discover other useful Cache API scenarios, see [Use Service Workers to manage network requests](./service-workers.md).
+To discover other useful Cache API scenarios, see [Use a service worker to manage network requests](./service-workers.md).
 
 
 <!-- ====================================================================== -->

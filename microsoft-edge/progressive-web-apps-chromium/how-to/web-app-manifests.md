@@ -1,5 +1,5 @@
 ---
-title: Use a web app manifest to integrate a Progressive Web App into the operating system
+title: Use a web app manifest to integrate a PWA into the OS
 description: How to use the web app manifest to integrate your Progressive Web App into your operating system.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,11 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 11/28/2022
 ---
-# Use a web app manifest to integrate a Progressive Web App into the operating system
+# Use a web app manifest to integrate a PWA into the OS
 
-The web app manifest file governs how your Progressive Web App (PWA) looks and behaves when installed on a device. The web app manifest provides information such as the name of your app, the file location of icons that represent your app in system menus, and the theme colors that the operating system (OS) uses in the title bar.
+A Progressive Web App (PWA) must have a web app manifest, to define how the PWA integrates with the operating system (OS).  This article explains what a web app manifest is, and what required and optional data a web app manifest contains.
+
+The web app manifest file governs how your PWA looks and behaves when installed on a device.  The web app manifest provides information such as the name of your app, the file location of icons that represent your app in system menus, and the theme colors that the OS uses in the title bar.
 
 A web app manifest is a JSON file that must be referenced from your website's HTML page using a manifest link. Insert the following code in between the `<head>` and `</head>` tags of your website's HTML page to link to your manifest file:
 

@@ -13,6 +13,12 @@ ms.date: 01/13/2023
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 109
+
+[![Thumbnail image for video "What's new in DevTools 109"](./devtools-109-images/devtools-whatsnew-109.png)](https://www.youtube.com/watch?v=b-q-PLmO-ns)
+
+
 <!-- ====================================================================== -->
 ## Import and export your DevTools instances with the new enhanced traces feature
 
