@@ -561,7 +561,7 @@
                   href: devtools-guide-chromium/resources/index.md
                   displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
 
-                - name: Service Worker improvements  # added article
+                - name: Service worker improvements  # added article
                   href: devtools-guide-chromium/service-workers/index.md
                   displayName: Network tool, Application tool, Sources tool
 # Network conditions tool -----------------------------------------------------
@@ -1175,8 +1175,7 @@
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Progressive Web Apps
       items:
-
-        - name: Overview of Progressive Web Apps (PWAs)  # existing firstchild article
+        - name: Overview of Progressive Web Apps (PWAs)
           href: progressive-web-apps-chromium/index.md
 
         - name: Get started with PWAs
@@ -1188,8 +1187,7 @@
 
         - name: How to
           items:
-
-            - name: Publish PWAs to the Microsoft Store
+            - name: Publish a PWA to the Microsoft Store
               href: progressive-web-apps-chromium/how-to/microsoft-store.md
               displayName: Publish a Progressive Web App to the Microsoft Store  # top-of-page title
 
@@ -1202,16 +1200,11 @@
             - name: Debug Progressive Web Apps
               href: progressive-web-apps-chromium/how-to/debug.md
 
-        - name: Reference
-          items:
-
-            - name: Web app manifest
+            - name: Use a web app manifest to integrate a PWA into the OS
               href: progressive-web-apps-chromium/how-to/web-app-manifests.md
-              displayName: Use a web app manifest to integrate a Progressive Web App into the operating system  # top-of-page title
 
-            - name: Service Workers
+            - name: Use a service worker to manage network requests
               href: progressive-web-apps-chromium/how-to/service-workers.md
-              displayName: Use Service Workers to manage network requests  # top-of-page title
 
             - name: Store data on the device
               href: progressive-web-apps-chromium/how-to/offline.md
@@ -1227,17 +1220,16 @@
               href: progressive-web-apps-chromium/how-to/push.md
               displayName: Re-engage users with badges, notifications, and push messages  # old top-of-page title
 
-            - name: Synchronize and update in the background
+            - name: Synchronize and update a PWA in the background
               href: progressive-web-apps-chromium/how-to/background-syncs.md
-              displayName: Synchronize and update a PWA in the background  # top-of-page title
 
             - name: Handle files
               href: progressive-web-apps-chromium/how-to/handle-files.md
               displayName: Handle files in Progressive Web Apps  # top-of-page title
 
-            - name: Handle URLs
+            - name: Handle links
               href: progressive-web-apps-chromium/how-to/handle-urls.md
-              displayName: Handle links to your Progressive Web Apps  # top-of-page title
+              displayName: handle urls, Handle links to your Progressive Web App  # top-of-page title
 
             - name: Handle protocols
               href: progressive-web-apps-chromium/how-to/handle-protocols.md
@@ -1252,9 +1244,8 @@
             - name: Define app shortcuts
               href: progressive-web-apps-chromium/how-to/shortcuts.md
 
-            - name: Build operating system Widgets
+            - name: Build PWA-driven widgets
               href: progressive-web-apps-chromium/how-to/widgets.md
-              displayName: Build PWA-driven widgets  # top-of-page title
 
             - name: Build PWAs for the sidebar in Microsoft Edge
               href: progressive-web-apps-chromium/how-to/sidebar.md

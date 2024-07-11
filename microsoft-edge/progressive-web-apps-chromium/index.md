@@ -98,7 +98,7 @@ Because Progressive Web Apps (PWAs) are just like other apps in the [Microsoft S
 
 The Microsoft Store provides a trustworthy and familiar experience for users to install your app.  Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 
-Learn how to [publish your PWA to the Microsoft Store](how-to/microsoft-store.md).
+See [Publish a Progressive Web App to the Microsoft Store](how-to/microsoft-store.md).
 
 
 <!-- ====================================================================== -->
