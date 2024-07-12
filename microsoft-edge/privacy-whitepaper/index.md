@@ -810,7 +810,7 @@ To redeem your points or contribute points to a listed nonprofit organization, g
 
 #### Cancelling your participation
 
-If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false). If you opt out, you will immediately lose all of your available points. 
+If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false).<!-- todo: 404 july 10, 2024 -->  If you opt out, you will immediately lose all of your available points. 
 
 See also:
 * [Learn about Microsoft Rewards](https://support.microsoft.com/topic/learn-about-microsoft-rewards-c5ab735d-c6d9-4bb9-30ad-d828e954b6a9).
