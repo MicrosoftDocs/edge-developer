@@ -53,7 +53,7 @@ When you select the Address bar, a signal is sent to your default search provide
 <!-- ------------------------------ -->
 #### Microsoft Search in Bing
 
-If you're signed into Microsoft Edge using your work or school account (AAD account), your typed-in characters are also sent to Microsoft Search in Bing, which returns the work- or school-related content or cross-device suggested queries to you.  Your administrator can choose to turn on or off the work- or school-related content or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` policy.  If your administrator turns off that policy, the query suggestions and the results that are returned from your default search engine are shown in your present device's browser, but not in the browsers on your other devices.
+If you're signed into Microsoft Edge using your work or school account (AAD account), your typed-in characters are also sent to Microsoft Search in Bing, which returns the work- or school-related content or cross-device suggested queries to you.  Your administrator can choose to turn on or off the work- or school-related content or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.  If your administrator turns off that policy, the query suggestions and the results that are returned from your default search engine are shown in your present device's browser, but not in the browsers on your other devices.
 
 You can further protect your privacy by doing any of the following:
 
@@ -206,7 +206,7 @@ To change settings for the sidebar or Copilot pane, select **Settings and more**
 <!-- ------------------------------ -->
 #### Use Compose to rewrite selected text on any webpage
 
-The Compose tool can help rephrase what you've written, and iterate using the same **Tone**, **Format**, and **Length** selections. 
+The Compose tool can help rephrase what you've written, and iterate using the same **Tone**, **Format**, and **Length** selections.
 
 To access the Compose tool directly in a webpage, highlight text longer than five words in any input text field, and then click the **Rewrite with Copilot** button.  Or, press **Alt+I**.
 
@@ -231,8 +231,8 @@ In Copilot in the Microsoft Edge sidebar, you can ask complex questions, find co
 To open Copilot in the Microsoft Edge sidebar, click the **Copilot** (![Copilot icon.](./index-images/copilot-icon.png)) button in the upper right of the Microsoft Edge toolbar.  Or, use the **Ctrl+Shift+.** keyboard shortcut.
 
 
-<!-- --------------------------------------------------------------------- -->
-#### Data and consent used by Copilot in Microsoft Edge 
+<!-- ------------------------------ -->
+#### Data and consent used by Copilot in Microsoft Edge
 
 Microsoft Edge determines what data to send to Copilot based on your **query** and your consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, the page title, your query, and previous conversation history to help Copilot answer your query effectively.
 
@@ -245,7 +245,7 @@ When you grant permission to share page information, Microsoft Edge sends the fu
 To modify this permission, go to Microsoft Edge > **Settings** > **Sidebar** > **App and notification settings** > **App specific settings** > **Copilot**, and then toggle the **Allow access to any webpage or PDF** setting.
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ------------------------------ -->
 #### Duration of storage of conversation history
 
 * **Conversation history** is a history of all queries and responses from Copilot.  **Conversation history** is stored for 90 days.  This is independent of whether using Copilot in Bing or Copilot in the Microsoft Edge sidebar or by visiting `www.bing.com/chat`.
@@ -259,13 +259,13 @@ To modify this permission, go to Microsoft Edge > **Settings** > **Sidebar** > *
 * **Page content** from **non-Bing index pages** – information that's used to summarize a non-Bing index page is deleted after 6 hours, and it is only used to answer the query.
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ------------------------------ -->
 #### Our commitment to responsible AI
 
 Copilot has numerous protective measures in place that are constantly evolving.  For details, see [The new Bing: Our approach to Responsible AI](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2023/04/RAI-for-the-new-Bing-April-2023.pdf).
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ------------------------------ -->
 #### Glossary of terms for Copilot
 
 | Term | Definition |
@@ -451,7 +451,7 @@ The family group organizer may stop the data collection from the family safety p
 
 
 <!-- ====================================================================== -->
-## Find on page 
+## Find on page
 
 Use the "Find on page" feature to search a webpage for key words.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, click **Settings** (**..**), and then select **Find on page**.  A search box opens.  Enter a word, phrase, or other string into this search box.  As you type, all occurrences of the string in the page are highlighted. You can then move through the search results by clicking the **Previous result** and **Next result** buttons.
 
@@ -475,8 +475,7 @@ While you browse the web, websites can request your device's location from Micro
 
 Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which provides websites access to your device's location. By default, Microsoft Edge asks for your permission before granting a site access to your precise location. To manage site permissions or to always block sites from accessing your precise location, go to `edge://settings/content/location`.
 
-Microsoft Edge provides the site with a location using your device's location services when they're turned on. For more information about how to enable location services on Windows, see [Windows location service and privacy](https://support.microsoft.com/help/4468240). 
-If your device's location services are turned off, Microsoft Edge tries to estimate your location by sending local network information (which might contain nearby Wi-Fi access point information and your device's IP address) to a Microsoft service. 
+Microsoft Edge provides the site with a location using your device's location services when they're turned on. For more information about how to enable location services on Windows, see [Windows location service and privacy](https://support.microsoft.com/help/4468240).  If your device's location services are turned off, Microsoft Edge tries to estimate your location by sending local network information (which might contain nearby Wi-Fi access point information and your device's IP address) to a Microsoft service.
 
 When the site you are on has access to your location, Microsoft Edge shows a location icon in the address bar. You can select this icon to get more information and to manage the location access permissions for this site.
 
@@ -498,13 +497,13 @@ If you want Microsoft Edge not to capture images for your history, select the **
 <!-- ====================================================================== -->
 ## Image descriptions
 
-When browsing the web in Microsoft Edge, screen reader users may encounter images that are not annotated with alt text. Without alt text to describe these images, they are effectively invisible to screen reader users. When Image Descriptions is turned on, Microsoft Edge will detect these images without alt text and send them to Azure Cognitive Services to generate captions. The generated captions are then announced to screen reader users. Even when **Get image descriptions from Microsoft for screen readers** is turned on, images are only sent to the service when a screen reader (or other assistive technology) is connected to Microsoft Edge. 
+When browsing the web in Microsoft Edge, screen reader users may encounter images that are not annotated with alt text. Without alt text to describe these images, they are effectively invisible to screen reader users. When Image Descriptions is turned on, Microsoft Edge will detect these images without alt text and send them to Azure Cognitive Services to generate captions. The generated captions are then announced to screen reader users. Even when **Get image descriptions from Microsoft for screen readers** is turned on, images are only sent to the service when a screen reader (or other assistive technology) is connected to Microsoft Edge.
 
 Only raw image data is sent to Azure Cognitive Services. Images are sent un-encrypted, to reduce latency. No user identifiers are included in the requests to the service. Images aren't stored or saved on Microsoft servers; images are discarded immediately after the captions are generated.
 
-To control Image Descriptions, go to `edge://settings/accessibility`. Toggle the **Get image descriptions from Microsoft for screen readers** setting. 
+To control Image Descriptions, go to `edge://settings/accessibility`. Toggle the **Get image descriptions from Microsoft for screen readers** setting.
 
-Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, right-click the webpage, and select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing. 
+Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, right-click the webpage, and select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing.
 
 
 <!-- ====================================================================== -->
@@ -514,7 +513,7 @@ Microsoft Edge offers an interactive and seamless experience when you launch the
 
 With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.
 
-Importing your data is completed locally on your device and is stored locally.  The imported data is sent to Microsoft only after you do at least one of the following actions: 
+Importing your data is completed locally on your device and is stored locally.  The imported data is sent to Microsoft only after you do at least one of the following actions:
 
 * Sign into Microsoft Edge with a Microsoft account, and turn on sync'ing of your browsing data across all signed-in devices.
 
@@ -528,7 +527,7 @@ You can manage your import preferences any time from `edge://settings/profiles/i
 
 When importing extensions, if the extension is not available on the Microsoft Edge Add-ons website, Microsoft Edge imports a local copy and asks for permission before starting. The permissions for some of the extensions may have changed. To review the extension permissions, go to `edge://extensions`.
 
-Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge. 
+Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge.
 
 
 <!-- ====================================================================== -->
@@ -612,6 +611,8 @@ To speed up load times for the Microsoft Edge new tab page, the page may be load
 
 ![New tab page](./index-images/n-t-p1.png)
 
+
+<!-- ------------------------------ -->
 #### Microsoft News
 
 To tailor content to your interactions and preferences, the new tab page in Microsoft Edge stores cookies with randomly generated identifiers on the device.  A scrubbed version of your IP address is also used to tailor the content to your general region.  TO clear the cookies that persist on your device, go to `edge://settings/siteData`.
@@ -626,6 +627,8 @@ Microsoft Edge collects diagnostic data about how you use the new tab page, such
 
 The new tab page also lets you set a custom image as the background. The image is stored locally on the device and may be deleted by removing the image or uploading a new image. No information about the image is sent to Microsoft.
 
+
+<!-- ------------------------------ -->
 #### Microsoft 365
 
 If you are signed in to Microsoft Edge with a work or school account, your organization may turn on Microsoft 365 as an option for page content on the new tab page. The feature is currently available only for commercial customers under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products). For more information about privacy for Microsoft 365, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls).
@@ -666,7 +669,7 @@ Microsoft Edge lets you save your payment information to your browser profile. M
 
 Microsoft Edge asks you if you want to store your payment information if payment autofill is turned on. The information is encrypted locally on your device. To manage payment information, go to `edge://settings/payments`.  When you delete saved payment information, it no longer appears as an autofill suggestion.
 
-Microsoft Edge also supports saving your payment information to your Microsoft account if you are signed in and syncing, which makes the information available across devices. To save payment information to your Microsoft account, credit card verification (CVV) may be required, depending on your current region. CVV is only used for authorization and will not be stored by Microsoft. 
+Microsoft Edge also supports saving your payment information to your Microsoft account if you are signed in and syncing, which makes the information available across devices. To save payment information to your Microsoft account, credit card verification (CVV) may be required, depending on your current region. CVV is only used for authorization and will not be stored by Microsoft.
 
 Microsoft Edge supports the PaymentRequest API. The API lets you pay for purchases with payment information you previously saved using autofill. The PaymentRequest API allows the merchant to request the following information: credit card number, credit card expiration, full name, billing address, email address, phone number, and shipping address. The API tells the merchant that you have credit card information saved, but does not share any information with the merchant unless you allow it. To turn off the Payments feature, go to `edge://settings/privacy`.
 
@@ -794,8 +797,10 @@ Rewards is an opt-in program. To turn off all Rewards experiences and data shari
 
 ![Rewards Settings UI](./index-images/rewardssettings.png)
 
-Offers may vary by market. 
+Offers may vary by market.
 
+
+<!-- ------------------------------ -->
 #### How to earn
 
 Microsoft Edge provides the greatest number of avenues to earn rewards points while browsing the web.
@@ -804,13 +809,17 @@ A _search_ is the act of an individual user manually entering text for the good 
 
 An _acquisition_ is the process of purchasing goods or downloading and acquiring a license for digital content from Microsoft, whether free or paid ("Acquisition"). Rewards points are not offered for every purchase from Microsoft. Microsoft may offer additional opportunities to earn points from time to time, and each point-earning offer will not be available in perpetuity.
 
+
+<!-- ------------------------------ -->
 #### Redeeming your points
 
 To redeem your points or contribute points to a listed nonprofit organization, go to the [redeem page](https://aka.ms/redeemrewards). You can also sign up for automatic contributions to non-profit organizations through a giving program.
 
+
+<!-- ------------------------------ -->
 #### Cancelling your participation
 
-If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false).<!-- todo: 404 july 10, 2024 -->  If you opt out, you will immediately lose all of your available points. 
+If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false).<!-- todo: 404 july 10, 2024 -->  If you opt out, you will immediately lose all of your available points.
 
 See also:
 * [Learn about Microsoft Rewards](https://support.microsoft.com/topic/learn-about-microsoft-rewards-c5ab735d-c6d9-4bb9-30ad-d828e954b6a9).
@@ -818,29 +827,29 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Search results data for product improvement 
+## Search results data for product improvement
 
 In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone's web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn't own or operate.
 
-* Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected. 
+* Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected.
 
-* Microsoft doesn't use any information we collect to personalize or provide ads to you. 
+* Microsoft doesn't use any information we collect to personalize or provide ads to you.
 
-* The data Microsoft collects is never associated with your account or your device. 
+* The data Microsoft collects is never associated with your account or your device.
 
-* This data collection and setting is not available on managed devices. 
+* This data collection and setting is not available on managed devices.
 
-The data Microsoft collects may include the search query, the search results that are displayed to you, and the interaction you have with those search results, such as the links you click. Microsoft may also collect demographic data. 
+The data Microsoft collects may include the search query, the search results that are displayed to you, and the interaction you have with those search results, such as the links you click. Microsoft may also collect demographic data.
 
-To manage the collection and use of your search results activity for product improvement, do the following: 
+To manage the collection and use of your search results activity for product improvement:
 
 1. Open Microsoft Edge.
 
-1. Select **Settings and more** > **Settings**. 
+1. Select **Settings and more** > **Settings**.
 
-1. Select **Privacy, search, and services**. 
+1. Select **Privacy, search, and services**.
 
-1. Under **Search and service improvement**, turn on or off the setting for **Help improve Microsoft products by sending the results from searches on the web**. 
+1. Under **Search and service improvement**, turn on or off the setting for **Help improve Microsoft products by sending the results from searches on the web**.
 
 If you stop sharing your data, Microsoft may continue to use previously collected search results data, but it will still be de-identified and not associated with you or your device.
 
@@ -973,9 +982,9 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 Microsoft Edge allows you to support nonprofit organizations using Microsoft Rewards points or cash while browsing. When you are signed in to Microsoft Edge with your Microsoft account and navigate to a nonprofit website, the **Support nonprofits** icon appears on the right side of the Address bar. You can then click this icon to donate to the nonprofit organization.
 
 ![The 'Support nonprofits' icon in the address bar](./index-images/support-nonprofit.png)
- 
+
 To control this feature, go to `edge://settings/privacy` and turn on or off the **Show opportunities to support causes and nonprofits you care about** setting.
- 
+
 Supporting nonprofits is not available when using **InPrivate** or **Guest** modes.
 
 
@@ -1006,7 +1015,7 @@ When two or more tabs are grouped together, Microsoft Edge sends information abo
 
 You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs.
 
-All tab information that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time. 
+All tab information that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time.
 
 The Microsoft Edge Tab organization behavior is turned on by default. To turn this behavior off, go to `edge://settings/privacy` and under **Services** turn off the **Let Microsoft Edge help keep your tabs organized** setting:
 
@@ -1074,19 +1083,19 @@ Microsoft Edge Workspaces shares tabs, favorites, and history with collaborators
 
 Collaborators cannot see password-protected content unless they sign in and they have access via their own credentials. Microsoft Edge Workspaces doesn't store or share browsing data from non-workspace browsing sessions. If you leave a workspace, the stored contents remain available for other collaborators. If you delete a workspace, the stored contents are deleted for all collaborators.
 
-Microsoft Edge Workspaces is only available for enterprise customers who are signed into Microsoft Edge with a Microsoft Entra ID account.  Workspaces aren't available when using Guest mode or InPrivate browsing. 
+Microsoft Edge Workspaces is only available for enterprise customers who are signed into Microsoft Edge with a Microsoft Entra ID account.  Workspaces aren't available when using Guest mode or InPrivate browsing.
 
 
 <!-- ====================================================================== -->
 ## Writing assistance
 
-To help you write faster and with fewer mistakes on the web, Microsoft Edge provides writing assistance tools, including spell checking, grammar checking, and text prediction. 
+To help you write faster and with fewer mistakes on the web, Microsoft Edge provides writing assistance tools, including spell checking, grammar checking, and text prediction.
 
 By default, Microsoft Edge provides spelling and grammar checking using **Microsoft Editor**. When using **Microsoft Editor**, Microsoft Edge sends your typed text and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to detect spelling and grammar errors in your text. All your typed text that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time.
 
 If you select **Basic** instead of **Microsoft Editor**, Microsoft Edge will perform only local spellchecking on the device, and no data will be sent to the cloud for spellchecking services.
 
-To use **Basic** spelling and grammar checking: 
+To use **Basic** spelling and grammar checking:
 1. Go to `edge://settings/languages`.
 1. In the **Use writing assistance** section, select **Basic**.
 
@@ -1098,25 +1107,25 @@ To turn off all spelling and grammar capabilities:
 <!-- ------------------------------ -->
 #### Languages
 
-When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device over HTTPS. The dictionary is used for the basic spellcheck service or for languages that aren't supported by Microsoft Editor spelling and grammar checking. Deleting the language from your Microsoft Edge settings deletes the dictionary from the device. 
- 
+When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device over HTTPS. The dictionary is used for the basic spellcheck service or for languages that aren't supported by Microsoft Editor spelling and grammar checking. Deleting the language from your Microsoft Edge settings deletes the dictionary from the device.
+
 
 <!-- ------------------------------ -->
-#### Text prediction 
+#### Text prediction
 
 Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press **Tab** or the **Right Arrow** key to accept them. Password fields will not offer text predictions.
 
-To turn off text predictions in Microsoft Edge: 
+To turn off text predictions in Microsoft Edge:
 
 1. Go to `edge://settings/languages`.
 
 2. Turn off the **Use text prediction** toggle.
 
-If the **Use text prediction** toggle is turned on, Microsoft Edge sends the text in the text box, your top language from the browser setting, and a text box identifier to a Microsoft cloud service over a secure HTTPS connection. The text box identifier is not associated with your account. The Microsoft cloud service processes the text to generate a relevant text prediction. Typed characters and text predictions are cached for up to 30 days, for service quality and performance improvement purposes only.  
+If the **Use text prediction** toggle is turned on, Microsoft Edge sends the text in the text box, your top language from the browser setting, and a text box identifier to a Microsoft cloud service over a secure HTTPS connection. The text box identifier is not associated with your account. The Microsoft cloud service processes the text to generate a relevant text prediction. Typed characters and text predictions are cached for up to 30 days, for service quality and performance improvement purposes only.
 
 If you are browsing while using **InPrivate** or **Guest** mode, text prediction is turned off. Text prediction does not run when you are editing a password field.
 
-If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.  
+If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.
 
 Text prediction is only available in select languages and regions.
 
