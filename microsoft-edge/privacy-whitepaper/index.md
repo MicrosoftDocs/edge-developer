@@ -45,7 +45,7 @@ When you select the Address bar, a signal is sent to your default search provide
 
 1. Use the toggle **Show me search and site suggestions using my typed characters**:
 
-   ![The toggle in Edge Settings for "Show me search and site suggestions using my typed characters"](./index-images/settings-and-more-icon.png)
+   ![The toggle in Edge Settings for "Show me search and site suggestions using my typed characters"](./index-images/search-suggestions-typed-chars.png)
 
    If you turn off that toggle, your typed characters are no longer sent to your default search provider, but your search queries are still sent to your default search provider, to provide search results.<!--per ui: "If you turn this off, you'll only see suggestions from your favorites and history. Typed characters won't be sent to the search engine used in the address bar." -->
 
