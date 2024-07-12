@@ -51,9 +51,9 @@ When you select the Address bar, a signal is sent to your default search provide
 
 
 <!-- ------------------------------ -->
-#### Enterprise Search provider
+#### Microsoft Enterprise Search Provider
 
-If you're signed into Microsoft Edge using your work or school account (AAD account), your typed-in characters are also sent to the Microsoft Enterprise Search provider, which returns the work- or school-related content or cross-device suggested queries to you.  Your tenant admin can choose to turn on or off the work- or school-related content or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search on Bing (MSB) policy.  If your tenant admin turns off that policy, the query suggestions and the results that are returned from your default search engine are shown in your present device's browser, but not in the browsers on your other devices.
+If you're signed into Microsoft Edge using your work or school account (AAD account), your typed-in characters are also sent to Microsoft Enterprise Search Provider, which returns the work- or school-related content or cross-device suggested queries to you.  Your tenant admin can choose to turn on or off the work- or school-related content or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search on Bing (MSB) policy.  If your tenant admin turns off that policy, the query suggestions and the results that are returned from your default search engine are shown in your present device's browser, but not in the browsers on your other devices.
 
 You can further protect your privacy by doing any of the following:
 
