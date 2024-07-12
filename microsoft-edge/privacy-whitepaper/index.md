@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/02/2024
+ms.date: 07/12/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -21,43 +21,100 @@ This whitepaper focuses on the desktop version of Microsoft Edge. Parts of the d
 <!-- ====================================================================== -->
 ## Address bar and suggestions
 
-The address bar allows you to enter website URLs and search the web.  By default, the address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.
+The Address bar allows you to enter website URLs and search the web.  By default, the Address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.
 
 ![Address bar](./index-images/address-bar.png)
 
-To speed up browsing and searching, characters you type into the address bar are sent to your default search provider. The search provider returns suggested search queries.
+To speed up browsing and searching, characters that you type into the Address bar are immediately sent to your default search provider.  The search provider returns suggested search queries.
 
-The address bar categorizes entries as a URL, search, or unknown.  This information, along with which suggestion you select, position of selection, and other address bar data is sent to your default search provider.
+The following information is sent to your default search provider:
+* Address bar entries, categorized as a URL, search, or unknown.
+* Which suggestion you select.
+* The position of the selection.
+* Other Address bar data.
 
-If your search provider is Bing, a resettable identifier unique to your browser is sent with the data. It helps Bing understand the search query and query session. Other autosuggest service identifiers are sent to your default search engine to complete the search suggestions. Your IP address and cookies are sent to your default search provider to increase the relevance of the search results.
+If your search provider is Bing, a resettable identifier unique to your browser is sent with the data.  This helps Bing understand the search query and query session.  Other autosuggest service identifiers are sent to your default search engine, to complete the search suggestions.  Your IP address and cookies are sent to your default search provider, to increase the relevance of the search results.
 
-When you select the address bar, a signal is sent to your default search provider. The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent to Microsoft unless your search provider is Bing.  To enable sending data to your default search provider, go to `edge://settings/privacy`. In **Services**, select **Address bar** and turn on the **Show me search and site suggestions using my typed characters** setting.  If you turn off the setting, your typed characters are no longer sent to your default search provider.  Your search queries are still sent to your default search provider to provide search results.
+When you select the Address bar, a signal is sent to your default search provider. The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent to Microsoft unless your search provider is Bing.  You can control whether typed characters are sent to your default search provider; to enable sending search and site suggestions by using your typed characters in the Address bar to your default search provider:
 
-<!-- The Privacy settings have been updated from what is described here -->
+1. Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**, and then scroll down to the **Services** section.
 
-If Microsoft Edge detects typing in the address bar that might contain sensitive information, it does not send the typed text. Sensitive information includes authentication credentials, local file names, or URL data that is normally encrypted.
+1. Click the **Address bar and search** section.  The **Address bar and search** settings page<!-- edge://settings/search --> opens.
 
-You can configure Microsoft Edge to collect diagnostic data about the address bar. Collected data includes the number of offered queries for all search providers. Go to `edge://settings/privacy`. In **Personalize your web experience** turn on the **Improve your web experience by allowing Microsoft to use your browsing history from this account for personalizing advertising, search, news, and other Microsoft services** setting.
+1. Click the **Search suggestions and filters** section.  The **Search suggestions and filters** settings page<!-- edge://settings/searchFilters --> opens.
 
-Typed characters and the websites you visit are stored locally on the device per profile.  To delete the data, go to `edge://settings/clearBrowserData`. In the **Clear browsing data** window, select the **Browsing history** checkbox, and select the **Clear now** button.
+1. Use the toggle **Show me search and site suggestions using my typed characters**:
 
-If Bing is your default search provider and you are signed in, you may delete your searches through the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy/).  You can clear your browsing history and delete websites from appearing as suggestions in the address bar. Go to `edge://history`, and select **Clear browsing data**.  You can delete the data Microsoft collects from the address bar and search suggestions features on Windows 10 and later. Open **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**. In **Delete diagnostic data**, select **Delete**.  All other data is deleted after 36 months.
+   ![The toggle in Edge Settings for "Show me search and site suggestions using my typed characters"](./index-images/settings-and-more-icon.png)
 
-<!-- Deleting diagnostic data could use rewrite -->
+   If you turn off that toggle, your typed characters are no longer sent to your default search provider, but your search queries are still sent to your default search provider, to provide search results.<!--per ui: "If you turn this off, you'll only see suggestions from your favorites and history. Typed characters won't be sent to the search engine used in the address bar." -->
+
+
+<!-- ------------------------------ -->
+#### Enterprise Search provider
+
+If you're signed into Microsoft Edge using your work or school account (AAD account), your typed-in characters are also sent to the Microsoft Enterprise Search provider, which returns the work- or school-related content or cross-device suggested queries to you.  Your tenant admin can choose to turn on or off the work- or school-related content or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` MSB<!-- todo: "expand MSB" --> policy.  If your tenant admin choses to turn off that policy, you won't see the query suggestions from another device, and won't see all the work-related results from another device, but the query suggestions will still be returned from<!-- todo: from/to/in/by? --> your local browser,<!-- todo: change to "your current device's browser", or strike "local" -->, and results will be returned from your default search engine.
+
+You can further protect your privacy by doing any of the following:
+
+* Turn off the suggested queries entirely, by using the toggle **Show me search and site suggestions using my typed characters**, described above.
+
+* Keep the suggested-queries function, but don't send information about the suggested queries to Microsoft.  To prevent sending this information to Microsoft, go to `edge://settings/privacy`, and then under **Search and service improvement**, turn off the toggle **Help improve Microsoft products by sending the results from searches on the web**.  This data is never associated with you or your device, even if you turn on this setting.
+
+* Delete any query suggestion that you don't like, directly in the Address bar, by using the **X** button on the right side when hovering your mouse over the suggestion.
+
+
+<!-- ------------------------------ -->
+#### Sensitive information that's not sent
+
+<!-- The Privacy settings have been updated from what is described here (assume comment means h2 section) -->
+
+If Microsoft Edge detects typing in the Address bar that might contain sensitive information, Microsoft Edge doesn't send the typed text.  Sensitive information includes:
+* Authentication credentials.
+* Local file names.
+* URL data that's normally encrypted.
+
+
+<!-- ------------------------------ -->
+#### Enabling collecting Address bar diagnostic data
+
+You can configure Microsoft Edge to collect diagnostic data about the Address bar.  Collected data includes the number of offered queries for all search providers.  To enable collecting diagnostic data, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then in **Personalize your web experience**, turn on the setting **Improve your web experience by allowing Microsoft to use your browsing history from this account for personalizing advertising, search, news, and other Microsoft services**.
+
+
+<!-- ------------------------------ -->
+#### Deleting data
+
+Typed characters and the websites that you visit are stored locally on the device, per profile.  To delete that data, go to `edge://settings/clearBrowserData`, and then in the **Clear browsing data** window, select the **Browsing history** checkbox.  Then click the **Clear now** button.
+
+If Bing is your default search provider and you are signed in, you can delete your searches by using the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy/).  You can clear your browsing history and delete websites from appearing as suggestions in the Address bar: go to `edge://history`, and then select **Clear browsing data**.  You can delete the data that Microsoft collects from the Address bar and search suggestions features on Windows 10 and later: open **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**, and then in **Delete diagnostic data**, select **Delete**.<!-- deleting diagnostic data could use rewrite -->  All other data is deleted after 36 months.
+
+
+<!-- ------------------------------ -->
+#### Account-specific search functions
 
 Account-specific search functions are available if you are signed in to Microsoft Edge with a Microsoft work or school account, and Microsoft Search is available. Microsoft may send an anonymous token with your query, to provide account-specific functions, such as results specific to your company.
 
 All data is transmitted securely over HTTPS.  If [Bing](https://bing.com) is your default search provider, the searches and typed characters are saved for up to six months.
 
-If you search for a single word in the address box, Microsoft Edge may send the single word to your DNS server. Sending a single word is a check to see whether it corresponds to a host on your network. If so, Microsoft Edge may try to connect to the corresponding host. This option lets you go to the specific host instead of searching.  For example, if your router uses the hostname `router` and you type `router` in the address bar, you can go to `https://router`, or search for the word `router`.  The feature is not controlled by the **Show me search and site suggestions using my typed characters** setting because it does not involve sending data to your default search engine.
 
-You can control whether or not typed characters are sent to your default search provider. Go to `edge://settings/search`. Toggle the **Show me search and site suggestions using my typed characters** setting.
+<!-- ------------------------------ -->
+#### Single-word search
+
+If you search for a single word in the Address bar, Microsoft Edge may send the single word to your DNS server. Sending a single word is a check to see whether it corresponds to a host on your network. If so, Microsoft Edge may try to connect to the corresponding host. This option lets you go to the specific host instead of searching.  For example, if your router uses the hostname `router` and you type `router` in the Address bar, you can go to `https://router`, or search for the word `router`.  This feature isn't controlled by the **Show me search and site suggestions using my typed characters** setting, because this feature doesn't involve sending data to your default search engine.
 
 <!-- The Search settings seem different from what is described here -->
 
-You can change your default search engine. Go to `edge://settings/search`.  Select the **Search engine used in the address bar** dropdown menu.  If you are browsing while using **InPrivate** or **Guest** mode, your autosuggestions are turned off.  **InPrivate** shows suggestions from your local browsing, such as browsing history and past searches. No typed characters are sent to your default search engine.  **Guest** mode does not display any suggestions or send typed characters to your default search engine.
 
-Data collected by other search providers follow the privacy policy of the company.
+<!-- ------------------------------ -->
+#### Other search providers, InPrivate, and Guest mode
+
+To change your default search engine, go to `edge://settings/search`, and then use the **Search engine used in the address bar** dropdown list.  If you're browsing while using **InPrivate** or **Guest** mode, your autosuggestions are turned off.
+
+**InPrivate** shows suggestions from your local browsing, such as browsing history and past searches.  When using **InPrivate**, no typed characters are sent to your default search engine.
+
+**Guest** mode doesn't display any suggestions or send typed characters to your default search engine.
+
+Data that's collected by other search providers follows the privacy policy of that company.
 
 
 <!-- ====================================================================== -->
