@@ -25,17 +25,17 @@ The Address bar allows you to enter website URLs and search the web.  By default
 
 ![Address bar](./index-images/address-bar.png)
 
-To speed up browsing and searching, characters that you type into the Address bar are immediately sent to your default search provider.  The search provider returns suggested search queries.
+To speed up browsing and searching, characters that you type into the Address bar are immediately sent to your default search provider.  The search provider returns suggested search queries as you type.
 
 The following information is sent to your default search provider:
-* Address bar entries, categorized as a URL, search, or unknown.
+* A list of Address bar entries, categorized as a URL, search, or unknown.
 * Which suggestion you select.
 * The position of the selection.
 * Other Address bar data.
 
-If your search provider is Bing, a resettable identifier unique to your browser is sent with the data.  This helps Bing understand the search query and query session.  Other autosuggest service identifiers are sent to your default search engine, to complete the search suggestions.  Your IP address and cookies are sent to your default search provider, to increase the relevance of the search results.
+If your search provider is Bing, a resettable identifier that's unique to your browser is sent with the data.  This helps Bing understand the search query and query session.  Other autosuggest service identifiers are sent to your default search engine, to complete the search suggestions.  Your IP address and cookies are sent to your default search provider, to increase the relevance of the search results.
 
-When you select the Address bar, a signal is sent to your default search provider. The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent to Microsoft unless your search provider is Bing.  You can control whether typed characters are sent to your default search provider; to enable sending search and site suggestions by using your typed characters in the Address bar to your default search provider:
+When you select the Address bar, a signal is sent to your default search provider.  The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent to Microsoft unless your search provider is Bing.  You can control whether typed characters are sent to your default search provider; to enable sending search and site suggestions by using your typed characters in the Address bar to your default search provider:
 
 1. Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**, and then scroll down to the **Services** section.
 
@@ -53,7 +53,7 @@ When you select the Address bar, a signal is sent to your default search provide
 <!-- ------------------------------ -->
 #### Microsoft Enterprise Search Provider
 
-If you're signed into Microsoft Edge using your work or school account (AAD account), your typed-in characters are also sent to Microsoft Enterprise Search Provider, which returns the work- or school-related content or cross-device suggested queries to you.  Your tenant admin can choose to turn on or off the work- or school-related content or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search on Bing (MSB) policy.  If your tenant admin turns off that policy, the query suggestions and the results that are returned from your default search engine are shown in your present device's browser, but not in the browsers on your other devices.
+If you're signed into Microsoft Edge using your work or school account (AAD account), your typed-in characters are also sent to Microsoft Enterprise Search Provider, which returns the work- or school-related content or cross-device suggested queries to you.  Your administrator can choose to turn on or off the work- or school-related content or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search on Bing (MSB) policy.  If your administrator turns off that policy, the query suggestions and the results that are returned from your default search engine are shown in your present device's browser, but not in the browsers on your other devices.
 
 You can further protect your privacy by doing any of the following:
 
