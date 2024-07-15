@@ -53,7 +53,11 @@ When you select the Address bar, a signal is sent to your default search provide
 <!-- ------------------------------ -->
 #### Microsoft Search in Bing
 
-If you're signed into Microsoft Edge using your work or school account (AAD account), your typed-in characters are also sent to Microsoft Search in Bing, which returns the work- or school-related content or cross-device suggested queries to you.  Your administrator can choose to turn on or off the work- or school-related content or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.  If your administrator turns off that policy, the query suggestions and the results that are returned from your default search engine are shown in your present device's browser, but not in the browsers on your other devices.
+If you're signed into Microsoft Edge using your work or school account (AAD account), your typed-in characters are also sent to Microsoft Search in Bing, which returns the work- or school-related content or cross-device suggested queries to you.  Your administrator can choose to turn on or off the work- or school-related content or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.
+
+If your administrator turns off the `AddressBarMicrosoftSearchInBingProviderEnabled` policy:
+* In Microsoft Edge on your present device, you see the query suggestions that are returned from your default search engine.<!-- do you see "work- or school-related content"? -->
+* In Microsoft Edge on your other devices, you don't see the work results or the query suggestions that you previously searched.<!-- change "results" to "the work- or school-related results"? -->
 
 You can further protect your privacy by doing any of the following:
 
