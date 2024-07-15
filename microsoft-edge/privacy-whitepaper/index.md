@@ -63,7 +63,7 @@ If you're signed into Microsoft Edge using your work or school account (Microsof
 
 Your administrator can choose to turn on or off the work- or school-related results or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.  If your administrator turns off the `AddressBarMicrosoftSearchInBingProviderEnabled` policy:
 * You don't see work- or school- related results from Microsoft Search in Bing.
-* You don't see query suggestions from other devices on which you installed Microsoft Edge.  Regardless of the policy setting, you see query suggestions from your default search engine that you previously searched on the present device.
+* You don't see query suggestions from other devices on which you installed Microsoft Edge.  (Regardless of the policy setting, you see query suggestions from your default search engine that you previously searched on the present device.)
 
 You can further protect your privacy by doing any of the following:
 
