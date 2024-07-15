@@ -62,12 +62,8 @@ You can control whether typed characters are sent to your default search provide
 If you're signed into Microsoft Edge using your work or school account (Microsoft Entra ID account), your typed-in characters are also sent to Microsoft Search in Bing, which returns work- or school-related results and cross-device suggested queries to you.
 
 Your administrator can choose to turn on or off the work- or school-related results or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.  If your administrator turns off the `AddressBarMicrosoftSearchInBingProviderEnabled` policy:
-* In Microsoft Edge on your present device:
-   * You don't see the work- or school- related results from Microsoft Search in Bing.
-   * You see the query suggestions that are returned from your default search engine.
-* In Microsoft Edge on your other devices:
-   * You don't see the work- or school-related results.
-   * You don't see the query suggestions that you previously searched.
+* You don't see work- or school- related results from Microsoft Search in Bing.
+* You don't see query suggestions from other devices on which you installed Microsoft Edge.  Regardless of the policy setting, you see query suggestions from your default search engine that you previously searched on the present device.
 
 You can further protect your privacy by doing any of the following:
 
