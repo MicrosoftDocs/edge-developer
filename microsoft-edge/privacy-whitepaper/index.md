@@ -35,7 +35,13 @@ The following information is sent to your default search provider:
 
 If your search provider is Bing, a resettable identifier that's unique to your browser is sent with the data.  This helps Bing understand the search query and query session.  Other autosuggest service identifiers are sent to your default search engine, to complete the search suggestions.  Your IP address and cookies are sent to your default search provider, to increase the relevance of the search results.
 
-When you select the Address bar, a signal is sent to your default search provider.  The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent to Microsoft unless your search provider is Bing.  You can control whether typed characters are sent to your default search provider; to enable sending search and site suggestions by using your typed characters in the Address bar to your default search provider:
+When you select the Address bar, a signal is sent to your default search provider.  The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent to Microsoft unless your search provider is Bing.
+
+
+<!-- ------------------------------ -->
+#### Controlling whether typed characters are sent
+
+You can control whether typed characters are sent to your default search provider.  To enable sending search and site suggestions by using your typed characters in the Address bar to your default search provider:
 
 1. Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**, and then scroll down to the **Services** section.
 
@@ -53,15 +59,19 @@ When you select the Address bar, a signal is sent to your default search provide
 <!-- ------------------------------ -->
 #### Microsoft Search in Bing
 
-If you're signed into Microsoft Edge using your work or school account (AAD account), your typed-in characters are also sent to Microsoft Search in Bing, which returns the work- or school-related content or cross-device suggested queries to you.  Your administrator can choose to turn on or off the work- or school-related content or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.
+If you're signed into Microsoft Edge using your work or school account (Microsoft Entra ID account), your typed-in characters are also sent to Microsoft Search in Bing, which returns work- or school-related results and cross-device suggested queries to you.
 
-If your administrator turns off the `AddressBarMicrosoftSearchInBingProviderEnabled` policy:
-* In Microsoft Edge on your present device, you see the query suggestions that are returned from your default search engine.<!-- do you see "work- or school-related content"? -->
-* In Microsoft Edge on your other devices, you don't see the work results or the query suggestions that you previously searched.<!-- change "results" to "the work- or school-related results"? -->
+Your administrator can choose to turn on or off the work- or school-related results or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.  If your administrator turns off the `AddressBarMicrosoftSearchInBingProviderEnabled` policy:
+* In Microsoft Edge on your present device:
+   * You don't see the work- or school- related results from Microsoft Search in Bing.
+   * You see the query suggestions that are returned from your default search engine.
+* In Microsoft Edge on your other devices:
+   * You don't see the work- or school-related results.
+   * You don't see the query suggestions that you previously searched.
 
 You can further protect your privacy by doing any of the following:
 
-* Turn off the suggested queries entirely, by using the toggle **Show me search and site suggestions using my typed characters**, described above.
+* Turn off the suggested queries entirely, by using the toggle **Show me search and site suggestions using my typed characters**, as described in [Controlling whether typed characters are sent](#controlling-whether-typed-characters-are-sent), above.
 
 * Keep the suggested-queries function, but don't send information about the suggested queries to Microsoft.  To prevent sending this information to Microsoft, go to `edge://settings/privacy`, and then under **Search and service improvement**, turn off the toggle **Help improve Microsoft products by sending the results from searches on the web**.  This data is never associated with you or your device, even if you turn on this setting.
 
@@ -823,7 +833,7 @@ To redeem your points or contribute points to a listed nonprofit organization, g
 <!-- ------------------------------ -->
 #### Cancelling your participation
 
-If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false).<!-- todo: 404 july 10, 2024 -->  If you opt out, you will immediately lose all of your available points.
+If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://rewards.bing.com/optout).<!-- todo: add confirm param? https://rewards.bing.com/optout?confirm=false-->  If you opt out, you will immediately lose all of your available points.
 
 See also:
 * [Learn about Microsoft Rewards](https://support.microsoft.com/topic/learn-about-microsoft-rewards-c5ab735d-c6d9-4bb9-30ad-d828e954b6a9).
