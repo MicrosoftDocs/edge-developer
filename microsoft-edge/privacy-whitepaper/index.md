@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/12/2024
+ms.date: 07/15/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -88,15 +88,21 @@ If Microsoft Edge detects typing in the Address bar that might contain sensitive
 <!-- ------------------------------ -->
 #### Enabling collecting Address bar diagnostic data
 
-You can configure Microsoft Edge to collect diagnostic data about the Address bar.  Collected data includes the number of offered queries for all search providers.  To enable collecting diagnostic data, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then in **Personalize your web experience**, turn on the setting **Improve your web experience by allowing Microsoft to use your browsing history from this account for personalizing advertising, search, news, and other Microsoft services**.
+You can configure Microsoft Edge to collect diagnostic data about the Address bar.  Collected data includes the number of offered queries for all search providers.<!-- todo: is the number of offered queries the only data that's collected through diagnostic data?  if not, shouldn't list that one only -->  To enable collecting diagnostic data, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**, and then in the **Personalization & advertising** section, turn on the setting **Allow Microsoft to save your browsing activity including history, usage, favorites, web content, and other browsing data to personalize Microsoft Edge and Microsoft services like ads, search, shopping and news.**
 
 
 <!-- ------------------------------ -->
 #### Deleting data
 
-Typed characters and the websites that you visit are stored locally on the device, per profile.  To delete that data, go to `edge://settings/clearBrowserData`, and then in the **Clear browsing data** window, select the **Browsing history** checkbox.  Then click the **Clear now** button.
+Typed characters and the websites that you visit are stored locally on the device, per profile.  To delete that data, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**, and then in the **Delete browsing data** section, click the **Choose what to clear** button; then in the **Delete browsing data** dialog, click the **Clear now** button.
 
-If Bing is your default search provider and you are signed in, you can delete your searches by using the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy/).  You can clear your browsing history and delete websites from appearing as suggestions in the Address bar: go to `edge://history`, and then select **Clear browsing data**.  You can delete the data that Microsoft collects from the Address bar and search suggestions features on Windows 10 and later: open **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**, and then in **Delete diagnostic data**, select **Delete**.<!-- deleting diagnostic data could use rewrite -->  All other data is deleted after 36 months.
+If Bing is your default search provider and you are signed in,<!-- todo: reformat paragraph as 3 list items starting here? --> you can delete your searches by using the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy/).  To clear your browsing history and delete websites from appearing as suggestions in the Address bar: select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**, and then in the **Delete browsing data** section, click the **Choose what to clear** button; then in the **Delete browsing data** dialog, click the **Clear now** button.  You can delete the data that Microsoft collects from the Address bar and search suggestions features on Windows 10 and later: open **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**, and then in **Delete diagnostic data**, select **Delete**.<!-- todo: is this sentence about Start menu for the correct feature?  seems to be about deleting Edge data from within the OS rather than from within Edge --><!-- old comment: deleting diagnostic data could use rewrite -->  All other data is deleted after 36 months.<!-- todo: what is "all other data"? -->
+
+You can also delete your search query history (end-user opt out), from Bing.  See [Suggested searches based on your search history](https://support.microsoft.com/office/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87#bkmk_yoursearchhistory) in _Find what you need with Microsoft Search_.
+
+To delete history data from both Microsoft Edge and the server, for an individual suggestion result, in the list in the Address bar, click **X** to the right of a **Recent searches** history item:
+
+![Deleting history for a specific search suggestion](./index-images/delete-history-for-a-search-suggestion.png)
 
 
 <!-- ------------------------------ -->
@@ -110,21 +116,30 @@ All data is transmitted securely over HTTPS.  If [Bing](https://bing.com) is you
 <!-- ------------------------------ -->
 #### Single-word search
 
-If you search for a single word in the Address bar, Microsoft Edge may send the single word to your DNS server. Sending a single word is a check to see whether it corresponds to a host on your network. If so, Microsoft Edge may try to connect to the corresponding host. This option lets you go to the specific host instead of searching.  For example, if your router uses the hostname `router` and you type `router` in the Address bar, you can go to `https://router`, or search for the word `router`.  This feature isn't controlled by the **Show me search and site suggestions using my typed characters** setting, because this feature doesn't involve sending data to your default search engine.
+If you search for a single word in the Address bar, Microsoft Edge may send the single word to your DNS server.  If the single word corresponds to a host on your network, Microsoft Edge may try to connect to the corresponding host.  For example, if your router uses the hostname `router` and you type `router` in the Address bar, you can either go to `https://router`, or search for the word `router`.
 
-<!-- The Search settings seem different from what is described here -->
+This single word is not sent to your default search engine.  This feature isn't controlled by the **Show me search and site suggestions using my typed characters** setting.
+
+<!-- old comment to check up on in future PR:
+the Search settings seem different from what is described here -->
 
 
 <!-- ------------------------------ -->
-#### Other search providers, InPrivate, and Guest mode
+#### Changing your default search provider
 
-To change your default search engine, go to `edge://settings/search`, and then use the **Search engine used in the address bar** dropdown list.  If you're browsing while using **InPrivate** or **Guest** mode, your autosuggestions are turned off.
+To change your default search engine, go to `edge://settings/search`, and then use the **Search engine used in the address bar** dropdown list.
+
+Data that's collected by other search providers follows the privacy policy of that company.
+
+
+<!-- ------------------------------ -->
+#### How the Address bar is affected by InPrivate and Guest mode
+
+If you're browsing while using **InPrivate** or **Guest** mode, your autosuggestions are turned off.
 
 **InPrivate** shows suggestions from your local browsing, such as browsing history and past searches.  When using **InPrivate**, no typed characters are sent to your default search engine.
 
 **Guest** mode doesn't display any suggestions or send typed characters to your default search engine.
-
-Data that's collected by other search providers follows the privacy policy of that company.
 
 
 <!-- ====================================================================== -->
