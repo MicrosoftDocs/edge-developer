@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 06/28/2024
+ms.date: 07/16/2024
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -47,15 +47,6 @@ Browser emulators are great for testing the responsiveness of a site.  But a bro
 #### Firefox Responsive Design View
 
 Firefox has a [responsive design view](https://developer.mozilla.org/docs/Tools/Responsive_Design_View) that encourages you to stop thinking in terms of specific devices and instead explore how your design changes at common screen sizes, or on your own screen size by dragging the edges of the window.
-
-
-<!-- ------------------------------ -->
-#### EdgeHTML emulation
-<!-- todo: delete section, point to MDN? -->
-
-To emulate Windows Phones, use the Microsoft Edge (EdgeHTML) [built-in emulation](/archive/microsoft-edge/legacy/developer/devtools-guide/emulation).
-
-Use [IE 11 Emulation](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85)) to simulate how your page might look in older versions of Internet Explorer.
 
 
 <!-- ====================================================================== -->
@@ -120,33 +111,12 @@ When you are done, learn how to work with the simulator through [Apple Developer
 > To avoid having to open Xcode every time you want to use the iOS Simulator, open <!--Xcode, or iOS Simulator?-->it, right-click the iOS Simulator icon in your dock, and then select **Keep in Dock**.  Now just click the icon whenever you need it.
 
 
-<!-- ------------------------------ -->
-#### Microsoft Edge (EdgeHTML)
-<!-- todo: delete section, point to MDN? -->
-
-If you need to test your website or app with Microsoft browsers and don't have the necessary versions of Windows to do so, you can use BrowserStack, which supports testing of many combinations of Microsoft browsers and operating systems both past and present.  For example, you can test all versions of Microsoft Edge (Chromium) from version 80 onwards, and Microsoft Edge (EdgeHTML) versions 15 through 18.  Testing of Microsoft Edge is free on BrowserStack.<!--  For more information, see [Microsoft Edge Browser Testing](https://www.browserstack.com/test-on-microsoft-edge-browser) at BrowserStack.  todo: update 404 link, article title not found at site.  https://www.browserstack.com/search?query=microsoft%20edge -->
-
-
 <!-- ====================================================================== -->
 ## Cloud-based emulators and simulators
 
 If you aren't able to use the emulators and you don't have access to real devices, then cloud-based emulators are the next-best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you can automate unit tests for your site across different platforms.
 
-The following list is a sample of cloud-based emulators and testing sites. Review the descriptions for features or capabilities to consider when selecting a testing site. Conduct your own search to find the best cloud-based emulator for your needs.
-
-<!-- todo: delete section/list, use MDN instead -->
-
-* [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
-
-* [Mobileum](https://www.mobileum.com/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
-
-* [HeadSpin](https://www.headspin.io/) helps you perform manual cross-browser testing on thousands of real devices, browsers, and operating systems.  You can record videos of complex bugs and share them through integration such as Slack, JIRA, and more.  Fast forward your go-to-market launch by testing in parallel.
-
-* [LambdaTest](https://www.lambdatest.com/) helps you perform manual cross-browser testing on a combination of various browsers and operating systems.  You can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more.  You can speed-up your testing by running tests in parallel.
-
-* [SauceLabs](https://saucelabs.com) enables you to run unit tests inside of an emulator, which can be useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You can also do manual testing with your site.
-
-* [TestingBot](https://testingbot.com/) helps you do both manual testing and automated testing on various browser and operating system combinations.  Test both your websites and mobile apps on TestingBot's emulators and physical devices.
+See [Emulators](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Testing_strategies#emulators) in _Strategies for carrying out testing_ at MDN.
 
 
 <!-- ====================================================================== -->
