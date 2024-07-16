@@ -22,35 +22,30 @@ This whitepaper focuses on the desktop version of Microsoft Edge. Parts of the d
 ## Address bar and suggestions
 <!-- todo: restructure h2 section into data that's shared when default search provider is Bing, and data that's shared when default search provider is Other.  could be clearer than covering both in tandem -->
 
-The Address bar allows you to enter website URLs and search the web.  By default, the Address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.
+The Address bar allows you to enter website URLs and search the web.  By default, the Address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.<!-- todo: is this sentence true for all search providers?  if not, remove the sentence -->
 
 ![Address bar](./index-images/address-bar.png)
 
 To speed up browsing and searching, characters that you type into the Address bar are immediately sent to your default search provider.  The search provider returns suggested search queries as you type.
 
 The following information is sent to your default search provider:
-* A list of Address bar entries, categorized as a URL, search, or unknown.
+* A list<!-- todo: is this list a list of historical entries? --> of Address bar entries, categorized as a URL, search, or unknown.
 * Which suggestion you select.
 * The position of the selection.
-* Other Address bar data.
+* Other Address bar data.<!-- todo: what data, specifically?  is this non-specific in order to add more data later? -->
 
-If your search provider is Bing, a resettable identifier that's unique to your browser is sent with the data.  This helps Bing understand the search query and query session.  Other autosuggest service identifiers are sent to your default search engine, to complete the search suggestions.  Your IP address and cookies are sent to your default search provider, to increase the relevance of the search results.
+If your search provider is Bing, a resettable identifier that's unique to your browser is sent with the data.  This helps Bing understand the search query and query session.  Other autosuggest service identifiers are sent to your default search engine, to complete the search suggestions.  Your IP address and cookies are sent to your default search provider, to increase the relevance of the search results.<!-- todo: is the 2nd half of this paragraph about all default search engines, or just Bing?  if about all, split into two paragraphs to reduce confusion.  if about all, make consistent; presently, lists info that's sent to the default search provider, but goes on to identify newly mentioned items that are sent to the default search provider -->
 
-When you select the Address bar, a signal is sent to your default search provider.  The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent to Microsoft unless your search provider is Bing.
-
+When you select the Address bar, a signal is sent to your default search provider.  The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent<!-- todo: can you turn this on for other search providers? if so, insert "by default" --> to Microsoft unless your search provider is Bing.
 
 <!-- ------------------------------ -->
 #### Controlling whether typed characters are sent
 
-You can control whether typed characters are sent to your default search provider.  To enable sending search and site suggestions by using your typed characters in the Address bar to your default search provider:
+You can control whether typed characters are sent to your default search provider to provide search and site suggestions.  To enable or disable sending your typed characters in the Address bar to your default search provider:
 
-1. Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**, and then scroll down to the **Services** section.
+1. Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**.<!--edge://settings/privacy-->
 
-1. Click the **Address bar and search** section.  The **Address bar and search** settings page<!-- edge://settings/search --> opens.
-
-1. Click the **Search suggestions and filters** section.  The **Search suggestions and filters** settings page<!-- edge://settings/searchFilters --> opens.
-
-1. Use the toggle **Show me search and site suggestions using my typed characters**:
+1. In the **Services** section, select **Address bar and search** > **Search suggestions and filters**,<!--edge://settings/searchFilters--> and then turn on the **Show me search and site suggestions using my typed characters** toggle:
 
    ![The toggle in Edge Settings for "Show me search and site suggestions using my typed characters"](./index-images/search-suggestions-typed-chars.png)
 
@@ -60,7 +55,7 @@ You can control whether typed characters are sent to your default search provide
 <!-- ------------------------------ -->
 #### Microsoft Search in Bing
 
-If you're signed into Microsoft Edge using your work or school account (Microsoft Entra ID account), your typed-in characters are also sent to Microsoft Search in Bing, which returns work- or school-related results and cross-device suggested queries to you.
+If you're signed into Microsoft Edge using your work or school account (Microsoft Entra ID account), your typed-in characters are also<!--todo: also, in addition to what?  in addition to your default search provider?  state what's being added to, or delete "also"--> sent to Microsoft Search in Bing, which returns work- or school-related results and cross-device suggested queries to you.
 
 Your administrator can choose to turn on or off the work- or school-related results or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.  If your administrator turns off the `AddressBarMicrosoftSearchInBingProviderEnabled` policy:
 * You don't see work- or school- related results from Microsoft Search in Bing.
@@ -68,11 +63,9 @@ Your administrator can choose to turn on or off the work- or school-related resu
 
 You can further protect your privacy by doing any of the following:
 
-* Turn off the suggested queries entirely, by using the toggle **Show me search and site suggestions using my typed characters**, as described in [Controlling whether typed characters are sent](#controlling-whether-typed-characters-are-sent), above.
-
 * Keep the suggested-queries function, but don't send information about the suggested queries to Microsoft.  To prevent sending this information to Microsoft, go to `edge://settings/privacy`, and then under **Search and service improvement**, turn off the toggle **Help improve Microsoft products by sending the results from searches on the web**.  This data is never associated with you or your device, even if you turn on this setting.
 
-* Delete any query suggestion that you don't like, directly in the Address bar, by using the **X** button on the right side when hovering your mouse over the suggestion.
+* Delete any query suggestion that you don't like, directly in the Address bar, by using the **X** button on the right side when hovering your mouse over the suggestion.<!-- todo: remove list item?  might not belong in this list, b/c this item sounds more about helping you improve validity of suggestions than improving privacy.  also, it's covered in "Deleting data" section below, with screenshot: "To delete history data from both Microsoft Edge and the server, for an individual suggestion result, in the list in the Address bar, click **X** to the right of a **Recent searches** history item:" (.png).  if delete this list item, reword list lead-in -->
 
 
 <!-- ------------------------------ -->
