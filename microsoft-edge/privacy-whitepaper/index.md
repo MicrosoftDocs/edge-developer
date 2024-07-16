@@ -20,6 +20,7 @@ This whitepaper focuses on the desktop version of Microsoft Edge. Parts of the d
 
 <!-- ====================================================================== -->
 ## Address bar and suggestions
+<!-- todo: restructure h2 section into data that's shared when default search provider is Bing, and data that's shared when default search provider is Other.  could be clearer than covering both in tandem -->
 
 The Address bar allows you to enter website URLs and search the web.  By default, the Address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.
 
