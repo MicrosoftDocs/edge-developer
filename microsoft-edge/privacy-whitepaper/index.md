@@ -55,17 +55,13 @@ You can control whether typed characters are sent to your default search provide
 <!-- ------------------------------ -->
 #### Microsoft Search in Bing
 
-If you're signed into Microsoft Edge using your work or school account (Microsoft Entra ID account), your typed-in characters are also<!--todo: also, in addition to what?  in addition to your default search provider?  state what's being added to, or delete "also"--> sent to Microsoft Search in Bing, which returns work- or school-related results and cross-device suggested queries to you.
+If you're signed into Microsoft Edge using your work or school account (Microsoft Entra ID account), your typed-in characters are sent to Microsoft Search in Bing, in addition to being sent to your default search engine.  As you type, Microsoft Search in Bing returns work- or school-related results and cross-device suggested queries to you.
 
 Your administrator can choose to turn on or off the work- or school-related results or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.  If your administrator turns off the `AddressBarMicrosoftSearchInBingProviderEnabled` policy:
 * You don't see work- or school- related results from Microsoft Search in Bing.
 * You don't see query suggestions from other devices on which you installed Microsoft Edge.  (Regardless of the policy setting, you see query suggestions from your default search engine that you previously searched on the present device.)
 
-You can further protect your privacy by doing any of the following:
-
-* Keep the suggested-queries function, but don't send information about the suggested queries to Microsoft.  To prevent sending this information to Microsoft, go to `edge://settings/privacy`, and then under **Search and service improvement**, turn off the toggle **Help improve Microsoft products by sending the results from searches on the web**.  This data is never associated with you or your device, even if you turn on this setting.
-
-* Delete any query suggestion that you don't like, directly in the Address bar, by using the **X** button on the right side when hovering your mouse over the suggestion.<!-- todo: remove list item?  might not belong in this list, b/c this item sounds more about helping you improve validity of suggestions than improving privacy.  also, it's covered in "Deleting data" section below, with screenshot: "To delete history data from both Microsoft Edge and the server, for an individual suggestion result, in the list in the Address bar, click **X** to the right of a **Recent searches** history item:" (.png).  if delete this list item, reword list lead-in -->
+To further protect your privacy, you can keep the suggested-queries function, without sending information about the suggested queries to Microsoft.  This data is never associated with you or your device, even if you turn on this setting.  To prevent sending information about the suggested queries to Microsoft, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**, and then in the **Search and service improvement** section, turn off the toggle **Help improve Microsoft products by sending the results from searches on the web**.
 
 
 <!-- ------------------------------ -->
