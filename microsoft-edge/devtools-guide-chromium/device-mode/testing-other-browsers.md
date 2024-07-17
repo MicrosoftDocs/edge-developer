@@ -31,11 +31,11 @@ To make sure your website works for all your users, test your website on other b
 
 There are several different levels of testing that you can do to test your website under different conditions:
 
-* **Browser emulators** help you to quickly test how your website looks and behave at different screen sizes and resolutions, with touch event emulation, and by overriding the User-Agent string that the browser sends. You use browser emulators from the browser you're developing on. See [Browser emulators](#browser-emulators), below.
+* **Browser emulators** help you to quickly test how your website looks and behaves at different screen sizes and resolutions, with touch event emulation, and by overriding the User-Agent string that the browser sends.  You use browser emulators from the browser that you're developing on.  See [Browser emulators](#browser-emulators), below.
 
-* **Device emulators and simulators** enable you to run other devices from the device you're developing on and test your website on these other devices. See [Device emulators and simulators](#device-emulators-and-simulators), below.
+* **Device emulators and simulators** enable you to run other devices from your development machine and test your website as if you were using these other devices.  See [Device emulators and simulators](#device-emulators-and-simulators), below.
 
-* **Cloud-based emulators** enable you to run automated tests for your website across different platforms. See [Cloud-based emulators and simulators](#cloud-based-emulators-and-simulators), below.
+* **Cloud-based emulators** enable you to run automated tests for your website across different platforms.  See [Cloud-based emulators and simulators](#cloud-based-emulators-and-simulators), below.
 
 
 <!-- ====================================================================== -->
