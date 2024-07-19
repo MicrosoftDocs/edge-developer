@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/15/2024
+ms.date: 07/19/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -1171,7 +1171,7 @@ To disable Windows Ink for an entire Windows device, go to **Settings > Bluetoot
 <!-- ====================================================================== -->
 ## Thank you!
 
-Microsoft Edge is made possible by the [Chromium](https://www.chromium.org) open-source project and other open-source software.  To view all of the software credits, go to `edge://credits`.  [Google Chrome Privacy Whitepaper](https://www.google.com/chrome/privacy/whitepaper.html) was used as a source for gathering related information about the Chromium open-source project.
+Microsoft Edge is made possible by the [Chromium](https://www.chromium.org) open-source project and other open-source software.  To view all of the software credits, go to `edge://credits`.  [Understand privacy in Chrome](https://support.google.com/chrome/answer/14225066) was used as a source for gathering related information about the Chromium open-source project.
 
 
 <!-- ====================================================================== -->
