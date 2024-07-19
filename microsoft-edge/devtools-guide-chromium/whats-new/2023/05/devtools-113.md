@@ -49,7 +49,7 @@ You can report non-fatal JavaScript exceptions or similar data to tools such as 
 
 1. Click through the individual stack frames to see the lines in your original code that caused the error.
 
-<!-- todo: For more information, see [Crash Analyzer](../../../crash-analyzer/index.md). -->
+For more information, see [Crash analyzer tool](../../../crash-analyzer/index.md).
 
 See also:
 * [throw - JavaScript | MDN Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)
