@@ -16,10 +16,11 @@ This article walks you through six demo pages to demonstrate resolving JavaScrip
 <!-- ====================================================================== -->
 ## Fix JavaScript errors
 
-The first experience you have with the **Console** is likely to be errors in scripts.
+A major role of the **Console** is to display any JavaScript errors that are found in the webpage.
 
 
-### Demo page: JavaScript error reported in the Console tool
+<!-- ------------------------------ -->
+#### Demo page: JavaScript error reported in the Console tool
 
 1. Open the demo webpage [JavaScript error reported in the Console tool](https://microsoftedge.github.io/Demos/devtools-console/error.html) in a new window or tab.
 
@@ -43,10 +44,11 @@ The first experience you have with the **Console** is likely to be errors in scr
 <!-- ====================================================================== -->
 ## Find and debug network issues
 
-The **Console** also reports network errors.
+The **Console** reports network errors.
 
 
-### Demo page: Network error reported in Console
+<!-- ------------------------------ -->
+#### Demo page: Network error reported in Console
 
 1. Open the demo webpage [Network error reported in Console](https://microsoftedge.github.io/Demos/devtools-console/network-error.html) in a new window or tab.
 
@@ -93,12 +95,14 @@ The **Console** also reports network errors.
    ![The Sources tool displays the line of code with the error](./console-debug-javascript-images/network-error-code-error.png)
 
 
-### Viewing the resulting page when there are no errors in the Console
+<!-- ------------------------------ -->
+#### Viewing the resulting page when there are no errors in the Console
 
 Next, we'll look at the resulting page when there are no errors in the **Console**.
 
 
-#### Demo page: Fixed network error reported in Console
+<!-- ---------- -->
+##### Demo page: Fixed network error reported in Console
 
 1. Open the demo webpage [Fixed network error reported in Console](https://microsoftedge.github.io/Demos/devtools-console/network-error-fixed.html) in a new window or tab.
 
@@ -107,7 +111,8 @@ Next, we'll look at the resulting page when there are no errors in the **Console
    ![The example without any errors loads information from GitHub and displays it](./console-debug-javascript-images/network-error-fixed.png)
 
 
-#### Demo page: Network error reporting in Console and UI
+<!-- ---------- -->
+##### Demo page: Network error reporting in Console and UI
 
 Use defensive coding techniques to avoid the previous user experiences.  Make sure your code catches errors and displays each error in the **Console**, as follows:
 
@@ -147,7 +152,8 @@ Use defensive coding techniques to avoid the previous user experiences.  Make su
 Besides the `throw Error` example in the previous section, you can also create different errors and trace problems in the **Console**.
 
 
-### Demo page: Creating error reports and assertions in Console
+<!-- ------------------------------ -->
+#### Demo page: Creating error reports and assertions in Console
 
 To display two created error messages in the **Console**:
 
@@ -209,7 +215,8 @@ To display two created error messages in the **Console**:
    *  You test for `x >= 40` for the assertion.
 
 
-### Demo page: Creating traces in Console
+<!-- ------------------------------ -->
+#### Demo page: Creating traces in Console
 
 If you aren't sure which function requests another function, use the `console.trace()` method to track which functions are requested in order to get to the current function.
 

@@ -51,7 +51,9 @@ The **Grid** section in the **Layout** pane contains the following 2 sub-section
 
 In the **Layout** tab, in the expandable **Grid** section, the **Overlay display settings** section contains the following UI.
 
-### Dropdown list
+
+<!-- ------------------------------ -->
+#### Dropdown list
 
 Select one of the following options from the dropdown list:
 
@@ -63,13 +65,17 @@ Select one of the following options from the dropdown list:
 
 The following sections explain the **Overlay display settings** dropdown list commands.
 
-#### Hide line labels
+
+<!-- ---------- -->
+##### Hide line labels
 
 In the dropdown list, select **Hide line labels** to hide the labels of the lines for each grid overlay.
 
 ![Hide line labels](./grid-images/grid-hide-line-labels.png)
 
-#### Show line numbers
+
+<!-- ---------- -->
+##### Show line numbers
 
 In the dropdown list, select **Show line numbers** to display the numbers of the lines for each grid overlay (selected by default).
 
@@ -79,7 +85,9 @@ For more information about negative numbers in the grid overlay, see [Line-based
 
 ![Display line numbers](./grid-images/grid-show-line-numbers.png)
 
-#### Show line names
+
+<!-- ---------- -->
+##### Show line names
 
 In the dropdown list, select **Show line names** to view the line names instead of numbers; this displays the names of the lines for each grid overlay when names are provided.  In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.
 
@@ -89,7 +97,9 @@ For more information about line names in the grid overlay, see [Layout using nam
 
 ![Show line names](./grid-images/grid-show-line-names.png)
 
-### Checkboxes
+
+<!-- ------------------------------ -->
+#### Checkboxes
 
 Select any of the checkboxes in the **Overlay display settings** section:
 
@@ -101,7 +111,9 @@ Select any of the checkboxes in the **Overlay display settings** section:
 
 The following sections explain these checkboxes.
 
-#### Show track sizes
+
+<!-- ---------- -->
+##### Show track sizes
 
 Select the **Show track sizes** checkbox, to view the track sizes of the grid.
 
@@ -128,13 +140,17 @@ The row line labels display only computed sizes, since there are no row sizes de
 
 ![Show track sizes](./grid-images/grid-show-track-sizes.png)
 
-#### Show area names
+
+<!-- ---------- -->
+##### Show area names
 
 To view the area names, select the **Show area names** checkbox.  In the example, there are 3 areas in the grid: **top**, **bottom1** and **bottom2**.
 
 ![Show area names](./grid-images/grid-show-area-names.png)
 
-#### Extend grid lines
+
+<!-- ---------- -->
+##### Extend grid lines
 
 Select the **Extend grid lines** checkbox to extend the grid lines to the edge of the viewport along each axis.
 
@@ -146,7 +162,9 @@ Select the **Extend grid lines** checkbox to extend the grid lines to the edge o
 
 The **Grid overlays** section contains a list of grids that are present on the page, each with a checkbox, along with various options.
 
-### Enable overlay views of multiple grids
+
+<!-- ------------------------------ -->
+#### Enable overlay views of multiple grids
 
 To display the overlay grid for multiple grids, select the checkbox next to each name of the grid.  In the example, there are 2 grid overlays enabled, that are each represented with different colors:
 
@@ -155,17 +173,32 @@ To display the overlay grid for multiple grids, select the checkbox next to each
 
 ![Enable overlay views of multiple grids](./grid-images/grid-grid-overlays.png)
 
-### Customize the grid overlay color
+
+<!-- ------------------------------ -->
+#### Customize the grid overlay color
 
 To open the color picker and customize the grid overlay color, click the box next to the name of the grid overlay:
 
 ![Customize the grid overlay color](./grid-images/grid-grid-overlays-color.png)
 
-### Highlight the grid
+
+<!-- ------------------------------ -->
+#### Highlight the grid
 
 To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](./grid-images/show-element-in-element-panel-icon.png)) icon.
 
 ![Highlight the grid](./grid-images/grid-grid-overlays-highlight.png)
+
+
+<!-- ====================================================================== -->
+## See also
+
+<!-- all links from article, in order: -->
+* [Fruit box](https://jec.fyi/demo/css-grid-fruit) - example used in figures in this article.
+* [Snack box](https://jec.fyi/demo/css-grid-snack) - example used in figures in this article.
+* [CSS Grid Layout guide](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) on MDN.
+* [Line-based placement with CSS Grid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid) on MDN.
+* [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines) on MDN.
 
 
 <!-- ====================================================================== -->
