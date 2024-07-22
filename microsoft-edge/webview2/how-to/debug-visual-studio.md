@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/11/2022
+ms.date: 07/22/2024
 ---
 # Debug WebView2 apps with Visual Studio
 
@@ -87,7 +87,7 @@ After doing the above setup, debug your WebView2 app, as follows.
 
 1. In the **Debug Console**, find the output from the debugger.
 
-   ![Debug Console in Visual Studio](./debug-visual-studio-images/console.png)
+   ![Debug Console in Visual Studio](./debug-visual-studio-images/console.png)<!-- todo: update png and maybe other pngs -->
 
 
 <!-- ====================================================================== -->
