@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/02/2024
+ms.date: 07/22/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -532,6 +532,14 @@ To enhance the Kids Mode experience, Microsoft Edge adds a safe keyword to the h
 1.  Choose **Choose what to clear**.
 
 Kids Mode does not collect data for personalization of the news feed or other Microsoft services.  You may not change the privacy settings for Kids Mode.  Other settings like Windows Defender SmartScreen and diagnostic data are configured according to the profile in which Kids Mode was launched.  For more information about diagnostic data about how you use the browser and Windows Defender SmartScreen, see the [Diagnostic Data](#diagnostic-data) and [SmartScreen](#smartscreen) sections.
+
+
+<!-- ====================================================================== -->
+## Magnify Image
+
+Magnify Image is an option available from the context menu when you right-click an image or hit Ctrl twice while hovering an image. It will try to retrieve the largest available version of the image from the website and display it in a new popup window. If your browser has WebNN enabled, which can be checked in the edge://gpu page, there will also be a button to use AI to enhance the image. AI enhancement is done on the device with a model that is downloaded from Microsoft servers when you click the AI enhancement button. Neither the image nor any personally identifiable information will be sent to Microsoft. 
+
+Magnify Image can be disabled via command line flag msEdgeImageMagnifyUI. The Ctrl-Ctrl shortcut can also be disabled in edge://settings.
 
 
 <!-- ====================================================================== -->
