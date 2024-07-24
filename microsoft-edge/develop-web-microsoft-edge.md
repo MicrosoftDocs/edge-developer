@@ -165,9 +165,9 @@ The following sections are tips for using the Microsoft Learn website.
 
 To see details of a screenshot or diagram:
 
-1. Right-click the image, and then select **Open image in new tab**.
+1. Right-click the image, and then select **Open image in new tab** or **Magnify image**.
 
-1. Close the image tab to return to the article.
+1. Close the image tab or popup window to return to the article.
 
 
 <!-- ====================================================================== -->
