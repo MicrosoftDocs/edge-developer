@@ -212,6 +212,11 @@ When loading local content via the `NavigateToString` method, you're directly pr
 Loading local content by using the `NavigateToString` method doesn't make it possible for the resulting document to reference additional web resources such as CSS, image, or script files. The method only lets you specify the string content of the HTML document. To reference additional web resources from your HTML document, use one of the other approaches described in this article, or represent those additional web resources inline in the HTML document.
 
 
+###### Additional web resources resolved in WebView2 process
+
+`NavigateToString` does not support additional web resources, as mentioned above.
+
+
 ###### Size limit
 
 The HTML content string that's passed into the `NavigateToString` method has a size limit of 2MB.  This size limit may be easy to exceed, when the string includes inlined additional resources.  If this size limit is exceeded, an error is returned: "Value does not fall within the expected range".
