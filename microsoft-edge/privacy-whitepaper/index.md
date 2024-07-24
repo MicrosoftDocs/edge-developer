@@ -535,33 +535,33 @@ Kids Mode does not collect data for personalization of the news feed or other Mi
 
 
 <!-- ====================================================================== -->
-## Magnify Image<!-- todo: is the menuitem capital I or lowercase?  global in section -->
+## Magnify Image
 
-To use the Magnify Image feature, right-click an image and then select **Magnify Image**, or press the **Ctrl** key twice while hovering over an image.  The Magnify Image feature retrieves the largest available version of the image from the website and displays it in a popup window.
+To use the Magnify Image feature, right-click an image and then select **Magnify image**, or press the **Ctrl** key twice while hovering over an image.  The Magnify Image feature retrieves the largest available version of the image from the website and displays it in a popup window.
 
 
 <!-- ------------------------------ -->
 #### AI-based image enhancement
 
-If your browser has WebNN enabled, there's also a button<!-- todo: what's the button label?  can we commit to specifying the button label at this time?  [click] the **Foo** button --> to use AI to enhance the image.  To check whether WebNN is enabled, go to the `edge://gpu` page, and then in the **Graphics Feature Status** section, see whether **WebNN** says **Enabled**:<!-- todo: how to control whether WebNN is enabled? -->
+If your browser has the Web Machine Learning Neural Network (WebNN) API enabled, there's also an **AI enhance** button, that enables you to use AI to enhance the image.  To check whether WebNN is enabled, go to the `edge://gpu` page, and then in the **Graphics Feature Status** section, see whether **WebNN** says **Enabled**:
 
 ![The status of the WebNN setting, shown in the edge://gpu page](./index-images/webnn-disabled-gpu.png)
 
-AI-based image enhancement is done on your device by using a model that's downloaded from Microsoft servers when you click the AI enhancement<!-- todo: what's the button label?  can we commit to specifying the button label at this time?  [click] the **Foo** button --> button.  Neither the image nor any personally identifiable information is sent to Microsoft.
+To change the WebNN setting, go to `edge://flags`, search for **Enables WebNN API**, and then select **Default**, **Enabled**, or **Disabled**.
+
+When you click the **AI enhance** button, AI-based image enhancement is done on your device by using a model that's downloaded from Microsoft servers.  Neither the image nor any personally identifiable information is sent to Microsoft.
 
 
 <!-- ------------------------------ -->
 #### Turning off the feature
 
-To turn off the Magnify Image feature, use the command-line flag `msEdgeImageMagnifyUI`.
-<!-- todo: state the gui nav path, if any: eg: 
-; select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Sidebar** > **App and notification settings** > **Foo**, and then use the **Foo** toggle.
--->
+To turn off the Magnify Image feature, use the command-line flag `msEdgeImageMagnifyUI`.  For example, run Microsoft Edge from the command line using the `disable-features` command-line option, as follows:
 
-To turn off the **Ctrl-Ctrl** keyboard shortcut, use `edge://settings`.
-<!-- todo: state the gui nav path, eg: 
-; select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Sidebar** > **App and notification settings** > **Foo**, and then use the **Foo** toggle.
--->
+```
+msedge.exe --disable-features=msEdgeImageMagnifyUI
+```
+
+To turn off the **Ctrl-Ctrl** keyboard shortcut, go to `edge://settings/content/MagnifyImage`.  Or, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Cookies and site permissions** > **Magnify image**, and then use the **Enable Magnify keyboard shortcut** toggle.
 
 
 <!-- ====================================================================== -->
