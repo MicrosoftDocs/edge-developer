@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/19/2024
+ms.date: 07/29/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -75,7 +75,7 @@ See also:
 <!-- ====================================================================== -->
 ## 1.0.2651.64
 
-Release Date: July 23, 2024
+Release Date: July 29, 2024<!-- todo: set both section dates to jul 29, ok? -->
 
 [NuGet package for WebView2 SDK 1.0.2651.64](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2651.64)
 
@@ -87,6 +87,8 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
+
+<!-- ---------- -->
 * Updated the WebMessageObjects API to allow injecting DOM objects into WebView2 content that's constructed via the app, and via the `CoreWebView2.PostWebMessage` API in the other direction.  Added a new web object type to represent a file system handle that can be posted to the web content to provide it with filesystem access.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -169,11 +171,11 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ###### Runtime-only
 
-* Temporarily undoing previous release's update to have the custom user agent apply to out of process iframes.
+* Temporarily un-did the previous release's update, so that in this Release SDK, the custom user agent applies to out-of-process iframes.<!-- todo: check if meaning was preserved, or inverted.  where do relnotes mention this previous update change, if anywhere?  check description there; and link to there.  could be in index.md if recent, or archive.md if older -->
 
 ###### SDK-only
 
-* Fixed x86 for WinRT C# projection (SDK)
+* Fixed x86 for WinRT C# projection (SDK).<!-- todo: delete "(SDK)", b/c we're inside the SDK-only section?  the Prerelease section below (find "projection") lacks that -->
 
 <!-- end of Jul 2024 Release SDK -->
 
@@ -181,7 +183,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- ====================================================================== -->
 ## 1.0.2730-prerelease
 
-Release Date: July 31, 2024
+Release Date: July 29, 2024
 
 [NuGet package for WebView2 SDK 1.0.2730-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2730-prerelease)
 
@@ -193,11 +195,11 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
-* Added new Throttling Controls APIs which allows for efficient resource management by allowing you to throttle JavaScript timers. This is helpful in scenarios where your WebView2 controls needs to remain visible, but consume less resources (e.g. when the user is not interactive). These APIs allow you to
 
-   * Customize script timers (`setTimeout` and `setInterval`) throttling under different page states (foreground, background, and background with intensive throttling)
-   * Throttle script timers in select hosted iframes
-
+<!-- ---------- -->
+* Added new Throttling Controls APIs which allows for efficient resource management by allowing you to throttle JavaScript timers.  This is helpful in scenarios where a WebView2 control needs to remain visible, but needs to consume less resources (such as when the user is not interactive).  These Throttling Controls APIs allow you to:
+   * Customize script timers (`setTimeout` and `setInterval`) throttling under different page states (foreground, background, and background with intensive throttling).
+   * Throttle script timers in select hosted iframes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -212,7 +214,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.2730-prerelease&preserve-view=true)
+* `CoreWebView2Frame` Class:<!-- todo: unlinked this WinRT type, like in .net tab, b/c has many extant members, ok?  or is there special info there, warranting link? -->
    * [CoreWebView2Frame.UseOverrideTimerWakeInterval Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.2730-prerelease&preserve-view=true#useoverridetimerwakeinterval)
 
 * `CoreWebView2Settings` Class:
@@ -220,7 +222,6 @@ The following Experimental APIs have been added in this Prerelease SDK.
    * [CoreWebView2Settings.PreferredForegroundTimerWakeInterval Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.2730-prerelease&preserve-view=true#preferredforegroundtimerwakeinterval)
    * [CoreWebView2Settings.PreferredIntensiveTimerWakeInterval Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.2730-prerelease&preserve-view=true#preferredintensivetimerwakeinterval)
    * [CoreWebView2Settings.PreferredOverrideTimerWakeInterval Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.2730-prerelease&preserve-view=true#preferredoverridetimerwakeinterval)
-  
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -238,7 +239,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
    * [ICoreWebView2ExperimentalSettings9::get_PreferredOverrideTimerWakeIntervalInMilliseconds](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings9?view=webview2-1.0.2730-prerelease&preserve-view=true#get_preferredoverridetimerwakeintervalinmilliseconds)
    * [ICoreWebView2ExperimentalSettings9::put_PreferredOverrideTimerWakeIntervalInMilliseconds](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings9?view=webview2-1.0.2730-prerelease&preserve-view=true#put_preferredoverridetimerwakeintervalinmilliseconds)
    
----  
+---
 
 
 <!-- ------------------------------ -->
@@ -246,6 +247,8 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
+
+<!-- ---------- -->
 * Added `SaveAs` APIs that allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.  These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -347,7 +350,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ---
 
-* Adds support for Web Notification, for non-persistent notifications. The `NotificationReceived` event for `CoreWebView2` controls web notification handling, allowing customization or suppression by the host app. Unhandled notifications default to WebView2's UI.
+
+<!-- ---------- -->
+* Added support for Web Notification, for non-persistent notifications.  The `NotificationReceived` event for `CoreWebView2` controls web notification handling, allowing customization or suppression by the host app.  Unhandled notifications default to WebView2's UI.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -388,15 +393,15 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 ###### Runtime-only
 
-* Fix issue with app window can not be controlled with system commands (Alt+F4, Alt+Space, etc.) when focus is in WebView2 for Visual hosting mode ([Issue #2961](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2961))
-* Fixed a bug in webview2 uwp where find bar was unable to be clicked into from host app
+* Fixed an issue where the app window couldn't be controlled via system commands (such as **Alt+F4** or **Alt+Spacebar**) when the focus was in WebView2 for Visual hosting mode.  ([Issue #2961](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2961))
+* Fixed a bug in WebView2 UWP where the Find bar couldn't be clicked into from the host app.
   
 ###### SDK-only
 
-* Adding missing WinRT CoreWebView2Notification.VibrationPattern API. This can be combined with the stable notification API promotion release notes. 
-* Fixed an issue where KeyDown events from the Winforms WebView2 control did not include the correct ModifierKeys information. ([Issue #1216](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1216))
-* Fixed x86 for WinRT C# projection 
-* Make CreateCoreWebView2Environment and GetAvailableCoreWebView2BrowserVersionString more robust against potential race condition during Runtime update. 
+* Adding the missing WinRT `CoreWebView2Notification.VibrationPattern` API.  This WinRT API can be combined with the stable notification API promotion release notes; see "Web Notification" and `NotificationReceived` for WinRT, immediately above.
+* Fixed an issue where `KeyDown` events from the WinForms WebView2 control didn't include the correct `ModifierKeys` information.  ([Issue #1216](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1216))
+* Fixed x86 for WinRT C# projection.
+* Made `CreateCoreWebView2Environment` and `GetAvailableCoreWebView2BrowserVersionString` more robust against potential race condition during Runtime update.
 
 <!-- end of Jul 2024 Prerelease SDK -->
 
