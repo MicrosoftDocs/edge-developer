@@ -170,6 +170,13 @@ To see details of a screenshot or diagram:
 1. Close the image tab or popup window to return to the article.
 
 
+To magnify an image using keyboard shortcuts:
+
+1. Hover over an image, and then press the **Ctrl** key twice.
+
+1. Press **Esc** to close the popup window.
+
+
 <!-- ====================================================================== -->
 ## Look up key words and terms in "Filter by title" text box
 
