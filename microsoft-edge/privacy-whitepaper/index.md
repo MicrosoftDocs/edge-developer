@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/19/2024
+ms.date: 07/24/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -58,10 +58,14 @@ You can control whether typed characters are sent to your default search provide
 If you're signed into Microsoft Edge using your work or school account (Microsoft Entra ID account), your typed-in characters are sent to Microsoft Search in Bing, in addition to being sent to your default search engine.  As you type, Microsoft Search in Bing returns work- or school-related results and cross-device suggested queries to you.
 
 Your administrator can choose to turn on or off the work- or school-related results or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.  If your administrator turns off the `AddressBarMicrosoftSearchInBingProviderEnabled` policy:
-* You don't see work- or school- related results from Microsoft Search in Bing.
-* You don't see query suggestions from other devices on which you installed Microsoft Edge.  (Regardless of the policy setting, you see query suggestions from your default search engine that you previously searched on the present device.)
+* You won't see work- or school- related results from Microsoft Search in Bing.
+* You won't see query suggestions from other devices on which you installed Microsoft Edge.  (Regardless of the policy setting, you will see query suggestions from your default search engine that you previously searched on the present device.)
 
-To further protect your privacy, you can keep the suggested-queries function, without sending information about the suggested queries to Microsoft.  This data is never associated with you or your device, even if you turn on this setting.  To prevent sending information about the suggested queries to Microsoft, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**, and then in the **Search and service improvement** section, turn off the toggle **Help improve Microsoft products by sending the results from searches on the web**.
+
+<!-- ------------------------------ -->
+#### Preventing sending information about suggested queries
+
+To prevent sending information about suggested queries to Microsoft, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**, and then in the **Search and service improvement** section, turn off the toggle **Help improve Microsoft products by sending the results from searches on the web**.  Even if this setting is on, information about suggested queries is not associated with you or your device.
 
 
 <!-- ------------------------------ -->
