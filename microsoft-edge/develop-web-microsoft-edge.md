@@ -133,7 +133,7 @@ See [Accessibility in Microsoft Edge](accessibility/index.md).
 
 <!-- leaf node (article; omit per PR review) -->
 <!-- ====================================================================== -->
-<!-- ## Privacy whitepaper
+<!-- ## Microsoft Edge Privacy Whitepaper
 
 The Microsoft Edge _browser privacy promise_ provides you with protection, transparency, control, and respect.  Microsoft Edge has many features and services associated with privacy.  This whitepaper explains how your data is used, how to control the different features, and how to manage your collected data.
 
