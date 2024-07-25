@@ -191,6 +191,8 @@ Another scenario where navigating to a string might be useful is if you want to 
 <!-- ------------------------------ -->
 #### Considerations for loading local content by navigating to an HTML string
 
+The HTML content string that's passed into the `NavigateToString` method has a size limit of 2MB.  This size limit may be easy to exceed, when the string includes inlined additional resources.  If this size limit is exceeded, an error is returned: "Value does not fall within the expected range".
+
 
 ###### Origin-based DOM APIs
 
