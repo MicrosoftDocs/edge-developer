@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/29/2024
+ms.date: 07/31/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -75,7 +75,7 @@ See also:
 <!-- ====================================================================== -->
 ## 1.0.2651.64
 
-Release Date: July 29, 2024<!-- todo: set both section dates to jul 29, ok? -->
+Release Date: July 31, 2024
 
 [NuGet package for WebView2 SDK 1.0.2651.64](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2651.64)
 
@@ -171,18 +171,19 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ###### Runtime-only
 
-* Fixed a regression where WebResourceRequested events crash on certain sites. ([Issue #4602](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4602))
+* Fixed a regression where `WebResourceRequested` events crash on certain sites.  ([Issue #4602](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4602))
 
 ###### SDK-only
 
-* Fixed x86 for WinRT C# projection 
+* Fixed x86 for WinRT C# projection.
+
 <!-- end of Jul 2024 Release SDK -->
 
 
 <!-- ====================================================================== -->
 ## 1.0.2730-prerelease
 
-Release Date: July 29, 2024
+Release Date: July 31, 2024
 
 [NuGet package for WebView2 SDK 1.0.2730-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2730-prerelease)
 
@@ -196,7 +197,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-* Added new Throttling Controls APIs which allows for efficient resource management by allowing you to throttle JavaScript timers.  This is helpful in scenarios where a WebView2 control needs to remain visible, but needs to consume less resources (such as when the user is not interactive).  These Throttling Controls APIs allow you to:
+* Added new Throttling Controls APIs which allows for efficient resource management by allowing you to throttle JavaScript timers.  This is helpful in scenarios where a WebView2 control needs to remain visible, but needs to consume fewer resources (such as when the user isn't interacting with the content).  These Throttling Controls APIs allow you to:
    * Customize script timers (`setTimeout` and `setInterval`) throttling under different page states (foreground, background, and background with intensive throttling).
    * Throttle script timers in select hosted iframes.
 
@@ -213,7 +214,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* `CoreWebView2Frame` Class:<!-- todo: unlinked this WinRT type, like in .net tab, b/c has many extant members, ok?  or is there special info there, warranting link? -->
+* `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.UseOverrideTimerWakeInterval Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.2730-prerelease&preserve-view=true#useoverridetimerwakeinterval)
 
 * `CoreWebView2Settings` Class:
