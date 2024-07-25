@@ -1323,7 +1323,7 @@ See also:
 
 Microsoft Defender SmartScreen ("SmartScreen") is enabled by default.  The `IsReputationCheckingRequired` property controls whether SmartScreen is enabled.
 
-If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen).
+If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and in [SmartScreen](../../privacy-whitepaper/index.md#smartscreen) in _Microsoft Edge Privacy Whitepaper_.
 
 See also:
 * [SmartScreen](./data-privacy.md#smartscreen) in _Data and privacy in WebView2_.
