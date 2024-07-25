@@ -171,12 +171,11 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 ###### Runtime-only
 
-* Temporarily un-did the previous release's update, so that in this Release SDK, the custom user agent applies to out-of-process iframes.<!-- todo: check if meaning was preserved, or inverted.  where do relnotes mention this previous update change, if anywhere?  check description there; and link to there.  could be in index.md if recent, or archive.md if older -->
+* Fixed a regression where WebResourceRequested events crash on certain sites. ([Issue #4602](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4602))
 
 ###### SDK-only
 
-* Fixed x86 for WinRT C# projection (SDK).<!-- todo: delete "(SDK)", b/c we're inside the SDK-only section?  the Prerelease section below (find "projection") lacks that -->
-
+* Fixed x86 for WinRT C# projection 
 <!-- end of Jul 2024 Release SDK -->
 
 
