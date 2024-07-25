@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/02/2024
+ms.date: 07/24/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -20,44 +20,124 @@ This whitepaper focuses on the desktop version of Microsoft Edge. Parts of the d
 
 <!-- ====================================================================== -->
 ## Address bar and suggestions
+<!-- todo: restructure h2 section into data that's shared when default search provider is Bing, and data that's shared when default search provider is Other.  could be clearer than covering both in tandem -->
 
-The Address bar allows you to enter website URLs and search the web.  By default, the Address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.
+The Address bar allows you to enter website URLs and search the web.  By default, the Address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.<!-- todo: is this sentence true for all search providers?  if not, remove the sentence -->
 
 ![Address bar](./index-images/address-bar.png)
 
-To speed up browsing and searching, characters you type into the Address bar are sent to your default search provider. The search provider returns suggested search queries.
+To speed up browsing and searching, characters that you type into the Address bar are immediately sent to your default search provider.  The search provider returns suggested search queries as you type.
 
-The Address bar categorizes entries as a URL, search, or unknown.  This information, along with which suggestion you select, position of selection, and other Address bar data is sent to your default search provider.
+The following information is sent to your default search provider:
+* A list<!-- todo: is this list a list of historical entries? --> of Address bar entries, categorized as a URL, search, or unknown.
+* Which suggestion you select.
+* The position of the selection.
+* Other Address bar data.<!-- todo: what data, specifically?  is this non-specific in order to add more data later? -->
 
-If your search provider is Bing, a resettable identifier unique to your browser is sent with the data. It helps Bing understand the search query and query session. Other autosuggest service identifiers are sent to your default search engine to complete the search suggestions. Your IP address and cookies are sent to your default search provider to increase the relevance of the search results.
+If your search provider is Bing, a resettable identifier that's unique to your browser is sent with the data.  This helps Bing understand the search query and query session.  Other autosuggest service identifiers are sent to your default search engine, to complete the search suggestions.  Your IP address and cookies are sent to your default search provider, to increase the relevance of the search results.<!-- todo: is the 2nd half of this paragraph about all default search engines, or just Bing?  if about all, split into two paragraphs to reduce confusion.  if about all, make consistent; presently, lists info that's sent to the default search provider, but goes on to identify newly mentioned items that are sent to the default search provider -->
 
-When you select the Address bar, a signal is sent to your default search provider.  The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent to Microsoft unless your search provider is Bing.  To enable sending data to your default search provider, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services** > **Address bar**, and then turn on the setting **Show me search and site suggestions using my typed characters**.  If you turn off the setting, your typed characters are no longer sent to your default search provider.  Your search queries are still sent to your default search provider to provide search results.
+When you select the Address bar, a signal is sent to your default search provider.  The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent<!-- todo: can you turn this on for other search providers? if so, insert "by default" --> to Microsoft unless your search provider is Bing.
 
-<!-- The Privacy settings have been updated from what is described here -->
+<!-- ------------------------------ -->
+#### Controlling whether typed characters are sent
 
-If Microsoft Edge detects typing in the Address bar that might contain sensitive information, it does not send the typed text. Sensitive information includes authentication credentials, local file names, or URL data that is normally encrypted.
+You can control whether typed characters are sent to your default search provider to provide search and site suggestions.  To enable or disable sending your typed characters in the Address bar to your default search provider:
 
-You can configure Microsoft Edge to collect diagnostic data about the Address bar. Collected data includes the number of offered queries for all search providers.  Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then in **Personalize your web experience**, turn on the setting **Improve your web experience by allowing Microsoft to use your browsing history from this account for personalizing advertising, search, news, and other Microsoft services**.
+1. Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**.<!-- todo: update as separate groups of settings --><!--edge://settings/privacy-->
 
-Typed characters and the websites you visit are stored locally on the device per profile.  To delete the data, go to `edge://settings/clearBrowserData`. In the **Clear browsing data** window, select the **Browsing history** checkbox, and select the **Clear now** button.
+1. In the **Services** section, select **Address bar and search** > **Search suggestions and filters**,<!--edge://settings/searchFilters--> and then turn on the **Show me search and site suggestions using my typed characters** toggle:
 
-If Bing is your default search provider and you are signed in, you can delete your searches by using the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy/).  You can clear your browsing history and delete websites from appearing as suggestions in the Address bar. Go to `edge://history`, and select **Clear browsing data**.  You can delete the data Microsoft collects from the Address bar and search suggestions features on Windows 10 and later. Open **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**. In **Delete diagnostic data**, select **Delete**.  All other data is deleted after 36 months.
+   ![The toggle in Edge Settings for "Show me search and site suggestions using my typed characters"](./index-images/search-suggestions-typed-chars.png)
 
-<!-- Deleting diagnostic data could use rewrite -->
+   If you turn off that toggle, your typed characters are no longer sent to your default search provider, but your search queries are still sent to your default search provider, to provide search results.<!--per ui: "If you turn this off, you'll only see suggestions from your favorites and history. Typed characters won't be sent to the search engine used in the address bar." -->
+
+
+<!-- ------------------------------ -->
+#### Microsoft Search in Bing
+
+If you're signed into Microsoft Edge using your work or school account (Microsoft Entra ID account), your typed-in characters are sent to Microsoft Search in Bing, in addition to being sent to your default search engine.  As you type, Microsoft Search in Bing returns work- or school-related results and cross-device suggested queries to you.
+
+Your administrator can choose to turn on or off the work- or school-related results or query suggestions entirely for your organization, by using the `AddressBarMicrosoftSearchInBingProviderEnabled` Microsoft Search in Bing (MSB) policy.  If your administrator turns off the `AddressBarMicrosoftSearchInBingProviderEnabled` policy:
+* You won't see work- or school- related results from Microsoft Search in Bing.
+* You won't see query suggestions from other devices on which you installed Microsoft Edge.  (Regardless of the policy setting, you will see query suggestions from your default search engine that you previously searched on the present device.)
+
+
+<!-- ------------------------------ -->
+#### Preventing sending information about suggested queries
+
+To prevent sending information about suggested queries to Microsoft, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**,<!-- todo: update as separate groups of settings --> and then in the **Search and service improvement** section, turn off the toggle **Help improve Microsoft products by sending the results from searches on the web**.  Even if this setting is on, information about suggested queries is not associated with you or your device.
+
+
+<!-- ------------------------------ -->
+#### Sensitive information that's not sent
+
+<!-- The Privacy settings have been updated from what is described here (assume comment means h2 section) -->
+
+If Microsoft Edge detects typing in the Address bar that might contain sensitive information, Microsoft Edge doesn't send the typed text.  Sensitive information includes:
+* Authentication credentials.
+* Local file names.
+* URL data that's normally encrypted.
+
+
+<!-- ------------------------------ -->
+#### Enabling collecting Address bar diagnostic data
+
+You can configure Microsoft Edge to collect diagnostic data about the Address bar.  Collected data includes the number of offered queries for all search providers.<!-- todo: is the number of offered queries the only data that's collected through diagnostic data?  if not, shouldn't list that one only.  specify for Enterprise Search Provider & specify for all providers -->  To enable collecting diagnostic data, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**,<!-- todo: update as separate groups of settings --> and then in the **Personalization & advertising** section, turn on the setting **Allow Microsoft to save your browsing activity including history, usage, favorites, web content, and other browsing data to personalize Microsoft Edge and Microsoft services like ads, search, shopping and news.**
+
+
+<!-- ------------------------------ -->
+#### Deleting data
+
+Typed characters and the websites that you visit are stored locally on the device, per profile.  To delete that data, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**,<!-- todo: update as separate groups of settings --> and then in the **Delete browsing data** section, click the **Choose what to clear** button; then in the **Delete browsing data** dialog, click the **Clear now** button.
+
+If Bing is your default search provider and you are signed in,<!-- todo: reformat paragraph as 3 list items starting here? --> you can delete your searches by using the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy/).
+
+To clear your browsing history and delete websites from appearing as suggestions in the Address bar: select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**,<!-- todo: update as separate groups of settings --> and then in the **Delete browsing data** section, click the **Choose what to clear** button; then in the **Delete browsing data** dialog, click the **Clear now** button.
+
+You can delete the data that Microsoft collects from the Address bar and search suggestions features on Windows 10 and later: open **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**, and then in **Delete diagnostic data**, select **Delete**.<!-- todo: is this sentence about Start menu for the correct feature?  seems to be about deleting Edge data from within the OS rather than from within Edge --><!-- old comment: deleting diagnostic data could use rewrite -->  All other data is deleted after 36 months.<!-- todo: what is "all other data"? -->
+
+You can also delete your search query history (end-user opt out), from Bing.  See [Suggested searches based on your search history](https://support.microsoft.com/office/find-what-you-need-with-microsoft-search-d5ed5d11-9e5d-4f1d-b8b4-3d371fe0cb87#bkmk_yoursearchhistory) in _Find what you need with Microsoft Search_.
+
+To delete history data from both Microsoft Edge and the server, for an individual suggestion result, in the list in the Address bar, click **X** to the right of a **Recent searches** history item:
+
+![Deleting history for a specific search suggestion](./index-images/delete-history-for-a-search-suggestion.png)
+
+
+<!-- ------------------------------ -->
+#### Account-specific search functions
 
 Account-specific search functions are available if you are signed in to Microsoft Edge with a Microsoft work or school account, and Microsoft Search is available. Microsoft may send an anonymous token with your query, to provide account-specific functions, such as results specific to your company.
 
 All data is transmitted securely over HTTPS.  If [Bing](https://bing.com) is your default search provider, the searches and typed characters are saved for up to six months.
 
-If you search for a single word in the Address bar, Microsoft Edge may send the single word to your DNS server. Sending a single word is a check to see whether it corresponds to a host on your network. If so, Microsoft Edge may try to connect to the corresponding host. This option lets you go to the specific host instead of searching.  For example, if your router uses the hostname `router` and you type `router` in the Address bar, you can go to `https://router`, or search for the word `router`.  The feature is not controlled by the **Show me search and site suggestions using my typed characters** setting because it does not involve sending data to your default search engine.
 
-You can control whether or not typed characters are sent to your default search provider. Go to `edge://settings/search`. Toggle the **Show me search and site suggestions using my typed characters** setting.
+<!-- ------------------------------ -->
+#### Single-word search
 
-<!-- The Search settings seem different from what is described here -->
+If you search for a single word in the Address bar, Microsoft Edge may send the single word to your DNS server.  If the single word corresponds to a host on your network, Microsoft Edge may try to connect to the corresponding host.  For example, if your router uses the hostname `router` and you type `router` in the Address bar, you can either go to `https://router`, or search for the word `router`.
 
-You can change your default search engine. Go to `edge://settings/search`.  Select the **Search engine used in the address bar** dropdown menu.  If you are browsing while using **InPrivate** or **Guest** mode, your autosuggestions are turned off.  **InPrivate** shows suggestions from your local browsing, such as browsing history and past searches. No typed characters are sent to your default search engine.  **Guest** mode does not display any suggestions or send typed characters to your default search engine.
+This single word is not sent to your default search engine.  This feature isn't controlled by the **Show me search and site suggestions using my typed characters** setting.
 
-Data collected by other search providers follow the privacy policy of the company.
+<!-- old comment to check up on in future PR:
+the Search settings seem different from what is described here -->
+
+
+<!-- ------------------------------ -->
+#### Changing your default search provider
+
+To change your default search engine, go to `edge://settings/search`, and then use the **Search engine used in the address bar** dropdown list.
+
+Data that's collected by other search providers follows the privacy policy of that company.
+
+
+<!-- ------------------------------ -->
+#### How the Address bar is affected by InPrivate and Guest mode
+
+If you're browsing while using **InPrivate** or **Guest** mode, your autosuggestions are turned off.
+
+**InPrivate** shows suggestions from your local browsing, such as browsing history and past searches.  When using **InPrivate**, no typed characters are sent to your default search engine.
+
+**Guest** mode doesn't display any suggestions or send typed characters to your default search engine.
 
 
 <!-- ====================================================================== -->
@@ -149,7 +229,7 @@ To change settings for the sidebar or Copilot pane, select **Settings and more**
 <!-- ------------------------------ -->
 #### Use Compose to rewrite selected text on any webpage
 
-The Compose tool can help rephrase what you've written, and iterate using the same **Tone**, **Format**, and **Length** selections. 
+The Compose tool can help rephrase what you've written, and iterate using the same **Tone**, **Format**, and **Length** selections.
 
 To access the Compose tool directly in a webpage, highlight text longer than five words in any input text field, and then click the **Rewrite with Copilot** button.  Or, press **Alt+I**.
 
@@ -175,7 +255,7 @@ To open Copilot in the Microsoft Edge sidebar, click the **Copilot** (![Copilot 
 
 
 <!-- ------------------------------ -->
-#### Data and consent used by Copilot in Microsoft Edge 
+#### Data and consent used by Copilot in Microsoft Edge
 
 Microsoft Edge determines what data to send to Copilot based on your **query** and your consent to share data with Microsoft.  For questions that don't need **browsing context**, such as "Help me plan a trip to Cannon Beach", Microsoft Edge shares the URL, the page title, your query, and previous conversation history to help Copilot answer your query effectively.
 
@@ -406,7 +486,7 @@ The family group organizer may stop the data collection from the family safety p
 
 
 <!-- ====================================================================== -->
-## Find on page 
+## Find on page
 
 Use the "Find on page" feature to search a webpage for key words.  In a webpage, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).  Or, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Find on page**.  A search box opens.  Enter a word, phrase, or other string into this search box.  As you type, all occurrences of the string in the page are highlighted. You can then move through the search results by clicking the **Previous result** and **Next result** buttons.
 
@@ -426,8 +506,7 @@ While you browse the web, websites can request your device's location from Micro
 
 Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which provides websites access to your device's location. By default, Microsoft Edge asks for your permission before granting a site access to your precise location. To manage site permissions or to always block sites from accessing your precise location, go to `edge://settings/content/location`.
 
-Microsoft Edge provides the site with a location using your device's location services when they're turned on. For more information about how to enable location services on Windows, see [Windows location service and privacy](https://support.microsoft.com/help/4468240). 
-If your device's location services are turned off, Microsoft Edge tries to estimate your location by sending local network information (which might contain nearby Wi-Fi access point information and your device's IP address) to a Microsoft service. 
+Microsoft Edge provides the site with a location using your device's location services when they're turned on. For more information about how to enable location services on Windows, see [Windows location service and privacy](https://support.microsoft.com/help/4468240).  If your device's location services are turned off, Microsoft Edge tries to estimate your location by sending local network information (which might contain nearby Wi-Fi access point information and your device's IP address) to a Microsoft service.
 
 When the site you are on has access to your location, Microsoft Edge shows a location icon in the Address bar. You can select this icon to get more information and to manage the location access permissions for this site.
 
@@ -449,13 +528,13 @@ If you want Microsoft Edge not to capture images for your history, select the **
 <!-- ====================================================================== -->
 ## Image descriptions
 
-When browsing the web in Microsoft Edge, screen reader users may encounter images that are not annotated with alt text. Without alt text to describe these images, they are effectively invisible to screen reader users. When Image Descriptions is turned on, Microsoft Edge will detect these images without alt text and send them to Azure Cognitive Services to generate captions. The generated captions are then announced to screen reader users. Even when **Get image descriptions from Microsoft for screen readers** is turned on, images are only sent to the service when a screen reader (or other assistive technology) is connected to Microsoft Edge. 
+When browsing the web in Microsoft Edge, screen reader users may encounter images that are not annotated with alt text. Without alt text to describe these images, they are effectively invisible to screen reader users. When Image Descriptions is turned on, Microsoft Edge will detect these images without alt text and send them to Azure Cognitive Services to generate captions. The generated captions are then announced to screen reader users. Even when **Get image descriptions from Microsoft for screen readers** is turned on, images are only sent to the service when a screen reader (or other assistive technology) is connected to Microsoft Edge.
 
 Only raw image data is sent to Azure Cognitive Services. Images are sent un-encrypted, to reduce latency. No user identifiers are included in the requests to the service. Images aren't stored or saved on Microsoft servers; images are discarded immediately after the captions are generated.
 
-To control Image Descriptions, go to `edge://settings/accessibility`. Toggle the **Get image descriptions from Microsoft for screen readers** setting. 
+To control Image Descriptions, go to `edge://settings/accessibility`. Toggle the **Get image descriptions from Microsoft for screen readers** setting.
 
-Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, right-click the webpage, and select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing. 
+Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, right-click the webpage, and select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing.
 
 
 <!-- ====================================================================== -->
@@ -465,7 +544,7 @@ Microsoft Edge offers an interactive and seamless experience when you launch the
 
 With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  If you choose to regularly import your browsing data, browsing data will be imported each time Microsoft Edge is launched.
 
-Importing your data is completed locally on your device and is stored locally.  The imported data is sent to Microsoft only after you do at least one of the following actions: 
+Importing your data is completed locally on your device and is stored locally.  The imported data is sent to Microsoft only after you do at least one of the following actions:
 
 * Sign into Microsoft Edge with a Microsoft account, and turn on sync'ing of your browsing data across all signed-in devices.
 
@@ -479,7 +558,7 @@ You can manage your import preferences any time from `edge://settings/profiles/i
 
 When importing extensions, if the extension is not available on the Microsoft Edge Add-ons website, Microsoft Edge imports a local copy and asks for permission before starting. The permissions for some of the extensions may have changed. To review the extension permissions, go to `edge://extensions`.
 
-Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge. 
+Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge.
 
 
 <!-- ====================================================================== -->
@@ -621,7 +700,7 @@ Microsoft Edge lets you save your payment information to your browser profile. M
 
 Microsoft Edge asks you if you want to store your payment information if payment autofill is turned on. The information is encrypted locally on your device. To manage payment information, go to `edge://settings/payments`.  When you delete saved payment information, it no longer appears as an autofill suggestion.
 
-Microsoft Edge also supports saving your payment information to your Microsoft account if you are signed in and syncing, which makes the information available across devices. To save payment information to your Microsoft account, credit card verification (CVV) may be required, depending on your current region. CVV is only used for authorization and will not be stored by Microsoft. 
+Microsoft Edge also supports saving your payment information to your Microsoft account if you are signed in and syncing, which makes the information available across devices. To save payment information to your Microsoft account, credit card verification (CVV) may be required, depending on your current region. CVV is only used for authorization and will not be stored by Microsoft.
 
 Microsoft Edge supports the PaymentRequest API. The API lets you pay for purchases with payment information you previously saved using autofill. The PaymentRequest API allows the merchant to request the following information: credit card number, credit card expiration, full name, billing address, email address, phone number, and shipping address. The API tells the merchant that you have credit card information saved, but does not share any information with the merchant unless you allow it.  To turn off the Payments feature, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings**, and then in the **Search settings** text box, enter **wallet**.  Click the **Open Wallet** button, and then select **Settings** on the left.
 
@@ -751,7 +830,7 @@ The Rewards dashboard (`rewards.bing.com`):
 
 Rewards is an opt-in program.  To turn off all Rewards experiences and data sharing, select Select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Profiles** > **Microsoft Rewards**, and then turn off the setting **Earn Microsoft Rewards in Microsoft Edge**.
 
-Offers may vary by market. 
+Offers may vary by market.
 
 
 <!-- ------------------------------ -->
@@ -773,7 +852,7 @@ To redeem your points or contribute points to a listed nonprofit organization, g
 <!-- ------------------------------ -->
 #### Cancelling your participation
 
-If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://account.microsoft.com/rewards/optout?confirm=false). If you opt out, you will immediately lose all of your available points. 
+If you no longer want to participate in the Microsoft Rewards program, follow the instructions on the [opt out page](https://rewards.bing.com/optout).<!-- todo: add confirm param? https://rewards.bing.com/optout?confirm=false-->  If you opt out, you will immediately lose all of your available points.
 
 See also:
 * [Learn about Microsoft Rewards](https://support.microsoft.com/topic/learn-about-microsoft-rewards-c5ab735d-c6d9-4bb9-30ad-d828e954b6a9).
@@ -781,21 +860,21 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Search results data for product improvement 
+## Search results data for product improvement
 
 In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone's web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn't own or operate.
 
-* Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected. 
+* Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected.
 
-* Microsoft doesn't use any information we collect to personalize or provide ads to you. 
+* Microsoft doesn't use any information we collect to personalize or provide ads to you.
 
-* The data Microsoft collects is never associated with your account or your device. 
+* The data Microsoft collects is never associated with your account or your device.
 
-* This data collection and setting is not available on managed devices. 
+* This data collection and setting is not available on managed devices.
 
-The data Microsoft collects may include the search query, the search results that are displayed to you, and the interaction you have with those search results, such as the links you click. Microsoft may also collect demographic data. 
+The data Microsoft collects may include the search query, the search results that are displayed to you, and the interaction you have with those search results, such as the links you click. Microsoft may also collect demographic data.
 
-To manage the collection and use of your search results activity for product improvement, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy and security**, and then turn on or off the setting for **Help improve Microsoft products by sending the results from searches on the web**.
+To manage the collection and use of your search results activity for product improvement, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Privacy and security**, and then use the toggle **Help improve Microsoft products by sending the results from searches on the web**.
 
 If you stop sharing your data, Microsoft may continue to use previously collected search results data, but it will still be de-identified and not associated with you or your device.
 
@@ -934,7 +1013,7 @@ Microsoft Edge allows you to support nonprofit organizations using Microsoft Rew
 
 ![The 'Support nonprofits' icon in the Address bar](./index-images/support-nonprofit.png)
  
-To control this feature, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then turn on or off the **Show opportunities to support causes and nonprofits you care about** setting.
+To control this feature, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then use the toggle **Show opportunities to support causes and nonprofits you care about**.
  
 Supporting nonprofits is not available when using **InPrivate** or **Guest** modes.
 
@@ -966,7 +1045,7 @@ When two or more tabs are grouped together, Microsoft Edge sends information abo
 
 You can also choose to have Microsoft Edge auto-group all of your tabs, by using the **Group Similar Tabs** feature from the **Tab Action** menu.  In addition to the Title and URL, Microsoft Edge also sends information about which tabs opened another tab, and a timestamp of when a tab was opened.  This additional data allows the service to more accurately suggest Tab Groups, to organize your tabs.
 
-All tab information that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time. 
+All tab information that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time.
 
 The Microsoft Edge Tab organization behavior is turned on by default.  To turn this behavior off, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Search and services**, and then turn off the setting **Let Microsoft Edge help keep your tabs organized**.
 
@@ -1040,19 +1119,19 @@ Microsoft Edge Workspaces shares tabs, favorites, and history with collaborators
 
 Collaborators cannot see password-protected content unless they sign in and they have access via their own credentials. Microsoft Edge Workspaces doesn't store or share browsing data from non-workspace browsing sessions. If you leave a workspace, the stored contents remain available for other collaborators. If you delete a workspace, the stored contents are deleted for all collaborators.
 
-Microsoft Edge Workspaces is only available for enterprise customers who are signed into Microsoft Edge with a Microsoft Entra ID account.  Workspaces aren't available when using Guest mode or InPrivate browsing. 
+Microsoft Edge Workspaces is only available for enterprise customers who are signed into Microsoft Edge with a Microsoft Entra ID account.  Workspaces aren't available when using Guest mode or InPrivate browsing.
 
 
 <!-- ====================================================================== -->
 ## Writing assistance
 
-To help you write faster and with fewer mistakes on the web, Microsoft Edge provides writing assistance tools, including spell checking, grammar checking, and text prediction. 
+To help you write faster and with fewer mistakes on the web, Microsoft Edge provides writing assistance tools, including spell checking, grammar checking, and text prediction.
 
 By default, Microsoft Edge provides spelling and grammar checking using **Microsoft Editor**. When using **Microsoft Editor**, Microsoft Edge sends your typed text and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token doesn't contain any user-identifiable information. A Microsoft cloud service then processes the text to detect spelling and grammar errors in your text. All your typed text that's sent to Microsoft is deleted immediately after processing occurs. No data is stored for any period of time.
 
 If you select **Basic** instead of **Microsoft Editor**, Microsoft Edge will perform only local spellchecking on the device, and no data will be sent to the cloud for spellchecking services.
 
-To use **Basic** spelling and grammar checking: 
+To use **Basic** spelling and grammar checking:
 1. Go to `edge://settings/languages`.
 1. In the **Use writing assistance** section, select **Basic**.
 
@@ -1064,25 +1143,25 @@ To turn off all spelling and grammar capabilities:
 <!-- ------------------------------ -->
 #### Languages
 
-When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device over HTTPS. The dictionary is used for the basic spellcheck service or for languages that aren't supported by Microsoft Editor spelling and grammar checking. Deleting the language from your Microsoft Edge settings deletes the dictionary from the device. 
- 
+When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device over HTTPS. The dictionary is used for the basic spellcheck service or for languages that aren't supported by Microsoft Editor spelling and grammar checking. Deleting the language from your Microsoft Edge settings deletes the dictionary from the device.
+
 
 <!-- ------------------------------ -->
-#### Text prediction 
+#### Text prediction
 
 Microsoft Edge automatically provides word and sentence predictions in certain text boxes on the web. These predictions are only visible to you and are not inserted into the text box until you press **Tab** or the **Right Arrow** key to accept them. Password fields will not offer text predictions.
 
-To turn off text predictions in Microsoft Edge: 
+To turn off text predictions in Microsoft Edge:
 
 1. Go to `edge://settings/languages`.
 
 2. Turn off the **Use text prediction** toggle.
 
-If the **Use text prediction** toggle is turned on, Microsoft Edge sends the text in the text box, your top language from the browser setting, and a text box identifier to a Microsoft cloud service over a secure HTTPS connection. The text box identifier is not associated with your account. The Microsoft cloud service processes the text to generate a relevant text prediction. Typed characters and text predictions are cached for up to 30 days, for service quality and performance improvement purposes only.  
+If the **Use text prediction** toggle is turned on, Microsoft Edge sends the text in the text box, your top language from the browser setting, and a text box identifier to a Microsoft cloud service over a secure HTTPS connection. The text box identifier is not associated with your account. The Microsoft cloud service processes the text to generate a relevant text prediction. Typed characters and text predictions are cached for up to 30 days, for service quality and performance improvement purposes only.
 
 If you are browsing while using **InPrivate** or **Guest** mode, text prediction is turned off. Text prediction does not run when you are editing a password field.
 
-If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.  
+If your device is managed by using group policies set by your organization, the feature may be disabled depending on the administrator's policies of your organization.
 
 Text prediction is only available in select languages and regions.
 
@@ -1113,7 +1192,7 @@ To disable Windows Ink for an entire Windows device, go to **Settings > Bluetoot
 <!-- ====================================================================== -->
 ## Thank you!
 
-Microsoft Edge is made possible by the [Chromium](https://www.chromium.org) open-source project and other open-source software.  To view all of the software credits, go to `edge://credits`.  [Google Chrome Privacy Whitepaper](https://www.google.com/chrome/privacy/whitepaper.html) was used as a source for gathering related information about the Chromium open-source project.
+Microsoft Edge is made possible by the [Chromium](https://www.chromium.org) open-source project and other open-source software.  To view all of the software credits, go to `edge://credits`.  [Understand privacy in Chrome](https://support.google.com/chrome/answer/14225066) was used as a source for gathering related information about the Chromium open-source project.
 
 
 <!-- ====================================================================== -->
