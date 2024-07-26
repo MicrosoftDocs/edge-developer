@@ -22,11 +22,11 @@ When you debug your app in Visual Studio with the native debugger attached, pres
 <!-- ====================================================================== -->
 ## Requirements
 
-*  To debug scripts, the app must be launched from within Visual Studio.
+*  To debug scripts, the app must be launched from within Visual Studio.  You can install both Visual Studio 2019 (to work with most of the WebView2 sample apps) and Visual Studio 2022 (for example, for your own WebView2 app).
 
 *  You cannot attach a debugger to a running WebView2 process.
 
-*  Install Visual Studio 2019 version 16.4 Preview 2 or later.
+*  Install Visual Studio 2019 (version 16.4 Preview 2 or later).  If that's not done yet, see [If you're installing Visual Studio now](#if-youre-installing-visual-studio-now), below.
 
 
 To debug your code, first install and set up the script debugger tools in Visual Studio, per the following two sections.
@@ -35,7 +35,30 @@ To debug your code, first install and set up the script debugger tools in Visual
 <!-- ====================================================================== -->
 ## Install the JavaScript diagnostics component
 
-First, install the **JavaScript diagnostics** component in **Desktop development with C++**, as follows.
+First, install the **JavaScript diagnostics** component in the **Desktop development with C++** workload of Visual Studio, as follows.
+
+
+<!-- ------------------------------ -->
+#### If you're installing Visual Studio now
+
+1. To work with the WebView2 samples, download Visual Studio 2019 (version 16.4 Preview 2 or later), from [Downloads](https://visualstudio.microsoft.com/downloads/), and then run the downloaded installer file.  To work with your own WebView2 app, you might want to do these steps for Visual Studio 2022 as well.
+
+1. In the Visual Studio Installer, select the **Desktop development with C++** workload, so that a checkmark appears, similar to the screenshot in the next section.
+
+1. In the tree of components for the **Desktop development with C++** workload, on the right, select the **JavaScript diagnostics** component, similar to that checkbox shown in the screenshot in the next section.
+
+1. Click the **Install** button.  When the installer finishes, you can reboot your machine to clean up, as the installer suggests.
+
+See also:
+* [Install Visual Studio](./machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.
+
+Continue with [Enable script debugging for WebView2 apps](#enable-script-debugging-for-webview2-apps), below.
+
+
+<!-- ------------------------------ -->
+#### If you've already installed Visual Studio
+
+To work with most of the WebView2 samples, use Visual Studio 2019.  To work with your own WebView2 app, you might want to do these steps for Visual Studio 2022 as well.
 
 1. In the Windows Explorer bar, type `Visual Studio Installer`.
 
@@ -43,7 +66,7 @@ First, install the **JavaScript diagnostics** component in **Desktop development
 
 1. In the Visual Studio Installer, on the installed version, click the **More** button, and then select **Modify**.
 
-1. In Visual Studio, under **Workloads**, select the **Desktop Development with C++** setting:
+1. In Visual Studio, under **Workloads**, select the **Desktop Development with C++** workload, so that a checkmark appears:
 
    ![Visual Studio Modifying Workloads Screen](./debug-visual-studio-images/workloads.png)
 
@@ -51,25 +74,36 @@ First, install the **JavaScript diagnostics** component in **Desktop development
 
 1. In the search box, enter `JavaScript diagnostics`.
 
-1. Select the **JavaScript diagnostics** setting.
-
-1. Click **Modify**.
+1. Select the **JavaScript diagnostics** checkbox:
 
    ![Visual Studio: Modifying values in the 'Individual components' tab](./debug-visual-studio-images/indiv-comp.png)
+
+1. Click the **Modify** button.
 
 
 <!-- ====================================================================== -->
 ## Enable script debugging for WebView2 apps
 
-Second, enable script debugging for WebView2 apps, as follows.
+Second, enable script debugging for WebView2 apps, as follows.  You can open your own WebView2 app in Visual Studio 2019 or 2022.  The following steps walk you through:
+* Using the Win32APISample, which was written using Visual Studio 2019.
+* Opening the sample in Visual Studio 2022 Community edition, which includes updating the project from Visual Studio 2019 to Visual Studio 2022.
+* Working within your own working branch of the WebView2Samples repo, where some of the project files are modified during updating to Visual Studio 2022.
 
-1. Right-click your WebView2 project, and then select **Properties**.
+1. Open Visual Studio 2022, with no project.
+
+1. If not done already, do the steps in [Win32 sample app](../samples/webview2apissample.md), in a new window or tab.
+
+1. Within that article: In the git UI in VS, create your own working branch, such as `user/myalias/WebView2Samples`.<!-- todo: ui steps -->
+
+1. In VS, open the project solution file `WebView2Samples.sln`, such as (on Windows) `C:\Users\myalias\GitHub\WebView2Samples\SampleApps\WebView2Samples.sln`.
+
+1. Right-click the WebView2 project, and then select **Properties**.
 
 1. Under the **Configuration Properties**, select **Debugging**.
 
-1. Under the **Debugger Type**, select **JavaScript (WebView2)**.
+1. Under the **Debugger Type**, select **JavaScript (WebView2)**:
 
-   ![The 'Debugging' configuration property in Visual Studio](./debug-visual-studio-images/enb-js.png)
+   ![The 'Debugging' configuration property in Visual Studio](./debug-visual-studio-images/enb-js.png)<!-- WebView2APISample -->
 
 
 <!-- ====================================================================== -->

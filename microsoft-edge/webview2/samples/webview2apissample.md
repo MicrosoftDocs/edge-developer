@@ -72,12 +72,30 @@ To use Visual Studio 2017, you might also need to install a recent Windows SDK o
 <!-- ====================================================================== -->
 ## Step 4 - Open the solution in Visual Studio
 
-1. On your local drive, open the `.sln` file in Visual Studio:
+1. Open Visual Studio 2022.  (Or, if you have Visual Studio 2019 installed, you can use that version.)  For example, in Windows, in the Start menu, search for **Visual Studio 2022** app, and then click **Open**:
 
+   ![Start menu showing variants of "Visual Studio 2022", including the app to open](./webview2apissample-images/open-vs2022.png)
+
+1. In the **Open recent** dialog, click **Continue without code**, in the lower right:
+
+   ![Continue without code, when starting Visual Studio 2022](./webview2apissample-images/continue-without-code.png)
+
+1. Click the **Git** menu in the upper left, point to **Local Repositories**, and then select **WebView2Samples**.
+
+1. In the lower right, next to the **Solution Explorer** tab, click the **Git Changes** tab, click the down arrow next to the **main** branch name, and then click the **New Branch** button:
+
+   ![Creating a new working branch of the repo, from within Visual Studio](./webview2apissample-images/git-new-branch.png) 
+
+1. In the **Create a new branch** dialog, in the **Branch name** field, enter a branch name, such as `user/<myGitHubUsername>/WebView2Samples`, and then click the **Create** button:
+
+   ![The "Create a new branch" dialog](./webview2apissample-images/create-a-new-branch.png)
+
+1. Click the **Solution Explorer** tab, in the lower right, and then in **Solution Explorer**, double-click **WebView2Samples.sln**.
+
+   Or, the following approach requires more navigation: Select **File** > **Open** > **Project/Solution** > `WebView2Samples.sln`, such as (on Windows): `C:\Users\myUsername\GitHub\WebView2Samples\SampleApps\WebView2Samples.sln`
+
+   Example paths where you may have cloned the WebView2Samples repo to:
    *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2Samples.sln`
-
-   or:
-
    *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2Samples.sln`
 
 The **WebView2APISample** sample and project is the main Win32 sample.
@@ -85,6 +103,8 @@ The **WebView2APISample** sample and project is the main Win32 sample.
 Unlike some other samples, there's not a dedicated `.sln` file in the sample repo directory that contains this sample's Readme.  Instead, the `.sln` file for this sample (including other sample projects as well) is in the parent directory.
 
 ![All projects in the solution in Solution Explorer](./webview2apissample-images/all-projects-in-solution-explorer.png)
+
+Read the next steps, although you might be able to skip to [Step 7 - Build the project using the installed SDK version](#step-7---build-the-project-using-the-installed-sdk-version).
 
 
 <!-- ====================================================================== -->
@@ -100,7 +120,7 @@ Unlike some other samples, there's not a dedicated `.sln` file in the sample rep
 
 <!-- You don't need to install WiX to continue.  Installing WiX is covered in [WiX Burn Bundle to deploy the WebView2 Runtime](./wv2deploymentwixburnbundlesample.md). -->
 
-Continue the steps below.
+Continue with the steps below.
 
 
 <!-- ====================================================================== -->
@@ -140,13 +160,40 @@ Solution Explorer shows several projects, including the **WebView2APISample** pr
 
 At the top of Visual Studio, set the build target, as follows:
 
-1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
+1. In the **Solution Configurations** dropdown list, select **Debug** (or, **Release**).
 
 1. In the **Solution Platforms** dropdown list, select **x86**, **x64**, or **ARM64**.
 
-1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
+1. In **Solution Explorer**, right-click the **WebView2APISample (Visual Studio 2019)** project, and then select **Build**.
 
    ![The WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)
+
+   The project is bold, indicating that it's the default in case you use keyboard shortcuts to build.
+
+   If you're using Visual Studio 2022 and Visual Studio 2019 isn't installed, the error message appears: "The build tools for Visual Studio 2019 (Platform Toolset = 'v142') cannot be found. To build using the v142 build tools, please install Visual Studio 2019 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the **Project** menu or right-click the solution, and then selecting "**Retarget solution**".  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" - note "v170" in that path.
+
+1. Right-click the solution node, **Solution 'WebView2Samples' (2 of 7 projects)**, and then select **Retarget solution**.
+<!-- 
+1. Right-click the project node, **WebView2APISample (Visual Studio 2019)**, and then select **Retarget Projects**.
+-->
+
+1. In the **Retarget Projects** dialog, use the defaults, and then click the **OK** button:
+
+   ![The Retarget Projects dialog](./webview2apissample-images/retarget-projects-in-vs2022.png)
+
+   Output appears, similar to this abbreviated output:
+
+   ```
+   Upgrading project 'WebView2APISample'...
+     Configuration 'Debug|x64': changing Platform Toolset to 'v143' (was 'v142').
+   Upgrading project 'WebView2SampleWinComp'...
+     Configuration 'Debug|Win32': changing Platform Toolset to 'v143' (was 'v142').
+   Retargeting End: 2 completed, 0 failed, 0 skipped
+   ```
+
+   The **Git Changes** tab, next to the **Solution Explorer** tab, shows which files were modified during retargeting projects in order to build the sample projects in Visual Studio 2022 instead of Visual Studio 2019.
+
+1. In **Solution Explorer**, again right-click the **WebView2APISample (Visual Studio 2019)** project, and then select **Build**.
 
    This builds the project file `SampleApps/WebView2APISample/WebView2APISample.vcxproj`.
 
