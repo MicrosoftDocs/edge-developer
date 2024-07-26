@@ -85,23 +85,17 @@ To work with most of the WebView2 samples, use Visual Studio 2019.  To work with
 ## Enable script debugging for WebView2 apps
 
 Second, enable script debugging for WebView2 apps, as follows.  You can open your own WebView2 app in Visual Studio 2019 or 2022.  The following steps walk you through:
-* Using the Win32APISample, which was written using Visual Studio 2019.
-* Opening the sample in Visual Studio 2022 Community edition, which includes updating the project from Visual Studio 2019 to Visual Studio 2022.
+* Using the .
+* Opening the Win32APISample sample in Visual Studio 2022.
 * Working within your own working branch of the WebView2Samples repo, where some of the project files are modified during updating to Visual Studio 2022.
 
-1. Open Visual Studio 2022, with no project.
+1. If not done already, do the steps in [Win32 sample app](../samples/webview2apissample.md) so that the WebView2APISample app builds and runs.  Or open your own WebView2 app project in Visual Studio.
 
-1. If not done already, do the steps in [Win32 sample app](../samples/webview2apissample.md), in a new window or tab.
+1. In Visual Studio, in Solution Explorer, right-click the **WebView2APISample** project (or your own project), and then select **Properties**.
 
-1. Within that article: In the git UI in VS, create your own working branch, such as `user/myalias/WebView2Samples`.<!-- todo: ui steps -->
+1. Under **Configuration Properties**, select **Debugging**.
 
-1. In VS, open the project solution file `WebView2Samples.sln`, such as (on Windows) `C:\Users\myalias\GitHub\WebView2Samples\SampleApps\WebView2Samples.sln`.
-
-1. Right-click the WebView2 project, and then select **Properties**.
-
-1. Under the **Configuration Properties**, select **Debugging**.
-
-1. Under the **Debugger Type**, select **JavaScript (WebView2)**:
+1. For **Debugger Type**, select **JavaScript (WebView2)**, and then click the **OK** button:
 
    ![The 'Debugging' configuration property in Visual Studio](./debug-visual-studio-images/enb-js.png)<!-- WebView2APISample -->
 
@@ -111,17 +105,27 @@ Second, enable script debugging for WebView2 apps, as follows.  You can open you
 
 After doing the above setup, debug your WebView2 app, as follows.
 
-1. To set a breakpoint in your source code, hover to the left of the line number, and click to set a breakpoint.  The JS/TS debug adapter doesn't perform source path mapping.  You must open the exact same path associated with your WebView2.
+1. To set a breakpoint in your source code, hover to the left of the line number, and click to set a breakpoint.  For example, open `WebView2Samples\SampleApps\WebView2APISample\assets\ScenarioJavaScriptDebugIndex.js`, and set a breakpoint on line 2: `console.log("onAddClick+");`, in the body of `function onAddClick() {`:
 
-   ![Adding a breakpoint in Visual Studio](./debug-visual-studio-images/breakpoint.png)
+   ![Adding a breakpoint in Visual Studio 2022](./debug-visual-studio-images/breakpoint-vs-2022.png)
 
-1. To run the debugger, select the bit size of the platform, and then click the green Play button next to **Local Windows Debugger**.  The app runs and the debugger connects to the first WebView2 process that is created.
+   The JS/TS debug adapter doesn't perform source path mapping.  You must open the exact same path associated with your WebView2.
 
-   ![The Local Windows Debugger in Visual Studio](./debug-visual-studio-images/run.png)
+1. To run the debugger, select the bit size of the platform, and then click the green Play button to the left of **Local Windows Debugger**:
 
-1. In the **Debug Console**, find the output from the debugger.
+   ![Running the Local Windows Debugger in Visual Studio](./debug-visual-studio-images/run-local-windows-debugger.png)
 
-   ![Debug Console in Visual Studio](./debug-visual-studio-images/console.png)<!-- todo: update png and maybe other pngs -->
+   The WebView2APISample app (or your own app) runs and opens, and the debugger connects to the first WebView2 process that's created.
+
+1. Trigger running the HTML that uses the .js file that has the breakpoint, by selecting in the WebView2APISample app window, **Scenario** > **Script Debugging** > **JavaScript Local File**.  The file `WebView2APISample/Debug/x64/assets/ScenarioJavaScriptDebugIndex.html` is rendered and run in the sample app:
+
+   ![Rendered HTML file "WebView Script Debugging Example"](./debug-visual-studio-images/webview-script-debugging-example.png)
+
+1. Switch to the Visual Studio window, and then in the **Debug Console**, find the output from the debugger:
+
+   ![Output tab in Visual Studio 2022 showing output from debugger](./debug-visual-studio-images/output-tab-vs2022.png)
+
+   The debugger output shows "This is the very first line of code that executes", because of the line `console.log("This is the very first line of code that executes.");` in the file `WebView2Samples\SampleApps\WebView2APISample\assets\ScenarioJavaScriptDebugIndex.html` (which is titled "WebView Script Debugging Example"):
 
 
 <!-- ====================================================================== -->
