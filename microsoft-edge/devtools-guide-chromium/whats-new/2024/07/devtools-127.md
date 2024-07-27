@@ -1,39 +1,53 @@
 ---
 title: What's New in DevTools (Microsoft Edge 127)
-description: "Icons for browser extensions are displayed instead of blank squares. The DevTools UI in Chinese has changed back to the original font. And more."
+description: "Use Copilot to explain HTML and CSS in the Elements tool. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/25/2024
+ms.date: 07/26/2024
 ---
 # What's New in DevTools (Microsoft Edge 127)
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
+
 <!-- ====================================================================== -->
-## New Experiment: Use Copilot to explain HTML and CSS in the Elements tool
+## Use Copilot to explain HTML and CSS in the Elements tool
 
 <!-- Subtitle: Enable the "Enable CSS Copilot" experiment to ask Copilot about elements and styles.-->
 
-You can use Copilot in the Edge Sidebar to explain HTML elements and CSS styles to help you better understand a particular element in the Elements tool. When the experiment is enabled, you can ask Copilot about an element by clicking on the Copilot button next to it and asking follow-up questions.
+You can use Copilot in the Microsoft Edge Sidebar to explain HTML elements and CSS styles to help you better understand a particular element or style rule that's displayed in the **Elements** tool.  When the experiment is enabled, you can ask Copilot about an element or style rule by clicking the **Copilot** button next to it and then asking follow-up questions.
 
 ![Copilot icon in Elements tool](./devtools-127-images/copilot-explain-elements.png)
 
-To enable this experiment, select the `Enable CSS Copilot` checkbox under `Settings > Experiments`. This experiment is not available when the Sidebar is turned off.
+To enable this experiment, go to DevTools > **Customize and control DevTools (...)** > **Settings** > **Experiments**, and then select the **Enable CSS Copilot** checkbox.  This experiment is not available when the Sidebar is turned off.
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 Microsoft Edge 127 also includes the following updates from the Chromium project:
 
+* [Inspect CSS anchor positioning in the Elements panel](https://developer.chrome.com/blog/new-in-devtools-127#elements-links)
+* [Sources panel improvements](https://developer.chrome.com/blog/new-in-devtools-127#sources)
+   * [Enhanced 'Never Pause Here'](https://developer.chrome.com/blog/new-in-devtools-127#never-pause-here)
+   * [New scroll snap event listeners](https://developer.chrome.com/blog/new-in-devtools-127#snap-event-listeners)
+* [Network panel improvements](https://developer.chrome.com/blog/new-in-devtools-127#network)
+   * [Updated network throttling presets](https://developer.chrome.com/blog/new-in-devtools-127#network-throttling-presets)
+   * [Service worker information in custom fields of the HAR format](https://developer.chrome.com/blog/new-in-devtools-127#har)
+* [Send and receive WebSocket events in the Performance panel](https://developer.chrome.com/blog/new-in-devtools-127#perf-websocket)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-127#misc)
+<!-- todo: maybe delete some items -->
+
+
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 126)](https://developer.chrome.com/blog/new-in-devtools-126) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 127)](https://developer.chrome.com/blog/new-in-devtools-127) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
 
 
 <!-- ====================================================================== -->
