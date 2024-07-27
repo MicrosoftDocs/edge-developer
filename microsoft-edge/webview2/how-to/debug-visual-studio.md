@@ -117,15 +117,15 @@ After doing the above setup, debug your WebView2 app, as follows.
 
    The WebView2APISample app (or your own app) runs and opens, and the debugger connects to the first WebView2 process that's created.
 
-1. Trigger running the HTML that uses the .js file that has the breakpoint, by selecting in the WebView2APISample app window, **Scenario** > **Script Debugging** > **JavaScript Local File**.  The file `WebView2APISample/Debug/x64/assets/ScenarioJavaScriptDebugIndex.html` is rendered and run in the sample app:
+1. Trigger running the HTML that uses the .js file that has the breakpoint, by selecting in the WebView2APISample app window, **Scenario** > **Script Debugging** > **JavaScript Local File**.  The file `WebView2APISample/Debug/x64/assets/ScenarioJavaScriptDebugIndex.html` is rendered (showing "WebView Script Debugging Example" in the titlebar) and run in the sample app:
 
    ![Rendered HTML file "WebView Script Debugging Example"](./debug-visual-studio-images/webview-script-debugging-example.png)
 
-1. Switch to the Visual Studio window, and then in the **Debug Console**, find the output from the debugger:
+1. Switch to the Visual Studio window, and then click the **Output** tab, to display the debugger output:
 
    ![Output tab in Visual Studio 2022 showing output from debugger](./debug-visual-studio-images/output-tab-vs2022.png)
 
-   The debugger output shows "This is the very first line of code that executes", because of the line `console.log("This is the very first line of code that executes.");` in the file `WebView2Samples\SampleApps\WebView2APISample\assets\ScenarioJavaScriptDebugIndex.html` (which is titled "WebView Script Debugging Example"):
+   The debugger output shows "This is the very first line of code that executes", because of the line `console.log("This is the very first line of code that executes.");` in the file `WebView2Samples\SampleApps\WebView2APISample\assets\ScenarioJavaScriptDebugIndex.html`.
 
 
 <!-- ====================================================================== -->
