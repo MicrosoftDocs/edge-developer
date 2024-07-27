@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/22/2024
+ms.date: 07/26/2024
 ---
 # Debug WebView2 apps with Visual Studio
 
@@ -85,7 +85,6 @@ To work with most of the WebView2 samples, use Visual Studio 2019.  To work with
 ## Enable script debugging for WebView2 apps
 
 Second, enable script debugging for WebView2 apps, as follows.  You can open your own WebView2 app in Visual Studio 2019 or 2022.  The following steps walk you through:
-* Using the .
 * Opening the Win32APISample sample in Visual Studio 2022.
 * Working within your own working branch of the WebView2Samples repo, where some of the project files are modified during updating to Visual Studio 2022.
 
