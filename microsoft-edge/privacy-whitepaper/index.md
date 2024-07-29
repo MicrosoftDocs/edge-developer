@@ -1078,25 +1078,25 @@ If you want to stop Microsoft Edge from offering to translate webpages, complete
 
 
 <!-- ====================================================================== -->
-## Real-=time video translation
+## Video translation
 
-Get real-time translation of videos you're watching with audio dubbing in your preferred language.
+Video translation provides real-time audio translation of videos you're watching, with audio dubbing in your preferred language.
 
 
 <!-- ------------------------------ -->
 #### Use Video Translate through the video hover menu
 
-Select the translate icon when you hover over a video to get started.  Simply select the “From” and “To” languages and click on the Translate button to get started.
+To start playing audio in your preferred language, hover over a video, select the **Translate** icon, and then select the **From** and **To** languages.
 
-Please note, there are many factors that affect how accurate the translation is, such as the background music, number of speakers, source language, etc. We are continuously working to improve the quality of translation. However, users should keep in mind that AI generated content may have errors.
+The automatically generated audio might have errors, because the accuracy of the audio translation is affected by factors such as background music, number of speakers, and source language.
 
-If you want to disable the feature, go to `edge://settings/languages` > **Offer to translate videos on supported sites** and turn off the toggle.
+If you want to disable the feature, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Languages** (or go directly do `edge://settings/languages`), and then turn off the toggle **Offer to translate videos on supported sites**.
 
 
 <!-- ------------------------------ -->
-#### Privacy and data protections for Video Translate
+#### Privacy and data protection
 
-The translation is done completely on your device, meaning that no data from the video leaves your machine.  This means that no segment of the video or audio content ever exits the machine or is processed in the cloud.  For the first time, you initiate a translate – a set of language models are downloaded and installed on your device.
+The audio translation is done completely on your device; no data from the video leaves your device, and no segment of the video or audio content ever exits your device or is processed in the cloud.  The first time that initiate audio translation, a set of language models is downloaded and installed on your device.
 
 
 <!-- ====================================================================== -->
