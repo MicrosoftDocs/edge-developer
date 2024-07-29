@@ -112,7 +112,7 @@ After doing the above setup, debug your WebView2 app, as follows.
 
 1. To run the debugger, select the bit size of the platform, and then click the green Play button to the left of **Local Windows Debugger**.
 
-   The WebView2APISample app (or your own app) runs and opens, and the debugger connects to the first WebView2 process that's created.
+   The WebView2APISample app (or your own app) runs and opens, and the debugger connects to the first WebView2 process that's created.  In **Properties** > **Debugger** for the project, **Local Windows Debugger** was set to **JavaScript (WebView2)**.
 
 1. In the WebView2APISample app window, select **Scenario** > **Script Debugging** > **JavaScript Local File**.
 
