@@ -120,7 +120,9 @@ After doing the above setup, debug your WebView2 app, as follows.
 
    When setting a breakpoint, you must open the file that's in the exact same path that's associated with your WebView2 control, because the JS/TS debug adapter doesn't perform source path mapping.  
 
-1. To run the debugger, select the bit size of the platform, and then do any of the following: 
+1. Select the bit size of the platform, such as **x64**.
+
+1. To run the debugger, do any of the following: 
 
    * In the menu bar, select **Debug** > **Start Debugging (F5)**.
    * In Solution Explorer, right-click the project > **Debug** > **Start New Instance** or **Step Into New Instance**.
@@ -128,11 +130,29 @@ After doing the above setup, debug your WebView2 app, as follows.
     
    The WebView2APISample app (or your own app) runs and opens, and the debugger connects to the first WebView2 process that's created.  In **Properties** > **Debugging** for the project, **Local Windows Debugger** was set to **JavaScript (WebView2)**.
 
+1. In Visual Studio, click the **Output** tab, in the lower right.
+
+   The tab contains only the following message, which mentions the JS debugger: "Verbose logs are written to: C:\Users\myUsername\AppData\Local\Temp\visualstudio-js-debugger.txt".
+
 1. In the WebView2APISample app window, select **Scenario** > **Script Debugging** > **JavaScript Local File**.
 
    The file `WebView2APISample/Debug/x64/assets/ScenarioJavaScriptDebugIndex.html` is rendered:
 
    ![Rendered HTML file "WebView Script Debugging Example"](./debug-visual-studio-images/webview-script-debugging-example.png)
+
+1. In Visual Studio, examine the **Output** pane.  The following output has been added:
+
+   ```
+   This is the very first line of code that executes.
+   Second
+   Third
+   inside
+   onAddClick+
+   onAddClick-
+   onAddClick+
+   onAddClick-
+   End
+   ```
 
 1. In the webpage in the app, click the **Add a new item** popup button.
 
