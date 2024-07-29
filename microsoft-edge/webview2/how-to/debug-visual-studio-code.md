@@ -125,7 +125,7 @@ You will also need to add a new REGKEY `<yourApp.exe> = --remote-debugging-port=
 1. Right-click the `AdditionalBrowserArguments` folder, select **New**, and then select **String Value**.
 Rename `New Value #1` to `<yourApp.exe>`.
 
-1. Right click the **\*** value, and then select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify that the edit window matches the following:
+1. Right click the **<yourApp.exe>** value, and then select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify that the edit window matches the following:
 
    ![Set Registry Key](./debug-visual-studio-code-images/set-debugging-port.png)
 
