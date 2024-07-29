@@ -112,18 +112,18 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 
 Your WebView2 control must open the Chrome Developer Protocol (CDP) port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a CDP port open, before starting the debugger.
 
-You will also need to add a new REGKEY `*--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port. To add this registry key:
+You will also need to add a new REGKEY `<yourApp.exe> = --remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port. To add this registry key:
 
 1. Open the Registry Editor by pressing the **Windows logo key** and then searching for **registry editor**. Open the **Registry Editor** application, and then select **Yes** to allow editing.
 
-1. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` equal to `--remote-debugging-port=9222`.
+1. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments\<yourApp.exe>` equal to `--remote-debugging-port=9222`.
 
    To do this, in the editor, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` by clicking on each subfolder under the path.
 
    If this path doesn't exist, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft` in the editor, right-click the `Microsoft` folder, select **New**, and then select **Key**.  Enter `Edge` for the name of the new key.  Continue to do this for each subfolder until you have the full path: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
 
 1. Right-click the `AdditionalBrowserArguments` folder, select **New**, and then select **String Value**.
-Rename `New Value #1` to `*`.
+Rename `New Value #1` to `<yourApp.exe>`.
 
 1. Right click the **\*** value, and then select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify that the edit window matches the following:
 
