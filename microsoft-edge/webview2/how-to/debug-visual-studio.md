@@ -104,27 +104,33 @@ Second, enable script debugging for WebView2 apps, as follows.  You can open you
 
 After doing the above setup, debug your WebView2 app, as follows.
 
-1. To set a breakpoint in your source code, hover to the left of the line number, and click to set a breakpoint.  For example, open `WebView2Samples\SampleApps\WebView2APISample\assets\ScenarioJavaScriptDebugIndex.js`, and set a breakpoint on line 2: `console.log("onAddClick+");`, in the body of `function onAddClick() {`:
-
-   ![Adding a breakpoint in Visual Studio 2022](./debug-visual-studio-images/breakpoint-vs-2022.png)
-
-   The JS/TS debug adapter doesn't perform source path mapping.  You must open the exact same path associated with your WebView2.
-
-1. To run the debugger, select the bit size of the platform, and then click the green Play button to the left of **Local Windows Debugger**:
+1. To set a breakpoint in your source code, hover to the left of the line number, and click to set a breakpoint.  For example, open `WebView2Samples\SampleApps\WebView2APISample\assets\ScenarioJavaScriptDebugIndex.js`, and set a breakpoint on line 2: `console.log("onAddClick+");`, in the body of the `onAddClick` function:
 
    ![Running the Local Windows Debugger in Visual Studio](./debug-visual-studio-images/run-local-windows-debugger.png)
 
+   When setting a breakpoint, you must open the file that's in the exact same path that's associated with your WebView2 control, because the JS/TS debug adapter doesn't perform source path mapping.  
+
+1. To run the debugger, select the bit size of the platform, and then click the green Play button to the left of **Local Windows Debugger**.
+
    The WebView2APISample app (or your own app) runs and opens, and the debugger connects to the first WebView2 process that's created.
 
-1. Trigger running the HTML that uses the .js file that has the breakpoint, by selecting in the WebView2APISample app window, **Scenario** > **Script Debugging** > **JavaScript Local File**.  The file `WebView2APISample/Debug/x64/assets/ScenarioJavaScriptDebugIndex.html` is rendered (showing "WebView Script Debugging Example" in the titlebar) and run in the sample app:
+1. In the WebView2APISample app window, select **Scenario** > **Script Debugging** > **JavaScript Local File**.
+
+   The file `WebView2APISample/Debug/x64/assets/ScenarioJavaScriptDebugIndex.html` is rendered:
 
    ![Rendered HTML file "WebView Script Debugging Example"](./debug-visual-studio-images/webview-script-debugging-example.png)
 
-1. Switch to the Visual Studio window, and then click the **Output** tab, to display the debugger output:
+1. In the webpage in the app, click the **Add a new item** popup button.
+
+   The breakpoint in the `onAddClick` function is hit, and the app is paused in the debugger.
+
+1. Switch to the Visual Studio window, and examine the debugger panes.
+
+1. Click the **Output** tab, to display the app's output:
 
    ![Output tab in Visual Studio 2022 showing output from debugger](./debug-visual-studio-images/output-tab-vs2022.png)
 
-   The debugger output shows "This is the very first line of code that executes", because of the line `console.log("This is the very first line of code that executes.");` in the file `WebView2Samples\SampleApps\WebView2APISample\assets\ScenarioJavaScriptDebugIndex.html`.
+   The app output shows "This is the very first line of code that executes", because of the line `console.log("This is the very first line of code that executes.");` in the file `WebView2Samples\SampleApps\WebView2APISample\assets\ScenarioJavaScriptDebugIndex.html`.
 
 
 <!-- ====================================================================== -->
@@ -132,9 +138,11 @@ After doing the above setup, debug your WebView2 app, as follows.
 
 ### Virtual source path mapping not supported in Visual Studio 2019
 
-If you use the WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) method, the debugger in Visual Studio 2019 doesn't understand the virtual source path mapping, so breakpoints don't work correctly.
+If you use the WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) method, the debugger in Visual Studio 2019<!-- or VS 2022? --> doesn't understand the virtual source path mapping, so breakpoints don't work correctly.
 
-Virtual source path mapping works when you use the debugger in <!-- Visual Studio 2022 or? -->Visual Studio Code.
+When setting a breakpoint, you must open the file that's in the exact same path that's associated with your WebView2 control, because the JS/TS debug adapter doesn't perform source path mapping.  
+
+Virtual source path mapping is supported by the debugger in Visual Studio Code.<!-- what about Visual Studio? -->
 
 
 <!-- ====================================================================== -->
