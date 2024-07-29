@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/24/2024
+ms.date: 07/29/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -1078,6 +1078,28 @@ If you want to stop Microsoft Edge from offering to translate webpages, complete
 
 
 <!-- ====================================================================== -->
+## Real-=time video translation
+
+Get real-time translation of videos you're watching with audio dubbing in your preferred language.
+
+
+<!-- ------------------------------ -->
+#### Use Video Translate through the video hover menu
+
+Select the translate icon when you hover over a video to get started.  Simply select the “From” and “To” languages and click on the Translate button to get started.
+
+Please note, there are many factors that affect how accurate the translation is, such as the background music, number of speakers, source language, etc. We are continuously working to improve the quality of translation. However, users should keep in mind that AI generated content may have errors.
+
+If you want to disable the feature, go to `edge://settings/languages` > **Offer to translate videos on supported sites** and turn off the toggle.
+
+
+<!-- ------------------------------ -->
+#### Privacy and data protections for Video Translate
+
+The translation is done completely on your device, meaning that no data from the video leaves your machine.  This means that no segment of the video or audio content ever exits the machine or is processed in the cloud.  For the first time, you initiate a translate – a set of language models are downloaded and installed on your device.
+
+
+<!-- ====================================================================== -->
 ## Web apps and Pinned sites
 
 Microsoft Edge lets you install web apps made by website developers and pin your favorite sites.
@@ -1170,6 +1192,8 @@ Aggregate feature usage data is collected to measure frequency of usage and late
 To opt out of Windows Ink for Microsoft Edge, go to `edge://settings/content/HandwritingToText`, and then in the **Site permissions > Handwriting To Text** section, turn off the **Turn handwriting into text on input fields** toggle.
 
 To disable Windows Ink for an entire Windows device, go to **Settings > Bluetooth & devices > Pen & Windows Ink > Shell Handwriting**, and then turn off the **Use your handwriting to enter text** toggle.
+
+<!-- end of "Writing assistance" h2 section -->
 
 
 <!-- ====================================================================== -->
