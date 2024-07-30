@@ -1080,9 +1080,9 @@ If you want to stop Microsoft Edge from offering to translate webpages, complete
 <!-- ====================================================================== -->
 ## Video translation
 
-Video translation provides real-time audio translation of videos you're watching, with audio dubbing in your preferred language.
+Video translation provides real-time translation of the audio of videos you're watching, with audio dubbing in your preferred language.
 
-The first time you initiate audio translation, a set of language models is downloaded and installed on your device.  Video translation is done locally, on your device.  No data from the video is sent to Microsoft.
+The first time you initiate video translation, a set of language models is downloaded and installed on your device.  Video translation is done locally, on your device.  No data from the video is sent to Microsoft.
 
 To disable video translation, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Languages**, and then turn off the **Offer to translate videos on supported sites** toggle.
 
