@@ -24,6 +24,9 @@ You can use Copilot in the Microsoft Edge Sidebar to explain HTML elements and C
 
 To enable this experiment, go to DevTools > **Customize and control DevTools (...)** > **Settings** > **Experiments**, and then select the **Enable CSS Copilot** checkbox.  This experiment is not available when the Sidebar is turned off.
 
+See also:
+* [Enable CSS Copilot](../../../experimental-features/index.md#enable-css-copilot) in _Experimental features in Microsoft Edge DevTools_.
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
