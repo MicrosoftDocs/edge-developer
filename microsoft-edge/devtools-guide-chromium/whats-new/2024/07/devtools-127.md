@@ -38,9 +38,6 @@ Microsoft Edge 127 also includes the following updates from the Chromium project
    * [Updated network throttling presets](https://developer.chrome.com/blog/new-in-devtools-127#network-throttling-presets)
    * [Service worker information in custom fields of the HAR format](https://developer.chrome.com/blog/new-in-devtools-127#har)
 * [Send and receive WebSocket events in the Performance panel](https://developer.chrome.com/blog/new-in-devtools-127#perf-websocket)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-127#misc)
-<!-- todo: maybe delete some items -->
-
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
