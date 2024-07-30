@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/29/2024
+ms.date: 07/30/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -1082,21 +1082,9 @@ If you want to stop Microsoft Edge from offering to translate webpages, complete
 
 Video translation provides real-time audio translation of videos you're watching, with audio dubbing in your preferred language.
 
+The first time you initiate audio translation, a set of language models is downloaded and installed on your device.  Video translation is done locally, on your device.  No data from the video is sent to Microsoft.
 
-<!-- ------------------------------ -->
-#### Use Video Translate through the video hover menu
-
-To start playing audio in your preferred language, hover over a video, select the **Translate** icon, and then select the **From** and **To** languages.
-
-The automatically generated audio might have errors, because the accuracy of the audio translation is affected by factors such as background music, number of speakers, and source language.
-
-If you want to disable the feature, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Languages** (or go directly do `edge://settings/languages`), and then turn off the toggle **Offer to translate videos on supported sites**.
-
-
-<!-- ------------------------------ -->
-#### Privacy and data protection
-
-The audio translation is done completely on your device; no data from the video leaves your device, and no segment of the video or audio content ever exits your device or is processed in the cloud.  The first time that initiate audio translation, a set of language models is downloaded and installed on your device.
+To disable video translation, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Settings** > **Languages**, and then turn off the **Offer to translate videos on supported sites** toggle.
 
 
 <!-- ====================================================================== -->
