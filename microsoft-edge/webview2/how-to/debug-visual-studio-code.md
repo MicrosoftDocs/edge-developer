@@ -120,7 +120,7 @@ You also need to add a new REGKEY `<yourApp.exe> = --remote-debugging-port=9222`
 
 1. If the `\Edge\WebView2\AdditionalBrowserArguments` part of that path doesn't exist, create those three nested subfolders, as follows:
 
-   1. To create the `\Edge` subfolder: In the folder tree, right-click the `HKEY_CURRENT_USER\Software\Policies\Microsoft` folder, hover over **New**, and then select **Key**.  A folder is added as a child of the **Microsoft** folder, initially named `New Key #1`.  Right-click the `New Key #1` folder, and then select **Rename**.  Enter `Edge` for the name of the new key.
+   1. To create the `\Edge` subfolder: In the folder tree, right-click the `HKEY_CURRENT_USER\Software\Policies\Microsoft` folder, hover over **New**, and then select **Key**.  A folder is added as a child of the `Microsoft` folder, initially named `New Key #1`.  Right-click the `New Key #1` folder, and then select **Rename**.  Enter `Edge` for the name of the new key.
 
    1. Create the `\WebView2` subfolder, as in the previous step.
 
