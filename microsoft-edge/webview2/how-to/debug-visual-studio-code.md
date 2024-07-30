@@ -103,7 +103,7 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "type": "msedge",
 "port": 9222,
 "request": "attach",
-"runtimeExecutable": "C:/path/to/your/webview2/app.exe",
+"runtimeExecutable": "C:/path/to/your/webview2/myApp.exe",
 "env": {
    "Path": "%path%;e:/path/to/your/build/location; "
 },
@@ -112,7 +112,7 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 
 Your WebView2 control must open the Chrome Developer Protocol (CDP) port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a CDP port open, before starting the debugger.
 
-You also need to add a new REGKEY `<yourApp.exe> = --remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port.  To add this registry key:
+You also need to add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port.  To add this registry key:
 
 1. Press the **Windows logo key** and then search for **registry editor**.  Open the **Registry Editor** app, and then click **Yes** to allow editing.
 
