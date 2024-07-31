@@ -16,7 +16,7 @@ ms.date: 07/26/2024
 <!-- ====================================================================== -->
 ## Use Copilot to explain HTML and CSS in the Elements tool
 
-<!-- Subtitle: Enable the "Enable CSS Copilot" experiment to ask Copilot about elements and styles.-->
+<!-- Subtitle: Enable the "Enable CSS Copilot" experiment to ask Copilot about elements and styles. -->
 
 You can use Copilot in the Microsoft Edge Sidebar to explain HTML elements and CSS styles to help you better understand a particular element or style rule that's displayed in the **Elements** tool.  When the experiment is enabled, you can ask Copilot about an element or style rule by clicking the **Copilot** button next to it and then asking follow-up questions.
 
