@@ -45,17 +45,7 @@ For this sample, you don't need to separately install the WebView2 SDK.  Below, 
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install a preview channel of Microsoft Edge
-
-1.  Install the WebView2 Runtime on devices that have Windows 10 version 1803 (build 17134) or later, by installing from either location:
-   * To directly download just the Runtime, use the **Download the WebView2 Runtime** section of the [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) page at `developer.microsoft.com`.
-   * To download and install a Microsoft Edge preview channel (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).  The preview channels are also called _Insider channels_.  The preview channels include the WebView2 Runtime.
-
-Then continue with the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 3 - Create a blank WinUI 3 project
+## Step 2 - Create a blank WinUI 3 project
 
 To create a WebView2 app, start by creating a basic desktop project, to create a desktop app that contains a single main window:
 
@@ -124,7 +114,7 @@ The above values represent:
 
 
 <!-- ====================================================================== -->
-## Step 4 - Add a WebView2 control
+## Step 3 - Add a WebView2 control
 
 This tutorial project is based on the project template **Blank App, Packaged (WinUI in Desktop)**.  This project template uses the WindowsAppSDK, which includes the WebView2 SDK.
 
@@ -218,7 +208,7 @@ API Reference:
 
 
 <!-- ====================================================================== -->
-## Step 5 - Add navigation controls
+## Step 4 - Add navigation controls
 
 To allow users to control which webpage is displayed in the WebView2 control, add an address bar to the app, as follows:
 
@@ -291,7 +281,7 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## Step 6 - Navigation events
+## Step 5 - Navigation events
 
 In this section, you add code to import the WebView2 Core library.
 
@@ -365,7 +355,7 @@ In this section, you add code to import the WebView2 Core library.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Scripting
+## Step 6 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript is run with specific timing, to either:
 
