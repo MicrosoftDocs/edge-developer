@@ -107,13 +107,13 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
    ![Initial project in Visual Studio 2022 using .NET Core WPF Application template](wpf-images/initial-project-core-2022.png)
 
-Skip to [Step 4 - Build and run the initial project without WebView2](#step-4---build-and-run-the-initial-project-without-webview2) below.
+Skip to [Step 3 - Build and run the initial project without WebView2](#step-3---build-and-run-the-initial-project-without-webview2) below.
 
 
 <!-- project template title: WPF App (.NET Framework) -->
 #### Creating a WPF App (.NET Framework) project
 
-If you are creating a WPF App (.NET Framework) project, do the following steps.  Otherwise, skip to [Step 4 - Build and run the initial project without WebView2](#step-4---build-and-run-the-initial-project-without-webview2).
+If you are creating a WPF App (.NET Framework) project, do the following steps.  Otherwise, skip to [Step 3 - Build and run the initial project without WebView2](#step-3---build-and-run-the-initial-project-without-webview2).
 
 1. Open Microsoft Visual Studio, such as Visual Studio 2022.
 
