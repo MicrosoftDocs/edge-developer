@@ -41,8 +41,6 @@ This sample is built as a Win32 [Visual Studio 2019](https://visualstudio.micros
 
 1. Install [Visual Studio](https://visualstudio.microsoft.com/vs/), including C++ support.
 
-The [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) is recommended for the installation.<!-- TODO: give actionable steps/instructions -->  The minimum version is 86.0.622.38.
-
 
 <!-- ====================================================================== -->
 ## Step 2: Clone the WebView2Samples repo
