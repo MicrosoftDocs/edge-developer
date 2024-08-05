@@ -114,7 +114,7 @@ methods:
           description: Name of the property of which to set the value.
           type: string
         - id: propertyValue
-          description: Value to set the property.
+          description: Value to set the property to.
           type: any
       return:
         type: any
@@ -135,7 +135,7 @@ methods:
       content: 'setLocalProperty(propertyName: string, propertyValue: any): any;'
       parameters:
         - id: propertyName
-          description: Name of the property to get the value of.
+          description: Name of the property of which to set the value.
           type: string
         - id: propertyValue
           description: Value to set the property to.
