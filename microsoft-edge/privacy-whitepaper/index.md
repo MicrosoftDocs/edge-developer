@@ -613,19 +613,15 @@ Kids Mode does not collect data for personalization of the news feed or other Mi
 <!-- ====================================================================== -->
 ## Magnify Image
 
-To use the Magnify Image feature, right-click an image and then select **Magnify image**, or press the **Ctrl** key twice while hovering over an image.  The Magnify Image feature retrieves the largest available version of the image from the website and displays it in a popup window.
+To use the Magnify Image feature, right-click an image and then select **Magnify image**, or press **Ctrl-Ctrl** while hovering over an image.  The Magnify Image feature retrieves the largest available version of the image from the website and displays it in a popup window.
 
-
-<!-- ------------------------------ -->
-#### Turning off the keyboard shortcut
-
-To turn off the **Ctrl-Ctrl** keyboard shortcut, go to `edge://settings/content/MagnifyImage`.  Or, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Cookies and site permissions** > **Magnify image**, and then use the **Enable Magnify keyboard shortcut** toggle.
+To turn off the **Ctrl-Ctrl** keyboard shortcut, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Cookies and site permissions** > **Magnify image**, and then turn off the **Enable Magnify keyboard shortcut** toggle.
 
 
 <!-- ------------------------------ -->
 #### AI-based image enhancement
 
-When you click the **AI enhance** button, AI-based image enhancement is done on your device by using a model that's downloaded from Microsoft servers.  Neither the image nor any personally identifiable information is sent to Microsoft.
+When you click the **AI enhance** button at the bottom of the popup window, AI-based image enhancement is done on your device by using a model that's downloaded from Microsoft servers.  Neither the image nor personally identifiable information is sent to Microsoft.
 
 
 <!-- ====================================================================== -->
