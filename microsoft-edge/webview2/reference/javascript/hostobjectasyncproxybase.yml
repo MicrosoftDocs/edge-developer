@@ -134,4 +134,4 @@ methods:
         type: any
         description: >-
           The value of the property after it is set.
-extends: <a href="https://learn.microsoft.com/microsoft-edge/webview2/reference/javascript/hostobjectasyncproxybase">CallableFunction</a>
+extends: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a>
