@@ -143,4 +143,4 @@ methods:
       return:
         type: any
         description: The value of the property after it is set.
-extends: <a href="https://microsoft.github.io/PowerBI-JavaScript/interfaces/_node_modules_typedoc_node_modules_typescript_lib_lib_es5_d_.callablefunction.html">CallableFunction</a>
+extends: <a href="https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/javascript/hostobjectsyncproxy">CallableFunction</a>
