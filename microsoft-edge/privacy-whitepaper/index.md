@@ -617,7 +617,7 @@ To use the Magnify Image feature, right-click an image and then select **Magnify
 
 
 <!-- ------------------------------ -->
-#### Turning off the feature
+#### Turning off the keyboard shortcut
 
 To turn off the **Ctrl-Ctrl** keyboard shortcut, go to `edge://settings/content/MagnifyImage`.  Or, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Cookies and site permissions** > **Magnify image**, and then use the **Enable Magnify keyboard shortcut** toggle.
 
