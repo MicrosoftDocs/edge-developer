@@ -623,6 +623,9 @@ To turn off the **Ctrl-Ctrl** keyboard shortcut, select **Settings and more** (!
 
 When you click the **AI enhance** button at the bottom of the popup window, AI-based image enhancement is done on your device by using a model that's downloaded from Microsoft servers.  Neither the image nor personally identifiable information is sent to Microsoft.
 
+The **AI enhance** button doesn't appear if your computer doesn't support the Web Machine Learning Neural Network (WebNN) API.  To check whether WebNN is supported, go to `edge://gpu` to view the **GPU Internals** page, and then in the **Graphics Feature Status** section, see whether it says **WebNN: Enabled**.
+
+
 
 <!-- ====================================================================== -->
 ## Microsoft Edge WebDriver
