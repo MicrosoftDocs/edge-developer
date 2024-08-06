@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/24/2024
+ms.date: 08/06/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -617,27 +617,15 @@ To use the Magnify Image feature, right-click an image and then select **Magnify
 
 
 <!-- ------------------------------ -->
-#### AI-based image enhancement
+#### Turning off the feature
 
-If your browser has the Web Machine Learning Neural Network (WebNN) API enabled, there's also an **AI enhance** button, that enables you to use AI to enhance the image.  To check whether WebNN is enabled, go to the `edge://gpu` page, and then in the **Graphics Feature Status** section, see whether **WebNN** says **Enabled**:
-
-![The status of the WebNN setting, shown in the edge://gpu page](./index-images/webnn-disabled-gpu.png)
-
-To change the WebNN setting, go to `edge://flags`, search for **Enables WebNN API**, and then select **Default**, **Enabled**, or **Disabled**.
-
-When you click the **AI enhance** button, AI-based image enhancement is done on your device by using a model that's downloaded from Microsoft servers.  Neither the image nor any personally identifiable information is sent to Microsoft.
+To turn off the **Ctrl-Ctrl** keyboard shortcut, go to `edge://settings/content/MagnifyImage`.  Or, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Cookies and site permissions** > **Magnify image**, and then use the **Enable Magnify keyboard shortcut** toggle.
 
 
 <!-- ------------------------------ -->
-#### Turning off the feature
+#### AI-based image enhancement
 
-To turn off the Magnify Image feature, use the command-line flag `msEdgeImageMagnifyUI`.  For example, run Microsoft Edge from the command line using the `disable-features` command-line option, as follows:
-
-```
-msedge.exe --disable-features=msEdgeImageMagnifyUI
-```
-
-To turn off the **Ctrl-Ctrl** keyboard shortcut, go to `edge://settings/content/MagnifyImage`.  Or, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Cookies and site permissions** > **Magnify image**, and then use the **Enable Magnify keyboard shortcut** toggle.
+When you click the **AI enhance** button, AI-based image enhancement is done on your device by using a model that's downloaded from Microsoft servers.  Neither the image nor any personally identifiable information is sent to Microsoft.
 
 
 <!-- ====================================================================== -->
