@@ -103,7 +103,7 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "type": "msedge",
 "port": 9222,
 "request": "attach",
-"runtimeExecutable": "C:/path/to/your/webview2/app.exe",
+"runtimeExecutable": "C:/path/to/your/webview2/myApp.exe",
 "env": {
    "Path": "%path%;e:/path/to/your/build/location; "
 },
@@ -112,26 +112,33 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 
 Your WebView2 control must open the Chrome Developer Protocol (CDP) port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a CDP port open, before starting the debugger.
 
-You will also need to add a new REGKEY `*--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port. To add this registry key:
+You also need to add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port.  To add this registry key:
 
-1. Open the Registry Editor by pressing the **Windows logo key** and then searching for **registry editor**. Open the **Registry Editor** application, and then select **Yes** to allow editing.
+1. Press the **Windows logo key** and then search for **registry editor**.  Open the **Registry Editor** app, and then click **Yes** to allow editing.
 
-1. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` equal to `--remote-debugging-port=9222`.
+1. In the folder tree on the left, try to expand `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
 
-   To do this, in the editor, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` by clicking on each subfolder under the path.
+1. If the `\Edge\WebView2\AdditionalBrowserArguments` part of that path doesn't exist, create those three nested subfolders, as follows:
 
-   If this path doesn't exist, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft` in the editor, right-click the `Microsoft` folder, select **New**, and then select **Key**.  Enter `Edge` for the name of the new key.  Continue to do this for each subfolder until you have the full path: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
+   1. To create the `\Edge` subfolder: In the folder tree, right-click the `HKEY_CURRENT_USER\Software\Policies\Microsoft` folder, hover over **New**, and then select **Key**.  A folder is added as a child of the `Microsoft` folder, initially named `New Key #1`.  Right-click the `New Key #1` folder, and then select **Rename**.  Enter `Edge` for the name of the new key.
 
-1. Right-click the `AdditionalBrowserArguments` folder, select **New**, and then select **String Value**.
-Rename `New Value #1` to `*`.
+   1. Create the `\WebView2` subfolder, as in the previous step.
 
-1. Right click the **\*** value, and then select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify that the edit window matches the following:
+   1. Create the `\AdditionalBrowserArguments` subfolder, as in the previous step.
 
-   ![Set Registry Key](./debug-visual-studio-code-images/set-debugging-port.png)
+      The tree is now expanded to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
 
-1. Click **OK**, and then verify that the registry key is set in the editor and matches the following:
+1. Right-click the `AdditionalBrowserArguments` folder, hover over **New**, and then select **String Value**.  In the **Name** column, right-click `New Value #1`, select **Rename**, and then enter the file name of your app executable, such as `myApp.exe`.
 
-   ![Registry Key](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
+1. In the **Name** column, right-click your executable file name, such as `myApp.exe`, and then select **Modify**.  The **Edit String** dialog opens.
+
+1. In the **Value data** text box, enter `--remote-debugging-port=9222`:
+
+   ![The "Edit String" dialog, to set the registry key](./debug-visual-studio-code-images/set-debugging-port.png)
+
+1. Click the **OK** button, and then verify that the registry key matches the following (with the file name of your `.exe` file in the **Name** column):
+
+   ![The resulting registry key in the Registry Editor](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
 
 
 <!-- ====================================================================== -->
