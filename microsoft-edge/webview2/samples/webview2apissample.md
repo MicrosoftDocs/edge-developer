@@ -42,15 +42,7 @@ For details of events and API handlers in WebView2, see [WebView2 API Reference]
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install a preview channel of Microsoft Edge
-
-Next, make sure a preview channel of Microsoft Edge in installed, on a supported OS.  Currently we recommend the latest version of the Canary channel.
-
-1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 2 - Install Visual Studio
+## Step 1 - Install Visual Studio
 
 Microsoft Visual Studio is required (minimum version: Visual Studio 2019).  Microsoft Visual Studio Code is not supported for this sample.  This repo sample is a Visual Studio 2019 project.  The sample can also be opened using Visual Studio 2022.
 
@@ -62,7 +54,7 @@ To use Visual Studio 2017, you might also need to install a recent Windows SDK o
 
 
 <!-- ====================================================================== -->
-## Step 3 - Clone the WebView2Samples repo
+## Step 2 - Clone the WebView2Samples repo
 
 1. If not done already, clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
@@ -70,7 +62,7 @@ To use Visual Studio 2017, you might also need to install a recent Windows SDK o
 
 
 <!-- ====================================================================== -->
-## Step 4 - Open the solution in Visual Studio
+## Step 3 - Open the solution in Visual Studio
 
 1. On your local drive, open the `.sln` file in Visual Studio:
 
@@ -88,7 +80,7 @@ Unlike some other samples, there's not a dedicated `.sln` file in the sample rep
 
 
 <!-- ====================================================================== -->
-## Step 5 - Install workloads if prompted
+## Step 4 - Install workloads if prompted
 
 1. **Visual Studio workloads** - If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
@@ -104,7 +96,7 @@ Continue the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 6 - View the opened project
+## Step 5 - View the opened project
 
 1. On your local drive, open again the **WebView2Samples** solution in the same version of Visual Studio that you set up:
 
@@ -136,7 +128,7 @@ Solution Explorer shows several projects, including the **WebView2APISample** pr
 
 
 <!-- ====================================================================== -->
-## Step 7 - Build the project using the installed SDK version
+## Step 6 - Build the project using the installed SDK version
 
 At the top of Visual Studio, set the build target, as follows:
 
@@ -152,7 +144,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 8 - Run (debug) the project
+## Step 7 - Run (debug) the project
 
 1. Select **Debug** > **Start Debugging** (**F5**).  
 
@@ -170,7 +162,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 9 - Update the prerelease WebView2 SDK
+## Step 8 - Update the prerelease WebView2 SDK
 
 Next, you'll update the WebView2 SDK and then re-build the project.
 
@@ -208,7 +200,7 @@ The latest version of the WebView2 SDK is now installed for this project.
 
 
 <!-- ====================================================================== -->
-## Step 10 - Build and run the project with updated SDK
+## Step 9 - Build and run the project with updated SDK
 
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 

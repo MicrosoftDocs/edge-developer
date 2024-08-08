@@ -79,10 +79,10 @@ To monitor or cancel navigation events inside frames in a WebView2 instance, use
 
 For example code showing how to handle navigation events, see:
 * [Learn about navigation events](../get-started/winui2.md#learn-about-navigation-events) in _Get started with WebView2 in WinUI 2 (UWP) apps_ - no example code in the article; see other frameworks' articles.
-* [Step 6 - Navigation events](../get-started/winui.md#step-6---navigation-events) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_.
-* [Step 8 - Navigation events](../get-started/wpf.md#step-8---navigation-events) in _Get started with WebView2 in WPF apps_.
+* [Step 5 - Navigation events](../get-started/winui.md#step-5---navigation-events) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_.
+* [Step 7 - Navigation events](../get-started/wpf.md#step-7---navigation-events) in _Get started with WebView2 in WPF apps_.
 * [Step 8 - Navigation events](../get-started/winforms.md#step-8---navigation-events) in _Get started with WebView2 in WinForms apps_.
-* [Step 14 - Navigation events](../get-started/win32.md#step-14---navigation-events) in _Get started with WebView2 in Win32 apps_.
+* [Step 13 - Navigation events](../get-started/win32.md#step-13---navigation-events) in _Get started with WebView2 in Win32 apps_.
 
 The [WebView2 sample apps](../code-samples-links.md) also demonstrate handling navigation events.
 
