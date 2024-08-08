@@ -96,7 +96,7 @@ Common use cases for web/native interop:
 *  Run a dedicated JavaScript file on the web side of an application.
 
 See also:
-* [Interop of native-side and web-side code](../how-to/communicate-btwn-web-native.md)
+* [Interop of native and web code](../how-to/communicate-btwn-web-native.md)
 * [Call web-side code from native-side code](../how-to/javascript.md)
 * [Call native-side code from web-side code](../how-to/hostobject.md)
 * [Call native-side WinRT code from web-side code](../how-to/winrt-from-js.md)
@@ -1624,7 +1624,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 *  Content from a constructed network request.
 
 See also:
-* [Working with local content in WebView2 apps](./working-with-local-content.md)
+* [Use local content in WebView2 apps](./working-with-local-content.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
