@@ -14,7 +14,7 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 
 | API | Description | Manifest versions |
 |---|---|---|
-| [accessibilityFeatures](https://developer.chrome.com/docs/extensions/reference/api/accessibilityFeatures) | Manages Chrome's accessibility features. | MV2, MV3 |
+| [accessibilityFeatures](https://developer.chrome.com/docs/extensions/reference/api/accessibilityFeatures) | Manages the browser's accessibility features. | MV2, MV3 |
 | [action](https://developer.chrome.com/docs/extensions/reference/api/action) | Controls the extension's icon in the browser's toolbar. | MV3 |
 | [alarms](https://developer.chrome.com/docs/extensions/reference/api/alarms) | Schedules code to run periodically or at a specified time in the future. | MV2, MV3 |
 | [bookmarks](https://developer.chrome.com/docs/extensions/reference/api/bookmarks) | Creates, organizes, and manipulates bookmarks. | MV2, MV3 |
