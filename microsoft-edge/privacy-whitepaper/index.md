@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
-ms.date: 07/24/2024
+ms.date: 08/06/2024
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -37,6 +37,7 @@ The following information is sent to your default search provider:
 If your search provider is Bing, a resettable identifier that's unique to your browser is sent with the data.  This helps Bing understand the search query and query session.  Other autosuggest service identifiers are sent to your default search engine, to complete the search suggestions.  Your IP address and cookies are sent to your default search provider, to increase the relevance of the search results.<!-- todo: is the 2nd half of this paragraph about all default search engines, or just Bing?  if about all, split into two paragraphs to reduce confusion.  if about all, make consistent; presently, lists info that's sent to the default search provider, but goes on to identify newly mentioned items that are sent to the default search provider -->
 
 When you select the Address bar, a signal is sent to your default search provider.  The signal tells the provider to prepare suggestions.  The typed characters and search queries aren't sent<!-- todo: can you turn this on for other search providers? if so, insert "by default" --> to Microsoft unless your search provider is Bing.
+
 
 <!-- ------------------------------ -->
 #### Controlling whether typed characters are sent
@@ -607,6 +608,23 @@ To enhance the Kids Mode experience, Microsoft Edge adds a safe keyword to the h
 1.  Choose **Choose what to clear**.
 
 Kids Mode does not collect data for personalization of the news feed or other Microsoft services.  You may not change the privacy settings for Kids Mode.  Other settings like Windows Defender SmartScreen and diagnostic data are configured according to the profile in which Kids Mode was launched.  For more information about diagnostic data about how you use the browser and Windows Defender SmartScreen, see the [Diagnostic Data](#diagnostic-data) and [SmartScreen](#smartscreen) sections.
+
+
+<!-- ====================================================================== -->
+## Magnify Image
+
+To use the Magnify Image feature, right-click an image and then select **Magnify image**, or press **Ctrl-Ctrl** while hovering over an image.  The Magnify Image feature retrieves the largest available version of the image from the website and displays it in a popup window.
+
+To turn off the **Ctrl-Ctrl** keyboard shortcut, select **Settings and more** (![Settings and more icon](./index-images/settings-and-more-icon.png)) > **Cookies and site permissions** > **Magnify image**, and then turn off the **Enable Magnify keyboard shortcut** toggle.
+
+
+<!-- ------------------------------ -->
+#### AI-based image enhancement
+
+If your device supports the Web Machine Learning Neural Network (WebNN) API, an **AI enhance** button appears at the bottom of the popup window.  To check whether WebNN is supported, go to `edge://gpu` to view the **GPU Internals** page, and then in the **Graphics Feature Status** section, see whether it says **WebNN: Enabled**.
+
+When you click the **AI enhance** button, AI-based image enhancement is done on your device by using a model that's downloaded from Microsoft servers.  Neither the image nor personally identifiable information is sent to Microsoft.
+
 
 
 <!-- ====================================================================== -->
