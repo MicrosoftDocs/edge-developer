@@ -37,27 +37,19 @@ This sample is built as a Win32 [Visual Studio 2019](https://visualstudio.micros
 
 
 <!-- ====================================================================== -->
-## Step 1: Install a preview channel of Microsoft Edge
-
-*  If not installed yet, install a preview channel of Microsoft Edge on a supported operating system.  To do this, go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider/).
-
-
-<!-- ====================================================================== -->
-## Step 2: Install Visual Studio
+## Step 1: Install Visual Studio
 
 1. Install [Visual Studio](https://visualstudio.microsoft.com/vs/), including C++ support.
 
-The [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) is recommended for the installation.<!-- TODO: give actionable steps/instructions.  Why preview channel and also Runtime? -->  The minimum version is 86.0.622.38.
-
 
 <!-- ====================================================================== -->
-## Step 3: Clone the WebView2Samples repo
+## Step 2: Clone the WebView2Samples repo
 
 * Clone (or download as `.zip`) the **WebView2Samples** repo.  See [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
 
 <!-- ====================================================================== -->
-## Step 4: Open the solution in Visual Studio
+## Step 3: Open the solution in Visual Studio
 
 1. Open the solution in Visual Studio 2019.  The WebView2 SDK is already included as a NuGet package in the project.  If you want to use Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.  You might also need to change the Windows SDK to the latest version.
 
@@ -101,7 +93,7 @@ int BrowserWindow::GetDPIAwareBound(int bound)
 
 
 <!-- ====================================================================== -->
-## Step 5: Build and run the app
+## Step 4: Build and run the app
 
 1. Set the target you want to build (such as Debug or Release, targeting x86 or x64).
 
@@ -113,13 +105,13 @@ int BrowserWindow::GetDPIAwareBound(int bound)
 
 
 <!-- ====================================================================== -->
-## Step 6: Update the WebView2 SDK
+## Step 5: Update the WebView2 SDK
 
 * Update the version of the WebView2 SDK, in Visual Studio.  To do this, right-click the project and then click **Manage NuGet Packages**.
 
 
 <!-- ====================================================================== -->
-## Step 7: Build and run the app with updated WebView2 SDK
+## Step 6: Build and run the app with updated WebView2 SDK
 
 * Build and run the app again.
 
