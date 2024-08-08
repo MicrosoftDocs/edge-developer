@@ -6,11 +6,11 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 04/03/2023
+ms.date: 08/08/2024
 ---
 # Overview of Microsoft Edge extensions
 
-A Microsoft Edge *extension* is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that is important to a target audience.
+A Microsoft Edge _extension_, also called an _add-on_, is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that is important to a target audience.  You publish a Microsoft Edge extension at the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
 You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages.  Examples of *companion experiences* include ad blockers and password managers.
 
@@ -23,6 +23,10 @@ An extension should include at least the following features:
 To work directly with a specific part of the browser, such as a window or tab, you must send API requests, and must often reference the browser by name.
 
 ![A Microsoft Edge extension](./index-images/example-extension-screenshot.png)
+
+See also:
+* [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions?form=MA13I2&msockid=3078d2dac55660f53e4ec6a8c4ec61bf) - introduction for users.
+* [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026) - support steps for users.
 
 
 <!-- ====================================================================== -->
@@ -68,6 +72,7 @@ The APIs that you require define the changes that you must make to address the d
 
 To test your extension in different environments before you submit the extension to a browser store, side-load the extension into your browser while you develop it.
 
+
 <!-- ====================================================================== -->
 ## Publish your extension to browser stores
 
@@ -82,15 +87,21 @@ Some stores allow you to download listed extensions from other browsers.  Howeve
 
 Users might need to install your extension in different browsers. In this scenario, you can migrate existing Chromium extensions from one browser to another.
 
+
+<!-- ------------------------------ -->
 #### Migrate an existing extension to Microsoft Edge
 
 If you've already developed an extension for another Chromium-based browser, you can submit it to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home). You don't need to rewrite your extension or verify that it works in Microsoft Edge.  However, when you migrate an existing Chromium extension to other Chromium browsers, make certain the same APIs or alternatives are available for your target browser.
 
 For more information on porting your Chrome extension to Microsoft Edge, see [Port Chrome extensions to Microsoft Edge](developer-guide/port-chrome-extension.md). After you port your extension to the target browser, the next step is to publish it.
 
+
+<!-- ------------------------------ -->
 #### Publish to the Microsoft Edge Add-ons website
 
-To start publishing your extension to Microsoft Edge, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing to the store.  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`.  When you choose an email address to register, consider whether you must transfer or share ownership of the Microsoft Edge extension with other people in your organization.  After registration is complete, you can create a new extension submission to the store.
+You publish a Microsoft Edge extension at the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
+
+To start publishing a Microsoft Edge extension, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing to the store.  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`.  When you choose an email address to register, consider whether you must transfer or share ownership of the Microsoft Edge extension with other people in your organization.  After registration is complete, you can create a new extension submission to the store.
 
 To submit your extension to the store, you need to provide the following items:
 
@@ -128,6 +139,8 @@ Just because an extension doesn't have a **Featured** badge, doesn't mean the ex
 <!-- ====================================================================== -->
 ## See also
 
+*  [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions?form=MA13I2&msockid=3078d2dac55660f53e4ec6a8c4ec61bf) - introduction for users.
+*  [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026) - support steps for users.
 *  [Extension concepts and architecture](getting-started/index.md)
 *  [Manage Microsoft Edge extensions in the enterprise](/deployedge/microsoft-edge-manage-extensions)
 
