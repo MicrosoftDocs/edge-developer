@@ -1,7 +1,7 @@
 blank_issues_enabled: true
 contact_links:
   - name: DevTools issues
-    url: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/contact
+    url: https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/contact
     about: Learn more about how to submit feature requests or bug reports about Microsoft Edge DevTools.
   - name: WebView2 issues
     url: https://github.com/MicrosoftEdge/WebView2Feedback/issues

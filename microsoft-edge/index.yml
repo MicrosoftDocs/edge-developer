@@ -394,7 +394,7 @@ additionalContent:
               url: ./visual-studio-code/index.md
 
             - text: Microsoft Edge Privacy Whitepaper
-              url: ./privacy-whitepaper/index.md
+              url: /legal/microsoft-edge/privacy
         # Card
         - title: Microsoft Edge Legacy documentation
           links:
