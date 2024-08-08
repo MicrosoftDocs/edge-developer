@@ -85,7 +85,8 @@ To get rid of a Live Expression, click the **Close** (![The close live expressio
 You can create as many Live Expressions as you want, and persist each Live Expression across browser sessions and windows.  Live Expressions are a way to cut down on noise in your debugging workflow.
 
 
-### Use Console logging to display mouse coordinates
+<!-- ------------------------------ -->
+#### Use Console logging to display mouse coordinates
 
 To monitor the mouse movement in the current webpage:
 
@@ -102,7 +103,8 @@ To monitor the mouse movement in the current webpage:
 The large amount of information slows down your debugging process, and makes it hard to see the changes that you're trying to monitor.  As the **Console** displays more messages when you move your mouse, the values that you want to see scroll off the screen.
 
 
-### Use Live Expressions to display mouse coordinates
+<!-- ------------------------------ -->
+#### Use Live Expressions to display mouse coordinates
 
 Use Live Expressions to monitor the mouse movement in the current webpage, without relying on verbose log messages.
 
@@ -127,3 +129,11 @@ To use Live Expressions to avoid excessive Console log messages:
    Now in the **Console**, the values of the `x` and `y` Live Expressions are updated in real time:
 
    ![The Console tool, with the x and y live expressions, showing the coordinates of the mouse in the rendered webpage](./live-expressions-images/x-and-y.png)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [live expression demo](https://microsoftedge.github.io/Demos/devtools-console/live-expressions.html)
+* [Logging Mouse Movement demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove.html)
+* [Mouse movement without logging demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove-no-log.html)
