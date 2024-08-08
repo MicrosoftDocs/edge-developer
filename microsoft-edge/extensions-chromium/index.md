@@ -101,7 +101,7 @@ For more information on porting your Chrome extension to Microsoft Edge, see [Po
 
 You publish a Microsoft Edge extension at the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
-To start publishing a Microsoft Edge extension, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing to the store.  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`.  When you choose an email address to register, consider whether you must transfer or share ownership of the Microsoft Edge extension with other people in your organization.  After registration is complete, you can create a new extension submission to the store.
+To start publishing a Microsoft Edge extension, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing to the store (the Microsoft Edge Add-ons website).  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`.  When you choose an email address to register, consider whether you must transfer or share ownership of the Microsoft Edge extension with other people in your organization.  After registration is complete, you can create a new extension submission to the store.
 
 To submit your extension to the store, you need to provide the following items:
 
@@ -111,7 +111,7 @@ To submit your extension to the store, you need to provide the following items:
 *   Information that describes your extension such as the name, short description, and a privacy policy link.
 
 > [!NOTE]
-> Different stores might have different submission requirements.  The above list summarizes the [requirements](publish/publish-extension.md) to publish an extension for Microsoft Edge.
+> Different stores might have different submission requirements.  The above list summarizes the requirements for publishing an extension for Microsoft Edge; for details, see [Publish a Microsoft Edge extension](./publish/publish-extension.md).
 
 After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an extension update to the store, it begins a new review process.
 
