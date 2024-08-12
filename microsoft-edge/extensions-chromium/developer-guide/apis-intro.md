@@ -10,11 +10,13 @@ ms.date: 07/10/2024
 ---
 # Microsoft Edge Add-ons API 101
 
-Microsoft Edge extensions use a subset of the JavaScript methods for the Chromium browser engine platform, and REST API endpoints for publishing an extension.
+Microsoft Edge extensions use a subset of the JavaScript methods for the Chromium browser engine platform, and uses REST API endpoints for publishing an extension.
+
+To publish an extension, you first use Partner Center, and then optionally you can use the REST API to update the extension.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Supported APIs for Microsoft Edge extensions](./api-support.md)
-* [Using the Microsoft Edge Add-ons REST API](../publish/api/using-addons-api.md)
+* [Supported APIs for Microsoft Edge extensions](./api-support.md) - JavaScript for developing an extension.
+* [Using the Microsoft Edge Add-ons REST API](../publish/api/using-addons-api.md) - REST endpoints for updating a published extension.
