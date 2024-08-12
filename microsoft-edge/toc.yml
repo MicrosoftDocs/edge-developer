@@ -1060,26 +1060,16 @@
                 - name: Manifest file format for extensions
                   href: extensions-chromium/getting-started/manifest-format.md
 
-            - name: APIs for extensions
+            - name: JavaScript APIs for extensions
               items:
                 - name: Microsoft Edge Add-ons API 101
                   href: extensions-chromium/developer-guide/apis-intro.md
 
-                - name: JavaScript APIs
-                  items:
-                    - name: Supported APIs for Microsoft Edge extensions
-                      href: extensions-chromium/developer-guide/api-support.md
+                - name: Supported APIs for Microsoft Edge extensions
+                  href: extensions-chromium/developer-guide/api-support.md
 
-                    - name: Declare API permissions in extension manifests
-                      href: extensions-chromium/developer-guide/declare-permissions.md
-
-                - name: REST API for publishing
-                  items:
-                    - name: Using the Microsoft Edge Add-ons REST API
-                      href: extensions-chromium/publish/api/using-addons-api.md
-
-                    - name: REST API Reference for Microsoft Edge Add-ons
-                      href: extensions-chromium/publish/api/addons-api-reference.md
+                - name: Declare API permissions in extension manifests
+                  href: extensions-chromium/developer-guide/declare-permissions.md
 
             - name: Policies for extensions
               items:
@@ -1135,6 +1125,14 @@
 
             - name: Curation and review process for the Edge Add-ons store
               href: extensions-chromium/publish/add-ons-store-curation.md
+
+            - name: REST API for publishing an extension  # todo: if this is the only way to publish extension, move up?
+              items:
+                - name: Using the Microsoft Edge Add-ons REST API  # todo: See Also: APIs 101, JS APIs article
+                  href: extensions-chromium/publish/api/using-addons-api.md
+
+                - name: REST API Reference for Microsoft Edge Add-ons
+                  href: extensions-chromium/publish/api/addons-api-reference.md
 
 # -------------------------------------
         - name: Manage and Maintain an extension
