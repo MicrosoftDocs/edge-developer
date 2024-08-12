@@ -976,10 +976,10 @@
 # =============================================================================
     - name: Microsoft Edge extensions
       items:
-      
+
 #       - name: Microsoft Edge Extension Documentation
-#         href: 
-        
+#         href:
+
         - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
 
@@ -1000,13 +1000,13 @@
               href: extensions-chromium/getting-started/index.md
 #                   What are Edge Add-ons?  Include Manifest File and permissions
 
-#           - name: Extension type and usage # This describes the types of extensions that can be built basis of the fundamentals
-#             href: 
+#           - name: Extension type and usage  # the types of extensions that can be built, basics & fundamentals
+#             href:
 
-#           - name: Why build an extension?   # This decribes why should a dev/enterprise build an extensions
-#             href: 
+#           - name: Why build an extension?   # why/when a dev or enterprise should build an extension
+#             href:
 
-#           - name: Introduction to Partner Centre   # This helps in knowing Partner Centre and it's usage
+#           - name: Introduction to Partner Center   # role/purpose of Partner Center, intro to using it
 #             href:
 
             - name: Create an extension tutorial, part 1
@@ -1019,18 +1019,19 @@
               href: extensions-chromium/getting-started/extension-sideloading.md
 
 # -------------------------------------
-        - name: Port your extension to Microsoft Edge
+        - name: Port an extension to Microsoft Edge
           items:
-            - name: Port a Chrome extension to Microsoft Edge # moved from get started
+            - name: Port a Chrome extension to Microsoft Edge  # moved from get started
               href: extensions-chromium/developer-guide/port-chrome-extension.md
 
 # -------------------------------------
-        - name: Build an extension
+        - name: Develop an extension
           items:
 #           - name: Build your Edge Extension 101   # master page for all the subpages below
-#             href: 
-#           - name: Pre-requisites to build an extension  # things required to build an extension
-#             href: 
+#             href:
+
+#           - name: Prerequisites to build an extension  # things required to build an extension
+#             href:
 
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
@@ -1045,12 +1046,12 @@
               href: extensions-chromium/developer-guide/sidebar.md
               displayName: sidebar extensions, sidepanel, side panel  # alt lookup phrase
 
-#           - name: Microsoft Edge Add-ons API  # It will redirect to all about the APIs page
-#             href: 
+#           - name: Microsoft Edge Add-ons API  # jump page linking to "All About APIs" and specifically "JavaScript APIs"
+#             href:
 
             - name: Manifest files
               items:
-                - name: Overview and timelines for migrating to Manifest V3  # Overview of Manifest V3, and timeline for migrating
+                - name: Overview and timelines for migrating to Manifest V3  # overview of Manifest V3, and timeline for migrating
                   href: extensions-chromium/developer-guide/manifest-v3.md
 
                 - name: Migrate an extension from Manifest V2 to V3
@@ -1064,53 +1065,52 @@
                 - name: Microsoft Edge Add-ons API 101
                   href: extensions-chromium/developer-guide/apis-intro.md
 
-                    - name: JavaScript APIs
-                      items:
+                - name: JavaScript APIs
+                  items:
                     - name: Supported APIs for Microsoft Edge extensions
                       href: extensions-chromium/developer-guide/api-support.md
 
-              - name: Declare API permissions in extension manifests
-                href: extensions-chromium/developer-guide/declare-permissions.md
+                    - name: Declare API permissions in extension manifests
+                      href: extensions-chromium/developer-guide/declare-permissions.md
 
-              - name: REST API for publishing
-                items:
-                  - name: Using the Microsoft Edge Add-ons REST API
-                    href: extensions-chromium/publish/api/using-addons-api.md
+                - name: REST API for publishing
+                  items:
+                    - name: Using the Microsoft Edge Add-ons REST API
+                      href: extensions-chromium/publish/api/using-addons-api.md
 
-                  - name: REST API Reference for Microsoft Edge Add-ons
-                    href: extensions-chromium/publish/api/addons-api-reference.md
+                    - name: REST API Reference for Microsoft Edge Add-ons
+                      href: extensions-chromium/publish/api/addons-api-reference.md
 
-              - name: Policies for extensions
-                items:
-                  - name: Content Security Policy (CSP)
-                    href: extensions-chromium/store-policies/csp.md
+            - name: Policies for extensions
+              items:
+                - name: Content Security Policy (CSP)
+                  href: extensions-chromium/store-policies/csp.md
 
-                  - name: App Developer Agreement Addendum for Microsoft Edge program users
-                    href: extensions-chromium/store-policies/ada-addendum.md
+                - name: App Developer Agreement Addendum for Microsoft Edge program users
+                  href: extensions-chromium/store-policies/ada-addendum.md
 
-                  - name: Developer policies for the Microsoft Edge Add-ons store
-                    href: extensions-chromium/store-policies/developer-policies.md
+                - name: Developer policies for the Microsoft Edge Add-ons store
+                  href: extensions-chromium/store-policies/developer-policies.md
 
 # -------------------------------------
         - name: Publish an extension
           items:
-              - name: Register
-               items:     
-                  - name: Individual
-                   items:    
-                      - name: Register as a Microsoft Edge extension developer
-                        href: extensions-chromium/publish/create-dev-account.md
-                        
-                  - name: Enterprise
-                    items: 
-#                     - name: Register as a Microsoft Edge extension developer for Company Account
-#                       href: 
-                      - name: Verify your company account information  # indented in draft outline
-                        href: extensions-chromium/publish/verify-microsoft-edge-program.md
-                        displayName: Verify the company account information associated with your Microsoft Partner Center account
+            - name: Register as an individual developer
+              items:
+                - name: Register as a Microsoft Edge extension developer
+                  href: extensions-chromium/publish/create-dev-account.md
 
-                      - name: Add users to the Microsoft Edge program
-                        href: extensions-chromium/publish/aad-account.md
+            - name: Register as an enterprise developer
+              items:
+#               - name: Register as a Microsoft Edge extension developer for Company Account
+#                 href:
+
+                - name: Verify your company account information
+                  href: extensions-chromium/publish/verify-microsoft-edge-program.md
+                  displayName: Verify the company account information associated with your Microsoft Partner Center account  # todo: shorten top-of-article title, clarify it in first sentence instead
+
+                - name: Add users to the Microsoft Edge program
+                  href: extensions-chromium/publish/aad-account.md
 
             - name: Publish a Microsoft Edge extension by using a GitHub account
               href: extensions-chromium/publish/github.md
@@ -1119,7 +1119,8 @@
               href: extensions-chromium/publish/publish-extension.md
 
 #           - name: Extension sharing offline
-#             href: 
+#             href:
+
             - name: Extension hosting
               href: extensions-chromium/publish/hosting-and-updating.md  # moved from /enterprise/
 
@@ -1149,43 +1150,43 @@
 
             - name: Reply to user reviews
               href: extensions-chromium/publish/reply-user-reviews.md
-              displayName: Reply to user reviews about your Microsoft Edge extension, Respond to user reviews  # top-of-page title, alt title word
+              displayName: Reply to user reviews about your Microsoft Edge extension, Respond to user reviews  # top-of-page title, alt title word  # todo: make top-of-title identical to toc title, clarify in first sentence
 
-#           - name: Connect with your Customer  # This page would describe, how you can connect with your customers
-#             href: 
+#           - name: Connect with your Customer  # how you can connect with your customers
+#             href:
 
-#           - name: User Ratings  # This article helps to understand how User Ratings work. For example, how region wise users can see the review & ratings
-#             href: 
+#           - name: User Ratings  # how User Ratings work, eg how region-wide users can see the review & ratings
+#             href:
 
-#           - name: Review Process  # This article helps to understand about the review process of any extension submitted in our system
-#             href: 
+#           - name: Review Process  # the review process for an extension that's submitted to add-ons site
+#             href:
 
-#           - name: Retire your Extension  # This article helps, how to uninstall or retire any extension
-#             href: 
+#           - name: Retire your Extension  # how to uninstall or retire an extension
+#             href:
 
 # -------------------------------------
         - name: Best practices
           items:
 #           - name: Checklist for publishing an extension
-#             href: 
+#             href:
 
             - name: Best practices for extensions
               href: extensions-chromium/developer-guide/best-practices.md
 
 #           - name: Promote an extension
-#             href: 
+#             href:
 
 #           - name: The Featured badge
-#             href: 
+#             href:
 
 #           - name: Policy checklist
-#             href: 
+#             href:
 
-#           - name: How to build non impacting extensions # This consists of the list of things that can impact the speed of browser and extensions 
-#             href: 
+#           - name: How to build non-impacting extensions  # things that can impact speed of browser and extension
+#             href:
 
-#           - name: Do not get rejected by doing it # Things which can get any extension rejected 
-#             href: 
+#           - name: Things to avoid, that can get an extension rejected
+#             href:
 
 # -------------------------------------
         - name: Samples
@@ -1194,13 +1195,13 @@
               href: extensions-chromium/samples.md
 
 #           - name: Sample extension using a content script
-#             href: 
+#             href:
 
 #           - name: Sample extension using a service worker
-#             href: 
+#             href:
 
 #           - name: Sample extension using the Sidepanel API
-#             href: 
+#             href:
 
 # -------------------------------------
         - name: Support and feedback
@@ -1211,16 +1212,16 @@
 
 #           if h1's, instead of h2's in the above h1:
 #           - name: Request help or submit feedback
-#             href: 
+#             href:
 
 #           - name: Report copyright or trademark infringement
-#             href: 
+#             href:
 
-#           - name: Log your tickets via Partner Centre
-#             href: 
+#           - name: Log your tickets via Partner Center
+#             href:
 
 #           - name: Connect with Community
-#             href: 
+#             href:
 # /Extensions
 
 # =============================================================================
@@ -1579,7 +1580,7 @@
               href: webview2/concepts/clear-browsing-data.md
 
 # -----------------------------------------------------------------------------
-        - name: Advanced Topics 
+        - name: Advanced topics
           items:
 
             # - name: Customize the UI   # not needed?  flatten
