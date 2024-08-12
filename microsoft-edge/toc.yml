@@ -1060,7 +1060,7 @@
                 - name: Manifest file format for extensions
                   href: extensions-chromium/getting-started/manifest-format.md
 
-            - name: JavaScript APIs for extensions
+            - name: JavaScript APIs
               items:
                 - name: Microsoft Edge Add-ons API 101
                   href: extensions-chromium/developer-guide/apis-intro.md
@@ -1126,7 +1126,7 @@
             - name: Curation and review process for the Edge Add-ons store
               href: extensions-chromium/publish/add-ons-store-curation.md
 
-            - name: REST API for publishing an extension  # todo: if this is the only way to publish extension, move up?
+            - name: REST API for publishing  # todo: if this is the only way to publish extension, move up?
               items:
                 - name: Using the Microsoft Edge Add-ons REST API  # todo: See Also: APIs 101, JS APIs article
                   href: extensions-chromium/publish/api/using-addons-api.md
