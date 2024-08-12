@@ -1135,12 +1135,12 @@
                   href: extensions-chromium/publish/api/addons-api-reference.md
 
 # -------------------------------------
-        - name: Manage and Maintain an extension
+        - name: Manage and maintain an extension
           items:
             - name: Update a Microsoft Edge extension
               href: extensions-chromium/publish/update-extension.md
 
-            - name: Automatically update extensions in Microsoft Edge
+            - name: Automatically update an extension in Microsoft Edge  # todo: update top-of-article title
               href: extensions-chromium/publish/auto-update.md  # moved from /enterprise/
 
             - name: View Microsoft Edge extensions analytics dashboard
