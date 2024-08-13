@@ -1,20 +1,18 @@
 ---
 title: Inspect CSS Grid
-description: Using Microsoft Edge DevTools to view and change the CSS of a page CSS.
+description: Using Microsoft Edge DevTools to view and change CSS grid properties on a page.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 05/04/2021
+ms.date: 08/13/2024
 ---
 # Inspect CSS Grid
 
 This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.
 
-The examples used in the figures in this article are taken from the following webpages:
-* [Fruit box](https://jec.fyi/demo/css-grid-fruit)
-* [Snack box](https://jec.fyi/demo/css-grid-snack)
+The demo webpage used in the figures in this article is [Inspect CSS Grid](https://microsoftedge.github.io/Demos/devtools-grid/).
 
 
 <!-- ====================================================================== -->
@@ -26,30 +24,28 @@ CSS Grid is a powerful layout paradigm for the web.  A great place to get starte
 <!-- ====================================================================== -->
 ## Discover CSS grids
 
-When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge is displayed next to it in the **Elements** tool:
+When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a **grid** badge is displayed next to it in the **Elements** tool:
 
 ![Discover grid](./grid-images/grid-discover-grid.png)
 
-Click the badge to toggle the display of a grid overlay on the page.  The overlay appears over the element, laid out like a grid to display the position of the grid lines and tracks:
+Click the **grid** badge next to an element to display a grid overlay over that element in the rendered webpage.  The overlay appears over the element, and shows the position of the grid lines and tracks:
 
 ![Toggle grid badge](./grid-images/grid-highlight-grid.png)
 
-Open the **Layout** pane.  When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.
+When grids are included on a page, the **Layout** pane in the **Elements** tool includes a **Grid** section that lists the grid containers and lets you configure the information which grid overlays should display.
 
 ![Layout pane](./grid-images/grid-layout-pane.png)
 
 The **Grid** section in the **Layout** pane contains the following 2 sub-sections:
 
-*  Overlay display settings
-*  Grid overlays
-
-<!--todo: verify the details for each of the sub-sections -->
+*  **Overlay display settings**, which lets you configure the information displayed in the grid overlay.
+*  **Grid overlays**, which lists the grid containers present on the webpage, and lets you enable or disable the corresponding grid overlays.
 
 
 <!-- ====================================================================== -->
 ## Overlay display settings
 
-In the **Layout** tab, in the expandable **Grid** section, the **Overlay display settings** section contains the following UI.
+In the **Layout** pane, in the expandable **Grid** section, the **Overlay display settings** section contains the following UI.
 
 ### Dropdown list
 
@@ -148,9 +144,10 @@ The **Grid overlays** section contains a list of grids that are present on the p
 
 ### Enable overlay views of multiple grids
 
-To display the overlay grid for multiple grids, select the checkbox next to each name of the grid.  In the example, there are 2 grid overlays enabled, that are each represented with different colors:
+To display the overlay grid for multiple grids, select the checkbox next to each name of the grid.  In the example, there are 3 grid overlays enabled, that are each represented with different colors:
 
 *  `main`
+*  `div.fruit-box`
 *  `div.snack-box`
 
 ![Enable overlay views of multiple grids](./grid-images/grid-grid-overlays.png)
