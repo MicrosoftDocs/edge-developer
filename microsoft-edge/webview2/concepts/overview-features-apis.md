@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 08/07/2024
+ms.date: 08/13/2024
 ---
 # Overview of WebView2 features and APIs
 
@@ -299,12 +299,12 @@ Your app can send messages to the web content that's within the WebView2 control
 <!-- todo: incoming -->
 #### Web messaging - INCOMING
 
-The WebMessageObjects API allows injecting DOM objects into WebView2 content that's constructed via the app, and via the `CoreWebView2.PostWebMessage` API in the other direction.  This includes a web object type that represents a file system handle that can be posted to the web content to provide it with filesystem access.
+The WebMessageObjects API allows injecting DOM objects into WebView2 content that's constructed via the app, and via the `CoreWebView2.PostWebMessage` API in the other direction.  The web object type `CoreWebView2FileSystemHandle` represents a file system handle that can be posted to the web content to provide it with filesystem access.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2` Class:
-   * [CoreWebView2.PostWebMessageAsJsonWithAdditionalObjects Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasjsonwithadditionalobjects)
+   * [CoreWebView2.PostWebMessageAsJson(webMessageAsJson, additionalObjects) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasjson#microsoft-web-webview2-core-corewebview2-postwebmessageasjson(system-string-system-collections-generic-list((system-object))))<!-- overload w/ "additionalObjects" param, keep detailed anchor -->
 
 * `CoreWebView2Environment` Class:
    * [CoreWebView2Environment.CreateWebFileSystemDirectoryHandle Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebfilesystemdirectoryhandle)
@@ -326,7 +326,7 @@ The WebMessageObjects API allows injecting DOM objects into WebView2 content tha
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
-   * [CoreWebView2.PostWebMessageAsJsonWithAdditionalObjects Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postwebmessageasjsonwithadditionalobjects)
+   * [CoreWebView2.PostWebMessageAsJson(webMessageAsJson, additionalObjects) Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postwebmessageasjson)<!-- overload w/ "additionalObjects" param.  currently the first overload in Ref page so no -1 appended.  url will need to append -1 or -2 if addl overloads are later added above this one in Ref page -->
 
 * `CoreWebView2Environment` Class:
    * [CoreWebView2Environment.CreateWebFileSystemDirectoryHandle Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createwebfilesystemdirectoryhandle)
@@ -348,7 +348,7 @@ The WebMessageObjects API allows injecting DOM objects into WebView2 content tha
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2_23](/microsoft-edge/webview2/reference/win32/icorewebview2_23)
-   * [ICoreWebView2_23::PostWebMessageAsJsonWithAdditionalObjects](/microsoft-edge/webview2/reference/win32/icorewebview2_23#postwebmessageasjsonwithadditionalobjects)
+   * [ICoreWebView2_23::PostWebMessageAsJsonWithAdditionalObjects](/microsoft-edge/webview2/reference/win32/icorewebview2_23#postwebmessageasjsonwithadditionalobjects)<!-- long name, not overload + param -->
 
 * [ICoreWebView2Environment14](/microsoft-edge/webview2/reference/win32/icorewebview2environment14)
    * [ICoreWebView2Environment14::CreateObjectCollection](/microsoft-edge/webview2/reference/win32/icorewebview2environment14#createobjectcollection)<!--win32 only-->
@@ -361,7 +361,6 @@ The WebMessageObjects API allows injecting DOM objects into WebView2 content tha
    * [ICoreWebView2FileSystemHandle::get_Permission](/microsoft-edge/webview2/reference/win32/icorewebview2filesystemhandle#get_permission)
 
 * [ICoreWebView2ObjectCollection](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollection)
-   * [ICoreWebView2ObjectCollection::get_Kind](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollection#get_kind)<!-- todo: test, b/c anchor section seems to not exist, in earlier release.  finding: get or get_Kind is missing from API Ref open PR: https://review.learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2objectcollection?view=webview2-win32-preview&branch=pr-en-us-94 - Also, get or get_Kind is missing from released Ref docs: https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2objectcollection?view=webview2-1.0.2646-prerelease -->
    * [ICoreWebView2ObjectCollection::InsertValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollection#insertvalueatindex)
    * [ICoreWebView2ObjectCollection::RemoveValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2objectcollection#removevalueatindex)
 
