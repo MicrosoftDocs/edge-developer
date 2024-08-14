@@ -61,6 +61,8 @@ The Microsoft Edge team will independently decide on MV3 migration timelines for
 | TBD | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge, by using enterprise policies. |
 | TBD | No change. | Manifest V2 extensions will no longer function in Microsoft Edge, even with the use of enterprise policies. |
 
+<!-- todo: existing MV2 extensions already published on the Microsoft Edge Add-ons website can be updated until the end of FY-24. [what Month/Day?]  This timeline is subject to change. -->
+
 <!-- todo: at TBDs, add "see below"?  or, replace right-hand cell content by the main point that's below? -->
 
 
@@ -87,10 +89,20 @@ For enterprises, Manifest V2 extensions will continue to be supported through En
 <!-- ====================================================================== -->
 ## Providing feedback
 
+<!-- todo: when to use twitter, techcommunity, or github forum? -->
+
 Microsoft continues to iteratively improve the platform and address the feedback shared by extension developers.  Share your questions, comments, and concerns with the team on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or via the [Microsoft Edge Insider forums on TechCommunity](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
 
-See also:
-* [Participate in the discussion forum](../publish/contact-extensions-team.md#participate-in-the-discussion-forum) in _Contact Microsoft Edge extensions support_.
+Use the [MicrosoftEdge-Extensions discussion forum](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) at GitHub to:
+* Flag an issue.
+* Request a feature.
+* Participate in discussions.
+* Share ideas about the Microsoft Edge Add-ons website.
+* Ask technical questions.
+* Ask about migrating an extension to Manifest V3.
+
+<!-- See also: -->
+<!-- * [Participate in the discussion forum](../publish/contact-extensions-team.md#participate-in-the-discussion-forum) in _Contact Microsoft Edge extensions support_. -->
 
 
 <!-- ---------------------------------------------------------------------- -->
