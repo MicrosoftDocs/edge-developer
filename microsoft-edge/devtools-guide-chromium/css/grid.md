@@ -40,8 +40,8 @@ Use the **Grid** section to configure which information to display in grid overl
 
 | Subsection | Purpose |
 | --- | --- |
-| **Overlay display settings** | Configure which information is displayed in the grid overlay. |
-| **Grid overlays** | Show or hide the grid overlay for each grid container that's present on the webpage. |
+| **Overlay display settings** | Configures which information is displayed in the grid overlay. |
+| **Grid overlays** | Shows or hides the grid overlay for each grid container that's present on the webpage, and temporarily highlights a grid in the webpage. |
 
 
 <!-- ====================================================================== -->
@@ -189,11 +189,13 @@ To open the color picker and customize the grid overlay color, click the box nex
 <!-- ------------------------------ -->
 #### Highlight the grid element in the DOM tree and webpage
 
-To highlight a grid's HTML element in the DOM tree in the **Elements** tool and scroll to the element that uses that grid layout in the rendered webpage:
+To scroll to a grid layout in the rendered webpage and highlight the element that has the grid for a few seconds, as well as putting focus on the element with the grid layout in the DOM tree:
 
 * In the **Grid overlays** section, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](./grid-images/show-element-in-element-panel-icon.png)) button next to the grid:
 
 ![Highlight the grid on the rendered webpage](./grid-images/grid-grid-overlays-highlight.png)
+
+This works regardless of whether the grid's checkbox is selected or cleared.
 
 
 <!-- ====================================================================== -->
