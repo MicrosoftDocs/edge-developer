@@ -61,8 +61,8 @@ Meanwhile, to plan the migration of your extension from Manifest V2 to Manifest 
 | July 2022 | Submit new MV2 extensions | Partner Center stops accepting new MV2 extensions. |
 | TBD | Manage MV2 extensions (non-enterprise) | Partner Center will no longer accept updates to existing MV2 extensions.  An extension can be migrated from MV2 to MV3.  Microsoft Edge stops running Manifest V2 extensions.  When we define the timeframe to stop supporting updates to MV2 extensions, we will communicate that timeframe in this article and via email with MV2 extension developers. |
 | TBD | Manage MV2 extensions (enterprise) | Enterprises can update/manage MV2 extensions (via enterprise policies) for an additional period.  Enterprises using the `ExtensionManifestV2Availability` policy to ensure the continued functioning of Manifest V2 extensions in their organization will have additional time to migrate the Manifest V2 extensions to V3. <!-- todo: rewrite Chrome's text --> |
-| TBD | Running MV2 extensions (non-enterprise) | Manifest V2 extensions will no longer function in Microsoft Edge, even for enterprises (with the use of enterprise policies.) |
-| TBD | Running MV2 extensions running (enterprise) | Enterprises can allow Manifest V2 extensions to run on Microsoft Edge, by using enterprise policies.  Manifest V2 extensions will no longer function in Microsoft Edge, even for enterprises (with the use of enterprise policies.) |
+| TBD | Running MV2 extensions (non-enterprise) | Manifest V2 extensions will no longer function in Microsoft Edge. |
+| TBD | Running MV2 extensions (enterprise) | Manifest V2 extensions will no longer function in Microsoft Edge, even for enterprises using enterprise policies. |
 
 In the above table:
 * _Manage_ means submitting an update of the MV2-based extension in Partner Center.
