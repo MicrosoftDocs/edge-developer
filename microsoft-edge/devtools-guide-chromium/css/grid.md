@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 08/13/2024
+ms.date: 08/14/2024
 ---
 # Inspect CSS Grid
 
@@ -105,7 +105,7 @@ The **Overlay display settings** section within the **Grid** section in the **La
 | Checkbox | Description |
 |:--- |:--- |
 | **Show track sizes**  | Displays or hides the sizes of the tracks. |
-| **Show area names** | Display or hides the names of the area, when names are provided. |
+| **Show area names** | Displays or hides the names of the area, when names are provided. |
 | **Extend grid lines** | Displays or hides the extensions of the grid dimensions along each axis.  By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` CSS set on it. |
 
 The following sections explain these checkboxes.
@@ -125,19 +125,19 @@ The `[authored size]` and `[computed size]` are then displayed in each line labe
 | **authored size** | The size defined in stylesheet (omitted if not defined). |
 | **computed size** | The actual size on screen. |
 
-In the demo, the `snack-box` column sizes are defined in the `grid-template-columns:1fr 2fr;` CSS.  Therefore, the column line labels display both authored and computed sizes.
+In the demo, the `snack-box` column sizes are defined in the `grid-template-columns:1fr 2fr;` CSS.  Therefore, the column line labels display both authored and computed sizes:
 
 | Track size | Authored size | Computed size |
 |:--- |:--- |:--- |
 | **1fr** &#x2022; **96.66px** | 1fr | 96.66px |
 | **2fr** &#x2022; **193.32px** | 2fr | 193.32px |
 
-The row line labels display only computed sizes, since there are no row sizes defined in the stylesheet.
+The line labels on the rows display only computed sizes, since there are no row sizes defined in the stylesheet:
 
 | Track size | Authored size | Computed size |
 |:--- |:--- |:--- |
-| **80px** | &nbsp;| 80px |
-| **80px** | &nbsp;| 80px |
+| **40px** | &nbsp;| 40px |
+| **40px** | &nbsp;| 40px |
 
 
 <!-- ---------- -->
