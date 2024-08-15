@@ -187,7 +187,7 @@ To open the color picker and customize the grid overlay color, click the box nex
 
 
 <!-- ------------------------------ -->
-#### Highlight the grid
+#### Highlight the grid element in the DOM tree and webpage
 
 To highlight a grid's HTML element in the DOM tree in the **Elements** tool and scroll to the element that uses that grid layout in the rendered webpage:
 
