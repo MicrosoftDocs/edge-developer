@@ -79,7 +79,7 @@ In the dropdown list, select **Show line numbers** to display the numbers of the
 
 ![Display line numbers](./grid-images/grid-show-line-numbers.png)
 
-By default, the positive and negative line numbers are displayed on the grid overlay.  For information about negative numbers in the grid overlay, see [Line-based placement with CSS Grid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid).
+By default, the positive and negative line numbers are displayed on the grid overlay.  For information about negative numbers in the grid overlay, see [Counting backwards](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement#counting_backwards) in _Grid layout using line-based placement_ at MDN.
 
 
 <!-- ---------- -->
@@ -91,7 +91,7 @@ In the dropdown list, select **Show line names** to view the line names instead 
 
 In the above example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.
 
-For more information about line names in the grid overlay, see [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines).
+For more information about line names in the grid overlay, see [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines) at MDN.
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->
 
@@ -189,16 +189,24 @@ To open the color picker and customize the grid overlay color, click the box nex
 <!-- ------------------------------ -->
 #### Highlight the grid
 
-To highlight an HTML element in the rendered webpage and scroll to it: select the element in the DOM tree in the **Elements** tool, and then in the **Grid overlays** section, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](./grid-images/show-element-in-element-panel-icon.png)) button:
+To highlight a grid's HTML element in the DOM tree in the **Elements** tool and scroll to the element that uses that grid layout in the rendered webpage:
+
+* In the **Grid overlays** section, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](./grid-images/show-element-in-element-panel-icon.png)) button next to the grid:
 
 ![Highlight the grid on the rendered webpage](./grid-images/grid-grid-overlays-highlight.png)
 
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article, in order of article: -->
 
-* [Inspect CSS Grid](https://microsoftedge.github.io/Demos/devtools-grid/) demo webpage.
-* [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) at MDN.
+Demo webpages:
+* [Inspect CSS Grid](https://microsoftedge.github.io/Demos/devtools-grid/)
+
+MDN:
+* [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout)
+   * [Grid layout using line-based placement](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)
+   * [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines)
 
 
 <!-- ====================================================================== -->
