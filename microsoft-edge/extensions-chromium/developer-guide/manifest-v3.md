@@ -50,16 +50,24 @@ Chromium has revised the timelines for ending support for Manifest V2.<!-- todo:
 
 To help you plan the migration of your extension from Manifest V2 to Manifest V3, consider the following schedule for support for Manifest V2 and V3 in Microsoft Edge and Microsoft Partner Center.
 
-The Microsoft Edge team will independently decide on MV3 migration timelines for Microsoft Edge Add-ons and share an update here.<!-- todo: revise wording in this h2 section? -->  We continue to analyze the concerns raised by extension developers and explore the optimal path for the Microsoft Edge Add-ons ecosystem.<!-- todo: change to "for Microsoft Edge Add-ons."  'ecosystem' is undefined in these articles; if it's a needed term, define it -->  Meanwhile, to plan the migration of your extension from Manifest V2 to Manifest V3, see [Manifest timeline for the Chromium browser engine](#manifest-timeline-for-the-chromium-browser-engine), above.
-
+The Microsoft Edge team will independently decide on MV3 migration timelines for Microsoft Edge Add-ons and share an update here.<!-- todo: revise wording in this h2 section? -->
+We continue to analyze the concerns raised by extension developers and explore the optimal path for the Microsoft Edge Add-ons ecosystem.<!-- todo: change to "for Microsoft Edge Add-ons."  'ecosystem' is undefined in these articles; if it's a needed term, define it -->
+Meanwhile, to plan the migration of your extension from Manifest V2 to Manifest V3, see [Manifest timeline for the Chromium browser engine](#manifest-timeline-for-the-chromium-browser-engine), above.
 
 **The Microsoft Edge team is currently in the process of updating this MV3 migration timeline.**
 
-| Timeframe | Microsoft Partner Center changes | Microsoft Edge changes |
-|--- |--- |--- |
-| July 2022 (already in effect) | Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
-| TBD | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge, by using enterprise policies. |
-| TBD | No change. | Manifest V2 extensions will no longer function in Microsoft Edge, even with the use of enterprise policies. |
+| Timeframe | Milestone name | Support |
+| --- | --- | --- |
+| July 2022 | Submit new MV2 extensions | Partner Center stops accepting new MV2 extensions. |
+| TBD | Manage MV2 extensions (non-enterprise) | Partner Center will no longer accept updates to existing MV2 extensions.  An extension can be migrated from MV2 to MV3.  Microsoft Edge stops running Manifest V2 extensions.  When we define the timeframe to stop supporting updates to MV2 extensions, we will communicate that timeframe in this article and via email with MV2 extension developers. |
+| TBD | Manage MV2 extensions (enterprise) | Enterprises can update/manage MV2 extensions (via enterprise policies) for an additional period.  Enterprises using the `ExtensionManifestV2Availability` policy to ensure the continued functioning of Manifest V2 extensions in their organization will have additional time to migrate the Manifest V2 extensions to V3. <!-- todo: rewrite Chrome's text --> |
+| TBD | Running MV2 extensions (non-enterprise) | Manifest V2 extensions will no longer function in Microsoft Edge, even for enterprises (with the use of enterprise policies.) |
+| TBD | Running MV2 extensions running (enterprise) | Enterprises can allow Manifest V2 extensions to run on Microsoft Edge, by using enterprise policies.  Manifest V2 extensions will no longer function in Microsoft Edge, even for enterprises (with the use of enterprise policies.) |
+
+In the above table:
+* _Manage_ means submitting an update of the MV2-based extension in Partner Center.
+* _Running_ means that the extension is supported in Microsoft Edge.
+
 
 <!-- todo: existing MV2 extensions already published on the Microsoft Edge Add-ons website can be updated until the end of FY-24. [what Month/Day?]  This timeline is subject to change. -->
 
