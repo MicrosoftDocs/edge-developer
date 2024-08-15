@@ -191,11 +191,11 @@ To open the color picker and customize the grid overlay color, click the box nex
 
 To scroll to a grid layout in the rendered webpage and highlight the element that has the grid for a few seconds, as well as putting focus on the element with the grid layout in the DOM tree:
 
-* In the **Grid overlays** section, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](./grid-images/show-element-in-element-panel-icon.png)) button next to the grid:
+* In the **Grid overlays** section, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](./grid-images/show-element-in-element-panel-icon.png)) button next to the element name:
 
 ![Highlight the grid on the rendered webpage](./grid-images/grid-grid-overlays-highlight.png)
 
-This works regardless of whether the grid's checkbox is selected or cleared.
+This works regardless of whether the element's checkbox is selected or cleared.
 
 
 <!-- ====================================================================== -->
