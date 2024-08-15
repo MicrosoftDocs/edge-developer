@@ -24,7 +24,7 @@ CSS Grid is a powerful layout paradigm for the web.  A good webpage to learn abo
 <!-- ====================================================================== -->
 ## Discover CSS grids
 
-When an HTML element in your webpage has `display: grid` or `display: inline-grid` applied to it, a **grid** badge is displayed next to it in the **Elements** tool:
+When an HTML element in your webpage has `display: grid` or `display: inline-grid` applied to it, a **grid** badge is displayed next to the element in the DOM tree in the **Elements** tool:
 
 ![Discover grid](./grid-images/grid-discover-grid.png)
 
