@@ -112,15 +112,15 @@ In the demo, the `snack-box` column sizes are defined in the `grid-template-colu
 
 | Track size | Authored size | Computed size |
 |:--- |:--- |:--- |
-| **1fr** &#x2022; **96.66px** | 1fr | 96.66px |
-| **2fr** &#x2022; **193.32px** | 2fr | 193.32px |
+| **1fr** &#x2022; **48.33px** | 1fr | 48.33px |
+| **2fr** &#x2022; **96.67px** | 2fr | 96.67px |
 
 The row line labels display only computed sizes, since there are no row sizes defined in the stylesheet.
 
 | Track size | Authored size | Computed size |
 |:--- |:--- |:--- |
-| **80px** | &nbsp;| 80px |
-| **80px** | &nbsp;| 80px |
+| **40px** | &nbsp;| 40px |
+| **40px** | &nbsp;| 40px |
 
 ![Show track sizes](./grid-images/grid-show-track-sizes.png)
 
