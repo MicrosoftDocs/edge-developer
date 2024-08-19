@@ -227,7 +227,7 @@ Allows the host app to add JavaScript code in the web content within the WebView
 
 Your app can send messages to the web content that's within the WebView2 control, and receive messages from that web content.  Messages are sent as strings or JSON objects. 
 
-Additionally, you can optionally post and receive some DOM objects along with your message via the additionalObjects parameter for `PostWebMessageAsJson`. For Win32, that would be the `PostWebMessageAsJsonWithAdditionalObjects` method.The WebView2 class CoreWebView2FileSystemHandle represents the DOM FileSystemHandle and the CoreWebView2File represents the DOM File. See also [`chrome.webview.postMessageWithAdditionalObjects`](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/javascript/webview#webview2script-webview-postmessagewithadditionalobjects-member(1))
+You can optionally post and receive DOM objects along with your message via the `additionalObjects` parameter of `PostWebMessageAsJson` (.NET, WinRT) or via `PostWebMessageAsJsonWithAdditionalObjects` (Win32).  The WebView2 `CoreWebView2FileSystemHandle` class represents the DOM `FileSystemHandle`, and `CoreWebView2File` represents the DOM `File`.  See also [`chrome.webview.postMessageWithAdditionalObjects`](../reference/javascript/webview.yml#webview2script-webview-postmessagewithadditionalobjects-member(1)) in the JavaScript Reference.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
