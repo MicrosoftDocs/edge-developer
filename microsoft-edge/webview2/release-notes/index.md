@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 08/13/2024
+ms.date: 08/26/2024
 ---
 # Release Notes for the WebView2 SDK
 
@@ -73,9 +73,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.2739.15
 
-Release Date: Monthname nn, 2024
+Release Date: August 26, 2024
 
 [NuGet package for WebView2 SDK 1.0.2739.15](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2739.15)
 
@@ -87,14 +87,20 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
-* Added `Notification` APIs that support web notifications including non-persistent notifications and persistent notifications. A non-persistent notification is a notification without an associated service worker registration. A persistent notification is a notification with an associated service worker registration. You should be able to handle notification permission requests, and further listen to `Notification Received` events to optionally handle the notifications themselves. 
+
+<!-- ------------------------------ -->
+* Added `Notification` APIs that support web notifications, including non-persistent notifications and persistent notifications.  A _non-persistent notification_ is a notification without an associated service worker registration.  A _persistent notification_ is a notification with an associated service worker registration.  You should be able to handle<!-- todo: "Your app should handle"?  "Your app can optionally handle"? --> notification permission requests, and further listen to<!-- todo: "and then listen for"? --> `Notification Received` events to optionally handle the notifications themselves.<!-- todo: delete "themselves"?  does "should" contradict "optionally"? -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: another pass comparing inventory across the 3 tabs -->
+
+<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
 
 * `CoreWebView2` Class:
    * [CoreWebView2.NotificationReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.notificationreceived?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
 
-* [CoreWebView2Notification Class:](/dotnet/api/microsoft.web.webview2.core.corewebview2notification?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+* [CoreWebView2Notification Class](/dotnet/api/microsoft.web.webview2.core.corewebview2notification?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2Notification.BadgeUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.badgeuri?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2Notification.Body Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.body?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2Notification.BodyImageUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.bodyimageuri?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
@@ -113,19 +119,16 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * [CoreWebView2Notification.Title Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.title?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2Notification.VibrationPattern Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.vibrationpattern?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
 
+<!-- todo: unlink class if it contains more members -->
 * [CoreWebView2NotificationReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2NotificationReceivedEventArgs.GetDeferral Method](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs.getdeferral?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2NotificationReceivedEventArgs.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs.handled?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2NotificationReceivedEventArgs.Notification Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs.notification?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2NotificationReceivedEventArgs.SenderOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs.senderorigin?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
 
-* [CoreWebView2SaveAsKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2SaveAsKind.Complete Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2SaveAsKind.Default Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2SaveAsKind.HtmlOnly Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2SaveAsKind.SingleFile Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)   
-
 ##### [WinRT/C#](#tab/winrtcsharp)
+
+<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
 
 * [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2739.15&preserve-view=true)
    * [CoreWebView2.NotificationReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2739.15&preserve-view=true#notificationreceived)
@@ -149,6 +152,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * [CoreWebView2Notification.Title Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification?view=webview2-winrt-1.0.2739.15&preserve-view=true#title)
    * [CoreWebView2Notification.VibrationPattern Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification?view=webview2-winrt-1.0.2739.15&preserve-view=true#vibrationpattern)
 
+<!-- todo: unlink class if it contains more members -->
 * [CoreWebView2NotificationReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true)
    * [CoreWebView2NotificationReceivedEventArgs.Cancel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#cancel)
    * [CoreWebView2NotificationReceivedEventArgs.GetDeferral Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#getdeferral)
@@ -157,13 +161,22 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * [CoreWebView2NotificationReceivedEventArgs.Notification Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#notification)
    * [CoreWebView2NotificationReceivedEventArgs.SenderOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#senderorigin)
 
+<!-- todo: add?
+* [CoreWebView2SaveAsKind Enum](~)
+   * `Complete`
+   * `Default`
+   * `HtmlOnly`
+   * `SingleFile`
+-->
+<!-- todo: or rather, make sure enum is down in next entry's/section's tab? -->
 
 ##### [Win32/C++](#tab/win32cpp)
+
+<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
 
 * [ICoreWebView2_24](/microsoft-edge/webview2/reference/win32/icorewebview2_24?view=webview2-1.0.2739.15&preserve-view=true)
    * [ICoreWebView2_24::add_NotificationReceived](/microsoft-edge/webview2/reference/win32/icorewebview2_24?view=webview2-1.0.2739.15&preserve-view=true#add_notificationreceived)
    * [ICoreWebView2_24::remove_NotificationReceived](/microsoft-edge/webview2/reference/win32/icorewebview2_24?view=webview2-1.0.2739.15&preserve-view=true#remove_notificationreceived)
-   * [ICoreWebView2NotificationReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventhandler?view=webview2-1.0.2739.15&preserve-view=true)
 
 * [ICoreWebView2Notification](/microsoft-edge/webview2/reference/win32/icorewebview2notification?view=webview2-1.0.2739.15&preserve-view=true)
    * [ICoreWebView2Notification::add_CloseRequested](/microsoft-edge/webview2/reference/win32/icorewebview2notification?view=webview2-1.0.2739.15&preserve-view=true#add_closerequested)
@@ -184,33 +197,51 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * [ICoreWebView2Notification::get_IsSilent](/microsoft-edge/webview2/reference/win32/icorewebview2notification?view=webview2-1.0.2739.15&preserve-view=true#get_issilent)
    * [ICoreWebView2Notification::get_Timestamp](/microsoft-edge/webview2/reference/win32/icorewebview2notification?view=webview2-1.0.2739.15&preserve-view=true#get_timestamp)
    * [ICoreWebView2Notification::GetVibrationPattern](/microsoft-edge/webview2/reference/win32/icorewebview2notification?view=webview2-1.0.2739.15&preserve-view=true#getvibrationpattern)
+<!-- todo: alpha sort members? check Ref -->
 
-* [ICoreWebView2NotificationCloseRequestedEventHandler](/microsoft-
-edge/webview2/reference/win32/icorewebview2notificationcloserequestedeventhandler?view=webview2-1.0.2739.15&preserve-view=true)
+* [ICoreWebView2NotificationCloseRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2notificationcloserequestedeventhandler?view=webview2-1.0.2739.15&preserve-view=true)<!-- todo: Win32-only? -->
 
 * [ICoreWebView2NotificationReceivedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true)
    * [ICoreWebView2NotificationReceivedEventArgs::get_SenderOrigin](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#get_senderorigin)
    * [ICoreWebView2NotificationReceivedEventArgs::get_Notification](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#get_notification)
    * [ICoreWebView2NotificationReceivedEventArgs::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#get_handled)
    * [ICoreWebView2NotificationReceivedEventArgs::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#put_handled)
-   * [ICoreWebView2NotificationReceivedEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#invoke)
-   * [ICoreWebView2NotificationReceivedEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#invoke)
-   * [ICoreWebView2NotificationReceivedEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#invoke)
+<!-- todo: add GetDeferral? -->
+<!-- todo: alpha sort members? check Ref -->
+
+* [ICoreWebView2NotificationReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventhandler?view=webview2-1.0.2739.15&preserve-view=true)<!-- todo: Win32-only? -->
 
 ---
 
-* Added the `SaveAs` APIs that allow you to programmatically perform the **Save as** operation. You can use these APIs to block the default **Save as** dialog, adn then either save silently, or build your own UI for **Save as**. These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs. 
+
+<!-- ------------------------------ -->
+* Added the `SaveAs` APIs that<!-- todo: ", which"?  is this all SaveAs apis, or just a new group of them? --> allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.  These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs. 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: another pass comparing inventory across the 3 tabs -->
+
+<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
+
 * `CoreWebView2` Class:
    * [CoreWebView2.SaveAsUIShowing Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.saveasuishowing?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2.ShowSaveAsUIAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.showsaveasuiasync?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-* [CoreWebView2SaveAsUIResult Class](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2SaveAsUIResult.Cancelled Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2SaveAsUIResult.FileAlreadyExists Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2SaveAsUIResult.InvalidPath Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2SaveAsUIResult.KindNotSupported Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2SaveAsUIResult.Success Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+
+* [CoreWebView2SaveAsKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+   * `Complete`
+   * `Default`
+   * `HtmlOnly`
+   * `SingleFile`
+<!-- todo: check member list & order per Ref docs -->
+
+* [CoreWebView2SaveAsUIResult Class](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult?view=webview2-dotnet-1.0.2739.15&preserve-view=true)<!-- todo: Enum? -->
+   * `Cancelled`
+   * `FileAlreadyExists`
+   * `InvalidPath`
+   * `KindNotSupported`
+   * `Success`
+<!-- todo: check member list & order per Ref docs -->
+
 * [CoreWebView2SaveAsUIShowingEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2SaveAsUIShowingEventArgs.AllowReplace Property](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs.allowreplace?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2SaveAsUIShowingEventArgs.Cancel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs.cancel?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
@@ -221,11 +252,28 @@ edge/webview2/reference/win32/icorewebview2notificationcloserequestedeventhandle
    * [CoreWebView2SaveAsUIShowingEventArgs.SuppressDefaultDialog Property](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs.suppressdefaultdialog?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
+
+<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
+
 * [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2739.15&preserve-view=true)
    * [CoreWebView2.SaveAsUIShowing Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2739.15&preserve-view=true#saveasuishowing)
    * [CoreWebView2.ShowSaveAsUIAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2739.15&preserve-view=true#showsaveasuiasync)
+
 * [CoreWebView2SaveAsKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveaskind?view=webview2-winrt-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2SaveAsUIResult Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuiresult?view=webview2-winrt-1.0.2739.15&preserve-view=true)
+   * `Complete`
+   * `Default`
+   * `HtmlOnly`
+   * `SingleFile`
+<!-- todo: check member list & order per Ref docs -->
+
+* [CoreWebView2SaveAsUIResult Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuiresult?view=webview2-winrt-1.0.2739.15&preserve-view=true)
+   * `Cancelled`
+   * `FileAlreadyExists`
+   * `InvalidPath`
+   * `KindNotSupported`
+   * `Success`
+<!-- todo: check member list & order per Ref docs -->
+
 * [CoreWebView2SaveAsUIShowingEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuishowingeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true)
    * [CoreWebView2SaveAsUIShowingEventArgs.AllowReplace Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuishowingeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#allowreplace)
    * [CoreWebView2SaveAsUIShowingEventArgs.ContentMimeType Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2saveasuishowingeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#contentmimetype)
@@ -235,14 +283,14 @@ edge/webview2/reference/win32/icorewebview2notificationcloserequestedeventhandle
 
 ##### [Win32/C++](#tab/win32cpp)
 
+<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
+
 * [ICoreWebView2_25](/microsoft-edge/webview2/reference/win32/icorewebview2_25?view=webview2-1.0.2739.15&preserve-view=true)
    * [ICoreWebView2_25::add_SaveAsUIShowing](/microsoft-edge/webview2/reference/win32/icorewebview2_25?view=webview2-1.0.2739.15&preserve-view=true#add_saveasuishowing)
    * [ICoreWebView2_25::remove_SaveAsUIShowing](/microsoft-edge/webview2/reference/win32/icorewebview2_25?view=webview2-1.0.2739.15&preserve-view=true#remove_saveasuishowing)
    * [ICoreWebView2_25::ShowSaveAsUI](/microsoft-edge/webview2/reference/win32/icorewebview2_25?view=webview2-1.0.2739.15&preserve-view=true#showsaveasui)
 
 * [ICoreWebView2SaveAsUIShowingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2saveasuishowingeventhandler?view=webview2-1.0.2739.15&preserve-view=true)
-
-* [ICoreWebView2ShowSaveAsUICompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2showsaveasuicompletedhandler?view=webview2-1.0.2739.15&preserve-view=true)
 
 * [ICoreWebView2SaveAsUIShowingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2saveasuishowingeventargs?view=webview2-1.0.2739.15&preserve-view=true)
    * [ICoreWebView2SaveAsUIShowingEventArgs::get_ContentMimeType](/microsoft-edge/webview2/reference/win32/icorewebview2saveasuishowingeventargs?view=webview2-1.0.2739.15&preserve-view=true#get_contentmimetype)
@@ -258,31 +306,56 @@ edge/webview2/reference/win32/icorewebview2notificationcloserequestedeventhandle
    * [ICoreWebView2SaveAsUIShowingEventArgs::get_Kind](/microsoft-edge/webview2/reference/win32/icorewebview2saveasuishowingeventargs?view=webview2-1.0.2739.15&preserve-view=true#get_kind)
    * [ICoreWebView2SaveAsUIShowingEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2saveasuishowingeventargs?view=webview2-1.0.2739.15&preserve-view=true#getdeferral)
    * [ICoreWebView2SaveAsUIShowingEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2saveasuishowingeventargs?view=webview2-1.0.2739.15&preserve-view=true#getdeferral)
-   * [ICoreWebView2SaveAsUIShowingEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2saveasuishowingeventargs?view=webview2-1.0.2739.15&preserve-view=true#invoke)
+   * [ICoreWebView2SaveAsUIShowingEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2saveasuishowingeventargs?view=webview2-1.0.2739.15&preserve-view=true#invoke)<!-- todo: delete Invoke? -->
+<!-- todo: check member list & order -->
+
+* [ICoreWebView2ShowSaveAsUICompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2showsaveasuicompletedhandler?view=webview2-1.0.2739.15&preserve-view=true)<!-- todo: Win32-only? -->
+
+<!-- todo: add enum like CoreWebView2SaveAsKind ? -->
+
+<!-- todo: add enum like CoreWebView2SaveAsUIResult ? -->
 
 ---
 
-* Added the `TextDirectionKind` Enum 
+
+<!-- ------------------------------ -->
+* Added the `TextDirectionKind` enum.
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+<!-- todo: another pass comparing inventory across the 3 tabs -->
+
+<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
+
 * [CoreWebView2TextDirectionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2textdirectionkind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2TextDirectionKind.Default Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2textdirectionkind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2TextDirectionKind.LeftToRight Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2textdirectionkind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2TextDirectionKind.RightToLeft Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2textdirectionkind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+   * `Default`
+   * `LeftToRight`
+   * `RightToLeft`
+<!-- todo: check member list & order per Ref docs -->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
+
 * [CoreWebView2TextDirectionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2textdirectionkind?view=webview2-winrt-1.0.2739.15&preserve-view=true)
+   * `Default`
+   * `LeftToRight`
+   * `RightToLeft`
+<!-- todo: check member list & order per Ref docs -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
-Not applicable
+<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
+
+Not applicable.
 
 ---
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
+
+<!-- todo: populate, or note None, or link to other section (expand the latter's heading to specify version #) -->
 
 
 <!-- ---------- -->
@@ -303,7 +376,7 @@ Not applicable
 <!-- ====================================================================== -->
 ## 1.0.2783-prerelease
 
-Release Date: Monthname nn, 2024
+Release Date: August 26, 2024
 
 [NuGet package for WebView2 SDK 1.0.2783-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2783-prerelease)
 
@@ -333,23 +406,25 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 <!-- ---------- -->
 ###### Runtime and SDK
 
-* Re-enables the default behavior of SetUserAgent being effective for cross-origin iframes. 
+* Re-enabled the default behavior of `SetUserAgent`: by default, `SetUserAgent` is effective for cross-origin iframes. 
+<!-- todo: clarify "being effective for" -->
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Enabled the interactive dragging feature by default
-* Disable IsolateSandboxedIframes for WebView2.
-* Fix an issue where WebView creation will fail when multiple instances are launched at the same time. ([Issue #4731](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4731))
-* Fixed a bug in WinRT JavaScript projection where caching existing properties in Proxy and Function like name caused an error due to name collision.
-* Fixed a bug where WebView2 could end up as the wrong size after monitor disconnect/reconnect. 
-* Fixed issue where "mailto:" links are leaving behind an untitled popup window instead of auto-closing.
+* Enabled the interactive dragging feature by default.  See `edge-webview-interactive-dragging` in [WebView2 browser flags](../concepts/webview-features-flags.md).
+* Disabled `IsolateSandboxedIframes` for WebView2.
+* Fixed an issue where WebView creation fails when multiple instances are launched at the same time.  ([Issue #4731](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4731))
+* Fixed a bug in WinRT JavaScript projection where caching existing properties in Proxy and Function like name<!-- todo: clarify/format, give example api names.  does name literally contain "Proxy" or "Function"?  or a name that's like the name of the proxy or the function? --> caused an error due to name collision.
+* Fixed a bug where the WebView2 control became the wrong size after disconnecting and reconnecting a monitor.
+* Fixed an issue where "mailto:" links leave an untitled popup window open, instead of automatically closing the popup window.
+
 
 <!-- ---------- -->
 ###### SDK-only
 
-* C# WinRT projection works on UWP
-* Fix for GeneratedFilesDir showing up in Visual Studio for C# WinRT projection
+* C# WinRT projection now works on UWP.
+* Fix for `GeneratedFilesDir` showing up in Visual Studio for C# WinRT projection.<!-- todo: clarify: "`GeneratedFilesDir` no longer appears in Visual Studio during C# WinRT projection"? -->
 
 <!-- end of Aug 2024 Prerelease SDK -->
 
