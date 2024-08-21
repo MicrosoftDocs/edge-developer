@@ -18,9 +18,9 @@ ms.date: 08/22/2024
 
 <!-- Subtitle: Use the "Enable CSS selector stats" setting instead of the "Enable advanced paint instrumentation (slow)" to capture CSS selector statistics for Recalculate Style events -->
 
-In the **Performance** tool, we've removed the duplicate **Selector Stats** label that appears in `Recalculate Style` event details. Selector stats can be enabled by using the dedicated setting for it.
+In the **Performance** tool, the duplicate **Selector Stats** label has been removed from the `Recalculate Style` event details.  Selector stats can be enabled by using the dedicated setting for it.
 
-Also, the **Enable advanced rendering instrumentation (slow)** setting has been renamed back to **Enable advanced paint instrumentation (slow)**. Previously this setting was used for both paint instrumentation and selector stats. We updated the setting label since there's a dedicated setting for selector stats now.
+Also, the **Enable advanced rendering instrumentation (slow)** setting has been renamed back to **Enable advanced paint instrumentation (slow)**.  Previously, this setting was used for both paint instrumentation and selector stats.  This setting label has been updated because there's now a dedicated setting for selector stats.
 
 Before:
 
@@ -30,23 +30,38 @@ After:
 
 ![New selector stats labels](./devtools-128-images/new-selector-stats.png)
 
+
 <!-- ====================================================================== -->
-## Fixed extra padding in the Activity Bar context menu headers
+## Fixed whitespace in the top of Activity Bar right-click menus
 
-<!-- Subtitle: Header titles in the Activity Bar are restored. -->
+<!-- Subtitle: Header titles in the Activity Bar's right-click menus have been restored. -->
 
-In recent versions of Microsoft Edge, the context menus in the Activity Bar displayed some empty whitespace in the header:
+In recent versions of Microsoft Edge, the context menus in the **Activity Bar** displayed some empty whitespace in the header:
 
 ![Old context menu header](./devtools-128-images/missing-header-title.png)
 
-The context menus header has been changed back to include its title:
+The header at the top of each context menu now includes the title:
 
 ![New context menu header](./devtools-128-images/header-title.png)
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 Microsoft Edge 128 also includes the following updates from the Chromium project:
+
+* [Console insights by Gemini are going live in most European countries](https://developer.chrome.com/blog/new-in-devtools-128#console-insights)
+* [Performance panel updates](https://developer.chrome.com/blog/new-in-devtools-128#perf)
+   * [Enhanced Network track](https://developer.chrome.com/blog/new-in-devtools-128#perf-network)
+   * [Customized performance data with extensibility API](https://developer.chrome.com/blog/new-in-devtools-128#perf-extension)
+   * [Details in the Timings track](https://developer.chrome.com/blog/new-in-devtools-128#timings-details)
+* [Copy all listed requests in the Network panel](https://developer.chrome.com/blog/new-in-devtools-128#copy-all-listed)
+* [Faster heap snapshots with named HTML tags and less clutter](https://developer.chrome.com/blog/new-in-devtools-128#heap-snapshots)
+* [Open Animations panel to capture animations and edit @keyframes live](https://developer.chrome.com/blog/new-in-devtools-128#animations)
+* [Lighthouse 12.1.0](https://developer.chrome.com/blog/new-in-devtools-128#lighthouse)
+* [Accessibility](https://developer.chrome.com/blog/new-in-devtools-128#accessibility)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-128#misc)
+<!-- todo: maybe delete some links -->
 
 
 <!-- ====================================================================== -->
@@ -54,7 +69,7 @@ Microsoft Edge 128 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 127)](https://developer.chrome.com/blog/new-in-devtools-127) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 128)](https://developer.chrome.com/blog/new-in-devtools-128) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
 
 
 <!-- ====================================================================== -->
