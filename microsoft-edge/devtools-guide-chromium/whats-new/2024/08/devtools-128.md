@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 128)
-description: "Updated labels for selector stats. Fixed whitespace in the top of Activity Bar right-click menus. And more."
+description: "Updated labels for selector stats. Fixed whitespace in Activity Bar right-click menus. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -32,15 +32,15 @@ After:
 
 
 <!-- ====================================================================== -->
-## Fixed whitespace in the top of Activity Bar right-click menus
+## Fixed whitespace in Activity Bar right-click menus
 
-<!-- Subtitle: Header titles in the Activity Bar's right-click menus have been restored. -->
+<!-- Subtitle: Header titles in the top of the Activity Bar's right-click menus have been restored. -->
 
-In recent versions of Microsoft Edge, the context menus in the **Activity Bar** displayed some empty whitespace in the header:
+In recent versions of Microsoft Edge, some context menus in the **Activity Bar** displayed empty whitespace in the header area at the top:
 
 ![Old context menu header](./devtools-128-images/missing-header-title.png)
 
-The header at the top of each context menu now includes the title:
+The top of each context menu now shows the title again:
 
 ![New context menu header](./devtools-128-images/header-title.png)
 
