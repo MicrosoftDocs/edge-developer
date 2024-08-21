@@ -126,6 +126,11 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * [CoreWebView2NotificationReceivedEventArgs.Notification Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs.notification?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2NotificationReceivedEventArgs.SenderOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs.senderorigin?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
 
+* [CoreWebView2TextDirectionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2textdirectionkind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+   * `Default`
+   * `LeftToRight`
+   * `RightToLeft`
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 <!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
@@ -161,14 +166,10 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * [CoreWebView2NotificationReceivedEventArgs.Notification Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#notification)
    * [CoreWebView2NotificationReceivedEventArgs.SenderOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#senderorigin)
 
-<!-- todo: add?
-* [CoreWebView2SaveAsKind Enum](~)
-   * `Complete`
+* [CoreWebView2TextDirectionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2textdirectionkind?view=webview2-winrt-1.0.2739.15&preserve-view=true)
    * `Default`
-   * `HtmlOnly`
-   * `SingleFile`
--->
-<!-- todo: or rather, make sure enum is down in next entry's/section's tab? -->
+   * `LeftToRight`
+   * `RightToLeft`
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -211,6 +212,11 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 * [ICoreWebView2NotificationReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventhandler?view=webview2-1.0.2739.15&preserve-view=true)<!-- todo: Win32-only? -->
 
+* [`COREWEBVIEW2_TEXT_DIRECTION_KIND` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2739.15&preserve-view=true#corewebview2_text_direction_kind)
+   * `COREWEBVIEW2_TEXT_DIRECTION_KIND_DEFAULT`
+   * `COREWEBVIEW2_TEXT_DIRECTION_KIND_LEFT_TO_RIGHT`
+   * `COREWEBVIEW2_TEXT_DIRECTION_KIND_RIGHT_TO_LEFT`
+
 ---
 
 
@@ -250,6 +256,12 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * [CoreWebView2SaveAsUIShowingEventArgs.Kind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs.kind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2SaveAsUIShowingEventArgs.SaveAsFilePath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs.saveasfilepath?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2SaveAsUIShowingEventArgs.SuppressDefaultDialog Property](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs.suppressdefaultdialog?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+
+* [CoreWebView2SaveAsKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+   * [CoreWebView2SaveAsKind.Complete Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+   * [CoreWebView2SaveAsKind.Default Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+   * [CoreWebView2SaveAsKind.HtmlOnly Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+   * [CoreWebView2SaveAsKind.SingleFile Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true) 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -315,40 +327,19 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 <!-- todo: add enum like CoreWebView2SaveAsUIResult ? -->
 
----
+* [`COREWEBVIEW2_SAVE_AS_KIND` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2739.15&preserve-view=true#corewebview2_file_save_as_kind)
+   * `COREWEBVIEW2_SAVE_AS_KIND_DEFAULT`
+   * `COREWEBVIEW2_SAVE_AS_KIND_HTML_ONLY`
+   * `COREWEBVIEW2_SAVE_AS_KIND_SINGLE_FILE`
+   * `COREWEBVIEW2_SAVE_AS_KIND_COMPLETE`
 
-
-<!-- ------------------------------ -->
-* Added the `TextDirectionKind` enum.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-<!-- todo: another pass comparing inventory across the 3 tabs -->
-
-<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
-
-* [CoreWebView2TextDirectionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2textdirectionkind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * `Default`
-   * `LeftToRight`
-   * `RightToLeft`
-<!-- todo: check member list & order per Ref docs -->
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
-
-* [CoreWebView2TextDirectionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2textdirectionkind?view=webview2-winrt-1.0.2739.15&preserve-view=true)
-   * `Default`
-   * `LeftToRight`
-   * `RightToLeft`
-<!-- todo: check member list & order per Ref docs -->
-
-##### [Win32/C++](#tab/win32cpp)
-
-<!-- todo: check member lists against open Ref PR or live Ref.  Status of Ref, to do that checking: __ -->
-
-Not applicable.
-
+* [`COREWEBVIEW2_SAVE_AS_UI_RESULT` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2739.15&preserve-view=true#corewebview2_save_as_ui_result_kind)
+   * `COREWEBVIEW2_SAVE_AS_UI_RESULT_SUCCESS`
+   * `COREWEBVIEW2_SAVE_AS_UI_RESULT_INVALID_PATH`
+   * `COREWEBVIEW2_SAVE_AS_UI_RESULT_FILE_ALREADY_EXISTS`
+   * `COREWEBVIEW2_SAVE_AS_UI_RESULT_KIND_NOT_SUPPORTED`
+   * `COREWEBVIEW2_SAVE_AS_UI_RESULT_CANCELLED`
+   
 ---
 
 
