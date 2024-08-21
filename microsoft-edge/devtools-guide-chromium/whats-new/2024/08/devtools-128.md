@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 128)
-description: "Use Copilot to explain HTML and CSS in the Elements tool. And more."
+description: "Updated labels for selector stats. Fixed whitespace in the top of Activity Bar right-click menus. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
