@@ -197,6 +197,11 @@ edge/webview2/reference/win32/icorewebview2notificationcloserequestedeventhandle
    * [ICoreWebView2NotificationReceivedEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#invoke)
    * [ICoreWebView2NotificationReceivedEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#invoke)
 
+* [`COREWEBVIEW2_TEXT_DIRECTION_KIND` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2739.15&preserve-view=true#corewebview2_text_direction_kind)
+   * `COREWEBVIEW2_TEXT_DIRECTION_KIND_DEFAULT`
+   * `COREWEBVIEW2_TEXT_DIRECTION_KIND_LEFT_TO_RIGHT`
+   * `COREWEBVIEW2_TEXT_DIRECTION_KIND_RIGHT_TO_LEFT`
+
 ---
 
 * Added the `SaveAs` APIs that allow you to programmatically perform the **Save as** operation. You can use these APIs to block the default **Save as** dialog, adn then either save silently, or build your own UI for **Save as**. These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs. 
@@ -266,6 +271,19 @@ edge/webview2/reference/win32/icorewebview2notificationcloserequestedeventhandle
    * [ICoreWebView2SaveAsUIShowingEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2saveasuishowingeventargs?view=webview2-1.0.2739.15&preserve-view=true#getdeferral)
    * [ICoreWebView2SaveAsUIShowingEventArgs::Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2saveasuishowingeventargs?view=webview2-1.0.2739.15&preserve-view=true#invoke)
 
+* [`COREWEBVIEW2_SAVE_AS_KIND` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2739.15&preserve-view=true#corewebview2_file_save_as_kind)
+   * `COREWEBVIEW2_SAVE_AS_KIND_DEFAULT`
+   * `COREWEBVIEW2_SAVE_AS_KIND_HTML_ONLY`
+   * `COREWEBVIEW2_SAVE_AS_KIND_SINGLE_FILE`
+   * `COREWEBVIEW2_SAVE_AS_KIND_COMPLETE`
+
+* [`COREWEBVIEW2_SAVE_AS_UI_RESULT` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2739.15&preserve-view=true#corewebview2_save_as_ui_result_kind)
+   * `COREWEBVIEW2_SAVE_AS_UI_RESULT_SUCCESS`
+   * `COREWEBVIEW2_SAVE_AS_UI_RESULT_INVALID_PATH`
+   * `COREWEBVIEW2_SAVE_AS_UI_RESULT_FILE_ALREADY_EXISTS`
+   * `COREWEBVIEW2_SAVE_AS_UI_RESULT_KIND_NOT_SUPPORTED`
+   * `COREWEBVIEW2_SAVE_AS_UI_RESULT_CANCELLED`
+   
 ---
 
 <!-- ------------------------------ -->
