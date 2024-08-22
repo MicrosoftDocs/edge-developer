@@ -50,7 +50,6 @@ The top of each context menu now shows the title again:
 
 Microsoft Edge 128 also includes the following updates from the Chromium project:
 
-* [Console insights by Gemini are going live in most European countries](https://developer.chrome.com/blog/new-in-devtools-128#console-insights)
 * [Performance panel updates](https://developer.chrome.com/blog/new-in-devtools-128#perf)
    * [Enhanced Network track](https://developer.chrome.com/blog/new-in-devtools-128#perf-network)
    * [Customized performance data with extensibility API](https://developer.chrome.com/blog/new-in-devtools-128#perf-extension)
@@ -58,10 +57,6 @@ Microsoft Edge 128 also includes the following updates from the Chromium project
 * [Copy all listed requests in the Network panel](https://developer.chrome.com/blog/new-in-devtools-128#copy-all-listed)
 * [Faster heap snapshots with named HTML tags and less clutter](https://developer.chrome.com/blog/new-in-devtools-128#heap-snapshots)
 * [Open Animations panel to capture animations and edit @keyframes live](https://developer.chrome.com/blog/new-in-devtools-128#animations)
-* [Lighthouse 12.1.0](https://developer.chrome.com/blog/new-in-devtools-128#lighthouse)
-* [Accessibility](https://developer.chrome.com/blog/new-in-devtools-128#accessibility)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-128#misc)
-<!-- todo: maybe delete some links -->
 
 
 <!-- ====================================================================== -->
