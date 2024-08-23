@@ -118,7 +118,6 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- Events -->
    * [CoreWebView2Notification.CloseRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.closerequested?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
 
-<!-- todo: add Cancel member? see RT notes -->
 * [CoreWebView2NotificationReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2NotificationReceivedEventArgs.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs.handled?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2NotificationReceivedEventArgs.Notification Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs.notification?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
@@ -161,8 +160,6 @@ The following APIs have been promoted to Stable and are now included in this Rel
    * [CoreWebView2Notification.CloseRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification?view=webview2-winrt-1.0.2739.15&preserve-view=true#closerequested)
 
 * [CoreWebView2NotificationReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true)
-   * [CoreWebView2NotificationReceivedEventArgs.Cancel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#cancel)
-<!-- todo: delete Cancel? is it p/m/e?  it's not listed in https://review.learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-preview&branch=pr-en-us-64 -->
    * [CoreWebView2NotificationReceivedEventArgs.Handled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#handled)
    * [CoreWebView2NotificationReceivedEventArgs.Notification Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#notification)
    * [CoreWebView2NotificationReceivedEventArgs.SenderOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs?view=webview2-winrt-1.0.2739.15&preserve-view=true#senderorigin)
@@ -204,7 +201,6 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 * [ICoreWebView2NotificationCloseRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2notificationcloserequestedeventhandler?view=webview2-1.0.2739.15&preserve-view=true)<!-- Win32-only -->
 
-<!-- todo: add Cancel member? see RT notes -->
 * [ICoreWebView2NotificationReceivedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true)
    * [ICoreWebView2NotificationReceivedEventArgs::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#get_handled)
    * [ICoreWebView2NotificationReceivedEventArgs::get_Notification](/microsoft-edge/webview2/reference/win32/icorewebview2notificationreceivedeventargs?view=webview2-1.0.2739.15&preserve-view=true#get_notification)
@@ -223,7 +219,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 
 <!-- ------------------------------ -->
-* Added the `SaveAs` APIs that<!-- todo: ", which"?  is this all SaveAs apis, or just a new group of them? --> allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.  These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs. 
+* Added `SaveAs` APIs that allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.  These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -331,19 +327,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- ------------------------------ -->
 #### Bug fixes
 
-<!-- todo: populate, or note None, or link to other section (expand the latter's heading to specify version #) -->
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-
-<!-- ---------- -->
-###### SDK-only
+There are no bug fixes for this Release SDK.
 
 
 <!-- end of Aug 2024 Release SDK -->
@@ -383,7 +367,7 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 ###### Runtime and SDK
 
 * Re-enabled the default behavior of `SetUserAgent`: by default, `SetUserAgent` is effective for cross-origin iframes. 
-<!-- todo: clarify "being effective for" -->
+
 
 <!-- ---------- -->
 ###### Runtime-only
@@ -391,7 +375,7 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 * Enabled the interactive dragging feature by default.  See `edge-webview-interactive-dragging` in [WebView2 browser flags](../concepts/webview-features-flags.md).
 * Disabled `IsolateSandboxedIframes` for WebView2.
 * Fixed an issue where WebView creation fails when multiple instances are launched at the same time.  ([Issue #4731](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4731))
-* Fixed a bug in WinRT JavaScript projection where caching existing properties in Proxy and Function like name<!-- todo: clarify/format, give example api names.  does name literally contain "Proxy" or "Function"?  or a name that's like the name of the proxy or the function? --> caused an error due to name collision.
+* Fixed a bug in WinRT JavaScript projection where caching existing properties in objects whose name contains `Proxy` or `Function` caused an error due to name collision.
 * Fixed a bug where the WebView2 control became the wrong size after disconnecting and reconnecting a monitor.
 * Fixed an issue where "mailto:" links leave an untitled popup window open, instead of automatically closing the popup window.
 
@@ -400,7 +384,8 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 ###### SDK-only
 
 * C# WinRT projection now works on UWP.
-* Fix for `GeneratedFilesDir` showing up in Visual Studio for C# WinRT projection.<!-- todo: clarify: "`GeneratedFilesDir` no longer appears in Visual Studio during C# WinRT projection"? -->
+* Fixed an issue to ensure that `GeneratedFilesDir` no longer appears in Visual Studio for C# WinRT projection.
+
 
 <!-- end of Aug 2024 Prerelease SDK -->
 
