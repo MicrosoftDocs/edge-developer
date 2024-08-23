@@ -327,7 +327,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes for this Release SDK.
+There are no bug fixes in this Release SDK.
 
 
 <!-- end of Aug 2024 Release SDK -->
