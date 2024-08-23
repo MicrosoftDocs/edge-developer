@@ -89,7 +89,7 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 
 <!-- ------------------------------ -->
-* Added `Notification` APIs that support web notifications, including non-persistent notifications and persistent notifications.  A _non-persistent notification_ is a notification without an associated service worker registration.  A _persistent notification_ is a notification with an associated service worker registration.  You should be able to handle<!-- todo: "Your app should handle"?  "Your app can optionally handle"? --> notification permission requests, and further listen to<!-- todo: "and then listen for"? --> `Notification Received` events to optionally handle the notifications themselves.<!-- todo: delete "themselves"?  does "should" contradict "optionally"? -->
+* Added support for Web Notification, for non-persistent notifications.  The `NotificationReceived` event for `CoreWebView2` controls web notification handling, allowing customization or suppression by the host app.  Unhandled notifications default to WebView2's UI.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
