@@ -13,6 +13,9 @@ Microsoft Edge IDE integration
 Accessibility in Microsoft Edge
 DualEngine
 Redirects to Legal
+   DevTools
+   Extensions
+   Privacy
 Redirects to MDN
 Redirects to external webpages
 WebDriver: "microsoft / edge-selenium-tools" repo
@@ -776,18 +779,24 @@ Old redirects (to /archive/)
       /* DevTools: */
       {
         "source_path": "microsoft-edge/devtools-guide/devtools-preview_software-license-terms.md",
-        "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/devtools-preview_software-license-terms",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/devtools-preview_software-license-terms",
         "redirect_document_id": false
       },
       {
         "source_path": "microsoft-edge/devtools-guide/devtools_software-license-terms.md",
-        "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
         "redirect_document_id": false
       },
       /* Extensions: */
       {
         "source_path": "microsoft-edge/extensions/microsoft-browser-extension-policy.md",
-        "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/microsoft-browser-extension-policy",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/microsoft-browser-extension-policy",
+        "redirect_document_id": false
+      },
+      /* Privacy: */
+      {
+        "source_path": "microsoft-edge/privacy-whitepaper/index.md",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/privacy",
         "redirect_document_id": false
       },
 
