@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 06/12/2024
+ms.date: 08/22/2024
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -57,7 +57,7 @@ The following experimental features are turned on by default. You can use these 
 * [Enable speculative loads panel in Application panel](#enable-speculative-loads-panel-in-application-panel)
 <!-- Deprecate CSS <length> authoring tool in the Styles tab - non-Edge -->
 
-**Turned on by default in Microsoft Edge Stable 127:**
+**Turned on by default in Microsoft Edge Stable 128:**
 * [Enable background page selector (for prerendering)](#enable-background-page-selector-for-prerendering)
 * [Autofill panel](#autofill-panel)
 * [Enable webhint](#enable-webhint)
@@ -147,7 +147,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -170,7 +170,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -202,7 +202,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -219,27 +219,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
-
-
-<!-- ====================================================================== -->
-## In heap snapshots, treat backing store size as part of the containing object
-<!-- checkbox has no (?) link pointing to this anchor wording -->
-
-_new as of Microsoft Edge 124_
-
-Configures the **Shallow Size** column in the **Memory** tool to report the entire size of objects, including the size of the object's backing store.  If this experiment is enabled, when you take a new heap snapshot, the **Shallow Size** column now includes the entire size of objects:
-
-![The Shallow Size column of a heap snapshot](../memory-problems/heap-snapshots-images/shallow-size-entire-object.png)
-
-By default, the **Shallow Size** column in the **Memory** tool only includes the size of the object itself.  The _shallow size_ is the size of the JavaScript heap that's _directly_ held by an object.  The shallow size of an object is usually small, because a JavaScript object often only stores its description of the object, not the values, in the object's directly held memory.  Most JavaScript objects store their values in a _backing store_ that's elsewhere in the JavaScript heap, and only expose a small wrapper object on the portion of the JavaScript heap that's directly owned by the object.  For example, JavaScript `Array` instances store the contents of the array in a backing store, which is a separate memory location that's not included in the array's shallow size.
-
-See also:
-* [Configure the Shallow Size column to include an entire object's size](../memory-problems/heap-snapshots.md#configure-the-shallow-size-column-to-include-an-entire-objects-size) in _Record heap snapshots using the Memory tool_. 
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -257,7 +237,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -279,7 +259,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -306,7 +286,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -337,7 +317,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -352,7 +332,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -367,7 +347,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ======================================================================
@@ -387,14 +367,14 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ------------------------------ -->
 #### Sync CSS changes in the Styles pane
 <!-- checkbox has a (?) link pointing to this anchor wording -->
 
-This was a previous label of the checkbox.  See [Sync CSS changes in the Styles tab](#sync-css-changes-in-the-styles-tab), above.
+This was a previous label of the checkbox.  See the above section.
 
 
 <!-- ====================================================================== -->
@@ -411,7 +391,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -430,7 +410,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -448,7 +428,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -499,7 +479,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -519,7 +499,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -546,7 +526,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -561,7 +541,7 @@ Adds an **Autofill** tool to DevTools, to record various events that the browser
 ![The Autofill tool](./index-images/autofill-tool.png)
 
 See also:
-* [Autofill](../../privacy-whitepaper/index.md#autofill) in _Microsoft Edge Privacy Whitepaper_.
+* [Autofill](/legal/microsoft-edge/privacy#autofill) in _Microsoft Edge Privacy Whitepaper_.
 * [Autofill](../../webview2/concepts/overview-features-apis.md?tabs=dotnetcsharp#autofill) in _Overview of WebView2 features and APIs_.
 
 Status:
@@ -601,11 +581,11 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
-## Performance panel: Enable live metrics landing page
+## Performance panel: enable live metrics landing page
 <!-- checkbox has no (?) link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 127_
@@ -620,37 +600,14 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ------------------------------ -->
 #### Enable new Performance panel landing page which includes live metrics and field data
 <!-- checkbox has no (?) link pointing to this anchor wording -->
 
-This is the older label for the checkbox.  See above.
-
-
-<!-- ====================================================================== -->
-## Enable saving and loading traces with modifications in the Performance panel
-<!-- was:
-## Enable save and load trace with annotations in Performance Panel
--->
-<!-- checkbox has no (?) link pointing to this anchor wording -->
-
-_new as of Microsoft Edge 125, new label for checkbox as of Microsoft Edge 128_
-
-Adds the ability to persist the following changes made to trace files in the **Performance** tool, and reapply them when importing traces:
-
-* Changes made by using the breadcrumbs.  This feature enables you to crop into and focus on the more relevant parts of a trace.  See [Breadcrumbs in the Timeline](https://developer.chrome.com/blog/new-in-devtools-122#perf-breadcrumbs) in _What's new in DevTools (Chrome 122)_.
-
-* Changes made by right-clicking a track.  This feature enables you to merge and hide superfluous or irrelevant entries of a trace, cleaning up the flame charts and trees.  See [Hide functions and their children in the flame chart](https://developer.chrome.com/blog/new-in-devtools-124#hide-func) in _What's new in DevTools (Chrome 124)_.
-
-See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+This is the older label for the checkbox.  See the above section.
 
 
 <!-- ====================================================================== -->
@@ -665,7 +622,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -690,7 +647,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -704,7 +661,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -724,7 +681,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ======================================================================
@@ -742,7 +699,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 -->
 
 
@@ -760,7 +717,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -778,7 +735,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ============================================================================================================================================ -->
@@ -798,7 +755,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -813,7 +770,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -832,7 +789,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -849,7 +806,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -866,27 +823,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
-
-
-<!-- ====================================================================== -->
-## Performance panel: enable user timings based extensions
-<!-- was:
-## Timeline: Enable User Timings based extensions
--->
-<!-- checkbox has no (?) link pointing to this anchor wording -->
-
-_new as of Microsoft Edge 125, new label for checkbox as of Microsoft Edge 128_
-
-Enables extensions that customize the appearance of user timing events in the **Performance** tool.
-
-See also:
-* [Performance features reference](../evaluate-performance/reference.md)
-* [Performance recording event reference](../evaluate-performance/performance-reference.md)
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -899,7 +836,7 @@ This experiment makes the **Performance** tool capture newly added traces, to su
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -919,7 +856,7 @@ This experiment makes the **Performance** tool record script source text in trac
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -937,7 +874,7 @@ Adds a **Trace Event** section to the **Summary** tab of the **Performance** too
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -957,7 +894,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -975,7 +912,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
@@ -1007,11 +944,11 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
-## Performance panel: Enable annotations
+## Performance panel: enable annotations
 
 _new as of Microsoft Edge Canary 129_
 
@@ -1023,11 +960,11 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is not present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ====================================================================== -->
-## Performance panel: Enable sidebar
+## Performance panel: enable sidebar
 <!-- checkbox has no (?) link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 128_
@@ -1041,7 +978,7 @@ Enables the sidebar in the **Performance** tool.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
-* This checkbox is present in Microsoft Edge Stable 127.
+* This checkbox is present in Microsoft Edge Stable 128.
 
 
 <!-- ------------------------------ -->
@@ -1049,6 +986,6 @@ Status:
 <!-- checkbox has no (?) link pointing to this anchor wording -->
 <!-- checkbox label had period -->
 
-This is an older label for the checkbox.  See above.
+This is an older label for the checkbox.  See the above section.
 
 Experimental work in progress (WIP).
