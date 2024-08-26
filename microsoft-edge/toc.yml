@@ -1202,24 +1202,10 @@
 #             href:
 
 # -------------------------------------
-        - name: Support and feedback
-          items:
-            - name: Contact Microsoft Edge extensions support
-              href: extensions-chromium/publish/contact-extensions-team.md
-              displayName: feedback, log issues, enter issues, report issues, reporting issues
+        - name: Contact Microsoft Edge extensions support
+          href: extensions-chromium/publish/contact-extensions-team.md
+          displayName: feedback, log issues, enter issues, report issues, reporting issues
 
-#           if h1's, instead of h2's in the above h1:
-#           - name: Request help or submit feedback
-#             href:
-
-#           - name: Report copyright or trademark infringement
-#             href:
-
-#           - name: Log your tickets via Partner Center
-#             href:
-
-#           - name: Connect with Community
-#             href:
 # /Extensions
 
 # =============================================================================

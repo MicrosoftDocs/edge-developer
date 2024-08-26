@@ -10,6 +10,24 @@ ms.date: 06/26/2024
 ---
 # Contact Microsoft Edge extensions support
 
+<!-- 
+existing h2 sections:
+
+Inquire about your extension's review status or certification status
+Learn about correct use of APIs
+Learn about submitting an extension
+Feature your extension in a collection
+Participate in the discussion forum
+Report copyright or trademark infringement
+
+h2 sections per draft outline (July 3 2024):
+
+Request help or submit feedback
+Report copyright or trademark infringement
+Log your tickets via Partner Center
+Connect with Community
+-->
+
 You can contact the Microsoft Edge extensions support team to request help, submit feedback, or report a copyright or trademark infringement.
 
 
