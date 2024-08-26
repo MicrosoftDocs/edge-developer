@@ -1027,7 +1027,7 @@
 # -------------------------------------
         - name: Develop an extension
           items:
-#           - name: Build your Edge Extension 101   # master page for all the subpages below
+#           - name: Build your Edge Extension 101   # main page/ nav page for all the subpages below
 #             href:
 
 #           - name: Prerequisites to build an extension  # things required to build an extension
@@ -1037,7 +1037,7 @@
               href: extensions-chromium/developer-guide/native-messaging.md
 
             - name: Defining match patterns for an extension to access file URLs
-              href: extensions-chromium/developer-guide/match-patterns.md  # moved from /enterprise/
+              href: extensions-chromium/developer-guide/match-patterns.md
 
             - name: Create an extension that customizes the DevTools UI
               href: extensions-chromium/developer-guide/devtools-extension.md
@@ -1045,9 +1045,6 @@
             - name: Extensions in the Microsoft Edge sidebar
               href: extensions-chromium/developer-guide/sidebar.md
               displayName: sidebar extensions, sidepanel, side panel  # alt lookup phrase
-
-#           - name: Microsoft Edge Add-ons API  # jump page linking to "All About APIs" and specifically "JavaScript APIs"
-#             href:
 
             - name: Manifest files
               items:
@@ -1111,7 +1108,7 @@
 #             href:
 
             - name: Extension hosting
-              href: extensions-chromium/publish/hosting-and-updating.md  # moved from /enterprise/
+              href: extensions-chromium/publish/hosting-and-updating.md
 
             - name: Submission states for extensions in the Microsoft Edge Add-ons website
               href: extensions-chromium/publish/submission-states.md
@@ -1125,9 +1122,9 @@
             - name: Curation and review process for the Edge Add-ons store
               href: extensions-chromium/publish/add-ons-store-curation.md
 
-            - name: REST API for publishing  # todo: if this is the only way to publish extension, move up?
+            - name: REST API for publishing
               items:
-                - name: Using the Microsoft Edge Add-ons REST API  # todo: See Also: APIs 101, JS APIs article
+                - name: Using the Microsoft Edge Add-ons REST API
                   href: extensions-chromium/publish/api/using-addons-api.md
 
                 - name: REST API Reference for Microsoft Edge Add-ons
@@ -1139,8 +1136,8 @@
             - name: Update a Microsoft Edge extension
               href: extensions-chromium/publish/update-extension.md
 
-            - name: Automatically update an extension in Microsoft Edge  # todo: update top-of-article title
-              href: extensions-chromium/publish/auto-update.md  # moved from /enterprise/
+            - name: Automatically update an extension in Microsoft Edge
+              href: extensions-chromium/publish/auto-update.md
 
             - name: View Microsoft Edge extensions analytics dashboard
               href: extensions-chromium/publish/extensions-analytics.md
@@ -1149,16 +1146,16 @@
               href: extensions-chromium/publish/reply-user-reviews.md
               displayName: Respond to user reviews  # alt title word
 
-#           - name: Connect with your Customer  # how you can connect with your customers
+#           - name: Connect with your customers  # how you can connect with your customers
 #             href:
 
-#           - name: User Ratings  # how User Ratings work, eg how region-wide users can see the review & ratings
+#           - name: User ratings  # how User Ratings work, eg how region-wide users can see the review & ratings
 #             href:
 
-#           - name: Review Process  # the review process for an extension that's submitted to add-ons site
+#           - name: Review process  # the review process for an extension that's submitted to add-ons site
 #             href:
 
-#           - name: Retire your Extension  # how to uninstall or retire an extension
+#           - name: Retire an extension  # how to uninstall or retire an extension
 #             href:
 
 # -------------------------------------

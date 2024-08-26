@@ -227,3 +227,10 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 See also:
 *  [Using the Microsoft Edge Add-ons REST API: Check the publishing status](addons-api-reference.md#check-the-publishing-status)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Microsoft Edge Add-ons API 101](../../developer-guide/apis-intro.md)
+* [Supported APIs for Microsoft Edge extensions](./api-support.md) - JavaScript APIs for developing an extension.
