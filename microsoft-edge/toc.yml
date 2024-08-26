@@ -1202,7 +1202,7 @@
 #             href:
 
 # -------------------------------------
-        - name: Contact Microsoft Edge extensions support
+        - name: Contact the Microsoft Edge extensions team
           href: extensions-chromium/publish/contact-extensions-team.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues
 
@@ -1697,7 +1697,7 @@
         - name: WebView2 end-user FAQ
           href: webview2/concepts/end-user-faq.md
 
-        - name: Contact the WebView2 Team
+        - name: Contact the WebView2 team
           href: webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 # / WebView2 articles
