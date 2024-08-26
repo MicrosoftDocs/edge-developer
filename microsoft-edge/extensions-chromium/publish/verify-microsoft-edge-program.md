@@ -1,5 +1,5 @@
 ---
-title: Verify the company account information associated with your Microsoft Partner Center account
+title: Verify your company account information
 description: Learn how to verify your account information when your company enrolls in the Microsoft Edge program on Partner Center to publish extensions to the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,9 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/02/2022
 ---
-# Verify the company account information associated with your Microsoft Partner Center account
+# Verify your company account information
 
-When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide. This information can include your company name, company address, and primary contact details. During the verification process, Microsoft might send email to your primary contact to request confirmation of the information that was provided.
+When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide.  This information can include your company name, company address, and primary contact details.  During the verification process, Microsoft might send email to your primary contact to request confirmation of the information that was provided.
 
 You can go to [Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) in Partner Center to monitor verification status for the Microsoft Edge Developer program.
 

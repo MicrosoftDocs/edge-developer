@@ -1097,7 +1097,6 @@
 
                 - name: Verify your company account information
                   href: extensions-chromium/publish/verify-microsoft-edge-program.md
-                  displayName: Verify the company account information associated with your Microsoft Partner Center account  # todo: shorten top-of-article title, clarify it in first sentence instead
 
                 - name: Add users to the Microsoft Edge program
                   href: extensions-chromium/publish/aad-account.md
@@ -1146,9 +1145,9 @@
             - name: View Microsoft Edge extensions analytics dashboard
               href: extensions-chromium/publish/extensions-analytics.md
 
-            - name: Reply to user reviews
+            - name: Reply to user reviews of an extension
               href: extensions-chromium/publish/reply-user-reviews.md
-              displayName: Reply to user reviews about your Microsoft Edge extension, Respond to user reviews  # top-of-page title, alt title word  # todo: make top-of-title identical to toc title, clarify in first sentence
+              displayName: Respond to user reviews  # alt title word
 
 #           - name: Connect with your Customer  # how you can connect with your customers
 #             href:
