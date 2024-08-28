@@ -44,6 +44,23 @@ The top of each context menu now shows the title again:
 
 ![New context menu header](./devtools-128-images/header-title.png)
 
+<!-- ====================================================================== -->
+## Heap snapshot improvements
+
+<!-- Subtitle: Heap snapshots are generated faster, HTML elements group by tag name, shallow sizes show fewer internal objects, and numeric values are always shown. -->
+
+In the **Memory** tool, we've made a few improvements to heap snapshots:
+- the time to generate heap snapshots are now faster
+- HTML elements are grouped by tag name
+- shallow sizes better match JavaScript semantics by showing fewer internal objects, unless the **Expose internals (includes additional implementation-specific details)** setting is enabled when the **Show option to expose internals in heap snapshots** experiment is turned on.
+- the **Include numerical values in capture** setting has been removed and turned on by default so heap snapshots will always show numeric values
+
+<!-- ====================================================================== -->
+## View WebSocket message activities in the Performance tool
+
+<!-- Subtitle: WebSocket activities were added to the Network track in the Performance tool to help correlate JavaScript activity with WebSocket messages. -->
+
+WebSocket activities were added to the **Network** track in the **Performance** tool to help correlate JavaScript activity with WebSocket messages. This can help identify whether the source of latency issues are coming from the client’s parsing of a message or from the server’s response.
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
