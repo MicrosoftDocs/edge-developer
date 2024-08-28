@@ -633,7 +633,8 @@
 
                 - name: Analyze CSS selector performance during Recalculate Style events
                   href: devtools-guide-chromium/evaluate-performance/selector-stats.md
-                  displayName: Performance tool, CSS selector stats
+                  displayName: Performance tool, css selector stats, css selectors, selector stats, selector statistics, css selector statistics
+
 # Performance monitor tool ----------------------------------------------------
             - name: Performance monitor tool
               items:
