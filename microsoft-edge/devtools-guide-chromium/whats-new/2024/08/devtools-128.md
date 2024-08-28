@@ -14,11 +14,11 @@ ms.date: 08/22/2024
 
 
 <!-- ====================================================================== -->
-## Updated labels for selector stats
+## Updated labels for CSS selector stats
 
 <!-- Subtitle: Use the "Enable CSS selector stats" setting instead of the "Enable advanced paint instrumentation (slow)" to capture CSS selector statistics for Recalculate Style events -->
 
-In the **Performance** tool, the duplicate **Selector Stats** label has been removed from the `Recalculate Style` event details.  Selector stats can be enabled by using the dedicated setting for it.
+In the **Performance** tool, the duplicate **Selector Stats** label has been removed from the `Recalculate Style` event details.  Selector stats can be enabled by using the dedicated setting<!-- todo: what is the ui path? eg: the Foo checkbox --> for it.
 
 Also, the **Enable advanced rendering instrumentation (slow)** setting has been renamed back to **Enable advanced paint instrumentation (slow)**.  Previously, this setting was used for both paint instrumentation and selector stats.  This setting label has been updated because there's now a dedicated setting for selector stats.
 
@@ -29,6 +29,9 @@ Before:
 After:
 
 ![New selector stats labels](./devtools-128-images/new-selector-stats.png)
+
+See also:
+* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->
@@ -44,23 +47,36 @@ The top of each context menu now shows the title again:
 
 ![New context menu header](./devtools-128-images/header-title.png)
 
+
 <!-- ====================================================================== -->
 ## Heap snapshot improvements
 
-<!-- Subtitle: Heap snapshots are generated faster, HTML elements group by tag name, shallow sizes show fewer internal objects, and numeric values are always shown. -->
+<!-- Subtitle: Heap snapshots are generated faster, HTML elements are grouped by tag name, shallow sizes show fewer internal objects, and numeric values are always shown. -->
 
-In the **Memory** tool, we've made a few improvements to heap snapshots:
-- the time to generate heap snapshots are now faster
-- HTML elements are grouped by tag name
-- shallow sizes better match JavaScript semantics by showing fewer internal objects, unless the **Expose internals (includes additional implementation-specific details)** setting is enabled when the **Show option to expose internals in heap snapshots** experiment is turned on.
-- the **Include numerical values in capture** setting has been removed and turned on by default so heap snapshots will always show numeric values
+In the **Memory** tool, there are several improvements for heap snapshots:
+
+* Generating heap snapshots is now faster.
+
+* HTML elements are grouped by tag name.<!-- todo: by element name? -->
+
+* Shallow sizes now match JavaScript semantics better, by showing fewer internal objects, unless the **Expose internals (includes additional implementation-specific details)** setting is enabled<!--todo: checkbox is selected?  where/what is this UI control?  not found after turned experiment on, and then created snapshot --> when the [Show option to expose internals in heap snapshots](../../../experimental-features/index.md#show-option-to-expose-internals-in-heap-snapshots) experiment is turned on.
+
+* The **Include numerical values in capture** setting<!-- todo: where was this setting in the UI?  was it a checkbox? --> has been removed, and heap snapshots now always show numeric values.
+
+See also:
+* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+
 
 <!-- ====================================================================== -->
 ## View WebSocket message activities in the Performance tool
 
 <!-- Subtitle: WebSocket activities were added to the Network track in the Performance tool to help correlate JavaScript activity with WebSocket messages. -->
 
-WebSocket activities were added to the **Network** track in the **Performance** tool to help correlate JavaScript activity with WebSocket messages. This can help identify whether the source of latency issues are coming from the client’s parsing of a message or from the server’s response.
+WebSocket activities have been added to the **Network** track in the **Performance** tool, to help correlate JavaScript activity with WebSocket messages.  This can help identify whether latency issues are coming from the client's parsing of a message, or from the server's response.
+
+See also:
+* [Introduction to the Performance tool](../../../evaluate-performance/index.md)
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
