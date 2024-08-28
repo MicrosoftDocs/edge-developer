@@ -53,7 +53,7 @@ These features are described below.
 <!-- ====================================================================== -->
 ## SmartScreen
 
-Microsoft Defender SmartScreen ("SmartScreen") is a security feature that is enabled by default to help users safely browse the web.  The `IsReputationCheckingRequired` property controls whether SmartScreen is enabled.  Generally, all other services in `edge://settings/privacy` are turned off, for WebView2.
+Microsoft Defender SmartScreen ("SmartScreen") is a security feature that is enabled by default to help users safely browse the web.  The `IsReputationCheckingRequired` property controls whether SmartScreen is enabled. Generally, all other services in Microsoft Edge > **Settings and more** (![Settings and more icon](./data-privacy-images/settings-and-more-icon.png)) > **Settings** > **Privacy and security** (and **Search and services**) are turned off, for WebView2.
 
 If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and in [SmartScreen](/legal/microsoft-edge/privacy#smartscreen) in _Microsoft Edge Privacy Whitepaper_.
 
