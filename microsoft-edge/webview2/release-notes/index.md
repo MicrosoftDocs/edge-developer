@@ -88,7 +88,8 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
-<!-- ------------------------------ -->
+_______________________________________
+
 * Added support for Web Notification, for non-persistent notifications.  The `NotificationReceived` event for `CoreWebView2` controls web notification handling, allowing customization or suppression by the host app.  Unhandled notifications default to WebView2's UI.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -218,7 +219,8 @@ The following APIs have been promoted to Stable and are now included in this Rel
 ---
 
 
-<!-- ------------------------------ -->
+_______________________________________
+
 * Added `SaveAs` APIs that allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.  These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -348,15 +350,11 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 No Experimental APIs have been added in this Prerelease SDK.
 
----
-
 
 <!-- ------------------------------ -->
 #### Promotions
 
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
----
 
 
 <!-- ------------------------------ -->
