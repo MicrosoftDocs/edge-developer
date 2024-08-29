@@ -16,11 +16,11 @@ ms.date: 08/22/2024
 <!-- ====================================================================== -->
 ## Updated labels for CSS selector stats
 
-<!-- Subtitle: Use the "Enable CSS selector stats" setting instead of the "Enable advanced paint instrumentation (slow)" to capture CSS selector statistics for Recalculate Style events -->
+<!-- Subtitle: Use the "Enable CSS selector stats" checkbox instead of "Enable advanced paint instrumentation (slow)" to capture CSS selector statistics for Recalculate Style events -->
 
-In the **Performance** tool, the duplicate **Selector Stats** label has been removed from the `Recalculate Style` event details.  To enable selector stats, use the **Enable CSS selector stats (slow)** checkbox in the **Performance** tool.
+In the **Performance** tool, the duplicate **Selector Stats** label has been removed from the `Recalculate Style` event details.
 
-Also, the **Enable advanced rendering instrumentation (slow)** setting has been renamed back to **Enable advanced paint instrumentation (slow)**.  Previously, this setting was used for both paint instrumentation and selector stats.  This setting label has been updated because there's now a dedicated setting for selector stats.
+The **Enable advanced rendering instrumentation (slow)** checkbox has been renamed to **Enable advanced paint instrumentation (slow)**.  Selecting this checkbox now only turns on paint instrumentation, and no longer turns on CSS selector stats as well.  To enable gathering CSS selector stats, in the **Performance** tool, select the **Capture settings** (![the Capture settings icon](./devtools-128-images/capture-settings-icon.png)) button, and then select the **Enable CSS selector stats (slow)** checkbox.
 
 Before:
 
