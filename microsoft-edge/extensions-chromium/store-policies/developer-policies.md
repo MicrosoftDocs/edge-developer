@@ -344,7 +344,7 @@ Users should not be misled to click on advertisements to fully use the extension
 
 Any ad content that's displayed by your extension must conform to the following:
 * The [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).<!-- todo: update link text & url - the link redirects to [Introduction to Microsoft Advertising Network policies](https://help.ads.microsoft.com/#apex/ads/en/ext60205) -->
-* The advertising requirements of the [App Developer Agreement](https://go.microsoft.com/fwlink/p/?LinkID=221922).
+* The advertising requirements of the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/p/?LinkID=221922).
 * The advertising requirements of the developer policies for the Microsoft Edge Add-ons store.
 
 
