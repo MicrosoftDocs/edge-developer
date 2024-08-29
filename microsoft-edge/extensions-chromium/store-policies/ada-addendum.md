@@ -30,6 +30,4 @@ These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addend
 
     1.  Initial Certification.  Microsoft will test each Extension (including any updates) you submit for compliance with this Agreement (which includes the applicable Certification Requirements) and other policies made available to you (if any).  Microsoft will not make any Extension available through Microsoft Edge Add-ons unless and until the Extension is Certified.
 
-1.  AFFIRMATIVE DECLINE NOT REQUIRED.  Notwithstanding Section 4(i) of the App Developer Agreement (License to Customer for Store Apps), you aren't required to affirmatively decline participation in Microsoft Store for Business and Microsoft Store for Education.  Your Extension will only be available through the Microsoft Edge Add-ons store.<!-- todo: remove list item or update it, b/c App Developer Agreement removed Microsoft Store for Business and Microsoft Store for Education.  confirm that the section meant is "License to Customer for Store Apps" -->
-
 1.  APP PRICING, PAYMENTS, TRANSACTIONS AND TAXES.  Section 6 of the App Developer Agreement (APP PRICING, PAYMENTS, TRANSACTIONS AND TAXES) does not apply to Extensions and is hereby deleted in its entirety.
