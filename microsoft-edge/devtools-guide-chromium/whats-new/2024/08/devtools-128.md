@@ -18,7 +18,7 @@ ms.date: 08/22/2024
 
 <!-- Subtitle: Use the "Enable CSS selector stats" setting instead of the "Enable advanced paint instrumentation (slow)" to capture CSS selector statistics for Recalculate Style events -->
 
-In the **Performance** tool, the duplicate **Selector Stats** label has been removed from the `Recalculate Style` event details.  Selector stats can be enabled by using the dedicated setting<!-- todo: what is the ui path? eg: the Foo checkbox --> for it.
+In the **Performance** tool, the duplicate **Selector Stats** label has been removed from the `Recalculate Style` event details.  To enable selector stats, use the **Enable CSS selector stats (slow)** checkbox in the **Performance** tool.
 
 Also, the **Enable advanced rendering instrumentation (slow)** setting has been renamed back to **Enable advanced paint instrumentation (slow)**.  Previously, this setting was used for both paint instrumentation and selector stats.  This setting label has been updated because there's now a dedicated setting for selector stats.
 
@@ -57,11 +57,11 @@ In the **Memory** tool, there are several improvements for heap snapshots:
 
 * Generating heap snapshots is now faster.
 
-* HTML elements are grouped by tag name.<!-- todo: by element name? -->
+* HTML elements are grouped by tag name, such as `<body>`, `<div>`, or `<img>`.
 
-* Shallow sizes now match JavaScript semantics better, by showing fewer internal objects, unless the **Expose internals (includes additional implementation-specific details)** setting is enabled<!--todo: checkbox is selected?  where/what is this UI control?  not found after turned experiment on, and then created snapshot --> when the [Show option to expose internals in heap snapshots](../../../experimental-features/index.md#show-option-to-expose-internals-in-heap-snapshots) experiment is turned on.
+* Shallow sizes now match JavaScript semantics better, by showing fewer internal objects (unless you select the [Show option to expose internals in heap snapshots](../../../experimental-features/index.md#show-option-to-expose-internals-in-heap-snapshots) experiment checkbox and then, before taking a snapshot, select the **Expose internals (includes additional implementation-specific details)** checkbox).
 
-* The **Include numerical values in capture** setting<!-- todo: where was this setting in the UI?  was it a checkbox? --> has been removed, and heap snapshots now always show numeric values.
+* The **Include numerical values in capture** checkbox (shown before you take a heap snapshot) has been removed, and heap snapshots now always show numeric values.
 
 See also:
 * [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
