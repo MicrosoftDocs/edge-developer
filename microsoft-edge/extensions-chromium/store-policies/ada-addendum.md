@@ -18,7 +18,7 @@ These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addend
 
 1.  DEFINITIONS.  Capitalized terms not defined herein will have the meanings provided in the App Developer Agreement.
 
-    1.  "Certification Requirements" means the technical, functional, content, and other policy requirements provided by Microsoft (at [https://go.microsoft.com/fwlink/?linkid=2104222](developer-policies.md), or another location(s) specified by Microsoft) for Extensions offered through Microsoft Edge Add-ons.
+    1.  "Certification Requirements" means the technical, functional, content, and other policy requirements at [Developer policies for the Microsoft Edge Add-ons store](./developer-policies.md).
 
     1.  "Microsoft Edge Add-ons" means a Microsoft owned or operated platform, however named, through which Microsoft Edge Extensions may be offered to or acquired by Customers.
 
