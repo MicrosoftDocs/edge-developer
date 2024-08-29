@@ -22,7 +22,7 @@ These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addend
 
     1.  "Microsoft Edge Add-ons" means a Microsoft owned or operated platform, however named, through which Microsoft Edge Extensions may be offered to or acquired by Customers.
 
-1.  SUBMISSION, CERTIFICATION, AND DISTRIBUTION OF APPS.  Section 3 of the App Developer Agreement is hereby deleted and replaced by the following:
+1.  SUBMISSION, CERTIFICATION, AND DISTRIBUTION OF APPS.  Section 3 of the App Developer Agreement (SUBMISSION, EVALUATION, CERTIFICATION, AND DISTRIBUTION OF APPS) is hereby deleted and replaced by the following:
 
     1.  Submission.  You must submit to Microsoft each Extension that you wish to make available through Microsoft Edge Add-ons, including any updates to each Extension.  You are solely responsible and liable for the Extensions you submit.  You are responsible for supporting your extension.  Microsoft will retain (or destroy) all copies of the Extension and other materials you submit.  Microsoft will not return them, so you must maintain your own backup copies.
 
@@ -30,6 +30,6 @@ These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addend
 
     1.  Initial Certification.  Microsoft will test each Extension (including any updates) you submit for compliance with this Agreement (which includes the applicable Certification Requirements) and other policies made available to you (if any).  Microsoft will not make any Extension available through Microsoft Edge Add-ons unless and until the Extension is Certified.
 
-1.  AFFIRMATIVE DECLINE NOT REQUIRED.  Notwithstanding Section 4(i) of the App Developer Agreement, you aren't required to affirmatively decline participation in Microsoft Store for Business and Microsoft Store for Education.  Your Extension will only be available through the Microsoft Edge Add-ons.
+1.  AFFIRMATIVE DECLINE NOT REQUIRED.  Notwithstanding Section 4(i) of the App Developer Agreement (License to Customer for Store Apps), you aren't required to affirmatively decline participation in Microsoft Store for Business and Microsoft Store for Education.  Your Extension will only be available through the Microsoft Edge Add-ons store.<!-- todo: remove list item or update it, b/c App Developer Agreement removed Microsoft Store for Business and Microsoft Store for Education.  confirm that the section meant is "License to Customer for Store Apps" -->
 
-1.  APP PRICING, PAYMENTS, TRANSACTIONS AND TAXES.  Section 6 of the App Developer Agreement does not apply to Extensions and is hereby deleted in its entirety.
+1.  APP PRICING, PAYMENTS, TRANSACTIONS AND TAXES.  Section 6 of the App Developer Agreement (APP PRICING, PAYMENTS, TRANSACTIONS AND TAXES) does not apply to Extensions and is hereby deleted in its entirety.
