@@ -10,6 +10,8 @@ ms.date: 07/02/2024
 ---
 # Developer policies for the Microsoft Edge Add-ons store
 
+<!-- fwlink for this article: https://go.microsoft.com/fwlink/?linkid=2104222 -->
+
 To develop an extension to be published through the Microsoft Edge Add-ons store, follow these policies.  These policies apply to submitting extensions through [Partner Center](https://partner.microsoft.com/dashboard/home) and publishing the extensions at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) store.
 
 The _Microsoft Edge Add-ons store_<!--36--> is also called the _Edge Add-ons store_,<!--12--> the _Microsoft Edge Add-ons website_,<!--89--> or the _Edge Add-ons website_.<!--5-->
