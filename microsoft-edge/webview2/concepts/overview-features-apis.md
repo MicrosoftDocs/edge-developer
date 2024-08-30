@@ -468,6 +468,8 @@ The WebView2 control gives your app access to many browser features.  You can mo
 * [Cookies](#cookies)
 * [Image capture](#image-capture)
 * [Downloads](#downloads)
+* [Save as](#save-as)
+* [Web notification handling](#web-notification-handling)
 * [Permissions](#permissions)
 * [Context menus](#context-menus)
 * [Status bar](#status-bar)
@@ -490,6 +492,7 @@ The WebView2 control gives your app access to many browser features.  You can mo
    * [Tracking prevention](#tracking-prevention)
    * [SmartScreen](#smartscreen)
    * [Custom crash reporting](#custom-crash-reporting)
+* [Browser extensions](#browser-extensions)
 
 
 <!-- ------------------------------ -->
