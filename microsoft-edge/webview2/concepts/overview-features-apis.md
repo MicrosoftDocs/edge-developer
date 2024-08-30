@@ -781,13 +781,13 @@ The Save As APIs allow you to programmatically perform the **Save as** operation
 
 * [ICoreWebView2ShowSaveAsUICompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2showsaveasuicompletedhandler)<!-- Win32-only -->
 
-* [`COREWEBVIEW2_SAVE_AS_KIND` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_file_save_as_kind)
+* [`COREWEBVIEW2_SAVE_AS_KIND` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_save_as_kind)
    * `COREWEBVIEW2_SAVE_AS_KIND_DEFAULT`
    * `COREWEBVIEW2_SAVE_AS_KIND_HTML_ONLY`
    * `COREWEBVIEW2_SAVE_AS_KIND_SINGLE_FILE`
    * `COREWEBVIEW2_SAVE_AS_KIND_COMPLETE`
 
-* [`COREWEBVIEW2_SAVE_AS_UI_RESULT` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_save_as_ui_result_kind)
+* [`COREWEBVIEW2_SAVE_AS_UI_RESULT` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_save_as_ui_result)
    * `COREWEBVIEW2_SAVE_AS_UI_RESULT_SUCCESS`
    * `COREWEBVIEW2_SAVE_AS_UI_RESULT_INVALID_PATH`
    * `COREWEBVIEW2_SAVE_AS_UI_RESULT_FILE_ALREADY_EXISTS`
