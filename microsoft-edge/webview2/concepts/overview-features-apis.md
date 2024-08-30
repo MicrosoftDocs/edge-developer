@@ -692,8 +692,8 @@ Custom Download Experience:
 ---
 
 
-<!-- ====================================================================== -->
-## Save as
+<!-- ------------------------------ -->
+#### Save as
 
 The Save As APIs allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.  These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which uses the Download APIs.
 
@@ -794,8 +794,8 @@ The Save As APIs allow you to programmatically perform the **Save as** operation
 ---
 
 
-<!-- ====================================================================== -->
-## Web notification handling
+<!-- ------------------------------ -->
+#### Web notification handling
 
 Web Notification APIs support non-persistent notifications.  The `NotificationReceived` event for `CoreWebView2` controls web notification handling, allowing customization or suppression by the host app.  Unhandled notifications default to WebView2's UI.
 
