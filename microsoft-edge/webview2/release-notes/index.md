@@ -312,7 +312,7 @@ Added `SaveAs` APIs that allow you to programmatically perform the **Save as** o
 
 * [ICoreWebView2ShowSaveAsUICompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2showsaveasuicompletedhandler?view=webview2-1.0.2739.15&preserve-view=true)<!-- Win32-only -->
 
-* [`COREWEBVIEW2_SAVE_AS_KIND` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2739.15&preserve-view=true#corewebview2_file_save_as_kind)
+* [`COREWEBVIEW2_SAVE_AS_KIND` Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2739.15&preserve-view=true#corewebview2_save_as_kind)
    * `COREWEBVIEW2_SAVE_AS_KIND_DEFAULT`
    * `COREWEBVIEW2_SAVE_AS_KIND_HTML_ONLY`
    * `COREWEBVIEW2_SAVE_AS_KIND_SINGLE_FILE`
