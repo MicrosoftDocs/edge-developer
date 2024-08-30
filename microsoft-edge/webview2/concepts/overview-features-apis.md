@@ -12,6 +12,11 @@ ms.date: 08/26/2024
 
 Embedding the WebView2 control in your app gives your app access to various methods and properties that are provided through the WebView2 classes or interfaces.  WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities, to enabling your app to modify browser experiences.  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
 
+<!-- maintenance notes:
+when adding an h2 heading, add row in table
+when adding an h4 heading, add nav link below the h2
+-->
+
 
 <!-- ====================================================================== -->
 ## Overview of top-level feature areas
