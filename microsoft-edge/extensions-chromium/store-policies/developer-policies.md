@@ -359,7 +359,7 @@ Any ad content that's displayed by your extension must conform to the following:
 
 ###### 1.10.4 Promotions
 
-If you purchase or create promotional ad campaigns to promote your extension through the ad campaign functionality in Partner Center, all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/policies/creative-specs) and [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
+If you purchase or create promotional ad campaigns to promote your extension through the ad campaign functionality in Partner Center, all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Creative specs](https://help.ads.microsoft.com/#apex/ads/en/ext60207) and other [Microsoft Advertising policies and agreements](https://help.ads.microsoft.com/#apex/ads/en/n5095/0).
 
 
 ###### 1.10.5 Notifying users of opt-out for interest-based advertising
