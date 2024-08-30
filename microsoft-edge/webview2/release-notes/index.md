@@ -232,17 +232,17 @@ Added `SaveAs` APIs that allow you to programmatically perform the **Save as** o
    * [CoreWebView2.SaveAsUIShowing Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.saveasuishowing?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
 
 * [CoreWebView2SaveAsKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
+   * `Complete`
    * `Default`
    * `HtmlOnly`
    * `SingleFile`
-   * `Complete`
 
 * [CoreWebView2SaveAsUIResult Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
-   * `Success`
-   * `InvalidPath`
-   * `FileAlreadyExists`
-   * `KindNotSupported`
    * `Cancelled`
+   * `FileAlreadyExists`
+   * `InvalidPath`
+   * `KindNotSupported`
+   * `Success`
 
 * [CoreWebView2SaveAsUIShowingEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs?view=webview2-dotnet-1.0.2739.15&preserve-view=true)
    * [CoreWebView2SaveAsUIShowingEventArgs.AllowReplace Property](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs.allowreplace?view=webview2-dotnet-1.0.2739.15&preserve-view=true)

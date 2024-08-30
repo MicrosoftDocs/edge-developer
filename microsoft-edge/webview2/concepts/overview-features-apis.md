@@ -707,17 +707,17 @@ The Save As APIs allow you to programmatically perform the **Save as** operation
    * [CoreWebView2.SaveAsUIShowing Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.saveasuishowing)
 
 * [CoreWebView2SaveAsKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2saveaskind)
+   * `Complete`
    * `Default`
    * `HtmlOnly`
    * `SingleFile`
-   * `Complete`
 
 * [CoreWebView2SaveAsUIResult Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult)
-   * `Success`
-   * `InvalidPath`
-   * `FileAlreadyExists`
-   * `KindNotSupported`
    * `Cancelled`
+   * `FileAlreadyExists`
+   * `InvalidPath`
+   * `KindNotSupported`
+   * `Success`
 
 * [CoreWebView2SaveAsUIShowingEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs)
    * [CoreWebView2SaveAsUIShowingEventArgs.AllowReplace Property](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuishowingeventargs.allowreplace)
