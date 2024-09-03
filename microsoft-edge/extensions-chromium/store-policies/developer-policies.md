@@ -10,6 +10,8 @@ ms.date: 07/02/2024
 ---
 # Developer policies for the Microsoft Edge Add-ons store
 
+<!-- fwlink for this article: https://go.microsoft.com/fwlink/?linkid=2104222 -->
+
 To develop an extension to be published through the Microsoft Edge Add-ons store, follow these policies.  These policies apply to submitting extensions through [Partner Center](https://partner.microsoft.com/dashboard/home) and publishing the extensions at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) store.
 
 The _Microsoft Edge Add-ons store_<!--36--> is also called the _Edge Add-ons store_,<!--12--> the _Microsoft Edge Add-ons website_,<!--89--> or the _Edge Add-ons website_.<!--5-->
@@ -343,8 +345,8 @@ Users should not be misled to click on advertisements to fully use the extension
 ###### 1.10.2 Policies and agreements
 
 Any ad content that's displayed by your extension must conform to the following:
-* The [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
-* The advertising requirements of the [App Developer Agreement](/legal/windows/agreements/app-developer-agreement).
+* [Microsoft Advertising policies and agreements](https://help.ads.microsoft.com/#apex/ads/en/n5095/0).
+* The advertising requirements of the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905).
 * The advertising requirements of the developer policies for the Microsoft Edge Add-ons store.
 
 
@@ -357,7 +359,7 @@ Any ad content that's displayed by your extension must conform to the following:
 
 ###### 1.10.4 Promotions
 
-If you purchase or create promotional ad campaigns to promote your extension through the ad campaign functionality in Partner Center, all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/policies/creative-specs) and [Microsoft Advertising Network policies](https://about.ads.microsoft.com/policies/home).
+If you purchase or create promotional ad campaigns to promote your extension through the ad campaign functionality in Partner Center, all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Creative specs](https://help.ads.microsoft.com/#apex/ads/en/ext60207) and other [Microsoft Advertising policies and agreements](https://help.ads.microsoft.com/#apex/ads/en/n5095/0).
 
 
 ###### 1.10.5 Notifying users of opt-out for interest-based advertising

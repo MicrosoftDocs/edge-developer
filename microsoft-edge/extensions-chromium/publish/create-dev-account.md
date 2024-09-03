@@ -70,7 +70,7 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
 
 1.  After you sign in, a registration form is displayed, to enroll in the Microsoft Edge program.  To help you fill in the registration form, see the next section.
 
-1.  Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement](/legal/windows/agreements/app-developer-agreement).
+1.  Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905).
 
 1.  To complete your enrollment, select **Finish**.
 
