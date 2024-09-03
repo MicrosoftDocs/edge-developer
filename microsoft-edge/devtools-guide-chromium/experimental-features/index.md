@@ -207,7 +207,8 @@ Status:
 
 <!-- ====================================================================== -->
 ## Show option to expose internals in heap snapshots
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no (?) link pointing to this anchor wording
+[Heap snapshot improvements](../whats-new/2024/08/devtools-128.md#heap-snapshot-improvements) in _What's New in DevTools (Microsoft Edge 128)_ links to here -->
 
 _new as of Microsoft Edge 105_
 
@@ -575,9 +576,7 @@ See also:
 * [Performance recording event reference](../evaluate-performance/performance-reference.md)
 * [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
 * [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
-<!--
-* [postMessage events are distinguished from other timeline events](https://review.learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2024/04/devtools-124?branch=pr-en-us-3129#postmessage-events-are-distinguished-from-other-timeline-events) in _What's New in DevTools (Microsoft Edge 124)_.
--->
+* [postMessage events and handlers are distinguished from other events](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events) in _What's New in DevTools (Microsoft Edge 124)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 129.
