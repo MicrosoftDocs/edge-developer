@@ -10,6 +10,8 @@ ms.date: 05/15/2024
 ---
 # Analyze CSS selector performance during Recalculate Style events
 
+When your webpage has long-running **Recalculate Style** events, to identify which of your CSS selectors are taking up the most time and resulting in slow performance, use the **Selector Stats** tab in the **Performance** tool.  The **Selector Stats** tab provides statistics about the CSS rule selectors that were involved in one or more **Recalculate Style** events within a performance recording.
+
 The **Performance** tool highlights each long-running task with a red triangle in the upper right corner, to indicate work on the main thread that takes a long time to run and has slow performance:
 
 ![Long-Running Task indicators for events on the main thread with slow performance](./selector-stats-images/long-running-task.png)
@@ -23,10 +25,6 @@ CSS styles need to be recalculated whenever the applicability of CSS rules may h
 * When elements are added to or removed from the DOM.
 * When an element's attributes are changed, such as the value of a `class` or `id` attribute.
 * When user input occurs, such as a mouse move or a change of which element in a webpage has focus, which can affect `:hover` rules.
-
-When you have long-running **Recalculate Style** events, you can use the **Selector Stats** tab to understand which of your CSS selectors are taking up the most time and resulting in slow performance.
-
-The **Selector Stats** tab provides statistics about the CSS rule selectors that were involved in one or more **Recalculate Style** events within a performance recording.
 
 
 <!-- ====================================================================== -->
