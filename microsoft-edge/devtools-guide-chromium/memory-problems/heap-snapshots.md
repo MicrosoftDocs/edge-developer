@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 01/30/2024
+ms.date: 09/03/2024
 ---
 <!-- Copyright Meggin Kearney
 
@@ -136,9 +136,13 @@ To reveal the list of objects that were instantiated by a given constructor, exp
 
 ###### Special category names in the Summary view
 
-The **Summary** view also contains special category names that aren't based on constructors. These special categories are:
-
 <!-- from https://github.com/sethbrenith/sethbrenith.github.io/blob/main/heap-snapshot-names.md -->
+
+Curly braces: The Memory tool in DevTools shows objects as automatically categorized by interface.  Plain JS objects are not listed in a category named Object, but rather, they have names and categories that are based on the properties that the object contains, such as {foo, bar, baz}.
+
+The **Summary** view also<!-- todo: avoid "also"; make modular --> contains special category names that aren't based on constructors. These special categories are:
+
+<!-- todo: update to show curly braces-->
 | Category name | Description |
 |:--- |:--- |
 | **(array)** | Various internal array-like objects that don't directly correspond to objects visible from JavaScript, such as the contents of JavaScript arrays, or the named properties of JavaScript objects. |
