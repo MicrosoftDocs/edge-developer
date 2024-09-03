@@ -14,13 +14,13 @@ ms.date: 08/22/2024
 
 
 <!-- ====================================================================== -->
-## Updated labels for selector stats
+## Updated labels for CSS selector stats
 
-<!-- Subtitle: Use the "Enable CSS selector stats" setting instead of the "Enable advanced paint instrumentation (slow)" to capture CSS selector statistics for Recalculate Style events -->
+<!-- Subtitle: Use the "Enable CSS selector stats" checkbox instead of "Enable advanced paint instrumentation (slow)" to capture CSS selector statistics for Recalculate Style events -->
 
-In the **Performance** tool, the duplicate **Selector Stats** label has been removed from the `Recalculate Style` event details.  Selector stats can be enabled by using the dedicated setting for it.
+In the **Performance** tool, the duplicate **Selector Stats** label has been removed from the `Recalculate Style` event details.
 
-Also, the **Enable advanced rendering instrumentation (slow)** setting has been renamed back to **Enable advanced paint instrumentation (slow)**.  Previously, this setting was used for both paint instrumentation and selector stats.  This setting label has been updated because there's now a dedicated setting for selector stats.
+The **Enable advanced rendering instrumentation (slow)** checkbox has been renamed to **Enable advanced paint instrumentation (slow)**.  Selecting this checkbox now only turns on paint instrumentation, and no longer turns on CSS selector stats as well.  To enable gathering CSS selector stats, in the **Performance** tool, select the **Capture settings** (![the Capture settings icon](./devtools-128-images/capture-settings-icon.png)) button, and then select the **Enable CSS selector stats (slow)** checkbox.
 
 Before:
 
@@ -29,6 +29,9 @@ Before:
 After:
 
 ![New selector stats labels](./devtools-128-images/new-selector-stats.png)
+
+See also:
+* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->
@@ -43,6 +46,36 @@ In recent versions of Microsoft Edge, some context menus in the **Activity Bar**
 The top of each context menu now shows the title again:
 
 ![New context menu header](./devtools-128-images/header-title.png)
+
+
+<!-- ====================================================================== -->
+## Heap snapshot improvements
+
+<!-- Subtitle: Heap snapshots are generated faster, HTML elements are grouped by tag name, shallow sizes show fewer internal objects, and numeric values are always shown. -->
+
+In the **Memory** tool, there are several improvements for heap snapshots:
+
+* Generating heap snapshots is now faster.
+
+* HTML elements are grouped by tag name, such as `<body>`, `<div>`, or `<img>`.
+
+* Shallow sizes now match JavaScript semantics better, by showing fewer internal objects (unless you select the [Show option to expose internals in heap snapshots](../../../experimental-features/index.md#show-option-to-expose-internals-in-heap-snapshots) experiment checkbox and then, before taking a snapshot, select the **Expose internals (includes additional implementation-specific details)** checkbox).
+
+* The **Include numerical values in capture** checkbox (shown before you take a heap snapshot) has been removed, and heap snapshots now always show numeric values.
+
+See also:
+* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+
+
+<!-- ====================================================================== -->
+## View WebSocket message activities in the Performance tool
+
+<!-- Subtitle: WebSocket activities were added to the Network track in the Performance tool to help correlate JavaScript activity with WebSocket messages. -->
+
+WebSocket activities have been added to the **Network** track in the **Performance** tool, to help correlate JavaScript activity with WebSocket messages.  This can help identify whether latency issues are coming from the client's parsing of a message, or from the server's response.
+
+See also:
+* [Introduction to the Performance tool](../../../evaluate-performance/index.md)
 
 
 <!-- ====================================================================== -->
