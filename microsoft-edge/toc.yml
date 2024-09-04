@@ -1074,14 +1074,14 @@
 
             - name: Policies for extensions
               items:
-                - name: Content Security Policy (CSP)
-                  href: extensions-chromium/store-policies/csp.md
-
                 - name: App Developer Agreement Addendum for Microsoft Edge program users
                   href: extensions-chromium/store-policies/ada-addendum.md
 
                 - name: Developer policies for the Microsoft Edge Add-ons store
                   href: extensions-chromium/store-policies/developer-policies.md
+
+                - name: Using Content Security Policy (CSP) to control which resources can be run by an extension
+                  href: extensions-chromium/store-policies/csp.md
 
 # -------------------------------------
         - name: Publish an extension

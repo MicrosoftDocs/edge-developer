@@ -1,6 +1,6 @@
 ---
-title: Content Security Policy (CSP)
-description: Content Security Policy for Microsoft Edge extensions.
+title: Using Content Security Policy (CSP) to control which resources can be run by an extension
+description: Using Content Security Policy (CSP) to control which resources can be loaded and run by a Microsoft Edge add-on.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,13 +8,15 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/09/2022
 ---
-# Content Security Policy (CSP)
+# Using Content Security Policy (CSP) to control which resources can be run by an extension
 
-In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge Extension system has incorporated [Content Security Policy (CSP)](https://w3c.github.io/webappsec-csp).  This introduces some  strict policies that make Extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and run by your Extensions and applications.
+In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge extension system has incorporated Content Security Policy (CSP).  CSP introduces some strict policies that make extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and run by your extensions and applications.
 
-In general, CSP works as a block/allowlisting mechanism for resources loaded or run by your Extensions.  Defining a reasonable policy for your Extension enables you to carefully consider the resources that your Extension requires, and to ask the browser to ensure that those are the only resources your Extension has access to.  The policies provide security over and above the host permissions your Extension requests; they are an additional layer of protection, not a replacement.
+See [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) at W3C.
 
-On the web, such a policy is defined via an HTTP header or `meta` element.  Inside the Microsoft Edge Extension system, neither is an appropriate mechanism.  Instead, an Extension policy is defined using the `manifest.json` file for the Extension as follows:
+In general, CSP works as a block/allowlisting mechanism for resources loaded or run by your extension.  Defining a reasonable policy for your extension enables you to carefully consider the resources that your extension requires, and to ask the browser to ensure that those are the only resources your extension has access to.  The policies provide security over and above the host permissions your extension requests; they are an additional layer of protection, not a replacement.
+
+On the web, such a policy is defined via an HTTP header or `meta` element.  Inside the Microsoft Edge extension system, neither is an appropriate mechanism.  Instead, an extension policy is defined using the `manifest.json` file for the extension as follows:
 
 ```javascript
 {
@@ -46,7 +48,7 @@ script-src 'self'; object-src 'self'
 script-src 'self'; object-src 'self'; worker-src 'self'
 ```
 
-The policy adds security by limiting Extensions and applications in three ways:
+The policy adds security by limiting extensions and applications in three ways:
 
 
 #### Eval and related functions are disabled
@@ -164,9 +166,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 #### Only local script and object resources are loaded
 
-Script and object resources are only able to be loaded from the Extension package, not from the web at large.  This ensures that your Extension only runs the code you specifically approved, preventing an active network attacker from maliciously redirecting your request for a resource.
+Script and object resources are only able to be loaded from the extension package, not from the web at large.  This ensures that your extension only runs the code you specifically approved, preventing an active network attacker from maliciously redirecting your request for a resource.
 
-Instead of writing code that depends on jQuery (or any other library) loading from an external CDN, consider including the specific version of jQuery in your Extension package.  That is, instead of:
+Instead of writing code that depends on jQuery (or any other library) loading from an external CDN, consider including the specific version of jQuery in your extension package.  That is, instead of:
 
 ```html
 <!doctype html>
@@ -212,7 +214,7 @@ Inline scripts can be allowed by specifying the base64-encoded hash of the sourc
 
 #### Remote Script
 
-If you require some external JavaScript or object resources, you can relax the policy to a limited extent by allowlisting secure origins from which scripts should be accepted.  Verify that runtime resources loaded with with elevated permissions of an Extension are exactly the resources you expect, and aren't replaced by an active network attacker.  As [man-in-the-middle attacks](https://wikipedia.org/wiki/Man-in-the-middle_attack) are both trivial and undetectable over HTTP, those origins aren't accepted.
+If you require some external JavaScript or object resources, you can relax the policy to a limited extent by allowlisting secure origins from which scripts should be accepted.  Verify that runtime resources loaded with with elevated permissions of an extension are exactly the resources you expect, and aren't replaced by an active network attacker.  As [man-in-the-middle attacks](https://wikipedia.org/wiki/Man-in-the-middle_attack) are both trivial and undetectable over HTTP, those origins aren't accepted.
 
 Currently, you can allowlist origins that have the following schemes: `blob`, `filesystem`, `https`, and `extension`.  The host part of the origin must explicitly be specified for the `https` and `extension` schemes.  Generic wildcards such as https:, `https://*` and `https://*.com` aren't allowed; subdomain wildcards such as `https://*.example.com` are allowed.  Domains in the [Public Suffix list](https://publicsuffix.org/list) are also viewed as generic top-level domains.  To load a resource from these domains, the subdomain must explicitly be listed.  For example, `https://*.cloudfront.net` is not valid, but `https://XXXX.cloudfront.net` and `https://*.XXXX.cloudfront.net` can be `allowlisted`.
 
@@ -230,7 +232,7 @@ A relaxed policy definition which allows script resources to be loaded from `exa
 > [!NOTE]
 > Both `script-src` and `object-src` are defined by the policy.  Microsoft Edge doesn't accept a policy that doesn't limit each of these values to (at least) '`self`'.
 
-<!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->
+<!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample extension, and a brief tutorial that goes into more detail.  -->
 
 
 #### Evaluated JavaScript
@@ -247,17 +249,17 @@ However, you should avoid relaxing policies.  These types of functions are notor
 <!-- ====================================================================== -->
 ## Tightening the default policy
 
-You can tighten this policy to whatever extent your Extension allows, in order to increase security, at the expense of convenience.  To specify that your Extension can only load resources of any type (images, and so on) from the associated Extension package, for example, a policy of `default-src 'self'` might be appropriate.
+You can tighten this policy to whatever extent your extension allows, in order to increase security, at the expense of convenience.  To specify that your extension can only load resources of any type (images, and so on) from the associated extension package, for example, a policy of `default-src 'self'` might be appropriate.
 
-<!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->
+<!-- The Mappy sample extension is a good example of an extension that is been locked down above and beyond the defaults.  -->
 
 
 <!-- ====================================================================== -->
 ## Content Scripts
 
-The policy being discussing applies to the background pages and event pages of the Extension.  How the content scripts apply to the content scripts of the Extension is more complicated.
+The policy being discussing applies to the background pages and event pages of the extension.  How the content scripts apply to the content scripts of the extension is more complicated.
 
-Content scripts are generally not subject to the CSP of the Extension.  Since content scripts aren't HTML, the main impact of this is that they can use `eval` even if the CSP of the Extension doesn't specify `unsafe-eval`, although this is not recommended.  Additionally, the CSP of the page doesn't apply to content scripts.  More complicated are `<script>` tags that content scripts create and put into the DOM of the page they are running on.  These are referenced as DOM injected scripts going forward.
+Content scripts are generally not subject to the CSP of the extension.  Since content scripts aren't HTML, the main impact of this is that they can use `eval` even if the CSP of the extension doesn't specify `unsafe-eval`, although this is not recommended.  Additionally, the CSP of the page doesn't apply to content scripts.  More complicated are `<script>` tags that content scripts create and put into the DOM of the page they are running on.  These are referenced as DOM injected scripts going forward.
 
 DOM injected scripts that run immediately upon injection into the page run as you would expect.  Imagine a content script with the following code as a simple example:
 
@@ -267,13 +269,13 @@ document.write("<script>alert(1);</script>");
 
 This content script causes an `alert` immediately upon the `document.write()`.  Note that this runs regardless of the policy a page specifies.  However, the behavior becomes more complicated both inside that DOM injected script and for any script that doesn't immediately run upon injection.
 
-Imagine that your Extension is running on a page that provides an associated CSP that specifies `script-src 'self'`.  Now imagine the content script runs the following code:
+Imagine that your extension is running on a page that provides an associated CSP that specifies `script-src 'self'`.  Now imagine the content script runs the following code:
 
 ```javascript
 document.write("<button onclick='alert(1);'>click me</button>'");
 ```
 
-If a user clicks that button, the `onclick` script doesn't run.  This is because the script didn't immediately run, and code that isn't interpreted until the `click` event occurs isn't considered part of the content script, so the CSP of the page (not of the Extension) restricts the behavior.  And since that CSP doesn't specify `unsafe-inline`, the inline event handler is blocked.
+If a user clicks that button, the `onclick` script doesn't run.  This is because the script didn't immediately run, and code that isn't interpreted until the `click` event occurs isn't considered part of the content script, so the CSP of the page (not of the extension) restricts the behavior.  And since that CSP doesn't specify `unsafe-inline`, the inline event handler is blocked.
 
 The correct way to implement the desired behavior in this case is to add the `onclick` handler as a function from the content script, as follows:
 
@@ -301,9 +303,15 @@ script.innerHTML = 'eval("alert(1);")';
 =document.getElementById('body').appendChild(script);
 ```
 
-While the initial script runs, the call to `eval` is blocked.  That is, while the initial script runtime is allowed, the behavior within the script is regulated by the CSP of the page.  Thus, depending on how you write DOM injected scripts in your Extension, changes to the CSP of the page might affect the behavior of your Extension.
+While the initial script runs, the call to `eval` is blocked.  That is, while the initial script runtime is allowed, the behavior within the script is regulated by the CSP of the page.  Thus, depending on how you write DOM injected scripts in your extension, changes to the CSP of the page might affect the behavior of your extension.
 
-Since content scripts aren't affected by the CSP of the page, this a great reason to put as much behavior as possible of your Extension into the content script, rather than DOM injected scripts.
+Since content scripts aren't affected by the CSP of the page, this a great reason to put as much behavior as possible of your extension into the content script, rather than DOM injected scripts.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) at W3C.
 
 
 <!-- ====================================================================== -->
