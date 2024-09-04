@@ -794,11 +794,6 @@ Old redirects (to /archive/)
         "redirect_document_id": false
       },
       {
-        "source_path": "microsoft-edge/extensions-chromium/store-policies/csp.md",
-        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/csp",
-        "redirect_document_id": false
-      },
-      {
         "source_path": "microsoft-edge/extensions-chromium/store-policies/ada-addendum.md",
         "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/ada-addendum",
         "redirect_document_id": false
