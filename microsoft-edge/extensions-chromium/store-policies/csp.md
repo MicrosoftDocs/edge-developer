@@ -32,7 +32,8 @@ On the web, such a policy is defined via an HTTP header or `meta` element.  Insi
 <!-- ====================================================================== -->
 ## Default Policy Restrictions
 
-Packages that don't define a `manifest_version` don't have a default content security policy.
+Packages that don't define a `manifest_version` don't have a default content security policy.<!-- todo: update this; this might be outdated.  manifest_version is likely a required field; so there can't be extensions without it -->
+
 
 Packages that use `manifest_version` have the following default content security policy:
 
