@@ -133,7 +133,7 @@ In general, your extension must not jeopardize or compromise user security, or t
 
 ###### 1.2.1 Content security policies
 
-If you make any changes to your extension beyond the described functionality, any changes to code must be compliant with the<!-- todo: review wording --> Content Security Policy for Microsoft Edge extensions; see [Using Content Security Policy (CSP) to control which resources can be run by an extension](./csp.md).  For example, your extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.
+If you make any changes to your extension beyond the described functionality, any changes to code must be compliant with the<!-- todo: review wording --> Content Security Policy for Microsoft Edge extensions; see [Using Content Security Policy (CSP) to control which resources can be run by an extension](../developer-guide/csp.md).  For example, your extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.
 
 
 ###### 1.2.2 Unwanted and malicious software

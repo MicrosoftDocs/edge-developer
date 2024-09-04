@@ -1061,6 +1061,9 @@
                 - name: Manifest file format for extensions
                   href: extensions-chromium/getting-started/manifest-format.md
 
+                - name: Using Content Security Policy (CSP) to control which resources can be run by an extension
+                  href: extensions-chromium/developer-guide/csp.md
+
             - name: JavaScript APIs
               items:
                 - name: Microsoft Edge Add-ons API 101
@@ -1074,9 +1077,6 @@
 
             - name: Policies for extensions
               items:
-                - name: Using Content Security Policy (CSP) to control which resources can be run by an extension
-                  href: extensions-chromium/store-policies/csp.md
-
                 - name: App Developer Agreement Addendum for Microsoft Edge program users
                   href: extensions-chromium/store-policies/ada-addendum.md
 

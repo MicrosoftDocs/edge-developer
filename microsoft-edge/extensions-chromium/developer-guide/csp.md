@@ -269,7 +269,7 @@ You can tighten this policy to whatever extent your extension allows, in order t
 
 
 <!-- ====================================================================== -->
-## Content Scripts
+## Content scripts
 
 The policy being discussing applies to the background pages and event pages of the extension.  How the content scripts apply to the content scripts of the extension is more complicated.
 

@@ -133,6 +133,11 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/extensions-chromium/publish/update-extension",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/store-policies/csp.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/csp",
+        "redirect_document_id": false
+      },
 
 /* Progressive Web Apps: */
       {
