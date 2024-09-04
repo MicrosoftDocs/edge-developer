@@ -12,21 +12,19 @@ ms.date: 11/09/2022
 
 In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge extension system has incorporated Content Security Policy (CSP).  CSP introduces some strict policies that make extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and run by your extensions and applications.
 
-See [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) at W3C.
+See [Content Security Policy (CSP)](https://developer.mozilla.org/docs/Web/HTTP/CSP) at MDN.
 
 In general, CSP works as a block/allowlisting mechanism for resources loaded or run by your extension.  Defining a reasonable policy for your extension enables you to carefully consider the resources that your extension requires, and to ask the browser to ensure that those are the only resources your extension has access to.  The policies provide security over and above the host permissions your extension requests; they are an additional layer of protection, not a replacement.
 
 On the web, such a policy is defined via an HTTP header or `meta` element.  Inside the Microsoft Edge extension system, neither is an appropriate mechanism.  Instead, an extension policy is defined using the `manifest.json` file for the extension as follows:
 
-```javascript
+```json
 {
     ...,
     "content_security_policy": "[POLICY STRING GOES HERE]"
     ...
 }
 ```
-
-> For full details regarding the CSP syntax, please take a look at the W3C [Content Security Policy specification](https://w3c.github.io/webappsec-csp) , and [An Introduction to Content Security Policy](https://www.html5rocks.com/en/tutorials/security/content-security-policy) at _HTML5Rocks_.
 
 
 <!-- ====================================================================== -->
@@ -37,21 +35,24 @@ Packages that don't define a `manifest_version` don't have a default content sec
 
 Packages that use `manifest_version` have the following default content security policy:
 
-#### [Manifest V2](#tab/v2)
+##### [Manifest V2](#tab/v2)
 
-```javascript
+```json
 script-src 'self'; object-src 'self'
 ```
 
-#### [Manifest V3](#tab/v3)
+##### [Manifest V3](#tab/v3)
 
-```javascript
+```json
 script-src 'self'; object-src 'self'; worker-src 'self'
 ```
+
+---
 
 The policy adds security by limiting extensions and applications in three ways:
 
 
+<!-- ------------------------------ -->
 #### Eval and related functions are disabled
 
 Code like the following doesn't work:
@@ -73,6 +74,7 @@ function() { return foo && foo.bar && foo.bar.baz };
 ```
 
 
+<!-- ------------------------------ -->
 #### Inline JavaScript aren't run
 
 Inline JavaScript aren't run.  This restriction bans both inline `<script>` blocks and inline event handlers, such as `<button onclick="...">`.
@@ -165,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
 ```
 
 
+<!-- ------------------------------ -->
 #### Only local script and object resources are loaded
 
 Script and object resources are only able to be loaded from the extension package, not from the web at large.  This ensures that your extension only runs the code you specifically approved, preventing an active network attacker from maliciously redirecting your request for a resource.
@@ -203,8 +206,16 @@ Use the following approach instead.  Download the file, include it in your packa
 <!-- ====================================================================== -->
 ## Relaxing the default policy
 
+You can allow running the following types of script:
+* [Inline script](#inline-script)
+* [Remote script](#remote-script)
+* [Evaluated JavaScript](#evaluated-javascript)
 
-#### Inline Script
+Details are below.
+
+
+<!-- ------------------------------ -->
+#### Inline script
 
 <!-- Up until Chrome 45, there was no mechanism for relaxing the restriction against running inline JavaScript.  In particular, setting a script policy that includes `'unsafe-inline'` has no effect.
 
@@ -213,7 +224,8 @@ As of Chrome 46, -->
 Inline scripts can be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm (sha256, sha384 or sha512).  For an example, see [W3C > Hash usage for \<script\> elements](https://www.w3.org/TR/CSP2#script-src-hash-usage).
 
 
-#### Remote Script
+<!-- ------------------------------ -->
+#### Remote script
 
 If you require some external JavaScript or object resources, you can relax the policy to a limited extent by allowlisting secure origins from which scripts should be accepted.  Verify that runtime resources loaded with with elevated permissions of an extension are exactly the resources you expect, and aren't replaced by an active network attacker.  As [man-in-the-middle attacks](https://wikipedia.org/wiki/Man-in-the-middle_attack) are both trivial and undetectable over HTTP, those origins aren't accepted.
 
@@ -226,7 +238,7 @@ For development ease, resources loaded over HTTP from servers on your local mach
 
 A relaxed policy definition which allows script resources to be loaded from `example.com` over HTTPS may look like:
 
-```javascript
+```json
 "content_security_policy": "script-src 'self' https://example.com; object-src 'self'"
 ```
 
@@ -236,11 +248,12 @@ A relaxed policy definition which allows script resources to be loaded from `exa
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample extension, and a brief tutorial that goes into more detail.  -->
 
 
+<!-- ------------------------------ -->
 #### Evaluated JavaScript
 
 The policy against `eval()` and related functions like `setTimeout(String)`, `setInterval(String)`, and `new Function(String)` can be relaxed by adding `unsafe-eval` to your policy:
 
-```javascript
+```json
 "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 ```
 
@@ -312,7 +325,7 @@ Since content scripts aren't affected by the CSP of the page, this a great reaso
 <!-- ====================================================================== -->
 ## See also
 
-* [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) at W3C.
+* [Content Security Policy (CSP)](https://developer.mozilla.org/docs/Web/HTTP/CSP) at MDN.
 
 
 <!-- ====================================================================== -->
