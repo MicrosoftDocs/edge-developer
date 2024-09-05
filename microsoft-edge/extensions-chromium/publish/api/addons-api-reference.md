@@ -36,17 +36,18 @@ Uploads a package to update an existing draft submission of an add-on product.
 
 ###### Request headers (v1)
 
-* Required.  `Authorization: Bearer <auth token>`
+The following request headers are required:
 
-* Required.  `Content-Type: application/zip`
+* `Authorization: Bearer <auth token>`
+* `Content-Type: application/zip`
 
 ###### Request headers (v2)
 
-* Required.  `Authorization: ApiKey <api key>`
+The following request headers are required:
 
-* Required.  `X-ClientID: <client ID>`
-
-* Required.  `Content-Type: application/zip`
+* `Authorization: ApiKey <api key>`
+* `X-ClientID: <client ID>`
+* `Content-Type: application/zip`
 
 ###### Request body
 
@@ -96,13 +97,16 @@ Gets the status of the package upload.
 
 ###### Request headers (v1)
 
-* Required.  `Authorization: Bearer <auth token>`
+The following request headers are required:
+
+* `Authorization: Bearer <auth token>`
 
 ###### Request headers (v2)
 
-* Required.  `Authorization: ApiKey <api key>`
+The following request headers are required:
 
-* Required.  `X-ClientID: <client ID>`
+* `Authorization: ApiKey <api key>`
+* `X-ClientID: <client ID>`
 
 ###### Request body
 
@@ -196,13 +200,16 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 ###### Request headers (v1)
 
-* Required.  `Authorization: Bearer <auth token>`
+The following request headers are required:
+
+* `Authorization: Bearer <auth token>`
 
 ###### Request headers (v2)
 
-* Required.  `Authorization: ApiKey <api key>`
+The following request headers are required:
 
-* Required.  `X-ClientID: <client ID>`
+* `Authorization: ApiKey <api key>`
+* `X-ClientID: <client ID>`
 
 ###### Request body
 
@@ -250,13 +257,16 @@ None.
 
 ###### Request headers (v1)
 
-* Required.  `Authorization: Bearer <auth token>`
+The following request headers are required:
+
+* `Authorization: Bearer <auth token>`
 
 ###### Request headers (v2)
 
-* Required.  `Authorization: ApiKey <api key>`
+The following request headers are required:
 
-* Required.  `X-ClientID: <client ID>`
+* `Authorization: ApiKey <api key>`
+* `X-ClientID: <client ID>`
 
 ###### Request body
 
