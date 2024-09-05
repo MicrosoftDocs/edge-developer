@@ -40,17 +40,15 @@ Uploads a package to update an existing draft submission of an add-on product.
 <!-- ---------- -->
 ###### Request headers
 
-##### [v2](#tab/v2)
-
 The following request headers are required:
+
+##### [v2](#tab/v2)
 
 * `Authorization: ApiKey <api key>`
 * `X-ClientID: <client ID>`
 * `Content-Type: application/zip`
 
 ##### [v1](#tab/v1)
-
-The following request headers are required:
 
 * `Authorization: Bearer <auth token>`
 * `Content-Type: application/zip`
@@ -115,16 +113,14 @@ Gets the status of the package upload.
 <!-- ---------- -->
 ###### Request headers
 
-##### [v2](#tab/v2)
-
 The following request headers are required:
+
+##### [v2](#tab/v2)
 
 * `Authorization: ApiKey <api key>`
 * `X-ClientID: <client ID>`
 
 ##### [v1](#tab/v1)
-
-The following request headers are required:
 
 * `Authorization: Bearer <auth token>`
 
@@ -238,16 +234,14 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 <!-- ---------- -->
 ###### Request headers
 
-##### [v2](#tab/v2)
-
 The following request headers are required:
+
+##### [v2](#tab/v2)
 
 * `Authorization: ApiKey <api key>`
 * `X-ClientID: <client ID>`
 
 ##### [v1](#tab/v1)
-
-The following request headers are required:
 
 * `Authorization: Bearer <auth token>`
 
@@ -310,16 +304,14 @@ None.
 <!-- ---------- -->
 ###### Request headers
 
-##### [v2](#tab/v2)
-
 The following request headers are required:
+
+##### [v2](#tab/v2)
 
 * `Authorization: ApiKey <api key>`
 * `X-ClientID: <client ID>`
 
 ##### [v1](#tab/v1)
-
-The following request headers are required:
 
 * `Authorization: Bearer <auth token>`
 
