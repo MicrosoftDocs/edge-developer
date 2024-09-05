@@ -399,12 +399,8 @@ When hosting WebView2, your app can manage different JavaScript dialogs, to supp
 
 The SharedBuffer API supports sharing buffers between the WebView2 host app process and WebView2 renderer process, based on shared memory from the OS.
 
-<!-- Article to cross-link if available
 See also:
-* []()
 * [SharedBufferReceivedEvent class](/microsoft-edge/webview2/reference/javascript/sharedbufferreceivedevent)
-       = https://learn.microsoft.com/microsoft-edge/webview2/reference/javascript/sharedbufferreceivedevent
--->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -813,7 +809,6 @@ Web Notification APIs support non-persistent notifications.  The `NotificationRe
    * [CoreWebView2.NotificationReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.notificationreceived)
 
 * [CoreWebView2Notification Class](/dotnet/api/microsoft.web.webview2.core.corewebview2notification)
-<!-- Properties -->
    * [CoreWebView2Notification.BadgeUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.badgeuri)
    * [CoreWebView2Notification.Body Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.body)
    * [CoreWebView2Notification.BodyImageUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.bodyimageuri)
@@ -827,11 +822,9 @@ Web Notification APIs support non-persistent notifications.  The `NotificationRe
    * [CoreWebView2Notification.Timestamp Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.timestamp)
    * [CoreWebView2Notification.Title Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.title)
    * [CoreWebView2Notification.VibrationPattern Property](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.vibrationpattern)
-<!-- Methods -->
    * [CoreWebView2Notification.ReportClicked Method](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.reportclicked)
    * [CoreWebView2Notification.ReportClosed Method](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.reportclosed)
    * [CoreWebView2Notification.ReportShown Method](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.reportshown)
-<!-- Events -->
    * [CoreWebView2Notification.CloseRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2notification.closerequested)
 
 * [CoreWebView2NotificationReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2notificationreceivedeventargs)
@@ -851,7 +844,6 @@ Web Notification APIs support non-persistent notifications.  The `NotificationRe
    * [CoreWebView2.NotificationReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#notificationreceived)
 
 * [CoreWebView2Notification Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification)
-<!-- Properties -->
    * [CoreWebView2Notification.BadgeUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification#badgeuri)
    * [CoreWebView2Notification.Body Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification#body)
    * [CoreWebView2Notification.BodyImageUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification#bodyimageuri)
@@ -865,11 +857,9 @@ Web Notification APIs support non-persistent notifications.  The `NotificationRe
    * [CoreWebView2Notification.Timestamp Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification#timestamp)
    * [CoreWebView2Notification.Title Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification#title)
    * [CoreWebView2Notification.VibrationPattern Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification#vibrationpattern)
-<!-- Methods -->
    * [CoreWebView2Notification.ReportClicked Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification#reportclicked)
    * [CoreWebView2Notification.ReportClosed Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification#reportclosed)
    * [CoreWebView2Notification.ReportShown Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification#reportshown)
-<!-- Events -->
    * [CoreWebView2Notification.CloseRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notification#closerequested)
 
 * [CoreWebView2NotificationReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2notificationreceivedeventargs)
@@ -932,12 +922,6 @@ Web Notification APIs support non-persistent notifications.  The `NotificationRe
 #### Permissions
 
 Different webpages may ask you for permissions to access some privileged resources, such as geolocation sensor, camera, and microphone.  Your host app can programmatically respond to permissions requests and can replace the default permissions UI with its own UI.
-
-<!--
-there's not a regular article about Permissions, to cross-link
-See also:
-* []()
--->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1582,12 +1566,6 @@ In WebView2, you can set a [Favicon](https://developer.mozilla.org/docs/Glossary
 <!-- ------------------------------ -->
 <!-- from RelNotes 111 -->
 Tracking prevention enables the host app to control the level of tracking prevention of the WebView2 control that's associated with the user profile.
-
-<!--
-there's not a regular article about tracking prevention, to cross-link
-See also:
-* []()
--->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
