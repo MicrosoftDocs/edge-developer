@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/09/2024
+ms.date: 09/05/2024
 ---
 # REST API Reference for Microsoft Edge Add-ons
 
@@ -34,19 +34,19 @@ Uploads a package to update an existing draft submission of an add-on product.
 |---|---|
 | `productID` | Required.  The product ID of the product to which the package must be uploaded. |
 
-###### Request headers
+###### Request headers (v1)
 
-*  Required.  `Authorization: Bearer <auth token>`
+* Required.  `Authorization: Bearer <auth token>`
 
-*  Required.  `Content-Type: application/zip`
+* Required.  `Content-Type: application/zip`
 
-###### Request headers(Version V2)
+###### Request headers (v2)
 
-*  Required.  `Authorization: ApiKey <api key>`
+* Required.  `Authorization: ApiKey <api key>`
 
-*  Required.  `X-ClientID: <client Id>`
+* Required.  `X-ClientID: <client ID>`
 
-*  Required.  `Content-Type: application/zip`
+* Required.  `Content-Type: application/zip`
 
 ###### Request body
 
@@ -58,7 +58,7 @@ Uploads a package to update an existing draft submission of an add-on product.
 
 ###### Response headers
 
-*  Location: `{operationID}`
+* Location: `{operationID}`
 
 ###### Status codes
 
@@ -72,7 +72,7 @@ This API has the following expected status codes.
 
 
 See also:
-*  Introduction: [Uploading a package to update an existing submission](using-addons-api.md#uploading-a-package-to-update-an-existing-submission)
+* Introduction: [Uploading a package to update an existing submission](using-addons-api.md#uploading-a-package-to-update-an-existing-submission)
 
 
 <!-- ====================================================================== -->
@@ -94,15 +94,15 @@ Gets the status of the package upload.
 |---|---|
 | `operationID` | Required.  The operation ID of the upload request submitted in the previous step.  This information is available in the response header. |
 
-###### Request headers
+###### Request headers (v1)
 
 * Required.  `Authorization: Bearer <auth token>`
 
-###### Request headers(Version V2)
+###### Request headers (v2)
 
-*  Required.  `Authorization: ApiKey <api key>`
+* Required.  `Authorization: ApiKey <api key>`
 
-*  Required.  `X-ClientID: <client Id>`
+* Required.  `X-ClientID: <client ID>`
 
 ###### Request body
 
@@ -172,7 +172,7 @@ This API has the following expected status codes.
 
 
 See also:
-*  Introduction: [Checking the status of a package upload](using-addons-api.md#checking-the-status-of-a-package-upload)
+* Introduction: [Checking the status of a package upload](using-addons-api.md#checking-the-status-of-a-package-upload)
 
 
 <!-- ====================================================================== -->
@@ -194,15 +194,15 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 |---|---|
 | `productID` | Required.  The product ID of the product whose draft must be published. |
 
-###### Request headers
+###### Request headers (v1)
 
 * Required.  `Authorization: Bearer <auth token>`
 
-###### Request headers(Version V2)
+###### Request headers (v2)
 
-*  Required.  `Authorization: ApiKey <api key>`
+* Required.  `Authorization: ApiKey <api key>`
 
-*  Required.  `X-ClientID: <client Id>`
+* Required.  `X-ClientID: <client ID>`
 
 ###### Request body
 
@@ -228,7 +228,7 @@ This API has the following expected status codes.
 
 
 See also:
-*  Introduction: [Publishing the submission](using-addons-api.md#publishing-the-submission)
+* Introduction: [Publishing the submission](using-addons-api.md#publishing-the-submission)
 
 
 <!-- ====================================================================== -->
@@ -248,15 +248,15 @@ Checks the status of the publish operation.
 
 None.
 
-###### Request headers
+###### Request headers (v1)
 
 * Required.  `Authorization: Bearer <auth token>`
 
-###### Request headers(Version V2)
+###### Request headers (v2)
 
-*  Required.  `Authorization: ApiKey <api key>`
+* Required.  `Authorization: ApiKey <api key>`
 
-*  Required.  `X-ClientID: <client Id>`
+* Required.  `X-ClientID: <client ID>`
 
 ###### Request body
 
@@ -409,7 +409,7 @@ This API has the following expected status codes.
 
 
 See also:
-*  Introduction: [Checking the publishing status](using-addons-api.md#checking-the-publishing-status)
+* Introduction: [Checking the publishing status](using-addons-api.md#checking-the-publishing-status)
 
 
 <!-- ====================================================================== -->
@@ -437,4 +437,4 @@ Here's a list of common error codes and possible reasons.  For a full list, see 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Using the Microsoft Edge Add-ons REST API](using-addons-api.md)
+* [Using the Microsoft Edge Add-ons REST API](using-addons-api.md)
