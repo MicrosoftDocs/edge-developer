@@ -55,6 +55,8 @@ The following request headers are required:
 * `Authorization: Bearer <auth token>`
 * `Content-Type: application/zip`
 
+---
+
 
 <!-- ---------- -->
 ###### Request body
@@ -125,6 +127,8 @@ The following request headers are required:
 The following request headers are required:
 
 * `Authorization: Bearer <auth token>`
+
+---
 
 
 <!-- ---------- -->
@@ -247,6 +251,8 @@ The following request headers are required:
 
 * `Authorization: Bearer <auth token>`
 
+---
+
 
 <!-- ---------- -->
 ###### Request body
@@ -316,6 +322,8 @@ The following request headers are required:
 The following request headers are required:
 
 * `Authorization: Bearer <auth token>`
+
+---
 
 
 <!-- ---------- -->
