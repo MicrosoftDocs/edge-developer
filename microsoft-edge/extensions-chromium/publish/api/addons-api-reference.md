@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/07/2022
+ms.date: 11/09/2024
 ---
 # REST API Reference for Microsoft Edge Add-ons
 
@@ -37,6 +37,14 @@ Uploads a package to update an existing draft submission of an add-on product.
 ###### Request headers
 
 *  Required.  `Authorization: Bearer <auth token>`
+
+*  Required.  `Content-Type: application/zip`
+
+###### Request headers(Version V2)
+
+*  Required.  `Authorization: ApiKey <api key>`
+
+*  Required.  `X-ClientID: <client Id>`
 
 *  Required.  `Content-Type: application/zip`
 
@@ -89,6 +97,12 @@ Gets the status of the package upload.
 ###### Request headers
 
 * Required.  `Authorization: Bearer <auth token>`
+
+###### Request headers(Version V2)
+
+*  Required.  `Authorization: ApiKey <api key>`
+
+*  Required.  `X-ClientID: <client Id>`
 
 ###### Request body
 
@@ -184,6 +198,12 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 * Required.  `Authorization: Bearer <auth token>`
 
+###### Request headers(Version V2)
+
+*  Required.  `Authorization: ApiKey <api key>`
+
+*  Required.  `X-ClientID: <client Id>`
+
 ###### Request body
 
 `<Notes for certification>`, in plain text format.
@@ -231,6 +251,12 @@ None.
 ###### Request headers
 
 * Required.  `Authorization: Bearer <auth token>`
+
+###### Request headers(Version V2)
+
+*  Required.  `Authorization: ApiKey <api key>`
+
+*  Required.  `X-ClientID: <client Id>`
 
 ###### Request body
 
