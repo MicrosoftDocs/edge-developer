@@ -10,41 +10,57 @@ ms.date: 11/09/2022
 ---
 # Using Content Security Policy (CSP) to control which resources can be run by an extension
 
-In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge extension system has incorporated Content Security Policy (CSP).  CSP introduces some strict policies that make extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and run by your extensions and applications.
-
-See [Content Security Policy (CSP)](https://developer.mozilla.org/docs/Web/HTTP/CSP) at MDN.
-
-In general, CSP works as a block/allowlisting mechanism for resources loaded or run by your extension.  Defining a reasonable policy for your extension enables you to carefully consider the resources that your extension requires, and to ask the browser to ensure that those are the only resources your extension has access to.  The policies provide security over and above the host permissions your extension requests; they are an additional layer of protection, not a replacement.
-
-On the web, such a policy is defined via an HTTP header or `meta` element.  Inside the Microsoft Edge extension system, neither is an appropriate mechanism.  Instead, an extension policy is defined using the `manifest.json` file for the extension as follows:
+To control which content can be run by your extension, in the extension's `manifest.json` file, use the `content_security_policy` key and its policy string value, per the following syntax:
 
 ```json
 {
     ...,
-    "content_security_policy": "[POLICY STRING GOES HERE]"
+    "content_security_policy": "[policy string]"
     ...
 }
 ```
 
+For example, the following is the default content security policy, as described below in [Default policy restrictions](#default-policy-restrictions):
+
+```json
+{
+    ...,
+    "content_security_policy": "script-src 'self'; object-src 'self'; worker-src 'self'"
+    ...
+}
+```
+
+To mitigate a large class of potential cross-site scripting issues, the Microsoft Edge extension system incorporates Content Security Policy (CSP).  CSP introduces some strict policies that make extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and run by your extensions and applications.
+
+In general, CSP works as a block/allowlisting mechanism for resources loaded or run by your extension.  Defining a reasonable policy for your extension enables you to carefully consider the resources that your extension requires, and to ask the browser to ensure that those are the only resources your extension has access to.  The policies provide security over and above the host permissions your extension requests; they are an additional layer of protection, not a replacement.
+
+In contrast, in a webpage, such a policy is defined via an HTTP header or via a `meta` element.  But inside the Microsoft Edge extension system, an HTTP header or a `meta` element is not an appropriate mechanism.
+
+See:
+* [Content Security Policy (CSP)](https://developer.mozilla.org/docs/Web/HTTP/CSP) at MDN.
+* [Manifest - Content Security Policy](https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy) in _Chrome Extensions_ > _Reference_.
+
 
 <!-- ====================================================================== -->
-## Default Policy Restrictions
+## Default policy restrictions
 
 Packages that don't define a `manifest_version` don't have a default content security policy.<!-- todo: update this; this might be outdated.  manifest_version is likely a required field; so there can't be extensions without it -->
 
 
 Packages that use `manifest_version` have the following default content security policy:
 
+##### [Manifest V3](#tab/v3)
+
+<!-- todo: if feasible, to convey context, show entire line of JSON, not just the string value that's in quotes -->
+
+```json
+script-src 'self'; object-src 'self'; worker-src 'self'
+```
+
 ##### [Manifest V2](#tab/v2)
 
 ```json
 script-src 'self'; object-src 'self'
-```
-
-##### [Manifest V3](#tab/v3)
-
-```json
-script-src 'self'; object-src 'self'; worker-src 'self'
 ```
 
 ---
@@ -75,9 +91,9 @@ function() { return foo && foo.bar && foo.bar.baz };
 
 
 <!-- ------------------------------ -->
-#### Inline JavaScript aren't run
+#### Inline JavaScript aren't run<!-- todo: grammar -->
 
-Inline JavaScript aren't run.  This restriction bans both inline `<script>` blocks and inline event handlers, such as `<button onclick="...">`.
+Inline JavaScript<!-- todo: grammar --> aren't run.  This restriction bans both inline `<script>` blocks and inline event handlers, such as `<button onclick="...">`.
 
 The first restriction wipes out a huge class of cross-site scripting attacks by making it impossible for you to accidentally run the script provided by a malicious third-party.  It does, however, require you to write your code with a clean separation between content and behavior.  An example might make this clearer.  You could try to write a Browser Action pop-up as a single `pop-up.html` containing the following:
 
@@ -326,6 +342,7 @@ Since content scripts aren't affected by the CSP of the page, this a great reaso
 ## See also
 
 * [Content Security Policy (CSP)](https://developer.mozilla.org/docs/Web/HTTP/CSP) at MDN.
+* [Manifest - Content Security Policy](https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy) in _Chrome Extensions_ > _Reference_.
 
 
 <!-- ====================================================================== -->

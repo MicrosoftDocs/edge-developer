@@ -10,6 +10,8 @@ ms.date: 06/23/2023
 ---
 # Manifest file format for extensions
 
+<!-- todo: move all V2 info to a single page gathering/separating out all V2 info -->
+
 Every extension for Microsoft Edge has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
 
 *  The version number of the extension.
@@ -17,7 +19,10 @@ Every extension for Microsoft Edge has a JSON-formatted manifest file, named `ma
 *  The permissions that are needed for the extension to run.
 
 
+<!-- ------------------------------ -->
 #### Manifest V2 is deprecated
+
+<!-- todo: move aside/ demote section eg move to a single article gathering all info about v2 -->
 
 Use Manifest V3 for new code.  The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, see [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
 
@@ -29,7 +34,7 @@ The following code shows the fields that are supported in `manifest.json` for ex
 
 ##### [Manifest V3](#tab/v3)
 
-For reference information about each field, see [Manifest file format (V3)](https://developer.chrome.com/docs/extensions/mv3/manifest) and then click the links on the fields.
+For reference information about each field, see [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) in _Chrome Extensions_ > _Reference_, and then click the links on the fields.
 
 ```json
 {
@@ -112,6 +117,8 @@ For reference information about each field, see [Manifest file format (V3)](http
 ```
 
 ##### [Manifest V2](#tab/v2)
+
+<!-- todo: move aside/ demote section eg move to a single article gathering all info about v2; change from tabset to simple code listing for v3 only -->
 
 For reference information about each field, see [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) and then select the links on the fields.
 
@@ -205,6 +212,8 @@ For reference information about each field, see [Manifest file format (V2)](http
 <!-- ====================================================================== -->
 ## Changes in manifest.json V3 vs. V2
 
+<!-- todo: move section to be only in a single page containing all V2 info -->
+
 | V3 | V2 |
 |---|---|
 | `  "manifest_version": 3,` | `"manifest_version": 2,` |
@@ -213,6 +222,13 @@ For reference information about each field, see [Manifest file format (V2)](http
 | removed | `"persistent": false,` |
 | If `background` is included, `service_ worker` is required | If `background` is included, `service_ worker` is optional |
 | Separated into two different keys: `"permissions": [...], "host_permissions": [...],` | `"permissions": [...],` |
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) in _Chrome Extensions_ > _Reference_.
+* [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) in _Chrome Extensions_ > _Reference_.<!-- todo: move link to be only on a single page about all V2 info -->
 
 
 <!-- ====================================================================== -->

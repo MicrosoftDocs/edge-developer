@@ -1052,17 +1052,17 @@
 
             - name: Manifest files
               items:
-                - name: Overview and timelines for migrating to Manifest V3  # overview of Manifest V3, and timeline for migrating
-                  href: extensions-chromium/developer-guide/manifest-v3.md
-
-                - name: Migrate an extension from Manifest V2 to V3
-                  href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
-
                 - name: Manifest file format for extensions
                   href: extensions-chromium/getting-started/manifest-format.md
 
                 - name: Using Content Security Policy (CSP) to control which resources can be run by an extension
                   href: extensions-chromium/developer-guide/csp.md
+
+                - name: Overview and timelines for migrating to Manifest V3  # overview of Manifest V3, and timeline for migrating
+                  href: extensions-chromium/developer-guide/manifest-v3.md
+
+                - name: Migrate an extension from Manifest V2 to V3
+                  href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
 
             - name: JavaScript APIs
               items:
