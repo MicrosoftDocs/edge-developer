@@ -15,6 +15,12 @@ This article is the REST endpoint reference for the Microsoft Edge Add-ons API. 
 For an overview, see [Using the Microsoft Edge Add-ons REST API](using-addons-api.md).
 
 
+<!-- ------------------------------ -->
+#### Versions of the REST API
+
+As of September 6, 2024, both v2 and v1 of this REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
+
+
 <!-- ====================================================================== -->
 ## Upload a package to update an existing submission
 
