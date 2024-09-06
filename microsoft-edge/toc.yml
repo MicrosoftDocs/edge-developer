@@ -1079,11 +1079,11 @@
             - name: Policies for extensions
               items:
                 - name: App Developer Agreement Addendum for Microsoft Edge program users
-                  href: extensions-chromium/store-policies/ada-addendum.md
+                  href: /legal/microsoft-edge/extensions/ada-addendum
                   displayName: policy, policies  # synonym lookup
 
                 - name: Developer policies for the Microsoft Edge Add-ons store
-                  href: extensions-chromium/store-policies/developer-policies.md
+                  href: /legal/microsoft-edge/extensions/developer-policies
                   displayName: policy  # synonym lookup
 
 # -------------------------------------
