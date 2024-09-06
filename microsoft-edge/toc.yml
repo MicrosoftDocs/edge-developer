@@ -1100,19 +1100,19 @@
             - name: Curation and review process for the Edge Add-ons store
               href: extensions-chromium/publish/add-ons-store-curation.md
 
-            - name: REST API for publishing
+# -------------------------------------
+        - name: Manage and maintain an extension
+          items:
+            - name: Update a Microsoft Edge extension
+              href: extensions-chromium/publish/update-extension.md
+
+            - name: REST API for updating an extension
               items:
                 - name: Using the Microsoft Edge Add-ons REST API
                   href: extensions-chromium/publish/api/using-addons-api.md
 
                 - name: REST API Reference for Microsoft Edge Add-ons
                   href: extensions-chromium/publish/api/addons-api-reference.md
-
-# -------------------------------------
-        - name: Manage and maintain an extension
-          items:
-            - name: Update a Microsoft Edge extension
-              href: extensions-chromium/publish/update-extension.md
 
             - name: Automatically update an extension in Microsoft Edge
               href: extensions-chromium/publish/auto-update.md
