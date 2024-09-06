@@ -232,5 +232,5 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge Add-ons API 101](../../developer-guide/apis-intro.md)
+* [APIs related to Microsoft Edge extensions](../../developer-guide/apis-intro.md)
 * [Supported APIs for Microsoft Edge extensions](../../developer-guide/api-support.md) - JavaScript APIs for developing an extension.

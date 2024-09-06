@@ -1047,7 +1047,7 @@
 
             - name: JavaScript APIs
               items:
-                - name: Microsoft Edge Add-ons API 101
+                - name: APIs related to Microsoft Edge extensions
                   href: extensions-chromium/developer-guide/apis-intro.md
 
                 - name: Supported APIs for Microsoft Edge extensions
