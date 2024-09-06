@@ -56,7 +56,7 @@ To feature your extension in a collection on the Microsoft Edge Add-ons website,
 
 
 <!-- ====================================================================== -->
-## Participate in the discussion forum
+## MicrosoftEdge-Extensions discussion forum
 
 Participate in the [MicrosoftEdge-Extensions discussion forum](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) to flag any issues, raise a feature request, be a part of discussions, and share your ideas regarding the Microsoft Edge Extensions Store.
 
@@ -65,3 +65,10 @@ Participate in the [MicrosoftEdge-Extensions discussion forum](https://github.co
 ## Report copyright or trademark infringement
 
 If you think an item in the Microsoft Edge Add-ons website violates a copyright or trademark, complete the [Reporting Infringement](https://www.microsoft.com/concern/dmca) form.  When filling in **Step 3: Where can the infringing material be found?**, in the **Product/Service/App** option, make sure to select **Microsoft Store on Windows**.  The Microsoft Edge extensions team will review your report and then take the necessary action.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Microsoft Edge Insider](https://techcommunity.microsoft.com/t5/microsoft-edge-insider/ct-p/MicrosoftEdgeInsider) - forum about Microsoft Edge at Microsoft Tech Community.
+* [@MSEdgeDev](https://twitter.com/msedgedev/) - Microsoft Edge team on X (Twitter).
