@@ -546,10 +546,15 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 ###### Runtime-only
 
 * Enabled the interactive dragging feature by default.  See `edge-webview-interactive-dragging` in [WebView2 browser flags](../concepts/webview-features-flags.md).
+
 * Disabled `IsolateSandboxedIframes` for WebView2.
+
 * Fixed an issue where WebView creation fails when multiple instances are launched at the same time.  ([Issue #4731](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4731))
+
 * Fixed a bug in WinRT JavaScript projection where caching existing properties in objects whose name contains `Proxy` or `Function` caused an error due to name collision.
+
 * Fixed a bug where the WebView2 control became the wrong size after disconnecting and reconnecting a monitor.
+
 * Fixed an issue where "mailto:" links leave an untitled popup window open, instead of automatically closing the popup window.
 
 
