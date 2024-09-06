@@ -10,6 +10,8 @@ ms.date: 03/12/2024
 ---
 # Using the Microsoft Edge Add-ons REST API
 
+To publish an extension, you first use Partner Center, and then optionally you can use this REST API to update the extension.
+
 The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons store.  You can use these REST endpoints to automate the process of uploading and publishing new versions of your add-ons to the Microsoft Edge Add-ons store.  You use the **Publish API** page at Partner Center to enable the API and begin working with these API endpoints.
 
 <!-- To publish an extension, you first use Partner Center, and then optionally you can use the REST API to update the extension (or use Partner Center instead). -->
@@ -232,5 +234,4 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
-* [APIs related to Microsoft Edge extensions](../../developer-guide/apis-intro.md)
 * [Supported APIs for Microsoft Edge extensions](../../developer-guide/api-support.md) - JavaScript APIs for developing an extension.
