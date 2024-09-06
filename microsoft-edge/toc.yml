@@ -1055,7 +1055,7 @@
                 - name: Manifest file format for extensions
                   href: extensions-chromium/getting-started/manifest-format.md
 
-                - name: Using Content Security Policy (CSP) to control which resources can be run by an extension
+                - name: Using Content Security Policy (CSP) to control which resources can be run
                   href: extensions-chromium/developer-guide/csp.md
                   displayName: policies  # synonym lookup
 
@@ -1073,7 +1073,7 @@
                 - name: Supported APIs for Microsoft Edge extensions
                   href: extensions-chromium/developer-guide/api-support.md
 
-                - name: Declare API permissions in extension manifests
+                - name: Declare API permissions in the manifest
                   href: extensions-chromium/developer-guide/declare-permissions.md
 
             - name: Policies for extensions
@@ -1123,7 +1123,7 @@
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
 
-            - name: Alternative ways to distribute extensions
+            - name: Alternative ways to distribute an extension
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
 
             - name: Curation and review process for the Edge Add-ons store
@@ -1151,7 +1151,7 @@
 
             - name: Reply to user reviews of an extension
               href: extensions-chromium/publish/reply-user-reviews.md
-              displayName: Respond to user reviews  # alt title word
+              displayName: Respond to user reviews  # alt title word "respond"
 
 #           - name: Connect with your customers  # how you can connect with your customers
 #             href:

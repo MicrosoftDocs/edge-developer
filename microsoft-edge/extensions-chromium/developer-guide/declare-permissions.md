@@ -1,5 +1,5 @@
 ---
-title: Declare API permissions in extension manifests
+title: Declare API permissions in the manifest
 description: Learn how to declare permissions for APIs in your manifest.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 06/23/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Declare API permissions in extension manifests
+# Declare API permissions in the manifest
 
 To use most of the `chrome.*` APIs, your extension must declare its intent in the `permissions` fields of the manifest.  An extension can declare permissions using a permission string from the table that follows, or use a pattern to match similar strings.  Permissions help to constrain your extension if it gets compromised by malware.  Some permissions are displayed to users for their consent before installation of the extension, or at runtime, as needed; these are Permission Warnings.
 
