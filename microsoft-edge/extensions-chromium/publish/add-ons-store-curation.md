@@ -67,5 +67,5 @@ Items are ranked for popularity based on user ratings at the store.
 <!-- ====================================================================== -->
 ## See also
 
-* [Developer policies for the Microsoft Edge Add-ons store](../store-policies/developer-policies.md)
+* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
 * [Content Security Policy (CSP)](../store-policies/csp.md)
