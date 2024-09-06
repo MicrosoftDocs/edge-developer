@@ -227,8 +227,10 @@ For reference information about each field, see [Manifest file format (V2)](http
 <!-- ====================================================================== -->
 ## See also
 
-* [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) in _Chrome Extensions_ > _Reference_.
-* [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) in _Chrome Extensions_ > _Reference_.<!-- todo: move link to be only on a single page about all V2 info -->
+<!-- all the links in article body: -->
+* [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)
+* [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) - V3, in _Chrome Extensions_ > _Reference_.
+* [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) in _Chrome Extensions_ > _Reference_.<!-- todo: move link to be only on a single page about all V2 info, remove "V3, " from above item -->
 
 
 <!-- ====================================================================== -->
@@ -238,9 +240,3 @@ For reference information about each field, see [Manifest file format (V2)](http
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-
-<!-- ====================================================================== -->
-## See also
-
-* [Overview of Microsoft Edge extensions](../index.md)
