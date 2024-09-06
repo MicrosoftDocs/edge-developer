@@ -947,7 +947,7 @@
 
                 - name: Update .css files from within the Styles tab (CSS mirror editing)
                   href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
-                  displayName: Syncing live changes from the Styles tool by using CSS mirror editing # previous title
+                  displayName: Syncing live changes from the Styles tool by using CSS mirror editing  # previous title
 
                 - name: Network tool integration
                   href: visual-studio-code/microsoft-edge-devtools-extension/network-tool-integration.md
@@ -981,9 +981,6 @@
     - name: Microsoft Edge extensions
       items:
 
-#       - name: Microsoft Edge Extension Documentation
-#         href:
-
         - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
 
@@ -992,7 +989,6 @@
           items:
             - name: Released features for Microsoft Edge Add-ons
               href: extensions-chromium/whats-new/released-features.md
-                  # add blogs
 
             - name: Roadmap for Microsoft Edge Add-ons
               href: extensions-chromium/whats-new/roadmap.md
@@ -1000,18 +996,8 @@
 # -------------------------------------
         - name: Get started
           items:
-            - name: Extension concepts and architecture  # add "What is an extension?"
+            - name: Extension concepts and architecture
               href: extensions-chromium/getting-started/index.md
-#                   What are Edge Add-ons?  Include Manifest File and permissions
-
-#           - name: Extension type and usage  # the types of extensions that can be built, basics & fundamentals
-#             href:
-
-#           - name: Why build an extension?   # why/when a dev or enterprise should build an extension
-#             href:
-
-#           - name: Introduction to Partner Center   # role/purpose of Partner Center, intro to using it
-#             href:
 
             - name: Create an extension tutorial, part 1
               href: extensions-chromium/getting-started/part1-simple-extension.md
@@ -1025,18 +1011,12 @@
 # -------------------------------------
         - name: Port an extension to Microsoft Edge
           items:
-            - name: Port a Chrome extension to Microsoft Edge  # moved from get started
+            - name: Port a Chrome extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
 
 # -------------------------------------
         - name: Develop an extension
           items:
-#           - name: Build your Edge Extension 101   # main page/ nav page for all the subpages below
-#             href:
-
-#           - name: Prerequisites to build an extension  # things required to build an extension
-#             href:
-
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
 
@@ -1048,7 +1028,7 @@
 
             - name: Extensions in the Microsoft Edge sidebar
               href: extensions-chromium/developer-guide/sidebar.md
-              displayName: sidebar extensions, sidepanel, side panel  # alt lookup phrase
+              displayName: sidebar extensions, sidepanel, side panel
 
             - name: Manifest files
               items:
@@ -1057,9 +1037,9 @@
 
                 - name: Using Content Security Policy (CSP) to control which resources can be run
                   href: extensions-chromium/developer-guide/csp.md
-                  displayName: policies  # synonym lookup
+                  displayName: policies
 
-                - name: Overview and timelines for migrating to Manifest V3  # overview of Manifest V3, and timeline for migrating
+                - name: Overview and timelines for migrating to Manifest V3
                   href: extensions-chromium/developer-guide/manifest-v3.md
 
                 - name: Migrate an extension from Manifest V2 to V3
@@ -1080,11 +1060,11 @@
               items:
                 - name: App Developer Agreement Addendum for Microsoft Edge program users
                   href: /legal/microsoft-edge/extensions/ada-addendum
-                  displayName: policy, policies  # synonym lookup
+                  displayName: policy, policies
 
                 - name: Developer policies for the Microsoft Edge Add-ons store
                   href: /legal/microsoft-edge/extensions/developer-policies
-                  displayName: policy  # synonym lookup
+                  displayName: policy
 
 # -------------------------------------
         - name: Publish an extension
@@ -1096,9 +1076,6 @@
 
             - name: Register as an enterprise developer
               items:
-#               - name: Register as a Microsoft Edge extension developer for Company Account
-#                 href:
-
                 - name: Verify your company account information
                   href: extensions-chromium/publish/verify-microsoft-edge-program.md
 
@@ -1110,9 +1087,6 @@
 
             - name: Publish a Microsoft Edge extension
               href: extensions-chromium/publish/publish-extension.md
-
-#           - name: Extension sharing offline
-#             href:
 
             - name: Extension hosting
               href: extensions-chromium/publish/hosting-and-updating.md
@@ -1151,58 +1125,19 @@
 
             - name: Reply to user reviews of an extension
               href: extensions-chromium/publish/reply-user-reviews.md
-              displayName: Respond to user reviews  # alt title word "respond"
-
-#           - name: Connect with your customers  # how you can connect with your customers
-#             href:
-
-#           - name: User ratings  # how User Ratings work, eg how region-wide users can see the review & ratings
-#             href:
-
-#           - name: Review process  # the review process for an extension that's submitted to add-ons site
-#             href:
-
-#           - name: Retire an extension  # how to uninstall or retire an extension
-#             href:
+              displayName: Respond to user reviews
 
 # -------------------------------------
         - name: Best practices
           items:
-#           - name: Checklist for publishing an extension
-#             href:
-
             - name: Best practices for extensions
               href: extensions-chromium/developer-guide/best-practices.md
-
-#           - name: Promote an extension
-#             href:
-
-#           - name: The Featured badge
-#             href:
-
-#           - name: Policy checklist
-#             href:
-
-#           - name: How to build non-impacting extensions  # things that can impact speed of browser and extension
-#             href:
-
-#           - name: Things to avoid, that can get an extension rejected
-#             href:
 
 # -------------------------------------
         - name: Samples
           items:
             - name: Samples for Microsoft Edge extensions
               href: extensions-chromium/samples.md
-
-#           - name: Sample extension using a content script
-#             href:
-
-#           - name: Sample extension using a service worker
-#             href:
-
-#           - name: Sample extension using the Sidepanel API
-#             href:
 
 # -------------------------------------
         - name: Contact the Microsoft Edge extensions team
