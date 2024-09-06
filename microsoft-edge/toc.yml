@@ -1057,6 +1057,7 @@
 
                 - name: Using Content Security Policy (CSP) to control which resources can be run by an extension
                   href: extensions-chromium/developer-guide/csp.md
+                  displayName: policies  # synonym lookup
 
                 - name: Overview and timelines for migrating to Manifest V3  # overview of Manifest V3, and timeline for migrating
                   href: extensions-chromium/developer-guide/manifest-v3.md
@@ -1079,9 +1080,11 @@
               items:
                 - name: App Developer Agreement Addendum for Microsoft Edge program users
                   href: extensions-chromium/store-policies/ada-addendum.md
+                  displayName: policy, policies  # synonym lookup
 
                 - name: Developer policies for the Microsoft Edge Add-ons store
                   href: extensions-chromium/store-policies/developer-policies.md
+                  displayName: policy  # synonym lookup
 
 # -------------------------------------
         - name: Publish an extension
