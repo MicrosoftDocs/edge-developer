@@ -245,12 +245,14 @@ description
 
 * item
 
+
 <!-- ---------- -->
 ###### Runtime-only
 
 * item
 
 * item
+
 
 <!-- ---------- -->
 ###### SDK-only
@@ -562,6 +564,7 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 ###### SDK-only
 
 * C# WinRT projection now works on UWP.
+
 * Fixed an issue to ensure that `GeneratedFilesDir` no longer appears in Visual Studio for C# WinRT projection.
 
 
