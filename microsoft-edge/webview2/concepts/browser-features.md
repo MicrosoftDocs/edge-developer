@@ -203,6 +203,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Open / Close DevTools | **Ctrl+Shift+I** |
 | Open DevTools Console | **Ctrl+Shift+J** |
 | Open DevTools Inspect | **Ctrl+Shift+C** |
+| Show Downloads | **Ctrl+J** |
 
 
 ### Customizing an individual key
