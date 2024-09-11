@@ -1,6 +1,6 @@
 ---
-title: Publish a Microsoft Edge extension by using a GitHub account
-description: Optionally log in to Partner Center by using your GitHub account credentials.
+title: Register and sign in to Partner Center using a GitHub account
+description: Optionally sign in to Partner Center by using your GitHub account credentials, to publish Microsoft Edge extensions (add-ons).
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 02/14/2024
 ---
-# Publish a Microsoft Edge extension by using a GitHub account
+# Register and sign in to Partner Center using a GitHub account
 
 If you're a GitHub user, you don't need to create a new Microsoft account (MSA) and remember extra passwords to sign into Partner Center.  You can use your personal GitHub credentials to sign into Partner Center and publish your Microsoft Edge extensions to the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home/) website.
 

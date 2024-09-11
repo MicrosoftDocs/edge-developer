@@ -1079,7 +1079,7 @@
                 - name: Add users to the Microsoft Edge program
                   href: extensions-chromium/publish/aad-account.md
 
-            - name: Publish a Microsoft Edge extension by using a GitHub account
+            - name: Register and sign in to Partner Center using a GitHub account
               href: extensions-chromium/publish/github.md
 
             - name: Publish a Microsoft Edge extension

@@ -44,7 +44,7 @@ If you don't have a Partner Center account, or you have a Partner Center account
 
 To create a Microsoft account (MSA):
 
-1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Publish a Microsoft Edge extension by using a GitHub account](github.md).
+1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Register and sign in to Partner Center using a GitHub account](github.md).
 
 1. If you aren't using your GitHub account to create the Microsoft account (MSA), see [account.microsoft.com](https://account.microsoft.com/account).
 
@@ -66,7 +66,7 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
 
 1.  If you have a Microsoft account (MSA), use it to sign into Partner Center.  A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.  Then fill in the Microsoft Edge program registration form, using the registration form in the next section.
 
-1.  If you don't have a Microsoft account (MSA), either create a new Microsoft account (MSA) directly, or sign in to Partner Center by using your GitHub account using the next step.  The Partner Center account must have a Primary Owner that's a Microsoft account (MSA).  If you want to sign in to Partner Center using your existing personal GitHub account, open [Publish a Microsoft Edge extension by using a GitHub account](github.md) in a new tab or window, and follow the steps in the article.  Your GitHub account will be linked to an automatically created Microsoft account (MSA) whose credentials you can use to register for the Microsoft Edge program.
+1.  If you don't have a Microsoft account (MSA), either create a new Microsoft account (MSA) directly, or sign in to Partner Center by using your GitHub account using the next step.  The Partner Center account must have a Primary Owner that's a Microsoft account (MSA).  If you want to sign in to Partner Center using your existing personal GitHub account, open [Register and sign in to Partner Center using a GitHub account](github.md) in a new tab or window, and follow the steps in the article.  Your GitHub account will be linked to an automatically created Microsoft account (MSA) whose credentials you can use to register for the Microsoft Edge program.
 
 1.  After you sign in, a registration form is displayed, to enroll in the Microsoft Edge program.  To help you fill in the registration form, see the next section.
 
