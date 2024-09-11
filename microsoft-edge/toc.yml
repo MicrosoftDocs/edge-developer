@@ -1026,7 +1026,7 @@
             - name: Create an extension that customizes the DevTools UI
               href: extensions-chromium/developer-guide/devtools-extension.md
 
-            - name: Extensions in the Microsoft Edge sidebar
+            - name: Develop an extension for the Microsoft Edge sidebar
               href: extensions-chromium/developer-guide/sidebar.md
               displayName: sidebar extensions, sidepanel, side panel
 

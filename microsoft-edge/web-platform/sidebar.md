@@ -48,8 +48,8 @@ To learn more about PWAs and how to create them, see [Overview of Progressive We
 <!-- ====================================================================== -->
 ## Sidebar extensions
 
-Microsoft Edge extensions can optionally use the sidebar API to show a custom UI in the sidebar in Microsoft Edge. This is in addition to the other places extensions also appear in, such as in the Microsoft Edge toolbar, or as popups.
+Microsoft Edge extensions (add-ons) can optionally use the sidebar API to show a custom UI in the sidebar in Microsoft Edge. This is in addition to the other places extensions also appear in, such as in the Microsoft Edge toolbar, or as popups.
 
 If your app's experience relies on powerful extensions APIs, for example to read or modify the current page, then a sidebar extension provides these capabilities. Users can find and install these extensions through the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home). The Microsoft Edge team continues to evolve these sidebar extensibility models and welcomes your feedback. To leave feedback, [create a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new/) on the repo, or [search for existing issues](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues) and join existing conversations.
 
-To learn more about Microsoft Edge extensions and how to create them, see [Overview of Microsoft Edge extensions](../extensions-chromium/index.md). And to learn more about using the sidebar API in your extension, see [Extensions in the Microsoft Edge sidebar](../extensions-chromium/developer-guide/sidebar.md).
+To learn more about Microsoft Edge extensions and how to create them, see [Overview of Microsoft Edge extensions](../extensions-chromium/index.md). And to learn more about using the sidebar API in your extension, see [Develop an extension for the Microsoft Edge sidebar](../extensions-chromium/developer-guide/sidebar.md).
