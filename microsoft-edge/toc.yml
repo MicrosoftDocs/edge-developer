@@ -1017,19 +1017,6 @@
 # -------------------------------------
         - name: Develop an extension
           items:
-            - name: Native messaging
-              href: extensions-chromium/developer-guide/native-messaging.md
-
-            - name: Defining match patterns for an extension to access file URLs
-              href: extensions-chromium/developer-guide/match-patterns.md
-
-            - name: Create an extension that customizes the DevTools UI
-              href: extensions-chromium/developer-guide/devtools-extension.md
-
-            - name: Develop an extension for the Microsoft Edge sidebar
-              href: extensions-chromium/developer-guide/sidebar.md
-              displayName: sidebar extensions, sidepanel, side panel
-
             - name: Manifest files
               items:
                 - name: Manifest file format for extensions
@@ -1052,6 +1039,19 @@
 
                 - name: Declare API permissions in the manifest
                   href: extensions-chromium/developer-guide/declare-permissions.md
+
+            - name: Create an extension that customizes the DevTools UI
+              href: extensions-chromium/developer-guide/devtools-extension.md
+
+            - name: Develop an extension for the Microsoft Edge sidebar
+              href: extensions-chromium/developer-guide/sidebar.md
+              displayName: sidebar extensions, sidepanel, side panel
+
+            - name: Native messaging
+              href: extensions-chromium/developer-guide/native-messaging.md
+
+            - name: Defining match patterns for an extension to access file URLs
+              href: extensions-chromium/developer-guide/match-patterns.md
 
             - name: Policies for extensions
               items:
