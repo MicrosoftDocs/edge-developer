@@ -35,6 +35,9 @@ metadata:
 # =============================================================================
 landingContent:
 
+# todo: convert PR2899 toc to cards
+# https://github.com/MicrosoftDocs/edge-developer/pull/2899/files#diff-ee2ce4f25251cfbee0656b0e57a5e2400000a29db0a53f90a9584f61985b583e
+
 # =============================================================================
 # Card r1c1
   - title: Getting started with DevTools
