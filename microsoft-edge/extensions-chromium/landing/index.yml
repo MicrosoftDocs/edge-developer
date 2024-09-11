@@ -1,0 +1,202 @@
+### YamlMime:Landing
+# landing page for Extensions portion of docset
+title: Microsoft Edge Extensions documentation
+summary: Develop an extension (add-on) for Microsoft Edge.
+
+metadata:
+  # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
+  # description: default to root title above. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-edge
+  ms.subservice: extensions
+  ms.topic: landing-page
+  # ms.collection: collection # Optional; Remove if no collection is used.
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 02/15/2024
+
+# =============================================================================
+# Valid article types (sections of a card)
+
+      # - linkListType: architecture
+      # - linkListType: concept
+      # - linkListType: deploy
+      # - linkListType: download
+      # - linkListType: get-started
+      # - linkListType: how-to-guide
+      # - linkListType: learn
+      # - linkListType: overview
+      # - linkListType: quickstart
+      # - linkListType: reference
+      # - linkListType: sample
+      # - linkListType: tutorial
+      # - linkListType: video
+      # - linkListType: whats-new
+
+# =============================================================================
+landingContent:
+
+# =============================================================================
+# Card r1c1
+  - title: Getting started with DevTools
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Overview of DevTools
+            url: ../../devtools-guide-chromium/overview.md
+
+          - text: Change DevTools placement (Undock, Dock to bottom, Dock to left)
+            url: ../../devtools-guide-chromium/customize/placement.md
+
+          - text: Run commands in the Command Menu
+            url: ../../devtools-guide-chromium/command-menu/index.md
+
+          - text: Console overview
+            url: ../../devtools-guide-chromium/console/index.md
+      - linkListType: whats-new
+        links:
+          - text: What's New in Microsoft Edge DevTools
+            url: ../../devtools-guide-chromium/whats-new/whats-new.md
+
+          - text: Contact the Microsoft Edge DevTools team
+            url: ../../devtools-guide-chromium/contact.md
+
+# =============================================================================
+# Card r1c2
+  - title: Customizing DevTools
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Customize DevTools
+            url: ../../devtools-guide-chromium/customize/index.md
+
+          - text: Apply a color theme to DevTools
+            url: ../../devtools-guide-chromium/customize/theme.md
+      - linkListType: whats-new
+        links:
+          - text: Experimental features in Microsoft Edge DevTools
+            url: ../../devtools-guide-chromium/experimental-features/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Change DevTools language settings
+            url: ../../devtools-guide-chromium/customize/localization.md
+
+          - text: Customize keyboard shortcuts
+            url: ../../devtools-guide-chromium/customize/shortcuts.md
+
+# =============================================================================
+# Card r1c3
+  - title: Debugging web projects
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Analyze pages using the Inspect tool
+            url: ../../devtools-guide-chromium/css/inspect.md
+      - linkListType: tutorial
+        links:
+          - text: Get started viewing and changing CSS
+            url: ../../devtools-guide-chromium/css/index.md
+
+          - text: Get started viewing and changing the DOM
+            url: ../../devtools-guide-chromium/dom/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Find and fix problems using the Issues tool
+            url: ../../devtools-guide-chromium/issues/index.md
+
+          - text: Navigate webpage layers, z-index, and DOM using the 3D View tool
+            url: ../../devtools-guide-chromium/3d-view/index.md
+
+          - text: Inspect animations
+            url: ../../devtools-guide-chromium/inspect-styles/animations.md
+
+          - text: Debug Progressive Web Apps (PWAs)
+            url: ../../devtools-guide-chromium/progressive-web-apps/index.md
+
+          - text: Inspect network activity
+            url: ../../devtools-guide-chromium/network/index.md
+
+# =============================================================================
+# Card r2c1
+  - title: Emulation and Testing
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Emulate mobile devices (Device Emulation)
+            url: ../../devtools-guide-chromium/device-mode/index.md
+
+          - text: Accessibility-testing features
+            url: ../../devtools-guide-chromium/accessibility/reference.md
+
+          - text: Emulate dark or light schemes in the rendered page
+            url: ../../devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+
+          - text: Test keyboard support using the Source Order Viewer
+            url: ../../devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
+
+          - text: Force print preview mode
+            url: ../../devtools-guide-chromium/css/print-preview.md
+
+          - text: Emulate vision deficiencies
+            url: ../../devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
+
+          - text: Simulate reduced motion
+            url: ../../devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+
+# =============================================================================
+# Card r2c2
+  - title: JavaScript and performance
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Run JavaScript in the Console
+            url: ../../devtools-guide-chromium/console/console-javascript.md
+
+          - text: Fix JavaScript errors that are reported in the Console
+            url: ../../devtools-guide-chromium/console/console-debug-javascript.md
+
+          - text: Sources tool overview
+            url: ../../devtools-guide-chromium/sources/index.md
+
+          - text: JavaScript debugging features
+            url: ../../devtools-guide-chromium/javascript/reference.md
+
+          - text: Find unused JavaScript and CSS code with the Coverage tool
+            url: ../../devtools-guide-chromium/coverage/index.md
+
+          - text: Fix memory problems
+            url: ../../devtools-guide-chromium/memory-problems/index.md
+
+          - text: Debug DOM memory leaks with the Detached Elements tool
+            url: ../../devtools-guide-chromium/memory-problems/dom-leaks.md
+
+          - text: Understand security issues using the Security tool
+            url: ../../devtools-guide-chromium/security/index.md
+
+          - text: Troubleshooting common performance issues
+            url: ../../devtools-guide-chromium/rendering-tools/index.md
+
+# =============================================================================
+# Card r2c3
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Keyboard shortcuts
+            url: ../../devtools-guide-chromium/shortcuts/index.md
+
+          - text: CSS features reference
+            url: ../../devtools-guide-chromium/css/reference.md
+
+          - text: Console features reference
+            url: ../../devtools-guide-chromium/console/reference.md
+
+          - text: Console object API Reference
+            url: ../../devtools-guide-chromium/console/api.md
+      - linkListType: how-to-guide
+        links:
+          - text: Performance features reference
+            url: ../../devtools-guide-chromium/evaluate-performance/reference.md
+      - linkListType: sample
+        links:
+          - text: Sample code for DevTools
+            url: ../../devtools-guide-chromium/sample-code/sample-code.md
