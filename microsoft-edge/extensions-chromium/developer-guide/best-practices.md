@@ -1,5 +1,5 @@
 ---
-title: Best Practices for extensions
+title: Best practices for extensions
 description: Best Practices to implement an extension and list it on the Microsoft Edge Add-ons Store.  
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/20/2023
 ---
-# Best Practices for extensions
+# Best practices for extensions
 
 Follow these Best Practices to implement your extension and list it on the Microsoft Edge Add-ons Store.
 

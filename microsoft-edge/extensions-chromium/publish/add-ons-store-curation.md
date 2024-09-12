@@ -40,7 +40,7 @@ The quality and compliance of the item that is displayed on the Edge Add-ons sto
 Items violating the policy guidelines are not allowed in the store. There is a standard review process for each new item submission and new versions of items, per the developer policies.
 
 See also:
-* [Content Security Policy (CSP)](../store-policies/csp.md)
+* [Using Content Security Policy (CSP) to control which resources can be run](../developer-guide/csp.md)
 
 
 <!-- ====================================================================== -->
@@ -67,5 +67,5 @@ Items are ranked for popularity based on user ratings at the store.
 <!-- ====================================================================== -->
 ## See also
 
+* [Using Content Security Policy (CSP) to control which resources can be run](../developer-guide/csp.md)
 * [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
-* [Content Security Policy (CSP)](../store-policies/csp.md)
