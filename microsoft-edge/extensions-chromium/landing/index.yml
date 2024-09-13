@@ -69,14 +69,11 @@ landingContent:
 
 # =============================================================================
 # Card r1c2
-  - title: Develop an extension
+  - title: Manifests and JavaScript APIs
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Port a Chrome extension to Microsoft Edge
-            url: ../developer-guide/port-chrome-extension.md
-
-          - text: Overview and timelines for migrating to Manifest V3
+         - text: Overview and timelines for migrating to Manifest V3
             url: ../developer-guide/manifest-v3.md
 
           - text: Migrate an extension from Manifest V2 to V3
@@ -96,6 +93,15 @@ landingContent:
           - text: Using Content Security Policy (CSP) to control which resources can be run
             url: ../developer-guide/csp.md
 
+# =============================================================================
+# Card r1c3
+  - title: Develop an extension
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Port a Chrome extension to Microsoft Edge
+            url: ../developer-guide/port-chrome-extension.md
+ 
       - linkListType: concept
         links:
           - text: Create an extension that customizes the DevTools UI
@@ -119,7 +125,7 @@ landingContent:
             url: /legal/microsoft-edge/extensions/developer-policies
 
 # =============================================================================
-# Card r1c3
+# Card r2c1
   - title: Register
     linkLists:
       - linkListType: how-to-guide
@@ -137,7 +143,7 @@ landingContent:
             url: ../publish/github.md
 
 # =============================================================================
-# Card r2c1
+# Card r2c2
   - title: Publish an extension
     linkLists:
       - linkListType: deploy
@@ -163,7 +169,7 @@ landingContent:
             url: ../publish/add-ons-store-curation.md
 
 # =============================================================================
-# Card r2c2
+# Card r2c3
   - title: Update an extension
     linkLists:
       - linkListType: how-to-guide
@@ -183,7 +189,7 @@ landingContent:
             url: ../publish/api/addons-api-reference.md
 
 # =============================================================================
-# Card r2c3
+# Card r3c1
   - title: Analytics and reviews
     linkLists:
       - linkListType: how-to-guide
@@ -195,7 +201,7 @@ landingContent:
             url: ../publish/reply-user-reviews.md
 
 # =============================================================================
-# Card r3c1
+# Card r3c2
   - title: Best practices and samples
     linkLists:
       - linkListType: overview
