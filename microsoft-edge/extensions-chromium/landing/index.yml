@@ -45,27 +45,27 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Overview of Microsoft Edge extensions
-            url: ./extensions-chromium/index.md
+            url: ../index.md
 
           - text: Extension concepts and architecture
-            url: ./extensions-chromium/getting-started/index.md
+            url: ../getting-started/index.md
 
           - text: Create an extension tutorial, part 1
-            url: ./extensions-chromium/getting-started/part1-simple-extension.md
+            url: ../getting-started/part1-simple-extension.md
 
           - text: Create an extension tutorial, part 2
-            url: ./extensions-chromium/getting-started/part2-content-scripts.md
+            url: ../getting-started/part2-content-scripts.md
 
           - text: Sideload an extension
-            url: ./extensions-chromium/getting-started/extension-sideloading.md
+            url: ../getting-started/extension-sideloading.md
 
       - linkListType: whats-new
         links:
           - text: Released features for Microsoft Edge Add-ons
-            url: ./extensions-chromium/whats-new/released-features.md
+            url: ../whats-new/released-features.md
 
           - text: Roadmap for Microsoft Edge Add-ons
-            url: ./extensions-chromium/whats-new/roadmap.md
+            url: ../whats-new/roadmap.md
 
 # =============================================================================
 # Card r1c2
@@ -74,41 +74,41 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Port a Chrome extension to Microsoft Edge
-            url: ./extensions-chromium/developer-guide/port-chrome-extension.md
+            url: ../developer-guide/port-chrome-extension.md
 
           - text: Overview and timelines for migrating to Manifest V3
-            url: ./extensions-chromium/developer-guide/manifest-v3.md
+            url: ../developer-guide/manifest-v3.md
 
           - text: Migrate an extension from Manifest V2 to V3
-            url: ./extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+            url: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
 
           - text: Supported APIs for Microsoft Edge extensions
-            url: ./extensions-chromium/developer-guide/api-support.md
+            url: ../developer-guide/api-support.md
 
           - text: Declare API permissions in the manifest
-            url: ./extensions-chromium/developer-guide/declare-permissions.md
+            url: ../developer-guide/declare-permissions.md
 
       - linkListType: reference
         links:
           - text: Manifest file format for extensions
-            url: ./extensions-chromium/getting-started/manifest-format.md
+            url: ../getting-started/manifest-format.md
 
           - text: Using Content Security Policy (CSP) to control which resources can be run
-            url: ./extensions-chromium/developer-guide/csp.md
+            url: ../developer-guide/csp.md
 
       - linkListType: concept
         links:
           - text: Create an extension that customizes the DevTools UI
-            url: ./extensions-chromium/developer-guide/devtools-extension.md
+            url: ../developer-guide/devtools-extension.md
 
           - text: Develop an extension for the Microsoft Edge sidebar
-            url: ./extensions-chromium/developer-guide/sidebar.md
+            url: ../developer-guide/sidebar.md
 
           - text: Native messaging
-            url: ./extensions-chromium/developer-guide/native-messaging.md
+            url: ../developer-guide/native-messaging.md
 
           - text: Defining match patterns for an extension to access file URLs
-            url: ./extensions-chromium/developer-guide/match-patterns.md
+            url: ../developer-guide/match-patterns.md
 
       - linkListType: deploy
         links:
@@ -125,16 +125,16 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Register as a Microsoft Edge extension developer
-            url: ./extensions-chromium/publish/create-dev-account.md
+            url: ../publish/create-dev-account.md
 
           - text: Verify your company account information  # enterprise
-            url: ./extensions-chromium/publish/verify-microsoft-edge-program.md
+            url: ../publish/verify-microsoft-edge-program.md
 
           - text: Add users to the Microsoft Edge program  # enterprise
-            url: ./extensions-chromium/publish/aad-account.md
+            url: ../publish/aad-account.md
 
           - text: Register and sign in to Partner Center using a GitHub account
-            url: ./extensions-chromium/publish/github.md
+            url: ../publish/github.md
 
 # =============================================================================
 # Card r2c1
@@ -143,24 +143,24 @@ landingContent:
       - linkListType: deploy
         links:
           - text: Publish a Microsoft Edge extension
-            url: ./extensions-chromium/publish/publish-extension.md
+            url: ../publish/publish-extension.md
 
           - text: Extension hosting
-            url: ./extensions-chromium/publish/hosting-and-updating.md
+            url: ../publish/hosting-and-updating.md
 
           - text: Submission states for extensions in the Microsoft Edge Add-ons website
-            url: ./extensions-chromium/publish/submission-states.md
+            url: ../publish/submission-states.md
 
           - text: Manage account settings
-            url: ./extensions-chromium/publish/manage-settings.md
+            url: ../publish/manage-settings.md
 
           - text: Alternative ways to distribute an extension
-            url: ./extensions-chromium/developer-guide/alternate-distribution-options.md
+            url: ../developer-guide/alternate-distribution-options.md
 
       - linkListType: concept
         links:
           - text: Curation and review process for the Edge Add-ons store
-            url: ./extensions-chromium/publish/add-ons-store-curation.md
+            url: ../publish/add-ons-store-curation.md
 
 # =============================================================================
 # Card r2c2
@@ -169,18 +169,18 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Update a Microsoft Edge extension
-            url: ./extensions-chromium/publish/update-extension.md
+            url: ../publish/update-extension.md
 
           - text: Automatically update an extension in Microsoft Edge
-            url: ./extensions-chromium/publish/auto-update.md
+            url: ../publish/auto-update.md
 
       - linkListType: reference
         links:
           - text: Using the Microsoft Edge Add-ons REST API
-            url: ./extensions-chromium/publish/api/using-addons-api.md
+            url: ../publish/api/using-addons-api.md
 
           - text: REST API Reference for Microsoft Edge Add-ons
-            url: ./extensions-chromium/publish/api/addons-api-reference.md
+            url: ../publish/api/addons-api-reference.md
 
 # =============================================================================
 # Card r2c3
@@ -189,11 +189,10 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: View Microsoft Edge extensions analytics dashboard
-            url: ./extensions-chromium/publish/extensions-analytics.md
+            url: ../publish/extensions-analytics.md
 
           - text: Reply to user reviews of an extension
-            url: ./extensions-chromium/publish/reply-user-reviews.md
-            displayName: Respond to user reviews
+            url: ../publish/reply-user-reviews.md
 
 # =============================================================================
 # Card r3c1
@@ -202,9 +201,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Best practices for extensions
-            url: ./extensions-chromium/developer-guide/best-practices.md
+            url: ../developer-guide/best-practices.md
 
       - linkListType: sample
         links:
           - text: Samples for Microsoft Edge extensions
-            url: ./extensions-chromium/samples.md
+            url: ../samples.md
