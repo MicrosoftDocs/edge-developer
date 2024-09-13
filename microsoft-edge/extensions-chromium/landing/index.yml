@@ -129,7 +129,7 @@ landingContent:
 
 # =============================================================================
 # Card r2c1
-  - title: Register
+  - title: Register as a developer
     linkLists:
       - linkListType: how-to-guide
         links:
