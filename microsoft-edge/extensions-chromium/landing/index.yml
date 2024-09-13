@@ -73,7 +73,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-         - text: Overview and timelines for migrating to Manifest V3
+          - text: Overview and timelines for migrating to Manifest V3
             url: ../developer-guide/manifest-v3.md
 
           - text: Migrate an extension from Manifest V2 to V3
