@@ -60,7 +60,7 @@ You can generate multiple client secrets for your client ID.  For example, you c
 
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the **Before you begin** steps above.
 
-```rest
+```REST
 Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2.0/token
 Type: POST
 Header Parameters: Content-Type: application/x-www-form-urlencoded
@@ -113,7 +113,7 @@ The API is available at the endpoint `https://api.addons.microsoftedge.microsoft
 
 Use this API to update the package for an add-on.  This API uploads a package to update an existing draft submission of an add-on product.
 
-```rest
+```REST
 Endpoint: /v1/products/$productID/submissions/draft/package
 Type: POST
 Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
@@ -160,7 +160,7 @@ See also:
 
 Use this API to check the status of package upload.
 
-```rest
+```REST
 Endpoint: /v1/products/$productID/submissions/draft/package/operations/$operationID
 Type: GET
 Header Parameters: Authorization: Bearer $TOKEN
@@ -188,7 +188,7 @@ See also:
 
 Use this API to publish the current draft of the product to the Microsoft Edge Add-ons website.
 
-```rest
+```REST
 Endpoint: /v1/products/$productID/submissions
 Type: POST
 Header Parameters: Authorization: Bearer $TOKEN
@@ -219,7 +219,7 @@ See also:
 
 Use this API to check the status of the publish operation.
 
-```rest
+```REST
 Endpoint: /v1/products/$productID/submissions/operations/$operationID
 Type: GET
 Header Parameters: Authorization: Bearer $TOKEN
