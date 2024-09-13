@@ -66,6 +66,8 @@ Type: POST
 Header Parameters: Content-Type: application/x-www-form-urlencoded
 ```
 
+
+<!-- ---------------------------------- -->
 #### Sample request
 
 ```console
@@ -80,6 +82,8 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2.0/token
 ```
 
+
+<!-- ---------------------------------- -->
 #### Sample response
 
 ```json
@@ -90,7 +94,7 @@ https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2
 }
 ```
 
-For more information, see [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token).
+For more information, see [Get a token](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) in _Microsoft identity platform and the OAuth 2.0 client credentials flow_.
 
 
 <!-- ====================================================================== -->
@@ -130,6 +134,8 @@ Follow these steps to get the product ID:
  
 1. In the **Extension identity** section (or from the Address bar), select and copy the **Product ID**.
 
+
+<!-- ---------------------------------- -->
 #### Sample request
 
 ```console
@@ -146,7 +152,7 @@ If the request succeeds and the update process begins, you receive a `202 Accept
 
 
 See also:
-*  API Reference: [Upload a package to update an existing submission](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
+* [Upload a package to update an existing submission](./addons-api-reference.md#upload-a-package-to-update-an-existing-submission) in _Using the Microsoft Edge Add-ons REST API_.
 
 
 <!-- ====================================================================== -->
@@ -160,6 +166,8 @@ Type: GET
 Header Parameters: Authorization: Bearer $TOKEN
 ```
 
+
+<!-- ---------------------------------- -->
 #### Sample request
 
 ```console
@@ -172,7 +180,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 
 See also:
-*  API Reference: [Check the status of a package upload](addons-api-reference.md#check-the-status-of-a-package-upload)
+* [Check the status of a package upload](./addons-api-reference.md#check-the-status-of-a-package-upload) in _Using the Microsoft Edge Add-ons REST API_.
 
 
 <!-- ====================================================================== -->
@@ -187,6 +195,8 @@ Header Parameters: Authorization: Bearer $TOKEN
 Body content: Notes for certification, in JSON format
 ```
 
+
+<!-- ---------------------------------- -->
 #### Sample request
 
 ```console
@@ -200,9 +210,8 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 If the request succeeds and the publishing process begins, you'll receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` that's required for checking the status of the publish operation.
 
-
 See also:
-*  API Reference: [Publish the product draft submission](addons-api-reference.md#publish-the-product-draft-submission)
+* [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _Using the Microsoft Edge Add-ons REST API_.
 
 
 <!-- ====================================================================== -->
@@ -216,6 +225,8 @@ Type: GET
 Header Parameters: Authorization: Bearer $TOKEN
 ```
 
+
+<!-- ---------------------------------- -->
 #### Sample request
 
 ```console
@@ -226,12 +237,15 @@ Header Parameters: Authorization: Bearer $TOKEN
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
 ```
 
-
 See also:
-*  [Using the Microsoft Edge Add-ons REST API: Check the publishing status](addons-api-reference.md#check-the-publishing-status)
+* [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _Using the Microsoft Edge Add-ons REST API_.
 
 
 <!-- ====================================================================== -->
 ## See also
 
+<!-- all article-level links in article body: -->
+* [Using the Microsoft Edge Add-ons REST API](./addons-api-reference.md)
+* [Issues](https://github.com/MicrosoftDocs/edge-developer/issues/) in `edge-developer` Docs repo.
+* [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 * [Supported APIs for Microsoft Edge extensions](../../developer-guide/api-support.md) - JavaScript APIs for developing an extension.

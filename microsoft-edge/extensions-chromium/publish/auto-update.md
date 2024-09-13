@@ -22,6 +22,19 @@ ms.date: 11/04/2022
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Automatically update an extension in Microsoft Edge
+<!-- alts:
+# Autoupdate
+# Set an extension to automatically update
+# Automatically update an extension
+-->
+
+<!-- todo: reduce use of alerts; rewrite all Note alerts as standard headings & body text -->
+
+<!-- todo: rewrite Note content as standard positive intro:
+Use X to do Y.
+To do Z, see W.
+fix title & first paragraph's intro so that this off-topic content is not required.
+-->
 
 > [!NOTE]
 > This article doesn't apply to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You can use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).
@@ -33,11 +46,15 @@ When you set your extension to automatically update on users' machines, your ext
 *   Improve the user interface.
 
 Previously, non-store based extensions were supported.  Also, previously, you updated the native binaries and the extension at the same time.  Now, the Microsoft Edge Add-ons website hosts your extensions and you can update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism. 
+
 > [!IMPORTANT]
 > Be careful when you update extensions that have a dependency on native binaries.
 
+
 <!-- ====================================================================== -->
 ## Overview
+
+<!-- todo: move to top of article per standard intro, w/o heading.  progressive disclosure -->
 
 Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  To specify an update URL for your extension, use the `update_url` field in the manifest.  The `update_url` field in the manifest points to a location that can complete an update check.  For each `update_url`, this URL sends requests for updated manifest XML files.  If the update manifest XML file lists a newer extension or app version, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.
 

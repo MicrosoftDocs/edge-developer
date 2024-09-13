@@ -183,11 +183,11 @@ landingContent:
           - text: Automatically update an extension in Microsoft Edge
             url: ../publish/auto-update.md
 
-      - linkListType: reference
-        links:
           - text: Using the Microsoft Edge Add-ons REST API
             url: ../publish/api/using-addons-api.md
 
+      - linkListType: reference
+        links:
           - text: REST API Reference for Microsoft Edge Add-ons
             url: ../publish/api/addons-api-reference.md
 
