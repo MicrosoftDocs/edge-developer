@@ -40,166 +40,171 @@ landingContent:
 
 # =============================================================================
 # Card r1c1
-  - title: Getting started with DevTools
+  - title: Get started
     linkLists:
       - linkListType: get-started
         links:
-          - text: Overview of DevTools
-            url: ../../devtools-guide-chromium/overview.md
+          - text: Overview of Microsoft Edge extensions
+            url: ./extensions-chromium/index.md
 
-          - text: Change DevTools placement (Undock, Dock to bottom, Dock to left)
-            url: ../../devtools-guide-chromium/customize/placement.md
+          - text: Extension concepts and architecture
+            url: ./extensions-chromium/getting-started/index.md
 
-          - text: Run commands in the Command Menu
-            url: ../../devtools-guide-chromium/command-menu/index.md
+          - text: Create an extension tutorial, part 1
+            url: ./extensions-chromium/getting-started/part1-simple-extension.md
 
-          - text: Console overview
-            url: ../../devtools-guide-chromium/console/index.md
+          - text: Create an extension tutorial, part 2
+            url: ./extensions-chromium/getting-started/part2-content-scripts.md
+
+          - text: Sideload an extension
+            url: ./extensions-chromium/getting-started/extension-sideloading.md
+
       - linkListType: whats-new
         links:
-          - text: What's New in Microsoft Edge DevTools
-            url: ../../devtools-guide-chromium/whats-new/whats-new.md
+          - text: Released features for Microsoft Edge Add-ons
+            url: ./extensions-chromium/whats-new/released-features.md
 
-          - text: Contact the Microsoft Edge DevTools team
-            url: ../../devtools-guide-chromium/contact.md
+          - text: Roadmap for Microsoft Edge Add-ons
+            url: ./extensions-chromium/whats-new/roadmap.md
 
 # =============================================================================
 # Card r1c2
-  - title: Customizing DevTools
+  - title: Develop an extension
     linkLists:
-      - linkListType: get-started
-        links:
-          - text: Customize DevTools
-            url: ../../devtools-guide-chromium/customize/index.md
-
-          - text: Apply a color theme to DevTools
-            url: ../../devtools-guide-chromium/customize/theme.md
-      - linkListType: whats-new
-        links:
-          - text: Experimental features in Microsoft Edge DevTools
-            url: ../../devtools-guide-chromium/experimental-features/index.md
       - linkListType: how-to-guide
         links:
-          - text: Change DevTools language settings
-            url: ../../devtools-guide-chromium/customize/localization.md
+          - text: Port a Chrome extension to Microsoft Edge
+            url: ./extensions-chromium/developer-guide/port-chrome-extension.md
 
-          - text: Customize keyboard shortcuts
-            url: ../../devtools-guide-chromium/customize/shortcuts.md
+          - text: Overview and timelines for migrating to Manifest V3
+            url: ./extensions-chromium/developer-guide/manifest-v3.md
+
+          - text: Migrate an extension from Manifest V2 to V3
+            url: ./extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+
+          - text: Supported APIs for Microsoft Edge extensions
+            url: ./extensions-chromium/developer-guide/api-support.md
+
+          - text: Declare API permissions in the manifest
+            url: ./extensions-chromium/developer-guide/declare-permissions.md
+
+      - linkListType: reference
+        links:
+          - text: Manifest file format for extensions
+            url: ./extensions-chromium/getting-started/manifest-format.md
+
+          - text: Using Content Security Policy (CSP) to control which resources can be run
+            url: ./extensions-chromium/developer-guide/csp.md
+
+      - linkListType: concept
+        links:
+          - text: Create an extension that customizes the DevTools UI
+            url: ./extensions-chromium/developer-guide/devtools-extension.md
+
+          - text: Develop an extension for the Microsoft Edge sidebar
+            url: ./extensions-chromium/developer-guide/sidebar.md
+
+          - text: Native messaging
+            url: ./extensions-chromium/developer-guide/native-messaging.md
+
+          - text: Defining match patterns for an extension to access file URLs
+            url: ./extensions-chromium/developer-guide/match-patterns.md
+
+      - linkListType: deploy
+        links:
+          - text: App Developer Agreement Addendum for Microsoft Edge program users
+            url: /legal/microsoft-edge/extensions/ada-addendum
+
+          - text: Developer policies for the Microsoft Edge Add-ons store
+            url: /legal/microsoft-edge/extensions/developer-policies
 
 # =============================================================================
 # Card r1c3
-  - title: Debugging web projects
+  - title: Register
     linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Analyze pages using the Inspect tool
-            url: ../../devtools-guide-chromium/css/inspect.md
-      - linkListType: tutorial
-        links:
-          - text: Get started viewing and changing CSS
-            url: ../../devtools-guide-chromium/css/index.md
-
-          - text: Get started viewing and changing the DOM
-            url: ../../devtools-guide-chromium/dom/index.md
       - linkListType: how-to-guide
         links:
-          - text: Find and fix problems using the Issues tool
-            url: ../../devtools-guide-chromium/issues/index.md
+          - text: Register as a Microsoft Edge extension developer
+            url: ./extensions-chromium/publish/create-dev-account.md
 
-          - text: Navigate webpage layers, z-index, and DOM using the 3D View tool
-            url: ../../devtools-guide-chromium/3d-view/index.md
+          - text: Verify your company account information  # enterprise
+            url: ./extensions-chromium/publish/verify-microsoft-edge-program.md
 
-          - text: Inspect animations
-            url: ../../devtools-guide-chromium/inspect-styles/animations.md
+          - text: Add users to the Microsoft Edge program  # enterprise
+            url: ./extensions-chromium/publish/aad-account.md
 
-          - text: Debug Progressive Web Apps (PWAs)
-            url: ../../devtools-guide-chromium/progressive-web-apps/index.md
-
-          - text: Inspect network activity
-            url: ../../devtools-guide-chromium/network/index.md
+          - text: Register and sign in to Partner Center using a GitHub account
+            url: ./extensions-chromium/publish/github.md
 
 # =============================================================================
 # Card r2c1
-  - title: Emulation and Testing
+  - title: Publish an extension
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: deploy
         links:
-          - text: Emulate mobile devices (Device Emulation)
-            url: ../../devtools-guide-chromium/device-mode/index.md
+          - text: Publish a Microsoft Edge extension
+            url: ./extensions-chromium/publish/publish-extension.md
 
-          - text: Accessibility-testing features
-            url: ../../devtools-guide-chromium/accessibility/reference.md
+          - text: Extension hosting
+            url: ./extensions-chromium/publish/hosting-and-updating.md
 
-          - text: Emulate dark or light schemes in the rendered page
-            url: ../../devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+          - text: Submission states for extensions in the Microsoft Edge Add-ons website
+            url: ./extensions-chromium/publish/submission-states.md
 
-          - text: Test keyboard support using the Source Order Viewer
-            url: ../../devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
+          - text: Manage account settings
+            url: ./extensions-chromium/publish/manage-settings.md
 
-          - text: Force print preview mode
-            url: ../../devtools-guide-chromium/css/print-preview.md
+          - text: Alternative ways to distribute an extension
+            url: ./extensions-chromium/developer-guide/alternate-distribution-options.md
 
-          - text: Emulate vision deficiencies
-            url: ../../devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-
-          - text: Simulate reduced motion
-            url: ../../devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+      - linkListType: concept
+        links:
+          - text: Curation and review process for the Edge Add-ons store
+            url: ./extensions-chromium/publish/add-ons-store-curation.md
 
 # =============================================================================
 # Card r2c2
-  - title: JavaScript and performance
+  - title: Update an extension
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Run JavaScript in the Console
-            url: ../../devtools-guide-chromium/console/console-javascript.md
+          - text: Update a Microsoft Edge extension
+            url: ./extensions-chromium/publish/update-extension.md
 
-          - text: Fix JavaScript errors that are reported in the Console
-            url: ../../devtools-guide-chromium/console/console-debug-javascript.md
+          - text: Automatically update an extension in Microsoft Edge
+            url: ./extensions-chromium/publish/auto-update.md
 
-          - text: Sources tool overview
-            url: ../../devtools-guide-chromium/sources/index.md
+      - linkListType: reference
+        links:
+          - text: Using the Microsoft Edge Add-ons REST API
+            url: ./extensions-chromium/publish/api/using-addons-api.md
 
-          - text: JavaScript debugging features
-            url: ../../devtools-guide-chromium/javascript/reference.md
-
-          - text: Find unused JavaScript and CSS code with the Coverage tool
-            url: ../../devtools-guide-chromium/coverage/index.md
-
-          - text: Fix memory problems
-            url: ../../devtools-guide-chromium/memory-problems/index.md
-
-          - text: Debug DOM memory leaks with the Detached Elements tool
-            url: ../../devtools-guide-chromium/memory-problems/dom-leaks.md
-
-          - text: Understand security issues using the Security tool
-            url: ../../devtools-guide-chromium/security/index.md
-
-          - text: Troubleshooting common performance issues
-            url: ../../devtools-guide-chromium/rendering-tools/index.md
+          - text: REST API Reference for Microsoft Edge Add-ons
+            url: ./extensions-chromium/publish/api/addons-api-reference.md
 
 # =============================================================================
 # Card r2c3
-  - title: Reference
+  - title: Analytics and reviews
     linkLists:
-      - linkListType: reference
-        links:
-          - text: Keyboard shortcuts
-            url: ../../devtools-guide-chromium/shortcuts/index.md
-
-          - text: CSS features reference
-            url: ../../devtools-guide-chromium/css/reference.md
-
-          - text: Console features reference
-            url: ../../devtools-guide-chromium/console/reference.md
-
-          - text: Console object API Reference
-            url: ../../devtools-guide-chromium/console/api.md
       - linkListType: how-to-guide
         links:
-          - text: Performance features reference
-            url: ../../devtools-guide-chromium/evaluate-performance/reference.md
+          - text: View Microsoft Edge extensions analytics dashboard
+            url: ./extensions-chromium/publish/extensions-analytics.md
+
+          - text: Reply to user reviews of an extension
+            url: ./extensions-chromium/publish/reply-user-reviews.md
+            displayName: Respond to user reviews
+
+# =============================================================================
+# Card r3c1
+  - title: Best practices and samples
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Best practices for extensions
+            url: ./extensions-chromium/developer-guide/best-practices.md
+
       - linkListType: sample
         links:
-          - text: Sample code for DevTools
-            url: ../../devtools-guide-chromium/sample-code/sample-code.md
+          - text: Samples for Microsoft Edge extensions
+            url: ./extensions-chromium/samples.md
