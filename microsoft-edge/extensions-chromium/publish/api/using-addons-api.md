@@ -152,7 +152,7 @@ If the request succeeds and the update process begins, you receive a `202 Accept
 
 
 See also:
-* [Upload a package to update an existing submission](./addons-api-reference.md#upload-a-package-to-update-an-existing-submission) in _Using the Microsoft Edge Add-ons REST API_.
+* [Upload a package to update an existing submission](./addons-api-reference.md#upload-a-package-to-update-an-existing-submission) in _REST API Reference for Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
@@ -180,7 +180,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 
 See also:
-* [Check the status of a package upload](./addons-api-reference.md#check-the-status-of-a-package-upload) in _Using the Microsoft Edge Add-ons REST API_.
+* [Check the status of a package upload](./addons-api-reference.md#check-the-status-of-a-package-upload) in _REST API Reference for Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
@@ -211,7 +211,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 If the request succeeds and the publishing process begins, you'll receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` that's required for checking the status of the publish operation.
 
 See also:
-* [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _Using the Microsoft Edge Add-ons REST API_.
+* [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _REST API Reference for Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
@@ -238,14 +238,14 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 ```
 
 See also:
-* [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _Using the Microsoft Edge Add-ons REST API_.
+* [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
 ## See also
 
 <!-- all article-level links in article body: -->
-* [Using the Microsoft Edge Add-ons REST API](./addons-api-reference.md)
+* [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md)
 * [Issues](https://github.com/MicrosoftDocs/edge-developer/issues/) in `edge-developer` Docs repo.
 * [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 * [Supported APIs for Microsoft Edge extensions](../../developer-guide/api-support.md) - JavaScript APIs for developing an extension.
