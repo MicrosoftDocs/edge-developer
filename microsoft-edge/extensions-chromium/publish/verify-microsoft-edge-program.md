@@ -1,5 +1,5 @@
 ---
-title: Verify the company account information associated with your Microsoft Partner Center account
+title: Verify your company account information
 description: Learn how to verify your account information when your company enrolls in the Microsoft Edge program on Partner Center to publish extensions to the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,15 +8,17 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/02/2022
 ---
-# Verify the company account information associated with your Microsoft Partner Center account
+# Verify your company account information
 
-When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide. This information can include your company name, company address, and primary contact details. During the verification process, Microsoft might send email to your primary contact to request confirmation of the information that was provided.
+Before using this article, do the steps in [Register as a Microsoft Edge extension developer](./create-dev-account.md), for a company account rather than for an individual account.  Information specifically about company accounts starts in the [Account types](./create-dev-account.md#account-types) section within that article.
+
+When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide.  This information can include your company name, company address, and primary contact details.  During the verification process, Microsoft might send email to your primary contact to request confirmation of the information that was provided.
 
 You can go to [Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) in Partner Center to monitor verification status for the Microsoft Edge Developer program.
 
 When account verification is complete, you can use your Partner Center dashboard to publish your extension to the Microsoft Edge Add-ons website.
 
-Verification usually takes three to five business days. If more than five days have passed, you can contact [Microsoft Edge Extensions support](/microsoft-edge/extensions-chromium/publish/contact-extensions-team/) for help.
+Verification usually takes three to five business days.  If more than five days have passed, you can [Contact the Microsoft Edge extensions team](/microsoft-edge/extensions-chromium/publish/contact-extensions-team/) for help.
 
 
 <!-- ====================================================================== -->
