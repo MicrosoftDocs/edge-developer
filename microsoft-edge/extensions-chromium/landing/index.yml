@@ -67,6 +67,9 @@ landingContent:
           - text: Roadmap for Microsoft Edge Add-ons
             url: ../whats-new/roadmap.md
 
+          - text: Contact the Microsoft Edge extensions team
+            url: extensions-chromium/publish/contact-extensions-team.md
+
 # =============================================================================
 # Card r1c2
   - title: Manifests and JavaScript APIs
