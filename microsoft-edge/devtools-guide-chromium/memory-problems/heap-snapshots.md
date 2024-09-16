@@ -224,26 +224,6 @@ To hide internal nodes from the **Retainers** section, in the **Filter edges** d
 
 
 <!-- ====================================================================== -->
-## Configure the Shallow Size column to include an entire object's size
-
-By default, the **Shallow Size** column in the **Memory** tool only includes the size of the object itself. The _shallow size_ is the size of the JavaScript heap that's _directly_ held by an object. The shallow size of an object is usually small, because a JavaScript object often only stores its description of the object, not the values, in the object's directly held memory. Most JavaScript objects store their values in a _backing store_ that's elsewhere in the JavaScript heap, and only expose a small wrapper object on the portion of the JavaScript heap that's directly owned by the object. For example, JavaScript `Array` instances store the contents of the array in a backing store, which is a separate memory location that's not included in the array's shallow size.
-
-You can configure the **Shallow Size** column to report the entire size of objects, including the size of the object's backing store.
-
-To include the entire size of objects in the **Shallow Size** column:
-
-1. In DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./heap-snapshots-images/customize-icon.png)) button, and then click **Settings** (![Settings icon](./heap-snapshots-images/settings-icon.png)).  Or, while DevTools has focus, press **F1**.
-
-1. In the **Experiments** section, select the checkbox **In heap snapshots, treat backing store size as part of the containing object**.
-
-1. Click the **Close** (x) button of the **Settings** page, and then click the **Reload DevTools** button.
-
-1. Take a new heap snapshot. The **Shallow Size** column now includes the entire size of objects:
-
-   ![The Shallow Size column of a heap snapshot](./heap-snapshots-images/shallow-size-entire-object.png)
-
-
-<!-- ====================================================================== -->
 ## Filter heap snapshots by node types
 
 Use filters to focus on specific parts of a heap snapshot. When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.
