@@ -12,13 +12,26 @@ ms.date: 07/29/2024
 
 Microsoft Visual Studio provides various debugging tools for web and native code in WebView2 apps, to debug web and native code in Win32 apps or Office Add-ins.  This article focuses on debugging WebView2 controls.  The other methods of debugging in Visual Studio are available, as well.
 
-To debug JavaScript code in a WebView2 control, first you install the **JavaScript diagnostics** component in the **Desktop development with C++** workload of Visual Studio, or in another platform's workload.  You typically set a breakpoint on a line of JavaScript code.  Then to run the JavaScript (WebView2) debugger, you set the **Local Windows Debugger** property in the project's **Properties** > **Debugging** page to **JavaScript (WebView2)** (instead of **Auto** or **Native**).  You then use any of the usual commands to start the debugger:
 
-* In the menu bar, select **Debug** > **Start Debugging (F5)**.
-* In Solution Explorer, right-click the project > **Debug** > **Start New Instance** or **Step Into New Instance**.
-* Click the green Play button to the left of **Local Windows Debugger**.
+<!-- ------------------------------ -->
+#### Summary of high-level steps
 
-In your running app, you then interact with a webpage that runs the JavaScript code, and the debugger pauses on the line of JavaScript code that has the breakpoint.  You then use the debugger panes in Visual Studio.
+To debug JavaScript code in a WebView2 control: 
+
+1. Install the **JavaScript diagnostics** component in the **Desktop development with C++** workload of Visual Studio, or in another platform's workload.
+
+1. Set a breakpoint on a line of JavaScript code.
+
+1. In the project's **Properties** > **Debugging** page, set the **Local Windows Debugger** property  to **JavaScript (WebView2)** (instead of **Auto** or **Native**).
+
+1. Start the debugger, as usual.  For example:
+   * In the menu bar, select **Debug** > **Start Debugging (F5)**.
+   * In Solution Explorer, right-click the project > **Debug** > **Start New Instance** or **Step Into New Instance**.
+   * Click the green Play button to the left of **Local Windows Debugger**.
+
+1. In the running WebView2 app, interact with a webpage that runs the JavaScript code.  The debugger pauses on the line of JavaScript code that has the breakpoint.
+
+1. Use the debugger panes in Visual Studio.
 
 These steps are detailed below, using the main, Win32/C++ sample (WebView2APISample).
 
