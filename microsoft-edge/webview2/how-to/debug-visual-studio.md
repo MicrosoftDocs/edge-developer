@@ -34,12 +34,6 @@ These steps are detailed below, using the main, Win32/C++ sample (WebView2APISam
 
 
 <!-- ====================================================================== -->
-## Open DevTools using an approach other than F12
-
-When you debug your app in Visual Studio with the native debugger attached, pressing **F12** may trigger the native debugger instead of Developer Tools.  To avoid that situation, press **Ctrl+Shift+I**.  Or, right-click the page, and then select `Inspect`.
-
-
-<!-- ====================================================================== -->
 ## Requirements
 
 * Clone the WebView2Samples repo, if you want to follow the specific example steps below (using the main, Win32/C++ sample, WebView2APISample).  A step below shows how to do this.
@@ -169,6 +163,14 @@ After doing the above setup, debug your WebView2 app, as follows.
 
 <!-- ====================================================================== -->
 ## Troubleshooting
+
+
+<!-- ------------------------------ -->
+#### Open DevTools using an approach other than F12
+
+When you debug your app in Visual Studio with the native debugger attached, when viewing your running app, pressing **F12** might start the native debugger instead of starting Developer Tools.
+
+To open DevTools, press **Ctrl+Shift+I**.  Or, right-click the page in the running app, and then select `Inspect`.
 
 
 <!-- ---------------------------------------------------------------------- -->
