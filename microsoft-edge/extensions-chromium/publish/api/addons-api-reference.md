@@ -6,13 +6,19 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/07/2022
+ms.date: 09/05/2024
 ---
 # REST API Reference for Microsoft Edge Add-ons
 
 This article is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons store.
 
 For an overview, see [Using the Microsoft Edge Add-ons REST API](using-addons-api.md).
+
+
+<!-- ------------------------------ -->
+#### Versions of the REST API
+
+As of September 6, 2024, both v2 and v1 of this REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
 
 
 <!-- ====================================================================== -->
@@ -28,18 +34,35 @@ Uploads a package to update an existing draft submission of an add-on product.
 |---|---|
 | `POST` | `/products/{productID}/submissions/draft/package` |
 
+
+<!-- ---------- -->
 ###### URI parameters
 
 | URI parameter | Description |
 |---|---|
 | `productID` | Required.  The product ID of the product to which the package must be uploaded. |
 
+
+<!-- ---------- -->
 ###### Request headers
 
-*  Required.  `Authorization: Bearer <auth token>`
+The following request headers are required:
 
-*  Required.  `Content-Type: application/zip`
+##### [v2](#tab/v2)
 
+* `Authorization: ApiKey <api key>`
+* `X-ClientID: <client ID>`
+* `Content-Type: application/zip`
+
+##### [v1](#tab/v1)
+
+* `Authorization: Bearer <auth token>`
+* `Content-Type: application/zip`
+
+---
+
+
+<!-- ---------- -->
 ###### Request body
 
 * `<Zip package>`
@@ -48,10 +71,14 @@ Uploads a package to update an existing draft submission of an add-on product.
 <!-- ------------------------------ -->
 #### Response
 
+
+<!-- ---------- -->
 ###### Response headers
 
-*  Location: `{operationID}`
+* Location: `{operationID}`
 
+
+<!-- ---------- -->
 ###### Status codes
 
 This API has the following expected status codes.
@@ -64,7 +91,7 @@ This API has the following expected status codes.
 
 
 See also:
-*  Introduction: [Uploading a package to update an existing submission](using-addons-api.md#uploading-a-package-to-update-an-existing-submission)
+* Introduction: [Uploading a package to update an existing submission](using-addons-api.md#uploading-a-package-to-update-an-existing-submission)
 
 
 <!-- ====================================================================== -->
@@ -80,16 +107,33 @@ Gets the status of the package upload.
 |---|---|
 | `GET` | `/products/{productID}/submissions/draft/package/operations/{operationID}` |
 
+
+<!-- ---------- -->
 ###### URI parameters
 
 | URI parameter | Description |
 |---|---|
 | `operationID` | Required.  The operation ID of the upload request submitted in the previous step.  This information is available in the response header. |
 
+
+<!-- ---------- -->
 ###### Request headers
 
-* Required.  `Authorization: Bearer <auth token>`
+The following request headers are required:
 
+##### [v2](#tab/v2)
+
+* `Authorization: ApiKey <api key>`
+* `X-ClientID: <client ID>`
+
+##### [v1](#tab/v1)
+
+* `Authorization: Bearer <auth token>`
+
+---
+
+
+<!-- ---------- -->
 ###### Request body
 
 None.
@@ -100,6 +144,8 @@ None.
 
 There are several responses, for different scenarios.
 
+
+<!-- ---------- -->
 ###### Response when the operation is still in progress
 
 ```json
@@ -114,6 +160,8 @@ There are several responses, for different scenarios.
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response when the operation succeeds
 
 ```json
@@ -128,6 +176,8 @@ There are several responses, for different scenarios.
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response when the operation fails with errors
 
 ```json
@@ -142,10 +192,14 @@ There are several responses, for different scenarios.
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response headers
 
 None.
 
+
+<!-- ---------- -->
 ###### Status codes
 
 This API has the following expected status codes.
@@ -158,7 +212,7 @@ This API has the following expected status codes.
 
 
 See also:
-*  Introduction: [Checking the status of a package upload](using-addons-api.md#checking-the-status-of-a-package-upload)
+* Introduction: [Checking the status of a package upload](using-addons-api.md#checking-the-status-of-a-package-upload)
 
 
 <!-- ====================================================================== -->
@@ -174,16 +228,33 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 |---|---|
 | `POST` | `/products/{productID}/submissions` |
 
+
+<!-- ---------- -->
 ###### URI parameters
 
 | URI parameter | Description |
 |---|---|
 | `productID` | Required.  The product ID of the product whose draft must be published. |
 
+
+<!-- ---------- -->
 ###### Request headers
 
-* Required.  `Authorization: Bearer <auth token>`
+The following request headers are required:
 
+##### [v2](#tab/v2)
+
+* `Authorization: ApiKey <api key>`
+* `X-ClientID: <client ID>`
+
+##### [v1](#tab/v1)
+
+* `Authorization: Bearer <auth token>`
+
+---
+
+
+<!-- ---------- -->
 ###### Request body
 
 `<Notes for certification>`, in plain text format.
@@ -192,10 +263,14 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 <!-- ------------------------------ -->
 #### Response
 
+
+<!-- ---------- -->
 ###### Response headers
 
 * Location: `{operationID}`
 
+
+<!-- ---------- -->
 ###### Status codes
 
 This API has the following expected status codes.
@@ -208,7 +283,7 @@ This API has the following expected status codes.
 
 
 See also:
-*  Introduction: [Publishing the submission](using-addons-api.md#publishing-the-submission)
+* Introduction: [Publishing the submission](using-addons-api.md#publishing-the-submission)
 
 
 <!-- ====================================================================== -->
@@ -224,14 +299,32 @@ Checks the status of the publish operation.
 |---|---|
 | `GET` | `/products/{productID}/submissions/operations/{operationID}` |
 
+
+
+<!-- ---------- -->
 ###### URI parameters
 
 None.
 
+
+<!-- ---------- -->
 ###### Request headers
 
-* Required.  `Authorization: Bearer <auth token>`
+The following request headers are required:
 
+##### [v2](#tab/v2)
+
+* `Authorization: ApiKey <api key>`
+* `X-ClientID: <client ID>`
+
+##### [v1](#tab/v1)
+
+* `Authorization: Bearer <auth token>`
+
+---
+
+
+<!-- ---------- -->
 ###### Request body
 
 None.
@@ -242,6 +335,8 @@ None.
 
 A `GET` operation status API can be called in the following scenarios.  In all valid scenarios, `200 OK` is returned, with different status messages.
 
+
+<!-- ---------- -->
 ###### Response when a new product is published
 
 ```json
@@ -256,6 +351,8 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response when there's nothing new to be published
 
 ```json
@@ -270,6 +367,8 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response when there's an in-review submission for the same product
 
 ```json
@@ -284,6 +383,8 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response when there's an ongoing unpublished submission for the same product
 
 ```json
@@ -298,6 +399,8 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response where any of the modules are invalid
 
 ```json
@@ -316,6 +419,8 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response when there are validation errors in submission
 
 ```json
@@ -330,6 +435,8 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response when the publish call succeeds
 
 ```json
@@ -344,6 +451,8 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response when the publish call fails with an irrecoverable failure
 
 ```json
@@ -358,6 +467,8 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response when the publish call fails with an unexpected failure
 
 ```json
@@ -367,10 +478,14 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
+
+<!-- ---------- -->
 ###### Response headers
 
 None.
 
+
+<!-- ---------- -->
 ###### Status codes
 
 This API has the following expected status codes.
@@ -383,7 +498,7 @@ This API has the following expected status codes.
 
 
 See also:
-*  Introduction: [Checking the publishing status](using-addons-api.md#checking-the-publishing-status)
+* Introduction: [Checking the publishing status](using-addons-api.md#checking-the-publishing-status)
 
 
 <!-- ====================================================================== -->
@@ -391,6 +506,8 @@ See also:
 
 Here's a list of common error codes and possible reasons.  For a full list, see [Partner Center REST error codes](/partner-center/develop/error-codes) or [List of HTTP status codes](https://wikipedia.org/wiki/List_of_HTTP_status_codes).
 
+
+<!-- ------------------------------ -->
 #### 4xx: Client error
 
 | Message | Description | Example scenario |
@@ -401,6 +518,8 @@ Here's a list of common error codes and possible reasons.  For a full list, see 
 | 408 Request Timeout | The request took longer than the server was prepared to wait. | There was a timeout while uploading a package. |
 | 429 Too many requests | Too many requests were sent by the user. | Too many requests were sent and they got throttled. |
 
+
+<!-- ------------------------------ -->
 #### 5xx: Server error
 
 | Message  | Description  | Example scenario |
@@ -411,4 +530,4 @@ Here's a list of common error codes and possible reasons.  For a full list, see 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Using the Microsoft Edge Add-ons REST API](using-addons-api.md)
+* [Using the Microsoft Edge Add-ons REST API](using-addons-api.md)

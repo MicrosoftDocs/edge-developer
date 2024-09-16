@@ -1,6 +1,6 @@
 ---
 title: Supported APIs for Microsoft Edge extensions
-description: List of supported APIs to use when building Microsoft Edge extensions.
+description: List of supported APIs to use when building a Microsoft Edge extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,11 +10,11 @@ ms.date: 12/13/2023
 ---
 # Supported APIs for Microsoft Edge extensions
 
-When building extensions for the Microsoft Edge browser, you can use the following APIs.
+Microsoft Edge extensions use a subset of the JavaScript methods for the Chromium browser engine platform.  When building an extension for the Microsoft Edge browser, you can use the following APIs.
 
 | API | Description | Manifest versions |
 |---|---|---|
-| [accessibilityFeatures](https://developer.chrome.com/docs/extensions/reference/api/accessibilityFeatures) | Manages Chrome's accessibility features. | MV2, MV3 |
+| [accessibilityFeatures](https://developer.chrome.com/docs/extensions/reference/api/accessibilityFeatures) | Manages the browser's accessibility features. | MV2, MV3 |
 | [action](https://developer.chrome.com/docs/extensions/reference/api/action) | Controls the extension's icon in the browser's toolbar. | MV3 |
 | [alarms](https://developer.chrome.com/docs/extensions/reference/api/alarms) | Schedules code to run periodically or at a specified time in the future. | MV2, MV3 |
 | [bookmarks](https://developer.chrome.com/docs/extensions/reference/api/bookmarks) | Creates, organizes, and manipulates bookmarks. | MV2, MV3 |
@@ -60,7 +60,7 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [scripting](https://developer.chrome.com/docs/extensions/reference/api/scripting) | Executes scripts in different contexts. | MV3 |
 | [search](https://developer.chrome.com/docs/extensions/reference/api/search) | Searches by using the default provider. | MV2, MV3 |
 | [sessions](https://developer.chrome.com/docs/extensions/reference/api/sessions) | Queries and restores tabs and windows from a browsing session. | MV2, MV3 |
-| [sidePanel](https://developer.chrome.com/docs/extensions/reference/api/sidePanel) | Hosts custom content in the browser's sidebar alongside the main content of a webpage.  See [Extensions in the Microsoft Edge sidebar](../developer-guide/sidebar.md). | MV3 |
+| [sidePanel](https://developer.chrome.com/docs/extensions/reference/api/sidePanel) | Hosts custom content in the browser's sidebar alongside the main content of a webpage.  See [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md). | MV3 |
 | [storage](https://developer.chrome.com/docs/extensions/reference/api/storage) | Stores, retrieves, and tracks changes to user data. | MV2, MV3 |
 | [system.cpu](https://developer.chrome.com/docs/extensions/reference/api/system/cpu) | Queries CPU metadata. | MV2, MV3 |
 | [system.display](https://developer.chrome.com/docs/extensions/reference/api/system/display) | Queries display metadata. | MV2, MV3 |
@@ -131,6 +131,6 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 <!-- ====================================================================== -->
 ## See also
 
-* [Overview of Microsoft Edge extensions](../index.md)
 * [Chrome Extensions API reference for Manifest V2](https://developer.chrome.com/docs/extensions/mv2/reference/)
 * [Chrome Extensions API reference for Manifest V3](https://developer.chrome.com/docs/extensions/reference/api/)
+* [Using the Microsoft Edge Add-ons REST API](../publish/api/using-addons-api.md) - to update an extension at the Microsoft Edge Add-ons website.

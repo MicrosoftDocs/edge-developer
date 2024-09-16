@@ -1,5 +1,5 @@
 ---
-title: Alternative ways to distribute extensions
+title: Alternative ways to distribute an extension
 description: How to distribute extensions using alternate methods that don't use verified stores.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 05/05/2023
 ---
-# Alternative ways to distribute extensions
+# Alternative ways to distribute an extension
 
 Generally, extensions are distributed through the Microsoft Edge Add-ons website. There are some scenarios where developers may need to distribute extensions using alternate methods. For example:
 
