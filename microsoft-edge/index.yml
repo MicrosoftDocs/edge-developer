@@ -222,7 +222,7 @@ conceptualContent:
               url: ./extensions-chromium/developer-guide/port-chrome-extension.md
               itemType: overview
 
-            - text: Alternate methods of distributing extensions
+            - text: Alternative ways to distribute an extension
               url: ./extensions-chromium/developer-guide/alternate-distribution-options.md
               itemType: how-to-guide
 

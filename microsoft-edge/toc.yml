@@ -946,7 +946,7 @@
 
                 - name: Update .css files from within the Styles tab (CSS mirror editing)
                   href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
-                  displayName: Syncing live changes from the Styles tool by using CSS mirror editing # previous title
+                  displayName: Syncing live changes from the Styles tool by using CSS mirror editing  # previous title
 
                 - name: Network tool integration
                   href: visual-studio-code/microsoft-edge-devtools-extension/network-tool-integration.md
@@ -979,9 +979,11 @@
 # =============================================================================
     - name: Microsoft Edge extensions
       items:
+
         - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
 
+# -------------------------------------
         - name: What's new
           items:
             - name: Released features for Microsoft Edge Add-ons
@@ -990,7 +992,8 @@
             - name: Roadmap for Microsoft Edge Add-ons
               href: extensions-chromium/whats-new/roadmap.md
 
-        - name: Getting started
+# -------------------------------------
+        - name: Get started
           items:
             - name: Extension concepts and architecture
               href: extensions-chromium/getting-started/index.md
@@ -1004,106 +1007,105 @@
             - name: Sideload an extension
               href: extensions-chromium/getting-started/extension-sideloading.md
 
-        - name: Developer Guide
+# -------------------------------------
+        - name: Port an extension to Microsoft Edge
           items:
-            - name: Supported APIs for Microsoft Edge extensions
-              href: extensions-chromium/developer-guide/api-support.md
-
-            - name: Declare API permissions in extension manifests
-              href: extensions-chromium/developer-guide/declare-permissions.md  # moved from /enterprise/
-
             - name: Port a Chrome extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
 
-            - name: Alternative ways to distribute extensions
-              href: extensions-chromium/developer-guide/alternate-distribution-options.md
+# -------------------------------------
+        - name: Develop an extension
+          items:
+            - name: Manifest files
+              items:
+                - name: Manifest file format for extensions
+                  href: extensions-chromium/getting-started/manifest-format.md
+
+                - name: Using Content Security Policy (CSP) to control which resources can be run
+                  href: extensions-chromium/developer-guide/csp.md
+                  displayName: policies
+
+                - name: Overview and timelines for migrating to Manifest V3
+                  href: extensions-chromium/developer-guide/manifest-v3.md
+
+                - name: Migrate an extension from Manifest V2 to V3
+                  href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+
+            - name: JavaScript APIs
+              items:
+                - name: Supported APIs for Microsoft Edge extensions
+                  href: extensions-chromium/developer-guide/api-support.md
+
+                - name: Declare API permissions in the manifest
+                  href: extensions-chromium/developer-guide/declare-permissions.md
+
+            - name: Create an extension that customizes the DevTools UI
+              href: extensions-chromium/developer-guide/devtools-extension.md
+
+            - name: Develop an extension for the Microsoft Edge sidebar
+              href: extensions-chromium/developer-guide/sidebar.md
+              displayName: sidebar extensions, sidepanel, side panel
 
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
 
             - name: Defining match patterns for an extension to access file URLs
-              href: extensions-chromium/developer-guide/match-patterns.md  # moved from /enterprise/
+              href: extensions-chromium/developer-guide/match-patterns.md
 
-            - name: Create an extension that customizes the DevTools UI
-              href: extensions-chromium/developer-guide/devtools-extension.md
+            - name: Policies for extensions
+              items:
+                - name: App Developer Agreement Addendum for Microsoft Edge program users
+                  href: /legal/microsoft-edge/extensions/ada-addendum
+                  displayName: policy, policies
 
-            - name: Extensions in the Microsoft Edge sidebar
-              href: extensions-chromium/developer-guide/sidebar.md
-              displayName: sidebar extensions, sidepanel, side panel  # alt lookup phrase
+                - name: Developer policies for the Microsoft Edge Add-ons store
+                  href: /legal/microsoft-edge/extensions/developer-policies
+                  displayName: policy
 
-            - name: Best Practices
-              href: extensions-chromium/developer-guide/best-practices.md
-              displayName: Best Practices for extensions  # full title
-
-        - name: Manifest
+# -------------------------------------
+        - name: Publish an extension
           items:
-            - name: Overview and timelines for migrating to Manifest V3
-              href: extensions-chromium/developer-guide/manifest-v3.md
+            - name: Register as an individual developer
+              items:
+                - name: Register as a Microsoft Edge extension developer
+                  href: extensions-chromium/publish/create-dev-account.md
 
-            - name: Migrate an extension from Manifest V2 to V3
-              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+            - name: Register as an enterprise developer
+              items:
+                - name: Verify your company account information
+                  href: extensions-chromium/publish/verify-microsoft-edge-program.md
 
-            - name: Manifest file format for extensions
-              href: extensions-chromium/getting-started/manifest-format.md
+                - name: Add users to the Microsoft Edge program
+                  href: extensions-chromium/publish/aad-account.md
 
-        - name: Publish to the Add-ons website
-          items:
-            - name: Register as a Microsoft Edge extension developer
-              href: extensions-chromium/publish/create-dev-account.md
-
-            - name: Verify your company account information
-              href: extensions-chromium/publish/verify-microsoft-edge-program.md
-
-            - name: Publish a Microsoft Edge extension by using a GitHub account
+            - name: Register and sign in to Partner Center using a GitHub account
               href: extensions-chromium/publish/github.md
-
-            - name: Add users to the Microsoft Edge program
-              href: extensions-chromium/publish/aad-account.md
 
             - name: Publish a Microsoft Edge extension
               href: extensions-chromium/publish/publish-extension.md
 
             - name: Extension hosting
-              href: extensions-chromium/publish/hosting-and-updating.md  # moved from /enterprise/
-
-            - name: Update a Microsoft Edge extension
-              href: extensions-chromium/publish/update-extension.md
-
-            - name: Automatically update extensions in Microsoft Edge
-              href: extensions-chromium/publish/auto-update.md  # moved from /enterprise/
+              href: extensions-chromium/publish/hosting-and-updating.md
 
             - name: Submission states for extensions in the Microsoft Edge Add-ons website
               href: extensions-chromium/publish/submission-states.md
 
-            - name: Curation and review process for the Edge Add-ons store
-              href: extensions-chromium/publish/add-ons-store-curation.md
-
-            - name: View Microsoft Edge extensions analytics dashboard
-              href: extensions-chromium/publish/extensions-analytics.md
-
-            - name: Reply to user reviews
-              href: extensions-chromium/publish/reply-user-reviews.md
-              displayName: Respond to user reviews
-
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
 
-            - name: Contact Microsoft Edge extensions support
-              href: extensions-chromium/publish/contact-extensions-team.md
-              displayName: feedback, log issues, enter issues, report issues, reporting issues
+            - name: Alternative ways to distribute an extension
+              href: extensions-chromium/developer-guide/alternate-distribution-options.md
 
-            - name: Policies for Microsoft Edge Add-ons
-              items:
-                - name: Content Security Policy (CSP)
-                  href: extensions-chromium/store-policies/csp.md
+            - name: Curation and review process for the Edge Add-ons store
+              href: extensions-chromium/publish/add-ons-store-curation.md
 
-                - name: App Developer Agreement Addendum for Microsoft Edge program users
-                  href: extensions-chromium/store-policies/ada-addendum.md
+# -------------------------------------
+        - name: Manage and maintain an extension
+          items:
+            - name: Update a Microsoft Edge extension
+              href: extensions-chromium/publish/update-extension.md
 
-                - name: Developer policies for the Microsoft Edge Add-ons store
-                  href: extensions-chromium/store-policies/developer-policies.md
-
-            - name: Microsoft Edge Add-ons API
+            - name: REST API for updating an extension
               items:
                 - name: Using the Microsoft Edge Add-ons REST API
                   href: extensions-chromium/publish/api/using-addons-api.md
@@ -1111,9 +1113,34 @@
                 - name: REST API Reference for Microsoft Edge Add-ons
                   href: extensions-chromium/publish/api/addons-api-reference.md
 
+            - name: Automatically update an extension in Microsoft Edge
+              href: extensions-chromium/publish/auto-update.md
+
+            - name: View Microsoft Edge extensions analytics dashboard
+              href: extensions-chromium/publish/extensions-analytics.md
+
+            - name: Reply to user reviews of an extension
+              href: extensions-chromium/publish/reply-user-reviews.md
+              displayName: Respond to user reviews
+
+# -------------------------------------
+        - name: Best practices
+          items:
+            - name: Best practices for extensions
+              href: extensions-chromium/developer-guide/best-practices.md
+
+# -------------------------------------
         - name: Samples
-          href: extensions-chromium/samples.md
-          displayName: Samples for Microsoft Edge extensions # full title
+          items:
+            - name: Samples for Microsoft Edge extensions
+              href: extensions-chromium/samples.md
+
+# -------------------------------------
+        - name: Contact the Microsoft Edge extensions team
+          href: extensions-chromium/publish/contact-extensions-team.md
+          displayName: feedback, log issues, enter issues, report issues, reporting issues
+
+# /Extensions
 
 # =============================================================================
     - name: Progressive Web Apps
@@ -1582,7 +1609,7 @@
         - name: WebView2 end-user FAQ
           href: webview2/concepts/end-user-faq.md
 
-        - name: Contact the WebView2 Team
+        - name: Contact the WebView2 team
           href: webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 # / WebView2 articles

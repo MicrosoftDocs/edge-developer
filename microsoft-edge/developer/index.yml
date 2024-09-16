@@ -99,7 +99,7 @@ landingContent:
             url: ../extensions-chromium/developer-guide/port-chrome-extension.md
       - linkListType: how-to-guide
         links:
-          - text: Alternate methods of distributing extensions
+          - text: Alternative ways to distribute an extension
             url: ../extensions-chromium/developer-guide/alternate-distribution-options.md
 
           - text: Step-wise publishing process
