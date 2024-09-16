@@ -6,9 +6,22 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/05/2023
+ms.date: 09/16/2023
 ---
 # Debug DOM memory leaks with the Detached Elements tool
+
+> [!IMPORTANT]
+> The **Detached Elements** tool is being deprecated and eventually removed.  The same functionality is now available in the **Memory** tool instead.  Deprecation period:
+>   * Microsoft Edge 130: The **Detached Elements** tool is still available, but the **Memory** tool is recommended instead.
+>   * Microsoft Edge 133: The **Detached Elements** tool is removed.
+>
+> The downstream-only CDP function `EdgeDOMMemory.getDetachedNodesIds` is deprecated; for the moment, it still works, but use `DOM.getDetachedDomNodes` instead.
+
+todo:
+* When the **Detached Elements** tool is removed, delete the present article, redirect to a new page: 
+* Add a new page, under the Memory tool TOC bucket, which describes how to debug detached DOM element memory leaks with the Memory tool.  eg h1:
+   * Debug detached DOM element memory leaks with the Memory tool
+
 
 Use the **Detached Elements** tool to find detached elements that the browser cannot garbage-collect, and locate the JavaScript object that is still referencing the detached element.  By changing your JavaScript to release the element, you reduce the number of detached elements on your page.
 
