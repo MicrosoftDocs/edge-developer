@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/29/2024
+ms.date: 09/16/2024
 ---
 # Debug WebView2 apps with Visual Studio
 
@@ -24,10 +24,7 @@ To debug JavaScript code in a WebView2 control:
 
 1. In the project's **Properties** > **Debugging** page, set the **Local Windows Debugger** property  to **JavaScript (WebView2)** (instead of **Auto** or **Native**).
 
-1. Start the debugger, as usual.  For example:
-   * In the menu bar, select **Debug** > **Start Debugging (F5)**.
-   * In Solution Explorer, right-click the project > **Debug** > **Start New Instance** or **Step Into New Instance**.
-   * Click the green Play button to the left of **Local Windows Debugger**.
+1. Start the debugger, as usual.  For example, in the menu bar, select **Debug** > **Start Debugging (F5)**.
 
 1. In the running WebView2 app, interact with a webpage that runs the JavaScript code.  The debugger pauses on the line of JavaScript code that has the breakpoint.
 
