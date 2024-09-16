@@ -1,5 +1,5 @@
 ---
-title: Extensions in the Microsoft Edge sidebar
+title: Develop an extension for the Microsoft Edge sidebar
 description: The sidebar (or side panel) feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,9 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 10/09/2023
 ---
-# Extensions in the Microsoft Edge sidebar
+# Develop an extension for the Microsoft Edge sidebar
 
-As a Microsoft Edge extension developer, use this article to make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar in addition to its other UI.
+As a Microsoft Edge extension developer, you can make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar in addition to its other UI.
 
 ![The sidebar for a Microsoft Edge extension](./sidebar-images/sidebar-screenshot.png)
 
@@ -238,7 +238,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 <!-- ====================================================================== -->
 ## Sidebar extensions user experience
 
-Extensions in the Microsoft Edge sidebar have these user experience (UX) features.
+Develop an extension for the Microsoft Edge sidebar have these user experience (UX) features.
 
 
 <!-- ------------------------------ -->
@@ -314,7 +314,7 @@ See [Types](https://developer.chrome.com/docs/extensions/reference/sidePanel/#ty
 ## See also
 
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
-* [Declare API permissions in extension manifests](../developer-guide/declare-permissions.md)
+* [Declare API permissions in the manifest](../developer-guide/declare-permissions.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
 * [Create an extension tutorial, part 1](../getting-started/part1-simple-extension.md)
 * [Create an extension tutorial, part 2](../getting-started/part2-content-scripts.md)

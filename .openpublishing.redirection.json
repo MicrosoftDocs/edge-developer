@@ -133,6 +133,11 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/extensions-chromium/publish/update-extension",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/store-policies/csp.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/csp",
+        "redirect_document_id": false
+      },
 
 /* Progressive Web Apps: */
       {
@@ -790,7 +795,17 @@ Old redirects (to /archive/)
       /* Extensions: */
       {
         "source_path": "microsoft-edge/extensions/microsoft-browser-extension-policy.md",
-        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/microsoft-browser-extension-policy",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/microsoft-browser-extension-policy",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/store-policies/ada-addendum.md",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/ada-addendum",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/store-policies/developer-policies.md",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/developer-policies",
         "redirect_document_id": false
       },
       /* Privacy: */
