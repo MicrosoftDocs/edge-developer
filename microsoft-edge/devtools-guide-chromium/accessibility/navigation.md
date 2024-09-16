@@ -208,7 +208,7 @@ You might find it faster to use the [Inspect](#inspect-an-element-on-the-page) w
 
 
 <!-- ---------- -->
-##### Navigate the Styles pane
+###### Navigate the Styles pane
 
 Because all of the style tools connect in one way or another back to the **Styles** pane, it makes sense to become an expert in this tool first.
 
@@ -232,7 +232,7 @@ Known issues:
 
 
 <!-- ---------- -->
-##### Toggle element state
+###### Toggle element state
 
 To toggle the state of an element, such as `:active` or `:focus`:
 
@@ -248,7 +248,7 @@ To toggle the state of an element, such as `:active` or `:focus`:
 
 
 <!-- ---------- -->
-##### Add an existing class
+###### Add an existing class
 
 The **Element Classes** button is next to the **Toggle Element State** button.  To move the focus to the **Element Classes** button, press **Tab**, and then press **Enter**.  Focus moves into an edit text field labeled **Add new class**.
 
@@ -256,7 +256,7 @@ The **Element Classes** button is primarily used for adding existing classes to 
 
 
 <!-- ---------- -->
-##### Add a new style rule
+###### Add a new style rule
 
 Adjacent to the **Element Classes** button is the **New Style Rule** button.  To move the focus to it, press **Tab** and then press **Enter**.  Focus moves into an editable text field inside of the style inspector.  The initial text content of the field is the tag name of the element that is selected in the **DOM Tree**.  You can type any class name you want into this field and then press **Tab** to assign CSS properties to it.
 
@@ -270,7 +270,7 @@ With focus on the **Computed** tab, press **Tab** to move focus inside and explo
 
 
 <!-- ---------- -->
-##### Explore all computed styles
+###### Explore all computed styles
 
 Press **Tab** until you reach the collection of computed styles.  Computed styles are presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the file name of the stylesheet that contains the selector, and the line number for the selector.
 
@@ -288,7 +288,7 @@ When focus is on the **Styles** tab, press **Right Arrow** to navigate to the **
 
 
 <!-- ---------- -->
-##### Explore event listeners
+###### Explore event listeners
 
 Event listeners are presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  You can use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.
 
@@ -302,7 +302,7 @@ The **Accessibility** tab is near the **Styles** tab. On the Accessibility tab, 
 
 
 <!-- ---------- -->
-##### Accessibility Tree
+###### Accessibility Tree
 
 The **Accessibility Tree** is presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree) where each `treeitem` corresponds to an element in the DOM.  The tree announces the computed role for the selected node.  Generic elements like `div` and `span` are announced as "GenericContainer" in the tree.  Use the arrow keys to traverse the tree and explore parent-child relationships.
 

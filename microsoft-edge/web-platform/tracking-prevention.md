@@ -112,7 +112,7 @@ Even though this relaxes tracking prevention enforcements for sites that belong 
 
 The Org Engagement mitigation was created to minimize compatibility risks introduced by tracking prevention by ensuring that sites owned by organizations that users sufficiently engage with continue to work as expected across the web.  It makes use of the [Site Engagement](https://www.chromium.org/developers/design-documents/site-engagement) Service to relax enforcements whenever a user has established an ongoing relationship (currently defined by a site engagement score of 4.1 or greater) with a given site.
 
-The org engagement mitigation is currently only applied in Balanced mode, so that Microsoft Edge is offering the highest possible protections for users who have opted into Strict.
+The Org Engagement mitigation is currently only applied in Balanced mode, so that Microsoft Edge is offering the highest possible protections for users who have opted into Strict.
 
 
 <!-- ---------- -->
@@ -154,7 +154,7 @@ The following are the enforcement actions and mitigations that are applied to ea
 *  `B` indicates that both storage access and resource loads (such as network requests) are blocked.
 *  A hyphen (`-`) indicates that no block is applied to either storage access or resource loads.
 
-The org engagement mitigation doesn't apply to the Cryptomining or Fingerprinting categories.
+The Org Engagement mitigation doesn't apply to the Cryptomining or Fingerprinting categories.
 
 Strict mode blocks more resource loads than Balanced.  The blocking of more resource loads may result in Strict mode appearing to block less tracking requests than Balanced since the trackers making the requests are never loaded.
 

@@ -102,7 +102,7 @@ Next, we'll look at the resulting page when there are no errors in the **Console
 
 
 <!-- ---------- -->
-##### Demo page: Fixed network error reported in Console
+###### Demo page: Fixed network error reported in Console
 
 1. Open the demo webpage [Fixed network error reported in Console](https://microsoftedge.github.io/Demos/devtools-console/network-error-fixed.html) in a new window or tab.
 
@@ -112,7 +112,7 @@ Next, we'll look at the resulting page when there are no errors in the **Console
 
 
 <!-- ---------- -->
-##### Demo page: Network error reporting in Console and UI
+###### Demo page: Network error reporting in Console and UI
 
 Use defensive coding techniques to avoid the previous user experiences.  Make sure your code catches errors and displays each error in the **Console**, as follows:
 

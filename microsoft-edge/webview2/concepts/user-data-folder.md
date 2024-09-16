@@ -108,7 +108,7 @@ The default user data folder (UDF) location varies per platform.
 <!-- ====================================================================== -->
 <!-- default UDF location -->
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 <!--
 **What is the default UDF location?**
@@ -131,7 +131,7 @@ Win32 MSIX packaging is a standalone `.exe`.
 <!-- ====================================================================== -->
 <!-- default UDF location -->
 
-# [.NET (WPF/WinForms)](#tab/dotnet)
+##### [.NET (WPF/WinForms)](#tab/dotnet)
 
 <!--
 **What is the default UDF location?**
@@ -150,7 +150,7 @@ In most cases, you should specify a custom UDF location, rather than using the d
 <!-- ====================================================================== -->
 <!-- default UDF location -->
 
-# [ClickOnce](#tab/clickonce)
+##### [ClickOnce](#tab/clickonce)
 
 <!--
 **What is the default UDF location?**
@@ -188,7 +188,7 @@ A ClickOnce app usually contains a .NET app.
 <!-- ====================================================================== -->
 <!-- default UDF location -->
 
-# [WinUI 2 (UWP)](#tab/uwp)
+##### [WinUI 2 (UWP)](#tab/uwp)
 
 <!--
 **What is the default UDF location?**
@@ -224,7 +224,7 @@ A WinUI 2 (UWP) app is per-user, and has Write access under the installed locati
 <!-- ====================================================================== -->
 <!-- default UDF location -->
 
-# [WinUI 3](#tab/winui3)
+##### [WinUI 3](#tab/winui3)
 
 <!--
 **What is the default UDF location?**
@@ -255,7 +255,7 @@ How to specify a custom user data folder (UDF) location varies per platform.
 <!-- ====================================================================== -->
 <!-- custom UDF location -->
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 <!--
 **Should you use default or custom UDF location?**
@@ -304,7 +304,7 @@ If the host app is running from a location that the user doesn't have Write acce
 <!-- ====================================================================== -->
 <!-- custom UDF location -->
 
-# [.NET (WPF/WinForms)](#tab/dotnet)
+##### [.NET (WPF/WinForms)](#tab/dotnet)
 
 <!--
 **Should you use default or custom UDF location?**
@@ -347,7 +347,7 @@ After creation of the session and UDF, browser data from your WebView2 control i
 <!-- ====================================================================== -->
 <!-- custom UDF location -->
 
-# [ClickOnce](#tab/clickonce)
+##### [ClickOnce](#tab/clickonce)
 
 <!--
 **Should you use default or custom UDF location?**
@@ -386,7 +386,7 @@ After creation of the session and UDF, browser data from your WebView2 control i
 <!-- ====================================================================== -->
 <!-- custom UDF location -->
 
-# [WinUI 2 (UWP)](#tab/uwp)
+##### [WinUI 2 (UWP)](#tab/uwp)
 
 <!--
 **Should you use default or custom UDF location?**
@@ -408,7 +408,7 @@ For example code, see the WinUI 2 (UWP) `.cs` file, at [WebView2Samples repo > w
 <!-- ====================================================================== -->
 <!-- custom UDF location -->
 
-# [WinUI 3](#tab/winui3)
+##### [WinUI 3](#tab/winui3)
 
 <!--
 **Should you use default or custom UDF location?**
@@ -446,7 +446,7 @@ Reasons you might want to read the UDF location:
 <!-- ====================================================================== -->
 <!-- retrieving UDF location -->
 
-# [Win32](#tab/win32)
+##### [Win32](#tab/win32)
 
 Use the Win32 [ICoreWebView2Environment7.get_UserDataFolder property getter](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder).  That API Reference page contains example code showing how to read the `UserDataFolder` property.
 
@@ -466,7 +466,7 @@ For examples of reading the `UserDataFolder` property, see the Win32 samples in 
 <!-- ====================================================================== -->
 <!-- retrieving UDF location -->
 
-# [.NET (WPF/WinForms)](#tab/dotnet)
+##### [.NET (WPF/WinForms)](#tab/dotnet)
 
 <!-- Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder). -->
 
@@ -485,7 +485,7 @@ For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForm
 <!-- ====================================================================== -->
 <!-- retrieving UDF location -->
 
-# [ClickOnce](#tab/clickonce)
+##### [ClickOnce](#tab/clickonce)
 
 Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
@@ -502,7 +502,7 @@ For examples of reading the `UserDataFolder` property, see [WebView2Samples repo
 <!-- ====================================================================== -->
 <!-- retrieving UDF location -->
 
-# [WinUI 2 (UWP)](#tab/uwp)
+##### [WinUI 2 (UWP)](#tab/uwp)
 
 Use the WinRT [CoreWebView2Environment.UserDataFolder Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder).
 
@@ -523,7 +523,7 @@ For examples of reading the `UserDataFolder` property, see the WinUI 2 (UWP) sam
 <!-- ====================================================================== -->
 <!-- retrieving UDF location -->
 
-# [WinUI 3](#tab/winui3)
+##### [WinUI 3](#tab/winui3)
 
 Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 

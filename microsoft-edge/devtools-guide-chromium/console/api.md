@@ -66,7 +66,7 @@ console.assert(x < y, {x, y, reason});
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.assert() example](./api-images/console-demo-assert-button.png)
 
@@ -121,7 +121,7 @@ console.count();
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.count() example](./api-images/console-demo-count-button.png)
 
@@ -174,7 +174,7 @@ console.debug('debug');
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.debug() example](./api-images/console-demo-debug-button.png)
 
@@ -204,7 +204,7 @@ console.dir(document.head);
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.dir() example](./api-images/console-demo-dir-button.png)
 
@@ -234,7 +234,7 @@ console.dirxml(document);
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.dirxml() example](./api-images/console-demo-dirxml-button.png)
 
@@ -264,7 +264,7 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.error() example](./api-images/console-demo-error-button.png)
 
@@ -298,7 +298,7 @@ console.groupEnd(label);
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.group() example](./api-images/console-demo-group-button.png)
 
@@ -356,7 +356,7 @@ console.info('info');
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.info() example](./api-images/console-demo-info-button.png)
 
@@ -386,7 +386,7 @@ console.log('log');
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.log() example](./api-images/console-demo-log-button.png)
 
@@ -430,7 +430,7 @@ console.table([
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.table() example](./api-images/console-demo-table-button.png)
 
@@ -462,7 +462,7 @@ console.timeEnd();
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.time() example](./api-images/console-demo-time-button.png)
 
@@ -512,7 +512,7 @@ first();
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.trace() example](./api-images/console-demo-trace-button.png)
 
@@ -542,7 +542,7 @@ console.warn('warn');
 
 
 <!-- ---------- -->
-##### Output
+###### Output
 
 ![The result of the console.warn() example](./api-images/console-demo-warn-button.png)
 
