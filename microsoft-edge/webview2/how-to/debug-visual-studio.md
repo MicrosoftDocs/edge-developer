@@ -32,11 +32,13 @@ When you debug your app in Visual Studio with the native debugger attached, pres
 <!-- ====================================================================== -->
 ## Requirements
 
-* Clone the WebView2Samples repo, if you want to follow the specific example steps below.  A step below shows how to do this.
+* Clone the WebView2Samples repo, if you want to follow the specific example steps below (using the main, Win32/C++ sample, WebView2APISample).  A step below shows how to do this.
 
-* Install Visual Studio 2022, as described in [Install Visual Studio](./machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  You can use Visual Studio 2022 to work with the WebView2 sample apps and your own WebView2 app.  (Visual Studio 2019 works, as well.)  A step below shows how to do this.
+* Install Visual Studio 2022.  You can use Visual Studio 2022 to work with the WebView2 sample apps and your own WebView2 app.  (Visual Studio 2019 works, as well.)  A step below shows how to do this.
 
-* To debug your code, first install and set up the script debugger tools in Visual Studio.  That is, install the **Desktop development with C++** workload of Visual Studio (or the equivalent workload for a different language), including its **JavaScript diagnostics** component.  A step below shows how to do this.
+* Install and set up the script debugger tools in Visual Studio.  That is, install the **Desktop development with C++** workload of Visual Studio (or the equivalent workload for a different language), including its **JavaScript diagnostics** component.  A step below shows how to do this.
+
+* Build and run the main, Win32/C++ sample, so that the WebView2APISample app builds and runs (if you want to follow the specific example steps below).  A step below shows how to do this.
 
 * To debug scripts, the app must be launched from within Visual Studio.
 
