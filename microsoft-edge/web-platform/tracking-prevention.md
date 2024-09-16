@@ -83,11 +83,14 @@ How the enforcements are applied depends on what level of tracking prevention th
 ## Mitigations
 
 To ensure that web compatibility is preserved as much as possible, Microsoft Edge has three mitigations to help balance enforcements in specific situations:
-* [The Org Relationship mitigation](#org-relationship-mitigation)
-* [The Org Engagement mitigation](#org-engagement-mitigation)
+* [The Org Relationship mitigation](#the-org-relationship-mitigation)
+* [The Org Engagement mitigation](#the-org-engagement-mitigation)
 * [The CompatExceptions list](#the-compatexceptions-list)
 
-About the concept of an _Organization_ (_Org_): the [disconnect.me](https://disconnect.me) website maintains an [entities.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json)<!-- changing master to main doesn't work 09/16/2024 --> list that defines groups of URLs that are owned by the same parent organization/company.  The tracking prevention feature in Microsoft Edge uses this list in both [The Org Relationship mitigation](#org-relationship-mitigation) and [The Org Engagement mitigation](#org-engagement-mitigation), to minimize the occurrence of compatibility issues caused by tracking prevention affecting cross-organizational requests.
+
+#### The concept of an _Organization_ (_Org_)
+
+The [disconnect.me](https://disconnect.me) website maintains an [entities.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json)<!-- changing master to main doesn't work 09/16/2024 --> list that defines groups of URLs that are owned by the same parent organization/company.  The tracking prevention feature in Microsoft Edge uses the `entities.json` list in both the Org Relationship mitigation and the Org Engagement mitigation, to minimize the occurrence of compatibility issues caused by tracking prevention affecting cross-organizational requests.
 
 
 <!-- ------------------------------ -->
