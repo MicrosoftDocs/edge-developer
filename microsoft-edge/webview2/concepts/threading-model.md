@@ -84,7 +84,9 @@ Some WebView2 events read values that are set on the related event arguments, or
 
 For instance, you can use the `NewWindowRequested` event to provide a `CoreWebView2` to connect as a child window when the event handler completes.  But if you need to asynchronously create the `CoreWebView2`, you should call the `GetDeferral` method on the `NewWindowRequestedEventArgs`.  After you've asynchronously created the `CoreWebView2` and set the `NewWindow` property on the `NewWindowRequestedEventArgs`, call `Complete` on the `Deferral` object that's returned by the `GetDeferral` method.
 
-### Deferrals in C#
+
+<!-- ------------------------------ -->
+#### Deferrals in C#
 
 When using a `Deferral` in C#, the best practice is to use it with a `using` block. The `using` block ensures that the `Deferral` is completed even if an exception is thrown in the middle of the `using` block. If instead, you have code to explicitly call `Complete`, but an exception is thrown before your `Complete` call occurs, then the deferral isn't completed until some time later, when the garbage collector eventually collects and disposes of the deferral. In the interim, the WebView2 waits for the app code to handle the event.
 

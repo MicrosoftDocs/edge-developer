@@ -77,7 +77,9 @@ void ScriptComponent::InjectScript()
 
 Events in the WebView2 Win32 C++ API use the `add_EventName` and `remove_EventName` method pair to subscribe and unsubscribe from events.  The `add_EventName` method takes an event handler delegate interface and gives back an `EventRegistrationToken` token as an output parameter.  The `remove_EventName` method takes an `EventRegistrationToken` token and unsubscribes the corresponding event subscription.
 
-### Event handler delegate interfaces
+
+<!-- ------------------------------ -->
+#### Event handler delegate interfaces
 
 Event handler delegate interfaces work similarly to the async method completed handler delegate interfaces.  You implement the event handler delegate interface and `CoreWebView2` sends a callback whenever the event runs.  
 

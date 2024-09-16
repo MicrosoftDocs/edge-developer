@@ -76,7 +76,9 @@ https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/202
 
     ![ArrayBuffer open in the Memory Inspector panel](./memory-inspector-tool-images/memory-inspector-panel.png)
 
-### Inspect multiple objects
+
+<!-- ------------------------------ -->
+#### Inspect multiple objects
 
 You can inspect multiple objects at the same time such as DataView and TypedArray.
 
@@ -85,6 +87,7 @@ With the demo webpage paused at the breakpoint, object `b2` in the **Scope** vie
 A new tab for the `b2` object opens next to the first tab, which represents the `buffer` object in Memory Inspector.
 
 ![Two ArrayBuffer tabs open in the Memory Inspector panel](./memory-inspector-tool-images/memory-inspector-panel-two.png)
+
 
 <!-- ====================================================================== -->
 ## Navigating in Memory Inspector
@@ -95,7 +98,9 @@ The Memory Inspector panel includes three types of content:
 * [Memory buffer](#memory-buffer)
 * [Value inspector](#value-inspector)
 
-### Navigation bar
+
+<!-- ------------------------------ -->
+#### Navigation bar
 
 ![Memory Inspector panel Navigation bar](./memory-inspector-tool-images/memory-inspector-panel-navigation-bar.png)
  
@@ -107,7 +112,9 @@ Use the far-left history arrows to **Go back in address history** (![Go back in 
 
 If the Memory buffer does not automatically update when stepping through values, click **Refresh** (![Memory buffer refresh](./memory-inspector-tool-images/memory-inspector-refresh.png)).
 
-### Memory buffer
+
+<!-- ------------------------------ -->
+#### Memory buffer
 
 ![Memory Inspector panel Memory buffer](./memory-inspector-tool-images/memory-inspector-panel-memory-buffer.png)
  
@@ -117,7 +124,9 @@ The **memory** is also shown in hex format, each byte separated by a space. The 
 
 The **ASCII representation** of the memory is shown on the right side of the panel. The highlighted character corresponds to the selected byte. You can click on any character or navigate using the arrow keys (left, right, up, and down).
 
-### Value inspector
+
+<!-- ------------------------------ -->
+#### Value inspector
 
 ![Memory Inspector panel Value inspector](./memory-inspector-tool-images/memory-inspector-panel-value-inspector.png)
  

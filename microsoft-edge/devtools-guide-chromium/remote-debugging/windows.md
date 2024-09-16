@@ -34,7 +34,9 @@ To set up the host (debuggee) machine:
 
 1. Activate [Developer Mode](/windows/apps/get-started/enable-your-device-for-development) and enable [Device Portal](/windows/uwp/debug-test-perf/device-portal)
 
-### Install and configure Microsoft Edge
+
+<!-- ------------------------------ -->
+#### Install and configure Microsoft Edge
 
 1. If you haven't already, on the Windows 10 or later device that you want to debug, install Microsoft Edge from [this page](https://www.microsoft.com/edge).
 
@@ -46,18 +48,21 @@ To set up the host (debuggee) machine:
 
 ![Setting 'Enable remote debugging through Windows Device Portal flag'](./windows-images/remote-debugging-windows-media-edge-flags-on-host.png)
 
-### Install the Remote Tools for Microsoft Edge (Beta)
+
+<!-- ------------------------------ -->
+#### Install the Remote Tools for Microsoft Edge (Beta)
 
 Install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).
 
-> [!NOTE]
-> The **Get** button for the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) may be disabled if you are on Windows 10 or later version 1809 or earlier.  To set up the host (debuggee) machine, it must be running Windows 10 version 1903 or later.  Update the host (debuggee) machine to acquire the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT).
+The **Get** button for the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) may be disabled if you are on Windows 10 or later version 1809 or earlier.  To set up the host (debuggee) machine, it must be running Windows 10 version 1903 or later.  Update the host (debuggee) machine to acquire the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT).
 
 ![The Remote Tools for Microsoft Edge (Beta) in the Microsoft Store](./windows-images/remote-debugging-windows-media-remote-tools-in-store.png)
 
 Launch the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) and, if prompted, accept the permissions dialog in the app.  You can now close the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) and you don't need to have it open for future remote debugging sessions.
 
-### Activate Developer Mode and enable Device Portal
+
+<!-- ------------------------------ -->
+#### Activate Developer Mode and enable Device Portal
 
 If you are on a WiFi network, make sure the network is marked as either **Domain** or **Private**.  You can verify the state by opening the **Windows Security** app, selecting **Firewall & network protection** and checking if your network is listed as a **Domain** network or **Private** network.
 
@@ -65,12 +70,11 @@ If your network is listed as **Public**, go to **Settings** > **Network & Intern
 
 Now, open the **Settings** app.  In **Find a setting**, enter `Developer settings` and select it.  Toggle on **Developer Mode**.  You can now turn on the **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You can then optionally turn **Authentication** on so that the client (debugger) device must provide the correct credentials to connect to this device.
 
-> [!NOTE]
-> If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT).  If  a **For developers** section isn't displayed in **Settings**, **Device Portal** may already be turned on, so try restarting the Windows 10 or later device instead.
+If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT).  If  a **For developers** section isn't displayed in **Settings**, **Device Portal** may already be turned on, so try restarting the Windows 10 or later device instead.
 
 ![The Settings app with Developer Mode and Device Portal configured](./windows-images/remote-debugging-windows-media-host-settings.png)
 
-Note the machine IP address and connection port displayed under **Connect using:**.  The IP address in the image below is `192.168.86.78` and the connection port is `50080`:
+Note the machine IP address and connection port that are displayed under **Connect using:**.  The IP address in the image below is `192.168.86.78` and the connection port is `50080`:
 
 ![Note the IP address and connection port in the Settings](./windows-images/remote-debugging-windows-media-host-settings-ip-address.png)
 
@@ -96,7 +100,9 @@ The client or debugger machine is the device you want to debug from.  This devic
 
 1. If you set up authentication for the host (debuggee) machine, you are prompted to enter the **Username** and **Password** for the client (debugger) machine to connect successfully.
 
-### Using https instead of http
+
+<!-- ------------------------------ -->
+#### Using https instead of http
 
 If you want to connect to the host (debuggee) machine using `https` instead of `http`:
 
@@ -116,8 +122,11 @@ If you want to connect to the host (debuggee) machine using `https` instead of `
 
 1. Now, when connecting to the host (debuggee) machine from the client (debugger) machine using the `edge://inspect` page, you must use a different `connection port` value.  By default, for desktop Windows, the Device Portal uses `50080` as the `connection port` for `http`.  For `https`, the Device Portal uses `50043` so follow this pattern: https://`IP address`:`50043` on the `edge://inspect` page.  [Read more about the default ports used by Device Portal](/windows/uwp/debug-test-perf/device-portal#setup).
 
-> [!NOTE]
-> The default port for `http` is `50080` and the default port for `https` is `50043`, but this isn't always the case, because Device Portal on desktop claims ports in the ephemeral range (\>50,000) to prevent collisions with existing port claims on the device.  To learn more, see the  [Port Settings](/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal) section for Device Portal on Windows desktop.
+
+<!-- ---------- -->
+###### Default ports
+
+The default port for `http` is `50080` and the default port for `https` is `50043`, but this isn't always the case, because Device Portal on desktop claims ports in the ephemeral range (\>50,000) to prevent collisions with existing port claims on the device.  To learn more, see the  [Port Settings](/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal) section for Device Portal on Windows desktop.
 
 
 <!-- ====================================================================== -->
@@ -131,14 +140,15 @@ Determine the content you want to debug, and then click **inspect**.  The Micros
 
 ![The Microsoft Edge DevTools on the client debugging a tab in Microsoft Edge on the host](./windows-images/remote-debugging-windows-media-devtools-client.png)
 
-### Inspect elements
+
+<!-- ------------------------------ -->
+#### Inspect elements
 
 For example, try inspecting an element.  Go to the **Elements** tool of your DevTools instance on the client, and hover on an element to highlight it in the viewport of the host device.
 
 You can also tap an element on your host device screen to select it in the **Elements** tool.  Select **Select Element** on your DevTools instance on the client, and then tap the element on your host device screen.
 
-> [!NOTE]
-> **Select Element** is disabled after the first touch, so you need to turn it on again every time you want to use this feature.
+**Select Element** is disabled after the first touch, so you need to turn it on again every time you want to use this feature.
 
 > [!IMPORTANT]
 > The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  This is a known issue and the team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.
@@ -157,19 +167,22 @@ You can interact with the screencast in multiple ways:
 *  To simulate a pinch gesture, hold **Shift** while dragging.
 *  To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.
 
-Some notes on screencasts:
+Notes about screencasts:
+
 *  Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge Address bar, the Windows 10 or later taskbar, and the Windows 10 or later keyboard.
+
 *  Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
+
 *  If your host device screen locks, the content of your screencast disappears.  Unlock your host device screen to automatically resume the screencast.
 
 
 <!-- ====================================================================== -->
-## Known Issues
+## Known issues<!-- todo: update -->
 
-The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  The team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.
+* The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  The team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.
 
-The **Cookies** pane in the **Application** panel is blank on Windows 10 version 1903.  The team plans to fix the **Cookies** pane in a service update to Windows 10 version 1903.
+* The **Cookies** pane in the **Application** panel is blank on Windows 10 version 1903.  The team plans to fix the **Cookies** pane in a service update to Windows 10 version 1903.
 
-The **Audits** tool, the **3D View** tool, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool aren't currently working as expected.  The team plans to fix the listed tools in a future update of Microsoft Edge.
+* The **Audits** tool, the **3D View** tool, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool aren't currently working as expected.
 
-The file explorer doesn't launch from the DevTools in the **Sources** tool or in the **Security** panel when you remote debug.  The team plans to fix the tools in a future update of Microsoft Edge.
+* The file explorer doesn't launch from the DevTools in the **Sources** tool or in the **Security** panel when you remote debug.

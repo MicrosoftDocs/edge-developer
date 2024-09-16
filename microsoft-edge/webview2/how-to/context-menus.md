@@ -373,7 +373,8 @@ You can:
 *  Add custom menu items to a default context menu, as shown below in "Adding custom menu items to a default context menu".
 
 
-### Adding custom menu items to a default context menu
+<!-- ------------------------------ -->
+#### Adding custom menu items to a default context menu
 
 To add custom menu items to the default context menu, use the following API items.
 
@@ -726,8 +727,9 @@ When the user selects a WebView2 context menu command (a default menu item that'
 
 ---
 
+
 <!-- -------------------------------------------------- -->
-### Custom menu items
+#### Custom menu items
 
 If your host app reports a custom menu item as the selected menu item, then the `CustomMenuItemSelected` event will be fired for the custom menu item.
 
