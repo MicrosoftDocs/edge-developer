@@ -102,11 +102,21 @@ To switch between views, use the dropdown list at the top of the **Memory** tool
 
 ![Switch views selector](./heap-snapshots-images/heap-snapshots-view-dropdown.png)
 
-> [!NOTE]
-> Not all properties are stored on the JavaScript heap.  Properties implemented using getters that run native code aren't captured.  Also, non-string values such as numbers aren't captured.
+
+<!-- ------------------------------ -->
+#### Items omitted from heap snapshots
+
+Properties that are implemented using getters that run native code aren't captured in the heap snapshot, because such properties are not stored on the JavaScript heap.
+
+Non-string values, such as numbers, aren't captured.
+
 
 <!-- ------------------------------ -->
 #### Summary view
+
+The **Summary** view in the **Memory** tool lists:
+* Object constructor groups.
+* Special category names, such as **(array)**, **(compiled code)**, or a list of properties such as **{foo, bar, baz}**.
 
 Initially, a heap snapshot opens in the **Summary** view, which displays a list of constructors:
 
@@ -124,35 +134,37 @@ For each constructor in the list, the **Summary** view also shows a number such 
 
 After expanding a constructor in the **Summary** view, all of the constructor's instances are displayed.  For each instance, the shallow and retained sizes are displayed in the corresponding columns.  The number after the `@` character is the unique ID of the object, allowing you to compare heap snapshots on per-object basis.
 
-###### Constructor entries in the Summary view
+
+<!-- ---------- -->
+###### Constructor entries
 
 The **Summary** view in the **Memory** tool lists object constructor groups:
 
 ![Constructor groups](./heap-snapshots-images/heap-snapshots-constructor-highlight.png)
 
-The constructor groups in the **Summary** view might be built-in functions such as `Array` or `Object` or they might be functions defined in your own code.
+The constructor groups in the **Summary** view might be built-in functions such as `Array` or `Object`, or they might be functions that are defined in your own code.
 
 To reveal the list of objects that were instantiated by a given constructor, expand the constructor group.
 
-###### Special category names in the Summary view
+
+<!-- ---------- -->
+###### Special category names
 
 <!-- from https://github.com/sethbrenith/sethbrenith.github.io/blob/main/heap-snapshot-names.md -->
 
-Curly braces: The Memory tool in DevTools shows objects as automatically categorized by interface.  Plain JS objects are not listed in a category named Object, but rather, they have names and categories that are based on the properties that the object contains, such as {foo, bar, baz}.
+The **Summary** view includes the following special category names, which aren't based on constructors.  Most of these category names are displayed in parentheses.
 
-The **Summary** view also<!-- todo: avoid "also"; make modular --> contains special category names that aren't based on constructors. These special categories are:
-
-<!-- todo: update to show curly braces-->
 | Category name | Description |
 |:--- |:--- |
 | **(array)** | Various internal array-like objects that don't directly correspond to objects visible from JavaScript, such as the contents of JavaScript arrays, or the named properties of JavaScript objects. |
 | **(compiled code)** | Internal data that V8 (Microsoft Edge's JavaScript engine) needs to run functions defined by JavaScript or WebAssembly. V8 automatically manages memory usage in this category: if a function runs many times, V8 uses more memory for that function so that the function runs faster. If a function hasn't run in a while, V8 might delete the internal data for that function. |
 | **(concatenated string)** | When two strings are concatenated together, such as when using the JavaScript `+` operator, V8 might choose to represent the result internally as a _concatenated string_. Rather than copying all of the characters of the two strings into a new string, V8 creates a small object which points to the two strings. |
-| **InternalNode**  | Objects allocated outside of V8, such as C++ objects defined by Blink, Microsoft Edge's rendering engine. |
 | **(object shape)** | Information about objects, such as the number of properties they have and a reference to their prototypes, which V8 maintains internally when objects are created and updated. This allows V8 to efficiently represent objects with the same properties. |
 | **(sliced string)** | When creating a substring, such as when using the JavaScript `substring` method, V8 might choose to create a _sliced string_ object rather than copying all of the relevant characters from the original string. This new object contains a pointer to the original string and describes which range of characters from the original string to use. |
-| **system / Context** | Local variables from a JavaScript scope which can be accessed by some nested function. Every function instance contains an internal pointer to the context in which it executes, so that it can access those variables. |
 | **(system)** | Various internal objects that haven't yet been categorized in any more meaningful way. |
+| **{foo, bar, baz}** | Plain JavaScript objects categorized by interface (property list).  Plain JavaScript objects are not listed in a category named **Object**, but are instead represented by names and categories that are based on the properties that the object contains, such as **{foo, bar, baz}**. |
+| **InternalNode**  | Objects allocated outside of V8, such as C++ objects defined by Blink, Microsoft Edge's rendering engine. |
+| **system / Context** | Local variables from a JavaScript scope which can be accessed by some nested function. Every function instance contains an internal pointer to the context in which it executes, so that it can access those variables. |
 
 
 <!-- ------------------------------ -->
@@ -208,6 +220,8 @@ In the following screenshot, a string object was selected in the **Summary** vie
 
 ![The Retainers section](./heap-snapshots-images/retainers-section.png)
 
+
+<!-- ---------- -->
 ###### Hide cycles
 
 In the **Retainers** section, when you analyze the objects which retain the selected object, you might encounter _cycles_. Cycles occur when the same object appears more than once in the retainer path of the selected object. In the **Retainers** section, a cycled object is indicated by being grayed out.
@@ -216,6 +230,8 @@ To help simplify the retainer path, hide cycles in the **Retainers** section by 
 
 ![The Filter edges dropdown menu in the Retainers section, 'Hide cycled' is selected](./heap-snapshots-images/filters-retainers-memory-tool-no-hide-cycled.png)
 
+
+<!-- ---------- -->
 ###### Hide internal nodes
 
 _Internal nodes_ are objects that are specific to V8 (the JavaScript engine in Microsoft Edge).
