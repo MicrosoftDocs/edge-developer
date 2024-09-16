@@ -16,7 +16,7 @@ The following features or updates have been launched on [Partner Center](https:/
 <!-- ====================================================================== -->
 ## Sidebar
 
-The sidebar feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.  See [Extensions in the Microsoft Edge sidebar](../developer-guide/sidebar.md).
+The sidebar feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.  See [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md).
 
 *Released June 2023*
 
@@ -82,7 +82,7 @@ You can add members from your organization and manage the settings on your Partn
 <!-- ====================================================================== -->
 ## Sign into Microsoft Partner Center using your GitHub account
 
-You can use your personal GitHub account credentials to sign into Microsoft Partner Center to submit your Microsoft Edge Extension.  See [Publish a Microsoft Edge extension by using a GitHub account](/microsoft-edge/extensions-chromium/publish/github).
+You can use your personal GitHub account credentials to sign into Microsoft Partner Center to submit your Microsoft Edge Extension.  See [Register and sign in to Partner Center using a GitHub account](/microsoft-edge/extensions-chromium/publish/github).
 
 *Released August 2021*
 
