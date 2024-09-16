@@ -20,7 +20,7 @@ To debug JavaScript code in a WebView2 control, first you install the **JavaScri
 
 In your running app, you then interact with a webpage that runs the JavaScript code, and the debugger pauses on the line of JavaScript code that has the breakpoint.  You then use the debugger panes in Visual Studio.
 
-These steps are detailed below.
+These steps are detailed below, using the main, Win32/C++ sample (WebView2APISample).
 
 
 <!-- ====================================================================== -->
@@ -48,7 +48,7 @@ When you debug your app in Visual Studio with the native debugger attached, pres
 <!-- ====================================================================== -->
 ## Install the JavaScript diagnostics component
 
-Next, use the **Visual Studio Installer** to install the **Desktop development with C++** workload of Visual Studio, including its **JavaScript diagnostics** component, as follows.  Or, if you are using a language workload other than C++, select that workload's **JavaScript diagnostics** component, similar to the below steps.
+Use the **Visual Studio Installer** to install the **Desktop development with C++** workload of Visual Studio, including its **JavaScript diagnostics** component, as follows.  Or, if you are using a language workload other than C++, select that workload's **JavaScript diagnostics** component, similar to the below steps.
 
 1. If not done already, clone the WebView2Samples repo, as described in [Clone the WebView2Samples repo](./machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
