@@ -163,7 +163,6 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Home | **Alt+Home**, **Browser Home Key** |
 | Show App Menu | **Alt+E**, **Alt+F** |
 | Show Favorites | **Ctrl+Shift+O** |
-| Show Downloads | **Ctrl+J** |
 | Show History | **Ctrl+H** |
 | Show Reading Mode Bar `*` | **Shift+Alt+R** |
 | Show Collections `*` | **Ctrl+Shift+Y** |
@@ -204,6 +203,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Open / Close DevTools | **Ctrl+Shift+I** |
 | Open DevTools Console | **Ctrl+Shift+J** |
 | Open DevTools Inspect | **Ctrl+Shift+C** |
+| Show Downloads | **Ctrl+J** |
 
 
 ### Customizing an individual key

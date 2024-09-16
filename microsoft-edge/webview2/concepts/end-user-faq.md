@@ -10,7 +10,7 @@ ms.date: 03/30/2023
 ---
 # WebView2 end-user FAQ
 
-This Frequently Asked Questions (FAQ) page is for end users, to explain the **WebView2** or **msedgewebview2.exe** processes that are listed in Task Manager.  See also [Contact the WebView2 Team](../contact.md).
+This Frequently Asked Questions (FAQ) page is for end users, to explain the **WebView2** or **msedgewebview2.exe** processes that are listed in Task Manager.  See also [Contact the WebView2 team](../contact.md).
 
 
 <!-- ====================================================================== -->
@@ -81,4 +81,4 @@ Many apps that are built on WebView2 perform checks to re-install WebView2 when 
 ## See also
 
 * [Introduction to Microsoft Edge WebView2](../index.md)
-* [Contact the WebView2 Team](../contact.md)
+* [Contact the WebView2 team](../contact.md)
