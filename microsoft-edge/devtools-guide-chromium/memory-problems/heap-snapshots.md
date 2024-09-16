@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 09/03/2024
+ms.date: 09/16/2024
 ---
 <!-- Copyright Meggin Kearney
 
@@ -152,7 +152,7 @@ To reveal the list of objects that were instantiated by a given constructor, exp
 
 <!-- from https://github.com/sethbrenith/sethbrenith.github.io/blob/main/heap-snapshot-names.md -->
 
-The **Summary** view includes the following special category names, which aren't based on constructors.  Most of these category names are displayed in parentheses.
+The **Summary** view in the **Memory** tool includes the following special category names, which aren't based on constructors.  Most of these category names are displayed in parentheses.
 
 | Category name | Description |
 |:--- |:--- |
@@ -162,7 +162,7 @@ The **Summary** view includes the following special category names, which aren't
 | **(object shape)** | Information about objects, such as the number of properties they have and a reference to their prototypes, which V8 maintains internally when objects are created and updated. This allows V8 to efficiently represent objects with the same properties. |
 | **(sliced string)** | When creating a substring, such as when using the JavaScript `substring` method, V8 might choose to create a _sliced string_ object rather than copying all of the relevant characters from the original string. This new object contains a pointer to the original string and describes which range of characters from the original string to use. |
 | **(system)** | Various internal objects that haven't yet been categorized in any more meaningful way. |
-| **{foo, bar, baz}** | Plain JavaScript objects categorized by interface (property list).  Plain JavaScript objects are not listed in a category named **Object**, but are instead represented by names and categories that are based on the properties that the object contains, such as **{foo, bar, baz}**. |
+| **{foo, bar, baz}** | Plain JavaScript objects categorized by interface (property list), in curly braces.  Plain JavaScript objects are not listed in a category named **Object**, but are instead represented by names and categories that are based on the properties that the object contains, such as **{foo, bar, baz}**. |
 | **InternalNode**  | Objects allocated outside of V8, such as C++ objects defined by Blink, Microsoft Edge's rendering engine. |
 | **system / Context** | Local variables from a JavaScript scope which can be accessed by some nested function. Every function instance contains an internal pointer to the context in which it executes, so that it can access those variables. |
 
