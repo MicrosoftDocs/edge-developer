@@ -20,7 +20,7 @@ Use the Sidebar API to make your new or existing Microsoft Edge extension appear
 
 Sidebar extensions are not yet in a stable release of Microsoft Edge.
 
-See [Extensions in the Microsoft Edge sidebar](../developer-guide/sidebar.md).
+See [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md).
 
 
 <!-- ====================================================================== -->
