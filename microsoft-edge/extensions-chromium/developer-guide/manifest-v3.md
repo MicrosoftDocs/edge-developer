@@ -99,7 +99,12 @@ For enterprises, Manifest V2 extensions will continue to be supported through En
 
 <!-- todo: when to use twitter, techcommunity, or github forum? -->
 
-Microsoft continues to iteratively improve the platform and address the feedback shared by extension developers.  Share your questions, comments, and concerns with the team on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or via the [Microsoft Edge Insider forums on TechCommunity](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
+Microsoft continues to iteratively improve the platform and address the feedback shared by extension developers.  Share your questions, comments, and concerns:
+* [Contact the Microsoft Edge extensions team](../publish/contact-extensions-team.md)
+* [Microsoft Edge Insider](https://techcommunity.microsoft.com/t5/microsoft-edge-insider/ct-p/MicrosoftEdgeInsider) - forum about Microsoft Edge at Microsoft Tech Community.
+* [@MSEdgeDev](https://twitter.com/msedgedev/) - Microsoft Edge team on X (Twitter).
+
+<!-- deleted, n/a, 2020: https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254 -->
 
 Use the [MicrosoftEdge-Extensions discussion forum](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) at GitHub to:
 * Flag an issue.

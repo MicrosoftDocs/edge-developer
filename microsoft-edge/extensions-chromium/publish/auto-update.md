@@ -1,5 +1,5 @@
 ---
-title: Automatically update extensions in Microsoft Edge
+title: Automatically update an extension in Microsoft Edge
 description: Learn about automatic updates to extensions in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 11/04/2022
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Automatically update extensions in Microsoft Edge
+# Automatically update an extension in Microsoft Edge
 
 > [!NOTE]
 > This article doesn't apply to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You can use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).

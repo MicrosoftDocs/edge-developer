@@ -10,7 +10,7 @@ ms.date: 11/01/2022
 ---
 # Register as a Microsoft Edge extension developer
 
-If you're new to Partner Center, this article will help you create a Partner Center account that you can use to submit Microsoft Edge extensions to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
+If you're new to Partner Center, this article will help you create a Partner Center account that you can use to submit Microsoft Edge extensions to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account types](#account-types) below.
 
 If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link to a suitable account. You'll learn how to create a Microsoft account (MSA) if you don't have one, and help you link the Microsoft account (MSA) to your Partner Center account.
 
@@ -44,7 +44,7 @@ If you don't have a Partner Center account, or you have a Partner Center account
 
 To create a Microsoft account (MSA):
 
-1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Publish a Microsoft Edge extension by using a GitHub account](github.md).
+1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Register and sign in to Partner Center using a GitHub account](github.md).
 
 1. If you aren't using your GitHub account to create the Microsoft account (MSA), see [account.microsoft.com](https://account.microsoft.com/account).
 
@@ -66,7 +66,7 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
 
 1.  If you have a Microsoft account (MSA), use it to sign into Partner Center.  A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.  Then fill in the Microsoft Edge program registration form, using the registration form in the next section.
 
-1.  If you don't have a Microsoft account (MSA), either create a new Microsoft account (MSA) directly, or sign in to Partner Center by using your GitHub account using the next step.  The Partner Center account must have a Primary Owner that's a Microsoft account (MSA).  If you want to sign in to Partner Center using your existing personal GitHub account, open [Publish a Microsoft Edge extension by using a GitHub account](github.md) in a new tab or window, and follow the steps in the article.  Your GitHub account will be linked to an automatically created Microsoft account (MSA) whose credentials you can use to register for the Microsoft Edge program.
+1.  If you don't have a Microsoft account (MSA), either create a new Microsoft account (MSA) directly, or sign in to Partner Center by using your GitHub account using the next step.  The Partner Center account must have a Primary Owner that's a Microsoft account (MSA).  If you want to sign in to Partner Center using your existing personal GitHub account, open [Register and sign in to Partner Center using a GitHub account](github.md) in a new tab or window, and follow the steps in the article.  Your GitHub account will be linked to an automatically created Microsoft account (MSA) whose credentials you can use to register for the Microsoft Edge program.
 
 1.  After you sign in, a registration form is displayed, to enroll in the Microsoft Edge program.  To help you fill in the registration form, see the next section.
 
@@ -87,7 +87,7 @@ This field is either where you live, or where your business is located.
 > [!IMPORTANT]
 > After enrollment, the value of this field is read-only.
 
-#### Account type
+#### Account types
 
 The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts.  The accounts are described in detail in the following sections.  Both account types enable you to publish extensions to the Microsoft Edge Add-ons website.
 
@@ -102,7 +102,7 @@ An individual account is appropriate for a developer not associated with a compa
 
 A company account is associated with an organization or business.  The account verification process is longer and involves confirmation that you're authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
 
-For a company account, it's crucial to verify your Microsoft Edge program information when you enroll into a new Partner Center program. This verification is needed to publish extensions to the Microsoft Edge Add-ons store. See [Verify your Microsoft Edge Partner Center program information](verify-microsoft-edge-program.md).
+For a company account, it's crucial to verify your Microsoft Edge program information when you enroll into a new Partner Center program.  This verification is needed to publish extensions to the Microsoft Edge Add-ons store.  See [Verify your company account information](verify-microsoft-edge-program.md).
 
 #### Publisher display name
 
