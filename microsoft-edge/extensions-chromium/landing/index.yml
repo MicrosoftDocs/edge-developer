@@ -1,0 +1,215 @@
+### YamlMime:Landing
+# landing page for Extensions portion of docset
+title: Microsoft Edge Extensions documentation
+summary: Develop an extension (add-on) for Microsoft Edge.
+
+metadata:
+  # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
+  # description: default to root title above. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-edge
+  ms.subservice: extensions
+  ms.topic: landing-page
+  # ms.collection: collection # Optional; Remove if no collection is used.
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 09/17/2024
+
+# =============================================================================
+# Valid article types (sections of a card)
+
+      # - linkListType: architecture
+      # - linkListType: concept
+      # - linkListType: deploy
+      # - linkListType: download
+      # - linkListType: get-started
+      # - linkListType: how-to-guide
+      # - linkListType: learn
+      # - linkListType: overview
+      # - linkListType: quickstart
+      # - linkListType: reference
+      # - linkListType: sample
+      # - linkListType: tutorial
+      # - linkListType: video
+      # - linkListType: whats-new
+
+# =============================================================================
+landingContent:
+
+# =============================================================================
+# Card r1c1
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Overview of Microsoft Edge extensions
+            url: ../index.md
+
+          - text: Extension concepts and architecture
+            url: ../getting-started/index.md
+
+          - text: Create an extension tutorial, part 1
+            url: ../getting-started/part1-simple-extension.md
+
+          - text: Create an extension tutorial, part 2
+            url: ../getting-started/part2-content-scripts.md
+
+          - text: Sideload an extension
+            url: ../getting-started/extension-sideloading.md
+
+      - linkListType: whats-new
+        links:
+          - text: Released features for Microsoft Edge Add-ons
+            url: ../whats-new/released-features.md
+
+          - text: Roadmap for Microsoft Edge Add-ons
+            url: ../whats-new/roadmap.md
+
+          - text: Contact the Microsoft Edge extensions team
+            url: ../publish/contact-extensions-team.md
+
+# =============================================================================
+# Card r1c2
+  - title: Manifests and JavaScript APIs
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Overview and timelines for migrating to Manifest V3
+            url: ../developer-guide/manifest-v3.md
+
+          - text: Migrate an extension from Manifest V2 to V3
+            url: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+
+          - text: Supported APIs for Microsoft Edge extensions
+            url: ../developer-guide/api-support.md
+
+          - text: Declare API permissions in the manifest
+            url: ../developer-guide/declare-permissions.md
+
+      - linkListType: reference
+        links:
+          - text: Manifest file format for extensions
+            url: ../getting-started/manifest-format.md
+
+          - text: Using Content Security Policy (CSP) to control which resources can be run
+            url: ../developer-guide/csp.md
+
+# =============================================================================
+# Card r1c3
+  - title: Develop an extension
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Port a Chrome extension to Microsoft Edge
+            url: ../developer-guide/port-chrome-extension.md
+ 
+      - linkListType: concept
+        links:
+          - text: Create an extension that customizes the DevTools UI
+            url: ../developer-guide/devtools-extension.md
+
+          - text: Develop an extension for the Microsoft Edge sidebar
+            url: ../developer-guide/sidebar.md
+
+          - text: Native messaging
+            url: ../developer-guide/native-messaging.md
+
+          - text: Defining match patterns for an extension to access file URLs
+            url: ../developer-guide/match-patterns.md
+
+      - linkListType: deploy
+        links:
+          - text: App Developer Agreement Addendum for Microsoft Edge program users
+            url: /legal/microsoft-edge/extensions/ada-addendum
+
+          - text: Developer policies for the Microsoft Edge Add-ons store
+            url: /legal/microsoft-edge/extensions/developer-policies
+
+# =============================================================================
+# Card r2c1
+  - title: Register as a developer
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Register as a Microsoft Edge extension developer
+            url: ../publish/create-dev-account.md
+
+          - text: Verify your company account information  # enterprise
+            url: ../publish/verify-microsoft-edge-program.md
+
+          - text: Add users to the Microsoft Edge program  # enterprise
+            url: ../publish/aad-account.md
+
+          - text: Register and sign in to Partner Center using a GitHub account
+            url: ../publish/github.md
+
+# =============================================================================
+# Card r2c2
+  - title: Publish an extension
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Publish a Microsoft Edge extension
+            url: ../publish/publish-extension.md
+
+          - text: Extension hosting
+            url: ../publish/hosting-and-updating.md
+
+          - text: Submission states for extensions in the Microsoft Edge Add-ons website
+            url: ../publish/submission-states.md
+
+          - text: Manage account settings
+            url: ../publish/manage-settings.md
+
+          - text: Alternative ways to distribute an extension
+            url: ../developer-guide/alternate-distribution-options.md
+
+      - linkListType: concept
+        links:
+          - text: Curation and review process for the Edge Add-ons store
+            url: ../publish/add-ons-store-curation.md
+
+# =============================================================================
+# Card r2c3
+  - title: Update an extension
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Update a Microsoft Edge extension
+            url: ../publish/update-extension.md
+
+          - text: Set an extension to automatically update
+            url: ../publish/auto-update.md
+
+          - text: Using the Microsoft Edge Add-ons REST API
+            url: ../publish/api/using-addons-api.md
+
+      - linkListType: reference
+        links:
+          - text: REST API Reference for Microsoft Edge Add-ons
+            url: ../publish/api/addons-api-reference.md
+
+# =============================================================================
+# Card r3c1
+  - title: Analytics and reviews
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View Microsoft Edge extensions analytics dashboard
+            url: ../publish/extensions-analytics.md
+
+          - text: Reply to user reviews of an extension
+            url: ../publish/reply-user-reviews.md
+
+# =============================================================================
+# Card r3c2
+  - title: Best practices and samples
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Best practices for extensions
+            url: ../developer-guide/best-practices.md
+
+      - linkListType: sample
+        links:
+          - text: Samples for Microsoft Edge extensions
+            url: ../samples.md
