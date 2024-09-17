@@ -980,6 +980,9 @@
 # =============================================================================
     - name: Microsoft Edge extensions
       items:
+        - name: Microsoft Edge extensions documentation
+          href: ./extensions-chromium/landing/index.yml  # landing page
+          displayName: add-ons, landing
 
         - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
@@ -1064,12 +1067,10 @@
                   displayName: policy
 
 # -------------------------------------
-        - name: Publish an extension
+        - name: Register as an extension developer
           items:
-            - name: Register as an individual developer
-              items:
-                - name: Register as a Microsoft Edge extension developer
-                  href: extensions-chromium/publish/create-dev-account.md
+            - name: Register as a Microsoft Edge extension developer
+              href: extensions-chromium/publish/create-dev-account.md
 
             - name: Register as an enterprise developer
               items:
@@ -1082,6 +1083,12 @@
             - name: Register and sign in to Partner Center using a GitHub account
               href: extensions-chromium/publish/github.md
 
+            - name: Manage account settings
+              href: extensions-chromium/publish/manage-settings.md
+
+# -------------------------------------
+        - name: Publish an extension
+          items:
             - name: Publish a Microsoft Edge extension
               href: extensions-chromium/publish/publish-extension.md
 
@@ -1091,9 +1098,6 @@
             - name: Submission states for extensions in the Microsoft Edge Add-ons website
               href: extensions-chromium/publish/submission-states.md
 
-            - name: Manage account settings
-              href: extensions-chromium/publish/manage-settings.md
-
             - name: Alternative ways to distribute an extension
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
 
@@ -1101,7 +1105,7 @@
               href: extensions-chromium/publish/add-ons-store-curation.md
 
 # -------------------------------------
-        - name: Manage and maintain an extension
+        - name: Update an extension
           items:
             - name: Update a Microsoft Edge extension
               href: extensions-chromium/publish/update-extension.md
@@ -1114,9 +1118,12 @@
                 - name: REST API Reference for Microsoft Edge Add-ons
                   href: extensions-chromium/publish/api/addons-api-reference.md
 
-            - name: Automatically update an extension in Microsoft Edge
+            - name: Set an extension to automatically update
               href: extensions-chromium/publish/auto-update.md
 
+# -------------------------------------
+        - name: Analytics and user reviews
+          items:
             - name: View Microsoft Edge extensions analytics dashboard
               href: extensions-chromium/publish/extensions-analytics.md
 
