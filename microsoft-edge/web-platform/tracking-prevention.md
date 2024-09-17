@@ -148,6 +148,7 @@ The following are the enforcement actions and mitigations that are applied to ea
 | **Balanced** | S | - | S | B | B | S | S | Enabled | Enabled |
 | **Strict** | B | B | S | B | B | B | B | Enabled | Disabled |
 
+About the table:
 *  The column headers are the categories of trackers as defined by the tracking protection list categories that are listed in disconnect.me [services.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json).
 *  The left column lists the three levels of tracking prevention in Microsoft Edge (Basic, Balanced, and Strict).
 *  `S` indicates that storage access is blocked.
