@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 09/16/2024
+ms.date: 09/17/2024
 ---
 # Debug WebView2 apps with Visual Studio
 
@@ -22,7 +22,7 @@ To debug JavaScript code in a WebView2 control:
 
 1. Set a breakpoint on a line of JavaScript code.
 
-1. In the project's **Properties** > **Debugging** page, set the **Local Windows Debugger** property  to **JavaScript (WebView2)** (instead of **Auto** or **Native**).
+1. In the project's **Properties** > **Debugging** page, set **Debugger Type** to **JavaScript (WebView2)** (instead of **Auto** or **Native**).
 
 1. Start the debugger, as usual.  For example, in the menu bar, select **Debug** > **Start Debugging (F5)**.
 
@@ -80,25 +80,25 @@ Use the **Visual Studio Installer** to install the **Desktop development with C+
 
 1. Click the **Modify** button.
 
-Continue with [Enable script debugging for WebView2 apps](#enable-script-debugging-for-webview2-apps), below.
+Continue with the next section, below.
 
 
 <!-- ====================================================================== -->
-## Enable script debugging for WebView2 apps
+## Select the JavaScript (WebView2) debugger
 
-Second, enable script debugging for WebView2 apps, as follows.  The following steps walk you through:
-* Opening the Win32APISample sample in Visual Studio 2022.
-* Working within your own working branch of the WebView2Samples repo, where some of the project files are modified during updating to Visual Studio 2022.
+Next, enable script debugging for WebView2 apps, as follows.
 
-1. If not done already, do the steps in [Win32 sample app](../samples/webview2apissample.md) so that the WebView2APISample app builds and runs.  Or open your own WebView2 app project in Visual Studio.
+1. If not done already, do the steps in [Win32 sample app](../samples/webview2apissample.md) so that the WebView2APISample app builds and runs.  The **WebView2Samples** solution should be open in Visual Studio, and the sample app should not be running.  Or, open your own WebView2 app project in Visual Studio.
 
-1. In Visual Studio 2022, in Solution Explorer, right-click the **WebView2APISample** project (or your own project), and then select **Properties**.
+1. In Visual Studio, in Solution Explorer, right-click the **WebView2APISample** project (or your own project), and then select **Properties**.
 
-1. Under **Configuration Properties**, select **Debugging**.
+   The **Property Pages** dialog opens.
 
-1. For **Debugger Type**, select **JavaScript (WebView2)**, and then click the **OK** button:
+1. On the left, expand **Configuration Properties**, and then select **Debugging**.
 
-   ![The 'Debugging' configuration property in Visual Studio](./debug-visual-studio-images/enb-js.png)<!-- WebView2APISample -->
+1. To the right of **Debugger Type**, select **JavaScript (WebView2)**, and then click the **OK** button:
+
+   ![The "Debugging" > "Local Windows debugger" > "Debugger type" property in Visual Studio](./debug-visual-studio-images/enb-js.png)<!-- WebView2APISample -->
 
 
 <!-- ====================================================================== -->
