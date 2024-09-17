@@ -1118,7 +1118,7 @@
                 - name: REST API Reference for Microsoft Edge Add-ons
                   href: extensions-chromium/publish/api/addons-api-reference.md
 
-            - name: Automatically update an extension in Microsoft Edge
+            - name: Set an extension to automatically update
               href: extensions-chromium/publish/auto-update.md
 
 # -------------------------------------

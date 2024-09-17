@@ -12,7 +12,7 @@ metadata:
   # ms.collection: collection # Optional; Remove if no collection is used.
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 02/15/2024
+  ms.date: 09/17/2024
 
 # =============================================================================
 # Valid article types (sections of a card)
@@ -34,9 +34,6 @@ metadata:
 
 # =============================================================================
 landingContent:
-
-# todo: convert PR2899 toc to cards
-# https://github.com/MicrosoftDocs/edge-developer/pull/2899/files#diff-ee2ce4f25251cfbee0656b0e57a5e2400000a29db0a53f90a9584f61985b583e
 
 # =============================================================================
 # Card r1c1
@@ -180,7 +177,7 @@ landingContent:
           - text: Update a Microsoft Edge extension
             url: ../publish/update-extension.md
 
-          - text: Automatically update an extension in Microsoft Edge
+          - text: Set an extension to automatically update
             url: ../publish/auto-update.md
 
           - text: Using the Microsoft Edge Add-ons REST API
