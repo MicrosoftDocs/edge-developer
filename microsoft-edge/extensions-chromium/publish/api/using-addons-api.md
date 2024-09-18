@@ -81,20 +81,27 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
    * **Expiry date**
    * **Access token URL** (for REST Publish API v1)
 
-   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)
+   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)<!-- todo: update per v2; maybe show a v2 png and then a v1 png -->
 
 1. Write down the following:
    * The **Client ID**.
    * The **Client secret** (REST Publish API v1) or **API key** (REST Publish API v2).
    * The **Access token URL** (REST Publish API v1).
 
-   You'll use these values in the next step, to get an access token
+   You'll use these values in the next step, to get an access token.
+
+<!-- todo: update steps to mention selecting v2 vs v1.
+Add screenshot png?
+What's the title of the page that contains the UI control to select v1 vs v2?
+What's the label of the UI control?
+Is the UI control an Option button, or a Button?
+-->
 
 > [!IMPORTANT]
 > Applies to REST Publish API v1, not v2:
 > Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials).  This particular secret isn't shown again.
 
-You can generate multiple client secrets for your client ID.  For example, you can create multiple secrets for multiple projects.
+You can generate multiple client secrets (if using v1) for your client ID.  For example, you can create multiple secrets for multiple projects.
 
 When using REST Publish API v2, the ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
 
