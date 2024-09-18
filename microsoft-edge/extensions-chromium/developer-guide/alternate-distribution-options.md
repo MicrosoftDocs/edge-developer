@@ -52,23 +52,23 @@ The following examples use `1.0` as the version, and `aaaaaaaabbbbbbbbccccccccdd
 
 To distribute your extension using the Windows registry:
 
-1. Find or create the following key in the registry:
-   * 32-bit Windows: `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`
-   * 64-bit Windows: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`
+1.  Find or create the following key in the registry:
+    *   32-bit Windows: `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`
+    *   64-bit Windows: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`
 
-1. Create a new key, or folder, under **Extensions** with the same name as the ID of your extension. For example, create the key with the name `aaaaaaaabbbbbbbbccccccccdddddddd`.
+1.  Create a new key, or folder, under **Extensions** with the same name as the ID of your extension. For example, create the key with the name `aaaaaaaabbbbbbbbccccccccdddddddd`.
 
-1. In the **Extensions** key, create the `update_url` property, and set the value to `https://edge.microsoft.com/extensionwebstorebase/v1/crx`.  The `update_url` property points to the `.crx` file of your extension in the Microsoft Edge Add-ons website.
+1.  In the **Extensions** key, create the `update_url` property, and set the value to `https://edge.microsoft.com/extensionwebstorebase/v1/crx`.  The `update_url` property points to the `.crx` file of your extension in the Microsoft Edge Add-ons website.
 
-   ```json
-   {
-      "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
-   }
-   ```
+    ```json
+    {
+        "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+    }
+    ```
 
-   If you want to install an extension from the Chrome Web Store, set the value of `update_url` to `https://clients2.google.com/service/update2/crx`.
+    If you want to install an extension from the Chrome Web Store, set the value of `update_url` to `https://clients2.google.com/service/update2/crx`.
 
-1. In Microsoft Edge, go to `edge://extensions`, and then verify that your extension is listed.
+1.  In Microsoft Edge, go to `edge://extensions`, and then verify that your extension is listed.
 
 
 <!-- ====================================================================== -->
