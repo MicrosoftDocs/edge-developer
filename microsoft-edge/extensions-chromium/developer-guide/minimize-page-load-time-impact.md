@@ -237,7 +237,7 @@ onmessage = event => {
   const type = event.data.type;
   const data = event.data.data;
 
-  // Do something with the type and data
+  // Do something with the type and data.
   // ...
 
   // Send a message back.
