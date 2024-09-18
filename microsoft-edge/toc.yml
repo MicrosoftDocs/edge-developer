@@ -1136,7 +1136,7 @@
           items:
             - name: Best practices for extensions
               href: extensions-chromium/developer-guide/best-practices.md
-            - name: Minimize your extension's impact on page load time
+            - name: Minimize an extension's impact on page load time
               href: extensions-chromium/developer-guide/minimize-page-load-time-impact.md
 
 # -------------------------------------

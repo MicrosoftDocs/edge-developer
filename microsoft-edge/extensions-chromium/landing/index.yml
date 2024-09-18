@@ -209,7 +209,7 @@ landingContent:
           - text: Best practices for extensions
             url: ../developer-guide/best-practices.md
 
-          - text: Minimize your extension's impact on page load time
+          - text: Minimize an extension's impact on page load time
             url: ../developer-guide/minimize-page-load-time-impact.md
 
       - linkListType: sample
