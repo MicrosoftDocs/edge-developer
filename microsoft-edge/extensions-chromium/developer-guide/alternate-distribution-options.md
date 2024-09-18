@@ -9,6 +9,10 @@ ms.subservice: extensions
 ms.date: 05/05/2023
 ---
 # Alternative ways to distribute an extension
+<!-- alts:
+# Use alternative installation methods 
+per https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions
+-->
 
 Generally, extensions are distributed through the Microsoft Edge Add-ons website. There are some scenarios where developers may need to distribute extensions using alternate methods. For example:
 
@@ -16,12 +20,15 @@ Generally, extensions are distributed through the Microsoft Edge Add-ons website
 
 1. Network administrators want to distribute an extension throughout their organization.
 
-Extensions that aren't loaded from the Edge Add-ons store are referred to as externally installed extensions. The following are alternate methods of distributing externally installed extensions:
+Extensions that aren't loaded from the Edge Add-ons store are referred to as _externally installed extensions_. The following are alternate methods of distributing externally installed extensions:
 
 *  Use the Windows registry (Windows only).
 *  Use a preferences JSON file (macOS and Linux).
 
 These approaches are described below.
+
+See also:
+* [Set an externally installed extension to automatically update](../publish/auto-update.md)
 
 
 <!-- ====================================================================== -->
@@ -147,8 +154,8 @@ To update your extension to a new version, update the `version` string in the ex
 
 You may need to uninstall externally installed extensions, which were installed as part of a bundle of software that was previously installed on the machine.  To uninstall your extension, remove your preferences JSON file or remove the key from the registry.
 
-
 See also:
+* [Set an externally installed extension to automatically update](../publish/auto-update.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
 
 
@@ -158,6 +165,24 @@ See also:
 The policies for `ExtensionInstallForcelist`, block list, and `ExtensionSettings` are used when enterprises want to install or block specific extensions on the client machines.  Extensions and their origin that are configured in [ExtensionInstallForcelist](/deployedge/microsoft-edge-policies#extensioninstallforcelist), [ExtensionInstallSources](/deployedge/microsoft-edge-policies#extensioninstallsources), or [ExtensionSettings](/deployedge/microsoft-edge-policies#extensionsettings) take precedence over [BlockExternalExtensions](/deployedge/microsoft-edge-policies#blockexternalextensions).
 
 If the `BlockExternalExtensions` policy is set to `Not Configured` or `Disabled`, that doesn't have any effect.  If the `BlockExternalExtensions` policy is set to `Enabled`, external extension installation (by third party software) is prevented.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article -->
+
+* [Set an externally installed extension to automatically update](../publish/auto-update.md)
+* [Manifest file format for extensions](../getting-started/manifest-format.md)
+
+Microsoft Edge Enterprise docs:
+* [Microsoft Edge - Policies](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies)
+   * [ExtensionInstallForcelist](/deployedge/microsoft-edge-policies#extensioninstallforcelist)
+   * [ExtensionInstallSources](/deployedge/microsoft-edge-policies#extensioninstallsources)
+   * [ExtensionSettings](/deployedge/microsoft-edge-policies#extensionsettings)
+   * [BlockExternalExtensions](/deployedge/microsoft-edge-policies#blockexternalextensions)
+
+Chrome Extensions docs:
+* [Use alternative installation methods](https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions)<!-- todo: maybe remove link after update present article.  = [here] link below -->
 
 
 <!-- ====================================================================== -->

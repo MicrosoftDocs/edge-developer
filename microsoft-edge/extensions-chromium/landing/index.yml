@@ -177,7 +177,7 @@ landingContent:
           - text: Update a Microsoft Edge extension
             url: ../publish/update-extension.md
 
-          - text: Set an extension to automatically update
+          - text: Set an externally installed extension to automatically update
             url: ../publish/auto-update.md
 
           - text: Using the Microsoft Edge Add-ons REST API

@@ -1,5 +1,5 @@
 ---
-title: Set an extension to automatically update
+title: Set an externally installed extension to automatically update
 description: Set up a Microsoft Edge extension (add-on) to automatically update in users' instances of Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 11/04/2022
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Set an extension to automatically update
+# Set an externally installed extension to automatically update
 
 <!-- todo: 
 update article per https://developer.chrome.com/docs/apps/autoupdate 
