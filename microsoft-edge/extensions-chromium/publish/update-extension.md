@@ -12,13 +12,16 @@ ms.date: 11/04/2022
 
 You can update a submitted extension or remove a published extension listing from the Microsoft Edge Add-ons website at any time.
 
+See also:
+* [Set an externally installed extension to automatically update](https://review.learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/auto-update?branch=pr-en-us-3269) - for extensions that don't use Partner Center and the Microsoft Edge Add-ons website.
+
 
 <!-- ====================================================================== -->
 ## Update an existing extension in the Microsoft Edge Add-ons website
 
-To update your extension on the store, follow these steps:
+To update your extension that's at the store (the Microsoft Edge Add-ons website):
 
-1.  Go to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you want to update.
+1.  Go to your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you want to update.
 
 1.  Update either the extension package or the metadata of the extension.  If you update the extension package, make sure that you increase the version number in the manifest file.
 
@@ -34,11 +37,11 @@ After your extension has been created initially, you can update your extension b
 
 While your extension is in the certification stage, and before it gets published to the Microsoft Edge Add-ons website, you can update it. If your extension fails the certification process, you might also need to update your extension.
 
-To check the status of your extension, go to the dashboard associated with your listing on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).
+To check the status of your extension, go to the dashboard associated with your listing at your Partner Center developer dashboard.
 
-To edit your submission, follow these steps:
+To edit your submission:
 
-1. Go to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you want to update.  The information you filled out during the previous submission is displayed.
+1. Go to your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you want to update.  The information you filled out during the previous submission is displayed.
 
 1. To open the **Extension overview** section, use the left navigation bar.  To cancel the current submission, select **Cancel submission**.
 
@@ -54,9 +57,9 @@ To edit your submission, follow these steps:
 
 After your extension failed the certification process, you need to update your extension and resubmit your extension, incorporating the feedback you got.
 
-To edit your extension, follow these steps:
+To edit your extension:
 
-1. Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that failed the certification process.
+1. Go to your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that failed the certification process.
 
 1. Update either the extension package or the metadata, incorporating the feedback received from the certification process.  If you update the extension package, make sure that you increase the version in the manifest file.
 
@@ -66,12 +69,21 @@ To edit your extension, follow these steps:
 <!-- ====================================================================== -->
 ## Remove an extension from the Microsoft Edge Add-ons website
 
-To remove an extension, follow these steps:
+To remove an extension:
 
-1. Go to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  From the Dashboard page, select the listing to remove.
+1. Go to your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  From the Dashboard page, select the listing to remove.
 
 1. Select **Extension Overview** on your listing.
 
 1. Select **Unpublish** to remove the listing from the Microsoft Edge Add-ons website.
 
 The extension is now removed from the Microsoft Edge Add-ons website.  Users who already installed your extension can continue to use it, but the extension isn't available to new users.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article -->
+
+* [Set an externally installed extension to automatically update](https://review.learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/auto-update?branch=pr-en-us-3269) - for extensions that don't use Partner Center and the Microsoft Edge Add-ons website.
+* [Using the Microsoft Edge Add-ons REST API](./api/using-addons-api.md)
+* [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
