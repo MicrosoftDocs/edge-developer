@@ -132,6 +132,7 @@ You can also use the `chrome.scripting` extensions API to programmatically injec
 Use the following best practices when configuring where your content scripts are loaded:
 
 * Use the most specific URL patterns possible for the `matches` and `exclude_matches` properties in your extension manifest file. For example, if your content script only needs to run on webpages of the example.com domain, use `https://example.com/*` instead of "`*://*/*`.
+
 * To control whether your content script only runs in the top-level frame, or also in nested frames of the webpage that matches a URL pattern, use the `all_frames` property in your extension manifest file. By default, this property is set to `false`, which means that your content script will only run in the top-level frame. If your content script needs to access or modify the DOM in nested frames, set this property to `true`. Note that setting `all_frames` to `true` increases the amount of code that runs on a webpage.
 
 
