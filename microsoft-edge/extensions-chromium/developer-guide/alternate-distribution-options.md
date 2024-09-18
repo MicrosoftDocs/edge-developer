@@ -22,8 +22,8 @@ Generally, extensions are distributed through the Microsoft Edge Add-ons website
 
 Extensions that aren't loaded from the Edge Add-ons store are referred to as _externally installed extensions_. The following are alternate methods of distributing externally installed extensions:
 
-*  Use the Windows registry (Windows only).
-*  Use a preferences JSON file (macOS and Linux).
+* Use the Windows registry (Windows only).
+* Use a preferences JSON file (macOS and Linux).
 
 These approaches are described below.
 
@@ -38,11 +38,11 @@ Make sure that you publish your extension in the Microsoft Edge Add-ons website,
 
 Also, make sure that you have the following information:
 
-*  The file path of the `.crx` file, or the `update_url` of your extension.
+* The file path of the `.crx` file, or the `update_url` of your extension.
 
-*  The version of your extension.  The version information is available in your manifest file, or in Microsoft Edge at `edge://extensions` after you load the packed extension.
+* The version of your extension.  The version information is available in your manifest file, or in Microsoft Edge at `edge://extensions` after you load the packed extension.
 
-*  The ID of your extension.  The ID information is available in Microsoft Edge at `edge://extensions` after you load the packed extension.
+* The ID of your extension.  The ID information is available in Microsoft Edge at `edge://extensions` after you load the packed extension.
 
 The following examples use `1.0` as the version, and `aaaaaaaabbbbbbbbccccccccdddddddd` for the ID.
 
@@ -53,8 +53,8 @@ The following examples use `1.0` as the version, and `aaaaaaaabbbbbbbbccccccccdd
 To distribute your extension using the Windows registry:
 
 1. Find or create the following key in the registry:
-   *  32-bit Windows: `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`
-   *  64-bit Windows: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`
+   * 32-bit Windows: `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`
+   * 64-bit Windows: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`
 
 1. Create a new key, or folder, under **Extensions** with the same name as the ID of your extension. For example, create the key with the name `aaaaaaaabbbbbbbbccccccccdddddddd`.
 
@@ -62,12 +62,11 @@ To distribute your extension using the Windows registry:
 
    ```json
    {
-       "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+      "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
    }
    ```
 
-   > [!NOTE]
-   > If you want to install an extension from the Chrome Web Store, set the value of `update_url` to `https://clients2.google.com/service/update2/crx`.
+   If you want to install an extension from the Chrome Web Store, set the value of `update_url` to `https://clients2.google.com/service/update2/crx`.
 
 1. In Microsoft Edge, go to `edge://extensions`, and then verify that your extension is listed.
 
@@ -85,62 +84,62 @@ To distribute your extension by using a preferences JSON file:
 
 1. Depending on your operating system, save the JSON file to one of the following folders:
 
-    *  **macOS**
-        *  User-specific: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`
-        *  For all users: `/Library/Application Support/Microsoft/Edge/External Extensions/`
+    * **macOS**
+        * User-specific: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`
+        * For all users: `/Library/Application Support/Microsoft/Edge/External Extensions/`
 
         To prevent unauthorized users from installing extensions for all users, make sure your extension preferences file is read-only.
 
         Also make sure that the following conditions are met:
 
-        *  Every directory in the path is owned by the user root.
-        *  Every directory in the path is assigned to the `admin` or `wheel` group.
-        *  Every directory in the path isn't `world` writable.
-        *  The path must be free of symbolic links.
+        * Every directory in the path is owned by the user root.
+        * Every directory in the path is assigned to the `admin` or `wheel` group.
+        * Every directory in the path isn't `world` writable.
+        * The path must be free of symbolic links.
 
     *  **Linux**
-        *  User-specific: `~/.config/microsoft-edge/External Extensions/`
-        *  For all users: `/usr/share/microsoft-edge/extensions/`
+        * User-specific: `~/.config/microsoft-edge/External Extensions/`
+        * For all users: `/usr/share/microsoft-edge/extensions/`
 
 1. Depending on your scenario, copy the appropriate code that follows, into your preferences JSON file.
 
-    *  Applies to Linux only.  If you install from a file, specify the location and version in `external_crx` and `external_version`:
+   * Applies to Linux only.  If you install from a file, specify the location and version in `external_crx` and `external_version`:
 
-        ```json
-        {
-            "external_crx": "/home/share/extension.crx",
-            "external_version": "1.0"
-        }
-        ```
+      ```json
+      {
+         "external_crx": "/home/share/extension.crx",
+         "external_version": "1.0"
+      }
+      ```
 
-    *  Applies to macOS and Linux.  If you install from an `update_url`, specify the update URL in `external_update_url`.
+   *  Applies to macOS and Linux.  If you install from an `update_url`, specify the update URL in `external_update_url`.
 
-       Copy the following code into your preferences JSON file when installing from local `.crx` files on Linux only:
+      Copy the following code into your preferences JSON file when installing from local `.crx` files on Linux only:
 
-       ```json
-       {
-           "external_update_url": "http://myhost.com/mytestextension/updates.xml"
-       }
-       ```
+      ```json
+      {
+         "external_update_url": "http://myhost.com/mytestextension/updates.xml"
+      }
+      ```
 
-    *  Copy the following code to your preferences JSON file when installing from the Microsoft Edge Add-ons website on macOS and Linux:
+   *  Copy the following code to your preferences JSON file when installing from the Microsoft Edge Add-ons website on macOS and Linux:
 
-       ```json
-       {
-           "external_update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
-       }
-       ```
+      ```json
+      {
+         "external_update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+      }
+      ```
 
 1. To install extensions for specific locales, list the supported locales, in `supported_locales`.
 
    You can specify parent locales, to install your extension for all language locales that use that parent.  For example, when using the parent locale `en`, your extension installs for all English locales, such as `en-US`, `en-GB`, and so on.  When users change their locale in their browser, externally installed extensions are uninstalled.  To install your extension for _any_ locale, don't use `supported_locales`.
 
-    ```json
-    {
-        "external_update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
-        "supported_locales": [ "en", "fr", "de" ]
-    }
-    ```
+   ```json
+   {
+      "external_update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+      "supported_locales": [ "en", "fr", "de" ]
+   }
+   ```
 
 1. Verify that your extension is installed in Microsoft Edge, by going to `edge://extensions`.
 
