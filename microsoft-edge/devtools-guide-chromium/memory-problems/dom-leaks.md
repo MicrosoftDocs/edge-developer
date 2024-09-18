@@ -16,8 +16,8 @@ ms.date: 09/18/2023
 > In Microsoft Edge 133, the **Detached Elements** tool will be removed; use the **Memory** tool instead.  The CDP function `EdgeDOMMemory.getDetachedNodesIds` will be removed; use `DOM.getDetachedDomNodes` instead.
 > 
 > Status of Microsoft Edge channels as of September 18, 2024:
-> Edge Stable 128 - **Memory** tool lacks **Detached Elements** functionality.
-> Edge Canary 130 - **Memory** tool has **Detached Elements** functionality.
+> * Edge Stable 128 - **Memory** tool lacks **Detached Elements** functionality.
+> * Edge Canary 130 - **Memory** tool has **Detached Elements** functionality.
 
 <!-- todo:  
 When the **Detached Elements** tool is removed, delete the present article, redirect to new url:
