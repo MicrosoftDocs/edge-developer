@@ -19,14 +19,8 @@ The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatic
 To submit suggestions and feedback, enter an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
 
 
-<!-- ------------------------------ -->
-#### Versions of the REST Publish API
-
-As of September 6, 2024, both v2 and v1 of the REST Publish API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
-
-
-<!-- ---------- -->
-###### Important changes in v2
+<!-- ====================================================================== -->
+## Version 2 of the REST Publish API
 
 The REST Publish API v2 differs from v1 in the following main ways:
 
@@ -34,9 +28,17 @@ The REST Publish API v2 differs from v1 in the following main ways:
 
 * v2 doesn't require sending an Access Token URL.
 
+The UI in Partner Center is slightly different (as described below), along with usage of the REST Publish API endpoints (as described in [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md)).
 
-<!-- ====================================================================== -->
-## Getting started with v2 of the REST Publish API
+
+<!-- ---------------------------------- -->
+#### Dates
+
+As of September 6, 2024, both v2 and v1 of the REST Publish API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
+
+
+<!-- ---------------------------------- -->
+#### Getting started with v2 of the REST Publish API
 
 To use v2 of the REST Publish API:
 
@@ -45,6 +47,8 @@ To use v2 of the REST Publish API:
 1. Re-generate your ClientId and secrets.<!-- todo: reword, b/c secrets are no longer used, according to "v2 uses API keys, whereas v1 used Secrets" -->  You might need to update your authentication workflows.
 
 1. Re-configure any existing Continuous Integration (CI) or Continuous Development (CD)<!-- todo: does CD stand for Continuous Development? --> pipelines that might be impacted by the changes to the access token URL and API key.
+
+Details are below.
 
 
 <!-- ====================================================================== -->
