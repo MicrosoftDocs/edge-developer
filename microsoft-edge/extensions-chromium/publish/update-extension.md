@@ -35,13 +35,17 @@ After your extension has been created initially, you can update your extension b
 <!-- ====================================================================== -->
 ## Update your extension during the certification step
 
-While your extension is in the certification stage, and before it gets published to the Microsoft Edge Add-ons website, you can update it. If your extension fails the certification process, you might also need to update your extension.
+While your extension is in the certification stage, and before it gets published to the Microsoft Edge Add-ons website, you can update your submitted extension. You might also need to update your extension if your extension fails the certification process.
 
-To check the status of your extension, go to the dashboard associated with your listing at your Partner Center developer dashboard.
 
-To edit your submission:
+To check the status of your extension:
 
-1. Go to your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you want to update.  The information you filled out during the previous submission is displayed.
+* Go to your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select an extension.
+
+
+To edit (update) your submitted extension:
+
+1. Go to your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select an extension.  The information that you filled out during the previous submission is displayed.
 
 1. To open the **Extension overview** section, use the left navigation bar.  To cancel the current submission, select **Cancel submission**.
 
