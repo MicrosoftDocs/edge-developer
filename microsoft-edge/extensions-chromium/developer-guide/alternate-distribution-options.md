@@ -84,26 +84,26 @@ To distribute your extension by using a preferences JSON file:
 
 1. Depending on your operating system, save the JSON file to one of the following folders:
 
-    * **macOS**
-        * User-specific: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`
-        * For all users: `/Library/Application Support/Microsoft/Edge/External Extensions/`
+   *  **macOS**
+      * User-specific: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`
+      * For all users: `/Library/Application Support/Microsoft/Edge/External Extensions/`
 
-        To prevent unauthorized users from installing extensions for all users, make sure your extension preferences file is read-only.
+      To prevent unauthorized users from installing extensions for all users, make sure your extension preferences file is read-only.
 
-        Also make sure that the following conditions are met:
+      Also make sure that the following conditions are met:
 
-        * Every directory in the path is owned by the user root.
-        * Every directory in the path is assigned to the `admin` or `wheel` group.
-        * Every directory in the path isn't `world` writable.
-        * The path must be free of symbolic links.
+      * Every directory in the path is owned by the user root.
+      * Every directory in the path is assigned to the `admin` or `wheel` group.
+      * Every directory in the path isn't `world` writable.
+      * The path must be free of symbolic links.
 
-    *  **Linux**
-        * User-specific: `~/.config/microsoft-edge/External Extensions/`
-        * For all users: `/usr/share/microsoft-edge/extensions/`
+   *  **Linux**
+      * User-specific: `~/.config/microsoft-edge/External Extensions/`
+      * For all users: `/usr/share/microsoft-edge/extensions/`
 
 1. Depending on your scenario, copy the appropriate code that follows, into your preferences JSON file.
 
-   * Applies to Linux only.  If you install from a file, specify the location and version in `external_crx` and `external_version`:
+   *  Applies to Linux only.  If you install from a file, specify the location and version in `external_crx` and `external_version`:
 
       ```json
       {
