@@ -42,7 +42,7 @@ The Microsoft Edge Add-ons website hosts your extensions, and you can update you
 > [!IMPORTANT]
 > Be careful when you update extensions that have a dependency on native binaries.
 
-This article doesn't apply<!-- todo: true? clarify --> to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You can use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).
+This article doesn't apply<!-- todo: true?  clarify --> to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You can use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).
 
 
 <!-- ====================================================================== -->
