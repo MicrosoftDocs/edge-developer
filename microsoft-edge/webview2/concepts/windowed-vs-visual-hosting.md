@@ -10,14 +10,17 @@ ms.date: 10/24/2022
 ---
 # Windowed vs. visual hosting of WebView2
 
-There are three options for hosting the Microsoft Edge WebView2 control in your app: windowed hosting, window to visual hosting, and visual hosting.
+There are three options for hosting the Microsoft Edge WebView2 control in your app:
+* Windowed Hosting
+* Window to Visual Hosting
+* Visual Hosting
 
 If you use windowed hosting, which is a good starting point for most apps, you don't need to read this article. If you want to provide a more custom user experience (UX) and want to use visual hosting, or if you are using windowed mode in specific scenarios and are experiencing persistent issues with DPI and scaling, read this article.
 
 | Approach | Description | Optimized for |
 |---|---|---|
 | Windowed hosting | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
-| Window to Visual hosting | A combination of windowed and visual modes. This mode provides a developer experience basically identical to windowed mode. The only developer from the app developer perspective is the need to set the `COREWEBVIEW2_FORCED_HOSTING_MODE` environment variable to `COREWEBVIEW2_HOSTING_MODE_WINDOW_TO_VISUAL`. Like windowed mode, the OS sends input to the WebView2 and there is no need to use the visual hosting input APIs. But unlike windowed mode, the WebView2 output is displayed using a visual instead of a window as it is in visual hosting. This implementation detail allows us to prevent a number of DPI related bugs that pure windowed mode apps can run into. It is important to note that this hosting mode comes at the cost of losing pen input and handwriting support. | A developer experience nearly identical to windowed mode but with improved DPI/scaling handling and the caveat that pen input and handwriting is unsupported. |
+| Window to Visual hosting | A combination of windowed and visual modes. Similar to windowed mode except that it outputs content to a visual that is hosted in a window rather than hosting content in a window directly. | A developer experience nearly identical to windowed mode but with improved DPI/scaling handling and the caveat that pen input and handwriting is unsupported. |
 | Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over layout.  For example, you can control the positioning of the WebView2 control in the page.  The app needs to do specific handling of window management and rendering APIs. |
 
 These approaches have different requirements, constraints, and benefits.  Windowed hosting is simpler to implement than visual hosting.  Visual hosting requires all the API calls that Windowed hosting requires, and visual hosting has additional requirements for it to render properly.  The API calls are listed in [Windowed hosting](#windowed-hosting) and [Visual hosting](#visual-hosting), below.
@@ -33,11 +36,13 @@ Both approaches for hosting the WebView2 control in your app are similar in func
 
 "Windowed" means that in your app, an HWND inherits many default properties from the operating system.
 
-There are instances where you might want to focus on displaying web content as quickly and easily as possible in your app.  Windowed hosting allows for a solution that quickly displays web content without having to include features for inputs, outputs, and accessibility.
+There are instances where you might want to focus on displaying web content as quickly and easily as possible in your app.  Windowed hosting allows for a solution that quickly displays web content without having to include features for inputs, outputs, and accessibility.  However this hosting mode can run into DPI issues in specific scenarios such as sharing a user data folder across different applications.
 
-#### Window to Visual hosting: For a similar experience to Windowed hosting with some added benefits and tradeoff
+#### Window to Visual hosting: For a similar experience to Windowed hosting with some added benefits and a tradeoff
 
-Window-to-Visual hosting is meant to be as easy to adopt as windowed hosting. It only requires setting an environment variable to enable. It does not require use of the visual hosting APIs. It resolves certain DPI issues that can result when sharing a WebView2 user data folder across applications. It does not support pen input and handwriting. To enable it, users must set this environment variable: `COREWEBVIEW2_FORCED_HOSTING_MODE` to the value: `COREWEBVIEW2_HOSTING_MODE_WINDOW_TO_VISUAL`.
+Window-to-Visual hosting means the WebView2 content is displayed using a visual that is hosted in an HWND. As opposed to hosting the content in a window directly or in a visual directly.
+
+By hosting content in an HWND, this hosting mode enjoys the same ease of adoption benefits as Windowed mode.  But by displaying that content using a visual, this hosting mode avoids some specific DPI issues that can result when using Windowed mode.  To enable it, users must set this environment variable: `COREWEBVIEW2_FORCED_HOSTING_MODE` to the value: `COREWEBVIEW2_HOSTING_MODE_WINDOW_TO_VISUAL`.  It does not require use of the visual hosting APIs. Enabling this hosting mode removes support for pen input and handwriting.
 
 #### Visual hosting: For more granular control over layout
 
@@ -93,7 +98,7 @@ The `CoreWebView2Controller` properties and methods:
 <!-- ====================================================================== -->
 ## Windowed and Window to Visual hosting
 
-In this hosting mode, WebView2 content is hosted directly in a window.  You can have multiple HWNDs in your app that will each be used as a WebView component to access web content.  The benefit of this is taht some of the Input/Output commands are handled for you by the OS or the framework. However, you will still need to handle some window management functionalities. Unless specified, all of the information in this section is also true for Window to Visual hosting mode.
+In the Windowed hosting mode, WebView2 content is hosted directly in a window.  You can have multiple HWNDs in your app that will each be used as a WebView component to access web content.  The benefit of this is that some of the Input/Output commands are handled for you by the OS or by the framework. However, you will still need to handle some aspects of window management.  In the Window to Visual mode, content is hosted slightly differently, but has the same benefits and window management requirements as Windowed.
 
 Benefits for Windowed hosting include:
 
@@ -105,13 +110,13 @@ Benefits for Windowed hosting include:
 
 Benefits for Window to Visual hosting include:
 
-* Changing monitor scale when hosting a WebView2 in a VSTO add-in no longer sporadically hang the application
+* Different apps that share a WebView2 user data folder can have different DPI awarenesses.
 
-* Different apps that share a WebView2 user data folder can have different DPI awarenesses
+* Different apps that share a WebView2 user data folder can have different integrity levels.
 
-* Different apps that share a WebView2 user data folder can have different integrity levels
+* Different apps that share a WebView2 user data folder will no longer be able to cause each other to hang.
 
-* Different apps that share a WebView2 user data folder will no longer be able to cause each other to hang
+* Changing monitor scale when hosting a WebView2 in a VSTO add-in no longer sporadically hang the application.
 
 For general information regarding Window management and `HWND` functionality, see [About Windows](/windows/win32/winmsg/about-windows).
 
@@ -297,7 +302,7 @@ When WebView2 has focus, it receives input directly from the user. An app may wa
 <!-- ---------- -->
 ###### Default background color
 
-WebView2 can specify a default background color. This can be any opaque color or transparent color. This color will be used if the webpage doesn't set a background color or sets a transparent background color.
+WebView2 can specify a default background color. This can be any opaque color or transparent color. This color will be used if the webpage doesn't set a background color, or sets a transparent background color.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
