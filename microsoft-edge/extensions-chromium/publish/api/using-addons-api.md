@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 03/12/2024
+ms.date: 09/18/2024
 ---
 # Using the Microsoft Edge Add-ons REST API
 
@@ -18,12 +18,32 @@ The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatic
 
 To submit suggestions and feedback, enter an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
 
-## Versions of the REST API
-As of September 6, 2024, both v2 and v1 of this REST API are supported. Later, v1 will no longer be supported. The date for ending v1 support is not yet finalized.
 
-## Important Notes 
-Secrets are now API keys in v2
-The new Publish API(v2) doesn't require sending an Access Token URL.
+<!-- ------------------------------ -->
+#### Versions of the REST API
+
+As of September 6, 2024, both v2 and v1 of this REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
+
+
+<!-- ---------- -->
+###### Important changes in v2
+
+* v2 of this REST API uses API keys, whereas v1 used Secrets instead.
+
+* v2 of this REST API doesn't require sending an Access Token URL.
+
+
+<!-- ====================================================================== -->
+## Getting started with v2 of this REST API
+
+To use v2 of this REST API:
+
+1. At Partner Center, opt-in to the new API key management experience.
+
+1. Re-generate your ClientId and secrets.<!-- todo: reword, b/c secrets are no longer used, according to "v2 of this REST API uses API keys, whereas v1 used Secrets instead" -->  You might need to update your authentication workflows.
+
+1. Re-configure any existing Continuous Integration (CI) or Continuous Development (CD)<!-- todo: does CD stand for Continuous Development? --> pipelines that might be impacted by the changes to the access token URL and API key.
+
 
 <!-- ====================================================================== -->
 ## Terminology
@@ -37,6 +57,7 @@ The new Publish API(v2) doesn't require sending an Access Token URL.
 | _product ID_ | The product ID of the product whose draft needs to be published.  The product ID is a 128-bit GUID that is associated with a product at Partner Center.  For example: `d34f98f5-f9b7-42b1-bebb-98707202b21d`. |
 | _submission_ | An update that is being submitted to an existing product at Partner Center.  Every update to a product is a submission, regardless of whether the status is `In Draft`, `In Review`, or `In the Store` (published). |
 
+
 <!-- ====================================================================== -->
 ## Before you begin
 
@@ -48,20 +69,24 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 
 1. On the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes to finish.
 
-   The API credentials have now been created; you've enabled or renewed the API.  The **Client ID**, **Client secret(API key for v2)**, **Expiry date**, and **Access token URL(v1)** are now displayed on the Publish APIs page:
+   The API credentials have now been created; you've enabled or renewed the API.  The following items are now displayed on the **Publish API** page:
+   * **Client ID**
+   * **Client secret** (for REST API v1) or **API key** (for REST API v2)
+   * **Expiry date**
+   * **Access token URL** (for REST API v1)
 
    ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)
 
 1. Write down the **Client ID**, **Client secret(API key for v2)** and the **Access token URL(v1)**.  You'll use these values in the next step, to get an access token.
 
 > [!IMPORTANT]
-> Publish API Version 1(v1)
-> Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials). This particular secret isn't shown again.
+> This applies only to this REST Publish API v1, not v2:
+> Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials).  This particular secret isn't shown again.
 
 You can generate multiple client secrets for your client ID.  For example, you can create multiple secrets for multiple projects.
 
->Publish API Version 2(v2)
->With the new Publish API, the API key is generated automatically by our backend services. This means that the ClientId and API Keys are regenerated for every developer.
+When using v2 of this REST Publish API, the ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
+
 
 <!-- ====================================================================== -->
 ## Retrieving the access token
@@ -244,15 +269,6 @@ Header Parameters: Authorization: Bearer $TOKEN
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
 ```
-
-
-## Getting started with v2
-
-> opt-in for the new API key management experience. 
-
-> Next, regenerate your ClientId and secrets, which may require updates to your authentication workflows. 
-
-> Finally, reconfigure any existing CI/CD pipelines that may be impacted by the changes to access token URL and API key. 
 
 See also:
 * [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for Microsoft Edge Add-ons_.
