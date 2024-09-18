@@ -22,6 +22,8 @@ An extension should include at least the following features:
 
 To work directly with a specific part of the browser, such as a window or tab, you must send API requests, and must often reference the browser by name.
 
+<!-- todo: equivalent of landing page cards -->
+
 ![A Microsoft Edge extension](./index-images/example-extension-screenshot.png)
 
 See also:
