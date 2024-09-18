@@ -1,6 +1,6 @@
 ---
 title: Set an externally installed extension to automatically update
-description: Set up a Microsoft Edge extension (add-on) to automatically update in users' instances of Microsoft Edge.
+description: Set up an externally installed extension (an extension that doesn't use Partner Center or Microsoft Edge Add-ons website) to automatically update in users' instances of Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -25,11 +25,10 @@ ms.date: 11/04/2022
 
 <!-- todo: 
 update article per https://developer.chrome.com/docs/apps/autoupdate 
-check description: yaml sentence eg state scenarios it applies to vs Partner Center
-further improve intro lead-in sequencing
+improve intro lead-in sequencing
 -->
 
-This article applies to externally installed extensions; that is, extensions that are distributed via an approach other than Partner Center; see [Alternative ways to distribute an extension](..\developer-guide\alternate-distribution-options.md).  This article doesn't apply to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard; for that distribution approach, see [Update a Microsoft Edge extension](../publish/update-extension.md).
+This article applies to externally installed extensions; that is, extensions that are distributed via an approach other than Partner Center; see [Alternative ways to distribute an extension](..\developer-guide\alternate-distribution-options.md).  This article doesn't apply to extensions that you publish using the [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd); for that distribution approach, see [Update a Microsoft Edge extension](../publish/update-extension.md).
 
 Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  To specify an update URL for your extension, use the `update_url` field in the manifest.  The `update_url` field in the manifest points to a location that can complete an update check.  For each `update_url`, this URL sends requests for updated manifest XML files.  If the update manifest XML file lists a newer extension or app version, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.
 
@@ -167,6 +166,18 @@ For example, in the following code, the `prodversionmin` attribute value of `3.0
   </app>
 </gupdate>
 ```
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article -->
+
+* [Alternative ways to distribute an extension](..\developer-guide\alternate-distribution-options.md)
+* [Update a Microsoft Edge extension](../publish/update-extension.md)
+* [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
+
+Chrome Dev docs:
+* [Autoupdating](https://developer.chrome.com/docs/apps/autoupdate)<!-- todo: remove link? = [here] link below -->
 
 
 <!-- ====================================================================== -->
