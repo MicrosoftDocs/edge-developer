@@ -11,13 +11,13 @@ ms.date: 09/18/2023
 # Debug DOM memory leaks with the Detached Elements tool
 
 > [!IMPORTANT]
-> The **Detached Elements** tool is being deprecated.  In Microsoft Edge 130, the **Detached Elements** tool has been removed; use the **Memory** tool instead, which contains the same functionality.  The downstream-only Chrome DevTools Protocol (CDP) function `EdgeDOMMemory.getDetachedNodesIds` continues to work, but use `DOM.getDetachedDomNodes` instead.
+> The **Detached Elements** tool is being deprecated.  Starting with Microsoft Edge 130, the **Detached Elements** tool has a deprecation message.  Instead, use the **Detached Elements** profiling type in the **Memory** tool.  The downstream-only Chrome DevTools Protocol (CDP) function `EdgeDOMMemory.getDetachedNodesIds` continues to work, but use `DOM.getDetachedDomNodes` instead.
 > 
-> In Microsoft Edge 133, the **Detached Elements** tool will be removed; use the **Memory** tool instead.  The CDP function `EdgeDOMMemory.getDetachedNodesIds` will be removed; use `DOM.getDetachedDomNodes` instead.
+> In Microsoft Edge 133, the **Detached Elements** tool will be removed; instead, use the **Detached Elements** profiling type in the **Memory** tool.  The CDP function `EdgeDOMMemory.getDetachedNodesIds` will be removed; use `DOM.getDetachedDomNodes` instead.
 > 
 > Status of Microsoft Edge channels as of September 18, 2024:
-> * Edge Stable 128 - **Memory** tool lacks **Detached Elements** functionality.
-> * Edge Canary 130 - **Memory** tool has **Detached Elements** functionality.
+> * Edge Stable 128 - The **Detached Elements** tool is present, without a deprecation message.  The **Memory** tool lacks **Detached Elements** functionality.
+> * Edge Canary 130 - The **Detached Elements** tool is present, with a deprecation message.  The **Memory** tool has **Detached Elements** functionality (the **Detached Elements** profiling type).
 
 <!-- todo:  
 When the **Detached Elements** tool is removed, delete the present article, redirect to new url:
