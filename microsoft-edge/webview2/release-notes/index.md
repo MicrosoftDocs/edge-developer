@@ -121,146 +121,73 @@ description
 
 
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.2792.45
 
-Release Date: Monthname nn, 2024
+Release Date: September 16, 2024
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.2792.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2792.45)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 129.0.2792.45 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions
 
 No additional APIs have been promoted to Stable and added in this Release SDK.
-The following APIs have been promoted to Stable and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* item
-
-* item
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* item
-
-* item
-
-
 <!-- ---------- -->
 ###### SDK-only
 
-* item
-
-* item
+* (SDK) Fix SDK dependency for .NET projects https://github.com/MicrosoftEdge/WebView2Feedback/issues/4743([Issue #4743](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4743))
 
 
 <!-- end of Sep 2024 Release SDK -->
 
 
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## 1.0.2839-prerelease
 
-Release Date: Monthname nn, 2024
+Release Date: September 16, 2024
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.2839-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2839-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 130.0.2839.0 or higher.
 
 
 <!-- ------------------------------ -->
 #### Experimental APIs
 
 No Experimental APIs have been added in this Prerelease SDK.
-The following Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
 
 <!-- ------------------------------ -->
 #### Promotions
 
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* item
-
-* item
-
-
 <!-- ---------- -->
 ###### Runtime-only
 
-* item
-
-* item
+* Fix an issue where focusing on WebView2 control in WinAppSDK with Windows "Scroll inactive windows" setting disabled caused scrolling to fail.
+* Block edge://wallet in WebView2, GitHub #4710. ([Issue #4710](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4710))
+* Clear environment variable for default background color in dotnet webview controls  after controller has finished creation.
+* Enable accessibility support for Webview2 in visual hosting mode 
+* Fixed bug with removing web resource requested filter for multiple sources when one of them is Document.
+* Fixes a regression where DataList would was not visible in WinUI and other visually hosted WebView2s.
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* item
-
-* item
-
+* Fix SDK dependency for .NET projects https://github.com/MicrosoftEdge/WebView2Feedback/issues/4743([Issue #4743](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4743))
+* Fixes a compatibility issue when calling GetAvailableBrowserVersionString() with older WebView2Loader.dll.([Issue #4395](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4395))
+* Fix issues when compiling wv2winrt generated code with cpp20 and /permissive-. 
 
 <!-- end of Sep 2024 Prerelease SDK -->
 
