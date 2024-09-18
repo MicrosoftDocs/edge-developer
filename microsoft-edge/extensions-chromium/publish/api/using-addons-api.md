@@ -20,27 +20,29 @@ To submit suggestions and feedback, enter an [Issue about the Add-ons API](https
 
 
 <!-- ------------------------------ -->
-#### Versions of the REST API
+#### Versions of the REST Publish API
 
-As of September 6, 2024, both v2 and v1 of this REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
+As of September 6, 2024, both v2 and v1 of the REST Publish API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
 
 
 <!-- ---------- -->
 ###### Important changes in v2
 
-* v2 of this REST API uses API keys, whereas v1 used Secrets instead.
+The REST Publish API v2 differs from v1 in the following main ways:
 
-* v2 of this REST API doesn't require sending an Access Token URL.
+* v2 uses API keys, whereas v1 used Secrets instead.
+
+* v2 doesn't require sending an Access Token URL.
 
 
 <!-- ====================================================================== -->
-## Getting started with v2 of this REST API
+## Getting started with v2 of the REST Publish API
 
-To use v2 of this REST API:
+To use v2 of the REST Publish API:
 
 1. At Partner Center, opt-in to the new API key management experience.
 
-1. Re-generate your ClientId and secrets.<!-- todo: reword, b/c secrets are no longer used, according to "v2 of this REST API uses API keys, whereas v1 used Secrets instead" -->  You might need to update your authentication workflows.
+1. Re-generate your ClientId and secrets.<!-- todo: reword, b/c secrets are no longer used, according to "v2 uses API keys, whereas v1 used Secrets" -->  You might need to update your authentication workflows.
 
 1. Re-configure any existing Continuous Integration (CI) or Continuous Development (CD)<!-- todo: does CD stand for Continuous Development? --> pipelines that might be impacted by the changes to the access token URL and API key.
 
@@ -61,7 +63,7 @@ To use v2 of this REST API:
 <!-- ====================================================================== -->
 ## Before you begin
 
-To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center, by creating API credentials. Use the following steps to create API credentials.
+To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center, by creating API credentials.  Use the following steps to create API credentials.
 
 1. Visit Microsoft Partner Center and sign in to the account that you used to publish an add-on.
 
@@ -71,21 +73,26 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 
    The API credentials have now been created; you've enabled or renewed the API.  The following items are now displayed on the **Publish API** page:
    * **Client ID**
-   * **Client secret** (for REST API v1) or **API key** (for REST API v2)
+   * **Client secret** (for REST Publish API v1) or **API key** (for REST Publish API v2)
    * **Expiry date**
-   * **Access token URL** (for REST API v1)
+   * **Access token URL** (for REST Publish API v1)
 
    ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)
 
-1. Write down the **Client ID**, **Client secret(API key for v2)** and the **Access token URL(v1)**.  You'll use these values in the next step, to get an access token.
+1. Write down the following:
+   * The **Client ID**.
+   * The **Client secret** (REST Publish API v1) or **API key** (REST Publish API v2).
+   * The **Access token URL** (REST Publish API v1).
+
+   You'll use these values in the next step, to get an access token
 
 > [!IMPORTANT]
-> This applies only to this REST Publish API v1, not v2:
+> Applies to REST Publish API v1, not v2:
 > Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials).  This particular secret isn't shown again.
 
 You can generate multiple client secrets for your client ID.  For example, you can create multiple secrets for multiple projects.
 
-When using v2 of this REST Publish API, the ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
+When using REST Publish API v2, the ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
 
 
 <!-- ====================================================================== -->
