@@ -42,7 +42,7 @@ As of September 6, 2024, both v2 and v1 of the REST Publish API are supported.  
 
 To use v2 of the REST Publish API:
 
-1. At Partner Center, opt-in to the new API key management experience.
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the new API key management experience.
 
 1. Re-generate your ClientId and secrets.<!-- todo: reword, b/c secrets are no longer used, according to "v2 uses API keys, whereas v1 used Secrets" -->  You might need to update your authentication workflows.
 
@@ -69,7 +69,7 @@ Details are below.
 
 To use the Microsoft Edge Add-ons API, you first need to enable the API for your project in the Microsoft Partner Center by creating API credentials, as follows:
 
-1. Visit Microsoft Partner Center and sign in to the account that you used to publish an add-on.
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), sign in to the account that you used to publish an add-on.
 
 1. Under the **Microsoft Edge** program, select **Publish API**.
 
@@ -153,10 +153,9 @@ For more information, see [Get a token](/azure/active-directory/develop/v2-oauth
 
 After you have an access token, you can use the Microsoft Edge Add-ons API.  This API exposes endpoints for getting a list of products, updating products, and publishing products.
 
-> [!NOTE]
-> There's no API for creating a new product or updating a product's metadata. For example, the description.  You must complete these tasks manually in Microsoft Partner Center.
+There's no API for creating a new product or updating a product's metadata, such as the description.  You must complete these tasks manually in Microsoft Partner Center.
 
-The API is available at the endpoint `https://api.addons.microsoftedge.microsoft.com`
+The API is available at the endpoint `https://api.addons.microsoftedge.microsoft.com`.
 
 
 <!-- ====================================================================== -->
@@ -173,9 +172,9 @@ Body content: the package file to upload
 
 `$productID` is the product ID of the Microsoft Edge Add-on that you want to update. 
 
-Follow these steps to get the product ID:
+To get the product ID:
 
-1. Sign in to Microsoft Partner Center.
+1. Sign in to your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).
 
 1. Go to **Microsoft Edge** > **Overview**.
 
@@ -294,9 +293,13 @@ See also:
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article -->
 
-<!-- all article-level links in article body: -->
-* [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md)
-* [Issues](https://github.com/MicrosoftDocs/edge-developer/issues/) in `edge-developer` Docs repo.
-* [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
+* [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md) - REST API for updating an extension.
 * [Supported APIs for Microsoft Edge extensions](../../developer-guide/api-support.md) - JavaScript APIs for developing an extension.
+
+GitHub:
+* [Issues](https://github.com/MicrosoftDocs/edge-developer/issues/) in `edge-developer` repo for Microsoft Edge Developer docs.
+
+Microsoft identity platform:
+* [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
