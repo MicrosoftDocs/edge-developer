@@ -36,7 +36,7 @@ In this section, you'll learn how to use the **Performance** tool in DevTools to
 
 1. To start recording a performance profile, click the **Record** (![Record icon](./minimize-page-load-time-impact-images/record-icon.png)) button.
 
-1. Reload the page to capture the profiling data that corresponds to the page load time and then, once the page has finished loading, click the **Stop** (![Stop icon](./minimize-page-load-time-impact-images/stop-icon.png)) button to end the recording. DevTools displays the recorded performance profile.
+1. Reload the page to capture the profiling data that corresponds to the page load time and then, once the page has finished loading, click the **Stop** (![Stop icon](./minimize-page-load-time-impact-images/stop-icon.png)) button to end the recording. DevTools displays the recorded performance profile:
 
    ![The recorded performance profile displayed in the DevTools Performance tool](./minimize-page-load-time-impact-images/profile.png)
 
@@ -71,7 +71,7 @@ The Edge tracing tool, available at the `edge://tracing` URL, is a powerful tool
 
 1. Open the tab where the Edge tracing tool is running, and then click the **Stop** button. The new trace information appears in the tool.
 
-Traces that are recorded by the Edge tracing tool provide a lot of information about the browser, as well as your extension webpage.
+Traces that are recorded by the Edge tracing tool provide a lot of information about the browser, as well as your extension.
 
 To filter the information to show only what's relevant to the webpage that your extension impacted:
 
@@ -100,7 +100,7 @@ Your extension's content script runs in the context of the webpage. To minimize 
 
 You can make use of lazy loading and code splitting techniques to minimize the amount of code that runs in your content script:
 
-* _Lazy loading_ is the process of loading is the process of loading your code only when it's needed, based on the user actions, the page content, or the extension logic.
+* _Lazy loading_ is the process of loading your code only when it's needed, based on the user actions, the page content, or the extension logic.
 
 * _Code splitting_ is the process of dividing your code into smaller chunks, or modules, which can be loaded separately or on demand.
 
@@ -202,7 +202,7 @@ chrome.storage.local.get("key", result => {
 <!-- ------------------------------ -->
 #### Asynchronously send messages
 
-To communicate from your content script to your extension's background page, or to other content scripts, use the `chrome.runtime.sendMessage` or `chrome.tabs.sendMessage` methods. These methods are asynchronous and non-blocking, and allow you to send and receive messages between the different parts of your extension. You can use promises or callbacks to handle the response of the messages. For example, you can use the `chrome.runtime.sendMessage` method to send a message to the background page, and then use the returned `Promise` object to process the response:
+To communicate between your content script and your extension's background page, or an other content script, use the `chrome.runtime.sendMessage` or `chrome.tabs.sendMessage` methods. These methods are asynchronous and non-blocking, and allow you to send and receive messages between the different parts of your extension. You can use promises or callbacks to handle the response of the messages. For example, you can use the `chrome.runtime.sendMessage` method to send a message to the background page, and then use the returned `Promise` object to process the response:
 
 ```javascript
 chrome.runtime.sendMessage({type: 'request', data: 'some data'})
