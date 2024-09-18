@@ -65,9 +65,9 @@ Details are below.
 
 
 <!-- ====================================================================== -->
-## Before you begin
+## Enabling the REST Publish API at Partner Center
 
-To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center, by creating API credentials.  Use the following steps to create API credentials.
+To use the Microsoft Edge Add-ons API, you first need to enable the API for your project in the Microsoft Partner Center by creating API credentials, as follows:
 
 1. Visit Microsoft Partner Center and sign in to the account that you used to publish an add-on.
 
@@ -109,7 +109,7 @@ When using REST Publish API v2, the ClientId and API Keys are automatically re-g
 <!-- ====================================================================== -->
 ## Retrieving the access token
 
-After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the **Before you begin** steps above.
+After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the previous step, [Enabling the REST Publish API at Partner Center](#enabling-the-rest-publish-api-at-partner-center).
 
 ```REST
 Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2.0/token
