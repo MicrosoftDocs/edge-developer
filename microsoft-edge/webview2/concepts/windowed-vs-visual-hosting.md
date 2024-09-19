@@ -58,9 +58,9 @@ Overview of APIs: https://learn.microsoft.com/microsoft-edge/webview2/concepts/o
 -->
 
 There are three options for hosting the Microsoft Edge WebView2 control in your app:
-* Windowed hosting.
-* Window to Visual hosting.
-* Visual hosting.
+* The Windowed hosting mode.
+* The Window to Visual hosting mode.
+* The Visual hosting mode.
 
 If you use Windowed hosting, which is a good starting point for most apps, you don't need to read this article.  Read this article if you want to provide a more custom user experience (UX) and want to use Visual hosting, or if you are using windowed mode (Windowed hosting) in specific scenarios and are experiencing persistent issues with DPI and scaling.
 
