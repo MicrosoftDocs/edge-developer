@@ -34,7 +34,7 @@ The REST endpoints use specific request headers for v1.1.
 
 ##### [v1](#tab/v1)
 
-v1 requires sending an Access Token URL.  The UI in Partner Center covers the access token.
+v1 requires sending an access token.<!-- todo: to an access token URL?  an access token that's provided by/at an access token URL? -->  The Partner Center UI shows the access token URL.<!-- todo: define/relate "access token URL" vs. "access token" -->
 
 v1 uses Secrets.  The UI in Partner Center covers Secrets.
 
@@ -52,7 +52,7 @@ To use v1.1 of the Update REST API:
 
 1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the API key management experience.Details are in [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center), below.
 
-1. Write down the ClientID and API key.
+1. Write down the Client ID and the new API key.
 
 1. Update your authentication workflows, if needed.
 
@@ -66,13 +66,13 @@ To use v1 of the Update REST API:
 
 1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), get an access token.  Details are in [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center), below.
 
-1. Generate your ClientID and secrets.
+1. Generate your ClientID and secrets.  You can generate multiple client secrets for your Client ID.  For example, you can create multiple secrets for multiple projects.
 
 1. Update your authentication workflows, if needed.
 
 1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by the changes to the access token URL.
 
-1. Retrieve the access token.  Details are in [Retrieving the access token (v1 only)](#retrieving-the-access-token-v1-only), below.
+1. Retrieve the access token.  Details are in [Retrieve the access token (v1 only)](#retrieve-the-access-token-v1-only), below.
 
 1. When you use a REST endpoint, specify the access token in the request header.  Details are in [Using the API endpoints](#using-the-api-endpoints), below.
 
@@ -118,20 +118,15 @@ To use the Microsoft Edge Add-ons API, you first need to enable the API for your
    ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID and API key](./using-addons-api-images/partner-center-1-1-ui.png)
 
    The API credentials have now been created; you've enabled or renewed the API.  The following items are now displayed on the **Publish API** page:
-   * **Client ID**.
-   * **API Key**.
-      * **Expiry** date for the API key.
+   * Your **Client ID**.
+   * **API Keys**.
+      * The **Expiry** date for each API key.
 
 1. Write down the following:
    * The **Client ID**.
-   * The **API key**.
+   * The new **API key**.
 
-   You'll use the Client ID and API key values in request headers when using a REST endpoint:
-
-   ``REST
-   `Authorization: ApiKey <api key>`
-   `X-ClientID: <client ID>`
-   ```
+   You'll use the Client ID and API key in the request header when using a REST endpoint.
 
 ##### [v1](#tab/v1)
 
@@ -142,40 +137,34 @@ To use the Microsoft Edge Add-ons API, you first need to enable the API for your
 1. On the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes to finish.
 
    The API credentials have now been created; you've enabled or renewed the API.  The following items are now displayed on the **Publish API** page:
-   * **Client ID**
-   * **Client secret**
-   * **Expiry date**
-   * **Access token URL**
+   * Your **Client ID**.
+   * Your **Access token URL**.
+   * **Client secrets**.
+      * The **Expiry date** of each Secret.
 
    ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)
 
 1. Write down the following:
    * The **Client ID**.
-   * The **Client secret**.
    * The **Access token URL**.
+   * The new **Client secret**.
 
-   You'll use these values in the next step, to get an access token.
+   You'll use the Client ID, access token URL, and client secret to get an access token, per [Retrieve the access token](#retrieve-the-access-token), below .  You'll then use the access token in the request header when using a REST endpoint.
 
 > [!IMPORTANT]
 > Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials).  This particular secret isn't shown again.
 
-You can generate multiple client secrets for your client ID.  For example, you can create multiple secrets for multiple projects.
-
----
+You can generate multiple client secrets for your Client ID.  For example, you can create multiple secrets for multiple projects.
 
 
-<!-- ====================================================================== -->
-## Retrieving the access token (v1 only)
+<!-- ---------------------------------- -->
+#### Retrieve the access token
+<!-- todo: global: access token, or access token URL?  consistency pass, relate the two terms -->
 
+After you've acquired the necessary authorization for your application, get access tokens<!-- todo: plural or singular?  one token per endpoint? --> for APIs.  To get a token by using the client credentials grant, send a POST request to the Access token URL (the OAuth token).
 
-##### [v1.1](#tab/v1-1)
+The tenant information<!-- todo: define "tenant information", what relevance? --> is available in the Access token URL that you received in the previous step, [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center).
 
-Not applicable.
-
-
-##### [v1](#tab/v1)
-
-After you've acquired the necessary authorization for your application, get access tokens<!-- todo: plural or singular?  one token per endpoint? --> for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the previous step, [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center).
 
 ```REST
 Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1.1.0/token
@@ -184,8 +173,8 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 ```
 
 
-<!-- ---------------------------------- -->
-#### Sample request
+<!-- ---------- -->
+###### Sample request
 
 ```console
 > curl \
@@ -200,8 +189,8 @@ https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1
 ```
 
 
-<!-- ---------------------------------- -->
-#### Sample response
+<!-- ---------- -->
+###### Sample response
 
 ```json
 {
