@@ -1,6 +1,6 @@
 ---
-title: Windowed vs. visual hosting of WebView2
-description: Deciding whether to have your app use windowed hosting vs. visual hosting of the WebView2 control.  Hosting WebView2 in windowed or visual environments.
+title: Windowed vs. Visual hosting of WebView2
+description: Deciding whether to have your app use Windowed hosting vs. Visual hosting of the WebView2 control.  Hosting WebView2 in windowed or visual environments.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 09/18/2024
 ---
-# Windowed vs. visual hosting of WebView2
+# Windowed vs. Visual hosting of WebView2
 
 <!-- outline Sep 28, 2024:
 =======================================
@@ -33,10 +33,11 @@ ms.date: 09/18/2024
 ## Windowed hosting and Window to Visual hosting
 #### Benefits of Windowed hosting
 #### Benefits of Window to Visual hosting
-#### Window management
+#### APIs for Windowed hosting and Window to Visual hosting
+#### Window management                            [APIs tabset]
 ###### Sizing, positioning, and visibility        [APIs tabset]
 ###### Zooming                                    [APIs tabset]
-#### Rasterization scale                          [APIs tabset]
+#### Rasterization scale                          [APIs tabset] err? same level as surrounding headings, in "Overview of APIs"
 ###### Focus and tabbing                          [APIs tabset]
 ###### Parent window                              [APIs tabset]
 ###### Keyboard accelerators                      [APIs tabset]
@@ -44,6 +45,7 @@ ms.date: 09/18/2024
 
 =======================================
 ## Visual hosting
+#### APIs for Visual hosting
 #### Composition-based rendering                  [APIs tabset]
 #### Output                                       [APIs tabset]
 #### Input                                        [APIs tabset]
@@ -51,15 +53,16 @@ ms.date: 09/18/2024
 
 =======================================
 ## See also
--->
 
+Overview of APIs: https://learn.microsoft.com/microsoft-edge/webview2/concepts/overview-features-apis
+-->
 
 There are three options for hosting the Microsoft Edge WebView2 control in your app:
 * Windowed hosting.
 * Window to Visual hosting.
 * Visual hosting.
 
-If you use windowed hosting, which is a good starting point for most apps, you don't need to read this article.  Read this article if you want to provide a more custom user experience (UX) and want to use visual hosting, or if you are using windowed mode (Windowed hosting) in specific scenarios and are experiencing persistent issues with DPI and scaling.
+If you use Windowed hosting, which is a good starting point for most apps, you don't need to read this article.  Read this article if you want to provide a more custom user experience (UX) and want to use Visual hosting, or if you are using windowed mode (Windowed hosting) in specific scenarios and are experiencing persistent issues with DPI and scaling.
 
 | Approach | Description | Optimized for |
 |---|---|---|
@@ -67,7 +70,9 @@ If you use windowed hosting, which is a good starting point for most apps, you d
 | Window to Visual hosting | A combination of windowed mode (Windowed hosting) and visual mode (Visual hosting). Similar to windowed mode except that it outputs content to a visual that is hosted in a window rather than hosting content in a window directly. | A developer experience nearly identical to windowed mode, but with improved DPI/scaling handling and the caveat that pen input and handwriting is unsupported. |
 | Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over layout.  For example, you can control the positioning of the WebView2 control in the page.  The app needs to do specific handling of window management and rendering APIs. |
 
-These approaches have different requirements, constraints, and benefits.  Windowed hosting is simpler to implement than visual hosting.  Visual hosting requires all the API calls that Windowed hosting requires, and visual hosting has additional requirements for it to render properly.  The API calls are listed in [Windowed hosting](#windowed-hosting) and [Visual hosting](#visual-hosting), below.
+These approaches have different requirements, constraints, and benefits.  Windowed hosting is simpler to implement than Visual hosting.  Visual hosting requires all the API calls that Windowed hosting requires, and Visual hosting has additional requirements for it to render properly.  The API calls are listed in the following sections below:
+* [Windowed hosting and Window to Visual hosting](#windowed-hosting-and-window-to-visual-hosting)
+* [Visual hosting](#visual-hosting)
 
 
 <!-- ====================================================================== -->
@@ -108,7 +113,7 @@ By hosting content in an HWND, Window to Visual hosting mode enjoys the same eas
 
 To enable Window to Visual hosting, your app sets the environment variable `COREWEBVIEW2_FORCED_HOSTING_MODE` to the value `COREWEBVIEW2_HOSTING_MODE_WINDOW_TO_VISUAL`.
 
-Window to Visual hosting does not require use of the visual hosting APIs. 
+Window to Visual hosting does not require use of the Visual hosting APIs. 
 
 <!-- ---------- -->
 ###### Disadvantages
@@ -126,7 +131,7 @@ When using _Visual hosting_, your host app takes spatial input (such as mouse or
 
 Visual hosting allows for (and requires) more granular control of layout.  When using this approach, the app needs specific handling of window management and rendering APIs.
 
-With visual hosting, for example you must choose how when the user resizes the window, how the webview scales in relation to the whole page - for example, if you want the webview to scale twice as much as the app.
+With Visual hosting, for example you must choose how when the user resizes the window, how the webview scales in relation to the whole page - for example, if you want the webview to scale twice as much as the app.
 
 
 <!-- ====================================================================== -->
@@ -138,7 +143,7 @@ Key compatibility limitations include the operating system and rendering in fram
 <!-- ------------------------------ -->
 #### Operating systems
 
-All hosting modes are supported wherever WebView2 is supported ie. Windows 10 and up and certain Windows Server versions. Windows 7, 8 and 8.1 are no longer supported. For those still on those platforms Windows 7 and Windows 8 can only do windowed hosting, not visual hosting.
+All hosting modes are supported wherever WebView2 is supported ie. Windows 10 and up and certain Windows Server versions. Windows 7, 8 and 8.1 are no longer supported. For those still on those platforms Windows 7 and Windows 8 can only do Windowed hosting, not Visual hosting.
 
 See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
 
@@ -208,9 +213,15 @@ For general information regarding Window management and `HWND` functionality, se
 
 
 <!-- ------------------------------ -->
+#### APIs for Windowed hosting and Window to Visual hosting
+
+The following APIs can be used when configuring WebView2 for Windowed hosting or Window to Visual hosting.
+
+
+<!-- ------------------------------ -->
 #### Window management
 
-In a windowed hosting environment, the following aspects of window management need to be handled.
+In a Windowed hosting environment, the following aspects of window management need to be handled.
 * Sizing, positioning, and visibility.
 * Zooming.
 
@@ -268,6 +279,9 @@ WebView2 `ZoomFactor` is used to scale just the web content.  This is also updat
 
 <!-- ------------------------------ -->
 #### Rasterization scale
+<!-- todo: demote?  this heading is at same level as surrounding headings, in "Overview of APIs"
+https://learn.microsoft.com/microsoft-edge/webview2/concepts/overview-features-apis#rasterization-scale
+-->
 
 The `RasterizationScale` API scales all WebView2 UI including context menus, tooltip, and popups.  The app can set whether the WebView2 should detect monitor scale changes and automatically update the `RasterizationScale`.  `BoundsMode` is used to configure whether the `Bounds` property is interpreted as raw pixels, or DIPs (which need to be scaled by `RasterizationScale`).
 
@@ -415,13 +429,17 @@ WebView2 can specify a default background color. This can be any opaque color or
 <!-- ====================================================================== -->
 ## Visual hosting
 
-In visual hosting, content is embedded to a given location on the application. This location must handle how content will scale and behave in an app when the user interacts with the application.  In addition to the window management described for windowed hosting, visual hosting will need the app to manage the composition-based rendering, when it receives any user interactions.  For more information about visual hosting, see [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps).
+In Visual hosting, content is embedded to a given location on the application. This location must handle how content will scale and behave in an app when the user interacts with the application.  In addition to the window management described for Windowed hosting, Visual hosting will need the app to manage the composition-based rendering, when it receives any user interactions.  For more information about Visual hosting, see [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps).
 
-If your WebView2 app uses visual hosting:
+If your WebView2 app uses Visual hosting:
 
 * Inputs are routed to the app's `HWND` and must be configured to send the spatial input (for example, mouse, touch, and pen) based on positions, _not_ what currently has focus, such as a keyboard.
 
-The following APIs can be used when configuring WebView2 in a visual hosting environment:
+
+<!-- ------------------------------ -->
+#### APIs for Visual hosting
+
+The following APIs can be used when configuring WebView2 in a Visual hosting environment:
 
 
 <!-- ------------------------------ -->
@@ -541,9 +559,12 @@ Not applicable.
 
 <!-- ====================================================================== -->
 ## See also
-<!-- all links in article, except specific api ref links -->
+<!-- all links in article, except api ref docs -->
 
+* [Overview of WebView2 features and APIs](./overview-features-apis.md)
 * [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
+
+Other doc sets:
 * [About Windows](/windows/win32/winmsg/about-windows) - Window management and `HWND` functionality.
 * [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps).
 * [Basic concepts](/windows/win32/directcomp/basic-concepts) in the Windows App Development > DirectComposition docs.
