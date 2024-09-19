@@ -28,7 +28,7 @@ As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.
 
 ##### [v1.1](#tab/v1-1)
 
-v1.1 uses an API key.  The UI in Partner Center covers the API key.
+v1.1 uses an API key.  The UI in Partner Center provides API keys.
 
 The REST endpoints use specific request headers for v1.1.
 
@@ -36,7 +36,7 @@ The REST endpoints use specific request headers for v1.1.
 
 v1 requires sending an access token to the API endpoint.  You obtain the access token by sending a POST message to an access token URL.  The Partner Center UI shows the access token URL.
 
-v1 uses Secrets.  The UI in Partner Center covers Secrets.
+v1 uses Secrets.  The UI in Partner Center provides Secrets.
 
 The REST endpoints use specific request headers for v1.
 
@@ -46,25 +46,23 @@ The REST endpoints use specific request headers for v1.
 <!-- ---------------------------------- -->
 #### Overview of using the Update REST API
 
+To use the Update REST API:
+
 ##### [v1.1](#tab/v1-1)
 
-To use v1.1 of the Update REST API:
-
-1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the API key management experience.Details are in [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center), below.
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the API key management experience, by clicking the **Enable** button next to **enable the new experience**.  Details are in [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center), below.
 
 1. Write down the Client ID and the new API key.
 
 1. Update your authentication workflows, if needed.
 
-1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by any changes to the API key.
+1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by any changes to the API key, such as if you're changing from using v1 of this REST API, which uses access tokens instead of API keys.
 
 1. When you use a REST endpoint, specify the ClientID and API key in the request header.  Details are in [Using the API endpoints](#using-the-api-endpoints), below.
 
 ##### [v1](#tab/v1)
 
-To use v1 of the Update REST API:
-
-1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), get an access token.  Details are in [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center), below.
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), get an access token from the access token URL.  Details are in [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center), below.
 
 1. Generate your ClientID and secrets.  You can generate multiple client secrets for your Client ID.  For example, you can create multiple secrets for multiple projects.
 
