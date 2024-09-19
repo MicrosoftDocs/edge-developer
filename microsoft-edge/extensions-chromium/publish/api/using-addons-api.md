@@ -72,7 +72,7 @@ To use v1 of the Update REST API:
 
 1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by the changes to the access token URL.
 
-1. Retrieve the access token.  Details are in [Retrieve the access token (v1 only)](#retrieve-the-access-token-v1-only), below.
+1. Retrieve the access token.  Details are in [Retrieve the access token](#retrieve-the-access-token), below.
 
 1. When you use a REST endpoint, specify the access token in the request header.  Details are in [Using the API endpoints](#using-the-api-endpoints), below.
 
