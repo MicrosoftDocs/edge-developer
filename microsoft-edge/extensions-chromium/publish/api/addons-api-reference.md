@@ -54,6 +54,16 @@ The following request headers are required:
 * `X-ClientID: <client ID>`
 * `Content-Type: application/zip`
 
+<!-- todo: 
+change <client ID> to $ClientID ?
+change <api key> to $ApiKey ?
+change order?
+per using.md:
+Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID
+
+global in article, & check using.md
+-->
+
 ##### [v1](#tab/v1)
 
 * `Authorization: Bearer <auth token>`

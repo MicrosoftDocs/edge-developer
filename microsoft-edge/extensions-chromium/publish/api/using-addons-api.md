@@ -235,12 +235,10 @@ Use this REST API endpoint to update the package for an add-on.  This API upload
 
 ##### [v1.1](#tab/v1-1)
 
-<!-- todo: update for 1.1 -->
-
 ```REST
 Endpoint: /v1/products/$productID/submissions/draft/package
 Type: POST
-Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
+Header Parameters: Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID
 Body content: the package file to upload
 ```
 
@@ -275,11 +273,9 @@ To get the product ID:
 
 ##### [v1.1](#tab/v1-1)
 
-<!-- todo: update for 1.1 -->
-
 ```console
 > curl \
--H "Authorization: Bearer $TOKEN" \
+-H "Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID" \
 -H "Content-Type: application/zip" \
 -X POST \
 -T $FILE_NAME \
@@ -315,12 +311,10 @@ Use this API to check the status of package upload.
 
 ##### [v1.1](#tab/v1-1)
 
-<!-- todo: update for 1.1 -->
-
 ```REST
 Endpoint: /v1/products/$productID/submissions/draft/package/operations/$operationID
 Type: GET
-Header Parameters: Authorization: Bearer $TOKEN
+Header Parameters: Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID
 ```
 
 ##### [v1](#tab/v1)
@@ -339,11 +333,9 @@ Header Parameters: Authorization: Bearer $TOKEN
 
 ##### [v1.1](#tab/v1-1)
 
-<!-- todo: update for 1.1 -->
-
 ```console
 > curl \
--H "Authorization: Bearer $TOKEN" \
+-H "Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID" \
 -X GET \
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package/operations/$operationID
@@ -372,12 +364,10 @@ Use this API to publish the current draft of the product to the Microsoft Edge A
 
 ##### [v1.1](#tab/v1-1)
 
-<!-- todo: update for 1.1 -->
-
 ```REST
 Endpoint: /v1/products/$productID/submissions
 Type: POST
-Header Parameters: Authorization: Bearer $TOKEN
+Header Parameters: Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID
 Body content: Notes for certification, in JSON format
 ```
 
@@ -398,11 +388,9 @@ Body content: Notes for certification, in JSON format
 
 ##### [v1.1](#tab/v1-1)
 
-<!-- todo: update for 1.1 -->
-
 ```console
 > curl \
--H "Authorization: Bearer $TOKEN" \
+-H "Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID" \
 -X POST \
 -d '{ "notes"="text value" }' \
 -v \
@@ -435,12 +423,10 @@ Use this API to check the status of the publish operation.
 
 ##### [v1.1](#tab/v1-1)
 
-<!-- todo: update for 1.1 -->
-
 ```REST
 Endpoint: /v1/products/$productID/submissions/operations/$operationID
 Type: GET
-Header Parameters: Authorization: Bearer $TOKEN
+Header Parameters: Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID
 ```
 
 ##### [v1](#tab/v1)
@@ -459,11 +445,9 @@ Header Parameters: Authorization: Bearer $TOKEN
 
 ##### [v1.1](#tab/v1-1)
 
-<!-- todo: update for 1.1 -->
-
 ```console
 > curl \
--H "Authorization: Bearer $TOKEN" \
+-H "Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID" \
 -X GET \
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
