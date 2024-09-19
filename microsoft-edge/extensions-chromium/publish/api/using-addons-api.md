@@ -231,8 +231,7 @@ An access token.
 
 ---
 
-The API is available at the endpoint `https://api.addons.microsoftedge.microsoft.com`.
-<!-- todo: is that an endpoint? vs eg /v1/products/$productID/submissions/draft/package -->
+The API is available at the endpoint root `https://api.addons.microsoftedge.microsoft.com`.
 
 There aren't REST API endpoints for:
 * Creating a new product.
