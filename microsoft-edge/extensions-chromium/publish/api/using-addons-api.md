@@ -211,21 +211,31 @@ For more information, see [Get a token](/azure/active-directory/develop/v1.1-oau
 <!-- ====================================================================== -->
 ## Using the API endpoints
 
-The Update REST API exposes endpoints for getting a list of products, updating products, and publishing products.
+The Update REST API exposes endpoints for:
+* Getting a list of products.
+* Updating a product.
+* Publishing an update of a product.
+
+To use this Microsoft Edge Add-ons Update REST API, you must have the following, per above:
 
 ##### [v1.1](#tab/v1-1)
 
-After you have an API key, you can use the Microsoft Edge Add-ons API.  
+An API key and a Client ID.
 
 ##### [v1](#tab/v1)
 
-After you have an access token, you can use the Microsoft Edge Add-ons API.  
+An access token.
 
 ---
 
-There's no API for creating a new product or updating a product's metadata, such as the description.  You must complete these tasks manually in Microsoft Partner Center.
-
 The API is available at the endpoint `https://api.addons.microsoftedge.microsoft.com`.
+<!-- todo: is that an endpoint? vs eg /v1/products/$productID/submissions/draft/package -->
+
+There aren't REST API endpoints for:
+* Creating a new product.
+* Updating a product's metadata, such as the description.
+
+To create a new product or update a product's metadata, you must use Microsoft Partner Center.
 
 
 <!-- ====================================================================== -->
