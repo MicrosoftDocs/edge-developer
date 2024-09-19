@@ -31,7 +31,7 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 
 
 <!-- ====================================================================== -->
-## Create an Microsoft account 
+## Create a Microsoft account 
 
 To submit an extension to the Microsoft Edge Add-ons website, you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  To register for the Microsoft Edge program, you need a Microsoft account (MSA).  If you don't have a Microsoft account (MSA), create one.  One way to create a Microsoft account (MSA) is to use your existing GitHub account to sign in to  Partner Center. Follow the prompts displayed in the dialogs to automatically create a Microsoft account (MSA).
 
