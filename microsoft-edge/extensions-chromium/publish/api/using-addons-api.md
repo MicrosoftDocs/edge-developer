@@ -99,20 +99,26 @@ To use the Microsoft Edge Add-ons API, you first need to enable the API for your
 
 1. Under the **Microsoft Edge** program, select **Publish API**.
 
+1. Next to the message "enable the new experience", click the **Enable** button:
+
+   ![Enable API at Partner Center, for v1.1](./using-addons-api-images/partner-center-1-1-enable.png)
+
 1. On the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes to finish.
 
-   The API credentials have now been created; you've enabled or renewed the API.  The following items are now displayed on the **Publish API** page:
-   * **Client ID**
-   * **API key**
-   * **Expiry date**
+   The ClientID and API key are automatically generated:
 
-   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID and API key](./using-addons-api-images/create-api-credentials-button.png)<!-- todo: add new png showing v1.1 UI -->
+   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID and API key](./using-addons-api-images/partner-center-1-1-ui.png)
+
+   The API credentials have now been created; you've enabled or renewed the API.  The following items are now displayed on the **Publish API** page:
+   * **Client ID**.
+   * **API Key**.
+   * **Expiry** date for the API key.
 
 1. Write down the following:
    * The **Client ID**.
-   * The **API key**
+   * The **API key**.
 
-   The ClientID and API key are automatically generated.  You'll use these values as request headers when using a REST endpoint:
+   You'll use the Client ID and API key values in request headers when using a REST endpoint:
 
    ``REST
    `Authorization: ApiKey <api key>`
@@ -227,12 +233,27 @@ The API is available at the endpoint `https://api.addons.microsoftedge.microsoft
 
 Use this REST API endpoint to update the package for an add-on.  This API uploads a package to update an existing draft submission of an add-on product.
 
+##### [v1.1](#tab/v1-1)
+
+<!-- todo: update for 1.1 -->
+
 ```REST
 Endpoint: /v1/products/$productID/submissions/draft/package
 Type: POST
 Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
+
+##### [v1](#tab/v1)
+
+```REST
+Endpoint: /v1/products/$productID/submissions/draft/package
+Type: POST
+Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
+Body content: the package file to upload
+```
+
+---
 
 `$productID` is the product ID of the Microsoft Edge Add-on that you want to update. 
 
@@ -252,6 +273,10 @@ To get the product ID:
 <!-- ---------------------------------- -->
 #### Sample request
 
+##### [v1.1](#tab/v1-1)
+
+<!-- todo: update for 1.1 -->
+
 ```console
 > curl \
 -H "Authorization: Bearer $TOKEN" \
@@ -261,6 +286,20 @@ To get the product ID:
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package
 ```
+
+##### [v1](#tab/v1)
+
+```console
+> curl \
+-H "Authorization: Bearer $TOKEN" \
+-H "Content-Type: application/zip" \
+-X POST \
+-T $FILE_NAME \
+-v \
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package
+```
+
+---
 
 If the request succeeds and the update process begins, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` that's required for checking the status of the update operation.
 
@@ -274,15 +313,33 @@ See also:
 
 Use this API to check the status of package upload.
 
+##### [v1.1](#tab/v1-1)
+
+<!-- todo: update for 1.1 -->
+
 ```REST
 Endpoint: /v1/products/$productID/submissions/draft/package/operations/$operationID
 Type: GET
 Header Parameters: Authorization: Bearer $TOKEN
 ```
 
+##### [v1](#tab/v1)
+
+```REST
+Endpoint: /v1/products/$productID/submissions/draft/package/operations/$operationID
+Type: GET
+Header Parameters: Authorization: Bearer $TOKEN
+```
+
+---
+
 
 <!-- ---------------------------------- -->
 #### Sample request
+
+##### [v1.1](#tab/v1-1)
+
+<!-- todo: update for 1.1 -->
 
 ```console
 > curl \
@@ -292,6 +349,17 @@ Header Parameters: Authorization: Bearer $TOKEN
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package/operations/$operationID
 ```
 
+##### [v1](#tab/v1)
+
+```console
+> curl \
+-H "Authorization: Bearer $TOKEN" \
+-X GET \
+-v \
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package/operations/$operationID
+```
+
+---
 
 See also:
 * [Check the status of a package upload](./addons-api-reference.md#check-the-status-of-a-package-upload) in _REST API Reference for Microsoft Edge Add-ons_.
@@ -302,6 +370,10 @@ See also:
 
 Use this API to publish the current draft of the product to the Microsoft Edge Add-ons website.
 
+##### [v1.1](#tab/v1-1)
+
+<!-- todo: update for 1.1 -->
+
 ```REST
 Endpoint: /v1/products/$productID/submissions
 Type: POST
@@ -309,9 +381,24 @@ Header Parameters: Authorization: Bearer $TOKEN
 Body content: Notes for certification, in JSON format
 ```
 
+##### [v1](#tab/v1)
+
+```REST
+Endpoint: /v1/products/$productID/submissions
+Type: POST
+Header Parameters: Authorization: Bearer $TOKEN
+Body content: Notes for certification, in JSON format
+```
+
+---
+
 
 <!-- ---------------------------------- -->
 #### Sample request
+
+##### [v1.1](#tab/v1-1)
+
+<!-- todo: update for 1.1 -->
 
 ```console
 > curl \
@@ -321,6 +408,19 @@ Body content: Notes for certification, in JSON format
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions
 ```
+
+##### [v1](#tab/v1)
+
+```console
+> curl \
+-H "Authorization: Bearer $TOKEN" \
+-X POST \
+-d '{ "notes"="text value" }' \
+-v \
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions
+```
+
+---
 
 If the request succeeds and the publishing process begins, you'll receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` that's required for checking the status of the publish operation.
 
@@ -333,15 +433,33 @@ See also:
 
 Use this API to check the status of the publish operation.
 
+##### [v1.1](#tab/v1-1)
+
+<!-- todo: update for 1.1 -->
+
 ```REST
 Endpoint: /v1/products/$productID/submissions/operations/$operationID
 Type: GET
 Header Parameters: Authorization: Bearer $TOKEN
 ```
 
+##### [v1](#tab/v1)
+
+```REST
+Endpoint: /v1/products/$productID/submissions/operations/$operationID
+Type: GET
+Header Parameters: Authorization: Bearer $TOKEN
+```
+
+---
+
 
 <!-- ---------------------------------- -->
 #### Sample request
+
+##### [v1.1](#tab/v1-1)
+
+<!-- todo: update for 1.1 -->
 
 ```console
 > curl \
@@ -350,6 +468,18 @@ Header Parameters: Authorization: Bearer $TOKEN
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
 ```
+
+##### [v1](#tab/v1)
+
+```console
+> curl \
+-H "Authorization: Bearer $TOKEN" \
+-X GET \
+-v \
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
+```
+
+---
 
 See also:
 * [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for Microsoft Edge Add-ons_.
