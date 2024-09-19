@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 09/18/2024
+ms.date: 09/19/2024
 ---
 # Using the Microsoft Edge Add-ons REST API
 
@@ -20,13 +20,13 @@ To submit suggestions and feedback, enter an [Issue about the Add-ons API](https
 
 
 <!-- ====================================================================== -->
-## Version 2 of the REST Publish API
+## Version 1.1 of the REST Publish API
 
-The REST Publish API v2 differs from v1 in the following main ways:
+The REST Publish API v1.1 differs from v1 in the following main ways:
 
-* v2 uses API keys, whereas v1 used Secrets instead.
+* v1.1 uses API keys, whereas v1 used Secrets instead.
 
-* v2 doesn't require sending an Access Token URL.
+* v1.1 doesn't require sending an Access Token URL.
 
 The UI in Partner Center is slightly different (as described below), along with usage of the REST Publish API endpoints (as described in [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md)).
 
@@ -34,17 +34,17 @@ The UI in Partner Center is slightly different (as described below), along with 
 <!-- ---------------------------------- -->
 #### Dates
 
-As of September 6, 2024, both v2 and v1 of the REST Publish API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
+As of September 6, 2024, both v1.1 and v1 of the REST Publish API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
 
 
 <!-- ---------------------------------- -->
-#### Getting started with v2 of the REST Publish API
+#### Getting started with v1.1 of the REST Publish API
 
-To use v2 of the REST Publish API:
+To use v1.1 of the REST Publish API:
 
 1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the new API key management experience.
 
-1. Re-generate your ClientId and secrets.<!-- todo: reword, b/c secrets are no longer used, according to "v2 uses API keys, whereas v1 used Secrets" -->  You might need to update your authentication workflows.
+1. Re-generate your ClientId and secrets.<!-- todo: reword, b/c secrets are no longer used, according to "v1.1 uses API keys, whereas v1 used Secrets" -->  You might need to update your authentication workflows.
 
 1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by the changes to the access token URL and API key.
 
@@ -77,33 +77,33 @@ To use the Microsoft Edge Add-ons API, you first need to enable the API for your
 
    The API credentials have now been created; you've enabled or renewed the API.  The following items are now displayed on the **Publish API** page:
    * **Client ID**
-   * **Client secret** (for REST Publish API v1) or **API key** (for REST Publish API v2)
+   * **Client secret** (for REST Publish API v1) or **API key** (for REST Publish API v1.1)
    * **Expiry date**
    * **Access token URL** (for REST Publish API v1)
 
-   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)<!-- todo: update per v2; maybe show a v2 png and then a v1 png -->
+   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)<!-- todo: update per v1.1; maybe show a v1.1 png and then a v1 png -->
 
 1. Write down the following:
    * The **Client ID**.
-   * The **Client secret** (REST Publish API v1) or **API key** (REST Publish API v2).
+   * The **Client secret** (REST Publish API v1) or **API key** (REST Publish API v1.1).
    * The **Access token URL** (REST Publish API v1).
 
    You'll use these values in the next step, to get an access token.
 
-<!-- todo: update steps to mention selecting v2 vs v1.
+<!-- todo: update steps to mention selecting v1.1 vs v1.
 Add screenshot png?
-What's the title of the page that contains the UI control to select v1 vs v2?
+What's the title of the page that contains the UI control to select v1 vs v1.1?
 What's the label of the UI control?
 Is the UI control an Option button, or a Button?
 -->
 
 > [!IMPORTANT]
-> Applies to REST Publish API v1, not v2:
+> Applies to REST Publish API v1, not v1.1:
 > Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials).  This particular secret isn't shown again.
 
 You can generate multiple client secrets (if using v1) for your client ID.  For example, you can create multiple secrets for multiple projects.
 
-When using REST Publish API v2, the ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
+When using REST Publish API v1.1, the ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
 
 
 <!-- ====================================================================== -->
@@ -112,7 +112,7 @@ When using REST Publish API v2, the ClientId and API Keys are automatically re-g
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the previous step, [Enabling the REST Publish API at Partner Center](#enabling-the-rest-publish-api-at-partner-center).
 
 ```REST
-Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2.0/token
+Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1.1.0/token
 Type: POST
 Header Parameters: Content-Type: application/x-www-form-urlencoded
 ```
@@ -130,7 +130,7 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 -d "client_secret={$Client_Secret}" \
 -d "grant_type=client_credentials" \
 -v \
-https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2.0/token
+https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1.1.0/token
 ```
 
 
@@ -145,7 +145,7 @@ https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2
 }
 ```
 
-For more information, see [Get a token](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) in _Microsoft identity platform and the OAuth 2.0 client credentials flow_.
+For more information, see [Get a token](/azure/active-directory/develop/v1.1-oauth2-client-creds-grant-flow#get-a-token) in _Microsoft identity platform and the OAuth 2.0 client credentials flow_.
 
 
 <!-- ====================================================================== -->
@@ -302,4 +302,4 @@ GitHub:
 * [Issues](https://github.com/MicrosoftDocs/edge-developer/issues/) in `edge-developer` repo for Microsoft Edge Developer docs.
 
 Microsoft identity platform:
-* [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
+* [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v1.1-oauth2-client-creds-grant-flow)
