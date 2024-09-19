@@ -34,10 +34,10 @@ ms.date: 09/18/2024
 #### Benefits of Windowed hosting
 #### Benefits of Window to Visual hosting
 #### APIs for Windowed hosting and Window to Visual hosting
-#### Window management                            [APIs tabset]
-###### Sizing, positioning, and visibility        [APIs tabset]
-###### Zooming                                    [APIs tabset]
-#### Rasterization scale                          [APIs tabset] err? same level as surrounding headings, in "Overview of APIs"
+###### Window management                          [APIs tabset]
+###### Sizing, positioning, and visibility        [APIs tabset] child
+###### Zooming                                    [APIs tabset] child
+###### Rasterization scale                        [APIs tabset]
 ###### Focus and tabbing                          [APIs tabset]
 ###### Parent window                              [APIs tabset]
 ###### Keyboard accelerators                      [APIs tabset]
@@ -46,10 +46,10 @@ ms.date: 09/18/2024
 =======================================
 ## Visual hosting
 #### APIs for Visual hosting
-#### Composition-based rendering                  [APIs tabset]
-#### Output                                       [APIs tabset]
-#### Input                                        [APIs tabset]
-#### Accessibility                                [APIs tabset]
+###### Composition-based rendering                [APIs tabset]
+###### Output                                     [APIs tabset]
+###### Input                                      [APIs tabset]
+###### Accessibility                              [APIs tabset]
 
 =======================================
 ## See also
@@ -151,7 +151,10 @@ See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft
 <!-- ------------------------------ -->
 #### Rendering WebView2 in framework and non-framework apps
 
-<!-- todo: are these tab lists introduced ok?  are they straight copy of "Overview of APIs"?  link to there instead? -->
+<!-- todo: is this tabset/ APIs list introduced ok?  is this section a straight copy of "Overview of APIs"?  link to there instead?  
+that link would be:
+* [Rendering WebView2 in non-framework apps](./overview-features-apis.md#rendering-webview2-in-non-framework-apps) - what about "in framework"??
+-->
 
 If you're using a UI framework for your app, you should use the corresponding WebView2 element for that UI framework.  If you aren't using a UI framework for your app (such as Win32 or React Native) or your UI framework doesn't have a WebView2 element, you'll need to create `CoreWebView2Controller` and render it into the desired app.
 
@@ -216,13 +219,23 @@ For general information regarding Window management and `HWND` functionality, se
 #### APIs for Windowed hosting and Window to Visual hosting
 
 The following APIs can be used when configuring WebView2 for Windowed hosting or Window to Visual hosting.
-<!-- todo: are the below tab lists a straight copy of "Overview of APIs"?  link to there instead? -->
+<!-- todo: are the below tab lists a straight copy of "Overview of APIs"?  link to there instead?
+those links would be:
+Window management - no equiv section?
+   [Sizing, positioning, and visibility](./overview-features-apis.md#sizing-positioning-and-visibility)
+   [Zooming](./overview-features-apis.md#zooming)
+[Rasterization scale](./overview-features-apis.md#rasterization-scale)
+[Focus and tabbing](./overview-features-apis.md#focus-and-tabbing)
+[Parent window](./overview-features-apis.md#parent-window)
+[Keyboard accelerators](./overview-features-apis.md#keyboard-accelerators)
+[Default background color](./overview-features-apis.md#default-background-color)
+-->
 
 
 <!-- ------------------------------ -->
-#### Window management
+###### Window management
 
-In a Windowed hosting environment, the following aspects of window management need to be handled.
+In a Windowed hosting environment, the following aspects of window management need to be handled:
 * Sizing, positioning, and visibility.
 * Zooming.
 
@@ -230,6 +243,7 @@ In a Windowed hosting environment, the following aspects of window management ne
 <!-- ---------- -->
 ###### Sizing, positioning, and visibility
 
+This section is part of Window management.
 
 `CoreWebView2Controller` takes a parent `HWND`.  The `Bounds` property sizes and positions the WebView2 relative to the parent `HWND`.  The visibility of WebView2 can be toggled by using `IsVisible`.
 
@@ -253,6 +267,8 @@ In a Windowed hosting environment, the following aspects of window management ne
 
 <!-- ---------- -->
 ###### Zooming
+
+This section is part of Window management.
 
 WebView2 `ZoomFactor` is used to scale just the web content.  This is also updated when the user zooms the content through **Ctrl**+Mouse Wheel.
 
@@ -278,10 +294,7 @@ WebView2 `ZoomFactor` is used to scale just the web content.  This is also updat
 
 
 <!-- ------------------------------ -->
-#### Rasterization scale
-<!-- todo: demote?  this heading is at same level as surrounding headings, in "Overview of APIs"
-https://learn.microsoft.com/microsoft-edge/webview2/concepts/overview-features-apis#rasterization-scale
--->
+###### Rasterization scale
 
 The `RasterizationScale` API scales all WebView2 UI including context menus, tooltip, and popups.  The app can set whether the WebView2 should detect monitor scale changes and automatically update the `RasterizationScale`.  `BoundsMode` is used to configure whether the `Bounds` property is interpreted as raw pixels, or DIPs (which need to be scaled by `RasterizationScale`).
 
@@ -440,11 +453,17 @@ If your WebView2 app uses Visual hosting:
 #### APIs for Visual hosting
 
 The following APIs can be used when configuring WebView2 in a Visual hosting environment:
-<!-- todo: are the below tab lists a straight copy of "Overview of APIs"?  link to there instead? -->
+<!-- todo: are the below tab lists a straight copy of "Overview of APIs"?  link to there instead?
+those links would be:
+Composition-based rendering = [Rendering WebView2 using Composition](./overview-features-apis.md#rendering-webview2-using-composition)
+Output = [Connecting to the visual tree](./overview-features-apis.md#connecting-to-the-visual-tree)
+Input = [Forwarding input](./overview-features-apis.md#forwarding-input)
+Accessibility = [Accessibility](./overview-features-apis.md#accessibility)
+-->
 
 
 <!-- ------------------------------ -->
-#### Composition-based rendering
+###### Composition-based rendering
 
 For composition-based WebView2 rendering, use the `CoreWebView2Environment` to create a `CoreWebView2CompositionController`. The `CoreWebView2CompositionController` implements all the APIs as `CoreWebView2Controller`, but includes additional APIs specific to composition-based rendering.
 
@@ -467,7 +486,7 @@ For composition-based WebView2 rendering, use the `CoreWebView2Environment` to c
 
 
 <!-- ------------------------------ -->
-#### Output
+###### Output
 
 WebView2 can connect its composition tree to `IDCompositionVisual`, `IDCompositionTarget`, or `Windows::UI::Composition::ContainerVisual`.
 
@@ -487,7 +506,7 @@ WebView2 can connect its composition tree to `IDCompositionVisual`, `IDCompositi
 
 
 <!-- ------------------------------ -->
-#### Input
+###### Input
 
 Spatial input such as mouse, touch, or pen is received by the app and must be sent to WebView2. WebView2 notifies the app when the cursor should be updated based on the input device's position.
 
@@ -536,7 +555,7 @@ Spatial input such as mouse, touch, or pen is received by the app and must be se
 
 
 <!-- ------------------------------ -->
-#### Accessibility
+###### Accessibility
 
 By default, WebView2 will show up in the accessibility tree as a child of the parent `HWND`.  WebView2 provides an API to better position the WebView2 content relative to other elements in the app.
 
