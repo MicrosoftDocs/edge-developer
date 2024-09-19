@@ -28,17 +28,15 @@ As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.
 
 ##### [v1.1](#tab/v1-1)
 
-v1.1 uses API keys.  The UI in Partner Center covers API keys, as described below.
-
-v1.1 doesn't require sending an Access Token URL.
+v1.1 uses an API key.  The UI in Partner Center covers the API key, as described below.
 
 The REST API endpoints use specific request headers for v1.1, as described in [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md).
 
 ##### [v1](#tab/v1)
 
-v1 uses Secrets.  The UI in Partner Center covers secrets, as described below.
+v1 requires sending an Access Token URL.  The UI in Partner Center covers the access token, as described below.
 
-v1 requires sending an Access Token URL.  The UI in Partner Center covers access tokens, as described below.
+v1 uses Secrets.  The UI in Partner Center covers secrets, as described below.
 
 The REST API endpoints use specific request headers for v1, as described in [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md).
 
@@ -54,12 +52,12 @@ To use v1.1 of the Update REST API:
 
 1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the API key management experience.
 
-1. The ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
+1. The ClientID and API key are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientID and API key? -->
 
 1. Update your authentication workflows, if needed.
 
 1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by changes to the API key.
-   * For example, moving from v1's use of secrets, to v1.1's use of API keys.
+   * For example, moving from v1's use of secrets, to v1.1's use of an API key.
 
 ##### [v1](#tab/v1)
 <!-- todo: review high-level steps wording -->
@@ -68,7 +66,7 @@ To use v1 of the Update REST API:
 
 1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), get an access token.
 
-1. Re-generate your ClientId and secrets.
+1. Re-generate your ClientID and secrets.
 
 1. Update your authentication workflows, if needed.
 
@@ -94,7 +92,6 @@ Details are below.
 
 <!-- ====================================================================== -->
 ## Enabling the Update REST API at Partner Center
-<!-- todo: apply tabsets, generally per section/heading -->
 
 To use the Microsoft Edge Add-ons API, you first need to enable the API for your project in the Microsoft Partner Center by creating API credentials, as follows:
 
@@ -111,15 +108,15 @@ To use the Microsoft Edge Add-ons API, you first need to enable the API for your
    * **API key**
    * **Expiry date**
 
-   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)<!-- todo: add/use new png showing v1.1.  What's the title of the page that contains the UI control to select v1 vs v1.1?  What's the label of the UI control?  Is the UI control an Option button, or a Button? -->
+   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID and API key](./using-addons-api-images/create-api-credentials-button.png)<!-- todo: add/use new png showing v1.1.  What's the title of the page that contains the UI control to select v1 vs v1.1?  What's the label of the UI control?  Is the UI control an Option button, or a Button? -->
 
 1. Write down the following:
    * The **Client ID**.
    * The **API key**
 
-   You'll use these values in the next step, to get an access token.<!-- todo: applies to 1.1? -->
+   You'll use these values in a later step.<!-- todo: why write down these values?  specify which later step uses the value, maybe link -->
 
-The ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
+The ClientID and API key are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientID and API Keys? -->
 
 ##### [v1](#tab/v1)
 
@@ -207,8 +204,17 @@ For more information, see [Get a token](/azure/active-directory/develop/v1.1-oau
 <!-- ====================================================================== -->
 ## Using the API endpoints
 
-After you have an access token (v1 only), you can use the Microsoft Edge Add-ons API.  This API exposes endpoints for getting a list of products, updating products, and publishing products.
-<!-- todo: what to say re: v1.1? -->
+The Update REST API exposes endpoints for getting a list of products, updating products, and publishing products.
+
+##### [v1.1](#tab/v1-1)
+
+After you have an API key, you can use the Microsoft Edge Add-ons API.  
+
+##### [v1](#tab/v1)
+
+After you have an access token, you can use the Microsoft Edge Add-ons API.  
+
+---
 
 There's no API for creating a new product or updating a product's metadata, such as the description.  You must complete these tasks manually in Microsoft Partner Center.
 
