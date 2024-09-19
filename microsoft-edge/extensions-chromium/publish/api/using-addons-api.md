@@ -46,7 +46,7 @@ To use v2 of the REST Publish API:
 
 1. Re-generate your ClientId and secrets.<!-- todo: reword, b/c secrets are no longer used, according to "v2 uses API keys, whereas v1 used Secrets" -->  You might need to update your authentication workflows.
 
-1. Re-configure any existing Continuous Integration (CI) or Continuous Development (CD)<!-- todo: does CD stand for Continuous Development? --> pipelines that might be impacted by the changes to the access token URL and API key.
+1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by the changes to the access token URL and API key.
 
 Details are below.
 
