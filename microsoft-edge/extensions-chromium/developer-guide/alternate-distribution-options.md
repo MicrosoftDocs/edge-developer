@@ -32,9 +32,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Before you begin
+## Gather initial information
 
-Make sure that you publish your extension in the Microsoft Edge Add-ons website, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_url`, make sure you can go to your extension at that URL.
+Make sure that you publish your extension in the Microsoft Edge Add-ons website<!-- todo: but Intro says: "Generally, extensions are distributed through the Microsoft Edge Add-ons website. There are some scenarios where developers may need to distribute extensions using alternate methods." -->, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_url`, make sure you can go to your extension at that URL.
 
 Also, make sure that you have the following information:
 
