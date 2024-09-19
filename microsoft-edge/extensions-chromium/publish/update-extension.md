@@ -29,7 +29,7 @@ To update your extension that's at the store (the Microsoft Edge Add-ons website
 
 1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons website.
 
-After your extension has been created initially, you can update your extension by [Using the Microsoft Edge Add-ons REST API](./api/using-addons-api.md).
+After your extension has been created initially, you can update your extension by [Using the Microsoft Edge Add-ons Update REST API](./api/using-addons-api.md).
 
 
 <!-- ====================================================================== -->
@@ -89,5 +89,5 @@ The extension is now removed from the Microsoft Edge Add-ons website.  Users who
 <!-- all links in article -->
 
 * [Set an externally installed extension to automatically update](./auto-update.md) - for extensions that don't use Partner Center and the Microsoft Edge Add-ons website.
-* [Using the Microsoft Edge Add-ons REST API](./api/using-addons-api.md)
+* [Using the Microsoft Edge Add-ons Update REST API](./api/using-addons-api.md)
 * [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
