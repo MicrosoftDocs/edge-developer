@@ -185,7 +185,7 @@ landingContent:
 
       - linkListType: reference
         links:
-          - text: REST API Reference for Microsoft Edge Add-ons
+          - text: REST API Reference for updating Microsoft Edge Add-ons
             url: ../publish/api/addons-api-reference.md
 
 # =============================================================================

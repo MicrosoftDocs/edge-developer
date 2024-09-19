@@ -298,7 +298,7 @@ If the request succeeds and the update process begins, you receive a `202 Accept
 
 
 See also:
-* [Upload a package to update an existing submission](./addons-api-reference.md#upload-a-package-to-update-an-existing-submission) in _REST API Reference for Microsoft Edge Add-ons_.
+* [Upload a package to update an existing submission](./addons-api-reference.md#upload-a-package-to-update-an-existing-submission) in _REST API Reference for updating Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
@@ -351,7 +351,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 ---
 
 See also:
-* [Check the status of a package upload](./addons-api-reference.md#check-the-status-of-a-package-upload) in _REST API Reference for Microsoft Edge Add-ons_.
+* [Check the status of a package upload](./addons-api-reference.md#check-the-status-of-a-package-upload) in _REST API Reference for updating Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
@@ -410,7 +410,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 If the request succeeds and the publishing process begins, you'll receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` that's required for checking the status of the publish operation.
 
 See also:
-* [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _REST API Reference for Microsoft Edge Add-ons_.
+* [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _REST API Reference for updating Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
@@ -463,14 +463,14 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 ---
 
 See also:
-* [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for Microsoft Edge Add-ons_.
+* [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for updating Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md) - REST API for updating an extension.
+* [REST API Reference for updating Microsoft Edge Add-ons](./addons-api-reference.md) - REST API for updating an extension.
 * [Supported APIs for Microsoft Edge extensions](../../developer-guide/api-support.md) - JavaScript APIs for developing an extension.
 
 GitHub:
