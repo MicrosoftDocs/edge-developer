@@ -52,21 +52,19 @@ To use v1.1 of the Update REST API:
 
 1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the API key management experience.
 
-1. The ClientID and API key are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientID and API key? -->
+1. Write down the ClientID and API key.  When you use a REST endpoint, you'll specify these in the request header.
 
 1. Update your authentication workflows, if needed.
 
-1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by changes to the API key.
-   * For example, moving from v1's use of secrets, to v1.1's use of an API key.
+1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by any changes to the API key.
 
 ##### [v1](#tab/v1)
-<!-- todo: review high-level steps wording -->
 
 To use v1 of the Update REST API:
 
 1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), get an access token.
 
-1. Re-generate your ClientID and secrets.
+1. Generate your ClientID and secrets.
 
 1. Update your authentication workflows, if needed.
 
@@ -108,15 +106,18 @@ To use the Microsoft Edge Add-ons API, you first need to enable the API for your
    * **API key**
    * **Expiry date**
 
-   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID and API key](./using-addons-api-images/create-api-credentials-button.png)<!-- todo: add/use new png showing v1.1.  What's the title of the page that contains the UI control to select v1 vs v1.1?  What's the label of the UI control?  Is the UI control an Option button, or a Button? -->
+   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID and API key](./using-addons-api-images/create-api-credentials-button.png)<!-- todo: add new png showing v1.1 UI -->
 
 1. Write down the following:
    * The **Client ID**.
    * The **API key**
 
-   You'll use these values in a later step.<!-- todo: why write down these values?  specify which later step uses the value, maybe link -->
+   The ClientID and API key are automatically generated.  You'll use these values as request headers when using a REST endpoint:
 
-The ClientID and API key are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientID and API Keys? -->
+   ``REST
+   `Authorization: ApiKey <api key>`
+   `X-ClientID: <client ID>`
+   ```
 
 ##### [v1](#tab/v1)
 
