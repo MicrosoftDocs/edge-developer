@@ -42,7 +42,7 @@ In this section, you'll learn how to use the **Performance** tool in DevTools to
 
 1. To search for the performance events that are caused by your content script, press **Ctrl+F** on Windows/Linux or **Command+F** on macOS.  The **Find** text box appears at the bottom of the **Performance** tool.
 
-1. Type **Evaluate script** and then press **Enter** until the **Performance** tool highlights the performance events that are caused by your content script.  You will know that you have found the right performance event when the **Script** label in the **Summary** panel shows the name of your content script.
+1. Type **Evaluate script** and then press **Enter** until the **Performance** tool highlights the performance events that are caused by your content script.  You will know that you have found the right performance event when the **Script** label in the **Summary** panel shows the name of your content script:
 
    ![The Evaluate script performance event due to the extension's content script running during the page load](./minimize-page-load-time-impact-images/evaluate-script-event.png)
 
@@ -71,6 +71,10 @@ The Edge tracing tool, available at the `edge://tracing` URL, is a powerful tool
 
 1. Open the tab where the Edge tracing tool is running, and then click the **Stop** button. The new trace information appears in the tool.
 
+
+<!-- ---------- -->
+###### Filter the results
+
 Traces that are recorded by the Edge tracing tool provide a lot of information about the browser, as well as your extension.
 
 To filter the information to show only what's relevant to the webpage that your extension impacted:
@@ -86,6 +90,10 @@ To filter the information to show only what's relevant to the webpage that your 
    The bottom panel displays the start time and total duration of the event:
 
    ![The Edge tracing tool showing a script injection event](./minimize-page-load-time-impact-images/tracing-event-selected.png)
+
+
+<!-- ---------- -->
+###### Look for key events
 
 To continue analyzing the performance impact of your extension's content script on the webpage, look for the following key events inside the **ScriptInjection::InjectJS** event:
 
