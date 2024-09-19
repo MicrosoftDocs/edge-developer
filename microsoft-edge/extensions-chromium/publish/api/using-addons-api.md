@@ -109,16 +109,18 @@ To use the Microsoft Edge Add-ons API, you first need to enable the API for your
 
    ![Enable API at Partner Center, for v1.1](./using-addons-api-images/partner-center-1-1-enable.png)
 
+   The above screenshot shows the v1 UI, including **Access token URL** and **Secrets**, prior to clicking the **Enable** button to switch to the v1.1 UI.
+
 1. On the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes to finish.
 
-   The ClientID and API key are automatically generated:
+   The Client ID and a new API key are automatically generated:
 
    ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID and API key](./using-addons-api-images/partner-center-1-1-ui.png)
 
    The API credentials have now been created; you've enabled or renewed the API.  The following items are now displayed on the **Publish API** page:
    * **Client ID**.
    * **API Key**.
-   * **Expiry** date for the API key.
+      * **Expiry** date for the API key.
 
 1. Write down the following:
    * The **Client ID**.
