@@ -212,9 +212,12 @@ For more information, see [Get a token](/azure/active-directory/develop/v1.1-oau
 ## Using the API endpoints
 
 The Update REST API exposes endpoints for:
-* Getting a list of products.
-* Updating a product.
-* Publishing an update of a product.
+* [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission)
+* [Checking the status of a package upload](#checking-the-status-of-a-package-upload)
+* [Publishing the submission](#publishing-the-submission)
+* [Checking the publishing status](#checking-the-publishing-status)
+
+These endpoints are introduced below.
 
 To use this Microsoft Edge Add-ons Update REST API, you must have the following, per above:
 
