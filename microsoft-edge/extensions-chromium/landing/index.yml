@@ -180,7 +180,7 @@ landingContent:
           - text: Set an externally installed extension to automatically update
             url: ../publish/auto-update.md
 
-          - text: Using the Microsoft Edge Add-ons Update REST API
+          - text: Using the Update REST API for Microsoft Edge Add-ons
             url: ../publish/api/using-addons-api.md
 
       - linkListType: reference

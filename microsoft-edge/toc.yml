@@ -1112,7 +1112,7 @@
 
             - name: REST API for updating an extension
               items:
-                - name: Using the Microsoft Edge Add-ons Update REST API
+                - name: Using the Update REST API for Microsoft Edge Add-ons
                   href: extensions-chromium/publish/api/using-addons-api.md
 
                 - name: REST API Reference for Microsoft Edge Add-ons
