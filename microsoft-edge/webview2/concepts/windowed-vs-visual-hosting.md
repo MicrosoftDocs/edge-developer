@@ -53,8 +53,6 @@ ms.date: 09/18/2024
 
 =======================================
 ## See also
-
-Overview of APIs: https://learn.microsoft.com/microsoft-edge/webview2/concepts/overview-features-apis
 -->
 
 There are three options for hosting the Microsoft Edge WebView2 control in your app:
