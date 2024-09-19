@@ -183,14 +183,14 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 * Cleared the environment variable for default background color in .NET WebView2 controls after the controller has finished creation.
 * Enabled accessibility support for Webview2 in visual hosting mode.
 * Fixed a bug with removing a "web resource requested" filter for multiple sources when one of them is Document.
-* Fixes a regression where `DataList` was not visible in WinUI or in other visually hosted WebView2 instances.
+* Fixed a regression where `DataList` was not visible in WinUI or in other visually hosted WebView2 instances.
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* Fix SDK dependency for .NET projects.  ([Issue #4743](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4743))
-* Fixes a compatibility issue when calling `GetAvailableBrowserVersionString()` with an older `WebView2Loader.dll`.  ([Issue #4395](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4395))
+* Fixed an SDK dependency for .NET projects.  ([Issue #4743](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4743))
+* Fixed a compatibility issue when calling `GetAvailableBrowserVersionString()` with an older `WebView2Loader.dll`.  ([Issue #4395](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4395))
 * Fixed issues when compiling wv2winrt-generated code with the `cpp20` and `/permissive-` options.
 
 
