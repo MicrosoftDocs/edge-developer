@@ -216,6 +216,7 @@ For general information regarding Window management and `HWND` functionality, se
 #### APIs for Windowed hosting and Window to Visual hosting
 
 The following APIs can be used when configuring WebView2 for Windowed hosting or Window to Visual hosting.
+<!-- todo: are the below tab lists a straight copy of "Overview of APIs"?  link to there instead? -->
 
 
 <!-- ------------------------------ -->
@@ -229,7 +230,6 @@ In a Windowed hosting environment, the following aspects of window management ne
 <!-- ---------- -->
 ###### Sizing, positioning, and visibility
 
-<!-- todo: are these tab lists introduced ok?  are they straight copy of "Overview of APIs"?  link to there instead? -->
 
 `CoreWebView2Controller` takes a parent `HWND`.  The `Bounds` property sizes and positions the WebView2 relative to the parent `HWND`.  The visibility of WebView2 can be toggled by using `IsVisible`.
 
@@ -440,12 +440,11 @@ If your WebView2 app uses Visual hosting:
 #### APIs for Visual hosting
 
 The following APIs can be used when configuring WebView2 in a Visual hosting environment:
+<!-- todo: are the below tab lists a straight copy of "Overview of APIs"?  link to there instead? -->
 
 
 <!-- ------------------------------ -->
 #### Composition-based rendering
-
-<!-- todo: are these tab lists introduced ok?  are they straight copy of "Overview of APIs"?  link to there instead? -->
 
 For composition-based WebView2 rendering, use the `CoreWebView2Environment` to create a `CoreWebView2CompositionController`. The `CoreWebView2CompositionController` implements all the APIs as `CoreWebView2Controller`, but includes additional APIs specific to composition-based rendering.
 
