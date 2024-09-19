@@ -34,7 +34,7 @@ The REST endpoints use specific request headers for v1.1.
 
 ##### [v1](#tab/v1)
 
-v1 requires sending an access token.<!-- todo: to an access token URL?  an access token that's provided by/at an access token URL? -->  The Partner Center UI shows the access token URL.<!-- todo: define/relate "access token URL" vs. "access token" -->
+v1 requires sending an access token to the API endpoint.  You obtain the access token by sending a POST message to an access token URL.  The Partner Center UI shows the access token URL.
 
 v1 uses Secrets.  The UI in Partner Center covers Secrets.
 
@@ -159,12 +159,13 @@ You can generate multiple client secrets for your Client ID.  For example, you c
 
 <!-- ---------------------------------- -->
 #### Retrieve the access token
-<!-- todo: global: access token, or access token URL?  consistency pass, relate the two terms -->
 
-After you've acquired the necessary authorization for your application, get access tokens<!-- todo: plural or singular?  one token per endpoint? --> for APIs.  To get a token by using the client credentials grant, send a POST request to the Access token URL (the OAuth token).
+You obtain an access token by sending a POST message to an access token URL.  The Partner Center UI shows the access token URL, which is the same as in this article.  You then include the access token in the header when using an API endpoint, such as the endpoint for [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission), below.
 
-The tenant information<!-- todo: define "tenant information", what relevance? --> is available in the Access token URL that you received in the previous step, [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center).
+<!-- todo: old wording; reword/ condense/ delete: -->
+After you've acquired the necessary authorization for your application, get access tokens<!-- todo: plural or singular?  one token per endpoint? --> for APIs.  To get a token (an OAuth token) by using the client credentials grant,<!-- todo: define --> send a POST request to the Access token URL.  The tenant information<!-- todo: define, what relevance? which pieces of info? --> is available in the access token URL that you received in the previous step, [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center).
 
+Description of the endpoint to use to get an access token:
 
 ```REST
 Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1.1.0/token
@@ -175,6 +176,8 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 
 <!-- ---------- -->
 ###### Sample request
+
+For example, to get an access token, send a POST request to the access token URL, as follows:
 
 ```console
 > curl \
@@ -191,6 +194,8 @@ https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1
 
 <!-- ---------- -->
 ###### Sample response
+
+An access token is returned to you, such as:
 
 ```json
 {
