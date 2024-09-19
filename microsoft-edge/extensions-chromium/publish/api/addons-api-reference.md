@@ -16,9 +16,9 @@ For an overview, see [Using the Microsoft Edge Add-ons REST API](./using-addons-
 
 
 <!-- ------------------------------ -->
-#### Versions of the REST API
+#### Versions of the Update REST API
 
-As of September 6, 2024, both v2 and v1 of this REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
+As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
 
 
 <!-- ====================================================================== -->
@@ -48,7 +48,7 @@ Uploads a package to update an existing draft submission of an add-on product.
 
 The following request headers are required:
 
-##### [v2](#tab/v2)
+##### [v1.1](#tab/v1-1)
 
 * `Authorization: ApiKey <api key>`
 * `X-ClientID: <client ID>`
@@ -121,7 +121,7 @@ Gets the status of the package upload.
 
 The following request headers are required:
 
-##### [v2](#tab/v2)
+##### [v1.1](#tab/v1-1)
 
 * `Authorization: ApiKey <api key>`
 * `X-ClientID: <client ID>`
@@ -242,7 +242,7 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 The following request headers are required:
 
-##### [v2](#tab/v2)
+##### [v1.1](#tab/v1-1)
 
 * `Authorization: ApiKey <api key>`
 * `X-ClientID: <client ID>`
@@ -312,7 +312,7 @@ None.
 
 The following request headers are required:
 
-##### [v2](#tab/v2)
+##### [v1.1](#tab/v1-1)
 
 * `Authorization: ApiKey <api key>`
 * `X-ClientID: <client ID>`

@@ -10,43 +10,71 @@ ms.date: 09/19/2024
 ---
 # Using the Microsoft Edge Add-ons REST API
 
-To publish an extension, you first use Partner Center, and then optionally you can use this REST API to update the extension.
+To publish an extension, you first use Partner Center, and then optionally you can use the REST API to update the extension (or use Partner Center instead).
 
-The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons store.  You can use these REST endpoints to automate the process of uploading and publishing new versions of your add-ons to the Microsoft Edge Add-ons store.  You use the **Publish API** page at Partner Center to enable the API and begin working with these API endpoints.
-
-<!-- To publish an extension, you first use Partner Center, and then optionally you can use the REST API to update the extension (or use Partner Center instead). -->
+The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons store.  You can use these REST endpoints to automate the process of uploading and publishing new versions of your add-ons to the Microsoft Edge Add-ons store.  You use the **Publish API** page at Partner Center to first enable the API and then begin using these API endpoints.
 
 To submit suggestions and feedback, enter an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
 
 
-<!-- ====================================================================== -->
-## Version 1.1 of the REST Publish API
+<!-- ------------------------------ -->
+#### Versions of the Update REST API
 
-The REST Publish API v1.1 differs from v1 in the following main ways:
+As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
 
-* v1.1 uses API keys, whereas v1 used Secrets instead.
 
-* v1.1 doesn't require sending an Access Token URL.
+<!-- ------------------------------ -->
+#### Components used by the Update REST API
 
-The UI in Partner Center is slightly different (as described below), along with usage of the REST Publish API endpoints (as described in [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md)).
+##### [v1.1](#tab/v1-1)
+
+v1.1 uses API keys.  The UI in Partner Center covers API keys, as described below.
+
+v1.1 doesn't require sending an Access Token URL.
+
+The REST API endpoints use specific request headers for v1.1, as described in [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md).
+
+##### [v1](#tab/v1)
+
+v1 uses Secrets.  The UI in Partner Center covers secrets, as described below.
+
+v1 requires sending an Access Token URL.  The UI in Partner Center covers access tokens, as described below.
+
+The REST API endpoints use specific request headers for v1, as described in [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md).
+
+---
 
 
 <!-- ---------------------------------- -->
-#### Dates
+#### Overview of using the Update REST API
 
-As of September 6, 2024, both v1.1 and v1 of the REST Publish API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
+##### [v1.1](#tab/v1-1)
 
+To use v1.1 of the Update REST API:
 
-<!-- ---------------------------------- -->
-#### Getting started with v1.1 of the REST Publish API
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the API key management experience.
 
-To use v1.1 of the REST Publish API:
+1. The ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
 
-1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the new API key management experience.
+1. Update your authentication workflows, if needed.
 
-1. Re-generate your ClientId and secrets.<!-- todo: reword, b/c secrets are no longer used, according to "v1.1 uses API keys, whereas v1 used Secrets" -->  You might need to update your authentication workflows.
+1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by changes to the API key.
+   * For example, moving from v1's use of secrets, to v1.1's use of API keys.
 
-1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by the changes to the access token URL and API key.
+##### [v1](#tab/v1)
+<!-- todo: review high-level steps wording -->
+
+To use v1 of the Update REST API:
+
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), get an access token.
+
+1. Re-generate your ClientId and secrets.
+
+1. Update your authentication workflows, if needed.
+
+1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by the changes to the access token URL.
+
+---
 
 Details are below.
 
@@ -65,9 +93,12 @@ Details are below.
 
 
 <!-- ====================================================================== -->
-## Enabling the REST Publish API at Partner Center
+## Enabling the Update REST API at Partner Center
+<!-- todo: apply tabsets, generally per section/heading -->
 
 To use the Microsoft Edge Add-ons API, you first need to enable the API for your project in the Microsoft Partner Center by creating API credentials, as follows:
+
+##### [v1.1](#tab/v1-1)
 
 1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), sign in to the account that you used to publish an add-on.
 
@@ -77,39 +108,62 @@ To use the Microsoft Edge Add-ons API, you first need to enable the API for your
 
    The API credentials have now been created; you've enabled or renewed the API.  The following items are now displayed on the **Publish API** page:
    * **Client ID**
-   * **Client secret** (for REST Publish API v1) or **API key** (for REST Publish API v1.1)
+   * **API key**
    * **Expiry date**
-   * **Access token URL** (for REST Publish API v1)
 
-   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)<!-- todo: update per v1.1; maybe show a v1.1 png and then a v1 png -->
+   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)<!-- todo: add/use new png showing v1.1.  What's the title of the page that contains the UI control to select v1 vs v1.1?  What's the label of the UI control?  Is the UI control an Option button, or a Button? -->
 
 1. Write down the following:
    * The **Client ID**.
-   * The **Client secret** (REST Publish API v1) or **API key** (REST Publish API v1.1).
-   * The **Access token URL** (REST Publish API v1).
+   * The **API key**
+
+   You'll use these values in the next step, to get an access token.<!-- todo: applies to 1.1? -->
+
+The ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
+
+##### [v1](#tab/v1)
+
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), sign in to the account that you used to publish an add-on.
+
+1. Under the **Microsoft Edge** program, select **Publish API**.
+
+1. On the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes to finish.
+
+   The API credentials have now been created; you've enabled or renewed the API.  The following items are now displayed on the **Publish API** page:
+   * **Client ID**
+   * **Client secret**
+   * **Expiry date**
+   * **Access token URL**
+
+   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL](./using-addons-api-images/create-api-credentials-button.png)
+
+1. Write down the following:
+   * The **Client ID**.
+   * The **Client secret**.
+   * The **Access token URL**.
 
    You'll use these values in the next step, to get an access token.
 
-<!-- todo: update steps to mention selecting v1.1 vs v1.
-Add screenshot png?
-What's the title of the page that contains the UI control to select v1 vs v1.1?
-What's the label of the UI control?
-Is the UI control an Option button, or a Button?
--->
-
 > [!IMPORTANT]
-> Applies to REST Publish API v1, not v1.1:
 > Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials).  This particular secret isn't shown again.
 
-You can generate multiple client secrets (if using v1) for your client ID.  For example, you can create multiple secrets for multiple projects.
+You can generate multiple client secrets for your client ID.  For example, you can create multiple secrets for multiple projects.
 
-When using REST Publish API v1.1, the ClientId and API Keys are automatically re-generated, by backend services.<!-- todo: every time you use any endpoint of the REST API?  what action causes re-generation of ClientId and API Keys? -->
+---
 
 
 <!-- ====================================================================== -->
-## Retrieving the access token
+## Retrieving the access token (v1 only)
 
-After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the previous step, [Enabling the REST Publish API at Partner Center](#enabling-the-rest-publish-api-at-partner-center).
+
+##### [v1.1](#tab/v1-1)
+
+Not applicable.
+
+
+##### [v1](#tab/v1)
+
+After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the previous step, [Enabling the Update REST API at Partner Center](#enabling-the-rest-publish-api-at-partner-center).
 
 ```REST
 Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1.1.0/token
@@ -147,11 +201,14 @@ https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1
 
 For more information, see [Get a token](/azure/active-directory/develop/v1.1-oauth2-client-creds-grant-flow#get-a-token) in _Microsoft identity platform and the OAuth 2.0 client credentials flow_.
 
+---
+
 
 <!-- ====================================================================== -->
 ## Using the API endpoints
 
-After you have an access token, you can use the Microsoft Edge Add-ons API.  This API exposes endpoints for getting a list of products, updating products, and publishing products.
+After you have an access token (v1 only), you can use the Microsoft Edge Add-ons API.  This API exposes endpoints for getting a list of products, updating products, and publishing products.
+<!-- todo: what to say re: v1.1? -->
 
 There's no API for creating a new product or updating a product's metadata, such as the description.  You must complete these tasks manually in Microsoft Partner Center.
 
@@ -161,7 +218,7 @@ The API is available at the endpoint `https://api.addons.microsoftedge.microsoft
 <!-- ====================================================================== -->
 ## Uploading a package to update an existing submission
 
-Use this API to update the package for an add-on.  This API uploads a package to update an existing draft submission of an add-on product.
+Use this REST API endpoint to update the package for an add-on.  This API uploads a package to update an existing draft submission of an add-on product.
 
 ```REST
 Endpoint: /v1/products/$productID/submissions/draft/package
