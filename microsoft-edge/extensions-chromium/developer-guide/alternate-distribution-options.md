@@ -174,7 +174,7 @@ If the `BlockExternalExtensions` policy is set to `Not Configured` or `Disabled`
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
 
 Microsoft Edge Enterprise docs:
-* [Microsoft Edge - Policies](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies)
+* [Microsoft Edge - Policies](/deployedge/microsoft-edge-policies)
    * [ExtensionInstallForcelist](/deployedge/microsoft-edge-policies#extensioninstallforcelist)
    * [ExtensionInstallSources](/deployedge/microsoft-edge-policies#extensioninstallsources)
    * [ExtensionSettings](/deployedge/microsoft-edge-policies#extensionsettings)

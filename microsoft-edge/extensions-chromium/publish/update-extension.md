@@ -88,6 +88,6 @@ The extension is now removed from the Microsoft Edge Add-ons website.  Users who
 ## See also
 <!-- all links in article -->
 
-* [Set an externally installed extension to automatically update](https://review.learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/auto-update?branch=pr-en-us-3269) - for extensions that don't use Partner Center and the Microsoft Edge Add-ons website.
+* [Set an externally installed extension to automatically update](./auto-update.md) - for extensions that don't use Partner Center and the Microsoft Edge Add-ons website.
 * [Using the Microsoft Edge Add-ons REST API](./api/using-addons-api.md)
 * [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
