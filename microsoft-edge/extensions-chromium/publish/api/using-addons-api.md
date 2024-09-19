@@ -23,22 +23,22 @@ To submit suggestions and feedback, enter an [Issue about the Add-ons API](https
 As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
 
 
-<!-- ------------------------------ -->
-#### Components used by the Update REST API
+<!-- ---------- -->
+###### Components used
 
 ##### [v1.1](#tab/v1-1)
 
-v1.1 uses an API key.  The UI in Partner Center covers the API key, as described below.
+v1.1 uses an API key.  The UI in Partner Center covers the API key.
 
-The REST API endpoints use specific request headers for v1.1, as described in [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md).
+The REST endpoints use specific request headers for v1.1.
 
 ##### [v1](#tab/v1)
 
-v1 requires sending an Access Token URL.  The UI in Partner Center covers the access token, as described below.
+v1 requires sending an Access Token URL.  The UI in Partner Center covers the access token.
 
-v1 uses Secrets.  The UI in Partner Center covers secrets, as described below.
+v1 uses Secrets.  The UI in Partner Center covers Secrets.
 
-The REST API endpoints use specific request headers for v1, as described in [REST API Reference for Microsoft Edge Add-ons](./addons-api-reference.md).
+The REST endpoints use specific request headers for v1.
 
 ---
 
@@ -50,25 +50,31 @@ The REST API endpoints use specific request headers for v1, as described in [RES
 
 To use v1.1 of the Update REST API:
 
-1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the API key management experience.
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the API key management experience.Details are in [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center), below.
 
-1. Write down the ClientID and API key.  When you use a REST endpoint, you'll specify these in the request header.
+1. Write down the ClientID and API key.
 
 1. Update your authentication workflows, if needed.
 
 1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by any changes to the API key.
 
+1. When you use a REST endpoint, specify the ClientID and API key in the request header.  Details are in [Using the API endpoints](#using-the-api-endpoints), below.
+
 ##### [v1](#tab/v1)
 
 To use v1 of the Update REST API:
 
-1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), get an access token.
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), get an access token.  Details are in [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center), below.
 
 1. Generate your ClientID and secrets.
 
 1. Update your authentication workflows, if needed.
 
 1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by the changes to the access token URL.
+
+1. Retrieve the access token.  Details are in [Retrieving the access token (v1 only)](#retrieving-the-access-token-v1-only), below.
+
+1. When you use a REST endpoint, specify the access token in the request header.  Details are in [Using the API endpoints](#using-the-api-endpoints), below.
 
 ---
 
@@ -89,7 +95,7 @@ Details are below.
 
 
 <!-- ====================================================================== -->
-## Enabling the Update REST API at Partner Center
+## Enable the Update REST API at Partner Center
 
 To use the Microsoft Edge Add-ons API, you first need to enable the API for your project in the Microsoft Partner Center by creating API credentials, as follows:
 
@@ -167,7 +173,7 @@ Not applicable.
 
 ##### [v1](#tab/v1)
 
-After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the previous step, [Enabling the Update REST API at Partner Center](#enabling-the-update-rest-api-at-partner-center).
+After you've acquired the necessary authorization for your application, get access tokens<!-- todo: plural or singular?  one token per endpoint? --> for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the previous step, [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center).
 
 ```REST
 Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1.1.0/token
