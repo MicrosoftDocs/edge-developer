@@ -15,6 +15,7 @@ This Frequently Asked Questions (FAQ) page is for end users, to explain the **We
 
 <!-- ====================================================================== -->
 ## What is WebView2?
+<!-- don't change heading words, b/c a Teams dialog links to this anchor - else define an aka/fwlink & tell team - a fallback is, end up at top of page -->
 
 WebView2 is a way for app developers to embed web content (such as HTML, JavaScript, and CSS) in Windows applications. By including the WebView2 control in an app, a developer can write code for a website or web app, and then reuse that web code in their Windows application, saving time and effort.  See [Introduction to Microsoft Edge WebView2](../index.md).
 
