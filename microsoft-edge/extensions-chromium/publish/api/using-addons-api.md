@@ -268,10 +268,6 @@ Header Parameters: Authorization: ApiKey $ApiKey; X-ClientID: $ClientID; Content
 Body content: the package file to upload
 ```
 
-<!-- todo: change /v1/ to /v1-1/ ?
-global in using.md & ref.md 
--->
-
 ##### [v1](#tab/v1)
 
 ```REST

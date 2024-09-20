@@ -35,15 +35,7 @@ See also [Uploading a package to update an existing submission](./using-addons-a
 
 | Method | Request URI |
 |---|---|
-| `POST` | `/products/{productID}/submissions/draft/package` |
-
-<!-- todo: 
-change {productID}   to  $productID    ?
-change {operationID} to  $operationID  ?
-
-like format used in using.md 
-global, consistency pass in using.md & ref.md
--->
+| `POST` | `/products/$productID/submissions/draft/package` |
 
 
 <!-- ---------- -->
@@ -51,11 +43,7 @@ global, consistency pass in using.md & ref.md
 
 | URI parameter | Description |
 |---|---|
-| `productID` | Required.  The product ID of the product to which the package must be uploaded. |
-
-<!-- todo: in these tables, change eg productID to $productID ? 
-global, consistency pass in using.md & ref.md
--->
+| `$productID` | Required.  The product ID of the product to which the package must be uploaded. |
 
 
 <!-- ---------- -->
@@ -125,7 +113,7 @@ See also [Checking the status of a package upload](./using-addons-api.md#checkin
 
 | Method | Request URI |
 |---|---|
-| `GET` | `/products/{productID}/submissions/draft/package/operations/{operationID}` |
+| `GET` | `/products/$productID/submissions/draft/package/operations/$operationID` |
 
 
 <!-- ---------- -->
@@ -133,7 +121,7 @@ See also [Checking the status of a package upload](./using-addons-api.md#checkin
 
 | URI parameter | Description |
 |---|---|
-| `operationID` | Required.  The operation ID of the upload request submitted in the previous step.  This information is available in the response header. |
+| `$operationID` | Required.  The operation ID of the upload request submitted in the previous step.  This information is available in the response header. |
 
 
 <!-- ---------- -->
@@ -249,7 +237,7 @@ See also [Publishing the submission](./using-addons-api.md#publishing-the-submis
 
 | Method | Request URI |
 |---|---|
-| `POST` | `/products/{productID}/submissions` |
+| `POST` | `/products/$productID/submissions` |
 
 
 <!-- ---------- -->
@@ -257,7 +245,7 @@ See also [Publishing the submission](./using-addons-api.md#publishing-the-submis
 
 | URI parameter | Description |
 |---|---|
-| `productID` | Required.  The product ID of the product whose draft must be published. |
+| `$productID` | Required.  The product ID of the product whose draft must be published. |
 
 
 <!-- ---------- -->
@@ -325,8 +313,7 @@ See also [Checking the publishing status](using-addons-api.md#checking-the-publi
 
 | Method | Request URI |
 |---|---|
-| `GET` | `/products/{productID}/submissions/operations/{operationID}` |
-
+| `GET` | `/products/$productID/submissions/operations/$operationID` |
 
 
 <!-- ---------- -->
@@ -544,7 +531,7 @@ Here's a list of common error codes and possible reasons.  For a full list, see 
 |---|---|---|
 | 400 Bad Request | The server didn't understand the request. | There's no package (zip file) in the body.  Or, `Content-Type` header is missing or its value is incorrect. |
 | 401 Unauthorized | The request page needs an authorization. | The auth token is missing, expired, or not valid. |
-| 404 Not Found | The server can't find the requested page. | The specified `productID` or `operationID` doesn't have a valid GUID, isn't valid, or doesn't belong to the developer who is making the request. |
+| 404 Not Found | The server can't find the requested page. | The specified product ID or operation ID doesn't have a valid GUID, isn't valid, or doesn't belong to the developer who is making the request. |
 | 408 Request Timeout | The request took longer than the server was prepared to wait. | There was a timeout while uploading a package. |
 | 429 Too many requests | Too many requests were sent by the user. | Too many requests were sent and they got throttled. |
 
