@@ -85,29 +85,32 @@ Nodes that aren't reachable from the root can get garbage-collected.
 <!-- ====================================================================== -->
 ## Object sizes and distances
 
-When working with the **Memory** tool, you will likely find yourself looking at the following columns of information:
+The **Memory** tool displays the following columns of information:
 
-* **Distance**
-* **Shallow Size**
-* **Retained Size**
+* The **Distance** column
+* The **Shallow size** column
+* The **Retained size** column
 
 ![The Distance, Shallow Size, and Retained Size columns in the Memory tool](./memory-101-images/shallow-retained.png)
 
-The numbers in the **Shallow Size** and **Retained Size** columns are the number of bytes.
+These columns are described below.
+
 
 <!-- ------------------------------ -->
 #### Distance
 
-The _distance_ of an object in the JavaScript heap is the number of nodes on the shortest path between the object and the GC root. The shorter the distance, the more likely it is that this object plays an important role in the memory usage of the webpage.
+The _distance_ of an object in the JavaScript heap is the number of nodes on the shortest path between the object and the GC root.  The shorter the distance, the more likely it is that this object plays an important role in the memory usage of the webpage.
+
 
 <!-- ------------------------------ -->
 #### Shallow size
 
 The _shallow size_ is the size of the JavaScript heap that's _directly_ held by an object. The shallow size of an object is usually small, because a JavaScript object often only stores its description of the object, not the values, in the object's directly held memory. Most JavaScript objects store their values in a _backing store_ that's elsewhere in the JavaScript heap, and only expose a small wrapper object on the portion of the JavaScript heap that's directly owned by the object.
 
-The **Memory** tool can be configured to report the total memory size of objects instead of only the memory size they directly hold. To learn more, see [Configure the Shallow Size column to include an entire object's size](./heap-snapshots.md#configure-the-shallow-size-column-to-include-an-entire-objects-size) in _Record heap snapshots using the Memory tool_.
-
 Nevertheless, even a small object can hold a large amount of memory _indirectly_, by preventing other objects from being disposed of by the garbage collection process.
+
+The numbers in the **Shallow size** column are the number of bytes.
+
 
 <!-- ------------------------------ -->
 #### Retained size
@@ -119,6 +122,8 @@ That is, the retained size of an object is the amount of memory that would be re
 The retained size can't be smaller than the shallow size.
 
 When an object is retained by multiple nodes, the object's size appears in the retained size of the retainer node that has the shortest path to the GC root.
+
+The numbers in the **Retained size** column are the number of bytes.
 
 
 <!-- ====================================================================== -->
