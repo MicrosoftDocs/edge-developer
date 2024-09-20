@@ -1,6 +1,6 @@
 ---
-title: Automatically update an extension in Microsoft Edge
-description: Learn about automatic updates to extensions in Microsoft Edge.
+title: Set an extension to automatically update
+description: Set up a Microsoft Edge extension (add-on) to automatically update in users' instances of Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -21,10 +21,13 @@ ms.date: 11/04/2022
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Automatically update an extension in Microsoft Edge
+# Set an extension to automatically update
 
-> [!NOTE]
-> This article doesn't apply to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You can use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).
+<!-- todo: improve intro lead-in sequencing, after intro summary paragraph.  check latest https://developer.chrome.com/docs/apps/autoupdate & check description: yaml sentence -->
+
+Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  To specify an update URL for your extension, use the `update_url` field in the manifest.  The `update_url` field in the manifest points to a location that can complete an update check.  For each `update_url`, this URL sends requests for updated manifest XML files.  If the update manifest XML file lists a newer extension or app version, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.
+
+In order to maintain user privacy, Microsoft Edge doesn't send any `Cookie` headers with auto-update manifest requests, and ignores any `Set-Cookie` headers in the responses to those requests.
 
 When you set your extension to automatically update on users' machines, your extension shares the following benefits with Microsoft Edge: 
 
@@ -32,17 +35,14 @@ When you set your extension to automatically update on users' machines, your ext
 *   Add new features or performance enhancements.
 *   Improve the user interface.
 
-Previously, non-store based extensions were supported.  Also, previously, you updated the native binaries and the extension at the same time.  Now, the Microsoft Edge Add-ons website hosts your extensions and you can update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism. 
+The Microsoft Edge Add-ons website hosts your extensions, and you can update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.
+
+(Previously, non-store-based extensions were supported.  Also, previously, you updated the native binaries and the extension at the same time.)
+
 > [!IMPORTANT]
 > Be careful when you update extensions that have a dependency on native binaries.
 
-<!-- ====================================================================== -->
-## Overview
-
-Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  To specify an update URL for your extension, use the `update_url` field in the manifest.  The `update_url` field in the manifest points to a location that can complete an update check.  For each `update_url`, this URL sends requests for updated manifest XML files.  If the update manifest XML file lists a newer extension or app version, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.
-
-> [!NOTE]
-> In order to maintain user privacy, Microsoft Edge doesn't send any `Cookie` headers with auto-update manifest requests, and ignores any `Set-Cookie` headers in the responses to those requests.
+This article doesn't apply<!-- todo: true? clarify --> to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You can use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).
 
 
 <!-- ====================================================================== -->
@@ -143,8 +143,7 @@ http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 If you send a single request and the number of installed extensions that use the same update URL is too long, the update check issues more `GET` requests.  A `GET` request URL is too long if it's approximately 2000 characters.
 
-> [!NOTE]
-> In the future, instead of issuing multiple `GET` requests, a single `POST` request might be issued, with the request parameters in the `POST` body.
+In a future release, instead of issuing multiple `GET` requests, a single `POST` request might be issued, with the request parameters in the `POST` body.<!-- todo: update - don't discuss planned design; doc only the present behavior.   check https://developer.chrome.com/docs/apps/autoupdate -->
 
 
 <!-- ====================================================================== -->
