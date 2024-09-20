@@ -517,7 +517,7 @@ To check the publishing status, use the `curl` command at the command prompt as 
 -H "X-ClientID: $ClientID" \
 -X GET \
 -v \
-https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/$operationID
 ```
 
 ##### [v1](#tab/v1)
@@ -527,7 +527,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 -H "Authorization: Bearer $TOKEN" \
 -X GET \
 -v \
-https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/$operationID
 ```
 
 ---
