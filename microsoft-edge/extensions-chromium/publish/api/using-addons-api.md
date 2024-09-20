@@ -210,7 +210,7 @@ An access token is returned to you, such as:
 }
 ```
 
-For more information, see [Get a token](/azure/active-directory/develop/v1.1-oauth2-client-creds-grant-flow#get-a-token) in _Microsoft identity platform and the OAuth 2.0 client credentials flow_.
+For more information, see [Get a token](/entra/identity-platform/v2-oauth2-client-creds-grant-flow#get-a-token) in _Microsoft identity platform and the OAuth 2.0 client credentials flow_.
 
 ---
 
@@ -547,4 +547,4 @@ GitHub:
 * [Issues](https://github.com/MicrosoftDocs/edge-developer/issues/) in `edge-developer` repo for Microsoft Edge Developer docs.
 
 Microsoft identity platform:
-* [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v1.1-oauth2-client-creds-grant-flow)
+* [Microsoft identity platform and the OAuth 2.0 client credentials flow](/entra/identity-platform/v2-oauth2-client-creds-grant-flow)
