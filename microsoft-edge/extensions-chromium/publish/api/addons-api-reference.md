@@ -38,7 +38,6 @@ See also [Uploading a package to update an existing submission](./using-addons-a
 | `POST` | `/products/{productID}/submissions/draft/package` |
 
 <!-- todo: 
-change {operationID} to  $operationID  ?
 change {productID}   to  $productID    ?
 change {operationID} to  $operationID  ?
 

@@ -166,7 +166,7 @@ After you've acquired the necessary authorization for your application, get acce
 Description of the endpoint to use to get an access token:
 
 ```REST
-Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1.1.0/token
+Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2.0/token
 Type: POST
 Header Parameters: Content-Type: application/x-www-form-urlencoded
 ```
@@ -187,7 +187,7 @@ For example, to get an access token, send a POST request to the access token URL
 -d "client_secret={$Client_Secret}" \
 -d "grant_type=client_credentials" \
 -v \
-https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v1.1.0/token
+https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2.0/token
 ```
 
 
