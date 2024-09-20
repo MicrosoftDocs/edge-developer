@@ -84,7 +84,7 @@ Details are below.
 
 | Term | Definition |
 |---|---|
-| _operation_ | A REST operation such as GET or PUT. |
+| _operation_ | A REST operation such as GET or POST. |
 | _operation ID_ | The ID of a REST operation. |
 | _package_ | The `.zip` package that contains the files for your Microsoft Edge Add-on. |
 | _product_ | A Microsoft Edge extension or theme.  Also referred to as a Microsoft Edge _Add-on_. |
