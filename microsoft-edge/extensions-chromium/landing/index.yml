@@ -209,6 +209,9 @@ landingContent:
           - text: Best practices for extensions
             url: ../developer-guide/best-practices.md
 
+          - text: Minimize an extension's impact on page load time
+            url: ../developer-guide/minimize-page-load-time-impact.md
+
       - linkListType: sample
         links:
           - text: Samples for Microsoft Edge extensions
