@@ -23,8 +23,11 @@ As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.
 
 <!-- ====================================================================== -->
 ## Upload a package to update an existing submission
+<!-- endpoint 1: POST /submissions/draft/package -->
 
 Uploads a package to update an existing draft submission of an add-on product.
+
+See also [Uploading a package to update an existing submission](./using-addons-api.md#uploading-a-package-to-update-an-existing-submission) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ------------------------------ -->
@@ -34,6 +37,15 @@ Uploads a package to update an existing draft submission of an add-on product.
 |---|---|
 | `POST` | `/products/{productID}/submissions/draft/package` |
 
+<!-- todo: 
+change {operationID} to  $operationID  ?
+change {productID}   to  $productID    ?
+change {operationID} to  $operationID  ?
+
+like format used in using.md 
+global, consistency pass in using.md & ref.md
+-->
+
 
 <!-- ---------- -->
 ###### URI parameters
@@ -41,6 +53,10 @@ Uploads a package to update an existing draft submission of an add-on product.
 | URI parameter | Description |
 |---|---|
 | `productID` | Required.  The product ID of the product to which the package must be uploaded. |
+
+<!-- todo: in these tables, change eg productID to $productID ? 
+global, consistency pass in using.md & ref.md
+-->
 
 
 <!-- ---------- -->
@@ -50,23 +66,13 @@ The following request headers are required:
 
 ##### [v1.1](#tab/v1-1)
 
-* `Authorization: ApiKey <api key>`
-* `X-ClientID: <client ID>`
+* `Authorization: ApiKey $ApiKey`
+* `X-ClientID: $ClientID`
 * `Content-Type: application/zip`
-
-<!-- todo: 
-change <client ID> to $ClientID ?
-change <api key> to $ApiKey ?
-change order?
-per using.md:
-Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID
-
-global in article, & check using.md
--->
 
 ##### [v1](#tab/v1)
 
-* `Authorization: Bearer <auth token>`
+* `Authorization: Bearer $TOKEN`
 * `Content-Type: application/zip`
 
 ---
@@ -87,6 +93,8 @@ global in article, & check using.md
 
 * Location: `{operationID}`
 
+The response includes an operation ID, to send to other endpoints.
+
 
 <!-- ---------- -->
 ###### Status codes
@@ -106,8 +114,11 @@ See also:
 
 <!-- ====================================================================== -->
 ## Check the status of a package upload
+<!-- endpoint 2: GET submissions/draft/package/operations/$operationID -->
 
 Gets the status of the package upload.
+
+See also [Checking the status of a package upload](./using-addons-api.md#checking-the-status-of-a-package-upload) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ------------------------------ -->
@@ -133,12 +144,12 @@ The following request headers are required:
 
 ##### [v1.1](#tab/v1-1)
 
-* `Authorization: ApiKey <api key>`
-* `X-ClientID: <client ID>`
+* `Authorization: ApiKey $ApiKey`
+* `X-ClientID: $ClientID`
 
 ##### [v1](#tab/v1)
 
-* `Authorization: Bearer <auth token>`
+* `Authorization: Bearer $TOKEN`
 
 ---
 
@@ -227,8 +238,11 @@ See also:
 
 <!-- ====================================================================== -->
 ## Publish the product draft submission
+<!-- endpoint 3: POST /submissions -->
 
 Publishes the current draft of the product to Microsoft Edge Add-ons.
+
+See also [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ------------------------------ -->
@@ -254,12 +268,12 @@ The following request headers are required:
 
 ##### [v1.1](#tab/v1-1)
 
-* `Authorization: ApiKey <api key>`
-* `X-ClientID: <client ID>`
+* `Authorization: ApiKey $ApiKey`
+* `X-ClientID: $ClientID`
 
 ##### [v1](#tab/v1)
 
-* `Authorization: Bearer <auth token>`
+* `Authorization: Bearer $TOKEN`
 
 ---
 
@@ -278,6 +292,8 @@ The following request headers are required:
 ###### Response headers
 
 * Location: `{operationID}`
+
+The response includes an operation ID, to send to other endpoints.
 
 
 <!-- ---------- -->
@@ -298,8 +314,11 @@ See also:
 
 <!-- ====================================================================== -->
 ## Check the publishing status
+<!-- endpoint 4: GET /submissions/operations/$operationID -->
 
 Checks the status of the publish operation.
+
+See also [Checking the publishing status](using-addons-api.md#checking-the-publishing-status) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ------------------------------ -->
@@ -324,12 +343,12 @@ The following request headers are required:
 
 ##### [v1.1](#tab/v1-1)
 
-* `Authorization: ApiKey <api key>`
-* `X-ClientID: <client ID>`
+* `Authorization: ApiKey $ApiKey`
+* `X-ClientID: $ClientID`
 
 ##### [v1](#tab/v1)
 
-* `Authorization: Bearer <auth token>`
+* `Authorization: Bearer $TOKEN`
 
 ---
 
@@ -344,6 +363,8 @@ None.
 #### Response
 
 A `GET` operation status API can be called in the following scenarios.  In all valid scenarios, `200 OK` is returned, with different status messages.
+
+The response includes an operation ID, to send to other endpoints.
 
 
 <!-- ---------- -->

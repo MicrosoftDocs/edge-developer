@@ -174,8 +174,9 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 
 <!-- ---------- -->
 ###### Sample request
+<!-- to retrieve access token (v1 only) -->
 
-For example, to get an access token, send a POST request to the access token URL, as follows:
+For example, to get an access token, send a POST request to the access token URL, by entering a `curl` command at the command prompt, as follows:
 
 ```console
 > curl \
@@ -242,25 +243,28 @@ To create a new product or update a product's metadata, you must use Microsoft P
 
 <!-- ====================================================================== -->
 ## Uploading a package to update an existing submission
-<!-- endpoint 1 -->
+<!-- endpoint 1: POST /submissions/draft/package -->
 
 Use this REST API endpoint to update the package for an add-on.  This API uploads a package to update an existing draft submission of an add-on product.
+
+See also [Upload a package to update an existing submission](./addons-api-reference.md#upload-a-package-to-update-an-existing-submission) in _REST API Reference for updating Microsoft Edge Add-ons_.
 
 
 <!-- ---------------------------------------------- -->
 #### Endpoint description
-<!-- todo: must label these code blocks that are above the "Sample" section headings code blocks - Global in both article
-what kind of code block is each of these?  3 different kinds in 2 different articles = 3 different kinds of code blocks?
--->
 
 ##### [v1.1](#tab/v1-1)
 
 ```REST
 Endpoint: /v1/products/$productID/submissions/draft/package
 Type: POST
-Header Parameters: Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID: $ClientID
+Header Parameters: Authorization: ApiKey $ApiKey; X-ClientID: $ClientID; Content-Type: application/zip
 Body content: the package file to upload
 ```
+
+<!-- todo: change /v1/ to /v1-1/ ?
+global in using.md & ref.md 
+-->
 
 ##### [v1](#tab/v1)
 
@@ -290,6 +294,9 @@ To get the product ID:
 
 <!-- ---------------------------------- -->
 #### Sample request
+<!-- for endpoint 1 -->
+
+To upload a package to update an existing submission, use the `curl` command at a command prompt as follows:
 
 ##### [v1.1](#tab/v1-1)
 
@@ -327,9 +334,13 @@ See also:
 
 <!-- ====================================================================== -->
 ## Checking the status of a package upload
-<!-- endpoint 2 -->
+<!-- endpoint 2: GET submissions/draft/package/operations/$operationID -->
 
 Use this API to check the status of package upload.
+
+`$operationID` is the operation ID that's returned in the response header from [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission) or [Publishing the submission](#publishing-the-submission).
+
+See also [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for updating Microsoft Edge Add-ons_.
 
 
 <!-- ---------------------------------------------- -->
@@ -356,6 +367,9 @@ Header Parameters: Authorization: Bearer $TOKEN
 
 <!-- ---------------------------------- -->
 #### Sample request
+<!-- for endpoint 2 -->
+
+To check the status of a package upload, use the `curl` command at the command prompt as follows:
 
 ##### [v1.1](#tab/v1-1)
 
@@ -386,9 +400,11 @@ See also:
 
 <!-- ====================================================================== -->
 ## Publishing the submission
-<!-- endpoint 3 -->
+<!-- endpoint 3: POST /submissions -->
 
 Use this API to publish the current draft of the product to the Microsoft Edge Add-ons website.
+
+See also [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _REST API Reference for updating Microsoft Edge Add-ons_.
 
 
 <!-- ---------------------------------------------- -->
@@ -417,6 +433,9 @@ Body content: Notes for certification, in JSON format
 
 <!-- ---------------------------------- -->
 #### Sample request
+<!-- for endpoint 3 -->
+
+To publish the submission, use the `curl` command at the command prompt as follows:
 
 ##### [v1.1](#tab/v1-1)
 
@@ -451,9 +470,13 @@ See also:
 
 <!-- ====================================================================== -->
 ## Checking the publishing status
-<!-- endpoint 4 -->
+<!-- endpoint 4: GET /submissions/operations/$operationID -->
 
 Use this API to check the status of the publish operation.
+
+`$operationID` is the operation ID that's returned in the response header from [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission) or [Publishing the submission](#publishing-the-submission).
+
+See also [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for updating Microsoft Edge Add-ons_.
 
 
 <!-- ---------------------------------------------- -->
@@ -480,6 +503,9 @@ Header Parameters: Authorization: Bearer $TOKEN
 
 <!-- ---------------------------------- -->
 #### Sample request
+<!-- for endpoint 4 -->
+
+To check the publishing status, use the `curl` command at the command prompt as follows:
 
 ##### [v1.1](#tab/v1-1)
 
