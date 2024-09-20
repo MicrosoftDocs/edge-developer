@@ -242,15 +242,23 @@ To create a new product or update a product's metadata, you must use Microsoft P
 
 <!-- ====================================================================== -->
 ## Uploading a package to update an existing submission
+<!-- endpoint 1 -->
 
 Use this REST API endpoint to update the package for an add-on.  This API uploads a package to update an existing draft submission of an add-on product.
+
+
+<!-- ---------------------------------------------- -->
+#### Endpoint description
+<!-- todo: must label these code blocks that are above the "Sample" section headings code blocks - Global in both article
+what kind of code block is each of these?  3 different kinds in 2 different articles = 3 different kinds of code blocks?
+-->
 
 ##### [v1.1](#tab/v1-1)
 
 ```REST
 Endpoint: /v1/products/$productID/submissions/draft/package
 Type: POST
-Header Parameters: Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID
+Header Parameters: Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID: $ClientID
 Body content: the package file to upload
 ```
 
@@ -287,7 +295,8 @@ To get the product ID:
 
 ```console
 > curl \
--H "Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID" \
+-H "Authorization: ApiKey $ApiKey" \
+-H "X-ClientID: $ClientID" \
 -H "Content-Type: application/zip" \
 -X POST \
 -T $FILE_NAME \
@@ -318,15 +327,20 @@ See also:
 
 <!-- ====================================================================== -->
 ## Checking the status of a package upload
+<!-- endpoint 2 -->
 
 Use this API to check the status of package upload.
+
+
+<!-- ---------------------------------------------- -->
+#### Endpoint description
 
 ##### [v1.1](#tab/v1-1)
 
 ```REST
 Endpoint: /v1/products/$productID/submissions/draft/package/operations/$operationID
 Type: GET
-Header Parameters: Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID
+Header Parameters: Authorization: ApiKey $ApiKey; X-ClientID: $ClientID
 ```
 
 ##### [v1](#tab/v1)
@@ -347,7 +361,8 @@ Header Parameters: Authorization: Bearer $TOKEN
 
 ```console
 > curl \
--H "Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID" \
+-H "Authorization: ApiKey $ApiKey" \
+-H "X-ClientID: $ClientID" \
 -X GET \
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package/operations/$operationID
@@ -371,15 +386,20 @@ See also:
 
 <!-- ====================================================================== -->
 ## Publishing the submission
+<!-- endpoint 3 -->
 
 Use this API to publish the current draft of the product to the Microsoft Edge Add-ons website.
+
+
+<!-- ---------------------------------------------- -->
+#### Endpoint description
 
 ##### [v1.1](#tab/v1-1)
 
 ```REST
 Endpoint: /v1/products/$productID/submissions
 Type: POST
-Header Parameters: Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID
+Header Parameters: Authorization: ApiKey $ApiKey; X-ClientID: $ClientID
 Body content: Notes for certification, in JSON format
 ```
 
@@ -402,7 +422,8 @@ Body content: Notes for certification, in JSON format
 
 ```console
 > curl \
--H "Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID" \
+-H "Authorization: ApiKey $ApiKey" \
+-H "X-ClientID: $ClientID" \
 -X POST \
 -d '{ "notes"="text value" }' \
 -v \
@@ -430,15 +451,20 @@ See also:
 
 <!-- ====================================================================== -->
 ## Checking the publishing status
+<!-- endpoint 4 -->
 
 Use this API to check the status of the publish operation.
+
+
+<!-- ---------------------------------------------- -->
+#### Endpoint description
 
 ##### [v1.1](#tab/v1-1)
 
 ```REST
 Endpoint: /v1/products/$productID/submissions/operations/$operationID
 Type: GET
-Header Parameters: Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID
+Header Parameters: Authorization: ApiKey $ApiKey; X-ClientID: $ClientID
 ```
 
 ##### [v1](#tab/v1)
@@ -459,7 +485,8 @@ Header Parameters: Authorization: Bearer $TOKEN
 
 ```console
 > curl \
--H "Authorization: ApiKey $ApiKey; Content-Type: application/zip; X-ClientID $ClientID" \
+-H "Authorization: ApiKey $ApiKey" \
+-H "X-ClientID: $ClientID" \
 -X GET \
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
