@@ -160,8 +160,14 @@ You can generate multiple client secrets for your Client ID.  For example, you c
 
 You obtain an access token by sending a POST message to an access token URL.  The Partner Center UI shows the access token URL, which is the same as in this article.  You then include the access token in the header when using an API endpoint, such as the endpoint for [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission), below.
 
-<!-- todo: old wording; reword/ condense/ delete: -->
-After you've acquired the necessary authorization for your application, get access tokens<!-- todo: plural or singular?  one token per endpoint? --> for APIs.  To get a token (an OAuth token) by using the client credentials grant,<!-- todo: define --> send a POST request to the access token URL.  The tenant information<!-- todo: define, what relevance? which pieces of info? --> is available in the access token URL that you received in the previous step, [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center).
+<!-- 
+After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token (an OAuth token) by using the client credentials grant, send a POST request to the access token URL.  The tenant information is available in the access token URL that you received at Partner Center.
+"acquired the necessary authorization" - not casual per corp style
+"get access tokens" - plural or singular?  one token per endpoint?
+"the client credentials grant" - unclear
+"The tenant information" - meaning?  relevance?  which pieces of info, to use how?
+"is available in the access token URL" - how is info available in the URL?  if accurate, specify which info in which part of url
+-->
 
 Description of the endpoint to use to get an access token:
 
