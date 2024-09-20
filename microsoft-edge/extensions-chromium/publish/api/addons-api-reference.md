@@ -12,7 +12,7 @@ ms.date: 09/05/2024
 
 This article is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons store.
 
-For an overview, see [Using the Microsoft Edge Add-ons REST API](using-addons-api.md).
+For an overview, see [Using the Microsoft Edge Add-ons REST API](./using-addons-api.md).
 
 
 <!-- ------------------------------ -->
@@ -86,12 +86,12 @@ This API has the following expected status codes.
 | HTTP status code | Description |
 |---|---|
 | 202 | The request is accepted for processing, but the processing isn't complete. |
-| 4XX | See [Error codes](#error-codes). |
-| 5XX | See [Error codes](#error-codes). |
+| 4XX | See [Error codes](#error-codes), below. |
+| 5XX | See [Error codes](#error-codes), below. |
 
 
 See also:
-* Introduction: [Uploading a package to update an existing submission](using-addons-api.md#uploading-a-package-to-update-an-existing-submission)
+* [Uploading a package to update an existing submission](./using-addons-api.md#uploading-a-package-to-update-an-existing-submission) in _Using the Microsoft Edge Add-ons REST API_.
 
 
 <!-- ====================================================================== -->
@@ -207,12 +207,12 @@ This API has the following expected status codes.
 | HTTP status code | Description |
 |---|---|
 | 200 | The request is OK. |
-| 4XX | See [Error codes](#error-codes). |
-| 5XX | See [Error codes](#error-codes). |
+| 4XX | See [Error codes](#error-codes), below. |
+| 5XX | See [Error codes](#error-codes), below. |
 
 
 See also:
-* Introduction: [Checking the status of a package upload](using-addons-api.md#checking-the-status-of-a-package-upload)
+* [Checking the status of a package upload](./using-addons-api.md#checking-the-status-of-a-package-upload) in _Using the Microsoft Edge Add-ons REST API_.
 
 
 <!-- ====================================================================== -->
@@ -278,12 +278,12 @@ This API has the following expected status codes.
 | HTTP status code | Description |
 |---|---|
 | 202 | The request is accepted for processing, but the processing isn't complete. |
-| 4XX | See [Error codes](#error-codes). |
-| 5XX | See [Error codes](#error-codes). |
+| 4XX | See [Error codes](#error-codes), below. |
+| 5XX | See [Error codes](#error-codes), below. |
 
 
 See also:
-* Introduction: [Publishing the submission](using-addons-api.md#publishing-the-submission)
+* [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Using the Microsoft Edge Add-ons REST API_.
 
 
 <!-- ====================================================================== -->
@@ -493,12 +493,12 @@ This API has the following expected status codes.
 | HTTP status code | Description |
 |---|---|
 | 200 | The request is OK. |
-| 4XX | See [Error codes](#error-codes). |
-| 5XX | See [Error codes](#error-codes). |
+| 4XX | See [Error codes](#error-codes), below. |
+| 5XX | See [Error codes](#error-codes), below. |
 
 
 See also:
-* Introduction: [Checking the publishing status](using-addons-api.md#checking-the-publishing-status)
+* [Checking the publishing status](using-addons-api.md#checking-the-publishing-status) in _Using the Microsoft Edge Add-ons REST API_.
 
 
 <!-- ====================================================================== -->
@@ -530,4 +530,7 @@ Here's a list of common error codes and possible reasons.  For a full list, see 
 <!-- ====================================================================== -->
 ## See also
 
-* [Using the Microsoft Edge Add-ons REST API](using-addons-api.md)
+<!-- all article-level links in article body: -->
+* [Using the Microsoft Edge Add-ons REST API](./using-addons-api.md)
+* [Partner Center REST error codes](/partner-center/develop/error-codes) in Partner Center docs.
+* [List of HTTP status codes](https://wikipedia.org/wiki/List_of_HTTP_status_codes) at Wikipedia.
