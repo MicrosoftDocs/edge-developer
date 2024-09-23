@@ -10,7 +10,7 @@ ms.date: 09/19/2024
 ---
 # Using the REST API for updating Microsoft Edge Add-ons
 
-To publish an extension, you first use Partner Center, and then optionally you can use the REST API to update the extension (or use Partner Center instead).
+To publish an extension, you first use Partner Center, and then optionally you can use the REST API to update the extension (or use Partner Center instead).  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. 
 
 The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons store.  You can use these REST endpoints to automate the process of uploading and publishing new versions of your add-ons to the Microsoft Edge Add-ons store.  You use the **Publish API** page at Partner Center to first enable the API and then begin using these API endpoints.
 
@@ -56,7 +56,7 @@ To use the Update REST API:
 
 1. Update your authentication workflows, if needed.
 
-1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by any changes to the API key, such as if you're changing from using v1 of this REST API, which uses access tokens instead of API keys.
+1. Re-configure any continuous integration/continuous delivery (CI/CD) pipelines that might be impacted by any changes to the API key, such as if you're changing from using v1 of this REST API, which uses access tokens instead of API keys.
 
 1. When you use a REST endpoint, specify the ClientID and API key in the request header.  Details are in [Using the API endpoints](#using-the-api-endpoints), below.
 
@@ -68,7 +68,7 @@ To use the Update REST API:
 
 1. Update your authentication workflows, if needed.
 
-1. Re-configure any existing Continuous Integration (CI) or Continuous Deployment (CD) pipelines that might be impacted by the changes to the access token URL.
+1. Re-configure any existing continuous integration/continuous delivery (CI/CD) pipelines that might be impacted by the changes to the access token URL.
 
 1. Retrieve the access token.  Details are in [Retrieve the access token](#retrieve-the-access-token), below.
 
