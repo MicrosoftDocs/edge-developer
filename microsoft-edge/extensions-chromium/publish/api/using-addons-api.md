@@ -10,9 +10,19 @@ ms.date: 09/19/2024
 ---
 # Using the REST API for updating Microsoft Edge Add-ons
 
-To publish an extension, you first use Partner Center, and then optionally you can use this REST API to update the extension (or use Partner Center instead).  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. 
+Use this REST API to programmatically update an extension that's been published at the Microsoft Edge Add-ons website, to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. 
 
-The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons store.  You can use these REST endpoints to automate the process of uploading and publishing new versions of your add-ons to the Microsoft Edge Add-ons store.  You use the **Publish API** page at Partner Center to first enable the API and then begin using these API endpoints.
+This REST API exposes endpoints for:
+* [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission)
+* [Checking the status of a package upload](#checking-the-status-of-a-package-upload)
+* [Publishing the submission](#publishing-the-submission)
+* [Checking the publishing status](#checking-the-publishing-status)
+
+These endpoints are described below.
+
+To use this REST API, you first use the **Publish API** page at Partner Center to enable the API.
+
+To initially publish a new extension, you use Partner Center.  To update the extension, either manually use Partner Center, or programmatically use this REST API.
 
 To submit suggestions and feedback, enter an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
 
