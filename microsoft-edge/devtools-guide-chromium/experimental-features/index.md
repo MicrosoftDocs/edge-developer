@@ -138,7 +138,7 @@ The experiments checkboxes that appear in the latest version of the Canary previ
 
 <!-- ====================================================================== -->
 ## Allow extensions to load custom stylesheets
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you install an add-on that defines a custom color theme for DevTools, you need to enable the **Allow extensions to load custom stylesheets** experiment to view the add-on themes.
 
@@ -152,7 +152,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Capture node creation stacks
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 To capture JavaScript stack traces when DOM nodes are added to the DOM at runtime, enable this experiment.  This experiment adds the **Stack Trace** tab in the **Elements** tool, grouped with the **Styles** tab:
 
@@ -175,7 +175,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Protocol Monitor
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Makes the **Protocol monitor** tool available in DevTools:
 
@@ -207,7 +207,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Show option to expose internals in heap snapshots
-<!-- checkbox has no (?) link pointing to this anchor wording
+<!-- checkbox has no "(?)" link pointing to this anchor wording
 [Heap snapshot improvements](../whats-new/2024/08/devtools-128.md#heap-snapshot-improvements) in _What's New in DevTools (Microsoft Edge 128)_ links to here -->
 
 _new as of Microsoft Edge 105_
@@ -225,7 +225,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Disable indentation markers temporarily
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 122_
 
@@ -243,7 +243,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 The [Advanced Perceptual Contrast Algorithm (APCA)](https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html) replaces the [AA](https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum)/[AAA](https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced) guidelines contrast ratio in the Color Picker.  The Color Picker is used in the **Styles** tab in the **Elements** tool.
 
@@ -265,7 +265,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable full accessibility tree view in the Elements panel
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Adds a **Switch to Accessibility Tree view** button in the **Elements** tool that toggles between the DOM tree and the accessibility tree.  The button label toggles to **Switch to DOM Tree view**.
 
@@ -292,7 +292,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable new font editor within the Styles Pane
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 You can use the visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
 
@@ -323,7 +323,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable automatic contrast issue reporting via the Issues panel
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Enables automatic contrast issue reporting in the **Issues** tool.
 <!-- todo old: need text -->
@@ -338,7 +338,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable experimental cookie features
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Enables experimental cookie features.
 <!-- todo old: need text -->
@@ -358,7 +358,9 @@ non-Edge -->
 
 <!-- ====================================================================== -->
 ## Sync CSS changes in the Styles tab
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has a "(?)" link
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#sync-css-changes-in-the-styles-pane
+pointing to this anchor wording -->
 
 Whether to sync CSS changes in the **Styles** tab in the **Elements** tool.
 <!-- todo old: need text -->
@@ -371,16 +373,9 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 128.
 
 
-<!-- ------------------------------ -->
-#### Sync CSS changes in the Styles pane
-<!-- checkbox has a (?) link pointing to this anchor wording -->
-
-This was a previous label of the checkbox.  See the above section.
-
-
 <!-- ====================================================================== -->
 ## Highlights a violating node or attribute in the Elements panel DOM tree
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 106_
 
@@ -397,7 +392,9 @@ Status:
 
 <!-- ====================================================================== -->
 ## Group sources into authored and deployed trees
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has a "(?)" link
+https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/#group-sources-into-authored-and-deployed-trees
+pointing to this anchor wording -->
 
 _new as of Microsoft Edge 104_
 <!-- This experiment was shown in the What's New 104 video [Microsoft Edge | What's New in DevTools 104](https://www.youtube.com/watch?v=0_ZprFX8x0I&t=129s) at 2:09. -->
@@ -416,7 +413,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Hide ignore-listed code in Sources tree view
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 106_
 
@@ -434,7 +431,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Highlight important DOM properties in the Properties tab
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 105_
 <!-- _revised checkbox label as of Microsoft Edge 128_ -->
@@ -487,7 +484,7 @@ Status:
 ## Enable background page selector (for prerendering)
 <!-- was:
 ## Enable background page selector (e.g. for prerendering debugging) -->
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 114, new label for checkbox as of Microsoft Edge 128_
 
@@ -505,7 +502,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Redesign of the filter bar in the Network panel
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 120_
 
@@ -532,7 +529,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Autofill panel
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 <!-- got moved down -->
 
 _new as of Microsoft Edge 125_
@@ -555,7 +552,7 @@ Status:
 <!-- was:
 ## Timeline: Show postMessage dispatch and handling flows
 -->
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 124_
 
@@ -585,7 +582,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Performance panel: enable live metrics landing page
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 127_
 
@@ -604,14 +601,16 @@ Status:
 
 <!-- ------------------------------ -->
 #### Enable new Performance panel landing page which includes live metrics and field data
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 This is the older label for the checkbox.  See the above section.
 
 
 <!-- ====================================================================== -->
 ## Log DevTools uncaught exceptions to Console
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has a "(?)" link
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#log-devtools-uncaught-exceptions-to-console
+pointing to this anchor wording -->
 
 Controls whether to log DevTools uncaught exceptions in the **Console** tool.
 <!-- todo old: need text -->
@@ -626,7 +625,9 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable webhint
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has a "(?)" link
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#enable-webhint
+pointing to this anchor wording -->
 
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint](https://webhint.io) includes:
 
@@ -651,7 +652,9 @@ Status:
 
 <!-- ====================================================================== -->
 ## Show issues in Elements
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has a "(?)" link
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-issues-in-elements
+pointing to this anchor wording -->
 
 Displays syntax errors as wavy underlines under DOM nodes in the **Elements** tool.
 
@@ -665,7 +668,9 @@ Status:
 
 <!-- ====================================================================== -->
 ## Open source files in Visual Studio Code
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has a "(?)" link
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#open-source-files-in-visual-studio-code
+pointing to this anchor wording -->
 
 The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files. When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.
 
@@ -686,8 +691,9 @@ Status:
 <!-- ======================================================================
 ## Emulate Microsoft-recommended hardware and network performance presets
 internal only
-
-checkbox has a (?) link to this anchor wording
+checkbox has a "(?)" link
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#device-performance-profiles
+pointing to this anchor wording
 
 _new as of Microsoft Edge 114_
 
@@ -704,7 +710,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable Adaptive CPU throttling
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 114_
 
@@ -721,7 +727,9 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable CSS Copilot
-<!-- checkbox has a (?) link pointing to this anchor wording -->
+<!-- checkbox has a "(?)" link
+https://go.microsoft.com/fwlink/?linkid=2274445
+pointing to this anchor wording -->
 
 Enables using Copilot in the Microsoft Edge Sidebar to explain HTML elements and CSS styles to help you better understand a particular element or style rule that's displayed in the **Elements** tool.  To ask Copilot about an element or style rule, click the **Copilot** button next to it, and then ask follow-up questions.
 
@@ -744,7 +752,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Live heap profile
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Controls whether to live-update the heap profile.
 <!-- todo old: need text -->
@@ -759,7 +767,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Sampling heap profiler timeline
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Controls whether to show the sampling heap profiler timeline in the **Performance** tool.
 
@@ -777,7 +785,7 @@ Status:
 <!-- was:
 ## Timeline: invalidation tracking
 -->
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Adds an **Invalidations** section for **Recalculate Style** events in the **Summary** tab of the **Performance** tool.  The **Invalidations** section provides information about the root cause for a **Recalculate Style** event, which might be helpful when investigating long-running **Recalculate Style** events that are causing performance issues.
 
@@ -796,7 +804,7 @@ Status:
 <!-- was:
 ## Timeline: show all events
 -->
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Controls whether to show all events in the **Performance** tool.
 
@@ -813,7 +821,7 @@ Status:
 <!-- was:
 ## Timeline: V8 Runtime Call Stats on Timeline
 -->
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Controls whether to show V8 runtime call statistics in the **Performance** tool.  V8 is the JavaScript engine that's used by Microsoft Edge.
 
@@ -827,7 +835,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Performance panel: Enable collecting enhanced traces
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 128_
 
@@ -845,7 +853,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Performance panel: Enable collecting source text for compiled script
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 128_
 
@@ -865,7 +873,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Performance panel: Enable debug mode (trace event details, etc)
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 128_
 
@@ -883,7 +891,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Enable instrumentation breakpoints
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Whether to halt at test breakpoints.  This experiment makes breakpoints more reliable.
 
@@ -898,7 +906,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Use scope information from source maps
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 118_
 
@@ -916,7 +924,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable speculative loads panel in Application panel
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 121_
 
@@ -964,7 +972,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Performance panel: enable sidebar
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 128_
 
@@ -982,7 +990,7 @@ Status:
 
 <!-- ------------------------------ -->
 #### Enable the experimental, WIP sidebar for the Performance Panel.
-<!-- checkbox has no (?) link pointing to this anchor wording -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 <!-- checkbox label had period -->
 
 This is an older label for the checkbox.  See the above section.
