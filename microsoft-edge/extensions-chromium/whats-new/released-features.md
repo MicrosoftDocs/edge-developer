@@ -46,6 +46,8 @@ You can integrate APIs directly into your Continuous Integration / Continuous De
 
 *Released March 2022*
 
+Update September 2024: v1.1 of this REST API provides increased security.
+
 
 <!-- ====================================================================== -->
 ## Addition of breadcrumbs to Microsoft Partner Center
