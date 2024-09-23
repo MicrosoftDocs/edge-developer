@@ -60,7 +60,7 @@ To use the Update REST API:
 
 ##### [v1.1](#tab/v1-1)
 
-1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the API key management experience, by clicking the **Enable** button next to **enable the new experience**.  Details are in [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center), below.
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), opt-in to the UI that uses API keys, by clicking the **Enable** button next to **enable the new experience**.  Details are in [Enable the Update REST API at Partner Center](#enable-the-update-rest-api-at-partner-center), below.
 
 1. Write down the Client ID and the new API key.
 
