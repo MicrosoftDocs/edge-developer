@@ -11,9 +11,9 @@ ms.date: 09/23/2024
 # Windowed vs. Visual hosting of WebView2
 
 There are three options for hosting the Microsoft Edge WebView2 control in your app:
-* [Windowed hosting: For displaying content quickly and easily](#windowed-hosting-for-displaying-content-quickly-and-easily)
-* [Window to Visual hosting: For a similar experience as Windowed hosting, with added benefits and tradeoff](#window-to-visual-hosting-for-a-similar-experience-as-windowed-hosting-with-added-benefits-and-tradeoff)
-* [Visual hosting: For more granular control over layout](#visual-hosting-for-more-granular-control-over-layout)
+* [Windowed hosting: For displaying content quickly and easily](#windowed-hosting-for-displaying-content-quickly-and-easily).
+* [Window to Visual hosting: For a similar experience as Windowed hosting, with added benefits and tradeoff](#window-to-visual-hosting-for-a-similar-experience-as-windowed-hosting-with-added-benefits-and-tradeoff).
+* [Visual hosting: For more granular control over layout](#visual-hosting-for-more-granular-control-over-layout).
 
 Details are below.
 
