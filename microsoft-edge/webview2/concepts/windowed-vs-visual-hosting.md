@@ -19,26 +19,28 @@ You don't need to read this article if you use Windowed hosting in most scenario
 * If you are using Windowed hosting in uncommon scenarios and are experiencing persistent issues with DPI and scaling.
 * If you want to provide a more custom user experience (UX) and want to use Visual hosting.
 
+The different approaches for hosting the WebView2 control in your app are similar in functionality, but they suit different needs depending on the app requirements, as follows:
+
 | Approach | Description | Optimized for |
 |---|---|---|
-| Windowed hosting | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
-| Window to Visual hosting | A combination of Windowed and Visual hosting. Similar to Windowed hosting except that WebView2 content is output to a visual that is hosted in a window rather having content output to the window directly. | A developer experience nearly identical to Windowed hosting, but with improved DPI/scaling handling and the caveat that pen input and handwriting is unsupported. |
-| Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over layout.  For example, you can control the positioning of the WebView2 control in the page.  The app needs to do specific handling of window management and rendering APIs. |
+| [Windowed hosting: For displaying content quickly and easily](#windowed-hosting-for-displaying-content-quickly-and-easily) | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
+| [Window to Visual hosting: For a similar experience as Windowed hosting, with added benefits and tradeoff](#window-to-visual-hosting-for-a-similar-experience-as-windowed-hosting-with-added-benefits-and-tradeoff) | A combination of Windowed and Visual hosting. Similar to Windowed hosting except that WebView2 content is output to a visual that is hosted in a window rather having content output to the window directly. | A developer experience nearly identical to Windowed hosting, but with improved DPI/scaling handling and the caveat that pen input and handwriting is unsupported. |
+| [Visual hosting: For more granular control over layout](#visual-hosting-for-more-granular-control-over-layout) | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over layout.  For example, you can control the positioning of the WebView2 control in the page.  The app needs to do specific handling of window management and rendering APIs. |
 
-These approaches have different requirements, constraints, and benefits.  Windowed hosting is simpler to implement than Visual hosting.  Visual hosting requires all the API calls that Windowed hosting requires, and Visual hosting has additional requirements for it to render properly.  The API lists are linked to in the sections below:
+These approaches have different requirements, constraints, and benefits.
+* Windowed hosting is simpler to implement than Visual hosting.
+* Visual hosting requires all the API calls that Windowed hosting requires, and has additional requirements for it to render properly.  
+
+Details are below.
+
+The supported API lists are linked to in the sections below:
 * [APIs for Windowed hosting](#apis-for-windowed-hosting)
 * [APIs for Window to Visual hosting](#apis-for-window-to-visual-hosting)
 * [APIs for Visual hosting](#apis-for-visual-hosting)
 
 
 <!-- ====================================================================== -->
-## Scenarios for selecting the hosting approach
-
-The different approaches for hosting the WebView2 control in your app are similar in functionality, but they suit different needs depending on the app requirements.
-
-
-<!-- ------------------------------ -->
-#### Windowed hosting: For displaying content quickly and easily
+## Windowed hosting: For displaying content quickly and easily
 
 _Windowed hosting_ means that in your app, WebView2 content is hosted directly in a window; that is, an HWND. The WebView2 HWND inherits many default properties from the operating system (OS).  The WebView2 control takes input from the OS, and the OS sends the input to the WebView2 control.  You can have multiple HWNDs in your app that will each be used as a WebView component to access web content.
 
@@ -47,8 +49,8 @@ The benefit of this is that some of the Input/Output commands are handled for yo
 For general information about Window management and `HWND` functionality, see [About Windows](/windows/win32/winmsg/about-windows).
 
 
-<!-- ---------- -->
-###### Advantages
+<!-- ------------------------------ -->
+#### Advantages
 
 * Windowed hosting allows for a solution that quickly displays web content without having to include features for inputs, outputs, and accessibility.
 
@@ -59,20 +61,20 @@ For general information about Window management and `HWND` functionality, see [A
 * You don't have to manage the various composition-based rendering controls (such as Inputs, Outputs, and Accessibility controls) if you don't want to.
 
 
-<!-- ---------- -->
-###### Disadvantages
+<!-- ------------------------------ -->
+#### Disadvantages
 
 Windowed hosting mode can run into DPI issues in some scenarios, such as sharing a user data folder across different applications.
 
 
-<!-- ---------- -->
-###### APIs for Windowed hosting
+<!-- ------------------------------ -->
+#### APIs for Windowed hosting
 
 For a list of APIs that can be used when configuring WebView2 for Windowed hosting (or for Window to Visual hosting), see [Rendering WebView2 in non-framework apps](./overview-features-apis.md#rendering-webview2-in-non-framework-apps) in _Overview of WebView2 features and APIs_.
 
 
-<!-- ------------------------------ -->
-#### Window to Visual hosting: For a similar experience as Windowed hosting, with added benefits and tradeoff
+<!-- ====================================================================== -->
+## Window to Visual hosting: For a similar experience as Windowed hosting, with added benefits and tradeoff
 
 _Window-to-Visual hosting_ means that the WebView2 content is output to a visual that is hosted in an HWND, rather than outputting content to a window directly or to a visual directly. By hosting content in an HWND, Window to Visual hosting mode enjoys the same ease of adoption benefits as Windowed mode, but by actually displaying content using a visual, it avoids some DPI issues that can result when using Windowed mode.
 
@@ -85,8 +87,8 @@ In Window-to-Visual hosting and Visual hosting, a _visual_ is a basic graphical 
 * [Composition visual](/windows/uwp/composition/composition-visual-tree) in the Windows App Development > UWP docs.
 
 
-<!-- ---------- -->
-###### Advantages
+<!-- ------------------------------ -->
+#### Advantages
 
 * Different apps that share a WebView2 user data folder can have different DPI awareness.
 
@@ -97,20 +99,20 @@ In Window-to-Visual hosting and Visual hosting, a _visual_ is a basic graphical 
 * Changing monitor scale when hosting a WebView2 in a VSTO Add-in no longer sporadically hang the application.  See [VSTO Add-ins](/visualstudio/vsto/office-solutions-development-overview-vsto#vsto-add-ins) in _Office solutions development overview (VSTO)_.
 
 
-<!-- ---------- -->
-###### Disadvantages
+<!-- ------------------------------ -->
+#### Disadvantages
 
 Enabling Window to Visual hosting mode removes support for pen input and handwriting.
 
 
-<!-- ---------- -->
-###### APIs for Window to Visual hosting
+<!-- ------------------------------ -->
+#### APIs for Window to Visual hosting
 
 For a list of APIs that can be used when configuring WebView2 Window to Visual hosting (or for Windowed hosting), see [Rendering WebView2 in non-framework apps](./overview-features-apis.md#rendering-webview2-in-non-framework-apps) in _Overview of WebView2 features and APIs_.
 
 
-<!-- ------------------------------ -->
-#### Visual hosting: For more granular control over layout
+<!-- ====================================================================== -->
+## Visual hosting: For more granular control over layout
 
 When using _Visual hosting_, your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control.
 
@@ -119,16 +121,16 @@ In Visual hosting, content is embedded to a given location on the application. T
 If your WebView2 app uses Visual hosting, inputs are routed to the app's `HWND` and must be configured to send the spatial input (such as mouse, touch, or pen) based on positions, _not_ based on what currently has focus, such as a keyboard.
 
 
-<!-- ---------- -->
-###### Advantages and disadvantages
+<!-- ------------------------------ -->
+#### Advantages and disadvantages
 
 Visual hosting allows for (and requires) more granular control of layout.  When using this approach, the app needs specific handling of window management and rendering APIs.
 
 For example, with Visual hosting, when the user resizes the window, you must define how the WebView control scales in relation to the whole webpage, such as making the WebView scale twice as much as the app.
 
 
-<!-- ---------- -->
-###### APIs for Visual hosting
+<!-- ------------------------------ -->
+#### APIs for Visual hosting
 
 For a list of APIs that can be used when configuring WebView2 in a Visual hosting environment, see [Rendering WebView2 using Composition](./overview-features-apis.md#rendering-webview2-using-composition) in _Overview of WebView2 features and APIs_.
 
