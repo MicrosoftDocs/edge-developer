@@ -28,14 +28,14 @@ This method clears all the kinds of browsing data that are listed in the data ki
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [C#](#tab/csharp)
 
 [CoreWebView2Profile.ClearBrowsingDataAsync() Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync)
 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [C++](#tab/cpp)
 
 [ICoreWebView2Profile::ClearBrowsingDataAll() method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataall)
 
@@ -53,7 +53,7 @@ This method clears the specified kinds of browsing data, regardless of when the 
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [C#](#tab/csharp)
 
 [CoreWebView2Profile.ClearBrowsingDataAsync(dataKinds) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds))
 
@@ -62,7 +62,7 @@ This method clears the specified kinds of browsing data, regardless of when the 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [C++](#tab/cpp)
 
 [ICoreWebView2Profile::ClearBrowsingData(dataKinds) method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdata)
 
@@ -81,7 +81,7 @@ This method clears the specified kinds of browsing data that was created between
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [C#](#tab/csharp)
 
 [CoreWebView2Profile.ClearBrowsingDataAsync(dataKinds, startTime, endTime) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
 
@@ -90,7 +90,7 @@ This method clears the specified kinds of browsing data that was created between
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [C++](#tab/cpp)
 
 [ICoreWebView2Profile::ClearBrowsingDataInTimeRange(dataKinds, startTime, endTime) method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataintimerange)
 
@@ -115,7 +115,7 @@ The following parameter values are passed to the Clear Browsing Data API method:
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [C#](#tab/csharp)
 
 ```csharp
 // Clears autofill data.
@@ -147,7 +147,7 @@ private void ClearAutofillData()
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [C++](#tab/cpp)
 
 ```cpp
 // Clears the autofill data from the last hour.
@@ -200,7 +200,7 @@ void ClearAutofillData()
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [C#](#tab/csharp)
 
 * [CoreWebView2.Profile Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.profile)
 * [CoreWebView2Profile Class](/dotnet/api/microsoft.web.webview2.core.corewebview2profile)
@@ -212,7 +212,7 @@ void ClearAutofillData()
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [C++](#tab/cpp)
 
 * [ICoreWebView2Profile::ClearBrowsingDataAll() method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataall)
 * [ICoreWebView2Profile::ClearBrowsingData(dataKinds) method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdata)

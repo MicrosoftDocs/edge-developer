@@ -87,7 +87,9 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Hide the currently selected element | **H** | **H** |
 | Toggle **Edit as HTML** mode on the currently selected element | **Function+F2** | **F2** |
 
-### Styles pane keyboard shortcuts
+
+<!-- ------------------------------ -->
+#### Styles pane keyboard shortcuts
 
 | Action | Windows/Linux | macOS |
 |---|---|---|
@@ -123,7 +125,9 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | Press **Ctrl+Shift+O**, then type in the name of the declaration / rule set, or select it from the list of options | press **Command+Shift+O**, then type in the name of the declaration / rule set, or select it from the list of options |
 | Close the active tab | **Alt+W** | **Option+W** |
 
-### Code Editor keyboard shortcuts
+
+<!-- ------------------------------ -->
+#### Code Editor keyboard shortcuts
 
 | Action | Windows/Linux | macOS |
 |---|---|---|

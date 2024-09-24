@@ -74,7 +74,8 @@ DevTools with a **Console** full of messages:
 The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.
 
 
-### Example code
+<!-- ------------------------------ -->
+#### Example code
 
 ```javascript
 // prints the text to the console as  a log message
@@ -179,7 +180,8 @@ Autocompletion of JavaScript expressions in the **Console**:
 The **Console** has access to the [Window](https://developer.mozilla.org/docs/Web/API/Window) object of the browser.  You can write scripts that interact with the current webpage, by reading data from the DOM and assigning data to DOM elements.
 
 
-### Reading from the DOM tree in the Console
+<!-- ------------------------------ -->
+#### Reading from the DOM tree in the Console
 
 To use a JavaScript expression to read from the current page by reading a selected element from the DOM tree:
 
@@ -198,7 +200,8 @@ To use a JavaScript expression to read from the current page by reading a select
 You have read from the DOM representation of the webpage, by entering a JavaScript expression in the **Console** and displaying the output in the **Console**.
 
 
-### Writing to the DOM tree and webpage from the Console
+<!-- ------------------------------ -->
+#### Writing to the DOM tree and webpage from the Console
 
 You can also change the rendered webpage, by changing the DOM (or _writing to_ the DOM), from within the **Console**.
 
@@ -219,7 +222,8 @@ To change the rendered webpage:
    You changed the main heading of the webpage to **Rocking the Console**.
 
 
-### Using the $$ Console utility method to 
+<!-- ------------------------------ -->
+#### Using the $$ Console utility method to 
 
 The **Console Utility** methods make it easy to access and manipulate the current webpage.
 

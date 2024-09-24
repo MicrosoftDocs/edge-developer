@@ -93,7 +93,9 @@ After doing the above setup, debug your WebView2 app, as follows.
 <!-- ====================================================================== -->
 ## Troubleshooting
 
-### Virtual source path mapping not supported in Visual Studio 2019
+
+<!-- -------------------------------------------------- -->
+#### Virtual source path mapping not supported in Visual Studio 2019
 
 If you use the WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) method, the debugger in Visual Studio 2019 doesn't understand the virtual source path mapping, so breakpoints don't work correctly.
 

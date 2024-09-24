@@ -111,7 +111,7 @@ Selenium uses the `EdgeDriver` class to manage a Microsoft Edge session.  The fo
 
 To get started automating Microsoft Edge with WebDriver, copy and paste the code snippet for your preferred language:
 
-# [C#](#tab/c-sharp)
+##### [C#](#tab/c-sharp)
 
 ```csharp
 using OpenQA.Selenium;
@@ -144,7 +144,7 @@ namespace EdgeDriverSample
 }
 ```
 
-# [Python](#tab/python)
+##### [Python](#tab/python)
 
 ```python
 from selenium import webdriver
@@ -163,7 +163,7 @@ time.sleep(5)
 driver.quit()
 ```
 
-# [Java](#tab/java)
+##### [Java](#tab/java)
 
 ```java
 import org.openqa.selenium.By;
@@ -188,7 +188,7 @@ public class EdgeDriverSample {
 }
 ```
 
-# [JavaScript](#tab/javascript)
+##### [JavaScript](#tab/javascript)
 
 ```javascript
 const { Builder, By } = require('selenium-webdriver');
@@ -223,7 +223,7 @@ You can also use `EdgeDriverService` to configure command-line options for the M
 
 The following snippet creates a new `EdgeDriverService` and enables verbose log output:
 
-# [C#](#tab/c-sharp)
+##### [C#](#tab/c-sharp)
 
 ```csharp
 var service = EdgeDriverService.CreateDefaultService();
@@ -232,7 +232,7 @@ service.UseVerboseLogging = true;
 var driver = new EdgeDriver(service);
 ```
 
-# [Python](#tab/python)
+##### [Python](#tab/python)
 
 ```python
 from selenium import webdriver
@@ -243,7 +243,7 @@ service = Service(verbose = True)
 driver = webdriver.Edge(service = service)
 ```
 
-# [Java](#tab/java)
+##### [Java](#tab/java)
 
 ```java
 System.setProperty("webdriver.edge.verboseLogging", "true");
@@ -252,7 +252,7 @@ EdgeDriverService service = EdgeDriverService.createDefaultService();
 EdgeDriver driver = new EdgeDriver(service);
 ```
 
-# [JavaScript](#tab/javascript)
+##### [JavaScript](#tab/javascript)
 
 ```javascript
 const edge = require('selenium-webdriver/edge');
@@ -275,7 +275,7 @@ You can pass an `EdgeOptions` object to the `EdgeDriver` constructor to configur
 
 You can start a WebDriver session with specific Microsoft Edge binaries.  For example, you can run tests using the [Microsoft Edge preview channels](https://www.microsoft.com/edge/download/insider), such as Microsoft Edge Beta, Dev, or Canary.
 
-# [C#](#tab/c-sharp)
+##### [C#](#tab/c-sharp)
 
 ```csharp
 var options = new EdgeOptions();
@@ -284,7 +284,7 @@ options.BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge Beta\Applicatio
 var driver = new EdgeDriver(options);
 ```
 
-# [Python](#tab/python)
+##### [Python](#tab/python)
 
 ```python
 from selenium import webdriver
@@ -296,7 +296,7 @@ options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Applicati
 driver = webdriver.Edge(options = options)
 ```
 
-# [Java](#tab/java)
+##### [Java](#tab/java)
 
 ```java
 EdgeOptions options = new EdgeOptions();
@@ -305,7 +305,7 @@ options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Application\\m
 EdgeDriver driver = new EdgeDriver(options);
 ```
 
-# [JavaScript](#tab/javascript)
+##### [JavaScript](#tab/javascript)
 
 ```javascript
 const edge = require('selenium-webdriver/edge');
@@ -322,7 +322,7 @@ let driver = edge.Driver.createSession(options);
 
 You can use `EdgeOptions` to configure command-line arguments that will be passed to the Microsoft Edge browser process when a session is created.  For example, you can configure the browser to run in headless mode.
 
-# [C#](#tab/c-sharp)
+##### [C#](#tab/c-sharp)
 
 ```csharp
 var options = new EdgeOptions();
@@ -331,7 +331,7 @@ options.AddArgument("headless");
 var driver = new EdgeDriver(options);
 ```
 
-# [Python](#tab/python)
+##### [Python](#tab/python)
 
 ```python
 from selenium import webdriver
@@ -343,7 +343,7 @@ options.add_argument("headless")
 driver = webdriver.Edge(options = options)
 ```
 
-# [Java](#tab/java)
+##### [Java](#tab/java)
 
 ```java
 EdgeOptions options = new EdgeOptions();
@@ -352,7 +352,7 @@ options.addArguments("headless");
 EdgeDriver driver = new EdgeDriver(options);
 ```
 
-# [JavaScript](#tab/javascript)
+##### [JavaScript](#tab/javascript)
 
 ```javascript
 const edge = require('selenium-webdriver/edge');
