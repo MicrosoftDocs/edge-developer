@@ -36,18 +36,6 @@ The following code outlines the basic information needed in your `manifest.json`
     "description": "An extension to display the NASA picture of the day."
 }
 ```
-
-#### [Manifest V2](#tab/v2)
-
-```json
-{
-    "name": "NASA picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "An extension to display the NASA picture of the day."
-}
-```
-
 ---
 
 
@@ -92,24 +80,6 @@ Next, add the icons to the `manifest.json` file. Update your `manifest.json` fil
     }
 }
 ```
-
-#### [Manifest V2](#tab/v2)
-
-```json
-{
-    "name": "NASA picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "An extension to display the NASA picture of the day.",
-    "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
-    }
-}
-```
-
 ---
 
 
@@ -171,27 +141,6 @@ Finally, register the pop-up in `manifest.json` under `browser_action` (in Manif
     }
 }
 ```
-
-#### [Manifest V2](#tab/v2)
-
-```json
-{
-    "name": "NASA picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "An extension to display the NASA picture of the day.",
-    "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
-    },
-    "browser_action": {
-        "default_popup": "popup/popup.html"
-    }
-}
-```
-
 ---
 
 
