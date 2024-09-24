@@ -17,6 +17,12 @@ The goal for this tutorial is to build a Microsoft Edge extension, starting with
 *   Opening a default pop-up dialog.
 
 If you want to test out the completed extension that you are building in this tutorial, download the source code from [MicrosoftEdge-Extensions repo > extension-getting-started-part1](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1).  The source code uses Manifest V3.
+<!-- todo: part 1 & 2 .md: https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples
+last commit = 2 years ago.
+has repo been updated from MV2 to MV3?
+did repo have MV2 ever?
+does repo now have MV3?
+-->
 
 
 <!-- ====================================================================== -->
