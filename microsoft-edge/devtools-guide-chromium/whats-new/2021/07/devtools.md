@@ -62,7 +62,7 @@ The new **Detached Elements** tool finds all of the detached elements on your pa
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experiment, go to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**. -->
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
+* [Debug DOM memory leaks with the Detached Elements profiling type](../../../memory-problems/dom-leaks.md)
 
 
 <!-- ====================================================================== -->

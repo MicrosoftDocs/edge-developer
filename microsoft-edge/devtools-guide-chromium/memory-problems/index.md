@@ -30,7 +30,7 @@ Learn how to use Microsoft Edge and DevTools to find memory issues that affect p
 *  Identify detached DOM trees (a common cause of memory leaks) with **Heap snapshot**.
 *  Find out when new memory is being allocated in your JavaScript heap (JS heap) with **Allocation instrumentation on timeline**.
 
-See also [Debug DOM memory leaks with the Detached Elements tool](dom-leaks.md).
+See also [Debug DOM memory leaks with the Detached Elements profiling type](dom-leaks.md).
 
 
 <!-- ====================================================================== -->
