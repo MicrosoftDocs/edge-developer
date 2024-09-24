@@ -121,37 +121,7 @@ if (sendMessageId) {
         });
     };
 }
-```
-
-#### [Manifest V2](#tab/v2)
-
-```javascript
-const sendMessageId = document.getElementById("sendmessageid");
-if (sendMessageId) {
-    sendMessageId.onclick = function() {
-        chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-            chrome.tabs.sendMessage(
-                tabs[0].id,
-                {
-                    url: chrome.extension.getURL("images/stars.jpeg"),
-                    imageDivId: `${guidGenerator()}`,
-                    tabId: tabs[0].id
-                },
-                function(response) {
-                    window.close();
-                }
-            );
-            function guidGenerator() {
-                const S4 = function () {
-                    return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
-                };
-                return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
-            }
-        });
-    };
-}
-```
-
+```    
 ---
 
 <!-- ====================================================================== -->
@@ -175,15 +145,6 @@ Add another entry in the `manifest.json` file to declare that the image is avail
     }
   ]
 ```
-
-#### [Manifest V2](#tab/v2)
-
-```json
-"web_accessible_resources": [
-    "images/*.jpeg"
-]
-```
-
 ---
 You've now written the code in your `popup.js` file to send a message to the content page that is embedded on the current active tab page, but you haven't created and injected that content page.  Do that now.
 
@@ -226,38 +187,6 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
     ]
 }
 ```
-
-#### [Manifest V2](#tab/v2)
-
-```json
-{
-    "name": "NASA picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "An extension to display the NASA picture of the day.",
-    "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
-    },
-    "browser_action": {
-        "default_popup": "popup/popup.html"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-              "<all_urls>"
-            ],
-            "js": ["lib/jquery.min.js","content-scripts/content.js"]
-        }
-    ],
-    "web_accessible_resources": [
-        "images/*.jpeg"
-    ]
-}
-```
-
 ---
 
 The `matches` attribute is set to `<all_urls>`, which means that all files in `content_scripts` are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript and CSS.  You also added `lib\jquery.min.js`.  You can include that from the download mentioned at the top of the section.
