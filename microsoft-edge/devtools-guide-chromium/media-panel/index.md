@@ -63,7 +63,9 @@ The **Media** tool is the main place in DevTools for inspecting the media player
 
    ![Media timeline](./index-images/media-panel-timeline.png)
 
-### Remote debugging
+
+<!-- ------------------------------ -->
+#### Remote debugging
 
 View the media players information on an Android device from your Windows or macOS computer.
 

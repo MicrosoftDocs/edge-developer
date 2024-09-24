@@ -24,17 +24,15 @@ ms.date: 05/11/2021
 # Inspect and modify CSS animation effects
 <!-- orig title: # Inspect animations -->
 
-Inspect and modify CSS animation effects by using the **Animation Inspector** in the **Animations** tool.
+Inspect and modify CSS animation effects by using the **Animation Inspector** in the **Animations** tool:
 
 ![The Animations tool](./animations-images/animations-completed.png)
 
-### Summary
+Capture animations by opening the **Animations** tool.  The **Animations** tool automatically detects and sorts animations into groups.
 
-*  Capture animations by opening the **Animations** tool.  The **Animations** tool automatically detects and sorts animations into groups.
+Inspect animations by slowing down each one, replaying each one, or viewing the source code.
 
-*  Inspect animations by slowing down each one, replaying each one, or viewing the source code.
-
-*  Modify animations by changing the timing, delay, duration, or keyframe offsets.
+Modify animations by changing the timing, delay, duration, or keyframe offsets.
 
 
 <!-- ====================================================================== -->
@@ -48,9 +46,11 @@ The **Animations** tool has two main purposes:
 
 The Animation Inspector supports CSS animations, CSS transitions, and web animations.  `requestAnimationFrame` animations are currently not supported.
 
-### What's an Animation Group?
 
-An _Animation Group_ is a group of animations that may be related to each other.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations render as one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time (excluding delays, and so on).  The Animation Inspector also groups the animations side-by-side.
+<!-- ------------------------------ -->
+#### Animation Groups
+
+An _Animation Group_ is a group of animations that may be related to each other.  The web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations render as one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time (excluding delays, and so on).  The Animation Inspector also groups the animations side-by-side.
 
 In other words, a set of animations that are all triggered in the same script block are grouped together.  If an animation is asynchronous, it is placed in a separate group.
 
@@ -101,7 +101,9 @@ After you capture an animation, there are a few ways to replay it:
 *  Select the Animation Group from the **Overview** pane (so that it is displayed in the **Details** pane), and then click the **replay** (![replay icon](./animations-images/replay-button-icon.png)) icon.  The animation is replayed in the viewport.  Click the **animation speed** (![animation speed icons](./animations-images/animation-speed-buttons-icon.png)) icons to change the preview speed of the currently selected Animation Group.  You can use the red vertical bar to change your current position.
 *  Click and drag the red vertical bar to scrub the viewport animation.
 
-### View animation details
+
+<!-- ------------------------------ -->
+#### View animation details
 
 After you capture an Animation Group, click on it from the **Overview** pane to view the details.  In the **Details** pane, each individual animation is assigned to a row:
 

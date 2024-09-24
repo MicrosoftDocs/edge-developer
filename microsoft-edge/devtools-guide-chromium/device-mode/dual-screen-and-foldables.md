@@ -36,9 +36,13 @@ The [Device Toolbar](../device-mode/index.md#simulate-a-mobile-viewport) has add
 
 The **Experimental Web Platform features** (![ExperimentalApis](./dual-screen-and-foldables-images/experimental-apis-dark-icon.png)) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon isn't highlighted.  To turn on (or off) the flag, either click the icon or go to `edge://flags` and toggle the flag.
 
-### Known issues
 
-#### Pointer shaking or stuttering
+<!-- ------------------------------ -->
+#### Known issues
+
+
+<!-- ---------- -->
+###### Pointer shaking or stuttering
 
 When you use a [Microsoft Remote Desktop client](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients) to connect to a remote PC and emulate the [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) or [Samsung Galaxy Fold](https://www.samsung.com/global/galaxy/galaxy-fold), the pointer may shake or stutter.  If you run into the issue, contact the Microsoft Edge DevTools team.
 

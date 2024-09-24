@@ -23,15 +23,13 @@ ms.date: 05/04/2021
    limitations under the License. -->
 # Speed up JavaScript runtime
 
-To identify expensive functions, use the **Memory** tool.
+To identify expensive functions, use the **Memory** tool:
 
 ![Sample Profiles](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.png)
 
-### Summary
+Record exactly which functions were called and how much memory each requires with Allocation Sampling in the **Memory** tool.
 
-*  Record exactly which functions were called and how much memory each requires with Allocation Sampling in the **Memory** tool.
-
-*  Visualize your profiles as a flame chart.
+Visualize your profiles as a flame chart.
 
 
 <!-- ====================================================================== -->
@@ -59,7 +57,9 @@ When you finish recording, DevTools automatically populates the **Memory** panel
 
 The default view is **Heavy (Bottom Up)**.  This view allows you to review which functions had the most impact on performance and examine the requesting path for each function.
 
-### Change sort order
+
+<!-- ------------------------------ -->
+#### Change sort order
 
 To change the sorting order, select the dropdown menu next to the **focus selected function** (![focus selected function](./js-runtime-images/focus-icon.png)) icon and then select one of the following options:
 
@@ -75,7 +75,9 @@ To change the sorting order, select the dropdown menu next to the **focus select
 
 ![Tree chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.png)
 
-### Exclude functions
+
+<!-- ------------------------------ -->
+#### Exclude functions
 
 To exclude a function from your Sampling Profile, select it and then click the **exclude selected function** (![exclude selected function](./js-runtime-images/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
 
@@ -104,13 +106,17 @@ Functions are colored randomly.  There is no correlation to the colors used in t
 
 A tall call stack isn't necessarily significant; it might just mean that a lot of functions were called.  But a wide bar means that a function took a long time to complete, so these are candidates for optimization.
 
-### Zoom in on specific parts of recording
+
+<!-- ------------------------------ -->
+#### Zoom in on specific parts of recording
 
 To zoom in on particular parts of the call stack, click and drag left and right across the overview.  After you zoom, the call stack automatically displays the portion of the recording that you selected.
 
 ![Chart zoomed](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.png)
 
-### View function details
+
+<!-- ------------------------------ -->
+#### View function details
 
 Click a function, to view it in the **Sources** tool.
 
