@@ -16,11 +16,25 @@ Publish your extension to the [Microsoft Edge Add-ons website](https://microsoft
 
 
 <!-- ========================================================================== -->
-## Before you begin
+## Prepare an extension to be submitted via Partner Center
 
-You should have a working prototype of your extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/index.md).
+To prepare an extension to be submitted via Partner Center, to be published at the Microsoft Edge Add-ons site, do the following steps.
+
+
+<!-- ---------------------------------- -->
+#### Have a working prototype of your extension
+
+Before publishing your extension, you should have a working prototype of your extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/index.md).
+
+
+<!-- ---------------------------------- -->
+#### Create a developer account
 
 To publish your extension to the Microsoft Edge Add-ons website, use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge Add-ons program, see [Developer registration](create-dev-account.md).
+
+
+<!-- ---------------------------------- -->
+#### Create a zip file for your extension package
 
 Create a zip file for your extension package.  Your extension package must include the following files:
 
@@ -28,7 +42,13 @@ Create a zip file for your extension package.  Your extension package must inclu
 
 *  Images and other files required by your extension.
 
-The following fields in the manifest are automatically included in your store listing details.  The fields are read-only on the **Store listings** webpage.  The store listings webpage is described later in this article.  Before uploading your package to Partner Center, make sure that the field values match your preferred display on the store details webpage, as follows.
+
+<!-- ---------------------------------- -->
+#### Review manifest field values
+
+The following fields in the manifest are automatically included in your store listing details.  The fields are read-only on the **Store listings** webpage.  The store listings webpage is described later in this article.
+
+Before uploading your package to Partner Center, make sure that the field values match your preferred display on the store details webpage, as follows.
 
 In the manifest file, review these fields:
 
@@ -46,21 +66,18 @@ In the manifest file, review these fields:
 <!-- ========================================================================== -->
 ## Submit your extension to the Microsoft Edge Add-ons website
 
+After doing the above steps, the extension is ready to be submitted via Partner Center, to be published at the Microsoft Edge Add-ons site.
+
 To submit your extension to Partner Center:
 
 1. Start a new submission.
-
 1. Upload the extension package.
-
 1. Provide Availability details.
-
 1. Select Properties for your extension.
-
 1. Add Store listing details for your extension.
-
 1. Complete your submission.
 
-The rest of the article provides details about these steps.
+Details are below.
 
 
 <!-- ========================================================================== -->

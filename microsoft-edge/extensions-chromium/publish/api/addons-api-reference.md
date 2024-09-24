@@ -1,5 +1,5 @@
 ---
-title: REST API Reference for Microsoft Edge Add-ons
+title: REST API Reference for updating Microsoft Edge Add-ons
 description: The Add-ons API Reference, for REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons store.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,23 +8,26 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 09/05/2024
 ---
-# REST API Reference for Microsoft Edge Add-ons
+# REST API Reference for updating Microsoft Edge Add-ons
 
 This article is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons store.
 
-For an overview, see [Using the Microsoft Edge Add-ons REST API](./using-addons-api.md).
+For an overview, see [Using the REST API for updating Microsoft Edge Add-ons](./using-addons-api.md).
 
 
 <!-- ------------------------------ -->
-#### Versions of the REST API
+#### Versions of the Update REST API
 
-As of September 6, 2024, both v2 and v1 of this REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
+As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
 
 
 <!-- ====================================================================== -->
 ## Upload a package to update an existing submission
+<!-- endpoint 1: POST /submissions/draft/package -->
 
 Uploads a package to update an existing draft submission of an add-on product.
+
+See also [Uploading a package to update an existing submission](./using-addons-api.md#uploading-a-package-to-update-an-existing-submission) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ------------------------------ -->
@@ -32,7 +35,7 @@ Uploads a package to update an existing draft submission of an add-on product.
 
 | Method | Request URI |
 |---|---|
-| `POST` | `/products/{productID}/submissions/draft/package` |
+| `POST` | `/products/$productID/submissions/draft/package` |
 
 
 <!-- ---------- -->
@@ -40,7 +43,7 @@ Uploads a package to update an existing draft submission of an add-on product.
 
 | URI parameter | Description |
 |---|---|
-| `productID` | Required.  The product ID of the product to which the package must be uploaded. |
+| `$productID` | Required.  The product ID of the product to which the package must be uploaded. |
 
 
 <!-- ---------- -->
@@ -48,15 +51,15 @@ Uploads a package to update an existing draft submission of an add-on product.
 
 The following request headers are required:
 
-##### [v2](#tab/v2)
+##### [v1.1](#tab/v1-1)
 
-* `Authorization: ApiKey <api key>`
-* `X-ClientID: <client ID>`
+* `Authorization: ApiKey $ApiKey`
+* `X-ClientID: $ClientID`
 * `Content-Type: application/zip`
 
 ##### [v1](#tab/v1)
 
-* `Authorization: Bearer <auth token>`
+* `Authorization: Bearer $TOKEN`
 * `Content-Type: application/zip`
 
 ---
@@ -77,6 +80,8 @@ The following request headers are required:
 
 * Location: `{operationID}`
 
+The response includes an operation ID, to send to other endpoints.
+
 
 <!-- ---------- -->
 ###### Status codes
@@ -91,13 +96,16 @@ This API has the following expected status codes.
 
 
 See also:
-* [Uploading a package to update an existing submission](./using-addons-api.md#uploading-a-package-to-update-an-existing-submission) in _Using the Microsoft Edge Add-ons REST API_.
+* [Uploading a package to update an existing submission](./using-addons-api.md#uploading-a-package-to-update-an-existing-submission) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
 ## Check the status of a package upload
+<!-- endpoint 2: GET submissions/draft/package/operations/$operationID -->
 
 Gets the status of the package upload.
+
+See also [Checking the status of a package upload](./using-addons-api.md#checking-the-status-of-a-package-upload) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ------------------------------ -->
@@ -105,7 +113,7 @@ Gets the status of the package upload.
 
 | Method | Request URI |
 |---|---|
-| `GET` | `/products/{productID}/submissions/draft/package/operations/{operationID}` |
+| `GET` | `/products/$productID/submissions/draft/package/operations/$operationID` |
 
 
 <!-- ---------- -->
@@ -113,7 +121,7 @@ Gets the status of the package upload.
 
 | URI parameter | Description |
 |---|---|
-| `operationID` | Required.  The operation ID of the upload request submitted in the previous step.  This information is available in the response header. |
+| `$operationID` | Required.  The operation ID of the upload request submitted in the previous step.  This information is available in the response header. |
 
 
 <!-- ---------- -->
@@ -121,14 +129,14 @@ Gets the status of the package upload.
 
 The following request headers are required:
 
-##### [v2](#tab/v2)
+##### [v1.1](#tab/v1-1)
 
-* `Authorization: ApiKey <api key>`
-* `X-ClientID: <client ID>`
+* `Authorization: ApiKey $ApiKey`
+* `X-ClientID: $ClientID`
 
 ##### [v1](#tab/v1)
 
-* `Authorization: Bearer <auth token>`
+* `Authorization: Bearer $TOKEN`
 
 ---
 
@@ -212,13 +220,16 @@ This API has the following expected status codes.
 
 
 See also:
-* [Checking the status of a package upload](./using-addons-api.md#checking-the-status-of-a-package-upload) in _Using the Microsoft Edge Add-ons REST API_.
+* [Checking the status of a package upload](./using-addons-api.md#checking-the-status-of-a-package-upload) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
 ## Publish the product draft submission
+<!-- endpoint 3: POST /submissions -->
 
 Publishes the current draft of the product to Microsoft Edge Add-ons.
+
+See also [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ------------------------------ -->
@@ -226,7 +237,7 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 | Method | Request URI |
 |---|---|
-| `POST` | `/products/{productID}/submissions` |
+| `POST` | `/products/$productID/submissions` |
 
 
 <!-- ---------- -->
@@ -234,7 +245,7 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 | URI parameter | Description |
 |---|---|
-| `productID` | Required.  The product ID of the product whose draft must be published. |
+| `$productID` | Required.  The product ID of the product whose draft must be published. |
 
 
 <!-- ---------- -->
@@ -242,14 +253,14 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 The following request headers are required:
 
-##### [v2](#tab/v2)
+##### [v1.1](#tab/v1-1)
 
-* `Authorization: ApiKey <api key>`
-* `X-ClientID: <client ID>`
+* `Authorization: ApiKey $ApiKey`
+* `X-ClientID: $ClientID`
 
 ##### [v1](#tab/v1)
 
-* `Authorization: Bearer <auth token>`
+* `Authorization: Bearer $TOKEN`
 
 ---
 
@@ -269,6 +280,8 @@ The following request headers are required:
 
 * Location: `{operationID}`
 
+The response includes an operation ID, to send to other endpoints.
+
 
 <!-- ---------- -->
 ###### Status codes
@@ -283,13 +296,16 @@ This API has the following expected status codes.
 
 
 See also:
-* [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Using the Microsoft Edge Add-ons REST API_.
+* [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
 ## Check the publishing status
+<!-- endpoint 4: GET /submissions/operations/$operationID -->
 
 Checks the status of the publish operation.
+
+See also [Checking the publishing status](using-addons-api.md#checking-the-publishing-status) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ------------------------------ -->
@@ -297,8 +313,7 @@ Checks the status of the publish operation.
 
 | Method | Request URI |
 |---|---|
-| `GET` | `/products/{productID}/submissions/operations/{operationID}` |
-
+| `GET` | `/products/$productID/submissions/operations/$operationID` |
 
 
 <!-- ---------- -->
@@ -312,14 +327,14 @@ None.
 
 The following request headers are required:
 
-##### [v2](#tab/v2)
+##### [v1.1](#tab/v1-1)
 
-* `Authorization: ApiKey <api key>`
-* `X-ClientID: <client ID>`
+* `Authorization: ApiKey $ApiKey`
+* `X-ClientID: $ClientID`
 
 ##### [v1](#tab/v1)
 
-* `Authorization: Bearer <auth token>`
+* `Authorization: Bearer $TOKEN`
 
 ---
 
@@ -334,6 +349,8 @@ None.
 #### Response
 
 A `GET` operation status API can be called in the following scenarios.  In all valid scenarios, `200 OK` is returned, with different status messages.
+
+The response includes an operation ID, to send to other endpoints.
 
 
 <!-- ---------- -->
@@ -498,7 +515,7 @@ This API has the following expected status codes.
 
 
 See also:
-* [Checking the publishing status](using-addons-api.md#checking-the-publishing-status) in _Using the Microsoft Edge Add-ons REST API_.
+* [Checking the publishing status](using-addons-api.md#checking-the-publishing-status) in _Using the REST API for updating Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
@@ -514,7 +531,7 @@ Here's a list of common error codes and possible reasons.  For a full list, see 
 |---|---|---|
 | 400 Bad Request | The server didn't understand the request. | There's no package (zip file) in the body.  Or, `Content-Type` header is missing or its value is incorrect. |
 | 401 Unauthorized | The request page needs an authorization. | The auth token is missing, expired, or not valid. |
-| 404 Not Found | The server can't find the requested page. | The specified `productID` or `operationID` doesn't have a valid GUID, isn't valid, or doesn't belong to the developer who is making the request. |
+| 404 Not Found | The server can't find the requested page. | The specified product ID or operation ID doesn't have a valid GUID, isn't valid, or doesn't belong to the developer who is making the request. |
 | 408 Request Timeout | The request took longer than the server was prepared to wait. | There was a timeout while uploading a package. |
 | 429 Too many requests | Too many requests were sent by the user. | Too many requests were sent and they got throttled. |
 
@@ -531,6 +548,6 @@ Here's a list of common error codes and possible reasons.  For a full list, see 
 ## See also
 
 <!-- all article-level links in article body: -->
-* [Using the Microsoft Edge Add-ons REST API](./using-addons-api.md)
+* [Using the REST API for updating Microsoft Edge Add-ons](./using-addons-api.md)
 * [Partner Center REST error codes](/partner-center/develop/error-codes) in Partner Center docs.
 * [List of HTTP status codes](https://wikipedia.org/wiki/List_of_HTTP_status_codes) at Wikipedia.
