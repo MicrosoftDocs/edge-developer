@@ -94,7 +94,7 @@ In Window-to-Visual hosting and Visual hosting, a _visual_ is a basic graphical 
 
 * Different apps that share a WebView2 user data folder will no longer be able to cause each other to hang.
 
-* Changing monitor scale when hosting a WebView2 in a VSTO Add-in no longer sporadically hang the application.  See [VSTO Add-ins](https://learn.microsoft.com/en-us/visualstudio/vsto/office-solutions-development-overview-vsto?view=vs-2022#vsto-add-ins) in _Office solutions development overview (VSTO)_.
+* Changing monitor scale when hosting a WebView2 in a VSTO Add-in no longer sporadically hang the application.  See [VSTO Add-ins](/visualstudio/vsto/office-solutions-development-overview-vsto#vsto-add-ins) in _Office solutions development overview (VSTO)_.
 
 
 <!-- ---------- -->
@@ -106,7 +106,7 @@ Enabling Window to Visual hosting mode removes support for pen input and handwri
 <!-- ---------- -->
 ###### APIs for Window to Visual hosting
 
-For a list of APIs that can be used when configuring WebView2 Window to Visual hosting (or for Windowed hosting), see [Rendering WebView2 in non-framework apps](./overview-features-apis.md##rendering-webview2-in-non-framework-apps) in _Overview of WebView2 features and APIs_.
+For a list of APIs that can be used when configuring WebView2 Window to Visual hosting (or for Windowed hosting), see [Rendering WebView2 in non-framework apps](./overview-features-apis.md#rendering-webview2-in-non-framework-apps) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
