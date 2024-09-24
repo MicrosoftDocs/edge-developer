@@ -54,7 +54,7 @@ For general information about Window management and `HWND` functionality, see [A
 
 * Zooming and rasterization scales (such as menus and context menus) automatically scale to the app's parent `HWND`.  Windowed hosting also handles how the WebView control manages being focused and tabbing in/out of itself when it reaches the final element.
 
-* The app handles keyboard accelerators and keyboard shortcuts when focus is the WebView. For example, pressing **Ctrl+C** in a WebView will be interpreted as trying to copy content in the WebView, and not pressing **Ctrl** and **C** separately.
+* The app handles keyboard accelerators and keyboard shortcuts when focus is on the WebView. For example, pressing **Ctrl+C** in a WebView will be interpreted as trying to copy content in the WebView, and not pressing **Ctrl** and **C** separately.
 
 * You don't have to manage the various composition-based rendering controls (such as Inputs, Outputs, and Accessibility controls) if you don't want to.
 
@@ -68,7 +68,7 @@ Windowed hosting mode can run into DPI issues in some scenarios, such as sharing
 <!-- ---------- -->
 ###### APIs for Windowed hosting
 
-For a list of APIs that can be used when configuring WebView2 for Windowed hosting or Window to Visual hosting, see [Rendering WebView2 in non-framework apps](./overview-features-apis.md#rendering-webview2-in-non-framework-apps) in _Overview of WebView2 features and APIs_.
+For a list of APIs that can be used when configuring WebView2 for Windowed hosting (or for Window to Visual hosting), see [Rendering WebView2 in non-framework apps](./overview-features-apis.md#rendering-webview2-in-non-framework-apps) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
@@ -106,7 +106,7 @@ Enabling Window to Visual hosting mode removes support for pen input and handwri
 <!-- ---------- -->
 ###### APIs for Window to Visual hosting
 
-For a list of APIs that can be used when configuring WebView2 for Windowed hosting or Window to Visual hosting, see [Rendering WebView2 in non-framework apps](./overview-features-apis.md##rendering-webview2-in-non-framework-apps) in _Overview of WebView2 features and APIs_.
+For a list of APIs that can be used when configuring WebView2 Window to Visual hosting (or for Windowed hosting), see [Rendering WebView2 in non-framework apps](./overview-features-apis.md##rendering-webview2-in-non-framework-apps) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
@@ -116,7 +116,7 @@ When using _Visual hosting_, your host app takes spatial input (such as mouse or
 
 In Visual hosting, content is embedded to a given location on the application. This location must handle how content will scale and behave in an app when the user interacts with the application.  In addition to the window management described for Windowed hosting, Visual hosting will need the app to manage the composition-based rendering, when it receives any user interactions.  For more information about Visual hosting, see [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps).
 
-If your WebView2 app uses Visual hosting, inputs are routed to the app's `HWND` and must be configured to send the spatial input (such as mouse, touch, or pen) based on positions, _not_ what currently has focus, such as a keyboard.
+If your WebView2 app uses Visual hosting, inputs are routed to the app's `HWND` and must be configured to send the spatial input (such as mouse, touch, or pen) based on positions, _not_ based on what currently has focus, such as a keyboard.
 
 
 <!-- ---------- -->
@@ -142,7 +142,7 @@ Key compatibility limitations include the operating system and rendering in fram
 <!-- ------------------------------ -->
 #### Operating systems
 
-All hosting modes are supported wherever WebView2 is supported; that is, Windows 10 and up, and certain Windows Server versions.  Windows 7, 8 and 8.1 are no longer supported; Windows 7 and Windows 8 only support Windowed hosting, not Visual hosting.
+All hosting modes are supported wherever WebView2 is supported; that is, Windows 10 and later, and certain Windows Server versions.  Windows 7, 8 and 8.1 are no longer supported; Windows 7 and Windows 8 only support Windowed hosting, not Visual hosting.
 
 See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
 
