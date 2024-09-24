@@ -10,9 +10,7 @@ ms.date: 09/24/2024
 ---
 # Create an extension tutorial, part 2
 
-To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).
-
-The source code has been updated from Manifest V2 to Manifest V3.
+To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).  The source code uses Manifest V3.
 
 This tutorial covers the following extension technologies:
 *   Injecting JavaScript libraries into an extension.
@@ -22,13 +20,16 @@ This tutorial covers the following extension technologies:
 
 You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that image of stars to the content page.  This image is now embedded in the extension and inserted into the active browser tab. Here are the steps.
 
-These steps require that you complete the steps for initial extension package steps. For the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part1](/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension?tabs=v3).
+These steps require that you complete the initial extension package steps, in [Create an extension tutorial, part 1](./part1-simple-extension.md).
 
 
 <!-- ====================================================================== -->
 ## Step 1: Update pop-up.html to include a button
 
-In the popup folder where you created the `popup.html` file [from the initial part of the tutorial](/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension?tabs=v3), you'll add tagging that displays a title with a button.  You'll later program that button in a different step, but for now include a reference to an empty JavaScript file `popup.js`.
+In the popup folder where you created the `popup.html` file, you'll do the following:
+1. Add tagging that displays a title with a button.
+1. Include a reference to an empty JavaScript file `popup.js`.
+1. Program that button.
 
 Below is a sample updated HTML file:
 
@@ -59,7 +60,7 @@ Below is a sample updated HTML file:
 </html>
 ```
 
-After updating and opening the extension, a pop-up opens with a display button.
+After updating and opening the extension, a pop-up opens with a display button:
 
 ![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
 
@@ -251,3 +252,11 @@ When you select the `Display` button, you get what is below.  If you select anyw
 ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
 
 Congratulations!  You've created an extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article -->
+
+* [Create an extension tutorial, part 1](./part1-simple-extension.md)
+* [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) - the completed extension package source for Part 2 of the tutorial.
