@@ -10,7 +10,7 @@ ms.date: 09/24/2024
 ---
 # Create an extension tutorial, part 2
 
-To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).  The source code uses Manifest V3.
+To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).
 
 This tutorial covers the following extension technologies:
 *   Injecting JavaScript libraries into an extension.
