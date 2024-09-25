@@ -176,7 +176,7 @@ See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft
 * [Overview of WebView2 features and APIs](./overview-features-apis.md)
 * [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
 
-Other doc sets:
+External:
 * [About Windows](/windows/win32/winmsg/about-windows) - Window management and `HWND` functionality.
 * [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps) - Windows App Development.
 * [Basic concepts](/windows/win32/directcomp/basic-concepts) - Windows App Development > DirectComposition.
