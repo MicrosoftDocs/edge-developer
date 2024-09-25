@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/07/2022
+ms.date: 09/25/2024
 ---
 # Sideload an extension
 
@@ -14,11 +14,11 @@ During development, you can use Microsoft Edge browser to run and debug your ext
 
 To sideload an extension into Microsoft Edge:
 
-1. In Microsoft Edge, select **Settings and more** (...) > **Extensions**.
+1. In the upper right of Microsoft Edge, click the **Extensions** (![Extensions icon](./extension-sideloading-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**:
 
    ![Opening the edge://extensions page](./extension-sideloading-images/part1-threedots.png)
 
-   The **Extensions** pop-up box opens.
+   The **Extensions** pop-up opens.
 
 1. Click **Manage extensions**.  The **Extensions** page (`edge://extensions`) opens in a new tab.
 
@@ -31,6 +31,16 @@ To sideload an extension into Microsoft Edge:
 1. Select the directory that contains your extension source files, and then click the **Select Folder** button.  Your extension is installed in your browser, similar to extensions that are installed from the store:
 
    ![Installed extensions page, showing a sideloaded extension](./extension-sideloading-images/part1-installed-extension.png)
+
+1. To run the extension, in the upper right of Microsoft Edge, click the **Extensions** (![Extensions icon](./extension-sideloading-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**.
+
+   The **Extensions** pop-up opens:
+
+   ![The Extensions pop-up](./extension-sideloading-images/extensions-popup.png)
+
+1. Select the extension.  The extension opens:
+
+   ![An extension running](./extension-sideloading-images/extension-running.png)
 
 
 <!-- ====================================================================== -->
