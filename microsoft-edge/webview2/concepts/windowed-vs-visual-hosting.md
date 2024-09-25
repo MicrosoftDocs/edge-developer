@@ -180,6 +180,6 @@ See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft
 
 Other doc sets:
 * [About Windows](/windows/win32/winmsg/about-windows) - Window management and `HWND` functionality.
-* [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps) - Windows > App development.
+* [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps) - Windows App Development.
 * [Basic concepts](/windows/win32/directcomp/basic-concepts) - Windows App Development > DirectComposition.
 * [Composition visual](/windows/uwp/composition/composition-visual-tree) - Windows App Development > UWP.
