@@ -63,8 +63,6 @@ For general information about Window management and `HWND` functionality, see [A
 
 * Windowed hosting handles how the WebView2 control manages being focused and tabbing in or out of itself when pressing **Tab** reaches the final element.
 
-* The app handles keyboard accelerators and keyboard shortcuts when focus is on the WebView2. For example, pressing **Ctrl+C** in a WebView2 will be interpreted as trying to copy content in the WebView2, not interpreted as pressing **Ctrl** and **C** separately.<!-- todo: what is this item trying to convey?  handling keyboard accelerators is the same across all hosting modes, right? -->
-
 * You don't have to manage the various composition-based rendering controls (such as Inputs, Outputs, and Accessibility controls) if you don't want to.
 
 
