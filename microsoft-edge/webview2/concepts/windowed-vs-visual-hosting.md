@@ -11,13 +11,13 @@ ms.date: 09/23/2024
 # Windowed vs. Visual hosting of WebView2
 
 There are three options for hosting the Microsoft Edge WebView2 control in your app:
-* [Windowed hosting: For displaying content quickly and easily](#windowed-hosting-for-displaying-content-quickly-and-easily).
-* [Window to Visual hosting: For a similar experience as Windowed hosting, with added benefits and tradeoff](#window-to-visual-hosting-for-a-similar-experience-as-windowed-hosting-with-added-benefits-and-tradeoff).
-* [Visual hosting: For more granular control over layout](#visual-hosting-for-more-granular-control-over-layout).
+* The Windowed hosting mode.
+* The Window to Visual hosting mode.
+* The Visual hosting mode.
 
 You don't need to read this article if you use Windowed hosting in most scenarios.  Windowed hosting is a good starting point for most apps.  Read this article:
-* If you are using Windowed hosting in uncommon scenarios and are experiencing persistent issues with DPI and scaling.  In that case, consider Window to Visual hosting.
-* If you want to provide a more custom user experience (UX) and want to use Visual hosting.
+* If you are using Windowed hosting in uncommon scenarios and are experiencing persistent issues with DPI and scaling.  In this case, consider Window to Visual hosting.
+* If you want to provide a more custom user experience (UX).  In this case, consider Visual hosting.
 
 The different approaches for hosting the WebView2 control in your app are similar in functionality, but they suit different needs depending on the app requirements, as follows:
 
@@ -164,8 +164,8 @@ See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft
 * [Overview of WebView2 features and APIs](./overview-features-apis.md)
 * [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
 
-Other doc sets:
+External:
 * [About Windows](/windows/win32/winmsg/about-windows) - Window management and `HWND` functionality.
-* [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps) in Windows > App development docs.
-* [Basic concepts](/windows/win32/directcomp/basic-concepts) in the Windows App Development > DirectComposition docs.
-* [Composition visual](/windows/uwp/composition/composition-visual-tree) in the Windows App Development > UWP docs.
+* [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps) - Windows App Development.
+* [Basic concepts](/windows/win32/directcomp/basic-concepts) - Windows App Development > DirectComposition.
+* [Composition visual](/windows/uwp/composition/composition-visual-tree) - Windows App Development > UWP.
