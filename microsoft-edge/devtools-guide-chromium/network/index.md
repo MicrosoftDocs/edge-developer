@@ -250,7 +250,8 @@ The **Filters** toolbar should be turned on by default.  If the **Filters** tool
 ![The Filters toolbar](./index-images/filter-empty.png)
 
 
-### Filter by string, regular expression, or property
+<!-- ------------------------------ -->
+#### Filter by string, regular expression, or property
 
 The **Filter** text box supports many different types of filtering.
 
@@ -269,7 +270,8 @@ The **Filter** text box supports many different types of filtering.
 1. Clear the **Filter** text box of any text.
 
 
-### Filter by resource type
+<!-- ------------------------------ -->
+#### Filter by resource type
 
 To focus in on a certain type of file, such as stylesheets:
 

@@ -40,11 +40,13 @@ To share your feedback and comments about this feature, see [GitHub discussion t
 
 
 <!-- ====================================================================== -->
-## Publish and update extensions using the Microsoft Edge Add-ons API
+## Publish updates of extensions using the Microsoft Edge Add-ons API
 
-You can integrate APIs directly into your Continuous Integration / Continuous Delivery (CI/CD) pipeline. You can also publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. For more information, see [Using the Microsoft Edge Add-ons REST API](../publish/api/using-addons-api.md).
+You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. For more information, see [Using the REST API for updating Microsoft Edge Add-ons](../publish/api/using-addons-api.md).
 
 *Released March 2022*
+
+Update September 2024: v1.1 of this REST API provides increased security.
 
 
 <!-- ====================================================================== -->
