@@ -24,19 +24,12 @@ The different approaches for hosting the WebView2 control in your app are simila
 | Approach | Description | Optimized for |
 |---|---|---|
 | Windowed hosting | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
-| Window to Visual hosting | A combination of Windowed and Visual hosting. Similar to Windowed hosting except that WebView2 content is output to a visual that is hosted in a window rather having content output to the window directly. | A developer experience nearly identical to Windowed hosting, but with improved DPI/scaling handling and the caveat that pen input and handwriting is unsupported. |
+| Window to Visual hosting | A combination of Windowed and Visual hosting. Similar to Windowed hosting except that WebView2 content is output to a visual that is hosted in a window rather having content output to the window directly. | A developer experience nearly identical to Windowed hosting, but with improved DPI/scaling handling and the caveat that the Windows Shell Handwriting experience is unsupported. |
 | Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over layout.  For example, you can control the positioning of the WebView2 control in the page.  The app needs to do specific handling of window management and rendering APIs. |
-
-<!-- todo: at "pen" above: 
-change to "Windows Shell Handwriting (pen input)"?
-probably pen input is generally supported, but the "Shell Handwriting" experience (internal: Abydos) is not.
-were there other pen input scenarios that might be unsupported?
-apply same wording at "Shell Handwriting" below.
--->
 
 These approaches have different requirements, constraints, and benefits.
 * Windowed hosting is simpler to implement than Visual hosting.
-* Visual hosting requires all the API calls that Windowed hosting requires, and has additional requirements for it to render properly.  
+* Visual hosting requires all the API calls that Windowed hosting requires, and has additional requirements for it to render properly.
 
 The supported API lists are linked to in the sections below:
 * [APIs for Windowed hosting](#apis-for-windowed-hosting)
@@ -62,8 +55,6 @@ For general information about Window management and `HWND` functionality, see [A
 * Owned and child windows (such as menus and context menus) automatically scale to match the app's parent `HWND` scaling.
 
 * Windowed hosting handles how the WebView2 control manages being focused and tabbing in or out of itself when pressing **Tab** reaches the final element.
-
-* The app handles keyboard accelerators and keyboard shortcuts when focus is on the WebView2. For example, pressing **Ctrl+C** in a WebView2 will be interpreted as trying to copy content in the WebView2, not interpreted as pressing **Ctrl** and **C** separately.<!-- todo: what is this item trying to convey?  handling keyboard accelerators is the same across all hosting modes, right? -->
 
 * You don't have to manage the various composition-based rendering controls (such as Inputs, Outputs, and Accessibility controls) if you don't want to.
 
@@ -103,18 +94,13 @@ In Window-to-Visual hosting and Visual hosting, a _visual_ is a basic graphical 
 
 * Different apps that share a WebView2 user data folder won't potentially cause each other to hang.
 
-* Changing monitor scale when hosting a WebView2 in a VSTO Add-in doesn't sporadically hang the application.  See [VSTO Add-ins](/visualstudio/vsto/office-solutions-development-overview-vsto#vsto-add-ins) in _Office solutions development overview (VSTO)_.
-<!-- todo: alts:
-* Prevents sporadically hanging the app when changing monitor scale, when hosting a WebView2 in a VSTO Add-in.  See [Foo].
-* When hosting a WebView2 in a VSTO Add-in, changing monitor scale won't potentially cause the app to sporadically hang.  See [Foo].
-* Changing monitor scale won't potentially cause the app to sporadically hang, when hosting a WebView2 in a VSTO Add-in.  See [Foo].
--->
+* When hosting a WebView2 in a VSTO Add-in, changing monitor scale won't potentially cause the app to hang. See [VSTO Add-ins](/visualstudio/vsto/office-solutions-development-overview-vsto#vsto-add-ins) in _Office solutions development overview (VSTO)_.
 
 
 <!-- ------------------------------ -->
 #### Disadvantages
 
-Enabling Window to Visual hosting mode removes support for Windows Shell Handwriting (pen input)<!-- todo: strike "(pen input)"?  do same in overview table --> within the WebView2.
+Enabling Window to Visual hosting mode removes support for Windows Shell Handwriting within the WebView2.
 
 
 <!-- ------------------------------ -->
@@ -128,7 +114,7 @@ For a list of APIs that can be used when configuring WebView2 Window to Visual h
 
 When using _Visual hosting_, your host app receives spatial input (such as mouse or touch input) from the user, and forwards this input to the WebView2 control.
 
-In Visual hosting, content is embedded at a given location in the application. This location must handle how content will scale and behave when the user interacts with the application.<!-- todo: What content is this referring to, the WebView2 content?  What does it mean to scale when the user interacts with the application - such as a gesture? --> In addition to the window management described for Windowed hosting, Visual hosting requires the app to manage the composition-based rendering when it receives any user interactions.<!-- todo: What does it mean to "manage the ... rendering"? Which user interactions would cause this, or what are the scenarios? -->
+In Visual hosting, WebView2 content is embedded at a given location in the application. This location must handle how content will scale and behave when the user interacts with the application.<!-- todo: What content is this referring to, the WebView2 content?  What does it mean to scale when the user interacts with the application - such as a gesture? --> In addition to the window management described for Windowed hosting, Visual hosting requires the app to manage the composition-based rendering when it receives any user interactions.<!-- todo: What does it mean to "manage the ... rendering"? Which user interactions would cause this, or what are the scenarios? -->
 
 If your WebView2 app uses Visual hosting, inputs are routed to the app's `HWND` and must be configured to send the spatial input (such as mouse, touch, or pen) based on positions, _not_ based on what currently has focus, such as a keyboard.
 
@@ -160,7 +146,7 @@ For a list of APIs that can be used when configuring WebView2 in a Visual hostin
 <!-- ====================================================================== -->
 ## Compatibility and constraints
 
-Key compatibility limitations include the operating system and rendering in framework and non-framework apps.<!-- todo: what are the constraints about rendering, in framework and non-framework apps? -->
+Key compatibility limitations include the operating system and rendering in framework and non-framework apps. <!-- todo: what are the constraints about rendering, in framework and non-framework apps? -->
 
 
 <!-- ------------------------------ -->
