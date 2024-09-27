@@ -612,7 +612,7 @@ Status:
 #### Performance panel: enable server timings in the timeline
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
-_new as of Microsoft Edge 129_
+_new as of Microsoft Edge Stable 129_
 
 In the **Performance** tool, gathers server timing data and displays that data.
 <!-- todo: desc -->
@@ -992,6 +992,8 @@ Status:
 <!-- ====================================================================== -->
 ## Performance panel: enable performance insights
 
+_new as of Microsoft Edge Stable 129_
+
 In the **Performance** tool, adds the Performance Insights UI.
 <!-- todo: desc -->
 
@@ -1005,6 +1007,8 @@ Status:
 
 <!-- ====================================================================== -->
 ## Performance panel: enable new summary details view for layout shift events
+
+_new as of Microsoft Edge Canary 131_
 
 In the **Performance** tool, adds a summary details view for layout shift events.
 <!-- todo: desc -->
