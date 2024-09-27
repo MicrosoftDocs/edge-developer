@@ -16,7 +16,13 @@ ms.date: 09/20/2024
 <!-- ====================================================================== -->
 ## Improvements to breakpoints
 
-<!-- Subtitle: Refreshed icons to help differentiate breakpoint types and the conditional breakpoint dialog alignment has been fixed.-->
+<!-- Subtitle: Refreshed icons to help differentiate breakpoint types, and the textbox width has been fixed in the UI for setting a conditional breakpoint.-->
+
+The **Sources** tool has the following improvements related to setting breakpoints for debugging.
+
+
+<!-- ------------------------------ -->
+#### Unique icons for logpoint and conditional breakpoints
 
 Logpoint and conditional breakpoints now have unique colors and icons to help you differentiate them from regular breakpoints in the line number column.  Previously, all types of breakpoints looked the same, with only the differentiating icon inline with the code.
 
@@ -28,7 +34,11 @@ After:
 
 ![New breakpoint icons](./devtools-129-images/new-breakpoints.png)
 
-The dialog that's displayed for setting a conditional breakpoint has been fixed to prevent the width of the textbox from growing and causing alignment issues.
+
+<!-- ------------------------------ -->
+#### Alignment in UI for setting a conditional breakpoint
+
+The UI that's displayed for setting a conditional breakpoint has been fixed to prevent the width of the textbox from growing and causing alignment issues.
 
 Before:
 
@@ -48,11 +58,9 @@ After:
 <!-- ------------------------------ -->
 #### Screen readers announce the "Show element in the Elements panel" button
 
-Under the **Layout** pane,<!-- todo: in the Layout tab, --> screen readers now announce the **Show element in the Elements panel** button.<!-- todo: not found in UI.  add screenshot: -->
+In the **Layout** tab, screen readers now announce the **Show element in the Elements panel** (![The "Show element in the Elements panel" icon](./devtools-129-images/show-element-icon.png)) button that's next to each element name:
 
-<!--
-![The Layout tab's "Show element in the Elements panel" button, in the Elements tool](./devtools-129-images/show-element-button.png)
--->
+![The "Show element in the Elements panel" button](./devtools-129-images/show-element-button.png)
 
 
 <!-- ------------------------------ -->
