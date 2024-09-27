@@ -129,13 +129,10 @@ Microsoft Edge 129 also includes the following updates from the Chromium project
    * [Live metrics observations](https://developer.chrome.com/blog/new-in-devtools-129#observations)
    * [Search requests in the Network track](https://developer.chrome.com/blog/new-in-devtools-129#perf-network-search)
    * [See stack traces of performance.mark and performance.measure calls](https://developer.chrome.com/blog/new-in-devtools-129#extension-stack-traces)
-* [Use test address data in the Autofill panel](https://developer.chrome.com/blog/new-in-devtools-129#autofill-addresses)
 * [Elements panel improvements](https://developer.chrome.com/blog/new-in-devtools-129#elements)
    * [Force more states for specific elements](https://developer.chrome.com/blog/new-in-devtools-129#specific-element-states)
    * [Elements > Styles now autocompletes more grid properties](https://developer.chrome.com/blog/new-in-devtools-129#grid-autocomplete)
-* [Lighthouse 12.2.0](https://developer.chrome.com/blog/new-in-devtools-129#lighthouse)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-129#misc)
-<!-- todo: maybe delete some links -->
+
 
 
 <!-- ====================================================================== -->
