@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 129)
-description: "Updated labels for selector stats. Fixed whitespace in Activity Bar right-click menus. And more."
+description: "Unique icons for logpoint and conditional breakpoints. Aligned UI for setting a conditional breakpoint. Screen readers announce 'Show element in Elements panel' button. Menu opens when right-click DOM tree. CSS selector stats copy table fixed. Restored icons in Activity Bar. Fixed Security tool icons. Fixed device emulation. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -96,15 +96,17 @@ The icons have been restored for these tools.
 
 
 <!-- ====================================================================== -->
-## Fixed buttons and icons in the Security panel
+## Fixed buttons and icons in the Security tool
 
 <!-- Subtitle: Understand your webpage's security issues with the Security tool -->
 
-The rendering of the buttons and icons in the Security tool showed a green overlay on-top:
-![Security panel bug](./devtools-129-images/buggy-security-tool.png)
+Previously, buttons and icons in the **Security** tool had a green overlay and were not visible:
 
-This issue has been resolved.
-![Security panel fix](./devtools-129-images/fixed-security-tool.png)
+![Security tool bug](./devtools-129-images/buggy-security-tool.png)
+
+Now, buttons and icons in the **Security** tool are clearly visible:
+
+![Security tool fix](./devtools-129-images/fixed-security-tool.png)
 
 
 <!-- ====================================================================== -->

@@ -32,7 +32,7 @@
 # What's New pages ------------------------------------------------------------
             # move eleventh oldest into Archive bucket
             - name: Microsoft Edge 129
-              href: devtools-guide-chromium/whats-new/2024/08/devtools-129.md
+              href: devtools-guide-chromium/whats-new/2024/09/devtools-129.md
               displayName: What's New in DevTools (Microsoft Edge 129)  # top-of-page title
 
             - name: Microsoft Edge 128
