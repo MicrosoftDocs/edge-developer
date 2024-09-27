@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 129)
-description: "Unique icons for logpoint and conditional breakpoints. Aligned UI for setting a conditional breakpoint. Screen readers announce 'Show element in Elements panel' button. Menu opens when right-click DOM tree. CSS selector stats copy table fixed. Restored icons in Activity Bar. Fixed Security tool icons. Fixed device emulation. And more."
+description: "Unique breakpoint icons. Fixed CSS selector stats Copy table. Added Activity Bar icons. Fixed Security tool icons and device emulation. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -52,7 +52,7 @@ After:
 <!-- ====================================================================== -->
 ## Bug fixes in the Elements tool
 
-<!-- Screen readers will announce the "Show element in the Elements panel" button, and the context menu has been restored. -->
+<!-- Screen readers announce the "Show element in the Elements panel" button, and the context menu opens when right-clicking a selected text node in the DOM tree. -->
 
 
 <!-- ------------------------------ -->
@@ -64,13 +64,15 @@ In the **Layout** tab, screen readers now announce the **Show element in the Ele
 
 
 <!-- ------------------------------ -->
-#### Context menu opens when right-click DOM tree text
+#### Context menu opens when right-click a selected text node in the DOM tree
 
-Previously, the context menu didn't open after right-clicking text that's selected in the DOM tree.  This issue has been fixed; the context menu has been restored.
+Previously, the context menu didn't open after double-clicking a text node in the DOM tree to select the text node, and then right-clicking the text node.  This issue has been fixed; the context menu opens:
+
+![Right-click menu for a selected text node in the DOM tree](./devtools-129-images/context-menu-for-dom-text-node.png)
 
 
 <!-- ====================================================================== -->
-## CSS selector stats copy table works now as expected
+## CSS selector stats Copy table has same order of columns and values
 
 <!-- Subtitle: The Copy table function for CSS selector stats copies data with the values aligned with columns. -->
 
@@ -112,9 +114,9 @@ Now, buttons and icons in the **Security** tool are clearly visible:
 <!-- ====================================================================== -->
 ## Device emulation mode is fixed
 
-<!-- Subtitle: Use device emulation mode to simulate different devices. -->
+<!-- Subtitle: DevTools opens again after closing DevTools with device emulation mode still on. -->
 
-Device emulation mode had a bug where if it was turned on and then DevTools was closed, DevTools wouldn't reopen the next time.  This has been fixed; device emulation mode is working correctly.
+Device emulation mode had a bug where if it was turned on and then DevTools was closed, DevTools wouldn't reopen the next time you tried to open it.  This has been fixed; device emulation mode is working correctly.
 
 
 <!-- ====================================================================== -->
