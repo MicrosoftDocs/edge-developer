@@ -14,7 +14,7 @@ ms.date: 09/20/2024
 
 
 <!-- ====================================================================== -->
-## Improvements to breakpoints
+## Improvements for breakpoints
 
 <!-- Subtitle: Refreshed icons to help differentiate breakpoint types, and the textbox width has been fixed in the UI for setting a conditional breakpoint.-->
 
@@ -72,13 +72,13 @@ Previously, the context menu didn't open after double-clicking a text node in th
 
 
 <!-- ====================================================================== -->
-## CSS selector stats Copy table has same order of columns and values
+## CSS selector stats "Copy table" has same order of columns and values
 
-<!-- Subtitle: The Copy table function for CSS selector stats copies data with the values aligned with columns. -->
+<!-- Subtitle: The 'Copy table' command for CSS selector stats copies data with the values aligned with columns. -->
 
-The **Copy table** function has been fixed to correctly copy the data in the order that the columns and values appear.
+In the **Selector stats** tab of the **Performance** tool, the **Copy table** menuitem command has been fixed to correctly copy the data in the order that the columns and values appear.
 
-![Selector stats copy table function](./devtools-129-images/selector-stats-copy.png)
+![Selector stats "Copy table" command](./devtools-129-images/selector-stats-copy.png)
 
 
 <!-- ====================================================================== -->
@@ -86,7 +86,7 @@ The **Copy table** function has been fixed to correctly copy the data in the ord
 
 <!-- Subtitle: Icons in the Activity Bar help you quickly identify the tools. -->
 
-Previously, the following tools were missing icons in the **Activity Bar**:
+In recent releases, in the **Activity Bar** tabs, the icons were missing for the following tools:
 * **Changes**
 * **Network conditions**
 * **Network request blocking**
@@ -94,7 +94,7 @@ Previously, the following tools were missing icons in the **Activity Bar**:
 * **Quick source**
 * **Search**
 
-The icons have been restored for these tools.
+The icons have been restored in these **Activity Bar** tabs.
 
 
 <!-- ====================================================================== -->
@@ -102,7 +102,7 @@ The icons have been restored for these tools.
 
 <!-- Subtitle: Understand your webpage's security issues with the Security tool -->
 
-Previously, buttons and icons in the **Security** tool had a green overlay and were not visible:
+Previously, buttons and icons in the **Security** tool had a square overlay and were not readable:
 
 ![Security tool bug](./devtools-129-images/buggy-security-tool.png)
 
