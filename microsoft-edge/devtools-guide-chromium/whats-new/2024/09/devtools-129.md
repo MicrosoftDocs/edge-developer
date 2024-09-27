@@ -86,7 +86,7 @@ The **Copy table** function has been fixed to correctly copy the data in the ord
 
 <!-- Subtitle: Icons in the Activity Bar help you quickly identify the tools. -->
 
-Previously, the following tools were missing icons in the Activity Bar:
+Previously, the following tools were missing icons in the **Activity Bar**:
 * **Changes**
 * **Network conditions**
 * **Network request blocking**
