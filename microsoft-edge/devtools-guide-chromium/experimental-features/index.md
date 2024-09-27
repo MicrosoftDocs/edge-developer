@@ -352,7 +352,7 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Deprecate CSS <length> authoring tool in the Styles tab
+## Deprecate CSS \<length\> authoring tool in the Styles tab
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Not applicable for Microsoft Edge.  Selecting or clearing this checkbox has no effect.
