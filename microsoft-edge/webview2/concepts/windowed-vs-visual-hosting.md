@@ -102,6 +102,10 @@ In Window-to-Visual hosting and Visual hosting, a _visual_ is a basic graphical 
 
 Enabling Window to Visual hosting mode removes support for Windows Shell Handwriting within the WebView2.
 
+See also:
+* [Ink input](/windows/win32/input_ink/input-ink-portal) - Windows App Development > User Interaction.
+* [shellhandwriting.h header](/windows/win32/api/shellhandwriting/) - Win32 API.
+
 
 <!-- ------------------------------ -->
 #### APIs for Window to Visual hosting
@@ -169,3 +173,5 @@ External:
 * [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps) - Windows App Development.
 * [Basic concepts](/windows/win32/directcomp/basic-concepts) - Windows App Development > DirectComposition.
 * [Composition visual](/windows/uwp/composition/composition-visual-tree) - Windows App Development > UWP.
+* [Ink input](/windows/win32/input_ink/input-ink-portal) - Windows App Development > User Interaction.
+* [shellhandwriting.h header](/windows/win32/api/shellhandwriting/) - Win32 API.
