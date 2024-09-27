@@ -486,9 +486,6 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 129.
 
 
-
-~todo 
-
 <!-- ====================================================================== -->
 ## Enable background page selector (for prerendering)
 <!-- was:
