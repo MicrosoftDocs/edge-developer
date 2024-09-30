@@ -611,7 +611,7 @@ Status:
 
 _new as of Microsoft Edge Stable 129_
 
-In the **Performance** tool, gathers server timing data and displays that data.
+Shows a **Server Timings** track in the **Main** section of the **Performance** tool, to display server timing events sent by your HTTP server. To learn more, see [Server timing](https://developer.mozilla.org/docs/Web/API/Performance_API/Server_timing) at MDN Web Docs.
 <!-- todo: desc -->
 
 See also:
@@ -991,7 +991,7 @@ Status:
 
 _new as of Microsoft Edge Stable 129_
 
-In the **Performance** tool, adds the Performance Insights UI.
+In the **Performance** tool, adds the **Insights** sidebar tab, when viewing a recorded performance profile. The **Insights** sidebar tab provides useful information about the profile, such as the various **Largest Contentful Paint** phases and the list of **Render blocking requests**.
 <!-- todo: desc -->
 
 See also:
@@ -1007,7 +1007,7 @@ Status:
 
 _new as of Microsoft Edge Canary 131_
 
-In the **Performance** tool, adds a summary details view for layout shift events.
+Shows a **Layout shifts** track in the **Main** section of the **Performance** tool, when viewing a recorded profile. The **Layout shifts** track displays information about when layout shifts occur and about which elements are shifted. Unexpected layout shifts can negatively impact the user experience on a webpage.
 <!-- todo: desc -->
 
 See also:
