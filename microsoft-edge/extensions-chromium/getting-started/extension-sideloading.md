@@ -1,18 +1,22 @@
 ---
 title: Sideload an extension
-description: How to test an extension by sideloading it in the browser.
+description: Test an extension locally by sideloading it, so that it's locally installed in your instance of Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 09/25/2024
+ms.date: 09/30/2024
 ---
 # Sideload an extension
 
-During development, you can use Microsoft Edge browser to run and debug your extension safely.  By sideloading your extension locally in your browser, you can run and test your extension without changing any settings. This helps you test new extensions safely.
+To test an extension quickly and safely, sideload the extension in your own copy of Microsoft Edge, which means locally installing the extension.  You can then run and test your extension without changing any settings.<!-- todo: what sort of settings are meant?  what is the contrasted approach? -->
 
-To sideload an extension into Microsoft Edge:
+
+<!-- ====================================================================== -->
+## Locally installing and running an extension
+
+To sideload an extension into Microsoft Edge, so that it's locally installed in your browser for testing:
 
 1. In the upper right of Microsoft Edge, click the **Extensions** (![Extensions icon](./extension-sideloading-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**:
 
@@ -28,7 +32,9 @@ To sideload an extension into Microsoft Edge:
 
 1. When installing your extension for the first time, click the **Load unpacked** button.  The **Select the extension directory** dialog opens.
 
-1. Select the directory that contains your extension source files, and then click the **Select Folder** button.  Your extension is installed in your browser, similar to extensions that are installed from the store:
+1. Select the directory that contains your extension source files, and then click the **Select Folder** button.  For example, select the directory for the "NASA picture of the day viewer" demo from [Create an extension tutorial, part 1](./part1-simple-extension.md).
+
+   Your extension is installed in your browser, similar to extensions that are installed from the store:
 
    ![Installed extensions page, showing a sideloaded extension](./extension-sideloading-images/part1-installed-extension.png)
 
@@ -44,9 +50,9 @@ To sideload an extension into Microsoft Edge:
 
 
 <!-- ====================================================================== -->
-## Updating an extension
+## Locally updating an extension
 
-To update a sideloaded extension:
+To update an extension that's been installed locally (sideloaded) in your browser:
 
 1. Make any required changes to the extension.
 
@@ -56,10 +62,17 @@ To update a sideloaded extension:
 
 
 <!-- ====================================================================== -->
-## Removing an extension
+## Locally removing an extension
 
-To remove the extension from your browser:
+To remove an extension that's been installed locally (sideloaded) in your browser:
 
 1. Go to `edge://extensions`.
 
 1. On the extension, click **Remove**.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article -->
+
+* [Create an extension tutorial, part 1](./part1-simple-extension.md)
