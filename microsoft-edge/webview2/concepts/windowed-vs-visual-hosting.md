@@ -116,13 +116,11 @@ For a list of APIs that can be used when configuring WebView2 Window to Visual h
 <!-- ====================================================================== -->
 ## Visual hosting: For more granular control over layout
 
-When using _Visual hosting_, your host app receives spatial input (such as mouse or touch input) from the user, and forwards this input to the WebView2 control.
+When using _Visual hosting_, your host app receives spatial input (such as mouse or touch input) from the user, and forwards this input to the WebView2 control. In addition to the window management described for Windowed hosting, Visual hosting places additional requirements on the app to manage the composition-based rendering and route input.
 
-In Visual hosting, WebView2 content is embedded at a given location in the application. This location must handle how content will scale and behave when the user interacts with the application.<!-- todo: What content is this referring to, the WebView2 content?  What does it mean to scale when the user interacts with the application - such as a gesture? --> In addition to the window management described for Windowed hosting, Visual hosting requires the app to manage the composition-based rendering when it receives any user interactions.<!-- todo: What does it mean to "manage the ... rendering"? Which user interactions would cause this, or what are the scenarios? -->
+Because the WebView2 is part of a visual tree, by default its contents will be rendered at different scales based on the scales of its ancestor visuals. For instance if a WebView2's ancestor visual is scaled 2x, then the WebView2 contents will also be rendered at 2x scale. But because the WebView2 is not scaling its own contents, they will be rendered blurrily. This can be resolved using the Rasterization Scale APIs. The app would disable default visual scaling on the WebView2 and then use the Rasterization Scale APIs to apply the intended visual scaling. This would result in the contents rendering clearly at the correct scale.
 
-If your WebView2 app uses Visual hosting, inputs are routed to the app's `HWND` and must be configured to send the spatial input (such as mouse, touch, or pen) based on positions, _not_ based on what currently has focus, such as a keyboard.
-
-If your WebView2 app uses Visual hosting, spatial inputs (such as mouse, touch, or pen) are sent to the app's `HWND`, not sent directly to the WebView2. The app should forward this spatial input to the WebView2 if the position of the input is over the WebView2, _not_ based on what currently has focus.
+If your WebView2 app uses Visual hosting, no spatial inputs (such as mouse, touch, or pen) are sent to the WebView2 without app management. Input is sent to the app's `HWND`, and the app is responsible for forwarding this spatial input to the WebView2 if the input's position is over the WebView2. The app is also responsible for any necessary transformations of input position into the WebView2's coordinate space.
 
 See also:
 * [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps) in Windows > App development docs.
@@ -133,12 +131,7 @@ See also:
 
 Visual hosting allows for (and requires) more granular control of layout.  When using this approach, the app needs specific handling of window management and rendering APIs.
 
-For example, when the user resizes the window, you must define how the WebView2 control scales in relation to the whole webpage, such as making the WebView2 scale twice as much as the app.
-<!-- todo:
-why would resizing require scaling the WebView2?
-what does "whole webpage" mean here?
-if scaling is required, why is the WebView2 scaling twice as much?
--->
+For example, if a user action causes the WebView2 visual tree to scale, the app must adjust the WebView2's scale to render correctly relative to its parent visuals.
 
 
 <!-- ------------------------------ -->
