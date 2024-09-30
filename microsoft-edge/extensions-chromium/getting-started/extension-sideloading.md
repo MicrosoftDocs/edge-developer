@@ -10,7 +10,7 @@ ms.date: 09/30/2024
 ---
 # Sideload an extension to install and test it locally
 
-To test an extension quickly and safely, sideload the extension in your own copy of Microsoft Edge, which means locally installing the extension.  You can then run and test your extension without changing any settings.<!-- todo: what sort of settings are meant?  what is the contrasted approach? -->
+To test an extension quickly and safely, sideload the extension in your own copy of Microsoft Edge, which means locally installing the extension.  You can then run and test your extension without having to upload the extension to the Microsoft Edge Add-ins website (the _store_) and then install the extension from there.
 
 
 <!-- ====================================================================== -->
