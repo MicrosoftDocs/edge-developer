@@ -89,7 +89,7 @@ conceptualContent:
 
             - itemType: reference
               text: Deploy to macOS
-              url: /intune/apps/apps-edge-macos
+              url: /mem/intune/apps/apps-edge-macos
         # Card
         - title: Configure Microsoft Edge
           links:
