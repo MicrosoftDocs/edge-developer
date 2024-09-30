@@ -152,7 +152,7 @@ Create a `HTML` file to run when the user launches your extension.  When the use
 <!-- ====================================================================== -->
 ## Next steps
 
-That's everything you need to develop a working extension.  Next, sideload (install) and run (test) the extension; see [Sideload an extension](extension-sideloading.md).
+That's everything you need to develop a working extension.  Next, sideload (install) and run (test) the extension; see [Sideload an extension to install and test it locally](extension-sideloading.md).
 
 
 <!-- ====================================================================== -->
@@ -160,5 +160,5 @@ That's everything you need to develop a working extension.  Next, sideload (inst
 <!-- all links in article -->
 
 * [Create an extension tutorial, part 2](./part2-content-scripts.md)<!-- not linked in present article -->
-* [Sideload an extension](extension-sideloading.md)
+* [Sideload an extension to install and test it locally](extension-sideloading.md)
 * [MicrosoftEdge-Extensions repo > extension-getting-started-part1](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1) - source code of the completed extension that you build in this tutorial.

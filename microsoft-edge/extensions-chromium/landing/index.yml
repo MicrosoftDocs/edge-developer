@@ -53,7 +53,7 @@ landingContent:
           - text: Create an extension tutorial, part 2
             url: ../getting-started/part2-content-scripts.md
 
-          - text: Sideload an extension
+          - text: Sideload an extension to install and test it locally
             url: ../getting-started/extension-sideloading.md
 
       - linkListType: whats-new
