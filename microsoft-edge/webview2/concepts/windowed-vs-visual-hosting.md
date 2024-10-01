@@ -143,7 +143,7 @@ For a list of APIs that can be used when configuring WebView2 in a Visual hostin
 <!-- ====================================================================== -->
 ## Compatibility and constraints
 
-Key compatibility limitations include the operating system and rendering in framework and non-framework apps. <!-- todo: what are the constraints about rendering, in framework and non-framework apps? -->
+Key compatibility limitations include the operating system and rendering in framework and non-framework apps.
 
 
 <!-- ------------------------------ -->
@@ -152,6 +152,12 @@ Key compatibility limitations include the operating system and rendering in fram
 All hosting modes are supported wherever WebView2 is supported; that is, Windows 10 and later, and certain Windows Server versions.  Windows 7, 8 and 8.1 are no longer supported; Windows 7 and Windows 8 only support Windowed hosting, not Visual hosting.
 
 See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
+
+
+<!-- ------------------------------ -->
+#### Framework Constraints
+
+`CreateCoreWebView2CompositionController` does not support WinAppSDK visuals (Microsoft.UI.Composition).
 
 
 <!-- ====================================================================== -->
