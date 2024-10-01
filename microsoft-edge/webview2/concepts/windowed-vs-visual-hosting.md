@@ -173,7 +173,7 @@ See also:
 <!-- ------------------------------ -->
 #### Framework constraints
 
-`CreateCoreWebView2CompositionController` does not support WinAppSDK Visuals; that is, Visual objects in the `Microsoft.UI.Composition` namespace, described in [Enhance UI with the Visual layer (Windows App SDK/WinUI 3)](https://learn.microsoft.com/windows/apps/windows-app-sdk/composition).
+`CreateCoreWebView2CompositionController` does not support WinAppSDK Visuals; that is, Visual objects in the `Microsoft.UI.Composition` namespace, described in [Enhance UI with the Visual layer (Windows App SDK/WinUI 3)](/windows/apps/windows-app-sdk/composition).
 
 
 <!-- ====================================================================== -->
