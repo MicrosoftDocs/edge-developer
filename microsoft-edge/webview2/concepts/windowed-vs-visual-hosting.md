@@ -1,6 +1,6 @@
 ---
 title: Windowed vs. Visual hosting of WebView2
-description: Deciding whether to have your app use Windowed, Window to Visual, or Visual hosting of the WebView2 control.  Hosting WebView2 in windowed or visual environments.
+description: Deciding whether to have your app use Windowed, Window to Visual, or Visual hosting of the WebView2 control.  Hosting WebView2 in Windowed or Visual environments.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -80,7 +80,7 @@ Window to Visual hosting does not require you to use WebView2 Visual hosting API
 
 To enable Window to Visual hosting, the environment variable `COREWEBVIEW2_FORCED_HOSTING_MODE` must be set to the value `COREWEBVIEW2_HOSTING_MODE_WINDOW_TO_VISUAL` before initializing your WebView2.
 
-In Window-to-Visual hosting and Visual hosting, a _visual_ is a basic graphical unit that can be used to compose graphical experiences on Windows. The Windows graphics APIs that expose this functionality and are relevant to WebView2 are `DirectComposition` and `Windows.UI.Composition`. The "visual" in "Visual hosting" can be any one of `IDCompositionVisual`, `IDCompositionTarget`, or `Windows.UI.Composition.Visual`, which are visuals that are exposed through the `DirectComposition` and `Windows.UI.Composition` APIs.  (Window to Visual hosting uses `IDCompositionVisual` specifically.)  See:
+In Window-to-Visual hosting and Visual hosting, a _Visual_ is a basic graphical unit that can be used to compose graphical experiences on Windows. The Windows graphics APIs that expose this functionality and are relevant to WebView2 are `DirectComposition` and `Windows.UI.Composition`. The "Visual" in "Visual hosting" can be any one of `IDCompositionVisual`, `IDCompositionTarget`, or `Windows.UI.Composition.Visual`, which are Visuals that are exposed through the `DirectComposition` and `Windows.UI.Composition` APIs.  (Window to Visual hosting uses `IDCompositionVisual` specifically.)  See:
 * [Basic concepts](/windows/win32/directcomp/basic-concepts) in the Windows App Development > DirectComposition docs.
 * [Composition visual](/windows/uwp/composition/composition-visual-tree) in the Windows App Development > UWP docs.
 
@@ -116,11 +116,26 @@ For a list of APIs that can be used when configuring WebView2 Window to Visual h
 <!-- ====================================================================== -->
 ## Visual hosting: For more granular control over layout
 
-When using _Visual hosting_, your host app receives spatial input (such as mouse or touch input) from the user, and forwards this input to the WebView2 control. In addition to the window management described for Windowed hosting, Visual hosting places additional requirements on the app to manage the composition-based rendering and route input.
+When using _Visual hosting_, your host app receives spatial input (such as mouse or touch input) from the user, and forwards this input to the WebView2 control.  Visual hosting requires the app to do the same window management as Windowed hosting, but has additional window management requirements regarding:
+* Scaling the contents.
+* Routing spatial inputs (such as mouse, touch, or pen).
 
-Because the WebView2 is part of a visual tree, by default its contents will be rendered at different scales based on the scales of its ancestor visuals. For instance if a WebView2's ancestor visual is scaled 2x, then the WebView2 contents will also be rendered at 2x scale. But because the WebView2 is not scaling its own contents, they will be rendered blurrily. This can be resolved using the Rasterization Scale APIs. The app would disable default visual scaling on the WebView2 and then use the Rasterization Scale APIs to apply the intended visual scaling. This would result in the contents rendering clearly at the correct scale.
 
-If your WebView2 app uses Visual hosting, no spatial inputs (such as mouse, touch, or pen) are sent to the WebView2 without app management. Input is sent to the app's `HWND`, and the app is responsible for forwarding this spatial input to the WebView2 if the input's position is over the WebView2. The app is also responsible for any necessary transformations of input position into the WebView2's coordinate space.
+<!-- ------------------------------ -->
+#### Requirements for scaling the contents
+
+Per composition-based rendering, a WebView2 control is part of a Visual tree, so by default, it's rendered at the scale of its ancestor Visual.  For example, if a WebView2's ancestor Visual is scaled 2x, then the WebView2's contents are also rendered at 2x scale.  But because the WebView2 is not scaling its own contents, they're blurry.
+
+To resolve this, the app can disable default Visual scaling on the WebView2, and instead use the Rasterization Scale APIs to apply the intended Visual scaling.  This results in the WebView2's contents rendering at the correct scale.
+
+
+<!-- ------------------------------ -->
+#### Requirements for routing spatial inputs (mouse, touch, or pen)
+
+If your WebView2 app uses Visual hosting, no spatial inputs (such as mouse, touch, or pen) are sent to the WebView2 control, unless the app manages such input.  Input is sent to the app's `HWND`, and the app is responsible for forwarding this spatial input to the WebView2, if the input's position is over the WebView2.
+
+The app is also responsible for any necessary transformation of input positions into the WebView2's coordinate space.
+
 
 See also:
 * [Using the Visual layer in desktop apps](/windows/apps/desktop/modernize/visual-layer-in-desktop-apps) in Windows > App development docs.
@@ -131,7 +146,7 @@ See also:
 
 Visual hosting allows for (and requires) more granular control of layout.  When using this approach, the app needs specific handling of window management and rendering APIs.
 
-For example, if a user action causes the WebView2 visual tree to scale, the app must adjust the WebView2's scale to render correctly relative to its parent visuals.
+For example, if a user action causes the WebView2's Visual tree to scale, the app must adjust the WebView2's scale to render correctly relative to its parent Visuals.
 
 
 <!-- ------------------------------ -->
@@ -151,13 +166,14 @@ Key compatibility limitations include the operating system and rendering in fram
 
 All hosting modes are supported wherever WebView2 is supported; that is, Windows 10 and later, and certain Windows Server versions.  Windows 7, 8 and 8.1 are no longer supported; Windows 7 and Windows 8 only support Windowed hosting, not Visual hosting.
 
-See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
+See also:
+* [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
 
 
 <!-- ------------------------------ -->
-#### Framework Constraints
+#### Framework constraints
 
-`CreateCoreWebView2CompositionController` does not support WinAppSDK visuals (Microsoft.UI.Composition).
+`CreateCoreWebView2CompositionController` does not support WinAppSDK Visuals; that is, Visual objects in the `Microsoft.UI.Composition` namespace, described in [Enhance UI with the Visual layer (Windows App SDK/WinUI 3)](https://learn.microsoft.com/windows/apps/windows-app-sdk/composition).
 
 
 <!-- ====================================================================== -->
@@ -166,6 +182,8 @@ See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft
 
 * [Overview of WebView2 features and APIs](./overview-features-apis.md)
 * [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
+<!-- omit:
+* [Enhance UI with the Visual layer (Windows App SDK/WinUI 3)](https://learn.microsoft.com/windows/apps/windows-app-sdk/composition) - Windows App Development. -->
 
 External:
 * [About Windows](/windows/win32/winmsg/about-windows) - Window management and `HWND` functionality.
