@@ -218,7 +218,7 @@ conceptualContent:
               url: ./extensions-chromium/getting-started/index.md
               itemType: overview
 
-            - text: Port a Chromium extension to Microsoft Edge
+            - text: Port a Chrome extension to Microsoft Edge
               url: ./extensions-chromium/developer-guide/port-chrome-extension.md
               itemType: overview
 
