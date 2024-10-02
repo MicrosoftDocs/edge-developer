@@ -63,6 +63,8 @@ Below is a sample updated HTML file:
 </html>
 ```
 
+Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md) to locally update the extension and then run the extension.
+
 After updating and opening the extension, a pop-up opens with a display button:
 
 ![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
@@ -148,11 +150,13 @@ Add another entry in the `manifest.json` file to declare that the image is avail
   ]
 ```
 
-You've now written the code in your `popup.js` file to send a message to the content page that is embedded on the current active tab page, but you haven't created and injected that content page.  Do that now.
+You've now written the code in your `popup.js` file to send a message to the content page that is embedded on the current active tab page.
 
 
 <!-- ====================================================================== -->
 ## Step 5: Update your `manifest.json` for new content and web access
+
+Next, you'll create and inject the content page that's embedded on the current active tab page.
 
 The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
 
@@ -207,7 +211,7 @@ Even if the browser tab has JavaScript running on it on the loaded web page, any
 <!-- ====================================================================== -->
 ## Step 6: Add the content script message listener
 
-Here is that `content-scripts\content.js` file that gets injected into every browser tab page based on your `manifest.json` `content-scripts` section:
+Here's the `content-scripts\content.js` file that gets injected into every browser tab page based on your `manifest.json` `content-scripts` section:
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -244,6 +248,8 @@ When an event is processed by the listener, the function that is the first param
 
 You've added functionality to remove the displayed image when selected.<!-- todo: check this, was numbered "8" without a period -->
 
+Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md) to locally update the extension and then run the extension.
+
 Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows:
 
 ![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
@@ -251,12 +257,6 @@ Now, when you browse to any page and select your **Extension** icon, the pop-up 
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses<!--todo: check "tab pages collapses"--> back to what was originally displayed:
 
 ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
-
-
-<!-- ====================================================================== -->
-## Step 7: Install, run, and test the extension locally
-
-* Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md), to test the extension.
 
 Congratulations!  You've created an extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.
 
