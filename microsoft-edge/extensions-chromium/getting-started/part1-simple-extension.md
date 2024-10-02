@@ -152,7 +152,7 @@ Create a `HTML` file to run when the user launches your extension.  When the use
 <!-- ====================================================================== -->
 ## Next steps
 
-That's everything you need to develop a working extension.  Next, sideload (install) and run (test) the extension; see [Sideload an extension to install and test it locally](extension-sideloading.md).
+That's everything you need to develop a working extension.  Next, install and run the extension; see [Sideload an extension to install and test it locally](extension-sideloading.md).
 
 
 <!-- ====================================================================== -->
