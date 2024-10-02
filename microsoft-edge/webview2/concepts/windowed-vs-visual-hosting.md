@@ -25,7 +25,7 @@ The different approaches for hosting the WebView2 control in your app are simila
 |---|---|---|
 | Windowed hosting | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
 | Window to Visual hosting | A combination of Windowed and Visual hosting. Similar to Windowed hosting except that WebView2 content is output to a Visual that is hosted in a window rather having content output to the window directly. | A developer experience nearly identical to Windowed hosting, but with improved DPI/scaling handling and the caveat that the Windows Shell Handwriting experience is unsupported. |
-| Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over layout.  For example, you can control the positioning of the WebView2 control in the page.  The app needs to do specific handling of window management and rendering APIs. |
+| Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over control composition.  The app needs to do specific handling of window management and rendering APIs. |
 
 These approaches have different requirements, constraints, and benefits.
 * Windowed hosting is simpler to implement than Visual hosting.
@@ -92,7 +92,7 @@ In Window-to-Visual hosting and Visual hosting, a _Visual_ is a basic graphical 
 
 * Different apps that share a WebView2 user data folder can have different integrity levels.
 
-* Different apps that share a WebView2 user data folder won't potentially cause each other to hang.
+* Different apps that share a WebView2 user data folder won't potentially cause each other to hang due to attached window input queues.
 
 * When hosting a WebView2 in a VSTO Add-in, changing monitor scale won't potentially cause the app to hang. See [VSTO Add-ins](/visualstudio/vsto/office-solutions-development-overview-vsto#vsto-add-ins) in _Office solutions development overview (VSTO)_.
 
@@ -126,7 +126,7 @@ When using _Visual hosting_, your host app receives spatial input (such as mouse
 
 Per composition-based rendering, a WebView2 control is part of a Visual tree, so by default, it's rendered at a scale that's based on the scales of all of its ancestor Visuals.  For example, if a WebView2's ancestor Visual is scaled (zoomed) 2x, then the WebView2's contents are also rendered at 2x scale.  If the WebView2's parent Visual is scaled 2x and that Visual's parent is also scaled 2x, then the WebView2 is scaled 4x.  But because the WebView2 isn't scaling its own contents, they're blurry.
 
-To resolve this, the app can undo the default Visual scaling of the WebView2, and instead use the Rasterization Scale APIs to apply the intended Visual scaling.  This results in the WebView2's contents rendering at the correct scale.
+To resolve this, the app can undo the default Visual scaling of the WebView2, and instead use the Rasterization Scale APIs to apply the intended Visual scaling.  This results in the WebView2's contents rendering at the correct scale.  See [Rasterization scale](./overview-features-apis.md#rasterization-scale) in _Overview of WebView2 features and APIs_.
 
 
 <!-- ------------------------------ -->
