@@ -74,7 +74,7 @@ For a list of APIs that can be used when configuring WebView2 for Windowed hosti
 <!-- ====================================================================== -->
 ## Window to Visual hosting: For a similar experience as Windowed hosting, with added benefits and tradeoff
 
-_Window-to-Visual hosting_ means that the WebView2 content is outputted to a Visual that is hosted in an HWND, rather than outputting content to a window directly or to a Visual directly.  By hosting content in an HWND, Window to Visual hosting is easy to use, like Windowed hosting, but by displaying content by using a Visual, Window-to-Visual hosting avoids some DPI and input issues that can result when using Windowed hosting.
+_Window-to-Visual hosting_ means that the WebView2 content is outputted to a Visual that is hosted in an HWND, rather than outputting content to a window directly or to a Visual directly.  By hosting content in an HWND, Window to Visual hosting is easy to use, in the same ways as Windowed hosting.  But by displaying content by using a Visual, Window-to-Visual hosting avoids some DPI and input issues that can result when using Windowed hosting.
 
 Window to Visual hosting doesn't require you to use the WebView2 Visual hosting APIs.
 
