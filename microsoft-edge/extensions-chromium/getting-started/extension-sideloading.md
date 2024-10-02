@@ -32,7 +32,7 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
 
 1. When installing your extension for the first time, click the **Load unpacked** button.  The **Select the extension directory** dialog opens.
 
-1. Select the directory that contains your extension source files, and then click the **Select Folder** button.  For example, select the directory for the "NASA picture of the day viewer" demo from [Create an extension tutorial, part 1](./part1-simple-extension.md).
+1. Select the directory that contains your extension source files, and then click the **Select Folder** button.  For example, select the directory for the "NASA picture of the day viewer" demo from [Create an extension tutorial, part 1 (create a basic extension)](./part1-simple-extension.md).
 
    Your extension is installed in your browser, similar to extensions that are installed from the store:
 
@@ -75,4 +75,5 @@ To remove an extension that's been installed locally (sideloaded) in your browse
 ## See also
 <!-- all links in article -->
 
-* [Create an extension tutorial, part 1](./part1-simple-extension.md)
+* [Create an extension tutorial, part 1 (create a basic extension)](./part1-simple-extension.md)
+* [Create an extension tutorial, part 2 (add JavaScript)](./part2-content-scripts.md)

@@ -47,10 +47,10 @@ landingContent:
           - text: Extension concepts and architecture
             url: ../getting-started/index.md
 
-          - text: Create an extension tutorial, part 1
+          - text: Create an extension tutorial, part 1 (create a basic extension)
             url: ../getting-started/part1-simple-extension.md
 
-          - text: Create an extension tutorial, part 2
+          - text: Create an extension tutorial, part 2 (add JavaScript)
             url: ../getting-started/part2-content-scripts.md
 
           - text: Sideload an extension to install and test it locally

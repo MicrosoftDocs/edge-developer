@@ -1,5 +1,5 @@
 ---
-title: Create an extension tutorial, part 2
+title: Create an extension tutorial, part 2 (add JavaScript)
 description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 09/24/2024
 ---
-# Create an extension tutorial, part 2
+# Create an extension tutorial, part 2 (add JavaScript)
 
 To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).
 
@@ -20,7 +20,7 @@ This tutorial covers the following extension technologies:
 
 You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that image of stars to the content page.  This image is now embedded in the extension and inserted into the active browser tab. Here are the steps.
 
-These steps require that you complete the initial extension package steps, in [Create an extension tutorial, part 1](./part1-simple-extension.md).
+These steps require that you complete the initial extension package steps, in [Create an extension tutorial, part 1 (create a basic extension)](./part1-simple-extension.md).
 
 
 <!-- ====================================================================== -->
@@ -131,8 +131,6 @@ if (sendMessageId) {
 ## Step 4: Make your `stars.jpeg` available from any browser tab
 
 To make `images/stars.jpeg` available from any browser tab, you must use the `chrome.runtime.getURL` API.
-
-Note: If you are using Manifest V2, then instead use `chrome.extension.getURL`.  That extra prefix is returned by `getURL` with the image attached, and looks something like the following: ```httpextension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg```
 
 The reason is that you're injecting the image using the `src` attribute of the `img` element into the content page.  The content page is running on a unique thread that isn't the same as the thread running the extension.  You must expose the static image file as a web asset for it to work correctly.
 
@@ -258,5 +256,6 @@ Congratulations!  You've created an extension that successfully sends a message 
 ## See also
 <!-- all links in article -->
 
-* [Create an extension tutorial, part 1](./part1-simple-extension.md)
+* [Create an extension tutorial, part 1 (create a basic extension)](./part1-simple-extension.md)
+* [Sideload an extension to install and test it locally](extension-sideloading.md)
 * [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) - the completed extension package source for Part 2 of the tutorial.

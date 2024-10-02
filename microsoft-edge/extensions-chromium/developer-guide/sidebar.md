@@ -316,8 +316,8 @@ See [Types](https://developer.chrome.com/docs/extensions/reference/sidePanel/#ty
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
 * [Declare API permissions in the manifest](../developer-guide/declare-permissions.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
-* [Create an extension tutorial, part 1](../getting-started/part1-simple-extension.md)
-* [Create an extension tutorial, part 2](../getting-started/part2-content-scripts.md)
+* [Create an extension tutorial, part 1 (create a basic extension)](../getting-started/part1-simple-extension.md)
+* [Create an extension tutorial, part 2 (add JavaScript)](../getting-started/part2-content-scripts.md)
 
 
 <!-- ====================================================================== -->

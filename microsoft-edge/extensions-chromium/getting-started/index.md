@@ -72,4 +72,4 @@ An extension provides opt-in permissions at install time.  You specify the exten
 <!-- ====================================================================== -->
 ## Next steps
 
-For information on getting started with your extension, see [Create an extension tutorial, part 1](part1-simple-extension.md).
+For information on getting started with your extension, see [Create an extension tutorial, part 1 (create a basic extension)](part1-simple-extension.md).

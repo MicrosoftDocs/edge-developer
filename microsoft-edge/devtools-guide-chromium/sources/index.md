@@ -187,7 +187,7 @@ When the debugger steps into code that you don't recognize, you might want to ad
 
 See also:
 * [Content scripts](https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts)
-* [Create an extension tutorial, part 2](../../extensions-chromium/getting-started/part2-content-scripts.md)
+* [Create an extension tutorial, part 2 (add JavaScript)](../../extensions-chromium/getting-started/part2-content-scripts.md)
 
 
 <!-- ------------------------------ -->
