@@ -15,14 +15,6 @@ within h2 sections, format as numbered action step lists
 walk through steps
 -->
 
-<!-- inventory of code listings: -->
-<!-- filename popup.html (complete) -->
-<!-- filename popup.js (initial) -->
-<!-- filename popup.js (complete) -->
-<!-- filename manifest.json (portion) -->
-<!-- filename manifest.json (complete) -->
-<!-- filename content.js (complete) -->
-
 In Part 1 of this tutorial, you create a simple static extension, that displays a single image.  In Part 2 of this tutorial, you add JavaScript code to switch which image is displayed.  You update the pop-up menu to replace the static stars image with a title and a standard HTML button.  That button, when clicked, passes that image of stars to the content page.  This image is now embedded in the extension and inserted into the active browser tab.
 
 Part 2 covers the following extension technologies:
@@ -50,8 +42,7 @@ In the popup folder where you created the `popup.html` file, you'll do the follo
 
 Below is the updated sample HTML file:
 
-<!-- filename popup.html (complete) -->
-`\popup\popup.html` (complete):
+`/popup/popup.html` (complete):
 
 ```html
 <!DOCTYPE html>
@@ -105,8 +96,7 @@ Each tab page (and extension) runs in its own thread. In a step below, you'll cr
 
 Create the `popup/popup.js` file, and then add the following code in that file.  This code sends a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up **Display** button:
 
-<!-- filename popup.js (initial) -->
-`popup/popup.js` (initial):
+`/popup/popup.js` (initial):
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -127,8 +117,7 @@ To send a unique ID to assign to the inserted image, a couple different approach
 
 The following code outlines the updated code in `popup/popup.js`.<!-- todo: state whether this is the complete updated code listing for the final version of popup.js -->  You also pass in the current tab ID, which is used later in this article:
 
-<!-- filename popup.js (complete) -->
-`popup/popup.js` (complete):
+`/popup/popup.js` (complete):
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -167,8 +156,7 @@ The reason is that you're injecting the image using the `src` attribute of the `
 
 Add another entry in the `manifest.json` file to declare that the image is available to all browser tabs.  That entry is as follows (you should see it in the full `manifest.json` file below when you add the content script declaration coming up):
 
-<!-- filename manifest.json (portion) -->
-`manifest.json` (portion):
+`/manifest.json` (portion):
 
 ```json
 "web_accessible_resources": [
@@ -189,8 +177,7 @@ Next, you'll create and inject the content page that's embedded on the current a
 
 The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
 
-<!-- filename manifest.json (complete) -->
-`manifest.json` (complete):
+`/manifest.json` (complete):
 
 ```json
 {
@@ -245,8 +232,7 @@ Even if the browser tab has JavaScript running on it on the loaded web page, any
 
 Here's the `content-scripts\content.js` file that gets injected into every browser tab page based on the `content-scripts` section in `manifest.json`:
 
-<!-- filename content.js (complete) -->
-`content-scripts\content.js` (complete):
+`/content-scripts/content.js` (complete):
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
