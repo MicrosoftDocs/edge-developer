@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 09/25/2024
+ms.date: 10/02/2024
 ---
 # Tutorial part 1: Create a simple extension
 

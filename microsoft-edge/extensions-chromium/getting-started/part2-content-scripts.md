@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 09/24/2024
+ms.date: 10/02/2024
 ---
 # Tutorial part 2: Add JavaScript to the extension
 
@@ -260,9 +260,10 @@ Now, when you browse to any page and select your **Extension** icon, the pop-up 
 
 ![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
 
-When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses<!--todo: check "tab pages collapses"--> back to what was originally displayed:
+When you click the **Display** button, you get what is below.<!-- todo: specify behavior -->  If you click the `stars.jpeg` image, that image element is removed and the tab page collapses back to what was originally displayed:
 
 ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
+<!-- todo: move png to before the previous sentence? -->
 
 Congratulations!  You've created an extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.
 
