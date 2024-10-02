@@ -10,20 +10,26 @@ ms.date: 09/24/2024
 ---
 # Tutorial part 2: Add JavaScript to the extension
 
-<!-- todo: within h2 sections, format as numbered action step lists -->
-<!-- todo: add testing steps where appropriate, linking to [Sideload an extension to install and test it locally](extension-sideloading.md) -->
+<!-- todo:
+within h2 sections, format as numbered action step lists
+walk through steps
+-->
 
-To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).
+In Part 1 of this tutorial, you create a simple static extension, that displays a single image.  In Part 2 of this tutorial, you add JavaScript code to switch which image is displayed.  You update the pop-up menu to replace the static stars image with a title and a standard HTML button.  That button, when clicked, passes that image of stars to the content page.  This image is now embedded in the extension and inserted into the active browser tab.
 
-This tutorial covers the following extension technologies:
-*   Injecting JavaScript libraries into an extension.
-*   Exposing extension assets to browser tabs.
-*   Including content pages in existing browser tabs.
-*   Having content pages listen for messages from pop-ups and respond.
+Part 2 covers the following extension technologies:
+*  Injecting JavaScript libraries into an extension.
+*  Exposing extension assets to browser tabs.
+*  Including content pages in existing browser tabs.
+*  Having content pages listen for messages from pop-ups and respond.
 
-You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that image of stars to the content page.  This image is now embedded in the extension and inserted into the active browser tab. Here are the steps.
+To use this article, first do the steps in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).
 
-These steps require that you complete the initial extension package steps, in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).
+If you want to test out the completed extension that you will build in this tutorial, or view its finished code, either:
+* Clone the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use repo directory `/extension-getting-started-part2/extension-getting-started-part2`.
+* Download the source code from the repo directory [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).
+
+Then you can install and run the finished extension that's in the repo, per [Sideload an extension to install and test it locally](extension-sideloading.md).
 
 
 <!-- ====================================================================== -->

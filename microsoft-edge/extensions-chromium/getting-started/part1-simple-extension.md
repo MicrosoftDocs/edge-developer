@@ -14,15 +14,21 @@ The goal for this tutorial is to build a Microsoft Edge extension, starting with
 
 ![The simple extension running](./part1-simple-extension-images/extension-running.png)
 
-In this tutorial, you'll learn how to create an extension by:
+In Part 1 of the tutorial, you create a simple static extension, that displays a single image.  In Part 2 of the tutorial, you add JavaScript code to switch which image is displayed.
 
-*   Creating a `manifest.json` file.
-*   Adding icons.
-*   Opening a default pop-up dialog.
+In this Part 1 tutorial, you'll learn how to create a simple extension by doing the following:
+1. Create a manifest.json file.
+1. Add icons for launching the extension.
+1. Open a default pop-up dialog.
+1. Install and test the extension.
 
-If you want to test out the completed extension that you are building in this tutorial, either:
+These steps are detailed below.
+
+If you want to test out the completed extension that you will build in this tutorial, or view its finished code, either:
 * Clone the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use repo directory `/extension-getting-started-part1/`.
 * Download the source code from the repo directory [MicrosoftEdge-Extensions repo > extension-getting-started-part1](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1).
+
+Then you can install and run the finished extension that's in the repo, per [Sideload an extension to install and test it locally](extension-sideloading.md).
 
 
 <!-- ====================================================================== -->
@@ -40,10 +46,10 @@ Every extension package must have a `manifest.json` file at the root.  The manif
         "description": "An extension to display the NASA picture of the day."
     }
     ```
-    
+
 
 <!-- ====================================================================== -->
-## Step 2: Add icons
+## Step 2: Add icons for launching the extension
 
 1.  Create an `icons` directory in your project, in the same directory as the manifest file, to store the icon image files.  The icons are used for the background image of the button that users select to launch the extension.
 
