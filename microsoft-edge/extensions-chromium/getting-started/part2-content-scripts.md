@@ -15,6 +15,14 @@ within h2 sections, format as numbered action step lists
 walk through steps
 -->
 
+<!-- inventory of code listings: -->
+<!-- filename popup.html (complete) -->
+<!-- filename popup.js (initial) -->
+<!-- filename popup.js (complete) -->
+<!-- filename manifest.json (portion) -->
+<!-- filename manifest.json (complete) -->
+<!-- filename content.js (complete) -->
+
 In Part 1 of this tutorial, you create a simple static extension, that displays a single image.  In Part 2 of this tutorial, you add JavaScript code to switch which image is displayed.  You update the pop-up menu to replace the static stars image with a title and a standard HTML button.  That button, when clicked, passes that image of stars to the content page.  This image is now embedded in the extension and inserted into the active browser tab.
 
 Part 2 covers the following extension technologies:
@@ -37,12 +45,16 @@ Then you can install and run the finished extension that's in the repo, per [Sid
 
 In the popup folder where you created the `popup.html` file, you'll do the following:
 1. Add tagging that displays a title with a button.
-1. Include a reference to an empty JavaScript file `popup.js`.
+1. Include a reference to a JavaScript file, `popup.js`.
 1. Program that button.
 
-Below is a sample updated HTML file:
+Below is the updated sample HTML file:
+
+<!-- filename popup.html (complete) -->
+`\popup\popup.html` (complete):
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -62,7 +74,7 @@ Below is a sample updated HTML file:
     </head>
     <body>
         <h1>Display the NASA picture of the day</h1>
-        <h2>(select the image to remove)</h2>
+        <h2>(click the image to remove it)</h2>
         <button id="sendmessageid">Display</button>
         <script src="popup.js"></script>
     </body>
@@ -79,17 +91,22 @@ After updating and opening the extension, a pop-up opens with a display button:
 
 
 <!-- ====================================================================== -->
-## Step 2: Update popup.html to display image at the top of the browser tab
+## Step 2: Update the webpage to display the image at the top of the browser tab
 
-After adding the button, the next task is to make it bring up the `images/stars.jpeg` image file at the top of the active tab page.
+After adding the button, the next task will be to make the button display the `images/stars.jpeg` image file at the top of the active tab page.
 
-Each tab page (and extension) runs in its own thread. Create a content script that is injected into the tab page.  Then, send a message from your pop-up to that content script running on the tab page. The content script will receive the message, which describes which image should be displayed.
+<!-- todo: what code is added in popup.html?  does the h2 heading literally mean revise the content of file popup.html?  or, send data to the webpage? -->
+
+Each tab page (and extension) runs in its own thread. In a step below, you'll create a content script that is injected into the tab page.  The injected script will send a message from your pop-up to that content script that's running on the tab page.  The content script will receive the message, which describes which image should be displayed.
 
 
 <!-- ====================================================================== -->
 ## Step 3: Create the pop-up JavaScript to send a message
 
-Create the `popup/popup.js` file and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up **Display** button:
+Create the `popup/popup.js` file, and then add the following code in that file.  This code sends a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up **Display** button:
+
+<!-- filename popup.js (initial) -->
+`popup/popup.js` (initial):
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -105,10 +122,13 @@ In the `onclick` event, find the current browser tab.  Then, use the `chrome.tab
 In that message, you must include the URL to the image you want to display.  Make sure that you send a unique ID to assign to the inserted image.
 
 To send a unique ID to assign to the inserted image, a couple different approaches are possible:
-*  Approach 1: Let the content insertion JavaScript generate that image ID.  We won't use that approach here, for reasons that become apparent later.
+*  Approach 1: Let the content insertion JavaScript generate that image ID.  We won't use that approach here, for reasons that become apparent later.<!-- todo: summarize reason here -->
 *  Approach 2: Generate that unique ID here in `popup.js`, and then pass that ID to the not-yet-created content script.  We'll use this approach.
 
-The following code outlines the updated code in `popup/popup.js`.  You also pass in the current tab ID, which is used later in this article:
+The following code outlines the updated code in `popup/popup.js`.<!-- todo: state whether this is the complete updated code listing for the final version of popup.js -->  You also pass in the current tab ID, which is used later in this article:
+
+<!-- filename popup.js (complete) -->
+`popup/popup.js` (complete):
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -147,6 +167,9 @@ The reason is that you're injecting the image using the `src` attribute of the `
 
 Add another entry in the `manifest.json` file to declare that the image is available to all browser tabs.  That entry is as follows (you should see it in the full `manifest.json` file below when you add the content script declaration coming up):
 
+<!-- filename manifest.json (portion) -->
+`manifest.json` (portion):
+
 ```json
 "web_accessible_resources": [
     {
@@ -165,6 +188,9 @@ You've now written the code in your `popup.js` file to send a message to the con
 Next, you'll create and inject the content page that's embedded on the current active tab page.
 
 The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
+
+<!-- filename manifest.json (complete) -->
+`manifest.json` (complete):
 
 ```json
 {
@@ -217,7 +243,10 @@ Even if the browser tab has JavaScript running on it on the loaded web page, any
 <!-- ====================================================================== -->
 ## Step 6: Add the content script message listener
 
-Here's the `content-scripts\content.js` file that gets injected into every browser tab page based on your `manifest.json` `content-scripts` section:
+Here's the `content-scripts\content.js` file that gets injected into every browser tab page based on the `content-scripts` section in `manifest.json`:
+
+<!-- filename content.js (complete) -->
+`content-scripts\content.js` (complete):
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
