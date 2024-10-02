@@ -1,5 +1,5 @@
 ---
-title: Create an extension tutorial, part 1 (create a basic extension)
+title: Tutorial part 1: Create a simple extension
 description: Build an extension that pops up the NASA picture of the day.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 09/25/2024
 ---
-# Create an extension tutorial, part 1 (create a basic extension)
+# Tutorial part 1: Create a simple extension
 
 The goal for this tutorial is to build a Microsoft Edge extension, starting with an empty directory.  You are building an extension that pops up the NASA picture of the day, named "NASA picture of the day viewer".  In this tutorial, you'll learn how to create an extension by:
 
@@ -159,6 +159,6 @@ That's everything you need to develop a working extension.  Next, sideload (inst
 ## See also
 <!-- all links in article -->
 
-* [Create an extension tutorial, part 2 (add JavaScript)](./part2-content-scripts.md)<!-- not linked in present article -->
+* [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md)<!-- not linked in present article -->
 * [Sideload an extension to install and test it locally](extension-sideloading.md)
 * [MicrosoftEdge-Extensions repo > extension-getting-started-part1](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1) - source code of the completed extension that you build in this tutorial.

@@ -1,5 +1,5 @@
 ---
-title: Create an extension tutorial, part 2 (add JavaScript)
+title: Tutorial part 2: Add JavaScript to the extension
 description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,10 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 09/24/2024
 ---
-# Create an extension tutorial, part 2 (add JavaScript)
+# Tutorial part 2: Add JavaScript to the extension
+
+<!-- todo: within h2 sections, format as numbered action step lists -->
+<!-- todo: add testing steps where appropriate, linking to [Sideload an extension to install and test it locally](extension-sideloading.md) -->
 
 To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).
 
@@ -20,7 +23,7 @@ This tutorial covers the following extension technologies:
 
 You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that image of stars to the content page.  This image is now embedded in the extension and inserted into the active browser tab. Here are the steps.
 
-These steps require that you complete the initial extension package steps, in [Create an extension tutorial, part 1 (create a basic extension)](./part1-simple-extension.md).
+These steps require that you complete the initial extension package steps, in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).
 
 
 <!-- ====================================================================== -->
@@ -239,7 +242,7 @@ When an event is processed by the listener, the function that is the first param
 
 *   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page (along with it is event listener).
 
-8. Add functionality to remove the displayed image when selected
+You've added functionality to remove the displayed image when selected.<!-- todo: check this, was numbered "8" without a period -->
 
 Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows:
 
@@ -249,6 +252,12 @@ When you select the `Display` button, you get what is below.  If you select anyw
 
 ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
 
+
+<!-- ====================================================================== -->
+## Step 7: Install, run, and test the extension locally
+
+* Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md), to test the extension.
+
 Congratulations!  You've created an extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.
 
 
@@ -256,6 +265,6 @@ Congratulations!  You've created an extension that successfully sends a message 
 ## See also
 <!-- all links in article -->
 
-* [Create an extension tutorial, part 1 (create a basic extension)](./part1-simple-extension.md)
+* [Tutorial part 1: Create a simple extension](./part1-simple-extension.md)
 * [Sideload an extension to install and test it locally](extension-sideloading.md)
 * [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) - the completed extension package source for Part 2 of the tutorial.
