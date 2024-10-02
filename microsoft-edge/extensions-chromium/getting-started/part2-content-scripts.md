@@ -1,5 +1,5 @@
 ---
-title: Tutorial part 2: Add JavaScript to the extension
+title: "Tutorial part 2: Add JavaScript to the extension"
 description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
 author: MSEdgeTeam
 ms.author: msedgedevrel

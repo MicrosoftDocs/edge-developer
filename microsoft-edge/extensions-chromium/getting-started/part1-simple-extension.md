@@ -1,5 +1,5 @@
 ---
-title: Tutorial part 1: Create a simple extension
+title: "Tutorial part 1: Create a simple extension"
 description: Build an extension that pops up the NASA picture of the day.
 author: MSEdgeTeam
 ms.author: msedgedevrel
