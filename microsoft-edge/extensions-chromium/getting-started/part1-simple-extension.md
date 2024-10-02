@@ -10,7 +10,11 @@ ms.date: 09/25/2024
 ---
 # Tutorial part 1: Create a simple extension
 
-The goal for this tutorial is to build a Microsoft Edge extension, starting with an empty directory.  You are building an extension that pops up the NASA picture of the day, named "NASA picture of the day viewer".  In this tutorial, you'll learn how to create an extension by:
+The goal for this tutorial is to build a Microsoft Edge extension, starting with an empty directory.  You are building an extension that pops up the NASA picture of the day, named "NASA picture of the day viewer":
+
+![The simple extension running](./part1-simple-extension-images/extension-running.png)
+
+In this tutorial, you'll learn how to create an extension by:
 
 *   Creating a `manifest.json` file.
 *   Adding icons.
@@ -148,17 +152,23 @@ Create a `HTML` file to run when the user launches your extension.  When the use
     }
     ```
     
+That's everything you need to develop a simple extension.  
+
 
 <!-- ====================================================================== -->
-## Next steps
+## Step 4: Install and test the extension
 
-That's everything you need to develop a working extension.  Next, install and run the extension; see [Sideload an extension to install and test it locally](extension-sideloading.md).
+Next, install and run the extension; see [Sideload an extension to install and test it locally](extension-sideloading.md).  The simple extension runs, without any JavaScript code yet:
+
+![The simple extension running](./part1-simple-extension-images/extension-running.png)
+
+Then you can continue on to [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md)<!-- not linked in present article -->
 * [Sideload an extension to install and test it locally](extension-sideloading.md)
+* [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md)
 * [MicrosoftEdge-Extensions repo > extension-getting-started-part1](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1) - source code of the completed extension that you build in this tutorial.
