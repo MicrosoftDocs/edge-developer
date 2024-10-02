@@ -27,7 +27,7 @@ These steps require that you complete the initial extension package steps, in [T
 
 
 <!-- ====================================================================== -->
-## Step 1: Update pop-up.html to include a button
+## Step 1: Update popup.html to include a button
 
 In the popup folder where you created the `popup.html` file, you'll do the following:
 1. Add tagging that displays a title with a button.
