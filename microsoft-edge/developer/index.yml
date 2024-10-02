@@ -53,28 +53,28 @@ landingContent:
             url: ../develop-web-microsoft-edge.md
 
           - text: Microsoft Edge DevTools documentation  # DevTools landing page
-            url: ../devtools-guide-chromium/landing/index.yml
+            url: ../devtools-guide/landing/index.yml
 
           - text: Overview of DevTools  # renamed from index.md
-            url: ../devtools-guide-chromium/overview.md
+            url: ../devtools-guide/overview.md
 
       - linkListType: whats-new
         links:
           - text: What's New in Microsoft Edge DevTools
-            url: ../devtools-guide-chromium/whats-new/whats-new.md
+            url: ../devtools-guide/whats-new/whats-new.md
 
       - linkListType: how-to-guide
         links:
           - text: Command Menu
-            url: ../devtools-guide-chromium/command-menu/index.md
+            url: ../devtools-guide/command-menu/index.md
 
           - text: View and change CSS
-            url: ../devtools-guide-chromium/css/index.md
+            url: ../devtools-guide/css/index.md
 
       - linkListType: reference
         links:
           - text: Keyboard shortcuts
-            url: ../devtools-guide-chromium/shortcuts/index.md
+            url: ../devtools-guide/shortcuts/index.md
 # =============================================================================
 # Card r1c2
   - title: DevTools for Visual Studio Code
@@ -90,26 +90,26 @@ landingContent:
       - linkListType: overview
         links:
           - text: Extensions overview
-            url: ../extensions-chromium/index.md
+            url: ../extensions/index.md
 
           - text: Getting started tutorial
-            url: ../extensions-chromium/getting-started/index.md
+            url: ../extensions/getting-started/index.md
 
           - text: Port a Chromium extension to Microsoft Edge
-            url: ../extensions-chromium/developer-guide/port-chrome-extension.md
+            url: ../extensions/developer-guide/port-chrome-extension.md
       - linkListType: how-to-guide
         links:
           - text: Alternative ways to distribute an extension
-            url: ../extensions-chromium/developer-guide/alternate-distribution-options.md
+            url: ../extensions/developer-guide/alternate-distribution-options.md
 
           - text: Step-wise publishing process
-            url: ../extensions-chromium/publish/publish-extension.md
+            url: ../extensions/publish/publish-extension.md
 
           - text: Register as a Microsoft Edge extension developer
-            url: ../extensions-chromium/publish/create-dev-account.md
+            url: ../extensions/publish/create-dev-account.md
 
           - text: Create a simple extension
-            url: ../extensions-chromium/getting-started/part1-simple-extension.md
+            url: ../extensions/getting-started/part1-simple-extension.md
 # =============================================================================
 # Row 2 with 3 cards
 # =============================================================================
@@ -119,29 +119,29 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview of Progressive Web Apps
-            url: ../progressive-web-apps-chromium/index.md
+            url: ../progressive-web-apps/index.md
 
           - text: Get started with PWAs
-            url: ../progressive-web-apps-chromium/how-to/index.md
+            url: ../progressive-web-apps/how-to/index.md
 
           - text: Debug Progressive Web Apps
-            url: ../devtools-guide-chromium/progressive-web-apps/index.md
+            url: ../devtools-guide/progressive-web-apps/index.md
 
       - linkListType: whats-new
         links:
           - text: What's New in Progressive Web Apps
-            url: ../progressive-web-apps-chromium/whats-new/pwa.md
+            url: ../progressive-web-apps/whats-new/pwa.md
 
       - linkListType: concept
         links:
           - text: Store data on the device
-            url: ../progressive-web-apps-chromium/how-to/offline.md
+            url: ../progressive-web-apps/how-to/offline.md
 
           - text: Use a service worker to manage network requests
-            url: ../progressive-web-apps-chromium/how-to/service-workers.md
+            url: ../progressive-web-apps/how-to/service-workers.md
 
           - text: Use a web app manifest to integrate a PWA into the OS
-            url: ../progressive-web-apps-chromium/how-to/web-app-manifests.md
+            url: ../progressive-web-apps/how-to/web-app-manifests.md
 # =============================================================================
 # Card r2c2
   - title: WebView2
@@ -206,7 +206,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Open source files in Visual Studio Code
-            url: ../devtools-guide-chromium/sources/opening-sources-in-vscode.md
+            url: ../devtools-guide/sources/opening-sources-in-vscode.md
 
           - text: Visual Studio for web development
             url: ../visual-studio/index.md
@@ -217,7 +217,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Accessibility-testing features
-            url: ../devtools-guide-chromium/accessibility/reference.md
+            url: ../devtools-guide/accessibility/reference.md
 
           - text: Accessibility in Microsoft Edge
             url: ../accessibility/index.md
@@ -235,7 +235,7 @@ landingContent:
             url: ../test-and-automation/test-and-automation.md
 
           - text: DevTools Protocol
-            url: ../devtools-protocol-chromium/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol-chromium/
+            url: ../devtools-protocol/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol/
 
           - text: Origin Trials
             url: ../origin-trials/index.md
@@ -247,7 +247,7 @@ landingContent:
             url: ../puppeteer/index.md
 
           - text: WebDriver
-            url: ../webdriver-chromium/index.md
+            url: ../webdriver/index.md
 
           - text: webhint extension for Visual Studio Code
             url: ../visual-studio-code/webhint.md

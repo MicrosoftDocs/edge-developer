@@ -23,4 +23,4 @@ For more information, see the **Getting Started** and **Developer Guidelines** s
 <!-- ====================================================================== -->
 ## See also
 
-* [Experimental features and origin trials](../progressive-web-apps-chromium/how-to/origin-trials.md) in the Progressive Web Apps (PWA) docs
+* [Experimental features and origin trials](../progressive-web-apps/how-to/origin-trials.md) in the Progressive Web Apps (PWA) docs

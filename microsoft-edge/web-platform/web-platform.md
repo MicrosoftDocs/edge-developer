@@ -114,4 +114,4 @@ Microsoft Edge includes the **JSON viewer**, a tool that automatically reformats
 
 Formatting and highlighting JSON data is useful because sometimes a web server responds to HTTP requests by returning data encoded as JSON.  JSON data can be difficult to read when it's formatted as a single long, concatenated line of text. The same can occur when opening a JSON file from disk.  The **JSON viewer** reformats JSON server responses and local files, and indicates any lines that have syntax errors.
 
-See [View formatted JSON](../devtools-guide-chromium/json-viewer/json-viewer.md).
+See [View formatted JSON](../devtools-guide/json-viewer/json-viewer.md).

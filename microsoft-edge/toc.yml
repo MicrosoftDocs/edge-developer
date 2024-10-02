@@ -1,15 +1,15 @@
 - name: Microsoft Edge Developer documentation  # landing page
-  href: developer/index.yml
+  href: ./developer/index.yml
   items:
 # =============================================================================
     - name: Develop for the web with Microsoft Edge
-      href: develop-web-microsoft-edge.md
+      href: ./develop-web-microsoft-edge.md
 
     - name: Microsoft Edge DevTools
       items:
 # Card-based landing page -----------------------------------------------------
         - name: Microsoft Edge DevTools documentation
-          href: devtools-guide-chromium/landing/index.yml
+          href: ./devtools-guide/landing/index.yml
           displayName: DevTools
 
 # =============================================================================
@@ -17,7 +17,7 @@
 
 # Overview of DevTools --------------------------------------------------------
         - name: Overview of DevTools
-          href: devtools-guide-chromium/overview.md
+          href: ./devtools-guide/overview.md
           displayName: DevTools
 
 # What's New ------------------------------------------------------------------
@@ -26,697 +26,697 @@
 
 # What's New firstchild article
             - name: What's New in Microsoft Edge DevTools
-              href: devtools-guide-chromium/whats-new/whats-new.md
+              href: ./devtools-guide/whats-new/whats-new.md
               displayName: release notes, announcements
 
 # What's New pages ------------------------------------------------------------
             # move eleventh oldest into Archive bucket
             - name: Microsoft Edge 129
-              href: devtools-guide-chromium/whats-new/2024/09/devtools-129.md
+              href: ./devtools-guide/whats-new/2024/09/devtools-129.md
               displayName: What's New in DevTools (Microsoft Edge 129)  # top-of-page title
 
             - name: Microsoft Edge 128
-              href: devtools-guide-chromium/whats-new/2024/08/devtools-128.md
+              href: ./devtools-guide/whats-new/2024/08/devtools-128.md
               displayName: What's New in DevTools (Microsoft Edge 128)  # top-of-page title
 
             - name: Microsoft Edge 127
-              href: devtools-guide-chromium/whats-new/2024/07/devtools-127.md
+              href: ./devtools-guide/whats-new/2024/07/devtools-127.md
               displayName: What's New in DevTools (Microsoft Edge 127)  # top-of-page title
 
             - name: Microsoft Edge 126
-              href: devtools-guide-chromium/whats-new/2024/06/devtools-126.md
+              href: ./devtools-guide/whats-new/2024/06/devtools-126.md
               displayName: What's New in DevTools (Microsoft Edge 126)  # top-of-page title
 
             - name: Microsoft Edge 125
-              href: devtools-guide-chromium/whats-new/2024/05/devtools-125.md
+              href: ./devtools-guide/whats-new/2024/05/devtools-125.md
               displayName: What's New in DevTools (Microsoft Edge 125)  # top-of-page title
 
             - name: Microsoft Edge 124
-              href: devtools-guide-chromium/whats-new/2024/04/devtools-124.md
+              href: ./devtools-guide/whats-new/2024/04/devtools-124.md
               displayName: What's New in DevTools (Microsoft Edge 124)  # top-of-page title
 
             - name: Microsoft Edge 123
-              href: devtools-guide-chromium/whats-new/2024/03/devtools-123.md
+              href: ./devtools-guide/whats-new/2024/03/devtools-123.md
               displayName: What's New in DevTools (Microsoft Edge 123)  # top-of-page title
 
             - name: Microsoft Edge 122
-              href: devtools-guide-chromium/whats-new/2024/02/devtools-122.md
+              href: ./devtools-guide/whats-new/2024/02/devtools-122.md
               displayName: What's New in DevTools (Microsoft Edge 122)  # top-of-page title
 
             - name: Microsoft Edge 121
-              href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
+              href: ./devtools-guide/whats-new/2024/01/devtools-121.md
               displayName: What's New in DevTools (Microsoft Edge 121)  # top-of-page title
 
             - name: Microsoft Edge 120
-              href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
+              href: ./devtools-guide/whats-new/2023/12/devtools-120.md
               displayName: What's New in DevTools (Microsoft Edge 120)  # top-of-page title
 
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
-                  href: devtools-guide-chromium/whats-new/whats-new-archive.md
+                  href: ./devtools-guide/whats-new/whats-new-archive.md
 
                 - name: Microsoft Edge 119
-                  href: devtools-guide-chromium/whats-new/2023/11/devtools-119.md
+                  href: ./devtools-guide/whats-new/2023/11/devtools-119.md
                   displayName: What's New in DevTools (Microsoft Edge 119)  # top-of-page title
 
                 - name: Microsoft Edge 118
-                  href: devtools-guide-chromium/whats-new/2023/10/devtools-118.md
+                  href: ./devtools-guide/whats-new/2023/10/devtools-118.md
                   displayName: What's New in DevTools (Microsoft Edge 118)  # top-of-page title
 
                 - name: Microsoft Edge 117
-                  href: devtools-guide-chromium/whats-new/2023/09/devtools-117.md
+                  href: ./devtools-guide/whats-new/2023/09/devtools-117.md
                   displayName: What's New in DevTools (Microsoft Edge 117)  # top-of-page title
 
                 - name: Microsoft Edge 116
-                  href: devtools-guide-chromium/whats-new/2023/08/devtools-116.md
+                  href: ./devtools-guide/whats-new/2023/08/devtools-116.md
                   displayName: What's New in DevTools (Microsoft Edge 116)  # top-of-page title
 
                 - name: Microsoft Edge 115
-                  href: devtools-guide-chromium/whats-new/2023/07/devtools-115.md
+                  href: ./devtools-guide/whats-new/2023/07/devtools-115.md
                   displayName: What's New in DevTools (Microsoft Edge 115)  # top-of-page title
 
                 - name: Microsoft Edge 114
-                  href: devtools-guide-chromium/whats-new/2023/06/devtools-114.md
+                  href: ./devtools-guide/whats-new/2023/06/devtools-114.md
                   displayName: What's New in DevTools (Microsoft Edge 114)  # top-of-page title
 
                 - name: Microsoft Edge 113
-                  href: devtools-guide-chromium/whats-new/2023/05/devtools-113.md
+                  href: ./devtools-guide/whats-new/2023/05/devtools-113.md
                   displayName: What's New in DevTools (Microsoft Edge 113)  # top-of-page title
 
                 - name: Microsoft Edge 112
-                  href: devtools-guide-chromium/whats-new/2023/04/devtools-112.md
+                  href: ./devtools-guide/whats-new/2023/04/devtools-112.md
                   displayName: What's New in DevTools (Microsoft Edge 112)  # top-of-page title
 
                 - name: Microsoft Edge 111
-                  href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
+                  href: ./devtools-guide/whats-new/2023/03/devtools-111.md
                   displayName: What's New in DevTools (Microsoft Edge 111)  # top-of-page title
 
                 - name: Microsoft Edge 110
-                  href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
+                  href: ./devtools-guide/whats-new/2023/02/devtools-110.md
                   displayName: What's New in DevTools (Microsoft Edge 110)  # top-of-page title
 
                 - name: Microsoft Edge 109
-                  href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
+                  href: ./devtools-guide/whats-new/2023/01/devtools-109.md
                   displayName: What's New in DevTools (Microsoft Edge 109)  # top-of-page title
 
                 - name: Microsoft Edge 108
-                  href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
+                  href: ./devtools-guide/whats-new/2022/12/devtools-108.md
                   displayName: What's New in DevTools (Microsoft Edge 108)  # top-of-page title
 
                 - name: Microsoft Edge 107
-                  href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
+                  href: ./devtools-guide/whats-new/2022/10/devtools-107.md
                   displayName: What's New in DevTools (Microsoft Edge 107)  # top-of-page title
 
                 - name: Microsoft Edge 106
-                  href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
+                  href: ./devtools-guide/whats-new/2022/09/devtools-106.md
                   displayName: What's New in DevTools (Microsoft Edge 106)  # top-of-page title
 
                 - name: Microsoft Edge 105
-                  href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
+                  href: ./devtools-guide/whats-new/2022/09/devtools-105.md
                   displayName: What's New in DevTools (Microsoft Edge 105)  # top-of-page title
 
                 - name: Microsoft Edge 104
-                  href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
+                  href: ./devtools-guide/whats-new/2022/08/devtools-104.md
                   displayName: What's New in DevTools (Microsoft Edge 104)  # top-of-page title
 
                 - name: Microsoft Edge 103
-                  href: devtools-guide-chromium/whats-new/2022/06/devtools-103.md
+                  href: ./devtools-guide/whats-new/2022/06/devtools-103.md
                   displayName: What's New in DevTools (Microsoft Edge 103)  # top-of-page title
 
                 - name: Microsoft Edge 102
-                  href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
+                  href: ./devtools-guide/whats-new/2022/05/devtools-102.md
                   displayName: What's New in DevTools (Microsoft Edge 102)  # top-of-page title
 
                 - name: Microsoft Edge 101
-                  href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
+                  href: ./devtools-guide/whats-new/2022/04/devtools-101.md
                   displayName: What's New in DevTools (Microsoft Edge 101)  # top-of-page title
 
                 - name: Microsoft Edge 100
-                  href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
+                  href: ./devtools-guide/whats-new/2022/03/devtools-100.md
                   displayName: What's New in DevTools (Microsoft Edge 100)  # top-of-page title
 
                 - name: Microsoft Edge 99
-                  href: devtools-guide-chromium/whats-new/2022/03/devtools.md
+                  href: ./devtools-guide/whats-new/2022/03/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 99)  # top-of-page title
 
                 - name: Microsoft Edge 98
-                  href: devtools-guide-chromium/whats-new/2022/02/devtools.md
+                  href: ./devtools-guide/whats-new/2022/02/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 98)  # top-of-page title
 
                 - name: Microsoft Edge 97
-                  href: devtools-guide-chromium/whats-new/2022/01/devtools.md
+                  href: ./devtools-guide/whats-new/2022/01/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 97)  # top-of-page title
 
                 - name: Microsoft Edge 96
-                  href: devtools-guide-chromium/whats-new/2021/11/devtools.md
+                  href: ./devtools-guide/whats-new/2021/11/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 96)  # top-of-page title
 
                 - name: Microsoft Edge 95
-                  href: devtools-guide-chromium/whats-new/2021/10/devtools.md
+                  href: ./devtools-guide/whats-new/2021/10/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 95)  # top-of-page title
 
                 - name: Microsoft Edge 94
-                  href: devtools-guide-chromium/whats-new/2021/09/devtools.md
+                  href: ./devtools-guide/whats-new/2021/09/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 94)  # top-of-page title
 
                 - name: Microsoft Edge 93
-                  href: devtools-guide-chromium/whats-new/2021/07/devtools.md
+                  href: ./devtools-guide/whats-new/2021/07/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 93)  # top-of-page title
 
                 - name: Microsoft Edge 92
-                  href: devtools-guide-chromium/whats-new/2021/05/devtools.md
+                  href: ./devtools-guide/whats-new/2021/05/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 92)  # top-of-page title
 
                 - name: Microsoft Edge 91
-                  href: devtools-guide-chromium/whats-new/2021/04/devtools.md
+                  href: ./devtools-guide/whats-new/2021/04/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 91)  # top-of-page title
 
                 - name: Microsoft Edge 90
-                  href: devtools-guide-chromium/whats-new/2021/02/devtools.md
+                  href: ./devtools-guide/whats-new/2021/02/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 90)  # top-of-page title
 
                 - name: Microsoft Edge 89
-                  href: devtools-guide-chromium/whats-new/2021/01/devtools.md
+                  href: ./devtools-guide/whats-new/2021/01/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 89)  # top-of-page title
 
                 - name: Microsoft Edge 88
-                  href: devtools-guide-chromium/whats-new/2020/11/devtools.md
+                  href: ./devtools-guide/whats-new/2020/11/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 88)  # top-of-page title
 
                 - name: Microsoft Edge 87
-                  href: devtools-guide-chromium/whats-new/2020/10/devtools.md
+                  href: ./devtools-guide/whats-new/2020/10/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 87)  # top-of-page title
 
                 - name: Microsoft Edge 86
-                  href: devtools-guide-chromium/whats-new/2020/08/devtools.md
+                  href: ./devtools-guide/whats-new/2020/08/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 86)  # top-of-page title
 
                 - name: Microsoft Edge 85
-                  href: devtools-guide-chromium/whats-new/2020/06/devtools.md
+                  href: ./devtools-guide/whats-new/2020/06/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 85)  # top-of-page title
 
                 - name: Microsoft Edge 84
-                  href: devtools-guide-chromium/whats-new/2020/05/devtools.md
+                  href: ./devtools-guide/whats-new/2020/05/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 84)  # top-of-page title
 
                 - name: Microsoft Edge 83
-                  href: devtools-guide-chromium/whats-new/2020/03/devtools.md
+                  href: ./devtools-guide/whats-new/2020/03/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 83)  # top-of-page title
 
 #               - name: Microsoft Edge 82
-#                 href: devtools-guide-chromium/whats-new/2020/02/devtools.md  # no such file
+#                 href: ./devtools-guide/whats-new/2020/02/devtools.md  # no such file
 #                 displayName: What's New in DevTools (Microsoft Edge 82)  # top-of-page title
 
                 - name: Microsoft Edge 81
-                  href: devtools-guide-chromium/whats-new/2020/01/devtools.md
+                  href: ./devtools-guide/whats-new/2020/01/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 81)  # top-of-page title
 
                 - name: Microsoft Edge 80
-                  href: devtools-guide-chromium/whats-new/2019/12/devtools.md
+                  href: ./devtools-guide/whats-new/2019/12/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 80)  # top-of-page title
 # Experimental features ------------------------------------------------------------------
         - name: Experimental features
           items:
 
             - name: Experimental features in Microsoft Edge DevTools
-              href: devtools-guide-chromium/experimental-features/index.md
+              href: ./devtools-guide/experimental-features/index.md
               displayName: Experimental features, settings
 
             - name: Share enhanced performance and memory traces
-              href: devtools-guide-chromium/experimental-features/share-traces.md
+              href: ./devtools-guide/experimental-features/share-traces.md
               displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
 # TOOLS =======================================================================
         - name: Tools
           items:
             - name: About the list of tools
-              href: devtools-guide-chromium/about-tools.md
+              href: ./devtools-guide/about-tools.md
 # Icon tools ==================================================================
 # Inspect tool ----------------------------------------------------------------
             - name: Inspect tool
               items:
                 - name: Analyze pages using the Inspect tool  # added article
-                  href: devtools-guide-chromium/css/inspect.md
+                  href: ./devtools-guide/css/inspect.md
                   displayName: Inspect tool
 # Device Emulation ------------------------------------------------------------
             - name: Device Emulation  # orig: Mobile simulation
               items:
                 - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
-                  href: devtools-guide-chromium/device-mode/index.md
+                  href: ./devtools-guide/device-mode/index.md
                   displayName: device emulator, device mode, device simulation, device simulator  # also Network conditions tool (1x), Settings > Devices (1x)
 
                 - name: Emulate dual-screen and foldable devices  # added article
-                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
+                  href: ./devtools-guide/device-mode/dual-screen-and-foldables.md
                   displayName: Device Emulation, Device Emulator, Device Mode
 
                 - name: Emulate and test other browsers  # orig: Emulate and Test Other Browsers (orphaned)
-                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
+                  href: ./devtools-guide/device-mode/testing-other-browsers.md
                   displayName: Device Emulation, Device Emulator, Device Mode
 # Permanent tool tabs =========================================================
 # Elements tool ---------------------------------------------------------------
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
                 - name: Inspect, edit, and debug HTML and CSS with the Elements tool
-                  href: devtools-guide-chromium/elements-tool/elements-tool.md
+                  href: ./devtools-guide/elements-tool/elements-tool.md
                   displayName: Elements tool
 
                 - name: CSS features reference
-                  href: devtools-guide-chromium/css/reference.md
+                  href: ./devtools-guide/css/reference.md
                   displayName: Elements tool
 
                 - name: Get started viewing and changing CSS
-                  href: devtools-guide-chromium/css/index.md
+                  href: ./devtools-guide/css/index.md
                   displayName: Elements tool
 
                 - name: Inspect CSS Grid
-                  href: devtools-guide-chromium/css/grid.md
+                  href: ./devtools-guide/css/grid.md
                   displayName: Elements tool
 
                 - name: Edit CSS font styles and settings in the Styles pane  # added article
-                  href: devtools-guide-chromium/inspect-styles/edit-fonts.md
+                  href: ./devtools-guide/inspect-styles/edit-fonts.md
                   displayName: Elements tool
 
                 - name: Style editing for CSS-in-JS frameworks  # added article from blog
-                  href: devtools-guide-chromium/css/css-in-js.md
+                  href: ./devtools-guide/css/css-in-js.md
                   displayName: Elements tool
 
                 - name: Get started viewing and changing the DOM
-                  href: devtools-guide-chromium/dom/index.md
+                  href: ./devtools-guide/dom/index.md
                   displayName: Elements tool
 # Console tool ----------------------------------------------------------------
             - name: Console tool
               items:
                 - name: Console overview
-                  href: devtools-guide-chromium/console/index.md
+                  href: ./devtools-guide/console/index.md
                   displayName: Console tool
 
                 - name: Console features reference
-                  href: devtools-guide-chromium/console/reference.md
+                  href: ./devtools-guide/console/reference.md
                   displayName: Console tool
 
                 - name: Log messages in the Console tool
-                  href: devtools-guide-chromium/console/console-log.md
+                  href: ./devtools-guide/console/console-log.md
                   displayName: Console tool
 
                 - name: Run JavaScript in the Console
-                  href: devtools-guide-chromium/console/console-javascript.md
+                  href: ./devtools-guide/console/console-javascript.md
                   displayName: Console tool
 
                 - name: Explain Console errors and warnings using Copilot in Edge
-                  href: devtools-guide-chromium/console/copilot-explain-console.md
+                  href: ./devtools-guide/console/copilot-explain-console.md
                   displayName: Console tool, Copilot in Edge, Copilot, Explain error
 
                 - name: Console object API Reference
-                  href: devtools-guide-chromium/console/api.md
+                  href: ./devtools-guide/console/api.md
                   displayName: Console tool, API Reference
 
                 - name: Console tool utility functions and selectors
-                  href: devtools-guide-chromium/console/utilities.md
+                  href: ./devtools-guide/console/utilities.md
                   displayName: Console tool, API Reference, DOM selectors
 
                 - name: Monitor changes in JavaScript using Live Expressions
-                  href: devtools-guide-chromium/console/live-expressions.md
+                  href: ./devtools-guide/console/live-expressions.md
                   displayName: Console tool
 
                 - name: Fix JavaScript errors that are reported in the Console  # added article
-                  href: devtools-guide-chromium/console/console-debug-javascript.md
+                  href: ./devtools-guide/console/console-debug-javascript.md
                   displayName: Console tool, Sources tool, Network tool
 
                 - name: Interact with the DOM using the Console  # added article
-                  href: devtools-guide-chromium/console/console-dom-interaction.md
+                  href: ./devtools-guide/console/console-dom-interaction.md
                   displayName: Console tool
 
                 - name: Filter Console messages  # added article
-                  href: devtools-guide-chromium/console/console-filters.md
+                  href: ./devtools-guide/console/console-filters.md
                   displayName: Console tool
 # Sources tool ----------------------------------------------------------------
             - name: Sources tool, for editing files and debugging JavaScript
               items:
                 - name: Sources tool overview
-                  href: devtools-guide-chromium/sources/index.md
+                  href: ./devtools-guide/sources/index.md
                   displayName: Quick source tool, Sources tool  # Quick source tool is covered in section "Displaying source files when using a different tool"
 
                 - name: Get started debugging JavaScript
-                  href: devtools-guide-chromium/javascript/index.md
+                  href: ./devtools-guide/javascript/index.md
                   displayName: Sources tool
 
                 - name: Pause code with breakpoints
-                  href: devtools-guide-chromium/javascript/breakpoints.md
+                  href: ./devtools-guide/javascript/breakpoints.md
                   displayName: Sources tool
 
                 - name: JavaScript debugging features  # orig: "JavaScript debugging reference"
-                  href: devtools-guide-chromium/javascript/reference.md
+                  href: ./devtools-guide/javascript/reference.md
                   displayName: Sources tool
 
                 - name: Explain source code using Copilot in Edge
-                  href: devtools-guide-chromium/javascript/copilot-explain-source-code.md
+                  href: ./devtools-guide/javascript/copilot-explain-source-code.md
                   displayName: Sources tool, Copilot in Edge, Copilot, Explain source code
 
                 - name: Run snippets of JavaScript on any webpage
-                  href: devtools-guide-chromium/javascript/snippets.md
+                  href: ./devtools-guide/javascript/snippets.md
                   displayName: Sources tool
 
                 - name: Edit files with Workspaces (Filesystem tab)
-                  href: devtools-guide-chromium/workspaces/index.md
+                  href: ./devtools-guide/workspaces/index.md
                   displayName: Sources tool, Quick source tool  # Quick source tool is covered in section "Step 4: Save a JavaScript change to disk"
 
                 - name: Override webpage resources with local copies (Overrides tab)  # added article
-                  href: devtools-guide-chromium/javascript/overrides.md
+                  href: ./devtools-guide/javascript/overrides.md
                   displayName: Sources tool
 
                 - name: Add content scripts to the Ignore List
-                  href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
+                  href: ./devtools-guide/javascript/guides/mark-content-scripts-library-code.md
                   displayName: Sources tool
 
                 - name: Disable JavaScript
-                  href: devtools-guide-chromium/javascript/disable.md
+                  href: ./devtools-guide/javascript/disable.md
                   displayName: Sources tool
 
                 - name: Map the processed code to your original source code, for debugging
-                  href: devtools-guide-chromium/javascript/source-maps.md
+                  href: ./devtools-guide/javascript/source-maps.md
                   displayName: Sources tool, source maps
 
                 - name: Securely debug original code by publishing source maps to the Azure Artifacts symbol server
-                  href: devtools-guide-chromium/javascript/publish-source-maps-to-azure.md
+                  href: ./devtools-guide/javascript/publish-source-maps-to-azure.md
                   displayName: Sources tool, source maps, Azure Artifacts symbol server
 
                 - name: Securely debug original code by using Azure Artifacts symbol server source maps
-                  href: devtools-guide-chromium/javascript/consume-source-maps-from-azure.md
+                  href: ./devtools-guide/javascript/consume-source-maps-from-azure.md
                   displayName: Sources tool, source maps, Azure Artifacts symbol server
 # Optional tool tabs ==========================================================
 # 3D View tool ----------------------------------------------------------------
             - name: 3D View tool
               items:
                 - name: Navigate webpage layers, z-index, and DOM using the 3D View tool  # added article
-                  href: devtools-guide-chromium/3d-view/index.md
+                  href: ./devtools-guide/3d-view/index.md
                   displayName: 3D View tool, composited layers
 # Animations tool -------------------------------------------------------------
             - name: Animations tool
               items:
                 - name: Inspect and modify CSS animation effects
-                  href: devtools-guide-chromium/inspect-styles/animations.md
+                  href: ./devtools-guide/inspect-styles/animations.md
                   displayName: Animations tool
 # Application tool ------------------------------------------------------------
             - name: Application tool, for storage and PWAs
               items:
                 - name: Application tool, to manage storage
-                  href: devtools-guide-chromium/storage/application-tool.md
+                  href: ./devtools-guide/storage/application-tool.md
                   displayName: Application tool
 
                 - name: View, edit, and delete cookies
-                  href: devtools-guide-chromium/storage/cookies.md
+                  href: ./devtools-guide/storage/cookies.md
                   displayName: Application tool
 
                 - name: View and edit local storage
-                  href: devtools-guide-chromium/storage/localstorage.md
+                  href: ./devtools-guide/storage/localstorage.md
                   displayName: Application tool
 
                 - name: View and change IndexedDB data
-                  href: devtools-guide-chromium/storage/indexeddb.md
+                  href: ./devtools-guide/storage/indexeddb.md
                   displayName: Application tool
 
                 - name: View and edit session storage
-                  href: devtools-guide-chromium/storage/sessionstorage.md
+                  href: ./devtools-guide/storage/sessionstorage.md
                   displayName: Application tool
 
               # - name: View Application Cache data  # deprecated
-              #   href: devtools-guide-chromium/storage/application.md  # deprecated feature  # keep comment for inventory while article remains in other repo's TOC
+              #   href: ./devtools-guide/storage/application.md  # deprecated feature  # keep comment for inventory while article remains in other repo's TOC
               #   displayName: Application tool
 
                 - name: View Web SQL data
-                  href: devtools-guide-chromium/storage/websql.md
+                  href: ./devtools-guide/storage/websql.md
                   displayName: Application tool
 
                 - name: View Cache data
-                  href: devtools-guide-chromium/storage/cache.md
+                  href: ./devtools-guide/storage/cache.md
                   displayName: Application tool
 
                 - name: Debug Progressive Web Apps (PWAs)
-                  href: devtools-guide-chromium/progressive-web-apps/index.md
+                  href: ./devtools-guide/progressive-web-apps/index.md
                   displayName: Application tool
 
                 - name: Test Progressive Web App (PWA) protocol handling
-                  href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
+                  href: ./devtools-guide/progressive-web-apps/protocol-handlers.md
                   displayName: Application tool
 
                 - name: Simulate the Window Controls Overlay API without installing your PWA
-                  href: devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md
+                  href: ./devtools-guide/progressive-web-apps/simulate-window-controls-overlay.md
                   displayName: Application tool, WCO
 
                 - name: Debug background services
-                  href: devtools-guide-chromium/javascript/background-services.md
+                  href: ./devtools-guide/javascript/background-services.md
                   displayName: Application tool
 # Changes tool ----------------------------------------------------------------
             - name: Changes tool
               items:
                 - name: Track changes to files using the Changes tool  # added article
-                  href: devtools-guide-chromium/changes/changes-tool.md
+                  href: ./devtools-guide/changes/changes-tool.md
                   displayName: Changes tool
 # Coverage tool ---------------------------------------------------------------
             - name: Coverage tool
               items:
                 - name: Find unused JavaScript and CSS code with the Coverage tool
-                  href: devtools-guide-chromium/coverage/index.md
+                  href: ./devtools-guide/coverage/index.md
                   displayName: Coverage tool
 # Crash analyzer --------------------------------------------------------------
             - name: Crash analyzer tool
               items:
                 - name: Crash analyzer tool
-                  href: devtools-guide-chromium/crash-analyzer/index.md
+                  href: ./devtools-guide/crash-analyzer/index.md
 # CSP Violations --------------------------------------------------------------
             # - name: CSP Violations tool
-            #   https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
+            #   https://learn.microsoft.com/microsoft-edge/devtools-guide/experimental-features/#show-csp-violations-view
             #   items:
             #     - name: Display Content Security Policy (CSP) violations
-            #       href: devtools-guide-chromium/csp-violations/csp-violations-tool.md
+            #       href: ./devtools-guide/csp-violations/csp-violations-tool.md
             #       displayName: CSP Violations tool
 # CSS Overview tool -----------------------------------------------------------
             - name: CSS Overview tool
               items:
                 - name: Optimize CSS styles with the CSS Overview tool
-                  href: devtools-guide-chromium/css/css-overview-tool.md
+                  href: ./devtools-guide/css/css-overview-tool.md
                   displayName: CSS Overview tool
 # Detached Elements tool ------------------------------------------------------
             - name: Detached Elements tool
               items:
                 - name: Debug DOM memory leaks with the Detached Elements tool # added article
-                  href: devtools-guide-chromium/memory-problems/dom-leaks.md
+                  href: ./devtools-guide/memory-problems/dom-leaks.md
                   displayName: Detached Elements tool
 # Developer Resources tool ----------------------------------------------------
             - name: Developer Resources tool
               items:
                 - name: Developer Resources tool
-                  href: devtools-guide-chromium/developer-resources/developer-resources.md
+                  href: ./devtools-guide/developer-resources/developer-resources.md
                   displayName: Developer Resources tool
 # Issues tool -----------------------------------------------------------------
             - name: Issues tool
               items:
                 - name: Find and fix problems using the Issues tool
-                  href: devtools-guide-chromium/issues/index.md
+                  href: ./devtools-guide/issues/index.md
                   displayName: Issues tool
 # JavaScript Profiler tool ----------------------------------------------------
             - name: JavaScript Profiler tool
               items:
                 - name: JavaScript Profiler tool
-                  href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
+                  href: ./devtools-guide/javascript-profiler/javascript-profiler-tool.md
                   displayName: JavaScript Profiler tool
 # Lighthouse tool -------------------------------------------------------------
             - name: Lighthouse tool  # new jump page  # main article is in Accessibility
               items:
                 - name: Lighthouse tool
-                  href: devtools-guide-chromium/lighthouse/lighthouse-tool.md
+                  href: ./devtools-guide/lighthouse/lighthouse-tool.md
                   displayName: Lighthouse tool
 # Media tool ------------------------------------------------------------------
             - name: Media tool
               items:
                 - name: View and debug media players information
-                  href: devtools-guide-chromium/media-panel/index.md
+                  href: ./devtools-guide/media-panel/index.md
                   displayName: Media tool
 # Memory tool -----------------------------------------------------------------
             - name: Memory tool
               items:
                 - name: Fix memory problems
-                  href: devtools-guide-chromium/memory-problems/index.md
+                  href: ./devtools-guide/memory-problems/index.md
                   displayName: Memory tool
 
                 - name: Memory terminology
-                  href: devtools-guide-chromium/memory-problems/memory-101.md
+                  href: ./devtools-guide/memory-problems/memory-101.md
                   displayName: Memory tool
 
                 - name: Record heap snapshots using the Memory tool
-                  href: devtools-guide-chromium/memory-problems/heap-snapshots.md
+                  href: ./devtools-guide/memory-problems/heap-snapshots.md
                   displayName: Memory tool
 
                 - name: Use Allocation instrumentation on timeline
-                  href: devtools-guide-chromium/memory-problems/allocation-profiler.md
+                  href: ./devtools-guide/memory-problems/allocation-profiler.md
                   displayName: Memory tool
 
                 - name: Speed up JavaScript runtime
-                  href: devtools-guide-chromium/rendering-tools/js-runtime.md
+                  href: ./devtools-guide/rendering-tools/js-runtime.md
                   displayName: Memory tool
 
                 - name: The heap snapshot file format
-                  href: devtools-guide-chromium/memory-problems/heap-snapshot-schema.md
+                  href: ./devtools-guide/memory-problems/heap-snapshot-schema.md
                   displayName: Memory tool
 # Memory Inspector tool -------------------------------------------------------
             - name: Memory Inspector tool
               items:
                 - name: Inspect a JavaScript ArrayBuffer with the Memory Inspector tool  # real content pending
-                  href: devtools-guide-chromium/memory-inspector/memory-inspector-tool.md
+                  href: ./devtools-guide/memory-inspector/memory-inspector-tool.md
                   displayName: Memory Inspector tool
 # Network tool ----------------------------------------------------------------
             - name: Network tool
               items:
                 - name: Inspect network activity
-                  href: devtools-guide-chromium/network/index.md
+                  href: ./devtools-guide/network/index.md
                   displayName: Network tool
 
                 - name: Network features reference
-                  href: devtools-guide-chromium/network/reference.md
+                  href: ./devtools-guide/network/reference.md
                   displayName: Network tool
 
                 - name: Network issues guide  # added article
-                  href: devtools-guide-chromium/network/issues.md
+                  href: ./devtools-guide/network/issues.md
                   displayName: Network tool
 
                 - name: View page resources
-                  href: devtools-guide-chromium/resources/index.md
+                  href: ./devtools-guide/resources/index.md
                   displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
 
                 - name: Service worker improvements  # added article
-                  href: devtools-guide-chromium/service-workers/index.md
+                  href: ./devtools-guide/service-workers/index.md
                   displayName: Network tool, Application tool, Sources tool
 # Network conditions tool -----------------------------------------------------
             - name: Network conditions tool
               items:
                 - name: Network conditions tool  # new jump page
-                  href: devtools-guide-chromium/network-conditions/network-conditions-tool.md
+                  href: ./devtools-guide/network-conditions/network-conditions-tool.md
                   displayName: Network conditions tool
 
                 - name: Override the user agent string
-                  href: devtools-guide-chromium/device-mode/override-user-agent.md
+                  href: ./devtools-guide/device-mode/override-user-agent.md
                   displayName: Network Conditions tool, Device Emulation, Device Emulator
 # Network Console tool -----------------------------------------------
             - name: Network Console tool
               items:
                 - name: Compose and send web API requests using the Network Console tool
-                  href: devtools-guide-chromium/network-console/network-console-tool.md
+                  href: ./devtools-guide/network-console/network-console-tool.md
 # Network request blocking tool -----------------------------------------------
             - name: Network request blocking tool
               items:
                 - name: Block network requests
-                  href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
+                  href: ./devtools-guide/network-request-blocking/network-request-blocking-tool.md
                   displayName: Network request blocking tool
 # Performance tool ------------------------------------------------------------
             - name: Performance tool
               items:
                 - name: Introduction to the Performance tool
-                  href: devtools-guide-chromium/evaluate-performance/index.md
+                  href: ./devtools-guide/evaluate-performance/index.md
                   displayName: Performance tool, Get started analyzing runtime performance  # old title
 
                 - name: Troubleshooting common performance issues
-                  href: devtools-guide-chromium/rendering-tools/index.md
+                  href: ./devtools-guide/rendering-tools/index.md
                   displayName: Performance tool, Analyze runtime performance  # old title
 
                 - name: Optimize website speed using Lighthouse
-                  href: devtools-guide-chromium/speed/get-started.md
+                  href: ./devtools-guide/speed/get-started.md
                   displayName: Performance tool, Lighthouse tool, Network tool
 
                 - name: Performance features reference
-                  href: devtools-guide-chromium/evaluate-performance/reference.md
+                  href: ./devtools-guide/evaluate-performance/reference.md
                   displayName: Performance tool, Rendering tool
 
                 - name: Performance recording event reference
-                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
+                  href: ./devtools-guide/evaluate-performance/performance-reference.md
                   displayName: Performance tool
 
                 - name: Display original function names in performance profiles
-                  href: devtools-guide-chromium/evaluate-performance/unminify.md
+                  href: ./devtools-guide/evaluate-performance/unminify.md
                   displayName: Performance tool
 
                 - name: Analyze CSS selector performance during Recalculate Style events
-                  href: devtools-guide-chromium/evaluate-performance/selector-stats.md
+                  href: ./devtools-guide/evaluate-performance/selector-stats.md
                   displayName: Performance tool, css selector stats, css selectors, selector stats, selector statistics, css selector statistics
 
 # Performance monitor tool ----------------------------------------------------
             - name: Performance monitor tool
               items:
                 - name: Measure runtime performance of a page using the Performance monitor tool  # added article
-                  href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
+                  href: ./devtools-guide/performance-monitor/performance-monitor-tool.md
                   displayName: Performance monitor tool
 # Quick source tool -----------------------------------------------------------
             - name: Quick source tool  # jump page
               items:
                 - name: Display or edit source files using the Quick source tool
-                  href: devtools-guide-chromium/quick-source/quick-source-tool.md
+                  href: ./devtools-guide/quick-source/quick-source-tool.md
                   displayName: Quick source tool  # also indexed elsewhere in this file
 # Recorder tool -----------------------------------------------------------
             - name: Recorder tool
               items:
                 - name: Record and replay user flows and measure performance
-                  href: devtools-guide-chromium/recorder/index.md
+                  href: ./devtools-guide/recorder/index.md
                   displayName: Recorder tool
 # Rendering tool --------------------------------------------------------------
             - name: Rendering tool
               items:
                 - name: Rendering tool, to see what a webpage looks like with different display options or vision deficiencies
-                  href: devtools-guide-chromium/rendering-tools/rendering-tool.md
+                  href: ./devtools-guide/rendering-tools/rendering-tool.md
                   displayName: Rendering tool
 
                 - name: Emulate dark or light schemes in the rendered page  # added article
-                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+                  href: ./devtools-guide/accessibility/preferred-color-scheme-simulation.md
                   displayName: Rendering tool
 
                 - name: Force print preview mode
-                  href: devtools-guide-chromium/css/print-preview.md
+                  href: ./devtools-guide/css/print-preview.md
                   displayName: Rendering tool
               # some articles are in Accessibility section
 # Search tool -----------------------------------------------------------------
             - name: Search tool
               items:
                 - name: Find source files for a page using the Search tool  # added article
-                  href: devtools-guide-chromium/search/search-tool.md
+                  href: ./devtools-guide/search/search-tool.md
                   displayName: Search tool
 # Security tool ---------------------------------------------------------------
             - name: Security tool
               items:
                 - name: Understand security issues using the Security tool
-                  href: devtools-guide-chromium/security/index.md
+                  href: ./devtools-guide/security/index.md
                   displayName: Security tool
 # Sensors tool ----------------------------------------------------------------
             - name: Sensors tool
               items:
                 - name: Override geolocation with the Sensors tool  # orig: was in "Mobile simulation"
-                  href: devtools-guide-chromium/device-mode/geolocation.md
+                  href: ./devtools-guide/device-mode/geolocation.md
                   displayName: Sensors tool, Device Emulation
 
                 - name: Simulate device orientation with the Sensors tool  # orig: was in "Mobile simulation"
-                  href: devtools-guide-chromium/device-mode/orientation.md
+                  href: ./devtools-guide/device-mode/orientation.md
                   displayName: Sensors tool, Device Emulation
 # Source maps monitor tool ----------------------------------------------------
             - name: Source Maps Monitor tool
               items:
                 - name: Source Maps Monitor tool  # no article yet
-                  href: devtools-guide-chromium/source-maps-monitor/source-maps-monitor-tool.md
+                  href: ./devtools-guide/source-maps-monitor/source-maps-monitor-tool.md
                   displayName: Source maps monitor tool
 # WebAudio tool ---------------------------------------------------------------
             - name: WebAudio tool
               items:
                 - name: WebAudio tool
-                  href: devtools-guide-chromium/webaudio/webaudio-tool.md
+                  href: ./devtools-guide/webaudio/webaudio-tool.md
                   displayName: WebAudio tool
 # WebAuthn tool ---------------------------------------------------------------
             - name: WebAuthn tool
               items:
                 - name: Emulate authenticators and debug WebAuthn
-                  href: devtools-guide-chromium/webauthn/index.md
+                  href: ./devtools-guide/webauthn/index.md
                   displayName: WebAuthn tool
 # Welcome tool ----------------------------------------------------------------
             - name: Welcome tool
               items:
                 - name: Welcome tool
-                  href: devtools-guide-chromium/welcome/welcome-tool.md
+                  href: ./devtools-guide/welcome/welcome-tool.md
                   displayName: Welcome tool
 # /Tools bucket
 # LOWER NON-TOOL NODES ========================================================
@@ -724,184 +724,184 @@
         - name: Command Menu and keyboard shortcuts
           items:
             - name: Run commands in the Command Menu
-              href: devtools-guide-chromium/command-menu/index.md
+              href: ./devtools-guide/command-menu/index.md
               displayName: Command Menu
 # Keyboard shortcuts ----------------------------------------------------------
             - name: Keyboard shortcuts
-              href: devtools-guide-chromium/shortcuts/index.md
+              href: ./devtools-guide/shortcuts/index.md
               displayName: Keyboard shortcuts
 # Settings pages and Customize menu -------------------------------------------
 # Experimental features could go here
         - name: Settings and customization UI
           items:
             - name: Customize DevTools  # orig: "Customization"
-              href: devtools-guide-chromium/customize/index.md
+              href: ./devtools-guide/customize/index.md
               displayName: settings
 
             - name: Apply a color theme to DevTools  # orig: "Enable dark theme"
-              href: devtools-guide-chromium/customize/theme.md
+              href: ./devtools-guide/customize/theme.md
               displayName: Settings, Preferences
 
             - name: Change DevTools placement (Undock, Dock to bottom, Dock to left)
-              href: devtools-guide-chromium/customize/placement.md
+              href: ./devtools-guide/customize/placement.md
               displayName: settings
 
             - name: Change DevTools language settings  # added article
-              href: devtools-guide-chromium/customize/localization.md
+              href: ./devtools-guide/customize/localization.md
               displayName: Settings, Preferences
 
             - name: Customize keyboard shortcuts  # added article
-              href: devtools-guide-chromium/customize/shortcuts.md
+              href: ./devtools-guide/customize/shortcuts.md
               displayName: Settings, Shortcuts
 
             - name: Add custom UI to DevTools using extensions
-              href: devtools-guide-chromium/customize/extensions.md
+              href: ./devtools-guide/customize/extensions.md
               displayName: Extensions
 # Remote debugging ------------------------------------------------------------
         - name: Remote debugging
           items:
             - name: Remotely debug Android devices
-              href: devtools-guide-chromium/remote-debugging/index.md
+              href: ./devtools-guide/remote-debugging/index.md
               displayName: Remote debugging, remote debugger
 
             - name: Access local servers
-              href: devtools-guide-chromium/remote-debugging/local-server.md
+              href: ./devtools-guide/remote-debugging/local-server.md
               displayName: Remote debugging, remote debugger
 
             - name: Remotely debug Android WebViews
-              href: devtools-guide-chromium/remote-debugging/webviews.md
+              href: ./devtools-guide/remote-debugging/webviews.md
               displayName: Remote debugging, remote debugger
 
             - name: Remotely debug Surface Duo emulators
-              href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
+              href: ./devtools-guide/remote-debugging/surface-duo-emulator.md
               displayName: Remote debugging, remote debugger
 
             - name: Remotely debug Windows devices
-              href: devtools-guide-chromium/remote-debugging/windows.md
+              href: ./devtools-guide/remote-debugging/windows.md
               displayName: Remote debugging, remote debugger
 # Accessibility testing & features --------------------------------------------
         - name: Accessibility
           items:
             - name: Accessibility-testing features  # orig: Accessibility features reference (broken up & replaced)
-              href: devtools-guide-chromium/accessibility/reference.md
+              href: ./devtools-guide/accessibility/reference.md
               displayName: Elements tool, Accessibility tab
 
 # Inspect tool (distinct from Tools > Inspect tool bucket)
             - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage  # added article
-              href: devtools-guide-chromium/accessibility/test-inspect-tool.md
+              href: ./devtools-guide/accessibility/test-inspect-tool.md
               displayName: Inspect tool  # tests Screen reader support, Keyboard support, Text contrast
 
 # Lighthouse tool (distinct from Tools > Lighthouse tool bucket)
             - name: Test accessibility using Lighthouse  # was part of "Accessibility features reference"
-              href: devtools-guide-chromium/accessibility/lighthouse.md
+              href: ./devtools-guide/accessibility/lighthouse.md
               displayName: Lighthouse tool
 
 # Elements tool > Accessibility tab
             - name: Navigate DevTools with assistive technology
-              href: devtools-guide-chromium/accessibility/navigation.md
+              href: ./devtools-guide/accessibility/navigation.md
               displayName: Elements tool, Accessibility tab  # many tools
 
             - name: Track which element has focus  # orig: "Track element focus"
-              href: devtools-guide-chromium/accessibility/focus.md
+              href: ./devtools-guide/accessibility/focus.md
               displayName: Elements tool, Accessibility tab
 
             - name: Alt-text for images
               items:
                 - name: Automatically test a webpage for accessibility issues  # added article
-                  href: devtools-guide-chromium/accessibility/test-issues-tool.md
+                  href: ./devtools-guide/accessibility/test-issues-tool.md
                   displayName: Issues tool
 
             - name: Keyboard support
               items:
                 - name: Check for keyboard support by using the Tab and Enter keys  # added article
-                  href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
+                  href: ./devtools-guide/accessibility/test-tab-enter-keys.md
                   displayName: keyboard support
 
                 - name: Analyze the lack of indication of keyboard focus  # added article
-                  href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
+                  href: ./devtools-guide/accessibility/test-analyze-no-focus-indicator.md
                   displayName: keyboard focus
 
                 - name: Analyze keyboard support on forms  # added article
-                  href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
+                  href: ./devtools-guide/accessibility/test-analyze-no-keyboard-support.md
                   displayName: keyboard support
 
                 - name: Test keyboard support using the Source Order Viewer  # added article
-                  href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
+                  href: ./devtools-guide/accessibility/test-tab-key-source-order-viewer.md
                   displayName: Elements tool, Accessibility tab
 
             - name: Text contrast
               items:
                 - name: Test text-color contrast using the Color Picker  # was part of "Accessibility features reference"
-                  href: devtools-guide-chromium/accessibility/color-picker.md
+                  href: ./devtools-guide/accessibility/color-picker.md
                   displayName: Elements tool, Styles tab, Color Picker
 
                 - name: Check text-color contrast in the default state using the Inspect tool  # added article
-                  href: devtools-guide-chromium/accessibility/test-inspect-text-contrast.md
+                  href: ./devtools-guide/accessibility/test-inspect-text-contrast.md
                   displayName: Inspect tool
 
                 - name: Verify accessibility of all states of elements  # added article
-                  href: devtools-guide-chromium/accessibility/test-inspect-states.md
+                  href: ./devtools-guide/accessibility/test-inspect-states.md
                   displayName: Elements tool, Styles tab, hov, Toggle Element State, Force element state
 
                 - name: Check for contrast issues with dark theme and light theme  # added article
-                  href: devtools-guide-chromium/accessibility/test-dark-mode.md
+                  href: ./devtools-guide/accessibility/test-dark-mode.md
                   displayName: Rendering tool, dark mode, light mode, dark scheme, light scheme
 
             - name: Screen reader support
               items:
                 - name: Test accessibility using the Accessibility tab  # was part of "Accessibility features reference"
-                  href: devtools-guide-chromium/accessibility/accessibility-tab.md
+                  href: ./devtools-guide/accessibility/accessibility-tab.md
                   displayName: Elements tool, Accessibility tab, screen readers, Accessibility Tree, ARIA attributes, Computed Properties
 
                 - name: Check the Accessibility Tree for keyboard and screen reader support  # added article
-                  href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
+                  href: ./devtools-guide/accessibility/test-accessibility-tree.md
                   displayName: Elements tool, Accessibility tab, screen readers
 
 # Rendering tool (distinct from Tools > Rendering tool)
             - name: Vision deficiencies (Rendering tool)
               items:
                 - name: Emulate vision deficiencies  # added article
-                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
+                  href: ./devtools-guide/accessibility/emulate-vision-deficiencies.md
                   displayName: Rendering tool
 
                 - name: Verify that a page is usable by people with color blindness  # added article
-                  href: devtools-guide-chromium/accessibility/test-color-blindness.md
+                  href: ./devtools-guide/accessibility/test-color-blindness.md
                   displayName: Rendering tool
 
                 - name: Verify that a page is usable with blurred vision  # added article
-                  href: devtools-guide-chromium/accessibility/test-blurred-vision.md
+                  href: ./devtools-guide/accessibility/test-blurred-vision.md
                   displayName: Rendering tool
 
                 - name: Simulate reduced motion  # added article
-                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+                  href: ./devtools-guide/accessibility/reduced-motion-simulation.md
                   displayName: Rendering tool
 
                 - name: Verify that a page is usable with UI animation turned off  # added article
-                  href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
+                  href: ./devtools-guide/accessibility/test-reduced-ui-motion.md
                   displayName: Rendering tool
 
 # Device Emulation (distinct from Tools > Device Emulation)
             - name: Usable when narrow (Device Emulation)
               items:
                 - name: Verify that the webpage layout is usable when narrow  # added article
-                  href: devtools-guide-chromium/accessibility/narrow.md
+                  href: ./devtools-guide/accessibility/narrow.md
                   displayName: Device Emulation, Device Emulator
 # /Accessibility
 # Sample code -----------------------------------------------------------------
         - name: Sample code for DevTools
-          href: devtools-guide-chromium/sample-code/sample-code.md
+          href: ./devtools-guide/sample-code/sample-code.md
           displayName: sample code, demo
 # IE mode ---------------------------------------------------------------------
         - name: Use DevTools in Internet Explorer mode (IE mode)  # added article
-          href: devtools-guide-chromium/ie-mode/index.md
+          href: ./devtools-guide/ie-mode/index.md
           displayName: IE mode
 # DevTools Protocol -----------------------------------------------------------
         - name: Microsoft Edge DevTools Protocol  # added article
-          href: devtools-protocol-chromium/index.md
+          href: ./devtools-protocol/index.md
           displayName: DevTools Protocol
 # Contact ---------------------------------------------------------------------
         - name: Contact the Microsoft Edge DevTools team  # added article
-          href: devtools-guide-chromium/contact.md
+          href: ./devtools-guide/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 
 # =============================================================================
@@ -910,116 +910,116 @@
           items:
 
             - name: DevTools extension for Visual Studio Code
-              href: visual-studio-code/microsoft-edge-devtools-extension.md
+              href: ./visual-studio-code/microsoft-edge-devtools-extension.md
               displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
 
             - name: Get started
               items:
                 - name: Installing the DevTools extension for Visual Studio Code
-                  href: visual-studio-code/microsoft-edge-devtools-extension/install.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/install.md
                   displayName: installing, setup
 
                 - name: Get started using the DevTools extension for Visual Studio Code
-                  href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/get-started.md
                   displayName: tutorial, demo to do
 
                 - name: Get started by right-clicking an HTML file
-                  href: visual-studio-code/microsoft-edge-devtools-extension/get-started-right-click-html.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/get-started-right-click-html.md
 
                 - name: Get started by clicking the Launch Instance button
-                  href: visual-studio-code/microsoft-edge-devtools-extension/get-started-launch-instance.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/get-started-launch-instance.md
 
                 - name: Get started by clicking the Launch Project button
-                  href: visual-studio-code/microsoft-edge-devtools-extension/get-started-launch-project.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/get-started-launch-project.md
 
                 - name: Opening DevTools and the DevTools browser
-                  href: visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
 
             - name: Tools and features
               items:
                 - name: Integration with Visual Studio Code debugging
-                  href: visual-studio-code/microsoft-edge-devtools-extension/debugging-a-webpage.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/debugging-a-webpage.md
 
                 - name: Opening source files from the Elements tool
-                  href: visual-studio-code/microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md
 
                 - name: Inline and live issue analysis
-                  href: visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
 
                 - name: Device emulation
-                  href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
 
                 - name: Update .css files from within the Styles tab (CSS mirror editing)
-                  href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
                   displayName: Syncing live changes from the Styles tool by using CSS mirror editing  # previous title
 
                 - name: Network tool integration
-                  href: visual-studio-code/microsoft-edge-devtools-extension/network-tool-integration.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/network-tool-integration.md
 
                 - name: Console integration
-                  href: visual-studio-code/microsoft-edge-devtools-extension/console-integration.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/console-integration.md
 
                 - name: Application tool integration
-                  href: visual-studio-code/microsoft-edge-devtools-extension/application-tool-integration.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/application-tool-integration.md
 
             - name: Customize
               items:
                 - name: Changing the extension settings
-                  href: visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/change-extension-settings.md
 
                 - name: The launch.json file for the DevTools extension
-                  href: visual-studio-code/microsoft-edge-devtools-extension/launch-json.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/launch-json.md
 
                 - name: Using an external browser window
-                  href: visual-studio-code/microsoft-edge-devtools-extension/external-browser-window.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/external-browser-window.md
 
                 - name: Troubleshooting the DevTools extension
-                  href: visual-studio-code/microsoft-edge-devtools-extension/troubleshooting.md
+                  href: ./visual-studio-code/microsoft-edge-devtools-extension/troubleshooting.md
                   displayName: error messages
 
             - name: Getting in touch with the Microsoft Edge DevTools Extension team
-              href: visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
+              href: ./visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
 # /DevTools
 
 # =============================================================================
     - name: Microsoft Edge extensions
       items:
         - name: Microsoft Edge extensions documentation
-          href: ./extensions-chromium/landing/index.yml  # landing page
+          href: ././extensions/landing/index.yml  # landing page
           displayName: add-ons, landing
 
         - name: Overview of Microsoft Edge extensions
-          href: extensions-chromium/index.md
+          href: ./extensions/index.md
 
 # -------------------------------------
         - name: What's new
           items:
             - name: Released features for Microsoft Edge Add-ons
-              href: extensions-chromium/whats-new/released-features.md
+              href: ./extensions/whats-new/released-features.md
 
             - name: Roadmap for Microsoft Edge Add-ons
-              href: extensions-chromium/whats-new/roadmap.md
+              href: ./extensions/whats-new/roadmap.md
 
 # -------------------------------------
         - name: Get started
           items:
             - name: Extension concepts and architecture
-              href: extensions-chromium/getting-started/index.md
+              href: ./extensions/getting-started/index.md
 
             - name: Create an extension tutorial, part 1
-              href: extensions-chromium/getting-started/part1-simple-extension.md
+              href: ./extensions/getting-started/part1-simple-extension.md
 
             - name: Create an extension tutorial, part 2
-              href: extensions-chromium/getting-started/part2-content-scripts.md
+              href: ./extensions/getting-started/part2-content-scripts.md
 
             - name: Sideload an extension
-              href: extensions-chromium/getting-started/extension-sideloading.md
+              href: ./extensions/getting-started/extension-sideloading.md
 
 # -------------------------------------
         - name: Port an extension to Microsoft Edge
           items:
             - name: Port a Chrome extension to Microsoft Edge
-              href: extensions-chromium/developer-guide/port-chrome-extension.md
+              href: ./extensions/developer-guide/port-chrome-extension.md
 
 # -------------------------------------
         - name: Develop an extension
@@ -1027,131 +1027,131 @@
             - name: Manifest files
               items:
                 - name: Manifest file format for extensions
-                  href: extensions-chromium/getting-started/manifest-format.md
+                  href: ./extensions/getting-started/manifest-format.md
 
                 - name: Using Content Security Policy (CSP) to control which resources can be run
-                  href: extensions-chromium/developer-guide/csp.md
+                  href: ./extensions/developer-guide/csp.md
                   displayName: policies
 
                 - name: Overview and timelines for migrating to Manifest V3
-                  href: extensions-chromium/developer-guide/manifest-v3.md
+                  href: ./extensions/developer-guide/manifest-v3.md
 
                 - name: Migrate an extension from Manifest V2 to V3
-                  href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+                  href: ./extensions/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
 
             - name: JavaScript APIs
               items:
                 - name: Supported APIs for Microsoft Edge extensions
-                  href: extensions-chromium/developer-guide/api-support.md
+                  href: ./extensions/developer-guide/api-support.md
 
                 - name: Declare API permissions in the manifest
-                  href: extensions-chromium/developer-guide/declare-permissions.md
+                  href: ./extensions/developer-guide/declare-permissions.md
 
             - name: Create an extension that customizes the DevTools UI
-              href: extensions-chromium/developer-guide/devtools-extension.md
+              href: ./extensions/developer-guide/devtools-extension.md
 
             - name: Develop an extension for the Microsoft Edge sidebar
-              href: extensions-chromium/developer-guide/sidebar.md
+              href: ./extensions/developer-guide/sidebar.md
               displayName: sidebar extensions, sidepanel, side panel
 
             - name: Native messaging
-              href: extensions-chromium/developer-guide/native-messaging.md
+              href: ./extensions/developer-guide/native-messaging.md
 
             - name: Defining match patterns for an extension to access file URLs
-              href: extensions-chromium/developer-guide/match-patterns.md
+              href: ./extensions/developer-guide/match-patterns.md
 
             - name: Policies for extensions
               items:
                 - name: App Developer Agreement Addendum for Microsoft Edge program users
-                  href: /legal/microsoft-edge/extensions/ada-addendum
+                  href: .//legal/microsoft-edge/extensions/ada-addendum
                   displayName: policy, policies
 
                 - name: Developer policies for the Microsoft Edge Add-ons store
-                  href: /legal/microsoft-edge/extensions/developer-policies
+                  href: .//legal/microsoft-edge/extensions/developer-policies
                   displayName: policy
 
 # -------------------------------------
         - name: Register as an extension developer
           items:
             - name: Register as a Microsoft Edge extension developer
-              href: extensions-chromium/publish/create-dev-account.md
+              href: ./extensions/publish/create-dev-account.md
 
             - name: Register as an enterprise developer
               items:
                 - name: Verify your company account information
-                  href: extensions-chromium/publish/verify-microsoft-edge-program.md
+                  href: ./extensions/publish/verify-microsoft-edge-program.md
 
                 - name: Add users to the Microsoft Edge program
-                  href: extensions-chromium/publish/aad-account.md
+                  href: ./extensions/publish/aad-account.md
 
             - name: Register and sign in to Partner Center using a GitHub account
-              href: extensions-chromium/publish/github.md
+              href: ./extensions/publish/github.md
 
             - name: Manage account settings
-              href: extensions-chromium/publish/manage-settings.md
+              href: ./extensions/publish/manage-settings.md
 
 # -------------------------------------
         - name: Publish an extension
           items:
             - name: Publish a Microsoft Edge extension
-              href: extensions-chromium/publish/publish-extension.md
+              href: ./extensions/publish/publish-extension.md
 
             - name: Extension hosting
-              href: extensions-chromium/publish/hosting-and-updating.md
+              href: ./extensions/publish/hosting-and-updating.md
 
             - name: Submission states for extensions in the Microsoft Edge Add-ons website
-              href: extensions-chromium/publish/submission-states.md
+              href: ./extensions/publish/submission-states.md
 
             - name: Alternative ways to distribute an extension
-              href: extensions-chromium/developer-guide/alternate-distribution-options.md
+              href: ./extensions/developer-guide/alternate-distribution-options.md
 
             - name: Curation and review process for the Edge Add-ons store
-              href: extensions-chromium/publish/add-ons-store-curation.md
+              href: ./extensions/publish/add-ons-store-curation.md
 
 # -------------------------------------
         - name: Update an extension
           items:
             - name: Update a Microsoft Edge extension
-              href: extensions-chromium/publish/update-extension.md
+              href: ./extensions/publish/update-extension.md
 
             - name: REST API for updating an extension
               items:
                 - name: Using the REST API for updating Microsoft Edge Add-ons
-                  href: extensions-chromium/publish/api/using-addons-api.md
+                  href: ./extensions/publish/api/using-addons-api.md
 
                 - name: REST API Reference for updating Microsoft Edge Add-ons
-                  href: extensions-chromium/publish/api/addons-api-reference.md
+                  href: ./extensions/publish/api/addons-api-reference.md
 
             - name: Set an externally installed extension to automatically update
-              href: extensions-chromium/publish/auto-update.md
+              href: ./extensions/publish/auto-update.md
 
 # -------------------------------------
         - name: Analytics and user reviews
           items:
             - name: View Microsoft Edge extensions analytics dashboard
-              href: extensions-chromium/publish/extensions-analytics.md
+              href: ./extensions/publish/extensions-analytics.md
 
             - name: Reply to user reviews of an extension
-              href: extensions-chromium/publish/reply-user-reviews.md
+              href: ./extensions/publish/reply-user-reviews.md
               displayName: Respond to user reviews
 
 # -------------------------------------
         - name: Best practices
           items:
             - name: Best practices for extensions
-              href: extensions-chromium/developer-guide/best-practices.md
+              href: ./extensions/developer-guide/best-practices.md
             - name: Minimize an extension's impact on page load time
-              href: extensions-chromium/developer-guide/minimize-page-load-time-impact.md
+              href: ./extensions/developer-guide/minimize-page-load-time-impact.md
 
 # -------------------------------------
         - name: Samples
           items:
             - name: Samples for Microsoft Edge extensions
-              href: extensions-chromium/samples.md
+              href: ./extensions/samples.md
 
 # -------------------------------------
         - name: Contact the Microsoft Edge extensions team
-          href: extensions-chromium/publish/contact-extensions-team.md
+          href: ./extensions/publish/contact-extensions-team.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues
 
 # /Extensions
@@ -1161,132 +1161,132 @@
     - name: Progressive Web Apps
       items:
         - name: Overview of Progressive Web Apps (PWAs)
-          href: progressive-web-apps-chromium/index.md
+          href: ./progressive-web-apps/index.md
 
         - name: Get started with PWAs
-          href: progressive-web-apps-chromium/how-to/index.md
+          href: ./progressive-web-apps/how-to/index.md
           displayName: Get started with Progressive Web Apps  # top-of-page title
 
         - name: Best practices for PWAs
-          href: progressive-web-apps-chromium/how-to/best-practices.md
+          href: ./progressive-web-apps/how-to/best-practices.md
 
         - name: How to
           items:
             - name: Publish a PWA to the Microsoft Store
-              href: progressive-web-apps-chromium/how-to/microsoft-store.md
+              href: ./progressive-web-apps/how-to/microsoft-store.md
               displayName: Publish a Progressive Web App to the Microsoft Store  # top-of-page title
 
             - name: Experimental features and origin trials
-              href: progressive-web-apps-chromium/how-to/origin-trials.md
+              href: ./progressive-web-apps/how-to/origin-trials.md
 
             - name: Use Progressive Web Apps in Microsoft Edge
-              href: progressive-web-apps-chromium/ux.md
+              href: ./progressive-web-apps/ux.md
 
             - name: Debug Progressive Web Apps
-              href: progressive-web-apps-chromium/how-to/debug.md
+              href: ./progressive-web-apps/how-to/debug.md
 
             - name: Use a web app manifest to integrate a PWA into the OS
-              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
+              href: ./progressive-web-apps/how-to/web-app-manifests.md
 
             - name: Use a service worker to manage network requests
-              href: progressive-web-apps-chromium/how-to/service-workers.md
+              href: ./progressive-web-apps/how-to/service-workers.md
 
             - name: Store data on the device
-              href: progressive-web-apps-chromium/how-to/offline.md
+              href: ./progressive-web-apps/how-to/offline.md
 
             - name: Define icons and a theme color
-              href: progressive-web-apps-chromium/how-to/icon-theme-color.md
+              href: ./progressive-web-apps/how-to/icon-theme-color.md
 
             - name: Re-engage users with badges and notifications
-              href: progressive-web-apps-chromium/how-to/notifications-badges.md
+              href: ./progressive-web-apps/how-to/notifications-badges.md
               displayName: Re-engage users with badges, notifications, and push messages  # old top-of-page title
 
             - name: Re-engage users with push messages
-              href: progressive-web-apps-chromium/how-to/push.md
+              href: ./progressive-web-apps/how-to/push.md
               displayName: Re-engage users with badges, notifications, and push messages  # old top-of-page title
 
             - name: Synchronize and update a PWA in the background
-              href: progressive-web-apps-chromium/how-to/background-syncs.md
+              href: ./progressive-web-apps/how-to/background-syncs.md
 
             - name: Handle files
-              href: progressive-web-apps-chromium/how-to/handle-files.md
+              href: ./progressive-web-apps/how-to/handle-files.md
               displayName: Handle files in Progressive Web Apps  # top-of-page title
 
             - name: Handle links
-              href: progressive-web-apps-chromium/how-to/handle-urls.md
+              href: ./progressive-web-apps/how-to/handle-urls.md
               displayName: handle urls, Handle links to your Progressive Web App  # top-of-page title
 
             - name: Handle protocols
-              href: progressive-web-apps-chromium/how-to/handle-protocols.md
+              href: ./progressive-web-apps/how-to/handle-protocols.md
               displayName: Handle protocols in Progressive Web Apps  # top-of-page title
 
             - name: Display content in the title bar area using Window Controls Overlay
-              href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
+              href: ./progressive-web-apps/how-to/window-controls-overlay.md
 
             - name: Share content with other apps
-              href: progressive-web-apps-chromium/how-to/share.md
+              href: ./progressive-web-apps/how-to/share.md
 
             - name: Define app shortcuts
-              href: progressive-web-apps-chromium/how-to/shortcuts.md
+              href: ./progressive-web-apps/how-to/shortcuts.md
 
             - name: Build PWA-driven widgets
-              href: progressive-web-apps-chromium/how-to/widgets.md
+              href: ./progressive-web-apps/how-to/widgets.md
 
             - name: Build PWAs for the sidebar in Microsoft Edge
-              href: progressive-web-apps-chromium/how-to/sidebar.md
+              href: ./progressive-web-apps/how-to/sidebar.md
 
         - name: What's New
-          href: progressive-web-apps-chromium/whats-new/pwa.md
+          href: ./progressive-web-apps/whats-new/pwa.md
           displayName: release notes, announcements, What's New in Progressive Web Apps  # top-of-page title
 
         - name: Progressive Web App demos
-          href: progressive-web-apps-chromium/demo-pwas.md
+          href: ./progressive-web-apps/demo-pwas.md
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: WebView2
       items:
         - name: Introduction to Microsoft Edge WebView2
-          href: webview2/index.md
+          href: ./webview2/index.md
 
         - name: Overview of WebView2 features and APIs
-          href: webview2/concepts/overview-features-apis.md
+          href: ./webview2/concepts/overview-features-apis.md
 
 # -----------------------------------------------------------------------------
 # machine setup
         - name: Set up your Dev environment for WebView2
-          href: webview2/how-to/machine-setup.md
+          href: ./webview2/how-to/machine-setup.md
 
 # -----------------------------------------------------------------------------
 # Getting Started tutorials
         - name: Getting Started tutorials
           items:
             - name: Getting Started tutorials
-              href: webview2/get-started/get-started.md
+              href: ./webview2/get-started/get-started.md
               displayName: GettingStartedGuides  # repo dir name
 
             - name: WinUI 2 (UWP)
-              href: webview2/get-started/winui2.md
+              href: ./webview2/get-started/winui2.md
               displayName: Get started with WebView2 in WinUI 2 (UWP) apps  # no repo dir exists  # top-of-page title
 
             - name: WinUI 3 (Windows App SDK)
-              href: webview2/get-started/winui.md
+              href: ./webview2/get-started/winui.md
               displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
 
             - name: WPF
-              href: webview2/get-started/wpf.md
+              href: ./webview2/get-started/wpf.md
               displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
 
             - name: WinForms
-              href: webview2/get-started/winforms.md
+              href: ./webview2/get-started/winforms.md
               displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
 
             - name: Win32
-              href: webview2/get-started/win32.md
+              href: ./webview2/get-started/win32.md
               displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
 
             - name: HoloLens 2
-              href: webview2/get-started/hololens2.md
+              href: ./webview2/get-started/hololens2.md
               displayName: HoloLens2_GettingStarted, Get started with WebView2 in HoloLens 2 Unity apps (Preview)  # repo dir name  # top-of-page title
 
 # -----------------------------------------------------------------------------
@@ -1294,39 +1294,39 @@
         - name: Sample apps
           items:
             - name: Sample apps
-              href: webview2/code-samples-links.md
+              href: ./webview2/code-samples-links.md
 
             - name: Win32 sample app
-              href: webview2/samples/webview2apissample.md
+              href: ./webview2/samples/webview2apissample.md
               displayName: WebView2APISample, SampleApps, Win32 sample app # repo dir names, top-of-page title
 
             - name: Win32 sample app with Visual Composition
-              href: webview2/samples/webview2samplewincomp.md
+              href: ./webview2/samples/webview2samplewincomp.md
               displayName: WebView2SampleWinComp, Win32 sample app with Visual Composition  # repo dir name, top-of-page title
 
             - name: Win32 sample WebView2Browser
-              href: webview2/samples/webview2browser.md
+              href: ./webview2/samples/webview2browser.md
               displayName: WebView2Browser  # repo dir name
 
             - name: WinUI 2 (UWP) sample app
-              href: webview2/samples/webview2_sample_uwp.md
+              href: ./webview2/samples/webview2_sample_uwp.md
               displayName: webview2_sample_uwp, WinUI 2 (UWP) sample app  # repo dir name, top-of-page title
 
 # pending, July 26 2022
 #            - name: WinUI 3 sample app
-#              href: webview2/samples/webview2-winui3-sample.md
+#              href: ./webview2/samples/webview2-winui3-sample.md
 #              displayName: WebView2_WinUI3_Sample  # repo dir name
 
             - name: WPF sample app
-              href: webview2/samples/webview2wpfbrowser.md
+              href: ./webview2/samples/webview2wpfbrowser.md
               displayName: WebView2WpfBrowser, WPF sample app  # repo dir name, top-of-page title
 
             - name: WPF sample app with CDP
-              href: webview2/samples/wv2cdpextensionwpfsample.md
+              href: ./webview2/samples/wv2cdpextensionwpfsample.md
               displayName: WV2CDPExtensionWPFSample, WPF sample app with CDP extension  # repo dir name, top-of-page title
 
             - name: WinForms sample app
-              href: webview2/samples/webview2windowsformsbrowser.md
+              href: ./webview2/samples/webview2windowsformsbrowser.md
               displayName: WebView2WindowsFormsBrowser, WinForms sample app  # repo dir name, top-of-page title
 
 # -----------------------------------------------------------------------------
@@ -1334,153 +1334,153 @@
         - name: Deployment samples
           items:
             - name: Deployment samples
-              href: webview2/samples/deployment-samples.md
+              href: ./webview2/samples/deployment-samples.md
 
             - name: WebView2 Deployment Visual Studio installer
-              href: webview2/samples/wv2deploymentvsinstallersample.md
+              href: ./webview2/samples/wv2deploymentvsinstallersample.md
               displayName: WV2DeploymentVSInstallerSample  # repo dir name
 
             - name: WiX Burn Bundle to deploy the WebView2 Runtime
-              href: webview2/samples/wv2deploymentwixburnbundlesample.md
+              href: ./webview2/samples/wv2deploymentwixburnbundlesample.md
               displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
 
             - name: WiX Custom Action to deploy the WebView2 Runtime
-              href: webview2/samples/wv2deploymentwixcustomactionsample.md
+              href: ./webview2/samples/wv2deploymentwixcustomactionsample.md
               displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 
 # -----------------------------------------------------------------------------
         - name: Fundamentals
           items:
             - name: Differences between Microsoft Edge and WebView2
-              href: webview2/concepts/browser-features.md
+              href: ./webview2/concepts/browser-features.md
 
             - name: WebView2 browser flags
-              href: webview2/concepts/webview-features-flags.md
+              href: ./webview2/concepts/webview-features-flags.md
 
             - name: "Main classes for WebView2: Environment, Controller, and Core"
-              href: webview2/concepts/environment-controller-core.md
+              href: ./webview2/concepts/environment-controller-core.md
 
             - name: Navigation events
-              href: webview2/concepts/navigation-events.md
+              href: ./webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title
 
             - name: Process-related events
-              href: webview2/concepts/process-related-events.md
+              href: ./webview2/concepts/process-related-events.md
               displayName: Handling process-related events in WebView2  # top-of-page title
 
             - name: Basic authentication
-              href: webview2/concepts/basic-authentication.md
+              href: ./webview2/concepts/basic-authentication.md
               displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
 
             - name: Windowed vs. visual hosting of WebView2
-              href: webview2/concepts/windowed-vs-visual-hosting.md
+              href: ./webview2/concepts/windowed-vs-visual-hosting.md
 
             - name: Custom management of network requests
-              href: webview2/how-to/webresourcerequested.md
+              href: ./webview2/how-to/webresourcerequested.md
               displayName: WebResourceRequested, WebResourceResponseReceived
 
             - name: Web and native interop
               items:
                 - name: Interop of native-side and web-side code
-                  href: webview2/how-to/communicate-btwn-web-native.md
+                  href: ./webview2/how-to/communicate-btwn-web-native.md
                   displayName: JavaScript interop, Embed web content into native applications (JavaScript interop)  # old title
 
                 - name: Call web-side code from native-side code
-                  href: webview2/how-to/javascript.md
+                  href: ./webview2/how-to/javascript.md
                   displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
 
                 - name: Call native-side code from web-side code
-                  href: webview2/how-to/hostobject.md
+                  href: ./webview2/how-to/hostobject.md
                   displayName: AddHostObjectToScript, host objects
 
                 - name: Call native-side WinRT code from web-side code
-                  href: webview2/how-to/winrt-from-js.md
+                  href: ./webview2/how-to/winrt-from-js.md
                   displayName: AddHostObjectToScript, host objects
 
                 - name: How WinRT types and members are represented in JavaScript
-                  href: webview2/how-to/winrt-js-conversion.md
+                  href: ./webview2/how-to/winrt-js-conversion.md
 
             - name: Using frames
-              href: webview2/concepts/frames.md
+              href: ./webview2/concepts/frames.md
               displayName: Using frames in WebView2 apps, iframe # full title
 
             - name: Printing
-              href: webview2/how-to/print.md
+              href: ./webview2/how-to/print.md
               displayName: Printing from WebView2 apps # full title
 
             # updated h2: Experimental APIs, added a 2nd, new h3:
             - name: Prerelease and Release SDKs for WebView2
-              href: webview2/concepts/versioning.md
+              href: ./webview2/concepts/versioning.md
               displayName: Understand WebView2 SDK versions, Understand the different WebView2 SDK versions  # old titles
 
             - name: Distribute your app and the WebView2 Runtime
-              href: webview2/concepts/distribution.md
+              href: ./webview2/concepts/distribution.md
 
             - name: Working with local content in WebView2 apps
-              href: webview2/concepts/working-with-local-content.md
+              href: ./webview2/concepts/working-with-local-content.md
 
 # -----------------------------------------------------------------------------
         - name: Test and automation in WebView2 apps
           items:
             - name: Test upcoming APIs and features
-              href: webview2/how-to/set-preview-channel.md
+              href: ./webview2/how-to/set-preview-channel.md
 
             - name: Use Playwright to automate and test in WebView2
-              href: webview2/how-to/playwright.md
+              href: ./webview2/how-to/playwright.md
 
             - name: Automate and test WebView2 apps with Microsoft Edge WebDriver
-              href: webview2/how-to/webdriver.md
+              href: ./webview2/how-to/webdriver.md
 
             - name: Prerelease testing using preview channels
-              href: webview2/how-to/prerelease-testing.md
+              href: ./webview2/how-to/prerelease-testing.md
 
             - name: Self-host by deploying preview channels
-              href: webview2/how-to/self-hosting.md
+              href: ./webview2/how-to/self-hosting.md
               displayName: self-hosting
 
         - name: Best Practices
           items:
             - name: Development best practices
-              href: webview2/concepts/developer-guide.md
+              href: ./webview2/concepts/developer-guide.md
               displayName: Development best practices for WebView2 apps  # top-of-page title
 
             - name: Develop secure WebView2 apps
-              href: webview2/concepts/security.md
+              href: ./webview2/concepts/security.md
 
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
           items:
             - name: Debug WebView2 apps
-              href: webview2/how-to/debug.md
+              href: ./webview2/how-to/debug.md
 
             - name: Microsoft Edge DevTools
-              href: webview2/how-to/debug-devtools.md
+              href: ./webview2/how-to/debug-devtools.md
               displayName: Debug WebView2 apps with Microsoft Edge DevTools  # top-of-page title
 
             - name: Microsoft Visual Studio Code
-              href: webview2/how-to/debug-visual-studio-code.md
+              href: ./webview2/how-to/debug-visual-studio-code.md
               displayName: Debug WebView2 apps with Visual Studio Code  # top-of-page title
 
             - name: Microsoft Visual Studio
-              href: webview2/how-to/debug-visual-studio.md
+              href: ./webview2/how-to/debug-visual-studio.md
               displayName: Debug WebView2 apps with Visual Studio  # top-of-page title
 
             - name: Remote debugging WebView2 WinUI 2 (UWP) apps
               items:
                 - name: Remote debugging WebView2 WinUI 2 (UWP) apps
-                  href: webview2/how-to/remote-debugging.md
+                  href: ./webview2/how-to/remote-debugging.md
                   displayName: remotely debug
 
                 - name: Desktop
-                  href: webview2/how-to/remote-debugging-desktop.md
+                  href: ./webview2/how-to/remote-debugging-desktop.md
                   displayName: Remote debugging desktop WebView2 WinUI 2 (UWP) apps, remotely debug, Remote Tools for Microsoft Edge  # top-of-page title + 2 add'l
 
                 - name: HoloLens 2
-                  href: webview2/how-to/remote-debugging-hololens.md
+                  href: ./webview2/how-to/remote-debugging-hololens.md
                   displayName: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps, remotely debug, Remote Tools for Microsoft Edge  # top-of-page title + 2 add'l
 
                 - name: Xbox
-                  href: webview2/how-to/remote-debugging-xbox.md
+                  href: ./webview2/how-to/remote-debugging-xbox.md
                   displayName: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps, remotely debug  # top-of-page title + 1 add'l
 
 # -----------------------------------------------------------------------------
@@ -1488,28 +1488,28 @@
           items:
 
           # - name: Architecture of WebView2
-          #   href: webview2/concepts/architecture.md
+          #   href: ./webview2/concepts/architecture.md
 
             - name: Process model
-              href: webview2/concepts/process-model.md
+              href: ./webview2/concepts/process-model.md
               displayName: Process model for WebView2 apps  # top-of-page title
 
             - name: Threading model
-              href: webview2/concepts/threading-model.md
+              href: ./webview2/concepts/threading-model.md
               displayName: Threading model for WebView2 apps  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: User data and history
           items:
             - name: Manage user data folders
-              href: webview2/concepts/user-data-folder.md
+              href: ./webview2/concepts/user-data-folder.md
               displayName: Manage the user data folder  # old title
 
             - name: Support multiple profiles under a single user data folder
-              href: webview2/concepts/multi-profile-support.md
+              href: ./webview2/concepts/multi-profile-support.md
 
             - name: Clear browsing data from the user data folder
-              href: webview2/concepts/clear-browsing-data.md
+              href: ./webview2/concepts/clear-browsing-data.md
 
 # -----------------------------------------------------------------------------
         - name: Advanced topics
@@ -1518,104 +1518,104 @@
             # - name: Customize the UI   # not needed?  flatten
             #   items:
             #     - name: Customize the UI of WebView2 apps
-            #       href: webview2/how-to/customize-ui.md
+            #       href: ./webview2/how-to/customize-ui.md
             #       displayName: context menu, right-click menu
 
             - name: Customize context menus
-              href: webview2/how-to/context-menus.md
+              href: ./webview2/how-to/context-menus.md
               displayName: right-click menu, Customize context menus in WebView2  # top-of-page title
 
             - name: Use the Chrome DevTools Protocol (CDP)
-              href: webview2/how-to/chromium-devtools-protocol.md
+              href: ./webview2/how-to/chromium-devtools-protocol.md
               displayName: Use the Chrome DevTools Protocol (CDP) in WebView2 apps, chrome developer protocol  # top-of-page title & catch a mis-type
 
             - name: Data and privacy
-              href: webview2/concepts/data-privacy.md
+              href: ./webview2/concepts/data-privacy.md
               displayName: Data and privacy in WebView2  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: Deployment and distribution
           items:
             - name: Deployment and distribution  # new firstchild page
-              href: webview2/concepts/deployment-distribution.md
+              href: ./webview2/concepts/deployment-distribution.md
               displayName: Manage WebView2 applications  # old title
 
             - name: Enterprise management of WebView2 Runtimes
-              href: webview2/concepts/enterprise.md
+              href: ./webview2/concepts/enterprise.md
               displayName: Manage WebView2 applications  # old title
 
             - name: Distribute an app as a single executable file
-              href: webview2/how-to/static.md
+              href: ./webview2/how-to/static.md
               displayName: Statically link the WebView2 loader library, single-file app  # old title
 
             - name: Publish a UWP WebView2 app to the Microsoft Store
-              href: webview2/how-to/publish-uwp-app-store.md
+              href: ./webview2/how-to/publish-uwp-app-store.md
               displayName: Partner Center, Microsoft Store
 # -----------------------------------------------------------------
 # relnotes
         - name: Release Notes
           items:
             - name: About  # new page
-              href: webview2/release-notes/about.md
+              href: ./webview2/release-notes/about.md
               displayName: About Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
             - name: Release Notes
-              href: webview2/release-notes/index.md  # new location & file name, instead of at wv2 root
+              href: ./webview2/release-notes/index.md  # new location & file name, instead of at wv2 root
               displayName: Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
             - name: Archived Release Notes  # new page
-              href: webview2/release-notes/archive.md
+              href: ./webview2/release-notes/archive.md
               displayName: Archived Release Notes for the WebView2 SDK, what's new, announcements  # top-of-page title
 
 
 # end of relnotes
 # -----------------------------------------------------------------
         - name: WebView2 Roadmap
-          href: webview2/roadmap.md
+          href: ./webview2/roadmap.md
 
         - name: WebView2 Reference
           items:
             - name: WebView2 API Reference
-              href: webview2/webview2-api-reference.md
+              href: ./webview2/webview2-api-reference.md
               displayName: functions, methods  # list relevant platforms
 
             - name: .NET
               items:
                 - name: Microsoft.Web.WebView2.Core
-                  href: /dotnet/api/microsoft.web.webview2.core
+                  href: .//dotnet/api/microsoft.web.webview2.core
                   displayName: functions, methods
 
                 - name: Microsoft.Web.WebView2.Wpf
-                  href: /dotnet/api/microsoft.web.webview2.wpf
+                  href: .//dotnet/api/microsoft.web.webview2.wpf
                   displayName: functions, methods
 
                 - name: Microsoft.Web.WebView2.WinForms
-                  href: /dotnet/api/microsoft.web.webview2.winforms
+                  href: .//dotnet/api/microsoft.web.webview2.winforms
                   displayName: functions, methods
 
                 - name: HoloLens 2
                   items:
                     - name: Unity Plugin
-                      href: /windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin
+                      href: .//windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin
                       displayName: functions, methods
 
             - name: WinRT
               items:
                 - name: Microsoft.Web.WebView2.Core
-                  href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
+                  href: .//microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
                 - name: COM Interop/C++
-                  href: /microsoft-edge/webview2/reference/winrt/interop/index
+                  href: .//microsoft-edge/webview2/reference/winrt/interop/index
                   displayName: functions, methods
 
             - name: Win32/C++
               items:
                 - name: Win32 C++ WebView2 API conventions
-                  href: webview2/concepts/win32-api-conventions.md
+                  href: ./webview2/concepts/win32-api-conventions.md
 
                 - name: Win32 C++ API Reference
-                  href: /microsoft-edge/webview2/reference/win32/index
+                  href: .//microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
 
             - name: JavaScript
@@ -1643,10 +1643,10 @@
                   uid: 'WebView2Script!WebViewMessageEvent:class'
 
         - name: WebView2 end-user FAQ
-          href: webview2/concepts/end-user-faq.md
+          href: ./webview2/concepts/end-user-faq.md
 
         - name: Contact the WebView2 team
-          href: webview2/contact.md
+          href: ./webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 # / WebView2 articles
 
@@ -1655,71 +1655,71 @@
     - name: Test and automation
       items:
         - name: Test and automation in Microsoft Edge  # new firstchild article
-          href: test-and-automation/test-and-automation.md
+          href: ./test-and-automation/test-and-automation.md
 
         - name: DevTools Protocol
-          href: test-and-automation/devtools-protocol.md
+          href: ./test-and-automation/devtools-protocol.md
 
         - name: Use Origin Trials in Microsoft Edge
-          href: origin-trials/index.md
+          href: ./origin-trials/index.md
 
         - name: Use Playwright to automate and test in Microsoft Edge
-          href: playwright/index.md
+          href: ./playwright/index.md
 
         - name: Puppeteer overview
-          href: puppeteer/index.md
+          href: ./puppeteer/index.md
 
         - name: WebDriver
           items:
             - name: Use WebDriver to automate Microsoft Edge
-              href: webdriver-chromium/index.md
+              href: ./webdriver/index.md
 
             - name: Use Internet Explorer Driver to automate IE mode in Microsoft Edge
-              href: webdriver-chromium/ie-mode.md
+              href: ./webdriver/ie-mode.md
 
             - name: Capabilities and EdgeOptions
-              href: webdriver-chromium/capabilities-edge-options.md
+              href: ./webdriver/capabilities-edge-options.md
             - name: Contact the Microsoft Edge WebDriver team
-              href: webdriver-chromium/contact.md
+              href: ./webdriver/contact.md
 
         - name: webhint extension for Visual Studio Code
-          href: test-and-automation/webhint.md
+          href: ./test-and-automation/webhint.md
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Development tips for Microsoft Edge
       items:
         - name: Development tips for Microsoft Edge
-          href: web-platform/web-platform.md
+          href: ./web-platform/web-platform.md
 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
-          href: web-platform/site-impacting-changes.md
+          href: ./web-platform/site-impacting-changes.md
 
         - name: Move users to Microsoft Edge from Internet Explorer
-          href: web-platform/ie-to-microsoft-edge-redirection.md
+          href: ./web-platform/ie-to-microsoft-edge-redirection.md
 
         - name: Tracking prevention in Microsoft Edge
-          href: web-platform/tracking-prevention.md
+          href: ./web-platform/tracking-prevention.md
 
         - name: Detect Microsoft Edge from your website
-          href: web-platform/user-agent-guidance.md
+          href: ./web-platform/user-agent-guidance.md
 
         - name: Develop for the sidebar
-          href: web-platform/sidebar.md
+          href: ./web-platform/sidebar.md
           displayName: sidebar apps, sidebar extensions, pwa, side panel, sidepanel
 
         - name: Detect Windows 11 using User-Agent Client Hints
-          href: web-platform/how-to-detect-win11.md
+          href: ./web-platform/how-to-detect-win11.md
 
         - name: Customize the password reveal button
-          href: web-platform/password-reveal.md
+          href: ./web-platform/password-reveal.md
 
         - name: Operating System Regional Data Display
-          href: web-platform/os-regional-settings.md
+          href: ./web-platform/os-regional-settings.md
           displayName: globalization, language, region, limited, intl, date, time, format
 
         - name: View formatted JSON
-          href: devtools-guide-chromium/json-viewer/json-viewer.md
+          href: ./devtools-guide/json-viewer/json-viewer.md
           displayName: JSON viewer, view JSON
 
 # =============================================================================
@@ -1727,69 +1727,69 @@
     - name: Microsoft Edge IDE integration
       items:
         - name: Microsoft Edge IDE integration
-          href: visual-studio-code/ide-integration.md
+          href: ./visual-studio-code/ide-integration.md
 
         - name: DevTools extension for Visual Studio Code # aux jump page
-          href: visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md
+          href: ./visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md
 
         - name: Opening source files in Visual Studio Code
-          href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
+          href: ./devtools-guide/sources/opening-sources-in-vscode.md
           displayName: Open source files in Visual Studio Code # variant title string
 
         - name: Debug Microsoft Edge in Visual Studio Code
-          href: visual-studio-code/debugger-for-edge.md
+          href: ./visual-studio-code/debugger-for-edge.md
 
         - name: Visual Studio for web development
-          href: visual-studio/index.md
+          href: ./visual-studio/index.md
 
 # =============================================================================
 # if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Accessibility in Microsoft Edge
       items:
         - name: Accessibility in Microsoft Edge
-          href: accessibility/index.md
+          href: ./accessibility/index.md
 
         - name: Design accessible websites
-          href: accessibility/design.md
+          href: ./accessibility/design.md
 
         - name: Resources about building accessible websites
-          href: accessibility/build/index.md
+          href: ./accessibility/build/index.md
 
         - name: ARIA and UI automation in Microsoft Edge
-          href: accessibility/build/ARIA-and-UI-Automation.md
+          href: ./accessibility/build/ARIA-and-UI-Automation.md
 
         - name: Resources for accessibility testing
-          href: accessibility/test.md
+          href: ./accessibility/test.md
 
 #==============================================================================
 # DualEngine
     - name: DualEngine
       items:
         - name: Introduction to the Microsoft DualEngine API
-          href: dualengine/intro.md
+          href: ./dualengine/intro.md
           displayName: Internet Explorer
 
         - name: Getting started with the DualEngine API
-          href: dualengine/get-started.md
+          href: ./dualengine/get-started.md
 
         - name: Creating a DualEngine adapter plugin DLL
-          href: dualengine/concepts/adapter-dll.md
+          href: ./dualengine/concepts/adapter-dll.md
 
         - name: Launching Internet Explorer
-          href: dualengine/concepts/launching-internet-explorer.md
+          href: ./dualengine/concepts/launching-internet-explorer.md
 
         - name: DualEngine Win32 C++ Reference
-          href: dualengine/reference/index.md
+          href: ./dualengine/reference/index.md
           displayName: functions, methods
 
 # =============================================================================
 # bottom leaf nodes
     - name: Videos about web development with Microsoft Edge
-      href: dev-videos/index.md
+      href: ./dev-videos/index.md
       displayName: youtube
 
     - name: Microsoft Edge Privacy Whitepaper
-      href: /legal/microsoft-edge/privacy
+      href: .//legal/microsoft-edge/privacy
 
     - name: The Web We Want initiative
-      href: web-we-want/index.md
+      href: ./web-we-want/index.md

@@ -142,11 +142,11 @@ conceptualContent:
 
             - itemType: reference
               text: Defining match patterns to access file URLs
-              url: ./extensions-chromium/enterprise/match-patterns.md
+              url: ./extensions/enterprise/match-patterns.md
 
             - itemType: reference
               text: Extension hosting
-              url: ./extensions-chromium/enterprise/hosting-and-updating.md
+              url: ./extensions/enterprise/hosting-and-updating.md
 # =============================================================================
     - title: Microsoft Edge for Developers # < 60 chars (optional)
     # summary:  # < 160 chars (optional)
@@ -163,27 +163,27 @@ conceptualContent:
               itemType: overview
 
             - text: Microsoft Edge DevTools documentation  # DevTools landing page
-              url: ./devtools-guide-chromium/landing/index.yml
+              url: ./devtools-guide/landing/index.yml
               itemType: overview
 
             - text: Overview of DevTools  # renamed from index.md
-              url: ./devtools-guide-chromium/overview.md
+              url: ./devtools-guide/overview.md
               itemType: overview
 
             - text: What's New in Microsoft Edge DevTools
-              url: ./devtools-guide-chromium/whats-new/whats-new.md
+              url: ./devtools-guide/whats-new/whats-new.md
               itemType: whats-new
 
             - text: Command Menu
-              url: ./devtools-guide-chromium/command-menu/index.md
+              url: ./devtools-guide/command-menu/index.md
               itemType: how-to-guide
 
             - text: View and change CSS
-              url: ./devtools-guide-chromium/css/index.md
+              url: ./devtools-guide/css/index.md
               itemType: how-to-guide
 
             - text: Keyboard shortcuts
-              url: ./devtools-guide-chromium/shortcuts/index.md
+              url: ./devtools-guide/shortcuts/index.md
               itemType: reference
         # Card
         - title: Microsoft Edge IDE integration
@@ -197,7 +197,7 @@ conceptualContent:
               itemType: overview
 
             - text: Open source files in Visual Studio Code
-              url: ./devtools-guide-chromium/sources/opening-sources-in-vscode.md
+              url: ./devtools-guide/sources/opening-sources-in-vscode.md
               itemType: how-to-guide
 
             - text: Debug Microsoft Edge in Visual Studio Code
@@ -211,61 +211,61 @@ conceptualContent:
         - title: Microsoft Edge extensions
           links:
             - text: Extensions overview
-              url: ./extensions-chromium/index.md
+              url: ./extensions/index.md
               itemType: overview
 
             - text: Getting started tutorial
-              url: ./extensions-chromium/getting-started/index.md
+              url: ./extensions/getting-started/index.md
               itemType: overview
 
             - text: Port a Chromium extension to Microsoft Edge
-              url: ./extensions-chromium/developer-guide/port-chrome-extension.md
+              url: ./extensions/developer-guide/port-chrome-extension.md
               itemType: overview
 
             - text: Alternative ways to distribute an extension
-              url: ./extensions-chromium/developer-guide/alternate-distribution-options.md
+              url: ./extensions/developer-guide/alternate-distribution-options.md
               itemType: how-to-guide
 
             - text: Step-wise publishing process
-              url: ./extensions-chromium/publish/publish-extension.md
+              url: ./extensions/publish/publish-extension.md
               itemType: how-to-guide
 
             - text: Register as a Microsoft Edge extension developer
-              url: ./extensions-chromium/publish/create-dev-account.md
+              url: ./extensions/publish/create-dev-account.md
               itemType: how-to-guide
 
             - text: Create a simple extension
-              url: ./extensions-chromium/getting-started/part1-simple-extension.md
+              url: ./extensions/getting-started/part1-simple-extension.md
               itemType: how-to-guide
         # Card
         - title: Progressive Web Apps
           links:
             - text: Overview of Progressive Web Apps
-              url: ./progressive-web-apps-chromium/index.md
+              url: ./progressive-web-apps/index.md
               itemType: overview
 
             - text: Get started with PWAs
-              url: ./progressive-web-apps-chromium/how-to/index.md
+              url: ./progressive-web-apps/how-to/index.md
               itemType: overview
 
             - text: Debug Progressive Web Apps
-              url: ./devtools-guide-chromium/progressive-web-apps/index.md
+              url: ./devtools-guide/progressive-web-apps/index.md
               itemType: overview
 
             - text: What's New in Progressive Web Apps
-              url: ./progressive-web-apps-chromium/whats-new/pwa.md
+              url: ./progressive-web-apps/whats-new/pwa.md
               itemType: whats-new
 
             - text: Store data on the device
-              url: ./progressive-web-apps-chromium/how-to/offline.md
+              url: ./progressive-web-apps/how-to/offline.md
               itemType: concept
 
             - text: Use a service worker to manage network requests
-              url: ./progressive-web-apps-chromium/how-to/service-workers.md
+              url: ./progressive-web-apps/how-to/service-workers.md
               itemType: concept
 
             - text: Use a web app manifest to integrate a PWA into the OS
-              url: ./progressive-web-apps-chromium/how-to/web-app-manifests.md
+              url: ./progressive-web-apps/how-to/web-app-manifests.md
               itemType: concept
 
         # Card
@@ -322,7 +322,7 @@ conceptualContent:
               itemType: how-to-guide
 
             - text: WebDriver
-              url: ./webdriver-chromium/index.md
+              url: ./webdriver/index.md
               itemType: how-to-guide
 
             - text: webhint extension for Visual Studio Code
@@ -350,7 +350,7 @@ conceptualContent:
         - title: Accessibility in Microsoft Edge
           links:
             - text: Accessibility-testing features
-              url: ./devtools-guide-chromium/accessibility/reference.md
+              url: ./devtools-guide/accessibility/reference.md
               itemType: overview
 
             - text: Accessibility overview

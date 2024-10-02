@@ -177,7 +177,7 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 
 See also:
 * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
-* [Downloading or cloning the Demos repo](../../devtools-guide-chromium/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
+* [Downloading or cloning the Demos repo](../../devtools-guide/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
 * [Step 6: Set up a localhost server](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
 
 
@@ -307,5 +307,5 @@ To update the WebView2 Runtime on your development machine and on user machines,
 ## See also
 
 * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
-* [Downloading or cloning the Demos repo](../../devtools-guide-chromium/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
+* [Downloading or cloning the Demos repo](../../devtools-guide/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
 * [Step 6: Set up a localhost server](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
