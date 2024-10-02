@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 09/23/2024
+ms.date: 10/02/2024
 ---
 # Windowed vs. Visual hosting of WebView2
 
@@ -124,9 +124,9 @@ When using _Visual hosting_, your host app receives spatial input (such as mouse
 <!-- ------------------------------ -->
 #### Requirements for scaling the contents
 
-Per composition-based rendering, a WebView2 control is part of a Visual tree, so by default, it's rendered at the scale of its ancestor Visual.  For example, if a WebView2's ancestor Visual is scaled 2x, then the WebView2's contents are also rendered at 2x scale.  But because the WebView2 is not scaling its own contents, they're blurry.
+Per composition-based rendering, a WebView2 control is part of a Visual tree, so by default, it's rendered at a scale that's based on the scales of all of its ancestor Visuals.  For example, if a WebView2's ancestor Visual is scaled (zoomed) 2x, then the WebView2's contents are also rendered at 2x scale.  If the WebView2's parent Visual is scaled 2x and that Visual's parent is also scaled 2x, then the WebView2 is scaled 4x.  But because the WebView2 is not scaling its own contents, they're blurry.
 
-To resolve this, the app can disable default Visual scaling on the WebView2, and instead use the Rasterization Scale APIs to apply the intended Visual scaling.  This results in the WebView2's contents rendering at the correct scale.
+To resolve this, the app can undo the default Visual scaling of the WebView2, and instead use the Rasterization Scale APIs to apply the intended Visual scaling.  This results in the WebView2's contents rendering at the correct scale.
 
 
 <!-- ------------------------------ -->
