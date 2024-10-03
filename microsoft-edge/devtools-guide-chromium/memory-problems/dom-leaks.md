@@ -39,11 +39,9 @@ As explained in [Fix memory problems](index.md), memory issues affect page perfo
 <!-- ====================================================================== -->
 ## Open the Detached Elements tool
 
-To open the **Detached Elements** tool and load the demo page:
+To open the demo page and view its detached elements:
 
 1. Open the [Detached Elements demo application](https://microsoftedge.github.io/Demos/detached-elements/) in a new window or tab.
-
-   <!-- You can view the source files for the Detached Elements demo in the [MicrosoftEdge/Demos > detached-elements](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) repo folder. -->
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
@@ -55,7 +53,7 @@ To open the **Detached Elements** tool and load the demo page:
 <!-- ====================================================================== -->
 ## Get detached elements
 
-The **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button in the **Detached Elements** tool finds and displays all of the detached elements on a web page.
+The **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button in the **Detached Elements** feature finds and displays all of the detached elements on a web page.
 
 To find detached elements:
 
@@ -69,9 +67,9 @@ To find detached elements:
 
 1. Click the **Room 2** button:
 
-1. In the **Detached Elements** tool, click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) icon.
+1. In the **Detached Elements** feature, click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) icon.
 
-   The **Detached Elements** tool displays all of the detached elements of the page.  When you switch to **Room 2** in the demo application, the messages that were generated in **Room 1** are no longer attached to the DOM, but they are still referenced by JavaScript:
+   The **Detached Elements** feature displays all of the detached elements of the page.  When you switch to **Room 2** in the demo application, the messages that were generated in **Room 1** are no longer attached to the DOM, but they are still referenced by JavaScript:
 
    ![Get Detached Elements using the Detached Elements tool](./dom-leaks-images/get-detached-elements.png)
 
@@ -81,29 +79,29 @@ To find detached elements:
 
 Next, trigger garbage collection (GC) in the browser:
 
-1. In the **Detached Elements** tool, click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.
+1. In the **Detached Elements** feature, click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.
 
 1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) icon.
 
-When you select **Collect garbage**, the browser runs garbage collection. When you select **Get Detached Elements**, the **Detached Elements** tool displays all detached elements that cannot be garbage collected. These detached elements may be memory leaks if they aren't going to be reused by the application.
+When you select **Collect garbage**, the browser runs garbage collection. When you select **Get Detached Elements**, the **Detached Elements** feature displays all detached elements that cannot be garbage collected. These detached elements may be memory leaks if they aren't going to be reused by the application.
 
 
 <!-- ====================================================================== -->
 ## Identify the JavaScript code that retains detached elements
 
-Once you have found a detached element that cannot be garbage-collected, you can use the **Analyze** (![The Analyze icon](./dom-leaks-images/analyze-icon.png)) button in the **Detached Elements** tool to identify the JavaScript code running on the page that is still referencing the detached element. The **Analyze** button takes a heap snapshot and populates the **ID** of the detached element with its location in the heap.
+Once you have found a detached element that cannot be garbage-collected, you can use the **Analyze** (![The Analyze icon](./dom-leaks-images/analyze-icon.png)) button in the **Detached Elements** feature to identify the JavaScript code running on the page that is still referencing the detached element. The **Analyze** button takes a heap snapshot and populates the **ID** of the detached element with its location in the heap.
 
 For more information about heap snapshots, read [Record heap snapshots using the Memory tool](heap-snapshots.md).
 
 To identify the JavaScript code that references a detached element:
 
-1. In the **Detached Elements** tool, click the **Analyze** (![The Analyze icon](./dom-leaks-images/analyze-icon.png)) icon.
+1. In the **Detached Elements** feature, click the **Analyze** (![The Analyze icon](./dom-leaks-images/analyze-icon.png)) icon.
 
    The **Memory** tool opens in the **Quick View** toolbar, at the bottom of DevTools:
 
    ![Analyze Detached Elements in the Detached Elements tool](./dom-leaks-images/analyze-detached-elements.png)
 
-1. From the **Detached Elements** tool, select the **Id** field of a detached element.
+1. From the **Detached Elements** feature, select the **Id** field of a detached element.
 
    The **Memory** tool automatically selects the object in the heap that is referencing the detached element. We call these objects **Retainers**:
 
@@ -147,7 +145,7 @@ You can check for detached elements from different origins or frames using the *
 
 1. Select a different origin.
 
-The new origin is displayed in the **Detached Elements** tool.
+The new origin is displayed in the **Detached Elements** feature.
 
    
 <!-- ====================================================================== -->
@@ -163,4 +161,12 @@ Similarly, a feed in social media might detach elements as users scroll past the
 
 For long-running apps, small memory leaks of only a few kilobytes can noticeably degrade performance over time. Web developers who use the React framework know that React maintains a virtualized copy of the DOM. Failing to properly unmount components can potentially lead to an application leaking large parts of the virtual DOM.
 
-This demo app and its leaks are artificial. Test the Detached Elements tool on your production website or app. If you find potential problems with the Detached Elements tool, [contact the Microsoft Edge DevTools team](../contact.md) to send feedback about the **Detached Elements** tool and memory leak debugging.
+This demo app and its leaks are artificial. Test the Detached Elements tool on your production website or app. If you find potential problems with the Detached Elements tool, [contact the Microsoft Edge DevTools team](../contact.md) to send feedback about the **Detached Elements** feature and memory leak debugging.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- todo: all links in article -->
+
+* [Detached Elements demo application](https://microsoftedge.github.io/Demos/detached-elements/)
+* [MicrosoftEdge/Demos > detached-elements](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) repo folder, to view the source files for the Detached Elements demo.
