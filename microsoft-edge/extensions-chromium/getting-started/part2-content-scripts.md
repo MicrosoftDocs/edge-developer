@@ -10,14 +10,11 @@ ms.date: 10/03/2024
 ---
 # Tutorial part 2: Add JavaScript to the extension
 
-<!-- todo:
-within h2 sections, format as numbered action step lists
-walk through steps
--->
+<!-- todo: format as numbered lists -->
 
-In Part 1 of this tutorial, you create a simple extension that displays `stars.jpeg` in a pop-up in any Microsoft Edge tab.  In Part 2 of this tutorial, you add JavaScript code that inserts the `stars.jpeg` image into the top of the currently opened webpage.  You update the pop-up from Part 1 to replace `stars.jpeg` with a title and a standard HTML button, labelled **Display**.  
+In this tutorial, you use JavaScript code to insert the `stars.jpeg` image into the top of the currently opened webpage.  The extension's pop-up contains a title and a standard HTML button, labelled **Display**.  When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.
 
-When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.  That JavaScript inserts `stars.jpeg` at the top of the current webpage, pushing down the content of the webpage to below the image.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image.
+That JavaScript inserts `stars.jpeg` at the top of the current webpage, pushing down the content of the webpage to below the image.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image.
 
 Part 2 covers the following extension technologies:
 *  Injecting JavaScript libraries into an extension.
@@ -25,13 +22,13 @@ Part 2 covers the following extension technologies:
 *  Including content webpages in existing browser tabs.
 *  Having content webpages listen for messages from pop-ups and respond.
 
-To use this article, first do the steps in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).
+To use this article, it is recommended that you first do the steps in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).
 
-If you want to test out the completed extension that you will build in this tutorial, or view its finished code, either:
+If you want to immediately install and run the completed extension that you will build in this tutorial, or view its finished code, either:
 * Clone the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use repo directory `/extension-getting-started-part2/extension-getting-started-part2`.
 * Download the source code from the repo directory [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).
 
-Then you can install and run the finished extension that's in the repo, per [Sideload an extension to install and test it locally](extension-sideloading.md).  The tab must first contain a webpage.
+Then you can install and run the finished extension that's in the repo, per [Sideload an extension to install and test it locally](extension-sideloading.md).  The tab must contain a webpage before opening the extension.
 
 
 <!-- ====================================================================== -->
@@ -74,7 +71,7 @@ Below is the updated sample HTML file:
 </html>
 ```
 
-Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md) to locally update the extension and then run the extension.  The tab must first contain a webpage.
+Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md) to locally update the extension and then run the extension.  The tab must contain a webpage before opening the extension.
 
 After updating and opening the extension, a pop-up opens with a **Display** button:
 

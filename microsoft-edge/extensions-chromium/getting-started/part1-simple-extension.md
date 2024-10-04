@@ -10,21 +10,17 @@ ms.date: 10/03/2024
 ---
 # Tutorial part 1: Create a simple extension
 
-The goal for this tutorial is to build a Microsoft Edge extension, starting with an empty directory.  You are building an extension that displays `stars.jpeg` in a pop-up in any Microsoft Edge tab:
+In this tutorial, you create a simple static extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab:
 
 ![The simple extension running](./part1-simple-extension-images/extension-running.png)
 
-In Part 1 of the tutorial, you create a simple static extension, without JavaScript, that displays an image file in a small webpage in a pop-up.  In Part 2 of the tutorial, the pop-up content is changed to a title and a **Display** button; you add JavaScript so that clicking the **Display** button inserts `stars.jpeg` into the top of the current webpage, pushing down the content of the webpage to below the image.
-
-In this Part 1 tutorial, you'll learn how to create a simple extension by doing the following:
+You create this simple extension by doing the following:
 1. Create a manifest.json file.
 1. Add icons for launching the extension.
 1. Open a default pop-up dialog.
 1. Install and test the extension.
 
-These steps are detailed below.
-
-If you want to test out the completed extension that you will build in this Part 1 tutorial, or view its finished code, either:
+If you want to immediately install and run the completed extension that you will build in this tutorial, or view its finished code, either:
 * Clone the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use repo directory `/extension-getting-started-part1/`.
 * Download the source code from the repo directory [MicrosoftEdge-Extensions repo > extension-getting-started-part1](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1).
 
