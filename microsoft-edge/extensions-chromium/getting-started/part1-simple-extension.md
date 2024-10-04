@@ -53,7 +53,7 @@ This step has already been done in [manifest.json](https://github.com/microsoft/
 
 This step has already been done in the Part 1 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.  If you want to manually create the Part 1 extension, continue with the following steps.
 
-1.  Create an `icons` directory in your project, in the same directory as the manifest file, to store the icon image files.  The icons are used for the background image of the button that users select to launch the extension.
+1.  Create an `icons` directory in your project, in the same directory as the manifest file, to store the icon image files.  The icons are used as the background image for the button that the user clicks to launch the extension:
 
     ![Icon on the toolbar to open your extension](./part1-simple-extension-images/part1-badge1.png)
 
@@ -168,7 +168,7 @@ That's everything you need to develop a simple extension.
 <!-- ====================================================================== -->
 ## Step 4: Install and test the extension
 
-Install and run the extension; see [Sideload an extension to install and test it locally](extension-sideloading.md).  The simple extension runs, without any JavaScript code yet:
+Install and run the extension; see [Sideload an extension to install and test it locally](extension-sideloading.md).  The extension displays `popup.html`, containing `stars.jpeg`, in a pop-up:
 
 ![The simple extension running](./part1-simple-extension-images/extension-running.png)
 
