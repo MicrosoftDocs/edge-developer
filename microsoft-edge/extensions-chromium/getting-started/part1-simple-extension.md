@@ -175,4 +175,7 @@ After running and testing the extension, you can continue on to [Tutorial part 2
 
 * [Sideload an extension to install and test it locally](extension-sideloading.md)
 * [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md)
-* [MicrosoftEdge-Extensions repo > extension-getting-started-part1](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1) - source code of the completed extension that you build in this tutorial.
+
+GitHub:
+* [microsoft / MicrosoftEdge-Extensions repo](https://github.com/microsoft/MicrosoftEdge-Extensions)
+   * [/part1/ folder](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1) - source code of the completed extension that you build in this tutorial.

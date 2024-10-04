@@ -14,15 +14,23 @@ ms.date: 10/03/2024
 
 In this tutorial, you use JavaScript code to insert the `stars.jpeg` image into the top of the currently opened webpage.  The extension's pop-up contains a title and a standard HTML button, labelled **Display**.  When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.
 
-That JavaScript inserts `stars.jpeg` at the top of the current webpage, pushing down the content of the webpage to below the image.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image.
-
 This tutorial covers the following extension technologies:
 *  Injecting JavaScript libraries into an extension.
 *  Exposing extension assets to browser tabs.
 *  Including content webpages in existing browser tabs.
 *  Having content webpages listen for messages from pop-ups and respond.
 
-To use this article, first do the steps in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).
+Opening the extension:
+
+![Clicking the extension's icon to open the extension](./part2-content-scripts-images/open-the-extension.png)
+
+Displaying the image at the top of the current webpage:
+
+![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
+
+JavaScript code temporarily inserts `stars.jpeg` at the top of the current webpage, pushing down the content of the webpage to below the image.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image:
+
+![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
 
 If you want to immediately install and run the completed extension that you will build in this tutorial, or view its finished code, either:
 * Clone the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use repo directory `/extension-getting-started-part2/extension-getting-started-part2`.
@@ -34,7 +42,7 @@ Then you can install and run the finished extension that's in the repo, per [Sid
 <!-- ====================================================================== -->
 ## Step 1: Update popup.html to include a button
 
-The starting state for this tutorial is that a directory exists, containing the directories and files that are created in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).  These can be sibling directories for the Part 1 tutorial and the Part 2 tutorial, like in the MicrosoftEdge-Extensions repo.
+To use this article, first do the steps in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).  The starting state for this Part 2 tutorial is that a directory exists for the part 2 code, containing the directories and files that are created in the Part 1 tutorial.  These can be sibling directories for the Part 1 tutorial and the Part 2 tutorial, like in the MicrosoftEdge-Extensions repo.
 
 In the folder that contains the `popup.html` file, you'll do the following:
 1. Add tagging that displays a title with a button.
@@ -270,9 +278,15 @@ When an event is processed by the listener, the function that is the first param
 
 1. Install or update the extension, in the Manage Extensions page; see [Sideload an extension to install and test it locally](extension-sideloading.md).
 
-1. Load a webpage.  The tab must not be empty, and must not be the Manage Extensions page.
+1. Go to a webpage, such as [Microsoft.com](https://www.microsoft.com), in a new window or tab.  The tab must not be empty, and must not be the Manage Extensions page.
 
-1. Click the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button, next to the Address bar.  Or, select **Settings and more** (...) > **Extensions**.  Then click the **NASA picture of the day viewer** extension.  The extension's pop-up opens:
+1. Click the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button, next to the Address bar.  Or, select **Settings and more** (...) > **Extensions**.
+
+   ![Clicking the extension's icon to open the extension](./part2-content-scripts-images/open-the-extension.png)
+
+1. Click the icon or name of the **NASA picture of the day viewer** extension.
+
+   The extension's pop-up opens:
 
    ![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
 
@@ -291,4 +305,7 @@ Congratulations!  You've created an extension that sends a message from the exte
 
 * [Tutorial part 1: Create a simple extension](./part1-simple-extension.md)
 * [Sideload an extension to install and test it locally](extension-sideloading.md)
-* [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) - the completed extension package source for Part 2 of the tutorial.
+
+GitHub:
+* [microsoft / MicrosoftEdge-Extensions repo](https://github.com/microsoft/MicrosoftEdge-Extensions)
+   * [/extension-getting-started-part2/ folder](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) - the completed extension package source for Part 2 of the tutorial.

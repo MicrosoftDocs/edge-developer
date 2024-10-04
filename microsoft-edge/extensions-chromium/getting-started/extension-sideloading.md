@@ -18,27 +18,32 @@ To test an extension quickly and safely, sideload the extension in your own copy
 
 To sideload an extension into Microsoft Edge, so that it's locally installed in your browser for testing:
 
-1. In the upper right of Microsoft Edge, click the **Extensions** (![Extensions icon](./extension-sideloading-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**:
+1. In Microsoft Edge, click the **Extensions** (![Extensions icon](./extension-sideloading-images/extensions-icon.png)) button, next to the Address bar, if this icon is displayed.  Or, select **Settings and more** (...) > **Extensions**.  The **Extensions** pop-up opens:
 
-   ![Opening the edge://extensions page](./extension-sideloading-images/part1-threedots.png)
+   ![The Extensions popup when no extensions are installed](./extension-sideloading-images/extensions-popup-no-extensions.png)
 
-   The **Extensions** pop-up opens.
-
-1. Click **Manage extensions**.  The **Extensions** page (`edge://extensions`) opens in a new tab.
-
-1. Turn on the **Developer mode** toggle:
+1. Click **Manage extensions**.  The **Extensions** management page (which is not a webpage) opens in a new tab:
 
    ![Turning on Developer Mode](./extension-sideloading-images/part1-developermode-toggle.png)
 
-1. When installing your extension for the first time, click the **Load unpacked** button.  The **Select the extension directory** dialog opens.
+1. Turn on the **Developer mode** toggle.
 
-1. Select the directory that contains your extension source files, and then click the **Select Folder** button.  For example, select the directory for the "NASA picture of the day viewer" demo from [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).
+1. When installing your extension for the first time, click the **Load unpacked** (![The "Load unpacked" icon](./extension-sideloading-images/load-unpacked-icon.png)) button.  The **Select the extension directory** dialog opens.
 
-   Your extension is installed in your browser, similar to extensions that are installed from the store:
+1. Select the directory that contains the extension's source files, such as `manifest.json`, and then click the **Select Folder** button.
+
+   For example, select the directory for the "NASA picture of the day viewer" demo from [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).  Example paths, if you cloned the [microsoft / MicrosoftEdge-Extensions repo](https://github.com/microsoft/MicrosoftEdge-Extensions) to your local drive:
+
+   ```
+   C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part1\part1\
+   C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part2\extension-getting-started-part2\
+   ```
+    
+   The extension is installed in your browser, similar to extensions that are installed from the store:
 
    ![Installed extensions page, showing a sideloaded extension](./extension-sideloading-images/part1-installed-extension.png)
 
-1. To run the extension, first open a webpage, if the extension requires that a webpage is open.
+1. To run the extension, first open a webpage, if the extension requires that a webpage is open.  For example, go to a webpage, such as [Microsoft.com](https://www.microsoft.com), in a new window or tab.
 
 1. In the upper right of Microsoft Edge, click the **Extensions** (![Extensions icon](./extension-sideloading-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**.
 
@@ -46,7 +51,7 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
 
    ![The Extensions pop-up](./extension-sideloading-images/extensions-popup.png)
 
-1. Select the extension.  The extension opens:
+1. Click the extension's icon or name.  The extension opens, and the extension's icon is added next to the Address bar and Extensions (![Extensions icon](./extension-sideloading-images/extensions-icon.png)) icon:
 
    ![An extension running](./extension-sideloading-images/extension-running.png)
 
@@ -79,3 +84,6 @@ To remove an extension that's been installed locally (sideloaded) in your browse
 
 * [Tutorial part 1: Create a simple extension](./part1-simple-extension.md)
 * [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md)
+
+GitHub:
+* [microsoft / MicrosoftEdge-Extensions repo](https://github.com/microsoft/MicrosoftEdge-Extensions) - extensions samples.
