@@ -9,6 +9,7 @@ ms.subservice: extensions
 ms.date: 06/23/2023
 ---
 # Released features for Microsoft Edge Add-ons
+<!-- https://aka.ms/EdgeAddonsReleaseNotes -->
 
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
 

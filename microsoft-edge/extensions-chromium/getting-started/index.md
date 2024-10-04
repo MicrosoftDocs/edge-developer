@@ -9,6 +9,7 @@ ms.subservice: extensions
 ms.date: 02/06/2022
 ---
 # Extension concepts and architecture
+<!-- https://aka.ms/EdgeAddonsLearn -->
 
 This article introduces concepts about building a Microsoft Edge extension.  Follow along to understand how multi-tab browsers work.
 
