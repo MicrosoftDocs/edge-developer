@@ -118,7 +118,7 @@ Create a `HTML` file to run when the user launches your extension.  When the use
         </head>
         <body>
             <div>
-                <img src="/images/stars.jpeg" alt="Display the stars image" />
+                <img src="/images/stars.jpeg" alt="Stars" />
             </div>
         </body>
     </html>
