@@ -32,12 +32,13 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
 
 1. Select the directory that contains the extension's source files, such as `manifest.json`, and then click the **Select Folder** button.
 
-   For example, select the directory for the "NASA picture of the day viewer" demo from [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).  Example paths, if you cloned the [microsoft / MicrosoftEdge-Extensions repo](https://github.com/microsoft/MicrosoftEdge-Extensions) to your local drive:
+   Example path for [Tutorial part 1: Create a simple extension](./part1-simple-extension.md):
 
-   ```
-   C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part1\part1\
-   C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part2\extension-getting-started-part2\
-   ```
+   `C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part1\part1\`
+
+   Example path for [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md):
+
+   `C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part2\extension-getting-started-part2\`
     
    The extension is installed in your browser, similar to extensions that are installed from the store:
 
