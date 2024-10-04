@@ -265,8 +265,6 @@ When an event is processed by the listener, the function that is the first param
 
 *   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page (along with it is event listener).
 
-You've now added functionality to remove the displayed image when the image is clicked.
-
 
 <!-- ====================================================================== -->
 ## Step 7: Install and test the extension
