@@ -32,6 +32,10 @@ Then you can install and run the finished extension that's in the repo, per [Sid
 
 Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the extension package version, the extension name and description, and so on.
 
+All the coding steps in this tutorial have already been done in the Part 1 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.  We recommending first cloning the samples repo and installing and running the Part 1 demo, before or instead of starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
+
+If you want to manually create the Part 1 extension by starting with an empty directory:
+
 *   In a directory on your machine, using an editor, such as Visual Studio Code, create a `manifest.json` file that contains the following lines:
 
     ```json
@@ -46,6 +50,8 @@ Every extension package must have a `manifest.json` file at the root.  The manif
 
 <!-- ====================================================================== -->
 ## Step 2: Add icons for launching the extension
+
+This step has already been done in the Part 1 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.  If you want to manually create the Part 1 extension, continue with the following steps.
 
 1.  Create an `icons` directory in your project, in the same directory as the manifest file, to store the icon image files.  The icons are used for the background image of the button that users select to launch the extension.
 
@@ -95,6 +101,8 @@ Every extension package must have a `manifest.json` file at the root.  The manif
 
 <!-- ====================================================================== -->
 ## Step 3: Open a default pop-up dialog
+
+This step has already been done in the Part 1 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.  If you want to manually create the Part 1 extension, continue with the following steps.
 
 Create a `HTML` file to run when the user launches your extension.  When the user clicks the icon to launch the extension, this file will be displayed as a modal dialog.
 
@@ -160,7 +168,7 @@ That's everything you need to develop a simple extension.
 <!-- ====================================================================== -->
 ## Step 4: Install and test the extension
 
-Next, install and run the extension; see [Sideload an extension to install and test it locally](extension-sideloading.md).  The simple extension runs, without any JavaScript code yet:
+Install and run the extension; see [Sideload an extension to install and test it locally](extension-sideloading.md).  The simple extension runs, without any JavaScript code yet:
 
 ![The simple extension running](./part1-simple-extension-images/extension-running.png)
 
