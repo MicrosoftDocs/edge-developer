@@ -22,7 +22,7 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
 
    ![The Extensions popup when no extensions are installed](./extension-sideloading-images/extensions-popup-no-extensions.png)
 
-1. Click **Manage extensions**.  The **Extensions** management page (which is not a webpage) opens in a new tab:
+1. Click **Manage extensions**.  The **Extensions** management page opens in a new tab:
 
    ![Turning on Developer Mode](./extension-sideloading-images/part1-developermode-toggle.png)
 
