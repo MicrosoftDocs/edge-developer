@@ -32,9 +32,9 @@ Then you can install and run the finished extension that's in the repo, per [Sid
 
 Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the extension package version, the extension name and description, and so on.
 
-All the coding steps in this tutorial have already been done in the Part 1 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.  We recommending first cloning the samples repo and installing and running the Part 1 demo, before or instead of starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
+All the coding steps in this tutorial have already been done in the Part 1 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.  We recommending first cloning the samples repo and installing and running the Part 1 demo, before (or instead of) starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
 
-If you want to manually create the Part 1 extension by starting with an empty directory:
+This step has already been done in [manifest.json](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part1/part1/manifest.json) in the samples repo.  If you want to manually create the Part 1 extension by starting with an empty directory:
 
 *   In a directory on your machine, using an editor, such as Visual Studio Code, create a `manifest.json` file that contains the following lines:
 
@@ -102,7 +102,7 @@ This step has already been done in the Part 1 demo in the [microsoft / Microsoft
 <!-- ====================================================================== -->
 ## Step 3: Open a default pop-up dialog
 
-This step has already been done in the Part 1 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.  If you want to manually create the Part 1 extension, continue with the following steps.
+This step has already been done in [popup.html](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part1/part1/popup/popup.html) in the samples repo.  If you want to manually create the Part 1 extension, continue with the following steps.
 
 Create a `HTML` file to run when the user launches your extension.  When the user clicks the icon to launch the extension, this file will be displayed as a modal dialog.
 
@@ -124,7 +124,7 @@ Create a `HTML` file to run when the user launches your extension.  When the use
     </html>
     ```
     
-1.  Add the file `stars.jpeg` in the `images` folder.  For example, download the file from the repo directory [/extension-getting-started-part1/part1/images](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1/images).
+1.  Add the file `stars.jpeg` in the `images` folder.  For example, download [stars.jpeg](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part1/part1/images/stars.jpeg) from the samples repo.
 
 1.  Make sure the directories of your project are similar to the following structure:
 

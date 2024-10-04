@@ -44,6 +44,8 @@ Then you can install and run the finished extension that's in the repo, per [Sid
 
 To use this article, first do the steps in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md); that is, clone the samples repo, install the Part 1 demo, and run that demo.
 
+This step has already been done in [popup.html](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/popup/popup.html) in the samples repo.
+
 The hypothetical starting state for this Part 2 tutorial, if you were to manually build-up the sample to add JavaScript, is that a directory exists for the part 2 code, containing the same directories and files that are created in the Part 1 tutorial.  These can be sibling directories for the Part 1 tutorial and the Part 2 tutorial, like in the MicrosoftEdge-Extensions repo.
 
 It's possible to install the completed Part 1 and Part 2 demos from the samples repo, side-by-side.  We recommending first cloning the samples repo and installing and running the provided completed demos (Part 1 and Part 2), before (or instead of) starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
@@ -103,7 +105,7 @@ Each tab page (and extension) runs in its own thread.  In a step below, you'll c
 <!-- ====================================================================== -->
 ## Step 3: Create the pop-up JavaScript to send a message
 
-This step has already been done in the Part 2 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.  If you want to manually create the Part 2 extension, continue with the following steps.
+This step has already been done in [popup.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/popup/popup.js) in the samples repo.  If you want to manually create the Part 2 extension, continue with the following steps.
 
 Create the `popup/popup.js` file, and then add the following code in that file.
 
@@ -163,7 +165,7 @@ if (sendMessageId) {
 <!-- ====================================================================== -->
 ## Step 4: Make your `stars.jpeg` available from any browser tab
 
-This step has already been done in the Part 2 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.  If you want to manually create the Part 2 extension, continue with the following steps.
+This step has already been done in [manifest.json](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/manifest.json) in the samples repo.  If you want to manually create the Part 2 extension, continue with the following steps.
 
 To make `images/stars.jpeg` available from any browser tab, you must use the `chrome.runtime.getURL` API.
 
@@ -190,7 +192,7 @@ You've now written the code in your `popup.js` file to send a message to the con
 <!-- ====================================================================== -->
 ## Step 5: Update your `manifest.json` for new content and web access
 
-Next, you'll create and inject the content page that's embedded on the current active tab page.  This has already been done in the Part 2 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.
+Next, you'll create and inject the content page that's embedded on the current active tab page.  This step has already been done in [manifest.json](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/manifest.json) in the samples repo.
 
 The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
 
@@ -234,7 +236,9 @@ The `matches` attribute is set to `<all_urls>`, which means that all files in `c
 <!-- ------------------------------ -->
 #### Add jQuery
 
-In the content scripts that you're injecting, plan on using jQuery (`$`).  You added a minified version of jQuery and put it in your extension package as `lib\jquery.min.js`.  This has already been done in the Part 2 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.
+This step has already been done in [jquery.min.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/lib/jquery.min.js) in the samples repo.
+
+In the content scripts that you're injecting, plan on using jQuery (`$`).  You added a minified version of jQuery and put it in your extension package as `lib\jquery.min.js`.
 
 These content scripts run in individual sandboxes, which means that the jQuery injected into the `popup.js` page isn't shared with the content.
 
@@ -249,7 +253,7 @@ Even if the browser tab has JavaScript running on it on the loaded web page, any
 <!-- ====================================================================== -->
 ## Step 6: Add the content script message listener
 
-To continue manually building-up the Part 2 demo, you would need to create this file.  This step has already been done in the Part 2 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.
+To continue manually building-up the Part 2 demo, you would need to create this file.  This step has already been done in [content.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/content-scripts/content.js) in the samples repo.
 
 Here's the `content-scripts\content.js` file that gets injected into every browser tab page based on the `content-scripts` section in `manifest.json`:
 
