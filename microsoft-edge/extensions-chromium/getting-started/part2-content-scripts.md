@@ -16,13 +16,13 @@ In this tutorial, you use JavaScript code to insert the `stars.jpeg` image into 
 
 That JavaScript inserts `stars.jpeg` at the top of the current webpage, pushing down the content of the webpage to below the image.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image.
 
-Part 2 covers the following extension technologies:
+This tutorial covers the following extension technologies:
 *  Injecting JavaScript libraries into an extension.
 *  Exposing extension assets to browser tabs.
 *  Including content webpages in existing browser tabs.
 *  Having content webpages listen for messages from pop-ups and respond.
 
-To use this article, it is recommended that you first do the steps in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).
+To use this article, first do the steps in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).
 
 If you want to immediately install and run the completed extension that you will build in this tutorial, or view its finished code, either:
 * Clone the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use repo directory `/extension-getting-started-part2/extension-getting-started-part2`.
@@ -34,12 +34,14 @@ Then you can install and run the finished extension that's in the repo, per [Sid
 <!-- ====================================================================== -->
 ## Step 1: Update popup.html to include a button
 
-In the popup folder where you created the `popup.html` file, you'll do the following:
+The starting state for this tutorial is that a directory exists, containing the directories and files that are created in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).  These can be sibling directories for the Part 1 tutorial and the Part 2 tutorial, like in the MicrosoftEdge-Extensions repo.
+
+In the folder that contains the `popup.html` file, you'll do the following:
 1. Add tagging that displays a title with a button.
 1. Include a reference to a JavaScript file, `popup.js`.
 1. Program that button.
 
-Below is the updated sample HTML file:
+Below is the sample HTML file:
 
 `/popup/popup.html` (complete):
 
