@@ -85,6 +85,3 @@ To remove an extension that's been installed locally (sideloaded) in your browse
 
 * [Tutorial part 1: Create a simple extension](./part1-simple-extension.md)
 * [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md)
-
-GitHub:
-* [microsoft / MicrosoftEdge-Extensions repo](https://github.com/microsoft/MicrosoftEdge-Extensions) - extensions samples.
