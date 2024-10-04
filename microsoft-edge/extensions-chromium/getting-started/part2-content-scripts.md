@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 10/02/2024
+ms.date: 10/03/2024
 ---
 # Tutorial part 2: Add JavaScript to the extension
 

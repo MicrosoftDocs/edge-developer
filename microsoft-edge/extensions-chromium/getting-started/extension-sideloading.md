@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 09/30/2024
+ms.date: 10/03/2024
 ---
 # Sideload an extension to install and test it locally
 
