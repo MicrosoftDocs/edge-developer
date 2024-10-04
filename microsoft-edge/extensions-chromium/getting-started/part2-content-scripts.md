@@ -182,7 +182,7 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 3,
-    "description": "An extension that uses JavaScript to insert an image at the top of the existing webpage.",
+    "description": "An extension that uses JavaScript to insert an image at the top of the webpage.",
     "icons": {
         "16": "icons/nasapod16x16.png",
         "32": "icons/nasapod32x32.png",

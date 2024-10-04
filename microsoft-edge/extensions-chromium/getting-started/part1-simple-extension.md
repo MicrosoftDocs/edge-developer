@@ -1,6 +1,6 @@
 ---
 title: "Tutorial part 1: Create a simple extension"
-description: Build an extension that pops up the NASA picture of the day.
+description: Build an extension that displays an image file in a webpage in a pop-up, without JavaScript.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,7 +14,7 @@ The goal for this tutorial is to build a Microsoft Edge extension, starting with
 
 ![The simple extension running](./part1-simple-extension-images/extension-running.png)
 
-In Part 1 of the tutorial, you create a simple static extension, that displays a single image.  In Part 2 of the tutorial, the pop-up content is changed to a title and a **Display** button; you add JavaScript so that clicking the **Display** button inserts `stars.jpeg` into the top of the current webpage, pushing down the content of the webpage to below the image.
+In Part 1 of the tutorial, you create a simple static extension, without JavaScript, that displays an image file in a small webpage in a pop-up.  In Part 2 of the tutorial, the pop-up content is changed to a title and a **Display** button; you add JavaScript so that clicking the **Display** button inserts `stars.jpeg` into the top of the current webpage, pushing down the content of the webpage to below the image.
 
 In this Part 1 tutorial, you'll learn how to create a simple extension by doing the following:
 1. Create a manifest.json file.
@@ -40,7 +40,7 @@ Every extension package must have a `manifest.json` file at the root.  The manif
 
     ```json
     {
-        "name": "NASA picture of the day viewer (pop-up)",
+        "name": "NASA picture of the day pop-up",
         "version": "0.0.0.1",
         "manifest_version": 3,
         "description": "A basic extension that displays an image in a pop-up.",
@@ -83,7 +83,7 @@ Every extension package must have a `manifest.json` file at the root.  The manif
 
     ```json
     {
-        "name": "NASA picture of the day viewer (pop-up)",
+        "name": "NASA picture of the day pop-up",
         "version": "0.0.0.1",
         "manifest_version": 3,
         "description": "A basic extension that displays an image in a pop-up.",
@@ -142,7 +142,7 @@ Create a `HTML` file to run when the user launches your extension.  When the use
 
     ```json
     {
-        "name": "NASA picture of the day viewer (pop-up)",
+        "name": "NASA picture of the day pop-up",
         "version": "0.0.0.1",
         "manifest_version": 3,
         "description": "A basic extension that displays an image in a pop-up.",
