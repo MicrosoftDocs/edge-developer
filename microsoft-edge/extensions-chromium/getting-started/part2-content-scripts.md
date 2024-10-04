@@ -249,6 +249,8 @@ Even if the browser tab has JavaScript running on it on the loaded web page, any
 <!-- ====================================================================== -->
 ## Step 6: Add the content script message listener
 
+To continue manually building-up the Part 2 demo, you would need to create this file.  This step has already been done in the Part 2 demo in the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) samples repo.
+
 Here's the `content-scripts\content.js` file that gets injected into every browser tab page based on the `content-scripts` section in `manifest.json`:
 
 `/content-scripts/content.js` (complete):
@@ -274,7 +276,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 ```
 
-Notice that all the above JavaScript does is to register a `listener` using the `chrome.runtime.onMessage.addListener` Extension API method.  This listener waits for messages like the one you sent from the `popup.js` described earlier with the `chrome.tabs.sendMessage` Extension API method.
+All that the above JavaScript does is to register a `listener` using the `chrome.runtime.onMessage.addListener` Extension API method.  This listener waits for messages like the one you sent from the `popup.js` described earlier with the `chrome.tabs.sendMessage` Extension API method.
 
 The first parameter of the `addListener` method is a function whose first parameter, request, is the details of the message being passed in.  Remember, from `popup.js`, when you used the `sendMessage` method, those attributes of the first parameter are `url` and `imageDivId`.
 
