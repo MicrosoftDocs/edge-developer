@@ -10,11 +10,11 @@ ms.date: 10/02/2024
 ---
 # Tutorial part 1: Create a simple extension
 
-The goal for this tutorial is to build a Microsoft Edge extension, starting with an empty directory.  You are building an extension that pops up the NASA picture of the day, named "NASA picture of the day viewer":
+The goal for this tutorial is to build a Microsoft Edge extension, starting with an empty directory.  You are building an extension that displays `stars.jpeg` in a pop-up in any Microsoft Edge tab:
 
 ![The simple extension running](./part1-simple-extension-images/extension-running.png)
 
-In Part 1 of the tutorial, you create a simple static extension, that displays a single image.  In Part 2 of the tutorial, you add JavaScript code to switch which image is displayed.
+In Part 1 of the tutorial, you create a simple static extension, that displays a single image.  In Part 2 of the tutorial, the pop-up content is changed to a title and a **Display** button; you add JavaScript so that clicking the **Display** button inserts `stars.jpeg` into the top of the current webpage, pushing down the content of the webpage to below the image.
 
 In this Part 1 tutorial, you'll learn how to create a simple extension by doing the following:
 1. Create a manifest.json file.
@@ -24,7 +24,7 @@ In this Part 1 tutorial, you'll learn how to create a simple extension by doing 
 
 These steps are detailed below.
 
-If you want to test out the completed extension that you will build in this tutorial, or view its finished code, either:
+If you want to test out the completed extension that you will build in this Part 1 tutorial, or view its finished code, either:
 * Clone the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use repo directory `/extension-getting-started-part1/`.
 * Download the source code from the repo directory [MicrosoftEdge-Extensions repo > extension-getting-started-part1](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1).
 
@@ -40,10 +40,10 @@ Every extension package must have a `manifest.json` file at the root.  The manif
 
     ```json
     {
-        "name": "NASA picture of the day viewer",
+        "name": "NASA picture of the day viewer (pop-up)",
         "version": "0.0.0.1",
         "manifest_version": 3,
-        "description": "An extension to display the NASA picture of the day."
+        "description": "A basic extension that displays an image in a pop-up.",
     }
     ```
 
@@ -83,10 +83,10 @@ Every extension package must have a `manifest.json` file at the root.  The manif
 
     ```json
     {
-        "name": "NASA picture of the day viewer",
+        "name": "NASA picture of the day viewer (pop-up)",
         "version": "0.0.0.1",
         "manifest_version": 3,
-        "description": "An extension to display the NASA picture of the day.",
+        "description": "A basic extension that displays an image in a pop-up.",
         "icons": {
             "16": "icons/nasapod16x16.png",
             "32": "icons/nasapod32x32.png",
@@ -142,10 +142,10 @@ Create a `HTML` file to run when the user launches your extension.  When the use
 
     ```json
     {
-        "name": "NASA picture of the day viewer",
+        "name": "NASA picture of the day viewer (pop-up)",
         "version": "0.0.0.1",
         "manifest_version": 3,
-        "description": "An extension to display the NASA picture of the day.",
+        "description": "A basic extension that displays an image in a pop-up.",
         "icons": {
             "16": "icons/nasapod16x16.png",
             "32": "icons/nasapod32x32.png",
@@ -168,7 +168,9 @@ Next, install and run the extension; see [Sideload an extension to install and t
 
 ![The simple extension running](./part1-simple-extension-images/extension-running.png)
 
-Then you can continue on to [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md).
+You can open this Part 1 demo extension in any tab, including an empty tab or the Manage Extensions tab.
+
+After running and testing the extension, you can continue on to [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md).
 
 
 <!-- ====================================================================== -->

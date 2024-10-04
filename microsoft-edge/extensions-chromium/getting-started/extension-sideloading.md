@@ -38,7 +38,9 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
 
    ![Installed extensions page, showing a sideloaded extension](./extension-sideloading-images/part1-installed-extension.png)
 
-1. To run the extension, in the upper right of Microsoft Edge, click the **Extensions** (![Extensions icon](./extension-sideloading-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**.
+1. To run the extension, first open a webpage, if the extension requires that a webpage is open.
+
+1. In the upper right of Microsoft Edge, click the **Extensions** (![Extensions icon](./extension-sideloading-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**.
 
    The **Extensions** pop-up opens:
 

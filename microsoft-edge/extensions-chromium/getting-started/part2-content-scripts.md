@@ -15,13 +15,15 @@ within h2 sections, format as numbered action step lists
 walk through steps
 -->
 
-In Part 1 of this tutorial, you create a simple static extension, that displays a single image.  In Part 2 of this tutorial, you add JavaScript code to switch which image is displayed.  You update the pop-up menu to replace the static stars image with a title and a standard HTML button.  That button, when clicked, passes that image of stars to the content page.  This image is now embedded in the extension and inserted into the active browser tab.
+In Part 1 of this tutorial, you create a simple extension that displays `stars.jpeg` in a pop-up in any Microsoft Edge tab.  In Part 2 of this tutorial, you add JavaScript code that inserts the `stars.jpeg` image into the top of the currently opened webpage.  You update the pop-up from Part 1 to replace `stars.jpeg` with a title and a standard HTML button, labelled **Display**.  
+
+When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.  That JavaScript inserts `stars.jpeg` at the top of the current webpage, pushing down the content of the webpage to below the image.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image.
 
 Part 2 covers the following extension technologies:
 *  Injecting JavaScript libraries into an extension.
 *  Exposing extension assets to browser tabs.
-*  Including content pages in existing browser tabs.
-*  Having content pages listen for messages from pop-ups and respond.
+*  Including content webpages in existing browser tabs.
+*  Having content webpages listen for messages from pop-ups and respond.
 
 To use this article, first do the steps in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md).
 
@@ -29,7 +31,7 @@ If you want to test out the completed extension that you will build in this tuto
 * Clone the [microsoft / MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use repo directory `/extension-getting-started-part2/extension-getting-started-part2`.
 * Download the source code from the repo directory [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).
 
-Then you can install and run the finished extension that's in the repo, per [Sideload an extension to install and test it locally](extension-sideloading.md).
+Then you can install and run the finished extension that's in the repo, per [Sideload an extension to install and test it locally](extension-sideloading.md).  The tab must first contain a webpage.
 
 
 <!-- ====================================================================== -->
@@ -65,30 +67,26 @@ Below is the updated sample HTML file:
     </head>
     <body>
         <h1>Display the NASA picture of the day</h1>
-        <h2>(click the image to remove it)</h2>
+        <h2>(click the image to remove it from the webpage)</h2>
         <button id="sendmessageid">Display</button>
         <script src="popup.js"></script>
     </body>
 </html>
 ```
 
-Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md) to locally update the extension and then run the extension.
+Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md) to locally update the extension and then run the extension.  The tab must first contain a webpage.
 
-After updating and opening the extension, a pop-up opens with a display button:
+After updating and opening the extension, a pop-up opens with a **Display** button:
 
-![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
-
-<!--![popup.html display after selecting the Extension icon] -->
+![popup.html after clicking the Extension's icon](./part2-content-scripts-images/part2-popupdialog.png)
 
 
 <!-- ====================================================================== -->
-## Step 2: Update the webpage to display the image at the top of the browser tab
+## Step 2: Update the webpage to insert the image at the top
 
-After adding the button, the next task will be to make the button display the `images/stars.jpeg` image file at the top of the active tab page.
+After adding the  **Display** button, the next task will be to make the button display the `images/stars.jpeg` image file at the top of the webpage that's in the active tab.
 
-<!-- todo: what code is added in popup.html?  does the h2 heading literally mean revise the content of file popup.html?  or, send data to the webpage? -->
-
-Each tab page (and extension) runs in its own thread. In a step below, you'll create a content script that is injected into the tab page.  The injected script will send a message from your pop-up to that content script that's running on the tab page.  The content script will receive the message, which describes which image should be displayed.
+Each tab page (and extension) runs in its own thread.  In a step below, you'll create a content script that is injected into the tab page.  The injected script will send a message from your pop-up to that content script that's running on the tab page.  The content script will receive the message, which describes which image should be displayed.
 
 
 <!-- ====================================================================== -->
@@ -184,7 +182,7 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 3,
-    "description": "An extension to display the NASA picture of the day.",
+    "description": "An extension that uses JavaScript to insert an image at the top of the existing webpage.",
     "icons": {
         "16": "icons/nasapod16x16.png",
         "32": "icons/nasapod32x32.png",
@@ -267,20 +265,27 @@ When an event is processed by the listener, the function that is the first param
 
 *   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page (along with it is event listener).
 
-You've added functionality to remove the displayed image when selected.<!-- todo: check this, was numbered "8" without a period -->
+You've now added functionality to remove the displayed image when the image is clicked.
 
-Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md) to locally update the extension and then run the extension.
 
-Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows:
+<!-- ====================================================================== -->
+## Step 7: Install and test the extension
 
-![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
+1. Install or update the extension, in the Manage Extensions page; see [Sideload an extension to install and test it locally](extension-sideloading.md).
 
-When you click the **Display** button, you get what is below.<!-- todo: specify behavior -->  If you click the `stars.jpeg` image, that image element is removed and the tab page collapses back to what was originally displayed:
+1. Load a webpage.  The tab must not be empty, and must not be the Manage Extensions page.
 
-![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
-<!-- todo: move png to before the previous sentence? -->
+1. Click the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button, next to the Address bar.  Or, select **Settings and more** (...) > **Extensions**.  Then click the **NASA picture of the day viewer** extension.  The extension's pop-up opens:
 
-Congratulations!  You've created an extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.
+   ![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
+
+1. Click the **Display** button.  `stars.jpeg` is inserted into the top of the current webpage in the current tab, pushing the webpage's content down below the image:
+
+   ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
+
+1. Click the `stars.jpeg` image that's filling the top of the webpage.  That image element is removed from the DOM tree and webpage, and the current webpage is restored, shifting its content back up to the top of the tab.
+
+Congratulations!  You've created an extension that sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image.
 
 
 <!-- ====================================================================== -->
