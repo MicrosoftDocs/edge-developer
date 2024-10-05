@@ -10,7 +10,7 @@ ms.date: 10/04/2024
 ---
 # Tutorial part 2: Use JavaScript to insert an image in the webpage
 
-The [Part 2 sample: Use JavaScript to insert an image in the webpage](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) uses JavaScript code to insert the `stars.jpeg` image into the top of the currently opened webpage.  The extension's pop-up contains a title and a standard HTML button, labelled **Display**.  When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.
+The [Part 2 sample: Use JavaScript to insert an image in the webpage](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) uses JavaScript code to insert the `stars.jpeg` image into the top of the currently opened webpage.  The extension's pop-up contains a title and an HTML button that's labelled **Display**.  When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.
 
 The Part 2 sample uses the following extension technologies:
 *  Injecting JavaScript libraries into an extension.
@@ -18,15 +18,15 @@ The Part 2 sample uses the following extension technologies:
 *  Including content webpages in existing browser tabs.
 *  Having content webpages listen for messages from pop-ups and respond.
 
-Opening the extension:
+You'll open the Part 2 extension from the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button after installing the extension via the **Manage Extensions** tab:
 
 ![Clicking the extension's icon to open the extension](./part2-content-scripts-images/open-the-extension.png)
 
-Displaying the image at the top of the current webpage:
+The extension displays a small HTML page in a pop-up, containing a title, instructions, and a **Display** button:
 
 ![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
 
-JavaScript code temporarily inserts `stars.jpeg` at the top of the current webpage, pushing down the content of the webpage to below the image.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image:
+When you click the **Display** button, JavaScript code temporarily inserts `stars.jpeg` at the top of the current webpage, pushing down the content of the webpage to below the image.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image:
 
 ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
 
