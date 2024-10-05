@@ -12,7 +12,9 @@ ms.date: 10/05/2024
 
 The Ad Selection API provides user-relevant ads on your site without using third-party cookies.  See [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md) in the "WICG / privacy-preserving-ads" repo.
 
-The Ad Selection API can be used by: **Sellers (SSPs)** – supply-side platforms, who can use the API to provide higher-quality ads for their publishers; and **Buyers (DSPs)** – demand-side platforms, who can use the API to improve the effectiveness of advertising campaigns.
+The Ad Selection API can be used by:
+* **Sellers** – Supply-side platforms (SSPs), who can use the API to provide higher-quality ads for their publishers.
+* **Buyers** – Demand-side platforms (DSPs), who can use the API to improve the effectiveness of advertising campaigns.
 
 To get started using the Ad Selection API and test out the end-to-end flow, sign up for the limited Preview of the Ad Selection API.
 
@@ -232,14 +234,14 @@ Design and technical documents:
 * [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md)
 * [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md)
 
-Images for deploying seller services:
-* [SellerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
-* [Auction service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
-
-Images for deploying buyer services:
-* [BuyerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
-* [Bidding service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
-* [k-anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
+Images for deployment:
+* Sellers
+   * [SellerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
+   * [Auction service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
+* Buyers
+   * [BuyerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
+   * [Bidding service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
+   * [k-anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 
 Origin trials:
 * [Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/)
