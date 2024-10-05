@@ -18,7 +18,7 @@ The Ad Selection API can be used by:
 
 To get started using the Ad Selection API and test out the end-to-end flow, sign up for the limited Preview of the Ad Selection API.
 
-Sellers (SSP) and buyers (DSP) can use this guide to:
+Sellers (SSPs) and buyers (DSPs) can use this guide to:
 * Test the Ad Selection API on your site.
 * Sign-up for the Ad Selection API limited preview.
 * Register for the Origin Trial.
