@@ -35,7 +35,7 @@ Sellers (SSP) and buyers (DSP) can use this guide to:
 
 Microsoft Edge versions starting with **130.0.2808.0** will have the platform components of the Ad Selection API in a limited, developer opt-in preview outside of the European Economic Area (EEA) and the United Kingdom (UK).
 
-Developers can individually change the Ad Selection API platform features, using the testing flag, `edge://flags#edge-ad-selection-api`:
+Developers can individually change the Ad Selection API platform features, by using the testing flag, `edge://flags#edge-ad-selection-api`:
 
 ![The "Ad Selection API" flag](./ad-selection-api-images/flags.png)
 
