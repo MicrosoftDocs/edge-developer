@@ -128,31 +128,44 @@ The Ad Selection API uses a trusted execution environment (TEE) to provide a lev
 
 Ad Selection Services running in a TEE should be deployed on a cloud platform that supports the necessary security features.  Initially, services can be deployed in Azure using [Confidential ACI containers](/azure/container-instances/container-instances-confidential-overview).
 
-The Ad Selection API provides different services that need to be deployed by buyers or sellers.  Microsoft provides an image for each service, which can be deployed on a cloud provider.
+The Ad Selection API provides different services that need to be deployed by sellers or buyers.
+
+
+<!-- ------------------------------ -->
+#### Images for each service
+
+Microsoft provides an image for each service, which can be deployed on a cloud provider.  These are the public images that must be used for deployment.  Only official images from Microsoft are able to run private auctions.
+
+Images for seller services:
+* [SellerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
+* [Auction service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
+
+Images for buyer services:
+* [BuyerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
+* [Bidding service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
+* [k-anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 
 
 <!-- ------------------------------ -->
 #### Services for sellers
 
-* **SellerFrontEnd** service:  Provides a `/SelectAd` gRPC endpoint, which receives requests from the seller's ad service<!-- todo: what's the bold CamelCase name of that service? --> to initiate the Protected Audience auction flow.
-
-* **Auction** service:  Provides a `/ScoreAds` gRPC endpoint, which receives requests from the **SellerFrontEnd** service, containing bids that are participating in the auction.  Responds with a score value that the **SellerFrontEnd** service uses to choose the winner.
-
-* Seller's **Key/Value** service:  Receives requests from the **SellerFrontEnd** service, which contain lookup keys from buyers' bids (such as `ad_render_urls`).  Returns real-time scoring signals that are required for the auction.  Runs in Bring Your Own Service (BYOS) mode, so the seller does not need to deploy this service in a trusted execution environment (TEE), and can instead use the image that's provided by Microsoft.
+| Service | Description |
+| --- | --- |
+| **SellerFrontEnd** | Provides a `/SelectAd` gRPC endpoint, which receives requests from the seller's ad service<!-- todo: what's the bold CamelCase name of that service? --> to initiate the Protected Audience auction flow. |
+| **Auction** | Provides a `/ScoreAds` gRPC endpoint, which receives requests from the **SellerFrontEnd** service, containing bids that are participating in the auction.  Responds with a score value that the **SellerFrontEnd** service uses to choose the winner. |
+| **Key/Value** | Receives requests from the **SellerFrontEnd** service, which contain lookup keys from buyers' bids (such as `ad_render_urls`).  Returns real-time scoring signals that are required for the auction.  Runs in Bring Your Own Service (BYOS) mode, so the seller does not need to deploy this service in a trusted execution environment (TEE), and can instead use the image that's provided by Microsoft. |
 
 
 <!-- ------------------------------ -->
 #### Services for buyers
 
-* **BuyerFrontEnd** service:  Provides a `/GetBids` gRPC endpoint, which receives requests from the **SellerFrontEnd** service to initiate the bidding flow.
-
-* **Bidding** service: Provides a `/GenerateBids` endpoint, which receives requests from the **BuyerFrontEnd** service to handle the bidding and generate a bid.  Generates a bid, chooses the winner, and selects the banner to be rendered.
-
-* Buyer's **Key/Value** service:  Receives requests from the **BuyerFrontEnd** service and returns real-time buyer data required for bidding, corresponding to lookup keys from Interest Groups.  Such a request happens once per workflow.  Runs in Bring Your Own Service (BYOS) mode.
-
-* **Bidding Selection & Key/Value** service:  Receives requests from the **Bidding** service to select and return additional ad banners (candidates) that can participate in bidding.  The **Bidding**<!-- todo: which service? --> service can also return additional signals that are needed for bidding.  The **Bidding** service may send multiple requests to the **Bidding Selection & Key/Value** service, or may choose not to send any requests, given that the **Bidding Selection & Key/Value** service<!-- todo: which service? --> is optional.  The **Bidding Selection & Key/Value** service must be deployed in a trusted execution environment (TEE).
-
-* **K-Anon** service:  Collects k-anonymity counters and checks that the winning ad banner passes the k-anonymity check.
+| Service | Description |
+| --- | --- |
+| **BuyerFrontEnd** | Provides a `/GetBids` gRPC endpoint, which receives requests from the **SellerFrontEnd** service to initiate the bidding flow. |
+| **Bidding** | Provides a `/GenerateBids` endpoint, which receives requests from the **BuyerFrontEnd** service to handle the bidding and generate a bid.  Generates a bid, chooses the winner, and selects the banner to be rendered. |
+| **Key/Value** | Receives requests from the **BuyerFrontEnd** service and returns real-time buyer data required for bidding, corresponding to lookup keys from Interest Groups.  Such a request happens once per workflow.  Runs in Bring Your Own Service (BYOS) mode. |
+| **Bidding Selection & Key/Value** | Receives requests from the **Bidding** service to select and return additional ad banners (candidates) that can participate in bidding.  The **Bidding**<!-- todo: which service? --> service can also return additional signals that are needed for bidding.  The **Bidding** service may send multiple requests to the **Bidding Selection & Key/Value** service, or may choose not to send any requests, given that the **Bidding Selection & Key/Value** service<!-- todo: which service? --> is optional.  The **Bidding Selection & Key/Value** service must be deployed in a trusted execution environment (TEE). |
+| **K-Anon** | Collects k-anonymity counters and checks that the winning ad banner passes the k-anonymity check. |
 
 
 <!-- ------------------------------ -->
@@ -160,19 +173,20 @@ The Ad Selection API provides different services that need to be deployed by buy
 
 Sellers and buyers need to provide their own custom code as User-Defined Functions (UDFs) that run in private containers within the deployed services.  These User-Defined Functions can execute custom business logic.
 
-* `scoreAd()` for **Auction** service:  Generates a score for each buyer's bid, or rejects the bid.  This score is then used by the **SellerFrontEnd** service, to choose a winner from among all buyers.
-
-* `reportResult()` for **Event-Level Reporting**:  Runs in the **SellerFrontEnd** service after the final winner has been chosen.  Notifies the seller about the winning bidder, and provides the bid value.
+| Function | Description |
+| --- | --- |
+| `scoreAd()` for **Auction** service | Generates a score for each buyer's bid, or rejects the bid.  This score is then used by the **SellerFrontEnd** service, to choose a winner from among all buyers. |
+| `reportResult()` for **Event-Level Reporting** | Runs in the **SellerFrontEnd** service after the final winner has been chosen.  Notifies the seller about the winning bidder, and provides the bid value. |
 
 
 <!-- ------------------------------ -->
 #### User-Defined Functions for buyers
 
-* `generateBids()` for **Bidding** service:  Generates a bid, and chooses the banner that will be shown.
-
-* `reportWin()` for **Event-Level Reporting**:  Runs in the **SellerFrontEnd** service, if the buyer's bid wins the auction.  Notifies the buyer that they have won the auction, and generates notification URLs that will be triggered later, such as during banner rendering or other client events.
-
-* `getValues()` for **Bidding Selection & Key/Value** service:  Runs in the **Bidding Selection & Key/Value** service, if the buyer uses that service.  Allows for custom code execution for data lookup and selection.
+| Function | Description |
+| --- | --- |
+| `generateBids()` for **Bidding** service | Generates a bid, and chooses the banner that will be shown. |
+| `reportWin()` for **Event-Level Reporting** | Runs in the **SellerFrontEnd** service, if the buyer's bid wins the auction.  Notifies the buyer that they have won the auction, and generates notification URLs that will be triggered later, such as during banner rendering or other client events. |
+| `getValues()` for **Bidding Selection & Key/Value** service | Runs in the **Bidding Selection & Key/Value** service, if the buyer uses that service.  Allows for custom code execution for data lookup and selection. |
 
 
 <!-- ------------------------------ -->
@@ -213,19 +227,19 @@ To learn more about which API methods are available and to review example code, 
 ## See also
 <!-- all links in article -->
 
-GitHub (end-to-end design and technical documents):
+Design and technical documents:
 * [Ad Selection API Proposal](https://github.com/WICG/privacy-preserving-ads?tab=readme-ov-file#ad-selection-api-proposal)
 * [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md)
 * [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md)
 
-Public images that must be used for deployment; only official images from Microsoft will be able to run private auctions:
-* Buyer
-   * [BuyerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
-   * [Bidding service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
-   * [k-anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
-* Seller
-   * [SellerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
-   * [Auction service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
+Images for deploying seller services:
+* [SellerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
+* [Auction service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
+
+Images for deploying buyer services:
+* [BuyerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
+* [Bidding service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
+* [k-anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 
 Origin trials:
 * [Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/)
