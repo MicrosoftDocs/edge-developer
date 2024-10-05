@@ -175,7 +175,7 @@ landingContent:
             url: ../webview2/webview2-api-reference.md
 # =============================================================================
 # Card r2c3
-  - title: Development tips for Microsoft Edge
+  - title: Development tips for Microsoft Edge  # = /web-platform/
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -190,6 +190,9 @@ landingContent:
 
           - text: Detect Windows 11 using User-Agent Client Hints
             url: ../web-platform/how-to-detect-win11.md
+
+          - text: Sign-up for the Ad Selection API
+            url: ../web-platform/ad-selection-api.md
 # =============================================================================
 # Row 3 with 3 cards
 # =============================================================================
