@@ -1,26 +1,27 @@
 ---
-title: "Tutorial part 1: Create a simple extension"
+title: "Tutorial part 1: Display an image in a pop-up"
 description: Build an extension that displays an image file in a webpage in a pop-up, without JavaScript.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 10/03/2024
+ms.date: 10/04/2024
 ---
-# Tutorial part 1: Create a simple extension
+# Tutorial part 1: Display an image in a pop-up
 
-In this tutorial, you create a simple static extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab:
+The [Part 1 sample: Display an image in a pop-up](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1) is a simple static extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab:
 
 ![The simple extension running](./part1-simple-extension-images/extension-running.png)
 
-You create this simple extension by doing the following:
+You create this type of extension by doing the following:
 1. Create a manifest.json file.
 1. Add icons for launching the extension.
 1. Open a default pop-up dialog.
-1. Install and test the extension.
 
-If you want to immediately install and run the completed extension that you will build in this tutorial, or view its finished code, either:
+Along the way, you install (or update) and test the extension.
+
+If you want to immediately install and run the completed extension, or view its finished code, either:
 * Clone the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use the directory `/extension-getting-started-part1/`.
 * Download the source code from the [/part1/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1) folder of the MicrosoftEdge-Extensions repo.
 
@@ -32,7 +33,7 @@ Then you can install and run the finished extension that's in the repo, per [Sid
 
 Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the extension package version, the extension name and description, and so on.
 
-All the coding steps in this tutorial have already been done in the Part 1 demo in the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.  We recommending first cloning the repo and installing and running the Part 1 demo, before (or instead of) starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
+All the coding steps in this article have already been done in the Part 1 demo in the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.  We recommending first cloning the repo and installing and running the Part 1 demo, before (or instead of) starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
 
 This step has already been done in [manifest.json](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part1/part1/manifest.json) in the MicrosoftEdge-Extensions repo.  If you want to manually create the Part 1 extension by starting with an empty directory:
 
@@ -60,7 +61,7 @@ This step has already been done in the Part 1 demo in the [MicrosoftEdge-Extensi
     For icons:
     *   We recommend using `PNG` format, but you can also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
     *   We recommend using images that are 128 x 128 px, which are resized by the browser if necessary.
-    
+
 1.  Make sure the directories of your project are similar to the following structure:
 
     ```shell
@@ -72,7 +73,7 @@ This step has already been done in the Part 1 demo in the [MicrosoftEdge-Extensi
             ├── nasapod48x48.png
             └── nasapod128x128.png
     ```
-    
+
 1.  Obtain the `.png` files from the repo:
     * `nasapod16x16.png`
     * `nasapod32x32.png`
@@ -97,7 +98,7 @@ This step has already been done in the Part 1 demo in the [MicrosoftEdge-Extensi
         }
     }
     ```
-    
+
 
 <!-- ====================================================================== -->
 ## Step 3: Open a default pop-up dialog
@@ -106,7 +107,7 @@ This step has already been done in [popup.html](https://github.com/microsoft/Mic
 
 Create a `HTML` file to run when the user launches your extension.  When the user clicks the icon to launch the extension, this file will be displayed as a modal dialog.
 
-1.  Create the HTML file named `popup.html` in a directory named `popup`.  
+1.  Create the HTML file named `popup.html` in a directory named `popup`.
 
 1.  Add the following code to `popup.html`, to display the stars image:
 
@@ -123,7 +124,7 @@ Create a `HTML` file to run when the user launches your extension.  When the use
         </body>
     </html>
     ```
-    
+
 1.  Add the file `stars.jpeg` in the `images` folder.  For example, download [stars.jpeg](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part1/part1/images/stars.jpeg) from the MicrosoftEdge-Extensions repo.
 
 1.  Make sure the directories of your project are similar to the following structure:
@@ -141,7 +142,7 @@ Create a `HTML` file to run when the user launches your extension.  When the use
         └── popup
             └── popup.html
     ```
-    
+
 1.  Register the pop-up in `manifest.json` under `action`, as follows:
 
     ```json
@@ -161,8 +162,8 @@ Create a `HTML` file to run when the user launches your extension.  When the use
         }
     }
     ```
-    
-That's everything you need to develop a simple extension.  
+
+That's everything you need to develop a simple extension.
 
 
 <!-- ====================================================================== -->
@@ -174,7 +175,7 @@ Install and run the extension; see [Sideload an extension to install and test it
 
 You can open this Part 1 demo extension in any tab, including an empty tab or the Manage Extensions tab.
 
-After running and testing the extension, you can continue on to [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md).
+After running and testing the extension, you can continue on to [Tutorial part 2: Use JavaScript to insert an image in the webpage](./part2-content-scripts.md).
 
 
 <!-- ====================================================================== -->
@@ -182,7 +183,7 @@ After running and testing the extension, you can continue on to [Tutorial part 2
 <!-- all links in article -->
 
 * [Sideload an extension to install and test it locally](extension-sideloading.md)
-* [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md)
+* [Tutorial part 2: Use JavaScript to insert an image in the webpage](./part2-content-scripts.md)
 
 GitHub:
 * [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.

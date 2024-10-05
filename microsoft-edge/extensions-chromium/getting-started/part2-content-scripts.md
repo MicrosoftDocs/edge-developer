@@ -1,20 +1,18 @@
 ---
-title: "Tutorial part 2: Add JavaScript to the extension"
+title: "Tutorial part 2: Use JavaScript to insert an image in the webpage"
 description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 10/03/2024
+ms.date: 10/04/2024
 ---
-# Tutorial part 2: Add JavaScript to the extension
+# Tutorial part 2: Use JavaScript to insert an image in the webpage
 
-<!-- todo: format as numbered lists -->
+The [Part 2 sample: Use JavaScript to insert an image in the webpage](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) uses JavaScript code to insert the `stars.jpeg` image into the top of the currently opened webpage.  The extension's pop-up contains a title and a standard HTML button, labelled **Display**.  When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.
 
-In this tutorial, you use JavaScript code to insert the `stars.jpeg` image into the top of the currently opened webpage.  The extension's pop-up contains a title and a standard HTML button, labelled **Display**.  When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.
-
-This tutorial covers the following extension technologies:
+The Part 2 sample uses the following extension technologies:
 *  Injecting JavaScript libraries into an extension.
 *  Exposing extension assets to browser tabs.
 *  Including content webpages in existing browser tabs.
@@ -32,7 +30,7 @@ JavaScript code temporarily inserts `stars.jpeg` at the top of the current webpa
 
 ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
 
-If you want to immediately install and run the completed extension that you will build in this tutorial, or view its finished code, either:
+If you want to immediately install and run the completed extension, or view its finished code, either:
 * Clone the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use repo directory `/extension-getting-started-part2/`.
 * Download the source code from the [/extension-getting-started-part2/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) folder of the MicrosoftEdge-Extensions repo.
 
@@ -42,11 +40,11 @@ Then you can install and run the finished extension that's in the repo, per [Sid
 <!-- ====================================================================== -->
 ## Step 1: Update popup.html to include a button
 
-To use this article, first do the steps in [Tutorial part 1: Create a simple extension](./part1-simple-extension.md); that is, clone the MicrosoftEdge-Extensions repo, install the Part 1 demo, and run that demo.
+To use this article, first do the steps in [Tutorial part 1: Display an image in a pop-up](./part1-simple-extension.md); that is, clone the MicrosoftEdge-Extensions repo, install the Part 1 demo, and run that demo.
 
 This step has already been done in [popup.html](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/popup/popup.html) in the MicrosoftEdge-Extensions repo.
 
-The hypothetical starting state for this Part 2 tutorial, if you were to manually build-up the sample to add JavaScript, is that a directory exists for the part 2 code, containing the same directories and files that are created in the Part 1 tutorial.  These can be sibling directories for the Part 1 tutorial and the Part 2 tutorial, like in the MicrosoftEdge-Extensions repo.
+The hypothetical starting state for this Part 2 article, if you were to manually build-up the sample to add JavaScript, is that a directory exists for the part 2 code, containing the same directories and files that are created in the Part 1 article.  These can be sibling directories for Part 1 and Part 2, as done in the MicrosoftEdge-Extensions repo.
 
 It's possible to install the completed Part 1 and Part 2 demos from the MicrosoftEdge-Extensions repo, side-by-side.  We recommending first cloning the repo and installing and running the demos, before (or instead of) starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
 
@@ -323,7 +321,7 @@ Congratulations!  You've created an extension that sends a message from the exte
 ## See also
 <!-- all links in article -->
 
-* [Tutorial part 1: Create a simple extension](./part1-simple-extension.md)
+* [Tutorial part 1: Display an image in a pop-up](./part1-simple-extension.md)
 * [Sideload an extension to install and test it locally](extension-sideloading.md)
 
 GitHub:

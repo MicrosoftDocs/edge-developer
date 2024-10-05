@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 10/03/2024
+ms.date: 10/04/2024
 ---
 # Sideload an extension to install and test it locally
 
@@ -32,14 +32,14 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
 
 1. Select the directory that contains the extension's source files, such as `manifest.json`, and then click the **Select Folder** button.
 
-   Example path for [Tutorial part 1: Create a simple extension](./part1-simple-extension.md):
+   Example path for [Tutorial part 1: Display an image in a pop-up](./part1-simple-extension.md):
 
    `C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part1\part1\`
 
-   Example path for [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md):
+   Example path for [Tutorial part 2: Use JavaScript to insert an image in the webpage](./part2-content-scripts.md):
 
    `C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part2\extension-getting-started-part2\`
-    
+
    The extension is installed in your browser, similar to extensions that are installed from the store:
 
    ![Installed extensions page, showing a sideloaded extension](./extension-sideloading-images/part1-installed-extension.png)
@@ -83,5 +83,5 @@ To remove an extension that's been installed locally (sideloaded) in your browse
 ## See also
 <!-- all links in article -->
 
-* [Tutorial part 1: Create a simple extension](./part1-simple-extension.md)
-* [Tutorial part 2: Add JavaScript to the extension](./part2-content-scripts.md)
+* [Tutorial part 1: Display an image in a pop-up](./part1-simple-extension.md)
+* [Tutorial part 2: Use JavaScript to insert an image in the webpage](./part2-content-scripts.md)
