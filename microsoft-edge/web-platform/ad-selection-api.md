@@ -181,20 +181,20 @@ Images for buyer services:
 
 Sellers and buyers need to provide their own custom code as User-Defined Functions (UDFs) that run in private containers within the deployed services.  These User-Defined Functions can execute custom business logic.
 
-| Function | Description |
-| --- | --- |
-| `scoreAd()` for **Auction** service | Generates a score for each buyer's bid, or rejects the bid.  This score is then used by the **SellerFrontEnd** service, to choose a winner from among all buyers. |
-| `reportResult()` for **Event-Level Reporting** | Runs in the **SellerFrontEnd** service after the final winner has been chosen.  Notifies the seller about the winning bidder, and provides the bid value. |
+| Function | Service containing it | Description |
+| --- | --- | --- |
+| `scoreAd()` | **Auction** | Generates a score for each buyer's bid, or rejects the bid.  This score is then used by the **SellerFrontEnd** service, to choose a winner from among all buyers. |
+| `reportResult()` for event-level reporting | **SellerFrontEnd** | Runs in the **SellerFrontEnd** service after the final winner has been chosen.  Notifies the seller about the winning bidder, and provides the bid value. |
 
 
 <!-- ------------------------------ -->
 #### User-Defined Functions for buyers
 
-| Function | Description |
-| --- | --- |
-| `generateBids()` for **Bidding** service | Generates a bid, and chooses the banner that will be shown. |
-| `reportWin()` for **Event-Level Reporting** | Runs in the **SellerFrontEnd** service, if the buyer's bid wins the auction.  Notifies the buyer that they have won the auction, and generates notification URLs that will be triggered later, such as during banner rendering or other client events. |
-| `getValues()` for **Bidding Selection & Key/Value** service | Runs in the **Bidding Selection & Key/Value** service, if the buyer uses that service.  Allows for custom code execution for data lookup and selection. |
+| Function | Service containing it | Description |
+| --- | --- | --- |
+| `generateBids()` | **Bidding** | Generates a bid, and chooses the banner that will be shown. |
+| `reportWin()` for event-level reporting | **SellerFrontEnd** | Runs in the **SellerFrontEnd** service, if the buyer's bid wins the auction.  Notifies the buyer that they have won the auction, and generates notification URLs that will be triggered later, such as during banner rendering or other client events. |
+| `getValues()` | **Bidding Selection & Key/Value** | Runs in the **Bidding Selection & Key/Value** service, if the buyer uses that service.  Allows for custom code execution for data lookup and selection. |
 
 
 <!-- ------------------------------ -->
