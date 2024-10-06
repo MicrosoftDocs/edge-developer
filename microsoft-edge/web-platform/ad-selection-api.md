@@ -13,17 +13,17 @@ ms.date: 10/05/2024
 The Ad Selection API provides user-relevant ads on your site without using third-party cookies.  See [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md) in the "WICG / privacy-preserving-ads" repo.
 
 The Ad Selection API can be used by:
-* **Sellers** – Supply-side platforms (SSPs), who can use the API to provide higher-quality ads for their publishers.
-* **Buyers** – Demand-side platforms (DSPs), who can use the API to improve the effectiveness of advertising campaigns.
+* **Sellers** running a supply-side platform (SSP), who can use the API to provide higher-quality ads for their publishers.
+* **Buyers** running a demand-side platform (DSP), who can use the API to improve the effectiveness of advertising campaigns.
 
 To get started using the Ad Selection API and test out the end-to-end flow, sign up for the limited Preview of the Ad Selection API.
 
-Sellers (SSPs) and buyers (DSPs) can use this guide to:
+As a seller operating a supply-side platform or a buyer operating a demand-side platform, use this guide to:
 * Test the Ad Selection API on your site.
 * Sign-up for the Ad Selection API limited preview.
 * Register for the Origin Trial.
 * Complete API attestation.
-* See the Ad Selection API, its usage, and deploy to Azure.
+* See the Ad Selection API and its usage, and deploy your services to Azure.
 * Set up an evaluation environment with a supported cloud provider.
 * Prepare all needed UDF functions and be able to work with Edge Web API.
 
@@ -116,7 +116,7 @@ Below is an example of an `attestations.json` JSON file, containing an OT token,
 
 * `"platform":` must be `"edge"` or `"android"`.
 
-* `"attestations":` must include `"attribution_reporting_api"`, `"shared_storage_api"`, `"private_aggregation_api"`, and `"ad_selection_api"`.
+* Valid members of `"attestations":` are `"attribution_reporting_api":`, `"shared_storage_api":`, `"private_aggregation_api":`, and `"ad_selection_api":`.
 
    Each `"attestations":` entry must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
 
@@ -134,7 +134,9 @@ The Ad Selection API provides different services that need to be deployed by sel
 
 
 <!-- ------------------------------ -->
-#### Images for each service
+#### Images for deploying services
+
+Add your User-Defined Functions in these images of services.  Each image defines one service, and contains starter code, as functions with empty bodies, that are the relevant User-Defined Functions for that service.  Fill in the bodies of the User-Defined Functions in these images with your own custom code.<!-- todo: review this added paragraph -->
 
 Microsoft provides an image for each service, which can be deployed on a cloud provider.  These are the public images that must be used for deployment.  Only official images from Microsoft are able to run private auctions.
 
@@ -153,7 +155,7 @@ Images for buyer services:
 
 | Service | Description |
 | --- | --- |
-| **SellerFrontEnd** | Provides a `/SelectAd` gRPC endpoint, which receives requests from the seller's ad service<!-- todo: what's the bold CamelCase name of that service? --> to initiate the Protected Audience auction flow. |
+| **SellerFrontEnd** | Provides a `/SelectAd` gRPC endpoint, which receives requests from the seller's ad service to initiate the Protected Audience auction flow. |
 | **Auction** | Provides a `/ScoreAds` gRPC endpoint, which receives requests from the **SellerFrontEnd** service, containing bids that are participating in the auction.  Responds with a score value that the **SellerFrontEnd** service uses to choose the winner. |
 | **Key/Value** | Receives requests from the **SellerFrontEnd** service, which contain lookup keys from buyers' bids (such as `ad_render_urls`).  Returns real-time scoring signals that are required for the auction.  Runs in Bring Your Own Service (BYOS) mode, so the seller does not need to deploy this service in a trusted execution environment (TEE), and can instead use the image that's provided by Microsoft. |
 
