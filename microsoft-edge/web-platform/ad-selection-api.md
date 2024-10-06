@@ -122,9 +122,7 @@ Below is an example of an `attestations.json` JSON file, containing an OT token,
    * `"private_aggregation_api":`
    * `"ad_selection_api":`
 
-   Each of these `"attestations":` entries must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.
-   * `true` means that this service is not used for identifying the user across sites.
-   * `false` means that this service is used for identifying the user across sites.
+   Each of these `"attestations":` entries must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
 
 * `"ownership_token":` is the OT token generated for your individual domain registration.
 
