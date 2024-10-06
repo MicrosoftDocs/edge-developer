@@ -140,14 +140,10 @@ The Ad Selection API provides different services that need to be deployed by sel
 <!-- ------------------------------ -->
 #### Images for deploying services
 
-Add your User-Defined Functions within the provided images of services.
-The User-Defined Functions can run custom business logic.
-The User-Defined Functions run in private containers within the deployed services.
-<!-- todo: review the above added paragraph -->
+Add your User-Defined Functions within the provided images of services.  The User-Defined Functions can run custom business logic.  The User-Defined Functions run in private containers within the deployed services.
 
-Each image defines one service, and contains starter code, as functions with empty bodies, that are the relevant User-Defined Functions for that service.
-Fill in the bodies of the User-Defined Functions in these images with your own custom code.
-<!-- todo: review the above added paragraph -->
+Each image defines one service, and contains starter code, as functions with empty bodies, that are the relevant User-Defined Functions for that service.  Fill in the bodies of the User-Defined Functions in these images with your own custom code.
+<!-- todo: review the above added paragraphs -->
 
 Microsoft provides an image for each service, which can be deployed on a cloud provider.  These are the public images that must be used for deployment.  Only official images from Microsoft are able to run private auctions.
 
