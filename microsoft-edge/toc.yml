@@ -1704,7 +1704,7 @@
         - name: Detect Microsoft Edge from your website
           href: web-platform/user-agent-guidance.md
 
-        - name: Develop for the sidebar
+        - name: Develop experiences for the sidebar in Microsoft Edge
           href: web-platform/sidebar.md
           displayName: sidebar apps, sidebar extensions, pwa, side panel, sidepanel
 

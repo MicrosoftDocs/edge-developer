@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/24/2023
+ms.date: 10/06/2024
 ---
 # Development tips for Microsoft Edge
 
@@ -78,7 +78,7 @@ As a developer, you can leverage the sidebar for your own experiences in two way
 * By adapting your existing Progressive Web App (PWA) to run in the sidebar.
 * By making use of the Sidebar API in your Microsoft Edge extension.
 
-See [Develop for the sidebar](./sidebar.md).
+See [Develop experiences for the sidebar in Microsoft Edge](./sidebar.md).
 
 
 <!-- ====================================================================== -->
@@ -115,3 +115,13 @@ Microsoft Edge includes the **JSON viewer**, a tool that automatically reformats
 Formatting and highlighting JSON data is useful because sometimes a web server responds to HTTP requests by returning data encoded as JSON.  JSON data can be difficult to read when it's formatted as a single long, concatenated line of text. The same can occur when opening a JSON file from disk.  The **JSON viewer** reformats JSON server responses and local files, and indicates any lines that have syntax errors.
 
 See [View formatted JSON](../devtools-guide-chromium/json-viewer/json-viewer.md).
+
+
+<!-- ====================================================================== -->
+## Sign up for the Ad Selection API
+
+The Ad Selection API provides user-relevant ads on your site without using third-party cookies.  The Ad Selection API can be used by:
+* **Sellers** running a supply-side platform (SSP), who can use the API to provide higher-quality ads for their publishers.
+* **Buyers** running a demand-side platform (DSP), who can use the API to improve the effectiveness of advertising campaigns.
+
+See [Sign-up for the Ad Selection API](./ad-selection-api.md).
