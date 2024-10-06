@@ -1,13 +1,13 @@
 ---
-title: Sign-up for the Ad Selection API
-description: Sign-up for the Ad Selection API, which provides user-relevant ads on your site without using third-party cookies.
+title: Sign up for the Ad Selection API
+description: Sign up for the Ad Selection API, which provides user-relevant ads on your site without using third-party cookies.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.date: 10/05/2024
 ---
-# Sign-up for the Ad Selection API
+# Sign up for the Ad Selection API
 <!-- https://go.microsoft.com/fwlink/?linkid=2289906 -->
 
 The Ad Selection API provides user-relevant ads on your site without using third-party cookies.  See [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md) in the "WICG / privacy-preserving-ads" repo.
@@ -20,7 +20,7 @@ To get started using the Ad Selection API and test out the end-to-end flow, sign
 
 As a seller operating a supply-side platform or a buyer operating a demand-side platform, use this guide to:
 * Test the Ad Selection API on your site.
-* Sign-up for the Ad Selection API limited preview.
+* Sign up for the Ad Selection API limited preview.
 * Register for the Origin Trial.
 * Complete API attestation.
 * See the Ad Selection API and its usage, and deploy your services to Azure.

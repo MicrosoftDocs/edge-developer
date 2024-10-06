@@ -1714,15 +1714,15 @@
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
 
-        - name: Operating System Regional Data Display
+        - name: Display regional versions of your site, based on OS settings
           href: web-platform/os-regional-settings.md
           displayName: globalization, language, region, limited, intl, date, time, format
 
-        - name: View formatted JSON
+        - name: View formatted JSON responses or files
           href: devtools-guide-chromium/json-viewer/json-viewer.md
           displayName: JSON viewer, view JSON
 
-        - name: Sign-up for the Ad Selection API
+        - name: Sign up for the Ad Selection API
           href: ./web-platform/ad-selection-api.md
 
 # =============================================================================

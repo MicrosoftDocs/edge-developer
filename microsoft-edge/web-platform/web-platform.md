@@ -108,13 +108,21 @@ See [Customize the password reveal button](./password-reveal.md).
 
 
 <!-- ====================================================================== -->
+## Display regional versions of your site, based on OS settings
+
+Microsoft Edge provides operating system (OS) regional preference information to help website authors create regional experiences on their website, when viewing your site using Microsoft Edge. This feature allows website authors to deliver value to users who specifically change their regional preferences in the OS to reflect their personal preferences.
+
+See [Display regional versions of your site, based on OS settings](./os-regional-settings.md).
+
+
+<!-- ====================================================================== -->
 ## View formatted JSON responses or files
 
 Microsoft Edge includes the **JSON viewer**, a tool that automatically reformats and highlights the JSON data shown in a browser to make it easier to read.
 
 Formatting and highlighting JSON data is useful because sometimes a web server responds to HTTP requests by returning data encoded as JSON.  JSON data can be difficult to read when it's formatted as a single long, concatenated line of text. The same can occur when opening a JSON file from disk.  The **JSON viewer** reformats JSON server responses and local files, and indicates any lines that have syntax errors.
 
-See [View formatted JSON](../devtools-guide-chromium/json-viewer/json-viewer.md).
+See [View formatted JSON responses or files](../devtools-guide-chromium/json-viewer/json-viewer.md).
 
 
 <!-- ====================================================================== -->
@@ -124,4 +132,4 @@ The Ad Selection API provides user-relevant ads on your site without using third
 * **Sellers** running a supply-side platform (SSP), who can use the API to provide higher-quality ads for their publishers.
 * **Buyers** running a demand-side platform (DSP), who can use the API to improve the effectiveness of advertising campaigns.
 
-See [Sign-up for the Ad Selection API](./ad-selection-api.md).
+See [Sign up for the Ad Selection API](./ad-selection-api.md).
