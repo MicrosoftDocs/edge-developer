@@ -255,8 +255,8 @@ Images for deployment:
 Origin trials:
 * [Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/)
 
-Trusted execution environment:
-* [Confidential Computing: Hardware-Based Trusted Execution for Applications and Data](https://confidentialcomputing.io/wp-content/uploads/sites/85/2021/03/confidentialcomputing_outreach_whitepaper-8-5x11-1.pdf) - Trusted execution environment (TEE).
+Trusted execution environment (TEE):
+* [Confidential Computing: Hardware-Based Trusted Execution for Applications and Data](https://confidentialcomputing.io/wp-content/uploads/sites/85/2021/03/confidentialcomputing_outreach_whitepaper-8-5x11-1.pdf)
 
 Azure:
 * [Microsoft Azure](https://azure.microsoft.com)
