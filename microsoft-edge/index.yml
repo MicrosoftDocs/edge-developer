@@ -89,7 +89,7 @@ conceptualContent:
 
             - itemType: reference
               text: Deploy to macOS
-              url: /intune/apps/apps-edge-macos
+              url: /mem/intune/apps/apps-edge-macos
         # Card
         - title: Configure Microsoft Edge
           links:
@@ -359,9 +359,9 @@ conceptualContent:
               url: ./web-platform/how-to-detect-win11.md
               itemType: how-to-guide
 
-            - text: Customize the password reveal button
-              url: ./web-platform/password-reveal.md
-              itemType: how-to-guide
+#           - text: Customize the password reveal button
+#             url: ./web-platform/password-reveal.md
+#             itemType: how-to-guide
 
             - text: Display regional versions of your site, based on OS settings
               url: ./web-platform/os-regional-settings.md
