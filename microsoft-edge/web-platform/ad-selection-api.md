@@ -116,9 +116,13 @@ Below is an example of an `attestations.json` JSON file, containing an OT token,
 
 * `"platform":` must be `"edge"` or `"android"`.
 
-* Valid members of `"attestations":` are `"attribution_reporting_api":`, `"shared_storage_api":`, `"private_aggregation_api":`, and `"ad_selection_api":`.
+* Valid members of `"attestations":` are:
+   * `"attribution_reporting_api":`
+   * `"shared_storage_api":`
+   * `"private_aggregation_api":`
+   * `"ad_selection_api":`
 
-   Each `"attestations":` entry must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
+   Each of these `"attestations":` entries must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
 
 * `"ownership_token":` is the OT token generated for your individual domain registration.
 
