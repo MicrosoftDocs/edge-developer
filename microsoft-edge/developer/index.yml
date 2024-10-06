@@ -177,11 +177,12 @@ landingContent:
 # Card r2c3  # 10 items max
   - title: Development tips for Microsoft Edge  # = /web-platform/
     linkLists:
+#     - linkListType: overview
+#       links:
+#         - text: Development tips for Microsoft Edge
+#           url: ../web-platform/web-platform.md
       - linkListType: how-to-guide
         links:
-          - text: Development tips for Microsoft Edge
-            url: ../web-platform/web-platform.md
-
           - text: Site compatibility-impacting changes
             url: ../web-platform/site-impacting-changes.md
 
@@ -200,8 +201,8 @@ landingContent:
           - text: Detect Windows 11 using User-Agent Client Hints
             url: ../web-platform/how-to-detect-win11.md
 
-#         - text: Customize the password reveal button
-#           url: ../web-platform/password-reveal.md
+          - text: Customize the password reveal button
+            url: ../web-platform/password-reveal.md
 
           - text: Display regional versions of your site, based on OS settings
             url: ../web-platform/os-regional-settings.md

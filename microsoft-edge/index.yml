@@ -331,9 +331,9 @@ conceptualContent:
         # Card
         - title: Development tips for Microsoft Edge
           links:
-            - text: Development tips for Microsoft Edge
-              url: ./web-platform/web-platform.md
-              itemType: overview
+#           - text: Development tips for Microsoft Edge
+#             url: ./web-platform/web-platform.md
+#             itemType: overview
 
             - text: Site compatibility-impacting changes
               url: ./web-platform/site-impacting-changes.md
@@ -359,9 +359,9 @@ conceptualContent:
               url: ./web-platform/how-to-detect-win11.md
               itemType: how-to-guide
 
-#           - text: Customize the password reveal button
-#             url: ./web-platform/password-reveal.md
-#             itemType: how-to-guide
+            - text: Customize the password reveal button
+              url: ./web-platform/password-reveal.md
+              itemType: how-to-guide
 
             - text: Display regional versions of your site, based on OS settings
               url: ./web-platform/os-regional-settings.md
