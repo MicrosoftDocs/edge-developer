@@ -337,7 +337,7 @@ conceptualContent:
 
             - text: Site compatibility-impacting changes
               url: ./web-platform/site-impacting-changes.md
-              itemType: how-to-guide
+              itemType: whats-new
 
             - text: Move users to Microsoft Edge from Internet Explorer
               url: ./web-platform/ie-to-microsoft-edge-redirection.md
