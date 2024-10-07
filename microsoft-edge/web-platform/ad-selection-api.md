@@ -45,13 +45,19 @@ To change the Ad Selection API platform features on your developer machine, use 
 
 ![The "Ad Selection API" flags](./ad-selection-api-images/flags.png)
 
+The **Ad Selection API** flag enables the Ad Selection API and associated features such as:
+* Attribution Reporting.
+* Fenced Frames.
+* Shared Storage.
+* Private Aggregation.
+
 
 <!-- ------------------------------ -->
 #### Sign-up and attestation requirements and process
 
 Developers interested in alpha testing can join the [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/).  This trial enables end-to-end testing of Ad Selection API features, covering both the API usage and the deployment of secure container images.
 
-For each domain that you intend to use with the Ad Selection API, fill in the **Origin Trial Registration**  form for that domain, and then submit the form.
+For each top-level domain that you intend to use with the Ad Selection API, fill in the **Origin Trial Registration**  form for that domain, and then submit the form.
 
 To sign up for the **Ad Selection API** origin trial for a domain:
 
@@ -65,7 +71,7 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 
 1. Fill in the form.
 
-   * In the **Domain** text box, enter a single domain.
+   * In the **Domain** text box, enter a single top-level domain.  For example, a top-level domain is `contoso.example`, and optionally includes subdomains such as `subdomain.contoso.example`.
 
    * In the **Subdomain Support** section, select the **Yes** or **No** option button.
 
@@ -75,7 +81,7 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 
 1. Click the **Submit** button.
 
-   After you receive an OT token for the domain, use the OT token in the `attestations.json` file for that domain, to enable testing the Ad Selection API with supported Microsoft Edge clients.
+   After you receive an OT token for the domain, use the OT token in the `attestations.json` file for that top-level domain, to enable testing the Ad Selection API with supported Microsoft Edge clients.
 
 1. To complete your attestation and allow for continued access to the Ad Selection API, create a JSON file named `attestations.json` and make it available at the `/.well-known/attestations.json` path for each registered domain.  For example: `https://contoso.example/.well-known/ad-selection-attestations.json`.
 
@@ -85,7 +91,9 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 <!-- ------------------------------ -->
 #### Example attestations.json file
 
-Below is an example of an `attestations.json` JSON file, containing an OT token, which must be published within **30 days** of receiving the initial token:
+The following is an example of an `attestations.json` JSON file, containing an OT token.  The `attestations.json` JSON file must be published within **30 days** of receiving the OT token.
+
+`attestations.json`:
 
 ```json
 {
@@ -134,10 +142,10 @@ Below is an example of an `attestations.json` JSON file, containing an OT token,
 
 * In the `"platform_attestations":` section, `"platform":` must be `"edge"` or `"android"`.
 
-* In the `"platform_attestations":` section, valid members of `"attestations":` are the following APIs:
-   * `"attribution_reporting_api":`
-   * `"shared_storage_api":`
-   * `"private_aggregation_api":`
+* In the `"platform_attestations":` section, valid members of `"attestations":` are the following:
+   * `"attribution_reporting_api":` - Part of the Ad Selection API, for attribution reporting.
+   * `"shared_storage_api":` - Part of the Ad Selection API, for shared storage.
+   * `"private_aggregation_api":` - Part of the Ad Selection API, for private aggregation.
    * `"ad_selection_api":`
 
    Each of these `"attestations":` entries must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
@@ -158,8 +166,7 @@ The Ad Selection API provides different services that need to be deployed by sel
 
 Add your User-Defined Functions within the provided images of services.  The User-Defined Functions can run custom business logic.  The User-Defined Functions run in private containers within the deployed services.
 
-Each image defines one service, and contains starter code, as functions with empty bodies, that are the relevant User-Defined Functions for that service.  Fill in the bodies of the User-Defined Functions in these images with your own custom code.
-<!-- todo: review the above added paragraphs -->
+Each image defines one service.  Some images don't contain UDFs, and consist entirely of predefined code.  Some images contain UDFs, as functions with an empty body or starter code, that are the relevant User-Defined Functions for that service.  Fill in the bodies of the User-Defined Functions in these images with your own custom code.
 
 Microsoft provides an image for each service, which can be deployed on a cloud provider.  These are the public images that must be used for deployment.  Only official images from Microsoft are able to run private auctions.
 
@@ -191,7 +198,7 @@ Images for buyer services:
 | **BuyerFrontEnd** | Provides a `/GetBids` gRPC endpoint, which receives requests from the **SellerFrontEnd** service to initiate the bidding flow. |
 | **Bidding** | Provides a `/GenerateBids` endpoint, which receives requests from the **BuyerFrontEnd** service to handle the bidding and generate a bid.  Generates a bid, chooses the winner, and selects the banner to be rendered. |
 | **Key/Value** | Receives requests from the **BuyerFrontEnd** service and returns real-time buyer data required for bidding, corresponding to lookup keys from Interest Groups.  Such a request happens once per workflow.  Runs in Bring Your Own Service (BYOS) mode. |
-| **Bidding Selection & Key/Value** | Receives requests from the **Bidding** service to select and return additional ad banners (candidates) that can participate in bidding.  The **Bidding**<!-- todo: which service? --> service can also return additional signals that are needed for bidding.  The **Bidding** service may send multiple requests to the **Bidding Selection & Key/Value** service, or may choose not to send any requests, given that the **Bidding Selection & Key/Value** service<!-- todo: which service? --> is optional.  The **Bidding Selection & Key/Value** service must be deployed in a trusted execution environment (TEE). |
+| **Bidding Selection & Key/Value** | Receives requests from the **Bidding** service to select and return additional ad banners (candidates) that can participate in bidding.  The **Bidding Selection & Key/Value** service can also return additional signals that are needed for bidding.  The **Bidding** service may send multiple requests to the **Bidding Selection & Key/Value** service, or may choose not to send any requests, because the **Bidding Selection & Key/Value** service is optional.  The **Bidding Selection & Key/Value** service must be deployed in a trusted execution environment (TEE). |
 | **K-Anon** | Collects k-anonymity counters and checks that the winning ad banner passes the k-anonymity check. |
 
 
@@ -200,7 +207,7 @@ Images for buyer services:
 
 Sellers and buyers need to provide their own custom code as User-Defined Functions (UDFs) that run in private containers within the deployed services.  These User-Defined Functions can execute custom business logic.
 
-| Function | Service containing it | Description |
+| UDF | Service in which the UDF runs | Description |
 | --- | --- | --- |
 | `scoreAd()` | **Auction** | Generates a score for each buyer's bid, or rejects the bid.  This score is then used by the **SellerFrontEnd** service, to choose a winner from among all buyers. |
 | `reportResult()` | **SellerFrontEnd** | For event-level reporting.  Runs in the **SellerFrontEnd** service after the final winner has been chosen.  Notifies the seller about the winning bidder, and provides the bid value. |
@@ -209,7 +216,7 @@ Sellers and buyers need to provide their own custom code as User-Defined Functio
 <!-- ------------------------------ -->
 #### User-Defined Functions for buyers
 
-| Function | Service containing it | Description |
+| UDF | Service in which the UDF runs | Description |
 | --- | --- | --- |
 | `generateBids()` | **Bidding** | Generates a bid, and chooses the banner that will be shown. |
 | `reportWin()` | **SellerFrontEnd** | For event-level reporting.  Runs in the **SellerFrontEnd** service, if the buyer's bid wins the auction.  Notifies the buyer that they have won the auction, and generates notification URLs that will be triggered later, such as during banner rendering or other client events. |
