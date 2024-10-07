@@ -199,13 +199,23 @@ Images for buyer services:
 | **Bidding** | Provides a `/GenerateBids` endpoint, which receives requests from the **BuyerFrontEnd** service to handle the bidding and generate a bid.  Generates a bid, chooses the winner, and selects the banner to be rendered. |
 | **Key/Value** | Receives requests from the **BuyerFrontEnd** service and returns real-time buyer data required for bidding, corresponding to lookup keys from Interest Groups.  Such a request happens once per workflow.  Runs in Bring Your Own Service (BYOS) mode. |
 | **Bidding Selection & Key/Value** | Receives requests from the **Bidding** service to select and return additional ad banners (candidates) that can participate in bidding.  The **Bidding Selection & Key/Value** service can also return additional signals that are needed for bidding.  The **Bidding** service may send multiple requests to the **Bidding Selection & Key/Value** service, or may choose not to send any requests, because the **Bidding Selection & Key/Value** service is optional.  The **Bidding Selection & Key/Value** service must be deployed in a trusted execution environment (TEE). |
-| **K-Anon** | Collects k-anonymity counters and checks that the winning ad banner passes the k-anonymity check. |
+| **K-Anonymity** | Collects k-anonymity counters and checks that the winning ad banner passes the k-anonymity check. |
 
 
 <!-- ------------------------------ -->
-#### User-Defined Functions for sellers
+#### User-Defined Functions
 
 Sellers and buyers need to provide their own custom code as User-Defined Functions (UDFs) that run in private containers within the deployed services.  These User-Defined Functions can execute custom business logic.
+
+Each buyer or seller can deploy multiple instances of a given service, such as:
+* **SellerFrontEnd** and **Auction**.
+* **BuyerFrontend**, **Bidding**, and **K-Anonymity**.
+
+Some of these services take an input which is a JavaScript worklet that defines User-Defined Functions.
+
+
+<!-- ---------- -->
+###### User-Defined Functions for sellers
 
 | UDF | Service in which the UDF runs | Description |
 | --- | --- | --- |
@@ -213,8 +223,8 @@ Sellers and buyers need to provide their own custom code as User-Defined Functio
 | `reportResult()` | **SellerFrontEnd** | For event-level reporting.  Runs in the **SellerFrontEnd** service after the final winner has been chosen.  Notifies the seller about the winning bidder, and provides the bid value. |
 
 
-<!-- ------------------------------ -->
-#### User-Defined Functions for buyers
+<!-- ---------- -->
+###### User-Defined Functions for buyers
 
 | UDF | Service in which the UDF runs | Description |
 | --- | --- | --- |
