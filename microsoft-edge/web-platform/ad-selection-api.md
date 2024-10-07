@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 10/05/2024
+ms.date: 10/07/2024
 ---
 # Sign up for the Ad Selection API
 <!-- https://go.microsoft.com/fwlink/?linkid=2289906 -->
@@ -47,7 +47,9 @@ Developers can individually change the Ad Selection API platform features, by us
 
 Developers interested in alpha testing can join the [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/).  This trial enables end-to-end testing of Ad Selection API features, covering both the API usage and the deployment of secure container images.
 
-To sign up for an Origin Trial token:
+For each domain that you intend to use with the Ad Selection API, fill in the **Origin Trial Registration**  form for that domain, and then submit the form.
+
+To sign up for the **Ad Selection API** origin trial for a domain:
 
 1. Go to Microsoft Edge [Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) in a new window or tab.
 
@@ -55,15 +57,27 @@ To sign up for an Origin Trial token:
 
    ![Origin trials](./ad-selection-api-images/origin-trials.png)
 
-1. Complete the form for each domain you intend to use with the Ad Selection API and make sure to provide a valid developer contact:
+   The **Origin Trial Registration** form opens:
 
    ![Registration form](./ad-selection-api-images/reg-form.png)
 
-   * When you receive your OT token, this can be used on the provided domain(s) to enable Ad Selection APIs for testing with supported Microsoft Edge clients.
+1. Fill in the form.
+
+   * In the **Domain** text box, enter a single domain.
+
+   * In the **Subdomain Support** section, select the **Yes** or **No** option button.
+
+   * In the **Email Address** text box, provide a valid developer contact for the domain.
+
+   * In the **Origin Trial Name** text box, enter **Ad Selection API**.
+
+1. Click the **Submit** button.
+
+   After you receive an OT token for the domain, use the OT token in the `attestations.json` file for that domain, to enable using and testing the Ad Selection APIs with supported Microsoft Edge clients.
 
 1. To complete attestation and allow for continued access to the Ad Selection API, you'll need to host a JSON file named `attestations.json` on each domain at a `/.well-known/` path.  For example: `https://contoso.example/.well-known/ad-selection-attestations.json`.
 
-   This JSON file must conform to the following standards below, and must include the created OT token as well as a list of APIs.
+   The `attestations.json` file for a domain must conform to the following standards below, and must include the created OT token as well as a list of APIs.
 
 
 <!-- ------------------------------ -->
