@@ -87,7 +87,7 @@ Below is the sample HTML file:
 
 Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md) to locally update the extension and then run the extension.  The tab must contain a webpage before opening the extension.
 
-After updating and opening the extension, a pop-up opens with a **Display** button:
+After updating and opening the extension, a pop-up opens, containing a small HTML page with a title, instructions, and a **Display** button:
 
 ![popup.html after clicking the Extension's icon](./part2-content-scripts-images/part2-popupdialog.png)
 
