@@ -177,7 +177,7 @@ Images for seller services:
 Images for buyer services:
 * [BuyerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
 * [Bidding service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
-* [k-anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
+* [K-Anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 
 
 <!-- ------------------------------ -->
@@ -283,7 +283,7 @@ Images for deployment:
 * Buyers
    * [BuyerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
    * [Bidding service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
-   * [k-anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
+   * [K-Anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 
 Origin trials:
 * [Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/)
