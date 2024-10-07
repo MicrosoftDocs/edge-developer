@@ -46,10 +46,10 @@ To change the Ad Selection API platform features on your developer machine, use 
 ![The "Ad Selection API" flags](./ad-selection-api-images/flags.png)
 
 The **Ad Selection API** flag enables the Ad Selection API and associated features such as:
-* Attribution Reporting.
-* Fenced Frames.
-* Shared Storage.
-* Private Aggregation.
+* Attribution Reporting.<!--an api-->
+* Fenced Frames.<!--not an api-->
+* Shared Storage.<!--an api-->
+* Private Aggregation.<!--an api-->
 
 
 <!-- ------------------------------ -->
@@ -81,19 +81,17 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 
 1. Click the **Submit** button.
 
-   An Origin Trial token is generated for the top-level domain and is sent to you.  After you receive the token, use the token in the `attestations.json` file for that domain, to enable testing the Ad Selection API with supported Microsoft Edge clients.
+   An Origin Trial token is generated for the top-level domain and is sent to you within an `ad-selection-attestations.json` file.
 
-1. To complete your attestation and allow continued access to the Ad Selection API, create a JSON file named `attestations.json` for the domain and make it available at the `/.well-known/attestations.json` path for that domain.  For example: `https://contoso.example/.well-known/ad-selection-attestations.json`.
+1. Host the received `ad-selection-attestations.json` file at the `/.well-known/ad-selection-attestations.json` path for the top-level domain.  For example: `https://contoso.example/.well-known/ad-selection-attestations.json`.
 
-   The `attestations.json` JSON file must be published within **30 days** of receiving the OT token.
+   The `ad-selection-attestations.json` JSON file must be published within **30 days** of receiving the OT token.  Hosting this JSON file is required, in order to complete your attestation and allow your code to access the Ad Selection API, to test the Ad Selection API with supported Microsoft Edge clients.
 
 
 <!-- ------------------------------ -->
-#### Example attestations.json file
+#### Example attestations JSON file
 
-The `attestations.json` file for a domain must conform to the following standards below.  The file must include the generated OT token for the top-level domain, as well as a list of APIs (features that are associated with the Ad Services API).
-
-The following is an example `attestations.json` file:
+The `ad-selection-attestations.json` file that you receive and host for a domain must conform to the following standards below.  The following is an example of an `ad-selection-attestations.json` file that's sent to you:
 
 ```json
 {
@@ -110,6 +108,9 @@ The following is an example `attestations.json` file:
                 {
                     "platform": "edge",
                     "attestations": {
+                        "ad_selection_api": {
+                            "ServiceNotUsedForIdentifyingUserAcrossSites": true/false
+                        },
                         "attribution_reporting_api": {
                             "ServiceNotUsedForIdentifyingUserAcrossSites": true/false
                         },
@@ -117,9 +118,6 @@ The following is an example `attestations.json` file:
                             "ServiceNotUsedForIdentifyingUserAcrossSites": true/false
                         },
                         "private_aggregation_api": {
-                            "ServiceNotUsedForIdentifyingUserAcrossSites": true/false
-                        },
-                        "ad_selection_api": {
                             "ServiceNotUsedForIdentifyingUserAcrossSites": true/false
                         }
                     }
@@ -138,18 +136,17 @@ The following is an example `attestations.json` file:
 <!-- ---------- -->
 ###### Important fields and values
 
-* `"ownership_token":` is the OT token that was generated when registering this domain for the **Ad Selection API** origin trial.
+* The file must include the generated Origin Trial token for the top-level domain.  `"ownership_token":` is the OT token that was generated when registering this domain for the **Ad Selection API** origin trial.
 
 * In the `"platform_attestations":` section, `"platform":` must be `"edge"` or `"android"`.
 
-* In the `"platform_attestations":` section, valid members of `"attestations":` are the following:
-   * `"attribution_reporting_api":` - Part of the Ad Selection API, for attribution reporting.
-   * `"shared_storage_api":` - Part of the Ad Selection API, for shared storage.
-   * `"private_aggregation_api":` - Part of the Ad Selection API, for private aggregation.
-   * `"ad_selection_api":`
-   <!-- todo: is this list complete?  eg is there "fenced_frames_api": {} ?  per list in flag desc -->
-
-   Each of these `"attestations":` entries must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
+* The file must include a list of APIs (features that are associated with the Ad Services API).  In the `"platform_attestations":` section, valid members of `"attestations":` are the following:
+   * `"ad_selection_api":` - The main API, for private auction logic.
+   * `"attribution_reporting_api":` - Attribution reporting, a feature associated with the Ad Selection API.
+   * `"shared_storage_api":` - Shared storage, a feature associated with the Ad Selection API.
+   * `"private_aggregation_api":` - Private aggregation, a feature associated with the Ad Selection API.
+   * Requirements:
+      * Each `"..._api":` entry must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
 
 
 <!-- ====================================================================== -->
