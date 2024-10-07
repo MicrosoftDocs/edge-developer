@@ -51,13 +51,11 @@ For each domain that you intend to use with the Ad Selection API, fill in the **
 
 To sign up for the **Ad Selection API** origin trial for a domain:
 
-1. Go to Microsoft Edge [Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) in a new window or tab.
-
-1. In the **Ad Selection API** section, click the **Register** button:
+1. Open [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) in a new window or tab:
 
    ![Origin trials](./ad-selection-api-images/origin-trials.png)
 
-   The **Origin Trial Registration** form opens:
+1. In the **Ad Selection API** section, click the **Register** button.  The **Origin Trial Registration** form opens:
 
    ![Registration form](./ad-selection-api-images/reg-form.png)
 
@@ -128,17 +126,17 @@ Below is an example of an `attestations.json` JSON file, containing an OT token,
 <!-- ---------- -->
 ###### Important fields and values
 
-* `"platform":` must be `"edge"` or `"android"`.
+* `"ownership_token":` is the OT token that was generated when registering this domain for the **Ad Selection API** origin trial.
 
-* Valid members of `"attestations":` are:
+* In the `"platform_attestations":` section, `"platform":` must be `"edge"` or `"android"`.
+
+* In the `"platform_attestations":` section, valid members of `"attestations":` are the following APIs:
    * `"attribution_reporting_api":`
    * `"shared_storage_api":`
    * `"private_aggregation_api":`
    * `"ad_selection_api":`
 
    Each of these `"attestations":` entries must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
-
-* `"ownership_token":` is the OT token that's generated for your individual domain registration.
 
 
 <!-- ====================================================================== -->
