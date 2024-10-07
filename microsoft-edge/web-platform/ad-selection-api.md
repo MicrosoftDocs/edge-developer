@@ -256,9 +256,9 @@ To deploy the Ad Selection API service to Azure:
 <!-- ====================================================================== -->
 ## Use the Ad Selection API on your website
 
-To start using the Ad Selection API, sellers and buyers need to use the API, by modifying the JavaScript code of their websites running in Microsoft Edge.
+To start using the Ad Selection API, sellers and buyers need to modify the JavaScript code of their websites running in Microsoft Edge.
 
-* Sellers: To run private actions, fetch interest groups, and do reporting, update your supply and publisher code.
+* Sellers: To run private actions, fetch interest groups, and do reporting, update your supply-side and publisher code.
 
 * Buyers: To create interest groups and store them in the browser, update the code on your advertiser partners' websites.  You can use the delegation mechanism to restrict and allow Interest Group creation on third-party domains.
 
