@@ -81,19 +81,19 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 
 1. Click the **Submit** button.
 
-   After you receive an OT token for the domain, use the OT token in the `attestations.json` file for that top-level domain, to enable testing the Ad Selection API with supported Microsoft Edge clients.
+   An Origin Trial token is generated for the top-level domain and is sent to you.  After you receive the token, use the token in the `attestations.json` file for that domain, to enable testing the Ad Selection API with supported Microsoft Edge clients.
 
-1. To complete your attestation and allow for continued access to the Ad Selection API, create a JSON file named `attestations.json` and make it available at the `/.well-known/attestations.json` path for each registered domain.  For example: `https://contoso.example/.well-known/ad-selection-attestations.json`.
+1. To complete your attestation and allow continued access to the Ad Selection API, create a JSON file named `attestations.json` for the domain and make it available at the `/.well-known/attestations.json` path for that domain.  For example: `https://contoso.example/.well-known/ad-selection-attestations.json`.
 
-   The `attestations.json` file for a domain must conform to the following standards below, and must include the created OT token as well as a list of APIs.
+   The `attestations.json` JSON file must be published within **30 days** of receiving the OT token.
 
 
 <!-- ------------------------------ -->
 #### Example attestations.json file
 
-The following is an example of an `attestations.json` JSON file, containing an OT token.  The `attestations.json` JSON file must be published within **30 days** of receiving the OT token.
+The `attestations.json` file for a domain must conform to the following standards below.  The file must include the generated OT token for the top-level domain, as well as a list of APIs (features that are associated with the Ad Services API).
 
-`attestations.json`:
+The following is an example `attestations.json` file:
 
 ```json
 {
@@ -147,6 +147,7 @@ The following is an example of an `attestations.json` JSON file, containing an O
    * `"shared_storage_api":` - Part of the Ad Selection API, for shared storage.
    * `"private_aggregation_api":` - Part of the Ad Selection API, for private aggregation.
    * `"ad_selection_api":`
+   <!-- todo: is this list complete?  eg is there "fenced_frames_api": {} ?  per list in flag desc -->
 
    Each of these `"attestations":` entries must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
 
