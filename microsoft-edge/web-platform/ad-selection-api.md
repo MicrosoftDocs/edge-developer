@@ -35,11 +35,15 @@ As a seller operating a supply-side platform or a buyer operating a demand-side 
 <!-- ------------------------------ -->
 #### When and where is the preview available?
 
-Microsoft Edge versions starting with **130.0.2808.0** will have the platform components of the Ad Selection API in a limited, developer opt-in preview outside of the European Economic Area (EEA) and the United Kingdom (UK).
+Microsoft Edge versions starting with **130.0.2808.0** have support for the Ad Selection API in a limited, developer opt-in preview outside of the European Economic Area (EEA) and the United Kingdom (UK).
 
-Developers can individually change the Ad Selection API platform features, by using the testing flag, `edge://flags#edge-ad-selection-api`:
 
-![The "Ad Selection API" flag](./ad-selection-api-images/flags.png)
+<!-- ------------------------------ -->
+#### Flags for testing
+
+To change the Ad Selection API platform features on your developer machine, use the **Ad Selection API** testing flags at `edge://flags#edge-ad-selection-api`:
+
+![The "Ad Selection API" flags](./ad-selection-api-images/flags.png)
 
 
 <!-- ------------------------------ -->
@@ -71,9 +75,9 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 
 1. Click the **Submit** button.
 
-   After you receive an OT token for the domain, use the OT token in the `attestations.json` file for that domain, to enable using and testing the Ad Selection APIs with supported Microsoft Edge clients.
+   After you receive an OT token for the domain, use the OT token in the `attestations.json` file for that domain, to enable testing the Ad Selection API with supported Microsoft Edge clients.
 
-1. To complete attestation and allow for continued access to the Ad Selection API, you'll need to host a JSON file named `attestations.json` on each domain at a `/.well-known/` path.  For example: `https://contoso.example/.well-known/ad-selection-attestations.json`.
+1. To complete your attestation and allow for continued access to the Ad Selection API, create a JSON file named `attestations.json` and make it available at the `/.well-known/attestations.json` path for each registered domain.  For example: `https://contoso.example/.well-known/ad-selection-attestations.json`.
 
    The `attestations.json` file for a domain must conform to the following standards below, and must include the created OT token as well as a list of APIs.
 
