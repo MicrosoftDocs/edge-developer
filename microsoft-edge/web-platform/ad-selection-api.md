@@ -142,9 +142,9 @@ The `ad-selection-attestations.json` file that you receive and host for a domain
 
 * The file must include a list of APIs (features that are associated with the Ad Services API).  In the `"platform_attestations":` section, valid members of `"attestations":` are the following:
    * `"ad_selection_api":` - The main API, for private auction logic.
-   * `"attribution_reporting_api":` - Attribution reporting, a feature associated with the Ad Selection API.
-   * `"shared_storage_api":` - Shared storage, a feature associated with the Ad Selection API.
-   * `"private_aggregation_api":` - Private aggregation, a feature associated with the Ad Selection API.
+   * `"attribution_reporting_api":` - Attribution reporting.
+   * `"shared_storage_api":` - Shared storage.
+   * `"private_aggregation_api":` - Private aggregation.
    * Requirements:
       * Each `"..._api":` entry must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
 
