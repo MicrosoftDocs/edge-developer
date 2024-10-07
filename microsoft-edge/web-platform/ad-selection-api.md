@@ -197,7 +197,7 @@ Images for buyer services:
 | Service | Description |
 | --- | --- |
 | **BuyerFrontEnd** | Provides a `/GetBids` gRPC endpoint, which receives requests from the **SellerFrontEnd** service to initiate the bidding flow. |
-| **Bidding** | Provides a `/GenerateBids` endpoint, which receives requests from the **BuyerFrontEnd** service to handle the bidding and generate a bid.  Generates a bid, chooses the winner, and selects the banner to be rendered. |
+| **Bidding** | Provides a `/GenerateBids` gRPC endpoint, which receives requests from the **BuyerFrontEnd** service to handle the bidding and generate a bid.  Generates a bid, chooses the winner, and selects the banner to be rendered. |
 | **Key/Value** | Receives requests from the **BuyerFrontEnd** service and returns real-time buyer data required for bidding, corresponding to lookup keys from Interest Groups.  Such a request happens once per workflow.  Runs in Bring Your Own Service (BYOS) mode. |
 | **Bidding Selection & Key/Value** | Receives requests from the **Bidding** service to select and return additional ad banners (candidates) that can participate in bidding.  The **Bidding Selection & Key/Value** service can also return additional signals that are needed for bidding.  The **Bidding** service may send multiple requests to the **Bidding Selection & Key/Value** service, or may choose not to send any requests, because the **Bidding Selection & Key/Value** service is optional.  The **Bidding Selection & Key/Value** service must be deployed in a trusted execution environment (TEE). |
 | **K-Anonymity** | Collects k-anonymity counters and checks that the winning ad banner passes the k-anonymity check. |
