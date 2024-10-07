@@ -46,7 +46,7 @@ This step has already been done in [popup.html](https://github.com/microsoft/Mic
 
 The hypothetical starting state for this Part 2 article, if you were to manually build-up the sample to add JavaScript, is that a directory exists for the part 2 code, containing the same directories and files that are created in the Part 1 article.  These can be sibling directories for Part 1 and Part 2, as done in the MicrosoftEdge-Extensions repo.
 
-It's possible to install the completed Part 1 and Part 2 demos from the MicrosoftEdge-Extensions repo, side-by-side.  We recommending first cloning the repo and installing and running the demos, before (or instead of) starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
+It's possible to install the completed Part 1 and Part 2 demos from the MicrosoftEdge-Extensions repo, side-by-side.  We recommend first cloning the repo and installing and running the demos, before (or instead of) starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
 
 To manually expand the completed Part 1 demo to create the Part 2 demo, you would need to do the following:
 1. In the folder that contains the `popup.html` file for Part 2 (initially a copy of the Part 1 file), add tagging that displays a title with a button.
