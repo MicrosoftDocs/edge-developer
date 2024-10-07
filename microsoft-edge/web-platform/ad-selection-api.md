@@ -242,13 +242,13 @@ To deploy the Ad Selection API service to Azure:
 
 1. Download the Terraform [deployment scripts and guide](https://go.microsoft.com/fwlink/?linkid=2290115).  **Note:** Make sure the hash of the image you downloaded matches the hash in the script you download.
 
-1. The Terraform scripts already include links to public images provided by Microsoft.  Choose the required services and deploy them by following the steps in the included `readme.md`.
+1. The Terraform scripts already include links to public images that are provided by Microsoft.  Choose the required services and deploy them by following the steps in the included `readme.md`.
 
    1. Set any specific flags for your environment, including auction worklet locations.
 
    1. Configure all prerequisites and prepare all tools for deployment.
 
-   1. Create Azure Resources and run terraform script that finish deployment.
+   1. Create Azure Resources and run the Terraform script that finishes deployment.
 
 1. Develop worklets including `user-defined-function` (UDF) and start Ad Selection API services.
 
