@@ -150,10 +150,14 @@ The attestations JSON file must be named `ad-selection-attestations.json`, and m
    * Requirements:
       * Each `"..._api":` entry must have a single field, `"ServiceNotUsedForIdentifyingUserAcrossSites":`, with either a `true` or `false` value.  `true` means that this service is not used for identifying the user across sites.  `false` means that this service is used for identifying the user across sites.
 
+To use the Ad Selection API, see [Provide privacy-preserving ads, by using the Ad Selection API](./privacy-preserving-ads.md).
+
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in both articles -->
+
+* [Provide privacy-preserving ads, by using the Ad Selection API](./privacy-preserving-ads.md)
 
 Design and technical documents:
 * [Ad Selection API Proposal](https://github.com/WICG/privacy-preserving-ads?tab=readme-ov-file#ad-selection-api-proposal)
