@@ -81,17 +81,19 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 
 1. Click the **Submit** button.
 
-   An Origin Trial token is generated for the top-level domain and is sent to you within an `ad-selection-attestations.json` file.
+   An Origin Trial token is generated for the top-level domain and is sent to you.
 
-1. Host the received `ad-selection-attestations.json` file at the `/.well-known/ad-selection-attestations.json` path for the top-level domain.  For example: `https://contoso.example/.well-known/ad-selection-attestations.json`.
+1. Create a file that's named `ad-selection-attestations.json`, and host the file at the top-level domain, in the `/.well-known/` directory.  For example:
 
-   The `ad-selection-attestations.json` JSON file must be published within **30 days** of receiving the OT token.  Hosting this JSON file is required, in order to complete your attestation and allow your code to access the Ad Selection API, to test the Ad Selection API with supported Microsoft Edge clients.
+   `https://contoso.example/.well-known/ad-selection-attestations.json`
+
+   The `ad-selection-attestations.json` file must be published within **30 days** of receiving the OT token.  Hosting this JSON file is required, in order to complete your attestation and allow your code to access the Ad Selection API, to test the Ad Selection API with supported Microsoft Edge clients.
 
 
 <!-- ------------------------------ -->
-#### Example attestations JSON file
+#### Example JSON file
 
-The `ad-selection-attestations.json` file that you receive and host for a domain must conform to the following standards below.  The following is an example of an `ad-selection-attestations.json` file that's sent to you:
+The `ad-selection-attestations.json` file must conform to the following standards below.  The following is an example of an `ad-selection-attestations.json` file:
 
 ```json
 {
@@ -136,7 +138,7 @@ The `ad-selection-attestations.json` file that you receive and host for a domain
 <!-- ---------- -->
 ###### Important fields and values
 
-* The file must include the generated Origin Trial token for the top-level domain.  `"ownership_token":` is the OT token that was generated when registering this domain for the **Ad Selection API** origin trial.
+* The `ad-selection-attestations.json` file must include the Origin Trial token that was generated and sent to you for this top-level domain.  `"ownership_token":` is the Origin Trial token that was generated when registering this domain for the **Ad Selection API** origin trial.
 
 * In the `"platform_attestations":` section, `"platform":` must be `"edge"` or `"android"`.
 
