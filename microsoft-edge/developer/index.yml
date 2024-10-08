@@ -174,22 +174,45 @@ landingContent:
           - text: WebView2 API Reference
             url: ../webview2/webview2-api-reference.md
 # =============================================================================
-# Card r2c3
-  - title: Development tips for Microsoft Edge
+# Card r2c3  # 10 items max
+  - title: Development tips for Microsoft Edge  # = /web-platform/
     linkLists:
-      - linkListType: how-to-guide
+#     - linkListType: overview
+#       links:
+#         - text: Development tips for Microsoft Edge
+#           url: ../web-platform/web-platform.md
+      - linkListType: whats-new
         links:
-          - text: Development tips for Microsoft Edge
-            url: ../web-platform/web-platform.md
-
           - text: Site compatibility-impacting changes
             url: ../web-platform/site-impacting-changes.md
+      - linkListType: how-to-guide
+        links:
+          - text: Move users to Microsoft Edge from Internet Explorer
+            url: ../web-platform/ie-to-microsoft-edge-redirection.md
+
+          - text: Tracking prevention in Microsoft Edge
+            url: ../web-platform/tracking-prevention.md
 
           - text: Detect Microsoft Edge from your website
             url: ../web-platform/user-agent-guidance.md
 
+          - text: Develop experiences for the sidebar in Microsoft Edge
+            url: ../web-platform/sidebar.md
+
           - text: Detect Windows 11 using User-Agent Client Hints
             url: ../web-platform/how-to-detect-win11.md
+
+          - text: Customize the password reveal button
+            url: ../web-platform/password-reveal.md
+
+          - text: Display regional versions of your site, based on OS settings
+            url: ../web-platform/os-regional-settings.md
+
+          - text: View formatted JSON responses or files
+            url: ../devtools-guide-chromium/json-viewer/json-viewer.md
+
+          - text: Sign up for the Ad Selection API
+            url: ../web-platform/ad-selection-api.md
 # =============================================================================
 # Row 3 with 3 cards
 # =============================================================================
