@@ -93,7 +93,7 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 <!-- ------------------------------ -->
 #### Example JSON file
 
-The `ad-selection-attestations.json` file must conform to the following standards below.  The following is an example of an `ad-selection-attestations.json` file:
+The attestations JSON file must be named `ad-selection-attestations.json`, and must conform to the following standards below.  The following is an example of an `ad-selection-attestations.json` file:
 
 ```json
 {
