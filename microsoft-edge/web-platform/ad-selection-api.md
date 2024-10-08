@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 10/08/2024
+ms.date: 10/09/2024
 ---
 # Sign up for the Ad Selection API
 <!-- https://go.microsoft.com/fwlink/?linkid=2289906 -->
