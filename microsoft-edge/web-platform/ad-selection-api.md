@@ -260,7 +260,7 @@ To start using the Ad Selection API, sellers and buyers need to modify their web
 
 * Sellers: To run private auctions, fetch interest groups, and do reporting, update your code on publishers' websites.
 
-* Buyers: To create interest groups and store them in the browser, update the code on your advertiser partners' websites.  You can use the delegation mechanism to restrict and allow Interest Group creation on third-party domains.
+* Buyers: To create interest groups and store them in the browser, update the code on your advertising partners' websites.  You can use the delegation mechanism to restrict and allow Interest Group creation on third-party domains.
 
 To learn more about which API methods are available and to view example code, see [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md).
 
