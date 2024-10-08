@@ -77,7 +77,7 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 
    * In the **Email Address** text box, provide a valid developer contact for the domain.
 
-   * In the **Origin Trial Name** text box, enter **Ad Selection API**.
+   * In the **Origin Trial Name** text box, enter **AdSelectionAPI** (with no spaces).  This is the ID of this origin trial.
 
 1. Click the **Submit** button.
 
