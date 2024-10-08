@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 10/07/2024
+ms.date: 10/08/2024
 ---
 # Sign up for the Ad Selection API
 <!-- https://go.microsoft.com/fwlink/?linkid=2289906 -->
@@ -16,7 +16,7 @@ The Ad Selection API can be used by:
 * **Sellers** running a supply-side platform (SSP), who can use the API to provide higher-quality ads for their publishers.
 * **Buyers** running a demand-side platform (DSP), who can use the API to improve the effectiveness of advertising campaigns.
 
-To get started using the Ad Selection API and test out the end-to-end flow, sign up for the limited Preview of the Ad Selection API.
+To get started using the Ad Selection API and test out the end-to-end flow, sign up for the limited preview of the Ad Selection API.
 
 As a seller operating a supply-side platform or a buyer operating a demand-side platform, use this guide to:
 * Test the Ad Selection API on your site.
@@ -262,7 +262,7 @@ To start using the Ad Selection API, sellers and buyers need to modify the JavaS
 
 * Buyers: To create interest groups and store them in the browser, update the code on your advertiser partners' websites.  You can use the delegation mechanism to restrict and allow Interest Group creation on third-party domains.
 
-To learn more about which API methods are available and to review example code, see [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md).
+To learn more about which API methods are available and to view example code, see [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md).
 
 
 <!-- ====================================================================== -->
