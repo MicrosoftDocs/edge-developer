@@ -171,13 +171,13 @@ Each image defines one service.  Some images don't contain UDFs, and consist ent
 Microsoft provides an image for each service, which can be deployed on a cloud provider.  These are the public images that must be used for deployment.  Only official images from Microsoft are able to run private auctions.
 
 Images for seller services:
-* [SellerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
-* [Auction service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
+* [Ad Selection Seller Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
+* [Ad Selection Auction Service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
 
 Images for buyer services:
-* [BuyerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
-* [Bidding service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
-* [K-Anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
+* [Ad Selection Buyer Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
+* [Ad Selection Bidding Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
+* [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 
 
 <!-- ------------------------------ -->
@@ -278,12 +278,12 @@ Design and technical documents:
 
 Images for deployment:
 * Sellers
-   * [SellerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
-   * [Auction service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
+   * [Ad Selection Seller Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
+   * [Ad Selection Auction Service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
 * Buyers
-   * [BuyerFrontEnd service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
-   * [Bidding service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
-   * [K-Anonymity service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
+   * [Ad Selection Buyer Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
+   * [Ad Selection Bidding Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
+   * [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 
 Origin trials:
 * [Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/)
