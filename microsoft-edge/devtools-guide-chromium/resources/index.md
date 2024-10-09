@@ -118,7 +118,7 @@ For example, to go from the **Page** tab's resource list in the **Sources** tool
 
 1. In DevTools, on the **Activity Bar**, select the **Network** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
 
-1. Press **Ctrl+R** to refresh the page.  The received resource files that make up the webpage are now added as rows in the **Network** tab.  The **network-tutorial/** folder row represents the HTML page - in this case, [index.html](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial).
+1. Press **Ctrl+R** to refresh the page.  The received resource files that make up the webpage are now added as rows in the **Network** tab.  The **network-tutorial/** folder row represents the HTML page - in this case, [index.html](https://github.com/MicrosoftEdge/Demos/blob/main/network-tutorial/index.html).
 
 1. In DevTools, on the **Activity Bar**, click the **Sources** tab.
 
