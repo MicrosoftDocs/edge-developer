@@ -271,13 +271,10 @@ To learn more about which API methods are available and to view example code, se
 ## See also
 <!-- all links in article -->
 
-`privacy-preserving-ads` repo:
-* Design and technical documents
+Design and technical documents
    * [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md)
    * [Ad Selection API Proposal](https://github.com/WICG/privacy-preserving-ads?tab=readme-ov-file#ad-selection-api-proposal)<!-- not in article body -->
    * [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md)
-* Deployment scripts
-   * [Terraform deployment scripts](https://go.microsoft.com/fwlink/?linkid=2290115)
 
 Images for deployment:
 * Sellers
@@ -287,6 +284,9 @@ Images for deployment:
    * [Ad Selection Buyer Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
    * [Ad Selection Bidding Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
    * [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
+
+Deployment scripts:
+* [Terraform deployment scripts](https://go.microsoft.com/fwlink/?linkid=2290115)
 
 Origin trials:
 * [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/)
