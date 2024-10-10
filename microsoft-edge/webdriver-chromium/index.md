@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 06/15/2023
+ms.date: 09/24/2024
 ---
 # Use WebDriver to automate Microsoft Edge
 
@@ -48,17 +48,25 @@ The following sections describe how to get started with WebDriver for Microsoft 
 <!-- ====================================================================== -->
 ## Download Microsoft Edge WebDriver
 
-To begin writing automated tests, make sure the Microsoft Edge WebDriver version you install matches your browser version, as follows:
+To begin writing automated tests, make sure the Microsoft Edge WebDriver version you install matches your version of Microsoft Edge.  The first three parts of the four-part version number must match.
 
-1.  Go to `edge://settings/help` and note your version of Microsoft Edge:
+Download and install a version of Microsoft Edge WebDriver that matches your browser version, as follows:
 
-    ![The build number for Microsoft Edge on April 15, 2021](./index-images/microsoft-edge-version.png)
+1.  Go to `edge://settings/help` and note your version of Microsoft Edge, a four-part number:
+
+    ![The build number for Microsoft Edge on September 28, 2024](./index-images/microsoft-edge-version.png)
 
 1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/).
 
-1.  In the **Get the latest version** section of the page, select a platform in the channel that matches your version number of Microsoft Edge:
+1.  In the **Downloads** section of the page, click a platform button (such as **x64**) under a version number that matches your version number of Microsoft Edge:
 
     ![The `Get the latest version` section of the Microsoft Edge WebDriver webpage](./index-images/microsoft-edge-driver-install.png)
+
+    The first three parts of the four-part version number must match, between Microsoft Edge and Microsoft Edge WebDriver.  For example, the following versions of Microsoft Edge and Microsoft Edge WebDriver will work together, because the first three numbers are the same:
+    * 128.0.2739.79
+    * 128.0.2739.84
+
+    To download older versions, click the **Go to full directory** button below the **Recent versions** section.
 
 1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
 

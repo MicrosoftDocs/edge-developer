@@ -39,7 +39,7 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 ```
 
 
-<!-- -------------------------------------------------- -->
+<!-- ---------------------------------- -->
 #### Command-line URL parameter passed in
 
 Visual Studio Code source path mapping now requires an URL, so your app now receives a `url` command-line parameter when it starts.  You can safely ignore the `url` parameter, if needed.
@@ -90,7 +90,7 @@ Open `launch.json` and complete the following actions to use targeted WebView2 d
 When debugging your app, you might need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
 
 
-<!-- -------------------------------------------------- -->
+<!-- ---------------------------------- -->
 #### Cannot debug two WebView2 controls at the same time
 
 After the first match is found in the URL, the debugger stops.  You cannot debug two WebView2 controls at the same time, because the CDP port is shared by all WebView2 controls, and uses a single port number.
@@ -225,7 +225,7 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 You might encounter these scenarios when using the debugger.
 
 
-<!-- -------------------------------------------------- -->
+<!-- ---------------------------------- -->
 #### Doesn't stop at breakpoint
 
 If the debugger doesn't stop at the breakpoint, and you have debug output: 
@@ -233,7 +233,7 @@ If the debugger doesn't stop at the breakpoint, and you have debug output:
 To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.
 
 
-<!-- -------------------------------------------------- -->
+<!-- ---------------------------------- -->
 #### Can't attach to running process
 
 If you can't attach to a running process, and you get a timeout error:
