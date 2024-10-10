@@ -177,6 +177,7 @@ Images for sellers:
 Images for buyers:
 * [Ad Selection Buyer Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
 * [Ad Selection Bidding Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
+* [Ad Selection Bidding Selection & Key/Value Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-selection-key-value-service)
 * [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 
 
@@ -283,6 +284,7 @@ Images for deployment:
 * Buyers
    * [Ad Selection Buyer Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
    * [Ad Selection Bidding Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
+   * [Ad Selection Bidding Selection & Key/Value service](https://mcr.microsoft.com/product/ad-selection/azure/)
    * [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 
 Deployment scripts:
