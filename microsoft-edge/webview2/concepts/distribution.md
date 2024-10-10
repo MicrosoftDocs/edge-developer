@@ -10,7 +10,7 @@ ms.date: 06/27/2024
 ---
 # Distribute your app and the WebView2 Runtime
 
-When releasing an app that uses Microsoft Edge WebView2, you need distribute the WebView2 Runtime, either by distributing the automatically updated _Evergreen_ Runtime, or by distributing a _Fixed Version_ of the Runtime.
+When releasing an app that uses Microsoft Edge WebView2, you need to distribute the WebView2 Runtime, either by distributing the automatically updated _Evergreen_ Runtime, or by distributing a _Fixed Version_ of the Runtime.
 
 A WebView2 app depends on the WebView2 Runtime on client machines.  When you distribute your WebView2 app, you need to take into account how the WebView2 Runtime is distributed to and updated on client machines.
 

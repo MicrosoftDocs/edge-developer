@@ -47,8 +47,8 @@ See also:
 For general information about this extension, see [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
 
 
-<!-- ====================================================================== -->
-### Screencast enhancements, deprecation warnings, and new launch options for Microsoft Edge
+<!-- ------------------------------ -->
+#### Screencast enhancements, deprecation warnings, and new launch options for Microsoft Edge
 
 <!-- Title: Screeencast improvements and launch options for Microsoft Edge in the Visual Studio Code extension -->
 <!-- Subtitle: The correct list of emulated devices is shown for the screeencast, the correct device emulation is displayed, and there are now launch arguments for the browser. -->

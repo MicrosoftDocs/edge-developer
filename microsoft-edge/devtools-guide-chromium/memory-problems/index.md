@@ -48,7 +48,9 @@ Memory issues are important because they are often perceivable by users.  Users 
 
 *  **The performance of a page is delayed or appears to pause frequently**.  This is possibly a symptom of frequent garbage collections.  Garbage collection is when the browser reclaims memory.  The browser decides when this happens.  During collections, all script running is paused.  So if the browser is garbage collecting a lot, script runtime is going to get paused a lot.
 
-### Memory bloat: how much is "too much"?
+
+<!-- ------------------------------ -->
+#### Memory bloat: How much is "too much"?
 
 A memory leak is easy to define.  If a site is progressively using more and more memory, then you have a leak.  But memory bloat is a bit harder to pin down.  What qualifies as "using too much memory"?
 

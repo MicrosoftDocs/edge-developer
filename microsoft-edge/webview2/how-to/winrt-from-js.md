@@ -81,6 +81,7 @@ First, we'll pick some WinRT APIs that we're interested in calling from JavaScri
 In the WebView2 host app, the web-side JavaScript code can then access methods and properties on the `Language` object that's in the native-side code.
 
 
+<!-- ---------- -->
 ###### Access projected APIs via DevTools Console
 
 At the end of this example walkthrough, you'll use the **Console** of Microsoft Edge DevTools to test reading the host's `displayName` property of the `Language` class:
@@ -98,6 +99,7 @@ You can similarly access [Windows.System.UserProfile Namespace](/uwp/api/windows
 <!-- todo: call Windows.System.UserProfile apis -->
 
 
+<!-- ---------- -->
 ###### Access projected APIs via source code files
 
 Similarly, in source code files rather than in the DevTools Console, you can access the projected host object.  First, you run setup code for the script:
@@ -123,16 +125,23 @@ Let's get started!
 <!-- ====================================================================== -->
 ## Step 1: Create or obtain a basic WebView2 project
 
+
 ##### [WinUI 2 (UWP)](#tab/winui2)
 
+
+<!-- ------------------------------ -->
 #### Install Visual Studio
 
 * If Visual Studio 2015 or later isn't already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.  The present article shows screenshots for Visual Studio Community Edition 2022.
 
+
+<!-- ------------------------------ -->
 #### Install a preview channel of Microsoft Edge
 
 * If a preview channel of Microsoft Edge (Beta, Dev, or Canary) isn't already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
+
+<!-- ------------------------------ -->
 #### Create or open a basic WebView2 project
 
 1. Do any of the following approaches to obtain a baseline starter project that contains a couple lines of WebView2 code that embeds the WebView2 control:
@@ -772,6 +781,7 @@ The host app's web-side code (and the DevTools Console) can now call methods and
 ## Step 9: Call methods and properties on the host object from web-side JavaScript
 
 
+<!-- ------------------------------ -->
 #### Access projected APIs via DevTools Console
 
 Next, use the DevTools Console to demonstrate that web-side code can call the host-side APIs that were specified in the **wv2winrt** tool (the WebView2 WinRT JS Projection tool): 
@@ -833,6 +843,7 @@ Congratulations!  You've finished the sample demonstration of calling WinRT code
 ---
 
 
+<!-- ------------------------------ -->
 #### Access projected APIs via source code files
 
 Above, we used the DevTools console to run JavaScript statements that access the projected host object.  Similarly, you can access the projected host object from within source code files.  To do this, first you run setup code for the script:

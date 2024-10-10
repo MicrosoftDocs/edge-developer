@@ -32,8 +32,8 @@ Following the updated Chromium schedule, we are adjusting our schedule for upcom
 ## Announcements from the Microsoft Edge DevTools team
 
 
-<!-- ====================================================================== -->
-### Remotely debug Microsoft Edge on Windows 10 or later Devices
+<!-- ------------------------------ -->
+#### Remotely debug Microsoft Edge on Windows 10 or later Devices
 
 The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) app is now available in the [Microsoft Store](https://www.microsoft.com/store/apps/windows). This app extends the [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal).  You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets.  This list of targets includes all tabs in Microsoft Edge and [PWAs](../../../../progressive-web-apps-chromium/index.md) open on the Windows device.  Use DevTools on your development machine against a target running on the remote Windows device.
 
@@ -44,8 +44,8 @@ Read our guide for setting up your Windows 10 device and your development machin
 Let us know about your remote debugging experience by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or clicking the [Send Feedback](../../../contact.md) icon.
 
 
-<!-- ====================================================================== -->
-### New ways to access Settings
+<!-- ------------------------------ -->
+#### New ways to access Settings
 
 There are tons of settings for DevTools that you can customize to make DevTools look, feel, and work the way you need. In Microsoft Edge 83, accessing [Settings](../../../customize/index.md#settings) in DevTools is now much easier.  Open **Settings** by clicking the gear icon next to Console alerts and the main menu.
 
@@ -58,8 +58,8 @@ You can also open **Settings** from the **Main Menu** under **More tools**.
 Chromium issue [#1050855](https://crbug.com/1050855)
 
 
-<!-- ====================================================================== -->
-### New and improved infobars
+<!-- ------------------------------ -->
+#### New and improved infobars
 
 Informational notification bars (infobars) in DevTools now have an improved look and more functionality. In Microsoft Edge 83, infobars are easier to read and provide buttons so you can take the relevant action right away.
 
@@ -70,8 +70,8 @@ Chromium issue [#1056348](https://crbug.com/1056348)
 <!-- no link to regular docs, since this is a cross-feature UI -->
 
 
-<!-- ====================================================================== -->
-### Navigate the Color Picker with your keyboard
+<!-- ------------------------------ -->
+#### Navigate the Color Picker with your keyboard
 
 In previous versions of Microsoft Edge, you couldn't navigate the **Shades** section of the [Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) with the keyboard.  In Microsoft Edge 83, you can now use the keyboard to move the selector in the **Shades** section of the Color Picker.
 
@@ -85,8 +85,8 @@ See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
-<!-- ====================================================================== -->
-### Properties tab now populates after a page refresh
+<!-- ------------------------------ -->
+#### Properties tab now populates after a page refresh
 
 In Microsoft Edge 81 and earlier, the **Properties tab** in the **Elements** panel was broken by page refreshes.  When you refreshed the page, the **Properties tab** didn't populate the properties of the currently selected element:
 
@@ -102,8 +102,8 @@ See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
-<!-- ====================================================================== -->
-### Use the arrow keys to scroll in the Changes tool
+<!-- ------------------------------ -->
+#### Use the arrow keys to scroll in the Changes tool
 
 The **Changes tool** tracks any changes you have made to CSS or JavaScript in DevTools.  You can use the **Changes tool** to quickly display all your changes and take those back to your editor/IDE.
 
@@ -122,14 +122,13 @@ See also:
 
 
 <!-- ====================================================================== -->
-<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 The following sections announce additional features available in Microsoft Edge 83 that were contributed to the open source Chromium project.
 
 
-<!-- ====================================================================== -->
-### Emulate vision deficiencies
+<!-- ------------------------------ -->
+#### Emulate vision deficiencies
 
 In the **Rendering** tool, use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site:
 
@@ -158,8 +157,8 @@ See also:
 * [Types of Colour Blindness](http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness), at Colourblindawareness.org.
 
 
-<!-- ====================================================================== -->
-### Emulate locales
+<!-- ------------------------------ -->
+#### Emulate locales
 
 To emulate locales, in the **Sensors** tool, select a location from the **Location** dropdown list.  (To access the **Sensors** tool, [open the **Command Menu**](../../../command-menu/index.md) and type `Sensors`.)  After you select a location, DevTools modifies the current default locale, which affects the following code:
 
@@ -181,8 +180,8 @@ See also:
 * [Override geolocation with the Sensors tool](../../../device-mode/geolocation.md)
 
 
-<!-- ====================================================================== -->
-### Cross-Origin Embedder Policy (COEP) debugging
+<!-- ------------------------------ -->
+#### Cross-Origin Embedder Policy (COEP) debugging
 
 The **Network** panel now provides [Cross-Origin Embedder Policy](https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2) debugging information.
 
@@ -202,8 +201,8 @@ See also:
 * [Block requests](../../../network/index.md#block-requests) in _Inspect network activity_.
 
 
-<!-- ====================================================================== -->
-### New icons for breakpoints, conditional breakpoints, and logpoints
+<!-- ------------------------------ -->
+#### New icons for breakpoints, conditional breakpoints, and logpoints
 
 Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead of a red circle.
 
@@ -221,16 +220,16 @@ See also:
 * [Pause code with breakpoints](../../../javascript/breakpoints.md)
 
 
-<!-- ====================================================================== -->
-### View network requests that set a specific cookie path
+<!-- ------------------------------ -->
+#### View network requests that set a specific cookie path
 
 Use the new `cookie-path` filter keyword in the **Network** tool to focus on the network requests that set a specific [cookie path](https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives).
 
 To discover more keywords like `cookie-path`, see [Filter requests by properties](../../../network/reference.md#filter-requests-by-properties) in _Network features reference_.
 
 
-<!-- ====================================================================== -->
-### Dock to left from the Command Menu
+<!-- ------------------------------ -->
+#### Dock to left from the Command Menu
 
 To move DevTools to the left of the viewport (rendered webpage), open the [Command Menu](../../../command-menu/index.md) and run the `Dock to left` command.  The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the main menu.  You can now access the **Dock to left** feature from the Command Menu, as well.
 
@@ -244,8 +243,8 @@ See also:
 * [Change DevTools placement (Undock, Dock to bottom, Dock to left)](../../../customize/placement.md)
 
 
-<!-- ====================================================================== -->
-### The Audits panel is now the Lighthouse panel
+<!-- ------------------------------ -->
+#### The Audits panel is now the Lighthouse panel
 
 The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse](https://github.com/GoogleChrome/lighthouse) from DevTools, when they tried it out, they couldn't find a "Lighthouse" panel.  So, the **Audits** panel is now called the **Lighthouse** panel.
 
@@ -257,8 +256,8 @@ See also:
 * [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
-<!-- ====================================================================== -->
-### Delete all Local Overrides in a folder
+<!-- ------------------------------ -->
+#### Delete all Local Overrides in a folder
 
 After setting up **Local Overrides**, you can right-click a directory and then select the new **Delete all overrides** option to delete all Local Overrides in that folder.
 
@@ -272,8 +271,8 @@ See also:
 * [Override webpage resources with local copies (Overrides tab)](../../../javascript/overrides.md)
 
 
-<!-- ====================================================================== -->
-### Updated Long tasks UI
+<!-- ------------------------------ -->
+#### Updated Long tasks UI
 
 A **Long Task** is JavaScript code that monopolizes the main thread for a long time, causing a web page to freeze.
 
@@ -286,8 +285,8 @@ Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevT
 Chromium issue [#1054447](https://crbug.com/1054447)
 
 
-<!-- ====================================================================== -->
-### Maskable icon support in the Manifest pane
+<!-- ------------------------------ -->
+#### Maskable icon support in the Manifest pane
 
 There's a new checkbox, **Show only the minimum safe area for maskable icons**, in the **Manifest** pane of the **Application** tool.
 
