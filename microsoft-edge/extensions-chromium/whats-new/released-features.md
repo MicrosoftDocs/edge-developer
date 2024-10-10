@@ -9,6 +9,7 @@ ms.subservice: extensions
 ms.date: 06/23/2023
 ---
 # Released features for Microsoft Edge Add-ons
+<!-- https://aka.ms/EdgeAddonsReleaseNotes -->
 
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
 
@@ -24,7 +25,7 @@ The sidebar feature of Microsoft Edge extensions enables an extension to display
 <!-- ====================================================================== -->
 ## Retirement of submitting new Microsoft Edge Add-ons with Manifest V2
 
-Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension submissions, with visibility set as 'Hidden' or 'Public'. To share your feedback and comments, see [GitHub discussion topic - Update your extensions from Manifest V2 to V3](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/27).
+Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension submissions, with visibility set as 'Hidden' or 'Public'.  To share your feedback and comments, see [Update your extensions from Manifest V2 to V3](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/27) in **Discussions** in the MicrosoftEdge-Extensions repo.
 
 *Released July 2022*
 
@@ -34,7 +35,7 @@ Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension s
 
 You can reply via Partner Center to reviews and feedback received about your extension on the Microsoft Edge Add-ons product page. 
 
-To share your feedback and comments about this feature, see [GitHub discussion topic - Reply to user reviews on your Microsoft Edge Add-on product page](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18). 
+To share your feedback and comments about this feature, see [You can now respond to user reviews on your Microsoft Edge Add-ons page](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18) in **Discussions** in the MicrosoftEdge-Extensions repo.
 
 *Released May 2022*
 
