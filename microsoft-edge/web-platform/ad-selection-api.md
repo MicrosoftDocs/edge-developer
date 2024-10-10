@@ -19,13 +19,13 @@ The Ad Selection API can be used by:
 To get started using the Ad Selection API and test out the end-to-end flow, sign up for the limited preview of the Ad Selection API.
 
 As a seller operating a supply-side platform or a buyer operating a demand-side platform, use this guide to:
-* Test the Ad Selection API on your site.
-* Sign up for the Ad Selection API limited preview.
-* Register for the origin trial for the Ad Selection API.<!-- todo: merge w/ above -->
-* Complete API attestation.<!-- todo: * Publish your attestations JSON file. -->
-* See the Ad Selection API and its usage, and deploy your services to Azure.<!-- todo: * See the Ad Selection API documentation.  * Deploy your services to Azure. -->
+* Sign up for the Ad Selection API limited preview by registering for the origin trial.
+* Complete the API attestation by publishing your attestations JSON file.
 * Set up an evaluation environment with a supported cloud provider.
-* Prepare all needed User-Defined Functions (UDFs) and be able to work with Edge Web API.<!-- todo: correct name of API? -->
+* View the Ad Selection API documentation.
+* Prepare your User-Defined Functions (UDFs).
+* Deploy your services to Azure.
+* Test the Ad Selection API on your site.
 
 
 <!-- ====================================================================== -->
