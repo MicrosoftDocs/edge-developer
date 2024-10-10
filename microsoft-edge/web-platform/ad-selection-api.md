@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 10/08/2024
+ms.date: 10/10/2024
 ---
 # Sign up for the Ad Selection API
 <!-- https://go.microsoft.com/fwlink/?linkid=2289906 -->
@@ -242,7 +242,7 @@ To deploy the Ad Selection API service to Azure:
 
 1. Choose the **Confidential ACO containers** option.
 
-1. Download the [Terraform deployment scripts](https://github.com/WICG/privacy-preserving-ads/tree/main/deployment-scripts).<!-- todo: update link text to match title of dest page, which is currently "Azure" -->  **Note:** Make sure the hash of the image you downloaded matches the hash in the script you download.
+1. Go to [Terraform deployment scripts](https://go.microsoft.com/fwlink/?linkid=2290115), and then download the Terraform deployment scripts and view the deployment documentation.  **Note:** Make sure the hash of the image you downloaded matches the hash in the script you download.
 
 1. The Terraform scripts already include links to public images that are provided by Microsoft.  Choose the required services and deploy them by following the steps in the included `readme.md`.
 
@@ -277,8 +277,7 @@ To learn more about which API methods are available and to view example code, se
    * [Ad Selection API Proposal](https://github.com/WICG/privacy-preserving-ads?tab=readme-ov-file#ad-selection-api-proposal)<!-- not in article body -->
    * [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md)
 * Deployment scripts
-   * [Demo Buyer and Seller Terraform Configurations for Azure](https://github.com/WICG/privacy-preserving-ads/blob/main/deployment-scripts/azure/terraform/environment/demo/README.md)<!-- not in article body; linked from following page: -->
-   * [Terraform deployment scripts](https://github.com/WICG/privacy-preserving-ads/tree/main/deployment-scripts)<!-- todo: update link text to match title of dest page, which is currently "Azure" -->
+   * [Terraform deployment scripts](https://go.microsoft.com/fwlink/?linkid=2290115)
 
 Images for deployment:
 * Sellers
