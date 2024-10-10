@@ -23,18 +23,16 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Remotely debug Android WebViews
 
-Debug Android WebViews in your native Android apps using Microsoft Edge Developer Tools.
+Debug Android WebViews in your native Android apps using Microsoft Edge Developer Tools, as follows:
+*  Turn on Android WebView debugging in your native Android app; debug Android WebViews in Microsoft Edge DevTools.
+*  To display the list of the Android WebViews with debugging turned on, go to `edge://inspect`.
+*  Debug Android WebViews in the same way you debug a webpage through [remote debugging](index.md).
+
+Details are below.
 
 On Android 4.4 (KitKat) or later, use DevTools to debug WebView content in native Android apps.
 
 Android WebView is not related to [Microsoft Edge WebView2](../../webview2/index.md).
-
-
-### Summary
-
-*  Turn on Android WebView debugging in your native Android app; debug Android WebViews in Microsoft Edge DevTools.
-*  To display the list of the Android WebViews with debugging turned on, go to `edge://inspect`.
-*  Debug Android WebViews in the same way you debug a webpage through [remote debugging](index.md).
 
 
 <!-- ====================================================================== -->

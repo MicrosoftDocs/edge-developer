@@ -311,7 +311,8 @@ To add a new style rule:
    ![Add a new style rule](./reference-images/css-elements-styles-style-new.png)
 
 
-### Select a stylesheet to add a rule to
+<!-- ------------------------------ -->
+#### Select a stylesheet to add a rule to
 
 By default, when adding a style rule, DevTools creates a new stylesheet named `inspector-stylesheet` in the document and then adds the new style rule in this stylesheet.
 
@@ -322,7 +323,8 @@ To instead add the rule in an existing stylesheet:
 ![Selecting a stylesheet](./reference-images/css-elements-styles-style-new-select-existing.png)
 
 
-### Add a style rule to a specific location
+<!-- ------------------------------ -->
+#### Add a style rule to a specific location
 
 By default, adding a style rule by clicking on **New Style Rule** inserts the new rule beneath the **element.style** rule in the `inspector-stylesheet` stylesheet.
 
@@ -387,7 +389,8 @@ The following figure and list describes of each of the UI elements of the **Colo
 | 9 | **Color Palette Switcher** | Toggle between the [Material Design palette](https://material.io/guidelines/style/color.html#color-color-palette), a custom palette, or a page colors palette.  DevTools generates the page color palette based on the colors that it finds in your stylesheets. |
 
 
-### Sample a color off the page with the Eyedropper
+<!-- ------------------------------ -->
+#### Sample a color off the page with the Eyedropper
 
 To change the selected color to some other color on the page:
 

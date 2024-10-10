@@ -143,8 +143,8 @@ The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
 
-<!-- ====================================================================== -->
-### In-context documentation and UI to make it easier to use the DevTools extension
+<!-- ------------------------------ -->
+#### In-context documentation and UI to make it easier to use the DevTools extension
 
 <!-- Title: In-context documentation and UI make it easier to get started using the Developer Tools extension -->
 <!-- Subtitle: The Microsoft Edge Developer Tools for Visual Studio Code extension now presents helpful text, buttons, and links, and opens a documentation page with guidance on how to get started. -->
@@ -167,8 +167,8 @@ See also:
 The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
-<!-- ====================================================================== -->
-### CSS Grid editor
+<!-- ------------------------------ -->
+#### CSS Grid editor
 
 You can now preview and author CSS Grid layouts, using the new CSS Grid editor.
 
@@ -184,8 +184,8 @@ See also:
 * [Inspect CSS Grid](../../../css/grid.md)
 
 
-<!-- ====================================================================== -->
-### Support for const redeclarations in the Console
+<!-- ------------------------------ -->
+#### Support for const redeclarations in the Console
 
 The Console now supports redeclaration of `const` variables across separate REPL scripts (such as when you run a statement in the Console), in addition to the existing `let` and `class` redeclarations.  This support allows you to experiment with different declarations for `const` variables without refreshing the page.  Previously, DevTools threw a syntax error if you redeclared a `const` binding.
 
@@ -201,8 +201,8 @@ To learn how to run a single REPL script or a multi-line REPL script, see [Run J
 For the history of this feature in the Chromium open-source project, see Issue [1076427](https://crbug.com/1076427).
 
 
-<!-- ====================================================================== -->
-### New shortcut to view iframe details
+<!-- ------------------------------ -->
+#### New shortcut to view iframe details
 
 To quickly view `iframe` details, you can now right-click an `iframe` element in the **Elements** tool, and then select **Show iframe details**.
 
@@ -221,8 +221,8 @@ See also:
 For the history of this feature in the Chromium open-source project, see Issue [1192084](https://crbug.com/1192084).
 
 
-<!-- ====================================================================== -->
-### Enhanced CORS debugging support
+<!-- ------------------------------ -->
+#### Enhanced CORS debugging support
 
 Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** tool.  There are various potential causes of CORS errors.  Click each issue to expand it and see potential causes and solutions.
 
@@ -237,8 +237,8 @@ See also:
 For the history of this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
 
 
-<!-- ====================================================================== -->
-### Renamed XHR filter to Fetch\/XHR
+<!-- ------------------------------ -->
+#### Renamed XHR filter to Fetch\/XHR
 
 In the **Network** tool, the **XHR** filter is now renamed to **Fetch/XHR**. This change makes it clearer that this filter includes both `XMLHttpRequest` and `Fetch` API network requests.
 
@@ -252,8 +252,8 @@ See also:
 For the history of this feature in the Chromium open-source project, see Issue [1201398](https://crbug.com/1201398).
 
 
-<!-- ====================================================================== -->
-### Filter Wasm resource type in the Network tool
+<!-- ------------------------------ -->
+#### Filter Wasm resource type in the Network tool
 
 In the **Network** tool, you can now select the new **Wasm** filter to filter the WebAssembly network requests.
 
@@ -266,8 +266,8 @@ See also:
 For the history of this feature in the Chromium open-source project, see Issue [1103638](https://crbug.com/1103638).
 
 
-<!-- ====================================================================== -->
-### Compute Intersections are now included in the Performance tool
+<!-- ------------------------------ -->
+#### Compute Intersections are now included in the Performance tool
 
 In the **Performance** tool, DevTools now displays **Compute Intersections** in the flame chart. These changes help you identify intersection observers events and debug the potential performance overhead of intersection observers.
 

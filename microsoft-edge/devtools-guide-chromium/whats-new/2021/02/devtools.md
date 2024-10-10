@@ -190,8 +190,8 @@ Starting in Microsoft Edge 90, if you click the **Console sidebar** and hover on
 The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
-<!-- ====================================================================== -->
-### The Console now escapes double-quote characters
+<!-- ------------------------------ -->
+#### The Console now escapes double-quote characters
 
 Previously, the **Console** didn't output valid double-quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double-quote (`"`) characters:
 
@@ -203,8 +203,8 @@ See also:
 * [Console features reference](../../../console/reference.md)
 
 
-<!-- ====================================================================== -->
-### Emulate the CSS color-gamut media feature
+<!-- ------------------------------ -->
+#### Emulate the CSS color-gamut media feature
 
 The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media query emulates the approximate range of colors that are supported by the browser and device that you're testing.  The dropdown list under **Emulate CSS media feature color-gamut** contains color spaces that DevTools can emulate.  For example, to trigger a `color-gamut: p3` media query, select **color-gamut: p3** from the dropdown list.
 
@@ -225,12 +225,12 @@ See also:
 * [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../../../rendering-tools/rendering-tool.md)
 
 
-<!-- ====================================================================== -->
-### Improved tooling for Progressive Web Apps
+<!-- ------------------------------ -->
+#### Improved tooling for Progressive Web Apps
 
 
-<!-- ====================================================================== -->
-#### PWA installability warning in the Console
+<!-- ---------- -->
+###### PWA installability warning in the Console
 
 The **Console** now displays a more detailed installability warning message for Progressive Web Apps (PWAs), with a link to [Improving Progressive Web App offline support detection](https://developer.chrome.com/blog/improved-pwa-offline-detection).
 
@@ -240,8 +240,8 @@ See also:
 * [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps-chromium/index.md)
 
 
-<!-- ====================================================================== -->
-#### PWA description length warning in the Manifest pane
+<!-- ---------- -->
+###### PWA description length warning in the Manifest pane
 
 In the **Application** tool, the **Manifest** pane now displays a warning message if the manifest description exceeds 324 characters:
 
@@ -255,8 +255,8 @@ See also:
 https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/storage/application-tool -->
 
 
-<!-- ====================================================================== -->
-### New Remote Address Space column in the Network tool
+<!-- ------------------------------ -->
+#### New Remote Address Space column in the Network tool
 
 <!-- doesn't work in canary 90.0.813.0 -->
 In the **Network** tool, the new **Remote Address Space** column displays the network IP address space of each network resource.  To display the new **Remote Address Space** column:
@@ -277,8 +277,8 @@ See also:
 * [Add or remove columns](../../../network/reference.md#add-or-remove-columns), in _Network features reference_.
 
 
-<!-- ====================================================================== -->
-### Display allowed and disallowed features in the Frame details view
+<!-- ------------------------------ -->
+#### Display allowed and disallowed features in the Frame details view
 
 In the **Application** tool, the **Frames** node in the lower left opens the Frame details view.  The Frame details view now includes a **Permissions Policy** section, which displays a list of allowed and disallowed browser features:
 
@@ -294,8 +294,8 @@ See also:
 <!-- todo: it seems like a new "Application > Webpage Frames" .md page is needed; many What's New items cover the Frame node/page in lower left of Application tool -->
 
 
-<!-- ====================================================================== -->
-### New SameParty column in the Cookies pane
+<!-- ------------------------------ -->
+#### New SameParty column in the Cookies pane
 
 The **Cookies** pane in the **Application** tool now displays the `SameParty` attribute for each cookie:
 
@@ -309,8 +309,8 @@ See also:
 * [View, edit, and delete cookies](../../../storage/cookies.md)
 
 
-<!-- ====================================================================== -->
-### fn.displayName property in the Console tool is now deprecated
+<!-- ------------------------------ -->
+#### fn.displayName property in the Console tool is now deprecated
 
 Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property:
 
@@ -326,8 +326,8 @@ See also:
 <!-- todo: is this function a partial overlap w/ devtools console & JS Ref?  do we have similar doc'n? -->
 
 
-<!-- ====================================================================== -->
-### Full accessibility tree view in the Elements tool
+<!-- ------------------------------ -->
+#### Full accessibility tree view in the Elements tool
 
 ![Experimental feature](./devtools-images/experimental-tag.png)<!-- valid 05/10/2022 -->
 
