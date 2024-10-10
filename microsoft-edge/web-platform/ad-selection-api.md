@@ -242,7 +242,7 @@ To deploy the Ad Selection API service to Azure:
 
 1. Choose the **Confidential ACO containers** option.
 
-1. Go to [Terraform deployment scripts](https://go.microsoft.com/fwlink/?linkid=2290115), and then download the Terraform deployment scripts and view the deployment documentation.  **Note:** Make sure the hash of the image you downloaded matches the hash in the script you download.
+1. Go to [Terraform deployment scripts](https://go.microsoft.com/fwlink/?linkid=2290115) in a new window or tab, and then download the Terraform deployment scripts and view the deployment documentation.  **Note:** Make sure the hash of the image you downloaded matches the hash in the script you download.
 
 1. The Terraform scripts already include links to public images that are provided by Microsoft.  Choose the required services and deploy them by following the steps in the included `readme.md`.
 
