@@ -30,8 +30,8 @@ ms.date: 12/13/2021
 ## Announcements from the Microsoft Edge DevTools team
 
 
-<!-- ====================================================================== -->
-### Use the DevTools in Windows high contrast mode
+<!-- ---------------------------------- -->
+#### Use the DevTools in Windows high contrast mode
 
 Microsoft Edge DevTools is now displayed in high-contrast mode when Windows is in high-contrast mode.
 
@@ -48,8 +48,8 @@ See also:
 * [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
 
 
-<!-- ====================================================================== -->
-### Match keyboard shortcuts in the DevTools to Visual Studio Code
+<!-- ---------------------------------- -->
+#### Match keyboard shortcuts in the DevTools to Visual Studio Code
 
 From your [feedback](../../../contact.md) and the [Chromium public issue tracker](https://bugs.chromium.org/p/chromium/issues/list), the Microsoft Edge DevTools team learned that you wanted to be able to customize keyboard shortcuts in DevTools.  In Microsoft Edge 84, you can now match keyboard shortcuts in DevTools to [Visual Studio Code](https://code.visualstudio.com/), which is just one of the features the team is working on for shortcut customization.
 
@@ -79,8 +79,8 @@ See also:
 * [Customize keyboard shortcuts](../../../customize/shortcuts.md)
 
 
-<!-- ====================================================================== -->
-### Remote debug Surface Duo emulators
+<!-- ---------------------------------- -->
+#### Remote debug Surface Duo emulators
 
 You can now remotely debug your web content that's running in the [Surface Duo emulator](/dual-screen/android/use-emulator) using the full power of Microsoft Edge DevTools.
 
@@ -95,8 +95,8 @@ The `edge://inspect` page in a desktop instance of Microsoft Edge shows the **Su
 Click **inspect** for the tab or PWA that you want to debug, to open DevTools.  Follow the step-by-step guide to remotely debug your web content on the Surface Duo emulator: [Remotely debug Surface Duo emulators](../../../remote-debugging/surface-duo-emulator.md).
 
 
-<!-- ====================================================================== -->
-### Resize the DevTools Quick View panel more easily
+<!-- ---------------------------------- -->
+#### Resize the DevTools Quick View panel more easily
 
 In Microsoft Edge 83 or earlier, you resized the **Drawer** (now [Quick View](../../../customize/index.md#quick-view) panel) by hovering inside the **Drawer**'s toolbar.  The **Drawer** behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it.  The following image shows how resizing the **Drawer** worked in Microsoft Edge version 83 or earlier:
 
@@ -109,8 +109,8 @@ Starting with Microsoft Edge 84, you can resize the **Drawer** by hovering over 
 Chromium issue [#1076112](https://crbug.com/1076112)
 
 
-<!-- ====================================================================== -->
-### Screencasting navigation buttons display focus
+<!-- ---------------------------------- -->
+#### Screencasting navigation buttons display focus
 
 When remote debugging an [Android device](../../../remote-debugging/index.md), a [Windows 10 or later device](../../../remote-debugging/windows.md), or a [Surface Duo emulator](../../../remote-debugging/surface-duo-emulator.md), you can toggle screencasting with the ![Toggle Screencast](./devtools-images/toggle-screencast-icon.png) icon in the top-left corner of DevTools.  With screencasting enabled, you can navigate the tab in Microsoft Edge on the remote device from the DevTools window.
 
@@ -121,8 +121,8 @@ In Microsoft Edge 84, these navigation buttons are now also keyboard-accessible.
 Chromium issue [#1081486](https://crbug.com/1081486)
 
 
-<!-- ====================================================================== -->
-### Network panel Details pane is now accessible
+<!-- ---------------------------------- -->
+#### Network panel Details pane is now accessible
 
 In Microsoft Edge 84, the [Details pane](../../../network/index.md#inspect-the-details-of-the-resource) in the **Network** tool now takes focus when you open it for a resource in the [Network Log](../../../network/index.md#log-network-activity).  This change allows screen readers to read out and interact with the content of the **Details** pane.
 
@@ -132,14 +132,13 @@ Chromium issue [#963183](https://crbug.com/963183)
 
 
 <!-- ====================================================================== -->
-<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 The following sections announce additional features available in Microsoft Edge 84 that were contributed to the open source Chromium project.
 
 
-<!-- ====================================================================== -->
-### Fix site issues with the new Issues tool in the DevTools Drawer
+<!-- ---------------------------------- -->
+#### Fix site issues with the new Issues tool in the DevTools Drawer
 
 The new **Issues** tool in the **Drawer** (now **Quick View** panel) at the bottom of DevTools reduces the notification fatigue and clutter of the **Console**.  Currently, the **Console** is the central place for website developers, libraries, frameworks, and Microsoft Edge to log messages, warnings, and errors.  The **Issues** tool aggregates warnings from the browser in a structured, aggregated, and actionable way.  The **Issues** tool links to affected resources within DevTools, and provides guidance on how to fix the issues.
 
@@ -152,8 +151,8 @@ To get started, see [Find and fix problems using the Issues tool](../../../issue
 Chromium issue [#1068116](https://crbug.com/1068116)
 
 
-<!-- ====================================================================== -->
-### View accessibility information in the Inspect Mode tooltip
+<!-- ---------------------------------- -->
+#### View accessibility information in the Inspect Mode tooltip
 
 The **Inspect Mode** tooltip now indicates whether the element has an accessible
 [name and role](https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/) and is [keyboard-focusable](https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/).
@@ -170,15 +169,15 @@ See also:
 * [Analyze pages using the Inspect tool](../../../css/inspect.md)
 
 
-<!-- ====================================================================== -->
-### Performance panel updates
+<!-- ---------------------------------- -->
+#### Performance panel updates
 
 See also:
 * [Performance features reference](../../../evaluate-performance/reference.md)
 
 
-<!-- ====================================================================== -->
-#### View Total Blocking Time information in the footer
+<!-- ---------- -->
+###### View Total Blocking Time information in the footer
 
 After recording your load performance, the **Performance** panel now shows Total Blocking Time (TBT) information in the footer.  TBT is a load performance metric that helps quantify how long a page takes to become usable.  TBT essentially measures how long a page only _appears_ to be usable (because the content is rendered to the screen); but the page isn't actually usable, because JavaScript is blocking the main thread and therefore the page doesn't respond to user input.  TBT is the main metric for approximating First Input Delay.
 
@@ -200,8 +199,8 @@ See also:
 * [Performance features reference](../../../evaluate-performance/reference.md)
 
 
-<!-- ====================================================================== -->
-#### Layout Shift events in the new Experience section
+<!-- ---------- -->
+###### Layout Shift events in the new Experience section
 
 The new **Experience** section of the **Performance** panel helps you detect layout shifts.  Cumulative Layout Shift (CLS) is a metric that helps you quantify unwanted visual instability.
 
@@ -216,8 +215,8 @@ See also:
 * [Performance features reference](../../../evaluate-performance/reference.md)
 
 
-<!-- ====================================================================== -->
-### More accurate promise terminology in the Console
+<!-- ---------------------------------- -->
+#### More accurate promise terminology in the Console
 
 When logging a `Promise`, the **Console** incorrectly provided `PromiseStatus` value set to `resolved`.
 
@@ -233,15 +232,15 @@ See also:
 * [Console overview](../../../console/index.md)
 
 
-<!-- ====================================================================== -->
-### Styles pane updates
+<!-- ---------------------------------- -->
+#### Styles pane updates
 
 See also:
 * [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
 
 
-<!-- ====================================================================== -->
-#### Support for the revert keyword
+<!-- ---------- -->
+###### Support for the revert keyword
 
 The autocomplete UI of the **Styles** pane now detects the [revert](https://developer.mozilla.org/docs/Web/CSS/revert) CSS keyword, which reverts the cascaded value of a property to the previous value applied to the styling of the element.
 
@@ -253,8 +252,8 @@ See also:
 * [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
 
 
-<!-- ====================================================================== -->
-#### Image previews
+<!-- ---------- -->
+###### Image previews
 
 Hover on a `background-image` value in the **Styles** pane to display a preview of the image in a tooltip.
 
@@ -266,8 +265,8 @@ See also:
 * [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
 
 
-<!-- ====================================================================== -->
-#### Color Picker now uses space-separated functional color notation
+<!-- ---------- -->
+###### Color Picker now uses space-separated functional color notation
 
 [CSS Color Module Level 4](https://drafts.csswg.org/css-color#changes-from-3) specifies that color functions, such as `rgb()`, should support space-separated
 arguments.  For example, `rgb(0, 0, 0)` is equivalent to `rbg(0 0 0)`.
@@ -285,21 +284,23 @@ The space-separated argument syntax has been supported in most browsers for a wh
 Chromium issue [#1072952](https://crbug.com/1072952)
 
 
-<!-- ====================================================================== -->
-### Deprecation of the Properties pane in the Elements panel
+<!-- ---------------------------------- -->
+#### Deprecation of the Properties pane in the Elements panel
 
 The **Properties** pane in the **Elements** tool is deprecated.  Run `console.dir($0)` in the **Console** instead.
 
 ![The deprecated Properties pane](./devtools-images/properties.png)
 
-#### Reference
+
+<!-- ---------- -->
+###### Reference
 
 * [console.dir()](../../../console/api.md#dir)
 * [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object-0-4)
 
 
-<!-- ====================================================================== -->
-### App shortcuts support in the Manifest pane
+<!-- ---------------------------------- -->
+#### App shortcuts support in the Manifest pane
 
 In the **Application** tool, the **Manifest** page now shows app shortcuts.  App shortcuts help users quickly start common or recommended tasks within a web app.  The app shortcuts menu is shown only for Progressive Web Apps that are installed on the user's desktop or mobile device.
 
@@ -314,7 +315,7 @@ See also:
 * [Debug Progressive Web Apps (PWAs)](../../../progressive-web-apps/index.md)
 
 
-<!-- ====================================================================== -->
+<!-- ---------------------------------- -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-84) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).

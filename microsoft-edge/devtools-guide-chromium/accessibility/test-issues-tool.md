@@ -133,7 +133,8 @@ To automatically check whether text colors have enough contrast, use the **Issue
    ![Element in the webpage highlighted after clicking a link in the Affected Resources section](./test-issues-tool-images/a11y-testing-element-with-contrast-issues.png)
 
 
-### Wavy underlines in the DOM tree indicate automatically detected issues
+<!-- ------------------------------ -->
+#### Wavy underlines in the DOM tree indicate automatically detected issues
 
 The DOM tree in the **Elements** tool flags issues directly in the HTML with wavy underlines.  These issues are reported by the **Issues** tool.  When you press **Shift** while clicking any element with a wavy underline, the **Issues tool** opens.
 

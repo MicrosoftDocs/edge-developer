@@ -75,7 +75,8 @@ For general information about this extension, see [Microsoft Edge DevTools exten
 <!-- Subtitle: Display your web project inside the editor, simulate different devices, and get notified about issues with your code while you develop it. --> 
 
 
-### Display your web project inside the editor, and simulate different devices
+<!-- ------------------------------ -->
+#### Display your web project inside the editor, and simulate different devices
 
 The Microsoft Edge DevTools for Visual Studio Code extension now features a dockable screencast and device emulation:
 
@@ -88,7 +89,8 @@ You can see your web project in a dedicated tab inside of Visual Studio Code, an
 For details about device emulation, see [Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md).
 
 
-### Live, inline issue reporting
+<!-- ------------------------------ -->
+#### Live, inline issue reporting
 
 The extension also now features live, inline issue reporting.  Instead of finding out about issues in a separate tool, Visual Studio Code highlights the issues in your source code and reports them live while you enter your code:
 

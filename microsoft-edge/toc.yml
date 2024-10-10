@@ -31,6 +31,10 @@
 
 # What's New pages ------------------------------------------------------------
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 129
+              href: devtools-guide-chromium/whats-new/2024/09/devtools-129.md
+              displayName: What's New in DevTools (Microsoft Edge 129)  # top-of-page title
+
             - name: Microsoft Edge 128
               href: devtools-guide-chromium/whats-new/2024/08/devtools-128.md
               displayName: What's New in DevTools (Microsoft Edge 128)  # top-of-page title
@@ -67,15 +71,15 @@
               href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
               displayName: What's New in DevTools (Microsoft Edge 120)  # top-of-page title
 
-            - name: Microsoft Edge 119
-              href: devtools-guide-chromium/whats-new/2023/11/devtools-119.md
-              displayName: What's New in DevTools (Microsoft Edge 119)  # top-of-page title
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 119
+                  href: devtools-guide-chromium/whats-new/2023/11/devtools-119.md
+                  displayName: What's New in DevTools (Microsoft Edge 119)  # top-of-page title
 
                 - name: Microsoft Edge 118
                   href: devtools-guide-chromium/whats-new/2023/10/devtools-118.md
@@ -1111,13 +1115,13 @@
 
             - name: REST API for updating an extension
               items:
-                - name: Using the Microsoft Edge Add-ons REST API
+                - name: Using the REST API for updating Microsoft Edge Add-ons
                   href: extensions-chromium/publish/api/using-addons-api.md
 
-                - name: REST API Reference for Microsoft Edge Add-ons
+                - name: REST API Reference for updating Microsoft Edge Add-ons
                   href: extensions-chromium/publish/api/addons-api-reference.md
 
-            - name: Set an extension to automatically update
+            - name: Set an externally installed extension to automatically update
               href: extensions-chromium/publish/auto-update.md
 
 # -------------------------------------
@@ -1347,7 +1351,7 @@
           items:
             - name: WebView2 browser flags  # todo: move entry
               href: webview2/concepts/webview-features-flags.md
-              
+
             - name: Custom management of network requests
               href: webview2/how-to/webresourcerequested.md
               displayName: WebResourceRequested, WebResourceResponseReceived
@@ -1675,7 +1679,7 @@
         - name: Detect Microsoft Edge from your website
           href: web-platform/user-agent-guidance.md
 
-        - name: Develop for the sidebar
+        - name: Develop experiences for the sidebar in Microsoft Edge
           href: web-platform/sidebar.md
           displayName: sidebar apps, sidebar extensions, pwa, side panel, sidepanel
 
@@ -1685,13 +1689,16 @@
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
 
-        - name: Operating System Regional Data Display
+        - name: Display regional versions of your site, based on OS settings
           href: web-platform/os-regional-settings.md
           displayName: globalization, language, region, limited, intl, date, time, format
 
-        - name: View formatted JSON
+        - name: View formatted JSON responses or files
           href: devtools-guide-chromium/json-viewer/json-viewer.md
           displayName: JSON viewer, view JSON
+
+        - name: Sign up for the Ad Selection API
+          href: ./web-platform/ad-selection-api.md
 
 # =============================================================================
     - name: Microsoft Edge IDE integration
