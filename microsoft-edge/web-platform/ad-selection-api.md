@@ -10,7 +10,7 @@ ms.date: 10/08/2024
 # Sign up for the Ad Selection API
 <!-- https://go.microsoft.com/fwlink/?linkid=2289906 -->
 
-The Ad Selection API provides user-relevant ads on your site without using third-party cookies.  See [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md) in the "WICG / privacy-preserving-ads" repo.
+The Ad Selection API provides user-relevant ads on your site without using third-party cookies.  See [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md) in the `privacy-preserving-ads` repo.
 
 The Ad Selection API can be used by:
 * **Sellers** running a supply-side platform (SSP), who can use the API to provide higher-quality ads for their publishers.
@@ -21,11 +21,11 @@ To get started using the Ad Selection API and test out the end-to-end flow, sign
 As a seller operating a supply-side platform or a buyer operating a demand-side platform, use this guide to:
 * Test the Ad Selection API on your site.
 * Sign up for the Ad Selection API limited preview.
-* Register for the Origin Trial.
-* Complete API attestation.
-* See the Ad Selection API and its usage, and deploy your services to Azure.
+* Register for the origin trial for the Ad Selection API.<!-- todo: merge w/ above -->
+* Complete API attestation.<!-- todo: * Publish your attestations JSON file. -->
+* See the Ad Selection API and its usage, and deploy your services to Azure.<!-- todo: * See the Ad Selection API documentation.  * Deploy your services to Azure. -->
 * Set up an evaluation environment with a supported cloud provider.
-* Prepare all needed UDF functions and be able to work with Edge Web API.
+* Prepare all needed User-Defined Functions (UDFs) and be able to work with Edge Web API.<!-- todo: correct name of API? -->
 
 
 <!-- ====================================================================== -->
@@ -55,7 +55,7 @@ The **Ad Selection API** flag enables the Ad Selection API and associated featur
 <!-- ------------------------------ -->
 #### Sign-up and attestation requirements and process
 
-Developers interested in alpha testing can join the [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/).  This trial enables end-to-end testing of Ad Selection API features, covering both the API usage and the deployment of secure container images.
+Developers interested in alpha testing can join the origin trial for the Ad Selection API.  This origin trial enables end-to-end testing of Ad Selection API features, covering both the API usage and the deployment of secure container images.
 
 For each top-level domain that you intend to use with the Ad Selection API, fill in the **Origin Trial Registration**  form for that domain, and then submit the form.
 
@@ -63,7 +63,7 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 
 1. Open [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) in a new window or tab:
 
-   ![Origin trials](./ad-selection-api-images/origin-trials.png)
+   ![The "Ad Selection API" origin trial listing at "Microsoft Edge Origin Trials"](./ad-selection-api-images/origin-trials.png)
 
 1. In the **Ad Selection API** section, click the **Register** button.  The **Origin Trial Registration** form opens:
 
@@ -81,7 +81,7 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 
 1. Click the **Submit** button.
 
-   An Origin Trial token is generated for the top-level domain and is sent to you.
+   An origin trial token is generated for the top-level domain and is sent to you.
 
 1. Create a file that's named `ad-selection-attestations.json`, and host the file at the top-level domain, in the `/.well-known/` directory.  For example:
 
@@ -138,7 +138,7 @@ The attestations JSON file must be named `ad-selection-attestations.json`, and m
 <!-- ---------- -->
 ###### Important fields and values
 
-* The `ad-selection-attestations.json` file must include the Origin Trial token that was generated and sent to you for this top-level domain.  `"ownership_token":` is the Origin Trial token that was generated when registering this domain for the **Ad Selection API** origin trial.
+* The `ad-selection-attestations.json` file must include the origin trial token that was generated and sent to you for this top-level domain.  `"ownership_token":` is the origin trial token that was generated when registering this domain for the **Ad Selection API** origin trial.
 
 * In the `"platform_attestations":` section, `"platform":` must be `"edge"` or `"android"`.
 
@@ -156,7 +156,7 @@ The attestations JSON file must be named `ad-selection-attestations.json`, and m
 
 The Ad Selection API uses a trusted execution environment (TEE) to provide a level of assurance for data integrity, data confidentiality, and code integrity; see [Confidential Computing: Hardware-Based Trusted Execution for Applications and Data](https://confidentialcomputing.io/wp-content/uploads/sites/85/2021/03/confidentialcomputing_outreach_whitepaper-8-5x11-1.pdf).  Services provided by the Ad Selection API must run in a TEE to secure the data used by these services.
 
-Ad Selection Services running in a TEE should be deployed on a cloud platform that supports the necessary security features.  Initially, services can be deployed in Azure using [Confidential ACI containers](/azure/container-instances/container-instances-confidential-overview).
+Ad Selection Services running in a TEE should be deployed on a cloud platform that supports the necessary security features.  Initially, services can be deployed in Azure by using confidential ACI containers; see [Confidential containers on Azure Container Instances](/azure/container-instances/container-instances-confidential-overview).
 
 The Ad Selection API provides different services that need to be deployed by sellers or buyers.
 
@@ -164,7 +164,7 @@ The Ad Selection API provides different services that need to be deployed by sel
 <!-- ------------------------------ -->
 #### Images for deploying services
 
-Add your User-Defined Functions within the provided images of services.  The User-Defined Functions can run custom business logic.  The User-Defined Functions run in private containers within the deployed services.
+Add your User-Defined Functions (UDFs) within the provided images of services.  The User-Defined Functions can run custom business logic.  The User-Defined Functions run in private containers within the deployed services.
 
 Each image defines one service.  Some images don't contain UDFs, and consist entirely of predefined code.  Some images contain UDFs, as functions with an empty body or starter code, that are the relevant User-Defined Functions for that service.  Fill in the bodies of the User-Defined Functions in these images with your own custom code.
 
@@ -242,7 +242,7 @@ To deploy the Ad Selection API service to Azure:
 
 1. Choose the **Confidential ACO containers** option.
 
-1. Download the Terraform [deployment scripts and guide](https://go.microsoft.com/fwlink/?linkid=2290115).  **Note:** Make sure the hash of the image you downloaded matches the hash in the script you download.
+1. Download the [Terraform deployment scripts](https://github.com/WICG/privacy-preserving-ads/tree/main/deployment-scripts).<!-- todo: update link text to match title of dest page, which is currently "Azure" -->  **Note:** Make sure the hash of the image you downloaded matches the hash in the script you download.
 
 1. The Terraform scripts already include links to public images that are provided by Microsoft.  Choose the required services and deploy them by following the steps in the included `readme.md`.
 
@@ -271,10 +271,14 @@ To learn more about which API methods are available and to view example code, se
 ## See also
 <!-- all links in article -->
 
-Design and technical documents:
-* [Ad Selection API Proposal](https://github.com/WICG/privacy-preserving-ads?tab=readme-ov-file#ad-selection-api-proposal)
-* [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md)
-* [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md)
+`privacy-preserving-ads` repo:
+* Design and technical documents
+   * [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md)
+   * [Ad Selection API Proposal](https://github.com/WICG/privacy-preserving-ads?tab=readme-ov-file#ad-selection-api-proposal)<!-- not in article body -->
+   * [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md)
+* Deployment scripts
+   * [Demo Buyer and Seller Terraform Configurations for Azure](https://github.com/WICG/privacy-preserving-ads/blob/main/deployment-scripts/azure/terraform/environment/demo/README.md)<!-- not in article body; linked from following page: -->
+   * [Terraform deployment scripts](https://github.com/WICG/privacy-preserving-ads/tree/main/deployment-scripts)<!-- todo: update link text to match title of dest page, which is currently "Azure" -->
 
 Images for deployment:
 * Sellers
@@ -286,14 +290,11 @@ Images for deployment:
    * [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 
 Origin trials:
-* [Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/)
+* [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/)
 
 Trusted execution environment (TEE):
 * [Confidential Computing: Hardware-Based Trusted Execution for Applications and Data](https://confidentialcomputing.io/wp-content/uploads/sites/85/2021/03/confidentialcomputing_outreach_whitepaper-8-5x11-1.pdf)
 
 Azure:
 * [Microsoft Azure](https://azure.microsoft.com)
-* [Confidential ACI containers](/azure/container-instances/container-instances-confidential-overview)
-
-Terraform:
-* [Terraform deployment scripts and guide](https://go.microsoft.com/fwlink/?linkid=2290115)
+* [Confidential containers on Azure Container Instances](/azure/container-instances/container-instances-confidential-overview)
