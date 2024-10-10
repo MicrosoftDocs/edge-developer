@@ -569,7 +569,7 @@ developer.microsoft.com:
 Local pages:
 * [WPF sample app](../samples/webview2wpfbrowser.md)
 * [Manage user data folders](../concepts/user-data-folder.md)
-* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
+* [WebView2 sample apps](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
 
 GitHub:

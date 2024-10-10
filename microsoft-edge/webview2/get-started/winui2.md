@@ -474,7 +474,7 @@ The following classes aren't accessible in WinUI 2:
 * [WebView2 API Reference](../webview2-api-reference.md)
 * [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to download, update, build, and run the WinUI 2 WebView2 sample.
 * [Manage user data folders](../concepts/user-data-folder.md)
-* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
+* [WebView2 sample apps](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
 
 GitHub:
