@@ -10,6 +10,8 @@ ms.date: 10/10/2024
 ---
 # Debug DOM memory leaks with the Detached Elements profiling type
 
+<!-- article covers both tools during Oct 17, 2024 - Jan 15, 2025, then remove Detached Elements tool content & tabset -->
+
 > [!IMPORTANT]
 > The **Detached Elements** tool is being deprecated.  Starting with Microsoft Edge 130, the **Detached Elements** tool has a message stating that the tool is deprecated; instead, in the **Memory** tool, in the initial **Select profiling type** screen, select the **Detached elements** option button.  The Edge-only Chrome DevTools Protocol (CDP) function `EdgeDOMMemory.getDetachedNodesIds` continues to work, but use `DOM.getDetachedDomNodes` instead.
 > 
@@ -35,7 +37,27 @@ As explained in [Fix memory problems](index.md), memory issues affect page perfo
 
 
 <!-- ====================================================================== -->
-## Open the Detached Elements tool
+## Differences between the Detached Elements feature in the two tools
+
+##### [Memory tool](#tab/memory-tool)
+
+In the **Memory tool**, the detached element is not linked to the retainer path.
+
+The workflow is simpler.  Doesn't need to do that linking, because it shows the detached node exactly as it's represented in the DOM.
+
+![A detached node represented in the Memory tool like it's represented in the DOM](./dom-leaks-images/representation-like-in-dom.png)
+
+##### [Detached Elements tool](#tab/detached-elements-tool)
+
+In the **Detached Elements** tool, the detached element is linked to the retainer path in the **Memory** tool.
+
+Uses a complex workflow.  The **Detached Elements** tool shows detached nodes, but has to also take a heap snapshot, and then shows the **Memory** tool in the **Drawer**, and then links between the detached node in the **Detached Elements** tool and the detached node in the heap snapshot in the **Memory** tool in the **Drawer**,
+
+---
+
+
+<!-- ====================================================================== -->
+## Open the Detached Elements feature
 
 To open the demo page and view its detached elements:
 
