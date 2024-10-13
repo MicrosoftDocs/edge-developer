@@ -12,10 +12,6 @@ ms.date: 10/13/2024
 
 <!-- article covers both tools during Oct 17, 2024 - Jan 15, 2025, then remove Detached Elements tool content & tabset -->
 
-<!-- old structure of article is too disjointed; hard to follow flow b/c wrong scale of headings breakout.  makes the process disjointed and not a single task linear flow.  poor scaling of h2 series of steps.  an h2 should be a coherent single task, where "task" is a useful scale of accomplishment.
-## Open demo, open tool, get de's, and analyze a de
--->
-
 The **Detached Elements** feature finds and displays all of the detached elements on a web page.
 
 Use the **Detached elements** feature to find detached elements that the browser cannot garbage-collect, and locate the JavaScript object that is still referencing the detached element.  By changing your JavaScript to release the element, you reduce the number of detached elements on your page.
@@ -35,8 +31,6 @@ See also:
 
 <!-- ------------------------------ -->
 #### High-level strategy
-
-<!-- explanation of why we're doing the steps, that are in the compact ui steps section -->
 
 1. Open a webpage to analyze.
 1. Open the **Detached Elements** feature.
@@ -98,13 +92,13 @@ Uses a complex workflow.  The **Detached Elements** tool shows detached nodes, b
 <!-- ====================================================================== -->
 ## Open the demo and tool, get detached elements, and analyze a detached element
 
-To open the **Detached Elements** demo webpage and then view its detached elements:
+To analyze a detached element by using the **Detached Elements** demo webpage:
 
 
 <!-- ---------- -->
 ##### [Memory tool](#tab/memory-tool)
 
-<!-- todo: resume here - rewrite ui steps for Memory tool -->
+<!-- todo: 2: rewrite ui steps for new tool/approach -->
 
 1. Open the [Detached Elements demo application](https://microsoftedge.github.io/Demos/detached-elements/) in a new window or tab.
 
@@ -178,6 +172,8 @@ To open the **Detached Elements** demo webpage and then view its detached elemen
 
 <!-- ---------- -->
 ##### [Detached Elements tool](#tab/detached-elements-tool)
+
+<!-- todo: 1: walk through these steps, clarify as needed, get familiar w old tool/steps -->
 
 1. Open the [Detached Elements demo application](https://microsoftedge.github.io/Demos/detached-elements/) in a new window or tab.
 
@@ -281,11 +277,16 @@ The new origin is displayed in the **Detached Elements** feature.
 
    
 <!-- ====================================================================== -->
-## Additional considerations (ie, Foo and Bar)
-<!-- todo: make heading clear and specific -->
+## Detached elements vs. memory leaks
 <!-- todo: move to top?  -->
 
-Memory leaks can depend on the context of your application.  To use the demo webpage, you find detached elements that can't be garbage-collected by the browser, and you identify the JavaScript that's retaining the detached elements.  However, in the context of the demo webpage, it makes sense to retain the list of chat messages, so that if a user switches back to **Room 1**, the message log is preserved.
+Detached elements aren't always an indication of a memory leak, and memory leaks aren't always caused by detached elements.  Memory leaks depend on the context of your application.
+
+
+<!-- ------------------------------ -->
+#### Re-attaching elements
+
+To use the demo webpage, you find detached elements that can't be garbage-collected by the browser, and you identify the JavaScript that's retaining the detached elements.  However, in the context of the demo webpage, it makes sense to retain the list of chat messages, so that if a user switches back to **Room 1**, the message log is preserved.
 
 The following image shows detached elements in the form of messages that are reattached when a user navigates from **Room 2** back to **Room 1**:
 
@@ -303,11 +304,19 @@ The following image shows detached elements in the form of messages that are rea
 
 ---
 
-Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up.  Detached elements aren't always an indication of a memory leak, and memory leaks aren't always caused by detached elements.
+Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up.
+
+
+<!-- ------------------------------ -->
+#### Long-running apps and unmounting components
 
 For long-running apps, small memory leaks of only a few kilobytes can noticeably degrade performance over time.  For webpages that use the React framework, React maintains a virtualized copy of the DOM.  Failing to properly unmount components can potentially lead to an application leaking large parts of the virtual DOM.
 
-The **Detached Elements** demo webpage and its leaks are artificial.  Test the **Detached Elements** feature on your production website or app.  If you find issues with how the **Detached Elements** feature works, [contact the Microsoft Edge DevTools team](../contact.md) to send feedback about the **Detached Elements** feature and memory leak debugging.
+
+<!-- ====================================================================== -->
+## Reporting issues
+
+If you find issues with how the **Detached Elements** feature works, [contact the Microsoft Edge DevTools team](../contact.md) to send feedback about the **Detached Elements** feature and memory leak debugging.
 
 
 <!-- ====================================================================== -->
