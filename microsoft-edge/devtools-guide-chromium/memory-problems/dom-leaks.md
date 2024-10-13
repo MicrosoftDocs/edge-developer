@@ -42,7 +42,7 @@ After getting an initial list of detached elements, you'll trigger garbage colle
 
 When you select **Collect garbage**, the browser runs garbage collection.  When you select **Get Detached Elements**, the **Detached Elements** feature displays all detached elements that cannot be garbage collected.  These detached elements may be memory leaks if they aren't going to be reused by the application.
 
-For the detached element that can't be garbage-collected, use the **Analyze** (![The Analyze icon](./dom-leaks-images/analyze-icon.png)) button in the **Detached Elements** feature to identify the JavaScript code running on the webpage that is still referencing the detached element.  The **Analyze** button takes a heap snapshot and populates the **ID** of the detached element with its location in the heap.
+For the detached element that can't be garbage-collected, use the **Analyze** (![The Analyze icon](./dom-leaks-images/analyze-icon.png)) button<!-- todo: check ui for both tools --> in the **Detached Elements** feature to identify the JavaScript code running on the webpage that is still referencing the detached element.  The **Analyze** button takes a heap snapshot and populates the **ID** of the detached element with its location in the heap.
 
 After running GC, identify the DOM node causing others to be retained.  Because the DOM is a fully connected graph, when one DOM node is retained in memory by JavaScript it can cause other DOM nodes to be retained with it.  You identify the culprit node in a detached tree that is causing the entire tree to be retained.
 
@@ -112,60 +112,7 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
 1. Click the **Start** button.
 
-1. In the demo application, make sure that the **Room 1** button is selected.
-
-1. In the demo application, click the **Fast traffic** button.
-
-1. After some messages are generated and displayed in the demo application, click the demo's **Stop** button:
-
-   ![Generating some messages in the demo application](./dom-leaks-images/demo-app.png)
-
-1. Click the **Room 2** button:
-
-1. In the **Detached Elements** feature, click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) icon.
-
-   The **Detached Elements** feature displays all of the detached elements of the webpage.  When you switch to **Room 2** in the demo application, the messages that were generated in **Room 1** are no longer attached to the DOM, but they are still referenced by JavaScript:
-
-   ![Get Detached Elements using the Detached Elements tool](./dom-leaks-images/get-detached-elements.png)
-
-   Next, trigger garbage collection, to analyze the JavaScript for a detached element, as follows.
-
-1. In the **Detached Elements** feature, click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.
-
-1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) icon.
-
-   <!-- todo: what's the new, desired, beneficial state?  what have we accomplished now? -->
-   You can now see XYZ.   Next, identify the JavaScript code that references a particular detached element, as follows.
-
-1. In the **Detached Elements** feature, click the **Analyze** (![The Analyze icon](./dom-leaks-images/analyze-icon.png)) icon.
-
-   The **Memory** tool opens in the **Quick View** toolbar, at the bottom of DevTools:
-
-   ![Analyze Detached Elements in the Detached Elements tool](./dom-leaks-images/analyze-detached-elements.png)
-
-1. From the **Detached Elements** feature, select the **Id** field of a detached element.
-
-   The **Memory** tool automatically selects the object in the heap that is referencing the detached element. We call these objects **Retainers**:
-
-   ![Referencing a heap snapshot from the Detached Elements tool](./dom-leaks-images/heap-snapshot.png)
-
-1. In the **Memory** tool, select the link **room.js:13**.
-
-   The **Sources** tool opens in the **Activity Bar** and shows line 13 of the file **room.js**.
-
-1. In the `hide()` function of **room.js**, the JavaScript code of the demo application adds each message in the room to an `unmounted` array. The `unmounted` array is the object that is referencing the detached element:
-
-   ![Identifying the JavaScript that is retaining the detached element](./dom-leaks-images/javascript-retainers.png)
-
-   You have now identified the retainer that is preventing the detached element from being garbage-collected by the browser.  Next, identify the DOM node causing others to be retained, as follows.
-
-1. Click the **Detach Elements** (![The Detach Elements icon](./dom-leaks-images/detach-elements-icon.png)) icon to destroy the parent-child links inside the detached tree.
-
-1. Click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.
-
-   Parent-child links are removed inside the detached tree:
-
-   ![The Detach Elements button in the Detached Elements tool](./dom-leaks-images/remove-links.png)
+1. Remaining steps. _rewrite the steps in the "Detached Elements tool" tab, copy to here, then modify for Memory tool_<!-- todo -->
 
 
 <!-- ---------- -->
@@ -212,23 +159,27 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
    The **Memory** tool opens in the **Quick View** toolbar, at the bottom of DevTools:
 
-   ![Analyze Detached Elements in the Detached Elements tool](./dom-leaks-images/analyze-detached-elements.png)
+   ![Analyze Detached Elements in the Detached Elements tool](./dom-leaks-images/analyze-detached-elements.png)<!-- todo: global: red box on DE tab and Mem tab -->
 
-1. From the **Detached Elements** feature, select the **Id** field of a detached element.
+1. In the **Detached Elements** tool, in the **@21299** detached element, click the **Id** field.
 
-   The **Memory** tool automatically selects the object in the heap that is referencing the detached element. We call these objects **Retainers**:
+   The **Memory** tool automatically selects the object in the heap that is referencing the detached element.  These objects are called _retainers_, and are listed in the **Retainers** tab:
 
    ![Referencing a heap snapshot from the Detached Elements tool](./dom-leaks-images/heap-snapshot.png)
 
-1. In the **Memory** tool, select the link **room.js:13**.
+1. In the **Memory** tool, in the **Retainers** tab, in the **[2] in Array @58525** retainer entry, in the **unmounted in Room @57707** retainer sub-entry, click the link **room.js:13**.
 
-   The **Sources** tool opens in the **Activity Bar** and shows line 13 of the file **room.js**.
+   The **Sources** tool opens in the **Activity Bar** and shows line 13 of the file **room.js**:
 
-1. In the `hide()` function of **room.js**, the JavaScript code of the demo application adds each message in the room to an `unmounted` array. The `unmounted` array is the object that is referencing the detached element:
+   ![Line 13 in room.js](./dom-leaks-images/room-js-line-13.png)<!-- todo: redo png to show line 13 -->
+
+   Scroll down to line 49:<!-- todo: why? -->
 
    ![Identifying the JavaScript that is retaining the detached element](./dom-leaks-images/javascript-retainers.png)
 
-   You have now identified the retainer that is preventing the detached element from being garbage-collected by the browser.  Next, identify the DOM node causing others to be retained, as follows.
+   In the `hide()` function of **room.js**, the JavaScript code of the demo application adds each message in the room to an `unmounted` array. The `unmounted` array is the object that is referencing the detached element.
+
+   In the JavaScript code, you have now identified the retainer that is preventing the detached element from being garbage-collected by the browser.  Next, identify the DOM node causing others to be retained, as follows.
 
 1. Click the **Detach Elements** (![The Detach Elements icon](./dom-leaks-images/detach-elements-icon.png)) icon to destroy the parent-child links inside the detached tree.
 
@@ -252,6 +203,8 @@ To check for detached elements from different origins or frames by using the **S
 
 <!-- ---------- -->
 ##### [Memory tool](#tab/memory-tool)
+
+<!-- todo: rewrite after finalize DE tab content -->
 
 1. Click the **Selected target** dropdown list:
 
