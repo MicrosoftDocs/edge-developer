@@ -175,7 +175,7 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
    ![Line 13 in room.js](./dom-leaks-images/room-js-line-13.png)<!-- todo: redo png to show line 13 -->
 
-   Scroll down to line 49:<!-- todo: why? -->
+1. Scroll down to line 49:<!-- todo: why? -->
 
    ![Identifying the JavaScript that is retaining the detached element](./dom-leaks-images/javascript-retainers.png)
 
@@ -183,11 +183,11 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
    In the JavaScript code, you have now identified the retainer that is preventing the detached element from being garbage-collected by the browser.  Next, identify the DOM node causing others to be retained, as follows.
 
-1. Click the **Detach Elements** (![The Detach Elements icon](./dom-leaks-images/detach-elements-icon.png)) icon to destroy the parent-child links inside the detached tree.
+1. Click the **Detach Elements** (![The Detach Elements icon](./dom-leaks-images/detach-elements-icon.png)) button to destroy the parent-child links inside the detached tree.<!-- todo: why?  to accomplish what? -->
 
-1. Click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.
+1. Click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) button.<!-- todo: why?  to accomplish what? -->
 
-   Parent-child links are removed inside the detached tree:
+   Parent-child links are removed inside the detached tree:<!-- todo: why?  to accomplish what? -->
 
    ![The Detach Elements button in the Detached Elements tool](./dom-leaks-images/remove-links.png)
 
