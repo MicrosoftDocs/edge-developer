@@ -633,7 +633,7 @@ The **Detached Elements** profiling type in the **Memory** tool helps you invest
 Memory leaks occur when the JavaScript code of an application retains more and more objects in memory instead of releasing them for the browser to garbage-collect.  We built the **Detached Elements** feature with the Microsoft Teams developers, and it has already helped us find and fix memory leaks across many of our own websites and apps.
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements profiling type](../devtools-guide-chromium/memory-problems/dom-leaks.md)<!-- has Video section -->
+* [Debug DOM memory leaks with the Detached Elements feature](../devtools-guide-chromium/memory-problems/dom-leaks.md)<!-- has Video section -->
 * [Debug memory leaks with the Microsoft Edge Detached Elements tool](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/) - blog post.
 
 

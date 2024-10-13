@@ -542,7 +542,7 @@
                   href: devtools-guide-chromium/memory-problems/heap-snapshots.md
                   displayName: Memory tool
 
-                - name: Debug DOM memory leaks with the Detached Elements profiling type
+                - name: Debug DOM memory leaks with the Detached Elements feature
                   href: devtools-guide-chromium/memory-problems/dom-leaks.md
                   displayName: Debug DOM memory leaks with the Memory tool  # old title
 

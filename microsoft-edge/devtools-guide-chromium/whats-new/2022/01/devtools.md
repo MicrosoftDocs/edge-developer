@@ -39,7 +39,7 @@ The **Detached Elements** feature was initially available as an experiment in [M
 ![The Detached Elements feature](./devtools-images/detached-elements-tool.png)
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements profiling type](../../../memory-problems/dom-leaks.md)
+* [Debug DOM memory leaks with the Detached Elements feature](../../../memory-problems/dom-leaks.md)
 * [Debug memory leaks with the Microsoft Edge Detached Elements tool - YouTube](https://www.youtube.com/watch?v=v2iy17ptmBk&ab_channel=MicrosoftEdge)
 
 
