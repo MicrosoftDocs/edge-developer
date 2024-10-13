@@ -92,7 +92,7 @@ Uses a complex workflow.  The **Detached Elements** tool shows detached nodes, b
 
 
 <!-- ====================================================================== -->
-## Open the demo and tool, get detached elements, and analyze a detached element
+## Get detached elements and analyze a detached element's JavaScript
 
 To analyze a detached element by using the **Detached Elements** demo webpage:
 
@@ -130,13 +130,13 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
    ![Open the Detached Elements tool](./dom-leaks-images/open-detached-elements.png)
 
-1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button.
+1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button.<!-- todo: describe the result, maybe add png -->
 
 1. In the demo application, make sure that the **Room 1** button is selected.
 
-1. In the demo application, click the **Fast traffic** button.
+1. In the demo application, click the **Fast traffic** button.  The demo webpage begins generating messages and displaying them.
 
-1. After some messages are generated and displayed in the demo application, click the demo's **Stop** button:
+1. After some messages are generated and displayed in the demo webpage, click the demo's **Stop** button:
 
    ![Generating some messages in the demo application](./dom-leaks-images/demo-app.png)
 
