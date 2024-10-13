@@ -12,6 +12,8 @@ ms.date: 10/13/2024
 
 <!-- article covers both tools during Oct 17, 2024 - Jan 15, 2025, then remove Detached Elements tool content & tabset -->
 
+<!-- todo: global: red box on DE tab and Mem tab -->
+
 The **Detached Elements** feature finds and displays all of the detached elements on a webpage.
 
 To increase the performance of your webpage, use the **Detached elements** feature to find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
@@ -159,9 +161,9 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
    The **Memory** tool opens in the **Quick View** toolbar, at the bottom of DevTools:
 
-   ![Analyze Detached Elements in the Detached Elements tool](./dom-leaks-images/analyze-detached-elements.png)<!-- todo: global: red box on DE tab and Mem tab -->
+   ![Analyze Detached Elements in the Detached Elements tool](./dom-leaks-images/analyze-detached-elements.png)
 
-1. In the **Detached Elements** tool, in the **@21299** detached element, click the **Id** field.
+1. In the **Detached Elements** tool, in the **Id** column, click **@21299**, which is the ID of one of the `<div class="message">` elements.
 
    The **Memory** tool automatically selects the object in the heap that is referencing the detached element.  These objects are called _retainers_, and are listed in the **Retainers** tab:
 
