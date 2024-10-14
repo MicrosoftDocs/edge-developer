@@ -160,10 +160,6 @@ todo: after update other tab, rewrite ui steps in this tab
 
    ![0 detached elements while still in Room 1](./dom-leaks-images/0-detached-in-room-1.png)
 
-1. In DevTools, in the **Activity Bar**, select the **Sources** tool, and then in the **Page** tab, click `room.js`.  In the `collectOldMessages` method of the `Room` class, see the notes about a potential leak:
-
-   ![Source code for the Room class](./dom-leaks-images/room-source-code.png)
-
 
    <!-- ------------------------------ -->
    **Change to a different instance of the Room class, so elements become detached:**
