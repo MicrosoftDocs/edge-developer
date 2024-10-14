@@ -138,7 +138,9 @@ todo: after update other tab, rewrite ui steps in this tab
 
 1. In the demo webpage, make sure that the **Room 1** button is selected.
 
-1. In the demo webpage, click the **Fast traffic** button.  The demo webpage begins generating messages and displaying them in the webpage:
+1. In the demo webpage, click the **Fast traffic** button.
+
+   The demo webpage begins generating messages and displaying them in the webpage:
 
    ![Generating some messages in the demo webpage](./dom-leaks-images/demo-app.png)
 
@@ -148,7 +150,7 @@ todo: after update other tab, rewrite ui steps in this tab
 
 
    <!-- ------------------------------ -->
-   **Open the Detached Elements tool:**
+   **See whether there are any detached elements:**
 
 1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
@@ -156,15 +158,19 @@ todo: after update other tab, rewrite ui steps in this tab
 
    ![Open the Detached Elements tool](./dom-leaks-images/open-detached-elements.png)
 
-1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button.<!-- todo: what does clicking this button at this point accomplish or demonstrate? -->  0 detached elements are found, and no elements are displayed below the button, because all of the message elements are attached to the present, Room 1 instance of the **Room** class:
+1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button:<!-- todo: what does clicking this button at this point accomplish or demonstrate? -->
 
    ![0 detached elements while still in Room 1](./dom-leaks-images/0-detached-in-room-1.png)
+
+   0 detached elements are found, and no elements are displayed below the button, because all of the message elements are attached to the present, Room 1 instance of the **Room** class.
 
 
    <!-- ------------------------------ -->
    **Change to a different instance of the Room class, so elements become detached:**
 
-1. In the demo webpage, click the **Room 2** button.  When you switch to **Room 2**, the messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.
+1. In the demo webpage, click the **Room 2** button.
+
+   The messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.
 
 1. In DevTools, select the **Detached Elements** (![The Detached Elements tool icon](./dom-leaks-images/detached-elements-tool-icon.png)) tool, and then click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button:<!-- todo: what does clicking this button at this point accomplish or demonstrate? -->
 
@@ -172,9 +178,13 @@ todo: after update other tab, rewrite ui steps in this tab
 
    The **Detached Elements** tool displays all of the detached elements of the webpage, regardless of whether the elements are still referenced by a JavaScript object.
 
-1. In the **Detached Elements** tool, click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.<!-- todo: what does clicking this button at this point accomplish or demonstrate? -->  The browser runs garbage collection, removing any nodes that are no longer referenced by a JavaScript object.  In this demo webpage, the list remains the same.
+1. In the **Detached Elements** tool, click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.<!-- todo: what does clicking this button at this point accomplish or demonstrate? -->
 
-1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button again.<!-- todo: what does clicking this button at this point accomplish or demonstrate? -->  This time, only the detached elements that can't be garbage-collected are displayed.  These detached elements are memory leaks, if they aren't going to be reused by the application.  In this demo webpage, the list remains the same.
+   The browser runs garbage collection, removing any nodes that are no longer referenced by a JavaScript object.  In this demo webpage, the list remains the same.
+
+1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button again.<!-- todo: what does clicking this button at this point accomplish or demonstrate? -->
+
+   This time, only the detached elements that can't be garbage-collected are displayed.  These detached elements are memory leaks, if they aren't going to be reused by the application.  In this demo webpage, the list remains the same.
 
 
    <!-- ------------------------------ -->
@@ -186,21 +196,19 @@ todo: after update other tab, rewrite ui steps in this tab
 
    ![Analyze Detached Elements in the Detached Elements tool](./dom-leaks-images/analyze-detached-elements.png)
 
-1. In the **Detached Elements** tool, in the **Id** column, double-click an ID, such as **@21299** or **@21783**.  This is the ID of one of the `<div class="message">` elements.
-
-   The **Memory** tool automatically selects the object in the heap that is referencing the detached element.  Such an object is called a _retainer_.  Retainers are displayed in the **Retainers** tab of the **Memory** tool:
+1. In the **Detached Elements** tool, in the **Id** column, double-click an ID, such as **@21299** or **@21783**.  This is the ID of one of the `<div class="message">` elements.  The **Memory** tool displays retainers:
 
    ![Referencing a heap snapshot from the Detached Elements tool](./dom-leaks-images/heap-snapshot.png)
 
-1. In the **Memory** tool, in the **Retainers** tab, in a retainer entry such as **[1] in Array @54019**, in a sub-entry about the `unmounted` member, such as **unmounted in Room @54011**, click the link **room.js:13**.
+   The **Memory** tool automatically selects the object in the heap that is referencing the detached element.  Such an object is called a _retainer_.  Retainers are displayed in the **Retainers** tab of the **Memory** tool.
+
+1. In the **Retainers** tab, in a retainer sub-entry about the `unmounted` member, such as **unmounted in Room @54011**, click the link **room.js:13**.
 
    The **Sources** tool opens in the **Activity Bar** and shows line 13 of the file **room.js** (the `Room` constructor):
 
    ![Line 13 in room.js: the Room constructor](./dom-leaks-images/room-js-line-13.png)
 
-1. Press **Ctrl+F** and find mentions of **unmounted**, which is an array member of the `Room` class.
-
-1. In the `collectOldMessages` method of the `Room` class, read the notes about a potential leak.
+   `unmounted` is an array member of the `Room` class.  The `collectOldMessages` method of the `Room` class contains notes about a potential leak.
 
 1. Scroll down to line 49, `this.unmounted.push(el);` within the `Room`'s `hide` method:
 
@@ -233,7 +241,7 @@ todo: show Memory tool instead
 
 1. Click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.
 
-   Parent-child links are removed inside the detached tree:
+   Parent-child links are removed inside the detached tree, and the remaining item is the DOM node that caused other DOM nodes to be retained:
 
    ![The Detach Elements button in the Detached Elements tool](./dom-leaks-images/remove-links.png)
 
@@ -245,7 +253,7 @@ todo: show Memory tool instead
 
 1. Click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.<!-- todo: what does clicking this button at this point accomplish or demonstrate? -->
 
-   Parent-child links are removed inside the detached tree:
+   Parent-child links are removed inside the detached tree, and the remaining item is the DOM node that caused other DOM nodes to be retained:
 
    ![The Detach Elements button in the Detached Elements tool](./dom-leaks-images/remove-links.png)
 
