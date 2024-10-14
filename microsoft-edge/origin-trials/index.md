@@ -18,7 +18,7 @@ To see a list of the available origin trials and register your origin to give th
 You can also provide feedback to browser engineers and the web standards community about the design of the API, your use cases, or your experience using the APIs.
 
 > [!IMPORTANT] 
-> If you're interested in the Ad Selection API origin trial, please register [here](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/). [Learn more about sign-up.](../web-platform/ad-selection-api)
+> If you're interested in the Ad Selection API origin trial, please register [here](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/). [Learn more about sign-up.](../web-platform/ad-selection-api.md)
 
 ## Getting Started
 
