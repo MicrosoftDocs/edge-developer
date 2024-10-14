@@ -20,7 +20,7 @@ You can also provide feedback to browser engineers and the web standards communi
 > [!IMPORTANT] 
 > If you're interested in the Ad Selection API origin trial, please register [here](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/). [Learn more about sign-up.](../web-platform/ad-selection-api)
 
-# Getting Started
+## Getting Started
 
 To register for an origin trial, 
 1. [Go to Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials) and select an active trial.
@@ -50,7 +50,7 @@ Tokens expire every 6 weeks by default. Once they expire, you’ll have to come 
 
 3. Copy and use your new token on your site.
 
-# Developer Guidelines
+## Developer Guidelines
 
 **Allowed Origins**
 
