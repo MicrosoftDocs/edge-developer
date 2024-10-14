@@ -6,29 +6,25 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/13/2024
+ms.date: 10/14/2024
 ---
 # Debug DOM memory leaks with the Detached Elements feature
 
 <!-- article covers both tools during Oct 17, 2024 - Jan 15, 2025, then remove Detached Elements tool content & tabset -->
 
-<!-- todo: global: red box on DE tab and Mem tab -->
-
 The **Detached Elements** feature finds and displays all of the detached elements on a webpage.
 
 To increase the performance of your webpage, use the **Detached elements** feature to find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
 
-A memory leak can occur in your application when an element is no longer attached to the Document Object Model (DOM) tree, but is still referenced by some JavaScript running on the webpage. These elements are called *detached elements*.  For the browser to garbage-collect (GC) the detached element, the element must not be referenced from the DOM tree or from JavaScript code.
 
-Memory issues affect webpage performance, including memory leaks, memory bloat, and frequent garbage collections.  Symptoms for your users include:
+<!-- ------------------------------ -->
+#### Video: Debug memory leaks with the Microsoft Edge Detached Elements tool
 
-*  The performance of a webpage gets progressively worse over time.
-*  The performance of a webpage is consistently bad.
-*  The performance of a webpage is delayed or appears to pause frequently.
+[![Thumbnail image for video "Debug memory leaks with the Microsoft Edge Detached Elements tool"](./dom-leaks-images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
 
-See also:
-* [Discover detached DOM tree memory leaks with Heap Snapshots](index.md#discover-detached-dom-tree-memory-leaks-with-heap-snapshots) in _Fix memory problems_.
-* [Record heap snapshots using the Memory tool](./heap-snapshots.md)
+
+<!-- ====================================================================== -->
+## Strategy to fix memory leaks
 
 
 <!-- ------------------------------ -->
@@ -40,7 +36,19 @@ See also:
 1. Run GC.<!-- todo: why?  what's the difference between "getting detached elements" vs. "doing GC on that and getting a list of detached elements"?? -->
 1. Analyze a particular detached element and its JavaScript, to identify the culprit node in a detached tree that is causing the entire tree to be retained.
 
-After getting an initial list of detached elements, you'll trigger garbage collection (GC) in the browser, in order to see a detached element and then analyze it via heap snapshot and inspect JavaScript code that's still referencing the detached element.  You'll find a detached element that cannot be garbage-collected, so that you can analyze the element to identify the JavaScript code running on the webpage that is still referencing the detached element.  The analysis will take a heap snapshot and populate the **ID** of the detached element with its location in the heap.
+
+<!-- ------------------------------ -->
+#### Strategy details
+
+A memory leak can occur in your application when an element is no longer attached to the Document Object Model (DOM) tree, but is still referenced by some JavaScript running on the webpage. These elements are called *detached elements*.  For the browser to garbage-collect (GC) the detached element, the element must not be referenced from the DOM tree or from JavaScript code.
+
+Memory issues affect webpage performance, including memory leaks, memory bloat, and frequent garbage collections.  Symptoms for your users include:
+
+*  The performance of a webpage gets progressively worse over time.
+*  The performance of a webpage is consistently bad.
+*  The performance of a webpage is delayed or appears to pause frequently.
+
+After getting an initial list of detached elements, you'll trigger garbage collection (GC) in the browser, in order to see a detached element and then analyze it via heap snapshot and inspect JavaScript code that's still referencing the detached element.  You find a detached element that cannot be garbage-collected, so that you can analyze the element to identify the JavaScript code running on the webpage that is still referencing the detached element.  The analysis will take a heap snapshot and populate the **ID** of the detached element with its location in the heap.
 
 When you select **Collect garbage**, the browser runs garbage collection.  When you select **Get Detached Elements**, the **Detached Elements** feature displays all detached elements that cannot be garbage collected.  These detached elements may be memory leaks if they aren't going to be reused by the application.
 
@@ -48,15 +56,13 @@ For the detached element that can't be garbage-collected, use the **Analyze** (!
 
 After running GC, identify the DOM node causing others to be retained.  Because the DOM is a fully connected graph, when one DOM node is retained in memory by JavaScript it can cause other DOM nodes to be retained with it.  You identify the culprit node in a detached tree that is causing the entire tree to be retained.
 
-
-<!-- ------------------------------ -->
-#### Video: Debug memory leaks with the Microsoft Edge Detached Elements tool
-
-[![Thumbnail image for video "Debug memory leaks with the Microsoft Edge Detached Elements tool"](./dom-leaks-images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
+See also:
+* [Discover detached DOM tree memory leaks with Heap Snapshots](index.md#discover-detached-dom-tree-memory-leaks-with-heap-snapshots) in _Fix memory problems_.
+* [Record heap snapshots using the Memory tool](./heap-snapshots.md)
 
 
-<!-- ------------------------------ -->
-#### Locations of the Detached Elements feature
+<!-- ====================================================================== -->
+## Locations of the Detached Elements feature
 
 The **Detached Elements** feature is located in two tools:
 * The **Detached elements** profiling type option button in the **Memory** tool.
