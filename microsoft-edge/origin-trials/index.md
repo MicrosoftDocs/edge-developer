@@ -59,8 +59,8 @@ To register for an origin trial:
 1. Click the **Copy** button, and then paste the origin trial token into a safe place, noting which domain it's for.  You can also view this information in this webpage later.
 
 
-<!-- ---------- -->
-###### Ad Selection API origin trial
+<!-- ------------------------------ -->
+#### Ad Selection API origin trial
 
 To sign up for the Ad Selection API origin trial, you must use the old [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) portal that's at Github.io, rather than the new portal that's at Microsoft.com.  See [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md).
 
@@ -144,7 +144,7 @@ An origin trial may last until the planned expiration date, or may end early.
 
 
 <!-- ------------------------------ -->
-#### A scheduled expiration date
+#### Scheduled expiration date
 
 After you register for a trial, your token remains valid until the trial expiration date shown on the origin trial's informational card.  After the origin trial's expiration date, the token will no longer function, and the feature that's associated with the origin trial will be considered ready to ship, or the feature will be withheld for further development.
 
