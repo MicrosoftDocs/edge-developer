@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 10/14/2024
+ms.date: 10/15/2024
 ---
 # Use origin trials in Microsoft Edge
 
