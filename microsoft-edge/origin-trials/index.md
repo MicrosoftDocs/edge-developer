@@ -65,7 +65,7 @@ To register for an origin trial:
 ## Use the origin trial token at your website
 <!-- probably don't change wording of heading, b/c the "Enable the Origin Trial in your site's code" card at https://developer.microsoft.com/microsoft-edge/origin-trials probably links to this heading/anchor -->
 
-After you receive the origin trial token, you add the token to your webpage.  When a user's Microsoft Edge instance finds an origin trial token in your webpage, Microsoft Edge on the user's device automatically turns on the Microsoft Edge feature flag that corresponds to the origin trial for which the token is valid.  This allows a user of your web app to use the feature in their local browser, despite the feature's off-by-default state.
+After you receive the origin trial token, you add the token to your webpage.  When a user's Microsoft Edge browser finds an origin trial token in your webpage, Microsoft Edge on the user's device automatically turns on the Microsoft Edge feature flag that corresponds to the origin trial for which the token is valid.  This allows a user of your webpage to use the feature in their Microsoft Edge browser, despite the feature's off-by-default state.
 
 Use the token at your website in either of the following ways:
 
@@ -73,18 +73,17 @@ Use the token at your website in either of the following ways:
 <!-- ------------------------------ -->
 #### Option 1: A \<meta\> tag within the \<head\> element of a webpage
 
-Within the `<head>` element of any webpage, include the following `<meta>` tag:
+Within the `<head>` element of a webpage, include the following `<meta>` tag:
 
 `<meta http-equiv="origin-trial" content="EXAMPLE_TOKEN">`
 
-* In the `http-equiv` attribute, use the literal string `"origin-trial"`.
-* In the `content` attribute, replace `EXAMPLE_TOKEN` by your token.
+Replace `EXAMPLE_TOKEN` by your token.
 
 
 <!-- ------------------------------ -->
 #### Option 2: An HTTP header in your HTTP server response
 
-Use an HTTP header to add an `Origin-Trial` header to your HTTP server response:
+In your HTTP server response, add the following HTTP header:
 
 `Origin-Trial: EXAMPLE_TOKEN`
 
