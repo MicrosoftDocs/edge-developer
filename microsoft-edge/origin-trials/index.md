@@ -28,39 +28,31 @@ To register for an origin trial:
 
 1. Select an active trial.
 
-1. Complete the registration form, and then click the **Submit** button to get a valid token.
+1. Fill in the registration form:
+
+   ![New Origin Trial Registration form](./index-images/reg-form.png)
+
+   You can configure the origin trial token to support any of the following:
+   * A single domain, such as `https://example.com`, without supporting its subdomains.
+   * A single subdomain, such as `https://beta.example.com`.
+   * A domain, such as `https://example.com`, and its subdomains, such as `https://beta.example.com`.
+
+1. In the **Domain** text box, enter a domain URL, such as `https://example.com` or `https://beta.example.com`.
+
+   Trailing paths and query parameters aren't supported.  If a URI is entered that has a trailing path or a query parameter, such as `https://example.com/path/new-feature`, the root domain (such as `https://example.com`) will be registered, ignoring the trailing path or query parameter.
+
+1. Set the **Enable token for subdomains?** toggle.
+   * To enable using the origin trial at a domain (such as `https://example.com`) without supporting its subdomains (such as `https://beta.example.com`), make sure the **Enable token for subdomains?** toggle is turned off.
+   * To enable using the origin trial only at a specific subdomain (such as `https://beta.example.com`), you can either keep the **Enable token for subdomains?** toggle turned off, or turn on the toggle.  When you specify a subdomain, this toggle is Not Applicable, and is ignored.
+   * To enable using the origin trial at a domain (such as `https://example.com`) and its subdomains (such as `https://beta.example.com`), turn on the **Enable token for subdomains?** toggle.
+
+1. Click the **Submit** button.  An origin trial token is emailed to you.
 
 
 <!-- ---------- -->
 ###### Ad Selection API origin trial
 
 To sign up for the Ad Selection API origin trial, you must use the old [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) portal that's at Github.io, rather than the new portal that's at Microsoft.com.  See [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md).
-
-
-<!-- ------------------------------ -->
-#### Subdomains, URL paths, and query parameters
-
-To request an origin trial token, fill in the **New Origin Trial Registration** form:
-
-![New Origin Trial Registration form](./index-images/reg-form.png)
-
-
-<!-- ---------- -->
-###### Subdomains
-
-When you fill in the **New Origin Trial Registration** form, you can configure the origin trial token to support any of the following:
-
-* A single domain, without supporting its subdomains.  In the **Domain** text box, enter a root domain URL, such as `https://example.com`, and make sure the **Enable token for subdomains?** toggle is turned off.
-
-* A single subdomain.  In the **Domain** text box, enter a subdomain URL, such as `https://beta.example.com`, and make sure the **Enable token for subdomains?** toggle is turned off.
-
-* A domain and its subdomains.  In the **Domain** text box, enter a root domain URL, such as `https://example.com`, and turn on the **Enable token for subdomains?** toggle.
-
-
-<!-- ---------- -->
-###### Paths in URLs, and query parameters
-
-In URLs, paths and query parameters aren't supported by the origin trial system.  When registering for an origin trial, if a URI is submitted that has a trailing path or a query parameter, such as `https://example.com/path/new-feature`, the root domain (`https://example.com`) will be registered, without the trailing path or query parameter.
 
 
 <!-- ====================================================================== -->
