@@ -26,6 +26,8 @@ To register for an origin trial:
 
 1. Go to [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
+   To sign up for the Ad Selection API origin trial, you must instead use the old [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) portal, which is at Github.io.  See [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md).
+
 1. Select an active trial.
 
 1. Click the **I Accept the Terms of Use** button.
@@ -57,12 +59,6 @@ To register for an origin trial:
    ![The generated token displayed in the Registration section](./index-images/token-displayed.png)
 
 1. Click the **Copy** button, and then paste the origin trial token into a safe place, noting which domain it's for.  You can also view this information in this webpage later.
-
-
-<!-- ------------------------------ -->
-#### Ad Selection API origin trial
-
-To sign up for the Ad Selection API origin trial, you must use the old [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) portal that's at Github.io, rather than the new portal that's at Microsoft.com.  See [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md).
 
 
 <!-- ====================================================================== -->
