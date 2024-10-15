@@ -28,25 +28,35 @@ To register for an origin trial:
 
 1. Select an active trial.
 
-1. Fill in the registration form:
+1. Click the **I Accept the Terms of Use** button.
+
+1. If you are prompted to, sign in.  For example, sign in to GitHub, and then authorize the **Microsoft Edge Origin Trials** page to use the account sign-in.
+
+   The **New Origin Trial Registration** form opens:
 
    ![New Origin Trial Registration form](./index-images/reg-form.png)
+
+1. In the **Domain** text box, enter a domain URL (such as `https://example.com`) or a subdomain URL (such as `https://beta.example.com`).
 
    You can configure the origin trial token to support any of the following:
    * A single domain, such as `https://example.com`, without supporting its subdomains.
    * A single subdomain, such as `https://beta.example.com`.
    * A domain, such as `https://example.com`, and its subdomains, such as `https://beta.example.com`.
 
-1. In the **Domain** text box, enter a domain URL, such as `https://example.com` or `https://beta.example.com`.
-
-   Trailing paths and query parameters aren't supported.  If a URI is entered that has a trailing path or a query parameter, such as `https://example.com/path/new-feature`, the root domain (such as `https://example.com`) will be registered, ignoring the trailing path or query parameter.
+   Trailing paths and query parameters aren't supported.  If a URI is entered that has a trailing path or a query parameter, such as `https://example.com/path/new-feature`, the root domain (such as `https://example.com`) or subdomain will be registered, ignoring any trailing path or query parameters.
 
 1. Set the **Enable token for subdomains?** toggle.
    * To enable using the origin trial at a domain (such as `https://example.com`) without supporting its subdomains (such as `https://beta.example.com`), make sure the **Enable token for subdomains?** toggle is turned off.
-   * To enable using the origin trial only at a specific subdomain (such as `https://beta.example.com`), you can either keep the **Enable token for subdomains?** toggle turned off, or turn on the toggle.  When you specify a subdomain, this toggle is Not Applicable, and is ignored.
+   * To enable using the origin trial only at a specific subdomain (such as `https://beta.example.com`), make sure the **Enable token for subdomains?** toggle is turned off.
    * To enable using the origin trial at a domain (such as `https://example.com`) and its subdomains (such as `https://beta.example.com`), turn on the **Enable token for subdomains?** toggle.
 
-1. Click the **Submit** button.  An origin trial token is emailed to you.
+1. Click the **Submit** button.
+
+   An origin trial token is generated, and is displayed in the **Registrations** section near the **New Origin Trial Registration** form:
+
+   ![The generated token displayed in the Registration section](./index-images/token-displayed.png)
+
+1. Click the **Copy** button, and then paste the origin trial token into a safe place, noting which domain it's for.  You can also view this information in this webpage later.
 
 
 <!-- ---------- -->
@@ -59,9 +69,9 @@ To sign up for the Ad Selection API origin trial, you must use the old [Microsof
 ## Use the origin trial token at your website
 <!-- probably don't change wording of heading, b/c the "Enable the Origin Trial in your site's code" card at https://developer.microsoft.com/microsoft-edge/origin-trials probably links to this heading/anchor -->
 
-When an origin trial token is found in a document, Microsoft Edge automatically turns on the Microsoft Edge feature flag that corresponds to the origin trial for which the token is valid.  This allows a user of the application to use the feature in their local browser, despite the feature's off-by-default state.
+After you receive the origin trial token, you add the token to your webpage.  When a user's Microsoft Edge instance finds an origin trial token in your webpage, Microsoft Edge on the user's device automatically turns on the Microsoft Edge feature flag that corresponds to the origin trial for which the token is valid.  This allows a user of your web app to use the feature in their local browser, despite the feature's off-by-default state.
 
-After you receive the origin trial token, use the token in one of the following two ways:
+Use the token at your website in either of the following ways:
 
 
 <!-- ------------------------------ -->
@@ -86,13 +96,51 @@ Replace `EXAMPLE_TOKEN` by your token.
 
 
 <!-- ------------------------------ -->
+#### Perform feature detection, and provide graceful fallback
+
+In your website code, perform feature detection.  For best practices for feature detection, see [Implementing feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) at MDN.
+
+In your website code, provide graceful fallback mechanisms in case the origin-trial token expires, or in case the Microsoft Edge feature team ends the origin trial.  Treat origin trials as experimental.
+
+
+<!-- ------------------------------ -->
+#### Test the origin-trial feature at `localhost`
+
+To test an origin-trial feature at `localhost`, go to `edge://flags` and turn on the appropriate feature flag.  Microsoft Edge origin trials only support SSL-enabled domains, not `localhost`.
+
+
+<!-- ------------------------------ -->
 #### Opt out of an origin trial experiment
 
 To opt out of an experiment (origin trial) that you're enrolled in, remove the origin trial token from the `<meta>` tag or from the server response headers.
 
 
 <!-- ====================================================================== -->
+## Renew an origin trial token
+
+Origin trial tokens expire in 6 weeks, by default<!-- todo: strike ", by default"? -->.  When the origin trial token expires, you must renew the token, which means generating a fresh, new token for this origin trial.  You can renew the token before it expires.
+
+To renew an origin trial token:
+
+1. Go to [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials) - Developer.microsoft.com.
+
+   (For the Ad Selection API, instead see [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md).)
+
+1. In the **My Registered Trials** section, select an origin trial.
+
+1. In the **Registrations** section, in a token row that contains an **Expired** badge, click the **Renew** button:
+
+   ![UI to renewing a token](./index-images/renew-token.png)
+
+   A fresh token is generated and displayed.
+
+1. In the row that contains the new token, click the **Copy** button, and then paste the fresh token into your code.
+
+
+<!-- ====================================================================== -->
 ## Duration of an origin trial
+
+An origin trial may last until the planned expiration date, or may end early.
 
 
 <!-- ------------------------------ -->
@@ -112,41 +160,13 @@ If an experiment ends early, the feature team that owns the origin trial sends e
 
 
 <!-- ====================================================================== -->
-## Renew an origin trial token
-
-Origin trial tokens expire every 6 weeks by default.  After the origin trial token expires, you must renew the token.  You can renew the token before it expires.
-
-To renew an origin trial token that has expired or is about to expire:
-
-1. Go to **My Registered Trials** and select an origin trial.
-
-1. Click **Renew**.  A fresh token is sent to you.
-
-1. Copy the new token and use it on your site; see [How to use an origin trial token](#how-to-use-the-origin-trial-token), above.
-
-
-<!-- ====================================================================== -->
-## Perform feature detection and provide graceful fallback
-
-For best practices for feature detection, see [Implementing feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) at MDN.
-
-In your website, be sure to provide graceful fallback mechanisms in case the origin-trial token expires, or in case the Microsoft Edge feature team ends the origin trial.  Treat origin trials as experimental.
-
-
-<!-- ====================================================================== -->
-## Test the origin-trial feature at `localhost`
-
-To test an origin-trial feature at `localhost`, go to `edge://flags` and turn on the appropriate feature flag.  Microsoft Edge origin trials only support SSL-enabled domains, not `localhost`.
-
-
-<!-- ====================================================================== -->
 ## Submit feedback about an origin trial
 
 Please provide feedback about origin trials that you participate in.
 
 
 <!-- ------------------------------ -->
-#### Submit private feedback about an origin trial
+#### Submit private feedback
 
 To submit private feedback about an origin trial to the Microsoft Edge feature team that owns the origin trial:
 
@@ -158,7 +178,7 @@ To submit private feedback about an origin trial to the Microsoft Edge feature t
 
 
 <!-- ------------------------------ -->
-#### Submit public feedback about an origin trial
+#### Submit public feedback
 
 The GitHub Issues UI allows public discourse about ergonomics and stability of a feature.
 
@@ -175,11 +195,13 @@ To provide public feedback for an origin trial:
 ## See also
 <!-- all links in the article -->
 
-* [Experimental features and origin trials](../progressive-web-apps-chromium/how-to/origin-trials.md) in the Progressive Web Apps (PWA) docs.
-* [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials) - Microsoft.com.
-* [Implementing feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) at MDN.
-* [Get started with origin trials](https://developer.chrome.com/docs/web-platform/origin-trials) - Chrome docs.
+* [Experimental features and origin trials](../progressive-web-apps-chromium/how-to/origin-trials.md) - origin trials for Progressive Web Apps (PWAs).
+* [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials) - Developer.microsoft.com.
 
 Ad Selection API:
-[Sign up for the Ad Selection API](../web-platform/ad-selection-api.md)
-   [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) - portal at Github.io, for the Ad Selection API origin trial only.
+* [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md)
+   * [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) - portal at Github.io, for the Ad Selection API origin trial only.
+
+External:
+* [Implementing feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) - MDN.
+* [Get started with origin trials](https://developer.chrome.com/docs/web-platform/origin-trials) - Chrome docs.<!-- not in article body -->
