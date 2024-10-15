@@ -108,7 +108,7 @@ To renew an origin trial token that has expired or is about to expire:
 
 1. Click **Renew**.  A fresh token is sent to you.
 
-1. Copy the new token and use it on your site; see [How to use an origin trial token](#how-to-use-an-origin-trial-token), above.
+1. Copy the new token and use it on your site; see [How to use an origin trial token](#how-to-use-the-origin-trial-token), above.
 
 
 <!-- ====================================================================== -->
@@ -166,7 +166,7 @@ If an experiment ends early, the feature team that owns the origin trial sends e
 <!-- ====================================================================== -->
 ## Opting out of an origin trial experiment
 
-To opt out of an experiment (origin trial) that you're enrolled in, remove the origin trial token from the `<meta>` tag or from the server response headers, shown in [How to use an origin trial token](#how-to-use-an-origin-trial-token), above.
+To opt out of an experiment (origin trial) that you're enrolled in, remove the origin trial token from the `<meta>` tag or from the server response headers, shown in [How to use an origin trial token](#how-to-use-the-origin-trial-token), above.
 
 
 <!-- ====================================================================== -->
