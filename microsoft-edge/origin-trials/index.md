@@ -117,9 +117,9 @@ Origin trial tokens expire in 6 weeks, by default<!-- todo: strike ", by default
 
 To renew an origin trial token:
 
-1. Go to [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials) - Developer.microsoft.com.
+1. Go to [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
-   (For the Ad Selection API, instead see [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md).)
+   (For the Ad Selection API origin trial, instead see [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md).)<!-- todo: how renew token for Ad Selection API? -->
 
 1. In the **My Registered Trials** section, select an origin trial.
 
@@ -155,35 +155,24 @@ If an experiment ends early, the feature team that owns the origin trial sends e
 
 
 <!-- ====================================================================== -->
-## Submit feedback about an origin trial
+## Provide feedback about an origin trial
 
-Please provide feedback about origin trials that you participate in.
+Please provide feedback about the experimental feature.  The **Issues** tab of the feature's GitHub repo allows public discourse about the usability and stability of the feature.
 
-
-<!-- ------------------------------ -->
-#### Submit private feedback
-
-To submit private feedback about an origin trial to the Microsoft Edge feature team that owns the origin trial:
+To provide feedback about an origin trial:
 
 1. Go to [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
 1. Select an active trial.
 
-1. Click the **Feedback** button.
+1. Click the **Feedback** button.  The **Issues** tab of the product's GitHub repo opens.
+
+1. View the issues.
+
+1. If a new issue is needed, click the **New issue** button.
 
 
-<!-- ------------------------------ -->
-#### Submit public feedback
-
-The GitHub Issues UI allows public discourse about ergonomics and stability of a feature.
-
-To provide public feedback for an origin trial:
-
-1. Go to [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
-
-1. Select an active trial.
-
-1. Click the **Issues** button next to the registration button for the origin trial.
+For the Ad Selection API origin trial, instead go to the old [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) portal at Github.io, and then in the row for the **Ad Selection API** origin trial, click the **issues** button.  Submit a new issue in the feature's repo, or click the **Issues** tab to view the issues.
 
 
 <!-- ====================================================================== -->
