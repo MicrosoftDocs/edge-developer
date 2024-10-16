@@ -106,7 +106,7 @@ Replace `EXAMPLE_TOKEN` by your token.
 <!-- ------------------------------ -->
 #### Perform feature detection, and provide graceful fallback
 
-In your website code, perform feature detection.  For best practices for feature detection, see [Implementing feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) at MDN.
+In your website code, perform feature detection.  See [Implementing feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) at MDN.
 
 In your website code, provide graceful fallback mechanisms in case the origin-trial token expires, or in case the Microsoft Edge feature team ends the origin trial.  Treat origin trials as experimental.
 
