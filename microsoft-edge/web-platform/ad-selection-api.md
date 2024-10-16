@@ -170,14 +170,16 @@ Each image defines one service.  Some images don't contain UDFs, and consist ent
 
 Microsoft provides an image for each service, which can be deployed on a cloud provider.  These are the public images that must be used for deployment.  Only official images from Microsoft are able to run private auctions.
 
-Images for sellers:
-* [Ad Selection Seller Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
-* [Ad Selection Auction Service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
-
-Images for buyers:
-* [Ad Selection Buyer Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
-* [Ad Selection Bidding Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
-* [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
+Images for deployment:
+* Sellers
+   * [Ad Selection Seller Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
+   * [Ad Selection Auction Service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
+* Buyers
+   * [Ad Selection Buyer Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
+   * [Ad Selection Bidding Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
+   * [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
+* Sellers and buyers
+   * [Ad Selection Key Value Service](https://mcr.microsoft.com/product/ad-selection/azure/key-value-service/)
 
 
 <!-- ------------------------------ -->
@@ -284,6 +286,8 @@ Images for deployment:
    * [Ad Selection Buyer Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
    * [Ad Selection Bidding Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
    * [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
+* Sellers and buyers
+   * [Ad Selection Key Value Service](https://mcr.microsoft.com/product/ad-selection/azure/key-value-service/)
 
 Deployment scripts:
 * [Terraform deployment scripts](https://go.microsoft.com/fwlink/?linkid=2290115)
