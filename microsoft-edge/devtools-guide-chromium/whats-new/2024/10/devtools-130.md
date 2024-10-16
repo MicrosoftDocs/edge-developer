@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 130)
-description: "Unique breakpoint icons. Fixed CSS selector stats Copy table. Added Activity Bar icons. Fixed Security tool icons and device emulation. And more."
+description: "New Detached elements profile in Memory tool. Improved names of plain JavaScript objects in heap snapshots. Create a collection or environment in Network Console. Bug fixes for icons. Fixed icon alignment in vertical Activity Bar. Removed circle shadow on hover. Performance tool icon shows warning when throttled. Warning message icon and expand button meets luminosity ratio. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -18,7 +18,7 @@ ms.date: 10/17/2024
 
 <!-- Subtitle: Detached elements helps you fix memory leaks due to detached DOM elements.-->
 
-The **Memory** tool has a new profile type called Detached elements which shows detached objects that are retained by a JavaScript reference. 
+The **Memory** tool has a new profile type called **Detached elements**, which shows detached objects that are retained by a JavaScript reference:
 
 ![Detached elements profile type](./devtools-130-images/detached-elements-profile-type.png)
 
@@ -32,26 +32,29 @@ This shows a view of the detached nodes to help you identify memory leaks on you
 
 <!-- Plain JavaScript objects are named, categorized, and searchable based on the properties they contain.-->
 
-To help differentiate plain JavaScript objects in the `Object` category, they are now named and categorized based on the properties they contain. These names are also searchable if you press Ctrl+F. 
+To help differentiate plain JavaScript objects in the **Object** category, they are now named and categorized based on the properties they contain.  These names are also searchable if you press **Ctrl+F**.
+
 
 <!-- ====================================================================== -->
 ## Create a collection or environment in Network Console is working again
 
 <!-- Subtitle: Use collections and environments to manage API requests and its values and variables. -->
 
-Previously, in the **Network Console**, when you tried to create a new collection or environment, it was unreponsonsive and wouldn't save after pressing "Enter". This bug is fixed and functionality has been restored.
+Previously, in the **Network Console**, when you tried to create a new collection or environment, it was unresponsive and wouldn't save after pressing **Enter**.  This bug is fixed and functionality has been restored.
+
 ![Network Console collection and environment](./devtools-130-images/create-collection-environment.png)
 
 
 <!-- ====================================================================== -->
 ## Bug fixes for icons
 
-<!-- Subtitle: -->
+<!-- Subtitle: todo -->
+
 
 <!-- ------------------------------ -->
 #### Fixed icon alignment in the vertical Activity Bar
 
-When the Activity Bar was vertical, the icons were left-aligned:
+When the **Activity Bar** was vertical, the icons were left-aligned:
 
 ![Broken activity bar icons](./devtools-130-images/misaligned-icons.png)
 
@@ -63,11 +66,12 @@ This has been fixed:
 <!-- ------------------------------ -->
 #### Fixed double shadows that appeared on hover
 
-Many icons in the Activity Bar and other toolbars showed an overlapping circle and square shadow on hover:
+Many icons in the **Activity Bar** and other toolbars showed an overlapping circle and square shadow when you hovered over them:
 
 ![Double shadow on icon](./devtools-130-images/double-shadow-icon.png)
 
-The double shadow has been removed and only shows the square shadow:
+The double shadow has been removed, and the icon only shows the square shadow when you hover over it:
+
 ![Single shadow on icon](./devtools-130-images/single-shadow-icon.png)
 
 
@@ -77,12 +81,13 @@ The double shadow has been removed and only shows the square shadow:
 When throttling is enabled, a warning icon is displayed in the **Performance** tab of the toolbar to help developers know that performance is impacted by throttling. 
 ![Performance tab warning icon](./devtools-130-images/performance-warning-icon.png)
 
+
 <!-- ====================================================================== -->
 ## Accessibility bug fix: Warning message icon and expand button meets standard luminosity ratio 
 
 <!-- Subtitle: The warning icon and expand button on warning messages in the Console now meet the standard luminosity ratio of 3:1.-->
 
-The warning icon and expand button on warning messages in the **Console** failed to meet the standard luminosity ratio of 3:1. This has now been fixed.
+The warning icon and expand button on warning messages in the **Console** failed to meet the standard luminosity ratio of 3:1.  This has now been fixed.
 
 
 <!-- ====================================================================== -->
@@ -90,13 +95,32 @@ The warning icon and expand button on warning messages in the **Console** failed
 
 Microsoft Edge 130 also includes the following updates from the Chromium project:
 
+* [Network panel improvements](https://developer.chrome.com/blog/new-in-devtools-130#network)
+   * [Network filters reimagined](https://developer.chrome.com/blog/new-in-devtools-130#network-filters)
+   * [HAR exports now exclude sensitive data by default](https://developer.chrome.com/blog/new-in-devtools-130#har)
+* [Elements panel improvements](https://developer.chrome.com/blog/new-in-devtools-130#elements)
+   * [Autocomplete values for text-emphasis-* properties](https://developer.chrome.com/blog/new-in-devtools-130#autocomplete)
+   * [Scroll overflows marked with a badge](https://developer.chrome.com/blog/new-in-devtools-130#scroll-badge)
+   * [Bare declarations after nested rules don't "shift up"](https://developer.chrome.com/blog/new-in-devtools-130#css-nesting)
+* [Performance panel improvements](https://developer.chrome.com/blog/new-in-devtools-130#perf)
+   * [Recommendations in live metrics](https://developer.chrome.com/blog/new-in-devtools-130#live-metrics-recommendations)
+   * [Navigate breadcrumbs](https://developer.chrome.com/blog/new-in-devtools-130#breadcrumbs)
+* [Memory panel improvements](https://developer.chrome.com/blog/new-in-devtools-130#memory)
+   * [New 'Detached elements' profile](https://developer.chrome.com/blog/new-in-devtools-130#detached-elements)
+   * [Improved naming of plain JS objects](https://developer.chrome.com/blog/new-in-devtools-130#object-names)
+* [Turn off dynamic theming](https://developer.chrome.com/blog/new-in-devtools-130#dynamic-theming)
+* [Chrome Experiment: Process sharing](https://developer.chrome.com/blog/new-in-devtools-130#process-sharing)
+* [Lighthouse 12.2.1](https://developer.chrome.com/blog/new-in-devtools-130#lighthouse)
+* [Miscellaneous higlhlights](https://developer.chrome.com/blog/new-in-devtools-130#misc)
+<!-- todo: maybe remove some links -->
+
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 129)](https://developer.chrome.com/blog/new-in-devtools-129) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 130)](https://developer.chrome.com/blog/new-in-devtools-130) and is authored by [Sofia Emelianova](https://developers.google.com/web/resources/contributors) (Senior Technical Writer working on Chrome DevTools at Google). -->
 
 
 <!-- ====================================================================== -->
