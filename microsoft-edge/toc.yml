@@ -1256,38 +1256,6 @@
           href: webview2/how-to/machine-setup.md
 
 # -----------------------------------------------------------------------------
-# Getting Started tutorials
-        - name: Getting Started tutorials
-          items:
-            - name: Getting Started tutorials
-              href: webview2/get-started/get-started.md
-              displayName: GettingStartedGuides  # repo dir name
-
-            - name: WinUI 2 (UWP)
-              href: webview2/get-started/winui2.md
-              displayName: WinUI2_GettingStarted, Get started with WebView2 in WinUI 2 (UWP) apps  # repo dir name  # top-of-page title
-
-            - name: WinUI 3 (Windows App SDK)
-              href: webview2/get-started/winui.md
-              displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
-
-            - name: WPF
-              href: webview2/get-started/wpf.md
-              displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
-
-            - name: WinForms
-              href: webview2/get-started/winforms.md
-              displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
-
-            - name: Win32
-              href: webview2/get-started/win32.md
-              displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
-
-            - name: HoloLens 2
-              href: webview2/get-started/hololens2.md
-              displayName: HoloLens2_GettingStarted, Get started with WebView2 in HoloLens 2 Unity apps (Preview)  # repo dir name  # top-of-page title
-
-# -----------------------------------------------------------------------------
 # Sample apps
         - name: Sample apps
           items:
@@ -1326,6 +1294,38 @@
             - name: WinForms sample app
               href: webview2/samples/webview2windowsformsbrowser.md
               displayName: WebView2WindowsFormsBrowser  # repo dir name
+
+# -----------------------------------------------------------------------------
+# Getting Started tutorials
+        - name: Getting Started tutorials
+          items:
+            - name: Getting Started tutorials
+              href: webview2/get-started/get-started.md
+              displayName: GettingStartedGuides  # repo dir name
+
+            - name: WinUI 2 (UWP)
+              href: webview2/get-started/winui2.md
+              displayName: WinUI2_GettingStarted, Get started with WebView2 in WinUI 2 (UWP) apps  # repo dir name  # top-of-page title
+
+            - name: WinUI 3 (Windows App SDK)
+              href: webview2/get-started/winui.md
+              displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
+
+            - name: WPF
+              href: webview2/get-started/wpf.md
+              displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
+
+            - name: WinForms
+              href: webview2/get-started/winforms.md
+              displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
+
+            - name: Win32
+              href: webview2/get-started/win32.md
+              displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
+
+            - name: HoloLens 2
+              href: webview2/get-started/hololens2.md
+              displayName: HoloLens2_GettingStarted, Get started with WebView2 in HoloLens 2 Unity apps (Preview)  # repo dir name  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: "Main classes for WebView2: Environment, Controller, and Core"
