@@ -205,7 +205,7 @@ Select a resource to learn more information about it.
 
    Tip: When a file is minified, select the **Format** (![Format](./index-images/format-icon.png)) button at the bottom of the **Response** panel to re-format the contents of the file for readability.
 
-   For example, if the response contains minified JSON data, click the **Format** button to re-format the JSON syntax so that each object property is on its own line. You can also use the **JSON viewer** to view formatted and highlighted JSON responses in a browser tab. See [View formatted JSON](../json-viewer/json-viewer.md).
+   For example, if the response contains minified JSON data, click the **Format** button to re-format the JSON syntax so that each object property is on its own line. You can also use the **JSON viewer** to view formatted and highlighted JSON responses in a browser tab. See [View formatted JSON responses or files](../json-viewer/json-viewer.md).
 
 1. Select the **Timing** panel.  A breakdown of the network activity for the resource is displayed:
 
@@ -250,7 +250,8 @@ The **Filters** toolbar should be turned on by default.  If the **Filters** tool
 ![The Filters toolbar](./index-images/filter-empty.png)
 
 
-### Filter by string, regular expression, or property
+<!-- ------------------------------ -->
+#### Filter by string, regular expression, or property
 
 The **Filter** text box supports many different types of filtering.
 
@@ -269,7 +270,8 @@ The **Filter** text box supports many different types of filtering.
 1. Clear the **Filter** text box of any text.
 
 
-### Filter by resource type
+<!-- ------------------------------ -->
+#### Filter by resource type
 
 To focus in on a certain type of file, such as stylesheets:
 

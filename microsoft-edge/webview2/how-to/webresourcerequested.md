@@ -314,7 +314,8 @@ The `NavigateWithWebResourceRequest` method allows your host app to navigate the
 from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateWithWebResourceRequest.md#examples -->
 
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
+
 ##### [.NET](#tab/dotnet)
 
 ```csharp
@@ -337,7 +338,7 @@ environment.CreateWebResourceRequest("https://www.w3schools.com/action_page.php"
 webView.CoreWebView2.NavigateWithWebResourceRequest(webResourceRequest);
 ```
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
 
 ##### [Win32](#tab/win32)
 
@@ -384,7 +385,7 @@ The following code demonstrates how the `WebResourceResponseReceived` event can 
 <!-- from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WebResourceResponseReceived.md#examples -->
 
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
 
 ##### [.NET](#tab/dotnet)
 
@@ -430,7 +431,7 @@ private async void WebView_WebResourceResponseReceived(object sender, CoreWebVie
 }
 ```
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
 
 ##### [Win32](#tab/win32)
 
@@ -479,7 +480,7 @@ m_webView->add_WebResourceResponseReceived(
 <!-- ====================================================================== -->
 ## API Reference overview
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
 
 ##### [.NET](#tab/dotnet)
 
@@ -521,7 +522,7 @@ m_webView->add_WebResourceResponseReceived(
    * `StatusCode`
    * `GetContentAsync`
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
 
 ##### [Win32](#tab/win32)
 

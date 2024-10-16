@@ -161,8 +161,8 @@ For more information, see [Microsoft Edge DevTools extension for Visual Studio C
 The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
-<!-- ====================================================================== -->
-### New WebAuthn tool
+<!-- ------------------------------ -->
+#### New WebAuthn tool
 
 In earlier versions of Microsoft Edge, there was no native WebAuthn debugging support.  You needed physical authenticators to test your web application with the [Web Authentication API](https://w3c.github.io/webauthn).  With the new **WebAuthn** tool, you can do the following without the use of any physical authenticators:
 
@@ -183,15 +183,15 @@ The **WebAuthn** tool:
 For more information, see [Emulate authenticators and debug WebAuthn](../../../webauthn/index.md).
 
 
-<!-- ====================================================================== -->
-### Elements tool updates
+<!-- ------------------------------ -->
+#### Elements tool updates
 
 See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
-<!-- ====================================================================== -->
-#### View the Computed sidebar pane in the Styles pane
+<!-- ---------- -->
+###### View the Computed sidebar pane in the Styles pane
 
 Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To display or hide the **Computed** pane within the **Styles** pane, click the **Show Computed Styles sidebar** (!['Show Computed Styles sidebar' icon](./devtools-images/show-computed-styles-sidebar-icon.png)) button.
 
@@ -210,8 +210,8 @@ See also:
 * [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
 
 
-<!-- ====================================================================== -->
-#### Grouping CSS properties in the Computed pane
+<!-- ---------- -->
+###### Grouping CSS properties in the Computed pane
 
 To view your applied CSS with less scrolling, group the CSS properties by categories in the **Computed** pane.  You can also selectively focus on a set of related properties while you inspect your CSS.  From the **Elements** tool, select an element.  To group (or ungroup) the CSS properties, toggle the **Group** checkbox.
 
@@ -224,8 +224,8 @@ See also:
 * [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
 
 
-<!-- ====================================================================== -->
-### Lighthouse 6.4 in the Lighthouse tool
+<!-- ------------------------------ -->
+#### Lighthouse 6.4 in the Lighthouse tool
 
 The **Lighthouse** tool is now running Lighthouse 6.4.  For a full list of changes, see the [Lighthouse release notes](https://github.com/GoogleChrome/lighthouse/releases/v6.4.1).  For real-time updates on this feature in the Chromium open-source project, see Issue [#772558](https://crbug.com/772558).
 
@@ -233,8 +233,8 @@ See also:
 * [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
-<!-- ====================================================================== -->
-### performance.mark() events in the Timings section
+<!-- ------------------------------ -->
+#### performance.mark() events in the Timings section
 
 The **Timings section** of a recording in the [Performance](../../../evaluate-performance/reference.md) tool now marks `performance.mark()` <!--[performance mark](https://jec.fyi/demo/perf-mark) -->events.  To try this feature and measure the performance of your JavaScript code, add `performance.mark()` events to your code.
 
@@ -253,8 +253,8 @@ Then, open the [Performance](../../../evaluate-performance/reference.md) tool an
 ![performance.mark events](./devtools-images/perf-mark.png)
 
 
-<!-- ====================================================================== -->
-### New resource-type and url filters in the Network tool
+<!-- ------------------------------ -->
+#### New resource-type and url filters in the Network tool
 
 Use the new `resource-type` and `url` keywords in the **Network** tool to filter network requests.  For example, use `resource-type:image` to focus on the network requests that are images:
 
@@ -265,14 +265,14 @@ To discover more special keywords such as `resource-type` and `url`, see [filter
 For real-time updates on this feature in the Chromium open-source project, see Issues [#1121141](https://crbug.com/1121141) and [#1104188](https://crbug.com/1104188).
 
 
-<!-- ====================================================================== -->
-### Frame details view updates
+<!-- ------------------------------ -->
+#### Frame details view updates
 
 In the **Application** tool, in the list of pages on the left, the bottom page is **Frames**, which often lists a frame named **top**.
 
 
-<!-- ====================================================================== -->
-#### Display COEP and COOP reporting to endpoint
+<!-- ---------- -->
+###### Display COEP and COOP reporting to endpoint
 
 In the **Application** tool, in the list of pages on the left, the bottom page is **Frames**, which often lists a frame named **top**.  Select the frame to view the frame detail view, which includes the **Security & Isolation** section.
 
@@ -287,8 +287,8 @@ See also:
 * [The Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-#### Display COEP and COOP report-only mode
+<!-- ---------- -->
+###### Display COEP and COOP report-only mode
 
 In the **Application** tool, in the list of pages on the left, the bottom page is **Frames**, which often lists a frame named **top**.  Select the frame to view the frame detail view, which includes the **Security & Isolation** section.
 
@@ -303,8 +303,8 @@ See also:
 * [The Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-### View and fix color contrast issues in the CSS Overview tool
+<!-- ------------------------------ -->
+#### View and fix color contrast issues in the CSS Overview tool
 
 The **CSS Overview** tool now displays a list of elements on your page that have color contrast issues.  The [CSS Overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page has an example of a color contrast issue.
 
@@ -320,7 +320,7 @@ See also:
 For history, in the Chromium open-source project, see Issue [#1120316](https://crbug.com/1120316).
 
 
-<!-- ====================================================================== -->
+<!-- ------------------------------ -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-87) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).

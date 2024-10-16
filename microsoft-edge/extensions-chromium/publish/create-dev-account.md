@@ -31,12 +31,11 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 
 
 <!-- ====================================================================== -->
-## Before you begin
+## Create a Microsoft account 
 
 To submit an extension to the Microsoft Edge Add-ons website, you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  To register for the Microsoft Edge program, you need a Microsoft account (MSA).  If you don't have a Microsoft account (MSA), create one.  One way to create a Microsoft account (MSA) is to use your existing GitHub account to sign in to  Partner Center. Follow the prompts displayed in the dialogs to automatically create a Microsoft account (MSA).
 
-> [!NOTE]
-> There is no registration fee for submitting extensions to the Microsoft Edge program.
+There is no registration fee for submitting extensions to the Microsoft Edge program.
 
 If you don't have a Partner Center account, or you have a Partner Center account but its Primary Owner isn't a Microsoft account (MSA), you must either:
 *  Use an existing Microsoft account (MSA) to register with the Microsoft Edge program.
@@ -94,11 +93,15 @@ The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/das
 > [!IMPORTANT]
 > After enrollment, you aren't able to change the value of this field.
 
-##### Individual account
+
+<!-- ---------- -->
+###### Individual account
 
 An individual account is appropriate for a developer not associated with a company.  The account verification process is shorter and involves verifying that the publisher display name is available.
 
-##### Company account
+
+<!-- ---------- -->
+###### Company account
 
 A company account is associated with an organization or business.  The account verification process is longer and involves confirmation that you're authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
 

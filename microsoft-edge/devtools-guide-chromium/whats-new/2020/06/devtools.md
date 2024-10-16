@@ -30,8 +30,8 @@ ms.date: 05/04/2021
 ## Announcements from the Microsoft Edge DevTools team
 
 
-<!-- ====================================================================== -->
-### CSS grid debugging features
+<!-- ------------------------------ -->
+#### CSS grid debugging features
 
 The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  You can now display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.
 
@@ -47,8 +47,8 @@ See also:
 * [Inspect CSS Grid](../../../css/grid.md)
 
 
-<!-- ====================================================================== -->
-### Edit and Replay requests with the Network Console
+<!-- ------------------------------ -->
+#### Edit and Replay requests with the Network Console
 
 You can now use **Edit and Replay** on requests in the [Network Log](../../../network/index.md#log-network-activity) using the **Network Console**.  Open the [Network Log](../../../network/index.md#log-network-activity), right-click, and then select **Edit and Replay**:
 
@@ -67,8 +67,8 @@ Update: This feature has been released and is no longer experimental.<!-- To ena
 Chromium issue [#1093687](https://crbug.com/1093687)
 
 
-<!-- ====================================================================== -->
-### Service worker respondWith events in the Timing tab
+<!-- ------------------------------ -->
+#### Service worker respondWith events in the Timing tab
 
 The **Timing** tab of the **Network** tool now includes `respondWith` service worker events.  The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.
 
@@ -85,8 +85,8 @@ See also:
 * [Display the timing breakdown of a request](../../../network/reference.md#display-the-timing-breakdown-of-a-request) in _Network features reference_.
 
 
-<!-- ====================================================================== -->
-### webhint feedback in the Issues panel
+<!-- ------------------------------ -->
+#### webhint feedback in the Issues panel
 
 ![Experimental feature](./devtools-images/experimental-tag.png)<!-- valid 05/13/2022 -->
 
@@ -103,8 +103,8 @@ See also:
 * [Enable webhint](../../../experimental-features/index.md#enable-webhint) in _Experimental features in Microsoft Edge DevTools_
 
 
-<!-- ====================================================================== -->
-### Move tools between panels
+<!-- ------------------------------ -->
+#### Move tools between panels
 
 Previously, tools such as **Elements** and **Network** could only be opened in the main (top) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** could only be opened in the **Drawer** (now **Quick View** panel) at the bottom of DevTools.  You can now customize your DevTools layout by moving tools between the top and bottom panels.
 
@@ -118,8 +118,8 @@ See also:
 * [About Activity Bar and Quick View tools](../../../overview.md#about-activity-bar-and-quick-view-tools) in _Overview of DevTools_.
 
 
-<!-- ====================================================================== -->
-### Improved Initiator tooltip in the Network panel
+<!-- ------------------------------ -->
+#### Improved Initiator tooltip in the Network panel
 
 In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log](../../../network/index.md#log-network-activity) displayed with a horizontal scrollbar.  You were only able to display the call stack that initiated the request by scrolling horizontally in the tooltip.
 
@@ -138,8 +138,8 @@ Chromium issue [#1069404](https://crbug.com/1069404)
 The following sections announce additional features available in Microsoft Edge 85 that were contributed to the open source Chromium project.
 
 
-<!-- ====================================================================== -->
-### Style editing for CSS-in-JS frameworks
+<!-- ------------------------------ -->
+#### Style editing for CSS-in-JS frameworks
 
 The **Styles** pane now has better support for editing styles that were created with the [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom) APIs.  Many CSS-in-JS frameworks and libraries use the CSSOM APIs under the hood to construct styles.
 
@@ -154,8 +154,8 @@ Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/z
 Chromium issue [#946975](https://crbug.com/946975)
 
 
-<!-- ====================================================================== -->
-### Lighthouse 6 in the Lighthouse panel
+<!-- ------------------------------ -->
+#### Lighthouse 6 in the Lighthouse panel
 
 The **Lighthouse** panel is now running Lighthouse 6.  For a full list of all changes, see [v6.0.0 release notes](https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0).
 
@@ -169,7 +169,8 @@ See also:
 * [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
-#### First Meaningful Paint deprecation
+<!-- ---------- -->
+###### First Meaningful Paint deprecation
 
 First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, see [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
 
@@ -182,8 +183,8 @@ See also:
 * [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
-<!-- ====================================================================== -->
-### Support for new JavaScript features
+<!-- ------------------------------ -->
+#### Support for new JavaScript features
 
 DevTools now has better support for some of the latest JavaScript language features:
 
@@ -200,8 +201,8 @@ See also:
 * [JavaScript debugging features](../../../javascript/reference.md)
 
 
-<!-- ====================================================================== -->
-### New app shortcut warnings in the Manifest pane
+<!-- ------------------------------ -->
+#### New app shortcut warnings in the Manifest pane
 
 In the **Application** tool, **App shortcuts** help users quickly start common or recommended tasks within a web app.
 
@@ -220,8 +221,8 @@ See also:
 * [The Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-### Consistent display of the Computed pane
+<!-- ------------------------------ -->
+#### Consistent display of the Computed pane
 
 The **Computed** pane in the **Elements** tool is now displayed consistently as a pane across all viewport sizes.  Previously, the **Computed** pane merged inside of the **Styles** pane when DevTools was narrow.
 
@@ -233,8 +234,8 @@ See also:
 * [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
 
 
-<!-- ====================================================================== -->
-### Bytecode offsets for WebAssembly files
+<!-- ------------------------------ -->
+#### Bytecode offsets for WebAssembly files
 
 <!-- todo: in what tool? -->DevTools now uses bytecode offsets for displaying line numbers of Wasm disassembly.  The line numbers make it clearer that you are looking at binary data, and is more consistent with how the Wasm runtime references locations.
 
@@ -245,8 +246,8 @@ See also:
 <!-- todo: correct tool? -->
 
 
-<!-- ====================================================================== -->
-### Line-wise copy and cut in Sources Panel
+<!-- ------------------------------ -->
+#### Line-wise copy and cut in Sources Panel
 
 When performing copy or cut with no selection in the [Sources panel editor](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files), DevTools copies or cuts the current line of content.
 
@@ -255,10 +256,12 @@ When performing copy or cut with no selection in the [Sources panel editor](../.
 Chromium issue [#800028](https://crbug.com/800028)
 
 
-<!-- ====================================================================== -->
-### Console Settings updates
+<!-- ------------------------------ -->
+#### Console Settings updates
 
-#### Ungroup same console messages
+
+<!-- ---------- -->
+###### Ungroup same console messages
 
 The **Group similar** toggle in Console Settings now applies to duplicate messages.  Previously it just applied to similar messages.
 
@@ -274,8 +277,8 @@ See also:
 * [Turn off message grouping](../../../console/reference.md#turn-off-message-grouping) in _Console features reference_
 
 
-<!-- ====================================================================== -->
-### Persisting Selected context only settings
+<!-- ------------------------------ -->
+#### Persisting Selected context only settings
 
 The **Selected context only** settings in Console Settings is now persisted.  Previously the settings were reset every time you closed and reopened DevTools.  The change makes the setting behavior consistent with other Console Settings options.
 
@@ -287,10 +290,12 @@ See also:
 * [Filter out messages from different JavaScript contexts](../../../console/reference.md#filter-out-messages-from-different-javascript-contexts) - in _Console features reference_
 
 
-<!-- ====================================================================== -->
-### Performance panel updates
+<!-- ------------------------------ -->
+#### Performance panel updates
 
-#### JavaScript compilation cache information in **Performance** tool
+
+<!-- ---------- -->
+###### JavaScript compilation cache information in **Performance** tool
 
 [JavaScript compilation cache information](https://v8.dev/blog/code-caching-for-devs) is now always displayed in the **Summary** panel of the **Performance** tool.  Previously, DevTools did not show anything related to code caching if code caching did not happen.
 
@@ -302,8 +307,8 @@ See also:
 * [Performance features reference](../../../evaluate-performance/reference.md)
 
 
-<!-- ====================================================================== -->
-#### Navigation timing alignment in the Performance panel
+<!-- ---------- -->
+###### Navigation timing alignment in the Performance panel
 
 Previously, the **Performance** panel showed times in the rulers based on when the recording started.  The timing has now changed for recordings where the user navigates.  DevTools now shows ruler times relative to the navigation, instead of when the recording started.
 
@@ -317,8 +322,8 @@ See also:
 * [Performance features reference](../../../evaluate-performance/reference.md)
 
 
-<!-- ====================================================================== -->
-### New icons for breakpoints, conditional breakpoints, and logpoints
+<!-- ------------------------------ -->
+#### New icons for breakpoints, conditional breakpoints, and logpoints
 
 Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead of a red circle.
 

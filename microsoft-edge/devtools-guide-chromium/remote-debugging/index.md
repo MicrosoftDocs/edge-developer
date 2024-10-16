@@ -65,7 +65,9 @@ The workflow below works for most users.  For more help, see [Troubleshooting: D
    ![The Remote Devices tab has successfully detected an unknown device that is pending authorization](../media/remote-debugging--unknown-device.png)
    -->
 
-### Troubleshooting: DevTools isn't detecting the Android device
+
+<!-- ------------------------------ -->
+#### Troubleshooting: DevTools isn't detecting the Android device
 
 Use the following tips to help you troubleshoot the correct settings for your hardware.
 
@@ -105,22 +107,27 @@ If you find a solution that isn't mentioned on this page or in [DevTools Devices
 The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.
 -->
 
-### More actions: focus, refresh, or close a tab
+
+<!-- ------------------------------ -->
+#### More actions: focus, refresh, or close a tab
 
 Select **focus tab**, **reload**, or **close** next to the tab that you want to focus, refresh, or close.
 
 ![The buttons for focusing, refreshing, or closing a tab](./index-images/remote-debugging-edge-inspect-with-targets-buttons.png)
 
-### Inspect elements
+
+<!-- ------------------------------ -->
+#### Inspect elements
 
 Go to the **Elements** tool of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.
 
 You can also tap an element on your Android device screen to select it in the **Elements** tool.  Click **Select Element** (![Select Element](./index-images/select-element-icon.png)) icon on your DevTools instance, and then select the element on your Android device screen.
 
-> [!NOTE]
-> **Select Element** is disabled after the first selection, so you need to re-enable it every time you want to use this feature.
+**Select Element** is disabled after the first selection, so you need to re-enable it every time you want to use this feature.
 
-### Screencast your Android screen to your development machine
+
+<!-- ------------------------------ -->
+#### Screencast your Android screen to your development machine
 
 Click the **Toggle Screencast** (![Toggle Screencast](./index-images/toggle-screencast-icon.png)) icon to view the content of your Android device in your DevTools instance.
 

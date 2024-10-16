@@ -72,14 +72,14 @@ To open the **Browser Task Manager**, call the `OpenTaskManagerWindow` method.
 
 <!-- ------------------------------ -->
 
-# [C#](#tab/csharp)
+##### [C#](#tab/csharp)
 
 [OpenTaskManagerWindow](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow#microsoft-web-webview2-core-corewebview2-opentaskmanagerwindow)
 
 
 <!-- ------------------------------ -->
 
-# [C++](#tab/cpp)
+##### [C++](#tab/cpp)
 
 [OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)
 

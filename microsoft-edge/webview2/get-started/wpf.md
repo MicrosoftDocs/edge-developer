@@ -15,6 +15,7 @@ This article covers how to set up your development tools and create an initial W
 In this tutorial, you use the **WPF Application** or **WPF App (.NET Framework)** project template to create a WPF app, and then install the WebView2 SDK for the project to add WebView2.
 
 
+<!-- ------------------------------ -->
 #### Completed project
 
 A completed version<!--TODO: what date?--> of this tutorial project is available in the **WebView2Samples** repo:
@@ -65,6 +66,7 @@ Start by creating a basic desktop project that contains a single main window.
 1. Follow the applicable section below.
 
 
+<!-- ------------------------------ -->
 #### Creating a .NET Core/5/6 project
 
 If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise, skip to [Creating a WPF App (.NET Framework) project](#creating-a-wpf-app-net-framework-project).
@@ -110,8 +112,9 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 Skip to [Step 3 - Build and run the initial project without WebView2](#step-3---build-and-run-the-initial-project-without-webview2) below.
 
 
-<!-- project template title: WPF App (.NET Framework) -->
+<!-- ------------------------------ -->
 #### Creating a WPF App (.NET Framework) project
+<!-- project template title: WPF App (.NET Framework) -->
 
 If you are creating a WPF App (.NET Framework) project, do the following steps.  Otherwise, skip to [Step 3 - Build and run the initial project without WebView2](#step-3---build-and-run-the-initial-project-without-webview2).
 
@@ -376,7 +379,9 @@ During webpage navigation, the WebView2 control raises events. The app that host
 
 The above diagram shows the event sequence.  Navigation events start with a new document.
 
-### Success path
+
+<!-- ------------------------------ -->
+#### Success path
 
 A successful path includes the full sequence of events:
 1. Navigation starting.
@@ -388,7 +393,8 @@ A successful path includes the full sequence of events:
 For more information, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
 
-### Failure path
+<!-- ------------------------------ -->
+#### Failure path
 
 If theres a failure, the failure path proceeds directly from navigation starting, to navigation completed, skipping the intervening events.
 
@@ -399,12 +405,14 @@ When an error occurs, the following events are raised, and may depend on navigat
 * `HistoryChanged`
 
 
-### Redirection
+<!-- ------------------------------ -->
+#### Redirection
 
 If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
 
 
-### Example demonstrating navigation events
+<!-- ------------------------------ -->
+#### Example demonstrating navigation events
 
 To demonstrate how to use the events, register a handler for `NavigationStarting` that cancels any non-HTTPS requests, as follows.
 
