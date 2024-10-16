@@ -1,5 +1,5 @@
 ---
-title: View formatted JSON
+title: View formatted JSON responses or files
 description: How to use the JSON viewer to view formatted and highlighted JSON responses in a browser tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 04/08/2024
 ---
-# View formatted JSON
+# View formatted JSON responses or files
 
 Use the **JSON viewer** to automatically format and syntax highlight JSON responses and files in browser tabs.
 

@@ -1,13 +1,13 @@
 ---
-title: Develop for the sidebar
-description: Learn to develop experiences for the sidebar in Microsoft Edge, by either installing a Progressive Web App, or using the extension sidebar API.
+title: Develop experiences for the sidebar in Microsoft Edge
+description: Develop experiences for the sidebar in Microsoft Edge, by either installing a Progressive Web App, or using the extension sidebar API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.date: 08/04/2023
 ---
-# Develop for the sidebar
+# Develop experiences for the sidebar in Microsoft Edge
 
 The sidebar in Microsoft Edge is a persistent pane located on the side of the browser, which coexists with the primary content of the browser. The sidebar allows users to easily access popular websites and utilities alongside their browser tabs. The content in the sidebar augments the user's primary task by enabling side-by-side browsing and minimizing the need to switch contexts between browser tabs. By using the sidebar in Microsoft Edge, users can access the productivity tools they need while staying in their workflow.
 
