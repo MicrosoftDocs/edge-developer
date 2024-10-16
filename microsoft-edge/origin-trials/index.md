@@ -60,8 +60,11 @@ To register for an origin trial:
    Trailing paths and query parameters aren't supported.  If a URI is entered that has a trailing path or a query parameter, such as `https://example.com/path/new-feature`, the root domain (such as `https://example.com`) or subdomain will be registered, ignoring any trailing path or query parameters.
 
 1. Set the **Enable token for subdomains?** toggle.
+
    * To enable using the origin trial at a domain (such as `https://example.com`) without supporting its subdomains (such as `https://beta.example.com`), make sure the **Enable token for subdomains?** toggle is turned off.
+
    * To enable using the origin trial only at a specific subdomain (such as `https://beta.example.com`), make sure the **Enable token for subdomains?** toggle is turned off.
+
    * To enable using the origin trial at a domain (such as `https://example.com`) and its subdomains (such as `https://beta.example.com`), turn on the **Enable token for subdomains?** toggle.
 
 1. Click the **Submit** button.
