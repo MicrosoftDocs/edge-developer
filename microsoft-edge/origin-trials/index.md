@@ -9,6 +9,9 @@ ms.date: 10/15/2024
 ---
 # Use origin trials in Microsoft Edge
 
+<!-- ====================================================================== 
+## Introduction -->
+
 Use origin trials to try out experimental APIs on your own live site for a limited period of time.  When using origin trials, users of Microsoft Edge that visit your site can run code that uses experimental APIs.
 
 To see a list of the available origin trials and register your origin to try out any of the origin trials, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).  To assess the suitability of using the experimental APIs on your website, check the minimum version requirements for Microsoft Edge, and check the trial expiration date.
@@ -17,7 +20,7 @@ Provide feedback to browser feature engineers and the web standards community ab
 
 
 <!-- ------------------------------ -->
-#### How origin trials work
+#### How the origin trial token works
 
 The origin-trials mechanism allows a user of your webpage to use the origin trial's experimental feature API in their Microsoft Edge browser, despite the feature's off-by-default state.  The user's Microsoft Edge browser detects the origin trial's token, and then automatically turns on the browser's feature flag that corresponds to the origin trial for which the token is valid.  The user doesn't need to set any `edge://flags` in Microsoft Edge.
 
@@ -31,8 +34,9 @@ To support using an origin trial's experimental APIs in your website:
 
 
 <!-- ====================================================================== -->
-## Register for an origin trial
-<!-- probably don't change wording of heading, b/c the "Register for an experiment" card at https://developer.microsoft.com/microsoft-edge/origin-trials probably links to this heading/anchor -->
+## Registering for an origin trial
+<!-- fwlink that points to this anchor/ article section heading: pending -->
+<!-- if no fwlink is defined & used at portal: don't change wording of heading, b/c the "Register for an experiment" card at https://developer.microsoft.com/microsoft-edge/origin-trials links to this heading/anchor -->
 
 To register for an origin trial:
 
@@ -77,8 +81,9 @@ To register for an origin trial:
 
 
 <!-- ====================================================================== -->
-## Use the origin trial token at your website
-<!-- probably don't change wording of heading, b/c the "Enable the Origin Trial in your site's code" card at https://developer.microsoft.com/microsoft-edge/origin-trials probably links to this heading/anchor -->
+## Using the origin trial token at your website
+<!-- fwlink that points to this anchor/ article section heading: pending -->
+<!-- if no fwlink is defined & used at portal: don't change wording of heading, b/c the "Enable the Origin Trial in your site's code" card at https://developer.microsoft.com/microsoft-edge/origin-trials links to this heading/anchor -->
 
 Use the token at your website in either of the following ways:
 
@@ -104,27 +109,32 @@ Replace `EXAMPLE_TOKEN` by your token.
 
 
 <!-- ------------------------------ -->
-#### Perform feature detection, and provide graceful fallback
-
-In your website code, perform feature detection.  See [Implementing feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) at MDN.
-
-In your website code, provide graceful fallback mechanisms in case the origin-trial token expires, or in case the Microsoft Edge feature team ends the origin trial.  Treat origin trials as experimental.
-
-
-<!-- ------------------------------ -->
-#### Test the origin-trial feature at `localhost`
-
-To test an origin-trial feature at `localhost`, go to `edge://flags` and turn on the appropriate feature flag.  Microsoft Edge origin trials only support SSL-enabled domains, not `localhost`.
-
-
-<!-- ------------------------------ -->
-#### Opt out of an origin trial experiment
+#### Opting out of an origin trial experiment
 
 To opt out of an experiment (origin trial) that you're enrolled in, remove the origin trial token from the `<meta>` tag or from the server response headers.
 
 
 <!-- ====================================================================== -->
-## Renew an origin trial token
+## Performing feature detection and providing graceful fallback
+
+Treat origin trials as experimental.  As a best practice, in your website code, perform feature detection and provide graceful fallback for these cases:
+* If the experimental feature API isn't available in the user's browser.
+* If the origin-trial token expires.
+* If the Microsoft Edge feature team ends the origin trial.
+
+See [Implementing feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) at MDN.
+
+
+<!-- ====================================================================== -->
+## Testing an origin trial at `localhost`
+
+To test an origin-trial feature at `localhost`, go to `edge://flags` and turn on the appropriate feature flag.
+
+The mechanism that detects and uses Microsoft Edge origin-trial tokens is only supported for SSL-enabled domains, not for `localhost`.
+
+
+<!-- ====================================================================== -->
+## Renewing an origin trial token
 
 Origin trial tokens expire in 6 weeks, by default<!-- todo: strike ", by default"? -->.  When the origin trial token expires, you must renew the token, which means generating a fresh, new token for this origin trial.  You can renew the token before it expires.
 
@@ -168,7 +178,7 @@ If an experiment ends early, the feature team that owns the origin trial sends e
 
 
 <!-- ====================================================================== -->
-## Provide feedback about an origin trial
+## Providing feedback about an origin trial
 
 Please provide feedback about the experimental feature.  The **Issues** tab of the feature's GitHub repo allows public discourse about the usability and stability of the feature.
 
