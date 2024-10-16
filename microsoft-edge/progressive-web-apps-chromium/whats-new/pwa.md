@@ -262,7 +262,7 @@ To have more control over the title bar area that's currently displayed in stand
 
 See [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md).
 
-_2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and is available to all users, so the following no longer applies:_ Register your origin for the **Web App Window Controls Overlay** trial at the Origin Trials Developer Console.
+_2023 update: This feature is no longer in Origin Trial and is available to all users, so the following no longer applies:_ Register your origin for the **Web App Window Controls Overlay** trial at the Origin Trials Developer Console.
 
 _2024 update:_ Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature for a Progressive Web App (PWA), without having to install the PWA.  See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
 
@@ -271,7 +271,7 @@ _2024 update:_ Starting with Microsoft Edge 121, in DevTools, you can simulate t
 
 Developers can now use the experimental feature Web App URL Handlers in origin trial. This feature allows the registration of an installed PWA to open links from other apps that refer to its scope.
 
-_2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and has been removed, so the following no longer applies, and the PWA URL Handlers feature was removed from the Chromium browser engine:_ Register your domain for the **Web App URL Handlers** trial at the Origin Trials Developer Console.
+_2023 update: This feature is no longer in Origin Trial and has been removed, so the following no longer applies, and the PWA URL Handlers feature was removed from the Chromium browser engine:_ Register your domain for the **Web App URL Handlers** trial at the Origin Trials Developer Console.
 
 See also:
 * [Handle links to your Progressive Web App](../how-to/handle-urls.md)
@@ -295,7 +295,7 @@ Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22
 
 You can now register your PWA to handle specific protocols with the host operating system.  Learn more about using protocol handlers with your PWA at [Handle protocols in Progressive Web Apps](../how-to/handle-protocols.md).
 
-_2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and is available to all users, so the following no longer applies:_ The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at the origin trial signup page.
+_2023 update: This feature is no longer in Origin Trial and is available to all users, so the following no longer applies:_ The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at the origin trial signup page.
 
 
 #### Streamlined App Info menu

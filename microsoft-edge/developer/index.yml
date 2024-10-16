@@ -260,16 +260,16 @@ landingContent:
           - text: DevTools Protocol
             url: ../devtools-protocol-chromium/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol-chromium/
 
-          - text: Origin Trials
+          - text: Use origin trials in Microsoft Edge
             url: ../origin-trials/index.md
 
-          - text: Playwright
+          - text: Use Playwright to automate and test in Microsoft Edge
             url: ../playwright/index.md
 
-          - text: Puppeteer
+          - text: Puppeteer overview
             url: ../puppeteer/index.md
 
-          - text: WebDriver
+          - text: Use WebDriver to automate Microsoft Edge
             url: ../webdriver-chromium/index.md
 
           - text: webhint extension for Visual Studio Code

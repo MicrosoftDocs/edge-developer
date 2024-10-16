@@ -16,7 +16,7 @@ Use origin trials to try out experimental APIs on your own live site for a limit
 
 To see a list of the available origin trials and register your origin to try out any of the origin trials, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).  To assess the suitability of using the experimental APIs on your website, check the minimum version requirements for Microsoft Edge, and check the trial expiration date.
 
-Provide feedback to browser feature engineers and the web standards community about the design of the feature's API, your use-cases, or your experience with using the feature's API, by using the **Issues** tab in the browser feature's repo.
+You can provide feedback to browser feature engineers and the web standards community about the design of the feature's API, your use-cases, or your experience with using the feature's API, by using the **Issues** tab in the browser feature's repo.
 
 
 <!-- ------------------------------ -->
