@@ -26,6 +26,9 @@ This shows a view of the detached nodes to help you identify memory leaks on you
 
 ![Detached elements view](./devtools-130-images/detached-nodes.png)
 
+See also:
+* [Debug DOM memory leaks with the Detached Elements feature](../../../memory-problems/dom-leaks.md)
+
 
 <!-- ====================================================================== -->
 ## Improved names of plain JavaScript objects in heap snapshots
@@ -34,15 +37,21 @@ This shows a view of the detached nodes to help you identify memory leaks on you
 
 To help differentiate plain JavaScript objects in the **Object** category, they are now named and categorized based on the properties they contain.  These names are also searchable if you press **Ctrl+F**.
 
+See also:
+* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+
 
 <!-- ====================================================================== -->
 ## Create a collection or environment in Network Console is working again
 
 <!-- Subtitle: Use collections and environments to manage API requests and its values and variables. -->
 
-Previously, in the **Network Console**, when you tried to create a new collection or environment, it was unresponsive and wouldn't save after pressing **Enter**.  This bug is fixed and functionality has been restored.
+Previously, in the **Network Console** tool, when you tried to create a new collection or environment, it was unresponsive and wouldn't save after pressing **Enter**.  This bug is fixed and functionality has been restored.
 
 ![Network Console collection and environment](./devtools-130-images/create-collection-environment.png)
+
+See also:
+* [Compose and send web API requests using the Network Console tool](../../../network-console/network-console-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -62,6 +71,9 @@ This has been fixed:
 
 ![Fixed activity bar icons](./devtools-130-images/aligned-icons.png)
 
+See also:
+* [Overview of the user interface](../../../overview.md#overview-of-the-user-interface) in _Overview of DevTools_.
+
 
 <!-- ------------------------------ -->
 #### Fixed double shadows that appeared on hover
@@ -74,12 +86,19 @@ The double shadow has been removed, and the icon only shows the square shadow wh
 
 ![Single shadow on icon](./devtools-130-images/single-shadow-icon.png)
 
+See also:
+* [Overview of the user interface](../../../overview.md#overview-of-the-user-interface) in _Overview of DevTools_.
+
 
 <!-- ------------------------------ -->
 #### Performance tool icon now shows a warning when throttling is enabled
 
-When throttling is enabled, a warning icon is displayed in the **Performance** tab of the toolbar to help developers know that performance is impacted by throttling. 
+When throttling is enabled in **Device Emulation**, a warning icon is displayed in the **Performance** tab of the toolbar to help you know that performance is impacted by throttling:
+
 ![Performance tab warning icon](./devtools-130-images/performance-warning-icon.png)
+
+See also:
+* [Throttle the network and CPU](../../../device-mode/index.md#throttle-the-network-and-cpu) in _Emulate mobile devices (Device Emulation)_.
 
 
 <!-- ====================================================================== -->
@@ -87,7 +106,17 @@ When throttling is enabled, a warning icon is displayed in the **Performance** t
 
 <!-- Subtitle: The warning icon and expand button on warning messages in the Console now meet the standard luminosity ratio of 3:1.-->
 
-The warning icon and expand button on warning messages in the **Console** failed to meet the standard luminosity ratio of 3:1.  This has now been fixed.
+In the **Console** tool, the Warning count expander button on warning messages in the **Console** previously didn't meet the standard luminosity ratio of 3:1:
+
+![Low luminosity ratio for the Warning count expander button](./devtools-130-images/console-icon-luminosity-ratio-before.png)
+
+This has now been fixed; the Warning count expander button has a higher luminosity ratio:
+
+![High luminosity ratio for the Warning count expander button](./devtools-130-images/console-icon-luminosity-ratio-after.png)
+
+
+See also:
+* [Inspect and filter information on the current webpage](../../../console/index.md#inspect-and-filter-information-on-the-current-webpage) in _Console overview_.
 
 
 <!-- ====================================================================== -->
