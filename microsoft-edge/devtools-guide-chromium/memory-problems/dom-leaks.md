@@ -109,6 +109,17 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 <!-- ---------- -->
 ##### [Memory tool](#tab/memory-tool)
 
+The Detached elements profiling type helps you fix memory leaks due to detached DOM elements.
+
+The **Memory** tool has a profile type called **Detached elements**, which shows detached objects that are retained by a JavaScript reference:
+
+![Detached elements profile type](./dom-leaks-images/detached-elements-profile-type.png)
+
+This shows a view of the detached nodes to help you identify memory leaks on your webpage.
+
+![Detached elements view](./dom-leaks-images/detached-nodes.png)
+
+
 todo: after update other tab, rewrite ui steps in this tab
 
 1. Open the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/) in a new window or tab.
@@ -124,6 +135,12 @@ todo: after update other tab, rewrite ui steps in this tab
 1. Click the **Start** button.
 
 1. ...
+
+
+
+
+
+
 
 
 <!-- ---------- -->
