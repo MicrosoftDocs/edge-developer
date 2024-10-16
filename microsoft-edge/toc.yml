@@ -35,7 +35,7 @@
               href: devtools-guide-chromium/whats-new/2024/10/devtools-130.md
               displayName: What's New in DevTools (Microsoft Edge 130)  # top-of-page title
 
-              - name: Microsoft Edge 129
+            - name: Microsoft Edge 129
               href: devtools-guide-chromium/whats-new/2024/09/devtools-129.md
               displayName: What's New in DevTools (Microsoft Edge 129)  # top-of-page title
 
@@ -71,15 +71,15 @@
               href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
               displayName: What's New in DevTools (Microsoft Edge 121)  # top-of-page title
 
-            - name: Microsoft Edge 120
-              href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
-              displayName: What's New in DevTools (Microsoft Edge 120)  # top-of-page title
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 120
+                  href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
+                  displayName: What's New in DevTools (Microsoft Edge 120)  # top-of-page title
 
                 - name: Microsoft Edge 119
                   href: devtools-guide-chromium/whats-new/2023/11/devtools-119.md
