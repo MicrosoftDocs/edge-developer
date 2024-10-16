@@ -163,7 +163,7 @@ landingContent:
             url: ../webview2/get-started/get-started.md
       - linkListType: download
         links:
-          - text: Sample Code
+          - text: WebView2 sample apps
             url: ../webview2/code-samples-links.md
       - linkListType: whats-new
         links:
