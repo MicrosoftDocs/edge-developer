@@ -21,7 +21,7 @@ See also:
 <!-- ====================================================================== -->
 ## Levels of tracking prevention
 
-Microsoft Edge currently offers users three levels of tracking prevention, which are selected by navigating to `edge://settings/privacy`.
+Microsoft Edge currently offers users three levels of tracking prevention, which are selected by going to **Settings and more** (![Settings and more icon](./tracking-prevention-images/settings-and-more-icon.png)) > **Settings** > **Privacy and security** > **Tracking prevention**:
 
 ![Three settings of tracking prevention](./tracking-prevention-images/tracking-prevention-settings.png)
 
@@ -167,10 +167,7 @@ The Fingerprinting column in [Current tracking prevention behavior](#current-tra
 
 By default, InPrivate windows in Microsoft Edge use the same tracking prevention settings as regular windows.
 
-To always apply the "Strict" level of tracking prevention to InPrivate windows:
-
-1. Go to `edge://settings/privacy`.
-1. Click **Always use "Strict" tracking prevention when browsing InPrivate**.
+To always apply the "Strict" level of tracking prevention to InPrivate windows, in Microsoft Edge, go to **Settings and more** (![Settings and more icon](./tracking-prevention-images/settings-and-more-icon.png)) > **Settings** > **Privacy and security** > **Tracking prevention**, and then turn on the toggle **Always use "Strict" tracking prevention when browsing InPrivate**.
 
 
 <!-- ====================================================================== -->
@@ -210,7 +207,7 @@ macOS: `/Applications/Microsoft Edge.app/Contents/Frameworks/Microsoft Edge Fram
 <!-- ====================================================================== -->
 ## Blocking or allowing specific trackers for debugging purposes
 
-Microsoft Edge only exposes an option to disable tracking prevention enforcements from running on a specified site.  This option is accessed via the page info flyout, or through the `edge://settings/privacy/trackingPreventionExceptions` page.
+Microsoft Edge only exposes an option to disable tracking prevention enforcements from running on a specified site.  This option is accessed via the page info flyout. Or, in Microsoft Edge, select **Settings and more** (![Settings and more icon](./tracking-prevention-images/settings-and-more-icon.png)) > **Settings** > **Privacy and security** > **Tracking prevention** > **Exceptions**.<!-- edge://settings/privacy/trackingPreventionExceptions -->
 
 The **Block** and **Allow** options on the `edge://settings/content/cookies` page can be used to allow or deny specific domains access to storage such as cookies and other browser storage mechanisms.  This is useful for debugging site issues that are caused by tracking prevention enforcements blocking access to storage for a specific site.
 
