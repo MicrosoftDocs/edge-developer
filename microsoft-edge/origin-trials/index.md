@@ -11,11 +11,23 @@ ms.date: 10/15/2024
 
 Use origin trials to try out experimental APIs on your own live site for a limited period of time.  When using origin trials, users of Microsoft Edge that visit your site can run code that uses experimental APIs.
 
-To support using the experimental APIs in your website, you register the origin domain that you want to use the experimental feature on (for example, `https://example.com`), and then an origin trial token is sent to you.  You use the token at your website in a `<head>/<meta>` element, or in an `Origin-Trial` HTTP server response header.  When a Microsoft Edge user visits your website, the token turns on that origin-trial feature in the user's Microsoft Edge browser.  The user doesn't need to set any `edge://flags` in Microsoft Edge.
-
 To see a list of the available origin trials and register your origin to try out any of the origin trials, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).  To assess the suitability of using the experimental APIs on your website, check the minimum version requirements for Microsoft Edge, and check the trial expiration date.
 
-You can also provide feedback to browser engineers and the web standards community about the design of the API, your use-cases, or your experience with using the APIs.
+Use the **Issues** tab in the browser feature's repo, to provide feedback to browser engineers and the web standards community about the design of the API, your use-cases, or your experience with using the APIs.
+
+
+<!-- ------------------------------ -->
+#### How origin trials work
+
+The origin-trials mechanism allows a user of your webpage to use the feature in their Microsoft Edge browser, despite the feature's off-by-default state.  The user's Microsoft Edge browser automatically turns on the browser's feature flag that corresponds to the origin trial for which the token is valid.  The user doesn't need to set any `edge://flags` in Microsoft Edge.
+
+To support using the experimental APIs in your website:
+
+1. Register the origin domain that you want to use the experimental feature on (for example, `https://example.com`), and then an origin trial token is generated for you.
+
+1. Copy the token to your webpage within a `<head>/<meta>` element, or in an `Origin-Trial` HTTP server response header.
+
+1. When a Microsoft Edge user visits your webpage and the browser finds an origin trial token, the token turns on the associated origin-trial feature in the browser.
 
 
 <!-- ====================================================================== -->
@@ -64,8 +76,6 @@ To register for an origin trial:
 <!-- ====================================================================== -->
 ## Use the origin trial token at your website
 <!-- probably don't change wording of heading, b/c the "Enable the Origin Trial in your site's code" card at https://developer.microsoft.com/microsoft-edge/origin-trials probably links to this heading/anchor -->
-
-After you receive the origin trial token, you add the token to your webpage.  When a user's Microsoft Edge browser finds an origin trial token in your webpage, Microsoft Edge on the user's device automatically turns on the Microsoft Edge feature flag that corresponds to the origin trial for which the token is valid.  This allows a user of your webpage to use the feature in their Microsoft Edge browser, despite the feature's off-by-default state.
 
 Use the token at your website in either of the following ways:
 
