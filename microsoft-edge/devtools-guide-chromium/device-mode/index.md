@@ -25,8 +25,14 @@ ms.date: 11/20/2023
 
 Use the **Device Emulation** tool, sometimes called _Device Mode_, to approximate how your page looks and behaves on a mobile device.
 
+**Device Emulation** is a [first-order approximation](https://wikipedia.org/wiki/Order_of_approximation#First-order) of the look and feel of your page on a mobile device.  **Device Emulation** doesn't actually run your code on a mobile device.  Instead, you simulate the mobile user experience from your laptop or desktop.
+
+Some aspects of mobile devices aren't emulated in DevTools.  For example, the architecture of mobile CPUs is different than the architecture of laptop or desktop CPUs.  For the most robust testing, run your page on a mobile device.
+
+Use [Remote Debugging](../remote-debugging/index.md) to interact with the code of a page from your machine while your page actually runs on a mobile device.  You can view, change, debug, profile, or all four while you interact with the code.  Your machine can be a notebook or desktop computer.
+
+
 **Detailed contents:**<!--July 27, 2023. compare page toc at https://developer.chrome.com/docs/devtools/device-mode/-->
-* [Limitations](#limitations)
 * [Simulate a mobile viewport](#simulate-a-mobile-viewport)
    * [Responsive Viewport Mode](#responsive-viewport-mode)
       * [Show media queries](#show-media-queries)
@@ -45,16 +51,6 @@ Use the **Device Emulation** tool, sometimes called _Device Mode_, to approximat
    * [Set orientation](#set-orientation)
 * [Set the user agent string](#set-the-user-agent-string)
 * [Set user-agent client hints](#set-user-agent-client-hints)
-
-
-<!-- ====================================================================== -->
-## Limitations
-
-**Device Emulation** is a [first-order approximation](https://wikipedia.org/wiki/Order_of_approximation#First-order) of the look and feel of your page on a mobile device.  **Device Emulation** doesn't actually run your code on a mobile device.  Instead, you simulate the mobile user experience from your laptop or desktop.
-
-Some aspects of mobile devices aren't emulated in DevTools.  For example, the architecture of mobile CPUs is different than the architecture of laptop or desktop CPUs.  For the most robust testing, run your page on a mobile device.
-
-Use [Remote Debugging](../remote-debugging/index.md) to interact with the code of a page from your machine while your page actually runs on a mobile device.  You can view, change, debug, profile, or all four while you interact with the code.  Your machine can be a notebook or desktop computer.
 
 
 <!-- ====================================================================== -->
