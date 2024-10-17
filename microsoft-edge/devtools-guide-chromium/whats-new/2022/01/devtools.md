@@ -25,7 +25,9 @@ ms.date: 01/14/2022
 <!-- Title: Check out the new Detached Elements tool -->
 <!-- Subtitle: The new Detached Elements tool is now available by default in Microsoft Edge 97. -->
 
-October 2024 update: To debug DOM memory leaks, use the **Detached Elements** profiling type in the **Memory** tool, which has replaced the **Detached Elements** tool.
+October 2024 update: To debug DOM memory leaks, use either:
+* The **Detached Elements** tool.  Detached nodes have a link to the associated JavaScript code.
+* The **Detached elements** profiling type in the **Memory** tool.
 
 A DOM node is considered _detached_ when it's no longer attached to any element of the DOM, but is still being retained in memory by Microsoft Edge.  The browser cannot garbage-collect the detached element, because some JavaScript object is still referencing the element, even though the element is no longer on the page or is no longer a part of the DOM.
 

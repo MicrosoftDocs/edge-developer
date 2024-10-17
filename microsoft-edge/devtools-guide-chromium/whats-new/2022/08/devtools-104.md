@@ -64,7 +64,9 @@ See also:
 <!-- Title: The Detached Elements tool now works better with assistive technology -->
 <!-- Subtitle: In Microsoft Edge 104, Screen readers announce the name of the table of detached elements in the tool. -->
 
-October 2024 update: To debug DOM memory leaks, use the **Detached Elements** profiling type in the **Memory** tool, which has replaced the **Detached Elements** tool.
+October 2024 update: To debug DOM memory leaks, use either:
+* The **Detached Elements** tool.  Detached nodes have a link to the associated JavaScript code.
+* The **Detached elements** profiling type in the **Memory** tool.
 
 In previous versions of Microsoft Edge, when selecting the table of detached elements in the **Detached Elements** feature, assistive technology only announced "Table" and the number of rows and columns.  In Microsoft Edge version 104, this issue has been fixed.  When selecting the table of detached elements in the **Detached Elements** feature, assistive technology now announces "Detached Elements List, Table" and the number of rows and columns.
 
