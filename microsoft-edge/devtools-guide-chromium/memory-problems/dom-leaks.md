@@ -72,9 +72,7 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
    ![Open the Detached Elements tool](./dom-leaks-images/open-detached-elements.png)
 
-   Normally (after switching to the Room 2 instance) you would click the **Collect Garbage** button and then the **Get Detached Elements** button, per the subsequent steps.
-
-1. Just for demonstration, while the Room 1 instance is still selected, first click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button:
+1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button:
 
    ![0 detached elements while still in Room 1](./dom-leaks-images/0-detached-in-room-1.png)
 
@@ -87,6 +85,8 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 1. In the demo webpage, click the **Room 2** button.
 
    The messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.
+
+   Normally, you would now click the **Collect Garbage** button and then the **Get Detached Elements** button, per the subsequent steps.  For demonstration, we'll first click the **Get Detached Elements** button.
 
 1. In DevTools, select the **Detached Elements** (![The Detached Elements tool icon](./dom-leaks-images/detached-elements-tool-icon.png)) tool, and then click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button:
 
