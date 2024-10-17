@@ -55,13 +55,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Bug fixes for icons
+## Fixed icon alignment in vertical Activity Bar
 
-<!-- Subtitle: Icons in the activity bar are properly aligned and only show a square shadow on hover. The Performance tab icon gets a warning icon when throttling is enabled. -->
-
-
-<!-- ------------------------------ -->
-#### Fixed icon alignment in vertical Activity Bar
+<!-- Subtitle: Icons in the Activity Bar are properly aligned horizontally. -->
 
 When the **Activity Bar** was vertical, the icons were left-aligned:
 
@@ -75,8 +71,10 @@ See also:
 * [Overview of the user interface](../../../overview.md#overview-of-the-user-interface) in _Overview of DevTools_.
 
 
-<!-- ------------------------------ -->
-#### Removed circle shadow when hover over toolbar icons
+<!-- ====================================================================== -->
+## Removed circle shadow when hover over toolbar icons
+
+<!-- Subtitle: Icons in toolbars show only a square shadow when hovered over, instead of a circular shadow as well. -->
 
 Many icons in the **Activity Bar** and other toolbars showed an overlapping circle and square shadow when you hovered over them:
 
@@ -90,8 +88,10 @@ See also:
 * [Overview of the user interface](../../../overview.md#overview-of-the-user-interface) in _Overview of DevTools_.
 
 
-<!-- ------------------------------ -->
-#### Performance tool tab warning icon when throttling
+<!-- ====================================================================== -->
+## Performance tool tab warning icon when throttling
+
+<!-- Subtitle: The Performance tab icon gets a warning icon when throttling is enabled. -->
 
 When throttling is enabled in **Device Emulation**, a warning icon is displayed in the **Performance** tab of the toolbar to help you know that performance is impacted by throttling:
 
