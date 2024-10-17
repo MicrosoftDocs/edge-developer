@@ -497,6 +497,12 @@
                 - name: Optimize CSS styles with the CSS Overview tool
                   href: devtools-guide-chromium/css/css-overview-tool.md
                   displayName: CSS Overview tool
+# Detached Elements tool ------------------------------------------------------
+            - name: Detached Elements tool
+              items:
+                - name: Debug DOM memory leaks with the Detached Elements tool # added article
+                  href: devtools-guide-chromium/memory-problems/dom-leaks.md
+                  displayName: Detached Elements tool
 # Developer Resources tool ----------------------------------------------------
             - name: Developer Resources tool
               items:
@@ -541,10 +547,6 @@
                 - name: Record heap snapshots using the Memory tool
                   href: devtools-guide-chromium/memory-problems/heap-snapshots.md
                   displayName: Memory tool
-
-                - name: Debug DOM memory leaks with the Detached Elements feature
-                  href: devtools-guide-chromium/memory-problems/dom-leaks.md
-                  displayName: Debug DOM memory leaks with the Memory tool  # old title
 
                 - name: Use Allocation instrumentation on timeline
                   href: devtools-guide-chromium/memory-problems/allocation-profiler.md

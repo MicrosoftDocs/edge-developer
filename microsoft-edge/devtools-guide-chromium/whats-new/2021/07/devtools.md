@@ -64,7 +64,7 @@ The **Detached Elements** profiling type in the **Memory** tool finds all of the
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experiment, go to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**. -->
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements feature](../../../memory-problems/dom-leaks.md)
+* [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
 
 
 <!-- ====================================================================== -->

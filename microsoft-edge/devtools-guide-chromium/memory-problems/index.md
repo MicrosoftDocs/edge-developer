@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/21/2023
+ms.date: 10/17/2024
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,8 +29,6 @@ Learn how to use Microsoft Edge and DevTools to find memory issues that affect p
 *  Visualize memory usage over time with the **Memory** tool.
 *  Identify detached DOM trees (a common cause of memory leaks) with **Heap snapshot**.
 *  Find out when new memory is being allocated in your JavaScript heap (JS heap) with **Allocation instrumentation on timeline**.
-
-See also [Debug DOM memory leaks with the Detached Elements feature](dom-leaks.md).
 
 
 <!-- ====================================================================== -->
@@ -125,11 +123,49 @@ The key thing here is the fact that the JS heap ends higher than it began (the "
 
 
 <!-- ====================================================================== -->
+## Find DOM tree memory leaks by using the Detached Elements profiling type
+
+The **Detached elements** profiling type helps you fix memory leaks due to detached DOM elements.
+
+The **Memory** tool has a profile type called **Detached elements**, which shows detached objects that are retained by a JavaScript reference:
+
+![Detached elements profile type](./index-images/detached-elements-profile-type.png)
+
+This shows a view of the detached nodes to help you identify memory leaks on your webpage.
+
+![Detached elements view](./index-images/detached-nodes.png)
+
+
+To analyze a detached element by using the **Detached Elements** demo webpage:
+
+1. Open the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/) in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+
+1. In DevTools, in the **Activity Bar**, click the **Memory** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
+
+   ![Open the Memory tool](./index-images/memory-tool-detached-elements-option-button.png)
+
+1. Select the **Detached elements** option button.
+
+1. Click the **Start** button.
+
+1. todo
+
+In the **Memory tool**, the detached element is not linked to the retainer path.
+
+The workflow for the **Detached elements** profiling type in the **Memory** tool is simpler than in the **Detached Elements** tool: the workflow doesn't need to link between the detached node in the **Detached Elements** tool and the detached node in the heap snapshot in the **Memory** tool in the **Drawer**, because the **Memory** tool shows the detached node exactly as it's represented in the DOM:
+
+![A detached node represented in the Memory tool like it's represented in the DOM](./dom-leaks-images/representation-like-in-dom.png)
+
+
+<!-- ====================================================================== -->
 ## Discover detached DOM tree memory leaks with Heap Snapshots
+<!-- don't change heading wording; would break link from DevTools > Memory tool > Help-mode tooltip (would default to top of article) -->
 
-<!-- do not change the heading wording; that would break the link from the DevTools > Memory tool > Help-mode tooltip to this section; would default to top of article instead of this section anchor -->
+Starting with Microsoft Edge 130, this approach has been replaced by the **Detached elements** profiling type.  See [Find DOM tree memory leaks by using the Detached Elements profiling type](#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type), above.
 
-A DOM node is only garbage collected when there are no references to the node from either the DOM tree or JavaScript code running on the page.  A node is said to be "detached" when it is removed from the DOM tree but some JavaScript still references it.  Detached DOM nodes are a common cause of memory leaks.
+A DOM node is only garbage-collected when there are no references to the node from either the DOM tree or JavaScript code running on the page.  A node is said to be "detached" when it is removed from the DOM tree but some JavaScript still references it.  Detached DOM nodes are a common cause of memory leaks.
 
 This section teaches you how to use the heap profilers in DevTools to identify detached nodes.
 
@@ -186,6 +222,12 @@ To create a snapshot:
 ![Investigating a node](./index-images/memory-heap-snapshot-filter-detached-expanded-selected.png)
 
 <!--todo: the allocation timeline doesn't appear in the DevTools in Edge  -->
+
+See also:
+* [Debug DOM memory leaks with the Detached Elements tool](./dom-leaks.md)
+<!-- 
+* [Detached Elements profiling type in Memory tool](../whats-new/2024/10/devtools-130.md#detached-elements-profiling-type-in-memory-tool) in _What's New in DevTools (Microsoft Edge 130)_.
+-->
 
 
 <!-- ====================================================================== -->
@@ -281,6 +323,7 @@ DevTools now tracks all of the objects that were GC'd during the recording.  Use
 
 If you are investigating objects that were only GC'd during specific major or minor GC operations, configure the settings appropriately to track the operation you care about. To learn more about the differences between major and minor GC, see [Trash talk: the Orinoco garbage collector | V8 JavaScript engine developer blog](https://v8.dev/blog/trash-talk).
 
+
 <!-- ====================================================================== -->
 ## Spot frequent garbage collections
 
@@ -293,6 +336,16 @@ You can use either the Microsoft Edge Browser Task Manager or Performance memory
 *  In Performance recordings, frequent changes (rising and falling) to the JS heap or node count graphs indicate frequent garbage collection.
 
 After you have identified the problem, you can use an **Allocation instrumentation on timeline** recording to find out where memory is being allocated and which functions are causing the allocations.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- todo: all links in article -->
+
+* [Debug DOM memory leaks with the Detached Elements tool](./dom-leaks.md)
+<!--
+* [Detached Elements profiling type in Memory tool](../whats-new/2024/10/devtools-130.md#detached-elements-profiling-type-in-memory-tool) in _What's New in DevTools (Microsoft Edge 130)_.
+-->
 
 
 <!-- ====================================================================== -->

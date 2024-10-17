@@ -71,7 +71,7 @@ In previous versions of Microsoft Edge, when selecting the table of detached ele
 ![Detached Elements List, Table, 5 rows, 3 columns](./devtools-104-images/a11y-detached-elements.png)
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements feature](../../../memory-problems/dom-leaks.md)
+* [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
