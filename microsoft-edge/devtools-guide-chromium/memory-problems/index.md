@@ -156,7 +156,7 @@ In the **Memory tool**, the detached element is not linked to the retainer path.
 
 The workflow for the **Detached elements** profiling type in the **Memory** tool is simpler than in the **Detached Elements** tool: the workflow doesn't need to link between the detached node in the **Detached Elements** tool and the detached node in the heap snapshot in the **Memory** tool in the **Drawer**, because the **Memory** tool shows the detached node exactly as it's represented in the DOM:
 
-![A detached node represented in the Memory tool like it's represented in the DOM](./dom-leaks-images/representation-like-in-dom.png)
+![A detached node represented in the Memory tool like it's represented in the DOM](./index-images/representation-like-in-dom.png)
 
 
 <!-- ====================================================================== -->
