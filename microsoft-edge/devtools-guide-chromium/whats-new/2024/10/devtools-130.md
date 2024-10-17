@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 130)
-description: "New Detached elements profile in Memory tool. Improved names of plain JavaScript objects in heap snapshots. Create a collection or environment in Network Console. Bug fixes for icons. Fixed icon alignment in vertical Activity Bar. Removed circle shadow on hover. Performance tool icon shows warning when throttled. Warning message icon and expand button meets luminosity ratio. And more."
+description: "Detached Elements profile in Memory tool. Improved names of JavaScript objects in heap snapshots. Create collection or environment in Network Console.  Fixed icon bugs. Performance tab icon when throttled. High-contrast Warning count. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -138,6 +138,7 @@ Microsoft Edge 130 also includes the following updates from the Chromium project
    * [New 'Detached elements' profile](https://developer.chrome.com/blog/new-in-devtools-130#detached-elements)
    * [Improved naming of plain JS objects](https://developer.chrome.com/blog/new-in-devtools-130#object-names)
 * [Turn off dynamic theming](https://developer.chrome.com/blog/new-in-devtools-130#dynamic-theming)
+
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
