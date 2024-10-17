@@ -14,15 +14,15 @@ ms.date: 10/17/2024
 
 
 <!-- ====================================================================== -->
-## New Detached elements profile in the Memory tool
+## Detached Elements profiling type in Memory tool
 
 <!-- Subtitle: Detached elements helps you fix memory leaks due to detached DOM elements.-->
 
-The **Memory** tool has a new profile type called **Detached elements**, which shows detached objects that are retained by a JavaScript reference:
+The **Memory** tool has a new profiling type called **Detached elements**, which shows detached objects that are retained by a JavaScript reference:
 
-![Detached elements profile type](./devtools-130-images/detached-elements-profile-type.png)
+![Detached elements profiling type](./devtools-130-images/detached-elements-profile-type.png)
 
-This shows a view of the detached nodes to help you identify memory leaks on your webpage.
+The **Detached elements** profiling type shows a view of the detached nodes to help you identify memory leaks on your webpage:
 
 ![Detached elements view](./devtools-130-images/detached-nodes.png)
 
@@ -31,7 +31,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Improved names of plain JavaScript objects in heap snapshots
+## Improved names of JavaScript objects in heap snapshots
 
 <!-- Plain JavaScript objects are named, categorized, and searchable based on the properties they contain.-->
 
@@ -42,7 +42,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Create a collection or environment in Network Console is working again
+## Create a collection or environment in Network Console
 
 <!-- Subtitle: Use collections and environments to manage API requests and its values and variables. -->
 
@@ -61,7 +61,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Fixed icon alignment in the vertical Activity Bar
+#### Fixed icon alignment in vertical Activity Bar
 
 When the **Activity Bar** was vertical, the icons were left-aligned:
 
@@ -76,7 +76,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Fixed double shadows that appeared on hover
+#### Removed circle shadow when hover over toolbar icons
 
 Many icons in the **Activity Bar** and other toolbars showed an overlapping circle and square shadow when you hovered over them:
 
@@ -91,7 +91,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Performance tool icon now shows a warning when throttling is enabled
+#### Performance tool tab warning icon when throttling
 
 When throttling is enabled in **Device Emulation**, a warning icon is displayed in the **Performance** tab of the toolbar to help you know that performance is impacted by throttling:
 
@@ -102,7 +102,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Accessibility bug fix: Warning message icon and expand button meets standard luminosity ratio 
+## Console's Warnings count button has increased contrast
 
 <!-- Subtitle: The warning icon and expand button on warning messages in the Console now meet the standard luminosity ratio of 3:1.-->
 
@@ -140,7 +140,7 @@ Microsoft Edge 130 also includes the following updates from the Chromium project
 * [Turn off dynamic theming](https://developer.chrome.com/blog/new-in-devtools-130#dynamic-theming)
 * [Chrome Experiment: Process sharing](https://developer.chrome.com/blog/new-in-devtools-130#process-sharing)
 * [Lighthouse 12.2.1](https://developer.chrome.com/blog/new-in-devtools-130#lighthouse)
-* [Miscellaneous higlhlights](https://developer.chrome.com/blog/new-in-devtools-130#misc)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-130#misc)
 <!-- todo: maybe remove some links -->
 
 
