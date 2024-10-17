@@ -141,7 +141,10 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- ---------- -->
 ###### Configure the security warning when saving a file (`SaveFileSecurityCheckStarting` event)
 
-<!-- within Oct Release SDK -->
+<!--
+promoted to Stable in Oct Release SDK
+promoted from Experimental to Stable in Oct Prerelease SDK
+-->
 
 Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a handler on this event to get the file path, filename extension, and document origin URI information.  You can then apply your own rules to do actions such as the following:
    * Allow saving the file without presenting a default security-warning UI about the file-type policy.
@@ -150,7 +153,13 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* `CoreWebView2` Class:<!-- todo: add CoreWebView2.GetDeferral Property ? -->
+<!-- todo: equivalent?
+.NET: CoreWebView2SaveFileSecurityCheckStartingEventArgs.GetDeferral Method
+WinRT: CoreWebView2.GetDeferral Property
+Win32: ICoreWebView2SaveFileSecurityCheckStartingEventArgs::GetDeferral
+-->
+
+* `CoreWebView2` Class:
    * [CoreWebView2.SaveFileSecurityCheckStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.savefilesecuritycheckstarting?view=webview2-dotnet-1.0.2849.39&preserve-view=true)
 
 * [CoreWebView2SaveFileSecurityCheckStartingEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2savefilesecuritycheckstartingeventargs?view=webview2-dotnet-1.0.2849.39&preserve-view=true)
@@ -208,7 +217,8 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
 <!-- ---------- -->
 ###### SDK-only
 
-* Using `CoreWebView2.AddWebResourceRequestedFilter` without a `CoreWebView2WebResourceRequestSourceKinds` parameter is now deprecated.  See the .NET [CoreWebView2.AddWebResourceRequestedFilter Method](https://go.microsoft.com/fwlink/?linkid=2286319).<!-- todo: link to Win32 & WinRT?  applies to them? -->
+* Using `CoreWebView2.AddWebResourceRequestedFilter` without a `CoreWebView2WebResourceRequestSourceKinds` parameter is now deprecated.  See the .NET [CoreWebView2.AddWebResourceRequestedFilter Method](https://go.microsoft.com/fwlink/?linkid=2286319).<!-- points to WebView2Announcements -->
+
 
 <!-- end of Oct 2024 Release SDK -->
 
@@ -246,6 +256,11 @@ Added a new `RestartRequested` event.  The `RestartRequested` event is raised wh
 
 * [CoreWebView2RestartRequestedPriority Class](/dotnet/api/microsoft.web.webview2.core.corewebview2restartrequestedpriority?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)<!-- todo: enum, or class? -->
 
+<!-- if enum (not class) in .net:
+    * `CoreWebView2RestartRequestedPriority.High`
+    * `CoreWebView2RestartRequestedPriority.Normal`
+-->
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Environment` Class:
@@ -255,7 +270,7 @@ Added a new `RestartRequested` event.  The `RestartRequested` event is raised wh
     * [CoreWebView2RestartRequestedEventArgs.Priority Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2restartrequestedeventargs?view=webview2-winrt-1.0.2895-prerelease&preserve-view=true#priority)
 
 * [CoreWebView2RestartRequestedPriority Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2restartrequestedpriority?view=webview2-winrt-1.0.2895-prerelease&preserve-view=true)
-    * `CoreWebView2RestartRequestedPriority.High`<!-- todo: confirm member names -->
+    * `CoreWebView2RestartRequestedPriority.High`
     * `CoreWebView2RestartRequestedPriority.Normal`
       
 ##### [Win32/C++](#tab/win32cpp)
@@ -265,7 +280,7 @@ Added a new `RestartRequested` event.  The `RestartRequested` event is raised wh
   * [ICoreWebView2ExperimentalEnvironment15::remove_RestartRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment15?view=webview2-1.0.2895-prerelease&preserve-view=true#remove_restartrequested)
 
 * [ICoreWebView2ExperimentalRestartRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalrestartrequestedeventargs?view=webview2-1.0.2895-prerelease&preserve-view=true)
-  * [ICoreWebView2ExperimentalRestartRequestedEventArgs::get_Priority](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalrestartrequestedeventargs?view=webview2-1.0.2895-prerelease&preserve-view=true#get_priority)<!-- todo: add ::put_ ? -->
+  * [ICoreWebView2ExperimentalRestartRequestedEventArgs::get_Priority](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalrestartrequestedeventargs?view=webview2-1.0.2895-prerelease&preserve-view=true#get_priority)<!-- no put -->
 * [ICoreWebView2ExperimentalRestartRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalrestartrequestedeventhandler?view=webview2-1.0.2895-prerelease&preserve-view=true)
 
 * [COREWEBVIEW2_RESTART_REQUESTED_PRIORITY Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2895-prerelease&preserve-view=true#corewebview2_restart_requested_priority)
@@ -343,9 +358,7 @@ view=true#get_originalsourceframeinfo)
 <!-- ---------- -->
 ###### Configure the security warning when saving a file (`SaveFileSecurityCheckStarting` event)
 
-<!-- within Oct Prerelease SDK -->
-
-<!-- todo: was this simultaneously promoted in both SDKs?  it's in both sections (Release, Prerelease)
+<!--
 promoted to Stable in Oct Release SDK
 promoted from Experimental to Stable in Oct Prerelease SDK
 -->
@@ -357,8 +370,14 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+<!-- todo: equivalent?
+.NET: CoreWebView2SaveFileSecurityCheckStartingEventArgs.GetDeferral Method
+WinRT: CoreWebView2.GetDeferral Property
+Win32: ICoreWebView2SaveFileSecurityCheckStartingEventArgs::GetDeferral
+-->
+
 * `CoreWebView2` Class:
-    * [CoreWebView2.SaveFileSecurityCheckStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.savefilesecuritycheckstarting?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)<!-- todo: getDeferral? -->
+    * [CoreWebView2.SaveFileSecurityCheckStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.savefilesecuritycheckstarting?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)
 
 * [CoreWebView2SaveFileSecurityCheckStartingEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2savefilesecuritycheckstartingeventargs?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)
     * [CoreWebView2SaveFileSecurityCheckStartingEventArgs.CancelSave Property](/dotnet/api/microsoft.web.webview2.core.corewebview2savefilesecuritycheckstartingeventargs.cancelsave?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)
@@ -410,10 +429,10 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
 
 * Fixed Arm64 incompatibility with WindowsAppSDK 1.6.
 * Removed extra `WebView2Loader.dll` in WinAppSDK case.
-* Using `CoreWebView2.AddWebResourceRequestedFilter` without a `CoreWebView2WebResourceRequestSourceKinds` parameter is now deprecated.  See the .NET [CoreWebView2.AddWebResourceRequestedFilter Method](https://go.microsoft.com/fwlink/?linkid=2286319).<!-- todo: link to Win32 & WinRT?  applies to them? --><!-- todo: this is in Release & Prerelease sections, ok? -->
+* Using `CoreWebView2.AddWebResourceRequestedFilter` without a `CoreWebView2WebResourceRequestSourceKinds` parameter is now deprecated.  See the .NET [CoreWebView2.AddWebResourceRequestedFilter Method](https://go.microsoft.com/fwlink/?linkid=2286319).<!-- points to WebView2Announcements -->
+
 
 <!-- end of Oct 2024 Prerelease SDK -->
-
 
 
 <!-- ====================================================================== -->
