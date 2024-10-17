@@ -145,7 +145,7 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
    The code adds each message in the room to the `unmounted` array.  The `unmounted` array is the object that is referencing the detached element.
 
-   In the JavaScript code, you have now identified the retainer object (the `unmounted` array) that's preventing the detached element from being garbage-collected by the browser.
+In the JavaScript code, you have now identified the retainer object (the `unmounted` array) that's preventing the detached element from being garbage-collected by the browser.
 
 You've found detached elements that the browser can't garbage-collect, and located the JavaScript object that's still referencing the detached element.  You can then change the JavaScript code to release the element, to reduce the number of detached elements on the webpage, increasing webpage performance and responsiveness.
 
