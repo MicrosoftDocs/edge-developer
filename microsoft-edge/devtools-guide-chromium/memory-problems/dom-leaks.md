@@ -12,7 +12,11 @@ ms.date: 10/17/2024
 
 The **Detached Elements** tool finds and displays all of the detached elements on a webpage.  To increase the performance of your webpage, use the **Detached Elements** tool to find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
 
-![The Detached Elements tool](./dom-leaks-images/detached-elements-tool.png)
+![The Detached Elements tool, showing list of detached elements](./dom-leaks-images/detached-elements-tool.png)
+
+The **Detached Elements** tool, showing retainers in the **Memory** tool, with links to open the JavaScript code in the **Sources** tool:
+
+![The Detached Elements tool, showing retainers](./dom-leaks-images/heap-snapshot.png)
 
 
 <!-- ------------------------------ -->
@@ -27,6 +31,12 @@ See also:
 
 
 <!-- ------------------------------ -->
+#### Video: Debug memory leaks with the Microsoft Edge Detached Elements tool
+
+[![Thumbnail image for video "Debug memory leaks with the Microsoft Edge Detached Elements tool"](./dom-leaks-images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
+
+
+<!-- ------------------------------ -->
 #### Strategy to fix memory leaks
 
 1. Open a webpage to analyze.
@@ -34,12 +44,6 @@ See also:
 1. Run garbage collection, removing all nodes that are no longer referenced by a JavaScript object.
 1. Get all detached elements, which couldn't be garbage-collected.
 1. Analyze a particular detached element and its JavaScript, to identify the culprit node in a detached tree that is causing the entire tree to be retained.
-
-
-<!-- ------------------------------ -->
-#### Video: Debug memory leaks with the Microsoft Edge Detached Elements tool
-
-[![Thumbnail image for video "Debug memory leaks with the Microsoft Edge Detached Elements tool"](./dom-leaks-images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
 
 
 <!-- ====================================================================== -->
