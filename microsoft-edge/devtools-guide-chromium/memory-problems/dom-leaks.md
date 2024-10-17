@@ -16,6 +16,9 @@ The **Detached Elements** tool finds and displays all of the detached elements o
 
 To increase the performance of your webpage, use the **Detached Elements** tool to find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
 
+See also:
+* [Find DOM tree memory leaks by using the Detached Elements profiling type](index.md#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type) in _Fix memory problems_.
+
 
 <!-- ------------------------------ -->
 #### The Detached Elements tool is being deprecated
@@ -60,7 +63,7 @@ After running GC, identify the DOM node causing others to be retained.  Because 
 The detached element is linked to the retainer path in the **Memory** tool.  The **Detached Elements** tool shows detached nodes, but also takes a heap snapshot, shows the **Memory** tool in the **Quick View** panel at the bottom of DevTools, and then links from the detached node in the **Detached Elements** tool to the detached node in the heap snapshot in the **Memory** tool.
 
 See also:
-* [Discover detached DOM tree memory leaks with Heap Snapshots](index.md#discover-detached-dom-tree-memory-leaks-with-heap-snapshots) in _Fix memory problems_.
+* [Find DOM tree memory leaks by using the Detached Elements profiling type](index.md#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type) in _Fix memory problems_.
 * [Record heap snapshots using the Memory tool](./heap-snapshots.md)
 
 
@@ -242,7 +245,7 @@ If you find issues with how the **Detached Elements** feature works, [contact th
 ## See also
 <!-- todo: all links in article -->
 
-* [Discover detached DOM tree memory leaks with Heap Snapshots](index.md#discover-detached-dom-tree-memory-leaks-with-heap-snapshots) in _Fix memory problems_.
+* [Find DOM tree memory leaks by using the Detached Elements profiling type](index.md#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type) in _Fix memory problems_.
 * [Record heap snapshots using the Memory tool](./heap-snapshots.md)
 
 Demo:
