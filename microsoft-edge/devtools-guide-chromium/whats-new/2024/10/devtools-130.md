@@ -57,7 +57,7 @@ See also:
 <!-- ====================================================================== -->
 ## Bug fixes for icons
 
-<!-- Subtitle: todo -->
+<!-- Subtitle: Icons in the activity bar are properly aligned and only show a square shadow on hover. The Performance tab icon gets a warning icon when throttling is enabled. -->
 
 
 <!-- ------------------------------ -->
@@ -138,11 +138,6 @@ Microsoft Edge 130 also includes the following updates from the Chromium project
    * [New 'Detached elements' profile](https://developer.chrome.com/blog/new-in-devtools-130#detached-elements)
    * [Improved naming of plain JS objects](https://developer.chrome.com/blog/new-in-devtools-130#object-names)
 * [Turn off dynamic theming](https://developer.chrome.com/blog/new-in-devtools-130#dynamic-theming)
-* [Chrome Experiment: Process sharing](https://developer.chrome.com/blog/new-in-devtools-130#process-sharing)
-* [Lighthouse 12.2.1](https://developer.chrome.com/blog/new-in-devtools-130#lighthouse)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-130#misc)
-<!-- todo: maybe remove some links -->
-
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
