@@ -21,7 +21,7 @@ The **Detached Elements** tool is being deprecated.  Starting with Microsoft Edg
 In Microsoft Edge 133, the **Detached Elements** tool will be removed; instead, in the **Memory** tool, in the initial **Select profiling type** screen, select the **Detached elements** option button.  The CDP function `EdgeDOMMemory.getDetachedNodesIds` will be removed; use `DOM.getDetachedDomNodes` instead.
 
 See also:
-* [Find DOM tree memory leaks by using the Detached Elements profiling type](index.md#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type) in _Fix memory problems_.
+* [Find DOM tree memory leaks by using the Detached Elements profiling type](./index.md#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type) in _Fix memory problems_.
 
 
 <!-- ------------------------------ -->
@@ -76,7 +76,7 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
    ![0 detached elements while still in Room 1](./dom-leaks-images/0-detached-in-room-1.png)
 
-   0 detached elements are found, and no elements are displayed below the button, because all of the message elements are attached to the present, Room 1 instance of the **Room** class.  This list isn't the list you want to troubleshoot, because it includes elements that can be GC'd, as well as the desired elements that can't be GC'd.
+   0 detached elements are found, and no elements are displayed below the button, because all of the message elements are attached to the present, Room 1 instance of the **Room** class.
 
 
    <!-- ------------------------------ -->
@@ -92,15 +92,15 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
    ![Get Detached Elements using the Detached Elements tool](./dom-leaks-images/get-detached-elements.png)
 
-   The **Detached Elements** tool displays all of the detached elements of the webpage, regardless of whether the elements are still referenced by a JavaScript object.
+   The **Detached Elements** tool displays all of the detached elements of the webpage, regardless of whether the elements are still referenced by a JavaScript object.  This list isn't the list of elements you want to troubleshoot, because it includes elements that can be GC'd, as well as the desired elements that can't be GC'd.
 
 1. In the **Detached Elements** tool, click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.
 
-   The browser runs garbage collection, removing any nodes that are no longer referenced by a JavaScript object.  In this demo webpage, the list remains the same.
+   The browser runs garbage collection, removing any nodes that are no longer referenced by a JavaScript object.
 
 1. Click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button again.
 
-   This time, only the detached elements that can't be garbage-collected are displayed.  These detached elements are memory leaks, if they aren't going to be reused by the application.  In this demo webpage, the list remains the same.
+   This time, only the detached elements that can't be garbage-collected are displayed.  These detached elements are memory leaks, if they aren't going to be reused by the application.
 
 
    <!-- ------------------------------ -->
@@ -239,7 +239,7 @@ If you find issues with how the **Detached Elements** feature works, [contact th
 ## See also
 <!-- todo: all links in article -->
 
-* [Find DOM tree memory leaks by using the Detached Elements profiling type](index.md#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type) in _Fix memory problems_.
+* [Find DOM tree memory leaks by using the Detached Elements profiling type](./index.md#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type) in _Fix memory problems_.
 * [Record heap snapshots using the Memory tool](./heap-snapshots.md)
 
 Demo:
