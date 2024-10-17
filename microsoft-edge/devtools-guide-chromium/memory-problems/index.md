@@ -125,13 +125,11 @@ The key thing here is the fact that the JS heap ends higher than it began (the "
 <!-- ====================================================================== -->
 ## Find DOM tree memory leaks by using the Detached Elements profiling type
 
-The **Detached elements** profiling type helps you fix memory leaks due to detached DOM elements.
-
-The **Memory** tool has a profile type called **Detached elements**, which shows detached objects that are retained by a JavaScript reference:
+The **Detached elements** profiling type helps you fix memory leaks due to detached DOM elements.  The **Memory** tool has a profile type called **Detached elements**, which shows detached objects that are retained by a JavaScript reference:
 
 ![Detached elements profile type](./index-images/detached-elements-profile-type.png)
 
-This shows a view of the detached nodes to help you identify memory leaks on your webpage.
+This shows a view of the detached nodes to help you identify memory leaks on your webpage:
 
 ![Detached elements view](./index-images/detached-nodes.png)
 
@@ -150,13 +148,13 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
 1. Click the **Start** button.
 
-1. todo
+   The **Memory** tool shows the detached node exactly as it's represented in the DOM:
 
-In the **Memory tool**, the detached element is not linked to the retainer path.
+   ![A detached node represented in the Memory tool like it's represented in the DOM](./index-images/representation-like-in-dom.png)
 
-The workflow for the **Detached elements** profiling type in the **Memory** tool is simpler than in the **Detached Elements** tool: the workflow doesn't need to link between the detached node in the **Detached Elements** tool and the detached node in the heap snapshot in the **Memory** tool in the **Drawer**, because the **Memory** tool shows the detached node exactly as it's represented in the DOM:
-
-![A detached node represented in the Memory tool like it's represented in the DOM](./index-images/representation-like-in-dom.png)
+<!-- 
+In the **Memory tool**, the detached element is not linked to the retainer path.  The workflow for the **Detached elements** profiling type in the **Memory** tool is simpler than in the **Detached Elements** tool: the workflow doesn't need to link between the detached node in the **Detached Elements** tool and the detached node in the heap snapshot in the **Memory** tool in the **Drawer**, because the **Memory** tool shows the detached node exactly as it's represented in the DOM.
+-->
 
 
 <!-- ====================================================================== -->
