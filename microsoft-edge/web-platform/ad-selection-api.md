@@ -90,6 +90,11 @@ To sign up for the **Ad Selection API** origin trial for a domain:
    The `ad-selection-attestations.json` file must be published within **30 days** of receiving the OT token.  Hosting this JSON file is required, in order to complete your attestation and allow your code to access the Ad Selection API, to test the Ad Selection API with supported Microsoft Edge clients.
 
 
+<!-- ------------------------------ 
+#### Renewing the origin trial token
+todo -->
+
+
 <!-- ------------------------------ -->
 #### Example JSON file
 
@@ -267,6 +272,20 @@ To start using the Ad Selection API, sellers and buyers need to modify their web
 * Buyers: To create interest groups and store them in the browser, update the code on your advertising partners' websites.  You can use the delegation mechanism to restrict and allow Interest Group creation on third-party domains.
 
 To learn more about which API methods are available and to view example code, see [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md).
+
+
+<!-- ====================================================================== -->
+## Provide feedback about the origin trial
+
+To provide feedback about the Ad Selection API origin trial:
+
+1. Go to the [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) portal at Github.io.
+
+1. Go to the row for the **Ad Selection API** origin trial.
+
+1. Click the **issues** button in the row.  The `privacy-preserving-ads` repo opens.
+
+1. Submit a new issue, or click the **Issues** tab to view the issues.
 
 
 <!-- ====================================================================== -->

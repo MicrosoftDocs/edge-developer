@@ -1,6 +1,6 @@
 ---
 title: Test and automation in Microsoft Edge
-description: DevTools Protocol instruments, debugs, profiles browsers.  Origin Trials to try experimental APIs.  Playwright cross-browser automation via 1 API.  Puppeteer API automates via DevTools Protocol.  WebDriver simulates user interaction.  webhint linting checks for errors, best practices.
+description: DevTools Protocol instruments, debugs, profiles browsers.  Origin trials to try experimental APIs.  Playwright cross-browser automation via 1 API.  Puppeteer API automates via DevTools Protocol.  WebDriver simulates user interaction.  webhint linting checks for errors, best practices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -15,7 +15,7 @@ There are many tools to automate your testing of Microsoft Edge:
 | Tool | Description |
 | --- | --- |
 | DevTools Protocol | Instrument, inspect, debug, and profile browsers including Microsoft Edge. |
-| Origin Trials | Try out experimental APIs on live sites for a limited period of time. |
+| Origin trials | Try out experimental APIs on live sites for a limited period of time. |
 | Playwright | The Playwright library provides cross-browser automation through a single API. |
 | Puppeteer | The Puppeteer library provides a high-level API to control browsers, including Microsoft Edge, using the DevTools Protocol. |
 | WebDriver | Automates testing in Microsoft Edge by simulating user interaction.  Provides advantages over JavaScript unit tests. |
@@ -27,17 +27,23 @@ These tools are described below.
 <!-- ====================================================================== -->
 ## DevTools Protocol
 
-Use the DevTools Protocol to instrument, inspect, debug, and profile browsers, including Microsoft Edge.  By building Microsoft Edge on the Chromium open-source project, the Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.  For information about how Microsoft Edge uses the Chromium open-source project, see [Microsoft Edge and Chromium Open Source: Our Intent](https://github.com/MicrosoftEdge/MSEdge/blob/master/README.md).
+Use the DevTools Protocol to instrument, inspect, debug, and profile browsers, including Microsoft Edge.  By building Microsoft Edge on the Chromium open-source project, the Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.
+
+For information about how Microsoft Edge uses the Chromium open-source project, see [Microsoft Edge and Chromium Open Source: Our Intent](https://github.com/MicrosoftEdge/MSEdge/blob/master/README.md).
 
 See [DevTools Protocol](devtools-protocol.md).
 
 
 <!-- ====================================================================== -->
-## Origin Trials
+## Origin trials
 
-You can use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you don't need to go to `edge://flags` and turn on feature flags.
+Use origin trials to try out experimental APIs on your own live site for a limited period of time.  When using origin trials, users of Microsoft Edge that visit your site can run code that uses experimental APIs.
 
-To see a list of the available origin trials and register your origin to give them a try, see [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/).  You can also provide feedback to browser engineers and the web standards community about the design of the API, your use cases, or your experience using the APIs.
+To see a list of the available origin trials and register your origin to try out any of the origin trials, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
+
+You can provide feedback to browser feature engineers and the web standards community about the design of the feature's API, your use-cases, or your experience with using the feature's API, by using the **Issues** tab in the browser feature's repo.
+
+See [Use origin trials in Microsoft Edge](../origin-trials/index.md).
 
 
 <!-- ====================================================================== -->
