@@ -151,7 +151,7 @@ You've found detached elements that the browser can't garbage-collect, and locat
 
 The `collectOldMessages` method of the `Room` class (on line 26) contains comments about a potential leak, and recommends making a single cache for all `Room` instances, instead of a cache for each `Room` instance, and then monitoring how many elements get into that cache over time.
 
-There is a potential leak here.  The cleanup in this method occurs at a different rate than the addition of new messages.  We can easily find ourselves in a situation where we have messages in the cache that don't need (or can't) be reused right away.  This is not likely to become too much, but the cache is per-room, which multiplies the problem.
+There is a potential leak in the existing code, because the cleanup in this method occurs at a different rate than the addition of new messages.  We can easily find ourselves in a situation where we have messages in the cache that don't need (or can't) be reused right away.  This is not likely to become too much, but the cache is per-room, which multiplies the problem.
 
 
 <!-- ====================================================================== -->
