@@ -254,12 +254,9 @@ Added a new `RestartRequested` event.  The `RestartRequested` event is raised wh
 * `CoreWebView2RestartRequestedEventArgs` Class:
     * [CoreWebView2RestartRequestedEventArgs.Priority Property](/dotnet/api/microsoft.web.webview2.core.corewebview2restartrequestedeventargs.priority?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)
 
-* [CoreWebView2RestartRequestedPriority Class](/dotnet/api/microsoft.web.webview2.core.corewebview2restartrequestedpriority?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)<!-- todo: enum, or class? -->
-
-<!-- if enum (not class) in .net:
+* [CoreWebView2RestartRequestedPriority Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2restartrequestedpriority?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)
     * `CoreWebView2RestartRequestedPriority.High`
     * `CoreWebView2RestartRequestedPriority.Normal`
--->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
