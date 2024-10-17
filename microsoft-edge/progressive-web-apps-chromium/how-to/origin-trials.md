@@ -1,5 +1,5 @@
 ---
-title: Experimental features and origin trials
+title: Experimental features and origin trials for PWAs
 description: How to test experimental PWA features in Microsoft Edge and enroll your site in origin trials to use these features in production with your users.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,20 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/20/2023
 ---
-# Experimental features and origin trials
+# Experimental features and origin trials for PWAs
+
+<!-- todo: add scope extensions OT, per
+https://learn.microsoft.com/microsoft-edge/progressive-web-apps-chromium/how-to/handle-urls#handle-links-from-other-origins-with-scope-extensions
+
+<!-- ====================================================================== --
+## Handle links from other origins by using scope extensions
+
+copypaste desc
+
+See also:
+* [Handle links from other origins by using scope extensions](./handle-urls.md) in _Handle links to your Progressive Web App_.
+-->
+
 
 Some of the PWA features in Microsoft Edge are still experimental.  You can turn on support for an experimental feature in your own Microsoft Edge browser for website development, and in the website user's Microsoft Edge browser:
 
@@ -44,13 +57,13 @@ Microsoft Edge sometimes uses origin trials to test features for specific domain
 To see what origin trials (experimental features) are available, go to [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
 See also:
-* [Use Origin Trials in Microsoft Edge](../../origin-trials/index.md)
+* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [Use Origin Trials in Microsoft Edge](../../origin-trials/index.md)
+* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
    * [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials)
 * [What's New in Progressive Web Apps](../whats-new/pwa.md)<!-- link not in article body -->
