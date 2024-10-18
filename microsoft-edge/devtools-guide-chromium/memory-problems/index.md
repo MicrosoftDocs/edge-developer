@@ -23,16 +23,30 @@ ms.date: 10/17/2024
    limitations under the License.  -->
 # Fix memory problems
 
-Learn how to use Microsoft Edge and DevTools to find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections.
+<!--
+Memory tool option buttons (profiling types):
+[1] Heap snapshot
+[2] Allocations on timeline
+[3] Allocation sampling
+[4] Detached elements
+-->
 
-*  Find out how much memory your page is currently using with the Microsoft Edge Browser Task Manager.
-*  Visualize memory usage over time with the **Memory** tool.
-*  Identify detached DOM trees (a common cause of memory leaks) with **Heap snapshot**.
-*  Find out when new memory is being allocated in your JavaScript heap (JS heap) with **Allocation instrumentation on timeline**.
+Use Microsoft Edge and DevTools to find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections:
+
+| Task | Tool | Article section |
+|---|---|---|
+| Find out how much memory your page is currently using, by using the Microsoft Edge Browser Task Manager | Microsoft Edge Browser Task Manager | [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](#monitor-memory-use-in-realtime-microsoft-edge-browser-task-manager) |
+| Visualize memory usage over time | **Performance** tool > **Memory** checkbox | [Visualize memory leaks (Performance tool: Memory checkbox)](#visualize-memory-leaks-performance-tool-memory-checkbox) |
+| Spot frequent garbage collections | Microsoft Edge Browser Task Manager, or **Performance** tool > **Memory** checkbox, then [2] **Allocations on timeline** profiling type | [Spot frequent garbage collections (Microsoft Edge Browser Task Manager, "Allocations on timeline" profiling type)](#spot-frequent-garbage-collections-microsoft-edge-browser-task-manager-allocations-on-timeline-profiling-type) |
+| Identify detached DOM trees (a common cause of memory leaks) | **Memory** tool > [1] **Heap snapshot** option button (profiling type) | [Discover detached DOM tree memory leaks ("Heap snapshot" profiling type)](#discover-detached-dom-tree-memory-leaks-heap-snapshot-profiling-type) |
+| Find out when new memory is being allocated in your JavaScript heap (JS heap) | **Memory** tool > [2] **Allocations on timeline** option button (profiling type) | [Identify JS heap memory leaks ("Allocations on timeline" profiling type)](#identify-js-heap-memory-leaks-allocations-on-timeline-profiling-type) |
+| Investigate memory allocation by function | **Memory** tool > [3] **Allocation sampling** option button (profiling type) | [Investigate memory allocation by function ("Allocation sampling" profiling type)](#investigate-memory-allocation-by-function-allocation-sampling-profiling-type) |
+| Reduce garbage | **Memory** tool > [3] **Allocation sampling** option button (profiling type) > **Include objects discarded by major\|minor GC** checkboxes | [Reduce garbage ("Allocation sampling" profiling type: "Include objects" checkboxes)](#reduce-garbage-allocation-sampling-profiling-type-include-objects-checkboxes) |
+| Find DOM tree memory leaks | **Memory** tool > [4] **Detached elements** option button (profiling type) | [Find DOM tree memory leaks ("Detached elements" profiling type)](#find-dom-tree-memory-leaks-detached-elements-profiling-type) |
 
 
 <!-- ====================================================================== -->
-## Overview
+## Overview of fixing memory problems
 
 In the spirit of the **RAIL**<!-- [RAIL](/profile/evaluate-performance/rail) --> performance model, the focus of your performance efforts should be your users.
 
@@ -47,21 +61,6 @@ Memory issues are important because they are often perceivable by users.  Users 
 *  **The performance of a page is delayed or appears to pause frequently**.  This is possibly a symptom of frequent garbage collections.  Garbage collection is when the browser reclaims memory.  The browser decides when this happens.  During collections, all script running is paused.  So if the browser is garbage collecting a lot, script runtime is going to get paused a lot.
 
 
-<!-- ------------------------------ -->
-#### Tools covered
-
-This article's sections focus on the following tools or features:
-
-| Task | Tool |
-|---|---|
-| [Monitor memory use in realtime with the Microsoft Edge Browser Task Manager](#monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager) | Microsoft Edge Browser Task Manager |
-| [Visualize memory leaks by using the Performance tool's Memory checkbox](#visualize-memory-leaks-by-using-the-performance-tools-memory-checkbox) | **Performance** tool > **Memory** checkbox |
-| [Find DOM tree memory leaks by using the Detached Elements profiling type](#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type) | **Memory** tool > **Detached elements** option button (profiling type) |
-| [Discover detached DOM tree memory leaks by using Heap Snapshots](#discover-detached-dom-tree-memory-leaks-by-using-heap-snapshots) | **Memory** tool > **Heap snapshot** option button (profiling type) |
-| [Identify JS heap memory leaks with Allocation instrumentation on timeline](#identify-js-heap-memory-leaks-with-allocation-instrumentation-on-timeline) | **Memory** tool > **Allocations on timeline** option button (profiling type) |
-| [Investigate memory allocation by function](#investigate-memory-allocation-by-function) | **Memory** tool > **Allocation sampling** option button (profiling type) |
-| [Reduce garbage with additional settings for allocation sampling](#reduce-garbage-with-additional-settings-for-allocation-sampling) | **Memory** tool > **Allocation sampling** option button (profiling type) > **Include objects discarded by major\|minor GC** checkboxes |
-| [Spot frequent garbage collections](#spot-frequent-garbage-collections) | Microsoft Edge Browser Task Manager, or **Performance** tool > **Memory** checkbox |
 
 
 <!-- ------------------------------ -->
@@ -74,8 +73,9 @@ There are no hard numbers here, because different devices and browsers have diff
 The key here is to use the RAIL model and focus on your users.  Find out what devices are popular with your users, and then test out your page on those devices.  If the experience is consistently bad, the page may be exceeding the memory capabilities of those devices.
 
 
+<!-- Microsoft Edge Browser Task Manager -->
 <!-- ====================================================================== -->
-## Monitor memory use in realtime with the Microsoft Edge Browser Task Manager
+## Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
 
 Use the Microsoft Edge Browser Task Manager as a starting point to your memory issue investigation.  The Microsoft Edge Browser Task Manager is a realtime monitor that tells you how much memory a page is currently using.
 
@@ -96,8 +96,9 @@ These two columns tell you different things about how your page is using memory:
 <!--*  live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->
 
 
+<!-- Performance tool >  Memory checkbox -->
 <!-- ====================================================================== -->
-## Visualize memory leaks by using the Performance tool's Memory checkbox
+## Visualize memory leaks (Performance tool: Memory checkbox)
 
 You can also use the **Performance** tool as another starting point in your investigation.  The **Performance** tool helps you visualize the memory use of a page over time.
 
@@ -139,46 +140,27 @@ The key thing here is the fact that the JS heap ends higher than it began (the "
 <!--todo: the Heap snapshots and Profiles panel aren't found in Edge  -->
 
 
+<!-- Performance tool > Memory checkbox -->
 <!-- ====================================================================== -->
-## Find DOM tree memory leaks by using the Detached Elements profiling type
+## Spot frequent garbage collections (Microsoft Edge Browser Task Manager, "Allocations on timeline" profiling type)
 
-The **Detached elements** profiling type helps you fix memory leaks due to detached DOM elements.  The **Memory** tool has a profile type called **Detached elements**, which shows detached objects that are retained by a JavaScript reference:
+If your page appears to pause frequently, then you may have garbage collection issues.  To spot frequent garbage collection, you can use either:
 
-![Detached elements profile type](./index-images/detached-elements-profile-type.png)
+* Microsoft Edge Browser Task Manager.  Frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collection.
 
-This shows a view of the detached nodes to help you identify memory leaks on your webpage:
+* The **Performance** tool's **Memory** checkbox.  In Performance memory recordings, frequent changes (rising and falling) to the JS heap or node count graphs indicate frequent garbage collection.
 
-![Detached elements view](./index-images/detached-nodes.png)
-
-
-To analyze a detached element by using the **Detached Elements** demo webpage:
-
-1. Open the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/) in a new window or tab.
-
-1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
-
-1. In DevTools, in the **Activity Bar**, click the **Memory** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
-
-   ![Open the Memory tool](./index-images/memory-tool-detached-elements-option-button.png)
-
-1. Select the **Detached elements** option button.
-
-1. Click the **Start** button.
-
-   The **Memory** tool shows the detached node exactly as it's represented in the DOM:
-
-   ![A detached node represented in the Memory tool like it's represented in the DOM](./index-images/representation-like-in-dom.png)
-
-<!-- 
-In the **Memory tool**, the detached element is not linked to the retainer path.  The workflow for the **Detached elements** profiling type in the **Memory** tool is simpler than in the **Detached Elements** tool: the workflow doesn't need to link between the detached node in the **Detached Elements** tool and the detached node in the heap snapshot in the **Memory** tool in the **Drawer**, because the **Memory** tool shows the detached node exactly as it's represented in the DOM.
--->
+After you have identified the problem by using either of those tool, you can then use an **Allocations on timeline** recording to find out where memory is being allocated, and which functions are causing the allocations.
 
 
+<!-- [1] Heap snapshot -->
 <!-- ====================================================================== -->
-## Discover detached DOM tree memory leaks by using Heap Snapshots
+## Discover detached DOM tree memory leaks ("Heap snapshot" profiling type)
 <!-- don't change heading wording; would break link from DevTools > Memory tool > Help-mode tooltip (would default to top of article) -->
 
-Starting with Microsoft Edge 130, this approach has been replaced by the **Detached elements** profiling type.  See [Find DOM tree memory leaks by using the Detached Elements profiling type](#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type), above.
+After using the **Heap snapshot** option button (profiling type) in the **Memory** tool, you can type **Detached** in the **Class filter** text box.
+
+Starting with Microsoft Edge 130, this approach has been replaced by the **Detached elements** profiling type.  See [Find DOM tree memory leaks by using the Detached Elements profiling type](#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type), above.  The present approach still works.
 
 A DOM node is only garbage-collected when there are no references to the node from either the DOM tree or JavaScript code running on the page.  A node is said to be "detached" when it is removed from the DOM tree but some JavaScript still references it.  Detached DOM nodes are a common cause of memory leaks.
 
@@ -245,12 +227,13 @@ See also:
 -->
 
 
+<!-- [2] Allocations on timeline -->
 <!-- ====================================================================== -->
-## Identify JS heap memory leaks with Allocation instrumentation on timeline
+## Identify JS heap memory leaks ("Allocations on timeline" profiling type)
 
-**Allocation instrumentation on timeline** is another tool that can help you track down memory leaks in your JS heap.
+In the **Memory** tool, use the **Allocations on timeline** option button (profiling type).  This is one of the DevTools features to track down memory leaks in your JS heap.
 
-Demonstrate **Allocation instrumentation on timeline**  using the following code:
+Given the following code:
 
 ```javascript
 var x = [];
@@ -260,13 +243,13 @@ function grow() {
 document.getElementById('grow').addEventListener('click', grow);
 ```
 
-Every time that the button referenced in the code is clicked, a string of one million characters is added to the `x` array.
+Every time that the button that's referenced in the code is clicked, a string of one million characters is added to the `x` array.
 
-To record an Allocation instrumentation on timeline:
+To record allocations on the timeline:
 
 1. Open DevTools, and select the **Memory** tool.
 
-1. Click the **Allocation instrumentation on timeline** option button, then click the **Start** button.
+1. Click the **Allocations on timeline** option button, then click the **Start** button.
 
 1. Perform the action that you suspect is causing the memory leak.
 
@@ -289,8 +272,9 @@ To record an Allocation instrumentation on timeline:
 ![Object details](./index-images/allocation-timeline-snapshot-focused-constructor-expanded.png)
 
 
+<!-- [3] Allocation sampling -->
 <!-- ====================================================================== -->
-## Investigate memory allocation by function
+## Investigate memory allocation by function ("Allocation sampling" profiling type)
 
 Use the **Allocation sampling** profiling type to view memory allocation by JavaScript function.
 
@@ -311,10 +295,11 @@ DevTools shows you a breakdown of memory allocation by function.  The default vi
 ![Allocation sampling](./index-images/memory-allocation-sampling-heavy-bottom-up.png)
 
 
+<!-- [3] Allocation sampling -->
 <!-- ====================================================================== -->
-## Reduce garbage with additional settings for allocation sampling
+## Reduce garbage ("Allocation sampling" profiling type: "Include objects" checkboxes)
 
-By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are created, removed, and then garbage collected (GC'd) aren't displayed in the **Memory** tool when profiling using the **Allocation sampling** or **Allocation instrumentation on timeline** types.
+By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are created, removed, and then garbage collected (GC'd) aren't displayed in the **Memory** tool when profiling using the **Allocation sampling** or **Allocations on timeline** profiling types.
 
 You can trust the browser to clean up garbage from your code.  However, it is important to consider that GC itself is an expensive operation and multiple GCs can slow down your user's experience of your website or app.  When recording in the **Performance** tool with the **Memory** checkbox turned on, you can see the GC operation happen at the steep cliffs (sudden decreases) in the heap chart.
 
@@ -322,7 +307,7 @@ You can trust the browser to clean up garbage from your code.  However, it is im
 
 By reducing the amount of garbage your code is creating, you can reduce the cost of each individual GC and the number of GC operations.  To track objects that are discarded by GC, configure the **Allocation sampling** profiling type with settings.
 
-1. Click the **Allocation sampling** option button.
+1. In the **Memory** tool, select the **Allocation sampling** option button.
 
 1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
 
@@ -339,18 +324,46 @@ DevTools now tracks all of the objects that were GC'd during the recording.  Use
 If you are investigating objects that were only GC'd during specific major or minor GC operations, configure the settings appropriately to track the operation you care about. To learn more about the differences between major and minor GC, see [Trash talk: the Orinoco garbage collector | V8 JavaScript engine developer blog](https://v8.dev/blog/trash-talk).
 
 
+<!-- [4] Detached elements -->
 <!-- ====================================================================== -->
-## Spot frequent garbage collections
+## Find DOM tree memory leaks ("Detached elements" profiling type)
 
-If your page appears to pause frequently, then you may have garbage collection issues.
+<!-- todo:
+clean up
+redo pngs
+trim
+-->
 
-You can use either the Microsoft Edge Browser Task Manager or Performance memory recordings to spot frequent garbage collection.
+The **Detached elements** option button (profiling type) helps you fix memory leaks due to detached DOM elements.  The **Memory** tool has a profile type called **Detached elements**, which shows detached objects that are retained by a JavaScript reference:
 
-*  In the Microsoft Edge Browser Task Manager, frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collection.
+![Detached elements profile type](./index-images/detached-elements-profile-type.png)
 
-*  In Performance recordings, frequent changes (rising and falling) to the JS heap or node count graphs indicate frequent garbage collection.
+This shows a view of the detached nodes to help you identify memory leaks on your webpage:
 
-After you have identified the problem, you can use an **Allocation instrumentation on timeline** recording to find out where memory is being allocated and which functions are causing the allocations.
+![Detached elements view](./index-images/detached-nodes.png)
+
+
+To analyze a detached element by using the **Detached Elements** demo webpage:
+
+1. Open the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/) in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+
+1. In DevTools, in the **Activity Bar**, click the **Memory** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
+
+   ![Open the Memory tool](./index-images/memory-tool-detached-elements-option-button.png)
+
+1. Select the **Detached elements** option button.
+
+1. Click the **Start** button.
+
+   The **Memory** tool shows the detached node exactly as it's represented in the DOM:
+
+   ![A detached node represented in the Memory tool like it's represented in the DOM](./index-images/representation-like-in-dom.png)
+
+<!-- 
+In the **Memory tool**, the detached element is not linked to the retainer path.  The workflow for the **Detached elements** profiling type in the **Memory** tool is simpler than in the **Detached Elements** tool: the workflow doesn't need to link between the detached node in the **Detached Elements** tool and the detached node in the heap snapshot in the **Memory** tool in the **Drawer**, because the **Memory** tool shows the detached node exactly as it's represented in the DOM.
+-->
 
 
 <!-- ====================================================================== -->
