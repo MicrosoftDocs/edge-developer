@@ -60,6 +60,7 @@ See also:
 
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do any of the following: 
 
+<!-- todo: update for Focus Mode -->
 *  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
 *  Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
 *  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type **tooltips**.

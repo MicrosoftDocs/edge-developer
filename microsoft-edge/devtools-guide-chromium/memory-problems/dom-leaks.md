@@ -1,5 +1,5 @@
 ---
-title: Debug DOM memory leaks with the Detached Elements tool
+title: Debug DOM memory leaks by using the Detached Elements tool
 description: Find and fix DOM memory leaks by using the Detached Elements tool, in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,11 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/17/2024
 ---
-# Debug DOM memory leaks with the Detached Elements tool
+# Debug DOM memory leaks by using the Detached Elements tool
 
-The **Detached Elements** tool finds and displays all of the detached elements on a webpage.  To increase the performance of your webpage, use the **Detached Elements** tool to find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
+The **Detached Elements** tool is one way to find and display all of the detached elements on a webpage.  See also [Find DOM tree memory leaks ("Detached elements" profiling type)](#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
+
+To increase the performance of your webpage, find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
 
 ![The Detached Elements tool, showing list of detached elements](./dom-leaks-images/detached-elements-tool.png)
 

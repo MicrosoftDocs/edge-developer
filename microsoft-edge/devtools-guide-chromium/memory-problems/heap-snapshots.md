@@ -264,7 +264,11 @@ To find an object in the collected heap, you can search using **Ctrl+F** and giv
 <!-- ====================================================================== -->
 ## Uncover DOM leaks
 
-The **Memory** tool has the ability to show the bidirectional dependencies that sometimes exist between browser native objects (DOM nodes, CSS rules) and JavaScript objects.  This helps to discover memory leaks that happen because of forgotten detached DOM nodes that remain in memory.
+The **Memory** tool has the ability to show the bidirectional dependencies that sometimes exist between browser native objects (DOM nodes, CSS rules) and JavaScript objects.  This helps to discover memory leaks that happen because of forgotten, detached DOM nodes that remain in memory.
+
+See also:
+* [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
+
 
 Consider the following DOM tree:
 
