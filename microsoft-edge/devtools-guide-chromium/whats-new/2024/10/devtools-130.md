@@ -106,7 +106,7 @@ See also:
 
 <!-- Subtitle: The warning icon and expand button on warning messages in the Console now meet the standard luminosity ratio of 3:1.-->
 
-In the **Console** tool, the Warning count expander button on warning messages in the **Console** previously didn't meet the standard luminosity ratio of 3:1:
+In the **Console** tool, the Warning count expander button on warning messages in the **Console** previously didn't meet the standard luminosity ratio of 3:1.
 
 ![Low luminosity ratio for the Warning count expander button](./devtools-130-images/console-icon-luminosity-ratio-before.png)
 
