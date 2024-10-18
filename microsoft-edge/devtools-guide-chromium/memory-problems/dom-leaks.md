@@ -10,7 +10,7 @@ ms.date: 10/17/2024
 ---
 # Debug DOM memory leaks by using the Detached Elements tool
 
-The **Detached Elements** tool is one way to find and display all of the detached elements on a webpage.  See also [Find DOM tree memory leaks ("Detached elements" profiling type)](#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
+The **Detached Elements** tool is one way to find and display all of the detached elements on a webpage.  See also [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 
 To increase the performance of your webpage, find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
 
