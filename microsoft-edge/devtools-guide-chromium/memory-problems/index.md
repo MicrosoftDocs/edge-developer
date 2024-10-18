@@ -48,6 +48,23 @@ Memory issues are important because they are often perceivable by users.  Users 
 
 
 <!-- ------------------------------ -->
+#### Tools covered
+
+This article's sections focus on the following tools or features:
+
+| Task | Tool |
+|---|---|
+| [Monitor memory use in realtime with the Microsoft Edge Browser Task Manager](#monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager) | Microsoft Edge Browser Task Manager |
+| [Visualize memory leaks by using the Performance tool's Memory checkbox](#visualize-memory-leaks-by-using-the-performance-tools-memory-checkbox) | **Performance** tool > **Memory** checkbox |
+| [Find DOM tree memory leaks by using the Detached Elements profiling type](#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type) | **Memory** tool > **Detached elements** option button (profiling type) |
+| [Discover detached DOM tree memory leaks by using Heap Snapshots](#discover-detached-dom-tree-memory-leaks-by-using-heap-snapshots) | **Memory** tool > **Heap snapshot** option button (profiling type) |
+| [Identify JS heap memory leaks with Allocation instrumentation on timeline](#identify-js-heap-memory-leaks-with-allocation-instrumentation-on-timeline) | **Memory** tool > **Allocations on timeline** option button (profiling type) |
+| [Investigate memory allocation by function](#investigate-memory-allocation-by-function) | **Memory** tool > **Allocation sampling** option button (profiling type) |
+| [Reduce garbage with additional settings for allocation sampling](#reduce-garbage-with-additional-settings-for-allocation-sampling) | **Memory** tool > **Allocation sampling** option button (profiling type) > **Include objects discarded by major\|minor GC** checkboxes |
+| [Spot frequent garbage collections](#spot-frequent-garbage-collections) | Microsoft Edge Browser Task Manager, or **Performance** tool > **Memory** checkbox |
+
+
+<!-- ------------------------------ -->
 #### Memory bloat: How much is "too much"?
 
 A memory leak is easy to define.  If a site is progressively using more and more memory, then you have a leak.  But memory bloat is a bit harder to pin down.  What qualifies as "using too much memory"?
@@ -80,7 +97,7 @@ These two columns tell you different things about how your page is using memory:
 
 
 <!-- ====================================================================== -->
-## Visualize memory leaks with Performance tool
+## Visualize memory leaks by using the Performance tool's Memory checkbox
 
 You can also use the **Performance** tool as another starting point in your investigation.  The **Performance** tool helps you visualize the memory use of a page over time.
 
@@ -158,7 +175,7 @@ In the **Memory tool**, the detached element is not linked to the retainer path.
 
 
 <!-- ====================================================================== -->
-## Discover detached DOM tree memory leaks with Heap Snapshots
+## Discover detached DOM tree memory leaks by using Heap Snapshots
 <!-- don't change heading wording; would break link from DevTools > Memory tool > Help-mode tooltip (would default to top of article) -->
 
 Starting with Microsoft Edge 130, this approach has been replaced by the **Detached elements** profiling type.  See [Find DOM tree memory leaks by using the Detached Elements profiling type](#find-dom-tree-memory-leaks-by-using-the-detached-elements-profiling-type), above.
@@ -191,7 +208,7 @@ To create a snapshot:
 
 1. Open DevTools and go to the **Memory** tool.
 
-1. Click the **Heap snapshot** radio button, and then click the **Take snapshot** button at the bottom of the tool.
+1. Click the **Heap snapshot** option button, and then click the **Take snapshot** button at the bottom of the tool.
 
    ![Taking a heap snapshot](./index-images/memory-heap-snapshot.png)
 
@@ -249,7 +266,7 @@ To record an Allocation instrumentation on timeline:
 
 1. Open DevTools, and select the **Memory** tool.
 
-1. Click the **Allocation instrumentation on timeline** radio button, then click the **Start** button.
+1. Click the **Allocation instrumentation on timeline** option button, then click the **Start** button.
 
 1. Perform the action that you suspect is causing the memory leak.
 
@@ -279,7 +296,7 @@ Use the **Allocation sampling** profiling type to view memory allocation by Java
 
 ![Record Allocation sampling](./index-images/memory-allocation-sampling.png)
 
-1. Click the **Allocation sampling** radio button.
+1. Click the **Allocation sampling** option button.
 
 1. If there is a worker on the page, you can select that as the profiling target, by using the dropdown menu next to the **Start** button.
 
