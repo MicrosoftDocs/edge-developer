@@ -5,12 +5,9 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 10/15/2024
+ms.date: 10/18/2024
 ---
 # Use origin trials in Microsoft Edge
-
-<!-- ====================================================================== 
-## Introduction -->
 
 Use origin trials to try out experimental APIs on your own live site for a limited period of time.  When using origin trials, users of Microsoft Edge that visit your site can run code that uses experimental APIs.
 
@@ -136,7 +133,7 @@ The mechanism that detects and uses Microsoft Edge origin-trial tokens is only s
 <!-- ====================================================================== -->
 ## Renewing an origin trial token
 
-Origin trial tokens expire in 6 weeks, by default<!-- todo: strike ", by default"? -->.  When the origin trial token expires, you must renew the token, which means generating a fresh, new token for this origin trial.  You can renew the token before it expires.
+Origin trial tokens expire in 6 weeks, by default<!-- todo: strike or clarify -->.  When the origin trial token expires, you must renew the token, which means generating a fresh, new token for this origin trial.  You can renew the token before it expires.
 
 To renew an origin trial token:
 

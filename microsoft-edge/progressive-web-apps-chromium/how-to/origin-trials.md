@@ -10,19 +10,6 @@ ms.date: 10/20/2023
 ---
 # Experimental features and origin trials for PWAs
 
-<!-- todo: add scope extensions OT, per
-https://learn.microsoft.com/microsoft-edge/progressive-web-apps-chromium/how-to/handle-urls#handle-links-from-other-origins-with-scope-extensions
-
-<!-- ====================================================================== --
-## Handle links from other origins by using scope extensions
-
-copypaste desc
-
-See also:
-* [Handle links from other origins by using scope extensions](./handle-urls.md) in _Handle links to your Progressive Web App_.
--->
-
-
 Some of the PWA features in Microsoft Edge are still experimental.  You can turn on support for an experimental feature in your own Microsoft Edge browser for website development, and in the website user's Microsoft Edge browser:
 
 * [Turn on the experimental feature in your own browser](#turn-on-the-experimental-feature-in-your-own-browser)
@@ -52,7 +39,7 @@ To turn experimental features on or off:
 
 To test an experimental feature in production with your users, enroll your site in an origin trial.  To turn on support for an experimental feature in users' browsers, enroll your site in an origin trial, obtain a token, and then add the token to your website.
 
-Microsoft Edge sometimes uses origin trials to test features for specific domains or websites.  You may want to use an origin trial for your website to apply a specific feature.  As a website owner, you can enroll in an origin trial.  An origin trial provides features to a percentage<!-- todo: clarify; be specific; which browsers/users? --> of Microsoft Edge users who visit your website.
+Microsoft Edge sometimes uses origin trials to test features for specific domains or websites.  You may want to use an origin trial for your website to apply a specific feature.  As a website owner, you can enroll in an origin trial.  An origin trial provides features to a percentage<!-- todo: which browsers/users? --> of Microsoft Edge users who visit your website.
 
 To see what origin trials (experimental features) are available, go to [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 

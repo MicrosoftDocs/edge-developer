@@ -58,8 +58,6 @@ When the feature can be used in Microsoft Edge and is no longer in origin trial,
 
 See also:
 * [Experimental features and origin trials for PWAs](./origin-trials.md)
-<!-- todo: if a "scope extensions" section gets added in that article, link to # anchor instead:
-* [Scope extensions](./origin-trials.md#scope-extensions) in _Experimental features and origin trials for PWAs_.-->
 
 
 <!-- ====================================================================== -->
