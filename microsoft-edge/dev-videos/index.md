@@ -626,6 +626,10 @@ December 9, 2021
 
 [![Thumbnail image for video "Debug memory leaks with the Microsoft Edge Detached Elements tool"](./index-images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
 
+To debug DOM memory leaks, use either:
+* The **Detached Elements** tool.  Detached nodes have a link to the associated JavaScript code.
+* The **Detached elements** profiling type in the **Memory** tool.
+
 The **Detached Elements** tool helps you investigate and resolve DOM memory leaks.
 
 Memory leaks occur when the JavaScript code of an application retains more and more objects in memory instead of releasing them for the browser to garbage-collect.  We built the **Detached Elements** tool with the Microsoft Teams developers, and it has already helped us find and fix memory leaks across many of our own websites and apps.
