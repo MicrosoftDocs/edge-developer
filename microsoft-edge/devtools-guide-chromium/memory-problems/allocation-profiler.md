@@ -84,7 +84,7 @@ Clicking on a specific object in the heap shows the retaining tree in the bottom
 <!-- ====================================================================== -->
 ## View memory allocation by function
 
-You can view memory allocation by JavaScript function.  See [Investigate memory allocation by function](index.md#investigate-memory-allocation-by-function).
+You can view memory allocation by JavaScript function.  See [Investigate memory allocation by function ("Allocation sampling" profiling type)](./index.md#investigate-memory-allocation-by-function-allocation-sampling-profiling-type).
 
 
 <!-- ====================================================================== -->

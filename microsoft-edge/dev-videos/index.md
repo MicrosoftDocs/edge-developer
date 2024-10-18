@@ -186,7 +186,7 @@ See also:
 * [What's New in DevTools (Microsoft Edge 109)](../devtools-guide-chromium/whats-new/2023/01/devtools-109.md)<!-- has Video section -->
 * [Share enhanced performance and memory traces](../devtools-guide-chromium/experimental-features/share-traces.md)
 * [Analyze CSS selector performance during Recalculate Style events](../devtools-guide-chromium/evaluate-performance/selector-stats.md) - selector stats.
-* [Reduce garbage with additional settings for allocation sampling](../devtools-guide-chromium/memory-problems/index.md#reduce-garbage-with-additional-settings-for-allocation-sampling) in _Fix memory problems_.
+* [Investigate memory allocation, with reduced garbage ("Include objects" checkboxes)](../devtools-guide-chromium/memory-problems/index.md#investigate-memory-allocation-with-reduced-garbage-include-objects-checkboxes) in _Fix memory problems_.
 * [Trash talk: the Orinoco garbage collector](https://v8.dev/blog/trash-talk)
 * [Heap Snapshot visualizer](https://microsoftedge.microsoft.com/addons/detail/heap-snapshot-visualizer/fceldlhognbemkgfacnffkdanocidgce) extension.
 
