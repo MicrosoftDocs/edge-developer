@@ -500,7 +500,7 @@
 # Detached Elements tool ------------------------------------------------------
             - name: Detached Elements tool
               items:
-                - name: Debug DOM memory leaks with the Detached Elements tool # added article
+                - name: Debug DOM memory leaks by using the Detached Elements tool # added article
                   href: devtools-guide-chromium/memory-problems/dom-leaks.md
                   displayName: Detached Elements tool
 # Developer Resources tool ----------------------------------------------------
@@ -546,7 +546,7 @@
 
                 - name: Record heap snapshots using the Memory tool
                   href: devtools-guide-chromium/memory-problems/heap-snapshots.md
-                  displayName: Memory tool
+                  displayName: Memory tool 
 
                 - name: Use Allocation instrumentation on timeline
                   href: devtools-guide-chromium/memory-problems/allocation-profiler.md

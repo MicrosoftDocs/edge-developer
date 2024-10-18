@@ -166,7 +166,7 @@ landingContent:
           - text: Fix memory problems
             url: ../memory-problems/index.md
 
-          - text: Debug DOM memory leaks with the Detached Elements tool
+          - text: Debug DOM memory leaks by using the Detached Elements tool
             url: ../memory-problems/dom-leaks.md
 
           - text: Understand security issues using the Security tool
