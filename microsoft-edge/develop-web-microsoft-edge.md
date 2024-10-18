@@ -91,7 +91,7 @@ See [Introduction to Microsoft Edge WebView2](webview2/index.md).
 The following are tools to automate testing in Microsoft Edge:
 
 *  **DevTools Protocol** is used to instrument, inspect, debug, and profile browsers.
-*  Use **Origin Trials** to try experimental APIs.
+*  Use **origin trials** to try experimental APIs.
 *  **Playwright** provides cross-browser automation through a single API.
 *  **Puppeteer**'s API controls Microsoft Edge via DevTools Protocol.
 *  **WebDriver** simulates user interaction with Microsoft Edge.
