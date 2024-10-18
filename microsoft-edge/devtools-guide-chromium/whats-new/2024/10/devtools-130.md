@@ -134,9 +134,6 @@ Microsoft Edge 130 also includes the following updates from the Chromium project
 * [Performance panel improvements](https://developer.chrome.com/blog/new-in-devtools-130#perf)
    * [Recommendations in live metrics](https://developer.chrome.com/blog/new-in-devtools-130#live-metrics-recommendations)
    * [Navigate breadcrumbs](https://developer.chrome.com/blog/new-in-devtools-130#breadcrumbs)
-* [Memory panel improvements](https://developer.chrome.com/blog/new-in-devtools-130#memory)
-   * [New 'Detached elements' profile](https://developer.chrome.com/blog/new-in-devtools-130#detached-elements)
-   * [Improved naming of plain JS objects](https://developer.chrome.com/blog/new-in-devtools-130#object-names)
 * [Turn off dynamic theming](https://developer.chrome.com/blog/new-in-devtools-130#dynamic-theming)
 
 
