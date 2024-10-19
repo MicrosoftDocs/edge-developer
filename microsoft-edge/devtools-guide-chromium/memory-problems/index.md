@@ -286,7 +286,7 @@ A DOM node is only garbage-collected when there are no references to the node fr
 | Tool | Pros | Cons | Docs |
 |---|---|---|---|
 | **Memory** tool > **Detached elements** option button (profiling type) | Shows elements as DOM tree nodes. | Doesn't link to JavaScript source code. | [Find DOM tree memory leaks ("Detached elements" profiling type)](#find-dom-tree-memory-leaks-detached-elements-profiling-type), below |
-| **Memory** tool > **Heap snapshot** option button (profiling type) | The detached element has a link to its JavaScript source code.<!-- todo: how get to JS? --> | Shows elements as objects in memory. | [Discover detached DOM tree memory leaks ("Heap snapshot" profiling type)](#discover-detached-dom-tree-memory-leaks-heap-snapshot-profiling-type), below |
+| **Memory** tool > **Heap snapshot** option button (profiling type) | The detached element has a link to its JavaScript source code.<!-- todo: how get to JS? --> | Shows elements as objects in memory. | [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached), below |
 | **Detached Elements** tool | Shows elements as DOM tree nodes.  The detached element has a link to its JavaScript source code. | Deprecated. | [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md) |
 
 
@@ -295,6 +295,8 @@ A DOM node is only garbage-collected when there are no references to the node fr
 ## Find DOM tree memory leaks ("Detached elements" profiling type)
 
 <!-- todo:
+read rendered section
+decide what's needed
 clean up
 redo pngs
 trim
@@ -336,6 +338,8 @@ To use the **Detached elements** option button (profiling type) to analyze a web
 
    ![A detached node represented in the Memory tool like it's represented in the DOM](./index-images/representation-like-in-dom.png)
 
+
+For additional ways to assess memory leaks, see [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
 <!-- 
 See also:
 * [Detached Elements profiling type in Memory tool](../whats-new/2024/10/devtools-130.md#detached-elements-profiling-type-in-memory-tool) in _What's New in DevTools (Microsoft Edge 130)_.
@@ -344,9 +348,14 @@ See also:
 
 <!--[1]-->
 <!-- ====================================================================== -->
-## Discover detached DOM tree memory leaks ("Heap snapshot" profiling type)
+## Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)
 
-One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Heap snapshot** option button (profiling type), then type **Detached** in the **Filter by class** text box, as follows.  See also [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
+One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Heap snapshot** option button (profiling type), then type **Detached** in the **Filter by class** text box, as follows.
+
+See also:
+* [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
+* [Record heap snapshots using the Memory tool](./heap-snapshots.md)
+
 
 The following code produces detached DOM nodes:
 
@@ -403,15 +412,21 @@ To use the **Heap snapshot** profiling type to find detached elements:
 
 <!--todo old: the allocation timeline doesn't appear in the DevTools in Edge  -->
 
+For additional ways to assess memory leaks, see [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
+
 
 <!-- ====================================================================== -->
 ## See also
 <!-- todo: all links in article -->
 
 * [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md)
+* [Record heap snapshots using the Memory tool](./heap-snapshots.md)
 <!--
 * [Detached Elements profiling type in Memory tool](../whats-new/2024/10/devtools-130.md#detached-elements-profiling-type-in-memory-tool) in _What's New in DevTools (Microsoft Edge 130)_.
 -->
+
+External:
+* [Finding and debugging memory leaks in JavaScript with Chrome DevTools](https://slid.es/gruizdevilla/memory) - slide deck (by Gonzalo Ruiz de Villa), which also applies to Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->

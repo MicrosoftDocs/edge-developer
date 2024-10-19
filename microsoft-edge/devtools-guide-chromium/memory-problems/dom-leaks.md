@@ -29,7 +29,10 @@ The **Detached Elements** tool is being deprecated.  Starting with Microsoft Edg
 In Microsoft Edge 133, the **Detached Elements** tool will be removed; instead, in the **Memory** tool, in the initial **Select profiling type** screen, select the **Detached elements** option button.  The CDP function `EdgeDOMMemory.getDetachedNodesIds` will be removed; use `DOM.getDetachedDomNodes` instead.
 
 See also:
-* [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
+* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - additional ways to assess memory leaks.
+   * [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
+   * [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
+   * [Record heap snapshots using the Memory tool](./heap-snapshots.md)
 
 
 <!-- ------------------------------ -->
@@ -216,8 +219,10 @@ After running GC, identify the DOM node causing others to be retained.  Because 
 The detached element is linked to the retainer path in the **Memory** tool.  The **Detached Elements** tool shows detached nodes, but also takes a heap snapshot, shows the **Memory** tool in the **Quick View** panel at the bottom of DevTools, and then links from the detached node in the **Detached Elements** tool to the detached node in the heap snapshot in the **Memory** tool.
 
 See also:
-* [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
-* [Record heap snapshots using the Memory tool](./heap-snapshots.md)
+* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - additional ways to assess memory leaks.
+   * [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
+   * [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
+   * [Record heap snapshots using the Memory tool](./heap-snapshots.md)
 
 
 <!-- ====================================================================== -->
@@ -262,8 +267,10 @@ If you find issues with how the **Detached Elements** feature works, [contact th
 ## See also
 <!-- todo: all links in article -->
 
-* [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
-* [Record heap snapshots using the Memory tool](./heap-snapshots.md)
+* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - additional ways to assess memory leaks.
+   * [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
+   * [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
+   * [Record heap snapshots using the Memory tool](./heap-snapshots.md)
 
 Demo:
 * [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/)

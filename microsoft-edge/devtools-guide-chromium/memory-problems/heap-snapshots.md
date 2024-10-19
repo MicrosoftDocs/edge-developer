@@ -267,7 +267,10 @@ To find an object in the collected heap, you can search using **Ctrl+F** and giv
 The **Memory** tool has the ability to show the bidirectional dependencies that sometimes exist between browser native objects (DOM nodes, CSS rules) and JavaScript objects.  This helps to discover memory leaks that happen because of forgotten, detached DOM nodes that remain in memory.
 
 See also:
-* [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
+* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - additional ways to assess memory leaks.
+   * [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
+   * [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
+   * [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md)
 
 
 Consider the following DOM tree:
@@ -418,9 +421,16 @@ The **Memory** tool exports a JSON file that contains all of the string objects 
 
 <!-- ====================================================================== -->
 ## See also
+<!-- todo: all links in article -->
 
+* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - additional ways to assess memory leaks.
+   * [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
+   * [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
+   * [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md)
 * [Memory terminology](./memory-101.md).
-* [Finding and debugging memory leaks in JavaScript with Chrome DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa, which also applies to Microsoft Edge DevTools.
+
+External:
+* [Finding and debugging memory leaks in JavaScript with Chrome DevTools](https://slid.es/gruizdevilla/memory) - slide deck (by Gonzalo Ruiz de Villa), which also applies to Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
