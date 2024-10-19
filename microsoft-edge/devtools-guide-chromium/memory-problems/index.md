@@ -172,9 +172,9 @@ After you have identified the problem by using either of those tool, you can the
 <!-- ====================================================================== -->
 ## Record a heap snapshot ("Heap snapshot" profiling type)
 
-See [Record heap snapshots using the Memory tool](./heap-snapshots.md).
-
-To use the **Heap snapshot** option button to analyze detached elements, see [Discover detached DOM tree memory leaks ("Heap snapshot" profiling type)](#discover-detached-dom-tree-memory-leaks-heap-snapshot-profiling-type), below.
+See:
+* [Record heap snapshots using the Memory tool](./heap-snapshots.md).
+* [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached), below.
 
 
 <!--[2]-->
