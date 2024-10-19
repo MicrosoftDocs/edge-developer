@@ -45,7 +45,9 @@ Use Microsoft Edge and DevTools to find memory issues that affect page performan
 | Record a heap snapshot | **Memory** tool > <!--[1]--> **Heap snapshot** option button | [Record a heap snapshot ("Heap snapshot" profiling type)](#record-a-heap-snapshot-heap-snapshot-profiling-type) |
 | Find out when new memory is being allocated in your JavaScript heap (JS heap) | **Memory** tool > <!--[2]--> **Allocations on timeline** option button | [Identify JS heap memory leaks ("Allocations on timeline" profiling type)](#identify-js-heap-memory-leaks-allocations-on-timeline-profiling-type) |
 | Investigate memory allocation by function | **Memory** tool > <!--[3]--> **Allocation sampling** option button | [Investigate memory allocation by function ("Allocation sampling" profiling type)](#investigate-memory-allocation-by-function-allocation-sampling-profiling-type) |
-| Find DOM tree memory leaks | **Memory** tool > <!--[4]--> **Detached elements** option button, or **Heap snapshot** option button > **Detached**; or **Detached Elements** tool | [Find DOM tree memory leaks from detached elements](#find-dom-tree-memory-leaks-from-detached-elements) |
+| Find DOM tree memory leaks | **Memory** tool > <!--[4]--> **Detached elements** option button | [Find DOM tree memory leaks ("Detached elements" profiling type)](#find-dom-tree-memory-leaks-detached-elements-profiling-type) |
+
+<!-- table lists headings for all 4 option buttons (profiling types), in UI order -->
 
 
 <!-- ------------------------------ -->
@@ -302,7 +304,7 @@ redo pngs
 trim
 -->
 
-One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Detached elements** option button (profiling type), as follows.  See also [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
+One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Detached elements** option button (profiling type), as follows.  For a comparison of tools to view detached elements, see [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
 
 
 The **Detached elements** option button (profiling type) helps you fix memory leaks due to detached DOM elements.  The resulting profile lists the detached objects that are retained by a JavaScript reference:
@@ -410,9 +412,10 @@ To use the **Heap snapshot** profiling type to find detached elements:
 
 1. To fix the particular memory leak, study the code that uses the `detachedTree` variable and make sure that the reference to the node is removed when it is no longer needed.
 
-<!--todo old: the allocation timeline doesn't appear in the DevTools in Edge  -->
 
 For additional ways to assess memory leaks, see [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
+
+<!--todo old: the allocation timeline doesn't appear in the DevTools in Edge  -->
 
 
 <!-- ====================================================================== -->
