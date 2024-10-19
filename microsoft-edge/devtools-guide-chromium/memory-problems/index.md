@@ -207,7 +207,7 @@ To record allocations on the timeline:
 
 1. When you are done, click the **Stop recording heap profile** ![stop recording](./index-images/stop-recording-icon.png) button.
 
-1. As you are recording, notice whether any blue bars show up on the Allocation instrumentation on the timeline, like in the following figure:
+1. As you are recording, notice whether any blue bars show up on the Allocation instrumentation on the timeline:
 
    ![New allocations](./index-images/allocation-timeline-snapshot-all.png)
 
@@ -228,7 +228,7 @@ To record allocations on the timeline:
 <!-- ====================================================================== -->
 ## Investigate memory allocation by function ("Allocation sampling" profiling type)
 
-Use the **Allocation sampling** profiling type to view memory allocation by JavaScript function.
+Use the **Allocation sampling** profiling type to view memory allocation by JavaScript function:
 
 ![Record Allocation sampling](./index-images/memory-allocation-sampling.png)
 
@@ -256,9 +256,11 @@ You can trust the browser to clean up garbage from your code.  However, it is im
 
 ![GC operation shown in the Performance tool](./index-images/gc-in-performance.png)
 
-By reducing the amount of garbage your code is creating, you can reduce the cost of each individual GC and the number of GC operations.  To track objects that are discarded by GC, configure the **Allocation sampling** profiling type with settings.
+By reducing the amount of garbage your code is creating, you can reduce the cost of each individual GC and the number of GC operations.
 
-1. In the **Memory** tool, select the **Allocation sampling** option button.
+To track objects that are discarded by GC, configure the **Allocation sampling** profiling type with settings:
+
+1. In the **Memory** tool, select the **Allocation sampling** option button (profiling type).
 
 1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
 
@@ -307,13 +309,7 @@ trim
 One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Detached elements** option button (profiling type), as follows.  For a comparison of tools to view detached elements, see [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
 
 
-The **Detached elements** option button (profiling type) helps you fix memory leaks due to detached DOM elements.  The resulting profile lists the detached objects that are retained by a JavaScript reference:
-
-![Detached elements profile type](./index-images/detached-elements-profile-type.png)
-
-This profiling type shows a view of the detached nodes to help you identify memory leaks on your webpage:
-
-![Detached elements view](./index-images/detached-nodes.png)
+The **Detached elements** option button (profiling type) helps you fix memory leaks due to detached DOM elements.  The resulting profile lists the detached objects that are retained by a JavaScript reference.  This profiling type shows a view of the detached nodes to help you identify memory leaks on your webpage.
 
 
 To use the **Detached elements** option button (profiling type) to analyze a webpage's detached elements:
@@ -324,22 +320,63 @@ To use the **Detached elements** option button (profiling type) to analyze a web
 
    DevTools opens.
 
-1. In DevTools, in the **Activity Bar**, click the **Memory** tab.
+1. In DevTools, in the **Activity Bar**, click the **Memory** tab (![Memory tool icon](./index-images/memory-tool-icon.png)).
 
    If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
 
    ![Open the Memory tool](./index-images/memory-tool-detached-elements-option-button.png)
 
-1. Select the **Detached elements** option button.
+   If the **Detached elements** option button (profiling type) isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./index-images/profiles-icon.png)).
 
-   If the option button isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./index-images/profiles-icon.png)), and then select the **Detached elements** option button.
+   You don't need to select the **Detached elements** option button (profiling type) at this point, because the webpage hasn't generated any detached elements yet.
 
-1. Click the **Start** button.
+   <!-- ------------------------------ -->
+   **Generate elements used by an instance of the Room class:**
 
-   The **Memory** tool shows the detached node, as a DOM tree node:
+   The **Room 1** button is initially selected, corresponding to the Room 1 instance of the `Room` class.
 
-   ![A detached node represented in the Memory tool like it's represented in the DOM](./index-images/representation-like-in-dom.png)
+1. In the demo webpage, click the **Fast traffic** button.
 
+   The demo webpage begins generating messages and displaying them in the webpage:
+
+   ![Generating some messages in the demo webpage](./index-images/generate-messages.png)
+
+1. After some messages are displayed, click the **Stop** button in the demo webpage.
+
+   Each message is a `<div class="message">` element that's referenced by the Room 1 instance of the `Room` class.  There are no detached elements in the webpage DOM tree, because all of the message elements are attached to the present, Room 1 instance of the **Room** class.
+
+
+   <!-- ------------------------------ -->
+   **Change to a different instance of the Room class, so elements become detached:**
+
+1. In the demo webpage, click the **Room 2** button, which corresponds to the Room 2 instance of the `Room` class.
+
+   In the webpage, the messages disappear:
+
+   ![Room 2 initial view](./index-images/room-2-initial-view.png)
+
+   The messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.  They are detached elements, which are a memory leak, unless they are going to be used again by the webpage.
+
+
+   <!-- ------------------------------ -->
+   **Get the list of detached elements:**
+
+1. In DevTools, in the **Memory** tool, select the **Detached elements** option button (profiling type), and then click the **Start** button.
+
+   The list of detached nodes is displayed in the **Detached nodes** column of the generated **Detached elements** profile:
+
+   ![List of detached nodes in the Detached nodes column of the generated Detached elements profile](./index-images/detached-dom-nodes.png)
+
+   The detached elements are displayed, as DOM nodes like in the DOM tree in the **Elements** tool.  In the **Profiles** list, in the **Detached elements** section, the profile is listed.
+
+1. Expand a DOM node to display its child elements (DOM nodes):
+
+   ![An expanded detached DOM node](./index-images/detached-dom-node-expanded.png)
+
+   These detached elements (DOM nodes) are memory leaks, if they aren't going to be reused by the application.
+
+
+If you want to return to the list of option buttons for profiling types, in the upper left of the **Memory** tool, click **Profiles** (![the Profiles icon](./index-images/profiles-icon.png)).
 
 For additional ways to assess memory leaks, see [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
 <!-- 

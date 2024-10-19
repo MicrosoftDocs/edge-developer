@@ -80,17 +80,7 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
 1. After some messages are displayed, click the **Stop** button in the demo webpage.
 
-   Each message is a `<div class="message">` element that's referenced by the Room 1 instance of the `Room` class.
-
-
-   <!-- ------------------------------ -->
-   **See whether there are any detached elements:**
-
-1. In DevTools, in the **Detached Elements** tool, click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button:
-
-   ![0 detached elements while still in Room 1](./dom-leaks-images/0-detached-in-room-1.png)
-
-   0 detached elements are found, and no elements are displayed below the button, because all of the message elements are attached to the present, Room 1 instance of the **Room** class.
+   Each message is a `<div class="message">` element that's referenced by the Room 1 instance of the `Room` class.  There are no detached elements in the webpage DOM tree, because all of the message elements are attached to the present, Room 1 instance of the **Room** class.
 
 
    <!-- ------------------------------ -->
@@ -102,9 +92,13 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
    ![Room 2 initial view](./dom-leaks-images/room-2-initial-view.png)
 
-   The messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.
+   The messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.  They are detached elements, which are a memory leak, unless they are going to be used again by the webpage.
 
-1. In the **Detached Elements** tool, click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.
+
+   <!-- ------------------------------ -->
+   **Get the list of detached elements:**
+
+1. In DevTools, in the **Detached Elements** tool, click the **Collect garbage** (![The 'Collect garbage' icon](./dom-leaks-images/collect-garbage-icon.png)) icon.
 
    The browser runs garbage collection, removing any nodes that are no longer referenced by a JavaScript object.
 
