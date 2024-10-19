@@ -277,7 +277,6 @@ DevTools now tracks all of the objects that were GC'd during the recording.  Use
 If you are investigating objects that were only GC'd during specific major or minor GC operations, configure the settings appropriately to track the operation you care about. To learn more about the differences between major and minor GC, see [Trash talk: the Orinoco garbage collector | V8 JavaScript engine developer blog](https://v8.dev/blog/trash-talk).
 
 
-
 <!-- ====================================================================== -->
 ## Find DOM tree memory leaks from detached elements
 
@@ -298,19 +297,9 @@ A DOM node is only garbage-collected when there are no references to the node fr
 <!-- ====================================================================== -->
 ## Find DOM tree memory leaks ("Detached elements" profiling type)
 
-<!-- todo:
-read rendered section
-decide what's needed
-clean up
-redo pngs
-trim
--->
-
 One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Detached elements** option button (profiling type), as follows.  For a comparison of tools to view detached elements, see [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
 
-
 The **Detached elements** option button (profiling type) helps you fix memory leaks due to detached DOM elements.  The resulting profile lists the detached objects that are retained by a JavaScript reference.  This profiling type shows a view of the detached nodes to help you identify memory leaks on your webpage.
-
 
 To use the **Detached elements** option button (profiling type) to analyze a webpage's detached elements:
 
