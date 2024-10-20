@@ -632,7 +632,7 @@ You can also specify a collection of events by using one of the predefined sets 
 `profile([name])` starts a JavaScript CPU profiling session with an optional name.
 
 <!-- add'l info -->
-To complete the profile and display the results in the **Performance** tool, call [profileEnd([name])](#profileendname).  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+To complete the profile and display the results in the **Performance** tool, call [profileEnd([name])](#profileendname).  <!-- See [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md).  -->
 
 #### Syntax
 
@@ -671,7 +671,7 @@ profileEnd('A');
 `profileEnd([name])` completes a JavaScript CPU profiling session and displays the results in the **Performance** tool.
 
 <!-- add'l info -->
-To call this function, you must be running the [profile([name])](#profilename) function.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+To call this function, you must be running the [profile([name])](#profilename) function.  <!-- See [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md).  -->
 
 #### Syntax
 

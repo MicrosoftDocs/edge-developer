@@ -1,5 +1,5 @@
 ---
-title: Record heap snapshots using the Memory tool
+title: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
 description: How to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks, using the Memory tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 09/16/2024
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Record heap snapshots using the Memory tool
+# Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
 
 Use the heap profiler in the **Memory** tool to do the following:
 

@@ -1,5 +1,5 @@
 ---
-title: Debug DOM memory leaks by using the Detached Elements profiling type
+title: Debug DOM memory leaks ("Detached elements" profiling type)
 description: Find and fix DOM memory leaks by using the Memory tool's Detached Elements profiling type, in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/20/2024
 ---
-# Debug DOM memory leaks by using the Detached Elements profiling type
+# Debug DOM memory leaks ("Detached elements" profiling type)
 
 One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Detached elements** option button (profiling type), as follows.  For a comparison of tools to view detached elements, see [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 

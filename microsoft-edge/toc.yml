@@ -544,20 +544,20 @@
                   href: devtools-guide-chromium/memory-problems/memory-101.md
                   displayName: Memory tool
 
-                - name: Record heap snapshots using the Memory tool
+                - name: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
                   href: devtools-guide-chromium/memory-problems/heap-snapshots.md
                   displayName: Memory tool 
 
-                - name: Use Allocation instrumentation on timeline
+                - name: Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)
                   href: devtools-guide-chromium/memory-problems/allocation-profiler.md
                   displayName: Memory tool
 
-                - name: Debug DOM memory leaks by using the Detached Elements profiling type
-                  href: devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements.md
+                - name: Speed up JavaScript runtime ("Allocation sampling" profiling type)
+                  href: devtools-guide-chromium/rendering-tools/js-runtime.md
                   displayName: Memory tool
 
-                - name: Speed up JavaScript runtime
-                  href: devtools-guide-chromium/rendering-tools/js-runtime.md
+                - name: Debug DOM memory leaks ("Detached elements" profiling type)
+                  href: devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements.md
                   displayName: Memory tool
 
                 - name: The heap snapshot file format

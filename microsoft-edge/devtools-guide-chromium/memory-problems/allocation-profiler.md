@@ -1,6 +1,6 @@
 ---
-title: Use Allocation instrumentation on timeline
-description: Use Allocation instrumentation on timeline to find objects that aren't being properly garbage collected, and continue to retain memory.
+title: Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)
+description: Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type) to find objects that aren't being properly garbage collected, and continue to retain memory.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -21,23 +21,26 @@ ms.date: 07/21/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-# Use Allocation instrumentation on timeline
+# Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)
 
 <!-- title in other repo:
 How to Use the Allocation Profiler Tool -->
 
-In the **Memory** tool, use the **Allocation instrumentation on timeline** radio button to find objects that aren't being properly garbage-collected, and continue to retain memory.
+In the **Memory** tool, use the **Allocations on timeline** option button (profiling type) to find objects that aren't being properly garbage-collected, and continue to retain memory.
+
+See also:
+* [Identify JS heap memory leaks ("Allocations on timeline" profiling type)](./index.md#identify-js-heap-memory-leaks-allocations-on-timeline-profiling-type) in _Fix memory problems_.
 
 
 <!-- ====================================================================== -->
 ## How Allocation instrumentation on timeline works
 
-**Allocation instrumentation on timeline** combines the detailed snapshot information of the [heap profiler](heap-snapshots.md) with the incremental updating and tracking of the **Performance** tool.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
+The **Memory** tool's **Allocations on timeline** option button (profiling type) combines the detailed snapshot information of the [heap profiler](heap-snapshots.md) with the incremental updating and tracking of the **Performance** tool.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->
 <!--todo: add profile evaluate performance (Performance tool) section when available  -->
 
-**Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording (as frequently as every 50 ms) and one final snapshot at the end of the recording.
+**Allocations on timeline** takes heap snapshots periodically throughout the recording (as frequently as every 50 ms) and one final snapshot at the end of the recording.
 
 ![Allocation instrumentation on timeline](./allocation-profiler-images/timeline-snapshot-highlighted.png)
 
@@ -47,13 +50,13 @@ The number after the `@` is an object ID that persists across the multiple snaps
 <!-- ====================================================================== -->
 ## Enable Allocation Instrumentation on Timeline
 
-To begin using **Allocation instrumentation on timeline**:
+To begin using **Allocations on timeline**:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. In DevTools, in the **Activity Bar**, select the **Memory** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./allocation-profiler-images/more-tools-icon.png)) button.
 
-1. Select the **Allocation instrumentation on timeline** radio button.
+1. Select the **Allocations on timeline** option button (profiling type).
 
 1. Start recording.
 

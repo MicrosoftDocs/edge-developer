@@ -1,5 +1,5 @@
 ---
-title: Speed up JavaScript runtime
+title: Speed up JavaScript runtime ("Allocation sampling" profiling type)
 description: Identify expensive, inefficient functions by using the Memory panel of Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-# Speed up JavaScript runtime
+# Speed up JavaScript runtime ("Allocation sampling" profiling type)
 
 To identify expensive functions, use the **Memory** tool:
 
@@ -30,6 +30,9 @@ To identify expensive functions, use the **Memory** tool:
 Record exactly which functions were called and how much memory each requires with Allocation Sampling in the **Memory** tool.
 
 Visualize your profiles as a flame chart.
+
+See also:
+[Investigate memory allocation by function ("Allocation sampling" profiling type)](../memory-problems/index.md#investigate-memory-allocation-by-function-allocation-sampling-profiling-type) in _Fix memory problems_.
 
 
 <!-- ====================================================================== -->

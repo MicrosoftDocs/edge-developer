@@ -19,7 +19,7 @@ The **Detached Elements** tool is one way to find and display all of the detache
 > In Microsoft Edge 133, the **Detached Elements** tool will be removed; instead, in the **Memory** tool, in the initial **Select profiling type** screen, select the **Detached elements** option button.  The CDP function `EdgeDOMMemory.getDetachedNodesIds` will be removed; use `DOM.getDetachedDomNodes` instead.
 
 
-<!-- copied paragraph to article "Debug DOM memory leaks by using the Detached Elements profiling type" -->
+<!-- copied paragraph to article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
 To increase the performance of your webpage, find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
 
 ![The Detached Elements tool, showing list of detached elements](./dom-leaks-images/detached-elements-tool.png)
@@ -32,7 +32,7 @@ See also:
 * [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - comparison of tools to view detached elements.
    * [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
    * [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
-   * [Record heap snapshots using the Memory tool](./heap-snapshots.md)
+   * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md)
 
 
 <!-- ------------------------------ -->
@@ -150,7 +150,7 @@ In the JavaScript code, you have now identified the retainer object (the `unmoun
 You've found detached elements that the browser can't garbage-collect, and located the JavaScript object that's still referencing the detached element.  You can then change the JavaScript code to release the element, to reduce the number of detached elements on the webpage, increasing webpage performance and responsiveness.
 
 
-<!-- copied h4 section to article "Debug DOM memory leaks by using the Detached Elements profiling type" -->
+<!-- copied h4 section to article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
 <!-- ------------------------------ -->
 #### Fixing the JavaScript code to prevent detached elements that can't be garbage-collected
 
@@ -159,7 +159,7 @@ The `collectOldMessages` method of the `Room` class (on line 26) contains commen
 There is a potential leak in the existing code, because the cleanup in this method occurs at a different rate than the addition of new messages.  We can easily find ourselves in a situation where we have messages in the cache that don't need (or can't) be reused right away.  This is not likely to become too much, but the cache is per-room, which multiplies the problem.
 
 
-<!-- section not relevant for article "Debug DOM memory leaks by using the Detached Elements profiling type" -->
+<!-- section not relevant for article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
 <!-- ====================================================================== -->
 ## Identify the DOM node that's causing other DOM nodes to be retained
 <!-- optional detailed UI after the above standard steps -->
@@ -177,7 +177,7 @@ To identify the culprit node in a detached tree that is causing the entire tree 
    ![The Detach Elements button in the Detached Elements tool](./dom-leaks-images/remove-links.png)
 
 
-<!-- section not relevant for article "Debug DOM memory leaks by using the Detached Elements profiling type" -->
+<!-- section not relevant for article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
 <!-- ====================================================================== -->
 ## Change the selected target to a different origin
 <!-- optional detailed UI after the above standard steps -->
@@ -193,7 +193,7 @@ To check for detached elements from different origins or frames by using the **S
 The new origin is displayed in the **Detached Elements** tool.
 
    
-<!-- section copied into article "Debug DOM memory leaks by using the Detached Elements profiling type", but w/o DE tool's UI controls -->
+<!-- section copied into article "Debug DOM memory leaks ("Detached elements" profiling type)", but w/o DE tool's UI controls -->
 <!-- ====================================================================== -->
 ## About detached elements and memory leaks
 
@@ -218,7 +218,7 @@ After running GC, identify the DOM node causing others to be retained.  Because 
 The detached element is linked to the retainer path in the **Memory** tool.  The **Detached Elements** tool shows detached nodes, but also takes a heap snapshot, shows the **Memory** tool in the **Quick View** panel at the bottom of DevTools, and then links from the detached node in the **Detached Elements** tool to the detached node in the heap snapshot in the **Memory** tool.
 
 
-<!-- section not relevant for article "Debug DOM memory leaks by using the Detached Elements profiling type" -->
+<!-- section not relevant for article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
 <!-- ====================================================================== -->
 ## Run GC before getting detached elements, to show only elements that can't be GC'd
 
@@ -233,7 +233,7 @@ Even though some elements might appear as detached at one point in time, you won
 When the user uses the webpage, without DevTools, the user has no control over when GC runs.
 
 
-<!-- copied (& trimmed) section into article "Debug DOM memory leaks by using the Detached Elements profiling type" -->
+<!-- copied (& trimmed) section into article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
 <!-- ====================================================================== -->
 ## Re-attaching elements
 
@@ -246,14 +246,14 @@ The following image shows detached elements in the form of messages that are rea
 Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up.
 
 
-<!-- copied section into article "Debug DOM memory leaks by using the Detached Elements profiling type" -->
+<!-- copied section into article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
 <!-- ====================================================================== -->
 ## Long-running apps and unmounting components
 
 Be sure to unmount components.  For long-running apps, small memory leaks of only a few kilobytes can noticeably degrade performance over time.  For webpages that use the React framework, React maintains a virtualized copy of the DOM.  Failing to properly unmount components can potentially lead to an application leaking large parts of the virtual DOM.
 
 
-<!-- section not copied into article "Debug DOM memory leaks by using the Detached Elements profiling type" -->
+<!-- section not copied into article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
 <!-- ====================================================================== -->
 ## Reporting issues
 
