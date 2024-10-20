@@ -12,6 +12,13 @@ ms.date: 10/17/2024
 
 The **Detached Elements** tool is one way to find and display all of the detached elements on a webpage.  For additional ways to assess memory leaks, see, see [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 
+
+> [!IMPORTANT]
+> The **Detached Elements** tool is being deprecated.  Starting with Microsoft Edge 130, the **Detached Elements** tool has a message stating that the tool is deprecated; instead, in the **Memory** tool, in the initial **Select profiling type** screen, select the **Detached elements** option button.  The Edge-only Chrome DevTools Protocol (CDP) function `EdgeDOMMemory.getDetachedNodesIds` continues to work, but use `DOM.getDetachedDomNodes` instead.
+> 
+> In Microsoft Edge 133, the **Detached Elements** tool will be removed; instead, in the **Memory** tool, in the initial **Select profiling type** screen, select the **Detached elements** option button.  The CDP function `EdgeDOMMemory.getDetachedNodesIds` will be removed; use `DOM.getDetachedDomNodes` instead.
+
+
 To increase the performance of your webpage, find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
 
 ![The Detached Elements tool, showing list of detached elements](./dom-leaks-images/detached-elements-tool.png)
@@ -19,14 +26,6 @@ To increase the performance of your webpage, find detached elements that the bro
 The **Detached Elements** tool, showing retainers in the **Memory** tool, with links to open the JavaScript code in the **Sources** tool:
 
 ![The Detached Elements tool, showing retainers](./dom-leaks-images/heap-snapshot.png)
-
-
-<!-- ------------------------------ -->
-#### The Detached Elements tool is being deprecated
-
-The **Detached Elements** tool is being deprecated.  Starting with Microsoft Edge 130, the **Detached Elements** tool has a message stating that the tool is deprecated; instead, in the **Memory** tool, in the initial **Select profiling type** screen, select the **Detached elements** option button.  The Edge-only Chrome DevTools Protocol (CDP) function `EdgeDOMMemory.getDetachedNodesIds` continues to work, but use `DOM.getDetachedDomNodes` instead.
-
-In Microsoft Edge 133, the **Detached Elements** tool will be removed; instead, in the **Memory** tool, in the initial **Select profiling type** screen, select the **Detached elements** option button.  The CDP function `EdgeDOMMemory.getDetachedNodesIds` will be removed; use `DOM.getDetachedDomNodes` instead.
 
 See also:
 * [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - comparison of tools to view detached elements.
