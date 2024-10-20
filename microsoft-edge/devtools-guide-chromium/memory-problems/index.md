@@ -294,7 +294,7 @@ A DOM node is only garbage-collected when there are no references to the node fr
 | Tool | Pros | Cons | Docs |
 |---|---|---|---|
 | **Memory** tool > **Detached elements** option button (profiling type) | Shows elements as DOM tree nodes. | Doesn't link to JavaScript source code. | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
-| **Memory** tool > **Heap snapshot** option button (profiling type) > **Detached** | The detached element has a link to its JavaScript source code.<!-- todo: how get to JS? --> | Shows elements as objects in memory. | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
+| **Memory** tool > **Heap snapshot** option button (profiling type) > **Detached** | The detached element has a link to its JavaScript source code.<!-- todo: how get to JS? --> | Shows elements as objects in memory. | [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md) |
 | **Detached Elements** tool | Shows elements as DOM tree nodes.  The detached element has a link to its JavaScript source code. | Deprecated. | [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md) |
 
 
@@ -312,8 +312,8 @@ See [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-me
 One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Heap snapshot** option button (profiling type), then type **Detached** in the **Filter by class** text box, as follows.
 
 See also:
-* [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
 * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md)
+* [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
 
 
 The following code produces detached DOM nodes:
