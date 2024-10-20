@@ -23,15 +23,19 @@ ms.date: 10/18/2024
    limitations under the License.  -->
 # Fix memory problems
 
-<!--
-Memory tool option buttons (profiling types):
-[1] Heap snapshot
-[2] Allocations on timeline
-[3] Allocation sampling
-[4] Detached elements
--->
-
 Use Microsoft Edge and DevTools to find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections.
+
+<!-- todo:
+move content out to the dedicated articles, present an overview of each tool/feature in this article, w/ link to the detailed article
+
+as an overview of the profiling types, incorp text from old Memory tool's option buttons:
+
+Heap snapshot - Heap snapshot profiles show memory distribution among your page's JavaScript objects and related DOM nodes.
+
+Allocation instrumentation on timeline - Allocation timelines show instrumented JavaScript memory allocations over time.  Once profile is recorded you can select a time interval to see objects that were allocated within it and still alive by the end of recording.  Use this profile type to isolate memory leaks.
+
+Allocation sampling - Record memory allocations using sample method.  This profile type has minimal performance overhead and can be used for long running operations.  It provides good approximation of allocations broken down by JavaScript execution stack.
+-->
 
 
 <!-- ------------------------------ -->
