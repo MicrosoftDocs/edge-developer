@@ -552,6 +552,10 @@
                   href: devtools-guide-chromium/memory-problems/allocation-profiler.md
                   displayName: Memory tool
 
+                - name: Debug DOM memory leaks by using the Detached Elements profiling type
+                  href: devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements.md
+                  displayName: Memory tool
+
                 - name: Speed up JavaScript runtime
                   href: devtools-guide-chromium/rendering-tools/js-runtime.md
                   displayName: Memory tool
