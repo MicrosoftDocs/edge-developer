@@ -14,6 +14,10 @@ One way to find and display all of the detached elements on a webpage is to use 
 
 The **Detached elements** option button (profiling type) helps you fix memory leaks due to detached DOM elements.  The resulting profile lists the detached objects that are retained by a JavaScript reference.  This profiling type shows a view of the detached nodes to help you identify memory leaks on your webpage.
 
+
+<!-- ====================================================================== -->
+## Analyze a webpage's detached elements
+
 To use the **Detached elements** option button (profiling type) to analyze a webpage's detached elements:
 
 1. Open a webpage, such as the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/), in a new window or tab.
