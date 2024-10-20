@@ -52,17 +52,31 @@ The number after the `@` is an object ID that persists across the multiple snaps
 
 To begin using **Allocations on timeline**:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+1. Open a webpage, such as the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/), in a new window or tab.
 
-1. In DevTools, in the **Activity Bar**, select the **Memory** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./allocation-profiler-images/more-tools-icon.png)) button.
+1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
+
+   DevTools opens.
+
+1. In DevTools, in the **Activity Bar**, select the **Memory** (![Memory tool icon](./allocation-profiler-images/memory-tool-icon.png)) tool.
+
+   If that tab isn't visible, click the **More Tools** (![More Tools icon](./allocation-profiler-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
+
+   ![Open the Memory tool](./allocation-profiler-images/memory-tool-allocations-on-timeline-option-button.png)
 
 1. Select the **Allocations on timeline** option button (profiling type).
 
-1. Start recording.
+   If the **Allocations on timeline** option button (profiling type) isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./allocation-profiler-images/profiles-icon.png)).
 
-The record heap allocations profiler:
+1. At the bottom of the **Memory** tool, click the **Start** button.
 
-![Record heap allocations profiler.  Use the 'Allocation instrumentation on timeline' radio button in the Memory tool](./allocation-profiler-images/instrumentation-on-timeline-selected.png)
+1. Interact with the webpage; for example, click the **Fast traffic** button and then the **Stop** button in the demo webpage.  Depending on what you are trying to analyze, you can either refresh the page, interact with the page, or just let the page run.
+
+1. In the upper left of the **Memory** tool, click the **Stop recording heap profile** (![The "Stop recording heap profile" icon](./allocation-profiler-images/stop-recording-icon.png)) button.
+
+   A new **Snapshot** is created in the **Allocation timelines** section of the **Profiles** list:
+
+   ![The new Snapshot listed in the "Allocation timelines" section of the Profiles list](./allocation-profiler-images/allocation-timelines-profile.png)
 
 
 <!-- ====================================================================== -->

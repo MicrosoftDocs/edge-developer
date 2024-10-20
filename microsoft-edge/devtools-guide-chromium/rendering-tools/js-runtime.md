@@ -40,15 +40,33 @@ See also:
 
 If you notice jank (interruptions of rendering) in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.
 
-1. In DevTools, go to the **Memory** tool.
+To record an allocation sampling profile:
 
-1. Click the **Allocation sampling** option button.
+1. Open a webpage, such as the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/), in a new window or tab.
 
-1. Click **Start**.
+1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. Depending on what you are trying to analyze, you can either refresh the page, interact with the page, or just let the page run.
+   DevTools opens.
 
-1. When you're finished, click the **Stop** button.
+1. In DevTools, in the **Activity Bar**, select the **Memory** (![Memory tool icon](./js-runtime-images/memory-tool-icon.png)) tool.
+
+   If that tab isn't visible, click the **More Tools** (![More Tools icon](./js-runtime-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
+
+   ![The "Allocation sampling" option button (profiling type) in the Memory tool](./js-runtime-images/allocation-sampling-option-button.png)
+
+1. Select the **Allocation sampling** option button (profiling type).
+
+   If the **Allocation sampling** option button (profiling type) isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./js-runtime-images/profiles-icon.png)).
+
+1. At the bottom of the **Memory** tool, click the **Start** button.
+
+1. Interact with the webpage; for example, click the **Fast traffic** button and then the **Stop** button in the demo webpage.  Depending on what you are trying to analyze, you can either refresh the page, interact with the page, or just let the page run.
+
+1. In the upper left of the **Memory** tool, click the **Stop heap profiling** (![The "Stop heap profiling" icon](./js-runtime-images/stop-recording-icon.png)) button.
+
+   A new **Profile** is created in the **Sampling profiles** section of the **Profiles** list:
+
+   ![The new Profile listed in the "Sampling profiles" section of the Profiles list](./js-runtime-images/sampling-profile.png)
 
 You can also use the [Console Utilities API](../console/utilities.md) to record and group profiles from the command line.
 
@@ -56,7 +74,7 @@ You can also use the [Console Utilities API](../console/utilities.md) to record 
 <!-- ====================================================================== -->
 ## View Sampling Profile
 
-When you finish recording, DevTools automatically populates the **Memory** panel under **SAMPLING PROFILES** with the data from your recording.
+When you finish recording, DevTools automatically populates the **Memory** panel next to the **Sampling profiles** list with the data from your recording.
 
 The default view is **Heavy (Bottom Up)**.  This view allows you to review which functions had the most impact on performance and examine the requesting path for each function.
 
@@ -64,17 +82,27 @@ The default view is **Heavy (Bottom Up)**.  This view allows you to review which
 <!-- ------------------------------ -->
 #### Change sort order
 
-To change the sorting order, select the dropdown menu next to the **focus selected function** (![focus selected function](./js-runtime-images/focus-icon.png)) icon and then select one of the following options:
+To change the sorting order, use the dropdown menu that initially says **Heavy (Bottom Up)**:
 
-**Chart**.  Displays a chronological chart of the recording.
+![Sort order menu](./js-runtime-images/sort-order-menu.png)
+
+Menuitems:
+* **Chart**
+* **Heavy (Bottom Up)**
+* **Tree (Top Down)**
+
+
+**Chart**.  Displays a chronological chart of the recording:
 
 ![Flame chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
 
-**Heavy (Bottom Up)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view.
+
+**Heavy (Bottom Up)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view:
 
 ![Heavy chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.png)
 
-**Tree (Top Down)**.  Shows an overall picture of the calling structure, starting at the top of the call stack.
+
+**Tree (Top Down)**.  Shows an overall picture of the calling structure, starting at the top of the call stack:
 
 ![Tree chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.png)
 
@@ -82,9 +110,14 @@ To change the sorting order, select the dropdown menu next to the **focus select
 <!-- ------------------------------ -->
 #### Exclude functions
 
-To exclude a function from your Sampling Profile, select it and then click the **exclude selected function** (![exclude selected function](./js-runtime-images/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
+When **Heavy (Bottom Up)** or **Tree (Top Down)** is selected (not **Chart**), there are several buttons, that are available (not dimmed) when you select a row:
+* **Focus selected function** (![The "Focus selected function" icon](./js-runtime-images/focus-selected-function-icon.png))
+* **Exclude selected function** (![Exclude selected function](./js-runtime-images/exclude-icon.png))
+* **Restore all functions** (![Restore all functions](./js-runtime-images/restore-icon.png))
 
-Click the **restore all functions** (![restore all functions](./js-runtime-images/restore-icon.png)) button to restore all excluded functions back into the recording.
+To exclude a function from your Sampling Profile, select it and then click the **Exclude selected function** (![Exclude selected function](./js-runtime-images/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
+
+Click the **Restore all functions** (![Restore all functions](./js-runtime-images/restore-icon.png)) button to restore all excluded functions back into the recording.
 
 
 <!-- ====================================================================== -->

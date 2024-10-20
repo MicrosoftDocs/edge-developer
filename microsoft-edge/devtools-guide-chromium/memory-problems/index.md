@@ -181,6 +181,8 @@ See:
 <!-- ====================================================================== -->
 ## Identify JS heap memory leaks ("Allocations on timeline" profiling type)
 
+<!-- todo: move section's content into [Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)](./allocation-profiler.md) and just link to there -->
+
 In the **Memory** tool, use the **Allocations on timeline** option button (profiling type).  This is one of the DevTools features to track down memory leaks in your JS heap.
 
 Given the following code:
@@ -229,6 +231,8 @@ See also:
 <!--[3]-->
 <!-- ====================================================================== -->
 ## Investigate memory allocation by function ("Allocation sampling" profiling type)
+
+<!-- todo: move section's content into [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md) and just link to there -->
 
 Use the **Allocation sampling** profiling type to view memory allocation by JavaScript function:
 
@@ -308,6 +312,8 @@ See [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-me
 <!--[1]-->
 <!-- ====================================================================== -->
 ## Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)
+
+<!-- todo: move section's content into [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md) and just link to there -->
 
 One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Heap snapshot** option button (profiling type), then type **Detached** in the **Filter by class** text box, as follows.
 
