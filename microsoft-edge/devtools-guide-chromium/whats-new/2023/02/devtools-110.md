@@ -31,7 +31,7 @@ In Microsoft Edge 110, the **Memory** tool is now 70% to 86% faster at taking he
 ![Taking a heap snapshot in the Memory tool](./devtools-110-images/faster-heap-snapshot.png)
 
 See also:
-* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md#take-a-snapshot)
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../../../memory-problems/heap-snapshots.md#take-a-snapshot)
 
 
 <!-- ====================================================================== -->

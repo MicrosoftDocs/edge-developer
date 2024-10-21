@@ -1,5 +1,5 @@
 ---
-title: Speed up JavaScript runtime
+title: Speed up JavaScript runtime ("Allocation sampling" profiling type)
 description: Identify expensive, inefficient functions by using the Memory panel of Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-# Speed up JavaScript runtime
+# Speed up JavaScript runtime ("Allocation sampling" profiling type)
 
 To identify expensive functions, use the **Memory** tool:
 
@@ -31,21 +31,73 @@ Record exactly which functions were called and how much memory each requires wit
 
 Visualize your profiles as a flame chart.
 
+See also:
+[Investigate memory allocation by function ("Allocation sampling" profiling type)](../memory-problems/index.md#investigate-memory-allocation-by-function-allocation-sampling-profiling-type) in _Fix memory problems_.
+
+
+<!-- moved from Mem tool article -->
+<!-- ====================================================================== -->
+## Use the "Allocation sampling" profiling type to view memory allocation by JavaScript function
+
+To use the **Allocation sampling** profiling type to view memory allocation by JavaScript function:
+
+1. Open a webpage; for example, open the [Example 3: Scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) demo in a new window or tab.
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+
+1. In DevTools, on the **Activity Bar**, select the **Memory** tool.  If that tool isn't visible, click the **More tools** (![More tools icon](./js-runtime-images/more-tools-icon.png)) button.
+
+   ![Record Allocation sampling](./js-runtime-images/memory-allocation-sampling.png)
+
+1. Select the **Allocation sampling** option button.
+
+1. In the **Select JavaScript VM instance** section, if there is a worker on the page, you can select that as the profiling target.
+
+1. Click the **Start** button.
+
+1. On the webpage, perform actions that you want to investigate.  For example, click the **Create scattered objects** button in the **Example 3: Scattered objects** webpage.
+
+1. In the upper left of the **Memory** tool, click the **Stop heap profiling** (![The "Stop heap profiling" icon](./js-runtime-images/stop-recording-icon.png)) button.
+
+   A new profile is added in the **Sampling profiles** section in the **Profiles** sidebar.  The profile shows a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**, which displays the functions that allocated the most memory at the top:
+
+   ![Allocation sampling](./js-runtime-images/memory-allocation-sampling-heavy-bottom-up.png)
+
 
 <!-- ====================================================================== -->
 ## Record a Sampling Profile
 
 If you notice jank (interruptions of rendering) in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.
 
-1. In DevTools, go to the **Memory** tool.
+This section is similar to the above section, but shows a different demo webpage.<!-- todo: merge the two sections -->
 
-1. Click the **Allocation sampling** option button.
+To record an allocation sampling profile:
 
-1. Click **Start**.
+1. Open a webpage, such as the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/), in a new window or tab.
 
-1. Depending on what you are trying to analyze, you can either refresh the page, interact with the page, or just let the page run.
+1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. When you're finished, click the **Stop** button.
+   DevTools opens.
+
+1. In DevTools, in the **Activity Bar**, select the **Memory** (![Memory tool icon](./js-runtime-images/memory-tool-icon.png)) tool.
+
+   If that tab isn't visible, click the **More Tools** (![More Tools icon](./js-runtime-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
+
+   ![The "Allocation sampling" option button (profiling type) in the Memory tool](./js-runtime-images/allocation-sampling-option-button.png)
+
+1. Select the **Allocation sampling** option button (profiling type).
+
+   If the **Allocation sampling** option button (profiling type) isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./js-runtime-images/profiles-icon.png)).
+
+1. At the bottom of the **Memory** tool, click the **Start** button.
+
+1. Interact with the webpage; for example, click the **Fast traffic** button and then the **Stop** button in the demo webpage.  Depending on what you are trying to analyze, you can either refresh the page, interact with the page, or just let the page run.
+
+1. In the upper left of the **Memory** tool, click the **Stop heap profiling** (![The "Stop heap profiling" icon](./js-runtime-images/stop-recording-icon.png)) button.
+
+   A new **Profile** is created in the **Sampling profiles** section of the **Profiles** list:
+
+   ![The new Profile listed in the "Sampling profiles" section of the Profiles list](./js-runtime-images/sampling-profile.png)
 
 You can also use the [Console Utilities API](../console/utilities.md) to record and group profiles from the command line.
 
@@ -53,7 +105,7 @@ You can also use the [Console Utilities API](../console/utilities.md) to record 
 <!-- ====================================================================== -->
 ## View Sampling Profile
 
-When you finish recording, DevTools automatically populates the **Memory** panel under **SAMPLING PROFILES** with the data from your recording.
+When you finish recording, DevTools automatically populates the **Memory** panel next to the **Sampling profiles** list with the data from your recording.
 
 The default view is **Heavy (Bottom Up)**.  This view allows you to review which functions had the most impact on performance and examine the requesting path for each function.
 
@@ -61,17 +113,27 @@ The default view is **Heavy (Bottom Up)**.  This view allows you to review which
 <!-- ------------------------------ -->
 #### Change sort order
 
-To change the sorting order, select the dropdown menu next to the **focus selected function** (![focus selected function](./js-runtime-images/focus-icon.png)) icon and then select one of the following options:
+To change the sorting order, use the dropdown menu that initially says **Heavy (Bottom Up)**:
 
-**Chart**.  Displays a chronological chart of the recording.
+![Sort order menu](./js-runtime-images/sort-order-menu.png)
+
+Menuitems:
+* **Chart**
+* **Heavy (Bottom Up)**
+* **Tree (Top Down)**
+
+
+**Chart**.  Displays a chronological chart of the recording:
 
 ![Flame chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
 
-**Heavy (Bottom Up)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view.
+
+**Heavy (Bottom Up)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view:
 
 ![Heavy chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.png)
 
-**Tree (Top Down)**.  Shows an overall picture of the calling structure, starting at the top of the call stack.
+
+**Tree (Top Down)**.  Shows an overall picture of the calling structure, starting at the top of the call stack:
 
 ![Tree chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.png)
 
@@ -79,9 +141,14 @@ To change the sorting order, select the dropdown menu next to the **focus select
 <!-- ------------------------------ -->
 #### Exclude functions
 
-To exclude a function from your Sampling Profile, select it and then click the **exclude selected function** (![exclude selected function](./js-runtime-images/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
+When **Heavy (Bottom Up)** or **Tree (Top Down)** is selected (not **Chart**), there are several buttons, that are available (not dimmed) when you select a row:
+* **Focus selected function** (![The "Focus selected function" icon](./js-runtime-images/focus-selected-function-icon.png))
+* **Exclude selected function** (![Exclude selected function](./js-runtime-images/exclude-icon.png))
+* **Restore all functions** (![Restore all functions](./js-runtime-images/restore-icon.png))
 
-Click the **restore all functions** (![restore all functions](./js-runtime-images/restore-icon.png)) button to restore all excluded functions back into the recording.
+To exclude a function from your Sampling Profile, select it and then click the **Exclude selected function** (![Exclude selected function](./js-runtime-images/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
+
+Click the **Restore all functions** (![Restore all functions](./js-runtime-images/restore-icon.png)) button to restore all excluded functions back into the recording.
 
 
 <!-- ====================================================================== -->
@@ -133,6 +200,41 @@ Hover on a function to display the name and timing data:
 <!--*  **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->
 
 ![View functions details in the profiles chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.png)
+
+
+<!-- moved from Mem tool article -->
+<!-- ====================================================================== -->
+## Investigate memory allocation, with reduced garbage ("Include objects" checkboxes)
+
+By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are created, removed, and then garbage collected (GC'd) aren't displayed in the **Memory** tool when profiling using the **Allocation sampling** or **Allocations on timeline** profiling types.
+
+You can trust the browser to clean up garbage from your code.  However, it is important to consider that GC itself is an expensive operation and multiple GCs can slow down your user's experience of your website or app.  When recording in the **Performance** tool with the **Memory** checkbox turned on, you can see the GC operation happen at the steep cliffs (sudden decreases) in the heap chart:
+
+![GC operation shown in the Performance tool](./js-runtime-images/gc-in-performance.png)
+
+By reducing the amount of garbage your code is creating, you can reduce the cost of each individual GC and the number of GC operations.
+
+
+<!-- ------------------------------ -->
+#### Track objects that are discarded by GC
+
+To track objects that are discarded by garbage collection, configure the **Allocation sampling** profiling type with settings:
+
+1. In the **Memory** tool, select the **Allocation sampling** option button (profiling type).
+
+1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
+
+   ![Allocation sampling GC settings](./js-runtime-images/memory-allocation-sampling-gc-settings.png)
+
+1. Click the **Start** button.
+
+1. On the webpage, perform actions that you want to investigate.
+
+1. Click the **Stop** button when you have finished all of your actions.
+
+DevTools now tracks all of the objects that were GC'd during the recording.  Use these settings to understand how much garbage your website or app is generating.  The data reported by **Allocation sampling** will help you identify the functions that are generating the most garbage.  
+
+If you are investigating objects that were only GC'd during specific major or minor GC operations, configure the settings appropriately to track the operation you care about. To learn more about the differences between major and minor GC, see [Trash talk: the Orinoco garbage collector | V8 JavaScript engine developer blog](https://v8.dev/blog/trash-talk).
 
 
 <!-- ====================================================================== -->

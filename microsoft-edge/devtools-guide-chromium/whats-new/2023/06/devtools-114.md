@@ -104,7 +104,7 @@ In Microsoft Edge 114, this issue has been fixed, by ensuring that consistent ob
 ![Comparing two heap snapshots in Microsoft Edge 114](./devtools-114-images/snapshot-comparison-114.png)
 
 See also:
-* [View snapshots](../../../memory-problems/heap-snapshots.md#view-snapshots) in _Record heap snapshots using the Memory tool_.
+* [View snapshots](../../../memory-problems/heap-snapshots.md#view-snapshots) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 * [Change List 4278992: Produce consistent IDs for Oilpan objects in heap snapshots](https://chromium-review.googlesource.com/c/v8/v8/+/4278992)
 * [Issue 1286500: Heap snapshot comparison incorrectly reports large numbers of new and deleted objects](https://bugs.chromium.org/p/chromium/issues/detail?id=1286500)
 

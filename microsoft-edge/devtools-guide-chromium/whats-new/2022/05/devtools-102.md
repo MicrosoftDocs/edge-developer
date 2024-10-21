@@ -59,7 +59,7 @@ The **Memory** tool exports a JSON file that contains all of the string objects 
 ![Strings from the heap snapshot, in the JSON file](devtools-102-images/heap-snapshot-strings-json-file.png)
 
 See also:
-* [Save and export strings from a heap snapshot to JSON](../../../memory-problems/heap-snapshots.md#save-and-export-strings-from-a-heap-snapshot-to-json) in _Record heap snapshots using the Memory tool_.
+* [Save and export strings from a heap snapshot to JSON](../../../memory-problems/heap-snapshots.md#save-and-export-strings-from-a-heap-snapshot-to-json) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 
 
 <!-- ====================================================================== -->
@@ -89,7 +89,7 @@ The second and potentially subsequent appearances of the node are still displaye
 _Internal nodes_ are objects that are specific to V8 (the JavaScript engine in Microsoft Edge).  Internal nodes are also displayed in the **Retainers** section.
 
 See also:
-* [Hide cycles](../../../memory-problems/heap-snapshots.md#hide-cycles) in _Record heap snapshots using the Memory tool_.
+* [Hide cycles](../../../memory-problems/heap-snapshots.md#hide-cycles) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 
 
 <!-- ====================================================================== -->

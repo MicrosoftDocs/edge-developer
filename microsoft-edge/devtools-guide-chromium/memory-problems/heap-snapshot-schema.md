@@ -30,7 +30,7 @@ To export a `.heapsnapshot` file, first you need to record a heap snapshot in th
 
 1. Select **Heap snapshot** and then click **Take snapshot**.
 
-For more information, see [Record heap snapshots using the Memory tool](heap-snapshots.md).
+For more information, see [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](heap-snapshots.md).
 
 
 <!-- ====================================================================== -->

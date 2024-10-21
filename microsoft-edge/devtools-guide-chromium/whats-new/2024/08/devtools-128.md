@@ -64,7 +64,7 @@ In the **Memory** tool, there are several improvements for heap snapshots:
 * The **Include numerical values in capture** checkbox (shown before you take a heap snapshot) has been removed, and heap snapshots now always show numeric values.
 
 See also:
-* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../../../memory-problems/heap-snapshots.md)
 
 
 <!-- ====================================================================== -->

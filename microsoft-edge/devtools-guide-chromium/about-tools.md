@@ -15,7 +15,7 @@ DevTools provides more than 30 tools:
 *  Two icons on the **Activity Bar**, for the **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)).
 *  Three permanent tool tabs on the **Activity Bar**, for the **Elements**, **Console**, and **Sources** tools.
 *  Optional tabs, for optional tools such as the **Welcome** and **Network** tools.
-*  More optional tools, on the **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu, such as the **3D View** and **Detached Elements** tools.
+*  More optional tools, on the **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu, such as the **3D View** tool.
 
 ![The default tools, including two icons and eight tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
 
@@ -41,7 +41,7 @@ Microsoft Edge DevTools includes the following tools.
 | **Coverage** tool | Help you find unused JavaScript and CSS code, to speed up your page load and save your mobile users cellular data. | [Find unused JavaScript and CSS code with the Coverage tool](coverage/index.md) |
 | **Crash analyzer** tool | Analyze crashes of your web app.  You can input a JavaScript production stack trace, such as for non-fatal JavaScript exceptions, and then have your source maps applied to the stack trace so that you can debug faster. | [Crash analyzer tool](./crash-analyzer/index.md) |
 | **CSS Overview** tool | Help you better understand your page's CSS and identify potential improvements. | [CSS Overview tool](css/css-overview-tool.md) |
-| **Detached Elements** tool | To increase the performance of your page, this tool finds detached elements that the browser cannot garbage-collect, and identifies the JavaScript object that is still referencing the detached element.  By changing your JavaScript to release the element, you reduce the number of detached elements on your page, increasing page performance and responsiveness. | [Debug DOM memory leaks with the Detached Elements tool](memory-problems/dom-leaks.md) |
+| **Detached Elements** tool | To increase the performance of your webpage, find detached elements that the browser can't garbage-collect, and then identify the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your page, increasing page performance and responsiveness. | [Debug DOM memory leaks by using the Detached Elements tool](memory-problems/dom-leaks.md) |
 | **Developer Resources** | Shows resource URLs for the webpage. | [Developer Resources tool](developer-resources/developer-resources.md) |
 | **Device Emulation** | Use the **Device Emulation** tool, also called _Device Simulation Mode_ or _Device Mode_, to approximate how your page looks and responds on a mobile device. | [Emulate mobile devices (Device Emulation)](device-mode/index.md) |
 | **Elements** tool | Inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage. | [Inspect, edit, and debug HTML and CSS with the Elements tool](elements-tool/elements-tool.md) |

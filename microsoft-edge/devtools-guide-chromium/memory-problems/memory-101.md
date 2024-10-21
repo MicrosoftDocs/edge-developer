@@ -25,7 +25,7 @@ ms.date: 01/30/2024
 
 The following terms are used in the **Memory** tool, which is for investigating memory issues.  These memory terms are applicable to memory analysis in general, as well as memory profiling tools for languages such as Java or .NET.
 
-To learn more about using the **Memory** tool, see [Record heap snapshots using the Memory tool](./heap-snapshots.md).
+To learn more about using the **Memory** tool, see [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md).
 
 
 <!-- ====================================================================== -->
