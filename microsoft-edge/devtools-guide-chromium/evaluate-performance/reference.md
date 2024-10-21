@@ -499,6 +499,9 @@ The colored lines on the chart map to the colored checkboxes above the chart.  C
 
 The chart only displays the region of the recording that is currently selected.  For example, in the previous figure, the **Memory** chart is only showing memory usage from around the 3600 ms mark to the 6200 ms mark.
 
+See also:
+* [Visualize memory leaks (Performance tool: Memory checkbox)](#visualize-memory-leaks-performance-tool-memory-checkbox), below.
+
 
 <!-- ------------------------------ -->
 #### View the duration of a portion of a recording
@@ -687,6 +690,57 @@ Use **Disable local fonts** to make it easier to:
 *  Debug and measure loading performance and optimization of web fonts.
 *  Verify accuracy of your CSS `@font-face` rules.
 *  Discover differences between local versions installed on your device and a web font.
+
+
+<!-- moved from "Fix memory problems" article -->
+<!-- todo: move instead to Perf tool article? -->
+<!-- Performance tool >  Memory checkbox -->
+<!-- ====================================================================== -->
+## Visualize memory leaks (Performance tool: Memory checkbox)
+
+As a starting point to investigate webpage memory usage, use the **Performance** tool's **Memory** checkbox.  (Or, [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](./microsoft-edge-browser-task-manager.md).)
+
+The **Performance** tool helps you visualize the memory use of a page over time.
+
+1. In DevTools, open the **Performance** tool.
+
+1. Select the **Memory** checkbox.
+
+1. Make a recording, per [Record performance](#record-performance), above.
+
+It's a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, click the **collect garbage** ![force garbage collection](./reference-images/collect-garbage-icon.png) button while recording.
+
+To demonstrate memory recordings, consider the following code:
+
+```javascript
+var x = [];
+function grow() {
+    for (var i = 0; i < 10000; i++) {
+        document.body.appendChild(document.createElement('div'));
+    }
+    x.push(new Array(1000000).join('x'));
+}
+document.getElementById('grow').addEventListener('click', grow);
+```
+
+Every time that the button referenced in the code is clicked, 10,000 `div` nodes are appended to the document body, and a string of 1,000,000 `x` characters is pushed onto the `x` array.  Running the previous code produces a recording in the **Performance** tool:
+
+![Simple growth](./reference-images/performance-memory.png)
+
+First, an explanation of the user interface.  The **HEAP** graph in the **Overview** pane (below **NET**) represents the JS heap.  Below the **Overview** pane is the **Counter** pane.  The memory usage is broken down by JS heap (same as **HEAP** graph in the **Overview** pane), documents, DOM nodes, listeners, and GPU memory.  Clear a checkbox to hide it from the graph.
+
+Now, an analysis of the code compared with the previous figure.  If you review the node counter (the green graph), it matches up cleanly with the code.  The node count increases in discrete steps.  You can presume that each increase in the node count is a call to `grow()`.
+
+The JS heap graph (the blue graph) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection (click the  **collect garbage** ![force garbage collection](./reference-images/collect-garbage-icon.png) button).
+
+As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected: the JavaScript code is creating the DOM nodes on every button you click, and is doing a lot of work when it creates the string of one million characters.
+
+The key thing here is the fact that the JS heap ends higher than it began (the "beginning" here being the point after the forced garbage collection).  In the real world, if you saw this pattern of increasing JS heap size or node size, it would potentially indicate a memory leak.
+
+<!--todo old: the Heap snapshots and Profiles panel aren't found in Edge  -->
+
+See also:
+* [View memory metrics](#view-memory-metrics), above.
 
 
 <!-- ====================================================================== -->
