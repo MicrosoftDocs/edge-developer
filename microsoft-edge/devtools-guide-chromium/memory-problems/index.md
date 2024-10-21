@@ -238,23 +238,29 @@ See also:
 
 <!-- todo: move section's content into [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md) and just link to there -->
 
-Use the **Allocation sampling** profiling type to view memory allocation by JavaScript function:
+To use the **Allocation sampling** profiling type to view memory allocation by JavaScript function:
 
-![Record Allocation sampling](./index-images/memory-allocation-sampling.png)
+1. Open a webpage; for example, open the [Example 3: Scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) demo in a new window or tab.
 
-1. Click the **Allocation sampling** option button.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. If there is a worker on the page, you can select that as the profiling target, by using the dropdown menu next to the **Start** button.
+1. In DevTools, on the **Activity Bar**, select the **Memory** tool.  If that tool isn't visible, click the **More tools** (![More tools icon](./heap-snapshots-images/more-tools-icon.png)) button.
+
+   ![Record Allocation sampling](./index-images/memory-allocation-sampling.png)
+
+1. Select the **Allocation sampling** option button.
+
+1. In the **Select JavaScript VM instance** section, if there is a worker on the page, you can select that as the profiling target.
 
 1. Click the **Start** button.
 
-1. On the webpage, perform actions that you want to investigate.
+1. On the webpage, perform actions that you want to investigate.  For example, click the **Create scattered objects** button in the **Example 3: Scattered objects** webpage.
 
-1. Click the **Stop** button when you have finished all of your actions.
+1. In the **Memory** tool, click the **Stop** button.
 
-DevTools shows you a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**, which displays the functions that allocated the most memory at the top.
+   A new profile is added in the **Sampling profiles** section in the **Profiles** sidebar.  The profile shows a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**, which displays the functions that allocated the most memory at the top:
 
-![Allocation sampling](./index-images/memory-allocation-sampling-heavy-bottom-up.png)
+   ![Allocation sampling](./index-images/memory-allocation-sampling-heavy-bottom-up.png)
 
 See also:
 * [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md)
