@@ -249,8 +249,8 @@ Added a new `RestartRequested` event.  The `RestartRequested` event is raised wh
     * [CoreWebView2RestartRequestedEventArgs.Priority Property](/dotnet/api/microsoft.web.webview2.core.corewebview2restartrequestedeventargs.priority?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)
 
 * [CoreWebView2RestartRequestedPriority Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2restartrequestedpriority?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)
-    * `CoreWebView2RestartRequestedPriority.High`
     * `CoreWebView2RestartRequestedPriority.Normal`
+    * `CoreWebView2RestartRequestedPriority.High`
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -261,8 +261,8 @@ Added a new `RestartRequested` event.  The `RestartRequested` event is raised wh
     * [CoreWebView2RestartRequestedEventArgs.Priority Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2restartrequestedeventargs?view=webview2-winrt-1.0.2895-prerelease&preserve-view=true#priority)
 
 * [CoreWebView2RestartRequestedPriority Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2restartrequestedpriority?view=webview2-winrt-1.0.2895-prerelease&preserve-view=true)
-    * `CoreWebView2RestartRequestedPriority.High`
     * `CoreWebView2RestartRequestedPriority.Normal`
+    * `CoreWebView2RestartRequestedPriority.High`
       
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -274,9 +274,9 @@ Added a new `RestartRequested` event.  The `RestartRequested` event is raised wh
   * [ICoreWebView2ExperimentalRestartRequestedEventArgs::get_Priority](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalrestartrequestedeventargs?view=webview2-1.0.2895-prerelease&preserve-view=true#get_priority)<!-- no put -->
 * [ICoreWebView2ExperimentalRestartRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalrestartrequestedeventhandler?view=webview2-1.0.2895-prerelease&preserve-view=true)
 
-* [COREWEBVIEW2_RESTART_REQUESTED_PRIORITY Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2895-prerelease&preserve-view=true#corewebview2_restart_requested_priority)
-  * `COREWEBVIEW2_RESTART_REQUESTED_PRIORITY_HIGH`
+* [COREWEBVIEW2_RESTART_REQUESTED_PRIORITY Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.2895-prerelease&preserve-view=true#corewebview2_restart_requested_priority)
   * `COREWEBVIEW2_RESTART_REQUESTED_PRIORITY_NORMAL`
+  * `COREWEBVIEW2_RESTART_REQUESTED_PRIORITY_HIGH`
 
 ---
 
