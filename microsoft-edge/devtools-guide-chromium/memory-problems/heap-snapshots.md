@@ -44,7 +44,7 @@ This article uses five demo webpages, all sourced at https://github.com/Microsof
 
 See also:
 * [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
-* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - comparison table.
+* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 
 
 <!-- ====================================================================== -->
@@ -427,8 +427,7 @@ One way to find and display all of the detached elements on a webpage is to use 
 
 See also:
 * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md)
-* [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
-
+* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 
 The following code produces detached DOM nodes:
 
@@ -541,7 +540,7 @@ To use the **Heap snapshot** profiling type to find detached elements:
 
 
 See also:
-* [Tools for investigating detached elements](index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
+* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 * [Debug DOM memory leaks ("Detached elements" profiling type)](dom-leaks-memory-tool-detached-elements.md)
 
 <!--todo old: the allocation timeline doesn't appear in the DevTools in Edge  -->
@@ -551,7 +550,7 @@ See also:
 ## See also
 <!-- todo: all links in article -->
 
-* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - comparison table.
+* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 * [Debug DOM memory leaks ("Detached elements" profiling type)](dom-leaks-memory-tool-detached-elements.md)
 * [Memory terminology](./memory-101.md)
 
