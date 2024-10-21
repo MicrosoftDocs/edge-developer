@@ -14,19 +14,21 @@ Use the Microsoft Edge Browser Task Manager as a starting point to your memory i
 
 1. In Microsoft Edge, press **Shift+Esc**.  Or, select **Settings and more** (**...**) > **More tools** > **Browser Task Manager**:
 
-   ![Opening the Microsoft Edge Browser Task Manager](./index-images/bing-settings-more-tools-browser-task-manager.png)
+   ![Opening the Microsoft Edge Browser Task Manager](./microsoft-edge-browser-task-manager-images/bing-settings-more-tools-browser-task-manager.png)
 
    Microsoft Edge Browser Task Manager opens.
 
 1. Right-click the table header, and then enable **JavaScript memory**:
 
-   ![Enabling JavaScript memory](./index-images/bing-browser-task-manager-javascript-memory.png)
+   ![Enabling JavaScript memory](./microsoft-edge-browser-task-manager-images/bing-browser-task-manager-javascript-memory.png)
 
-These two columns tell you different things about how your page is using memory:
+   The **JavaScript memory** column is displayed:
 
-*  The **Memory** column represents native memory.  DOM nodes are stored in native memory.  If this value is increasing, DOM nodes are getting created.
+   ![The JavaScript memory column](./microsoft-edge-browser-task-manager-images/javascript-memory-column.png)
 
-*  The **JavaScript Memory** column represents the JS heap.  This column contains two values.  The value you are interested in is the live number (the number in parentheses).  The live number represents how much memory the reachable objects on your page are using.  If this number is increasing, either new objects are being created, or the existing objects are growing.
+   *  The **Memory** column represents native memory.  DOM nodes are stored in native memory.  If this value is increasing, DOM nodes are getting created.
+
+   *  The **JavaScript memory** column represents the JS heap.  This column contains two values.  The value you are interested in is the live number (the number in parentheses).  The live number represents how much memory the reachable objects on your page are using.  If this number is increasing, either new objects are being created, or the existing objects are growing.
 
 <!--*  live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->
 
