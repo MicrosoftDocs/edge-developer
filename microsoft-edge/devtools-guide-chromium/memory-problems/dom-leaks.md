@@ -20,7 +20,7 @@ The **Detached Elements** tool is one way to find and display all of the detache
 
 
 <!-- copied paragraph to article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
-To increase the performance of your webpage, find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
+To increase the performance of your webpage, find the elements that are detached from the DOM tree and which you didn't expect to still be referenced by JavaScript code.  Find the detached elements that the browser can't garbage-collect because your code still references them, and then release the JavaScript code references to the detached elements.
 
 ![The Detached Elements tool, showing list of detached elements](./dom-leaks-images/detached-elements-tool.png)
 
@@ -58,7 +58,7 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
 1. Open the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/) in a new window or tab.
 
-   The **Room 1** button is initially selected, corresponding to the Room 1 instance of the `Room` class.
+   The **Room 1** button is initially selected.  In the JavaScript code of the demo webpage, an instance of the `Room` class is used to manage the messages in Room 1.
 
 1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
@@ -70,7 +70,7 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
 
    <!-- ------------------------------ -->
-   **Generate elements used by an instance of the Room class:**
+   **Generate messages, which will be stored by the JavaScript instance of the Room class:**
 
 1. In the demo webpage, click the **Fast traffic** button.
 
@@ -86,13 +86,13 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
    <!-- ------------------------------ -->
    **Change to a different instance of the Room class, so elements become detached:**
 
-1. In the demo webpage, click the **Room 2** button, which corresponds to the Room 2 instance of the `Room` class.
+1. In the demo webpage, click the **Room 2** button, which corresponds to another instance of the `Room` class.
 
    In the webpage, the messages disappear:
 
    ![Room 2 initial view](./dom-leaks-images/room-2-initial-view.png)
 
-   The messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.  They are detached elements, which are a memory leak, unless they are going to be used again by the webpage.
+   The messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.  They are detached elements, which can cause memory leaks, unless they are going to be used again by the webpage.
 
 
    <!-- ------------------------------ -->
@@ -104,7 +104,7 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
 1. In the **Detached Elements** tool, click the **Get Detached Elements** (![The Get Detached Elements icon](./dom-leaks-images/get-detached-elements-icon.png)) button.
 
-   The detached elements that can't be garbage-collected are displayed:
+   The detached DOM elements that can't be garbage-collected are displayed:
 
    ![The Get Detached Elements button](./dom-leaks-images/get-detached-elements.png)
 
@@ -125,7 +125,7 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 
 1. In the **Detached Elements** tool, in the **Id** column, double-click an ID, such as **@21299** or **@21783**.
 
-   This is the ID of one of the `<div class="message">` elements.  The **Memory** tool displays retainers in the **Retainers** tab:
+   This is the unique identifier of one of the `<div class="message">` elements in the memory heap snapshot.  The **Memory** tool displays retainers in the **Retainers** tab:
 
    ![Referencing a heap snapshot from the Detached Elements tool](./dom-leaks-images/heap-snapshot.png)
 
@@ -148,15 +148,6 @@ To analyze a detached element by using the **Detached Elements** demo webpage:
 In the JavaScript code, you have now identified the retainer object (the `unmounted` array) that's preventing the detached element from being garbage-collected by the browser.
 
 You've found detached elements that the browser can't garbage-collect, and located the JavaScript object that's still referencing the detached element.  You can then change the JavaScript code to release the element, to reduce the number of detached elements on the webpage, increasing webpage performance and responsiveness.
-
-
-<!-- copied h4 section to article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
-<!-- ------------------------------ -->
-#### Fixing the JavaScript code to prevent detached elements that can't be garbage-collected
-
-The `collectOldMessages` method of the `Room` class (on line 26) contains comments about a potential leak, and recommends making a single cache for all `Room` instances, instead of a cache for each `Room` instance, and then monitoring how many elements get into that cache over time.
-
-There is a potential leak in the existing code, because the cleanup in this method occurs at a different rate than the addition of new messages.  We can easily find ourselves in a situation where we have messages in the cache that don't need (or can't) be reused right away.  This is not likely to become too much, but the cache is per-room, which multiplies the problem.
 
 
 <!-- section not relevant for article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
@@ -207,30 +198,14 @@ Memory issues affect webpage performance, including memory leaks, memory bloat, 
 *  The performance of a webpage is consistently bad.
 *  The performance of a webpage is delayed or appears to pause frequently.
 
-After getting an initial list of detached elements, you'll trigger garbage collection (GC) in the browser, in order to see a detached element and then analyze it via heap snapshot and inspect JavaScript code that's still referencing the detached element.  You find a detached element that cannot be garbage-collected, so that you can analyze the element to identify the JavaScript code running on the webpage that is still referencing the detached element.  The analysis will take a heap snapshot and populate the **ID** of the detached element with its location in the heap.
-
-When you click the **Collect garbage** button, the browser runs garbage collection.  When you subsequently click the **Get Detached Elements** button, the **Detached Elements** tool displays all detached elements that cannot be garbage-collected.  These detached elements are memory leaks, if they aren't going to be reused by the application.
-
-For the detached element that can't be garbage-collected, use the **Analyze** (![The Analyze icon](./dom-leaks-images/analyze-icon.png)) button in the **Detached Elements** tool to identify the JavaScript code running on the webpage that is still referencing the detached element.  The **Analyze** button takes a heap snapshot and populates the **ID** of the detached element with its location in the heap.
-
-After running GC, identify the DOM node causing others to be retained.  Because the DOM is a fully connected graph, when one DOM node is retained in memory by JavaScript it can cause other DOM nodes to be retained with it.  You identify the culprit node in a detached tree that is causing the entire tree to be retained.
-
-The detached element is linked to the retainer path in the **Memory** tool.  The **Detached Elements** tool shows detached nodes, but also takes a heap snapshot, shows the **Memory** tool in the **Quick View** panel at the bottom of DevTools, and then links from the detached node in the **Detached Elements** tool to the detached node in the heap snapshot in the **Memory** tool.
-
 
 <!-- section not relevant for article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
 <!-- ====================================================================== -->
 ## Run GC before getting detached elements, to show only elements that can't be GC'd
 
-In the **Detached Elements** tool, there isn't a single button that both runs GC and then gets detached elements.  To see the needed list of detached elements, showing only the elements that can't be GC'd, you could either: 
-* Click **Collect Garbage**, and then click **Get Detached Elements** (recommended).
-* Click **Get Detached Elements**, click **Collect Garbage**, and then click **Get Detached Elements** again (for demonstration purposes).
+To only show the elements that are detached from the DOM tree and that can't be garbage-collected, always click **Collect Garbage** first, and then click **Get Detached Elements**.
 
-The latter approach is only done to demonstrate why you must force GC to run, in order to see only the detached elements that can't be GC'd.  Otherwise, you may end up with a list that shows too many elements - some that can be GC'd, and some that can't.  In practice, you only need to click **Collect Garbage**, and then click **Get Detached Elements**.
-
-Even though some elements might appear as detached at one point in time, you won't know whether they are actually memory leaks until you run GC.  When switching between chat rooms in the demo app, the web page removes the elements that are used to display messages from the DOM.  But switching to a different instance of the `Room` class doesn't delete these elements entirely, so, these elements stay in memory.  Then, when GC runs, GC might delete some of these elements, because such an element is no longer an object in the JavaScript code of the page that references them.  So GC can safely reclaim that memory.
-
-When the user uses the webpage, without DevTools, the user has no control over when GC runs.
+Even though some elements might appear as detached at one point in time, you won't know whether they are actually still referenced by JavaScript code in the webpage until you run GC.  When switching between chat rooms in the demo app, the web page removes the elements that are used to display messages from the DOM.  But switching to a different instance of the `Room` class doesn't delete these elements entirely and references to these elements still exist, so, these elements stay in memory.
 
 
 <!-- copied (& trimmed) section into article "Debug DOM memory leaks ("Detached elements" profiling type)" -->
@@ -244,6 +219,10 @@ The following image shows detached elements in the form of messages that are rea
 ![The detached elements are reattached to the DOM when switching back to Room 1](./dom-leaks-images/reattached.png)
 
 Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up.
+
+When the **Detached elements** tool reports detached elements, it's not necessarily a memory leak.  It's up to you to decide what's a memory leak and what's not.  Maybe your app will re-attach those elements later (instead of having to re-create them, which could be slower).
+
+Detaching DOM nodes is a useful approach, as long as you eventually reuse those detached elements (or delete them).  The value of the **Detached elements** tool is, when you suspect a memory leak, you can check whether there are an increasing number of unexpected detached DOM elements being reported by the tool.
 
 
 <!-- copied section into article "Debug DOM memory leaks ("Detached elements" profiling type)" -->

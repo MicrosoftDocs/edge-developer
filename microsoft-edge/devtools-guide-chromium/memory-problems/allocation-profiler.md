@@ -79,6 +79,54 @@ To begin using **Allocations on timeline**:
    ![The new Snapshot listed in the "Allocation timelines" section of the Profiles list](./allocation-profiler-images/allocation-timelines-profile.png)
 
 
+<!-- moved from Mem tool article h2 -->
+<!-- ====================================================================== -->
+## Record allocations on the timeline
+
+In the **Memory** tool, use the **Allocations on timeline** option button (profiling type).  This is one of the DevTools features to track down memory leaks in your JS heap.
+
+Given the following code:
+
+```javascript
+var x = [];
+function grow() {
+    x.push(new Array(1000000).join('x'));
+}
+document.getElementById('grow').addEventListener('click', grow);
+```
+
+Every time that the button that's referenced in the code is clicked, a string of one million characters is added to the `x` array.
+
+
+To record allocations on the timeline:
+
+1. Open a webpage, such as a demo webpage.<!-- todo: open a Demo webpage, show png & steps for it -->
+
+1. Open DevTools, and select the **Memory** tool.
+
+1. Click the **Allocations on timeline** option button, then click the **Start** button.
+
+1. Perform the action that you suspect is causing the memory leak.
+
+1. When you are done, click the **Stop recording heap profile** ![stop recording](./allocation-profiler-images/stop-recording-icon.png) button.
+
+1. As you are recording, notice whether any blue bars show up on the Allocation instrumentation on the timeline:
+
+   ![New allocations](./allocation-profiler-images/allocation-timeline-snapshot-all.png)
+
+   Those blue bars represent new memory allocations.  Those new memory allocations are your candidates for memory leaks.
+
+1. Zoom on a bar to filter the **Constructor** pane to only show objects that were allocated during the specified timeframe.
+
+   ![Zoomed allocation timeline](./allocation-profiler-images/allocation-timeline-snapshot-focused.png)
+
+1. Expand the object and select the value to view more details in the **Object** pane.
+
+   For example, in the details of the newly allocated object indicates that it was allocated to the `x` variable in the `Window` scope:
+
+   ![Object details](./allocation-profiler-images/allocation-timeline-snapshot-focused-constructor-expanded.png)
+
+
 <!-- ====================================================================== -->
 ## Read a heap allocation timeline
 

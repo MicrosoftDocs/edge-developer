@@ -270,11 +270,7 @@ To find an object in the collected heap, you can search using **Ctrl+F** and giv
 
 The **Memory** tool has the ability to show the bidirectional dependencies that sometimes exist between browser native objects (DOM nodes, CSS rules) and JavaScript objects.  This helps to discover memory leaks that happen because of forgotten, detached DOM nodes that remain in memory.
 
-See also:
-* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - comparison table.
-   * [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
-   * [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
-   * [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md)
+For detached elements, see also [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached), below.
 
 
 Consider the following DOM tree:
@@ -423,12 +419,140 @@ The **Memory** tool exports a JSON file that contains all of the string objects 
 ![Strings from the heap snapshot, in the JSON file](heap-snapshots-images/heap-snapshot-strings-json-file.png)
 
 
+
+<!-- ====================================================================== -->
+## Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)
+
+One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Heap snapshot** option button (profiling type), then type **Detached** in the **Filter by class** text box, as follows.
+
+See also:
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md)
+* [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
+
+
+The following code produces detached DOM nodes:
+
+```javascript
+var detachedTree;
+
+function create() {
+    var ul = document.createElement('ul');
+    for (var i = 0; i < 10; i++) {
+        var li = document.createElement('li');
+        ul.appendChild(li);
+    }
+    detachedTree = ul;
+}
+document.getElementById('create').addEventListener('click', create);
+```
+
+This code creates a `ul` node with ten `li` children.  The nodes are referenced by the code, but they don't exist in the DOM tree, so each node is detached.
+
+Heap snapshots are one way to identify detached nodes.  A heap snapshot shows how memory is distributed among the JS objects and DOM nodes for your page at the point of time of the snapshot.
+
+
+<!-- ------------------------------ -->
+#### Use the "Heap snapshot" profiling type to find detached elements
+
+To use the **Heap snapshot** profiling type to find detached elements:
+
+1. Open a webpage, such as the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/), in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
+
+   DevTools opens.
+
+1. In DevTools, in the **Activity Bar**, select the **Memory** (![Memory tool icon](./heap-snapshots-images/memory-tool-icon.png)) tool.
+
+   If that tab isn't visible, click the **More Tools** (![More Tools icon](./heap-snapshots-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
+
+   ![Open the Memory tool](./heap-snapshots-images/memory-tool-heap-snapshot-option-button.png)
+
+   If the **Heap snapshot** option button isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./heap-snapshots-images/profiles-icon.png)).
+
+   You don't need to select the **Heap snapshot** option button at this point, because the webpage hasn't generated any detached elements yet.
+
+   <!-- ------------------------------ -->
+   **Generate messages, which will be stored by the JavaScript instance of the Room class:**
+
+1. In the demo webpage, click the **Fast traffic** button.
+
+   The demo webpage begins generating messages and displaying them in the webpage:
+
+   ![Generating some messages in the demo webpage](./heap-snapshots-images/fast-traffic-stop.png)
+
+1. After some messages are displayed, click the **Stop** button in the demo webpage.
+
+   Each message is a `<div class="message">` element that's referenced by the Room 1 instance of the `Room` class.  There are no detached elements in the webpage DOM tree, because all of the message elements are attached to the present, Room 1 instance of the **Room** class.
+
+
+   <!-- ------------------------------ -->
+   **Change to a different instance of the Room class, so elements become detached:**
+
+1. In the demo webpage, click the **Room 2** button, which corresponds to another instance of the `Room` class.
+
+   In the webpage, the messages disappear:
+
+   ![Room 2 initial view](./heap-snapshots-images/room-2-initial-view.png)
+
+   The messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.  They are detached elements, which can cause memory leaks, unless they are going to be used again by the webpage.
+
+
+   <!-- ------------------------------ -->
+   **Get the list of detached elements:**
+
+1. In DevTools, in the **Memory** tool, click the **Collect garbage** (![The 'Collect garbage' icon](./heap-snapshots-images/collect-garbage-icon.png)) icon:
+
+   ![Taking a heap snapshot](./heap-snapshots-images/room-2-take-snapshot.png)
+
+   The browser runs garbage collection, removing any nodes that are no longer referenced by a JavaScript object.
+
+1. In the **Memory** tool, select the **Heap snapshot** option button.
+
+1. Click the **Take snapshot** button at the bottom of the **Memory** tool.
+
+   The snapshot is processed, loaded, and then listed in the **Profiles** sidebar, in the **Heap snapshots** section.
+
+1. In the **Filter by class** text box, type **detached**:
+
+   ![Filtering for detached nodes, and expanding a detached node](./heap-snapshots-images/memory-heap-snapshot-filter-detached.png)
+
+   The detached DOM elements that can't be garbage-collected are displayed.
+
+
+   <!-- ------------------------------ -->
+   **Identify the JavaScript code that references a particular detached element:**
+
+1. In the heap snapshot, expand a **Detached** object, such as **Detached \<div\>**, and then select a **Detached \<div class="message"\>** node.
+
+   Information is displayed in the **Retainers** pane at the bottom of the **Memory** tool.
+
+   <!-- old text:
+   Nodes that are highlighted yellow have direct references to them from the JavaScript code.  Nodes that are highlighted in red don't have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node isn't alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.
+   -->
+
+1. In the **Retainers** pane, click the `room.js:13` link for an **unmounted in Room** item under **Array**.  The **Sources** tool opens, displaying `room.js`, scrolled to line 13:
+
+   ![The JavaScript source code in the **Sources** tool](./heap-snapshots-images/js-in-sources-tool.png)
+
+1. To inspect the possible memory leak, study the code that uses the `unmounted` array and make sure that the reference to the node is removed when it is no longer needed.
+
+1. To return to the **Memory** tool, in the **Address Bar**, select the **Memory** tool.
+
+
+See also:
+* [Tools for investigating detached elements](index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
+* [Debug DOM memory leaks ("Detached elements" profiling type)](dom-leaks-memory-tool-detached-elements.md)
+
+<!--todo old: the allocation timeline doesn't appear in the DevTools in Edge  -->
+
+
 <!-- ====================================================================== -->
 ## See also
 <!-- todo: all links in article -->
 
-* [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
 * [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - comparison table.
+* [Debug DOM memory leaks ("Detached elements" profiling type)](dom-leaks-memory-tool-detached-elements.md)
 * [Memory terminology](./memory-101.md)
 
 External:

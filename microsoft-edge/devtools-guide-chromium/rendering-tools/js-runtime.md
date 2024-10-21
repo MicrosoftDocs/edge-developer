@@ -35,10 +35,41 @@ See also:
 [Investigate memory allocation by function ("Allocation sampling" profiling type)](../memory-problems/index.md#investigate-memory-allocation-by-function-allocation-sampling-profiling-type) in _Fix memory problems_.
 
 
+<!-- moved from Mem tool article -->
+<!-- ====================================================================== -->
+## Use the "Allocation sampling" profiling type to view memory allocation by JavaScript function
+
+To use the **Allocation sampling** profiling type to view memory allocation by JavaScript function:
+
+1. Open a webpage; for example, open the [Example 3: Scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) demo in a new window or tab.
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+
+1. In DevTools, on the **Activity Bar**, select the **Memory** tool.  If that tool isn't visible, click the **More tools** (![More tools icon](./js-runtime-images/more-tools-icon.png)) button.
+
+   ![Record Allocation sampling](./js-runtime-images/memory-allocation-sampling.png)
+
+1. Select the **Allocation sampling** option button.
+
+1. In the **Select JavaScript VM instance** section, if there is a worker on the page, you can select that as the profiling target.
+
+1. Click the **Start** button.
+
+1. On the webpage, perform actions that you want to investigate.  For example, click the **Create scattered objects** button in the **Example 3: Scattered objects** webpage.
+
+1. In the upper left of the **Memory** tool, click the **Stop heap profiling** (![The "Stop heap profiling" icon](./js-runtime-images/stop-recording-icon.png)) button.
+
+   A new profile is added in the **Sampling profiles** section in the **Profiles** sidebar.  The profile shows a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**, which displays the functions that allocated the most memory at the top:
+
+   ![Allocation sampling](./js-runtime-images/memory-allocation-sampling-heavy-bottom-up.png)
+
+
 <!-- ====================================================================== -->
 ## Record a Sampling Profile
 
 If you notice jank (interruptions of rendering) in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.
+
+This section is similar to the above section, but shows a different demo webpage.<!-- todo: merge the two sections -->
 
 To record an allocation sampling profile:
 
@@ -169,6 +200,41 @@ Hover on a function to display the name and timing data:
 <!--*  **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->
 
 ![View functions details in the profiles chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.png)
+
+
+<!-- moved from Mem tool article -->
+<!-- ====================================================================== -->
+## Investigate memory allocation, with reduced garbage ("Include objects" checkboxes)
+
+By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are created, removed, and then garbage collected (GC'd) aren't displayed in the **Memory** tool when profiling using the **Allocation sampling** or **Allocations on timeline** profiling types.
+
+You can trust the browser to clean up garbage from your code.  However, it is important to consider that GC itself is an expensive operation and multiple GCs can slow down your user's experience of your website or app.  When recording in the **Performance** tool with the **Memory** checkbox turned on, you can see the GC operation happen at the steep cliffs (sudden decreases) in the heap chart:
+
+![GC operation shown in the Performance tool](./js-runtime-images/gc-in-performance.png)
+
+By reducing the amount of garbage your code is creating, you can reduce the cost of each individual GC and the number of GC operations.
+
+
+<!-- ------------------------------ -->
+#### Track objects that are discarded by GC
+
+To track objects that are discarded by garbage collection, configure the **Allocation sampling** profiling type with settings:
+
+1. In the **Memory** tool, select the **Allocation sampling** option button (profiling type).
+
+1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
+
+   ![Allocation sampling GC settings](./js-runtime-images/memory-allocation-sampling-gc-settings.png)
+
+1. Click the **Start** button.
+
+1. On the webpage, perform actions that you want to investigate.
+
+1. Click the **Stop** button when you have finished all of your actions.
+
+DevTools now tracks all of the objects that were GC'd during the recording.  Use these settings to understand how much garbage your website or app is generating.  The data reported by **Allocation sampling** will help you identify the functions that are generating the most garbage.  
+
+If you are investigating objects that were only GC'd during specific major or minor GC operations, configure the settings appropriately to track the operation you care about. To learn more about the differences between major and minor GC, see [Trash talk: the Orinoco garbage collector | V8 JavaScript engine developer blog](https://v8.dev/blog/trash-talk).
 
 
 <!-- ====================================================================== -->

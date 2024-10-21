@@ -10,15 +10,15 @@ ms.date: 10/20/2024
 ---
 # Debug DOM memory leaks ("Detached elements" profiling type)
 
-One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Detached elements** option button (profiling type), as follows.  For a comparison of tools to view detached elements, see [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
+One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Detached elements** profiling type, as follows.  For a comparison of tools to view detached elements, see [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 
-The **Detached elements** option button (profiling type) helps you fix memory leaks due to detached DOM elements.  The resulting profile lists the detached objects that are retained by a JavaScript reference.  This profiling type shows a view of the detached nodes to help you identify memory leaks on your webpage.
+The **Detached elements** profiling type helps you fix memory leaks due to detached DOM elements.  The resulting profile lists the detached objects that are retained by references in your JavaScript code.  This profiling type shows a view of the detached nodes to help you identify possible memory leaks on your webpage.
 
 
 <!-- ====================================================================== -->
 ## Analyze a webpage's detached elements
 
-To use the **Detached elements** option button (profiling type) to analyze a webpage's detached elements:
+To use the **Detached elements** profiling type to analyze a webpage's detached elements:
 
 1. Open a webpage, such as the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/), in a new window or tab.
 
@@ -32,14 +32,14 @@ To use the **Detached elements** option button (profiling type) to analyze a web
 
    ![Open the Memory tool](./dom-leaks-memory-tool-detached-elements-images/memory-tool-detached-elements-option-button.png)
 
-   If the **Detached elements** option button (profiling type) isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./dom-leaks-memory-tool-detached-elements-images/profiles-icon.png)).
+   If the **Detached elements** option button isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./dom-leaks-memory-tool-detached-elements-images/profiles-icon.png)).
 
-   You don't need to select the **Detached elements** option button (profiling type) at this point, because the webpage hasn't generated any detached elements yet.
+   You don't need to select the **Detached elements** option button at this point, because the webpage hasn't generated any detached elements yet.
 
    <!-- ------------------------------ -->
-   **Generate elements used by an instance of the Room class:**
+   **Generate messages, which will be stored by the JavaScript instance of the Room class:**
 
-   The **Room 1** button is initially selected, corresponding to the Room 1 instance of the `Room` class.
+   The **Room 1** button is initially selected.  In the JavaScript code of the demo webpage, an instance of the `Room` class is used to manage the messages in Room 1.
 
 1. In the demo webpage, click the **Fast traffic** button.
 
@@ -55,19 +55,19 @@ To use the **Detached elements** option button (profiling type) to analyze a web
    <!-- ------------------------------ -->
    **Change to a different instance of the Room class, so elements become detached:**
 
-1. In the demo webpage, click the **Room 2** button, which corresponds to the Room 2 instance of the `Room` class.
+1. In the demo webpage, click the **Room 2** button, which corresponds to another instance of the `Room` class.
 
    In the webpage, the messages disappear:
 
    ![Room 2 initial view](./dom-leaks-memory-tool-detached-elements-images/room-2-initial-view.png)
 
-   The messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.  They are detached elements, which are a memory leak, unless they are going to be used again by the webpage.
+   The messages that were generated for the Room 1 instance of the **Room** class (`<div class="message">` elements) are no longer attached to the DOM, but they're still referenced by the Room 1 instance of the **Room** class.  They are detached elements, which can cause memory leaks, unless they are going to be used again by the webpage.
 
 
    <!-- ------------------------------ -->
    **Get the list of detached elements:**
 
-1. In DevTools, in the **Memory** tool, select the **Detached elements** option button (profiling type), and then click the **Start** button.
+1. In DevTools, in the **Memory** tool, select the **Detached elements** option button, and then click the **Start** button.
 
    The list of detached nodes is displayed in the **Detached nodes** column of the generated **Detached elements** profile:
 
@@ -90,17 +90,8 @@ For additional ways to assess memory leaks, see [Tools for investigating detache
 <!-- ====================================================================== -->
 ## About DOM leaks due to detached elements
 
-To increase the performance of your webpage, find detached elements that the browser can't garbage-collect, and then locate the JavaScript object that's still referencing the detached element.  Then change your JavaScript to release the element, to reduce the number of detached elements on your webpage, increasing webpage performance and responsiveness.
+To increase the performance of your webpage, find the elements that are detached from the DOM tree and which you didn't expect to still be referenced by JavaScript code.  Find the detached elements that the browser can't garbage-collect because your code still references them, and then release the JavaScript code references to the detached elements.
 <!-- copied from dom-leaks.md -->
-
-
-<!-- copied from dom-leaks.md -->
-<!-- ------------------------------ -->
-#### Fixing the JavaScript code to prevent detached elements that can't be garbage-collected
-
-In the demo webpage, the `collectOldMessages` method of the `Room` class (on line 26) contains comments about a potential leak, and recommends making a single cache for all `Room` instances, instead of a cache for each `Room` instance, and then monitoring how many elements get into that cache over time.
-
-There is a potential leak in the existing code, because the cleanup in this method occurs at a different rate than the addition of new messages.  We can easily find ourselves in a situation where we have messages in the cache that don't need (or can't) be reused right away.  This is not likely to become too much, but the cache is per-room, which multiplies the problem.
 
 
 <!-- copied from dom-leaks.md, & trimmed to omit DE tool's UI controls -->
@@ -123,6 +114,10 @@ Memory issues affect webpage performance, including memory leaks, memory bloat, 
 ## Re-attaching elements
 
 For this demo webpage, it makes sense to retain the list of chat messages, so that if a user switches back to **Room 1**, the message log is preserved.  Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up.
+
+When the **Detached elements** tool reports detached elements, it's not necessarily a memory leak.  It's up to you to decide what's a memory leak and what's not.  Maybe your app will re-attach those elements later (instead of having to re-create them, which could be slower).
+
+Detaching DOM nodes is a useful approach, as long as you eventually reuse those detached elements (or delete them).  The value of the **Detached elements** tool is, when you suspect a memory leak, you can check whether there are an increasing number of unexpected detached DOM elements being reported by the tool.
 
 
 <!-- copied from dom-leaks.md -->

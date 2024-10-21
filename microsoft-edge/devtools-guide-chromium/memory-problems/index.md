@@ -30,11 +30,13 @@ move content out to the dedicated articles, present an overview of each tool/fea
 
 as an overview of the profiling types, incorp text from old Memory tool's option buttons:
 
-Heap snapshot - Heap snapshot profiles show memory distribution among your page's JavaScript objects and related DOM nodes.
+* **Heap snapshot** - Heap snapshot profiles show memory distribution among your page's JavaScript objects and related DOM nodes.
 
-Allocation instrumentation on timeline - Allocation timelines show instrumented JavaScript memory allocations over time.  Once profile is recorded you can select a time interval to see objects that were allocated within it and still alive by the end of recording.  Use this profile type to isolate memory leaks.
+* **Allocation instrumentation on timeline** - Allocation timelines show instrumented JavaScript memory allocations over time.  Once profile is recorded you can select a time interval to see objects that were allocated within it and still alive by the end of recording.  Use this profile type to isolate memory leaks.
 
-Allocation sampling - Record memory allocations using sample method.  This profile type has minimal performance overhead and can be used for long running operations.  It provides good approximation of allocations broken down by JavaScript execution stack.
+* **Allocation sampling** - Record memory allocations using sample method.  This profile type has minimal performance overhead and can be used for long running operations.  It provides good approximation of allocations broken down by JavaScript execution stack.
+
+* **Detached elements** - _no such option button & text existed; assume the above intentions have been modified by adding this prof type and are now outdated advice/positioning_
 -->
 
 
@@ -47,8 +49,8 @@ Allocation sampling - Record memory allocations using sample method.  This profi
 | Visualize memory usage over time | **Performance** tool > **Memory** checkbox | [Visualize memory leaks (Performance tool: Memory checkbox)](#visualize-memory-leaks-performance-tool-memory-checkbox) |
 | Spot frequent garbage collections | Microsoft Edge Browser Task Manager, or **Performance** tool > **Memory** checkbox | [Spot frequent garbage collections (Microsoft Edge Browser Task Manager, Performance tool's Memory checkbox)](#spot-frequent-garbage-collections-microsoft-edge-browser-task-manager-performance-tools-memory-checkbox) |
 | Record a heap snapshot | **Memory** tool > <!--[1]--> **Heap snapshot** option button | [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md) |
-| Find out when new memory is being allocated in your JavaScript heap (JS heap) | **Memory** tool > <!--[2]--> **Allocations on timeline** option button | [Identify JS heap memory leaks ("Allocations on timeline" profiling type)](#identify-js-heap-memory-leaks-allocations-on-timeline-profiling-type) |
-| Investigate memory allocation by function | **Memory** tool > <!--[3]--> **Allocation sampling** option button | [Investigate memory allocation by function ("Allocation sampling" profiling type)](#investigate-memory-allocation-by-function-allocation-sampling-profiling-type) |
+| Find out when new memory is being allocated in your JavaScript heap (JS heap) | **Memory** tool > <!--[2]--> **Allocations on timeline** option button | [Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)](./allocation-profiler.md) |
+| Investigate memory allocation by function | **Memory** tool > <!--[3]--> **Allocation sampling** option button | [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md) |
 | Find DOM tree memory leaks | **Memory** tool > <!--[4]--> **Detached elements** option button | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
 
 
@@ -185,131 +187,30 @@ See:
 <!-- ====================================================================== -->
 ## Identify JS heap memory leaks ("Allocations on timeline" profiling type)
 
-<!-- todo: move section's content into [Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)](./allocation-profiler.md) and just link to there -->
-
-In the **Memory** tool, use the **Allocations on timeline** option button (profiling type).  This is one of the DevTools features to track down memory leaks in your JS heap.
-
-Given the following code:
-
-```javascript
-var x = [];
-function grow() {
-    x.push(new Array(1000000).join('x'));
-}
-document.getElementById('grow').addEventListener('click', grow);
-```
-
-Every time that the button that's referenced in the code is clicked, a string of one million characters is added to the `x` array.
-
-To record allocations on the timeline:
-
-1. Open DevTools, and select the **Memory** tool.
-
-1. Click the **Allocations on timeline** option button, then click the **Start** button.
-
-1. Perform the action that you suspect is causing the memory leak.
-
-1. When you are done, click the **Stop recording heap profile** ![stop recording](./index-images/stop-recording-icon.png) button.
-
-1. As you are recording, notice whether any blue bars show up on the Allocation instrumentation on the timeline:
-
-   ![New allocations](./index-images/allocation-timeline-snapshot-all.png)
-
-   Those blue bars represent new memory allocations.  Those new memory allocations are your candidates for memory leaks.
-
-1. Zoom on a bar to filter the **Constructor** pane to only show objects that were allocated during the specified timeframe.
-
-   ![Zoomed allocation timeline](./index-images/allocation-timeline-snapshot-focused.png)
-
-1. Expand the object and select the value to view more details in the **Object** pane.
-
-   For example, in the following figure, in the details of the newly allocated object indicates that it was allocated to the `x` variable in the `Window` scope:
-
-![Object details](./index-images/allocation-timeline-snapshot-focused-constructor-expanded.png)
-
-
-See also:
-* [Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)](./allocation-profiler.md)
+See [Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)](./allocation-profiler.md).
 
 
 <!--[3]-->
 <!-- ====================================================================== -->
 ## Investigate memory allocation by function ("Allocation sampling" profiling type)
 
-<!-- todo: move section's content into [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md) and just link to there -->
-
-To use the **Allocation sampling** profiling type to view memory allocation by JavaScript function:
-
-1. Open a webpage; for example, open the [Example 3: Scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) demo in a new window or tab.
-
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
-
-1. In DevTools, on the **Activity Bar**, select the **Memory** tool.  If that tool isn't visible, click the **More tools** (![More tools icon](./heap-snapshots-images/more-tools-icon.png)) button.
-
-   ![Record Allocation sampling](./index-images/memory-allocation-sampling.png)
-
-1. Select the **Allocation sampling** option button.
-
-1. In the **Select JavaScript VM instance** section, if there is a worker on the page, you can select that as the profiling target.
-
-1. Click the **Start** button.
-
-1. On the webpage, perform actions that you want to investigate.  For example, click the **Create scattered objects** button in the **Example 3: Scattered objects** webpage.
-
-1. In the **Memory** tool, click the **Stop** button.
-
-   A new profile is added in the **Sampling profiles** section in the **Profiles** sidebar.  The profile shows a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**, which displays the functions that allocated the most memory at the top:
-
-   ![Allocation sampling](./index-images/memory-allocation-sampling-heavy-bottom-up.png)
-
-See also:
-* [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md)
-
-
-<!-- ------------------------------ -->
-#### Investigate memory allocation, with reduced garbage ("Include objects" checkboxes)
-
-By default, the **Allocation sampling** profiling type only reports allocations that are still alive at the end of the recording session.  Objects that are created, removed, and then garbage collected (GC'd) aren't displayed in the **Memory** tool when profiling using the **Allocation sampling** or **Allocations on timeline** profiling types.
-
-You can trust the browser to clean up garbage from your code.  However, it is important to consider that GC itself is an expensive operation and multiple GCs can slow down your user's experience of your website or app.  When recording in the **Performance** tool with the **Memory** checkbox turned on, you can see the GC operation happen at the steep cliffs (sudden decreases) in the heap chart:
-
-![GC operation shown in the Performance tool](./index-images/gc-in-performance.png)
-
-By reducing the amount of garbage your code is creating, you can reduce the cost of each individual GC and the number of GC operations.
-
-To track objects that are discarded by GC, configure the **Allocation sampling** profiling type with settings:
-
-1. In the **Memory** tool, select the **Allocation sampling** option button (profiling type).
-
-1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
-
-   ![Allocation sampling GC settings](./index-images/memory-allocation-sampling-gc-settings.png)
-
-1. Click the **Start** button.
-
-1. On the webpage, perform actions that you want to investigate.
-
-1. Click the **Stop** button when you have finished all of your actions.
-
-DevTools now tracks all of the objects that were GC'd during the recording.  Use these settings to understand how much garbage your website or app is generating.  The data reported by **Allocation sampling** will help you identify the functions that are generating the most garbage.  
-
-If you are investigating objects that were only GC'd during specific major or minor GC operations, configure the settings appropriately to track the operation you care about. To learn more about the differences between major and minor GC, see [Trash talk: the Orinoco garbage collector | V8 JavaScript engine developer blog](https://v8.dev/blog/trash-talk).
+See [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md).
 
 
 <!-- ====================================================================== -->
 ## Find DOM tree memory leaks from detached elements
 
-A DOM node is only garbage-collected when there are no references to the node from either the DOM tree or JavaScript code running on the page.  A node is said to be "detached" when it is removed from the DOM tree but some JavaScript still references it.  Detached DOM nodes are a common cause of memory leaks.
+A DOM node is only garbage-collected by the browser when there are no references to the node from either the DOM tree or JavaScript code running on the page.  A node is said to be "detached" when it is removed from the DOM tree but some JavaScript still references it.  Detached DOM nodes are a common cause of memory leaks.
 
 
 <!-- ------------------------------ -->
 #### Tools for investigating detached elements
 
-| Tool | Pros | Cons | Docs |
-|---|---|---|---|
-| **Memory** tool > **Detached elements** option button (profiling type) | Shows elements as DOM tree nodes. | Doesn't link to JavaScript source code. | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
-| **Memory** tool > **Heap snapshot** option button (profiling type) > **Detached** | The detached element has a link to its JavaScript source code.<!-- todo: how get to JS? --> | Shows elements as objects in memory. | [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md) |
-| **Detached Elements** tool | Shows elements as DOM tree nodes.  The detached element has a link to its JavaScript source code. | Deprecated. | [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md) |
+| Tool | Use case | Docs |
+|---|---|---|
+| **Memory** tool > **Detached elements** option button (profiling type) | Shows detached elements only, as DOM tree nodes.  | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
+| **Memory** tool > **Heap snapshot** option button (profiling type) > **Detached** | Shows all objects in memory, including detached elements, which requires filtering, with links to the JavaScript source code in the **Retainers** panel. | [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./heap-snapshots.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_. |
+| **Detached Elements** tool | Shows detached elements only, as DOM tree nodes, with links to the JavaScript source code. | [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md) |
 
 
 <!--[4]-->
@@ -323,72 +224,7 @@ See [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-me
 <!-- ====================================================================== -->
 ## Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)
 
-<!-- todo: move section's content into [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md) and just link to there -->
-
-One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Heap snapshot** option button (profiling type), then type **Detached** in the **Filter by class** text box, as follows.
-
-See also:
-* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md)
-* [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
-
-
-The following code produces detached DOM nodes:
-
-```javascript
-var detachedTree;
-
-function create() {
-    var ul = document.createElement('ul');
-    for (var i = 0; i < 10; i++) {
-        var li = document.createElement('li');
-        ul.appendChild(li);
-    }
-    detachedTree = ul;
-}
-document.getElementById('create').addEventListener('click', create);
-```
-
-This code creates a `ul` node with ten `li` children.  The nodes are referenced by the code, but they don't exist in the DOM tree, so each node is detached.
-
-Heap snapshots are one way to identify detached nodes.  A heap snapshot shows how memory is distributed among the JS objects and DOM nodes for your page at the point of time of the snapshot.
-
-
-To use the **Heap snapshot** profiling type to find detached elements:
-
-1. Open DevTools and go to the **Memory** tool.
-
-1. Click the **Heap snapshot** option button, and then click the **Take snapshot** button:
-
-   ![Taking a heap snapshot](./index-images/memory-heap-snapshot.png)
-
-   The snapshot may take some time to process and load.
-
-1. After the snapshot is finished, select it from the left-hand panel's **Heap snapshots** section.
-
-1. In the **Filter by class** text box, type `Detached`, to search for detached DOM trees:
-
-   ![Filtering for detached nodes](./index-images/memory-heap-snapshot-filter-detached.png)
-
-1. Expand the carats to investigate a detached tree:
-
-   ![Investigating the detached tree](./index-images/memory-heap-snapshot-filter-detached-expanded.png)
-
-   <!--
-   Nodes that are highlighted yellow have direct references to them from the JavaScript code.  Nodes that are highlighted in red don't have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node isn't alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.
-   -->
-
-1. Click a node to investigate it further.
-
-   In the **Objects** pane, you can see more information about the code that is referencing the node.  For example, in the following figure, the `detachedTree` variable is referencing the node:
-
-   ![Investigating a node](./index-images/memory-heap-snapshot-filter-detached-expanded-selected.png)
-
-1. To fix the particular memory leak, study the code that uses the `detachedTree` variable and make sure that the reference to the node is removed when it is no longer needed.
-
-
-For additional ways to assess memory leaks, see [Tools for investigating detached elements](#tools-for-investigating-detached-elements), above.
-
-<!--todo old: the allocation timeline doesn't appear in the DevTools in Edge  -->
+See [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md).
 
 
 <!-- ====================================================================== -->
