@@ -28,12 +28,6 @@ The **Detached Elements** tool, showing retainers in the **Memory** tool, with l
 
 ![The Detached Elements tool, showing retainers](./dom-leaks-images/heap-snapshot.png)
 
-See also:
-* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_ - comparison of tools to view detached elements.
-   * [Find DOM tree memory leaks ("Detached elements" profiling type)](./index.md#find-dom-tree-memory-leaks-detached-elements-profiling-type) in _Fix memory problems_.
-   * [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
-   * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md)
-
 
 <!-- ------------------------------ -->
 #### Video: Debug memory leaks with the Microsoft Edge Detached Elements tool

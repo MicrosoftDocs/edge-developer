@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/21/2024
 ---
-## Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
+# Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
 
 Use the Microsoft Edge Browser Task Manager as a starting point to your memory issue investigation.  The Microsoft Edge Browser Task Manager is a realtime monitor that tells you how much memory a page is currently using.
 
@@ -34,4 +34,4 @@ These two columns tell you different things about how your page is using memory:
 <!-- ============================================ -->
 ## See also
 
-* [Fix memory problems](index.md)
+* [Fix memory problems](./index.md)

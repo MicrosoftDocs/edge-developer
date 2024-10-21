@@ -28,9 +28,6 @@ How to Use the Allocation Profiler Tool -->
 
 In the **Memory** tool, use the **Allocations on timeline** option button (profiling type) to find objects that aren't being properly garbage-collected, and continue to retain memory.
 
-See also:
-* [Identify JS heap memory leaks ("Allocations on timeline" profiling type)](./index.md#identify-js-heap-memory-leaks-allocations-on-timeline-profiling-type) in _Fix memory problems_.
-
 
 <!-- ====================================================================== -->
 ## How Allocation instrumentation on timeline works
@@ -79,7 +76,7 @@ To begin using **Allocations on timeline**:
    ![The new Snapshot listed in the "Allocation timelines" section of the Profiles list](./allocation-profiler-images/allocation-timelines-profile.png)
 
 
-<!-- moved from Mem tool article h2 -->
+<!-- moved from "Fix memory problems" article -->
 <!-- ====================================================================== -->
 ## Record allocations on the timeline
 
@@ -149,7 +146,7 @@ Clicking on a specific object in the heap shows the retaining tree in the bottom
 <!-- ====================================================================== -->
 ## View memory allocation by function
 
-You can view memory allocation by JavaScript function.  See [Investigate memory allocation by function ("Allocation sampling" profiling type)](./index.md#investigate-memory-allocation-by-function-allocation-sampling-profiling-type).
+You can view memory allocation by JavaScript function.  See [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md).
 
 
 <!-- ====================================================================== -->

@@ -43,7 +43,6 @@ This article uses five demo webpages, all sourced at https://github.com/Microsof
 -->
 
 See also:
-* [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./index.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Fix memory problems_.
 * [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 
 

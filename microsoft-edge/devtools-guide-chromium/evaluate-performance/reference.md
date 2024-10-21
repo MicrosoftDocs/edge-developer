@@ -698,7 +698,7 @@ Use **Disable local fonts** to make it easier to:
 <!-- ====================================================================== -->
 ## Visualize memory leaks (Performance tool: Memory checkbox)
 
-As a starting point to investigate webpage memory usage, use the **Performance** tool's **Memory** checkbox.  (Or, [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](./microsoft-edge-browser-task-manager.md).)
+As a starting point to investigate webpage memory usage, use the **Performance** tool's **Memory** checkbox.  (Or, [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](../memory-problems/microsoft-edge-browser-task-manager.md).)
 
 The **Performance** tool helps you visualize the memory use of a page over time.
 

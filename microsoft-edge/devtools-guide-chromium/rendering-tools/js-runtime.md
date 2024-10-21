@@ -31,9 +31,6 @@ Record exactly which functions were called and how much memory each requires wit
 
 Visualize your profiles as a flame chart.
 
-See also:
-[Investigate memory allocation by function ("Allocation sampling" profiling type)](../memory-problems/index.md#investigate-memory-allocation-by-function-allocation-sampling-profiling-type) in _Fix memory problems_.
-
 
 <!-- moved from Mem tool article -->
 <!-- ====================================================================== -->
