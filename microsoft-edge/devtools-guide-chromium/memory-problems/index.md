@@ -40,7 +40,7 @@ To find memory issues that affect page performance, including memory leaks, memo
 | Record a heap snapshot, which shows memory distribution among your webpage's JavaScript objects and related DOM nodes. | **Memory** tool > **Heap snapshot** | [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md) |
 | Find out when new memory is being allocated in your JavaScript heap (JS heap).  An allocation timeline shows instrumented JavaScript memory allocations over time.  Use this profile type to isolate memory leaks; select a time interval to see objects that were allocated within the interval and are still alive by the end of recording. | **Memory** tool > **Allocations on timeline** | [Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)](./allocation-profiler.md) |
 | Investigate memory allocation by function.  Record memory allocations using the sample method.  This profile type has minimal performance overhead and can be used for long-running operations; provides a good approximation of allocations, broken down by JavaScript execution stack. | **Memory** tool > **Allocation sampling** | [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md) |
-| Find DOM tree memory leaks | **Memory** tool > **Detached elements** | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
+| Find DOM tree memory leaks. | **Memory** tool > **Detached elements** | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
 
 
 <!-- ------------------------------ -->
