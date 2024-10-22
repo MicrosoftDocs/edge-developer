@@ -42,9 +42,6 @@ This article uses five demo webpages, all sourced at https://github.com/Microsof
 *  [Example 9: DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html)
 -->
 
-See also:
-* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
-
 
 <!-- ====================================================================== -->
 ## Take a snapshot
@@ -318,6 +315,7 @@ To understand where DOM nodes might leak, and how to detect such leakage, open t
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
+
 <!-- ------------------------------ -->
 #### Demo webpage: Example 9: DOM leaks bigger than expected
 
@@ -422,11 +420,7 @@ The **Memory** tool exports a JSON file that contains all of the string objects 
 <!-- ====================================================================== -->
 ## Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)
 
-One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Heap snapshot** option button (profiling type), then type **Detached** in the **Filter by class** text box, as follows.
-
-See also:
-* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md)
-* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
+One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Heap snapshot** option button (profiling type), then type **Detached** in the **Filter by class** text box, as follows.  See also [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 
 The following code produces detached DOM nodes:
 
@@ -538,9 +532,7 @@ To use the **Heap snapshot** profiling type to find detached elements:
 1. To return to the **Memory** tool, in the **Address Bar**, select the **Memory** tool.
 
 
-See also:
-* [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
-* [Debug DOM memory leaks ("Detached elements" profiling type)](dom-leaks-memory-tool-detached-elements.md)
+For additional ways to see detached elements, see [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 
 <!--todo old: the allocation timeline doesn't appear in the DevTools in Edge  -->
 
@@ -550,7 +542,6 @@ See also:
 <!-- todo: all links in article -->
 
 * [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
-* [Debug DOM memory leaks ("Detached elements" profiling type)](dom-leaks-memory-tool-detached-elements.md)
 * [Memory terminology](./memory-101.md)
 
 External:
