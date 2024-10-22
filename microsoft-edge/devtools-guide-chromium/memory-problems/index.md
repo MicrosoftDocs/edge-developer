@@ -34,7 +34,7 @@ To find memory issues that affect page performance, including memory leaks, memo
 
 | Use case | Tool | Article |
 |---|---|---|
-| Monitor how much memory your webpage is using, in realtime.  A starting point for memory issue investigation.  A realtime monitor that shows how much memory a webpage is currently using. | Microsoft Edge Browser Task Manager | [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](./microsoft-edge-browser-task-manager.md) |
+| Monitor how much memory your webpage is using, in realtime.  A starting point for memory issue investigation. | Microsoft Edge Browser Task Manager | [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](./microsoft-edge-browser-task-manager.md) |
 | Visualize memory usage of a webpage over time.  A starting point to investigate webpage memory usage. | **Performance** tool > **Memory** checkbox | [Visualize memory leaks (Performance tool: Memory checkbox)](../evaluate-performance/reference.md#visualize-memory-leaks-performance-tool-memory-checkbox) in _Performance features reference_. |
 | Spot frequent garbage collections. | Microsoft Edge Browser Task Manager, or **Performance** tool > **Memory** checkbox | [Spot frequent garbage collections (Microsoft Edge Browser Task Manager, Performance tool's Memory checkbox)](#spot-frequent-garbage-collections-microsoft-edge-browser-task-manager-performance-tools-memory-checkbox), below. |
 | Record a heap snapshot, which shows memory distribution among your webpage's JavaScript objects and related DOM nodes. | **Memory** tool > **Heap snapshot** | [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md) |
