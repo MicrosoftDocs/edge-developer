@@ -142,9 +142,6 @@ The experiments checkboxes that appear in the latest version of the Canary previ
 
 Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you install an add-on that defines a custom color theme for DevTools, you need to enable the **Allow extensions to load custom stylesheets** experiment to view the add-on themes.
 
-See also:
-* [Apply a color theme to DevTools](../customize/theme.md)
-
 Status:
 * This checkbox is present in Microsoft Edge Canary 131.
 * This checkbox is present in Microsoft Edge Stable 129.
