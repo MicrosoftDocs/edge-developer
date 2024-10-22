@@ -35,101 +35,78 @@ Visualize your profiles as a flame chart.
 <!-- ====================================================================== -->
 ## Use the "Allocation sampling" profiling type to view memory allocation by JavaScript function
 
+If you notice jank (interruptions of rendering) in your JavaScript, collect a memory allocation sampling profile, by using the **Allocation sampling** profiling type.  A sampling profile shows which functions allocated the most memory.
+
 To use the **Allocation sampling** profiling type to view memory allocation by JavaScript function:
-
-1. Open a webpage; for example, open the [Example 3: Scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) demo in a new window or tab.
-
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
-
-1. In DevTools, on the **Activity Bar**, select the **Memory** tool.  If that tool isn't visible, click the **More tools** (![More tools icon](./js-runtime-images/more-tools-icon.png)) button.
-
-   ![Record Allocation sampling](./js-runtime-images/memory-allocation-sampling.png)
-
-1. Select the **Allocation sampling** option button.
-
-1. In the **Select JavaScript VM instance** section, if there is a worker on the page, you can select that as the profiling target.
-
-1. Click the **Start** button.
-
-1. On the webpage, perform actions that you want to investigate.  For example, click the **Create scattered objects** button in the **Example 3: Scattered objects** webpage.
-
-1. In the upper left of the **Memory** tool, click the **Stop heap profiling** (![The "Stop heap profiling" icon](./js-runtime-images/stop-recording-icon.png)) button.
-
-   A new profile is added in the **Sampling profiles** section in the **Profiles** sidebar.  The profile shows a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**, which displays the functions that allocated the most memory at the top:
-
-   ![Allocation sampling](./js-runtime-images/memory-allocation-sampling-heavy-bottom-up.png)
-
-
-<!-- ====================================================================== -->
-## Record a Sampling Profile
-
-If you notice jank (interruptions of rendering) in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.
-
-This section is similar to the above section, but shows a different demo webpage.<!-- todo: merge the two sections -->
-
-To record an allocation sampling profile:
 
 1. Open a webpage, such as the [Detached Elements demo webpage](https://microsoftedge.github.io/Demos/detached-elements/), in a new window or tab.
 
-1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
+1. Right-click the webpage, and then select **Inspect**.
 
-   DevTools opens.
+   Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, in the **Activity Bar**, select the **Memory** (![Memory tool icon](./js-runtime-images/memory-tool-icon.png)) tool.
-
-   If that tab isn't visible, click the **More Tools** (![More Tools icon](./js-runtime-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
+1. In DevTools, in the **Activity Bar**, select the **Memory** (![Memory tool icon](./js-runtime-images/memory-tool-icon.png)) tool:
 
    ![The "Allocation sampling" option button in the Memory tool](./js-runtime-images/allocation-sampling-option-button.png)
+
+   If the **Memory** tool isn't visible, click the **More tools** (![More tools icon](./js-runtime-images/more-tools-icon.png)) button, and then select **Memory**.
 
 1. Select the **Allocation sampling** option button.
 
    If the **Allocation sampling** option button isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./js-runtime-images/profiles-icon.png)).
 
+1. In the **Select JavaScript VM instance** section, if there is a worker on the page, you can select that as the profiling target.
+
 1. At the bottom of the **Memory** tool, click the **Start** button.
 
-1. Interact with the webpage; for example, click the **Fast traffic** button and then the **Stop** button in the demo webpage.  Depending on what you are trying to analyze, you can either refresh the page, interact with the page, or just let the page run.
+1. Interact with the webpage.  For example, click the **Fast traffic** button and then the **Stop** button in the demo webpage.
+
+   Depending on what you are trying to analyze, you can either refresh the page, interact with the page, or just let the page run.
 
 1. In the upper left of the **Memory** tool, click the **Stop heap profiling** (![The "Stop heap profiling" icon](./js-runtime-images/stop-recording-icon.png)) button.
 
-   A new **Profile** is created in the **Sampling profiles** section of the **Profiles** list:
+   Or, at the bottom of the **Memory** tool, click the **Stop** button.  A new **Profile** is added in the **Sampling profiles** section in the **Profiles** sidebar:
 
    ![The new Profile listed in the "Sampling profiles" section of the Profiles list](./js-runtime-images/sampling-profile.png)
+
+   The sampling profile shows a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**.  You can switch to the **Chart** or **Tree (Top Down)** view, per the section below.
 
 You can also use the [Console Utilities API](../console/utilities.md) to record and group profiles from the command line.
 
 
 <!-- ====================================================================== -->
-## View Sampling Profile
+## Change the view of a sampling profile
 
-When you finish recording, DevTools automatically populates the **Memory** panel next to the **Sampling profiles** list with the data from your recording.
-
-The default view is **Heavy (Bottom Up)**.  This view allows you to review which functions had the most impact on performance and examine the requesting path for each function.
-
-
-<!-- ------------------------------ -->
-#### Change sort order
-
-To change the sorting order, use the dropdown menu that initially says **Heavy (Bottom Up)**:
+To change the sort order in a memory allocation sampling profile, use the **Profile view mode** dropdown list, which initially says **Heavy (Bottom Up)**:
 
 ![Sort order menu](./js-runtime-images/sort-order-menu.png)
 
 Menuitems:
-* **Chart**
-* **Heavy (Bottom Up)**
-* **Tree (Top Down)**
+* **Chart** - Chronological chart of the recording.
+* **Heavy (Bottom Up)** - Lists the app's called functions in order of memory allocation, and shows the call path for each function.  The default view.
+* **Tree (Top Down)** - Shows the calling structure, starting at the top of the call stack.
 
 
-**Chart**.  Displays a chronological chart of the recording:
+<!-- ---------- -->
+###### Chart
+
+The **Chart** view mode displays a chronological chart of the recording:
 
 ![Flame chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
 
 
-**Heavy (Bottom Up)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view:
+<!-- ---------- -->
+###### Heavy (Bottom Up)
+
+The **Heavy (Bottom Up)** view mode lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view:
 
 ![Heavy chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.png)
 
 
-**Tree (Top Down)**.  Shows an overall picture of the calling structure, starting at the top of the call stack:
+<!-- ---------- -->
+###### Tree (Top Down)
+
+The **Tree (Top Down)** view mode shows an overall picture of the calling structure, starting at the top of the call stack:
 
 ![Tree chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.png)
 
@@ -142,17 +119,17 @@ When **Heavy (Bottom Up)** or **Tree (Top Down)** is selected (not **Chart**), t
 * **Exclude selected function** (![Exclude selected function](./js-runtime-images/exclude-icon.png))
 * **Restore all functions** (![Restore all functions](./js-runtime-images/restore-icon.png))
 
-To exclude a function from your Sampling Profile, select it and then click the **Exclude selected function** (![Exclude selected function](./js-runtime-images/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
+To exclude a function from a memory allocation sampling profile, select the sampling profile and then click the **Exclude selected function** (![Exclude selected function](./js-runtime-images/exclude-icon.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
 
 Click the **Restore all functions** (![Restore all functions](./js-runtime-images/restore-icon.png)) button to restore all excluded functions back into the recording.
 
 
 <!-- ====================================================================== -->
-## View Sampling Profile as Chart
+## View a memory allocation sampling profile as a Chart
 
 The **Chart** view provides a visual representation of the Sampling Profile over time.
 
-After you [record a Sampling Profile](#record-a-sampling-profile), view the recording as a flame chart by [changing the sort order](#change-sort-order) to **Chart**.
+After you [record a Sampling Profile](#record-a-sampling-profile), view the recording as a flame chart.  Select **Chart** in the the **Profile view mode** dropdown list (which initially says **Heavy (Bottom Up)**):
 
 ![Flame chart view](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
 

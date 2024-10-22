@@ -88,14 +88,6 @@ For additional ways to assess memory leaks, see [Tools for investigating detache
 
 
 <!-- ====================================================================== -->
-## About DOM leaks due to detached elements
-
-To increase the performance of your webpage, find the elements that are detached from the DOM tree and which you didn't expect to still be referenced by JavaScript code.  Find the detached elements that the browser can't garbage-collect because your code still references them, and then release the JavaScript code references to the detached elements.
-<!-- copied from dom-leaks.md -->
-
-
-<!-- copied from dom-leaks.md, & trimmed to omit DE tool's UI controls -->
-<!-- ====================================================================== -->
 ## About detached elements and memory leaks
 
 Detached elements aren't always an indication of a memory leak, and memory leaks aren't always caused by detached elements.  Memory leaks depend on the context of your application.
@@ -108,19 +100,19 @@ Memory issues affect webpage performance, including memory leaks, memory bloat, 
 *  The performance of a webpage is consistently bad.
 *  The performance of a webpage is delayed or appears to pause frequently.
 
+To increase the performance of your webpage, find the elements that are detached from the DOM tree and which you didn't expect to still be referenced by JavaScript code.  Find the detached elements that the browser can't garbage-collect because your code still references them, and then release the JavaScript code references to the detached elements.
 
-<!-- copied (& trimmed) from dom-leaks.md -->
+
 <!-- ====================================================================== -->
 ## Re-attaching elements
 
-For this demo webpage, it makes sense to retain the list of chat messages, so that if a user switches back to **Room 1**, the message log is preserved.  Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up.
+For the Detached Elements demo webpage, it makes sense to retain the list of chat messages, so that if a user switches back to **Room 1**, the message log is preserved.  Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up.
 
 When the **Detached elements** tool reports detached elements, it's not necessarily a memory leak.  It's up to you to decide what's a memory leak and what's not.  Maybe your app will re-attach those elements later (instead of having to re-create them, which could be slower).
 
-Detaching DOM nodes is a useful approach, as long as you eventually reuse those detached elements (or delete them).  The value of the **Detached elements** tool is, when you suspect a memory leak, you can check whether there are an increasing number of unexpected detached DOM elements being reported by the tool.
+Detaching DOM nodes is a useful approach, as long as you eventually reuse those detached elements (or delete them).  The value of the **Detached elements** tool is, when you suspect a memory leak, you can check whether there's an increasing number of unexpected detached DOM elements being reported by the tool.
 
 
-<!-- copied from dom-leaks.md -->
 <!-- ====================================================================== -->
 ## Long-running apps and unmounting components
 

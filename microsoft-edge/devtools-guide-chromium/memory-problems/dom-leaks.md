@@ -197,17 +197,11 @@ Even though some elements might appear as detached at one point in time, you won
 <!-- ====================================================================== -->
 ## Re-attaching elements
 
-To use the demo webpage, you find detached elements that can't be garbage-collected by the browser, and you identify the JavaScript that's retaining the detached elements.  However, in the context of the demo webpage, it makes sense to retain the list of chat messages, so that if a user switches back to **Room 1**, the message log is preserved.
-
-The following image shows detached elements in the form of messages that are reattached when a user navigates from **Room 2** back to **Room 1**:
-
-![The detached elements are reattached to the DOM when switching back to Room 1](./dom-leaks-images/reattached.png)
-
-Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up.
+For the Detached Elements demo webpage, it makes sense to retain the list of chat messages, so that if a user switches back to **Room 1**, the message log is preserved.  Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up.
 
 When the **Detached elements** tool reports detached elements, it's not necessarily a memory leak.  It's up to you to decide what's a memory leak and what's not.  Maybe your app will re-attach those elements later (instead of having to re-create them, which could be slower).
 
-Detaching DOM nodes is a useful approach, as long as you eventually reuse those detached elements (or delete them).  The value of the **Detached elements** tool is, when you suspect a memory leak, you can check whether there are an increasing number of unexpected detached DOM elements being reported by the tool.
+Detaching DOM nodes is a useful approach, as long as you eventually reuse those detached elements (or delete them).  The value of the **Detached elements** tool is, when you suspect a memory leak, you can check whether there's an increasing number of unexpected detached DOM elements being reported by the tool.
 
 
 <!-- ====================================================================== -->
