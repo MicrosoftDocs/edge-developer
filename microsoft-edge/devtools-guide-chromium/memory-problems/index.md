@@ -32,7 +32,7 @@ To find memory issues that affect page performance, including memory leaks, memo
 <!-- ------------------------------ -->
 #### Tools for investigating memory usage
 
-| Task | Tool | Article |
+| Use case | Tool | Article |
 |---|---|---|
 | Monitor how much memory your webpage is using, in realtime.  A starting point for memory issue investigation.  A realtime monitor that shows how much memory a webpage is currently using. | Microsoft Edge Browser Task Manager | [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](./microsoft-edge-browser-task-manager.md) |
 | Visualize memory usage of a webpage over time.  A starting point to investigate webpage memory usage. | **Performance** tool > **Memory** checkbox | [Visualize memory leaks (Performance tool: Memory checkbox)](../evaluate-performance/reference.md#visualize-memory-leaks-performance-tool-memory-checkbox) in _Performance features reference_. |
@@ -104,11 +104,11 @@ A DOM node is only garbage-collected by the browser when there are no references
 <!-- ------------------------------ -->
 #### Tools for investigating detached elements
 
-| Tool | Use case | Article |
+| Use case | Tool | Article |
 |---|---|---|
-| **Memory** tool > **Detached elements** profiling type | Show detached elements only, as DOM tree nodes.  | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
-| **Memory** tool > **Heap snapshot** profiling type > **Detached** | Show all objects in memory, filtered to display detached elements, with links to the JavaScript source code. | [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./heap-snapshots.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_. |
-| **Detached Elements** tool | Show detached elements only, as DOM tree nodes, with links to the JavaScript source code. | [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md) |
+| Show detached elements only, as DOM tree nodes. | **Memory** tool > **Detached elements** profiling type | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
+| Show all objects in memory, filtered to display detached elements, with links to the JavaScript source code. | **Memory** tool > **Heap snapshot** profiling type > **Detached** | [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./heap-snapshots.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_. |
+| Show detached elements only, as DOM tree nodes, with links to the JavaScript source code. | **Detached Elements** tool | [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md) |
 
 
 <!-- ====================================================================== -->
