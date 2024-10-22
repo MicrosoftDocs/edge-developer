@@ -26,13 +26,13 @@ ms.date: 07/21/2023
 <!-- title in other repo:
 How to Use the Allocation Profiler Tool -->
 
-In the **Memory** tool, use the **Allocations on timeline** option button (profiling type) to find objects that aren't being properly garbage-collected, and continue to retain memory.
+In the **Memory** tool, use the **Allocations on timeline** profiling type to find objects that aren't being properly garbage-collected, and continue to retain memory.
 
 
 <!-- ====================================================================== -->
 ## How Allocation instrumentation on timeline works
 
-The **Memory** tool's **Allocations on timeline** option button (profiling type) combines the detailed snapshot information of the [heap profiler](heap-snapshots.md) with the incremental updating and tracking of the **Performance** tool.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
+The **Memory** tool's **Allocations on timeline** profiling type combines the detailed snapshot information of the [heap profiler](heap-snapshots.md) with the incremental updating and tracking of the **Performance** tool.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->
 <!--todo: add profile evaluate performance (Performance tool) section when available  -->
@@ -61,9 +61,9 @@ To begin using **Allocations on timeline**:
 
    ![Open the Memory tool](./allocation-profiler-images/memory-tool-allocations-on-timeline-option-button.png)
 
-1. Select the **Allocations on timeline** option button (profiling type).
+1. Select the **Allocations on timeline** option button.
 
-   If the **Allocations on timeline** option button (profiling type) isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./allocation-profiler-images/profiles-icon.png)).
+   If the **Allocations on timeline** option button isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./allocation-profiler-images/profiles-icon.png)).
 
 1. At the bottom of the **Memory** tool, click the **Start** button.
 
@@ -80,7 +80,7 @@ To begin using **Allocations on timeline**:
 <!-- ====================================================================== -->
 ## Record allocations on the timeline
 
-In the **Memory** tool, use the **Allocations on timeline** option button (profiling type).  This is one of the DevTools features to track down memory leaks in your JS heap.
+In the **Memory** tool, use the **Allocations on timeline** profiling type.  This is one of the DevTools features to track down memory leaks in your JS heap.
 
 Given the following code:
 

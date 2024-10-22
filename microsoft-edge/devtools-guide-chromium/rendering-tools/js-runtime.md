@@ -80,11 +80,11 @@ To record an allocation sampling profile:
 
    If that tab isn't visible, click the **More Tools** (![More Tools icon](./js-runtime-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
 
-   ![The "Allocation sampling" option button (profiling type) in the Memory tool](./js-runtime-images/allocation-sampling-option-button.png)
+   ![The "Allocation sampling" option button in the Memory tool](./js-runtime-images/allocation-sampling-option-button.png)
 
-1. Select the **Allocation sampling** option button (profiling type).
+1. Select the **Allocation sampling** option button.
 
-   If the **Allocation sampling** option button (profiling type) isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./js-runtime-images/profiles-icon.png)).
+   If the **Allocation sampling** option button isn't shown, because a profile is already displayed, in the upper left, click **Profiles** (![the Profiles icon](./js-runtime-images/profiles-icon.png)).
 
 1. At the bottom of the **Memory** tool, click the **Start** button.
 
@@ -215,9 +215,9 @@ By reducing the amount of garbage your code is creating, you can reduce the cost
 <!-- ------------------------------ -->
 #### Track objects that are discarded by GC
 
-To track objects that are discarded by garbage collection, configure the **Allocation sampling** profiling type with settings:
+To track objects that are discarded by garbage collection:
 
-1. In the **Memory** tool, select the **Allocation sampling** option button (profiling type).
+1. In the **Memory** tool, select the **Allocation sampling** option button.
 
 1. Click the **Include objects discarded by major GC** and **Include objects discarded by minor GC** settings.
 

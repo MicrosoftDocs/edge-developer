@@ -420,7 +420,7 @@ The **Memory** tool exports a JSON file that contains all of the string objects 
 <!-- ====================================================================== -->
 ## Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)
 
-One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Heap snapshot** option button (profiling type), then type **Detached** in the **Filter by class** text box, as follows.  See also [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
+One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Heap snapshot** profiling type, then type **Detached** in the **Filter by class** text box, as follows.  See also [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 
 The following code produces detached DOM nodes:
 
