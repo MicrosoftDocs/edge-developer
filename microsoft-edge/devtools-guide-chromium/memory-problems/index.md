@@ -83,7 +83,6 @@ There are no hard numbers here, because different devices and browsers have diff
 The key here is to use the RAIL model and focus on your users.  Find out what devices are popular with your users, and then test out your page on those devices.  If the experience is consistently bad, the page may be exceeding the memory capabilities of those devices.
 
 
-<!-- Performance tool > Memory checkbox -->
 <!-- ====================================================================== -->
 ## Spot frequent garbage collections (Microsoft Edge Browser Task Manager, Performance tool's Memory checkbox)
 
@@ -108,7 +107,7 @@ A DOM node is only garbage-collected by the browser when there are no references
 | Tool | Use case | Docs |
 |---|---|---|
 | **Memory** tool > **Detached elements** profiling type | Show detached elements only, as DOM tree nodes.  | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
-| **Memory** tool > **Heap snapshot** profiling type > **Detached** | Show all objects in memory, including detached elements, which requires filtering, with links to the JavaScript source code in the **Retainers** panel. | [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./heap-snapshots.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_. |
+| **Memory** tool > **Heap snapshot** profiling type > **Detached** | Show all objects in memory, filtered to display detached elements, with links to the JavaScript source code. | [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./heap-snapshots.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_. |
 | **Detached Elements** tool | Show detached elements only, as DOM tree nodes, with links to the JavaScript source code. | [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md) |
 
 

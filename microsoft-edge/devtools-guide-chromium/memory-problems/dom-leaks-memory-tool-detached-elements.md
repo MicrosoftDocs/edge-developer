@@ -10,7 +10,7 @@ ms.date: 10/20/2024
 ---
 # Debug DOM memory leaks ("Detached elements" profiling type)
 
-One way to find and display all of the detached elements on a webpage is to use the **Memory** tool's **Detached elements** profiling type, as follows.  For a comparison of tools to view detached elements, see [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
+Use the **Memory** tool's **Detached elements** profiling type to find and display all of the detached elements on a webpage.  For a comparison of tools to view detached elements, see [Tools for investigating detached elements](./index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 
 The **Detached elements** profiling type helps you fix memory leaks due to detached DOM elements.  The resulting profile lists the detached objects that are retained by references in your JavaScript code.  This profiling type shows a view of the detached nodes to help you identify possible memory leaks on your webpage.
 

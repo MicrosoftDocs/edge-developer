@@ -32,7 +32,6 @@ Record exactly which functions were called and how much memory each requires wit
 Visualize your profiles as a flame chart.
 
 
-<!-- moved from Mem tool article -->
 <!-- ====================================================================== -->
 ## Use the "Allocation sampling" profiling type to view memory allocation by JavaScript function
 
@@ -199,7 +198,6 @@ Hover on a function to display the name and timing data:
 ![View functions details in the profiles chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.png)
 
 
-<!-- moved from Mem tool article -->
 <!-- ====================================================================== -->
 ## Investigate memory allocation, with reduced garbage ("Include objects" checkboxes)
 
