@@ -27,17 +27,18 @@ ms.date: 01/14/2022
 
 A DOM node is considered _detached_ when it's no longer attached to any element of the DOM, but is still being retained in memory by Microsoft Edge.  The browser cannot garbage-collect the detached element, because some JavaScript object is still referencing the element, even though the element is no longer on the page or is no longer a part of the DOM.
 
-The new **Detached Elements** tool finds all of the detached elements on your page and displays them.  You can expand and collapse a detached element to see the parent and child nodes that are also being retained.  You can trigger the browser's garbage collection by clicking the **Collect garbage** icon, and then confirm that you have a memory leak when a detached element cannot be garbage-collected.  To jump into the JavaScript code that's referencing the detached element, click the **Analyze** button to take a heap snapshot.
+The new **Detached Elements** feature finds all of the detached elements on your page and displays them.  You can expand and collapse a detached element to see the parent and child nodes that are also being retained.  You can trigger the browser's garbage collection by clicking the **Collect garbage** icon, and then confirm that you have a memory leak when a detached element cannot be garbage-collected.  To jump into the JavaScript code that's referencing the detached element, click the **Analyze** button to take a heap snapshot.
 
-The **Detached Elements** tool was initially available as an experiment in [Microsoft Edge version 93](../../2021/07/devtools.md#debug-dom-node-memory-leaks-with-the-new-detached-elements-tool).  The tool is now available by default in Microsoft Edge version 97.
+The **Detached Elements** feature was initially available as an experiment in [Microsoft Edge version 93](../../2021/07/devtools.md#debug-dom-node-memory-leaks-with-the-new-detached-elements-tool).  The feature is now available by default in Microsoft Edge version 97.
 
-<!-- ![The Detached Elements tool](./devtools-images/detached-elements-tool.png) -->
+<!-- ![The Detached Elements feature](./devtools-images/detached-elements-tool.png) -->
 <!-- image too wide to be crisp inline; solution would be undock devtools then 1 or 2 images in series (DevTools then browser).  right-click works, but reverting to lightbox for now -->
 
-![The Detached Elements tool](./devtools-images/detached-elements-tool.png)
+![The Detached Elements feature](./devtools-images/detached-elements-tool.png)
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
+* [Tools for investigating detached elements](../../../memory-problems/index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
+* [Debug DOM memory leaks by using the Detached Elements tool](../../../memory-problems/dom-leaks.md)
 * [Debug memory leaks with the Microsoft Edge Detached Elements tool - YouTube](https://www.youtube.com/watch?v=v2iy17ptmBk&ab_channel=MicrosoftEdge)
 
 
