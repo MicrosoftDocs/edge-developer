@@ -103,8 +103,6 @@ In previous versions of Microsoft Edge, switching themes in DevTools required re
 
 ![Switching themes without reloading DevTools](devtools-101-images/switching-theme.png)
 
-For more information about using themes from Visual Studio Code in DevTools, see [Apply a color theme to DevTools](../../../customize/theme.md).
-
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project

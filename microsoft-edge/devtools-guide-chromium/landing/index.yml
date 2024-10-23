@@ -68,9 +68,6 @@ landingContent:
         links:
           - text: Customize DevTools
             url: ../customize/index.md
-
-          - text: Apply a color theme to DevTools
-            url: ../customize/theme.md
       - linkListType: whats-new
         links:
           - text: Experimental features in Microsoft Edge DevTools
