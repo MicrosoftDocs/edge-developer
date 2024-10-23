@@ -9,6 +9,7 @@ ms.subservice: extensions
 ms.date: 08/20/2024
 ---
 # Overview of Microsoft Edge extensions
+<!-- https://aka.ms/AboutEdgeAddons -->
 
 A Microsoft Edge _extension_, also called an _add-on_, is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that is important to a target audience.  You publish a Microsoft Edge extension at the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
