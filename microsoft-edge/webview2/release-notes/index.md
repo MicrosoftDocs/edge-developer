@@ -13,6 +13,7 @@ ms.date: 10/21/2024
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
 
 <!-- this webpage covers the most recent ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers:
+Oct 2024
 Sep 2024
 Aug 2024
 Jul 2024
@@ -26,7 +27,7 @@ Feb 2024
 -->
 
 
-<!-- 
+<!--
 template for Release and Prerelease
 omit the "Experimental APIs" section from actual Release section
 -->
@@ -163,7 +164,7 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
    * [CoreWebView2SaveFileSecurityCheckStartingEventArgs.FilePath Property](/dotnet/api/microsoft.web.webview2.core.corewebview2savefilesecuritycheckstartingeventargs.filepath?view=webview2-dotnet-1.0.2849.39&preserve-view=true)
    * [CoreWebView2SaveFileSecurityCheckStartingEventArgs.SuppressDefaultPolicy Property](/dotnet/api/microsoft.web.webview2.core.corewebview2savefilesecuritycheckstartingeventargs.suppressdefaultpolicy?view=webview2-dotnet-1.0.2849.39&preserve-view=true)
    * [CoreWebView2SaveFileSecurityCheckStartingEventArgs.GetDeferral Method](/dotnet/api/microsoft.web.webview2.core.corewebview2savefilesecuritycheckstartingeventargs.getdeferral?view=webview2-dotnet-1.0.2849.39&preserve-view=true)
-   
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
@@ -195,7 +196,7 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
 
 * [ICoreWebView2SaveFileSecurityCheckStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2savefilesecuritycheckstartingeventhandler?view=webview2-1.0.2849.39&preserve-view=true)<!-- Win32-only -->
 
----  
+---
 
 
 <!-- ------------------------------ -->
@@ -242,7 +243,7 @@ Added a new `RestartRequested` event.  The `RestartRequested` event is raised wh
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* `CoreWebView2Environment` Class: 
+* `CoreWebView2Environment` Class:
     * [CoreWebView2Environment.RestartRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.restartrequested?view=webview2-dotnet-1.0.2895-prerelease&preserve-view=true)
 
 * `CoreWebView2RestartRequestedEventArgs` Class:
@@ -263,7 +264,7 @@ Added a new `RestartRequested` event.  The `RestartRequested` event is raised wh
 * [CoreWebView2RestartRequestedPriority Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2restartrequestedpriority?view=webview2-winrt-1.0.2895-prerelease&preserve-view=true)
     * `CoreWebView2RestartRequestedPriority.Normal`
     * `CoreWebView2RestartRequestedPriority.High`
-      
+
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2ExperimentalEnvironment15](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment15?view=webview2-1.0.2895-prerelease&preserve-view=true)
@@ -401,8 +402,8 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
   * [ICoreWebView2SaveFileSecurityCheckStartingEventArgs::put_SuppressDefaultPolicy](/microsoft-edge/webview2/reference/win32/icorewebview2savefilesecuritycheckstartingeventargs?view=webview2-1.0.2895-prerelease&preserve-view=true#put_suppressdefaultpolicy)
 
 * [ICoreWebView2SaveFileSecurityCheckStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2savefilesecuritycheckstartingeventhandler?view=webview2-1.0.2895-prerelease&preserve-view=true)
-  
----  
+
+---
 
 <!-- ------------------------------ -->
 #### Bug fixes
@@ -730,7 +731,7 @@ Added `SaveAs` APIs that allow you to programmatically perform the **Save as** o
    * `COREWEBVIEW2_SAVE_AS_UI_RESULT_FILE_ALREADY_EXISTS`
    * `COREWEBVIEW2_SAVE_AS_UI_RESULT_KIND_NOT_SUPPORTED`
    * `COREWEBVIEW2_SAVE_AS_UI_RESULT_CANCELLED`
-   
+
 ---
 
 
@@ -772,7 +773,7 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 <!-- ---------- -->
 ###### Runtime and SDK
 
-* Re-enabled the default behavior of `SetUserAgent`: by default, `SetUserAgent` is effective for cross-origin iframes. 
+* Re-enabled the default behavior of `SetUserAgent`: by default, `SetUserAgent` is effective for cross-origin iframes.
 
 
 <!-- ---------- -->
@@ -998,7 +999,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
    * `HtmlOnly`
    * `SingleFile`
    * `Complete`
- 
+
 * [CoreWebView2SaveAsUIResult Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2saveasuiresult?view=webview2-dotnet-1.0.2730-prerelease&preserve-view=true)
    * `Success`
    * `InvalidPath`
