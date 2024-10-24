@@ -479,9 +479,13 @@ The **Customize and control DevTools** (![Customize and control DevTools](./over
 <!-- ------------------------------ -->
 #### Help button
 
-The **Help** (![Help icon](./overview-images/help-icon.png)) button opens a dropdown menu that gives access to DevTools documentation, release notes, and to the **Feedback** (![Send Feedback icon](./overview-images/send-feedback-icon-light-theme.png)) tool.
+The **Help** (![Help icon](./overview-images/help-icon.png)) button opens a dropdown menu that has the following items:
 
-To send connect with the Microsoft Edge DevTools team to report problems, issues, or suggest ideas, click the **Feedback** button. The **Send Feedback** dialog opens. Enter information to describe what happened and include a screenshot. See [Contact the Microsoft Edge DevTools team](contact.md).
+* **Documentation** - Opens [Microsoft Edge DevTools documentation](./landing/index.yml).
+
+* **Release notes** - Opens [What's New in Microsoft Edge DevTools](./whats-new/whats-new.md).
+
+* **Feedback** (![Send Feedback icon](./overview-images/send-feedback-icon-light-theme.png)) - Opens the **Send feedback** dialog.  To connect with the Microsoft Edge DevTools team to report a problem or issue (or to suggest an idea), describe what happened, and include a screenshot.  See [Contact the Microsoft Edge DevTools team](contact.md).
 
 
 <!-- ------------------------------ -->
