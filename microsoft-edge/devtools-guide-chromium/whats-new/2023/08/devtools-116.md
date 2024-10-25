@@ -74,8 +74,8 @@ For example:
 1. In the **Object** column, expand an entry.
 
 See also:
-* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
-* [Demo webpage: Example 9: DOM leaks bigger than expected](../../../memory-problems/heap-snapshots.md#demo-webpage-example-9-dom-leaks-bigger-than-expected) in _Record heap snapshots using the Memory tool_.
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../../../memory-problems/heap-snapshots.md)
+* [Demo webpage: Example 9: DOM leaks bigger than expected](../../../memory-problems/heap-snapshots.md#demo-webpage-example-9-dom-leaks-bigger-than-expected) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 
 
 <!-- ====================================================================== -->

@@ -54,7 +54,7 @@ Take a recording in the **Performance** tool and look for suspiciously long `Eva
 <!--todo: add Recording section when available  -->
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->
 
-If you notice quite a bit of jank (interruptions of rendering) in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  CPU profiles show where runtime is spent within the functions of your page.  Learn how to create CPU profiles in [Speed up JavaScript runtime](js-runtime.md).
+If you notice quite a bit of jank (interruptions of rendering) in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  CPU profiles show where runtime is spent within the functions of your page.  Learn how to create CPU profiles in [Speed up JavaScript runtime ("Allocation sampling" profiling type)](js-runtime.md).
 
 
 <!-- ------------------------------ -->
