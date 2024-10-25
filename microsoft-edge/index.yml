@@ -218,7 +218,7 @@ conceptualContent:
               url: ./extensions-chromium/getting-started/index.md
               itemType: overview
 
-            - text: Port a Chromium extension to Microsoft Edge
+            - text: Port a Chrome extension to Microsoft Edge
               url: ./extensions-chromium/developer-guide/port-chrome-extension.md
               itemType: overview
 
@@ -234,7 +234,7 @@ conceptualContent:
               url: ./extensions-chromium/publish/create-dev-account.md
               itemType: how-to-guide
 
-            - text: Create a simple extension
+            - text: "Tutorial part 1: Display an image in a pop-up"
               url: ./extensions-chromium/getting-started/part1-simple-extension.md
               itemType: how-to-guide
         # Card
