@@ -79,7 +79,7 @@ In Microsoft Edge 107, this issue has been fixed.  The **Memory** tool can now s
 If you still encounter issues when loading large heap snapshots, please open an issue in the [DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues/new?assignees=&labels=bug&template=bug.md)!
 
 See also:
-* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../../../memory-problems/heap-snapshots.md)
 * [Issue 9126: Hardcoded memory limits of Map (backed by FixedArray)](https://bugs.chromium.org/p/v8/issues/detail?id=9126)
 
 

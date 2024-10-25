@@ -34,7 +34,7 @@ In Microsoft Edge 103, when taking a heap snapshot in the **Memory** tool, there
 For history, see [Issue 12769: Improve categorization of objects in heap snapshots](https://bugs.chromium.org/p/v8/issues/detail?id=12769).
 
 See also:
-* [Constructor entries](../../../memory-problems/heap-snapshots.md#constructor-entries) in _Record heap snapshots using the Memory tool_.
+* [Constructor entries](../../../memory-problems/heap-snapshots.md#constructor-entries) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 
 
 <!-- ====================================================================== -->

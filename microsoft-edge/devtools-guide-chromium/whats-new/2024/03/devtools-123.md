@@ -43,7 +43,7 @@ Heap snapshots with the new experiment enabled:
 This experiment is helpful because heap snapshots in the Memory tool show a complete list of everything allocated in the V8 and Blink heaps.  Sometimes that list is a little too fine-grained, breaking out an item as if it is multiple items.  For example, the list in the heap snapshot represents each JavaScript `Array` instance separately from the contents of that `Array`, which are called `(object elements)[]`. However, in JavaScript code, an `Array` is a single entity, rather than an array instance and separate contents of the array.
 
 See also:
-* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../../../memory-problems/heap-snapshots.md)
 
 
 <!-- ====================================================================== -->
