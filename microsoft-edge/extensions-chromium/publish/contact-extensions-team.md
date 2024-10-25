@@ -34,7 +34,7 @@ You can contact the Microsoft Edge extensions support team to request help, subm
 <!-- ====================================================================== -->
 ## Inquire about your extension's review status or certification status
 
-After submitting your extension via Partner Center, if you have questions regarding your extension's review status or certification status, use the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/new/choose) repo to create a new issue.
+After submitting your extension via Partner Center, if you have questions regarding your extension's review status or certification status, use the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/new/choose) repo to enter a new Issue.
 
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ To feature your extension in a collection on the Microsoft Edge Add-ons website,
 <!-- ====================================================================== -->
 ## MicrosoftEdge-Extensions discussion forum
 
-Participate in the [MicrosoftEdge-Extensions discussion forum](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) to flag any issues, raise a feature request, be a part of discussions, and share your ideas regarding the Microsoft Edge Extensions Store.
+Participate in the [Discussions](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) forum in the MicrosoftEdge-Extensions repo to flag any issues, raise a feature request, be a part of discussions, and share your ideas regarding the Microsoft Edge Extensions Store.
 
 
 <!-- ====================================================================== -->
