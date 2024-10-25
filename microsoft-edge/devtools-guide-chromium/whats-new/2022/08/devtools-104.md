@@ -64,12 +64,13 @@ See also:
 <!-- Title: The Detached Elements tool now works better with assistive technology -->
 <!-- Subtitle: In Microsoft Edge 104, Screen readers announce the name of the table of detached elements in the tool. -->
 
-In previous versions of Microsoft Edge, when selecting the table of detached elements in the **Detached Elements** tool, assistive technology only announced "Table" and the number of rows and columns.  In Microsoft Edge version 104, this issue has been fixed.  When selecting the table of detached elements in the **Detached Elements** tool, assistive technology now announces "Detached Elements List, Table" and the number of rows and columns.
+In previous versions of Microsoft Edge, when selecting the table of detached elements in the **Detached Elements** feature, assistive technology only announced "Table" and the number of rows and columns.  In Microsoft Edge version 104, this issue has been fixed.  When selecting the table of detached elements in the **Detached Elements** feature, assistive technology now announces "Detached Elements List, Table" and the number of rows and columns.
 
 ![Detached Elements List, Table, 5 rows, 3 columns](./devtools-104-images/a11y-detached-elements.png)
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
+* [Tools for investigating detached elements](../../../memory-problems/index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
+* [Debug DOM memory leaks by using the Detached Elements tool](../../../memory-problems/dom-leaks.md)
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
