@@ -9,6 +9,7 @@ ms.subservice: extensions
 ms.date: 02/06/2022
 ---
 # Extension concepts and architecture
+<!-- https://aka.ms/EdgeAddonsLearn -->
 
 This article introduces concepts about building a Microsoft Edge extension.  Follow along to understand how multi-tab browsers work.
 
@@ -72,4 +73,4 @@ An extension provides opt-in permissions at install time.  You specify the exten
 <!-- ====================================================================== -->
 ## Next steps
 
-For information on getting started with your extension, see [Create an extension tutorial, part 1](part1-simple-extension.md).
+For information on getting started with your extension, see [Tutorial part 1: Display an image in a pop-up](part1-simple-extension.md).
