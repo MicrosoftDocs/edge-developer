@@ -31,6 +31,10 @@
 
 # What's New pages ------------------------------------------------------------
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 130
+              href: devtools-guide-chromium/whats-new/2024/10/devtools-130.md
+              displayName: What's New in DevTools (Microsoft Edge 130)  # top-of-page title
+
             - name: Microsoft Edge 129
               href: devtools-guide-chromium/whats-new/2024/09/devtools-129.md
               displayName: What's New in DevTools (Microsoft Edge 129)  # top-of-page title
@@ -67,15 +71,15 @@
               href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
               displayName: What's New in DevTools (Microsoft Edge 121)  # top-of-page title
 
-            - name: Microsoft Edge 120
-              href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
-              displayName: What's New in DevTools (Microsoft Edge 120)  # top-of-page title
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 120
+                  href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
+                  displayName: What's New in DevTools (Microsoft Edge 120)  # top-of-page title
 
                 - name: Microsoft Edge 119
                   href: devtools-guide-chromium/whats-new/2023/11/devtools-119.md
@@ -500,7 +504,7 @@
 # Detached Elements tool ------------------------------------------------------
             - name: Detached Elements tool
               items:
-                - name: Debug DOM memory leaks with the Detached Elements tool # added article
+                - name: Debug DOM memory leaks by using the Detached Elements tool # added article
                   href: devtools-guide-chromium/memory-problems/dom-leaks.md
                   displayName: Detached Elements tool
 # Developer Resources tool ----------------------------------------------------
@@ -544,16 +548,23 @@
                   href: devtools-guide-chromium/memory-problems/memory-101.md
                   displayName: Memory tool
 
-                - name: Record heap snapshots using the Memory tool
-                  href: devtools-guide-chromium/memory-problems/heap-snapshots.md
-                  displayName: Memory tool
+                - name: Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
+                  href: devtools-guide-chromium/memory-problems/microsoft-edge-browser-task-manager.md
 
-                - name: Use Allocation instrumentation on timeline
+                - name: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
+                  href: devtools-guide-chromium/memory-problems/heap-snapshots.md
+                  displayName: Memory tool 
+
+                - name: Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)
                   href: devtools-guide-chromium/memory-problems/allocation-profiler.md
                   displayName: Memory tool
 
-                - name: Speed up JavaScript runtime
+                - name: Speed up JavaScript runtime ("Allocation sampling" profiling type)
                   href: devtools-guide-chromium/rendering-tools/js-runtime.md
+                  displayName: Memory tool
+
+                - name: Debug DOM memory leaks ("Detached elements" profiling type)
+                  href: devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements.md
                   displayName: Memory tool
 
                 - name: The heap snapshot file format
@@ -1005,13 +1016,13 @@
             - name: Extension concepts and architecture
               href: extensions-chromium/getting-started/index.md
 
-            - name: Create an extension tutorial, part 1
+            - name: "Tutorial part 1: Display an image in a pop-up"
               href: extensions-chromium/getting-started/part1-simple-extension.md
 
-            - name: Create an extension tutorial, part 2
+            - name: "Tutorial part 2: Use JavaScript to insert an image in the webpage"
               href: extensions-chromium/getting-started/part2-content-scripts.md
 
-            - name: Sideload an extension
+            - name: Sideload an extension to install and test it locally
               href: extensions-chromium/getting-started/extension-sideloading.md
 
 # -------------------------------------
