@@ -153,7 +153,7 @@ To import a trace in the **Memory** tool:
 
 1. Open the **Memory** tool.
 
-1. Click **Load**.
+1. Click the **Load profile** button:
 
    ![Microsoft Edge, showing the Memory tool in DevTools, with the Load button](./share-traces-images/importing-memory-trace.png)
 
