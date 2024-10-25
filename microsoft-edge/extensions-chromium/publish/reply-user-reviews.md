@@ -62,4 +62,4 @@ When you post a reply using the Partner Center dashboard, your reply appears on 
 
 * [Released features for Microsoft Edge Add-ons](../whats-new/released-features.md) - recently released features at Partner Center.
 
-Share your feedback, questions, and comments with the team on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or via our [GitHub community's Discussion topic](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18).
+Share your feedback, questions, and comments with the team on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/), or see [You can now respond to user reviews on your Microsoft Edge Add-ons page](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18) in **Discussions** in the MicrosoftEdge-Extensions repo.
