@@ -55,16 +55,20 @@ Dark themes:
 <!-- Title: Introducing the Detached Elements tool -->
 <!-- Subtitle: Use the Detached Elements tool to find and fix DOM node memory leaks. -->
 
+October 2024 update: To debug DOM memory leaks, use either:
+* The **Detached Elements** tool.  Detached nodes have a link to the associated JavaScript code.
+* The **Detached elements** profiling type in the **Memory** tool.
+
 A DOM node is considered "detached" when it is no longer attached to any element of the DOM but is still being retained in memory by Microsoft Edge. The browser cannot garbage-collect the element, because some JavaScript is still referencing the element even though it's no longer on the page or a part of the DOM.
 
-The new **Detached Elements** tool finds all of the detached elements on your page and displays them. You can expand and collapse a detached element to see the parent and child nodes that are also being retained. You can trigger the browser's garbage collection by selecting **Collect garbage** and validate that you have a memory leak when a detached element cannot be garbage-collected. Finally, you can jump into JavaScript that's referencing the detached element by taking a heap snapshot with the **Analyze** button.
+The **Detached Elements** profiling type in the **Memory** tool finds all of the detached elements on your page and displays them. You can expand and collapse a detached element to see the parent and child nodes that are also being retained. You can trigger the browser's garbage collection by selecting **Collect garbage** and validate that you have a memory leak when a detached element cannot be garbage-collected. Finally, you can jump into JavaScript that's referencing the detached element by taking a heap snapshot with the **Analyze** button.
 
 ![The Detached Elements tool](./devtools-images/detached-elements-tool.png)
 
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experiment, go to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**. -->
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
+* [Debug DOM memory leaks by using the Detached Elements tool](../../../memory-problems/dom-leaks.md)
 
 
 <!-- ====================================================================== -->

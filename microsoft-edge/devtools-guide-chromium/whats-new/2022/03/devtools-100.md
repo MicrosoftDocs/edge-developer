@@ -43,7 +43,7 @@ When looking at all the objects in a heap snapshot in the **Memory** tool, it ca
 ![Node Types in a heap snapshot in the Memory tool](devtools-100-images/node-types-heap-snapshot.png)
 
 See also:
-* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md) - taking a heap snapshot and analyzing the heap.
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../../../memory-problems/heap-snapshots.md) - taking a heap snapshot and analyzing the heap.
 
 
 <!-- ====================================================================== -->

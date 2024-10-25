@@ -186,7 +186,7 @@ See also:
 * [What's New in DevTools (Microsoft Edge 109)](../devtools-guide-chromium/whats-new/2023/01/devtools-109.md)<!-- has Video section -->
 * [Share enhanced performance and memory traces](../devtools-guide-chromium/experimental-features/share-traces.md)
 * [Analyze CSS selector performance during Recalculate Style events](../devtools-guide-chromium/evaluate-performance/selector-stats.md) - selector stats.
-* [Reduce garbage with additional settings for allocation sampling](../devtools-guide-chromium/memory-problems/index.md#reduce-garbage-with-additional-settings-for-allocation-sampling) in _Fix memory problems_.
+* [Investigate memory allocation, with reduced garbage ("Include objects" checkboxes)](../devtools-guide-chromium/rendering-tools/js-runtime.md#investigate-memory-allocation-with-reduced-garbage-include-objects-checkboxes) in _Speed up JavaScript runtime ("Allocation sampling" profiling type)_.
 * [Trash talk: the Orinoco garbage collector](https://v8.dev/blog/trash-talk)
 * [Heap Snapshot visualizer](https://microsoftedge.microsoft.com/addons/detail/heap-snapshot-visualizer/fceldlhognbemkgfacnffkdanocidgce) extension.
 
@@ -626,12 +626,16 @@ December 9, 2021
 
 [![Thumbnail image for video "Debug memory leaks with the Microsoft Edge Detached Elements tool"](./index-images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
 
+To debug DOM memory leaks, use either:
+* The **Detached Elements** tool.  Detached nodes have a link to the associated JavaScript code.
+* The **Detached elements** profiling type in the **Memory** tool.
+
 The **Detached Elements** tool helps you investigate and resolve DOM memory leaks.
 
 Memory leaks occur when the JavaScript code of an application retains more and more objects in memory instead of releasing them for the browser to garbage-collect.  We built the **Detached Elements** tool with the Microsoft Teams developers, and it has already helped us find and fix memory leaks across many of our own websites and apps.
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements tool](../devtools-guide-chromium/memory-problems/dom-leaks.md)<!-- has Video section -->
+* [Debug DOM memory leaks by using the Detached Elements tool](../devtools-guide-chromium/memory-problems/dom-leaks.md)<!-- has Video section -->
 * [Debug memory leaks with the Microsoft Edge Detached Elements tool](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/) - blog post.
 
 

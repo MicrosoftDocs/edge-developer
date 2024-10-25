@@ -9,6 +9,7 @@ ms.subservice: extensions
 ms.date: 06/27/2023
 ---
 # Roadmap for Microsoft Edge Add-ons
+<!-- https://aka.ms/EdgeAddonsRoadmap -->
 
 These are the next planned [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) features or updates for Microsoft Edge extensions.
 

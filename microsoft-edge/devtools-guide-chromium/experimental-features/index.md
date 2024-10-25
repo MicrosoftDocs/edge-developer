@@ -213,7 +213,7 @@ Whether to display a checkbox to expose internals in heap snapshots in the **Mem
 <!-- todo old: need text -->
 
 See also:
-* [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../memory-problems/heap-snapshots.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 131.
@@ -771,7 +771,7 @@ Controls whether to live-update the heap profile.
 <!-- todo old: need text -->
 
 See also:
-* [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../memory-problems/heap-snapshots.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 131.
@@ -786,7 +786,7 @@ Controls whether to show the sampling heap profiler timeline in the **Performanc
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
-* [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../memory-problems/heap-snapshots.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 131.

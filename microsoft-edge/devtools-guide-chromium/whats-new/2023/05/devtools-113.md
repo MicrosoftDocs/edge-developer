@@ -83,7 +83,7 @@ Now in Microsoft Edge 113, the **Memory** tool automatically unminifies object n
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
-* [Take a snapshot](../../../memory-problems/heap-snapshots.md#take-a-snapshot) in _Record heap snapshots using the Memory tool_.
+* [Take a snapshot](../../../memory-problems/heap-snapshots.md#take-a-snapshot) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 
 
 <!-- ====================================================================== -->
@@ -146,7 +146,7 @@ In the **Containment** and **Statistics** views, the **Node Types** filter is no
 
 See also:
 * [Filter heap snapshots summary by node type](../../2022/03/devtools-100.md#filter-heap-snapshots-summary-by-node-type)  in _What's New in DevTools (Microsoft Edge 100)_
-* [Take a snapshot](../../../memory-problems/heap-snapshots.md#take-a-snapshot) in _Record heap snapshots using the Memory tool_.
+* [Take a snapshot](../../../memory-problems/heap-snapshots.md#take-a-snapshot) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 
 
 <!-- ====================================================================== -->
