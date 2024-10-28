@@ -116,9 +116,10 @@ To start learning WebView2, use the following recommended sequence:
 1. Install and run the sample for your target platform, if it's a platform other than Win32.  See [Sample apps](./code-samples-links.md).
 1. Install and run the finished Getting Started tutorial for your target platform (if the finished project is provided).  See [Getting Started tutorials](./get-started/get-started.md).
 1. Do the Getting Started steps to add WebView2 code to the Visual Studio starter project for your platform.  See [Getting Started tutorials](./get-started/get-started.md).
-1. Read the documentation and develop your app.
 
 Some samples might require updating an SDK, as explained in the article for each sample.
+
+After your environment is set up and the most relevant samples are running, you can read the other documentation and develop your app.
 
 
 <!-- ====================================================================== -->
