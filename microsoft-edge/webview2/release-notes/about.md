@@ -25,7 +25,7 @@ Release Notes entries correspond to historical releases of WebView2, and are not
 New APIs are added in phases, as follows:
 1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.
 1. Then they become Stable APIs in a Prerelease SDK package.
-1. Soon after, they become Stable APIs in a Release SDK package.
+1. Soon after, they become Stable APIs in a Release SDK package.  Sometimes, APIs are simultaneously promoted to Stable in a Prerelease SDK and Stable in a Release SDK.
 
 ![Diagram of phases of introducing new APIs](./about-images/phases-of-adding-apis.png)
 <!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
