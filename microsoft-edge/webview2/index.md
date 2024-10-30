@@ -119,7 +119,7 @@ To start learning WebView2, use the following recommended sequence:
 
 Some samples might require updating an SDK, as explained in the article for each sample.
 
-After your environment is set up and the most relevant samples are running, you can read the other documentation and develop your app.
+After your environment is set up and the samples build and run on your machine, you can develop your app by reading the other documentation, such as [Overview of WebView2 features and APIs](./concepts/overview-features-apis.md).
 
 
 <!-- ====================================================================== -->
