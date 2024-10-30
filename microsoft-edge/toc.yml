@@ -519,12 +519,6 @@
                 - name: Find and fix problems using the Issues tool
                   href: devtools-guide-chromium/issues/index.md
                   displayName: Issues tool
-# JavaScript Profiler tool ----------------------------------------------------
-            - name: JavaScript Profiler tool
-              items:
-                - name: JavaScript Profiler tool
-                  href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
-                  displayName: JavaScript Profiler tool
 # Lighthouse tool -------------------------------------------------------------
             - name: Lighthouse tool  # new jump page  # main article is in Accessibility
               items:
