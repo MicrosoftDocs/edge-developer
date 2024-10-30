@@ -14,7 +14,7 @@ This article covers how to set up your development tools and create an initial W
 
 In this tutorial, you use the **Blank App, Packaged (WinUI in Desktop)** Visual Studio project template to create a blank WinUI 3 project.  That project template uses the WindowsAppSDK, which includes the WebView2 SDK.  You add a WebView2 control.  You then add an address bar and logic to display a warning dialog when the user tries to navigate to a URL with an `http://` prefix.
 
-![App displaying the Bing website](winui-images/getting-started-bing.png)
+![App displaying the Bing website](./winui-images/getting-started-bing.png)
 
 
 <!-- ------------------------------ -->
@@ -57,7 +57,7 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
 1.  In the **Create a new project** dialog, in the **Search for templates** field, enter **WinUI 3 in Desktop**:
 
-    ![Searching on "WinUI 3 in Desktop" to create a new project](winui-images/create-project-winui3-desktop.png)
+    ![Searching on "WinUI 3 in Desktop" to create a new project](./winui-images/create-project-winui3-desktop.png)
 
 1.  Click the **Blank App, Packaged (WinUI in Desktop)** card to select it, and then click the **Next** button.
 
@@ -71,7 +71,7 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
 1.  In the **Project name** text box, enter a project name, such as **MyWebView2WinUI3**:
 
-    ![The 'Configure your new project' dialog](winui-images/config-new-proj.png)
+    ![The 'Configure your new project' dialog](./winui-images/config-new-proj.png)
 
 1.  In the **Location** text box, enter or navigate to a location, such as `C:\Users\username\Documents\WebView2`.
 
@@ -79,7 +79,7 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
     The new WinUI 3 project opens in Solution Explorer in Visual Studio:
 
-    ![The new WinUI 3 project in Solution Explorer](winui-images/new-winui3-project.png)
+    ![The new WinUI 3 project in Solution Explorer](./winui-images/new-winui3-project.png)
 
     *  The `App.xaml.cs` file defines an `Application` class that represents your app instance.
 
@@ -93,7 +93,7 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
 1.  Press **F5** to build and run the project.  The blank WinUI Desktop app opens, with no WebView2 control added yet:
 
-    ![The new blank WinUI 3 app](winui-images/blank-winui3-app.png)
+    ![The new blank WinUI 3 app](./winui-images/blank-winui3-app.png)
 
 1.  Close the app.
 
@@ -114,7 +114,33 @@ The above values represent:
 
 
 <!-- ====================================================================== -->
-## Step 3 - Add a WebView2 control
+## Step 3 - Update to the latest WinUI/Windows App SDK
+
+<!-- copied/modified from https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=vs-2022-17-10#4-update-to-the-latest-winuiwindows-app-sdk -->
+
+When you create a new project in Visual Studio, update the project's NuGet packages, to ensure the project has the latest features and fixes.  Check for updates of **WindowsAppSDK**, which is delivered as a NuGet package.  The Windows App SDK (and WinUI, which is part of the Windows App SDK) is distributed as a NuGet package; see [An introduction to NuGet](/nuget/what-is-nuget).  This means updates can be released out-of-sync with Windows and Visual Studio.  As a result, the Visual Studio project template that you used to create your project might not reference the latest Windows App SDK NuGet package.
+
+To update the Windows App SDK NuGet package for your project:
+
+1. In Visual Studio, select **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
+
+   If an update is available, the update appears on the **Updates** page.
+
+1. Select the checkbox next to the update.  If you want to include prerelease updates, select the **Include prerelease** checkbox.
+
+   To learn more about what's included in an update, see [Latest stable channel release notes for the Windows App SDK](/windows/apps/windows-app-sdk/stable-channel).
+
+1. Click the **Update** button, then click **Apply** in the Preview changes dialog, then accept the license terms to finish installing the update.
+
+![The NuGet package manager in Visual Studio showing a Windows App SDK package update](./winui-images/nuget-update.png)
+
+<!-- See also:
+* [4. Update to the latest WinUI/Windows App SDK](/windows/apps/get-started/start-here#4-update-to-the-latest-winuiwindows-app-sdk) in _Start developing Windows apps_.
+-->
+
+
+<!-- ====================================================================== -->
+## Step 4 - Add a WebView2 control
 
 This tutorial project is based on the project template **Blank App, Packaged (WinUI in Desktop)**.  This project template uses the WindowsAppSDK, which includes the WebView2 SDK.
 
@@ -180,7 +206,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
 
 1.  The app is a WebView2 host app that includes the WebView2 control.  The WebView2 control displays the website `https://www.microsoft.com`:
 
-    ![The WebView2 control displaying the microsoft.com webpage](winui-images/getting-started-part-3.png)
+    ![The WebView2 control displaying the microsoft.com webpage](./winui-images/getting-started-part-3.png)
 
 1.  Close the app.
 
@@ -208,7 +234,7 @@ API Reference:
 
 
 <!-- ====================================================================== -->
-## Step 4 - Add navigation controls
+## Step 5 - Add navigation controls
 
 To allow users to control which webpage is displayed in the WebView2 control, add an address bar to the app, as follows:
 
@@ -267,7 +293,7 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
 
     The WebView2 control in the app displays the Bing website.  The address bar displays the URL, such as `https://www.bing.com`:
 
-    ![The app displays the Bing website](winui-images/getting-started-bing.png)
+    ![The app displays the Bing website](./winui-images/getting-started-bing.png)
 
 1.  Enter an incomplete URL in the address bar, such as `bing.com`, and then click the **Go** button.
 
@@ -281,7 +307,7 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## Step 5 - Navigation events
+## Step 6 - Navigation events
 
 In this section, you add code to import the WebView2 Core library.
 
@@ -355,7 +381,7 @@ In this section, you add code to import the WebView2 Core library.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Scripting
+## Step 7 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript is run with specific timing, to either:
 
@@ -392,7 +418,7 @@ As an example, next, you add scripts that send an alert when a user tries to ope
 
     The app's WebView2 control displays an alert dialog for non-HTTPS websites, saying that the non-HTTPS `uri` is not safe:
 
-    ![The app's WebView2 control displays an alert dialog for non-HTTPS websites](winui-images/getting-started-script.png)
+    ![The app's WebView2 control displays an alert dialog for non-HTTPS websites](./winui-images/getting-started-script.png)
 
 1.  Close the app.
 
