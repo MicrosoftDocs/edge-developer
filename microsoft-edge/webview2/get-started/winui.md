@@ -38,7 +38,7 @@ A completed version of this tutorial project (as of 2020) is available in the **
 *  Repo directory: [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)
 *  Solution file: **WinUI_Sample.sln**
 
-The present tutorial has been updated and only creates a single project, not a second, "WinUI_Sample (Package)" project like in the WebView2Samples repo's WinUI_Sample from 2020.
+The present article has been updated to use the latest Visual Studio project template, and only creates a single project, not a second, "WinUI_Sample (Package)" project like in the WebView2Samples repo's WinUI_Sample.
 
 
 <!-- ====================================================================== -->
@@ -230,9 +230,8 @@ To build and run the project:
 
 <!-- ------------------------------ -->
 #### Updating target version numbers
-<!-- section wasn't needed on semi-fresh machine Nov 1, 2024 -->
 
-For the build step above:  If you're updating a previous project, you might need to update the version numbers for **Target version** and **Minimum version**.  To do this, in Solution right-click the project and then select **Edit Project File**.  Your `.csproj` file opens.  Make sure the values are updated as follows, and then save any changes and build the project.
+For the build step above:  If you're updating a previously created project, such as a Getting Started project from the WebView2Samples repo, you might need to update the version numbers for **Target version** and **Minimum version**.  To do this, in Solution right-click the project and then select **Edit Project File**.  Your `.csproj` file opens.  Make sure the values are updated as follows, and then save any changes and build the project.
 
 ```xml
     <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
