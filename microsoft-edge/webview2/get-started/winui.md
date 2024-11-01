@@ -12,7 +12,7 @@ ms.date: 04/08/2024
 
 This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.
 
-In this tutorial, you use the **Blank App, Packaged (WinUI in Desktop)** Visual Studio project template to create a blank WinUI 3 project.  That project template uses the WindowsAppSDK, which includes the WebView2 SDK.  You add a WebView2 control.  You then add an address bar and logic to display a warning dialog when the user tries to navigate to a URL with an `http://` prefix.
+In this tutorial, you use the **Blank App, Packaged (WinUI 3 in Desktop)** Visual Studio project template to create a blank WinUI 3 project.  That project template uses the WindowsAppSDK, which includes the WebView2 SDK.  You add a WebView2 control.  You then add an address bar and logic to display a warning dialog when the user tries to navigate to a URL with an `http://` prefix.
 
 ![App displaying the Bing website](./winui-images/getting-started-bing.png)
 
@@ -26,46 +26,99 @@ A completed version of this tutorial project (as of 2020) is available in the **
 *  Repo directory: [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)
 *  Solution file: **WinUI_Sample.sln**
 
-The present tutorial is updated and only creates a single project, not a second, "(Package)" project like in 2020.
+The present tutorial has been updated and only creates a single project, not a second, "WinUI_Sample (Package)" project like in the WebView2Samples repo's WinUI_Sample from 2020.
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install Visual Studio and the Windows App SDK
+## Step 1 - Install the latest Visual Studio 2022
 
-Even if you have Visual Studio installed, read the following page and possibly update your software and install project templates.
+Make sure that Visual Studio 2022 is installed and up-to-date.
 
-1.  In a new window or tab, open the page [Install tools for the Windows App SDK](/windows/apps/windows-app-sdk/set-up-your-development-environment) and then follow the steps on that page, to install Microsoft Visual Studio, such as Visual Studio 2022.
-<!-- clickable: https://learn.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment -->
+To install the latest Visual Studio 2022:
 
-1.  If needed, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.
+1. Go to [Visual Studio: IDE and Code Editor for Software Developers and Teams](https://visualstudio.microsoft.com), and then in the **Visual Studio 2022** section, click the **Download** button, and then select **Community 2022** or another version.
 
-Return from that page and continue the steps below.
+1. In the **Downloads** popup in the upper right of Microsoft Edge, `VisualStudioSetup.exe` is listed.  Click **Open file**.
 
-For this sample, you don't need to separately install the WebView2 SDK.  Below, you'll select the project template **Blank App, Packaged (WinUI in Desktop)**, which uses the WindowsAppSDK, which includes the WebView2 SDK.
+   Visual Studio Installer opens.
+
+1. Follow the prompts, and accept the defaults.  You'll install or update a workload and a component of a workload in the next step.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Create a blank WinUI 3 project
+## Step 2 - Install the latest Windows App SDK
 
-To create a WebView2 app, start by creating a basic desktop project, to create a desktop app that contains a single main window:
+<!-- describe/explain what we're doing/accomplishing here, and why  -->
+Make sure that the latest Windows App SDK is installed in Visual Studio 2022.  The Windows App SDK includes Visual Studio project templates, and includes the WebView2 SDK.  These project templates include the **Blank App, Packaged (WinUI 3 in Desktop)** project template, which uses the WindowsAppSDK, including the WebView2 SDK.
 
-1.  If Visual Studio is not running, start Visual Studio (not Visual Studio Code).  In the Visual Studio startup window, click the **Create a new project** card.  The **Create a new project** window opens.
+The Windows App SDK is installed as the **Windows App SDK C# Templates** component of the **.NET Desktop Development** workload for Visual Studio.  Before Visual Studio 2022 version 17.1, the Windows App SDK was instead installed as a Visual Studio extension, as explained in [Install tools for the Windows App SDK](/windows/apps/windows-app-sdk/set-up-your-development-environment).
 
-    Or, if Visual Studio is running, select **File** > **New** > **Project**.  The **Create a new project** dialog opens.
 
-    **Turning on Developer Mode:**  When Visual Studio opens at some point during the present article's steps, you might be prompted to turn on Developer Mode for your computer.  For more information, if needed, see [Enable your device for development](/windows/apps/get-started/enable-your-device-for-development), at _Build desktop apps for Windows_.
+To install the latest Visual Studio 2022 the latest Windows App SDK:
 
-1.  In the **Create a new project** dialog, in the **Search for templates** field, enter **WinUI 3 in Desktop**:
+1. In Windows, press the **Start** key, and then type **Visual Studio 2022**.
+
+   The Visual Studio 2022 app is listed.
+
+1. Click **Open**.
+
+   The **Visual Studio 2022** dialog opens, with sections including **Open recent** and **Get started**.
+
+1. Click **Continue without code**.
+
+   Visual Studio opens.
+
+1. In the **Tools** menu, select **Get Tools and Features**.
+
+   The **Visual Studio Installer** window opens.
+
+1. Make sure the **Workloads** tab is selected.
+
+1. In the **Desktop & Mobile** section, select the card for the **.NET desktop development** workload, so that a checkmark appears:
+
+   !["Windows App SDK C# Templates" component checkbox of ".NET desktop development" workload in Visual Studio Installer](./winui-images/installer-winappsdk.png)
+
+1. In the **Installation details** tree on the right, in **.NET desktop development** > **Optional**, select the checkbox for the **Windows App SDK C# Templates** component, near the bottom of the tree.
+
+1. Click the **Modify** button.
+
+   The **User Account Control** dialog opens.
+
+1. Click the **Yes** button.
+
+   You're prompted to close Visual Studio.
+
+1. Click the **Continue** button (assuming you have no unsaved work).
+
+   Visual Studio downloads and installs the latest **Windows App SDK C# Templates** component.  In the **Visual Studio Installer** window, a message says **All installations are up to date**, and Visual Studio 2022 opens.
+
+
+<!-- ====================================================================== -->
+## Step 3 - Create a blank WinUI 3 project
+
+Next, create a project that's a basic WebView2 app for WinUI 3 (Windows App SDK).  This desktop app will contain a single main window.  The project won't contain any WebView2 code yet.
+
+To create a WebView2 app for WinUI 3 (Windows App SDK):
+
+1. If Visual Studio is running, select **File** > **New** > **Project**.  The **Create a new project** dialog opens.
+
+1.  If Visual Studio 2022 is not running, in Windows, press the **Start** key, and then type **Visual Studio 2022**.
+
+   The Visual Studio 2022 app is listed.
+
+1. Click **Open**.
+
+   The **Visual Studio 2022** startup dialog opens, with sections including **Open recent** and **Get started**.
+
+1. In the **Get started** section, click the **Create a new project** card.  The **Create a new project** window opens.
+
+1.  In the **Create a new project** window, in the **Search for templates** field, enter **WinUI 3 in Desktop**:
 
     ![Searching on "WinUI 3 in Desktop" to create a new project](./winui-images/create-project-winui3-desktop.png)
 
-1.  Click the **Blank App, Packaged (WinUI in Desktop)** card to select it, and then click the **Next** button.
+    The project templates that were installed in the previous major step are listed.
 
-    If **WinUI** templates aren't listed, you need to install project templates as mentioned above, from [Install tools for the Windows App SDK](/windows/apps/windows-app-sdk/set-up-your-development-environment).  Additional tips to get the template to appear:
-
-    After installing "default" options for Visual Studio 2022 Community edition, in Visual Studio Installer, click the **.NET** card, then on the right, select the checkbox **Windows App SDK C# Templates**.
-
-    If the correct project template still doesn't appear: in the Visual Studio Installer, click the **UWP** card to select it, select the **v143 C++ tools** checkbox on the right, and then click the **Modify** button.
+1.  Click the **Blank App, Packaged (WinUI 3 in Desktop)** card to select it, and then click the **Next** button.  
 
     The **Configure your new project** dialog appears.
 
@@ -77,27 +130,84 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
 1.  Click the **Create** button.
 
-    The new WinUI 3 project opens in Solution Explorer in Visual Studio:
+    Visual Studio might display an error message: **Failed to install the Microsoft.WindowsAppSDK package**:
 
-    ![The new WinUI 3 project in Solution Explorer](./winui-images/new-winui3-project.png)
-
-    *  The `App.xaml.cs` file defines an `Application` class that represents your app instance.
-
-    *  The `MainWindow.xaml.cs` file defines a `MainWindow` class that represents the main window displayed by your app instance.  The classes derive from types in the `Microsoft.UI.Xaml` namespace of WinUI.
-
-1.  In the **Solution Configurations** dropdown list (in the middle of the top of the window), select **Debug**.
-
-1.  In the **Solution Platforms** dropdown list, select a platform, such as **x64**.
-
-1.  Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
-
-1.  Press **F5** to build and run the project.  The blank WinUI Desktop app opens, with no WebView2 control added yet:
-
-    ![The new blank WinUI 3 app](./winui-images/blank-winui3-app.png)
-
-1.  Close the app.
+   ![the error message](./winui-images/failed-install-winappsdk-pacakge.png)
 
 
+<!-- ====================================================================== -->
+## Step 4 - Add the latest WinUI/Windows App SDK NuGet package to the solution
+
+<!-- copied/modified from https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=vs-2022-17-10#4-update-to-the-latest-winuiwindows-app-sdk
+[4. Update to the latest WinUI/Windows App SDK](/windows/apps/get-started/start-here#4-update-to-the-latest-winuiwindows-app-sdk) in _Start developing Windows apps_. -->
+
+When you create a new project in Visual Studio, update the project's NuGet packages, to ensure the project has the latest features and fixes.  This step ensures that the **Microsoft.WindowsAppSDK** NuGet package is installed and up-to-date.  The Windows App SDK (including WinUI) is distributed as a NuGet package; see [An introduction to NuGet](/nuget/what-is-nuget).  This means updates can be released out-of-sync with Windows and Visual Studio.  As a result, the Visual Studio project template that you used to create your project might not reference the latest Windows App SDK NuGet package.
+
+To install the latest Windows App SDK NuGet package for your project:
+
+1. In Visual Studio, select **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
+
+   In Visual Studio, the **NuGet - Solution** tab opens.
+
+1. Click the **Browse** tab, and then in the **Search** text box, enter **Microsoft.WindowsAppSDK**.
+
+1. Select the **Microsoft.WindowsAppSDK** card.
+
+1. In the **Versions** section, select the **Project** checkbox:
+
+   ![Installing the SDK package if not installed yet](./winui-images/nuget-install-winappsdk.png)
+
+1. Click the **Install** button (or the **Update** button).
+
+   The **Preview Changes** dialog opens.
+
+1. Click the **Apply** button, and then accept the license terms.
+
+1. Click the **Updates** tab, and update or install any packages listed there, such as **Microsoft.Windows.SDK.BuildTools**.
+
+1. Click the **Installed** tab, and make sure **Microsoft.WindowsAppSDK** is listed.
+
+1. Close the **NuGet - Solution** tab.
+
+
+<!-- ====================================================================== -->
+## Step 5 - Build and run the project
+
+The new WinUI 3 project remains opens in Solution Explorer in Visual Studio:
+
+![The new WinUI 3 project in Solution Explorer](./winui-images/new-winui3-project.png)
+
+* The `App.xaml.cs` file defines an `Application` class that represents your app instance.
+
+* The `MainWindow.xaml.cs` file defines a `MainWindow` class that represents the main window displayed by your app instance.  The classes derive from types in the `Microsoft.UI.Xaml` namespace of WinUI.
+
+
+To build and run the project:
+
+1. In the **Solution Configurations** dropdown list (in the middle of the top of the window), select **Debug**.
+
+1. In the **Solution Platforms** dropdown list, select a platform, such as **x64**.
+
+1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
+
+1. Select **Debug** > **Start** (**F5**).
+
+   The **Enable Developer Mode for Windows** dialog might open:
+
+   ![Dialog: Enable Developer Mode for Windows](./winui-images/enable-developer-mode.png)
+
+1. If that dialog opens, click **settings for developers**, and then turn on the **Developer Mode** toggle, click the **Yes** button, and then click the **Close** button of the Visual Studio dialog.
+
+   For more information, if needed, see [Enable your device for development](/windows/apps/get-started/enable-your-device-for-development), at _Build desktop apps for Windows_.
+
+   The project builds.  The blank WinUI Desktop app opens, with no WebView2 control added yet:
+
+   ![The new blank WinUI 3 app](./winui-images/blank-winui3-app.png)
+
+1. Close the app.
+
+
+<!-- section still needed?  wasn't needed on semi-fresh machine Nov 1, 2024 -->
 <!-- ------------------------------ -->
 #### Updating target version numbers
 
@@ -114,41 +224,15 @@ The above values represent:
 
 
 <!-- ====================================================================== -->
-## Step 3 - Update to the latest WinUI/Windows App SDK
+## Step 6 - Add a WebView2 control
 
-<!-- copied/modified from https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=vs-2022-17-10#4-update-to-the-latest-winuiwindows-app-sdk -->
-
-When you create a new project in Visual Studio, update the project's NuGet packages, to ensure the project has the latest features and fixes.  Check for updates of **WindowsAppSDK**, which is delivered as a NuGet package.  The Windows App SDK (and WinUI, which is part of the Windows App SDK) is distributed as a NuGet package; see [An introduction to NuGet](/nuget/what-is-nuget).  This means updates can be released out-of-sync with Windows and Visual Studio.  As a result, the Visual Studio project template that you used to create your project might not reference the latest Windows App SDK NuGet package.
-
-To update the Windows App SDK NuGet package for your project:
-
-1. In Visual Studio, select **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
-
-   If an update is available, the update appears on the **Updates** page.
-
-1. Select the checkbox next to the update.  If you want to include prerelease updates, select the **Include prerelease** checkbox.
-
-   To learn more about what's included in an update, see [Latest stable channel release notes for the Windows App SDK](/windows/apps/windows-app-sdk/stable-channel).
-
-1. Click the **Update** button, then click **Apply** in the Preview changes dialog, then accept the license terms to finish installing the update.
-
-![The NuGet package manager in Visual Studio showing a Windows App SDK package update](./winui-images/nuget-update.png)
-
-<!-- See also:
-* [4. Update to the latest WinUI/Windows App SDK](/windows/apps/get-started/start-here#4-update-to-the-latest-winuiwindows-app-sdk) in _Start developing Windows apps_.
--->
-
-
-<!-- ====================================================================== -->
-## Step 4 - Add a WebView2 control
-
-This tutorial project is based on the project template **Blank App, Packaged (WinUI in Desktop)**.  This project template uses the WindowsAppSDK, which includes the WebView2 SDK.
+This tutorial project is based on the project template **Blank App, Packaged (WinUI 3 in Desktop)**.  This project template uses the WindowsAppSDK, which includes the WebView2 SDK.
 
 Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 control to the blank WinUI 3 app project, as follows:
 
 1.  In Visual Studio, in Solution Explorer, double-click `MainWindow.xaml` to open it in the code editor.
 
-1.  Add the WebView2 XAML namespace by inserting the following attribute inside the `<Window>` start tag:
+1.  Copy and paste the following attribute inside the `<Window>` start tag, to add the WebView2 XAML namespace:
 
     ```xml
     xmlns:controls="using:Microsoft.UI.Xaml.Controls"
@@ -157,6 +241,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
     Make sure your code in `MainWindow.xaml` is similar to the following:
 
     ```xml
+    <?xml version="1.0" encoding="utf-8"?>
     <Window
         x:Class="MyWebView2WinUI3.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -164,19 +249,21 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
         xmlns:local="using:MyWebView2WinUI3"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="using:Microsoft.UI.Xaml.Controls"
         mc:Ignorable="d">
-    
+
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
         </StackPanel>
     </Window>
     ```
-    
-1.  To add the WebView2 control, replace the entire `<StackPanel>` element with the following `<Grid>` code.  The `Source` property, near the bottom, sets the initial URI that's displayed in the WebView2 control (`https://www.microsoft.com`):
+
+1.  Delete the `<StackPanel>` element (three lines).
+
+1.  Above the `</Window>` end tag, paste the following `<Grid>` code:
 
     ```xml
     <Grid>
-    
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -188,18 +275,22 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to add a WebView2 cont
     
         <controls:WebView2 x:Name="MyWebView"  Grid.Row="1" Grid.ColumnSpan="2"
             Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-    
     </Grid>
     ```
-    
-1.  In Solution Explorer, expand `MainWindow.xaml` and then open `MainWindow.xaml.cs`.
 
-1.  In `MainWindow.xaml.cs`, comment out the following line, as shown:
+    This `<Grid>` element contains a `<controls:WebView2>` element, which has a `Source` property that sets the initial URI that's displayed in the WebView2 control (`https://www.microsoft.com`).
+    
+1.  In Solution Explorer, expand `MainWindow.xaml` and then double-click `MainWindow.xaml.cs`.
+
+1.  In `MainWindow.xaml.cs`, delete the following lines, because the `<Button>` named "myButton" was removed:
 
     ```csharp
-        // myButton.Content = "Clicked";
+    private void myButton_Click(object sender, RoutedEventArgs e)
+    {
+        myButton.Content = "Clicked";
+    }
     ```
-    
+
 1.  Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1.  Press **F5**, to build and run the project.
@@ -232,9 +323,8 @@ API Reference:
 * [CoreWebView2EnvironmentOptions](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions)
 
 
-
 <!-- ====================================================================== -->
-## Step 5 - Add navigation controls
+## Step 7 - Add navigation controls
 
 To allow users to control which webpage is displayed in the WebView2 control, add an address bar to the app, as follows:
 
@@ -307,7 +397,7 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## Step 6 - Navigation events
+## Step 8 - Handle navigation events
 
 In this section, you add code to import the WebView2 Core library.
 
@@ -381,7 +471,7 @@ In this section, you add code to import the WebView2 Core library.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Scripting
+## Step 9 - Inject JavaScript into the WebView2, to alert user about non-HTTPS sites
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript is run with specific timing, to either:
 
