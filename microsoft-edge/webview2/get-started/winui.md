@@ -100,17 +100,19 @@ Next, create a project that's a basic WebView2 app for WinUI 3 (Windows App SDK)
 
 To create a WebView2 app for WinUI 3 (Windows App SDK):
 
-1. If Visual Studio is running, select **File** > **New** > **Project**.  The **Create a new project** dialog opens.
+1.  If Visual Studio is running, select **File** > **New** > **Project**.  The **Create a new project** dialog opens.
 
-1.  If Visual Studio 2022 is not running, in Windows, press the **Start** key, and then type **Visual Studio 2022**.
+1.  If Visual Studio 2022 is not running:
 
-   The Visual Studio 2022 app is listed.
+    1.  In Windows, press the **Start** key, and then type **Visual Studio 2022**.
 
-1. Click **Open**.
+        The Visual Studio 2022 app is listed.
 
-   The **Visual Studio 2022** startup dialog opens, with sections including **Open recent** and **Get started**.
+    1.  Click **Open**.
 
-1. In the **Get started** section, click the **Create a new project** card.  The **Create a new project** window opens.
+        The **Visual Studio 2022** startup dialog opens, with sections including **Open recent** and **Get started**.
+
+    1.  In the **Get started** section, click the **Create a new project** card.  The **Create a new project** window opens.
 
 1.  In the **Create a new project** window, in the **Search for templates** field, enter **WinUI 3 in Desktop**:
 
@@ -130,42 +132,47 @@ To create a WebView2 app for WinUI 3 (Windows App SDK):
 
 1.  Click the **Create** button.
 
-    Visual Studio might display an error message: **Failed to install the Microsoft.WindowsAppSDK package**:
+    When creating the first project using this project template, Visual Studio might display an error message: **Failed to install the Microsoft.WindowsAppSDK package**:
 
    ![the error message](./winui-images/failed-install-winappsdk-pacakge.png)
 
 
 <!-- ====================================================================== -->
-## Step 4 - Add the latest WinUI/Windows App SDK NuGet package to the solution
+## Step 4 - Add the latest Windows App SDK package
 
 <!-- copied/modified from https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=vs-2022-17-10#4-update-to-the-latest-winuiwindows-app-sdk
 [4. Update to the latest WinUI/Windows App SDK](/windows/apps/get-started/start-here#4-update-to-the-latest-winuiwindows-app-sdk) in _Start developing Windows apps_. -->
 
-When you create a new project in Visual Studio, update the project's NuGet packages, to ensure the project has the latest features and fixes.  This step ensures that the **Microsoft.WindowsAppSDK** NuGet package is installed and up-to-date.  The Windows App SDK (including WinUI) is distributed as a NuGet package; see [An introduction to NuGet](/nuget/what-is-nuget).  This means updates can be released out-of-sync with Windows and Visual Studio.  As a result, the Visual Studio project template that you used to create your project might not reference the latest Windows App SDK NuGet package.
+When you create a new project in Visual Studio, check the status of the solution's NuGet packages.  Make sure the needed NuGet packages were installed by the project template, and make sure the packages have been updated, so that the project has the latest features and fixes.
 
-To install the latest Windows App SDK NuGet package for your project:
+To update or install the latest Windows App SDK NuGet package for your project:
 
 1. In Visual Studio, select **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
 
-   In Visual Studio, the **NuGet - Solution** tab opens.
+   In Visual Studio, the **NuGet - Solution** tab opens.  If the **Microsoft.WindowsAppSDK** package has been installed during project creation using the project template, the **Installed** tab is selected, and that package is listed:
+
+   ![Expected packages listed in Installed tab of NuGet tab](./winui-images/nuget-installed-tab.png)
+
+   If the **Microsoft.WindowsAppSDK** package is not listed in the **Installed** tab:
 
 1. Click the **Browse** tab, and then in the **Search** text box, enter **Microsoft.WindowsAppSDK**.
+   
+1. Select the **Microsoft.WindowsAppSDK** card:
+    
+   ![Installing the SDK package](./winui-images/nuget-install-winappsdk.png)
 
-1. Select the **Microsoft.WindowsAppSDK** card.
-
-1. In the **Versions** section, select the **Project** checkbox:
-
-   ![Installing the SDK package if not installed yet](./winui-images/nuget-install-winappsdk.png)
-
-1. Click the **Install** button (or the **Update** button).
-
+1. In the **Versions** section, select the **Project** checkbox.
+    
+   
+1. Click the **Install** button.
+    
    The **Preview Changes** dialog opens.
-
+    
 1. Click the **Apply** button, and then accept the license terms.
 
-1. Click the **Updates** tab, and update or install any packages listed there, such as **Microsoft.Windows.SDK.BuildTools**.
+   The **Microsoft.WindowsAppSDK** NuGet package is installed.
 
-1. Click the **Installed** tab, and make sure **Microsoft.WindowsAppSDK** is listed.
+1. In the **NuGet - Solution** tab, click the **Updates** tab, and then optionally update any packages that are listed there, such as **Microsoft.Windows.SDK.BuildTools**.
 
 1. Close the **NuGet - Solution** tab.
 
@@ -196,7 +203,7 @@ To build and run the project:
 
    ![Dialog: Enable Developer Mode for Windows](./winui-images/enable-developer-mode.png)
 
-1. If that dialog opens, click **settings for developers**, and then turn on the **Developer Mode** toggle, click the **Yes** button, and then click the **Close** button of the Visual Studio dialog.
+1. If that dialog appears, click **settings for developers**, and then turn on the **Developer Mode** toggle, click the **Yes** button, and then click the **Close** button of the Visual Studio dialog.
 
    For more information, if needed, see [Enable your device for development](/windows/apps/get-started/enable-your-device-for-development), at _Build desktop apps for Windows_.
 
@@ -204,7 +211,14 @@ To build and run the project:
 
    ![The new blank WinUI 3 app](./winui-images/blank-winui3-app.png)
 
+1. Click the **Click Me** button.
+
+   The button label changes to **Clicked**.
+
 1. Close the app.
+
+You'll replace the button element by a grid element that contains a WebView2 control.
+
 
 
 <!-- section still needed?  wasn't needed on semi-fresh machine Nov 1, 2024 -->
