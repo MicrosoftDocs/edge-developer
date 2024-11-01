@@ -42,7 +42,7 @@ The present tutorial has been updated and only creates a single project, not a s
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install the latest Visual Studio 2022
+## Step 1: Install the latest Visual Studio 2022
 
 Make sure that Visual Studio 2022 is installed and up-to-date.
 
@@ -58,7 +58,7 @@ To install the latest Visual Studio 2022:
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install the latest Windows App SDK
+## Step 2: Install the latest Windows App SDK
 
 Make sure that the latest Windows App SDK is installed in Visual Studio 2022.  The Windows App SDK includes Visual Studio project templates, and includes the WebView2 SDK.  These project templates include the **Blank App, Packaged (WinUI 3 in Desktop)** project template, which uses the WindowsAppSDK, including the WebView2 SDK.
 
@@ -105,7 +105,7 @@ To install the latest Visual Studio 2022 the latest Windows App SDK:
 
 
 <!-- ====================================================================== -->
-## Step 3 - Create a blank WinUI 3 project
+## Step 3: Create a blank WinUI 3 project
 
 Next, create a project that's a basic WebView2 app for WinUI 3 (Windows App SDK).  This desktop app will contain a single main window.  The project won't contain any WebView2 code yet.
 
@@ -149,7 +149,7 @@ To create a WebView2 app for WinUI 3 (Windows App SDK):
 
 
 <!-- ====================================================================== -->
-## Step 4 - Update or install the Windows App SDK
+## Step 4: Update or install the Windows App SDK
 
 <!-- copied/modified from https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=vs-2022-17-10#4-update-to-the-latest-winuiwindows-app-sdk
 [4. Update to the latest WinUI/Windows App SDK](/windows/apps/get-started/start-here#4-update-to-the-latest-winuiwindows-app-sdk) in _Start developing Windows apps_. -->
@@ -188,7 +188,7 @@ To update or install the latest Windows App SDK NuGet package for your project:
 
 
 <!-- ====================================================================== -->
-## Step 5 - Build and run the project
+## Step 5: Build and run the project
 
 The new WinUI 3 project remains opens in Solution Explorer in Visual Studio:
 
@@ -245,7 +245,7 @@ The above values represent:
 
 
 <!-- ====================================================================== -->
-## Step 6 - Add a WebView2 control
+## Step 6: Add a WebView2 control
 
 This tutorial project is based on the project template **Blank App, Packaged (WinUI 3 in Desktop)**.  This project template uses the **Microsoft.WindowsAppSDK** NuGet package, which includes the WebView2 SDK.
 
@@ -350,7 +350,7 @@ API Reference:
 
 
 <!-- ====================================================================== -->
-## Step 7 - Add navigation controls
+## Step 7: Add navigation controls
 
 To allow users to control which webpage is displayed in the WebView2 control, add an Address bar to the app, as follows:
 
@@ -426,7 +426,7 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## Step 8 - Handle navigation events
+## Step 8: Handle navigation events
 
 An app that hosts a WebView2 control listens for the following events:
 
@@ -508,7 +508,7 @@ To handle navigation events:
 
 
 <!-- ====================================================================== -->
-## Step 9 - Insert JavaScript to alert the user about a non-HTTPS address
+## Step 9: Insert JavaScript to alert the user about a non-HTTPS address
 
 You can use the host app to inject JavaScript code into the WebView2 control at runtime.  You can task WebView2 to run arbitrary JavaScript, or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames, until the JavaScript is removed.  The injected JavaScript is run with specific timing, to either:
 
