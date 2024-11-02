@@ -10,7 +10,8 @@ ms.date: 11/01/2024
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK) apps
 
-This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.
+This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.  You first use the **Blank App, Packaged (WinUI 3 in Desktop)** Visual Studio project template, which uses the WindowsAppSDK, which includes the WebView2 SDK.  You then add a WebView2 control, an Address bar and **Go** button, and URL logic to only allow navigating to HTTPS URLs.
+
 
 In this tutorial, you do the following:
 
@@ -26,7 +27,7 @@ In this tutorial, you do the following:
 
 1. Insert JavaScript into the WebView2 control, to display a warning alert (dialog) when the user tries to navigate to a URL that has only an `http://` prefix instead of `https://`:
 
-   ![The app's WebView2 control displays an alert dialog for non-HTTPS websites](./winui-images/getting-started-script.png)
+   ![The app's WebView2 control displays an alert dialog for non-HTTPS websites](./winui-images/finished-app.png)
 
 
 <!-- ------------------------------ -->
@@ -34,11 +35,9 @@ In this tutorial, you do the following:
 
 A completed version of this tutorial project (as of 2020) is available in the **WebView2Samples** repo:
 
-*  Sample name: **WinUI3_GettingStarted**
+*  Sample name: **WinUI3GetStarted**
 *  Repo directory: [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)
-*  Solution file: **WinUI_Sample.sln**
-
-The present article has been updated to use the latest Visual Studio project template, and only creates a single project, not a second, "WinUI_Sample (Package)" project like in the WebView2Samples repo's WinUI_Sample.
+*  Solution file: **WinUI3GetStarted.sln**
 
 
 <!-- ====================================================================== -->
@@ -506,7 +505,7 @@ To display an alert when the user tries to navigate to a non-HTTPS site:
 
     The app's WebView2 control displays an alert dialog for non-HTTPS websites, saying that the non-HTTPS `uri` is not safe:
 
-    ![The app's WebView2 control displays an alert dialog for non-HTTPS websites](./winui-images/getting-started-script.png)
+    ![The app's WebView2 control displays an alert dialog for non-HTTPS websites](./winui-images/finished-app.png)
 
 1.  Close the app.
 
