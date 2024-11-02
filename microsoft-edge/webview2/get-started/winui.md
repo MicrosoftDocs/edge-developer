@@ -33,7 +33,7 @@ In this tutorial, you do the following:
 <!-- ------------------------------ -->
 #### Completed project
 
-A completed version of this tutorial project (as of 2020) is available in the **WebView2Samples** repo:
+A completed version of this tutorial project is available in the **WebView2Samples** repo:
 
 *  Sample name: **WinUI3GetStarted**
 *  Repo directory: [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)
