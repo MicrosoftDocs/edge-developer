@@ -63,9 +63,9 @@ To sign up for the **Ad Selection API** origin trial for a domain:
 
 1. Open [Ad Selection API Origin Trial Registration in Microsoft Edge](https://forms.office.com/r/eBhJt58Lks) in a new window or tab.
 
-1. Click **Start now**.
+1. Click the **Start now** button.
 
-1. Read and agree to the terms of use, and then click **Next**.  The **Ad Selection API Origin Trial Registration** form opens:
+1. Read and agree to the terms of use, and then click the **Next** button.  The **Ad Selection API Origin Trial Registration** form opens:
 
    ![Registration form](./ad-selection-api-images/reg-form.png)
 
