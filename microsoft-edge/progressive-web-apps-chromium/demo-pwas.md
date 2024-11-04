@@ -94,7 +94,7 @@ This simple PWA demo lets you search for made up movies and store them locally.
 
 ![The My Movies app](./demo-pwas-images/my-movies.png)
 
-[App](https://quirky-rosalind-ac1e65.netlify.app/), [source code](https://github.com/captainbrosset/movies-db-pwa).<!-- todo: link to readme -->
+[App](https://quirky-rosalind-ac1e65.netlify.app/), [source code](https://github.com/captainbrosset/movies-db-pwa).<!-- todo: link to readme when exists -->
 
 My Movies uses the following features:
 
