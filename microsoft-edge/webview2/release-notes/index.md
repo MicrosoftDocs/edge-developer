@@ -213,6 +213,7 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
 ###### SDK-only
 
 * Using `CoreWebView2.AddWebResourceRequestedFilter` without a `CoreWebView2WebResourceRequestSourceKinds` parameter is now deprecated.  See the .NET [CoreWebView2.AddWebResourceRequestedFilter Method](https://go.microsoft.com/fwlink/?linkid=2286319).<!-- points to WebView2Announcements -->
+* Added the .NET 8 `TargetFramework` for C# WinRT, enabled AOT (ahead-of-time) compatibility, and disabled runtime marshalling.
 
 
 <!-- end of Oct 2024 Release SDK -->
@@ -492,6 +493,7 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 * Fixed an SDK dependency for .NET projects.  ([Issue #4743](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4743))
 * Fixed a compatibility issue when calling `GetAvailableBrowserVersionString()` with an older `WebView2Loader.dll`.  ([Issue #4395](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4395))
 * Fixed issues when compiling wv2winrt-generated code with the `cpp20` and `/permissive-` options.
+* Added the .NET 8 `TargetFramework` for C# WinRT, enabled AOT (ahead-of-time) compatibility, and disabled runtime marshalling.
 
 
 <!-- end of Sep 2024 Prerelease SDK -->
