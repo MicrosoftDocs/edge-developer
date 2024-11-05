@@ -57,27 +57,34 @@ The **Ad Selection API** flag enables the Ad Selection API and associated featur
 
 Developers interested in alpha testing can join the origin trial for the Ad Selection API.  This origin trial enables end-to-end testing of Ad Selection API features, covering both the API usage and the deployment of secure container images.
 
-For each top-level domain that you intend to use with the Ad Selection API, fill in the **Origin Trial Registration**  form for that domain, and then submit the form.
+For each top-level domain that you intend to use with the Ad Selection API, fill in the **Origin Trial Registration** form for that domain, and then submit the form.
 
 To sign up for the **Ad Selection API** origin trial for a domain:
 
-1. Open [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) in a new window or tab:
+1. Open [Ad Selection API Origin Trial Registration in Microsoft Edge](https://forms.office.com/r/eBhJt58Lks) in a new window or tab.
 
-   ![The "Ad Selection API" origin trial listing at "Microsoft Edge Origin Trials"](./ad-selection-api-images/origin-trials.png)
+1. Click the **Start now** button.
 
-1. In the **Ad Selection API** section, click the **Register** button.  The **Origin Trial Registration** form opens:
+1. Read and agree to the terms of use, and then click the **Next** button.  The **Ad Selection API Origin Trial Registration** form opens:
 
    ![Registration form](./ad-selection-api-images/reg-form.png)
 
-1. Fill in the form.
+1. In the **Domain** text box, enter a single top-level domain:
 
-   * In the **Domain** text box, enter a single top-level domain.  For example, a top-level domain is `contoso.example`, and optionally includes subdomains such as `subdomain.contoso.example`.
+   You can configure the origin trial to support any of the following:
+   * A single domain, such as `https://example.com`, without supporting its subdomains.
+   * A single subdomain, such as `https://beta.example.com`.
+   * A domain, such as `https://example.com`, and its subdomains, such as `https://beta.example.com`.
 
-   * In the **Subdomain Support** section, select the **Yes** or **No** option button.
+   Trailing paths and query parameters aren't supported.  If a URI is entered that has a trailing path or a query parameter, such as `https://example.com/path/new-feature`, the root domain (such as `https://example.com`) or subdomain will be registered, ignoring any trailing path or query parameters.
 
-   * In the **Email Address** text box, provide a valid developer contact for the domain.
+1. In the **Subdomain Support** section, select the **Yes** or **No** option button:
 
-   * In the **Origin Trial Name** text box, enter **AdSelectionAPI** (with no spaces).  This is the ID of this origin trial.
+   * To use the origin trial at a domain (such as `https://example.com`) without supporting its subdomains (such as `https://beta.example.com`), select **No**.
+   * To use the origin trial only at a specific subdomain (such as `https://beta.example.com`), select **No**.
+   * To use the origin trial at a domain (such as `https://example.com`) and its subdomains (such as `https://beta.example.com`), select **Yes**.
+
+1. In the **Email Address** text box, provide a valid developer contact for the domain.
 
 1. Click the **Submit** button.
 
@@ -277,46 +284,49 @@ To learn more about which API methods are available and to view example code, se
 <!-- ====================================================================== -->
 ## Provide feedback about the origin trial
 
-To provide feedback about the Ad Selection API origin trial:
+To provide feedback about the Ad Selection API origin trial, create a new issue on the WICG/privacy-preserving-ads GitHub repo:
 
-1. Go to the [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) portal at Github.io.
+* To view existing issues, go to the [Issues tab of the WICG/privacy-preserving-ads repo](https://github.com/WICG/privacy-preserving-ads/issues).
 
-1. Go to the row for the **Ad Selection API** origin trial.
-
-1. Click the **issues** button in the row.  The `privacy-preserving-ads` repo opens.
-
-1. Submit a new issue, or click the **Issues** tab to view the issues.
+* To submit a new issue, go to the [new issue form](https://github.com/WICG/privacy-preserving-ads/issues/new?labels=Ad+Selection%20API,OriginTrialFeedback&title=%5BAd%20Selection%20API%5D+Feedback).
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-Design and technical documents
-   * [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md)
-   * [Ad Selection API Proposal](https://github.com/WICG/privacy-preserving-ads?tab=readme-ov-file#ad-selection-api-proposal)<!-- not in article body -->
-   * [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md)
+Origin trials:
+
+* [Ad Selection API Origin Trial Registration in Microsoft Edge](https://forms.office.com/r/eBhJt58Lks)
+* [Use origin trials in Microsoft Edge](../origin-trials/index.md)<!-- not in article body -->
+
+Design and technical documents:
+
+* [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md)
+* [Ad Selection API Proposal](https://github.com/WICG/privacy-preserving-ads?tab=readme-ov-file#ad-selection-api-proposal)<!-- not in article body -->
+* [Ad Selection API details](https://github.com/WICG/privacy-preserving-ads/blob/main/API%20Details.md)
 
 Images for deployment:
+
 * Sellers
-   * [Ad Selection Seller Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
-   * [Ad Selection Auction Service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
+  * [Ad Selection Seller Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/seller-frontend-service)
+  * [Ad Selection Auction Service](https://mcr.microsoft.com/product/ad-selection/azure/auction-service)
 * Buyers
-   * [Ad Selection Buyer Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
-   * [Ad Selection Bidding Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
-   * [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
+  * [Ad Selection Buyer Front End Service](https://mcr.microsoft.com/product/ad-selection/azure/buyer-frontend-service)
+  * [Ad Selection Bidding Service](https://mcr.microsoft.com/product/ad-selection/azure/bidding-service)
+  * [Ad Selection K-Anonymity Service](https://mcr.microsoft.com/product/ad-selection/azure/k-anonymity-service)
 * Sellers and buyers
-   * [Ad Selection Key Value Service](https://mcr.microsoft.com/product/ad-selection/azure/key-value-service/)
+  * [Ad Selection Key Value Service](https://mcr.microsoft.com/product/ad-selection/azure/key-value-service/)
 
 Deployment scripts:
+
 * [Terraform deployment scripts](https://go.microsoft.com/fwlink/?linkid=2290115)
 
-Origin trials:
-* [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/)
-
 Trusted execution environment (TEE):
+
 * [Confidential Computing: Hardware-Based Trusted Execution for Applications and Data](https://confidentialcomputing.io/wp-content/uploads/sites/85/2021/03/confidentialcomputing_outreach_whitepaper-8-5x11-1.pdf)
 
 Azure:
+
 * [Microsoft Azure](https://azure.microsoft.com)
 * [Confidential containers on Azure Container Instances](/azure/container-instances/container-instances-confidential-overview)
