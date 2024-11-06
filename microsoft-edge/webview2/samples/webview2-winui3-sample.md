@@ -311,10 +311,11 @@ namespace WebView2_WinUI3_Sample
         public App()
         {
             this.InitializeComponent();
-            // If you're shipping a fixed-version WebView2 Runtime with your app,
-            // un-comment the following code and change the version number to the
-            // version number of the WebView2 Runtime that you're packaging and
-            // shipping to users:
+
+            // If you're shipping a fixed-version WebView2 Runtime with your app, un-comment the
+            // following code and change the version number to the version number of the WebView2
+            // Runtime that you're packaging and shipping to users:
+
             // StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
             // String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\130.0.2849.39");
             // Debug.WriteLine($"Launch path [{localFolder.Path}]");
@@ -633,16 +634,17 @@ To use a fixed-version Runtime:
    public App()
    {
       this.InitializeComponent();
-      // If you're shipping a fixed-version WebView2 Runtime with your app,
-      // un-comment the following code and change the version number to the
-      // version number of the WebView2 Runtime that you're packaging and
-      // shipping to users:
+
+      // If you're shipping a fixed-version WebView2 Runtime with your app, un-comment the
+      // following code and change the version number to the version number of the WebView2
+      // Runtime that you're packaging and shipping to users:
+    
       // StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
       // String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\130.0.2849.39");
       // Debug.WriteLine($"Launch path [{localFolder.Path}]");
       // Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
       // Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
-       }
+   }
    ```
 
 1. In the above code, change the version number from `130.0.2849.39` to the version that you're shipping.
