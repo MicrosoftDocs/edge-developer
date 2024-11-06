@@ -16,9 +16,9 @@ ms.date: 11/05/2024
 
 This sample demonstrates using a WebView2 control in a WinUI 3 (Windows App SDK) Packaged application.
 
-This sample also shows how to update an application to ship with a fixed WebView2 version, instead of using the version of WebView2 Runtime that's installed and running on the Windows computer.
-
 ![Sample app](./webview2-winui3-sample-images/sample-app.png)
+
+This sample also allows you to ship the app with a fixed-version WebView2 Runtime, instead of using whichever version of the WebView2 Runtime is installed and running on the user's computer.
 
 
 <!-- ------------------------------ -->
@@ -313,8 +313,8 @@ namespace WebView2_WinUI3_Sample
             this.InitializeComponent();
 
             // If you're shipping a fixed-version WebView2 Runtime with your app, un-comment the
-            // following code and change the version number to the version number of the WebView2
-            // Runtime that you're packaging and shipping to users:
+            // following lines of code, and change the version number to the version number of the
+            // WebView2 Runtime that you're packaging and shipping to users:
 
             // StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
             // String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\130.0.2849.39");
@@ -636,9 +636,9 @@ To use a fixed-version Runtime:
       this.InitializeComponent();
 
       // If you're shipping a fixed-version WebView2 Runtime with your app, un-comment the
-      // following code and change the version number to the version number of the WebView2
-      // Runtime that you're packaging and shipping to users:
-    
+      // following lines of code, and change the version number to the version number of the
+      // WebView2 Runtime that you're packaging and shipping to users:
+
       // StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
       // String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\130.0.2849.39");
       // Debug.WriteLine($"Launch path [{localFolder.Path}]");
