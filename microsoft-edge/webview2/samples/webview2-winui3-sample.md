@@ -341,16 +341,12 @@ namespace WebView2_WinUI3_Sample
 <!-- ------------------------------ -->
 #### MainWindow.xaml
 
+The main window has the following XAML elements as controls:
 
-<!-- ---------- -->
-###### XML elements
-
-| Element | Control |
-|---|---|
-| `<TextBox>` | Address bar |
-| `<Button>` | **Go** button |
-| `<WebView2>` | WebView2 control |
-| `<TextBlock>` | Status bar |
+* `<TextBox>` - The Address bar.
+* `<Button>` - The **Go** button.
+* `<WebView2>` - The WebView2 control.
+* `<TextBlock>` - The status bar.
 
 
 <!-- ---------- -->
