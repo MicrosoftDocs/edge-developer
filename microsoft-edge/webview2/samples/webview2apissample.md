@@ -56,7 +56,7 @@ To use Visual Studio 2017, you might also need to install a recent Windows SDK o
 <!-- ====================================================================== -->
 ## Step 2 - Clone the WebView2Samples repo
 
-1. If not done already, clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 1. If you previously cloned the repo, pull the latest commits to your local copy of the repo.
 
