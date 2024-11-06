@@ -242,11 +242,6 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/webview2/get-started/wpf",
         "redirect_document_id": false
       },
-      {
-        "source_path": "microsoft-edge/webview2/samples/webview2-winui3-sample.md",
-        "redirect_url": "/microsoft-edge/webview2/code-samples-links",
-        "redirect_document_id": false
-      },
 
       /* WebView2 How-to: */
       {
