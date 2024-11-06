@@ -17,7 +17,7 @@ This WebView2 sample demonstrates how to use the WebView2 CDP extension to use t
 
 *  Sample name: **WV2CDPExtensionWPFSample**
 *  Repo directory: [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample)
-*  Solution file: **WV2CDPExtensionWPFSample.sln**
+*  Solution file: `WV2CDPExtensionWPFSample.sln`
 
 This sample, **WV2CDPExtensionWPFSample**, is built with the WebView2 CDP Extension (the **Microsoft.Web.WebView2.DevToolsProtocolExtension** NuGet package).  This sample calls Chrome DevTools Protocol methods on a `DevToolsProtocolHelper` object in WebView2.
 

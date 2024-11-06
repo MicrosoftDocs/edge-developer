@@ -14,9 +14,10 @@ This WebView2 sample demonstrates how to use the WebView2 control and WebView2 A
 
 *  Sample name: **webview2_sample_uwp**
 *  Repo directory: [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
-*  Solution file: **webview2_sample_uwp.sln**
+*  Solution file: `webview2_sample_uwp.sln`
 
 
+<!-- ------------------------------ -->
 #### Installed NuGet packages
 
 This sample includes the following NuGet packages:

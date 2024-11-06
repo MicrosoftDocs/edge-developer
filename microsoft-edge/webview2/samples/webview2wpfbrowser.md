@@ -16,7 +16,7 @@ This sample, **WebView2WpfBrowser**, is a WPF .NET app that demonstrates how to 
 
 *  Sample name: **WebView2WpfBrowser**
 *  Repo directory: [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)
-*  Solution file: **WebView2WpfBrowser.sln**
+*  Solution file: `WebView2WpfBrowser.sln`
 
 This sample is built as a WPF Visual Studio 2019 project.  It uses C# and HTML/CSS/JavaScript in the WebView2 environment.
 

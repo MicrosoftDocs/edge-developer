@@ -15,7 +15,7 @@ This sample, **WV2DeploymentWiXBurnBundleSample**, demonstrates how to use a WiX
 
 *  Sample name: **WV2DeploymentWiXBurnBundleSample**
 *  Repo directory: [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample)
-*  Project file: **WV2DeploymentWiXBurnBundleSample.wixproj**
+*  Project file: `WV2DeploymentWiXBurnBundleSample.wixproj`
 
 This sample creates a [WiX](https://wixtoolset.org/) installer for the [Win32 sample app](webview2apissample.md).  This sample uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.
 
@@ -125,9 +125,7 @@ If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 <!-- ====================================================================== -->
 ## Step 4 - Clone or download the WebView2Samples repo
 
-1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
-
-Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->

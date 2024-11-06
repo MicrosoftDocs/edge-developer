@@ -16,7 +16,7 @@ This sample, **WebView2WindowsFormsBrowser**, demonstrates how to use the WebVie
 
 *  Sample name: **WebView2WindowsFormsBrowser**
 *  Repo directory: [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser)
-*  Solution file: **WebView2WindowsFormsBrowser.sln**
+*  Solution file: `WebView2WindowsFormsBrowser.sln`
 
 ![WebView2WindowsFormsBrowser app window](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-app-window.png)
 

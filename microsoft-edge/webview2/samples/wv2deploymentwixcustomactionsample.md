@@ -14,7 +14,7 @@ This sample, **WV2DeploymentWiXCustomActionSample**, demonstrates how to use a W
 
 *  Sample name: **WV2DeploymentWiXCustomActionSample**
 *  Repo directory: [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample)
-*  Project file: **WV2DeploymentWiXCustomActionSample.wixproj**
+*  Project file: `WV2DeploymentWiXCustomActionSample.wixproj`
 
 <!-- todo: screenshot representing the success state -->
 

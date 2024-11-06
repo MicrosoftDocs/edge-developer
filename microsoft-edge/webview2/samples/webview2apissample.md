@@ -14,7 +14,7 @@ The **WebView2APISample** app demonstrates how to use the WebView2 control and W
 
 *  Sample name: **WebView2APISample**
 *  Repo directory: [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)
-*  Solution file: **WebView2Samples.sln** (located in the parent directory, `\SampleApps\`)
+*  Solution file: `WebView2Samples.sln` (located in the parent directory, `\SampleApps\`)
 *  Project name in Solution Explorer: **WebView2APISample**
 
 **WebView2APISample** embeds a WebView2 control within a Win32 native application.
