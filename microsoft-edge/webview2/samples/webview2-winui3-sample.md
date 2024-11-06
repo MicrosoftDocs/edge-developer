@@ -378,24 +378,19 @@ namespace WebView2_WinUI3_Sample
 <!-- ------------------------------ -->
 #### MainWindow.cs
 
-The `MainWindow` class has the following methods.
+The [MainWindow class](#mainwindow-class) has the following methods:
+* [Constructor](#constructor)
+* [StatusUpdate](#statusupdate)
+* [WebView2_CoreWebView2Initialized](#webview2_corewebview2initialized)
+* [WebView2_NavigationCompleted](#webview2_navigationcompleted)
+* [TryCreateUri](#trycreateuri)
+* [TryNavigate](#trynavigate)
+* [Go_OnClick](#go_onclick)
+* [AddressBar_KeyDown](#addressbar_keydown)
+* [SetTitle](#settitle)
+* [GetWebView2Version](#getwebview2version)
 
-
-<!-- ---------- -->
-###### Overview of methods
-
-* `WebView2_WinUI3_Sample` namespace
-   * `MainWindow` class
-      * `MainWindow()` - constructor.
-      * `StatusUpdate(message)`
-      * `WebView2_CoreWebView2Initialized(InitializedEventArgs)`
-      * `WebView2_NavigationCompleted(NavigationCompletedEventArgs)`
-      * `TryCreateUri(potentialUri, out uri)`
-      * `TryNavigate()`
-      * `Go_OnClick(sender, RoutedEventArgs)`
-      * `AddressBar_KeyDown(sender, KeyRoutedEventArgs)`
-      * `SetTitle()`
-      * `GetWebView2Version()`
+Excerpts or condensed versions of these methods are below.
 
 
 <!-- ---------- -->
