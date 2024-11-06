@@ -54,7 +54,7 @@ To install the latest Visual Studio 2022:
 
    Visual Studio Installer opens.
 
-1. Follow the prompts, and accept the defaults.  You'll install or update a workload and a component of a workload in the next step.
+1. Follow the prompts, and accept the defaults.
 
 
 <!-- ====================================================================== -->
