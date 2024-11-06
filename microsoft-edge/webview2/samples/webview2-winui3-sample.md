@@ -194,7 +194,7 @@ To install the **Windows 10 SDK** component of the **Windows application develop
 
 
 <!-- ====================================================================== -->
-## Step 6: Build the solution
+## Step 6: Build and run the app
 
 1. Open the solution in Visual Studio 2022.  For example, in **Visual Studio Installer**, in the **Visual Studio 2022** section, click the **Launch** button.
 
