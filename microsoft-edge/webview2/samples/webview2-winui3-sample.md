@@ -86,8 +86,13 @@ To open the sample's solution file in a working branch:
 
 1. On your local drive, open the `.sln` file in Visual Studio.  Example directories:
 
+   If you cloned the repo, the repo directory name is `/WebView2Samples/`:
+
    `<your-repos-directory>/WebView2Samples/SampleApps/WebView2_WinUI3_Sample/WebView2_WinUI3_Sample.sln`
-   `<your-repos-directory>/WebView2Samples-main/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
+
+   If you downloaded the repo, the repo directory name is `/WebView2Samples-main/`, representing the "main" branch:
+
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2_WinUI3_Sample/WebView2_WinUI3_Sample.sln`
 
 
 <!-- ====================================================================== -->
