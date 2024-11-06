@@ -104,7 +104,7 @@ To open the sample's solution file in a working branch:
    * **Microsoft.WindowsAppSDK**
    * **Microsoft.Web.WebView2**
 
-1. Select the **Updates [2]** tab.
+1. Select the **Updates** tab.
 
 1. In the upper left, select the **Select all packages** checkbox.
 
@@ -118,7 +118,7 @@ To open the sample's solution file in a working branch:
 
 1. Click the **I Accept** button.
 
-   The two NuGet packages are updated, and the number next to the **Updates** tab is removed.
+   The NuGet packages are updated, and the number next to the **Updates** tab is removed.
 
 1. Click the **View** menu, and then click the **Output** menuitem.
 
@@ -140,7 +140,7 @@ To open the sample's solution file in a working branch:
 
 1. In Solution Explorer, right-click the **WebView2_WinUI3_Sample (Package)** project, and then select **Manage NuGet Packages**.
 
-1. Select the **Updates [2]** tab.
+1. Select the **Updates** tab.
 
 1. In the upper left, select the **Select all packages** checkbox.
 
@@ -154,7 +154,7 @@ To open the sample's solution file in a working branch:
 
 1. Click the **I Accept** button.
 
-   The two NuGet packages are updated, and the number next to the **Updates** tab is removed.
+   The NuGet packages are updated, and the number next to the **Updates** tab is removed.
 
 1. Click the **View** menu, and then click the **Output** menuitem.
 
@@ -192,7 +192,7 @@ To open the sample's solution file in a working branch:
 <!-- ====================================================================== -->
 ## Step 6: Build the solution
 
-1. Open the solution in Visual Studio 2022.  For example: in **Visual Studio Installer**, in the **Visual Studio 2022** section, click the **Launch** button.
+1. Open the solution in Visual Studio 2022.  For example, in **Visual Studio Installer**, in the **Visual Studio 2022** section, click the **Launch** button.
 
    The Visual Studio launcher opens, with sections **Open recent** and **Get started**.
 
@@ -202,7 +202,7 @@ To open the sample's solution file in a working branch:
 
 1. Press **F5**.
 
-   In Solution Explorer, the **(Package)** project is bold, indicating that it's the default project.  The app builds and then the **WebView2_WinUI3_Sample (Package)** app window opens:
+   In Solution Explorer, the **(Package)** project is bold, indicating that it's the default project.  The app builds, and then the **WebView2_WinUI3_Sample (Package)** app window opens:
 
    ![Sample app](./webview2-winui3-sample-images/sample-app.png)
 
@@ -239,7 +239,7 @@ To commit and push changes that were made to the sample in your working branch:
 
 1. In Microsoft Edge, go to your fork of the repo, such as `https://github.com/myGithubUsername/WebView2Samples/`.
 
-1. Click the **[#] Branches** link, and then select your new working branch, such as `https://github.com/myGithubUsername/WebView2Samples/tree/user/myGithubUsername/winui3-sample`.
+1. Click the **[#] Branches** link, and then select your new working branch, such as `user/myGithubUsername/winui3-sample`.
 
 
 <!-- ====================================================================== -->
@@ -247,9 +247,13 @@ To commit and push changes that were made to the sample in your working branch:
 
 1. Close the **WebView2_WinUI3_Sample (Package)** app.
 
-1. In Solution Explorer, in the **WebView2_WinUI3_Sample** project, double-click each `.xaml` file and its `.cs` file.
+1. In Solution Explorer, in the **WebView2_WinUI3_Sample** project, double-click each `.xaml` file and its `.cs` file:
+   * `App.xaml` - No WebView2 code.
+      * `App.cs` - Code to use a fixed-version WebView2 Runtime.
+   * `MainWindow.xaml` - WebView2 elements.
+      * `MainWindow.cs` - WebView2 code.
 
-Abbreviated versions of the files are below.
+Condensed versions of these files are below.
 
 
 <!-- ------------------------------ -->
@@ -257,7 +261,9 @@ Abbreviated versions of the files are below.
 
 There's no WebView2-specific code in this file.
 
-Abbreviated listing:
+
+<!-- ---------- -->
+###### Condensed listing
 
 ```xaml
 <Application
@@ -283,7 +289,9 @@ Abbreviated listing:
 
 There's no WebView2-specific code in this file.  This file contains a comment about fixed-version; see [Using a fixed-version WebView2 Runtime](#using-a-fixed-version-webview2-runtime), below.
 
-Abbreviated listing:
+
+<!-- ---------- -->
+###### Condensed listing
 
 ```csharp
 namespace WebView2_WinUI3_Sample
@@ -329,7 +337,9 @@ namespace WebView2_WinUI3_Sample
 <!-- ------------------------------ -->
 #### MainWindow.xaml
 
-The file includes XML elements:
+
+<!-- ---------- -->
+###### XML elements
 
 | Element | Control |
 |---|---|
@@ -338,7 +348,9 @@ The file includes XML elements:
 | `<WebView2>` | WebView2 control |
 | `<TextBlock>` | Status bar |
 
-Abbreviated listing:
+
+<!-- ---------- -->
+###### Condensed listing
 
 ```xaml
 <Window
@@ -362,6 +374,10 @@ Abbreviated listing:
 <!-- ------------------------------ -->
 #### MainWindow.cs
 
+
+<!-- ---------- -->
+###### Methods
+
 * `WebView2_WinUI3_Sample` namespace
    * `MainWindow` class
       * `StatusUpdate(message)`
@@ -374,7 +390,10 @@ Abbreviated listing:
       * `SetTitle()`
       * `GetWebView2Version()`
 
-Abbreviated listing:
+
+<!-- ---------- -->
+###### Condensed listing
+<!-- todo: trim listing -->
 
 ```csharp
 using Microsoft.Web.WebView2.Core;
@@ -558,16 +577,16 @@ To use a fixed-version Runtime:
    public App()
    {
       this.InitializeComponent();
-
-      // If your shipping a fixed version WebView2 SDK with your application you will need
-      // to use the following code (update the runtime version to what your shipping.
-
-      //StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-      //String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\95.0.1020.53");
-      //Debug.WriteLine($"Launch path [{localFolder.Path}]");
-      //Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
-      //Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
-   }
+      // If you're shipping a fixed-version WebView2 Runtime with your app,
+      // un-comment the following code and change the version number to the
+      // version number of the WebView2 Runtime that you're packaging and
+      // shipping to users:
+      // StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+      // String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\95.0.1020.53");
+      // Debug.WriteLine($"Launch path [{localFolder.Path}]");
+      // Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
+      // Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
+       }
    ```
 
 1. In the above code, change the version number from `95.0.1020.53` to the version that you're shipping.
