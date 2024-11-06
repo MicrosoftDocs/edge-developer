@@ -58,13 +58,13 @@ To install the latest Visual Studio 2022:
 
 
 <!-- ====================================================================== -->
-## Step 2 - Clone or download the WebView2Samples repo
+## Step 2: Clone or download the WebView2Samples repo
 
 1. If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Open the solution in Visual Studio
+## Step 3: Open the solution in Visual Studio
 
 These initial steps about the repo and branch aren't required, but they're a good practice, to avoid changing the code that's in the "main" branch of your cloned copy of the WebView2Samples repo.  This enables you to alter the files of the project (in order to build and run the sample), while keeping the code that's in the "main" branch identical to the repo.
 
@@ -91,7 +91,7 @@ To open the sample's solution file in a working branch:
 
 
 <!-- ====================================================================== -->
-## Step 4 - Update the NuGet packages
+## Step 4: Update the NuGet packages
 
 1. In Solution Explorer, right-click the **WebView2_WinUI3_Sample** project, and then select **Manage NuGet Packages**.
 
@@ -163,7 +163,7 @@ To open the sample's solution file in a working branch:
 
 
 <!-- ====================================================================== -->
-## Step 5 - Install the "Windows 10 SDK" component of the "Windows app development" workload
+## Step 5: Install the "Windows 10 SDK" component of the "Windows app development" workload
 
 1. In Visual Studio, click the **Tools** menu, and then click the **Get Tools and Features** menuitem.
 
@@ -189,7 +189,7 @@ To open the sample's solution file in a working branch:
 
 
 <!-- ====================================================================== -->
-## Step 6 - Build the solution
+## Step 6: Build the solution
 
 1. Open the solution in Visual Studio 2022.  For example: in **Visual Studio Installer**, in the **Visual Studio 2022** section, click the **Launch** button.
 
@@ -222,7 +222,7 @@ To open the sample's solution file in a working branch:
 
 
 <!-- ====================================================================== -->
-## Step 8 - Commit changes in your working branch
+## Step 7: Commit changes in your working branch
 
 In a git tool such as GitHub Desktop, at this point, you can commit changes, and optionally push them to a fork of your branch at GitHub.  These types of operations are relevant when you modify, experiment with, and customize the sample.  This also keeps your working branch clean and keep your clone of the repo organized, so that you can switch to a different sample.
 
@@ -242,7 +242,7 @@ To commit and push changes that were made to the sample in your working branch:
 
 
 <!-- ====================================================================== -->
-## Step 7 - Inspect the code
+## Step 8: Inspect the code
 
 1. Close the **WebView2_WinUI3_Sample (Package)** app.
 
