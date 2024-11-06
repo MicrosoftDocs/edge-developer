@@ -38,7 +38,7 @@ Before building, we'll do the following:
 | WebView2_WinUI3_Sample | Project code |
 | WebView2_WinUI3_Sample (Package) | Packaging and distribution project |
 | WebView2_WinUI3_Sample (Package)\FixedRuntime | (Optional) Fixed WebView2 runtime |
-| WebView2_WinUI3_Sample (Package)\FixedRuntime\95.0.1020.53 | (Optional) Fixed WebView2 runtime sample |
+| WebView2_WinUI3_Sample (Package)\FixedRuntime\130.0.2849.39 | (Optional) Fixed WebView2 runtime sample |
 
 
 <!-- ====================================================================== -->
@@ -316,7 +316,7 @@ namespace WebView2_WinUI3_Sample
             // version number of the WebView2 Runtime that you're packaging and
             // shipping to users:
             // StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-            // String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\95.0.1020.53");
+            // String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\130.0.2849.39");
             // Debug.WriteLine($"Launch path [{localFolder.Path}]");
             // Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
             // Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
@@ -608,7 +608,7 @@ private string GetWebView2Version(WebView2 webView2)
 
 If you want to ship a fixed version of the WebView2 runtime with your application you will need to include it in your project.  See [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).
 
-The following steps show Runtime version number `95.0.1020.53`; you'll change this number to whatever version you are packaging and shipping.
+The following steps show Runtime version number `130.0.2849.39`; you'll change this number to whatever version you are packaging and shipping.
 
 
 To use a fixed-version Runtime:
@@ -616,15 +616,15 @@ To use a fixed-version Runtime:
 1. Include the fixed WebView2 runtime in the package project:
 
    ```
-   \WebView2_WinUI3_Sample\WebView2_WinUI3_Sample (Package)\FixedRuntime\95.0.1020.53\
+   \WebView2_WinUI3_Sample\WebView2_WinUI3_Sample (Package)\FixedRuntime\130.0.2849.39\
    ```
 
-   Above, use the version that you're shipping, instead of `95.0.1020.53`.
+   Above, use the version that you're shipping, instead of `130.0.2849.39`.
 
-1. Update the package project `wapproj` file for the version you're using (use your version instead of `95.0.1020.53`):
+1. Update the package project `wapproj` file for the version you're using (use your version instead of `130.0.2849.39`):
 
    ```
-   < Content Include="FixedRuntime\95.0.1020.53\\**\*.*" >
+   < Content Include="FixedRuntime\130.0.2849.39\\**\*.*" >
    ```
 
 1. In `App.xaml.cs`, uncomment the five commented-out lines of code below the comment, to enable the Runtime override:
@@ -638,14 +638,14 @@ To use a fixed-version Runtime:
       // version number of the WebView2 Runtime that you're packaging and
       // shipping to users:
       // StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-      // String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\95.0.1020.53");
+      // String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\130.0.2849.39");
       // Debug.WriteLine($"Launch path [{localFolder.Path}]");
       // Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
       // Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
        }
    ```
 
-1. In the above code, change the version number from `95.0.1020.53` to the version that you're shipping.
+1. In the above code, change the version number from `130.0.2849.39` to the version that you're shipping.
 
 
 <!-- ====================================================================== -->
