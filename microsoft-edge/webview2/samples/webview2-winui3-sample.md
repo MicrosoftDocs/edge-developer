@@ -291,7 +291,7 @@ There's no WebView2-specific code in this file.
 
 <!-- todo: create PR in Samples repo to improve comment block like below -->
 
-The only WebView2-specific code in this file is commented out.  You can un-comment these lines in order to use a fixed-version Runtime; see [Using a fixed-version WebView2 Runtime](#using-a-fixed-version-webview2-runtime), below.
+The WebView2-specific code in this file is commented out.  You can un-comment these lines in order to use a fixed-version Runtime; see [Using a fixed-version WebView2 Runtime](#using-a-fixed-version-webview2-runtime), below.
 
 
 <!-- ---------- -->
