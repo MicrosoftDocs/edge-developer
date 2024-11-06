@@ -99,9 +99,10 @@ To open the sample's solution file in a working branch:
 
    ![NuGet Package Manager showing the installed, updated packages](./webview2-winui3-sample-images/nuget-package-manager.png)
 
-   The **Installed** tab is selected, listing two packages:
+   The **Installed** tab is selected, listing the NuGet packages:
    * **Microsoft.Windows.SDK.BuildTools**
    * **Microsoft.WindowsAppSDK**
+   * **Microsoft.Web.WebView2**
 
 1. Select the **Updates [2]** tab.
 
