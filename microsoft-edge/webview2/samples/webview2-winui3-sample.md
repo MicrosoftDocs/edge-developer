@@ -166,7 +166,7 @@ To open the sample's solution file in a working branch:
 <!-- ====================================================================== -->
 ## Step 5: Install the Windows 10 SDK or other workload components
 
-Depending what what you have installed, you might need to install a Visual Studio workload, or component of a workload, such as the following, to build the sample.
+Depending on what you have installed, you might need to install a Visual Studio workload, or component of a workload, such as the following, to build the sample.
 
 To install the **Windows 10 SDK** component of the **Windows application development** workload:
 
