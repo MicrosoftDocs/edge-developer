@@ -1281,10 +1281,9 @@
               href: webview2/samples/webview2_sample_uwp.md
               displayName: webview2_sample_uwp  # repo dir name
 
-# pending, July 26 2022
-#            - name: WinUI 3 sample app
-#              href: webview2/samples/webview2-winui3-sample.md
-#              displayName: WebView2_WinUI3_Sample  # repo dir name
+            - name: WinUI 3 (Windows App SDK) sample app
+              href: webview2/samples/webview2-winui3-sample.md
+              displayName: WebView2_WinUI3_Sample  # repo dir name
 
             - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
