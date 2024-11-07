@@ -1256,7 +1256,7 @@
 
 # -----------------------------------------------------------------------------
 # Platforms: Intro, Samples, GetStarts
-        - name: Platforms, samples, and tutorials
+        - name: Platforms
           items:
             - name: Win32
               items:
