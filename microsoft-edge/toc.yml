@@ -13,22 +13,17 @@
           displayName: DevTools
 
 # =============================================================================
-# DevTools Overview articles:
-
+# DevTools
 # Overview of DevTools --------------------------------------------------------
         - name: Overview of DevTools
           href: devtools-guide-chromium/overview.md
           displayName: DevTools
-
 # What's New ------------------------------------------------------------------
         - name: What's New
           items:
-
-# What's New firstchild article
             - name: What's New in Microsoft Edge DevTools
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: release notes, announcements
-
 # What's New pages ------------------------------------------------------------
             # move eleventh oldest into Archive bucket
             - name: Microsoft Edge 130
@@ -723,8 +718,7 @@
                 - name: Welcome tool
                   href: devtools-guide-chromium/welcome/welcome-tool.md
                   displayName: Welcome tool
-# /Tools bucket
-# LOWER NON-TOOL NODES ========================================================
+# /Tools
 # Command Menu ----------------------------------------------------------------
         - name: Command Menu and keyboard shortcuts
           items:
@@ -736,7 +730,6 @@
               href: devtools-guide-chromium/shortcuts/index.md
               displayName: Keyboard shortcuts
 # Settings pages and Customize menu -------------------------------------------
-# Experimental features could go here
         - name: Settings and customization UI
           items:
             - name: Customize DevTools  # orig: "Customization"
@@ -751,11 +744,11 @@
               href: devtools-guide-chromium/customize/placement.md
               displayName: settings
 
-            - name: Change DevTools language settings  # added article
+            - name: Change DevTools language settings
               href: devtools-guide-chromium/customize/localization.md
               displayName: Settings, Preferences
 
-            - name: Customize keyboard shortcuts  # added article
+            - name: Customize keyboard shortcuts
               href: devtools-guide-chromium/customize/shortcuts.md
               displayName: Settings, Shortcuts
 
@@ -986,6 +979,7 @@
 # /DevTools
 
 # =============================================================================
+# Extensions
     - name: Microsoft Edge extensions
       items:
         - name: Microsoft Edge extensions documentation
@@ -1157,10 +1151,10 @@
         - name: Contact the Microsoft Edge extensions team
           href: extensions-chromium/publish/contact-extensions-team.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues
-
 # /Extensions
 
 # =============================================================================
+# PWA
     - name: Progressive Web Apps
       items:
         - name: Overview of Progressive Web Apps (PWAs)
@@ -1242,8 +1236,10 @@
 
         - name: Progressive Web App demos
           href: progressive-web-apps-chromium/demo-pwas.md
+# /PWA
 
 # =============================================================================
+# WebView2
     - name: WebView2
       items:
         - name: Introduction to Microsoft Edge WebView2
@@ -1259,11 +1255,11 @@
           href: webview2/how-to/machine-setup.md
 
 # -----------------------------------------------------------------------------
-# Sample apps
-        - name: Sample apps
+# Platforms: Intro, Samples, GetStarts
+        - name: Win32
           items:
-            - name: WebView2 sample apps
-              href: webview2/code-samples-links.md
+#           - name: WebView2 in Win32 apps
+#             href: webview2/platforms/win32.md
 
             - name: Win32 sample app
               href: webview2/samples/webview2apissample.md
@@ -1277,13 +1273,40 @@
               href: webview2/samples/webview2browser.md
               displayName: WebView2Browser  # repo dir name
 
+            - name: Get started with WebView2 in Win32 apps
+              href: webview2/get-started/win32.md
+              displayName: Win32_GettingStarted  # repo dir name
+
+        - name: WinUI 2 (UWP)
+          items:
+#           - name: WebView2 in WinUI 2 (UWP) apps
+#             href: webview2/platforms/winui2-uwp.md
+
             - name: WinUI 2 (UWP) sample app
               href: webview2/samples/webview2_sample_uwp.md
               displayName: webview2_sample_uwp  # repo dir name
 
+            - name: Get started with WebView2 in WinUI 2 (UWP) apps
+              href: webview2/get-started/winui2.md
+              displayName: WinUI2_GettingStarted  # repo dir name
+
+        - name: WinUI 3 (Windows App SDK)
+          items:
+#           - name: WebView2 in WinUI 3 (Windows App SDK) apps
+#             href: webview2/platforms/winui3-windows-app-sdk.md
+
             - name: WinUI 3 (Windows App SDK) sample app
               href: webview2/samples/webview2-winui3-sample.md
               displayName: WebView2_WinUI3_Sample  # repo dir name
+
+            - name: Get started with WebView2 in WinUI 3 (Windows App SDK) apps
+              href: webview2/get-started/winui.md
+              displayName: WinUI3_GettingStarted  # repo dir name
+
+        - name: WebView2 in WPF apps
+          items:
+#           - name: WebView2 apps on Win32
+#             href: webview2/platforms/wpf.md
 
             - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
@@ -1293,57 +1316,51 @@
               href: webview2/samples/wv2cdpextensionwpfsample.md
               displayName: WV2CDPExtensionWPFSample  # repo dir name
 
+            - name: Get started with WebView2 in WPF apps
+              href: webview2/get-started/wpf.md
+              displayName: WPF_GettingStarted  # repo dir name
+
+        - name: WinForms
+          items:
+#           - name: WebView2 in WinForms apps
+#             href: webview2/platforms/winforms.md
+
             - name: WinForms sample app
               href: webview2/samples/webview2windowsformsbrowser.md
               displayName: WebView2WindowsFormsBrowser  # repo dir name
 
-# -----------------------------------------------------------------------------
-# Getting Started tutorials
-        - name: Getting Started tutorials
-          items:
-            - name: Getting Started tutorials
-              href: webview2/get-started/get-started.md
-              displayName: GettingStartedGuides  # repo dir name
-
-            - name: WinUI 2 (UWP)
-              href: webview2/get-started/winui2.md
-              displayName: WinUI2_GettingStarted, Get started with WebView2 in WinUI 2 (UWP) apps  # repo dir name  # top-of-page title
-
-            - name: WinUI 3 (Windows App SDK)
-              href: webview2/get-started/winui.md
-              displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
-
-            - name: WPF
-              href: webview2/get-started/wpf.md
-              displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
-
-            - name: WinForms
+            - name: Get started with WebView2 in WinForms apps
               href: webview2/get-started/winforms.md
-              displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
+              displayName: WinForms_GettingStarted  # repo dir name
 
-            - name: Win32
-              href: webview2/get-started/win32.md
-              displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
+        - name: HoloLens 2 Unity
+          items:
+#           - name: WebView2 in HoloLens 2 Unity apps
+#             href: webview2/platforms/hololens-2-unity.md
 
-            - name: HoloLens 2
+            - name: Get started with WebView2 in HoloLens 2 Unity apps (Preview)
               href: webview2/get-started/hololens2.md
-              displayName: HoloLens2_GettingStarted, Get started with WebView2 in HoloLens 2 Unity apps (Preview)  # repo dir name  # top-of-page title
+              displayName: HoloLens2_GettingStarted  # repo dir name
+
+        - name: WebView2 sample apps
+          href: webview2/code-samples-links.md  # delete & redir?
+
+        - name: Getting Started tutorials
+          href: webview2/get-started/get-started.md  # delete & redir?
+          displayName: GettingStartedGuides  # repo dir name
 
 # -----------------------------------------------------------------------------
         - name: "Main classes for WebView2: Environment, Controller, and Core"
           href: webview2/concepts/environment-controller-core.md
 
-        - name: Navigation events
+        - name: Navigation events for WebView2 apps
           href: webview2/concepts/navigation-events.md
-          displayName: Navigation events for WebView2 apps  # top-of-page title
 
-        - name: Handle process-related events
+        - name: Handling process-related events in WebView2
           href: webview2/concepts/process-related-events.md
-          displayName: Handle process-related events in WebView2  # top-of-page title
 
-        - name: Basic authentication
+        - name: Basic authentication for WebView2 apps
           href: webview2/concepts/basic-authentication.md
-          displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
 
         - name: Windowed vs. visual hosting of WebView2
           href: webview2/concepts/windowed-vs-visual-hosting.md
@@ -1351,6 +1368,9 @@
 # -----------------------------------------------------------------------------
         - name: Customization and UI
           items:
+            - name: Customize the UI of WebView2 apps
+              href: webview2/how-to/customize-ui.md
+
             - name: WebView2 browser flags  # todo: move entry
               href: webview2/concepts/webview-features-flags.md
 
@@ -1358,9 +1378,9 @@
               href: webview2/how-to/webresourcerequested.md
               displayName: WebResourceRequested, WebResourceResponseReceived
 
-            - name: Using frames
+            - name: Using frames in WebView2 apps
               href: webview2/concepts/frames.md
-              displayName: Using frames in WebView2 apps, iframe # full title
+              displayName: iframe
 
             - name: Printing from WebView2 apps
               href: webview2/how-to/print.md
@@ -1368,22 +1388,16 @@
             - name: Use local content in WebView2 apps
               href: webview2/concepts/working-with-local-content.md
 
-            # - name: Customize the UI   # not needed?  flatten
-            #   items:
-            #     - name: Customize the UI of WebView2 apps
-            #       href: webview2/how-to/customize-ui.md
-            #       displayName: context menu, right-click menu
-
-            - name: Customize context menus
+            - name: Customize context menus in WebView2
               href: webview2/how-to/context-menus.md
-              displayName: right-click menu, Customize context menus in WebView2  # top-of-page title
+              displayName: right-click menu
 
 # -----------------------------------------------------------------------------
         - name: Web and native interop
           items:
             - name: Interop of native and web code
               href: webview2/how-to/communicate-btwn-web-native.md
-              displayName: JavaScript interop, Embed web content into native applications (JavaScript interop), Interop of native-side and web-side code  # old titles
+              displayName: JavaScript interop, Embed web content into native applications (JavaScript interop)  # old title
 
             - name: Call web-side code from native-side code
               href: webview2/how-to/javascript.md
@@ -1403,9 +1417,8 @@
 # -----------------------------------------------------------------------------
         - name: Distribution and SDK versions
           items:
-            - name: Deployment and distribution  # new firstchild page
+            - name: Deployment and distribution
               href: webview2/concepts/deployment-distribution.md
-              displayName: Manage WebView2 applications  # old title
 
             - name: Deployment samples
               items:
@@ -1449,23 +1462,21 @@
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
 
-            - name: Development best practices
+            - name: Development best practices for WebView2 apps
               href: webview2/concepts/developer-guide.md
-              displayName: Development best practices for WebView2 apps  # top-of-page title
 
             - name: Develop secure WebView2 apps
               href: webview2/concepts/security.md
 
-            - name: Use the Chrome DevTools Protocol (CDP)
+            - name: Use the Chrome DevTools Protocol (CDP) in WebView2 apps
               href: webview2/how-to/chromium-devtools-protocol.md
-              displayName: Use the Chrome DevTools Protocol (CDP) in WebView2 apps, chrome developer protocol  # top-of-page title & catch a mis-type
+              displayName: chrome developer protocol  # catch mis-expansion
 
             - name: Use Playwright to automate and test in WebView2
               href: webview2/how-to/playwright.md
 
-            - name: Automate and test with Microsoft Edge WebDriver
+            - name: Automate and test WebView2 apps with Microsoft Edge WebDriver
               href: webview2/how-to/webdriver.md
-              displayName: Automate and test WebView2 apps with Microsoft Edge WebDriver  # top-of-page title
 
             - name: Prerelease testing using preview channels
               href: webview2/how-to/prerelease-testing.md
@@ -1497,17 +1508,17 @@
                   href: webview2/how-to/remote-debugging.md
                   displayName: remotely debug
 
-                - name: Desktop
+                - name: Remote debugging desktop WebView2 WinUI 2 (UWP) apps
                   href: webview2/how-to/remote-debugging-desktop.md
-                  displayName: Remote debugging desktop WebView2 WinUI 2 (UWP) apps, remotely debug, Remote Tools for Microsoft Edge  # top-of-page title + 2 add'l
+                  displayName: remotely debug, Remote Tools for Microsoft Edge
 
-                - name: HoloLens 2
+                - name: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
                   href: webview2/how-to/remote-debugging-hololens.md
-                  displayName: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps, remotely debug, Remote Tools for Microsoft Edge  # top-of-page title + 2 add'l
+                  displayName: remotely debug, Remote Tools for Microsoft Edge
 
-                - name: Xbox
+                - name: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
                   href: webview2/how-to/remote-debugging-xbox.md
-                  displayName: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps, remotely debug  # top-of-page title + 1 add'l
+                  displayName: remotely debug
 
 # -----------------------------------------------------------------------------
         - name: Architecture
@@ -1538,7 +1549,6 @@
               href: webview2/concepts/data-privacy.md
 
 # -----------------------------------------------------------------------------
-# relnotes
         - name: Release Notes
           items:
             - name: About Release Notes for the WebView2 SDK
@@ -1559,7 +1569,7 @@
           items:
             - name: WebView2 API Reference
               href: webview2/webview2-api-reference.md
-              displayName: functions, methods  # list relevant platforms
+              displayName: functions, methods, .NET, HoloLens, WinRT, Win32, JavaScript  # buckets not in "Filter by title"
 
             - name: .NET
               items:
@@ -1627,9 +1637,10 @@
         - name: Contact the WebView2 team
           href: webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
-# / WebView2 articles
+# / WebView2
 
 # =============================================================================
+# Test and automation
     - name: Test and automation
       items:
         - name: Test and automation in Microsoft Edge  # new firstchild article
@@ -1662,8 +1673,10 @@
 
         - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
+# /Test and automation
 
 # =============================================================================
+# Development tips (Web platform)
     - name: Development tips for Microsoft Edge
       items:
         - name: Development tips for Microsoft Edge
@@ -1701,8 +1714,10 @@
 
         - name: Sign up for the Ad Selection API
           href: ./web-platform/ad-selection-api.md
+# /Development tips (Web platform)
 
 # =============================================================================
+# Microsoft Edge IDE integration
     - name: Microsoft Edge IDE integration
       items:
         - name: Microsoft Edge IDE integration
@@ -1720,8 +1735,10 @@
 
         - name: Visual Studio for web development
           href: visual-studio/index.md
+# /Microsoft Edge IDE integration
 
 # =============================================================================
+# Accessibility in Microsoft Edge
     - name: Accessibility in Microsoft Edge
       items:
         - name: Accessibility in Microsoft Edge
@@ -1738,6 +1755,7 @@
 
         - name: Resources for accessibility testing
           href: accessibility/test.md
+# /Accessibility in Microsoft Edge
 
 #==============================================================================
 # DualEngine
@@ -1759,6 +1777,7 @@
         - name: DualEngine Win32 C++ Reference
           href: dualengine/reference/index.md
           displayName: functions, methods
+# /DualEngine
 
 # =============================================================================
 # bottom leaf nodes
