@@ -22,7 +22,7 @@ This sample has its own dedicated repo.
 
 *  Sample name: **WebView2Browser**
 *  Repo: [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser)
-*  Solution file: **WebViewBrowserApp.sln**
+*  Solution file: `WebViewBrowserApp.sln`
 
 ![The WebView2Browser sample app](./webview2browser-images/WebView2Browser.png)
 <!-- todo: remove png from other repo, in PR 140: -->
