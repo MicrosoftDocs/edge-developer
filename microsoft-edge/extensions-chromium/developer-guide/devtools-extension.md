@@ -115,7 +115,7 @@ In this step, we will create a basic DevTools extension with a sample panel.
     });
     ```
 
-    The `create` method requires four parameters: `title`, `iconpath`, `pagePath`, and a callback function. Note that while the panel's icon is a required parameter, it does not get displayed in Microsoft Edge DevTools currently.
+    The `create` method requires four parameters: `title`, `iconpath`, `pagePath`, and a callback function. The icon for the panel shows in the newer DevTools Focus Mode.
 
     To learn more about the `chrome.devtools.panels` extension API, see [the chrome.devtools.panels API reference](https://developer.chrome.com/docs/extensions/reference/devtools_panels/).
 
