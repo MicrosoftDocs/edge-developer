@@ -71,7 +71,7 @@ You downloaded, installed, ran, and tested the provided, finished DevTools exten
 
 
 <!-- ====================================================================== -->
-## Step 1: Create, install, and run a basic Microsoft Edge extension
+## Step 1: Create a basic Microsoft Edge extension
 
 If you want to create the files for each major step below, install a code editor such as [Visual Studio Code](https://code.visualstudio.com/), to follow the tutorial steps below to manually re-create the above sample DevTools extension.  You can read the code walkthrough below, presented as four major steps or phases.
 
@@ -140,7 +140,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Step 2: Add a DevTools tool (tab and panel)
+## Step 2: Add a custom tool in DevTools
 
 In this step, you'll create a new panel (tool tab) in DevTools.  You can either:
 
