@@ -10,9 +10,14 @@ ms.date: 11/12/2024
 ---
 # Create a DevTools extension, adding a custom tool tab and panel
 
-Part 1: Sample - This article shows how to install and run the provided sample of a DevTools extension, which adds a **Sample Panel** tool tab in DevTools within Microsoft Edge.  The sample is a working DevTools extension that creates its own panel, and interacts with the DevTools APIs.
+This article provides a sample and code walkthrough for a Microsoft Edge extension that adds a tool tab and panel in DevTools.
 
-Part 2: Tutorial - This article then shows how you can optionally create that sample from scratch, and explains each step of developing the sample, and how the added code works.  This tutorial shows how to build your own DevTools extension from scratch.  It's a good way to experience everything that's needed for typical development.
+This article first shows how to install and run the provided DevTools extension sample, which adds a **Sample Panel** tool tab in DevTools within Microsoft Edge.  The sample is a working DevTools extension that creates its own panel, and interacts with the DevTools APIs.
+
+This article then presents a tutorial that shows how you can optionally create that sample from scratch, and explains each step of developing the sample, and how the added code works.  These tutorial steps are a good way to experience everything that's needed for typical development.
+
+See also:
+* [Overview of DevTools](../../devtools-guide-chromium/overview.md)
 
 
 <!-- ====================================================================== -->
@@ -54,23 +59,21 @@ To download, install, run, and test the provided, finished DevTools extension sa
 
    A message is displayed in the extension panel: **You clicked on position (199, 509) in the inspected page**:
 
-  ![The sample panel in DevTools showing the clicked position message](./devtools-extension-images/devtools-extension-show-position.png)
+   ![The sample panel in DevTools showing the clicked position message](./devtools-extension-images/devtools-extension-show-position.png)
 
-1. Open the **Console** tool.  A message appears in the **Console** tool: **Received response > _{xPosition: 199, yPosition: 509}_**:
+1. Select the **Console** tool.
 
-    ![The DevTools Console tool showing the clicked position message](./devtools-extension-images/devtools-extension-show-position-in-console.png)
+   A message appears in the **Console** tool: **Received response > _{xPosition: 199, yPosition: 509}_**:
+
+   ![The DevTools Console tool showing the clicked position message](./devtools-extension-images/devtools-extension-show-position-in-console.png)
 
 You downloaded, installed, ran, and tested the provided, finished DevTools extension sample.  In the next steps, you create the same sample by starting from an empty directory.  The following sections explain how the code works.
 
 
 <!-- ====================================================================== -->
-## Install Visual Studio Code
-
-* If not done already, install a code editor such as [Visual Studio Code](https://code.visualstudio.com/), to follow the tutorial steps below to manually re-create the above sample DevTools extension.
-
-
-<!-- ====================================================================== -->
 ## Step 1: Create, install, and run a basic Microsoft Edge extension
+
+If you want to create the files for each major step below, install a code editor such as [Visual Studio Code](https://code.visualstudio.com/), to follow the tutorial steps below to manually re-create the above sample DevTools extension.  You can read the code walkthrough below, presented as four major steps or phases.
 
 A basic extension for Microsoft Edge consists of two files, as shown in [Step 1 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%201):
 
@@ -236,7 +239,7 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
 
 
 <!-- ====================================================================== -->
-## Step 3: Call extension APIs from a DevTools extension
+## Step 3: Display memory information by calling extension APIs
 
 In this step, you will use extension APIs to display memory information in your DevTools panel.  To do this, we will need to update the `permissions` in the manifest file, the panel interface, and the devtools script.  The source code for this step can be found in [Step 3 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%203), or write it yourself by following the instructions below.
 
@@ -324,13 +327,13 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Step 4: Interact with the inspected webpage
+## Step 4: Interact between the webpage and DevTools
 
 In this step of the tutorial, you will add code that interacts with the inspected webpage. That code will:
 
 1. Listen to click events that happen on the webpage and log them into the DevTools **Console** tool.
-1. Show the mouse click position in the DevTools extension panel.
-1. Show a greeting alert in the inspected page when user clicks a button in the DevTools extension panel.
+1. Display the mouse click position in the DevTools extension panel.
+1. When the user clicks a button in the DevTools extension panel, display a greeting alert in the inspected webpage.
 
 You can copy the files that are the end result of this step from [Step 4 code](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%204), or create the files yourself by following the instructions below.
 
@@ -498,21 +501,22 @@ To test the new `sayHello` button:
 
 1. Click the **OK** button to close the alert.
 
-See also:
-* [Content scripts](https://developer.chrome.com/docs/extensions/mv3/content_scripts/) in the Chrome Extensions docs.
-
-
-To test the `youClickedOn` label:
-
 1. Click anywhere in the inspected page.
 
    A message is displayed in the extension panel: **You clicked on position (199, 509) in the inspected page**:
 
-  ![The sample panel in DevTools showing the clicked position message](./devtools-extension-images/devtools-extension-show-position.png)
+   ![The sample panel in DevTools showing the clicked position message](./devtools-extension-images/devtools-extension-show-position.png)
 
-1. Open the **Console** tool.  A message appears in the **Console** tool: **Received response > _{xPosition: 199, yPosition: 509}_**:
+1. Select the **Console** tool.
 
-    ![The DevTools Console tool showing the clicked position message](./devtools-extension-images/devtools-extension-show-position-in-console.png)
+   A message appears in the **Console** tool: **Received response > _{xPosition: 199, yPosition: 509}_**:
+
+   ![The DevTools Console tool showing the clicked position message](./devtools-extension-images/devtools-extension-show-position-in-console.png)
+
+This completes the tutorial and code walkthrough for creating a DevTools extension that adds a tool tab and panel in DevTools in Microsoft Edge.
+
+See also:
+* [Content scripts](https://developer.chrome.com/docs/extensions/mv3/content_scripts/) in the Chrome Extensions docs.
 
 
 <!-- ====================================================================== -->
