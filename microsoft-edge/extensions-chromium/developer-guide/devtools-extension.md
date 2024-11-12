@@ -10,9 +10,9 @@ ms.date: 11/12/2024
 ---
 # Create a DevTools extension, adding a custom tool tab and panel
 
-Part 1: Sample - This article first shows how to install and run the provided sample of a DevTools extension, which adds a **Sample Panel** tool tab in DevTools.  The sample is a working DevTools extension that creates its own panel, with a tool tab, and interacts with the DevTools APIs.
+Part 1: Sample - This article shows how to install and run the provided sample of a DevTools extension, which adds a **Sample Panel** tool tab in DevTools within Microsoft Edge.  The sample is a working DevTools extension that creates its own panel, and interacts with the DevTools APIs.
 
-Part 2: Tutorial - This article then shows how you can optionally create that sample from scratch, and explains each step of developing the sample, and how the added code works, in each major step.  This tutorial shows how to build your own DevTools extension from scratch.  It's a good way to experience everything that's needed for typical development.
+Part 2: Tutorial - This article then shows how you can optionally create that sample from scratch, and explains each step of developing the sample, and how the added code works.  This tutorial shows how to build your own DevTools extension from scratch.  It's a good way to experience everything that's needed for typical development.
 
 
 <!-- ====================================================================== -->
