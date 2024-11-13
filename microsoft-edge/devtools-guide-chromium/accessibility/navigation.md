@@ -366,7 +366,7 @@ To run a new audit, use **Shift+Tab** to exit the report and select the **Genera
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/accessibility/navigation/) and is authored by [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor, Google WebFundamentals).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/accessibility/navigation/) and is authored by Rob Dodson.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
