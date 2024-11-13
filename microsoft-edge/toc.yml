@@ -519,12 +519,6 @@
                 - name: Find and fix problems using the Issues tool
                   href: devtools-guide-chromium/issues/index.md
                   displayName: Issues tool
-# JavaScript Profiler tool ----------------------------------------------------
-            - name: JavaScript Profiler tool
-              items:
-                - name: JavaScript Profiler tool
-                  href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
-                  displayName: JavaScript Profiler tool
 # Lighthouse tool -------------------------------------------------------------
             - name: Lighthouse tool  # new jump page  # main article is in Accessibility
               items:
@@ -1183,7 +1177,7 @@
               href: progressive-web-apps-chromium/how-to/microsoft-store.md
               displayName: Publish a Progressive Web App to the Microsoft Store  # top-of-page title
 
-            - name: Experimental features and origin trials
+            - name: Experimental features and origin trials for PWAs
               href: progressive-web-apps-chromium/how-to/origin-trials.md
 
             - name: Use Progressive Web Apps in Microsoft Edge
@@ -1215,17 +1209,15 @@
             - name: Synchronize and update a PWA in the background
               href: progressive-web-apps-chromium/how-to/background-syncs.md
 
-            - name: Handle files
+            - name: Handle files in Progressive Web Apps
               href: progressive-web-apps-chromium/how-to/handle-files.md
-              displayName: Handle files in Progressive Web Apps  # top-of-page title
 
-            - name: Handle links
+            - name: Handle links to your Progressive Web App
               href: progressive-web-apps-chromium/how-to/handle-urls.md
-              displayName: handle urls, Handle links to your Progressive Web App  # top-of-page title
+              displayName: handle urls
 
-            - name: Handle protocols
+            - name: Handle protocols in Progressive Web Apps
               href: progressive-web-apps-chromium/how-to/handle-protocols.md
-              displayName: Handle protocols in Progressive Web Apps  # top-of-page title
 
             - name: Display content in the title bar area using Window Controls Overlay
               href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
@@ -1242,9 +1234,9 @@
             - name: Build PWAs for the sidebar in Microsoft Edge
               href: progressive-web-apps-chromium/how-to/sidebar.md
 
-        - name: What's New
+        - name: What's New in Progressive Web Apps
           href: progressive-web-apps-chromium/whats-new/pwa.md
-          displayName: release notes, announcements, What's New in Progressive Web Apps  # top-of-page title
+          displayName: release notes, announcements
 
         - name: Progressive Web App demos
           href: progressive-web-apps-chromium/demo-pwas.md
@@ -1319,10 +1311,9 @@
               href: webview2/samples/webview2_sample_uwp.md
               displayName: webview2_sample_uwp, WinUI 2 (UWP) sample app  # repo dir name, top-of-page title
 
-# pending, July 26 2022
-#            - name: WinUI 3 sample app
-#              href: webview2/samples/webview2-winui3-sample.md
-#              displayName: WebView2_WinUI3_Sample  # repo dir name
+            - name: WinUI 3 (Windows App SDK) sample app
+              href: webview2/samples/webview2-winui3-sample.md
+              displayName: WebView2_WinUI3_Sample  # repo dir name
 
             - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
@@ -1667,7 +1658,7 @@
         - name: DevTools Protocol
           href: test-and-automation/devtools-protocol.md
 
-        - name: Use Origin Trials in Microsoft Edge
+        - name: Use origin trials in Microsoft Edge
           href: origin-trials/index.md
 
         - name: Use Playwright to automate and test in Microsoft Edge

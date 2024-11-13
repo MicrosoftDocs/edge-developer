@@ -101,7 +101,11 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/accessibility/reference",
         "redirect_document_id": false
       },
-
+      {
+        "source_path": "microsoft-edge/devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/evaluate-performance/",
+        "redirect_document_id": false
+      },
 /* Microsoft Edge extensions: */
       {
         "source_path": "microsoft-edge/extensions-chromium/enterprise/declare-permissions.md",
@@ -241,11 +245,6 @@ Old redirects (to /archive/)
       {
         "source_path": "microsoft-edge/webview2/gettingstarted/wpf.md",
         "redirect_url": "/microsoft-edge/webview2/get-started/wpf",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-edge/webview2/samples/webview2-winui3-sample.md",
-        "redirect_url": "/microsoft-edge/webview2/code-samples-links",
         "redirect_document_id": false
       },
 

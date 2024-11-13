@@ -14,9 +14,10 @@ This WebView2 sample demonstrates how to use the WebView2 control and WebView2 A
 
 *  Sample name: **webview2_sample_uwp**
 *  Repo directory: [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
-*  Solution file: **webview2_sample_uwp.sln**
+*  Solution file: `webview2_sample_uwp.sln`
 
 
+<!-- ------------------------------ -->
 #### Installed NuGet packages
 
 This sample includes the following NuGet packages:
@@ -41,7 +42,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## Step 2 - Clone or download the WebView2Samples repo
 
-1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
