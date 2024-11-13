@@ -122,7 +122,6 @@ See also:
 * [What's New in DevTools (Microsoft Edge 112)](../devtools-guide-chromium/whats-new/2023/04/devtools-112.md)<!-- has Video section -->
 * [Analyze CSS selector performance during Recalculate Style events](../devtools-guide-chromium/evaluate-performance/selector-stats.md) - CSS selector stats.
 * [View formatted JSON responses or files](../devtools-guide-chromium/json-viewer/json-viewer.md)
-* [Apply a color theme to DevTools](../devtools-guide-chromium/customize/theme.md)
 
 
 <!-- ====================================================================== -->
