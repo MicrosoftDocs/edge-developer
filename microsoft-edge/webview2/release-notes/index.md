@@ -121,26 +121,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-The following Experimental APIs have been added in this Prerelease SDK.
 
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2NonClientRegionKind.Close Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2950-prerelease&preserve-view=true)
-* [CoreWebView2NonClientRegionKind.Maximize Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2950-prerelease&preserve-view=true)
-* [CoreWebView2NonClientRegionKind.Minimize Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2950-prerelease&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 <!-- ------------------------------ -->
 #### Promotions
 
