@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 131)
-description: "Detached Elements profile in Memory tool. Improved names of JavaScript objects in heap snapshots. Create collection or environment in Network Console.  Fixed icon bugs. Performance tab icon when throttled. High-contrast Warning count. And more."
+description: "Can disable Edge experiment settings. View CSS selector stats information in Insights tab of sidebar panel in Performance tool. Fixed edit field to exit after pressing tab after auto-completion. Removed Visual Studio Code themes. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -18,7 +18,7 @@ ms.date: 11/14/2024
 
 <!-- Subtitle: The Visual Studio Code themes are removed and themes will revert to the default themes: Light+ or Dark+.-->
 
-The Visual Studio Code themes feature is now deprecated. These themes will revert to the "System preference" theme by default. The Light+ and Dark+ themes will continue to be supported.
+The Visual Studio Code themes feature is now deprecated.  These themes will revert to the **System preference** theme by default.  The **Light+** and **Dark+** themes continue to be supported.
 
 
 <!-- ====================================================================== -->
@@ -26,7 +26,12 @@ The Visual Studio Code themes feature is now deprecated. These themes will rever
 
 <!-- Go to Settings > Experiments to enable or disable any experiments you choose. -->
 
-Previously, the "Enable webhint", "Show issues in Elements", and "Open source files in Visual Studio Code" experiments that were enabled by default could not be disabled, even after unchecking them on the **Settings > Experiments** page and reloading DevTools. This is now fixed and you can disable these experiments.
+Previously, the following experiments that were enabled by default couldn't be disabled, even after clearing their checkboxes in the **Settings > Experiments** page and reloading DevTools:
+* **Enable webhint**
+* **Show issues in Elements**
+* **Open source files in Visual Studio Code**
+
+This is now fixed, and you can disable these experiments.
 
 
 <!-- ====================================================================== -->
@@ -34,7 +39,7 @@ Previously, the "Enable webhint", "Show issues in Elements", and "Open source fi
 
 <!-- When the "Enable CSS selector stats (slow)" setting is turned on, view selector stats information in the left sidebar of the Performance tool.-->
 
-The left sidebar in the **Performance** tool includes information about CSS selector costs in the Insights tab. To view this, select the "Enable CSS selector stats (slow)" setting and take a performance recording, then open the sidebar and expand the CSS Selector costs section.
+The left sidebar in the **Performance** tool includes information about CSS selector costs in the **Insights** tab.  To view this, select the **Enable CSS selector stats (slow)** checkbox, take a performance recording, open the sidebar, and then expand the **CSS selector costs** section:
 
 ![CSS selector costs info](./devtools-131-images/selector-stats-info.png)
 
@@ -44,7 +49,7 @@ The left sidebar in the **Performance** tool includes information about CSS sele
 
 <!-- Press Tab after choosing an autocomplete option to exit the field.-->
 
-Pressing Tab after auto-completion now exits the edit field and focuses on the next focus point. Before, pressing tab would just indent the text.
+Pressing **Tab** after auto-completion now exits the edit field and focuses on the next focus point.  Before, pressing **Tab** would just indent the text.
 
 
 <!-- ====================================================================== -->
@@ -52,13 +57,29 @@ Pressing Tab after auto-completion now exits the edit field and focuses on the n
 
 Microsoft Edge 131 also includes the following updates from the Chromium project:
 
+* [Debug CSS with Gemini](~)
+   * [Control AI features in a dedicated settings tab](~)
+   * [Console insights are one click away](~)
+* [Performance panel improvements](~)
+   * [Annotate and share performance findings](~)
+   * [Get performance insights right in the Performance panel](~)
+   * [Spot excessive layout shifts easier](~)
+   * [Spot the non-composited animations](~)
+   * [Hardware concurrency moves to Sensors](~)
+* [Ignore anonymous scripts and focus on your code in stack traces](~)
+* [Elements > Styles: Support for sideways-* writing modes for grid overlays and CSS-wide keywords](~)
+* [Lighthouse audits for non-HTTP pages in timespan and snapshot modes](~)
+* [Accessibility](~)
+* [Miscellaneous highlights](~)
+<!-- todo: maybe remove some links -->
+
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 130)](https://developer.chrome.com/blog/new-in-devtools-130) and is authored by Sofia Emelianova. -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 131)](https://developer.chrome.com/blog/new-in-devtools-131) and is authored by Sofia Emelianova. -->
 
 
 <!-- ====================================================================== -->
