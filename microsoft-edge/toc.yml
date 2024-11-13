@@ -1524,10 +1524,10 @@
                   displayName: remotely debug
 
 # -----------------------------------------------------------------------------
-        - name: Architecture
+        - name: Process and threading model  # name: Architecture
           items:
           # - name: Architecture of WebView2
-          #   href: webview2/concepts/architecture.md
+          #   href: webview2/concepts/architecture.md  # not created
 
             - name: Process model for WebView2 apps
               href: webview2/concepts/process-model.md
