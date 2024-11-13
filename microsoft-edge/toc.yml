@@ -1494,18 +1494,16 @@
         - name: Debug WebView2 apps
           items:
             - name: Debug WebView2 apps
-              items:
-                - name: Debug WebView2 apps
-                  href: webview2/how-to/debug.md
+              href: webview2/how-to/debug.md
 
-                - name: Debug WebView2 apps with Microsoft Edge DevTools
-                  href: webview2/how-to/debug-devtools.md
+            - name: Debug WebView2 apps with Microsoft Edge DevTools
+              href: webview2/how-to/debug-devtools.md
 
-                - name: Debug WebView2 apps with Visual Studio Code
-                  href: webview2/how-to/debug-visual-studio-code.md
+            - name: Debug WebView2 apps with Visual Studio Code
+              href: webview2/how-to/debug-visual-studio-code.md
 
-                - name: Debug WebView2 apps with Visual Studio
-                  href: webview2/how-to/debug-visual-studio.md
+            - name: Debug WebView2 apps with Visual Studio
+              href: webview2/how-to/debug-visual-studio.md
 
             - name: Remote debugging WebView2 WinUI 2 (UWP) apps
               items:
