@@ -145,10 +145,10 @@ Added a new ScreenCaptureStarting event.  This event is raised whenever the WebV
 <!-- todo: global: un-link parent if had members already -->
 
 * `CoreWebView2` Class:
-   * [CoreWebView2.Cancel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cancel?view=webview2-dotnet-1.0.2903.40&preserve-view=true)<!-- todo: copied from rt, ok? -->
-   * [CoreWebView2.GetDeferral Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.getdeferral?view=webview2-dotnet-1.0.2903.40&preserve-view=true)<!-- todo: copied from rt, ok? -->
-   * [CoreWebView2.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.handled?view=webview2-dotnet-1.0.2903.40&preserve-view=true)<!-- todo: copied from rt, ok? -->
-   * [CoreWebView2.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.originalsourceframeinfo?view=webview2-dotnet-1.0.2903.40&preserve-view=true)<!-- todo: copied from rt, ok? -->
+   * [CoreWebView2.Cancel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cancel?view=webview2-dotnet-1.0.2903.40&preserve-view=true)<!-- todo: copy/modif'd from rt, ok?  build report claims 404 -->
+   * [CoreWebView2.GetDeferral Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.getdeferral?view=webview2-dotnet-1.0.2903.40&preserve-view=true)<!-- todo: copy/modif'd from rt, ok?  build report claims 404 -->
+   * [CoreWebView2.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.handled?view=webview2-dotnet-1.0.2903.40&preserve-view=true)<!-- todo: copy/modif'd from rt, ok?  build report claims 404 -->
+   * [CoreWebView2.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.originalsourceframeinfo?view=webview2-dotnet-1.0.2903.40&preserve-view=true)<!-- todo: copy/modif'd from rt, ok?  build report claims 404 -->
    * [CoreWebView2.ScreenCaptureStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.screencapturestarting?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
 
 * `CoreWebView2Frame` Class:
