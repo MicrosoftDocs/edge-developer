@@ -26,34 +26,71 @@ May 2024
 
 
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.2903.40
 
-Release Date: Monthname nn, 2024
+Release Date: November 18, 2024
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.2903.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2903.40)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 131.0.2903.40 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ---------- -->
-###### heading
+###### Control whether the screen capture UI is shown (ScreenCaptureStarting event)
 
-description
+Added a new ScreenCaptureStarting event. This event is raised whenever the WebView2 and/or iframe that corresponds to the CoreWebView2Frame (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown. The app can then block the UI from being displayed, or allow the UI to be displayed.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* [CoreWebView2.ScreenCaptureStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.screencapturestarting?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
+* [CoreWebView2Frame.ScreenCaptureStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.screencapturestarting?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
+* [CoreWebView2NonClientRegionKind.Close Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
+* [CoreWebView2NonClientRegionKind.Maximize Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
+* [CoreWebView2NonClientRegionKind.Minimize Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
+* [CoreWebView2ScreenCaptureStartingEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2screencapturestartingeventargs?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
+* [CoreWebView2ScreenCaptureStartingEventArgs.Cancel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2screencapturestartingeventargs.cancel?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
+* [CoreWebView2ScreenCaptureStartingEventArgs.GetDeferral Method](/dotnet/api/microsoft.web.webview2.core.corewebview2screencapturestartingeventargs.getdeferral?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
+* [CoreWebView2ScreenCaptureStartingEventArgs.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2screencapturestartingeventargs.handled?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
+* [CoreWebView2ScreenCaptureStartingEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2screencapturestartingeventargs.originalsourceframeinfo?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
+
 ##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true)
+* [CoreWebView2.Cancel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#cancel)
+* [CoreWebView2.GetDeferral Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#getdeferral)
+* [CoreWebView2.Handled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#handled)
+* [CoreWebView2.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#originalsourceframeinfo)
+* [CoreWebView2.ScreenCaptureStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#screencapturestarting)
+* [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.2903.40&preserve-view=true)
+* [CoreWebView2Frame.ScreenCaptureStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.2903.40&preserve-view=true#screencapturestarting)
+* [CoreWebView2ScreenCaptureStartingEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
 
----
+  * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_CLOSE`
+  * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_MAXIMIZE`
+  * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_MINIMIZE`
+* [ICoreWebView2_27](/microsoft-edge/webview2/reference/win32/icorewebview2_27?view=webview2-1.0.2903.40&preserve-view=true)
+  * [ICoreWebView2_27::add_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2_27?view=webview2-1.0.2903.40&preserve-view=true#add_screencapturestarting)
+  * [ICoreWebView2_27::remove_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2_27?view=webview2-1.0.2903.40&preserve-view=true#remove_screencapturestarting)
+* [ICoreWebView2Frame6](/microsoft-edge/webview2/reference/win32/icorewebview2frame6?view=webview2-1.0.2903.40&preserve-view=true)
+  * [ICoreWebView2Frame6::add_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2frame6?view=webview2-1.0.2903.40&preserve-view=true#add_screencapturestarting)
+  * [ICoreWebView2Frame6::remove_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2frame6?view=webview2-1.0.2903.40&preserve-view=true#remove_screencapturestarting)
+* [ICoreWebView2FrameScreenCaptureStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framescreencapturestartingeventhandler?view=webview2-1.0.2903.40&preserve-view=true)
+* [ICoreWebView2ScreenCaptureStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true)
+  * [ICoreWebView2ScreenCaptureStartingEventArgs::get_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#get_cancel)
+  * [ICoreWebView2ScreenCaptureStartingEventArgs::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#get_handled)
+  * [ICoreWebView2ScreenCaptureStartingEventArgs::get_OriginalSourceFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#get_originalsourceframeinfo)
+  * [ICoreWebView2ScreenCaptureStartingEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#getdeferral)
+  * [ICoreWebView2ScreenCaptureStartingEventArgs::put_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#put_cancel)
+  * [ICoreWebView2ScreenCaptureStartingEventArgs::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#put_handled)
+* [ICoreWebView2ScreenCaptureStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventhandler?view=webview2-1.0.2903.40&preserve-view=true)
 
 
 <!-- ------------------------------ -->
@@ -61,29 +98,12 @@ description
 
 
 <!-- ---------- -->
-###### Runtime and SDK
-
-* item
-
-* item
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* item
-
-* item
+* Allow download dialog to receive initial focus on launch
 
 
 <!-- ---------- -->
-###### SDK-only
-
-* item
-
-* item
-
--->
 
 
 <!-- end of Nov 2024 Release SDK -->
@@ -92,17 +112,15 @@ description
 <!-- ====================================================================== -->
 ## 1.0.####-prerelease
 
-Release Date: Monthname nn, 2024
+Release Date: November 18, 2024
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.2950-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2950-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
-
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 132.0.2950.0 or higher.
 
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-No Experimental APIs have been added in this Prerelease SDK.
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
@@ -113,19 +131,18 @@ description
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* [CoreWebView2NonClientRegionKind.Close Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2950-prerelease&preserve-view=true)
+* [CoreWebView2NonClientRegionKind.Maximize Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2950-prerelease&preserve-view=true)
+* [CoreWebView2NonClientRegionKind.Minimize Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2950-prerelease&preserve-view=true)
+
 ##### [WinRT/C#](#tab/winrtcsharp)
+
 
 ##### [Win32/C++](#tab/win32cpp)
 
 ---
-
-
 <!-- ------------------------------ -->
 #### Promotions
-
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
 
 <!-- ---------- -->
 ###### heading
@@ -140,7 +157,6 @@ description
 
 ---
 
-
 <!-- ------------------------------ -->
 #### Bug fixes
 
@@ -148,25 +164,21 @@ description
 <!-- ---------- -->
 ###### Runtime and SDK
 
-* item
-
-* item
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* item
-
-* item
+* Allow download dialog to receive initial focus on launch
+* Fixed a crash while cancelling navigation to certain sites in FrameNavigationStarting ([Issue #4843](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4843))
+* Postponed customize context menu when touch selection menu is showing ([Issue #4737](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4737))
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* item
-
-* item
+* Added Arm64ec support
+* Fixed an issue where WebView2 running in Window to Visual mode could not receive accelerator input. (SDK)
 
 
 <!-- end of Nov 2024 Prerelease SDK -->
