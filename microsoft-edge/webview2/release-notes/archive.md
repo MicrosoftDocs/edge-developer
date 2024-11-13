@@ -6652,5 +6652,5 @@ Initial developer preview release.
 
 * [About Release Notes for the WebView2 SDK](./about.md)
 * [Release Notes for the WebView2 SDK](./index.md)
-* [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
+* [Overview of WebView2 APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)

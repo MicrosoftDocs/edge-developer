@@ -1,6 +1,6 @@
 ---
-title: Overview of WebView2 features and APIs
-description: Overview of WebView2 features and APIs.
+title: Overview of WebView2 APIs
+description: Overview of WebView2 APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 10/21/2024
 ---
-# Overview of WebView2 features and APIs
+# Overview of WebView2 APIs
 
 Embedding the WebView2 control in your app gives your app access to various methods and properties that are provided through the WebView2 classes or interfaces.  WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities, to enabling your app to modify browser experiences.  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
 
@@ -47,7 +47,7 @@ This page only lists APIs that are in Release SDKs; it doesn't list Experimental
 ## Main classes: Environment, Controller, and Core
 
 <!-- keep sync'd:
-* [Main classes: Environment, Controller, and Core](overview-features-apis.md#main-classes-environment-controller-and-core) in _Overview of WebView2 features and APIs_.
+* [Main classes: Environment, Controller, and Core](overview-features-apis.md#main-classes-environment-controller-and-core) in _Overview of WebView2 APIs_.
 * [Main classes for WebView2: Environment, Controller, and Core](environment-controller-core.md) - topmost content.
 -->
 

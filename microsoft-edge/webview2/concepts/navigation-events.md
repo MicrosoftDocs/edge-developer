@@ -90,7 +90,7 @@ The [WebView2 sample apps](../code-samples-links.md) also demonstrate handling n
 <!-- ====================================================================== -->
 ## See also
 
-* [Navigate to pages and manage loaded content](./overview-features-apis.md#navigate-to-pages-and-manage-loaded-content) in _Overview of WebView2 features and APIs_
+* [Navigate to pages and manage loaded content](./overview-features-apis.md#navigate-to-pages-and-manage-loaded-content) in _Overview of WebView2 APIs_
 * [Basic authentication for WebView2 apps](./basic-authentication.md)
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.

@@ -434,7 +434,7 @@ From WebView2's perspective, the resource will have come via the network, and We
 <!-- ------------------------------ -->
 #### Custom scheme registration
 
-If you want to use a custom scheme to make the Web Resource Request that generates the `WebResourceRequested` event, see [Custom scheme registration](./overview-features-apis.md#custom-scheme-registration) in _Overview of WebView2 features and APIs_.
+If you want to use a custom scheme to make the Web Resource Request that generates the `WebResourceRequested` event, see [Custom scheme registration](./overview-features-apis.md#custom-scheme-registration) in _Overview of WebView2 APIs_.
 
 
 <!-- ------------------------------ -->
@@ -823,6 +823,6 @@ HRESULT AppWindow::WebResourceRequestedEventHandler(
 <!-- ====================================================================== -->
 ## See also
 
-* [Manage content loaded into WebView2](./overview-features-apis.md#manage-content-loaded-into-webview2) in _Overview of WebView2 features and APIs_
+* [Manage content loaded into WebView2](./overview-features-apis.md#manage-content-loaded-into-webview2) in _Overview of WebView2 APIs_
 * [Demo To Do rendered page](https://microsoftedge.github.io/Demos/demo-to-do/)
    * [Demo To Do source code](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)

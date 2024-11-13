@@ -1245,7 +1245,7 @@
         - name: Introduction to Microsoft Edge WebView2
           href: webview2/index.md
 
-        - name: Overview of WebView2 features and APIs
+        - name: Overview of WebView2 APIs
           href: webview2/concepts/overview-features-apis.md
 
         - name: Differences between Microsoft Edge and WebView2

@@ -546,7 +546,7 @@ Adds an **Autofill** tool to DevTools, to record various events that the browser
 
 See also:
 * [Autofill](/legal/microsoft-edge/privacy#autofill) in _Microsoft Edge Privacy Whitepaper_.
-* [Autofill](../../webview2/concepts/overview-features-apis.md?tabs=dotnetcsharp#autofill) in _Overview of WebView2 features and APIs_.
+* [Autofill](../../webview2/concepts/overview-features-apis.md?tabs=dotnetcsharp#autofill) in _Overview of WebView2 APIs_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 131.

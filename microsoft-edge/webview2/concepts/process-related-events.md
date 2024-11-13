@@ -17,7 +17,7 @@ To improve the reliability of your WebView2 application, it is recommended that 
 * [A process rendering content in the WebView2 control has exited unexpectedly](#a-process-rendering-content-in-the-webview2-control-has-exited-unexpectedly).
 * [A renderer process becomes unresponsive](#handle-unresponsive-renderers).
 
-To use this article, we recommend first reading [Process model for WebView2 apps](./process-model.md).  For a list of process-related APIs covered by this article, see [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
+To use this article, we recommend first reading [Process model for WebView2 apps](./process-model.md).  For a list of process-related APIs covered by this article, see [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 APIs_.
 
 
 <!-- ------------------------------
@@ -324,5 +324,5 @@ To ensure that a new main browser process instance is used when re-creating the 
 ## See also
 
 * [Process model for WebView2 apps](./process-model.md)
-* [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 features and APIs_.
+* [Process management](overview-features-apis.md#process-management) in _Overview of WebView2 APIs_.
 * [WebView2 API Reference](../webview2-api-reference.md)
