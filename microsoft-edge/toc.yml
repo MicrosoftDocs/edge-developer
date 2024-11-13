@@ -1471,7 +1471,7 @@
               href: webview2/concepts/security.md
 
 # -----------------------------------------------------------------------------
-        - name: Test and automation
+        - name: Test and automation for WebView2 apps  # vs. Edge "Test and automation"
           items:
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
