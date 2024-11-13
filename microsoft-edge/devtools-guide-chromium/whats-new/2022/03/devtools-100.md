@@ -134,7 +134,7 @@ See also:
 <!-- Title: Themes from Visual Studio Code now apply to the Waterfall view -->
 <!-- Subtitle: The Waterfall view of requests in the Network tool now match the VS Code themes. -->
 
-Update: Starting with Microsoft Edge 132, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
 * Light+
 * Dark+
 

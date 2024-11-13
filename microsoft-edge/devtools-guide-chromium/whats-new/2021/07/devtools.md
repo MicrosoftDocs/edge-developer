@@ -25,7 +25,7 @@ ms.date: 07/30/2021
 <!-- Title: Apply themes from Visual Studio Code to DevTools -->
 <!-- Subtitle: You can now use some of the most popular color themes from Visual Studio Code, such as Monokai and Solarized Dark, in Microsoft Edge DevTools. -->
 
-Update: Starting with Microsoft Edge 132, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
 * Light+
 * Dark+
 

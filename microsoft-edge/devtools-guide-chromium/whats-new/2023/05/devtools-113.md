@@ -116,7 +116,7 @@ In previous versions of Microsoft Edge, in Focus Mode, hovering over a tool's ic
 <!-- Subtitle: Customize DevTools to match VS Code with themes like Solarized Light, Kimbie Dark, Monokai, or Tomorrow Night Blue. -->
 <!-- Reviewer: Irene Cho -->
 
-Update: Starting with Microsoft Edge 132, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
 * Light+
 * Dark+
 
