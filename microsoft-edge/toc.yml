@@ -1355,14 +1355,17 @@
         - name: "Main classes for WebView2: Environment, Controller, and Core"
           href: webview2/concepts/environment-controller-core.md
 
-        - name: Navigation events for WebView2 apps
-          href: webview2/concepts/navigation-events.md
+        - name: Navigation, events, and authentication
+          items:
 
-        - name: Handling process-related events in WebView2
-          href: webview2/concepts/process-related-events.md
+            - name: Navigation events for WebView2 apps
+              href: webview2/concepts/navigation-events.md
 
-        - name: Basic authentication for WebView2 apps
-          href: webview2/concepts/basic-authentication.md
+            - name: Handling process-related events in WebView2
+              href: webview2/concepts/process-related-events.md
+
+            - name: Basic authentication for WebView2 apps
+              href: webview2/concepts/basic-authentication.md
 
         - name: Windowed vs. visual hosting of WebView2
           href: webview2/concepts/windowed-vs-visual-hosting.md
