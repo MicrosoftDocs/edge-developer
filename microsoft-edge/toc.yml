@@ -1356,9 +1356,6 @@
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
 
-            - name: WebView2 browser flags
-              href: webview2/concepts/webview-features-flags.md
-
             - name: "Main classes for WebView2: Environment, Controller, and Core"
               href: webview2/concepts/environment-controller-core.md
 
@@ -1534,6 +1531,9 @@
             - name: Data and privacy
               href: webview2/concepts/data-privacy.md
               displayName: Data and privacy in WebView2  # top-of-page title
+
+            - name: WebView2 browser flags
+              href: webview2/concepts/webview-features-flags.md
 
 # -----------------------------------------------------------------------------
         - name: Deployment and distribution
