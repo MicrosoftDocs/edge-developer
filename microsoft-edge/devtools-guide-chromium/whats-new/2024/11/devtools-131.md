@@ -57,9 +57,6 @@ Pressing **Tab** after auto-completion now exits the edit field and focuses on t
 
 Microsoft Edge 131 also includes the following updates from the Chromium project:
 
-* [Debug CSS with Gemini](https://developer.chrome.com/blog/new-in-devtools-131#ai-assistance)
-   * [Control AI features in a dedicated settings tab](https://developer.chrome.com/blog/new-in-devtools-131#ai-innovations)
-   * [Console insights are one click away](https://developer.chrome.com/blog/new-in-devtools-131#console-insights)
 * [Performance panel improvements](https://developer.chrome.com/blog/new-in-devtools-131#perf)
    * [Annotate and share performance findings](https://developer.chrome.com/blog/new-in-devtools-131#annotations)
    * [Get performance insights right in the Performance panel](https://developer.chrome.com/blog/new-in-devtools-131#insights)
@@ -68,10 +65,6 @@ Microsoft Edge 131 also includes the following updates from the Chromium project
    * [Hardware concurrency moves to Sensors](https://developer.chrome.com/blog/new-in-devtools-131#hardware-concurrency)
 * [Ignore anonymous scripts and focus on your code in stack traces](https://developer.chrome.com/blog/new-in-devtools-131#ignore-list)
 * [Elements > Styles: Support for sideways-* writing modes for grid overlays and CSS-wide keywords](https://developer.chrome.com/blog/new-in-devtools-131#styles)
-* [Lighthouse audits for non-HTTP pages in timespan and snapshot modes](https://developer.chrome.com/blog/new-in-devtools-131#lighthouse)
-* [Accessibility](https://developer.chrome.com/blog/new-in-devtools-131#accessibility)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-131#misc)
-<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
