@@ -35,13 +35,23 @@ This is now fixed, and you can disable these experiments.
 
 
 <!-- ====================================================================== -->
-## View CSS selector stats information in the Insights tab of the sidebar panel in the Performance tool
+## View CSS selector costs in the Performance tool sidebar
 
 <!-- When the "Enable CSS selector stats (slow)" setting is turned on, view selector stats information in the left sidebar of the Performance tool.-->
 
-The left sidebar in the **Performance** tool includes information about CSS selector costs in the **Insights** tab.  To view this, select the **Enable CSS selector stats (slow)** checkbox, take a performance recording, open the sidebar, and then expand the **CSS selector costs** section:
+The left sidebar in the **Performance** tool displays the costs of CSS selectors in the **Insights** tab:
 
 ![CSS selector costs info](./devtools-131-images/selector-stats-info.png)
+
+To view CSS selector costs:
+
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./devtools-131-images/capture-settings-icon.png)) button, and then select the **Enable CSS selector stats (slow)** checkbox.
+
+1. Take a performance recording.
+
+1. If the **Insights** tab isn't displayed, click the **Show sidebar** (![Show sidebar icon](./devtools-131-images/show-sidebar-icon.png)) button, and then click the **Insights** tab.
+
+1. Click the **CSS Selector costs** button to expand its section.
 
 
 <!-- ====================================================================== -->
