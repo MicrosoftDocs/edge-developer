@@ -245,6 +245,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### Experimental APIs
+
 No Experimental APIs have been added in this Prerelease SDK.
 
 
@@ -253,9 +254,10 @@ No Experimental APIs have been added in this Prerelease SDK.
 
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
----
+
 <!-- ------------------------------ -->
 #### Bug fixes
+
 
 <!-- ---------- -->
 ###### Runtime-only
