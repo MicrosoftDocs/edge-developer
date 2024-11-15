@@ -32,6 +32,10 @@ Catch up on all of this news and more in our year-in-review blog post, [Looking 
 
 [![Screenshot of the blog post: Looking back at Microsoft Edge for developers in 2021](./devtools-images/blog-post-edge-devs-2021.png)](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/)
 
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+* Light+
+* Dark+
+
 
 <!-- ====================================================================== -->
 ## Automate IE mode with Internet Explorer Driver

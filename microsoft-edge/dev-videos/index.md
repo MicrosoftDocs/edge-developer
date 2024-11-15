@@ -122,7 +122,6 @@ See also:
 * [What's New in DevTools (Microsoft Edge 112)](../devtools-guide-chromium/whats-new/2023/04/devtools-112.md)<!-- has Video section -->
 * [Analyze CSS selector performance during Recalculate Style events](../devtools-guide-chromium/evaluate-performance/selector-stats.md) - CSS selector stats.
 * [View formatted JSON responses or files](../devtools-guide-chromium/json-viewer/json-viewer.md)
-* [Apply a color theme to DevTools](../devtools-guide-chromium/customize/theme.md)
 
 
 <!-- ====================================================================== -->
@@ -701,6 +700,10 @@ Covers:
 * Search for Console errors on the web.
 * Breakpoint icons are displayed when using Visual Studio Code themes.
 * DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links.  JavaScript Debugger connection to remote workspaces.
+
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+* Light+
+* Dark+
 
 See also:
 * [What's New in DevTools 94](../devtools-guide-chromium/whats-new/2021/09/devtools.md)<!-- has Video section -->

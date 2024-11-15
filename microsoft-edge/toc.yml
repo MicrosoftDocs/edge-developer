@@ -743,10 +743,6 @@
               href: devtools-guide-chromium/customize/index.md
               displayName: settings
 
-            - name: Apply a color theme to DevTools  # orig: "Enable dark theme"
-              href: devtools-guide-chromium/customize/theme.md
-              displayName: Settings, Preferences
-
             - name: Change DevTools placement (Undock, Dock to bottom, Dock to left)
               href: devtools-guide-chromium/customize/placement.md
               displayName: settings
