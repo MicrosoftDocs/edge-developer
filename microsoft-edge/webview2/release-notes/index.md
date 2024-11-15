@@ -245,32 +245,17 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### Experimental APIs
+No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
 #### Promotions
 
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
+No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 ---
-
-
 <!-- ------------------------------ -->
 #### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
 
 <!-- ---------- -->
 ###### Runtime-only
