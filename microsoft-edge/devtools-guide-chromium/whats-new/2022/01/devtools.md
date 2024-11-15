@@ -81,9 +81,6 @@ Thanks to your early feedback, we've continued to make improvements and bug fixe
 
 When using Focus Mode, all the same tools and custom themes are available as in the existing DevTools UI.  Try Focus Mode for yourself by enabling the **Focus Mode** experiment in DevTools **Settings** > **Experiments**.
 
-See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
-
 
 <!-- ====================================================================== -->
 ## 3D View tool supports changing color themes in DevTools
@@ -96,7 +93,6 @@ In previous versions of Microsoft Edge, changing the theme in DevTools and then 
 ![The 3D View tool now supports changing color themes](./devtools-images/3d-view-with-color-theme.png)
 
 See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
 * [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
 
 

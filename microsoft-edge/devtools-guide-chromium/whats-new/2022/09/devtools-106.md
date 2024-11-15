@@ -126,9 +126,6 @@ There are many DevTools color themes to choose from, such as **Monokai** and **S
 
 ![Setting the DevTools theme to Monokai](./devtools-106-images/set-theme-monokai.png)
 
-See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
-
 
 <!-- ====================================================================== -->
 ## Accessibility improvements in Focus Mode and high contrast mode

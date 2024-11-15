@@ -83,7 +83,12 @@ Old redirects (to /archive/)
       },
       {
         "source_path": "microsoft-edge/devtools-guide-chromium/customize/dark-theme.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/customize/theme",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/landing/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/devtools-guide-chromium/customize/theme.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/landing/",
         "redirect_document_id": false
       },
       {

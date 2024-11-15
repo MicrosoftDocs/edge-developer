@@ -116,12 +116,15 @@ In previous versions of Microsoft Edge, in Focus Mode, hovering over a tool's ic
 <!-- Subtitle: Customize DevTools to match VS Code with themes like Solarized Light, Kimbie Dark, Monokai, or Tomorrow Night Blue. -->
 <!-- Reviewer: Irene Cho -->
 
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+* Light+
+* Dark+
+
 In previous versions of Microsoft Edge, applying themes from Microsoft Visual Studio Code such as Solarized Light or Kimbie Dark caused low-contrast issues when hovering over items in the **Customize and control DevTools** menu.  In Microsoft Edge 113, this issue has been fixed.  Items in the **Customize and control DevTools** menu are now displayed with sufficient color contrast:
 
 ![Sufficient color contrast in the Customize DevTools menu with the Solarized Light theme](./devtools-113-images/themes-contrast-in-context-menu.png)
 
 See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
 * [Test text-color contrast using the Color Picker](../../../accessibility/color-picker.md)
 * [Check text-color contrast in the default state using the Inspect tool](../../../accessibility/test-inspect-text-contrast.md)
 
