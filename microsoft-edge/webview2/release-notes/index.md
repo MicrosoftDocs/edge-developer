@@ -218,7 +218,7 @@ Added a new ScreenCaptureStarting event.  This event is raised whenever the WebV
   * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_MAXIMIZE`
   * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_MINIMIZE`
 
----
+***** <!-- /tabset -->
 
 
 <!-- ------------------------------ -->
@@ -290,6 +290,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 #### Promotions
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
+
 
 <!-- ---------- -->
 ###### Configure the security warning when saving a file (`SaveFileSecurityCheckStarting` event)
