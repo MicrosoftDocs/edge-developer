@@ -218,7 +218,7 @@ Added a new ScreenCaptureStarting event.  This event is raised whenever the WebV
   * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_MAXIMIZE`
   * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_MINIMIZE`
 
-***** <!-- /tabset -->
+*****
 
 
 <!-- ------------------------------ -->
