@@ -81,7 +81,6 @@ The UI controls now have high contrast:
 <!-- Desert theme, Edge 109 -->
 
 See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
 * [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
 * [Change color contrast in Windows](https://support.microsoft.com/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696)
 
