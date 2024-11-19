@@ -208,7 +208,7 @@ Covers:
 
 See also:
 * [What's New in DevTools (Microsoft Edge 108)](../devtools-guide-chromium/whats-new/2022/12/devtools-108.md)<!-- has Video section -->
-* [Create an extension that customizes the DevTools UI](../extensions-chromium/developer-guide/devtools-extension.md)
+* [Create a DevTools extension, adding a custom tool tab and panel](../extensions-chromium/developer-guide/devtools-extension.md)
 * [The heap snapshot file format](../devtools-guide-chromium/memory-problems/heap-snapshot-schema.md)
 * [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/?form=MA13LH) - download Edge WebDriver.
 

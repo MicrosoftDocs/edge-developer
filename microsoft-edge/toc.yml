@@ -1052,7 +1052,7 @@
                 - name: Declare API permissions in the manifest
                   href: extensions-chromium/developer-guide/declare-permissions.md
 
-            - name: Create an extension that customizes the DevTools UI
+            - name: Create a DevTools extension, adding a custom tool tab and panel
               href: extensions-chromium/developer-guide/devtools-extension.md
 
             - name: Develop an extension for the Microsoft Edge sidebar
