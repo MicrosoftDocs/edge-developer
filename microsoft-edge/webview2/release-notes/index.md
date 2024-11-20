@@ -12,7 +12,7 @@ ms.date: 11/18/2024
 
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
 
-<!-- this webpage covers the most recent ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers:
+<!-- this webpage covers the most recent ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers: 
 Nov 2024
 Oct 2024
 Sep 2024
