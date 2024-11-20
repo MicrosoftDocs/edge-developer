@@ -97,14 +97,6 @@ See [Zoom DevTools in or out](../overview.md#zoom-devtools-in-or-out) in _Overvi
 
 
 <!-- ====================================================================== -->
-## Color themes
-
-See [Apply a color theme to DevTools](theme.md).
-
-![Selecting a different color theme](./index-images/theme-setting.png)
-
-
-<!-- ====================================================================== -->
 ## Restore default settings
 
 To restore the default theme, placement, tools order, and any other customized settings, select **Settings** > **Preferences**, scroll down, and then click **Restore defaults and refresh**:
