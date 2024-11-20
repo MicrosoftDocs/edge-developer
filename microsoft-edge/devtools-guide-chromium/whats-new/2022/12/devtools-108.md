@@ -81,7 +81,6 @@ The UI controls now have high contrast:
 <!-- Desert theme, Edge 109 -->
 
 See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
 * [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
 * [Change color contrast in Windows](https://support.microsoft.com/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696)
 
@@ -123,7 +122,7 @@ Microsoft Edge 108 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 108)](https://developer.chrome.com/blog/new-in-devtools-108) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 108)](https://developer.chrome.com/blog/new-in-devtools-108) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->

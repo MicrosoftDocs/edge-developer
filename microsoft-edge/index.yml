@@ -309,19 +309,19 @@ conceptualContent:
               url: ./test-and-automation/devtools-protocol.md
               itemType: how-to-guide
 
-            - text: Origin Trials
+            - text: Use origin trials in Microsoft Edge
               url: ./origin-trials/index.md
               itemType: overview
 
-            - text: Playwright
+            - text: Use Playwright to automate and test in Microsoft Edge
               url: ./playwright/index.md
               itemType: overview
 
-            - text: Puppeteer
+            - text: Puppeteer overview
               url: ./puppeteer/index.md
               itemType: how-to-guide
 
-            - text: WebDriver
+            - text: Use WebDriver to automate Microsoft Edge
               url: ./webdriver-chromium/index.md
               itemType: how-to-guide
 

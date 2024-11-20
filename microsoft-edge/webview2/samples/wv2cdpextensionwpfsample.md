@@ -17,7 +17,7 @@ This WebView2 sample demonstrates how to use the WebView2 CDP extension to use t
 
 *  Sample name: **WV2CDPExtensionWPFSample**
 *  Repo directory: [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample)
-*  Solution file: **WV2CDPExtensionWPFSample.sln**
+*  Solution file: `WV2CDPExtensionWPFSample.sln`
 
 This sample, **WV2CDPExtensionWPFSample**, is built with the WebView2 CDP Extension (the **Microsoft.Web.WebView2.DevToolsProtocolExtension** NuGet package).  This sample calls Chrome DevTools Protocol methods on a `DevToolsProtocolHelper` object in WebView2.
 
@@ -49,7 +49,7 @@ Microsoft Visual Studio (with .NET support) is required.  Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## Step 2 - Clone or download the WebView2Samples repo
 
-1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->

@@ -21,15 +21,12 @@ Sample apps that use WebView2 are available in the [WebView2Samples repo](https:
 | [Win32 sample app](samples/webview2apissample.md) | [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) | Main sample; extensive. |
 | [Win32 sample app with Visual Composition](samples/webview2samplewincomp.md) | [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp) | Windows Runtime Composition APIs leverage the Windows UI in Win32 app. |
 | [WebView2Browser (Win32 C++/JS)](samples/webview2browser.md) | [WebView2Browser repo](https://github.com/MicrosoftEdge/WebView2Browser) | Uses multiple WebView2 instances.  A major sample; has its own repo. |
-| [WinUI 2 (UWP) sample app](samples/webview2_sample_uwp.md) | [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) | &nbsp; |
+| [WinUI 2 (UWP) sample app](samples/webview2_sample_uwp.md) | [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) | |
+| [WinUI 3 (Windows App SDK) sample app](./samples/webview2-winui3-sample.md) | [WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample) | |
 | [WPF sample app](samples/webview2wpfbrowser.md) | [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser) | &nbsp; |
 | [WPF app with CDP extension](samples/wv2cdpextensionwpfsample.md) | [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample) | Use Chrome DevTools Protocol APIs in a WPF app. |
-| [WinForms sample app](samples/webview2windowsformsbrowser.md) | [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser) | &nbsp; |
+| [WinForms sample app](samples/webview2windowsformsbrowser.md) | [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser) | |
 
-
-<!--
-| [WinUI 3 (Windows App SDK) sample app](./samples/webview2-winui3-sample.md) | _pending_ PR: https://github.com/MicrosoftEdge/WebView2Samples/pull/142 [WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample) | [Tutorial](get-started/winui.md).<br/> [Completed tutorial project](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted). |
--->
 
 These articles provide the specific steps to set up your machine and build, run, and update each sample.
 

@@ -81,9 +81,6 @@ Thanks to your early feedback, we've continued to make improvements and bug fixe
 
 When using Focus Mode, all the same tools and custom themes are available as in the existing DevTools UI.  Try Focus Mode for yourself by enabling the **Focus Mode** experiment in DevTools **Settings** > **Experiments**.
 
-See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
-
 
 <!-- ====================================================================== -->
 ## 3D View tool supports changing color themes in DevTools
@@ -96,7 +93,6 @@ In previous versions of Microsoft Edge, changing the theme in DevTools and then 
 ![The 3D View tool now supports changing color themes](./devtools-images/3d-view-with-color-theme.png)
 
 See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
 * [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
 
 
@@ -112,7 +108,7 @@ Microsoft Edge version 97 also includes the following updates from the Chromium 
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97) and is authored by Jecelyn Yeen.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
