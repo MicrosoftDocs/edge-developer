@@ -1242,339 +1242,347 @@
 # WebView2
     - name: WebView2
       items:
-        - name: Introduction to Microsoft Edge WebView2
-          href: webview2/index.md
-
-        - name: Overview of WebView2 APIs
-          href: webview2/concepts/overview-features-apis.md
-
-        - name: Differences between Microsoft Edge and WebView2
-          href: webview2/concepts/browser-features.md
-
-        - name: Set up your Dev environment for WebView2
-          href: webview2/how-to/machine-setup.md
+        - name: Microsoft Edge extensions documentation
+          href: ./webview2/landing/index.yml  # landing page
+          displayName: landing
 
 # -----------------------------------------------------------------------------
-# Platforms: Intro, Samples, GetStarts
+    - name: Introduction and overview
+      items:
+        - name: Introduction to Microsoft Edge WebView2
+          href: ./webview2/index.md
+
+        - name: Overview of WebView2 APIs
+          href: ./webview2/concepts/overview-features-apis.md
+
+        - name: Differences between Microsoft Edge and WebView2
+          href: ./webview2/concepts/browser-features.md
+
+        - name: Set up your Dev environment for WebView2
+          href: ./webview2/how-to/machine-setup.md
+
+# -----------------------------------------------------------------------------
         - name: Platforms and samples
           items:
             - name: Win32
               items:
 #               - name: WebView2 in Win32 apps
-#                 href: webview2/platforms/win32.md
+#                 href: ./webview2/platforms/win32.md
 
                 - name: Win32 sample app
-                  href: webview2/samples/webview2apissample.md
+                  href: ./webview2/samples/webview2apissample.md
                   displayName: WebView2APISample, SampleApps # repo dir names
 
                 - name: Win32 sample app with Visual Composition
-                  href: webview2/samples/webview2samplewincomp.md
+                  href: ./webview2/samples/webview2samplewincomp.md
                   displayName: WebView2SampleWinComp  # repo dir name
 
                 - name: Win32 sample WebView2Browser
-                  href: webview2/samples/webview2browser.md
+                  href: ./webview2/samples/webview2browser.md
                   displayName: WebView2Browser  # repo dir name
 
                 - name: Get started with WebView2 in Win32 apps
-                  href: webview2/get-started/win32.md
+                  href: ./webview2/get-started/win32.md
                   displayName: Win32_GettingStarted  # repo dir name
 
             - name: WinUI 2 (UWP)
               items:
 #               - name: WebView2 in WinUI 2 (UWP) apps
-#                 href: webview2/platforms/winui2-uwp.md
+#                 href: ./webview2/platforms/winui2-uwp.md
 
                 - name: WinUI 2 (UWP) sample app
-                  href: webview2/samples/webview2_sample_uwp.md
+                  href: ./webview2/samples/webview2_sample_uwp.md
                   displayName: webview2_sample_uwp  # repo dir name
 
                 - name: Get started with WebView2 in WinUI 2 (UWP) apps
-                  href: webview2/get-started/winui2.md
+                  href: ./webview2/get-started/winui2.md
                   displayName: WinUI2_GettingStarted  # repo dir name
 
             - name: WinUI 3 (Windows App SDK)
               items:
 #               - name: WebView2 in WinUI 3 (Windows App SDK) apps
-#                 href: webview2/platforms/winui3-windows-app-sdk.md
+#                 href: ./webview2/platforms/winui3-windows-app-sdk.md
 
                 - name: WinUI 3 (Windows App SDK) sample app
-                  href: webview2/samples/webview2-winui3-sample.md
+                  href: ./webview2/samples/webview2-winui3-sample.md
                   displayName: WebView2_WinUI3_Sample  # repo dir name
 
                 - name: Get started with WebView2 in WinUI 3 (Windows App SDK) apps
-                  href: webview2/get-started/winui.md
+                  href: ./webview2/get-started/winui.md
                   displayName: WinUI3_GettingStarted  # repo dir name
 
             - name: WebView2 in WPF apps
               items:
 #               - name: WebView2 apps on Win32
-#                 href: webview2/platforms/wpf.md
+#                 href: ./webview2/platforms/wpf.md
 
                 - name: WPF sample app
-                  href: webview2/samples/webview2wpfbrowser.md
+                  href: ./webview2/samples/webview2wpfbrowser.md
                   displayName: WebView2WpfBrowser  # repo dir name
 
                 - name: WPF sample app with CDP extension
-                  href: webview2/samples/wv2cdpextensionwpfsample.md
+                  href: ./webview2/samples/wv2cdpextensionwpfsample.md
                   displayName: WV2CDPExtensionWPFSample  # repo dir name
 
                 - name: Get started with WebView2 in WPF apps
-                  href: webview2/get-started/wpf.md
+                  href: ./webview2/get-started/wpf.md
                   displayName: WPF_GettingStarted  # repo dir name
 
             - name: WinForms
               items:
 #               - name: WebView2 in WinForms apps
-#                 href: webview2/platforms/winforms.md
+#                 href: ./webview2/platforms/winforms.md
 
                 - name: WinForms sample app
-                  href: webview2/samples/webview2windowsformsbrowser.md
+                  href: ./webview2/samples/webview2windowsformsbrowser.md
                   displayName: WebView2WindowsFormsBrowser  # repo dir name
 
                 - name: Get started with WebView2 in WinForms apps
-                  href: webview2/get-started/winforms.md
+                  href: ./webview2/get-started/winforms.md
                   displayName: WinForms_GettingStarted  # repo dir name
 
             - name: HoloLens 2 Unity
               items:
 #               - name: WebView2 in HoloLens 2 Unity apps
-#                 href: webview2/platforms/hololens-2-unity.md
+#                 href: ./webview2/platforms/hololens-2-unity.md
 
                 - name: Get started with WebView2 in HoloLens 2 Unity apps (Preview)
-                  href: webview2/get-started/hololens2.md
+                  href: ./webview2/get-started/hololens2.md
                   displayName: HoloLens2_GettingStarted  # repo dir name
 
             - name: WebView2 sample apps
-              href: webview2/code-samples-links.md  # delete & redir?
+              href: ./webview2/code-samples-links.md  # delete & redir?
 
             - name: Getting Started tutorials
-              href: webview2/get-started/get-started.md  # delete & redir?
+              href: ./webview2/get-started/get-started.md  # delete & redir?
               displayName: GettingStartedGuides  # repo dir name
 
 # -----------------------------------------------------------------------------
         - name: "Main classes for WebView2: Environment, Controller, and Core"
-          href: webview2/concepts/environment-controller-core.md
+          href: ./webview2/concepts/environment-controller-core.md
 
+# -----------------------------------------------------------------------------
         - name: Navigation, events, and authentication
           items:
 
             - name: Navigation events for WebView2 apps
-              href: webview2/concepts/navigation-events.md
+              href: ./webview2/concepts/navigation-events.md
 
             - name: Handling process-related events in WebView2
-              href: webview2/concepts/process-related-events.md
+              href: ./webview2/concepts/process-related-events.md
 
             - name: Basic authentication for WebView2 apps
-              href: webview2/concepts/basic-authentication.md
+              href: ./webview2/concepts/basic-authentication.md
 
+# -----------------------------------------------------------------------------
         - name: Windowed vs. visual hosting of WebView2
-          href: webview2/concepts/windowed-vs-visual-hosting.md
+          href: ./webview2/concepts/windowed-vs-visual-hosting.md
 
 # -----------------------------------------------------------------------------
         - name: Customization and UI
           items:
             - name: Customize the UI of WebView2 apps
-              href: webview2/how-to/customize-ui.md
+              href: ./webview2/how-to/customize-ui.md
 
             - name: WebView2 browser flags  # todo: move entry
-              href: webview2/concepts/webview-features-flags.md
+              href: ./webview2/concepts/webview-features-flags.md
 
             - name: Custom management of network requests
-              href: webview2/how-to/webresourcerequested.md
+              href: ./webview2/how-to/webresourcerequested.md
               displayName: WebResourceRequested, WebResourceResponseReceived
 
             - name: Using frames in WebView2 apps
-              href: webview2/concepts/frames.md
+              href: ./webview2/concepts/frames.md
               displayName: iframe
 
             - name: Printing from WebView2 apps
-              href: webview2/how-to/print.md
+              href: ./webview2/how-to/print.md
 
             - name: Use local content in WebView2 apps
-              href: webview2/concepts/working-with-local-content.md
+              href: ./webview2/concepts/working-with-local-content.md
 
             - name: Customize context menus in WebView2
-              href: webview2/how-to/context-menus.md
+              href: ./webview2/how-to/context-menus.md
               displayName: right-click menu
 
 # -----------------------------------------------------------------------------
         - name: Web and native interop
           items:
             - name: Interop of native and web code
-              href: webview2/how-to/communicate-btwn-web-native.md
+              href: ./webview2/how-to/communicate-btwn-web-native.md
               displayName: JavaScript interop, Embed web content into native applications (JavaScript interop)  # old title
 
             - name: Call web-side code from native-side code
-              href: webview2/how-to/javascript.md
+              href: ./webview2/how-to/javascript.md
               displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
 
             - name: Call native-side code from web-side code
-              href: webview2/how-to/hostobject.md
+              href: ./webview2/how-to/hostobject.md
               displayName: AddHostObjectToScript, host objects
 
             - name: Call native-side WinRT code from web-side code
-              href: webview2/how-to/winrt-from-js.md
+              href: ./webview2/how-to/winrt-from-js.md
               displayName: AddHostObjectToScript, host objects
 
             - name: How WinRT types and members are represented in JavaScript
-              href: webview2/how-to/winrt-js-conversion.md
+              href: ./webview2/how-to/winrt-js-conversion.md
 
 # -----------------------------------------------------------------------------
         - name: Distribution and SDK versions
           items:
             - name: Deployment and distribution
-              href: webview2/concepts/deployment-distribution.md
+              href: ./webview2/concepts/deployment-distribution.md
 
             - name: Deployment samples
               items:
                 - name: WebView2 deployment samples
-                  href: webview2/samples/deployment-samples.md
+                  href: ./webview2/samples/deployment-samples.md
 
                 - name: WebView2 Deployment Visual Studio installer
-                  href: webview2/samples/wv2deploymentvsinstallersample.md
+                  href: ./webview2/samples/wv2deploymentvsinstallersample.md
                   displayName: WV2DeploymentVSInstallerSample  # repo dir name
 
                 - name: WiX Burn Bundle to deploy the WebView2 Runtime
-                  href: webview2/samples/wv2deploymentwixburnbundlesample.md
+                  href: ./webview2/samples/wv2deploymentwixburnbundlesample.md
                   displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
 
                 - name: WiX Custom Action to deploy the WebView2 Runtime
-                  href: webview2/samples/wv2deploymentwixcustomactionsample.md
+                  href: ./webview2/samples/wv2deploymentwixcustomactionsample.md
                   displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 
             - name: Prerelease and Release SDKs for WebView2
-              href: webview2/concepts/versioning.md
+              href: ./webview2/concepts/versioning.md
               displayName: experimental APIs, Understand WebView2 SDK versions, Understand the different WebView2 SDK versions  # old titles
 
             - name: Distribute your app and the WebView2 Runtime
-              href: webview2/concepts/distribution.md
+              href: ./webview2/concepts/distribution.md
 
             - name: Enterprise management of WebView2 Runtimes
-              href: webview2/concepts/enterprise.md
+              href: ./webview2/concepts/enterprise.md
               displayName: Manage WebView2 applications  # old title
 
             - name: Distribute an app as a single executable file
-              href: webview2/how-to/static.md
+              href: ./webview2/how-to/static.md
               displayName: Statically link the WebView2 loader library, single-file app  # old title
 
             - name: Publish a UWP WebView2 app to the Microsoft Store
-              href: webview2/how-to/publish-uwp-app-store.md
+              href: ./webview2/how-to/publish-uwp-app-store.md
               displayName: Partner Center, Microsoft Store
 
 # -----------------------------------------------------------------------------
         - name: Best practices
           items:
             - name: Development best practices for WebView2 apps
-              href: webview2/concepts/developer-guide.md
+              href: ./webview2/concepts/developer-guide.md
 
             - name: Develop secure WebView2 apps
-              href: webview2/concepts/security.md
+              href: ./webview2/concepts/security.md
 
 # -----------------------------------------------------------------------------
         - name: Test and automation for WebView2 apps  # vs. Edge "Test and automation"
           items:
             - name: Test upcoming APIs and features
-              href: webview2/how-to/set-preview-channel.md
+              href: ./webview2/how-to/set-preview-channel.md
 
             - name: Use the Chrome DevTools Protocol (CDP) in WebView2 apps
-              href: webview2/how-to/chromium-devtools-protocol.md
+              href: ./webview2/how-to/chromium-devtools-protocol.md
               displayName: chrome developer protocol  # catch mis-expansion
 
             - name: Use Playwright to automate and test in WebView2
-              href: webview2/how-to/playwright.md
+              href: ./webview2/how-to/playwright.md
 
             - name: Automate and test WebView2 apps with Microsoft Edge WebDriver
-              href: webview2/how-to/webdriver.md
+              href: ./webview2/how-to/webdriver.md
 
             - name: Prerelease testing using preview channels
-              href: webview2/how-to/prerelease-testing.md
+              href: ./webview2/how-to/prerelease-testing.md
 
             - name: Self-host by deploying preview channels
-              href: webview2/how-to/self-hosting.md
+              href: ./webview2/how-to/self-hosting.md
               displayName: self-hosting
 
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
           items:
             - name: Debug WebView2 apps
-              href: webview2/how-to/debug.md
+              href: ./webview2/how-to/debug.md
 
             - name: Debug WebView2 apps with Microsoft Edge DevTools
-              href: webview2/how-to/debug-devtools.md
+              href: ./webview2/how-to/debug-devtools.md
 
             - name: Debug WebView2 apps with Visual Studio Code
-              href: webview2/how-to/debug-visual-studio-code.md
+              href: ./webview2/how-to/debug-visual-studio-code.md
 
             - name: Debug WebView2 apps with Visual Studio
-              href: webview2/how-to/debug-visual-studio.md
+              href: ./webview2/how-to/debug-visual-studio.md
 
             - name: Remote debugging WebView2 WinUI 2 (UWP) apps
               items:
                 - name: Remote debugging WebView2 WinUI 2 (UWP) apps
-                  href: webview2/how-to/remote-debugging.md
+                  href: ./webview2/how-to/remote-debugging.md
                   displayName: remotely debug
 
                 - name: Remote debugging desktop WebView2 WinUI 2 (UWP) apps
-                  href: webview2/how-to/remote-debugging-desktop.md
+                  href: ./webview2/how-to/remote-debugging-desktop.md
                   displayName: remotely debug, Remote Tools for Microsoft Edge
 
                 - name: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
-                  href: webview2/how-to/remote-debugging-hololens.md
+                  href: ./webview2/how-to/remote-debugging-hololens.md
                   displayName: remotely debug, Remote Tools for Microsoft Edge
 
                 - name: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
-                  href: webview2/how-to/remote-debugging-xbox.md
+                  href: ./webview2/how-to/remote-debugging-xbox.md
                   displayName: remotely debug
 
 # -----------------------------------------------------------------------------
-        - name: Process and threading model  # name: Architecture
+        - name: Process and threading model  # can change to Architecture after arch article added
           items:
           # - name: Architecture of WebView2
-          #   href: webview2/concepts/architecture.md  # not created
+          #   href: ./webview2/concepts/architecture.md  # not created
 
             - name: Process model for WebView2 apps
-              href: webview2/concepts/process-model.md
+              href: ./webview2/concepts/process-model.md
 
             - name: Threading model for WebView2 apps
-              href: webview2/concepts/threading-model.md
+              href: ./webview2/concepts/threading-model.md
 
 # -----------------------------------------------------------------------------
         - name: User data and history
           items:
             - name: Manage user data folders
-              href: webview2/concepts/user-data-folder.md
+              href: ./webview2/concepts/user-data-folder.md
               displayName: Manage the user data folder  # old title
 
             - name: Support multiple profiles under a single user data folder
-              href: webview2/concepts/multi-profile-support.md
+              href: ./webview2/concepts/multi-profile-support.md
 
             - name: Clear browsing data from the user data folder
-              href: webview2/concepts/clear-browsing-data.md
+              href: ./webview2/concepts/clear-browsing-data.md
 
             - name: Data and privacy in WebView2
-              href: webview2/concepts/data-privacy.md
+              href: ./webview2/concepts/data-privacy.md
 
 # -----------------------------------------------------------------------------
         - name: Release Notes
           items:
             - name: About Release Notes for the WebView2 SDK
-              href: webview2/release-notes/about.md
+              href: ./webview2/release-notes/about.md
 
             - name: Release Notes for the WebView2 SDK
-              href: webview2/release-notes/index.md
+              href: ./webview2/release-notes/index.md
               displayName: what's new, announcements
 
             - name: Archived Release Notes for the WebView2 SDK
-              href: webview2/release-notes/archive.md
+              href: ./webview2/release-notes/archive.md
 
             - name: WebView2 Roadmap
-              href: webview2/roadmap.md
+              href: ./webview2/roadmap.md
 
 # -----------------------------------------------------------------------------
         - name: WebView2 Reference
           items:
             - name: WebView2 API Reference
-              href: webview2/webview2-api-reference.md
+              href: ./webview2/webview2-api-reference.md
               displayName: functions, methods, .NET, HoloLens, WinRT, Win32, JavaScript  # buckets not in "Filter by title"
 
             - name: .NET
@@ -1600,20 +1608,20 @@
             - name: WinRT
               items:
                 - name: Microsoft.Web.WebView2.Core
-                  href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
+                  href: ./webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
                 - name: COM Interop/C++
-                  href: /microsoft-edge/webview2/reference/winrt/interop/index
+                  href: ./webview2/reference/winrt/interop/index
                   displayName: functions, methods
 
             - name: Win32/C++
               items:
                 - name: Win32 C++ WebView2 API conventions
-                  href: webview2/concepts/win32-api-conventions.md
+                  href: ./webview2/concepts/win32-api-conventions.md
 
                 - name: Win32 C++ API Reference
-                  href: /microsoft-edge/webview2/reference/win32/index
+                  href: ./webview2/reference/win32/index
                   displayName: functions, methods
 
             - name: JavaScript
@@ -1638,10 +1646,10 @@
 
 # -----------------------------------------------------------------------------
         - name: WebView2 end-user FAQ
-          href: webview2/concepts/end-user-faq.md
+          href: ./webview2/concepts/end-user-faq.md
 
         - name: Contact the WebView2 team
-          href: webview2/contact.md
+          href: ./webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 # / WebView2
 
