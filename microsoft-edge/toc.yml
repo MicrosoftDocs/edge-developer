@@ -1381,7 +1381,7 @@
 # -----------------------------------------------------------------------------
         - name: Customization and UI
           items:
-            - name: Customize the UI of WebView2 apps
+            - name: Customizing the UI of WebView2 apps
               href: ./webview2/how-to/customize-ui.md
 
             - name: WebView2 browser flags
@@ -1398,7 +1398,7 @@
             - name: Printing from WebView2 apps
               href: ./webview2/how-to/print.md
 
-            - name: Use local content in WebView2 apps
+            - name: Using local content in WebView2 apps
               href: ./webview2/concepts/working-with-local-content.md
 
             - name: Customize context menus in WebView2

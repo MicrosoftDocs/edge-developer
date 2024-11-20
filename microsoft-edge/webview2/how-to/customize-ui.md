@@ -1,5 +1,5 @@
 ---
-title: Customize the UI in WebView2 apps
+title: Customizing the UI of WebView2 apps
 description: How to add custom right-click menus (context menus) to a WebView2 app, or add and remove items from the default WebView2 context menus.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 02/08/2022
 ---
-# Customize the UI in WebView2 apps
+# Customizing the UI of WebView2 apps
 
 <!-- presently omitted from TOC -->
 

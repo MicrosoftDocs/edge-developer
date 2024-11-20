@@ -1,5 +1,5 @@
 ---
-title: Use local content in WebView2 apps
+title: Using local content in WebView2 apps
 description: Ways to work with local content in WebView2 apps, including navigating to a file URL, navigating to a string, virtual host name mapping, or the WebResourceRequested event.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/10/2024
 ---
-# Use local content in WebView2 apps
+# Using local content in WebView2 apps
 
 In addition to loading remote content, content can also be loaded locally into WebView2.  There are several approaches that can be used to load local content into a WebView2 control, including: 
 * Navigating to a file URL.

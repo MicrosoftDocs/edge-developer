@@ -1970,7 +1970,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 *  Content from a constructed network request.
 
 See also:
-* [Use local content in WebView2 apps](./working-with-local-content.md)
+* [Using local content in WebView2 apps](./working-with-local-content.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

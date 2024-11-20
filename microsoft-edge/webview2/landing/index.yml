@@ -139,7 +139,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Customize the UI of WebView2 apps
+          - text: Customizing the UI of WebView2 apps
             url: ../how-to/customize-ui.md
 
           - text: Custom management of network requests
@@ -151,7 +151,7 @@ landingContent:
           - text: Printing from WebView2 apps
             url: ../how-to/print.md
 
-          - text: Use local content in WebView2 apps
+          - text: Using local content in WebView2 apps
             url: ../concepts/working-with-local-content.md
 
           - text: Customize context menus in WebView2

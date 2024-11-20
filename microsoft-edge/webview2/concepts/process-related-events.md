@@ -1,5 +1,5 @@
 ---
-title: Handle process-related events in WebView2
+title: Handling process-related events in WebView2
 description: Process-related events in WebView2 and how apps can handle them for recovery and improved reliability.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 07/13/2023
 ---
-# Handle process-related events in WebView2
+# Handling process-related events in WebView2
 
 WebView2 uses multiple processes to support the WebView2 controls in your application. Because these processes can exit during use, WebView2 provides the `CoreWebView2.ProcessFailed` and `CoreWebView2Environment.BrowserProcessExited` events.  Have your app use these events as follows, to react when these scenarios occur.
 
