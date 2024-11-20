@@ -56,12 +56,16 @@ landingContent:
           - text: Set up your Dev environment for WebView2
             url: ../how-to/machine-setup.md
 
+      - linkListType: whats-new
+        links:
           - text: Release Notes for the WebView2 SDK
             url: ../release-notes/index.md
 
           - text: WebView2 Roadmap
             url: ../roadmap.md
 
+      - linkListType: how-to-guide
+        links:
           - text: WebView2 end-user FAQ
             url: ../concepts/end-user-faq.md
 
@@ -76,9 +80,6 @@ landingContent:
         links:
           - text: WebView2 sample apps
             url: ../code-samples-links.md  # delete & redir?
-
-          - text: Get started with WebView2 in HoloLens 2 Unity apps (Preview)
-            url: ../get-started/hololens2.md
 
           - text: Win32 sample app
             url: ../samples/webview2apissample.md
@@ -103,15 +104,20 @@ landingContent:
           - text: Getting Started tutorials
             url: ../get-started/get-started.md  # delete & redir?
 
+          - text: Get started with WebView2 in HoloLens 2 Unity apps (Preview)
+            url: ../get-started/hololens2.md
+
 # =============================================================================
 # Card r1c3
   - title: Navigation, events, and authentication
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: architecture
         links:
           - text: "Main classes for WebView2: Environment, Controller, and Core"
             url: ../concepts/environment-controller-core.md
 
+      - linkListType: how-to-guide
+        links:
           - text: Navigation events for WebView2 apps
             url: ../concepts/navigation-events.md
 
@@ -136,9 +142,6 @@ landingContent:
           - text: Customize the UI of WebView2 apps
             url: ../how-to/customize-ui.md
 
-          - text: WebView2 browser flags  # todo: move entry
-            url: ../concepts/webview-features-flags.md
-
           - text: Custom management of network requests
             url: ../how-to/webresourcerequested.md
 
@@ -153,6 +156,11 @@ landingContent:
 
           - text: Customize context menus in WebView2
             url: ../how-to/context-menus.md
+
+      - linkListType: reference
+        links:
+          - text: WebView2 browser flags
+            url: ../concepts/webview-features-flags.md
 
 # =============================================================================
 # Card r2c2
@@ -172,6 +180,8 @@ landingContent:
           - text: Call native-side WinRT code from web-side code
             url: ../how-to/winrt-from-js.md
 
+      - linkListType: architecture
+        links:
           - text: How WinRT types and members are represented in JavaScript
             url: ../how-to/winrt-js-conversion.md
 
@@ -183,18 +193,6 @@ landingContent:
         links:
           - text: Deployment and distribution
             url: ../concepts/deployment-distribution.md
-
-          - text: WebView2 deployment samples
-            url: ../samples/deployment-samples.md
-
-          - text: WebView2 Deployment Visual Studio installer
-            url: ../samples/wv2deploymentvsinstallersample.md
-
-          - text: WiX Burn Bundle to deploy the WebView2 Runtime
-            url: ../samples/wv2deploymentwixburnbundlesample.md
-
-          - text: WiX Custom Action to deploy the WebView2 Runtime
-            url: ../samples/wv2deploymentwixcustomactionsample.md
 
           - text: Prerelease and Release SDKs for WebView2
             url: ../concepts/versioning.md
@@ -211,6 +209,20 @@ landingContent:
           - text: Publish a UWP WebView2 app to the Microsoft Store
             url: ../how-to/publish-uwp-app-store.md
 
+      - linkListType: sample
+        links:
+          - text: WebView2 deployment samples
+            url: ../samples/deployment-samples.md
+
+          - text: WebView2 Deployment Visual Studio installer
+            url: ../samples/wv2deploymentvsinstallersample.md
+
+          - text: WiX Burn Bundle to deploy the WebView2 Runtime
+            url: ../samples/wv2deploymentwixburnbundlesample.md
+
+          - text: WiX Custom Action to deploy the WebView2 Runtime
+            url: ../samples/wv2deploymentwixcustomactionsample.md
+
 # =============================================================================
 # Row 3
 
@@ -218,7 +230,7 @@ landingContent:
 # Card r3c1
   - title: Best practices
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: concept
         links:
           - text: Development best practices for WebView2 apps
             url: ../concepts/developer-guide.md
@@ -287,7 +299,7 @@ landingContent:
 # Card r4c1
   - title: Process and threading model
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: architecture
         links:
           - text: Process model for WebView2 apps
             url: ../concepts/process-model.md
@@ -310,6 +322,8 @@ landingContent:
           - text: Clear browsing data from the user data folder
             url: ../concepts/clear-browsing-data.md
 
+      - linkListType: concept
+        links:
           - text: Data and privacy in WebView2
             url: ../concepts/data-privacy.md
 
@@ -317,7 +331,7 @@ landingContent:
 # Card r4c3
   - title: WebView2 Reference
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: reference
         links:
           - text: WebView2 API Reference
             url: ../webview2-api-reference.md
