@@ -1247,19 +1247,19 @@
           displayName: landing
 
 # -----------------------------------------------------------------------------
-    - name: Introduction and overview
-      items:
-        - name: Introduction to Microsoft Edge WebView2
-          href: ./webview2/index.md
+        - name: Introduction and overview
+          items:
+            - name: Introduction to Microsoft Edge WebView2
+              href: ./webview2/index.md
 
-        - name: Overview of WebView2 APIs
-          href: ./webview2/concepts/overview-features-apis.md
+            - name: Overview of WebView2 APIs
+              href: ./webview2/concepts/overview-features-apis.md
 
-        - name: Differences between Microsoft Edge and WebView2
-          href: ./webview2/concepts/browser-features.md
+            - name: Differences between Microsoft Edge and WebView2
+              href: ./webview2/concepts/browser-features.md
 
-        - name: Set up your Dev environment for WebView2
-          href: ./webview2/how-to/machine-setup.md
+            - name: Set up your Dev environment for WebView2
+              href: ./webview2/how-to/machine-setup.md
 
 # -----------------------------------------------------------------------------
         - name: Platforms and samples
