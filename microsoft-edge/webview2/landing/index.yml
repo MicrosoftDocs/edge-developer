@@ -133,8 +133,6 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: 
-            url: 
           - text: Customize the UI of WebView2 apps
             url: ../how-to/customize-ui.md
 
@@ -183,8 +181,6 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: 
-            url: 
           - text: Deployment and distribution
             url: ../concepts/deployment-distribution.md
 

@@ -1505,7 +1505,7 @@
         - name: Debug WebView2 apps
           items:
             - name: Debug WebView2 apps
-              href: ./webview2/how-to/debug.md
+              href: ./webview2/how-to/debug.md  # can delete
 
             - name: Debug WebView2 apps with Microsoft Edge DevTools
               href: ./webview2/how-to/debug-devtools.md
@@ -1576,7 +1576,7 @@
               href: ./webview2/release-notes/archive.md
 
             - name: WebView2 Roadmap
-              href: ./webview2/roadmap.md
+              href: ./webview2/roadmap.md  # can delete
 
 # -----------------------------------------------------------------------------
         - name: WebView2 Reference
@@ -1608,11 +1608,11 @@
             - name: WinRT
               items:
                 - name: Microsoft.Web.WebView2.Core
-                  href: ./webview2/reference/winrt/microsoft_web_webview2_core/index
+                  href: ./webview2/reference/winrt/microsoft_web_webview2_core/index.md
                   displayName: functions, methods
 
                 - name: COM Interop/C++
-                  href: ./webview2/reference/winrt/interop/index
+                  href: ./webview2/reference/winrt/interop/index.md
                   displayName: functions, methods
 
             - name: Win32/C++
@@ -1621,7 +1621,7 @@
                   href: ./webview2/concepts/win32-api-conventions.md
 
                 - name: Win32 C++ API Reference
-                  href: ./webview2/reference/win32/index
+                  href: ./webview2/reference/win32/index.md
                   displayName: functions, methods
 
             - name: JavaScript
