@@ -31,6 +31,10 @@
 
 # What's New pages ------------------------------------------------------------
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 131
+              href: devtools-guide-chromium/whats-new/2024/11/devtools-131.md
+              displayName: What's New in DevTools (Microsoft Edge 131)  # top-of-page title
+
             - name: Microsoft Edge 130
               href: devtools-guide-chromium/whats-new/2024/10/devtools-130.md
               displayName: What's New in DevTools (Microsoft Edge 130)  # top-of-page title
@@ -67,15 +71,15 @@
               href: devtools-guide-chromium/whats-new/2024/02/devtools-122.md
               displayName: What's New in DevTools (Microsoft Edge 122)  # top-of-page title
 
-            - name: Microsoft Edge 121
-              href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
-              displayName: What's New in DevTools (Microsoft Edge 121)  # top-of-page title
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 121
+                  href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
+                  displayName: What's New in DevTools (Microsoft Edge 121)  # top-of-page title
 
                 - name: Microsoft Edge 120
                   href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
@@ -743,10 +747,6 @@
               href: devtools-guide-chromium/customize/index.md
               displayName: settings
 
-            - name: Apply a color theme to DevTools  # orig: "Enable dark theme"
-              href: devtools-guide-chromium/customize/theme.md
-              displayName: Settings, Preferences
-
             - name: Change DevTools placement (Undock, Dock to bottom, Dock to left)
               href: devtools-guide-chromium/customize/placement.md
               displayName: settings
@@ -1052,7 +1052,7 @@
                 - name: Declare API permissions in the manifest
                   href: extensions-chromium/developer-guide/declare-permissions.md
 
-            - name: Create an extension that customizes the DevTools UI
+            - name: Create a DevTools extension, adding a custom tool tab and panel
               href: extensions-chromium/developer-guide/devtools-extension.md
 
             - name: Develop an extension for the Microsoft Edge sidebar
@@ -1356,9 +1356,6 @@
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
 
-            - name: WebView2 browser flags
-              href: webview2/concepts/webview-features-flags.md
-
             - name: "Main classes for WebView2: Environment, Controller, and Core"
               href: webview2/concepts/environment-controller-core.md
 
@@ -1534,6 +1531,9 @@
             - name: Data and privacy
               href: webview2/concepts/data-privacy.md
               displayName: Data and privacy in WebView2  # top-of-page title
+
+            - name: WebView2 browser flags
+              href: webview2/concepts/webview-features-flags.md
 
 # -----------------------------------------------------------------------------
         - name: Deployment and distribution

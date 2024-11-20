@@ -41,12 +41,9 @@ This experiment helps you investigate when a `postMessage` call occurred, and ho
 To use this feature, in DevTools, select **Customize and control DevTools** (![the Customize and control DevTools icon](./devtools-124-images/customize-and-control-devtools-icon.png)) > **Settings** > **Experiments**, select the checkbox **Timeline: Show postMessage dispatch and handling flows**, click the **Close** (X) button, and then click the **Reload DevTools** button.
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)<!-- todo: update per below after PR 3132 is merged -->
+* [View messages between windows, iframes, and dedicated workers](../../../evaluate-performance/reference.md#view-messages-between-windows-iframes-and-dedicated-workers) in _Performance features reference_.
 * [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
 * [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
-<!--
-* [View messages between windows, iframes, and dedicated workers] in _Performance features reference_.
-(in open PR 3132)-->
 
 
 <!-- ====================================================================== -->
