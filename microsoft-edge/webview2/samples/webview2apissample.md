@@ -10,7 +10,7 @@ ms.date: 08/11/2023
 ---
 # Win32 sample app
 
-The **WebView2APISample** app demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
+The **WebView2APISample** app demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.  This is the main Win32 sample, and has test webpages for the latest features and APIs, and hundreds of menuitems to test various APIs.
 
 *  Sample name: **WebView2APISample**
 *  Repo directory: [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)
@@ -35,8 +35,14 @@ The running **WebView2APISample** app window shows the WebView2 SDK version and 
 ![Sample App Snapshot](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Samples/master/SampleApps/WebView2APISample/documentation/screenshots/sample-app-screenshot.png)
 -->
 
-If this is your first time using WebView, we recommend first following the tutorial [Get started with WebView2 in Win32 apps](../get-started/win32.md), which goes over how to create a WebView2 app and walks through some basic WebView2 functionality.  That particular tutorial doesn't start with you creating a new Win32 project using a project template; instead, it starts with a finished project in the WebView2Samples repo, and walks you through the added WebView2 code.
-<!-- the getstart tut should probably create new app from project template, but, currently starts from existing project, that is provided now as a finished project -->
+Suggested sequence of using articles and provided projects:
+
+1. Get this **WebView2APISample** to build and run, using the present article.  Even if your own app is for a different platform.
+
+1. If you're most interested in a platform other than Win32, use the Sample article for your platform; see [Sample apps](../code-samples-links.md).
+
+1. Use the Get Started article for the platform you're interested in; see [Getting Started tutorials](../get-started/get-started.md).
+
 
 For details of events and API handlers in WebView2, see [WebView2 API Reference](../webview2-api-reference.md).
 
