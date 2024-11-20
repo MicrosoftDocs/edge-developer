@@ -468,7 +468,7 @@ The WebView2 control gives your app access to many browser features.  You can mo
 * [Printing](#printing)
 * [Cookies](#cookies)
 * [Image capture](#image-capture)
-   * [Control whether the screen capture UI is shown (ScreenCaptureStarting event)](#control-whether-the-screen-capture-ui-is-shown-screencapturestarting-event)
+   * [Control whether the screen capture UI is shown](#control-whether-the-screen-capture-ui-is-shown)
 * [Downloads](#downloads)
 * [Save as](#save-as)
 * [Web notification handling](#web-notification-handling)
@@ -615,7 +615,7 @@ By hosting WebView2, your app can capture screenshots and indicate which format 
 
 
 <!-- ---------- -->
-###### Control whether the screen capture UI is shown (ScreenCaptureStarting event)
+###### Control whether the screen capture UI is shown
 
 The `ScreenCaptureStarting` event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown.  The app can then block the UI from being displayed, or allow the UI to be displayed.
 
