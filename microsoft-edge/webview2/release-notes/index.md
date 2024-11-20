@@ -138,18 +138,10 @@ The following APIs have been promoted to Stable and are now included in this Rel
 <!-- ---------- -->
 ###### Control whether the screen capture UI is shown (ScreenCaptureStarting event)
 
-Added a new ScreenCaptureStarting event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the CoreWebView2Frame (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown.  The app can then block the UI from being displayed, or allow the UI to be displayed.
+Added a new `ScreenCaptureStarting` event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown.  The app can then block the UI from being displayed, or allow the UI to be displayed.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- tested list/links -->
-
-<!-- not found:
-   * [CoreWebView2.Cancel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cancel?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.handled?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.originalsourceframeinfo?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2.GetDeferral Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.getdeferral?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
--->
 * `CoreWebView2` Class:
    * [CoreWebView2.ScreenCaptureStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.screencapturestarting?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
 
@@ -169,32 +161,24 @@ Added a new ScreenCaptureStarting event.  This event is raised whenever the WebV
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: test links -->
-
 * `CoreWebView2` Class:
-   * [CoreWebView2.Cancel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#cancel)
-   * [CoreWebView2.Handled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#handled)
-   * [CoreWebView2.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#originalsourceframeinfo)
    * [CoreWebView2.ScreenCaptureStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#screencapturestarting)
-   * [CoreWebView2.GetDeferral Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#getdeferral)
 
 * `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.ScreenCaptureStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.2903.40&preserve-view=true#screencapturestarting)
 
 * [CoreWebView2NonClientRegionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2nonclientregionkind?view=webview2-winrt-1.0.2903.40&preserve-view=true)
-   * `CoreWebView2NonClientRegionKind.Close`
-   * `CoreWebView2NonClientRegionKind.Maximize`
    * `CoreWebView2NonClientRegionKind.Minimize`
+   * `CoreWebView2NonClientRegionKind.Maximize`
+   * `CoreWebView2NonClientRegionKind.Close`
 
 * [CoreWebView2ScreenCaptureStartingEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2ScreenCaptureStartingEventArgs.Cancel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)<!-- todo: add member to url, copied from .net - ok? -->
-   * [CoreWebView2ScreenCaptureStartingEventArgs.GetDeferral Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)<!-- todo: add member to url, copied from .net - ok? -->
-   * [CoreWebView2ScreenCaptureStartingEventArgs.Handled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)<!-- todo: add member to url, copied from .net - ok? -->
-   * [CoreWebView2ScreenCaptureStartingEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)<!-- todo: add member to url, copied from .net - ok? -->
+   * [CoreWebView2ScreenCaptureStartingEventArgs.Cancel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
+   * [CoreWebView2ScreenCaptureStartingEventArgs.Handled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
+   * [CoreWebView2ScreenCaptureStartingEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
+   * [CoreWebView2ScreenCaptureStartingEventArgs.GetDeferral Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
 
 ##### [Win32/C++](#tab/win32cpp)
-
-<!-- tested list/links -->
 
 * [ICoreWebView2_27](/microsoft-edge/webview2/reference/win32/icorewebview2_27?view=webview2-1.0.2903.40&preserve-view=true)
   * [ICoreWebView2_27::add_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2_27?view=webview2-1.0.2903.40&preserve-view=true#add_screencapturestarting)
@@ -204,7 +188,7 @@ Added a new ScreenCaptureStarting event.  This event is raised whenever the WebV
   * [ICoreWebView2Frame6::add_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2frame6?view=webview2-1.0.2903.40&preserve-view=true#add_screencapturestarting)
   * [ICoreWebView2Frame6::remove_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2frame6?view=webview2-1.0.2903.40&preserve-view=true#remove_screencapturestarting)
 
-* [ICoreWebView2FrameScreenCaptureStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framescreencapturestartingeventhandler?view=webview2-1.0.2903.40&preserve-view=true)
+* [ICoreWebView2FrameScreenCaptureStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framescreencapturestartingeventhandler?view=webview2-1.0.2903.40&preserve-view=true)<!-- win32 only -->
 
 * [ICoreWebView2ScreenCaptureStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true)
   * [ICoreWebView2ScreenCaptureStartingEventArgs::get_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#get_cancel)
@@ -214,12 +198,12 @@ Added a new ScreenCaptureStarting event.  This event is raised whenever the WebV
   * [ICoreWebView2ScreenCaptureStartingEventArgs::put_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#put_cancel)
   * [ICoreWebView2ScreenCaptureStartingEventArgs::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#put_handled)
 
-* [ICoreWebView2ScreenCaptureStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventhandler?view=webview2-1.0.2903.40&preserve-view=true)
+* [ICoreWebView2ScreenCaptureStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventhandler?view=webview2-1.0.2903.40&preserve-view=true)<!-- win32 only -->
 
 * [COREWEBVIEW2_NON_CLIENT_REGION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2903.40&preserve-view=true#corewebview2_non_client_region_kind)
-  * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_CLOSE`
-  * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_MAXIMIZE`
   * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_MINIMIZE`
+  * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_MAXIMIZE`
+  * `COREWEBVIEW2_NON_CLIENT_REGION_KIND_CLOSE`
 
 ---
 
