@@ -45,7 +45,7 @@ To avoid pausing on extension code:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page was found at `https://developer.chrome.com/docs/devtools/javascript/ignore-chrome-extension-scripts/` and was authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools & Lighthouse).<!--todo: find where moved or got archived to-->
+> The original page was found at `https://developer.chrome.com/docs/devtools/javascript/ignore-chrome-extension-scripts/` and was authored by Kayce Basques.
 
 [![Creative Commons License](../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -32,6 +32,10 @@ Catch up on all of this news and more in our year-in-review blog post, [Looking 
 
 [![Screenshot of the blog post: Looking back at Microsoft Edge for developers in 2021](./devtools-images/blog-post-edge-devs-2021.png)](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/)
 
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+* Light+
+* Dark+
+
 
 <!-- ====================================================================== -->
 ## Automate IE mode with Internet Explorer Driver
@@ -156,7 +160,7 @@ Microsoft Edge version 98 also includes the following updates from the Chromium 
 <!--
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 98)](https://developer.chrome.com/blog/new-in-devtools-98) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 98)](https://developer.chrome.com/blog/new-in-devtools-98) and is authored by Jecelyn Yeen.
 -->
 
 

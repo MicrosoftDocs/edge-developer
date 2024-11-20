@@ -140,7 +140,6 @@ In the **Network** tool, with the **Desert** contrast theme applied in Windows, 
 ![The Network tool with the Desert contrast theme applied](./devtools-110-images/hc-mode-network-tool.png)
 
 See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
 * [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
 * [Change color contrast in Windows](https://support.microsoft.com/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696)
 
@@ -161,7 +160,7 @@ Microsoft Edge 110 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 110)](https://developer.chrome.com/blog/new-in-devtools-110) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 110)](https://developer.chrome.com/blog/new-in-devtools-110) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->

@@ -31,6 +31,10 @@
 
 # What's New pages ------------------------------------------------------------
             # move eleventh oldest into Archive bucket
+            - name: Microsoft Edge 131
+              href: devtools-guide-chromium/whats-new/2024/11/devtools-131.md
+              displayName: What's New in DevTools (Microsoft Edge 131)  # top-of-page title
+
             - name: Microsoft Edge 130
               href: devtools-guide-chromium/whats-new/2024/10/devtools-130.md
               displayName: What's New in DevTools (Microsoft Edge 130)  # top-of-page title
@@ -67,15 +71,15 @@
               href: devtools-guide-chromium/whats-new/2024/02/devtools-122.md
               displayName: What's New in DevTools (Microsoft Edge 122)  # top-of-page title
 
-            - name: Microsoft Edge 121
-              href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
-              displayName: What's New in DevTools (Microsoft Edge 121)  # top-of-page title
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 121
+                  href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
+                  displayName: What's New in DevTools (Microsoft Edge 121)  # top-of-page title
 
                 - name: Microsoft Edge 120
                   href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
@@ -519,12 +523,6 @@
                 - name: Find and fix problems using the Issues tool
                   href: devtools-guide-chromium/issues/index.md
                   displayName: Issues tool
-# JavaScript Profiler tool ----------------------------------------------------
-            - name: JavaScript Profiler tool
-              items:
-                - name: JavaScript Profiler tool
-                  href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
-                  displayName: JavaScript Profiler tool
 # Lighthouse tool -------------------------------------------------------------
             - name: Lighthouse tool  # new jump page  # main article is in Accessibility
               items:
@@ -748,10 +746,6 @@
             - name: Customize DevTools  # orig: "Customization"
               href: devtools-guide-chromium/customize/index.md
               displayName: settings
-
-            - name: Apply a color theme to DevTools  # orig: "Enable dark theme"
-              href: devtools-guide-chromium/customize/theme.md
-              displayName: Settings, Preferences
 
             - name: Change DevTools placement (Undock, Dock to bottom, Dock to left)
               href: devtools-guide-chromium/customize/placement.md
@@ -1058,7 +1052,7 @@
                 - name: Declare API permissions in the manifest
                   href: extensions-chromium/developer-guide/declare-permissions.md
 
-            - name: Create an extension that customizes the DevTools UI
+            - name: Create a DevTools extension, adding a custom tool tab and panel
               href: extensions-chromium/developer-guide/devtools-extension.md
 
             - name: Develop an extension for the Microsoft Edge sidebar
@@ -1187,7 +1181,7 @@
               href: progressive-web-apps-chromium/how-to/microsoft-store.md
               displayName: Publish a Progressive Web App to the Microsoft Store  # top-of-page title
 
-            - name: Experimental features and origin trials
+            - name: Experimental features and origin trials for PWAs
               href: progressive-web-apps-chromium/how-to/origin-trials.md
 
             - name: Use Progressive Web Apps in Microsoft Edge
@@ -1219,17 +1213,15 @@
             - name: Synchronize and update a PWA in the background
               href: progressive-web-apps-chromium/how-to/background-syncs.md
 
-            - name: Handle files
+            - name: Handle files in Progressive Web Apps
               href: progressive-web-apps-chromium/how-to/handle-files.md
-              displayName: Handle files in Progressive Web Apps  # top-of-page title
 
-            - name: Handle links
+            - name: Handle links to your Progressive Web App
               href: progressive-web-apps-chromium/how-to/handle-urls.md
-              displayName: handle urls, Handle links to your Progressive Web App  # top-of-page title
+              displayName: handle urls
 
-            - name: Handle protocols
+            - name: Handle protocols in Progressive Web Apps
               href: progressive-web-apps-chromium/how-to/handle-protocols.md
-              displayName: Handle protocols in Progressive Web Apps  # top-of-page title
 
             - name: Display content in the title bar area using Window Controls Overlay
               href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
@@ -1246,9 +1238,9 @@
             - name: Build PWAs for the sidebar in Microsoft Edge
               href: progressive-web-apps-chromium/how-to/sidebar.md
 
-        - name: What's New
+        - name: What's New in Progressive Web Apps
           href: progressive-web-apps-chromium/whats-new/pwa.md
-          displayName: release notes, announcements, What's New in Progressive Web Apps  # top-of-page title
+          displayName: release notes, announcements
 
         - name: Progressive Web App demos
           href: progressive-web-apps-chromium/demo-pwas.md
@@ -1323,10 +1315,9 @@
               href: webview2/samples/webview2_sample_uwp.md
               displayName: webview2_sample_uwp, WinUI 2 (UWP) sample app  # repo dir name, top-of-page title
 
-# pending, July 26 2022
-#            - name: WinUI 3 sample app
-#              href: webview2/samples/webview2-winui3-sample.md
-#              displayName: WebView2_WinUI3_Sample  # repo dir name
+            - name: WinUI 3 (Windows App SDK) sample app
+              href: webview2/samples/webview2-winui3-sample.md
+              displayName: WebView2_WinUI3_Sample  # repo dir name
 
             - name: WPF sample app
               href: webview2/samples/webview2wpfbrowser.md
@@ -1364,9 +1355,6 @@
           items:
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
-
-            - name: WebView2 browser flags
-              href: webview2/concepts/webview-features-flags.md
 
             - name: "Main classes for WebView2: Environment, Controller, and Core"
               href: webview2/concepts/environment-controller-core.md
@@ -1544,6 +1532,9 @@
               href: webview2/concepts/data-privacy.md
               displayName: Data and privacy in WebView2  # top-of-page title
 
+            - name: WebView2 browser flags
+              href: webview2/concepts/webview-features-flags.md
+
 # -----------------------------------------------------------------------------
         - name: Deployment and distribution
           items:
@@ -1671,7 +1662,7 @@
         - name: DevTools Protocol
           href: test-and-automation/devtools-protocol.md
 
-        - name: Use Origin Trials in Microsoft Edge
+        - name: Use origin trials in Microsoft Edge
           href: origin-trials/index.md
 
         - name: Use Playwright to automate and test in Microsoft Edge

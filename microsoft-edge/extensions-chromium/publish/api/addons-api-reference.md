@@ -18,7 +18,7 @@ For an overview, see [Using the REST API for updating Microsoft Edge Add-ons](./
 <!-- ------------------------------ -->
 #### Versions of the Update REST API
 
-As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.  Later, v1 will no longer be supported.  The date for ending v1 support is not yet finalized.
+As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.  Support for v1 will end on December 31, 2024.
 
 
 <!-- ====================================================================== -->

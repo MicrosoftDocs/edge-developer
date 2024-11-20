@@ -25,6 +25,10 @@ ms.date: 07/30/2021
 <!-- Title: Apply themes from Visual Studio Code to DevTools -->
 <!-- Subtitle: You can now use some of the most popular color themes from Visual Studio Code, such as Monokai and Solarized Dark, in Microsoft Edge DevTools. -->
 
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+* Light+
+* Dark+
+
 In addition to the existing light and dark themes, Microsoft Edge DevTools now supports some of the most popular color themes from Visual Studio Code.  To select a color theme, click the DevTools **Settings** (![Settings icon](./devtools-images/settings-gear-icon-light-theme.png)) button, and then select a theme from the **Theme** dropdown list.
 
 ![Color themes for DevTools](./devtools-images/all-devtools-themes.png)
@@ -43,8 +47,6 @@ Dark themes:
 *  Solarized Dark
 *  Red
 *  Tomorrow Night Blue
-
-See [Apply color themes to DevTools](../../../customize/theme.md).
 
 
 <!-- ====================================================================== -->
@@ -207,7 +209,7 @@ For the history of this feature, see Issue [932971](https://bugs.chromium.org/p/
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate, Chrome DevTools).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by Jecelyn Yeen.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

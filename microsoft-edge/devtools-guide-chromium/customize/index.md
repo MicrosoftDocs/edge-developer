@@ -97,14 +97,6 @@ See [Zoom DevTools in or out](../overview.md#zoom-devtools-in-or-out) in _Overvi
 
 
 <!-- ====================================================================== -->
-## Color themes
-
-See [Apply a color theme to DevTools](theme.md).
-
-![Selecting a different color theme](./index-images/theme-setting.png)
-
-
-<!-- ====================================================================== -->
 ## Restore default settings
 
 To restore the default theme, placement, tools order, and any other customized settings, select **Settings** > **Preferences**, scroll down, and then click **Restore defaults and refresh**:
@@ -159,7 +151,7 @@ Check out this video to learn about the main parts of the DevTools UI, how to cu
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/customize/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/customize/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

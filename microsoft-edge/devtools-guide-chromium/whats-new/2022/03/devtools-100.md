@@ -134,6 +134,10 @@ See also:
 <!-- Title: Themes from Visual Studio Code now apply to the Waterfall view -->
 <!-- Subtitle: The Waterfall view of requests in the Network tool now match the VS Code themes. -->
 
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+* Light+
+* Dark+
+
 In previous versions of Microsoft Edge, the **Waterfall** view of requests in the **Network** tool didn't match the themes from Visual Studio Code that apply to the rest of DevTools.  In Microsoft Edge 100, this issue has been fixed.
 
 Before Microsoft Edge 100, the selected theme wasn't applied in the Waterfall view:
@@ -145,7 +149,6 @@ Now in Microsoft Edge 100, the selected theme is applied to the Waterfall view o
 ![The selected theme is now applied to the Waterfall view of requests in the Network tool](devtools-100-images/waterfall-view-requests-network.png)
 
 See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md) - using themes from Visual Studio Code in DevTools.
 * [Display the timing relationship of requests](../../../network/reference.md#display-the-timing-relationship-of-requests) in _Network features reference_ - the Waterfall view for requests in the Network tool.
 
 
@@ -164,7 +167,7 @@ Microsoft Edge version 100 also includes the following updates from the Chromium
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 100)](https://developer.chrome.com/blog/new-in-devtools-100) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 100)](https://developer.chrome.com/blog/new-in-devtools-100) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
