@@ -1608,11 +1608,11 @@
             - name: WinRT
               items:
                 - name: Microsoft.Web.WebView2.Core
-                  href: ./webview2/reference/winrt/microsoft_web_webview2_core/index.md
+                  href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: functions, methods
 
                 - name: COM Interop/C++
-                  href: ./webview2/reference/winrt/interop/index.md
+                  href: /microsoft-edge/webview2/reference/winrt/interop/index
                   displayName: functions, methods
 
             - name: Win32/C++
@@ -1621,7 +1621,7 @@
                   href: ./webview2/concepts/win32-api-conventions.md
 
                 - name: Win32 C++ API Reference
-                  href: ./webview2/reference/win32/index.md
+                  href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
 
             - name: JavaScript
