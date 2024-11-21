@@ -10,7 +10,7 @@ ms.date: 11/21/2024
 ---
 # Get Microsoft Store billing service using Digital Goods API
 
-A Progressive Web App (PWA) that's installed on the desktop can display content where the title bar normally is, to make the PWA feel more native, by using the Window Controls Overlay API.
+If your Progressive Web App (PWA) is listed in the Microsoft Store, you can provide in-app products and subscriptions through the [Digital Goods API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md) and the [Payment Request API](https://www.w3.org/TR/payment-request/).
 
 The Window Controls Overlay API does the following:
 *  Allows you to display web content over the entire surface area of the app.
