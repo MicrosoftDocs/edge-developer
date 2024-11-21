@@ -44,7 +44,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Check if the Digital Goods API is available
+## Checking whether the Digital Goods API is available
 
 To detect whether you've correctly enabled the API on your website, check for the `getDigitalGoodsService` method in the window object:
 
@@ -59,7 +59,7 @@ if ('getDigitalGoodsService' in window) {
 
 
 <!-- ====================================================================== -->
-## Connect to the Microsoft Store Billing service (getDigitalGoodsService)
+## Connecting to the Microsoft Store Billing service (getDigitalGoodsService)
 
 The Digital Goods API was designed to be compatible with various browsers and digital stores, similar to how the Payment Request API is browser-agnostic and can be used with different payment providers.  To retrieve an instance of the service for Microsoft Store Billing, pass the string `"https://store.microsoft.com/billing"` as the payment method to `getDigitalGoodsService()`.
 
@@ -115,7 +115,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Purchase an item
+## Purchasing an item (show)
 
 Once your products and details are displayed to the user, you can implement the purchase flow by using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
 
@@ -189,9 +189,9 @@ The `listPurchases` method doesn't return consumed products or expired subscript
 
 
 <!-- ====================================================================== -->
-## Purchase history (listPurchaseHistory)
+## Getting the purchase history (listPurchaseHistory)
 
-The `listPurchaseHistory()` method returns the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed.  This method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.
+The `listPurchaseHistory()` method returns a list that shows the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed.  This method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.
 
 ```javascript
 purchases = await digitalGoodsService.listPurchaseHistory();
