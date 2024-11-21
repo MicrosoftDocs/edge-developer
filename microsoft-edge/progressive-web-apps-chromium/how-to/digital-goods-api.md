@@ -59,9 +59,9 @@ if ('getDigitalGoodsService' in window) {
 
 
 <!-- ====================================================================== -->
-## Connect to the Microsoft Store Billing service
+## Connect to the Microsoft Store Billing service (getDigitalGoodsService)
 
-The Digital Goods API was designed to be compatible with various browsers and digital stores, similar to how the Payment Request API is browser-agnostic and can be used with different payment providers. To retrieve an instance of the service for Microsoft Store Billing, pass the string `"https://store.microsoft.com/billing"` as the payment method to `getDigitalGoodsService()`.
+The Digital Goods API was designed to be compatible with various browsers and digital stores, similar to how the Payment Request API is browser-agnostic and can be used with different payment providers.  To retrieve an instance of the service for Microsoft Store Billing, pass the string `"https://store.microsoft.com/billing"` as the payment method to `getDigitalGoodsService()`.
 
 If the method throws an error, the Microsoft Store Billing payment method is not available (e.g. the user is accessing your PWA through the browser). Alternatively, consider providing a different payment method for transactions.
 
@@ -83,7 +83,7 @@ try {
 
 
 <!-- ====================================================================== -->
-## Querying item details
+## Querying item details (getDetails)
 
 After connecting the Digital Goods service to Microsoft Store, you can use the API to access product and purchase information.
 
@@ -117,7 +117,7 @@ See also:
 <!-- ====================================================================== -->
 ## Purchase an item
 
-Once your products and details are displayed to the user, you can implement the purchase flow using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
+Once your products and details are displayed to the user, you can implement the purchase flow by using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
 
 Use the `supportedMethods` member of the `methodData`⁠⁠ parameter in the `PaymentRequest` to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`.  Then in the `data` member, pass along the item ID as the `sku`.
 
@@ -138,7 +138,7 @@ Then call the `show()` method to start the payment flow:
 const response = await request.show();
 ```
 
-This will display the Store purchase UI to the user, where the user can view details about the product that they're trying to purchase.  During this process, the current browser session is temporarily disabled until the purchase flow is complete.  The user can either abandon the transaction, or proceed with the payment:
+This will display the Store purchase UI to the user, where the user can view details about the product that they're trying to purchase.  During this process, the current browser session is temporarily disabled until the purchase flow is complete.  The user can either cancel the transaction, or proceed with the payment:
 
 * If the user cancels the payment, the Promise that's returned by `show()` will be rejected with an error.
 
@@ -150,7 +150,7 @@ In the `details` property of the payment response, a purchase token is returned.
 <!-- ====================================================================== -->
 ## Acknowledging a purchase
 
-The payment response will return a "purchase token" string, which can be used for direct communication between the developer's server and the service provider beyond the Digital Goods API.  Such communication can allow you (the developer) to independently verify information about the purchase before granting entitlements.
+The payment response returns a "purchase token" string, which can be used for direct communication between the developer's server and the service provider beyond the Digital Goods API.  Such communication can allow you (the developer) to independently verify information about the purchase before granting entitlements.
 
 Some stores might require that you (the developer) acknowledge a purchase after the purchase has succeeded, to confirm that the purchase has been recorded.
 
