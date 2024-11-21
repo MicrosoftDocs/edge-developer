@@ -46,7 +46,7 @@ See also:
 <!-- ====================================================================== -->
 ## Check if the Digital Goods API is available
 
-You can detect if you’ve correctly enabled the API on your website by checking for the getDigitalGoodsService method in the window object. 
+To detect whether you've correctly enabled the API on your website, check for the `getDigitalGoodsService` method in the window object:
 
 ```javascript
 if ('getDigitalGoodsService' in window) {
@@ -111,7 +111,7 @@ The item's `price` is a `PaymentCurrencyAmount` that contains the current price 
 See also:
 * [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken)
 * [5. PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API_ at W3C.
-* [Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) at MDN.
+* [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) at MDN.
 
 
 <!-- ====================================================================== -->
@@ -204,5 +204,14 @@ for (p of purchases) {
 <!-- ====================================================================== -->
 ## See also
 
-* [Digital Goods API](https://wicg.github.io/digital-goods/) at WICG repo.<!-- todo: when url is live, standardize link text & appended location -->
+* [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
+* [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken)
+
+W3C:
+* [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/)
+* [Payment Request API](https://www.w3.org/TR/payment-request/)
+* [5. PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API_.
+
+MDN:
+* [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 * [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override)<!-- todo: delete link? "override" not in article body   -->
