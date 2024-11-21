@@ -205,4 +205,4 @@ for (p of purchases) {
 ## See also
 
 * [Digital Goods API](https://wicg.github.io/digital-goods/) at WICG repo.<!-- todo: when url is live, standardize link text & appended location -->
-* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override)
+* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override)<!-- todo: delete link? "override" not in article body   -->
