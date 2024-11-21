@@ -59,11 +59,13 @@ if ('getDigitalGoodsService' in window) {
 
 
 <!-- ====================================================================== -->
-## Connecting to the Microsoft Store Billing service (getDigitalGoodsService)
+## Connecting to the Microsoft Store Billing service
 
-The Digital Goods API was designed to be compatible with various browsers and digital stores, similar to how the Payment Request API is browser-agnostic and can be used with different payment providers.  To retrieve an instance of the service for Microsoft Store Billing, pass the string `"https://store.microsoft.com/billing"` as the payment method to `getDigitalGoodsService()`.
+Use the `getDigitalGoodsService` method to connect to the Microsoft Store Billing service.
 
-If the method throws an error, the Microsoft Store Billing payment method is not available (e.g. the user is accessing your PWA through the browser). Alternatively, consider providing a different payment method for transactions.
+The Digital Goods API was designed to be compatible with various browsers and digital stores, similar to how the Payment Request API is browser-agnostic and can be used with different payment providers.  To retrieve an instance of the service for Microsoft Store Billing, pass the string `"https://store.microsoft.com/billing"` as the payment method to the `getDigitalGoodsService` method.
+
+If the method throws an error, the Microsoft Store Billing payment method is not available (such as when the user is accessing your PWA through the browser).  Alternatively, consider providing a different payment method for transactions.
 
 ```javascript
 if (window.getDigitalGoodsService === undefined) {
@@ -83,13 +85,13 @@ try {
 
 
 <!-- ====================================================================== -->
-## Querying item details (getDetails)
+## Querying item details
 
-After connecting the Digital Goods service to Microsoft Store, you can use the API to access product and purchase information.
+Use the `getDetails` method to query item details.
 
-The `getDetails()` method lets you get information about the items you’ve set up in the Partner Center. Information like the product title, description, and price should be displayed to the user in your app UI so they know what is available for purchase.
+After connecting the Digital Goods service to Microsoft Store, you can use the API to access product and purchase information.  The `getDetails` method lets you get information about the items you’ve set up in the Partner Center.  Display information such as the product title, description, and price in your app UI, so the user knows what's available for purchase.
 
-The `getDetails()` method will need a list of item IDs which correspond to the product IDs of the in-app products and subscriptions you created in the Partner Center.
+The `getDetails` method takes a list of item IDs, which correspond to the product IDs of the in-app products and subscriptions you created in the Partner Center.
 
 ```javascript
 details = await digitalGoodsService.getDetails(['shiny_sword', 'gem', 'monthly_subscription']);
@@ -102,9 +104,9 @@ for (item of details) {
 }
 ```
 
-The returned `itemDetails` sequence may be in any order and may not include an item if it doesn't exist on the server (i.e. there is not a 1:1 correspondence between the input list and output).
+The returned `itemDetails` sequence may be in any order, and may not<!-- todo: might not? --> include an item if the item doesn't exist on the server (that is, if there's not a 1:1 correspondence between the input list and output).<!-- todo: output list? -->
 
-The item ID is a string that represents the primary key of the items.  As in Microsoft Store, the item ID is `InAppOfferToken`.  There is no function to get a list of item IDs; those should be hard-coded in the client code or fetched from your own server (the developer's server).
+The item ID is a string that represents the primary key of the items.  As in Microsoft Store, the item ID is `InAppOfferToken`.  There is no function to get a list of item IDs; item IDs should be hardcoded in the client code or fetched from your own server (the developer's server).
 
 The item's `price` is a `PaymentCurrencyAmount` that contains the current price of the item in the user's current region and currency.  The `price` is designed to be formatted for the user's current locale by using `Intl.NumberFormat`, as shown above.
 
@@ -115,7 +117,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Purchasing an item (show)
+## Purchasing an item
+
+Use the `show` method to purchase an item, after you construct a request that contains item details.
 
 Once your products and details are displayed to the user, you can implement the purchase flow by using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
 
@@ -129,10 +133,9 @@ const request = new PaymentRequest(
     data: {sku: item.itemId}}
   ]
 );
-
 ```
 
-Then call the `show()` method to start the payment flow:
+Then call the `show` method to start the payment flow:
 
 ```javascript
 const response = await request.show();
@@ -140,7 +143,7 @@ const response = await request.show();
 
 This will display the Store purchase UI to the user, where the user can view details about the product that they're trying to purchase.  During this process, the current browser session is temporarily disabled until the purchase flow is complete.  The user can either cancel the transaction, or proceed with the payment:
 
-* If the user cancels the payment, the Promise that's returned by `show()` will be rejected with an error.
+* If the user cancels the payment, the Promise that's returned by the `show` method will be rejected with an error.
 
 * If the user successfully pays and completes the purchase, the Promise will resolve with a `PaymentResponse`.
 
@@ -150,13 +153,15 @@ In the `details` property of the payment response, a purchase token is returned.
 <!-- ====================================================================== -->
 ## Acknowledging a purchase
 
-The payment response returns a "purchase token" string, which can be used for direct communication between the developer's server and the service provider beyond the Digital Goods API.  Such communication can allow you (the developer) to independently verify information about the purchase before granting entitlements.
+The payment response returns a _purchase token_ string, which can be used for direct communication between your server and the service provider beyond the Digital Goods API.  Such communication can allow you to independently verify information about the purchase before granting entitlements.
 
 Some stores might require that you (the developer) acknowledge a purchase after the purchase has succeeded, to confirm that the purchase has been recorded.
 
 
 <!-- ====================================================================== -->
-## Consuming a purchase (consume)
+## Consuming a purchase
+
+Use the `consume` method to consume a purchase.
 
 A _consumable purchase_ is a purchase that's designed to be purchased multiple times.  A consumable purchase usually needs to be marked as "consumed" before the purchase can be purchased again by the user.  An example of a consumable purchase is an in-game powerup that makes the player stronger for a short period of time.
 
@@ -168,9 +173,9 @@ digitalGoodsService.consume(purchaseToken);
 
 
 <!-- ====================================================================== -->
-## Checking existing purchases (listPurchases)
+## Checking existing purchases
 
-The `listPurchases` method returns information about the user's existing purchases.  This method allows a client to get a list of items that are currently owned or purchased by the user.  This may be necessary, to do either of the following:
+Use the `listPurchases` method to check existing purchases.  This method returns information about the user's existing purchases.  This method allows a client to get a list of items that are currently owned or purchased by the user.  This may be necessary, to do either of the following:
 
 * Check for entitlements, such as whether a subscription, promotional code, or permanent upgrade is active.
 
@@ -189,9 +194,9 @@ The `listPurchases` method doesn't return consumed products or expired subscript
 
 
 <!-- ====================================================================== -->
-## Getting the purchase history (listPurchaseHistory)
+## Getting the purchase history
 
-The `listPurchaseHistory()` method returns a list that shows the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed.  This method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.
+Use the `listPurchaseHistory` method to get the purchase history.  This method returns a list that shows the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed.  This method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.
 
 ```javascript
 purchases = await digitalGoodsService.listPurchaseHistory();
