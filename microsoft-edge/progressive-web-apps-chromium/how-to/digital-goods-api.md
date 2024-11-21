@@ -108,7 +108,7 @@ The item's `price` is a `PaymentCurrencyAmount` that contains the current price 
 
 See also:
 * [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken)
-* [5. PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API_ at W3C.
+* [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API_ at W3C.
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) at MDN.
 
 
@@ -211,7 +211,7 @@ for (p of purchases) {
 W3C:
 * [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/)
 * [Payment Request API](https://www.w3.org/TR/payment-request/)
-* [5. PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API_.
+* [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API_.
 
 MDN:
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
