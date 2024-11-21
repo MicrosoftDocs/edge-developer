@@ -2,8 +2,8 @@
 title: Get Microsoft Store billing service using Digital Goods API
 description: Use the Digital Goods API to
 author: MSEdgeTeam
-ms.author: 
-ms.topic: 
+ms.author: msedgedevrel
+ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 11/21/2024
@@ -116,17 +116,29 @@ Purchases that are designed to be purchased multiple times usually need to be ma
 digitalGoodsService.consume(purchaseToken);
 ```
 
+## Checking existing purchases
 
+The `listPurchases` method allows a client to get a list of items that are currently owned or purchased by the user. This may be necessary to check for entitlements (e.g. whether a subscription, promotional code, or permanent upgrade is active) or to recover from network interruptions during a purchase (e.g. item is purchased but not yet acknowledged). The method returns item IDs and purchase tokens, which should be verified using a direct developer-to-provider API before granting entitlements.
 
+```javascript
+purchases = await digitalGoodsService.listPurchases();
+for (p of purchases) {
+  VerifyAndGrantEntitlement(p.itemId, p.purchaseToken);
+}
+```
+>Note: `listPurchases` method will not return any consumed product or expired subscription.
 
+## Purchase history
+While `listPurchases` will return information about the user’s existing purchases, the `listPurchaseHistory()` method will return the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed. The `listPurchaseHistory()` method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.
 
-
+```javascript
+purchases = await digitalGoodsService.listPurchaseHistory();
+for (p of purchases) {
+  VerifyAndCheckExpiredEntitlement(p.itemId, p.purchaseToken);
+}
+```
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md) - DevTools feature.
-* [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
-* [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
-* [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)
-* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN.
+* [Digital Goods API]([https://developer.mozilla.org/docs/Web/Manifest/display_override](https://wicg.github.io/digital-goods/)) at WICG.
