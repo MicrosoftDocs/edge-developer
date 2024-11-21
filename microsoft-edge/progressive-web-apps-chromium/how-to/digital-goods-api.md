@@ -80,6 +80,41 @@ The item ID is a string representing the primary key of the items, as in Microso
 
 The item’s `price` is a <code>[PaymentCurrencyAmount](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount)</code> containing the current price of the item in the user’s current region and currency. It is designed to be formatted for the user’s current locale using <code>[Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)</code>, as shown above.
 
+## Purchase an item
+Once your products and details are displayed to the user, you can implement the purchase flow using the Payment Request API. When combined with the Digital Goods API, the only required input parameter is `methodData`.
+
+Use the supportedMethods member of the `methodData`⁠⁠ parameter in the `PaymentRequest` to identify Google Play Billing as the payment method with the string `"https://store.microsoft.com/billing"`. Then in the `data` member, pass along the item ID as the `sku`.
+
+```javascript
+const details = await digitalGoodsService.getDetails(['monthly_subscription']);
+const item = details[0];
+const request = new PaymentRequest(
+  [{supportedMethods: 'https://store.microsoft.com/billing',
+    data: {sku: item.itemId}}
+  ]
+);
+
+```
+
+
+Then call the `show()` method to start the payment flow.
+
+```javascript
+const response = await request.show();
+```
+This will display the Store purchase UI to the user, where they’ll see the details about the product they’re trying to purchase. During this process, the current browser session will be temporarily disabled until the purchase flow is complete. They can either abandon the transaction or proceed with the payment. If the user cancels the payment, the promise returned by `show()` will be rejected with an error. If they successfully pay and complete the purchase, the promise will resolve with a `PaymentResponse`. In the details property of the payment response, a purchase token is returned.
+
+## Acknowledging a purchase
+
+The payment response will return a "purchase token" string, which can be used for direct communication between the developer's server and the service provider beyond the Digital Goods API. Such communication can allow the developer to independently verify information about the purchase before granting entitlements. Some stores might require that the developer acknowledges a purchase once it has succeeded, to confirm that it has been recorded.
+
+
+## Consuming a purchase
+Purchases that are designed to be purchased multiple times usually need to be marked as "consumed" before they can be purchased again by the user. An example of a consumable purchase is an in-game powerup that makes the player stronger for a short period of time. This can be done with the `consume` method:
+
+```javascript
+digitalGoodsService.consume(purchaseToken);
+```
 
 
 
