@@ -14,10 +14,6 @@ ms.date: 11/21/2024
 
 If your Progressive Web App (PWA) is listed in the Microsoft Store, you can provide in-app products and subscriptions by using the Digital Goods API and the Payment Request API.
 
-See also:
-* [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
-* [Payment Request API](https://www.w3.org/TR/payment-request/) at W3C.
-
 
 <!-- ====================================================================== -->
 ## Digital Goods API
@@ -28,10 +24,11 @@ The Digital Goods API is an interface between your PWA app and Microsoft Store. 
 * Checking the digital items that are currently owned by the user.
 * Checking the purchase history of the user.
 
-Before making the Digital Goods API available in your app, make sure that - _todo: finish sentence_
-
-See also:
+See:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
+* [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/)<!-- todo: keep this link, here? -->
+
+Before making the Digital Goods API available in your app, make sure that - _todo: finish sentence_
 
 
 <!-- ====================================================================== -->
@@ -39,8 +36,7 @@ See also:
 
 The Payment Request API⁠⁠ handles the actual payment transaction when a purchase is made by user.  The Payment Request API uses the item details that the Digital Goods API provides, to make the in-app purchase by using whichever billing payment method the user has set up at the Microsoft Store.
 
-See also:
-* [Payment Request API](https://www.w3.org/TR/payment-request/) at W3C.
+See [Payment Request API](https://www.w3.org/TR/payment-request/) at W3C.
 
 
 <!-- ====================================================================== -->
