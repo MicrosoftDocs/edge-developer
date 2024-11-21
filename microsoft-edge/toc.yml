@@ -5,15 +5,14 @@
     - name: Develop for the web with Microsoft Edge
       href: develop-web-microsoft-edge.md
 
+# =============================================================================
+# DevTools
     - name: Microsoft Edge DevTools
       items:
-# Card-based landing page -----------------------------------------------------
+# Lannding page -----------------------------------------------------
         - name: Microsoft Edge DevTools documentation
           href: devtools-guide-chromium/landing/index.yml
           displayName: DevTools
-
-# =============================================================================
-# DevTools Overview articles:
 
 # Overview of DevTools --------------------------------------------------------
         - name: Overview of DevTools
@@ -910,7 +909,7 @@
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+# DevTools for VS Code
         - name: DevTools for Visual Studio Code
           items:
 
@@ -987,6 +986,7 @@
 # /DevTools
 
 # =============================================================================
+# Extensions
     - name: Microsoft Edge extensions
       items:
         - name: Microsoft Edge extensions documentation
@@ -1158,11 +1158,10 @@
         - name: Contact the Microsoft Edge extensions team
           href: extensions-chromium/publish/contact-extensions-team.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues
-
 # /Extensions
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+# PWAs
     - name: Progressive Web Apps
       items:
         - name: Overview of Progressive Web Apps (PWAs)
@@ -1177,9 +1176,8 @@
 
         - name: How to
           items:
-            - name: Publish a PWA to the Microsoft Store
+            - name: Publish a Progressive Web App to the Microsoft Store
               href: progressive-web-apps-chromium/how-to/microsoft-store.md
-              displayName: Publish a Progressive Web App to the Microsoft Store  # top-of-page title
 
             - name: Experimental features and origin trials for PWAs
               href: progressive-web-apps-chromium/how-to/origin-trials.md
@@ -1238,15 +1236,19 @@
             - name: Build PWAs for the sidebar in Microsoft Edge
               href: progressive-web-apps-chromium/how-to/sidebar.md
 
+            - name: Get a Microsoft Store billing service by using the Digital Goods API
+              href: progressive-web-apps-chromium/how-to/digital-goods-api.md
+
         - name: What's New in Progressive Web Apps
           href: progressive-web-apps-chromium/whats-new/pwa.md
           displayName: release notes, announcements
 
         - name: Progressive Web App demos
           href: progressive-web-apps-chromium/demo-pwas.md
+# /PWAs
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+# WebView2
     - name: WebView2
       items:
         - name: Introduction to Microsoft Edge WebView2
@@ -1650,10 +1652,10 @@
         - name: Contact the WebView2 team
           href: webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
-# / WebView2 articles
+# /WebView2
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+# Test and automation
     - name: Test and automation
       items:
         - name: Test and automation in Microsoft Edge  # new firstchild article
@@ -1681,14 +1683,16 @@
 
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
+
             - name: Contact the Microsoft Edge WebDriver team
               href: webdriver-chromium/contact.md
 
         - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
+# /Test and automation
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+# Development tips/ Web platform
     - name: Development tips for Microsoft Edge
       items:
         - name: Development tips for Microsoft Edge
@@ -1726,9 +1730,10 @@
 
         - name: Sign up for the Ad Selection API
           href: ./web-platform/ad-selection-api.md
+# /Development tips/ Web platform
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+# IDE integration
     - name: Microsoft Edge IDE integration
       items:
         - name: Microsoft Edge IDE integration
@@ -1746,9 +1751,10 @@
 
         - name: Visual Studio for web development
           href: visual-studio/index.md
+# /IDE integration
 
 # =============================================================================
-# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
+# Accessibility in Microsoft Edge
     - name: Accessibility in Microsoft Edge
       items:
         - name: Accessibility in Microsoft Edge
@@ -1765,6 +1771,7 @@
 
         - name: Resources for accessibility testing
           href: accessibility/test.md
+# /Accessibility in Microsoft Edge
 
 #==============================================================================
 # DualEngine
@@ -1786,6 +1793,7 @@
         - name: DualEngine Win32 C++ Reference
           href: dualengine/reference/index.md
           displayName: functions, methods
+# /DualEngine
 
 # =============================================================================
 # bottom leaf nodes
