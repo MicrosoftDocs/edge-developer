@@ -83,7 +83,7 @@ The item’s `price` is a <code>[PaymentCurrencyAmount](https://www.w3.org/TR/pa
 ## Purchase an item
 Once your products and details are displayed to the user, you can implement the purchase flow using the Payment Request API. When combined with the Digital Goods API, the only required input parameter is `methodData`.
 
-Use the supportedMethods member of the `methodData`⁠⁠ parameter in the `PaymentRequest` to identify Google Play Billing as the payment method with the string `"https://store.microsoft.com/billing"`. Then in the `data` member, pass along the item ID as the `sku`.
+Use the supportedMethods member of the `methodData`⁠⁠ parameter in the `PaymentRequest` to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`. Then in the `data` member, pass along the item ID as the `sku`.
 
 ```javascript
 const details = await digitalGoodsService.getDetails(['monthly_subscription']);
