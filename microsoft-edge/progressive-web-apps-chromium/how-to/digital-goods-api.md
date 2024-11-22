@@ -1,5 +1,5 @@
 ---
-title: Get a Microsoft Store billing service by using the Digital Goods API
+title: In-app Purchase with the Digital Goods API
 description: Use the Digital Goods API to get a Microsoft Store billing service.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 11/21/2024
 ---
-# Get a Microsoft Store billing service by using the Digital Goods API
+# In-app Purchase with the Digital Goods API
 <!-- todo: improve title (in 3+ spots) -->
 <!-- todo: improve the description: field above; sync w/ Sentence 1; develop clear wording for both spots -->
 
