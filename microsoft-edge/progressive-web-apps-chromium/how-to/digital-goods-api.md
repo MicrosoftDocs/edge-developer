@@ -28,7 +28,6 @@ See:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
 * [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/)<!-- todo: keep this link, here? -->
 
-Before making the Digital Goods API available in your app, make sure that - _todo: finish sentence_
 
 
 <!-- ====================================================================== -->
@@ -100,7 +99,7 @@ for (item of details) {
 }
 ```
 
-The returned `itemDetails` sequence may be in any order, and may not<!-- todo: might not? --> include an item if the item doesn't exist on the server (that is, if there's not a 1:1 correspondence between the input list and output).<!-- todo: output list? -->
+The returned `itemDetails` sequence may be in any order, and might not include an item if the item doesn't exist on the server (that is, if there's not a 1:1 correspondence between the input list and output list).
 
 The item ID is a string that represents the primary key of the items.  As in Microsoft Store, the item ID is `InAppOfferToken`.  There is no function to get a list of item IDs; item IDs should be hardcoded in the client code or fetched from your own server (the developer's server).
 
@@ -215,4 +214,3 @@ W3C:
 
 MDN:
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
-* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override)<!-- todo: delete link? "override" not in article body   -->
