@@ -279,6 +279,43 @@ landingContent:
 
 # =============================================================================
 # Card r4c1
+  - title: Architecture and Reference
+    linkLists:
+      - linkListType: architecture
+        links:
+          - text: Process model for WebView2 apps
+            url: ../concepts/process-model.md
+
+          - text: Threading model for WebView2 apps
+            url: ../concepts/threading-model.md
+
+      - linkListType: reference
+        links:
+          - text: WebView2 API Reference
+            url: ../webview2-api-reference.md
+
+# =============================================================================
+# Card r4c2
+  - title: User data and history
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage user data folders
+            url: ../concepts/user-data-folder.md
+
+          - text: Support multiple profiles under a single user data folder
+            url: ../concepts/multi-profile-support.md
+
+          - text: Clear browsing data from the user data folder
+            url: ../concepts/clear-browsing-data.md
+
+      - linkListType: concept
+        links:
+          - text: Data and privacy in WebView2
+            url: ../concepts/data-privacy.md
+
+# =============================================================================
+# Card r4c3
   - title: Debug WebView2 apps
     linkLists:
       - linkListType: how-to-guide
@@ -306,40 +343,3 @@ landingContent:
 
           - text: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
             url: ../how-to/remote-debugging-xbox.md
-
-# =============================================================================
-# Card r4c2
-  - title: Architecture and Reference
-    linkLists:
-      - linkListType: architecture
-        links:
-          - text: Process model for WebView2 apps
-            url: ../concepts/process-model.md
-
-          - text: Threading model for WebView2 apps
-            url: ../concepts/threading-model.md
-
-      - linkListType: reference
-        links:
-          - text: WebView2 API Reference
-            url: ../webview2-api-reference.md
-
-# =============================================================================
-# Card r4c3
-  - title: User data and history
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Manage user data folders
-            url: ../concepts/user-data-folder.md
-
-          - text: Support multiple profiles under a single user data folder
-            url: ../concepts/multi-profile-support.md
-
-          - text: Clear browsing data from the user data folder
-            url: ../concepts/clear-browsing-data.md
-
-      - linkListType: concept
-        links:
-          - text: Data and privacy in WebView2
-            url: ../concepts/data-privacy.md
