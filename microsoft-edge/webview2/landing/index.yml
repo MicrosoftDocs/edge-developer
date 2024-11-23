@@ -69,9 +69,6 @@ landingContent:
           - text: WebView2 end-user FAQ
             url: ../concepts/end-user-faq.md
 
-          - text: Contact the WebView2 team
-            url: ../contact.md
-
 # =============================================================================
 # Card r1c2
   - title: Platforms and samples
@@ -109,6 +106,24 @@ landingContent:
 
 # =============================================================================
 # Card r1c3
+  - title: Support and community
+    linkLists:
+      - linkListType: training
+        links:
+          - text: WebView2Announcements repo
+            url: https://github.com/MicrosoftEdge/WebView2Announcements
+
+          - text: WebView2Feedback repo
+            url: https://github.com/MicrosoftEdge/WebView2Feedback
+
+          - text: Contact the WebView2 team
+            url: ../contact.md
+
+# =============================================================================
+# Row 2
+
+# =============================================================================
+# Card r2c1
   - title: Navigation, events, and authentication
     linkLists:
       - linkListType: architecture
@@ -131,10 +146,7 @@ landingContent:
             url: ../concepts/windowed-vs-visual-hosting.md
 
 # =============================================================================
-# Row 2
-
-# =============================================================================
-# Card r2c1
+# Card r2c2
   - title: Customization and UI
     linkLists:
       - linkListType: how-to-guide
@@ -163,7 +175,7 @@ landingContent:
             url: ../concepts/webview-features-flags.md
 
 # =============================================================================
-# Card r2c2
+# Card r2c3
   - title: Web and native interop
     linkLists:
       - linkListType: how-to-guide
@@ -186,7 +198,10 @@ landingContent:
             url: ../how-to/winrt-js-conversion.md
 
 # =============================================================================
-# Card r2c3
+# Row 3
+
+# =============================================================================
+# Card r3c1
   - title: Distribution and SDK versions
     linkLists:
       - linkListType: how-to-guide
@@ -224,10 +239,7 @@ landingContent:
             url: ../samples/wv2deploymentwixcustomactionsample.md
 
 # =============================================================================
-# Row 3
-
-# =============================================================================
-# Card r3c1
+# Card r3c2
   - title: Best practices
     linkLists:
       - linkListType: concept
@@ -239,7 +251,7 @@ landingContent:
             url: ../concepts/security.md
 
 # =============================================================================
-# Card r3c2
+# Card r3c3
   - title: Test and automation for WebView2 apps
     linkLists:
       - linkListType: how-to-guide
@@ -263,7 +275,10 @@ landingContent:
             url: ../how-to/self-hosting.md
 
 # =============================================================================
-# Card r3c3
+# Row 4
+
+# =============================================================================
+# Card r4c1
   - title: Debug WebView2 apps
     linkLists:
       - linkListType: how-to-guide
@@ -293,11 +308,8 @@ landingContent:
             url: ../how-to/remote-debugging-xbox.md
 
 # =============================================================================
-# Row 4
-
-# =============================================================================
-# Card r4c1
-  - title: Process and threading model
+# Card r4c2
+  - title: Architecture and Reference
     linkLists:
       - linkListType: architecture
         links:
@@ -307,8 +319,13 @@ landingContent:
           - text: Threading model for WebView2 apps
             url: ../concepts/threading-model.md
 
+      - linkListType: reference
+        links:
+          - text: WebView2 API Reference
+            url: ../webview2-api-reference.md
+
 # =============================================================================
-# Card r4c2
+# Card r4c3
   - title: User data and history
     linkLists:
       - linkListType: how-to-guide
@@ -326,12 +343,3 @@ landingContent:
         links:
           - text: Data and privacy in WebView2
             url: ../concepts/data-privacy.md
-
-# =============================================================================
-# Card r4c3
-  - title: WebView2 Reference
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: WebView2 API Reference
-            url: ../webview2-api-reference.md

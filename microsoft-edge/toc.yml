@@ -1255,6 +1255,9 @@
             - name: Overview of WebView2 APIs
               href: ./webview2/concepts/overview-features-apis.md
 
+            - name: "Main classes for WebView2: Environment, Controller, and Core"
+              href: ./webview2/concepts/environment-controller-core.md
+
             - name: Differences between Microsoft Edge and WebView2
               href: ./webview2/concepts/browser-features.md
 
@@ -1358,10 +1361,6 @@
               displayName: GettingStartedGuides  # repo dir name
 
 # -----------------------------------------------------------------------------
-        - name: "Main classes for WebView2: Environment, Controller, and Core"
-          href: ./webview2/concepts/environment-controller-core.md
-
-# -----------------------------------------------------------------------------
         - name: Navigation, events, and authentication
           items:
 
@@ -1375,35 +1374,34 @@
               href: ./webview2/concepts/basic-authentication.md
 
 # -----------------------------------------------------------------------------
-        - name: Windowed vs. visual hosting of WebView2
-          href: ./webview2/concepts/windowed-vs-visual-hosting.md
-
-# -----------------------------------------------------------------------------
         - name: Customization and UI
           items:
             - name: Customizing the UI of WebView2 apps
               href: ./webview2/how-to/customize-ui.md
 
-            - name: WebView2 browser flags
-              href: ./webview2/concepts/webview-features-flags.md
-
-            - name: Custom management of network requests
-              href: ./webview2/how-to/webresourcerequested.md
-              displayName: WebResourceRequested, WebResourceResponseReceived
+            - name: Customize context menus in WebView2
+              href: ./webview2/how-to/context-menus.md
+              displayName: right-click menu
 
             - name: Using frames in WebView2 apps
               href: ./webview2/concepts/frames.md
               displayName: iframe
 
-            - name: Printing from WebView2 apps
-              href: ./webview2/how-to/print.md
+            - name: Windowed vs. visual hosting of WebView2
+              href: ./webview2/concepts/windowed-vs-visual-hosting.md
 
             - name: Using local content in WebView2 apps
               href: ./webview2/concepts/working-with-local-content.md
 
-            - name: Customize context menus in WebView2
-              href: ./webview2/how-to/context-menus.md
-              displayName: right-click menu
+            - name: Custom management of network requests
+              href: ./webview2/how-to/webresourcerequested.md
+              displayName: WebResourceRequested, WebResourceResponseReceived
+
+            - name: Printing from WebView2 apps
+              href: ./webview2/how-to/print.md
+
+            - name: WebView2 browser flags
+              href: ./webview2/concepts/webview-features-flags.md
 
 # -----------------------------------------------------------------------------
         - name: Web and native interop
@@ -1646,7 +1644,7 @@
 
 # -----------------------------------------------------------------------------
         - name: WebView2 end-user FAQ
-          href: ./webview2/concepts/end-user-faq.md
+          href: ./webview2/concepts/end-user-faq.md  # move to SMC docset
 
         - name: Contact the WebView2 team
           href: ./webview2/contact.md
