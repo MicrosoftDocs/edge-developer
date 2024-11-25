@@ -60,11 +60,11 @@ The following experimental features are turned on by default. You can use these 
 * [Performance panel: enable annotations](#performance-panel-enable-annotations)
 * [Performance panel: enable performance insights](#performance-panel-enable-performance-insights)
 * [Performance panel: enable live metrics landing page](#performance-panel-enable-live-metrics-landing-page)
-* [Floating entry points for the AI assistance panel](#floating-entry-points-for-the-ai-assistance-panel)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 <!-- Deprecate CSS <length> authoring tool in the Styles tab - non-Edge -->
+<!-- Floating entry points for the AI assistance panel - non-Edge -->
 
 **Turned on by default in Microsoft Edge Stable 131:**
 * [Redesign of the filter bar in the Network panel](#redesign-of-the-filter-bar-in-the-network-panel)
@@ -72,11 +72,11 @@ The following experimental features are turned on by default. You can use these 
 * [Performance panel: enable annotations](#performance-panel-enable-annotations)
 * [Performance panel: enable performance insights](#performance-panel-enable-performance-insights)
 * [Performance panel: enable live metrics landing page](#performance-panel-enable-live-metrics-landing-page)
-* [Floating entry points for the AI assistance panel](#floating-entry-points-for-the-ai-assistance-panel)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 <!-- Deprecate CSS <length> authoring tool in the Styles tab - non-Edge -->
+<!-- Floating entry points for the AI assistance panel - non-Edge -->
 
 
 <!-- ====================================================================== -->
@@ -500,8 +500,9 @@ Status:
 
 _new as of Microsoft Edge Canary 129_
 
-Enables annotations in the Performance tool.
-<!-- todo: need desc -->
+Annotations in the **Performance** tool allow you to double-click on any event that's displayed in the main area of a performance recording, and then add a custom label on (above) that event.
+
+<!-- ![An annotation in the Performance tool](./index-images/performance-panel-enable-annotations.png) -->
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
@@ -516,8 +517,7 @@ Status:
 
 _new as of Microsoft Edge Stable 129_
 
-In the **Performance** tool, adds the **Insights** sidebar tab, when viewing a recorded performance profile. The **Insights** sidebar tab provides useful information about the profile, such as the various **Largest Contentful Paint** phases and the list of **Render blocking requests**.
-<!-- todo old: desc -->
+In the **Performance** tool, adds the **Insights** sidebar tab, when viewing a recorded performance profile.  The **Insights** sidebar tab provides useful information about the profile, such as the various **Largest Contentful Paint** phases and the list of **Render blocking requests**.
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
@@ -569,12 +569,10 @@ Status:
 
 _new as of Microsoft Edge Stable 131_
 
-<!-- todo: desc -->
+Displays the **Extension storage** section in the **Application** tool.  The **Extension storage** section displays the data that's stored by extensions that are using the storage extension API.
 
-<!-- 
 See also: 
-* []()
--->
+* [chrome.storage](https://developer.chrome.com/docs/extensions/reference/api/storage/) API Reference in the Chrome Extensions docs.
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 133.
@@ -583,20 +581,8 @@ Status:
 
 <!-- ====================================================================== -->
 ## Floating entry points for the AI assistance panel
-<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
-_new as of Microsoft Edge Canary 133_
-
-<!-- todo: desc -->
-
-<!-- 
-See also: 
-* []()
--->
-
-Status:
-* This checkbox is present in Microsoft Edge Canary 133.
-* This checkbox is present in Microsoft Edge Stable 131.
+In Microsoft Edge, this checkbox has no effect.<!-- non-Edge -->
 
 
 <!-- ====================================================================== -->
@@ -604,12 +590,10 @@ Status:
 
 _new as of Microsoft Edge Canary 133_
 
-<!-- todo: desc -->
+Includes experimental insights in the **Insights** side panel in the **Performance** tool.
 
-<!-- 
 See also: 
-* []()
--->
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 133.
@@ -621,12 +605,14 @@ Status:
 
 _new as of Microsoft Edge Canary 133_
 
-<!-- todo: desc -->
+This experiment changes the color of certain events in the main section of the **Performance** tool to gray.  This happens in two cases:
 
-<!-- 
+* When you search for an event by using **Ctrl+F** and then type text, only the search matches retain their coloring; the other events turn gray.
+
+* When you use the **Insights** side-panel, and expand one of the insights, only the events that are related to that insight retain their coloring; the other events turn gray.
+
 See also: 
-* []()
--->
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 133.
@@ -638,12 +624,15 @@ Status:
 
 _new as of Microsoft Edge Canary 133_
 
-<!-- todo: desc -->
+In the **Performance** tool, adds a **Switch to an alternative timeline navigation** control inside the **Help/ Keyboard shortcuts** popup.  The switch lets you choose how the main chart reacts to mouse wheel events:
+* The mouse wheel zooms the chart in and out.
+* The mouse wheel pans the chart left and right.
+<!-- todo: when able to access UI, update desc & png -->
 
-<!-- 
+<!-- ![Alternative timeline navigation option](./index-images/alt-timeline-nav.png) -->
+
 See also: 
-* []()
--->
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 133.
