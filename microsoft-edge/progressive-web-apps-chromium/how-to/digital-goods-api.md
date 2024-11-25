@@ -1,15 +1,14 @@
 ---
-title: In-app Purchase with the Digital Goods API
-description: How to provide in-app purchase in Progressive Web App with the Digital Goods API and the Payment Request API.
+title: Provide in-app purchases with the Digital Goods API
+description: How to provide in-app purchases in a Progressive Web App by using the Digital Goods API and the Payment Request API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 11/21/2024
+ms.date: 11/25/2024
 ---
-# In-app Purchase with the Digital Goods API
-<!-- todo: improve the description: field above; sync w/ Sentence 1; develop clear wording for both spots -->
+# Provide in-app purchases with the Digital Goods API
 
 If your Progressive Web App (PWA) is listed in the Microsoft Store, you can provide in-app products and subscriptions by using the Digital Goods API and the Payment Request API.
 
@@ -25,8 +24,7 @@ The Digital Goods API is an interface between your PWA app and Microsoft Store. 
 
 See:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
-* [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/)<!-- : keep this link, here? -->
-
+* [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/)
 
 
 <!-- ====================================================================== -->

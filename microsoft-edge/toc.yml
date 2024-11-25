@@ -1236,7 +1236,7 @@
             - name: Build PWAs for the sidebar in Microsoft Edge
               href: progressive-web-apps-chromium/how-to/sidebar.md
 
-            - name: Get a Microsoft Store billing service by using the Digital Goods API
+            - name: Provide in-app purchases by using the Digital Goods API
               href: progressive-web-apps-chromium/how-to/digital-goods-api.md
 
         - name: What's New in Progressive Web Apps
