@@ -84,13 +84,13 @@ For example code showing how to handle navigation events, see:
 * [Step 8 - Navigation events](../get-started/winforms.md#step-8---navigation-events) in _Get started with WebView2 in WinForms apps_.
 * [Step 13 - Navigation events](../get-started/win32.md#step-13---navigation-events) in _Get started with WebView2 in Win32 apps_.
 
-The WebView2 [Sample apps](../code-samples-links.md) also demonstrate handling navigation events.
+The [WebView2 sample apps](../code-samples-links.md) also demonstrate handling navigation events.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Navigate to pages and manage loaded content](./overview-features-apis.md#navigate-to-pages-and-manage-loaded-content) in _Overview of WebView2 features and APIs_
+* [Navigate to pages and manage loaded content](./overview-features-apis.md#navigate-to-pages-and-manage-loaded-content) in _Overview of WebView2 APIs_
 * [Basic authentication for WebView2 apps](./basic-authentication.md)
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.

@@ -304,7 +304,7 @@ HRESULT AppWindow::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICore
 <!-- ====================================================================== -->
 ## See also
 
-* [Multiple profiles](./overview-features-apis.md#multiple-profiles) in _Overview of WebView2 features and APIs_.
+* [Multiple profiles](./overview-features-apis.md#multiple-profiles) in _Overview of WebView2 APIs_.
 * [Manage the user data folder](user-data-folder.md)
 * [Clear browsing data from the user data folder](clear-browsing-data.md)
 * [Spec for multiple profile support API](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md)
