@@ -42,16 +42,16 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview of Progressive Web Apps (PWAs)
-            url: ./progressive-web-apps-chromium/index.md
+            url: ../index.md
 
           - text: What's New in Progressive Web Apps
-            url: ./progressive-web-apps-chromium/whats-new/pwa.md
+            url: ../whats-new/pwa.md
 
           - text: Get started with PWAs
-            url: ./progressive-web-apps-chromium/how-to/index.md
+            url: ../how-to/index.md
 
           - text: Best practices for PWAs
-            url: ./progressive-web-apps-chromium/how-to/best-practices.md
+            url: ../how-to/best-practices.md
 
 # =============================================================================
 # Card r1c2
@@ -60,16 +60,16 @@ landingContent:
       - linkListType: overview
         links:
           - text: Publish a PWA to the Microsoft Store
-            url: ./progressive-web-apps-chromium/how-to/microsoft-store.md
+            url: ../how-to/microsoft-store.md
 
           - text: Experimental features and origin trials for PWAs
-            url: ./progressive-web-apps-chromium/how-to/origin-trials.md
+            url: ../how-to/origin-trials.md
 
           - text: Use Progressive Web Apps in Microsoft Edge
-            url: ./progressive-web-apps-chromium/ux.md
+            url: ../ux.md
 
           - text: Debug Progressive Web Apps
-            url: ./progressive-web-apps-chromium/how-to/debug.md
+            url: ../how-to/debug.md
 
 # =============================================================================
 # Card r1c3
@@ -78,16 +78,16 @@ landingContent:
       - linkListType: overview
         links:
           - text: Use a web app manifest to integrate a PWA into the OS
-            url: ./progressive-web-apps-chromium/how-to/web-app-manifests.md
+            url: ../how-to/web-app-manifests.md
 
           - text: Use a service worker to manage network requests
-            url: ./progressive-web-apps-chromium/how-to/service-workers.md
+            url: ../how-to/service-workers.md
 
           - text: Store data on the device
-            url: ./progressive-web-apps-chromium/how-to/offline.md
+            url: ../how-to/offline.md
 
           - text: Define icons and a theme color
-            url: ./progressive-web-apps-chromium/how-to/icon-theme-color.md
+            url: ../how-to/icon-theme-color.md
 
 # =============================================================================
 # Card r2c1
@@ -96,16 +96,16 @@ landingContent:
       - linkListType: overview
         links:
           - text: Re-engage users with badges and notifications
-            url: ./progressive-web-apps-chromium/how-to/notifications-badges.md
+            url: ../how-to/notifications-badges.md
 
           - text: Re-engage users with push messages
-            url: ./progressive-web-apps-chromium/how-to/push.md
+            url: ../how-to/push.md
 
           - text: Synchronize and update a PWA in the background
-            url: ./progressive-web-apps-chromium/how-to/background-syncs.md
+            url: ../how-to/background-syncs.md
 
           - text: Handle files in Progressive Web Apps
-            url: ./progressive-web-apps-chromium/how-to/handle-files.md
+            url: ../how-to/handle-files.md
 
 # =============================================================================
 # Card r2c2
@@ -114,16 +114,16 @@ landingContent:
       - linkListType: overview
         links:
           - text: Handle links to your Progressive Web App
-            url: ./progressive-web-apps-chromium/how-to/handle-urls.md
+            url: ../how-to/handle-urls.md
 
           - text: Handle protocols in Progressive Web Apps
-            url: ./progressive-web-apps-chromium/how-to/handle-protocols.md
+            url: ../how-to/handle-protocols.md
 
           - text: Display content in the title bar area using Window Controls Overlay
-            url: ./progressive-web-apps-chromium/how-to/window-controls-overlay.md
+            url: ../how-to/window-controls-overlay.md
 
           - text: Share content with other apps
-            url: ./progressive-web-apps-chromium/how-to/share.md
+            url: ../how-to/share.md
 
 # =============================================================================
 # Card r2c3
@@ -132,13 +132,13 @@ landingContent:
       - linkListType: overview
         links:
           - text: Define app shortcuts
-            url: ./progressive-web-apps-chromium/how-to/shortcuts.md
+            url: ../how-to/shortcuts.md
 
           - text: Build PWA-driven widgets
-            url: ./progressive-web-apps-chromium/how-to/widgets.md
+            url: ../how-to/widgets.md
 
           - text: Build PWAs for the sidebar in Microsoft Edge
-            url: ./progressive-web-apps-chromium/how-to/sidebar.md
+            url: ../how-to/sidebar.md
 
           - text: Progressive Web App demos
-            url: ./progressive-web-apps-chromium/demo-pwas.md
+            url: ../demo-pwas.md
