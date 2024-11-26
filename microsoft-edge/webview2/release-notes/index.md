@@ -1297,5 +1297,5 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 * [About Release Notes for the WebView2 SDK](./about.md)
 * [Archived Release Notes for the WebView2 SDK](./archive.md)
-* [Overview of WebView2 features and APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
+* [Overview of WebView2 APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)

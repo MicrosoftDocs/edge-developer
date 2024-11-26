@@ -900,7 +900,7 @@ bool AppWindow::PrintToPdfStream()
 <!-- ====================================================================== -->
 ## See also
 
-* [Printing](../concepts/overview-features-apis.md#printing) in _Overview of WebView2 features and APIs_.
+* [Printing](../concepts/overview-features-apis.md#printing) in _Overview of WebView2 APIs_.
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
