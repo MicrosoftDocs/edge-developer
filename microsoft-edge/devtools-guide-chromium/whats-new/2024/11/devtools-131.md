@@ -18,7 +18,12 @@ ms.date: 11/14/2024
 
 <!-- Subtitle: The Visual Studio Code themes are removed and themes will revert to the default themes: Light+ or Dark+.-->
 
-The Visual Studio Code themes feature is now deprecated.  These themes will revert to the **System preference** theme by default.  The **Light+** and **Dark+** themes continue to be supported.
+The Visual Studio Code themes feature is now deprecated.  These themes will revert to the **System preference** theme by default.  The **Light+** and **Dark+** themes continue to be supported.  To select a theme, select **Customize and control DevTools** > **Preferences** > **Theme** drop-down menu:
+
+![The Theme menu in DevTools Preferences](./devtools-131-images/themes-preferences.png)
+
+See also:
+* [Check for contrast issues with dark theme and light theme](../../../../devtools-guide-chromium/accessibility/test-dark-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -32,6 +37,11 @@ Previously, the following experiments that were enabled by default couldn't be d
 * **Open source files in Visual Studio Code**
 
 This is now fixed, and you can disable these experiments.
+
+See also:
+* [Enable webhint](../../../experimental-features/index.md#enable-webhint) in _Experimental features in Microsoft Edge DevTools_.
+* [Show issues in Elements](../../../experimental-features/index.md#show-issues-in-elements) in _Experimental features in Microsoft Edge DevTools_.
+* [Open source files in Visual Studio Code](../../../experimental-features/index.md#open-source-files-in-visual-studio-code) in _Experimental features in Microsoft Edge DevTools_.
 
 
 <!-- ====================================================================== -->
@@ -53,13 +63,23 @@ To view CSS selector costs:
 
 1. Click the **CSS Selector costs** button to expand its section.
 
+See also:
+* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+
 
 <!-- ====================================================================== -->
-## Fixed edit field to exit after pressing tab after auto-completion
+## Fixed edit field to exit after pressing Tab after auto-completion
 
 <!-- Press Tab after choosing an autocomplete option to exit the field.-->
 
-Pressing **Tab** after auto-completion now exits the edit field and focuses on the next focus point.  Before, pressing **Tab** would just indent the text.
+<!-- todo: where in DevTools?  which tools? -->
+
+Pressing the **Tab** key after auto-completion now exits the edit field and focuses on the next focus point.  Before, pressing **Tab** would just indent the text.
+
+<!-- todo 
+See also:
+* []()
+-->
 
 
 <!-- ====================================================================== -->
