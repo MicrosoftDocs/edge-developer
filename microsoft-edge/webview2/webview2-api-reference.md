@@ -45,7 +45,7 @@ WebView2 is available for the following frameworks or platforms:
 <!-- ---------- -->
 ###### Use all three tabs
 
-Tip: When reading articles about WebView2, to see all available documentation for a type or member, click the links in all three tabs in the article: **.NET/C#**, **WinRT/C#**, and **Win32/C++**.
+Tip: When reading a non-Reference article about WebView2, to see all available documentation for a type or member, click the links in all three tabs in the article: **.NET/C#**, **WinRT/C#**, and **Win32/C++**.
 
 
 <!-- ====================================================================== -->
