@@ -308,7 +308,7 @@ The WebView2 WinUI 2 (UWP) control is in development.
 Autofill UI is not implemented yet for WebView2 for UWP apps.
 
 See also:
-* [Autofill](../concepts/overview-features-apis.md#autofill) in _Overview of WebView2 features and APIs_.
+* [Autofill](../concepts/overview-features-apis.md#autofill) in _Overview of WebView2 APIs_.
 
 
 <!-- ------------------------------ -->
@@ -317,7 +317,7 @@ See also:
 Print to PDF requires that the app have access to a writeable location in UWP, such as a local folder.  For a full list of UWP-accessible paths, see [File access permissions](/windows/uwp/files/file-access-permissions).
 
 See also:
-* [Printing](../concepts/overview-features-apis.md#printing) in _Overview of WebView2 features and APIs_.
+* [Printing](../concepts/overview-features-apis.md#printing) in _Overview of WebView2 APIs_.
 
 
 <!-- ------------------------------ -->
@@ -326,7 +326,7 @@ See also:
 Default printing is disabled for WebView2 for UWP apps.  However, you can capture and print the current viewport, by calling `CapturePreview`.
 
 See also:
-* [Image capture](../concepts/overview-features-apis.md#image-capture) in _Overview of WebView2 features and APIs_.
+* [Image capture](../concepts/overview-features-apis.md#image-capture) in _Overview of WebView2 APIs_.
 
 
 <!-- ------------------------------ -->
@@ -359,7 +359,7 @@ If the host changes the `ResultFilePath` of the downloaded file, the file will o
 Opening files and folders from the Downloads Hub is disabled.  Clicking on the file or folder icon won't open the respective file/folder.
 
 See also:
-* [Downloads](../concepts/overview-features-apis.md#downloads) in _Overview of WebView2 features and APIs_.
+* [Downloads](../concepts/overview-features-apis.md#downloads) in _Overview of WebView2 APIs_.
 
 
 <!-- ------------------------------ -->
@@ -474,7 +474,7 @@ The following classes aren't accessible in WinUI 2:
 * [WebView2 API Reference](../webview2-api-reference.md)
 * [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to download, update, build, and run the WinUI 2 WebView2 sample.
 * [Manage user data folders](../concepts/user-data-folder.md)
-* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
+* [WebView2 sample apps](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
 
 GitHub:

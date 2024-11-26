@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.subservice: devtools
 ms.date: 02/28/2022
 ---
 # Contact the Microsoft Edge WebDriver team

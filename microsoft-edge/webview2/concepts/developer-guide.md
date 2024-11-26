@@ -86,7 +86,7 @@ See [Manage user data folders](../concepts/user-data-folder.md) for further guid
 
 WebView2 apps are supported by a collection of runtime processes that run alongside the app process.  These supporting runtime processes can fail for various reasons, such as running out of memory, or being terminated by the user.  Your WebView2 app should handle these process-related events, to ensure that the app can recover from failures and continue to run smoothly.
 
-See [Handling process-related events in WebView2](../concepts/process-related-events.md) for more information on how to handle process-related events in WebView2 apps.
+See [Handling process-related events in WebView2](../concepts/process-related-events.md).
 
 
 <!-- ====================================================================== -->
