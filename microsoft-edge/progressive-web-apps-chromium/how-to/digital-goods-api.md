@@ -51,7 +51,7 @@ if ('getDigitalGoodsService' in window) {
 
 
 <!-- ====================================================================== -->
-## Connecting to the Microsoft Store Billing service (`getDigitalGoodsService`)
+## Connecting to the Microsoft Store Billing service (`getDigitalGoodsService` method)
 
 Use the `getDigitalGoodsService` method to connect to the Microsoft Store Billing service.
 
@@ -77,7 +77,7 @@ try {
 
 
 <!-- ====================================================================== -->
-## Querying item details (`getDetails`)
+## Querying item details (`getDetails` method)
 
 Use the `getDetails` method to query item details.
 
@@ -109,7 +109,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Purchasing an item (`show`)
+## Purchasing an item (`show` method)
 
 Use the `show` method to purchase an item, after you construct a request that contains item details.
 
@@ -151,7 +151,7 @@ Some stores might require that you (the developer) acknowledge a purchase after 
 
 
 <!-- ====================================================================== -->
-## Consuming a purchase (`consume`)
+## Consuming a purchase (`consume` method)
 
 Use the `consume` method to consume a purchase.
 
@@ -165,7 +165,7 @@ digitalGoodsService.consume(purchaseToken);
 
 
 <!-- ====================================================================== -->
-## Checking existing purchases (`listPurchases`)
+## Checking existing purchases (`listPurchases` method)
 
 Use the `listPurchases` method to check existing purchases.  This method returns information about the user's existing purchases.  This method allows a client to get a list of items that are currently owned or purchased by the user.  This may be necessary, to do either of the following:
 
@@ -186,7 +186,7 @@ The `listPurchases` method doesn't return consumed products or expired subscript
 
 
 <!-- ====================================================================== -->
-## Getting the purchase history (`listPurchaseHistory`)
+## Getting the purchase history (`listPurchaseHistory` method)
 
 Use the `listPurchaseHistory` method to get the purchase history.  This method returns a list that shows the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed.  This method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.
 
