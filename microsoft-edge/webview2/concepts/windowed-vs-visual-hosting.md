@@ -68,7 +68,7 @@ Windowed hosting mode can run into DPI issues in some scenarios, such as when sh
 <!-- ------------------------------ -->
 #### APIs for Windowed hosting
 
-For a list of APIs that can be used when configuring WebView2 for Windowed hosting (or for Window to Visual hosting), see [Rendering WebView2 in non-framework apps](./overview-features-apis.md#rendering-webview2-in-non-framework-apps) in _Overview of WebView2 features and APIs_.
+For a list of APIs that can be used when configuring WebView2 for Windowed hosting (or for Window to Visual hosting), see [Rendering WebView2 in non-framework apps](./overview-features-apis.md#rendering-webview2-in-non-framework-apps) in _Overview of WebView2 APIs_.
 
 
 <!-- ====================================================================== -->
@@ -110,7 +110,7 @@ See also:
 <!-- ------------------------------ -->
 #### APIs for Window to Visual hosting
 
-For a list of APIs that can be used when configuring WebView2 Window to Visual hosting (or for Windowed hosting), see [Rendering WebView2 in non-framework apps](./overview-features-apis.md#rendering-webview2-in-non-framework-apps) in _Overview of WebView2 features and APIs_.
+For a list of APIs that can be used when configuring WebView2 Window to Visual hosting (or for Windowed hosting), see [Rendering WebView2 in non-framework apps](./overview-features-apis.md#rendering-webview2-in-non-framework-apps) in _Overview of WebView2 APIs_.
 
 
 <!-- ====================================================================== -->
@@ -126,7 +126,7 @@ When using _Visual hosting_, your host app receives spatial input (such as mouse
 
 Per composition-based rendering, a WebView2 control is part of a Visual tree, so by default, it's rendered at a scale that's based on the scales of all of its ancestor Visuals.  For example, if a WebView2's ancestor Visual is scaled (zoomed) 2x, then the WebView2's contents are also rendered at 2x scale.  If the WebView2's parent Visual is scaled 2x and that Visual's parent is also scaled 2x, then the WebView2 is scaled 4x.  But because the WebView2 isn't scaling its own contents, they're blurry.
 
-To resolve this, the app can undo the default Visual scaling of the WebView2, and instead use the Rasterization Scale APIs to apply the intended Visual scaling.  This results in the WebView2's contents rendering at the correct scale.  See [Rasterization scale](./overview-features-apis.md#rasterization-scale) in _Overview of WebView2 features and APIs_.
+To resolve this, the app can undo the default Visual scaling of the WebView2, and instead use the Rasterization Scale APIs to apply the intended Visual scaling.  This results in the WebView2's contents rendering at the correct scale.  See [Rasterization scale](./overview-features-apis.md#rasterization-scale) in _Overview of WebView2 APIs_.
 
 
 <!-- ------------------------------ -->
@@ -152,7 +152,7 @@ For example, if a user action causes the WebView2's Visual tree to scale, the ap
 <!-- ------------------------------ -->
 #### APIs for Visual hosting
 
-For a list of APIs that can be used when configuring WebView2 in a Visual hosting environment, see [Rendering WebView2 using Composition](./overview-features-apis.md#rendering-webview2-using-composition) in _Overview of WebView2 features and APIs_.
+For a list of APIs that can be used when configuring WebView2 in a Visual hosting environment, see [Rendering WebView2 using Composition](./overview-features-apis.md#rendering-webview2-using-composition) in _Overview of WebView2 APIs_.
 
 
 <!-- ====================================================================== -->
@@ -180,7 +180,7 @@ See also:
 ## See also
 <!-- all links in article, except api ref docs -->
 
-* [Overview of WebView2 features and APIs](./overview-features-apis.md)
+* [Overview of WebView2 APIs](./overview-features-apis.md)
 * [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
 <!-- omit:
 * [Enhance UI with the Visual layer (Windows App SDK/WinUI 3)](https://learn.microsoft.com/windows/apps/windows-app-sdk/composition) - Windows App Development. -->

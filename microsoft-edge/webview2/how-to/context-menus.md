@@ -897,7 +897,7 @@ The `AreDefaultContextMenusEnabled` property controls whether any context menu c
 <!-- ====================================================================== -->
 ## See also
 
-* [Context menus](../concepts/overview-features-apis.md#context-menus) in _Overview of WebView2 features and APIs_.
+* [Context menus](../concepts/overview-features-apis.md#context-menus) in _Overview of WebView2 APIs_.
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
 
 <!-- spec: https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/ContextMenuRequested.md -->
