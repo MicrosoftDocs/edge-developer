@@ -64,7 +64,6 @@ The following experimental features are turned on by default. You can use these 
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 <!-- Deprecate CSS <length> authoring tool in the Styles tab - non-Edge -->
-<!-- Floating entry points for the AI assistance panel - non-Edge -->
 
 **Turned on by default in Microsoft Edge Stable 131:**
 * [Redesign of the filter bar in the Network panel](#redesign-of-the-filter-bar-in-the-network-panel)
@@ -76,7 +75,6 @@ The following experimental features are turned on by default. You can use these 
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 <!-- Deprecate CSS <length> authoring tool in the Styles tab - non-Edge -->
-<!-- Floating entry points for the AI assistance panel - non-Edge -->
 
 
 <!-- ====================================================================== -->
@@ -334,6 +332,7 @@ Status:
 <!-- ====================================================================== -->
 ## Deprecate CSS \<length\> authoring tool in the Styles tab
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
+<!-- todo: delete section if/when checkbox removed -->
 
 Not applicable for Microsoft Edge.  Selecting or clearing this checkbox has no effect.
 
@@ -500,9 +499,9 @@ Status:
 
 _new as of Microsoft Edge Canary 129_
 
-Annotations in the **Performance** tool allow you to double-click on any event that's displayed in the main area of a performance recording, and then add a custom label on (above) that event.
+Annotations in the **Performance** tool allow you to double-click any event that's displayed in the main area of a performance recording, and then add a custom label on (above) that event:
 
-<!-- ![An annotation in the Performance tool](./index-images/performance-panel-enable-annotations.png) -->
+![An annotation on an event in the Performance tool](./index-images/performance-panel-enable-annotations.png)
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
@@ -580,9 +579,8 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Floating entry points for the AI assistance panel
-
-In Microsoft Edge, this checkbox has no effect.<!-- non-Edge -->
+<!-- ## Floating entry points for the AI assistance panel -->
+<!-- non-Edge; checkbox has no effect, being removed -->
 
 
 <!-- ====================================================================== -->
@@ -624,12 +622,8 @@ Status:
 
 _new as of Microsoft Edge Canary 133_
 
-In the **Performance** tool, adds a **Switch to an alternative timeline navigation** control inside the **Help/ Keyboard shortcuts** popup.  The switch lets you choose how the main chart reacts to mouse wheel events:
-* The mouse wheel zooms the chart in and out.
-* The mouse wheel pans the chart left and right.
-<!-- todo: when able to access UI, update desc & png -->
-
-<!-- ![Alternative timeline navigation option](./index-images/alt-timeline-nav.png) -->
+In the **Performance** tool, adds a **Switch to an alternative timeline navigation** control inside the **Help/ Keyboard shortcuts** popup.
+<!-- todo: when access UI, update desc -->
 
 See also: 
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
