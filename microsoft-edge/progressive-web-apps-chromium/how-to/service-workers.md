@@ -358,7 +358,7 @@ To learn more, see [Re-engage users with push messages](push.md).
 
 Using Microsoft Edge DevTools, you can see if your service worker has been registered correctly, and see which lifecycle state the service worker is currently in. Also, you can debug the JavaScript code in your service worker.
 
-To learn more, see [Debug your service worker](debug.md#debug-your-service-worker).
+To learn more, see [Debug your service worker](./debug.md#debug-your-service-worker) in _Debug Progressive Web Apps_.
 
 
 <!-- ====================================================================== -->

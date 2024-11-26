@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.subservice: webview
-ms.date: 10/31/2023
+ms.date: 10/28/2024
 ---
 # Introduction to Microsoft Edge WebView2
 
@@ -16,8 +16,6 @@ The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, 
 With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
 
 ![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](./index-images/what-webview.png)
-
-To start building a WebView2 app, see [Get started with WebView2](get-started/get-started.md).
 
 
 <!-- ====================================================================== -->
@@ -109,10 +107,25 @@ See also:
 
 
 <!-- ====================================================================== -->
+## Sequence of samples to install and run
+
+To start learning WebView2, use the following recommended sequence:
+
+1. Install Visual Studio, install preview channels of Microsoft Edge, and clone the `WebView2Samples` repo.  See [Set up your Dev environment for WebView2](./how-to/machine-setup.md).
+1. Install and run the main sample.  See [Win32 sample app](./samples/webview2apissample.md).
+1. Install and run the sample for your target platform, if it's a platform other than Win32.  See [Sample apps](./code-samples-links.md).
+1. Install and run the finished Getting Started tutorial for your target platform (if the finished project is provided).  See [Getting Started tutorials](./get-started/get-started.md).
+1. Do the Getting Started steps to add WebView2 code to the Visual Studio starter project for your platform.  See [Getting Started tutorials](./get-started/get-started.md).
+
+Some samples might require updating an SDK, as explained in the article for each sample.
+
+After your environment is set up and the samples build and run on your machine, you can develop your app by reading the other documentation, such as [Overview of WebView2 APIs](./concepts/overview-features-apis.md).
+
+
+<!-- ====================================================================== -->
 ## See also
 
-* [Overview of WebView2 features and APIs](concepts/overview-features-apis.md)
-* [Getting Started tutorials](get-started/get-started.md)
+* [Overview of WebView2 APIs](concepts/overview-features-apis.md)
 * [Distribute your app and the WebView2 Runtime](concepts/distribution.md)
 
 developer.microsoft.com:
