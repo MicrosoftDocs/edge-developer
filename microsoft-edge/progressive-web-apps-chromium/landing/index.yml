@@ -1,0 +1,144 @@
+### YamlMime:Landing
+# landing page for Extensions portion of docset
+title: Progressive Web Apps (PWAs) documentation
+summary: Develop a Progressive Web App (PWA).
+
+metadata:
+  # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
+  # description: default to root title above. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-edge
+  ms.subservice: pwa
+  ms.topic: landing-page
+  # ms.collection: collection # Optional; Remove if no collection is used.
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 11/26/2024
+
+# =============================================================================
+# Valid article types (sections of a card)
+
+      # - linkListType: architecture
+      # - linkListType: concept
+      # - linkListType: deploy
+      # - linkListType: download
+      # - linkListType: get-started
+      # - linkListType: how-to-guide
+      # - linkListType: learn
+      # - linkListType: overview
+      # - linkListType: quickstart
+      # - linkListType: reference
+      # - linkListType: sample
+      # - linkListType: tutorial
+      # - linkListType: video
+      # - linkListType: whats-new
+
+# =============================================================================
+landingContent:
+
+# =============================================================================
+# Card r1c1
+  - title: Card r1c1
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of Progressive Web Apps (PWAs)
+            url: ./progressive-web-apps-chromium/index.md
+
+          - text: What's New in Progressive Web Apps
+            url: ./progressive-web-apps-chromium/whats-new/pwa.md
+
+          - text: Get started with PWAs
+            url: ./progressive-web-apps-chromium/how-to/index.md
+
+          - text: Best practices for PWAs
+            url: ./progressive-web-apps-chromium/how-to/best-practices.md
+
+# =============================================================================
+# Card r1c2
+  - title: Card r1c2
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Publish a PWA to the Microsoft Store
+            url: ./progressive-web-apps-chromium/how-to/microsoft-store.md
+
+          - text: Experimental features and origin trials for PWAs
+            url: ./progressive-web-apps-chromium/how-to/origin-trials.md
+
+          - text: Use Progressive Web Apps in Microsoft Edge
+            url: ./progressive-web-apps-chromium/ux.md
+
+          - text: Debug Progressive Web Apps
+            url: ./progressive-web-apps-chromium/how-to/debug.md
+
+# =============================================================================
+# Card r1c3
+  - title: Card r1c3
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Use a web app manifest to integrate a PWA into the OS
+            url: ./progressive-web-apps-chromium/how-to/web-app-manifests.md
+
+          - text: Use a service worker to manage network requests
+            url: ./progressive-web-apps-chromium/how-to/service-workers.md
+
+          - text: Store data on the device
+            url: ./progressive-web-apps-chromium/how-to/offline.md
+
+          - text: Define icons and a theme color
+            url: ./progressive-web-apps-chromium/how-to/icon-theme-color.md
+
+# =============================================================================
+# Card r2c1
+  - title: Card r2c1
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Re-engage users with badges and notifications
+            url: ./progressive-web-apps-chromium/how-to/notifications-badges.md
+
+          - text: Re-engage users with push messages
+            url: ./progressive-web-apps-chromium/how-to/push.md
+
+          - text: Synchronize and update a PWA in the background
+            url: ./progressive-web-apps-chromium/how-to/background-syncs.md
+
+          - text: Handle files in Progressive Web Apps
+            url: ./progressive-web-apps-chromium/how-to/handle-files.md
+
+# =============================================================================
+# Card r2c2
+  - title: Card r2c2
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Handle links to your Progressive Web App
+            url: ./progressive-web-apps-chromium/how-to/handle-urls.md
+
+          - text: Handle protocols in Progressive Web Apps
+            url: ./progressive-web-apps-chromium/how-to/handle-protocols.md
+
+          - text: Display content in the title bar area using Window Controls Overlay
+            url: ./progressive-web-apps-chromium/how-to/window-controls-overlay.md
+
+          - text: Share content with other apps
+            url: ./progressive-web-apps-chromium/how-to/share.md
+
+# =============================================================================
+# Card r2c3
+  - title: Card r2c3
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Define app shortcuts
+            url: ./progressive-web-apps-chromium/how-to/shortcuts.md
+
+          - text: Build PWA-driven widgets
+            url: ./progressive-web-apps-chromium/how-to/widgets.md
+
+          - text: Build PWAs for the sidebar in Microsoft Edge
+            url: ./progressive-web-apps-chromium/how-to/sidebar.md
+
+          - text: Progressive Web App demos
+            url: ./progressive-web-apps-chromium/demo-pwas.md
