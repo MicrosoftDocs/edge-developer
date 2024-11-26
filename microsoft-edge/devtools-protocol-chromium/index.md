@@ -277,5 +277,5 @@ JSON object which represents the available API surface for the version of the pr
 ## See also
 
 * [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
-* [Chrome DevTools Protocol (CDP)](../webview2/concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 features and APIs_
+* [Chrome DevTools Protocol (CDP)](../webview2/concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 APIs_
 * [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)

@@ -11,7 +11,7 @@ ms.date: 06/24/2022
 # Main classes for WebView2: Environment, Controller, and Core
 
 <!-- keep sync'd:
-* [Main classes: Environment, Controller, and Core](overview-features-apis.md#main-classes-environment-controller-and-core) in _Overview of WebView2 features and APIs_.
+* [Main classes: Environment, Controller, and Core](overview-features-apis.md#main-classes-environment-controller-and-core) in _Overview of WebView2 APIs_.
 * [Main classes for WebView2: Environment, Controller, and Core](environment-controller-core.md) - topmost content.
 -->
 
