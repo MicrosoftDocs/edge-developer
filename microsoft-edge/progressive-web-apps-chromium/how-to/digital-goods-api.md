@@ -16,7 +16,7 @@ If your Progressive Web App (PWA) is listed in the Microsoft Store, you can prov
 <!-- ====================================================================== -->
 ## Digital Goods API
 
-The Digital Goods API is an interface between your PWA app and Microsoft Store.  The Digital Goods API supports:
+The Digital Goods API is an interface between your PWA app and the Microsoft Store.  The Digital Goods API supports:
 * Querying the details of a digital item from the Microsoft Store backend, such as the item's name, description, and regional price.
 * Consuming or acknowledging purchases.
 * Checking the digital items that are currently owned by the user.
@@ -30,9 +30,9 @@ See:
 <!-- ====================================================================== -->
 ## Payment Request API
 
-The Payment Request API⁠⁠ handles the actual payment transaction when a purchase is made by user.  The Payment Request API uses the item details that the Digital Goods API provides, to make the in-app purchase by using whichever billing payment method the user has set up at the Microsoft Store.
+The Payment Request API⁠⁠ handles the actual payment transaction when a purchase is made by a user.  The Payment Request API uses the item details that the Digital Goods API provides, to make the in-app purchase by using whichever billing payment method the user has set up at the Microsoft Store.
 
-See [Payment Request API](https://www.w3.org/TR/payment-request/) at W3C.
+See [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API) at MDN.
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ try {
   ...
 } catch (error) {
   // Our preferred service provider is not available.
-  // Use a normal web-based payment flow.
+  // Use a web-based payment flow instead.
   return;
 }
 ```
@@ -86,19 +86,22 @@ After connecting the Digital Goods service to Microsoft Store, you can use the A
 The `getDetails` method takes a list of item IDs, which correspond to the product IDs of the in-app products and subscriptions you created in the Partner Center.
 
 ```javascript
-details = await digitalGoodsService.getDetails(['shiny_sword', 'gem', 'monthly_subscription']);
-for (item of details) {
+const itemDetails = await digitalGoodsService.getDetails(['shiny_sword', 'gem', 'monthly_subscription']);
+
+for (item of itemDetails) {
   const priceStr = new Intl.NumberFormat(
       locale,
       {style: 'currency', currency: item.price.currency}
     ).format(item.price.value);
-  AddShopMenuItem(item.itemId, item.title, priceStr, item.description);
+
+  // Do something with the item's data, such as displaying it in the PWA's UI.
+  displayProductItem(item.itemId, item.title, priceStr, item.description);
 }
 ```
 
 The returned `itemDetails` sequence may be in any order, and might not include an item if the item doesn't exist on the server (that is, if there's not a 1:1 correspondence between the input list and output list).
 
-The item ID is a string that represents the primary key of the items.  As in Microsoft Store, the item ID is `InAppOfferToken`.  There is no function to get a list of item IDs; item IDs should be hardcoded in the client code or fetched from your own server (the developer's server).
+The item ID is a string that represents the primary key of the items.  In the Microsoft Store, the item ID is `InAppOfferToken`.  There is no function to get a list of item IDs; item IDs should be hardcoded in the client code or fetched from your own server (the developer's server).
 
 The item's `price` is a `PaymentCurrencyAmount` that contains the current price of the item in the user's current region and currency.  The `price` is designed to be formatted for the user's current locale by using `Intl.NumberFormat`, as shown above.
 
@@ -111,7 +114,7 @@ See also:
 <!-- ====================================================================== -->
 ## Purchasing an item (`show` method)
 
-Use the `show` method to purchase an item, after you construct a request that contains item details.
+Use the `show` method to purchase an item, after you construct a request that contains the item details.
 
 Once your products and details are displayed to the user, you can implement the purchase flow by using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
 
@@ -120,11 +123,13 @@ Use the `supportedMethods` member of the `methodData`⁠⁠ parameter in the `Pa
 ```javascript
 const details = await digitalGoodsService.getDetails(['monthly_subscription']);
 const item = details[0];
-const request = new PaymentRequest(
-  [{supportedMethods: 'https://store.microsoft.com/billing',
-    data: {sku: item.itemId}}
-  ]
-);
+
+const request = new PaymentRequest([
+  {
+    supportedMethods: 'https://store.microsoft.com/billing',
+    data: { sku: item.itemId }
+  }
+]);
 ```
 
 Then call the `show` method to start the payment flow:
@@ -176,9 +181,11 @@ Use the `listPurchases` method to check existing purchases.  This method returns
 The `listPurchases` method returns item IDs and purchase tokens.  Before you grant an entitlement, you should verify the returned item ID or the returned purchase token, by using a direct developer-to-provider API, as shown below:
 
 ```javascript
-purchases = await digitalGoodsService.listPurchases();
-for (p of purchases) {
-  VerifyAndGrantEntitlement(p.itemId, p.purchaseToken);
+const purchaseList = await digitalGoodsService.listPurchases();
+
+for (const purchase of purchaseList) {
+  // Handle the purchase data in your PWA.
+  verifyAndGrantEntitlement(purchase.itemId, purchase.purchaseToken);
 }
 ```
 
@@ -191,9 +198,11 @@ The `listPurchases` method doesn't return consumed products or expired subscript
 Use the `listPurchaseHistory` method to get the purchase history.  This method returns a list that shows the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed.  This method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.
 
 ```javascript
-purchases = await digitalGoodsService.listPurchaseHistory();
-for (p of purchases) {
-  VerifyAndCheckExpiredEntitlement(p.itemId, p.purchaseToken);
+const purchaseList = await digitalGoodsService.listPurchaseHistory();
+
+for (const purchase of purchaseList) {
+  // Handle the expired purchase data in your PWA.
+  verifyAndCheckExpiredEntitlement(purchase.itemId, purchase.purchaseToken);
 }
 ```
 
