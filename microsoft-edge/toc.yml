@@ -1242,8 +1242,8 @@
 # WebView2
     - name: WebView2
       items:
-        - name: Microsoft Edge extensions documentation
-          href: ./webview2/landing/index.yml  # landing page
+        - name: WebView2 documentation
+          href: ./webview2/landing/index.yml
           displayName: landing
 
 # -----------------------------------------------------------------------------
