@@ -225,6 +225,12 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/webview2/concepts/user-data-folder",
         "redirect_document_id": false
       },
+      /* todo: point to SMC article location */
+      {
+        "source_path": "microsoft-edge/webview2/concepts/end-user-faq.md",
+        "redirect_url": "/microsoft-edge/webview2/landing/",
+        "redirect_document_id": false
+      },
 
       /* WebView2 Getting started: */
       {
