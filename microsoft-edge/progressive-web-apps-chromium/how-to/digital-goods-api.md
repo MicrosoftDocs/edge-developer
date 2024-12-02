@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 11/25/2024
+ms.date: 12/02/2024
 ---
 # Provide in-app purchases with the Digital Goods API
 
@@ -130,7 +130,7 @@ Use the `show` method to purchase an item, after you construct a request that co
 
 Once your products and details are displayed to the user, you can implement the purchase flow by using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
 
-Use the `supportedMethods` member of the `methodData`⁠⁠ parameter in the `PaymentRequest` to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`.  Then in the `data` member, pass along the item ID as the `sku`.
+Use the `supportedMethods` member of the `methodData`⁠⁠ parameter in the [PaymentRequest interface](https://www.w3.org/TR/payment-request/#dom-paymentrequest) to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`.  Then in the `data` member, pass along the item ID as the `sku`.
 
 ```javascript
 const details = await digitalGoodsService.getDetails(['monthly_subscription']);
@@ -157,6 +157,9 @@ This will display the Store purchase UI to the user, where the user can view det
 * If the user successfully pays and completes the purchase, the Promise will resolve with a `PaymentResponse`.
 
 In the `details` property of the payment response, a purchase token is returned.
+
+See also:
+* [PaymentRequest interface](https://www.w3.org/TR/payment-request/#dom-paymentrequest) in _W3C Payment Request API_.
 
 
 <!-- ====================================================================== -->
@@ -228,6 +231,7 @@ for (const purchase of purchaseList) {
 W3C:
 * [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/)
 * [Payment Request API](https://www.w3.org/TR/payment-request/)
+* [PaymentRequest interface](https://www.w3.org/TR/payment-request/#dom-paymentrequest) in _Payment Request API_.
 * [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API_.
 
 MDN:
