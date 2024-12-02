@@ -130,9 +130,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-<!-- #### General features -->
+#### General features
 
-<!-- * The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps**. -->
+* The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps**.
 
 
 <!-- ------------------------------ -->
