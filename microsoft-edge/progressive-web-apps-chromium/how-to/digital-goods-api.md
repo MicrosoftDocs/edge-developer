@@ -36,14 +36,19 @@ See [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Req
 
 
 <!-- ====================================================================== -->
+## Origin trial and flag
+
+There's an origin trial and Edge flag for this feature.  As of December 1, 2024, this origin trial is likely to end soon, graduating the feature to be incorporated in Microsoft Edge.  See [Experimental features and origin trials for PWAs](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/origin-trials).
+
+The Edge Experiments flag in `edge://flags/`<!-- todo: which flag? --> will be enabled by default, when this feature ships in Edge Stable.
+
+This feature ships with a pre-release of Microsoft Edge.<!-- todo: specify the exact version number here when available -->
+
+
+<!-- ====================================================================== -->
 ## Checking whether the Digital Goods API is available
 
 To detect whether you've correctly enabled the API on your website, check for the `getDigitalGoodsService` method in the window object:
-<!-- todo: 
-this is phrased as if the dev needs to take action to enable the API, but we're not telling them what action that is.
-is there an origin trial?
-is there a flag to enable somewhere?
-does this come with a pre-release version of Edge? -->
 
 ```javascript
 if ('getDigitalGoodsService' in window) {
@@ -63,11 +68,6 @@ Use the `getDigitalGoodsService` method to connect to the Microsoft Store Billin
 The Digital Goods API was designed to be compatible with various browsers and digital stores, similar to how the Payment Request API is browser-agnostic and can be used with different payment providers.  To retrieve an instance of the service for Microsoft Store Billing, pass the string `"https://store.microsoft.com/billing"` as the payment method to the `getDigitalGoodsService` method.
 
 If the method throws an error, the Microsoft Store Billing payment method is not available (such as when the user is accessing your PWA through the browser).  Alternatively, consider providing a different payment method for transactions.
-<!-- todo: 
-expand on the reasons that might make the payment method not available.
-when is the method available exactly?
-what are the requirements for it to be available - PWA installed from the store?
-are there any other required settings? -->
 
 ```javascript
 if (window.getDigitalGoodsService === undefined) {
@@ -84,6 +84,8 @@ try {
   return;
 }
 ```
+
+This payment method `getDigitalGoodsService("https://store.microsoft.com/billing")` will be available only for a Microsoft Edge-based PWA that's installed from the Microsoft Store, on Windows.  No other settings are needed.
 
 
 <!-- ====================================================================== -->
