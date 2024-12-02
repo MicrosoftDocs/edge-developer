@@ -130,7 +130,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### General features
+#### General changes
 
 * The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps**.
 
@@ -222,6 +222,12 @@ Added a new `ScreenCaptureStarting` event.  This event is raised whenever the We
 ###### Runtime-only
 
 * Allowed the **Download** dialog to receive initial focus on launch.
+
+
+<!-- ------------------------------ -->
+#### General changes
+
+* The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps**.
 
 
 <!-- ------------------------------ -->
