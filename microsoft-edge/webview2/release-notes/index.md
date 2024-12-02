@@ -227,7 +227,7 @@ Added a new `ScreenCaptureStarting` event.  This event is raised whenever the We
 <!-- ------------------------------ -->
 #### Other changes
 
-* The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps**.
+* The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps** because it is a persistent system component.
 
 
 <!-- end of Nov 2024 Release SDK -->
