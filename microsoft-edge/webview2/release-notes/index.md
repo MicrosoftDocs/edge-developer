@@ -130,12 +130,6 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### General changes
-
-* The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps**, because it is a persistent system component.
-
-
-<!-- ------------------------------ -->
 #### Promotions
 
 The following APIs have been promoted to Stable and are now included in this Release SDK.
@@ -226,12 +220,6 @@ Added a new `ScreenCaptureStarting` event.  This event is raised whenever the We
 
 <!-- ------------------------------ -->
 #### General changes
-
-* The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps**, because it is a persistent system component.
-
-
-<!-- ------------------------------ -->
-#### Other changes
 
 * The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps**, because it is a persistent system component.
 
