@@ -64,11 +64,6 @@ landingContent:
           - text: WebView2 Roadmap
             url: ../roadmap.md
 
-      - linkListType: how-to-guide
-        links:
-          - text: WebView2 end-user FAQ
-            url: ../concepts/end-user-faq.md
-
 # =============================================================================
 # Card r1c2
   - title: Platforms and samples
