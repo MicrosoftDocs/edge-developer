@@ -217,6 +217,13 @@ Added a new `ScreenCaptureStarting` event.  This event is raised whenever the We
 
 * Allowed the **Download** dialog to receive initial focus on launch.
 
+
+<!-- ------------------------------ -->
+#### General changes
+
+* The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps**, because it is a persistent system component.
+
+
 <!-- end of Nov 2024 Release SDK -->
 
 

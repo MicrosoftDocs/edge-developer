@@ -5,9 +5,11 @@
     - name: Develop for the web with Microsoft Edge
       href: develop-web-microsoft-edge.md
 
+# =============================================================================
+# DevTools
     - name: Microsoft Edge DevTools
       items:
-# Card-based landing page -----------------------------------------------------
+# Lannding page -----------------------------------------------------
         - name: Microsoft Edge DevTools documentation
           href: devtools-guide-chromium/landing/index.yml
           displayName: DevTools
@@ -903,6 +905,7 @@
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 
 # =============================================================================
+# DevTools for VS Code
         - name: DevTools for Visual Studio Code
           items:
 
@@ -1170,11 +1173,10 @@
               href: ./progressive-web-apps-chromium/whats-new/pwa.md
               displayName: release notes, announcements
 
-            - name: Get started with PWAs
+            - name: Get started with Progressive Web Apps
               href: ./progressive-web-apps-chromium/how-to/index.md
-              displayName: Get started with Progressive Web Apps  # top-of-page title
 
-        - name: Must create a manifest and service worker
+        - name: Create a manifest and service worker
           items:
             - name: Use a web app manifest to integrate a PWA into the OS
               href: ./progressive-web-apps-chromium/how-to/web-app-manifests.md
@@ -1185,9 +1187,8 @@
         - name: Best practices for PWAs
           href: ./progressive-web-apps-chromium/how-to/best-practices.md
 
-        - name: Publish a PWA to the Microsoft Store
+        - name: Publish a Progressive Web App to the Microsoft Store
           href: ./progressive-web-apps-chromium/how-to/microsoft-store.md
-          displayName: Publish a Progressive Web App to the Microsoft Store  # top-of-page title
 
         - name: Experimental features and origin trials for PWAs
           href: ./progressive-web-apps-chromium/how-to/origin-trials.md
@@ -1227,15 +1228,15 @@
             - name: Handle protocols in Progressive Web Apps
               href: ./progressive-web-apps-chromium/how-to/handle-protocols.md
 
-        - name: Integrate into Windows (Share dialog, jump lists, right-click menus)
+        - name: Integrate into Windows (Share dialog, jump lists, right-click menus)  # match key words in child titles
           items:
-            - name: Display content in the title bar area using Window Controls Overlay
+            - name: Display content in the title bar area using Window Controls Overlay  # todo: add: share dialog
               href: ./progressive-web-apps-chromium/how-to/window-controls-overlay.md
 
-            - name: Share content with other apps
+            - name: Share content with other apps  # todo: add: jump lists
               href: ./progressive-web-apps-chromium/how-to/share.md
 
-            - name: Define app shortcuts
+            - name: Define app shortcuts  # todo: add: right-click menus
               href: ./progressive-web-apps-chromium/how-to/shortcuts.md
 
         - name: Widgets and sidebar
@@ -1246,6 +1247,9 @@
             - name: Build PWAs for the sidebar in Microsoft Edge
               href: ./progressive-web-apps-chromium/how-to/sidebar.md
 
+        - name: Provide in-app purchases with the Digital Goods API
+          href: ./progressive-web-apps-chromium/how-to/digital-goods-api.md
+
         - name: Progressive Web App demos
           href: ./progressive-web-apps-chromium/demo-pwas.md
 # /PWA
@@ -1254,8 +1258,8 @@
 # WebView2
     - name: WebView2
       items:
-        - name: Microsoft Edge extensions documentation
-          href: ./webview2/landing/index.yml  # landing page
+        - name: WebView2 documentation
+          href: ./webview2/landing/index.yml
           displayName: landing
 
 # -----------------------------------------------------------------------------
@@ -1661,7 +1665,7 @@
         - name: Contact the WebView2 team
           href: ./webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
-# / WebView2
+# /WebView2
 
 # =============================================================================
 # Test and automation
@@ -1692,6 +1696,7 @@
 
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
+
             - name: Contact the Microsoft Edge WebDriver team
               href: webdriver-chromium/contact.md
 
@@ -1700,7 +1705,7 @@
 # /Test and automation
 
 # =============================================================================
-# Development tips (Web platform)
+# Development tips [Web platform]
     - name: Development tips for Microsoft Edge
       items:
         - name: Development tips for Microsoft Edge
@@ -1738,7 +1743,7 @@
 
         - name: Sign up for the Ad Selection API
           href: ./web-platform/ad-selection-api.md
-# /Development tips (Web platform)
+# /Development tips [Web platform]
 
 # =============================================================================
 # Microsoft Edge IDE integration
