@@ -37,7 +37,7 @@ landingContent:
 
 # =============================================================================
 # Card r1c1
-  - title: Card r1c1
+  - title: Card row 1 col 1
     linkLists:
       - linkListType: overview
         links:
