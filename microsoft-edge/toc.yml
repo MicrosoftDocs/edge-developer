@@ -1174,6 +1174,14 @@
               href: ./progressive-web-apps-chromium/how-to/index.md
               displayName: Get started with Progressive Web Apps  # top-of-page title
 
+        - name: Must create a manifest and service worker
+          items:
+            - name: Use a web app manifest to integrate a PWA into the OS
+              href: ./progressive-web-apps-chromium/how-to/web-app-manifests.md
+
+            - name: Use a service worker to manage network requests
+              href: ./progressive-web-apps-chromium/how-to/service-workers.md
+
         - name: Best practices for PWAs
           href: ./progressive-web-apps-chromium/how-to/best-practices.md
 
@@ -1189,12 +1197,6 @@
 
         - name: Debug Progressive Web Apps
           href: ./progressive-web-apps-chromium/how-to/debug.md
-
-        - name: Use a web app manifest to integrate a PWA into the OS
-          href: ./progressive-web-apps-chromium/how-to/web-app-manifests.md
-
-        - name: Use a service worker to manage network requests
-          href: ./progressive-web-apps-chromium/how-to/service-workers.md
 
         - name: Store data on the device
           href: ./progressive-web-apps-chromium/how-to/offline.md
@@ -1225,14 +1227,16 @@
             - name: Handle protocols in Progressive Web Apps
               href: ./progressive-web-apps-chromium/how-to/handle-protocols.md
 
-        - name: Display content in the title bar area using Window Controls Overlay
-          href: ./progressive-web-apps-chromium/how-to/window-controls-overlay.md
+        - name: Integrate into Windows (Share dialog, jump lists, right-click menus)
+          items:
+            - name: Display content in the title bar area using Window Controls Overlay
+              href: ./progressive-web-apps-chromium/how-to/window-controls-overlay.md
 
-        - name: Share content with other apps
-          href: ./progressive-web-apps-chromium/how-to/share.md
+            - name: Share content with other apps
+              href: ./progressive-web-apps-chromium/how-to/share.md
 
-        - name: Define app shortcuts
-          href: ./progressive-web-apps-chromium/how-to/shortcuts.md
+            - name: Define app shortcuts
+              href: ./progressive-web-apps-chromium/how-to/shortcuts.md
 
         - name: Widgets and sidebar
           items:
