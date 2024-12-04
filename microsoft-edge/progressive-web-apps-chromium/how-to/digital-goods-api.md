@@ -36,13 +36,30 @@ See [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Req
 
 
 <!-- ====================================================================== -->
-## Origin trial and flag
+## Enable the Digital Goods API
 
-There's an origin trial and Microsoft Edge flag for this feature.  See [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Microsoft Edge Developer_ > _Origin Trials_.
+The Digital Goods API is currently available in pre-release versions of Microsoft Edge.  To use the API, either enable the feature locally in Microsoft Edge, or register in the Digital Goods API origin trial to test the API in production.
 
-The Edge Experiments flag in `edge://flags/`<!-- todo: which flag? --> will be enabled by default, when this feature ships in Edge Stable.
 
-This feature ships with a pre-release of Microsoft Edge.<!-- todo: specify the exact version number here when available -->
+<!-- ------------------------------ -->
+#### Enable the feature locally
+
+To enable the Digital Goods API on your developer machine only, for testing:
+
+TODO: How do you enable the flags `msWebAppDigitalGoods`, `AppStoreBilling` and `DigitalGoodsApi`?  They are excluded from `edge://flags`.
+
+<!-- The Edge Experiments flag in `edge://flags/` will be enabled by default, when this feature ships in Edge Stable. -->
+<!-- todo: which flag? -->
+
+
+<!-- ------------------------------ -->
+#### Use the origin trial to test the feature in production
+
+To test the Digital Goods API in production, register in the origin trial.  See: 
+* [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Microsoft Edge Developer_ > _Origin Trials_.
+* [Registering for an origin trial](../../origin-trials/index.md#registering-for-an-origin-trial) in _Use origin trials in Microsoft Edge_.
+
+<!-- This feature ships with a pre-release of Microsoft Edge.  todo: specify the exact version number here when available -->
 
 See also:
 * [Experimental features and origin trials for PWAs](./origin-trials.md)
