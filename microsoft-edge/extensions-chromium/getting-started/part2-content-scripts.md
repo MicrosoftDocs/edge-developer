@@ -1,5 +1,5 @@
 ---
-title: "Tutorial part 2: Use JavaScript to insert an image in the webpage"
+title: "Sample: Insert an image in the webpage"
 description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 10/04/2024
 ---
-# Tutorial part 2: Use JavaScript to insert an image in the webpage
+# Sample: Insert an image in the webpage
 
 The [Part 2 sample: Use JavaScript to insert an image in the webpage](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) uses JavaScript code to insert the `stars.jpeg` image into the top of the currently opened webpage.  The extension's pop-up contains a title and an HTML button that's labelled **Display**.  When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.
 
@@ -40,7 +40,7 @@ Then you can install and run the finished extension that's in the repo, per [Sid
 <!-- ====================================================================== -->
 ## Step 1: Update popup.html to include a button
 
-To use this article, first do the steps in [Tutorial part 1: Display an image in a pop-up](./part1-simple-extension.md); that is, clone the MicrosoftEdge-Extensions repo, install the Part 1 demo, and run that demo.
+To use this article, first do the steps in [Sample: Display an image in a pop-up](./part1-simple-extension.md); that is, clone the MicrosoftEdge-Extensions repo, install the Part 1 demo, and run that demo.
 
 This step has already been done in [popup.html](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/popup/popup.html) in the MicrosoftEdge-Extensions repo.
 
@@ -318,10 +318,16 @@ Congratulations!  You've created an extension that sends a message from the exte
 
 
 <!-- ====================================================================== -->
+## Next steps
+
+To develop your own Microsoft Edge extension, you can copy and modify the sample's directory, and install and test the resulting extension.
+
+
+<!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [Tutorial part 1: Display an image in a pop-up](./part1-simple-extension.md)
+* [Sample: Display an image in a pop-up](./part1-simple-extension.md)
 * [Sideload an extension to install and test it locally](extension-sideloading.md)
 
 GitHub:

@@ -187,7 +187,7 @@ When the debugger steps into code that you don't recognize, you might want to ad
 
 See also:
 * [Content scripts](https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts)
-* [Tutorial part 2: Use JavaScript to insert an image in the webpage](../../extensions-chromium/getting-started/part2-content-scripts.md)
+* [Sample: Insert an image in the webpage](../../extensions-chromium/getting-started/part2-content-scripts.md)
 
 
 <!-- ------------------------------ -->
