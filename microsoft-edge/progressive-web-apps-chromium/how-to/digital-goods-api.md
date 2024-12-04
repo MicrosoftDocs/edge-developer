@@ -38,11 +38,14 @@ See [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Req
 <!-- ====================================================================== -->
 ## Origin trial and flag
 
-There's an origin trial and Edge flag for this feature.  As of December 1, 2024, this origin trial is likely to end soon, graduating the feature to be incorporated in Microsoft Edge.  See [Experimental features and origin trials for PWAs](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/origin-trials).
+There's an origin trial and Microsoft Edge flag for this feature.  See [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Microsoft Edge Developer_ > _Origin Trials_.
 
 The Edge Experiments flag in `edge://flags/`<!-- todo: which flag? --> will be enabled by default, when this feature ships in Edge Stable.
 
 This feature ships with a pre-release of Microsoft Edge.<!-- todo: specify the exact version number here when available -->
+
+See also:
+* [Experimental features and origin trials for PWAs](./origin-trials.md)
 
 
 <!-- ====================================================================== -->
@@ -85,7 +88,7 @@ try {
 }
 ```
 
-This payment method `getDigitalGoodsService("https://store.microsoft.com/billing")` will be available only for a Microsoft Edge-based PWA that's installed from the Microsoft Store, on Windows.  No other settings are needed.
+This payment method `getDigitalGoodsService("https://store.microsoft.com/billing")` will be available only for a PWA that's installed from the Microsoft Store, on Windows.  No other settings are needed.
 
 
 <!-- ====================================================================== -->
