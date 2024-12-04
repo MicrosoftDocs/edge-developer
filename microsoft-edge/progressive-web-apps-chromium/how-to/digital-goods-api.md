@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 11/25/2024
+ms.date: 12/02/2024
 ---
 # Provide in-app purchases with the Digital Goods API
 
@@ -36,16 +36,46 @@ See [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Req
 
 
 <!-- ====================================================================== -->
+## Enable the Digital Goods API
+
+The Digital Goods API is currently available in pre-release versions of Microsoft Edge.  To use the API, either enable the feature locally in Microsoft Edge, or register in the Digital Goods API origin trial to test the API in production.
+
+
+<!-- ------------------------------ -->
+#### Enable the feature locally
+
+To enable the Digital Goods API on your developer machine only, for testing:
+
+TODO: How do you enable the flags `msWebAppDigitalGoods`, `AppStoreBilling` and `DigitalGoodsApi`?  They are excluded from `edge://flags`.
+
+<!-- The Edge Experiments flag in `edge://flags/` will be enabled by default, when this feature ships in Edge Stable. -->
+<!-- todo: which flag? -->
+
+
+<!-- ------------------------------ -->
+#### Use the origin trial to test the feature in production
+
+To test the Digital Goods API in production, register in the origin trial.  See: 
+* [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Microsoft Edge Developer_ > _Origin Trials_.
+* [Registering for an origin trial](../../origin-trials/index.md#registering-for-an-origin-trial) in _Use origin trials in Microsoft Edge_.
+
+<!-- This feature ships with a pre-release of Microsoft Edge.  todo: specify the exact version number here when available -->
+
+See also:
+* [Experimental features and origin trials for PWAs](./origin-trials.md)
+
+
+<!-- ====================================================================== -->
 ## Checking whether the Digital Goods API is available
 
 To detect whether you've correctly enabled the API on your website, check for the `getDigitalGoodsService` method in the window object:
 
 ```javascript
 if ('getDigitalGoodsService' in window) {
-  // Digital Goods API is supported!
+  // The Digital Goods API is supported.
 } else {
   console.log('DigitalGoodsService is not available.');
-  // Use other payment method
+  // Use another payment method.
 }
 ```
 
@@ -61,7 +91,7 @@ If the method throws an error, the Microsoft Store Billing payment method is not
 
 ```javascript
 if (window.getDigitalGoodsService === undefined) {
-  // Digital Goods API is not supported in this context.
+  // The Digital Goods API isn't supported in this context.
   return;
 }
 try {
@@ -69,11 +99,13 @@ try {
   // Use the service here.
   ...
 } catch (error) {
-  // Our preferred service provider is not available.
+  // The preferred service provider is not available.
   // Use a web-based payment flow instead.
   return;
 }
 ```
+
+This payment method `getDigitalGoodsService("https://store.microsoft.com/billing")` will be available only for a PWA that's installed from the Microsoft Store, on Windows.  No other settings are needed.
 
 
 <!-- ====================================================================== -->
@@ -118,7 +150,7 @@ Use the `show` method to purchase an item, after you construct a request that co
 
 Once your products and details are displayed to the user, you can implement the purchase flow by using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
 
-Use the `supportedMethods` member of the `methodData`⁠⁠ parameter in the `PaymentRequest` to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`.  Then in the `data` member, pass along the item ID as the `sku`.
+Use the `supportedMethods` member of the `methodData`⁠⁠ parameter in the [PaymentRequest interface](https://www.w3.org/TR/payment-request/#dom-paymentrequest) to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`.  Then in the `data` member, pass along the item ID as the `sku`.
 
 ```javascript
 const details = await digitalGoodsService.getDetails(['monthly_subscription']);
@@ -145,6 +177,9 @@ This will display the Store purchase UI to the user, where the user can view det
 * If the user successfully pays and completes the purchase, the Promise will resolve with a `PaymentResponse`.
 
 In the `details` property of the payment response, a purchase token is returned.
+
+See also:
+* [PaymentRequest interface](https://www.w3.org/TR/payment-request/#dom-paymentrequest) in _W3C Payment Request API_.
 
 
 <!-- ====================================================================== -->
@@ -216,6 +251,7 @@ for (const purchase of purchaseList) {
 W3C:
 * [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/)
 * [Payment Request API](https://www.w3.org/TR/payment-request/)
+* [PaymentRequest interface](https://www.w3.org/TR/payment-request/#dom-paymentrequest) in _Payment Request API_.
 * [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API_.
 
 MDN:
