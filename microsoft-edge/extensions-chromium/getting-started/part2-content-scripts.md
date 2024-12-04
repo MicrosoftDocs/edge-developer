@@ -1,24 +1,24 @@
 ---
 title: "Sample: Insert an image in the webpage"
-description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
+description: Uses JavaScript to insert a .png file below the <body> start-tag of the current webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 10/04/2024
+ms.date: 12/03/2024
 ---
 # Sample: Insert an image in the webpage
 
-The [Part 2 sample: Use JavaScript to insert an image in the webpage](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) uses JavaScript code to insert the `stars.jpeg` image into the top of the currently opened webpage.  The extension's pop-up contains a title and an HTML button that's labelled **Display**.  When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.
+This sample uses JavaScript code to insert the `stars.jpeg` image into the top of the current webpage, below the `<body>` start-tag.  The extension's pop-up contains a title and an HTML button that's labelled **Display**.  When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.
 
-The Part 2 sample uses the following extension technologies:
+This sample uses the following extension technologies:
 *  Injecting JavaScript libraries into an extension.
 *  Exposing extension assets to browser tabs.
 *  Including content webpages in existing browser tabs.
 *  Having content webpages listen for messages from pop-ups and respond.
 
-You'll open the Part 2 extension from the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button after installing the extension via the **Manage Extensions** tab:
+As a preview of the sample: You'll open the Part 2 extension from the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button after installing the extension via the **Manage Extensions** tab:
 
 ![Clicking the extension's icon to open the extension](./part2-content-scripts-images/open-the-extension.png)
 
@@ -30,32 +30,99 @@ When you click the **Display** button, JavaScript code temporarily inserts `star
 
 ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
 
-If you want to immediately install and run the completed extension, or view its finished code, either:
-* Clone the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use repo directory `/extension-getting-started-part2/`.
-* Download the source code from the [/extension-getting-started-part2/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) folder of the MicrosoftEdge-Extensions repo.
-
-Then you can install and run the finished extension that's in the repo, per [Sideload an extension to install and test it locally](extension-sideloading.md).  The tab must contain a webpage before opening the extension.
+Obtain and run the sample as follows.
 
 
 <!-- ====================================================================== -->
-## Step 1: Update popup.html to include a button
+## Clone the MicrosoftEdge-Extensions repo
 
-To use this article, first do the steps in [Sample: Display an image in a pop-up](./part1-simple-extension.md); that is, clone the MicrosoftEdge-Extensions repo, install the Part 1 demo, and run that demo.
+You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.  These instructions use GitHub Desktop to clone the repo and switch to a working branch.
 
-This step has already been done in [popup.html](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/popup/popup.html) in the MicrosoftEdge-Extensions repo.
+To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
-The hypothetical starting state for this Part 2 article, if you were to manually build-up the sample to add JavaScript, is that a directory exists for the part 2 code, containing the same directories and files that are created in the Part 1 article.  These can be sibling directories for Part 1 and Part 2, as done in the MicrosoftEdge-Extensions repo.
+1. If not done already, install GitHub desktop: go to [https://github.com/apps/desktop](https://github.com/apps/desktop), and then click the **Download now** button.
 
-It's possible to install the completed Part 1 and Part 2 demos from the MicrosoftEdge-Extensions repo, side-by-side.  We recommend first cloning the repo and installing and running the demos, before (or instead of) starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
+1. Go to [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions).
 
-To manually expand the completed Part 1 demo to create the Part 2 demo, you would need to do the following:
-1. In the folder that contains the `popup.html` file for Part 2 (initially a copy of the Part 1 file), add tagging that displays a title with a button.
-1. Include a reference to a JavaScript file, `popup.js`.
-1. Program that button.
+1. Click the **Code** button, and then select **Open with GitHub Desktop**.
 
-Below is the sample HTML file:
+   A dialog opens, saying **This site is trying to open GitHubDesktop.exe.**
 
-`/popup/popup.html` (complete):
+1. Click the **Open** button.
+
+   GitHub Desktop opens, with the **MicrosoftEdge-Extensions** repo selected in the upper left dropdown list.
+
+1. In GitHub Desktop, click the **Branch** menu, and then click **New branch**.
+
+   The **Create a branch** dialog opens.
+
+1. In the **Name** text box, enter a branch name, such as **ext-sample-1**, and then click the **Create branch** button.
+
+   In the upper middle and lower left of GitHub Desktop, the current branch is shown, such as **ext-sample-1**.
+
+You are now free to modify the code in your working branch, without altering the code that's in the "main" branch of the repo.
+
+<!-- See also: -->
+<!-- * [Step 2: Create a branch](https://docs.github.com/en/get-started/start-your-journey/hello-world#step-2-create-a-branch) in _Hello World_. -->
+
+
+<!-- ====================================================================== -->
+## Install the sample locally
+
+<!-- todo: inline steps to install -->
+
+
+
+<!-- ====================================================================== -->
+## Run the sample
+
+
+<!-- todo: inline steps to run -->
+Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md) to locally update the extension and then run the extension.  The tab must contain a webpage before opening the extension.
+
+A pop-up opens, containing a small HTML page with a title, instructions, and a **Display** button:
+
+![popup.html after clicking the Extension's icon](./part2-content-scripts-images/part2-popupdialog.png)
+
+
+1. Install or update the extension, in the Manage Extensions page; see [Sideload an extension to install and test it locally](extension-sideloading.md).
+
+1. Go to a webpage, such as [Microsoft.com](https://www.microsoft.com), in a new window or tab.  The tab must not be empty, and must not be the Manage Extensions page.
+
+1. Click the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button, next to the Address bar.  Or, select **Settings and more** (...) > **Extensions**.
+
+   ![Clicking the extension's icon to open the extension](./part2-content-scripts-images/open-the-extension.png)
+
+1. Click the icon or name of the **NASA picture of the day viewer** extension.
+
+   The extension's pop-up opens:
+
+   ![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
+
+1. Click the **Display** button.  `stars.jpeg` is inserted into the top of the current webpage in the current tab, pushing the webpage's content down below the image:
+
+   ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
+
+1. Click the `stars.jpeg` image that's filling the top of the webpage.  That image element is removed from the DOM tree and webpage, and the current webpage is restored, shifting its content back up to the top of the tab.
+
+The extension sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image.
+
+
+<!-- ====================================================================== -->
+## Files and directories
+
+
+
+<!-- ====================================================================== -->
+<!-- SORT/MERGE INTO ABOVE SECTIONS -->
+
+
+<!-- ====================================================================== -->
+## The default initial popup webpage (`popup.html`)
+
+`popup.html` is specified in the manifest file as the initial, default webpage to display in the extension popup.  This webpage contains a title, instructions, and a **Display** button.
+
+`/popup/popup.html`:<!-- (complete listing) -->
 
 ```html
 <!DOCTYPE html>
@@ -84,12 +151,6 @@ Below is the sample HTML file:
     </body>
 </html>
 ```
-
-Do the steps in [Sideload an extension to install and test it locally](extension-sideloading.md) to locally update the extension and then run the extension.  The tab must contain a webpage before opening the extension.
-
-After updating and opening the extension, a pop-up opens, containing a small HTML page with a title, instructions, and a **Display** button:
-
-![popup.html after clicking the Extension's icon](./part2-content-scripts-images/part2-popupdialog.png)
 
 
 <!-- ====================================================================== -->
@@ -234,11 +295,13 @@ The `matches` attribute is set to `<all_urls>`, which means that all files in `c
 <!-- ------------------------------ -->
 #### Add jQuery
 
-This step has already been done in [jquery.min.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/lib/jquery.min.js) in the MicrosoftEdge-Extensions repo.
+`jquery.min.js` is a predefined, minified file.
 
-In the content scripts that you're injecting, plan on using jQuery (`$`).  You added a minified version of jQuery and put it in your extension package as `lib\jquery.min.js`.
+[jquery.min.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/lib/jquery.min.js) in the MicrosoftEdge-Extensions repo.
 
-These content scripts run in individual sandboxes, which means that the jQuery injected into the `popup.js` page isn't shared with the content.
+In the content scripts that you're injecting, it's common to use jQuery (`$`).  This sample includes a minified version of jQuery, residing in the extension package<!-- todo: check 'package' --> as `lib\jquery.min.js`.
+
+A content script runs in an individual sandbox, which means that the jQuery that's injected into the `popup.js` page isn't shared with the current webpage.
 
 
 <!-- ------------------------------ -->
@@ -251,11 +314,11 @@ Even if the browser tab has JavaScript running on it on the loaded web page, any
 <!-- ====================================================================== -->
 ## Step 6: Add the content script message listener
 
-To continue manually building-up the Part 2 demo, you would need to create this file.  This step has already been done in [content.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/content-scripts/content.js) in the MicrosoftEdge-Extensions repo.
+[content.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/content-scripts/content.js) in the MicrosoftEdge-Extensions repo.
 
 Here's the `content-scripts\content.js` file that gets injected into every browser tab page based on the `content-scripts` section in `manifest.json`:
 
-`/content-scripts/content.js` (complete):
+`/content-scripts/content.js` (complete listing):
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -294,27 +357,6 @@ When an event is processed by the listener, the function that is the first param
 <!-- ====================================================================== -->
 ## Step 7: Install and test the extension
 
-1. Install or update the extension, in the Manage Extensions page; see [Sideload an extension to install and test it locally](extension-sideloading.md).
-
-1. Go to a webpage, such as [Microsoft.com](https://www.microsoft.com), in a new window or tab.  The tab must not be empty, and must not be the Manage Extensions page.
-
-1. Click the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button, next to the Address bar.  Or, select **Settings and more** (...) > **Extensions**.
-
-   ![Clicking the extension's icon to open the extension](./part2-content-scripts-images/open-the-extension.png)
-
-1. Click the icon or name of the **NASA picture of the day viewer** extension.
-
-   The extension's pop-up opens:
-
-   ![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
-
-1. Click the **Display** button.  `stars.jpeg` is inserted into the top of the current webpage in the current tab, pushing the webpage's content down below the image:
-
-   ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
-
-1. Click the `stars.jpeg` image that's filling the top of the webpage.  That image element is removed from the DOM tree and webpage, and the current webpage is restored, shifting its content back up to the top of the tab.
-
-Congratulations!  You've created an extension that sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image.
 
 
 <!-- ====================================================================== -->
