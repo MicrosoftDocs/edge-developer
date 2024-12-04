@@ -1,189 +1,220 @@
 ---
-title: "Tutorial part 1: Display an image in a pop-up"
-description: Build an extension that displays an image file in a webpage in a pop-up, without JavaScript.
+title: "Sample: Display an image in a pop-up"
+description: An extension that displays an image file in a webpage in a pop-up, without JavaScript.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 10/04/2024
+ms.date: 12/03/2024
 ---
-# Tutorial part 1: Display an image in a pop-up
+# Sample: Display an image in a pop-up
 
-The [Part 1 sample: Display an image in a pop-up](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1) is a simple static extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab:
-
-![The simple extension running](./part1-simple-extension-images/extension-running.png)
-
-You create this type of extension by doing the following:
-1. Create a manifest.json file.
-1. Add icons for launching the extension.
-1. Open a default pop-up dialog.
-
-Along the way, you install (or update) and test the extension.
-
-If you want to immediately install and run the completed extension, or view its finished code, either:
-* Clone the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo to your local drive.  Use the directory `/extension-getting-started-part1/`.
-* Download the source code from the [/part1/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1) folder of the MicrosoftEdge-Extensions repo.
-
-Then you can install and run the finished extension that's in the repo, per [Sideload an extension to install and test it locally](extension-sideloading.md).
-
-
-<!-- ====================================================================== -->
-## Step 1: Create a manifest.json file
-
-Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the extension package version, the extension name and description, and so on.
-
-All the coding steps in this article have already been done in the Part 1 demo in the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.  We recommend first cloning the repo and installing and running the Part 1 demo, before (or instead of) starting with an empty directory and then manually creating directories, creating files, and pasting code into the files.
-
-This step has already been done in [manifest.json](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part1/part1/manifest.json) in the MicrosoftEdge-Extensions repo.  If you want to manually create the Part 1 extension by starting with an empty directory:
-
-*   In a directory on your machine, using an editor, such as Visual Studio Code, create a `manifest.json` file that contains the following lines:
-
-    ```json
-    {
-        "name": "NASA picture of the day pop-up",
-        "version": "0.0.0.1",
-        "manifest_version": 3,
-        "description": "A basic extension that displays an image in a pop-up.",
-    }
-    ```
-
-
-<!-- ====================================================================== -->
-## Step 2: Add icons for launching the extension
-
-This step has already been done in the Part 1 demo in the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.  If you want to manually create the Part 1 extension, continue with the following steps.
-
-1.  Create an `icons` directory in your project, in the same directory as the manifest file, to store the icon image files.  The icons are used as the background image for the button that the user clicks to launch the extension:
-
-    ![Icon on the toolbar to open your extension](./part1-simple-extension-images/part1-badge1.png)
-
-    For icons:
-    *   We recommend using `PNG` format, but you can also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
-    *   We recommend using images that are 128 x 128 px, which are resized by the browser if necessary.
-
-1.  Make sure the directories of your project are similar to the following structure:
-
-    ```shell
-    └── part1
-        ├── manifest.json
-        └── icons
-            ├── nasapod16x16.png
-            ├── nasapod32x32.png
-            ├── nasapod48x48.png
-            └── nasapod128x128.png
-    ```
-
-1.  Obtain the `.png` files from the repo:
-    * `nasapod16x16.png`
-    * `nasapod32x32.png`
-    * `nasapod48x48.png`
-    * `nasapod128x128.png`
-
-    For example, individually download the files from the [/icons/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1/icons) folder of the MicrosoftEdge-Extensions repo and place them in your `/icons/` directory.
-
-1.  List the icons in the `manifest.json` file, as follows:
-
-    ```json
-    {
-        "name": "NASA picture of the day pop-up",
-        "version": "0.0.0.1",
-        "manifest_version": 3,
-        "description": "A basic extension that displays an image in a pop-up.",
-        "icons": {
-            "16": "icons/nasapod16x16.png",
-            "32": "icons/nasapod32x32.png",
-            "48": "icons/nasapod48x48.png",
-            "128": "icons/nasapod128x128.png"
-        }
-    }
-    ```
-
-
-<!-- ====================================================================== -->
-## Step 3: Open a default pop-up dialog
-
-This step has already been done in [popup.html](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part1/part1/popup/popup.html) in the MicrosoftEdge-Extensions repo.  If you want to manually create the Part 1 extension, continue with the following steps.
-
-Create a `HTML` file to run when the user launches your extension.  When the user clicks the icon to launch the extension, this file will be displayed as a modal dialog.
-
-1.  Create the HTML file named `popup.html` in a directory named `popup`.
-
-1.  Add the following code to `popup.html`, to display the stars image:
-
-    ```html
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8" />
-            <title>NASA picture of the day</title>
-        </head>
-        <body>
-            <div>
-                <img src="/images/stars.jpeg" alt="Stars" />
-            </div>
-        </body>
-    </html>
-    ```
-
-1.  Add the file `stars.jpeg` in the `images` folder.  For example, download [stars.jpeg](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part1/part1/images/stars.jpeg) from the MicrosoftEdge-Extensions repo.
-
-1.  Make sure the directories of your project are similar to the following structure:
-
-    ```shell
-    └── part1
-        ├── manifest.json
-        ├── icons
-        │   ├── nasapod16x16.png
-        │   ├── nasapod32x32.png
-        │   ├── nasapod48x48.png
-        │   └── nasapod128x128.png
-        ├── images
-        │   └── stars.jpeg
-        └── popup
-            └── popup.html
-    ```
-
-1.  Register the pop-up in `manifest.json` under `action`, as follows:
-
-    ```json
-    {
-        "name": "NASA picture of the day pop-up",
-        "version": "0.0.0.1",
-        "manifest_version": 3,
-        "description": "A basic extension that displays an image in a pop-up.",
-        "icons": {
-            "16": "icons/nasapod16x16.png",
-            "32": "icons/nasapod32x32.png",
-            "48": "icons/nasapod48x48.png",
-            "128": "icons/nasapod128x128.png"
-        },
-        "action": {
-            "default_popup": "popup/popup.html"
-        }
-    }
-    ```
-
-That's everything you need to develop a simple extension.
-
-
-<!-- ====================================================================== -->
-## Step 4: Install and test the extension
-
-Install and run the extension; see [Sideload an extension to install and test it locally](extension-sideloading.md).  The extension displays `popup.html`, containing `stars.jpeg`, in a pop-up:
+This sample is a simple static extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab:
 
 ![The simple extension running](./part1-simple-extension-images/extension-running.png)
 
-You can open this Part 1 demo extension in any tab, including an empty tab or the Manage Extensions tab.
 
-After running and testing the extension, you can continue on to [Tutorial part 2: Use JavaScript to insert an image in the webpage](./part2-content-scripts.md).
+<!-- ====================================================================== -->
+## Clone the MicrosoftEdge-Extensions repo
+
+You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.  These instructions use GitHub Desktop to clone the repo and switch to a working branch.
+
+To clone the `MicrosoftEdge-Extensions` repo to your local drive:
+
+1. If not done already, install GitHub desktop: go to [https://github.com/apps/desktop](https://github.com/apps/desktop), and then click the **Download now** button.
+
+1. Go to [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions).
+
+1. Click the **Code** button, and then select **Open with GitHub Desktop**.
+
+   A dialog opens, saying **This site is trying to open GitHubDesktop.exe.**
+
+1. Click the **Open** button.
+
+   GitHub Desktop opens, with the **MicrosoftEdge-Extensions** repo selected in the upper left dropdown list.
+
+1. In GitHub Desktop, click the **Branch** menu, and then click **New branch**.
+
+   The **Create a branch** dialog opens.
+
+1. In the **Name** text box, enter a branch name, such as **ext-sample-1**, and then click the **Create branch** button.
+
+   In the upper middle and lower left of GitHub Desktop, the current branch is shown, such as **ext-sample-1**.
+
+You are now free to modify the code in your working branch, without altering the code that's in the "main" branch of the repo.
+
+<!-- See also: -->
+<!-- * [Step 2: Create a branch](https://docs.github.com/en/get-started/start-your-journey/hello-world#step-2-create-a-branch) in _Hello World_. -->
+
+
+<!-- ====================================================================== -->
+## Install the sample locally
+
+Instead of installing the sample from the Store, you'll install the sample locally, so that you can possibly modify it and quickly test the changes.  Installing locally is sometimes called _sideloading_ an extension.
+
+1. In Microsoft Edge, click the **Extensions** (![Extensions icon](./part1-simple-extension-images/extensions-icon.png)) button, next to the Address bar, if this icon is displayed.  Or, select **Settings and more** (...) > **Extensions**.  The **Extensions** pop-up opens:
+
+   ![The Extensions popup when no extensions are installed](./part1-simple-extension-images/extensions-popup-no-extensions.png)
+
+1. Click **Manage extensions**.  The **Extensions** management page opens in a new tab:
+
+   ![Turning on Developer Mode](./part1-simple-extension-images/part1-developermode-toggle.png)
+
+1. Turn on the **Developer mode** toggle.
+
+1. When installing your extension for the first time, click the **Load unpacked** (![The "Load unpacked" icon](./part1-simple-extension-images/load-unpacked-icon.png)) button.  The **Select the extension directory** dialog opens.
+
+1. Select the directory that contains the extension's source files, such as `manifest.json`, and then click the **Select Folder** button.
+
+   Example path:
+
+   `C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part1\part1\`
+
+   The extension is installed in the browser, similar to an extension that's installed from the store:
+
+   ![Installed extensions page, showing a sideloaded extension](./part1-simple-extension-images/part1-installed-extension.png)
+
+
+<!-- ====================================================================== -->
+## Run the sample
+
+1. In the upper right of Microsoft Edge, click the **Extensions** (![Extensions icon](./part1-simple-extension-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**.
+
+   The **Extensions** pop-up opens:
+
+   ![The Extensions pop-up](./part1-simple-extension-images/extensions-popup.png)
+
+1. Click the extension's icon or name (**NASA picture of the day pop-up**).
+
+   The extension opens, and the extension's icon is added next to the Address bar and Extensions (![Extensions icon](./part1-simple-extension-images/extensions-icon.png)) icon.  The extension displays `popup.html`, containing `stars.jpeg`, in a pop-up:
+
+   ![The simple extension running](./part1-simple-extension-images/extension-running.png)
+
+   You can open this particular sample extension in any tab, including an empty tab or the **Manage Extensions** tab.
+
+See also:
+* [Sideload an extension to install and test it locally](./extension-sideloading.md)
+
+In the following sections, you study the sample.  After that, to develop your own Microsoft Edge extension, you can copy and modify the sample's directory, and install and test the resulting extension.
+
+
+<!-- ====================================================================== -->
+## Files and directories
+
+The sample has the following directory structure:
+
+Example path for the sample:
+`C:\Users\myAlias\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part1\part1\`
+
+Directories and files:
+
+```shell
+/icons/
+   nasapod16x16.png
+   nasapod32x32.png
+   nasapod48x48.png
+   nasapod128x128.png
+/images/
+   stars.jpeg
+/popup/
+   popup.html
+manifest.json
+```
+
+* The `/icons/` directory contains versions of a `.png` file that's used to represent the extension near the browser's Address bar.
+* The `/images/` directory contains `stars.jpeg`, which is displayed in the extension's pop-up.
+* The `/popup/` directory contains `popup.html`, which defines the webpage content that's displayed in the extension's pop-up.
+* `manifest.json` contains basic information about the extension.
+
+
+<!-- ====================================================================== -->
+## The manifest file (`manifest.json`)
+
+Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the extension package version, and the extension name and description.
+
+`manifest.json` contains the following lines:
+
+```json
+{
+  "name": "NASA picture of the day pop-up",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "description": "A basic extension that displays an image in a pop-up.",
+  "icons": {
+      "16": "icons/nasapod16x16.png",
+      "32": "icons/nasapod32x32.png",
+      "48": "icons/nasapod48x48.png",
+      "128": "icons/nasapod128x128.png"
+  },
+  "action": {
+      "default_popup": "popup/popup.html"
+  }
+}
+```
+
+
+<!-- ====================================================================== -->
+## Icons for launching the extension
+
+The `/icons/` directory is in the same directory as the manifest file, to store the icon image files.  The icons are used as the background image for the button that you click to launch the extension:
+
+![Icon on the toolbar to open the extension](./part1-simple-extension-images/part1-badge1.png)
+
+![Icon on the toolbar](./part1-simple-extension-images/icon-png-toolbar.png)
+
+Recommendations for icons:
+* Use `PNG` format, but you can also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
+* If you provide a single icon file, use 128 x 128 px, which can be resized by the browser if necessary.
+
+
+<!-- ====================================================================== -->
+## The default pop-up dialog (`popup.html`)
+
+`popup.html` in the `popup` directory runs when you launch the extension.  When you click the icon to launch the extension, this file is displayed as a modal dialog.
+
+`popup.html` contains the following code, to display a title and the stars image:
+
+```html
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>NASA picture of the day</title>
+    </head>
+    <body>
+        <div>
+            <img src="/images/stars.jpeg" alt="Stars" />
+        </div>
+    </body>
+</html>
+```
+
+The popup (`popup.html`) is registered as the default popup in `manifest.json` under `action`:
+
+```json
+{
+    ...
+    "action": {
+        "default_popup": "popup/popup.html"
+    }
+}
+```
+
+
+<!-- ====================================================================== -->
+## Next steps
+
+To develop your own Microsoft Edge extension, you can copy and modify the sample's directory, and install and test the resulting extension.
+
+After running and testing the extension, you can continue on to [Sample: Insert an image in the webpage](./part2-content-scripts.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [Sideload an extension to install and test it locally](extension-sideloading.md)
-* [Tutorial part 2: Use JavaScript to insert an image in the webpage](./part2-content-scripts.md)
+* [Sideload an extension to install and test it locally](./extension-sideloading.md)
+* [Sample: Insert an image in the webpage](./part2-content-scripts.md)
 
 GitHub:
 * [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.
