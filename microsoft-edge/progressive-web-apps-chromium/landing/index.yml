@@ -37,7 +37,7 @@ landingContent:
 
 # =============================================================================
 # Card r1c1
-  - title: Card row 1 col 1
+  - title: Overview and getting started
     linkLists:
       - linkListType: overview
         links:
@@ -47,84 +47,24 @@ landingContent:
           - text: What's New in Progressive Web Apps
             url: ../whats-new/pwa.md
 
-          - text: Get started with PWAs
+          - text: Get started with Progressive Web Apps
             url: ../how-to/index.md
-
-          - text: Best practices for PWAs
-            url: ../how-to/best-practices.md
-
-# =============================================================================
-# Card r1c2
-  - title: Card r1c2
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Publish a PWA to the Microsoft Store
-            url: ../how-to/microsoft-store.md
-
-          - text: Experimental features and origin trials for PWAs
-            url: ../how-to/origin-trials.md
 
           - text: Use Progressive Web Apps in Microsoft Edge
             url: ../ux.md
 
-          - text: Debug Progressive Web Apps
-            url: ../how-to/debug.md
-
 # =============================================================================
-# Card r1c3
-  - title: Card r1c3
+# Card r1c2
+  - title: Integrate your PWA into Windows
     linkLists:
       - linkListType: overview
         links:
-          - text: Store data on the device
-            url: ../how-to/offline.md
-
-          - text: Define icons and a theme color
-            url: ../how-to/icon-theme-color.md
-
-# =============================================================================
-# Card r2c1
-  - title: Card r2c1
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Re-engage users with badges and notifications
-            url: ../how-to/notifications-badges.md
-
-          - text: Re-engage users with push messages
-            url: ../how-to/push.md
-
-          - text: Synchronize and update a PWA in the background
-            url: ../how-to/background-syncs.md
-
-          - text: Handle files in Progressive Web Apps
-            url: ../how-to/handle-files.md
-
-# =============================================================================
-# Card r2c2
-  - title: Card r2c2
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Handle links to your Progressive Web App
-            url: ../how-to/handle-urls.md
-
-          - text: Handle protocols in Progressive Web Apps
-            url: ../how-to/handle-protocols.md
-
           - text: Display content in the title bar area using Window Controls Overlay
             url: ../how-to/window-controls-overlay.md
 
           - text: Share content with other apps
             url: ../how-to/share.md
 
-# =============================================================================
-# Card r2c3
-  - title: Card r2c3
-    linkLists:
-      - linkListType: overview
-        links:
           - text: Define app shortcuts (long-press or right-click menus)
             url: ../how-to/shortcuts.md
 
@@ -133,6 +73,69 @@ landingContent:
 
           - text: Build PWAs for the sidebar in Microsoft Edge
             url: ../how-to/sidebar.md
+
+# =============================================================================
+# Card r1c3
+  - title: Publish and integrate with the Microsoft Store
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Publish a Progressive Web App to the Microsoft Store
+            url: ../how-to/microsoft-store.md
+
+          - text: Provide in-app purchases with the Digital Goods API
+            url: ../how-to/digital-goods-api.md
+            
+# =============================================================================
+# Card r2c1
+  - title: Update your PWA and alert the user with badges, notifications, and push messages
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Synchronize and update a PWA in the background
+            url: ../how-to/background-syncs.md
+
+          - text: Re-engage users with badges and notifications
+            url: ../how-to/notifications-badges.md
+
+          - text: Re-engage users with push messages
+            url: ../how-to/push.md
+
+# =============================================================================
+# Card r2c2
+  - title: Handle files, links, and protocols
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Handle files in Progressive Web Apps
+            url: ../how-to/handle-files.md
+
+          - text: Handle links to your Progressive Web App
+            url: ../how-to/handle-urls.md
+
+          - text: Handle protocols in Progressive Web Apps
+            url: ../how-to/handle-protocols.md
+
+# =============================================================================
+# Card r2c3
+  - title: Additional tasks and features
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Define icons and a theme color
+            url: ../how-to/icon-theme-color.md
+
+          - text: Store data on the device
+            url: ../how-to/offline.md
+
+          - text: Best practices for PWAs
+            url: ../how-to/best-practices.md
+
+          - text: Experimental features and origin trials for PWAs
+            url: ../how-to/origin-trials.md
+
+          - text: Debug Progressive Web Apps
+            url: ../how-to/debug.md
 
           - text: Progressive Web App demos
             url: ../demo-pwas.md
