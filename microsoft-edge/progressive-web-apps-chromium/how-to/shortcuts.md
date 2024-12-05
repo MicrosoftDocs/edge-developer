@@ -9,16 +9,17 @@ ms.subservice: pwa
 ms.date: 09/13/2021
 ---
 # Define app shortcuts
+# Define app shortcuts (long-press or right-click menus)
 
 App shortcuts let users accomplish common tasks more quickly and easily and can increase their engagement with an app.
 
 On mobile devices, shortcuts can usually be accessed by long-pressing an app icon.  On Windows, shortcuts are integrated as Jumplists.  Jumplists define popup menus that appear when you right-click a tile in the Start menu, or right-click an icon in the taskbar.
 
-The next figure shows shortcuts on Microsoft Edge, on iOS:
+Shortcuts on Microsoft Edge, on iOS:
 
 ![Shortcuts on Microsoft Edge on iOS](./shortcuts-images/edge-ios-shortcuts.png)
 
-The next figure shows a Jumplist on the Webboard app, on Windows:
+A Jumplist (right-click menu) on the Webboard app, on Windows:
 
 ![A Jumplist on the Webboard app on Windows](./shortcuts-images/pwa-shortcuts-in-taskbar.png)
 

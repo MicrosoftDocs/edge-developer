@@ -1,5 +1,5 @@
 ---
-title: Build PWA-driven widgets
+title: Display PWA widgets in the Windows Widgets Board
 description: How to build lightweight PWA-driven widgets that integrate in the operating system widgets dashboard.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 08/10/2023
 ---
-# Build PWA-driven widgets
+# Display PWA widgets in the Windows Widgets Board
 
 Various operating systems have widgets dashboards that let users read content and perform tasks. Examples of this include Android Home Screen widgets, macOS Dashboard and Today Panel widgets, the Apple Touch Bar, Samsung Daily Cards, Mini App widgets, and smart watch app companions.
 

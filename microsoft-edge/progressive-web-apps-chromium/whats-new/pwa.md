@@ -57,7 +57,7 @@ The following screenshot shows the Windows Widgets Board on the left and the PWA
 
 ![The PWAmp mini player widget, in the Windows Widgets board, next to the PWAmp app](./pwa-images/pwamp-widget.png)
 
-To learn more, see [Build PWA-driven widgets](../how-to/widgets.md).
+To learn more, see [Display PWA widgets in the Windows Widgets Board](../how-to/widgets.md).
 
 
 <!-- ====================================================================== -->

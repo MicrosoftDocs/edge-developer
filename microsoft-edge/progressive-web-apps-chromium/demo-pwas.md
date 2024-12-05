@@ -26,13 +26,13 @@ PWAmp uses the following features:
 
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| Window Controls Overlay | The space normally reserved to the title bar can be used by PWAmp to display a visualization of the current song. | [Display content in the title bar area using Window Controls Overlay](how-to/window-controls-overlay.md) |
-| Protocol Handling | Links that start with `web+amp:` can be used to share remote songs. | [Handle protocols in Progressive Web Apps](how-to/handle-protocols.md) |
-| File Handling | Audio files can be opened with PWAmp directly. Right-click on a file ending with `.mp3` for example and click **Open with**. | [Handle files in Progressive Web Apps](how-to/handle-files.md) |
-| Web Share | Songs can be shared with other apps through the operating system sharing dialog. | [Sharing content](how-to/share.md#sharing-content) |
-| Share Target | Other apps can share audio files with PWAmp, through the operating system sharing dialog. | [Receiving shared content](how-to/share.md#receiving-shared-content) |
-| Widget | A mini-player Widget can be installed in Windows 11 Widgets dashboard to see the current song. | [Build PWA-driven Widgets](how-to/widgets.md) |
-| Sidebar | PWAmp can be pinned to the sidebar in Microsoft Edge. | [Build PWAs for the sidebar in Microsoft Edge](how-to/sidebar.md) |
+| Window Controls Overlay | The space normally reserved to the title bar can be used by PWAmp to display a visualization of the current song. | [Display content in the title bar area using Window Controls Overlay](./how-to/window-controls-overlay.md) |
+| Protocol Handling | Links that start with `web+amp:` can be used to share remote songs. | [Handle protocols in Progressive Web Apps](./how-to/handle-protocols.md) |
+| File Handling | Audio files can be opened with PWAmp directly. Right-click on a file ending with `.mp3` for example and click **Open with**. | [Handle files in Progressive Web Apps](./how-to/handle-files.md) |
+| Web Share | Songs can be shared with other apps through the operating system sharing dialog. | [Sharing content](./how-to/share.md#sharing-content) |
+| Share Target | Other apps can share audio files with PWAmp, through the operating system sharing dialog. | [Receiving shared content](./how-to/share.md#receiving-shared-content) |
+| Widget | A mini-player Widget can be installed in Windows 11 Widgets dashboard to see the current song. | [Display PWA widgets in the Windows Widgets Board](./how-to/widgets.md) |
+| Sidebar | PWAmp can be pinned to the sidebar in Microsoft Edge. | [Build PWAs for the sidebar in Microsoft Edge](./how-to/sidebar.md) |
 
 
 <!-- ====================================================================== -->

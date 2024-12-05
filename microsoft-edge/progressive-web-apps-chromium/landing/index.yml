@@ -128,7 +128,7 @@ landingContent:
           - text: Define app shortcuts
             url: ../how-to/shortcuts.md
 
-          - text: Build PWA-driven widgets
+          - text: Display PWA widgets in the Windows Widgets Board
             url: ../how-to/widgets.md
 
           - text: Build PWAs for the sidebar in Microsoft Edge
