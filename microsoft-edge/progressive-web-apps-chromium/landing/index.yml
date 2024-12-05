@@ -72,10 +72,10 @@ landingContent:
           - text: Define app shortcuts (long-press or right-click menus)
             url: ../how-to/shortcuts.md
 
-          - text: Display PWA widgets in the Windows Widgets Board
+          - text: Display a PWA widget in the Windows Widgets Board
             url: ../how-to/widgets.md
 
-          - text: Build PWAs for the sidebar in Microsoft Edge
+          - text: Build a PWA for the sidebar in Microsoft Edge
             url: ../how-to/sidebar.md
 
 # =============================================================================
@@ -111,13 +111,13 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Handle files in Progressive Web Apps
+          - text: Handle files in a Progressive Web App
             url: ../how-to/handle-files.md
 
           - text: Handle links to your Progressive Web App
             url: ../how-to/handle-urls.md
 
-          - text: Handle protocols in Progressive Web Apps
+          - text: Handle protocols in a Progressive Web App
             url: ../how-to/handle-protocols.md
 
 # =============================================================================
@@ -126,7 +126,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Debug Progressive Web Apps
+          - text: Debug a Progressive Web App
             url: ../how-to/debug.md
 
           - text: Define icons and a theme color

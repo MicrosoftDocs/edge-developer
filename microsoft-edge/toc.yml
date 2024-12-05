@@ -457,7 +457,7 @@
                   href: devtools-guide-chromium/storage/cache.md
                   displayName: Application tool
 
-                - name: Debug Progressive Web Apps (PWAs)
+                - name: Debug a Progressive Web App (PWAs)
                   href: devtools-guide-chromium/progressive-web-apps/index.md
                   displayName: Application tool
 
@@ -1190,10 +1190,10 @@
             - name: Define app shortcuts (long-press or right-click menus)
               href: ./progressive-web-apps-chromium/how-to/shortcuts.md
 
-            - name: Display PWA widgets in the Windows Widgets Board
+            - name: Display a PWA widget in the Windows Widgets Board
               href: ./progressive-web-apps-chromium/how-to/widgets.md
 
-            - name: Build PWAs for the sidebar in Microsoft Edge
+            - name: Build a PWA for the sidebar in Microsoft Edge
               href: ./progressive-web-apps-chromium/how-to/sidebar.md
 
         - name: Publish and integrate with the Microsoft Store
@@ -1217,14 +1217,14 @@
 
         - name: Handle files, links, and protocols
           items:
-            - name: Handle files in Progressive Web Apps
+            - name: Handle files in a Progressive Web App
               href: ./progressive-web-apps-chromium/how-to/handle-files.md
 
             - name: Handle links to your Progressive Web App
               href: ./progressive-web-apps-chromium/how-to/handle-urls.md
               displayName: handle urls
 
-            - name: Handle protocols in Progressive Web Apps
+            - name: Handle protocols in a Progressive Web App
               href: ./progressive-web-apps-chromium/how-to/handle-protocols.md
 
         - name: Define icons and a theme color
@@ -1239,7 +1239,7 @@
         - name: Experimental features and origin trials for PWAs
           href: ./progressive-web-apps-chromium/how-to/origin-trials.md
 
-        - name: Debug Progressive Web Apps
+        - name: Debug a Progressive Web App
           href: ./progressive-web-apps-chromium/how-to/debug.md
 
         - name: Progressive Web App demos

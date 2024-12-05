@@ -1,5 +1,5 @@
 ---
-title: Debug Progressive Web Apps (PWAs)
+title: Debug a Progressive Web App (PWAs)
 description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 09/12/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Debug Progressive Web Apps (PWAs)
+# Debug a Progressive Web App (PWAs)
 
 Use the **Application** tool to inspect, modify, and debug web app manifests, service workers, and service worker caches.  The **Application** tool includes the following panes for Progressive Web App features:
 

@@ -106,7 +106,7 @@ landingContent:
           - text: Inspect animations
             url: ../inspect-styles/animations.md
 
-          - text: Debug Progressive Web Apps (PWAs)
+          - text: Debug a Progressive Web App (PWAs)
             url: ../progressive-web-apps/index.md
 
           - text: Inspect network activity

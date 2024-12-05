@@ -94,13 +94,13 @@ You can register your PWA to be a file handler for certain file types.
 
 Use the PWA file handler feature to automatically launch your app when certain file are opened by the user in the operating system.
 
-See [Handle files in Progressive Web Apps](./handle-files.md).
+See [Handle files in a Progressive Web App](./handle-files.md).
 
 #### Link and protocol handling
 
 Register your app is a link or protocol handler to automatically launch your app when certain links are used in other applications.
 
-See [Handle links to your Progressive Web App](./handle-urls.md) and [Handle protocols in Progressive Web Apps](./handle-protocols.md).
+See [Handle links to your Progressive Web App](./handle-urls.md) and [Handle protocols in a Progressive Web App](./handle-protocols.md).
 
 #### Widgets
 
@@ -108,7 +108,7 @@ See [Handle links to your Progressive Web App](./handle-urls.md) and [Handle pro
 
 Create your own app widgets to display in the operating system widget dashboard such as the Windows 11 Widgets Board.
 
-See [Display PWA widgets in the Windows Widgets Board](./widgets.md).
+See [Display a PWA widget in the Windows Widgets Board](./widgets.md).
 
 
 <!-- ====================================================================== -->

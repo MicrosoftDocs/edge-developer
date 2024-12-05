@@ -83,7 +83,7 @@ To test that your shortcuts are configured correctly:
    > [!div class="mx-imgBorder"]
    > ![Shortcuts are listed in the Application panel](./shortcuts-images/devtools-debug-shortcuts.png)
 
-To learn more about using the Application panel to debug PWAs, see [Debug Progressive Web Apps (PWAs)](../../devtools-guide-chromium/progressive-web-apps/index.md).
+To learn more about using the Application panel to debug PWAs, see [Debug a Progressive Web App (PWAs)](../../devtools-guide-chromium/progressive-web-apps/index.md).
 
 
 <!-- ====================================================================== -->

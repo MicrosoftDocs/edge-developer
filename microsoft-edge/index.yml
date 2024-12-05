@@ -248,7 +248,7 @@ conceptualContent:
               url: ./progressive-web-apps-chromium/how-to/index.md
               itemType: get-started
 
-            - text: Debug Progressive Web Apps
+            - text: Debug a Progressive Web App
               url: ./devtools-guide-chromium/progressive-web-apps/index.md
               itemType: how-to-guide
 

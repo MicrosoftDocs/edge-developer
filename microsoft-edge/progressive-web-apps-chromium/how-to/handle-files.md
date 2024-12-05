@@ -1,5 +1,5 @@
 ---
-title: Handle files in Progressive Web Apps
+title: Handle files in a Progressive Web App
 description: How to register your PWA as a file handler to more deeply integrate it in the operating system.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 04/03/2023
 ---
-# Handle files in Progressive Web Apps
+# Handle files in a Progressive Web App
 
 Progressive Web Apps that can handle files feel more native to users and better integrated in the operating system.
 

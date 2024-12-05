@@ -42,7 +42,7 @@ The **Application** tool will attempt to launch your PWA with the protocol and U
 See also:
 
 * [Test Progressive Web App (PWA) protocol handling](../../../progressive-web-apps/protocol-handlers.md)
-* [Handle protocols in Progressive Web Apps](../../../../progressive-web-apps-chromium/how-to/handle-protocols.md)
+* [Handle protocols in a Progressive Web App](../../../../progressive-web-apps-chromium/how-to/handle-protocols.md)
 
 
 <!-- ====================================================================== -->

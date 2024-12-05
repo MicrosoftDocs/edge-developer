@@ -1,5 +1,5 @@
 ---
-title: Build PWAs for the sidebar in Microsoft Edge
+title: Build a PWA for the sidebar in Microsoft Edge
 description: How to build your PWA for installation in the Microsoft Edge sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 02/20/2024
 ---
-# Build PWAs for the sidebar in Microsoft Edge
+# Build a PWA for the sidebar in Microsoft Edge
 
 Progressive Web Apps (PWAs) can opt-in to be pinned to the sidebar in Microsoft Edge.
 

@@ -28,7 +28,7 @@ Starting with Microsoft Edge 114, you can detect when your PWA runs in the sideb
 
 To learn more, check out these resources:
 
-* [Detect usage in the sidebar](../how-to/sidebar.md#detect-usage-in-the-sidebar), in _Build PWAs for the sidebar in Microsoft Edge_.
+* [Detect usage in the sidebar](../how-to/sidebar.md#detect-usage-in-the-sidebar), in _Build a PWA for the sidebar in Microsoft Edge_.
 * [Detecting Microsoft Edge from your website](../../web-platform/user-agent-guidance.md).
 
 
@@ -43,7 +43,7 @@ To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `ed
 
 ![Microsoft Edge with one tab opened in a TODO list app, and PWAmp in the sidebar](./pwa-images/using-pwamp-in-sidebar.png)
 
-To learn more, see [Build PWAs for the sidebar in Microsoft Edge](../how-to/sidebar.md).
+To learn more, see [Build a PWA for the sidebar in Microsoft Edge](../how-to/sidebar.md).
 
 
 <!-- ====================================================================== -->
@@ -57,7 +57,7 @@ The following screenshot shows the Windows Widgets Board on the left and the PWA
 
 ![The PWAmp mini player widget, in the Windows Widgets board, next to the PWAmp app](./pwa-images/pwamp-widget.png)
 
-To learn more, see [Display PWA widgets in the Windows Widgets Board](../how-to/widgets.md).
+To learn more, see [Display a PWA widget in the Windows Widgets Board](../how-to/widgets.md).
 
 
 <!-- ====================================================================== -->
@@ -183,7 +183,7 @@ The origin trial has been concluded.  The URL Protocol Handlers capability is no
 
 See also:
 *  [Protocol handlers origin trial](#protocol-handlers-origin-trial)
-*  [Handle protocols in Progressive Web Apps](../how-to/handle-protocols.md)
+*  [Handle protocols in a Progressive Web App](../how-to/handle-protocols.md)
 *  [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler) in Chrome Dev > Web Platform > Best Practices.
 
 
@@ -311,7 +311,7 @@ Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22
 <!-- ------------------------------ -->
 #### Protocol handlers origin trial
 
-You can now register your PWA to handle specific protocols with the host operating system.  Learn more about using protocol handlers with your PWA at [Handle protocols in Progressive Web Apps](../how-to/handle-protocols.md).
+You can now register your PWA to handle specific protocols with the host operating system.  Learn more about using protocol handlers with your PWA at [Handle protocols in a Progressive Web App](../how-to/handle-protocols.md).
 
 _2023 update: This feature is no longer an origin trial, and is available to all users, so the following no longer applies:_ The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 

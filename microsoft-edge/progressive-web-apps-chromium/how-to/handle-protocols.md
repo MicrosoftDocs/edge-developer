@@ -1,5 +1,5 @@
 ---
-title: Handle protocols in Progressive Web Apps
+title: Handle protocols in a Progressive Web App
 description: How to register your PWA as a protocol handler to more deeply integrate it in the operating system with other applications.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 01/12/2022
 ---
-# Handle protocols in Progressive Web Apps
+# Handle protocols in a Progressive Web App
 
 To create a more engaging experience, Progressive Web Apps can handle multiple protocols.  A Uniform Resource Locator (URL) is a string that allows clients to identify a resource on the Web. The first part of a URL is the _protocol_, such as `http` or `mailto`, which lets clients know how to retrieve the resource.
 

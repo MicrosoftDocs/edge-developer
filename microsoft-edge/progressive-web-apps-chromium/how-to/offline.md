@@ -119,7 +119,7 @@ openFileButton.addEventListener("click", async () => {
 
 To learn more, see [Window.showOpenFilePicker()](https://developer.mozilla.org/docs/Web/API/Window/showOpenFilePicker) on MDN.
 
-The File System Access API can also be coupled with the PWA File Handling feature to register your app as a handler of specific file types, and therefore feel more native to users. To learn more, see [Handle files in Progressive Web Apps](./handle-files.md).
+The File System Access API can also be coupled with the PWA File Handling feature to register your app as a handler of specific file types, and therefore feel more native to users. To learn more, see [Handle files in a Progressive Web App](./handle-files.md).
 
 The _origin-private_ File System Access API is a variation of the File System Access API that's intended to provide more privacy for users. It allows applications to access files on the user's device too, but only within a specific directory that's private to the app's origin. Also, this API is not intended to make it easy for users to access the private directory using their file explorer.
 
