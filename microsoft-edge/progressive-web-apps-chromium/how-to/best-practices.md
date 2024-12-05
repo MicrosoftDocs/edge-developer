@@ -100,7 +100,7 @@ See [Handle files in a Progressive Web App](./handle-files.md).
 
 Register your app is a link or protocol handler to automatically launch your app when certain links are used in other applications.
 
-See [Handle links to your Progressive Web App](./handle-urls.md) and [Handle protocols in a Progressive Web App](./handle-protocols.md).
+See [Handle links to a Progressive Web App](./handle-urls.md) and [Handle protocols in a Progressive Web App](./handle-protocols.md).
 
 #### Widgets
 

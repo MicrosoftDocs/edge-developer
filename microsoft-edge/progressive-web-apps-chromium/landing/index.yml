@@ -59,7 +59,7 @@ landingContent:
 
 # =============================================================================
 # Card r1c2
-  - title: Integrate your PWA into Windows
+  - title: Integrate a PWA into Windows
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -92,7 +92,7 @@ landingContent:
             
 # =============================================================================
 # Card r2c1
-  - title: Update your PWA and alert the user with badges, notifications, and push messages
+  - title: Update a PWA and alert the user with badges, notifications, and push messages
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -114,7 +114,7 @@ landingContent:
           - text: Handle files in a Progressive Web App
             url: ../how-to/handle-files.md
 
-          - text: Handle links to your Progressive Web App
+          - text: Handle links to a Progressive Web App
             url: ../how-to/handle-urls.md
 
           - text: Handle protocols in a Progressive Web App

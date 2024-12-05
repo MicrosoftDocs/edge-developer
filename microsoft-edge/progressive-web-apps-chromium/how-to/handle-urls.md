@@ -1,5 +1,5 @@
 ---
-title: Handle links to your Progressive Web App
+title: Handle links to a Progressive Web App
 description: How links to your Progressive Web App (PWA) can be handled by your app rather than by the web browser.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 09/15/2022
 ---
-# Handle links to your Progressive Web App
+# Handle links to a Progressive Web App
 
 Native apps on many operating systems can handle links.  When associated URLs are activated, native apps can request to be launched instead of the web browser, to create a more engaging experience for these apps.
 
