@@ -84,7 +84,7 @@ My Tracks uses the following features:
 | Window Controls Overlay | The space normally reserved to the title bar is used by My Tracks to display its own search bar. | [Display content in the title bar area using Window Controls Overlay](how-to/window-controls-overlay.md) |
 | Protocol Handling | My Tracks handles URIs that start with the `geo:` protocol to show locations on the map. | [Handle protocols in Progressive Web Apps](how-to/handle-protocols.md) |
 | File Handling | My Tracks natively handles `*.gpx` files. | [Handle files in Progressive Web Apps](how-to/handle-files.md) |
-| Shortcuts | My Tracks defines shortcuts to easily hide and show all tracks from the map. | [Define app shortcuts](how-to/shortcuts.md) |
+| Shortcuts | My Tracks defines shortcuts to easily hide and show all tracks from the map. | [Define app shortcuts (long-press or right-click menus)](how-to/shortcuts.md) |
 
 
 <!-- ====================================================================== -->
@@ -118,7 +118,7 @@ BPM Techno uses the following features:
 
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| Shortcuts | BPM Techno defines a shortcut that lets users upload an audio file in the app. | [Define app shortcuts](how-to/shortcuts.md) |
+| Shortcuts | BPM Techno defines a shortcut that lets users upload an audio file in the app. | [Define app shortcuts (long-press or right-click menus)](how-to/shortcuts.md) |
 | File Handling | BPM Techno natively handles `*.mp3` files. | [Handle files in Progressive Web Apps](how-to/handle-files.md) |
 | Share Target | Other apps can share audio files with BPM Techno, through the operating system sharing dialog. | [Receiving shared content](how-to/share.md#receiving-shared-content) |
 | Protocol Handling | The app handles `web+bpm:` URIs which can be used to send links to a song to be analyzed. | [Handle protocols in Progressive Web Apps](how-to/handle-protocols.md) |

@@ -74,7 +74,7 @@ Your app can provide a more familiar, engaging, and seamless experience by using
 
 Shortcuts make it possible to define direct links to your app functionality by right-clicking the app icon.
 
-See [Define app shortcuts](./shortcuts.md).
+See [Define app shortcuts (long-press or right-click menus)](./shortcuts.md).
 
 #### App sharing
 

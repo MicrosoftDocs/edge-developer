@@ -1187,7 +1187,7 @@
             - name: Share content with other apps  # todo: add "jump lists" to title
               href: ./progressive-web-apps-chromium/how-to/share.md
 
-            - name: Define app shortcuts  # todo: add "right-click menus, jump lists" to title
+            - name: Define app shortcuts (long-press or right-click menus)
               href: ./progressive-web-apps-chromium/how-to/shortcuts.md
 
             - name: Display PWA widgets in the Windows Widgets Board

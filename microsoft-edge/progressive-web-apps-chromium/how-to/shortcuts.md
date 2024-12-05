@@ -1,5 +1,5 @@
 ---
-title: Define app shortcuts
+title: Define app shortcuts (long-press or right-click menus)
 description: How to make your app's common tasks available in the Windows Taskbar's context menu.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,6 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 09/13/2021
 ---
-# Define app shortcuts
 # Define app shortcuts (long-press or right-click menus)
 
 App shortcuts let users accomplish common tasks more quickly and easily and can increase their engagement with an app.
