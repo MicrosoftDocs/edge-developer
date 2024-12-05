@@ -44,7 +44,7 @@ Consider the following example:
 In this example, the app registers a single file handler for that accepts text files. When a `.txt` file is opened by the user by, for example, double-clicking its icon on the desktop, then the operating system launches the app using the `/openFile` URL.
 
 See also:
-* [Associate your app with files](./web-app-manifests.md#associate-your-app-with-files) in _Use a web app manifest to integrate a PWA into the OS_.
+* [file_handlers](https://developer.mozilla.org/docs/Web/Manifest/file_handlers) at MDN > References > Web app manifests.
 
 
 <!-- ====================================================================== -->

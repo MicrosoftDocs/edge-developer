@@ -137,11 +137,6 @@ landingContent:
           - text: Store data on the device
             url: ../progressive-web-apps-chromium/how-to/offline.md
 
-          - text: Use a service worker to manage network requests
-            url: ../progressive-web-apps-chromium/how-to/service-workers.md
-
-          - text: Use a web app manifest to integrate a PWA into the OS
-            url: ../progressive-web-apps-chromium/how-to/web-app-manifests.md
 # =============================================================================
 # Card r2c2
   - title: WebView2

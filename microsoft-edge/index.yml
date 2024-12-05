@@ -260,14 +260,6 @@ conceptualContent:
               url: ./progressive-web-apps-chromium/how-to/offline.md
               itemType: concept
 
-            - text: Use a service worker to manage network requests
-              url: ./progressive-web-apps-chromium/how-to/service-workers.md
-              itemType: concept
-
-            - text: Use a web app manifest to integrate a PWA into the OS
-              url: ./progressive-web-apps-chromium/how-to/web-app-manifests.md
-              itemType: concept
-
         # Card
         - title: WebView2
           links:

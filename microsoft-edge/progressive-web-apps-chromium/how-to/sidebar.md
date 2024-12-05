@@ -26,7 +26,7 @@ By signaling intent to be pinned to the sidebar, your PWA gets the following ben
 
 To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `edge_side_panel` manifest member:
 
-1. Make sure your PWA has a web app manifest file that contains at least the `name`, `short_name`, `description`, and `icons` members.  For details, see [Use a web app manifest to integrate a PWA into the OS](./web-app-manifests.md).
+1. Make sure your PWA has a web app manifest file that contains at least the `name`, `short_name`, `description`, and `icons` members.  For details, see [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
 
 1. Add the `edge_side_panel` member to your web app manifest. For example:
 

@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-# landing page for Extensions portion of docset
+# landing page for PWA portion of docset
 title: Progressive Web Apps (PWAs) documentation
 summary: Develop a Progressive Web App (PWA).
 
@@ -77,12 +77,6 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Use a web app manifest to integrate a PWA into the OS
-            url: ../how-to/web-app-manifests.md
-
-          - text: Use a service worker to manage network requests
-            url: ../how-to/service-workers.md
-
           - text: Store data on the device
             url: ../how-to/offline.md
 

@@ -179,6 +179,16 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/offline",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests.md",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/Manifest",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/progressive-web-apps-chromium/how-to/service-workers.md",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Web_Workers_API",
+        "redirect_document_id": false
+      },
 
 /* WebView2: */
       {

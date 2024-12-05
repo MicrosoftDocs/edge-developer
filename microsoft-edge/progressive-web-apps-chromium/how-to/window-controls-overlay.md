@@ -41,7 +41,7 @@ First, enable the Window Controls Overlay feature in your app's web app manifest
 
 See also:
 * [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN.
-* [Use a web app manifest to integrate a PWA into the OS](./web-app-manifests.md)
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
 
 
 <!-- ====================================================================== -->

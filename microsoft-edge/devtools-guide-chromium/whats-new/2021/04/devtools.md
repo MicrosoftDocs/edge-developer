@@ -84,8 +84,6 @@ Note: As of May 2022, tooltips aren't supported from the **Activity Bar**.
 <!-- ====================================================================== -->
 ## Service worker update timeline
 
-<!--todo:  Update the linked [Service worker improvements](../../../service-workers/index.md) article.  -->
-
 <!--  Title: The tasks associated with your service worker  -->
 <!--  Subtitle: Debug with service worker Update Cycle  -->
 
@@ -100,7 +98,7 @@ In Microsoft Edge version 91 or later, if you're a Progressive Web App or servic
 For real-time updates on this feature in the Chromium open-source project, see Issue [1066604](https://crbug.com/1066604).
 
 See also:
-* [The service worker lifecycle](../../../../progressive-web-apps-chromium/how-to/service-workers.md#the-service-worker-lifecycle) in _Use a service worker to manage network requests_.
+* [Updating the service worker](https://web.dev/service-worker-lifecycle#updates) in _The service worker lifecycle_ at web.dev.
 * [Service worker improvements](../../../service-workers/index.md) - DevTools debugging tools for Progressive Web Apps and service workers.
 
 
@@ -129,7 +127,7 @@ To view errors and warnings in your Web App Manifest, select **Application** too
 For real-time updates on this feature in the Chromium open-source project, see Issue [1185945](https://crbug.com/1185945).
 
 See also:
-* [Use a web app manifest to integrate a PWA into the OS](../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md)
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
 * [PWABuilder: Image Generator](https://www.pwabuilder.com/imageGenerator) - creates app icons for various platforms, to include in your Web App Manifest.
 
 

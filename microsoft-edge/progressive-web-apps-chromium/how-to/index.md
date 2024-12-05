@@ -22,6 +22,7 @@ In this guide, you first learn how PWAs work, then create your first simple PWA,
 You can find the final source code of the app you will be building in this guide on the [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
 
 
+
 <!-- ====================================================================== -->
 ## Prerequisites
 
@@ -123,7 +124,7 @@ The app runs in the browser for now, and can't be installed. To make the app ins
 <!-- ====================================================================== -->
 ## Step 3 - Create a web app manifest
 
-A _web app manifest_ is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.  For details, see [Use a web app manifest to integrate a PWA into the OS](./web-app-manifests.md).
+A _web app manifest_ is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.  For details, see [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
 
 To add an app manifest to your app:
 
@@ -161,7 +162,7 @@ To add an app manifest to your app:
 
 Your VS Code project should now look somewhat like this:
 
-![Screenshot of VS Code showing the sample PWA project, with the index.html, manifest.json, and icon files](./index-images/visual-studio-project-with-manifest.png)
+![VS Code showing the sample PWA project, with the index.html, manifest.json, and icon files](./index-images/visual-studio-project-with-manifest.png)
 
 
 <!-- ====================================================================== -->
@@ -313,11 +314,12 @@ Your app does something useful now, and it can be installed as a standalone app 
 
 Service workers are a key technology that help make PWAs fast and independent of network conditions.
 
-A service worker is a specialized [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that can intercept network requests from your PWA, and enables scenarios such as:
-
+A service worker is a specialized web worker that can intercept network requests from your PWA, and enables scenarios such as:
 *  Offline support, including intermittent connections.
 *  Advanced caching.
 *  Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
+
+See [Web Workers API](https://developer.mozilla.org/docs/Web/API/Web_Workers_API).
 
 A PWA doesn't need to have a service worker for Microsoft Edge to be able to install the app.  However, we recommend adding a service worker to your PWA to make it faster, and to make your PWA more reliable, such as when your device has an intermittent network connection or is offline.
 
@@ -432,5 +434,26 @@ To build a great PWA, see [Best practices for PWAs](./best-practices.md).
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article -->
 
-*  [Getting Started with Progressive Web Apps (Workshop)](https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop).
+Local:
+* [Overview of Progressive Web Apps (PWAs)](../index.md)
+* [Use Progressive Web Apps in Microsoft Edge](../ux.md)
+* [Installing a PWA](../ux.md#installing-a-pwa) in _Use Progressive Web Apps in Microsoft Edge_.
+* [Best practices for PWAs](./best-practices.md)
+
+MDN:
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
+* [Web Workers API](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) at MDN.
+
+External Microsoft:
+* [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started)
+* [Visual Studio Code](https://code.visualstudio.com)
+* [Azure free account](https://azure.microsoft.com/free)
+* [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web)
+
+External:
+* [Getting Started with Progressive Web Apps (Workshop)](https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop).
+* [GitHub Pages](https://pages.github.com/)
+* [Node.js](https://nodejs.org)
+* [Let's Encrypt](https://letsencrypt.org/)

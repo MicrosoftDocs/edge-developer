@@ -22,7 +22,7 @@ The next figure shows a Jumplist on the Webboard app, on Windows:
 
 ![A Jumplist on the Webboard app on Windows](./shortcuts-images/pwa-shortcuts-in-taskbar.png)
 
-Progressive Web Apps (PWAs) can also define common tasks as shortcuts in the web app manifest.  See [Use shortcuts to provide quick access to features](web-app-manifests.md#use-shortcuts-to-provide-quick-access-to-features) in _Use a web app manifest to integrate a PWA into the OS_.
+Progressive Web Apps (PWAs) can also define common tasks as shortcuts in the web app manifest.  See [shortcuts](https://developer.mozilla.org/docs/Web/Manifest/shortcuts) at MDN > References > Web app manifests.
 
 
 <!-- ====================================================================== -->
@@ -89,4 +89,4 @@ To learn more about using the Application panel to debug PWAs, see [Debug Progre
 <!-- ====================================================================== -->
 ## See also
 
-* [Use shortcuts to provide quick access to features](web-app-manifests.md#use-shortcuts-to-provide-quick-access-to-features) in _Use a web app manifest to integrate a PWA into the OS_.
+* [shortcuts](https://developer.mozilla.org/docs/Web/Manifest/shortcuts) at MDN > References > Web app manifests.

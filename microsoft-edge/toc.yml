@@ -1176,13 +1176,8 @@
             - name: Get started with Progressive Web Apps
               href: ./progressive-web-apps-chromium/how-to/index.md
 
-        - name: Create a manifest and service worker
-          items:
-            - name: Use a web app manifest to integrate a PWA into the OS
-              href: ./progressive-web-apps-chromium/how-to/web-app-manifests.md
-
-            - name: Use a service worker to manage network requests
-              href: ./progressive-web-apps-chromium/how-to/service-workers.md
+            - name: Use Progressive Web Apps in Microsoft Edge
+              href: ./progressive-web-apps-chromium/ux.md
 
         - name: Best practices for PWAs
           href: ./progressive-web-apps-chromium/how-to/best-practices.md
@@ -1192,9 +1187,6 @@
 
         - name: Experimental features and origin trials for PWAs
           href: ./progressive-web-apps-chromium/how-to/origin-trials.md
-
-        - name: Use Progressive Web Apps in Microsoft Edge
-          href: ./progressive-web-apps-chromium/ux.md
 
         - name: Debug Progressive Web Apps
           href: ./progressive-web-apps-chromium/how-to/debug.md
