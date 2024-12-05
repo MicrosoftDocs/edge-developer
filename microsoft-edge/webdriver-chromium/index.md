@@ -334,7 +334,7 @@ You can use `EdgeOptions` to configure command-line arguments that will be passe
 
 ```csharp
 var options = new EdgeOptions();
-options.AddArgument("headless");
+options.AddArgument("--headless=new");
 
 var driver = new EdgeDriver(options);
 ```
@@ -346,7 +346,7 @@ from selenium import webdriver
 from selenium.webdriver.edge.options import Options
 
 options = Options()
-options.add_argument("headless")
+options.add_argument("--headless=new")
 
 driver = webdriver.Edge(options = options)
 ```
@@ -355,7 +355,7 @@ driver = webdriver.Edge(options = options)
 
 ```java
 EdgeOptions options = new EdgeOptions();
-options.addArguments("headless");
+options.addArguments("--headless=new");
 
 EdgeDriver driver = new EdgeDriver(options);
 ```
@@ -366,7 +366,7 @@ EdgeDriver driver = new EdgeDriver(options);
 const edge = require('selenium-webdriver/edge');
 
 let options = new edge.Options();
-options.addArguments("headless");
+options.addArguments("--headless=new");
 
 let driver = edge.Driver.createSession(options);
 ```
