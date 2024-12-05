@@ -44,20 +44,24 @@ landingContent:
           - text: Overview of Progressive Web Apps (PWAs)
             url: ../index.md
 
-          - text: What's New in Progressive Web Apps
-            url: ../whats-new/pwa.md
+          - text: Use Progressive Web Apps in Microsoft Edge
+            url: ../ux.md
 
+      - linkListType: get-started
+        links:
           - text: Get started with Progressive Web Apps
             url: ../how-to/index.md
 
-          - text: Use Progressive Web Apps in Microsoft Edge
-            url: ../ux.md
+      - linkListType: whats-new
+        links:
+          - text: What's New in Progressive Web Apps
+            url: ../whats-new/pwa.md
 
 # =============================================================================
 # Card r1c2
   - title: Integrate your PWA into Windows
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
           - text: Display content in the title bar area using Window Controls Overlay
             url: ../how-to/window-controls-overlay.md
@@ -78,7 +82,7 @@ landingContent:
 # Card r1c3
   - title: Publish and integrate with the Microsoft Store
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
           - text: Publish a Progressive Web App to the Microsoft Store
             url: ../how-to/microsoft-store.md
@@ -90,7 +94,7 @@ landingContent:
 # Card r2c1
   - title: Update your PWA and alert the user with badges, notifications, and push messages
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
           - text: Synchronize and update a PWA in the background
             url: ../how-to/background-syncs.md
@@ -105,7 +109,7 @@ landingContent:
 # Card r2c2
   - title: Handle files, links, and protocols
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
           - text: Handle files in Progressive Web Apps
             url: ../how-to/handle-files.md
@@ -120,8 +124,11 @@ landingContent:
 # Card r2c3
   - title: Additional tasks and features
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
+          - text: Debug Progressive Web Apps
+            url: ../how-to/debug.md
+
           - text: Define icons and a theme color
             url: ../how-to/icon-theme-color.md
 
@@ -131,11 +138,20 @@ landingContent:
           - text: Best practices for PWAs
             url: ../how-to/best-practices.md
 
+      - linkListType: whats-new
+        links:
           - text: Experimental features and origin trials for PWAs
             url: ../how-to/origin-trials.md
 
-          - text: Debug Progressive Web Apps
-            url: ../how-to/debug.md
-
+      - linkListType: sample
+        links:
           - text: Progressive Web App demos
             url: ../demo-pwas.md
+
+      - linkListType: reference
+        links:
+          - text: Web Workers API  # was local link: Use a service worker to manage network requests
+            url: https://developer.mozilla.org/docs/Web/API/Web_Workers_API)
+
+          - text: Web app manifests  # was local link: Use a web app manifest to integrate a PWA into the OS
+            url: https://developer.mozilla.org/docs/Web/Manifest

@@ -238,7 +238,7 @@ conceptualContent:
               url: ./extensions-chromium/getting-started/part1-simple-extension.md
               itemType: how-to-guide
         # Card
-        - title: Progressive Web Apps
+        - title: Progressive Web Apps (PWAs)
           links:
             - text: Overview of Progressive Web Apps
               url: ./progressive-web-apps-chromium/index.md
@@ -246,11 +246,11 @@ conceptualContent:
 
             - text: Get started with PWAs
               url: ./progressive-web-apps-chromium/how-to/index.md
-              itemType: overview
+              itemType: get-started
 
             - text: Debug Progressive Web Apps
               url: ./devtools-guide-chromium/progressive-web-apps/index.md
-              itemType: overview
+              itemType: how-to-guide
 
             - text: What's New in Progressive Web Apps
               url: ./progressive-web-apps-chromium/whats-new/pwa.md
@@ -258,7 +258,15 @@ conceptualContent:
 
             - text: Store data on the device
               url: ./progressive-web-apps-chromium/how-to/offline.md
-              itemType: concept
+              itemType: how-to-guide
+
+            - text: Web Workers API  # was local link: Use a service worker to manage network requests
+              url: https://developer.mozilla.org/docs/Web/API/Web_Workers_API)
+              itemType: reference
+
+            - text: Web app manifests  # was local link: Use a web app manifest to integrate a PWA into the OS
+              url: https://developer.mozilla.org/docs/Web/Manifest
+              itemType: reference
 
         # Card
         - title: WebView2

@@ -114,16 +114,20 @@ landingContent:
 # Row 2 with 3 cards
 # =============================================================================
 # Card r2c1
-  - title: Progressive Web Apps
+  - title: Progressive Web Apps (PWAs)
     linkLists:
       - linkListType: overview
         links:
           - text: Overview of Progressive Web Apps
             url: ../progressive-web-apps-chromium/index.md
 
+      - linkListType: get-started
+        links:
           - text: Get started with PWAs
             url: ../progressive-web-apps-chromium/how-to/index.md
 
+      - linkListType: how-to-guide
+        links:
           - text: Debug Progressive Web Apps
             url: ../devtools-guide-chromium/progressive-web-apps/index.md
 
@@ -136,6 +140,14 @@ landingContent:
         links:
           - text: Store data on the device
             url: ../progressive-web-apps-chromium/how-to/offline.md
+
+      - linkListType: reference
+        links:
+          - text: Web Workers API  # was local link: Use a service worker to manage network requests
+            url: https://developer.mozilla.org/docs/Web/API/Web_Workers_API)
+
+          - text: Web app manifests  # was local link: Use a web app manifest to integrate a PWA into the OS
+            url: https://developer.mozilla.org/docs/Web/Manifest
 
 # =============================================================================
 # Card r2c2
