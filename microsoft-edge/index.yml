@@ -261,7 +261,7 @@ conceptualContent:
               itemType: how-to-guide
 
             - text: Web Workers API  # was local link: Use a service worker to manage network requests
-              url: https://developer.mozilla.org/docs/Web/API/Web_Workers_API)
+              url: https://developer.mozilla.org/docs/Web/API/Web_Workers_API
               itemType: reference
 
             - text: Web app manifests  # was local link: Use a web app manifest to integrate a PWA into the OS
