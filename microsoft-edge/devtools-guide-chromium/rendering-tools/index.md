@@ -69,6 +69,8 @@ The following table describes some common JavaScript problems and potential solu
 | Long-running JavaScript affecting response.  | The [DOMContentLoaded event](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers) stalls as it is swamped with JS work.  | Move pure computational work to [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  If you need DOM access, use `requestAnimationFrame`.  <!--See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution).  -->  |
 | Garbage-y scripts affecting response or animation.  | Garbage collection may happen anywhere.  | Write less garbage-y scripts.  See [Garbage Collection in Animation in Paul Lewis' runtime performance checklist](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/).  |
 
+<!-- todo: change above from Web_Workers_API to https://developer.mozilla.org/docs/Web/API/Service_Worker_API ? -->
+
 <!--todo: add "Optimize JavaScript runtime" section when available  -->
 
 

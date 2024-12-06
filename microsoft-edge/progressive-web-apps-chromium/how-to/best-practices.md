@@ -125,14 +125,11 @@ You can provide a good offline experience in several steps:
 1. Gracefully handle the tasks of your app that can't be used with no internet access.
 1. Implement advanced scenarios such as letting users download data for offline viewing.
 
-Fetch API:
-* [WorkerGlobalScope: fetch() method](https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/fetch) at MDN > References > Web APIs.
-* [BackgroundFetchManager.fetch()](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) at MDN > References > Web APIs.
-* [Introducing Background Fetch](https://developer.chrome.com/blog/background-fetch/) at Chrome for Developers > Blog.
-
-Cache API:
+See also:
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN > References > Web APIs.
+* [FetchEvent](https://developer.mozilla.org/docs/Web/API/FetchEvent) at MDN > References > Web APIs > Service Worker API.
 * [Cache](https://developer.mozilla.org/docs/Web/API/Cache) at MDN > References > Web APIs > Service Worker API.
-* [Web Workers API](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) at MDN > References > Web APIs.
+* [Synchronize and update a PWA in the background](./background-syncs.md).
 
 
 <!-- ====================================================================== -->
@@ -214,3 +211,8 @@ To improve discovery and sharing of your app through the web and social media, r
 
 TODO: Launch handler.
 -->
+
+
+<!-- ====================================================================== -->
+<!-- ## See also -->
+<!-- all links in article -->

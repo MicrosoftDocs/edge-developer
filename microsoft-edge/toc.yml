@@ -1236,9 +1236,6 @@
         - name: Best practices for PWAs
           href: ./progressive-web-apps-chromium/how-to/best-practices.md
 
-        - name: Experimental features and origin trials for PWAs
-          href: ./progressive-web-apps-chromium/how-to/origin-trials.md
-
         - name: Debug a Progressive Web App
           href: ./progressive-web-apps-chromium/how-to/debug.md
 

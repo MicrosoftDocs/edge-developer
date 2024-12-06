@@ -138,11 +138,6 @@ landingContent:
           - text: Best practices for PWAs
             url: ../how-to/best-practices.md
 
-      - linkListType: whats-new
-        links:
-          - text: Experimental features and origin trials for PWAs
-            url: ../how-to/origin-trials.md
-
       - linkListType: sample
         links:
           - text: Progressive Web App demos
@@ -151,7 +146,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Web Workers API  # was local link: Use a service worker to manage network requests
-            url: https://developer.mozilla.org/docs/Web/API/Web_Workers_API
+            url: https://developer.mozilla.org/docs/Web/API/Web_Workers_API  # https://developer.mozilla.org/docs/Web/API/Service_Worker_API
 
           - text: Web app manifests  # was local link: Use a web app manifest to integrate a PWA into the OS
             url: https://developer.mozilla.org/docs/Web/Manifest

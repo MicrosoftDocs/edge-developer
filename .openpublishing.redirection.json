@@ -171,7 +171,12 @@ Old redirects (to /archive/)
       },
       {
         "source_path": "microsoft-edge/progressive-web-apps-chromium/experimental-features/index.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/origin-trials",
+        "redirect_url": "/microsoft-edge/origin-trials/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/progressive-web-apps-chromium/how-to/origin-trials.md",
+        "redirect_url": "/microsoft-edge/origin-trials/index",
         "redirect_document_id": false
       },
       {
@@ -186,7 +191,7 @@ Old redirects (to /archive/)
       },
       {
         "source_path": "microsoft-edge/progressive-web-apps-chromium/how-to/service-workers.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Web_Workers_API",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API",
         "redirect_document_id": false
       },
 

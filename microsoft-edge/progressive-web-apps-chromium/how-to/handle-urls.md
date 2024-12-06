@@ -57,7 +57,7 @@ As of October 17, 2024, the scope extensions feature is an origin trial.  For st
 When the feature can be used in Microsoft Edge and is no longer in origin trial, the feature will be documented in the present article.  See [Scope Extensions for Web Apps](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md), an Explainer in the **manifest-incubations** repo.
 
 See also:
-* [Experimental features and origin trials for PWAs](./origin-trials.md)
+* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
 
 
 <!-- ====================================================================== -->
