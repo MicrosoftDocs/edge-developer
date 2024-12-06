@@ -131,6 +131,12 @@ landingContent:
           - text: Debug a PWA
             url: ../devtools-guide-chromium/progressive-web-apps/index.md
 
+          - text: Using Service Workers
+            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+
+          - text: The web app manifest  # in _Making PWAs installable_
+            url: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest
+
       - linkListType: whats-new
         links:
           - text: What's New in PWAs
@@ -143,11 +149,12 @@ landingContent:
 
       - linkListType: reference
         links:
-          - text: Using Service Workers  # or "Service Worker API"
-            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers  # or https://developer.mozilla.org/docs/Web/API/Service_Worker_API
+          - text: Service Worker API
+            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API
 
-          - text: The web app manifest  # or "Web app manifests"
-            url: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest  # or https://developer.mozilla.org/docs/Web/Manifest
+          - text: Web app manifests
+            url: https://developer.mozilla.org/docs/Web/Manifest
+
 
 # =============================================================================
 # Card r2c2

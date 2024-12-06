@@ -138,6 +138,12 @@ landingContent:
           - text: Best practices for PWAs
             url: ../how-to/best-practices.md
 
+          - text: Using Service Workers
+            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+
+          - text: The web app manifest  # in _Making PWAs installable_
+            url: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest
+
       - linkListType: sample
         links:
           - text: Progressive Web App demos
@@ -145,8 +151,8 @@ landingContent:
 
       - linkListType: reference
         links:
-          - text: Using Service Workers  # or "Service Worker API"
-            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers  # or https://developer.mozilla.org/docs/Web/API/Service_Worker_API
+          - text: Service Worker API
+            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API
 
-          - text: The web app manifest  # or "Web app manifests"
-            url: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest  # or https://developer.mozilla.org/docs/Web/Manifest
+          - text: Web app manifests
+            url: https://developer.mozilla.org/docs/Web/Manifest
