@@ -40,8 +40,9 @@ First, enable the Window Controls Overlay feature in your app's web app manifest
 ```
 
 See also:
-* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN.
-* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
+* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN > References > Web app manifests.
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN > References.
+* [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN > References > Progressive web apps > Guides.
 
 
 <!-- ====================================================================== -->

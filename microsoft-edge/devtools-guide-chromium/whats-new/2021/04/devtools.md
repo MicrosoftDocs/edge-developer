@@ -127,7 +127,8 @@ To view errors and warnings in your Web App Manifest, select **Application** too
 For real-time updates on this feature in the Chromium open-source project, see Issue [1185945](https://crbug.com/1185945).
 
 See also:
-* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
+* [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN > References > Progressive web apps > Guides.
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN > References.
 * [PWABuilder: Image Generator](https://www.pwabuilder.com/imageGenerator) - creates app icons for various platforms, to include in your Web App Manifest.
 
 

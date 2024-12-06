@@ -18,7 +18,7 @@ Refer to these demo PWAs to learn how to use features and APIs that can progress
 
 PWAmp is a desktop music player that plays local and remote audio files.
 
-![Screenshot of the PWAmp app, showing playback buttons and a list of songs](./demo-pwas-images/pwamp.png)
+![The PWAmp app, showing playback buttons and a list of songs](./demo-pwas-images/pwamp.png)
 
 [App](https://microsoftedge.github.io/Demos/pwamp/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp).
 
@@ -40,7 +40,7 @@ PWAmp uses the following features:
 
 Wami can apply a sequence of image manipulation steps such as cropping, resizing, rotating, or adding effects on batch of images.
 
-![Screenshot of the wami app](./demo-pwas-images/wami.png)
+![The wami app](./demo-pwas-images/wami.png)
 
 [App](https://microsoftedge.github.io/Demos/wami/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/wami).
 

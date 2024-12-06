@@ -260,12 +260,12 @@ conceptualContent:
               url: ./progressive-web-apps-chromium/how-to/offline.md
               itemType: how-to-guide
 
-            - text: Service Worker API
-              url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API
+            - text: Using Service Workers  # or "Service Worker API"
+              url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers  # or https://developer.mozilla.org/docs/Web/API/Service_Worker_API
               itemType: reference
 
-            - text: Web app manifests  # was local link: Use a web app manifest to integrate a PWA into the OS
-              url: https://developer.mozilla.org/docs/Web/Manifest
+            - text: The web app manifest  # or "Web app manifests"
+              url: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest  # or https://developer.mozilla.org/docs/Web/Manifest
               itemType: reference
 
         # Card
