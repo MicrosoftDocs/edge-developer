@@ -457,7 +457,7 @@
                   href: devtools-guide-chromium/storage/cache.md
                   displayName: Application tool
 
-                - name: Debug Progressive Web Apps (PWAs)
+                - name: Debug a Progressive Web App (PWA)
                   href: devtools-guide-chromium/progressive-web-apps/index.md
                   displayName: Application tool
 
@@ -1160,87 +1160,87 @@
 # PWA
     - name: Progressive Web Apps
       items:
-        - name: Overview of Progressive Web Apps (PWAs)
-          href: progressive-web-apps-chromium/index.md
+        - name: Progressive Web Apps (PWAs) documentation
+          href: ./progressive-web-apps-chromium/landing/index.yml
+          displayName: landing
 
-        - name: Get started with PWAs
-          href: progressive-web-apps-chromium/how-to/index.md
-          displayName: Get started with Progressive Web Apps  # top-of-page title
-
-        - name: Best practices for PWAs
-          href: progressive-web-apps-chromium/how-to/best-practices.md
-
-        - name: How to
+        - name: Overview and getting started
           items:
-            - name: Publish a Progressive Web App to the Microsoft Store
-              href: progressive-web-apps-chromium/how-to/microsoft-store.md
+            - name: Overview of Progressive Web Apps (PWAs)
+              href: ./progressive-web-apps-chromium/index.md
 
-            - name: Experimental features and origin trials for PWAs
-              href: progressive-web-apps-chromium/how-to/origin-trials.md
+            - name: What's New in PWAs
+              href: ./progressive-web-apps-chromium/whats-new/pwa.md
+              displayName: release notes, announcements
 
-            - name: Use Progressive Web Apps in Microsoft Edge
-              href: progressive-web-apps-chromium/ux.md
+            - name: Get started with PWAs
+              href: ./progressive-web-apps-chromium/how-to/index.md
 
-            - name: Debug Progressive Web Apps
-              href: progressive-web-apps-chromium/how-to/debug.md
+            - name: Use PWAs in Microsoft Edge
+              href: ./progressive-web-apps-chromium/ux.md
 
-            - name: Use a web app manifest to integrate a PWA into the OS
-              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
+        - name: Integrate a PWA into Windows
+          items:
+            - name: Display content in the title bar area using Window Controls Overlay  # todo: add "Share dialog" to title
+              href: ./progressive-web-apps-chromium/how-to/window-controls-overlay.md
 
-            - name: Use a service worker to manage network requests
-              href: progressive-web-apps-chromium/how-to/service-workers.md
+            - name: Share content with other apps  # todo: add "jump lists" to title
+              href: ./progressive-web-apps-chromium/how-to/share.md
 
-            - name: Store data on the device
-              href: progressive-web-apps-chromium/how-to/offline.md
+            - name: Define app shortcuts (long-press or right-click menus)
+              href: ./progressive-web-apps-chromium/how-to/shortcuts.md
 
-            - name: Define icons and a theme color
-              href: progressive-web-apps-chromium/how-to/icon-theme-color.md
+            - name: Display a PWA widget in the Windows Widgets Board
+              href: ./progressive-web-apps-chromium/how-to/widgets.md
 
-            - name: Re-engage users with badges and notifications
-              href: progressive-web-apps-chromium/how-to/notifications-badges.md
-              displayName: Re-engage users with badges, notifications, and push messages  # old top-of-page title
+            - name: Build a PWA for the sidebar in Microsoft Edge
+              href: ./progressive-web-apps-chromium/how-to/sidebar.md
 
-            - name: Re-engage users with push messages
-              href: progressive-web-apps-chromium/how-to/push.md
-              displayName: Re-engage users with badges, notifications, and push messages  # old top-of-page title
-
-            - name: Synchronize and update a PWA in the background
-              href: progressive-web-apps-chromium/how-to/background-syncs.md
-
-            - name: Handle files in Progressive Web Apps
-              href: progressive-web-apps-chromium/how-to/handle-files.md
-
-            - name: Handle links to your Progressive Web App
-              href: progressive-web-apps-chromium/how-to/handle-urls.md
-              displayName: handle urls
-
-            - name: Handle protocols in Progressive Web Apps
-              href: progressive-web-apps-chromium/how-to/handle-protocols.md
-
-            - name: Display content in the title bar area using Window Controls Overlay
-              href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
-
-            - name: Share content with other apps
-              href: progressive-web-apps-chromium/how-to/share.md
-
-            - name: Define app shortcuts
-              href: progressive-web-apps-chromium/how-to/shortcuts.md
-
-            - name: Build PWA-driven widgets
-              href: progressive-web-apps-chromium/how-to/widgets.md
-
-            - name: Build PWAs for the sidebar in Microsoft Edge
-              href: progressive-web-apps-chromium/how-to/sidebar.md
+        - name: Publish and integrate with the Microsoft Store
+          items:
+            - name: Publish a PWA to the Microsoft Store
+              href: ./progressive-web-apps-chromium/how-to/microsoft-store.md
 
             - name: Provide in-app purchases with the Digital Goods API
-              href: progressive-web-apps-chromium/how-to/digital-goods-api.md
+              href: ./progressive-web-apps-chromium/how-to/digital-goods-api.md
 
-        - name: What's New in Progressive Web Apps
-          href: progressive-web-apps-chromium/whats-new/pwa.md
-          displayName: release notes, announcements
+        - name: Update a PWA and alert the user with badges, notifications, and push messages
+          items:
+            - name: Synchronize and update a PWA in the background
+              href: ./progressive-web-apps-chromium/how-to/background-syncs.md
+
+            - name: Re-engage users with badges and notifications
+              href: ./progressive-web-apps-chromium/how-to/notifications-badges.md
+
+            - name: Re-engage users with push messages
+              href: ./progressive-web-apps-chromium/how-to/push.md
+
+        - name: Handle files, links, and protocols
+          items:
+            - name: Handle files in a PWA
+              href: ./progressive-web-apps-chromium/how-to/handle-files.md
+
+            - name: Handle links to a PWA
+              href: ./progressive-web-apps-chromium/how-to/handle-urls.md
+              displayName: handle urls
+
+            - name: Handle protocols in a PWA
+              href: ./progressive-web-apps-chromium/how-to/handle-protocols.md
+
+        - name: Define icons and a theme color
+          href: ./progressive-web-apps-chromium/how-to/icon-theme-color.md
+
+        - name: Store data on the device
+          href: ./progressive-web-apps-chromium/how-to/offline.md
+
+        - name: Best practices for PWAs
+          href: ./progressive-web-apps-chromium/how-to/best-practices.md
+
+        - name: Debug a PWA
+          href: ./progressive-web-apps-chromium/how-to/debug.md
 
         - name: Progressive Web App demos
-          href: progressive-web-apps-chromium/demo-pwas.md
+          href: ./progressive-web-apps-chromium/demo-pwas.md
 # /PWA
 
 # =============================================================================
