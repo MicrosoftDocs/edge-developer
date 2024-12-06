@@ -60,16 +60,14 @@ If you notice quite a bit of jank (interruptions of rendering) in your JavaScrip
 <!-- ------------------------------ -->
 #### JavaScript: Problems
 
-The following table describes some common JavaScript problems and potential solutions.
+The following are common JavaScript problems and potential solutions.
 
 | Problem | Example | Solution |
 |:--- |:--- |:--- |
-| Expensive input handlers affecting response or animation.  | Touch, parallax scrolling.  | Let the browser handle touch and scrolls, or bind the listener as late as possible.  See [Expensive Input Handlers in Paul Lewis' runtime performance checklist](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/).  |
-| Badly timed JavaScript affecting response, animation, load.  | User scrolls right after page load, setTimeout / setInterval.  | Optimize JavaScript runtime: use `requestAnimationFrame`, spread DOM manipulation over frames, use [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  |
-| Long-running JavaScript affecting response.  | The [DOMContentLoaded event](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers) stalls as it is swamped with JS work.  | Move pure computational work to [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  If you need DOM access, use `requestAnimationFrame`.  <!--See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution).  -->  |
-| Garbage-y scripts affecting response or animation.  | Garbage collection may happen anywhere.  | Write less garbage-y scripts.  See [Garbage Collection in Animation in Paul Lewis' runtime performance checklist](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/).  |
-
-<!-- todo: change above from Web_Workers_API to https://developer.mozilla.org/docs/Web/API/Service_Worker_API ? -->
+| Expensive input handlers affecting response or animation.  | Touch, parallax scrolling.  | Let the browser handle touch and scrolls, or bind the listener as late as possible.  See [Expensive Input Handlers](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/#7_expensive_input_handlers) in _The Runtime Performance Checklist_ by Paul Lewis. |
+| Badly timed JavaScript affecting response, animation, load.  | User scrolls right after page load, setTimeout / setInterval.  | Optimize JavaScript runtime: use `requestAnimationFrame`, spread DOM manipulation over frames, use Web Workers; see [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  |
+| Long-running JavaScript affecting response.  | The [DOMContentLoaded event](https://developer.mozilla.org/docs/Web/API/Document/DOMContentLoaded_event) stalls, because it's swamped with JavaScript work.  | Move pure computational work to Web Workers; see [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  If you need DOM access, use `requestAnimationFrame`.  <!-- See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution). -->  |
+| Garbage-y scripts affecting response or animation.  | Garbage collection may happen anywhere.  | Write less garbage-y scripts.  See [Garbage Collection in Animations](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist#6_garbage_collection_in_animations) in _The Runtime Performance Checklist_ by Paul Lewis. |
 
 <!--todo: add "Optimize JavaScript runtime" section when available  -->
 

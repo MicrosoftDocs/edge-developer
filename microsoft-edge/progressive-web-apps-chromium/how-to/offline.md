@@ -101,7 +101,7 @@ self.addEventListener("fetch", event => {
 });
 ```
 
-To discover other useful Cache API scenarios, see [Cache](https://developer.mozilla.org/docs/Web/API/Cache) at MDN > References > Web APIs.
+To discover other useful Cache API scenarios, see [Caching](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Caching) at MDN > References > Progressive web apps > Guides.
 
 
 <!-- ====================================================================== -->

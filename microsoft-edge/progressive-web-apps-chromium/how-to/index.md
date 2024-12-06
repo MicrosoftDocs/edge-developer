@@ -319,7 +319,7 @@ A service worker is a specialized web worker that can intercept network requests
 *  Advanced caching.
 *  Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
 
-See [Web Workers API](https://developer.mozilla.org/docs/Web/API/Web_Workers_API).<!-- todo: global change? https://developer.mozilla.org/docs/Web/API/Service_Worker_API -->
+See [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN.
 
 A PWA doesn't need to have a service worker for Microsoft Edge to be able to install the app.  However, we recommend adding a service worker to your PWA to make it faster, and to make your PWA more reliable, such as when your device has an intermittent network connection or is offline.
 
@@ -444,7 +444,7 @@ Local:
 
 MDN:
 * [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
-* [Web Workers API](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) at MDN.<!-- https://developer.mozilla.org/docs/Web/API/Service_Worker_API -->
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN.
 
 External Microsoft:
 * [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started)
