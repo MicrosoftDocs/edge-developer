@@ -128,7 +128,7 @@ Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon](./de
 ![In the Elements tool, the Expand icon for \<script\> tags is now correctly aligned](./devtools-images/elements-script-tag-expand-icons-aligned.png)
 
 See also:
-* [Service workers](../../../progressive-web-apps/index.md#service-workers) in _Debug a Progressive Web App (PWAs)_ - debugging service workers in DevTools.
+* [Service workers](../../../progressive-web-apps/index.md#service-workers) in _Debug a Progressive Web App (PWA)_ - debugging service workers in DevTools.
 
 
 <!-- ====================================================================== -->

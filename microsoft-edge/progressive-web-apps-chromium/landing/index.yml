@@ -44,17 +44,17 @@ landingContent:
           - text: Overview of Progressive Web Apps (PWAs)
             url: ../index.md
 
-          - text: Use Progressive Web Apps in Microsoft Edge
+          - text: Use PWAs in Microsoft Edge
             url: ../ux.md
 
       - linkListType: get-started
         links:
-          - text: Get started with Progressive Web Apps
+          - text: Get started with PWAs
             url: ../how-to/index.md
 
       - linkListType: whats-new
         links:
-          - text: What's New in Progressive Web Apps
+          - text: What's New in PWAs
             url: ../whats-new/pwa.md
 
 # =============================================================================
@@ -84,7 +84,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Publish a Progressive Web App to the Microsoft Store
+          - text: Publish a PWA to the Microsoft Store
             url: ../how-to/microsoft-store.md
 
           - text: Provide in-app purchases with the Digital Goods API
@@ -111,13 +111,13 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Handle files in a Progressive Web App
+          - text: Handle files in a PWA
             url: ../how-to/handle-files.md
 
-          - text: Handle links to a Progressive Web App
+          - text: Handle links to a PWA
             url: ../how-to/handle-urls.md
 
-          - text: Handle protocols in a Progressive Web App
+          - text: Handle protocols in a PWA
             url: ../how-to/handle-protocols.md
 
 # =============================================================================
@@ -126,7 +126,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Debug a Progressive Web App
+          - text: Debug a PWA
             url: ../how-to/debug.md
 
           - text: Define icons and a theme color

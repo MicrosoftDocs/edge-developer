@@ -14,13 +14,13 @@ This article lists best practices to make your PWA a great application for your 
 
 Read the best practices on this page to learn to make your PWA look and feel like what users expect.
 
-This page assumes that you already have a PWA. To learn more about building a simple PWA first, see [Get started with Progressive Web Apps](./index.md).
+This page assumes that you already have a PWA. To learn more about building a simple PWA first, see [Get started with PWAs](./index.md).
 
 
 <!-- ====================================================================== -->
 ## Provide a custom installation
 
-Your app can already be installed using the **App available** button in the browser address bar if you follow the steps in [Get started with Progressive Web Apps](./index.md).
+Your app can already be installed using the **App available** button in the browser address bar if you follow the steps in [Get started with PWAs](./index.md).
 
 A custom installation experience, in the app user interface, can be more obvious to your users and lead to more installations.
 
@@ -36,7 +36,7 @@ Many users will look for your app on their device's app store. Downloading from 
 
 You can publish your PWA to the Microsoft Store for Windows, the App store for iOS, or the Play Store for Android, by using [PWA Builder](https://www.pwabuilder.com).
 
-To learn how to use PWA Builder and publish to the Microsoft Store, see [Publish a Progressive Web App to the Microsoft Store](./microsoft-store.md).
+To learn how to use PWA Builder and publish to the Microsoft Store, see [Publish a PWA to the Microsoft Store](./microsoft-store.md).
 
 
 <!-- ====================================================================== -->
@@ -94,13 +94,13 @@ You can register your PWA to be a file handler for certain file types.
 
 Use the PWA file handler feature to automatically launch your app when certain file are opened by the user in the operating system.
 
-See [Handle files in a Progressive Web App](./handle-files.md).
+See [Handle files in a PWA](./handle-files.md).
 
 #### Link and protocol handling
 
 Register your app is a link or protocol handler to automatically launch your app when certain links are used in other applications.
 
-See [Handle links to a Progressive Web App](./handle-urls.md) and [Handle protocols in a Progressive Web App](./handle-protocols.md).
+See [Handle links to a PWA](./handle-urls.md) and [Handle protocols in a PWA](./handle-protocols.md).
 
 #### Widgets
 

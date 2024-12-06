@@ -128,12 +128,12 @@ landingContent:
 
       - linkListType: how-to-guide
         links:
-          - text: Debug a Progressive Web App
+          - text: Debug a PWA
             url: ../devtools-guide-chromium/progressive-web-apps/index.md
 
       - linkListType: whats-new
         links:
-          - text: What's New in Progressive Web Apps
+          - text: What's New in PWAs
             url: ../progressive-web-apps-chromium/whats-new/pwa.md
 
       - linkListType: concept

@@ -248,11 +248,11 @@ conceptualContent:
               url: ./progressive-web-apps-chromium/how-to/index.md
               itemType: get-started
 
-            - text: Debug a Progressive Web App
+            - text: Debug a PWA
               url: ./devtools-guide-chromium/progressive-web-apps/index.md
               itemType: how-to-guide
 
-            - text: What's New in Progressive Web Apps
+            - text: What's New in PWAs
               url: ./progressive-web-apps-chromium/whats-new/pwa.md
               itemType: whats-new
 

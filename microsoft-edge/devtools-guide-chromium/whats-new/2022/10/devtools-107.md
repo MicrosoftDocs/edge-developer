@@ -94,7 +94,7 @@ In previous versions of Microsoft Edge, links in the **Application** tool didn't
  
 See also:
 * [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
-* [Debug a Progressive Web App (PWAs)](../../../progressive-web-apps/index.md)
+* [Debug a Progressive Web App (PWA)](../../../progressive-web-apps/index.md)
 
 
 <!-- ====================================================================== -->

@@ -31,7 +31,7 @@ To build a PWA-driven widget and deliver it via the Microsoft store, no C++/C# c
 <!-- The PWA (not the widget) is what is installable and packaged, because it's a standalone entity (unlike a widget). -->
 
 See also:
-* [Publish a Progressive Web App to the Microsoft Store](./microsoft-store.md)
+* [Publish a PWA to the Microsoft Store](./microsoft-store.md)
 
 
 <!-- ====================================================================== -->
