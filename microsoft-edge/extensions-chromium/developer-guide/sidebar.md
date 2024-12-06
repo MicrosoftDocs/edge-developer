@@ -153,6 +153,8 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
 
 When a user switches to a tab or site for which the sidebar is not enabled, the sidebar is hidden.
 
+Note: Currently, sidebar will not automatically show again when the user switches to a tab where it was previously open.
+
 For a complete example, see [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific).
 
 
