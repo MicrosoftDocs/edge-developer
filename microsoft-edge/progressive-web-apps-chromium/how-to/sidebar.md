@@ -1,5 +1,5 @@
 ---
-title: Build PWAs for the sidebar in Microsoft Edge
+title: Build a PWA for the sidebar in Microsoft Edge
 description: How to build your PWA for installation in the Microsoft Edge sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 02/20/2024
 ---
-# Build PWAs for the sidebar in Microsoft Edge
+# Build a PWA for the sidebar in Microsoft Edge
 
 Progressive Web Apps (PWAs) can opt-in to be pinned to the sidebar in Microsoft Edge.
 
@@ -26,7 +26,11 @@ By signaling intent to be pinned to the sidebar, your PWA gets the following ben
 
 To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `edge_side_panel` manifest member:
 
-1. Make sure your PWA has a web app manifest file that contains at least the `name`, `short_name`, `description`, and `icons` members.  For details, see [Use a web app manifest to integrate a PWA into the OS](./web-app-manifests.md).
+1. Make sure your PWA has a web app manifest file that contains at least the `name`, `short_name`, `description`, and `icons` members.
+
+   For details, see:
+   * [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
+   * [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN > References > Progressive web apps > Guides.
 
 1. Add the `edge_side_panel` member to your web app manifest. For example:
 

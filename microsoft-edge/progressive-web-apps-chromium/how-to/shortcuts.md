@@ -1,5 +1,5 @@
 ---
-title: Define app shortcuts
+title: Define app shortcuts (long-press or right-click menus)
 description: How to make your app's common tasks available in the Windows Taskbar's context menu.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,21 +8,21 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 09/13/2021
 ---
-# Define app shortcuts
+# Define app shortcuts (long-press or right-click menus)
 
 App shortcuts let users accomplish common tasks more quickly and easily and can increase their engagement with an app.
 
 On mobile devices, shortcuts can usually be accessed by long-pressing an app icon.  On Windows, shortcuts are integrated as Jumplists.  Jumplists define popup menus that appear when you right-click a tile in the Start menu, or right-click an icon in the taskbar.
 
-The next figure shows shortcuts on Microsoft Edge, on iOS:
+Shortcuts on Microsoft Edge, on iOS:
 
 ![Shortcuts on Microsoft Edge on iOS](./shortcuts-images/edge-ios-shortcuts.png)
 
-The next figure shows a Jumplist on the Webboard app, on Windows:
+A Jumplist (right-click menu) on the Webboard app, on Windows:
 
 ![A Jumplist on the Webboard app on Windows](./shortcuts-images/pwa-shortcuts-in-taskbar.png)
 
-Progressive Web Apps (PWAs) can also define common tasks as shortcuts in the web app manifest.  See [Use shortcuts to provide quick access to features](web-app-manifests.md#use-shortcuts-to-provide-quick-access-to-features) in _Use a web app manifest to integrate a PWA into the OS_.
+Progressive Web Apps (PWAs) can also define common tasks as shortcuts in the web app manifest.  See [Expose common app actions as shortcuts](https://developer.mozilla.org/docs/Web/Progressive_web_apps/How_to/Expose_common_actions_as_shortcuts) at MDN > References > Progressive web apps > How to.
 
 
 <!-- ====================================================================== -->
@@ -83,10 +83,10 @@ To test that your shortcuts are configured correctly:
    > [!div class="mx-imgBorder"]
    > ![Shortcuts are listed in the Application panel](./shortcuts-images/devtools-debug-shortcuts.png)
 
-To learn more about using the Application panel to debug PWAs, see [Debug Progressive Web Apps (PWAs)](../../devtools-guide-chromium/progressive-web-apps/index.md).
+To learn more about using the Application panel to debug PWAs, see [Debug a Progressive Web App (PWA)](../../devtools-guide-chromium/progressive-web-apps/index.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Use shortcuts to provide quick access to features](web-app-manifests.md#use-shortcuts-to-provide-quick-access-to-features) in _Use a web app manifest to integrate a PWA into the OS_.
+* [Expose common app actions as shortcuts](https://developer.mozilla.org/docs/Web/Progressive_web_apps/How_to/Expose_common_actions_as_shortcuts) at MDN > References > Progressive web apps > How to.
