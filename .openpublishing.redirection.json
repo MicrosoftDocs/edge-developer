@@ -186,12 +186,12 @@ Old redirects (to /archive/)
       },
       {
         "source_path": "microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/Manifest",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
         "redirect_document_id": false
       },
       {
         "source_path": "microsoft-edge/progressive-web-apps-chromium/how-to/service-workers.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
         "redirect_document_id": false
       },
 
