@@ -147,15 +147,6 @@ landingContent:
           - text: Store data on the device
             url: ../progressive-web-apps-chromium/how-to/offline.md
 
-      - linkListType: reference
-        links:
-          - text: Service Worker API
-            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API
-
-          - text: Web app manifests
-            url: https://developer.mozilla.org/docs/Web/Manifest
-
-
 # =============================================================================
 # Card r2c2
   - title: WebView2

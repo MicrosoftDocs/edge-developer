@@ -148,11 +148,3 @@ landingContent:
         links:
           - text: Progressive Web App demos
             url: ../demo-pwas.md
-
-      - linkListType: reference
-        links:
-          - text: Service Worker API
-            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API
-
-          - text: Web app manifests
-            url: https://developer.mozilla.org/docs/Web/Manifest
