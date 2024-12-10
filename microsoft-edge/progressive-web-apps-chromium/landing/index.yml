@@ -1,7 +1,8 @@
 ### YamlMime:Landing
 # landing page for PWA portion of docset
 title: Progressive Web Apps (PWAs) documentation
-summary: Develop a web app that has a progressive UX and can run on all devices, from one codebase.  Provide a native-like UX, or run in the browser.  # < 160 chars; cursor 169
+summary: Develop a web app that can be installed and run on all devices, from one codebase. Provide a native-like UX, or run in the browser.
+# summary < 160 chars; cursor 169
 
 metadata:
   # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -80,7 +81,7 @@ landingContent:
 
 # =============================================================================
 # Card r1c3
-  - title: Publish PWAs with the Microsoft Store
+  - title: Distribute a PWA with the Microsoft Store
     linkLists:
       - linkListType: how-to-guide
         links:

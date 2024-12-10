@@ -1209,7 +1209,7 @@
             - name: Build a PWA for the sidebar in Microsoft Edge
               href: ./progressive-web-apps-chromium/how-to/sidebar.md
 
-        - name: Publish PWAs with the Microsoft Store
+        - name: Distribute a PWA with the Microsoft Store
           items:
             - name: Publish a PWA to the Microsoft Store
               href: ./progressive-web-apps-chromium/how-to/microsoft-store.md
