@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-# landing page for entire docset
+# docset landing page
 title: Microsoft Edge Developer documentation # < 60 chars
 summary: Development using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more. # < 160 chars
 
@@ -42,20 +42,17 @@ landingContent:
 # https://review.learn.microsoft.com/help/contribute/contribute-how-to-write-landing-page?branch=main
 
 # =============================================================================
-# Row 1 with 3 cards
-# =============================================================================
+# Row 1
+# -----------------------------------------------------------------------------
 # Card r1c1
   - title: Microsoft Edge DevTools
     linkLists:
       - linkListType: overview
         links:
-          - text: Develop for the web with Microsoft Edge  # topmost article
-            url: ../develop-web-microsoft-edge.md
-
-          - text: Microsoft Edge DevTools documentation  # DevTools landing page
+          - text: Microsoft Edge DevTools documentation  # devtools landing page
             url: ../devtools-guide-chromium/landing/index.yml
 
-          - text: Overview of DevTools  # renamed from index.md
+          - text: Overview of DevTools
             url: ../devtools-guide-chromium/overview.md
 
       - linkListType: whats-new
@@ -75,20 +72,16 @@ landingContent:
         links:
           - text: Keyboard shortcuts
             url: ../devtools-guide-chromium/shortcuts/index.md
-# =============================================================================
+
+# -----------------------------------------------------------------------------
 # Card r1c2
-  - title: DevTools for Visual Studio Code
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: DevTools extension for Visual Studio Code
-            url: ../visual-studio-code/microsoft-edge-devtools-extension.md
-# =============================================================================
-# Card r1c3
   - title: Microsoft Edge extensions
     linkLists:
       - linkListType: overview
         links:
+          - text: Microsoft Edge extensions documentation  # extensions landing page
+            url: ../extensions-chromium/landing/index.yml
+
           - text: Extensions overview
             url: ../extensions-chromium/index.md
 
@@ -110,14 +103,16 @@ landingContent:
 
           - text: "Tutorial part 1: Display an image in a pop-up"
             url: ../extensions-chromium/getting-started/part1-simple-extension.md
-# =============================================================================
-# Row 2 with 3 cards
-# =============================================================================
-# Card r2c1
+
+# -----------------------------------------------------------------------------
+# Card r1c3
   - title: Progressive Web Apps (PWAs)
     linkLists:
       - linkListType: overview
         links:
+          - text: Progressive Web Apps (PWAs) documentation  # pwa landing page
+            url: ../progressive-web-apps-chromium/landing/index.yml
+
           - text: Overview of Progressive Web Apps
             url: ../progressive-web-apps-chromium/index.md
 
@@ -126,16 +121,16 @@ landingContent:
           - text: Get started with PWAs
             url: ../progressive-web-apps-chromium/how-to/index.md
 
-      - linkListType: how-to-guide
-        links:
-          - text: Debug a PWA
-            url: ../devtools-guide-chromium/progressive-web-apps/index.md
-
           - text: Using Service Workers
             url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 
           - text: The web app manifest  # in _Making PWAs installable_
             url: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest
+
+      - linkListType: how-to-guide
+        links:
+          - text: Publish a PWA to the Microsoft Store
+            url: ../progressive-web-apps-chromium/how-to/microsoft-store.md
 
       - linkListType: whats-new
         links:
@@ -148,11 +143,16 @@ landingContent:
             url: ../progressive-web-apps-chromium/how-to/offline.md
 
 # =============================================================================
-# Card r2c2
+# Row 2
+# -----------------------------------------------------------------------------
+# Card r2c1
   - title: WebView2
     linkLists:
       - linkListType: overview
         links:
+          - text: WebView2 documentation  # wv2 landing page
+            url: ../webview2/landing/index.yml
+
           - text: Introduction to Microsoft Edge WebView2
             url: ../webview2/index.md
       - linkListType: concept
@@ -178,13 +178,41 @@ landingContent:
         links:
           - text: WebView2 API Reference
             url: ../webview2/webview2-api-reference.md
-# =============================================================================
-# Card r2c3  # 10 items max
-  - title: Development tips for Microsoft Edge  # = /web-platform/
+
+# -----------------------------------------------------------------------------
+# Card r2c2
+  - title: Test and automation
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Test and automation in Microsoft Edge
+            url: ../test-and-automation/test-and-automation.md
+
+          - text: DevTools Protocol
+            url: ../devtools-protocol-chromium/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol-chromium/
+
+          - text: Use origin trials in Microsoft Edge
+            url: ../origin-trials/index.md
+
+          - text: Use Playwright to automate and test in Microsoft Edge
+            url: ../playwright/index.md
+
+          - text: Puppeteer overview
+            url: ../puppeteer/index.md
+
+          - text: Use WebDriver to automate Microsoft Edge
+            url: ../webdriver-chromium/index.md
+
+          - text: webhint extension for Visual Studio Code
+            url: ../visual-studio-code/webhint.md
+
+# -----------------------------------------------------------------------------
+# Card r2c3
+  - title: Development tips for Microsoft Edge  # /web-platform/
     linkLists:
 #     - linkListType: overview
 #       links:
-#         - text: Development tips for Microsoft Edge
+#         - text: Development tips for Microsoft Edge  # jump page for overview of bucket, omit bc 10 max
 #           url: ../web-platform/web-platform.md
       - linkListType: whats-new
         links:
@@ -218,9 +246,10 @@ landingContent:
 
           - text: Sign up for the Ad Selection API
             url: ../web-platform/ad-selection-api.md
+
 # =============================================================================
-# Row 3 with 3 cards
-# =============================================================================
+# Row 3
+# -----------------------------------------------------------------------------
 # Card r3c1
   - title: Microsoft Edge IDE integration
     linkLists:
@@ -229,16 +258,20 @@ landingContent:
           - text: Microsoft Edge IDE integration
             url: ../visual-studio-code/ide-integration.md
 
+          - text: Microsoft Edge DevTools extension for Visual Studio Code
+            url: ../visual-studio-code/microsoft-edge-devtools-extension.md  # goes directly to main page, in DevTools
+
           - text: Debug Microsoft Edge in Visual Studio Code
             url: ../visual-studio-code/debugger-for-edge.md
       - linkListType: how-to-guide
         links:
-          - text: Open source files in Visual Studio Code
+          - text: Opening source files in Visual Studio Code
             url: ../devtools-guide-chromium/sources/opening-sources-in-vscode.md
 
           - text: Visual Studio for web development
             url: ../visual-studio/index.md
-# =============================================================================
+
+# -----------------------------------------------------------------------------
 # Card r3c2
   - title: Accessibility in Microsoft Edge
     linkLists:
@@ -253,29 +286,36 @@ landingContent:
         links:
           - text: Accessibility testing
             url: ../accessibility/test.md
-# =============================================================================
+
+# -----------------------------------------------------------------------------
 # Card r3c3
-  - title: Test and automation
+  - title: DualEngine
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Introduction to the Microsoft DualEngine API
+            url: ../dualengine/intro.md
+
+      - linkListType: get-started
+        links:
+          - text: Getting started with the DualEngine API
+            url: ../dualengine/get-started.md
+
       - linkListType: how-to-guide
         links:
-          - text: Test and automation in Microsoft Edge  # new firstchild article
-            url: ../test-and-automation/test-and-automation.md
+          - text: Creating a DualEngine adapter plugin DLL
+            url: ../dualengine/concepts/adapter-dll.md
 
-          - text: DevTools Protocol
-            url: ../devtools-protocol-chromium/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol-chromium/
+          - text: Launching Internet Explorer
+            url: ../dualengine/concepts/launching-internet-explorer.md
 
-          - text: Use origin trials in Microsoft Edge
-            url: ../origin-trials/index.md
+      - linkListType: reference
+        links:
+          - text: DualEngine Win32 C++ Reference
+            url: ../dualengine/reference/index.md
 
-          - text: Use Playwright to automate and test in Microsoft Edge
-            url: ../playwright/index.md
-
-          - text: Puppeteer overview
-            url: ../puppeteer/index.md
-
-          - text: Use WebDriver to automate Microsoft Edge
-            url: ../webdriver-chromium/index.md
-
-          - text: webhint extension for Visual Studio Code
-            url: ../visual-studio-code/webhint.md
+# =============================================================================
+# Row 4
+# -----------------------------------------------------------------------------
+# Card r4c1
+# leaf articles at bottom of toc (videos, privacy, initiative) - omit

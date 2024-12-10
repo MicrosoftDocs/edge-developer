@@ -425,7 +425,7 @@
 # 3D View tool ----------------------------------------------------------------
             - name: 3D View tool
               items:
-                - name: Navigate webpage layers, z-index, and DOM using the 3D View tool  # added article
+                - name: Navigate webpage layers, z-index, and DOM using the 3D View tool
                   href: devtools-guide-chromium/3d-view/index.md
                   displayName: 3D View tool, composited layers
 # Animations tool -------------------------------------------------------------
@@ -487,7 +487,7 @@
 # Changes tool ----------------------------------------------------------------
             - name: Changes tool
               items:
-                - name: Track changes to files using the Changes tool  # added article
+                - name: Track changes to files using the Changes tool
                   href: devtools-guide-chromium/changes/changes-tool.md
                   displayName: Changes tool
 # Coverage tool ---------------------------------------------------------------
@@ -501,13 +501,6 @@
               items:
                 - name: Crash analyzer tool
                   href: devtools-guide-chromium/crash-analyzer/index.md
-# CSP Violations --------------------------------------------------------------
-            # - name: CSP Violations tool
-            #   https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
-            #   items:
-            #     - name: Display Content Security Policy (CSP) violations
-            #       href: devtools-guide-chromium/csp-violations/csp-violations-tool.md
-            #       displayName: CSP Violations tool
 # CSS Overview tool -----------------------------------------------------------
             - name: CSS Overview tool
               items:
@@ -921,9 +914,8 @@
         - name: DevTools for Visual Studio Code
           items:
 
-            - name: DevTools extension for Visual Studio Code
+            - name: Microsoft Edge DevTools extension for Visual Studio Code
               href: visual-studio-code/microsoft-edge-devtools-extension.md
-              displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
 
             - name: Get started
               items:
@@ -1759,7 +1751,6 @@
 
         - name: Opening source files in Visual Studio Code
           href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
-          displayName: Open source files in Visual Studio Code # variant title string
 
         - name: Debug Microsoft Edge in Visual Studio Code
           href: visual-studio-code/debugger-for-edge.md

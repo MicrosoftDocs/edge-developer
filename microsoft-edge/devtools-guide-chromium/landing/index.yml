@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-# landing page for DevTools portion of docset
+# DevTools landing page
 title: Microsoft Edge DevTools documentation
 summary: Development using Microsoft Edge DevTools.
 
@@ -12,7 +12,7 @@ metadata:
   # ms.collection: collection # Optional; Remove if no collection is used.
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 02/15/2024
+  ms.date: 12/10/2024
 
 # =============================================================================
 # Valid article types (sections of a card)
@@ -36,6 +36,8 @@ metadata:
 landingContent:
 
 # =============================================================================
+# Row 1
+# -----------------------------------------------------------------------------
 # Card r1c1
   - title: Getting started with DevTools
     linkLists:
@@ -60,7 +62,7 @@ landingContent:
           - text: Contact the Microsoft Edge DevTools team
             url: ../contact.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r1c2
   - title: Customizing DevTools
     linkLists:
@@ -80,7 +82,7 @@ landingContent:
           - text: Customize keyboard shortcuts
             url: ../customize/shortcuts.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r1c3
   - title: Debugging web projects
     linkLists:
@@ -113,6 +115,8 @@ landingContent:
             url: ../network/index.md
 
 # =============================================================================
+# Row 2
+# -----------------------------------------------------------------------------
 # Card r2c1
   - title: Emulation and Testing
     linkLists:
@@ -139,7 +143,7 @@ landingContent:
           - text: Simulate reduced motion
             url: ../accessibility/reduced-motion-simulation.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r2c2
   - title: JavaScript and performance
     linkLists:
@@ -172,7 +176,7 @@ landingContent:
           - text: Troubleshooting common performance issues
             url: ../rendering-tools/index.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r2c3
   - title: Reference
     linkLists:
@@ -197,3 +201,28 @@ landingContent:
         links:
           - text: Sample code for DevTools
             url: ../sample-code/sample-code.md
+
+# =============================================================================
+# Row 3
+# -----------------------------------------------------------------------------
+# Card r3c1
+  - title: Microsoft Edge IDE integration
+    linkLists:
+      - linkListType: overview
+        links:
+            - text: Microsoft Edge IDE integration
+              url: ./visual-studio-code/ide-integration.md
+
+            - text: Debug Microsoft Edge in Visual Studio Code
+              url: ./visual-studio-code/debugger-for-edge.md
+
+      - linkListType: how-to-guide
+        links:
+            - text: Microsoft Edge DevTools extension for Visual Studio Code
+              url: ./visual-studio-code/microsoft-edge-devtools-extension.md
+
+            - text: Visual Studio for web development
+              url: ./visual-studio-code/index.md
+
+            - text: Opening source files in Visual Studio Code
+              url: ./devtools-guide-chromium/sources/opening-sources-in-vscode.md

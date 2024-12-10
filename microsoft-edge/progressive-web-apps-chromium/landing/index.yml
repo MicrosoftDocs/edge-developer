@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-# landing page for PWA portion of docset
+# PWA landing page
 title: Progressive Web Apps (PWAs) documentation
 summary: Develop a web app that can be installed and run on all devices, from one codebase. Provide a native-like UX, or run in the browser.
 # summary < 160 chars; cursor 169
@@ -37,6 +37,8 @@ metadata:
 landingContent:
 
 # =============================================================================
+# Row 1
+# -----------------------------------------------------------------------------
 # Card r1c1
   - title: Overview and getting started
     linkLists:
@@ -53,12 +55,18 @@ landingContent:
           - text: Get started with PWAs
             url: ../how-to/index.md
 
+          - text: Using Service Workers
+            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+
+          - text: The web app manifest  # in _Making PWAs installable_
+            url: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest
+
       - linkListType: whats-new
         links:
           - text: What's New in PWAs
             url: ../whats-new/pwa.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r1c2
   - title: Integrate a PWA into Windows
     linkLists:
@@ -79,7 +87,7 @@ landingContent:
           - text: Build a PWA for the sidebar in Microsoft Edge
             url: ../how-to/sidebar.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r1c3
   - title: Distribute a PWA with the Microsoft Store
     linkLists:
@@ -92,6 +100,8 @@ landingContent:
             url: ../how-to/digital-goods-api.md
             
 # =============================================================================
+# Row 2
+# -----------------------------------------------------------------------------
 # Card r2c1
   - title: Update a PWA, alert with badges, notifications, push messages
     linkLists:
@@ -106,7 +116,7 @@ landingContent:
           - text: Re-engage users with push messages
             url: ../how-to/push.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r2c2
   - title: Handle files, links, and protocols
     linkLists:
@@ -121,7 +131,7 @@ landingContent:
           - text: Handle protocols in a PWA
             url: ../how-to/handle-protocols.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r2c3
   - title: Additional tasks and features
     linkLists:
@@ -138,12 +148,6 @@ landingContent:
 
           - text: Best practices for PWAs
             url: ../how-to/best-practices.md
-
-          - text: Using Service Workers
-            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
-
-          - text: The web app manifest  # in _Making PWAs installable_
-            url: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest
 
       - linkListType: sample
         links:
