@@ -17,10 +17,7 @@ metadata:
 # topmost section of hub page; 2 rows of 4 cards
 # Maximum of 8 items
 highlightedContent:
-# itemType: architecture | concept | deploy | download |
-#           get-started | how-to-guide | learn | overview |
-#           quickstart | reference | tutorial | video |
-#           whats-new
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
 
 # =============================================================================
@@ -78,10 +75,8 @@ highlightedContent:
 # =============================================================================
 # "Microsoft Edge for Enterprise" section of hub page: 2 rows of up to 4 cards
 conceptualContent:
-# itemType: architecture | concept | deploy | download |
-#           get-started | how-to-guide | learn | overview |
-#           quickstart | reference | tutorial | video |
-#           whats-new
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
+# Supports up to 3 subsections
   sections:
     - title: Microsoft Edge for Enterprise # < 60 chars (optional)
       # summary:  # < 160 chars (optional)
@@ -464,37 +459,38 @@ conceptualContent:
 # Row 3 (4 cards max)
 # -----------------------------------------------------------------------------
 # Card r3c1
-        - title: DualEngine
-          links:
-            - text: Introduction to the Microsoft DualEngine API
-              url: ./dualengine/intro.md
-              itemType: overview
+        # - title: DualEngine
+          # links:
+          #   - text: Introduction to the Microsoft DualEngine API
+          #     url: ./dualengine/intro.md
+          #     itemType: overview
  
-            - text: Getting started with the DualEngine API
-              url: ./dualengine/get-started.md
-              itemType: get-started
+          #   - text: Getting started with the DualEngine API
+          #     url: ./dualengine/get-started.md
+          #     itemType: get-started
  
-            - text: Creating a DualEngine adapter plugin DLL
-              url: ./dualengine/concepts/adapter-dll.md
-              itemType: how-to-guide
+          #   - text: Creating a DualEngine adapter plugin DLL
+          #     url: ./dualengine/concepts/adapter-dll.md
+          #     itemType: how-to-guide
  
-            - text: Launching Internet Explorer
-              url: ./dualengine/concepts/launching-internet-explorer.md
-              itemType: how-to-guide
+          #   - text: Launching Internet Explorer
+          #     url: ./dualengine/concepts/launching-internet-explorer.md
+          #     itemType: how-to-guide
 
-            - text: DualEngine Win32 C++ Reference
-              url: ./dualengine/reference/index.md
-              itemType: reference
+          #   - text: DualEngine Win32 C++ Reference
+          #     url: ./dualengine/reference/index.md
+          #     itemType: reference
 
 # =============================================================================
 # "Help and Support" section of hub page - 1 row of 3 cards
+# Cards with summary style
 additionalContent:
-  # supports up to 4 sections
+  # Supports up to 4 sections
   sections:
     - title: Help and Support # < 60 chars (optional)
       # summary: sectionsummary # < 160 chars (optional)
       items:
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card
         - summary: Get advice and answers from community experts.
           title: Community Support on Microsoft Q&A
