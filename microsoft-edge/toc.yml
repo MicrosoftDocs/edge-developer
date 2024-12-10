@@ -1,5 +1,5 @@
 # =============================================================================
-# Sections:
+# TOC sections:
 # top leaf nodes (landing, docset overview)
 # DevTools
 # DevTools for VS Code (within DevTools)
@@ -1171,9 +1171,9 @@
 
 # top =========================================================================
 # PWA
-    - name: Progressive Web Apps (PWAs)
+    - name: Progressive Web Apps
       items:
-        - name: Progressive Web Apps documentation
+        - name: Progressive Web Apps (PWAs) documentation
           href: ./progressive-web-apps-chromium/landing/index.yml
           displayName: landing
 
@@ -1217,7 +1217,7 @@
             - name: Provide in-app purchases with the Digital Goods API
               href: ./progressive-web-apps-chromium/how-to/digital-goods-api.md
 
-        - name: Update a PWA and alert the user with badges, notifications, and push messages
+        - name: Update a PWA, alert with badges, notifications, push messages
           items:
             - name: Synchronize and update a PWA in the background
               href: ./progressive-web-apps-chromium/how-to/background-syncs.md
