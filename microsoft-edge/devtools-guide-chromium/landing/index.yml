@@ -211,18 +211,18 @@ landingContent:
       - linkListType: overview
         links:
             - text: Microsoft Edge IDE integration
-              url: ../visual-studio-code/ide-integration.md
+              url: ../../visual-studio-code/ide-integration.md
 
             - text: Debug Microsoft Edge in Visual Studio Code
-              url: ../visual-studio-code/debugger-for-edge.md
+              url: ../../visual-studio-code/debugger-for-edge.md
 
       - linkListType: how-to-guide
         links:
             - text: Microsoft Edge DevTools extension for Visual Studio Code
-              url: ../visual-studio-code/microsoft-edge-devtools-extension.md
-
-            - text: Visual Studio for web development
-              url: ../visual-studio-code/index.md
+              url: ../../visual-studio-code/microsoft-edge-devtools-extension.md  # goes directly to main page, in DevTools
 
             - text: Opening source files in Visual Studio Code
-              url: ../devtools-guide-chromium/sources/opening-sources-in-vscode.md
+              url: ../sources/opening-sources-in-vscode.md
+
+            - text: Visual Studio for web development
+              url: ../../visual-studio-code/index.md
