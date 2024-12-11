@@ -273,6 +273,10 @@ conceptualContent:
               url: ./progressive-web-apps-chromium/index.md
               itemType: overview
 
+            - text: What's New in PWAs
+              url: ./progressive-web-apps-chromium/whats-new/pwa.md
+              itemType: whats-new
+
             - text: Get started with PWAs
               url: ./progressive-web-apps-chromium/how-to/index.md
               itemType: get-started
@@ -288,10 +292,6 @@ conceptualContent:
             - text: Publish a PWA to the Microsoft Store
               url: ./progressive-web-apps-chromium/how-to/microsoft-store.md
               itemType: how-to-guide
-
-            - text: What's New in PWAs
-              url: ./progressive-web-apps-chromium/whats-new/pwa.md
-              itemType: whats-new
 
             - text: Store data on the device
               url: ./progressive-web-apps-chromium/how-to/offline.md
@@ -456,7 +456,7 @@ conceptualContent:
               itemType: how-to-guide
 
 # =============================================================================
-# Row 3 (4 cards max)
+# Row 3 (4 cards max) - adding cards changes layout to 3 per row
 # -----------------------------------------------------------------------------
 # Card r3c1
         # - title: DualEngine

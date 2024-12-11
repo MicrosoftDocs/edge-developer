@@ -116,6 +116,11 @@ landingContent:
           - text: Overview of Progressive Web Apps
             url: ../progressive-web-apps-chromium/index.md
 
+      - linkListType: whats-new
+        links:
+          - text: What's New in PWAs
+            url: ../progressive-web-apps-chromium/whats-new/pwa.md
+
       - linkListType: get-started
         links:
           - text: Get started with PWAs
@@ -132,11 +137,6 @@ landingContent:
           - text: Publish a PWA to the Microsoft Store
             url: ../progressive-web-apps-chromium/how-to/microsoft-store.md
 
-      - linkListType: whats-new
-        links:
-          - text: What's New in PWAs
-            url: ../progressive-web-apps-chromium/whats-new/pwa.md
-
       - linkListType: concept
         links:
           - text: Store data on the device
@@ -146,68 +146,6 @@ landingContent:
 # Row 2
 # -----------------------------------------------------------------------------
 # Card r2c1
-  - title: WebView2
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: WebView2 documentation  # wv2 landing page
-            url: ../webview2/landing/index.yml
-
-          - text: Introduction to Microsoft Edge WebView2
-            url: ../webview2/index.md
-      - linkListType: concept
-        links:
-          - text: Differences between Microsoft Edge and WebView2
-            url: ../webview2/concepts/browser-features.md
-
-          - text: Development best practices
-            url: ../webview2/concepts/developer-guide.md
-      - linkListType: get-started
-        links:
-          - text: Get started with WebView2
-            url: ../webview2/get-started/get-started.md
-      - linkListType: download
-        links:
-          - text: WebView2 sample apps
-            url: ../webview2/code-samples-links.md
-      - linkListType: whats-new
-        links:
-          - text: Release Notes for the WebView2 SDK
-            url: ../webview2/release-notes/index.md
-      - linkListType: reference
-        links:
-          - text: WebView2 API Reference
-            url: ../webview2/webview2-api-reference.md
-
-# -----------------------------------------------------------------------------
-# Card r2c2
-  - title: Test and automation
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Test and automation in Microsoft Edge
-            url: ../test-and-automation/test-and-automation.md
-
-          - text: DevTools Protocol
-            url: ../devtools-protocol-chromium/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol-chromium/
-
-          - text: Use origin trials in Microsoft Edge
-            url: ../origin-trials/index.md
-
-          - text: Use Playwright to automate and test in Microsoft Edge
-            url: ../playwright/index.md
-
-          - text: Puppeteer overview
-            url: ../puppeteer/index.md
-
-          - text: Use WebDriver to automate Microsoft Edge
-            url: ../webdriver-chromium/index.md
-
-          - text: webhint extension for Visual Studio Code
-            url: ../visual-studio-code/webhint.md
-
-# -----------------------------------------------------------------------------
-# Card r2c3
   - title: Development tips for Microsoft Edge  # /web-platform/
     linkLists:
 #     - linkListType: overview
@@ -246,6 +184,68 @@ landingContent:
 
           - text: Sign up for the Ad Selection API
             url: ../web-platform/ad-selection-api.md
+
+# -----------------------------------------------------------------------------
+# Card r2c2
+  - title: WebView2
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: WebView2 documentation  # wv2 landing page
+            url: ../webview2/landing/index.yml
+
+          - text: Introduction to Microsoft Edge WebView2
+            url: ../webview2/index.md
+      - linkListType: concept
+        links:
+          - text: Differences between Microsoft Edge and WebView2
+            url: ../webview2/concepts/browser-features.md
+
+          - text: Development best practices
+            url: ../webview2/concepts/developer-guide.md
+      - linkListType: get-started
+        links:
+          - text: Get started with WebView2
+            url: ../webview2/get-started/get-started.md
+      - linkListType: download
+        links:
+          - text: WebView2 sample apps
+            url: ../webview2/code-samples-links.md
+      - linkListType: whats-new
+        links:
+          - text: Release Notes for the WebView2 SDK
+            url: ../webview2/release-notes/index.md
+      - linkListType: reference
+        links:
+          - text: WebView2 API Reference
+            url: ../webview2/webview2-api-reference.md
+
+# -----------------------------------------------------------------------------
+# Card r2c3
+  - title: Test and automation
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Test and automation in Microsoft Edge
+            url: ../test-and-automation/test-and-automation.md
+
+          - text: DevTools Protocol
+            url: ../devtools-protocol-chromium/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol-chromium/
+
+          - text: Use origin trials in Microsoft Edge
+            url: ../origin-trials/index.md
+
+          - text: Use Playwright to automate and test in Microsoft Edge
+            url: ../playwright/index.md
+
+          - text: Puppeteer overview
+            url: ../puppeteer/index.md
+
+          - text: Use WebDriver to automate Microsoft Edge
+            url: ../webdriver-chromium/index.md
+
+          - text: webhint extension for Visual Studio Code
+            url: ../visual-studio-code/webhint.md
 
 # =============================================================================
 # Row 3
