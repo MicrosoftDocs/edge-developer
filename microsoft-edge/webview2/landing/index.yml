@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-# landing page for WebView2 portion of docset
+# WebView2 landing page
 title: WebView2 documentation
 summary: Embed web technologies (HTML, CSS, and JavaScript) in your native apps.
 
@@ -37,8 +37,7 @@ landingContent:
 
 # =============================================================================
 # Row 1
-
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r1c1
   - title: Introduction and overview
     linkLists:
@@ -69,7 +68,7 @@ landingContent:
           - text: WebView2 end-user FAQ
             url: ../concepts/end-user-faq.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r1c2
   - title: Platforms and samples
     linkLists:
@@ -104,7 +103,7 @@ landingContent:
           - text: Get started with WebView2 in HoloLens 2 Unity apps (Preview)
             url: ../get-started/hololens2.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r1c3
   - title: Support and community
     linkLists:
@@ -121,8 +120,7 @@ landingContent:
 
 # =============================================================================
 # Row 2
-
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r2c1
   - title: Navigation, events, and authentication
     linkLists:
@@ -145,7 +143,7 @@ landingContent:
           - text: Windowed vs. visual hosting of WebView2
             url: ../concepts/windowed-vs-visual-hosting.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r2c2
   - title: Customization and UI
     linkLists:
@@ -174,7 +172,7 @@ landingContent:
           - text: WebView2 browser flags
             url: ../concepts/webview-features-flags.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r2c3
   - title: Web and native interop
     linkLists:
@@ -199,8 +197,7 @@ landingContent:
 
 # =============================================================================
 # Row 3
-
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r3c1
   - title: Test and automation for WebView2 apps
     linkLists:
@@ -224,7 +221,7 @@ landingContent:
           - text: Self-host by deploying preview channels
             url: ../how-to/self-hosting.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r3c2
   - title: Best practices
     linkLists:
@@ -236,7 +233,7 @@ landingContent:
           - text: Develop secure WebView2 apps
             url: ../concepts/security.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r3c3
   - title: Distribution and SDK versions
     linkLists:
@@ -276,8 +273,7 @@ landingContent:
 
 # =============================================================================
 # Row 4
-
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r4c1
   - title: Architecture and Reference
     linkLists:
@@ -294,7 +290,7 @@ landingContent:
           - text: WebView2 API Reference
             url: ../webview2-api-reference.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r4c2
   - title: User data and history
     linkLists:
@@ -314,7 +310,7 @@ landingContent:
           - text: Data and privacy in WebView2
             url: ../concepts/data-privacy.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r4c3
   - title: Debug WebView2 apps
     linkLists:

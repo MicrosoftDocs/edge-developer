@@ -1,5 +1,5 @@
 ---
-title: Build PWA-driven widgets
+title: Display a PWA widget in the Windows Widgets Board
 description: How to build lightweight PWA-driven widgets that integrate in the operating system widgets dashboard.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 08/10/2023
 ---
-# Build PWA-driven widgets
+# Display a PWA widget in the Windows Widgets Board
 
 Various operating systems have widgets dashboards that let users read content and perform tasks. Examples of this include Android Home Screen widgets, macOS Dashboard and Today Panel widgets, the Apple Touch Bar, Samsung Daily Cards, Mini App widgets, and smart watch app companions.
 
@@ -25,13 +25,13 @@ In Windows 11, Progressive Web Apps (PWAs) can define widgets, update them, and 
 An existing PWA cannot simply be placed into the widget dashboard as-is, like you can with the Microsoft Edge Sidebar.  Instead, you need to build a custom widget experience that's appropriate for the widget host, which currently is the Windows 11 Widgets Board.  (There may be other widget hosts in the future.)  The Windows 11 Widgets Board requires widgets to be built by using Adaptive Card templates instead of HTML and JavaScript, so the widget has to be designed separately from the rest of the app's UI.
 
 See also:
-* [Build PWAs for the sidebar in Microsoft Edge](./sidebar.md)
+* [Build a PWA for the sidebar in Microsoft Edge](./sidebar.md)
 
 To build a PWA-driven widget and deliver it via the Microsoft store, no C++/C# code is required.  Once you've produced the widget, and can successfully install and run the widget from a public endpoint, you can package the app by using [PWABuilder.com](https://www.pwabuilder.com) and ship the app to the Microsoft store without requiring any additional code.  The PWA backing the widget must be installable from a public endpoint, because PWABuilder.com doesn't support packing apps from localhost.
 <!-- The PWA (not the widget) is what is installable and packaged, because it's a standalone entity (unlike a widget). -->
 
 See also:
-* [Publish a Progressive Web App to the Microsoft Store](./microsoft-store.md)
+* [Publish a PWA to the Microsoft Store](./microsoft-store.md)
 
 
 <!-- ====================================================================== -->

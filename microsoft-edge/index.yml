@@ -9,64 +9,83 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 03/06/2024
+  ms.date: 12/10/2024
   ms.localizationpriority: high
   ms.service: microsoft-edge
 
 # =============================================================================
-# highlightedContent section (optional)
+# topmost section of hub page; 2 rows of 4 cards
 # Maximum of 8 items
 highlightedContent:
-# itemType: architecture | concept | deploy | download |
-#           get-started | how-to-guide | learn | overview |
-#           quickstart | reference | tutorial | video |
-#           whats-new
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
-    # Card
+
+# =============================================================================
+# Row 1 (4 cards)
+# -----------------------------------------------------------------------------
+# Card r1c1
     - title: "Microsoft Edge (Official Stable Channel)"
       itemType: download
       url: https://www.microsoft.com/edge
-    # Card
+
+# -----------------------------------------------------------------------------
+# Card r1c2
     - title: "Download Microsoft Edge for Business"
       itemType: download
       url: https://www.microsoft.com/edge/business/download
-    # Card
+
+# -----------------------------------------------------------------------------
+# Card r1c3
     - title: "Microsoft Edge Insider Channels"
       itemType: download
       url: https://www.microsoft.com/edge/download/insider
-    # Card
+
+# -----------------------------------------------------------------------------
+# Card r1c4
     - title: "Find out what's new"
       itemType: learn
       url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # or https://www.microsoft.com/edge/update/latest (1 at a time)
-    # Card
+
+# =============================================================================
+# Row 2 (4 cards)
+# -----------------------------------------------------------------------------
+# Card r2c1
     - title: "Get support"
       itemType: reference
       url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
-    # Card
+
+# -----------------------------------------------------------------------------
+# Card r2c2
     - title: "How to use Microsoft Edge"
       itemType: learn
       url: https://support.microsoft.com/microsoft-edge?ocid=DMC-End-User-Support
-    # Card
+
+# -----------------------------------------------------------------------------
+# Card r2c3
     - title: "Administer Microsoft Edge in the Enterprise"
       itemType: learn
       url: /deployedge/index
-    # Card
+
+# -----------------------------------------------------------------------------
+# Card r2c4
     - title: "Discover web developer features"
       itemType: learn
       url: /microsoft-edge/index#microsoft-edge-for-developers  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-developers
 
 # =============================================================================
-# conceptualContent section (optional)
+# "Microsoft Edge for Enterprise" section of hub page: 2 rows of up to 4 cards
 conceptualContent:
-# itemType: architecture | concept | deploy | download |
-#           get-started | how-to-guide | learn | overview |
-#           quickstart | reference | tutorial | video |
-#           whats-new
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
+# Supports up to 3 subsections
   sections:
     - title: Microsoft Edge for Enterprise # < 60 chars (optional)
       # summary:  # < 160 chars (optional)
       items:
-        # Card
+
+# =============================================================================
+# Row 1 (4 cards)
+# -----------------------------------------------------------------------------
+# Card r1c1
         - title: Learn about Microsoft Edge in the enterprise
           links:
             - url: /deployedge/microsoft-edge-channels
@@ -76,7 +95,9 @@ conceptualContent:
             - url: /deployedge/edge-ie-mode
               itemType: reference
               text: Use enterprise features
-        # Card
+
+# -----------------------------------------------------------------------------
+# Card r1c2
         - title: Deploy and update Microsoft Edge
           links:
             - itemType: reference
@@ -90,7 +111,9 @@ conceptualContent:
             - itemType: reference
               text: Deploy to macOS
               url: /mem/intune/apps/apps-edge-macos
-        # Card
+
+# -----------------------------------------------------------------------------
+# Card r1c3
         - title: Configure Microsoft Edge
           links:
             - itemType: reference
@@ -104,7 +127,9 @@ conceptualContent:
             - itemType: reference
               text: Manage Microsoft Edge on iOS and Android with Intune
               url: /mem/intune/apps/manage-microsoft-edge
-        # Card
+
+# -----------------------------------------------------------------------------
+# Card r1c4
         - title: Manage security and privacy
           links:
             - itemType: reference
@@ -114,7 +139,11 @@ conceptualContent:
             - itemType: reference
               text: Privacy
               url: /deployedge/microsoft-edge-enterprise-privacy-settings
-        # Card
+
+# =============================================================================
+# Row 2 (3 cards, max 4)
+# -----------------------------------------------------------------------------
+# Card r2c1
         - title: Policy reference
           links:
             - itemType: reference
@@ -124,7 +153,9 @@ conceptualContent:
             - itemType: reference
               text: Update policy reference
               url: /deployedge/microsoft-edge-update-policies
-        # Card
+
+# -----------------------------------------------------------------------------
+# Card r2c2
         - title: Engage with enterprise community
           links:
             - itemType: reference
@@ -133,7 +164,9 @@ conceptualContent:
             # - itemType: reference
             #   text: Troubleshoot Microsoft Edge
             #   url: /deployedge/microsoft-edge-troubleshooting
-        # Card
+
+# -----------------------------------------------------------------------------
+# Card r2c3
         - title: Extensions for enterprise
           links:
             - itemType: overview
@@ -147,26 +180,32 @@ conceptualContent:
             - itemType: reference
               text: Extension hosting
               url: ./extensions-chromium/enterprise/hosting-and-updating.md
+
+# -----------------------------------------------------------------------------
+# Card r2c4
+
+
 # =============================================================================
+# "Microsoft Edge for Developers" section of hub page - 2 rows of 4 cards
     - title: Microsoft Edge for Developers # < 60 chars (optional)
     # summary:  # < 160 chars (optional)
       items:
-        # Card
+
+# =============================================================================
+# Row 1 (4 cards)
+# -----------------------------------------------------------------------------
+# Card r1c1
         - title: Microsoft Edge DevTools
           links:
-            - text: Microsoft Edge Developer documentation  # Edge landing page
+            - text: Microsoft Edge Developer documentation  # docset landing page (link is in hub page only)
               url: ./developer/index.yml
               itemType: overview
 
-            - text: Develop for the web with Microsoft Edge  # topmost article
-              url: ./develop-web-microsoft-edge.md
-              itemType: overview
-
-            - text: Microsoft Edge DevTools documentation  # DevTools landing page
+            - text: Microsoft Edge DevTools documentation  # devtools landing page
               url: ./devtools-guide-chromium/landing/index.yml
               itemType: overview
 
-            - text: Overview of DevTools  # renamed from index.md
+            - text: Overview of DevTools
               url: ./devtools-guide-chromium/overview.md
               itemType: overview
 
@@ -185,31 +224,15 @@ conceptualContent:
             - text: Keyboard shortcuts
               url: ./devtools-guide-chromium/shortcuts/index.md
               itemType: reference
-        # Card
-        - title: Microsoft Edge IDE integration
-          links:
-            - text: DevTools extension for Visual Studio Code
-              url: ./visual-studio-code/microsoft-edge-devtools-extension.md
-              itemType: how-to-guide
 
-            - text: Microsoft Edge IDE integration
-              url: ./visual-studio-code/ide-integration.md
-              itemType: overview
-
-            - text: Open source files in Visual Studio Code
-              url: ./devtools-guide-chromium/sources/opening-sources-in-vscode.md
-              itemType: how-to-guide
-
-            - text: Debug Microsoft Edge in Visual Studio Code
-              url: ./visual-studio-code/debugger-for-edge.md
-              itemType: overview
-
-            - text: Visual Studio for web development
-              url: ./visual-studio-code/index.md
-              itemType: how-to-guide
-        # Card
+# -----------------------------------------------------------------------------
+# Card r1c2
         - title: Microsoft Edge extensions
           links:
+            - text: Microsoft Edge extensions documentation  # extensions landing page
+              url: ./extensions-chromium/landing/index.yml
+              itemType: overview
+
             - text: Extensions overview
               url: ./extensions-chromium/index.md
               itemType: overview
@@ -237,40 +260,51 @@ conceptualContent:
             - text: "Tutorial part 1: Display an image in a pop-up"
               url: ./extensions-chromium/getting-started/part1-simple-extension.md
               itemType: how-to-guide
-        # Card
-        - title: Progressive Web Apps
+
+# -----------------------------------------------------------------------------
+# Card r1c3
+        - title: Progressive Web Apps (PWAs)
           links:
+            - text: Progressive Web Apps (PWAs) documentation  # pwa landing page
+              url: ./progressive-web-apps-chromium/landing/index.yml
+              itemType: overview
+
             - text: Overview of Progressive Web Apps
               url: ./progressive-web-apps-chromium/index.md
               itemType: overview
 
-            - text: Get started with PWAs
-              url: ./progressive-web-apps-chromium/how-to/index.md
-              itemType: overview
-
-            - text: Debug Progressive Web Apps
-              url: ./devtools-guide-chromium/progressive-web-apps/index.md
-              itemType: overview
-
-            - text: What's New in Progressive Web Apps
+            - text: What's New in PWAs
               url: ./progressive-web-apps-chromium/whats-new/pwa.md
               itemType: whats-new
 
+            - text: Get started with PWAs
+              url: ./progressive-web-apps-chromium/how-to/index.md
+              itemType: get-started
+
+            - text: Using Service Workers
+              url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+              itemType: get-started
+
+            - text: The web app manifest  # in _Making PWAs installable_
+              url: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest
+              itemType: get-started
+
+            - text: Publish a PWA to the Microsoft Store
+              url: ./progressive-web-apps-chromium/how-to/microsoft-store.md
+              itemType: how-to-guide
+
             - text: Store data on the device
               url: ./progressive-web-apps-chromium/how-to/offline.md
-              itemType: concept
+              itemType: how-to-guide
 
-            - text: Use a service worker to manage network requests
-              url: ./progressive-web-apps-chromium/how-to/service-workers.md
-              itemType: concept
-
-            - text: Use a web app manifest to integrate a PWA into the OS
-              url: ./progressive-web-apps-chromium/how-to/web-app-manifests.md
-              itemType: concept
-
-        # Card
+# -----------------------------------------------------------------------------
+# Card r1c4
         - title: WebView2
           links:
+            - text: WebView2 documentation  # wv2 landing page
+              url: ./webview2/landing/index.yml
+              itemType: overview
+
             - text: Introduction to Microsoft Edge WebView2
               url: ./webview2/index.md
               itemType: overview
@@ -298,10 +332,14 @@ conceptualContent:
             - text: WebView2 API Reference
               url: ./webview2/webview2-api-reference.md
               itemType: reference
-        # Card
+
+# =============================================================================
+# Row 2 (4 cards)
+# -----------------------------------------------------------------------------
+# Card r2c1
         - title: Test and automation
           links:
-            - text: Test and automation in Microsoft Edge  # new firstchild article
+            - text: Test and automation in Microsoft Edge
               url: ./test-and-automation/test-and-automation.md
               itemType: overview
 
@@ -328,10 +366,12 @@ conceptualContent:
             - text: webhint extension for Visual Studio Code
               url: ./visual-studio-code/webhint.md
               itemType: how-to-guide
-        # Card
-        - title: Development tips for Microsoft Edge
+
+# -----------------------------------------------------------------------------
+# Card r2c2
+        - title: Development tips for Microsoft Edge  # /web-platform/
           links:
-#           - text: Development tips for Microsoft Edge
+#           - text: Development tips for Microsoft Edge  # jump page for overview of bucket
 #             url: ./web-platform/web-platform.md
 #             itemType: overview
 
@@ -374,7 +414,33 @@ conceptualContent:
             - text: Sign up for the Ad Selection API
               url: ./web-platform/ad-selection-api.md
               itemType: how-to-guide
-        # Card
+
+# -----------------------------------------------------------------------------
+# Card r2c3
+        - title: Microsoft Edge IDE integration
+          links:
+            - text: Microsoft Edge IDE integration
+              url: ./visual-studio-code/ide-integration.md
+              itemType: overview
+
+            - text: Microsoft Edge DevTools extension for Visual Studio Code
+              url: ./visual-studio-code/microsoft-edge-devtools-extension.md  # goes directly to main page, in DevTools
+              itemType: how-to-guide
+
+            - text: Opening source files in Visual Studio Code
+              url: ./devtools-guide-chromium/sources/opening-sources-in-vscode.md
+              itemType: how-to-guide
+
+            - text: Debug Microsoft Edge in Visual Studio Code
+              url: ./visual-studio-code/debugger-for-edge.md
+              itemType: overview
+
+            - text: Visual Studio for web development
+              url: ./visual-studio-code/index.md
+              itemType: how-to-guide
+
+# -----------------------------------------------------------------------------
+# Card r2c4
         - title: Accessibility in Microsoft Edge
           links:
             - text: Accessibility-testing features
@@ -388,31 +454,65 @@ conceptualContent:
             - text: Accessibility testing
               url: ./accessibility/test.md
               itemType: how-to-guide
+
 # =============================================================================
-# additionalContent section (optional)
-# Card with summary style
+# Row 3 (4 cards max) - adding cards changes layout to 3 per row
+# -----------------------------------------------------------------------------
+# Card r3c1
+        # - title: DualEngine
+          # links:
+          #   - text: Introduction to the Microsoft DualEngine API
+          #     url: ./dualengine/intro.md
+          #     itemType: overview
+ 
+          #   - text: Getting started with the DualEngine API
+          #     url: ./dualengine/get-started.md
+          #     itemType: get-started
+ 
+          #   - text: Creating a DualEngine adapter plugin DLL
+          #     url: ./dualengine/concepts/adapter-dll.md
+          #     itemType: how-to-guide
+ 
+          #   - text: Launching Internet Explorer
+          #     url: ./dualengine/concepts/launching-internet-explorer.md
+          #     itemType: how-to-guide
+
+          #   - text: DualEngine Win32 C++ Reference
+          #     url: ./dualengine/reference/index.md
+          #     itemType: reference
+
+# =============================================================================
+# "Help and Support" section of hub page - 1 row of 3 cards
+# Cards with summary style
 additionalContent:
   # Supports up to 4 sections
   sections:
     - title: Help and Support # < 60 chars (optional)
       # summary: sectionsummary # < 160 chars (optional)
       items:
-        # Card
+# -----------------------------------------------------------------------------
+# Card
         - summary: Get advice and answers from community experts.
           title: Community Support on Microsoft Q&A
           url: /answers/topics/ms-edge.html
-        # Card
+# -----------------------------------------------------------------------------
+# Card
         - summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available using a variety of plans to help you get your required level of support.
           title: Microsoft Support for Business
           url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
-        # Card
+# -----------------------------------------------------------------------------
+# Card
         - summary: Helpful support resources for users is available.
           title: User Support
           url: https://support.microsoft.com/microsoft-edge
+
+# =============================================================================
+# "Reference and Legacy Docs" section of hub page - 1 row of 2 cards
     - title: Reference and Legacy Docs # < 60 chars (optional)
       # summary: sectionsummary # < 160 chars (optional)
       items:
-        # Card
+# -----------------------------------------------------------------------------
+# Card
         - title: Reference
           links:
             - text: Detecting Microsoft Edge from your website
@@ -423,7 +523,8 @@ additionalContent:
 
             - text: Microsoft Edge Privacy Whitepaper
               url: /legal/microsoft-edge/privacy
-        # Card
+# -----------------------------------------------------------------------------
+# Card
         - title: Microsoft Edge Legacy documentation
           links:
             - text: Microsoft Edge Legacy documentation
