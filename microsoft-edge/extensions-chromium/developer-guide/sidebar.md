@@ -6,15 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 10/09/2023
+ms.date: 12/11/2024
 ---
 # Develop an extension for the Microsoft Edge sidebar
 
 As a Microsoft Edge extension developer, you can make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar in addition to its other UI.
 
 ![The sidebar for a Microsoft Edge extension](./sidebar-images/sidebar-screenshot.png)
-
-The sidebar extensions feature is being rolled out to a growing user base for all channels of Microsoft Edge.<!-- todo: after rollout is complete, delete sentence -->
 
 By using the Sidebar API for extensions, you can enhance the browsing experience by enabling users to view additional information alongside the main content of a webpage.
 
@@ -38,9 +36,7 @@ Extensions can optionally use the sidebar API to show a custom UI in the Microso
 
 Features of the Sidebar API include:
 
-* The sidebar remains open while navigating between tabs.<!-- todo: fix/reconcile -->
-
-  Note: Currently, the sidebar is not automatically displayed again when the user switches to a tab in which the sidebar was previously open.<!-- todo: if behavior changes, update or remove statement -->
+* The sidebar remains open while navigating between tabs.  Known issue: The sidebar is not automatically displayed again when the user switches to a tab in which the sidebar was previously open ([Issue #142](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/142)).<!-- todo: update -->
 
 * An extension in the sidebar can be made available for specific websites.
 
@@ -155,7 +151,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
 
 When a user switches to a tab or site for which the sidebar is not enabled, the sidebar is hidden.
 
-Note: Currently, the sidebar is not automatically displayed again when the user switches to a tab in which the sidebar was previously open.<!-- todo: if behavior changes, update or remove statement -->
+Known issue: The sidebar is not automatically displayed again when the user switches to a tab in which the sidebar was previously open ([Issue #142](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/142)).<!-- todo: update -->
 
 For a complete example, see [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific).
 
