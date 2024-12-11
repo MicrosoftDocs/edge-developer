@@ -103,7 +103,7 @@ landingContent:
 # Row 2
 # -----------------------------------------------------------------------------
 # Card r2c1
-  - title: Update a PWA, alert with badges, notifications, push messages
+  - title: Update a PWA, show badges, notifications, push messages
     linkLists:
       - linkListType: how-to-guide
         links:

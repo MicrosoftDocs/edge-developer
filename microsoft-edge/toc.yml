@@ -1209,7 +1209,7 @@
             - name: Provide in-app purchases with the Digital Goods API
               href: ./progressive-web-apps-chromium/how-to/digital-goods-api.md
 
-        - name: Update a PWA, alert with badges, notifications, push messages
+        - name: Update a PWA, show badges, notifications, push messages
           items:
             - name: Synchronize and update a PWA in the background
               href: ./progressive-web-apps-chromium/how-to/background-syncs.md
