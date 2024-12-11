@@ -1,5 +1,5 @@
 ---
-title: Debug Progressive Web Apps (PWAs)
+title: Debug a Progressive Web App (PWA)
 description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,9 +21,9 @@ ms.date: 09/12/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Debug Progressive Web Apps (PWAs)
+# Debug a Progressive Web App (PWA)
 
-Use the **Application** tool to inspect, modify, and debug web app manifests, service workers, and service worker caches.  The **Application** tool includes the following panes for Progressive Web App features:
+Use the **Application** tool to inspect, modify, and debug a PWA's web app manifests, service workers, and service worker caches.  The **Application** tool includes the following panes for PWA features:
 
 *  Use the **Manifest** pane to inspect your web app manifest and trigger "Add to Homescreen" events.
 
@@ -37,7 +37,9 @@ Use the **Application** tool to inspect, modify, and debug web app manifests, se
 
 *  Use the **Storage** pane to unregister a service worker and clear all storage and caches.
 
-This article discusses the Progressive Web App features of the **Application** tool.  For help on the other panes in the **Application** tool, see [View the resource files that make up a webpage](../resources/index.md) and [View and edit local storage](../storage/localstorage.md).
+The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and panes in the **Application** tool, see:
+* [View the resource files that make up a webpage](../resources/index.md)
+* [View and edit local storage](../storage/localstorage.md)
 
 See also:
 * [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps-chromium/index.md)
