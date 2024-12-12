@@ -84,8 +84,8 @@ See also:
 ## Custom crash reporting
 
 If any WebView2 process crashes, one or more minidump files are created and sent to Microsoft for diagnosis.  Use this API to customize crash reporting when running diagnostics and doing analysis.
-*  To prevent crash dumps from being sent to Microsoft, set the `IsCustomCrashReportingEnabled` property to `false`.
-*  To locate crash dumps and do customization with them, use the `CrashDumpFolderPath` property.
+* When `IsCustomCrashReportingEnabled` is set to `true`, Windows won't send crash data to the Microsoft endpoint.
+* To locate crash dumps and do customization with them, use the `CrashDumpFolderPath` property.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -105,6 +105,7 @@ If any WebView2 process crashes, one or more minidump files are created and sent
 
 * `ICoreWebView2EnvironmentOptions3` interface:
    * [ICoreWebView2EnvironmentOptions3::get_IsCustomCrashReportingEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3#get_iscustomcrashreportingenabled)
+   * [ICoreWebView2EnvironmentOptions3::put_IsCustomCrashReportingEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3#put_iscustomcrashreportingenabled)
 * `ICoreWebView2Environment11` interface:
    * [ICoreWebView2Environment11::get_FailureReportFolderPath](/microsoft-edge/webview2/reference/win32/icorewebview2environment11#get_failurereportfolderpath)
 
