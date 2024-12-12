@@ -311,7 +311,7 @@ In the **Application** tool, the **Manifest** page now shows app shortcuts.  App
 
 See also:
 * [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps-chromium/index.md)
-* [Debug Progressive Web Apps (PWAs)](../../../progressive-web-apps/index.md)
+* [Debug a Progressive Web App (PWA)](../../../progressive-web-apps/index.md)
 
 
 <!-- ---------------------------------- -->
