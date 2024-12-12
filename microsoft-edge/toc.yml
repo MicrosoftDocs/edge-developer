@@ -1,19 +1,34 @@
-- name: Microsoft Edge Developer documentation  # landing page
+# =============================================================================
+# TOC sections:
+# top leaf nodes (landing, docset overview)
+# DevTools
+# DevTools for VS Code (within DevTools)
+# Extensions
+# PWA
+# WebView2
+# Test and automation
+# Development tips [Web platform]
+# Microsoft Edge IDE integration
+# Accessibility in Microsoft Edge
+# DualEngine
+# bottom leaf nodes (video, privacy, initiative)
+
+# =============================================================================
+# top leaf nodes (landing, docset overview)
+- name: Microsoft Edge Developer documentation
   href: developer/index.yml
   items:
-# =============================================================================
     - name: Develop for the web with Microsoft Edge
       href: develop-web-microsoft-edge.md
 
+# top =========================================================================
+# DevTools
     - name: Microsoft Edge DevTools
       items:
-# Card-based landing page -----------------------------------------------------
+# Landing page -----------------------------------------------------
         - name: Microsoft Edge DevTools documentation
           href: devtools-guide-chromium/landing/index.yml
           displayName: DevTools
-
-# =============================================================================
-# DevTools
 # Overview of DevTools --------------------------------------------------------
         - name: Overview of DevTools
           href: devtools-guide-chromium/overview.md
@@ -24,47 +39,46 @@
             - name: What's New in Microsoft Edge DevTools
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: release notes, announcements
-# What's New pages ------------------------------------------------------------
-            # move eleventh oldest into Archive bucket
+# latest 10 What's New
             - name: Microsoft Edge 131
               href: devtools-guide-chromium/whats-new/2024/11/devtools-131.md
-              displayName: What's New in DevTools (Microsoft Edge 131)  # top-of-page title
+              displayName: What's New in DevTools (Microsoft Edge 131)  # page title
 
             - name: Microsoft Edge 130
               href: devtools-guide-chromium/whats-new/2024/10/devtools-130.md
-              displayName: What's New in DevTools (Microsoft Edge 130)  # top-of-page title
+              displayName: What's New in DevTools (Microsoft Edge 130)  # page title
 
             - name: Microsoft Edge 129
               href: devtools-guide-chromium/whats-new/2024/09/devtools-129.md
-              displayName: What's New in DevTools (Microsoft Edge 129)  # top-of-page title
+              displayName: What's New in DevTools (Microsoft Edge 129)  # page title
 
             - name: Microsoft Edge 128
               href: devtools-guide-chromium/whats-new/2024/08/devtools-128.md
-              displayName: What's New in DevTools (Microsoft Edge 128)  # top-of-page title
+              displayName: What's New in DevTools (Microsoft Edge 128)  # page title
 
             - name: Microsoft Edge 127
               href: devtools-guide-chromium/whats-new/2024/07/devtools-127.md
-              displayName: What's New in DevTools (Microsoft Edge 127)  # top-of-page title
+              displayName: What's New in DevTools (Microsoft Edge 127)  # page title
 
             - name: Microsoft Edge 126
               href: devtools-guide-chromium/whats-new/2024/06/devtools-126.md
-              displayName: What's New in DevTools (Microsoft Edge 126)  # top-of-page title
+              displayName: What's New in DevTools (Microsoft Edge 126)  # page title
 
             - name: Microsoft Edge 125
               href: devtools-guide-chromium/whats-new/2024/05/devtools-125.md
-              displayName: What's New in DevTools (Microsoft Edge 125)  # top-of-page title
+              displayName: What's New in DevTools (Microsoft Edge 125)  # page title
 
             - name: Microsoft Edge 124
               href: devtools-guide-chromium/whats-new/2024/04/devtools-124.md
-              displayName: What's New in DevTools (Microsoft Edge 124)  # top-of-page title
+              displayName: What's New in DevTools (Microsoft Edge 124)  # page title
 
             - name: Microsoft Edge 123
               href: devtools-guide-chromium/whats-new/2024/03/devtools-123.md
-              displayName: What's New in DevTools (Microsoft Edge 123)  # top-of-page title
+              displayName: What's New in DevTools (Microsoft Edge 123)  # page title
 
             - name: Microsoft Edge 122
               href: devtools-guide-chromium/whats-new/2024/02/devtools-122.md
-              displayName: What's New in DevTools (Microsoft Edge 122)  # top-of-page title
+              displayName: What's New in DevTools (Microsoft Edge 122)  # page title
 
             # keep 10 items above
             - name: Archive
@@ -74,171 +88,171 @@
 
                 - name: Microsoft Edge 121
                   href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
-                  displayName: What's New in DevTools (Microsoft Edge 121)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 121)  # page title
 
                 - name: Microsoft Edge 120
                   href: devtools-guide-chromium/whats-new/2023/12/devtools-120.md
-                  displayName: What's New in DevTools (Microsoft Edge 120)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 120)  # page title
 
                 - name: Microsoft Edge 119
                   href: devtools-guide-chromium/whats-new/2023/11/devtools-119.md
-                  displayName: What's New in DevTools (Microsoft Edge 119)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 119)  # page title
 
                 - name: Microsoft Edge 118
                   href: devtools-guide-chromium/whats-new/2023/10/devtools-118.md
-                  displayName: What's New in DevTools (Microsoft Edge 118)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 118)  # page title
 
                 - name: Microsoft Edge 117
                   href: devtools-guide-chromium/whats-new/2023/09/devtools-117.md
-                  displayName: What's New in DevTools (Microsoft Edge 117)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 117)  # page title
 
                 - name: Microsoft Edge 116
                   href: devtools-guide-chromium/whats-new/2023/08/devtools-116.md
-                  displayName: What's New in DevTools (Microsoft Edge 116)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 116)  # page title
 
                 - name: Microsoft Edge 115
                   href: devtools-guide-chromium/whats-new/2023/07/devtools-115.md
-                  displayName: What's New in DevTools (Microsoft Edge 115)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 115)  # page title
 
                 - name: Microsoft Edge 114
                   href: devtools-guide-chromium/whats-new/2023/06/devtools-114.md
-                  displayName: What's New in DevTools (Microsoft Edge 114)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 114)  # page title
 
                 - name: Microsoft Edge 113
                   href: devtools-guide-chromium/whats-new/2023/05/devtools-113.md
-                  displayName: What's New in DevTools (Microsoft Edge 113)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 113)  # page title
 
                 - name: Microsoft Edge 112
                   href: devtools-guide-chromium/whats-new/2023/04/devtools-112.md
-                  displayName: What's New in DevTools (Microsoft Edge 112)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 112)  # page title
 
                 - name: Microsoft Edge 111
                   href: devtools-guide-chromium/whats-new/2023/03/devtools-111.md
-                  displayName: What's New in DevTools (Microsoft Edge 111)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 111)  # page title
 
                 - name: Microsoft Edge 110
                   href: devtools-guide-chromium/whats-new/2023/02/devtools-110.md
-                  displayName: What's New in DevTools (Microsoft Edge 110)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 110)  # page title
 
                 - name: Microsoft Edge 109
                   href: devtools-guide-chromium/whats-new/2023/01/devtools-109.md
-                  displayName: What's New in DevTools (Microsoft Edge 109)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 109)  # page title
 
                 - name: Microsoft Edge 108
                   href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
-                  displayName: What's New in DevTools (Microsoft Edge 108)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 108)  # page title
 
                 - name: Microsoft Edge 107
                   href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
-                  displayName: What's New in DevTools (Microsoft Edge 107)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 107)  # page title
 
                 - name: Microsoft Edge 106
                   href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
-                  displayName: What's New in DevTools (Microsoft Edge 106)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 106)  # page title
 
                 - name: Microsoft Edge 105
                   href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
-                  displayName: What's New in DevTools (Microsoft Edge 105)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 105)  # page title
 
                 - name: Microsoft Edge 104
                   href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
-                  displayName: What's New in DevTools (Microsoft Edge 104)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 104)  # page title
 
                 - name: Microsoft Edge 103
                   href: devtools-guide-chromium/whats-new/2022/06/devtools-103.md
-                  displayName: What's New in DevTools (Microsoft Edge 103)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 103)  # page title
 
                 - name: Microsoft Edge 102
                   href: devtools-guide-chromium/whats-new/2022/05/devtools-102.md
-                  displayName: What's New in DevTools (Microsoft Edge 102)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 102)  # page title
 
                 - name: Microsoft Edge 101
                   href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
-                  displayName: What's New in DevTools (Microsoft Edge 101)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 101)  # page title
 
                 - name: Microsoft Edge 100
                   href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
-                  displayName: What's New in DevTools (Microsoft Edge 100)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 100)  # page title
 
                 - name: Microsoft Edge 99
                   href: devtools-guide-chromium/whats-new/2022/03/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 99)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 99)  # page title
 
                 - name: Microsoft Edge 98
                   href: devtools-guide-chromium/whats-new/2022/02/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 98)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 98)  # page title
 
                 - name: Microsoft Edge 97
                   href: devtools-guide-chromium/whats-new/2022/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 97)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 97)  # page title
 
                 - name: Microsoft Edge 96
                   href: devtools-guide-chromium/whats-new/2021/11/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 96)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 96)  # page title
 
                 - name: Microsoft Edge 95
                   href: devtools-guide-chromium/whats-new/2021/10/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 95)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 95)  # page title
 
                 - name: Microsoft Edge 94
                   href: devtools-guide-chromium/whats-new/2021/09/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 94)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 94)  # page title
 
                 - name: Microsoft Edge 93
                   href: devtools-guide-chromium/whats-new/2021/07/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 93)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 93)  # page title
 
                 - name: Microsoft Edge 92
                   href: devtools-guide-chromium/whats-new/2021/05/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 92)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 92)  # page title
 
                 - name: Microsoft Edge 91
                   href: devtools-guide-chromium/whats-new/2021/04/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 91)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 91)  # page title
 
                 - name: Microsoft Edge 90
                   href: devtools-guide-chromium/whats-new/2021/02/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 90)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 90)  # page title
 
                 - name: Microsoft Edge 89
                   href: devtools-guide-chromium/whats-new/2021/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 89)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 89)  # page title
 
                 - name: Microsoft Edge 88
                   href: devtools-guide-chromium/whats-new/2020/11/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 88)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 88)  # page title
 
                 - name: Microsoft Edge 87
                   href: devtools-guide-chromium/whats-new/2020/10/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 87)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 87)  # page title
 
                 - name: Microsoft Edge 86
                   href: devtools-guide-chromium/whats-new/2020/08/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 86)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 86)  # page title
 
                 - name: Microsoft Edge 85
                   href: devtools-guide-chromium/whats-new/2020/06/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 85)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 85)  # page title
 
                 - name: Microsoft Edge 84
                   href: devtools-guide-chromium/whats-new/2020/05/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 84)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 84)  # page title
 
                 - name: Microsoft Edge 83
                   href: devtools-guide-chromium/whats-new/2020/03/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 83)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 83)  # page title
 
 #               - name: Microsoft Edge 82
 #                 href: devtools-guide-chromium/whats-new/2020/02/devtools.md  # no such file
-#                 displayName: What's New in DevTools (Microsoft Edge 82)  # top-of-page title
+#                 displayName: What's New in DevTools (Microsoft Edge 82)  # page title
 
                 - name: Microsoft Edge 81
                   href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 81)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 81)  # page title
 
                 - name: Microsoft Edge 80
                   href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 80)  # top-of-page title
+                  displayName: What's New in DevTools (Microsoft Edge 80)  # page title
 # Experimental features ------------------------------------------------------------------
         - name: Experimental features
           items:
@@ -411,7 +425,7 @@
 # 3D View tool ----------------------------------------------------------------
             - name: 3D View tool
               items:
-                - name: Navigate webpage layers, z-index, and DOM using the 3D View tool  # added article
+                - name: Navigate webpage layers, z-index, and DOM using the 3D View tool
                   href: devtools-guide-chromium/3d-view/index.md
                   displayName: 3D View tool, composited layers
 # Animations tool -------------------------------------------------------------
@@ -455,7 +469,7 @@
                   href: devtools-guide-chromium/storage/cache.md
                   displayName: Application tool
 
-                - name: Debug Progressive Web Apps (PWAs)
+                - name: Debug a Progressive Web App (PWA)
                   href: devtools-guide-chromium/progressive-web-apps/index.md
                   displayName: Application tool
 
@@ -473,7 +487,7 @@
 # Changes tool ----------------------------------------------------------------
             - name: Changes tool
               items:
-                - name: Track changes to files using the Changes tool  # added article
+                - name: Track changes to files using the Changes tool
                   href: devtools-guide-chromium/changes/changes-tool.md
                   displayName: Changes tool
 # Coverage tool ---------------------------------------------------------------
@@ -487,13 +501,6 @@
               items:
                 - name: Crash analyzer tool
                   href: devtools-guide-chromium/crash-analyzer/index.md
-# CSP Violations --------------------------------------------------------------
-            # - name: CSP Violations tool
-            #   https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
-            #   items:
-            #     - name: Display Content Security Policy (CSP) violations
-            #       href: devtools-guide-chromium/csp-violations/csp-violations-tool.md
-            #       displayName: CSP Violations tool
 # CSS Overview tool -----------------------------------------------------------
             - name: CSS Overview tool
               items:
@@ -903,12 +910,12 @@
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 
 # =============================================================================
+# DevTools for VS Code (within DevTools)
         - name: DevTools for Visual Studio Code
           items:
 
-            - name: DevTools extension for Visual Studio Code
+            - name: Microsoft Edge DevTools extension for Visual Studio Code
               href: visual-studio-code/microsoft-edge-devtools-extension.md
-              displayName: Microsoft Edge DevTools extension for Visual Studio Code  # full title
 
             - name: Get started
               items:
@@ -976,9 +983,10 @@
 
             - name: Getting in touch with the Microsoft Edge DevTools Extension team
               href: visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
+# /DevTools for VS Code
 # /DevTools
 
-# =============================================================================
+# top =========================================================================
 # Extensions
     - name: Microsoft Edge extensions
       items:
@@ -1153,97 +1161,99 @@
           displayName: feedback, log issues, enter issues, report issues, reporting issues
 # /Extensions
 
-# =============================================================================
+# top =========================================================================
 # PWA
     - name: Progressive Web Apps
       items:
-        - name: Overview of Progressive Web Apps (PWAs)
-          href: progressive-web-apps-chromium/index.md
+        - name: Progressive Web Apps (PWAs) documentation
+          href: ./progressive-web-apps-chromium/landing/index.yml
+          displayName: landing
 
-        - name: Get started with PWAs
-          href: progressive-web-apps-chromium/how-to/index.md
-          displayName: Get started with Progressive Web Apps  # top-of-page title
+        - name: Overview and getting started
+          items:
+            - name: Overview of Progressive Web Apps (PWAs)
+              href: ./progressive-web-apps-chromium/index.md
 
-        - name: Best practices for PWAs
-          href: progressive-web-apps-chromium/how-to/best-practices.md
+            - name: What's New in PWAs
+              href: ./progressive-web-apps-chromium/whats-new/pwa.md
+              displayName: release notes, announcements
 
-        - name: How to
+            - name: Get started with PWAs
+              href: ./progressive-web-apps-chromium/how-to/index.md
+
+            - name: Use PWAs in Microsoft Edge
+              href: ./progressive-web-apps-chromium/ux.md
+
+        - name: Integrate a PWA into Windows
+          items:
+            - name: Display content in the title bar area using Window Controls Overlay  # todo: add "Share dialog" to title
+              href: ./progressive-web-apps-chromium/how-to/window-controls-overlay.md
+
+            - name: Share content with other apps  # todo: add "jump lists" to title
+              href: ./progressive-web-apps-chromium/how-to/share.md
+
+            - name: Define app shortcuts (long-press or right-click menus)
+              href: ./progressive-web-apps-chromium/how-to/shortcuts.md
+
+            - name: Display a PWA widget in the Windows Widgets Board
+              href: ./progressive-web-apps-chromium/how-to/widgets.md
+
+            - name: Build a PWA for the sidebar in Microsoft Edge
+              href: ./progressive-web-apps-chromium/how-to/sidebar.md
+
+        - name: Distribute a PWA with the Microsoft Store
           items:
             - name: Publish a PWA to the Microsoft Store
-              href: progressive-web-apps-chromium/how-to/microsoft-store.md
-              displayName: Publish a Progressive Web App to the Microsoft Store  # top-of-page title
+              href: ./progressive-web-apps-chromium/how-to/microsoft-store.md
 
-            - name: Experimental features and origin trials for PWAs
-              href: progressive-web-apps-chromium/how-to/origin-trials.md
+            - name: Provide in-app purchases with the Digital Goods API
+              href: ./progressive-web-apps-chromium/how-to/digital-goods-api.md
 
-            - name: Use Progressive Web Apps in Microsoft Edge
-              href: progressive-web-apps-chromium/ux.md
-
-            - name: Debug Progressive Web Apps
-              href: progressive-web-apps-chromium/how-to/debug.md
-
-            - name: Use a web app manifest to integrate a PWA into the OS
-              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
-
-            - name: Use a service worker to manage network requests
-              href: progressive-web-apps-chromium/how-to/service-workers.md
-
-            - name: Store data on the device
-              href: progressive-web-apps-chromium/how-to/offline.md
-
-            - name: Define icons and a theme color
-              href: progressive-web-apps-chromium/how-to/icon-theme-color.md
+        - name: Update a PWA, show badges, notifications, push messages
+          items:
+            - name: Synchronize and update a PWA in the background
+              href: ./progressive-web-apps-chromium/how-to/background-syncs.md
 
             - name: Re-engage users with badges and notifications
-              href: progressive-web-apps-chromium/how-to/notifications-badges.md
-              displayName: Re-engage users with badges, notifications, and push messages  # old top-of-page title
+              href: ./progressive-web-apps-chromium/how-to/notifications-badges.md
 
             - name: Re-engage users with push messages
-              href: progressive-web-apps-chromium/how-to/push.md
-              displayName: Re-engage users with badges, notifications, and push messages  # old top-of-page title
+              href: ./progressive-web-apps-chromium/how-to/push.md
 
-            - name: Synchronize and update a PWA in the background
-              href: progressive-web-apps-chromium/how-to/background-syncs.md
+        - name: Handle files, links, and protocols
+          items:
+            - name: Handle files in a PWA
+              href: ./progressive-web-apps-chromium/how-to/handle-files.md
 
-            - name: Handle files in Progressive Web Apps
-              href: progressive-web-apps-chromium/how-to/handle-files.md
-
-            - name: Handle links to your Progressive Web App
-              href: progressive-web-apps-chromium/how-to/handle-urls.md
+            - name: Handle links to a PWA
+              href: ./progressive-web-apps-chromium/how-to/handle-urls.md
               displayName: handle urls
 
-            - name: Handle protocols in Progressive Web Apps
-              href: progressive-web-apps-chromium/how-to/handle-protocols.md
+            - name: Handle protocols in a PWA
+              href: ./progressive-web-apps-chromium/how-to/handle-protocols.md
 
-            - name: Display content in the title bar area using Window Controls Overlay
-              href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
+        - name: Define icons and a theme color
+          href: ./progressive-web-apps-chromium/how-to/icon-theme-color.md
 
-            - name: Share content with other apps
-              href: progressive-web-apps-chromium/how-to/share.md
+        - name: Store data on the device
+          href: ./progressive-web-apps-chromium/how-to/offline.md
 
-            - name: Define app shortcuts
-              href: progressive-web-apps-chromium/how-to/shortcuts.md
+        - name: Best practices for PWAs
+          href: ./progressive-web-apps-chromium/how-to/best-practices.md
 
-            - name: Build PWA-driven widgets
-              href: progressive-web-apps-chromium/how-to/widgets.md
-
-            - name: Build PWAs for the sidebar in Microsoft Edge
-              href: progressive-web-apps-chromium/how-to/sidebar.md
-
-        - name: What's New in Progressive Web Apps
-          href: progressive-web-apps-chromium/whats-new/pwa.md
-          displayName: release notes, announcements
+        - name: Debug a PWA
+          href: ./progressive-web-apps-chromium/how-to/debug.md
 
         - name: Progressive Web App demos
-          href: progressive-web-apps-chromium/demo-pwas.md
+          href: ./progressive-web-apps-chromium/demo-pwas.md
 # /PWA
 
-# =============================================================================
+# top =========================================================================
 # WebView2
     - name: WebView2
       items:
-        - name: Microsoft Edge extensions documentation
-          href: ./webview2/landing/index.yml  # landing page
+        - name: WebView2 documentation
+          href: ./webview2/landing/index.yml
           displayName: landing
 
 # -----------------------------------------------------------------------------
@@ -1646,9 +1656,9 @@
         - name: Contact the WebView2 team
           href: ./webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
-# / WebView2
+# /WebView2
 
-# =============================================================================
+# top =========================================================================
 # Test and automation
     - name: Test and automation
       items:
@@ -1677,6 +1687,7 @@
 
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
+
             - name: Contact the Microsoft Edge WebDriver team
               href: webdriver-chromium/contact.md
 
@@ -1684,8 +1695,8 @@
           href: test-and-automation/webhint.md
 # /Test and automation
 
-# =============================================================================
-# Development tips (Web platform)
+# top =========================================================================
+# Development tips [Web platform]
     - name: Development tips for Microsoft Edge
       items:
         - name: Development tips for Microsoft Edge
@@ -1723,9 +1734,9 @@
 
         - name: Sign up for the Ad Selection API
           href: ./web-platform/ad-selection-api.md
-# /Development tips (Web platform)
+# /Development tips [Web platform]
 
-# =============================================================================
+# top =========================================================================
 # Microsoft Edge IDE integration
     - name: Microsoft Edge IDE integration
       items:
@@ -1737,7 +1748,6 @@
 
         - name: Opening source files in Visual Studio Code
           href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
-          displayName: Open source files in Visual Studio Code # variant title string
 
         - name: Debug Microsoft Edge in Visual Studio Code
           href: visual-studio-code/debugger-for-edge.md
@@ -1746,7 +1756,7 @@
           href: visual-studio/index.md
 # /Microsoft Edge IDE integration
 
-# =============================================================================
+# top =========================================================================
 # Accessibility in Microsoft Edge
     - name: Accessibility in Microsoft Edge
       items:
@@ -1766,7 +1776,7 @@
           href: accessibility/test.md
 # /Accessibility in Microsoft Edge
 
-#==============================================================================
+# top =========================================================================
 # DualEngine
     - name: DualEngine
       items:
@@ -1788,7 +1798,7 @@
           displayName: functions, methods
 # /DualEngine
 
-# =============================================================================
+# top =========================================================================
 # bottom leaf nodes
     - name: Videos about web development with Microsoft Edge
       href: dev-videos/index.md

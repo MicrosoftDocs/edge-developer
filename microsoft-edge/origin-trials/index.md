@@ -200,7 +200,6 @@ For the Ad Selection API origin trial, instead see [Provide feedback about the o
 <!-- all links in the article -->
 
 * [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials) - Developer.microsoft.com.
-* [Experimental features and origin trials for PWAs](../progressive-web-apps-chromium/how-to/origin-trials.md) - origin trials for Progressive Web Apps (PWAs).
 
 Ad Selection API:
 * [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md)

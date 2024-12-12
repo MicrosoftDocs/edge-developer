@@ -42,7 +42,7 @@ Sidebar apps allow you to adapt your existing Progressive Web App (PWA) to secur
 
 The sidebar app infrastructure helps users discover and install sidebar apps as they browse the web, providing great discoverability for your app just by making a simple change to your web application manifest file. Sidebar apps are a great option if you want to reuse your existing web app for the sidebar in Microsoft Edge and make full use of the web capabilities that are available to PWAs.
 
-To learn more about PWAs and how to create them, see [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md). And to learn more about adapting your existing PWA to the sidebar in Microsoft Edge, see [Build PWAs for the sidebar in Microsoft Edge](../progressive-web-apps-chromium/how-to/sidebar.md).
+To learn more about PWAs and how to create them, see [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md). And to learn more about adapting your existing PWA to the sidebar in Microsoft Edge, see [Build a PWA for the sidebar in Microsoft Edge](../progressive-web-apps-chromium/how-to/sidebar.md).
 
 
 <!-- ====================================================================== -->
