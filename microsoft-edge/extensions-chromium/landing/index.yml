@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-# landing page for Extensions portion of docset
+# Extensions landing page
 title: Microsoft Edge extensions documentation
 summary: Develop an extension (add-on) for Microsoft Edge.
 
@@ -36,6 +36,8 @@ metadata:
 landingContent:
 
 # =============================================================================
+# Row 1
+# -----------------------------------------------------------------------------
 # Card r1c1
   - title: Get started
     linkLists:
@@ -67,7 +69,7 @@ landingContent:
           - text: Contact the Microsoft Edge extensions team
             url: ../publish/contact-extensions-team.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r1c2
   - title: Manifests and JavaScript APIs
     linkLists:
@@ -93,7 +95,7 @@ landingContent:
           - text: Using Content Security Policy (CSP) to control which resources can be run
             url: ../developer-guide/csp.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r1c3
   - title: Develop an extension
     linkLists:
@@ -125,6 +127,8 @@ landingContent:
             url: /legal/microsoft-edge/extensions/developer-policies
 
 # =============================================================================
+# Row 2
+# -----------------------------------------------------------------------------
 # Card r2c1
   - title: Register as a developer
     linkLists:
@@ -142,7 +146,7 @@ landingContent:
           - text: Register and sign in to Partner Center using a GitHub account
             url: ../publish/github.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r2c2
   - title: Publish an extension
     linkLists:
@@ -168,7 +172,7 @@ landingContent:
           - text: Curation and review process for the Edge Add-ons store
             url: ../publish/add-ons-store-curation.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r2c3
   - title: Update an extension
     linkLists:
@@ -189,6 +193,8 @@ landingContent:
             url: ../publish/api/addons-api-reference.md
 
 # =============================================================================
+# Row 3
+# -----------------------------------------------------------------------------
 # Card r3c1
   - title: Analytics and reviews
     linkLists:
@@ -200,7 +206,7 @@ landingContent:
           - text: Reply to user reviews of an extension
             url: ../publish/reply-user-reviews.md
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r3c2
   - title: Best practices and samples
     linkLists:
