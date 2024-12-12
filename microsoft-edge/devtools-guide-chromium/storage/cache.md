@@ -53,7 +53,7 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
    ![Viewing the content of a resource](./cache-images/domain-js-preview.png)
 
-To learn more about cache data storage quota, see the [Quota usage](../progressive-web-apps/index.md#quota-usage) section of the Debug Progressive Web Apps article.
+To learn more about cache data storage quota, see [Quota usage](../progressive-web-apps/index.md#quota-usage) in _Debug a Progressive Web App (PWA)_.
 
 
 <!-- ====================================================================== -->
