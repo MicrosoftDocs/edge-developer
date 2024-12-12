@@ -22,7 +22,7 @@ This tutorial starts by opening an existing Win32 app project that has WebView2 
 
 <!-- A completed version of this tutorial project is available in the WebView2Samples repo: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted#readme). -->
 
-This tutorial does not have you create a new project; you don't use a project template in Visual Studio to create a new project.  Instead, you start with the completed project that's in the repo.
+This tutorial starts with the completed project that's in the repo, which already has WebView2 code added.  (This tutorial doesn't have you create a new project; you don't use a project template in Visual Studio to create a new project, and then add WebView2 code.)
 
 
 <!-- ------------------------------ -->
