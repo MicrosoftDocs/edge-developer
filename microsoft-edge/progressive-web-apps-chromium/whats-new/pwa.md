@@ -1,5 +1,5 @@
 ---
-title: What's New in Progressive Web Apps
+title: What's New in PWAs
 description: New features and origin trials for Progressive Web Apps (PWAs).
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,9 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/24/2023
 ---
-# What's New in Progressive Web Apps
+# What's New in PWAs
 
-This page lists the updates to Progressive Web Apps (PWAs) and Web Apps from the Microsoft Edge Web Apps team.  To try new features, read these announcements.  To stay up to date with the latest and greatest features, download the [Microsoft Edge preview channels](https://www.microsoft.com/edge/download/insider) (Beta, Dev, and Canary).
+The following are the updates to Progressive Web Apps (PWAs) and Web Apps, from the Microsoft Edge Web Apps team.  To try new features, read these announcements.  To stay up to date with the latest and greatest features, download the [Microsoft Edge preview channels](https://www.microsoft.com/edge/download/insider) (Beta, Dev, and Canary).
 
 Sections of this document correspond to historical releases of Microsoft Edge, and are not updated over time.  For example, references below to "new features" or "origin trials" might become outdated as new versions of Microsoft Edge are released.
 
@@ -28,7 +28,7 @@ Starting with Microsoft Edge 114, you can detect when your PWA runs in the sideb
 
 To learn more, check out these resources:
 
-* [Detect usage in the sidebar](../how-to/sidebar.md#detect-usage-in-the-sidebar), in _Build PWAs for the sidebar in Microsoft Edge_.
+* [Detect usage in the sidebar](../how-to/sidebar.md#detect-usage-in-the-sidebar), in _Build a PWA for the sidebar in Microsoft Edge_.
 * [Detecting Microsoft Edge from your website](../../web-platform/user-agent-guidance.md).
 
 
@@ -43,7 +43,7 @@ To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `ed
 
 ![Microsoft Edge with one tab opened in a TODO list app, and PWAmp in the sidebar](./pwa-images/using-pwamp-in-sidebar.png)
 
-To learn more, see [Build PWAs for the sidebar in Microsoft Edge](../how-to/sidebar.md).
+To learn more, see [Build a PWA for the sidebar in Microsoft Edge](../how-to/sidebar.md).
 
 
 <!-- ====================================================================== -->
@@ -57,7 +57,7 @@ The following screenshot shows the Windows Widgets Board on the left and the PWA
 
 ![The PWAmp mini player widget, in the Windows Widgets board, next to the PWAmp app](./pwa-images/pwamp-widget.png)
 
-To learn more, see [Build PWA-driven widgets](../how-to/widgets.md).
+To learn more, see [Display a PWA widget in the Windows Widgets Board](../how-to/widgets.md).
 
 
 <!-- ====================================================================== -->
@@ -183,7 +183,7 @@ The origin trial has been concluded.  The URL Protocol Handlers capability is no
 
 See also:
 *  [Protocol handlers origin trial](#protocol-handlers-origin-trial)
-*  [Handle protocols in Progressive Web Apps](../how-to/handle-protocols.md)
+*  [Handle protocols in a PWA](../how-to/handle-protocols.md)
 *  [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler) in Chrome Dev > Web Platform > Best Practices.
 
 
@@ -267,7 +267,7 @@ Microsoft Edge now includes a referrer header with the request for the first nav
 
 This feature was first introduced in Microsoft Edge version 91, and we shipped a bug fix in Microsoft Edge version 93.
 
-Learn more in [Publish a Progressive Web App to the Microsoft Store](../how-to/microsoft-store.md#measure-usage-of-your-pwa-installed-from-the-microsoft-store).
+Learn more in [Publish a PWA to the Microsoft Store](../how-to/microsoft-store.md#measure-usage-of-your-pwa-installed-from-the-microsoft-store).
 
 
 <!-- ------------------------------ -->
@@ -290,7 +290,7 @@ Developers can now use the experimental feature Web App URL Handlers, in an orig
 _2023 update: This feature is no longer an origin trial, and has been removed, so the following no longer applies, and the PWA URL Handlers feature was removed from the Chromium browser engine:_ Register your domain for the **Web App URL Handlers** trial at [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
 See also:
-* [Handle links to your Progressive Web App](../how-to/handle-urls.md)
+* [Handle links to a PWA](../how-to/handle-urls.md)
 * [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)
 
 
@@ -311,7 +311,7 @@ Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22
 <!-- ------------------------------ -->
 #### Protocol handlers origin trial
 
-You can now register your PWA to handle specific protocols with the host operating system.  Learn more about using protocol handlers with your PWA at [Handle protocols in Progressive Web Apps](../how-to/handle-protocols.md).
+You can now register your PWA to handle specific protocols with the host operating system.  Learn more about using protocol handlers with your PWA at [Handle protocols in a PWA](../how-to/handle-protocols.md).
 
 _2023 update: This feature is no longer an origin trial, and is available to all users, so the following no longer applies:_ The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
@@ -361,5 +361,4 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 <!-- ====================================================================== -->
 ## See also
 
-* [Experimental features and origin trials for PWAs](../how-to/origin-trials.md)
 * [Use origin trials in Microsoft Edge](../../origin-trials/index.md)

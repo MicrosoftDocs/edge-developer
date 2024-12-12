@@ -265,4 +265,4 @@ Chrome Extension docs:
 * [chrome.storage](https://developer.chrome.com/docs/extensions/reference/api/storage)
 
 MDN:
-* [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)
+* [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)<!-- https://developer.mozilla.org/docs/Web/API/Service_Worker_API -->
