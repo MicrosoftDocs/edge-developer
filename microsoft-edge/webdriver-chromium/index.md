@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 09/24/2024
+ms.date: 12/12/2024
 ---
 # Use WebDriver to automate Microsoft Edge
 
@@ -281,7 +281,7 @@ You can pass an `EdgeOptions` object to the `EdgeDriver` constructor to configur
 
 ###### Choose Specific Browser Binaries
 
-You can start a WebDriver session with specific Microsoft Edge binaries.  For example, you can run tests using the [Microsoft Edge preview channels](https://www.microsoft.com/edge/download/insider), such as Microsoft Edge Beta, Dev, or Canary.
+You can start a WebDriver session with specific Microsoft Edge binaries.  For example, you can run tests using the [Microsoft Edge preview channels](https://www.microsoft.com/edge/download/insider), such as Microsoft Edge Beta, Dev, or Canary, as follows:
 
 ##### [C#](#tab/c-sharp)
 
@@ -328,13 +328,13 @@ let driver = edge.Driver.createSession(options);
 
 ###### Pass extra command-line arguments
 
-You can use `EdgeOptions` to configure command-line arguments that will be passed to the Microsoft Edge browser process when a session is created.  For example, you can configure the browser to run in headless mode.
+You can use `EdgeOptions` to configure command-line arguments that will be passed to the Microsoft Edge browser process when a session is created.  For example, you can configure the browser to run in headless mode, as follows:
 
 ##### [C#](#tab/c-sharp)
 
 ```csharp
 var options = new EdgeOptions();
-options.AddArgument("headless");
+options.AddArgument("--headless=new");
 
 var driver = new EdgeDriver(options);
 ```
@@ -346,7 +346,7 @@ from selenium import webdriver
 from selenium.webdriver.edge.options import Options
 
 options = Options()
-options.add_argument("headless")
+options.add_argument("--headless=new")
 
 driver = webdriver.Edge(options = options)
 ```
@@ -355,7 +355,7 @@ driver = webdriver.Edge(options = options)
 
 ```java
 EdgeOptions options = new EdgeOptions();
-options.addArguments("headless");
+options.addArguments("--headless=new");
 
 EdgeDriver driver = new EdgeDriver(options);
 ```
@@ -366,7 +366,7 @@ EdgeDriver driver = new EdgeDriver(options);
 const edge = require('selenium-webdriver/edge');
 
 let options = new edge.Options();
-options.addArguments("headless");
+options.addArguments("--headless=new");
 
 let driver = edge.Driver.createSession(options);
 ```
