@@ -154,7 +154,7 @@ The extension sends a message from the extension icon's pop-up, and dynamically 
 
 
 <!-- ====================================================================== -->
-## Step 2: Update the webpage to insert the image at the top
+## Update the webpage to insert the image at the top
 
 After adding the  **Display** button, the next task will be to make the button display the `images/stars.jpeg` image file at the top of the webpage that's in the active tab.
 
@@ -162,11 +162,9 @@ Each tab page (and extension) runs in its own thread.  In a step below, you'll c
 
 
 <!-- ====================================================================== -->
-## Step 3: Create the pop-up JavaScript to send a message
+## Create the pop-up JavaScript to send a message
 
-This step has already been done in [popup.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/popup/popup.js) in the MicrosoftEdge-Extensions repo.  If you want to manually create the Part 2 extension, continue with the following steps.
-
-Create the `popup/popup.js` file, and then add the following code in that file.
+The `popup/popup.js` file includes the following code:
 
 This code sends a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up **Display** button:
 
@@ -222,9 +220,7 @@ if (sendMessageId) {
 
 
 <!-- ====================================================================== -->
-## Step 4: Make your `stars.jpeg` available from any browser tab
-
-This step has already been done in [manifest.json](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/manifest.json) in the MicrosoftEdge-Extensions repo.  If you want to manually create the Part 2 extension, continue with the following steps.
+## Make `stars.jpeg` available from any browser tab
 
 To make `images/stars.jpeg` available from any browser tab, you must use the `chrome.runtime.getURL` API.
 
@@ -249,11 +245,9 @@ You've now written the code in your `popup.js` file to send a message to the con
 
 
 <!-- ====================================================================== -->
-## Step 5: Update your `manifest.json` for new content and web access
+## Update your `manifest.json` for new content and web access
 
-Next, you'll create and inject the content page that's embedded on the current active tab page.  This step has already been done in [manifest.json](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/manifest.json) in the MicrosoftEdge-Extensions repo.
-
-The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
+The sample creates and inject the content page that's embedded on the current active tab page.  `manifest.json` includes the `content-scripts` and `web_accessible_resources`, as follows:
 
 `/manifest.json` (complete):
 
@@ -289,7 +283,7 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
 }
 ```
 
-The `matches` attribute is set to `<all_urls>`, which means that all files in `content_scripts` are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript and CSS.  You also added `lib\jquery.min.js`.  You can copy that file from the [/lib/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/lib) folder of the MicrosoftEdge-Extensions repo.
+The `matches` attribute is set to `<all_urls>`, which means that all files in `content_scripts` are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript and CSS.  The sample also added `lib\jquery.min.js`.
 
 
 <!-- ------------------------------ -->
@@ -297,11 +291,11 @@ The `matches` attribute is set to `<all_urls>`, which means that all files in `c
 
 `jquery.min.js` is a predefined, minified file.
 
-[jquery.min.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/lib/jquery.min.js) in the MicrosoftEdge-Extensions repo.
-
 In the content scripts that you're injecting, it's common to use jQuery (`$`).  This sample includes a minified version of jQuery, residing in the extension package<!-- todo: check 'package' --> as `lib\jquery.min.js`.
 
 A content script runs in an individual sandbox, which means that the jQuery that's injected into the `popup.js` page isn't shared with the current webpage.
+
+[jquery.min.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/lib/jquery.min.js) in the MicrosoftEdge-Extensions repo.
 
 
 <!-- ------------------------------ -->
@@ -312,9 +306,7 @@ Even if the browser tab has JavaScript running on it on the loaded web page, any
 
 
 <!-- ====================================================================== -->
-## Step 6: Add the content script message listener
-
-[content.js](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2/content-scripts/content.js) in the MicrosoftEdge-Extensions repo.
+## Add the content script message listener
 
 Here's the `content-scripts\content.js` file that gets injected into every browser tab page based on the `content-scripts` section in `manifest.json`:
 
@@ -352,11 +344,6 @@ When an event is processed by the listener, the function that is the first param
 *   The second script line dynamically inserts into the DOM header a **\<style\>** section that you must assign as a `slide-image` class to your `img` element.
 
 *   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page (along with it is event listener).
-
-
-<!-- ====================================================================== -->
-## Step 7: Install and test the extension
-
 
 
 <!-- ====================================================================== -->
