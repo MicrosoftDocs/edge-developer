@@ -1012,10 +1012,10 @@
             - name: Extension concepts and architecture
               href: extensions-chromium/getting-started/index.md
 
-            - name: "Tutorial part 1: Display an image in a pop-up"
+            - name: "Sample: Display an image in a pop-up"
               href: extensions-chromium/getting-started/part1-simple-extension.md
 
-            - name: "Tutorial part 2: Use JavaScript to insert an image in the webpage"
+            - name: "Sample: Insert an image in the webpage"
               href: extensions-chromium/getting-started/part2-content-scripts.md
 
             - name: Sideload an extension to install and test it locally
