@@ -46,10 +46,11 @@ The Digital Goods API is currently available in pre-release versions of Microsof
 
 To enable the Digital Goods API on your developer machine only, for testing:
 
-TODO: How do you enable the flags `msWebAppDigitalGoods`, `AppStoreBilling` and `DigitalGoodsApi`?  They are excluded from `edge://flags`.
+The `msWebAppDigitalGoods`, `AppStoreBilling` and `DigitalGoodsApi` flags are currently enabled as part of a running experiment, and will be enabled by default in the code once this feature reaches Edge Stable release.  You can start using the API now by running Edge Dev or Edge Canary version 115.0.1860.0 or later.
 
-<!-- The Edge Experiments flag in `edge://flags/` will be enabled by default, when this feature ships in Edge Stable. -->
-<!-- todo: which flag? -->
+Alternatively, you can use the API in your own Beta and Stable version of Microsoft Edge by launching Edge with the following command-line argument:
+
+`--enable-features=msWebAppDigitalGoods, AppStoreBilling, DigitalGoodsApi`
 
 
 <!-- ------------------------------ -->
@@ -59,7 +60,9 @@ To test the Digital Goods API in production, register in the origin trial.  See:
 * [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Microsoft Edge Developer_ > _Origin Trials_.
 * [Registering for an origin trial](../../origin-trials/index.md#registering-for-an-origin-trial) in _Use origin trials in Microsoft Edge_.
 
-<!-- This feature ships with a pre-release of Microsoft Edge.  todo: specify the exact version number here when available -->
+To use this API, you must install a prerelease version 115.0.1860.0 of Microsoft Edge (or a later release), such as:
+* Edge Dev 115.0.1860.0
+* Edge Canary 115.0.1860.0
 
 See also:
 * [Experimental features and origin trials for PWAs](./origin-trials.md)
