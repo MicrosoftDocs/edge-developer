@@ -54,6 +54,8 @@ Approach 1: Run Edge Dev or Edge Canary version 115.0.1860.0 or later.  With thi
 
 That version of Edge has the `msWebAppDigitalGoods`, `AppStoreBilling` and `DigitalGoodsApi` flags enabled, as part of a running experiment.  These flags will be enabled by default when the Digital Goods API reaches Edge Stable release.
 
+To download a preview (insider) channel of Microsoft Edge, see [Become a Microsoft Edge Insider](https://aka.ms/microsoftedge).
+
 
 <!-- ------------------------------ -->
 #### Start Beta or Stable Edge with command-line arguments on your dev machine
@@ -71,12 +73,8 @@ Start Edge Stable or Edge Beta (prior to version 115.0.1860.0) at the command li
 Approach 3: Use an origin trial token.  With this approach, you and your users can use Edge Stable, to test the Digital Goods API in production.  You register in the origin trial for the Digital Goods API, and then use your origin trial token at your website.
 
 See: 
-* [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Microsoft Edge Developer_ > _Origin Trials_.
 * [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
-
-To use this API, you must install a prerelease version 115.0.1860.0 of Microsoft Edge (or a later release), such as:
-* Edge Dev 115.0.1860.0
-* Edge Canary 115.0.1860.0
+* [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Microsoft Edge Developer_ > _Origin Trials_.
 
 
 <!-- ====================================================================== -->
