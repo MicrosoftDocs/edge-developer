@@ -164,7 +164,11 @@ The information provided in the following section is displayed to users who revi
 | Language details property name | Description |
 |:--- |:--- |
 | Display name (required) | The `name` of your extension specified in the manifest file of your extension.  To change the store display name after submission, you can update the name in the manifest file, create a new extension package, and then reupload it.  |
-| Description (required) | The `description` field focuses on explaining what your extension does, why users should install it, or other relevant information that users need to know.  It should be less than 10,000 characters.  |
+| Description (required) | The `description` field should explain what your extension does, why users should install it, and any other relevant information users need to know.
+**Length**: Minimum of 250 characters and maximum of 5000 characters.
+**Clarity**: Must clearly describe the full functionality of your extension.
+**Completeness**: Should be thorough and leave no important details out.
+**Appropriateness**: Must not contain any misleading or inappropriate content. |
 | Extension Store logo (required) | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  This button is found following the field after you upload your logo for the language.  |
 | Small promotional tile (optional) | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |
 | Large promotional tile (optional) | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge Add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |
