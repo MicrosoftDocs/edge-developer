@@ -212,7 +212,10 @@ W3C:
 
 The payment response returns a _purchase token_ string, which can be used for direct communication between your server and the service provider beyond the Digital Goods API.  Such communication can allow you to independently verify information about the purchase before granting entitlements.
 
-Some stores might require that you (the developer) acknowledge a purchase after the purchase has succeeded, to confirm that the purchase has been recorded.
+Some stores might require that you (the developer) acknowledge<!-- todo: how? using which apis? --> a purchase after the purchase has succeeded, to confirm that the purchase has been recorded.
+
+See also:
+* [PaymentResponse interface](https://www.w3.org/TR/payment-request/#paymentresponse-interface)<!-- todo: correct link? --> in _Payment Request API: W3C Candidate Recommendation Draft_.<!-- todo: add link to big See Also section -->
 
 
 <!-- ====================================================================== -->
