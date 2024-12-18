@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 12/02/2024
+ms.date: 12/18/2024
 ---
 # Provide in-app purchases with the Digital Goods API
 
@@ -39,10 +39,9 @@ See:
 <!-- ====================================================================== -->
 ## Enable the Digital Goods API
 
-The Digital Goods API is currently available in pre-release versions of Microsoft Edge.  To use the API, do any of the following:
-* [Use a supported preview channel of Microsoft Edge on your dev machine](#use-a-supported-preview-channel-of-microsoft-edge-on-your-dev-machine).
-* [Start Beta or Stable Edge with command-line arguments on your dev machine](#start-beta-or-stable-edge-with-command-line-arguments-on-your-dev-machine).
-* [Register for the origin trial, then use your token at your website](#register-for-the-origin-trial-then-use-your-token-at-your-website).
+The Digital Goods API is currently available for testing in Microsoft Edge.  To test the API, use either of the following ways:
+* To test your code locally: [Use a supported preview channel of Microsoft Edge on your dev machine](#use-a-supported-preview-channel-of-microsoft-edge-on-your-dev-machine).
+* To test your code in your Microsoft Store PWA: [Register for the origin trial, then use your token at your website](#register-for-the-origin-trial-then-use-your-token-at-your-website).
 
 Details are below.
 
@@ -50,27 +49,15 @@ Details are below.
 <!-- ------------------------------ -->
 #### Use a supported preview channel of Microsoft Edge on your dev machine
 
-Approach 1: Run Edge Dev or Edge Canary version 115.0.1860.0 or later.  With this approach, you use the Digital Goods API on your developer machine only, for testing.
-
-That version of Edge has the `msWebAppDigitalGoods`, `AppStoreBilling` and `DigitalGoodsApi` flags enabled, as part of a running experiment.  These flags will be enabled by default when the Digital Goods API reaches Edge Stable release.
+To test the Digital Goods API locally, before deploying your app to production, run Edge Dev or Edge Canary.  These preview versions of Edge have the API enabled, as part of a running experiment.
 
 To download a preview (insider) channel of Microsoft Edge, see [Become a Microsoft Edge Insider](https://aka.ms/microsoftedge).
 
 
 <!-- ------------------------------ -->
-#### Start Beta or Stable Edge with command-line arguments on your dev machine
-
-Approach 2: Start Edge Stable or Edge Beta with command-line arguments.  With this approach, you use the Digital Goods API on your developer machine only, for testing.
-
-Start Edge Stable or Edge Beta (prior to version 115.0.1860.0) at the command line, using the following command-line argument to enable the set of three flags:
-
-`--enable-features=msWebAppDigitalGoods, AppStoreBilling, DigitalGoodsApi`
-
-
-<!-- ------------------------------ -->
 #### Register for the origin trial, then use your token at your website
 
-Approach 3: Use an origin trial token.  With this approach, you and your users can use Edge Stable, to test the Digital Goods API in production.  You register in the origin trial for the Digital Goods API, and then use your origin trial token at your website.
+To test the Digital Goods API in production, with your users, use an origin trial token.  With this approach, when your users download your PWA from the Microsoft Store, they will have the API enabled.
 
 See: 
 * [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
@@ -80,7 +67,7 @@ See:
 <!-- ====================================================================== -->
 ## Checking whether the Digital Goods API is available
 
-To detect whether you've correctly enabled the API on your website by using your origin trial token, check whether the `getDigitalGoodsService` method exists on the `window` object:
+To detect whether you've correctly enabled the API on your website by using your origin trial token, check whether the `getDigitalGoodsService` method exists on the `Window` object:
 
 ```javascript
 if ('getDigitalGoodsService' in window) {
@@ -91,18 +78,14 @@ if ('getDigitalGoodsService' in window) {
 }
 ```
 
-<!-- todo: 
 See also:
-* [getDigitalGoodsService in window object]()
--->
+* [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface, in _Digital Goods API: Draft Community Group Report_.
 
 
 <!-- ====================================================================== -->
 ## Connecting to the Microsoft Store Billing service (`window.getDigitalGoodsService` method)
 
-<!-- todo: what type is returned by window.getDigitalGoodsService("https://store.microsoft.com/billing") ? -->
-
-Use the `getDigitalGoodsService` method of the `window` object to connect to the Microsoft Store Billing service.
+Use the `getDigitalGoodsService` method of the `Window` object to connect to the Microsoft Store Billing service.  A [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) is returned.
 
 The Digital Goods API was designed to be compatible with various browsers and digital stores, similar to how the Payment Request API is browser-agnostic and can be used with different payment providers.  To retrieve an instance of the service for Microsoft Store Billing, pass the string `"https://store.microsoft.com/billing"` as the payment method to the `getDigitalGoodsService` method.
 
@@ -126,18 +109,15 @@ try {
 
 This payment method `getDigitalGoodsService("https://store.microsoft.com/billing")` is available only for a PWA that's installed from the Microsoft Store, on Windows.  No other settings are needed.
 
-<!-- todo: 
 See also:
-* [window.getDigitalGoodsService]()
--->
+* [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface, in _Digital Goods API: Draft Community Group Report_.
+* [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) in _Digital Goods API: Draft Community Group Report_.
 
 
 <!-- ====================================================================== -->
 ## Querying item details (`getDetails` method)
 
-<!-- todo: what type is the getDetails method on? -->
-
-Use the `getDetails` method to query item details.
+Use the `getDetails` method of the `DigitalGoodsService` interface to query item details.
 
 After connecting the Digital Goods service to Microsoft Store, you can use the API to access product and purchase information.  The `getDetails` method lets you get information about the items you’ve set up in the Partner Center.  Display information such as the product title, description, and price in your app UI, so the user knows what's available for purchase.
 
@@ -163,20 +143,28 @@ The item ID is a string that represents the primary key of the items.  In the Mi
 
 The item's `price` is a `PaymentCurrencyAmount` that contains the current price of the item in the user's current region and currency.  The `price` is designed to be formatted for the user's current locale by using `Intl.NumberFormat`, as shown above.
 
-See also:
-* [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken)
-* [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API: Candidate Recommendation Draft_ at W3C.
-* [Value (about PaymentCurrencyAmount object)](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/total#value) in _PaymentRequestEvent: total property_ at MDN > References > Web APIs > PaymentRequestEvent, in Payment Handler API (experimental).<!-- todo: link to PaymentCurrencyAmount page or anchor if/when avail -->
+
+<!-- ------------------------------ -->
+#### See also
+
+Digital Goods API: Draft Community Group Report
+* [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) in _Digital Goods API: Draft Community Group Report_.
+   * [getDetails() method](https://wicg.github.io/digital-goods/#getDetails-method) in _Digital Goods API: Draft Community Group Report_.
+
+Learn.microsoft.com:
+* [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken).
+
+W3C:
+* [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API: W3C Candidate Recommendation Draft_.
+
+MDN:
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) at MDN.
-<!-- todo:
-* [digitalGoodsService.getDetails method]()
--->
 
 
 <!-- ====================================================================== -->
 ## Purchasing an item (`PaymentRequest.show` method)
 
-Use the `show` method of `PaymentRequest` to purchase an item, after you construct a request that contains the item details.
+Use the `show` method of the `PaymentRequest` interface to purchase an item, after you construct a request that contains the item details.
 
 Once your products and details are displayed to the user, you can implement the purchase flow by using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
 
@@ -209,8 +197,12 @@ This will display the Store purchase UI to the user, where the user can view det
 In the `details` property of the payment response, a purchase token is returned.
 
 See also:
+
+MDN:
 * [PaymentRequest](https://developer.mozilla.org/docs/Web/API/PaymentRequest) at MDN > References > Web APIs > PaymentRequest > Payment Request API.
    * [PaymentRequest: show() method](https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequest/show) at MDN > References > Web APIs > PaymentRequest > Payment Request API.
+
+W3C:
 * [PaymentRequest interface](https://www.w3.org/TR/payment-request/#dom-paymentrequest) in _Payment Request API: Candidate Recommendation Draft_ at W3C.
    * [show() method](https://www.w3.org/TR/payment-request/#dom-paymentrequest-show) in _Payment Request API: Candidate Recommendation Draft_ at W3C.
 
@@ -226,9 +218,7 @@ Some stores might require that you (the developer) acknowledge a purchase after 
 <!-- ====================================================================== -->
 ## Consuming a purchase (`consume` method)
 
-<!-- todo: what type is the consume method on? -->
-
-Use the `consume` method to consume a purchase.
+Use the `consume` method of the `DigitalGoodsService` interface to consume a purchase.
 
 A _consumable purchase_ is a purchase that's designed to be purchased multiple times.  A consumable purchase usually needs to be marked as "consumed" before the purchase can be purchased again by the user.  An example of a consumable purchase is an in-game powerup that makes the player stronger for a short period of time.
 
@@ -237,17 +227,15 @@ To mark a purchase as "consumed", use the `consume` method:
 ```javascript
 digitalGoodsService.consume(purchaseToken);
 ```
-<!-- todo:
-* [digitalGoodsService.consume method]()
--->
+
+See also:
+* [consume() method](https://wicg.github.io/digital-goods/#consume-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
 
 
 <!-- ====================================================================== -->
 ## Checking existing purchases (`listPurchases` method)
 
-<!-- todo: what type is the `listPurchases` method on? -->
-
-Use the `listPurchases` method to check existing purchases.  This method returns information about the user's existing purchases.  This method allows a client to get a list of items that are currently owned or purchased by the user.  This may be necessary, to do either of the following:
+Use the `listPurchases` method of the `DigitalGoodsService` interface to check existing purchases.  This method returns information about the user's existing purchases.  This method allows a client to get a list of items that are currently owned or purchased by the user.  This may be necessary, to do either of the following:
 
 * Check for entitlements, such as whether a subscription, promotional code, or permanent upgrade is active.
 
@@ -266,11 +254,14 @@ for (const purchase of purchaseList) {
 
 The `listPurchases` method doesn't return consumed products or expired subscriptions.
 
+See also:
+* [listPurchases() method](https://wicg.github.io/digital-goods/#listPurchases-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
+
 
 <!-- ====================================================================== -->
 ## Getting the purchase history (`listPurchaseHistory` method)
 
-Use the `listPurchaseHistory` method to get the purchase history.  This method returns a list that shows the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed.  This method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.
+Use the `listPurchaseHistory` method of the `DigitalGoodsService` interface to get the purchase history.  This method returns a list that shows the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed.  This method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.
 
 ```javascript
 const purchaseList = await digitalGoodsService.listPurchaseHistory();
@@ -280,6 +271,10 @@ for (const purchase of purchaseList) {
   verifyAndCheckExpiredEntitlement(purchase.itemId, purchase.purchaseToken);
 }
 ```
+
+See also:
+* [listPurchaseHistory() method](https://wicg.github.io/digital-goods/#listPurchaseHistory-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
+* [PurchaseDetails dictionary](https://wicg.github.io/digital-goods/#purchaseDetails-dictionary) in _Digital Goods API: Draft Community Group Report_.
 
 
 <!-- ====================================================================== -->
@@ -298,15 +293,22 @@ Origin trials:
 GitHub:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
 * [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/) at GitHub.
+   * [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface, in _Digital Goods API: Draft Community Group Report_.
+   * [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) in _Digital Goods API: Draft Community Group Report_.
+      * [getDetails() method](https://wicg.github.io/digital-goods/#getDetails-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
+      * [listPurchases() method](https://wicg.github.io/digital-goods/#listPurchases-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
+      * [listPurchaseHistory() method](https://wicg.github.io/digital-goods/#listPurchaseHistory-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
+      * [consume() method](https://wicg.github.io/digital-goods/#consume-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
+   * [PurchaseDetails dictionary](https://wicg.github.io/digital-goods/#purchaseDetails-dictionary) in _Digital Goods API: Draft Community Group Report_.
 
 MDN:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API) at MDN > References > Web APIs.
    * [PaymentRequest](https://developer.mozilla.org/docs/Web/API/PaymentRequest) at MDN > References > Web APIs > PaymentRequest > Payment Request API.
-   * [Value (about PaymentCurrencyAmount object)](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/total#value) in _PaymentRequestEvent: total property_ at MDN > References > Web APIs > PaymentRequestEvent, in Payment Handler API (experimental).<!-- todo: link to PaymentCurrencyAmount page or anchor if/when avail -->
+   * [Value (about PaymentCurrencyAmount object)](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/total#value) in _PaymentRequestEvent: total property_ at MDN > References > Web APIs > PaymentRequestEvent, in Payment Handler API (experimental).
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) at MDN.
 
 W3C:
 * [Payment Request API: Candidate Recommendation Draft](https://www.w3.org/TR/payment-request/) at W3C.
    * [PaymentRequest interface](https://www.w3.org/TR/payment-request/#dom-paymentrequest) in _Payment Request API: Candidate Recommendation Draft_ at W3C.
       * [show() method](https://www.w3.org/TR/payment-request/#dom-paymentrequest-show) in _Payment Request API: Candidate Recommendation Draft_ at W3C.
-   * [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API: Candidate Recommendation Draft_ at W3C.
+   * [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API: W3C Candidate Recommendation Draft_.
