@@ -67,7 +67,7 @@ See:
 <!-- ====================================================================== -->
 ## Checking whether the Digital Goods API is available
 
-To detect whether you've correctly enabled the API on your website by using your origin trial token, check whether the `getDigitalGoodsService` method exists on the `Window` object:
+To detect whether you've correctly enabled the API on your website by using your origin trial token, check whether the `getDigitalGoodsService` method exists on the `window` object:
 
 ```javascript
 if ('getDigitalGoodsService' in window) {
@@ -85,7 +85,7 @@ See also:
 <!-- ====================================================================== -->
 ## Connecting to the Microsoft Store Billing service (`window.getDigitalGoodsService` method)
 
-Use the `getDigitalGoodsService` method of the `Window` object to connect to the Microsoft Store Billing service.  A [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) is returned.
+Use the `getDigitalGoodsService` method of the `window` object to connect to the Microsoft Store Billing service.  A [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) is returned.
 
 The Digital Goods API was designed to be compatible with various browsers and digital stores, similar to how the Payment Request API is browser-agnostic and can be used with different payment providers.  To retrieve an instance of the service for Microsoft Store Billing, pass the string `"https://store.microsoft.com/billing"` as the payment method to the `getDigitalGoodsService` method.
 
