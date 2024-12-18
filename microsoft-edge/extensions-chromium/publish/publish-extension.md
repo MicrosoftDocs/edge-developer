@@ -135,11 +135,9 @@ Define the specific markets in which you plan to offer your extension.  The defa
 <!-- ========================================================================== -->
 ## Step 4: Select Properties for your extension
 
-On the **Properties** webpage, enter the following information to specify properties of your extension.  The properties are displayed to users at the Microsoft Edge Add-ons website.
+On the **Properties** page for the extension, enter the following information to specify properties of your extension.  The properties are displayed to users at the Microsoft Edge Add-ons website.
 
-Your developer/organization name,<!-- todo: what field name? --> **Website URL**, and **Support contact details** that you submitted<!-- todo: before, or in this form? --> during registration are displayed to users on the Microsoft Edge Add-ons website.
-
-| Extension property name | Required? | Description |
+| Property name | Required? | Description |
 |---|---|---|
 | **Category** | Required | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |
 | **Privacy policy requirements** | Required | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension might fail the certification step if you select **Yes** and you don't provide a `Privacy policy URL`. |
@@ -150,39 +148,53 @@ Your developer/organization name,<!-- todo: what field name? --> **Website URL**
 
 Properties that are not indicated as Required are Optional.
 
-Click the **Save & Continue** button<!-- todo: link, or button? --> to continue to the **Store listings** section.
+Your developer/organization name,<!-- todo: what field name? --> **Website URL**, and **Support contact details** that you submitted<!-- todo: before, or in this form? --> during registration are displayed to users on the Microsoft Edge Add-ons website.
+
+After filling in the **Properties** page for the extension, click the **Save & Continue** button<!-- todo: link, or button? --> to continue to the **Store listings** section.
 
 
 <!-- ========================================================================== -->
 ## Step 5: Add Store listing details for your extension
 
-The information provided in the following section is displayed to users who review your listing on the Microsoft Edge Add-ons website.  Even though some fields are optional, you should provide as much information as possible.
+The information provided in the **Store listings** page is displayed to users who review your listing on the Microsoft Edge Add-ons website.  Even though some fields are optional, you should provide as much information as possible.
 
-To list your extension in the store, the following details are required:<!-- todo: for each lang? -->
-* **Display name**.<!-- todo: for each lang? -->
-* **Description** for each language in your extension package. To support multiple languages, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
-* **Extension Store logo** for each language in your extension package.
-* **Short description**.<!-- todo: for each lang? -->
+The **Language details** section contains fields for the following properties.
 
-The minimum required store listing details must be filled in for at least one of the languages (such as U.S. English; `en-US`) that's mentioned in your extension zip package.
-
-* To add or remove languages in your store listing on the Microsoft Edge Add-ons website, use the **Add a language** dropdown list on the **Store listings** webpage.
-
-* Additionally, you can duplicate your assets from one language across other languages by using the **Duplicate functionality** button on the **Language details** webpage.
-
-| Language details property name | Required? | Description |
+| Property name | Required? | Description |
 |---|---|---|
-| **Display name** | Required | The `name` of your extension specified in the manifest file of your extension.  To change the store display name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload it. |
-| **Description** | Required | The `description` field explains what your extension does, why users should install it, and any other relevant information users need to know.  Length: Minimum 250 characters, maximum 5000 characters.  Clarity: Must clearly describe the full functionality of your extension.  Completeness: Should be thorough and should leave no important details out.  Appropriateness: Must not contain any misleading or inappropriate content. |
-| **Extension Store logo** | Required | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  This button is found following the field after you upload your logo for the language. |
-| **Small promotional tile** | - | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language. |
-| **Large promotional tile** | - | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge Add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language. |
-| **Screenshots** | - | You can submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload at least one for the language. |
+| **Display name** | Required for at least one language | The `name` of your extension specified in the manifest file of your extension.  To change the store display name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload it. |
+| **Description** | Required for each language | The `description` field explains what your extension does, why users should install it, and any other relevant information users need to know.  Length: Minimum 250 characters, maximum 5000 characters.  Clarity: Must clearly describe the full functionality of your extension.  Completeness: Should be thorough and should leave no important details out.  Appropriateness: Must not contain any misleading or inappropriate content. |
+| **Extension Store logo** | Required for each language | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button, which is displayed next to this field after you upload your logo for the language. |
+| **Small promotional tile** | - | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload a promotional tile for the language. |
+| **Large promotional tile** | - | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge Add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload a promotional tile for the language. |
+| **Screenshots** | - | You can submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload at least one for the language. |
 | **YouTube video URL** | - | You can include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing webpage of your extension. |
-| **Short description** | Required | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it. |
+| **Short description** | Required for at least one language | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it. |
 | **Search terms** | - | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons website.  The search terms aren't displayed to users. |
 
-Properties that are not indicated as Required are Optional.
+
+<!-- ------------------------------ -->
+#### Required properties
+
+To list your extension in the store, properties that are not indicated as Required in the above table are Optional.
+
+The following Required properties must be provided for _each_ language (such as U.S. English; `en-US`) that's listed in your extension zip package:
+* **Description**.
+* **Extension Store logo**.
+
+The following Required properties must be filled in for _at least one_ of the languages that's listed in your extension zip package:
+**Display name**
+**Short description**
+
+
+<!-- ------------------------------ -->
+#### Supporting multiple languages
+
+To support multiple languages, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
+
+To add or remove languages in your store listing on the Microsoft Edge Add-ons website, use the **Add a language** dropdown list on the **Store listings** webpage.
+
+You can duplicate your assets from one language across other languages by using the **Duplicate functionality** button on the **Language details** webpage.
 
 
 <!-- ------------------------------ -->
@@ -211,6 +223,12 @@ Search terms must meet the following requirements:
 *  You can enter search terms to use up to a maximum of 21 words.  Whether used as single words, phrases, or a combination of both, you're only allowed a maximum of 21 words.
 
 *  Up to a maximum of seven search terms (single word or phrases).  Each search term has a character limit of 30 characters.
+
+
+<!-- todo: what UI actions to fill in this page and proceed?
+
+1. Click the **Foo** button.  The **Submit your extension** webpage opens.
+-->
 
 
 <!-- ========================================================================== -->
