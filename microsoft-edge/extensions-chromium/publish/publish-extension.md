@@ -193,8 +193,8 @@ The following Required properties must be provided for _each_ language (such as 
 * **Extension Store logo**.
 
 The following Required properties must be filled in for _at least one_ of the languages that's listed in your extension zip package:
-**Display name**
-**Short description**
+* **Display name**
+* **Short description**
 
 
 <!-- ------------------------------ -->
