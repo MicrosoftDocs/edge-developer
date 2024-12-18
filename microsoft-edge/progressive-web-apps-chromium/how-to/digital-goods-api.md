@@ -281,14 +281,12 @@ See also:
 ## See also
 <!-- all links in article: -->
 
-Local:
-* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
-
-Other docsets:
-* [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken)
-
 Origin trials:
+* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
 * [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Microsoft Edge Developer_ > _Origin Trials_.
+
+Windows App Development:
+* [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken)
 
 GitHub:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
@@ -304,7 +302,6 @@ GitHub:
 MDN:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API) at MDN > References > Web APIs.
    * [PaymentRequest](https://developer.mozilla.org/docs/Web/API/PaymentRequest) at MDN > References > Web APIs > PaymentRequest > Payment Request API.
-   * [Value (about PaymentCurrencyAmount object)](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/total#value) in _PaymentRequestEvent: total property_ at MDN > References > Web APIs > PaymentRequestEvent, in Payment Handler API (experimental).
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) at MDN.
 
 W3C:
