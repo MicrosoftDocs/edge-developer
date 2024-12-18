@@ -46,15 +46,15 @@ Create a zip file for your extension package.  Your extension package must inclu
 <!-- ---------------------------------- -->
 #### Review manifest field values
 
-The following fields in the manifest are automatically included in your store listing details.  The fields are read-only on the **Store listings** webpage.  The store listings webpage is described later in this article.
+The following fields in the manifest file are automatically included in your store listing details.  The fields are read-only on the **Store listings** webpage (described below).
 
-Before uploading your package to Partner Center, make sure that the field values match your preferred display on the store details webpage, as follows.
+Before uploading your package to Partner Center, inspect the manifest file to make sure that the field values match your preferred display on the store details<!-- todo: what title of webpage? bold --> webpage.
 
 In the manifest file, review these fields:
 
-*  The `Name` field, which populates the **Display name** on the store details webpage.
+*  The `Name` field, which populates the **Display name** on the store details<!-- todo: what title of webpage? bold --> webpage.
 
-*  The `Description` field, which populates the **Short description** on the store details webpage.<!--todo: confirm "description" vs "short description" in manifest vs. store page-->
+*  The `Description` field, which populates the **Short description** on the store details<!-- todo: what title of webpage? bold -->  webpage.<!--todo: confirm "description" vs "short description" in manifest vs. store webpage-->
    
    Fill in the `Description` field, to explicitly provide a catchy description that will be displayed at the top of the listing for your extension.
 
@@ -70,24 +70,26 @@ After doing the above steps, the extension is ready to be submitted via Partner 
 
 To submit your extension to Partner Center:
 
-1. Start a new submission.
-1. Upload the extension package.
-1. Provide Availability details.
-1. Select Properties for your extension.
-1. Add Store listing details for your extension.
-1. Complete your submission.
+* [Step 1: Start a new submission](#step-1-start-a-new-submission)
+* [Step 2: Upload the extension package](#step-2-upload-the-extension-package)
+* [Step 3: Provide Availability details (visibility and markets)](#step-3-provide-availability-details-visibility-and-markets)
+* [Step 4: Enter Properties describing your extension](#step-4-enter-properties-describing-your-extension)
+* [Step 5: Add Store listing details for your extension](#step-5-add-store-listing-details-for-your-extension)
+* [Step 6: Complete the submission by providing testing notes](#step-6-complete-the-submission-by-providing-testing-notes)
 
 Details are below.
 
 
 <!-- ========================================================================== -->
-## Step 1:  Start a new submission
+## Step 1: Start a new submission
 
-Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Create new extension** on the **Overview** webpage.
+1. Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).
+
+1. On the **Overview** webpage, select **Create new extension**.
 
 
 <!-- ========================================================================== -->
-## Step 2:  Upload the extension package
+## Step 2: Upload the extension package
 
 1. Go to the **Packages** webpage to upload the zip file of your extension package.
 
@@ -97,13 +99,17 @@ Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsof
 
    After your package is uploaded, it's validated. If there's a validation error, resolve the issue and try uploading your package again.
 
-1. When validation succeeds, review the extension details, and then select **Continue** to proceed.  
+1. When validation succeeds, review the extension details.
+
+1. Click the **Continue** button.
+
+   The **Availability** webpage opens.
 
 
 <!-- ========================================================================== -->
-## Step 3:  Provide Availability details
+## Step 3: Provide Availability details (visibility and markets)
 
-On the **Availability** webpage, enter the following information about the availability of your extension.
+On the **Availability** webpage for the extension, enter the following information.
 
 
 <!-- ------------------------------ -->
@@ -111,9 +117,9 @@ On the **Availability** webpage, enter the following information about the avail
 
 Select one of the following visibility options to define whether your extension is discoverable in the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
-*  `Public` (default) - Allows everyone to discover your extension through search, browsing in the Microsoft Edge Add-ons website, or using the listing URL to your extension in the Microsoft Edge Add-ons website.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** webpage.
+* `Public` (default) - Allows everyone to discover your extension through search, browsing in the Microsoft Edge Add-ons website, or using the listing URL to your extension in the Microsoft Edge Add-ons website.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** webpage.
 
-*  `Hidden` - Removes extensions from search results or browsing in the Microsoft Edge Add-ons website.  To distribute hidden extensions in the Microsoft Edge Add-ons website, you must share the listing URL to the extension with your customers.
+* `Hidden` - Removes extensions from search results or browsing in the Microsoft Edge Add-ons website.  To distribute hidden extensions in the Microsoft Edge Add-ons website, you must share the listing URL to the extension with your customers.
 
 You can change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to **Public** retain access to your extension and receive any updates you make available through the Microsoft Edge Add-ons website.
 
@@ -127,15 +133,17 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 1. Toggle individual markets to exclude each one or select **Unselect all** and then add individual markets of your choice.
 
-   You can change the markets where your extension is offered. A user who installs your extension while it's available in the user's market retains access to your extension. However, the user doesn't have access to any future updates that are submitted to the Microsoft Edge Add-ons website.
+   You can change the markets where your extension is offered.  A user who installs your extension while it's available in the user's market retains access to your extension.  However, the user doesn't have access to any future updates that are submitted to the Microsoft Edge Add-ons website.
 
-1. Click **Save & Continue** to continue to the **Properties** section.
+1. Click the **Save & Continue** button.
+
+   The **Properties** webpage opens.
 
 
 <!-- ========================================================================== -->
-## Step 4: Select Properties for your extension
+## Step 4: Enter Properties describing your extension
 
-On the **Properties** page for the extension, enter the following information to specify properties of your extension.  The properties are displayed to users at the Microsoft Edge Add-ons website.
+On the **Properties** webpage for the extension, enter the following information to specify properties of your extension.  The properties are displayed to users at the Microsoft Edge Add-ons website.
 
 | Property name | Required? | Description |
 |---|---|---|
@@ -150,15 +158,17 @@ Properties that are not indicated as Required are Optional.
 
 Your developer/organization name,<!-- todo: what field name? --> **Website URL**, and **Support contact details** that you submitted<!-- todo: before, or in this form? --> during registration are displayed to users on the Microsoft Edge Add-ons website.
 
-After filling in the **Properties** page for the extension, click the **Save & Continue** button<!-- todo: link, or button? --> to continue to the **Store listings** section.
+After filling in the **Properties** webpage for the extension, click the **Save & Continue** button.
+
+The **Store listings** section opens.<!-- todo: a webpage in this context, or section of webpage (which webpage & section)? -->
 
 
 <!-- ========================================================================== -->
 ## Step 5: Add Store listing details for your extension
 
-The information provided in the **Store listings** page is displayed to users who review your listing on the Microsoft Edge Add-ons website.  Even though some fields are optional, you should provide as much information as possible.
+The information provided in the **Store listings** webpage<!-- todo: a webpage in this context, or section of webpage (which webpage & section)? --> is displayed to users who view your listing on the Microsoft Edge Add-ons website.  Even though some fields are optional, you should provide as much information as possible.
 
-The **Language details** section contains fields for the following properties.
+In the **Language details** section<!-- todo: a webpage in this context, or section of webpage (which webpage & section)? -->, fill in the following properties.
 
 | Property name | Required? | Description |
 |---|---|---|
@@ -200,6 +210,8 @@ You can duplicate your assets from one language across other languages by using 
 <!-- ------------------------------ -->
 #### YouTube video URL requirements
 
+<!-- todo: which webpage in this context, or section of webpage (which webpage & section)? -->
+
 Make sure your video meets the following requirements.
 
 *  Verify that the content of the YouTube video follows the [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies).
@@ -218,6 +230,8 @@ To submit the YouTube video URL of your video:
 <!-- ------------------------------ -->
 #### Search terms requirements
 
+<!-- todo: webpage, or section of webpage (which webpage)? -->
+
 Search terms must meet the following requirements:
 
 *  You can enter search terms to use up to a maximum of 21 words.  Whether used as single words, phrases, or a combination of both, you're only allowed a maximum of 21 words.
@@ -225,14 +239,14 @@ Search terms must meet the following requirements:
 *  Up to a maximum of seven search terms (single word or phrases).  Each search term has a character limit of 30 characters.
 
 
-<!-- todo: what UI actions to fill in this page and proceed?
+<!-- todo: what UI actions to fill in this webpage and proceed?
 
 1. Click the **Foo** button.  The **Submit your extension** webpage opens.
 -->
 
 
 <!-- ========================================================================== -->
-## Step 6: Complete your submission
+## Step 6: Complete the submission by providing testing notes
 
 On the **Submit your extension** webpage, add notes for certification to help test your extension.
 
@@ -240,23 +254,27 @@ On the **Submit your extension** webpage, add notes for certification to help te
 <!-- ------------------------------ -->
 #### Notes for certification (optional)
 
+<!-- todo: how do you get from the **Submit your extension** webpage to the **Notes for certification** webpage? -->
+
 When you submit your extension, use the **Notes for certification** webpage to provide additional information to the certification testers.  The additional information helps ensure that your extension is tested correctly.  If your extension isn't fully tested, it might fail certification.
 
-Make sure you include the following information, as necessary:
+Include the following information, as necessary:
 
-*   Usernames and passwords for test accounts.
+* Usernames and passwords for test accounts.
 
-*   Steps to access hidden or locked features.
+* Steps to access hidden or locked features.
 
-*   Expected differences in functionality based on region or other user settings.
+* Expected differences in functionality based on region or other user settings.
 
-*   If your submission is an update to an existing extension, include information about the changes made to the extension.
+* If your submission is an update to an existing extension, include information about the changes made to the extension.
 
-*   Any additional information that testers must understand about your submission.
+* Any additional information that testers must understand about your submission.
 
-After you provide the information, select **Publish** to submit your extension to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).  Your submission proceeds to the certification step.  The certification process can take up to seven business days after your submission.
+After you provide the information, click the **Publish** button to submit your extension to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
-After your submission passes certification, your extension is published in the Microsoft Edge Add-ons website.  The status of your extension in the Partner Center dashboard changes to `In the Store`.
+Your submission then proceeds to the certification step.  The certification process can take up to seven business days after your submission.
+
+After your submission passes certification, your extension is published in the Microsoft Edge Add-ons website.  The status of your extension in the Partner Center dashboard changes to **In the Store**.
 
 
 <!-- ========================================================================== -->
