@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 12/17/2024
+ms.date: 12/16/2024
 ---
 # Publish a Microsoft Edge extension
 
