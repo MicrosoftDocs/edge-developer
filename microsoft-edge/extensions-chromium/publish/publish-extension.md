@@ -148,6 +148,8 @@ Your developer/organization name,<!-- todo: what field name? --> **Website URL**
 | **Support contact details** | - | The URL to your support webpage, or the email address to contact your support team. |
 | **Mature content** | - | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, see [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
 
+Properties that are not indicated as Required are Optional.
+
 Click the **Save & Continue** button<!-- todo: link, or button? --> to continue to the **Store listings** section.
 
 
@@ -156,13 +158,17 @@ Click the **Save & Continue** button<!-- todo: link, or button? --> to continue 
 
 The information provided in the following section is displayed to users who review your listing on the Microsoft Edge Add-ons website.  Even though some fields are optional, you should provide as much information as possible.
 
-To list your extension in the store, the following details are required:
-* **Display name**.
+To list your extension in the store, the following details are required:<!-- todo: for each lang? -->
+* **Display name**.<!-- todo: for each lang? -->
 * **Description** for each language in your extension package. To support multiple languages, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
 * **Extension Store logo** for each language in your extension package.
-* **Short description**.
+* **Short description**.<!-- todo: for each lang? -->
 
-The minimum required store listing details must be filled-out for at least one of the languages<!-- todo: spoken langs, or coding langs? --> mentioned in your extension zip package.  To add or remove languages in your store listing on the Microsoft Edge Add-ons website, use the **Add a language** dropdown list on the **Store listings** webpage.  Additionally, you can duplicate your assets from one language across others using the **Duplicate functionality** button on the **Language details** webpage.
+The minimum required store listing details must be filled in for at least one of the languages (such as U.S. English; `en-US`) that's mentioned in your extension zip package.
+
+* To add or remove languages in your store listing on the Microsoft Edge Add-ons website, use the **Add a language** dropdown list on the **Store listings** webpage.
+
+* Additionally, you can duplicate your assets from one language across other languages by using the **Duplicate functionality** button on the **Language details** webpage.
 
 | Language details property name | Required? | Description |
 |---|---|---|
@@ -175,6 +181,8 @@ The minimum required store listing details must be filled-out for at least one o
 | **YouTube video URL** | - | You can include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing webpage of your extension. |
 | **Short description** | Required | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it. |
 | **Search terms** | - | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons website.  The search terms aren't displayed to users. |
+
+Properties that are not indicated as Required are Optional.
 
 
 <!-- ------------------------------ -->
