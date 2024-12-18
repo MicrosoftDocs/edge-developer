@@ -189,8 +189,8 @@ In the **Language details** section<!-- todo: a webpage in this context, or sect
 To list your extension in the store, properties that are not indicated as Required in the above table are Optional.
 
 The following Required properties must be provided for _each_ language (such as U.S. English; `en-US`) that's listed in your extension zip package:
-* **Description**.
-* **Extension Store logo**.
+* **Description**
+* **Extension Store logo**
 
 The following Required properties must be filled in for _at least one_ of the languages that's listed in your extension zip package:
 * **Display name**
