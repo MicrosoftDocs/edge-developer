@@ -247,7 +247,9 @@ See also:
 <!-- ====================================================================== -->
 ## Getting the purchase history (`listPurchaseHistory` method)
 
-Use the `listPurchaseHistory` method of the `DigitalGoodsService` interface to get the purchase history.  This method returns a list that shows the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed.  This method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.
+Use the `listPurchaseHistory` method of the `DigitalGoodsService` interface to get the purchase history.
+
+This method returns a list of `PurchaseDetails` containing the `itemId` and `purchaseToken` for each purchase.  The list includes the most recent purchase made by the user for each item, regardless of whether the purchase is expired, canceled, or consumed.
 
 ```javascript
 const purchaseList = await digitalGoodsService.listPurchaseHistory();
