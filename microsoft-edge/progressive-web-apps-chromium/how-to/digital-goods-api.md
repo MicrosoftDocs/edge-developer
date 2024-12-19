@@ -181,13 +181,13 @@ const request = new PaymentRequest([
 ]);
 ```
 
-Then call the `show` method to start the payment flow:
+Then call the `show` method of the `PaymentRequest` object, to start the payment flow:
 
 ```javascript
 const response = await request.show();
 ```
 
-This will display the Store purchase UI to the user, where the user can view details about the product that they're trying to purchase.  During this process, the current browser session is temporarily disabled until the purchase flow is complete.  The user can either cancel the transaction, or proceed with the payment:
+This displays the Store purchase UI to the user, where the user can view details about the product that they're trying to purchase.  During this process, the current browser session is temporarily disabled until the purchase flow is complete.  The user can either cancel the transaction, or proceed with the payment:
 
 * If the user cancels the payment, the Promise that's returned by the `show` method will be rejected with an error.
 
