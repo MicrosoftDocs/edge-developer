@@ -201,7 +201,9 @@ This will display the Store purchase UI to the user, where the user can view det
 In the `details` property of the payment response, a purchase token is returned.
 
 See also:
-* [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
+* [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API)
+   * [PaymentRequest: PaymentRequest() constructor](https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest)
+   * [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
 * [PaymentRequestEvent: methodData property](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/methodData)
 
 
@@ -291,8 +293,9 @@ GitHub:
 
 MDN:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API)
+   * [PaymentRequest: PaymentRequest() constructor](https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest)
    * [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
-   * [PaymentRequestEvent: methodData property](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/methodData)
+* [PaymentRequestEvent: methodData property](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/methodData)
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 
 W3C:
