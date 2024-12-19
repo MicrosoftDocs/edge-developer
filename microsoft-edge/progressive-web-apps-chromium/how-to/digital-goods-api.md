@@ -167,7 +167,7 @@ Use the `show` method of the `PaymentRequest` interface to purchase an item, aft
 
 Once your products and details are displayed to the user, you can implement the purchase flow by using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
 
-In the `PaymentRequest` constructor's `methodData`⁠⁠ parameter (type =`PaymentRequestEvent`):
+In the `PaymentRequest` constructor's `methodData`⁠⁠ parameter:
 * Use the `supportedMethods` member to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`.
 * In the `data` member, pass along the item ID as the `sku`:
 
@@ -204,7 +204,6 @@ See also:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API)
    * [PaymentRequest: PaymentRequest() constructor](https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest)
    * [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
-* [PaymentRequestEvent: methodData property](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/methodData)
 
 
 <!-- ====================================================================== -->
@@ -295,7 +294,6 @@ MDN:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API)
    * [PaymentRequest: PaymentRequest() constructor](https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest)
    * [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
-* [PaymentRequestEvent: methodData property](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/methodData)
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 
 W3C:
