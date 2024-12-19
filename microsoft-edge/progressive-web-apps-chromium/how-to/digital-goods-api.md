@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 12/18/2024
+ms.date: 12/19/2024
 ---
 # Provide in-app purchases with the Digital Goods API
 
@@ -24,7 +24,7 @@ The Digital Goods API is an interface between your PWA app and the Microsoft Sto
 
 See:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
-* [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/)
+* [Digital Goods API specification](https://wicg.github.io/digital-goods/)
 
 
 <!-- ====================================================================== -->
@@ -79,7 +79,7 @@ if ('getDigitalGoodsService' in window) {
 ```
 
 See also:
-* [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface, in _Digital Goods API: Draft Community Group Report_.
+* [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface, in _Digital Goods API specification_.
 
 
 <!-- ====================================================================== -->
@@ -110,8 +110,8 @@ try {
 This payment method `getDigitalGoodsService("https://store.microsoft.com/billing")` is available only for a PWA that's installed from the Microsoft Store, on Windows.  No other settings are needed.
 
 See also:
-* [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface, in _Digital Goods API: Draft Community Group Report_.
-* [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) in _Digital Goods API: Draft Community Group Report_.
+* [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface, in _Digital Goods API specification_.
+* [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) in _Digital Goods API specification_.
 
 
 <!-- ====================================================================== -->
@@ -147,12 +147,11 @@ The item's `price` is a `PaymentCurrencyAmount` that contains the current price 
 <!-- ------------------------------ -->
 #### See also
 
-Digital Goods API: Draft Community Group Report
-* [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) in _Digital Goods API: Draft Community Group Report_.
-   * [getDetails() method](https://wicg.github.io/digital-goods/#getDetails-method) in _Digital Goods API: Draft Community Group Report_.
+Digital Goods API specification
+* [getDetails() method](https://wicg.github.io/digital-goods/#getDetails-method) in _Digital Goods API specification_.
 
-Learn.microsoft.com:
-* [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken).
+Windows App Development:
+* [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken)
 
 W3C:
 * [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API: W3C Candidate Recommendation Draft_.
@@ -197,25 +196,8 @@ This will display the Store purchase UI to the user, where the user can view det
 In the `details` property of the payment response, a purchase token is returned.
 
 See also:
-
-MDN:
 * [PaymentRequest](https://developer.mozilla.org/docs/Web/API/PaymentRequest) at MDN > References > Web APIs > PaymentRequest > Payment Request API.
    * [PaymentRequest: show() method](https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequest/show) at MDN > References > Web APIs > PaymentRequest > Payment Request API.
-
-W3C:
-* [PaymentRequest interface](https://www.w3.org/TR/payment-request/#dom-paymentrequest) in _Payment Request API: Candidate Recommendation Draft_ at W3C.
-   * [show() method](https://www.w3.org/TR/payment-request/#dom-paymentrequest-show) in _Payment Request API: Candidate Recommendation Draft_ at W3C.
-
-
-<!-- ====================================================================== -->
-## Acknowledging a purchase
-
-The payment response returns a _purchase token_ string, which can be used for direct communication between your server and the service provider beyond the Digital Goods API.  Such communication can allow you to independently verify information about the purchase before granting entitlements.
-
-Some stores might require that you (the developer) acknowledge<!-- todo: how? using which apis? --> a purchase after the purchase has succeeded, to confirm that the purchase has been recorded.
-
-See also:
-* [PaymentResponse interface](https://www.w3.org/TR/payment-request/#paymentresponse-interface)<!-- todo: correct link? --> in _Payment Request API: W3C Candidate Recommendation Draft_.<!-- todo: add link to big See Also section -->
 
 
 <!-- ====================================================================== -->
@@ -232,7 +214,7 @@ digitalGoodsService.consume(purchaseToken);
 ```
 
 See also:
-* [consume() method](https://wicg.github.io/digital-goods/#consume-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
+* [consume() method](https://wicg.github.io/digital-goods/#consume-method) of the `DigitalGoodsService` interface, in _Digital Goods API specification_.
 
 
 <!-- ====================================================================== -->
@@ -258,7 +240,7 @@ for (const purchase of purchaseList) {
 The `listPurchases` method doesn't return consumed products or expired subscriptions.
 
 See also:
-* [listPurchases() method](https://wicg.github.io/digital-goods/#listPurchases-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
+* [listPurchases() method](https://wicg.github.io/digital-goods/#listPurchases-method) of the `DigitalGoodsService` interface, in _Digital Goods API specification_.
 
 
 <!-- ====================================================================== -->
@@ -276,8 +258,8 @@ for (const purchase of purchaseList) {
 ```
 
 See also:
-* [listPurchaseHistory() method](https://wicg.github.io/digital-goods/#listPurchaseHistory-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
-* [PurchaseDetails dictionary](https://wicg.github.io/digital-goods/#purchaseDetails-dictionary) in _Digital Goods API: Draft Community Group Report_.
+* [listPurchaseHistory() method](https://wicg.github.io/digital-goods/#listPurchaseHistory-method) of the `DigitalGoodsService` interface, in _Digital Goods API specification_.
+* [PurchaseDetails dictionary](https://wicg.github.io/digital-goods/#purchaseDetails-dictionary) in _Digital Goods API specification_.
 
 
 <!-- ====================================================================== -->
@@ -293,14 +275,14 @@ Windows App Development:
 
 GitHub:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
-* [Digital Goods API: Draft Community Group Report](https://wicg.github.io/digital-goods/) at GitHub.
-   * [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface, in _Digital Goods API: Draft Community Group Report_.
-   * [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) in _Digital Goods API: Draft Community Group Report_.
-      * [getDetails() method](https://wicg.github.io/digital-goods/#getDetails-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
-      * [listPurchases() method](https://wicg.github.io/digital-goods/#listPurchases-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
-      * [listPurchaseHistory() method](https://wicg.github.io/digital-goods/#listPurchaseHistory-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
-      * [consume() method](https://wicg.github.io/digital-goods/#consume-method) of the `DigitalGoodsService` interface, in _Digital Goods API: Draft Community Group Report_.
-   * [PurchaseDetails dictionary](https://wicg.github.io/digital-goods/#purchaseDetails-dictionary) in _Digital Goods API: Draft Community Group Report_.
+* [Digital Goods API specification](https://wicg.github.io/digital-goods/) at GitHub.
+   * [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface, in _Digital Goods API specification_.
+   * [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice) in _Digital Goods API specification_.
+      * [getDetails() method](https://wicg.github.io/digital-goods/#getDetails-method) of the `DigitalGoodsService` interface, in _Digital Goods API specification_.
+      * [listPurchases() method](https://wicg.github.io/digital-goods/#listPurchases-method) of the `DigitalGoodsService` interface, in _Digital Goods API specification_.
+      * [listPurchaseHistory() method](https://wicg.github.io/digital-goods/#listPurchaseHistory-method) of the `DigitalGoodsService` interface, in _Digital Goods API specification_.
+      * [consume() method](https://wicg.github.io/digital-goods/#consume-method) of the `DigitalGoodsService` interface, in _Digital Goods API specification_.
+   * [PurchaseDetails dictionary](https://wicg.github.io/digital-goods/#purchaseDetails-dictionary) in _Digital Goods API specification_.
 
 MDN:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API) at MDN > References > Web APIs.
@@ -309,6 +291,4 @@ MDN:
 
 W3C:
 * [Payment Request API: Candidate Recommendation Draft](https://www.w3.org/TR/payment-request/) at W3C.
-   * [PaymentRequest interface](https://www.w3.org/TR/payment-request/#dom-paymentrequest) in _Payment Request API: Candidate Recommendation Draft_ at W3C.
-      * [show() method](https://www.w3.org/TR/payment-request/#dom-paymentrequest-show) in _Payment Request API: Candidate Recommendation Draft_ at W3C.
    * [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount) in _Payment Request API: W3C Candidate Recommendation Draft_.
