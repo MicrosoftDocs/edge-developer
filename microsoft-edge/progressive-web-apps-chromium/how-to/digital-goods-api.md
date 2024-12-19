@@ -79,7 +79,7 @@ if ('getDigitalGoodsService' in window) {
 ```
 
 See also:
-* [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface.
+* [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) of the `Window` interface.
 
 
 <!-- ====================================================================== -->
@@ -110,7 +110,7 @@ try {
 This payment method `getDigitalGoodsService("https://store.microsoft.com/billing")` is available only for a PWA that's installed from the Microsoft Store, on Windows.  No other settings are needed.
 
 See also:
-* [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface.
+* [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) of the `Window` interface.
 * [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice)
 
 
@@ -282,7 +282,7 @@ Windows App Development:
 GitHub:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
 * [Digital Goods API specification](https://wicg.github.io/digital-goods/)
-   * [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) on the `Window` interface.
+   * [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) of the `Window` interface.
    * [DigitalGoodsService interface](https://wicg.github.io/digital-goods/#digitalgoodsservice)
       * [getDetails() method](https://wicg.github.io/digital-goods/#getDetails-method)
       * [listPurchases() method](https://wicg.github.io/digital-goods/#listPurchases-method)
