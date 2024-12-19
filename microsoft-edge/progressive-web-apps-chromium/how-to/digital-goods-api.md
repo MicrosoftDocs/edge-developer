@@ -191,15 +191,14 @@ This displays the Store purchase UI to the user, where the user can view details
 
 * If the user cancels the payment, the Promise that's returned by the `show` method will be rejected with an error.
 
-* If the user successfully pays and completes the purchase, the Promise will resolve with a `PaymentResponse`.
-
-In the `details` property of the payment response, a purchase token is returned.
+* If the user successfully pays and completes the purchase, the Promise will resolve with a `PaymentResponse`.  In the `details` property of the payment response, a purchase token is returned.
 
 See also:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API)
    * [PaymentRequest: PaymentRequest() constructor](https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest)
    * [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
-* [PaymentResponse: details property](https://developer.mozilla.org/docs/Web/API/PaymentResponse/details)
+   * [PaymentResponse](https://developer.mozilla.org/docs/Web/API/PaymentResponse/)
+      * [PaymentResponse: details property](https://developer.mozilla.org/docs/Web/API/PaymentResponse/details)
 
 
 <!-- ====================================================================== -->
@@ -287,7 +286,8 @@ MDN:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API)
    * [PaymentRequest: PaymentRequest() constructor](https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest)
    * [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
-* [PaymentResponse: details property](https://developer.mozilla.org/docs/Web/API/PaymentResponse/details)
+   * [PaymentResponse](https://developer.mozilla.org/docs/Web/API/PaymentResponse/)
+      * [PaymentResponse: details property](https://developer.mozilla.org/docs/Web/API/PaymentResponse/details)
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 
 W3C:
