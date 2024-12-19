@@ -165,9 +165,9 @@ MDN:
 
 After your products and details are displayed to the user, implement the purchase flow by using the Payment Request API.  To purchase an item, first construct a request that contains the item details by using the `PaymentRequest` constructor, and then use the `show` method of the `PaymentRequest` object to start the payment flow.
 
-When combined with the Digital Goods API, the only required input parameter for the `PaymentRequest` constructor is `methodData`.  In that parameter:
-* Use the `supportedMethods` member to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`.
-* In the `data` member, pass along the item ID as the `sku`.
+When combined with the Digital Goods API, the only required input parameter for the `PaymentRequest` constructor is `methodData`.  In the constructor's parameter:
+* In the `supportedMethods` member, specify Microsoft Store Billing as the payment method, as the string `'https://store.microsoft.com/billing'`.
+* In the `data` member, pass along the `itemId` as the `sku`.
 
 ```javascript
 const details = await digitalGoodsService.getDetails(['monthly_subscription']);
