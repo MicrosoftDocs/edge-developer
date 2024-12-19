@@ -161,18 +161,13 @@ MDN:
 
 
 <!-- ====================================================================== -->
-## Purchasing an item (`PaymentRequest.show` method)
+## Purchasing an item (`PaymentRequest` constructor and `show` method)
 
-Use the `show` method of the `PaymentRequest` interface to purchase an item, after you construct a request that contains the item details.
+After your products and details are displayed to the user, implement the purchase flow by using the Payment Request API.  To purchase an item, construct a request that contains the item details by using the `PaymentRequest` constructor, and then use the `show` method of the `PaymentRequest` object.
 
-Once your products and details are displayed to the user, you can implement the purchase flow by using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
-
-In the `PaymentRequest` constructor's `methodData`⁠⁠ parameter:
+When combined with the Digital Goods API, the only required input parameter for the `PaymentRequest` constructor is `methodData`.  In that parameter:
 * Use the `supportedMethods` member to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`.
-* In the `data` member, pass along the item ID as the `sku`:
-
-<!-- todo: in PaymentRequest ctor, the 2nd param (details) is missing, per ctor docs: https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest - the 3rd param, "options", says "optional" next to it, unlike "details" param - is that page missing a 1-param overload?  new PaymentRequest(methodData)
--->
+* In the `data` member, pass along the item ID as the `sku`.
 
 ```javascript
 const details = await digitalGoodsService.getDetails(['monthly_subscription']);
@@ -204,6 +199,7 @@ See also:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API)
    * [PaymentRequest: PaymentRequest() constructor](https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest)
    * [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
+* [PaymentResponse: details property](https://developer.mozilla.org/docs/Web/API/PaymentResponse/details)
 
 
 <!-- ====================================================================== -->
@@ -294,6 +290,7 @@ MDN:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API)
    * [PaymentRequest: PaymentRequest() constructor](https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest)
    * [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
+* [PaymentResponse: details property](https://developer.mozilla.org/docs/Web/API/PaymentResponse/details)
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 
 W3C:
