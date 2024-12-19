@@ -272,9 +272,6 @@ Origin trials:
 * [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
 * [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Origin Trials_.
 
-Windows App Development:
-* [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken)
-
 GitHub:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
 * [Digital Goods API specification](https://wicg.github.io/digital-goods/)
@@ -295,3 +292,6 @@ MDN:
 
 W3C:
 * [PaymentCurrencyAmount dictionary](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount)
+
+Windows App Development:
+* [StoreProduct.InAppOfferToken Property](/uwp/api/windows.services.store.storeproduct.inappoffertoken)
