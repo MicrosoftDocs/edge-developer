@@ -167,7 +167,12 @@ Use the `show` method of the `PaymentRequest` interface to purchase an item, aft
 
 Once your products and details are displayed to the user, you can implement the purchase flow by using the Payment Request API.  When combined with the Digital Goods API, the only required input parameter is `methodData`.
 
-Use the `supportedMethods` member of the `methodData`⁠⁠ parameter in the `PaymentRequest` interface to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`.  Then in the `data` member, pass along the item ID as the `sku`.
+In the `PaymentRequest` constructor's `methodData`⁠⁠ parameter (type =`PaymentRequestEvent`):
+* Use the `supportedMethods` member to identify Microsoft Store Billing as the payment method with the string `"https://store.microsoft.com/billing"`.
+* In the `data` member, pass along the item ID as the `sku`:
+
+<!-- todo: in PaymentRequest ctor, the 2nd param (details) is missing, per ctor docs: https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest - the 3rd param, "options", says "optional" next to it, unlike "details" param - is that page missing a 1-param overload?  new PaymentRequest(methodData)
+-->
 
 ```javascript
 const details = await digitalGoodsService.getDetails(['monthly_subscription']);
@@ -196,8 +201,8 @@ This will display the Store purchase UI to the user, where the user can view det
 In the `details` property of the payment response, a purchase token is returned.
 
 See also:
-* [PaymentRequest](https://developer.mozilla.org/docs/Web/API/PaymentRequest) at MDN.
-   * [PaymentRequest: show() method](https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequest/show)
+* [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
+* [PaymentRequestEvent: methodData property](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/methodData)
 
 
 <!-- ====================================================================== -->
@@ -286,7 +291,8 @@ GitHub:
 
 MDN:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API)
-   * [PaymentRequest](https://developer.mozilla.org/docs/Web/API/PaymentRequest)
+   * [PaymentRequest: show() method](https://developer.mozilla.org/docs/Web/API/PaymentRequest/show)
+   * [PaymentRequestEvent: methodData property](https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/methodData)
 * [Intl.NumberFormat](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 
 W3C:
