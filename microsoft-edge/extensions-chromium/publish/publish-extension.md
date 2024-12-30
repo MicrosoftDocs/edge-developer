@@ -6,11 +6,11 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 12/16/2024
+ms.date: 12/30/2024
 ---
 # Publish a Microsoft Edge extension
 
-After you develop and test your Microsoft Edge extension, you're ready to distribute your extension. Use the Microsoft Edge Add-ons website to distribute your extension.  To release your existing Chromium extension for Microsoft Edge users, see [port your existing Chromium extension](../developer-guide/port-chrome-extension.md).
+After you develop and test your Microsoft Edge extension, you're ready to distribute your extension. Use the Microsoft Edge Add-ons website to distribute your extension.  To release your existing Chromium extension for Microsoft Edge users, see [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md).
 
 Publish your extension to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) to increase its reach and make it available to other Microsoft Edge users.  This article provides the process to submit your extension to the Microsoft Edge Add-ons website.
 
@@ -30,7 +30,7 @@ Before publishing your extension, you should have a working prototype of your ex
 <!-- ---------------------------------- -->
 #### Create a developer account
 
-To publish your extension to the Microsoft Edge Add-ons website, use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge Add-ons program, see [Developer registration](create-dev-account.md).
+To publish your extension to the Microsoft Edge Add-ons website, use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge Add-ons program, see [Developer registration](./create-dev-account.md).
 
 
 <!-- ---------------------------------- -->
@@ -38,19 +38,17 @@ To publish your extension to the Microsoft Edge Add-ons website, use your active
 
 Create a zip file for your extension package.  Your extension package must include the following files:
 
-*  The extension manifest that specifies details such as the name of the extension, short description, permissions, and default language.
+* The extension manifest that specifies details such as the name of the extension, short description, permissions, and default language.
 
-*  Images and other files required by your extension.
+* Images and other files required by your extension.
 
 
 <!-- ---------------------------------- -->
 #### Review manifest field values
 
-The following fields in the manifest file are automatically included in your store listing details.  The fields are read-only on the **Store listings** webpage (described below).
+Before uploading your package to Partner Center, inspect the manifest file to make sure that the field values match your preferred display on the **Store Listings** webpage, as follows.
 
-Before uploading your package to Partner Center, inspect the manifest file to make sure that the field values match your preferred display on the store details<!-- todo: what title of webpage? bold --> webpage.
-
-In the manifest file, review these fields:
+The following fields in the manifest file are automatically included in your store listing details.  The fields are read-only on the **Store Listings** webpage, which is described below.
 
 *  The `Name` field, which populates the **Display name** on the store details<!-- todo: what title of webpage? bold --> webpage.
 
@@ -58,9 +56,9 @@ In the manifest file, review these fields:
    
    Fill in the `Description` field, to explicitly provide a catchy description that will be displayed at the top of the listing for your extension.
 
-   *  If you include a `short description` in the extension manifest file, that short description is displayed in your store listing.
+   * If you include a `short description` in the extension manifest file, that short description is displayed in your store listing.
 
-   *  If you don't include a `short description` in the manifest file, the first few lines of the `Description` are displayed in your store listing.  We recommend providing a `short description`, to avoid content repetition on your store listing webpage.
+   * If you don't include a `short description` in the manifest file, the first few lines of the `Description` are displayed in your store listing.  We recommend providing a `short description`, to avoid content repetition on your store listing webpage.
 
 
 <!-- ========================================================================== -->
@@ -86,6 +84,30 @@ Details are below.
 1. Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).
 
 1. On the **Overview** webpage, select **Create new extension**.
+
+
+<!-- todo: move to right spot: -->
+Editing details from listing page to enter the description: **Extension overview** > **Details for English (United States)** page:
+
+![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
+
+
+<!-- todo: move to right spot: -->
+Extension page for a specific extension: **Extension overview** page:
+
+![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)
+
+
+<!-- todo: move to right spot: -->
+Partner Center extensions home: **Overview** page:
+
+![Partner Center extension home](./publish-extension-images/partner-center-extension-home.jpg)
+
+
+<!-- todo: move to right spot: -->
+Store listing section for an extension: **Extension overview** > **Store Listings** page:
+
+![Store listing section for an extension](./publish-extension-images/store-listing-section-for-extension.png)
 
 
 <!-- ========================================================================== -->
@@ -214,9 +236,9 @@ You can duplicate your assets from one language across other languages by using 
 
 Make sure your video meets the following requirements.
 
-*  Verify that the content of the YouTube video follows the [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies).
+* Verify that the content of the YouTube video follows the [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies).
 
-*  Turn off advertisements on your video.  For more information, see [Set your default ad formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
+* Turn off advertisements on your video.  For more information, see [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
 
 To submit the YouTube video URL of your video:
 
@@ -284,5 +306,30 @@ If you encounter any issues in the submission or registration process, file a su
 
 
 <!-- ========================================================================== -->
-<!-- ## See also -->
-<!-- todo: all links in article -->
+## See also
+<!-- all links in article -->
+
+Local articles:
+* [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md)
+* [Extension concepts and architecture](../getting-started/index.md)
+* [Developer registration](./create-dev-account.md)
+
+Partner Center:
+* [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
+
+Edge Add-ons website:
+* [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)
+
+Developer Agreement & Legal:
+* [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
+* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
+
+Support.microsoft.com:
+* [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) 
+
+Support.google.com:
+* [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227)
+* [Ads on embedded videos](https://support.google.com/youtube/answer/132596)
+
+Extensions Reference:
+* [chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478) - Chrome Extensions > Reference > API.
