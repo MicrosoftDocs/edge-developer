@@ -61,6 +61,18 @@ The following fields in the manifest file are automatically included in your sto
    * If you don't include a `short description` in the manifest file, the first few lines of the `Description` are displayed in your store listing.  We recommend providing a `short description`, to avoid content repetition on your store listing webpage.
 
 
+Later, after you upload your package, you'll have an opportunity to modify some fields at Partner Center:
+
+Store listing section for an extension: **Extension overview** > **Store Listings** page:
+
+![Store listing section for an extension](./publish-extension-images/store-listing-section-for-extension.png)
+
+
+Editing details from listing page to enter the description: **Extension overview** > **Details for English (United States)** page:
+
+![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
+
+
 <!-- ========================================================================== -->
 ## Submit your extension to the Microsoft Edge Add-ons website
 
@@ -68,12 +80,12 @@ After doing the above steps, the extension is ready to be submitted via Partner 
 
 To submit your extension to Partner Center:
 
-* [Step 1: Start a new submission](#step-1-start-a-new-submission)
-* [Step 2: Upload the extension package](#step-2-upload-the-extension-package)
-* [Step 3: Provide Availability details (visibility and markets)](#step-3-provide-availability-details-visibility-and-markets)
-* [Step 4: Enter Properties describing your extension](#step-4-enter-properties-describing-your-extension)
-* [Step 5: Add Store listing details for your extension](#step-5-add-store-listing-details-for-your-extension)
-* [Step 6: Complete the submission by providing testing notes](#step-6-complete-the-submission-by-providing-testing-notes)
+* [Step 1: Start a new submission](#step-1-start-a-new-submission).
+* [Step 2: Upload the extension package](#step-2-upload-the-extension-package).
+* [Step 3: Provide Availability details (visibility and markets)](#step-3-provide-availability-details-visibility-and-markets).
+* [Step 4: Enter Properties describing your extension](#step-4-enter-properties-describing-your-extension).
+* [Step 5: Add Store listing details for your extension](#step-5-add-store-listing-details-for-your-extension).
+* [Step 6: Complete the submission by providing testing notes](#step-6-complete-the-submission-by-providing-testing-notes).
 
 Details are below.
 
@@ -83,31 +95,11 @@ Details are below.
 
 1. Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).
 
-1. On the **Overview** webpage, select **Create new extension**.
+   The Partner Center **Overview** webpage opens:
 
+   ![Partner Center extension home](./publish-extension-images/partner-center-extension-home.jpg)
 
-<!-- todo: move to right spot: -->
-Editing details from listing page to enter the description: **Extension overview** > **Details for English (United States)** page:
-
-![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
-
-
-<!-- todo: move to right spot: -->
-Extension page for a specific extension: **Extension overview** page:
-
-![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)
-
-
-<!-- todo: move to right spot: -->
-Partner Center extensions home: **Overview** page:
-
-![Partner Center extension home](./publish-extension-images/partner-center-extension-home.jpg)
-
-
-<!-- todo: move to right spot: -->
-Store listing section for an extension: **Extension overview** > **Store Listings** page:
-
-![Store listing section for an extension](./publish-extension-images/store-listing-section-for-extension.png)
+1. Click **+ Create new extension**.
 
 
 <!-- ========================================================================== -->
@@ -130,6 +122,10 @@ Store listing section for an extension: **Extension overview** > **Store Listing
 
 <!-- ========================================================================== -->
 ## Step 3: Provide Availability details (visibility and markets)
+
+<!-- Extension page for a specific extension: **Extension overview** page: -->
+
+![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)
 
 On the **Availability** webpage for the extension, enter the following information.
 
