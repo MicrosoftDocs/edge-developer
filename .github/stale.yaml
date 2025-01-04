@@ -1,6 +1,6 @@
 # Configuration for stalebot.
 # This bot automatically marks inactive issues as stale, and eventually closes them.
-
+.
 # Limit this to only issues (not PRs).
 only: issues
 # Number of days of inactivity before an issue becomes stale.
