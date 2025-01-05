@@ -73,7 +73,7 @@ To submit your extension to Partner Center:
 
 * [Step 1: Start a new submission](#step-1-start-a-new-submission).
 * [Step 2: Upload the extension package](#step-2-upload-the-extension-package).
-* [Step 3: Provide Availability details (visibility and markets)](#step-3-provide-availability-details-visibility-and-markets).
+* [Step 3: Provide Availability details](#step-3-provide-availability-details).
 * [Step 4: Enter Properties describing your extension](#step-4-enter-properties-describing-your-extension).
 * [Step 5: Add Store listing details for your extension](#step-5-add-store-listing-details-for-your-extension).
 * [Step 6: Complete the submission by providing testing notes](#step-6-complete-the-submission-by-providing-testing-notes).
@@ -224,7 +224,6 @@ To add or remove languages in your store listing on the Microsoft Edge Add-ons w
 You can duplicate your assets from one language across other languages by using the **Duplicate functionality** button on the **Language details** page.
 
 
-
 <!-- ------------------------------ -->
 #### YouTube video URL requirements
 
@@ -240,7 +239,9 @@ To submit the YouTube video URL of your video:
 
 1. Under the video, click the **Share** button, and then click the **Copy** button to copy the URL for the video.
 
-1. On the store listing details page, paste the URL in the **YouTube video URL** field.
+1. On the store listing details page, paste the URL in the **YouTube video URL** field:
+
+   ![The "YouTube video URL" text box in the Details for English page](./publish-extension-images/video-url-in-details-page.png)
 
 
 <!-- ------------------------------ -->
@@ -263,13 +264,17 @@ Editing details from listing page to enter the description: **Extension overview
 
 1. Click the **Close** button.  
 
-   The **Submit your extension** page opens.
+   The **Store listing** page reappears.
 
 
 <!-- ========================================================================== -->
 ## Step 6: Complete the submission by providing testing notes
 
 On the **Submit your extension** page, you can optionally add notes for certification to help test your extension.
+
+1. Click the **Submit** button.
+
+   The **Submit your extension** page opens.
 
 
 <!-- ------------------------------ -->
