@@ -100,6 +100,8 @@ The **Extension overview** page shows information for a specific extension:
 
 ![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)
 
+To upload the extension package:
+
 1. On the left, click **Packages**.  The **Packages** page opens.
 
    You can only upload one package at a time. Your submission is blocked if the package upload isn't successful on the **Packages** page.
@@ -118,7 +120,7 @@ The **Extension overview** page shows information for a specific extension:
 <!-- ========================================================================== -->
 ## Step 3: Provide Availability details
 
-On the **Availability** page for the extension, enter the following information.
+On the **Availability** page for the extension, fill in the **Visibility** and **Markets** sections as follows.
 
 ![The Availability page](./publish-extension-images/availability-markets.png)
 
@@ -171,15 +173,16 @@ Your developer/organization name, **Website URL**, and **Support contact details
 
 After filling in the **Properties** page for the extension, click the **Save & Continue** button.
 
-The **Store listings** section opens.
-
-Store listing section for an extension: **Extension overview** > **Store Listings** page:
-
-![Store listing section for an extension](./publish-extension-images/store-listing-section-for-extension.png)
+The **Store listings** page opens.
 
 
 <!-- ========================================================================== -->
 ## Step 5: Add Store listing details for your extension
+
+1. In the **Store Listings** page, click the **Edit details** button:
+
+![Store listing section for an extension](./publish-extension-images/store-listing-section-for-extension.png)
+
 
 The information provided in the **Store listings** page is displayed to users who view your listing on the Microsoft Edge Add-ons website.  Even though some fields are optional, you should provide as much information as possible.
 
@@ -247,7 +250,7 @@ To submit the YouTube video URL of your video:
 <!-- ------------------------------ -->
 #### Search terms requirements
 
-Editing details from listing page to enter the description: **Extension overview** > **Details for English (United States)** page:
+Fill in required fields in the **Details for English (United States)** page, scrolling down as needed:
 
 ![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
 
