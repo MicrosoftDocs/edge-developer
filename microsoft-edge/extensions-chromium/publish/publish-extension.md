@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 01/04/2025
+ms.date: 01/07/2025
 ---
 # Publish a Microsoft Edge extension
 
@@ -73,9 +73,9 @@ To submit your extension to Partner Center:
 
 * [Step 1: Start a new submission](#step-1-start-a-new-submission).
 * [Step 2: Upload the extension package](#step-2-upload-the-extension-package).
-* [Step 3: Provide Availability details](#step-3-provide-availability-details).
-* [Step 4: Enter Properties describing your extension](#step-4-enter-properties-describing-your-extension).
-* [Step 5: Add Store listing details for your extension](#step-5-add-store-listing-details-for-your-extension).
+* [Step 3: Provide availability details](#step-3-provide-availability-details).
+* [Step 4: Enter properties describing your extension](#step-4-enter-properties-describing-your-extension).
+* [Step 5: Add store listing details for your extension](#step-5-add-store-listing-details-for-your-extension).
 * [Step 6: Complete the submission by providing testing notes](#step-6-complete-the-submission-by-providing-testing-notes).
 
 Details are below.
@@ -118,7 +118,7 @@ To upload the extension package:
 
 
 <!-- ========================================================================== -->
-## Step 3: Provide Availability details
+## Step 3: Provide availability details
 
 On the **Availability** page for the extension, fill in the **Visibility** and **Markets** sections as follows.
 
@@ -154,7 +154,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 4: Enter Properties describing your extension
+## Step 4: Enter properties describing your extension
 
 On the **Properties** page for the extension, enter the following information to specify properties of your extension.  The properties are displayed to users at the Microsoft Edge Add-ons website.
 
@@ -173,25 +173,25 @@ Your developer/organization name, **Website URL**, and **Support contact details
 
 After filling in the **Properties** page for the extension, click the **Save & Continue** button.
 
-The **Store listings** page opens.
+The **Store Listings** page opens.
 
 
 <!-- ========================================================================== -->
-## Step 5: Add Store listing details for your extension
+## Step 5: Add store listing details for your extension
 
 1. In the **Store Listings** page, click the **Edit details** button:
 
 ![Store listing section for an extension](./publish-extension-images/store-listing-section-for-extension.png)
 
 
-The information provided in the **Store listings** page is displayed to users who view your listing on the Microsoft Edge Add-ons website.  Even though some fields are optional, you should provide as much information as possible.
+The information provided in the **Store Listings** page is displayed to users who view your listing on the Microsoft Edge Add-ons website.  Even though some fields are optional, you should provide as much information as possible.
 
 In the **Language details** section, fill in the following properties.
 
 | Property name | Required? | Description |
 |---|---|---|
 | **Display name** | Required for at least one language | The `name` of your extension specified in the manifest file of your extension.  To change the store display name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload it. |
-| **Description** | Required for each language | The `description` field explains what your extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 5000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of your extension.  <br/>* **Completeness:** Should be thorough and should leave no important details out.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content. |
+| **Description** | Required for each language | The `description` field explains what your extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 5000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of your extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content. |
 | **Extension Store logo** | Required for each language | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button, which is displayed next to this field after you upload your logo for the language. |
 | **Small promotional tile** | - | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload a promotional tile for the language. |
 | **Large promotional tile** | - | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge Add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload a promotional tile for the language. |
