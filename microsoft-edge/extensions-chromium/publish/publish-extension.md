@@ -175,7 +175,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    The properties are displayed to users at the Microsoft Edge Add-ons website.  Your developer/organization name, **Website URL**, and **Support contact details** that you submitted during registration are displayed to users on the Microsoft Edge Add-ons website.
 
-1. After filling in the **Properties** page for the extension, click the **Save & Continue** button.
+1. Click the **Save & Continue** button.
 
    The **Store Listings** page opens.
 
