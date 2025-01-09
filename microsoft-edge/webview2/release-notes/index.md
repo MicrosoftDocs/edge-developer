@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 11/18/2024
+ms.date: 01/20/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -117,6 +117,145 @@ description
 <!-- end of Dec 2024 Release SDK -->
 <!-- end of Dec 2024 Prerelease SDK -->
 <!-- end of template -->
+
+
+<!-- ====================================================================== -->
+## 1.0.####.##
+
+Release Date: Monthname nn, 2024
+
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+No additional APIs have been promoted to Stable and added in this Release SDK.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* item
+* item
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* item
+* item
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* item
+* item
+
+
+<!-- end of Jan 2025 Release SDK -->
+
+
+<!-- ====================================================================== -->
+## 1.0.####-prerelease
+
+Release Date: Monthname nn, 2024
+
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Experimental APIs
+
+No Experimental APIs have been added in this Prerelease SDK.
+The following Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* item
+* item
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* item
+* item
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* item
+* item
+
+
+<!-- end of Dec 2024 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->
