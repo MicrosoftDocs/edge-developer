@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 01/07/2025
+ms.date: 01/08/2025
 ---
 # Publish a Microsoft Edge extension
 
@@ -128,7 +128,7 @@ On the **Availability** page for the extension, fill in the **Visibility** and *
 <!-- ------------------------------ -->
 #### Visibility
 
-Select one of the following visibility options to define whether your extension is discoverable in the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
+Select one of the following visibility options to define whether your extension is discoverable in the Microsoft Edge Add-ons website:
 
 * `Public` (default) - Allows everyone to discover your extension through search, browsing in the Microsoft Edge Add-ons website, or using the listing URL to your extension in the Microsoft Edge Add-ons website.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** page.
 
@@ -156,49 +156,60 @@ Define the specific markets in which you plan to offer your extension.  The defa
 <!-- ========================================================================== -->
 ## Step 4: Enter properties describing your extension
 
-On the **Properties** page for the extension, enter the following information to specify properties of your extension.  The properties are displayed to users at the Microsoft Edge Add-ons website.
+1. On the left, click **Properties**.
 
-| Property name | Required? | Description |
-|---|---|---|
-| **Category** | Required | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |
-| **Privacy policy requirements** | Required | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension might fail the certification step if you select **Yes** and you don't provide a `Privacy policy URL`. |
-| **Privacy policy URL** | - | A valid privacy policy URL to communicate how your extension follows privacy laws and regulations.  You're responsible for ensuring your extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, see [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905) and [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
-| **Website URL** | - | A webpage that provides additional information about your extension.  The `Website URL` must point to a webpage on your own website, not the web listing for your extension in the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).  The `Website URL` helps users learn more about your extension, its features, and any other relevant information. |
-| **Support contact details** | - | The URL to your support webpage, or the email address to contact your support team. |
-| **Mature content** | - | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, see [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
+   The **Properties** page for the extension opens.
 
-Properties that are not indicated as Required are Optional.
+1. Enter the following information:
 
-Your developer/organization name, **Website URL**, and **Support contact details** that you submitted during registration are displayed to users on the Microsoft Edge Add-ons website.
+   | Property name | Required? | Description |
+   |---|---|---|
+   | **Category** | Required | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |
+   | **Privacy policy requirements** | Required | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension might fail the certification step if you select **Yes** and you don't provide a `Privacy policy URL`. |
+   | **Privacy policy URL** | - | A valid privacy policy URL to communicate how your extension follows privacy laws and regulations.  You're responsible for ensuring your extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, see [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905) and [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
+   | **Website URL** | - | A webpage that provides additional information about your extension.  The `Website URL` must point to a webpage on your own website, not the web listing for your extension in the Microsoft Edge Add-ons website.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information. |
+   | **Support contact details** | - | The URL to your support webpage, or the email address to contact your support team. |
+   | **Mature content** | - | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, see [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
+   
+   Properties that are not indicated as Required are Optional.
 
-After filling in the **Properties** page for the extension, click the **Save & Continue** button.
+   The properties are displayed to users at the Microsoft Edge Add-ons website.  Your developer/organization name, **Website URL**, and **Support contact details** that you submitted during registration are displayed to users on the Microsoft Edge Add-ons website.
 
-The **Store Listings** page opens.
+1. After filling in the **Properties** page for the extension, click the **Save & Continue** button.
+
+   The **Store Listings** page opens.
 
 
 <!-- ========================================================================== -->
 ## Step 5: Add store listing details for your extension
 
-1. In the **Store Listings** page, click the **Edit details** button:
+1. On the left, click **Store listings**.
 
-![Store listing section for an extension](./publish-extension-images/store-listing-section-for-extension.png)
+   The **Store Listings** page opens:
 
+   ![Store listing section for an extension](./publish-extension-images/store-listing-section-for-extension.png)
 
-The information provided in the **Store Listings** page is displayed to users who view your listing on the Microsoft Edge Add-ons website.  Even though some fields are optional, you should provide as much information as possible.
+1. Click the **Edit details** button.<!-- The **Details** page opens.  todo: confirm UI -->
 
-In the **Language details** section, fill in the following properties.
+1. In the **Language details** section, fill in the following properties:
 
-| Property name | Required? | Description |
-|---|---|---|
-| **Display name** | Required for at least one language | The `name` of your extension specified in the manifest file of your extension.  To change the store display name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload it. |
-| **Description** | Required for each language | The `description` field explains what your extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 5000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of your extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content. |
-| **Extension Store logo** | Required for each language | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button, which is displayed next to this field after you upload your logo for the language. |
-| **Small promotional tile** | - | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload a promotional tile for the language. |
-| **Large promotional tile** | - | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge Add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload a promotional tile for the language. |
-| **Screenshots** | - | You can submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload at least one for the language. |
-| **YouTube video URL** | - | You can include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing page of your extension. |
-| **Short description** | Required for at least one language | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it. |
-| **Search terms** | - | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons website.  The search terms aren't displayed to users. |
+   | Property name | Required? | Description |
+   |---|---|---|
+   | **Display name** | Required for at least one language | The `name` of your extension specified in the manifest file of your extension.  To change the store display name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload it. |
+   | **Description** | Required for each language | The `description` field explains what your extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 5000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of your extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content. |
+   | **Extension Store logo** | Required for each language | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button, which is displayed next to this field after you upload your logo for the language. |
+   | **Small promotional tile** | - | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload a promotional tile for the language. |
+   | **Large promotional tile** | - | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge Add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload a promotional tile for the language. |
+   | **Screenshots** | - | You can submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** button.  The button is found following the field after you upload at least one for the language. |
+   | **YouTube video URL** | - | You can include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing page of your extension. |
+   | **Short description** | Required for at least one language | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it. |
+   | **Search terms** | - | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons website.  The search terms aren't displayed to users. |
+
+   The information provided in the **Store Listings** page is displayed to users who view your listing on the Microsoft Edge Add-ons website.  Even though some fields are optional, you should provide as much information as possible.
+
+<!-- 
+1. Click **Save** in the upper right. todo: confirm UI
+-->
 
 
 <!-- ------------------------------ -->
@@ -230,7 +241,11 @@ You can duplicate your assets from one language across other languages by using 
 <!-- ------------------------------ -->
 #### YouTube video URL requirements
 
-Make sure your video meets the following requirements.
+Fill in required fields in the **Details for English (United States)** page, scrolling down as needed:
+
+![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
+
+If you are linking to a video, make sure your video meets the following requirements.
 
 * Verify that the content of the YouTube video follows the [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies).
 
@@ -250,11 +265,6 @@ To submit the YouTube video URL of your video:
 <!-- ------------------------------ -->
 #### Search terms requirements
 
-Fill in required fields in the **Details for English (United States)** page, scrolling down as needed:
-
-![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
-
-
 1. In the **Details for English (United States)** page (or equivalent language/market page), in the **Search terms** text box, enter search terms:
 
    ![The "Search terms" text box in the Details for English page](./publish-extension-images/search-terms-text-box-details-lang-page.png)
@@ -273,39 +283,37 @@ Fill in required fields in the **Details for English (United States)** page, scr
 <!-- ========================================================================== -->
 ## Step 6: Complete the submission by providing testing notes
 
-On the **Submit your extension** page, you can optionally add notes for certification to help test your extension.
+On the **Submit your extension** page, you can optionally add notes for certification to help test your extension.  When you submit your extension, use the **Notes for certification** text box to provide additional information to the certification testers.  The additional information helps ensure that your extension is tested correctly.  If your extension isn't fully tested, it might fail certification.
+
+To add notes for certification:
 
 1. Click the **Submit** button.
 
-   The **Submit your extension** page opens.
+   The **Submit your extension** page opens:
 
+   ![The "Submit your extension" page (the Notes for certification page)](./publish-extension-images/submit-your-extension-page.png)
 
-<!-- ------------------------------ -->
-#### Notes for certification (optional)
+1. Fill in the **Notes for certification** text box.
 
-In the **Submit your extension** page, fill in the **Notes for certification** text box.<!-- in the **Notes for certification** section. -->
+   You can compose and save your notes in a text editor, such as Visual Studio Code, and then paste the notes into the text box.  Include any needed information, such as:
 
-![The "Submit your extension" page (the Notes for certification page)](./publish-extension-images/submit-your-extension-page.png)
+   * Usernames and passwords for test accounts.
 
-When you submit your extension, use the **Notes for certification** page to provide additional information to the certification testers.  The additional information helps ensure that your extension is tested correctly.  If your extension isn't fully tested, it might fail certification.
+   * Steps to access hidden or locked features.
 
-Include the following information, as necessary:
+   * Expected differences in functionality based on region or other user settings.
 
-* Usernames and passwords for test accounts.
+   * If your submission is an update to an existing extension, include information about the changes made to the extension.
 
-* Steps to access hidden or locked features.
+   * Any additional information that testers must understand about your submission.
 
-* Expected differences in functionality based on region or other user settings.
+1. Click the **Publish** button, in the upper right.
 
-* If your submission is an update to an existing extension, include information about the changes made to the extension.
+   Your extension is submitted to the Microsoft Edge Add-ons website.
 
-* Any additional information that testers must understand about your submission.
+   Your submission then proceeds to the certification step.  The certification process can take up to seven business days after your submission.
 
-After you provide the information, click the **Publish** button to submit your extension to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
-
-Your submission then proceeds to the certification step.  The certification process can take up to seven business days after your submission.
-
-After your submission passes certification, your extension is published in the Microsoft Edge Add-ons website.  The status of your extension in the Partner Center dashboard changes to **In the Store**.
+   After your submission passes certification, your extension is published in the Microsoft Edge Add-ons website.  The status of your extension in the Partner Center dashboard changes to **In the Store**.
 
 
 <!-- ========================================================================== -->
@@ -318,7 +326,6 @@ If you encounter any issues in the submission or registration process, file a su
 ## See also
 <!-- all links in article -->
 
-Local articles:
 * [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md)
 * [Extension concepts and architecture](../getting-started/index.md)
 * [Developer registration](./create-dev-account.md)
