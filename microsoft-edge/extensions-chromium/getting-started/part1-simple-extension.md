@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 12/03/2024
+ms.date: 01/10/2025
 ---
 # Sample: Display an image in a pop-up
 
@@ -18,7 +18,8 @@ This sample is a simple static extension, without JavaScript, that displays the 
 <!-- ====================================================================== -->
 ## Clone the MicrosoftEdge-Extensions repo
 
-You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.  These instructions use GitHub Desktop to clone the repo and switch to a working branch.
+<!-- for all extensions samples, this is the main copy to propagate copy/paste/modify.  put comments on lines that vary per-sample -->
+You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.  These instructions use GitHub Desktop to clone the repo and switch to a working branch.<!-- future: doc git bash as the main way -->
 
 To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
@@ -28,7 +29,7 @@ To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
 1. Click the **Code** button, and then select **Open with GitHub Desktop**.
 
-   A dialog opens, saying **This site is trying to open GitHubDesktop.exe.**
+   A dialog opens, saying **This site is trying to open GitHubDesktop.exe.**<!-- todo: update steps like part 2? -->
 
 1. Click the **Open** button.
 
@@ -59,7 +60,7 @@ Instead of installing the sample from the Store, you'll install the sample local
 
 1. Click **Manage extensions**.  The **Extensions** management page opens in a new tab:
 
-   ![Turning on Developer Mode](./part1-simple-extension-images/part1-developermode-toggle.png)
+   ![Turning on Developer Mode](./part1-simple-extension-images/developermode-toggle.png)
 
 1. Turn on the **Developer mode** toggle.
 
@@ -96,6 +97,10 @@ Instead of installing the sample from the Store, you'll install the sample local
 See also:
 * [Sideload an extension to install and test it locally](./extension-sideloading.md)
 
+
+<!-- ====================================================================== -->
+## Study the sample
+
 In the following sections, you study the sample.  After that, to develop your own Microsoft Edge extension, you can copy and modify the sample's directory, and install and test the resulting extension.
 
 
@@ -105,9 +110,9 @@ In the following sections, you study the sample.  After that, to develop your ow
 The sample has the following directory structure:
 
 Example path for the sample:
-`C:\Users\myAlias\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part1\part1\`
+`C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part1\part1\`
 
-Directories and files:
+Directories and files in the `\part1\` directory:
 
 ```shell
 /icons/
@@ -200,13 +205,21 @@ The popup (`popup.html`) is registered as the default popup in `manifest.json` u
 }
 ```
 
+<!-- ------------------------------ -->
+#### The Part 1 sample running
+
+The simple extension running:
+
+![The simple extension running](./part1-simple-extension-images/extension-running.png)
+
 
 <!-- ====================================================================== -->
 ## Next steps
 
 To develop your own Microsoft Edge extension, you can copy and modify the sample's directory, and install and test the resulting extension.
+<!-- todo: mention which branch you're in -->
 
-After running and testing the extension, you can continue on to [Sample: Insert an image in the webpage](./part2-content-scripts.md).
+After running and testing this extension sample, you can continue on to [Sample: Insert an image in the webpage](./part2-content-scripts.md), which dynamically inserts JavaScript running as content in the browser tab.
 
 
 <!-- ====================================================================== -->
