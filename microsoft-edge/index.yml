@@ -257,7 +257,7 @@ conceptualContent:
               url: ./extensions-chromium/publish/create-dev-account.md
               itemType: how-to-guide
 
-            - text: "Tutorial part 1: Display an image in a pop-up"
+            - text: "Sample: Display an image in a pop-up"
               url: ./extensions-chromium/getting-started/part1-simple-extension.md
               itemType: how-to-guide
 
