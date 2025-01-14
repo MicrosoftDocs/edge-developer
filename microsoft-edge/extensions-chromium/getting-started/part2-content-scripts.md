@@ -419,7 +419,7 @@ In this sample, the following files are specified:
 <!-- ------------------------------ -->
 #### How jQuery support is added (`jquery.min.js`)
 
-`jquery.min.js` is a predefined, minified file to support jQuery expressions starting with `$` in `popup.js` and `content.js`.
+`jquery.min.js` is a predefined, minified file to support jQuery expressions starting with `$` in `content.js`.
 
 In injected content scripts, it's common to use jQuery (`$`).  This sample includes a minified version of jQuery, residing in the extension package as `lib\jquery.min.js`.
 
