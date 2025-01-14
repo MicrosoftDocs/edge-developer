@@ -9,10 +9,13 @@ ms.subservice: extensions
 ms.date: 01/13/2025
 ---
 # Sample: Display an image in a pop-up
+<!--
+# Sample: Picture viewer pop-up webpage
+-->
 
-This sample is a simple static extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab:
+This sample is a browser extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab:
 
-![The simple extension running](./part1-simple-extension-images/extension-running.png)<!-- 1st use of this png -->
+![The "Picture viewer pop-up webpage" extension running](./part1-simple-extension-images/extension-running.png)<!-- 1st use of this png -->
 
 
 <!-- ====================================================================== -->

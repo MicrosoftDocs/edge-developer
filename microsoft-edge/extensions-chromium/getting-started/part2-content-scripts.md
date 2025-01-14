@@ -9,6 +9,9 @@ ms.subservice: extensions
 ms.date: 01/13/2025
 ---
 # Sample: Insert an image in the webpage
+<!-- 
+# Sample: Picture inserter using a content script
+-->
 
 This sample uses JavaScript code to insert the `stars.jpeg` image at the top of the current webpage, inside the `<body>` element.  The extension's pop-up contains a title and an HTML button that's labelled **Display**.  When you click the **Display** button, the extension's JavaScript code sends a message from the extension icon's pop-up, and dynamically inserts JavaScript that runs in the browser tab.
 
