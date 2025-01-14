@@ -37,7 +37,7 @@ To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
    Or, in GitHub Desktop, the **Clone a repository** dialog opens: 
 
-   ![The "Clone a repository" dialog in GitHub Desktop](./part2-content-scripts-images/clone-a-repo-dbox-ghd.png)
+   ![The "Clone a repository" dialog in GitHub Desktop](./part1-simple-extension-images/clone-a-repo-dbox-ghd.png)
 
 1. Specify the local drive path to place the cloned repo directory into; for example: `C:\Users\accountname\GitHub\`.
 
