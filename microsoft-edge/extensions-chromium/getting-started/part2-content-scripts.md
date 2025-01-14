@@ -1,20 +1,19 @@
 ---
 title: "Sample: Insert an image in the webpage"
-description: Uses JavaScript to insert a .png file below the <body> start-tag of the current webpage.
+description: Uses JavaScript to insert a .jpeg image file inside the <body> element of the current webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 01/10/2025
+ms.date: 01/13/2025
 ---
 # Sample: Insert an image in the webpage
 
-<!-- global: change article & sample in repo from "NASA picture of the day viewer" to "Picture viewer" -->
+This sample uses JavaScript code to insert the `stars.jpeg` image at the top of the current webpage, inside the `<body>` element.  The extension's pop-up contains a title and an HTML button that's labelled **Display**.  When you click the **Display** button, the extension's JavaScript code sends a message from the extension icon's pop-up, and dynamically inserts JavaScript that runs in the browser tab.
 
-This sample uses JavaScript code to insert the static `stars.jpeg` image into the top of the current webpage, below the `<body>` start-tag.  The extension's pop-up contains a title and an HTML button that's labelled **Display**.  When you click the **Display** button, JavaScript sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.
+This sample demonstrates the following extension features:
 
-This sample uses the following extension technologies:
 *  Injecting JavaScript libraries into an extension.
 *  Exposing extension assets to browser tabs.
 *  Including content webpages in existing browser tabs.
@@ -45,7 +44,7 @@ Obtain, install, and run the sample as follows.
 ## Clone the MicrosoftEdge-Extensions repo
 
 <!-- main copy of this section is in part1-simple-extension.md#Clone the MicrosoftEdge-Extensions repo >  -->
-You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.  These instructions use GitHub Desktop to clone the repo and switch to a working branch.<!-- future: doc git bash as the main way (use tabset if doc multiple ways) -->
+You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.  These instructions use GitHub Desktop to clone the repo and switch to a working branch.
 
 To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
@@ -63,11 +62,12 @@ To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
    Or, in GitHub Desktop, the **Clone a repository** dialog opens: 
 
-   ![The "Clone a repository" dialog in GitHub Desktop](./part2-content-scripts-images/clone-a-repo-dbox-ghd.png)<!-- todo: clean up png -->
+   ![The "Clone a repository" dialog in GitHub Desktop](./part2-content-scripts-images/clone-a-repo-dbox-ghd.png)
 
 1. Specify the local drive path to place the cloned repo directory into; for example: `C:\Users\accountname\GitHub\`.
 
 1. Click the **Clone** button.
+
 
    **Create working branch:**
 
@@ -85,9 +85,9 @@ To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
 You are now free to modify the code in your working branch, without altering the code that's in the "main" branch of the repo.  Later you might want to switch back to the "main" branch, or create a different branch based off the "main" branch.
 
-<!-- See also: -->
 <!--
-* [Step 2: Create a branch](https://docs.github.com/en/get-started/start-your-journey/hello-world#step-2-create-a-branch) in _Hello World_ in GitHub Docs. 
+See also:
+* [Step 2: Create a branch](https://docs.github.com/en/get-started/start-your-journey/hello-world#step-2-create-a-branch) in _Hello World_ in GitHub Docs.
 -->
 
 
@@ -98,11 +98,11 @@ Instead of installing the sample from the Store, you'll install the sample local
 
 1. In Microsoft Edge, click the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button, next to the Address bar, if this icon is displayed.  Or, select **Settings and more** (...) > ![Extensions icon](./part2-content-scripts-images/extensions-icon.png) **Extensions**.  The **Extensions** pop-up opens:
 
-   ![The Extensions popup when no extensions are installed](./part2-content-scripts-images/extensions-popup-no-extensions.png)<!-- not part-specific.  update to rounded corners? -->
+   ![The Extensions popup when no extensions are installed](./part2-content-scripts-images/extensions-popup-no-extensions.png)
 
 1. Click **Manage extensions**.  The **Extensions** management page opens in a new tab:
 
-   ![Turning on Developer Mode](./part2-content-scripts-images/developermode-toggle.png)<!-- not part-specific -->
+   ![Turning on Developer Mode](./part2-content-scripts-images/developermode-toggle.png)
 
 1. Turn on the **Developer mode** toggle.
 
@@ -136,7 +136,7 @@ Instead of installing the sample from the Store, you'll install the sample local
 
 1. Click the extension's icon or name (**NASA picture of the day viewer**).
 
-   The extension opens, and the extension's icon is added next to the Address bar and Extensions (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) icon.
+   The extension opens, and the extension's icon is added next to the Address bar and **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) icon.
 
    A pop-up opens, containing a small HTML page with a title, instructions, and a **Display** button:
 
@@ -209,9 +209,9 @@ This sample includes a content script that's injected into the webpage that's lo
 
 
 <!-- ====================================================================== -->
-## The default initial popup webpage (`popup.html`)
+## The initial popup webpage (`popup.html`)
 
-`popup.html` is specified in the manifest file as the initial, default webpage to display in the extension popup.  This webpage contains a title, instructions, and a **Display** button.
+`popup.html` is specified in the manifest file as the webpage to display in the extension's initial popup.  The manifest file contains the key field `"default_popup": "popup/popup.html"`.  This sample's `popup.html` file is a small webpage that contains a title, instructions, and a **Display** button.
 
 `/popup/popup.html`:<!-- (complete listing) -->
 
@@ -249,9 +249,7 @@ The **Display** button is added by the above code.
 <!-- ====================================================================== -->
 ## JavaScript (`popup.js`) for the initial pop-up page, to send a message to the injected JavaScript
 
-The `popup/popup.js` file includes the following code:
-
-This code sends a message to the content script (`content.js`) that's temporarily injected into the browser tab.  To do that, the following code adds an `onclick` event to the pop-up **Display** button:
+`popup.js` sends a message to the content script (`content.js`) that's temporarily injected into the browser tab.  To do that, `popup.js` adds an `onclick` event to the pop-up webpage's **Display** button, which has the ID `sendmessageid`:
 
 `/popup/popup.js` (portion):
 
@@ -264,15 +262,15 @@ if (sendMessageId) {
 }
 ```
 
-In the `onclick` event, find the current browser tab.  Then, use the `chrome.tabs.sendmessage` Extension API to send a message to that tab.
+In the following `popup.js` code, the sample uses `chrome.tabs.query` to find the current browser tab, and then uses `chrome.tabs.sendMessage` to send a message to that tab.
 
 In that message, you must include the URL to the image you want to display.  Make sure that you send a unique ID to assign to the inserted image.
 
 To send a unique ID to assign to the inserted image, a couple different approaches are possible:
-*  Approach 1: Let the content insertion JavaScript generate that image ID.  We won't use that approach here, for reasons that become apparent later.<!-- todo: summarize reason here -->
+*  Approach 1: Let the content insertion JavaScript generate that image ID.  We won't use that approach here, for reasons explained below.
 *  Approach 2: Generate that unique ID here in `popup.js`, and then pass that ID to the not-yet-created content script.  We'll use this approach.
 
-The following code outlines the updated code in `popup/popup.js`.<!-- todo: state whether this is the complete updated code listing for the final version of popup.js -->  You also pass in the current tab ID, which is used later in this article:
+The sample also passes in the current tab ID, which is described later in this article:
 
 `/popup/popup.js` (complete):
 
@@ -308,8 +306,6 @@ if (sendMessageId) {
 ## The content script message listener (`content.js`)
 
 Here's the `content-scripts\content.js` file that gets injected into every browser tab page based on the `content-scripts` section in `manifest.json`:
-
-`/content-scripts/content.js` (complete listing):
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -350,7 +346,7 @@ When an event is processed by the listener, the function that is the first param
 
 To make `images/stars.jpeg` available from any browser tab:
 * `popup.js` (above) uses the `chrome.runtime.getURL` API.
-* The manifest (below) specifies that `web_accessible_resources` of type `.jpg` match all URLs.
+* The manifest (below) specifies that `web_accessible_resources` of type `.jpeg` match all URLs.
 
 The sample injects the image by using the `src` attribute of the `img` element into the content page.  The content page is running on a unique thread that isn't the same as the thread running the extension.  The static image file must be exposed as a web asset, for it to work correctly.
 
@@ -413,7 +409,7 @@ The sample creates and inject the content page that's embedded on the current ac
 <!-- ------------------------------ -->
 #### The manifest's `content_scripts` section injects JavaScript into all browser tabs
 
-In the `content_scripts` key section, the `matches` attribute is set to `<all_urls>`, which means that `.js` (or `.css`) files that are specified in In the `content_scripts` key section are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript (`.js`) and CSS (`.css`).  
+In the `content_scripts` key section of the manifest file, the `matches` attribute is set to `<all_urls>`, which means that `.js` (or `.css`) files that are specified in the `content_scripts` key section are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript (`.js`) and CSS (`.css`).
 
 In this sample, the following files are specified:
 * `content-scripts/content.js`
@@ -425,9 +421,9 @@ In this sample, the following files are specified:
 
 `jquery.min.js` is a predefined, minified file to support jQuery expressions starting with `$` in `popup.js` and `content.js`.
 
-In injected content scripts, it's common to use jQuery (`$`).  This sample includes a minified version of jQuery, residing in the extension package<!-- todo: check 'package' --> as `lib\jquery.min.js`.
+In injected content scripts, it's common to use jQuery (`$`).  This sample includes a minified version of jQuery, residing in the extension package as `lib\jquery.min.js`.
 
-Each content script (`popup.js` and `content.js`) runs in an individual sandbox, which means that the jQuery that's injected into the initial popup page isn't shared with the current webpage.
+The content script (`content.js`) runs in its own sandbox, which means that the jQuery that's injected into `content.js` isn't shared with the current webpage.
 
 
 <!-- ------------------------------ -->
@@ -435,14 +431,13 @@ Each content script (`popup.js` and `content.js`) runs in an individual sandbox,
 
 Each tab page (and extension) runs in its own thread.
 
-Even if the browser tab has JavaScript running on it on the loaded web page, any content that's injected doesn't have access to that JavaScript.  The injected JavaScript only has access to the actual DOM that's loaded in that browser tab.
+Even if the browser tab contains a webpage that runs JavaScript code, the `content.js` script that's injected in that browser tab by the extension doesn't have access to that JavaScript code.  The injected content script only has access to the DOM of the webpage.
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
 To develop your own Microsoft Edge extension, you can copy and modify the sample's directory, and install and test the resulting extension.
-<!-- todo: mention which branch you're in -->
 
 
 <!-- ====================================================================== -->

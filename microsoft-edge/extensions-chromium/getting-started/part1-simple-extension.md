@@ -6,20 +6,20 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 01/10/2025
+ms.date: 01/13/2025
 ---
 # Sample: Display an image in a pop-up
 
 This sample is a simple static extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab:
 
-![The simple extension running](./part1-simple-extension-images/extension-running.png)
+![The simple extension running](./part1-simple-extension-images/extension-running.png)<!-- 1st use of this png -->
 
 
 <!-- ====================================================================== -->
 ## Clone the MicrosoftEdge-Extensions repo
 
 <!-- for all extensions samples, this is the main copy to propagate copy/paste/modify.  put comments on lines that vary per-sample -->
-You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.  These instructions use GitHub Desktop to clone the repo and switch to a working branch.<!-- future: doc git bash as the main way -->
+You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.  These instructions use GitHub Desktop to clone the repo and switch to a working branch.
 
 To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
@@ -29,13 +29,28 @@ To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
 1. Click the **Code** button, and then select **Open with GitHub Desktop**.
 
-   A dialog opens, saying **This site is trying to open GitHubDesktop.exe.**<!-- todo: update steps like part 2? -->
+   A dialog opens, saying **This site is trying to open GitHubDesktop.exe.**
 
 1. Click the **Open** button.
 
    GitHub Desktop opens, with the **MicrosoftEdge-Extensions** repo selected in the upper left dropdown list.
 
-1. In GitHub Desktop, click the **Branch** menu, and then click **New branch**.
+   Or, in GitHub Desktop, the **Clone a repository** dialog opens: 
+
+   ![The "Clone a repository" dialog in GitHub Desktop](./part2-content-scripts-images/clone-a-repo-dbox-ghd.png)
+
+1. Specify the local drive path to place the cloned repo directory into; for example: `C:\Users\accountname\GitHub\`.
+
+1. Click the **Clone** button.
+
+
+   **Create working branch:**
+
+1. In GitHub Desktop, make sure that in the upper left of GitHub desktop, **Current repository** is **MicrosoftEdge-Extensions**.
+
+   In the **Current branch** drop-down list, it says **main**.
+
+1. In the **Current branch** drop-down list, click the **Branches** tab, and then click the **New branch** button.
 
    The **Create a branch** dialog opens.
 
@@ -43,10 +58,12 @@ To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
    In the upper middle and lower left of GitHub Desktop, the current branch is shown, such as **ext-sample-1**.
 
-You are now free to modify the code in your working branch, without altering the code that's in the "main" branch of the repo.
+You are now free to modify the code in your working branch, without altering the code that's in the "main" branch of the repo.  Later you might want to switch back to the "main" branch, or create a different branch based off the "main" branch.
 
-<!-- See also: -->
-<!-- * [Step 2: Create a branch](https://docs.github.com/en/get-started/start-your-journey/hello-world#step-2-create-a-branch) in _Hello World_. -->
+<!--
+See also:
+* [Step 2: Create a branch](https://docs.github.com/en/get-started/start-your-journey/hello-world#step-2-create-a-branch) in _Hello World_ in GitHub Docs.
+-->
 
 
 <!-- ====================================================================== -->
@@ -80,6 +97,8 @@ Instead of installing the sample from the Store, you'll install the sample local
 <!-- ====================================================================== -->
 ## Run the sample
 
+1. Go to a webpage, such as [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)<!-- https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do -->, in a new window or tab.  For this sample, this step is optional and is just to match the screenshots; this sample doesn't require a webpage to be open.
+
 1. In the upper right of Microsoft Edge, click the **Extensions** (![Extensions icon](./part1-simple-extension-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**.
 
    The **Extensions** pop-up opens:
@@ -88,9 +107,9 @@ Instead of installing the sample from the Store, you'll install the sample local
 
 1. Click the extension's icon or name (**NASA picture of the day pop-up**).
 
-   The extension opens, and the extension's icon is added next to the Address bar and Extensions (![Extensions icon](./part1-simple-extension-images/extensions-icon.png)) icon.  The extension displays `popup.html`, containing `stars.jpeg`, in a pop-up:
+   The extension opens, and the extension's icon is added next to the Address bar and **Extensions** (![Extensions icon](./part1-simple-extension-images/extensions-icon.png)) icon.  The extension displays `popup.html`, containing `stars.jpeg`, in a pop-up:
 
-   ![The simple extension running](./part1-simple-extension-images/extension-running.png)
+   ![The simple extension running](./part1-simple-extension-images/extension-running.png)<!-- 2nd use of this png -->
 
    You can open this particular sample extension in any tab, including an empty tab or the **Manage Extensions** tab.
 
@@ -162,11 +181,16 @@ Every extension package must have a `manifest.json` file at the root.  The manif
 <!-- ====================================================================== -->
 ## Icons for launching the extension
 
-The `/icons/` directory is in the same directory as the manifest file, to store the icon image files.  The icons are used as the background image for the button that you click to launch the extension:
+The `/icons/` directory contains the icon image files.  The icons are used as the background image for the button that you click to launch the extension:
 
-![Icon on the toolbar to open the extension](./part1-simple-extension-images/part1-badge1.png)
+![The extension's icon in the Extensions pop-up list](./part1-simple-extension-images/extensions-popup-with-launch-icon.png)
+<!-- ~~ -->
+
+When the extension is running, one of the icons is displayed on the toolbar, next to the Address bar:
 
 ![Icon on the toolbar](./part1-simple-extension-images/icon-png-toolbar.png)
+
+To close the extension, click the extension's icon on the toolbar, or click the **Extensions** (![Extensions icon](./part1-simple-extension-images/extensions-icon.png)) button.
 
 Recommendations for icons:
 * Use `PNG` format, but you can also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
@@ -174,7 +198,7 @@ Recommendations for icons:
 
 
 <!-- ====================================================================== -->
-## The default pop-up dialog (`popup.html`)
+## The pop-up dialog (`popup.html`)
 
 `popup.html` in the `popup` directory runs when you launch the extension.  When you click the icon to launch the extension, this file is displayed as a modal dialog.
 
@@ -194,7 +218,9 @@ Recommendations for icons:
 </html>
 ```
 
-The popup (`popup.html`) is registered as the default popup in `manifest.json` under `action`:
+The popup (`popup.html`) is registered as the `"default_popup"` in `manifest.json`, in the `action` key section:
+
+`manifest.json` (portion)
 
 ```json
 {
@@ -205,19 +231,11 @@ The popup (`popup.html`) is registered as the default popup in `manifest.json` u
 }
 ```
 
-<!-- ------------------------------ -->
-#### The Part 1 sample running
-
-The simple extension running:
-
-![The simple extension running](./part1-simple-extension-images/extension-running.png)
-
 
 <!-- ====================================================================== -->
 ## Next steps
 
 To develop your own Microsoft Edge extension, you can copy and modify the sample's directory, and install and test the resulting extension.
-<!-- todo: mention which branch you're in -->
 
 After running and testing this extension sample, you can continue on to [Sample: Insert an image in the webpage](./part2-content-scripts.md), which dynamically inserts JavaScript running as content in the browser tab.
 
