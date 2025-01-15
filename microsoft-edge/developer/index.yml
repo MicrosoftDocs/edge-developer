@@ -101,7 +101,7 @@ landingContent:
           - text: Register as a Microsoft Edge extension developer
             url: ../extensions-chromium/publish/create-dev-account.md
 
-          - text: "Sample: Display an image in a pop-up"
+          - text: "Sample: Picture viewer pop-up webpage"
             url: ../extensions-chromium/getting-started/picture-viewer-popup-webpage.md
 
 # -----------------------------------------------------------------------------

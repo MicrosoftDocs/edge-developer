@@ -1,19 +1,27 @@
 ---
-title: "Sample: Insert an image in the webpage"
+title: "Sample: Picture inserter using content script"
 description: Uses JavaScript to insert a .jpeg image file inside the <body> element of the current webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 01/13/2025
+ms.date: 01/15/2025
 ---
-# Sample: Insert an image in the webpage
+# Sample: Picture inserter using content script
 <!-- 
-# Sample: Picture inserter using a content script
+length limit on sample name: in manifest:
+"name": "Picture inserter using content script",
+longer name would get truncated in the Extensions pop-up:
+"name": "Picture inserter using a content scr...",
 -->
 
-This sample uses JavaScript code to insert the `stars.jpeg` image at the top of the current webpage, inside the `<body>` element.  The extension's pop-up contains a title and an HTML button that's labelled **Display**.  When you click the **Display** button, the extension's JavaScript code sends a message from the extension icon's pop-up, and dynamically inserts JavaScript that runs in the browser tab.
+<!-- lexicon usage:
+popup - use in code & filenames
+pop-up - use in English text sentences
+-->
+
+This sample uses JavaScript code to insert the `stars.jpeg` image at the top of the current webpage, inside the `<body>` element.  The extension's pop-up contains a title and an HTML button that's labelled **Insert picture**.  When you click the **Insert picture** button, the extension's JavaScript code sends a message from the extension icon's pop-up, and dynamically inserts JavaScript that runs in the browser tab.
 
 This sample demonstrates the following extension features:
 
@@ -26,17 +34,17 @@ This sample demonstrates the following extension features:
 <!-- ====================================================================== -->
 ## Preview of the sample
 
-You'll open the Part 2 extension from the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button after installing the extension via the **Manage Extensions** tab:
+You'll install the extension sample by using the browser's **Manage Extensions** tab, click the **Extensions** (![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png)) button to show the list of installed extensions, and then click this sample extension:
 
-![Clicking the extension's icon to open the extension](./part2-content-scripts-images/open-the-extension.png)
+![Clicking the extension's icon to open the extension](./picture-inserter-content-script-images/open-the-extension.png)<!-- todo: update -->
 
-The extension displays a small HTML page in a pop-up, containing a title, instructions, and a **Display** button:
+The extension displays a small HTML webpage in a pop-up, containing a title, an **Insert picture** button, and instructions:
 
-![popup.html display after selecting the Extension icon](./part2-content-scripts-images/part2-popupdialog.png)
+![popup.html display after selecting the Extension icon](./picture-inserter-content-script-images/popup-webpage.png)
 
-When you click the **Display** button, JavaScript code temporarily inserts `stars.jpeg` at the top of the current webpage, pushing down the content of the webpage to below the image.  The injected content sets the image element to display the static image `stars.jpeg` in the top of the current webpage:
+When you click the **Insert picture** button, JavaScript code temporarily inserts `stars.jpeg` at the top of the current webpage, pushing down the content of the webpage to below the image.  The injected content sets the image element to display the static image `stars.jpeg` in the top of the current webpage:
 
-![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
+![The image showing in browser](./picture-inserter-content-script-images/current-webpage-with-image-inserted.png)
 
 When you click the image, the injected JavaScript removes the image from the DOM tree and webpage.
 
@@ -65,7 +73,7 @@ To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
    Or, in GitHub Desktop, the **Clone a repository** dialog opens: 
 
-   ![The "Clone a repository" dialog in GitHub Desktop](./part2-content-scripts-images/clone-a-repo-dbox-ghd.png)
+   ![The "Clone a repository" dialog in GitHub Desktop](./picture-inserter-content-script-images/clone-a-repo-dbox-ghd.png)
 
 1. Specify the local drive path to place the cloned repo directory into; for example: `C:\Users\accountname\GitHub\`.
 
@@ -99,23 +107,23 @@ See also:
 
 Instead of installing the sample from the Store, you'll install the sample locally, so that you can possibly modify it and quickly test the changes.  Installing locally is sometimes called _sideloading_ an extension.
 
-1. In Microsoft Edge, click the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button, next to the Address bar, if this icon is displayed.  Or, select **Settings and more** (...) > ![Extensions icon](./part2-content-scripts-images/extensions-icon.png) **Extensions**.  The **Extensions** pop-up opens:
+1. In Microsoft Edge, click the **Extensions** (![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png)) button, next to the Address bar, if this icon is displayed.  Or, select **Settings and more** (...) > ![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png) **Extensions**.  The **Extensions** pop-up opens:
 
-   ![The Extensions popup when no extensions are installed](./part2-content-scripts-images/extensions-popup-no-extensions.png)
+   ![The Extensions pop-up when no extensions are installed](./picture-inserter-content-script-images/extensions-popup-no-extensions.png)
 
 1. Click **Manage extensions**.  The **Extensions** management page opens in a new tab:
 
-   ![Turning on Developer Mode](./part2-content-scripts-images/developermode-toggle.png)
+   ![Turning on Developer Mode](./picture-inserter-content-script-images/developermode-toggle.png)
 
 1. Turn on the **Developer mode** toggle.
 
-1. When installing the sample extension for the first time, click the **Load unpacked** (![The "Load unpacked" icon](./part2-content-scripts-images/load-unpacked-icon.png)) button.  The **Select the extension directory** dialog opens.
+1. When installing the sample extension for the first time, click the **Load unpacked** (![The "Load unpacked" icon](./picture-inserter-content-script-images/load-unpacked-icon.png)) button.  The **Select the extension directory** dialog opens.
 
 1. Select the directory that contains the extension's source files, such as `manifest.json`.
 
    Example path:
 
-   `C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part2\extension-getting-started-part2`
+   `C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension samples\picture-inserter-content-script`
 
 1. Click the **Select Folder** button.
 
@@ -123,7 +131,7 @@ Instead of installing the sample from the Store, you'll install the sample local
 
    The extension is installed in the browser, similar to an extension that's installed from the store:
 
-   ![Installed extensions page, showing a sideloaded extension](./part2-content-scripts-images/part2-installed-extension.png)
+   ![Installed extensions page, showing a sideloaded extension](./picture-inserter-content-script-images/installed-extension.png)
 
 
 <!-- ====================================================================== -->
@@ -131,23 +139,23 @@ Instead of installing the sample from the Store, you'll install the sample local
 
 1. Go to a webpage, such as [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)<!-- https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do -->, in a new window or tab.  The tab must not be empty, and must not be the Manage Extensions page, because this sample inserts content into the current webpage.
 
-1. In Microsoft Edge to the right of the Address bar, if this icon is displayed, click the **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**.
+1. In Microsoft Edge to the right of the Address bar, if this icon is displayed, click the **Extensions** (![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**.
 
    The **Extensions** pop-up opens:
 
-   ![Clicking the extension's icon to open the extension](./part2-content-scripts-images/open-the-extension.png)
+   ![Clicking the extension's icon to open the extension](./picture-inserter-content-script-images/open-the-extension.png)
 
-1. Click the extension's icon or name (**NASA picture of the day viewer**).
+1. Click the extension's icon or name (**Picture inserter using content script**).
 
-   The extension opens, and the extension's icon is added next to the Address bar and **Extensions** (![Extensions icon](./part2-content-scripts-images/extensions-icon.png)) icon.
+   The extension opens, and the extension's icon is added next to the Address bar and **Extensions** (![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png)) icon.
 
-   A pop-up opens, containing a small HTML page with a title, instructions, and a **Display** button:
+   A pop-up opens, containing a small HTML webpage with a title, an **Insert picture** button, and instructions:
 
-   ![popup.html after clicking the Extension's icon](./part2-content-scripts-images/part2-popupdialog.png)
+   ![popup.html after clicking the Extension's icon](./picture-inserter-content-script-images/popup-webpage.png)
 
-1. Click the **Display** button.  `stars.jpeg` is inserted into the top of the current webpage in the current tab, pushing the webpage's content down below the image:
+1. Click the **Insert picture** button.  `stars.jpeg` is inserted into the top of the current webpage in the current tab, pushing the webpage's content down below the image:
 
-   ![The image showing in browser](./part2-content-scripts-images/part2-showingimage.png)
+   ![The image showing in browser](./picture-inserter-content-script-images/current-webpage-with-image-inserted.png)
 
 1. Click the `stars.jpeg` image that's filling the top of the webpage.  That image element is removed from the DOM tree and webpage, and the current webpage is restored, shifting its content back up to the top of the tab.
 
@@ -169,33 +177,33 @@ In the following sections, you study the sample.  After that, to develop your ow
 The sample has the following directory structure and files.
 
 Example path for the sample:
-`C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part2\extension-getting-started-part2`
 
-Directories and files in the `\extension-getting-started-part2\` directory:
+`C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension samples\picture-inserter-content-script`
+
+Directories and files in the `/picture-inserter-content-script/` directory:
 
 ```shell
 /content-scripts/
    content.js
 /icons/
-   nasapod16x16.png
-   nasapod32x32.png
-   nasapod48x48.png
-   nasapod128x128.png
+   extension-icon16x16.png
+   extension-icon32x32.png
+   extension-icon48x48.png
+   extension-icon128x128.png
 /images/
    stars.jpeg
-/lib/
-   jquery.min.js
 /popup/
    popup.html
    popup.js
 manifest.json
 ```
 
-* The `/content-scripts/` directory contains `content.js`, which is the injected script that's injected into the current webpage.
-* The `/icons/` directory contains versions of a `.png` file that's used to represent the extension near the browser's Address bar.
+* The `/content-scripts/` directory contains `content.js`, which is the script that's injected into the current webpage.
+* The `/icons/` directory contains versions of a `.png` file that's used to represent the extension near the browser's Address bar, in the **Extensions** pop-up, and in the **Extensions** management page.
 * The `/images/` directory contains `stars.jpeg`, which is displayed in the extension's pop-up.
-* The `/lib/` directory contains `jquery.min.js`, which is a predefined, minified file, a minified version of jQuery, used in content scripts that you're injecting.
-* The `/popup/` directory contains `popup.html`, which defines the webpage content that's displayed in the extension's pop-up.
+* The `/popup/` directory contains the files:
+   * `popup.html` defines the content in the extension's initial pop-up webpage (a title, button, and instructions).
+   * `popup.js` for the initial pop-up webpage sends a message to the content script (`content.js`) that's running on the tab page, specifying which image file to display.
 * `manifest.json` contains basic information about the extension.
 
 
@@ -204,19 +212,19 @@ manifest.json
 
 This sample includes a content script that's injected into the webpage that's loaded in the current browser tab.
 
-1. When you run the extension sample, the initial popup HTML page is displayed (`popup.html`), showing a title, instructions, and the **Display** button.
+1. When you run the extension sample, the initial pop-up HTML page is displayed (`popup.html`), showing a title, instructions, and the **Insert picture** button.
 
-1. When you click the **Display** button, the JavaScript (`popup.js`) for the initial popup page sends a message to the content script (`content.js`) that's running on the tab page.  The message specifies which image file should be displayed.
+1. When you click the **Insert picture** button, the JavaScript (`popup.js`) for the initial pop-up page sends a message to the content script (`content.js`) that's running on the tab page.  The message specifies which image file to display.
 
 1. The content script (`content.js`) running on the tab page receives the message, and displays the specified image file (`stars.jpeg`).
 
 
 <!-- ====================================================================== -->
-## The initial popup webpage (`popup.html`)
+## The initial pop-up webpage (`popup.html`)
 
-`popup.html` is specified in the manifest file as the webpage to display in the extension's initial popup.  The manifest file contains the key field `"default_popup": "popup/popup.html"`.  This sample's `popup.html` file is a small webpage that contains a title, instructions, and a **Display** button.
+`/popup/popup.html` is specified in the manifest file as the webpage to display in the extension's initial pop-up.  The manifest file contains the key field `"default_popup": "popup/popup.html"`.  This sample's `popup.html` file is a small webpage that contains a title, an **Insert picture** button, and instructions.
 
-`/popup/popup.html`:<!-- (complete listing) -->
+`popup.html`:
 
 ```html
 <!DOCTYPE html>
@@ -238,44 +246,37 @@ This sample includes a content script that's injected into the webpage that's lo
         </style>
     </head>
     <body>
-        <h1>Display the NASA picture of the day</h1>
-        <h2>(click the image to remove it from the webpage)</h2>
-        <button id="sendmessageid">Display</button>
+        <h1>Picture inserter using a content script</h1>
+        <button id="sendmessageid">Insert picture</button>
         <script src="popup.js"></script>
+        <p>Click the displayed image to remove it from the webpage.</p>
     </body>
 </html>
 ```
-
-The **Display** button is added by the above code.
+<!-- updated from sample -->
 
 
 <!-- ====================================================================== -->
 ## JavaScript (`popup.js`) for the initial pop-up page, to send a message to the injected JavaScript
 
-`popup.js` sends a message to the content script (`content.js`) that's temporarily injected into the browser tab.  To do that, `popup.js` adds an `onclick` event to the pop-up webpage's **Display** button, which has the ID `sendmessageid`:
+`/popup/popup.js` sends a message to the content script (`content.js`) that's temporarily injected into the browser tab.  To do that, `popup.js` adds an `onclick` event to the pop-up webpage's **Insert picture** button, which has the ID `sendmessageid`:
 
-`/popup/popup.js` (portion):
+`popup.js` (portion):
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
 if (sendMessageId) {
-  sendMessageId.onclick = function() {
-    // do something
-  };
+    sendMessageId.onclick = function() {
+        ...
+    };
 }
 ```
 
-In the following `popup.js` code, the sample uses `chrome.tabs.query` to find the current browser tab, and then uses `chrome.tabs.sendMessage` to send a message to that tab.
+In `popup.js`, `chrome.tabs.query` finds the current browser tab, and then `chrome.tabs.sendMessage` sends a message to that tab.  The sample passes in the current tab's ID.  The message must include the URL for the image that will be displayed.
 
-In that message, you must include the URL to the image you want to display.  Make sure that you send a unique ID to assign to the inserted image.
+You must send a unique ID to assign to the inserted image, in order to find the image element again later and delete it.  To send a unique ID to assign to the inserted image, the unique ID is generated in `popup.js` and passed to the content script.
 
-To send a unique ID to assign to the inserted image, a couple different approaches are possible:
-*  Approach 1: Let the content insertion JavaScript generate that image ID.  We won't use that approach here, for reasons explained below.
-*  Approach 2: Generate that unique ID here in `popup.js`, and then pass that ID to the not-yet-created content script.  We'll use this approach.
-
-The sample also passes in the current tab ID, which is described later in this article:
-
-`/popup/popup.js` (complete):
+`popup.js` (complete):
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -286,62 +287,58 @@ if (sendMessageId) {
                 tabs[0].id,
                 {
                     url: chrome.runtime.getURL("images/stars.jpeg"),
-                    imageDivId: `${guidGenerator()}`,
+                    imageDivId: crypto.randomUUID(),
                     tabId: tabs[0].id
                 },
                 function(response) {
                     window.close();
                 }
             );
-            function guidGenerator() {
-                const S4 = function () {
-                    return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
-                };
-                return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
-            }
         });
     };
 }
 ```
+<!-- updated from sample -->
 
 
 <!-- ====================================================================== -->
 ## The content script message listener (`content.js`)
 
-Here's the `content-scripts\content.js` file that gets injected into every browser tab page based on the `content-scripts` section in `manifest.json`:
+Here's the `content-scripts\content.js` file that gets injected into every browser tab page.  This file is listed in the `content-scripts` section in `manifest.json`.
+
+`content.js`:
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    $("body").prepend(
-        `<img  src="${request.url}" id="${request.imageDivId}"
-               class="slide-image" /> `
-    );
-    $("head").prepend(
-        `<style>
-          .slide-image {
-              height: auto;
-              width: 100vw;
-          }
-        </style>`
-    );
-    $(`#${request.imageDivId}`).click(function() {
-        $(`#${request.imageDivId}`).remove(`#${request.imageDivId}`);
-    });
-    sendResponse({ fromcontent: "This message is from content.js" });
+  const img = document.createElement("img");
+  img.id = request.imageDivId;
+  img.src = request.url;
+  img.style = "height: auto; width: 90vw;";
+  document.body.prepend(img);
+
+  img.addEventListener("click", () => {
+      img.remove();
+  }, { once: true });
+
+  sendResponse({ fromcontent: "This message is from content.js" });
 });
 ```
+<!-- updated from sample -->
 
 This code registers a `listener` by using the `chrome.runtime.onMessage.addListener` Extension API method.  This listener waits for messages like the one you sent from the `popup.js` described earlier with the `chrome.tabs.sendMessage` Extension API method.
 
-The first parameter of the `addListener` method is a function whose first parameter, request, is the details of the message being passed in.  Remember, from `popup.js`, when you used the `sendMessage` method, those attributes of the first parameter are `url` and `imageDivId`.
+The first parameter of the `addListener` method is a function whose first parameter, `request`, is the details of the message being passed in.
 
-When an event is processed by the listener, the function that is the first parameter is run.  The first parameter of that function is an object that has attributes as assigned by `sendMessage`.  That function simply processes the three jQuery script lines.
+In `popup.js`, for the `sendMessage` method call, the attributes of the second parameter are `url`, `imageDivId`, and `tabId`.
 
-*   The first script line appends an `img` element right below the `body` of the browser tab that has the `slide-image` class assigned as well as the `imageDivId` as the ID of that image element.
+<!-- todo: update this text to match the latest code -->
+In `content.js`, when an event is processed by the listener, the function<!-- todo: name of function --> that is the first parameter<!-- todo: name of param --> is run.  The first parameter of that function is an object that has attributes as assigned by `sendMessage`.  That function processes the three<!-- todo: update --> script lines.
 
-*   The second script line dynamically inserts into the DOM header a **\<style\>** section that's assigned as a `slide-image` class to the `img` element.
+*   The first script line appends an `img` element right below the `body` of the browser tab that has the `slide-image` class assigned as well as the `imageDivId` as the ID of that image element.<!-- todo: update this text to match the latest code -->
 
-*   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page (along with it is event listener).
+*   The second script line dynamically inserts into the DOM header a **\<style\>** section that's assigned as a `slide-image` class to the `img` element.<!-- todo: update this text to match the latest code -->
+
+*   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page (along with it is event listener).<!-- todo: update this text to match the latest code -->
 
 
 <!-- ====================================================================== -->
@@ -378,15 +375,15 @@ The sample creates and inject the content page that's embedded on the current ac
 
 ```json
 {
-    "name": "NASA picture of the day viewer",
+    "name": "Picture inserter using content script",
     "version": "0.0.0.1",
     "manifest_version": 3,
-    "description": "An extension that uses JavaScript to insert an image at the top of the webpage.",
+    "description": "A browser extension that uses JavaScript to insert an image at the top of the current webpage.",
     "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
+        "16": "icons/extension-icon16x16.png",
+        "32": "icons/extension-icon32x32.png",
+        "48": "icons/extension-icon48x48.png",
+        "128": "icons/extension-icon128x128.png"
     },
     "action": {
         "default_popup": "popup/popup.html"
@@ -396,7 +393,7 @@ The sample creates and inject the content page that's embedded on the current ac
             "matches": [
               "<all_urls>"
             ],
-            "js": ["lib/jquery.min.js","content-scripts/content.js"]
+            "js": ["content-scripts/content.js"]
         }
     ],
     "web_accessible_resources": [
@@ -407,34 +404,29 @@ The sample creates and inject the content page that's embedded on the current ac
     ]
 }
 ```
+<!-- updated from sample -->
 
 
-<!-- ------------------------------ -->
-#### The manifest's `content_scripts` section injects JavaScript into all browser tabs
+<!-- ====================================================================== -->
+## The manifest's `content_scripts` section injects JavaScript into all browser tabs
 
 In the `content_scripts` key section of the manifest file, the `matches` attribute is set to `<all_urls>`, which means that `.js` (or `.css`) files that are specified in the `content_scripts` key section are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript (`.js`) and CSS (`.css`).
 
-In this sample, the following files are specified:
-* `content-scripts/content.js`
-* `lib/jquery.min.js`
+This sample's manifest specifies a single content script, `content-scripts/content.js`.
 
 
-<!-- ------------------------------ -->
-#### How jQuery support is added (`jquery.min.js`)
+<!-- ====================================================================== -->
+## Each content script runs in its own thread, sandboxed
 
-`jquery.min.js` is a predefined, minified file to support jQuery expressions starting with `$` in `content.js`.
+Each tab page (and extension) runs in its own thread.  Even if the browser tab contains a webpage that runs JavaScript code, the `content.js` script that's injected in that browser tab by the extension doesn't have access to that JavaScript code.  The injected content script only has access to the DOM of the webpage.
 
-In injected content scripts, it's common to use jQuery (`$`).  This sample includes a minified version of jQuery, residing in the extension package as `lib\jquery.min.js`.
+The content script (`content.js`) runs in its own sandbox, separate from any `.js` file that's used by the current webpage, such as `to-do.js` when the current page is `/demo-to-do/index.html`.  The [index.html source file](https://github.com/MicrosoftEdge/Demos/blob/main/demo-to-do/index.html) loads `to-do.js` as follows:
 
-The content script (`content.js`) runs in its own sandbox, which means that the jQuery that's injected into `content.js` isn't shared with the current webpage.
-
-
-<!-- ------------------------------ -->
-#### Understanding the thread
-
-Each tab page (and extension) runs in its own thread.
-
-Even if the browser tab contains a webpage that runs JavaScript code, the `content.js` script that's injected in that browser tab by the extension doesn't have access to that JavaScript code.  The injected content script only has access to the DOM of the webpage.
+```html
+    <script src="to-do.js"></script>
+  </body>
+</html>
+```
 
 
 <!-- ====================================================================== -->
@@ -447,9 +439,9 @@ To develop your own Microsoft Edge extension, you can copy and modify the sample
 ## See also
 <!-- all links in article -->
 
-* [Sample: Display an image in a pop-up](./picture-viewer-popup-webpage.md)
+* [Sample: Picture viewer pop-up webpage](./picture-viewer-popup-webpage.md)
 * [Sideload an extension to install and test it locally](extension-sideloading.md)
 
 GitHub:
 * [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.
-   * [/extension-getting-started-part2/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2) - source code of the Part 2 sample.
+   * [/picture-inserter-content-script/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/picture-inserter-content-script) - source code of this sample.

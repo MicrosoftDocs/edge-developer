@@ -49,10 +49,10 @@ landingContent:
           - text: Extension concepts and architecture
             url: ../getting-started/index.md
 
-          - text: "Sample: Display an image in a pop-up"
+          - text: "Sample: Picture viewer pop-up webpage"
             url: ../getting-started/picture-viewer-popup-webpage.md
 
-          - text: "Sample: Insert an image in the webpage"
+          - text: "Sample: Picture inserter using content script"
             url: ../getting-started/picture-inserter-content-script.md
 
           - text: Sideload an extension to install and test it locally
