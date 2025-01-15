@@ -10,9 +10,7 @@ ms.date: 01/15/2025
 ---
 # Sample: Picture inserter using content script
 <!-- 
-length limit on sample name: in manifest:
-"name": "Picture inserter using content script",
-longer name would get truncated in the Extensions pop-up:
+longer name would get truncated in Extensions pop-up:
 "name": "Picture inserter using a content scr...",
 -->
 
@@ -36,7 +34,7 @@ This sample demonstrates the following extension features:
 
 You'll install the extension sample by using the browser's **Manage Extensions** tab, click the **Extensions** (![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png)) button to show the list of installed extensions, and then click this sample extension:
 
-![Clicking the extension's icon to open the extension](./picture-inserter-content-script-images/open-the-extension.png)<!-- todo: update -->
+![Clicking the extension's icon to open the extension](./picture-inserter-content-script-images/open-the-extension.png)
 
 The extension displays a small HTML webpage in a pop-up, containing a title, an **Insert picture** button, and instructions:
 
@@ -253,7 +251,6 @@ This sample includes a content script that's injected into the webpage that's lo
     </body>
 </html>
 ```
-<!-- updated from sample -->
 
 
 <!-- ====================================================================== -->
@@ -298,7 +295,6 @@ if (sendMessageId) {
     };
 }
 ```
-<!-- updated from sample -->
 
 
 <!-- ====================================================================== -->
@@ -306,7 +302,7 @@ if (sendMessageId) {
 
 Here's the `content-scripts\content.js` file that gets injected into every browser tab page.  This file is listed in the `content-scripts` section in `manifest.json`.
 
-`content.js`:
+`content.js` (complete):
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -323,22 +319,40 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   sendResponse({ fromcontent: "This message is from content.js" });
 });
 ```
-<!-- updated from sample -->
 
-This code registers a `listener` by using the `chrome.runtime.onMessage.addListener` Extension API method.  This listener waits for messages like the one you sent from the `popup.js` described earlier with the `chrome.tabs.sendMessage` Extension API method.
+`content.js` registers a listener by using the `chrome.runtime.onMessage.addListener` Extension API method.  This listener waits for the message that's sent when `popup.js` calls `chrome.tabs.sendMessage`.
 
-The first parameter of the `addListener` method is a function whose first parameter, `request`, is the details of the message being passed in.
+In `content.js`, the `addListener` method takes a single parameter that's a function.  That function's first parameter, `request`, contains the details of the message that's being passed in.
 
-In `popup.js`, for the `sendMessage` method call, the attributes of the second parameter are `url`, `imageDivId`, and `tabId`.
+In `content.js`, when an event is processed by the listener, the listener function that's passed into `addListener` is run.  The first parameter of the passed-in listener function is a `request` object that has attributes as assigned by `sendMessage`.  
 
-<!-- todo: update this text to match the latest code -->
-In `content.js`, when an event is processed by the listener, the function<!-- todo: name of function --> that is the first parameter<!-- todo: name of param --> is run.  The first parameter of that function is an object that has attributes as assigned by `sendMessage`.  That function processes the three<!-- todo: update --> script lines.
+In `popup.js`, for the `chrome.tabs.sendMessage` method call, the attributes of the second parameter for `sendMessage` are `url`, `imageDivId`, and `tabId`.
 
-*   The first script line appends an `img` element right below the `body` of the browser tab that has the `slide-image` class assigned as well as the `imageDivId` as the ID of that image element.<!-- todo: update this text to match the latest code -->
+Here's the isolated listener function that's passed into `addListener`:
 
-*   The second script line dynamically inserts into the DOM header a **\<style\>** section that's assigned as a `slide-image` class to the `img` element.<!-- todo: update this text to match the latest code -->
+`content.js` (portion)
 
-*   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page (along with it is event listener).<!-- todo: update this text to match the latest code -->
+```javascript
+function(request, sender, sendResponse) {
+  const img = document.createElement("img");
+  img.id = request.imageDivId;
+  img.src = request.url;
+  img.style = "height: auto; width: 90vw;";
+  document.body.prepend(img);
+
+  img.addEventListener("click", () => {
+      img.remove();
+  }, { once: true });
+
+  sendResponse({ fromcontent: "This message is from content.js" });
+}
+```
+
+The first five lines in the listener function append an `img` element immediately below the `body` element in the browser tab.
+
+The second line in the listener function, `img.id = request.imageDivId;`, sets the ID of the `img` element to the `imageDivId` of the passed-in request.
+
+In the listener function, the `addEventListener` call adds a `click` event listener function that covers the entire image, allowing the user to click anywhere on the image.  When you click the inserted image, the image is removed from the current webpage by the line `img.remove();`, and the event listener is also removed, by specifying `{ once: true }`.
 
 
 <!-- ====================================================================== -->
@@ -404,7 +418,6 @@ The sample creates and inject the content page that's embedded on the current ac
     ]
 }
 ```
-<!-- updated from sample -->
 
 
 <!-- ====================================================================== -->

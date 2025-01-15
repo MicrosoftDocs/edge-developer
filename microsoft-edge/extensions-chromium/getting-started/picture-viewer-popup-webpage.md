@@ -186,7 +186,6 @@ Every extension package must have a `manifest.json` file at the root.  The manif
   }
 }
 ```
-<!-- updated from sample -->
 
 
 <!-- ====================================================================== -->
@@ -195,7 +194,6 @@ Every extension package must have a `manifest.json` file at the root.  The manif
 The `/icons/` directory contains the icon image files.  The icons are used as the background image for the button that you click to launch the extension:
 
 ![The extension's icon in the Extensions pop-up list](./picture-viewer-popup-webpage-images/extensions-popup-with-launch-icon.png)
-<!-- ~~ -->
 
 When the extension is running, one of the icons is displayed on the toolbar, next to the Address bar:
 
@@ -228,8 +226,6 @@ Recommendations for icons:
     </body>
 </html>
 ```
-<!-- updated from sample -->
-
 
 The pop-up webpage (`popup.html`) is registered as the `"default_popup"` in `manifest.json`, in the `action` key section:
 
