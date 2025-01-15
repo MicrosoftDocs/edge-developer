@@ -240,7 +240,7 @@ The popup (`popup.html`) is registered as the `"default_popup"` in `manifest.jso
 
 To develop your own Microsoft Edge extension, you can copy and modify the sample's directory, and install and test the resulting extension.
 
-After running and testing this extension sample, you can continue on to [Sample: Insert an image in the webpage](./part2-content-scripts.md), which dynamically inserts JavaScript running as content in the browser tab.
+After running and testing this extension sample, you can continue on to [Sample: Insert an image in the webpage](./picture-inserter-content-script.md), which dynamically inserts JavaScript running as content in the browser tab.
 
 
 <!-- ====================================================================== -->
@@ -248,7 +248,7 @@ After running and testing this extension sample, you can continue on to [Sample:
 <!-- all links in article -->
 
 * [Sideload an extension to install and test it locally](./extension-sideloading.md)
-* [Sample: Insert an image in the webpage](./part2-content-scripts.md)
+* [Sample: Insert an image in the webpage](./picture-inserter-content-script.md)
 
 GitHub:
 * [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.

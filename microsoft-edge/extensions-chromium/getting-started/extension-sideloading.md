@@ -32,11 +32,11 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
 
 1. Select the directory that contains the extension's source files, such as `manifest.json`, and then click the **Select Folder** button.
 
-   Example path for [Sample: Display an image in a pop-up](./part1-simple-extension.md):
+   Example path for [Sample: Display an image in a pop-up](./picture-viewer-popup-webpage.md):
 
    `C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part1\part1\`
 
-   Example path for [Sample: Insert an image in the webpage](./part2-content-scripts.md):
+   Example path for [Sample: Insert an image in the webpage](./picture-inserter-content-script.md):
 
    `C:\Users\myUsername\GitHub\MicrosoftEdge-Extensions\Extension samples\extension-getting-started-part2\extension-getting-started-part2\`
 
@@ -83,5 +83,5 @@ To remove an extension that's been installed locally (sideloaded) in your browse
 ## See also
 <!-- all links in article -->
 
-* [Sample: Display an image in a pop-up](./part1-simple-extension.md)
-* [Sample: Insert an image in the webpage](./part2-content-scripts.md)
+* [Sample: Display an image in a pop-up](./picture-viewer-popup-webpage.md)
+* [Sample: Insert an image in the webpage](./picture-inserter-content-script.md)

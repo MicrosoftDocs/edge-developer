@@ -258,7 +258,7 @@ conceptualContent:
               itemType: how-to-guide
 
             - text: "Sample: Display an image in a pop-up"
-              url: ./extensions-chromium/getting-started/part1-simple-extension.md
+              url: ./extensions-chromium/getting-started/picture-viewer-popup-webpage.md
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------

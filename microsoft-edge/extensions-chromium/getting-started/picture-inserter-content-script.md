@@ -46,7 +46,7 @@ Obtain, install, and run the sample as follows.
 <!-- ====================================================================== -->
 ## Clone the MicrosoftEdge-Extensions repo
 
-<!-- main copy of this section is in part1-simple-extension.md#Clone the MicrosoftEdge-Extensions repo >  -->
+<!-- main copy of this section is in picture-viewer-popup-webpage.md#Clone the MicrosoftEdge-Extensions repo >  -->
 You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.  These instructions use GitHub Desktop to clone the repo and switch to a working branch.
 
 To clone the `MicrosoftEdge-Extensions` repo to your local drive:
@@ -447,7 +447,7 @@ To develop your own Microsoft Edge extension, you can copy and modify the sample
 ## See also
 <!-- all links in article -->
 
-* [Sample: Display an image in a pop-up](./part1-simple-extension.md)
+* [Sample: Display an image in a pop-up](./picture-viewer-popup-webpage.md)
 * [Sideload an extension to install and test it locally](extension-sideloading.md)
 
 GitHub:
