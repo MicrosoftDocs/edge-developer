@@ -71,8 +71,6 @@ Microsoft Edge 132 also includes the following updates from the Chromium project
 * [JS objects with the same name grouped by source in the Memory panel](https://developer.chrome.com/blog/new-in-devtools-132#memory)
 * [A new look for settings](https://developer.chrome.com/blog/new-in-devtools-132#settings)
 * [Performance insights panel is deprecated and removed from DevTools](https://developer.chrome.com/blog/new-in-devtools-132#perf-insights)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-132#misc)
-<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
