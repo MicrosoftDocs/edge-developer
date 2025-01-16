@@ -49,12 +49,9 @@ When you click the image, the injected JavaScript removes the image from the DOM
 Obtain, install, and run the sample as follows.
 
 
+<!-- main location of this section for copying to multiple articles: [Clone the MicrosoftEdge-Extensions repo](./picture-viewer-popup-webpage.md#clone-the-microsoftedge-extensions-repo) in _Sample: Picture viewer pop-up webpage_ -->
 <!-- ====================================================================== -->
 ## Clone the MicrosoftEdge-Extensions repo
-
-<!-- section copied from
-[Clone the MicrosoftEdge-Extensions repo](./picture-viewer-popup-webpage.md#clone-the-microsoftedge-extensions-repo) in _Sample: Picture viewer pop-up webpage_.
--->
 
 You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.
 
@@ -94,7 +91,7 @@ Clone the **MicrosoftEdge-Extensions** repo to your local drive, and then switch
 1. Check the list of directories:
 
    ```
-   dir
+   ls
    ```
 
    The `/MicrosoftEdge-Extensions/` directory is listed.
@@ -170,9 +167,7 @@ See also:
 * [Step 2: Create a branch](https://docs.github.com/en/get-started/start-your-journey/hello-world#step-2-create-a-branch) in _Hello World_ in GitHub Docs.
 -->
 
-<!-- / end of section copied from
-[Clone the MicrosoftEdge-Extensions repo](./picture-viewer-popup-webpage.md#clone-the-microsoftedge-extensions-repo) in _Sample: Picture viewer pop-up webpage_.
--->
+<!-- / end of section for copying to multiple articles -->
 
 
 <!-- ====================================================================== -->

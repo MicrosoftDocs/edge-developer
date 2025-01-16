@@ -24,10 +24,9 @@ This sample is a browser extension, without JavaScript, that displays the `stars
 ![The "Picture viewer pop-up webpage" extension running](./picture-viewer-popup-webpage-images/extension-running.png)<!-- 1st use of this png -->
 
 
+<!-- main location of this section for copying to multiple articles: [Clone the MicrosoftEdge-Extensions repo](./picture-viewer-popup-webpage.md#clone-the-microsoftedge-extensions-repo) in _Sample: Picture viewer pop-up webpage_ -->
 <!-- ====================================================================== -->
 ## Clone the MicrosoftEdge-Extensions repo
-
-<!-- main copy of section to copy to extensions sample articles -->
 
 You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.
 
@@ -46,12 +45,6 @@ Clone the **MicrosoftEdge-Extensions** repo to your local drive, and then switch
 
    ```
    cd C:/Users/localAccount/GitHub/
-   ```
-
-1. Check the current directory: 
-
-   ```
-   pwd
    ```
 
 1. In Microsoft Edge, go to the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.
@@ -73,7 +66,7 @@ Clone the **MicrosoftEdge-Extensions** repo to your local drive, and then switch
 1. Check the list of directories:
 
    ```
-   pwd
+   ls
    ```
 
    The `/MicrosoftEdge-Extensions/` directory is listed.
@@ -149,7 +142,7 @@ See also:
 * [Step 2: Create a branch](https://docs.github.com/en/get-started/start-your-journey/hello-world#step-2-create-a-branch) in _Hello World_ in GitHub Docs.
 -->
 
-<!-- / end of main copy of section to copy to extensions sample articles -->
+<!-- / end of section for copying to multiple articles -->
 
 
 <!-- ====================================================================== -->
