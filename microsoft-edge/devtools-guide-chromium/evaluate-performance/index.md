@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 09/04/2023
+ms.date: 01/16/2025
 ---
 <!-- Copyright Kayce Basques
 
