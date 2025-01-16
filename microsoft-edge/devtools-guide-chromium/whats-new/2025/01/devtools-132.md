@@ -25,7 +25,7 @@ Some selectors might have more than one link when they are defined in multiple l
 ![CSS selector costs links](./devtools-132-images/selector-stats-links.png)
 
 See also:
-* [View CSS selector costs in the Performance tool sidebar](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2024/11/devtools-131#view-css-selector-costs-in-the-performance-tool-sidebar) in _What's New in DevTools (Microsoft Edge 131)_.
+* [View CSS selector costs in the Performance tool sidebar](../../2024/11/devtools-131.md#view-css-selector-costs-in-the-performance-tool-sidebar) in _What's New in DevTools (Microsoft Edge 131)_.
 
 
 <!-- ====================================================================== -->
@@ -38,7 +38,7 @@ Previously, you could rearrange the tabs in **Quickk View** only by dragging the
 ![The context menu from right-clicking a tool's tab on the Quick View toolbar](./devtools-132-images/quick-view-context-menu.png)
 
 See also:
-* [Pin and rearrange tools in the Activity Bar](/microsoft-edge/devtools-guide-chromium/overview.md#pin-and-rearrange-tools-in-the-activity-bar) in _Overview of DevTools_.
+* [Pin and rearrange tools in the Activity Bar](../../../overview.md#pin-and-rearrange-tools-in-the-activity-bar) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
