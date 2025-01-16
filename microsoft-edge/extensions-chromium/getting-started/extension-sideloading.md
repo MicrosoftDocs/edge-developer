@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 01/15/2025
+ms.date: 01/16/2025
 ---
 # Sideload an extension to install and test it locally
 
@@ -78,7 +78,7 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
 
 To update an extension that's been installed locally (sideloaded) in your browser:
 
-1. Make any required changes to the extension, and save changes.
+1. Make changes to the extension's source code, and save those changes.
 
 1. In Microsoft Edge, if the **Extensions** management tab is open, click it.
 

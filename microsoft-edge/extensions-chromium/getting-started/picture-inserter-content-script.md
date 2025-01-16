@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 01/15/2025
+ms.date: 01/16/2025
 ---
 # Sample: Picture inserter using content script
 <!-- 
@@ -432,14 +432,6 @@ This sample's manifest specifies a single content script, `content-scripts/conte
 ## Each content script runs in its own thread, sandboxed
 
 Each tab page (and extension) runs in its own thread.  Even if the browser tab contains a webpage that runs JavaScript code, the `content.js` script that's injected in that browser tab by the extension doesn't have access to that JavaScript code.  The injected content script only has access to the DOM of the webpage.
-
-The content script (`content.js`) runs in its own sandbox, separate from any `.js` file that's used by the current webpage, such as `to-do.js` when the current page is `/demo-to-do/index.html`.  The [index.html source file](https://github.com/MicrosoftEdge/Demos/blob/main/demo-to-do/index.html) loads `to-do.js` as follows:
-
-```html
-    <script src="to-do.js"></script>
-  </body>
-</html>
-```
 
 
 <!-- ====================================================================== -->

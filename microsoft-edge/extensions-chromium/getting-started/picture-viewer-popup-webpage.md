@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 01/15/2025
+ms.date: 01/16/2025
 ---
 # Sample: Picture viewer pop-up webpage
 <!--
