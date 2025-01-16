@@ -59,8 +59,6 @@ See also:
 
 Microsoft Edge 132 also includes the following updates from the Chromium project:
 
-* [Debug network requests, source files, and performance traces with Gemini](https://developer.chrome.com/blog/new-in-devtools-132#ai-assistance)
-* [AI chat history](https://developer.chrome.com/blog/new-in-devtools-132#chat-history)
 * [Manage extension storage in Application > Storage](https://developer.chrome.com/blog/new-in-devtools-132#extension-storage)
 * [Performance improvements](https://developer.chrome.com/blog/new-in-devtools-132#perf)
    * [Interaction phases in live metrics](https://developer.chrome.com/blog/new-in-devtools-132#interaction-phases)
