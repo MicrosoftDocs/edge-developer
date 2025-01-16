@@ -18,7 +18,7 @@ To test an extension quickly and safely, sideload the extension in your own copy
 
 This article assumes that your local drive contains an extension that you want to load, such as a sample from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.
 
-If you want to obtain the samples, see [Clone the MicrosoftEdge-Extensions repo](./picture-viewer-popup-webpage.md#clone-the-microsoftedge-extensions-repo) in _Sample: Picture viewer pop-up webpage_.
+To obtain the samples, see [Clone the MicrosoftEdge-Extensions repo](./picture-viewer-popup-webpage.md#clone-the-microsoftedge-extensions-repo) in _Sample: Picture viewer pop-up webpage_.
 
 
 <!-- ====================================================================== -->
@@ -44,13 +44,10 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
 
 1. Select the directory that contains the extension's source files, such as `manifest.json`.
 
-   Example path for the **Picture viewer pop-up webpage** sample:
+   Example paths resulting from cloning the **MicrosoftEdge-Extensions** repo:
 
-   `C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension samples\picture-viewer-popup-webpage`
-
-   Example path for the **Picture inserter using content script** sample:
-
-   `C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension samples\picture-inserter-content-script`
+   `C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension-samples\picture-viewer-popup-webpage`
+   `C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension-samples\picture-inserter-content-script`
 
 1. Click the **Select Folder** button.
 
@@ -61,6 +58,8 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
    ![Installed extensions page, showing a sideloaded extension](./extension-sideloading-images/installed-extension.png)
 
 1. If the extension requires that a webpage is open, make sure a webpage is open, such as [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/).
+
+1. Refresh the webpage.  This is sometimes required after reloading an extension.
 
 1. In Microsoft Edge to the right of the Address bar, click the **Extensions** (![Extensions icon](./extension-sideloading-images/extensions-icon.png)) button.  Or, select **Settings and more** (![The "Settings and more" icon](./extension-sideloading-images/settings-and-more-icon.png)) > **Extensions**.
 
@@ -90,7 +89,7 @@ To update an extension that's been installed locally (sideloaded) in your browse
 
 1. Click the **Reload** link in the extension's card.
 
-1. Depending on the sample, you might need to refresh the webpage where the sample was run.
+1. Refresh the webpage.  This is sometimes required after reloading an extension.
 
 
 <!-- ====================================================================== -->

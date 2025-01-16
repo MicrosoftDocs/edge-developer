@@ -191,7 +191,7 @@ Instead of installing the sample from the Store, you'll install the sample local
 
    Example path:
 
-   `C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension samples\picture-inserter-content-script`
+   `C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension-samples\picture-inserter-content-script`
 
 1. Click the **Select Folder** button.
 
@@ -206,6 +206,8 @@ Instead of installing the sample from the Store, you'll install the sample local
 ## Run the sample
 
 1. Go to a webpage, such as [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)<!-- https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do -->, in a new window or tab.  The tab must not be empty, and must not be the Manage Extensions page, because this sample inserts content into the current webpage.
+
+1. Refresh the webpage.  This is sometimes required after reloading an extension.
 
 1. In Microsoft Edge to the right of the Address bar, if this icon is displayed, click the **Extensions** (![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png)) button.  Or, select **Settings and more** (![The "Settings and more" icon](./picture-inserter-content-script-images/settings-and-more-icon.png)) > **Extensions**.
 
@@ -246,7 +248,7 @@ The sample has the following directory structure and files.
 
 Example path for the sample:
 
-`C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension samples\picture-inserter-content-script`
+`C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension-samples\picture-inserter-content-script`
 
 Directories and files in the `/picture-inserter-content-script/` directory:
 
