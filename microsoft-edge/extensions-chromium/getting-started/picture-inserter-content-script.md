@@ -52,14 +52,81 @@ Obtain, install, and run the sample as follows.
 <!-- ====================================================================== -->
 ## Clone the MicrosoftEdge-Extensions repo
 
-<!-- main copy of this section is in picture-viewer-popup-webpage.md#Clone the MicrosoftEdge-Extensions repo >  -->
-You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.  These instructions use GitHub Desktop to clone the repo and switch to a working branch.
+<!-- section copied from
+[Clone the MicrosoftEdge-Extensions repo](./picture-viewer-popup-webpage.md#clone-the-microsoftedge-extensions-repo) in _Sample: Picture viewer pop-up webpage_.
+-->
 
-To clone the `MicrosoftEdge-Extensions` repo to your local drive:
+You can use various tools to clone a GitHub repo.  You can download a selected directory, or clone the entire repo.
+
+Clone the **MicrosoftEdge-Extensions** repo to your local drive, and then switch to a working branch, as follows.
+
+
+##### [git bash command prompt](#tab/gitbash)
+
+1. In a command prompt, enter `git` to check whether git is installed.
+
+1. If not done yet, [download git](https://git-scm.com/downloads) and install it.
+
+1. If not done yet, start a command prompt where git is installed.
+
+1. Change to the directory where you want to clone the **MicrosoftEdge-Extensions** repo to.  For example:
+
+   ```
+   cd C:/Users/localAccount/GitHub/
+   ```
+
+1. In Microsoft Edge, go to the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.
+
+1. Click the down-arrow on the right side of the green **Code** button, and then in the **Clone using the web URL** section, click the **Copy url to clipboard** button next to `https://github.com/microsoft/MicrosoftEdge-Extensions.git`.
+
+1. In the command prompt window, enter the command:
+
+   ```
+   git clone https://github.com/microsoft/MicrosoftEdge-Extensions.git
+   ```
+
+   The `/MicrosoftEdge-Extensions/` directory is added within the directory that you specified.
+
+
+<!-- ------------------------------ -->
+#### Create a working branch and switch to it
+
+1. Check the list of directories:
+
+   ```
+   dir
+   ```
+
+   The `/MicrosoftEdge-Extensions/` directory is listed.
+
+1. Switch to the new directory:
+
+   ```
+   cd MicrosoftEdge-Extensions
+   ```
+
+1. Create a working branch:
+
+   ```
+   git branch test
+   ```
+
+1. Switch to the working branch:
+
+   ```
+   git switch test
+   ```
+
+   Returns: `Switched to branch 'test'`
+
+You are now free to modify the code in your working branch, without altering the code that's in the "main" branch of the repo.  Later you might want to switch back to the "main" branch, or create a different branch based off the "main" branch.
+
+
+##### [GitHub Desktop](#tab/githubdesktop)
 
 1. If not done already, install GitHub desktop: go to [https://github.com/apps/desktop](https://github.com/apps/desktop), and then click the **Download now** button.
 
-1. Go to [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions).
+1. Go to the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.
 
 1. Click the **Code** button, and then select **Open with GitHub Desktop**.
 
@@ -71,14 +138,15 @@ To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
    Or, in GitHub Desktop, the **Clone a repository** dialog opens: 
 
-   ![The "Clone a repository" dialog in GitHub Desktop](./picture-inserter-content-script-images/clone-a-repo-dbox-ghd.png)
+   ![The "Clone a repository" dialog in GitHub Desktop](./picture-viewer-popup-webpage-images/clone-a-repo-dbox-ghd.png)
 
 1. Specify the local drive path to place the cloned repo directory into; for example: `C:\Users\accountname\GitHub\`.
 
 1. Click the **Clone** button.
 
 
-   **Create working branch:**
+<!-- ------------------------------ -->
+#### Create a working branch and switch to it
 
 1. In GitHub Desktop, make sure that in the upper left of GitHub desktop, **Current repository** is **MicrosoftEdge-Extensions**.
 
@@ -88,15 +156,22 @@ To clone the `MicrosoftEdge-Extensions` repo to your local drive:
 
    The **Create a branch** dialog opens.
 
-1. In the **Name** text box, enter a branch name, such as **ext-sample-2**, and then click the **Create branch** button.
+1. In the **Name** text box, enter a branch name, such as **test**, and then click the **Create branch** button.
 
-   In the upper middle and lower left of GitHub Desktop, the current branch is shown, such as **ext-sample-2**.
+   In the upper middle and lower left of GitHub Desktop, the current branch is shown, such as **test**.
 
 You are now free to modify the code in your working branch, without altering the code that's in the "main" branch of the repo.  Later you might want to switch back to the "main" branch, or create a different branch based off the "main" branch.
+
+---
+
 
 <!--
 See also:
 * [Step 2: Create a branch](https://docs.github.com/en/get-started/start-your-journey/hello-world#step-2-create-a-branch) in _Hello World_ in GitHub Docs.
+-->
+
+<!-- / end of section copied from
+[Clone the MicrosoftEdge-Extensions repo](./picture-viewer-popup-webpage.md#clone-the-microsoftedge-extensions-repo) in _Sample: Picture viewer pop-up webpage_.
 -->
 
 
