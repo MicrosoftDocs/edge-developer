@@ -105,7 +105,7 @@ See also:
 
 Instead of installing the sample from the Store, you'll install the sample locally, so that you can possibly modify it and quickly test the changes.  Installing locally is sometimes called _sideloading_ an extension.
 
-1. In Microsoft Edge, click the **Extensions** (![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png)) button, next to the Address bar, if this icon is displayed.  Or, select **Settings and more** (...) > ![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png) **Extensions**.  The **Extensions** pop-up opens:
+1. In Microsoft Edge, click the **Extensions** (![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png)) button, next to the Address bar, if this icon is displayed.  Or, select **Settings and more** (![The "Settings and more" icon](./picture-inserter-content-script-images/settings-and-more-icon.png)) > ![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png) **Extensions**.  The **Extensions** pop-up opens:
 
    ![The Extensions pop-up when no extensions are installed](./picture-inserter-content-script-images/extensions-popup-no-extensions.png)
 
@@ -137,7 +137,7 @@ Instead of installing the sample from the Store, you'll install the sample local
 
 1. Go to a webpage, such as [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)<!-- https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do -->, in a new window or tab.  The tab must not be empty, and must not be the Manage Extensions page, because this sample inserts content into the current webpage.
 
-1. In Microsoft Edge to the right of the Address bar, if this icon is displayed, click the **Extensions** (![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**.
+1. In Microsoft Edge to the right of the Address bar, if this icon is displayed, click the **Extensions** (![Extensions icon](./picture-inserter-content-script-images/extensions-icon.png)) button.  Or, select **Settings and more** (![The "Settings and more" icon](./picture-inserter-content-script-images/settings-and-more-icon.png)) > **Extensions**.
 
    The **Extensions** pop-up opens:
 

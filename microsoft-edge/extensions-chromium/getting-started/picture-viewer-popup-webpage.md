@@ -80,7 +80,7 @@ See also:
 
 Instead of installing the sample from the Store, you'll install the sample locally, so that you can possibly modify it and quickly test the changes.  Installing locally is sometimes called _sideloading_ an extension.
 
-1. In Microsoft Edge, click the **Extensions** (![Extensions icon](./picture-viewer-popup-webpage-images/extensions-icon.png)) button, next to the Address bar, if this icon is displayed.  Or, select **Settings and more** (...) > **Extensions**.  The **Extensions** pop-up opens:
+1. In Microsoft Edge, click the **Extensions** (![Extensions icon](./picture-viewer-popup-webpage-images/extensions-icon.png)) button, next to the Address bar, if this icon is displayed.  Or, select **Settings and more** (![The "Settings and more" icon](./picture-viewer-popup-webpage-images/settings-and-more-icon.png)) > **Extensions**.  The **Extensions** pop-up opens:
 
    ![The Extensions pop-up when no extensions are installed](./picture-viewer-popup-webpage-images/extensions-popup-no-extensions.png)
 
@@ -92,11 +92,15 @@ Instead of installing the sample from the Store, you'll install the sample local
 
 1. When installing your extension for the first time, click the **Load unpacked** (![The "Load unpacked" icon](./picture-viewer-popup-webpage-images/load-unpacked-icon.png)) button.  The **Select the extension directory** dialog opens.
 
-1. Select the directory that contains the extension's source files, such as `manifest.json`, and then click the **Select Folder** button.
+1. Select the directory that contains the extension's source files, such as `manifest.json`.
 
    Example path:
 
    `C:\Users\localAccount\GitHub\MicrosoftEdge-Extensions\Extension samples\picture-viewer-popup-webpage`
+
+1. Click the **Select Folder** button.
+
+   The **Select the extension directory** dialog closes.
 
    The extension is installed in the browser, similar to an extension that's installed from the store:
 
@@ -108,7 +112,7 @@ Instead of installing the sample from the Store, you'll install the sample local
 
 1. Go to a webpage, such as [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)<!-- https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do -->, in a new window or tab.  For this sample, this step is optional and is just to match the screenshots; this sample doesn't require a webpage to be open.
 
-1. In the upper right of Microsoft Edge, click the **Extensions** (![Extensions icon](./picture-viewer-popup-webpage-images/extensions-icon.png)) button.  Or, select **Settings and more** (...) > **Extensions**.
+1. In Microsoft Edge to the right of the Address bar, if this icon is displayed, click the **Extensions** (![Extensions icon](./picture-viewer-popup-webpage-images/extensions-icon.png)) button.  Or, select **Settings and more** (![The "Settings and more" icon](./picture-viewer-popup-webpage-images/settings-and-more-icon.png)) > **Extensions**.
 
    The **Extensions** pop-up opens:
 
@@ -233,7 +237,6 @@ The pop-up webpage (`popup.html`) is registered as the `"default_popup"` in `man
 
 ```json
 {
-    ...
     "action": {
         "default_popup": "popup/popup.html"
     }
