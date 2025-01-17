@@ -33,7 +33,7 @@ See also:
 
 <!-- Subtitle: Move the tabs in the Quick View toolbar left or right by using the tab's right-click menu. -->
 
-Previously, you could rearrange the tabs in **Quickk View** only by dragging them.  This can be difficult for users who are using input devices such as a trackball or head pointer.  Now, you can also move a tab left or right by right-clicking the tab and then selecting **Move left** or **Move right**:
+Previously, you could rearrange the tabs in **Quick View** only by dragging them.  This can be difficult for users who are using input devices such as a trackball or head pointer.  Now, you can also move a tab left or right by right-clicking the tab and then selecting **Move left** or **Move right**:
 
 ![The context menu from right-clicking a tool's tab on the Quick View toolbar](./devtools-132-images/quick-view-context-menu.png)
 
