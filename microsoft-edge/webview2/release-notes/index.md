@@ -135,29 +135,8 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 No additional APIs have been promoted to Stable and added in this Release SDK.
 
 
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
 <!-- ------------------------------ -->
 #### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* item
-* item
 
 
 <!-- ---------- -->
