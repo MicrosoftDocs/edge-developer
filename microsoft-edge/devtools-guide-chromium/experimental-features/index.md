@@ -624,7 +624,7 @@ Status:
 _new as of Microsoft Edge Canary 133_
 
 In the **Performance** tool, adds a **Switch to an alternative timeline navigation** control inside the **Help/ Keyboard shortcuts** popup.
-<!-- todo: when access UI, update desc -->
+<!-- todo: when able to access this UI, update desc -->
 
 See also: 
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
