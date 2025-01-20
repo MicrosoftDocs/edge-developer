@@ -639,7 +639,8 @@ Status:
 
 _new as of Microsoft Edge Canary 134_
 
-<!-- todo: desc -->
+In the **Performance** tool, enables third-party dependency features.
+<!-- todo: desc:  ", such as **x** **y** **z** controls." -->
 
 See also: 
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
