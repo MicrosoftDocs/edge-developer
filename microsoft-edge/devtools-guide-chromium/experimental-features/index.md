@@ -64,7 +64,7 @@ The following experimental features are turned on by default. You can use these 
 <!-- Deprecate CSS <length> authoring tool in the Styles tab - non-Edge -->
 <!-- Floating entry points for the AI assistance panel - non-Edge -->
 
-**Turned on by default in Microsoft Edge Stable 131:**
+**Turned on by default in Microsoft Edge Stable 132:**
 * [Redesign of the filter bar in the Network panel](#redesign-of-the-filter-bar-in-the-network-panel)
 * [Autofill panel](#autofill-panel)
 * [Performance panel: enable annotations](#performance-panel-enable-annotations)
@@ -74,6 +74,7 @@ The following experimental features are turned on by default. You can use these 
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 <!-- Deprecate CSS <length> authoring tool in the Styles tab - non-Edge -->
+<!-- Floating entry points for the AI assistance panel - non-Edge -->
 
 
 <!-- ====================================================================== -->
@@ -165,7 +166,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -197,7 +198,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -215,7 +216,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -237,7 +238,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -264,7 +265,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -295,7 +296,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -310,7 +311,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -325,19 +326,20 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
 ## Deprecate CSS \<length\> authoring tool in the Styles tab
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 <!-- todo: delete section if/when checkbox removed -->
+<!-- consistently hide or reveal all sections that have the above comment -->
 
 Not applicable for Microsoft Edge.  Selecting or clearing this checkbox has no effect.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -354,7 +356,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -371,7 +373,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -392,7 +394,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -410,7 +412,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -437,7 +439,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -457,10 +459,9 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 123, as **Enable Autofill view**.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
-<!-- present -->
 <!-- ====================================================================== -->
 ## Performance panel: show postMessage dispatch and handling flows
 <!-- was:
@@ -491,14 +492,9 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
-<!-- expect here: Performance panel: enable server timings in the timeline ~~ -->
-
-
-
-<!-- not present -->
 <!-- ====================================================================== -->
 ## Performance panel: enable annotations
 
@@ -513,45 +509,9 @@ See also:
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
-
-<!-- resume here -->
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
-<!-- present -->
-<!-- ====================================================================== -->
-## Performance panel: enable experimental performance insights
-
-_new as of Microsoft Edge Stable 134_ - added word "experimental" on checkbox label.
-
-In the **Performance** tool, adds the **Insights** sidebar tab, when viewing a recorded performance profile.  The **Insights** sidebar tab provides useful information about the profile, such as the various **Largest Contentful Paint** phases and the list of **Render blocking requests**.
-<!-- todo: is desc still correct after adding "experimental" to checkbox label? -->
-
-See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
-
-Status:
-* This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is not present in Microsoft Edge Stable 131.
-
-
-<!-- not present -->
-<!-- ------------------------------ -->
-#### Performance panel: enable performance insights
-
-_new as of Microsoft Edge Stable 129_
-
-In the **Performance** tool, adds the **Insights** sidebar tab, when viewing a recorded performance profile.  The **Insights** sidebar tab provides useful information about the profile, such as the various **Largest Contentful Paint** phases and the list of **Render blocking requests**.
-
-See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
-
-
-<!-- not present -->
 <!-- ====================================================================== -->
 ## Performance panel: enable live metrics landing page
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
@@ -568,10 +528,9 @@ See also:
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
-<!-- present -->
 <!-- ====================================================================== -->
 ## Performance panel: enable server timings in the timeline
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
@@ -586,51 +545,61 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
-<!-- not present -->
 <!-- ====================================================================== -->
-## Extension storage in Application panel
+## Floating entry points for the AI assistance panel
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
+<!-- todo: delete section if/when checkbox removed -->
+<!-- consistently hide or reveal all sections that have the above comment -->
+
+Not applicable for Microsoft Edge.  Selecting or clearing this checkbox has no effect.
+
+Status:
+* This checkbox is present in Microsoft Edge Canary 134.
+* This checkbox is present in Microsoft Edge Stable 132.
+
+
+<!-- ====================================================================== -->
+## Performance panel: enable performance insights
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
-_new as of Microsoft Edge Stable 131_
+_new as of Microsoft Edge Stable 129_
 
-Displays the **Extension storage** section in the **Application** tool.  The **Extension storage** section displays the data that's stored by extensions that are using the storage extension API.
+In the **Performance** tool, adds the **Insights** sidebar tab, when viewing a recorded performance profile.  The **Insights** sidebar tab provides useful information about the profile, such as the various **Largest Contentful Paint** phases and the list of **Render blocking requests**.
 
-See also: 
-* [chrome.storage](https://developer.chrome.com/docs/extensions/reference/api/storage/) API Reference in the Chrome Extensions docs.
+See also:
+* [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
-<!-- present but comment out -->
-<!-- ====================================================================== -->
-<!-- ## Floating entry points for the AI assistance panel -->
-<!-- non-Edge; checkbox has no effect, being removed -->
-
-
-<!-- present -->
-<!-- ====================================================================== -->
-## Performance panel: enable experimental performance insights
+<!-- Stable 132 has both checkboxes -->
+<!-- ------------------------------ -->
+#### Performance panel: enable experimental performance insights
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge Canary 133_
 
 Includes experimental insights in the **Insights** side panel in the **Performance** tool.
 
-See also: 
+In the **Performance** tool, adds the **Insights** sidebar tab, when viewing a recorded performance profile.  The **Insights** sidebar tab provides useful information about the profile, such as the various **Largest Contentful Paint** phases and the list of **Render blocking requests**.
+<!-- todo: is desc still correct after adding "experimental" to checkbox label? -->
+
+See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
-<!-- present -->
 <!-- ====================================================================== -->
 ## Performance panel: enable dimming unrelated events in performance insights and search results
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge Canary 133_
 
@@ -645,12 +614,12 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is not present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
-<!-- present -->
 <!-- ====================================================================== -->
 ## Performance panel: enable a switch to an alternative timeline navigation option
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge Canary 133_
 
@@ -662,10 +631,9 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is not present in Microsoft Edge Stable 131.
+* This checkbox is resent in Microsoft Edge Stable 132.
 
 
-<!-- present -->
 <!-- ====================================================================== -->
 ## Performance panel: enable third party depenedency<!-- typo in ui --> features
 
@@ -678,10 +646,9 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is not present in Microsoft Edge Stable 131.
+* This checkbox is not present in Microsoft Edge Stable 132.
 
 
-<!-- present -->
 <!-- ====================================================================== -->
 ## Log DevTools uncaught exceptions to Console
 <!-- checkbox has a "(?)" link
@@ -696,7 +663,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -723,7 +690,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -739,8 +706,10 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
+
+<!-- resume here -->
 
 <!-- ====================================================================== -->
 ## Open source files in Visual Studio Code
@@ -761,7 +730,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ======================================================================
@@ -780,7 +749,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 -->
 
 
@@ -798,7 +767,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -818,7 +787,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ============================================================================================================================================ -->
@@ -838,7 +807,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -853,7 +822,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -872,7 +841,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -889,7 +858,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -906,7 +875,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -919,7 +888,7 @@ This experiment makes the **Performance** tool capture newly added traces, to su
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -939,7 +908,7 @@ This experiment makes the **Performance** tool record script source text in trac
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -957,7 +926,7 @@ Adds a **Trace Event** section to the **Summary** tab of the **Performance** too
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -977,7 +946,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
@@ -995,4 +964,4 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 131.
+* This checkbox is present in Microsoft Edge Stable 132.
