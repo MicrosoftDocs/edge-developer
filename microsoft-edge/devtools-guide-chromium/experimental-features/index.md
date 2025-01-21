@@ -631,7 +631,7 @@ Adds a **Show shortcuts** (![Show shortcuts icon](./index-images/show-shortcuts-
 
 1. Click the **Show shortcuts** (![Show shortcuts icon](./index-images/show-shortcuts-icon.png)) button.
 
-   The **Keyboard shortcuts** popup dialog opens:
+   The **Keyboard shortcuts** popup dialog opens.
 
    With **Classic** selected:
 
