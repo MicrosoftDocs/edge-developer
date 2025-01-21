@@ -333,7 +333,6 @@ Status:
 ## Deprecate CSS \<length\> authoring tool in the Styles tab
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 <!-- todo: delete section if/when checkbox removed -->
-<!-- consistently hide or reveal all sections that have the above comment -->
 
 Not applicable for Microsoft Edge.  Selecting or clearing this checkbox has no effect.
 
@@ -549,16 +548,16 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Floating entry points for the AI assistance panel
+<!-- ## Floating entry points for the AI assistance panel -->
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 <!-- todo: delete section if/when checkbox removed -->
-<!-- consistently hide or reveal all sections that have the above comment -->
 
-Not applicable for Microsoft Edge.  Selecting or clearing this checkbox has no effect.
+<!-- Not applicable for Microsoft Edge.  Selecting or clearing this checkbox has no effect.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
 * This checkbox is present in Microsoft Edge Stable 132.
+-->
 
 
 <!-- ====================================================================== -->
@@ -584,10 +583,9 @@ Status:
 
 _new as of Microsoft Edge Canary 133_
 
-Includes experimental insights in the **Insights** side panel in the **Performance** tool.
+Enables additional insights within the **Insights** side panel.
 
-In the **Performance** tool, adds the **Insights** sidebar tab, when viewing a recorded performance profile.  The **Insights** sidebar tab provides useful information about the profile, such as the various **Largest Contentful Paint** phases and the list of **Render blocking requests**.
-<!-- todo: is desc still correct after adding "experimental" to checkbox label? -->
+To use this experiment, first select the **Performance panel: enable performance insights** checkbox, and then, if you want to see even more insights, also select the **Performance panel: enable experimental performance insights** checkbox.
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
@@ -623,24 +621,45 @@ Status:
 
 _new as of Microsoft Edge Canary 133_
 
-In the **Performance** tool, adds a **Switch to an alternative timeline navigation** control inside the **Help/ Keyboard shortcuts** popup.
-<!-- todo: when able to access this UI, update desc -->
+Adds a **Show shortcuts** (![Show shortcuts icon](./index-images/show-shortcuts-icon.png)) button in the **Performance** tool's toolbar that enables you to select **Classic** or **Modern** keyboard navigation of the timeline.
+
+1. In Microsoft Edge 133 or later, select this experiment checkbox, close **Settings**, and then click the **Restart DevTools** button.
+
+1. In DevTools, in the **Performance** tool, record a capture.
+
+   The **Show shortcuts** (![Show shortcuts icon](./index-images/show-shortcuts-icon.png)) button is displayed in the upper right of the **Performance** tool, below the **Help** (![Help icon](./index-images/help-icon.png)) button for DevTools.
+
+1. Click the **Show shortcuts** (![Show shortcuts icon](./index-images/show-shortcuts-icon.png)) button.
+
+   The **Keyboard shortcuts** popup dialog opens:
+
+   With **Classic** selected:
+
+   ![Keyboard shortcuts popup with Classic selected](./index-images/perf-nav-keyboard-shortcuts-classic.png)
+
+   With **Modern** selected:
+
+   ![Keyboard shortcuts popup with Modern selected](./index-images/perf-nav-keyboard-shortcuts-modern.png)
+
+1. Select the **Classic** or **Modern** option button.
+
+   The list of keyboard shortcuts changes to relect Classic or Modern keyboard navigation of the timeline.
 
 See also: 
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is resent in Microsoft Edge Stable 132.
+* This checkbox is present in Microsoft Edge Stable 132.
 
 
 <!-- ====================================================================== -->
-## Performance panel: enable third party depenedency<!-- typo in ui --> features
+## Performance panel: enable third party dependency features
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge Canary 134_
 
-In the **Performance** tool, enables third-party dependency features.
-<!-- todo: desc:  ", such as **x** **y** **z** controls." -->
+Includes a **Dim 3rd Parties** checkbox in the **Performance** tool to "dim" the performance events that come from third-party dependencies.  For example, if your code uses the React library, checking the **Dim 3rd Parties** checkbox greys-out and dims the React events in a profile.
 
 See also: 
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
