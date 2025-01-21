@@ -254,11 +254,15 @@ Continuing from above: If prompted to install workloads when you try to build th
 
 1. In **Installation details** on the right, expand **Desktop development with C++**.
 
-See also:
+1. Click the **Update** or **Install** button.
 
+   The Installer closes.
+
+See also:
+* [Step 4 - Install workloads if prompted](../get-started/win32.md#step-4---install-workloads-if-prompted) in _Get started with WebView2 in Win32 apps_.
 * [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.
 
-You don't need to install WiX to continue.  Installing WiX is covered in [WiX Burn Bundle to deploy the WebView2 Runtime](./wv2deploymentwixburnbundlesample.md).
+You don't need to install WiX to continue; that's for a different project in this solution file.  Installing WiX is covered in [WiX Burn Bundle to deploy the WebView2 Runtime](./wv2deploymentwixburnbundlesample.md).
 
 
 <!-- ====================================================================== -->
@@ -288,13 +292,20 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## Step 8: Update the prerelease WebView2 SDK
 
-The repo version of this sample has a Prerelease version of the WebView2 SDK installed.  Below, you'll update it to the latest Prerelease version of the WebView2 SDK (unless latest is installed already).  Using a Prerelease SDK gives you access to the latest functionality.
+The repo version of this sample has a Prerelease version of the WebView2 SDK installed.  Below, you'll update the WebView2 SDK to the latest Prerelease version (unless the latest Prerelease SDK is installed already).  A Prerelease SDK supports the latest experimental APIs and the latest "Stable in Prerelease" APIs.
 
 1. Check the version number of the Prerelease SDK that's in the repo's copy of the **WebView2APISample** app at GitHub: see [packages.config](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/packages.config).
 
+   For example:
+
+   ```xml
+   <package id="Microsoft.Web.WebView2" version="1.0.2950-prerelease" targetFramework="native" />
+   <package id="Microsoft.Windows.ImplementationLibrary" version="1.0.220201.1" targetFramework="native" />
+   ```
+
 1. Check what's the latest Prerelease version number, at [Release Notes for the WebView2 SDK](../release-notes/index.md).
 
-1. In Solution Explorer, right-click the **WebView2APISample** project (not the solution node above it), and then select **Manage NuGet Packages**.
+1. In Visual Studio, in **Solution Explorer**, right-click the **WebView2APISample** project (not the solution node above it), and then select **Manage NuGet Packages**.
 
    The **NuGet Package Manager** panel opens in Visual Studio.
 
@@ -319,6 +330,9 @@ The repo version of this sample has a Prerelease version of the WebView2 SDK ins
 1. Repeat the above steps to update the **Microsoft.Windows.Implementation.Library**, but you can select the latest Release rather than latest Prerelease.
 
    The latest prerelease version of the WebView2 SDK is now installed for this project.
+
+See also:
+* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release Notes for the WebView2 SDK_.
 
 
 <!-- ====================================================================== -->
@@ -780,3 +794,4 @@ The following steps show how the WebView can get information from the Win32 Host
 * [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in Win32 apps](../get-started/win32.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md)
+* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release Notes for the WebView2 SDK_.
