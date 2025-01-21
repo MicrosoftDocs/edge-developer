@@ -23,7 +23,7 @@ This sample uses C++ and HTML/CSS/JavaScript in the WebView2 environment.
 
 **WebView2APISample** showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView2 control and vice versa.
 
-![WebView2APISample app window showing WebView2 SDK version and WebView2 Runtime version and path](./webview2apissample-images/webview2apisample-app-window.png)
+![WebView2APISample app running](./webview2apissample-images/webview2apisample-app-window.png)
 
 This sample and its solution file are unique: it contains a copy of other samples, in Solution Explorer.
 
@@ -101,7 +101,7 @@ If you want to open this sample by using Visual Studio 2017:
 1. If not opened already, open a git bash command prompt: Press the **Windows** key, and then type **git bash**.
 
 
-   **Fetch and pull commits**
+   **Pull commits**
 
 1. Switch to the cloned repo directory:
 
@@ -111,12 +111,6 @@ If you want to open this sample by using Visual Studio 2017:
 
    Substitute the path where you cloned the **WebView2Samples** repo to.
 
-1. Fetch the latest repo information:
-
-   ```
-   git fetch
-   ```
-
 1. Pull the latest commits to your local copy of the repo:
 
    ```
@@ -124,23 +118,17 @@ If you want to open this sample by using Visual Studio 2017:
    ```
 
 
-   **Create a working branch and switch to it**
+   **Create a working branch**
 
-1. Create a working branch:
-
-   ```
-   git branch test
-   ```
-
-1. Switch to the working branch:
+1. Create a working branch and switch to it:
 
    ```
-   git checkout test
+   git checkout -b test
    ```
 
    Returns: `Switched to branch 'test'`
 
-You are now free to modify the code in your working branch, without altering the code that's in the "main" branch of the repo.  Later you might want to switch back to the "main" branch, or create a different branch based off the "main" branch.
+You are now free to modify the code in your working branch, without altering the code that's in the "main" branch of the repo.  Later you might want to switch back to the "main" branch, for example to pull new commits, or create a different branch based off the "main" branch.
 
 
 <!-- ====================================================================== -->
