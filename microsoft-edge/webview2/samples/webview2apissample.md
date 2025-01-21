@@ -96,7 +96,7 @@ If you want to open this sample by using Visual Studio 2017:
 
    `C:\Users\localAccount\GitHub\WebView2Samples`
 
-1. If not done already, clone the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 1. If not opened already, open a git bash command prompt: Press the **Windows** key, and then type **git bash**.
 
