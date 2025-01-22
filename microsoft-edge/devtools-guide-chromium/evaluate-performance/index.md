@@ -263,6 +263,20 @@ To learn more, see [Use transform and opacity changes for animations](https://we
 
 
 <!-- ====================================================================== -->
+## Recommendations in live metrics
+
+[Live metrics](https://developer.chrome.com/docs/devtools/performance/overview#live-metrics) provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.
+
+To get recommendations, [set up field data fetching](https://developer.chrome.com/docs/devtools/performance/overview#compare) from [Chrome UX Report (CrUX)](https://developer.chrome.com/docs/crux) and expand the **Consider your local test conditions** section in each metric card (if any) and **Consider real user environments** in the **Environment settings**.
+
+Expanded sections with recommendations.
+
+![Performance tool home page](./index-images/perf-home-page.png)
+
+Follow the recommendations https://developer.chrome.com/docs/devtools/performance/overview#env-config to approximate the experience of your users.
+
+
+<!-- ====================================================================== -->
 ## Next steps
 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
