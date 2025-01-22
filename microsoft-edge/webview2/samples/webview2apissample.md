@@ -164,13 +164,17 @@ Opening and building the sample will modify the sample.  Best practice is to avo
 
 1. Click the **OK** button.
 
+   The solution opens in Visual Studio:
+
+   ![The WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)<!-- instance 1 of png -->
+
 
 <!-- ====================================================================== -->
 ## Step 4: Update the toolset
 
-Continuing from above: The **Review Solution Actions** dialog might open:
+Continuing from above: The **Review Solution Actions: Retarget Projects** dialog might open:
 
-![The "Review Solution Actions" dialog](./webview2apissample-images/review-solution-actions.png)
+![The "Review Solution Actions" dialog](./webview2apissample-images/retarget-projects.png)
 
 This screenshot shows:
 * **Windows SDK Version:** **10.0 (latest installed version)**
@@ -276,7 +280,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
-   ![The WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)
+   ![The WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)<!-- instance 2 of png -->
 
    This builds the project file `SampleApps/WebView2APISample/WebView2APISample.vcxproj`.
 
@@ -313,7 +317,7 @@ The repo version of this sample has a Prerelease version of the WebView2 SDK ins
 
    ![NuGet Package Manager with WebView2 SDK prerelease selected](./webview2apissample-images/webview2apisample-pkg-mgr-prerelease-webview2.png)
 
-1. To the right of the search text box, select the **Include prerelease** check box.
+1. To the right of the **Search** text box, select the **Include prerelease** check box.
 
 1. On the left, select **Microsoft.Web.WebView2**.
 
@@ -321,7 +325,7 @@ The repo version of this sample has a Prerelease version of the WebView2 SDK ins
 
 1. To the right of the **Version** dropdown list, click the **Update** button.
 
-   The **Preview Changes** dialog appears:
+   The **Preview Changes** dialog opens:
 
    ![The Preview Changes dialog for the WebView2 NugGet package](./webview2apissample-images/webview2apisample-webview2-pkg-preview-changes.png)
 
@@ -342,17 +346,14 @@ Assuming you updated the Prerelease version of the WebView2 SDK, build and run t
 
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
-   ![WebView2APISample project selected in Solution Explorer](./webview2apissample-images/webview2apisample-project-selected.png)
-
 1. Select **Debug** > **Start Debugging** (**F5**).  
 
    The **WebView2APISample** app window opens:
 
    ![The WebView2APISample app window](./webview2apissample-images/webview2apisample-app-window.png)
 
-1. Use the **WebView2APISample** app.
+1. Close the sample app window.
 
-1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
 You obtained, updated, built, and ran the Win32 sample app.
 
@@ -370,17 +371,7 @@ These steps assume you obtained, updated, built, and ran the Win32 sample app pe
 
 The **WebView2APISample** sample and project is the main Win32 sample.
 
-1. If the solution `WebView2Samples.sln` isn't already open in Visual Studio, open it; for example, press the **Windows** key, enter **Visual Studio 2022**, and then click **Open**.
-
-   The Visual Studio **Open recent** dialog opens.
-
-1. Click **Continue without code**, in the lower right.
-
-1. In Visual Studio 2022, select **File** > **Open** > **Project/Solution**.
-
-   The **Open Project/Solution** dialog opens.
-
-1. Navigate to the `WebView2Samples\SampleApps\WebView2Samples.sln` file, and then click the **Open** button.
+1. Open `WebView2Samples.sln` in Visual Studio.
 
    Example path:
 
@@ -388,37 +379,29 @@ The **WebView2APISample** sample and project is the main Win32 sample.
    C:\Users\localAccount\GitHub\WebView2Samples\SampleApps\WebView2Samples.sln
    ```
 
-1. Click the **OK** button.
+   This solution file contains the main sample (**WebView2APISample**) and other samples as well:
 
-
-<!-- ------------------------------ -->
-#### Projects in this solution file
-
-In Solution Explorer, the solution file `WebView2Samples.sln` contains the main sample (**WebView2APISample**) and other samples as well:
-
-![All projects in the solution in Solution Explorer](./webview2apissample-images/all-projects-in-solution-explorer.png)
+   ![All projects in the solution in Solution Explorer](./webview2apissample-images/all-projects-in-solution-explorer.png)
 
 1. In **Solution Explorer**, expand the **WebView2APISample** project:
 
-![The WebView2APISample project in Solution Explorer](./webview2apissample-images/webview2apisample-in-solution-explorer.png)
+   ![The WebView2APISample project in Solution Explorer](./webview2apissample-images/webview2apisample-in-solution-explorer.png)
 
 
 <!-- ====================================================================== -->
 ## Hybrid app architecture
 
-The **WebView2APISample** app is an example of a hybrid application, with a Win32 native part and a WebView part.
-*  The Win32 part can directly access native Windows APIs.
-*  The WebView is a container for standard web technologies (HTML, CSS, and JavaScript).
+The **WebView2APISample** app is an example of a hybrid application, with a Win32 native part and a WebView part:
 
 ![Hybrid app](./webview2apissample-images/sample-app-layout-diagram.png)
 
-* Section 1: The top part of the **WebView2APISample** app is a Win32 component written in C++. This part of the application takes in UI inputs from the user and uses them to control the WebView.
+*  The Win32 part can directly access native Windows APIs.  The top part of the **WebView2APISample** app is a Win32 component written in C++. This part of the application takes in UI inputs from the user and uses them to control the WebView.
 
-* Section 2: The main part of the **WebView2APISample** app is a WebView that can be repurposed using standard web technologies (HTML/CSS/JavaScript).  It can be navigated to websites or local content.
+*  The WebView is a container for standard web technologies (HTML, CSS, and JavaScript).  The main part of the **WebView2APISample** app is a WebView that can be repurposed using standard web technologies (HTML/CSS/JavaScript).  The WebView can be navigated to websites or local content.
 
 This hybrid approach allows you to create and iterate faster using web technologies, while still being able to take advantage of native functionality.  The **WebView2APISample** app demonstrates how the Win32 component and the WebView component can interact with each other.
 
-This wide-ranging sample app has grown to include over 150 menuitems, demonstrating many WebView2 APIs in the Win32/C++ framework.  The following sections focus on basics of hybrid app implementation.
+This sample app has over 100 menuitems, which demonstrate many WebView2 APIs in the Win32/C++ framework.  The following sections focus on basics of hybrid app implementation.
 
 
 <!-- ====================================================================== -->
