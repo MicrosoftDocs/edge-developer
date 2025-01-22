@@ -625,7 +625,7 @@ Adds a **Show shortcuts** (![Show shortcuts icon](./index-images/show-shortcuts-
 
 1. In Microsoft Edge 133 or later, select this experiment checkbox, close **Settings**, and then click the **Restart DevTools** button.
 
-1. In DevTools, in the **Performance** tool, record a capture.
+1. In DevTools, in the **Performance** tool, record a profile.
 
    The **Show shortcuts** (![Show shortcuts icon](./index-images/show-shortcuts-icon.png)) button is displayed in the upper right of the **Performance** tool, below the **Help** (![Help icon](./index-images/help-icon.png)) button for DevTools.
 
