@@ -121,6 +121,18 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 <!-- ---------- -->
 ###### WebView2Find API
+<!-- todo: in heading, state the capability - what functionality does this enable you to add in your app, for users?
+
+general idea for such headings: Capability [or task] X, from API Y
+in heading, state the capability - what functionality does this enable you to add in your app, for users?
+
+Pick out key phrases/ features you can add to your app:
+text finding and navigation within a WebView2 control
+programmatically initiate Find operations, navigate Find results
+suppress default UI
+customize Find options like find query.
+tracks the status of operations, indicating completion, match count changes, and match index changes.
+-->
 
 The WebView2Find API offers methods and events for text finding and navigation within a WebView2 control. It enables developers to programmatically initiate Find operations, navigate Find results, suppress default UI, and customize Find options like find query. It also tracks the status of operations, indicating completion, match count changes, and match index changes.
 
@@ -213,6 +225,42 @@ The WebView2Find API offers methods and events for text finding and navigation w
 ###### DragStarting API
 
 The `CompositionController` DragStarting API provides methods and events for initiating and handling drag operations within a WebView2 control.  The DragStarting API allows you to programmatically add event handlers for drag starting, leverage the `Deferral` to execute asynchronous drag logic, and decide whether the WebView2 should use its own drag logic by setting the `Handled` property.  This API facilitates customized drag operations and manages the drag process, ensuring seamless integration with the WebView2 environment.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo -->
+<!-- tentative: -->
+
+* CoreWebView2ExperimentalCompositionController Class
+  * CoreWebView2ExperimentalCompositionController.DragStarting Event
+
+* CoreWebView2ExperimentalCompositionControllerInterop Class
+  * CoreWebView2ExperimentalCompositionControllerInterop.DragStarting Event
+
+* CoreWebView2ExperimentalDragStartingEventArgs Class
+  * CoreWebView2ExperimentalDragStartingEventArgs.AllowedDropEffects Property
+  * CoreWebView2ExperimentalDragStartingEventArgs.Data Property
+  * CoreWebView2ExperimentalDragStartingEventArgs.Handled Property
+  * CoreWebView2ExperimentalDragStartingEventArgs.Position Property
+  * CoreWebView2ExperimentalDragStartingEventArgs.GetDeferral Method
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+<!-- todo -->
+<!-- tentative: -->
+
+* CoreWebView2ExperimentalCompositionController Class
+  * CoreWebView2ExperimentalCompositionController.DragStarting Event
+
+* CoreWebView2ExperimentalCompositionControllerInterop Class
+  * CoreWebView2ExperimentalCompositionControllerInterop.DragStarting Event
+
+* CoreWebView2ExperimentalDragStartingEventArgs Class
+  * CoreWebView2ExperimentalDragStartingEventArgs.AllowedDropEffects Property
+  * CoreWebView2ExperimentalDragStartingEventArgs.Data Property
+  * CoreWebView2ExperimentalDragStartingEventArgs.Handled Property
+  * CoreWebView2ExperimentalDragStartingEventArgs.Position Property
+  * CoreWebView2ExperimentalDragStartingEventArgs.GetDeferral Method
 
 ##### [Win32/C++](#tab/win32cpp)
 
