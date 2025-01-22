@@ -83,6 +83,14 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ---------- -->
 ###### WPF Airspace - WebView2CompositionControl
 
+<!-- temp link for background info: [PR 4804](https://github.com/MicrosoftEdge/WebView2Feedback/pull/4804/files) -->
+
+The `WebView2CompositionControl` solves the following issue: The WebView2 control is always the top-most layer in the WPF app, obscuring any WPF elements.
+
+If you are building a Windows Presentation Foundation (WPF) app and using the WebView2 control, you may find that your app runs into "airspace" issues, where the WebView2 control will always show up on top and hide any WPF elements in the same location, even if you try to specify the WPF elements to be above the WebView2 control (using visual tree order or the z-index property, for example).
+
+This issue stems from the fact that our WPF control uses the WPF HwndHost to host the Win32 WebView2 control, and HwndHost has a long-standing issue with airspace.  This issue has existed for over a decade, and you can read more about in-depth efforts to fix it in general in WPF; see [Mitigating Airspace Issues In WPF Applications](https://dwayneneed.github.io/wpf/2013/02/26/mitigating-airspace-issues-in-wpf-applications.html).
+
 `Microsoft.Web.WebView2.Wpf.WebView2CompositionControl` is a drop-in replacement for the standard WPF WebView2 control.  Both the WebView2 control and `WebView2CompositionControl` implement the `Microsoft.Web.WebView2.Wpf.IWebView2` interface.  Both of them derive from `FrameworkElement`, as follows:
 * `FrameworkElement` -> `HwndHost` -> `WebView2`.
 * `FrameworkElement` -> `Control` -> `WebView2CompositionControl`.
@@ -120,21 +128,16 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-###### WebView2Find API
-<!-- todo: in heading, state the capability - what functionality does this enable you to add in your app, for users?
+###### Programmatically control Find operations (WebView2Find API)
 
-general idea for such headings: Capability [or task] X, from API Y
-in heading, state the capability - what functionality does this enable you to add in your app, for users?
+The WebView2Find API allows you to programmatically control **Find** operations, and enables adding the following functionality to your app:
+* Customize **Find** options, similar to **Ctrl+F** in Microsoft Edge.
+* Find text strings and navigate among them within a WebView2 control.
+* Programmatically initiate Find operations, and navigate **Find** results.
+* Suppress the default **Find** UI.
+* Track the status of Find operations, indicating completion, match count changes, and match index changes.
 
-Pick out key phrases/ features you can add to your app:
-text finding and navigation within a WebView2 control
-programmatically initiate Find operations, navigate Find results
-suppress default UI
-customize Find options like find query.
-tracks the status of operations, indicating completion, match count changes, and match index changes.
--->
-
-The WebView2Find API offers methods and events for text finding and navigation within a WebView2 control. It enables developers to programmatically initiate Find operations, navigate Find results, suppress default UI, and customize Find options like find query. It also tracks the status of operations, indicating completion, match count changes, and match index changes.
+There are known issues with the WebView2Find API for PDF documents.  When you view a PDF document within a WebView2 control, the **Find** feature currently only provides the number of matches found, and the first index.<!-- todo: clarify "index" -->  We are actively investigating these issues, and we encourage you to report any problems you encounter, by using the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -222,16 +225,19 @@ The WebView2Find API offers methods and events for text finding and navigation w
 
 
 <!-- ---------- -->
-###### DragStarting API
+###### Override the default drag and drop behavior (DragStarting API)
 
-The `CompositionController` DragStarting API provides methods and events for initiating and handling drag operations within a WebView2 control.  The DragStarting API allows you to programmatically add event handlers for drag starting, leverage the `Deferral` to execute asynchronous drag logic, and decide whether the WebView2 should use its own drag logic by setting the `Handled` property.  This API facilitates customized drag operations and manages the drag process, ensuring seamless integration with the WebView2 environment.
+Override the default drag drop behavior when running in visual hosting mode.  The `DragStarting` event allows your app to know when a drag is initiated in WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
+
+You can use `add_DragStarting`<!-- todo: reword to apply to .NET & WinRT as well --> on the `CompositionController` to add an event handler that's invoked when the drag operation is starting. You can use the event args to start your own drag operation.  The `Deferral` can be used to execute any async drag logic and call back into the WebView at a later time.  The `Handled` property lets the WebView2 know whether to exercise its own drag logic.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- todo -->
-<!-- tentative: -->
 
-* CoreWebView2ExperimentalCompositionController Class
+These APIs are forthcoming.
+
+* `CoreWebView2ExperimentalCompositionController` Class
   * CoreWebView2ExperimentalCompositionController.DragStarting Event
 
 * CoreWebView2ExperimentalCompositionControllerInterop Class
@@ -247,7 +253,8 @@ The `CompositionController` DragStarting API provides methods and events for ini
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 <!-- todo -->
-<!-- tentative: -->
+
+These APIs are forthcoming.
 
 * CoreWebView2ExperimentalCompositionController Class
   * CoreWebView2ExperimentalCompositionController.DragStarting Event
