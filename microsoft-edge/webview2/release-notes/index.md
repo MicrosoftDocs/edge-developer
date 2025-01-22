@@ -135,9 +135,9 @@ This issue stems from the fact that our WPF control uses the WPF HwndHost to hos
 The WebView2Find API allows you to programmatically control **Find** operations, and enables adding the following functionality to your app:
 * Customize **Find** options, similar to **Ctrl+F** in Microsoft Edge.
 * Find text strings and navigate among them within a WebView2 control.
-* Programmatically initiate Find operations, and navigate **Find** results.
+* Programmatically initiate **Find** operations, and navigate **Find** results.
 * Suppress the default **Find** UI.
-* Track the status of Find operations, indicating completion, match count changes, and match index changes.
+* Track the status of **Find** operations, indicating completion, changes of match count, and changes of match index.
 
 There are known issues with the WebView2Find API for PDF documents.  When you view a PDF document within a WebView2 control, the **Find** feature currently only provides the number of matches found, and the first index.<!-- todo: clarify "index" -->  We are actively investigating these issues, and we encourage you to report any problems you encounter, by using the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
@@ -231,9 +231,12 @@ There are known issues with the WebView2Find API for PDF documents.  When you vi
 <!-- ---------- -->
 ###### Override the default drag and drop behavior (DragStarting API)
 
-Override the default drag drop behavior when running in visual hosting mode.  The `DragStarting` event allows your app to know when a drag is initiated in WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
+The `DragStarting` API overrides the default drag and drop behavior when running in visual hosting mode.  The `DragStarting` event notifies your app when the user starts a drag operation in the WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
 
-You can use `add_DragStarting`<!-- todo: reword to apply to .NET & WinRT as well --> on the `CompositionController` to add an event handler that's invoked when the drag operation is starting. You can use the event args to start your own drag operation.  The `Deferral` can be used to execute any async drag logic and call back into the WebView at a later time.  The `Handled` property lets the WebView2 know whether to exercise its own drag logic.
+* Use `DragStarting` on the `CoreWebView2CompositionController` to add an event handler that's invoked when the drag operation is starting.
+* Use `CoreWebView2DragStartingEventArgs` to start your own drag operation.
+   * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
+   * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -241,18 +244,18 @@ You can use `add_DragStarting`<!-- todo: reword to apply to .NET & WinRT as well
 
 These APIs are forthcoming.
 
-* `CoreWebView2ExperimentalCompositionController` Class
-  * CoreWebView2ExperimentalCompositionController.DragStarting Event
+* `CoreWebView2CompositionController` Class
+  * `CoreWebView2CompositionController.DragStarting` Event
 
-* CoreWebView2ExperimentalCompositionControllerInterop Class
-  * CoreWebView2ExperimentalCompositionControllerInterop.DragStarting Event
+* `CoreWebView2CompositionControllerInterop` Class
+  * `CoreWebView2CompositionControllerInterop.DragStarting` Event
 
-* CoreWebView2ExperimentalDragStartingEventArgs Class
-  * CoreWebView2ExperimentalDragStartingEventArgs.AllowedDropEffects Property
-  * CoreWebView2ExperimentalDragStartingEventArgs.Data Property
-  * CoreWebView2ExperimentalDragStartingEventArgs.Handled Property
-  * CoreWebView2ExperimentalDragStartingEventArgs.Position Property
-  * CoreWebView2ExperimentalDragStartingEventArgs.GetDeferral Method
+* `CoreWebView2DragStartingEventArgs` Class
+  * `CoreWebView2DragStartingEventArgs.AllowedDropEffects` Property
+  * `CoreWebView2DragStartingEventArgs.Data` Property
+  * `CoreWebView2DragStartingEventArgs.Handled` Property
+  * `CoreWebView2DragStartingEventArgs.Position` Property
+  * `CoreWebView2DragStartingEventArgs.GetDeferral` Method
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -260,18 +263,18 @@ These APIs are forthcoming.
 
 These APIs are forthcoming.
 
-* CoreWebView2ExperimentalCompositionController Class
-  * CoreWebView2ExperimentalCompositionController.DragStarting Event
+* `CoreWebView2CompositionController` Class
+  * `CoreWebView2CompositionController.DragStarting` Event
 
-* CoreWebView2ExperimentalCompositionControllerInterop Class
-  * CoreWebView2ExperimentalCompositionControllerInterop.DragStarting Event
+* `CoreWebView2CompositionControllerInterop` Class
+  * `CoreWebView2CompositionControllerInterop.DragStarting` Event
 
-* CoreWebView2ExperimentalDragStartingEventArgs Class
-  * CoreWebView2ExperimentalDragStartingEventArgs.AllowedDropEffects Property
-  * CoreWebView2ExperimentalDragStartingEventArgs.Data Property
-  * CoreWebView2ExperimentalDragStartingEventArgs.Handled Property
-  * CoreWebView2ExperimentalDragStartingEventArgs.Position Property
-  * CoreWebView2ExperimentalDragStartingEventArgs.GetDeferral Method
+* `CoreWebView2DragStartingEventArgs` Class
+  * `CoreWebView2DragStartingEventArgs.AllowedDropEffects` Property
+  * `CoreWebView2DragStartingEventArgs.Data` Property
+  * `CoreWebView2DragStartingEventArgs.Handled` Property
+  * `CoreWebView2DragStartingEventArgs.Position` Property
+  * `CoreWebView2DragStartingEventArgs.GetDeferral` Method
 
 ##### [Win32/C++](#tab/win32cpp)
 
