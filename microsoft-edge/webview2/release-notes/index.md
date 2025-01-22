@@ -76,24 +76,20 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-###### WPF Airspace - WebView2CompositionControl
+###### Show WPF elements on top of the WebView2 layer (WebView2CompositionControl)
 
-<!-- temp link for background info: [PR 4804](https://github.com/MicrosoftEdge/WebView2Feedback/pull/4804/files) -->
-
-The `WebView2CompositionControl` solves the following issue: The WebView2 control is always the top-most layer in the WPF app, obscuring any WPF elements.
-
-If you are building a Windows Presentation Foundation (WPF) app and using the WebView2 control, you may find that your app runs into "airspace" issues, where the WebView2 control will always show up on top and hide any WPF elements in the same location, even if you try to specify the WPF elements to be above the WebView2 control (using visual tree order or the z-index property, for example).
-
-This issue stems from the fact that our WPF control uses the WPF HwndHost to host the Win32 WebView2 control, and HwndHost has a long-standing issue with airspace.  This issue has existed for over a decade, and you can read more about in-depth efforts to fix it in general in WPF; see [Mitigating Airspace Issues In WPF Applications](https://dwayneneed.github.io/wpf/2013/02/26/mitigating-airspace-issues-in-wpf-applications.html).
-
-`Microsoft.Web.WebView2.Wpf.WebView2CompositionControl` is a drop-in replacement for the standard WPF WebView2 control.  Both the WebView2 control and `WebView2CompositionControl` implement the `Microsoft.Web.WebView2.Wpf.IWebView2` interface.  Both of them derive from `FrameworkElement`, as follows:
+The `WebView2CompositionControl` prevents the WebView2 control from being the topmost layer in a WPF app and obscuring any WPF elements.  `Microsoft.Web.WebView2.Wpf.WebView2CompositionControl` is a drop-in replacement for the standard WPF WebView2 control.  Both the WebView2 control and `WebView2CompositionControl` implement the `Microsoft.Web.WebView2.Wpf.IWebView2` interface.  Both of them derive from `FrameworkElement`, as follows:
 * `FrameworkElement` -> `HwndHost` -> `WebView2`.
 * `FrameworkElement` -> `Control` -> `WebView2CompositionControl`.
+
+Background: If you're building a Windows Presentation Foundation (WPF) app and using the WebView2 control, you may find that your app runs into "airspace" issues, where the WebView2 control is always displayed on top, hiding any WPF elements in the same location, even if you try to specify the WPF elements to be above the WebView2 control (using visual tree order or the z-index property, for example).
+
+This issue occurs because the WPF control uses the WPF `HwndHost` to host the Win32 WebView2 control, and `HwndHost` has an issue with airspace; see [Mitigating Airspace Issues In WPF Applications](https://dwayneneed.github.io/wpf/2013/02/26/mitigating-airspace-issues-in-wpf-applications.html).
+<!-- [PR 4804: WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/pull/4804/files) -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
