@@ -126,6 +126,8 @@ This issue stems from the fact that our WPF control uses the WPF HwndHost to hos
 
 * [ICoreWebView2ExperimentalFrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframechildframecreatedeventhandler?view=webview2-1.0.3079-prerelease&preserve-view=true)
 
+---
+
 
 <!-- ---------- -->
 ###### Programmatically control Find operations (WebView2Find API)
@@ -222,6 +224,8 @@ There are known issues with the WebView2Find API for PDF documents.  When you vi
   * [ICoreWebView2ExperimentalFindOptions::put_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalfindoptions?view=webview2-1.0.3079-prerelease&preserve-view=true#put_suppressdefaultfinddialog)
 
 * [ICoreWebView2ExperimentalFindStartCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalfindstartcompletedhandler?view=webview2-1.0.3079-prerelease&preserve-view=true)
+
+---
 
 
 <!-- ---------- -->
