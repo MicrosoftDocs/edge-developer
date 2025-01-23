@@ -169,13 +169,13 @@ This issue occurs because the WPF control uses the WPF `HwndHost` to host the Wi
 ###### Programmatically control Find operations (Find API)
 
 The Find API allows you to programmatically control **Find** operations, and enables adding the following functionality to your app:
-* Customize **Find** options, similar to **Ctrl+F** in Microsoft Edge.
+* Customize **Find** options, including **Find Term**, **Case Sensitivity**,<!-- todo: actual UI labels --> **Word Matching**, **Match Highlighting**, and **Default UI Suppression**.
 * Find text strings and navigate among them within a WebView2 control.
 * Programmatically initiate **Find** operations, and navigate **Find** results.
 * Suppress the default **Find** UI.
-* Track the status of **Find** operations, indicating completion, changes of match count, and changes of match index.
+* Track the status of **Find** operations.
 
-There are known issues with the Find API for PDF documents.  When you view a PDF document within a WebView2 control, the **Find** feature currently only provides the number of matches found, and the first index.<!-- todo: clarify "index" -->  We are actively investigating these issues, and we encourage you to report any problems you encounter, by using the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
+There are known issues with the Find API for PDF documents.  When you view a PDF document within a WebView2 control, the **Find** feature currently only provides the first index and the number of matches found.  For example, if the string occurs three times in a PDF, the UI would say **1/3** and would not support programmatically calling **Next** or **Previous**.  We are actively investigating these issues, and we encourage you to report any problems you encounter, by using the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
