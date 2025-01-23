@@ -294,20 +294,21 @@ This issue occurs because the WPF control uses the WPF `HwndHost` to host the Wi
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2CompositionController` Class
-<!-- todo: add new members -->
+   * [CoreWebView2CompositionController.DragStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragstarting?view=webview2-dotnet-1.0.3079-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.3079-prerelease&preserve-view=true)<!-- todo: delete link to large old class -->
 <!-- todo: add new members? -->
 
-* [CoreWebView2CompositionController Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.3079-prerelease&preserve-view=true)
-<!-- todo: add new members -->
+* `CoreWebView2CompositionController` Class
+   * [CoreWebView2CompositionController.DragStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.3079-prerelease&preserve-view=true#dragstarting)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ExperimentalCompositionController5]<!-- todo: link -->
-<!-- todo: add members of this new partial class, probably #5 -->
+* [ICoreWebView2ExperimentalCompositionController6](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller6?view=webview2-1.0.3079-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalCompositionController6::add_dragstarting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller6?view=webview2-1.0.3079-prerelease&preserve-view=true#add_dragstarting)
+   * [ICoreWebView2ExperimentalCompositionController6::remove_dragstarting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller6?view=webview2-1.0.3079-prerelease&preserve-view=true#remove_dragstarting)
 
 ---
 
