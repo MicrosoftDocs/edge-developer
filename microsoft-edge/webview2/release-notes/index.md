@@ -60,7 +60,7 @@ See also:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [WebView2CompositionControl Class](/dotnet/api/microsoft.web.webview2.wpf.webview2compositioncontrol?view=webview2-dotnet-1.0.3079-prerelease&preserve-view=true)
+* [WebView2CompositionControl Class](/dotnet/api/microsoft.web.webview2.wpf.webview2compositioncontrol?view=webview2-dotnet-1.0.2957.106&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
