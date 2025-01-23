@@ -183,44 +183,18 @@ There are known issues with the Find API for PDF documents.  When you view a PDF
 
 The `DragStarting` API overrides the default drag and drop behavior when running in visual hosting mode.  The `DragStarting` event notifies your app when the user starts a drag operation in the WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
 
-* Use `DragStarting` on the `CoreWebView2CompositionController` to add an event handler that's invoked when the drag operation is starting.
-* Use `CoreWebView2DragStartingEventArgs` to start your own drag operation.
+* Use `DragStarting` on the `ICoreWebView2ExperimentalCompositionController6` to add an event handler that's invoked when the drag operation is starting.
+* Use `ICoreWebView2ExperimentalDragStartingEventArgs` to start your own drag operation.
    * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
    * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- todo -->
-
-* `CoreWebView2CompositionController` Class
-  * `CoreWebView2CompositionController.DragStarting` Event
-
-* `CoreWebView2CompositionControllerInterop` Class
-  * `CoreWebView2CompositionControllerInterop.DragStarting` Event
-
-* `CoreWebView2DragStartingEventArgs` Class
-  * `CoreWebView2DragStartingEventArgs.AllowedDropEffects` Property
-  * `CoreWebView2DragStartingEventArgs.Data` Property
-  * `CoreWebView2DragStartingEventArgs.Handled` Property
-  * `CoreWebView2DragStartingEventArgs.Position` Property
-  * `CoreWebView2DragStartingEventArgs.GetDeferral` Method
+n/a
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo -->
-
-* `CoreWebView2CompositionController` Class
-  * `CoreWebView2CompositionController.DragStarting` Event
-
-* `CoreWebView2CompositionControllerInterop` Class
-  * `CoreWebView2CompositionControllerInterop.DragStarting` Event
-
-* `CoreWebView2DragStartingEventArgs` Class
-  * `CoreWebView2DragStartingEventArgs.AllowedDropEffects` Property
-  * `CoreWebView2DragStartingEventArgs.Data` Property
-  * `CoreWebView2DragStartingEventArgs.Handled` Property
-  * `CoreWebView2DragStartingEventArgs.Position` Property
-  * `CoreWebView2DragStartingEventArgs.GetDeferral` Method
+n/a
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -257,69 +231,29 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2Frame Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frame?view=webview2-dotnet-1.0.3079-prerelease&preserve-view=true)
+* `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated?view=webview2-dotnet-1.0.3079-prerelease&preserve-view=true)
-<!-- todo: .Stop Property, like WinRT has? -->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3079-prerelease&preserve-view=true)
+* `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3079-prerelease&preserve-view=true#framecreated)
-   * [CoreWebView2Frame.Stop Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3079-prerelease&preserve-view=true#stop)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2ExperimentalFrame8](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe8?view=webview2-1.0.3079-prerelease&preserve-view=true)
   * [ICoreWebView2ExperimentalFrame8::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe8?view=webview2-1.0.3079-prerelease&preserve-view=true#add_framecreated)
   * [ICoreWebView2ExperimentalFrame8::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe8?view=webview2-1.0.3079-prerelease&preserve-view=true#remove_framecreated)
-<!-- todo: add Stop Property, like WinRT has?  event, or property? -->
 
 * [ICoreWebView2ExperimentalFrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframechildframecreatedeventhandler?view=webview2-1.0.3079-prerelease&preserve-view=true)
 
 ---
 
 
-<!-- todo: 1st occurrence of this section within the Jan Prerelease section -->
 <!-- ---------- -->
-###### Show WPF elements on top of the WebView2 layer (WebView2CompositionControl)
+###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
 
-The `WebView2CompositionControl` prevents the WebView2 control from being the topmost layer in a WPF app and obscuring any WPF elements.  `Microsoft.Web.WebView2.Wpf.WebView2CompositionControl` is a drop-in replacement for the standard WPF WebView2 control.  Both the WebView2 control and `WebView2CompositionControl` implement the `Microsoft.Web.WebView2.Wpf.IWebView2` interface.  Both of them derive from `FrameworkElement`, as follows:
-* `FrameworkElement` -> `HwndHost` -> `WebView2`.
-* `FrameworkElement` -> `Control` -> `WebView2CompositionControl`.
-
-Background: If you're building a Windows Presentation Foundation (WPF) app and using the WebView2 control, you may find that your app runs into "airspace" issues, where the WebView2 control is always displayed on top, hiding any WPF elements in the same location, even if you try to specify the WPF elements to be above the WebView2 control (using visual tree order or the z-index property, for example).
-
-This issue occurs because the WPF control uses the WPF `HwndHost` to host the Win32 WebView2 control, and `HwndHost` has an issue with airspace; see [Mitigating Airspace Issues In WPF Applications](https://dwayneneed.github.io/wpf/2013/02/26/mitigating-airspace-issues-in-wpf-applications.html).
-
-See also:
-* [PR 4804: WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/pull/4804/files?short_path=ebbc3ee#diff-ebbc3ee3560606e2823d68c134ea4aebdc1cb1252aaa9aa2b9a2815e2d8d36b2) - Spec.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2CompositionController` Class
-   * [CoreWebView2CompositionController.DragStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragstarting?view=webview2-dotnet-1.0.3079-prerelease&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.3079-prerelease&preserve-view=true)<!-- todo: delete link to large old class -->
-<!-- todo: add new members? -->
-
-* `CoreWebView2CompositionController` Class
-   * [CoreWebView2CompositionController.DragStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.3079-prerelease&preserve-view=true#dragstarting)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ExperimentalCompositionController6](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller6?view=webview2-1.0.3079-prerelease&preserve-view=true)
-   * [ICoreWebView2ExperimentalCompositionController6::add_dragstarting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller6?view=webview2-1.0.3079-prerelease&preserve-view=true#add_dragstarting)
-   * [ICoreWebView2ExperimentalCompositionController6::remove_dragstarting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller6?view=webview2-1.0.3079-prerelease&preserve-view=true#remove_dragstarting)
-
----
-
-
-<!-- ---------- -->
-###### Load a WebView2 without a white flash (DefaultBackgroundColor API)
-
-Prevents a white flash during loading a WebView2.
+The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -346,7 +280,6 @@ Prevents a white flash during loading a WebView2.
 The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
-<!-- todo: 2nd occurrence of this section within the Jan Prerelease section -->
 <!-- ---------- -->
 ###### Show WPF elements on top of the WebView2 layer (WebView2CompositionControl)
 
@@ -363,22 +296,15 @@ See also:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* `CoreWebView2CompositionController` Class
-   * [CoreWebView2CompositionController.DragStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragstarting?view=webview2-dotnet-1.0.3079-prerelease&preserve-view=true)
+* [WebView2CompositionControl Class](/dotnet/api/microsoft.web.webview2.wpf.webview2compositioncontrol?view=webview2-dotnet-1.0.3079-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.3079-prerelease&preserve-view=true)<!-- todo: delete link to large old class -->
-<!-- todo: add new members? -->
-
-* `CoreWebView2CompositionController` Class
-   * [CoreWebView2CompositionController.DragStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.3079-prerelease&preserve-view=true#dragstarting)
+n/a
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ExperimentalCompositionController6](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller6?view=webview2-1.0.3079-prerelease&preserve-view=true)
-   * [ICoreWebView2ExperimentalCompositionController6::add_dragstarting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller6?view=webview2-1.0.3079-prerelease&preserve-view=true#add_dragstarting)
-   * [ICoreWebView2ExperimentalCompositionController6::remove_dragstarting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller6?view=webview2-1.0.3079-prerelease&preserve-view=true#remove_dragstarting)
+n/a
 
 ---
 
