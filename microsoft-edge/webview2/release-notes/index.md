@@ -40,6 +40,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 <!-- ------------------------------ -->
 #### Promotions
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 ###### Show WPF elements on top of the WebView2 layer (WebView2CompositionControl)
 
