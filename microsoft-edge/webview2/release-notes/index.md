@@ -95,7 +95,7 @@ n/a
 <!-- ====================================================================== -->
 ## 1.0.3079-prerelease
 
-Release Date: January 23, 2025
+Release Date: January 24, 2025
 
 [NuGet package for WebView2 SDK 1.0.3079-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3079-prerelease)
 
