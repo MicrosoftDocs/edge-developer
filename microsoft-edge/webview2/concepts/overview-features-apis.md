@@ -18,8 +18,8 @@ when adding an h4 heading, add nav link below the h2
 -->
 
 
-<!-- ---------- -->
-###### Show WPF elements on top of the WebView2 layer (WebView2CompositionControl) - INCOMING
+<!-- ====================================================================== -->
+## Show WPF elements on top of the WebView2 layer (WebView2CompositionControl) - INCOMING
 
 The `WebView2CompositionControl` prevents the WebView2 control from being the topmost layer in a WPF app and obscuring any WPF elements.  `Microsoft.Web.WebView2.Wpf.WebView2CompositionControl` is a drop-in replacement for the standard WPF WebView2 control.  Both the WebView2 control and `WebView2CompositionControl` implement the `Microsoft.Web.WebView2.Wpf.IWebView2` interface.  Both of them derive from `FrameworkElement`, as follows:
 * `FrameworkElement` -> `HwndHost` -> `WebView2`.
