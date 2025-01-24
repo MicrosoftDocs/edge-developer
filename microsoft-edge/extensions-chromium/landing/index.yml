@@ -49,10 +49,10 @@ landingContent:
           - text: Extension concepts and architecture
             url: ../getting-started/index.md
 
-          - text: "Tutorial part 1: Display an image in a pop-up"
+          - text: "Sample: Display an image in a pop-up"
             url: ../getting-started/part1-simple-extension.md
 
-          - text: "Tutorial part 2: Use JavaScript to insert an image in the webpage"
+          - text: "Sample: Insert an image in the webpage"
             url: ../getting-started/part2-content-scripts.md
 
           - text: Sideload an extension to install and test it locally
