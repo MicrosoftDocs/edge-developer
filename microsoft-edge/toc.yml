@@ -1304,8 +1304,8 @@
 
             - name: WinUI 2 (UWP)
               items:
-#               - name: WebView2 in WinUI 2 (UWP) apps
-#                 href: ./webview2/platforms/winui2-uwp.md
+                - name: WebView2 in WinUI 2 (UWP) apps
+                  href: ./webview2/platforms/winui2-uwp.md
 
                 - name: WinUI 2 (UWP) sample app
                   href: ./webview2/samples/webview2_sample_uwp.md
@@ -1317,8 +1317,8 @@
 
             - name: WinUI 3 (Windows App SDK)
               items:
-#               - name: WebView2 in WinUI 3 (Windows App SDK) apps
-#                 href: ./webview2/platforms/winui3-windows-app-sdk.md
+                - name: WebView2 in WinUI 3 (Windows App SDK) apps
+                  href: ./webview2/platforms/winui3-windows-app-sdk.md
 
                 - name: WinUI 3 (Windows App SDK) sample app
                   href: ./webview2/samples/webview2-winui3-sample.md
@@ -1328,10 +1328,10 @@
                   href: ./webview2/get-started/winui.md
                   displayName: WinUI3_GettingStarted  # repo dir name
 
-            - name: WebView2 in WPF apps
+            - name: WPF
               items:
-#               - name: WebView2 apps on Win32
-#                 href: ./webview2/platforms/wpf.md
+                - name: WebView2 in WPF apps
+                  href: ./webview2/platforms/wpf.md
 
                 - name: WPF sample app
                   href: ./webview2/samples/webview2wpfbrowser.md
@@ -1360,8 +1360,8 @@
 
             - name: HoloLens 2 Unity
               items:
-#               - name: WebView2 in HoloLens 2 Unity apps
-#                 href: ./webview2/platforms/hololens-2-unity.md
+                - name: WebView2 in HoloLens 2 Unity apps
+                  href: ./webview2/platforms/hololens-2-unity.md
 
                 - name: Get started with WebView2 in HoloLens 2 Unity apps (Preview)
                   href: ./webview2/get-started/hololens2.md
