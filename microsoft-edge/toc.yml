@@ -1283,8 +1283,8 @@
           items:
             - name: Win32
               items:
-#               - name: WebView2 in Win32 apps
-#                 href: ./webview2/platforms/win32.md
+                - name: WebView2 in Win32 apps
+                  href: ./webview2/platforms/win32.md
 
                 - name: Win32 sample app
                   href: ./webview2/samples/webview2apissample.md

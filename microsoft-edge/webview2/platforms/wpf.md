@@ -1,6 +1,6 @@
 ---
-title: WebView2 apps on Win32
-description: WebView2 apps on Win32.
+title: WebView2 in WPF apps
+description: WebView2 in WPF apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 01/24/2025
 ---
-# WebView2 apps on Win32
+# WebView2 in WPF apps
 
 
 <!-- ====================================================================== -->
