@@ -6,19 +6,15 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/24/2025
+ms.date: 01/27/2025
 ---
 # WebView2 in WinUI 2 (UWP) apps
 
+The following considerations apply to WebView2 in WinUI 2 (UWP) apps.  The WebView2 WinUI 2 (UWP) control is in development.
+
 
 <!-- ====================================================================== -->
-## Special considerations for WebView2 on WinUI 2 (UWP)
-
-The WebView2 WinUI 2 (UWP) control is in development.
-
-
-<!-- ------------------------------ -->
-#### Autofill UI
+## Autofill UI
 
 Autofill UI is not implemented yet for WebView2 for UWP apps.
 
@@ -26,8 +22,8 @@ See also:
 * [Autofill](../concepts/overview-features-apis.md#autofill) in _Overview of WebView2 APIs_.
 
 
-<!-- ------------------------------ -->
-#### Print to PDF
+<!-- ====================================================================== -->
+## Print to PDF
 
 Print to PDF requires that the app have access to a writeable location in UWP, such as a local folder.  For a full list of UWP-accessible paths, see [File access permissions](/windows/uwp/files/file-access-permissions).
 
@@ -35,8 +31,8 @@ See also:
 * [Printing](../concepts/overview-features-apis.md#printing) in _Overview of WebView2 APIs_.
 
 
-<!-- ------------------------------ -->
-#### Default printing
+<!-- ====================================================================== -->
+## Default printing
 
 Default printing is disabled for WebView2 for UWP apps.  However, you can capture and print the current viewport, by calling `CapturePreview`.
 
@@ -44,8 +40,8 @@ See also:
 * [Image capture](../concepts/overview-features-apis.md#image-capture) in _Overview of WebView2 APIs_.
 
 
-<!-- ------------------------------ -->
-#### SmartScreen
+<!-- ====================================================================== -->
+## SmartScreen
 
 WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure. If you want to disable this navigation, you can do so via an environment variable:
 
@@ -54,22 +50,28 @@ WebView2 sends URLs that are navigated to in your application to the [SmartScree
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) is initially called.
 
 
-<!-- ------------------------------ -->
-#### Downloading files
+<!-- ====================================================================== -->
+## Downloading files
 
 There are a couple of known limitations for current downloads behavior for WebView2 in UWP.
 
-###### Save As
+
+<!-- ------------------------------ -->
+#### Save As
 
 Saving files via **Save As** is working and is enabled for WebView2 for UWP apps.  The files will be saved in the folder that the user selects.
 
-###### Which folder the files are downloaded to
+
+<!-- ------------------------------ -->
+#### Which folder the files are downloaded to
 
 If the host doesn't change the `ResultFilePath` of the downloaded file, the downloaded files will be downloaded to a subfolder with the app package's name in the `Downloads` folder.
 
 If the host changes the `ResultFilePath` of the downloaded file, the file will only be downloaded if the app has access to that file path by default. If you want to use a file location that the app doesn't have access to by default, you must set the corresponding capability. See [App capability declarations](/windows/uwp/packaging/app-capability-declarations) in the UWP documentation.
 
-###### Downloads Hub
+
+<!-- ------------------------------ -->
+#### Downloads Hub
 
 Opening files and folders from the Downloads Hub is disabled.  Clicking on the file or folder icon won't open the respective file/folder.
 
@@ -77,14 +79,14 @@ See also:
 * [Downloads](../concepts/overview-features-apis.md#downloads) in _Overview of WebView2 APIs_.
 
 
-<!-- ------------------------------ -->
-#### XAML limitation
+<!-- ====================================================================== -->
+## XAML limitation
 
 XAML Island support requires additional work and may be considered for future releases.
 
 
-<!-- ------------------------------ -->
-#### Setting DefaultBackgroundColor
+<!-- ====================================================================== -->
+## Setting DefaultBackgroundColor
 
 On WinUI 2, the `DefaultBackgroundColor` property is not exposed directly.  You can set the default background color by setting an environment variable, as follows:
 
@@ -104,24 +106,26 @@ todo: relevant?
 -->
 
 
-<!-- ------------------------------ -->
-#### Setting transparency
+<!-- ====================================================================== -->
+## Setting transparency
 
 On WinUI 2, transparency is achieved by setting the color to `00FFFFFF`.
 
 
-<!-- ------------------------------ -->
-#### CSS cursors
+<!-- ====================================================================== -->
+## CSS cursors
 
 On WinUI 2 (UWP), CSS cursors have the following limitations.
 
 
-###### Image URLs
+<!-- ------------------------------ -->
+#### Image URLs
 
 The CSS cursor cannot be an image URL, such as `cursor: url(https://contoso.com/cursor.png), pointer;`.  See [CSS - cursor loaded from URL doesn't work](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1925).
 
 
-###### Predefined CSS cursors
+<!-- ------------------------------ -->
+#### Predefined CSS cursors
 
 On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can use CSS cursors to change the cursor to some of the predefined cursors, such as `cursor: wait;` or `cursor: crosshair;`, but not to others, such as `cursor: progress` or `cursor: none`.
 
@@ -175,14 +179,14 @@ See also:
 <!-- known limitation: destination page doesn't scroll to anchor -->
 
 
-<!-- ------------------------------ -->
-#### Microsoft Edge Developer Tools
+<!-- ====================================================================== -->
+## Microsoft Edge Developer Tools
 
 On WinUI 2, Microsoft Edge DevTools cannot be launched inside a store-signed WebView2 WinUI 2 (UWP) app.  However, you can work around this by using remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging.md).
 
 
-<!-- ------------------------------ -->
-#### API limitations
+<!-- ====================================================================== -->
+## API limitations
 
 The following classes aren't accessible in WinUI 2:
 

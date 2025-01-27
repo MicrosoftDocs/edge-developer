@@ -10,6 +10,8 @@ ms.date: 01/27/2025
 ---
 # WebView2 in WPF apps
 
+The following considerations apply to WebView2 in WPF apps.
+
 
 <!-- ====================================================================== -->
 ## Show WPF elements on top of the WebView2 layer (WebView2CompositionControl)

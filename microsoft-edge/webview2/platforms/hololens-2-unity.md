@@ -23,11 +23,7 @@ For WebView2-enabled 2D applications on HoloLens 2, see [Get started with WebVie
 
 
 <!-- ====================================================================== -->
-## Additional considerations for WebView2 on HoloLens 2
-
-
-<!-- ------------------------------ -->
-#### Limitations and known issues
+## Limitations and known issues
 
 When developing a HoloLens 2 Unity app with WebView2, be aware of some limitations and known issues:
 
@@ -42,8 +38,8 @@ When developing a HoloLens 2 Unity app with WebView2, be aware of some limitatio
 * **Performance**: Complex websites with heavy use of JavaScript or advanced rendering may impact system performance or the host application's framerate.  For general performance-related limitations and recommendations, see [Understanding performance for mixed reality](/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality) in the mixed reality documentation.  Also see [Performance optimization](#performance-optimization), below.
 
 
-<!-- ------------------------------ -->
-#### Performance optimization
+<!-- ====================================================================== -->
+## Performance optimization
 
 Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial for a smooth user experience.  Here are some recommendations:
 
@@ -60,8 +56,8 @@ Optimizing the performance of WebView2 in your HoloLens 2 Unity app is crucial f
   * **PIX**: A performance tuning and debugging tool for Windows that can also be used to profile Unity applications on HoloLens 2.
 
 
-<!-- ------------------------------ -->
-#### Navigation
+<!-- ====================================================================== -->
+## Navigation
 
 Some navigation methods are demonstrated in [Step 7 - Extending WebView2 functionality](../get-started/hololens2.md#step-7---extending-webview2-functionality) in _Get started with WebView2 in HoloLens 2 Unity apps (Preview)_.  The present section expands on that demonstration.
 
@@ -70,8 +66,8 @@ See also:
 * [API Reference for Mixed Reality WebView plugin](/windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin) - for HoloLens 2 in the WebView2 Unity plugin.<!-- toc title: WebView2 Unity Plugin API -->
 
 
-<!-- ---------- -->
-###### IWebView interface
+<!-- ------------------------------ -->
+#### IWebView interface
 
 <!-- [IWebView::Load method]()-->
 
@@ -93,8 +89,8 @@ public interface IWebView
 ```
 
 
-<!-- ---------- -->
-###### IWithBrowserHistory interface
+<!-- ------------------------------ -->
+#### IWithBrowserHistory interface
 
 The `IWithBrowserHistory` interface exposes a few methods and events related to page navigation.  This mainly allows developers to navigate forward and backward, as you would expect with a typical web-browsing experience:
 
@@ -114,8 +110,8 @@ public interface IWithBrowserHistory : IWebView
 ```
 
 
-<!-- ---------- -->
-###### SetVirtualHostNameToFolderMapping and SetVirtualHostMapping
+<!-- ------------------------------ -->
+#### SetVirtualHostNameToFolderMapping and SetVirtualHostMapping
 
 The [CoreWebView2.SetVirtualHostNameToFolderMapping Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) enables mapping between a virtual host name and a folder path, making it accessible to websites using that host name.  This method maps a local domain name to a local folder, so that the WebView2 control loads content from the specified local folder when attempting to access a resource for that domain.
 
@@ -153,8 +149,8 @@ public class WebViewExample : MonoBehaviour
 ```
 
 
-<!-- ------------------------------ -->
-#### Input
+<!-- ====================================================================== -->
+## Input
 
 There are various ways to handle input in Unity for mixed reality applications.
 

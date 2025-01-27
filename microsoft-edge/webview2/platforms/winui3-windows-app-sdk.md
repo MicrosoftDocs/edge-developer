@@ -10,6 +10,8 @@ ms.date: 01/24/2025
 ---
 # WebView2 in WinUI 3 (Windows App SDK) apps
 
+The following considerations apply to WebView2 in WinUI 3 (Windows App SDK) apps.
+
 
 <!-- ====================================================================== -->
 ## WinAppSDK supports custom WebView2 environments
@@ -33,11 +35,7 @@ API Reference:
 
 
 <!-- ====================================================================== -->
-## WinUI 3 WebView2 special considerations
-
-
-<!-- ------------------------------ -->
-#### Disabling SmartScreen navigation
+## Disabling SmartScreen navigation
 
 WebView2 sends URLs that are navigated to in your application to the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service, to ensure that your customers stay secure.  If you want to disable this navigation, use a custom `CoreWebView2Environment`, as follows:
 
@@ -56,8 +54,8 @@ this.WebView2.EnsureCoreWebView2Async(environment);
 ```
 
 
-<!-- ---------- -->
-###### Disabling SmartScreen by using an environment variable
+<!-- ====================================================================== -->
+## Disabling SmartScreen by using an environment variable
 
 We no longer recommend using an environment variable.  Use the above API code-based approach instead.
 
@@ -66,8 +64,8 @@ We no longer recommend using an environment variable.  Use the above API code-ba
 This environment variable must be set prior to `CoreWebView2` creation, which occurs when the [WebView2.Source property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.source#microsoft-ui-xaml-controls-webview2-source) is initially set or the [WebView2.EnsureCoreWebView2Async method](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async#microsoft-ui-xaml-controls-webview2-ensurecorewebview2async) is initially called.
 
 
-<!-- ------------------------------ -->
-#### Setting DefaultBackgroundColor
+<!-- ====================================================================== -->
+## Setting DefaultBackgroundColor
 
 In WebView2 for WinUI 3, the `DefaultBackgroundColor` setting exists on the WebView2 XAML object.  For example:
 
@@ -80,8 +78,8 @@ public MainWindow()
 ```
 
 
-<!-- ------------------------------ -->
-#### Transparency
+<!-- ====================================================================== -->
+## Transparency
 
 WinUI 3 doesn't support transparent backgrounds.  See [Transparent background support for WebView2? · Issue #2992](https://github.com/microsoft/microsoft-ui-xaml/issues/2992).
 
