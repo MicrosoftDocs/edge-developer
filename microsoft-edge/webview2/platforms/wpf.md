@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/24/2025
+ms.date: 01/27/2025
 ---
 # WebView2 in WPF apps
 
 
 <!-- ====================================================================== -->
-## Show WPF elements on top of the WebView2 layer (WebView2CompositionControl) - INCOMING
+## Show WPF elements on top of the WebView2 layer (WebView2CompositionControl)
 
 The `WebView2CompositionControl` prevents the WebView2 control from being the topmost layer in a WPF app and obscuring any WPF elements.  `Microsoft.Web.WebView2.Wpf.WebView2CompositionControl` is a drop-in replacement for the standard WPF WebView2 control.  Both the WebView2 control and `WebView2CompositionControl` implement the `Microsoft.Web.WebView2.Wpf.IWebView2` interface.  Both of them derive from `FrameworkElement`, as follows:
 * `FrameworkElement` -> `HwndHost` -> `WebView2`.
@@ -42,7 +42,7 @@ n/a
 
 
 <!-- ====================================================================== -->
-<!-- ## See also -->
+## See also
 <!-- all links in article -->
 
 * [WebView2CompositionControl Class](/dotnet/api/microsoft.web.webview2.wpf.webview2compositioncontrol)
