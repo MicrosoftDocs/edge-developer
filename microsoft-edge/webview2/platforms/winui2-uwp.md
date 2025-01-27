@@ -184,7 +184,7 @@ The following classes aren't accessible in WinUI 2:
 
 
 <!-- ====================================================================== -->
-<!-- ## See also -->
+## See also
 <!-- all links in article -->
 
 * [Autofill](../concepts/overview-features-apis.md#autofill) in _Overview of WebView2 APIs_.
