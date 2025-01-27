@@ -95,6 +95,13 @@ Environment.SetEnvironmentVariable("WEBVIEW2_DEFAULT_BACKGROUND_COLOR", "FF00000
 See also:
 * .NET: [WebView2.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.winforms.webview2.defaultbackgroundcolor)
 * Win32: [ICoreWebView2Controller2::DefaultBackgroundColor property (get](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+<!-- todo: relevant?
+* WinRT: [CoreWebView2Controller.DefaultBackgroundColor Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#defaultbackgroundcolor)
+-->
+<!--
+todo: relevant?
+* .NET: [CoreWebView2Controller.DefaultBackgroundColor Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor#microsoft-web-webview2-core-corewebview2controller-defaultbackgroundcolor)
+-->
 
 
 <!-- ------------------------------ -->
@@ -197,6 +204,13 @@ API Reference:
 * .NET: [WebView2.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.winforms.webview2.defaultbackgroundcolor)
 * Win32: [ICoreWebView2Controller2::_getDefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor)
 * Win32: [ICoreWebView2Controller2::_putDefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+<!-- todo: relevant?
+* WinRT: [CoreWebView2Controller.DefaultBackgroundColor Property](https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#defaultbackgroundcolor)
+-->
+<!--
+todo: relevant?
+* .NET: [CoreWebView2Controller.DefaultBackgroundColor Property](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor#microsoft-web-webview2-core-corewebview2controller-defaultbackgroundcolor)
+-->
 
 Windows docs:
 * [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
