@@ -1347,8 +1347,8 @@
 
             - name: WinForms
               items:
-#               - name: WebView2 in WinForms apps
-#                 href: ./webview2/platforms/winforms.md
+                - name: WebView2 in WinForms apps
+                  href: ./webview2/platforms/winforms.md
 
                 - name: WinForms sample app
                   href: ./webview2/samples/webview2windowsformsbrowser.md

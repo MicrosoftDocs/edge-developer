@@ -61,7 +61,8 @@ Only a subset of WebView2 interfaces/functions are exposed in WinUI:
 
 * Interfaces such as `CoreWebView2Controller` are hidden, because WinUI takes care of the environment and window creation behind the scenes.
 
-See also [XAML limitation](#xaml-limitation) below.
+See also:
+* [XAML limitation](../platforms/winui2-uwp.md#xaml-limitation) in _WebView2 in WinUI 2 (UWP) apps_.
 
 
 <!-- ====================================================================== -->
@@ -299,16 +300,19 @@ Next, learn about navigation events, which are essential for WebView2 apps.  The
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 in WinUI 2 (UWP) apps](../platforms/winui2-uwp.md)
 * [WebView2 API Reference](../webview2-api-reference.md)
-* [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to download, update, build, and run the WinUI 2 WebView2 sample.
-* [Manage user data folders](../concepts/user-data-folder.md)
-* [WebView2 sample apps](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
+   * [Manage user data folders](../concepts/user-data-folder.md)
+* [WebView2 sample apps](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
+   * [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to download, update, build, and run the WinUI 2 WebView2 sample.
+* Get Started tutorial finished project: Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
 
 GitHub:
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
 * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - the WinUI 2 (UWP) WebView2 sample.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
-*  Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
-* [Microsoft.UI.Xaml NuGet package](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
 * [Media App Samples for Xbox](https://github.com/microsoft/Media-App-Samples-for-Xbox)
+
+NuGet:
+* [Microsoft.UI.Xaml NuGet package](https://www.nuget.org/packages/Microsoft.UI.Xaml/)

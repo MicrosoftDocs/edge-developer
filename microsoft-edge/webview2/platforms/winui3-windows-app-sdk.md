@@ -90,22 +90,22 @@ WinUI 3 doesn't support transparent backgrounds.  See [Transparent background su
 ## See also
 <!-- all links in article -->
 
-github.com/microsoft/microsoft-ui-xaml/issues/:
+microsoft-ui-xaml Repo > Issues
 * [WinUI3 WebView2 with a custom CoreWebView2Environment](https://github.com/microsoft/microsoft-ui-xaml/issues/6150).
 * [Transparent background support for WebView2? · Issue #2992](https://github.com/microsoft/microsoft-ui-xaml/issues/2992)
 
-/windows/apps:
+Windows apps docs:
 * [1.5.0-experimental2](/windows/apps/windows-app-sdk/experimental-channel#version-15-experimental-150-experimental2)
 
-/windows/windows-app-sdk/api/winrt/:
+Windows App SDK Reference:
 * [WebView2.EnsureCoreWebView2Async](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async)
 * [WebView2.Source property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.source#microsoft-ui-xaml-controls-webview2-source)
 * [WebView2.EnsureCoreWebView2Async method](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async#microsoft-ui-xaml-controls-webview2-ensurecorewebview2async) 
 
-/microsoft-edge/webview2/reference/winrt/:
+WebView2 Reference:
 * [CoreWebView2ControllerOptions](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions)
 * [CoreWebView2Environment](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
 * [CoreWebView2EnvironmentOptions](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions)
 
-/windows/security/:
+Windows Security docs:
 * [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 
