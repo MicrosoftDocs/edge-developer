@@ -206,7 +206,7 @@ public class WebViewExample : MonoBehaviour, IPointerDownHandler
 
 In the above example, pointer-down events are converted into `WebViewMouseEventData` objects and forwarded to the WebView plugin for Unity.  It is essentially converted into a mouse-down event.  In order to create mouse click events, pointer-up events would need to be handled in a similar fashion.
 
-In the example above,<!-- todo: present article, or "Get started with WebView2 in HoloLens 2 Unity apps (Preview)"? --> `ConvertToWebViewSpace` is intentionally not implemented.
+In the example above, `ConvertToWebViewSpace` is intentionally not implemented.
 
 
 <!-- ====================================================================== -->

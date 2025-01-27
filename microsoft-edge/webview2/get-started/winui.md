@@ -514,7 +514,7 @@ Congratulations, you've built a WebView2 WinUI 3 (Windows App SDK) app!
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
 
 * [WebView2 API Reference](../webview2-api-reference.md)
 * [Introduction to Microsoft Edge WebView2](../index.md) - overview of features.
@@ -523,7 +523,7 @@ Congratulations, you've built a WebView2 WinUI 3 (Windows App SDK) app!
 * [Development best practices for WebView2 appsDevelopment best practices](../concepts/developer-guide.md)
 
 developer.microsoft.com:
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features.
 
 GitHub:
 * [Getting Started with WebView2 in WinUI3](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted#readme)
