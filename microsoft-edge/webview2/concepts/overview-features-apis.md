@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/20/2025
+ms.date: 11/18/2024
 ---
 # Overview of WebView2 APIs
 
