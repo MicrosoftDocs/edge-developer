@@ -57,6 +57,9 @@ This issue occurs because the WPF control uses the WPF `HwndHost` to host the Wi
 
 See also:
 * [PR 4804: WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/pull/4804/files?short_path=ebbc3ee#diff-ebbc3ee3560606e2823d68c134ea4aebdc1cb1252aaa9aa2b9a2815e2d8d36b2) - Spec.
+<!-- todo: instead link to latest commit:
+https://github.com/MicrosoftEdge/WebView2Feedback/blob/wpf-webview2compositioncontrol/specs/WPF_WebView2CompositionControl.md
+-->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -322,6 +325,9 @@ This issue occurs because the WPF control uses the WPF `HwndHost` to host the Wi
 
 See also:
 * [PR 4804: WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/pull/4804/files?short_path=ebbc3ee#diff-ebbc3ee3560606e2823d68c134ea4aebdc1cb1252aaa9aa2b9a2815e2d8d36b2) - Spec.
+<!-- todo: instead link to latest commit:
+https://github.com/MicrosoftEdge/WebView2Feedback/blob/wpf-webview2compositioncontrol/specs/WPF_WebView2CompositionControl.md
+-->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
