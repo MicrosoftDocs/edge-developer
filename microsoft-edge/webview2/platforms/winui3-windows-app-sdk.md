@@ -1,6 +1,6 @@
 ---
 title: WebView2 in WinUI 3 (Windows App SDK) apps
-description: WebView2 in WinUI 3 (Windows App SDK) apps.
+description: How to include a WebView2 control within your WinUI 3 (Windows App SDK) app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual

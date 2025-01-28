@@ -1,6 +1,6 @@
 ---
 title: WebView2 in WPF apps
-description: WebView2 in WPF apps.
+description: How to include a WebView2 control within your WPF app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual

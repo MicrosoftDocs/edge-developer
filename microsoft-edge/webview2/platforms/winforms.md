@@ -1,6 +1,6 @@
 ---
 title: WebView2 in WinForms apps
-description: WebView2 in WinForms apps.
+description: How to include a WebView2 control within your WinForms app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
