@@ -283,9 +283,10 @@ The above screenshot of the **Performance** tool's **Local metrics** home page c
 
 To approximate the experience of your users, follow the recommendations in [Configure your environment to better match that of your users](#configure-your-environment-to-better-match-that-of-your-users), below.
 
-
+`
 <!-- ====================================================================== -->
 ## Observe Core Web Vitals live
+<!-- from https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
 
 When you open the **Performance** tool, it immediately captures and shows you your local [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) metrics tells you their score (good, needs improvement, or bad).
 
