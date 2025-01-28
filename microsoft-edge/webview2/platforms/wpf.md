@@ -26,7 +26,7 @@ This issue occurs because the WPF control uses the WPF `HwndHost` to host the Wi
 
 See also:
 * [Mitigating Airspace Issues In WPF Applications](https://dwayneneed.github.io/wpf/2013/02/26/mitigating-airspace-issues-in-wpf-applications.html)
-* [PR 4804: WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/pull/4804/files?short_path=ebbc3ee#diff-ebbc3ee3560606e2823d68c134ea4aebdc1cb1252aaa9aa2b9a2815e2d8d36b2) - Spec.<!-- todo: which url format? -->
+* [WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WPF_WebView2CompositionControl.md) - Spec.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -49,12 +49,6 @@ n/a
 
 * [WebView2CompositionControl Class](/dotnet/api/microsoft.web.webview2.wpf.webview2compositioncontrol)
 
-<!-- todo: which url format? -->
-* [PR 4804: WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/pull/4804/files?short_path=ebbc3ee#diff-ebbc3ee3560606e2823d68c134ea4aebdc1cb1252aaa9aa2b9a2815e2d8d36b2) - Spec.<!-- rendered, commit-specific -->
-<!-- not rendered
-* [PR 4804: WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/pull/4804/files) - Spec.
--->
-<!-- rendered
-* [PR 4804: WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/blob/wpf-webview2compositioncontrol/specs/WPF_WebView2CompositionControl.md) - Spec. -->
+* [WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WPF_WebView2CompositionControl.md) - Spec.
 
 * [Mitigating Airspace Issues In WPF Applications](https://dwayneneed.github.io/wpf/2013/02/26/mitigating-airspace-issues-in-wpf-applications.html)
