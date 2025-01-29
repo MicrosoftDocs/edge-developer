@@ -316,8 +316,8 @@ See [Types](https://developer.chrome.com/docs/extensions/reference/sidePanel/#ty
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
 * [Declare API permissions in the manifest](../developer-guide/declare-permissions.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
-* [Sample: Display an image in a pop-up](../getting-started/part1-simple-extension.md)
-* [Sample: Insert an image in the webpage](../getting-started/part2-content-scripts.md)
+* [Sample: Picture viewer pop-up webpage](../getting-started/picture-viewer-popup-webpage.md)
+* [Sample: Picture inserter using content script](../getting-started/picture-inserter-content-script.md)
 
 
 <!-- ====================================================================== -->
