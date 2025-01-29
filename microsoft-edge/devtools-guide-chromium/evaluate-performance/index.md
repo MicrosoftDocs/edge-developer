@@ -32,30 +32,130 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Get started
+## Open the Performance tool
 
-In the following tutorial, you open DevTools on a "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
+In the sections below, you open DevTools on the "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
 
-1. Open the [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo page in your InPrivate tab or window.  To do that, right-click the link and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down. For more information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
+1. Right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down.  See also [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
 
-   Source code: [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
+   If you want to view the source code for the demo, see [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
 
+1. Right-click the demo webpage and then select **Inspect**.
 
-   <!--TODO: replace section when updated for Chromium-based Edge  -->
-
-   <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
-
-1. Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS) to open DevTools:
+   DevTools opens:
 
    ![The demo on the left, and DevTools on the right](./index-images/get-started-side-by-side.png)
 
-For the rest of the screenshots, DevTools is shown [undocked to a separate window](../customize/placement.md).
+Most screenshots of the **Performance** tool show DevTools [undocked to a separate window](../customize/placement.md).
 
 
-<!-- ------------------------------ -->
-#### Simulate a mobile CPU
+<!-- ====================================================================== -->
+## View local and field metrics
+<!-- from https://developer.chrome.com/blog/new-in-devtools-130#live-metrics-recommendations -->
+
+The difference between the local and field metrics shows that most of your users might not experience your website under the same conditions as you do.  The **Environment settings** section gives you recommendations about simulating a slower CPU and network connection to better match with what your users experience.
+
+todo: steps to:
+1. Open the **Performance** tool.
+1. Show landing page of **Performance** tool.
+1. Explain what the local metrics are.  (Chrome docs calls them "live metrics", but the UI says "local metrics", which is better.)
+1. Display the field metrics as well: click **Set up** under the **Field data** section.
+
+Enabling field metrics changes the **Local metrics** section of the page to be **Local and field metrics**, and shows both the user's local metrics and metrics that were captured on real users' devices.
+
+Live metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.  For information about live metrics, see [Observe Core Web Vitals live](#observe-core-web-vitals-live), below.
+
+To get recommendations, first set up field data fetching from Chrome UX Report (CrUX).  To set up field data fetching, see [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users), below.  For information about Chrome UX Report (CrUX), see [Overview of CrUX](https://developer.chrome.com/docs/crux)<!-- todo: make present repo match linked content, update link -->.
+
+Then expand the **Consider your local test conditions** section in each metric card (if any) and **Consider real user environments** in the **Environment settings**.
+
+The expanded sections with recommendations:
+
+![Performance tool home page](./index-images/perf-home-page.png)
+
+The above screenshot of the **Performance** tool's **Local metrics** home page contains the sections:
+* **Largest Contentful Paint (LCP)**
+* **Cumulative Layout Shift (CLS)**
+* **Interaction to Next Paint (INP)**
+
+To approximate the experience of your users, follow the recommendations in [Configure your environment to better match that of your users](#configure-your-environment-to-better-match-that-of-your-users), below.
+
+`
+<!-- ====================================================================== -->
+## Observe Core Web Vitals live
+<!-- from https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
+
+todo: 
+Delete this section **Observe Core Web Vitals live** and the next section, **Compare your experience to the experience of your users**.
+Local and field metrics are already mentioned in the new **View local and live metrics** section above.
+Copy some of the content from the present section to the new **View local and live metrics** section above, if it helps make the **View local and live metrics** section more complete and clear.
+
+When you open the **Performance** tool, it immediately captures and shows you your local [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) metrics tells you their score (good, needs improvement, or bad).
+
+If you interact with your page, the **Performance** tool also captures your local [Interaction to Next Paint (INP)](https://web.dev/articles/inp) and its score, which, in addition to LCP and CLS, gives you a complete overview of [Core Web Vitals](https://web.dev/articles/vitals) of your page using your network connection and device.
+
+![Observing the metrics](./index-images/observe-metrics.png)
+<!-- /static/docs/devtools/performance/overview/video/observe-metrics.mp4 -->
+
+Under the three metric cards in the **Interactions** and **Layout shifts** tabs, you can find tables with information on captured interactions and layout shifts, including elements, timings, phases (for interactions), and scores (for layout shifts).  To clear both lists, click **Clear** (block-icon<!-- ![]() -->).
+
+To get a breakdown of a metric score, hover over the metric value to see a tooltip.
+
+
+<!-- ====================================================================== -->
+## Compare your experience to the experience of your users
+
+You can also fetch field data from the [Chrome UX Report](https://developer.chrome.com/docs/crux) and compare the experience of your site's users to your local metrics.
+
+To add field data:
+
+1. In **Performance** > **Next steps** > **Field data**, click **Set up**.
+
+   ![The 'Set up' button in the Next steps section](./index-images/field-data-setup.png)
+
+1. In the **Configure field data fetching** dialog, note the **Privacy disclosure**, and click **Ok**.
+
+   <!-- expander section -->
+   Advanced: Set up a mapping between development and production environments:
+
+      Optionally, to automatically get the most relevant field data, you can set up (multiple) mappings between your development and production origins:
+      
+      1. In the dialog window, expand the **Advanced** section and click **+ New**.
+   
+      1. In the mapping table, enter your development and production URLs and click **+**.
+      
+      ![The mapping between a development and production origins in the advanced section](./index-images/field-data-advanced-mapping.png)
+   
+      For example, a mapping of `http://localhost:8080` to `https://example.com` will bring up field data for `example.com/page1` when you navigate to `localhost:8080/page1`.
+      
+      Additionally, if for some reason you can't get the field data automatically, you can turn on (check_box icon) **Always show field data for the below URL** and provide a URL.  The **Performance** panel will attempt to fetch field data for this URL first and then show you this field data no matter what page you navigate to.
+      
+      To change your field data fetch settings after setup, click **Field data** > **Configure**.
+       
+   <!-- end expander section -->
+
+   With the field data fetch set up, the **Performance** panel now shows you a comparison between your local metric scores and those that your users experience.  You can see the collection period in the **Field data** section on the right.
+
+   ![The collection peried of field data after it has fetched](./index-images/field-data-fetched.png)
+
+   To get a breakdown of a metric score, hover over the metric value to see a tooltip.
+
+
+<!-- ====================================================================== -->
+## Simulate a real user environment
+
+<!-- todo: also say this with the previous section: -->
+The difference between the local and field metrics, as seen above, shows that most of your users might not experience your website under the same conditions as you do.  The **Environment settings** section gives you recommendations about simulating a slower CPU and network connection to better match with what your users experience.
 
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.
+
+1. Right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**.
+
+1. Right-click the demo webpage and then select **Inspect**.
+
+   DevTools opens:
+
+   ![The demo on the left, and DevTools on the right](./index-images/get-started-side-by-side.png)
 
 1. In DevTools, open the **Performance** tool.
 
@@ -69,9 +169,45 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 
 <!-- ------------------------------ -->
-#### Set up the demo
+#### Configure your environment to better match that of your users
 
-The following section lets you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions.
+todo: delete section, possibly merge a couple points into the above section
+
+With the field data fetch set up as described in the previous section, the **Performance** panel provides you with recommendations on how to configure your environment to better match the experience of your users.
+
+To configure your environment:
+
+1. In each metric card, expand the **Consider your local test conditions** section, if any, and read the recommendations.
+
+   ![The 'Consider your local test conditions' sections expanded in each metric card](./index-images/env-recs.png)
+
+   Looks like in this example, to better match the experience of your users, you might want to use a common desktop screen size and throttle down the CPU and network.
+
+1. To match the environment configuration for this example:
+
+   1. Set your viewport to one of the common screen sizes (for example, 720p or 1080p). To emulate specific devices and screen sizes, you can use the [Device mode](https://developer.chrome.com/docs/devtools/device-mode) in the **Elements** tool.  See [Emulate mobile devices (Device Emulation)](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/).<!-- todo: ok to change link 1 to link 2? -->
+
+   1. 82% users of the website in this example use desktops to browse. To make sure that you compare your local metric scores to the correct field data, you can select **Desktop** from the **Field data** > **Device** drop-down list.
+
+   1. In the **Environment settings** section, set the **Network** drop-down list to, for example, **Fast 4G**, and **CPU** to, for example, **20x slowdown**.  You may also make sure to select the **Disable network cache** checkbox in the same section.
+
+1. With your environment configured, reload the page, interact with it to capture your local INP, and compare the metric scores again.
+
+   ![The environment is configured to match the real-world user experience](./index-images/env-config.png)
+
+   Looks like the metric scores are now more similar to those that your users experience. Accordingly, the **Consider your local test conditions** sections disappeared from the metric cards.
+
+With that, you can now start improving the [Core Web Vitals](https://web.dev/articles/vitals) of your website:
+
+* [Optimize LCP](https://web.dev/articles/optimize-lcp)
+* [Optimize INP](https://web.dev/articles/optimize-inp)
+* [Optimize CLS](https://web.dev/articles/optimize-cls)
+
+
+<!-- ====================================================================== -->
+## Set up the demo
+
+In the following section, continuing from above, you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions.
 
 1. Click the **Add elements** button until the blue icons move noticeably slower than before.  On a high-end machine, you can click it about 20 times.
 
@@ -82,10 +218,12 @@ The following section lets you customize the demo to make sure that your experie
 1. Click **Slow**.  The blue icons move slower and with more sluggishness again.
 
 
-<!-- ------------------------------ -->
-#### Record runtime performance
+<!-- ====================================================================== -->
+## Record runtime performance
 
 When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the unoptimized version.
+
+Continuing from above:
 
 1. In DevTools, click **Record** (![Record](./index-images/record-icon.png)).  DevTools captures performance metrics as the page runs.
 
@@ -105,6 +243,8 @@ These performance results show an overwhelming amount of data, but it will all m
 
 Once you have a recording of the page's performance, you can assess the page's performance and find the cause of any performance issues.
 
+Continuing from above:
+
 1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
 
    ![The CPU chart and Summary panel](./index-images/cpu-chart.png)
@@ -114,10 +254,12 @@ Once you have a recording of the page's performance, you can assess the page's p
    ![Hover on a frame](./index-images/frame-hover.png)
 
 
-<!-- ------------------------------ -->
-#### Bonus: Open the Frame Rendering Stats overlay
+<!-- ====================================================================== -->
+## Open the Frame Rendering Stats overlay
 
 Another handy tool is the **Frame Rendering Stats** overlay, which provides real-time estimates for FPS as the page runs. The **Frame Rendering Stats** overlay is not required for this tutorial but may provide helpful insight.
+
+Continuing from above:
 
 1. In DevTools, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
@@ -130,10 +272,12 @@ Another handy tool is the **Frame Rendering Stats** overlay, which provides real
 1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
 
 
-<!-- ------------------------------ -->
-#### Find the bottleneck
+<!-- ====================================================================== -->
+## Find the bottleneck
 
 After you verified that the animation isn't performing well, the next step is to answer the question "why?"
+
+Continuing from above:
 
 1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
@@ -156,11 +300,11 @@ After you verified that the animation isn't performing well, the next step is to
    When a red triangle is displayed at the top right of an event, it's a warning that there might be an issue related to the event.  The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) is run.
 
    The **Summary** panel displays information about that event:
-	
-	![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
+
+   ![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
 
 1. Click the **Reveal** link.  DevTools highlights the event that initiated the **Animation Frame Fired** event.
-	
+
 1. Click the **app.js:125** link.  The relevant line of source code is displayed in the **Sources** tool.
 
 1. Zoom in on the **Animation Frame Fired** event and its child events, by using the mouse wheel or trackpad. Or, press **W**.
@@ -181,14 +325,14 @@ After you verified that the animation isn't performing well, the next step is to
    -->
 
 
-<!-- ------------------------------ -->
-#### Analyze the optimized version
+<!-- ====================================================================== -->
+## Analyze the optimized version
 
 Using the workflows and tools that you just learned, click **Optimized** on the demo webpage to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
 
-<!-- ------------------------------ -->
-#### Unoptimized version
+<!-- ====================================================================== -->
+## Unoptimized version
 
 Compare this snippet of JavaScript from the unoptimized version of the app:
 
@@ -227,8 +371,8 @@ After making sure that the icon is still within the bounds of the page, we set i
 Finally, we read `element.offsetTop` again, to adjust the direction of the icon.
 
 
-<!-- ------------------------------ -->
-#### Optimized version
+<!-- ====================================================================== -->
+## Optimized version
 
 The optimized code uses a different sequence of actions to do less work. Here is the same snippet of JavaScript from the optimized version of the app: 
 
@@ -260,118 +404,6 @@ We then adjust the direction of the icon, but this time we don't read `element.o
 Finally, we set the new position of the icon, but this time we use `element.style.transform` instead of `element.style.top`. Using `element.style.transform` is faster, because the CSS `transform` property can be applied by the browser rendering engine without having to recalculate the layout of the page. When using the `transform` property, the browser considers each icon as an individual layer, and then displays these layers in the correct positions by re-compositing the final image.
 
 To learn more, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations).
-
-
-<!-- ====================================================================== -->
-## Recommendations in live metrics
-<!-- from https://developer.chrome.com/blog/new-in-devtools-130#live-metrics-recommendations -->
-
-Live metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.  For information about live metrics, see [Observe Core Web Vitals live](#observe-core-web-vitals-live), below.
-
-To get recommendations, first set up field data fetching from Chrome UX Report (CrUX).  To set up field data fetching, see [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users), below.  For information about Chrome UX Report (CrUX), see [Overview of CrUX](https://developer.chrome.com/docs/crux)<!-- todo: make present repo match linked content, update link -->.
-
-Then expand the **Consider your local test conditions** section in each metric card (if any) and **Consider real user environments** in the **Environment settings**.
-
-The expanded sections with recommendations:
-
-![Performance tool home page](./index-images/perf-home-page.png)
-
-The above screenshot of the **Performance** tool's **Local metrics** home page contains the sections:
-* **Largest Contentful Paint (LCP)**
-* **Cumulative Layout Shift (CLS)**
-* **Interaction to Next Paint (INP)**
-
-To approximate the experience of your users, follow the recommendations in [Configure your environment to better match that of your users](#configure-your-environment-to-better-match-that-of-your-users), below.
-
-`
-<!-- ====================================================================== -->
-## Observe Core Web Vitals live
-<!-- from https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
-
-When you open the **Performance** tool, it immediately captures and shows you your local [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) metrics tells you their score (good, needs improvement, or bad).
-
-If you interact with your page, the **Performance** tool also captures your local [Interaction to Next Paint (INP)](https://web.dev/articles/inp) and its score, which, in addition to LCP and CLS, gives you a complete overview of [Core Web Vitals](https://web.dev/articles/vitals) of your page using your network connection and device.
-
-![Observing the metrics](./index-images/observe-metrics.png)
-<!-- /static/docs/devtools/performance/overview/video/observe-metrics.mp4 -->
-
-Under the three metric cards in the **Interactions** and **Layout shifts** tabs, you can find tables with information on captured interactions and layout shifts, including elements, timings, phases (for interactions), and scores (for layout shifts).  To clear both lists, click **Clear** (block-icon<!-- ![]() -->).
-
-To get a breakdown of a metric score, hover over the metric value to see a tooltip.
-
-
-<!-- ------------------------------ -->
-#### Compare your experience to the experience of your users
-
-You can also fetch field data from the [Chrome UX Report](https://developer.chrome.com/docs/crux) and compare the experience of your site's users to your local metrics.
-
-To add field data:
-
-1. In **Performance** > **Next steps** > **Field data**, click **Set up**.
-
-   ![The 'Set up' button in the Next steps section](./index-images/field-data-setup.png)
-
-1. In the **Configure field data fetching** dialog, note the **Privacy disclosure**, and click **Ok**.
-
-   <!-- expander section -->
-   Advanced: Set up a mapping between development and production environments:
-
-      Optionally, to automatically get the most relevant field data, you can set up (multiple) mappings between your development and production origins:
-      
-      1. In the dialog window, expand the **Advanced** section and click **+ New**.
-   
-      1. In the mapping table, enter your development and production URLs and click **+**.
-      
-      ![The mapping between a development and production origins in the advanced section](./index-images/field-data-advanced-mapping.png)
-   
-      For example, a mapping of `http://localhost:8080` to `https://example.com` will bring up field data for `example.com/page1` when you navigate to `localhost:8080/page1`.
-      
-      Additionally, if for some reason you can't get the field data automatically, you can turn on (check_box icon) **Always show field data for the below URL** and provide a URL.  The **Performance** panel will attempt to fetch field data for this URL first and then show you this field data no matter what page you navigate to.
-      
-      To change your field data fetch settings after setup, click **Field data** > **Configure**.
-       
-   <!-- end expander section -->
-
-   With the field data fetch set up, the **Performance** panel now shows you a comparison between your local metric scores and those that your users experience.  You can see the collection period in the **Field data** section on the right.
-
-   ![The collection peried of field data after it has fetched](./index-images/field-data-fetched.png)
-
-   To get a breakdown of a metric score, hover over the metric value to see a tooltip.
-
-
-<!-- ------------------------------ -->
-#### Configure your environment to better match that of your users
-
-With the field data fetch set up as described in the previous section, the **Performance** panel provides you with recommendations on how to configure your environment to better match the experience of your users.
-
-
-To configure your environment:
-
-1. In each metric card, expand the **Consider your local test conditions** section, if any, and read the recommendations.
-
-   ![The 'Consider your local test conditions' sections expanded in each metric card](./index-images/env-recs.png)
-
-   Looks like in this example, to better match the experience of your users, you might want to use a common desktop screen size and throttle down the CPU and network.
-
-1. To match the environment configuration for this example:
-
-   1. Set your viewport to one of the common screen sizes (for example, 720p or 1080p). To emulate specific devices and screen sizes, you can use the [Device mode](https://developer.chrome.com/docs/devtools/device-mode) in the **Elements** tool.  See [Emulate mobile devices (Device Emulation)](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/).<!-- todo: ok to change link 1 to link 2? -->
-
-   1. 82% users of the website in this example use desktops to browse. To make sure that you compare your local metric scores to the correct field data, you can select **Desktop** from the **Field data** > **Device** drop-down list.
-
-   1. In the **Environment settings** section, set the **Network** drop-down list to, for example, **Fast 4G**, and **CPU** to, for example, **20x slowdown**.  You may also make sure to select the **Disable network cache** checkbox in the same section.
-
-1. With your environment configured, reload the page, interact with it to capture your local INP, and compare the metric scores again.
-
-   ![The environment is configured to match the real-world user experience](./index-images/env-config.png)
-
-   Looks like the metric scores are now more similar to those that your users experience. Accordingly, the **Consider your local test conditions** sections disappeared from the metric cards.
-
-With that, you can now start improving the [Core Web Vitals](https://web.dev/articles/vitals) of your website:
-
-* [Optimize LCP](https://web.dev/articles/optimize-lcp)
-* [Optimize INP](https://web.dev/articles/optimize-inp)
-* [Optimize CLS](https://web.dev/articles/optimize-cls)
 
 
 <!-- ====================================================================== -->
