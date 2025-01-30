@@ -73,4 +73,4 @@ An extension provides opt-in permissions at install time.  You specify the exten
 <!-- ====================================================================== -->
 ## Next steps
 
-For information on getting started with your extension, see [Sample: Display an image in a pop-up](part1-simple-extension.md).
+Next, install, run, and study [Sample: Picture viewer pop-up webpage](./picture-viewer-popup-webpage.md).
