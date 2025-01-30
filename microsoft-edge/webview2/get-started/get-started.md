@@ -10,7 +10,7 @@ ms.date: 02/22/2023
 ---
 # Getting Started tutorials
 
-These articles cover how to set up your development tools and create an initial WebView2 app, like a Hello World app with basic functionality.  You learn WebView2 concepts along the way.  If you want to first install and run a sample, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article.
+These articles cover how to set up your development tools and create an initial WebView2 app, like a Hello World app with basic functionality.  You learn WebView2 concepts along the way.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article.
 
 
 | Article | Completed project | Description |

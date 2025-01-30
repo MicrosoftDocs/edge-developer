@@ -10,7 +10,7 @@ ms.date: 11/01/2024
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK) apps
 
-This article is to learn to write your own WebView2 code.  If you want to first install and run a sample, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WinUI 3 (Windows App SDK) sample app](../samples/webview2-winui3-sample.md).
+This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WinUI 3 (Windows App SDK) sample app](../samples/webview2-winui3-sample.md).
 
 This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.  You first use the **Blank App, Packaged (WinUI 3 in Desktop)** Visual Studio project template, which uses the WindowsAppSDK, which includes the WebView2 SDK.  You then add a WebView2 control, an Address bar and **Go** button, and URL logic to only allow navigating to HTTPS URLs.
 

@@ -10,7 +10,7 @@ ms.date: 09/19/2022
 ---
 # Get started with WebView2 in WPF apps
 
-This article is to learn to write your own WebView2 code.  If you want to first install and run a sample, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WPF sample app](../samples/webview2wpfbrowser.md).
+This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WPF sample app](../samples/webview2wpfbrowser.md).
 
 This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.
 
