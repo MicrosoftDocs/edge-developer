@@ -10,6 +10,8 @@ ms.date: 10/26/2022
 ---
 # Get started with WebView2 in WinForms apps
 
+This article is to learn to write your own WebView2 code.  If you want to first install and run a sample, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WinForms sample app](../samples/webview2windowsformsbrowser.md).
+
 <!--
 todo: errors experienced with vs2022 by following these instructions:
 *  The addressbar text box & Go button shift to the right when alt+tab to the Form1 window. 

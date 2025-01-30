@@ -12,6 +12,8 @@ ms.date: 11/25/2024
 
 This tutorial is for developers using WebView2 in immersive HoloLens 2 Unity applications.
 
+This article is to learn to write your own WebView2 code.  If you want to first install and run a sample, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article.
+
 > [!IMPORTANT]
 > WebView2 on Hololens 2 continues to be available.  However, support for WebView2 on Hololens 2 is discontinued; there are no planned bug fixes or content updates, and technical support has ended.  Applications that use WebView2 on Hololens 2 are not guaranteed to continue to work.
 

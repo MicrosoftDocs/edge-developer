@@ -10,6 +10,8 @@ ms.date: 10/31/2023
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps
 
+This article is to learn to write your own WebView2 code.  If you want to first install and run a sample, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md).
+
 In this tutorial, you:
 *  Set up your development tools for creating UWP apps that use WebView2 to display web content.
 *  Create an initial WinUI 2 (UWP) app.

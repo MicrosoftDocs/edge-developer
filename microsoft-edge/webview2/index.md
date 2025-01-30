@@ -132,7 +132,7 @@ developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Microsoft.com:
-* [Become a Microsoft Edge Insider](https://www.microsoft.com/en-us/edge/download/insider) - download the preview channels of Microsoft Edge (Canary, Dev, and Beta).
+* [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download the preview channels of Microsoft Edge (Canary, Dev, and Beta).
 
 YouTube:
 * [Building, Deploying, and Managing WebView2 Applications](https://www.youtube.com/watch?v=LX-eXvcSx6c) - March 2, 2021.

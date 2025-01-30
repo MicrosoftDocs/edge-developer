@@ -12,6 +12,8 @@ ms.date: 07/29/2022
 
 <!-- TODO: Rewrite to start from a project template? -->
 
+This article is to learn to write your own WebView2 code.  If you want to first install and run a sample, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article.
+
 In this article, you set up your development tools (if not done already), learn how to add WebView2 code to a Win32 app project, and learn about WebView2 concepts along the way.
 
 This tutorial starts by opening an existing Win32 app project that has WebView2 code added.  The project uses the [Win32_GettingStarted (WebView2GettingStarted.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) directory that's part of the `WebView2Samples` repo.  To use this article, you do the following:
