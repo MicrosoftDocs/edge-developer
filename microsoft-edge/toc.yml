@@ -40,6 +40,10 @@
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: release notes, announcements
 # latest 10 What's New
+            - name: Microsoft Edge 132
+              href: devtools-guide-chromium/whats-new/2025/01/devtools-132.md
+              displayName: What's New in DevTools (Microsoft Edge 132)  # page title
+
             - name: Microsoft Edge 131
               href: devtools-guide-chromium/whats-new/2024/11/devtools-131.md
               displayName: What's New in DevTools (Microsoft Edge 131)  # page title
@@ -76,15 +80,15 @@
               href: devtools-guide-chromium/whats-new/2024/03/devtools-123.md
               displayName: What's New in DevTools (Microsoft Edge 123)  # page title
 
-            - name: Microsoft Edge 122
-              href: devtools-guide-chromium/whats-new/2024/02/devtools-122.md
-              displayName: What's New in DevTools (Microsoft Edge 122)  # page title
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 122
+                  href: devtools-guide-chromium/whats-new/2024/02/devtools-122.md
+                  displayName: What's New in DevTools (Microsoft Edge 122)  # page title
 
                 - name: Microsoft Edge 121
                   href: devtools-guide-chromium/whats-new/2024/01/devtools-121.md
@@ -1012,11 +1016,11 @@
             - name: Extension concepts and architecture
               href: extensions-chromium/getting-started/index.md
 
-            - name: "Sample: Display an image in a pop-up"
-              href: extensions-chromium/getting-started/part1-simple-extension.md
+            - name: "Sample: Picture viewer pop-up webpage"
+              href: extensions-chromium/getting-started/picture-viewer-popup-webpage.md
 
-            - name: "Sample: Insert an image in the webpage"
-              href: extensions-chromium/getting-started/part2-content-scripts.md
+            - name: "Sample: Picture inserter using content script"
+              href: extensions-chromium/getting-started/picture-inserter-content-script.md
 
             - name: Sideload an extension to install and test it locally
               href: extensions-chromium/getting-started/extension-sideloading.md
