@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 10/26/2022
+ms.date: 08/01/2024
 ---
 # Set up your Dev environment for WebView2
 
