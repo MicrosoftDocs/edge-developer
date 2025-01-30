@@ -147,6 +147,16 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/csp",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/getting-started/part1-simple-extension.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/getting-started/picture-viewer-popup-webpage",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/getting-started/part2-content-scripts.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/getting-started/picture-inserter-content-script",
+        "redirect_document_id": false
+      },
 
 /* Progressive Web Apps: */
       {
