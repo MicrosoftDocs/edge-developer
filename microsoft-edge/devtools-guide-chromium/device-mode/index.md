@@ -288,6 +288,14 @@ All of the throttling is based upon the normal capability of your laptop or desk
 
 
 <!-- ------------------------------ -->
+## Performance tool's tab has a warning icon when throttling
+
+When throttling is enabled in **Device Emulation**, a warning icon is displayed in the **Performance** tab of the toolbar, to help you know that performance is impacted by throttling:
+
+![Performance tab warning icon](./index-images/performance-warning-icon.png)
+
+
+<!-- ------------------------------ -->
 #### Throttle the CPU only
 
 To throttle the CPU only, and not the network:
