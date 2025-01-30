@@ -1016,11 +1016,11 @@
             - name: Extension concepts and architecture
               href: extensions-chromium/getting-started/index.md
 
-            - name: "Sample: Display an image in a pop-up"
-              href: extensions-chromium/getting-started/part1-simple-extension.md
+            - name: "Sample: Picture viewer pop-up webpage"
+              href: extensions-chromium/getting-started/picture-viewer-popup-webpage.md
 
-            - name: "Sample: Insert an image in the webpage"
-              href: extensions-chromium/getting-started/part2-content-scripts.md
+            - name: "Sample: Picture inserter using content script"
+              href: extensions-chromium/getting-started/picture-inserter-content-script.md
 
             - name: Sideload an extension to install and test it locally
               href: extensions-chromium/getting-started/extension-sideloading.md
