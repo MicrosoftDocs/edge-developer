@@ -431,7 +431,7 @@ public MainWindow()
         }
     };
 
-    AddressBar.Text = "https://developer.microsoft.com/en-us/microsoft-edge/webview2/";
+    AddressBar.Text = "https://developer.microsoft.com/microsoft-edge/webview2/";
 
     WebView2.NavigationCompleted += WebView2_NavigationCompleted;
     WebView2.CoreWebView2Initialized += WebView2_CoreWebView2Initialized;
