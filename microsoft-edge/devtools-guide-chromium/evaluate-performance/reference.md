@@ -201,9 +201,9 @@ After making a recording, to remove that recording from the **Performance** tool
 After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** tool displays a lot of data about the recording. Use the recorded data to analyze the performance of your webpage.
 
 
-<!-- start of chrome section -->
 <!-- ------------------------------ -->
 #### Navigate the recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#navigate -->
 
 To closely inspect your performance recording, you can select a portion of a recording, scroll a long flame chart, zoom in and out, and use breadcrumbs to jump between zoom levels.
 
@@ -259,7 +259,7 @@ To remove the children of a breadcrumb, right-click the parent breadcrumb and se
 
 To scroll a long flame chart in the **Main** track or any of its neighbors, click and hold, then drag in any direction until what you are looking for comes into view.
 
-<!-- / chrome -->
+<!-- / https://developer.chrome.com/docs/devtools/performance/reference#navigate -->
 
 
 <!-- existing docs: -->
