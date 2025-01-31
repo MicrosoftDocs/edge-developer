@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/15/2024
+ms.date: 01/30/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -201,6 +201,68 @@ After making a recording, to remove that recording from the **Performance** tool
 After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** tool displays a lot of data about the recording. Use the recorded data to analyze the performance of your webpage.
 
 
+<!-- start of chrome section -->
+<!-- ------------------------------ -->
+#### Navigate the recording
+
+To closely inspect your performance recording, you can select a portion of a recording, scroll a long flame chart, zoom in and out, and use breadcrumbs to jump between zoom levels.
+
+
+<!-- ------------------------------ -->
+#### Select a portion of the recording
+
+Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
+
+![The Timeline overview under the action bar](./reference-images/timeline-overview.png)
+
+To select a portion of a recording, click and hold, then drag left or right across the Timeline overview.
+
+![Select a portion of a recording](./reference-images/select-portion.png)
+
+To select a portion using the keyboard:
+
+1. Focus the **Main** track or any of its neighbors.
+
+1. Use the **W**, **A**, **S**, **D** keys to zoom in, move left, zoom out, and move right, respectively.
+
+To select a portion using a trackpad:
+
+1. Hover over the **Timeline overview** section or any of the tracks (**Main** and its neighbors).
+
+1. Using two fingers, swipe up to zoom out, swipe left to move left, swipe down to zoom in, and swipe right to move right.
+
+
+<!-- ------------------------------ -->
+#### Create breadcrumbs and jump between zoom levels
+
+The **Timeline overview** lets you create multiple nested breadcrumbs in succession, increasing zoom levels, and then jump freely between zoom levels.
+
+To create and use breadcrumbs:
+
+1. In **Timeline overview**, [select a portion of the recording](#select-a-portion-of-a-recording) (above).
+
+1. Hover over the selection and click the **N ms** (![Zoom in icon](./reference-images/zoom-in-icon.png))<!-- todo: real icon png --> button.  The selection expands to fill the **Timeline overview**.  A chain of breadcrumbs starts building at top of the **Timeline overview**.
+
+1. Repeat the previous two steps to create another nested breadcrumb. You can continue to nest breadcrumbs as long as the selection range is greater than 5 milliseconds.
+
+1. To jump to a chosen zoom level, click the corresponding breadcrumb in the chain at top of the Timeline overview.
+
+![Jumping to a chosen zoom level](./reference-images/breadcrumb-zoom.png)
+
+To remove the children of a breadcrumb, right-click the parent breadcrumb and select **Remove child breadcrumbs**.
+
+![Removing the children of a breadcrumb](./reference-images/remove-childs.png)
+
+
+<!-- ------------------------------ -->
+#### Scroll a long flame chart
+
+To scroll a long flame chart in the **Main** track or any of its neighbors, click and hold, then drag in any direction until what you are looking for comes into view.
+
+<!-- / chrome -->
+
+
+<!-- existing docs: -->
 <!-- ------------------------------ -->
 #### Select a portion of a recording
 
@@ -741,6 +803,12 @@ The key thing here is the fact that the JS heap ends higher than it began (the "
 
 See also:
 * [View memory metrics](#view-memory-metrics), above.
+
+
+
+
+
+
 
 
 <!-- ====================================================================== -->
