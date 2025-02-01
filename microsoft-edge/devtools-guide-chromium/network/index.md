@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/11/2023
+ms.date: 01/31/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -147,11 +147,11 @@ The network connection of the computer that you use to build sites is probably f
 
 1. Select **Slow 3G**:
 
-   ![Select Slow 3G](./index-images/throttling-slow-3g.png)
+   ![Select Slow 3G](./index-images/throttling-slow-3g.png)<!-- todo: show or mention throttling warning icon -->
 
 1. Long-press **Reload** (![Reload](./index-images/refresh-icon.png)) (or right-click **Refresh**) and then select **Empty cache and hard refresh**:
 
-   ![Empty cache and hard refresh](./index-images/empty-cache-and-hard-reset.png)
+   ![Empty cache and hard refresh](./index-images/empty-cache-and-hard-reset.png)<!-- todo: show or mention throttling warning icon -->
 
 On repeat visits, the browser usually serves some files from the [cache](https://developer.mozilla.org/docs/Web/HTTP/Caching), which speeds up the page load.  **Empty cache and hard refresh** forces the browser to go the network for all resources.  Use it to display how a first-time visitor experiences a page load.
 
