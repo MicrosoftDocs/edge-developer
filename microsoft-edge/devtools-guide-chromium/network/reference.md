@@ -28,8 +28,9 @@ This article is a feature-driven inventory of the **Network** tool.  Use the **N
 
 <!-- -------------- -->
 **Detailed contents:**
-<!-- omit h6 (3rd level).  compare Table of contents in https://developer.chrome.com/docs/devtools/network/reference/ -->
 
+<!-- compare https://developer.chrome.com/docs/devtools/network/reference/ -->
+<!-- updated 2025/01/31 -->
 * [Record network requests](#record-network-requests)
    * [Stop recording network requests](#stop-recording-network-requests)
    * [Clear requests](#clear-requests)
@@ -37,9 +38,11 @@ This article is a feature-driven inventory of the **Network** tool.  Use the **N
    * [Capture screenshots during page load](#capture-screenshots-during-page-load)
 * [Change loading behavior](#change-loading-behavior)
    * [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache)
+      * [Disable the browser cache from the Network conditions tool](#disable-the-browser-cache-from-the-network-conditions-tool)
    * [Manually clear the browser cache](#manually-clear-the-browser-cache)
    * [Emulate offline](#emulate-offline)
    * [Emulate slow network connections](#emulate-slow-network-connections)
+      * [Emulate slow network connections from the Network Conditions tool](#emulate-slow-network-connections-from-the-network-conditions-tool)
    * [Manually clear browser cookies](#manually-clear-browser-cookies)
    * [Override the user agent](#override-the-user-agent)
 * [Set user agent client hints](#set-user-agent-client-hints)
@@ -52,13 +55,19 @@ This article is a feature-driven inventory of the **Network** tool.  Use the **N
    * [Sort by column](#sort-by-column)
    * [Sort by activity phase](#sort-by-activity-phase)
 * [Analyze requests](#analyze-requests)
+   * [Display a log of requests](#display-a-log-of-requests)
+      * [Add or remove columns](#add-or-remove-columns)
+      * [Add columns for response headers](#add-columns-for-response-headers)
    * [Display the timing relationship of requests](#display-the-timing-relationship-of-requests)
    * [Display a preview of a response body](#display-a-preview-of-a-response-body)
    * [Display a response body](#display-a-response-body)
    * [Display HTTP headers](#display-http-headers)
    * [Display query string parameters](#display-query-string-parameters)
+      * [Display URL-encoded query string parameters](#display-url-encoded-query-string-parameters)
    * [Display cookies](#display-cookies)
    * [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request)
+      * [Preview a timing breakdown](#preview-a-timing-breakdown)
+      * [Timing breakdown phases explained](#timing-breakdown-phases-explained)
    * [Display initiators and dependencies](#display-initiators-and-dependencies)
    * [Display load events](#display-load-events)
    * [Display the total number of requests](#display-the-total-number-of-requests)
@@ -74,6 +83,7 @@ This article is a feature-driven inventory of the **Network** tool.  Use the **N
    * [Hide the Filters pane](#hide-the-filters-pane)
    * [Big request rows](#big-request-rows)
    * [Hide the Overview pane](#hide-the-overview-pane)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -210,7 +220,7 @@ Emulate Slow 3G, Fast 3G, and other connection speeds from the **No throttling**
 
 The **Throttling** dropdown menu:
 
-![The Throttling dropdown menu](./reference-images/throttling-menu.png)
+![The Throttling dropdown menu](./reference-images/throttling-menu.png)<!-- todo: show or mention throttling warning icon -->
 
 You can choose from different presets, such as Slow 3G or Fast 3G.  To add your own custom presets, open the Throttling menu, and select **Custom** > **Add**.
 
