@@ -1709,6 +1709,11 @@
         - name: Development tips for Microsoft Edge
           href: web-platform/web-platform.md
 
+        - name: Release notes
+          items:
+            - name: Microsoft Edge 133
+              href: web-platform/release-notes/133.md
+
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: web-platform/site-impacting-changes.md
 
