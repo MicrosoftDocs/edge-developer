@@ -135,10 +135,11 @@ An example of a recording when JS samples are enabled:
 
 <!-- ------------------------------ -->
 #### Throttle the network while recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#network-throttle -->
 
 To throttle the network while recording:
 
-1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  See [Show recording settings](#show-recording-settings), above.
 
 1. Set **Network** to the desired level of throttling.
 
@@ -147,14 +148,17 @@ To throttle the network while recording:
 
 <!-- ------------------------------ -->
 #### Throttle the CPU while recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#cpu-throttle -->
 
 To throttle the CPU while recording:
 
-1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  See [Show recording settings](#show-recording-settings), above.
 
 1. Set **CPU** to the desired level of throttling.
 
 <!-- todo: show or mention throttling warning icon -->
+
+<!-- https://microsoftedge.github.io/Demos/devtools-performance-get-started/ -->
 
 Throttling is relative to the capabilities of your computer.  For example, the **2x slowdown** option makes your CPU operate twice as slow than normal.  DevTools don't truly simulate the CPUs of mobile devices, because the architecture of mobile devices is very different from that of desktops and laptops.
 
