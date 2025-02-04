@@ -1711,6 +1711,8 @@
 
         - name: Release notes
           items:
+            - name: Microsoft Edge 134
+              href: web-platform/release-notes/134.md
             - name: Microsoft Edge 133
               href: web-platform/release-notes/133.md
 
