@@ -5,12 +5,22 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 10/06/2024
+ms.date: 02/04/2025
 ---
 # Development tips for Microsoft Edge
 
+<!-- first sentence explains and disambiguates/clarifies the h1 title & the TOC bucket name: -->
+This TOC bucket is named Web Platform and its scope is Edge-specific web-platform considerations.
+
+See also:
+* external docs
+* external docs
+* external docs
+
+
 There are many tips and tricks to be aware of when building websites or web apps that work in Microsoft Edge, including:
 
+<!-- todo: make this list match the h2 headings / toc entries? -->
 *  Testing for coming changes that could impact compatibility of your website with Microsoft Edge.
 *  Moving users to Microsoft Edge from Internet Explorer.
 *  Configuring tracking prevention in Microsoft Edge.
@@ -19,6 +29,21 @@ There are many tips and tricks to be aware of when building websites or web apps
 *  Detecting Windows 11 by using User-Agent Client Hints.
 *  Customizing the **password reveal** button.
 *  Viewing formatted JSON responses and files in browser tabs.
+
+<!-- compare summary overview table at top of https://learn.microsoft.com/en-us/microsoft-edge/test-and-automation/test-and-automation which summarizes each tool for test/automation -->
+
+h2 headings in the present article = artices listed in TOC:
+* Site compatibility-impacting changes coming to Microsoft Edge
+* Move users to Microsoft Edge from Internet Explorer
+* Tracking prevention in Microsoft Edge
+* Detect Microsoft Edge from your website
+* Develop experiences for the sidebar in Microsoft Edge
+* Detect Windows 11 using User-Agent Client Hints
+* Customize the password reveal button
+* Display regional versions of your site, based on OS settings
+* View formatted JSON responses or files
+* Sign up for the Ad Selection API
+
 
 These aspects of developing for, and with, Microsoft Edge are described below.
 
