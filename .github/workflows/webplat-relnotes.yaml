@@ -9,31 +9,25 @@ on:
     # once a day
     - cron: '0 0 * * *'
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   generate:
-    name: Generate the beta web platform release notes
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+
       - name: Install dependencies
-        id: install
         run: |
           cd scripts
           npm install
-      - name: Run script
-        id: generate
-        # This might create a new file, or not, depending on whether it's time
-        # to generate the release notes.
+
+      - name: Generate release notes
         run: |
           cd scripts
           node web-platform-release-notes.js
-      - name: Commit the changes if any
-        id: commit
+
+      - name: Commit changes
         run: |
           git checkout -b web-platform-release-notes
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
