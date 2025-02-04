@@ -1,5 +1,5 @@
-### YamlMime:Landing
-# docset landing page
+### https://localhost:6060
+
 title: Microsoft Edge Developer documentation # < 60 chars
 summary: Development using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more. # < 160 chars
 
@@ -11,7 +11,7 @@ metadata:
   # ms.collection: collection # Optional; Remove if no collection is used.
   author: MSEdgeTeam #Required; your GitHub user alias, with correct capitalization.
   ms.author: msedgedevrel #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/15/2024 #Required; mm/dd/yyyy format.
+  ms.date: 2025-02-04 #Required; mm-dd-yyyy format.
   
       # - linkListType: architecture
       # - linkListType: concept
