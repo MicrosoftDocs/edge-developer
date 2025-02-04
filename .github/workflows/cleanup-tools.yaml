@@ -1,4 +1,4 @@
-name: "clean repo"
+name: "cleanest"
 
 on:
   schedule:
