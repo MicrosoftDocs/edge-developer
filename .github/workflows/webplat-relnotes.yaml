@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   generate:
-    name: Check if it's time and generate beta relnotes
+    name: Generate the beta web platform release notes
     runs-on: ubuntu
     steps:
       - name: Checkout repo
@@ -27,11 +27,13 @@ jobs:
           npm install
       - name: Run script
         id: generate
+        # This might create a new file, or not, depending on whether it's time
+        # to generate the release notes.
         run: |
           cd scripts
           node web-platform-release-notes.js
       - name: Commit the changes if any
-        id: pr
+        id: commit
         run: |
           git checkout -b web-platform-release-notes
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
