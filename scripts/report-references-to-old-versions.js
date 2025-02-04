@@ -1,7 +1,7 @@
-const glob = require('glob');
-const fs = require('fs').promises;
-const path = require('path');
-const github = require('@actions/github');
+import glob from 'glob';
+import fs from 'fs/promises';
+import path from 'path';
+import github from '@actions/github';
 
 const FILES_TO_INCLUDE = '../microsoft-edge/**/*.md';
 const FILES_TO_IGNORE = [
