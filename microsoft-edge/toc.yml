@@ -1,16 +1,19 @@
 # =============================================================================
 # TOC sections:
 # top leaf nodes (landing, docset overview)
-# DevTools
-# DevTools for VS Code (within DevTools)
-# Extensions
-# PWA
+
+# TOC buckets:
+# Microsoft Edge DevTools
+#   DevTools for Visual Studio Code
+# Microsoft Edge extensions
+# Progressive Web Apps
 # WebView2
 # Test and automation
-# Development tips [Web platform]
+# Web Platform development tips
 # Microsoft Edge IDE integration
 # Accessibility in Microsoft Edge
 # DualEngine
+
 # bottom leaf nodes (video, privacy, initiative)
 
 # =============================================================================
@@ -22,7 +25,7 @@
       href: develop-web-microsoft-edge.md
 
 # top =========================================================================
-# DevTools
+# Microsoft Edge DevTools
     - name: Microsoft Edge DevTools
       items:
 # Landing page -----------------------------------------------------
@@ -914,7 +917,7 @@
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 
 # =============================================================================
-# DevTools for VS Code (within DevTools)
+#   DevTools for Visual Studio Code
         - name: DevTools for Visual Studio Code
           items:
 
@@ -987,11 +990,11 @@
 
             - name: Getting in touch with the Microsoft Edge DevTools Extension team
               href: visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
-# /DevTools for VS Code
-# /DevTools
+#   /DevTools for Visual Studio Code
+# /Microsoft Edge DevTools
 
 # top =========================================================================
-# Extensions
+# Microsoft Edge extensions
     - name: Microsoft Edge extensions
       items:
         - name: Microsoft Edge extensions documentation
@@ -1163,10 +1166,10 @@
         - name: Contact the Microsoft Edge extensions team
           href: extensions-chromium/publish/contact-extensions-team.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues
-# /Extensions
+# /Microsoft Edge extensions
 
 # top =========================================================================
-# PWA
+# Progressive Web Apps
     - name: Progressive Web Apps
       items:
         - name: Progressive Web Apps (PWAs) documentation
@@ -1250,7 +1253,7 @@
 
         - name: Progressive Web App demos
           href: ./progressive-web-apps-chromium/demo-pwas.md
-# /PWA
+# /Progressive Web Apps
 
 # top =========================================================================
 # WebView2
@@ -1669,14 +1672,11 @@
 # Test and automation
     - name: Test and automation
       items:
-        - name: Test and automation in Microsoft Edge  # new firstchild article
+        - name: Test and automation in Microsoft Edge
           href: test-and-automation/test-and-automation.md
 
         - name: DevTools Protocol
           href: test-and-automation/devtools-protocol.md
-
-        - name: Use origin trials in Microsoft Edge
-          href: origin-trials/index.md
 
         - name: Use Playwright to automate and test in Microsoft Edge
           href: playwright/index.md
@@ -1703,11 +1703,14 @@
 # /Test and automation
 
 # top =========================================================================
-# Development tips [Web platform]
-    - name: Development tips for Microsoft Edge
+# Web Platform development tips
+    - name: Web Platform development tips
       items:
-        - name: Development tips for Microsoft Edge
+        - name: Web Platform development tips for Microsoft Edge
           href: web-platform/web-platform.md
+
+        - name: Use origin trials in Microsoft Edge
+          href: origin-trials/index.md
 
         - name: Release notes
           items:
@@ -1746,7 +1749,8 @@
 
         - name: Sign up for the Ad Selection API
           href: ./web-platform/ad-selection-api.md
-# /Development tips [Web platform]
+
+# /Web Platform development tips
 
 # top =========================================================================
 # Microsoft Edge IDE integration

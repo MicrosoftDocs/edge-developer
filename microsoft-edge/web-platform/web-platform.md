@@ -1,5 +1,5 @@
 ---
-title: Development tips for Microsoft Edge
+title: Web Platform development tips for Microsoft Edge
 description: Testing for coming changes that could impact compatibility of your site with Microsoft Edge.  Moving users from Internet Explorer.  Setting up tracking prevention.  Detecting Microsoft Edge from your website. Detecting Windows 11 via User-Agent Client Hints.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,11 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.date: 02/04/2025
 ---
-# Development tips for Microsoft Edge
+# Web Platform development tips for Microsoft Edge
+
+<!-- compare https://developer.chrome.com/docs/web-platform 
+"Web Platform
+Read the documentation for Web Platform APIs, some of which are experimental in Chrome.  For example, origin and developer trials, or features only found in Canary." -->
 
 <!-- first sentence explains and disambiguates/clarifies the h1 title & the TOC bucket name: -->
 This TOC bucket is named Web Platform and its scope is Edge-specific web-platform considerations.

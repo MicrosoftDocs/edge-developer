@@ -100,7 +100,9 @@ See [Test and automation in Microsoft Edge](test-and-automation/test-and-automat
 
 
 <!-- ====================================================================== -->
-## Development tips for Microsoft Edge
+## Web Platform development tips
+
+<!-- todo: copy & sync first sentence or latest first paragraphs from revised firstchild article -->
 
 There are many tips and tricks to be aware of when building websites or web apps that work in Microsoft Edge, including:
 
@@ -111,7 +113,7 @@ There are many tips and tricks to be aware of when building websites or web apps
 *  Customizing the Password Reveal button.
 *  Detecting Windows 11 by using User-Agent Client Hints.
 
-See [Development tips for Microsoft Edge](web-platform/web-platform.md).
+See [Web Platform development tips for Microsoft Edge](web-platform/web-platform.md).
 
 
 <!-- ====================================================================== -->

@@ -369,9 +369,9 @@ conceptualContent:
 
 # -----------------------------------------------------------------------------
 # Card r2c2
-        - title: Development tips for Microsoft Edge  # /web-platform/
+        - title: Web Platform development tips
           links:
-#           - text: Development tips for Microsoft Edge  # jump page for overview of bucket
+#           - text: Web Platform development tips for Microsoft Edge  # jump page for overview of bucket, omit bc 10 max
 #             url: ./web-platform/web-platform.md
 #             itemType: overview
 
