@@ -51,8 +51,8 @@ async function main() {
   }
 
   if (!nextBetaReleaseDate || !nextBetaVersion) {
-    console.error("No future beta release date found.");
-    process.exit(1);
+    console.error("It's not time to create the next beta release notes.");
+    process.exit(0);
   }
 
   console.log(
@@ -204,7 +204,7 @@ async function main() {
   // 8. Create a new branch, commit the new file, and open a PR from this branch.
   // --------------------------------------------------
 
-  // This is done by the GitHub action that triggered this script. Not here.
+  
 }
 
 main();
