@@ -1025,9 +1025,6 @@
             - name: Sideload an extension to install and test it locally
               href: extensions-chromium/getting-started/extension-sideloading.md
 
-            - name: Transferring ownership of a Microsoft Edge extension
-              href: extensions-chromium/getting-started/transfer-ownership.md  # todo: move to dir other than /getting-started/?
-
 # -------------------------------------
         - name: Port an extension to Microsoft Edge
           items:
@@ -1137,6 +1134,9 @@
 
             - name: Set an externally installed extension to automatically update
               href: extensions-chromium/publish/auto-update.md
+
+            - name: Transferring ownership of an extension
+              href: extensions-chromium/publish/transfer-ownership.md
 
 # -------------------------------------
         - name: Analytics and user reviews

@@ -1,5 +1,5 @@
 ---
-title: Transferring ownership of a Microsoft Edge extension
+title: Transferring ownership of an extension
 description: How to transfer ownership of a Microsoft Edge Extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,8 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 02/05/2025
 ---
-# Transferring ownership of a Microsoft Edge extension
-<!-- todo: move to dir other than /getting-started/? -->
+# Transferring ownership of an extension
 
 As an extension developer, you can seamlessly transfer ownership of your Microsoft Edge extension (add-on) to another party.  Transferring ownership of an extension can be essential for various reasons, such as organizational changes, project handovers, or streamlining management processes.  Your Microsoft Edge extension can continue to thrive under new ownership without any disruptions.
 
