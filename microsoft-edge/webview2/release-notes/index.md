@@ -30,20 +30,19 @@ Aug 2024
 
 <!-- Feb 2025 Release SDK -->
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.3065.39
 
-Release Date: February nn, 2024
+Release Date: February 10, 2025
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.3065.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3065.39)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 133.0.3065.39 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions
 
 No additional APIs have been promoted to Stable and added in this Release SDK.
-The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -74,8 +73,8 @@ description
 <!-- ---------- -->
 ###### Runtime-only
 
-* item
-* item
+* Added missing close button in download flyout
+* Fixed race condition where Web Request Response event never comes
 
 
 <!-- ---------- -->
@@ -90,20 +89,19 @@ description
 
 <!-- Feb 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## 1.0.3116-prerelease
 
-Release Date: February nn, 2024
+Release Date: February 10, 2025
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.3116-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3116-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 134.0.3116.0 or higher.
 
 
 <!-- ------------------------------ -->
 #### Experimental APIs
 
 No Experimental APIs have been added in this Prerelease SDK.
-The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -124,7 +122,6 @@ description
 #### Promotions
 
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -155,15 +152,14 @@ description
 <!-- ---------- -->
 ###### Runtime-only
 
-* item
-* item
+* Fixed race condition where Web Request Response event never comes
+* Added missing close button in download flyout
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* item
-* item
+* Fixed documentation of FindNext API that incorrectly referenced FindPrevious (SDK)([Issue #5059](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5059))
 
 
 <!-- end of Feb 2025 Prerelease SDK -->
