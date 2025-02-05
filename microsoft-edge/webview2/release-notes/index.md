@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/20/2025
+ms.date: 02/10/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -45,44 +45,15 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 No additional APIs have been promoted to Stable and added in this Release SDK.
 
 
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
 <!-- ------------------------------ -->
 #### Bug fixes
 
 
 <!-- ---------- -->
-###### Runtime and SDK
-
-* item
-* item
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* Added missing close button in download flyout
-* Fixed race condition where Web Request Response event never comes
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* item
-* item
-
+* Added the missing **Close** button in the **Download** flyout.
+* Fixed a race condition that occurred when the Web Request Response event never occurs.
 
 <!-- end of Feb 2025 Release SDK -->
 
@@ -104,38 +75,11 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 No Experimental APIs have been added in this Prerelease SDK.
 
 
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
 <!-- ------------------------------ -->
 #### Promotions
 
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
@@ -143,24 +87,16 @@ description
 
 
 <!-- ---------- -->
-###### Runtime and SDK
-
-* item
-* item
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* Fixed race condition where Web Request Response event never comes
-* Added missing close button in download flyout
+* Added the missing **Close** button in the **Download** flyout.
+* Fixed a race condition that occurred when the Web Request Response event never occurs.
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* Fixed documentation of FindNext API that incorrectly referenced FindPrevious (SDK)([Issue #5059](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5059))
-
+* Fixed documentation of the `FindNext` API that incorrectly referenced `FindPrevious`.  ([Issue #5059](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5059))
 
 <!-- end of Feb 2025 Prerelease SDK -->
 
