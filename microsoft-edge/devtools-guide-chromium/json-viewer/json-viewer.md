@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/08/2024
+ms.date: 02/05/2025
 ---
 # View formatted JSON responses or files
 
