@@ -1,0 +1,34 @@
+Transferring Ownership of Edge Extensions
+
+Introduction
+We are pleased to announce the introduction of a highly anticipated feature that enables developers to seamlessly transfer ownership of their Edge extensions. 
+This feature has been eagerly awaited by many in our developer community, and it is now available.
+
+Importance of This Feature
+Transferring ownership of an extension can be essential for various reasons, such as organizational changes, project handovers, or streamlining management processes. 
+With this new feature, we aim to facilitate these transitions, ensuring that your extensions continue to thrive under new ownership without any disruptions.
+
+Procedure for Transferring Ownership
+
+Initiating the Request
+
+1.	The current extension owner should send an email to ext_dev_support@microsoft.com with the subject line [Reparenting Request]: <crx id of the extension to be transferred>.
+2.	The email should include the following details:
+•	Reason for reparenting
+•	Name of the product
+•	StoreID (found on the Extensions Overview page in Partner Centre)
+•	MSA App (client) ID
+•	Source publisher seller ID and name (Current Owner)
+•	Target publisher seller ID and name (New Owner)
+•	MSA email addresses for both source and target publisher extension owners
+
+Processing the Request
+
+•	The Edge extensions team will review the request and seek confirmation from both publishers.
+Updates and Communication
+•	The Edge extensions team will keep you informed of any progress or additional requirements.
+Timeline
+•	This process typically takes approximately three weeks to complete, depending on the response times from all parties involved.
+
+We hope this new feature enhances your experience and simplifies the management of your extensions. 
+Should you have any questions or require further assistance, please do not hesitate to reach out to our support team (ext_dev_support@microsoft.com).
