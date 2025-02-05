@@ -1283,8 +1283,12 @@
           items:
             - name: Win32
               items:
-#               - name: WebView2 in Win32 apps
-#                 href: ./webview2/platforms/win32.md
+                - name: WebView2 in Win32 apps
+                  href: ./webview2/platforms/win32.md
+
+                - name: Get started with WebView2 in Win32 apps
+                  href: ./webview2/get-started/win32.md
+                  displayName: Win32_GettingStarted  # repo dir name
 
                 - name: Win32 sample app
                   href: ./webview2/samples/webview2apissample.md
@@ -1298,40 +1302,40 @@
                   href: ./webview2/samples/webview2browser.md
                   displayName: WebView2Browser  # repo dir name
 
-                - name: Get started with WebView2 in Win32 apps
-                  href: ./webview2/get-started/win32.md
-                  displayName: Win32_GettingStarted  # repo dir name
-
             - name: WinUI 2 (UWP)
               items:
-#               - name: WebView2 in WinUI 2 (UWP) apps
-#                 href: ./webview2/platforms/winui2-uwp.md
-
-                - name: WinUI 2 (UWP) sample app
-                  href: ./webview2/samples/webview2_sample_uwp.md
-                  displayName: webview2_sample_uwp  # repo dir name
+                - name: WebView2 in WinUI 2 (UWP) apps
+                  href: ./webview2/platforms/winui2-uwp.md
 
                 - name: Get started with WebView2 in WinUI 2 (UWP) apps
                   href: ./webview2/get-started/winui2.md
                   displayName: WinUI2_GettingStarted  # repo dir name
 
+                - name: WinUI 2 (UWP) sample app
+                  href: ./webview2/samples/webview2_sample_uwp.md
+                  displayName: webview2_sample_uwp  # repo dir name
+
             - name: WinUI 3 (Windows App SDK)
               items:
-#               - name: WebView2 in WinUI 3 (Windows App SDK) apps
-#                 href: ./webview2/platforms/winui3-windows-app-sdk.md
-
-                - name: WinUI 3 (Windows App SDK) sample app
-                  href: ./webview2/samples/webview2-winui3-sample.md
-                  displayName: WebView2_WinUI3_Sample  # repo dir name
+                - name: WebView2 in WinUI 3 (Windows App SDK) apps
+                  href: ./webview2/platforms/winui3-windows-app-sdk.md
 
                 - name: Get started with WebView2 in WinUI 3 (Windows App SDK) apps
                   href: ./webview2/get-started/winui.md
                   displayName: WinUI3_GettingStarted  # repo dir name
 
-            - name: WebView2 in WPF apps
+                - name: WinUI 3 (Windows App SDK) sample app
+                  href: ./webview2/samples/webview2-winui3-sample.md
+                  displayName: WebView2_WinUI3_Sample  # repo dir name
+
+            - name: WPF
               items:
-#               - name: WebView2 apps on Win32
-#                 href: ./webview2/platforms/wpf.md
+                - name: WebView2 in WPF apps
+                  href: ./webview2/platforms/wpf.md
+
+                - name: Get started with WebView2 in WPF apps
+                  href: ./webview2/get-started/wpf.md
+                  displayName: WPF_GettingStarted  # repo dir name
 
                 - name: WPF sample app
                   href: ./webview2/samples/webview2wpfbrowser.md
@@ -1341,38 +1345,34 @@
                   href: ./webview2/samples/wv2cdpextensionwpfsample.md
                   displayName: WV2CDPExtensionWPFSample  # repo dir name
 
-                - name: Get started with WebView2 in WPF apps
-                  href: ./webview2/get-started/wpf.md
-                  displayName: WPF_GettingStarted  # repo dir name
-
             - name: WinForms
               items:
-#               - name: WebView2 in WinForms apps
-#                 href: ./webview2/platforms/winforms.md
-
-                - name: WinForms sample app
-                  href: ./webview2/samples/webview2windowsformsbrowser.md
-                  displayName: WebView2WindowsFormsBrowser  # repo dir name
+                - name: WebView2 in WinForms apps
+                  href: ./webview2/platforms/winforms.md
 
                 - name: Get started with WebView2 in WinForms apps
                   href: ./webview2/get-started/winforms.md
                   displayName: WinForms_GettingStarted  # repo dir name
 
+                - name: WinForms sample app
+                  href: ./webview2/samples/webview2windowsformsbrowser.md
+                  displayName: WebView2WindowsFormsBrowser  # repo dir name
+
             - name: HoloLens 2 Unity
               items:
-#               - name: WebView2 in HoloLens 2 Unity apps
-#                 href: ./webview2/platforms/hololens-2-unity.md
+                - name: WebView2 in HoloLens 2 Unity apps
+                  href: ./webview2/platforms/hololens-2-unity.md
 
                 - name: Get started with WebView2 in HoloLens 2 Unity apps (Preview)
                   href: ./webview2/get-started/hololens2.md
                   displayName: HoloLens2_GettingStarted  # repo dir name
 
-            - name: WebView2 sample apps
-              href: ./webview2/code-samples-links.md  # delete & redir?
-
             - name: Getting Started tutorials
               href: ./webview2/get-started/get-started.md  # delete & redir?
               displayName: GettingStartedGuides  # repo dir name
+
+            - name: WebView2 sample apps
+              href: ./webview2/code-samples-links.md  # delete & redir?
 
 # -----------------------------------------------------------------------------
         - name: Navigation, events, and authentication
@@ -1708,6 +1708,11 @@
       items:
         - name: Development tips for Microsoft Edge
           href: web-platform/web-platform.md
+
+        - name: Release notes
+          items:
+            - name: Microsoft Edge 133
+              href: web-platform/release-notes/133.md
 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: web-platform/site-impacting-changes.md
