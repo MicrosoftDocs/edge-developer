@@ -6,12 +6,20 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 06/23/2023
+ms.date: 02/05/2025
 ---
 # Released features for Microsoft Edge Add-ons
 <!-- https://aka.ms/EdgeAddonsReleaseNotes -->
 
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
+
+
+<!-- ====================================================================== -->
+## Transfer ownership of a Microsoft Edge extension
+
+As an extension developer, you can now seamlessly transfer ownership of your Microsoft Edge extension to another party, such as for organizational changes, project handovers, or streamlining management processes.  See [Transferring ownership of a Microsoft Edge extension](../getting-started/transfer-ownership.md).
+
+*Released February 2025*
 
 
 <!-- ====================================================================== -->
