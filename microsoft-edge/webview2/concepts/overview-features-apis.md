@@ -21,7 +21,7 @@ when adding an h4 heading, add nav link below the h2
 <!-- ====================================================================== -->
 ## Feb 2025 Promotions to Stable in Release - INCOMING
 
-https://learn.microsoft.com/microsoft-edge/webview2/release-notes/
+[Release Notes for the WebView2 SDK](../release-notes/index.md#promotions) - see Feb. Release section > Promotions (make sure it's Feb.)
 
 
 <!-- ====================================================================== -->
