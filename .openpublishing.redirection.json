@@ -165,7 +165,7 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "microsoft-edge/extensions-chromium/publish/api/using-addons-api",
+        "source_path": "microsoft-edge/extensions-chromium/publish/api/using-addons-api.md",
         "redirect_url": "/microsoft-edge/extensions-chromium/update/api/using-addons-api",
         "redirect_document_id": false
       },
