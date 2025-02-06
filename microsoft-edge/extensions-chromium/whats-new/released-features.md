@@ -14,6 +14,9 @@ ms.date: 06/23/2023
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
 
 
+<!-- todo: deprecation of Native Client? -->
+
+
 <!-- ====================================================================== -->
 ## Sidebar
 

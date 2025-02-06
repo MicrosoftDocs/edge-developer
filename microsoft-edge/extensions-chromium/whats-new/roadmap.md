@@ -14,6 +14,9 @@ ms.date: 11/14/2024
 These are the next planned [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) features or updates for Microsoft Edge extensions.
 
 
+<!-- todo: deprecation of Native Client? -->
+
+
 <!-- ====================================================================== -->
 ## Deprecation of the Update REST API v1
 
