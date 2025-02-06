@@ -1135,7 +1135,7 @@
             - name: Set an externally installed extension to automatically update
               href: extensions-chromium/update/auto-update.md
 
-            - name: Transferring ownership of an extension
+            - name: Transfer ownership of an extension
               href: extensions-chromium/update/transfer-ownership.md
 
 # -------------------------------------
