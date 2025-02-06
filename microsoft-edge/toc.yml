@@ -1,15 +1,15 @@
 # =============================================================================
 # TOC sections:
 # top leaf nodes
-# Release notes
-# Experimental web platform features
+# Release notes                       # new toc bucket
+# Experimental web platform features  # new toc bucket
 # Microsoft Edge DevTools
 #   DevTools for Visual Studio Code
 # Microsoft Edge extensions
 # Progressive Web Apps
 # WebView2
 # Test and automation
-# Edge-specific web development tips
+# Edge-specific web development tips  # renamed from "Development tips for Microsoft Edge"
 # Microsoft Edge IDE integration
 # Accessibility in Microsoft Edge
 # DualEngine
@@ -25,8 +25,8 @@
 # /top leaf nodes
 
 # =============================================================================
-# Release notes
-    - name: Release notes  # new
+# Release notes                       # new toc bucket
+    - name: Release notes
       items:
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: ./web-platform/site-impacting-changes.md
@@ -42,13 +42,9 @@
 # /Release notes
 
 # =============================================================================
-# Experimental web platform features
-    - name: Experimental web platform features  # new
+# Experimental web platform features  # new toc bucket
+    - name: Experimental web platform features
       items:
-#       - name: About the "Experimental web platform features" toc bucket
-#         href: ./web-platform/release-notes/index.md
-#         todo: define the bucket scope
-
         - name: Use origin trials in Microsoft Edge
           href: ./origin-trials/index.md
 
@@ -1735,7 +1731,7 @@
 # /Test and automation
 
 # =============================================================================
-# Edge-specific web development tips
+# Edge-specific web development tips  # renamed from "Development tips for Microsoft Edge"
     - name: Edge-specific web development tips
       items:
         - name: Edge-specific web development tips
