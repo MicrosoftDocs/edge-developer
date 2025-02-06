@@ -30,7 +30,7 @@ Native Client (NaCl) was a sandbox for running compiled C and C++ code in the br
 
 The vibrant ecosystem around WebAssembly (Wasm) makes it a better fit for new and existing high-performance web apps. 
 
-See [Native Client (NaCl) (deprecated)](../extensions-chromium/developer-guide/run-compiled-code.md#native-client-nacl-deprecated) in _Run compiled code in your extension_.
+See [Native Client (NaCl) (deprecated)](../extensions-chromium/developer-guide/run-compiled-code.md#native-client-nacl-deprecated) in _Run compiled code in an extension_.
 
 
 <!-- ====================================================================== -->

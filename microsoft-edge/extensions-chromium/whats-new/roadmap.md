@@ -14,7 +14,14 @@ ms.date: 11/14/2024
 These are the next planned [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) features or updates for Microsoft Edge extensions.
 
 
-<!-- todo: deprecation of Native Client? -->
+<!-- ====================================================================== -->
+## Deprecation of Native Client (NaCl)
+
+To enhance web security and performance, NaCl is deprecated for Microsoft Edge, along with other browsers.  Native Client (NaCl) was a sandbox for running compiled C and C++ code in the browser efficiently and securely, independent of the user's operating system.
+
+NaCl was deprecated (discouraged but still supported) starting in 2020.  Support for NaCl will be discontinued starting with Microsoft Edge 138.
+
+See [Native Client (NaCl) (deprecated)](../developer-guide/run-compiled-code.md#native-client-nacl-deprecated) in _Run compiled code in an extension_.
 
 
 <!-- ====================================================================== -->
