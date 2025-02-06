@@ -96,7 +96,23 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 <!-- ---------- -->
 ###### SDK-only
 
-* Fixed documentation of the `FindNext` API that incorrectly referenced `FindPrevious`.  ([Issue #5059](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5059))
+* Fixed .NET and Win32 documentation of the `CoreWebView2Find.FindNext` method that incorrectly mentioned `FindPrevious`.  The method summary now mentions `FindNext` instead.  ([Issue #5059](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5059))
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Find.FindNext Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findnext?view=webview2-dotnet-1.0.3116-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Find.FindNext Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3116-prerelease&preserve-view=true#findnext)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalFind::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalfind?view=webview2-1.0.3116-prerelease&preserve-view=true#findnext)
+<!-- todo: make sure Win32 API Ref 3116 has "Next" not "Previous" in summary -->
+
+---
+
 
 <!-- end of Feb 2025 Prerelease SDK -->
 
