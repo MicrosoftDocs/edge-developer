@@ -10,7 +10,7 @@ ms.date: 02/06/2025
 ---
 # Run compiled code in an extension
 
-You can run compiled code in your extension at near-native speed, by using WebAssembly (Wasm).  WebAssembly, also known as Wasm, is a low-level assembly-like language which many other languages, such as C, C++, or Rust, can compile to, and which can run at near native-speed in web browsers.
+You can run compiled code in your extension at near-native speed, by using WebAssembly (Wasm).  WebAssembly is a low-level assembly-like language which many other languages, such as C, C++, or Rust, can compile to, and which can run at near native-speed in web browsers.
 
 See:
 * [WebAssembly](https://developer.mozilla.org/docs/WebAssembly) at MDN.
@@ -20,9 +20,9 @@ See:
 <!-- ====================================================================== -->
 ## Native Client (NaCl) (deprecated)
 
-To enhance web security and performance, NaCl is deprecated for Microsoft Edge, along with other browsers.  NaCl was deprecated (discouraged but still supported) starting in 2020.  Support for NaCl will be discontinued starting with Microsoft Edge 138.
+To enhance web security and performance, Native Client (NaCl) is deprecated for Microsoft Edge, along with other browsers.  NaCl was deprecated (discouraged but still supported) starting in 2020.  Support for NaCl will be discontinued starting with Microsoft Edge 138.
 
-Native Client (NaCl) was a sandbox for running compiled C and C++ code in the browser efficiently and securely, independent of the user's operating system.
+NaCl was a sandbox for running compiled C and C++ code in the browser efficiently and securely, independent of the user's operating system.  WebAssembly (Wasm) is recommended instead of NaCl.
 
 See also:
 * [Manifest - Nacl Modules](https://developer.chrome.com/docs/extensions/mv2/manifest/nacl-modules)
