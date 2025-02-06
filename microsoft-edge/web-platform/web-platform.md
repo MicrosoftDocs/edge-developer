@@ -106,19 +106,6 @@ See [View formatted JSON responses or files](../devtools-guide-chromium/json-vie
 
 
 <!-- ====================================================================== -->
-## Sign up for the Ad Selection API
-
-<!-- todo: move section to different .md file?  
-this article is in toc bucket "Experimental web platform features" not "Edge-specific web development tips" -->
-
-The Ad Selection API provides user-relevant ads on your site without using third-party cookies.  The Ad Selection API can be used by:
-* **Sellers** running a supply-side platform (SSP), who can use the API to provide higher-quality ads for their publishers.
-* **Buyers** running a demand-side platform (DSP), who can use the API to improve the effectiveness of advertising campaigns.
-
-See [Sign up for the Ad Selection API](./ad-selection-api.md).
-
-
-<!-- ====================================================================== -->
 ## See also
 
 * [Web technology for developers](https://developer.mozilla.org/docs/Web) at MDN.

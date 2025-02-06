@@ -28,6 +28,9 @@
 # Release notes                       # new toc bucket
     - name: Release notes
       items:
+#       - name: Release notes  # firstchild overview/nav for toc bucket
+#         href: ./dir/filename.md
+
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: ./web-platform/site-impacting-changes.md
 
@@ -45,6 +48,9 @@
 # Experimental web platform features  # new toc bucket
     - name: Experimental web platform features
       items:
+#       - name: Experimental web platform features  # firstchild overview/nav for toc bucket
+#         href: ./dir/filename.md
+
         - name: Use origin trials in Microsoft Edge
           href: ./origin-trials/index.md
 
@@ -1700,7 +1706,7 @@
 # Test and automation
     - name: Test and automation
       items:
-        - name: Test and automation in Microsoft Edge
+        - name: Test and automation in Microsoft Edge  # firstchild overview/nav for toc bucket
           href: ./test-and-automation/test-and-automation.md
 
         - name: DevTools Protocol
@@ -1731,7 +1737,7 @@
 # /Test and automation
 
 # =============================================================================
-# Edge-specific web development tips  # renamed from "Development tips for Microsoft Edge"
+# Edge-specific web development tips  # renamed from "Development tips for Microsoft Edge"  # firstchild overview/nav for toc bucket
     - name: Edge-specific web development tips
       items:
         - name: Edge-specific web development tips
