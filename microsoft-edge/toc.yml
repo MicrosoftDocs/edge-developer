@@ -1710,7 +1710,7 @@
     - name: Test and automation
       items:
         - name: Test and automation in Microsoft Edge
-          `href: ./test-and-automation/test-and-automation.md
+          href: ./test-and-automation/test-and-automation.md
 
         - name: DevTools Protocol
           href: ./test-and-automation/devtools-protocol.md

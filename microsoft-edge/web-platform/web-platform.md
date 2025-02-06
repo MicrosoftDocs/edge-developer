@@ -14,12 +14,10 @@ ms.date: 02/04/2025
 Read the documentation for Web Platform APIs, some of which are experimental in Chrome.  For example, origin and developer trials, or features only found in Canary." -->
 
 <!-- first sentence explains and disambiguates/clarifies the h1 title & the TOC bucket name: -->
-This TOC bucket is named Web Platform and its scope is Edge-specific web-platform considerations.
+This TOC bucket is named Web Platform and its scope is Edge-specific web-platform considerations.<!-- todo: elim "toc bucket" -->
 
 See also:
-* external docs
-* external docs
-* external docs
+* [Web technology for developers](https://developer.mozilla.org/docs/Web) at MDN.
 
 
 There are many tips and tricks to be aware of when building websites or web apps that work in Microsoft Edge, including:
