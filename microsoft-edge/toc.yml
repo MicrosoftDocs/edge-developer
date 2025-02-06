@@ -9,7 +9,7 @@
 # Progressive Web Apps
 # WebView2
 # Test and automation
-# Development tips for Microsoft Edge
+# Edge-specific web development tips
 # Microsoft Edge IDE integration
 # Accessibility in Microsoft Edge
 # DualEngine
@@ -28,16 +28,11 @@
 # Release notes
     - name: Release notes  # new
       items:
-#       - name: About the Edge "Release notes" toc bucket
-#         href: ./web-platform/release-notes/index.md
-#         todo: define the bucket scope
-
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: ./web-platform/site-impacting-changes.md
 
-#       - name: About Edge Release Notes
-#         href: ./web-platform/release-notes/index.md
-#         todo: design toc bucket & general page
+        - name: Release Notes for web platform for Microsoft Edge
+          href: ./web-platform/release-notes/index.md
 
 #       - name: Microsoft Edge 134
 #         href: ./web-platform/release-notes/134.md
@@ -1740,10 +1735,10 @@
 # /Test and automation
 
 # =============================================================================
-# Development tips for Microsoft Edge
-    - name: Development tips for Microsoft Edge
+# Edge-specific web development tips
+    - name: Edge-specific web development tips
       items:
-        - name: Development tips for Microsoft Edge
+        - name: Edge-specific web development tips
           href: ./web-platform/web-platform.md
 
         - name: Move users to Microsoft Edge from Internet Explorer
@@ -1772,7 +1767,7 @@
         - name: View formatted JSON responses or files
           href: ./devtools-guide-chromium/json-viewer/json-viewer.md
           displayName: JSON viewer, view JSON
-# /Development tips for Microsoft Edge
+# /Edge-specific web development tips
 
 # =============================================================================
 # Microsoft Edge IDE integration

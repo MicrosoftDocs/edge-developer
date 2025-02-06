@@ -1,25 +1,23 @@
 ---
 title: Develop for the web with Microsoft Edge
-description: Develop for the web with Microsoft Edge by using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
+description: Develop for the web with Microsoft Edge by using standards-based web platform features, Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 02/05/2025
+ms.date: 02/06/2025
 ---
 # Develop for the web with Microsoft Edge
 
-Develop for the web with Microsoft Edge by using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
+Develop for the web with Microsoft Edge by using standards-based web platform features, Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
 
 
 <!-- ====================================================================== -->
 ## Release notes
 
-This part of the table of contents contains the schedule of changes for Microsoft Edge and the Chromium project, and release notes about Microsoft Edge.
-
-See:
+To stay up to date with web platform feature changes in Microsoft Edge and the Chromium open-source project, see:
 * [Site compatibility-impacting changes coming to Microsoft Edge](./web-platform/site-impacting-changes.md)
-* [Microsoft Edge 133](./web-platform/release-notes/133.md)<!-- todo: need general relnotes page to link to and state scope of these relnotes -->
+* [Release Notes for web platform for Microsoft Edge](./web-platform/release-notes/index.md)
 
 
 <!-- ====================================================================== -->
@@ -56,7 +54,7 @@ With DevTools, you can do the following:
 
 <!-- /keep sync'd -->
 
-See [Overview of DevTools](devtools-guide-chromium/overview.md).
+See [Overview of DevTools](./devtools-guide-chromium/overview.md).
 
 
 <!-- ====================================================================== -->
@@ -72,7 +70,7 @@ A Microsoft Edge extension is structured similarly to a regular web app, and usu
 *  A JavaScript file that defines the behavior of the browser extension.
 *  HTML and CSS files that define the user interface.
 
-See [Overview of Microsoft Edge extensions](extensions-chromium/index.md).
+See [Overview of Microsoft Edge extensions](./extensions-chromium/index.md).
 
 
 <!-- ====================================================================== -->
@@ -84,7 +82,7 @@ Progressive Web Apps combine the best of the web and compiled apps, to provide u
 
 Progressive Web Apps have a much lower cross-platform development cost than compiled apps that require a specific codebase for each platform, such as a separate codebase for Android, for iOS, and for each desktop operating system.
 
-See [Overview of Progressive Web Apps (PWAs)](progressive-web-apps-chromium/index.md).
+See [Overview of Progressive Web Apps (PWAs)](./progressive-web-apps-chromium/index.md).
 
 
 <!-- ====================================================================== -->
@@ -101,7 +99,7 @@ The following diagram shows the spectrum of apps, from maximum reach, to maximum
 
 Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.
 
-See [Introduction to Microsoft Edge WebView2](webview2/index.md).
+See [Introduction to Microsoft Edge WebView2](./webview2/index.md).
 
 
 <!-- ====================================================================== -->
@@ -116,24 +114,15 @@ The following are tools to automate testing in Microsoft Edge:
 *  **WebDriver** simulates user interaction with Microsoft Edge.
 *  **webhint** linting checks code for errors and best practices.
 
-See [Test and automation in Microsoft Edge](test-and-automation/test-and-automation.md).
+See [Test and automation in Microsoft Edge](./test-and-automation/test-and-automation.md).
 
 
 <!-- ====================================================================== -->
-## Web Platform development tips
+## Edge-specific web development tips
 
-<!-- todo: copy & sync first sentence or latest first paragraphs from revised firstchild article -->
+Microsoft Edge implements standards-based web features and APIs, which you can use to develop websites that work across browser engines.  In addition, Microsoft Edge offers a few Edge-specific web development features.
 
-There are many tips and tricks to be aware of when building websites or web apps that work in Microsoft Edge, including:
-
-*  Testing for coming changes that could impact compatibility of your website with Microsoft Edge.
-*  Moving users to Microsoft Edge from Internet Explorer.
-*  Configuring tracking prevention in Microsoft Edge.
-*  Detecting Microsoft Edge from your website.
-*  Customizing the Password Reveal button.
-*  Detecting Windows 11 by using User-Agent Client Hints.
-
-See [Development tips for Microsoft Edge](web-platform/web-platform.md).
+See [Edge-specific web development tips](./web-platform/web-platform.md).
 
 
 <!-- ====================================================================== -->
@@ -141,7 +130,7 @@ See [Development tips for Microsoft Edge](web-platform/web-platform.md).
 
 Various features of Microsoft tools provide integration of development using Microsoft Edge, Visual Studio Code, and Visual Studio, to develop your products, webpages, and web apps that use and work with full integration in Microsoft Edge.
 
-See [Microsoft Edge IDE integration](visual-studio-code/ide-integration.md).
+See [Microsoft Edge IDE integration](./visual-studio-code/ide-integration.md).
 
 
 <!-- ====================================================================== -->
@@ -149,7 +138,7 @@ See [Microsoft Edge IDE integration](visual-studio-code/ide-integration.md).
 
 Development of your webpages, web apps, and web-enabled products is robustly supported through the extensive Accessibility features in Microsoft Edge and its tooling ecosystem.
 
-See [Accessibility in Microsoft Edge](accessibility/index.md).
+See [Accessibility in Microsoft Edge](./accessibility/index.md).
 
 
 <!-- leaf node (article; omit per PR review) -->
@@ -170,7 +159,7 @@ The Web We Want initiative is a cross-browser, open initiative focused on identi
 
 If you build for the web, you inevitably run into problems.  Perhaps there's no way to achieve an aspect of your design with CSS, or it may require an incredible amount of experimenting with CSS.  Maybe there's a device feature you want to tap into using JavaScript, or there's a needed Developer Tools feature that can make your job easier.
 
-See [The Web We Want initiative](web-we-want/index.md).
+See [The Web We Want initiative](./web-we-want/index.md).
 -->
 
 
@@ -218,8 +207,8 @@ The full-text search page initially searches all _Microsoft Edge_ documentation.
 
 To provide feedback or enter issues:
 
-* [Contact the Microsoft Edge DevTools team](devtools-guide-chromium/contact.md)
-* [Contact the Microsoft Edge extensions team](extensions-chromium/publish/contact-extensions-team.md)
-* [Contact the WebView2 team](webview2/contact.md)
+* [Contact the Microsoft Edge DevTools team](./devtools-guide-chromium/contact.md)
+* [Contact the Microsoft Edge extensions team](./extensions-chromium/publish/contact-extensions-team.md)
+* [Contact the WebView2 team](./webview2/contact.md)
 
 To submit and view feedback for a specific page of the documentation, at the bottom of the page, click the **This page** button.

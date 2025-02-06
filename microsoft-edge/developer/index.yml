@@ -146,11 +146,11 @@ landingContent:
 # Row 2
 # -----------------------------------------------------------------------------
 # Card r2c1
-  - title: Web Platform development tips
+  - title: Edge-specific web development tips
     linkLists:
 #     - linkListType: overview
 #       links:
-#         - text: Development tips for Microsoft Edge  # jump page for overview of bucket, omit bc 10 max
+#         - text: Edge-specific web development tips  # jump page for overview of bucket, omit bc 10 max
 #           url: ../web-platform/web-platform.md
       - linkListType: whats-new
         links:

@@ -1,63 +1,17 @@
 ---
-title: Development tips for Microsoft Edge
+title: Edge-specific web development tips
 description: Testing for coming changes that could impact compatibility of your site with Microsoft Edge.  Moving users from Internet Explorer.  Setting up tracking prevention.  Detecting Microsoft Edge from your website. Detecting Windows 11 via User-Agent Client Hints.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 02/04/2025
+ms.date: 02/06/2025
 ---
-# Development tips for Microsoft Edge
+# Edge-specific web development tips
 
-<!-- compare https://developer.chrome.com/docs/web-platform 
-"Web Platform
-Read the documentation for Web Platform APIs, some of which are experimental in Chrome.  For example, origin and developer trials, or features only found in Canary." -->
+Microsoft Edge implements standards-based web features and APIs, which you can use to develop websites that work across browser engines. In addition, Microsoft Edge offers a few Edge-specific web development features, documented in this set of articles.
 
-<!-- first sentence explains and disambiguates/clarifies the h1 title & the TOC bucket name: -->
-This TOC bucket is named Web Platform and its scope is Edge-specific web-platform considerations.<!-- todo: elim "toc bucket" -->
-
-See also:
-* [Web technology for developers](https://developer.mozilla.org/docs/Web) at MDN.
-
-
-There are many tips and tricks to be aware of when building websites or web apps that work in Microsoft Edge, including:
-
-<!-- todo: make this list match the h2 headings / toc entries? -->
-*  Testing for coming changes that could impact compatibility of your website with Microsoft Edge.
-*  Moving users to Microsoft Edge from Internet Explorer.
-*  Configuring tracking prevention in Microsoft Edge.
-*  Detecting Microsoft Edge from your website.
-*  Developing experiences for the sidebar in Microsoft Edge.
-*  Detecting Windows 11 by using User-Agent Client Hints.
-*  Customizing the **password reveal** button.
-*  Viewing formatted JSON responses and files in browser tabs.
-
-<!-- compare summary overview table at top of https://learn.microsoft.com/en-us/microsoft-edge/test-and-automation/test-and-automation which summarizes each tool for test/automation -->
-
-h2 headings in the present article = artices listed in TOC:
-* Site compatibility-impacting changes coming to Microsoft Edge
-* Move users to Microsoft Edge from Internet Explorer
-* Tracking prevention in Microsoft Edge
-* Detect Microsoft Edge from your website
-* Develop experiences for the sidebar in Microsoft Edge
-* Detect Windows 11 using User-Agent Client Hints
-* Customize the password reveal button
-* Display regional versions of your site, based on OS settings
-* View formatted JSON responses or files
-* Sign up for the Ad Selection API
-
-
-These aspects of developing for, and with, Microsoft Edge are described below.
-
-
-<!-- ====================================================================== -->
-## Site compatibility-impacting changes coming to Microsoft Edge
-
-This article lists the schedule of changes for Microsoft Edge and the Chromium project.  It also highlights any differences and high-impact changes which the Microsoft Edge team is tracking especially closely.
-
-The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, changes may affect the functionality of existing webpages.
-
-See [Site compatibility-impacting changes coming to Microsoft Edge](./site-impacting-changes.md).
+For standards-based web development documentation, see [Web technology for developers](https://developer.mozilla.org/docs/Web) at MDN.
 
 
 <!-- ====================================================================== -->
@@ -154,8 +108,20 @@ See [View formatted JSON responses or files](../devtools-guide-chromium/json-vie
 <!-- ====================================================================== -->
 ## Sign up for the Ad Selection API
 
+<!-- todo: move section to different .md file?  
+this article is in toc bucket "Experimental web platform features" not "Edge-specific web development tips" -->
+
 The Ad Selection API provides user-relevant ads on your site without using third-party cookies.  The Ad Selection API can be used by:
 * **Sellers** running a supply-side platform (SSP), who can use the API to provide higher-quality ads for their publishers.
 * **Buyers** running a demand-side platform (DSP), who can use the API to improve the effectiveness of advertising campaigns.
 
 See [Sign up for the Ad Selection API](./ad-selection-api.md).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Web technology for developers](https://developer.mozilla.org/docs/Web) at MDN.
+<!-- 
+* [Web Platform](https://developer.chrome.com/docs/web-platform) - Chrome docs.
+-->
