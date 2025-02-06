@@ -25,13 +25,13 @@
 // ============================================================================
 // DevTools
       {
-        /* legacy "Overview of DevTools" url redirects to DevTools landing */
+        // legacy "Overview of DevTools" url redirects to DevTools landing
         "source_path": "microsoft-edge/devtools-guide-chromium/index.md", 
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/landing/index",
         "redirect_document_id": false
       },
       {
-        /* "Open DevTools" url redirects to "Overview of DevTools" */
+        // "Open DevTools" url redirects to "Overview of DevTools"
         "source_path": "microsoft-edge/devtools-guide-chromium/open/index.md",
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/overview",
         "redirect_document_id": false
@@ -239,7 +239,7 @@
         "redirect_document_id": false
       },
 
-      /* WebView2 Release Notes: */
+      // WebView2 Release Notes:
       {
         "source_path": "microsoft-edge/hosting/webview2/releasenotes.md",
         "redirect_url": "/microsoft-edge/webview2/release-notes/index",
@@ -261,7 +261,7 @@
         "redirect_document_id": false
       },
 
-      /* WebView2 Concepts: */
+      // WebView2 Concepts:
       {
         "source_path": "microsoft-edge/webview2/concepts/browserfeatures.md",
         "redirect_url": "/microsoft-edge/webview2/concepts/browser-features",
@@ -273,7 +273,7 @@
         "redirect_document_id": false
       },
 
-      /* WebView2 Getting started: */
+      // WebView2 Getting started:
       {
         "source_path": "microsoft-edge/webview2/gettingstarted/win32.md",
         "redirect_url": "/microsoft-edge/webview2/get-started/win32",
@@ -295,7 +295,7 @@
         "redirect_document_id": false
       },
 
-      /* WebView2 How-to: */
+      // WebView2 How-to:
       {
         "source_path": "microsoft-edge/webview2/howto/chromium-devtools-protocol.md",
         "redirect_url": "/microsoft-edge/webview2/how-to/chromium-devtools-protocol",
@@ -322,7 +322,7 @@
         "redirect_document_id": false
       },
 
-      /* WebView2 Reference: */
+      // WebView2 Reference:
       {
         "source_path": "microsoft-edge/hosting/webview2/reference/icorewebview2.md",
         "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2",
@@ -334,7 +334,7 @@
         "redirect_document_id": false
       },
 
-      /* WebView2 Reference > .NET: */
+      // WebView2 Reference > .NET:
       {
         "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515-reference-webview2.md",
         "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
@@ -771,7 +771,7 @@
         "redirect_document_id": false
       },
 
-      /* WebView2 Reference > WinForms: */
+      // WebView2 Reference > WinForms:
       {
         "source_path": "microsoft-edge/webview2/reference/winforms/0-9-515-reference-webview2.md",
         "redirect_url": "/dotnet/api/microsoft.web.webview2.winforms",
@@ -783,7 +783,7 @@
         "redirect_document_id": false
       },
 
-      /* WebView2 Reference > WPF: */
+      // WebView2 Reference > WPF:
       {
         "source_path": "microsoft-edge/webview2/reference/wpf/0-9-515-reference-webview2.md",
         "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf",
@@ -836,7 +836,7 @@
 // /DualEngine
 // ============================================================================
 // Redirects to Legal
-      /* DevTools: */
+      // DevTools:
       {
         "source_path": "microsoft-edge/devtools-guide/devtools-preview_software-license-terms.md",
         "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/devtools-preview_software-license-terms",
@@ -847,7 +847,7 @@
         "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
         "redirect_document_id": false
       },
-      /* Extensions: */
+      // Extensions:
       {
         "source_path": "microsoft-edge/extensions/microsoft-browser-extension-policy.md",
         "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/microsoft-browser-extension-policy",
@@ -863,7 +863,7 @@
         "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/developer-policies",
         "redirect_document_id": false
       },
-      /* Privacy: */
+      // Privacy:
       {
         "source_path": "microsoft-edge/privacy-whitepaper/index.md",
         "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/privacy",
@@ -1264,21 +1264,23 @@
       },
 // /Redirects to MDN
 // ============================================================================
-/* Redirects to external webpages: */
+// Redirects to external webpages
       {
         "source_path": "microsoft-edge/dev-guide/realtime-communication/object-rtc-api.md",
         "redirect_url": "https://ortc.org",
         "redirect_document_id": false
       },
+// /Redirects to external webpages
 // ============================================================================
-/* WebDriver: "microsoft / edge-selenium-tools" repo: */
+// WebDriver: "microsoft / edge-selenium-tools" repo
       {
         "source_path": "microsoft-edge/webdriver-chromium/verify-selenium-tools.md",
         "redirect_url": "https://github.com/microsoft/edge-selenium-tools/wiki/using-gpg-to-verify-selenium-tools-for-microsoft-edge-releases",
         "redirect_document_id": false
       },
+// /WebDriver: "microsoft / edge-selenium-tools" repo
 // ============================================================================
-/* Archived EdgeHTML content: */
+// Archived EdgeHTML content
       {
         "source_path": "microsoft-edge/edgehtml/dev-guide/browser-features",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -2629,6 +2631,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+// /Archived EdgeHTML content
 // ============================================================================
 // Old redirects (to /archive/)
       {
