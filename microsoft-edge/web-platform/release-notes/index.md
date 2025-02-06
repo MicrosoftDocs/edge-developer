@@ -1,6 +1,6 @@
 ---
 title: Release Notes for web platform for Microsoft Edge
-description: 
+description: New web platform features and updates in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
