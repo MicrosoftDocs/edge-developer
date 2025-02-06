@@ -154,7 +154,7 @@ landingContent:
 #           url: ../web-platform/web-platform.md
       - linkListType: whats-new
         links:
-          - text: Site compatibility-impacting changes
+          - text: Site compatibility-impacting changes  # todo: moved to "Release notes" toc bucket, delete?
             url: ../web-platform/site-impacting-changes.md
       - linkListType: how-to-guide
         links:
@@ -182,7 +182,7 @@ landingContent:
           - text: View formatted JSON responses or files
             url: ../devtools-guide-chromium/json-viewer/json-viewer.md
 
-          - text: Sign up for the Ad Selection API
+          - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?
             url: ../web-platform/ad-selection-api.md
 
 # -----------------------------------------------------------------------------

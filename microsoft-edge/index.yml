@@ -375,7 +375,7 @@ conceptualContent:
 #             url: ./web-platform/web-platform.md
 #             itemType: overview
 
-            - text: Site compatibility-impacting changes
+            - text: Site compatibility-impacting changes  # todo: moved to "Release notes" toc bucket, delete?
               url: ./web-platform/site-impacting-changes.md
               itemType: whats-new
 
@@ -411,7 +411,7 @@ conceptualContent:
               url: ./devtools-guide-chromium/json-viewer/json-viewer.md
               itemType: how-to-guide
 
-            - text: Sign up for the Ad Selection API
+            - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?
               url: ./web-platform/ad-selection-api.md
               itemType: how-to-guide
 
