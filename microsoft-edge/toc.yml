@@ -1122,18 +1122,18 @@
         - name: Update an extension
           items:
             - name: Update a Microsoft Edge extension
-              href: extensions-chromium/publish/update-extension.md
+              href: extensions-chromium/update/update-extension.md
 
             - name: REST API for updating an extension
               items:
                 - name: Using the REST API for updating Microsoft Edge Add-ons
-                  href: extensions-chromium/publish/api/using-addons-api.md
+                  href: extensions-chromium/update/api/using-addons-api.md
 
                 - name: REST API Reference for updating Microsoft Edge Add-ons
-                  href: extensions-chromium/publish/api/addons-api-reference.md
+                  href: extensions-chromium/update/api/addons-api-reference.md
 
             - name: Set an externally installed extension to automatically update
-              href: extensions-chromium/publish/auto-update.md
+              href: extensions-chromium/update/auto-update.md
 
             - name: Transferring ownership of an extension
               href: extensions-chromium/update/transfer-ownership.md

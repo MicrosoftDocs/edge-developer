@@ -1,29 +1,29 @@
 {
   "redirections": [
-/* Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles */
+// Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
+// Sections:
 
-/* Outline of this file:
-DevTools
-Microsoft Edge extensions
-Progressive Web Apps
-WebView2
-Test and automation
-Development tips for Microsoft Edge (was "Web platform")
-Microsoft Edge IDE integration
-Accessibility in Microsoft Edge
-DualEngine
-Redirects to Legal
-   DevTools
-   Extensions
-   Privacy
-Redirects to MDN
-Redirects to external webpages
-WebDriver: "microsoft / edge-selenium-tools" repo
-Archived EdgeHTML content
-Old redirects (to /archive/)
-*/
+// DevTools
+// Microsoft Edge extensions
+// Progressive Web Apps
+// WebView2
+// Test and automation
+// Development tips for Microsoft Edge (was "Web platform")
+// Microsoft Edge IDE integration
+// Accessibility in Microsoft Edge
+// DualEngine
+// Redirects to Legal
+//    DevTools
+//    Extensions
+//    Privacy
+// Redirects to MDN
+// Redirects to external webpages
+// WebDriver: "microsoft / edge-selenium-tools" repo
+// Archived EdgeHTML content
+// Old redirects (to /archive/)
 
-/* DevTools */
+// ============================================================================
+// DevTools
       {
         /* legacy "Overview of DevTools" url redirects to DevTools landing */
         "source_path": "microsoft-edge/devtools-guide-chromium/index.md", 
@@ -106,7 +106,8 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/evaluate-performance/",
         "redirect_document_id": false
       },
-/* Microsoft Edge extensions: */
+// ============================================================================
+// Microsoft Edge extensions
       {
         "source_path": "microsoft-edge/extensions-chromium/enterprise/declare-permissions.md",
         "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/declare-permissions",
@@ -123,11 +124,6 @@ Old redirects (to /archive/)
         "redirect_document_id": false
       },
       {
-        "source_path": "microsoft-edge/extensions-chromium/enterprise/auto-update.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/auto-update",
-        "redirect_document_id": false
-      },
-      {
         "source_path": "microsoft-edge/extensions-chromium/publish/contact-us.md",
         "redirect_url": "/microsoft-edge/extensions-chromium/publish/contact-extensions-team",
         "redirect_document_id": false
@@ -135,11 +131,6 @@ Old redirects (to /archive/)
       {
         "source_path": "microsoft-edge/extensions-chromium/publish/upload-video.md",
         "redirect_url": "/microsoft-edge/extensions-chromium/publish/publish-extension",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-edge/extensions-chromium/publish/update.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/update-extension",
         "redirect_document_id": false
       },
       {
@@ -157,8 +148,39 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/extensions-chromium/getting-started/picture-inserter-content-script",
         "redirect_document_id": false
       },
-
-/* Progressive Web Apps: */
+// Extensions > Update
+      {
+        "source_path": "microsoft-edge/extensions-chromium/publish/update.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/update-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/enterprise/auto-update.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/auto-update",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/publish/update-extension.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/update/update-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/publish/api/using-addons-api",
+        "redirect_url": "/microsoft-edge/extensions-chromium/update/api/using-addons-api",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/publish/api/addons-api-reference.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/update/api/addons-api-reference",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/publish/auto-update.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/update/auto-update",
+        "redirect_document_id": false
+      },
+// ============================================================================
+// Progressive Web Apps
       {
         "source_path": "microsoft-edge/progressive-web-apps/index.md",
         "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/index",
@@ -204,8 +226,8 @@ Old redirects (to /archive/)
         "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
         "redirect_document_id": false
       },
-
-/* WebView2: */
+// ============================================================================
+// WebView2
       {
         "source_path": "microsoft-edge/hosting/webview2.md",
         "redirect_url": "/microsoft-edge/webview2/index",
@@ -777,18 +799,20 @@ Old redirects (to /archive/)
         "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf.webview2",
         "redirect_document_id": false
       },
-/* end of WebView2 Reference */
-
-/* Test and automation: none */
-
-/* Development tips for Microsoft Edge (was "Web platform"): */
+// /WebView2
+// ============================================================================
+// Test and automation
+// /Test and automation
+// ============================================================================
+// Development tips for Microsoft Edge (was "Web platform")
       {
         "source_path": "microsoft-edge/web-platform/user-agent-string.md",
         "redirect_url": "/microsoft-edge/web-platform/user-agent-guidance",
         "redirect_document_id": false
       },
-
-/* Microsoft Edge IDE integration: */
+// /Development tips for Microsoft Edge (was "Web platform")
+// ============================================================================
+// Microsoft Edge IDE integration
       {
         "source_path": "microsoft-edge/visual-studio-code/index.md",
         "redirect_url": "/microsoft-edge/visual-studio-code/ide-integration",
@@ -804,12 +828,14 @@ Old redirects (to /archive/)
         "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
         "redirect_document_id": false
       },
-
-/* Accessibility in Microsoft Edge: none */
-
-/* DualEngine: none */
-
-/* Redirects to Legal: */
+// ============================================================================
+// Accessibility in Microsoft Edge
+// /Accessibility in Microsoft Edge
+// ============================================================================
+// DualEngine
+// /DualEngine
+// ============================================================================
+// Redirects to Legal
       /* DevTools: */
       {
         "source_path": "microsoft-edge/devtools-guide/devtools-preview_software-license-terms.md",
@@ -843,8 +869,9 @@ Old redirects (to /archive/)
         "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/privacy",
         "redirect_document_id": false
       },
-
-/* Redirects to MDN: */
+// /Redirects to Legal
+// ============================================================================
+// Redirects to MDN
       {
         "source_path": "microsoft-edge/dev-guide/css/animations.md",
         "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Animations/Using_CSS_animations",
@@ -1235,21 +1262,22 @@ Old redirects (to /archive/)
         "redirect_url": "https://developer.mozilla.org/docs/Web/API/Web_Storage_API",
         "redirect_document_id": false
       },
-
+// /Redirects to MDN
+// ============================================================================
 /* Redirects to external webpages: */
       {
         "source_path": "microsoft-edge/dev-guide/realtime-communication/object-rtc-api.md",
         "redirect_url": "https://ortc.org",
         "redirect_document_id": false
       },
-
+// ============================================================================
 /* WebDriver: "microsoft / edge-selenium-tools" repo: */
       {
         "source_path": "microsoft-edge/webdriver-chromium/verify-selenium-tools.md",
         "redirect_url": "https://github.com/microsoft/edge-selenium-tools/wiki/using-gpg-to-verify-selenium-tools-for-microsoft-edge-releases",
         "redirect_document_id": false
       },
-
+// ============================================================================
 /* Archived EdgeHTML content: */
       {
         "source_path": "microsoft-edge/edgehtml/dev-guide/browser-features",
@@ -2601,8 +2629,8 @@ Old redirects (to /archive/)
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
-
-/* Old redirects (to /archive/): */
+// ============================================================================
+// Old redirects (to /archive/)
       {
         "source_path": "microsoft-edge/dev-guide.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -4248,5 +4276,6 @@ Old redirects (to /archive/)
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       }
+// /Old redirects (to /archive/)
     ]
 }
