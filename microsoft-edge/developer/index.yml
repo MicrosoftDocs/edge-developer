@@ -150,7 +150,7 @@ landingContent:
     linkLists:
 #     - linkListType: overview
 #       links:
-#         - text: Web Platform development tips for Microsoft Edge  # jump page for overview of bucket, omit bc 10 max
+#         - text: Development tips for Microsoft Edge  # jump page for overview of bucket, omit bc 10 max
 #           url: ../web-platform/web-platform.md
       - linkListType: whats-new
         links:

@@ -5,11 +5,31 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 01/17/2023
+ms.date: 02/05/2025
 ---
 # Develop for the web with Microsoft Edge
 
 Develop for the web with Microsoft Edge by using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
+
+
+<!-- ====================================================================== -->
+## Release notes
+
+This part of the table of contents contains the schedule of changes for Microsoft Edge and the Chromium project, and release notes about Microsoft Edge.
+
+See:
+* [Site compatibility-impacting changes coming to Microsoft Edge](./web-platform/site-impacting-changes.md)
+* [Microsoft Edge 133](./web-platform/release-notes/133.md)<!-- todo: need general relnotes page to link to and state scope of these relnotes -->
+
+
+<!-- ====================================================================== -->
+## Experimental web platform features
+
+Use origin trials to try out experimental APIs on your own live site for a limited period of time.  When using origin trials, users of Microsoft Edge that visit your site can run code that uses experimental APIs.
+
+See:
+* [Use origin trials in Microsoft Edge](./origin-trials/index.md)
+* [Sign up for the Ad Selection API](./web-platform/ad-selection-api.md)
 
 
 <!-- ====================================================================== -->
@@ -113,7 +133,7 @@ There are many tips and tricks to be aware of when building websites or web apps
 *  Customizing the Password Reveal button.
 *  Detecting Windows 11 by using User-Agent Client Hints.
 
-See [Web Platform development tips for Microsoft Edge](web-platform/web-platform.md).
+See [Development tips for Microsoft Edge](web-platform/web-platform.md).
 
 
 <!-- ====================================================================== -->
