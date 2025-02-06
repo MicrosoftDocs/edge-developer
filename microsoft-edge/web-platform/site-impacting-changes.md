@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 06/21/2024
+ms.date: 02/06/2025
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge
 
@@ -19,6 +19,18 @@ For functionality and compatibility reasons, Microsoft Edge adopts nearly all of
 For information about upcoming Chromium project web platform changes, see [Chrome Platform Status Release timeline](https://chromestatus.com/roadmap).
 
 Check this article often as the Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
+
+
+<!-- ====================================================================== -->
+## Deprecation of Native Client (NaCl)
+
+To enhance web security and performance, NaCl is deprecated for Microsoft Edge, along with other browsers.   
+
+Native Client (NaCl) was a sandbox for running compiled C and C++ code in the browser efficiently and securely, independent of the user's operating system.
+
+The vibrant ecosystem around WebAssembly (Wasm) makes it a better fit for new and existing high-performance web apps. 
+
+See [Native Client (NaCl) (deprecated)](../extensions-chromium/developer-guide/run-compiled-code.md#native-client-nacl-deprecated) in _Run compiled code in your extension_.
 
 
 <!-- ====================================================================== -->

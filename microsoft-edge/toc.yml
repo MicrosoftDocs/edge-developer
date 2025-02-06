@@ -1067,8 +1067,8 @@
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
 
-            - name: Native Client (NaCl)
-              href: extensions-chromium/developer-guide/native-client.md
+            - name: Run compiled code in your extension
+              href: extensions-chromium/developer-guide/run-compiled-code.md
 
             - name: Defining match patterns for an extension to access file URLs
               href: extensions-chromium/developer-guide/match-patterns.md
