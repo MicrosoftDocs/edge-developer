@@ -1136,7 +1136,7 @@
               href: extensions-chromium/publish/auto-update.md
 
             - name: Transferring ownership of an extension
-              href: extensions-chromium/publish/transfer-ownership.md
+              href: extensions-chromium/update/transfer-ownership.md
 
 # -------------------------------------
         - name: Analytics and user reviews

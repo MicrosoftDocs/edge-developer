@@ -17,7 +17,7 @@ The following features or updates have been launched on [Partner Center](https:/
 <!-- ====================================================================== -->
 ## Transfer ownership of a Microsoft Edge extension
 
-As an extension developer, you can now seamlessly transfer ownership of your Microsoft Edge extension to another party, such as for organizational changes, project handovers, or streamlining management processes.  See [Transferring ownership of an extension](../publish/transfer-ownership.md).
+As an extension developer, you can now seamlessly transfer ownership of your Microsoft Edge extension to another party, such as for organizational changes, project handovers, or streamlining management processes.  See [Transferring ownership of an extension](../update/transfer-ownership.md).
 
 *Released February 2025*
 
