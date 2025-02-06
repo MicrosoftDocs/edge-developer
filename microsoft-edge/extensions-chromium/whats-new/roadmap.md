@@ -19,7 +19,7 @@ These are the next planned [Partner Center](https://partner.microsoft.com/dashbo
 
 To enhance web security and performance, Native Client (NaCl) is deprecated for Microsoft Edge, along with other browsers.  NaCl was deprecated (discouraged but still supported) starting in 2020.  Support for NaCl will be discontinued starting with Microsoft Edge 138.
 
-NaCl was a sandbox for running compiled C and C++ code in browsers efficiently and securely, independently of the user's operating system.  WebAssembly (Wasm) is recommended instead of NaCl.
+NaCl is a sandbox for running compiled C and C++ code in browsers efficiently and securely, independently of the user's operating system.  WebAssembly (Wasm) is recommended instead of NaCl.
 
 See [Native Client (NaCl) (deprecated)](../developer-guide/run-compiled-code.md#native-client-nacl-deprecated) in _Run compiled code in an extension_.
 
