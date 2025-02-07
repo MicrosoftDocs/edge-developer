@@ -3,12 +3,14 @@
 // Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
 // Sections:
 
-// DevTools
+// Release notes
+// Experimental web platform features
+// Microsoft Edge DevTools
 // Microsoft Edge extensions
 // Progressive Web Apps
 // WebView2
 // Test and automation
-// Development tips for Microsoft Edge (was "Web platform")
+// Edge-specific web development tips
 // Microsoft Edge IDE integration
 // Accessibility in Microsoft Edge
 // DualEngine
@@ -23,7 +25,13 @@
 // Old redirects (to /archive/)
 
 // ============================================================================
-// DevTools
+// Release notes
+// /Release notes
+// ============================================================================
+// Experimental web platform features
+// /Experimental web platform features
+// ============================================================================
+// Microsoft Edge DevTools
       {
         // legacy "Overview of DevTools" url redirects to DevTools landing
         "source_path": "microsoft-edge/devtools-guide-chromium/index.md", 
@@ -106,6 +114,7 @@
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/evaluate-performance/",
         "redirect_document_id": false
       },
+// /Microsoft Edge DevTools
 // ============================================================================
 // Microsoft Edge extensions
       {
@@ -179,6 +188,7 @@
         "redirect_url": "/microsoft-edge/extensions-chromium/update/auto-update",
         "redirect_document_id": false
       },
+// /Microsoft Edge extensions
 // ============================================================================
 // Progressive Web Apps
       {
@@ -226,6 +236,7 @@
         "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
         "redirect_document_id": false
       },
+// /Progressive Web Apps
 // ============================================================================
 // WebView2
       {
@@ -804,13 +815,13 @@
 // Test and automation
 // /Test and automation
 // ============================================================================
-// Development tips for Microsoft Edge (was "Web platform")
+// Edge-specific web development tips
       {
         "source_path": "microsoft-edge/web-platform/user-agent-string.md",
         "redirect_url": "/microsoft-edge/web-platform/user-agent-guidance",
         "redirect_document_id": false
       },
-// /Development tips for Microsoft Edge (was "Web platform")
+// /Edge-specific web development tips
 // ============================================================================
 // Microsoft Edge IDE integration
       {
@@ -828,6 +839,7 @@
         "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
         "redirect_document_id": false
       },
+// /Microsoft Edge IDE integration
 // ============================================================================
 // Accessibility in Microsoft Edge
 // /Accessibility in Microsoft Edge
