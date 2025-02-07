@@ -14,7 +14,6 @@
 # Accessibility in Microsoft Edge
 # DualEngine
 # bottom leaf nodes
-
 # =============================================================================
 # top leaf nodes
 - name: Microsoft Edge Developer documentation
@@ -23,27 +22,21 @@
     - name: Develop for the web with Microsoft Edge
       href: ./develop-web-microsoft-edge.md
 # /top leaf nodes
-
 # =============================================================================
 # Release notes                       # new toc bucket
     - name: Release notes
       items:
-#       - name: Release notes  # firstchild overview/nav for toc bucket
-#         href: ./dir/filename.md
-
-        - name: Site compatibility-impacting changes coming to Microsoft Edge
-          href: ./web-platform/site-impacting-changes.md
-
         - name: Release Notes for web platform for Microsoft Edge
           href: ./web-platform/release-notes/index.md
-
-#       - name: Microsoft Edge 134
-#         href: ./web-platform/release-notes/134.md
+          displayName: what's new, announcements
 
         - name: Microsoft Edge 133
           href: ./web-platform/release-notes/133.md
-# /Release notes
+          displayName: Microsoft Edge 133 web platform release notes (Feb. 2025)  # page title
 
+        - name: Site compatibility-impacting changes coming to Microsoft Edge
+          href: ./web-platform/site-impacting-changes.md
+# /Release notes
 # =============================================================================
 # Experimental web platform features  # new toc bucket
     - name: Experimental web platform features
@@ -57,7 +50,6 @@
         - name: Sign up for the Ad Selection API
           href: ./web-platform/ad-selection-api.md
 # /Experimental web platform features
-
 # =============================================================================
 # Microsoft Edge DevTools
     - name: Microsoft Edge DevTools
@@ -65,11 +57,9 @@
 # Landing page -----------------------------------------------------
         - name: Microsoft Edge DevTools documentation
           href: ./devtools-guide-chromium/landing/index.yml
-          displayName: DevTools
 # Overview of DevTools --------------------------------------------------------
         - name: Overview of DevTools
           href: ./devtools-guide-chromium/overview.md
-          displayName: DevTools
 # What's New ------------------------------------------------------------------
         - name: What's New
           items:
@@ -949,7 +939,6 @@
         - name: Contact the Microsoft Edge DevTools team  # added article
           href: ./devtools-guide-chromium/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
-
 # =============================================================================
 #   DevTools for Visual Studio Code
         - name: DevTools for Visual Studio Code
@@ -1026,7 +1015,6 @@
               href: ./visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
 #   /DevTools for Visual Studio Code
 # /Microsoft Edge DevTools
-
 # =============================================================================
 # Microsoft Edge extensions
     - name: Microsoft Edge extensions
@@ -1201,7 +1189,6 @@
           href: ./extensions-chromium/publish/contact-extensions-team.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues
 # /Microsoft Edge extensions
-
 # =============================================================================
 # Progressive Web Apps
     - name: Progressive Web Apps
@@ -1288,7 +1275,6 @@
         - name: Progressive Web App demos
           href: ./progressive-web-apps-chromium/demo-pwas.md
 # /Progressive Web Apps
-
 # =============================================================================
 # WebView2
     - name: WebView2
@@ -1296,7 +1282,6 @@
         - name: WebView2 documentation
           href: ./webview2/landing/index.yml
           displayName: landing
-
 # -----------------------------------------------------------------------------
         - name: Introduction and overview
           items:
@@ -1692,7 +1677,6 @@
                   uid: 'WebView2Script!SharedBufferReceivedEvent:class'
                 - name: WebView
                   uid: 'WebView2Script!WebView:class'
-
 # -----------------------------------------------------------------------------
         - name: WebView2 end-user FAQ
           href: ./webview2/concepts/end-user-faq.md  # move to SMC docset
@@ -1701,7 +1685,6 @@
           href: ./webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 # /WebView2
-
 # =============================================================================
 # Test and automation
     - name: Test and automation
@@ -1735,7 +1718,6 @@
         - name: webhint extension for Visual Studio Code
           href: ./test-and-automation/webhint.md
 # /Test and automation
-
 # =============================================================================
 # Edge-specific web development tips  # renamed from "Development tips for Microsoft Edge"  # firstchild overview/nav for toc bucket
     - name: Edge-specific web development tips
@@ -1770,7 +1752,6 @@
           href: ./devtools-guide-chromium/json-viewer/json-viewer.md
           displayName: JSON viewer, view JSON
 # /Edge-specific web development tips
-
 # =============================================================================
 # Microsoft Edge IDE integration
     - name: Microsoft Edge IDE integration
@@ -1790,7 +1771,6 @@
         - name: Visual Studio for web development
           href: ./visual-studio/index.md
 # /Microsoft Edge IDE integration
-
 # =============================================================================
 # Accessibility in Microsoft Edge
     - name: Accessibility in Microsoft Edge
@@ -1810,7 +1790,6 @@
         - name: Resources for accessibility testing
           href: ./accessibility/test.md
 # /Accessibility in Microsoft Edge
-
 # =============================================================================
 # DualEngine
     - name: DualEngine
@@ -1832,7 +1811,6 @@
           href: ./dualengine/reference/index.md
           displayName: functions, methods
 # /DualEngine
-
 # =============================================================================
 # bottom leaf nodes
     - name: Videos about web development with Microsoft Edge

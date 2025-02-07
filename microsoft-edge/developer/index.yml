@@ -44,7 +44,22 @@ landingContent:
 # =============================================================================
 # Row 1
 # -----------------------------------------------------------------------------
-# Card r1c1
+# Card for toc bucket 1 (Release notes) & 2 (Experimental web platform features) - r1c1
+  - title: Web platform updates
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Release Notes for web platform for Microsoft Edge
+            url: ../web-platform/release-notes/index.md
+
+          - text: Site compatibility-impacting changes
+            url: ../web-platform/site-impacting-changes.md
+
+          - text: Use origin trials in Microsoft Edge
+            url: ../origin-trials/index.md
+
+# -----------------------------------------------------------------------------
+# Card for toc bucket 3 - r1c2
   - title: Microsoft Edge DevTools
     linkLists:
       - linkListType: overview
@@ -74,7 +89,7 @@ landingContent:
             url: ../devtools-guide-chromium/shortcuts/index.md
 
 # -----------------------------------------------------------------------------
-# Card r1c2
+# Card for toc bucket 4 - r1c3
   - title: Microsoft Edge extensions
     linkLists:
       - linkListType: overview
@@ -104,8 +119,10 @@ landingContent:
           - text: "Sample: Picture viewer pop-up webpage"
             url: ../extensions-chromium/getting-started/picture-viewer-popup-webpage.md
 
+# =============================================================================
+# Row 2
 # -----------------------------------------------------------------------------
-# Card r1c3
+# Card for toc bucket 5 - r2c1
   - title: Progressive Web Apps (PWAs)
     linkLists:
       - linkListType: overview
@@ -142,51 +159,8 @@ landingContent:
           - text: Store data on the device
             url: ../progressive-web-apps-chromium/how-to/offline.md
 
-# =============================================================================
-# Row 2
 # -----------------------------------------------------------------------------
-# Card r2c1
-  - title: Edge-specific web development tips
-    linkLists:
-#     - linkListType: overview
-#       links:
-#         - text: Edge-specific web development tips  # jump page for overview of bucket, omit bc 10 max
-#           url: ../web-platform/web-platform.md
-      - linkListType: whats-new
-        links:
-          - text: Site compatibility-impacting changes  # todo: moved to "Release notes" toc bucket, delete?
-            url: ../web-platform/site-impacting-changes.md
-      - linkListType: how-to-guide
-        links:
-          - text: Move users to Microsoft Edge from Internet Explorer
-            url: ../web-platform/ie-to-microsoft-edge-redirection.md
-
-          - text: Tracking prevention in Microsoft Edge
-            url: ../web-platform/tracking-prevention.md
-
-          - text: Detect Microsoft Edge from your website
-            url: ../web-platform/user-agent-guidance.md
-
-          - text: Develop experiences for the sidebar in Microsoft Edge
-            url: ../web-platform/sidebar.md
-
-          - text: Detect Windows 11 using User-Agent Client Hints
-            url: ../web-platform/how-to-detect-win11.md
-
-          - text: Customize the password reveal button
-            url: ../web-platform/password-reveal.md
-
-          - text: Display regional versions of your site, based on OS settings
-            url: ../web-platform/os-regional-settings.md
-
-          - text: View formatted JSON responses or files
-            url: ../devtools-guide-chromium/json-viewer/json-viewer.md
-
-          - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?
-            url: ../web-platform/ad-selection-api.md
-
-# -----------------------------------------------------------------------------
-# Card r2c2
+# Card for toc bucket 6 - r2c2
   - title: WebView2
     linkLists:
       - linkListType: overview
@@ -221,7 +195,7 @@ landingContent:
             url: ../webview2/webview2-api-reference.md
 
 # -----------------------------------------------------------------------------
-# Card r2c3
+# Card for toc bucket 7 - r2c3
   - title: Test and automation
     linkLists:
       - linkListType: how-to-guide
@@ -231,9 +205,6 @@ landingContent:
 
           - text: DevTools Protocol
             url: ../devtools-protocol-chromium/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol-chromium/
-
-          - text: Use origin trials in Microsoft Edge
-            url: ../origin-trials/index.md
 
           - text: Use Playwright to automate and test in Microsoft Edge
             url: ../playwright/index.md
@@ -250,7 +221,44 @@ landingContent:
 # =============================================================================
 # Row 3
 # -----------------------------------------------------------------------------
-# Card r3c1
+# Card for toc bucket 8 - r3c1
+  - title: Edge-specific web development tips
+    linkLists:
+#     - linkListType: overview
+#       links:
+#         - text: Edge-specific web development tips  # jump page for overview of bucket, omit bc 10 max
+#           url: ../web-platform/web-platform.md
+      - linkListType: how-to-guide
+        links:
+          - text: Move users to Microsoft Edge from Internet Explorer
+            url: ../web-platform/ie-to-microsoft-edge-redirection.md
+
+          - text: Tracking prevention in Microsoft Edge
+            url: ../web-platform/tracking-prevention.md
+
+          - text: Detect Microsoft Edge from your website
+            url: ../web-platform/user-agent-guidance.md
+
+          - text: Develop experiences for the sidebar in Microsoft Edge
+            url: ../web-platform/sidebar.md
+
+          - text: Detect Windows 11 using User-Agent Client Hints
+            url: ../web-platform/how-to-detect-win11.md
+
+          - text: Customize the password reveal button
+            url: ../web-platform/password-reveal.md
+
+          - text: Display regional versions of your site, based on OS settings
+            url: ../web-platform/os-regional-settings.md
+
+          - text: View formatted JSON responses or files
+            url: ../devtools-guide-chromium/json-viewer/json-viewer.md
+
+          - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?
+            url: ../web-platform/ad-selection-api.md
+
+# -----------------------------------------------------------------------------
+# Card for toc bucket 9 - r3c2
   - title: Microsoft Edge IDE integration
     linkLists:
       - linkListType: overview
@@ -272,7 +280,7 @@ landingContent:
             url: ../visual-studio/index.md
 
 # -----------------------------------------------------------------------------
-# Card r3c2
+# Card for toc bucket 10 - r3c3
   - title: Accessibility in Microsoft Edge
     linkLists:
       - linkListType: overview
@@ -287,8 +295,10 @@ landingContent:
           - text: Accessibility testing
             url: ../accessibility/test.md
 
+# =============================================================================
+# Row 4
 # -----------------------------------------------------------------------------
-# Card r3c3
+# Card for toc bucket 11 - r4c1
   - title: DualEngine
     linkLists:
       - linkListType: overview
@@ -314,8 +324,6 @@ landingContent:
           - text: DualEngine Win32 C++ Reference
             url: ../dualengine/reference/index.md
 
-# =============================================================================
-# Row 4
 # -----------------------------------------------------------------------------
 # Card r4c1
 # leaf articles at bottom of toc (videos, privacy, initiative) - omit
