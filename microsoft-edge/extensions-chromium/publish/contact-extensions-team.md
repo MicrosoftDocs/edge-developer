@@ -60,6 +60,10 @@ To feature your extension in a collection on the Microsoft Edge Add-ons website,
 
 Participate in the [Discussions](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) forum in the MicrosoftEdge-Extensions repo to flag any issues, raise a feature request, be a part of discussions, and share your ideas regarding the Microsoft Edge Extensions Store.
 
+You can also create an issue on our Github page here(https://github.com/microsoft/MicrosoftEdge-Extensions/issues) for anything specific to extensions. 
+
+There is also a support email where you can reach out to us for further inquiries(ext_dev_support@microsoft.com)
+
 
 <!-- ====================================================================== -->
 ## Report copyright or trademark infringement
