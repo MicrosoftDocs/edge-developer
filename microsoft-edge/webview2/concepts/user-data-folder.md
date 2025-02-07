@@ -80,7 +80,8 @@ The UDF is created on startup of the WebView2 host app, if the UDF doesn't exist
 
 Each instance of a WebView2 control is associated with a WebView2 session.
 
-Each WebView2 session has exactly one UDF and a UDF can only have at most one WebView2 session at a time.
+* Each WebView2 session has exactly one UDF.
+* A UDF can only have at most one WebView2 session at a time.
 
 A WebView2 control shares its WebView2 session with any other WebView2 control that uses the same UDF. This is true whether the WebView2 controls are in the same host app or different host apps. However, a UDF may only be shared among host apps that are in the same logon session (more specifically, only one HDESKTOP). See [Process model for WebView2 apps](../concepts/process-model.md).
 
