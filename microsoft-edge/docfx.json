@@ -33,8 +33,6 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
-      "feedback_system": "OpenSource",
-      "feedback_github_repo": "MicrosoftDocs/edge-developer",
       "searchScope": ["Microsoft Edge", "Microsoft Edge Developer"],
       "titleSuffix": "Microsoft Edge Developer documentation",
       "uhfHeaderId": "MSDocsHeader-MSEdge"
