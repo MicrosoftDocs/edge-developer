@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 02/05/2025
+ms.date: 02/10/2025
 ---
 # Transfer ownership of an extension
 
@@ -20,9 +20,7 @@ Transferring ownership of an extension is sometimes called _reparenting_ an exte
 
 The current owner of the extension must send an email, as follows:
 
-1. Start composing an email to [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
- 
-1. Make the **Subject** of the email:
+1. Start composing an email to [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com), with **Subject** line:
 
    [Reparenting Request]: \<crx ID of the extension to be transferred\><!-- todo: define or expand crx -->
 
