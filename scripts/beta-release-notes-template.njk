@@ -14,6 +14,32 @@ The following are the new web platform features and updates in Microsoft Edge {{
 
 To stay up-to-date and get the latest web platform features, download an Insiders version of Microsoft Edge, such as Canary, Dev, or Beta; see [Become a Microsoft Edge Insider](https://aka.ms/microsoftedge).
 
+**Detailed contents:**
+
+* [Edge DevTools](#edge-devtools)
+* [WebView2](#webview2)
+* [Web platform features](#web-platform-features)
+  * [Enabled features](#enabled-features)
+    {% for feature in data.csFeatures["Enabled by default"] %}
+    * [{{ feature.name }}](#{{ feature.name | slugify }})
+    {% endfor %}
+  * [Deprecated and removed features](#deprecated-and-removed-features)
+    {% for feature in data.csFeatures["Deprecated"] %}
+    * [{{ feature.name }}](#{{ feature.name | slugify }})
+    {% endfor %}
+    {% for feature in data.csFeatures["Removed"] %}
+    * [{{ feature.name }}](#{{ feature.name | slugify }})
+    {% endfor %}
+* [Origin trials](#origin-trials)
+  * [Microsoft Edge-only origin trials](#microsoft-edge-only-origin-trials)
+    {% for trial in data.edgeOTs %}
+    * [{{ trial.title }}](#{{ trial.title | slugify }})
+    {% endfor %}
+  * [New Chromium origin trials](#new-chromium-origin-trials)
+    {% for trial in data.chromeOTs %}
+    * [{{ trial.title }}](#{{ trial.title | slugify }})
+    {% endfor %}
+
 
 <!-- ====================================================================== -->
 ## Edge DevTools
@@ -33,8 +59,7 @@ For WebView2, see [Release Notes for the WebView2 SDK](../../webview2/release-no
 
 <!-- ------------------------------ -->
 #### Enabled features
-{% set features = data.csFeatures %}
-{% for feature in features["Enabled by default"] %}
+{% for feature in data.csFeatures["Enabled by default"] %}
 
 <!-- ---------- -->
 ###### {{ feature.name }}
@@ -44,14 +69,17 @@ For WebView2, see [Release Notes for the WebView2 SDK](../../webview2/release-no
 
 <!-- ------------------------------ -->
 #### Deprecated and removed features
-{% for feature in features["Deprecated"] %}
+
+**TODO: CHECK THE FEATURES LISTED BELOW AND ADD THEM TO THE SITE-COMPAT-IMPACTING-CHANGES ARTICLE.**
+
+{% for feature in data.csFeatures["Deprecated"] %}
 
 <!-- ---------- -->
 ###### {{ feature.name }}
 
 {{ feature.summary | safe }}
 {% endfor %}
-{% for feature in features["Removed"] %}
+{% for feature in data.csFeatures["Removed"] %}
 
 <!-- ---------- -->
 ###### {{ feature.name }}
@@ -67,7 +95,7 @@ The following are new experimental APIs which you can try on your own live websi
 
 
 <!-- ------------------------------ -->
-#### Microsoft Edge only origin trials
+#### Microsoft Edge-only origin trials
 {% for trial in data.edgeOTs %}
 
 <!-- ---------- -->
