@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 11/18/2024
+ms.date: 03/01/2025
 ---
 # Overview of WebView2 APIs
 
@@ -16,6 +16,10 @@ Embedding the WebView2 control in your app gives your app access to various meth
 when adding an h2 heading, add row in table
 when adding an h4 heading, add nav link below the h2
 -->
+
+
+<!-- ====================================================================== -->
+## INCOMING - Stable in Release
 
 
 <!-- ====================================================================== -->
