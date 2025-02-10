@@ -419,10 +419,6 @@ conceptualContent:
               url: ./devtools-guide-chromium/json-viewer/json-viewer.md
               itemType: how-to-guide
 
-            - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?
-              url: ./web-platform/ad-selection-api.md
-              itemType: how-to-guide
-
 # -----------------------------------------------------------------------------
 # Card for toc bucket 9 - r2c4
         - title: Microsoft Edge IDE integration
