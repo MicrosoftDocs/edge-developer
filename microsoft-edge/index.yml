@@ -194,7 +194,23 @@ conceptualContent:
 # =============================================================================
 # Row 1 (4 cards)
 # -----------------------------------------------------------------------------
-# Card r1c1
+# Card for toc bucket 1 (Release notes) & 2 (Experimental web platform features) - r1c1
+        - title: Web platform updates
+          links:
+            - text: Release Notes for web platform for Microsoft Edge
+              url: ./web-platform/release-notes/index.md
+              itemType: whats-new
+
+            - text: Site compatibility-impacting changes
+              url: ./web-platform/site-impacting-changes.md
+              itemType: whats-new
+
+            - text: Use origin trials in Microsoft Edge
+              url: ./origin-trials/index.md
+              itemType: whats-new
+
+# -----------------------------------------------------------------------------
+# Card for toc bucket 3 - r1c2
         - title: Microsoft Edge DevTools
           links:
             - text: Microsoft Edge Developer documentation  # docset landing page (link is in hub page only)
@@ -226,7 +242,7 @@ conceptualContent:
               itemType: reference
 
 # -----------------------------------------------------------------------------
-# Card r1c2
+# Card for toc bucket 4 - r1c3
         - title: Microsoft Edge extensions
           links:
             - text: Microsoft Edge extensions documentation  # extensions landing page
@@ -262,7 +278,7 @@ conceptualContent:
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
-# Card r1c3
+# Card for toc bucket 5 - r1c4
         - title: Progressive Web Apps (PWAs)
           links:
             - text: Progressive Web Apps (PWAs) documentation  # pwa landing page
@@ -297,8 +313,10 @@ conceptualContent:
               url: ./progressive-web-apps-chromium/how-to/offline.md
               itemType: how-to-guide
 
+# =============================================================================
+# Row 2 (4 cards)
 # -----------------------------------------------------------------------------
-# Card r1c4
+# Card for toc bucket 6 - r2c1
         - title: WebView2
           links:
             - text: WebView2 documentation  # wv2 landing page
@@ -333,10 +351,8 @@ conceptualContent:
               url: ./webview2/webview2-api-reference.md
               itemType: reference
 
-# =============================================================================
-# Row 2 (4 cards)
 # -----------------------------------------------------------------------------
-# Card r2c1
+# Card for toc bucket 7 - r2c2
         - title: Test and automation
           links:
             - text: Test and automation in Microsoft Edge
@@ -346,10 +362,6 @@ conceptualContent:
             - text: DevTools Protocol
               url: ./test-and-automation/devtools-protocol.md
               itemType: how-to-guide
-
-            - text: Use origin trials in Microsoft Edge
-              url: ./origin-trials/index.md
-              itemType: overview
 
             - text: Use Playwright to automate and test in Microsoft Edge
               url: ./playwright/index.md
@@ -368,16 +380,12 @@ conceptualContent:
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
-# Card r2c2
-        - title: Development tips for Microsoft Edge  # /web-platform/
+# Card for toc bucket 8 - r2c3
+        - title: Edge-specific web development tips
           links:
-#           - text: Development tips for Microsoft Edge  # jump page for overview of bucket
+#           - text: Edge-specific web development tips  # jump page for overview of bucket, omit bc 10 max
 #             url: ./web-platform/web-platform.md
 #             itemType: overview
-
-            - text: Site compatibility-impacting changes
-              url: ./web-platform/site-impacting-changes.md
-              itemType: whats-new
 
             - text: Move users to Microsoft Edge from Internet Explorer
               url: ./web-platform/ie-to-microsoft-edge-redirection.md
@@ -411,12 +419,8 @@ conceptualContent:
               url: ./devtools-guide-chromium/json-viewer/json-viewer.md
               itemType: how-to-guide
 
-            - text: Sign up for the Ad Selection API
-              url: ./web-platform/ad-selection-api.md
-              itemType: how-to-guide
-
 # -----------------------------------------------------------------------------
-# Card r2c3
+# Card for toc bucket 9 - r2c4
         - title: Microsoft Edge IDE integration
           links:
             - text: Microsoft Edge IDE integration
@@ -439,47 +443,49 @@ conceptualContent:
               url: ./visual-studio-code/index.md
               itemType: how-to-guide
 
-# -----------------------------------------------------------------------------
-# Card r2c4
-        - title: Accessibility in Microsoft Edge
-          links:
-            - text: Accessibility-testing features
-              url: ./devtools-guide-chromium/accessibility/reference.md
-              itemType: overview
-
-            - text: Accessibility overview
-              url: ./accessibility/index.md
-              itemType: overview
-
-            - text: Accessibility testing
-              url: ./accessibility/test.md
-              itemType: how-to-guide
-
 # =============================================================================
 # Row 3 (4 cards max) - adding cards changes layout to 3 per row
 # -----------------------------------------------------------------------------
-# Card r3c1
-        # - title: DualEngine
-          # links:
-          #   - text: Introduction to the Microsoft DualEngine API
-          #     url: ./dualengine/intro.md
-          #     itemType: overview
- 
-          #   - text: Getting started with the DualEngine API
-          #     url: ./dualengine/get-started.md
-          #     itemType: get-started
- 
-          #   - text: Creating a DualEngine adapter plugin DLL
-          #     url: ./dualengine/concepts/adapter-dll.md
-          #     itemType: how-to-guide
- 
-          #   - text: Launching Internet Explorer
-          #     url: ./dualengine/concepts/launching-internet-explorer.md
-          #     itemType: how-to-guide
+# Card for toc bucket 10 - r_c_
+# Card r2c4
+#       - title: Accessibility in Microsoft Edge
+#         links:
+#           - text: Accessibility-testing features
+#             url: ./devtools-guide-chromium/accessibility/reference.md
+#             itemType: overview
 
-          #   - text: DualEngine Win32 C++ Reference
-          #     url: ./dualengine/reference/index.md
-          #     itemType: reference
+#           - text: Accessibility overview
+#             url: ./accessibility/index.md
+#             itemType: overview
+
+#           - text: Accessibility testing
+#             url: ./accessibility/test.md
+#             itemType: how-to-guide
+
+# -----------------------------------------------------------------------------
+# Card for toc bucket 11 - r_c_
+# Card r3c1
+#         - title: DualEngine
+#           links:
+#             - text: Introduction to the Microsoft DualEngine API
+#               url: ./dualengine/intro.md
+#               itemType: overview
+ 
+#             - text: Getting started with the DualEngine API
+#               url: ./dualengine/get-started.md
+#               itemType: get-started
+ 
+#             - text: Creating a DualEngine adapter plugin DLL
+#               url: ./dualengine/concepts/adapter-dll.md
+#               itemType: how-to-guide
+ 
+#             - text: Launching Internet Explorer
+#               url: ./dualengine/concepts/launching-internet-explorer.md
+#               itemType: how-to-guide
+
+#             - text: DualEngine Win32 C++ Reference
+#               url: ./dualengine/reference/index.md
+#               itemType: reference
 
 # =============================================================================
 # "Help and Support" section of hub page - 1 row of 3 cards
