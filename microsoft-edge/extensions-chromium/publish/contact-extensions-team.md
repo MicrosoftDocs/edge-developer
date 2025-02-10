@@ -10,13 +10,6 @@ ms.date: 02/10/2025
 ---
 # Contact the Microsoft Edge extensions team
 
-<!-- h2 sections per draft outline (July 3 2024):
-Request help or submit feedback
-Report copyright or trademark infringement
-Log your tickets via Partner Center
-Connect with Community
--->
-
 You can contact the Microsoft Edge extensions support team to request help, submit feedback, or report a copyright or trademark infringement.
 
 
@@ -24,15 +17,14 @@ You can contact the Microsoft Edge extensions support team to request help, subm
 ## Discussion forum in MicrosoftEdge-Extensions repo
 
 Participate in the public [Discussions](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) forum in the **MicrosoftEdge-Extensions** repo.  You can:
-* Request a feature for extensions.
 * Discuss developing extensions.
-   * Share ideas about the Edge Add-ons website (the Edge extensions store).
    * Share best practices with other developers on building, managing or acquiring more users for their browser extension.
    * Connect with other extension developers about technical questions related to building Microsoft Edge add-ons.
-* Share inputs or suggestions to the Microsoft Edge add-ons engineering team.
-   * How to improve extension publishing, management and listing processes or workflows.
-   * Provide early feedback to the Microsoft Edge add-ons engineering team about any new features for extensions publishing, extensions management, or processes or workflows for extensions listings.
-<!-- todo: trim wordcount copied from https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md -->
+   * Share ideas about the Edge Add-ons website (the Edge extensions store).
+* Request a feature for extensions.
+   * Share inputs or suggestions to the Microsoft Edge add-ons engineering team.
+   * Discuss how to improve extension publishing, management and listing processes or workflows.
+   * Provide early feedback to the Microsoft Edge add-ons engineering team about new features for managing and publishing extensions.
 
 
 <!-- ====================================================================== -->
@@ -46,9 +38,9 @@ Use this **Issues** page for:
 
 
 <!-- ====================================================================== -->
-## Email extensions support
+## Email extensions developer support
 
-To discuss issues about a specific developer account or extension, you can privately contact extensions support at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
+To discuss issues about a specific developer account or extension, you can privately contact extensions developer support at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
 
 
 <!-- ====================================================================== -->
