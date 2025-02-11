@@ -14,6 +14,15 @@ async function fetchChromeStatusAPI(url) {
   return data;
 }
 
+function longDate(dateString) {
+  const date = new Date(dateString);
+  return date.toLocaleString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
 async function main() {
   // --------------------------------------------------
   // 1. Check which is the next release (first date that's in the future compared to today).
@@ -115,7 +124,7 @@ async function main() {
       return {
         title: ot.display_name,
         description: ot.description,
-        expiration: new Date(ot.end_time).toLocaleDateString(),
+        expiration: longDate(ot.end_time),
         explainer: ot.documentation_url,
         feedback: ot.feedback_url,
         registration: `https://developer.chrome.com/origintrials/#/register_trial/${ot.id}`,
@@ -161,14 +170,7 @@ async function main() {
         return `${shortMonthWithDot} ${date.getFullYear()}`;
       });
 
-      eleventyConfig.addShortcode("monthDayYear", function (releaseDate) {
-        const date = new Date(releaseDate);
-        return date.toLocaleString("en-US", {
-          month: "long",
-          day: "numeric",
-          year: "numeric",
-        });
-      });
+      eleventyConfig.addShortcode("monthDayYear", longDate);
 
       return {
         dir: {
