@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 02/06/2025
+ms.date: 02/10/2025
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge
 
@@ -19,16 +19,6 @@ For functionality and compatibility reasons, Microsoft Edge adopts nearly all of
 For information about upcoming Chromium project web platform changes, see [Chrome Platform Status Release timeline](https://chromestatus.com/roadmap).
 
 Check this article often as the Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
-
-
-<!-- ====================================================================== -->
-## Deprecation of Native Client (NaCl)
-
-To enhance web security and performance, Native Client (NaCl) is deprecated for Microsoft Edge, along with other browsers.  NaCl was deprecated (discouraged but still supported) starting in 2020.  Support for NaCl will be discontinued starting with Microsoft Edge 138.
-
-NaCl is a sandbox for running compiled C and C++ code in browsers efficiently and securely, independently of the user's operating system.  WebAssembly (Wasm) is recommended instead of NaCl.
-
-See [Native Client (NaCl) (deprecated)](../extensions-chromium/developer-guide/run-compiled-code.md#native-client-nacl-deprecated) in _Run compiled code in an extension_.
 
 
 <!-- ====================================================================== -->
@@ -48,6 +38,7 @@ This table lists:
 | Insecure downloads over HTTP | Future release (TBD) | | When a user tries to download potentially dangerous content from an HTTP site, the user will receive a UI warning, such as "Insecure download blocked."  The user will still have an option to proceed and download the item.  Admins can use the `InsecureContentAllowedForUrls` policy to specify HTTP sites for which the warning will be suppressed.  Admins can use the `InsecureDownloadWarnings` feature flag to test the impact of this upcoming feature. |
 | Deprecate unload event | Future release (TBD) | | Introduces a new Permission-Policy to allow creating unload event listeners. The default policy is `allow`, but the default policy will gradually be migrated to `deny`, such that unload handlers stop firing on pages, unless a page explicitly opts in to re-enable them.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Deprecate: Deprecate unload event](https://groups.google.com/a/chromium.org/g/blink-dev/c/dvusqw9-IhI/m/SBkm_u1RAQAJ). |
 | Removal of cross-origin subframe JavaScript dialogs | Future release (TBD) | | Removes `window.alert`, `window.prompt`, and `window.confirm` from cross-origin iframes.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Remove: Cross origin subframe JS Dialogs](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ). |
+| Removal of Native Client (NaCl) | v138 |  | To enhance web security and performance, Native Client (NaCl) is deprecated for Microsoft Edge, along with other browsers.  NaCl was deprecated (discouraged but still supported) starting in 2020.  WebAssembly (Wasm) is recommended instead of NaCl.  See [Native Client (NaCl) (deprecated)](../extensions-chromium/developer-guide/run-compiled-code.md#native-client-nacl-deprecated) in _Run compiled code in an extension_. |
 | Deprecate `textprediction` attribute | v133 |  | Removes support for the `textprediction` HTML attribute, which is a nonstandard attribute that's used to enable or disable the browser-based Text Prediction feature for long-form text inputs.  Instead, use the standardized `writingsuggestions` attribute, which functions similarly to `textprediction`, but also applies to other writing-assistance features that browsers may provide.  Sites that explicitly set `textprediction` to `true` or `false` can instead set `writingsuggestions` to the same value.  For more information, see [Writing suggestions](https://html.spec.whatwg.org/multipage/interaction.html#writing-suggestions) in the HTML specification. |
 | Removal of Token Binding support | v127, v130 | | Token Binding uses cryptographic certificates on both ends of the TLS connection in an attempt to close the security gap of bearer tokens, which may be lost or stolen.  The enterprise policy [AllowTokenBindingsForUrls](/deployedge/microsoft-edge-policies#allowtokenbindingforurls) will no longer be supported, as of v127.  Support for the Token Binding protocol will be removed in v130. |
 | Removal of mutation events | v127 | | Removes support for mutation events in Chromium. Use the [MutationObserver](https://developer.mozilla.org/docs/Web/API/MutationObserver) API instead.  See [Intent to Deprecate: Mutation Events](https://groups.google.com/a/chromium.org/g/blink-dev/c/qDsKRU-cQ_4/m/isA1mZ_aAAAJ). |
