@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 02/10/2025
+ms.date: 02/12/2025
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge
 

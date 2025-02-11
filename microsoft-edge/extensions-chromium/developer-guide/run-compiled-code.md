@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 02/10/2025
+ms.date: 02/12/2025
 ---
 # Run compiled code in an extension
 
@@ -19,7 +19,7 @@ See:
 
 <!-- ====================================================================== -->
 ## Native Client (NaCl) (deprecated)
-<!-- abbreviated sections that point to here:
+<!-- sections that point to here:
 * [Deprecation of Native Client (NaCl)](../whats-new/roadmap.md#deprecation-of-native-client-nacl) in _Roadmap for Microsoft Edge Add-ons_.
 * "Native Client (NaCl)" table row in [Latest versions](../../web-platform/site-impacting-changes?tabs=latest#high-impact-changes) in _Site compatibility-impacting changes coming to Microsoft Edge_.
 -->
@@ -31,7 +31,6 @@ NaCl is a sandbox for running compiled C and C++ code in browsers efficiently an
 See also:
 * [Manifest - Nacl Modules](https://developer.chrome.com/docs/extensions/mv2/manifest/nacl-modules)
 * [Native Client](https://developer.chrome.com/docs/native-client) - deprecation notice for Chrome browser.
-<!-- todo: link to deprecation notices for other browsers -->
 
 To Run compiled code in an extension, we recommend using WebAssembly instead of NaCl.  See: 
 * [WebAssembly Migration Guide](https://developer.chrome.com/docs/native-client/migration) in Chrome docs.
