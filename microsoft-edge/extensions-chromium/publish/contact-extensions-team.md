@@ -71,13 +71,18 @@ To feature your extension in a collection on the Microsoft Edge Add-ons website,
 
 <!-- ====================================================================== -->
 ## Microsoft Edge Insider forum at Tech Community
-<!-- not specific to extensions -->
 
-For discussion about Microsoft Edge, including Beta, Dev, and Canary preview channels, use the [Microsoft Edge Insider](https://techcommunity.microsoft.com/t5/microsoft-edge-insider/ct-p/MicrosoftEdgeInsider) forum at Microsoft Tech Community.
+You can stay tuned to recent updates and announcements via the [Microsoft Edge Insider](https://techcommunity.microsoft.com/category/MicrosoftEdgeInsider) product community at Tech Community, or search there for [Edge extensions](https://techcommunity.microsoft.com/search?q=edge+extensions&location=category%3AMicrosoftEdgeInsider) or [Edge add-on](https://techcommunity.microsoft.com/search?q=edge+add-on&location=category%3AMicrosoftEdgeInsider).
+
+
+<!-- ====================================================================== -->
+## #EdgeExtensions at X (Twitter)
+
+You can follow what's happening with Microsoft Edge add-ons via [#EdgeExtensions at Twitter](https://x.com/search?q=%23EdgeExtensions&src=typed_query&f=live).
 
 
 <!-- ====================================================================== -->
 ## Microsoft Edge team on X (Twitter)
 <!-- not specific to extensions -->
 
-For news and updates about developing for the web with Microsoft Edge, follow the [Microsoft Edge Dev (@MSEdgeDev)](https://twitter.com/msedgedev/) team on X (Twitter).
+For news and updates about developing for the web with Microsoft Edge, follow the [Microsoft Edge Dev (@MSEdgeDev)](https://x.com/msedgedev/) team on X (Twitter).
