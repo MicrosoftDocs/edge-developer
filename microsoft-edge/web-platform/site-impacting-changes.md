@@ -5,36 +5,38 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 06/21/2024
+ms.date: 02/10/2025
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge
 
-This article lists the schedule of changes for Microsoft Edge and the Chromium project.  It also highlights any differences and high-impact changes which the Microsoft Edge team is tracking especially closely.
+This article highlights:
+
+* High-impact differences between Microsoft Edge and the Chromium project, the browser engine which Microsoft Edge is based on.
+* High-impact web platform changes, which might impact browser compatibility on your site, and which the Microsoft Edge team is tracking especially closely.
+
+For more information about other changes in Microsoft Edge, see [Release Notes for web platform for Microsoft Edge](./release-notes/index.md).
   
 The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, these changes may affect the functionality of existing webpages.
 
-For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the Chromium project's changes to the web platform.  However, Microsoft retains full control of the Microsoft Edge browser and may defer or reject changes. 
- The Microsoft Edge team decides if the change benefits browser users.
+For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the Chromium project's changes to the web platform.  However, Microsoft retains full control of the Microsoft Edge browser and may defer or reject changes. The Microsoft Edge team decides if the change benefits browser users.
 
 For information about upcoming Chromium project web platform changes, see [Chrome Platform Status Release timeline](https://chromestatus.com/roadmap).
 
-Check this article often as the Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
-
 
 <!-- ====================================================================== -->
-## Differences from the Chromium schedule, and high-impact changes
+## High-impact changes
 
-This table lists:
-*  Changes where the rollout schedule for Microsoft Edge differs from the upstream Chromium project.
-*  High-impact changes which the Microsoft Edge team is tracking closely.<!-- doesn't include low-impact changes, which are unlikely to have compatibility impact -->
+This table lists high-impact changes which the Microsoft Edge team is tracking closely.<!-- doesn't include low-impact changes, which are unlikely to have compatibility impact -->
 
 <!-- order of rows: newest version (such as "Future/TBD") at top, then greatest to smallest version # -->
 
-<!-- latest = 10 most recent versions (Stable channel); as of May 14, 2024, latest Stable = 124, so the 10 most recent versions = 115 through 124+ -->
+<!-- latest = 10 most recent versions (Stable channel); as of Feb. 10, 2025, latest Stable = 133, so the 10 most recent versions = 124 through 133 -->
 ##### [Latest versions](#tab/latest)
 
 | Change | Stable channel | Experimentation | Additional information |
 | --- | --- | --- | --- |
+| WebGPU `maxInterStageShaderComponents` limit | v133 | | The WebGPU `maxInterStageShaderComponents` limit is being removed. See [Deprecate WebGPU limit maxInterStageShaderComponents](./release-notes/133.md#deprecate-webgpu-limit-maxinterstageshadercomponents). |
+| `<link rel=prefetch>` five-minute rule | v133 | | Previously, when a resource was prefetched by using `<link rel=prefetch>`, its cache semantics (specifically, `max-age` and `no-cache`) were ignored for the first use within 5 minutes, to avoid refetching.  Now, this special case has been removed, and normal HTTP cache semantics are used. See [Remove `<link rel=prefetch>` five-minute rule](./release-notes/133.md#remove-link-relprefetch-five-minute-rule). |
 | Insecure downloads over HTTP | Future release (TBD) | | When a user tries to download potentially dangerous content from an HTTP site, the user will receive a UI warning, such as "Insecure download blocked."  The user will still have an option to proceed and download the item.  Admins can use the `InsecureContentAllowedForUrls` policy to specify HTTP sites for which the warning will be suppressed.  Admins can use the `InsecureDownloadWarnings` feature flag to test the impact of this upcoming feature. |
 | Deprecate unload event | Future release (TBD) | | Introduces a new Permission-Policy to allow creating unload event listeners. The default policy is `allow`, but the default policy will gradually be migrated to `deny`, such that unload handlers stop firing on pages, unless a page explicitly opts in to re-enable them.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Deprecate: Deprecate unload event](https://groups.google.com/a/chromium.org/g/blink-dev/c/dvusqw9-IhI/m/SBkm_u1RAQAJ). |
 | Removal of cross-origin subframe JavaScript dialogs | Future release (TBD) | | Removes `window.alert`, `window.prompt`, and `window.confirm` from cross-origin iframes.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Remove: Cross origin subframe JS Dialogs](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ). |
@@ -42,14 +44,14 @@ This table lists:
 | Removal of Token Binding support | v127, v130 | | Token Binding uses cryptographic certificates on both ends of the TLS connection in an attempt to close the security gap of bearer tokens, which may be lost or stolen.  The enterprise policy [AllowTokenBindingsForUrls](/deployedge/microsoft-edge-policies#allowtokenbindingforurls) will no longer be supported, as of v127.  Support for the Token Binding protocol will be removed in v130. |
 | Removal of mutation events | v127 | | Removes support for mutation events in Chromium. Use the [MutationObserver](https://developer.mozilla.org/docs/Web/API/MutationObserver) API instead.  See [Intent to Deprecate: Mutation Events](https://groups.google.com/a/chromium.org/g/blink-dev/c/qDsKRU-cQ_4/m/isA1mZ_aAAAJ). |
 | Removal of Web SQL | v124 | | Fully removes Web SQL support. In prior releases, Web SQL support was disabled by default but could be re-enabled via the [WebSQLAccess policy](/deployedge/microsoft-edge-policies#websqlaccess). After this change, there is no longer any mechanism to enable Web SQL support. This change is happening in the Chromium project, on which Microsoft Edge is based. For more information, see [Intent to Deprecate and Remove Web SQL](https://groups.google.com/a/chromium.org/g/blink-dev/c/fWYb6evVA-w/m/pziWcvboAgAJ). |
-| Added support for AVIF and AV1 file formats | v121 | | Microsoft Edge now supports the AVIF and AV1 file formats, which offer better compression and higher quality images and videos.  Users can enjoy faster loading times and better quality media on websites. |
-| Ignore modifications to `document.domain` by default | v119 | | The `document.domain` property historically could be set to relax the same-origin policy and allow subdomains from a site to interact. This behavior will be disabled by default such that setting the `document.domain` property will have no effect.  For more information and workarounds, see [Microsoft Edge will disable modifying document.domain](/deployedge/edge-learnmore-origin-keyed-agent-cluster). |
 
 
 ##### [Earlier versions](#tab/earlier)
 
 | Change | Stable channel | Experimentation | Additional information |
 | --- | --- | --- | --- |
+| Added support for AVIF and AV1 file formats | v121 | | Microsoft Edge now supports the AVIF and AV1 file formats, which offer better compression and higher quality images and videos.  Users can enjoy faster loading times and better quality media on websites. |
+| Ignore modifications to `document.domain` by default | v119 | | The `document.domain` property historically could be set to relax the same-origin policy and allow subdomains from a site to interact.  This behavior will be disabled by default, such that setting the `document.domain` property will have no effect.  For more information and workarounds, see [Microsoft Edge will disable modifying document.domain](/deployedge/edge-learnmore-origin-keyed-agent-cluster). |
 | New TLS server certificate verifier | v111 (managed devices), v109 (unmanaged devices) | | No site compatibility impacts are anticipated.  If you have uncommon TLS server certificate deployments, you should test in v109 to confirm there's no impact. For more information and testing guidance, see [Changes to Microsoft Edge browser TLS server certificate verification](/deployedge/microsoft-edge-security-cert-verification). |
 | Send CORS preflight requests for private network access | v104 | | Starting with v104, Microsoft Edge sends a CORS [preflight](https://developer.chrome.com/blog/private-network-access-preflight/) request before a page from the internet is allowed to request resources from a local network (intranet).  The intranet server should respond to the preflight by providing explicit permission to access the resource.  The result of this check is not yet enforced.  Enforcement will begin in v111 at the earliest.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see the [Chrome Platform Status entry](https://chromestatus.com/feature/5737414355058688) and [_Chrome Developers_ blog post](https://developer.chrome.com/blog/private-network-access-preflight/#rollout-plan).  Two compatibility policies are available to suppress the CORS preflight request: [InsecurePrivateNetworkRequestAllowed](/deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowed) and [InsecurePrivateNetworkRequestAllowedForUrls](/deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowedforurls). |
 | Block external protocols in sandboxed frames by default | v103 | | Blocks the use of external protocols (that interact with non-browser applications) from sandboxed iframes unless permission is explicitly granted by the `sandbox` attribute on the frame. This change is happening in the Chromium project, on which Microsoft Edge is based. For more information, see the [Chrome Platform Status entry](https://chromestatus.com/feature/5680742077038592). |
