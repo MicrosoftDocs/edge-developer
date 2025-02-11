@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 02/10/2025
+ms.date: 02/11/2025
 ---
 # Contact the Microsoft Edge extensions team
 
@@ -14,9 +14,26 @@ You can contact the Microsoft Edge extensions support team to request help, subm
 
 
 <!-- ====================================================================== -->
+## Inquire about an extension's review status or certification status
+
+For questions about a specific developer account, or questions about the review status or certification status of your extension after submitting the extension via Partner Center, email extensions developer support at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
+
+For questions about a specific developer account or the certification status of a specific extension, don't use the public **Issues** tab or the **Discussions** tab in the MicrosoftEdge-Extensions repo; use email instead.
+
+See also:
+* [Publish a Microsoft Edge extension](./publish-extension.md)
+
+
+<!-- ====================================================================== -->
+## Send email to extensions developer support
+
+To discuss issues about a specific developer account or extension, you can privately contact extensions developer support at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
+
+
+<!-- ====================================================================== -->
 ## Discussion forum in the MicrosoftEdge-Extensions repo
 
-Participate in the public [Discussions](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) forum in the **MicrosoftEdge-Extensions** repo.  You can:
+Participate in the [Discussions](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) forum in the **MicrosoftEdge-Extensions** repo.  You can:
 * Discuss developing extensions.
    * Share best practices with other developers on building, managing or acquiring more users for their browser extension.
    * Connect with other extension developers about technical questions related to building Microsoft Edge add-ons.
@@ -25,6 +42,9 @@ Participate in the public [Discussions](https://github.com/microsoft/MicrosoftEd
    * Share inputs or suggestions to the Microsoft Edge add-ons engineering team.
    * Discuss how to improve extension publishing, management and listing processes or workflows.
    * Provide early feedback to the Microsoft Edge add-ons engineering team about new features for managing and publishing extensions.
+
+See also:
+* [README.md](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md) of the **MicrosoftEdge-Extensions** repo.
 
 
 <!-- ====================================================================== -->
@@ -38,27 +58,9 @@ Use this **Issues** page for:
 
 
 <!-- ====================================================================== -->
-## Send email to extensions developer support
-
-To discuss issues about a specific developer account or extension, you can privately contact extensions developer support at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
-
-
-<!-- ====================================================================== -->
-## Inquire about an extension's review status or certification status
-
-After submitting your extension via Partner Center, if you have questions regarding your extension's review status or certification status, use the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/new/choose) repo to enter a new Issue.
-
-
-<!-- ====================================================================== -->
 ## Report copyright or trademark infringement
 
 If you think an item in the Microsoft Edge Add-ons website violates a copyright or trademark, complete the [Reporting Infringement](https://www.microsoft.com/concern/dmca) form.  When filling in **Step 3: Where can the infringing material be found?**, in the **Product/Service/App** option, make sure to select **Microsoft Store on Windows**.  The Microsoft Edge extensions team will review your report and then take the necessary action.
-
-
-<!-- ====================================================================== -->
-## Learn about submitting an extension
-
-If you have any issues while you submit your extension to Partner Center, see [Publish your extension](publish-extension.md).
 
 
 <!-- ====================================================================== -->
