@@ -12,8 +12,6 @@ ms.date: 02/10/2025
 
 As an extension developer, you can seamlessly transfer ownership of your Microsoft Edge extension (add-on) to another party.  Transferring ownership of an extension can be essential for various reasons, such as organizational changes, project handovers, or streamlining management processes.  Your Microsoft Edge extension can continue to thrive under new ownership without any disruptions.
 
-Transferring ownership of an extension is sometimes called _reparenting_ an extension.
-
 
 <!-- ---------------------------------------------------------------------- -->
 ## Initiating the ownership transfer request
@@ -22,13 +20,16 @@ The current owner of the extension must send an email, as follows:
 
 1. Start composing an email to [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com), with **Subject** line:
 
-   [Reparenting Request]: \<crx ID of the extension to be transferred\><!-- todo: define or expand crx -->
+   [Reparenting Request]: \<CRX ID of the extension to be transferred\>
+
+   Transferring ownership of an extension is sometimes called _reparenting_ an extension.
+
+   The CRX ID is a unique 32-character code which is the letters that are present at the end of your extension's URL.
 
 1. In the email body, include the following information:
    * The reason for transferring ownership.
-   * The name of the product.<!-- todo: of the extension? -->
+   * The name of the product (the extension).
    * The **StoreID**, which is found on the **Extensions Overview** page in Partner Center.
-   * The Microsoft account (MSA) App (client) ID.
    * The source publisher's seller ID and name (the current owner).
    * The target publisher's seller ID and name (the new owner).
    * The MSA email address for the source publisher extension owner (the current owner).
