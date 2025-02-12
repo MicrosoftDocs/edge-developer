@@ -143,7 +143,7 @@ To throttle the network while recording:
 
 1. Set **Network** to the desired level of throttling.
 
-<!-- todo: show or mention throttling warning icon -->
+   A warning icon is displayed on the **Network** tool's tab, to remind you that throttling is enabled.
 
 
 <!-- ------------------------------ -->
@@ -156,9 +156,7 @@ To throttle the CPU while recording:
 
 1. Set **CPU** to the desired level of throttling.
 
-<!-- todo: show or mention throttling warning icon -->
-
-<!-- https://microsoftedge.github.io/Demos/devtools-performance-get-started/ -->
+   A warning icon is displayed on the **Performance** tool's tab, to remind you that throttling is enabled.
 
 Throttling is relative to the capabilities of your computer.  For example, the **2x slowdown** option makes your CPU operate twice as slow than normal.  DevTools don't truly simulate the CPUs of mobile devices, because the architecture of mobile devices is very different from that of desktops and laptops.
 

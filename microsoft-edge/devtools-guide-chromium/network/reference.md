@@ -220,11 +220,19 @@ Emulate Slow 3G, Fast 3G, and other connection speeds from the **No throttling**
 
 The **Throttling** dropdown menu:
 
-![The Throttling dropdown menu](./reference-images/throttling-menu.png)<!-- todo: show or mention throttling warning icon -->
+![The Throttling dropdown menu](./reference-images/throttling-menu.png)
 
-You can choose from different presets, such as Slow 3G or Fast 3G.  To add your own custom presets, open the Throttling menu, and select **Custom** > **Add**.
+You can choose from different presets, such as:
+* **Fast 4G**
+* **Slow 4G**
+* **3G**
+* **Offline**
 
-DevTools displays a warning icon next to the **Network** tool to remind you that throttling is enabled.
+To add your own custom presets, click the **Throttling** menu, and then select **Custom** > **Add**.
+
+A warning icon is displayed on the **Network** tool's tab, to remind you that throttling is enabled:
+
+![The Throttled warning icon on the Network tab in the Activity Bar](./reference-images/throttled-icon.png)
 
 See also [Simulate a slower network connection](../network/index.md#simulate-a-slower-network-connection) in _Inspect network activity_.
 

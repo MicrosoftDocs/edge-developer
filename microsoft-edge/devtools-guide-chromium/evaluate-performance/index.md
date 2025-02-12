@@ -63,9 +63,11 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
 
-   ![CPU throttle](./index-images/capture-settings.png)<!-- todo: show or mention throttling warning icon -->
+   ![CPU throttle](./index-images/capture-settings.png)
 
-   If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.
+   A warning icon is displayed on the **Performance** tool's tab, to remind you that throttling is enabled.
+
+If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.
 
 
 <!-- ------------------------------ -->

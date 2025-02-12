@@ -284,18 +284,19 @@ To test how quickly your page loads and how it responds at different internet an
 
    If the **Throttle list** is hidden, widen the **Device Toolbar**.
 
-*  **Mid-tier mobile** simulates `fast 3G` and throttles your CPU.  It is four times slower than normal.
-*  **Low-end mobile** simulates `slow 3G` and throttles your CPU.  It is six times slower than normal.
+*  **Mid-tier mobile** simulates **CPU** throttling of **4x slowdown** and **Network** throttling of **Slow 4G**.  It is four times slower than normal.
+
+*  **Low-end mobile** simulates **CPU** throttling of **6x slowdown** and **Network** throttling of **3G**.  It is six times slower than normal.
 
 All of the throttling is based upon the normal capability of your laptop or desktop.
 
 
 <!-- ------------------------------ -->
-#### Performance tab has warning icon when throttled
+#### Network and Performance tabs have warning icon when throttled
 
-When throttling is enabled in **Device Emulation**, a warning icon is displayed in the **Performance** tab of the toolbar, to help you know that performance is impacted by throttling:
+When throttling is enabled in **Device Emulation**, a warning icon is displayed in the **Network** and **Performance** tool tabs on the **Activity Bar**, to help you know that performance is impacted by throttling:
 
-![Performance tab warning icon](./index-images/performance-warning-icon.png)
+![The Throttled warning icon on the Network and Performance tool tabs](./index-images/performance-warning-icon.png)
 
 
 <!-- ------------------------------ -->
