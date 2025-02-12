@@ -6,59 +6,55 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 06/26/2024
+ms.date: 02/11/2025
 ---
 # Contact the Microsoft Edge extensions team
-
-<!-- 
-existing h2 sections:
-
-Inquire about your extension's review status or certification status
-Learn about correct use of APIs
-Learn about submitting an extension
-Feature your extension in a collection
-Participate in the discussion forum
-Report copyright or trademark infringement
-
-h2 sections per draft outline (July 3 2024):
-
-Request help or submit feedback
-Report copyright or trademark infringement
-Log your tickets via Partner Center
-Connect with Community
--->
 
 You can contact the Microsoft Edge extensions support team to request help, submit feedback, or report a copyright or trademark infringement.
 
 
 <!-- ====================================================================== -->
-## Inquire about your extension's review status or certification status
+## Inquire about an extension's review status or certification status
 
-After submitting your extension via Partner Center, if you have questions regarding your extension's review status or certification status, use the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/new/choose) repo to enter a new Issue.
+For questions about a specific developer account, or questions about the review status or certification status of your extension after submitting the extension via Partner Center, email extensions developer support at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
 
+For questions about a specific developer account or the certification status of a specific extension, don't use the public **Issues** tab or the **Discussions** tab in the MicrosoftEdge-Extensions repo; use email instead.
 
-<!-- ====================================================================== -->
-## Learn about correct use of APIs
-
-If your extension isn't working with Microsoft Edge as you expect, or you have a question about how to develop an extension, see [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md) and [Port Chromium extensions to Microsoft Edge](../developer-guide/port-chrome-extension.md).
-
-
-<!-- ====================================================================== -->
-## Learn about submitting an extension
-
-If you have any issues while you submit your extension to Partner Center, see [Publish your extension](publish-extension.md).
+See also:
+* [Publish a Microsoft Edge extension](./publish-extension.md)
 
 
 <!-- ====================================================================== -->
-## Feature your extension in a collection
+## Send email to extensions developer support
 
-To feature your extension in a collection on the Microsoft Edge Add-ons website, see [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u) and complete the form.
+To discuss issues about a specific developer account or extension, you can privately contact extensions developer support at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
 
 
 <!-- ====================================================================== -->
-## MicrosoftEdge-Extensions discussion forum
+## Discussion forum in the MicrosoftEdge-Extensions repo
 
-Participate in the [Discussions](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) forum in the MicrosoftEdge-Extensions repo to flag any issues, raise a feature request, be a part of discussions, and share your ideas regarding the Microsoft Edge Extensions Store.
+Participate in the [Discussions](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) forum in the **MicrosoftEdge-Extensions** repo.  You can:
+* Discuss developing extensions.
+   * Share best practices with other developers on building, managing or acquiring more users for their browser extension.
+   * Connect with other extension developers about technical questions related to building Microsoft Edge add-ons.
+   * Share ideas about the Edge Add-ons website (the Edge extensions store).
+* Request a feature for extensions.
+   * Share inputs or suggestions to the Microsoft Edge add-ons engineering team.
+   * Discuss how to improve extension publishing, management and listing processes or workflows.
+   * Provide early feedback to the Microsoft Edge add-ons engineering team about new features for managing and publishing extensions.
+
+See also:
+* [README.md](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md) of the **MicrosoftEdge-Extensions** repo.
+
+
+<!-- ====================================================================== -->
+## Issues page in the MicrosoftEdge-Extensions repo
+
+To publicly report or discuss an issue about extensions, use the [Issues](https://github.com/microsoft/MicrosoftEdge-Extensions/issues) page in the **MicrosoftEdge-Extensions** repo.
+
+Use this **Issues** page for: 
+* Aspects of Microsoft Partner Center that affect all extension developers.
+* Aspects of the Edge Add-ons website that affect all extension developers or all Microsoft Edge extension users.
 
 
 <!-- ====================================================================== -->
@@ -68,7 +64,25 @@ If you think an item in the Microsoft Edge Add-ons website violates a copyright 
 
 
 <!-- ====================================================================== -->
-## See also
+## Feature an extension in a collection
 
-* [Microsoft Edge Insider](https://techcommunity.microsoft.com/t5/microsoft-edge-insider/ct-p/MicrosoftEdgeInsider) - forum about Microsoft Edge at Microsoft Tech Community.
-* [@MSEdgeDev](https://twitter.com/msedgedev/) - Microsoft Edge team on X (Twitter).
+To feature your extension in a collection on the Microsoft Edge Add-ons website, see [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u) and complete the form.
+
+
+<!-- ====================================================================== -->
+## Microsoft Edge Insider forum at Tech Community
+
+You can stay tuned to recent updates and announcements via the [Microsoft Edge Insider](https://techcommunity.microsoft.com/category/MicrosoftEdgeInsider) product community at Tech Community, or search there for [Edge extensions](https://techcommunity.microsoft.com/search?q=edge+extensions&location=category%3AMicrosoftEdgeInsider) or [Edge add-on](https://techcommunity.microsoft.com/search?q=edge+add-on&location=category%3AMicrosoftEdgeInsider).
+
+
+<!-- ====================================================================== -->
+## #EdgeExtensions at X (Twitter)
+
+You can follow what's happening with Microsoft Edge add-ons via [#EdgeExtensions at Twitter](https://x.com/search?q=%23EdgeExtensions&src=typed_query&f=live).
+
+
+<!-- ====================================================================== -->
+## Microsoft Edge team on X (Twitter)
+<!-- not specific to extensions -->
+
+For news and updates about developing for the web with Microsoft Edge, follow the [Microsoft Edge Dev (@MSEdgeDev)](https://x.com/msedgedev/) team on X (Twitter).
