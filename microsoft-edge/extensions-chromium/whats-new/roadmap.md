@@ -19,7 +19,7 @@ These are the next planned [Partner Center](https://partner.microsoft.com/dashbo
 
 As of September 6, 2024, both v1.1 and v1 of the Update REST API are supported.  Support for v1 will end on December 31, 2024.
 
-See [Using the REST API for updating Microsoft Edge Add-ons](../publish/api/using-addons-api.md).
+See [Using the REST API for updating Microsoft Edge Add-ons](../update/api/using-addons-api.md).
 
 
 <!-- ====================================================================== -->
