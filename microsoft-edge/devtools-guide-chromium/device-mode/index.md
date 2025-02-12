@@ -46,7 +46,7 @@ Use [Remote Debugging](../remote-debugging/index.md) to interact with the code o
    * [Zoom the viewport](#zoom-the-viewport)
    * [Capture a screenshot](#capture-a-screenshot)
 * [Throttle the network and CPU](#throttle-the-network-and-cpu)
-   * [Performance tab has warning icon when throttled](#performance-tab-has-warning-icon-when-throttled)
+   * [Network and Performance tabs have warning icon when throttled](#network-and-performance-tabs-have-warning-icon-when-throttled)
    * [Throttle the CPU only](#throttle-the-cpu-only)
    * [Throttle the network only](#throttle-the-network-only)
 * [Emulate sensors](#emulate-sensors)
