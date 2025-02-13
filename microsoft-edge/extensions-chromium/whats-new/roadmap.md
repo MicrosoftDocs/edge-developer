@@ -6,12 +6,20 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/14/2024
+ms.date: 02/10/2025
 ---
 # Roadmap for Microsoft Edge Add-ons
 <!-- https://aka.ms/EdgeAddonsRoadmap -->
 
 These are the next planned [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) features or updates for Microsoft Edge extensions.
+
+
+<!-- ====================================================================== -->
+## Deprecation of Native Client (NaCl)
+
+To enhance web security and performance, Native Client (NaCl) is deprecated for Microsoft Edge, along with other browsers.  WebAssembly (Wasm) is recommended instead of NaCl.
+
+See [Native Client (NaCl) (deprecated)](../developer-guide/run-compiled-code.md#native-client-nacl-deprecated) in _Run compiled code in an extension_.
 
 
 <!-- ====================================================================== -->
