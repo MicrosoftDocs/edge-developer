@@ -1,0 +1,249 @@
+---
+title: "Performance tool: Analyze your website's performance"
+description: Analyze your website's load and runtime performance.
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: conceptual
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 02/13/2025
+---
+<!-- Copyright Kayce Basques
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->
+<!-- https://developer.chrome.com/docs/devtools/performance/overview -->
+# Performance tool: Analyze your website's performance
+
+Use the **Performance** tool to analyze your website's performance.
+
+
+<!-- ====================================================================== -->
+## Overview
+
+The **Performance** tool lets you record CPU performance profiles of your web applications.  Analyze profiles to find potential performance bottlenecks and ways you can optimize resource use.
+
+Use the **Performance** tool to do the following:
+
+* Record a performance profile.
+* Change capture settings.
+* Analyze a performance report.
+
+For a comprehensive guide on improving your website's performance, see [Analyze runtime performance (tutorial)](./index.md).
+
+
+<!-- ====================================================================== -->
+## Open the Performance tool
+
+To open the **Performance** tool, open DevTools and select **Performance** from a set of tabs at the top.
+
+Alternatively, follow these steps to open the **Performance** tool with the **Command menu**:
+
+1. [Open DevTools](../overview.md#open-devtools).
+
+1. Open the **Command menu** by pressing:
+
+   * macOS: **Command+Shift+P**
+
+   * Windows, Linux, ChromeOS: **Control+Shift+P**
+
+   ![Command Menu with 'performance' entered](./performance-tool-overview-images/command-menu-performance.png)
+
+1. Start typing **performance**, select **Show Performance [panel]**, and then press **Enter**.
+
+
+<!-- ====================================================================== -->
+## Observe Core Web Vitals live
+
+When you open the **Performance** tool, it immediately captures and shows you your local [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) metrics tells you their score (good, needs improvement, or bad).
+
+If you interact with your page, the **Performance** tool also captures your local [Interaction to Next Paint (INP)](https://web.dev/articles/inp) and its score, which, in addition to LCP and CLS, gives you a complete overview of [Core Web Vitals](https://web.dev/articles/vitals) of your page using your network connection and device.
+
+![Observing the metrics](./performance-tool-overview-images/observe-metrics.png)
+<!-- /static/docs/devtools/performance/overview/video/observe-metrics.mp4 -->
+
+Under the three metric cards in the **Interactions** and **Layout shifts** tabs, you can find tables with information on captured interactions and layout shifts, including elements, timings, phases (for interactions), and scores (for layout shifts).  To clear both lists, click **Clear** (block-icon<!-- ![]() -->).
+
+To get a breakdown of a metric score, hover over the metric value to see a tooltip.
+
+
+<!-- ====================================================================== -->
+## Compare your experience to the experience of your users
+
+You can also fetch field data from the [Chrome UX Report](https://developer.chrome.com/docs/crux) and compare the experience of your site's users to your local metrics.
+
+To add field data:
+
+1. In **Performance** > **Next steps** > **Field data**, click **Set up**.
+
+   ![The 'Set up' button in the Next steps section](./performance-tool-overview-images/field-data-setup.png)
+
+1. In the **Configure field data fetching** dialog, note the **Privacy disclosure**, and click **Ok**.
+
+   <!-- expander section -->
+   Advanced: Set up a mapping between development and production environments:
+
+      Optionally, to automatically get the most relevant field data, you can set up (multiple) mappings between your development and production origins:
+      
+      1. In the dialog window, expand the **Advanced** section and click **+ New**.
+   
+      1. In the mapping table, enter your development and production URLs and click **+**.
+      
+      ![The mapping between a development and production origins in the advanced section](./performance-tool-overview-images/field-data-advanced-mapping.png)
+   
+      For example, a mapping of `http://localhost:8080` to `https://example.com` will bring up field data for `example.com/page1` when you navigate to `localhost:8080/page1`.
+      
+      Additionally, if for some reason you can't get the field data automatically, you can turn on (check_box icon) **Always show field data for the below URL** and provide a URL.  The **Performance** panel will attempt to fetch field data for this URL first and then show you this field data no matter what page you navigate to.
+      
+      To change your field data fetch settings after setup, click **Field data** > **Configure**.
+       
+   <!-- end expander section -->
+
+   With the field data fetch set up, the **Performance** panel now shows you a comparison between your local metric scores and those that your users experience.  You can see the collection period in the **Field data** section on the right.
+
+   ![The collection peried of field data after it has fetched](./performance-tool-overview-images/field-data-fetched.png)
+
+   To get a breakdown of a metric score, hover over the metric value to see a tooltip.
+
+
+<!-- ------------------------------ -->
+#### Configure your environment to better match that of your users
+
+With the field data fetch set up as described in the previous section, the **Performance** panel provides you with recommendations on how to configure your environment to better match the experience of your users.
+
+To configure your environment:
+
+1. In each metric card, expand the **Consider your local test conditions** section, if any, and read the recommendations.
+
+   ![The 'Consider your local test conditions' sections expanded in each metric card](./performance-tool-overview-images/env-recs.png)
+
+   Looks like in this example, to better match the experience of your users, you might want to use a common desktop screen size and throttle down the CPU and network.
+
+1. To match the environment configuration for this example:
+
+   1. Set your viewport to one of the common screen sizes (for example, 720p or 1080p). To emulate specific devices and screen sizes, you can use the [Device mode](https://developer.chrome.com/docs/devtools/device-mode) in the **Elements** tool.  See [Emulate mobile devices (Device Emulation)](../device-mode/index.md).<!-- todo: ok to change link 1 to link 2? -->
+
+   1. 82% users of the website in this example use desktops to browse. To make sure that you compare your local metric scores to the correct field data, you can select **Desktop** from the **Field data** > **Device** drop-down list.
+
+   1. In the **Environment settings** section, set the **Network** drop-down list to, for example, **Fast 4G**, and **CPU** to, for example, **20x slowdown**.  You may also make sure to select the **Disable network cache** checkbox in the same section.
+
+1. With your environment configured, reload the page, interact with it to capture your local INP, and compare the metric scores again.
+
+   ![The environment is configured to match the real-world user experience](./performance-tool-overview-images/env-config.png)
+
+   Looks like the metric scores are now more similar to those that your users experience. Accordingly, the **Consider your local test conditions** sections disappeared from the metric cards.
+
+With that, you can now start improving the [Core Web Vitals](https://web.dev/articles/vitals) of your website:
+
+* [Optimize LCP](https://web.dev/articles/optimize-lcp)
+* [Optimize INP](https://web.dev/articles/optimize-inp)
+* [Optimize CLS](https://web.dev/articles/optimize-cls)
+
+
+<!-- ====================================================================== -->
+## Capture and analyze a performance report
+
+In the next sections, follow guidance on how to record a profile, change capture settings, and analyze the report.
+
+
+<!-- ------------------------------ -->
+#### Record a performance profile
+
+When you are ready to record, the **Performance** tool gives you the following options:
+
+* [Record runtime performance](./reference.md#record-runtime-performance) in _Performance features reference_.
+* [Record load performance](./reference.md#record-load-performance) in _Performance features reference_.
+* [Capture screenshots while recording](./reference.md#capture-screenshots-while-recording) in _Performance features reference_.
+* [Force garbage collection while recording](./reference.md#force-garbage-collection-while-recording) in _Performance features reference_.
+* [Save a recording](./reference.md#save-a-recording) in _Performance features reference_.
+* [Load a recording](./reference.md#load-a-recording) in _Performance features reference_.
+* [Clear the previous recording](./reference.md#clear-the-previous-recording) in _Performance features reference_.
+
+
+<!-- ------------------------------ -->
+#### Change capture settings
+
+**Capture settings** let you change how DevTools captures performance recordings and can give you additional information in the report.  Click the **Capture settings** (![The Capture settings icon](./performance-tool-overview-images/capture-settings-icon.png)) button to access the **Capture settings** menu.
+
+Select the following options from the **Capture settings** menu:
+
+* [Disable JavaScript samples](https://developer.chrome.com/docs/devtools/performance/reference#disable-js-samples): Disables the recording of the JavaScript call stacks displayed in the Main track that are called during the recording.  Will reduce performance overhead.
+
+* [Enable advanced paint instrumentation (slow)](https://developer.chrome.com/docs/devtools/performance/reference#paint): Captures advanced paint instrumentation. Significantly hinders performance.
+
+* [Enable CSS selector stats (slow)](https://developer.chrome.com/blog/new-in-devtools-125#perf): Captures CSS selector statistics. Significantly hinders performance.
+
+* [CPU throttling](https://developer.chrome.com/docs/devtools/performance/reference#cpu-throttle): Simulate slower CPU speeds.
+
+* [Network throttling](https://developer.chrome.com/docs/devtools/performance/reference#network-throttle): Simulate slower network speeds.
+
+
+<!-- ------------------------------ -->
+#### Analyze a performance report
+
+See [Analyze a performance recording](https://developer.chrome.com/docs/devtools/performance/reference#analyze) for a complete guide on how to use the **Performance** tool.
+
+
+To navigate a performance report:
+
+* [Navigate the recording](https://developer.chrome.com/docs/devtools/performance/reference#navigate)
+* [Search activities](https://developer.chrome.com/docs/devtools/performance/reference#search)
+* [Track event initiators](https://developer.chrome.com/docs/devtools/performance/reference#event-initiators)
+
+
+To focus on what matters for your workflow:
+
+* [Change the order of tracks and hide them](https://developer.chrome.com/docs/devtools/performance/reference#track-config)
+* [Hide functions and their children in the flame chart](https://developer.chrome.com/docs/devtools/performance/reference#hide-func)
+* [Create breadcrumbs and jump between zoom levels](https://developer.chrome.com/docs/devtools/performance/reference#breadcrumbs)
+
+
+To learn about the **Bottom-up**, **Call tree**, and **Event log** tabs:
+
+* [View activities in a table](https://developer.chrome.com/docs/devtools/performance/reference#activities)
+
+
+To analyze a performance report:
+
+* [View main thread activity](https://developer.chrome.com/docs/devtools/performance/reference#main)
+* [Read the flame chart](https://developer.chrome.com/docs/devtools/performance/reference#flame-chart)
+* [View a screenshot](https://developer.chrome.com/docs/devtools/performance/reference#view-screenshot)
+* [View memory metrics](https://developer.chrome.com/docs/devtools/performance/reference#memory)
+* [View the duration of a portion of a recording](https://developer.chrome.com/docs/devtools/performance/reference#duration)
+* [Analyze CSS selector performance during Recalculate Style events](https://developer.chrome.com/docs/devtools/performance/selector-stats)
+* [Profile Node.js performance with the **Performance** tool](https://developer.chrome.com/docs/devtools/performance/nodejs)
+* [Analyze frames per second (FPS)](https://developer.chrome.com/docs/devtools/performance/reference#fps)
+* [Timeline event reference](https://developer.chrome.com/docs/devtools/performance/timeline-reference)
+
+
+<!-- ====================================================================== -->
+## Improve performance with these tools
+
+Discover other tools that can help you improve your website's performance:
+
+| Tool | Article |
+|---|---|
+| **Lighthouse** tool | [Optimize website speed using Lighthouse](../speed/get-started.md) |
+| **Memory** tool | [Fix memory problems](../memory-problems/index.md) |
+| **Performance** tool > **Insights** tab | * [Performance insights: Get actionable insights on your website's performance](https://developer.chrome.com/docs/devtools/performance-insights) |
+| **Rendering** tool | [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md) |
+| **Issues** tool | [Find and fix problems using the Issues tool](../issues/index.md) |
+| **Performance** tool | [View layers information](../evaluate-performance/reference.md#view-layers-information) in _Performance features reference_ |
+
+
+<!-- ====================================================================== -->
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). 
+> The original page is found [here](https://developer.chrome.com/docs/devtools/performance/overview) and is authored by Dale St. Marthe and Sofia Emelianova.
+
+[![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

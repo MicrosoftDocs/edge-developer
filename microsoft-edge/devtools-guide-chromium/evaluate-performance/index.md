@@ -1,12 +1,12 @@
 ---
-title: Introduction to the Performance tool
+title: Analyze runtime performance (tutorial)
 description: Tutorial about how to evaluate runtime performance in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 09/04/2023
+ms.date: 01/27/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,7 +21,7 @@ ms.date: 09/04/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Introduction to the Performance tool
+# Analyze runtime performance (tutorial)
 
 _Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
 
@@ -32,48 +32,91 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Get started
+## Open the Performance tool
 
-In the following tutorial, you open DevTools on a "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
+In the sections below, you open DevTools on the "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
 
-1. Open the [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo page in your InPrivate tab or window.  To do that, right-click the link and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down. For more information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
+1. Right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down.  See also [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
 
-   Source code: [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
+   If you want to view the source code for the demo, see [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
 
+1. Right-click the demo webpage and then select **Inspect**.
 
-   <!--TODO: replace section when updated for Chromium-based Edge  -->
-
-   <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
-
-1. Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS) to open DevTools:
+   DevTools opens:
 
    ![The demo on the left, and DevTools on the right](./index-images/get-started-side-by-side.png)
 
-For the rest of the screenshots, DevTools is shown [undocked to a separate window](../customize/placement.md).
+Most screenshots of the **Performance** tool show DevTools [undocked to a separate window](../customize/placement.md).
 
 
-<!-- ------------------------------ -->
-#### Simulate a mobile CPU
+<!-- ====================================================================== -->
+## View local and field metrics
 
+todo: provisionally added new section from https://developer.chrome.com/blog/new-in-devtools-130#live-metrics-recommendations
+
+The difference between the local and field metrics shows that most of your users might not experience your website under the same conditions as you do.  The **Environment settings** section gives you recommendations about simulating a slower CPU and network connection to better match with what your users experience.
+
+todo: steps to:
+1. Open the **Performance** tool.
+1. Show landing page of **Performance** tool.
+1. Explain what the local metrics are.  (Chrome docs calls them "live metrics", but the UI says "local metrics", which is better.)
+1. Display the field metrics as well: click **Set up** under the **Field data** section.
+
+Enabling field metrics changes the **Local metrics** section of the page to be **Local and field metrics**, and shows both the user's local metrics and metrics that were captured on real users' devices.
+
+Live metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.  For information about live metrics, see [Observe Core Web Vitals live](#observe-core-web-vitals-live), below.
+
+To get recommendations, first set up field data fetching from Chrome UX Report (CrUX).  To set up field data fetching, see [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users), below.  For information about Chrome UX Report (CrUX), see [Overview of CrUX](https://developer.chrome.com/docs/crux)<!-- todo: make present repo match linked content, update link -->.
+
+Then expand the **Consider your local test conditions** section in each metric card (if any) and **Consider real user environments** in the **Environment settings**.
+
+The expanded sections with recommendations:
+
+![Performance tool home page](./index-images/perf-home-page.png)
+
+The above screenshot of the **Performance** tool's **Local metrics** home page contains the sections:
+* **Largest Contentful Paint (LCP)**
+* **Cumulative Layout Shift (CLS)**
+* **Interaction to Next Paint (INP)**
+
+To approximate the experience of your users, follow the recommendations in [Configure your environment to better match that of your users](#configure-your-environment-to-better-match-that-of-your-users), below.
+
+
+<!-- ====================================================================== -->
+## Simulate a real user environment
+
+<!-- todo: also say this with the previous section [which may have moved to new Overview article]: -->
+<!-- added in this PR draft: -->
+The difference between the local and field metrics, as seen above, shows that most of your users might not experience your website under the same conditions as you do.  The **Environment settings** section gives you recommendations about simulating a slower CPU and network connection to better match with what your users experience.
+
+<!-- first para of live article: -->
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.
+
+1. Right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**.
+
+1. Right-click the demo webpage and then select **Inspect**.
+
+   DevTools opens:
+
+   ![The demo on the left, and DevTools on the right](./performance-tool-overview-images/get-started-side-by-side.png)
 
 1. In DevTools, open the **Performance** tool.
 
-1. Click **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)).  DevTools reveals settings related to how it captures performance metrics.
+1. Click **Capture settings** (![Capture settings](./performance-tool-overview-images/capture-settings-icon.png)).  DevTools reveals settings related to how it captures performance metrics.
 
 1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
 
-   ![CPU throttle](./index-images/capture-settings.png)
+   ![CPU throttle](./performance-tool-overview-images/capture-settings.png)
 
    A warning icon is displayed on the **Performance** tool's tab, to remind you that throttling is enabled.
 
 If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.
 
 
-<!-- ------------------------------ -->
-#### Set up the demo
+<!-- ====================================================================== -->
+## Set up the demo
 
-The following section lets you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions.
+In the following section, continuing from above, you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions.
 
 1. Click the **Add elements** button until the blue icons move noticeably slower than before.  On a high-end machine, you can click it about 20 times.
 
@@ -84,10 +127,12 @@ The following section lets you customize the demo to make sure that your experie
 1. Click **Slow**.  The blue icons move slower and with more sluggishness again.
 
 
-<!-- ------------------------------ -->
-#### Record runtime performance
+<!-- ====================================================================== -->
+## Record runtime performance
 
 When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the unoptimized version.
+
+Continuing from above:
 
 1. In DevTools, click **Record** (![Record](./index-images/record-icon.png)).  DevTools captures performance metrics as the page runs.
 
@@ -107,6 +152,8 @@ These performance results show an overwhelming amount of data, but it will all m
 
 Once you have a recording of the page's performance, you can assess the page's performance and find the cause of any performance issues.
 
+Continuing from above:
+
 1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
 
    ![The CPU chart and Summary panel](./index-images/cpu-chart.png)
@@ -116,10 +163,12 @@ Once you have a recording of the page's performance, you can assess the page's p
    ![Hover on a frame](./index-images/frame-hover.png)
 
 
-<!-- ------------------------------ -->
-#### Bonus: Open the Frame Rendering Stats overlay
+<!-- ====================================================================== -->
+## Open the Frame Rendering Stats overlay
 
 Another handy tool is the **Frame Rendering Stats** overlay, which provides real-time estimates for FPS as the page runs. The **Frame Rendering Stats** overlay is not required for this tutorial but may provide helpful insight.
+
+Continuing from above:
 
 1. In DevTools, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
@@ -132,10 +181,12 @@ Another handy tool is the **Frame Rendering Stats** overlay, which provides real
 1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
 
 
-<!-- ------------------------------ -->
-#### Find the bottleneck
+<!-- ====================================================================== -->
+## Find the bottleneck
 
 After you verified that the animation isn't performing well, the next step is to answer the question "why?"
+
+Continuing from above:
 
 1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
@@ -158,11 +209,11 @@ After you verified that the animation isn't performing well, the next step is to
    When a red triangle is displayed at the top right of an event, it's a warning that there might be an issue related to the event.  The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) is run.
 
    The **Summary** panel displays information about that event:
-	
-	![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
+
+   ![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
 
 1. Click the **Reveal** link.  DevTools highlights the event that initiated the **Animation Frame Fired** event.
-	
+
 1. Click the **app.js:125** link.  The relevant line of source code is displayed in the **Sources** tool.
 
 1. Zoom in on the **Animation Frame Fired** event and its child events, by using the mouse wheel or trackpad. Or, press **W**.
@@ -183,14 +234,14 @@ After you verified that the animation isn't performing well, the next step is to
    -->
 
 
-<!-- ------------------------------ -->
-#### Analyze the optimized version
+<!-- ====================================================================== -->
+## Analyze the optimized version
 
 Using the workflows and tools that you just learned, click **Optimized** on the demo webpage to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
 
-<!-- ------------------------------ -->
-#### Unoptimized version
+<!-- ====================================================================== -->
+## Unoptimized version
 
 Compare this snippet of JavaScript from the unoptimized version of the app:
 
@@ -229,8 +280,8 @@ After making sure that the icon is still within the bounds of the page, we set i
 Finally, we read `element.offsetTop` again, to adjust the direction of the icon.
 
 
-<!-- ------------------------------ -->
-#### Optimized version
+<!-- ====================================================================== -->
+## Optimized version
 
 The optimized code uses a different sequence of actions to do less work. Here is the same snippet of JavaScript from the optimized version of the app: 
 
@@ -293,7 +344,7 @@ There are many ways to improve runtime performance.  This article focused on one
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). 
-> The original page is found [here](https://developer.chrome.com/docs/devtools/evaluate-performance/) and is authored by Kayce Basques.
+> The original page is found [here](https://developer.chrome.com/docs/devtools/performance) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

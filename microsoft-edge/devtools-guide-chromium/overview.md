@@ -438,7 +438,7 @@ See [Inspect network activity](network/index.md).
 <!-- ------------------------------ -->
 #### Performance tool
 
-See [Introduction to the Performance tool](evaluate-performance/index.md).
+See [Analyze runtime performance (tutorial)](evaluate-performance/index.md).
 
 
 <!-- ------------------------------ -->

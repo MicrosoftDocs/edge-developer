@@ -304,7 +304,7 @@
           items:
             - name: About the list of tools
               href: ./devtools-guide-chromium/about-tools.md
-# Icon tools ==================================================================
+# Default tools ===============================================================
 # Inspect tool ----------------------------------------------------------------
             - name: Inspect tool
               items:
@@ -325,7 +325,6 @@
                 - name: Emulate and test other browsers  # orig: Emulate and Test Other Browsers (orphaned)
                   href: ./devtools-guide-chromium/device-mode/testing-other-browsers.md
                   displayName: Device Emulation, Device Emulator, Device Mode
-# Permanent tool tabs =========================================================
 # Elements tool ---------------------------------------------------------------
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
@@ -456,19 +455,91 @@
                 - name: Securely debug original code by using Azure Artifacts symbol server source maps
                   href: ./devtools-guide-chromium/javascript/consume-source-maps-from-azure.md
                   displayName: Sources tool, source maps, Azure Artifacts symbol server
-# Optional tool tabs ==========================================================
-# 3D View tool ----------------------------------------------------------------
-            - name: 3D View tool
+# Network tool ----------------------------------------------------------------
+            - name: Network tool
               items:
-                - name: Navigate webpage layers, z-index, and DOM using the 3D View tool
-                  href: ./devtools-guide-chromium/3d-view/index.md
-                  displayName: 3D View tool, composited layers
-# Animations tool -------------------------------------------------------------
-            - name: Animations tool
+                - name: Inspect network activity
+                  href: ./devtools-guide-chromium/network/index.md
+                  displayName: Network tool
+
+                - name: Network features reference
+                  href: ./devtools-guide-chromium/network/reference.md
+                  displayName: Network tool
+
+                - name: Network issues guide  # added article
+                  href: ./devtools-guide-chromium/network/issues.md
+                  displayName: Network tool
+
+                - name: View page resources
+                  href: ./devtools-guide-chromium/resources/index.md
+                  displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
+
+                - name: Service worker improvements  # added article
+                  href: ./devtools-guide-chromium/service-workers/index.md
+                  displayName: Network tool, Application tool, Sources tool
+# Performance tool ------------------------------------------------------------
+            - name: Performance tool
               items:
-                - name: Inspect and modify CSS animation effects
-                  href: ./devtools-guide-chromium/inspect-styles/animations.md
-                  displayName: Animations tool
+                - name: Analyze runtime performance (tutorial)
+                  href: ./devtools-guide-chromium/evaluate-performance/index.md
+                  displayName: Performance tool, Get started analyzing runtime performance  # old title
+
+                - name: Troubleshooting common performance issues
+                  href: ./devtools-guide-chromium/rendering-tools/index.md
+                  displayName: Performance tool, Analyze runtime performance  # old title
+
+                - name: Optimize website speed using Lighthouse
+                  href: ./devtools-guide-chromium/speed/get-started.md
+                  displayName: Performance tool, Lighthouse tool, Network tool
+
+                - name: Performance features reference
+                  href: ./devtools-guide-chromium/evaluate-performance/reference.md
+                  displayName: Performance tool, Rendering tool
+
+                - name: Performance recording event reference
+                  href: ./devtools-guide-chromium/evaluate-performance/performance-reference.md
+                  displayName: Performance tool
+
+                - name: Display original function names in performance profiles
+                  href: ./devtools-guide-chromium/evaluate-performance/unminify.md
+                  displayName: Performance tool
+
+                - name: Analyze CSS selector performance during Recalculate Style events
+                  href: ./devtools-guide-chromium/evaluate-performance/selector-stats.md
+                  displayName: Performance tool, css selector stats, css selectors, selector stats, selector statistics, css selector statistics
+# Memory tool -----------------------------------------------------------------
+            - name: Memory tool
+              items:
+                - name: Fix memory problems
+                  href: ./devtools-guide-chromium/memory-problems/index.md
+                  displayName: Memory tool
+
+                - name: Memory terminology
+                  href: ./devtools-guide-chromium/memory-problems/memory-101.md
+                  displayName: Memory tool
+
+                - name: Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
+                  href: ./devtools-guide-chromium/memory-problems/microsoft-edge-browser-task-manager.md
+
+                - name: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
+                  href: ./devtools-guide-chromium/memory-problems/heap-snapshots.md
+                  displayName: Memory tool 
+
+                - name: Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)
+                  href: ./devtools-guide-chromium/memory-problems/allocation-profiler.md
+                  displayName: Memory tool
+
+                - name: Speed up JavaScript runtime ("Allocation sampling" profiling type)
+                  href: ./devtools-guide-chromium/rendering-tools/js-runtime.md
+                  displayName: Memory tool
+
+                - name: Debug DOM memory leaks ("Detached elements" profiling type)
+                  href: ./devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements.md
+                  displayName: Memory tool
+
+                - name: The heap snapshot file format
+                  href: ./devtools-guide-chromium/memory-problems/heap-snapshot-schema.md
+                  displayName: Memory tool
 # Application tool ------------------------------------------------------------
             - name: Application tool, for storage and PWAs
               items:
@@ -519,6 +590,19 @@
                 - name: Debug background services
                   href: ./devtools-guide-chromium/javascript/background-services.md
                   displayName: Application tool
+# More tools ==================================================================
+# 3D View tool ----------------------------------------------------------------
+            - name: 3D View tool
+              items:
+                - name: Navigate webpage layers, z-index, and DOM using the 3D View tool
+                  href: ./devtools-guide-chromium/3d-view/index.md
+                  displayName: 3D View tool, composited layers
+# Animations tool -------------------------------------------------------------
+            - name: Animations tool
+              items:
+                - name: Inspect and modify CSS animation effects
+                  href: ./devtools-guide-chromium/inspect-styles/animations.md
+                  displayName: Animations tool
 # Changes tool ----------------------------------------------------------------
             - name: Changes tool
               items:
@@ -572,67 +656,12 @@
                 - name: View and debug media players information
                   href: ./devtools-guide-chromium/media-panel/index.md
                   displayName: Media tool
-# Memory tool -----------------------------------------------------------------
-            - name: Memory tool
-              items:
-                - name: Fix memory problems
-                  href: ./devtools-guide-chromium/memory-problems/index.md
-                  displayName: Memory tool
-
-                - name: Memory terminology
-                  href: ./devtools-guide-chromium/memory-problems/memory-101.md
-                  displayName: Memory tool
-
-                - name: Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
-                  href: ./devtools-guide-chromium/memory-problems/microsoft-edge-browser-task-manager.md
-
-                - name: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
-                  href: ./devtools-guide-chromium/memory-problems/heap-snapshots.md
-                  displayName: Memory tool 
-
-                - name: Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)
-                  href: ./devtools-guide-chromium/memory-problems/allocation-profiler.md
-                  displayName: Memory tool
-
-                - name: Speed up JavaScript runtime ("Allocation sampling" profiling type)
-                  href: ./devtools-guide-chromium/rendering-tools/js-runtime.md
-                  displayName: Memory tool
-
-                - name: Debug DOM memory leaks ("Detached elements" profiling type)
-                  href: ./devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements.md
-                  displayName: Memory tool
-
-                - name: The heap snapshot file format
-                  href: ./devtools-guide-chromium/memory-problems/heap-snapshot-schema.md
-                  displayName: Memory tool
 # Memory Inspector tool -------------------------------------------------------
             - name: Memory Inspector tool
               items:
                 - name: Inspect a JavaScript ArrayBuffer with the Memory Inspector tool  # real content pending
                   href: ./devtools-guide-chromium/memory-inspector/memory-inspector-tool.md
                   displayName: Memory Inspector tool
-# Network tool ----------------------------------------------------------------
-            - name: Network tool
-              items:
-                - name: Inspect network activity
-                  href: ./devtools-guide-chromium/network/index.md
-                  displayName: Network tool
-
-                - name: Network features reference
-                  href: ./devtools-guide-chromium/network/reference.md
-                  displayName: Network tool
-
-                - name: Network issues guide  # added article
-                  href: ./devtools-guide-chromium/network/issues.md
-                  displayName: Network tool
-
-                - name: View page resources
-                  href: ./devtools-guide-chromium/resources/index.md
-                  displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
-
-                - name: Service worker improvements  # added article
-                  href: ./devtools-guide-chromium/service-workers/index.md
-                  displayName: Network tool, Application tool, Sources tool
 # Network conditions tool -----------------------------------------------------
             - name: Network conditions tool
               items:
@@ -654,37 +683,6 @@
                 - name: Block network requests
                   href: ./devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
                   displayName: Network request blocking tool
-# Performance tool ------------------------------------------------------------
-            - name: Performance tool
-              items:
-                - name: Introduction to the Performance tool
-                  href: ./devtools-guide-chromium/evaluate-performance/index.md
-                  displayName: Performance tool, Get started analyzing runtime performance  # old title
-
-                - name: Troubleshooting common performance issues
-                  href: ./devtools-guide-chromium/rendering-tools/index.md
-                  displayName: Performance tool, Analyze runtime performance  # old title
-
-                - name: Optimize website speed using Lighthouse
-                  href: ./devtools-guide-chromium/speed/get-started.md
-                  displayName: Performance tool, Lighthouse tool, Network tool
-
-                - name: Performance features reference
-                  href: ./devtools-guide-chromium/evaluate-performance/reference.md
-                  displayName: Performance tool, Rendering tool
-
-                - name: Performance recording event reference
-                  href: ./devtools-guide-chromium/evaluate-performance/performance-reference.md
-                  displayName: Performance tool
-
-                - name: Display original function names in performance profiles
-                  href: ./devtools-guide-chromium/evaluate-performance/unminify.md
-                  displayName: Performance tool
-
-                - name: Analyze CSS selector performance during Recalculate Style events
-                  href: ./devtools-guide-chromium/evaluate-performance/selector-stats.md
-                  displayName: Performance tool, css selector stats, css selectors, selector stats, selector statistics, css selector statistics
-
 # Performance monitor tool ----------------------------------------------------
             - name: Performance monitor tool
               items:
