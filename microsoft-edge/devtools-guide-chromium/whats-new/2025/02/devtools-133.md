@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 133)
-description: "CSS selector costs include links in Insights sidebar. Right-click a tab to move it left or right in Quick View. Heap snapshot objects categorized by constructor names and source locations in Memory tool. And more."
+description: "Move a tab left or right within the Elements or Sources tool. Screen reader improvements. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,30 +14,51 @@ ms.date: 2/06/2025
 
 
 <!-- ====================================================================== -->
-## Move a tab left or right in the tab menus in Elements and Sources tools
+## Move a tab left or right within the Elements or Sources tool
 
-<!-- Subtitle: Move the tabs in Elements and Sources tab menus left or right by using the tab's right-click menu. -->
+<!-- Subtitle: Move a tab left or right within a tab group in the Elements or Sources tool by right-clicking the tab. -->
 
-Previously, you could rearrange the tabs in menus only by dragging them.  This can be difficult for users who are using input devices such as a trackball or head pointer.  Now, you can also move a tab left or right by right-clicking the tab and then selecting **Move left** or **Move right**:
+Previously, within the **Elements** tool and **Sources** tool, you could rearrange the tabs within a tab group only by dragging them.  This can be difficult when using a trackball or head pointer.  Now, you can also move a tab by right-clicking the tab and then selecting **Move left** or **Move right**:
 
-![The context menu from right-clicking a tab in a menu in Elements](./devtools-133-images/elements-tab-menu.png)
+Right-clicking a tab within the **Elements** tool:
 
-![The context menu from right-clicking a tab in a menu in Sources](./devtools-133-images/sources-tab-menu.png)
+![The right-click menu for a tab in the Elements tool](./devtools-133-images/elements-tab-menu.png)
+
+Right-clicking a tab within the **Sources** tool:
+
+![The right-click menu for a tab in the Sources tool](./devtools-133-images/sources-tab-menu.png)
+
 
 <!-- ====================================================================== -->
 ## Screen reader improvements
 
-<!-- Subtitle: Screen reader improvements in Developer resources, Elements, and CSS Overview.-->
+<!-- Subtitle: Screen reader improvements in Developer resources, Elements, and CSS overview.-->
 
-The screen reader has been improved for various tools:
-* **Developer resources**: When searching in 'Filter by URL and error' text box, it will announce the results information. If no results are available, then it will announce 'no appeared results'.
+The screen reader has been improved for various tools.
+
+
+<!-- ------------------------------ -->
+#### Developer resources tool
+
+In the **Developer resources** tool, after you search by using the **Filter by URL and error** text box, the screen reader announces the results information.  If no results are available, the screen reader announces **no appeared results**:<!-- todo: "no results appeared"? -->
+
 ![The Filter box in Developer resources](./devtools-133-images/developer-resources-filter-box.png)
 
-* **Elements**: Announces the expand/collapse state of the 'More tabs" button
-![The tab menu in Elements](./devtools-133-images/elements-more-tabs-invoked.png)
 
-* **CSS Overview**: When navigating to a tab, announces the tab label. After entering a tab and navigating to an 'occurrences' button', its label will be announced.
-![The CSS Overview panel](./devtools-133-images/css-overview.png)
+<!-- ------------------------------ -->
+#### Elements tool
+
+In the **Elements** tool, the screen reader announces the expanded or collapsed state of the **More tabs** button:
+
+![The More tabs menu in the Elements tool](./devtools-133-images/elements-more-tabs-invoked.png)
+
+
+<!-- ------------------------------ -->
+#### CSS overview tool
+
+In the **CSS overview** tool, when navigating to a tab, the screen reader announces the tab label.  After entering that tab and then navigating to an **occurrences** button, the screen reader announces the button's label, such as "two occurrences":
+
+![The CSS overview tool](./devtools-133-images/css-overview.png)
 
 
 <!-- ====================================================================== -->
@@ -55,12 +76,13 @@ Microsoft Edge 133 also includes the following updates from the Chromium project
    * [Stack traces of JavaScript calls in Summary](https://developer.chrome.com/blog/new-in-devtools-133#perf-stack-traces)
 * [Badge settings moved to menu in Elements](https://developer.chrome.com/blog/new-in-devtools-133#badge-settings)
  
+
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 132)](https://developer.chrome.com/blog/new-in-devtools-132) and is authored by Sofia Emelianova. -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 133)](https://developer.chrome.com/blog/new-in-devtools-133) and is authored by Sofia Emelianova. -->
 
 
 <!-- ====================================================================== -->
