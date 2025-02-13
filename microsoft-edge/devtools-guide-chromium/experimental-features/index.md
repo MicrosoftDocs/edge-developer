@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 01/16/2025
+ms.date: 02/13/2025
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -872,23 +872,6 @@ Status:
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Controls whether to show all events in the **Performance** tool.
-
-See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
-
-Status:
-* This checkbox is present in Microsoft Edge Canary 134.
-* This checkbox is present in Microsoft Edge Stable 132.
-
-
-<!-- ====================================================================== -->
-## Performance panel: V8 runtime call stats
-<!-- was:
-## Timeline: V8 Runtime Call Stats on Timeline
--->
-<!-- checkbox has no "(?)" link pointing to this anchor wording -->
-
-Controls whether to show V8 runtime call statistics in the **Performance** tool.  V8 is the JavaScript engine that's used by Microsoft Edge.
 
 See also:
 * [Introduction to the Performance tool](../evaluate-performance/index.md)
