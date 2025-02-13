@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 114)
-description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger Layout. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS Overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
+description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger Layout. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -110,19 +110,19 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Accessibility improvements for the CSS Overview tool
+## Accessibility improvements for the CSS overview tool
 
-<!-- Subtitle: The CSS Overview tool is now easier to use with assistive technology such as screen readers. -->
+<!-- Subtitle: The CSS overview tool is now easier to use with assistive technology such as screen readers. -->
 
-In Microsoft Edge 112, the **CSS Overview** tool was updated to display a list of non-simple selectors when taking an overview snapshot of a webpage's CSS.  In Microsoft Edge 114, the **Non-simple selectors** section of the **CSS Overview** tool is now easier to use with assistive technology, such as screen readers.
+In Microsoft Edge 112, the **CSS overview** tool was updated to display a list of non-simple selectors when taking an overview snapshot of a webpage's CSS.  In Microsoft Edge 114, the **Non-simple selectors** section of the **CSS overview** tool is now easier to use with assistive technology, such as screen readers.
 
 When you click a selector, or navigate to a selector and then press **Enter**, screen readers now announce "Copied CSS selector":
 
-![Navigating the CSS Overview tool with the keyboard](./devtools-114-images/non-simple-selectors-css-overview-a11y.png)
+![Navigating the CSS overview tool with the keyboard](./devtools-114-images/non-simple-selectors-css-overview-a11y.png)
 
 See also:
-* [CSS Overview tool displays non-simple selectors for quick performance gains](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains) in _What's New in DevTools (Microsoft Edge 112)_.
-* [Non-simple selectors](../../../css/css-overview-tool.md#non-simple-selectors) in _Optimize CSS styles with the CSS Overview tool_.
+* [CSS overview tool displays non-simple selectors for quick performance gains](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains) in _What's New in DevTools (Microsoft Edge 112)_.
+* [Non-simple selectors](../../../css/css-overview-tool.md#non-simple-selectors) in _Optimize CSS styles with the CSS overview tool_.
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 

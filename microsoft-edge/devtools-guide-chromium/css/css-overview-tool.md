@@ -1,6 +1,6 @@
 ---
-title: Optimize CSS styles with the CSS Overview tool
-description: The CSS Overview tool in Microsoft Edge DevTools.
+title: Optimize CSS styles with the CSS overview tool
+description: The CSS overview tool in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,27 +8,27 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/07/2022
 ---
-# Optimize CSS styles with the CSS Overview tool
+# Optimize CSS styles with the CSS overview tool
 
-The **CSS Overview** tool captures an overview of the CSS code used on a webpage and displays a report about the colors, fonts, and media-queries used. The tool also identifies potential color contrast issues and unused CSS declarations issues.
+The **CSS overview** tool captures an overview of the CSS code used on a webpage and displays a report about the colors, fonts, and media-queries used. The tool also identifies potential color contrast issues and unused CSS declarations issues.
 
 
 <!-- ====================================================================== -->
-## Open the CSS Overview tool
+## Open the CSS overview tool
 
-To open the **CSS Overview** tool:
+To open the **CSS overview** tool:
 
 1. Navigate to the [TODO list demo app](https://microsoftedge.github.io/Demos/demo-to-do/) in Microsoft Edge, or to your own webpage.
 
 1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In the main toolbar, click **More Tools** and select **CSS Overview** from the list.
+1. In the main toolbar, click **More Tools** and select **CSS overview** from the list.
 
    ![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the list of tools from the More Tools button](./css-overview-tool-images/css-overview-tool-open.png)
 
-1. The **CSS Overview** tool opens and shows a welcome screen.
+1. The **CSS overview** tool opens and shows a welcome screen.
 
-   ![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the CSS Overview welcome screen](./css-overview-tool-images/css-overview-tool-welcome.png)
+   ![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the CSS overview welcome screen](./css-overview-tool-images/css-overview-tool-welcome.png)
 
 
 <!-- ====================================================================== -->
@@ -36,11 +36,11 @@ To open the **CSS Overview** tool:
 
 Start using the tool by capturing a new report. Click **Capture overview**, the overview report appears.
 
-![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the CSS Overview report for that site](./css-overview-tool-images/css-overview-tool-report.png)
+![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing the CSS overview report for that site](./css-overview-tool-images/css-overview-tool-report.png)
 
 If you make changes to your webpage and want to view a new report, click **Clear overview** and then capture a new overview.
 
-![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing a CSS Overview report with the Clear overview button at the top](./css-overview-tool-images/css-overview-tool-clear.png)
+![Microsoft Edge, with the TODO list demo app, and DevTools next to it, showing a CSS overview report with the Clear overview button at the top](./css-overview-tool-images/css-overview-tool-clear.png)
 
 
 <!-- ====================================================================== -->
@@ -56,7 +56,7 @@ The CSS overview report contains information organized into several sections:
 
 To view the sections of the report, use the scrollbar or click the sections in the sidebar:
 
-![TODO demo app on the left, DevTools CSS Overview report on the right with a clickable list of sections and scrollbar](./css-overview-tool-images/css-overview-tool-scroll.png)
+![TODO demo app on the left, DevTools CSS overview report on the right with a clickable list of sections and scrollbar](./css-overview-tool-images/css-overview-tool-scroll.png)
 
 
 <!-- ------------------------------ -->
@@ -156,7 +156,7 @@ Non-simple selectors are more complicated and tend to match more elements, poten
 
 To see the list of non-simple selectors, on the overview report, click **Non-simple selectors** in the sidebar to scroll to the relevant section of the report:
 
-![The Non-simple selectors list in the CSS Overview tool](./css-overview-tool-images/non-simple-selectors-in-css-overview.png)
+![The Non-simple selectors list in the CSS overview tool](./css-overview-tool-images/non-simple-selectors-in-css-overview.png)
 
 From here, you can further analyze the impact of your changes and individual selector performance by using the **Selector Stats** feature in the **Performance** tool.
 
@@ -177,13 +177,13 @@ To find color contrast issues:
 
 1. Open DevTools by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In the main toolbar, click **More Tools** and select **CSS Overview** from the list.
+1. In the main toolbar, click **More Tools** and select **CSS overview** from the list.
 
-1. In the **CSS Overview** tool, click **Capture overview** and then click **Colors** in the overview report sidebar.
+1. In the **CSS overview** tool, click **Capture overview** and then click **Colors** in the overview report sidebar.
 
 1. Scroll down to the **Contrast issues** sub-section to view all issues.
 
-   ![Microsoft Edge, with the TODO list demo app and DevTools, showing a list of contrast issues in the CSS Overview report](./css-overview-tool-images/css-overview-tool-contrast-issues.png)
+   ![Microsoft Edge, with the TODO list demo app and DevTools, showing a list of contrast issues in the CSS overview report](./css-overview-tool-images/css-overview-tool-contrast-issues.png)
 
 1. To view the elements that have a particular color contrast issue, choose the issue you want to fix and click **Text**. The corresponding elements are listed.
 

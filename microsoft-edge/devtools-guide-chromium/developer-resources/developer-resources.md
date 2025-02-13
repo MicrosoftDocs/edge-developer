@@ -1,6 +1,6 @@
 ---
-title: Developer Resources tool
-description: The Developer Resources tool in Microsoft Edge DevTools.
+title: Developer resources tool
+description: The Developer resources tool in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,8 +8,8 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/15/2022
 ---
-# Developer Resources tool
+# Developer resources tool
 
-Use the **Developer Resources** tool to view resource URLs for the webpage.
+Use the **Developer resources** tool to view resource URLs for the webpage.
 
-![The Developer Resources tool](./developer-resources-images/developer-resources-tool.png)
+![The Developer resources tool](./developer-resources-images/developer-resources-tool.png)

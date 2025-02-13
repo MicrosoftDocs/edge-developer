@@ -112,7 +112,7 @@ April 26, 2023
 
 Covers:
 * Unminified JS names for OOPIFs in the **Performance** tool.
-* Non-simple CSS selectors in the **CSS Overview** tool.
+* Non-simple CSS selectors in the **CSS overview** tool.
 * Code folding in the JSON viewer.
 * Improvements in the DevTools UI.
 * New markers for logpoints and conditional breakpoints.
