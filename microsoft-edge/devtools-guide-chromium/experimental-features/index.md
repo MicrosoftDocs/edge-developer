@@ -504,7 +504,7 @@ Annotations in the **Performance** tool allow you to double-click any event that
 ![An annotation on an event in the Performance tool](./index-images/performance-panel-enable-annotations.png)
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 134.
@@ -523,7 +523,7 @@ In the **Performance** tool, adds a landing page that's displayed when no perfor
 * **Interaction to Next Paint (INP)**
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 134.
@@ -540,7 +540,7 @@ Shows a **Server Timings** track in the **Main** section of the **Performance** 
 <!-- todo old: desc -->
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
@@ -569,7 +569,7 @@ _new as of Microsoft Edge Stable 129_
 In the **Performance** tool, adds the **Insights** sidebar tab, when viewing a recorded performance profile.  The **Insights** sidebar tab provides useful information about the profile, such as the various **Largest Contentful Paint** phases and the list of **Render blocking requests**.
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 134.
@@ -588,7 +588,7 @@ Enables additional insights within the **Insights** side panel.
 To use this experiment, first select the **Performance panel: enable performance insights** checkbox, and then, if you want to see even more insights, also select the **Performance panel: enable experimental performance insights** checkbox.
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
@@ -608,7 +608,7 @@ This experiment changes the color of certain events in the main section of the *
 * When you use the **Insights** side-panel, and expand one of the insights, only the events that are related to that insight retain their coloring; the other events turn gray.
 
 See also: 
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
@@ -646,7 +646,7 @@ Adds a **Show shortcuts** (![Show shortcuts icon](./index-images/show-shortcuts-
    The list of keyboard shortcuts changes to relect Classic or Modern keyboard navigation of the timeline.
 
 See also: 
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
@@ -662,7 +662,7 @@ _new as of Microsoft Edge Canary 134_
 Includes a **Dim 3rd Parties** checkbox in the **Performance** tool to "dim" the performance events that come from third-party dependencies.  For example, if your code uses the React library, checking the **Dim 3rd Parties** checkbox greys-out and dims the React events in a profile.
 
 See also: 
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
@@ -837,7 +837,7 @@ Status:
 Controls whether to show the sampling heap profiler timeline in the **Performance** tool.
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../memory-problems/heap-snapshots.md)
 
 Status:
@@ -857,7 +857,7 @@ Adds an **Invalidations** section for **Recalculate Style** events in the **Summ
 The **Invalidations** section lists the DOM nodes that were invalidated as a result of a change on the webpage, such as a DOM mutation, and which the browser engine had to restyle during the **Recalculate Style** event.
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
@@ -874,7 +874,7 @@ Status:
 Controls whether to show all events in the **Performance** tool.
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.
@@ -891,7 +891,7 @@ Status:
 Controls whether to show V8 runtime call statistics in the **Performance** tool.  V8 is the JavaScript engine that's used by Microsoft Edge.
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../evaluate-performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 134.

@@ -25,7 +25,7 @@ ms.date: 04/15/2024
 
 This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
-For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Introduction to the Performance tool](index.md).
+For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Analyze runtime performance (tutorial)](index.md).
 
 The images in this page show DevTools undocked into its own, dedicated window. To learn more about undocking DevTools, see [Undock DevTools into a separate window](../customize/placement.md#undock-devtools-into-a-separate-window) in _Change DevTools placement (Undock, Dock to bottom, Dock to left)_.
 

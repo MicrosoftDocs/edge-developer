@@ -75,7 +75,7 @@ See also:
 WebSocket activities have been added to the **Network** track in the **Performance** tool, to help correlate JavaScript activity with WebSocket messages.  This can help identify whether latency issues are coming from the client's parsing of a message, or from the server's response.
 
 See also:
-* [Introduction to the Performance tool](../../../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../../../evaluate-performance/index.md)
 
 
 <!-- ====================================================================== -->
