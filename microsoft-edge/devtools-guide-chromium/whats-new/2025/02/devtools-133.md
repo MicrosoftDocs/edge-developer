@@ -18,7 +18,7 @@ ms.date: 2/06/2025
 
 <!-- Subtitle: Move a tab left or right within a tab group in the Elements or Sources tool by right-clicking the tab. -->
 
-Previously, within the **Elements** tool and **Sources** tool, you could rearrange the tabs within a tab group only by dragging them.  This can be difficult when using a trackball or head pointer.  Now, you can also move a tab by right-clicking the tab and then selecting **Move left** or **Move right**:
+Previously, within the **Elements** tool and **Sources** tool, you could rearrange the tabs within a tab group only by dragging them.  This can be difficult when using a trackball or head pointer.  Now, you can also move a tab by right-clicking the tab and then selecting **Move left** or **Move right**.
 
 Right-clicking a tab within the **Elements** tool:
 
@@ -48,9 +48,9 @@ In the **Developer resources** tool, after you search by using the **Filter by U
 <!-- ------------------------------ -->
 #### Elements tool
 
-In the **Elements** tool, the screen reader announces the expanded or collapsed state of the **More tabs** button:
+In the **Elements** tool, the screen reader announces the expanded or collapsed state of the **More tabs** button and tab group, shown here in the expanded state:
 
-![The More tabs menu in the Elements tool](./devtools-133-images/elements-more-tabs-invoked.png)
+![The More tabs button in the Elements tool, with the tab group expanded](./devtools-133-images/elements-more-tabs-invoked.png)
 
 
 <!-- ------------------------------ -->
