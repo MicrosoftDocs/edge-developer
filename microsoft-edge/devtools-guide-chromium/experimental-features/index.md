@@ -881,6 +881,12 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 132.
 
 
+<!-- ====================================================================== --
+## Performance panel: V8 runtime call stats -->
+<!-- checkbox has no "(?)" link pointing to this anchor wording -->
+<!-- checkbox will be removed, has no effect; after that, remove this section -->
+
+
 <!-- ====================================================================== -->
 ## Performance panel: Enable collecting enhanced traces
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
