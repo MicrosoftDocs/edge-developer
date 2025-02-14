@@ -6,12 +6,20 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 06/23/2023
+ms.date: 02/05/2025
 ---
 # Released features for Microsoft Edge Add-ons
 <!-- https://aka.ms/EdgeAddonsReleaseNotes -->
 
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
+
+
+<!-- ====================================================================== -->
+## Transfer ownership of a Microsoft Edge extension
+
+As an extension developer, you can now seamlessly transfer ownership of your Microsoft Edge extension to another party, such as for organizational changes, project handovers, or streamlining management processes.  See [Transfer ownership of an extension](../update/transfer-ownership.md).
+
+*Released February 2025*
 
 
 <!-- ====================================================================== -->
@@ -43,7 +51,7 @@ To share your feedback and comments about this feature, see [You can now respond
 <!-- ====================================================================== -->
 ## Publish updates of extensions using the Microsoft Edge Add-ons API
 
-You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. For more information, see [Using the REST API for updating Microsoft Edge Add-ons](../publish/api/using-addons-api.md).
+You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. For more information, see [Using the REST API for updating Microsoft Edge Add-ons](../update/api/using-addons-api.md).
 
 *Released March 2022*
 

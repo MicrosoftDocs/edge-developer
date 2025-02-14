@@ -28,7 +28,7 @@ Extensions that aren't loaded from the Edge Add-ons store are referred to as _ex
 These approaches are described below.
 
 See also:
-* [Set an externally installed extension to automatically update](../publish/auto-update.md)
+* [Set an externally installed extension to automatically update](../update/auto-update.md)
 
 
 <!-- ====================================================================== -->
@@ -154,7 +154,7 @@ To update your extension to a new version, update the `version` string in the ex
 You may need to uninstall externally installed extensions, which were installed as part of a bundle of software that was previously installed on the machine.  To uninstall your extension, remove your preferences JSON file or remove the key from the registry.
 
 See also:
-* [Set an externally installed extension to automatically update](../publish/auto-update.md)
+* [Set an externally installed extension to automatically update](../update/auto-update.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
 
 
@@ -170,7 +170,7 @@ If the `BlockExternalExtensions` policy is set to `Not Configured` or `Disabled`
 ## See also
 <!-- all links in article -->
 
-* [Set an externally installed extension to automatically update](../publish/auto-update.md)
+* [Set an externally installed extension to automatically update](../update/auto-update.md)
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
 
 Microsoft Edge Enterprise docs:
