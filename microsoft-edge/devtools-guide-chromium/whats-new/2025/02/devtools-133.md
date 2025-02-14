@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 2/06/2025
+ms.date: 02/06/2025
 ---
 # What's New in DevTools (Microsoft Edge 133)
 
@@ -18,7 +18,7 @@ ms.date: 2/06/2025
 
 <!-- Subtitle: Move a tab left or right within a tab group in the Elements or Sources tool by right-clicking the tab. -->
 
-Previously, within the **Elements** tool and **Sources** tool, you could rearrange the tabs within a tab group only by dragging them.  This can be difficult when using a trackball or head pointer.  Now, you can also move a tab by right-clicking the tab and then selecting **Move left** or **Move right**.
+Previously, within the **Elements** tool and **Sources** tool, you could rearrange the tabs within a tab group only by dragging them.  Dragging a tab can be difficult when using a trackball, head pointer, or keyboard.  Now, you can also move a tab by right-clicking the tab (or pressing the **Context menu** key) and then selecting **Move left** or **Move right**.
 
 Right-clicking a tab within the **Elements** tool:
 
@@ -30,17 +30,17 @@ Right-clicking a tab within the **Sources** tool:
 
 
 <!-- ====================================================================== -->
-## Screen reader improvements
+## Screen reader support improvements
 
-<!-- Subtitle: Screen reader improvements in Developer resources, Elements, and CSS overview.-->
+<!-- Subtitle: Screen reader support improvements in Developer resources, Elements, and CSS overview.-->
 
-The screen reader has been improved for various tools.
+Support for screen readers has been improved for various tools.
 
 
 <!-- ------------------------------ -->
 #### Developer resources tool
 
-In the **Developer resources** tool, after you search by using the **Filter by URL and error** text box, the screen reader announces the results information.  If no results are available, the screen reader announces **no appeared results**:<!-- todo: "no results appeared"? -->
+In the **Developer resources** tool, after you search by using the **Filter by URL and error** text box, screen readers announce the results information.  If no results are available, screen readers announce **no appeared results**:<!-- todo: "no results appeared"? -->
 
 ![The Filter box in Developer resources](./devtools-133-images/developer-resources-filter-box.png)
 
@@ -48,7 +48,7 @@ In the **Developer resources** tool, after you search by using the **Filter by U
 <!-- ------------------------------ -->
 #### Elements tool
 
-In the **Elements** tool, the screen reader announces the expanded or collapsed state of the **More tabs** button and tab group, shown here in the expanded state:
+In the **Elements** tool, screen readers announce the expanded or collapsed state of the **More tabs** button and tab group, shown here in the expanded state:
 
 ![The More tabs button in the Elements tool, with the tab group expanded](./devtools-133-images/elements-more-tabs-invoked.png)
 
@@ -56,7 +56,7 @@ In the **Elements** tool, the screen reader announces the expanded or collapsed 
 <!-- ------------------------------ -->
 #### CSS overview tool
 
-In the **CSS overview** tool, when navigating to a tab, the screen reader announces the tab label.  After entering that tab and then navigating to an **occurrences** button, the screen reader announces the button's label, such as "two occurrences":
+In the **CSS overview** tool, when navigating to a tab, screen readers announce the tab label.  After entering that tab and then navigating to an **occurrences** button, screen readers announce the button's label, such as "Two occurrences":
 
 ![The CSS overview tool](./devtools-133-images/css-overview.png)
 
