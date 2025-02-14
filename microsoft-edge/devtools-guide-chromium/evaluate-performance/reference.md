@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/15/2024
+ms.date: 02/13/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -202,7 +202,17 @@ After you [record runtime performance](#record-runtime-performance) or [record l
 
 
 <!-- ------------------------------ -->
+#### Navigate the recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#navigate -->
+
+To closely inspect your performance recording, you can select a portion of a recording, scroll a long flame chart, zoom in and out, and use breadcrumbs to jump between zoom levels.
+
+
+<!-- ------------------------------ -->
 #### Select a portion of a recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#select -->
+
+Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
 
 You can select a portion of a recording by using a mouse, keyboard, or trackpad.
 
@@ -234,6 +244,31 @@ To select a portion of a recording by using a trackpad:
 1. Hover over the **Overview** section or the **Details** section.  The **Overview** section is the area containing the **FPS**, **CPU**, and **NET** charts.  The **Details** section is the area containing the **Main** section and the **Interactions** section.
 
 1. Using two fingers, swipe up to zoom out, or down to zoom in.  Using two fingers, swipe left to move left, or right to move right.
+
+
+<!-- ------------------------------ -->
+#### Create breadcrumbs and jump between zoom levels
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#breadcrumbs -->
+
+<!-- todo: copy from PR https://github.com/MicrosoftDocs/edge-developer/pull/3351 -->
+
+
+The **Timeline** overview lets you create multiple nested breadcrumbs in succession, increasing zoom levels, and then jump freely between zoom levels.
+
+To create and use breadcrumbs:
+
+1. In **Timeline overview**, select a portion of the recording.
+
+1. Hover over the selection and click the N ms zoom_in button. The selection expands to fill the Timeline overview. A chain of breadcrumbs starts building at top of the Timeline overview.
+
+1. Repeat the previous two steps to create another nested breadcrumb. You can continue to nest breadcrumbs as long as the selection range is greater than 5 milliseconds.
+
+1. To jump to a chosen zoom level, click the corresponding breadcrumb in the chain at top of the Timeline overview.
+
+To remove the childs of a breadcrumb, right-click the parent breadcrumb and select **Remove child breadcrumbs**.
+
+Scroll a long flame chart
+To scroll a long flame chart in the Main track or any of its neighbors, click and hold, then drag in any direction until what you are looking for comes into view.
 
 
 <!-- ------------------------------ -->
@@ -269,6 +304,25 @@ To hide the search box, click the **Cancel** button.
 
 
 <!-- ------------------------------ -->
+#### Change the order of tracks and hide them
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#track-config -->
+
+To declutter the performance trace, you can change the order of tracks and hide the irrelevant ones in track configuration mode.
+
+To move and hide tracks:
+
+1. To enter the configuration mode, right-click a track name and then select **Configure tracks**.
+
+1. Click the **Move track up** (![The Move track up icon](./reference-images/move-track-up-icon.png)) button or the **Move track down** (![The Move track down icon](./reference-images/move-track-down-icon.png)) button to move a track up or down.  Click the **Hide track** (![The Hide track icon](./reference-images/hide-track-icon.png)) button to hide it.
+
+1. When finished, click **Finish configuring** tracks at the bottom to exit the configuration mode.
+
+<!-- Watch the video to see this workflow in action. -->
+
+The **Performance** tool saves track configuration for new traces but not in next DevTools sessions.
+
+
+<!-- ------------------------------ -->
 #### View main thread activity
 
 Use the **Main** section to view the activity that occurred on the main thread of the page:
@@ -290,6 +344,69 @@ DevTools assigns scripts random colors.  In the previous figure, function reques
 If you want to hide the detailed flame chart of JavaScript requests, see [Disable JavaScript samples](#disable-javascript-samples), above.
 When JavaScript samples are disabled, only high-level events are displayed, such as `Event: input` and `Function Call` from the previous figure.
 <!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53) from Figure 16.-->
+
+
+<!-- ------------------------------ -->
+#### Read the flame chart
+
+
+
+<!-- ------------------------------ -->
+#### Track event initiators
+
+The **Main** track can show arrows that connect the following initiators and the events they caused:
+
+* Style or layout invalidation -> **Recalculate styles** or **Layout**
+* **Request Animation Frame** -> **Animation Frame Fired**
+* **Request Idle Callback** -> **Fire Idle Callback**
+* **Install Timer** -> **Timer Fired**
+* **Create WebSocket** -> **Send...** and **Receive WebSocket Handshake** or **Destroy WebSocket**
+* **Schedule postTask** -> **Fire postTask** or **Abort postTask**
+
+To see the arrows, find either an initiator or the event it caused in the flame chart and select it.
+
+<!-- ![An arrow from the request to the firing of an idle callback](todo) -->
+
+When selected, the **Summary** tab shows **Initiator for** links for initiators and **Initiated by** links for the events they caused. Click them to jump between the corresponding events.
+
+<!-- ![The 'Initiator for' link in the Summary tab](todo) -->
+
+
+<!-- ------------------------------ -->
+#### Hide functions and their children in the flame chart
+
+To declutter the flame chart in the **Main** thread, you can hide selected functions or their children:
+
+1. In the **Main** track, right-click a function and choose one of the following options or press the corresponding shortcut:
+
+   * **Hide function** (**H**)
+   * **Hide children** (**C**)
+   * **Hide repeating children** (**R**)
+   * **Reset children** (**U**)
+   * **Reset trace** (**T**)
+   * **Add script to ignore list** (**I**)
+
+   <!-- ![The context menu with options to hide the selected function or its children](todo) -->
+
+   A **number hidden** drop-down (![The number hidden drop-down](./reference-images/number-hidden-drop-down-arrow.png)) button appears next to the function name with hidden children.
+
+1. To see the number of hidden children, hover over the **number hidden** drop-down (![The number hidden drop-down](./reference-images/number-hidden-drop-down-arrow.png)) button.
+
+   <!-- ![The tooltip over the drop-down button with the number of hidden children](todo) -->
+
+1. To reset a function with hidden children or the whole flame chart, select the function and press **U** or right-click any function and select **Reset trace** respectively.
+
+
+<!-- ---------- -->
+###### Ignore scripts in the flame chart
+
+To add a script to the ignore list, right-click a script in the chart and select **Add script to ignore list**.
+
+   <!-- ![The context menu with the ignore script option focused](todo) -->
+
+The chart collapses ignored scripts, marks them as **On ignore list**, and adds them to the **Custom exclusion** rules in **Customize and control DevTools** (![The Customize and control DevTools icon](./reference-images/customize-and-control-devtools-icon.png)) > **Settings** > **Ignore list**.  Ignored scripts are saved until you remove them either from the trace or from the **Custom exclusion rules**.
+
+   <!-- ![The ignore script list tab in Settings](todo) -->
 
 
 <!-- ------------------------------ -->

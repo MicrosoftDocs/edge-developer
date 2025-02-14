@@ -130,9 +130,9 @@ To configure your environment:
 
 1. To match the environment configuration for this example:
 
-   1. Set your viewport to one of the common screen sizes (for example, 720p or 1080p). To emulate specific devices and screen sizes, you can use the [Device mode](https://developer.chrome.com/docs/devtools/device-mode) in the **Elements** tool.  See [Emulate mobile devices (Device Emulation)](../device-mode/index.md).<!-- todo: ok to change link 1 to link 2? -->
+   1. Set your viewport to one of the common screen sizes (for example, 720p or 1080p). To emulate specific devices and screen sizes, you can use device emulation in the **Elements** tool; see [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
 
-   1. 82% users of the website in this example use desktops to browse. To make sure that you compare your local metric scores to the correct field data, you can select **Desktop** from the **Field data** > **Device** drop-down list.
+   1. 82% users of the website in this example use desktops to browse.  To make sure that you compare your local metric scores to the correct field data, you can select **Desktop** from the **Field data** > **Device** drop-down list.
 
    1. In the **Environment settings** section, set the **Network** drop-down list to, for example, **Fast 4G**, and **CPU** to, for example, **20x slowdown**.  You may also make sure to select the **Disable network cache** checkbox in the same section.
 
@@ -176,34 +176,39 @@ When you are ready to record, the **Performance** tool gives you the following o
 
 Select the following options from the **Capture settings** menu:
 
-* [Disable JavaScript samples](https://developer.chrome.com/docs/devtools/performance/reference#disable-js-samples): Disables the recording of the JavaScript call stacks displayed in the Main track that are called during the recording.  Will reduce performance overhead.
+* Select the **Disable JavaScript samples** checkbox:  Disables the recording of the JavaScript call stacks displayed in the Main track that are called during the recording.  Reduces performance overhead.  See [Disable JavaScript samples](../evaluate-performance/reference.md#disable-javascript-samples) in _Performance features reference_.
 
-* [Enable advanced paint instrumentation (slow)](https://developer.chrome.com/docs/devtools/performance/reference#paint): Captures advanced paint instrumentation. Significantly hinders performance.
+* Select the **Enable advanced rendering instrumentation (slow)** checkbox:  Captures advanced paint instrumentation.  Significantly hinders performance.  See [Turn on advanced rendering instrumentation](../evaluate-performance/reference.md#turn-on-advanced-rendering-instrumentation) in _Performance features reference_.
 
-* [Enable CSS selector stats (slow)](https://developer.chrome.com/blog/new-in-devtools-125#perf): Captures CSS selector statistics. Significantly hinders performance.
+* Select the **Enable CSS selector stats (slow)** checkbox: Captures CSS selector statistics.  Significantly hinders performance.  See [View CSS selector costs in the Performance tool sidebar](../whats-new/2024/11/devtools-131.md#view-css-selector-costs-in-the-performance-tool-sidebar) in _What's New in DevTools (Microsoft Edge 131)_.
 
-* [CPU throttling](https://developer.chrome.com/docs/devtools/performance/reference#cpu-throttle): Simulate slower CPU speeds.
+* CPU throttling: Simulate slower CPU speeds.  See [Throttle the CPU while recording](../evaluate-performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.  
 
-* [Network throttling](https://developer.chrome.com/docs/devtools/performance/reference#network-throttle): Simulate slower network speeds.
+* Network throttling: Simulate slower network speeds.  See [Throttle the network while recording](../evaluate-performance/reference.md#throttle-the-network-while-recording) in _Performance features reference_.
 
 
 <!-- ------------------------------ -->
 #### Analyze a performance report
 
-See [Analyze a performance recording](https://developer.chrome.com/docs/devtools/performance/reference#analyze) for a complete guide on how to use the **Performance** tool.
+For a complete guide on how to use the **Performance** tool, see [Analyze a performance recording](../evaluate-performance/reference.md#analyze-a-performance-recording) in _Performance features reference_.
 
 
 To navigate a performance report:
 
-* [Navigate the recording](https://developer.chrome.com/docs/devtools/performance/reference#navigate)
-* [Search activities](https://developer.chrome.com/docs/devtools/performance/reference#search)
-* [Track event initiators](https://developer.chrome.com/docs/devtools/performance/reference#event-initiators)
+* See [Navigate the recording](../evaluate-performance/reference.md#navigate-the-recording) in _Performance features reference_.
+
+* See [Search activities](../evaluate-performance/reference.md#search-activities) in _Performance features reference_.
+
+* See [Track event initiators](../evaluate-performance/reference.md#track-event-initiators) in _Performance features reference_.
 
 
 To focus on what matters for your workflow:
 
-* [Change the order of tracks and hide them](https://developer.chrome.com/docs/devtools/performance/reference#track-config)
-* [Hide functions and their children in the flame chart](https://developer.chrome.com/docs/devtools/performance/reference#hide-func)
+* [Change the order of tracks and hide them](../evaluate-performance/reference.md#change-the-order-of-tracks-and-hide-them)
+
+* [Hide functions and their children in the flame chart](../evaluate-performance/reference.md#hide-functions-and-their-children-in-the-flame-chart)
+
+<!-- todo: resume here: 9x left to convert: https://developer.chrome.com/docs/devtools/performance/reference# -->
 * [Create breadcrumbs and jump between zoom levels](https://developer.chrome.com/docs/devtools/performance/reference#breadcrumbs)
 
 
