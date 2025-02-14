@@ -22,6 +22,7 @@ ms.date: 02/13/2025
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Performance features reference
+<!-- https://developer.chrome.com/docs/devtools/performance/reference -->
 
 This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
