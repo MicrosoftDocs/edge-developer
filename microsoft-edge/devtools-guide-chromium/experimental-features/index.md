@@ -10,8 +10,6 @@ ms.date: 02/06/2025
 ---
 # Experimental features in Microsoft Edge DevTools
 
-<!-- todo: find "not present", dbl-check -->
-
 <!-- 
 Policies to keep this page comprehensive and maintainable:
 
