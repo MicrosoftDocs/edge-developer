@@ -18,13 +18,13 @@ See:
 
 
 <!-- ====================================================================== -->
-## Native Client (NaCl) (deprecated)
-<!-- sections that point to here:
-* [Deprecation of Native Client (NaCl)](../whats-new/roadmap.md#deprecation-of-native-client-nacl) in _Roadmap for Microsoft Edge Add-ons_.
-* "Native Client (NaCl)" table row in [Latest versions](../../web-platform/site-impacting-changes?tabs=latest#high-impact-changes) in _Site compatibility-impacting changes coming to Microsoft Edge_.
+## Native Client (NaCl) no longer supported
+<!-- sections that point to this article because of this section:
+* [Native Client (NaCl) no longer supported](../whats-new/roadmap.md#native-client-nacl-no-longer-supported) in _Roadmap for Microsoft Edge Add-ons_.
+* "Removal of Native Client (NaCl)" table row in [Earlier versions](../../web-platform/site-impacting-changes?tabs=earlier#high-impact-changes) in _Site compatibility-impacting changes coming to Microsoft Edge_.
 -->
 
-To enhance web security and performance, Native Client (NaCl) is deprecated for Microsoft Edge, along with other browsers.  NaCl was deprecated (discouraged but still supported) starting in 2020.  Support for NaCl will be discontinued starting with Microsoft Edge 138.
+To enhance web security and performance, Native Client (NaCl) is no longer supported by Microsoft Edge (along with other browsers).  Native Client (NaCl) was supported through Edge version 115.  In 116 to 119, NaCl was only usable by enabling an enterprise policy.  Starting with 120 (December 2023), support for NaCl was completely removed.
 
 NaCl is a sandbox for running compiled C and C++ code in browsers efficiently and securely, independently of the user's operating system.  WebAssembly (Wasm) is recommended instead of NaCl.
 
@@ -36,20 +36,3 @@ To Run compiled code in an extension, we recommend using WebAssembly instead of 
 * [WebAssembly Migration Guide](https://developer.chrome.com/docs/native-client/migration) in Chrome docs.
 * [WebAssembly](https://developer.mozilla.org/docs/WebAssembly) at MDN.
 * [webassembly.org](https://webassembly.org)
-
-
-<!-- ====================================================================== -->
-<!-- ## See also -->
-<!-- all links in article -->
-<!-- up to date 2025/02/06 but commented out b/c not needed unless article is longer -->
-
-<!-- 
-WebAssembly (Wasm):
-* [WebAssembly](https://developer.mozilla.org/docs/WebAssembly) at MDN.
-* [WebAssembly Migration Guide](https://developer.chrome.com/docs/native-client/migration) in Chrome docs.
-* [webassembly.org](https://webassembly.org)
-
-Native Client (NaCl):
-* [Manifest - Nacl Modules](https://developer.chrome.com/docs/extensions/mv2/manifest/nacl-modules) in Chrome docs.
-* [Native Client](https://developer.chrome.com/docs/native-client) - deprecation notice for Chrome browser. 
--->
