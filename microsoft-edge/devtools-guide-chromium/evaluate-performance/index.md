@@ -65,7 +65,9 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
    ![CPU throttle](./index-images/capture-settings.png)
 
-   If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.
+   A warning icon is displayed on the **Performance** tool's tab, to remind you that throttling is enabled.
+
+If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.
 
 
 <!-- ------------------------------ -->
