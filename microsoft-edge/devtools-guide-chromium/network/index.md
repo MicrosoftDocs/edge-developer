@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/11/2023
+ms.date: 02/12/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -145,9 +145,11 @@ The network connection of the computer that you use to build sites is probably f
 
 1. Select the **Throttling** dropdown list in the top toolbar. It is set to **No throttling** by default.
 
-1. Select **Slow 3G**:
+1. Select **Slow 3G** or **Slow 4G**:
 
    ![Select Slow 3G](./index-images/throttling-slow-3g.png)
+
+   A warning icon is displayed on the **Network** tool's tab, to remind you that throttling is enabled.
 
 1. Long-press **Reload** (![Reload](./index-images/refresh-icon.png)) (or right-click **Refresh**) and then select **Empty cache and hard refresh**:
 
