@@ -212,6 +212,30 @@ To closely inspect your performance recording, you can select a portion of a rec
 #### Select a portion of a recording
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#select -->
 
+<!-- from pr 3351: -->
+Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
+
+![The Timeline overview under the action bar](./reference-images/timeline-overview.png)
+
+To select a portion of a recording, click and hold, then drag left or right across the Timeline overview.
+
+![Select a portion of a recording](./reference-images/select-portion.png)
+
+To select a portion using the keyboard:
+
+1. Focus the **Main** track or any of its neighbors.
+
+1. Use the **W**, **A**, **S**, **D** keys to zoom in, move left, zoom out, and move right, respectively.
+
+To select a portion using a trackpad:
+
+1. Hover over the **Timeline overview** section or any of the tracks (**Main** and its neighbors).
+
+1. Using two fingers, swipe up to zoom out, swipe left to move left, swipe down to zoom in, and swipe right to move right.
+
+<!-- /from pr 3351 -->
+
+
 Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
 
 You can select a portion of a recording by using a mouse, keyboard, or trackpad.
@@ -250,7 +274,27 @@ To select a portion of a recording by using a trackpad:
 #### Create breadcrumbs and jump between zoom levels
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#breadcrumbs -->
 
-<!-- todo: copy from PR https://github.com/MicrosoftDocs/edge-developer/pull/3351 -->
+<!-- from pr 3351: -->
+
+The **Timeline overview** lets you create multiple nested breadcrumbs in succession, increasing zoom levels, and then jump freely between zoom levels.
+
+To create and use breadcrumbs:
+
+1. In **Timeline overview**, [select a portion of the recording](#select-a-portion-of-a-recording) (above).
+
+1. Hover over the selection and click the **N ms** (![Zoom in icon](./reference-images/zoom-in-icon.png))<!-- todo: real icon png --> button.  The selection expands to fill the **Timeline overview**.  A chain of breadcrumbs starts building at top of the **Timeline overview**.
+
+1. Repeat the previous two steps to create another nested breadcrumb. You can continue to nest breadcrumbs as long as the selection range is greater than 5 milliseconds.
+
+1. To jump to a chosen zoom level, click the corresponding breadcrumb in the chain at top of the Timeline overview.
+
+![Jumping to a chosen zoom level](./reference-images/breadcrumb-zoom.png)
+
+To remove the children of a breadcrumb, right-click the parent breadcrumb and select **Remove child breadcrumbs**.
+
+![Removing the children of a breadcrumb](./reference-images/remove-childs.png)
+
+<!-- /from pr 3351 -->
 
 
 The **Timeline** overview lets you create multiple nested breadcrumbs in succession, increasing zoom levels, and then jump freely between zoom levels.
@@ -267,8 +311,16 @@ To create and use breadcrumbs:
 
 To remove the childs of a breadcrumb, right-click the parent breadcrumb and select **Remove child breadcrumbs**.
 
-Scroll a long flame chart
-To scroll a long flame chart in the Main track or any of its neighbors, click and hold, then drag in any direction until what you are looking for comes into view.
+
+<!-- ------------------------------ -->
+#### Scroll a long flame chart
+
+To scroll a long flame chart in the **Main** track or any of its neighbors, click and hold, then drag in any direction until what you are looking for comes into view.
+
+<!-- todo: copy remaining section from https://developer.chrome.com/docs/devtools/performance/reference#navigate -->
+
+
+<!-- existing docs: -->
 
 
 <!-- ------------------------------ -->
