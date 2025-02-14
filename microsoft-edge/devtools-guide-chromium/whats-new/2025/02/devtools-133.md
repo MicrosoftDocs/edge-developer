@@ -40,7 +40,7 @@ Support for screen readers has been improved for various tools.
 <!-- ------------------------------ -->
 #### Developer resources tool
 
-In the **Developer resources** tool, after you search by using the **Filter by URL and error** text box, screen readers announce the results information.  If no results are available, screen readers announce **no appeared results**:<!-- todo: "no results appeared"? -->
+In the **Developer resources** tool, after you search by using the **Filter by URL and error** text box, screen readers announce the results information.  If no results are available, screen readers announce **no resource matches**:
 
 ![The Filter box in Developer resources](./devtools-133-images/developer-resources-filter-box.png)
 
