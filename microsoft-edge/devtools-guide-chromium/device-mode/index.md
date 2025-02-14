@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 11/20/2023
+ms.date: 01/30/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -32,18 +32,21 @@ Some aspects of mobile devices aren't emulated in DevTools.  For example, the ar
 Use [Remote Debugging](../remote-debugging/index.md) to interact with the code of a page from your machine while your page actually runs on a mobile device.  You can view, change, debug, profile, or all four while you interact with the code.  Your machine can be a notebook or desktop computer.
 
 
-**Detailed contents:**<!--July 27, 2023. compare page toc at https://developer.chrome.com/docs/devtools/device-mode/-->
+**Detailed contents:**<!--Jan. 30, 2025. compare page toc at https://developer.chrome.com/docs/devtools/device-mode/-->
 * [Simulate a mobile viewport](#simulate-a-mobile-viewport)
    * [Responsive Viewport Mode](#responsive-viewport-mode)
-      * [Show media queries](#show-media-queries)
-      * [Set the device type](#set-the-device-type)
+   * [Show media queries](#show-media-queries)
+   * [Set device pixel ratio](#set-device-pixel-ratio)
+   * [Set the device type](#set-the-device-type)
    * [Mobile Device Viewport Mode](#mobile-device-viewport-mode)
-      * [Rotate the viewport to landscape orientation](#rotate-the-viewport-to-landscape-orientation)
-      * [Show device frame](#show-device-frame)
-      * [Add a custom mobile device](#add-a-custom-mobile-device)
+   * [Rotate the viewport to landscape orientation](#rotate-the-viewport-to-landscape-orientation)
+   * [Show device frame](#show-device-frame)
+   * [Add a custom mobile device](#add-a-custom-mobile-device)
    * [Show rulers](#show-rulers)
    * [Zoom the viewport](#zoom-the-viewport)
+   * [Capture a screenshot](#capture-a-screenshot)
 * [Throttle the network and CPU](#throttle-the-network-and-cpu)
+   * [Network and Performance tabs have warning icon when throttled](#network-and-performance-tabs-have-warning-icon-when-throttled)
    * [Throttle the CPU only](#throttle-the-cpu-only)
    * [Throttle the network only](#throttle-the-network-only)
 * [Emulate sensors](#emulate-sensors)
@@ -281,10 +284,19 @@ To test how quickly your page loads and how it responds at different internet an
 
    If the **Throttle list** is hidden, widen the **Device Toolbar**.
 
-*  **Mid-tier mobile** simulates `fast 3G` and throttles your CPU.  It is four times slower than normal.
-*  **Low-end mobile** simulates `slow 3G` and throttles your CPU.  It is six times slower than normal.
+*  **Mid-tier mobile** simulates **CPU** throttling of **4x slowdown** and **Network** throttling of **Slow 4G**.  It is four times slower than normal.
+
+*  **Low-end mobile** simulates **CPU** throttling of **6x slowdown** and **Network** throttling of **3G**.  It is six times slower than normal.
 
 All of the throttling is based upon the normal capability of your laptop or desktop.
+
+
+<!-- ------------------------------ -->
+#### Network and Performance tabs have warning icon when throttled
+
+When throttling is enabled in **Device Emulation**, a warning icon is displayed in the **Network** and **Performance** tool tabs on the **Activity Bar**, to help you know that performance is impacted by throttling:
+
+![The Throttled warning icon on the Network and Performance tool tabs](./index-images/performance-warning-icon.png)
 
 
 <!-- ------------------------------ -->
@@ -334,10 +346,6 @@ The sections below provide a quick look on how to override geolocation and set d
 #### Override geolocation
 
 Use the **Sensors** tool to override geolocation and simulate device orientation.
-
-
-<!-- ------------------------------ -->
-#### Override geolocation
 
 If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation-overriding UI.
 

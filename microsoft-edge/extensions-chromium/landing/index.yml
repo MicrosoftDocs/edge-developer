@@ -179,18 +179,18 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Update a Microsoft Edge extension
-            url: ../publish/update-extension.md
+            url: ../update/update-extension.md
 
           - text: Set an externally installed extension to automatically update
-            url: ../publish/auto-update.md
+            url: ../update/auto-update.md
 
           - text: Using the REST API for updating Microsoft Edge Add-ons
-            url: ../publish/api/using-addons-api.md
+            url: ../update/api/using-addons-api.md
 
       - linkListType: reference
         links:
           - text: REST API Reference for updating Microsoft Edge Add-ons
-            url: ../publish/api/addons-api-reference.md
+            url: ../update/api/addons-api-reference.md
 
 # =============================================================================
 # Row 3
