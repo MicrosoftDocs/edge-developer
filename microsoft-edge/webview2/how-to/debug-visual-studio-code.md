@@ -220,6 +220,13 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
    ![Run and Debug](./debug-visual-studio-code-images/attach-uwp.png)
 
+<!-- ====================================================================== -->
+## Source maps with `WebResourceRequested` event or virtual host name mapping
+
+Source maps are needed to debug the source code of compiled content like transpiled JavaScript (e.g. from TypeScript) or CSS (e.g. from SASS or SCSS). When content is loaded to WebView2 using 
+[WebResourceRequested event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event)
+ or [virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping), special care is needed to also load the corresponding source maps. See details and solutions for [WebResourceRequested event here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping), and for [virtual host name mapping here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping)
+
 
 <!-- ====================================================================== -->
 ## Troubleshoot the debugger

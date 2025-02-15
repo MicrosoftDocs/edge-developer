@@ -353,7 +353,7 @@ When loading local content via a virtual host name mapping, you are mapping a vi
 <!-- ---------- -->
 ###### Additional web resources
 
-Local content that's loaded via virtual host name mapping has an HTTP or HTTPS URL which supports relative URL resolution. This means that the loaded document can have references to additional web resources such as CSS, script, or image files which are also served via virtual host name mapping.
+Local content that's loaded via virtual host name mapping has an HTTP or HTTPS URL which supports relative URL resolution. This means that the loaded document can have references to additional web resources such as CSS, script, or image files which are also served via virtual host name mapping, except [source maps](#source-maps-with-virtual-host-name-mapping).
 
 
 <!-- ---------- -->
@@ -361,6 +361,14 @@ Local content that's loaded via virtual host name mapping has an HTTP or HTTPS U
 
 Virtual host name URLs are resolved in WebView2 processes. This is a faster option than `WebResourceRequested`, which resolves in the host app process UI thread.
 
+<!-- ---------- -->
+###### Source maps with virtual host name mapping
+
+Source maps are needed to debug the source code of compiled content like transpiled JavaScript (e.g. from TypeScript) or CSS (e.g. from SASS or SCSS). WebView2 does not load source maps referenced by content which was loaded using virtual host name mapping. Consider the following example. WebView2 loads JavaScript file `main.js` via virtual host name mapping. If `main.js` references `main.js.map` as its source map, then `main.js.map` will neither be loaded automatically nor any `WebResourceRequested` event handler will be called to load it.
+
+To use source maps along with virtual host name mapping, choose one of the following approaches:
+- Generate inline source maps during compilation of your content. Inline source maps are embedded to the corresponding compiled file.
+- Use `WebResourceRequested` event instead, and inline separate source maps to the content at runtime in your `WebResourceRequested` event handler. Use this approach only if your content build system does not support inlining source maps.
 
 <!-- ------------------------------ -->
 #### APIs for loading local content by using virtual host name mapping
@@ -462,7 +470,7 @@ When loading local content via `WebResourceRequested`, you specify the local con
 <!-- ---------- -->
 ###### Additional web resources
 
-`WebResourceRequested` modifies the content that's loaded via HTTP or HTTPS URLs, which support relative URL resolution. This means that the resulting document can have references to additional web resources such as CSS, script, or image files that are also served via `WebResourceRequested`.
+`WebResourceRequested` modifies the content that's loaded via HTTP or HTTPS URLs, which support relative URL resolution. This means that the resulting document can have references to additional web resources such as CSS, script, or image files that are also served via `WebResourceRequested`, except [source maps](#source-maps- with-webresourcerequested-event).
 
 
 <!-- ---------- -->
@@ -476,6 +484,14 @@ When loading content via a file URL or a virtual host name mapping, the resoluti
 
 This can take some time. Make sure to limit calls to `AddWebResourceRequestedFilter` to only the web resources that must raise the `WebResourceRequested` event.
 
+<!-- ---------- -->
+###### Source maps with WebResourceRequested event
+
+Source maps are needed to debug the source code of compiled content like transpiled JavaScript (e.g. from TypeScript) or CSS (e.g. from SASS, SCSS). WebView2 does not load source maps referenced by content which was loaded using `WebResourceRequested` event. Consider the following example. You load JavaScript file `main.js` in your `WebResourceRequested` event handler by setting `WebResourceRequestedArgs.Response`. If `main.js` references `main.js.map` as its source map, then `main.js.map` will neither be loaded automatically nor your `WebResourceRequested` event handler will be called again to load it.
+
+To use source maps along with virtual host name mapping, choose one of the following approaches:
+- Generate inline source maps during compilation of your content. Inline source maps are embedded to the corresponding compiled file.
+- Inline separate source maps to the content at runtime in your `WebResourceRequested` event handler. Use this approach only if your content build system does not support inlining source maps.
 
 <!-- ------------------------------ -->
 #### APIs for loading local content by handling the WebResourceRequested event
