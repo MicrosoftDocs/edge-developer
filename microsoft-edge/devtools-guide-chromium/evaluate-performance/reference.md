@@ -24,6 +24,8 @@ ms.date: 02/13/2025
 # Performance features reference
 <!-- https://developer.chrome.com/docs/devtools/performance/reference -->
 
+<!-- todo: add missing headings -->
+
 This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
 For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Analyze runtime performance (tutorial)](index.md).
@@ -33,6 +35,7 @@ The images in this page show DevTools undocked into its own, dedicated window. T
 
 <!-- ====================================================================== -->
 ## Open the Performance tool
+<!-- consider delete section & in each section say right-click > Inspect > select Perf tool -->
 
 To use the sections in this page, open the **Performance** tool in DevTools:
 
@@ -163,23 +166,61 @@ Throttling is relative to the capabilities of your computer.  For example, the *
 
 
 <!-- ------------------------------ -->
-#### Turn on advanced rendering instrumentation
+#### Enable CSS selector stats
 
-To record more rendering information, enable advanced rendering instrumentation:
+To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events:
 
-1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.
+1. Click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  See [Show recording settings](#show-recording-settings), above.
 
-1. Select the **Enable advanced rendering instrumentation (slow)** checkbox.
+1. Select the **Enable CSS selector stats** checkbox.
 
-With advanced rendering instrumentation enabled, DevTools records more information about the rendering of the page, such as layer information, and CSS selector statistics. The performance of the page may be affected.
+For details, see [Analyze CSS selector performance during Recalculate Style events](./selector-stats.md).
 
-For example, see [View layers information](#view-layers-information), and [View CSS selector statistics](#view-css-selector-statistics), below.
+
+<!-- ------------------------------ -->
+#### Enable advanced paint instrumentation
+
+To view detailed paint instrumentation:
+
+1. Click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  See [Show recording settings](#show-recording-settings), above.
+
+1. Select the **Enable advanced paint instrumentation (slow)**<!-- 2025-02-14 ui --> checkbox.
+
+To learn how to interact with the paint information, see [View layers information](#view-layers-information), below, and [View paint profiler](#view-p), below.
 
 
 <!-- ====================================================================== -->
-## Save a recording
+## Annotate a recording and share it
 
-To save a recording as a file on your device, right-click the recording and then select **Save profile**:
+Once a performance trace is recorded, you can analyze it, and annotate it to share your findings.
+
+To annotate a recording, open the **Annotations** tab in the left_panel_open sidebar on the left of the **Performance** panel.  There are several ways to add an annotation:
+
+* Label item: To add a label to an item, double-click it and type a label.
+
+* Connect two items: To connect two items with an arrow, double-click the first item, click an arrow next to it, then click the second item.
+
+* Label a time range: To label an arbitrary time range, shift-drag from the start of a time range to its end, then type a label.
+
+![Annotations on a performance recording]()
+
+In this example, in the **Network** track, there are two annotated requests, a connection between them, and an annotated time range highlighted in pink.  The **Annotations** tab shows the number of annotations next to its tab name, in this example, 4.
+
+To delete an annotation, hover over it in the **Annotations** tab and then click the **Delete** button next to it.
+
+To hide annotations from the performance trace, select **Hide annotations** at the bottom of the **Annotations** tab.
+
+
+<!-- ====================================================================== -->
+## Save and share a recording
+
+To save a recording as a file on your device and later share it with your annotated performance findings, in the action bar at the top of the **Performance** panel, click the **Save profile** (![The Save profile icon](./reference-images/save-profile-icon.png)) button, and then select **Save trace**.
+
+![Save trace with annotations]()
+
+Alternatively, select **Save trace without annotations**.
+
+Instead of clicking the **Save profile** (![The Save profile icon](./reference-images/save-profile-icon.png)) button at the top, you can right-click a track of a recording, and then select **Save profile**:
 
 ![The 'Save profile' right-click menuitem](./reference-images/save-profile.png)
 
@@ -187,7 +228,15 @@ To save a recording as a file on your device, right-click the recording and then
 <!-- ====================================================================== -->
 ## Load a recording
 
-To load a recording from a file, right-click in the **Performance** tool and then select **Load profile**:
+<!-- new: -->
+To load a recording from a file, click the **Load profile** (![The Load profile icon](./reference-images/load-profile-icon.png)) button in the action bar at the top of the **Performance** panel.
+
+![Load trace button in the action bar]()
+
+The **Performance** panel will show annotations if they are present in the trace.
+
+<!-- old: confirm ui -->
+Alternatively, to load a recording from a file, right-click in the **Performance** tool and then select **Load profile**:
 
 ![The 'Load profile' right-click menuitem](./reference-images/load-profile.png)
 
@@ -205,9 +254,34 @@ After making a recording, to remove that recording from the **Performance** tool
 <!-- ====================================================================== -->
 ## Analyze a performance recording
 
-After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** tool displays a lot of data about the recording. Use the recorded data to analyze the performance of your webpage.
+After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** tool displays a lot of data about the recording.  Use the recorded data to analyze the performance of your webpage.
 
 
+<!-- ------------------------------ -->
+#### Get actionable insights
+
+The **Performance** tool consolidates performance insights from the **Lighthouse** report and the now deprecated **Performance insights**<!-- todo --> panel.  These insights can suggest ways to improve performance and provide guided analysis on the following performance issues, including but not limited to:
+
+* LCP and INP by subpart
+* LCP request discovery
+* Layout shift culprits
+* Render blocking requests
+* Third parties
+* Image delivery
+* Document request latency
+* Viewport optimization for mobile
+* CSS selector costs
+
+To make use of insights:
+
+1. Make a performance recording.
+
+1. In the left sidebar of the **Performance** tool, open the **Insights** tab, expand different sections, and hover over and click items.  The **Performance** tool highlights the corresponding events in the trace.
+
+<!-- ![]() -->
+
+
+<!-- resume here sync headings -->
 <!-- ------------------------------ -->
 #### Navigate the recording
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#navigate -->
