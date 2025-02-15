@@ -227,7 +227,6 @@ Source maps are needed to debug the source code of compiled content like transpi
 [WebResourceRequested event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event)
  or [virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping), special care is needed to also load the corresponding source maps. See details and solutions for [WebResourceRequested event here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping), and for [virtual host name mapping here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping)
 
-
 <!-- ====================================================================== -->
 ## Troubleshoot the debugger
 

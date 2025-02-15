@@ -38,6 +38,12 @@ An app can also use the `OpenDevToolsWindow` API to programmatically open a DevT
 
 If none of the above approaches are available, you can add `--auto-open-devtools-for-tabs` to the browser arguments via an environment variable or registry key.  This approach will open a DevTools window when a WebView2 is created.
 
+<!-- ====================================================================== -->
+## Source maps with `WebResourceRequested` event or virtual host name mapping
+
+Source maps are needed to debug the source code of compiled content like transpiled JavaScript (e.g. from TypeScript) or CSS (e.g. from SASS or SCSS). When content is loaded to WebView2 using 
+[WebResourceRequested event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event)
+ or [virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping), special care is needed to also load the corresponding source maps. See details and solutions for [WebResourceRequested event here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping), and for [virtual host name mapping here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping)
 
 <!-- ====================================================================== -->
 ## See also
