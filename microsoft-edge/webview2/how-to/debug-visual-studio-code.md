@@ -28,6 +28,8 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "request": "launch",
 "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
 "env": {
+   // The port below shall match the value of "port" property above
+   "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS": "--remote-debugging-port=9222" 
    // Customize for your app location if needed
    "Path": "%path%;e:/path/to/your/app/location; "
 },
@@ -38,6 +40,7 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "webRoot": "${workspaceFolder}/path/to/your/assets"
 ```
 
+> Instead of setting `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--remote-debugging-port=9222` environment variable, you can add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` to registry under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port. 
 
 <!-- ---------------------------------- -->
 #### Command-line URL parameter passed in
@@ -109,8 +112,7 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "runtimeExecutable": "C:/path/to/your/webview2/myApp.exe",
 "env": {
    "Path": "%path%;e:/path/to/your/build/location; "
-},
-"useWebView": true
+}
 ```
 
 Your WebView2 control must open the Chrome Developer Protocol (CDP) port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a CDP port open, before starting the debugger.
@@ -143,6 +145,7 @@ You also need to add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` u
 
    ![The resulting registry key in the Registry Editor](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
 
+> Instead of adding the above registry key, you can set `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--remote-debugging-port=9222` environment variable. Make sure that your application was started after the environment variable had been set, and that your application inherits the variable.
 
 <!-- ====================================================================== -->
 ## Debug tracing options
