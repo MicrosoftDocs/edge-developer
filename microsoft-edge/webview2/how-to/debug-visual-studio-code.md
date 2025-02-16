@@ -28,7 +28,8 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "request": "launch",
 "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
 "env": {
-   // The port below shall match the value of "port" property above
+   // The following variable is needed when "runtimeExecutable" property is set.
+   // The port number below shall match the value of "port" property above.
    "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS": "--remote-debugging-port=9222" 
    // Customize for your app location if needed
    "Path": "%path%;e:/path/to/your/app/location; "
