@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/15/2024
+ms.date: 02/13/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,16 +22,20 @@ ms.date: 04/15/2024
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Performance features reference
+<!-- https://developer.chrome.com/docs/devtools/performance/reference -->
+
+<!-- todo: add missing headings -->
 
 This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
-For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Introduction to the Performance tool](index.md).
+For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Analyze runtime performance (tutorial)](index.md).
 
 The images in this page show DevTools undocked into its own, dedicated window. To learn more about undocking DevTools, see [Undock DevTools into a separate window](../customize/placement.md#undock-devtools-into-a-separate-window) in _Change DevTools placement (Undock, Dock to bottom, Dock to left)_.
 
 
 <!-- ====================================================================== -->
 ## Open the Performance tool
+<!-- consider delete section & in each section say right-click > Inspect > select Perf tool -->
 
 To use the sections in this page, open the **Performance** tool in DevTools:
 
@@ -162,23 +166,61 @@ Throttling is relative to the capabilities of your computer.  For example, the *
 
 
 <!-- ------------------------------ -->
-#### Turn on advanced rendering instrumentation
+#### Enable CSS selector stats
 
-To record more rendering information, enable advanced rendering instrumentation:
+To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events:
 
-1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.
+1. Click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  See [Show recording settings](#show-recording-settings), above.
 
-1. Select the **Enable advanced rendering instrumentation (slow)** checkbox.
+1. Select the **Enable CSS selector stats** checkbox.
 
-With advanced rendering instrumentation enabled, DevTools records more information about the rendering of the page, such as layer information, and CSS selector statistics. The performance of the page may be affected.
+For details, see [Analyze CSS selector performance during Recalculate Style events](./selector-stats.md).
 
-For example, see [View layers information](#view-layers-information), and [View CSS selector statistics](#view-css-selector-statistics), below.
+
+<!-- ------------------------------ -->
+#### Enable advanced paint instrumentation
+
+To view detailed paint instrumentation:
+
+1. Click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  See [Show recording settings](#show-recording-settings), above.
+
+1. Select the **Enable advanced paint instrumentation (slow)**<!-- 2025-02-14 ui --> checkbox.
+
+To learn how to interact with the paint information, see [View layers information](#view-layers-information), below, and [View paint profiler](#view-p), below.
 
 
 <!-- ====================================================================== -->
-## Save a recording
+## Annotate a recording and share it
 
-To save a recording as a file on your device, right-click the recording and then select **Save profile**:
+Once a performance trace is recorded, you can analyze it, and annotate it to share your findings.
+
+To annotate a recording, open the **Annotations** tab in the left_panel_open sidebar on the left of the **Performance** panel.  There are several ways to add an annotation:
+
+* Label item: To add a label to an item, double-click it and type a label.
+
+* Connect two items: To connect two items with an arrow, double-click the first item, click an arrow next to it, then click the second item.
+
+* Label a time range: To label an arbitrary time range, shift-drag from the start of a time range to its end, then type a label.
+
+![Annotations on a performance recording]()
+
+In this example, in the **Network** track, there are two annotated requests, a connection between them, and an annotated time range highlighted in pink.  The **Annotations** tab shows the number of annotations next to its tab name, in this example, 4.
+
+To delete an annotation, hover over it in the **Annotations** tab and then click the **Delete** button next to it.
+
+To hide annotations from the performance trace, select **Hide annotations** at the bottom of the **Annotations** tab.
+
+
+<!-- ====================================================================== -->
+## Save and share a recording
+
+To save a recording as a file on your device and later share it with your annotated performance findings, in the action bar at the top of the **Performance** panel, click the **Save profile** (![The Save profile icon](./reference-images/save-profile-icon.png)) button, and then select **Save trace**.
+
+![Save trace with annotations]()
+
+Alternatively, select **Save trace without annotations**.
+
+Instead of clicking the **Save profile** (![The Save profile icon](./reference-images/save-profile-icon.png)) button at the top, you can right-click a track of a recording, and then select **Save profile**:
 
 ![The 'Save profile' right-click menuitem](./reference-images/save-profile.png)
 
@@ -186,7 +228,15 @@ To save a recording as a file on your device, right-click the recording and then
 <!-- ====================================================================== -->
 ## Load a recording
 
-To load a recording from a file, right-click in the **Performance** tool and then select **Load profile**:
+<!-- new: -->
+To load a recording from a file, click the **Load profile** (![The Load profile icon](./reference-images/load-profile-icon.png)) button in the action bar at the top of the **Performance** panel.
+
+![Load trace button in the action bar]()
+
+The **Performance** panel will show annotations if they are present in the trace.
+
+<!-- old: confirm ui -->
+Alternatively, to load a recording from a file, right-click in the **Performance** tool and then select **Load profile**:
 
 ![The 'Load profile' right-click menuitem](./reference-images/load-profile.png)
 
@@ -204,11 +254,70 @@ After making a recording, to remove that recording from the **Performance** tool
 <!-- ====================================================================== -->
 ## Analyze a performance recording
 
-After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** tool displays a lot of data about the recording. Use the recorded data to analyze the performance of your webpage.
+After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** tool displays a lot of data about the recording.  Use the recorded data to analyze the performance of your webpage.
+
+
+<!-- ------------------------------ -->
+#### Get actionable insights
+
+The **Performance** tool consolidates performance insights from the **Lighthouse** report and the now deprecated **Performance insights**<!-- todo --> panel.  These insights can suggest ways to improve performance and provide guided analysis on the following performance issues, including but not limited to:
+
+* LCP and INP by subpart
+* LCP request discovery
+* Layout shift culprits
+* Render blocking requests
+* Third parties
+* Image delivery
+* Document request latency
+* Viewport optimization for mobile
+* CSS selector costs
+
+To make use of insights:
+
+1. Make a performance recording.
+
+1. In the left sidebar of the **Performance** tool, open the **Insights** tab, expand different sections, and hover over and click items.  The **Performance** tool highlights the corresponding events in the trace.
+
+<!-- ![]() -->
+
+
+<!-- resume here sync headings -->
+<!-- ------------------------------ -->
+#### Navigate the recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#navigate -->
+
+To closely inspect your performance recording, you can select a portion of a recording, scroll a long flame chart, zoom in and out, and use breadcrumbs to jump between zoom levels.
 
 
 <!-- ------------------------------ -->
 #### Select a portion of a recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#select -->
+
+<!-- from pr 3351: -->
+Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
+
+![The Timeline overview under the action bar](./reference-images/timeline-overview.png)
+
+To select a portion of a recording, click and hold, then drag left or right across the Timeline overview.
+
+![Select a portion of a recording](./reference-images/select-portion.png)
+
+To select a portion using the keyboard:
+
+1. Focus the **Main** track or any of its neighbors.
+
+1. Use the **W**, **A**, **S**, **D** keys to zoom in, move left, zoom out, and move right, respectively.
+
+To select a portion using a trackpad:
+
+1. Hover over the **Timeline overview** section or any of the tracks (**Main** and its neighbors).
+
+1. Using two fingers, swipe up to zoom out, swipe left to move left, swipe down to zoom in, and swipe right to move right.
+
+<!-- /from pr 3351 -->
+
+
+Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
 
 You can select a portion of a recording by using a mouse, keyboard, or trackpad.
 
@@ -240,6 +349,59 @@ To select a portion of a recording by using a trackpad:
 1. Hover over the **Overview** section or the **Details** section.  The **Overview** section is the area containing the **FPS**, **CPU**, and **NET** charts.  The **Details** section is the area containing the **Main** section and the **Interactions** section.
 
 1. Using two fingers, swipe up to zoom out, or down to zoom in.  Using two fingers, swipe left to move left, or right to move right.
+
+
+<!-- ------------------------------ -->
+#### Create breadcrumbs and jump between zoom levels
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#breadcrumbs -->
+
+<!-- from pr 3351: -->
+
+The **Timeline overview** lets you create multiple nested breadcrumbs in succession, increasing zoom levels, and then jump freely between zoom levels.
+
+To create and use breadcrumbs:
+
+1. In **Timeline overview**, [select a portion of the recording](#select-a-portion-of-a-recording) (above).
+
+1. Hover over the selection and click the **N ms** (![Zoom in icon](./reference-images/zoom-in-icon.png))<!-- todo: real icon png --> button.  The selection expands to fill the **Timeline overview**.  A chain of breadcrumbs starts building at top of the **Timeline overview**.
+
+1. Repeat the previous two steps to create another nested breadcrumb. You can continue to nest breadcrumbs as long as the selection range is greater than 5 milliseconds.
+
+1. To jump to a chosen zoom level, click the corresponding breadcrumb in the chain at top of the Timeline overview.
+
+![Jumping to a chosen zoom level](./reference-images/breadcrumb-zoom.png)
+
+To remove the children of a breadcrumb, right-click the parent breadcrumb and select **Remove child breadcrumbs**.
+
+![Removing the children of a breadcrumb](./reference-images/remove-childs.png)
+
+<!-- /from pr 3351 -->
+
+
+The **Timeline** overview lets you create multiple nested breadcrumbs in succession, increasing zoom levels, and then jump freely between zoom levels.
+
+To create and use breadcrumbs:
+
+1. In **Timeline overview**, select a portion of the recording.
+
+1. Hover over the selection and click the N ms zoom_in button. The selection expands to fill the Timeline overview. A chain of breadcrumbs starts building at top of the Timeline overview.
+
+1. Repeat the previous two steps to create another nested breadcrumb. You can continue to nest breadcrumbs as long as the selection range is greater than 5 milliseconds.
+
+1. To jump to a chosen zoom level, click the corresponding breadcrumb in the chain at top of the Timeline overview.
+
+To remove the childs of a breadcrumb, right-click the parent breadcrumb and select **Remove child breadcrumbs**.
+
+
+<!-- ------------------------------ -->
+#### Scroll a long flame chart
+
+To scroll a long flame chart in the **Main** track or any of its neighbors, click and hold, then drag in any direction until what you are looking for comes into view.
+
+<!-- todo: copy remaining section from https://developer.chrome.com/docs/devtools/performance/reference#navigate -->
+
+
+<!-- existing docs: -->
 
 
 <!-- ------------------------------ -->
@@ -275,6 +437,25 @@ To hide the search box, click the **Cancel** button.
 
 
 <!-- ------------------------------ -->
+#### Change the order of tracks and hide them
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#track-config -->
+
+To declutter the performance trace, you can change the order of tracks and hide the irrelevant ones in track configuration mode.
+
+To move and hide tracks:
+
+1. To enter the configuration mode, right-click a track name and then select **Configure tracks**.
+
+1. Click the **Move track up** (![The Move track up icon](./reference-images/move-track-up-icon.png)) button or the **Move track down** (![The Move track down icon](./reference-images/move-track-down-icon.png)) button to move a track up or down.  Click the **Hide track** (![The Hide track icon](./reference-images/hide-track-icon.png)) button to hide it.
+
+1. When finished, click **Finish configuring** tracks at the bottom to exit the configuration mode.
+
+<!-- Watch the video to see this workflow in action. -->
+
+The **Performance** tool saves track configuration for new traces but not in next DevTools sessions.
+
+
+<!-- ------------------------------ -->
 #### View main thread activity
 
 Use the **Main** section to view the activity that occurred on the main thread of the page:
@@ -296,6 +477,69 @@ DevTools assigns scripts random colors.  In the previous figure, function reques
 If you want to hide the detailed flame chart of JavaScript requests, see [Disable JavaScript samples](#disable-javascript-samples), above.
 When JavaScript samples are disabled, only high-level events are displayed, such as `Event: input` and `Function Call` from the previous figure.
 <!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53) from Figure 16.-->
+
+
+<!-- ------------------------------ -->
+#### Read the flame chart
+
+
+
+<!-- ------------------------------ -->
+#### Track event initiators
+
+The **Main** track can show arrows that connect the following initiators and the events they caused:
+
+* Style or layout invalidation -> **Recalculate styles** or **Layout**
+* **Request Animation Frame** -> **Animation Frame Fired**
+* **Request Idle Callback** -> **Fire Idle Callback**
+* **Install Timer** -> **Timer Fired**
+* **Create WebSocket** -> **Send...** and **Receive WebSocket Handshake** or **Destroy WebSocket**
+* **Schedule postTask** -> **Fire postTask** or **Abort postTask**
+
+To see the arrows, find either an initiator or the event it caused in the flame chart and select it.
+
+<!-- ![An arrow from the request to the firing of an idle callback](todo) -->
+
+When selected, the **Summary** tab shows **Initiator for** links for initiators and **Initiated by** links for the events they caused. Click them to jump between the corresponding events.
+
+<!-- ![The 'Initiator for' link in the Summary tab](todo) -->
+
+
+<!-- ------------------------------ -->
+#### Hide functions and their children in the flame chart
+
+To declutter the flame chart in the **Main** thread, you can hide selected functions or their children:
+
+1. In the **Main** track, right-click a function and choose one of the following options or press the corresponding shortcut:
+
+   * **Hide function** (**H**)
+   * **Hide children** (**C**)
+   * **Hide repeating children** (**R**)
+   * **Reset children** (**U**)
+   * **Reset trace** (**T**)
+   * **Add script to ignore list** (**I**)
+
+   <!-- ![The context menu with options to hide the selected function or its children](todo) -->
+
+   A **number hidden** drop-down (![The number hidden drop-down](./reference-images/number-hidden-drop-down-arrow.png)) button appears next to the function name with hidden children.
+
+1. To see the number of hidden children, hover over the **number hidden** drop-down (![The number hidden drop-down](./reference-images/number-hidden-drop-down-arrow.png)) button.
+
+   <!-- ![The tooltip over the drop-down button with the number of hidden children](todo) -->
+
+1. To reset a function with hidden children or the whole flame chart, select the function and press **U** or right-click any function and select **Reset trace** respectively.
+
+
+<!-- ---------- -->
+###### Ignore scripts in the flame chart
+
+To add a script to the ignore list, right-click a script in the chart and select **Add script to ignore list**.
+
+   <!-- ![The context menu with the ignore script option focused](todo) -->
+
+The chart collapses ignored scripts, marks them as **On ignore list**, and adds them to the **Custom exclusion** rules in **Customize and control DevTools** (![The Customize and control DevTools icon](./reference-images/customize-and-control-devtools-icon.png)) > **Settings** > **Ignore list**.  Ignored scripts are saved until you remove them either from the trace or from the **Custom exclusion rules**.
+
+   <!-- ![The ignore script list tab in Settings](todo) -->
 
 
 <!-- ------------------------------ -->
