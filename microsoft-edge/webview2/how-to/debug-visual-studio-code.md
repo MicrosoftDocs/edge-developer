@@ -28,6 +28,9 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "request": "launch",
 "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
 "env": {
+   // The following variable is needed when "runtimeExecutable" property is set.
+   // The port number below shall match the value of "port" property above.
+   "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS": "--remote-debugging-port=9222" 
    // Customize for your app location if needed
    "Path": "%path%;e:/path/to/your/app/location; "
 },
@@ -38,6 +41,7 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "webRoot": "${workspaceFolder}/path/to/your/assets"
 ```
 
+> Instead of setting `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--remote-debugging-port=9222` environment variable, you can add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` to registry under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port. 
 
 <!-- ---------------------------------- -->
 #### Command-line URL parameter passed in
@@ -109,8 +113,7 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "runtimeExecutable": "C:/path/to/your/webview2/myApp.exe",
 "env": {
    "Path": "%path%;e:/path/to/your/build/location; "
-},
-"useWebView": true
+}
 ```
 
 Your WebView2 control must open the Chrome Developer Protocol (CDP) port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a CDP port open, before starting the debugger.
@@ -143,6 +146,7 @@ You also need to add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` u
 
    ![The resulting registry key in the Registry Editor](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
 
+> Instead of adding the above registry key, you can set `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--remote-debugging-port=9222` environment variable. Make sure that your application was started after the environment variable had been set, and that your application inherits the variable.
 
 <!-- ====================================================================== -->
 ## Debug tracing options
@@ -218,6 +222,10 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 
    ![Run and Debug](./debug-visual-studio-code-images/attach-uwp.png)
 
+<!-- ====================================================================== -->
+## Source maps with `WebResourceRequested` event or virtual host name mapping
+
+Source maps are needed to debug the source code of compiled content like transpiled JavaScript (e.g. TypeScript, minified JavaScript) or CSS (e.g. SASS, SCSS). WebView2 does not load source maps referenced by content which was loaded using either [WebResourceRequested event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event) or [virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping). See details and solutions for [WebResourceRequested event here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping), and for [virtual host name mapping here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping).
 
 <!-- ====================================================================== -->
 ## Troubleshoot the debugger
