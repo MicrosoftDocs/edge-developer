@@ -23,7 +23,7 @@ For situations when specific fonts aren't available on a user device, you should
 
 CSS provides better support for typography in recent years.  Dozens of different CSS units are available to define the size of text.  Several CSS properties are available to control the font size, spacing, line height, and other typographical features.
 
-Currently the [Enable new font editor within the Styles Pane](../experimental-features/index.md#enable-new-font-editor-within-the-styles-pane) feature is experimental, and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-an-experiment-on-or-off).
+Currently the [Enable new font editor within the Styles tab](../experimental-features/index.md#enable-new-font-editor-within-the-styles-tab) feature is experimental, and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-an-experiment-on-or-off).
 
 Any CSS in the **Styles** pane, either font definitions or inline styles, has a **Font Editor** icon.  To open the visual **Font Editor**, click the **Font Editor** icon.
 
