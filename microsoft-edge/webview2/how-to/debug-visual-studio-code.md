@@ -146,7 +146,7 @@ You also need to add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` u
 
    ![The resulting registry key in the Registry Editor](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
 
-> Instead of adding the above registry key, you can set `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--remote-debugging-port=9222` environment variable. Make sure that your application was started after the environment variable had been set, and that your application inherits the variable.
+> Instead of adding the above registry key, you can set the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable to `--remote-debugging-port=9222`. Make sure that your application was started after the environment variable had been set, and that your application inherits the variable. See [WewbView2 browser flags](https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/webview-features-flags) for more information.
 
 <!-- ====================================================================== -->
 ## Debug tracing options
