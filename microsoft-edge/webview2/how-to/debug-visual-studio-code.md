@@ -41,7 +41,7 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "webRoot": "${workspaceFolder}/path/to/your/assets"
 ```
 
-> Instead of setting `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--remote-debugging-port=9222` environment variable, you can add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` to registry under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port. 
+> Instead of setting the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable, you can add a new registry value named `<myApp.exe>` with data `--remote-debugging-port=9222` to the registry under registry key `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port. See [WewbView2 browser flags](https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/webview-features-flags) for more information.
 
 <!-- ---------------------------------- -->
 #### Command-line URL parameter passed in
