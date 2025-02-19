@@ -35,7 +35,11 @@ The images in this page show DevTools undocked into its own, dedicated window. T
 
 <!-- ====================================================================== -->
 ## Open the Performance tool
-<!-- consider delete section & in each section say right-click > Inspect > select Perf tool -->
+<!-- upstream doesn't have this section, has section in Overview article https://developer.chrome.com/docs/devtools/performance/overview#open_the_performance_panel  -->
+
+<!-- in each section, instead of linking away to this detailed Open h2 or Overview article's Open h2, start w/ inline step:
+1. Right-click a webpage, select **Inspect**, and then in DevTools, click the **Performance** tab in the **Activity bar**.
+-->
 
 To use the sections in this page, open the **Performance** tool in DevTools:
 
@@ -211,8 +215,8 @@ To delete an annotation, hover over it in the **Annotations** tab and then click
 To hide annotations from the performance trace, select **Hide annotations** at the bottom of the **Annotations** tab.
 
 
-<!-- ====================================================================== -->
-## Save and share a recording
+<!-- ------------------------------ -->
+#### Save and share a recording
 
 To save a recording as a file on your device and later share it with your annotated performance findings, in the action bar at the top of the **Performance** panel, click the **Save profile** (![The Save profile icon](./reference-images/save-profile-icon.png)) button, and then select **Save trace**.
 
@@ -225,9 +229,10 @@ Instead of clicking the **Save profile** (![The Save profile icon](./reference-i
 ![The 'Save profile' right-click menuitem](./reference-images/save-profile.png)
 
 
-<!-- ====================================================================== -->
-## Load a recording
+<!-- ------------------------------ -->
+#### Load a recording
 
+<!-- todo: clean up new/old cmts -->
 <!-- new: -->
 To load a recording from a file, click the **Load profile** (![The Load profile icon](./reference-images/load-profile-icon.png)) button in the action bar at the top of the **Performance** panel.
 
@@ -281,7 +286,6 @@ To make use of insights:
 <!-- ![]() -->
 
 
-<!-- resume here sync headings -->
 <!-- ------------------------------ -->
 #### Navigate the recording
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#navigate -->
@@ -289,11 +293,10 @@ To make use of insights:
 To closely inspect your performance recording, you can select a portion of a recording, scroll a long flame chart, zoom in and out, and use breadcrumbs to jump between zoom levels.
 
 
-<!-- ------------------------------ -->
-#### Select a portion of a recording
+<!-- ---------- -->
+###### Select a portion of a recording
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#select -->
 
-<!-- from pr 3351: -->
 Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
 
 ![The Timeline overview under the action bar](./reference-images/timeline-overview.png)
@@ -314,15 +317,11 @@ To select a portion using a trackpad:
 
 1. Using two fingers, swipe up to zoom out, swipe left to move left, swipe down to zoom in, and swipe right to move right.
 
-<!-- /from pr 3351 -->
+
+You can select a portion of a recording by using a mouse, keyboard, or trackpad.<!-- line: edge docs only -->
 
 
-Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
-
-You can select a portion of a recording by using a mouse, keyboard, or trackpad.
-
-
-###### Mouse
+**Mouse:**<!-- line: edge docs only -->
 
 To select a portion of a recording by using the mouse:
 
@@ -333,7 +332,7 @@ To select a portion of a recording by using the mouse:
 To scroll a long flame chart in the **Main** section or in any of the neighboring sections, click and hold while dragging up and down.  Drag left or right to move which portion of the recording is selected.
 
 
-###### Keyboard
+**Keyboard:**<!-- line: edge docs only -->
 
 To select a portion of a recording by using the keyboard:
 
@@ -342,7 +341,7 @@ To select a portion of a recording by using the keyboard:
 1. Press `W` or `S` to zoom in or out.  Press `A` or `D` to move left or right.
 
 
-###### Trackpad
+**Trackpad:**<!-- line: edge docs only -->
 
 To select a portion of a recording by using a trackpad:
 
@@ -351,11 +350,9 @@ To select a portion of a recording by using a trackpad:
 1. Using two fingers, swipe up to zoom out, or down to zoom in.  Using two fingers, swipe left to move left, or right to move right.
 
 
-<!-- ------------------------------ -->
-#### Create breadcrumbs and jump between zoom levels
+<!-- ---------- -->
+###### Create breadcrumbs and jump between zoom levels
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#breadcrumbs -->
-
-<!-- from pr 3351: -->
 
 The **Timeline overview** lets you create multiple nested breadcrumbs in succession, increasing zoom levels, and then jump freely between zoom levels.
 
@@ -365,53 +362,35 @@ To create and use breadcrumbs:
 
 1. Hover over the selection and click the **N ms** (![Zoom in icon](./reference-images/zoom-in-icon.png))<!-- todo: real icon png --> button.  The selection expands to fill the **Timeline overview**.  A chain of breadcrumbs starts building at top of the **Timeline overview**.
 
-1. Repeat the previous two steps to create another nested breadcrumb. You can continue to nest breadcrumbs as long as the selection range is greater than 5 milliseconds.
+1. Repeat the previous two steps to create another nested breadcrumb.  You can continue to nest breadcrumbs as long as the selection range is greater than 5 milliseconds.
 
-1. To jump to a chosen zoom level, click the corresponding breadcrumb in the chain at top of the Timeline overview.
+1. To jump to a chosen zoom level, click the corresponding breadcrumb in the chain at top of the **Timeline overview**:
 
 ![Jumping to a chosen zoom level](./reference-images/breadcrumb-zoom.png)
 
-To remove the children of a breadcrumb, right-click the parent breadcrumb and select **Remove child breadcrumbs**.
+To remove the children of a breadcrumb, right-click the parent breadcrumb and then select **Remove child breadcrumbs**:
 
 ![Removing the children of a breadcrumb](./reference-images/remove-childs.png)
 
-<!-- /from pr 3351 -->
 
-
-The **Timeline** overview lets you create multiple nested breadcrumbs in succession, increasing zoom levels, and then jump freely between zoom levels.
-
-To create and use breadcrumbs:
-
-1. In **Timeline overview**, select a portion of the recording.
-
-1. Hover over the selection and click the N ms zoom_in button. The selection expands to fill the Timeline overview. A chain of breadcrumbs starts building at top of the Timeline overview.
-
-1. Repeat the previous two steps to create another nested breadcrumb. You can continue to nest breadcrumbs as long as the selection range is greater than 5 milliseconds.
-
-1. To jump to a chosen zoom level, click the corresponding breadcrumb in the chain at top of the Timeline overview.
-
-To remove the childs of a breadcrumb, right-click the parent breadcrumb and select **Remove child breadcrumbs**.
-
-
-<!-- ------------------------------ -->
-#### Scroll a long flame chart
+<!-- ---------- -->
+###### Scroll a long flame chart
 
 To scroll a long flame chart in the **Main** track or any of its neighbors, click and hold, then drag in any direction until what you are looking for comes into view.
-
-<!-- todo: copy remaining section from https://developer.chrome.com/docs/devtools/performance/reference#navigate -->
-
-
-<!-- existing docs: -->
 
 
 <!-- ------------------------------ -->
 #### Search activities
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#search -->
+
+You can search across the activities in the **Main** track and requests in the **Network** track.
+
 
 To open the search box at the bottom of the **Performance** tool:
 
 1. Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).
 
-   The search box appears at the bottom of the **Performance** tool:
+   The search box appears at the bottom of the **Performance** tool:<!-- todo: is tooltip Find or Search?  gray text is Find -->
 
    ![The search box](./reference-images/search-regex.png)
 
@@ -420,6 +399,9 @@ To open the search box at the bottom of the **Performance** tool:
    The matching activities are highlighted in the **Main** section as you type, and the total number of matches appears in the search box. The first matching activity is selected, outlined in blue:
 
    ![The search box with a query and highlighted activities](./reference-images/search-highlighted.png)
+
+
+<!-- todo: wording differs, check -->
 
 To navigate among the activities that match your query:
 
@@ -431,7 +413,7 @@ To modify the query settings:
 
 *  To make the query case-sensitive, click the **Case sensitive** (![Case sensitive](./reference-images/search-case-icon.png)) button.
 
-*  To use a regular expression in your query, click the **Regex** (![Regex](./reference-images/search-regex-icon.png)) button.
+*  To use a regular expression in your query, click the **Regex** (![Regex](./reference-images/search-regex-icon.png)) button.  If you select the **Regex** button and then enter `^E.*` that finds any activity that  any activity that begins with the letter E.
 
 To hide the search box, click the **Cancel** button.
 
@@ -481,7 +463,9 @@ When JavaScript samples are disabled, only high-level events are displayed, such
 
 <!-- ------------------------------ -->
 #### Read the flame chart
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#flame-chart -->
 
+<!-- todo: text content -->
 
 
 <!-- ------------------------------ -->
@@ -547,62 +531,75 @@ The chart collapses ignored scripts, marks them as **On ignore list**, and adds 
 
 After recording a page, in addition to the **Main** section to analyze activities, DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
 
-*  To view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-tab) tab.
+*  To view the activities where the most time was directly spent, use the [Bottom-up](#the-bottom-up-tab) tab.
 
-*  To view the root activities that cause the most work, use the [Call Tree](#the-call-tree-tab) tab.
+*  To view the root activities that cause the most work, use the [Call tree](#the-call-tree-tab) tab.
 
-*  To view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-tab) tab.
+*  To view the activities in the order in which they occurred during the recording, use the [Event log](#the-event-log-tab) tab.
 
 
+
+<!-- Note: The next three sections all refer to the same demo. You can run the demo yourself at Activity Tabs Demo https://activitytabs.glitch.me and see the source at GoogleChrome/devtools-samples/perf/activitytabs.html .   https://glitch.com/edit/#!/activitytabs?path=index.html -->
+<!-- todo: clean -->
+
+
+<!-- ---------- -->
 ###### Root activities
 
-<!-- tab order left to right:
-[Bottom Up] [Call Tree] [Event Log]
--->
+<!-- resume here syncing text content -->
 
-Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.  The _activity tabs_ are the **Bottom-Up**, **Call Tree**, and **Event Log** tabs at the bottom of the **Performance** tool.  These tabs display root activities.
+Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.  The _activity tabs_ are the **Bottom-up**, **Call tree**, and **Event log** tabs at the bottom of the **Performance** tool.  These tabs display root activities.
 
-<!-- You can view the source files for the Activity Tabs Demo in the [MicrosoftEdge/Demos > devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) repo folder. -->
+<!-- upstream doc:
+You can view the source files for the Activity Tabs Demo in the [MicrosoftEdge/Demos > devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) repo folder. -->
 
 _Root activities_ are activities that cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` activity may cause other activities to run, such as a handler.
 
-In the flame chart of the **Main** section, root activities are at the top of the chart.  In the **Call Tree** and **Event Log** tabs, root activities are the top-level items.
+In the flame chart of the **Main** section, root activities are at the top of the chart.  In the **Call tree** and **Event log** tabs, root activities are the top-level items.
 
-For an example of root activities, see [The Call Tree tab](#the-call-tree-tab), below.
+For an example of root activities, see [The Call tree tab](#the-call-tree-tab), below.
 
 
-<!-- tab order left to right:
-[Bottom Up] [Call Tree] [Event Log]
+<!-- order of headings/sections & in sentences:
+
+upstream doc uses sequence & casing:
+[Call Tree] [Bottom-Up] [Event Log]
+
+downstream doc follows UI's tab sequence & casing:
+[Bottom-up] [Call tree] [Event log]
 -->
 
-###### The Bottom-Up tab
+
+<!-- ---------- -->
+###### The Bottom-up tab
 
 Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
 
-Use the **Bottom-Up** tab to view which activities directly took up the most time in aggregate.
+Use the **Bottom-up** tab to view which activities directly took up the most time in aggregate.
 
-The **Bottom-Up** tab only displays activities during the selected portion of the recording:
+The **Bottom-up** tab only displays activities during the selected portion of the recording:
 
-![The Bottom-Up tab](./reference-images/bottoms-up.png)
+![The Bottom-up tab](./reference-images/bottoms-up.png)
 
 To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
 
-In the **Main** section flame chart of the previous figure, almost all of the time was spent running the `a`, `b`, and `c` functions.  The top activities in the **Bottom-Up** tab of the previous figure are also `a`, `b`, and `c`. In the **Bottom-Up** tab, the next most expensive activity is `Minor GC`.
+In the **Main** section flame chart of the previous figure, almost all of the time was spent running the `a`, `b`, and `c` functions.  The top activities in the **Bottom-up** tab of the previous figure are also `a`, `b`, and `c`. In the **Bottom-up** tab, the next most expensive activity is `Minor GC`.
 
 The **Self Time** column represents the aggregated time spent directly in that activity, across all of the occurrences.
 
 The **Total Time** column represents aggregated time spent in that activity or any of the children.
 
 
-###### The Call Tree tab
+<!-- ---------- -->
+###### The Call tree tab
 
 Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
 
-Use the **Call Tree** tab to view which [root activities](#root-activities) cause the most work.
+Use the **Call tree** tab to view which [root activities](#root-activities) cause the most work.
 
-The **Call Tree** tab only displays activities during the selected portion of the recording:
+The **Call tree** tab only displays activities during the selected portion of the recording:
 
-![The Call Tree tab](./reference-images/call-tree.png)
+![The Call tree tab](./reference-images/call-tree.png)
 
 To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
 
@@ -619,13 +616,14 @@ By default the **Grouping** menu is set to **No Grouping**.  Use the **Grouping*
 Click **Show Heaviest Stack** (![Show Heaviest Stack](./reference-images/show-heaviest-stack-icon.png)) to reveal another table to the right of the **Activity** table.  Click on an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table displays which children of the selected activity took the longest time to run.
 
 
-###### The Event Log tab
+<!-- ---------- -->
+###### The Event log tab
 
-Use the **Event Log** tab to view activities in the order in which they occurred during the recording.
+Use the **Event log** tab to view activities in the order in which they occurred during the recording.
 
-The **Event Log** tab only displays activities during the selected portion of the recording:
+The **Event log** tab only displays activities during the selected portion of the recording:
 
-![The Event Log tab](./reference-images/event-log.png)
+![The Event log tab](./reference-images/event-log.png)
 
 To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
 
@@ -645,23 +643,9 @@ Clear the **Loading**, **Scripting**, **Rendering**, or **Painting** checkboxes 
 
 
 <!-- ------------------------------ -->
-#### View GPU activity
+#### View timings
 
-View GPU activity in the **GPU** section of the **Performance** tool:
-
-![The GPU section](./reference-images/gpu-zoomed.png)
-
-
-<!-- ------------------------------
-#### View raster activity
-
-TODO: wait for this bug to be fixed, and then add the section again
-https://bugs.chromium.org/p/chromium/issues/detail?id=1504808
-
-View raster activity in the **Raster** section of the **Performance** tool:
-
-![The Raster section](./reference-images/raster.png)
--->
+<!-- todo: copy text -->
 
 
 <!-- ------------------------------ -->
@@ -677,6 +661,34 @@ Click an interaction to view more information about it in the **Summary** tab.
 
 
 <!-- ------------------------------ -->
+#### View layout shifts
+
+<!-- todo: copy text -->
+
+
+<!-- ------------------------------ -->
+#### View animations
+
+<!-- todo: copy text -->
+
+
+<!-- ------------------------------ -->
+#### View GPU activity
+
+View GPU activity in the **GPU** section of the **Performance** tool:
+
+![The GPU section](./reference-images/gpu-zoomed.png)
+
+
+<!-- ------------------------------ -->
+#### View raster activity
+
+View raster activity in the **Thread Pool** section.
+
+![The Raster section](./reference-images/raster.png)<!-- todo: update -->
+
+
+<!-- ------------------------------ -->
 #### Analyze frames per second (FPS)
 
 DevTools provides two ways to analyze frames per second:
@@ -686,6 +698,7 @@ DevTools provides two ways to analyze frames per second:
 *  Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter), below.
 
 
+<!-- ---------- -->
 ###### The Frames section
 
 The **Frames** section tells you exactly how long a particular frame took.
@@ -741,7 +754,7 @@ Select the **Memory** checkbox to view memory metrics in a performance recording
 
 ![The Memory checkbox](./reference-images/memory-highlight.png)
 
-DevTools displays a new **Memory** chart, above the **Summary** tab.  There is also a new chart below the **NET** chart, called **HEAP**.  The **HEAP** chart provides the same information as the **JS Heap** line in the **Memory** chart:
+DevTools displays a new<!-- todo: delete "new"? --> **Memory** chart, above the **Summary** tab.  There is also a new<!-- todo: delete "new"? --> chart below the **NET** chart, called **HEAP**.  The **HEAP** chart provides the same information as the **JS Heap** line in the **Memory** chart:
 
 ![Memory metrics](./reference-images/memory-chart.png)
 
@@ -791,24 +804,21 @@ To view advanced layers information about a frame:
 The **Layers** tab works like the **Composited Layers** tab in the **3D View** tool.  To learn how to interact with the **Layers** tab, see [Navigate webpage layers, z-index, and DOM using the 3D View tool](../3d-view/index.md).
 
 
-<!-- ------------------------------
+<!-- ------------------------------ -->
 #### View paint profiler
-
-TODO: wait for this bug to be fixed and then add this section again
-https://bugs.chromium.org/p/chromium/issues/detail?id=1505065
 
 To view advanced information about a paint event:
 
 1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button, and then select the **Enable advanced rendering instrumentation (slow)** checkbox.
 
-1. Select a **Paint** event in the **Main** section. DevTools displays information about the paint event in the **Paint Profiler** tab:
+1. Select a **Paint** event in the **Main** section.  DevTools displays information about the paint event in the **Paint Profiler** tab:
 
    ![The Paint Profiler tab](./reference-images/paint-profiler.png)
--->
 
 
 <!-- ------------------------------ -->
 #### View CSS selector statistics
+<!-- downstream doc only -->
 
 To view statistics about the selectors of the CSS rules that got recalculated during a performance recording:
 
@@ -820,11 +830,17 @@ To view statistics about the selectors of the CSS rules that got recalculated du
 
 1. In the **Main** section, select a **Recalculate Style** event. In the **Selector Stats** tab, DevTools displays information about the selectors of the CSS rules that were recalculated during that event.
 
+See also:
+* [Analyze CSS selector performance during Recalculate Style events](./selector-stats.md)
+
 
 <!-- ------------------------------ -->
 #### View messages between windows, iframes, and dedicated workers
+<!-- downstream only, copied from
+[postMessage events and handlers are distinguished from other events on the timeline](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events-on-the-timeline) in _What's New in DevTools (Microsoft Edge 124)_
+-->
 
-The DevTools experiment **Timeline: Show postMessage dispatch and handling flows** improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application.
+The DevTools experiment **Performance panel: show postMessage dispatch and handling flows** improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application.
 
 Without this experiment, events that are triggered by dispatching and handling messages between threads of an application appear as generic scripting function-call events.  With this experiment enabled:
 * `postMessage` dispatch events appear as **Schedule postMessage**.
@@ -836,15 +852,12 @@ This experiment helps you investigate when a `postMessage` call occurred, and ho
 
 ![Arrows linking dispatch events to handler events](./reference-images/post-message-events-arrows.png)
 
-To use this feature, in DevTools, select **Customize and control DevTools** (![the Customize and control DevTools icon](./reference-images/customize-and-control-devtools-icon.png)) > **Settings** > **Experiments**, select the checkbox **Timeline: Show postMessage dispatch and handling flows**, click the **Close** (X) button, and then click the **Reload DevTools** button.
+To use this feature, in DevTools, select **Customize and control DevTools** (![the Customize and control DevTools icon](./reference-images/customize-and-control-devtools-icon.png)) > **Settings** > **Experiments**, select the checkbox **Performance panel: show postMessage dispatch and handling flows**, click the **Close** (X) button, and then click the **Reload DevTools** button.
 
 See also:
 * [Performance recording event reference](../evaluate-performance/performance-reference.md)
 * [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
 * [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
-<!--
-* [postMessage events and handlers are distinguished from other events on the timeline](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events-on-the-timeline) in _What's New in DevTools (Microsoft Edge 124)_.
--->
 
 
 <!-- ====================================================================== -->
@@ -922,6 +935,8 @@ See also:
 
 <!-- ------------------------------ -->
 #### Disable local fonts
+<!-- in downstream doc only, copied from
+[Emulate missing local fonts](../whats-new/2020/08/devtools.md#emulate-missing-local-fonts) in _What's New in DevTools (Microsoft Edge 86)_ -->
 
 In the **Rendering** tool, use the **Disable local fonts** checkbox to emulate missing `local()` sources in `@font-face` rules.
 
@@ -930,7 +945,6 @@ For example, when the **Rubik** font is installed on your device and the `@font-
 When **Disable local fonts** is selected, DevTools ignores the `local()` fonts and fetches each font from the network:
 
 ![Emulate missing local fonts](./reference-images/disable-local-fonts.png)
-<!-- copied from edge-developer\microsoft-edge\devtools-guide-chromium\whats-new\2020\08\devtools.md   ../../media/2020/08/disable-font.msft.png -->
 
 This feature is useful if you use two different copies of the same font during development, such as:
 *  A local font for your design tools.
@@ -942,11 +956,16 @@ Use **Disable local fonts** to make it easier to:
 *  Discover differences between local versions installed on your device and a web font.
 
 
-<!-- moved from "Fix memory problems" article -->
-<!-- todo: move instead to Perf tool article? -->
-<!-- Performance tool >  Memory checkbox -->
 <!-- ====================================================================== -->
 ## Visualize memory leaks (Performance tool: Memory checkbox)
+<!--
+in downstream doc only
+upstream: https://developer.chrome.com/docs/devtools/memory-problems#visualize_memory_leaks_with_timeline_recordings
+moved from "Fix memory problems" article
+todo: move instead to Perf tool article?  
+it would be best to match the upstream location ("Fix memory problems" > "Visualize memory leaks with Performance recordings") - requires revisit design of "Fix memory problems" vs upstream Memory > Overview page.
+this section is about the **Performance** tool >  **Memory** checkbox 
+-->
 
 As a starting point to investigate webpage memory usage, use the **Performance** tool's **Memory** checkbox.  (Or, [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](../memory-problems/microsoft-edge-browser-task-manager.md).)
 

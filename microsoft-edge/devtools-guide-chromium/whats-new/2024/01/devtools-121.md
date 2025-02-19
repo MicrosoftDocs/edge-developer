@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 121)
-description: "Z-index and DOM tabs in 3D View tool working correctly. Correct Hide debugger or Show debugger icon in Sources tool. Source map support in Coverage tool. Advanced filtering in Bottom-Up, Call Tree, and Event Log tabs in Performance tool. Window Controls Overlay section for PWAs, in Application tool's Manifest section. And more."
+description: "Z-index and DOM tabs in 3D View tool working correctly. Correct Hide debugger or Show debugger icon in Sources tool. Source map support in Coverage tool. Advanced filtering in Bottom-up, Call tree, and Event log tabs in Performance tool. Window Controls Overlay section for PWAs, in Application tool's Manifest section. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -67,18 +67,18 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Advanced filtering capabilities in the Bottom-Up, Call Tree, and Event Log tabs in the Performance tool
+## Advanced filtering capabilities in the Bottom-up, Call tree, and Event log tabs in the Performance tool
 
-<!-- Subtitle: Use advanced filters (Match Case, Use Regular Expression, and Match whole word) in the Performance tool's Bottom-Up, Call Tree, and Event Log tabs, to give more focused results. -->
+<!-- Subtitle: Use advanced filters (Match Case, Use Regular Expression, and Match whole word) in the Performance tool's Bottom-up, Call tree, and Event log tabs, to give more focused results. -->
 
-In the **Performance** tool, the following advanced filtering buttons were added to the **Bottom-Up**, **Call Tree**, and **Event Log** tabs:
+In the **Performance** tool, the following advanced filtering buttons were added to the **Bottom-up**, **Call tree**, and **Event log** tabs:
 * **Match Case**.
 * **Use Regular Expression**.
 * **Match whole word**.
 
-![The 'Match Case', 'Use Regular Expression', and 'Match whole word' buttons in the Performance tool's Bottom-Up, Call Tree, and Event Log tabs](./devtools-121-images/advanced-filters.png)
+![The 'Match Case', 'Use Regular Expression', and 'Match whole word' buttons in the Performance tool's Bottom-up, Call tree, and Event log tabs](./devtools-121-images/advanced-filters.png)
 
-Also, in the **Bottom-Up** tab, the filter has been updated to now only apply to the top-level items, instead of matching every node.
+Also, in the **Bottom-up** tab, the filter has been updated to now only apply to the top-level items, instead of matching every node.
 
 See also:
 * [Analyze runtime performance (tutorial)](../../../evaluate-performance/index.md)
@@ -112,7 +112,7 @@ Microsoft Edge 121 also includes the following updates from the Chromium project
 * [Improved source map support](https://developer.chrome.com/blog/new-in-devtools-121#variables)
 * [Performance panel improvements](https://developer.chrome.com/blog/new-in-devtools-121#perf)
    * [Enhanced Interactions track](https://developer.chrome.com/blog/new-in-devtools-121#interactions)
-   * [Advanced filtering in Bottom-Up, Call Tree, and Event Log tabs](https://developer.chrome.com/blog/new-in-devtools-121#filters)
+   * [Advanced filtering in Bottom-up, Call tree, and Event log tabs](https://developer.chrome.com/blog/new-in-devtools-121#filters)
 * [Indentation markers in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-121#sources)
 * [Helpful tooltips for overridden headers and content in the Network panel](https://developer.chrome.com/blog/new-in-devtools-121#overrides)
 * [New Command Menu options for adding and removing request blocking patterns](https://developer.chrome.com/blog/new-in-devtools-121#command-menu)

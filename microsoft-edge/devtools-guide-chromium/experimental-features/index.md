@@ -463,9 +463,6 @@ Status:
 
 <!-- ====================================================================== -->
 ## Performance panel: show postMessage dispatch and handling flows
-<!-- was:
-## Timeline: Show postMessage dispatch and handling flows
--->
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 124_
