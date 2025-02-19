@@ -190,7 +190,7 @@ To view detailed paint instrumentation:
 
 1. Select the **Enable advanced paint instrumentation (slow)**<!-- 2025-02-14 ui --> checkbox.
 
-To learn how to interact with the paint information, see [View layers information](#view-layers-information), below, and [View paint profiler](#view-p), below.
+To learn how to interact with the paint information, see [View layers information](#view-layers-information), below, and [View paint profiler](#view-paint-profiler), below.
 
 
 <!-- ====================================================================== -->

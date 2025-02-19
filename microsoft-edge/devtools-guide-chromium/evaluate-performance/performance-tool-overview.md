@@ -164,7 +164,7 @@ When you are ready to record, the **Performance** tool gives you the following o
 * [Record load performance](./reference.md#record-load-performance) in _Performance features reference_.
 * [Capture screenshots while recording](./reference.md#capture-screenshots-while-recording) in _Performance features reference_.
 * [Force garbage collection while recording](./reference.md#force-garbage-collection-while-recording) in _Performance features reference_.
-* [Save a recording](./reference.md#save-a-recording) in _Performance features reference_.
+* [Save and share a recording](./reference.md#save-and-share-a-recording) in _Performance features reference_.
 * [Load a recording](./reference.md#load-a-recording) in _Performance features reference_.
 * [Clear the previous recording](./reference.md#clear-the-previous-recording) in _Performance features reference_.
 
@@ -178,7 +178,7 @@ Select the following options from the **Capture settings** menu:
 
 * Select the **Disable JavaScript samples** checkbox:  Disables the recording of the JavaScript call stacks displayed in the Main track that are called during the recording.  Reduces performance overhead.  See [Disable JavaScript samples](../evaluate-performance/reference.md#disable-javascript-samples) in _Performance features reference_.
 
-* Select the **Enable advanced rendering instrumentation (slow)** checkbox:  Captures advanced paint instrumentation.  Significantly hinders performance.  See [Turn on advanced rendering instrumentation](../evaluate-performance/reference.md#turn-on-advanced-rendering-instrumentation) in _Performance features reference_.
+* Select the **Enable advanced rendering instrumentation (slow)** checkbox:  Captures advanced paint instrumentation.  Significantly hinders performance.  See [Enable advanced paint instrumentation](../evaluate-performance/reference.md#enable-advanced-paint-instrumentation) in _Performance features reference_.
 
 * Select the **Enable CSS selector stats (slow)** checkbox: Captures CSS selector statistics.  Significantly hinders performance.  See [View CSS selector costs in the Performance tool sidebar](../whats-new/2024/11/devtools-131.md#view-css-selector-costs-in-the-performance-tool-sidebar) in _What's New in DevTools (Microsoft Edge 131)_.
 

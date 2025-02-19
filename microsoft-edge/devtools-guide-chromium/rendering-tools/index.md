@@ -179,7 +179,7 @@ To find out how long painting takes, or how often painting occurs:
 
 1. Take a recording.
 
-If most of your rendering time is spent painting, you have paint problems.  For more information, see [Turn on advanced rendering instrumentation](../evaluate-performance/reference.md#turn-on-advanced-rendering-instrumentation) in _Performance features reference_.
+If most of your rendering time is spent painting, you have paint problems.  For more information, see [Enable advanced paint instrumentation](../evaluate-performance/reference.md#enable-advanced-paint-instrumentation) in _Performance features reference_.
 
 
 <!--
