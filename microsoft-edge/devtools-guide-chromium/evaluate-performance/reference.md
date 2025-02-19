@@ -958,14 +958,12 @@ Use **Disable local fonts** to make it easier to:
 
 <!-- ====================================================================== -->
 ## Visualize memory leaks (Performance tool: Memory checkbox)
-<!--
-in downstream doc only
-upstream: https://developer.chrome.com/docs/devtools/memory-problems#visualize_memory_leaks_with_timeline_recordings
-moved from "Fix memory problems" article
-todo: move instead to Perf tool article?  
-it would be best to match the upstream location ("Fix memory problems" > "Visualize memory leaks with Performance recordings") - requires revisit design of "Fix memory problems" vs upstream Memory > Overview page.
-this section is about the **Performance** tool >  **Memory** checkbox 
--->
+<!-- This h2 is in downstream version of this doc only.
+todo: move this h2 section to a Perf tool article?
+In upstream docs, this h2 section is in https://developer.chrome.com/docs/devtools/memory-problems#visualize_memory_leaks_with_timeline_recordings
+Moved this h2 section from downstream (redesigned) "Fix memory problems" article.
+It would be best to match the upstream location ("Fix memory problems" > "Visualize memory leaks with Performance recordings") - requires revisit design of "Fix memory problems" vs. the upstream Memory > Overview page.
+This section is about the **Performance** tool >  **Memory** checkbox - which is doc'd in [View memory metrics](#view-memory-metrics), above. -->
 
 As a starting point to investigate webpage memory usage, use the **Performance** tool's **Memory** checkbox.  (Or, [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](../memory-problems/microsoft-edge-browser-task-manager.md).)
 
