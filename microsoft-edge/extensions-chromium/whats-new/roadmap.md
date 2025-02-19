@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/14/2024
+ms.date: 02/14/2025
 ---
 # Roadmap for Microsoft Edge Add-ons
 <!-- https://aka.ms/EdgeAddonsRoadmap -->
@@ -20,6 +20,14 @@ These are the next planned [Partner Center](https://partner.microsoft.com/dashbo
 As of September 6, 2024, both v1.1 and v1 of the Update REST API are supported.  Support for v1 will end on December 31, 2024.
 
 See [Using the REST API for updating Microsoft Edge Add-ons](../update/api/using-addons-api.md).
+
+
+<!-- ====================================================================== -->
+## Native Client (NaCl) no longer supported
+
+Native Client (NaCl) was supported through Edge version 115.  In 116 to 119, NaCl was only usable by enabling an enterprise policy.  Starting with 120 (December 2023), support for NaCl was completely removed.
+
+To enhance web security and performance, Native Client (NaCl) is no longer supported by Microsoft Edge (along with other browsers).  WebAssembly (Wasm) is recommended instead of NaCl; see [Run compiled code in an extension](../developer-guide/run-compiled-code.md).
 
 
 <!-- ====================================================================== -->
