@@ -160,10 +160,22 @@ After doing the above setup, debug your WebView2 app, as follows.
 
    The app output shows "This is the very first line of code that executes", because of the line `console.log("This is the very first line of code that executes.");` in the file `WebView2Samples\SampleApps\WebView2APISample\assets\ScenarioJavaScriptDebugIndex.html`.
 
+
 <!-- ====================================================================== -->
 ## Source maps with `WebResourceRequested` event or virtual host name mapping
 
-Source maps are needed to debug the source code of compiled content like transpiled JavaScript (e.g. TypeScript, minified JavaScript) or CSS (e.g. SASS, SCSS). WebView2 does not load source maps referenced by content which was loaded using either [WebResourceRequested event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event) or [virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping). See details and solutions for [WebResourceRequested event here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping), and for [virtual host name mapping here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping).
+Source maps are needed to debug the source code of compiled content, such as:
+* Transpiled JavaScript, such as TypeScript or minified JavaScript.
+* CSS, such as SASS or SCSS.
+
+WebView2 doesn't load source maps that are referenced by content which was loaded by using either:
+* The `WebResourceRequested` event.  See:
+   * [Loading local content by handling the WebResourceRequested event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event) in _Using local content in WebView2 apps_.
+   * [Source maps with WebResourceRequested event](../concepts/working-with-local-content.md#source-maps-with-webresourcerequested-event) in _Using local content in WebView2 apps_.
+* Virtual host name mapping.  See:
+   * [Loading local content by using virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping) in _Using local content in WebView2 apps_.
+   * [Source maps with virtual host name mapping](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping) in _Using local content in WebView2 apps_.
+
 
 <!-- ====================================================================== -->
 ## Troubleshooting
