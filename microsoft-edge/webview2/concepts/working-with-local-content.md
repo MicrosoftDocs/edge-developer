@@ -486,6 +486,7 @@ When loading content via a file URL or a virtual host name mapping, the resoluti
 
 This can take some time. Make sure to limit calls to `AddWebResourceRequestedFilter` to only the web resources that must raise the `WebResourceRequested` event.
 
+
 <!-- ---------- -->
 ###### Source maps with WebResourceRequested event
 
@@ -493,7 +494,8 @@ Source maps are needed to debug the source code of compiled content like transpi
 
 To use source maps along with `WebResourceRequested`, choose one of the following approaches:
 - Generate inline source maps during compilation of your content. Inline source maps are embedded to the corresponding compiled file.
-- Inline separate source maps to the content at runtime in your `WebResourceRequested` event handler. Use this approach only if your content build system does not support inlining source maps.
+- Inline separate source maps to the content at runtime in your `WebResourceRequested` event handler. Use this approach only if your content build system does not support inline source maps.
+
 
 <!-- ------------------------------ -->
 #### APIs for loading local content by handling the WebResourceRequested event
