@@ -490,11 +490,13 @@ This can take some time. Make sure to limit calls to `AddWebResourceRequestedFil
 <!-- ---------- -->
 ###### Source maps with WebResourceRequested event
 
-Source maps are needed to debug the source code of compiled content like transpiled JavaScript (e.g. TypeScript, minified JavaScript) or CSS (e.g. SASS, SCSS). WebView2 does not load source maps referenced by content which was loaded using `WebResourceRequested` event. Consider the following example. You load JavaScript file `main.js` in your `WebResourceRequested` event handler by setting `WebResourceRequestedArgs.Response`. If `main.js` references `main.js.map` as its source map, then `main.js.map` will neither be loaded automatically nor your `WebResourceRequested` event handler will be called again to load it.
+Source maps are needed to debug the source code of compiled content like transpiled JavaScript (e.g. TypeScript, minified JavaScript) or CSS (e.g. SASS, SCSS). WebView2 does not load source maps referenced by content which was loaded using `WebResourceRequested` event.
+
+Consider the following example. You load JavaScript file `main.js` in your `WebResourceRequested` event handler by setting the `CoreWebView2WebResourceRequestedEventArgs.Response` property.  If `main.js` references `main.js.map` as its source map, then `main.js.map` will neither be loaded automatically, nor will your `WebResourceRequested` event handler be called again to load it.
 
 To use source maps along with `WebResourceRequested`, choose one of the following approaches:
 - Generate inline source maps during compilation of your content. Inline source maps are embedded to the corresponding compiled file.
-- Inline separate source maps to the content at runtime in your `WebResourceRequested` event handler. Use this approach only if your content build system does not support inline source maps.
+- Inline separate source maps to the content at runtime in your `WebResourceRequested` event handler.  Use this approach only if your content build system does not support inline source maps.
 
 
 <!-- ------------------------------ -->
@@ -505,16 +507,19 @@ To use source maps along with `WebResourceRequested`, choose one of the followin
 
 * [CoreWebView2.NavigateWithWebResourceRequest Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
 * [CoreWebView2.WebResourceRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
+* [CoreWebView2WebResourceRequestedEventArgs.Response Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs.response)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2.NavigateWithWebResourceRequest Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigatewithwebresourcerequest)
 * [CoreWebView2.WebResourceRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourcerequested)
+* [CoreWebView2WebResourceRequestedEventArgs.Response Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs#response)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2_2::NavigateWithWebResourceRequest method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
 * [ICoreWebView2::WebResourceRequested event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
+* [ICoreWebView2WebResourceRequestedEventArgs::get_Response](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs#get_response)
 
 ---
 
