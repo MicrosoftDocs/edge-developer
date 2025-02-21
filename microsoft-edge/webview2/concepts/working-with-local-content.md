@@ -361,6 +361,7 @@ Local content that's loaded via virtual host name mapping has an HTTP or HTTPS U
 
 Virtual host name URLs are resolved in WebView2 processes. This is a faster option than `WebResourceRequested`, which resolves in the host app process UI thread.
 
+
 <!-- ---------- -->
 ###### Source maps with virtual host name mapping
 
@@ -368,7 +369,8 @@ Source maps are needed to debug the source code of compiled content like transpi
 
 To use source maps along with virtual host name mapping, choose one of the following approaches:
 - Generate inline source maps during compilation of your content. Inline source maps are embedded to the corresponding compiled file.
-- Use `WebResourceRequested` event instead, and inline separate source maps to the content at runtime in your `WebResourceRequested` event handler. Use this approach only if your content build system does not support inlining source maps.
+- Use `WebResourceRequested` event instead, and inline separate source maps to the content at runtime in your `WebResourceRequested` event handler. Use this approach only if your content build system does not support inline source maps.
+
 
 <!-- ------------------------------ -->
 #### APIs for loading local content by using virtual host name mapping
