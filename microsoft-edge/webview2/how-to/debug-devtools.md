@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/07/2022
+ms.date: 02/21/2025
 ---
 # Debug WebView2 apps with Microsoft Edge DevTools
 
@@ -38,10 +38,24 @@ An app can also use the `OpenDevToolsWindow` API to programmatically open a DevT
 
 If none of the above approaches are available, you can add `--auto-open-devtools-for-tabs` to the browser arguments via an environment variable or registry key.  This approach will open a DevTools window when a WebView2 is created.
 
-<!-- ====================================================================== -->
-## Source maps with `WebResourceRequested` event or virtual host name mapping
 
-Source maps are needed to debug the source code of compiled content like transpiled JavaScript (e.g. TypeScript, minified JavaScript) or CSS (e.g. SASS, SCSS). WebView2 does not load source maps referenced by content which was loaded using either [WebResourceRequested event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event) or [virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping). See details and solutions for [WebResourceRequested event here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping), and for [virtual host name mapping here](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping).
+<!-- ====================================================================== -->
+## Source maps with the `WebResourceRequested` event or virtual host name mapping
+
+Source maps are needed to debug the source code of compiled content, such as:
+* Transpiled JavaScript, such as TypeScript or minified JavaScript.
+* Compiled CSS, such as SASS or SCSS.
+
+WebView2 doesn't load source maps that are referenced by content which was loaded by using either approach:
+
+* The `WebResourceRequested` event.  See:
+   * [Loading local content by handling the `WebResourceRequested` event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event) in _Using local content in WebView2 apps_.
+   * [Source maps with the `WebResourceRequested` event](../concepts/working-with-local-content.md#source-maps-with-the-webresourcerequested-event) in _Using local content in WebView2 apps_.
+
+* Virtual host name mapping.  See:
+   * [Loading local content by using virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping) in _Using local content in WebView2 apps_.
+   * [Source maps with virtual host name mapping](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping) in _Using local content in WebView2 apps_.
+
 
 <!-- ====================================================================== -->
 ## See also

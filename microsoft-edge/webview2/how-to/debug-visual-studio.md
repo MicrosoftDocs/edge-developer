@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 09/17/2024
+ms.date: 02/21/2025
 ---
 # Debug WebView2 apps with Visual Studio
 
@@ -162,16 +162,18 @@ After doing the above setup, debug your WebView2 app, as follows.
 
 
 <!-- ====================================================================== -->
-## Source maps with `WebResourceRequested` event or virtual host name mapping
+## Source maps with the `WebResourceRequested` event or virtual host name mapping
 
 Source maps are needed to debug the source code of compiled content, such as:
 * Transpiled JavaScript, such as TypeScript or minified JavaScript.
-* CSS, such as SASS or SCSS.
+* Compiled CSS, such as SASS or SCSS.
 
-WebView2 doesn't load source maps that are referenced by content which was loaded by using either:
+WebView2 doesn't load source maps that are referenced by content which was loaded by using either approach:
+
 * The `WebResourceRequested` event.  See:
-   * [Loading local content by handling the WebResourceRequested event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event) in _Using local content in WebView2 apps_.
-   * [Source maps with WebResourceRequested event](../concepts/working-with-local-content.md#source-maps-with-webresourcerequested-event) in _Using local content in WebView2 apps_.
+   * [Loading local content by handling the `WebResourceRequested` event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event) in _Using local content in WebView2 apps_.
+   * [Source maps with the `WebResourceRequested` event](../concepts/working-with-local-content.md#source-maps-with-the-webresourcerequested-event) in _Using local content in WebView2 apps_.
+
 * Virtual host name mapping.  See:
    * [Loading local content by using virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping) in _Using local content in WebView2 apps_.
    * [Source maps with virtual host name mapping](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping) in _Using local content in WebView2 apps_.
