@@ -10,7 +10,7 @@ ms.date: 07/12/2023
 ---
 # Console overview
 
-The **Console** is like an intelligent, rich command line within DevTools, and is great companion tool to use with others tools.  The **Console** provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript.
+The **Console** is like an intelligent, rich command line within DevTools, and is a great companion tool to use with other tools.  The **Console** provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript.
 
 The **Console** tool helps with several tasks, which are covered in more detail in the following articles:
 
