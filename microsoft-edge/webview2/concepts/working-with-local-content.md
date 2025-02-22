@@ -373,11 +373,7 @@ WebView2 doesn't load source maps that are referenced by content which was loade
 
 For example, suppose WebView2 loads `main.js` via virtual host name mapping.  If `main.js` references `main.js.map` as its source map, `main.js.map` will not be loaded automatically.
 
-To use source maps along with virtual host name mapping, use one of the following approaches:
-
-* Generate inline source maps during compilation of your content.  Inline source maps are embedded within the corresponding compiled file.
-
-* Or, use `WebResourceRequested` event instead,<!-- todo: instead of what? virtual host name mapping? if so, contradicts "To use source maps along with virtual host name mapping" --> and inline separate source maps to the content at runtime in your `WebResourceRequested` event handler.  Use this approach only if your build system doesn't support inline source maps.
+To use source maps along with virtual host name mapping, generate inline source maps during compilation of your content.  Inline source maps are embedded within the corresponding compiled file.
 
 
 <!-- ------------------------------ -->
