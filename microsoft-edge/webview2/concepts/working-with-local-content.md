@@ -480,7 +480,7 @@ When loading local content via `WebResourceRequested`, you specify the local con
 <!-- ---------- -->
 ###### Additional web resources
 
-`WebResourceRequested` modifies the content that's loaded via HTTP or HTTPS URLs, which support relative URL resolution. This means that the resulting document can have references to additional web resources such as CSS, script, or image files that are also served via `WebResourceRequested`, except [source maps](#source-maps- with-webresourcerequested-event).
+`WebResourceRequested` modifies the content that's loaded via HTTP or HTTPS URLs, which support relative URL resolution. This means that the resulting document can have references to additional web resources such as CSS, script, or image files that are also served via `WebResourceRequested`, except source maps; see [Source maps with the `WebResourceRequested` event](#source-maps-with-the-webresourcerequested-event), below.
 
 
 <!-- ---------- -->
@@ -504,7 +504,7 @@ Source maps are needed to debug the source code of compiled content, such as:
 
 WebView2 doesn't load source maps that are referenced by content which was loaded by using the `WebResourceRequested` event.
 
-For example, suppose you load `main.js` in your `WebResourceRequested` event handler by setting the `Response` property in `CoreWebView2WebResourceRequestedEventArgs`.  If `main.js` references `main.js.map` as its source map:
+For example, suppose you load `main.js` in your `WebResourceRequested` event handler by setting the `Response` property of `CoreWebView2WebResourceRequestedEventArgs`.  If `main.js` references `main.js.map` as its source map:
 * `main.js.map` will not be loaded automatically.
 * Your `WebResourceRequested` event handler will not be called again to load `main.js.map`.
 
