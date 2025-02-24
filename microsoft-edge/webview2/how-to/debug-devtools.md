@@ -42,7 +42,7 @@ If none of the above approaches are available, you can add `--auto-open-devtools
 <!-- ====================================================================== -->
 ## Source maps with the `WebResourceRequested` event or virtual host name mapping
 
-Source maps are needed to debug the source code of compiled content, such as:
+Source maps are needed to debug the source code of compiled content, including:
 * Transpiled JavaScript, such as TypeScript or minified JavaScript.
 * Compiled CSS, such as SASS or SCSS.
 

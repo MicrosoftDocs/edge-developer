@@ -164,7 +164,7 @@ After doing the above setup, debug your WebView2 app, as follows.
 <!-- ====================================================================== -->
 ## Source maps with the `WebResourceRequested` event or virtual host name mapping
 
-Source maps are needed to debug the source code of compiled content, such as:
+Source maps are needed to debug the source code of compiled content, including:
 * Transpiled JavaScript, such as TypeScript or minified JavaScript.
 * Compiled CSS, such as SASS or SCSS.
 

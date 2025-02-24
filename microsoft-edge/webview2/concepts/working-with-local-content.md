@@ -365,7 +365,7 @@ Virtual host name URLs are resolved in WebView2 processes.  This is a faster opt
 <!-- ---------- -->
 ###### Source maps with virtual host name mapping
 
-Source maps are needed to debug the source code of compiled content, such as:
+Source maps are needed to debug the source code of compiled content, including:
 * Transpiled JavaScript, such as TypeScript or minified JavaScript.
 * Compiled CSS, such as SASS or SCSS.
 
@@ -494,7 +494,7 @@ This can take some time. Make sure to limit calls to `AddWebResourceRequestedFil
 <!-- ---------- -->
 ###### Source maps with the `WebResourceRequested` event
 
-Source maps are needed to debug the source code of compiled content, such as:
+Source maps are needed to debug the source code of compiled content, including:
 * Transpiled JavaScript, such as TypeScript or minified JavaScript.
 * Compiled CSS, such as SASS or SCSS.
 
