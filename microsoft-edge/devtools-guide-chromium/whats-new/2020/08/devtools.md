@@ -233,7 +233,7 @@ For more information, see [Filter issues by origin](../../../issues/index.md#fil
 <!-- ------------------------------ -->
 #### Emulate missing local fonts
 
-<!-- copied section to regular docs -->
+<!-- copied section to regular docs "Disable local fonts" h4 -->
 
 In the **Rendering** tool, use the new **Disable local fonts** checkbox to emulate missing `local()` sources in `@font-face` rules.
 
@@ -254,9 +254,9 @@ Use **Disable local fonts** to make it easier to:
 
 Chromium issue: [#384968](https://crbug.com/384968)
 
-For more information, see [Disable local fonts](../../../evaluate-performance/reference.md#disable-local-fonts) in _Performance features reference_.
-
-See also [Analyze rendering performance with the Rendering tool](../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.
+See also:
+* [Analyze rendering performance with the Rendering tool](../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.<!-- line 864, h2 -->
+   * [Disable local fonts](../../../evaluate-performance/reference.md#disable-local-fonts) in _Performance features reference_.<!-- line 937, h4 -->
 
 
 <!-- ------------------------------ -->

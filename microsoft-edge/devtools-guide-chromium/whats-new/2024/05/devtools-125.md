@@ -42,6 +42,7 @@ The **Selector Stats** tab has the following changes:
 
 See also:
 * [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [View CSS selector statistics](../../../evaluate-performance/reference.md#view-css-selector-statistics) in _Performance features reference_.
 
 
 <!-- ====================================================================== -->

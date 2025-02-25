@@ -90,5 +90,5 @@ For details, see [Map the processed code to your original source code, for debug
 <!-- ====================================================================== -->
 ## See also
 
-* [Introduction to the Performance tool](index.md) - An introduction to analyzing runtime performance in DevTools.
+* [Analyze runtime performance (tutorial)](index.md) - An introduction to analyzing runtime performance in DevTools.
 * [Performance features reference](reference.md), - A reference for many of the features offered in the Performance tool.
