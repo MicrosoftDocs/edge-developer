@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/13/2025
+ms.date: 02/24/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -23,8 +23,6 @@ ms.date: 02/13/2025
    limitations under the License.  -->
 # Performance features reference
 <!-- https://developer.chrome.com/docs/devtools/performance/reference -->
-
-<!-- todo: add missing headings -->
 
 This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
@@ -69,7 +67,7 @@ The images in this page show DevTools undocked into its own, dedicated window. T
       * [The Bottom-up tab](#the-bottom-up-tab)
       * [The Call tree tab](#the-call-tree-tab)
       * [The Event log tab](#the-event-log-tab)
-   * [View timings](#view-timings)
+   * [View custom timings](#view-custom-timings)
    * [View interactions](#view-interactions)
    * [View layout shifts](#view-layout-shifts)
    * [View animations](#view-animations)
@@ -257,19 +255,20 @@ To learn how to interact with the paint information, see [View layers informatio
 <!-- ====================================================================== -->
 ## Annotate a recording and share it
 
-Once a performance trace is recorded, you can analyze it, and annotate it to share your findings.
+Once a performance trace is [recorded](#record-performance), you can [analyze](#analyze-a-performance-recording) it, and annotate it to share your findings.
 
-To annotate a recording, open the **Annotations** tab in the left_panel_open sidebar on the left of the **Performance** panel.  There are several ways to add an annotation:
+To annotate a recording, open the **Annotations** tab in the ![The Show sidebar icon](./reference-images/show-sidebar-icon.png) sidebar on the left of the **Performance** .  There are several ways to add an annotation:
 
-* Label item: To add a label to an item, double-click it and type a label.
+* **Label item**: To add a label to an item, double-click it and type a label.
 
-* Connect two items: To connect two items with an arrow, double-click the first item, click an arrow next to it, then click the second item.
+* **Connect two items**: To connect two items with an arrow, double-click the first item, click an arrow next to it, then click the second item.
 
-* Label a time range: To label an arbitrary time range, shift-drag from the start of a time range to its end, then type a label.
+* **Label a time range**: To label an arbitrary time range, shift-drag from the start of a time range to its end, then type a label.
 
-![Annotations on a performance recording]()
+<!-- ![Annotations on a performance recording](todo) -->
 
-In this example, in the **Network** track, there are two annotated requests, a connection between them, and an annotated time range highlighted in pink.  The **Annotations** tab shows the number of annotations next to its tab name, in this example, 4.
+<!-- uncomment after png
+In this example, in the **Network** track, there are two annotated requests, a connection between them, and an annotated time range highlighted in pink.  The **Annotations** tab shows the number of annotations next to its tab name, in this example, 4. -->
 
 To delete an annotation, hover over it in the **Annotations** tab and then click the **Delete** button next to it.
 
@@ -279,9 +278,9 @@ To hide annotations from the performance trace, select **Hide annotations** at t
 <!-- ------------------------------ -->
 #### Save and share a recording
 
-To save a recording as a file on your device and later share it with your annotated performance findings, in the action bar at the top of the **Performance** panel, click the **Save profile** (![The Save profile icon](./reference-images/save-profile-icon.png)) button, and then select **Save trace**.
+To save a recording as a file on your device and later share it with your annotated performance findings, in the action bar at the top of the **Performance** tool, click the **Save profile** (![The Save profile icon](./reference-images/save-profile-icon.png)) button, and then select **Save trace**.
 
-![Save trace with annotations]()
+<!-- ![Save trace with annotations](todo) -->
 
 Alternatively, select **Save trace without annotations**.
 
@@ -292,19 +291,17 @@ Instead of clicking the **Save profile** (![The Save profile icon](./reference-i
 
 <!-- ------------------------------ -->
 #### Load a recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#load -->
 
-<!-- todo: clean up new/old cmts -->
-<!-- new: -->
-To load a recording from a file, click the **Load profile** (![The Load profile icon](./reference-images/load-profile-icon.png)) button in the action bar at the top of the **Performance** panel.
+To load a recording from a file, click the **Load profile** (![The Load profile icon](./reference-images/load-profile-icon.png)) button in the action bar at the top of the **Performance** tool.
 
-![Load trace button in the action bar]()
+![Load trace button via button in the action bar](./reference-images/load-profile-via-button.png)
 
-The **Performance** panel will show annotations if they are present in the trace.
+The **Performance** tool will show annotations if they are present in the trace.
 
-<!-- old: confirm ui -->
-Alternatively, to load a recording from a file, right-click in the **Performance** tool and then select **Load profile**:
+Or, right-click in the **Performance** tool, and then select **Load profile**:
 
-![The 'Load profile' right-click menuitem](./reference-images/load-profile.png)
+![The 'Load profile' right-click menuitem](./reference-images/load-profile-via-right-click.png)
 
 You can right-click in an existing recording, or on the screen that's displayed in the **Performance** tool when there are no recordings.
 
@@ -319,6 +316,7 @@ After making a recording, to remove that recording from the **Performance** tool
 
 <!-- ====================================================================== -->
 ## Analyze a performance recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#analyze -->
 
 After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** tool displays a lot of data about the recording.  Use the recorded data to analyze the performance of your webpage.
 
@@ -326,7 +324,7 @@ After you [record runtime performance](#record-runtime-performance) or [record l
 <!-- ------------------------------ -->
 #### Get actionable insights
 
-The **Performance** tool consolidates performance insights from the **Lighthouse** report and the now deprecated **Performance insights**<!-- todo --> panel.  These insights can suggest ways to improve performance and provide guided analysis on the following performance issues, including but not limited to:
+The **Performance** tool shows performance insights, including insights from the **Lighthouse** report.  These insights can suggest ways to improve performance and provide guided analysis on the following performance issues, such as:
 
 * LCP and INP by subpart
 * LCP request discovery
@@ -340,11 +338,11 @@ The **Performance** tool consolidates performance insights from the **Lighthouse
 
 To make use of insights:
 
-1. Make a performance recording.
+1. Make a performance recording, per [Record performance](#record-performance), above.
 
-1. In the left sidebar of the **Performance** tool, open the **Insights** tab, expand different sections, and hover over and click items.  The **Performance** tool highlights the corresponding events in the trace.
+1. In the left sidebar of the **Performance** tool, open the **Insights** tab, expand different sections, and hover over and click items.  The **Performance** tool highlights the corresponding events in the trace:
 
-<!-- ![]() -->
+   ![Hovering over entries in the Insights tab ](./reference-images/insights-tab.png)
 
 
 <!-- ------------------------------ -->
@@ -360,17 +358,19 @@ To closely inspect your performance recording, you can select a portion of a rec
 
 Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
 
-![The Timeline overview under the action bar](./reference-images/timeline-overview.png)
+<!-- ![The Timeline overview under the action bar](./reference-images/timeline-overview.png) - todo: real png -->
 
-To select a portion of a recording, click and hold, then drag left or right across the Timeline overview.
+To select a portion of a recording, click and hold, then drag left or right across the **Timeline overview**.
 
 ![Select a portion of a recording](./reference-images/select-portion.png)
+
 
 To select a portion using the keyboard:
 
 1. Focus the **Main** track or any of its neighbors.
 
 1. Use the **W**, **A**, **S**, **D** keys to zoom in, move left, zoom out, and move right, respectively.
+
 
 To select a portion using a trackpad:
 
@@ -421,17 +421,20 @@ To create and use breadcrumbs:
 
 1. In **Timeline overview**, [select a portion of the recording](#select-a-portion-of-a-recording) (above).
 
-1. Hover over the selection and click the **N ms** (![Zoom in icon](./reference-images/zoom-in-icon.png))<!-- todo: real icon png --> button.  The selection expands to fill the **Timeline overview**.  A chain of breadcrumbs starts building at top of the **Timeline overview**.
+1. Hover over the selection, and then click the **N ms** (![Zoom in icon](./reference-images/zoom-in-icon.png)) button:
+
+   ![Jumping to a chosen zoom level](./reference-images/breadcrumb-zoom.png)
+
+   The selection expands to fill the **Timeline overview**.  A chain of breadcrumbs starts building at top of the **Timeline overview**.
 
 1. Repeat the previous two steps to create another nested breadcrumb.  You can continue to nest breadcrumbs as long as the selection range is greater than 5 milliseconds.
 
-1. To jump to a chosen zoom level, click the corresponding breadcrumb in the chain at top of the **Timeline overview**:
+1. To jump to a chosen zoom level, click the corresponding breadcrumb in the chain at top of the **Timeline overview**.
 
-![Jumping to a chosen zoom level](./reference-images/breadcrumb-zoom.png)
 
 To remove the children of a breadcrumb, right-click the parent breadcrumb and then select **Remove child breadcrumbs**:
 
-![Removing the children of a breadcrumb](./reference-images/remove-childs.png)
+![Removing the children of a breadcrumb](./reference-images/remove-child-breadcrumbs.png)
 
 
 <!-- ---------- -->
@@ -451,18 +454,16 @@ To open the search box at the bottom of the **Performance** tool:
 
 1. Press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).
 
-   The search box appears at the bottom of the **Performance** tool:<!-- todo: is tooltip Find or Search?  gray text is Find -->
+   The **Find** box appears at the bottom of the **Performance** tool:
 
    ![The search box](./reference-images/search-regex.png)
 
-1. Enter a query in the search box, such as "recalculate style", to find all activities that match that query.
+1. In the **Find** box, enter a query, such as "recalculate style".
 
-   The matching activities are highlighted in the **Main** section as you type, and the total number of matches appears in the search box. The first matching activity is selected, outlined in blue:
+   The matching activities are highlighted in the **Main** section as you type, and the total number of matches appears in the search box.  The first matching activity is selected, outlined in blue:
 
    ![The search box with a query and highlighted activities](./reference-images/search-highlighted.png)
 
-
-<!-- todo: wording differs, check -->
 
 To navigate among the activities that match your query:
 
@@ -470,11 +471,15 @@ To navigate among the activities that match your query:
 
 * To select the previous activity, press **Shift+Enter** or click the **Previous** (![Previous](./reference-images/previous-icon.png)) button.
 
+The **Performance** tool shows a tooltip over the activity that's selected in the search box.
+
+
 To modify the query settings:
 
-*  To make the query case-sensitive, click the **Case sensitive** (![Case sensitive](./reference-images/search-case-icon.png)) button.
+* To make the query case-sensitive, click the **Case sensitive** (![Case sensitive](./reference-images/search-case-icon.png)) button.
 
-*  To use a regular expression in your query, click the **Regex** (![Regex](./reference-images/search-regex-icon.png)) button.  If you select the **Regex** button and then enter `^E.*` that finds any activity that  any activity that begins with the letter E.
+* To use a regular expression in your query, click the **Regex** (![Regex](./reference-images/search-regex-icon.png)) button.  If you select the **Regex** button and then enter `^E.*` that finds any activity that  any activity that begins with the letter E.
+
 
 To hide the search box, click the **Cancel** button.
 
@@ -519,14 +524,35 @@ DevTools assigns scripts random colors.  In the previous figure, function reques
 
 If you want to hide the detailed flame chart of JavaScript requests, see [Disable JavaScript samples](#disable-javascript-samples), above.
 When JavaScript samples are disabled, only high-level events are displayed, such as `Event: input` and `Function Call` from the previous figure.
-<!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53) from Figure 16.-->
+<!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53). -->
 
 
 <!-- ------------------------------ -->
 #### Read the flame chart
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#flame-chart -->
 
-<!-- todo: text content -->
+The **Performance** tool represents main thread activity in a flame chart.  The x-axis represents the recording over time.  The y-axis represents the call stack.  The events on top cause the events below.
+
+<!-- ![A flame chart](todo) -->
+
+<!-- uncomment after add pngs:
+This example shows a flame chart in the **Main** track.  A `click` event caused an anonymous function call.  This function, in turn, called `onEndpointClick_`, which called `handleClick_`, and so on. -->
+
+The **Performance** tool assigns scripts random colors to break up the flame chart and make it more readable.
+<!-- uncomment after add pngs: In the earlier example, function calls from one script are colored light blue.  Calls from another script are colored light pink. The darker yellow represents scripting activity, and the purple event represents rendering activity.  These darker yellow and purple events are consistent across all recordings. -->
+
+Long tasks are also highlighted with a red triangle, and with the part over 50 milliseconds shaded in red.<!-- don't link long tasks here -->
+
+<!-- ![A long task](todo) -->
+
+See ![Updated Long tasks UI](../whats-new/2020/03/devtools.md#updated-long-tasks-ui) in _What's New in DevTools (Microsoft Edge 83)_.
+
+<!-- uncomment after add pngs:
+In this example, the task took more than 400 milliseconds, so the part representing the last 350 milliseconds is shaded in red, while the initial 50 milliseconds is not. -->
+
+Additionally, the **Main** track shows information on CPU profiles started and stopped with `profile()` and `profileEnd()` console functions.
+
+To hide the detailed flame chart of JavaScript calls, see Disable JavaScript samples.  When JS samples are disabled, you see only the high-level events such as `Event (click)` and `Function Call`.
 
 
 <!-- ------------------------------ -->
@@ -545,7 +571,7 @@ To see the arrows, find either an initiator or the event it caused in the flame 
 
 <!-- ![An arrow from the request to the firing of an idle callback](todo) -->
 
-When selected, the **Summary** tab shows **Initiator for** links for initiators and **Initiated by** links for the events they caused. Click them to jump between the corresponding events.
+When selected, the **Summary** tab shows **Initiator for** links for initiators and **Initiated by** links for the events they caused.  Click them to jump between the corresponding events.
 
 <!-- ![The 'Initiator for' link in the Summary tab](todo) -->
 
@@ -580,11 +606,11 @@ To declutter the flame chart in the **Main** thread, you can hide selected funct
 
 To add a script to the ignore list, right-click a script in the chart and select **Add script to ignore list**.
 
-   <!-- ![The context menu with the ignore script option focused](todo) -->
+<!-- ![The context menu with the ignore script option focused](todo) -->
 
 The chart collapses ignored scripts, marks them as **On ignore list**, and adds them to the **Custom exclusion** rules in **Customize and control DevTools** (![The Customize and control DevTools icon](./reference-images/customize-and-control-devtools-icon.png)) > **Settings** > **Ignore list**.  Ignored scripts are saved until you remove them either from the trace or from the **Custom exclusion rules**.
 
-   <!-- ![The ignore script list tab in Settings](todo) -->
+<!-- ![The ignore script list tab in Settings](todo) -->
 
 
 <!-- ------------------------------ -->
@@ -598,9 +624,22 @@ After recording a page, in addition to the **Main** section to analyze activitie
 
 *  To view the activities in the order in which they occurred during the recording, use the [Event log](#the-event-log-tab) tab.
 
+To help you find what you are looking for faster, all three tabs have buttons for advanced filtering next to the **Filter** bar:
+
+* ![The Match case icon](./reference-images/match-case-icon.png) **Match case**.
+
+* ![The Regular expression icon](./reference-images/regex-icon.png) **Regular expression**.
 
 
-<!-- Note: The next three sections all refer to the same demo. You can run the demo yourself at Activity Tabs Demo https://activitytabs.glitch.me and see the source at GoogleChrome/devtools-samples/perf/activitytabs.html .   https://glitch.com/edit/#!/activitytabs?path=index.html -->
+<!-- ![The three buttons for advanced filtering](todo) -->
+
+Each tabular view in the **Performance** tool shows links for activities such as functions calls.  To help you debug, DevTools finds the corresponding function declarations in source files.  Additionally, if the appropriate source maps are present and enabled, DevTools automatically finds the original files.
+
+Click a link to open a source file in the **Sources** tool.
+
+<!-- ![Link to a source file in the Event Log tab](todo) -->
+
+<!-- The next three sections all refer to the same demo.  You can run the demo yourself at Activity Tabs Demo https://activitytabs.glitch.me and see the source at GoogleChrome/devtools-samples/perf/activitytabs.html .   https://glitch.com/edit/#!/activitytabs?path=index.html -->
 <!-- todo: clean -->
 
 
@@ -704,9 +743,16 @@ Clear the **Loading**, **Scripting**, **Rendering**, or **Painting** checkboxes 
 
 
 <!-- ------------------------------ -->
-#### View timings
+#### View custom timings
 
-<!-- todo: copy text -->
+On the **Timings** track, view your custom performance markers such as:
+
+* `performance.mark()` calls.  An individual mark with tooltip is shown below at 813.44 ms, labelled **Starting to run JavaScript**.
+* `performance.measure()` calls.  A yellow span is shown below, labelled **Slow Interaction**.
+
+<!-- ![Markers in the Timings track](todo) -->
+
+Select a marker to see more details in the **Summary** tab, including its timestamp, total time, self time, and the `detail` object.  For `performance.mark()` and `performance.measure()` calls, the tab also shows stack traces.
 
 
 <!-- ------------------------------ -->
@@ -723,14 +769,27 @@ Click an interaction to view more information about it in the **Summary** tab.
 
 <!-- ------------------------------ -->
 #### View layout shifts
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#layout-shifts -->
 
-<!-- todo: copy text -->
+View layout shifts on the **Layout shifts** track.  Shifts are shown as purple diamonds and are grouped in clusters (purple lines) based on their proximity on the timeline.  For information about clusters, see [Evolving the CLS metric](https://web.dev/blog/evolving-cls)<!-- 0 hits on 'cluster' --> at web.dev.
+
+<!-- ![The Layout shifts track](todo) -->
+
+To highlight an element that caused a layout shift in the viewport, hover over the corresponding diamond.
+
+To see more information about a layout shift or shifts in the **Summary** tab with timings, scores, elements, and potential culprits, click the corresponding diamond or cluster.
+
+For more information, see [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) at web.dev.
 
 
 <!-- ------------------------------ -->
 #### View animations
 
-<!-- todo: copy text -->
+View animations on the **Animations** track.  Animations are named as corresponding CSS properties or elements if any, for example, `transform` or `my-element`.  Non-compositing animations are marked with red triangles in the top right corner.
+
+<!-- ![The Animations track with a non-compositing animation selected](todo) -->
+
+Select an animation to see more details in the **Summary** tab, including reasons for compositing failures.
 
 
 <!-- ------------------------------ -->
@@ -815,7 +874,7 @@ Select the **Memory** checkbox to view memory metrics in a performance recording
 
 ![The Memory checkbox](./reference-images/memory-highlight.png)
 
-DevTools displays a new<!-- todo: delete "new"? --> **Memory** chart, above the **Summary** tab.  There is also a new<!-- todo: delete "new"? --> chart below the **NET** chart, called **HEAP**.  The **HEAP** chart provides the same information as the **JS Heap** line in the **Memory** chart:
+DevTools displays a **Memory** chart, above the **Summary** tab.  There is also a chart below the **NET** chart, called **HEAP**.  The **HEAP** chart provides the same information as the **JS Heap** line in the **Memory** chart:
 
 ![Memory metrics](./reference-images/memory-chart.png)
 
@@ -1064,8 +1123,6 @@ The JS heap graph (the blue graph) is not as straightforward.  In keeping with b
 As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected: the JavaScript code is creating the DOM nodes on every button you click, and is doing a lot of work when it creates the string of one million characters.
 
 The key thing here is the fact that the JS heap ends higher than it began (the "beginning" here being the point after the forced garbage collection).  In the real world, if you saw this pattern of increasing JS heap size or node size, it would potentially indicate a memory leak.
-
-<!--todo old: the Heap snapshots and Profiles panel aren't found in Edge  -->
 
 See also:
 * [View memory metrics](#view-memory-metrics), above.
