@@ -624,7 +624,7 @@
                 - name: Autofill tool
                   items:
                     - name: Autofill tool
-                      href: ./devtools-guide-chromium/autofill/autofill.md
+                      href: ./devtools-guide-chromium/autofill/index.md
                       displayName: Autofill tool
 # Changes tool ----------------------------------------------------------------
                 - name: Changes tool

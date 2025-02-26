@@ -109,9 +109,9 @@ If you don't have address data saved and don't want to save it, you can use test
 
 To use the test data:
 
-1. [Open the **Autofill** tool](todo) and turn on **Show test address data in autofill menu** at the top of the panel.
+1. In DevTools, open the **Autofill** tool, and then turn on **Show test address data in autofill menu** at the top of the panel.
 
-1. On the page, right-click an address form filed and select one of the options from the **Developer tools** menu.
+1. On the page, right-click an address form field, and then select one of the options from the **Developer tools** menu.
 
    <!-- ![The 'Developer tools' menu with test address data options](todo: test-address-data.png) -->
 
@@ -130,7 +130,7 @@ The **Autofill** tool shows the data it inserted in the form fields and a table 
 
    <!-- ![The Autofill tool](todo: autofill.panel.png) -->
 
-Additionally, you can use the [Issues tool](../issues/index.mx) to find problems with autocomplete attributes and get fixing tips.
+Additionally, you can use the [Issues tool](../issues/index.md) to find problems with autocomplete attributes and get fixing tips.
 
 <!-- ![Autocomplete issues caught by the Issues panel](todo: autocomplete-issues.png) -->
 
