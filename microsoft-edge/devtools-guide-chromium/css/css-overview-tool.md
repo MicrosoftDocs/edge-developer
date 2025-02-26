@@ -163,7 +163,7 @@ From here, you can further analyze the impact of your changes and individual sel
 ###### See also
 
 * [Structure of a selector](https://developer.mozilla.org/docs/Web/CSS/CSS_Selectors#structure_of_a_selector) in _CSS selectors_.
-* [Analyze CSS selector performance during Recalculate Style events](../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->
@@ -200,4 +200,4 @@ To help fix contrast issues, check out the [Text contrast](../accessibility/refe
 ## See also
 
 * [Structure of a selector](https://developer.mozilla.org/docs/Web/CSS/CSS_Selectors#structure_of_a_selector) in _CSS selectors_.
-* [Analyze CSS selector performance during Recalculate Style events](../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../performance/selector-stats.md)

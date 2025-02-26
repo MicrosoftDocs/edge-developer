@@ -242,7 +242,7 @@ See also:
 Chromium issue [#1071432](https://crbug.com/1071432)
 
 See also:
-* [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](../../../memory-inspector/memory-inspector-tool.md)
+* [Inspect a JavaScript ArrayBuffer with the Memory inspector tool](../../../memory-inspector/memory-inspector-tool.md)
 <!-- todo: correct tool? -->
 
 
@@ -304,7 +304,7 @@ See also:
 Chromium issue [#912581](https://crbug.com/912581)
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ---------- -->
@@ -319,7 +319,7 @@ The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Large
 Chromium issue [#974550](https://crbug.com/974550)
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ------------------------------ -->
