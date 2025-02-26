@@ -654,7 +654,7 @@ Covers:
 
 See also:
 * [What's New in DevTools 96](../devtools-guide-chromium/whats-new/2021/11/devtools.md)<!-- has Video section -->
-* [Microsoft Edge DevTools extension for Visual Studio Code](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md)
 
 
 <!-- ====================================================================== -->

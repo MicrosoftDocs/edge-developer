@@ -558,7 +558,7 @@ See also:
 You can use cookies in WebView2 to manage user sessions, store user personalization preferences, and track user behavior.
 
 See also:
-* [View, edit, and delete cookies](/microsoft-edge/devtools-guide-chromium/storage/cookies)
+* [View, edit, and delete cookies](../../devtools-guide-chromium/storage/cookies.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1252,7 +1252,7 @@ See also:
 The user agent is a string that represents the identity of the program on behalf of the user, such as the browser name. In WebView2, you can set the user agent.
 
 See also:
-* [Detect Windows 11 using User-Agent Client Hints](../../web-platform/how-to-detect-win11.md)
+* [Detect Windows 11 and CPU architecture using User-Agent Client Hints](../../web-platform/how-to-detect-win11.md)
 * [Override the user agent string](../../devtools-guide-chromium/device-mode/override-user-agent.md)
 
 

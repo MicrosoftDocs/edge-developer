@@ -88,7 +88,7 @@ The Extensions Analytics Dashboard enables you to view your extension's usage, a
 <!-- ====================================================================== -->
 ## Add team members to your Partner Center account
 
-You can add members from your organization and manage the settings on your Partner Center Account.  See [Add users to the Microsoft Edge program](/microsoft-edge/extensions-chromium/publish/aad-account).
+You can add members from your organization and manage the settings on your Partner Center Account.  See [Add users to the Microsoft Edge program](../publish/aad-account.md).
 
 *Released August 2021*
 
@@ -96,7 +96,7 @@ You can add members from your organization and manage the settings on your Partn
 <!-- ====================================================================== -->
 ## Sign into Microsoft Partner Center using your GitHub account
 
-You can use your personal GitHub account credentials to sign into Microsoft Partner Center to submit your Microsoft Edge Extension.  See [Register and sign in to Partner Center using a GitHub account](/microsoft-edge/extensions-chromium/publish/github).
+You can use your personal GitHub account credentials to sign into Microsoft Partner Center to submit your Microsoft Edge Extension.  See [Register and sign in to Partner Center using a GitHub account](../publish/github.md).
 
 *Released August 2021*
 

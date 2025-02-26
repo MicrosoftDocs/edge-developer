@@ -62,7 +62,7 @@ See [Develop experiences for the sidebar in Microsoft Edge](./sidebar.md).
 
 
 <!-- ====================================================================== -->
-## Detect Windows 11 using User-Agent Client Hints
+## Detect Windows 11 and CPU architecture using User-Agent Client Hints
 
 Websites can differentiate between users on Windows 11 and Windows 10 by using User-Agent Client Hints (UA-CH).  The User-Agent Client Hints format is used by browsers to provide user agent information to websites.
 
@@ -76,7 +76,7 @@ There are two approaches for sites to access user agent information:
 *  User-Agent strings (legacy).
 *  User-Agent Client Hints (recommended).
 
-See [Detect Windows 11 using User-Agent Client Hints](./how-to-detect-win11.md).
+See [Detect Windows 11 and CPU architecture using User-Agent Client Hints](./how-to-detect-win11.md).
 
 
 <!-- ====================================================================== -->

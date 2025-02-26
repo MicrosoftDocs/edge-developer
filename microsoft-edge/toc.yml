@@ -1764,7 +1764,7 @@
           href: ./web-platform/sidebar.md
           displayName: sidebar apps, sidebar extensions, pwa, side panel, sidepanel
 
-        - name: Detect Windows 11 using User-Agent Client Hints
+        - name: Detect Windows 11 and CPU architecture using User-Agent Client Hints
           href: ./web-platform/how-to-detect-win11.md
 
         - name: Customize the password reveal button
