@@ -231,7 +231,7 @@ To discover more keywords like `cookie-path`, see [Filter requests by properties
 <!-- ------------------------------ -->
 #### Dock to left from the Command Menu
 
-To move DevTools to the left of the viewport (rendered webpage), open the [Command Menu](../../../command-menu/index.md) and run the `Dock to left` command.  The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the main menu.  You can now access the **Dock to left** feature from the Command Menu, as well.
+To move DevTools to the left of the viewport (rendered webpage), open the [Command Menu](../../../command-menu/index.md) and run the `Dock to left` command.  The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the main menu.  You can now access the **Dock to left** feature from the **Command Menu**, as well.
 
 ![DevTools docked to the left of the viewport](./devtools-images/dock-to-left.png)"
 

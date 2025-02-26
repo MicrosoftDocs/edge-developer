@@ -152,7 +152,7 @@ The state of your **Quick View** toolbar persists across DevTools sessions.  The
 
 <!-- Subtitle: Use the Command Menu to directly navigate to the Styles tab of the Elements tool. -->
 
-There was an accessibility issue where voice-command users couldn't navigate to the **Styles** tab or **Computed** tab in the **Elements** tool.  You can now access these tabs through two new commands in the Command Menu:
+There was an accessibility issue where voice-command users couldn't navigate to the **Styles** tab or **Computed** tab in the **Elements** tool.  You can now access these tabs through two new commands in the **Command Menu**:
 * **Show Styles**
 * **Show Computed Styles**
 

@@ -353,7 +353,7 @@ If your page depends on geolocation information from a mobile device to render p
 
    ![Sensors for geolocation](./index-images/device-toolbar-more-tools-sensors.png)
 
-    Or, open the Command Menu by selecting **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type `Sensors` and then select **Show Sensors**:
+    Or, open the **Command Menu** by selecting **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type `Sensors` and then select **Show Sensors**:
 
    ![Showing Sensors for geolocation, from the Command Menu](./index-images/device-toolbar-command-menu-sensors.png)
 
@@ -380,7 +380,7 @@ To set the device orientation:
 
    ![The Sensors command on the More tools menu](./index-images/device-toolbar-more-tools-sensors.png)
 
-   Or, open the Command Menu by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type `Sensors`, and then select **Show Sensors**:
+   Or, open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type `Sensors`, and then select **Show Sensors**:
 
    ![Show Sensors for orientation](./index-images/device-toolbar-command-menu-sensors.png)
 
@@ -405,7 +405,7 @@ To set the user agent string:
 
    ![Network conditions entry in the 'More tools' menu](./index-images/device-toolbar-more-tools-network-conditions.png)
 
-   Or, open the Command Menu by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).Type `Network conditions`, and select **Show Network conditions**:
+   Or, open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).Type `Network conditions`, and select **Show Network conditions**:
 
    ![Showing network conditions](./index-images/device-toolbar-command-menu-network-conditions.png)
 

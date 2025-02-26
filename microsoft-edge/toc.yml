@@ -620,6 +620,12 @@
                     - name: Inspect and modify CSS animation effects
                       href: ./devtools-guide-chromium/inspect-styles/animations.md
                       displayName: Animations tool
+# Autofill tool -------------------------------------------------------------
+                - name: Autofill tool
+                  items:
+                    - name: Autofill tool
+                      href: ./devtools-guide-chromium/autofill/autofill.md
+                      displayName: Autofill tool
 # Changes tool ----------------------------------------------------------------
                 - name: Changes tool
                   items:
@@ -632,7 +638,7 @@
                     - name: Find unused JavaScript and CSS code with the Coverage tool
                       href: ./devtools-guide-chromium/coverage/index.md
                       displayName: Coverage tool
-# Crash analyzer --------------------------------------------------------------
+# Crash analyzer tool ---------------------------------------------------------
                 - name: Crash analyzer tool
                   items:
                     - name: Crash analyzer tool
@@ -673,12 +679,12 @@
                     - name: View and debug media players information
                       href: ./devtools-guide-chromium/media-panel/index.md
                       displayName: Media tool
-# Memory Inspector tool -------------------------------------------------------
-                - name: Memory Inspector tool
+# Memory inspector tool -------------------------------------------------------
+                - name: Memory inspector tool
                   items:
-                    - name: Inspect a JavaScript ArrayBuffer with the Memory Inspector tool  # real content pending
+                    - name: Inspect a JavaScript ArrayBuffer with the Memory inspector tool  # real content pending
                       href: ./devtools-guide-chromium/memory-inspector/memory-inspector-tool.md
-                      displayName: Memory Inspector tool
+                      displayName: Memory inspector tool
 # Network conditions tool -----------------------------------------------------
                 - name: Network conditions tool
                   items:
@@ -755,7 +761,7 @@
                     - name: Simulate device orientation with the Sensors tool  # orig: was in "Mobile simulation"
                       href: ./devtools-guide-chromium/device-mode/orientation.md
                       displayName: Sensors tool, Device Emulation
-# Source maps monitor tool ----------------------------------------------------
+# Source Maps Monitor tool ----------------------------------------------------
                 - name: Source Maps Monitor tool
                   items:
                     - name: Source Maps Monitor tool  # no article yet
@@ -773,6 +779,7 @@
                     - name: Emulate authenticators and debug WebAuthn
                       href: ./devtools-guide-chromium/webauthn/index.md
                       displayName: WebAuthn tool
+# /More tools
 # /Tools
 # Command Menu ----------------------------------------------------------------
         - name: Command Menu and keyboard shortcuts

@@ -1051,7 +1051,7 @@ See also:
 ## Analyze rendering performance with the Rendering tool
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#rendering -->
 
-Use the **Rendering** tool to help visualize the rendering performance of your page.  The **Rendering** tool is a **Quick View** tool; if you open it from the Command Menu, it opens at the bottom of DevTools.
+Use the **Rendering** tool to help visualize the rendering performance of your page.  The **Rendering** tool is a **Quick View** tool; if you open it from the **Command Menu**, it opens at the bottom of DevTools.
 
 To open the **Rendering** tool:
 

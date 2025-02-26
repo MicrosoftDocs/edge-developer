@@ -36,7 +36,7 @@ You can open the **3D View** tool either in the **Activity Bar** or in the **Qui
 
 * To get maximum canvas space, open the **3D View** tool in the **Activity Bar**.
 
-* To use the **Elements** tool and **3D View** tool at the same time, open the **3D View** tool in the **Quick View** panel.  This enables you to view the DOM tree elements represented in the 3D canvas.  This is the default; in the Command Menu, **Show 3D View** is indicated as opening in the **Quick View** panel.
+* To use the **Elements** tool and **3D View** tool at the same time, open the **3D View** tool in the **Quick View** panel.  This enables you to view the DOM tree elements represented in the 3D canvas.  This is the default; in the **Command Menu**, **Show 3D View** is indicated as opening in the **Quick View** panel.
 
 
 <!-- ------------------------------ -->

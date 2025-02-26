@@ -99,7 +99,7 @@ When you refresh the webpage, the **Source Maps Monitor** tool shows that the ca
 
 ![Source Maps Monitor tool, upon second load](./devtools-106-images/source-maps-indexeddb-second-load.png)
 
-To clear the IndexedDB cache and force DevTools to re-load sourcemaps, run the **Clear source maps cache** command in the Command Menu.  See [Run commands in the Command Menu](../../../command-menu/index.md).
+To clear the IndexedDB cache and force DevTools to re-load sourcemaps, run the **Clear source maps cache** command in the **Command Menu**.  See [Run commands in the Command Menu](../../../command-menu/index.md).
 
 For history, see [Issue 89](https://github.com/MicrosoftEdge/DevTools/issues/89).
 

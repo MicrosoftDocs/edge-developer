@@ -242,7 +242,7 @@ See also:
 Chromium issue [#1071432](https://crbug.com/1071432)
 
 See also:
-* [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](../../../memory-inspector/memory-inspector-tool.md)
+* [Inspect a JavaScript ArrayBuffer with the Memory inspector tool](../../../memory-inspector/memory-inspector-tool.md)
 <!-- todo: correct tool? -->
 
 

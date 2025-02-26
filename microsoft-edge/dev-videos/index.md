@@ -486,7 +486,7 @@ Learn how to customize DevTools to fit your needs.  Covers:
 * Move tools in the bottom **Drawer** (now the **Quick View** panel).
 * Customize the text size.
 * Customize the theme.
-* Use the Command Menu keyboard shortcuts to quickly customize DevTools.
+* Use the **Command Menu** keyboard shortcuts to quickly customize DevTools.
 
 See also:
 * [Overview of DevTools](../devtools-guide-chromium/overview.md#change-where-devtools-is-docked-in-the-browser)
