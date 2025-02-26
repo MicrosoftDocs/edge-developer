@@ -329,6 +329,12 @@
                 - name: Emulate and test other browsers  # orig: Emulate and Test Other Browsers (orphaned)
                   href: ./devtools-guide-chromium/device-mode/testing-other-browsers.md
                   displayName: Device Emulation, Device Emulator, Device Mode
+# Welcome tool ----------------------------------------------------------------
+            - name: Welcome tool
+              items:
+                - name: Welcome tool
+                  href: ./devtools-guide-chromium/welcome/welcome-tool.md
+                  displayName: Welcome tool
 # Elements tool ---------------------------------------------------------------
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
@@ -598,178 +604,175 @@
                 - name: Debug background services
                   href: ./devtools-guide-chromium/javascript/background-services.md
                   displayName: Application tool
+# /Default tools
 # More tools ==================================================================
+            - name: More tools
+              items:
 # 3D View tool ----------------------------------------------------------------
-            - name: 3D View tool
-              items:
-                - name: Navigate webpage layers, z-index, and DOM using the 3D View tool
-                  href: ./devtools-guide-chromium/3d-view/index.md
-                  displayName: 3D View tool, composited layers
+                - name: 3D View tool
+                  items:
+                    - name: Navigate webpage layers, z-index, and DOM using the 3D View tool
+                      href: ./devtools-guide-chromium/3d-view/index.md
+                      displayName: 3D View tool, composited layers
 # Animations tool -------------------------------------------------------------
-            - name: Animations tool
-              items:
-                - name: Inspect and modify CSS animation effects
-                  href: ./devtools-guide-chromium/inspect-styles/animations.md
-                  displayName: Animations tool
+                - name: Animations tool
+                  items:
+                    - name: Inspect and modify CSS animation effects
+                      href: ./devtools-guide-chromium/inspect-styles/animations.md
+                      displayName: Animations tool
 # Changes tool ----------------------------------------------------------------
-            - name: Changes tool
-              items:
-                - name: Track changes to files using the Changes tool
-                  href: ./devtools-guide-chromium/changes/changes-tool.md
-                  displayName: Changes tool
+                - name: Changes tool
+                  items:
+                    - name: Track changes to files using the Changes tool
+                      href: ./devtools-guide-chromium/changes/changes-tool.md
+                      displayName: Changes tool
 # Coverage tool ---------------------------------------------------------------
-            - name: Coverage tool
-              items:
-                - name: Find unused JavaScript and CSS code with the Coverage tool
-                  href: ./devtools-guide-chromium/coverage/index.md
-                  displayName: Coverage tool
+                - name: Coverage tool
+                  items:
+                    - name: Find unused JavaScript and CSS code with the Coverage tool
+                      href: ./devtools-guide-chromium/coverage/index.md
+                      displayName: Coverage tool
 # Crash analyzer --------------------------------------------------------------
-            - name: Crash analyzer tool
-              items:
                 - name: Crash analyzer tool
-                  href: ./devtools-guide-chromium/crash-analyzer/index.md
+                  items:
+                    - name: Crash analyzer tool
+                      href: ./devtools-guide-chromium/crash-analyzer/index.md
 # CSS overview tool -----------------------------------------------------------
-            - name: CSS overview tool
-              items:
-                - name: Optimize CSS styles with the CSS overview tool
-                  href: ./devtools-guide-chromium/css/css-overview-tool.md
-                  displayName: CSS overview tool
+                - name: CSS overview tool
+                  items:
+                    - name: Optimize CSS styles with the CSS overview tool
+                      href: ./devtools-guide-chromium/css/css-overview-tool.md
+                      displayName: CSS overview tool
 # Detached Elements tool ------------------------------------------------------
-            - name: Detached Elements tool
-              items:
-                - name: Debug DOM memory leaks by using the Detached Elements tool # added article
-                  href: ./devtools-guide-chromium/memory-problems/dom-leaks.md
-                  displayName: Detached Elements tool
+                - name: Detached Elements tool
+                  items:
+                    - name: Debug DOM memory leaks by using the Detached Elements tool # added article
+                      href: ./devtools-guide-chromium/memory-problems/dom-leaks.md
+                      displayName: Detached Elements tool
 # Developer resources tool ----------------------------------------------------
-            - name: Developer resources tool
-              items:
                 - name: Developer resources tool
-                  href: ./devtools-guide-chromium/developer-resources/developer-resources.md
-                  displayName: Developer resources tool
+                  items:
+                    - name: Developer resources tool
+                      href: ./devtools-guide-chromium/developer-resources/developer-resources.md
+                      displayName: Developer resources tool
 # Issues tool -----------------------------------------------------------------
-            - name: Issues tool
-              items:
-                - name: Find and fix problems using the Issues tool
-                  href: ./devtools-guide-chromium/issues/index.md
-                  displayName: Issues tool
+                - name: Issues tool
+                  items:
+                    - name: Find and fix problems using the Issues tool
+                      href: ./devtools-guide-chromium/issues/index.md
+                      displayName: Issues tool
 # Lighthouse tool -------------------------------------------------------------
-            - name: Lighthouse tool  # new jump page  # main article is in Accessibility
-              items:
-                - name: Lighthouse tool
-                  href: ./devtools-guide-chromium/lighthouse/lighthouse-tool.md
-                  displayName: Lighthouse tool
+                - name: Lighthouse tool  # new jump page  # main article is in Accessibility
+                  items:
+                    - name: Lighthouse tool
+                      href: ./devtools-guide-chromium/lighthouse/lighthouse-tool.md
+                      displayName: Lighthouse tool
 # Media tool ------------------------------------------------------------------
-            - name: Media tool
-              items:
-                - name: View and debug media players information
-                  href: ./devtools-guide-chromium/media-panel/index.md
-                  displayName: Media tool
+                - name: Media tool
+                  items:
+                    - name: View and debug media players information
+                      href: ./devtools-guide-chromium/media-panel/index.md
+                      displayName: Media tool
 # Memory Inspector tool -------------------------------------------------------
-            - name: Memory Inspector tool
-              items:
-                - name: Inspect a JavaScript ArrayBuffer with the Memory Inspector tool  # real content pending
-                  href: ./devtools-guide-chromium/memory-inspector/memory-inspector-tool.md
-                  displayName: Memory Inspector tool
+                - name: Memory Inspector tool
+                  items:
+                    - name: Inspect a JavaScript ArrayBuffer with the Memory Inspector tool  # real content pending
+                      href: ./devtools-guide-chromium/memory-inspector/memory-inspector-tool.md
+                      displayName: Memory Inspector tool
 # Network conditions tool -----------------------------------------------------
-            - name: Network conditions tool
-              items:
-                - name: Network conditions tool  # new jump page
-                  href: ./devtools-guide-chromium/network-conditions/network-conditions-tool.md
-                  displayName: Network conditions tool
+                - name: Network conditions tool
+                  items:
+                    - name: Network conditions tool  # new jump page
+                      href: ./devtools-guide-chromium/network-conditions/network-conditions-tool.md
+                      displayName: Network conditions tool
 
-                - name: Override the user agent string
-                  href: ./devtools-guide-chromium/device-mode/override-user-agent.md
-                  displayName: Network Conditions tool, Device Emulation, Device Emulator
+                    - name: Override the user agent string
+                      href: ./devtools-guide-chromium/device-mode/override-user-agent.md
+                      displayName: Network Conditions tool, Device Emulation, Device Emulator
 # Network Console tool -----------------------------------------------
-            - name: Network Console tool
-              items:
-                - name: Compose and send web API requests using the Network Console tool
-                  href: ./devtools-guide-chromium/network-console/network-console-tool.md
+                - name: Network Console tool
+                  items:
+                    - name: Compose and send web API requests using the Network Console tool
+                      href: ./devtools-guide-chromium/network-console/network-console-tool.md
 # Network request blocking tool -----------------------------------------------
-            - name: Network request blocking tool
-              items:
-                - name: Block network requests
-                  href: ./devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
-                  displayName: Network request blocking tool
+                - name: Network request blocking tool
+                  items:
+                    - name: Block network requests
+                      href: ./devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
+                      displayName: Network request blocking tool
 # Performance monitor tool ----------------------------------------------------
-            - name: Performance monitor tool
-              items:
-                - name: Measure runtime performance of a page using the Performance monitor tool  # added article
-                  href: ./devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
-                  displayName: Performance monitor tool
+                - name: Performance monitor tool
+                  items:
+                    - name: Measure runtime performance of a page using the Performance monitor tool  # added article
+                      href: ./devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
+                      displayName: Performance monitor tool
 # Quick source tool -----------------------------------------------------------
-            - name: Quick source tool  # jump page
-              items:
-                - name: Display or edit source files using the Quick source tool
-                  href: ./devtools-guide-chromium/quick-source/quick-source-tool.md
-                  displayName: Quick source tool  # also indexed elsewhere in this file
+                - name: Quick source tool  # jump page
+                  items:
+                    - name: Display or edit source files using the Quick source tool
+                      href: ./devtools-guide-chromium/quick-source/quick-source-tool.md
+                      displayName: Quick source tool  # also indexed elsewhere in this file
 # Recorder tool -----------------------------------------------------------
-            - name: Recorder tool
-              items:
-                - name: Record and replay user flows and measure performance
-                  href: ./devtools-guide-chromium/recorder/index.md
-                  displayName: Recorder tool
+                - name: Recorder tool
+                  items:
+                    - name: Record and replay user flows and measure performance
+                      href: ./devtools-guide-chromium/recorder/index.md
+                      displayName: Recorder tool
 # Rendering tool --------------------------------------------------------------
-            - name: Rendering tool
-              items:
-                - name: Rendering tool, to see what a webpage looks like with different display options or vision deficiencies
-                  href: ./devtools-guide-chromium/rendering-tools/rendering-tool.md
-                  displayName: Rendering tool
+                # some Rendering articles are in Accessibility section
+                - name: Rendering tool
+                  items:
+                    - name: Rendering tool, to see what a webpage looks like with different display options or vision deficiencies
+                      href: ./devtools-guide-chromium/rendering-tools/rendering-tool.md
+                      displayName: Rendering tool
 
-                - name: Emulate dark or light schemes in the rendered page  # added article
-                  href: ./devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
-                  displayName: Rendering tool
+                    - name: Emulate dark or light schemes in the rendered page  # added article
+                      href: ./devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+                      displayName: Rendering tool
 
-                - name: Force print preview mode
-                  href: ./devtools-guide-chromium/css/print-preview.md
-                  displayName: Rendering tool
-              # some articles are in Accessibility section
+                    - name: Force print preview mode
+                      href: ./devtools-guide-chromium/css/print-preview.md
+                      displayName: Rendering tool
 # Search tool -----------------------------------------------------------------
-            - name: Search tool
-              items:
-                - name: Find source files for a page using the Search tool  # added article
-                  href: ./devtools-guide-chromium/search/search-tool.md
-                  displayName: Search tool
+                - name: Search tool
+                  items:
+                    - name: Find source files for a page using the Search tool  # added article
+                      href: ./devtools-guide-chromium/search/search-tool.md
+                      displayName: Search tool
 # Security tool ---------------------------------------------------------------
-            - name: Security tool
-              items:
-                - name: Understand security issues using the Security tool
-                  href: ./devtools-guide-chromium/security/index.md
-                  displayName: Security tool
+                - name: Security tool
+                  items:
+                    - name: Understand security issues using the Security tool
+                      href: ./devtools-guide-chromium/security/index.md
+                      displayName: Security tool
 # Sensors tool ----------------------------------------------------------------
-            - name: Sensors tool
-              items:
-                - name: Override geolocation with the Sensors tool  # orig: was in "Mobile simulation"
-                  href: ./devtools-guide-chromium/device-mode/geolocation.md
-                  displayName: Sensors tool, Device Emulation
+                - name: Sensors tool
+                  items:
+                    - name: Override geolocation with the Sensors tool  # orig: was in "Mobile simulation"
+                      href: ./devtools-guide-chromium/device-mode/geolocation.md
+                      displayName: Sensors tool, Device Emulation
 
-                - name: Simulate device orientation with the Sensors tool  # orig: was in "Mobile simulation"
-                  href: ./devtools-guide-chromium/device-mode/orientation.md
-                  displayName: Sensors tool, Device Emulation
+                    - name: Simulate device orientation with the Sensors tool  # orig: was in "Mobile simulation"
+                      href: ./devtools-guide-chromium/device-mode/orientation.md
+                      displayName: Sensors tool, Device Emulation
 # Source maps monitor tool ----------------------------------------------------
-            - name: Source Maps Monitor tool
-              items:
-                - name: Source Maps Monitor tool  # no article yet
-                  href: ./devtools-guide-chromium/source-maps-monitor/source-maps-monitor-tool.md
-                  displayName: Source maps monitor tool
+                - name: Source Maps Monitor tool
+                  items:
+                    - name: Source Maps Monitor tool  # no article yet
+                      href: ./devtools-guide-chromium/source-maps-monitor/source-maps-monitor-tool.md
+                      displayName: Source maps monitor tool
 # WebAudio tool ---------------------------------------------------------------
-            - name: WebAudio tool
-              items:
                 - name: WebAudio tool
-                  href: ./devtools-guide-chromium/webaudio/webaudio-tool.md
-                  displayName: WebAudio tool
+                  items:
+                    - name: WebAudio tool
+                      href: ./devtools-guide-chromium/webaudio/webaudio-tool.md
+                      displayName: WebAudio tool
 # WebAuthn tool ---------------------------------------------------------------
-            - name: WebAuthn tool
-              items:
-                - name: Emulate authenticators and debug WebAuthn
-                  href: ./devtools-guide-chromium/webauthn/index.md
-                  displayName: WebAuthn tool
-# Welcome tool ----------------------------------------------------------------
-            - name: Welcome tool
-              items:
-                - name: Welcome tool
-                  href: ./devtools-guide-chromium/welcome/welcome-tool.md
-                  displayName: Welcome tool
+                - name: WebAuthn tool
+                  items:
+                    - name: Emulate authenticators and debug WebAuthn
+                      href: ./devtools-guide-chromium/webauthn/index.md
+                      displayName: WebAuthn tool
 # /Tools
 # Command Menu ----------------------------------------------------------------
         - name: Command Menu and keyboard shortcuts
