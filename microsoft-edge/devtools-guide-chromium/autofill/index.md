@@ -1,6 +1,6 @@
 ---
 title: "Autofill: Inspect and debug saved addresses"
-description: Inspect and debug saved addresses by using the DevTools Autofill tool.
+description: Inspect and debug address info that's been saved to Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -25,6 +25,8 @@ ms.date: 02/26/2025
 <!-- https://developer.chrome.com/docs/devtools/autofill -->
 
 Use the **Autofill** tool to inspect and debug address info that's been saved to Microsoft Edge.
+
+The **Autofill** tool records various events that the browser triggers when a user is filling in a form by using the browser's autofill feature -- for example, when the browser remembers your address and autofills it in an address field.
 
 
 <!-- ====================================================================== -->
@@ -73,7 +75,7 @@ To open the **Autofill** tool from the **Command Menu**:
 1. Open the **Command Menu** by pressing:
 
    * macOS: **Command+Shift+P**
-   * Windows, Linux, ChromeOS: **Control+Shift+P**
+   * Windows, Linux: **Control+Shift+P**
 
    <!-- ![Command Menu with "autofill" entered](todo: command-menu-autofill.png) -->
 
