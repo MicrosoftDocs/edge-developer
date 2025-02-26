@@ -492,7 +492,7 @@ Optimize the `initRatings` function to make the page load faster:
     * The **Time to interactive** metric went down to 1.3 seconds.
     * The **Total Blocking Time** metric went down to 0 seconds.
 
-To learn more about how to analyze page performance, see [Performance features reference)](../evaluate-performance/reference.md).
+To learn more about how to analyze page performance, see [Performance features reference)](../performance/reference.md).
 
 ###### Doing less work in the main thread, in the real world
 

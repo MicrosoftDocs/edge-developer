@@ -100,7 +100,7 @@ In previous versions of Microsoft Edge, in the **Bottom-up** view in the **Perfo
 
 See also:
 * [Step through code](../../../javascript/reference.md#step-through-code) in _JavaScript debugging features_.
-* [The Bottom-up tab](../../../evaluate-performance/reference.md#the-bottom-up-tab) in _Performance features reference_.
+* [The Bottom-up tab](../../../performance/reference.md#the-bottom-up-tab) in _Performance features reference_.
 
 
 <!-- ====================================================================== -->

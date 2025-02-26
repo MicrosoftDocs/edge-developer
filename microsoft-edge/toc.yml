@@ -482,25 +482,29 @@
                   href: ./devtools-guide-chromium/service-workers/index.md
                   displayName: Network tool, Application tool, Sources tool
 # Performance tool ------------------------------------------------------------
-            - name: Performance tool
+            - name: Performance tool  # = upstream TOC bucket "Performance"
               items:
-                - name: Analyze runtime performance (tutorial)
+                - name: "Performance tool: Analyze your website's performance"  # = Performance > Overview 
+                  href: ./devtools-guide-chromium/evaluate-performance/performance-tool-overview.md
+                  displayName: Performance tool
+
+                - name: Analyze runtime performance (tutorial)  # = Performance > Analyze runtime performance
                   href: ./devtools-guide-chromium/evaluate-performance/index.md
                   displayName: Performance tool, Get started analyzing runtime performance  # old title
 
-                - name: Troubleshooting common performance issues
+                - name: Troubleshooting common performance issues  # no longer found
                   href: ./devtools-guide-chromium/rendering-tools/index.md
                   displayName: Performance tool, Analyze runtime performance  # old title
 
-                - name: Optimize website speed using Lighthouse
+                - name: Optimize website speed using Lighthouse  # = Lighthouse > Optimize web speed
                   href: ./devtools-guide-chromium/speed/get-started.md
                   displayName: Performance tool, Lighthouse tool, Network tool
 
-                - name: Performance features reference
+                - name: Performance features reference  # = Performance > Features reference
                   href: ./devtools-guide-chromium/evaluate-performance/reference.md
                   displayName: Performance tool, Rendering tool
 
-                - name: Performance recording event reference
+                - name: Performance recording event reference  # = Performance > Timeline event reference
                   href: ./devtools-guide-chromium/evaluate-performance/performance-reference.md
                   displayName: Performance tool
 

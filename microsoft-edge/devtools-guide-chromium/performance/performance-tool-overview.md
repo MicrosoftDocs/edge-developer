@@ -271,37 +271,37 @@ When you are ready to record, the **Performance** tool gives you the following o
 
 Select the following options from the **Capture settings** menu:
 
-* Select the **Disable JavaScript samples** checkbox:  Disables the recording of the JavaScript call stacks displayed in the Main track that are called during the recording.  Reduces performance overhead.  See [Disable JavaScript samples](../evaluate-performance/reference.md#disable-javascript-samples) in _Performance features reference_.
+* Select the **Disable JavaScript samples** checkbox:  Disables the recording of the JavaScript call stacks displayed in the Main track that are called during the recording.  Reduces performance overhead.  See [Disable JavaScript samples](../performance/reference.md#disable-javascript-samples) in _Performance features reference_.
 
-* Select the **Enable advanced rendering instrumentation (slow)** checkbox:  Captures advanced paint instrumentation.  Significantly hinders performance.  See [Enable advanced paint instrumentation](../evaluate-performance/reference.md#enable-advanced-paint-instrumentation) in _Performance features reference_.
+* Select the **Enable advanced rendering instrumentation (slow)** checkbox:  Captures advanced paint instrumentation.  Significantly hinders performance.  See [Enable advanced paint instrumentation](../performance/reference.md#enable-advanced-paint-instrumentation) in _Performance features reference_.
 
 * Select the **Enable CSS selector stats (slow)** checkbox: Captures CSS selector statistics.  Significantly hinders performance.  See [View CSS selector costs in the Performance tool sidebar](../whats-new/2024/11/devtools-131.md#view-css-selector-costs-in-the-performance-tool-sidebar) in _What's New in DevTools (Microsoft Edge 131)_.
 
-* CPU throttling: Simulate slower CPU speeds.  See [Throttle the CPU while recording](../evaluate-performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.  
+* CPU throttling: Simulate slower CPU speeds.  See [Throttle the CPU while recording](../performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.  
 
-* Network throttling: Simulate slower network speeds.  See [Throttle the network while recording](../evaluate-performance/reference.md#throttle-the-network-while-recording) in _Performance features reference_.
+* Network throttling: Simulate slower network speeds.  See [Throttle the network while recording](../performance/reference.md#throttle-the-network-while-recording) in _Performance features reference_.
 
 
 <!-- ------------------------------ -->
 #### Analyze a performance report
 
-For a complete guide on how to use the **Performance** tool, see [Analyze a performance recording](../evaluate-performance/reference.md#analyze-a-performance-recording) in _Performance features reference_.
+For a complete guide on how to use the **Performance** tool, see [Analyze a performance recording](../performance/reference.md#analyze-a-performance-recording) in _Performance features reference_.
 
 
 To navigate a performance report:
 
-* See [Navigate the recording](../evaluate-performance/reference.md#navigate-the-recording) in _Performance features reference_.
+* See [Navigate the recording](../performance/reference.md#navigate-the-recording) in _Performance features reference_.
 
-* See [Search activities](../evaluate-performance/reference.md#search-activities) in _Performance features reference_.
+* See [Search activities](../performance/reference.md#search-activities) in _Performance features reference_.
 
-* See [Track event initiators](../evaluate-performance/reference.md#track-event-initiators) in _Performance features reference_.
+* See [Track event initiators](../performance/reference.md#track-event-initiators) in _Performance features reference_.
 
 
 To focus on what matters for your workflow:
 
-* [Change the order of tracks and hide them](../evaluate-performance/reference.md#change-the-order-of-tracks-and-hide-them)
+* [Change the order of tracks and hide them](../performance/reference.md#change-the-order-of-tracks-and-hide-them)
 
-* [Hide functions and their children in the flame chart](../evaluate-performance/reference.md#hide-functions-and-their-children-in-the-flame-chart)
+* [Hide functions and their children in the flame chart](../performance/reference.md#hide-functions-and-their-children-in-the-flame-chart)
 
 * [Create breadcrumbs and jump between zoom levels](./reference.md#breadcrumbs) in _Performance features reference_.
 
@@ -336,7 +336,7 @@ Discover other tools that can help you improve your website's performance:
 | **Performance** tool > **Insights** tab | [Get actionable insights](./reference.md#get-actionable-insights) in _Performance features reference_. |
 | **Rendering** tool | [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md) |
 | **Issues** tool | [Find and fix problems using the Issues tool](../issues/index.md) |
-| **Performance** tool | [View layers information](../evaluate-performance/reference.md#view-layers-information) in _Performance features reference_ |
+| **Performance** tool | [View layers information](../performance/reference.md#view-layers-information) in _Performance features reference_ |
 
 
 <!-- ====================================================================== -->

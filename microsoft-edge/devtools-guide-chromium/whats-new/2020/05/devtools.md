@@ -172,7 +172,7 @@ See also:
 #### Performance panel updates
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ---------- -->
@@ -195,7 +195,7 @@ If `Total Blocking Time: Unavailable` is displayed, Microsoft Edge DevTools did 
 Chromium issue [#1054381](https://crbug.com/1054381)
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ---------- -->
@@ -211,7 +211,7 @@ Click the **Layout Shift** event to display the details of the layout shift in t
 ![The details of a layout shift](./devtools-images/cls.png)
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ---------------------------------- -->

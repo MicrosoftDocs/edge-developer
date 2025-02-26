@@ -81,7 +81,7 @@ In the **Performance** tool, the following advanced filtering buttons were added
 Also, in the **Bottom-up** tab, the filter has been updated to now only apply to the top-level items, instead of matching every node.
 
 See also:
-* [Analyze runtime performance (tutorial)](../../../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../../../performance/index.md)
 
 
 <!-- ====================================================================== -->

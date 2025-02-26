@@ -120,7 +120,7 @@ After clicking **Unminify** (![Unminify icon](./devtools-images/unminify-icon.pn
 
 See also:
 * [Unminifying function names in DevTools performance profiles](https://blogs.windows.com/msedgedev/2022/02/03/unminifying-function-names-in-devtools-performance-profiles/) at the Microsoft Edge Blog.
-* [Display original function names in performance profiles](../../../evaluate-performance/unminify.md).
+* [Display original function names in performance profiles](../../../performance/unminify.md).
 
 
 <!-- ====================================================================== -->

@@ -196,7 +196,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Performance features reference
-            url: ../evaluate-performance/reference.md
+            url: ../performance/reference.md
       - linkListType: sample
         links:
           - text: Sample code for DevTools

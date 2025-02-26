@@ -82,7 +82,7 @@ In previous versions of Microsoft Edge, the **Event log** tab in the **Performan
 ![In the Event log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting"](./devtools-images/activity-event-tooltip.png)
 
 See also:
-* [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance)
+* [Record runtime performance](../../../performance/reference.md#record-runtime-performance)
 
 
 <!-- ====================================================================== -->

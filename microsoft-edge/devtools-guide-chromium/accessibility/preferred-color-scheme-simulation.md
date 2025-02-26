@@ -60,7 +60,7 @@ To specify the CSS to use for both light and dark schemes, use the [prefers-colo
 <!-- ====================================================================== -->
 ## See also
 
-* [Analyze rendering performance with the Rendering tool](../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.
+* [Analyze rendering performance with the Rendering tool](../performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.
 
 The **Rendering** tool is also used for the following tasks:
 

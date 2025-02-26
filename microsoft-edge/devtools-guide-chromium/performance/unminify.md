@@ -45,7 +45,7 @@ For details, see [Map the processed code to your original source code, for debug
 <!-- ====================================================================== -->
 ## Step 2 - Record a performance profile
 
-1. In the **Performance** tool, click the **Record** button, to record a performance profile for the page you want to analyze.  For details, see [Record runtime performance](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference).
+1. In the **Performance** tool, click the **Record** button, to record a performance profile for the page you want to analyze.  For details, see [Record runtime performance](/microsoft-edge/devtools-guide-chromium/performance/reference).
 
    ![Recording a performance profile](./unminify-images/evaluate-performance-performance-record-highlight.png)
 
@@ -79,7 +79,7 @@ For details, see [Map the processed code to your original source code, for debug
 
    ![Load Profile](./unminify-images/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.png)
 
-1. In the **Open** dialog, select the unminified performance profile `.json` file that you just downloaded.  If needed, for details, see [Load a recording](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#load-a-recording) in _Performance features reference_, and then continue below.
+1. In the **Open** dialog, select the unminified performance profile `.json` file that you just downloaded.  If needed, for details, see [Load a recording](/microsoft-edge/devtools-guide-chromium/performance/reference#load-a-recording) in _Performance features reference_, and then continue below.
 
 
    Some function names are now unminified.  The unminified flame chart in the **Performance** tool now shows those functions labeled with more meaningful names taken from your source maps, such as **useObserver (d)**, **useQueuedForceUpdateBlock (o)**, **trackDerivedFunction (an)**, **initializeIconColorMap (c)**, **getExtraToolControls (co)**, and **isToggleEnabled (a)**.

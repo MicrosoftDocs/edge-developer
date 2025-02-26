@@ -304,7 +304,7 @@ See also:
 Chromium issue [#912581](https://crbug.com/912581)
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ---------- -->
@@ -319,7 +319,7 @@ The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Large
 Chromium issue [#974550](https://crbug.com/974550)
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ------------------------------ -->

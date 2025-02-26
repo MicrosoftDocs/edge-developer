@@ -91,7 +91,7 @@ The **Selector Stats** tab provides a list of all the CSS selectors that were ca
 See also:
 * [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/) - blog post
 * [[Feedback] Selector Performance Tracing Explainer · Issue #98](https://github.com/MicrosoftEdge/DevTools/issues/98)
-* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->

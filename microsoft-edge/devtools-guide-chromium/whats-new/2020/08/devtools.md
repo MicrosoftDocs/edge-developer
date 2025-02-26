@@ -255,8 +255,8 @@ Use **Disable local fonts** to make it easier to:
 Chromium issue: [#384968](https://crbug.com/384968)
 
 See also:
-* [Analyze rendering performance with the Rendering tool](../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.<!-- line 864, h2 -->
-   * [Disable local fonts](../../../evaluate-performance/reference.md#disable-local-fonts) in _Performance features reference_.<!-- line 937, h4 -->
+* [Analyze rendering performance with the Rendering tool](../../../performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.<!-- line 864, h2 -->
+   * [Disable local fonts](../../../performance/reference.md#disable-local-fonts) in _Performance features reference_.<!-- line 937, h4 -->
 
 
 <!-- ------------------------------ -->
