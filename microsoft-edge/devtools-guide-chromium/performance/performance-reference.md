@@ -94,8 +94,8 @@ The following events are in the **Scripting** category.
 | Install Timer | A timer was created with [setInterval()](https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval) or [setTimeout()](https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout). |
 | Request Animation Frame | A `requestAnimationFrame()` call scheduled a new frame. |
 | Remove Timer | A previously created timer was cleared. |
-| Time |  A script called [console.time()](/microsoft-edge/devtools-guide-chromium/console/api#time). |
-| Time End | A script called [console.timeEnd()](/microsoft-edge/devtools-guide-chromium/console/api#timeend). |
+| Time |  A script called [console.time()](../console/api.md#time). |
+| Time End | A script called [console.timeEnd()](../console/api.md#timeend). |
 | Timer Fired | A timer fired that was scheduled with `setInterval()` or `setTimeout()`. |
 | XHR Ready State Change | The ready state of an XMLHTTPRequest changed. |
 | XHR Load | An `XMLHTTPRequest` finished loading. |
@@ -169,7 +169,7 @@ See also [Properties common to all events](#properties-common-to-all-events), ab
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/performance/performance-reference/) and is authored by Meggin Kearney and Flavio Copes.
+> The original page is found [here](https://developer.chrome.com/docs/devtools/performance/timeline-reference) and is authored by Meggin Kearney and Flavio Copes.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

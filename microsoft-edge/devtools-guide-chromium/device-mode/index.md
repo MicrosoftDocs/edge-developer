@@ -79,7 +79,7 @@ In the following example, the viewport width is set to `400` and the height is s
 
 ![The handles for changing the dimensions of the viewport when in Responsive Viewport Mode](./index-images/device-toolbar-handles-highlighted.png)
 
-If you need more space on your screen, you can change where DevTools is docked in the browser window.  See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](/microsoft-edge/devtools-guide-chromium/customize/placement).
+If you need more space on your screen, you can change where DevTools is docked in the browser window.  See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](../customize/placement.md).
 
 
 <!-- ------------------------------ -->

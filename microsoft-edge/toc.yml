@@ -485,11 +485,11 @@
             - name: Performance tool  # = upstream TOC bucket "Performance"
               items:
                 - name: "Performance tool: Analyze your website's performance"  # = Performance > Overview 
-                  href: ./devtools-guide-chromium/evaluate-performance/performance-tool-overview.md
+                  href: ./devtools-guide-chromium/performance/performance-tool-overview.md
                   displayName: Performance tool
 
                 - name: Analyze runtime performance (tutorial)  # = Performance > Analyze runtime performance
-                  href: ./devtools-guide-chromium/evaluate-performance/index.md
+                  href: ./devtools-guide-chromium/performance/index.md
                   displayName: Performance tool, Get started analyzing runtime performance  # old title
 
                 - name: Troubleshooting common performance issues  # no longer found
@@ -501,19 +501,19 @@
                   displayName: Performance tool, Lighthouse tool, Network tool
 
                 - name: Performance features reference  # = Performance > Features reference
-                  href: ./devtools-guide-chromium/evaluate-performance/reference.md
+                  href: ./devtools-guide-chromium/performance/reference.md
                   displayName: Performance tool, Rendering tool
 
                 - name: Performance recording event reference  # = Performance > Timeline event reference
-                  href: ./devtools-guide-chromium/evaluate-performance/performance-reference.md
+                  href: ./devtools-guide-chromium/performance/performance-reference.md
                   displayName: Performance tool
 
                 - name: Display original function names in performance profiles
-                  href: ./devtools-guide-chromium/evaluate-performance/unminify.md
+                  href: ./devtools-guide-chromium/performance/unminify.md
                   displayName: Performance tool
 
                 - name: Analyze CSS selector performance during Recalculate Style events
-                  href: ./devtools-guide-chromium/evaluate-performance/selector-stats.md
+                  href: ./devtools-guide-chromium/performance/selector-stats.md
                   displayName: Performance tool, css selector stats, css selectors, selector stats, selector statistics, css selector statistics
 # Memory tool -----------------------------------------------------------------
             - name: Memory tool

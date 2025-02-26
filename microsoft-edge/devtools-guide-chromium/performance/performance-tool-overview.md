@@ -303,7 +303,7 @@ To focus on what matters for your workflow:
 
 * [Hide functions and their children in the flame chart](../performance/reference.md#hide-functions-and-their-children-in-the-flame-chart)
 
-* [Create breadcrumbs and jump between zoom levels](./reference.md#breadcrumbs) in _Performance features reference_.
+* [Create breadcrumbs and jump between zoom levels](./reference.md#create-breadcrumbs-and-jump-between-zoom-levels) in _Performance features reference_.
 
 
 To learn about the **Bottom-up**, **Call tree**, and **Event log** tabs:

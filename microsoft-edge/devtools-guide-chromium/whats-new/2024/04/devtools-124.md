@@ -58,7 +58,7 @@ Before Microsoft Edge 124, you could rearrange the tabs in the **Activity bar** 
 ![The context menu from right-clicking a tool's tab on the Activity bar](./devtools-124-images/rearrange-tab.png)
 
 See also:
-* [Pin and rearrange tools in the Activity Bar](/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar) in _Overview of DevTools_.
+* [Pin and rearrange tools in the Activity Bar](../../../overview.md#pin-and-rearrange-tools-in-the-activity-bar) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
@@ -75,8 +75,8 @@ Also, when you turn on throttling in the **Network** tool, the **Network** tab n
 ![Network tool's tab showing a warning icon when throttling is used](./devtools-124-images/network-warning-icon-throttling.png)
 
 See also:
-* [Override webpage resources with local copies (Overrides tab)](/microsoft-edge/devtools-guide-chromium/javascript/overrides)
-* [Emulate slow network connections](/microsoft-edge/devtools-guide-chromium/network/reference#emulate-slow-network-connections) in _Network features reference_.
+* [Override webpage resources with local copies (Overrides tab)](../../../javascript/overrides.md)
+* [Emulate slow network connections](../../../network/reference.md#emulate-slow-network-connections) in _Network features reference_.
 
 
 <!-- ====================================================================== -->
