@@ -52,6 +52,7 @@ The images in this page show DevTools undocked into its own, dedicated window. T
 * [Analyze a performance recording](#analyze-a-performance-recording)
    * [Get actionable insights](#get-actionable-insights)
    * [Navigate the recording](#navigate-the-recording)
+      * [Use keyboard shortcuts to navigate](#use-keyboard-shortcuts-to-navigate)
       * [Select a portion of a recording](#select-a-portion-of-a-recording)
       * [Create breadcrumbs and jump between zoom levels](#create-breadcrumbs-and-jump-between-zoom-levels)
       * [Scroll a long flame chart](#scroll-a-long-flame-chart)
@@ -67,6 +68,7 @@ The images in this page show DevTools undocked into its own, dedicated window. T
       * [The Bottom-up tab](#the-bottom-up-tab)
       * [The Call tree tab](#the-call-tree-tab)
       * [The Event log tab](#the-event-log-tab)
+   * [View performance markers](#view-performance-markers)
    * [View custom timings](#view-custom-timings)
    * [View interactions](#view-interactions)
    * [View layout shifts](#view-layout-shifts)
@@ -254,21 +256,29 @@ To learn how to interact with the paint information, see [View layers informatio
 
 <!-- ====================================================================== -->
 ## Annotate a recording and share it
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#annotate -->
 
 Once a performance trace is [recorded](#record-performance), you can [analyze](#analyze-a-performance-recording) it, and annotate it to share your findings.
 
 To annotate a recording, open the **Annotations** tab in the ![The Show sidebar icon](./reference-images/show-sidebar-icon.png) sidebar on the left of the **Performance** .  There are several ways to add an annotation:
 
+<!-- equivalent instructions are shown in the initial empty Annotations tab, for these 3 + Delete -->
 * **Label item**: To add a label to an item, double-click it and type a label.
 
 * **Connect two items**: To connect two items with an arrow, double-click the first item, click an arrow next to it, then click the second item.
 
 * **Label a time range**: To label an arbitrary time range, shift-drag from the start of a time range to its end, then type a label.
 
-<!-- ![Annotations on a performance recording](todo) -->
+For example, open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab, create a performance recording, and then do the above three actions.  Result:
 
-<!-- uncomment after png
-In this example, in the **Network** track, there are two annotated requests, a connection between them, and an annotated time range highlighted in pink.  The **Annotations** tab shows the number of annotations next to its tab name, in this example, 4. -->
+![Annotations on a performance recording](./reference-images/annotations.png)
+
+In this example, there are:
+* Three annotations.
+* An arrow annotation connecting two annotations.
+* An annotated time range highlighted in pink.
+
+The **Annotations** tab shows the number of annotations next to its tab name; in this example, 5.
 
 To delete an annotation, hover over it in the **Annotations** tab and then click the **Delete** button next to it.
 
@@ -277,10 +287,12 @@ To hide annotations from the performance trace, select **Hide annotations** at t
 
 <!-- ------------------------------ -->
 #### Save and share a recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#save -->
 
 To save a recording as a file on your device and later share it with your annotated performance findings, in the action bar at the top of the **Performance** tool, click the **Save profile** (![The Save profile icon](./reference-images/save-profile-icon.png)) button, and then select **Save trace**.
 
-<!-- ![Save trace with annotations](todo) -->
+![Save trace with annotations](./reference-images/save-trace.png)
+<!-- [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) -->
 
 Alternatively, select **Save trace without annotations**.
 
@@ -353,16 +365,53 @@ To closely inspect your performance recording, you can select a portion of a rec
 
 
 <!-- ---------- -->
+###### Use keyboard shortcuts to navigate
+
+To use keyboard shortcuts to quickly navigate the recording, first, choose your preferred style of keyboard navigation.
+
+In the top-right corner of the panel, click the **Show shortcuts** (![The Show shortcuts icon](./reference-images/show-shortcuts-icon.png)) button, and then select the **Modern** or **Classic** option button.  The **Keyboard shortcuts** dialog displays the available shortcuts for the selected mapping option.
+
+
+With the **Modern** option button selected:
+
+![Keyboard shortcuts popup with Modern selected](./reference-images/perf-nav-keyboard-shortcuts-modern.png)
+<!-- upstream wording & filename, shows Modern (upper) selected: ![The shortcuts dialog with navigation styles and shortcuts cheatsheet for the Performance panel](todo: perf-shortcuts-style.png) -->
+
+* To zoom: **Command/Ctrl** + mouse wheel.
+* To vertical scroll: Mouse wheel.
+* To horizontal scroll: **Shift** + mouse wheel.
+
+
+With the **Classic** option button selected:
+
+![Keyboard shortcuts popup with Classic selected](./reference-images/perf-nav-keyboard-shortcuts-classic.png)
+
+<!-- articulate all options shown in the dialog -->
+* To zoom: Mouse wheel, or touchpad up or down.
+* To vertical scroll: **Shift** + mouse wheel.
+* To horizontal scroll: **Shift** + **Left arrow**|**Right arrow**
+
+
+You can also pan left and right by pressing the **A** and **D** keys, and zoom by pressing the **W** or **S** keys.
+
+See also:
+* [Performance panel: enable a switch to an alternative timeline navigation option](../experimental-features/index.md#performance-panel-enable-a-switch-to-an-alternative-timeline-navigation-option) in _Experimental features in Microsoft Edge DevTools_.
+<!-- this checkbox is selected by default for Stable 133 & Canary 135 -->
+
+
+<!-- ---------- -->
 ###### Select a portion of a recording
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#select -->
 
 Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
 
-<!-- ![The Timeline overview under the action bar](./reference-images/timeline-overview.png) - todo: real png -->
+![The Timeline overview under the action bar](./reference-images/timeline-overview.png)
+<!-- todo: real png -->
 
 To select a portion of a recording, click and hold, then drag left or right across the **Timeline overview**.
 
 ![Select a portion of a recording](./reference-images/select-portion.png)
+<!-- todo: real png -->
 
 
 To select a portion using the keyboard:
@@ -743,14 +792,32 @@ Clear the **Loading**, **Scripting**, **Rendering**, or **Painting** checkboxes 
 
 
 <!-- ------------------------------ -->
+#### View performance markers
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#perf-markers -->
+
+In an overlay with vertical lines across the performance trace, you can see important performance markers, such as:
+
+* [First Paint (FP)](https://developer.mozilla.org/docs/Glossary/First_paint)
+* [First Contentful Paint (FCP)](https://web.dev/articles/fcp)
+* [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp)
+* [DOMContentLoaded Event (DCL)](https://developer.mozilla.org/docs/Web/API/Window/DOMContentLoaded_event)
+* [Onload Event (L)](https://developer.mozilla.org/docs/Web/API/Window/load_event)
+
+<!-- ![Performance markers in an overlay](todo performance-markers.png) - https://www.youtube.com showing DevTools > Perf tool, not showing webpage-->
+
+Hover over a marker name at the bottom of the trace to see its timestamp.
+
+
+<!-- ------------------------------ -->
 #### View custom timings
 
 On the **Timings** track, view your custom performance markers such as:
 
-* `performance.mark()` calls.  An individual mark with tooltip is shown below at 813.44 ms, labelled **Starting to run JavaScript**.
-* `performance.measure()` calls.  A yellow span is shown below, labelled **Slow Interaction**.
+* `performance.mark()` calls.<!-- An individual mark with tooltip is shown below at 813.44 ms, labelled **Starting to run JavaScript**. -->
 
-<!-- ![Markers in the Timings track](todo) -->
+* `performance.measure()` calls.<!-- A yellow span is shown below, labelled **Slow Interaction**. -->
+
+<!-- ![Markers in the Timings track](todo: performance-mark-and-measure.png) -->
 
 Select a marker to see more details in the **Summary** tab, including its timestamp, total time, self time, and the `detail` object.  For `performance.mark()` and `performance.measure()` calls, the tab also shows stack traces.
 
@@ -773,7 +840,7 @@ Click an interaction to view more information about it in the **Summary** tab.
 
 View layout shifts on the **Layout shifts** track.  Shifts are shown as purple diamonds and are grouped in clusters (purple lines) based on their proximity on the timeline.  For information about clusters, see [Evolving the CLS metric](https://web.dev/blog/evolving-cls)<!-- 0 hits on 'cluster' --> at web.dev.
 
-<!-- ![The Layout shifts track](todo) -->
+<!-- ![The Layout shifts track](todo: layout-shifts.png) -->
 
 To highlight an element that caused a layout shift in the viewport, hover over the corresponding diamond.
 
@@ -982,18 +1049,22 @@ See also:
 
 <!-- ====================================================================== -->
 ## Analyze rendering performance with the Rendering tool
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#rendering -->
 
-Use the **Rendering** tool to help visualize the rendering performance of your page.
+Use the **Rendering** tool to help visualize the rendering performance of your page.  The **Rendering** tool is a **Quick View** tool; if you open it from the Command Menu, it opens at the bottom of DevTools.
 
 To open the **Rendering** tool:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+1. Right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the **Activity Bar**, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
+1. On the **Activity Bar** (or **Quick View**), click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button, and then select **Rendering**.
 
-1. Click **Rendering** in the dropdown menu. The **Rendering** tool appears:
+   The **Rendering** tool opens:
 
    ![The Rendering tool](./reference-images/rendering-tool.png)
+
+See also:
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md)<!-- https://developer.chrome.com/docs/devtools/rendering#open-rendering -->
 
 
 <!-- ------------------------------ -->
@@ -1006,6 +1077,10 @@ The **FPS meter** is an overlay that appears in the top-left corner of the rende
 1. Select the **Frame Rendering Stats** checkbox. The **FPS meter** overlay appears in the rendered webpage:
 
    ![The FPS meter](./reference-images/fps-meter.png)
+
+<!-- See also:
+* [Frame rendering stats](https://developer.chrome.com/docs/devtools/rendering#frame-rendering-stats)
+upstream doesn't actually have yet section #frame-rendering-stats -->
 
 
 <!-- ------------------------------ -->
@@ -1021,6 +1096,10 @@ To turn on Paint Flashing:
 
    ![Paint Flashing](./reference-images/paint-flashing.png)
 
+<!-- See also:
+* [Paint flashing](https://developer.chrome.com/docs/devtools/rendering#paint-flashing)
+upstream doesn't actually have yet section #paint-flashing -->
+
 
 <!-- ------------------------------ -->
 #### View an overlay of layers with Layer Borders
@@ -1034,6 +1113,8 @@ To view an overlay of layer borders and tiles on top of the page:
    ![Layer Borders](./reference-images/layer-borders.png)
 
 See the comments in [debug_colors.cc](https://source.chromium.org/chromium/chromium/src/+/main:cc/debug/debug_colors.cc) for an explanation of the color-codings.
+
+<!-- See also: same status as above -->
 
 
 <!-- ------------------------------ -->
@@ -1052,10 +1133,14 @@ To view scroll performance issues:
 See also:
 * [Slow scroll rects (checkbox)](../3d-view/index.md#slow-scroll-rects-checkbox) in _Navigate webpage layers, z-index, and DOM using the 3D View tool_.
 
+<!-- See also: same status as above -->
+
+<!-- /end of upstream page -->
+
 
 <!-- ------------------------------ -->
 #### Disable local fonts
-<!-- in downstream doc only, copied from
+<!-- in edge doc only.  copied from
 [Emulate missing local fonts](../whats-new/2020/08/devtools.md#emulate-missing-local-fonts) in _What's New in DevTools (Microsoft Edge 86)_ -->
 
 In the **Rendering** tool, use the **Disable local fonts** checkbox to emulate missing `local()` sources in `@font-face` rules.
@@ -1131,7 +1216,7 @@ See also:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/evaluate-performance/reference/) and is authored by Kayce Basques.
+> The original page is found [here](https://developer.chrome.com/docs/devtools/performance/reference) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
