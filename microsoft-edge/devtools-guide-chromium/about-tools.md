@@ -6,25 +6,27 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/19/2025
+ms.date: 02/25/2025
 ---
 # About the list of tools
 
-DevTools provides more than 30 tools, consisting of the _default tools_ and _More tools_:
+DevTools provides more than 30 tools, consisting of _Default tools_ and _More tools_:
 
 * Default tools
    * **Inspect tool** (![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png)) (button)
    * **Device Emulation** (![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png)) (button)
-   * **Welcome** (removable)
+   * **Welcome**
+   * **Elements**
    * **Console**
    * **Sources**
-   * **Elements**
-   * **Network** (removable)
-   * **Performance** (removable)
-   * **Memory** (removable)
-   * **Application** (removable)
+   * **Network**
+   * **Performance**
+   * **Memory**
+   * **Application**
 
    ![The default tools, including two icons and eight tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
+
+   The **Elements**, **Console**, and **Sources** tools (tabs) are permanent, in the **Activity Bar**.  The other tool tabs can be removed, or moved down to the **Quick View** toolbar.
 
 * More tools
    * Additional optional tools that can be added to the **Activity bar**, listed in the **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu, such as the **3D View** tool.
