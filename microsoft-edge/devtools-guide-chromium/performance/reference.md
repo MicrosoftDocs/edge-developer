@@ -352,7 +352,7 @@ To make use of insights:
 
 1. Make a performance recording, per [Record performance](#record-performance), above.
 
-1. In the left sidebar of the **Performance** tool, open the **Insights** tab, expand different sections, and hover over and click items.  The **Performance** tool highlights the corresponding events in the trace:
+1. In the left sidebar of the **Performance** tool, select the **Insights** tab, expand different sections, and hover over and click items.  The **Performance** tool highlights the corresponding events in the trace:
 
    ![Hovering over entries in the Insights tab ](./reference-images/insights-tab.png)
 
@@ -401,17 +401,15 @@ See also:
 
 <!-- ---------- -->
 ###### Select a portion of a recording
-<!-- https://developer.chrome.com/docs/devtools/performance/reference#select -->
+<!-- Select a portion of the recording https://developer.chrome.com/docs/devtools/performance/reference#select -->
 
-Under the action bar of the **Performance** tool and at the top of the recording, you can see the **Timeline overview** section with the **CPU** and **NET** charts.
+At the top of the recording, the **Timeline overview** section is displayed, including the **CPU** and **NET** charts (indicated on the right):
 
-![The Timeline overview under the action bar](./reference-images/timeline-overview.png)
-<!-- todo: real png -->
+![The Timeline overview under the action bar](./reference-images/timeline-overview.png)<!-- todo: real png -->
 
-To select a portion of a recording, click and hold, then drag left or right across the **Timeline overview**.
+To select a portion of a recording, in the **Timeline overview**, click and drag horizontally:
 
-![Select a portion of a recording](./reference-images/select-portion.png)
-<!-- todo: real png -->
+![Select a portion of a recording](./reference-images/select-portion.png)<!-- todo: real png -->
 
 
 To select a portion using the keyboard:
@@ -582,7 +580,7 @@ When JavaScript samples are disabled, only high-level events are displayed, such
 
 The **Performance** tool represents main thread activity in a flame chart.  The x-axis represents the recording over time.  The y-axis represents the call stack.  The events on top cause the events below.
 
-<!-- ![A flame chart](todo) -->
+<!-- ![A flame chart](todo: flame-chart.png) -->
 
 <!-- uncomment after add pngs:
 This example shows a flame chart in the **Main** track.  A `click` event caused an anonymous function call.  This function, in turn, called `onEndpointClick_`, which called `handleClick_`, and so on. -->
@@ -592,9 +590,9 @@ The **Performance** tool assigns scripts random colors to break up the flame cha
 
 Long tasks are also highlighted with a red triangle, and with the part over 50 milliseconds shaded in red.<!-- don't link long tasks here -->
 
-<!-- ![A long task](todo) -->
+<!-- ![A long task](todo: long-task.png) -->
 
-See ![Updated Long tasks UI](../whats-new/2020/03/devtools.md#updated-long-tasks-ui) in _What's New in DevTools (Microsoft Edge 83)_.
+See [Updated Long tasks UI](../whats-new/2020/03/devtools.md#updated-long-tasks-ui) in _What's New in DevTools (Microsoft Edge 83)_.
 
 <!-- uncomment after add pngs:
 In this example, the task took more than 400 milliseconds, so the part representing the last 350 milliseconds is shaded in red, while the initial 50 milliseconds is not. -->
