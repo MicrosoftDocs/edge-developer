@@ -375,7 +375,6 @@ In the top-right corner of the panel, click the **Show shortcuts** (![The Show s
 With the **Modern** option button selected:
 
 ![Keyboard shortcuts popup with Modern selected](./reference-images/perf-nav-keyboard-shortcuts-modern.png)
-<!-- upstream wording & filename, shows Modern (upper) selected: ![The shortcuts dialog with navigation styles and shortcuts cheatsheet for the Performance panel](todo: perf-shortcuts-style.png) -->
 
 * To zoom: **Command/Ctrl** + mouse wheel.
 * To vertical scroll: Mouse wheel.
@@ -405,11 +404,11 @@ See also:
 
 At the top of the recording, the **Timeline overview** section is displayed, including the **CPU** and **NET** charts (indicated on the right):
 
-![The Timeline overview under the action bar](./reference-images/timeline-overview.png)<!-- todo: real png -->
+![The Timeline overview under the action bar](./reference-images/timeline-overview.png)
 
 To select a portion of a recording, in the **Timeline overview**, click and drag horizontally:
 
-![Select a portion of a recording](./reference-images/select-portion.png)<!-- todo: real png -->
+![Select a portion of a recording](./reference-images/select-portion.png)
 
 
 To select a portion using the keyboard:
@@ -604,6 +603,7 @@ To hide the detailed flame chart of JavaScript calls, see Disable JavaScript sam
 
 <!-- ------------------------------ -->
 #### Track event initiators
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#event-initiators -->
 
 The **Main** track can show arrows that connect the following initiators and the events they caused:
 
@@ -616,15 +616,16 @@ The **Main** track can show arrows that connect the following initiators and the
 
 To see the arrows, find either an initiator or the event it caused in the flame chart and select it.
 
-<!-- ![An arrow from the request to the firing of an idle callback](todo) -->
+<!-- ![An arrow from the request to the firing of an idle callback](todo: event-initiators.png) -->
 
 When selected, the **Summary** tab shows **Initiator for** links for initiators and **Initiated by** links for the events they caused.  Click them to jump between the corresponding events.
 
-<!-- ![The 'Initiator for' link in the Summary tab](todo) -->
+<!-- ![The 'Initiator for' link in the Summary tab](todo: initiator-link.png) -->
 
 
 <!-- ------------------------------ -->
 #### Hide functions and their children in the flame chart
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#hide-func -->
 
 To declutter the flame chart in the **Main** thread, you can hide selected functions or their children:
 
@@ -637,31 +638,33 @@ To declutter the flame chart in the **Main** thread, you can hide selected funct
    * **Reset trace** (**T**)
    * **Add script to ignore list** (**I**)
 
-   <!-- ![The context menu with options to hide the selected function or its children](todo) -->
+   <!-- ![The context menu with options to hide the selected function or its children](todo: hide-func-menu.png) -->
 
    A **number hidden** drop-down (![The number hidden drop-down](./reference-images/number-hidden-drop-down-arrow.png)) button appears next to the function name with hidden children.
 
 1. To see the number of hidden children, hover over the **number hidden** drop-down (![The number hidden drop-down](./reference-images/number-hidden-drop-down-arrow.png)) button.
 
-   <!-- ![The tooltip over the drop-down button with the number of hidden children](todo) -->
+   <!-- ![The tooltip over the drop-down button with the number of hidden children](todo: hidden-children.png) -->
 
 1. To reset a function with hidden children or the whole flame chart, select the function and press **U** or right-click any function and select **Reset trace** respectively.
 
 
 <!-- ---------- -->
 ###### Ignore scripts in the flame chart
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#ignore_scripts_in_the_flame_chart -->
 
 To add a script to the ignore list, right-click a script in the chart and select **Add script to ignore list**.
 
-<!-- ![The context menu with the ignore script option focused](todo) -->
+<!-- ![The context menu with the ignore script option focused](todo: ignore-script.png) -->
 
 The chart collapses ignored scripts, marks them as **On ignore list**, and adds them to the **Custom exclusion** rules in **Customize and control DevTools** (![The Customize and control DevTools icon](./reference-images/customize-and-control-devtools-icon.png)) > **Settings** > **Ignore list**.  Ignored scripts are saved until you remove them either from the trace or from the **Custom exclusion rules**.
 
-<!-- ![The ignore script list tab in Settings](todo) -->
+<!-- ![The ignore script list tab in Settings](todo: ignore-script-list.png) -->
 
 
 <!-- ------------------------------ -->
 #### View activities in a table
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#activities -->
 
 After recording a page, in addition to the **Main** section to analyze activities, DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
 
@@ -678,13 +681,13 @@ To help you find what you are looking for faster, all three tabs have buttons fo
 * ![The Regular expression icon](./reference-images/regex-icon.png) **Regular expression**.
 
 
-<!-- ![The three buttons for advanced filtering](todo) -->
+<!-- ![The three buttons for advanced filtering](todo: advanced-filtering.png) -->
 
 Each tabular view in the **Performance** tool shows links for activities such as functions calls.  To help you debug, DevTools finds the corresponding function declarations in source files.  Additionally, if the appropriate source maps are present and enabled, DevTools automatically finds the original files.
 
 Click a link to open a source file in the **Sources** tool.
 
-<!-- ![Link to a source file in the Event Log tab](todo) -->
+<!-- ![Link to a source file in the Event Log tab](todo: link-a-source-file.png) -->
 
 <!-- The next three sections all refer to the same demo.  You can run the demo yourself at Activity Tabs Demo https://activitytabs.glitch.me and see the source at GoogleChrome/devtools-samples/perf/activitytabs.html .   https://glitch.com/edit/#!/activitytabs?path=index.html -->
 <!-- todo: clean -->
@@ -692,8 +695,9 @@ Click a link to open a source file in the **Sources** tool.
 
 <!-- ---------- -->
 ###### Root activities
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#root-activities -->
 
-<!-- resume here syncing text content -->
+<!-- todo: resume here syncing text content -->
 
 Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.  The _activity tabs_ are the **Bottom-up**, **Call tree**, and **Event log** tabs at the bottom of the **Performance** tool.  These tabs display root activities.
 
@@ -849,10 +853,11 @@ For more information, see [Cumulative Layout Shift (CLS)](https://web.dev/articl
 
 <!-- ------------------------------ -->
 #### View animations
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#animations -->
 
 View animations on the **Animations** track.  Animations are named as corresponding CSS properties or elements if any, for example, `transform` or `my-element`.  Non-compositing animations are marked with red triangles in the top right corner.
 
-<!-- ![The Animations track with a non-compositing animation selected](todo) -->
+<!-- ![The Animations track with a non-compositing animation selected](todo: animations track) -->
 
 Select an animation to see more details in the **Summary** tab, including reasons for compositing failures.
 
@@ -1003,7 +1008,7 @@ To view advanced information about a paint event:
 
 <!-- ------------------------------ -->
 #### View CSS selector statistics
-<!-- downstream doc only -->
+<!-- section in downstream doc only -->
 
 To view statistics about the selectors of the CSS rules that got recalculated during a performance recording:
 
@@ -1021,7 +1026,7 @@ See also:
 
 <!-- ------------------------------ -->
 #### View messages between windows, iframes, and dedicated workers
-<!-- downstream only, copied from
+<!-- section in downstream doc only.  copied from edge what's new:
 [postMessage events and handlers are distinguished from other events on the timeline](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events-on-the-timeline) in _What's New in DevTools (Microsoft Edge 124)_
 -->
 

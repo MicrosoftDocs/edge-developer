@@ -161,9 +161,13 @@ The difference between the local and field metrics shows that most of your users
 
 1. Click the **Ok** button.
 
-   The field metrics are displayed.  Enabling field metrics changes the **Local metrics** section of the page to be **Local and field metrics**, and shows both the user's local metrics and metrics that were captured on real users' devices.
+   The field metrics are displayed:
 
    ![The section of the page is now labeled "Local and field metrics"](./performance-tool-overview-images/local-and-field-metrics.png)
+
+   Enabling field metrics changes the **Local metrics** section of the page to be **Local and field metrics**, and shows both the user's local metrics and metrics that were captured on real users' devices.
+
+   In the **Performance** tool home page > **Next steps** section **Field data** section, the **Set up** button is replaced by the **Configure** button, which re-opens the **Configure field data fetching** dialog.
 
 <!-- from start of upstream What's new section, w/ reformatted links: -->
 Live metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.  For information about live metrics, see [Observe Core Web Vitals live](#observe-core-web-vitals-live), above.
@@ -196,38 +200,40 @@ You can also fetch field data from the [Chrome UX Report](https://developer.chro
 
 To add field data:
 
-1. In **Performance** > **Next steps** > **Field data**, click the **Set up** button:
+1. In the **Performance** tool home page > **Next steps** section > **Field data** section, click the **Set up** button:
 
    ![Performance tool home page: Set up button](./performance-tool-overview-images/field-data-set-up-button.png)<!-- 2nd use of this png -->
+
+   If the **Performance** tool home page is not shown, because the timeline is shown instead, optionally click the **Save profile** (![The Save profile icon](./performance-tool-overview-images/save-profile-icon.png)) button, and then click the **Clear** (![The Clear icon](./performance-tool-overview-images/clear-icon.png)) button.
 
    The **Configure field data fetching** dialog opens:
 
    ![The "Configure field data fetching" dialog](./performance-tool-overview-images/configure-field-data-fetching-dialog.png)<!-- 2nd use of this png -->
 
-1. Note the **Privacy disclosure**, and then click the **Ok** button.
-
    <!-- expander section -->
    **Advanced: Set up a mapping between development and production environments:**
 
       Optionally, to automatically get the most relevant field data, you can set up (multiple) mappings between your development and production origins:
-      
+
       1. In the **Configure field data fetching** dialog, expand the **Advanced** section, and then click **+ New**.
    
       1. In the mapping table, enter your development and production URLs and click **+**.
-      
+
       ![The mapping between a development and production origins in the advanced section](./performance-tool-overview-images/field-data-advanced-mapping.png)
-   
+
       For example, a mapping of `http://localhost:8080` to `https://example.com` will bring up field data for `example.com/page1` when you navigate to `localhost:8080/page1`.
-      
+
       Additionally, if for some reason you can't get the field data automatically, you can select the **Always show field data for the below URL** checkbox and provide a URL.  The **Performance** tool will attempt to fetch field data for this URL first and then show you this field data no matter what page you navigate to.
-      
-      To change your field data fetch settings after setup, click **Field data** > **Configure**.
-       
+
+      To change your field data fetch settings after setup, in the **Performance** tool home page, in the **Field data** section, click the **Configure** button.  If the **Performance** tool home page is not shown, because the timeline is shown instead, optionally click the **Save profile** (![The Save profile icon](./performance-tool-overview-images/save-profile-icon.png)) button, and then click the **Clear** (![The Clear icon](./performance-tool-overview-images/clear-icon.png)) button.
+
    <!-- end expander section -->
+
+1. Note the **Privacy disclosure**, and then click the **Ok** button.
 
    With the field data fetch set up, the **Performance** tool now shows you a comparison between your local metric scores and those that your users experience.  You can see the collection period in the **Field data** section on the right.
 
-   ![The collection peried of field data after it has fetched](./performance-tool-overview-images/field-data-fetched.png)<!-- todo: redo showing edge -->
+   ![The collection period of field data after it has fetched](./performance-tool-overview-images/field-data-fetched.png)<!-- todo: redo showing edge -->
 
    To get a breakdown of a metric score, hover over the metric value to see a tooltip.
 
