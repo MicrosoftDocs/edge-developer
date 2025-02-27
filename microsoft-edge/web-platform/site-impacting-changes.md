@@ -33,7 +33,7 @@ This table lists high-impact changes which the Microsoft Edge team is tracking c
 <!-- latest = 10 most recent versions (Stable channel); as of Feb. 10, 2025, latest Stable = 133, so the 10 most recent versions = 124 through 133 -->
 ##### [Latest versions](#tab/latest)
 
-| Change | Release | Additional information |
+| Change | Release | Description |
 | --- | --- | --- |
 | Insecure downloads over HTTP | Future release (TBD) | When a user tries to download potentially dangerous content from an HTTP site, the user will receive a UI warning, such as "Insecure download blocked."  The user will still have an option to proceed and download the item.  Admins can use the `InsecureContentAllowedForUrls` policy to specify HTTP sites for which the warning will be suppressed.  Admins can use the `InsecureDownloadWarnings` feature flag to test the impact of this upcoming feature. |
 | Deprecate unload event | Future release (TBD) | Introduces a new Permission-Policy to allow creating unload event listeners. The default policy is `allow`, but the default policy will gradually be migrated to `deny`, such that unload handlers stop firing on pages, unless a page explicitly opts in to re-enable them.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Deprecate: Deprecate unload event](https://groups.google.com/a/chromium.org/g/blink-dev/c/dvusqw9-IhI/m/SBkm_u1RAQAJ). |
@@ -49,7 +49,7 @@ This table lists high-impact changes which the Microsoft Edge team is tracking c
 
 ##### [Earlier versions](#tab/earlier)
 
-| Change | Release | Additional information |
+| Change | Release | Description |
 | --- | --- | --- |
 | Added support for AVIF and AV1 file formats | v121 | Microsoft Edge now supports the AVIF and AV1 file formats, which offer better compression and higher quality images and videos.  Users can enjoy faster loading times and better quality media on websites. |
 | Removal of Native Client (NaCl) | v120 | To enhance web security and performance, Native Client (NaCl) is no longer supported for Microsoft Edge (along with other browsers).  NaCl was supported through v115.  In v116 through v119, NaCl was only usable by enabling an enterprise policy.  WebAssembly (Wasm) is recommended instead of NaCl; see [Run compiled code in an extension](../extensions-chromium/developer-guide/run-compiled-code.md). |
