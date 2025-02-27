@@ -276,7 +276,7 @@ See also:
 
 A **Long Task** is JavaScript code that monopolizes the main thread for a long time, causing a web page to freeze.
 
-You've been able to [visualize Long Tasks in the Performance panel](../../../performance/reference.md#view-main-thread-activity) for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the **Performance** panel has been updated.  The Long Task portion of a task is now colored with a striped red background:
+You've been able to [visualize Long Tasks in the Performance panel](../../../performance/reference.md#view-main-thread-activity) for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the **Performance** tool has been updated.  The Long Task portion of a task is now colored with a striped red background:
 
 ![The new Long Task UI](./devtools-images/long-task.png)
 
