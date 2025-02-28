@@ -96,4 +96,4 @@ To report a problem with DevTools or ask for a new feature, file an issue in the
 <!-- ====================================================================== -->
 ## See also
 
-* [Release Notes for web platform for Microsoft Edge](../../../web-platform/release-notes/index.md)
+* [Release Notes for web platform for Microsoft Edge](../../../../web-platform/release-notes/index.md)
