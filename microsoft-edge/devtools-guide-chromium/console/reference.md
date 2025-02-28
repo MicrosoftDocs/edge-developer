@@ -87,7 +87,7 @@ To open the **Console** tool from the **Command Menu**:
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
-   The Command Menu initially opens with a `>` character prepended to its text box.
+   The **Command Menu** initially opens with a `>` character prepended to its text box.
 
 1. Type **Show Console** and then select either of the **Show Console** options:
 

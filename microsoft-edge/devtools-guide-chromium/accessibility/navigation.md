@@ -84,7 +84,7 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 <!-- ====================================================================== -->
 ## Navigate between tools
 
-You can move among the tools by using the keyboard navigation keys or by using the Command Menu.
+You can move among the tools by using the keyboard navigation keys or by using the **Command Menu**.
 
 
 <!-- ------------------------------ -->
@@ -106,7 +106,7 @@ Known issues:
 <!-- ------------------------------ -->
 #### Navigate by Command Menu
 
-To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is indicated as either a _Panel_ or _Quick View_ item.
+To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the **Command Menu**, a tool is indicated as either a _Panel_ or _Quick View_ item.
 
 1. With DevTools open, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 

@@ -35,7 +35,7 @@ To find memory issues that affect page performance, including memory leaks, memo
 | Use case | Tool | Article |
 |---|---|---|
 | Monitor how much memory a webpage uses, in realtime. | Microsoft Edge Browser Task Manager | [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](./microsoft-edge-browser-task-manager.md) |
-| Visualize the memory usage of a webpage over a period of time. | **Performance** tool > **Memory** checkbox | [Visualize memory leaks (Performance tool: Memory checkbox)](../evaluate-performance/reference.md#visualize-memory-leaks-performance-tool-memory-checkbox) in _Performance features reference_. |
+| Visualize the memory usage of a webpage over a period of time. | **Performance** tool > **Memory** checkbox | [Visualize memory leaks (Performance tool: Memory checkbox)](../performance/reference.md#visualize-memory-leaks-performance-tool-memory-checkbox) in _Performance features reference_. |
 | Spot frequent garbage collections. | Microsoft Edge Browser Task Manager, or **Performance** tool > **Memory** checkbox | [Spot frequent garbage collections (Microsoft Edge Browser Task Manager, Performance tool's Memory checkbox)](#spot-frequent-garbage-collections-microsoft-edge-browser-task-manager-performance-tools-memory-checkbox), below. |
 | Inspect the contents of the memory used by a webpage. | **Memory** tool > **Heap snapshot** | [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md) |
 | Find out which JavaScript objects get created over a period of time, to isolate memory leaks. | **Memory** tool > **Allocations on timeline** | [Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)](./allocation-profiler.md) |
@@ -60,7 +60,7 @@ To return to the list of option buttons for profiling types, in the upper left o
 <!-- ====================================================================== -->
 ## Overview of fixing memory problems
 
-In the spirit of the **RAIL**<!-- [RAIL](/profile/evaluate-performance/rail) --> performance model, the focus of your performance efforts should be your users.
+In the spirit of the **RAIL**<!-- [RAIL](/profile/performance/rail) --> performance model, the focus of your performance efforts should be your users.
 
 <!--todo old: add RAIL section when available  -->
 
@@ -90,7 +90,7 @@ If your page appears to pause frequently, then you may have garbage collection i
 
 * Microsoft Edge Browser Task Manager.  Frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collection.  See [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](./microsoft-edge-browser-task-manager.md).
 
-* The **Performance** tool's **Memory** checkbox.  In Performance memory recordings, frequent changes (rising and falling) to the JS heap or node count graphs indicate frequent garbage collection.  See [View memory metrics](../evaluate-performance/reference.md#view-memory-metrics) in _Performance features reference_.
+* The **Performance** tool's **Memory** checkbox.  In Performance memory recordings, frequent changes (rising and falling) to the JS heap or node count graphs indicate frequent garbage collection.  See [View memory metrics](../performance/reference.md#view-memory-metrics) in _Performance features reference_.
 
 After you have identified the problem by using either of those tool, you can then use the **Memory** tool's **Allocations on timeline** profiling type to find out where memory is being allocated, and which functions are causing the allocations.  See [Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)](./allocation-profiler.md).
 
@@ -134,5 +134,5 @@ External:
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
-<!-- [recording](/profile/evaluate-performance/timeline-tool#make-a-recording) -->
+<!-- [recording](/profile/performance/timeline-tool#make-a-recording) -->
 <!-- [hngd](https://jsfiddle.net/kaycebasques/tmtbw8ef/) -->

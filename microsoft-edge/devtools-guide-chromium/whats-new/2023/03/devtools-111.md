@@ -88,7 +88,7 @@ Now in Microsoft Edge 111, the **Performance** tool automatically unminifies fun
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
-* [Record performance](../../../evaluate-performance/reference.md#record-performance) in _Performance features reference_.
+* [Record performance](../../../performance/reference.md#record-performance) in _Performance features reference_.
 
 
 <!-- ====================================================================== -->
@@ -126,7 +126,7 @@ To export the **Selector Stats** table:
 ![Selecting the entire Selector Stats table for copy-paste](./devtools-111-images/export-selector-stats-table.png)
 
 See also:
-* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->

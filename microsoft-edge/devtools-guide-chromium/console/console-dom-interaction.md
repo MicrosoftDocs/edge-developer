@@ -340,7 +340,7 @@ unmonitorEvents(window, ['resize', 'scroll']);
 <!-- ====================================================================== -->
 ## Save DOM interaction scripts as snippets
 
-If you enter the same DOM interaction code repeatedly in the **Console**, consider instead saving the code as a snippet and then running the snippet. Snippets are saved in the **Sources** tool, and you can run them from there or from the **Command menu**.  To learn more, see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
+If you enter the same DOM interaction code repeatedly in the **Console**, consider instead saving the code as a snippet and then running the snippet. Snippets are saved in the **Sources** tool, and you can run them from there or from the **Command Menu**.  To learn more, see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
 
 
 <!-- ====================================================================== -->

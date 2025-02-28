@@ -488,7 +488,7 @@ When you analyze load performance in the Performance tool, the **Frames** sectio
 For the history of this feature in the Chromium open-source project, see Issue [1075865](https://crbug.com/1075865).
 
 See also:
-* [Record load performance](../../../evaluate-performance/reference.md#record-load-performance) in _Performance features reference_
+* [Record load performance](../../../performance/reference.md#record-load-performance) in _Performance features reference_
 
 
 ###### New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)
