@@ -456,6 +456,7 @@ Adds an **Autofill** tool to DevTools, to record various events that the browser
 ![The Autofill tool](./index-images/autofill-tool.png)
 
 See also:
+* [Autofill: Inspect and debug saved addresses](../autofill/index.md)
 * [Autofill](/legal/microsoft-edge/privacy#autofill) in _Microsoft Edge Privacy Whitepaper_.
 * [Autofill](../../webview2/concepts/overview-features-apis.md?tabs=dotnetcsharp#autofill) in _Overview of WebView2 APIs_.
 
