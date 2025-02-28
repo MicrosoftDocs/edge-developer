@@ -90,3 +90,9 @@ This article uses the following notation for browser release numbers.
 | Beta v123 | The feature or change ships in version 123 of the Beta preview channel of Microsoft Edge. | 
 | Dev v123 | The feature or change ships in version 123 of the Dev preview channel of Microsoft Edge. | 
 | Canary v123 | The feature or change ships in version 123 of the Canary preview channel of Microsoft Edge. | 
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release Notes for web platform for Microsoft Edge](./release-notes/index.md)

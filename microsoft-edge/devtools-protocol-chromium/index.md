@@ -129,13 +129,13 @@ String("Target is closing")
 
 
 <!-- ====================================================================== -->
-## Remote Tools for Microsoft Edge (Beta)
+## Remote Tools for Microsoft Edge
 
-You can install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
+You can install the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) from the [Microsoft Store](https://apps.microsoft.com).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
 
 To learn how to set up your Windows device and connect to it from your development machine, see [Get started with remote debugging Windows devices](../devtools-guide-chromium/remote-debugging/windows.md).
 
-The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge DevTools Protocol as [DevTools](../devtools-guide-chromium/overview.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
+The [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) uses the same Microsoft Edge DevTools Protocol as [DevTools](../devtools-guide-chromium/overview.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
 
 The following Reference sections are for Remote Tools for Microsoft Edge.
 

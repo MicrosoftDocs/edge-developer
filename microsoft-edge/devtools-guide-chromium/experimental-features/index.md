@@ -928,3 +928,9 @@ See also:
 Status:
 * This checkbox is present in Microsoft Edge Canary 135.
 * This checkbox is present in Microsoft Edge Stable 133.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release Notes for web platform for Microsoft Edge](../../web-platform/release-notes/index.md)

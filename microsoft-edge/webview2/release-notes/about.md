@@ -100,3 +100,4 @@ Async methods:
 * [Archived Release Notes for the WebView2 SDK](./archive.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md)
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)
+* [Release Notes for web platform for Microsoft Edge](../../web-platform/release-notes/index.md)
