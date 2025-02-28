@@ -10,7 +10,7 @@ ms.date: 02/06/2025
 ---
 # What's New in DevTools (Microsoft Edge 133)
 
-To check out the latest features of Microsoft Edge DevTools<!-- and the Microsoft Edge DevTools extension for Microsoft Visual Studio Code and Visual Studio -->, read these announcements.
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -80,5 +80,5 @@ Microsoft Edge 133 also includes the following updates from the Chromium project
 <!-- ====================================================================== -->
 ## See also
 
-* [What's New in Microsoft Edge DevTools](../../whats-new.md)<!-- Download the preview channels, Get in touch with the Microsoft Edge DevTools team -->
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
 * [Release Notes for web platform for Microsoft Edge](../../../../web-platform/release-notes/index.md)

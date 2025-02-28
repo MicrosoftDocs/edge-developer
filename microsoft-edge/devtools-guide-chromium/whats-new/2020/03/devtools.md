@@ -25,7 +25,7 @@ ms.date: 05/04/2021
 
 Following the updated Chromium schedule, we are adjusting our schedule for upcoming Microsoft Edge releases and cancelling the Microsoft Edge 82 release. Check out our [blog post](https://blogs.windows.com/msedgedev/2020/03/20) for more info.
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -311,3 +311,10 @@ See also:
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release Notes for web platform for Microsoft Edge](../../../../web-platform/release-notes/index.md)
