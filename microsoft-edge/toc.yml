@@ -24,7 +24,7 @@
 # /top leaf nodes
 # =============================================================================
 # Release notes
-    - name: Release notes
+    - name: Release notes for web platform
       items:
         - name: Release Notes for web platform for Microsoft Edge
           href: ./web-platform/release-notes/index.md

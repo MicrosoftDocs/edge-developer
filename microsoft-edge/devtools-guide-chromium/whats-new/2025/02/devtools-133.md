@@ -10,7 +10,7 @@ ms.date: 02/06/2025
 ---
 # What's New in DevTools (Microsoft Edge 133)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+To check out the latest features of Microsoft Edge DevTools<!-- and the Microsoft Edge DevTools extension for Microsoft Visual Studio Code and Visual Studio -->, read these announcements.
 
 
 <!-- ====================================================================== -->
@@ -75,18 +75,25 @@ Microsoft Edge 133 also includes the following updates from the Chromium project
    * [Timings markers in an overlay](https://developer.chrome.com/blog/new-in-devtools-133#markers)
    * [Stack traces of JavaScript calls in Summary](https://developer.chrome.com/blog/new-in-devtools-133#perf-stack-traces)
 * [Badge settings moved to menu in Elements](https://developer.chrome.com/blog/new-in-devtools-133#badge-settings)
- 
-
-<!-- ====================================================================== -->
-<!-- uncomment if content is copied from developer.chrome.com to this page -->
-
-<!-- > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 133)](https://developer.chrome.com/blog/new-in-devtools-133) and is authored by Sofia Emelianova. -->
 
 
 <!-- ====================================================================== -->
-<!-- uncomment if content is copied from developer.chrome.com to this page -->
+## Download the preview channels
 
-<!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+To stay up to date and get the latest DevTools features, download an Insiders preview version of Microsoft Edge.  Whether you're on Windows, Linux, or macOS, consider using Canary (or another preview channel) as your default development browser.
+
+The Beta, Dev, and Canary versions of Microsoft Edge run as separate apps, side-by-side with the stable, released version of Microsoft Edge.  See [Microsoft Edge Insider Channels](https://aka.ms/microsoftedge).
+
+
+<!-- ====================================================================== -->
+## Get in touch with the Microsoft Edge DevTools team
+
+For the latest announcements, [follow the Microsoft Edge team on Twitter](https://twitter.com/MSEdgeDev).
+
+To report a problem with DevTools or ask for a new feature, file an issue in the [MicrosoftEdge/DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release Notes for web platform for Microsoft Edge](../../../web-platform/release-notes/index.md)

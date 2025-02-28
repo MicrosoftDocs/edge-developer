@@ -20,3 +20,4 @@ What's New articles correspond to historical releases of Microsoft Edge, and are
 
 * [What's New in DevTools archive](./whats-new-archive.md)
 * [Experimental features in Microsoft Edge DevTools](../experimental-features/index.md)
+* [Release Notes for web platform for Microsoft Edge](../../web-platform/release-notes/index.md)
