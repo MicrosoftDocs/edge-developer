@@ -805,7 +805,7 @@ In an overlay with vertical lines across the performance trace, you can see impo
 * [DOMContentLoaded Event (DCL)](https://developer.mozilla.org/docs/Web/API/Window/DOMContentLoaded_event)
 * [Onload Event (L)](https://developer.mozilla.org/docs/Web/API/Window/load_event)
 
-<!-- ![Performance markers in an overlay](todo performance-markers.png) - https://www.youtube.com showing DevTools > Perf tool, not showing webpage-->
+<!-- ![Performance markers in an overlay](todo: performance-markers.png) - https://www.youtube.com showing DevTools > Perf tool, not showing webpage-->
 
 Hover over a marker name at the bottom of the trace to see its timestamp.
 
@@ -857,7 +857,7 @@ For more information, see [Cumulative Layout Shift (CLS)](https://web.dev/articl
 
 View animations on the **Animations** track.  Animations are named as corresponding CSS properties or elements if any, for example, `transform` or `my-element`.  Non-compositing animations are marked with red triangles in the top right corner.
 
-<!-- ![The Animations track with a non-compositing animation selected](todo: animations track) -->
+<!-- ![The Animations track with a non-compositing animation selected](todo: animations-track.png) -->
 
 Select an animation to see more details in the **Summary** tab, including reasons for compositing failures.
 
@@ -875,7 +875,7 @@ View GPU activity in the **GPU** section of the **Performance** tool:
 
 View raster activity in the **Thread Pool** section.
 
-![The Raster section](./reference-images/raster.png)<!-- todo: update -->
+![The Raster section](./reference-images/raster.png)<!-- todo: update png from dark mode to light mode -->
 
 
 <!-- ------------------------------ -->
@@ -1168,7 +1168,8 @@ Use **Disable local fonts** to make it easier to:
 ## Visualize memory leaks (Performance tool: Memory checkbox)
 <!-- This h2 is in downstream version of this doc only.
 todo: move this h2 section to a Perf tool article?
-In upstream docs, this h2 section is in https://developer.chrome.com/docs/devtools/memory-problems#visualize_memory_leaks_with_timeline_recordings
+In upstream docs, this h2 section is in:
+https://developer.chrome.com/docs/devtools/memory-problems#visualize_memory_leaks_with_timeline_recordings
 Moved this h2 section from downstream (redesigned) "Fix memory problems" article.
 It would be best to match the upstream location ("Fix memory problems" > "Visualize memory leaks with Performance recordings") - requires revisit design of "Fix memory problems" vs. the upstream Memory > Overview page.
 This section is about the **Performance** tool >  **Memory** checkbox - which is doc'd in [View memory metrics](#view-memory-metrics), above. -->
