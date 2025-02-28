@@ -28,6 +28,8 @@ Use the **Autofill** tool to inspect and debug address info that's been saved to
 
 The **Autofill** tool records various events that the browser triggers when a user is filling in a form by using the browser's autofill feature -- for example, when the browser remembers your address and autofills it in an address field.
 
+![The Autofill tool](./index-images/autofill-tool.png)
+
 
 <!-- ====================================================================== -->
 ## Overview
@@ -139,6 +141,8 @@ Additionally, you can use the [Issues tool](../issues/index.md) to find problems
 ## See also
 <!-- todo: all links in article -->
 
+* [Autofill](/legal/microsoft-edge/privacy#autofill) in _Microsoft Edge Privacy Whitepaper_.
+* [Autofill](../../webview2/concepts/overview-features-apis.md#autofill) in _Overview of WebView2 APIs_.
 * [Autofill](https://web.dev/learn/forms/autofill) at web.dev.
 
 
