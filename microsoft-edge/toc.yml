@@ -620,12 +620,6 @@
                     - name: Inspect and modify CSS animation effects
                       href: ./devtools-guide-chromium/inspect-styles/animations.md
                       displayName: Animations tool
-# Autofill tool -------------------------------------------------------------
-                - name: Autofill tool
-                  items:
-                    - name: Autofill tool
-                      href: ./devtools-guide-chromium/autofill/index.md
-                      displayName: Autofill tool
 # Changes tool ----------------------------------------------------------------
                 - name: Changes tool
                   items:
