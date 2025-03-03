@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 02/06/2025
+ms.date: 03/03/2025
 ---
 # Release notes for Microsoft Edge web platform
 
@@ -17,7 +17,6 @@ To stay up-to-date and get the latest web platform features, download an Insider
 <!-- ====================================================================== -->
 ## See also
 
-Web platform
 * [Site compatibility-impacting changes coming to Microsoft Edge](../site-impacting-changes.md)
 
 Microsoft Edge DevTools
