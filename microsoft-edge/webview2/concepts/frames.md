@@ -295,7 +295,7 @@ See also:
 <!-- ====================================================================== -->
 ## Modifying network events by using the `WebResourceRequested` event in iframes
 
-![This feature is experimental](./frames-images/experimental-tag.png)
+![This feature is experimental](./frames-images/experimental-tag.png)<!-- todo: remove flag, update section? -->
 
 For iframes, you can listen to network events and modify them, by using the `WebResourceRequested` event.
 
