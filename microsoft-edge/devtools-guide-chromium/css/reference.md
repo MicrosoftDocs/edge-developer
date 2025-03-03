@@ -57,7 +57,7 @@ If the stylesheet is minified, click the **Format** (![Format](./reference-image
 
 In the following figure, after you click
 `https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --><!--keep /en-us--> you are taken to line 2 of
-`https://learn.microsoft.com/_themes/docs.theme/master/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
+`https://learn.microsoft.com/_themes/docs.theme/master/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- /master/ works but lines concated.  /main/ doesn't work -->
 
 ![Viewing the stylesheet where a rule is defined](./reference-images/css-elements-styles-h1-highlight.png)
 

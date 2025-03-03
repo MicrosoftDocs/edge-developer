@@ -380,9 +380,7 @@ Status:
 
 <!-- ====================================================================== -->
 ## Group sources into authored and deployed trees
-<!-- checkbox has a "(?)" link
-https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/#group-sources-into-authored-and-deployed-trees
-pointing to this anchor wording -->
+<!-- checkbox has a "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 104_
 <!-- This experiment was shown in the What's New 104 video [Microsoft Edge | What's New in DevTools 104](https://www.youtube.com/watch?v=0_ZprFX8x0I&t=129s) at 2:09. -->
