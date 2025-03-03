@@ -139,7 +139,7 @@ To see the default ports that are used by Device Portal, see the table in [Setup
 For information about port settings, see [Windows Device Portal for Desktop](/windows/uwp/debug-test-perf/device-portal-desktop).
 
 See also:
-* [Registry-based configuration](https://learn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration) in _Windows Device Portal for Desktop_.
+* [Registry-based configuration](/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration) in _Windows Device Portal for Desktop_.
 
 
 <!-- ====================================================================== -->

@@ -300,10 +300,12 @@ See also:
 For iframes, you can listen to network events and modify them, by using the `WebResourceRequested` event.
 
 See also:
-* [Manage network requests in WebView2](./overview-features-apis.md#manage-network-requests-in-webview2) in _Overview of WebView2 APIs_.
+* [Manage network requests in WebView2](./overview-features-apis.md#manage-network-requests-in-webview2) in _Overview of WebView2 APIs_.<!-- todo: delete the below tabset? -->
 * [Custom management of network requests](../how-to/webresourcerequested.md)
 * [Experimental APIs for 1.0.1222-prerelease](../release-notes/archive.md#experimental-apis-for-101222-prerelease) in _Archived Release Notes for the WebView2 SDK_.
 
+
+<!-- todo: delete tabset? -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -332,14 +334,15 @@ See the latest prerelease APIs.  The following links contain `1.0.1466-prereleas
 <!-- for win32, "Experimental" links automatically go to latest view -->
 
 * [ICoreWebView2Experimental16.AddWebResourceRequestedFilterWithRequestSourceKinds method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental16#addwebresourcerequestedfilterwithrequestsourcekinds) - To subscribe to network requests that belong to an iframe, you must use this `...WithRequestSourceKinds` method and use `COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS_DOCUMENT` as the value of the `requestSourceKinds` parameter.<!--keep this note-->
-   * [COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_web_resource_request_source_kinds)
+   * [COREWEBVIEW2_WEB_RESOURCE_REQUEST_SOURCE_KINDS enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_web_resource_request_source_kinds)
 * [ICoreWebView2Experimental16.RemoveWebResourceRequestedFilterWithRequestSourceKinds method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental16#removewebresourcerequestedfilterwithrequestsourcekinds)
 * [ICoreWebView2ExperimentalWebResourceRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs)
 
 <!-- 
-TODO: at next SDK release early December 2022, update enum link when it changes to a Globals page section/anchor eg:
+todo: at next SDK release early December 2022, update enum link when it changes to a Globals page section/anchor eg:
 https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.1418.22
 https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1418.22
+check links in [Manage network requests in WebView2](./overview-features-apis?tabs=win32cpp#manage-network-requests-in-webview2) with Win32 tab selected
 -->
 
 ---
