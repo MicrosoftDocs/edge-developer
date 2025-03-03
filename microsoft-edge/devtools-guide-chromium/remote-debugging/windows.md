@@ -136,9 +136,12 @@ If the client (debugger) machine successfully connects to the host (debuggee) ma
 
 ![The edge://inspect page on the client displays the tabs in Microsoft Edge and PWAs on the host](./windows-images/remote-debugging-windows-media-edge-inspect-connected.png)
 
-Determine the content you want to debug, and then click **inspect**.  The Microsoft Edge DevTools opens in a new tab and screencast the content from the host (debuggee) machine to the client (debugger) machine.  You can now use the full power of Microsoft Edge DevTools on the client for content running on the host.  Learn more about how to use the Microsoft Edge DevTools [here](../index.md).
+Determine the content you want to debug, and then click **inspect**.  Microsoft Edge DevTools opens in a new tab, and screencasts the content from the host (debuggee) machine to the client (debugger) machine.  You can now use the full power of Microsoft Edge DevTools on the client for content running on the host.
 
 ![The Microsoft Edge DevTools on the client debugging a tab in Microsoft Edge on the host](./windows-images/remote-debugging-windows-media-devtools-client.png)
+
+See also:
+* [Microsoft Edge DevTools documentation](/microsoft-edge/devtools-guide-chromium/landing/)
 
 
 <!-- ------------------------------ -->
