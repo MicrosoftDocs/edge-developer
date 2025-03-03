@@ -25,7 +25,7 @@ ms.date: 05/04/2021
 
 Following the updated Chromium schedule, we are adjusting our schedule for upcoming Microsoft Edge releases and cancelling the Microsoft Edge 82 release. Check out our [blog post](https://blogs.windows.com/msedgedev/2020/03/20) for more info.
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -35,9 +35,9 @@ Following the updated Chromium schedule, we are adjusting our schedule for upcom
 <!-- ------------------------------ -->
 #### Remotely debug Microsoft Edge on Windows 10 or later Devices
 
-The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) app is now available in the [Microsoft Store](https://www.microsoft.com/store/apps/windows). This app extends the [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal).  You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets.  This list of targets includes all tabs in Microsoft Edge and [PWAs](../../../../progressive-web-apps-chromium/index.md) open on the Windows device.  Use DevTools on your development machine against a target running on the remote Windows device.
+The [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) app is now available in the [Microsoft Store](https://apps.microsoft.com). This app extends the [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal).  You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets.  This list of targets includes all tabs in Microsoft Edge and [PWAs](../../../../progressive-web-apps-chromium/index.md) open on the Windows device.  Use DevTools on your development machine against a target running on the remote Windows device.
 
-![The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store](./devtools-images/remote-tools.png)
+![The Remote Tools for Microsoft Edge app available in the Microsoft Store](./devtools-images/remote-tools.png)
 
 Read our guide for setting up your Windows 10 device and your development machine for remote debugging: [Remotely debug Windows devices](../../../remote-debugging/windows.md).
 
@@ -311,3 +311,10 @@ See also:
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

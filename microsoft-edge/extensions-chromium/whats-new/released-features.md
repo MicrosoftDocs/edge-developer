@@ -145,3 +145,4 @@ By clicking the extension certification report link, you can view and download t
 ## See also
 
 * [Roadmap for Microsoft Edge Add-ons](roadmap.md) - upcoming Partner Center features or updates.
+* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)

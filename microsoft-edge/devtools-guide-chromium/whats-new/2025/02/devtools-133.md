@@ -10,7 +10,7 @@ ms.date: 02/06/2025
 ---
 # What's New in DevTools (Microsoft Edge 133)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -75,18 +75,10 @@ Microsoft Edge 133 also includes the following updates from the Chromium project
    * [Timings markers in an overlay](https://developer.chrome.com/blog/new-in-devtools-133#markers)
    * [Stack traces of JavaScript calls in Summary](https://developer.chrome.com/blog/new-in-devtools-133#perf-stack-traces)
 * [Badge settings moved to menu in Elements](https://developer.chrome.com/blog/new-in-devtools-133#badge-settings)
- 
-
-<!-- ====================================================================== -->
-<!-- uncomment if content is copied from developer.chrome.com to this page -->
-
-<!-- > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 133)](https://developer.chrome.com/blog/new-in-devtools-133) and is authored by Sofia Emelianova. -->
 
 
 <!-- ====================================================================== -->
-<!-- uncomment if content is copied from developer.chrome.com to this page -->
+## See also
 
-<!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)
