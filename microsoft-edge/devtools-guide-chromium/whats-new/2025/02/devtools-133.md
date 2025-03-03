@@ -81,4 +81,4 @@ Microsoft Edge 133 also includes the following updates from the Chromium project
 ## See also
 
 * [What's New in Microsoft Edge DevTools](../../whats-new.md)
-* [Release Notes for web platform for Microsoft Edge](../../../../web-platform/release-notes/index.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

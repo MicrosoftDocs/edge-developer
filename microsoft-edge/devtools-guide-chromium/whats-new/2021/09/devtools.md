@@ -106,4 +106,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 ## See also
 
 * [What's New in Microsoft Edge DevTools](../../whats-new.md)
-* [Release Notes for web platform for Microsoft Edge](../../../../web-platform/release-notes/index.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

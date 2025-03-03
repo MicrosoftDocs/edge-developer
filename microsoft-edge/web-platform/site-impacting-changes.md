@@ -14,7 +14,7 @@ This article highlights:
 * High-impact differences between Microsoft Edge and the Chromium project, the browser engine which Microsoft Edge is based on.
 * High-impact web platform changes, which might impact browser compatibility on your site, and which the Microsoft Edge team is tracking especially closely.
 
-For more information about other changes in Microsoft Edge, see [Release Notes for web platform for Microsoft Edge](./release-notes/index.md).
+For more information about other changes in Microsoft Edge, see [Release notes for Microsoft Edge web platform](./release-notes/index.md).
   
 The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, these changes may affect the functionality of existing webpages.
 
@@ -95,4 +95,4 @@ This article uses the following notation for browser release numbers.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release Notes for web platform for Microsoft Edge](./release-notes/index.md)
+* [Release notes for Microsoft Edge web platform](./release-notes/index.md)

@@ -1,5 +1,5 @@
 ---
-title: Release Notes for web platform for Microsoft Edge
+title: Release notes for Microsoft Edge web platform
 description: New web platform features and updates in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.date: 02/06/2025
 ---
-# Release Notes for web platform for Microsoft Edge
+# Release notes for Microsoft Edge web platform
 
 These release notes cover the new web platform features and updates in Microsoft Edge.
 

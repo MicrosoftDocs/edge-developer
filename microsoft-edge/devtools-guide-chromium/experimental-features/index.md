@@ -933,4 +933,4 @@ Status:
 <!-- ====================================================================== -->
 ## See also
 
-* [Release Notes for web platform for Microsoft Edge](../../web-platform/release-notes/index.md)
+* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)

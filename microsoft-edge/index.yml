@@ -197,7 +197,7 @@ conceptualContent:
 # Card for toc bucket 1 (Release notes) & 2 (Experimental web platform features) - r1c1
         - title: Web platform updates
           links:
-            - text: Release Notes for web platform for Microsoft Edge
+            - text: Release notes for Microsoft Edge web platform
               url: ./web-platform/release-notes/index.md
               itemType: whats-new
 
