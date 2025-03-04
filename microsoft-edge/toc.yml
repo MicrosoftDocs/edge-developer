@@ -523,6 +523,12 @@
                 - name: Debug background services
                   href: ./devtools-guide-chromium/javascript/background-services.md
                   displayName: Application tool
+# Autofill tool -------------------------------------------------------------
+            - name: Autofill tool
+              items:
+                - name: Autofill tool
+                  href: ./devtools-guide-chromium/autofill/index.md
+                  displayName: Autofill tool
 # Changes tool ----------------------------------------------------------------
             - name: Changes tool
               items:
