@@ -54,7 +54,7 @@ The images in this page show DevTools undocked into its own, dedicated window. T
    * [Navigate the recording](#navigate-the-recording)
       * [Use keyboard shortcuts to navigate](#use-keyboard-shortcuts-to-navigate)
       * [Select a portion of a recording](#select-a-portion-of-a-recording)
-      * [Create breadcrumbs and jump between zoom levels](#create-breadcrumbs-and-jump-between-zoom-levels)
+      * [Zoom on portions of a recording and switch between zoom levels](#zoom-on-portions-of-a-recording-and-switch-between-zoom-levels)
       * [Scroll a long flame chart](#scroll-a-long-flame-chart)
    * [Search activities](#search-activities)
    * [Change the order of tracks and hide them](#change-the-order-of-tracks-and-hide-them)
@@ -150,7 +150,7 @@ To analyze the performance of a webpage while it's loading (rather than while it
 
    DevTools records performance metrics while the page refreshes and then automatically stops the recording a couple seconds after the load finishes. Then, DevTools displays the recording and automatically zooms in on the portion of the recording where most of the activity occurred:
 
-   ![A page-load recording](./reference-images/refreshed.png)
+   ![A page-load recording](./reference-images/refreshed.png)<!-- 1st instance of this png ~~ -->
 
 
 <!-- ------------------------------ -->
@@ -260,14 +260,18 @@ To learn how to interact with the paint information, see [View layers informatio
 
 Once a performance trace is [recorded](#record-performance), you can [analyze](#analyze-a-performance-recording) it, and annotate it to share your findings.
 
-To annotate a recording, open the **Annotations** tab in the ![The Show sidebar icon](./reference-images/show-sidebar-icon.png) sidebar on the left of the **Performance** .  There are several ways to add an annotation:
+To annotate a recording, open the **Annotations** tab in the **Performance** tool sidebar.  If the sidebar is not visible, click **Show sidebar** (![The Show sidebar icon](./reference-images/show-sidebar-icon.png)).
+
+The **Annotations** tab in the sidebar initially contains instructions about how to add annotations.  After you create annotations, as shown below, the tab lists your existing annotations, and allows you to delete them.
+
+There are several ways to add an annotation:
 
 <!-- equivalent instructions are shown in the initial empty Annotations tab, for these 3 + Delete -->
-* **Label item**: To add a label to an item, double-click it and type a label.
+* **Label an item**: To label an item in the performance trace, double-click the item, enter the label in the text box, and then press **Enter**.
 
-* **Connect two items**: To connect two items with an arrow, double-click the first item, click an arrow next to it, then click the second item.
+* **Connect two items**: To draw an arrow between two items in the performance trace, double-click the first item, click the arrow icon next to it, and then click the second item.
 
-* **Label a time range**: To label an arbitrary time range, shift-drag from the start of a time range to its end, then type a label.
+* **Label a time range**: To draw and label an arbitrary time range in the performance trace, hold the **Shift** key and drag from the start of a time range to the end, enter the label in the text box that appears, and then press **Enter**.
 
 For example, open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab, create a performance recording, and then do the above three actions.  Result:
 
@@ -336,19 +340,19 @@ After you [record runtime performance](#record-runtime-performance) or [record l
 <!-- ------------------------------ -->
 #### Get actionable insights
 
-The **Performance** tool shows performance insights, including insights from the **Lighthouse** report.  These insights can suggest ways to improve performance and provide guided analysis on the following performance issues, such as:
+The **Performance** tool extracts actionable insights from the recorded performance data.  These insights are ways in which you can improve the performance of your website.  The insights are focused on:
 
-* LCP and INP by subpart
-* LCP request discovery
-* Layout shift culprits
-* Render blocking requests
-* Third parties
-* Image delivery
-* Document request latency
-* Viewport optimization for mobile
-* CSS selector costs
+* LCP and INP by subpart.
+* LCP request discovery.
+* Layout shift culprits.
+* Render blocking requests.
+* Third parties.
+* Image delivery.
+* Document request latency.
+* Viewport optimization for mobile.
+* CSS selector costs.
 
-To make use of insights:
+To use the insights:
 
 1. Make a performance recording, per [Record performance](#record-performance), above.
 
@@ -369,8 +373,7 @@ To closely inspect your performance recording, you can select a portion of a rec
 
 To use keyboard shortcuts to quickly navigate the recording, first, choose your preferred style of keyboard navigation.
 
-In the top-right corner of the panel, click the **Show shortcuts** (![The Show shortcuts icon](./reference-images/show-shortcuts-icon.png)) button, and then select the **Modern** or **Classic** option button.  The **Keyboard shortcuts** dialog displays the available shortcuts for the selected mapping option.
-
+In the top-right corner of the **Performance** tool, click the **Show shortcuts** (![The Show shortcuts icon](./reference-images/show-shortcuts-icon.png)) button, and then select the **Modern** or **Classic** option button.  The **Keyboard shortcuts** dialog displays the available shortcuts for the selected mapping option.
 
 With the **Modern** option button selected:
 
@@ -458,12 +461,12 @@ To select a portion of a recording by using a trackpad:
 
 
 <!-- ---------- -->
-###### Create breadcrumbs and jump between zoom levels
-<!-- https://developer.chrome.com/docs/devtools/performance/reference#breadcrumbs -->
+###### Zoom on portions of a recording and switch between zoom levels
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#breadcrumbs (Create breadcrumbs and jump between zoom levels) -->
 
-The **Timeline overview** lets you create multiple nested breadcrumbs in succession, increasing zoom levels, and then jump freely between zoom levels.
+The **Timeline overview** lets you zoom in on portions of your recording in succession, and create breadcrumbs at each step, allowing you to then switch between these zoom levels.
 
-To create and use breadcrumbs:
+To zoom on a portion of your recording and use breadcrumbs:
 
 1. In **Timeline overview**, [select a portion of the recording](#select-a-portion-of-a-recording) (above).
 
@@ -522,9 +525,9 @@ The **Performance** tool shows a tooltip over the activity that's selected in th
 
 To modify the query settings:
 
-* To make the query case-sensitive, click the **Case sensitive** (![Case sensitive](./reference-images/search-case-icon.png)) button.
+* To use a regular expression in your query, click the **Enable regular expressions** (![The "Enable regular expressions" icon](./reference-images/regex-icon.png)) button.  If you select the **Regex** button and then enter `^E.*` that finds any activity that  any activity that begins with the letter E.
 
-* To use a regular expression in your query, click the **Regex** (![Regex](./reference-images/search-regex-icon.png)) button.  If you select the **Regex** button and then enter `^E.*` that finds any activity that  any activity that begins with the letter E.
+* To make the query case-sensitive, click the **Enable case sensitive search** (![The "Enable case sensitive search" icon](./reference-images/match-case-icon.png)) button.
 
 
 To hide the search box, click the **Cancel** button.
@@ -542,11 +545,11 @@ To move and hide tracks:
 
 1. Click the **Move track up** (![The Move track up icon](./reference-images/move-track-up-icon.png)) button or the **Move track down** (![The Move track down icon](./reference-images/move-track-down-icon.png)) button to move a track up or down.  Click the **Hide track** (![The Hide track icon](./reference-images/hide-track-icon.png)) button to hide it.
 
-1. When finished, click **Finish configuring** tracks at the bottom to exit the configuration mode.
+1. When finished, click **Finish configuring tracks** at the bottom, to exit the configuration mode.<!-- todo: don't have a **Finish configuring tracks** button at this point.  add: right-click again to reveal the **Finish configuring tracks** option. -->
 
-<!-- Watch the video to see this workflow in action. -->
+<!-- ![Watch the video to see this workflow in action](todo: png) -->
 
-The **Performance** tool saves track configuration for new traces but not in next DevTools sessions.
+The **Performance** tool applies your track configuration to new traces as well, unless you close and then re-open DevTools.
 
 
 <!-- ------------------------------ -->
@@ -579,9 +582,9 @@ When JavaScript samples are disabled, only high-level events are displayed, such
 
 The **Performance** tool represents main thread activity in a flame chart.  The x-axis represents the recording over time.  The y-axis represents the call stack.  The events on top cause the events below.
 
-<!-- ![A flame chart](todo: flame-chart.png) -->
+![A flame chart](./reference-images/flame-chart.png)
 
-<!-- uncomment after add pngs:
+<!-- uncomment after add pngs: the above repurposed png might not fit w/ the following text from upstream:
 This example shows a flame chart in the **Main** track.  A `click` event caused an anonymous function call.  This function, in turn, called `onEndpointClick_`, which called `handleClick_`, and so on. -->
 
 The **Performance** tool assigns scripts random colors to break up the flame chart and make it more readable.
@@ -590,8 +593,6 @@ The **Performance** tool assigns scripts random colors to break up the flame cha
 Long tasks are also highlighted with a red triangle, and with the part over 50 milliseconds shaded in red.<!-- don't link long tasks here -->
 
 <!-- ![A long task](todo: long-task.png) -->
-
-See [Updated Long tasks UI](../whats-new/2020/03/devtools.md#updated-long-tasks-ui) in _What's New in DevTools (Microsoft Edge 83)_.
 
 <!-- uncomment after add pngs:
 In this example, the task took more than 400 milliseconds, so the part representing the last 350 milliseconds is shaded in red, while the initial 50 milliseconds is not. -->
@@ -616,7 +617,7 @@ The **Main** track can show arrows that connect the following initiators and the
 
 To see the arrows, find either an initiator or the event it caused in the flame chart and select it.
 
-<!-- ![An arrow from the request to the firing of an idle callback](todo: event-initiators.png) -->
+<!-- ![An arrow from the request to the firing of an idle callback](todo: event-initiators.png) - out of scope for initial PR -->
 
 When selected, the **Summary** tab shows **Initiator for** links for initiators and **Initiated by** links for the events they caused.  Click them to jump between the corresponding events.
 
@@ -676,12 +677,11 @@ After recording a page, in addition to the **Main** section to analyze activitie
 
 To help you find what you are looking for faster, all three tabs have buttons for advanced filtering next to the **Filter** bar:
 
-* ![The Match case icon](./reference-images/match-case-icon.png) **Match case**.
+* The **Enable regular expressions** (![The "Enable regular expressions" icon](./reference-images/regex-icon.png)) button.
 
-* ![The Regular expression icon](./reference-images/regex-icon.png) **Regular expression**.
+* The **Enable case sensitive search** (![The "Enable case sensitive search" icon](./reference-images/match-case-icon.png)) button.
 
-
-<!-- ![The three buttons for advanced filtering](todo: advanced-filtering.png) -->
+![The three buttons for advanced filtering](./reference-images/advanced-filtering.png)
 
 Each tabular view in the **Performance** tool shows links for activities such as functions calls.  To help you debug, DevTools finds the corresponding function declarations in source files.  Additionally, if the appropriate source maps are present and enabled, DevTools automatically finds the original files.
 
@@ -689,8 +689,8 @@ Click a link to open a source file in the **Sources** tool.
 
 <!-- ![Link to a source file in the Event Log tab](todo: link-a-source-file.png) -->
 
-<!-- The next three sections all refer to the same demo.  You can run the demo yourself at Activity Tabs Demo https://activitytabs.glitch.me and see the source at GoogleChrome/devtools-samples/perf/activitytabs.html .   https://glitch.com/edit/#!/activitytabs?path=index.html -->
-<!-- todo: clean -->
+The next three sections all refer to the same demo.  You can run the demo yourself at [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) and see the source at
+[MicrosoftEdge / Demos > /devtools-performance-activitytabs/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs).
 
 
 <!-- ---------- -->

@@ -63,7 +63,9 @@ To open the **Performance** tool:
 
 Or, open the **Performance** tool by using the **Command Menu**, as follows:
 
-1. [Open DevTools](../overview.md#open-devtools).
+1. Right-click a webpage, and then select **Inspect**.
+
+   DevTools opens.
 
 1. Open the **Command Menu** by pressing:
 
@@ -76,8 +78,8 @@ Or, open the **Performance** tool by using the **Command Menu**, as follows:
 
 
 <!-- ====================================================================== -->
-## Observe Core Web Vitals live
-<!-- https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
+## Observe local Core Web Vitals
+<!-- https://developer.chrome.com/docs/devtools/performance/overview#live-metrics (Observe Core Web Vitals live) -->
 
 When you open the **Performance** tool, it immediately captures and displays the local [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) metrics, and displays their scores (**good**, **needs improvement**, or **bad**).
 
@@ -136,9 +138,11 @@ To clear the **Layout shifts** tab, click the **Clear the current log** (![The C
 <!-- section seems dup/redun w/ other section: -->
 See also [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users), below.
 
+<!-- added 2 paras in Edge docs: -->
+Local metrics are the LCP, CLS, and INP metrics described above.  They are captured locally on the inspected webpage and updated as you interact wiht the page.  Field metrics come from the Chrome UX Report (CrUX), and show how most of your users experience your website.  For information about CrUX, see [Overview of CrUX](https://developer.chrome.com/docs/crux).  The difference between the local and field metrics shows that most of your users might not experience your website under the same conditions as you do.
 
-<!-- added para in this PR, 1st spot in this article: -->
-The difference between the local and field metrics shows that most of your users might not experience your website under the same conditions as you do.  The **Environment settings** section gives you recommendations about simulating a slower CPU and network connection to better match with what your users experience.
+The **Environment settings** section gives you recommendations about simulating a slower CPU and network connection to better match your users' experience.
+
 
 <!-- composed new procedure added in this section: -->
 1. Open a webpage; for example, right-click this [Sluggish Animation demo](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) link, and then open it in a new window or tab.
@@ -170,7 +174,7 @@ The difference between the local and field metrics shows that most of your users
    In the **Performance** tool home page > **Next steps** section **Field data** section, the **Set up** button is replaced by the **Configure** button, which re-opens the **Configure field data fetching** dialog.
 
 <!-- from start of upstream What's new section, w/ reformatted links: -->
-Live metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.  For information about live metrics, see [Observe Core Web Vitals live](#observe-core-web-vitals-live), above.
+Live metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.  For information about live metrics, see [Observe local Core Web Vitals](#observe-local-core-web-vitals), above.
 
 <!-- from upstream What's new section, con't, w/ reformatted links: -->
 To get recommendations, first set up field data fetching from Chrome UX Report (CrUX).  To set up field data fetching, see [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users), below.  For information about Chrome UX Report (CrUX), see [Overview of CrUX](https://developer.chrome.com/docs/crux).
@@ -364,7 +368,7 @@ To focus on what matters for your workflow:
 
 * [Hide functions and their children in the flame chart](../performance/reference.md#hide-functions-and-their-children-in-the-flame-chart)
 
-* [Create breadcrumbs and jump between zoom levels](./reference.md#create-breadcrumbs-and-jump-between-zoom-levels) in _Performance features reference_.
+* [Zoom on portions of a recording and switch between zoom levels](./reference.md#zoom-on-portions-of-a-recording-and-switch-between-zoom-levels) in _Performance features reference_.
 
 
 To learn about the **Bottom-up**, **Call tree**, and **Event log** tabs:
