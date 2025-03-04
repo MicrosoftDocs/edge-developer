@@ -64,5 +64,6 @@ When this change is released, Microsoft Edge Enterprise Add-ons with Manifest V2
 ## See also
 
 * [Released features for Microsoft Edge Add-ons](released-features.md) - Partner Center features or updates.
+* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 * [Microsoft 365 roadmap > Microsoft Edge](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge)

@@ -16,7 +16,7 @@ Publishing your Progressive Web App (PWA) to the [Microsoft Store](/windows/uwp/
 |---|---|
 | **Discoverability** | Users naturally look for apps in the app store.  When you publish to the Microsoft Store, millions of Windows users can discover your PWA alongside other Windows apps.  The Store showcases apps through categories, curated collections, and more.  App discovery portals provide an easy browsing and shopping experience for potential users of your app.  You can even enhance your Store listing with screenshots, a hero image, and video trailers - see [App screenshots, images, and trailers](/windows/apps/publish/publish-your-app/screenshots-and-images). |
 | **Trustworthiness** | Windows customers know they can trust their Microsoft Store purchases and downloads, because they adhere to the rigorous [Microsoft Store Policies](/windows/apps/publish/store-policies). |
-| **Easy install** | The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 or later apps](https://www.microsoft.com/store/apps/windows). |
+| **Easy install** | The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 or later apps](https://apps.microsoft.com). |
 | **App analytics** | The [Microsoft Partner Center dashboard](/windows/uwp/publish/index) provides [detailed analytics](/windows/uwp/publish/analytics) about your app's health, usage, and more. |
 
 To publish your PWA to the Microsoft Store, no code changes are required.  Instead, you create an app reservation in Microsoft Partner Center, package your PWA using PWA Builder, and then submit your package to the Microsoft Store.  The following sections explain these steps.
