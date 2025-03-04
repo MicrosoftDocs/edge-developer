@@ -10,7 +10,7 @@ ms.date: 06/15/2023
 ---
 # What's New in DevTools (Microsoft Edge 114)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 > [!TIP]
 > The **Microsoft Build 2023** conference was on May 23-25, 2023.  Learn more about new features for memory, performance, and production debugging in DevTools, as well as new capabilities for PWAs in the sidebar, WebView2, and Chat Plugins, in the following videos:
@@ -172,3 +172,10 @@ Microsoft Edge 114 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

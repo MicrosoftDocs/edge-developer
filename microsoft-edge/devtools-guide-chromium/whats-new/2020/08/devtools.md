@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 86)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -506,3 +506,10 @@ See also:
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)
