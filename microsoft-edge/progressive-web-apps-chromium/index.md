@@ -94,7 +94,7 @@ To find examples of what PWAs can do, see [Myth Busting PWAs](https://www.davrou
 <!-- ====================================================================== -->
 ## The Microsoft Store
 
-Because Progressive Web Apps (PWAs) are just like other apps in the [Microsoft Store](https://www.microsoft.com/store/apps/windows), users can fully engage with them—from discovery, to installation, to execution—without<!-- em dashes--> ever opening the browser.
+Because Progressive Web Apps (PWAs) are just like other apps in the [Microsoft Store](https://apps.microsoft.com), users can fully engage with them—from discovery, to installation, to execution—without<!-- em dashes--> ever opening the browser.
 
 The Microsoft Store provides a trustworthy and familiar experience for users to install your app.  Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 

@@ -16,7 +16,7 @@ Develop for the web with Microsoft Edge by using standards-based web platform fe
 ## Release notes
 
 To stay up to date with web platform feature changes in Microsoft Edge and the Chromium open-source project, see:
-* [Release Notes for web platform for Microsoft Edge](./web-platform/release-notes/index.md)
+* [Release notes for Microsoft Edge web platform](./web-platform/release-notes/index.md)
 * [Site compatibility-impacting changes coming to Microsoft Edge](./web-platform/site-impacting-changes.md)
 
 

@@ -49,7 +49,7 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: Release Notes for web platform for Microsoft Edge
+          - text: Release notes for Microsoft Edge web platform
             url: ../web-platform/release-notes/index.md
 
           - text: Site compatibility-impacting changes
