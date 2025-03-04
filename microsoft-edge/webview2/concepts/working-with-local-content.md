@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 04/10/2024
+ms.date: 02/21/2025
 ---
 # Using local content in WebView2 apps
 
@@ -353,13 +353,27 @@ When loading local content via a virtual host name mapping, you are mapping a vi
 <!-- ---------- -->
 ###### Additional web resources
 
-Local content that's loaded via virtual host name mapping has an HTTP or HTTPS URL which supports relative URL resolution. This means that the loaded document can have references to additional web resources such as CSS, script, or image files which are also served via virtual host name mapping.
+Local content that's loaded via virtual host name mapping has an HTTP or HTTPS URL which supports relative URL resolution. This means that the loaded document can have references to additional web resources such as CSS, script, or image files which are also served via virtual host name mapping, except source maps; see [Source maps with virtual host name mapping](#source-maps-with-virtual-host-name-mapping), below.
 
 
 <!-- ---------- -->
 ###### Additional web resources resolved in WebView2 process
 
-Virtual host name URLs are resolved in WebView2 processes. This is a faster option than `WebResourceRequested`, which resolves in the host app process UI thread.
+Virtual host name URLs are resolved in WebView2 processes.  This is a faster option than `WebResourceRequested`, which resolves in the host app process UI thread.
+
+
+<!-- ---------- -->
+###### Source maps with virtual host name mapping
+
+Source maps are needed to debug the source code of compiled content, including:
+* Transpiled JavaScript, such as TypeScript or minified JavaScript.
+* Compiled CSS, such as SASS or SCSS.
+
+WebView2 doesn't load source maps that are referenced by content which was loaded by using virtual host name mapping.  
+
+For example, suppose WebView2 loads `main.js` via virtual host name mapping.  If `main.js` references `main.js.map` as its source map, `main.js.map` will not be loaded automatically.
+
+To use source maps along with virtual host name mapping, generate inline source maps during compilation of your content.  Inline source maps are embedded within the corresponding compiled file.
 
 
 <!-- ------------------------------ -->
@@ -422,7 +436,7 @@ webView->Navigate(L"https://demo/index.html");
 
 
 <!-- ====================================================================== -->
-## Loading local content by handling the WebResourceRequested event
+## Loading local content by handling the `WebResourceRequested` event
 
 Another way you can host local content in a WebView2 control is by relying on the `WebResourceRequested` event.  This event is triggered when the control attempts to load a resource.  You can use this event to intercept the request and provide the local content, as described in [Custom management of network requests](../how-to/webresourcerequested.md).
 
@@ -438,7 +452,7 @@ If you want to use a custom scheme to make the Web Resource Request that generat
 
 
 <!-- ------------------------------ -->
-#### Considerations for loading local content by handling the WebResourceRequested event
+#### Considerations for loading local content by handling the `WebResourceRequested` event
 
 
 <!-- ---------- -->
@@ -462,7 +476,7 @@ When loading local content via `WebResourceRequested`, you specify the local con
 <!-- ---------- -->
 ###### Additional web resources
 
-`WebResourceRequested` modifies the content that's loaded via HTTP or HTTPS URLs, which support relative URL resolution. This means that the resulting document can have references to additional web resources such as CSS, script, or image files that are also served via `WebResourceRequested`.
+`WebResourceRequested` modifies the content that's loaded via HTTP or HTTPS URLs, which support relative URL resolution. This means that the resulting document can have references to additional web resources such as CSS, script, or image files that are also served via `WebResourceRequested`, except source maps; see [Source maps with the `WebResourceRequested` event](#source-maps-with-the-webresourcerequested-event), below.
 
 
 <!-- ---------- -->
@@ -477,24 +491,47 @@ When loading content via a file URL or a virtual host name mapping, the resoluti
 This can take some time. Make sure to limit calls to `AddWebResourceRequestedFilter` to only the web resources that must raise the `WebResourceRequested` event.
 
 
+<!-- ---------- -->
+###### Source maps with the `WebResourceRequested` event
+
+Source maps are needed to debug the source code of compiled content, including:
+* Transpiled JavaScript, such as TypeScript or minified JavaScript.
+* Compiled CSS, such as SASS or SCSS.
+
+WebView2 doesn't load source maps that are referenced by content which was loaded by using the `WebResourceRequested` event.
+
+For example, suppose you load `main.js` in your `WebResourceRequested` event handler by setting the `Response` property of `CoreWebView2WebResourceRequestedEventArgs`.  If `main.js` references `main.js.map` as its source map:
+* `main.js.map` will not be loaded automatically.
+* Your `WebResourceRequested` event handler will not be called again to load `main.js.map`.
+
+To use source maps along with `WebResourceRequested`, use one of the following approaches:
+
+* Generate inline source maps during compilation of your content.  Inline source maps are embedded within the corresponding compiled file.
+
+* Or, inline separate source maps to the content at runtime in your `WebResourceRequested` event handler.  Use this approach only if your build system doesn't support inline source maps.
+
+
 <!-- ------------------------------ -->
-#### APIs for loading local content by handling the WebResourceRequested event
+#### APIs for loading local content by handling the `WebResourceRequested` event
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.NavigateWithWebResourceRequest Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
 * [CoreWebView2.WebResourceRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
+* [CoreWebView2WebResourceRequestedEventArgs.Response Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs.response)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2.NavigateWithWebResourceRequest Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigatewithwebresourcerequest)
 * [CoreWebView2.WebResourceRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourcerequested)
+* [CoreWebView2WebResourceRequestedEventArgs.Response Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs#response)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2_2::NavigateWithWebResourceRequest method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
 * [ICoreWebView2::WebResourceRequested event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
+* [ICoreWebView2WebResourceRequestedEventArgs::get_Response](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs#get_response)
 
 ---
 

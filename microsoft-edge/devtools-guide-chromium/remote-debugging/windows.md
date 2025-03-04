@@ -30,7 +30,7 @@ To set up the host (debuggee) machine:
 
 1. Install and configure [Microsoft Edge](https://www.microsoft.com/edge)
 
-1. Install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows)
+1. Install the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) from the [Microsoft Store](https://apps.microsoft.com).
 
 1. Activate [Developer Mode](/windows/apps/get-started/enable-your-device-for-development) and enable [Device Portal](/windows/uwp/debug-test-perf/device-portal)
 
@@ -50,15 +50,15 @@ To set up the host (debuggee) machine:
 
 
 <!-- ------------------------------ -->
-#### Install the Remote Tools for Microsoft Edge (Beta)
+#### Install the Remote Tools for Microsoft Edge
 
-Install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).
+Install the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) from the [Microsoft Store](https://apps.microsoft.com).
 
-The **Get** button for the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) may be disabled if you are on Windows 10 or later version 1809 or earlier.  To set up the host (debuggee) machine, it must be running Windows 10 version 1903 or later.  Update the host (debuggee) machine to acquire the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT).
+The **Get** button for the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) may be disabled if you are on Windows 10 or later version 1809 or earlier.  To set up the host (debuggee) machine, it must be running Windows 10 version 1903 or later.  Update the host (debuggee) machine to acquire the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt).
 
-![The Remote Tools for Microsoft Edge (Beta) in the Microsoft Store](./windows-images/remote-debugging-windows-media-remote-tools-in-store.png)
+![The Remote Tools for Microsoft Edge in the Microsoft Store](./windows-images/remote-debugging-windows-media-remote-tools-in-store.png)
 
-Launch the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) and, if prompted, accept the permissions dialog in the app.  You can now close the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) and you don't need to have it open for future remote debugging sessions.
+Launch the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) and, if prompted, accept the permissions dialog in the app.  You can now close the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) and you don't need to have it open for future remote debugging sessions.
 
 
 <!-- ------------------------------ -->
@@ -70,7 +70,7 @@ If your network is listed as **Public**, go to **Settings** > **Network & Intern
 
 Now, open the **Settings** app.  In **Find a setting**, enter `Developer settings` and select it.  Toggle on **Developer Mode**.  You can now turn on the **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You can then optionally turn **Authentication** on so that the client (debugger) device must provide the correct credentials to connect to this device.
 
-If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT).  If  a **For developers** section isn't displayed in **Settings**, **Device Portal** may already be turned on, so try restarting the Windows 10 or later device instead.
+If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt).  If  a **For developers** section isn't displayed in **Settings**, **Device Portal** may already be turned on, so try restarting the Windows 10 or later device instead.
 
 ![The Settings app with Developer Mode and Device Portal configured](./windows-images/remote-debugging-windows-media-host-settings.png)
 

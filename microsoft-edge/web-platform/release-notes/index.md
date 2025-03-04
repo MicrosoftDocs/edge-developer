@@ -1,25 +1,34 @@
 ---
-title: Release Notes for web platform for Microsoft Edge
+title: Release notes for Microsoft Edge web platform
 description: New web platform features and updates in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 02/06/2025
+ms.date: 03/03/2025
 ---
-# Release Notes for web platform for Microsoft Edge
+# Release notes for Microsoft Edge web platform
 
 These release notes cover the new web platform features and updates in Microsoft Edge.
 
 To stay up-to-date and get the latest web platform features, download an Insiders version of Microsoft Edge, such as Canary, Dev, or Beta; see [Become a Microsoft Edge Insider](https://aka.ms/microsoftedge).
 
 
-<!-- ====================================================================== 
-## Site compatibility-impacting changes coming to Microsoft Edge
+<!-- ====================================================================== -->
+## See also
 
-The following article lists the schedule of changes for Microsoft Edge and the Chromium project.  It also highlights any differences and high-impact changes which the Microsoft Edge team is tracking especially closely.
+* [Site compatibility-impacting changes coming to Microsoft Edge](../site-impacting-changes.md)
 
-The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, changes may affect the functionality of existing webpages.
+Microsoft Edge DevTools
+* [What's New in Microsoft Edge DevTools](../../devtools-guide-chromium/whats-new/whats-new.md)
+* [Experimental features in Microsoft Edge DevTools](../../devtools-guide-chromium/experimental-features/index.md)
 
-See [Site compatibility-impacting changes coming to Microsoft Edge](./site-impacting-changes.md).
--->
+Microsoft Edge extensions
+* [Released features for Microsoft Edge Add-ons](../../extensions-chromium/whats-new/released-features.md)
+* [Roadmap for Microsoft Edge Add-ons](../../extensions-chromium/whats-new/roadmap.md)
+
+Progressive Web Apps
+* [What's New in PWAs](../../progressive-web-apps-chromium/whats-new/pwa.md)
+
+WebView2
+* [Release Notes for the WebView2 SDK](../../webview2/release-notes/index.md)

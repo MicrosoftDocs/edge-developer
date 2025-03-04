@@ -993,6 +993,7 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
 * [Archived Release Notes for the WebView2 SDK](./archive.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)
+* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
 
 
 <!--

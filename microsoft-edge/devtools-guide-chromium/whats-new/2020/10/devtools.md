@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 87)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -304,18 +304,18 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### View and fix color contrast issues in the CSS Overview tool
+#### View and fix color contrast issues in the CSS overview tool
 
-The **CSS Overview** tool now displays a list of elements on your page that have color contrast issues.  The [CSS Overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page has an example of a color contrast issue.
+The **CSS overview** tool now displays a list of elements on your page that have color contrast issues.  The [CSS overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page has an example of a color contrast issue.
 
 To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  To open the element in the **Elements** tool, click an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane).
 
 ![Color contrast issues](./devtools-images/css-overview.png)
 
-Update: This feature has been released and is no longer experimental.<!-- To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox. -->
+Update: This feature has been released and is no longer experimental.<!-- To enable this experiment, under **Settings** > **Experiments**, select the **CSS overview** checkbox. -->
 
 See also:
-* [CSS Overview tool](../../../css/css-overview-tool.md)
+* [CSS overview tool](../../../css/css-overview-tool.md)
 
 For history, in the Chromium open-source project, see Issue [#1120316](https://crbug.com/1120316).
 
@@ -327,3 +327,10 @@ For history, in the Chromium open-source project, see Issue [#1120316](https://c
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)
