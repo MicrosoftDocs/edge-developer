@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 112)
-description: "The Performance tool can now unminify JavaScript running in out-of-process iframes, the CSS Overview tool displays a list of non-simple selectors for quick performance wins, and more."
+description: "The Performance tool can now unminify JavaScript running in out-of-process iframes, the CSS overview tool displays a list of non-simple selectors for quick performance wins, and more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,7 +10,7 @@ ms.date: 04/11/2023
 ---
 # What's New in DevTools (Microsoft Edge 112)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ------------------------------ -->
@@ -51,13 +51,13 @@ See also:
 
 
 <!-- ====================================================================== -->
-## CSS Overview tool displays non-simple selectors for quick performance gains
+## CSS overview tool displays non-simple selectors for quick performance gains
 
-<!-- Subtitle: Non-simple selectors can be common culprits for long-running Recalculate Styles events in the Performance tool. Take a quick snapshot in the CSS Overview tool to see your non-simple selectors. -->
+<!-- Subtitle: Non-simple selectors can be common culprits for long-running Recalculate Styles events in the Performance tool. Take a quick snapshot in the CSS overview tool to see your non-simple selectors. -->
 
-The **CSS Overview** tool has a new **Non-simple selectors** section, which displays a list of non-simple CSS selectors when you take an overview snapshot of your webpage's CSS.  This list of non-simple CSS selectors in the **CSS Overview** tool provides a quick way to identify common culprits that might be causing long-running **Recalculate Styles** events:
+The **CSS overview** tool has a new **Non-simple selectors** section, which displays a list of non-simple CSS selectors when you take an overview snapshot of your webpage's CSS.  This list of non-simple CSS selectors in the **CSS overview** tool provides a quick way to identify common culprits that might be causing long-running **Recalculate Styles** events:
 
-![The new, Non-simple selectors list in the CSS Overview tool](./devtools-112-images/non-simple-selectors-in-css-overview.png)
+![The new, Non-simple selectors list in the CSS overview tool](./devtools-112-images/non-simple-selectors-in-css-overview.png)
 
 This is a list of selectors that could possibly reduce performance.  To determine whether these selectors are actually reducing performance, use the **Selector Stats** feature in the **Performance** tool.
 
@@ -70,7 +70,7 @@ You can try to change these selectors so that they are more specific and match f
 To analyze individual CSS selector performance and analyze the impact of your changes, use the **Selector Stats** feature in the **Performance** tool.
 
 See also:
-* [Optimize CSS styles with the CSS Overview tool](../../../css/css-overview-tool.md)
+* [Optimize CSS styles with the CSS overview tool](../../../css/css-overview-tool.md)
 * [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
 
 
@@ -178,3 +178,10 @@ Microsoft Edge 112 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)
