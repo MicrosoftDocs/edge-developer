@@ -26,7 +26,9 @@ todo video
 
 <!-- Subtitle: Easily investigate performance issues related to posting messages across various threads in applications.  -->
 
-The new experiment **Timeline: Show postMessage dispatch and handling flows** improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application, to view messages between windows, iframes, and dedicated workers.
+<!-- 2025/02/18: changed from "Timeline: Show postMessage dispatch and handling flows" -->
+
+The new experiment **Performance panel: show postMessage dispatch and handling flows** improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application, to view messages between windows, iframes, and dedicated workers.
 
 Without this experiment, events that are triggered by dispatching and handling messages between threads of an application appear as generic scripting function-call events.  With this experiment enabled:
 * `postMessage` dispatch events appear as **Schedule postMessage**.
@@ -38,10 +40,10 @@ This experiment helps you investigate when a `postMessage` call occurred, and ho
 
 ![Arrows linking dispatch events to handler events](./devtools-124-images/post-message-events-arrows.png)
 
-To use this feature, in DevTools, select **Customize and control DevTools** (![the Customize and control DevTools icon](./devtools-124-images/customize-and-control-devtools-icon.png)) > **Settings** > **Experiments**, select the checkbox **Timeline: Show postMessage dispatch and handling flows**, click the **Close** (X) button, and then click the **Reload DevTools** button.
+To use this feature, in DevTools, select **Customize and control DevTools** (![the Customize and control DevTools icon](./devtools-124-images/customize-and-control-devtools-icon.png)) > **Settings** > **Experiments**, select the checkbox **Performance panel: show postMessage dispatch and handling flows**, click the **Close** (X) button, and then click the **Reload DevTools** button.
 
 See also:
-* [View messages between windows, iframes, and dedicated workers](../../../evaluate-performance/reference.md#view-messages-between-windows-iframes-and-dedicated-workers) in _Performance features reference_.
+* [View messages between windows, iframes, and dedicated workers](../../../performance/reference.md#view-messages-between-windows-iframes-and-dedicated-workers) in _Performance features reference_.
 * [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
 * [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
 
@@ -56,7 +58,7 @@ Before Microsoft Edge 124, you could rearrange the tabs in the **Activity bar** 
 ![The context menu from right-clicking a tool's tab on the Activity bar](./devtools-124-images/rearrange-tab.png)
 
 See also:
-* [Pin and rearrange tools in the Activity Bar](/microsoft-edge/devtools-guide-chromium/overview#pin-and-rearrange-tools-in-the-activity-bar) in _Overview of DevTools_.
+* [Pin and rearrange tools in the Activity Bar](../../../overview.md#pin-and-rearrange-tools-in-the-activity-bar) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
@@ -73,8 +75,8 @@ Also, when you turn on throttling in the **Network** tool, the **Network** tab n
 ![Network tool's tab showing a warning icon when throttling is used](./devtools-124-images/network-warning-icon-throttling.png)
 
 See also:
-* [Override webpage resources with local copies (Overrides tab)](/microsoft-edge/devtools-guide-chromium/javascript/overrides)
-* [Emulate slow network connections](/microsoft-edge/devtools-guide-chromium/network/reference#emulate-slow-network-connections) in _Network features reference_.
+* [Override webpage resources with local copies (Overrides tab)](../../../javascript/overrides.md)
+* [Emulate slow network connections](../../../network/reference.md#emulate-slow-network-connections) in _Network features reference_.
 
 
 <!-- ====================================================================== -->

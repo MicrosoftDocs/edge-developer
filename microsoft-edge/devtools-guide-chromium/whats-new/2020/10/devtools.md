@@ -236,7 +236,7 @@ See also:
 <!-- ------------------------------ -->
 #### performance.mark() events in the Timings section
 
-The **Timings section** of a recording in the [Performance](../../../evaluate-performance/reference.md) tool now marks `performance.mark()` <!--[performance mark](https://jec.fyi/demo/perf-mark) -->events.  To try this feature and measure the performance of your JavaScript code, add `performance.mark()` events to your code.
+The **Timings section** of a recording in the [Performance](../../../performance/reference.md) tool now marks `performance.mark()` <!--[performance mark](https://jec.fyi/demo/perf-mark) -->events.  To try this feature and measure the performance of your JavaScript code, add `performance.mark()` events to your code.
 
 The following code adds `start` and `end` performance markers before and after a `for` loop:
 
@@ -248,7 +248,7 @@ for (var i = 0; i < 1000; i+=7;){
 performance.mark('end');
 ```
 
-Then, open the [Performance](../../../evaluate-performance/reference.md) tool and see the **Timings section** to record your JavaScript code.  The `performance.mark()` events you added are now displayed in the recording.
+Then, open the [Performance](../../../performance/reference.md) tool and see the **Timings section** to record your JavaScript code.  The `performance.mark()` events you added are now displayed in the recording.
 
 ![performance.mark events](./devtools-images/perf-mark.png)
 

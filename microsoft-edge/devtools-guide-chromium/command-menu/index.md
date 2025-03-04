@@ -23,7 +23,7 @@ ms.date: 09/12/2023
    limitations under the License.  -->
 # Run commands in the Command Menu
 
-The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks.  The Command Menu is similar to the [Command Palette in Visual Studio Code](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette):
+The **Command Menu** provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks.  The **Command Menu** is similar to the [Command Palette in Visual Studio Code](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette):
 
 ![Using the Command Menu to disable JavaScript](./index-images/command-menu-run-command-java.png)
 
@@ -37,7 +37,7 @@ The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI 
 <!-- ====================================================================== -->
 ## Open the Command Menu
 
-To open the Command Menu:
+To open the **Command Menu**:
 
 1. To open DevTools, right-click a webpage and then select **Inspect**.
 
@@ -57,7 +57,7 @@ To open the Command Menu:
 <!-- ====================================================================== -->
 ## Display other available actions
 
-To show other kinds of Command Menu actions besides **Run Command**, delete the `>` character and then type **?**:
+To show other kinds of **Command Menu** actions besides **Run Command**, delete the `>` character and then type **?**:
 
 ![Other available actions](./index-images/command-menu-help.png)
 
