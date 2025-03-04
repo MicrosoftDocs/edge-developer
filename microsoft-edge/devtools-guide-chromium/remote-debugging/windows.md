@@ -44,11 +44,11 @@ To set up the host (debuggee) machine, use the following sub-sections, in order.
 
 
 <!-- ------------------------------ -->
-#### Install the Remote Tools for Microsoft Edge (Beta)
+#### Install the Remote Tools for Microsoft Edge
 
 1. Install the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) from the [Microsoft Store](https://apps.microsoft.com).
 
-   The **Download** or **Get** button for that page might be disabled if you are on Windows 10 or later version 1809 or earlier.  To set up the host (debuggee) machine, it must be running Windows 10 version 1903 or later.  Update the host (debuggee) machine, to acquire the Remote Tools for Microsoft Edge.
+   To set up the host (debuggee) machine, it must be running Windows 10 version 1903 or later.  If you are on Windows 10 or later version 1809 or earlier,<!-- todo: later vs earlier; merge w/ previous sent. --> the **Download** or **Get** button in that **Remote Tools for Microsoft Edge** page might be disabled.  Update the host (debuggee) machine, to acquire Remote Tools for Microsoft Edge.
 
    ![The Remote Tools for Microsoft Edge in the Microsoft Store](./windows-images/remote-debugging-windows-media-remote-tools-in-store.png)
 

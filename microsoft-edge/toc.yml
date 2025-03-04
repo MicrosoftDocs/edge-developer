@@ -26,7 +26,7 @@
 # Release notes
     - name: Release notes
       items:
-        - name: Release Notes for web platform for Microsoft Edge
+        - name: Release notes for Microsoft Edge web platform
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
