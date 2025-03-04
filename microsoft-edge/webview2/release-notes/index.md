@@ -45,46 +45,16 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 No additional APIs have been promoted to Stable and added in this Release SDK.
 
 
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ -->>
+<!-- ------------------------------ -->
 #### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* item
-* item
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Disabled kExtensionDisableUnsupportedDeveloper in WebView2.([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
-* Disabled background update of network time.([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
-* Fixed download popup not showing with target _blank.([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
-
-<!-- ---------- -->
-###### SDK-only
-
-* item
-* item
-
--->
-
+* Disabled `kExtensionDisableUnsupportedDeveloper` in WebView2.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))<!-- correct spelling? not found in any docset, not mentioned in the Issue - more relevant wording for users?  where can confirm spelling? -->
+* Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
+* Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
 
 <!-- end of Mar 2025 Release SDK -->
 
@@ -106,38 +76,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 No Experimental APIs have been added in this Prerelease SDK.
 
 
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
 <!-- ------------------------------ -->
 #### Promotions
 
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
@@ -147,25 +89,24 @@ description
 <!-- ---------- -->
 ###### Runtime and SDK
 
-* Host object async method exception handling ([Issue #3402](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3402))
-* Behavioural comment change ([Issue #5091](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5091))
+* Fixed host object async method exception handling.  ([Issue #3402](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3402))
+* Behavioral comment change.<!-- clarify generic desc; specify the change -->  ([Issue #5091](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5091))
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed "Add to Chrome" store installation regression
-* Fixed folder uploads in UWP and WinUI ([Issue #3275](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3275))
-* Disabled kExtensionDisableUnsupportedDeveloper in WebView2. ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
-* Disable background update of network time ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
-* Fix download popup not showing with target _blank ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
+* Fixed an "Add to Chrome" store installation regression.
+* Fixed folder uploads in UWP and WinUI.  ([Issue #3275](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3275))
+* Disabled `kExtensionDisableUnsupportedDeveloper` in WebView2.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))<!-- correct spelling? not found in any docset, not mentioned in the Issue - more relevant wording for users?  where can confirm spelling? -->
+* Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
+* Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* Fix for crash if Garbage Collector calls Finalize off main thread
-
+* Fixes a crash that could occur when the Garbage Collector calls `Finalize` off<!-- todo: clarify "off" - on? of? --> the main thread.
 
 <!-- end of Mar 2025 Prerelease SDK -->
 
