@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 89)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ To turn on this experiment, see [Settings](../../../customize/index.md#settings)
 For the history of this feature in the Chromium open-source project, see Issue [1093229](https://crbug.com/1093229).
 
 See also:
-* [Enable new font editor within the Styles Pane](../../../experimental-features/index.md#enable-new-font-editor-within-the-styles-pane) in _Experimental features in Microsoft Edge DevTools_.
+* [Enable new font editor within the Styles tab](../../../experimental-features/index.md#enable-new-font-editor-within-the-styles-tab) in _Experimental features in Microsoft Edge DevTools_.
 * [Edit CSS font styles and settings in the Styles pane in DevTools](../../../inspect-styles/edit-fonts.md).
 
 
@@ -521,3 +521,10 @@ Edge 89)_.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

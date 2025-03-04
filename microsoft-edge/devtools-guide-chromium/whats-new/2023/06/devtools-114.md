@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 114)
-description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger Layout. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS Overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
+description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger Layout. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,7 +10,7 @@ ms.date: 06/15/2023
 ---
 # What's New in DevTools (Microsoft Edge 114)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 > [!TIP]
 > The **Microsoft Build 2023** conference was on May 23-25, 2023.  Learn more about new features for memory, performance, and production debugging in DevTools, as well as new capabilities for PWAs in the sidebar, WebView2, and Chat Plugins, in the following videos:
@@ -110,19 +110,19 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Accessibility improvements for the CSS Overview tool
+## Accessibility improvements for the CSS overview tool
 
-<!-- Subtitle: The CSS Overview tool is now easier to use with assistive technology such as screen readers. -->
+<!-- Subtitle: The CSS overview tool is now easier to use with assistive technology such as screen readers. -->
 
-In Microsoft Edge 112, the **CSS Overview** tool was updated to display a list of non-simple selectors when taking an overview snapshot of a webpage's CSS.  In Microsoft Edge 114, the **Non-simple selectors** section of the **CSS Overview** tool is now easier to use with assistive technology, such as screen readers.
+In Microsoft Edge 112, the **CSS overview** tool was updated to display a list of non-simple selectors when taking an overview snapshot of a webpage's CSS.  In Microsoft Edge 114, the **Non-simple selectors** section of the **CSS overview** tool is now easier to use with assistive technology, such as screen readers.
 
 When you click a selector, or navigate to a selector and then press **Enter**, screen readers now announce "Copied CSS selector":
 
-![Navigating the CSS Overview tool with the keyboard](./devtools-114-images/non-simple-selectors-css-overview-a11y.png)
+![Navigating the CSS overview tool with the keyboard](./devtools-114-images/non-simple-selectors-css-overview-a11y.png)
 
 See also:
-* [CSS Overview tool displays non-simple selectors for quick performance gains](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains) in _What's New in DevTools (Microsoft Edge 112)_.
-* [Non-simple selectors](../../../css/css-overview-tool.md#non-simple-selectors) in _Optimize CSS styles with the CSS Overview tool_.
+* [CSS overview tool displays non-simple selectors for quick performance gains](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains) in _What's New in DevTools (Microsoft Edge 112)_.
+* [Non-simple selectors](../../../css/css-overview-tool.md#non-simple-selectors) in _Optimize CSS styles with the CSS overview tool_.
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
@@ -172,3 +172,10 @@ Microsoft Edge 114 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

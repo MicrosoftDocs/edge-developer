@@ -251,7 +251,7 @@ For more info about the `DebuggerAddress` property of the `EdgeOptions` object, 
 
 1. Note the `browserProcessId` for the WebView2 process that you want to attach Microsoft Edge WebDriver to.  For example, the above screenshot shows the `browserProcessId` as `47860`.
 
-1. In your code, use the `wdpAddress` and `wdpProcessId` properties to tell Microsoft Edge WebDriver to connect to the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/store/detail/9P6CMFV44ZLT) and the specific WebView2 process.
+1. In your code, use the `wdpAddress` and `wdpProcessId` properties to tell Microsoft Edge WebDriver to connect to the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) and the specific WebView2 process.
    * `wdpAddress` is defined as the Device Portal URL.
    * `wdpProcessId` is defined as the `browserProcessId` value that you noted in the previous step:
 
