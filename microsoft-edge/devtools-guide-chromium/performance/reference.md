@@ -582,7 +582,7 @@ When JavaScript samples are disabled, only high-level events are displayed, such
 
 The **Performance** tool represents main thread activity in a flame chart.  The x-axis represents the recording over time.  The y-axis represents the call stack.  The events on top cause the events below.
 
-![A flame chart](./reference-images/flame-chart.png)
+![A flame chart.](./reference-images/flame-chart.png)
 
 <!-- uncomment after add pngs: the above repurposed png might not fit w/ the following text from upstream:
 This example shows a flame chart in the **Main** track.  A `click` event caused an anonymous function call.  This function, in turn, called `onEndpointClick_`, which called `handleClick_`, and so on. -->
