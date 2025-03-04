@@ -30,20 +30,19 @@ Sep 2024
 
 <!-- Mar 2025 Release SDK -->
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.3124.44
 
-Release Date: Monthname nn, 2025
+Release Date: March 10, 2025
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.3124.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3124.44)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 134.0.3124.44 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions
 
 No additional APIs have been promoted to Stable and added in this Release SDK.
-The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -74,9 +73,9 @@ description
 <!-- ---------- -->
 ###### Runtime-only
 
-* item
-* item
-
+* Disabled kExtensionDisableUnsupportedDeveloper in WebView2.([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
+* Disabled background update of network time.([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
+* Fixed download popup not showing with target _blank.([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
 
 <!-- ---------- -->
 ###### SDK-only
@@ -92,20 +91,19 @@ description
 
 <!-- Mar 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## 1.0.3171-prerelease
 
-Release Date: Monthname nn, 2025
+Release Date: March 10, 2025
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.3171-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3171-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 135.0.3171.0 or higher.
 
 
 <!-- ------------------------------ -->
 #### Experimental APIs
 
 No Experimental APIs have been added in this Prerelease SDK.
-The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -126,7 +124,6 @@ description
 #### Promotions
 
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -150,22 +147,24 @@ description
 <!-- ---------- -->
 ###### Runtime and SDK
 
-* item
-* item
+* Host object async method exception handling ([Issue #3402](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3402))
+* Behavioural comment change ([Issue #5091](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5091))
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* item
-* item
+* Fixed "Add to Chrome" store installation regression
+* Fixed folder uploads in UWP and WinUI ([Issue #3275](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3275))
+* Disabled kExtensionDisableUnsupportedDeveloper in WebView2. ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
+* Disable background update of network time ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
+* Fix download popup not showing with target _blank ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* item
-* item
+* Fix for crash if Garbage Collector calls Finalize off main thread
 
 
 <!-- end of Mar 2025 Prerelease SDK -->
