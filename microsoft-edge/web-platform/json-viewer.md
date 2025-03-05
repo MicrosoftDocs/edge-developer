@@ -8,11 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/05/2025
 ---
-
-<!-- 
 # View a JSON file as-is or formatted
--->
-
 
 When you open a JSON file in Microsoft Edge, the file is initially displayed as-is (nested, or minified), and the **Pretty-print** checkbox is initially cleared.
 
