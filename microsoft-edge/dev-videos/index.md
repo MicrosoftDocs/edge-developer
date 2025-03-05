@@ -79,7 +79,7 @@ August 17, 2023
 The JSON viewer automatically formats and highlights JSON responses and files in browser tabs.  When your web server responds to HTTP requests with data encoded as JSON, this data isn't always easy to read and is sometimes returned as one line of text.  The JSON viewer changes the returned data to make it easier to read.  The JSON syntax is highlighted with different colors, object properties are displayed on their own lines and indented, and objects can be collapsed or expanded.
 
 See also:
-* [View formatted JSON responses or files](../devtools-guide-chromium/json-viewer/json-viewer.md)<!-- has Video section -->
+* [View formatted JSON files](../web-platform/json-viewer.md)
 
 
 <!-- ====================================================================== -->
@@ -121,7 +121,7 @@ Covers:
 See also:
 * [What's New in DevTools (Microsoft Edge 112)](../devtools-guide-chromium/whats-new/2023/04/devtools-112.md)<!-- has Video section -->
 * [Analyze CSS selector performance during Recalculate Style events](../devtools-guide-chromium/evaluate-performance/selector-stats.md) - CSS selector stats.
-* [View formatted JSON responses or files](../devtools-guide-chromium/json-viewer/json-viewer.md)
+* [View formatted JSON files](../web-platform/json-viewer.md)
 
 
 <!-- ====================================================================== -->

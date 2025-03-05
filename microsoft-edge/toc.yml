@@ -1762,8 +1762,8 @@
           href: ./web-platform/os-regional-settings.md
           displayName: globalization, language, region, limited, intl, date, time, format
 
-        - name: View formatted JSON responses or files
-          href: ./devtools-guide-chromium/json-viewer/json-viewer.md
+        - name: View formatted JSON files
+          href: ./web-platform/json-viewer.md
           displayName: JSON viewer, view JSON
 # /Edge-specific web development tips
 # =============================================================================

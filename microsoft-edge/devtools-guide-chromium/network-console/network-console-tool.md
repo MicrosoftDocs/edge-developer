@@ -111,5 +111,5 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
-* [View formatted JSON responses or files](../json-viewer/json-viewer.md)
+* [View formatted JSON files](../../web-platform/json-viewer.md)
 <!-- * [edge-devtools-network-console repo](https://github.com/microsoft/edge-devtools-network-console) -->
