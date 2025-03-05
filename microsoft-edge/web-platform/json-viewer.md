@@ -1,6 +1,6 @@
 ---
-title: View formatted JSON files
-description: 
+title: View a JSON file as-is or formatted
+description: View a formatted or minified JSON file as-is or formatted, in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,11 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/05/2025
 ---
-# View formatted JSON files
+
+<!-- 
+# View a JSON file as-is or formatted
+-->
+
 
 When you open a JSON file in Microsoft Edge, the file is initially displayed as-is (nested, or minified), and the **Pretty-print** checkbox is initially cleared.
 
@@ -31,12 +35,12 @@ Select or clear the **Pretty-print** checkbox to change between viewing the `.js
 
 A `.json` file that contains whitespace and nesting ([128KB.json](https://microsoftedge.github.io/Demos/json-dummy-data/128KB.json)), displayed with the **Pretty-print** checkbox selected and then cleared:
 
-![A .json file that's non-minified, initially opened in Edge](./json-viewer-images/non-minified-json-file-non-pretty-printed.png)
+![A .json file that's non-minified, viewed as minified](./json-viewer-images/non-minified-json-file-non-pretty-printed.png)
 
 
 A `.json` file that's minified ([128KB-min.json](https://microsoftedge.github.io/Demos/json-dummy-data/128KB-min.json)), displayed with the **Pretty-print** checkbox selected:
 
-![A .json file that's minified, initially opened in Edge](./json-viewer-images/minified-json-file-pretty-printed.png)
+![A .json file that's minified, viewed with Pretty-print selected](./json-viewer-images/minified-json-file-pretty-printed.png)
 
 
 <!-- ------------------------------ -->
