@@ -52,7 +52,7 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Disabled `kExtensionDisableUnsupportedDeveloper` in WebView2.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))<!-- todo: correct spelling? not found in any docset, not mentioned in the Issue - more relevant wording for users?  where can confirm spelling? -->
+* Extensions won't get disabled in WebView2 by using `AddBrowserExtensionAsync`, regardless of whether developer mode is on.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
 * Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
 * Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
 
@@ -90,7 +90,7 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 ###### Runtime and SDK
 
 * Fixed host object async method exception handling.  ([Issue #3402](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3402))
-* Behavioral comment change.<!-- todo: clarify generic desc; specify the change -->  ([Issue #5091](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5091))
+* Fixed documentation for `CoreWebVIew2.Navigate`.  ([Issue #5091](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5091))
 
 
 <!-- ---------- -->
@@ -98,7 +98,7 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 * Fixed an "Add to Chrome" store installation regression.
 * Fixed folder uploads in UWP and WinUI.  ([Issue #3275](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3275))
-* Disabled `kExtensionDisableUnsupportedDeveloper` in WebView2.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))<!-- todo: correct spelling? not found in any docset, not mentioned in the Issue - more relevant wording for users?  where can confirm spelling? -->
+* Extensions won't get disabled in WebView2 by using `AddBrowserExtensionAsync`, regardless of whether developer mode is on.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
 * Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
 * Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
 
@@ -106,7 +106,7 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 <!-- ---------- -->
 ###### SDK-only
 
-* Fixes a crash that could occur when the Garbage Collector calls `Finalize` off<!-- todo: clarify "off" - on? of? --> the main thread.
+* Fixes a crash that could occur when the Garbage Collector calls `Finalize` on a thread other than the main thread.
 
 <!-- end of Mar 2025 Prerelease SDK -->
 
