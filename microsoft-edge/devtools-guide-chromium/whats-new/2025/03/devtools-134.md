@@ -58,19 +58,13 @@ Microsoft Edge 134 also includes the following updates from the Chromium project
 * [Privacy and security panel](https://developer.chrome.com/blog/new-in-devtools-134#privacy-and-security)
 * [Performance panel improvements](https://developer.chrome.com/blog/new-in-devtools-134#perf)
    * [Calibrated CPU throttling presets](https://developer.chrome.com/blog/new-in-devtools-134#calibrated-cpu-throttling)
-   * [Select different performance events in the same AI chat](https://developer.chrome.com/blog/new-in-devtools-134#perf-select)
    * [First- and third-party highlighting in Performance](https://developer.chrome.com/blog/new-in-devtools-134#perf-third-party)
-   * [Field data in marker tooltips and insights](https://developer.chrome.com/blog/new-in-devtools-134#field-data)
-   * ['Forced reflow' insight](https://developer.chrome.com/blog/new-in-devtools-134#forced-reflow)
    * ['Optimize DOM size' insight](https://developer.chrome.com/blog/new-in-devtools-134#dom-size)
    * [Extend the performance trace with console.timeStamp](https://developer.chrome.com/blog/new-in-devtools-134#console-timestamp)
 * [Elements panel improvements](https://developer.chrome.com/blog/new-in-devtools-134#elements)
-   * [Real-time values of animated styles](https://developer.chrome.com/blog/new-in-devtools-134#real-time-animation)
    * [Support for :open pseudo-class and various pseudo-elements](https://developer.chrome.com/blog/new-in-devtools-134#pseudo)
 * [Copy all console messages](https://developer.chrome.com/blog/new-in-devtools-134#copy-console)
 * [Byte units in the Memory panel](https://developer.chrome.com/blog/new-in-devtools-134#byte-units)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-134#misc)
-<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
