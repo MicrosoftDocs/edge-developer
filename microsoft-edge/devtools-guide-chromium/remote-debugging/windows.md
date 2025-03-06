@@ -190,15 +190,3 @@ Notes about screencasts:
 *  Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
 
 *  If your host device screen locks, the content of your screencast disappears.  Unlock your host device screen to automatically resume the screencast.
-
-
-<!-- ====================================================================== -->
-## Known issues<!-- todo: update -->
-
-* The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  The team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.<!-- todo: done? -->
-
-* The **Cookies** pane in the **Application** panel is blank on Windows 10 version 1903.  The team plans to fix the **Cookies** pane in a service update to Windows 10 version 1903.<!-- todo: done? -->
-
-* The **Audits** tool, the **3D View** tool, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool aren't currently<!-- todo: fixed? --> working as expected.
-
-* The file explorer doesn't launch from the DevTools in the **Sources** tool or in the **Security** panel when you remote debug.
