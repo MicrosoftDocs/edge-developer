@@ -14,7 +14,7 @@ This article highlights:
 * High-impact differences between Microsoft Edge and the Chromium project, the browser engine which Microsoft Edge is based on.
 * High-impact web platform changes, which might impact browser compatibility on your site, and which the Microsoft Edge team is tracking especially closely.
 
-For more information about other changes in Microsoft Edge, see [Release Notes for web platform for Microsoft Edge](./release-notes/index.md).
+For more information about other changes in Microsoft Edge, see [Release notes for Microsoft Edge web platform](./release-notes/index.md).
   
 The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, these changes may affect the functionality of existing webpages.
 
@@ -34,6 +34,7 @@ This table lists high-impact changes which the Microsoft Edge team is tracking c
 
 | Change | Release | Description |
 | --- | --- | --- |
+| Deprecate `getHostEnvironmentValue` | Future release (TBD) | Deprecate the non-standards-based, Microsoft Edge-only `window.external.getHostEnvironmentValue()` method, in favor of using the standardized User-Agent Client Hints API to expose browser and platform information.  User-Agent Client Hints provide browser and platform information in a more privacy-preserving way.  See [Detect Windows 11 and CPU architecture using User-Agent Client Hints](./how-to-detect-win11.md), and [User-Agent Client Hints API](https://developer.mozilla.org/docs/Web/API/User-Agent_Client_Hints_API). |
 | Insecure downloads over HTTP | Future release (TBD) | When a user tries to download potentially dangerous content from an HTTP site, the user will receive a UI warning, such as "Insecure download blocked."  The user will still have an option to proceed and download the item.  Admins can use the `InsecureContentAllowedForUrls` policy to specify HTTP sites for which the warning will be suppressed.  Admins can use the `InsecureDownloadWarnings` feature flag to test the impact of this upcoming feature. |
 | Deprecate unload event | Future release (TBD) | Introduces a new Permission-Policy to allow creating unload event listeners. The default policy is `allow`, but the default policy will gradually be migrated to `deny`, such that unload handlers stop firing on pages, unless a page explicitly opts in to re-enable them.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Deprecate: Deprecate unload event](https://groups.google.com/a/chromium.org/g/blink-dev/c/dvusqw9-IhI/m/SBkm_u1RAQAJ). |
 | Removal of cross-origin subframe JavaScript dialogs | Future release (TBD) | Removes `window.alert`, `window.prompt`, and `window.confirm` from cross-origin iframes.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Remove: Cross origin subframe JS Dialogs](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ). |
@@ -89,3 +90,9 @@ This article uses the following notation for browser release numbers.
 | Beta v123 | The feature or change ships in version 123 of the Beta preview channel of Microsoft Edge. | 
 | Dev v123 | The feature or change ships in version 123 of the Dev preview channel of Microsoft Edge. | 
 | Canary v123 | The feature or change ships in version 123 of the Canary preview channel of Microsoft Edge. | 
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for Microsoft Edge web platform](./release-notes/index.md)
