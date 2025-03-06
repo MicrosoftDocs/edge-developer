@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 134)
-description: "Forced reflow in the Performance Insights sidebar. Heap snapshot statistics account for every byte. DevTools theme menu is simplified. And more."
+description: "Forced reflow in the Performance Insights sidebar. Heap snapshot statistics account for every byte. Simplified DevTools Themes menu. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -40,13 +40,13 @@ To fix this, two new catch-all categories have been added, to account for the re
 
 
 <!-- ====================================================================== -->
-## DevTools theme menu is simplified 
+## Simplified DevTools Themes menu
 
-<!-- Subtitle: Change DevTools theme by clicking Customize and control DevTools > Themes. Choose from Light or Dark. -->
+<!-- Subtitle: Change the DevTools theme by clicking Customize and control DevTools > Themes, and then select Light or Dark. -->
 
 The theme options have been simplified by removing the redundant nesting options.  When you go to **Customize and control DevTools** > **Themes**, the options have been simplified to **System preference**, **Light**, and **Dark**:
 
-![DevTools theme options](./devtools-134-images/theme-options.png)
+![DevTools Themes menu options](./devtools-134-images/theme-options.png)
 
 
 <!-- ====================================================================== -->
