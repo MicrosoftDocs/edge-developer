@@ -176,9 +176,6 @@ For example, in the following code, the `prodversionmin` attribute value of `3.0
 * [Update a Microsoft Edge extension](../update/update-extension.md)
 * [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
 
-Chrome Dev docs:
-* [Autoupdating](https://developer.chrome.com/docs/apps/autoupdate)<!-- todo: remove link? = [here] link below -->
-
 
 <!-- ====================================================================== -->
 > [!NOTE]

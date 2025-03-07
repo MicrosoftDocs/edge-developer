@@ -252,8 +252,8 @@ For the history of this feature in the Chromium open-source project, see Issues 
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-<!-- todo: the Application tool seems under-doc'd; contrast the TOC > Tools > Application tool vs. the left-side tree in the tool:
-https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/storage/application-tool -->
+<!-- todo: doc latest tree in Application tool; compare articles eg
+[Application tool, to manage storage](../../../storage/application-tool.md) - see outline of UI at top of page -->
 
 
 <!-- ------------------------------ -->
