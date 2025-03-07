@@ -257,7 +257,6 @@ To open the DevTools code editor alongside other tools:
 1. At the **Run** prompt, start typing **quick**, and then select **Show Quick source**:
 
    ![Open the 'Quick source' tool by using the Command Menu](./index-images/workspaces-workspaces-demo-search-show-quick-source.png)
-   <!-- todo: resume here -->
 
    At the bottom of the DevTools window, the **Quick source** tool opens, displaying the contents of `index.html`, because that's the last file you edited in the **Sources** tool.  If needed, click **Expand Quick View**, and make sure the **Elements** tool is selected.
 
