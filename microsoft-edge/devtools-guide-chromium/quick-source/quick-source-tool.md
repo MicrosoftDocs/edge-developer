@@ -15,14 +15,11 @@ Use the **Quick source** tool to display or edit source files when using a tool 
 
 The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  Use the **Quick source** tool, which by default opens in the **Quick View** panel at the bottom of DevTools.
 
-If you open **Quick source** tool without first selecting a file in the **Sources** tool, the **Quick source** tool doesn't have any files:
+A file must first be selected in the **Sources** tool.  The **Quick source** tool has a tab for each file that's open in the **Sources** tool.  If you open **Quick source** tool without first selecting a file in the **Sources** tool, the **Quick source** tool doesn't display a file listing or file tabs.
 
 
 <!-- ====================================================================== -->
 ## Open a file in the Quick source tool
-
-In this approach, we'll open the **Quick source** tool before selecting any files in the **Sources** tool, so the **Quick source** tool initially won't display any files.
-
 
 To open a file in the **Quick source** tool:
 
