@@ -102,7 +102,7 @@ With code folding turned on, you can now expand and collapse objects and arrays 
 Please send us your [feedback](../../../contact.md)!
 
 See also:
-* [View formatted JSON responses or files](../../../json-viewer/json-viewer.md)
+* [View a JSON file or server response with formatting](../../../../web-platform/json-viewer.md)
 
 
 <!-- ====================================================================== -->
