@@ -1,6 +1,6 @@
 ---
-title: View a JSON file, with formatting
-description: How to view a minified JSON file or JSON response with formatting for readability, or a formatted JSON file, in Microsoft Edge.
+title: View a JSON file or server response with formatting
+description: How to view a minified JSON file or JSON response with formatting for readability, in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,11 +8,11 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/05/2025
 ---
-# View a JSON file, with formatting
+# View a JSON file or server response with formatting
 
-To display a minified JSON file in a more readable format, select the **Pretty-print** checkbox.
+To display a minified JSON file or a minified JSON server response in a more readable format, select the **Pretty-print** checkbox.
 
-When you open a JSON HTTP response or a JSON file in Microsoft Edge, the content is initially displayed as-is.  For example, if the JSON was minified, with its entire content on a single line with empty spaces removed, the JSON is initially displayed in a dense format, as wide lines, wrapped.
+When you open a JSON file or view a JSON HTTP server response in Microsoft Edge, the content is initially displayed as-is.  For example, if the JSON was minified, with its entire content on a single line with empty spaces removed, the JSON is initially displayed in a dense format, as wide lines, wrapped.
 
 
 To format a minified JSON file or server response:
@@ -29,7 +29,7 @@ To format a minified JSON file or server response:
 
    The JSON file or response is displayed in a readable format, with indentation and line wrapping.
 
-Clicking the **Pretty-print** checkbox doesn't change the JSON file itself; only how it is displayed.
+Selecting or clearing the **Pretty-print** checkbox doesn't change the JSON file itself; only how it is displayed.
 
 
 <!-- ====================================================================== -->

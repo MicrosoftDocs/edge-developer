@@ -415,7 +415,7 @@ conceptualContent:
               url: ./web-platform/os-regional-settings.md
               itemType: how-to-guide
 
-            - text: View a JSON file, with formatting
+            - text: View a JSON file or server response with formatting
               url: ./web-platform/json-viewer.md
               itemType: how-to-guide
 

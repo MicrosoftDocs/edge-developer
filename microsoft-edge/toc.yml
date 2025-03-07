@@ -1762,7 +1762,7 @@
           href: ./web-platform/os-regional-settings.md
           displayName: globalization, language, region, limited, intl, date, time, format
 
-        - name: View a JSON file, with formatting
+        - name: View a JSON file or server response with formatting
           href: ./web-platform/json-viewer.md
           displayName: JSON viewer, view JSON
 # /Edge-specific web development tips
