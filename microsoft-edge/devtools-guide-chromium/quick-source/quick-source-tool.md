@@ -110,9 +110,11 @@ To open a server webpage file in the **Quick source** tool and save any edits to
 
    ![The Code button of the Demos repo to get the web URL](./quick-source-tool-images/clone-demos-repo.png)
 
-   Or, if you have GitHub Desktop installed, click **Open with GitHub Desktop**.
+   Or, if you have GitHub Desktop installed, click **Open with GitHub Desktop** to clone the repo, and skip the command prompt step below.
 
-1. Assuming you have git installed, open a command prompt.  Or, you can use Visual Studio Code > **Source Control** pane.
+   Or, you can use Visual Studio Code's **Source Control** pane to clone the repo, and skip the command prompt step below.
+
+1. Assuming you have git installed, open a command prompt.
 
 1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo.  If you use a command prompt:
 
@@ -131,7 +133,7 @@ To open a server webpage file in the **Quick source** tool and save any edits to
 
    **Select a local folder of source files as the Workspace:**
 
-1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, and then in the **Workspace** tab (grouped with the **Page** tab), click the **Add folder** button.
+1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, select the **Workspace** tab (grouped with the **Page** tab), and then in the **Workspace** tab, click the **Add folder** button.
 
    The **Select Folder** dialog opens.
 
