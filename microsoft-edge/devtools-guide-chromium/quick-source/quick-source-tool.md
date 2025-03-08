@@ -35,7 +35,7 @@ To open a file in the **Quick source** tool:
 
    The **Quick source** tool opens in **Quick View**:
 
-   ![The Quick source tool](./quick-source-tool-images/quick-source-open-file.png)
+   ![The Quick source tool, containing an Open file link](./quick-source-tool-images/quick-source-open-file.png)
 
 1. Drag the separator to make the **Quick View** pane tall enough to display the **Open file** link.
 
@@ -82,7 +82,7 @@ To open a file in the **Quick source** tool and sync edits to the workspace:
 
    The **Quick source** tool opens in **Quick View**:
 
-   ![The Quick source tool](./quick-source-tool-images/quick-source-select-folder.png)
+   ![The Quick source tool, containing a Select folder link](./quick-source-tool-images/quick-source-select-folder.png)
 
 1. In the **Quick source** tool, click the **Select folder** link.  (Or, drag a folder onto the **Quick source** panel.)
 
