@@ -31,7 +31,7 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 * [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
 * [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
    * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-   * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+   * [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
    * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
    * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
    * [Using the Snippets tab to run JavaScript code snippets on any webpage](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
@@ -96,7 +96,7 @@ To access any hidden tabs of the Navigator pane, click the **More tabs** (![More
 
 The following subsections cover the Navigator pane:
 * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-* [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+* [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
 * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
 * [Using the Snippets tab to run JavaScript code snippets on any page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
@@ -137,9 +137,9 @@ To change how resources are grouped:
 
 
 <!-- ------------------------------ -->
-#### Using the Filesystem tab to define a local Workspace
+#### Select a local Workspace, to use DevTools to edit files and save changes to disk
 
-Use the **Filesystem** tab of the **Navigator** pane to add files to a Workspace, so that changes you make in DevTools get saved to your local file system.
+Use the **Workspace** tab of the **Navigator** pane to add files to a Workspace, so that changes you make in DevTools get saved to your local file system.
 
 <!-- Green dots do not appear anymore. -->
 <!-- A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools. -->
@@ -153,7 +153,7 @@ In contrast, when you use a Workspace, changes that you make to your front-end c
 Workspaces work well when the JavaScript code that's returned by the server is the same as your local JavaScript source code.  Workspaces don't work as well when your workflow involves transformations on your source code, such as minification or [TypeScript](https://www.typescriptlang.org) compilation.
 
 See also:
-* [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md)
+* [Edit files with Workspaces](../workspaces/index.md)
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
@@ -252,7 +252,7 @@ The **Editor** pane has the following level of support for various file types:
 | HTML | View and edit. |
 | Images | View. |
 
-By default, edits are discarded when you refresh the webpage.  For information about how to save the changes to your file system, see [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace), above.
+By default, edits are discarded when you refresh the webpage.  For information about how to save the changes to your file system, see [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk), above.
 
 The following subsections cover the Editor pane:
 * [Editing a JavaScript file](#editing-a-javascript-file)
@@ -289,7 +289,7 @@ If you change a file, an asterisk appears next to the file name.
 *  To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.
 *  To undo a change, press **Ctrl+Z** on Windows/Linux or **Command+Z** on macOS.
 
-By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md).
+By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces](../workspaces/index.md).
 
 
 ###### Find and Replace
@@ -364,7 +364,7 @@ There are two ways to edit CSS in DevTools:
 *  In the **Elements** tool, you work with one CSS property at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Get started viewing and changing CSS](../css/index.md).
 *  In the **Sources** tool, you use a text editor to edit CSS files.
 
-The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
+The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
 ```css
 h1 {
@@ -393,7 +393,7 @@ There are two ways to edit HTML in DevTools:
 ![The HTML editor of the Sources tool](./index-images/sources-html-editor.png)
 
 Unlike a JavaScript or CSS file, an HTML file that is returned by the web server cannot be directly edited in the Sources tool.  To edit an HTML file using the Editor of the Sources tool, the HTML file must be in a Workspace or on the **Overrides** tab.  See these subsections of the current article:
-* [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+* [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
 * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 
 To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.  An edited file is marked by an asterisk.
