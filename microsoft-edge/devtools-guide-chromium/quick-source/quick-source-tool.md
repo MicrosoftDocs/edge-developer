@@ -100,11 +100,17 @@ To open a server webpage file in the **Quick source** tool and save any edits to
 
    **Have local source files that match the web server files:**
 
-1. Make sure there are source files on your local drive, matching the transient files returned by the web server.  For example, if not done already, clone the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos#readme) repo to your local drive:
+1. Make sure there are source files on your local drive, matching the transient files returned by the web server.  For example, if not done already, clone the **MicrosoftEdge / Demos** repo to your local drive, as follows.
+
+1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+
+1. Click the **Code** drop-down button.
+
+1. Click the **Copy url to clipboard** button:
 
    ![The Code button of the Demos repo to get the web URL](./quick-source-tool-images/clone-demos-repo.png)
 
-   In a step below, you'll select the local `/Demos/demo-to-do/` directory of the cloned `Demos` repo.
+   Or, if you have GitHub Desktop installed, click **Open with GitHub Desktop**.
 
 1. Assuming you have git installed, open a command prompt.  Or, you can use Visual Studio Code > **Source Control** pane.
 
@@ -121,7 +127,7 @@ To open a server webpage file in the **Quick source** tool and save any edits to
    * [Clone the WebView2Samples repo](../../webview2/how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Shows a different sample repo, but shows steps for several tools.
    * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
 
-   Now you have a local folder of source files that match the files on the web server.
+   Now you have a local folder of source files (such as `/demo-to-do/`) that match the files on the web server.
 
    **Select a local folder of source files as the Workspace:**
 
