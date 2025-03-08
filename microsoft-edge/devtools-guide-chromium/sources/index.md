@@ -31,7 +31,7 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 * [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
 * [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
    * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-   * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+   * [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
    * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
    * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
    * [Using the Snippets tab to run JavaScript code snippets on any webpage](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
@@ -96,7 +96,7 @@ To access any hidden tabs of the Navigator pane, click the **More tabs** (![More
 
 The following subsections cover the Navigator pane:
 * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-* [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+* [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
 * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
 * [Using the Snippets tab to run JavaScript code snippets on any page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
@@ -137,7 +137,7 @@ To change how resources are grouped:
 
 
 <!-- ------------------------------ -->
-#### Using the Filesystem tab to define a local Workspace
+#### Select a local Workspace, to use DevTools to edit files and save changes to disk
 
 Use the **Workspace** tab of the **Navigator** pane to add files to a Workspace, so that changes you make in DevTools get saved to your local file system.
 
@@ -252,7 +252,7 @@ The **Editor** pane has the following level of support for various file types:
 | HTML | View and edit. |
 | Images | View. |
 
-By default, edits are discarded when you refresh the webpage.  For information about how to save the changes to your file system, see [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace), above.
+By default, edits are discarded when you refresh the webpage.  For information about how to save the changes to your file system, see [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk), above.
 
 The following subsections cover the Editor pane:
 * [Editing a JavaScript file](#editing-a-javascript-file)
@@ -393,7 +393,7 @@ There are two ways to edit HTML in DevTools:
 ![The HTML editor of the Sources tool](./index-images/sources-html-editor.png)
 
 Unlike a JavaScript or CSS file, an HTML file that is returned by the web server cannot be directly edited in the Sources tool.  To edit an HTML file using the Editor of the Sources tool, the HTML file must be in a Workspace or on the **Overrides** tab.  See these subsections of the current article:
-* [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+* [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
 * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 
 To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.  An edited file is marked by an asterisk.

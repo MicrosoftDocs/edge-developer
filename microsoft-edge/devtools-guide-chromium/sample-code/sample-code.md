@@ -252,7 +252,7 @@ To edit the files, see the editing steps in the next section.
 
 See also:
 * [Edit files with Workspaces](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
-* [Using the Filesystem tab to define a local Workspace](../sources/index.md#using-the-filesystem-tab-to-define-a-local-workspace) in _Sources tool overview_.
+* [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 
 
 #### Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool
@@ -356,7 +356,7 @@ These URLs aren't case-sensitive.
 
 Opening and editing files:
 * [Edit files with Workspaces](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
-* [Using the Filesystem tab to define a local Workspace](../sources/index.md#using-the-filesystem-tab-to-define-a-local-workspace) in _Sources tool overview_.
+* [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 * [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
 * [Microsoft Edge IDE integration](../../visual-studio-code/ide-integration.md) - Webpage app development using Visual Studio Code or Visual Studio, including Microsoft Edge DevTools.
 
