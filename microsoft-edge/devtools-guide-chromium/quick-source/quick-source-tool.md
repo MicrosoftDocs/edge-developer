@@ -13,18 +13,32 @@ ms.date: 03/07/2025
 
 Use the **Quick source** tool to display or edit source files when using a tool other than the **Sources** tool.
 
+![The Quick source tool](./quick-source-tool-images/quick-source-tool.png)
+
 The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  Use the **Quick source** tool, which by default opens in the **Quick View** panel at the bottom of DevTools.
 
-The **Quick source** tool provides an alternative display of the files that are open in the **Sources** tool.
+
+<!-- ------------------------------ -->
+#### Use the Quick source tool in conjunction with the Sources tool
+
+The **Quick source** tool provides an alternative display of the files that are open in the **Sources** tool:
+
+* The **Quick source** tool has a subset of features.  For full features, temporarily switch to the **Sources** tool.
+
 * If one tool is empty and displays instructions, the other tool is empty and displays instructions.
+
 * If you open or close a file in one tool, the file is opened or closed in the other tool.
+
 * In both tools, there's a tab for each open file.
 
 
 <!-- ====================================================================== -->
 ## Open a file in the Quick source tool
+<!-- doc the Sources tool normal GUI approach
+Quick source tool might show a file instead of instructions with **Open file** link
+doc regular GUI way before Command Menu or keyboard shortcut way -->
 
-To open a file in the **Quick source** tool:
+To make a file appear in the **Quick source** tool:
 
 1. Open a webpage; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.
 
@@ -40,13 +54,9 @@ To open a file in the **Quick source** tool:
 
    ![The Quick source tool, containing an Open file link](./quick-source-tool-images/quick-source-open-file.png)
 
-1. Drag the separator to make the **Quick View** pane tall enough to display the **Open file** link (if instructions are displayed rather than a file).
+   The **Quick source** tool might show instructions including an **Open file** link, or it might display a file.  The following steps show how to use the **Page** tab in the **Sources** tool, to make a file appear in the **Quick source** tool.
 
-   Next, you can either:
-   * Open a file in the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, per the steps below.
-   * [Open a file by using the Command Menu](#open-a-file-by-using-the-command-menu), described below.
-
-   **Open a file using the Sources tool:**
+   **Open a file by using the Sources tool:**
 
 1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool.
 
@@ -63,7 +73,6 @@ To open a file in the **Quick source** tool:
    The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and has a tab for each open file:
 
    ![A file displayed in the Quick source tool.](./quick-source-tool-images/file-displayed-in-quick-source.png)<!-- 1st use -->
-
 
 See also:
 * [Using the Page tab to explore resources that construct the current webpage](../sources/index.md#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage) in _Sources tool overview_.
