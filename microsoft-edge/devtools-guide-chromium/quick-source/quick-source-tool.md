@@ -104,7 +104,7 @@ To close a file, click the **x** button in the file's tab.  The file is closed i
 By selecting a local folder as a **Workspace**, you can make edits in DevTools **Quick source** tool (or **Sources** tool) and have those edits be saved to your local drive.  This way, when you edit the folder's files in DevTools, the edits are not only made to the transient file that's returned by the server, but are also saved to the source files on your local drive.
 
 
-To open a file in the **Quick source** tool and sync edits to the **Workspace** folder of local source files:
+To open a server webpage file in the **Quick source** tool and save any edits to your local **Workspace** folder of source files:
 
 1. Open a webpage that's on a web server; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.  That page is hosted on the web server `microsoftedge.github.io`.
 
