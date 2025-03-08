@@ -9,7 +9,7 @@ ms.subservice: devtools
 ms.date: 03/07/2025
 ---
 # Display or edit source files using the Quick source tool
-<!-- the present file & upstream are written independently https://developer.chrome.com/docs/devtools/quick-source -->
+<!-- https://developer.chrome.com/docs/devtools/quick-source -->
 
 Use the **Quick source** tool to display or edit source files when using a tool other than the **Sources** tool.
 
@@ -68,6 +68,9 @@ To open a file in the **Quick source** tool:
 <!-- ====================================================================== -->
 ## Open a folder and sync workspace
 
+You can make edits in DevTools **Quick source** tool (or **Sources** tool) and have those edits be saved to your local drive, by selecting a local folder as a workspace.
+
+
 To open a file in the **Quick source** tool and sync edits to the workspace:
 
 1. Open a webpage; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.
@@ -114,6 +117,27 @@ See also:
 
 
 <!-- ====================================================================== -->
-## See also:
+## Options in the empty Quick source tool
+
+When the **Quick source** tool (or **Sources** tool) is empty, the tool displays instructions like the following.
+
+To save your DevTools edits to the source files on your local drive:
+* Drag a folder that contains your source files onto the empty **Quick source** tool (or **Sources** tool).
+* Click the **Select folder** link.
+* In the **Sources** tool, in the **Workspace** tab, click the **Add folder** button.
+
+To open a file by using the **Command Menu**:
+* Click the **Open file** link in the empty **Quick source** tool (or **Sources** tool).
+* Pressing **Ctrl+P**.
+* Select **Customize and control DevTools** > **Open file**.
+* Select **Sources tool** > **More options** (next to the **Page** tab) > **Open file**.
+
+To open the **Command Menu**:
+* Click the **Run command** link in the empty **Quick source** tool (or **Sources** tool).
+* Press **Ctrl+Shift+P**.
+
+
+<!-- ====================================================================== -->
+## See also
 
 * [Displaying source files when using a different tool](../sources/index.md#displaying-source-files-when-using-a-different-tool) in _Sources tool overview_
