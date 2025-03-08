@@ -139,7 +139,7 @@ To change how resources are grouped:
 <!-- ------------------------------ -->
 #### Using the Filesystem tab to define a local Workspace
 
-Use the **Filesystem** tab of the **Navigator** pane to add files to a Workspace, so that changes you make in DevTools get saved to your local file system.
+Use the **Workspace** tab of the **Navigator** pane to add files to a Workspace, so that changes you make in DevTools get saved to your local file system.
 
 <!-- Green dots do not appear anymore. -->
 <!-- A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools. -->
@@ -153,7 +153,7 @@ In contrast, when you use a Workspace, changes that you make to your front-end c
 Workspaces work well when the JavaScript code that's returned by the server is the same as your local JavaScript source code.  Workspaces don't work as well when your workflow involves transformations on your source code, such as minification or [TypeScript](https://www.typescriptlang.org) compilation.
 
 See also:
-* [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md)
+* [Edit files with Workspaces](../workspaces/index.md)
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
@@ -289,7 +289,7 @@ If you change a file, an asterisk appears next to the file name.
 *  To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.
 *  To undo a change, press **Ctrl+Z** on Windows/Linux or **Command+Z** on macOS.
 
-By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md).
+By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces](../workspaces/index.md).
 
 
 ###### Find and Replace
@@ -364,7 +364,7 @@ There are two ways to edit CSS in DevTools:
 *  In the **Elements** tool, you work with one CSS property at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Get started viewing and changing CSS](../css/index.md).
 *  In the **Sources** tool, you use a text editor to edit CSS files.
 
-The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
+The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
 ```css
 h1 {

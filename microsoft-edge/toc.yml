@@ -437,7 +437,7 @@
                   href: ./devtools-guide-chromium/javascript/snippets.md
                   displayName: Sources tool
 
-                - name: Edit files with Workspaces (Filesystem tab)
+                - name: Edit files with Workspaces
                   href: ./devtools-guide-chromium/workspaces/index.md
                   displayName: Sources tool, Quick source tool  # Quick source tool is covered in section "Step 4: Save a JavaScript change to disk"
 

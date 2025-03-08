@@ -35,25 +35,34 @@ To open a file in the **Quick source** tool:
 
    The **Quick source** tool opens in **Quick View**:
 
-   ![The Quick source tool](./quick-source-tool-images/quick-source-select-folder.png)
+   ![The Quick source tool](./quick-source-tool-images/quick-source-open-file.png)
 
-   No files are displayed, because no files are selected in the **Sources** tool.
+1. Drag the separator to make the **Quick View** pane tall enough to display the **Open file** link.
 
-1. In the **Activity Bar**, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool.
+   Next, you can either:
+   * Open a file in the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, per the steps below.
+   * Open a file via the **Command Menu** by clicking the **Open file** link in the **Quick source** tool.
+
+1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool.
 
    The **Quick View** pane is minimized at the bottom of DevTools.
 
-1. In the **Page** tab (or the **Workspace** tab), select one or more files, such as `to-do.js`.
+1. In the **Sources** tool, in the **Page** tab, select one or more files, such as `to-do.js`.
 
    The tabs for the selected files are opened in the **Sources** tool:
 
    ![The Sources tool > Page tab with a file selected](./quick-source-tool-images/sources-tool-page-tab-file-selected.png)
 
-1. In the **Activity Bar**, select a tool other than **Sources**, such as **Elements**.
+1. In the **Activity Bar** at the top of DevTools, select a tool other than **Sources**, such as **Elements**.
 
    The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and has a tab for each open file:
 
-   ![A file displayed in the Quick source tool.](./quick-source-tool-images/file-displayed-in-quick-source.png)
+   ![A file displayed in the Quick source tool.](./quick-source-tool-images/file-displayed-in-quick-source.png)<!-- 1st use -->
+
+
+   Or, to open a file, you can click the **Open file** link in the empty **Quick source** tool:
+
+   ![The Open file Command Menu](./quick-source-tool-images/open-file-command-menu.png)
 
 
 <!-- ====================================================================== -->
@@ -75,8 +84,6 @@ To open a file in the **Quick source** tool and sync edits to the workspace:
 
    ![The Quick source tool](./quick-source-tool-images/quick-source-select-folder.png)
 
-   No files are displayed, because no files are selected in the **Sources** (bug icon) tool.
-
 1. In the **Quick source** tool, click the **Select folder** link.  (Or, drag a folder onto the **Quick source** panel.)
 
    The **Select Folder** dialog opens.
@@ -89,23 +96,24 @@ To open a file in the **Quick source** tool and sync edits to the workspace:
 
    The **Sources** tool is opened, with no file selected, and continues to display a **Select folder** link.
 
-1. In the **Sources** tool, select the **Workspace** tab (or the **Page** tab).
-
-1. Expand the tree, and then click one or more files, such as `to-do.js`.
+1. In the **Sources** tool, in the **Workspace** tab, expand the tree, and then click one or more files, such as `to-do.js`.
 
    The file opens in the **Sources** tool:
 
    ![The Sources tool with a file selected](./quick-source-tool-images/sources-tool-with-file-selected.png)
 
-1. In the **Activity Bar** at top of DevTools, select a tool other than the **Sources** tool, such as the **Elements** tool.
+1. In the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** tool, such as the **Elements** tool.
 
    The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and has a tab for each open file:
 
-   ![A file displayed in the Quick source tool](./quick-source-tool-images/file-displayed-in-quick-source.png)
+   ![A file displayed in the Quick source tool](./quick-source-tool-images/file-displayed-in-quick-source.png)<!-- 2nd use -->
+
+See also:
+* [Edit files with Workspaces](../workspaces/index.md)
+   * [Step 4: Save a JavaScript change to disk](../workspaces/index.md#edit-javascript-and-save-changes-to-the-source-file) in _Edit files with Workspaces_
 
 
 <!-- ====================================================================== -->
 ## See also:
 
 * [Displaying source files when using a different tool](../sources/index.md#displaying-source-files-when-using-a-different-tool) in _Sources tool overview_
-* [Step 4: Save a JavaScript change to disk](../workspaces/index.md#edit-javascript-and-save-changes-to-the-source-file) in _Edit files with Workspaces (Filesystem tab)_

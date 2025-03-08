@@ -1,5 +1,5 @@
 ---
-title: Edit files with Workspaces (Filesystem tab)
+title: Edit files with Workspaces
 description: How to save webpage file changes made in DevTools to disk.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,9 +21,9 @@ ms.date: 09/13/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Edit files with Workspaces (Filesystem tab)
+# Edit files with Workspaces
 
-Use the **Filesystem** tab in the **Sources** tool to define a workspace, to save DevTools changes in your source code files rather than only in a transient copy of the files that are returned by the web server.
+Use the **Workspace** tab in the **Sources** tool to define a workspace, to save DevTools changes in your source code files rather than only in a transient copy of the files that are returned by the web server.
 
 This tutorial provides hands-on practice in setting up and using a workspace in DevTools. After you add files to a workspace, changes that you make in your source code by using DevTools are saved on your local computer. These changes are preserved across page refreshes.
 
@@ -59,7 +59,7 @@ The tutorial steps below walk you through this environment setup.
 
 If you're using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.  A workspace is usually able to map the optimized code back to the original source code, by using [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS.  However, there's a lot of variation in how each framework uses source maps.
 
-DevTools doesn't support every framework variation; for example, the Workspaces feature (**Filesystem** tab) doesn't work with the Create React App framework.
+DevTools doesn't support every framework variation; for example, the Workspaces feature (**Workspace** tab) doesn't work with the Create React App framework.
 
 If you run into issues while using workspaces with your framework of choice, or you identify framework-specific steps that are needed, [start a thread in the Chrome DevTools mailing list](https://groups.google.com/forum/#!forum/google-chrome-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=google-chrome-devtools) to exchange information with the rest of the DevTools community.
                                                                      
@@ -134,7 +134,7 @@ Node.js option:
 
 1. Click the **Sources** (![Sources tool icon](./index-images/sources-tool-icon.png)) tab.
 
-1. In the **Navigator** pane (on the left), click the **Filesystem** tab (which is grouped with the **Page** tab):
+1. In the **Navigator** pane (on the left), click the **Workspace** tab (which is grouped with the **Page** tab):
 
    ![The Filesystem tab](./index-images/workspaces-workspaces-demo-sources-filesystem.png)
 
@@ -146,7 +146,7 @@ Node.js option:
 
 1. Click the **Allow** button, to give DevTools permission to read and write to the directory.
 
-   In the **Filesystem** tab are page icons that have a green dot, for `index.html`, `script.js`, and `styles.css`. <!--(The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.)-->  The green dot indicates that DevTools has established a mapping between a network resource of the page that's received from the web server, and the local source file in your `app` directory:
+   In the **Workspace** tab are page icons that have a green dot, for `index.html`, `script.js`, and `styles.css`. <!--(The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.)-->  The green dot indicates that DevTools has established a mapping between a network resource of the page that's received from the web server, and the local source file in your `app` directory:
 
    ![The Filesystem tab has a green dot indicating a mapping between a resource received from the server and a local source file](./index-images/workspaces-workspaces-demo-sources-filesystem-folder.png)
 
@@ -156,7 +156,7 @@ Node.js option:
 
 To make a change in the CSS file and save it to disk:
 
-1. In the **Sources** tool, in the **Filesystem** tab (grouped with the **Page** tab), select `styles.css` to open it in the editor pane.  The `color` property of the `h1` element is set to `fuchsia`:
+1. In the **Sources** tool, in the **Workspace** tab (grouped with the **Page** tab), select `styles.css` to open it in the editor pane.  The `color` property of the `h1` element is set to `fuchsia`:
 
    ![View styles.css in a text editor](./index-images/workspaces-workspaces-demo-sources-filesystem-css.png)
 
@@ -223,7 +223,7 @@ In short, the **DOM Tree** `!==` HTML.
 <!-- ------------------------------ -->
 #### Changing HTML from the Sources tool saves changes
 
-If you want to save a change to the webpage HTML, edit the HTML in the **Sources** tool with a workspace defined (in the **Filesystem** tab), rather than changing the HTML in the DOM tree in the **Elements** tool.
+If you want to save a change to the webpage HTML, edit the HTML in the **Sources** tool with a workspace defined (in the **Workspace** tab), rather than changing the HTML in the DOM tree in the **Elements** tool.
 
 1. Continuing from above, click the **Sources** (![Sources tool icon.](./index-images/sources-tool-icon.png)) tab.
 
@@ -239,14 +239,14 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 
 1. Open the copy of `index.html` that's in your `app` directory in a text editor, such as Visual Studio Code.
 
-   The `<h1>` element contains the new text, because you made the change using the **Sources** tool's editor to edit `index.html` and then saved the change, and that file was mapped in a workspace (the **Filesystem** tab), indicated by a green dot on the file's icon.
+   The `<h1>` element contains the new text, because you made the change using the **Sources** tool's editor to edit `index.html` and then saved the change, and that file was mapped in a workspace (the **Workspace** tab), indicated by a green dot on the file's icon.
 
 
 <!-- ====================================================================== -->
 ## Edit JavaScript and save changes to the source file
 
 The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console**, while editing files.  The **Quick source** tool gives you just the editor from the **Sources** tool, while any tool is open.
-<!-- todo: avoid Quick source tool and just use Sources tool for this section -->
+<!-- todo: maybe avoid Quick source tool and just use Sources tool for this section -->
 
 To open the DevTools code editor alongside other tools:
 
@@ -279,6 +279,10 @@ To open the DevTools code editor alongside other tools:
 1. Refresh the page.  If needed, click and hold the **Refresh** button and then select **Hard Refresh**.  The **Edit files with Workspaces** hyperlink on the page is now italicized:
 
    ![The link on the page is now italicized](./index-images/workspaces-workspaces-demo-elements-styles-quick-source-script.png)
+
+
+See also:
+* [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
 
 
 <!-- ====================================================================== -->
