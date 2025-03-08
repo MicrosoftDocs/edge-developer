@@ -1,6 +1,6 @@
 ---
 title: Emulate device sensors (Sensors tool)
-description: 
+description: How to use the Sensors tool to emulate sensor input of any device, in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
