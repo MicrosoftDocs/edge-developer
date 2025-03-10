@@ -12,7 +12,7 @@ ms.date: 03/07/2025
 <!-- https://developer.chrome.com/docs/devtools/quick-source -->
 <!-- first give the always-available GUI way, then keyboard shortcuts, then transient UI in instructions that aren't present when a file is open -->
 
-Use the **Quick source** tool to display or edit source files when using a tool other than the **Sources** tool.
+Use the **Quick source** tool to display or edit source files at the same time as displaying a tool other than the **Sources** tool.
 
 ![The Quick source tool](./quick-source-tool-images/quick-source-tool.png)
 
