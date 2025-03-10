@@ -8,7 +8,6 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/07/2025
 ---
-<!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques and Sofia Emelianova
 
    Licensed under the Apache License, Version 2.0 (the "License");
