@@ -1627,9 +1627,6 @@
             - name: Archived Release Notes for the WebView2 SDK
               href: ./webview2/release-notes/archive.md
 
-            - name: WebView2 Roadmap
-              href: ./webview2/roadmap.md  # can delete
-
 # -----------------------------------------------------------------------------
         - name: WebView2 Reference
           items:
