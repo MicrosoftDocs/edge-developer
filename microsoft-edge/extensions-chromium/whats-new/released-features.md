@@ -35,7 +35,7 @@ The sidebar feature of Microsoft Edge extensions enables an extension to display
 
 Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension submissions, with visibility set as 'Hidden' or 'Public'.  To share your feedback and comments, see [Update your extensions from Manifest V2 to V3](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/27) in **Discussions** in the MicrosoftEdge-Extensions repo.
 
-*Released July 2022*
+*Released July 2022*<!-- todo: add date for complete removal? -->
 
 
 <!-- ====================================================================== -->
