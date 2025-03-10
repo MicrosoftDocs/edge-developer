@@ -32,7 +32,7 @@ If you open or close a file in one tool, the file is opened or closed in the oth
 <!-- ====================================================================== -->
 ## Open a file in the Quick source tool
 
-To make a file appear in the **Quick source** tool:
+To make a file appear in the **Quick source** tool, open a file in the **Sources** tool, as follows:
 
 1. Open a webpage; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.
 
