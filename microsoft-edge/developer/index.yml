@@ -251,8 +251,8 @@ landingContent:
           - text: Display regional versions of your site, based on OS settings
             url: ../web-platform/os-regional-settings.md
 
-          - text: View formatted JSON responses or files
-            url: ../devtools-guide-chromium/json-viewer/json-viewer.md
+          - text: View a JSON file or server response with formatting
+            url: ../web-platform/json-viewer.md
 
           - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?
             url: ../web-platform/ad-selection-api.md
