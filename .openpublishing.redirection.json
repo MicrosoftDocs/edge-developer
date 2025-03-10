@@ -821,6 +821,11 @@
         "redirect_url": "/microsoft-edge/web-platform/user-agent-guidance",
         "redirect_document_id": false
       },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer.md",
+        "redirect_url": "/microsoft-edge/web-platform/json-viewer",
+        "redirect_document_id": false
+      },
 // /Edge-specific web development tips
 // ============================================================================
 // Microsoft Edge IDE integration
