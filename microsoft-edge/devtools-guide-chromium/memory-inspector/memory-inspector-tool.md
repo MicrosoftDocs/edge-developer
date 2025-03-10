@@ -40,17 +40,14 @@ The **Memory Inspector** tool provides greater ability than the **Sources** tool
 
 ![Sources tool scope panel provides limited ability to inspect memory](./memory-inspector-tool-images/memory-inspector-sources-scope-limited-ability.png)
 
-<!-- this page's initial content was from
-https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2021/04/devtools#new-memory-inspector-tool
--->
-
 
 <!-- ====================================================================== -->
 ## Open Memory Inspector while debugging
+<!-- some initial content was from [New Memory Inspector tool](../whats-new/2021/04/devtools.md#new-memory-inspector-tool) in _What's New in DevTools (Microsoft Edge 91)_. -->
 
 1. Start Microsoft Edge.
 
-1. Open the test site [Inspect ArrayBuffers in JS (Memory in JS)](http://memory-inspector.glitch.me/demo-js.html). <!-- To do item: copy to Microsoft Repo and reference there -->
+1. Open the test site [Inspect ArrayBuffers in JS (Memory in JS)](http://memory-inspector.glitch.me/demo-js.html). <!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there -->
 
 1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
