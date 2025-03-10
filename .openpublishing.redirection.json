@@ -114,6 +114,11 @@
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/evaluate-performance/",
         "redirect_document_id": false
       },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements",
+        "redirect_document_id": false
+      },
 // /Microsoft Edge DevTools
 // ============================================================================
 // Microsoft Edge extensions
