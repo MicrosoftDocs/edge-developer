@@ -20,6 +20,7 @@ See:
 <!-- ====================================================================== -->
 ## Native Client (NaCl) no longer supported
 <!-- sections that point to this article because of this section:
+* [Native Client (NaCl) no longer supported](../whats-new/roadmap.md#native-client-nacl-no-longer-supported) in _Roadmap for Microsoft Edge Add-ons_.
 * "Removal of Native Client (NaCl)" table row in [Earlier versions](../../web-platform/site-impacting-changes?tabs=earlier#high-impact-changes) in _Site compatibility-impacting changes coming to Microsoft Edge_.
 -->
 
