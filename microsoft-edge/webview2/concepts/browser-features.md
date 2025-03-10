@@ -153,7 +153,7 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Browser Task Manager `*` | **Shift+Escape** |
 | Edge Feedback `*` | **Shift+Alt+I** |
 | Mute Tab `*` | **Ctrl+M** |
-| New Incognito Window | **Ctrl+Shift+N** |
+| New Incognito<!-- todo: InPrivate? --> Window | **Ctrl+Shift+N** |
 | New Tab | **Ctrl+T** |
 | New Window | **Ctrl+N** |
 | Restore Last Closed Tab | **Ctrl+Shift+T** |
