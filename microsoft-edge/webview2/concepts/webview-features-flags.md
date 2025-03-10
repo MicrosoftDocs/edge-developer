@@ -101,7 +101,7 @@ The following are some of the flags we've seen used.
 | `HardwareMediaKeyHandling` | Enables handling of hardware media keys for controlling media. |
 | `ignore-certificate-errors` | Ignores certificate-related errors. |
 | `ignore-gpu-blocklist` | Whether to ignore the GPU blocklist. |
-| `incognito` | Forces Incognito mode even if user data directory is specified by using the `--user-data-dir` flag. |
+| `incognito` | Forces InPrivate (Incognito) mode even if the user data directory is specified by using the `--user-data-dir` flag. |
 | `isolate-origins` | Require dedicated processes for a set of origins, specified as a comma-separated list. For example: --isolate-origins=https://www.foo.com,https://www.bar.com. |
 | `js-flags` | Specifies the flags passed to JS engine. |
 | `--js-flags=--scavenger_max_new_space_capacity_mb=8` | This flag specifies the maximum limit (in MB) for scavenger (minor garbage collector) in V8.  <br/>A higher scavenger memory limit reduces the frequency of minor garbage collectors, but increases memory usage.  <br/>A lower limit reduces memory footprint, but increases garbage collectors frequency, which may impact performance. |
@@ -123,7 +123,7 @@ The following are some of the flags we've seen used.
 | `msFloatyShouldHonorIndiaHoldout` | If `true`, honors the India holdout group.  Use this flag, set to `false`, to disable the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
-| `msSingleSignOnForInPrivateWebView2` | This flag enables the single sign-on (SSO) flow for incognito/private session<!-- todo: InPrivate? --> of WebView2.  Browser-based SSO should seamlessly work in incognito<!-- todo: InPrivate? --> mode after enabling this flag. |
+| `msSingleSignOnForInPrivateWebView2` | This flag enables the single sign-on (SSO) flow for InPrivate (Incognito) sessions of WebView2.  Browser-based SSO should<!-- todo: style guide: avoid "should" https://learn.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/s/should-vs-must --> seamlessly work in InPrivate (Incognito) mode after enabling this flag. |
 | `msSingleSignOnOSForPrimaryAccountIsShared` | If enabled, allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
 | `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI is shown when the user clicks a misspelled word. |
