@@ -159,7 +159,7 @@ To open a server webpage file in the **Quick source** tool and save any edits to
 
    ![A file displayed in the Quick source tool](./quick-source-tool-images/file-displayed-in-quick-source.png)<!-- 2nd use -->
 
-Now, when you edit the folder's files in DevTools (through the **Quick source** tool or **Sources** tool), the edits are not only made to the transient file that's returned by the server, but are also saved to the source files on your local drive.
+Now, when you edit the folder's files in DevTools, the edits are not only made to the transient file that's returned by the server, but are also saved to the source files on your local drive.  You can edit the file from within the **Quick source** tool at the same time as displaying another tool (or from within the **Sources** tool).
 
 See also:
 * [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
