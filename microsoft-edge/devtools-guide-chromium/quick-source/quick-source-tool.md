@@ -68,6 +68,8 @@ To make a file appear in the **Quick source** tool, open a file in the **Sources
 
    ![A file displayed in the Quick source tool.](./quick-source-tool-images/file-displayed-in-quick-source.png)<!-- 1st use -->
 
+You can now view or edit the file in the **Quick source** tool, at the same time as displaying a different tool.
+
 See also:
 * [Using the Page tab to explore resources that construct the current webpage](../sources/index.md#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage) in _Sources tool overview_.
 
