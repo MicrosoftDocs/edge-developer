@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 05/29/2024
+ms.date: 03/10/2025
 ---
 # WebView2 browser flags
 
@@ -104,11 +104,13 @@ The following are some of the flags we've seen used.
 | `incognito` | Forces Incognito mode even if user data directory is specified by using the `--user-data-dir` flag. |
 | `isolate-origins` | Require dedicated processes for a set of origins, specified as a comma-separated list. For example: --isolate-origins=https://www.foo.com,https://www.bar.com. |
 | `js-flags` | Specifies the flags passed to JS engine. |
+| `--js-flags=--scavenger_max_new_space_capacity_mb=8` | This flag specifies the maximum limit (in MB) for scavenger (minor garbage collector) in V8.  <br/>A higher scavenger memory limit reduces the frequency of minor garbage collectors, but increases memory usage.  <br/>A lower limit reduces memory footprint, but increases garbage collectors frequency, which may impact performance. |
 | `lang` | The language file that WebView2 want to try to open. Of the form language[-country] where language is the 2-letter code from ISO-639. |
 | `log-net-log` | Enables saving net log events to a file.  If a value is given, that value is used as the directory path and file name.  If no value is given, the file is named `netlog.json`, and is placed in the user data directory. |
 | `msAbydos` | Enables the "handwriting-to-text" experience. |
 | `msAbydosGestureSupport` | Allows users to use gestures (such as the scratchout gesture) to delete text by using a pen.  Valid only if the `msAbydos` flag is enabled. |
 | `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled. |
+| `msAllowAmbientAuthInPrivateWebView2` | This flag is to be used along with the `msSingleSignOnForInPrivateWebView2` browser browser flag, to enable SSO with default credential flow or ambient authentication flow. |
 | `msEdgeDesignerUI` | Use this flag to disable the Designer Shoreline App. This feature is not supported in WebView2. |
 | `msEdgeHubAppDesigner ` | Use this flag to disable the Designer Shoreline App. This feature is not supported in WebView2. |
 | `msEdgeDesignerDriverFix ` |  Use this flag to disable getting content and automatically showing the Designer feature. This feature is not supported in WebView2. |
@@ -121,6 +123,7 @@ The following are some of the flags we've seen used.
 | `msFloatyShouldHonorIndiaHoldout` | If `true`, honors the India holdout group.  Use this flag, set to `false`, to disable the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
+| `msSingleSignOnForInPrivateWebView2` | This flag enables the single sign-on (SSO) flow for incognito/private session<!-- todo: InPrivate? --> of WebView2.  Browser-based SSO should seamlessly work in incognito<!-- todo: InPrivate? --> mode after enabling this flag. |
 | `msSingleSignOnOSForPrimaryAccountIsShared` | If enabled, allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
 | `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI is shown when the user clicks a misspelled word. |
