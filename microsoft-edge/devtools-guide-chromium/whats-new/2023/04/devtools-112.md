@@ -39,7 +39,7 @@ In Microsoft Edge 112, the **Performance** tool now loads sourcemaps and applies
 ![The unminified call stack from a profile recorded in the Performance tool](./devtools-112-images/unminification-in-oopifs-after.png)
 
 <!-- maint:
-1. Connect Symbol Server via a PAT to the Office org. https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/consume-source-maps-from-azure
+1. Connect Symbol Server via a PAT to the Office org. [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
 2. Repeat the above steps to show the original file and function names in the flame chart.
 -->
 
@@ -102,7 +102,7 @@ With code folding turned on, you can now expand and collapse objects and arrays 
 Please send us your [feedback](../../../contact.md)!
 
 See also:
-* [View formatted JSON responses or files](../../../json-viewer/json-viewer.md)
+* [View a JSON file or server response with formatting](../../../../web-platform/json-viewer.md)
 
 
 <!-- ====================================================================== -->
