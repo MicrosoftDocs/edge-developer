@@ -123,7 +123,7 @@ The following are some of the flags we've seen used.
 | `msFloatyShouldHonorIndiaHoldout` | If `true`, honors the India holdout group.  Use this flag, set to `false`, to disable the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
-| `msSingleSignOnForInPrivateWebView2` | This flag enables the single sign-on (SSO) flow for an InPrivate (Incognito) session of WebView2.  Browser-based SSO should<!-- todo: style guide: avoid "should" https://learn.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/s/should-vs-must --> seamlessly work in InPrivate (Incognito) mode after enabling this flag. |
+| `msSingleSignOnForInPrivateWebView2` | This flag enables the single sign-on (SSO) flow for InPrivate (Incognito) sessions of WebView2.  Enables browser-based SSO in InPrivate (Incognito) mode. |
 | `msSingleSignOnOSForPrimaryAccountIsShared` | If enabled, allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
 | `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI is shown when the user clicks a misspelled word. |
