@@ -103,14 +103,13 @@ The following are some of the flags we've seen used.
 | `ignore-gpu-blocklist` | Whether to ignore the GPU blocklist. |
 | `incognito` | Forces InPrivate (Incognito) mode even if the user data directory is specified by using the `--user-data-dir` flag. |
 | `isolate-origins` | Require dedicated processes for a set of origins, specified as a comma-separated list. For example: --isolate-origins=https://www.foo.com,https://www.bar.com. |
-| `js-flags` | Specifies the flags passed to JS engine. |
-| `--js-flags=--scavenger_max_new_space_capacity_mb=8` | Specifies the maximum limit (in MB) for scavenger (minor) garbage collectors in the V8 JavaScript engine.  <br/>A lower scavenger memory limit reduces memory usage, and increases the frequency of running minor garbage collectors.  <br/>A higher scavenger memory limit increases memory usage, and reduces the frequency of running minor garbage collectors. |
+| `js-flags` | Specifies the flags passed to the JS engine.  Available flags: `scavenger_max_new_space_capacity_mb`: Specifies the maximum limit (in MB) for scavenger (minor) garbage collectors in the V8 JavaScript engine.  <br/>A lower scavenger memory limit reduces memory usage, and increases the frequency of running minor garbage collectors.  <br/>A higher scavenger memory limit increases memory usage, and reduces the frequency of running minor garbage collectors. |
 | `lang` | The language file that WebView2 want to try to open. Of the form language[-country] where language is the 2-letter code from ISO-639. |
 | `log-net-log` | Enables saving net log events to a file.  If a value is given, that value is used as the directory path and file name.  If no value is given, the file is named `netlog.json`, and is placed in the user data directory. |
 | `msAbydos` | Enables the "handwriting-to-text" experience. |
 | `msAbydosGestureSupport` | Allows users to use gestures (such as the scratchout gesture) to delete text by using a pen.  Valid only if the `msAbydos` flag is enabled. |
 | `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled. |
-| `msAllowAmbientAuthInPrivateWebView2` | This flag is to be used along with the `msSingleSignOnForInPrivateWebView2` browser browser flag, to enable SSO with default credential flow or ambient authentication flow. |
+| `msAllowAmbientAuthInPrivateWebView2` | This flag is to be used along with the `msSingleSignOnForInPrivateWebView2` browser flag, to enable single sign-on (SSO) with default credential flow or ambient authentication flow. |
 | `msEdgeDesignerUI` | Use this flag to disable the Designer Shoreline App. This feature is not supported in WebView2. |
 | `msEdgeHubAppDesigner ` | Use this flag to disable the Designer Shoreline App. This feature is not supported in WebView2. |
 | `msEdgeDesignerDriverFix ` |  Use this flag to disable getting content and automatically showing the Designer feature. This feature is not supported in WebView2. |
