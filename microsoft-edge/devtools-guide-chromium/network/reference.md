@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/18/2023
+ms.date: 03/13/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,6 +22,8 @@ ms.date: 07/18/2023
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Network features reference
+<!-- todo: update per: -->
+<!-- https://developer.chrome.com/docs/devtools/network/reference/ -->
 
 This article is a feature-driven inventory of the **Network** tool.  Use the **Network** tool to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
 
@@ -304,6 +306,9 @@ See also:
 
 <!-- ====================================================================== -->
 ## Filter requests
+<!-- todo: update per: -->
+<!-- https://developer.chrome.com/blog/new-in-devtools-130#network -->
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#filter -->
 
 You can filter requests by properties, by type, or by time, and you can hide data URLs.
 
