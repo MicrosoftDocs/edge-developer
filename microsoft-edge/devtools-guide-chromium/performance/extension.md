@@ -22,19 +22,21 @@ ms.date: 03/13/2025
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Customize your performance data with extensibility API
+<!-- https://developer.chrome.com/docs/devtools/performance/extension -->
 
 **Detailed contents:**
 * [Overview](#overview)
-* [Key features](#key_features)
-* [Inject your data with the User Timings API](#inject_your_data_with_the_user_timings_api)
-   * [devtools object](#devtools_object)
-* [Inject your data with console.timeStamp](#inject_your_data_with_consoletimestamp)
-* [View your data in the timeline](#view-custom-data)
-* [Code examples](#code_examples)
-   * [User Timings API Examples:](#user_timings_api_examples)
-   * [Custom tracks and entries](#tracks)
-   * [Markers](#markers)
-   * [console.timeStamp API Examples:](#consoletimestamp_api_examples)
+* [Key features](#key-features)
+* [Inject your data with the User Timings API](#inject-your-data-with-the-user-timings-api)
+   * [devtools object](#devtools-object)
+* [Inject your data with console.timeStamp](#inject-your-data-with-console.timestamp)
+* [View your data in the timeline](#view-your-data-in-the-timeline)
+* [Code examples](#code-examples)
+   * [User Timings API Examples](#user-timings-api-examples)
+      * [Custom tracks and entries](#custom-tracks-and-entries)
+      * [Markers](#markers)
+   * [console.timeStamp API Examples](#console.timestamp-api-examples)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
