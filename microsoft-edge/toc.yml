@@ -491,7 +491,7 @@
             - name: Performance tool  # = upstream TOC bucket "Performance"
               items:
                 - name: "Performance tool: Analyze your website's performance"  # = Performance > Overview 
-                  href: ./devtools-guide-chromium/performance/performance-tool-overview.md
+                  href: ./devtools-guide-chromium/performance/overview.md
                   displayName: Performance tool
 
                 - name: Analyze runtime performance (tutorial)  # = Performance > Analyze runtime performance
