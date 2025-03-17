@@ -415,8 +415,8 @@ conceptualContent:
               url: ./web-platform/os-regional-settings.md
               itemType: how-to-guide
 
-            - text: View formatted JSON responses or files
-              url: ./devtools-guide-chromium/json-viewer/json-viewer.md
+            - text: View a JSON file or server response with formatting
+              url: ./web-platform/json-viewer.md
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------

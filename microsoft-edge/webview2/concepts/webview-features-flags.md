@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 05/29/2024
+ms.date: 03/10/2025
 ---
 # WebView2 browser flags
 
@@ -101,14 +101,15 @@ The following are some of the flags we've seen used.
 | `HardwareMediaKeyHandling` | Enables handling of hardware media keys for controlling media. |
 | `ignore-certificate-errors` | Ignores certificate-related errors. |
 | `ignore-gpu-blocklist` | Whether to ignore the GPU blocklist. |
-| `incognito` | Forces Incognito mode even if user data directory is specified by using the `--user-data-dir` flag. |
+| `incognito` | Forces InPrivate (Incognito) mode even if the user data directory is specified by using the `--user-data-dir` flag. |
 | `isolate-origins` | Require dedicated processes for a set of origins, specified as a comma-separated list. For example: --isolate-origins=https://www.foo.com,https://www.bar.com. |
-| `js-flags` | Specifies the flags passed to JS engine. |
+| `js-flags` | Specifies the flags passed to the JS engine.  Available flags: `scavenger_max_new_space_capacity_mb`: Specifies the maximum limit (in MB) for scavenger (minor) garbage collectors in the V8 JavaScript engine.  <br/>A lower scavenger memory limit reduces memory usage, and increases the frequency of running minor garbage collectors.  <br/>A higher scavenger memory limit increases memory usage, and reduces the frequency of running minor garbage collectors. |
 | `lang` | The language file that WebView2 want to try to open. Of the form language[-country] where language is the 2-letter code from ISO-639. |
 | `log-net-log` | Enables saving net log events to a file.  If a value is given, that value is used as the directory path and file name.  If no value is given, the file is named `netlog.json`, and is placed in the user data directory. |
 | `msAbydos` | Enables the "handwriting-to-text" experience. |
 | `msAbydosGestureSupport` | Allows users to use gestures (such as the scratchout gesture) to delete text by using a pen.  Valid only if the `msAbydos` flag is enabled. |
 | `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled. |
+| `msAllowAmbientAuthInPrivateWebView2` | This flag is to be used along with the `msSingleSignOnForInPrivateWebView2` browser flag, to enable single sign-on (SSO) with default credential flow or ambient authentication flow. |
 | `msEdgeDesignerUI` | Use this flag to disable the Designer Shoreline App. This feature is not supported in WebView2. |
 | `msEdgeHubAppDesigner ` | Use this flag to disable the Designer Shoreline App. This feature is not supported in WebView2. |
 | `msEdgeDesignerDriverFix ` |  Use this flag to disable getting content and automatically showing the Designer feature. This feature is not supported in WebView2. |
@@ -121,6 +122,7 @@ The following are some of the flags we've seen used.
 | `msFloatyShouldHonorIndiaHoldout` | If `true`, honors the India holdout group.  Use this flag, set to `false`, to disable the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
+| `msSingleSignOnForInPrivateWebView2` | This flag enables the single sign-on (SSO) flow for InPrivate (Incognito) sessions of WebView2.  Enables browser-based SSO in InPrivate (Incognito) mode. |
 | `msSingleSignOnOSForPrimaryAccountIsShared` | If enabled, allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
 | `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI is shown when the user clicks a misspelled word. |

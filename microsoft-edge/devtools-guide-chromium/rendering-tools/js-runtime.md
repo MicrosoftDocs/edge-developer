@@ -212,7 +212,7 @@ If you are investigating objects that were only GC'd during specific major or mi
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/performance/) and is authored by Kayce Basques and Meggin Kearney.
+> The original page is found [here](https://developer.chrome.com/docs/devtools/performance)<!-- orig page not found, got redir'd as shown --> and is authored by Kayce Basques and Meggin Kearney.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
