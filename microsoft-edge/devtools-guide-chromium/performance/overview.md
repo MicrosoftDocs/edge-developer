@@ -44,7 +44,7 @@ Use the **Performance** tool to do the following:
 **Contents:**
 * [Open the Performance tool](#open-the-performance-tool)
    * [Using the Command Menu](#using-the-command-menu)
-* [Observe local Core Web Vitals](#observe-local-core-web-vitals)
+* [Monitor Core Web Vitals metrics](#monitor-core-web-vitals-metrics)
    * [Interaction to Next Paint (INP)](#interaction-to-next-paint-inp)
    * [Interactions tab](#interactions-tab)
    * [Layout shifts tab](#layout-shifts-tab)
@@ -105,7 +105,7 @@ The home page of the **Performance** tool displays Core Web Vitals local metrics
 
 
 <!-- ---------------------------------- -->
-#### Terminology for Web Vitals
+#### Terminology
 
 | Term | Description |
 |---|---|
@@ -267,7 +267,7 @@ The **Environment settings** section gives you recommendations about simulating 
    In the **Performance** tool home page > **Next steps** section **Field data** section, the **Set up** button is replaced by the **Configure** button, which re-opens the **Configure field data fetching** dialog.
 
 <!-- from start of upstream What's new section, w/ reformatted links: -->
-Live metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.  For information about live metrics, see [Observe local Core Web Vitals](#observe-local-core-web-vitals), above.
+Live metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.  See [Monitor Core Web Vitals metrics](#monitor-core-web-vitals-metrics), above.
 
 <!-- from upstream What's new section, con't, w/ reformatted links: -->
 To get recommendations, first set up field data fetching from Chrome UX Report (CrUX).  To set up field data fetching, see [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users), below.  For information about Chrome UX Report (CrUX), see [Overview of CrUX](https://developer.chrome.com/docs/crux).
