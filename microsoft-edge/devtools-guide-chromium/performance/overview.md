@@ -35,11 +35,10 @@ Use the **Performance** tool to analyze your website's performance.  The **Perfo
 
 Use the **Performance** tool to do the following:
 
+* View local Core Web Vitals metrics: Largest Contentful Paint (LCP), Cumulative Layout Shift (CLS), and Interaction to Next Paint (INP).
 * Record a performance profile.
 * Change capture settings.
 * Analyze a performance report.
-
-For a comprehensive guide on improving your website's performance, see [Analyze runtime performance (tutorial)](./index.md).
 
 
 **Contents:**
@@ -59,6 +58,8 @@ For a comprehensive guide on improving your website's performance, see [Analyze 
    * [Change capture settings](#change-capture-settings)
    * [Analyze a performance report](#analyze-a-performance-report)
 * [Improve performance with these tools](#improve-performance-with-these-tools)
+
+For a comprehensive guide on improving your website's performance, see [Analyze runtime performance (tutorial)](./index.md).
 
 
 <!-- ====================================================================== -->
@@ -97,8 +98,16 @@ Or, open the **Performance** tool by using the **Command Menu**, as follows:
 
 
 <!-- ====================================================================== -->
-## View Core Web Vitals local metrics in the Performance tool home page 
-<!-- https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
+## View local Core Web Vitals metrics in Performance home page
+<!-- ## Observe Core Web Vitals live  https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
+
+Core Web Vitals metrics include:
+
+| Metric | Description |
+|---|---|
+| _Largest Contentful Paint (LCP)_ | The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. |
+| _Cumulative Layout Shift (CLS)_ | The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. |
+| _Interaction to Next Paint (INP)_ | The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. |
 
 When you open the **Performance** tool, it immediately captures and displays the local [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) metrics, and displays their scores (**good**, **needs improvement**, or **bad**).
 
@@ -120,7 +129,7 @@ To interact with a webpage to display the **Interaction to Next Paint (INP)** ca
 
 1. In the demo webpage, click the **Add elements** button.
 
-   In the **Performance** tool, below the **Local metrics** cards, the **Interactions** tab and **Layout shifts** tabs are populated.
+   Below the **Local metrics** cards, the **Interactions** tab and **Layout shifts** tabs are populated.
 
 
 <!-- ------------------------------ -->
@@ -315,7 +324,7 @@ To configure your environment:
 1. In the **Performance** tool, in each metric card, expand the **Consider your local test conditions** section, if any, and read the recommendations.
 
    <!-- ![The 'Consider your local test conditions' sections expanded in each metric card](./overview-images/env-recs.png) -->
-
+   <!-- upstream, matching png: -->
    <!-- Looks like in this example, to better match the experience of your users, you might want to use a common desktop screen size and throttle down the CPU and network. -->
 
 1. Apply the recommendations.  For example, set your viewport to one of the common screen sizes (for example, 720p or 1080p).  To emulate specific devices and screen sizes, you can use device emulation in the **Elements** tool; see [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
