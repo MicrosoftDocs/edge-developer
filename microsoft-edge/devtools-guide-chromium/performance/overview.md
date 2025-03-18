@@ -101,7 +101,16 @@ Or, open the **Performance** tool by using the **Command Menu**, as follows:
 ## Monitor Core Web Vitals metrics
 <!-- ## Observe Core Web Vitals live  https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
 
-The home page of the **Performance** tool displays Core Web Vitals local metrics and field metrics.
+The home page of the **Performance** tool shows performance metrics about the rendered webpage, such as:
+* Largest Contentful Paint (LCP), which shows how quickly the main content of the page loaded.
+* Cumulative Layout Shift (CLS), which shows a measure of the most recent unexpected layout shift.
+* Interaction to Next Paint (INP), which assesses the responsiveness of the most recent user interaction on the page.
+
+In contrast, a recorded performance trace shows information about the performance of the page over the period of time where the recording occurred, such as:
+* The user interactions that occurred during the recording.
+* The JavaScript code that ran.
+* The styling and layout operations that occurred.
+* Other performance metrics over time, such as network requests and layout shifts.
 
 
 <!-- ---------------------------------- -->
