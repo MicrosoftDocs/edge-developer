@@ -98,16 +98,24 @@ Or, open the **Performance** tool by using the **Command Menu**, as follows:
 
 
 <!-- ====================================================================== -->
-## View local Core Web Vitals metrics in Performance home page
+## Monitor Core Web Vitals metrics
 <!-- ## Observe Core Web Vitals live  https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
 
-Core Web Vitals metrics include:
+The home page of the **Performance** tool displays Core Web Vitals local metrics and field metrics.
 
-| Metric | Description |
+
+<!-- ---------------------------------- -->
+#### Terminology for Web Vitals
+
+| Term | Description |
 |---|---|
-| _Largest Contentful Paint (LCP)_ | The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. |
-| _Cumulative Layout Shift (CLS)_ | The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. |
-| _Interaction to Next Paint (INP)_ | The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. |
+| Web Vitals | A large set of metrics giving unified guidance to delivering a great user experience on the web. |
+| Core Web Vitals | The subset of Web Vitals that apply to all web pages, and should be measured by all site owners.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome. |
+| Largest Contentful Paint (LCP) | Measures _loading_ performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.  The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. |
+| Cumulative Layout Shift (CLS) | Measures _visual stability_. To provide a good user experience, pages should maintain a CLS of 0.1. or less.  The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. |
+| Interaction to Next Paint (INP) | Measures _interactivity_. To provide a good user experience, pages should have a INP of 200 milliseconds or less.  The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. |
+| local metrics | The LCP, CLS, and INP metrics.  They are captured locally on the inspected webpage, and are updated as you interact with the page. |
+| field metrics | Data from the Chrome UX Report (CrUX), showing how most of your users experience your website.  See [Overview of CrUX](https://developer.chrome.com/docs/crux). |
 
 When you open the **Performance** tool, it immediately captures and displays the local [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) metrics, and displays their scores (**good**, **needs improvement**, or **bad**).
 
@@ -162,7 +170,53 @@ To clear the **Layout shifts** tab, click the **Clear the current log** (![The C
 
 
 <!-- ------------------------------ -->
-#### View local and field metrics
+#### Compare your experience to the experience of your users
+<!-- https://developer.chrome.com/docs/devtools/performance/overview#compare -->
+
+You can fetch field data from the [Chrome UX Report](https://developer.chrome.com/docs/crux) and compare the experience of your site's users to your local metrics.
+
+To add field data:
+
+1. In the **Performance** tool home page > **Next steps** section > **Field data** section, click the **Set up** button:
+
+   ![Performance tool home page: Set up button](./overview-images/field-data-set-up-button.png)<!-- 2nd use of this png -->
+
+   If the **Performance** tool home page is not shown, because the timeline is shown instead, optionally click the **Save profile** (![The Save profile icon](./overview-images/save-profile-icon.png)) button, and then click the **Clear** (![The Clear icon](./overview-images/clear-icon.png)) button.
+
+   The **Configure field data fetching** dialog opens:
+
+   ![The "Configure field data fetching" dialog](./overview-images/configure-field-data-fetching-dialog.png)<!-- 2nd use of this png -->
+
+   <!-- expander section -->
+   **Advanced: Set up a mapping between development and production environments:**
+
+      Optionally, to automatically get the most relevant field data, you can set up (multiple) mappings between your development and production origins:
+
+      1. In the **Configure field data fetching** dialog, expand the **Advanced** section, and then click **+ New**.
+   
+      1. In the mapping table, enter your development and production URLs and click **+**.
+
+      ![The mapping between a development and production origins in the advanced section](./overview-images/field-data-advanced-mapping.png)
+
+      For example, a mapping of `http://localhost:8080` to `https://example.com` will bring up field data for `example.com/page1` when you navigate to `localhost:8080/page1`.
+
+      Additionally, if for some reason you can't get the field data automatically, you can select the **Always show field data for the below URL** checkbox and provide a URL.  The **Performance** tool will attempt to fetch field data for this URL first and then show you this field data no matter what page you navigate to.
+
+      To change your field data fetch settings after setup, in the **Performance** tool home page, in the **Field data** section, click the **Configure** button.  If the **Performance** tool home page is not shown, because the timeline is shown instead, optionally click the **Save profile** (![The Save profile icon](./overview-images/save-profile-icon.png)) button, and then click the **Clear** (![The Clear icon](./overview-images/clear-icon.png)) button.
+
+   <!-- end expander section -->
+
+1. Note the **Privacy disclosure**, and then click the **Ok** button.
+
+   With the field data fetch set up, the **Performance** tool now shows you a comparison between your local metric scores and those that your users experience.  You can see the collection period in the **Field data** section on the right.
+
+   ![The collection period of field data after it has fetched](./overview-images/field-data-fetched.png)<!-- todo: redo showing edge -->
+
+   To get a breakdown of a metric score, hover over the metric value to see a tooltip.
+
+
+<!-- ---------- -->
+###### View local and field metrics
 <!-- merge this section with [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users), below -->
 <!-- section not in upstream article; copied from https://developer.chrome.com/blog/new-in-devtools-130#live-metrics-recommendations -->
 See also [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users), below.
@@ -170,13 +224,15 @@ See also [Compare your experience to the experience of your users](#compare-your
 <!-- 
 so far, we haven't told users how to display field metrics
 so talking about the different between local and field metrics feels premature
+todo: at first mention of 'local' or 'field' at top of article, give glossary definition of the two terms
 -->
 
 <!-- ![Local and field metrics shown at the same time](./overview-images/local-and-field-metrics.png) -->
 <!-- todo: add screenshot showing both metrics at the same time -->
 
 <!-- added 2 paras in Edge docs: -->
-Local metrics are the LCP, CLS, and INP metrics described above.  They are captured locally on the inspected webpage and updated as you interact with the page.  Field metrics come from the Chrome UX Report (CrUX), and show how most of your users experience your website.  For information about CrUX, see [Overview of CrUX](https://developer.chrome.com/docs/crux).  The difference between the local and field metrics shows that most of your users might not experience your website under the same conditions as you do.
+* _Local metrics_ are the LCP, CLS, and INP metrics described above.  They are captured locally on the inspected webpage and updated as you interact with the page.
+* _Field metrics_ come from the Chrome UX Report (CrUX), and show how most of your users experience your website.  For information about CrUX, see [Overview of CrUX](https://developer.chrome.com/docs/crux).  The difference between the local and field metrics shows that most of your users might not experience your website under the same conditions as you do.
 
 The **Environment settings** section gives you recommendations about simulating a slower CPU and network connection to better match your users' experience.
 
@@ -231,52 +287,6 @@ The above screenshot of the **Performance** tool's **Local metrics** home page c
 
 <!-- from end of upstream What's new section: -->
 To approximate the experience of your users, follow the recommendations in [Configure your environment to better match that of your users](#configure-your-environment-to-better-match-that-of-your-users), above.
-
-
-<!-- ---------- -->
-###### Compare your experience to the experience of your users
-<!-- https://developer.chrome.com/docs/devtools/performance/overview#compare -->
-
-You can also fetch field data from the [Chrome UX Report](https://developer.chrome.com/docs/crux) and compare the experience of your site's users to your local metrics.
-
-To add field data:
-
-1. In the **Performance** tool home page > **Next steps** section > **Field data** section, click the **Set up** button:
-
-   ![Performance tool home page: Set up button](./overview-images/field-data-set-up-button.png)<!-- 2nd use of this png -->
-
-   If the **Performance** tool home page is not shown, because the timeline is shown instead, optionally click the **Save profile** (![The Save profile icon](./overview-images/save-profile-icon.png)) button, and then click the **Clear** (![The Clear icon](./overview-images/clear-icon.png)) button.
-
-   The **Configure field data fetching** dialog opens:
-
-   ![The "Configure field data fetching" dialog](./overview-images/configure-field-data-fetching-dialog.png)<!-- 2nd use of this png -->
-
-   <!-- expander section -->
-   **Advanced: Set up a mapping between development and production environments:**
-
-      Optionally, to automatically get the most relevant field data, you can set up (multiple) mappings between your development and production origins:
-
-      1. In the **Configure field data fetching** dialog, expand the **Advanced** section, and then click **+ New**.
-   
-      1. In the mapping table, enter your development and production URLs and click **+**.
-
-      ![The mapping between a development and production origins in the advanced section](./overview-images/field-data-advanced-mapping.png)
-
-      For example, a mapping of `http://localhost:8080` to `https://example.com` will bring up field data for `example.com/page1` when you navigate to `localhost:8080/page1`.
-
-      Additionally, if for some reason you can't get the field data automatically, you can select the **Always show field data for the below URL** checkbox and provide a URL.  The **Performance** tool will attempt to fetch field data for this URL first and then show you this field data no matter what page you navigate to.
-
-      To change your field data fetch settings after setup, in the **Performance** tool home page, in the **Field data** section, click the **Configure** button.  If the **Performance** tool home page is not shown, because the timeline is shown instead, optionally click the **Save profile** (![The Save profile icon](./overview-images/save-profile-icon.png)) button, and then click the **Clear** (![The Clear icon](./overview-images/clear-icon.png)) button.
-
-   <!-- end expander section -->
-
-1. Note the **Privacy disclosure**, and then click the **Ok** button.
-
-   With the field data fetch set up, the **Performance** tool now shows you a comparison between your local metric scores and those that your users experience.  You can see the collection period in the **Field data** section on the right.
-
-   ![The collection period of field data after it has fetched](./overview-images/field-data-fetched.png)<!-- todo: redo showing edge -->
-
-   To get a breakdown of a metric score, hover over the metric value to see a tooltip.
 
 
 <!-- ------------------------------ -->
