@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/21/2025
+ms.date: 03/04/2025
 ---
 # Debug WebView2 apps with Visual Studio Code
 
