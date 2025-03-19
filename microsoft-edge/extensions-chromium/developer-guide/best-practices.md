@@ -10,7 +10,7 @@ ms.date: 11/20/2023
 ---
 # Best practices for extensions
 
-Follow these Best Practices to implement your extension and list it on the Microsoft Edge Add-ons Store.
+Follow these Best Practices to implement your extension and list it on the Microsoft Edge Add-ons.
 
 
 <!-- ====================================================================== -->
