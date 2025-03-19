@@ -58,6 +58,7 @@ This API provides a high-performance method for instrumenting applications and s
 
 <!-- ====================================================================== -->
 ## Key features
+
 Both APIs offer:
 
 Custom Tracks: Add entries to custom tracks and track groups.
@@ -81,6 +82,7 @@ Use when performance overhead is a primary concern, and you need to quickly inst
 
 <!-- ====================================================================== -->
 ## Inject your data with the User Timings API
+
 To inject custom data, include a devtools object within the detail property of performance.mark https://developer.mozilla.org/docs/Web/API/Performance/mark#detail and performance.measure https://developer.mozilla.org/docs/Web/API/Performance/measure#detail methods. The structure of this devtools object determines how your data is displayed in the Performance panel.
 
 Use performance.mark https://developer.mozilla.org/docs/Web/API/Performance/mark to record an instant event or timestamp in the timeline. You can mark the start or end of a specific operation or any point of interest that doesn't have a duration. When you include a devtools object within the detail property, the Performance panel shows a custom marker in the Timings track.
@@ -90,6 +92,7 @@ Use performance.measure https://developer.mozilla.org/docs/Web/API/Performance/m
 
 <!-- ------------------------------ -->
 #### devtools object
+
 These types define the structure of the devtools object for different extension features:
 
 ```
