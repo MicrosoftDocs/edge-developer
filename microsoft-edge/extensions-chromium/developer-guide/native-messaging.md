@@ -215,7 +215,7 @@ To store the native messaging host manifest file:
    /Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_app.json
    ```
 
-*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the [user data directory](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md).  For example, the native messaging host manifest file must be stored in the following location:
+*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user data directory.  For example, the native messaging host manifest file must be stored in the following location:
 
    ```bash
    ~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/com.my_company.my_app.json
@@ -229,6 +229,10 @@ To store the native messaging host manifest file:
 
     When using the Stable channel, ` {Channel_Name}` isn't required.
 
+See:
+* [User Data Directory](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md) in Chromium docs.
+
+
 ##### [Linux](#tab/linux/)
 
 To store the native messaging host manifest file:
@@ -239,11 +243,14 @@ To store the native messaging host manifest file:
    /etc/opt/edge/native-messaging-hosts
    ```
 
-*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the [user data directory](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md).  The native messaging host manifest file must be stored in the following location:
+*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user data directory.  The native messaging host manifest file must be stored in the following location:
 
    ```bash
    ~/.config/microsoft-edge/NativeMessagingHosts
    ```
+
+See:
+* [User Data Directory](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md) in Chromium docs.
 
 ---
 
