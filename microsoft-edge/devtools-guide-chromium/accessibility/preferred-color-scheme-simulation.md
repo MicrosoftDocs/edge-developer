@@ -54,13 +54,13 @@ To specify the CSS to use for both light and dark schemes, use the [prefers-colo
 
 1. Modify your CSS and view the rendered result the same way as for any other webpage.  See [Get started viewing and changing CSS](../css/index.md).
 
-1. To restore the setting, in the Command Menu, type **emulate** or **scheme** and then select **Do not emulate CSS prefers-color-scheme**. Your own operating system's setting for light or dark mode is applied.
+1. To restore the setting, in the **Command Menu**, type **emulate** or **scheme** and then select **Do not emulate CSS prefers-color-scheme**. Your own operating system's setting for light or dark mode is applied.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Analyze rendering performance with the Rendering tool](../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.
+* [Analyze rendering performance with the Rendering tool](../performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.
 
 The **Rendering** tool is also used for the following tasks:
 

@@ -64,7 +64,7 @@ To view CSS selector costs:
 1. Click the **CSS Selector costs** button to expand its section.
 
 See also:
-* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->
