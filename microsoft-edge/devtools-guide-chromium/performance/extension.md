@@ -29,13 +29,13 @@ ms.date: 03/13/2025
 * [Key features](#key-features)
 * [Inject your data with the User Timings API](#inject-your-data-with-the-user-timings-api)
    * [devtools object](#devtools-object)
-* [Inject your data with console.timeStamp](#inject-your-data-with-console.timestamp)
+* [Inject your data with console.timeStamp](#inject-your-data-with-consoletimestamp)
 * [View your data in the timeline](#view-your-data-in-the-timeline)
 * [Code examples](#code-examples)
    * [User Timings API Examples](#user-timings-api-examples)
       * [Custom tracks and entries](#custom-tracks-and-entries)
       * [Markers](#markers)
-   * [console.timeStamp API Examples](#console.timestamp-api-examples)
+   * [console.timeStamp API Examples](#consoletimestamp-api-examples)
 * [See also](#see-also)
 
 
