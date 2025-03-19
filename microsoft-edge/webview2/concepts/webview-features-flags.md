@@ -58,7 +58,8 @@ See also Globals:
 
 The following are some of the flags we've seen used.
 
-<!-- todo: consistent wording: omit "if enabled" (14x) & "If `true`" (3x); establish how to use all flags -->
+If the flag is enabled, such as by setting it to `true`, the following behavior results.
+
 | Flag | Description |
 |---|---|
 | `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
@@ -67,10 +68,10 @@ The following are some of the flags we've seen used.
 | `allow-run-as-system` |  By default, the Edge WebView browser exits if launched as System (launching as System is not recommended).  This flag bypasses that check, so that even if the Edge WebView browser is launched as System, the Edge WebView browser doesn't exit. |
 | `allow-running-insecure-content` | Enables insecure content in Cast Web Runtime.  This flag unblocks MSPs that serve content from HTTP sources. |
 | `auto-open-devtools-for-tabs` | Makes Edge WebView auto-open the DevTools window for each tab.  For use by developers and by automation. |
-| `AutofillReplaceCachedWebElementsByRendererIds` | If enabled, replaces cached web elements in AutofillAgent and FormTracker by their renderer IDs. |
+| `AutofillReplaceCachedWebElementsByRendererIds` | Replaces cached web elements in AutofillAgent and FormTracker by their renderer IDs. |
 | `autoplay-policy` | Command-line flag name to set the autoplay policy. |
 | `BlockInsecurePrivateNetworkRequests` | When this feature is enabled, private network requests that are initiated from non-secure contexts in the `public` address space are blocked. |
-| `block-new-web-contents` | If `true`, all pop-ups and calls to `window.open` fail. |
+| `block-new-web-contents` | Makes all pop-ups and calls to `window.open` fail. |
 | `BreakoutBoxPreferCaptureTimestampInVideoFrames` | Reverts the behavior of the `Timestamp` property of the `CoreWebView2Texture` class to match legacy behavior of WebView2 Runtime version 124 and earlier. |
 | `disable-background-timer-throttling` | Disables task throttling of timer tasks from background pages. |
 | `disable-domain-action-user-agent-override` | Disables the per-domain User Agent override from the Domain Actions feature. |
@@ -121,25 +122,25 @@ The following are some of the flags we've seen used.
 | `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
 | `msEnhancedTrackingPreventionEnabled` | Enables native privacy protection features, such as blocking cookies and web requests that reside in domains that are known to be tracking domains. |
 | `msFloatyMode` | If `false`, disables the Floaty feature.  Use this flag to disable the Floaty feature, because WebView doesn't support browser retention experiments. |
-| `msFloatyShouldHonorIndiaHoldout` | If `true`, honors the India holdout group.  Use this flag, set to `false`, to disable the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
+| `msFloatyShouldHonorIndiaHoldout` | Honors the India holdout group.  If not set, the Floaty feature is disabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
 | `msSingleSignOnForInPrivateWebView2` | This flag enables the single sign-on (SSO) flow for InPrivate (Incognito) sessions of WebView2.  Enables browser-based SSO in InPrivate (Incognito) mode. |
-| `msSingleSignOnOSForPrimaryAccountIsShared` | If enabled, allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
-| `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
-| `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI is shown when the user clicks a misspelled word. |
+| `msSingleSignOnOSForPrimaryAccountIsShared` | Allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
+| `msSmartScreenProtection` | Makes SmartScreen protection available. |
+| `msUseSpellCheckCorrectionsCard` | Causes a corrections card UI to be shown when the user clicks a misspelled word. |
 | `msWebView2BrowserHitTransparent` | Allows the host application to handle input events before they are passed to the WebView2 control. |
-| `msWebView2CancelInitialNavigation` | If enabled, cancels the initial navigation in WebView2 to improve startup performance. |
-| `msWebView2CodeCache` | If enabled, JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses; see [Custom management of network requests](..\how-to\webresourcerequested.md). |
-| `msWebView2EnableDownloadContentInWebResourceResponseReceived` | If enabled, allow responses of navigations that become downloads to be available in `WebResourceResponseReceived`. |
-| `msWebView2TextureStream` | If enabled, allows to stream captured or composed video frames to the WebView2 where JavaScript can render or otherwise interact with the frames via W3C standard DOM APIs including the Video element, and MediaStream. |
-| `msWebView2EnableDraggableRegions` | If `true`, enables webpages within WebView2 make use of the `app-region: drag\|nodrag` CSS style, which causes elements with that style to behave like a titlebar.  Without this flag, the `app-region: drag\|nodrag` CSS style has no effect. |
-| `msWebView2NativeEventDispatch` | If enabled, uses a native mojo connection to dispatch internal events, such as web messages to a renderer process. |
-| `msWebView2SimulateMemoryPressureWhenInactive` | If enabled, simulates memory pressure for an inactive WebView. |
-| `msWebView2TreatAppSuspendAsDeviceSuspend` | If enabled, when all WebViews are suspended, WebView2 treats the app as if the device is suspended, and pauses all delayed tasks and timers. |
+| `msWebView2CancelInitialNavigation` | Cancels the initial navigation in WebView2 to improve startup performance. |
+| `msWebView2CodeCache` | Makes JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses; see [Custom management of network requests](..\how-to\webresourcerequested.md). |
+| `msWebView2EnableDownloadContentInWebResourceResponseReceived` | Allows responses of navigations that become downloads to be available in `WebResourceResponseReceived`. |
+| `msWebView2TextureStream` | Allows streaming captured or composed video frames to the WebView2 control, where JavaScript can render or otherwise interact with the frames via W3C standard DOM APIs including the Video element, and MediaStream. |
+| `msWebView2EnableDraggableRegions` | Enables webpages within WebView2 make use of the `app-region: drag\|nodrag` CSS style, which causes elements with that style to behave like a titlebar.  Without this flag, the `app-region: drag\|nodrag` CSS style has no effect. |
+| `msWebView2NativeEventDispatch` | Uses a native mojo connection to dispatch internal events, such as web messages to a renderer process. |
+| `msWebView2SimulateMemoryPressureWhenInactive` | Simulates memory pressure for an inactive WebView. |
+| `msWebView2TreatAppSuspendAsDeviceSuspend` | When all WebViews are suspended, makes WebView2 treat the app as if the device is suspended, and pauses all delayed tasks and timers. |
 | `no-proxy-server` | Overrides any other proxy server flags that are passed. |
 | `net-log-capture-mode` | Sets the granularity of events to capture in the network log.  Valid values: `Default`, `IncludeSensitive`, `Everything`. |
-| `no-network-profile-warning` | If enabled, the browser warns if the UDF is on a network share.  This flag is only supported on Windows; this flag is ignored on other platforms. |
+| `no-network-profile-warning` | Causes the browser to warn if the UDF is on a network share.  This flag is only supported on Windows; this flag is ignored on other platforms. |
 | `no-sandbox` | Disables the sandbox for all process types that are normally sandboxed.  Meant to be used as a browser-level flag for testing purposes only. |
 | `no-first-run` | Skips First-Run tasks, regardless of whether it's actually the First Run, and skips displaying the What's New page.  This flag is overridden by `kForceFirstRun` (for the First-Run Experience (FRE)) and by `kForceWhatsNew` (for displaying What's New).  This flag doesn't drop the First Run sentinel, and thus doesn't prevent the First-Run experience from occurring the next time the Edge WebView browser is launched without this flag.  This flag doesn't update the last What's New milestone, so doesn't prevent What's New from being displayed the next time the Edge WebView browser is launched without this flag. |
 | `PartitionedCookies` | When enabled, sites can opt-in to having their cookies partitioned by the top-level site by using the `Partitioned` attribute.  Partitioned cookies are only sent when the browser is on the same top-level site that it was on when the cookie was set. |
@@ -151,8 +152,8 @@ The following are some of the flags we've seen used.
 | `RendererAppContainer` | Enables Renderer `AppContainer`. |
 | `Restart` | Indicates that Microsoft Edge WebView2 browser process was restarted (such as after a flag change).  Use this flag to ignore the launch when recording the `Launch.Mode2` metric. |
 | `sdsm-state` | The "Super Duper Secure Mode" state.  Valid values: `off`, `basic`, `balanced`, `strict`. |
-| `SharedArrayBuffer` | If enabled, indicates that a `SharedArrayBuffer` thread is present. |
-| `SpareRendererForSitePerProcess` | If this flag is enabled, the Edge Webview spare renderer process tries to always have a warm spare renderer process running for the most recently requested `BrowserContext`.  This feature is only consulted in site-per-process mode. |
+| `SharedArrayBuffer` | Indicates that a `SharedArrayBuffer` thread is present. |
+| `SpareRendererForSitePerProcess` | Makes the Edge Webview spare renderer process try to always have a warm spare renderer process running for the most recently requested `BrowserContext`.  This feature is only consulted in site-per-process mode. |
 | `ThirdPartyStoragePartitioning` | Enables partitioning of third-party storage, such as `IndexedDB` or `CacheStorage`, by the top-level site, to reduce fingerprinting. |
 | `unsafely-treat-insecure-origin-as-secure` | Treats given (insecure) origins as secure origins.  Multiple origins can be specified, as a comma-separated list.  For the definition of secure contexts, see [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), including the section [Is `origin` potentially trustworthy?](https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy).  Example: `--unsafely-treat-insecure-origin-as-secure=http://a.test,http://b.test` |
 | `use-fake-device-for-media-stream` | Uses a fake device for Media Stream to replace an actual camera and microphone. |
@@ -161,7 +162,7 @@ The following are some of the flags we've seen used.
 | `user-agent` | A string used to override the default user agent with a custom user agent. |
 | `user-data-migrated` | Indicates that this process is the product of a relaunch following migration of user data. |
 | `UseBackgroundNativeThreadPool` | If this is enabled, WebView2 ThreadPoolImpl will use a background ThreadGroup backed by a native thread pool implementation. |
-| `UseNativeThreadPool` | If enabled, WebView2 `ThreadPoolImpl` uses a foreground `ThreadGroup` that's backed by a native thread pool implementation. |
+| `UseNativeThreadPool` | Causes WebView2 `ThreadPoolImpl` to use a foreground `ThreadGroup` that's backed by a native thread pool implementation. |
 | `V8Maglev` | Enables the Maglev compiler.  This only sets the V8 flag when manually overridden; otherwise, it defers to whatever the V8 default is. |
 
 ---
