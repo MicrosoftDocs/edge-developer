@@ -120,7 +120,7 @@ Microsoft Edge Add-ons now support extensions with Manifest V3. For more informa
 <!-- ====================================================================== -->
 ## Request to get your extension featured
 
-You can request the Collection where your extension should be featured on the Microsoft Edge Add-ons store. You can submit your request at the [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u).
+You can request the Collection where your extension should be featured on the Microsoft Edge Add-ons. You can submit your request at the [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u).
 
 *Released April 2021*
 

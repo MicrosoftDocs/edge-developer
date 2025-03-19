@@ -26,7 +26,7 @@ Follow these steps to view your extension's analytics dashboard:
 <!-- ====================================================================== -->
 ## Analytics dashboard metrics
 
-From the analytics dashboard you can view metrics for the **Last month**, **3 months**, **6 months**, or **All time** (the period since your extension has been published to the Microsoft Edge Add-ons store).
+From the analytics dashboard you can view metrics for the **Last month**, **3 months**, **6 months**, or **All time** (the period since your extension has been published to the Microsoft Edge Add-ons).
 
 
 <!-- ------------------------------ -->
@@ -53,7 +53,7 @@ The following screenshot shows the **Weekly users** who have enabled and disable
 <!-- ------------------------------ -->
 #### Installs
 
-The **Installs** metric displays the total number of successful installs of your extensions per day from the Microsoft Edge Add-ons store.
+The **Installs** metric displays the total number of successful installs of your extensions per day from the Microsoft Edge Add-ons.
 
 The following screenshot shows daily successful installations for the last month.
 
@@ -63,7 +63,7 @@ The following screenshot shows daily successful installations for the last month
 <!-- ------------------------------ -->
 #### Impressions
 
-The **Impressions** metric captures the total number of page views and user visits to your extension product page on Microsoft Edge Add-ons store. The data points are based on weekly or daily totals depending on the selected time range.
+The **Impressions** metric captures the total number of page views and user visits to your extension product page on Microsoft Edge Add-ons. The data points are based on weekly or daily totals depending on the selected time range.
 
 The following screenshot shows **Impressions** for an extension page over a three month period.
 

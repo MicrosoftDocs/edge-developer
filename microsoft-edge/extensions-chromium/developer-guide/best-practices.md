@@ -16,7 +16,7 @@ Follow these Best Practices to implement your extension and list it on the Micro
 <!-- ====================================================================== -->
 ## Design a high-quality extension
 
-Build extensions that conform to Microsoft's standards for security, privacy, transparency, and user experience.
+Build an extension that conform to Microsoft's standards for security, privacy, transparency, and user experience.
 
 **Security**: Make sure that your extension doesn't pose any security threats to users. 
 

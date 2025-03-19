@@ -20,7 +20,7 @@ Generally, extensions are distributed through the Microsoft Edge Add-ons website
 
 1. Network administrators want to distribute an extension throughout their organization.
 
-Extensions that aren't loaded from the Edge Add-ons store are referred to as _externally installed extensions_. The following are alternate methods of distributing externally installed extensions:
+Extensions that aren't loaded from the Microsoft Edge Add-ons are referred to as _externally installed extensions_. The following are alternate methods of distributing externally installed extensions:
 
 * Use the Windows registry (Windows only).
 * Use a preferences JSON file (macOS and Linux).
