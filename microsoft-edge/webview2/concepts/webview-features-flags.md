@@ -113,16 +113,16 @@ If the flag is enabled, the following behavior results.
 | `msAbydosGestureSupport` | Allows users to use gestures (such as the scratchout gesture) to delete text by using a pen.  Valid only if the `msAbydos` flag is enabled. |
 | `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled. |
 | `msAllowAmbientAuthInPrivateWebView2` | This flag is to be used along with the `msSingleSignOnForInPrivateWebView2` browser flag, to enable single sign-on (SSO) with default credential flow or ambient authentication flow. |
-| `msEdgeDesignerUI` | Disables the Designer Shoreline App.  This feature is not supported in WebView2. |
-| `msEdgeHubAppDesigner ` | Disables the Designer Shoreline App.  This feature is not supported in WebView2. |
-| `msEdgeDesignerDriverFix ` | Disables getting content and automatically showing the Designer feature.  This feature is not supported in WebView2. |
+| `msEdgeDesignerUI` | Enables the Designer Shoreline App.  The Designer Shoreline App is not supported in WebView2. |
+| `msEdgeHubAppDesigner ` | Enables the Designer Shoreline App.  The Designer Shoreline App is not supported in WebView2. |
+| `msEdgeDesignerDriverFix ` | Enables getting content and automatically showing the Designer feature.  The Designer feature is not supported in WebView2. |
 | `msEdgeFluentOverlayScrollbar` | Force-enables Fluent Overlay scrollbars, overriding whatever value `kFluentScrollbar` may hold at the moment. |
 | `msEdgeDevToolsWdpRemoteDebugging` | Enables remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging.md), [Remotely debug Windows devices](../../devtools-guide-chromium/remote-debugging/windows.md). |
 | `msEdgeWebViewApplyWebResourceRequestedFilterForOOPIFs` | Makes the `AddWebResourceRequestedFilter` method (including overloads) also apply to out-of-process iframes. <br/>.NET: [AddWebResourceRequestedFilter](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter) <br/>WinRT: [AddWebResourceRequestedFilter](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addwebresourcerequestedfilter) <br/>Win32: [AddWebResourceRequestedFilterWithRequestSourceKinds](/microsoft-edge/webview2/reference/win32/icorewebview2_22#addwebresourcerequestedfilterwithrequestsourcekinds) |
 | `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
 | `msEnhancedTrackingPreventionEnabled` | Enables native privacy protection features, such as blocking cookies and web requests that reside in domains that are known to be tracking domains. |
-| `msFloatyMode` | Enables the Floaty feature.  WebView doesn't support browser retention experiments. |
-| `msFloatyShouldHonorIndiaHoldout` | Honors the India holdout group.  If not set, the Floaty feature is disabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
+| `msFloatyMode` | Enables the Floaty feature.  If present but set to `false`, disables the Floaty feature; for example because WebView doesn't support browser retention experiments. |
+| `msFloatyShouldHonorIndiaHoldout` | If `true`, honors the India holdout group.  Use this flag, set to `false`, to disable the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
 | `msSingleSignOnForInPrivateWebView2` | This flag enables the single sign-on (SSO) flow for InPrivate (Incognito) sessions of WebView2.  Enables browser-based SSO in InPrivate (Incognito) mode. |
