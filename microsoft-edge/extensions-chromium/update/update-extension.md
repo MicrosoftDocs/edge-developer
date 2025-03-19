@@ -1,6 +1,6 @@
 ---
 title: Update a Microsoft Edge extension
-description: Updating or removing extensions from the Microsoft Edge Add-ons website.
+description: Updating or removing extensions from the Microsoft Edge Add-ons site.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.date: 11/04/2022
 ---
 # Update a Microsoft Edge extension
 
-You can update a submitted extension or remove a published extension listing from the Microsoft Edge Add-ons website at any time.
+You can update a submitted extension or remove a published extension listing from the Microsoft Edge Add-ons site at any time.
 
 See also:
-* [Set an externally installed extension to automatically update](./auto-update.md) - for extensions that don't use Partner Center and the Microsoft Edge Add-ons website.
+* [Set an externally installed extension to automatically update](./auto-update.md) - for extensions that don't use Partner Center and the Microsoft Edge Add-ons site.
 
 
 <!-- ====================================================================== -->
-## Update an existing extension in the Microsoft Edge Add-ons website
+## Update an existing extension in the Microsoft Edge Add-ons site
 
-To update your extension that's at the store (the Microsoft Edge Add-ons website):
+To update your extension that's at the Microsoft Edge Add-ons site:
 
 1.  Go to your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you want to update.
 
@@ -27,7 +27,7 @@ To update your extension that's at the store (the Microsoft Edge Add-ons website
 
 1.  After you make the changes, click **Publish** to update your extension listing and start the certification process.  The certification process for an update to an extension can take up to 7 business days.
 
-1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons website.
+1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons site.
 
 After your extension has been created initially, you can update your extension by [Using the REST API for updating Microsoft Edge Add-ons](./api/using-addons-api.md).
 
@@ -35,7 +35,7 @@ After your extension has been created initially, you can update your extension b
 <!-- ====================================================================== -->
 ## Update your extension during the certification step
 
-While your extension is in the certification stage, and before it gets published to the Microsoft Edge Add-ons website, you can update your submitted extension. You might also need to update your extension if your extension fails the certification process.
+While your extension is in the certification stage, and before it gets published to the Microsoft Edge Add-ons site, you can update your submitted extension. You might also need to update your extension if your extension fails the certification process.
 
 
 To check the status of your extension:
@@ -71,7 +71,7 @@ To edit your extension:
 
 
 <!-- ====================================================================== -->
-## Remove an extension from the Microsoft Edge Add-ons website
+## Remove an extension from the Microsoft Edge Add-ons site
 
 To remove an extension:
 
@@ -79,15 +79,15 @@ To remove an extension:
 
 1. Select **Extension Overview** on your listing.
 
-1. Select **Unpublish** to remove the listing from the Microsoft Edge Add-ons website.
+1. Select **Unpublish** to remove the listing from the Microsoft Edge Add-ons site.
 
-The extension is now removed from the Microsoft Edge Add-ons website.  Users who already installed your extension can continue to use it, but the extension isn't available to new users.
+The extension is now removed from the Microsoft Edge Add-ons site.  Users who already installed your extension can continue to use it, but the extension isn't available to new users.
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [Set an externally installed extension to automatically update](./auto-update.md) - for extensions that don't use Partner Center and the Microsoft Edge Add-ons website.
+* [Set an externally installed extension to automatically update](./auto-update.md) - for extensions that don't use Partner Center and the Microsoft Edge Add-ons site.
 * [Using the REST API for updating Microsoft Edge Add-ons](./api/using-addons-api.md)
 * [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)

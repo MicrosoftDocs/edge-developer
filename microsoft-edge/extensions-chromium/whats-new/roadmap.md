@@ -43,7 +43,7 @@ See [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sid
 <!-- ====================================================================== -->
 ## Developers can add their contact information
 
-Users of your extension will be able to report issues through the extension's webpage on the Microsoft Edge Add-ons website.  Developer support information will be shown on the product page of an extension.  This information will allow users to directly reach out to the extension developer for extension-specific support.
+Users of your extension will be able to report issues through the extension's webpage on the Microsoft Edge Add-ons site.  Developer support information will be shown on the product page of an extension.  This information will allow users to directly reach out to the extension developer for extension-specific support.
 
 
 <!-- ====================================================================== -->

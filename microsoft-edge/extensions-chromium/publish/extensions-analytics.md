@@ -1,6 +1,6 @@
 ---
 title: View Microsoft Edge extensions analytics dashboard
-description: View extension metrics from your Partner Center dashboard and evaluate an extension's performance from Microsoft Edge Add-ons website.
+description: View extension metrics from your Partner Center dashboard and evaluate an extension's performance from Microsoft Edge Add-ons site.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -12,7 +12,7 @@ ms.date: 11/07/2022
 
 Microsoft announced the launch of the Extensions Analytics Dashboard on September 8, 2021. For more information, see the [Track your add-on's performance: extension analytics now available on Partner center](https://techcommunity.microsoft.com/t5/articles/track-your-add-on-s-performance-extension-analytics-now/m-p/2733351) blog post.
 
-You can view extension metrics from your [Partner Center dashboard](https://partner.microsoft.com/dashboard/microsoftedge/overview) and evaluate an extension's performance from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
+You can view extension metrics from your [Partner Center dashboard](https://partner.microsoft.com/dashboard/microsoftedge/overview) and evaluate an extension's performance from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 For example, you can identify regions in which the number of installations for your extension has increased in the past three months. You can also export this report as a CSV file.
 

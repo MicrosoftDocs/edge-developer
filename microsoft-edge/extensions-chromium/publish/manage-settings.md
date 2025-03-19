@@ -28,7 +28,7 @@ In the **Account details** section, review the type of your account and its stat
 <!-- ====================================================================== -->
 ## Contact Details
 
-The **Contact info** section displays the details you provided when you created your account.  The Microsoft Edge extension team uses the contact details information to contact you about your account. The publisher name displayed in the Microsoft Edge Add-ons website is also displayed in the **Contact info** section.
+The **Contact info** section displays the details you provided when you created your account.  The Microsoft Edge extension team uses the contact details information to contact you about your account. The publisher name displayed in the Microsoft Edge Add-ons site is also displayed in the **Contact info** section.
 
 If your contact information changes you can edit the **Contact info** section.  Select **Update**, make your changes, and then select **Save**.  You can also select **Contact info** in the left navigation menu to open the **Contact info** section.
 

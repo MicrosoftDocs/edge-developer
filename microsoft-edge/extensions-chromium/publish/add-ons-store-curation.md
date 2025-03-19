@@ -1,6 +1,6 @@
 ---
 title: Curation and review process for the Microsoft Edge Add-ons
-description: How submissions to the Microsoft Edge Add-ons store are curated and reviewed by the store team.
+description: How an extension that's submitted to the Microsoft Edge Add-ons site is curated and reviewed by the Microsoft Edge Add-ons team.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,25 +8,26 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 10/13/2023
 ---
-# Curation and review process for the Edge Add-ons store
+# Curation and review process for the Microsoft Edge Add-ons site
 
-The Microsoft Edge Add-ons curates the Edge store experience so that users can find all the items to customize their browser in one place, such as themes, extensions, and apps.
+The Microsoft Edge Add-ons team curates the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site experience so that users can find all the items to customize their browser in one place, such as themes, extensions, and apps.
 
-Before installing an item from the Microsoft Edge Add-ons, users can learn more about the functionality, data permissions, and publisher by viewing the item's description and listing.
+Before installing an item from the Microsoft Edge Add-ons site, users can learn more about the functionality, data permissions, and publisher by viewing the item's description and listing.
+
 
 <!-- ====================================================================== -->
-## Organizing Microsoft Edge Add-Ons items
+## Organizing Microsoft Edge Add-ons items
 
-The store organizes the items to help users discover the ones that are relevant to their interests.
+The Microsoft Edge Add-ons site organizes the items to help users discover the ones that are relevant to their interests.
 
 Users can also discover the items they are interested in on the Microsoft Edge Add-ons in several ways, including:
 * The home page.
 * The Search bar.
-* Curated collections of store items.
-* Categories of store items.
+* Curated collections of extensions at the Microsoft Edge Add-ons site.
+* Categories of extensions at the Microsoft Edge Add-ons site.
 
 The following factors are used to organize items:
-* **Quality:** Items featured on the Edge Add-ons store are selected based on their eligibility criteria.
+* **Quality:** Extensions that are featured at the Microsoft Edge Add-ons site are selected based on their eligibility criteria.
 * **Relevancy:** Ranking takes into consideration factors such as the item name, description relevancy, popularity, and user experience.
 * **Popularity:** The number of ratings and the average rating are used for prioritizing items.
 
@@ -34,9 +35,9 @@ The following factors are used to organize items:
 <!-- ====================================================================== -->
 ## Security review
 
-The quality and compliance of the item that is displayed on the Microsoft Edge Add-ons is verified per the guidelines that are set in the developer policy.
+The quality and compliance of the extension that is displayed at the Microsoft Edge Add-ons site is verified per the guidelines that are set in the developer policy.
 
-Items violating the policy guidelines are not allowed in the store. There is a standard review process for each new item submission and new versions of items, per the developer policies.
+Extensions that violate the policy guidelines are not allowed in the Microsoft Edge Add-ons site.  There is a standard review process for each new item submission and new versions of items, per the developer policies.
 
 See also:
 * [Using Content Security Policy (CSP) to control which resources can be run](../developer-guide/csp.md)
@@ -60,11 +61,11 @@ The Search ranking of the item is based on these characteristics.
 
 In the Microsoft Edge Add-ons, users can provide a rating and a written review for the item they are using. Users and developers can report an abusive review from within the review section of the item listing page.
 
-Items are ranked for popularity based on user ratings at the store.
+Items are ranked for popularity based on user ratings at the Microsoft Edge Add-ons site.
 
 
 <!-- ====================================================================== -->
 ## See also
 
 * [Using Content Security Policy (CSP) to control which resources can be run](../developer-guide/csp.md)
-* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
+* [Developer policies for the Microsoft Edge Add-ons site](/legal/microsoft-edge/extensions/developer-policies)

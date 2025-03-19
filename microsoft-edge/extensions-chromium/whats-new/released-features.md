@@ -51,7 +51,7 @@ To share your feedback and comments about this feature, see [You can now respond
 <!-- ====================================================================== -->
 ## Publish updates of extensions using the Microsoft Edge Add-ons API
 
-You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. For more information, see [Using the REST API for updating Microsoft Edge Add-ons](../update/api/using-addons-api.md).
+You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons site without using Partner Center. For more information, see [Using the REST API for updating Microsoft Edge Add-ons](../update/api/using-addons-api.md).
 
 *Released March 2022*
 
@@ -126,9 +126,9 @@ You can request the Collection where your extension should be featured on the Mi
 
 
 <!-- ====================================================================== -->
-## Extension store listing localization
+## Extension store<!-- todo: "store" ok?  --> listing localization
 
-You can choose a subset of languages instead of manually entering each language in the listing details on Microsoft Partner Center.  You can also elect to use the same marketing assets across all marketplaces.  See [Partner Center improvements related to Microsoft Edge extensions store listing and certification](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981).
+You can choose a subset of languages instead of manually entering each language in the listing details on Microsoft Partner Center.  You can also elect to use the same marketing assets across all marketplaces.  See [Partner Center improvements related to Microsoft Edge extensions store listing and certification](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981).<!-- todo: "store" ok?  -->
 
 *Released February 2021*
 

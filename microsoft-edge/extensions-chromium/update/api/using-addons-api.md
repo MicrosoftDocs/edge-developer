@@ -1,6 +1,6 @@
 ---
 title: Using the REST API for updating Microsoft Edge Add-ons
-description: REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons store.
+description: REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons site.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,7 +10,7 @@ ms.date: 09/19/2024
 ---
 # Using the REST API for updating Microsoft Edge Add-ons
 
-Use this REST API to programmatically update an extension that's been published at the Microsoft Edge Add-ons website, to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. 
+Use this REST API to programmatically update an extension that's been published at the Microsoft Edge Add-ons site, to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons site without using Partner Center. 
 
 This REST API exposes endpoints for:
 * [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission)
@@ -414,7 +414,7 @@ See also:
 ## Publishing the submission
 <!-- endpoint 3: POST /submissions -->
 
-Use this API to publish the current draft of the product to the Microsoft Edge Add-ons website.
+Use this API to publish the current draft of the product to the Microsoft Edge Add-ons site.
 
 See also [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _REST API Reference for updating Microsoft Edge Add-ons_.
 

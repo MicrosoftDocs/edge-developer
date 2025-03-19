@@ -16,7 +16,9 @@ This article lists important changes being implemented as part of Manifest V3, w
 <!-- ====================================================================== -->
 ## Remotely hosted code
 
-Today, some parts of the extensions code are hosted remotely, and aren't included as part of the extension package during the validation process.  While this offers flexibility to change code without resubmitting the extension to the store, it's possible to exploit the code after installation.  To ensure that [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons) lists validated extensions, the Microsoft Edge extensions team disallows extensions from using remotely hosted code.  This change makes extensions more secure.
+Today, some parts of the extensions code are hosted remotely, and aren't included as part of the extension package during the validation process.  While this offers flexibility to change code without resubmitting the extension to the Microsoft Edge Add-ons site, it's possible to exploit the code after installation.
+
+To ensure that the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons) site lists validated extensions, the Microsoft Edge extensions team disallows extensions from using remotely hosted code.  This change makes extensions more secure.
 
 Developers will need to package and submit all code that is used by the extension, for validation.  Alternatively, you can use the `eval()` function in a [sandboxed environment](https://developer.chrome.com/docs/extensions/mv2/sandboxingEval).
 

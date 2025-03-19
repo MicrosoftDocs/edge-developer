@@ -1,6 +1,6 @@
 ---
 title: Verify your company account information
-description: Learn how to verify your account information when your company enrolls in the Microsoft Edge program on Partner Center to publish extensions to the Microsoft Edge Add-ons website.
+description: Learn how to verify your account information when your company enrolls in the Microsoft Edge program on Partner Center to publish extensions to the Microsoft Edge Add-ons site.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -16,7 +16,7 @@ When you enroll in the Microsoft Edge program on Partner Center to publish exten
 
 You can go to [Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) in Partner Center to monitor verification status for the Microsoft Edge Developer program.
 
-When account verification is complete, you can use your Partner Center dashboard to publish your extension to the Microsoft Edge Add-ons website.
+When account verification is complete, you can use your Partner Center dashboard to publish your extension to the Microsoft Edge Add-ons site.
 
 Verification usually takes three to five business days.  If more than five days have passed, you can [Contact the Microsoft Edge extensions team](/microsoft-edge/extensions-chromium/publish/contact-extensions-team/) for help.
 
