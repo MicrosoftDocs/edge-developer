@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/25/2025
+ms.date: 03/19/2025
 ---
 <!-- Copyright Dale St. Marthe and Sofia Emelianova
 
@@ -24,12 +24,32 @@ ms.date: 02/25/2025
 # Performance tool: Analyze your website's performance
 <!-- https://developer.chrome.com/docs/devtools/performance/overview -->
 
+Use the **Performance** tool to analyze your website's performance.
+
+**Detailed contents:**
+* [Overview](#overview)
+* [Open the Performance tool](#open-the-performance-tool)
+   * [Using the Command Menu](#using-the-command-menu)
+* [Monitor Core Web Vitals metrics](#monitor-core-web-vitals-metrics)
+   * [Interaction to Next Paint (INP)](#interaction-to-next-paint-inp)
+   * [Interactions tab](#interactions-tab)
+   * [Layout shifts tab](#layout-shifts-tab)
+   * [View local and field metrics](#view-local-and-field-metrics)
+      * [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users)
+   * [Simulate a real user environment](#simulate-a-real-user-environment)
+      * [Configure your environment to better match that of your users](#configure-your-environment-to-better-match-that-of-your-users)
+* [Capture and analyze a performance report](#capture-and-analyze-a-performance-report)
+   * [Record a performance profile](#record-a-performance-profile)
+   * [Change capture settings](#change-capture-settings)
+   * [Analyze a performance report](#analyze-a-performance-report)
+* [Improve performance with these tools](#improve-performance-with-these-tools)
+
 
 <!-- ====================================================================== -->
-<!-- ## Overview -->
+## Overview
 <!-- https://developer.chrome.com/docs/devtools/performance/overview#overview -->
 
-Use the **Performance** tool to analyze your website's performance.  The **Performance** tool lets you record CPU performance profiles of your web applications.  Analyze profiles to find potential performance bottlenecks and ways you can optimize resource use.
+The **Performance** tool lets you record CPU performance profiles of your web applications.  Analyze profiles to find potential performance bottlenecks and ways you can optimize resource use.
 
 ![The Performance tool](./overview-images/performance-tool.png)
 
@@ -40,24 +60,7 @@ Use the **Performance** tool to do the following:
 * Change capture settings.
 * Analyze a performance report.
 
-
-**Contents:**
-* [Open the Performance tool](#open-the-performance-tool)
-   * [Using the Command Menu](#using-the-command-menu)
-* [Monitor Core Web Vitals metrics](#monitor-core-web-vitals-metrics)
-   * [Interaction to Next Paint (INP)](#interaction-to-next-paint-inp)
-   * [Interactions tab](#interactions-tab)
-   * [Layout shifts tab](#layout-shifts-tab)
-   * [View local and field metrics](#view-local-and-field-metrics)
-      * [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users)
-         * Advanced: Set up a mapping between development and production environments
-   * [Simulate a real user environment](#simulate-a-real-user-environment)
-      * [Configure your environment to better match that of your users](#configure-your-environment-to-better-match-that-of-your-users)
-* [Capture and analyze a performance report](#capture-and-analyze-a-performance-report)
-   * [Record a performance profile](#record-a-performance-profile)
-   * [Change capture settings](#change-capture-settings)
-   * [Analyze a performance report](#analyze-a-performance-report)
-* [Improve performance with these tools](#improve-performance-with-these-tools)
+When you initially open the **Performance** tool, Core Web Vitals metrics are displayed, in three cards in a **Local metrics** section.  After you record a performance trace, the performance trace is displayed instead of Core Web Vitals.  A dropdown menu enables switching between Core Web Vitals (**Local metrics**) and multiple recorded performance traces.
 
 For a comprehensive guide on improving your website's performance, see [Analyze runtime performance (tutorial)](./index.md).
 
@@ -116,17 +119,19 @@ In contrast, a recorded performance trace shows information about the performanc
 <!-- ---------------------------------- -->
 #### Terminology
 
-| Term | Description |
-|---|---|
-| Web Vitals | A large set of metrics giving unified guidance to delivering a great user experience on the web. |
-| Core Web Vitals | The subset of Web Vitals that apply to all web pages, and should be measured by all site owners.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome. |
-| Largest Contentful Paint (LCP) | Measures _loading_ performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.  The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. |
-| Cumulative Layout Shift (CLS) | Measures _visual stability_. To provide a good user experience, pages should maintain a CLS of 0.1. or less.  The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. |
-| Interaction to Next Paint (INP) | Measures _interactivity_. To provide a good user experience, pages should have a INP of 200 milliseconds or less.  The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. |
-| local metrics | The LCP, CLS, and INP metrics.  They are captured locally on the inspected webpage, and are updated as you interact with the page. |
-| field metrics | Data from the Chrome UX Report (CrUX), showing how most of your users experience your website.  See [Overview of CrUX](https://developer.chrome.com/docs/crux). |
+| Term | Description | Docs |
+|---|---|---|
+| Web Vitals | A large set of metrics giving unified guidance to delivering a great user experience on the web. | [Web Vitals](https://web.dev/articles/vitals) |
+| Core Web Vitals | The subset of Web Vitals that apply to all web pages, and should be measured by all site owners.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome. | [Core Web Vitals](https://web.dev/articles/vitals#core-web-vitals) in _Web Vitals_ |
+| Largest Contentful Paint (LCP) | Measures _loading_ performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.  The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. | [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) |
+| Cumulative Layout Shift (CLS) | Measures _visual stability_. To provide a good user experience, pages should maintain a CLS of 0.1. or less.  The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. | [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) |
+| Interaction to Next Paint (INP) | Measures _interactivity_. To provide a good user experience, pages should have a INP of 200 milliseconds or less.  The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. | [Interaction to Next Paint (INP)](https://web.dev/articles/inp) |
+| local metrics, local data | The LCP, CLS, and INP metrics.  They are captured locally on the inspected webpage, and are updated as you interact with the page. | |
+| field metrics, field data | Data from the Chrome UX Report (CrUX), showing how most of your users experience your website. | [Overview of CrUX](https://developer.chrome.com/docs/crux) |
 
 When you open the **Performance** tool, it immediately captures and displays the local [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) metrics, and displays their scores (**good**, **needs improvement**, or **bad**).
+
+The **Interaction to Next Paint (INP)** card is also displayed, initially without data.
 
 ![Observing the initial metrics](./overview-images/observe-metrics.png)
 
@@ -136,7 +141,10 @@ To get a breakdown of a metric score, hover over the metric value to see a toolt
 <!-- ------------------------------ -->
 #### Interaction to Next Paint (INP)
 
-If you interact with your page, the **Performance** tool also captures your local [Interaction to Next Paint (INP)](https://web.dev/articles/inp) and its score, which, in addition to LCP and CLS, gives you a complete overview of [Core Web Vitals](https://web.dev/articles/vitals) of your page when using your network connection and device.
+If you interact with your page, the **Performance** tool also captures your local [Interaction to Next Paint (INP)](https://web.dev/articles/inp) and its score, which, in addition to LCP and CLS, gives you a complete overview of the Core Web Vitals metrics of your page when using your network connection and device.
+
+See [Core Web Vitals](https://web.dev/articles/vitals#core-web-vitals) in _Web Vitals_ at web.dev.
+
 
 To interact with a webpage to display the **Interaction to Next Paint (INP)** card:
 
