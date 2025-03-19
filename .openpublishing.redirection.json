@@ -250,28 +250,6 @@
         "redirect_document_id": false
       },
 
-      // WebView2 Release Notes:
-      {
-        "source_path": "microsoft-edge/hosting/webview2/releasenotes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-edge/webview2/releasenotes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-edge/webview2/release-notes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-edge/webview2/release-notes/template-prerelease.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
-        "redirect_document_id": false
-      },
-
       // WebView2 Concepts:
       {
         "source_path": "microsoft-edge/webview2/concepts/browserfeatures.md",
@@ -330,6 +308,33 @@
       {
         "source_path": "microsoft-edge/webview2/howto/webdriver.md",
         "redirect_url": "/microsoft-edge/webview2/how-to/webdriver",
+        "redirect_document_id": false
+      },
+
+      // WebView2 Release Notes:
+      {
+        "source_path": "microsoft-edge/hosting/webview2/releasenotes.md",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/releasenotes.md",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/release-notes.md",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/release-notes/template-prerelease.md",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/webview2/roadmap.md",
+        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
         "redirect_document_id": false
       },
 
