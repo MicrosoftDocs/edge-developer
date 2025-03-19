@@ -58,7 +58,7 @@ See also Globals:
 
 The following are some of the flags we've seen used.
 
-If the flag is enabled, such as by setting it to `true`, the following behavior results.
+If the flag is enabled, the following behavior results.
 
 | Flag | Description |
 |---|---|
@@ -121,7 +121,7 @@ If the flag is enabled, such as by setting it to `true`, the following behavior 
 | `msEdgeWebViewApplyWebResourceRequestedFilterForOOPIFs` | Makes the `AddWebResourceRequestedFilter` method (including overloads) also apply to out-of-process iframes. <br/>.NET: [AddWebResourceRequestedFilter](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter) <br/>WinRT: [AddWebResourceRequestedFilter](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addwebresourcerequestedfilter) <br/>Win32: [AddWebResourceRequestedFilterWithRequestSourceKinds](/microsoft-edge/webview2/reference/win32/icorewebview2_22#addwebresourcerequestedfilterwithrequestsourcekinds) |
 | `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
 | `msEnhancedTrackingPreventionEnabled` | Enables native privacy protection features, such as blocking cookies and web requests that reside in domains that are known to be tracking domains. |
-| `msFloatyMode` | If `false`,<!-- todo: avoid "If this flag is enabled," pattern --> disables the Floaty feature.  Use this flag<!-- todo: avoid "If this flag is enabled," pattern --> to disable the Floaty feature, because WebView doesn't support browser retention experiments. |
+| `msFloatyMode` | Enables the Floaty feature.  WebView doesn't support browser retention experiments. |
 | `msFloatyShouldHonorIndiaHoldout` | Honors the India holdout group.  If not set, the Floaty feature is disabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
@@ -143,14 +143,14 @@ If the flag is enabled, such as by setting it to `true`, the following behavior 
 | `no-network-profile-warning` | Causes the browser to warn if the UDF is on a network share.  This flag is only supported on Windows; this flag is ignored on other platforms. |
 | `no-sandbox` | Disables the sandbox for all process types that are normally sandboxed.  Meant to be used as a browser-level flag for testing purposes only. |
 | `no-first-run` | Skips First-Run tasks, regardless of whether it's actually the First Run, and skips displaying the What's New page.  This flag is overridden by `kForceFirstRun` (for the First-Run Experience (FRE)) and by `kForceWhatsNew` (for displaying What's New).  This flag doesn't drop the First Run sentinel, and thus doesn't prevent the First-Run experience from occurring the next time the Edge WebView browser is launched without this flag.  This flag doesn't update the last What's New milestone, so doesn't prevent What's New from being displayed the next time the Edge WebView browser is launched without this flag. |
-| `PartitionedCookies` | When enabled,<!-- todo: avoid pattern like "If this flag is enabled," --> sites can opt-in to having their cookies partitioned by the top-level site by using the `Partitioned` attribute.  Partitioned cookies are only sent when the browser is on the same top-level site that it was on when the cookie was set. |
+| `PartitionedCookies` | Enables sites to opt-in to having their cookies partitioned by the top-level site by using the `Partitioned` attribute.  Partitioned cookies are only sent when the browser is on the same top-level site that it was on when the cookie was set. |
 | `proxy-auto-detect` | Forces proxy auto-detection. |
 | `proxy-bypass-list` | A list of hosts for which proxy settings are bypassed; the specified hosts then use direct connections instead.  This flag is ignored unless `--proxy-server` is also specified.  Multiple hosts can be supplied as a comma-separated list. |
 | `proxy-server` | A proxy server that overrides system settings.  This flag only affects HTTP and HTTPS requests. |
 | `remote-allow-origins` | Enables web socket connections from the specified origins only.  The `*` wildcard allows any origin. |
 | `remote-debugging-port` | Enables remote debugging over HTTP on the specified port. |
 | `RendererAppContainer` | Enables Renderer `AppContainer`. |
-| `Restart` | Indicates that Microsoft Edge WebView2 browser process was restarted (such as after a flag change).  Use this flag<!-- todo: avoid "If this flag is enabled," pattern --> to ignore the launch when recording the `Launch.Mode2` metric. |
+| `Restart` | Ignores the launch when recording the `Launch.Mode2` metric.  Indicates that the Microsoft Edge WebView2 browser process was restarted (such as after a flag change). |
 | `sdsm-state` | The "Super Duper Secure Mode" state.  Valid values: `off`, `basic`, `balanced`, `strict`. |
 | `SharedArrayBuffer` | Indicates that a `SharedArrayBuffer` thread is present. |
 | `SpareRendererForSitePerProcess` | Makes the Edge Webview spare renderer process try to always have a warm spare renderer process running for the most recently requested `BrowserContext`.  This feature is only consulted in site-per-process mode. |
