@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/10/2025
+ms.date: 03/19/2025
 ---
 # WebView2 browser flags
 
@@ -58,6 +58,7 @@ See also Globals:
 
 The following are some of the flags we've seen used.
 
+<!-- todo: consistent wording: omit "if enabled" (14x) & "If `true`" (3x); establish how to use all flags -->
 | Flag | Description |
 |---|---|
 | `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
@@ -106,6 +107,7 @@ The following are some of the flags we've seen used.
 | `js-flags` | Specifies the flags passed to the JS engine.  Available flags: `scavenger_max_new_space_capacity_mb`: Specifies the maximum limit (in MB) for scavenger (minor) garbage collectors in the V8 JavaScript engine.  For example: <br/>`--js-flags=--scavenger_max_new_space_capacity_mb=8`  <br/>A lower scavenger memory limit reduces memory usage, and increases the frequency of running minor garbage collectors.  <br/>A higher scavenger memory limit increases memory usage, and reduces the frequency of running minor garbage collectors. |
 | `lang` | The language file that WebView2 want to try to open. Of the form language[-country] where language is the 2-letter code from ISO-639. |
 | `log-net-log` | Enables saving net log events to a file.  If a value is given, that value is used as the directory path and file name.  If no value is given, the file is named `netlog.json`, and is placed in the user data directory. |
+| `long-animation-frame-timing` |  Provides detailed timing for long animation frames, which are frames exceeding the standard 16.67ms duration (60fps).  This helps during debugging and performance analysis, to identify and optimize performance bottlenecks for animation-heavy applications. |
 | `msAbydos` | Enables the "handwriting-to-text" experience. |
 | `msAbydosGestureSupport` | Allows users to use gestures (such as the scratchout gesture) to delete text by using a pen.  Valid only if the `msAbydos` flag is enabled. |
 | `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled. |
@@ -126,12 +128,12 @@ The following are some of the flags we've seen used.
 | `msSingleSignOnOSForPrimaryAccountIsShared` | If enabled, allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
 | `msSmartScreenProtection` | If enabled, SmartScreen protection will be available. |
 | `msUseSpellCheckCorrectionsCard` | If enabled, a new corrections card UI is shown when the user clicks a misspelled word. |
+| `msWebView2BrowserHitTransparent` | Allows the host application to handle input events before they are passed to the WebView2 control. |
 | `msWebView2CancelInitialNavigation` | If enabled, cancels the initial navigation in WebView2 to improve startup performance. |
-| `msWebView2CodeCache` | If enabled, JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses (see [Custom management of network requests](..\how-to\webresourcerequested.md)). |
-| `msWebView2EnableDownloadContentInWebResourceResponseReceived` | If enabled, allow responses of navigations that become downloads to be available in `WebResourceResponseReceived`|
+| `msWebView2CodeCache` | If enabled, JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses; see [Custom management of network requests](..\how-to\webresourcerequested.md). |
+| `msWebView2EnableDownloadContentInWebResourceResponseReceived` | If enabled, allow responses of navigations that become downloads to be available in `WebResourceResponseReceived`. |
 | `msWebView2TextureStream` | If enabled, allows to stream captured or composed video frames to the WebView2 where JavaScript can render or otherwise interact with the frames via W3C standard DOM APIs including the Video element, and MediaStream. |
 | `msWebView2EnableDraggableRegions` | If `true`, enables webpages within WebView2 make use of the `app-region: drag\|nodrag` CSS style, which causes elements with that style to behave like a titlebar.  Without this flag, the `app-region: drag\|nodrag` CSS style has no effect. |
-| `msWebView2CodeCache` | If enabled, JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` are eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses. |
 | `msWebView2NativeEventDispatch` | If enabled, uses a native mojo connection to dispatch internal events, such as web messages to a renderer process. |
 | `msWebView2SimulateMemoryPressureWhenInactive` | If enabled, simulates memory pressure for an inactive WebView. |
 | `msWebView2TreatAppSuspendAsDeviceSuspend` | If enabled, when all WebViews are suspended, WebView2 treats the app as if the device is suspended, and pauses all delayed tasks and timers. |
