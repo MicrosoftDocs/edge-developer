@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/19/2025
+ms.date: 03/18/2025
 ---
 # WebView2 browser flags
 
