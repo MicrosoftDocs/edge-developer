@@ -71,7 +71,7 @@ If the flag is enabled, the following behavior results.
 | `AutofillReplaceCachedWebElementsByRendererIds` | Replaces cached web elements in AutofillAgent and FormTracker by their renderer IDs. |
 | `autoplay-policy` | Command-line flag name to set the autoplay policy. |
 | `BlockInsecurePrivateNetworkRequests` | When this feature is enabled, private network requests that are initiated from non-secure contexts in the `public` address space are blocked. |
-| `block-new-web-contents` | Makes all pop-ups and calls to `window.open` fail. |
+| `block-new-web-contents` | If present and set to `true`, makes all pop-ups and calls to `window.open` fail. |
 | `BreakoutBoxPreferCaptureTimestampInVideoFrames` | Reverts the behavior of the `Timestamp` property of the `CoreWebView2Texture` class to match legacy behavior of WebView2 Runtime version 124 and earlier. |
 | `disable-background-timer-throttling` | Disables task throttling of timer tasks from background pages. |
 | `disable-domain-action-user-agent-override` | Disables the per-domain User Agent override from the Domain Actions feature. |
@@ -150,7 +150,7 @@ If the flag is enabled, the following behavior results.
 | `remote-allow-origins` | Enables web socket connections from the specified origins only.  The `*` wildcard allows any origin. |
 | `remote-debugging-port` | Enables remote debugging over HTTP on the specified port. |
 | `RendererAppContainer` | Enables Renderer `AppContainer`. |
-| `Restart` | Ignores the launch when recording the `Launch.Mode2` metric.  Indicates that the Microsoft Edge WebView2 browser process was restarted (such as after a flag change). |
+| `Restart` | Indicates that Microsoft Edge WebView2 browser process was restarted (such as after a flag change).  Use this flag to ignore the launch when recording the `Launch.Mode2` metric. |
 | `sdsm-state` | The "Super Duper Secure Mode" state.  Valid values: `off`, `basic`, `balanced`, `strict`. |
 | `SharedArrayBuffer` | Indicates that a `SharedArrayBuffer` thread is present. |
 | `SpareRendererForSitePerProcess` | Makes the Edge Webview spare renderer process try to always have a warm spare renderer process running for the most recently requested `BrowserContext`.  This feature is only consulted in site-per-process mode. |
