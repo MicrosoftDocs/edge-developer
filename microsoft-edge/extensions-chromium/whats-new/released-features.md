@@ -122,15 +122,17 @@ Microsoft Edge extensions now support Manifest V3.  See the blog post [Manifest 
 
 You can request which collection your extension should be featured in at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
-To submit a request, go to [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u).<!-- suffix is required -->
+To submit a request, go to [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u).
 
 *Released April 2021*
 
 
 <!-- ====================================================================== -->
-## Extension store<!-- todo: "store" ok?  --> listing localization
+## Localization of extension listings at Microsoft Edge Add-ons
 
-You can choose a subset of languages instead of manually entering each language in the listing details on Microsoft Partner Center.  You can also elect to use the same marketing assets across all marketplaces.  See [Partner Center improvements related to Microsoft Edge extensions store listing and certification](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981).<!-- todo: "store" ok?  -->
+You can control localization of extension listings that are at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  You can choose a subset of languages, instead of manually entering each language in the listing details on Microsoft Partner Center.  You can also elect to use the same marketing assets across all marketplaces.
+
+See [Partner Center improvements related to Microsoft Edge extensions store listing and certification](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981).
 
 *Released February 2021*
 

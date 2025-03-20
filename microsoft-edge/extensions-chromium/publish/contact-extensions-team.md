@@ -62,7 +62,7 @@ Use this **Issues** page for:
 <!-- ====================================================================== -->
 ## Report copyright or trademark infringement
 
-If you think an item at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) violates a copyright or trademark, complete the [Reporting Infringement](https://www.microsoft.com/concern/dmca) form.  When filling in **Step 3: Where can the infringing material be found?**, in the **Product/Service/App** option, make sure to select **Microsoft Store<!-- todo: is 'store' correct? --> on Windows**.  The Microsoft Edge extensions team will review your report and then take the necessary action.
+If you think an item at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) violates a copyright or trademark, complete the [Reporting Infringement](https://www.microsoft.com/concern/dmca) form.  When filling in **Step 3: Where can the infringing material be found?**, in the **Product/Service/App** option, make sure to select **Microsoft Store on Windows**.  The Microsoft Edge extensions team will review your report and then take the necessary action.
 
 
 <!-- ====================================================================== -->

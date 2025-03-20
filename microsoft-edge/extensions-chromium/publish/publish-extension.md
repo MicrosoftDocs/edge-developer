@@ -48,9 +48,9 @@ Create a zip file for your extension package.  Your extension package must inclu
 
 In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
-Before uploading your package to Partner Center, inspect the manifest file to make sure that the field values match your preferred display on the **Store<!-- todo: is 'store' ok in the UI? --> Listings** page, as follows.
+Before uploading your package to Partner Center, inspect the manifest file to make sure that the field values match your preferred display on the **Store Listings** page, as follows.
 
-The following fields in the manifest file are automatically included in your store<!-- todo: is 'store' ok in this article? --> listing details.  The fields are read-only on the **Store Listings** page, which is described below.
+The following fields in the manifest file are automatically included in your extension's product listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  The fields are read-only on the **Store Listings** page, which is described below.
 
 *  The `Name` field, which populates the **Display name** on the store details page.
 
