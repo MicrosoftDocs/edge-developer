@@ -1045,10 +1045,10 @@
 # -------------------------------------
         - name: What's new
           items:
-            - name: Released features for Microsoft Edge Add-ons
+            - name: Released features for Microsoft Edge extensions
               href: ./extensions-chromium/whats-new/released-features.md
 
-            - name: Roadmap for Microsoft Edge Add-ons
+            - name: Roadmap for Microsoft Edge extensions
               href: ./extensions-chromium/whats-new/roadmap.md
 
 # -------------------------------------
@@ -1120,7 +1120,7 @@
                   href: /legal/microsoft-edge/extensions/ada-addendum
                   displayName: policy, policies
 
-                - name: Developer policies for the Microsoft Edge Add-ons site
+                - name: Developer policies for extensions at Microsoft Edge Add-ons
                   href: /legal/microsoft-edge/extensions/developer-policies
                   displayName: policy
 
@@ -1153,14 +1153,14 @@
             - name: Extension hosting
               href: ./extensions-chromium/publish/hosting-and-updating.md
 
-            - name: Submission states for extensions in the Microsoft Edge Add-ons site
+            - name: Submission states for extensions at Microsoft Edge Add-ons
               href: ./extensions-chromium/publish/submission-states.md
 
             - name: Alternative ways to distribute an extension
               href: ./extensions-chromium/developer-guide/alternate-distribution-options.md
 
-            - name: Curation and review process for the Microsoft Edge Add-ons site
-              href: ./extensions-chromium/publish/add-ons-site-curation.md
+            - name: Curation and review process for extensions at Microsoft Edge Add-ons
+              href: ./extensions-chromium/publish/add-ons-curation.md
 
 # -------------------------------------
         - name: Update an extension
@@ -1170,10 +1170,10 @@
 
             - name: REST API for updating an extension
               items:
-                - name: Using the REST API for updating Microsoft Edge Add-ons
+                - name: Use the REST API to update an extension at Microsoft Edge Add-ons
                   href: ./extensions-chromium/update/api/using-addons-api.md
 
-                - name: REST API Reference for updating Microsoft Edge Add-ons
+                - name: REST API Reference for updating an extension at Microsoft Edge Add-ons
                   href: ./extensions-chromium/update/api/addons-api-reference.md
 
             - name: Set an externally installed extension to automatically update

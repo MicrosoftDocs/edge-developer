@@ -1,6 +1,6 @@
 ---
-title: Using the REST API for updating Microsoft Edge Add-ons
-description: REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons site.
+title: Use the REST API to update an extension at Microsoft Edge Add-ons
+description: REST endpoints to automate updating an extension that's been published at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,9 +8,9 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 09/19/2024
 ---
-# Using the REST API for updating Microsoft Edge Add-ons
+# Use the REST API to update an extension at Microsoft Edge Add-ons
 
-Use this REST API to programmatically update an extension that's been published at the Microsoft Edge Add-ons site, to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons site without using Partner Center. 
+Use this REST API to programmatically update an extension that's been published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) without using Partner Center. 
 
 This REST API exposes endpoints for:
 * [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission)
@@ -263,7 +263,7 @@ To create a new product or update a product's metadata, you must use Microsoft P
 
 Use this REST API endpoint to update the package for an add-on.  This API uploads a package to update an existing draft submission of an add-on product.
 
-See also [Upload a package to update an existing submission](./addons-api-reference.md#upload-a-package-to-update-an-existing-submission) in _REST API Reference for updating Microsoft Edge Add-ons_.
+See also [Upload a package to update an existing submission](./addons-api-reference.md#upload-a-package-to-update-an-existing-submission) in _REST API Reference for updating an extension at Microsoft Edge Add-ons_.
 
 
 <!-- ---------------------------------------------- -->
@@ -341,7 +341,7 @@ If the request succeeds and the update process begins, you receive a `202 Accept
 
 
 See also:
-* [Upload a package to update an existing submission](./addons-api-reference.md#upload-a-package-to-update-an-existing-submission) in _REST API Reference for updating Microsoft Edge Add-ons_.
+* [Upload a package to update an existing submission](./addons-api-reference.md#upload-a-package-to-update-an-existing-submission) in _REST API Reference for updating an extension at Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
@@ -352,7 +352,7 @@ Use this API to check the status of package upload.
 
 `$operationID` is the operation ID that's returned in the response header from [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission) or [Publishing the submission](#publishing-the-submission).
 
-See also [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for updating Microsoft Edge Add-ons_.
+See also [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for updating an extension at Microsoft Edge Add-ons_.
 
 
 <!-- ---------------------------------------------- -->
@@ -407,16 +407,16 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 ---
 
 See also:
-* [Check the status of a package upload](./addons-api-reference.md#check-the-status-of-a-package-upload) in _REST API Reference for updating Microsoft Edge Add-ons_.
+* [Check the status of a package upload](./addons-api-reference.md#check-the-status-of-a-package-upload) in _REST API Reference for updating an extension at Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
 ## Publishing the submission
 <!-- endpoint 3: POST /submissions -->
 
-Use this API to publish the current draft of the product to the Microsoft Edge Add-ons site.
+Use this API to publish the current draft of the product at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
-See also [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _REST API Reference for updating Microsoft Edge Add-ons_.
+See also [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _REST API Reference for updating an extension at Microsoft Edge Add-ons_.
 
 
 <!-- ---------------------------------------------- -->
@@ -477,7 +477,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 If the request succeeds and the publishing process begins, you'll receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` that's required for checking the status of the publish operation.
 
 See also:
-* [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _REST API Reference for updating Microsoft Edge Add-ons_.
+* [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _REST API Reference for updating an extension at Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
@@ -488,7 +488,7 @@ Use this API to check the status of the publish operation.
 
 `$operationID` is the operation ID that's returned in the response header from [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission) or [Publishing the submission](#publishing-the-submission).
 
-See also [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for updating Microsoft Edge Add-ons_.
+See also [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for updating an extension at Microsoft Edge Add-ons_.
 
 
 <!-- ---------------------------------------------- -->
@@ -543,14 +543,14 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 ---
 
 See also:
-* [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for updating Microsoft Edge Add-ons_.
+* [Check the publishing status](./addons-api-reference.md#check-the-publishing-status) in _REST API Reference for updating an extension at Microsoft Edge Add-ons_.
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [REST API Reference for updating Microsoft Edge Add-ons](./addons-api-reference.md) - REST API for updating an extension.
+* [REST API Reference for updating an extension at Microsoft Edge Add-ons](./addons-api-reference.md) - REST API for updating an extension.
 * [Supported APIs for Microsoft Edge extensions](../../developer-guide/api-support.md) - JavaScript APIs for developing an extension.
 
 GitHub:

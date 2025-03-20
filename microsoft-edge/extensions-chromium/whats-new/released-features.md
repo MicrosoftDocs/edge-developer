@@ -1,5 +1,5 @@
 ---
-title: Released features for Microsoft Edge Add-ons
+title: Released features for Microsoft Edge extensions
 description: Microsoft Edge Add-ons released features provides information about features launched on Partner Center for extension developers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 02/05/2025
 ---
-# Released features for Microsoft Edge Add-ons
+# Released features for Microsoft Edge extensions
 <!-- https://aka.ms/EdgeAddonsReleaseNotes -->
 
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
@@ -51,20 +51,20 @@ To share your feedback and comments about this feature, see [You can now respond
 <!-- ====================================================================== -->
 ## Publish updates of extensions using the Microsoft Edge Add-ons API
 
-You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates to the Microsoft Edge Add-ons site without using Partner Center. For more information, see [Using the REST API for updating Microsoft Edge Add-ons](../update/api/using-addons-api.md).
+You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) without using Partner Center.  For more information, see [Use the REST API to update an extension at Microsoft Edge Add-ons](../update/api/using-addons-api.md).
 
 *Released March 2022*
 
 Update September 2024: v1.1 of this REST API provides increased security.
 
 See also:
-* [Deprecation of the Update REST API v1](../whats-new/roadmap.md#deprecation-of-the-update-rest-api-v1) in _Roadmap for Microsoft Edge Add-ons_.
+* [Deprecation of the Update REST API v1](../whats-new/roadmap.md#deprecation-of-the-update-rest-api-v1) in _Roadmap for Microsoft Edge extensions_.
 
 
 <!-- ====================================================================== -->
 ## Addition of breadcrumbs to Microsoft Partner Center
 
-Developers can view the navigation bar / tree path while using Partner Center to track the exact Partner Center path users are visiting. Developers can maintain awareness of their location within Microsoft Partner Center.
+You can view the navigation bar / tree path while using Partner Center to track the exact Partner Center path that users are visiting.  You can maintain awareness of your location within Microsoft Partner Center.
 
 *Released March 2022*
 
@@ -120,7 +120,7 @@ Microsoft Edge Add-ons now support extensions with Manifest V3. For more informa
 <!-- ====================================================================== -->
 ## Request to get your extension featured
 
-You can request the Collection where your extension should be featured on the Microsoft Edge Add-ons site.
+You can request which Collection your extension should be featured in at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 To submit a request, go to [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u).<!-- suffix is required -->
 
@@ -146,5 +146,5 @@ By clicking the extension certification report link, you can view and download t
 <!-- ====================================================================== -->
 ## See also
 
-* [Roadmap for Microsoft Edge Add-ons](roadmap.md) - upcoming Partner Center features or updates.
+* [Roadmap for Microsoft Edge extensions](roadmap.md) - upcoming Partner Center features or updates.
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)

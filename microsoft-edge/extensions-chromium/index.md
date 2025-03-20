@@ -11,9 +11,9 @@ ms.date: 08/20/2024
 # Overview of Microsoft Edge extensions
 <!-- https://aka.ms/AboutEdgeAddons -->
 
-A Microsoft Edge _extension_, also called an _add-on_, is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that is important to a target audience.  You publish a Microsoft Edge extension at the the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site.
+A Microsoft Edge _extension_, also called an _add-on_, is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that is important to a target audience.  You publish a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
-In Microsoft Edge Add-ons articles, _stores_ includes the Microsoft Edge Add-ons site.
+In articles about Microsoft Edge extensions, the word _stores_ includes [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages.  Examples of _companion experiences_ include ad blockers and password managers.
 
@@ -101,19 +101,21 @@ Users might need to install your extension in different browsers. In this scenar
 <!-- ------------------------------ -->
 #### Migrate an existing extension to Microsoft Edge
 
-If you've already developed an extension for another Chromium-based browser, you can submit it to the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site.  You don't need to rewrite your extension or verify that it works in Microsoft Edge.  However, when you migrate an existing Chromium extension to other Chromium browsers, make certain the same APIs or alternatives are available for your target browser.
+If you've already developed an extension for another Chromium-based browser, you can submit it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  You don't need to rewrite your extension or verify that it works in Microsoft Edge.  However, when you migrate an existing Chromium extension to other Chromium browsers, make certain the same APIs or alternatives are available for your target browser.
 
 For more information on porting your Chrome extension to Microsoft Edge, see [Port Chrome extensions to Microsoft Edge](developer-guide/port-chrome-extension.md). After you port your extension to the target browser, the next step is to publish it.
 
 
 <!-- ------------------------------ -->
-#### Publish to the Microsoft Edge Add-ons site
+#### Publish to Microsoft Edge Add-ons
 
-You publish a Microsoft Edge extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site.
+You publish a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
-To start publishing a Microsoft Edge extension, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing to the Microsoft Edge Add-ons site.  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`.  When you choose an email address to register, consider whether you must transfer or share ownership of the Microsoft Edge extension with other people in your organization.  After registration is complete, you can submit an extension listing.
+To start publishing a Microsoft Edge extension, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`.  
 
-To submit an extension at the Microsoft Edge Add-ons site, you need to provide the following items:
+When you choose an email address to register, consider whether you must transfer or share ownership of the Microsoft Edge extension with other people in your organization.  After registration is complete, you can submit an extension listing.
+
+To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), you need to provide the following items:
 
 *   An archive (`.zip`) file that contains your code files.
 *   All required visual assets, which include a logo and small promotional tile.
@@ -122,19 +124,19 @@ To submit an extension at the Microsoft Edge Add-ons site, you need to provide t
 
 Different stores might have different submission requirements.  The above list summarizes the requirements for publishing an extension for Microsoft Edge; for details, see [Publish a Microsoft Edge extension](./publish/publish-extension.md).
 
-After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an extension _update_ at the Microsoft Edge Add-ons site, that begins a new review process.
+After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an extension _update_ at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), that begins a new review process.
 
 
 <!-- ====================================================================== -->
 ## The Featured badge
 
-A **Featured** badge in the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site indicates that the extension has been determined to follow Microsoft's recommended best practices related to security, privacy, transparency, and user experience.
+A **Featured** badge in [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) indicates that the extension has been determined to follow Microsoft's recommended best practices related to security, privacy, transparency, and user experience.
 
 ![The Featured badge to the right of the extension name](./index-images/featured-badge.png)
 
 When you hover on a **Featured** badge, the tooltip reads: **This extension follows all of Microsoft's recommended practices and has been verified**.
 
-For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh) extension has a **Featured** badge at the Microsoft Edge Add-ons site.
+For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh) extension has a **Featured** badge at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 The Microsoft Edge Add-ons team reviews each extension for adherence to [Best practices for extensions](./developer-guide/best-practices.md) before granting the extension a **Featured** badge.  Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences.  Developers cannot pay to receive a **Featured** badge for an extension.
 

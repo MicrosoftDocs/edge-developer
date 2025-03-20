@@ -190,7 +190,7 @@
       },
       {
         "source_path": "./microsoft-edge/extensions-chromium/publish/add-ons-store-curation.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/add-ons-site-curation",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/add-ons-curation",
         "redirect_document_id": false
       },
 // /Microsoft Edge extensions

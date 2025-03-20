@@ -1,6 +1,6 @@
 ---
 title: Best practices for extensions
-description: Best Practices to implement an extension and list it at the Microsoft Edge Add-ons site.
+description: Best Practices to implement an extension and list it at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,7 +10,7 @@ ms.date: 11/20/2023
 ---
 # Best practices for extensions
 
-Follow these Best Practices to implement your extension and list it at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site.
+Follow these Best Practices to implement your extension and list it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 
 <!-- ====================================================================== -->

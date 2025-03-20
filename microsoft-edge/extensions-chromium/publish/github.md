@@ -10,7 +10,7 @@ ms.date: 02/14/2024
 ---
 # Register and sign in to Partner Center using a GitHub account
 
-If you're a GitHub user, you don't need to create a new Microsoft account (MSA) and remember extra passwords to sign into Partner Center.  You can use your personal GitHub credentials to sign into Partner Center and publish your Microsoft Edge extensions to the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site.
+If you're a GitHub user, you don't need to create a new Microsoft account (MSA) and remember extra passwords to sign into Partner Center.  You can use your personal GitHub credentials to sign into Partner Center and publish a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 Currently, you can only use your _personal_ GitHub account to login to Partner Center. Using your _work_ GitHub account isn't supported.
 
