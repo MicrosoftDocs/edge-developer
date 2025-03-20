@@ -30,7 +30,7 @@ Before publishing your extension, you should have a working prototype of your ex
 <!-- ---------------------------------- -->
 #### Create a developer account
 
-To publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge Add-ons program, see [Developer registration](./create-dev-account.md).
+To publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register for the Microsoft Edge program, see [Developer registration](./create-dev-account.md).
 
 
 <!-- ---------------------------------- -->
@@ -46,7 +46,7 @@ Create a zip file for your extension package.  Your extension package must inclu
 <!-- ---------------------------------- -->
 #### Review manifest field values
 
-At Partner Center and in Microsoft Edge Add-ons articles, the word _store_ includes [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 Before uploading your package to Partner Center, inspect the manifest file to make sure that the field values match your preferred display on the **Store<!-- todo: is 'store' ok in the UI? --> Listings** page, as follows.
 
@@ -67,7 +67,7 @@ Later, after you upload your package, you'll have an opportunity to modify some 
 
 
 <!-- ========================================================================== -->
-## Submit your extension at Microsoft Edge Add-ons
+## Submit the extension at Microsoft Edge Add-ons
 
 After doing the above steps, the extension is ready to be submitted via Partner Center, to be published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
@@ -335,7 +335,7 @@ If you encounter any issues in the submission or registration process, file a su
 Partner Center:
 * [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
 
-Microsoft Edge Add-ons:
+Microsoft Edge extensions:
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/)
 
 Developer Agreement & Legal:

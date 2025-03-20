@@ -1,6 +1,6 @@
 ---
 title: Released features for Microsoft Edge extensions
-description: Microsoft Edge Add-ons released features provides information about features launched on Partner Center for extension developers.
+description: Released features that have been launched on Partner Center for extension developers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -31,7 +31,7 @@ The sidebar feature of Microsoft Edge extensions enables an extension to display
 
 
 <!-- ====================================================================== -->
-## Retirement of submitting new Microsoft Edge Add-ons with Manifest V2
+## Retirement of submitting new Microsoft Edge extensions with Manifest V2
 
 Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension submissions, with visibility set as 'Hidden' or 'Public'.  To share your feedback and comments, see [Update your extensions from Manifest V2 to V3](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/27) in **Discussions** in the MicrosoftEdge-Extensions repo.
 
@@ -39,9 +39,9 @@ Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension s
 
 
 <!-- ====================================================================== -->
-## You can respond to user reviews about your Microsoft Edge Add-on
+## You can respond to user reviews about your Microsoft Edge extension
 
-You can reply via Partner Center to reviews and feedback received about your extension on the Microsoft Edge Add-ons product page. 
+At Partner Center, you can reply to user reviews and feedback about your extension that's posted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/). 
 
 To share your feedback and comments about this feature, see [You can now respond to user reviews on your Microsoft Edge Add-ons page](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18) in **Discussions** in the MicrosoftEdge-Extensions repo.
 
@@ -49,7 +49,7 @@ To share your feedback and comments about this feature, see [You can now respond
 
 
 <!-- ====================================================================== -->
-## Publish updates of extensions using the Microsoft Edge Add-ons API
+## Update an extension by using the Microsoft Edge Add-ons API
 
 You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) without using Partner Center.  For more information, see [Use the REST API to update an extension at Microsoft Edge Add-ons](../update/api/using-addons-api.md).
 
@@ -72,7 +72,7 @@ You can view the navigation bar / tree path while using Partner Center to track 
 <!-- ====================================================================== -->
 ## Microsoft Edge extensions developer portal
 
-The new edition of the developer portal contains relevant resources and documentation for Microsoft Edge extensions. For more information, see [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/microsoft-edge/extensions/).
+The new edition of the developer portal contains resources and documentation for Microsoft Edge extensions.  Go to [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/microsoft-edge/extensions/).
 
 *Released January 2022*
 
@@ -112,7 +112,7 @@ This feature allows you to view your extension submission from the [Partner Cent
 <!-- ====================================================================== -->
 ## Support for Manifest V3 extensions
 
-Microsoft Edge Add-ons now support extensions with Manifest V3. For more information, see the blog [Manifest V3 changes are now available in Microsoft Edge](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254) for more details.
+Microsoft Edge extensions now support Manifest V3.  See the blog post [Manifest V3 changes are now available in Microsoft Edge](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
 
 *Released April 2021*
 
@@ -120,7 +120,7 @@ Microsoft Edge Add-ons now support extensions with Manifest V3. For more informa
 <!-- ====================================================================== -->
 ## Request to get your extension featured
 
-You can request which Collection your extension should be featured in at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+You can request which collection your extension should be featured in at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 To submit a request, go to [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u).<!-- suffix is required -->
 

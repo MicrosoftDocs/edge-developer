@@ -1,6 +1,6 @@
 ---
 title: Curation and review process for extensions at Microsoft Edge Add-ons
-description: How an extension that's submitted to Microsoft Edge Add-ons is curated and reviewed by the Microsoft Edge Add-ons team.
+description: How an extension that's submitted at Microsoft Edge Add-ons is curated and reviewed by the Microsoft Edge extensions team.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,7 +10,7 @@ ms.date: 10/13/2023
 ---
 # Curation and review process for extensions at Microsoft Edge Add-ons
 
-The Microsoft Edge Add-ons team curates the experience at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) so that users can find all the items to customize their browser in one place, such as themes, extensions, and apps.
+The Microsoft Edge extensions team curates the experience at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) so that users can find all the items to customize their browser in one place, such as themes, extensions, and apps.
 
 Available _items_ to customize the user's browser includes themes, extensions, and apps.
 
@@ -18,9 +18,9 @@ Before installing an item from [Microsoft Edge Add-ons](https://microsoftedge.mi
 
 
 <!-- ====================================================================== -->
-## Organizing Microsoft Edge Add-ons items
+## How items are organized at Microsoft Edge Add-ons
 
-[Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) organizes items (such as themes, extensions, and apps) to help users discover the ones that are relevant to their interests.
+Items at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), such as themes, extensions, and apps, are organized to help users discover the ones that are relevant to their interests.
 
 Users can discover extensions they're interested in at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) in several ways, including:
 * The home page.

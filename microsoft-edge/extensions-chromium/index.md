@@ -13,7 +13,7 @@ ms.date: 08/20/2024
 
 A Microsoft Edge _extension_, also called an _add-on_, is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that is important to a target audience.  You publish a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
-In articles about Microsoft Edge extensions, the word _stores_ includes [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages.  Examples of _companion experiences_ include ad blockers and password managers.
 
@@ -107,7 +107,7 @@ For more information on porting your Chrome extension to Microsoft Edge, see [Po
 
 
 <!-- ------------------------------ -->
-#### Publish to Microsoft Edge Add-ons
+#### Publish an extension at Microsoft Edge Add-ons
 
 You publish a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
@@ -138,7 +138,7 @@ When you hover on a **Featured** badge, the tooltip reads: **This extension foll
 
 For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh) extension has a **Featured** badge at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
-The Microsoft Edge Add-ons team reviews each extension for adherence to [Best practices for extensions](./developer-guide/best-practices.md) before granting the extension a **Featured** badge.  Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences.  Developers cannot pay to receive a **Featured** badge for an extension.
+The Microsoft Edge extensions team reviews each extension for adherence to [Best practices for extensions](./developer-guide/best-practices.md) before granting the extension a **Featured** badge.  Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences.  Developers cannot pay to receive a **Featured** badge for an extension.
 
 To help protect your browser settings, extensions that don't comply with the Best Practices for extensions are not badged.
 

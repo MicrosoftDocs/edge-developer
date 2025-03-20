@@ -14,7 +14,7 @@ ms.date: 05/05/2023
 per https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions
 -->
 
-Generally, extensions are distributed through [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  There are some scenarios where you might need to distribute an extension by using alternate methods.  For example:
+Generally, an extension is distributed by publishing it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  There are some scenarios where you might need to distribute an extension by using alternate methods.  For example:
 
 1. The extension is associated with other software, and it should be installed together with the rest of the bundled software.
 

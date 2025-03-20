@@ -18,7 +18,7 @@ To acquire the extension and native app host, there are two different distributi
 
 *  Package your extension and the host together.  When a user installs the package, both the extension and the host are installed.
 
-*  Or, install your extension using [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), and your extension prompts users to install the host.
+*  Or, install your extension from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), and your extension prompts users to install the host.
 
 To create your extension to send and receive messages with native app hosts, do the following steps.
 
@@ -201,7 +201,7 @@ The `HKEY_CURRENT_USER\SOFTWARE\WOW6432Node` registry node is not searched on 64
 
 #### Extension IDs required for both stores
 
-If you have an extension at both [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) and the Chrome Web Store, you must add the extension IDs that correspond to both of the stores<!-- todo: copy 'stores' def'n to top? --> in the `allowed_origins` of the native messaging host manifest file.
+If you have an extension both at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) and the Chrome Web Store, you must add the extension IDs that correspond to both of the stores<!-- todo: copy 'stores' def'n to top? --> in the `allowed_origins` of the native messaging host manifest file.
 
 This is required because only the native messaging host manifest file that corresponds to the first registry location that's found is read.
 

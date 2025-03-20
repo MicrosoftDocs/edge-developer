@@ -25,7 +25,7 @@ As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.
 ## Upload a package to update an existing submission
 <!-- endpoint 1: POST /submissions/draft/package -->
 
-Uploads a package to update an existing draft submission of an add-on product.
+Uploads a package to update an existing draft submission of an extension.
 
 See also [Uploading a package to update an existing submission](./using-addons-api.md#uploading-a-package-to-update-an-existing-submission) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
 
@@ -227,7 +227,7 @@ See also:
 ## Publish the product draft submission
 <!-- endpoint 3: POST /submissions -->
 
-Publishes the current draft of the product to Microsoft Edge Add-ons.
+Publishes the current draft of the product at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 See also [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
 

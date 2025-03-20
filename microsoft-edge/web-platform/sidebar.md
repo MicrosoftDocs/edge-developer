@@ -30,7 +30,7 @@ The two different ways in which you can leverage the sidebar are designed to mee
 | Distribution | Like a website, the app is hosted on the app's web server. | The extension is distributed at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/). |
 | Capabilities | The app can make use of all web APIs and features, as well as PWA capabilities such as offline support, push, or file system access. | The extension can make use of powerful extension APIs, such as reading or modifying the current page. |
 | Context | The app runs in its own web context, separate from the main tab. | The extension can access the current webpage and modify the webpage via the extension's content script. |
-| Installation | The user installs the app by interacting with the sidebar when visiting the app's website. | The extension is installed by the user at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/). |
+| Installation | The user installs the app by interacting with the sidebar when visiting the app's website. | The extension is installed by users from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/). |
 | User experience | The app has its own icon in the sidebar. Clicking the icon opens the sidebar if it was closed and displays the app's contents. | The user experience depends on the extension. The extension can open the sidebar depending on the websites the user visits in the browser. |
 | Technologies used | Web development and PWA. See [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md). | Extension development.  See [Overview of Microsoft Edge extensions](../extensions-chromium/index.md). |
 
@@ -48,7 +48,7 @@ To learn more about PWAs and how to create them, see [Overview of Progressive We
 <!-- ====================================================================== -->
 ## Sidebar extensions
 
-Microsoft Edge extensions (add-ons) can optionally use the sidebar API to show a custom UI in the sidebar in Microsoft Edge. This is in addition to the other places extensions also appear in, such as in the Microsoft Edge toolbar, or as popups.
+Microsoft Edge extensions can optionally use the sidebar API to show a custom UI in the sidebar in Microsoft Edge.  This is in addition to the other places extensions also appear in, such as in the Microsoft Edge toolbar, or as popups.
 
 If your app's experience relies on powerful extensions APIs, for example to read or modify the current page, then a sidebar extension provides these capabilities.  Users can find and install these extensions at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
