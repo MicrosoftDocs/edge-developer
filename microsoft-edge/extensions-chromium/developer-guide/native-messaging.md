@@ -18,7 +18,7 @@ To acquire the extension and native app host, there are two different distributi
 
 *  Package your extension and the host together.  When a user installs the package, both the extension and the host are installed.
 
-*  Or, install your extension using the [Microsoft Edge Add-ons site](https://microsoftedge.microsoft.com/addons/), and your extension prompts users to install the host.
+*  Or, install your extension using the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site, and your extension prompts users to install the host.
 
 To create your extension to send and receive messages with native app hosts, do the following steps.
 

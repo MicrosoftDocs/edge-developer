@@ -16,7 +16,7 @@ In addition to the tools available in Microsoft Edge DevTools, you can add new t
 <!-- ====================================================================== -->
 ## Find an extension that extends DevTools
 
-The Microsoft Edge Add-ons site has a **Developer tools** category that contains extensions that typically extend DevTools.  See the [Developer tools category](https://microsoftedge.microsoft.com/addons/category/Developer-Tools) at the Microsoft Edge Add-ons site.
+The Microsoft Edge Add-ons site has a **Developer tools** category that contains extensions that typically extend DevTools.  See the [Developer tools](https://microsoftedge.microsoft.com/addons/category/Developer-Tools) category at the Microsoft Edge Add-ons site.
 
 There is no way to know if an extension extends the DevTools **Activity Bar**, without running it or looking at its source code, but the **Developer tools** category at the Microsoft Edge Add-ons site is a good place to look.
 
@@ -26,7 +26,9 @@ There is no way to know if an extension extends the DevTools **Activity Bar**, w
 
 To install an Edge Add-ons extension that extends DevTools:
 
-1. Go to the [Edge Add-ons](https://microsoftedge.microsoft.com/addons/) website, such as the [Developer tools category](https://microsoftedge.microsoft.com/addons/category/Developer-Tools), and go to the extension you want to install.  For example, go to the [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) extension:
+1. Go to the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site, such as the [Developer tools](https://microsoftedge.microsoft.com/addons/category/Developer-Tools) category, and go to the extension you want to install.
+
+   For example, go to the [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) extension, which is the example used for the steps below:
 
    ![The React Developer Tools page on the Microsoft Edge Add-ons site](./extensions-images/react-add-on-listing.png)
 

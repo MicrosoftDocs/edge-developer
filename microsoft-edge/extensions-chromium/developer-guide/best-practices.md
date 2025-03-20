@@ -26,4 +26,4 @@ Build an extension that conforms to Microsoft's standards for security, privacy,
 
 **Store listing**: Make sure that your extension's store listing sets correct user expectations and clearly communicates what the extension does.
 
-We'll continue gathering input about Developer experiences with extensions and updating these Best Practices.
+We'll continue gathering input about Developer experiences with extensions, and updating these Best Practices.

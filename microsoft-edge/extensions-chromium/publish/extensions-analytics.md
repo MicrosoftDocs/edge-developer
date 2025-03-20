@@ -12,7 +12,7 @@ ms.date: 11/07/2022
 
 Microsoft announced the launch of the Extensions Analytics Dashboard on September 8, 2021. For more information, see the [Track your add-on's performance: extension analytics now available on Partner center](https://techcommunity.microsoft.com/t5/articles/track-your-add-on-s-performance-extension-analytics-now/m-p/2733351) blog post.
 
-You can view extension metrics from your [Partner Center dashboard](https://partner.microsoft.com/dashboard/microsoftedge/overview) and evaluate an extension's performance from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+You can view extension metrics from your [Partner Center dashboard](https://partner.microsoft.com/dashboard/microsoftedge/overview) and evaluate an extension's performance from the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site.
 
 For example, you can identify regions in which the number of installations for your extension has increased in the past three months. You can also export this report as a CSV file.
 
@@ -26,7 +26,7 @@ Follow these steps to view your extension's analytics dashboard:
 <!-- ====================================================================== -->
 ## Analytics dashboard metrics
 
-From the analytics dashboard you can view metrics for the **Last month**, **3 months**, **6 months**, or **All time** (the period since your extension has been published to the Microsoft Edge Add-ons).
+From the analytics dashboard you can view metrics for the **Last month**, **3 months**, **6 months**, or **All time** (the period since your extension has been published to the Microsoft Edge Add-ons site).
 
 
 <!-- ------------------------------ -->
@@ -53,7 +53,7 @@ The following screenshot shows the **Weekly users** who have enabled and disable
 <!-- ------------------------------ -->
 #### Installs
 
-The **Installs** metric displays the total number of successful installs of your extensions per day from the Microsoft Edge Add-ons.
+The **Installs** metric displays the total number of successful installs of your extensions per day from the Microsoft Edge Add-ons site.
 
 The following screenshot shows daily successful installations for the last month.
 
@@ -63,9 +63,9 @@ The following screenshot shows daily successful installations for the last month
 <!-- ------------------------------ -->
 #### Impressions
 
-The **Impressions** metric captures the total number of page views and user visits to your extension product page on Microsoft Edge Add-ons. The data points are based on weekly or daily totals depending on the selected time range.
+The **Impressions** metric captures the total number of page views and user visits to your extension product page at the Microsoft Edge Add-ons site.  The data points are based on weekly or daily totals depending on the selected time range.
 
-The following screenshot shows **Impressions** for an extension page over a three month period.
+The following screenshot shows **Impressions** for an extension page over a three month period:
 
 ![Impressions for your extension over the past 3 months](./extensions-analytics-images/extensions-analytics-weekly-users-impressions.png)
 
@@ -109,6 +109,6 @@ The following screenshot shows Installs per Language over a six month period.
 > ![Language distribution for your extension](./extensions-analytics-images/extension-analytics-installs-filter-language-6-months.png)
 
 The Analytics Dashboard helps you better understand and engage with your extension users. For information about other 
-features launched on Partner Center, see [Released features for Microsoft Edge Add-ons - Microsoft Edge Developer documentation | Microsoft Docs](/microsoft-edge/extensions-chromium/whats-new/released-features).
+features launched on Partner Center, see [Released features for Microsoft Edge Add-ons](../whats-new/released-features.md).
 
 Share your feedback, questions, and comments with the team on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or via the [Microsoft Edge Insider forums on TechCommunity](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).

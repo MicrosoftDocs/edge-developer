@@ -88,7 +88,7 @@ The Extensions Analytics Dashboard enables you to view your extension's usage, a
 <!-- ====================================================================== -->
 ## Add team members to your Partner Center account
 
-You can add members from your organization and manage the settings on your Partner Center Account.  See [Add users to the Microsoft Edge program](/microsoft-edge/extensions-chromium/publish/aad-account).
+You can add members from your organization and manage the settings on your Partner Center Account.  See [Add users to the Microsoft Edge program](../publish/aad-account.md).
 
 *Released August 2021*
 
@@ -96,7 +96,7 @@ You can add members from your organization and manage the settings on your Partn
 <!-- ====================================================================== -->
 ## Sign into Microsoft Partner Center using your GitHub account
 
-You can use your personal GitHub account credentials to sign into Microsoft Partner Center to submit your Microsoft Edge Extension.  See [Register and sign in to Partner Center using a GitHub account](/microsoft-edge/extensions-chromium/publish/github).
+You can use your personal GitHub account credentials to sign into Microsoft Partner Center to submit your Microsoft Edge Extension.  See [Register and sign in to Partner Center using a GitHub account](../publish/github.md).
 
 *Released August 2021*
 
@@ -120,7 +120,9 @@ Microsoft Edge Add-ons now support extensions with Manifest V3. For more informa
 <!-- ====================================================================== -->
 ## Request to get your extension featured
 
-You can request the Collection where your extension should be featured on the Microsoft Edge Add-ons. You can submit your request at the [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u).
+You can request the Collection where your extension should be featured on the Microsoft Edge Add-ons site.
+
+To submit a request, go to [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u).<!-- suffix is required -->
 
 *Released April 2021*
 

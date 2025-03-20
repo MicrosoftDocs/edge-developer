@@ -10,7 +10,7 @@ ms.date: 11/01/2022
 ---
 # Register as a Microsoft Edge extension developer
 
-If you're new to Partner Center, this article will help you create a Partner Center account that you can use to submit Microsoft Edge extensions to the [Microsoft Edge Add-ons site](https://microsoftedge.microsoft.com/addons/).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account types](#account-types) below.
+If you're new to Partner Center, this article will help you create a Partner Center account that you can use to submit Microsoft Edge extensions to the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site.  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account types](#account-types) below.
 
 If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link to a suitable account. You'll learn how to create a Microsoft account (MSA) if you don't have one, and help you link the Microsoft account (MSA) to your Partner Center account.
 
@@ -109,7 +109,7 @@ An individual account is appropriate for a developer not associated with a compa
 
 A company account is associated with an organization or business.  The account verification process is longer and involves confirmation that you're authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
 
-For a company account, it's crucial to verify your Microsoft Edge program information when you enroll into a new Partner Center program.  This verification is needed to publish extensions to the Microsoft Edge Add-ons.  See [Verify your company account information](./verify-microsoft-edge-program.md).
+For a company account, it's crucial to verify your Microsoft Edge program information when you enroll into a new Partner Center program.  This verification is needed to publish extensions to the Microsoft Edge Add-ons site.  See [Verify your company account information](./verify-microsoft-edge-program.md).
 
 
 <!-- ------------------------------ -->
@@ -162,4 +162,4 @@ Other sites:
 * [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
 * [account.microsoft.com](https://account.microsoft.com/account)
 * [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
-* [Microsoft Edge Add-ons site](https://microsoftedge.microsoft.com/addons/)
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/)

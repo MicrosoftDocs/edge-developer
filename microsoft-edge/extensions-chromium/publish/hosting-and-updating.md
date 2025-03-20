@@ -10,7 +10,7 @@ ms.date: 12/18/2023
 ---
 # Extension hosting
 
-Most extensions are published to the [Microsoft Edge Add-ons site](https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions), to protect users from malicious extensions.
+Most extensions are published to the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site, to protect users from malicious extensions.
 
 
 <!-- ====================================================================== -->

@@ -1,5 +1,5 @@
 ---
-title: Curation and review process for the Microsoft Edge Add-ons
+title: Curation and review process for the Microsoft Edge Add-ons site
 description: How an extension that's submitted to the Microsoft Edge Add-ons site is curated and reviewed by the Microsoft Edge Add-ons team.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -12,15 +12,17 @@ ms.date: 10/13/2023
 
 The Microsoft Edge Add-ons team curates the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site experience so that users can find all the items to customize their browser in one place, such as themes, extensions, and apps.
 
+Available _items_ to customize the user's browser includes themes, extensions, and apps.
+
 Before installing an item from the Microsoft Edge Add-ons site, users can learn more about the functionality, data permissions, and publisher by viewing the item's description and listing.
 
 
 <!-- ====================================================================== -->
 ## Organizing Microsoft Edge Add-ons items
 
-The Microsoft Edge Add-ons site organizes the items to help users discover the ones that are relevant to their interests.
+The Microsoft Edge Add-ons site organizes items (such as themes, extensions, and apps) to help users discover the ones that are relevant to their interests.
 
-Users can also discover the items they are interested in on the Microsoft Edge Add-ons in several ways, including:
+Users can discover extensions they're interested in at the Microsoft Edge Add-ons site in several ways, including:
 * The home page.
 * The Search bar.
 * Curated collections of extensions at the Microsoft Edge Add-ons site.
@@ -35,7 +37,7 @@ The following factors are used to organize items:
 <!-- ====================================================================== -->
 ## Security review
 
-The quality and compliance of the extension that is displayed at the Microsoft Edge Add-ons site is verified per the guidelines that are set in the developer policy.
+The quality and compliance of the item that's displayed at the Microsoft Edge Add-ons site is verified per the guidelines that are set in the developer policy.
 
 Extensions that violate the policy guidelines are not allowed in the Microsoft Edge Add-ons site.  There is a standard review process for each new item submission and new versions of items, per the developer policies.
 
@@ -46,7 +48,7 @@ See also:
 <!-- ====================================================================== -->
 ## Ranking
 
-Every item submitted to the Microsoft Edge Add-ons has detailed information about the item's characteristics, such as:
+Every item (such as theme, extension, or app) that's submitted to the Microsoft Edge Add-ons site has detailed information about the item's characteristics, such as:
 
 * Screenshots.
 * The description of the item's features and functionality.
@@ -59,7 +61,7 @@ The Search ranking of the item is based on these characteristics.
 <!-- ====================================================================== -->
 ## User feedback
 
-In the Microsoft Edge Add-ons, users can provide a rating and a written review for the item they are using. Users and developers can report an abusive review from within the review section of the item listing page.
+In the Microsoft Edge Add-ons site, users can provide a rating and a written review for the item they are using. Users and developers can report an abusive review from within the review section of the item listing page.
 
 Items are ranked for popularity based on user ratings at the Microsoft Edge Add-ons site.
 

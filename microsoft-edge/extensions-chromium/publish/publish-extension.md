@@ -12,7 +12,7 @@ ms.date: 01/08/2025
 
 After you develop and test your Microsoft Edge extension, you're ready to distribute your extension. Use the Microsoft Edge Add-ons site to distribute your extension.  To release your existing Chromium extension for Microsoft Edge users, see [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md).
 
-Publish your extension to the [Microsoft Edge Add-ons site](https://microsoftedge.microsoft.com/addons/) to increase its reach and make it available to other Microsoft Edge users.  This article provides the process to submit your extension to the Microsoft Edge Add-ons site.
+Publish your extension to the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site to increase its reach and make it available to other Microsoft Edge users.  This article provides the process to submit your extension to the Microsoft Edge Add-ons site.
 
 
 <!-- ========================================================================== -->
@@ -336,7 +336,7 @@ Partner Center:
 * [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
 
 Microsoft Edge Add-ons site:
-* [Microsoft Edge Add-ons site](https://microsoftedge.microsoft.com/addons/)
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/)
 
 Developer Agreement & Legal:
 * [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
