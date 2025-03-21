@@ -68,7 +68,9 @@ The following are some of the flags we've seen used.
 
 For production apps, do not use these flags.  During development, if the flag is present, the behavior that's specified below results.
 
-<!-- requirements: consistent voice; during development, what's the result of adding the flag, instead of not adding the flag? -->
+<!-- requirements: consistent voice:
+during development, what is the result of this flag being present, in contrast to the norm which is that this flag is not present?
+does this flag take a true|false value? -->
 | Flag | Description |
 |---|---|
 | `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
