@@ -46,7 +46,8 @@ Also, make sure that you have the following information:
 
 The following examples use `1.0` as the version, and `aaaaaaaabbbbbbbbccccccccdddddddd` for the ID.
 
-Note: The URL cannot be customized, it will be generated automatically.
+This ID is the CRX ID, which is a unique 32-character code which is the letters that are present at the end of your extension's URL.  This ID is generated automatically, and it cannot be customized.
+
 
 <!-- ====================================================================== -->
 ## Using the Windows registry (Windows only)
@@ -81,7 +82,7 @@ To distribute your extension by using a preferences JSON file:
 
 1. Create a JSON file where the name of the file corresponds to the ID of your extension. For example, create a JSON file with the file name `aaaaaaaabbbbbbbbccccccccdddddddd.json`.
 
-   The name of the preferences JSON file is your Microsoft Edge extension's CRX ID, followed by a `.json` extension.  The CRX ID is a unique 32-character code which is the letters that are present at the end of your extension's URL.
+   The name of the preferences JSON file is your Microsoft Edge extension's CRX ID, followed by a `.json` extension.  The CRX ID is a unique 32-character code which is the letters that are present at the end of your extension's URL.  This ID is generated automatically, and it cannot be customized.
 
 1. Depending on your operating system, save the JSON file to one of the following folders:
 
