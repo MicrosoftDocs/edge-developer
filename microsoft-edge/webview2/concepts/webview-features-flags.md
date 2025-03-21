@@ -68,9 +68,12 @@ The following are some of the flags we've seen used.
 
 For production apps, do not use these flags.  During development, if the flag is present, the behavior that's specified below results.
 
-<!-- requirements: consistent voice:
-during development, what is the result of this flag being present, in contrast to the norm which is that this flag is not present?
-does this flag take a true|false value? -->
+<!-- requirements:
+Does this flag take a true|false value?  If so, use template:
+| `flag-name` | Takes a `true` or `false` value.  If `true`, [behavior].  If `false`, [behavior]. |
+If this flag doesn't take a value, use template:
+| `flag-name` | During development, what is the result of this flag being present?  (in contrast to the norm which is that this flag is not present)  Lead with verb that describes system result. |
+-->
 | Flag | Description |
 |---|---|
 | `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
@@ -82,7 +85,7 @@ does this flag take a true|false value? -->
 | `AutofillReplaceCachedWebElementsByRendererIds` | Replaces cached web elements in AutofillAgent and FormTracker by their renderer IDs. |
 | `autoplay-policy` | Command-line flag name to set the autoplay policy. |
 | `BlockInsecurePrivateNetworkRequests` | When this feature is enabled, private network requests that are initiated from non-secure contexts in the `public` address space are blocked. |
-| `block-new-web-contents` | Makes all pop-ups and calls to `window.open` fail. |
+| `block-new-web-contents` | Takes a `true` or `false` value.  If `true`, makes all pop-ups and calls to `window.open` fail.  If `false`, pop-ups and calls to `window.open` are honored. |
 | `BreakoutBoxPreferCaptureTimestampInVideoFrames` | Reverts the behavior of the `Timestamp` property of the `CoreWebView2Texture` class to match legacy behavior of WebView2 Runtime version 124 and earlier. |
 | `disable-background-timer-throttling` | Disables task throttling of timer tasks from background pages. |
 | `disable-domain-action-user-agent-override` | Disables the per-domain User Agent override from the Domain Actions feature. |
@@ -132,8 +135,8 @@ does this flag take a true|false value? -->
 | `msEdgeWebViewApplyWebResourceRequestedFilterForOOPIFs` | Makes the `AddWebResourceRequestedFilter` method (including overloads) also apply to out-of-process iframes. <br/>.NET: [AddWebResourceRequestedFilter](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter) <br/>WinRT: [AddWebResourceRequestedFilter](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addwebresourcerequestedfilter) <br/>Win32: [AddWebResourceRequestedFilterWithRequestSourceKinds](/microsoft-edge/webview2/reference/win32/icorewebview2_22#addwebresourcerequestedfilterwithrequestsourcekinds) |
 | `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
 | `msEnhancedTrackingPreventionEnabled` | Enables native privacy protection features, such as blocking cookies and web requests that reside in domains that are known to be tracking domains. |
-| `msFloatyMode` | Enables the Floaty feature.  If not enabled, the Floaty feature is disabled; for example because WebView doesn't support browser retention experiments. |
-| `msFloatyShouldHonorIndiaHoldout` | If enabled, honors the India holdout group.  If not enabled, disables the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
+| `msFloatyMode` | Takes a `true` or `false` value.  If `true`, enables the Floaty feature.  If `false`, disables the Floaty feature.  Use this flag to disable the Floaty feature, because WebView doesn't support browser retention experiments. |
+| `msFloatyShouldHonorIndiaHoldout` | Takes a `true` or `false` value.  If `true`, honors the India holdout group.  If `false`, disables the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
 | `msSingleSignOnForInPrivateWebView2` | This flag enables the single sign-on (SSO) flow for InPrivate (Incognito) sessions of WebView2.  Enables browser-based SSO in InPrivate (Incognito) mode. |
