@@ -46,6 +46,7 @@ Also, make sure that you have the following information:
 
 The following examples use `1.0` as the version, and `aaaaaaaabbbbbbbbccccccccdddddddd` for the ID.
 
+Note: The URL cannot be customized, it will be generated automatically.
 
 <!-- ====================================================================== -->
 ## Using the Windows registry (Windows only)
