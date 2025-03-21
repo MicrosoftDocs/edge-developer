@@ -1,6 +1,6 @@
 ---
 title: Alternative ways to distribute an extension
-description: How to distribute extensions using alternate methods that don't use verified browser extension stores.
+description: How to distribute a Microsoft Edge extension by using alternate methods that don't use verified browser extension stores.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 05/05/2023
 per https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions
 -->
 
-Generally, an extension is distributed by publishing it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  There are some scenarios where you might need to distribute an extension by using alternate methods.  For example:
+Generally, a Microsoft Edge extension is distributed by publishing it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  There are some scenarios where you might need to distribute an extension by using alternate methods.  For example:
 
 1. The extension is associated with other software, and it should be installed together with the rest of the bundled software.
 

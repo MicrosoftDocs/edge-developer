@@ -12,7 +12,7 @@ ms.date: 10/13/2023
 
 The Microsoft Edge extensions team curates the experience at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) so that users can find all the items to customize their browser in one place, such as themes, extensions, and apps.
 
-Available _items_ to customize the user's browser includes themes, extensions, and apps.
+Available _items_ to customize the user's browser include themes, extensions, and apps.
 
 Before installing an item from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), users can learn more about the functionality, data permissions, and publisher by viewing the item's description and listing.
 
@@ -25,12 +25,15 @@ Items at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), 
 Users can discover extensions they're interested in at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) in several ways, including:
 * The home page.
 * The Search bar.
-* Curated collections of extensions at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
-* Categories of extensions at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+* Curated collections of extensions.
+* Categories of extensions.
 
 The following factors are used to organize items:
+
 * **Quality:** Extensions that are featured at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) are selected based on their eligibility criteria.
+
 * **Relevancy:** Ranking takes into consideration factors such as the item name, description relevancy, popularity, and user experience.
+
 * **Popularity:** The number of ratings and the average rating are used for prioritizing items.
 
 
@@ -42,7 +45,7 @@ The quality and compliance of the item that's displayed at [Microsoft Edge Add-o
 Extensions that violate the policy guidelines are not allowed at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  There is a standard review process for each new item submission and new versions of items, per the developer policies.
 
 See also:
-* [Using Content Security Policy (CSP) to control which resources can be run](../developer-guide/csp.md)
+* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
 
 
 <!-- ====================================================================== -->
@@ -55,7 +58,7 @@ Every item (such as theme, extension, or app) that's published at [Microsoft Edg
 * Publisher information.
 * Links to the publisher site, privacy policies, and financial policies.
 
-The Search ranking of the item is based on these characteristics.
+The search ranking of the item is based on these characteristics.
 
 
 <!-- ====================================================================== -->
@@ -69,5 +72,4 @@ Items are ranked for popularity based on user ratings at [Microsoft Edge Add-ons
 <!-- ====================================================================== -->
 ## See also
 
-* [Using Content Security Policy (CSP) to control which resources can be run](../developer-guide/csp.md)
 * [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies)
