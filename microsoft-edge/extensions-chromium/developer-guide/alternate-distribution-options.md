@@ -44,9 +44,7 @@ Also, make sure that you have the following information:
 
 * The ID of your extension.  The ID information is available in Microsoft Edge at `edge://extensions` after you load the packed extension.
 
-The following examples use `1.0` as the version, and `aaaaaaaabbbbbbbbccccccccdddddddd` for the ID.
-
-This ID is the CRX ID, which is a unique 32-character code which is the letters that are present at the end of your extension's URL.  This ID is generated automatically, and it cannot be customized.
+The following examples use `1.0` as the version, and `aaaaaaaabbbbbbbbccccccccdddddddd` for the ID.  This ID is the CRX ID, which is a unique 32-character code which is the letters that are present at the end of your extension's URL.  This ID is generated automatically, and it cannot be customized.
 
 
 <!-- ====================================================================== -->
