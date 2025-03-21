@@ -132,7 +132,7 @@ Tree view:
 ![Heap Snapshot Visualizer in Tree mode](./devtools-109-images/heap-snapshot-visualizer-tree.png)
 
 See also:
-* [Heap Snapshot Visualizer](https://microsoftedge.microsoft.com/addons/detail/heap-snapshot-visualizer/fceldlhognbemkgfacnffkdanocidgce) - Microsoft Edge Add-ons Store.
+* [Heap Snapshot Visualizer](https://microsoftedge.microsoft.com/addons/detail/heap-snapshot-visualizer/fceldlhognbemkgfacnffkdanocidgce) at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 
 <!-- ====================================================================== -->

@@ -18,7 +18,7 @@ To acquire the extension and native app host, there are two different distributi
 
 *  Package your extension and the host together.  When a user installs the package, both the extension and the host are installed.
 
-*  Or, install your extension using the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home), and your extension prompts users to install the host.
+*  Or, install your extension from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), and your extension prompts users to install the host.
 
 To create your extension to send and receive messages with native app hosts, do the following steps.
 
@@ -129,7 +129,7 @@ Sideload your extension to test native messaging with the host.  To sideload you
 
 1. Copy the key from `microsoft_catalog_extension_id` (ID) from the extension listing on the page.
 
-When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge Add-ons website.  The extension ID of the published extension might differ from the ID that's used while sideloading your extension.  If the ID changed, update `allowed_origins` in the native messaging host manifest file with the ID of your published extension.
+When you're ready to distribute your extension to users, publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  The extension ID of the published extension might differ from the ID that's used while sideloading your extension.  If the ID changed, update `allowed_origins` in the native messaging host manifest file with the ID of your published extension.
 
 
 <!-- ====================================================================== -->
@@ -201,7 +201,9 @@ The `HKEY_CURRENT_USER\SOFTWARE\WOW6432Node` registry node is not searched on 64
 
 #### Extension IDs required for both stores
 
-If you have extensions on the Microsoft Edge Add-ons and the Chrome Web Store, you must add the extension IDs corresponding to both the stores in the `allowed_origins` of the native messaging host manifest file.  This is required because only the native messaging host manifest file that corresponds to the first registry location found is read.
+If you have an extension both at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) and the Chrome Web Store, you must add the extension IDs that correspond to both of the stores<!-- todo: copy 'stores' def'n to top? --> in the `allowed_origins` of the native messaging host manifest file.
+
+This is required because only the native messaging host manifest file that corresponds to the first registry location that's found is read.
 
 ##### [macOS](#tab/macos/)
 
@@ -213,7 +215,7 @@ To store the native messaging host manifest file:
    /Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_app.json
    ```
 
-*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the [user data directory](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md).  For example, the native messaging host manifest file must be stored in the following location:
+*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user data directory.  For example, the native messaging host manifest file must be stored in the following location:
 
    ```bash
    ~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/com.my_company.my_app.json
@@ -227,6 +229,10 @@ To store the native messaging host manifest file:
 
     When using the Stable channel, ` {Channel_Name}` isn't required.
 
+See:
+* [User Data Directory](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md) in Chromium docs.
+
+
 ##### [Linux](#tab/linux/)
 
 To store the native messaging host manifest file:
@@ -237,11 +243,14 @@ To store the native messaging host manifest file:
    /etc/opt/edge/native-messaging-hosts
    ```
 
-*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the [user data directory](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md).  The native messaging host manifest file must be stored in the following location:
+*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user data directory.  The native messaging host manifest file must be stored in the following location:
 
    ```bash
    ~/.config/microsoft-edge/NativeMessagingHosts
    ```
+
+See:
+* [User Data Directory](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md) in Chromium docs.
 
 ---
 
@@ -255,7 +264,7 @@ host is 1 MB, mainly to protect Microsoft Edge from misbehaving native applicati
 
 The first argument to the native messaging host is the origin of the caller, usually `chrome-extension://[ID of allowed extension]`.  This allows native messaging hosts to identify the source of the message when multiple extensions are specified in the `allowed_origins` key in the native messaging host manifest; see [Step 2: Create your native messaging host manifest file](#step-2-create-your-native-messaging-host-manifest-file), above.
 
-On Windows, the native messaging host is also passed a command line argument with a handle to the calling Microsoft Edge native window: `--parent-window=<decimal handle value>`.  This lets the native messaging host create native UI windows that are correctly parented.  Note that this value will be 0 if the calling context is a service worker.
+On Windows, the native messaging host is also passed a command line argument with a handle to the calling Microsoft Edge native window: `--parent-window=<decimal handle value>`.  This lets the native messaging host create native UI windows that are correctly parented.  This value will be 0 if the calling context is a service worker.
 
 When a messaging port is created by using [`runtime.connectNative`](https://developer.chrome.com/docs/extensions/reference/runtime/#method-connectNative), Microsoft Edge starts a native messaging host process and keeps it running until the port is destroyed.  On the other hand, when a message is sent by using [`runtime.sendNativeMessage`](https://developer.chrome.com/docs/extensions/reference/api/runtime#method-sendNativeMessage), without creating a messaging port, Microsoft Edge starts a new native messaging host process for each message.  In that case, the first message that's generated by the host process is handled as a response to the original request, and Microsoft Edge will pass it to the response callback specified when [`runtime.sendNativeMessage`](https://developer.chrome.com/docs/extensions/reference/api/runtime#method-sendNativeMessage) is called.  All other messages  generated by the native messaging host in that case are ignored.
 

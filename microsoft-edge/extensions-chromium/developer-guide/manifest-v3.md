@@ -49,7 +49,7 @@ Chromium has revised the timelines for ending support for Manifest V2.  See:
 
 To help you plan the migration of your extension from Manifest V2 to Manifest V3, consider the following schedule for support for Manifest V2 and V3 in Microsoft Edge and Microsoft Partner Center.
 
-The Microsoft Edge team will independently decide on MV3 migration timelines for Microsoft Edge Add-ons and share an update here.  We continue to analyze the concerns raised by extension developers and explore the optimal path for the Microsoft Edge Add-ons ecosystem.  Meanwhile, to plan the migration of your extension from Manifest V2 to Manifest V3, see [Manifest timeline for the Chromium browser engine](#manifest-timeline-for-the-chromium-browser-engine), above.
+The Microsoft Edge team will independently decide on MV3 migration timelines for Microsoft Edge extensions and share an update here.  We continue to analyze the concerns raised by extension developers and explore the optimal path for the Microsoft Edge extensions ecosystem.  Meanwhile, to plan the migration of your extension from Manifest V2 to Manifest V3, see [Manifest timeline for the Chromium browser engine](#manifest-timeline-for-the-chromium-browser-engine), above.
 
 
 **The Microsoft Edge team is currently in the process of updating this MV3 migration timeline.**

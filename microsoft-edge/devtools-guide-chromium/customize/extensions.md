@@ -10,25 +10,27 @@ ms.date: 07/18/2023
 ---
 # Add custom UI to DevTools using extensions
 
-In addition to the tools available in Microsoft Edge DevTools, you can add new tools by installing Microsoft Edge extensions, or build your own extensions for your specific use cases.  Edge Add-ons extensions often extend the Microsoft Edge user interface with new buttons and panels, but can also extend DevTools, within Microsoft Edge, by adding new tool tabs in the **Activity Bar**.
+In addition to the tools available in Microsoft Edge DevTools, you can add new tools by installing Microsoft Edge extensions, or build your own extensions for your specific use cases.  A Microsoft Edge extension often extends the Microsoft Edge user interface with new buttons and panels, but can also extend DevTools within Microsoft Edge, by adding a new tool tab in the **Activity Bar**.
 
 
 <!-- ====================================================================== -->
 ## Find an extension that extends DevTools
 
-The Edge Add-ons website has a **Developer tools** category that contains extensions that typically extend DevTools.  See the [Developer tools category](https://microsoftedge.microsoft.com/addons/category/Developer-Tools) on the Edge Add-ons website.
+The [Developer tools](https://microsoftedge.microsoft.com/addons/category/Developer-Tools) category at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) contains extensions that typically extend DevTools.
 
-There is no way to know if an extension extends the DevTools **Activity Bar**, without running it or looking at its source code, but the **Developer tools** category of the Edge Add-ons website is a good place to look.
+There is no way to know whether an extension extends the DevTools **Activity Bar**, without running it or looking at its source code, but the **Developer tools** category at Microsoft Edge Add-ons is a good place to look.
 
 
 <!-- ====================================================================== -->
 ## Install an extension in DevTools
 
-To install an Edge Add-ons extension that extends DevTools:
+To install a Microsoft Edge extension that extends DevTools:
 
-1. Go to the [Edge Add-ons](https://microsoftedge.microsoft.com/addons/) website, such as the [Developer tools category](https://microsoftedge.microsoft.com/addons/category/Developer-Tools), and go to the extension you want to install.  For example, go to the [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) extension:
+1. Go to [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), such as the [Developer tools](https://microsoftedge.microsoft.com/addons/category/Developer-Tools) category, and go to the extension you want to install.
 
-   ![The React Developer Tools page on the Edge Add-ons website](./extensions-images/react-add-on-listing.png)
+   For example, go to the [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) extension, which is the example used for the steps below:
+
+   ![The React Developer Tools page at Microsoft Edge Add-ons](./extensions-images/react-add-on-listing.png)
 
 1. Click the **Get** button.  An installation dialog opens, **Add \<extension name\> to Microsoft Edge?**
 

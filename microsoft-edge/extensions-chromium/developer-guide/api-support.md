@@ -133,4 +133,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 * [Chrome Extensions API reference for Manifest V2](https://developer.chrome.com/docs/extensions/mv2/reference/)
 * [Chrome Extensions API reference for Manifest V3](https://developer.chrome.com/docs/extensions/reference/api/)
-* [Using the REST API for updating Microsoft Edge Add-ons](../update/api/using-addons-api.md) - to update an extension at the Microsoft Edge Add-ons website.
+* [Use the REST API to update an extension at Microsoft Edge Add-ons](../update/api/using-addons-api.md) - to update an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
