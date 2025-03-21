@@ -10,7 +10,7 @@ ms.date: 09/19/2024
 ---
 # Use the REST API to update an extension at Microsoft Edge Add-ons
 
-Use this REST API to programmatically update an extension (or a theme) that's been published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) without using Partner Center. 
+Use this REST API to programmatically update an extension (or a theme) that's been published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at Microsoft Edge Add-ons without using Partner Center. 
 
 This REST API exposes endpoints for:
 * [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission)

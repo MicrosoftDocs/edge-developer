@@ -51,7 +51,7 @@ Users of your extension will be able to report issues through the extension's pa
 
 When this change is released, Microsoft Partner Center will not accept updates to existing Microsoft Edge extensions that use Manifest V2.  Microsoft Edge will no longer support or run Microsoft Edge extensions that use Manifest V2.
 
-Note that by using Microsoft Edge Enterprise Policies, Enterprise Accounts can<!--will still be able to?--> allow Microsoft Edge extensions that use Manifest V2 to run and operate on Microsoft Edge.
+By using Microsoft Edge Enterprise Policies, Enterprise Accounts can<!--will still be able to?--> allow Microsoft Edge extensions that use Manifest V2 to run and operate on Microsoft Edge.
 
 
 <!-- ====================================================================== -->

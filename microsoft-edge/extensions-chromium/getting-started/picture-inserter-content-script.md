@@ -197,7 +197,7 @@ Instead of installing the sample from [Microsoft Edge Add-ons](https://microsoft
 
    The **Select the extension directory** dialog closes.
 
-   The extension is installed in the browser, similar to an extension that's installed from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/):
+   The extension is installed in the browser, similar to an extension that's installed from Microsoft Edge Add-ons:
 
    ![Installed extensions page, showing a sideloaded extension](./picture-inserter-content-script-images/installed-extension.png)
 

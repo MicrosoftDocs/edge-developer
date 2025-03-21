@@ -18,7 +18,7 @@ In addition to the tools available in Microsoft Edge DevTools, you can add new t
 
 The [Developer tools](https://microsoftedge.microsoft.com/addons/category/Developer-Tools) category at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) contains extensions that typically extend DevTools.
 
-There is no way to know whether an extension extends the DevTools **Activity Bar**, without running it or looking at its source code, but the **Developer tools** category at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) is a good place to look.
+There is no way to know whether an extension extends the DevTools **Activity Bar**, without running it or looking at its source code, but the **Developer tools** category at Microsoft Edge Add-ons is a good place to look.
 
 
 <!-- ====================================================================== -->

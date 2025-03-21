@@ -18,7 +18,7 @@ Most extensions are published at [Microsoft Edge Add-ons](https://microsoftedge.
 
 All extensions are distributed to users as a special archive (`.zip`) file with a `.crx` suffix.  Extensions that are published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) are uploaded as `.zip` files.  The publishing process automatically converts the `.zip` file into a `.crx` file.
 
-The following two scenarios don't require you to publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/):
+The following two scenarios don't require you to publish your extension at Microsoft Edge Add-ons:
 *  Extensions that are distributed using Enterprise policy.
 *  Using unpacked extension directories on a local machine when Microsoft Edge is in developer mode.
 

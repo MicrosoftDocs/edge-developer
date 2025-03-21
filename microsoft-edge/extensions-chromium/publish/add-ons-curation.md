@@ -14,7 +14,7 @@ The Microsoft Edge extensions team curates the experience at [Microsoft Edge Add
 
 Available _items_ to customize the user's browser include themes, extensions, and apps.
 
-Before installing an item from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), users can learn more about the functionality, data permissions, and publisher by viewing the item's description and listing.
+Before installing an item from Microsoft Edge Add-ons, users can learn more about the functionality, data permissions, and publisher by viewing the item's description and listing.
 
 
 <!-- ====================================================================== -->
@@ -22,7 +22,7 @@ Before installing an item from [Microsoft Edge Add-ons](https://microsoftedge.mi
 
 Items at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), such as themes, extensions, and apps, are organized to help users discover the ones that are relevant to their interests.
 
-Users can discover extensions they're interested in at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) in several ways, including:
+Users can discover extensions they're interested in at Microsoft Edge Add-ons in several ways, including:
 * The home page.
 * The Search bar.
 * Curated collections of extensions.
@@ -30,7 +30,7 @@ Users can discover extensions they're interested in at [Microsoft Edge Add-ons](
 
 The following factors are used to organize items:
 
-* **Quality:** Extensions that are featured at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) are selected based on their eligibility criteria.
+* **Quality:** Extensions that are featured at Microsoft Edge Add-ons are selected based on their eligibility criteria.
 
 * **Relevancy:** Ranking takes into consideration factors such as the item name, description relevancy, popularity, and user experience.
 
@@ -42,7 +42,7 @@ The following factors are used to organize items:
 
 The quality and compliance of the item that's displayed at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) is verified per the guidelines that are set in the developer policy.
 
-Extensions that violate the policy guidelines are not allowed at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  There is a standard review process for each new item submission and new versions of items, per the developer policies.
+Extensions that violate the policy guidelines are not allowed at Microsoft Edge Add-ons.  There is a standard review process for each new item submission and new versions of items, per the developer policies.
 
 See also:
 * [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
@@ -66,7 +66,7 @@ The search ranking of the item is based on these characteristics.
 
 At [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), users can provide a rating and a written review for the item they are using. Users and developers can report an abusive review from within the review section of the item listing page.
 
-Items are ranked for popularity based on user ratings at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+Items are ranked for popularity based on user ratings at Microsoft Edge Add-ons.
 
 
 <!-- ====================================================================== -->

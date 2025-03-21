@@ -16,8 +16,7 @@ To port your Chrome extension:
 
 1. Review the Chrome extension APIs used in your extensions with the Microsoft Edge extensions [supported APIs](api-support.md) list.
 
-   > [!NOTE]
-   > If your extension uses APIs that aren't supported by Microsoft Edge, it might not port directly.
+   If your extension uses APIs that aren't supported by Microsoft Edge, it might not port directly.
 
 1. Remove the `update_url` field from the manifest file.
 

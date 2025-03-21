@@ -249,8 +249,7 @@ Currently, you can allowlist origins that have the following schemes: `blob`, `f
 
 For development ease, resources loaded over HTTP from servers on your local machine can be `allowlisted`.  You can allowlist script and object sources on any port of either `http://127.0.0.1` or `http://localhost`.
 
-> [!NOTE]
-> The restriction against resources loaded over HTTP applies only to those resources which are directly run.  You are still free, for example, to make `XMLHTTPRequest` connections to any origin you like; the default policy doesn't restrict `connect-src` or any of the other CSP directives in any way.
+The restriction against resources loaded over HTTP applies only to those resources which are directly run.  You are still free, for example, to make `XMLHTTPRequest` connections to any origin you like; the default policy doesn't restrict `connect-src` or any of the other CSP directives in any way.
 
 A relaxed policy definition which allows script resources to be loaded from `example.com` over HTTPS may look like:
 
@@ -258,8 +257,7 @@ A relaxed policy definition which allows script resources to be loaded from `exa
 "content_security_policy": "script-src 'self' https://example.com; object-src 'self'"
 ```
 
-> [!NOTE]
-> Both `script-src` and `object-src` are defined by the policy.  Microsoft Edge doesn't accept a policy that doesn't limit each of these values to (at least) '`self`'.
+Both `script-src` and `object-src` are defined by the policy.  Microsoft Edge doesn't accept a policy that doesn't limit each of these values to (at least) '`self`'.
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample extension, and a brief tutorial that goes into more detail.  -->
 
@@ -297,7 +295,7 @@ DOM injected scripts that run immediately upon injection into the page run as yo
 document.write("<script>alert(1);</script>");
  ```
 
-This content script causes an `alert` immediately upon the `document.write()`.  Note that this runs regardless of the policy a page specifies.  However, the behavior becomes more complicated both inside that DOM injected script and for any script that doesn't immediately run upon injection.
+This content script causes an `alert` immediately upon the `document.write()`.  This<!-- todo: script? alert? --> runs regardless of the policy that a page specifies.  However, the behavior becomes more complicated both inside that DOM injected script and for any script that doesn't immediately run upon injection.
 
 Imagine that your extension is running on a page that provides an associated CSP that specifies `script-src 'self'`.  Now imagine the content script runs the following code:
 

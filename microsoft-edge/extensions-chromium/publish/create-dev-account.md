@@ -53,7 +53,7 @@ To create a Microsoft account (MSA):
 
 If you have a Partner Center account for which the Primary Owner is a Microsoft account (MSA), use that Microsoft account (MSA) to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
 
-**Note:** The Microsoft Edge program doesn't currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Microsoft Entra tenants with that account, to be able to manage extensions.
+The Microsoft Edge program doesn't currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Microsoft Entra tenants with that account, to be able to manage extensions.
 
 
 <!-- ====================================================================== -->

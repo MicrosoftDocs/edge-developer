@@ -13,7 +13,7 @@ ms.date: 11/04/2022
 You can update or remove a published extension listing that's at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) at any time.
 
 See also:
-* [Set an externally installed extension to automatically update](./auto-update.md) - for an extension that doesn't use Partner Center and isn't at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+* [Set an externally installed extension to automatically update](./auto-update.md) - for an extension that doesn't use Partner Center and isn't at Microsoft Edge Add-ons.
 
 
 <!-- ====================================================================== -->

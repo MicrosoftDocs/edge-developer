@@ -96,7 +96,7 @@ To create an AD tenant, see [Create a new Microsoft Entra tenant to associate wi
 Also see [Associate an existing Microsoft Entra tenant with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center), in the Windows UWP documentation.  Associating a Microsoft Entra tenant with a Microsoft Edge Program account at Partner Center works the same way as associating a tenant with the Windows apps developer program.
 
 > [!IMPORTANT]
-> If you added users after associating your Microsoft Entra tenant with your Microsoft account on Partner Center, note that changing user roles or permissions isn't currently supported.  However, you can continue to add as many users as you require and use the filter option of the [user management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section to locate admins of specific roles.
+> If you added users after associating your Microsoft Entra tenant with your Microsoft account on Partner Center, changing user roles or permissions isn't supported.  However, you can continue to add as many users as you require and use the filter option of the [user management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section to locate admins of specific roles.
 
 
 <!-- ====================================================================== -->
