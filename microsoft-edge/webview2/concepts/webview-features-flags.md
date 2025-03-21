@@ -9,10 +9,16 @@ ms.subservice: webview
 ms.date: 03/20/2025
 ---
 # WebView2 browser flags
+<!-- lexicon:
+use:     60
+enable:  44
+set:     19
+present:  5
+-->
 
 One of the ways you can interact with Microsoft Edge WebView2 and impact behavior is by passing browser flags (arguments, or switches) to WebView2.  These browser flags are useful for testing forthcoming features, and for diagnosing issues.
 
-For production apps, do not enable these flags.  During development, if the flag is enabled, the behavior that's specified below results.
+For production apps, do not use these flags.  During development, if the flag is present, the behavior that's specified below results.
 
 > [!WARNING]
 > Apps in production shouldn't use WebView2 browser flags, because these flags might be removed or altered at any time, and aren't necessarily supported long-term.
@@ -60,9 +66,9 @@ See also Globals:
 
 The following are some of the flags we've seen used.
 
-For production apps, do not enable these flags.  During development, if the flag is enabled, the behavior that's specified below results.
+For production apps, do not use these flags.  During development, if the flag is present, the behavior that's specified below results.
 
-<!-- requirements: consistent voice -->
+<!-- requirements: consistent voice; what does the flag do when present? -->
 | Flag | Description |
 |---|---|
 | `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
