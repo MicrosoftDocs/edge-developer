@@ -6,11 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/18/2025
+ms.date: 03/20/2025
 ---
 # WebView2 browser flags
 
 One of the ways you can interact with Microsoft Edge WebView2 and impact behavior is by passing browser flags (arguments, or switches) to WebView2.  These browser flags are useful for testing forthcoming features, and for diagnosing issues.
+
+For production apps, do not enable these flags.  During development, if the flag is enabled, the behavior that's specified below results.
 
 > [!WARNING]
 > Apps in production shouldn't use WebView2 browser flags, because these flags might be removed or altered at any time, and aren't necessarily supported long-term.
@@ -58,8 +60,9 @@ See also Globals:
 
 The following are some of the flags we've seen used.
 
-If the flag is enabled, the following behavior results.
+For production apps, do not enable these flags.  During development, if the flag is enabled, the behavior that's specified below results.
 
+<!-- requirements: consistent voice -->
 | Flag | Description |
 |---|---|
 | `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
@@ -130,10 +133,10 @@ If the flag is enabled, the following behavior results.
 | `msSmartScreenProtection` | Makes SmartScreen protection available. |
 | `msUseSpellCheckCorrectionsCard` | Causes a corrections card UI to be shown when the user clicks a misspelled word. |
 | `msWebView2BrowserHitTransparent` | Allows the host application to handle input events before they are passed to the WebView2 control. |
-| `msWebView2CancelInitialNavigation` | Cancels the initial navigation in WebView2 to improve startup performance. |
+| `msWebView2CancelInitialNavigation` | Cancels the initial navigation in WebView2, to improve startup performance. |
 | `msWebView2CodeCache` | Makes JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses; see [Custom management of network requests](..\how-to\webresourcerequested.md). |
 | `msWebView2EnableDownloadContentInWebResourceResponseReceived` | Allows responses of navigations that become downloads to be available in `WebResourceResponseReceived`. |
-| `msWebView2TextureStream` | Allows streaming captured or composed video frames to the WebView2 control, where JavaScript can render or otherwise interact with the frames via W3C standard DOM APIs including the Video element, and MediaStream. |
+| `msWebView2TextureStream` | Allows streaming captured or composed video frames to the WebView2 control, where JavaScript can render or otherwise interact with the frames via W3C standard [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) APIs, including the [Video Embed element](https://developer.mozilla.org/docs/Web/HTML/Element/video) and [MediaStream](https://developer.mozilla.org/docs/Web/API/MediaStream). |
 | `msWebView2EnableDraggableRegions` | Enables webpages within WebView2 make use of the `app-region: drag\|nodrag` CSS style, which causes elements with that style to behave like a titlebar.  Without this flag, the `app-region: drag\|nodrag` CSS style has no effect. |
 | `msWebView2NativeEventDispatch` | Uses a native mojo connection to dispatch internal events, such as web messages to a renderer process. |
 | `msWebView2SimulateMemoryPressureWhenInactive` | Simulates memory pressure for an inactive WebView. |
