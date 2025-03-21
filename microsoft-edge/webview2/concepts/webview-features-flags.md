@@ -63,8 +63,9 @@ See also Globals:
 
 <!-- ====================================================================== -->
 ## Available WebView2 browser flags
+<!-- 1P -->
 
-The following are some of the flags we've seen used.
+The following WebView2 browser flags are available for use during development.
 
 For production apps, do not use these flags.  During development, if the flag is present, the behavior that's specified below results.
 
