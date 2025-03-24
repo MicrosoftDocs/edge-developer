@@ -6,47 +6,34 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/25/2025
+ms.date: 03/24/2025
 ---
 # About the list of tools
 
-DevTools provides more than 30 tools, consisting of _Default tools_ and _More tools_:
-
-* **Default tools:**
-   * ![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png) **Inspect tool**
-   * ![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png) **Device Emulation**
-   * ![Welcome icon](./about-tools-images/welcome-icon.png) **Welcome**
-   * ![Elements icon](./about-tools-images/elements-icon.png) **Elements**
-   * ![Console icon](./about-tools-images/console-icon.png) **Console**
-   * ![Sources icon](./about-tools-images/sources-icon.png) **Sources**
-   * ![Network icon](./about-tools-images/network-icon.png) **Network**
-   * ![Performance icon](./about-tools-images/performance-icon.png) **Performance**
-   * ![Memory icon](./about-tools-images/memory-icon.png) **Memory**
-   * ![Application icon](./about-tools-images/application-icon.png) **Application**
-
-   ![The default tools, including two icons and eight tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
-
-   The **Elements**, **Console**, and **Sources** tools (tabs) are permanent, in the **Activity Bar**.  The other tool tabs can be removed, or moved down to the **Quick View** toolbar.
-
-* **More tools:**
-   * Additional optional tools that can be added to the **Activity bar**, listed in the **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) menu, such as the **3D View** tool.
-
-
-The following features are additional ways to access the tools:
-
-*  The **Quick View** panel is an additional toolbar and area to hold tools, below or to the right of the **Activity Bar** panel.
-*  The **Command Menu** is a way to directly use features of tools.
-*  The **Settings** pages can turn on additional features of tools.
+DevTools provides more than 30 tools, consisting of _Default tools_ and _More tools_.
 
 
 <!-- ====================================================================== -->
-## Overview of all tools
+## Default tools
 
-Microsoft Edge DevTools includes the following tools.
+By default, the following tools are listed in the **Activity bar** at the top of DevTools:
+
+* ![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png) **Inspect tool**
+* ![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png) **Device Emulation**
+* ![Welcome icon](./about-tools-images/welcome-icon.png) **Welcome**
+* ![Elements icon](./about-tools-images/elements-icon.png) **Elements**
+* ![Console icon](./about-tools-images/console-icon.png) **Console**
+* ![Sources icon](./about-tools-images/sources-icon.png) **Sources**
+* ![Network icon](./about-tools-images/network-icon.png) **Network**
+* ![Performance icon](./about-tools-images/performance-icon.png) **Performance**
+* ![Memory icon](./about-tools-images/memory-icon.png) **Memory**
+* ![Application icon](./about-tools-images/application-icon.png) **Application**
+
+![The default tools, including two icons and eight tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
 
 
 <!-- ------------------------------ -->
-#### Default tools
+#### Overview of the default tools
 
 | Tool | Purpose | Article |
 | --- | --- | --- |
@@ -61,9 +48,19 @@ Microsoft Edge DevTools includes the following tools.
 | ![Memory icon](./about-tools-images/memory-icon.png) **Memory** | Find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections. | [Fix memory problems](memory-problems/index.md) |
 | ![Application icon](./about-tools-images/application-icon.png) **Application** | Use the **Application** tool to manage storage for web app pages, including manifest, service workers, local storage, cookies, cache storage, and background services. | [The Application tool, to manage storage](storage/application-tool.md) |
 
+The **Elements**, **Console**, and **Sources** tools (tabs) are permanent, in the **Activity Bar**.  The other tool tabs can be removed, or moved down to the **Quick View** toolbar.
+
+
+<!-- ====================================================================== -->
+## More tools
+
+The **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) button on the **Activity bar** lists additional, optional tools that can be added to the **Activity bar**.
+
+There's also a **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) button on the **Quick View** toolbar at the bottom of DevTools.  To show or hide the **Quick View** panel, press **Esc**; or click **Customize and control DevTools** (**...**) in the upper right, and then click **Toggle Quick View panel**.
+
 
 <!-- ------------------------------ -->
-#### More tools
+#### Overview of tools in the More tools menu
 
 | Tool | Purpose | Article |
 | --- | --- | --- |
@@ -93,15 +90,23 @@ Microsoft Edge DevTools includes the following tools.
 | **WebAudio** | Use the **WebAudio** tool to monitor WebAudio traffic.  The **WebAudio** tool uses the WebAudio API. | [WebAudio tool](webaudio/webaudio-tool.md) |
 | **WebAuthn** | Use the **WebAuthn** tool to create and interact with software-based virtual authenticators. | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
 
-
-<!-- ---------- -->
-###### The More tools menus
-
 The **More tools** (**+**) menu in the **Activity Bar** and in the **Quick View** toolbar is dynamic: it omits any tab tools that are open on that toolbar.
 
 
-<!-- ------------------------------ -->
-#### Experimental tools
+<!-- ====================================================================== -->
+## Additional ways to access the tools
+
+The following features are additional ways to access the tools:
+
+* The **Quick View** panel is an additional toolbar and area to hold tools, below or to the right of the **Activity Bar** panel.
+
+* The **Command Menu** is a way to directly use features of tools.
+
+* The **Settings** pages can turn on additional features of tools.
+
+
+<!-- ====================================================================== -->
+## Experimental tools
 
 Microsoft Edge DevTools potentially includes additional tools, if you select the experiment's check box in DevTools **Settings > Experiments**.  For example:
 
