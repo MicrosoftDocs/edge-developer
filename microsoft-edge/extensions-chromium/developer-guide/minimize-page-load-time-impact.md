@@ -141,7 +141,11 @@ Use the following best practices when configuring where your content scripts are
 
 * Use the most specific URL patterns possible for the `matches` and `exclude_matches` properties in your extension manifest file. For example, if your content script only needs to run on webpages of the example.com domain, use `https://example.com/*` instead of "`*://*/*`.
 
-* To control whether your content script only runs in the top-level frame, or also in nested frames of the webpage that matches a URL pattern, use the `all_frames` property in your extension manifest file. By default, this property is set to `false`, which means that your content script will only run in the top-level frame. If your content script needs to access or modify the DOM in nested frames, set this property to `true`. Note that setting `all_frames` to `true` increases the amount of code that runs on a webpage.
+* To control whether your content script only runs in the top-level frame, or also in nested frames of the webpage that matches a URL pattern, use the `all_frames` property in your extension manifest file.
+
+   * By default, `all_frames` is `false`, which means that your content script will only run in the top-level frame.
+
+   * If your content script needs to access or modify the DOM in nested frames, set `all_frames` to `true`.  This increases the amount of code that runs on a webpage.
 
 
 <!-- ====================================================================== -->
@@ -181,7 +185,7 @@ _Long-running synchronous tasks_ are synchronous tasks that take a long time to 
 
 Use asynchronous or non-blocking code, such as the Fetch API, JavaScript Promises, or Web Workers where possible. Asynchronous or non-blocking code allows the execution of other code while waiting for the completion of a task, without blocking the browser process that runs the webpage.
 
-Note that, although using Web Workers to move your complex code logic to another thread is a good practice, it might still slow down devices that have a low CPU core count or that are already busy.
+Although using Web Workers to move your complex code logic to another thread is a good practice, it might still slow down devices that have a low CPU core count or that are already busy.
 
 Below is an example using the Fetch API. While the data is being fetched, the browser is not blocked and can run other code:
 
@@ -223,11 +227,11 @@ chrome.runtime.sendMessage({type: 'request', data: 'some data'})
 <!-- ------------------------------ -->
 #### Run intensive tasks off the main thread
 
-Use Web Workers to run intensive tasks in your content script without blocking the thread that the browser uses to render the webpage. By using Web Workers, the code that runs the intensive tasks runs in a separate thread. Web Workers can improve the performance and responsiveness of your content script and of the webpages it runs on.
+Use Web Workers to run intensive tasks in your content script without blocking the thread that the browser uses to render the webpage.  By using Web Workers, the code that runs the intensive tasks runs in a separate thread.  Web Workers can improve the performance and responsiveness of your content script and of the webpages it runs on.
 
-Note that creating a Web Worker creates a new thread, which uses new resources on the devices. Using too many resources on low-end devices might lead to performance issues.
+Creating a Web Worker creates a new thread, which uses new resources on the devices.  Using too many resources on low-end devices might lead to performance issues.
 
-To communicate between your content script and Web Worker, use the `postMessage` and `onmessage` APIs. For example, to create a new Web Worker and send a message to it, use the following code:
+To communicate between your content script and Web Worker, use the `postMessage` and `onmessage` APIs.  For example, to create a new Web Worker and send a message to it, use the following code:
 
 ```javascript
 // Create a new Web Worker.
