@@ -63,7 +63,6 @@ See also Globals:
 
 <!-- ====================================================================== -->
 ## Available WebView2 browser flags
-<!-- 1P -->
 
 The following WebView2 browser flags are available for use during development.
 
