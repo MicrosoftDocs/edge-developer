@@ -1,6 +1,6 @@
 ---
 title: Extension hosting
-description: Host and publish Microsoft Edge extensions in the enterprise.
+description: Host and publish a Microsoft Edge extension in the enterprise.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,15 +10,15 @@ ms.date: 12/18/2023
 ---
 # Extension hosting
 
-Most extensions are published to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions), to protect users from malicious extensions.
+Most extensions are published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), to protect users from malicious extensions.
 
 
 <!-- ====================================================================== -->
 ## Publish options for extensions
 
-All extensions are distributed to users as a special archive (`.zip`) file with a `.crx` suffix.  Extensions published to the Microsoft Edge Add-ons website are uploaded as `.zip` files.  The publishing process automatically converts the `.zip` file into a `.crx` file.
+All extensions are distributed to users as a special archive (`.zip`) file with a `.crx` suffix.  Extensions that are published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) are uploaded as `.zip` files.  The publishing process automatically converts the `.zip` file into a `.crx` file.
 
-The following two scenarios don't require you to publish your extension in the Microsoft Edge Add-ons website:
+The following two scenarios don't require you to publish your extension at Microsoft Edge Add-ons:
 *  Extensions that are distributed using Enterprise policy.
 *  Using unpacked extension directories on a local machine when Microsoft Edge is in developer mode.
 
