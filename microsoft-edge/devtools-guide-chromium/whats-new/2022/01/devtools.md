@@ -25,7 +25,7 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 <!-- Title: Check out the new Detached Elements tool -->
 <!-- Subtitle: The new Detached Elements tool is now available by default in Microsoft Edge 97. -->
 
-March 2025 update: The **Detached Elements** tool is being removed.  To debug DOM memory leaks, use the **Detached elements** profiling type in the **Memory** tool.
+March 2025 update: The **Detached Elements** tool has been removed.  To debug DOM memory leaks, use the **Detached elements** profiling type in the **Memory** tool.
 
 A DOM node is considered _detached_ when it's no longer attached to any element of the DOM, but is still being retained in memory by Microsoft Edge.  The browser cannot garbage-collect the detached element, because some JavaScript object is still referencing the element, even though the element is no longer on the page or is no longer a part of the DOM.
 
