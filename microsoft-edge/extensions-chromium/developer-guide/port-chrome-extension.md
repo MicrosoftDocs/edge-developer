@@ -16,8 +16,7 @@ To port your Chrome extension:
 
 1. Review the Chrome extension APIs used in your extensions with the Microsoft Edge extensions [supported APIs](api-support.md) list.
 
-   > [!NOTE]
-   > If your extension uses APIs that aren't supported by Microsoft Edge, it might not port directly.
+   If your extension uses APIs that aren't supported by Microsoft Edge, it might not port directly.
 
 1. Remove the `update_url` field from the manifest file.
 
@@ -27,7 +26,7 @@ To port your Chrome extension:
 
 1. If you face any issues, you can debug your extensions in Microsoft Edge by using the DevTools, or [contact us](mailto:ext_dev_support@microsoft.com).
 
-1. Follow the [publishing guidelines](../publish/publish-extension.md) to publish your extension on Microsoft Edge Add-ons website.
+1. Follow the [publishing guidelines](../publish/publish-extension.md) to publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 
 <!-- ====================================================================== -->
@@ -39,4 +38,6 @@ If your extension exchanges messages with a native app by using `chrome.runtime.
 <!-- ====================================================================== -->
 ## Next steps
 
-After your extension package is ready to publish in the Microsoft Edge Add-ons website, [create a developer account](../publish/create-dev-account.md) and [publish your extension](../publish/publish-extension.md).
+After your extension package is ready to publish at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/):
+1. [Register as a Microsoft Edge extension developer](../publish/create-dev-account.md)
+1. [Publish a Microsoft Edge extension](../publish/publish-extension.md)
