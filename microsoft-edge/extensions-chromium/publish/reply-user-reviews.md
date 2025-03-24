@@ -10,7 +10,7 @@ ms.date: 11/07/2022
 ---
 # Reply to user reviews of an extension
 
-You can view and respond to user reviews of your extension that are posted on the Microsoft Edge Add-ons product page.  To view your extension's reviews and ratings and engage with the user who did the review, use the Partner Center dashboard.
+You can view and respond to user reviews of your extension that are at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  To view your extension's reviews and ratings and engage with the user who did the review, use the Partner Center dashboard.
 
 To view your extension's **Reviews** page:
 
@@ -52,7 +52,7 @@ To reply to a user review:
 
 A response must be between one and one thousand (1-1000) characters long.
 
-When you post a reply using the Partner Center dashboard, your reply appears on your Microsoft Edge Add-ons product page within 15 to 20 minutes.
+When you post a reply using the Partner Center dashboard, your reply appears on your extension's page at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) within 15 to 20 minutes.
 
 
 <!-- ====================================================================== -->
@@ -60,6 +60,6 @@ When you post a reply using the Partner Center dashboard, your reply appears on 
 
 * [Microsoft Edge Add-ons | NEW Feature to manage user reviews on your extension](https://techcommunity.microsoft.com/t5/articles/microsoft-edge-add-ons-new-feature-to-manage-user-reviews-on/m-p/3372537) - blog post.
 
-* [Released features for Microsoft Edge Add-ons](../whats-new/released-features.md) - recently released features at Partner Center.
+* [Released features for Microsoft Edge extensions](../whats-new/released-features.md) - recently released features at Partner Center.
 
 Share your feedback, questions, and comments with the team on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/), or see [You can now respond to user reviews on your Microsoft Edge Add-ons page](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18) in **Discussions** in the MicrosoftEdge-Extensions repo.
