@@ -108,7 +108,6 @@ A DOM node is only garbage-collected by the browser when there are no references
 |---|---|---|
 | Show detached elements only, as DOM tree nodes. | **Memory** tool > **Detached elements** profiling type | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
 | Show all objects in memory, filtered to display detached elements, with links to the JavaScript source code. | **Memory** tool > **Heap snapshot** profiling type > **Detached** | [Find DOM tree memory leaks ("Heap snapshot" profiling type > Detached)](./heap-snapshots.md#find-dom-tree-memory-leaks-heap-snapshot-profiling-type--detached) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_. |
-| Show detached elements only, as DOM tree nodes, with links to the JavaScript source code. | **Detached Elements** tool | [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md) |
 
 
 <!-- ====================================================================== -->
@@ -116,7 +115,6 @@ A DOM node is only garbage-collected by the browser when there are no references
 <!-- todo: all links in article -->
 
 * [Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)](./allocation-profiler.md)
-* [Debug DOM memory leaks by using the Detached Elements tool](./dom-leaks.md)
 * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md)
 <!--
 * [Detached Elements profiling type in Memory tool](../whats-new/2024/10/devtools-130.md#detached-elements-profiling-type-in-memory-tool) in _What's New in DevTools (Microsoft Edge 130)_.

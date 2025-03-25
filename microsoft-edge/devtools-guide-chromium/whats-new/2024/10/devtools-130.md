@@ -27,7 +27,8 @@ The **Detached elements** profiling type shows a view of the detached nodes to h
 ![Detached elements view](./devtools-130-images/detached-nodes.png)
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements feature](../../../memory-problems/dom-leaks.md)
+* [Debug DOM memory leaks ("Detached elements" profiling type)](../../../memory-problems/dom-leaks-memory-tool-detached-elements.md)
+* [Find DOM tree memory leaks from detached elements](../../../memory-problems/index.md#find-dom-tree-memory-leaks-from-detached-elements) in _Fix memory problems_.
 
 
 <!-- ====================================================================== -->
