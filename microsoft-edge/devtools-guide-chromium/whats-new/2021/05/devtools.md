@@ -47,7 +47,7 @@ The **More Tools** menu was available as an experiment in Microsoft Edge version
 ![The More Tools menu](./devtools-images/more-tools-menu.png)
 
 See also:
-* [The More Tools menus](../../../about-tools.md#the-more-tools-menus) in _About the list of tools_
+* [More tools](../../../about-tools.md#more-tools) in _About the list of tools_
 
 
 <!-- ====================================================================== -->
@@ -80,7 +80,7 @@ These improvements are especially relevant for users of localized DevTools, in w
 It's now easier to re-add a tool that you closed: a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) has been added to the main toolbar and the **Drawer** (now **Quick View**) toolbar.
 
 See also:
-* [About the list of tools](../../../about-tools.md#the-more-tools-menus)
+* [About the list of tools](../../../about-tools.md)
 
 
 <!-- ====================================================================== -->

@@ -513,7 +513,7 @@ To hide or expand **Quick View**, click **Collapse Quick View** (![Collapse icon
 <!-- ====================================================================== -->
 ## Overview of all tools
 
-For a summary of each tool, see [Overview of all tools](about-tools.md#overview-of-all-tools) in _About the list of tools_.
+For a summary of each tool, see [About the list of tools](./about-tools.md).
 
 
 <!-- ====================================================================== -->

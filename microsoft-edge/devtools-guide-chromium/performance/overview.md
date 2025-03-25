@@ -52,6 +52,7 @@ Use the **Performance** tool to analyze your website's performance.
 The **Performance** tool lets you record CPU performance profiles of your web applications.  Analyze profiles to find potential performance bottlenecks and ways you can optimize resource use.
 
 ![The Performance tool](./overview-images/performance-tool.png)
+<!-- https://microsoftedge.github.io/Demos/exploring-the-universe/ -->
 
 Use the **Performance** tool to do the following:
 
