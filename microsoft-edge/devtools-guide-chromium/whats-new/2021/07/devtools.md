@@ -55,9 +55,7 @@ Dark themes:
 <!-- Title: Introducing the Detached Elements tool -->
 <!-- Subtitle: Use the Detached Elements tool to find and fix DOM node memory leaks. -->
 
-October 2024 update: To debug DOM memory leaks, use either:
-* The **Detached Elements** tool.  Detached nodes have a link to the associated JavaScript code.
-* The **Detached elements** profiling type in the **Memory** tool.
+March 2025 update: The **Detached Elements** tool has been removed.  To debug DOM memory leaks, use the **Detached elements** profiling type in the **Memory** tool.
 
 A DOM node is considered "detached" when it is no longer attached to any element of the DOM but is still being retained in memory by Microsoft Edge. The browser cannot garbage-collect the element, because some JavaScript is still referencing the element even though it's no longer on the page or a part of the DOM.
 
@@ -68,7 +66,7 @@ The **Detached Elements** profiling type in the **Memory** tool finds all of the
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experiment, go to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**. -->
 
 See also:
-* [Debug DOM memory leaks by using the Detached Elements tool](../../../memory-problems/dom-leaks.md)
+* [Debug DOM memory leaks ("Detached elements" profiling type)](../../../memory-problems/dom-leaks-memory-tool-detached-elements.md)
 
 
 <!-- ====================================================================== -->
