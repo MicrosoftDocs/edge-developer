@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/21/2025
+ms.date: 03/25/2025
 ---
 # Debug WebView2 apps with Visual Studio Code
 
@@ -28,10 +28,10 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "request": "launch",
 "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
 "env": {
-   // The following variable is needed when "runtimeExecutable" property is set.
-   // The port number below shall match the value of "port" property above.
+   // The following variable is needed when the "runtimeExecutable" property is set.
+   // The port number below must match the value of the "port" property above.
    "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS": "--remote-debugging-port=9222" 
-   // Customize for your app location if needed.
+   // Customize for your app location.
    "Path": "%path%;e:/path/to/your/app/location; "
 },
 "useWebView": true,
@@ -41,7 +41,12 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "webRoot": "${workspaceFolder}/path/to/your/assets"
 ```
 
-> Instead of setting the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable, you can add a new registry value named `<myApp.exe>` with data `--remote-debugging-port=9222` to the registry under registry key `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port. See [WewbView2 browser flags](../concepts/webview-features-flags.md) for more information.
+
+<!-- ---------------------------------- -->
+#### Using a registry value
+
+Instead of setting the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable, you can add a new registry value named `<myApp.exe>` with data `--remote-debugging-port=9222` to the registry under registry key `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port.  For more information, see [WewbView2 browser flags](../concepts/webview-features-flags.md).
+
 
 <!-- ---------------------------------- -->
 #### Command-line URL parameter passed in
@@ -146,7 +151,12 @@ You also need to add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` u
 
    ![The resulting registry key in the Registry Editor](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
 
-> Instead of adding the above registry key, you can set the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable to `--remote-debugging-port=9222`. Make sure that your application was started after the environment variable had been set, and that your application inherits the variable. See [WewbView2 browser flags](../concepts/webview-features-flags.md) for more information.
+
+<!-- ---------------------------------- -->
+#### Using an environment variable
+
+Instead of adding the above registry key, you can set the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable to `--remote-debugging-port=9222`.  Make sure that your application is started after the environment variable is set, and make sure that your application inherits the environment variable.  For more information, see [WewbView2 browser flags](../concepts/webview-features-flags.md).
+
 
 <!-- ====================================================================== -->
 ## Debug tracing options
