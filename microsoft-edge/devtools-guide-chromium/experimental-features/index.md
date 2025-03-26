@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 03/04/2025
+ms.date: 03/06/2025
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -67,7 +67,7 @@ The following experimental features are turned on by default. You can use these 
 <!-- Deprecate CSS <length> authoring tool in the Styles tab - non-Edge -->
 <!-- Floating entry points for the AI assistance panel - non-Edge -->
 
-**Turned on by default in Microsoft Edge Stable 133:**
+**Turned on by default in Microsoft Edge Stable 134:**
 * [Redesign of the filter bar in the Network panel](#redesign-of-the-filter-bar-in-the-network-panel)
 * [Autofill panel](#autofill-panel)
 * [Performance panel: enable a switch to an alternative timeline navigation option](#performance-panel-enable-a-switch-to-an-alternative-timeline-navigation-option)
