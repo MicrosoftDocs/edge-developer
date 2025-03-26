@@ -554,12 +554,6 @@
                 - name: Optimize CSS styles with the CSS overview tool
                   href: ./devtools-guide-chromium/css/css-overview-tool.md
                   displayName: CSS overview tool
-# Detached Elements tool ------------------------------------------------------
-            - name: Detached Elements tool
-              items:
-                - name: Debug DOM memory leaks by using the Detached Elements tool # added article
-                  href: ./devtools-guide-chromium/memory-problems/dom-leaks.md
-                  displayName: Detached Elements tool
 # Developer resources tool ----------------------------------------------------
             - name: Developer resources tool
               items:
@@ -1630,9 +1624,6 @@
 
             - name: Archived Release Notes for the WebView2 SDK
               href: ./webview2/release-notes/archive.md
-
-            - name: WebView2 Roadmap
-              href: ./webview2/roadmap.md  # can delete
 
 # -----------------------------------------------------------------------------
         - name: WebView2 Reference
