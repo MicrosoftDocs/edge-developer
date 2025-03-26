@@ -130,6 +130,10 @@ In contrast, a recorded performance trace shows information about the performanc
 | local metrics, local data | The LCP, CLS, and INP metrics.  They are captured locally on the inspected webpage, and are updated as you interact with the page. | |
 | field metrics, field data | Data from the Chrome UX Report (CrUX), showing how most of your users experience your website. | [Overview of CrUX](https://developer.chrome.com/docs/crux) |
 
+
+<!-- ====================================================================== -->
+## Display Core Web Vitals metrics
+
 When you open the **Performance** tool, it immediately captures and displays the local [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) metrics, and displays their scores (**good**, **needs improvement**, or **bad**).
 
 The **Interaction to Next Paint (INP)** card is also displayed, initially without data.
@@ -137,6 +141,35 @@ The **Interaction to Next Paint (INP)** card is also displayed, initially withou
 ![Observing the initial metrics](./overview-images/observe-metrics.png)
 
 To get a breakdown of a metric score, hover over the metric value to see a tooltip.
+
+
+To interact with a webpage to display the **Interaction to Next Paint (INP)** card:
+
+1. Open the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo in a new window or tab.
+
+1. Right-click the webpage and then select **Inspect** to open DevTools, and then select the **Performance** tool.
+
+1. Set a 4x CPU slowdown and a slow 4G network throttle.
+
+1. Right-click the **Refresh** button to the left of the Address bar, and then select **Empty cache and hard refresh**.
+
+   This ensures that the image is loaded again from the server, not from the local cache.
+
+   The **LCP** card shows that the image took a long time to load.
+
+   The engine identifies this image of stars as the largest item to be rendered.
+
+   The **CLS** card shows orange and **0.15**.  This illustrates how sudden, unexpected jumps in the layout can negatively impact users.  This is also due to the image taking some time to load.
+
+   The demo webpage neglects to specify a height for the image, and so the page initially loads without reserving much space for the image.  When the image starts appearing, the content below it suddenly jumps down.
+
+1. Click the accordion items in the right column.
+
+   **INP** values are displayed.
+
+1. Click the INP values.
+
+   In the demo page, these values are designed to load slowly, so it takes a long time between clicking the value and rendering the corresponding content.  It's a random value between 100ms and 1000ms, leading to a high INP metric.
 
 
 <!-- ------------------------------ -->
@@ -220,7 +253,11 @@ To add field data:
 
       Additionally, if for some reason you can't get the field data automatically, you can select the **Always show field data for the below URL** checkbox and provide a URL.  The **Performance** tool will attempt to fetch field data for this URL first and then show you this field data no matter what page you navigate to.
 
-      To change your field data fetch settings after setup, in the **Performance** tool home page, in the **Field data** section, click the **Configure** button.  If the **Performance** tool home page is not shown, because the timeline is shown instead, optionally click the **Save profile** (![The Save profile icon](./overview-images/save-profile-icon.png)) button, and then click the **Clear** (![The Clear icon](./overview-images/clear-icon.png)) button.
+      To change your field data fetch settings after setup, in the **Performance** tool home page, in the **Field data** section, click the **Configure** button.  If the **Performance** tool home page is not shown, because the timeline is shown instead, to the right of the **x** (house) icon, 
+
+      Or, click the **Save profile** (![The Save profile icon](./overview-images/save-profile-icon.png)) button, and then click the **Clear** (![The Clear icon](./overview-images/clear-icon.png)) button.
+
+<!-- todo: bug: tooltip not shown on house icon when on the Live  -->
 
    <!-- end expander section -->
 
@@ -228,7 +265,7 @@ To add field data:
 
    With the field data fetch set up, the **Performance** tool now shows you a comparison between your local metric scores and those that your users experience.  You can see the collection period in the **Field data** section on the right.
 
-   ![The collection period of field data after it has fetched](./overview-images/field-data-fetched.png)<!-- todo: redo showing edge -->
+   ![The collection period of field data after it has fetched](./overview-images/field-data-fetched.png)
 
    To get a breakdown of a metric score, hover over the metric value to see a tooltip.
 
