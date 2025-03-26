@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/21/2025
+ms.date: 03/25/2025
 ---
 # Debug WebView2 apps with Visual Studio Code
 
@@ -28,7 +28,10 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "request": "launch",
 "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
 "env": {
-   // Customize for your app location if needed.
+   // The following variable is needed when the "runtimeExecutable" property is set.
+   // The port number below must match the value of the "port" property above.
+   "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS": "--remote-debugging-port=9222" 
+   // Customize for your app location.
    "Path": "%path%;e:/path/to/your/app/location; "
 },
 "useWebView": true,
@@ -37,6 +40,12 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "url": "file:///${workspaceFolder}/path/to/your/toplevel/foo.html",
 "webRoot": "${workspaceFolder}/path/to/your/assets"
 ```
+
+
+<!-- ---------------------------------- -->
+#### Using a registry value
+
+Instead of setting the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable, you can add a new registry value named `<myApp.exe>` with data `--remote-debugging-port=9222` to the registry under registry key `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port.  For more information, see [WewbView2 browser flags](../concepts/webview-features-flags.md).
 
 
 <!-- ---------------------------------- -->
@@ -109,8 +118,7 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "runtimeExecutable": "C:/path/to/your/webview2/myApp.exe",
 "env": {
    "Path": "%path%;e:/path/to/your/build/location; "
-},
-"useWebView": true
+}
 ```
 
 Your WebView2 control must open the Chrome Developer Protocol (CDP) port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a CDP port open, before starting the debugger.
@@ -142,6 +150,12 @@ You also need to add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` u
 1. Click the **OK** button, and then verify that the registry key matches the following (with the file name of your `.exe` file in the **Name** column):
 
    ![The resulting registry key in the Registry Editor](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
+
+
+<!-- ---------------------------------- -->
+#### Using an environment variable
+
+Instead of adding the above registry key, you can set the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable to `--remote-debugging-port=9222`.  Make sure that your application is started after the environment variable is set, and make sure that your application inherits the environment variable.  For more information, see [WewbView2 browser flags](../concepts/webview-features-flags.md).
 
 
 <!-- ====================================================================== -->
