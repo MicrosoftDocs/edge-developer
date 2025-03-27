@@ -361,6 +361,9 @@ To use the insights:
    ![Hovering over entries in the Insights tab ](./reference-images/insights-tab.png)
 
 
+   To make the **Interactions** tab visible, click the **Move activity bar to the left** (![The "Move activity bar to the left" icon](./reference-images/move-activity-bar-to-the-left-icon.png)) button.<!-- added in Edge doc -->
+
+
 <!-- ------------------------------ -->
 #### Navigate the recording
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#navigate -->

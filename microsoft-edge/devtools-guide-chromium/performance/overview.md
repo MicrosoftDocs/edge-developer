@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 03/19/2025
+ms.date: 03/27/2025
 ---
 <!-- Copyright Dale St. Marthe and Sofia Emelianova
 
@@ -23,6 +23,7 @@ ms.date: 03/19/2025
    limitations under the License.  -->
 # Performance tool: Analyze your website's performance
 <!-- https://developer.chrome.com/docs/devtools/performance/overview -->
+<!-- https://microsoftedge.github.io/Demos/exploring-the-universe/ -->
 
 Use the **Performance** tool to analyze your website's performance.
 
@@ -216,7 +217,7 @@ See [Core Web Vitals](https://web.dev/articles/vitals#core-web-vitals) in _Web V
 
 To interact with a webpage to display the **Interaction to Next Paint (INP)** card:
 
-1. Open the [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo in a new window or tab.
+1. Open the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo in a new window or tab.
 
 1. Right-click the webpage and then select **Inspect** to open DevTools, and then select the **Performance** tool.
 
@@ -251,6 +252,33 @@ The **Layout shifts** tab includes:
 * Scores.
 * Elements.
 
+Cumulative Layout Shift (CLS) is a measure of the most recent unexpected page layout shift.
+
+To produce a bad Cumulative Layout Shift (CLS) score, make the demo page wide, as follows:
+
+1. Go to a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In the **Activity Bar** at top, click the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
+
+   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
+
+1. Select **Next steps** pane > **Environment settings** card > **CPU throttling** dropdown > **4x slowdown - recommended**.
+
+1. Select **Next steps** pane > **Environment settings** card > **Network throttling** dropdown > **Slow 4G**.
+
+1. Right-click (or long-click) the **Refresh** button to the left of the Address bar, and then select **Empty cache and hard refresh**.
+
+1. Make the demo page wide.
+
+   The page is laid out again, and the **Cumulative Layout Shift (CLS)** card shows **needs improvement**.
+
+1. In the **Cumulative Layout Shift (CLS)** card, next to **Worst cluster**, click the **Go to worst layout shift cluster (1 shift)** link.
+
+
 To clear the **Layout shifts** tab, click the **Clear the current log** (![The Clear icon](./overview-images/clear-icon.png)) button to the right of the **Layout shifts** tab.
 
 
@@ -264,7 +292,7 @@ To add field data:
 
 1. In the **Performance** tool home page > **Next steps** section > **Field data** section, click the **Set up** button:
 
-   ![Performance tool home page: Set up button](./overview-images/field-data-set-up-button.png)<!-- 2nd use of this png -->
+   ![Performance tool home page: Set up button](./overview-images/field-data-set-up-button.png)<!-- 1st use of this png -->
 
    If the **Performance** tool home page is not shown, because the timeline is shown instead, optionally click the **Save profile** (![The Save profile icon](./overview-images/save-profile-icon.png)) button, and then click the **Clear** (![The Clear icon](./overview-images/clear-icon.png)) button.
 
@@ -327,17 +355,21 @@ The **Environment settings** section gives you recommendations about simulating 
 
 
 <!-- composed new procedure added in this section: -->
-1. Open a webpage; for example, right-click this [Sluggish Animation demo](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) link, and then open it in a new window or tab.
+1. Open a webpage; for example, right-click this [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) link, and then open it in a new window or tab.
 
-1. Right-click the demo page and then select **Inspect**.  DevTools opens.
+1. Right-click the demo page and then select **Inspect**.
 
-1. Select the **Performance** tool.
+   DevTools opens.
+
+1. In the **Activity Bar** at top, click the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
+
+   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
 
    The **Performance** tool home page appears:
 
-   ![Performance tool home page: Set up button](./overview-images/field-data-set-up-button.png)<!-- 1st use of this png -->
+   ![Performance tool home page: Set up button](./overview-images/field-data-set-up-button.png)<!-- 2nd use of this png -->
 
-   Local metrics<!-- per UI --> are sometimes called "live metrics".<!-- per upstream docs -->  Local metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.
+   Local metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.
 
 1. In the **Next steps** > **Field data** section, click the **Set up** button.
 
@@ -354,6 +386,11 @@ The **Environment settings** section gives you recommendations about simulating 
    Enabling field metrics changes the **Local metrics** section of the page to be **Local and field metrics**, and shows both the user's local metrics and metrics that were captured on real users' devices.
 
    In the **Performance** tool home page > **Next steps** section **Field data** section, the **Set up** button is replaced by the **Configure** button, which re-opens the **Configure field data fetching** dialog.
+
+To clear the UI, in the **Next steps** section > **Field data** card, click the **Configure** button, and then click the **Opt out** button.  The **Field data** card returns to the default state:
+
+![The Field data card in its default state](./overview-images/field-data-card-default.png)
+
 
 <!-- from start of upstream What's new section, w/ reformatted links: -->
 Live metrics provide metric-specific recommendations that help you configure your development environment as close as possible to what your users experience.  See [Monitor Core Web Vitals metrics](#monitor-core-web-vitals-metrics), above.
@@ -389,21 +426,30 @@ The difference between the local and field metrics, as seen above, shows that mo
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.
 
 <!-- added para's, compared to copied section: -->
-1. Open a webpage in an InPrivate browser window; for example, right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**.
+1. Open a webpage in an InPrivate browser window; for example, right-click the link [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) and then select **Open link in InPrivate window**.
 
-1. Right-click the demo webpage, and then select **Inspect**.
+1. Right-click the demo page and then select **Inspect**.
 
    DevTools opens.
 
-1. In DevTools, open the **Performance** tool:<!-- end of added para's -->
+1. In the **Activity Bar** at top, click the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
+
+   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
+
+   The **Performance** tool home page appears:
 
    ![The Performance tool, initial view](./overview-images/performance-tool-inprivate.png)
 
-1. Click the **Capture settings** (![Capture settings](./overview-images/capture-settings-icon.png)) button.
+<!-- todo: change to using home page's dropdowns like above ~~ -->
 
-   DevTools displays settings for capturing performance metrics.
+1. Select **Home page** > **Next steps** pane > **Environment settings** card > **CPU throttling** dropdown > **4x slowdown - recommended**.
 
-1. In the **CPU** drop-down list, select **4x slowdown - recommended**:
+   Or, select **Capture settings** (![Capture settings icon with a blue dot](./overview-images/capture-settings-icon-blue-dot.png)) > **CPU throttling** dropdown > **4x slowdown - recommended**.
+
+1. Select **Home page** > **Next steps** pane > **Environment settings** card > **Network throttling** dropdown > **Slow 4G**.
+
+   Or, select **Capture settings** (![Capture settings icon with a blue dot](./overview-images/capture-settings-icon-blue-dot.png)) > **Network throttling** dropdown > **Slow 4G**.
+
 
    ![CPU throttle](./overview-images/capture-settings.png)
 
