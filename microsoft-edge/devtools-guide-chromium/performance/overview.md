@@ -46,24 +46,46 @@ Use the **Performance** tool to analyze your website's performance.
 
 
 <!-- ====================================================================== -->
-## Overview
+## Switch between Local metrics view and recorded profile timeline view
+<!-- upstream heading: ## Overview -->
 <!-- https://developer.chrome.com/docs/devtools/performance/overview#overview -->
-
-The **Performance** tool lets you record CPU performance profiles of your web applications.  Analyze profiles to find potential performance bottlenecks and ways you can optimize resource use.
-
-![The Performance tool](./overview-images/performance-tool.png)
 <!-- https://microsoftedge.github.io/Demos/exploring-the-universe/ -->
+<!-- covers basic nav between the two states, and what to use them for, not how to use either view -->
 
-Use the **Performance** tool to do the following:
+The **Performance** tool displays local metrics for page interactions, and lets you record CPU performance profiles of your web applications.  Analyze profiles to find potential performance bottlenecks and ways that you can optimize resource use.
 
-* View local Core Web Vitals metrics: Largest Contentful Paint (LCP), Cumulative Layout Shift (CLS), and Interaction to Next Paint (INP).
+Use the **Performance** tool to view Core Web Vitals metrics in the initial, **Local metrics** view.  The home page of the **Performance** tool shows **Local metrics**, which is performance metrics about the rendered webpage:
+
+* Largest Contentful Paint (LCP) - How quickly the main content of the page loaded.
+* Cumulative Layout Shift (CLS) - A measure of the most recent unexpected page layout shift.
+* Interaction to Next Paint (INP) - The responsiveness of the most recent user interaction on the page.
+
+When you initially open the **Performance** tool, Core Web Vitals metrics are displayed, in three cards in a **Local metrics** section:
+
+![The Performance tool home page showing Local metrics](./overview-images/performance-tool-intro-home-page.png)<!-- do not reuse -->
+
+To switch to displaying an opened recorded profile timeline, click the **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon, dimmed](./overview-images/house-icon-dimmed.png)) button.
+
+Also use the **Performance** tool to view a recorded performance trace, including: 
 * Record a performance profile.
 * Change capture settings.
-* Analyze a performance report.
+* Analyze a performance report.  Shows information about the performance of the page over the period of time where the recording occurred, such as:
+   * The user interactions that occurred during the recording.
+   * The JavaScript code that ran.
+   * The styling and layout operations that occurred.
+   * Other performance metrics over time, such as network requests and layout shifts.
 
-When you initially open the **Performance** tool, Core Web Vitals metrics are displayed, in three cards in a **Local metrics** section.  After you record a performance trace, the performance trace is displayed instead of Core Web Vitals.  A dropdown menu enables switching between Core Web Vitals (**Local metrics**) and multiple recorded performance traces.
+After you record a performance trace, the performance trace is displayed instead of **Local metrics**.  
 
-For a comprehensive guide on improving your website's performance, see [Analyze runtime performance (tutorial)](./index.md).
+The **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon, dimmed](./overview-images/house-icon-dimmed.png)) button, enables switching between **Local metrics** (Core Web Vitals) and multiple recorded performance traces (also called _profiles_ or _timeline sessions_).
+
+![The Performance tool displaying a recorded profile](./overview-images/performance-tool-intro-profile.png)<!-- do not reuse -->
+
+To switch to displaying the initial, **Local metrics** view, click the **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon](./overview-images/house-icon.png)) button.
+
+To switch to displaying a different opened recorded profile timeline, click the **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon](./overview-images/house-icon.png)) button.
+
+For a walkthrough of using the **Performance** tool to improve your website's performance, see [Analyze runtime performance (tutorial)](./index.md).
 
 
 <!-- ====================================================================== -->
@@ -72,11 +94,13 @@ For a comprehensive guide on improving your website's performance, see [Analyze 
 
 To open the **Performance** tool: 
 
-1. Right-click a webpage,<!-- https://microsoftedge.github.io/Demos/devtools-performance-get-started/ --> and then select **Inspect**.
+1. Go to a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
 
    DevTools opens.
 
-1. In the **Activity Bar** at top, select the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
+1. In the **Activity Bar** at top, click the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
 
    If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
 
@@ -85,36 +109,34 @@ To open the **Performance** tool:
 #### Using the Command Menu
 <!-- added heading as separator, compared to upstream -->
 
-Or, open the **Performance** tool by using the **Command Menu**, as follows:
+To open the **Performance** tool by using the **Command Menu**:
 
-1. Right-click a webpage, and then select **Inspect**.
+1. Go to a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
 
    DevTools opens.
 
-1. Open the **Command Menu** by pressing:
+1. In the upper right of DevTools, click **Customize and control DevTools**, click **Run command**.
+
+   Or, press:
 
    * macOS: **Command+Shift+P**
    * Windows, Linux, ChromeOS: **Control+Shift+P**
 
-   ![Command Menu with 'performance' entered](./overview-images/command-menu-performance.png)
+   The **Command Menu** opens, and reads **Run >Command**.
 
 1. Start typing **performance**, select **Show Performance [panel]**, and then press **Enter**.
+
+   ![Command Menu with 'performance' entered](./overview-images/command-menu-performance.png)
 
 
 <!-- ====================================================================== -->
 ## Monitor Core Web Vitals metrics
 <!-- ## Observe Core Web Vitals live  https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
+<!-- details about using this view -->
 
-The home page of the **Performance** tool shows performance metrics about the rendered webpage, such as:
-* Largest Contentful Paint (LCP), which shows how quickly the main content of the page loaded.
-* Cumulative Layout Shift (CLS), which shows a measure of the most recent unexpected layout shift.
-* Interaction to Next Paint (INP), which assesses the responsiveness of the most recent user interaction on the page.
-
-In contrast, a recorded performance trace shows information about the performance of the page over the period of time where the recording occurred, such as:
-* The user interactions that occurred during the recording.
-* The JavaScript code that ran.
-* The styling and layout operations that occurred.
-* Other performance metrics over time, such as network requests and layout shifts.
+To view **Local metrics** (Core Web Vitals metrics) instead of a profile, see [Switch between Local metrics view and recorded profile timeline view](#switch-between-local-metrics-view-and-recorded-profile-timeline-view), above.
 
 
 <!-- ---------------------------------- -->
@@ -145,13 +167,25 @@ To get a breakdown of a metric score, hover over the metric value to see a toolt
 
 To interact with a webpage to display the **Interaction to Next Paint (INP)** card:
 
-1. Open the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo in a new window or tab.
+1. Open a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
 
-1. Right-click the webpage and then select **Inspect** to open DevTools, and then select the **Performance** tool.
+1. Right-click the webpage and then select **Inspect**.
 
-1. Set a 4x CPU slowdown and a slow 4G network throttle.
+   DevTools opens.
 
-1. Right-click the **Refresh** button to the left of the Address bar, and then select **Empty cache and hard refresh**.
+1. In the **Activity Bar** at top, click the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
+
+   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
+
+1. Select **Home page** > **Next steps** pane > **Environment settings** card > **CPU throttling** dropdown > **4x slowdown - recommended**.
+
+   Or, select **Capture settings** (![Capture settings icon with a blue dot](./overview-images/capture-settings-icon-blue-dot.png)) > **CPU throttling** dropdown > **4x slowdown - recommended**.
+
+1. Select **Home page** > **Next steps** pane > **Environment settings** card > **Network throttling** dropdown > **Slow 4G**.
+
+   Or, select **Capture settings** (![Capture settings icon with a blue dot](./overview-images/capture-settings-icon-blue-dot.png)) > **Network throttling** dropdown > **Slow 4G**.
+
+1. Right-click (or long-click) the **Refresh** button to the left of the Address bar, and then select **Empty cache and hard refresh**.
 
    This ensures that the image is loaded again from the server, not from the local cache.
 
