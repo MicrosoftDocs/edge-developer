@@ -69,9 +69,9 @@ The following WebView2 browser flags are available for use during development.
 For production apps, do not use these flags.  During development, if the flag is present, the behavior that's specified below results.
 
 <!-- requirements:
-During development, what is the result of this flag being present?  (in contrast to the norm which is that this flag is not present)  Lead with verb that describes system result. |
+During development, what is the result of this flag being present?  (In contrast to the norm which is that this flag is not present.)  Lead with verb that describes system result. |
 Specify whether the flag takes a value.  If the flag takes a value, state the type of value, such as boolean (true|false), or string (such as server URL list).
-Give an example. -->
+If the flag takes a value other than true|false, give an example. -->
 | Flag | Description |
 |---|---|
 | `accept-lang` | Specifies `Accept-Language` to send to servers and expose to JavaScript via the [Navigator.language](https://developer.mozilla.org/docs/Web/API/Navigator/language) DOM property.  The format is `language[-country]`, where `language` is the 2-letter code from ISO-639. |
