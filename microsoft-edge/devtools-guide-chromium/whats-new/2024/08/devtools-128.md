@@ -31,7 +31,8 @@ After:
 ![New selector stats labels](./devtools-128-images/new-selector-stats.png)
 
 See also:
-* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Enable advanced paint instrumentation](../../../performance/reference.md#enable-advanced-paint-instrumentation) in _Performance features reference_.
+* [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->
@@ -75,7 +76,7 @@ See also:
 WebSocket activities have been added to the **Network** track in the **Performance** tool, to help correlate JavaScript activity with WebSocket messages.  This can help identify whether latency issues are coming from the client's parsing of a message, or from the server's response.
 
 See also:
-* [Introduction to the Performance tool](../../../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../../../performance/index.md)
 
 
 <!-- ====================================================================== -->

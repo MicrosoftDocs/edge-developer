@@ -47,7 +47,7 @@ See also:
 * [Performance tool unminifies file and function names when profiling production code](../03/devtools-111.md#performance-tool-unminifies-file-and-function-names-when-profiling-production-code) in _What's New in DevTools (Microsoft Edge 111)_.
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
-* [Record performance](../../../evaluate-performance/reference.md#record-performance) in _Performance features reference_.
+* [Record performance](../../../performance/reference.md#record-performance) in _Performance features reference_.
 
 
 <!-- ====================================================================== -->
@@ -71,7 +71,7 @@ To analyze individual CSS selector performance and analyze the impact of your ch
 
 See also:
 * [Optimize CSS styles with the CSS overview tool](../../../css/css-overview-tool.md)
-* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->

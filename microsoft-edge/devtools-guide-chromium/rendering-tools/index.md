@@ -23,7 +23,7 @@ ms.date: 2/22/2023
    limitations under the License.  -->
 # Troubleshooting common performance issues
 
-<!-- not able to find this article or its strings in other repo; the link redirects.  "todo" items might not be actionable -->
+<!-- not able to find this article or its strings in other repo; the [here] link redirects.  "todo" items might not be actionable -->
 
 Users expect interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank (interruptions of rendering).  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.
 
@@ -179,7 +179,7 @@ To find out how long painting takes, or how often painting occurs:
 
 1. Take a recording.
 
-If most of your rendering time is spent painting, you have paint problems.  For more information, see [Turn on advanced rendering instrumentation](../evaluate-performance/reference.md#turn-on-advanced-rendering-instrumentation) in _Performance features reference_.
+If most of your rendering time is spent painting, you have paint problems.  For more information, see [Enable advanced paint instrumentation](../performance/reference.md#enable-advanced-paint-instrumentation) in _Performance features reference_.
 
 
 <!--
@@ -188,7 +188,7 @@ If most of your rendering time is spent painting, you have paint problems.  For 
 
 <!--
 Check out the **Rendering** panel for further configurations that can help you diagnose paint problems.
-todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live.
+todo: link Rendering panel in ../performance/timeline-tool  sub-section when live.
 The Timeline Tool page is deprecated.
 -->
 

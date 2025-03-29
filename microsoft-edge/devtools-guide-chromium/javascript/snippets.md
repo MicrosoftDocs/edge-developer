@@ -73,11 +73,11 @@ To open the **Snippets** tab:
 
 #### Open the Snippets tab from the Command Menu
 
-You can also open the **Snippets** tab by using the Command Menu:
+You can also open the **Snippets** tab by using the **Command Menu**:
 
 1. Select anything in DevTools, so that DevTools has focus.
 
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
 1. Start typing "snippets", select **Show Snippets**, and then press **Enter** to run the command:
 
@@ -101,7 +101,7 @@ To create a new snippet from the **Snippets** tab:
 
 1. Focus your cursor somewhere in DevTools.
 
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
 1. Start typing "snippet", select **Create new snippet**, and then press **Enter**:
 
@@ -145,7 +145,7 @@ To edit the source code of a snippet:
 
 1. Focus your cursor somewhere in DevTools.
 
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
 1. Delete the **>** character and type the **!** character followed by the name of the snippet that you want to run:
 

@@ -108,7 +108,6 @@ The following screenshot shows Installs per Language over a six month period.
 > [!div class="mx-imgBorder"]
 > ![Language distribution for your extension](./extensions-analytics-images/extension-analytics-installs-filter-language-6-months.png)
 
-The Analytics Dashboard helps you better understand and engage with your extension users. For information about other 
-features launched on Partner Center, see [Released features for Microsoft Edge extensions](../whats-new/released-features.md).
+The Analytics Dashboard helps you better understand and engage with your extension users.  For information about other features launched on Partner Center, see [Released features for Microsoft Edge extensions](../whats-new/released-features.md).
 
 Share your feedback, questions, and comments with the team on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or via the [Microsoft Edge Insider forums on TechCommunity](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).

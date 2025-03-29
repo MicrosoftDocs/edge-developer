@@ -231,14 +231,14 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### New Memory Inspector tool
+#### New Memory inspector tool
 
-Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript and Wasm memory:
+Use the new **Memory inspector** tool to inspect an `ArrayBuffer` in JavaScript and Wasm memory:
 
-![The Memory Inspector tool](./devtools-images/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.png)
+![The Memory inspector tool](./devtools-images/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.png)
 
 See:
-* [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](../../../memory-inspector/memory-inspector-tool.md)
+* [Inspect a JavaScript ArrayBuffer with the Memory inspector tool](../../../memory-inspector/memory-inspector-tool.md)
 * [Using the Debugger pane to debug JavaScript code](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code)
 
 For the history of this feature in the Chromium open-source project, see Issue [1166577](https://crbug.com/1166577).
