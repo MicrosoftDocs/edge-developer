@@ -71,7 +71,7 @@ When you initially open the **Performance** tool, Core Web Vitals metrics are di
 
 ![The Performance tool home page showing Local metrics](./overview-images/performance-tool-intro-home-page.png)<!-- do not reuse -->
 
-To switch to displaying an opened recorded profile timeline, click the **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon, dimmed](./overview-images/house-icon-dimmed.png)) button.
+To switch to displaying an opened recorded profile timeline, click the **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the local metrics page" (house) icon, dimmed](./overview-images/house-icon-dimmed.png)) button.
 
 Also use the **Performance** tool to view a recorded performance trace, including: 
 * Record a performance profile.
@@ -84,7 +84,7 @@ Also use the **Performance** tool to view a recorded performance trace, includin
 
 After you record a performance trace, the performance trace is displayed instead of **Local metrics**.  
 
-The **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon, dimmed](./overview-images/house-icon-dimmed.png)) button, enables switching between **Local metrics** (Core Web Vitals) and multiple recorded performance traces (also called _profiles_ or _timeline sessions_).
+The **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the live metrics page" icon, dimmed](./overview-images/house-icon-dimmed.png)) button, enables switching between **Local metrics** (Core Web Vitals) and multiple recorded performance traces (also called _profiles_ or _timeline sessions_).
 
 ![The Performance tool displaying a recorded profile](./overview-images/performance-tool-intro-profile.png)<!-- do not reuse -->
 
