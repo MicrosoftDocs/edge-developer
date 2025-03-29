@@ -34,7 +34,8 @@ To switch between these two views, at the top of the **Performance** tool, use:
 * The **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon, dimmed](./overview-images/house-icon.png)) button.
 * The **Show recent timeline sessions** dropdown list, to the right of that button.
 
-**Detailed contents:**
+<!-- todo: update -->
+<!-- **Detailed contents:**
 * [Overview](#overview)
 * [Open the Performance tool](#open-the-performance-tool)
    * [Using the Command Menu](#using-the-command-menu)
@@ -43,14 +44,12 @@ To switch between these two views, at the top of the **Performance** tool, use:
    * [Interactions tab](#interactions-tab)
    * [Layout shifts tab](#layout-shifts-tab)
    * [View local and field metrics](#view-local-and-field-metrics)
-      * [Compare your experience to the experience of your users](#compare-your-experience-to-the-experience-of-your-users)
    * [Simulate a real user environment](#simulate-a-real-user-environment)
-      * [Configure your environment to better match that of your users](#configure-your-environment-to-better-match-that-of-your-users)
 * [Capture and analyze a performance report](#capture-and-analyze-a-performance-report)
    * [Record a performance profile](#record-a-performance-profile)
    * [Change capture settings](#change-capture-settings)
    * [Analyze a performance report](#analyze-a-performance-report)
-* [Improve performance with these tools](#improve-performance-with-these-tools)
+* [Improve performance with these tools](#improve-performance-with-these-tools) -->
 
 
 <!-- ====================================================================== -->
@@ -144,6 +143,69 @@ To open the **Performance** tool by using the **Command Menu**:
 <!-- ## Observe Core Web Vitals live  https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
 <!-- details about using this view -->
 
+
+<!-- ------------------------------ -->
+#### Using the demo page
+
+The webpage in this directory is a demo for the [Monitor Core Web Vitals metrics](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/performance/overview#monitor-core-web-vitals-metrics) section of the [Performance tool: Analyze your website's performance](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/performance/overview) article in the Microsoft Edge DevTools documentation.
+
+This webpage is designed to load and handle interactions slowly on purpose, in order to illustrate how the LCP, CLS, and INP metrics can be used in the Performance tool to identify and fix performance issues.
+
+Use the **Performance** tool to view Core Web Vitals metrics in the initial, **Local metrics** view.  The home page of the **Performance** tool shows **Local metrics**, which are performance metrics about the rendered webpage:
+
+* **Largest Contentful Paint (LCP)** - How quickly the main content of the page loaded.
+* **Cumulative Layout Shift (CLS)** - A measure of the most recent unexpected page layout shift.
+* **Interaction to Next Paint (INP)** - The responsiveness of the most recent user interaction on the page.
+
+
+To produce a **poor** or **needs improvement** metric on the **LCP**, **CLS**, and **INP** cards in the **Performance** tool:
+
+1. Open a webpage; for example, open the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo page in a new window or tab.
+
+1. Right-click the demo page, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In the **Activity Bar** at top, select the **Performance** tool.
+
+1. Maximize the window, and make the demo page pane wide, such as 60% of the width of the window.
+
+   If the demo page pane is too narrow, some cards might continue showing **good**, with a green value, which is not the intended result.
+
+1. Optional, but recommended: Select **Next steps** pane > **Environment settings** card > **CPU throttling** dropdown > select **4x slowdown - recommended**.
+
+1. Optional, but recommended: Select **Next steps** pane > **Environment settings** card > **Network throttling** dropdown > select **Slow 4G**.
+
+1. Optional, but recommended: Select **Next steps** pane > **Environment settings** card > select the **Disable network cache** checkbox.
+
+   ![Local metrics results: poor; needs improvement; and poor](./overview-images/local-metrics-results.png)
+
+1. Right-click (or long-click) the **Refresh** button to the left of the **Address bar**, and then select **Empty cache and hard refresh**.
+
+   This ensures that the image is loaded again from the server, rather than from the local cache.
+
+   The **LCP** and **CLS** cards show an orange value and **needs improvement**, or a red value and **poor**, instead of a green value and **good**.
+
+1. If the **LCP** or **CLS** card remains green and says **good** after the galaxy image finishes rendering, maximize the window and make the demo page pane wider.
+
+   The **LCP** card shows that the galaxy image took a long time to load.  The card shows an orange value and **needs improvement**, or a red value and **poor**, instead of a green value and **good**.  The engine identifies this image as the largest item to be rendered.
+
+   The **CLS** card illustrates that sudden, unexpected jumps in the layout can negatively impact users.  This is also due to the image taking some time to load.  By design, the demo webpage neglects to specify a height for the image, and so the page initially loads without reserving much space for the image.  When the image starts appearing, the content below it suddenly jumps down.
+
+1. After the galaxy image finishes rendering, in the rendered demo page, click one of the headings in the right-hand **Discoveries** column, such as **Heliocentric Theory (1543)**.
+
+   The **INP** card changes from not showing a value, to showing an orange value and **needs improvement**, or a red value and **poor**.  An **INP** value is displayed.
+
+1. In the **INP** card, click the INP value.
+
+   In the demo page, the **Discoveries** cards are designed to expand and re-render slowly, so that it takes a long time between clicking the heading and rendering the expanded card content.  The delay is a random value between 100ms and 1000ms, resulting in a high INP value.
+
+<!-- / end demo page steps -->
+
+
+<!-- ====================================================================== -->
+## Intro to Core Web Vitals metrics
+
 To view **Local metrics** (Core Web Vitals metrics) instead of a profile, see [Switch between Local metrics view and recorded profile timeline view](#switch-between-local-metrics-view-and-recorded-profile-timeline-view), above.
 
 
@@ -219,65 +281,6 @@ To interact with a webpage to display the **Interaction to Next Paint (INP)** ca
 1. Click the INP values.
 
    In the demo page, these values are designed to load slowly, so it takes a long time between clicking the value and rendering the corresponding content.  It's a random value between 100ms and 1000ms, leading to a high INP metric.
-
-
-<!-- ------------------------------ -->
-#### Using the demo page
-
-The webpage in this directory is a demo for the [Monitor Core Web Vitals metrics](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/performance/overview#monitor-core-web-vitals-metrics) section of the [Performance tool: Analyze your website's performance](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/performance/overview) article in the Microsoft Edge DevTools documentation.
-
-This webpage is designed to load and handle interactions slowly on purpose, in order to illustrate how the LCP, CLS, and INP metrics can be used in the Performance tool to identify and fix performance issues.
-
-Use the **Performance** tool to view Core Web Vitals metrics in the initial, **Local metrics** view.  The home page of the **Performance** tool shows **Local metrics**, which are performance metrics about the rendered webpage:
-
-* **Largest Contentful Paint (LCP)** - How quickly the main content of the page loaded.
-* **Cumulative Layout Shift (CLS)** - A measure of the most recent unexpected page layout shift.
-* **Interaction to Next Paint (INP)** - The responsiveness of the most recent user interaction on the page.
-
-
-To produce a **poor** or **needs improvement** metric on the **LCP**, **CLS**, and **INP** cards in the **Performance** tool:
-
-1. Open a webpage; for example, open the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo page in a new window or tab.
-
-1. Right-click the demo page, and then select **Inspect**.
-
-   DevTools opens.
-
-1. In the **Activity Bar** at top, select the **Performance** tool.
-
-1. Maximize the window, and make the demo page pane wide, such as 60% of the width of the window.
-
-   If the demo page pane is too narrow, some cards might continue showing **good**, with a green value, which is not the intended result.
-
-1. Optional, but recommended: Select **Next steps** pane > **Environment settings** card > **CPU throttling** dropdown > select **4x slowdown - recommended**.
-
-1. Optional, but recommended: Select **Next steps** pane > **Environment settings** card > **Network throttling** dropdown > select **Slow 4G**.
-
-1. Optional, but recommended: Select **Next steps** pane > **Environment settings** card > select the **Disable network cache** checkbox.
-
-   ![Local metrics results: poor; needs improvement; and poor](./images/local-metrics-results.png)
-
-1. Right-click (or long-click) the **Refresh** button to the left of the **Address bar**, and then select **Empty cache and hard refresh**.
-
-   This ensures that the image is loaded again from the server, rather than from the local cache.
-
-   The **LCP** and **CLS** cards show an orange value and **needs improvement**, or a red value and **poor**, instead of a green value and **good**.
-
-1. If the **LCP** or **CLS** card remains green and says **good** after the galaxy image finishes rendering, maximize the window and make the demo page pane wider.
-
-   The **LCP** card shows that the galaxy image took a long time to load.  The card shows an orange value and **needs improvement**, or a red value and **poor**, instead of a green value and **good**.  The engine identifies this image as the largest item to be rendered.
-
-   The **CLS** card illustrates that sudden, unexpected jumps in the layout can negatively impact users.  This is also due to the image taking some time to load.  By design, the demo webpage neglects to specify a height for the image, and so the page initially loads without reserving much space for the image.  When the image starts appearing, the content below it suddenly jumps down.
-
-1. After the galaxy image finishes rendering, in the rendered demo page, click one of the headings in the right-hand **Discoveries** column, such as **Heliocentric Theory (1543)**.
-
-   The **INP** card changes from not showing a value, to showing an orange value and **needs improvement**, or a red value and **poor**.  An **INP** value is displayed.
-
-1. In the **INP** card, click the INP value.
-
-   In the demo page, the **Discoveries** cards are designed to expand and re-render slowly, so that it takes a long time between clicking the heading and rendering the expanded card content.  The delay is a random value between 100ms and 1000ms, resulting in a high INP value.
-
-<!-- / end demo page steps -->
 
 
 <!-- ------------------------------ -->
