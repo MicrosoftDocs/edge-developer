@@ -30,20 +30,19 @@ Oct 2024
 
 <!-- Apr 2025 Release SDK -->
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.3179.45
 
-Release Date: Monthname nn, 2025
+Release Date: April 07, 2025
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 135.0.3179.45 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions
 
 No additional APIs have been promoted to Stable and added in this Release SDK.
-The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -74,8 +73,11 @@ description
 <!-- ---------- -->
 ###### Runtime-only
 
-* item
-* item
+* Enabled ambient auth through browser flags
+* Fixed HTML Select component which was not selectable in WPF platform
+* Fixed navigation of edge://crashes via webview2
+* Fixed potential crash and UI issues when invoking the windows cred ui from webview instance
+* Fixed bug where users unable to type in input field with autofill info([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
 
 
 <!-- ---------- -->
@@ -89,33 +91,43 @@ description
 
 <!-- Apr 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## 1.0.3230-prerelease
 
-Release Date: Monthname nn, 2025
+Release Date: April 07, 2025
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.3230-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3230-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 136.0.3230.0 or higher.
 
 
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-No Experimental APIs have been added in this Prerelease SDK.
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-###### heading
+###### Manage the nested iframes
 
-description
+This API will allow developers to subscribe to the nested iframe creation event, giving them access to all properties, methods, and events of 'CoreWebView2Frame' for the nested iframe.
+
+To prevent unnecessary performance implication, WebView2 does not track any nested iframes by default. It only tracks a nested iframe if its parent iframe ('CoreWebView2Frame') has subscribed to the 'CoreWebView2Frame.FrameCreated' API. For a page with multi-level iframes, developers can choose to track only the main page and first-level iframes (the default behavior), a partial WebView2 frames tree with specific iframes of interest, or the full WebView2 frames tree.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+
+* [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3230-prerelease&preserve-view=true)
+
+
 ##### [Win32/C++](#tab/win32cpp)
 
+
+* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true)
+  * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#add_framecreated)
+  * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#remove_framecreated)
+* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3230-prerelease&preserve-view=true)
 ---
 
 
@@ -123,7 +135,6 @@ description
 #### Promotions
 
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -154,15 +165,20 @@ description
 <!-- ---------- -->
 ###### Runtime-only
 
-* item
-* item
+* Fixed issue in WPF where datalist dropdown dismissed when moving mouse outside WebView2 bounds.
+* Enabled ambient auth through browser flags
+* Fixed navigation of edge://crashes via webview2
+* Fixed HTML Select component which was not selectable in WPF platform
+* Fixed potential crash and UI issues when invoking the windows cred ui from webview instance
+* Fixed bug where users unable to type in input field with autofill info([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
+* Fixed regression in status bar APIs 
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* item
-* item
+* Tabbing and Arrow Keys are working fine in Window to Visual Mode
+
 
 <!-- end of Apr 2025 Prerelease SDK -->
 
