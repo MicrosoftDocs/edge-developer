@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 04/10/2025
+ms.date: 04/07/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -45,46 +45,18 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 No additional APIs have been promoted to Stable and added in this Release SDK.
 
 
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
 <!-- ------------------------------ -->
 #### Bug fixes
 
 
 <!-- ---------- -->
-###### Runtime and SDK
-
-* item
-* item
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* Enabled ambient auth through browser flags
-* Fixed HTML Select component which was not selectable in WPF platform
-* Fixed navigation of edge://crashes via webview2
-* Fixed potential crash and UI issues when invoking the windows cred ui from webview instance
-* Fixed bug where users unable to type in input field with autofill info([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* item
-* item
+* Enabled ambient authentication through browser flags.
+* Fixed the \<select\> HTML tag<!-- todo: HTML `Select` component? --> to make it selectable, in WPF apps.
+* Fixed navigation of `edge://crashes` within a WebView2 control.
+* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
+* Fixed a bug where users were unable to type in input field with autofill info.<!-- todo: delete "with autofill info"?  issue has 0 hits on 'autofill' -->  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
 
 <!-- end of Apr 2025 Release SDK -->
 
@@ -109,20 +81,31 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ---------- -->
 ###### Manage the nested iframes
 
-This API will allow developers to subscribe to the nested iframe creation event, giving them access to all properties, methods, and events of 'CoreWebView2Frame' for the nested iframe.
+Use the Nested iframes API to subscribe to the nested iframe creation event and access the `CoreWebView2Frame` properties, methods, and events for the nested iframe.
 
-To prevent unnecessary performance implication, WebView2 does not track any nested iframes by default. It only tracks a nested iframe if its parent iframe ('CoreWebView2Frame') has subscribed to the 'CoreWebView2Frame.FrameCreated' API. For a page with multi-level iframes, developers can choose to track only the main page and first-level iframes (the default behavior), a partial WebView2 frames tree with specific iframes of interest, or the full WebView2 frames tree.
+By default, for performance, WebView2 doesn't track nested iframes.  WebView2 only tracks a nested iframe if its parent iframe (`CoreWebView2Frame`) has subscribed to the `CoreWebView2Frame.FrameCreated` event.
+
+For a page that has multi-level iframes, you can choose to track any of the following:
+
+* Only the main page and its first-level iframes (the default behavior).
+* A partial WebView2 frames tree, that contains specific iframes of interest.
+* The full WebView2 frames tree.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+<!--
+* [CoreWebView2Frame Class](todo)
+  * [CoreWebView2Frame.FrameCreated Event](todo)
+-->
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-
 * [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3230-prerelease&preserve-view=true)
-
+<!--
+  * [CoreWebView2Frame.FrameCreated Event](todo)
+-->
 
 ##### [Win32/C++](#tab/win32cpp)
-
 
 * [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true)
   * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#add_framecreated)
@@ -137,48 +120,27 @@ To prevent unnecessary performance implication, WebView2 does not track any nest
 No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
 <!-- ------------------------------ -->
 #### Bug fixes
 
 
 <!-- ---------- -->
-###### Runtime and SDK
-
-* item
-* item
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* Fixed issue in WPF where datalist dropdown dismissed when moving mouse outside WebView2 bounds.
-* Enabled ambient auth through browser flags
-* Fixed navigation of edge://crashes via webview2
-* Fixed HTML Select component which was not selectable in WPF platform
-* Fixed potential crash and UI issues when invoking the windows cred ui from webview instance
+* Fixed an issue in WPF where the datalist<!-- todo: spelling/formatting?  bold if a UI label, backticks if code/ID --> dropdown closed when the mouse moved outside the WebView2 control bounds.
+* Enabled ambient authentication through browser flags.
+* Fixed navigation of `edge://crashes` within a WebView2 control.
+* Fixed the \<select\> HTML tag<!-- todo: HTML `Select` component? --> to make it selectable, in WPF apps.
+* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
 * Fixed bug where users unable to type in input field with autofill info([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
-* Fixed regression in status bar APIs 
+* Fixed a bug where users were unable to type in input field with autofill info.<!-- todo: delete "with autofill info"?  issue has 0 hits on 'autofill' -->  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
+* Fixed a regression in the [Status bar](../concepts/overview-features-apis.md#status-bar) APIs.
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* Tabbing and Arrow Keys are working fine in Window to Visual Mode
-
+* Fixed **Tab**, **Shift+Tab**, and **Arrow** keys in Window to Visual hosting mode.
 
 <!-- end of Apr 2025 Prerelease SDK -->
 
@@ -924,22 +886,19 @@ description
 <!-- ---------- --
 ###### Runtime and SDK
 
-* item
-* item
+* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- --
 ###### Runtime-only
 
-* item
-* item
+* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- --
 ###### SDK-only
 
-* item
-* item
+* Fixed behavior.  ([Issue #]())
 
 -->
 
