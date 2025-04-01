@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 03/27/2025
+ms.date: 03/31/2025
 ---
 <!-- Copyright Dale St. Marthe and Sofia Emelianova
 
@@ -27,19 +27,19 @@ ms.date: 03/27/2025
 
 Use the **Performance** tool to analyze your website's performance.  There are two main views:
 
-* The home page shows local metrics as you interact with the current webpage.<!-- Local data and field data -->  This is documented in the present page; see [Monitor Core Web Vitals metrics](#monitor-core-web-vitals-metrics), below.
-* Or instead, record a profile and view a performance timeline.  See [Capture and analyze a performance report](#capture-and-analyze-a-performance-report), below, which links to "Performance features reference".
+* The home page shows local metrics as you interact with the current webpage.
+* Record a profile and view a performance timeline.
 
-To switch between these two views, at the top of the **Performance** tool, use:
-* The **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon, dimmed](./overview-images/house-icon.png)) button.
-* The **Show recent timeline sessions** dropdown list, to the right of that button.
-
-<!-- todo: update -->
-<!-- **Detailed contents:**
+**Detailed contents:**
 * [Overview](#overview)
+   * [Local metrics for page interactions](#local-metrics-for-page-interactions)
+   * [Recorded profile timeline](#recorded-profile-timeline)
+   * [Switching to viewing local metrics or another profile](#switching-to-viewing-local-metrics-or-another-profile)
 * [Open the Performance tool](#open-the-performance-tool)
    * [Using the Command Menu](#using-the-command-menu)
 * [Monitor Core Web Vitals metrics](#monitor-core-web-vitals-metrics)
+   * [Terminology](#terminology)
+   * [Use the demo page](#use-the-demo-page)
    * [Interaction to Next Paint (INP)](#interaction-to-next-paint-inp)
    * [Interactions tab](#interactions-tab)
    * [Layout shifts tab](#layout-shifts-tab)
@@ -51,15 +51,20 @@ To switch between these two views, at the top of the **Performance** tool, use:
    * [Analyze a performance report](#analyze-a-performance-report)
 * [Improve performance with these tools](#improve-performance-with-these-tools) -->
 
+For a walkthrough of using the **Performance** tool to improve your website's performance, see [Analyze runtime performance (tutorial)](./index.md).
+
 
 <!-- ====================================================================== -->
-## Switch between Local metrics view and recorded profile timeline view
-<!-- upstream heading: ## Overview -->
+## Overview
 <!-- https://developer.chrome.com/docs/devtools/performance/overview#overview -->
 <!-- https://microsoftedge.github.io/Demos/exploring-the-universe/ -->
 <!-- covers basic nav between the two states, and what to use them for, not how to use either view -->
 
 The **Performance** tool displays local metrics for page interactions, and lets you record CPU performance profiles of your web applications.  Analyze profiles to find potential performance bottlenecks and ways that you can optimize resource use.
+
+
+<!-- ------------------------------ -->
+#### Local metrics for page interactions
 
 Use the **Performance** tool to view Core Web Vitals metrics in the initial, **Local metrics** view.  The home page of the **Performance** tool shows **Local metrics**, which is performance metrics about the rendered webpage:
 
@@ -71,7 +76,9 @@ When you initially open the **Performance** tool, Core Web Vitals metrics are di
 
 ![The Performance tool home page showing Local metrics](./overview-images/performance-tool-intro-home-page.png)<!-- do not reuse -->
 
-To switch to displaying an opened recorded profile timeline, click the **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the local metrics page" (house) icon, dimmed](./overview-images/house-icon-dimmed.png)) button.
+
+<!-- ------------------------------ -->
+#### Recorded profile timeline
 
 Also use the **Performance** tool to view a recorded performance trace, including: 
 * Record a performance profile.
@@ -84,15 +91,15 @@ Also use the **Performance** tool to view a recorded performance trace, includin
 
 After you record a performance trace, the performance trace is displayed instead of **Local metrics**.  
 
-The **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the live metrics page" icon, dimmed](./overview-images/house-icon-dimmed.png)) button, enables switching between **Local metrics** (Core Web Vitals) and multiple recorded performance traces (also called _profiles_ or _timeline sessions_).
 
-![The Performance tool displaying a recorded profile](./overview-images/performance-tool-intro-profile.png)<!-- do not reuse -->
+<!-- ------------------------------ -->
+#### Switching to viewing local metrics or another profile
 
 To switch to displaying the initial, **Local metrics** view, click the **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon](./overview-images/house-icon.png)) button.
 
-To switch to displaying a different opened recorded profile timeline, click the **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon](./overview-images/house-icon.png)) button.
+To switch to displaying a different opened recorded profile timeline,  click the **Show recent timeline sessions** dropdown, to the right of the **Go back to the live metrics page** (![The "Go back to the live metrics page" (house) icon](./overview-images/house-icon.png)) button.
 
-For a walkthrough of using the **Performance** tool to improve your website's performance, see [Analyze runtime performance (tutorial)](./index.md).
+![The Performance tool displaying a recorded profile](./overview-images/performance-tool-intro-profile.png)<!-- do not reuse -->
 
 
 <!-- ====================================================================== -->
@@ -141,11 +148,6 @@ To open the **Performance** tool by using the **Command Menu**:
 <!-- ====================================================================== -->
 ## Monitor Core Web Vitals metrics
 <!-- ## Observe Core Web Vitals live  https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
-<!-- details about using this view -->
-
-
-<!-- ------------------------------ -->
-#### Using the demo page
 
 The [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo page is designed to load and handle interactions slowly on purpose, in order to illustrate how the LCP, CLS, and INP metrics can be used in the **Performance** tool to identify and fix performance issues.
 
@@ -156,25 +158,45 @@ Use the **Performance** tool to view Core Web Vitals metrics in the initial, **L
 * **Interaction to Next Paint (INP)** - The responsiveness of the most recent user interaction on the page.
 
 
+<!-- ---------------------------------- -->
+#### Terminology
+
+| Term | Description | Docs |
+|---|---|---|
+| Web Vitals | A large set of metrics giving unified guidance to delivering a great user experience on the web. | [Web Vitals](https://web.dev/articles/vitals) |
+| Core Web Vitals | The subset of Web Vitals that apply to all web pages, and should be measured by all site owners.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome. | [Core Web Vitals](https://web.dev/articles/vitals#core-web-vitals) in _Web Vitals_ |
+| Largest Contentful Paint (LCP) | Measures _loading_ performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.  The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. | [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), [Optimize LCP](https://web.dev/articles/optimize-lcp) |
+| Cumulative Layout Shift (CLS) | Measures _visual stability_. To provide a good user experience, pages should maintain a CLS of 0.1. or less.  The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. | [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls), [Optimize CLS](https://web.dev/articles/optimize-cls) |
+| Interaction to Next Paint (INP) | Measures _interactivity_. To provide a good user experience, pages should have a INP of 200 milliseconds or less.  The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. | [Interaction to Next Paint (INP)](https://web.dev/articles/inp), [Optimize INP](https://web.dev/articles/optimize-inp) |
+| local metrics, local data | The LCP, CLS, and INP metrics.  They are captured locally on the inspected webpage, and are updated as you interact with the page. | |
+
+
+<!-- ---------------------------------- -->
+#### Use the demo page
+
 To produce a **poor** or **needs improvement** metric on the **LCP**, **CLS**, and **INP** cards in the **Performance** tool:
 
-1. Open a webpage; for example, open the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo page in a new window or tab.
+1. Open a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
 
-1. Right-click the demo page, and then select **Inspect**.
+1. Right-click the webpage and then select **Inspect**.
 
    DevTools opens.
 
-1. In the **Activity Bar** at top, select the **Performance** tool.
+1. In the **Activity Bar** at top, select the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
+
+   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
 
 1. Maximize the window, and make the demo page pane wide, such as 60% of the width of the window.
 
    If the demo page pane is too narrow, some cards might continue showing **good**, with a green value, which is not the intended result.
 
-1. Optional, but recommended: Select **Next steps** pane > **Environment settings** card > **CPU throttling** dropdown > select **4x slowdown - recommended**.
+1. Select **Next steps** pane > **Environment settings** card > **CPU throttling** dropdown > select **4x slowdown - recommended**.
 
-1. Optional, but recommended: Select **Next steps** pane > **Environment settings** card > **Network throttling** dropdown > select **Slow 4G**.
+   Or, select **Capture settings** (![Capture settings icon with a blue dot](./overview-images/capture-settings-icon-blue-dot.png)) > **CPU throttling** dropdown > **4x slowdown - recommended**.
 
-1. Optional, but recommended: Select **Next steps** pane > **Environment settings** card > select the **Disable network cache** checkbox.
+1. Select **Next steps** pane > **Environment settings** card > **Network throttling** dropdown > select **Slow 4G**.
+
+1. Select **Next steps** pane > **Environment settings** card > select the **Disable network cache** checkbox.
 
    ![Local metrics results: poor; needs improvement; and poor](./overview-images/local-metrics-results.png)
 
@@ -188,114 +210,22 @@ To produce a **poor** or **needs improvement** metric on the **LCP**, **CLS**, a
 
    The **LCP** card shows that the galaxy image took a long time to load.  The card shows an orange value and **needs improvement**, or a red value and **poor**, instead of a green value and **good**.  The engine identifies this image as the largest item to be rendered.
 
+1. In the **LCP** card, hover over the metric value to see information in a tooltip.
+
    The **CLS** card illustrates that sudden, unexpected jumps in the layout can negatively impact users.  This is also due to the image taking some time to load.  By design, the demo webpage neglects to specify a height for the image, and so the page initially loads without reserving much space for the image.  When the image starts appearing, the content below it suddenly jumps down.
+
+1. In the **CLS** card, hover over the metric value to see information in a tooltip.
 
 1. After the galaxy image finishes rendering, in the rendered demo page, click one of the headings in the right-hand **Discoveries** column, such as **Heliocentric Theory (1543)**.
 
    The **INP** card changes from not showing a value, to showing an orange value and **needs improvement**, or a red value and **poor**.  An **INP** value is displayed.
 
+1. In the **INP** card, hover over the metric value to see information in a tooltip.
+
 1. In the **INP** card, click the INP value.
 
    In the demo page, the **Discoveries** cards are designed to expand and re-render slowly, so that it takes a long time between clicking the heading and rendering the expanded card content.  The delay is a random value between 100ms and 1000ms, resulting in a high INP value.
 
-<!-- / end demo page steps -->
-
-
-<!-- ====================================================================== -->
-## Intro to Core Web Vitals metrics
-
-To view **Local metrics** (Core Web Vitals metrics) instead of a profile, see [Switch between Local metrics view and recorded profile timeline view](#switch-between-local-metrics-view-and-recorded-profile-timeline-view), above.
-
-
-<!-- ---------------------------------- -->
-#### Terminology
-
-| Term | Description | Docs |
-|---|---|---|
-| Web Vitals | A large set of metrics giving unified guidance to delivering a great user experience on the web. | [Web Vitals](https://web.dev/articles/vitals) |
-| Core Web Vitals | The subset of Web Vitals that apply to all web pages, and should be measured by all site owners.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome. | [Core Web Vitals](https://web.dev/articles/vitals#core-web-vitals) in _Web Vitals_ |
-| Largest Contentful Paint (LCP) | Measures _loading_ performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.  The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. | [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) |
-| Cumulative Layout Shift (CLS) | Measures _visual stability_. To provide a good user experience, pages should maintain a CLS of 0.1. or less.  The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. | [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) |
-| Interaction to Next Paint (INP) | Measures _interactivity_. To provide a good user experience, pages should have a INP of 200 milliseconds or less.  The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. | [Interaction to Next Paint (INP)](https://web.dev/articles/inp) |
-| local metrics, local data | The LCP, CLS, and INP metrics.  They are captured locally on the inspected webpage, and are updated as you interact with the page. | |
-| field metrics, field data | Data from the Chrome UX Report (CrUX), showing how most of your users experience your website. | [Overview of CrUX](https://developer.chrome.com/docs/crux) |
-
-See also:
-* [Optimize LCP](https://web.dev/articles/optimize-lcp)
-* [Optimize CLS](https://web.dev/articles/optimize-cls)
-* [Optimize INP](https://web.dev/articles/optimize-inp)
-
-
-<!-- ====================================================================== -->
-## Display Core Web Vitals metrics
-<!-- added heading redun w/ h2 "Monitor Core Web Vitals metrics" -->
-
-When you open the **Performance** tool, it immediately captures and displays the local [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp) and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) metrics, and displays their scores (**good**, **needs improvement**, or **bad**).
-
-The **Interaction to Next Paint (INP)** card is also displayed, initially without data.
-
-![Observing the initial metrics](./overview-images/observe-metrics.png)
-
-To get a breakdown of a metric score, hover over the metric value to see a tooltip.
-
-
-<!-- todo: replace steps by Readme steps below; merge together -->
-To interact with a webpage to display the **Interaction to Next Paint (INP)** card:
-
-1. Open a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
-
-1. Right-click the webpage and then select **Inspect**.
-
-   DevTools opens.
-
-1. In the **Activity Bar** at top, click the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
-
-   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
-
-1. Select **Home page** > **Next steps** pane > **Environment settings** card > **CPU throttling** dropdown > **4x slowdown - recommended**.
-
-   Or, select **Capture settings** (![Capture settings icon with a blue dot](./overview-images/capture-settings-icon-blue-dot.png)) > **CPU throttling** dropdown > **4x slowdown - recommended**.
-
-1. Select **Home page** > **Next steps** pane > **Environment settings** card > **Network throttling** dropdown > **Slow 4G**.
-
-   Or, select **Capture settings** (![Capture settings icon with a blue dot](./overview-images/capture-settings-icon-blue-dot.png)) > **Network throttling** dropdown > **Slow 4G**.
-
-1. Right-click (or long-click) the **Refresh** button to the left of the Address bar, and then select **Empty cache and hard refresh**.
-
-   This ensures that the image is loaded again from the server, not from the local cache.
-
-   The **LCP** card shows that the image took a long time to load.
-
-   The engine identifies this image of stars as the largest item to be rendered.
-
-   The **CLS** card shows orange and **0.15**.  This illustrates how sudden, unexpected jumps in the layout can negatively impact users.  This is also due to the image taking some time to load.
-
-   The demo webpage neglects to specify a height for the image, and so the page initially loads without reserving much space for the image.  When the image starts appearing, the content below it suddenly jumps down.
-
-1. Click the accordion items in the right column.
-
-   **INP** values are displayed.
-
-1. Click the INP values.
-
-   In the demo page, these values are designed to load slowly, so it takes a long time between clicking the value and rendering the corresponding content.  It's a random value between 100ms and 1000ms, leading to a high INP metric.
-
-
-<!-- ------------------------------ -->
-#### Interaction to Next Paint (INP)
-
-If you interact with your page, the **Performance** tool also captures your local [Interaction to Next Paint (INP)](https://web.dev/articles/inp) and its score, which, in addition to LCP and CLS, gives you a complete overview of the Core Web Vitals metrics of your page when using your network connection and device.
-
-See [Core Web Vitals](https://web.dev/articles/vitals#core-web-vitals) in _Web Vitals_ at web.dev.
-
-
-To interact with a webpage to display the **Interaction to Next Paint (INP)** card:
-
-1. Open the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo in a new window or tab.
-
-1. Right-click the webpage and then select **Inspect** to open DevTools, and then select the **Performance** tool.
-
-1. In the demo webpage, click the **Add elements** button.
 
    Below the **Local metrics** cards, the **Interactions** tab and **Layout shifts** tabs are populated.
 
@@ -326,43 +256,13 @@ The **Layout shifts** tab includes:
 * Scores.
 * Elements.
 
-Cumulative Layout Shift (CLS) is a measure of the most recent unexpected page layout shift.
 
-To produce a bad Cumulative Layout Shift (CLS) score, make the demo page wide, as follows:
-
-1. Go to a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
-
-   **Routine setup steps:**
-
-1. Right-click the webpage, and then select **Inspect**.
-
-   DevTools opens.
-
-1. In the **Activity Bar** at top, click the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
-
-   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
-
-1. Select **Next steps** pane > **Environment settings** card > **CPU throttling** dropdown > **4x slowdown - recommended**.
-
-1. Select **Next steps** pane > **Environment settings** card > **Network throttling** dropdown > **Slow 4G**.
-
-   **Key setup steps:**
-
-1. Right-click (or long-click) the **Refresh** button to the left of the Address bar, and then select **Empty cache and hard refresh**.
-
-1. Make the demo page wide.
-
-   The page is laid out again, and the **Cumulative Layout Shift (CLS)** card shows **needs improvement**.
-
-1. In the **Cumulative Layout Shift (CLS)** card, next to **Worst cluster**, click the **Go to worst layout shift cluster (1 shift)** link.
-
-
-To clear the **Layout shifts** tab, click the **Clear the current log** (![The Clear icon](./overview-images/clear-icon.png)) button to the right of the **Layout shifts** tab.
-
-
+<!-- ------------------------------ -->
 <!-- #### Compare your experience to the experience of your users -->
 <!-- https://developer.chrome.com/docs/devtools/performance/overview#compare -->
 
+
+<!-- ------------------------------ -->
 <!-- #### Configure your environment to better match that of your users -->
 <!-- https://developer.chrome.com/docs/devtools/performance/overview#env-config -->
 
