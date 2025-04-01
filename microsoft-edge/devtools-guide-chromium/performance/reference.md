@@ -548,7 +548,7 @@ To move and hide tracks:
 
 1. Click the **Move track up** (![The Move track up icon](./reference-images/move-track-up-icon.png)) button or the **Move track down** (![The Move track down icon](./reference-images/move-track-down-icon.png)) button to move a track up or down.  Click the **Hide track** (![The Hide track icon](./reference-images/hide-track-icon.png)) button to hide it.
 
-1. When finished, click **Finish configuring tracks** at the bottom, to exit the configuration mode.<!-- todo: don't have a **Finish configuring tracks** button at this point.  add: right-click again to reveal the **Finish configuring tracks** option. -->
+1. Right-click the track, and then select **Finish configuring**.
 
 <!-- ![Watch the video to see this workflow in action](todo: png) -->
 
