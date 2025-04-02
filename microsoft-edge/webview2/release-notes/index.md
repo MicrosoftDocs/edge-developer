@@ -52,7 +52,6 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Enabled ambient authentication through browser flags.
 * Fixed the \<select\> HTML tag<!-- todo: HTML `Select` component? --> to make it selectable, in WPF apps.
 * Fixed navigation of `edge://crashes` within a WebView2 control.
 * Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
@@ -77,6 +76,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 No Experimental APIs have been added in this Prerelease SDK.
 
+
 <!-- ------------------------------ -->
 #### Promotions
 
@@ -90,23 +90,19 @@ The FrameCreatedEvent API supports nested iframes, such as recording the navigat
 
 Use this API to manage iframe tracking on a page that contains multiple levels of iframes. You can choose to track any of the following:
 
-Only the main page and first-level iframes (the default behavior).
-A partial WebView2 frames tree with specific iframes of interest.
-The full WebView2 frames tree.
+* Only the main page and first-level iframes (the default behavior).
+* A partial WebView2 frames tree with specific iframes of interest.
+* The full WebView2 frames tree.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!--
-* [CoreWebView2Frame Class](todo)
-  * [CoreWebView2Frame.FrameCreated Event](todo)
--->
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated?view=webview2-dotnet-1.0.3230-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3230-prerelease&preserve-view=true)
-<!--
-  * [CoreWebView2Frame.FrameCreated Event](todo)
--->
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3230-prerelease&preserve-view=true#framecreated)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -125,7 +121,6 @@ The full WebView2 frames tree.
 ###### Runtime-only
 
 * Fixed an issue in WPF where the datalist<!-- todo: spelling/formatting?  bold if a UI label, backticks if code/ID --> dropdown closed when the mouse moved outside the WebView2 control bounds.
-* Enabled ambient authentication through browser flags.
 * Fixed navigation of `edge://crashes` within a WebView2 control.
 * Fixed the \<select\> HTML tag<!-- todo: HTML `Select` component? --> to make it selectable, in WPF apps.
 * Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
