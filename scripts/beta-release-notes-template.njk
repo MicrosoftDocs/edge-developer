@@ -31,12 +31,12 @@ To stay up-to-date and get the latest web platform features, download an Insider
     * [{{ feature.name }}](#{{ feature.name | slugify }})
     {% endfor %}
 * [Origin trials](#origin-trials)
-  * [Microsoft Edge-only origin trials](#microsoft-edge-only-origin-trials)
-    {% for trial in data.edgeOTs %}
-    * [{{ trial.title }}](#{{ trial.title | slugify }})
-    {% endfor %}
   * [New Chromium origin trials](#new-chromium-origin-trials)
     {% for trial in data.chromeOTs %}
+    * [{{ trial.title }}](#{{ trial.title | slugify }})
+    {% endfor %}
+  * [Microsoft Edge-only origin trials](#microsoft-edge-only-origin-trials)
+    {% for trial in data.edgeOTs %}
     * [{{ trial.title }}](#{{ trial.title | slugify }})
     {% endfor %}
 
@@ -99,6 +99,23 @@ To see the full list of available origin trials, see [Microsoft Edge Origin Tria
 
 
 <!-- ------------------------------ -->
+#### New Chromium origin trials
+{% for trial in data.chromeOTs %}
+
+<!-- ---------- -->
+###### {{ trial.title }}
+
+Expires on {{ trial.expiration }}.
+
+{{ trial.description }}
+
+* [Explainer]({{ trial.explainer }})
+* [Feedback]({{ trial.feedback }})
+* [Register]({{ trial.registration }})
+{% endfor %}
+
+
+<!-- ------------------------------ -->
 #### Microsoft Edge-only origin trials
 {% for trial in data.edgeOTs %}
 
@@ -113,22 +130,6 @@ Expires on {{ trial.expiration }}.
 * [Feedback]({{ trial.feedback }})
 * [Register]({{ trial.registration }})
 
-{% endfor %}
-
-<!-- ------------------------------ -->
-#### New Chromium origin trials
-{% for trial in data.chromeOTs %}
-
-<!-- ---------- -->
-###### {{ trial.title }}
-
-Expires on {{ trial.expiration }}.
-
-{{ trial.description }}
-
-* [Explainer]({{ trial.explainer }})
-* [Feedback]({{ trial.feedback }})
-* [Register]({{ trial.registration }})
 {% endfor %}
 
 
