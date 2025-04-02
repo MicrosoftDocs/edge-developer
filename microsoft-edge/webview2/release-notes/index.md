@@ -75,21 +75,24 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-The following Experimental APIs have been added in this Prerelease SDK.
+No Experimental APIs have been added in this Prerelease SDK.
+
+<!-- ------------------------------ -->
+#### Promotions
+
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
 <!-- ---------- -->
-###### Manage the nested iframes
+###### Track navigation history for nested iframes (FrameCreatedEvent API)
 
-Use the Nested iframes API to subscribe to the nested iframe creation event and access the `CoreWebView2Frame` properties, methods, and events for the nested iframe.
+The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe. Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame. Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of CoreWebView2Frame for the nested iframe.
 
-By default, for performance, WebView2 doesn't track nested iframes.  WebView2 only tracks a nested iframe if its parent iframe (`CoreWebView2Frame`) has subscribed to the `CoreWebView2Frame.FrameCreated` event.
+Use this API to manage iframe tracking on a page that contains multiple levels of iframes. You can choose to track any of the following:
 
-For a page that has multi-level iframes, you can choose to track any of the following:
-
-* Only the main page and its first-level iframes (the default behavior).
-* A partial WebView2 frames tree, that contains specific iframes of interest.
-* The full WebView2 frames tree.
+Only the main page and first-level iframes (the default behavior).
+A partial WebView2 frames tree with specific iframes of interest.
+The full WebView2 frames tree.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -112,12 +115,6 @@ For a page that has multi-level iframes, you can choose to track any of the foll
   * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#remove_framecreated)
 * [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3230-prerelease&preserve-view=true)
 ---
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
