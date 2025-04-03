@@ -123,7 +123,7 @@ _Published on 5 May 2022._
 
 Learn how to customize DevTools to fit your needs.
 
-This video covers how to dock or undock DevTools, open new tools, and close those you don't need. It describes how to move tools in the **Drawer** (now **Quick View** panel) at the bottom of DevTools, and how to customize the text size and theme. The video also explains how you can use the Command Menu keyboard shortcuts to quickly customize DevTools.
+This video covers how to dock or undock DevTools, open new tools, and close those you don't need. It describes how to move tools in the **Drawer** (now **Quick View** panel) at the bottom of DevTools, and how to customize the text size and theme. The video also explains how you can use the **Command Menu** keyboard shortcuts to quickly customize DevTools.
 
 
 <!-- ------------------------------ -->

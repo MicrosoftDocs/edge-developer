@@ -252,7 +252,7 @@ The reported JavaScript files are from the `www.bing.com` domain, which means th
 
 To confirm the amount of unused code and possibly find other resources that are unused, use the **Coverage** tool:
 
-1. In DevTools, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage** in the list.
+1. In DevTools, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**, start typing `Coverage`, and then select **Show Coverage** in the list.
 
     ![The Command Menu in DevTools, showing the Show Coverage command](./get-started-images/command-menu-coverage.png)
 
@@ -492,7 +492,7 @@ Optimize the `initRatings` function to make the page load faster:
     * The **Time to interactive** metric went down to 1.3 seconds.
     * The **Total Blocking Time** metric went down to 0 seconds.
 
-To learn more about how to analyze page performance, see [Performance features reference)](../evaluate-performance/reference.md).
+To learn more about how to analyze page performance, see [Performance features reference)](../performance/reference.md).
 
 ###### Doing less work in the main thread, in the real world
 

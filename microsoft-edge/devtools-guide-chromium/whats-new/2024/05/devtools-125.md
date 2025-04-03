@@ -41,7 +41,8 @@ The **Selector Stats** tab has the following changes:
 * The unit of time has been changed from microseconds to milliseconds.
 
 See also:
-* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
+* [View CSS selector statistics](../../../performance/reference.md#view-css-selector-statistics) in _Performance features reference_.
 
 
 <!-- ====================================================================== -->

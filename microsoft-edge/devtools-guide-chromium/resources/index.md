@@ -48,7 +48,7 @@ When you know the name of a webpage's resource file that you want to inspect, th
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**. Or press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. When DevTools has focus, press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS). Or, click the **Customize and control DevTools** (![Customize icon](./index-images/customize-devtools-icon-light-theme.png)) button in DevTools and then select **Open file**.  The Command Menu opens, displaying the **Open File** list:
+1. When DevTools has focus, press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS). Or, click the **Customize and control DevTools** (![Customize icon](./index-images/customize-devtools-icon-light-theme.png)) button in DevTools and then select **Open file**.  The **Command Menu** opens, displaying the **Open File** list:
 
    ![The Command Menu, displaying the Open File list](./index-images/command-menu-empty.png)
 

@@ -91,7 +91,7 @@ The **Selector Stats** tab provides a list of all the CSS selectors that were ca
 See also:
 * [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/) - blog post
 * [[Feedback] Selector Performance Tracing Explainer · Issue #98](https://github.com/MicrosoftEdge/DevTools/issues/98)
-* [Analyze CSS selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->
@@ -152,7 +152,7 @@ The state of your **Quick View** toolbar persists across DevTools sessions.  The
 
 <!-- Subtitle: Use the Command Menu to directly navigate to the Styles tab of the Elements tool. -->
 
-There was an accessibility issue where voice-command users couldn't navigate to the **Styles** tab or **Computed** tab in the **Elements** tool.  You can now access these tabs through two new commands in the Command Menu:
+There was an accessibility issue where voice-command users couldn't navigate to the **Styles** tab or **Computed** tab in the **Elements** tool.  You can now access these tabs through two new commands in the **Command Menu**:
 * **Show Styles**
 * **Show Computed Styles**
 
