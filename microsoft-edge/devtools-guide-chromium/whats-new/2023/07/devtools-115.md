@@ -94,13 +94,13 @@ In Microsoft Edge 115, the DevTools UI has gotten a makeover with new icons and 
 
 ![The right-pointing blue arrow icon for the current frame in the call stack](./devtools-115-images/icon-update-sources.png)
 
-In previous versions of Microsoft Edge, in the **Bottom-Up** view in the **Performance** tool, the triangle buttons for collapsing and expanding the recorded activities rendered incorrectly.  In Microsoft Edge 115, this issue has been fixed and you can now expand and collapse individual activities to see which functions are calling them:
+In previous versions of Microsoft Edge, in the **Bottom-up** view in the **Performance** tool, the triangle buttons for collapsing and expanding the recorded activities rendered incorrectly.  In Microsoft Edge 115, this issue has been fixed and you can now expand and collapse individual activities to see which functions are calling them:
 
-![The triangle icons for expanding and collapsing activities in the Bottom-Up view](./devtools-115-images/icon-update-performance.png)
+![The triangle icons for expanding and collapsing activities in the Bottom-up view](./devtools-115-images/icon-update-performance.png)
 
 See also:
 * [Step through code](../../../javascript/reference.md#step-through-code) in _JavaScript debugging features_.
-* [The Bottom-Up tab](../../../evaluate-performance/reference.md#the-bottom-up-tab) in _Performance features reference_.
+* [The Bottom-up tab](../../../performance/reference.md#the-bottom-up-tab) in _Performance features reference_.
 
 
 <!-- ====================================================================== -->

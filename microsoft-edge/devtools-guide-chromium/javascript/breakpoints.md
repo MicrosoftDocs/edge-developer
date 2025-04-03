@@ -264,7 +264,8 @@ To set a logpoint:
 
 1. Press **Enter** to activate the logpoint. A red icon appears next to the line number.
 
-For more information, see [Log messages in the Console tool](/microsoft-edge/devtools-guide-chromium/console/console-log).
+See also:
+* [Log messages in the Console tool](../console/console-log.md)
 
 
 <!-- ====================================================================== -->

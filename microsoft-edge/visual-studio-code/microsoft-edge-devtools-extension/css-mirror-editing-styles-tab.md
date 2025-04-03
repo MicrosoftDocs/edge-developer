@@ -69,7 +69,7 @@ To enable or disable CSS mirror editing:
 
    ![Checkbox in the Styles panel of the Elements tool to enable or disable CSS mirroring](./css-mirror-editing-styles-tab-images/css-mirror-editing-checkbox.png)
 
-   Or, open the Command Menu, start typing the word **mirror**, and then select **Microsoft Edge Tools: Toggle mirror editing on|off for CSS files in workspace**:
+   Or, open the **Command Menu**, start typing the word **mirror**, and then select **Microsoft Edge Tools: Toggle mirror editing on|off for CSS files in workspace**:
 
    ![Using the Command Menu to focus the CSS mirror editing view and turn CSS mirror editing on or off](./css-mirror-editing-styles-tab-images/css-mirror-editing-command.png)
 
