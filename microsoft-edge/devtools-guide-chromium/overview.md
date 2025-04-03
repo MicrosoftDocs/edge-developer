@@ -282,7 +282,7 @@ To change the location of the **Activity Bar**, do either of the following:
 
 * In the **Activity Bar**, click **Move Activity Bar to left** (![The Move Activity Bar to left icon](./overview-images/move-activity-bar-to-left-icon.png)) or **Move Activity Bar to top** (![The Move Activity Bar to top icon](./overview-images/move-activity-bar-to-top-icon.png)).
 
-* Use the Command Menu. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS), enter the words **activity bar**, and then select **Move Activity Bar to left** or **Move Activity Bar to top**. See [Power tip: Use the Command Menu](#power-tip-use-the-command-menu).
+* Use the **Command Menu**.  Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS), enter the words **activity bar**, and then select **Move Activity Bar to left** or **Move Activity Bar to top**. See [Power tip: Use the Command Menu](#power-tip-use-the-command-menu).
 
 
 <!-- ------------------------------ -->
@@ -438,7 +438,7 @@ See [Inspect network activity](network/index.md).
 <!-- ------------------------------ -->
 #### Performance tool
 
-See [Introduction to the Performance tool](evaluate-performance/index.md).
+See [Analyze runtime performance (tutorial)](evaluate-performance/index.md).
 
 
 <!-- ------------------------------ -->
@@ -513,13 +513,13 @@ To hide or expand **Quick View**, click **Collapse Quick View** (![Collapse icon
 <!-- ====================================================================== -->
 ## Overview of all tools
 
-For a summary of each tool, see [Overview of all tools](about-tools.md#overview-of-all-tools) in _About the list of tools_.
+For a summary of each tool, see [About the list of tools](./about-tools.md).
 
 
 <!-- ====================================================================== -->
 ## Tool, tab, or panel
 
-The words "tool", "tab", and "panel" are somewhat interchangeable.  In the Command Menu, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you click the **Elements** tab.  There's a **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button and list used to select tools.  DevTools tools are also called DevTools _panels_.
+The words "tool", "tab", and "panel" are somewhat interchangeable.  In the **Command Menu**, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you click the **Elements** tab.  There's a **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button and list used to select tools.  DevTools tools are also called DevTools _panels_.
 
 You can customize each of the tools, and the content of a tool can change based on the context.
 
@@ -553,20 +553,20 @@ In addition to **Activity Bar** and **Quick View** tools, DevTools includes the 
 <!-- ====================================================================== -->
 ## Power tip: Use the Command Menu
 
-DevTools provides lots of features and functionality to use with your website.  You can access the different parts of DevTools in many ways, but often a fast way is to use the Command Menu.
+DevTools provides lots of features and functionality to use with your website.  You can access the different parts of DevTools in many ways, but often a fast way is to use the **Command Menu**.
 
 ![the Command Menu in DevTools](./overview-images/command-menu.png)
 
-In the Command Menu, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.
+In the **Command Menu**, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.
 
-1. To open the Command Menu, do either of the following:
+1. To open the **Command Menu**, do either of the following:
 
    *  Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
    *  Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
-   The Command Menu allows you to type commands to display, hide, or run features in DevTools.
+   The **Command Menu** allows you to type commands to display, hide, or run features in DevTools.
 
-1. In the Command Menu, start typing the name of a tool, such as **changes**, and then select a **Show** command, such as **Show Changes**.  The Command Menu displays the matching commands:
+1. In the **Command Menu**, start typing the name of a tool, such as **changes**, and then select a **Show** command, such as **Show Changes**.  The **Command Menu** displays the matching commands:
 
    ![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Quick View'](./overview-images/command-menu-show-changes.png)
 
@@ -574,7 +574,7 @@ In the Command Menu, the tools are called "panels"; for example, the **Elements*
 
    ![DevTools with the Changes tool open in the Quick View panel](./overview-images/showing-changes.png)
 
-   The **Changes** tool is useful when you edit CSS.  In this example, the Command Menu provides a fast alternative to selecting **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) and then selecting **Changes**.  This example also provides an alternative to editing a `.js` file in the **Sources** tool, and then right-clicking and selecting **Local modifications**.
+   The **Changes** tool is useful when you edit CSS.  In this example, the **Command Menu** provides a fast alternative to selecting **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) and then selecting **Changes**.  This example also provides an alternative to editing a `.js` file in the **Sources** tool, and then right-clicking and selecting **Local modifications**.
 
 See also [Run commands with the Microsoft Edge DevTools Command menu](command-menu/index.md).
 

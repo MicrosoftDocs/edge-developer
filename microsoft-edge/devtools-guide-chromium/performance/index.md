@@ -1,5 +1,5 @@
 ---
-title: Introduction to the Performance tool
+title: Analyze runtime performance (tutorial)
 description: Tutorial about how to evaluate runtime performance in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,8 @@ ms.date: 09/04/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Introduction to the Performance tool
+# Analyze runtime performance (tutorial)
+<!-- https://developer.chrome.com/docs/devtools/performance -->
 
 _Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
 
@@ -34,22 +35,19 @@ See also:
 <!-- ====================================================================== -->
 ## Get started
 
-In the following tutorial, you open DevTools on a "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
+In the following tutorial, you open DevTools on the "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
 
-1. Open the [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo page in your InPrivate tab or window.  To do that, right-click the link and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down. For more information about InPrivate, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
+1. Right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down.  See also [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
 
-   Source code: [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
+   If you want to view the source code for the demo, see [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
 
+1. Right-click the demo webpage and then select **Inspect**.
 
-   <!--TODO: replace section when updated for Chromium-based Edge  -->
-
-   <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
-
-1. Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS) to open DevTools:
+   DevTools opens:
 
    ![The demo on the left, and DevTools on the right](./index-images/get-started-side-by-side.png)
 
-For the rest of the screenshots, DevTools is shown [undocked to a separate window](../customize/placement.md).
+Most screenshots of the **Performance** tool show DevTools [undocked to a separate window](../customize/placement.md).
 
 
 <!-- ------------------------------ -->
@@ -73,7 +71,7 @@ If you want to ensure that pages work well on low-end mobile devices, set **CPU*
 <!-- ------------------------------ -->
 #### Set up the demo
 
-The following section lets you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions.
+In the following section, continuing from above, you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions.
 
 1. Click the **Add elements** button until the blue icons move noticeably slower than before.  On a high-end machine, you can click it about 20 times.
 
@@ -88,6 +86,8 @@ The following section lets you customize the demo to make sure that your experie
 #### Record runtime performance
 
 When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the unoptimized version.
+
+Continuing from above:
 
 1. In DevTools, click **Record** (![Record](./index-images/record-icon.png)).  DevTools captures performance metrics as the page runs.
 
@@ -107,6 +107,8 @@ These performance results show an overwhelming amount of data, but it will all m
 
 Once you have a recording of the page's performance, you can assess the page's performance and find the cause of any performance issues.
 
+Continuing from above:
+
 1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
 
    ![The CPU chart and Summary panel](./index-images/cpu-chart.png)
@@ -120,6 +122,8 @@ Once you have a recording of the page's performance, you can assess the page's p
 #### Bonus: Open the Frame Rendering Stats overlay
 
 Another handy tool is the **Frame Rendering Stats** overlay, which provides real-time estimates for FPS as the page runs. The **Frame Rendering Stats** overlay is not required for this tutorial but may provide helpful insight.
+
+Continuing from above:
 
 1. In DevTools, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
@@ -136,6 +140,8 @@ Another handy tool is the **Frame Rendering Stats** overlay, which provides real
 #### Find the bottleneck
 
 After you verified that the animation isn't performing well, the next step is to answer the question "why?"
+
+Continuing from above:
 
 1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
@@ -158,11 +164,11 @@ After you verified that the animation isn't performing well, the next step is to
    When a red triangle is displayed at the top right of an event, it's a warning that there might be an issue related to the event.  The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) is run.
 
    The **Summary** panel displays information about that event:
-	
-	![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
+
+   ![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
 
 1. Click the **Reveal** link.  DevTools highlights the event that initiated the **Animation Frame Fired** event.
-	
+
 1. Click the **app.js:125** link.  The relevant line of source code is displayed in the **Sources** tool.
 
 1. Zoom in on the **Animation Frame Fired** event and its child events, by using the mouse wheel or trackpad. Or, press **W**.
