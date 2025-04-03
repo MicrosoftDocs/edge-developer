@@ -34,7 +34,7 @@ Steps to maintain this page monthly: For latest Canary, and for latest Stable:
 1. Make sure the article has an h2 for each checkbox.
 1. In each h2 section, update the presence or absence of "not", and update the version #:
 This checkbox is|is not present in Microsoft Edge Canary 136.
-This checkbox is|is not present in Microsoft Edge Stable 134.
+This checkbox is|is not present in Microsoft Edge Stable 135.
 -->
 
 Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes the experimental features that are in either:
@@ -63,12 +63,12 @@ The following experimental features are turned on by default. You can use these 
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 
-**Turned on by default in Microsoft Edge Stable 134:**
+**Turned on by default in Microsoft Edge Stable 135:**
+* [Enable full accessibility tree view in the Elements panel](#enable-full-accessibility-tree-view-in-the-elements-panel)
 * [Redesign of the filter bar in the Network panel](#redesign-of-the-filter-bar-in-the-network-panel)
 * [Autofill panel](#autofill-panel)
 * [Performance panel: enable dimming unrelated events in performance insights and search results](#performance-panel-enable-dimming-unrelated-events-in-performance-insights-and-search-results)
 * [Performance panel: enable a switch to an alternative timeline navigation option](#performance-panel-enable-a-switch-to-an-alternative-timeline-navigation-option)
-* [Performance panel: enable third party dependency features](#performance-panel-enable-third-party-dependency-features)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
@@ -163,7 +163,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -195,7 +195,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -213,7 +213,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -235,7 +235,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -262,7 +262,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -293,7 +293,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -308,7 +308,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -323,7 +323,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -340,7 +340,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -357,7 +357,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -376,7 +376,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -394,7 +394,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -421,7 +421,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -440,7 +440,7 @@ See also:
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -470,7 +470,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -487,7 +487,7 @@ See also:
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -505,7 +505,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -525,7 +525,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -563,7 +563,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -580,7 +580,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -607,7 +607,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -623,7 +623,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -645,7 +645,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ======================================================================
@@ -664,7 +664,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 -->
 
 
@@ -682,7 +682,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -702,7 +702,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ============================================================================================================================================ -->
@@ -722,7 +722,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -737,7 +737,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -756,7 +756,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -773,7 +773,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== --
@@ -784,7 +784,7 @@ Status:
 <!-- 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 -->
 
 
@@ -798,7 +798,7 @@ This experiment makes the **Performance** tool capture newly added traces, to su
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -818,7 +818,7 @@ This experiment makes the **Performance** tool record script source text in trac
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -836,7 +836,7 @@ Adds a **Trace Event** section to the **Summary** tab of the **Performance** too
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -856,7 +856,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
@@ -874,7 +874,7 @@ See also:
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
-* This checkbox is present in Microsoft Edge Stable 134.
+* This checkbox is present in Microsoft Edge Stable 135.
 
 
 <!-- ====================================================================== -->
