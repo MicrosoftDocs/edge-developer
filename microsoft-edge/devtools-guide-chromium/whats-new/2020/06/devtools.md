@@ -172,7 +172,7 @@ See also:
 <!-- ---------- -->
 ###### First Meaningful Paint deprecation
 
-First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, see [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
+First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** tool.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, see [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
 
 <!--todo: add Largest Contentful Paint when section available  -->
 <!--todo: add First Meaningful Paint link and note when available  -->
@@ -242,7 +242,7 @@ See also:
 Chromium issue [#1071432](https://crbug.com/1071432)
 
 See also:
-* [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](../../../memory-inspector/memory-inspector-tool.md)
+* [Inspect a JavaScript ArrayBuffer with the Memory inspector tool](../../../memory-inspector/memory-inspector-tool.md)
 <!-- todo: correct tool? -->
 
 
@@ -304,13 +304,13 @@ See also:
 Chromium issue [#912581](https://crbug.com/912581)
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ---------- -->
 ###### Navigation timing alignment in the Performance panel
 
-Previously, the **Performance** panel showed times in the rulers based on when the recording started.  The timing has now changed for recordings where the user navigates.  DevTools now shows ruler times relative to the navigation, instead of when the recording started.
+Previously, the **Performance** tool showed times in the rulers based on when the recording started.  The timing has now changed for recordings where the user navigates.  DevTools now shows ruler times relative to the navigation, instead of when the recording started.
 
 ![Align navigation timing in Performance tool](./devtools-images/nav-timing.png)
 
@@ -319,7 +319,7 @@ The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Large
 Chromium issue [#974550](https://crbug.com/974550)
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ------------------------------ -->

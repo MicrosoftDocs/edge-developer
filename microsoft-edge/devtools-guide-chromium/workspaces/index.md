@@ -31,11 +31,11 @@ To refresh your knowledge of the technologies used, see the following articles:
 
 * Use HTML, CSS, and JavaScript to build a web page. See [Getting started with the web](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web)
 
-* Use DevTools to make basic changes to CSS. See [Get started viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css/)
+* Use DevTools to make basic changes to CSS. See [Get started viewing and changing CSS](../css/index.md).
 
 * Run a local HTTP web server. See: 
 
-  * Using Node.js (used for this tutorial): [Set up a localhost server](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/install#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
+  * Using Node.js (used for this tutorial): [Set up a localhost server](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
   
   * Using Python: [Running a simple local HTTP server](https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server) in _How do you set up a local testing server?_
 
