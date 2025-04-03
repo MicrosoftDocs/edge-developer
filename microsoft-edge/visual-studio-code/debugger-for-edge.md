@@ -17,4 +17,4 @@ For more information, see [Browser debugging in VS Code](https://code.visualstud
 
 Send your feedback by [filing an issue](https://github.com/microsoft/vscode-js-debug/issues/new) in the [vscode-js-debug repository](https://github.com/microsoft/vscode-js-debug).
 
-You can also inspect HTML and CSS using DevTools from within Visual Studio Code. To learn more, see [Browser debugging with Microsoft Edge Devtools integration in Visual Studio Code](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code).
+You can also inspect HTML and CSS using DevTools from within Visual Studio Code.  See [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md).

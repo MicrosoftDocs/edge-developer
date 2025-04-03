@@ -222,16 +222,16 @@ See also:
 <!-- ------------------------------ -->
 #### Using the Command Menu to open files
 
-To open a file, in addition to using the **Navigator** pane within the **Sources** tool, you can use the Command Menu from anywhere within DevTools.
+To open a file, in addition to using the **Navigator** pane within the **Sources** tool, you can use the **Command Menu** from anywhere within DevTools.
 
-*  From anywhere in DevTools, press **Ctrl+P** on Windows/Linux or **Command+P** on macOS.  The Command Menu appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
+*  From anywhere in DevTools, press **Ctrl+P** on Windows/Linux or **Command+P** on macOS.  The **Command Menu** appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
 *  Or, next to the tabs of the **Navigator** pane in the **Sources** tool, select the **...** (**More options**) button, and then select **Open File**.
 
 To display and pick from a list of all .js files, type **.js**.
 
 ![Opening a file by using the Command Menu](./index-images/sources-command-menu-to-open-file.png)
 
-If you type **?**, the Command Menu shows several commands, including **... Open file**.  If you press **Backspace** to clear the Command Menu, a list of files is shown.
+If you type **?**, the **Command Menu** shows several commands, including **... Open file**.  If you press **Backspace** to clear the **Command Menu**, a list of files is shown.
 
 For more information, see [Run commands with the Microsoft Edge DevTools Command Menu](../command-menu/index.md).
 
@@ -411,15 +411,15 @@ See also:
 <!-- ------------------------------ -->
 #### Going to a line number or function
 
-To go to a line number or symbol (such as a function name) in the file which is open in the Editor pane, you can use the Command Menu, rather than scrolling through the file.
+To go to a line number or symbol (such as a function name) in the file which is open in the Editor pane, you can use the **Command Menu**, rather than scrolling through the file.
 
-1.  In the **Navigator** pane, select the ellipses (...) (**More options**), and then select **Open File**.  The Command Menu appears.
+1.  In the **Navigator** pane, select the ellipses (...) (**More options**), and then select **Open File**.  The **Command Menu** appears.
 1.  Type one of the following characters:
 
 | Character | Command name | Purpose |
 |---|---|---|
 | \: | **Go to line** | Go to a line number. |
-| \@ | **Go to symbol** | Go to a function.  When you type **@**, the Command Menu lists the functions that are found in the JavaScript file which is open in the Editor pane. |
+| \@ | **Go to symbol** | Go to a function.  When you type **@**, the **Command Menu** lists the functions that are found in the JavaScript file which is open in the Editor pane. |
 
 For more information, see [Run commands with the Microsoft Edge DevTools Command Menu](../command-menu/index.md).
 
@@ -433,7 +433,7 @@ To use the **Quick source** tool:
 
 1. Select a tool other than the **Sources** tool, such as the **Elements** tool.
 
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  The Command Menu opens.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  The **Command Menu** opens.
 
 1. Type **quick**, and then select **Show Quick source**.
 

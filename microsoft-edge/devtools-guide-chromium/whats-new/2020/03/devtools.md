@@ -153,7 +153,7 @@ Chromium issue [#1003700](https://crbug.com/1003700)
 
 See also:
 * [Emulate vision deficiencies](../../../accessibility/emulate-vision-deficiencies.md)
-* [Analyze rendering performance with the Rendering tool](../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_
+* [Analyze rendering performance with the Rendering tool](../../../performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_
 * [Types of Colour Blindness](http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness), at Colourblindawareness.org.
 
 
@@ -231,7 +231,7 @@ To discover more keywords like `cookie-path`, see [Filter requests by properties
 <!-- ------------------------------ -->
 #### Dock to left from the Command Menu
 
-To move DevTools to the left of the viewport (rendered webpage), open the [Command Menu](../../../command-menu/index.md) and run the `Dock to left` command.  The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the main menu.  You can now access the **Dock to left** feature from the Command Menu, as well.
+To move DevTools to the left of the viewport (rendered webpage), open the [Command Menu](../../../command-menu/index.md) and run the `Dock to left` command.  The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the main menu.  You can now access the **Dock to left** feature from the **Command Menu**, as well.
 
 ![DevTools docked to the left of the viewport](./devtools-images/dock-to-left.png)"
 
@@ -276,7 +276,7 @@ See also:
 
 A **Long Task** is JavaScript code that monopolizes the main thread for a long time, causing a web page to freeze.
 
-You've been able to [visualize Long Tasks in the Performance panel](../../../evaluate-performance/reference.md#view-main-thread-activity) for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the **Performance** panel has been updated.  The Long Task portion of a task is now colored with a striped red background:
+You've been able to [visualize Long Tasks in the Performance panel](../../../performance/reference.md#view-main-thread-activity) for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the **Performance** tool has been updated.  The Long Task portion of a task is now colored with a striped red background:
 
 ![The new Long Task UI](./devtools-images/long-task.png)
 
