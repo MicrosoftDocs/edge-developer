@@ -106,10 +106,9 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 
 ##### [Win32/C++](#tab/win32cpp)
 
-<!-- todo: Frame8 or 7? -->
-* [ICoreWebView2Frame8](/microsoft-edge/webview2/reference/win32/icorewebview2frame8?view=webview2-1.0.3230-prerelease&preserve-view=true)<!-- vs. ICoreWebView2ExperimentalFrame8 -->
-  * [ICoreWebView2Frame8::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame8?view=webview2-1.0.3230-prerelease&preserve-view=true#add_framecreated)
-  * [ICoreWebView2Frame8::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame8?view=webview2-1.0.3230-prerelease&preserve-view=true#remove_framecreated)
+* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true)<!-- vs. ICoreWebView2ExperimentalFrame8 -->
+  * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#add_framecreated)
+  * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#remove_framecreated)
 
 * [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3230-prerelease&preserve-view=true)<!-- win32 only --><!-- vs. ICoreWebView2ExperimentalFrameChildFrameCreatedEventHandler -->
 
