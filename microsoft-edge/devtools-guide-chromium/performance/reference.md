@@ -380,7 +380,7 @@ In the top-right corner of the **Performance** tool, click the **Show shortcuts*
 
 With the **Modern** option button selected:
 
-![Keyboard shortcuts popup with Modern selected](./reference-images/perf-nav-keyboard-shortcuts-modern.png)
+![Keyboard shortcuts popup with Modern selected](./reference-images/perf-shortcuts-style.png)
 
 * To zoom: **Command/Ctrl** + mouse wheel.
 * To vertical scroll: Mouse wheel.
@@ -389,9 +389,6 @@ With the **Modern** option button selected:
 
 With the **Classic** option button selected:
 
-![Keyboard shortcuts popup with Classic selected](./reference-images/perf-nav-keyboard-shortcuts-classic.png)
-
-<!-- articulate all options shown in the dialog -->
 * To zoom: Mouse wheel, or touchpad up or down.
 * To vertical scroll: **Shift** + mouse wheel.
 * To horizontal scroll: **Shift** + **Left arrow**|**Right arrow**
@@ -700,12 +697,7 @@ The next three sections all refer to the same demo.  You can run the demo yourse
 ###### Root activities
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#root-activities -->
 
-<!-- todo: resume here syncing text content -->
-
-Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.  The _activity tabs_ are the **Bottom-up**, **Call tree**, and **Event log** tabs at the bottom of the **Performance** tool.  These tabs display root activities.
-
-<!-- upstream doc:
-You can view the source files for the Activity Tabs Demo in the [MicrosoftEdge/Demos > devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) repo folder. -->
+Here's an explanation of the root activities concept that's mentioned in the **Call Tree** tab, **Bottom-Up** tab, and **Event Log** sections.
 
 _Root activities_ are activities that cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` activity may cause other activities to run, such as a handler.
 
@@ -714,48 +706,16 @@ In the flame chart of the **Main** section, root activities are at the top of th
 For an example of root activities, see [The Call tree tab](#the-call-tree-tab), below.
 
 
-<!-- order of headings/sections & in sentences:
-
-upstream doc uses sequence & casing:
-[Call Tree] [Bottom-Up] [Event Log]
-
-downstream doc follows UI's tab sequence & casing:
-[Bottom-up] [Call tree] [Event log]
--->
-
-
-<!-- ---------- -->
-###### The Bottom-up tab
-
-Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
-
-Use the **Bottom-up** tab to view which activities directly took up the most time in aggregate.
-
-The **Bottom-up** tab only displays activities during the selected portion of the recording:
-
-![The Bottom-up tab](./reference-images/bottoms-up.png)
-
-To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
-
-In the **Main** section flame chart of the previous figure, almost all of the time was spent running the `a`, `b`, and `c` functions.  The top activities in the **Bottom-up** tab of the previous figure are also `a`, `b`, and `c`. In the **Bottom-up** tab, the next most expensive activity is `Minor GC`.
-
-The **Self Time** column represents the aggregated time spent directly in that activity, across all of the occurrences.
-
-The **Total Time** column represents aggregated time spent in that activity or any of the children.
-
-
+<!-- matches upstream section order -->
 <!-- ---------- -->
 ###### The Call tree tab
 
-Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
-
 Use the **Call tree** tab to view which [root activities](#root-activities) cause the most work.
 
-The **Call tree** tab only displays activities during the selected portion of the recording:
+The **Call tree** tab only displays activities during the selected portion of the recording.  To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
 
 ![The Call tree tab](./reference-images/call-tree.png)
-
-To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
+<!-- https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/ -->
 
 In the previous figure, the top-level items in the **Activity** column, such as `Event Timing`, are root activities.  The nesting represents the call stack.  For example, in the previous figure, `Event Timing` caused `Event: mouseup`, which caused `Function Call`, which cause `(anonymous)`, and so on.
 
@@ -771,17 +731,32 @@ Click **Show Heaviest Stack** (![Show Heaviest Stack](./reference-images/show-he
 
 
 <!-- ---------- -->
+###### The Bottom-up tab
+
+Use the **Bottom-up** tab to view which activities directly took up the most time in aggregate.
+
+The **Bottom-up** tab only displays activities during the selected portion of the recording.  To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
+
+![The Bottom-up tab](./reference-images/bottoms-up.png)
+<!-- https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/ -->
+
+In the **Main** section flame chart of the previous figure, almost all of the time was spent running the `a`, `b`, and `c` functions.  The top activities in the **Bottom-up** tab of the previous figure are also `a`, `b`, and `c`. In the **Bottom-up** tab, the next most expensive activity is `Minor GC`.
+
+The **Self Time** column represents the aggregated time spent directly in that activity, across all of the occurrences.
+
+The **Total Time** column represents aggregated time spent in that activity or any of the children.
+
+
+<!-- ---------- -->
 ###### The Event log tab
 
 Use the **Event log** tab to view activities in the order in which they occurred during the recording.
 
-The **Event log** tab only displays activities during the selected portion of the recording:
+The **Event log** tab only displays activities during the selected portion of the recording.  To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
 
 ![The Event log tab](./reference-images/event-log.png)
 
-To learn how to select a portion of a recording, see [Select a portion of a recording](#select-a-portion-of-a-recording), above.
-
-The **Start Time** column represents the point at which that activity started, relative to the start of the recording.  For example, the start time of `175.7 ms` for the selected item in the previous figure means that activity started 175.7 ms after the recording started.
+The **Start Time** column represents the point at which that activity started, relative to the start of the recording.  For example, the start time of `925.0 ms` for the selected item in the previous figure means that activity started 925.0 ms after the recording started.
 
 The **Self Time** column represents the time spent directly in that activity.
 
@@ -808,19 +783,20 @@ In an overlay with vertical lines across the performance trace, you can see impo
 * [DOMContentLoaded Event (DCL)](https://developer.mozilla.org/docs/Web/API/Window/DOMContentLoaded_event)
 * [Onload Event (L)](https://developer.mozilla.org/docs/Web/API/Window/load_event)
 
-<!-- ![Performance markers in an overlay](todo: performance-markers.png) - https://www.youtube.com showing DevTools > Perf tool, not showing webpage-->
+<!-- ![Performance markers in an overlay](todo: performance-markers.png) - youtube.com in titlebar -->
 
 Hover over a marker name at the bottom of the trace to see its timestamp.
 
 
 <!-- ------------------------------ -->
 #### View custom timings
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#timings -->
 
 On the **Timings** track, view your custom performance markers such as:
 
-* `performance.mark()` calls.<!-- An individual mark with tooltip is shown below at 813.44 ms, labelled **Starting to run JavaScript**. -->
+* `performance.mark()` calls.<!-- todo: An individual mark with tooltip is shown below at 813.44 ms, labelled **Starting to run JavaScript**. -->
 
-* `performance.measure()` calls.<!-- A yellow span is shown below, labelled **Slow Interaction**. -->
+* `performance.measure()` calls.<!-- todo: A yellow span is shown below, labelled **Slow Interaction**. -->
 
 <!-- ![Markers in the Timings track](todo: performance-mark-and-measure.png) -->
 
@@ -829,6 +805,8 @@ Select a marker to see more details in the **Summary** tab, including its timest
 
 <!-- ------------------------------ -->
 #### View interactions
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#interactions -->
+<!-- todo: upstream has more content -->
 
 Use the **Interactions** section to find and analyze user interactions that happened during the recording:
 
@@ -867,6 +845,7 @@ Select an animation to see more details in the **Summary** tab, including reason
 
 <!-- ------------------------------ -->
 #### View GPU activity
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#gpu -->
 
 View GPU activity in the **GPU** section of the **Performance** tool:
 
@@ -875,6 +854,7 @@ View GPU activity in the **GPU** section of the **Performance** tool:
 
 <!-- ------------------------------ -->
 #### View raster activity
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#raster -->
 
 View raster activity in the **Thread Pool** section.
 
@@ -883,16 +863,18 @@ View raster activity in the **Thread Pool** section.
 
 <!-- ------------------------------ -->
 #### Analyze frames per second (FPS)
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#fps -->
 
 DevTools provides two ways to analyze frames per second:
 
-*  Use [the Frames section](#the-frames-section) to view how long a particular frame took.
+*  Use the **Frames** section to view how long a particular frame took.  See [The Frames section](#the-frames-section), below.
 
 *  Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter), below.
 
 
 <!-- ---------- -->
 ###### The Frames section
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#frames -->
 
 The **Frames** section tells you exactly how long a particular frame took.
 
@@ -900,13 +882,31 @@ Hover over a frame to view a tooltip with more information about it:
 
 ![Hovering on a frame](./reference-images/frames-hover.png)
 
-Select a frame to view more information about the frame in the **Summary** tab at the bottom of the **Performance** tool.  DevTools outlines the selected frame in blue:
+The above example shows a tooltip when you hover over a frame.
 
-![View a frame in the Summary tab](./reference-images/frames-summary.png)
+The Frames section can show four types of frames:
+
+* Idle frame (white). No changes.
+
+* Frame (green). Rendered as expected and in time.
+
+* Partially presented frame (yellow with a sparse wide dash-line pattern).  Microsoft Edge did its best to render at least some visual updates in time.  For example, in case the work of the main thread of the renderer process (canvas animation) is late but the compositor thread (scrolling) is in time.
+
+* Dropped frame (red with a dense solid-line pattern).  Microsoft Edge can't render the frame in reasonable time.
+
+<!-- ![Hovering over a partially presented frame](todo: hovering-a-partially-pre-123.png) -->
+
+<!-- The above example shows a tooltip when you hover over a partially presented frame. -->
+
+Click a frame to view more information about the frame in the **Summary** tab at the bottom of the **Performance** tool.  DevTools outlines the selected frame in blue:
+
+![Viewing a frame in the Summary tab](./reference-images/frames-summary.png)
 
 
 <!-- ------------------------------ -->
 #### View network requests
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#network -->
+<!-- upstream walks through a different demo page, so section content differs -->
 
 Expand the **Network** section to view a waterfall of network requests that occurred during the recording:
 
@@ -918,30 +918,31 @@ Click on a request to view more information about it in the **Summary** tab:
 
 Requests in the **Network** section are color-coded as follows:
 
-*  Blue background: HTML request.
-*  Purple background: CSS request.
-*  Dark yellow background: JS request.
-*  Green background: image request.
+* Blue background: HTML request.
+* Purple background: CSS request.
+* Dark yellow background: JS request.
+* Green background: image request.
 
 Requests have squares in the top-left corner:
-*  A darker-blue square in the top-left of a request means it's a higher-priority request.
-*  A lighter-blue square means lower-priority.
+* A darker-blue square in the top-left of a request means it's a higher-priority request.
+* A lighter-blue square means lower-priority.
 
 For example, in the previous figure, the **photo-gallery** request, in the top left corner of the **Network** section is higher-priority.
 
-Requests might have lines on the left and right sides, and their bars might be split into two colors. Here's what these lines and colors represent:
+Requests might have lines on the left and right sides, and their bars might be split into two colors.  Here's what these lines and colors represent:
 
-*  The left line is everything up to the `Connection Start` group of events, inclusive.  In other words, it's everything before `Request Sent`, exclusive.
+* The left line is everything up to the `Connection Start` group of events, inclusive.  In other words, it's everything before `Request Sent`, exclusive.
 
-*  The light portion of the bar is `Request Sent` and `Waiting (TTFB)`.
+* The light portion of the bar is `Request Sent` and `Waiting (TTFB)` for server response.
 
-*  The dark portion of the bar is `Content Download`.
+* The dark portion of the bar is `Content Download`.
 
-*  The right line is essentially time spent waiting for the main thread.  This isn't represented in the **Timing** tab.
+* The right line is essentially time spent waiting for the main thread.  This isn't represented in the **Timing** tab.
 
 
 <!-- ------------------------------ -->
 #### View memory metrics
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#memory -->
 
 Select the **Memory** checkbox to view memory metrics in a performance recording:
 
@@ -961,6 +962,7 @@ See also:
 
 <!-- ------------------------------ -->
 #### View the duration of a portion of a recording
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#duration -->
 
 When analyzing a section like **Network** or **Main**, sometimes you need a more precise estimate of how long certain events took.  Hold **Shift**, click and hold, and drag left or right to select a portion of the recording.  At the bottom of your selection, DevTools shows how long that portion took:
 
@@ -969,6 +971,7 @@ When analyzing a section like **Network** or **Main**, sometimes you need a more
 
 <!-- ------------------------------ -->
 #### View a screenshot
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#view-screenshot -->
 
 To learn how to turn on screenshots, see [Capture screenshots while recording](#capture-screenshots-while-recording), above.
 
@@ -985,6 +988,7 @@ To zoom in on the screenshot, click the thumbnail in the **Summary** tab.
 
 <!-- ------------------------------ -->
 #### View layers information
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#layers -->
 
 To view advanced layers information about a frame:
 
@@ -999,6 +1003,7 @@ The **Layers** tab works like the **Composited Layers** tab in the **3D View** t
 
 <!-- ------------------------------ -->
 #### View paint profiler
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#paint-profiler -->
 
 To view advanced information about a paint event:
 
@@ -1075,6 +1080,7 @@ See also:
 
 <!-- ------------------------------ -->
 #### View frames per second in realtime with the FPS meter
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#fps-meter -->
 
 The **FPS meter** is an overlay that appears in the top-left corner of the rendered webpage.  It provides a realtime estimate of FPS as the page runs.  To open the **FPS meter**:
 
@@ -1091,6 +1097,7 @@ upstream doesn't actually have yet section #frame-rendering-stats -->
 
 <!-- ------------------------------ -->
 #### View painting events in realtime with Paint Flashing
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#paint-flash -->
 
 Use Paint Flashing to get a realtime view of all paint events on the page.  Whenever a part of the page gets re-painted, DevTools outlines that section in green.
 
@@ -1109,6 +1116,7 @@ upstream doesn't actually have yet section #paint-flashing -->
 
 <!-- ------------------------------ -->
 #### View an overlay of layers with Layer Borders
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#layer-border -->
 
 To view an overlay of layer borders and tiles on top of the page:
 
@@ -1125,6 +1133,7 @@ See the comments in [debug_colors.cc](https://source.chromium.org/chromium/chrom
 
 <!-- ------------------------------ -->
 #### Find scroll performance issues in realtime
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#find_scroll_performance_issues_in_real_time -->
 
 Use the **Scrolling Performance Issues** checkbox to identify elements of the page that have event listeners related to scrolling that may harm the performance of the page.  DevTools outlines the potentially problematic elements in teal.
 
