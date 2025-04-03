@@ -111,7 +111,32 @@
       },
       {
         "source_path": "./microsoft-edge/devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/evaluate-performance/",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/index.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/reference.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/reference",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/performance-reference.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/performance-reference",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/unminify.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/unminify",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/selector-stats.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/selector-stats",
         "redirect_document_id": false
       },
       {
@@ -122,6 +147,7 @@
       {
         "source_path": "./microsoft-edge/devtools-guide-chromium/device-mode/orientation.md",
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/sensors/#simulate-device-orientation",
+        "redirect_document_id": false
       },
       {
         "source_path": "./microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks.md",

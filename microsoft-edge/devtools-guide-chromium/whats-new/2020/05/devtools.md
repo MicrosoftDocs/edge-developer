@@ -172,13 +172,13 @@ See also:
 #### Performance panel updates
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ---------- -->
 ###### View Total Blocking Time information in the footer
 
-After recording your load performance, the **Performance** panel now shows Total Blocking Time (TBT) information in the footer.  TBT is a load performance metric that helps quantify how long a page takes to become usable.  TBT essentially measures how long a page only _appears_ to be usable (because the content is rendered to the screen); but the page isn't actually usable, because JavaScript is blocking the main thread and therefore the page doesn't respond to user input.  TBT is the main metric for approximating First Input Delay.
+After recording your load performance, the **Performance** tool now shows Total Blocking Time (TBT) information in the footer.  TBT is a load performance metric that helps quantify how long a page takes to become usable.  TBT essentially measures how long a page only _appears_ to be usable (because the content is rendered to the screen); but the page isn't actually usable, because JavaScript is blocking the main thread and therefore the page doesn't respond to user input.  TBT is the main metric for approximating First Input Delay.
 
 <!--todo:  add link Total Blocking Time (TBT) (WebdevTbt) when section is live  -->
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->
@@ -195,13 +195,13 @@ If `Total Blocking Time: Unavailable` is displayed, Microsoft Edge DevTools did 
 Chromium issue [#1054381](https://crbug.com/1054381)
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ---------- -->
 ###### Layout Shift events in the new Experience section
 
-The new **Experience** section of the **Performance** panel helps you detect layout shifts.  Cumulative Layout Shift (CLS) is a metric that helps you quantify unwanted visual instability.
+The new **Experience** section of the **Performance** tool helps you detect layout shifts.  Cumulative Layout Shift (CLS) is a metric that helps you quantify unwanted visual instability.
 
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->
@@ -211,7 +211,7 @@ Click the **Layout Shift** event to display the details of the layout shift in t
 ![The details of a layout shift](./devtools-images/cls.png)
 
 See also:
-* [Performance features reference](../../../evaluate-performance/reference.md)
+* [Performance features reference](../../../performance/reference.md)
 
 
 <!-- ---------------------------------- -->

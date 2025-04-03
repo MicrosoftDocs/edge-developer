@@ -193,7 +193,7 @@ See also:
 
 Test the appearance of your website or app on the following devices in Microsoft Edge.
 
-* [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo)
+* Surface Duo
 * [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold)
 
 To access the new CSS media screen-spanning feature and the `getWindowSegments` (now `visualViewport.segments`) JavaScript API, go to `edge://flags` and toggle the flag next to **Experimental Web Platform features**:<!-- present as of April 19, 2022: -->
@@ -488,7 +488,7 @@ When you analyze load performance in the Performance tool, the **Frames** sectio
 For the history of this feature in the Chromium open-source project, see Issue [1075865](https://crbug.com/1075865).
 
 See also:
-* [Record load performance](../../../evaluate-performance/reference.md#record-load-performance) in _Performance features reference_
+* [Record load performance](../../../performance/reference.md#record-load-performance) in _Performance features reference_
 
 
 ###### New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)

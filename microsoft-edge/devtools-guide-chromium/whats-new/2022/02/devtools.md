@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 98)
-description: 2021 year-in-review blog post.  Automate IE mode with Internet Explorer Driver.  Emulate forced-colors mode.  Tooltips for Activity icons in the Performance tool Event Log.  Shallow sizes in the Memory tool now shown as decimal values.  Network tool's Search text box can now be resized.  And more.
+description: 2021 year-in-review blog post.  Automate IE mode with Internet Explorer Driver.  Emulate forced-colors mode.  Tooltips for Activity icons in the Performance tool Event log.  Shallow sizes in the Memory tool now shown as decimal values.  Network tool's Search text box can now be resized.  And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -72,17 +72,17 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Activity icons in the Event Log of the Performance tool now have tooltips
+## Activity icons in the Event log of the Performance tool now have tooltips
 
-<!-- Title: Analyze runtime performance better with the Event Log in the Performance tool -->
-<!-- Subtitle: Activity icons in the Event Log now have tooltips indicating the type of activity for each event, such as Scripting, Rendering, or Painting. -->
+<!-- Title: Analyze runtime performance better with the Event log in the Performance tool -->
+<!-- Subtitle: Activity icons in the Event log now have tooltips indicating the type of activity for each event, such as Scripting, Rendering, or Painting. -->
 
-In previous versions of Microsoft Edge, the **Event Log** tab in the **Performance** tool displays color-coded icons representing the type of activity for each event.  However, the Event Log doesn't display information about what type of activity is represented by each color.  In Microsoft Edge 98, tooltips have been added to the activity events in the **Event Log** tab, indicating **Scripting**, **Rendering**, **Painting**, **System**, and **Idle time**, for each event.
+In previous versions of Microsoft Edge, the **Event log** tab in the **Performance** tool displays color-coded icons representing the type of activity for each event.  However, the Event log doesn't display information about what type of activity is represented by each color.  In Microsoft Edge 98, tooltips have been added to the activity events in the **Event log** tab, indicating **Scripting**, **Rendering**, **Painting**, **System**, and **Idle time**, for each event.
 
-![In the Event Log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting"](./devtools-images/activity-event-tooltip.png)
+![In the Event log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting"](./devtools-images/activity-event-tooltip.png)
 
 See also:
-* [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance)
+* [Record runtime performance](../../../performance/reference.md#record-runtime-performance)
 
 
 <!-- ====================================================================== -->

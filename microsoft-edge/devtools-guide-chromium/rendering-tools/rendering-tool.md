@@ -22,4 +22,4 @@ The **Rendering** tool is used for tasks such as the following:
 * [Emulate vision deficiencies](../accessibility/emulate-vision-deficiencies.md)
 * [Emulate dark or light schemes in the rendered page](../accessibility/preferred-color-scheme-simulation.md)
 * [Simulate reduced motion](../accessibility/reduced-motion-simulation.md)
-* Analyze rendering performance - see [Analyze rendering performance with the Rendering tool](../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.
+* Analyze rendering performance - see [Analyze rendering performance with the Rendering tool](../performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.
