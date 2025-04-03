@@ -193,7 +193,7 @@ See also:
 
 Test the appearance of your website or app on the following devices in Microsoft Edge.
 
-* Surface Duo<!--https://www.microsoft.com/surface/devices/surface-duo 404-->
+* Surface Duo
 * [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold)
 
 To access the new CSS media screen-spanning feature and the `getWindowSegments` (now `visualViewport.segments`) JavaScript API, go to `edge://flags` and toggle the flag next to **Experimental Web Platform features**:<!-- present as of April 19, 2022: -->

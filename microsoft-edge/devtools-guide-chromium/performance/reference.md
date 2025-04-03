@@ -260,7 +260,7 @@ To learn how to interact with the paint information, see [View layers informatio
 
 Once a performance trace is [recorded](#record-performance), you can [analyze](#analyze-a-performance-recording) it, and annotate it to share your findings.
 
-To annotate a recording, open the **Annotations** tab in the **Performance** tool sidebar.  If the sidebar is not visible, click **Show sidebar** (![The Show sidebar icon](./reference-images/show-sidebar-icon.png)).
+To annotate a recording, open the **Annotations** tab in the **Performance** tool sidebar.  If the sidebar is not visible, click the **Show sidebar** (![The Show sidebar icon](./reference-images/show-sidebar-icon.png)) button.
 
 The **Annotations** tab in the sidebar initially contains instructions about how to add annotations.  After you create annotations, as shown below, the tab lists your existing annotations, and allows you to delete them.
 
@@ -339,18 +339,29 @@ After you [record runtime performance](#record-runtime-performance) or [record l
 
 <!-- ------------------------------ -->
 #### Get actionable insights
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#insights -->
 
-The **Performance** tool extracts actionable insights from the recorded performance data.  These insights are ways in which you can improve the performance of your website.  The insights are focused on:
+The **Performance** tool extracts actionable insights from the recorded performance data.  These insights are ways in which you can improve the performance of your website.  The insights include:
 
-* LCP and INP by subpart.
-* LCP request discovery.
-* Layout shift culprits.
-* Render blocking requests.
-* Third parties.
-* Image delivery.
-* Document request latency.
-* Viewport optimization for mobile.
-* CSS selector costs.
+* INP by phase
+* LCP by phase
+* LCP request discovery
+* Layout shift culprits
+* Render blocking request
+* Network dependency tree
+* Improve image delivery
+* Document request latency
+* Font display
+* Optimize viewport for mobile
+* Optimize DOM size
+* 3rd parties
+* CSS selector costs
+* Forced reflow
+* Use efficient cache lifetimes
+
+The insights are focused on improving the Core Web Vitals metrics and on optimizing how quickly the webpage loads and renders.
+
+After you record a profile in the **Performance** tool, the **Insights** tab in the sidebar shows the list of actionable insights that apply to the recorded performance data.  To view the list of insights that don't apply to the profile, see the **Passed insights** section.
 
 To use the insights:
 
@@ -360,8 +371,7 @@ To use the insights:
 
    ![Hovering over entries in the Insights tab ](./reference-images/insights-tab.png)
 
-
-   To make the **Interactions** tab visible, click the **Move activity bar to the left** (![The "Move activity bar to the left" icon](./reference-images/move-activity-bar-to-the-left-icon.png)) button.<!-- added in Edge doc -->
+   If the sidebar and **Insights** tab is not visible, click the **Show sidebar** (![The Show sidebar icon](./reference-images/show-sidebar-icon.png)) button.
 
 
 <!-- ------------------------------ -->

@@ -32,11 +32,15 @@ Use the **Performance** tool to analyze your website's performance.  There are t
 
 **Detailed contents:**
 * [Overview](#overview)
+
+   * [Open the Performance tool](#open-the-performance-tool)
+      * [Using the Command Menu](#using-the-command-menu)
+
    * [Local metrics for page interactions](#local-metrics-for-page-interactions)
    * [Recorded profile timeline](#recorded-profile-timeline)
    * [Switching to viewing local metrics or another profile](#switching-to-viewing-local-metrics-or-another-profile)
-* [Open the Performance tool](#open-the-performance-tool)
-   * [Using the Command Menu](#using-the-command-menu)
+
+
 * [Monitor Core Web Vitals metrics](#monitor-core-web-vitals-metrics)
    * [Terminology](#terminology)
    * [Use the demo page](#use-the-demo-page)
@@ -58,6 +62,49 @@ For a walkthrough of using the **Performance** tool to improve your website's pe
 <!-- covers basic nav between the two states, and what to use them for, not how to use either view -->
 
 The **Performance** tool displays local metrics for page interactions, and lets you record CPU performance profiles of your web applications.  Analyze profiles to find potential performance bottlenecks and ways that you can optimize resource use.
+
+
+<!-- ------------------------------ -->
+#### Open the Performance tool
+<!-- https://developer.chrome.com/docs/devtools/performance/overview#open_the_performance_panel -->
+
+To open the **Performance** tool: 
+
+1. Go to a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In the **Activity Bar** at top, click the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
+
+   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
+
+
+<!-- ---------- -->
+###### Using the Command Menu
+<!-- added heading as separator, compared to upstream -->
+
+To open the **Performance** tool by using the **Command Menu**:
+
+1. Go to a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In the upper right of DevTools, click **Customize and control DevTools**, click **Run command**.
+
+   Or, press:
+
+   * macOS: **Command+Shift+P**
+   * Windows, Linux, ChromeOS: **Control+Shift+P**
+
+   The **Command Menu** opens, and reads **Run >Command**.
+
+1. Start typing **performance**, select **Show Performance [panel]**, and then press **Enter**.
+
+   ![Command Menu with 'performance' entered](./overview-images/command-menu-performance.png)
 
 
 <!-- ------------------------------ -->
@@ -100,53 +147,8 @@ To switch to displaying a different opened recorded profile timeline,  click the
 
 
 <!-- ====================================================================== -->
-## Open the Performance tool
-<!-- https://developer.chrome.com/docs/devtools/performance/overview#open_the_performance_panel -->
-
-To open the **Performance** tool: 
-
-1. Go to a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
-
-1. Right-click the webpage, and then select **Inspect**.
-
-   DevTools opens.
-
-1. In the **Activity Bar** at top, click the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
-
-   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
-
-
-<!-- ------------------------------ -->
-#### Using the Command Menu
-<!-- added heading as separator, compared to upstream -->
-
-To open the **Performance** tool by using the **Command Menu**:
-
-1. Go to a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
-
-1. Right-click the webpage, and then select **Inspect**.
-
-   DevTools opens.
-
-1. In the upper right of DevTools, click **Customize and control DevTools**, click **Run command**.
-
-   Or, press:
-
-   * macOS: **Command+Shift+P**
-   * Windows, Linux, ChromeOS: **Control+Shift+P**
-
-   The **Command Menu** opens, and reads **Run >Command**.
-
-1. Start typing **performance**, select **Show Performance [panel]**, and then press **Enter**.
-
-   ![Command Menu with 'performance' entered](./overview-images/command-menu-performance.png)
-
-
-<!-- ====================================================================== -->
 ## Monitor Core Web Vitals metrics
 <!-- ## Observe Core Web Vitals live  https://developer.chrome.com/docs/devtools/performance/overview#live-metrics -->
-
-The [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo page is designed to load and handle interactions slowly on purpose, in order to illustrate how the LCP, CLS, and INP metrics can be used in the **Performance** tool to identify and fix performance issues.
 
 Use the **Performance** tool to view Core Web Vitals metrics in the initial, **Local metrics** view.  The home page of the **Performance** tool shows **Local metrics**, which are performance metrics about the rendered webpage:
 
@@ -174,6 +176,8 @@ Use the **Performance** tool to view Core Web Vitals metrics in the initial, **L
 To produce a **poor** or **needs improvement** metric on the **LCP**, **CLS**, and **INP** cards in the **Performance** tool:
 
 1. Open a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
+
+   The [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo page is designed to load and handle interactions slowly on purpose, in order to illustrate how the LCP, CLS, and INP metrics can be used in the **Performance** tool to identify and fix performance issues.
 
 1. Right-click the webpage and then select **Inspect**.
 

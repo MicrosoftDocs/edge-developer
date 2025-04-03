@@ -47,7 +47,7 @@ Chromium issue [#174309](https://crbug.com/174309)
 <!-- ------------------------------ -->
 #### Emulate Surface Duo and Samsung Galaxy Fold
 
-You can now test the look and feel of your website or app on two new devices: Surface Duo<!--https://www.microsoft.com/surface/devices/surface-duo 404--> and [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold) in Microsoft Edge.
+You can now test the look and feel of your website or app on two new devices: Surface Duo and [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold) in Microsoft Edge.
 
 To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device](../../../device-mode/index.md):
 

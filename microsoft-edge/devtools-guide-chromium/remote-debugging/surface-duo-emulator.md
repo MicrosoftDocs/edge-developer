@@ -10,7 +10,7 @@ ms.date: 03/25/2021
 ---
 # Remotely debug Surface Duo emulators
 
-In this article, you walk through the process of remotely debugging your web content in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on a Surface Duo<!--https://www.microsoft.com/surface/devices/surface-duo 404--> emulator from a desktop instance of [Microsoft Edge](https://www.microsoft.com/edge).  For information on debugging on a Surface Duo device, follow our guide for [remote debugging Android devices](index.md).
+In this article, you walk through the process of remotely debugging your web content in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on a Surface Duo emulator from a desktop instance of [Microsoft Edge](https://www.microsoft.com/edge).  For information on debugging on a Surface Duo device, follow our guide for [remote debugging Android devices](index.md).
 
 
 <!-- ====================================================================== -->
