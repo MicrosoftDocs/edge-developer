@@ -437,7 +437,6 @@ Adds an **Autofill** tool to DevTools, to record various events that the browser
 
 See also:
 * [Autofill](/legal/microsoft-edge/privacy#autofill) in _Microsoft Edge Privacy Whitepaper_.
-* [Autofill](../../webview2/concepts/overview-features-apis.md?tabs=dotnetcsharp#autofill) in _Overview of WebView2 APIs_.
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 136.
@@ -446,9 +445,6 @@ Status:
 
 <!-- ====================================================================== -->
 ## Performance panel: show postMessage dispatch and handling flows
-<!-- was:
-## Timeline: Show postMessage dispatch and handling flows
--->
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 124_
@@ -466,8 +462,8 @@ This experiment helps you investigate when a `postMessage` call occurred, and ho
 ![Arrows linking dispatch events to handler events](./index-images/post-message-events-arrows.png)
 
 See also:
-* [View messages between windows, iframes, and dedicated workers](../evaluate-performance/reference.md#view-messages-between-windows-iframes-and-dedicated-workers) in _Performance features reference_.
-* [Performance recording event reference](../evaluate-performance/performance-reference.md)
+* [View messages between windows, iframes, and dedicated workers](../performance/reference.md#view-messages-between-windows-iframes-and-dedicated-workers) in _Performance features reference_.
+* [Performance recording event reference](../performance/performance-reference.md)
 * [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
 * [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
 * [postMessage events and handlers are distinguished from other events](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events) in _What's New in DevTools (Microsoft Edge 124)_.
@@ -487,7 +483,7 @@ Shows a **Server Timings** track in the **Main** section of the **Performance** 
 <!-- todo old: desc -->
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../performance/index.md)
 
 Status:
 * This checkbox is not present in Microsoft Edge Canary 136.
@@ -505,7 +501,7 @@ Enables additional insights within the **Insights** side panel.
 To use this experiment, first select the **Performance panel: enable performance insights** checkbox, and then, if you want to see even more insights, also select the **Performance panel: enable experimental performance insights** checkbox.
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
@@ -525,7 +521,7 @@ This experiment changes the color of certain events in the main section of the *
 * When you use the **Insights** side-panel, and expand one of the insights, only the events that are related to that insight retain their coloring; the other events turn gray.
 
 See also: 
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
@@ -563,7 +559,7 @@ Adds a **Show shortcuts** (![Show shortcuts icon](./index-images/show-shortcuts-
    The list of keyboard shortcuts changes to relect Classic or Modern keyboard navigation of the timeline.
 
 See also: 
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
@@ -682,7 +678,7 @@ Enables Adaptive CPU throttling.
 <!-- todo old: need text -->
 
 See also:
-* [Throttle the CPU while recording](../evaluate-performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.
+* [Throttle the CPU while recording](../performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
@@ -736,7 +732,7 @@ Status:
 Controls whether to show the sampling heap profiler timeline in the **Performance** tool.
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../performance/index.md)
 * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../memory-problems/heap-snapshots.md)
 
 Status:
@@ -756,7 +752,7 @@ Adds an **Invalidations** section for **Recalculate Style** events in the **Summ
 The **Invalidations** section lists the DOM nodes that were invalidated as a result of a change on the webpage, such as a DOM mutation, and which the browser engine had to restyle during the **Recalculate Style** event.
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
@@ -773,7 +769,7 @@ Status:
 Controls whether to show all events in the **Performance** tool.
 
 See also:
-* [Introduction to the Performance tool](../evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../performance/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
@@ -806,8 +802,8 @@ Status:
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
-* [Performance features reference](../evaluate-performance/reference.md)
-* [Performance recording event reference](../evaluate-performance/performance-reference.md)
+* [Performance features reference](../performance/reference.md)
+* [Performance recording event reference](../performance/performance-reference.md)
 
 
 <!-- ====================================================================== -->
@@ -826,8 +822,8 @@ Status:
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
-* [Performance features reference](../evaluate-performance/reference.md)
-* [Performance recording event reference](../evaluate-performance/performance-reference.md)
+* [Performance features reference](../performance/reference.md)
+* [Performance recording event reference](../performance/performance-reference.md)
 
 
 <!-- ====================================================================== -->
@@ -844,8 +840,8 @@ Status:
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
-* [Performance features reference](../evaluate-performance/reference.md)
-* [Performance recording event reference](../evaluate-performance/performance-reference.md)
+* [Performance features reference](../performance/reference.md)
+* [Performance recording event reference](../performance/performance-reference.md)
 
 
 <!-- ====================================================================== -->

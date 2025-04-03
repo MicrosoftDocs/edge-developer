@@ -305,4 +305,4 @@ Legacy browser considerations:
 <!-- ====================================================================== -->
 ## See also
 
-[Detect Windows 11 using User-Agent Client Hints](/microsoft-edge/web-platform/how-to-detect-win11)
+[Detect Windows 11 and CPU architecture using User-Agent Client Hints](./how-to-detect-win11.md)

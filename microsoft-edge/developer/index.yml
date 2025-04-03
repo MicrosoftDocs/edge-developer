@@ -242,7 +242,7 @@ landingContent:
           - text: Develop experiences for the sidebar in Microsoft Edge
             url: ../web-platform/sidebar.md
 
-          - text: Detect Windows 11 using User-Agent Client Hints
+          - text: Detect Windows 11 and CPU architecture using User-Agent Client Hints
             url: ../web-platform/how-to-detect-win11.md
 
           - text: Customize the password reveal button
