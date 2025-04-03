@@ -52,10 +52,10 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed the \<select\> HTML tag<!-- todo: HTML `Select` component? --> to make it selectable, in WPF apps.
+* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
 * Fixed navigation of `edge://crashes` within a WebView2 control.
 * Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
-* Fixed a bug where users were unable to type in input field with autofill info.<!-- todo: delete "with autofill info"?  issue has 0 hits on 'autofill' -->  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
+* Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
 
 <!-- end of Apr 2025 Release SDK -->
 
@@ -122,12 +122,12 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed an issue in WPF where the datalist<!-- todo: spelling/formatting?  bold if a UI label, backticks if code/ID --> dropdown closed when the mouse moved outside the WebView2 control bounds.
+* Fixed an issue in WPF where the \<datalist\> dropdown closed when the mouse moved outside the WebView2 control bounds.
 * Fixed navigation of `edge://crashes` within a WebView2 control.
-* Fixed the \<select\> HTML tag<!-- todo: HTML `Select` component? --> to make it selectable, in WPF apps.
+* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
 * Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
 * Fixed bug where users unable to type in input field with autofill info([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
-* Fixed a bug where users were unable to type in input field with autofill info.<!-- todo: delete "with autofill info"?  issue has 0 hits on 'autofill' -->  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
+* Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
 * Fixed a regression in the [Status bar](../concepts/overview-features-apis.md#status-bar) APIs.
 
 
