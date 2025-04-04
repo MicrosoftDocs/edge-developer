@@ -48,33 +48,6 @@ These experiments could be unstable or unreliable and may require you to restart
 
 
 <!-- ====================================================================== -->
-## Experiments which are turned on by default
-
-The following experimental features are turned on by default. You can use these features right away, without changing any settings. You can turn off these default experimental features, if needed.
-
-<!-- listed in order of the Settings > Experiments pane -->
-
-**Turned on by default in Microsoft Edge Canary 136:**
-* [Enable full accessibility tree view in the Elements panel](#enable-full-accessibility-tree-view-in-the-elements-panel)
-* [Redesign of the filter bar in the Network panel](#redesign-of-the-filter-bar-in-the-network-panel)
-* [Performance panel: enable dimming unrelated events in performance insights and search results](#performance-panel-enable-dimming-unrelated-events-in-performance-insights-and-search-results)
-* [Performance panel: enable a switch to an alternative timeline navigation option](#performance-panel-enable-a-switch-to-an-alternative-timeline-navigation-option)
-* [Enable webhint](#enable-webhint)
-* [Show issues in Elements](#show-issues-in-elements)
-* [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
-
-**Turned on by default in Microsoft Edge Stable 135:**
-* [Enable full accessibility tree view in the Elements panel](#enable-full-accessibility-tree-view-in-the-elements-panel)
-* [Redesign of the filter bar in the Network panel](#redesign-of-the-filter-bar-in-the-network-panel)
-* [Autofill panel](#autofill-panel)
-* [Performance panel: enable dimming unrelated events in performance insights and search results](#performance-panel-enable-dimming-unrelated-events-in-performance-insights-and-search-results)
-* [Performance panel: enable a switch to an alternative timeline navigation option](#performance-panel-enable-a-switch-to-an-alternative-timeline-navigation-option)
-* [Enable webhint](#enable-webhint)
-* [Show issues in Elements](#show-issues-in-elements)
-* [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
-
-
-<!-- ====================================================================== -->
 ## Turning an experiment on or off
 
 Experimental features are constantly being updated and might cause performance issues.  This is one reason you might want to turn off an experiment.
@@ -742,9 +715,6 @@ Status:
 
 <!-- ====================================================================== -->
 ## Performance panel: invalidation tracking
-<!-- was:
-## Timeline: invalidation tracking
--->
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Adds an **Invalidations** section for **Recalculate Style** events in the **Summary** tab of the **Performance** tool.  The **Invalidations** section provides information about the root cause for a **Recalculate Style** event, which might be helpful when investigating long-running **Recalculate Style** events that are causing performance issues.
@@ -761,9 +731,6 @@ Status:
 
 <!-- ====================================================================== -->
 ## Performance panel: show all events
-<!-- was:
-## Timeline: show all events
--->
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 Controls whether to show all events in the **Performance** tool.
@@ -776,16 +743,15 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 135.
 
 
-<!-- ====================================================================== --
+<!-- ====================================================================== -->
 ## Performance panel: V8 runtime call stats -->
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
-<!-- checkbox will be removed, has no effect; after that, remove this section -->
 
-<!-- 
+In the **Performance** tool, displays V8 JavaScript browser engine runtime call stats.
+
 Status:
 * This checkbox is present in Microsoft Edge Canary 136.
 * This checkbox is present in Microsoft Edge Stable 135.
--->
 
 
 <!-- ====================================================================== -->
