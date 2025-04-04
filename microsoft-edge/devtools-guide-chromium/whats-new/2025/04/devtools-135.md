@@ -30,6 +30,7 @@ Microsoft Edge 135 includes the following updates from the Chromium project:
 * ['Ask AI' option moved to the bottom of the menu](https://developer.chrome.com/blog/new-in-devtools-135#ask-ai)
 * [Lighthouse 12.4.0](https://developer.chrome.com/blog/new-in-devtools-135#lighthouse)
 * [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-135#misc)
+<!-- todo: maybe remove some links, then update "description" field so that the contained string is 160 chars max -->
 
 
 <!-- ====================================================================== -->
