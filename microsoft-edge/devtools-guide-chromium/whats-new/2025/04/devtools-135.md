@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 135)
-description: "Origin and script links for profile and function calls in Performance tool. 'LCP by phase' field data support. Heaviest stack highlighting. Improved empty states for tools. And more."  # todo: 160 char
+description: "Origin and script links for profile and function calls. 'Network dependency tree' insight. Heaviest stack highlighting. Improved empty states for tools. And more."  # 160 char
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -18,7 +18,6 @@ These are the latest features in the Stable release of Microsoft Edge DevTools. 
    * [Heaviest stack highlighting](https://developer.chrome.com/blog/new-in-devtools-135#heaviest-stack)
 * [Accessibility tree view in Elements](https://developer.chrome.com/blog/new-in-devtools-135#accessibility-tree)
 * [Improved empty states for various panels](https://developer.chrome.com/blog/new-in-devtools-135#empty-panels)
-
 
 
 <!-- ====================================================================== -->
