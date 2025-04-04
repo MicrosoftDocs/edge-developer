@@ -91,7 +91,7 @@ Use performance.measure https://developer.mozilla.org/docs/Web/API/Performance/m
 
 
 <!-- ------------------------------ -->
-#### devtools object
+#### `devtools` object
 
 These types define the structure of the devtools object for different extension features:
 
@@ -121,7 +121,7 @@ interface ExtensionMarkerPayload {
 
 
 <!-- ====================================================================== -->
-## Inject your data with console.timeStamp
+## Inject your data with `console.timeStamp`
 
 The console.timeStamp API is extended to allow for the creation of custom timing entries in the Performance panel with minimal overhead.
 
