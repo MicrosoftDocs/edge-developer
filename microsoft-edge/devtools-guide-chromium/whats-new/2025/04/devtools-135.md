@@ -14,15 +14,11 @@ These are the latest features in the Stable release of Microsoft Edge DevTools. 
 
 * [Performance panel improvements](https://developer.chrome.com/blog/new-in-devtools-135#perf)
    * [Origin and script links for profile and function calls in Performance](https://developer.chrome.com/blog/new-in-devtools-135#perf-script-origin)
-   * ['LCP by phase' field data support](https://developer.chrome.com/blog/new-in-devtools-135#lcp-field)
    * ['Network dependency tree' insight](https://developer.chrome.com/blog/new-in-devtools-135#network-deps-tree)
    * [Heaviest stack highlighting](https://developer.chrome.com/blog/new-in-devtools-135#heaviest-stack)
 * [Accessibility tree view in Elements](https://developer.chrome.com/blog/new-in-devtools-135#accessibility-tree)
 * [Improved empty states for various panels](https://developer.chrome.com/blog/new-in-devtools-135#empty-panels)
-* ['Ask AI' option moved to the bottom of the menu](https://developer.chrome.com/blog/new-in-devtools-135#ask-ai)
-* [Lighthouse 12.4.0](https://developer.chrome.com/blog/new-in-devtools-135#lighthouse)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-135#misc)
-<!-- todo: maybe remove some links, then update "description" field so that the contained string is 160 chars max -->
+
 
 
 <!-- ====================================================================== -->
