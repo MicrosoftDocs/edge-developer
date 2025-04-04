@@ -28,14 +28,14 @@ ms.date: 03/13/2025
 * [Overview](#overview)
 * [Key features](#key-features)
 * [Inject your data with the User Timings API](#inject-your-data-with-the-user-timings-api)
-   * [devtools object](#devtools-object)
-* [Inject your data with console.timeStamp](#inject-your-data-with-consoletimestamp)
+   * [`devtools` object](#devtools-object)
+* [Inject your data with `console.timeStamp`](#inject-your-data-with-consoletimestamp)
 * [View your data in the timeline](#view-your-data-in-the-timeline)
 * [Code examples](#code-examples)
-   * [User Timings API Examples](#user-timings-api-examples)
+   * [User Timings API examples](#user-timings-api-examples)
       * [Custom tracks and entries](#custom-tracks-and-entries)
       * [Markers](#markers)
-   * [console.timeStamp API Examples](#consoletimestamp-api-examples)
+   * [`console.timeStamp` API examples](#consoletimestamp-api-examples)
 * [See also](#see-also)
 
 
@@ -157,7 +157,7 @@ Here are a few examples of how to use the API to add your own data to the Perfor
 
 
 <!-- ------------------------------ -->
-#### User Timings API Examples
+#### User Timings API examples
 
 In the next sections, see the examples of code that showcase how to add the following to the performance timeline:
 
@@ -232,7 +232,7 @@ This results in the following marker in the Timings track, along with its toolti
 
 
 <!-- ------------------------------ -->
-#### console.timeStamp API Examples
+#### `console.timeStamp` API examples
 
 ```
 // Record a start timestamp
