@@ -11,7 +11,7 @@ ms.date: 03/03/2025
 
 These release notes cover the new web platform features and updates in Microsoft Edge.
 
-To stay up-to-date and get the latest web platform features, download an Insiders version of Microsoft Edge, such as Canary, Dev, or Beta; see [Become a Microsoft Edge Insider](https://aka.ms/microsoftedge).
+To stay up-to-date and get the latest web platform features, download a preview channel of Microsoft Edge (Beta, Dev, or Canary); go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 
 <!-- ====================================================================== -->

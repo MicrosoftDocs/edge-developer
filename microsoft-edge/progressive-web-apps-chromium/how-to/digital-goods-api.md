@@ -51,7 +51,7 @@ Details are below.
 
 To test the Digital Goods API locally, before deploying your app to production, run Edge Dev or Edge Canary.  These preview versions of Edge have the API enabled, as part of a running experiment.
 
-To download a preview (insider) channel of Microsoft Edge, see [Become a Microsoft Edge Insider](https://aka.ms/microsoftedge).
+To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 
 <!-- ------------------------------ -->

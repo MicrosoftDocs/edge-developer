@@ -30,7 +30,7 @@ Install any Microsoft Edge preview channel (Beta, Dev, or Canary) on a supported
    *  Windows 10
    *  Windows 11
 
-To do this, go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).  The preview channels are also called _Insider channels_.
+To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
 

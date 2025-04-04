@@ -18,9 +18,9 @@ What's New articles correspond to historical releases of Microsoft Edge, and are
 <!-- ====================================================================== -->
 ## Download the preview channels
 
-To stay up to date and get the latest DevTools features, download an Insiders preview version of Microsoft Edge.  Whether you're on Windows, Linux, or macOS, consider using Canary (or another preview channel) as your default development browser.
+To stay up to date and get the latest DevTools features, download an Insider channel (preview version) of Microsoft Edge.  Whether you're on Windows, Linux, or macOS, consider using Canary (or another preview channel) as your default development browser.
 
-The Beta, Dev, and Canary versions of Microsoft Edge run as separate apps, side-by-side with the stable, released version of Microsoft Edge.  See [Microsoft Edge Insider Channels](https://aka.ms/microsoftedge).
+The preview versions of Microsoft Edge run as separate apps, side-by-side with the stable, released version of Microsoft Edge.  To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 
 <!-- ====================================================================== -->
