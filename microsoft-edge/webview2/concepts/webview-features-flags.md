@@ -105,7 +105,7 @@ If the flag takes a value other than true|false, give an example. -->
 | `edge-webview-run-with-package-id` | Runs WebView processes with a package identity (package ID) for a bridged Desktop app. |
 | `edge-webview-run-without-package-id` | Runs WebView processes without a package identity (package ID) for a bridged Desktop app. |
 | `embedded-browser-webview-dpi-awareness` | Sets the DPI awareness level of the server-side processes. |
-| `enable-aggressive-domstorage-flushing` | Enable the aggressive flushing of DOM Storage to minimize data loss. |
+| `enable-aggressive-domstorage-flushing` | Enables the aggressive flushing of DOM Storage to minimize data loss. |
 | `enable-experimental-web-platform-features` | Enables Web Platform features that are in development. |
 | `enable-logging` | Enable logging at the error level. |
 | `force-color-profile` | Force all monitors to be treated as though they have the specified color profile.  Valid values: `srgb`, `generic-rgb`. |
