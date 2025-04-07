@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 135)
-description: "Origin and script links for profile and function calls. 'Network dependency tree' insight. Heaviest stack highlighting. Improved empty states for tools. And more."  # 160 char
+description: Origin and script links for profile and function calls. 'Network dependency tree' insight. Heaviest stack highlighting. Improved empty tools. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
