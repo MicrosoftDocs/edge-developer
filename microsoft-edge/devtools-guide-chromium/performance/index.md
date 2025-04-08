@@ -24,6 +24,17 @@ ms.date: 09/04/2023
 # Analyze runtime performance (tutorial)
 <!-- https://developer.chrome.com/docs/devtools/performance -->
 
+
+<!-- todo: temp test, delete: -->
+
+temp test: link text rendered as fixed-space font in LMC?  in GH Markdown preview? 
+
+See also:
+* [`devtools` object](./extension.md#devtools-object) in _Customize your performance data with extensibility API_.
+* [Inject your data with `console.timeStamp`](./extension.md#inject-your-data-with-consoletimestamp) in _Customize your performance data with extensibility API_.
+
+
+
 _Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
 
 The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for [Core Web Vitals](https://web.dev/vitals/).  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the **Performance** tool.
