@@ -13,10 +13,11 @@ ms.date: 04/03/2025
 <!-- 
 Policies to keep this page comprehensive and maintainable:
 
-1. Update the list (sections) for Canary.
-2. Update "turned on by default" list for Canary.
-3. Update the list (sections) for Stable.
-4. Update "turned on by default" list for Stable.
+First, update all sections re:
+   * This checkbox is present in Microsoft Edge Canary 123.
+b/c that may add new sections.
+After that, update all sections re:
+   * This checkbox is present in Microsoft Edge Stable 123.
 
 *  Favor Canary over Stable re: sequencing.
 *  Include a visible h2 section for every checkbox that's in public-facing Microsoft Edge DevTools > Experiments page.  If no info, write a tautology as a starting point.  Add as needed, each month.
@@ -27,14 +28,13 @@ Policies to keep this page comprehensive and maintainable:
 
 Steps to maintain this page monthly: For latest Canary, and for latest Stable:
 1. Go to edge://settings/help, update if needed.
-1. In DevTools, select Settings > Preferences > Restore Defaults > Reload DevTools.
-1. In DevTools, go to Settings > Experiments.
-1. In the "Experiments which are turned on by default" section below, update the Edge Canary list & Edge Stable list at top.
-   *  In that section, link down to the h2; do not link to a different article.
-1. Make sure the article has an h2 for each checkbox.
-1. In each h2 section, update the presence or absence of "not", and update the version #:
+2. In DevTools, select Settings > Preferences > Restore Defaults > Reload DevTools.
+3. In DevTools, go to Settings > Experiments.
+4. Make sure the article has an h2 for each checkbox.
+5. In each h2 section, update the presence or absence of "not present", and update the version #:
 This checkbox is|is not present in Microsoft Edge Canary 136.
 This checkbox is|is not present in Microsoft Edge Stable 135.
+6. Find old version #'s, inspect.
 -->
 
 Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes the experimental features that are in either:
