@@ -94,7 +94,7 @@ To scroll horizontally, click the horizontal scrollbar, or press the left or rig
 <!-- ====================================================================== -->
 ## See also
 
-* [Edit files with Workspaces](../workspaces/index.md) - **Sources** tool > **Workspace** tab
+* [Edit and save files in a workspace](../workspaces/index.md) - **Sources** tool > **Workspace** tab
 * [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md) - **Sources** tool > **Overrides** tab
 * [Sources tool overview](../sources/index.md)
    * [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
