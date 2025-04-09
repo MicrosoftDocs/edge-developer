@@ -332,7 +332,7 @@
               items:
                 - name: Emulate mobile devices (Device Emulation)
                   href: ./devtools-guide-chromium/device-mode/index.md
-                  displayName: device emulator, device mode, device simulation, device simulator  # also Network conditions tool (1x), Settings > Devices (1x)
+                  displayName: device emulator, device mode, device simulation, device simulator, throttle, throttling  # also Network conditions tool (1x), Settings > Devices (1x)
 
                 - name: Emulate dual-screen and foldable devices
                   href: ./devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
@@ -450,7 +450,7 @@
                   href: ./devtools-guide-chromium/javascript/snippets.md
                   displayName: Sources tool
 
-                - name: Edit files with Workspaces
+                - name: Edit and save files in a workspace
                   href: ./devtools-guide-chromium/workspaces/index.md
                   displayName: Sources tool, Quick source tool  # Quick source tool is covered in section "Step 4: Save a JavaScript change to disk"
 
