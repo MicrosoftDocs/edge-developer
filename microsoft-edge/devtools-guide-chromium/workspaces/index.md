@@ -125,13 +125,13 @@ Node.js option:
 
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS) to open the DevTools **Console**:
 
-   ![The DevTools Console](./index-images/-console.png)
+   ![The DevTools Console](./index-images/console.png)
 
 1. Click the **Sources** (![Sources tool icon](./index-images/sources-tool-icon.png)) tab.
 
 1. In the **Navigator** pane (on the left), click the **Workspace** tab (which is grouped with the **Page** tab):
 
-   ![The Filesystem tab](./index-images/-sources-filesystem.png)
+   ![The Filesystem tab](./index-images/sources-filesystem.png)
 
    This screenshot shows `https://microsoftedge.github.io/Demos/workspaces/`, but it could show `localhost:8080`, to show your modified code running on a local server on your machine.
    
@@ -145,7 +145,7 @@ Node.js option:
 
    In the **Workspace** tab are page icons that have a green dot, for `index.html`, `script.js`, and `styles.css`. <!--(The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.)-->  The green dot indicates that DevTools has established a mapping between a network resource of the page that's received from the web server, and the local source file in your `app` directory:
 
-   ![The Filesystem tab has a green dot indicating a mapping between a resource received from the server and a local source file](./index-images/-sources-filesystem-folder.png)
+   ![The Filesystem tab has a green dot indicating a mapping between a resource received from the server and a local source file](./index-images/sources-filesystem-folder.png)
 
 
 <!-- ====================================================================== -->
@@ -155,17 +155,17 @@ To make a change in the CSS file and save it to disk:
 
 1. In the **Sources** tool, in the **Workspace** tab (grouped with the **Page** tab), select `styles.css` to open it in the editor pane.  The `color` property of the `h1` element is set to `fuchsia`:
 
-   ![View styles.css in a text editor](./index-images/-sources-filesystem-css.png)
+   ![View styles.css in a text editor](./index-images/sources-filesystem-css.png)
 
 1. Select the **Elements** (![Elements tool icon](./index-images/elements-tool-icon.png)) tool, and then in the DOM tree, expand the `<body>` element, and then select the `<h1>` element.
 
    The **Styles** pane displays the CSS rules that are applied to the `<h1>` element.  The **mapped file** (![Mapped file icon](./index-images/mapped-file-icon.png)) icon next to `styles.css:1` is a page with a green dot.  The green dot means that any changes that you make to this CSS rule are mapped to `styles.css` in your `app` directory:
 
-   ![The 'mapped file' icon, a page with two-way arrows](./index-images/-elements-styles-css.png)
+   ![The 'mapped file' icon, a page with two-way arrows](./index-images/elements-styles-css.png)
 
 1. Change the value of the `color` property of the `<h1>` element to orange.  To do this, select the `<h1>` element in the **DOM Tree**.  In the CSS rule for `h1`, click `fuchsia`, start typing **orange**, and then select **orange** from the color list:
 
-   ![Changing the color property in styles.css](./index-images/-elements-styles-css-pick-color.png)
+   ![Changing the color property in styles.css](./index-images/elements-styles-css-pick-color.png)
 
 1. Open the copy of `styles.css` that's in your `app` directory in a text editor, such as Visual Studio Code.  The `color` property is now set to the new color, which is orange in this example.  The change was not only made in the copy of the file returned from the web server; the change was also made in your mapped file in your `app` workspace directory.
 
@@ -193,7 +193,7 @@ The following steps demonstrate that edits in the DOM tree aren't preserved acro
 
 1. In the DOM tree, in the `<h1>` element, select the text string `DevTools Workspaces Demo`, delete it, type the text string `I Love Cake`, and then press **Enter**.  The rendered webpage shows the new heading text:
 
-   ![Attempting to change HTML from the DOM tree in the Elements tool](./index-images/-sources-page-h1.png)
+   ![Attempting to change HTML from the DOM tree in the Elements tool](./index-images/sources-page-h1.png)
 
 1. Open the `index.html` file that's in your `app` directory in a text editor, such as Visual Studio Code.  The change that you just made doesn't appear; the heading still reads "DevTools Workspaces Demo".
 
@@ -232,7 +232,7 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 
 1. Refresh the page.  The heading in the rendered page changes to "I Love Cake", because that string was saved in `index.html` in your mapped `app` directory:
 
-   ![Change HTML from the Sources tool](./index-images/-sources-page-h1.png)
+   ![Change HTML from the Sources tool](./index-images/sources-page-h1.png)
 
 1. Open the copy of `index.html` that's in your `app` directory in a text editor, such as Visual Studio Code.
 
@@ -253,13 +253,13 @@ To open the DevTools code editor alongside other tools:
 
 1. At the **Run** prompt, start typing **quick**, and then select **Show Quick source**:
 
-   ![Open the 'Quick source' tool by using the Command Menu](./index-images/-search-show-quick-source.png)
+   ![Open the 'Quick source' tool by using the Command Menu](./index-images/search-show-quick-source.png)
 
    At the bottom of the DevTools window, the **Quick source** tool opens, displaying the contents of `index.html`, because that's the last file you edited in the **Sources** tool.  If needed, click **Expand Quick View**, and make sure the **Elements** tool is selected.
 
 1. Press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to display the **Open File** prompt of the **Command Menu**:
 
-   ![Opening script.js using the Open File dialog](./index-images/-search-script.png)
+   ![Opening script.js using the Open File dialog](./index-images/search-script.png)
 
 1. Start typing **script**, and then select **script.js** that's in the **app/** directory.
 
@@ -275,7 +275,7 @@ To open the DevTools code editor alongside other tools:
 
 1. Refresh the page.  If needed, click and hold the **Refresh** button and then select **Hard Refresh**.  The **Edit files with Workspaces** hyperlink on the page is now italicized:
 
-   ![The link on the page is now italicized](./index-images/-elements-styles-quick-source-script.png)
+   ![The link on the page is now italicized](./index-images/elements-styles-quick-source-script.png)
 
 
 See also:
