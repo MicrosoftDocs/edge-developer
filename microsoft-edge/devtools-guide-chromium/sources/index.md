@@ -44,7 +44,7 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
    * [Editing a CSS file](#editing-a-css-file)
    * [Editing an HTML file](#editing-an-html-file)
    * [Going to a line number or function](#going-to-a-line-number-or-function)
-   * [Displaying source files when using a different tool](#displaying-source-files-when-using-a-different-tool)
+   * [Quick source tool, to display source files when using a different tool](#quick-source-tool-to-display-source-files-when-using-a-different-tool)
 * [Using the Debugger pane to debug JavaScript code](#using-the-debugger-pane-to-debug-javascript-code)
    * [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
    * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
@@ -91,6 +91,18 @@ To load the debugging demo webpage that's shown above, see [The basic approach t
 Use the **Navigator** pane (on the left) to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.
 
 ![The Navigator pane](./index-images/navigator-pane.png)
+<!--
+per section [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger) below:
+1. Go to https://microsoftedge.github.io/Demos/devtools-js-get-started/
+1. Show DevTools.
+1. Select the Sources tool.
+1. In the Page tab, click get-started.js.
+1. Click to the left of line 33 to set a breakpoint.
+1. In the demo page, in the **Number 1** text box, enter 5.
+1. In the demo page, in the **Number 2** text box, enter 1.
+1. In the demo page, click the button **Add Number 1 and Number 2**.
+-->
+
 
 To access any hidden tabs of the Navigator pane, click the **More tabs** (![More tabs](./index-images/more-tabs-icon.png)) button.
 
@@ -109,6 +121,17 @@ The following subsections cover the Navigator pane:
 Use the **Page** tab of the **Navigator** pane to explore the file system that's returned from the server to construct the current webpage.  Select a JavaScript file to view, edit, and debug it.  The **Page** tab lists all of the resources that the page has loaded.
 
 ![The Page tab in the Navigator pane of the Sources tool](./index-images/sources-page-tab.png)
+<!--
+per section [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger) below:
+1. Go to https://microsoftedge.github.io/Demos/devtools-js-get-started/
+1. Show DevTools.
+1. Select the Sources tool.
+1. In the Page tab, click get-started.js.
+1. Click to the left of line 33 to set a breakpoint.
+1. In the demo page, in the **Number 1** text box, enter 5.
+1. In the demo page, in the **Number 2** text box, enter 1.
+1. In the demo page, click the button **Add Number 1 and Number 2**.
+-->
 
 To display a file in the **Editor** pane, select a file in the **Page** tab.  For an image, a preview of the image is displayed.
 
@@ -132,7 +155,7 @@ The **Page** tab displays files or resources grouped by server and directory, or
 
 To change how resources are grouped:
 
-1. Next to the tabs on the Navigator pane (on the left), select the **...** (**More options**) button.  A menu appears.
+1. Next to the tabs on the Navigator pane (on the left), click the **...** (**More options**) button.  A menu appears.
 1. Select or clear the **Group by folder** option.
 
 
@@ -144,7 +167,22 @@ Use the **Workspace** tab of the **Navigator** pane to add files to a Workspace,
 <!-- Green dots do not appear anymore. -->
 <!-- A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools. -->
 
-![The Filesystem tab, for a Workspace](./index-images/sources-filesystem-tab.png)
+![The Filesystem tab, for a Workspace](./index-images/sources-workspace-tab.png)
+<!--
+per section [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger) below:
+1. [Clone the Demos repo](../sample-code/sample-code.md#clone-the-demos-repo) in _Sample code for DevTools_.
+1. Go to https://microsoftedge.github.io/Demos/devtools-js-get-started/
+1. Show DevTools.
+1. Select the Sources tool.
+1. In the Workspace tab, click **Add folder**.
+1. Nav to eg C:\Users\localAccount\GitHub\Demos\devtools-js-get-started
+1. Click Allow button.
+1. In the Workspace tab, click get-started.js.
+1. Click to the left of line 33 to set a breakpoint.
+1. In the demo page, in the **Number 1** text box, enter 5.
+1. In the demo page, in the **Number 2** text box, enter 1.
+1. In the demo page, click the button **Add Number 1 and Number 2**.
+-->
 
 By default, when you edit a file in the **Sources** tool, your changes are discarded when you refresh the webpage.  The **Sources** tool works with a copy of the front-end resources that are returned by the web server.  When you modify these front-end files that are returned by the server, the changes don't persist, because you didn't change the source files.  You need to also apply your edits in your actual source code, and then re-deploy to the server.
 
@@ -210,7 +248,7 @@ document.head.appendChild(script);
 Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
-*  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button](./index-images/run-snippet-icon.png)).
+*  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, click the **Run** (![The Run button](./index-images/run-snippet-icon.png)) button.
 *  When DevTools has focus, press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the [Command Menu](../command-menu/index.md), and then type **!**.
 
 Snippets are similar to bookmarklets.
@@ -225,11 +263,12 @@ See also:
 To open a file, in addition to using the **Navigator** pane within the **Sources** tool, you can use the **Command Menu** from anywhere within DevTools.
 
 *  From anywhere in DevTools, press **Ctrl+P** on Windows/Linux or **Command+P** on macOS.  The **Command Menu** appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
-*  Or, next to the tabs of the **Navigator** pane in the **Sources** tool, select the **...** (**More options**) button, and then select **Open File**.
+*  Or, next to the tabs of the **Navigator** pane in the **Sources** tool, click the **More options** (**...**) button, and then select **Open File**.
 
 To display and pick from a list of all .js files, type **.js**.
 
 ![Opening a file by using the Command Menu](./index-images/sources-command-menu-to-open-file.png)
+<!-- https://microsoftedge.github.io/Demos/devtools-js-get-started/ -->
 
 If you type **?**, the **Command Menu** shows several commands, including **... Open file**.  If you press **Backspace** to clear the **Command Menu**, a list of files is shown.
 
@@ -262,7 +301,7 @@ The following subsections cover the Editor pane:
 * [Editing a CSS file](#editing-a-css-file)
 * [Editing an HTML file](#editing-an-html-file)
 * [Going to a line number or function](#going-to-a-line-number-or-function)
-* [Displaying source files when using a different tool](#displaying-source-files-when-using-a-different-tool)
+* [Quick source tool, to display source files when using a different tool](#quick-source-tool-to-display-source-files-when-using-a-different-tool)
 
 See also:
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
@@ -499,7 +538,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
 1. In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.  In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.
 
-1. In the webpage, enter values and submit the form.  For example, enter numbers, such as **5** and **1**, then select the button **Add Number 1 and Number 2**.
+1. In the webpage, enter values and submit the form.  For example, enter numbers, such as **5** and **1**, then click the button **Add Number 1 and Number 2**.
 
     The debugger runs the JavaScript code and then pauses at the breakpoint.  The debugger is now in Paused mode, so you can inspect the values of the properties that are in-scope, and step through the code.
 

@@ -92,6 +92,7 @@ This Animal Shelter demo webpage is useful for exploring various DevTools featur
 ![The 'Demo webpage with accessibility issues'](./sample-code-images/demo-page-with-accessibility-issues.png)
 
 
+<!-- ------------------------------ -->
 #### Articles
 
 These articles walk you through using this demo webpage:
@@ -101,6 +102,7 @@ These articles walk you through using this demo webpage:
 * [Accessibility-testing features](../accessibility/reference.md) - A list of accessibility testing features of DevTools, with links to several articles that use the "Demo webpage with accessibility issues".
 
 
+<!-- ------------------------------ -->
 #### Source code repo
 
 This is the source code repo and its directory which stores the files for this demo webpage:
@@ -130,6 +132,7 @@ This demo webpage is useful for exploring the **Sources** tool, especially the J
 ![The 'Get started Debugging JavaScript with DevTools' demo webpage](./sample-code-images/using-debug-js-demo-page.png)
 
 
+<!-- ------------------------------ -->
 #### Articles
 
 These articles or article sections walk you through using this demo webpage:
@@ -139,6 +142,7 @@ These articles or article sections walk you through using this demo webpage:
 * [Get started debugging JavaScript](../javascript/index.md) - A more in-depth walkthrough of using the demo webpage along with the debugger, demonstrating various features of the debugger, and setting different kinds of breakpoints.
 
 
+<!-- ------------------------------ -->
 #### Source code repo
 
 This is the source code repo and its directory which stores the files for this demo webpage:
@@ -158,6 +162,7 @@ This is the source code repo and its directory which stores the files for this d
 The Demos repo is useful for following the various DevTools documentation.
 
 
+<!-- ------------------------------ -->
 #### Download the Demos repo
 
 To download the Demos repo:
@@ -178,6 +183,7 @@ See also:
 * [Download the WebView2Samples repo](../../webview2/how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
 
+<!-- ------------------------------ -->
 #### Clone the Demos repo
 
 Cloning a repo enables updating your local copy when the repo is updated.  The GitHub UI and various tools support cloning.  We'll show cloning by using Visual Studio Code, but you can use many other coding tools, such as GitHub Desktop, Visual Studio, or git bash shell.
@@ -226,6 +232,7 @@ See also:
 * [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
 
 
+<!-- ------------------------------ -->
 #### Opening a folder from the Filesystem (Workspace) tab in the Sources tool
 
 After downloading or cloning the Demos repo:
@@ -256,6 +263,7 @@ See also:
 * [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 
 
+<!-- ------------------------------ -->
 #### Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool
 
 To edit files in the **Sources** tool, before doing the steps in this section, you might need to click the **Allow** button to grant read/write access by following the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) above.
@@ -296,6 +304,7 @@ To open an `.html` file and edit it:
    ![The modified demo-to-do page after saving changes and refreshing](./sample-code-images/modified-demo-to-do-after-save-refresh.png)
 
 
+<!-- ------------------------------ -->
 #### Opening a local HTML file from File Explorer and editing it in the browser
 
 1. In File Explorer on Windows, or Finder on macOS, select an HTML file from the local copy of the **Demos** repo, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The `.html` file is opened and rendered in Microsoft Edge.

@@ -245,5 +245,5 @@ To open the **Command Menu**, do any of the following:
 ## See also
 
 * [Sources tool overview](../sources/index.md)
-   * [Displaying source files when using a different tool](../sources/index.md#displaying-source-files-when-using-a-different-tool) in _Sources tool overview_
+   * [Quick source tool, to display source files when using a different tool](../sources/index.md#quick-source-tool-to-display-source-files-when-using-a-different-tool) in _Sources tool overview_
    * [Track changes to files using the Changes tool](../changes/changes-tool.md)
