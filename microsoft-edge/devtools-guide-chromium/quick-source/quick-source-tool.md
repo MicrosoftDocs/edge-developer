@@ -79,12 +79,19 @@ See also:
 
 By selecting a local folder as a **Workspace**, you can edit files from within the **Quick source** tool at the same time as displaying a different tool (or from within the **Sources** tool), and have those edits be saved to your local drive.  This way, when you edit a file in DevTools, the edits are not only made to the transient file that's returned by the server, but are also saved to the source file on your local drive.
 
-
 To open a server webpage file in the **Quick source** tool and save any edits to your local **Workspace** folder of source files:
 
-1. Open a webpage that's on a web server; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.  That page is hosted on the web server `microsoftedge.github.io`.
+1. Open the DevTools **Quick source** tool.
+1. Have local source files, such as a cloned repo.
+1. Select a local folder of source files as the Workspace.
 
-   **Open the DevTools Quick source tool:**
+These steps are detailed below.
+
+
+<!-- ------------------------------ -->
+#### Open the DevTools Quick source tool
+
+1. Open a webpage that's on a web server; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.  That page is hosted on the web server `microsoftedge.github.io`.
 
 1. Right-click the webpage and then select **Inspect**.
 
@@ -100,17 +107,25 @@ To open a server webpage file in the **Quick source** tool and save any edits to
 
    The **Quick source** tool might show instructions including an **Select folder** link, or it might display a file.  Instead of relying on that transient link, the steps further below show how to use the **Workspace** tab in the **Sources** tool, to select a local folder of source files.
 
-   **Have local source files that match the web server files:**
+Continue with the next section.
 
-1. Make sure there are source files on your local drive, matching the transient files returned by the web server.  For example, if not done already, clone the **MicrosoftEdge / Demos** repo to your local drive, as follows.
+
+<!-- ------------------------------ -->
+#### Have local source files, such as a cloned repo
+
+To use the **Quick source** tool to save changes locally, you must have local source files that match the web server files.  Make sure there are source files on your local drive, that match the transient files that are returned by the web server.
+
+For example, if not done already, clone the **MicrosoftEdge / Demos** repo to your local drive, as follows:
 
 1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
 
 1. Click the **Code** drop-down button.
 
-1. Click the **Copy url to clipboard** button:
+1. Click the **Copy url to clipboard** button.
 
    ![The Code button of the Demos repo to get the web URL](./quick-source-tool-images/clone-demos-repo.png)
+
+   The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
 
    Or, if you have GitHub Desktop installed, click **Open with GitHub Desktop** to clone the repo, and skip the command prompt step below.
 
@@ -133,7 +148,11 @@ To open a server webpage file in the **Quick source** tool and save any edits to
 
    Now you have a local folder of source files (such as `/demo-to-do/`) that match the files on the web server.
 
-   **Select a local folder of source files as the Workspace:**
+Continue with the next section.
+
+
+<!-- ------------------------------ -->
+#### Select a local folder of source files as the Workspace
 
 1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, select the **Workspace** tab (grouped with the **Page** tab), and then in the **Workspace** tab, click the **Add folder** button.
 
@@ -225,4 +244,6 @@ To open the **Command Menu**, do any of the following:
 <!-- ====================================================================== -->
 ## See also
 
-* [Displaying source files when using a different tool](../sources/index.md#displaying-source-files-when-using-a-different-tool) in _Sources tool overview_
+* [Sources tool overview](../sources/index.md)
+   * [Displaying source files when using a different tool](../sources/index.md#displaying-source-files-when-using-a-different-tool) in _Sources tool overview_
+   * [Track changes to files using the Changes tool](../changes/changes-tool.md)

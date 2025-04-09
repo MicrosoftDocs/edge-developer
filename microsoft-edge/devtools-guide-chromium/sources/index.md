@@ -301,27 +301,35 @@ To find text in the current file, select the **Editor** pane to give it focus, a
 To find and replace text, select the **Replace** (**A-\>B**) button to the left of the **Find** text box. The **Replace** (**A-\>B**) button appears when viewing an editable file.
 
 
-<!-- Check: Changes to JS aren't saved when not using a workspace, and the Local Modifications menu item does not exist.
+<!-- ---------- -->
 ###### Showing the changes you made
 
-To review the changes you made to a file, right-click in the **Editor** pane and then select **Local Modifications**.
+When you define a Workspace, changes to JavaScript are saved, and are visible in the **Changes** tool.
+
+To review the changes that you made to a file, right-click in the **Editor** pane and then select **Local Modifications**.
 
 The **Quick View** panel opens at the bottom of DevTools, showing your changes within the **Changes** tab.
 
-![Showing Local Modifications, in the Changes tab in the Quick View panel](./index-images/local-modifications.png) -->
+![Showing Local Modifications, in the Changes tab in the Quick View panel](./index-images/local-modifications.png)
+
+See also:
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
+* [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
 
 
-<!-- Check: Changes to JS, even inside functions, don't take effect.
+<!-- ---------- -->
 ###### Changes inside a function take effect
+
+When you define a Workspace, changes inside a JavaScript function body take effect.
 
 DevTools doesn't re-run a script, so the only JavaScript changes that take effect are changes that you make within functions.  For example, in the following figure, we added the following code to the JavaScript that is returned by the server:
 *  We added the statement `console.log('A')` outside of any function.
 *  We added the statement `console.log('B')` inside an `onClick` function.
 We then saved the changes, entered numbers into the form, and then selected the form button to send the form.
 
-After submitting the form, `console.log('A')`, which is at global scope, doesn't run, but `console.log('B')`, inside an `onClick` function, does run, outputting `B` to the Console:
+After submitting the form, `console.log('A')`, which is at global scope, doesn't run, but `console.log('B')`, inside an `onClick` function, does run, outputting `B` to the **Console**:
 
-![Global-scope JavaScript isn't re-run](./index-images/edit-js.png) -->
+![Global-scope JavaScript isn't re-run](./index-images/edit-js.png)
 
 
 <!-- ------------------------------ -->
@@ -425,13 +433,13 @@ For more information, see [Run commands with the Microsoft Edge DevTools Command
 
 
 <!-- ------------------------------ -->
-#### Displaying source files when using a different tool
+#### Quick source tool, to display source files when using a different tool
 
 The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  You use the **Quick source** tool in the [Quick View](../customize/index.md#quick-view) panel at the bottom of DevTools.
 
 To use the **Quick source** tool:
 
-1. Select a tool other than the **Sources** tool, such as the **Elements** tool.
+1. In the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** tool, such as the **Elements** tool.
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  The **Command Menu** opens.
 
@@ -440,6 +448,10 @@ To use the **Quick source** tool:
    The **Quick View** panel opens at the bottom of DevTools, with the **Quick source** tool selected.  The **Quick source** tool contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
 
 1. Press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the **Open File** dialog.
+
+See also:
+* [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -573,7 +585,9 @@ The following articles cover the **Debugger** pane and breakpoints:
 ## See also
 
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
-* [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
+* [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_.
+* [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
 
 
 <!-- ====================================================================== -->

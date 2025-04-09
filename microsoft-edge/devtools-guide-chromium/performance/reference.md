@@ -99,7 +99,7 @@ The images in this page show DevTools undocked into its own, dedicated window. T
 <!-- upstream doesn't have this section, has section in Overview article https://developer.chrome.com/docs/devtools/performance/overview#open_the_performance_panel  -->
 
 <!-- in each section, instead of linking away to this detailed Open h2 or Overview article's Open h2, start w/ inline step:
-1. Right-click a webpage, select **Inspect**, and then in DevTools, click the **Performance** tab in the **Activity bar**.
+1. Right-click a webpage, select **Inspect**, and then in DevTools, click the **Performance** tab in the **Activity Bar**.
 -->
 
 To use the sections in this page, open the **Performance** tool in DevTools:
