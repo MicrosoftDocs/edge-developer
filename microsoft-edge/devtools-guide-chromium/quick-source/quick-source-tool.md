@@ -183,7 +183,7 @@ Now, when you edit the folder's files in DevTools, the edits are not only made t
 See also:
 * [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 * [Edit and save files in a workspace](../workspaces/index.md)
-   * [Step 4: Save a JavaScript change to disk](../workspaces/index.md#edit-javascript-and-save-changes-to-the-source-file) in _Edit and save files in a workspace_
+   * [Step 4: Save a JavaScript change to disk](../workspaces/index.md#step-4-save-a-javascript-change-to-disk) in _Edit and save files in a workspace_
 
 
 <!-- ====================================================================== -->
