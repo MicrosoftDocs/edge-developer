@@ -39,11 +39,11 @@ See also:
 ## Overview
 <!-- https://developer.chrome.com/docs/devtools/workspaces#overview -->
 
-A DevTools _workspace_ lets you save changes that you make to a local copy of the source code to the same file on your computer, so that changes are retained across refreshes of the page. Here's a typical scenario for using a workspace:
+A DevTools _workspace_ lets you save changes that you make to a local copy of the source code to the same file on your computer, so that changes are retained across refreshes of the page.  Here's a typical scenario for using a workspace:
 
 * You have the source code for the demo website on your desktop.
 
-* You are running a local web server from the source code directory, so that the site is accessible at `localhost:8080`. Note: If you use the Python server option, the default port number is `8000`.
+* You are running a local web server from the source code directory, so that the site is accessible at `localhost:8080`.  Note: If you use the Python server option, the default port number is `8000`.
 
 * You opened `localhost:8080` in Microsoft Edge, and you are using DevTools to change the website source code which includes the CSS, HTML, and JavaScript files. 
 
@@ -84,9 +84,42 @@ See also:
 
 To start this tutorial, in this section, we set up the local directory containing web page source files, and start the localhost test server.
 
-1. In another window or tab, go to the [Workspaces demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
 
-1. Create an `app` directory, such as `~/Desktop/app` or `C:\Users\localAccount\app\`.  Copy `index.html`, `../shared/img/logo.png`, `README.md`, `script.js`, and `styles.css` from the demo source code to your `app` directory.  For the rest of the tutorial, this directory is referred to as `~/Desktop/app` or `C:\Users\localAccount\app\`, though you can use a different path.
+<!-- ---------- -->
+###### Clone the MicrosoftEdge / Demos repo to your local drive
+
+To clone the **MicrosoftEdge / Demos** repo to your local drive, including the `/workspaces/` demo folder:
+
+1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+
+1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button.
+
+   The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
+
+   Or, if you have GitHub Desktop installed, click **Open with GitHub Desktop** to clone the repo, and skip the command prompt step below.
+
+   Or, you can use Visual Studio Code's **Source Control** pane to clone the repo, and skip the command prompt step below.
+
+1. Assuming you have git installed, open a command prompt.
+
+1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo.  If you use a command prompt:
+
+   ```Shell
+   # example location where the repo directory will be added:
+   cd c:/users/localAccount/github/
+   git clone https://github.com/MicrosoftEdge/Demos.git
+   ```
+
+For details about cloning a repo, see:
+* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
+
+
+<!-- ---------- -->
+###### Create a directory for the localhost server to use
+
+1. Create an `app` directory, such as `~/Desktop/app` or `C:\Users\localAccount\app\`.
+
+   For the rest of the tutorial, this directory is referred to as `~/Desktop/app` or `C:\Users\localAccount\app\`, though you can use a different path.
    <!-- 
    on Windows with OneDrive, the result of creating an app dir on your desktop is 
    "C:\Users\localAccount\OneDrive - Microsoft\Desktop\app"
@@ -94,18 +127,26 @@ To start this tutorial, in this section, we set up the local directory containin
    cd "C:\Users\localAccount\OneDrive - Microsoft\Desktop\app"
    -->
 
-1. If you haven't already, install Node.js and npm.  For more information, see [Install Node.js and Node Package Manager (npm)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
+1. Copy the files from the /workspaces/ demo directory of the cloned Demos repo to the /app/ directory that you created.  For example, copy the files from:
+
+   `C:\Users\localAccount\GitHub\Demos\workspaces\`
+
+   to:
+
+   `C:\Users\localAccount\app\`
+
+1. If you haven't already, install an up-to-date version of Node.js and npm.  For more information, see [Install Node.js and Node Package Manager (npm)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
 
 1. Go to a command prompt, such as the git bash shell, or the Terminal pane in Microsoft Visual Studio Code.
 
 1. Go to the `app` directory that you created, such as `~/Desktop/app` or `C:/Users/localAccount/app`.  If you use the git bash shell, it's a UNIX shell, so even on Windows, you need to wrap a directory path that has backslashes in quotes, or else use forward slashes rather than backslashes.
 
-1. Run one of the following commands, to start up the web server:<br>
+1. Run one of the following commands, to start the web server:<br>
 Node.js option:
 
    ```bash
    # Node.js option
-   cd ~/Desktop/app  # or:  cd C:/Users/localAccount/app
+   cd ~/Desktop/app  # or:  cd "C:\Users\localAccount\app"
    npx http-server  # Node.js
    ```
 
