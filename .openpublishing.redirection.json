@@ -144,16 +144,6 @@
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements",
         "redirect_document_id": false
       },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/device-mode/geolocation.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/sensors/#override-geolocation",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/device-mode/orientation.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/sensors/#simulate-device-orientation",
-        "redirect_document_id": false
-      },
 // /Microsoft Edge DevTools
 // ============================================================================
 // Microsoft Edge extensions
