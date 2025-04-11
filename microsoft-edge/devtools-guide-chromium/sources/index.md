@@ -133,7 +133,6 @@ There are several degrees of functionality and setup for experimenting with the 
 See also:
 * [Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool](../sample-code/sample-code.md#opening-a-local-html-file-from-the-browsers-file-open-dialog-and-editing-it-from-the-page-tab-of-the-sources-tool) in _Sample code for DevTools_.
 * [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
-   * [Create a directory for the localhost server to use](../workspaces/index.md#create-a-directory-for-the-localhost-server-to-use) in _Edit and save files in a workspace_ - to run your modified demos on a localhost web server.
 
 
 <!-- ------------------------------ -->

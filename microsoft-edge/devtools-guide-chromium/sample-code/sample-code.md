@@ -277,7 +277,6 @@ See also:
 * [Using the Navigator pane to select files](../sources/index.md#using-the-navigator-pane-to-select-files) in _Sources tool overview_.
    * [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 * [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
-   * [Create a directory for the localhost server to use](../workspaces/index.md#create-a-directory-for-the-localhost-server-to-use) in _Edit and save files in a workspace_ - to run your modified demos on a localhost web server.
 
 
 <!-- ------------------------------ -->
