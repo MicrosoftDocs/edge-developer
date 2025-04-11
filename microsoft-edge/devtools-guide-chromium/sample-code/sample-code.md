@@ -61,7 +61,7 @@ last sync'd April 16, 2024
 | Inspect Network Activity | Used for [Inspect network activity](../network/index.md). | [/network-tutorial/](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) | [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) |
 | Photo gallery | Used for [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/). | [/photo-gallery/](https://github.com/MicrosoftEdge/Demos/tree/main/photo-gallery) | [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) |
 | Slow Calendar | Simple calendar demo app to test various DevTools features such as the **Performance** tool and source map support. | [/slow-calendar/](https://github.com/MicrosoftEdge/Demos/tree/main/slow-calendar) | [Slow Calendar](https://microsoftedge.github.io/Demos/slow-calendar/public) |
-| Workspaces | Use for [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md), in the **Sources** tool. | [/workspaces/](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) | [DevTools Workspaces Demo](https://microsoftedge.github.io/Demos/workspaces/) |
+| Workspaces | Use for [Edit and save files in a workspace](../workspaces/index.md), in the **Sources** tool. | [/workspaces/](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) | [DevTools Workspaces Demo](https://microsoftedge.github.io/Demos/workspaces/) |
 
 A few of these samples are shown below.
 
@@ -92,6 +92,7 @@ This Animal Shelter demo webpage is useful for exploring various DevTools featur
 ![The 'Demo webpage with accessibility issues'](./sample-code-images/demo-page-with-accessibility-issues.png)
 
 
+<!-- ------------------------------ -->
 #### Articles
 
 These articles walk you through using this demo webpage:
@@ -101,6 +102,7 @@ These articles walk you through using this demo webpage:
 * [Accessibility-testing features](../accessibility/reference.md) - A list of accessibility testing features of DevTools, with links to several articles that use the "Demo webpage with accessibility issues".
 
 
+<!-- ------------------------------ -->
 #### Source code repo
 
 This is the source code repo and its directory which stores the files for this demo webpage:
@@ -130,6 +132,7 @@ This demo webpage is useful for exploring the **Sources** tool, especially the J
 ![The 'Get started Debugging JavaScript with DevTools' demo webpage](./sample-code-images/using-debug-js-demo-page.png)
 
 
+<!-- ------------------------------ -->
 #### Articles
 
 These articles or article sections walk you through using this demo webpage:
@@ -139,6 +142,7 @@ These articles or article sections walk you through using this demo webpage:
 * [Get started debugging JavaScript](../javascript/index.md) - A more in-depth walkthrough of using the demo webpage along with the debugger, demonstrating various features of the debugger, and setting different kinds of breakpoints.
 
 
+<!-- ------------------------------ -->
 #### Source code repo
 
 This is the source code repo and its directory which stores the files for this demo webpage:
@@ -158,6 +162,7 @@ This is the source code repo and its directory which stores the files for this d
 The Demos repo is useful for following the various DevTools documentation.
 
 
+<!-- ------------------------------ -->
 #### Download the Demos repo
 
 To download the Demos repo:
@@ -178,6 +183,7 @@ See also:
 * [Download the WebView2Samples repo](../../webview2/how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
 
+<!-- ------------------------------ -->
 #### Clone the Demos repo
 
 Cloning a repo enables updating your local copy when the repo is updated.  The GitHub UI and various tools support cloning.  We'll show cloning by using Visual Studio Code, but you can use many other coding tools, such as GitHub Desktop, Visual Studio, or git bash shell.
@@ -220,13 +226,14 @@ See also:
 
 To use this section, first [Download or clone the Demos repo](#download-or-clone-the-demos-repo).
 
-To edit local files in the **Sources** tool, you might need to first click the **Allow** button to grant read/write access.  To do that, follow the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) below.
+To edit local files in the **Sources** tool, you might need to first click the **Allow** button to grant read/write access.  To do that, follow the steps in [Opening a folder from the Workspace tab in the Sources tool](#opening-a-folder-from-the-workspace-tab-in-the-sources-tool) below.
 
 See also:
 * [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
 
 
-#### Opening a folder from the Filesystem (Workspace) tab in the Sources tool
+<!-- ------------------------------ -->
+#### Opening a folder from the Workspace tab in the Sources tool
 
 After downloading or cloning the Demos repo:
 
@@ -236,7 +243,7 @@ After downloading or cloning the Demos repo:
 
 1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./sample-code-images/more-tabs-icon-light-theme.png)) button.
 
-1. In the **Sources** tab, on the left, select the **Filesystem** tab, which is grouped with the **Page** tab.  If the **Filesystem** tab isn't displayed, click the **More tabs** (![More tabs button](./sample-code-images/more-tabs-icon-light-theme.png)) button.
+1. In the **Sources** tab, on the left, select the **Workspace** tab, which is grouped with the **Page** tab.  If the **Workspace** tab isn't displayed, click the **More tabs** (![More tabs button](./sample-code-images/more-tabs-icon-light-theme.png)) button.
 
 1. Click **+ Add folder to workspace**.  A folder selection dialog opens.
 
@@ -246,19 +253,31 @@ After downloading or cloning the Demos repo:
 
 1. Above DevTools, your're prompted "DevTools requests full access to (directory)".  Click the **Allow** button:
 
-   ![DevTools requests access to add a folder to a workspace in the Filesystem tab](./sample-code-images/devtools-requests-access.png)
+   ![DevTools requests access to add a folder to the Workspace](./sample-code-images/devtools-requests-access.png)
+
+There are several degrees of functionality and setup for experimenting with the Demos repo by using DevTools' **Sources** tool or another editor such as Visual Studio Code:
+
+* Use the **Page** tab and don't run localhost.
+* Use the **Workspace** tab and don't run localhost.
+* Use the **Overrides** tab and don't run localhost.
+* Use the **Page** tab and run localhost.
+* Use the **Workspace** tab and run localhost.  Provides full functionality for saving changes made in DevTools, including HTML files, and refreshing from your localhost server, to persist changes across refreshes:
+  ![Workspace tab of Sources tool; Changes tool, and localhost](./sample-code-images/workspace-localhost.png)
+* Use the **Overrides** tab and run localhost.
+* Use [Microsoft Edge DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension.md) and run localhost.
 
 To edit the files, see the editing steps in the next section.
 
-
 See also:
-* [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
-* [Using the Filesystem tab to define a local Workspace](../sources/index.md#using-the-filesystem-tab-to-define-a-local-workspace) in _Sources tool overview_.
+* [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
+   * [Create a directory for the localhost server to use](../workspaces/index.md#create-a-directory-for-the-localhost-server-to-use) in _Edit and save files in a workspace_ - to run your modified demos on a localhost web server.
+* [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 
 
+<!-- ------------------------------ -->
 #### Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool
 
-To edit files in the **Sources** tool, before doing the steps in this section, you might need to click the **Allow** button to grant read/write access by following the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) above.
+To edit files in the **Sources** tool, before doing the steps in this section, you might need to click the **Allow** button to grant read/write access by following the steps in [Opening a folder from the Workspace tab in the Sources tool](#opening-a-folder-from-the-workspace-tab-in-the-sources-tool) above.
 
 
 To open an `.html` file and edit it:
@@ -283,7 +302,7 @@ To open an `.html` file and edit it:
    <h1>📋 My modified tasks</h1>
    ```
 
-   If editing isn't enabled, click the **Allow** button to grant read/write access to the folder by doing the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) above.
+   If editing isn't enabled, click the **Allow** button to grant read/write access to the folder by doing the steps in [Opening a folder from the Workspace tab in the Sources tool](#opening-a-folder-from-the-workspace-tab-in-the-sources-tool) above.
 
    The change is displayed in the **Changes** tool in the **Quick View** panel, and an asterisk is added to the file name in the **index.html** tab in the **Sources** tool:
 
@@ -296,6 +315,7 @@ To open an `.html` file and edit it:
    ![The modified demo-to-do page after saving changes and refreshing](./sample-code-images/modified-demo-to-do-after-save-refresh.png)
 
 
+<!-- ------------------------------ -->
 #### Opening a local HTML file from File Explorer and editing it in the browser
 
 1. In File Explorer on Windows, or Finder on macOS, select an HTML file from the local copy of the **Demos** repo, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The `.html` file is opened and rendered in Microsoft Edge.
@@ -356,8 +376,8 @@ These URLs aren't case-sensitive.
 ## See also
 
 Opening and editing files:
-* [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
-* [Using the Filesystem tab to define a local Workspace](../sources/index.md#using-the-filesystem-tab-to-define-a-local-workspace) in _Sources tool overview_.
+* [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
+* [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 * [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
 * [Microsoft Edge IDE integration](../../visual-studio-code/ide-integration.md) - Webpage app development using Visual Studio Code or Visual Studio, including Microsoft Edge DevTools.
 

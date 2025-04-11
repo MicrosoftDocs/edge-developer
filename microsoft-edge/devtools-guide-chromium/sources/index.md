@@ -31,7 +31,7 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 * [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
 * [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
    * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-   * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+   * [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
    * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
    * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
    * [Using the Snippets tab to run JavaScript code snippets on any webpage](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
@@ -44,7 +44,7 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
    * [Editing a CSS file](#editing-a-css-file)
    * [Editing an HTML file](#editing-an-html-file)
    * [Going to a line number or function](#going-to-a-line-number-or-function)
-   * [Displaying source files when using a different tool](#displaying-source-files-when-using-a-different-tool)
+   * [Quick source tool, to display source files when using a different tool](#quick-source-tool-to-display-source-files-when-using-a-different-tool)
 * [Using the Debugger pane to debug JavaScript code](#using-the-debugger-pane-to-debug-javascript-code)
    * [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
    * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
@@ -91,12 +91,24 @@ To load the debugging demo webpage that's shown above, see [The basic approach t
 Use the **Navigator** pane (on the left) to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.
 
 ![The Navigator pane](./index-images/navigator-pane.png)
+<!--
+per section [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger) below:
+1. Go to https://microsoftedge.github.io/Demos/devtools-js-get-started/
+1. Show DevTools.
+1. Select the Sources tool.
+1. In the Page tab, click get-started.js.
+1. Click to the left of line 33 to set a breakpoint.
+1. In the demo page, in the **Number 1** text box, enter 5.
+1. In the demo page, in the **Number 2** text box, enter 1.
+1. In the demo page, click the button **Add Number 1 and Number 2**.
+-->
+
 
 To access any hidden tabs of the Navigator pane, click the **More tabs** (![More tabs](./index-images/more-tabs-icon.png)) button.
 
 The following subsections cover the Navigator pane:
 * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-* [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+* [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
 * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
 * [Using the Snippets tab to run JavaScript code snippets on any page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
@@ -109,6 +121,17 @@ The following subsections cover the Navigator pane:
 Use the **Page** tab of the **Navigator** pane to explore the file system that's returned from the server to construct the current webpage.  Select a JavaScript file to view, edit, and debug it.  The **Page** tab lists all of the resources that the page has loaded.
 
 ![The Page tab in the Navigator pane of the Sources tool](./index-images/sources-page-tab.png)
+<!--
+per section [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger) below:
+1. Go to https://microsoftedge.github.io/Demos/devtools-js-get-started/
+1. Show DevTools.
+1. Select the Sources tool.
+1. In the Page tab, click get-started.js.
+1. Click to the left of line 33 to set a breakpoint.
+1. In the demo page, in the **Number 1** text box, enter 5.
+1. In the demo page, in the **Number 2** text box, enter 1.
+1. In the demo page, click the button **Add Number 1 and Number 2**.
+-->
 
 To display a file in the **Editor** pane, select a file in the **Page** tab.  For an image, a preview of the image is displayed.
 
@@ -132,19 +155,34 @@ The **Page** tab displays files or resources grouped by server and directory, or
 
 To change how resources are grouped:
 
-1. Next to the tabs on the Navigator pane (on the left), select the **...** (**More options**) button.  A menu appears.
+1. Next to the tabs on the Navigator pane (on the left), click the **...** (**More options**) button.  A menu appears.
 1. Select or clear the **Group by folder** option.
 
 
 <!-- ------------------------------ -->
-#### Using the Filesystem tab to define a local Workspace
+#### Select a local Workspace, to use DevTools to edit files and save changes to disk
 
-Use the **Filesystem** tab of the **Navigator** pane to add files to a Workspace, so that changes you make in DevTools get saved to your local file system.
+Use the **Workspace** tab of the **Navigator** pane to add files to a Workspace, so that changes you make in DevTools get saved to your local file system.
 
 <!-- Green dots do not appear anymore. -->
 <!-- A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools. -->
 
-![The Filesystem tab, for a Workspace](./index-images/sources-filesystem-tab.png)
+![The Workspace tab in the Sources tool](./index-images/sources-workspace-tab.png)
+<!--
+per section [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger) below:
+1. [Clone the Demos repo](../sample-code/sample-code.md#clone-the-demos-repo) in _Sample code for DevTools_.
+1. Go to https://microsoftedge.github.io/Demos/devtools-js-get-started/
+1. Show DevTools.
+1. Select the Sources tool.
+1. In the Workspace tab, click **Add folder**.
+1. Nav to eg C:\Users\localAccount\GitHub\Demos\devtools-js-get-started
+1. Click Allow button.
+1. In the Workspace tab, click get-started.js.
+1. Click to the left of line 33 to set a breakpoint.
+1. In the demo page, in the **Number 1** text box, enter 5.
+1. In the demo page, in the **Number 2** text box, enter 1.
+1. In the demo page, click the button **Add Number 1 and Number 2**.
+-->
 
 By default, when you edit a file in the **Sources** tool, your changes are discarded when you refresh the webpage.  The **Sources** tool works with a copy of the front-end resources that are returned by the web server.  When you modify these front-end files that are returned by the server, the changes don't persist, because you didn't change the source files.  You need to also apply your edits in your actual source code, and then re-deploy to the server.
 
@@ -153,7 +191,7 @@ In contrast, when you use a Workspace, changes that you make to your front-end c
 Workspaces work well when the JavaScript code that's returned by the server is the same as your local JavaScript source code.  Workspaces don't work as well when your workflow involves transformations on your source code, such as minification or [TypeScript](https://www.typescriptlang.org) compilation.
 
 See also:
-* [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md)
+* [Edit and save files in a workspace](../workspaces/index.md)
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
@@ -210,7 +248,7 @@ document.head.appendChild(script);
 Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
-*  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button](./index-images/run-snippet-icon.png)).
+*  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, click the **Run** (![The Run button](./index-images/run-snippet-icon.png)) button.
 *  When DevTools has focus, press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the [Command Menu](../command-menu/index.md), and then type **!**.
 
 Snippets are similar to bookmarklets.
@@ -225,11 +263,12 @@ See also:
 To open a file, in addition to using the **Navigator** pane within the **Sources** tool, you can use the **Command Menu** from anywhere within DevTools.
 
 *  From anywhere in DevTools, press **Ctrl+P** on Windows/Linux or **Command+P** on macOS.  The **Command Menu** appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
-*  Or, next to the tabs of the **Navigator** pane in the **Sources** tool, select the **...** (**More options**) button, and then select **Open File**.
+*  Or, next to the tabs of the **Navigator** pane in the **Sources** tool, click the **More options** (**...**) button, and then select **Open File**.
 
 To display and pick from a list of all .js files, type **.js**.
 
 ![Opening a file by using the Command Menu](./index-images/sources-command-menu-to-open-file.png)
+<!-- https://microsoftedge.github.io/Demos/devtools-js-get-started/ -->
 
 If you type **?**, the **Command Menu** shows several commands, including **... Open file**.  If you press **Backspace** to clear the **Command Menu**, a list of files is shown.
 
@@ -252,7 +291,7 @@ The **Editor** pane has the following level of support for various file types:
 | HTML | View and edit. |
 | Images | View. |
 
-By default, edits are discarded when you refresh the webpage.  For information about how to save the changes to your file system, see [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace), above.
+By default, edits are discarded when you refresh the webpage.  For information about how to save the changes to your file system, see [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk), above.
 
 The following subsections cover the Editor pane:
 * [Editing a JavaScript file](#editing-a-javascript-file)
@@ -262,7 +301,7 @@ The following subsections cover the Editor pane:
 * [Editing a CSS file](#editing-a-css-file)
 * [Editing an HTML file](#editing-an-html-file)
 * [Going to a line number or function](#going-to-a-line-number-or-function)
-* [Displaying source files when using a different tool](#displaying-source-files-when-using-a-different-tool)
+* [Quick source tool, to display source files when using a different tool](#quick-source-tool-to-display-source-files-when-using-a-different-tool)
 
 See also:
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
@@ -289,7 +328,7 @@ If you change a file, an asterisk appears next to the file name.
 *  To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.
 *  To undo a change, press **Ctrl+Z** on Windows/Linux or **Command+Z** on macOS.
 
-By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md).
+By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit and save files in a workspace](../workspaces/index.md).
 
 
 ###### Find and Replace
@@ -301,27 +340,35 @@ To find text in the current file, select the **Editor** pane to give it focus, a
 To find and replace text, select the **Replace** (**A-\>B**) button to the left of the **Find** text box. The **Replace** (**A-\>B**) button appears when viewing an editable file.
 
 
-<!-- Check: Changes to JS aren't saved when not using a workspace, and the Local Modifications menu item does not exist.
+<!-- ---------- -->
 ###### Showing the changes you made
 
-To review the changes you made to a file, right-click in the **Editor** pane and then select **Local Modifications**.
+When you define a Workspace, changes to JavaScript are saved, and are visible in the **Changes** tool.
+
+To review the changes that you made to a file, right-click in the **Editor** pane and then select **Local Modifications**.
 
 The **Quick View** panel opens at the bottom of DevTools, showing your changes within the **Changes** tab.
 
-![Showing Local Modifications, in the Changes tab in the Quick View panel](./index-images/local-modifications.png) -->
+![Showing Local Modifications, in the Changes tab in the Quick View panel](./index-images/local-modifications.png)
+
+See also:
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
+* [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
 
 
-<!-- Check: Changes to JS, even inside functions, don't take effect.
+<!-- ---------- -->
 ###### Changes inside a function take effect
+
+When you define a Workspace, changes inside a JavaScript function body take effect.
 
 DevTools doesn't re-run a script, so the only JavaScript changes that take effect are changes that you make within functions.  For example, in the following figure, we added the following code to the JavaScript that is returned by the server:
 *  We added the statement `console.log('A')` outside of any function.
 *  We added the statement `console.log('B')` inside an `onClick` function.
 We then saved the changes, entered numbers into the form, and then selected the form button to send the form.
 
-After submitting the form, `console.log('A')`, which is at global scope, doesn't run, but `console.log('B')`, inside an `onClick` function, does run, outputting `B` to the Console:
+After submitting the form, `console.log('A')`, which is at global scope, doesn't run, but `console.log('B')`, inside an `onClick` function, does run, outputting `B` to the **Console**:
 
-![Global-scope JavaScript isn't re-run](./index-images/edit-js.png) -->
+![Global-scope JavaScript isn't re-run](./index-images/edit-js.png)
 
 
 <!-- ------------------------------ -->
@@ -364,7 +411,7 @@ There are two ways to edit CSS in DevTools:
 *  In the **Elements** tool, you work with one CSS property at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Get started viewing and changing CSS](../css/index.md).
 *  In the **Sources** tool, you use a text editor to edit CSS files.
 
-The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
+The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit and save files in a workspace](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
 ```css
 h1 {
@@ -393,7 +440,7 @@ There are two ways to edit HTML in DevTools:
 ![The HTML editor of the Sources tool](./index-images/sources-html-editor.png)
 
 Unlike a JavaScript or CSS file, an HTML file that is returned by the web server cannot be directly edited in the Sources tool.  To edit an HTML file using the Editor of the Sources tool, the HTML file must be in a Workspace or on the **Overrides** tab.  See these subsections of the current article:
-* [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+* [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
 * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 
 To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.  An edited file is marked by an asterisk.
@@ -425,13 +472,13 @@ For more information, see [Run commands with the Microsoft Edge DevTools Command
 
 
 <!-- ------------------------------ -->
-#### Displaying source files when using a different tool
+#### Quick source tool, to display source files when using a different tool
 
 The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  You use the **Quick source** tool in the [Quick View](../customize/index.md#quick-view) panel at the bottom of DevTools.
 
 To use the **Quick source** tool:
 
-1. Select a tool other than the **Sources** tool, such as the **Elements** tool.
+1. In the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** tool, such as the **Elements** tool.
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  The **Command Menu** opens.
 
@@ -440,6 +487,10 @@ To use the **Quick source** tool:
    The **Quick View** panel opens at the bottom of DevTools, with the **Quick source** tool selected.  The **Quick source** tool contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
 
 1. Press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the **Open File** dialog.
+
+See also:
+* [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -487,7 +538,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
 1. In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.  In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.
 
-1. In the webpage, enter values and submit the form.  For example, enter numbers, such as **5** and **1**, then select the button **Add Number 1 and Number 2**.
+1. In the webpage, enter values and submit the form.  For example, enter numbers, such as **5** and **1**, then click the button **Add Number 1 and Number 2**.
 
     The debugger runs the JavaScript code and then pauses at the breakpoint.  The debugger is now in Paused mode, so you can inspect the values of the properties that are in-scope, and step through the code.
 
@@ -573,7 +624,9 @@ The following articles cover the **Debugger** pane and breakpoints:
 ## See also
 
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
-* [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
+* [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_.
+* [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
 
 
 <!-- ====================================================================== -->

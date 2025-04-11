@@ -53,7 +53,7 @@ See also:
 
 <!-- Subtitle: Move the tabs in the Activity bar left or right by using the tab's right-click menu. -->
 
-Before Microsoft Edge 124, you could rearrange the tabs in the **Activity bar** only by dragging them.  This can be difficult for users who are using input devices such as a trackball or head pointer.  Now, you can also move a tab left or right by right-clicking the tab and then selecting **Move left** or **Move right**:
+Before Microsoft Edge 124, you could rearrange the tabs in the **Activity Bar** only by dragging them.  This can be difficult for users who are using input devices such as a trackball or head pointer.  Now, you can also move a tab left or right by right-clicking the tab and then selecting **Move left** or **Move right**:
 
 ![The context menu from right-clicking a tool's tab on the Activity bar](./devtools-124-images/rearrange-tab.png)
 
