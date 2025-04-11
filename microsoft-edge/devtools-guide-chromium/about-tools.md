@@ -84,7 +84,7 @@ There's also a **More tools** (![More Tools icon](./about-tools-images/more-tool
 | **Rendering** | Use the **Rendering** tool to see what your webpage looks like with different display options or vision deficiencies. | [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](rendering-tools/rendering-tool.md) |
 | **Search** | Use the **Search** tool to find specific source files for a webpage, including HTML, CSS, JavaScript, and image files. | [Find source files for a page using the Search tool](search/search-tool.md) |
 | **Security** | Inspects the security of a page. | [Understand security issues using the Security tool](security/index.md) |
-| **Sensors** | Simulates different device orientations. | [Simulate device orientation with the Sensors tool](device-mode/orientation.md) |
+| **Sensors** | Simulates different device orientations. | [Simulate device orientation](./sensors/index.md#simulate-device-orientation) in _Emulate device sensors (Sensors tool)_. |
 | **Source Maps Monitor** | Use the **Source Maps Monitor** tool to monitor your source maps. | [Source Maps Monitor tool](source-maps-monitor/source-maps-monitor-tool.md) |
 | **WebAudio** | Use the **WebAudio** tool to monitor WebAudio traffic.  The **WebAudio** tool uses the WebAudio API. | [WebAudio tool](webaudio/webaudio-tool.md) |
 | **WebAuthn** | Use the **WebAuthn** tool to create and interact with software-based virtual authenticators. | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
