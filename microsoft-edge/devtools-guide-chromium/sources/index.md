@@ -117,6 +117,7 @@ To display the URL or path for a resource, hover over the resource.
 To load a file into a new tab of the browser, or to display other actions, right-click on the file name.
 
 
+<!-- ---------- -->
 ###### Icons in the Page tab
 
 The **Page** tab uses the following icons:
@@ -126,6 +127,7 @@ The **Page** tab uses the following icons:
 *  The **page** icon represents a resource: ![The page icon](./index-images/file-icon.png)
 
 
+<!-- ---------- -->
 ###### Group files by folder or as a flat list
 
 The **Page** tab displays files or resources grouped by server and directory, or as a flat list.
@@ -281,6 +283,7 @@ See also:
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
 
 
+<!-- ---------- -->
 ###### Save and Undo
 
 For JavaScript changes to take effect, press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS).
@@ -292,6 +295,7 @@ If you change a file, an asterisk appears next to the file name.
 By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md).
 
 
+<!-- ---------- -->
 ###### Find and Replace
 
 To find text in the current file, select the **Editor** pane to give it focus, and then press **Ctrl+F** on Windows/Linux, or **Command+F** on macOS.
@@ -302,6 +306,7 @@ To find and replace text, select the **Replace** (**A-\>B**) button to the left 
 
 
 <!-- Check: Changes to JS aren't saved when not using a workspace, and the Local Modifications menu item does not exist.
+<!-- ---------- --
 ###### Showing the changes you made
 
 To review the changes you made to a file, right-click in the **Editor** pane and then select **Local Modifications**.
@@ -312,6 +317,7 @@ The **Quick View** panel opens at the bottom of DevTools, showing your changes w
 
 
 <!-- Check: Changes to JS, even inside functions, don't take effect.
+<!-- ---------- --
 ###### Changes inside a function take effect
 
 DevTools doesn't re-run a script, so the only JavaScript changes that take effect are changes that you make within functions.  For example, in the following figure, we added the following code to the JavaScript that is returned by the server:
