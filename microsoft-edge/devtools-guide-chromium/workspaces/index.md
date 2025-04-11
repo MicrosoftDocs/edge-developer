@@ -77,6 +77,11 @@ See also:
 ## Step 1: Setup
 <!-- https://developer.chrome.com/docs/devtools/workspaces/#setup -->
 
+* Install an up-to-date version of Node.js and npm from [Node.js](https://nodejs.org).
+
+See also:
+* [Install Node.js and Node Package Manager (npm)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
+
 
 <!-- ------------------------------ -->
 #### Set up the demo
@@ -87,6 +92,7 @@ To start this tutorial, in this section, we set up the local directory containin
 
 <!-- ---------- -->
 ###### Clone the MicrosoftEdge / Demos repo to your local drive
+<!-- Edge heading only -->
 
 To clone the **MicrosoftEdge / Demos** repo to your local drive, including the `/workspaces/` demo folder:
 
@@ -100,7 +106,7 @@ To clone the **MicrosoftEdge / Demos** repo to your local drive, including the `
 
    Or, you can use Visual Studio Code's **Source Control** pane to clone the repo, and skip the command prompt step below.
 
-1. Assuming you have git installed, open a command prompt.
+1. Open a command prompt, such as git bash.
 
 1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo.  If you use a command prompt:
 
@@ -117,44 +123,20 @@ Continue with the next section.
 
 
 <!-- ---------- -->
-###### Create a directory for the localhost server to use
-
-1. Create an `app` directory, such as `~/Desktop/app` or `C:\Users\localAccount\app\`.
-
-   For the rest of the tutorial, this directory is referred to as `~/Desktop/app` or `C:\Users\localAccount\app\`, though you can use a different path.
-   <!-- 
-   on Windows with OneDrive, the result of creating an app dir on your desktop is 
-   "C:\Users\localAccount\OneDrive - Microsoft\Desktop\app"
-   That is not accessible via `cd ~/Desktop/app`; it is accessible via the following (w/ backslashes):
-   cd "C:\Users\localAccount\OneDrive - Microsoft\Desktop\app"
-   -->
-
-1. Copy the files from the `/workspaces/` demo directory of the cloned Demos repo to the `/app/` directory that you created.  For example, copy the files from:
-
-   `C:\Users\localAccount\GitHub\Demos\workspaces\`
-
-   to:
-
-   `C:\Users\localAccount\app\`
-
-1. If you haven't already, install an up-to-date version of Node.js and npm.  For more information, see [Install Node.js and Node Package Manager (npm)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
-
-Continue with the next section.
-
-
-<!-- ---------- -->
 ###### Start the localhost server
+<!-- Edge heading only -->
 
 1. Go to a command prompt, such as the git bash shell, or the Terminal pane in Microsoft Visual Studio Code.
 
-1. Go to the `app` directory that you created, such as `~/Desktop/app` or `C:/Users/localAccount/app`.  If you use the git bash shell, it's a UNIX shell, so even on Windows, you need to wrap a directory path that has backslashes in quotes, or else use forward slashes rather than backslashes.
+1. Go to the cloned `/workspace/` directory, such as `C:\Users\localAccount\GitHub\Demos\workspaces\`.
 
-1. Run one of the following commands, to start the web server:<br>
-Node.js option:
+   If you use the git bash shell, it's a UNIX shell, so even on Windows, you need to wrap a directory path that has backslashes in quotes, or else use forward slashes rather than backslashes.
+
+1. Run one of the following commands, to start the web server:
 
    ```bash
    # Node.js option
-   cd ~/Desktop/app  # or:  cd "C:\Users\localAccount\app"
+   cd "C:\Users\localAccount\GitHub\Demos\workspaces\"
    npx http-server  # Node.js
    ```
 
@@ -162,13 +144,13 @@ Node.js option:
 
    ``` bash
    # Python 2 option
-   cd ~/Desktop/app  # or:  cd C:/Users/localAccount/app
+   cd "C:\Users\localAccount\GitHub\Demos\workspaces\"
    python -m SimpleHTTPServer  # Python 2
    ```
   
    ``` bash
    # Python 3 option
-   cd ~/Desktop/app  # or:  cd C:/Users/localAccount/app
+   cd "C:\Users\localAccount\GitHub\Demos\workspaces\"
    python -m http.server  # Python 3
    ```
 
@@ -177,9 +159,11 @@ Node.js option:
    ![The DevTools Workspaces Demo](./index-images/workspaces-demo.png)
    <!-- todo: in Demos repo change title in link text - or don't b/c will make pngs outdated -->
 
-   (The link in the latest demo might say either "Edit file with workspaces" or "Edit and save files in a workspace".)<!-- todo: sync, or keep demo as-is -->
-
    Another common equivalent URL is `http://0.0.0.0:8080`.  The default port number for the Python server option is `8000`.  The exact [port number](https://wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
+
+   The **DevTools Workspaces Demo** webpage opens.
+
+   (The link in the latest demo might say either "Edit file with workspaces" or "Edit and save files in a workspace".)<!-- todo: sync, or keep demo as-is -->
 
 Continue with the next section.
 
@@ -190,7 +174,7 @@ Continue with the next section.
 
 Next, define a Workspace in DevTools:
 
-1. Right-click the webpage and then select **Inspect**.  Or, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
+1. Right-click the locally hosted **DevTools Workspaces Demo** webpage and then select **Inspect**.  Or, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
    DevTools opens.
 
@@ -200,17 +184,19 @@ Next, define a Workspace in DevTools:
 
    ![The Workspace tab](./index-images/sources-workspace.png)
 
-   This screenshot shows `https://microsoftedge.github.io/Demos/workspaces/`, but it could show `localhost:8080`, to show your modified code running on a local server on your machine.
-   
-1. Click **Add folder**.  The **Select Folder** dialog opens.
+1. Click **Add folder** button.
 
-1. Go to the `/app/` directory that you created.  For example, in the **Folder:** text box, enter the path, such as `~/Desktop/app` or `C:\Users\localAccount\app\`.  Then click the **Select Folder** button.
+   The **Select Folder** dialog opens.
 
-   DevTools prompts you whether to grant DevTools full access to your `app` directory.
+1. Go to the cloned `/Demos/workspace/` directory that you created.  For example, in the **Folder:** text box, enter the path, such as `C:\Users\localAccount\GitHub\Demos\workspaces\`.
+
+1. Click the **Select Folder** button.
+
+   DevTools prompts you whether to grant DevTools full access to your `/workspaces/` directory.
 
 1. Click the **Allow** button, to give DevTools permission to read and write to the directory.
 
-   In the **Workspace** tab are page icons that have a green dot, for `index.html`, `script.js`, and `styles.css`. <!--(The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.)-->  The green dot indicates that DevTools has established a mapping between a network resource of the page that's received from the web server, and the local source file in your `app` directory:
+   In the **Workspace** tab are page icons that have a green dot, for `index.html`, `script.js`, and `styles.css`. <!--(The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.)-->  The green dot indicates that DevTools has established a mapping between a network resource of the page that's received from the web server, and the local source file in your `/Demos/workspace/` directory:
 
    ![The Workspace tab has a green dot indicating a mapping between a resource received from the server and a local source file](./index-images/sources-workspace-folder.png)
 
@@ -231,7 +217,7 @@ To make a change in the CSS file and save it to disk:
 
 1. Select the **Elements** (![Elements tool icon](./index-images/elements-tool-icon.png)) tool, and then in the DOM tree, expand the `<body>` element, and then select the `<h1>` element.
 
-   The **Styles** pane displays the CSS rules that are applied to the `<h1>` element.  The **mapped file** (![Mapped file icon](./index-images/mapped-file-icon.png)) icon next to `styles.css:1` is a page with a green dot.  The green dot means that any changes that you make to this CSS rule are mapped to `styles.css` in your `app` directory:
+   The **Styles** pane displays the CSS rules that are applied to the `<h1>` element.  The **mapped file** (![Mapped file icon](./index-images/mapped-file-icon.png)) icon next to `styles.css:1` is a page with a green dot.  The green dot means that any changes that you make to this CSS rule are mapped to `styles.css` in your `/Demos/workspace/` directory:
 
    ![The 'mapped file' icon, a page with two-way arrows](./index-images/elements-styles-css.png)
 
@@ -243,7 +229,7 @@ To make a change in the CSS file and save it to disk:
 
    File Explorer or Finder opens.
 
-1. Open the copy of `styles.css` that's in your `app` directory in a text editor, such as Visual Studio Code.  The `color` property is now set to the new color, which is orange in this example.  The change was not only made in the copy of the file returned from the web server; the change was also made in your mapped file in your `app` workspace directory.
+1. Open the copy of `styles.css` that's in your `/Demos/workspace/` directory in a text editor, such as Visual Studio Code.  The `color` property is now set to the new color, which is orange in this example.  The change was not only made in the copy of the file returned from the web server; the change was also made in your mapped file in your `/Demos/workspace/` workspace directory.
 
 1. Refresh the page.
 
@@ -286,9 +272,9 @@ The following steps demonstrate that edits in the DOM tree aren't preserved acro
 
    File Explorer or Finder opens.
 
-1. Open the `index.html` file that's in your `app` directory in a text editor, such as Visual Studio Code.  The change that you just made doesn't appear; the heading still reads "DevTools Workspaces Demo", instead of "I Love Cake".
+1. Open the `index.html` file that's in your `/Demos/workspace/` directory in a text editor, such as Visual Studio Code.  The change that you just made doesn't appear; the heading still reads "DevTools Workspaces Demo", instead of "I Love Cake".
 
-1. In the browser, refresh the demo page.  The page reverts to the original heading, "DevTools Workspaces Demo", because the DOM tree with your edit was discarded, and the DOM was re-created from the unchanged `index.html` file in your `app` workspace directory.
+1. In the browser, refresh the demo page.  The page reverts to the original heading, "DevTools Workspaces Demo", because the DOM tree with your edit was discarded, and the DOM was re-created from the unchanged `index.html` file that's in your `/Demos/workspace/` directory.
 
 Continue with the next section.
 
@@ -338,7 +324,7 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 
    You made the change in the file listing, rather than in the DOM tree in the **Elements** tool.
 
-1. Refresh the page.  The heading in the rendered page changes to "I Love Cake", because that string was saved in `index.html` in your mapped `app` directory:
+1. Refresh the page.  The heading in the rendered page changes to "I Love Cake", because that string was saved in `index.html` in your mapped `/Demos/workspace/` directory:
 
    ![Change HTML from the Sources tool](./index-images/sources-page-h1.png)
 
@@ -346,7 +332,7 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 
    File Explorer or Finder opens.
 
-1. Open the copy of `index.html` that's in your `app` directory in a text editor, such as Visual Studio Code.
+1. Open the copy of `index.html` that's in your `/Demos/workspace/` directory in a text editor, such as Visual Studio Code.
 
    The `<h1>` element contains the new text, "I Love Cake", because you made the change using the **Sources** tool's editor to edit `index.html` and then saved the change, and that file was mapped in a workspace (the **Workspace** tab), indicated by a green dot on the file's icon.
 
@@ -368,20 +354,22 @@ Next, edit JavaScript and save changes to the source file.
 
 The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console**, while editing files.  The **Quick source** tool gives you just the editor from the **Sources** tool, while any tool is open.
 
-There are a couple ways to open the **Quick source** tool, and a couple ways to open a file in the **Quick source** tool.  We'll walk through all the ways.
+There are a couple ways to open the **Quick source** tool, and a couple ways to open a file in the **Quick source** tool.  We'll walk through the regular, GUI way and then the Command Menu shortcut way.
 
 
 <!-- ------------------------------ -->
-#### Open the Quick source tool without using Command Menu
+#### Open the Quick source tool and a .js file
 <!-- custom heading for Edge doc -->
 
-1. In the **Sources** tool, for each file that's open, click the **X** in the file's tab to close the file.
+1. In the **Sources** tool, in the **Workspace** tab, for each file that's open, click the **X** in the file's tab to close the file.
 
-1. In DevTools, select **Customize and control DevTools**, and then select **Toggle Quick View panel**.  Or, put focus on DevTools, and then press **Esc**.
+   No files are open in the **Sources** tool's **Workspace** tab.
 
-   The **Quick View** toolbar is displayed at the bottom of DevTools.
+1. In DevTools, select **Customize and control DevTools**, and then select **Toggle Quick View panel**.  Or, put focus on DevTools, and then press **Esc** once or twice.
 
-1. On the **Quick View** toolbar at the bottom of DevTools, click the **More tools** (**+**) button, and then select the **Quick source** tool.
+   The **Quick View** toolbar is displayed at the bottom of DevTools, without the **Quick source** tool.
+
+1. On the **Quick View** toolbar, click the **More tools** (**+**) button, and then select the **Quick source** tool.
 
    The **Quick source** tab is displayed in the **Quick View** toolbar at the bottom of DevTools.  If the **Sources** tool is selected in the **Activity Bar**, the **Quick View** panel is collapsed.
 
@@ -389,47 +377,15 @@ There are a couple ways to open the **Quick source** tool, and a couple ways to 
 
    The **Quick source** tool is expanded in the **Quick View** panel at the bottom of DevTools, and doesn't show any files, because no files are open in the **Sources** tool.
 
-1. Make the **Quick View** panel tall enough to see the instructions in the **Quick source** tool:
+1. Make the **Quick View** panel tall enough to see the instructions in the **Quick source** tool, including the **Open file** link and the **Run command** link:
 
    ![The empty Quick source tool open in the Quick View panel at the bottom of DevTools](./index-images/quick-source-tool-empty.png)
-
-1. Right-click the **Quick source** tab, and then select **Remove from Quick View**.
-
-Continue with the next section.
-
-
-<!-- ------------------------------ -->
-#### Open the Quick source tool by using Command Menu
-<!-- custom heading for Edge doc -->
-
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
-
-   The **Command Menu** opens, displaying a **Run >Command** prompt.
-
-1. At the prompt, start typing **quick**, and then select **Show Quick source**:
-
-   ![Open the 'Quick source' tool by using the Command Menu](./index-images/search-show-quick-source.png)
-
-   The **Quick source** tab is displayed in the **Quick View** toolbar at the bottom of DevTools.  If the **Sources** tool is selected in the **Activity Bar**, the **Quick View** panel is collapsed.
-
-1. In the **Activity Bar**, select a tool other than the **Sources** tool; select the **Elements** (![Elements tool icon.](./index-images/elements-tool-icon.png)) tool.
-
-   The **Quick source** tool is expanded in the **Quick View** panel at the bottom of DevTools, and doesn't show any files, because no files are open in the **Sources** tool.
-
-1. Make the **Quick View** panel tall enough to see the instructions in the **Quick source** tool, as shown in the previous section.
-
-Continue with the next section.
-
-
-<!-- ------------------------------ -->
-#### Open a .js file in the Quick source tool without using Command Menu
-<!-- custom heading for Edge doc -->
 
 1. In DevTools, select the **Sources** tool.
 
    The **Quick View** panel collapses, with the **Quick source** tab still selected.
 
-1. In the **Sources** tool, select the **Workspace** tab (grouped with the **Page** tab), expand the `app` folder, and then select `styles.css`.
+1. In the **Sources** tool, select the **Workspace** tab (grouped with the **Page** tab), expand the `/Demos/workspace/` folder (added in a section above), and then select `styles.css`.
 
    The `styles.css` tab opens in the **Sources** tool.
 
@@ -447,22 +403,46 @@ Continue with the next section.
 
 
 <!-- ------------------------------ -->
-#### Open a .js file in the Quick source tool by using Command Menu
+#### Open the Quick source tool and a .js file by using the Command Menu
 <!-- custom heading for Edge doc -->
 
-This way of opening a file doesn't use the **Sources** tool.  The starting state, resulting from the above steps:
+This approach avoids using the **Sources** tool to open a file.  First, we'll undo the steps from the previous section.
 
-* No file is open in the **Sources** tool.
-* The **Sources** tab is not selected (the **Elements** tool is selected instead).
-* The **Quick source** tool is open in the **Quick View** panel at the bottom of DevTools, and doesn't show any files, and is tall enough to display the **Open file** instructions.
+1. In the **Sources** tool, in the **Workspace** tab, for each file that's open, click the **X** in the file's tab.
 
-Open a `.js` file in the **Quick source** tool, without using the **Sources** tool, as follows:
+   No files are open in the **Sources** tool's **Workspace** tab.
+
+1. Put focus on DevTools, and then press **Esc** once or twice.
+
+   The **Quick View** toolbar is displayed at the bottom of DevTools.
+
+1. Right-click the **Quick source** tab, and then select **Remove from Quick View**.
+
+   That sets up an initial state as the starting point.  Now we'll use the **Command Menu** to open the **Quick source** tool and open a `.js` file:
+
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
+
+   The **Command Menu** opens, displaying a **Run >Command** prompt.
+
+1. At the prompt, start typing **quick**, and then select **Show Quick source**:
+
+   ![Open the 'Quick source' tool by using the Command Menu](./index-images/search-show-quick-source.png)
+
+   The **Quick source** tab is displayed in the **Quick View** toolbar at the bottom of DevTools.  If the **Sources** tool is selected in the **Activity Bar**, the **Quick View** panel is collapsed.
+
+1. In the **Activity Bar**, select a tool other than the **Sources** tool; select the **Elements** (![Elements tool icon.](./index-images/elements-tool-icon.png)) tool.
+
+   The **Quick source** tool is expanded in the **Quick View** panel at the bottom of DevTools, and doesn't show any files, because no files are open in the **Sources** tool.
+
+1. Make the **Quick View** panel tall enough to see the instructions in the **Quick source** tool, as shown in the previous section.
+
+   **Open a .js file in the Quick source tool:**
 
 1. Press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS).
 
    The **Command Menu** opens, and displays **Open File** prompt.
 
-1. Start typing **script**, and then select **script.js** that's in the **app/** directory:
+1. Start typing **script**, and then select **script.js** that's in the `/Demos/workspace/` directory:
 
    ![Opening script.js using the Open File dialog](./index-images/search-script.png)
 
@@ -501,13 +481,9 @@ In the rendered demo webpage, the **Edit and save files in a workspace** hyperli
 
    ![The link on the page is now italicized](./index-images/elements-styles-quick-source-script.png)
 
-1. To revert the edits in your `/app/` folder on your `localhost` server, copy the original files from the `/workspaces/` demo directory of the cloned Demos repo to the `/app/` directory that you created.  For example, copy the files from:
-
-   `C:\Users\localAccount\GitHub\Demos\workspaces\`
-
-   to:
-
-   `C:\Users\localAccount\app\`
+<!-- todo: 
+1. To revert the edits in your `/workspace/` folder on your `localhost` server,
+-->
 
 This completes the tutorial.
 
