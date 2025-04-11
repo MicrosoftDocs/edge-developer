@@ -167,7 +167,7 @@ Use the **Workspace** tab of the **Navigator** pane to add files to a Workspace,
 <!-- Green dots do not appear anymore. -->
 <!-- A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools. -->
 
-![The Filesystem tab, for a Workspace](./index-images/sources-workspace-tab.png)
+![The Workspace tab in the Sources tool](./index-images/sources-workspace-tab.png)
 <!--
 per section [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger) below:
 1. [Clone the Demos repo](../sample-code/sample-code.md#clone-the-demos-repo) in _Sample code for DevTools_.

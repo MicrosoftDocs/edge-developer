@@ -226,14 +226,14 @@ See also:
 
 To use this section, first [Download or clone the Demos repo](#download-or-clone-the-demos-repo).
 
-To edit local files in the **Sources** tool, you might need to first click the **Allow** button to grant read/write access.  To do that, follow the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) below.
+To edit local files in the **Sources** tool, you might need to first click the **Allow** button to grant read/write access.  To do that, follow the steps in [Opening a folder from the Workspace tab in the Sources tool](#opening-a-folder-from-the-workspace-tab-in-the-sources-tool) below.
 
 See also:
 * [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
 
 
 <!-- ------------------------------ -->
-#### Opening a folder from the Filesystem (Workspace) tab in the Sources tool
+#### Opening a folder from the Workspace tab in the Sources tool
 
 After downloading or cloning the Demos repo:
 
@@ -253,20 +253,30 @@ After downloading or cloning the Demos repo:
 
 1. Above DevTools, your're prompted "DevTools requests full access to (directory)".  Click the **Allow** button:
 
-   ![DevTools requests access to add a folder to a workspace in the Filesystem tab](./sample-code-images/devtools-requests-access.png)
+   ![DevTools requests access to add a folder to the Workspace](./sample-code-images/devtools-requests-access.png)
+
+There are several degrees of functionality and setup for experimenting with the Demos repo by using DevTools' **Sources** tool or another editor such as Visual Studio Code:
+
+* Use the **Page** tab and don't run localhost.
+* Use the **Workspace** tab and don't run localhost.
+* Use the **Overrides** tab and don't run localhost.
+* Use the **Page** tab and run localhost.
+* Use the **Workspace** tab and run localhost.  Full functionality for saving changes made in DevTools, including HTML, and refreshing them on your localhost server, to persist changes across refreshes.
+* Use the **Overrides** tab and run localhost.
+* Use [Microsoft Edge DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension.md) and run localhost.
 
 To edit the files, see the editing steps in the next section.
 
-
 See also:
 * [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
+   * [Create a directory for the localhost server to use](../workspaces/index.md#create-a-directory-for-the-localhost-server-to-use) in _Edit and save files in a workspace_ - to run your modified demos on a localhost web server.
 * [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 
 
 <!-- ------------------------------ -->
 #### Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool
 
-To edit files in the **Sources** tool, before doing the steps in this section, you might need to click the **Allow** button to grant read/write access by following the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) above.
+To edit files in the **Sources** tool, before doing the steps in this section, you might need to click the **Allow** button to grant read/write access by following the steps in [Opening a folder from the Workspace tab in the Sources tool](#opening-a-folder-from-the-workspace-tab-in-the-sources-tool) above.
 
 
 To open an `.html` file and edit it:
@@ -291,7 +301,7 @@ To open an `.html` file and edit it:
    <h1>📋 My modified tasks</h1>
    ```
 
-   If editing isn't enabled, click the **Allow** button to grant read/write access to the folder by doing the steps in [Opening a folder from the Filesystem (Workspace) tab in the Sources tool](#opening-a-folder-from-the-filesystem-workspace-tab-in-the-sources-tool) above.
+   If editing isn't enabled, click the **Allow** button to grant read/write access to the folder by doing the steps in [Opening a folder from the Workspace tab in the Sources tool](#opening-a-folder-from-the-workspace-tab-in-the-sources-tool) above.
 
    The change is displayed in the **Changes** tool in the **Quick View** panel, and an asterisk is added to the file name in the **index.html** tab in the **Sources** tool:
 
