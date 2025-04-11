@@ -261,7 +261,8 @@ There are several degrees of functionality and setup for experimenting with the 
 * Use the **Workspace** tab and don't run localhost.
 * Use the **Overrides** tab and don't run localhost.
 * Use the **Page** tab and run localhost.
-* Use the **Workspace** tab and run localhost.  Full functionality for saving changes made in DevTools, including HTML, and refreshing them on your localhost server, to persist changes across refreshes.
+* Use the **Workspace** tab and run localhost.  Provides full functionality for saving changes made in DevTools, including HTML files, and refreshing from your localhost server, to persist changes across refreshes:
+  ![Workspace tab of Sources tool; Changes tool, and localhost](./sample-code-images/workspace-localhost.png)
 * Use the **Overrides** tab and run localhost.
 * Use [Microsoft Edge DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension.md) and run localhost.
 
