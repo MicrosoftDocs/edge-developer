@@ -115,6 +115,27 @@ The following subsections cover the Navigator pane:
 * [Using the Command Menu to open files](#using-the-command-menu-to-open-files)
 
 
+<!-- ====================================================================== -->
+## The Page, Workspace, and Overrides tabs in the Sources tool
+<!-- todo: integrate section -->
+
+There are several degrees of functionality and setup for experimenting with the Demos repo by using DevTools' **Sources** tool or another editor such as Visual Studio Code:
+
+* Use the **Page** tab and don't run localhost.  If you don't run a localhost server, but open a local `.html` file, that supports most APIs (doesn't support the Modules API or APIs that require a secure context).  The **Page** tab shows temp files that are returned by the server.
+* Use the **Workspace** tab and don't run localhost.  The **Workspace** tab shows local files that are mapped to the temp files that are returned by the server.
+* Use the **Overrides** tab and don't run localhost.  Similar to **Workspace**.
+* Use the **Page** tab and run localhost.
+* Use the **Workspace** tab and run localhost.  Provides full functionality for saving changes made in DevTools, including HTML files, and refreshing from your localhost server, to persist changes across refreshes:
+  ![Workspace tab of Sources tool; Changes tool, and localhost](./sample-code-images/workspace-localhost.png)
+* Use the **Overrides** tab and run localhost.
+* Use [Microsoft Edge DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension.md) and run localhost.
+
+See also:
+* [Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool](devtools-guide-chromium/sample-code/sample-code#opening-a-local-html-file-from-the-browsers-file-open-dialog-and-editing-it-from-the-page-tab-of-the-sources-tool) in _Sample code for DevTools_.
+* [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
+   * [Create a directory for the localhost server to use](../workspaces/index.md#create-a-directory-for-the-localhost-server-to-use) in _Edit and save files in a workspace_ - to run your modified demos on a localhost web server.
+
+
 <!-- ------------------------------ -->
 #### Using the Page tab to explore resources that construct the current webpage
 

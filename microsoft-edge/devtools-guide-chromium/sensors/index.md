@@ -157,7 +157,7 @@ To emulate hardware concurrency:
 
    Caution: Exceeding the default value of 12 may degrade performance.
 
-To revert to the default value, click the **Reset** <!--(![undo](todo: icon png))--> button.
+To revert to the default value, click the **Reset** <!--(![undo](todo: icon png in Sensors tab at Drawer next to control))--> button.
 
 
 <!-- ====================================================================== -->

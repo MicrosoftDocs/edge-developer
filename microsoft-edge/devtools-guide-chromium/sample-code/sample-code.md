@@ -255,11 +255,15 @@ After downloading or cloning the Demos repo:
 
    ![DevTools requests access to add a folder to the Workspace](./sample-code-images/devtools-requests-access.png)
 
+
+<!-- ====================================================================== -->
+## The Page, Workspace, and Overrides tabs in the Sources tool
+
 There are several degrees of functionality and setup for experimenting with the Demos repo by using DevTools' **Sources** tool or another editor such as Visual Studio Code:
 
-* Use the **Page** tab and don't run localhost.
-* Use the **Workspace** tab and don't run localhost.
-* Use the **Overrides** tab and don't run localhost.
+* Use the **Page** tab and don't run localhost.  If you don't run a localhost server, but open a local `.html` file, that supports most APIs (doesn't support the Modules API or APIs that require a secure context).  The **Page** tab shows temp files that are returned by the server.
+* Use the **Workspace** tab and don't run localhost.  The **Workspace** tab shows local files that are mapped to the temp files that are returned by the server.
+* Use the **Overrides** tab and don't run localhost.  Similar to **Workspace**.
 * Use the **Page** tab and run localhost.
 * Use the **Workspace** tab and run localhost.  Provides full functionality for saving changes made in DevTools, including HTML files, and refreshing from your localhost server, to persist changes across refreshes:
   ![Workspace tab of Sources tool; Changes tool, and localhost](./sample-code-images/workspace-localhost.png)
@@ -269,9 +273,53 @@ There are several degrees of functionality and setup for experimenting with the 
 To edit the files, see the editing steps in the next section.
 
 See also:
+* [Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool](#opening-a-local-html-file-from-the-browsers-file-open-dialog-and-editing-it-from-the-page-tab-of-the-sources-tool), below.
+* [Using the Navigator pane to select files](../sources/index.md#using-the-navigator-pane-to-select-files) in _Sources tool overview_.
+   * [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 * [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
    * [Create a directory for the localhost server to use](../workspaces/index.md#create-a-directory-for-the-localhost-server-to-use) in _Edit and save files in a workspace_ - to run your modified demos on a localhost web server.
-* [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
+
+
+<!-- ------------------------------ -->
+#### Starting the localhost server from the entire Demos folder or specific demo folder
+
+
+<!-- ---------- -->
+###### Starting the localhost server from the Demos directory
+
+If you start the localhost server from within the entire `\Demos\` folder and then go to `localhost:8080`, you can navigate to each demo from within the browser.  You can add the entire cloned `/Demos/` folder to the **Workspace** tab of the **Sources** tool.  You then have full functionality for using DevTools as an IDE.
+
+Starting the server from within the entire `\Demos\` directory:
+
+```
+$ cd "C:\Users\localAccount\GitHub\Demos"
+$ npx http-server
+```
+
+Example directory to add to the **Workspace** tab of the **Sources** tool: `C:\Users\localAccount\GitHub\Demos`
+
+Result of going to `localhost:8080`:
+
+![Server started from /demos/ directory instead of a specific demo subdirectory](./sample-code-images/server-started-from-demos-dir.png)
+
+
+<!-- ---------- -->
+###### Starting the localhost server from a specific Demos subdirectory
+
+If you start the localhost server from a specific demo folder, such as `\Demos\demo-to-do`, and then go to `localhost:8080` (or simply open the local file such as `C:\Users\localAccount\GitHub\Demos\demo-to-do\index.html` in Microsoft Edge), the specific demo immediately is displayed in the browser.  You can then add just the specific demo directory, such as `C:\Users\localAccount\GitHub\Demos\demo-to-do\`, to the **Workspace** tab of the **Sources** tool.  You then have full functionality for using DevTools as an IDE, for that specific demo.
+
+Starting the server from within a specific demo directory:
+
+```
+$ cd "C:\Users\localAccount\GitHub\Demos\demo-to-do"
+$ npx http-server
+```
+
+Example directory to add to the **Workspace** tab of the **Sources** tool: `C:\Users\localAccount\GitHub\Demos\demo-to-do`
+
+Result of going to `localhost:8080`:
+
+![Server started from the \Demos\demo-to-do directory](./sample-code-images/server-started-from-a-demo-dir.png)
 
 
 <!-- ------------------------------ -->

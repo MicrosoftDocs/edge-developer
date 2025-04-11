@@ -963,6 +963,9 @@
             - name: Microsoft Edge DevTools extension for Visual Studio Code
               href: ./visual-studio-code/microsoft-edge-devtools-extension.md
 
+          # - name: Use DevTools as an IDE
+          #   href: 
+
             - name: Get started
               items:
                 - name: Installing the DevTools extension for Visual Studio Code
@@ -1777,6 +1780,9 @@
       items:
         - name: Microsoft Edge IDE integration
           href: ./visual-studio-code/ide-integration.md
+
+      # - name: Use DevTools as an IDE
+      #   href: 
 
         - name: DevTools extension for Visual Studio Code # aux jump page
           href: ./visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md
