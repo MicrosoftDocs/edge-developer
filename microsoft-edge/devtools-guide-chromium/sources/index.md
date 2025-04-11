@@ -126,12 +126,12 @@ There are several degrees of functionality and setup for experimenting with the 
 * Use the **Overrides** tab and don't run localhost.  Similar to **Workspace**.
 * Use the **Page** tab and run localhost.
 * Use the **Workspace** tab and run localhost.  Provides full functionality for saving changes made in DevTools, including HTML files, and refreshing from your localhost server, to persist changes across refreshes:
-  ![Workspace tab of Sources tool; Changes tool, and localhost](./sample-code-images/workspace-localhost.png)
+  ![Workspace tab of Sources tool; Changes tool, and localhost](./index-images/workspace-localhost.png)
 * Use the **Overrides** tab and run localhost.
 * Use [Microsoft Edge DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension.md) and run localhost.
 
 See also:
-* [Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool](devtools-guide-chromium/sample-code/sample-code#opening-a-local-html-file-from-the-browsers-file-open-dialog-and-editing-it-from-the-page-tab-of-the-sources-tool) in _Sample code for DevTools_.
+* [Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool](../sample-code/sample-code.md#opening-a-local-html-file-from-the-browsers-file-open-dialog-and-editing-it-from-the-page-tab-of-the-sources-tool) in _Sample code for DevTools_.
 * [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
    * [Create a directory for the localhost server to use](../workspaces/index.md#create-a-directory-for-the-localhost-server-to-use) in _Edit and save files in a workspace_ - to run your modified demos on a localhost web server.
 
