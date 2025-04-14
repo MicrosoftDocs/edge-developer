@@ -266,7 +266,7 @@ The following steps demonstrate that edits in the DOM tree aren't preserved acro
 
 1. In the DOM tree, in the `<h1>` element, select the text string `DevTools Workspaces Demo`, delete it, type the text string `I Love Cake`, and then press **Enter**.  The rendered webpage shows the new heading text, **I Love Cake**:
 
-   ![Attempting to change HTML from the DOM tree in the Elements tool](./index-images/sources-page-h1.png)
+   ![Attempting to change HTML from the DOM tree in the Elements tool](./index-images/elements-tool-h1.png)
 
 1. Select the **Sources** tool, right-click `index.html`, and then select **Open in containing folder**.
 
@@ -274,7 +274,9 @@ The following steps demonstrate that edits in the DOM tree aren't preserved acro
 
 1. Open the `index.html` file that's in your `/Demos/workspace/` directory in a text editor, such as Visual Studio Code.  The change that you just made doesn't appear; the heading still reads "DevTools Workspaces Demo", instead of "I Love Cake".
 
-1. In the browser, refresh the demo page.  The page reverts to the original heading, "DevTools Workspaces Demo", because the DOM tree with your edit was discarded, and the DOM was re-created from the unchanged `index.html` file that's in your `/Demos/workspace/` directory.
+1. In the browser, refresh the demo page.
+
+   The page reverts to the original heading, "DevTools Workspaces Demo", because the DOM tree with your edit was discarded, and the DOM was re-created from the unchanged `index.html` file that's in your `/Demos/workspace/` directory.
 
 Continue with the next section.
 
@@ -326,7 +328,7 @@ If you want to save a change to the webpage HTML, edit the HTML in the **Sources
 
 1. Refresh the page.  The heading in the rendered page changes to "I Love Cake", because that string was saved in `index.html` in your mapped `/Demos/workspace/` directory:
 
-   ![Change HTML from the Sources tool](./index-images/sources-page-h1.png)
+   ![Change HTML from the Sources tool](./index-images/sources-tool-h1.png)
 
 1. In the **Sources** tool, right-click `index.html`, and then select **Open in containing folder**.
 
