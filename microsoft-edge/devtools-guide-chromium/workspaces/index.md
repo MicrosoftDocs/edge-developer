@@ -517,7 +517,7 @@ Continue with the next section.
 
 
 <!-- ====================================================================== -->
-## Add a .js file using DevTools
+## Step 5: Add a .js file using DevTools
 <!-- section not in upstream -->
 
 1. In the **Sources** tool, in the **Workspace** tab, right-click the `/workspaces/` folder, and then select the **New file** menuitem.
