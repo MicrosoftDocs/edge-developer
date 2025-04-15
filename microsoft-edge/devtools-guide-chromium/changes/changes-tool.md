@@ -92,6 +92,16 @@ To scroll horizontally, click the horizontal scrollbar, or press the left or rig
 
 
 <!-- ====================================================================== -->
+## Troubleshooting
+
+If green circles stop appearing on files in DevTools, such as in the **Workspace** tab; or if the **Changes** tool doesn't show expected changes:
+
+* With DevTools displayed, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Empty cache and hard refresh**.
+
+* In DevTools, select **Customize and Control DevTools** (**...**) > **Restore defaults and refresh**.
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [Edit and save files in a workspace](../workspaces/index.md) - **Sources** tool > **Workspace** tab

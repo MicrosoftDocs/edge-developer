@@ -517,6 +517,20 @@ This completes the tutorial.
 
 
 <!-- ====================================================================== -->
+## Troubleshooting
+<!-- heading not in upstream -->
+
+If green circles stop appearing on files in DevTools, such as in the **Workspace** tab; or if the **Changes** tool doesn't show expected changes:
+
+* With DevTools displayed, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Empty cache and hard refresh**.
+
+* In DevTools, select **Customize and Control DevTools** (**...**) > **Restore defaults and refresh**.
+
+See also:
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
+
+
+<!-- ====================================================================== -->
 ## Next steps
 <!-- https://developer.chrome.com/docs/devtools/workspaces#next-steps -->
 
@@ -530,6 +544,7 @@ Next, learn how to use DevTools to change CSS and debug JavaScript:
 
 * [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
 <!--
 * [Workspace]() in **Settings**.
 -->
