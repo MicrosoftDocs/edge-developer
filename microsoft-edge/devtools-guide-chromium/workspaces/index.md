@@ -524,7 +524,8 @@ If green circles stop appearing on files in DevTools, such as in the **Workspace
 
 * With DevTools displayed, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Empty cache and hard refresh**.
 
-* In DevTools, select **Customize and Control DevTools** (**...**) > **Restore defaults and refresh**.
+<!-- 
+* In DevTools, select **Customize and Control DevTools** (**...**) > **Restore defaults and refresh**. -->
 
 See also:
 * [Track changes to files using the Changes tool](../changes/changes-tool.md)
