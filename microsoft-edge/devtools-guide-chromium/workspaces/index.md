@@ -1,6 +1,6 @@
 ---
 title: Edit and save files in a workspace
-description: How to save webpage file changes made in DevTools to your source files on disk.  # key words before col 158
+description: How to use DevTools as an IDE and save webpage file changes made in DevTools to your source files on disk.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -23,6 +23,10 @@ ms.date: 04/10/2025
    limitations under the License.  -->
 # Edit and save files in a workspace
 <!-- https://developer.chrome.com/docs/devtools/workspaces -->
+
+To save edits to webpage source files, you can use DevTools like an IDE, by adding the source code folder of the webpage in the **Workspace** tab of the **Sources** tool.  You can then edit and save HTML, CSS, and JS files in the **Sources** tool's editor, or in the **Quick source** tool in the **Quick View** panel at the bottom of DevTools.
+
+You can create, copy, rename, and delete source files from within the **Workspace** tab.
 
 Use the **Workspace** tab in the **Sources** tool to define a workspace, to save DevTools changes in your source code files rather than only in a transient copy of the files that are returned by the web server.
 
@@ -347,6 +351,16 @@ The DevTools **Workspace** tab is similar to using an editor to edit the HTML so
 1. Open the copy of `index.html` that's in your `/Demos/workspace/` directory in a text editor, such as Visual Studio Code.
 
    The `<h1>` element contains the new text, "I Love Cake", because you made the change using the **Sources** tool's editor to edit `index.html` and then saved the change, and that file was mapped in a workspace (the **Workspace** tab), indicated by a green dot on the file's icon.
+
+1. In the **Sources** tool, in the **Workspace** tab, right-click the `/workspaces/` folder, and then select the **New file** menuitem.
+
+   A file named `NewFile` is added:
+
+   ![A new file added via the Workspace tab](./index-images/new-file.png)
+
+   You can right-click a file in the **Workspace** tab and then use other commands, such as **Rename** or **Make a copy**.
+
+1. In the **Workspace** tab, right-click the new file and then select **Delete**.
 
 Continue with the next section.
 
