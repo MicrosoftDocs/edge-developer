@@ -352,15 +352,9 @@ The DevTools **Workspace** tab is similar to using an editor to edit the HTML so
 
    The `<h1>` element contains the new text, "I Love Cake", because you made the change using the **Sources** tool's editor to edit `index.html` and then saved the change, and that file was mapped in a workspace (the **Workspace** tab), indicated by a green dot on the file's icon.
 
-1. In the **Sources** tool, in the **Workspace** tab, right-click the `/workspaces/` folder, and then select the **New file** menuitem.
+1. Long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh**.
 
-   A file named `NewFile` is added:
-
-   ![A new file added via the Workspace tab](./index-images/new-file.png)
-
-   You can right-click a file in the **Workspace** tab and then use other commands, such as **Rename** or **Make a copy**.
-
-1. In the **Workspace** tab, right-click the new file and then select **Delete**.
+   In the **Workspace** tab, green dots appear on all the HTML, CSS, and JS files.
 
 Continue with the next section.
 
@@ -412,6 +406,8 @@ We'll walk through a couple ways to open the **Quick source** tool and open a fi
 1. In DevTools, select the **Sources** tool.
 
    The **Quick View** panel collapses, with the **Quick source** tab still selected.
+
+   **Open a .js file in the Quick source tool:**
 
 1. In the **Sources** tool, select the **Workspace** tab (grouped with the **Page** tab), expand the `/Demos/workspace/` folder (added in a section above), and then select `styles.css`.
 
@@ -497,9 +493,9 @@ In the rendered demo webpage, the **Edit and save files in a workspace** hyperli
 
    An asterisk appears on the `script.js` tab.
 
-1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS).
 
-   The asterisk is removed from the `script.js` tab.
+   `script.js` is saved, and the asterisk is removed from the `script.js` tab.
 
 1. Refresh the page.
 
@@ -509,9 +505,46 @@ In the rendered demo webpage, the **Edit and save files in a workspace** hyperli
 
    ![The link on the page is now italicized](./index-images/elements-styles-quick-source-script.png)
 
+1. Long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh**.
+
+   Green dots appear on all files of the webpage.
+
 <!-- todo: 
 1. To revert the edits in your `/workspace/` folder on your `localhost` server,
 -->
+
+Continue with the next section.
+
+
+<!-- ====================================================================== -->
+## Add a .js file using DevTools
+<!-- section not in upstream -->
+
+1. In the **Sources** tool, in the **Workspace** tab, right-click the `/workspaces/` folder, and then select the **New file** menuitem.
+
+   A file named `NewFile` is added:
+
+   ![A new file added via the Workspace tab](./index-images/new-file.png)
+
+1. Right-click `NewFile` in the **Workspace** tab and then select **Rename**.
+
+1. Rename the file to `test.js`.
+
+1. In `test.js`, add the line: `console.log('hello from test.js');`
+
+1. In the **Sources** tool, in the **Workspace** tab, select `index.html`.
+
+1. In `index.html`, below the line `<script src="./script.js" defer></script>`, add the line: `<script src="./test.js" defer></script>`
+
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS).
+
+   `index.html` is saved.
+
+1. Long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh**.
+
+   In the **Workspace** tab, green dots appear on all the HTML, CSS, and JS files:
+
+   ![Adding a reference to the JS file in the HTML file, and green dots on all webpage files](./index-images/new-js-file.png)
 
 This completes the tutorial.
 
@@ -520,9 +553,19 @@ This completes the tutorial.
 ## Troubleshooting
 <!-- heading not in upstream -->
 
+A green dot next to a file in DevTools indicates that DevTools has established a mapping between a network resource of the page that's received from the web server, and the local source file in your `/Demos/workspace/` directory.  The new file that you add in DevTools must be returned by the server, to be indicated as mapped.
+
+
 If green circles stop appearing on files in DevTools, such as in the **Workspace** tab; or if the **Changes** tool doesn't show expected changes:
 
-* With DevTools displayed, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Empty cache and hard refresh**.
+* With DevTools displayed, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh**.
+
+
+If you want a green "sync" circle to appear on an added `.js` file, and have the file represented in the **Changes** tool:
+
+1. Reference the added `.js` file in the HTML file.
+
+1. Remove the folder from the workspace, and then add the folder to the workspace.
 
 <!-- 
 * In DevTools, select **Customize and Control DevTools** (**...**) > **Restore defaults and refresh**. -->
