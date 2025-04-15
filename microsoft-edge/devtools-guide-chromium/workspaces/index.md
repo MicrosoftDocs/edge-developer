@@ -36,10 +36,12 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Overview
-<!-- https://developer.chrome.com/docs/devtools/workspaces#overview -->
+## Overview of the DevTools workspace feature
+<!-- Overview  https://developer.chrome.com/docs/devtools/workspaces#overview -->
 
-A DevTools _workspace_ lets you save changes that you make to a local copy of the source code to the same file on your computer, so that changes are retained across refreshes of the page.  Here's a typical scenario for using a workspace:
+A DevTools _workspace_ is defined by adding the source code folder to the **Workspace** tab of the **Sources** tool.  Use a workspace to save changes that you make to a local copy of the source code to the same file on your computer, so that changes are retained across refreshes of the page.
+
+Here's a typical scenario for using a workspace:
 
 * You have the source code for the demo website on your desktop.
 
@@ -51,12 +53,12 @@ The tutorial steps below walk you through this environment setup.
 
 
 <!-- ------------------------------ -->
-#### Limitations
-<!-- https://developer.chrome.com/docs/devtools/workspaces#limitations -->
+#### Limitations of the workspace feature with transformed source code
+<!-- Limitations  https://developer.chrome.com/docs/devtools/workspaces#limitations -->
 
-If you're using a modern framework, it might transform your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.  A workspace is usually able to map the optimized code back to the original source code, by using [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS.  However, there's a lot of variation in how each framework uses source maps.
+If you're using a modern framework, it might transform your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.  The **Workspace** tab in the **Sources** tool is usually able to map the optimized code back to the original source code, by using [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS.  However, there's a lot of variation in how each framework uses source maps.
 
-DevTools doesn't support every framework variation; for example, the Workspaces feature (**Workspace** tab) doesn't work with the Create React App framework.
+DevTools doesn't support every framework variation; for example, the **Workspace** tab doesn't work with the Create React App framework.
 
 If you run into issues while using workspaces with your framework of choice, or you identify framework-specific steps that are needed, [start a thread in the Chrome DevTools mailing list](https://groups.google.com/forum/#!forum/google-chrome-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=google-chrome-devtools) to exchange information with the rest of the DevTools community.
                                                                      
@@ -67,7 +69,7 @@ If you run into issues while using workspaces with your framework of choice, or 
 
 **Local overrides** is a DevTools feature that's similar to a workspace.  You can use an override when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage.  However, your changes aren't saved when you refresh the webpage. 
 
-The **Overrides** feature lets you store a local copy of the webpage files on the server. When you refresh the page, Microsoft Edge loads the local copy of files instead of the files on the server.
+The **Overrides** feature lets you store a local copy of the webpage files on the server.  When you refresh the page, Microsoft Edge loads the local copy of files instead of the files on the server.
 
 See also:
 * [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)
@@ -84,14 +86,14 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Set up the demo
-<!-- https://developer.chrome.com/docs/devtools/workspaces#demo -->
+#### Set up the workspaces demo
+<!-- Set up the demo  https://developer.chrome.com/docs/devtools/workspaces#demo -->
 
 To start this tutorial, in this section, we set up the local directory containing web page source files, and start the localhost test server.
 
 
 <!-- ---------- -->
-###### Clone the MicrosoftEdge / Demos repo to your local drive
+###### Clone the Edge Demos repo to your local drive
 <!-- Edge heading only -->
 
 To clone the **MicrosoftEdge / Demos** repo to your local drive, including the `/workspaces/` demo folder:
@@ -169,9 +171,10 @@ Continue with the next section.
 
 
 <!-- ------------------------------ -->
-#### Set up DevTools
-<!-- https://developer.chrome.com/docs/devtools/workspaces#devtools -->
+#### Add a Workspace folder in the Sources tool
+<!-- Set up DevTools  https://developer.chrome.com/docs/devtools/workspaces#devtools -->
 
+<!-- the always-available way -->
 Next, define a Workspace in DevTools:
 
 1. Right-click the locally hosted **DevTools Workspaces Demo** webpage and then select **Inspect**.  Or, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
@@ -252,13 +255,14 @@ Continue with the next section.
 
 
 <!-- ------------------------------ -->
-#### Changing the DOM tree in the Elements tool doesn't save changes
+#### Edited HTML in the DOM tree in the Elements tool isn't preserved after refresh
 <!-- #### Try changing HTML from the Elements panel -->
 <!-- https://developer.chrome.com/docs/devtools/workspaces#elements -->
 
-This section is informational.  You can do these steps or just read them.
+To edit an HTML file by using DevTools, use the **Workspace** tab of the **Sources** tool.  There are a couple other tools that display HTML, or allow a temporary edit, but these tools cannot save edits across refreshes of the page:
 
-You can make changes to the HTML content using the DOM tree in the **Elements** tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
+* The **Page** tab of the **Sources** tool doesn't allow editing an HTML file.
+* You can make changes to the HTML content using the DOM tree in the **Elements** tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
 
 The following steps demonstrate that edits in the DOM tree aren't preserved across page refreshes:
 
@@ -282,10 +286,10 @@ Continue with the next section.
 
 
 <!-- ---------- -->
-###### Optional: Why it doesn't work
+###### Why it doesn't work
 <!-- https://developer.chrome.com/docs/devtools/workspaces#why -->
 
-This section describes why the workflow from the above section "Changing the DOM tree in the Elements tool doesn't save changes" doesn't work.
+Changing the DOM tree in the **Elements**, per the above section, doesn't work.
 
 * The tree of nodes that you see on the **Elements** tool represents the page's DOM.
 
@@ -305,10 +309,16 @@ Continue with the next section.
 
 
 <!-- ------------------------------ -->
-#### Change HTML from the Sources tool
-<!-- https://developer.chrome.com/docs/devtools/workspaces#sources -->
+#### Save HTML changes by opening a file via the Workspace tab of the Sources tool
+<!-- Change HTML from the Sources panel  https://developer.chrome.com/docs/devtools/workspaces#sources -->
 
-If you want to save a change to the webpage HTML, edit the HTML in the **Sources** tool with a workspace defined (in the **Workspace** tab), rather than changing the HTML in the DOM tree in the **Elements** tool.
+To save changes to the webpage HTML file, add the source code folder in the **Workspace** tab, and then edit the HTML in the **Sources** tool, rather than changing the HTML in the DOM tree in the **Elements** tool.
+
+Unlike the **Workspace** tab, the **Page** tab of the **Sources** tool doesn't allow you to save changes to the file system.
+* An HTML file that's opened via the **Page** tab can't be edited.
+* A CSS or JS file that's opened via the **Page** tab can be edited, but the edits are not preserved across refreshes of the webpage.
+
+The DevTools **Workspace** tab is similar to using an editor to edit the HTML source file, but enables editing the HTML source file directly within DevTools.
 
 1. Continuing from above, in DevTools, click the **Sources** (![Sources tool icon.](./index-images/sources-tool-icon.png)) tab.
 
@@ -352,11 +362,13 @@ subsection order for Edge doc:
 4. Open a .js file in the Quick source tool by using Command Menu.
 -->
 
-Next, edit JavaScript and save changes to the source file.
+Next, edit JavaScript and save changes to the source file.  To save edits to a JavaScript source file, you can use DevTools like an IDE, by adding the source code folder in the **Workspace** tab of the **Sources** tool.  You can then edit and save the JavaScript (or HTML or CSS) file either in the **Sources** tool's editor, or in the **Quick source** tool in the **Quick View** panel at the bottom of DevTools.
 
-The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console**, while editing files.  The **Quick source** tool gives you just the editor from the **Sources** tool, while any tool is open.
+The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console**, while editing files.  The **Quick source** tool gives you just the editor from the **Sources** tool (without the **Navigator** or **Debugger** pane), while any tool is open in the upper part of DevTools.
 
-There are a couple ways to open the **Quick source** tool, and a couple ways to open a file in the **Quick source** tool.  We'll walk through the regular, GUI way and then the Command Menu shortcut way.
+We'll walk through a couple ways to open the **Quick source** tool and open a file in the **Quick source** tool:
+* The regular, GUI way.
+* The **Command Menu** shortcut way.
 
 
 <!-- ------------------------------ -->
