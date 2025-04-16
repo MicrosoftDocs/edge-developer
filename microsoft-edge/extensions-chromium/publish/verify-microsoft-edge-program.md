@@ -98,7 +98,9 @@ Microsoft uses these documents to verify that the company is authorized to do bu
 You can check verification status at Partner Center in **[Account Settings | Legal Info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)**, where you can see:
 
 1. One or more tabs such as **Partner**, **Developer**, or **Reseller**, depending on the programs in which your organization is enrolled.
-1. The **Developer** tab includes the **Account details** progress bar showing the stages of verification and any pending stages.
+1. The **Developer** tab includes the **Account details** status icon (as seen in screenshot below)
+![image](https://github.com/user-attachments/assets/855fa6fb-13a5-4c06-aaab-3f138006fe6a)
+.
 1. Your verification status: **Pending**, **Authorized/Accepted**, or **Action Required/Rejected**, with a status icon. For more information, see [Verification status](#verification-status).
 1. The **Legal business profile** progress bar with an information icon you can select to get more information.
 1. A **Fix now** button to start resolving verification issues.
