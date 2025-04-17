@@ -103,42 +103,27 @@ per section [The basic approach to using a debugger](#the-basic-approach-to-usin
 1. In the demo page, click the button **Add Number 1 and Number 2**.
 -->
 
+The Navigator pane contains the following tabs:
+
+| Tab | Description | Docs |
+|---|---|
+| **Page** | View the resources that the browser downloaded from the server or file system, inspect their content, and debug code. | [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage) |
+| **Workspace** | View and edit local files in DevTools, to use DevTools as an Integrated Development Environment (IDE) within the browser. | [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) |
+| **Overrides** | Experiment with changes to a webpage, and keep the changes after you refresh the webpage, without mapping your changes to the source code of the webpage. | [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files) |
+| **Content scripts** | View content scripts that were loaded by a Microsoft Edge extension. | [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions) |
+| **Snippets** | Create and save JavaScript code snippets, so that you can easily run a snippet of JavaScript on any webpage. | [Using the Snippets tab to run JavaScript code snippets on any page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage) |
 
 To access any hidden tabs of the Navigator pane, click the **More tabs** (![More tabs](./index-images/more-tabs-icon.png)) button.
 
-The following subsections cover the Navigator pane:
-* [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-* [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
-* [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
-* [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
-* [Using the Snippets tab to run JavaScript code snippets on any page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
-* [Using the Command Menu to open files](#using-the-command-menu-to-open-files)
-
-
-<!-- ====================================================================== -->
-## The Page, Workspace, and Overrides tabs in the Sources tool
-<!-- todo: integrate section -->
-
-There are several degrees of functionality and setup for experimenting with the Demos repo by using DevTools' **Sources** tool or another editor such as Visual Studio Code:
-
-* Use the **Page** tab and don't run localhost.  If you don't run a localhost server, but open a local `.html` file, that supports most APIs (doesn't support the Modules API or APIs that require a secure context).  The **Page** tab shows temp files that are returned by the server.
-* Use the **Workspace** tab and don't run localhost.  The **Workspace** tab shows local files that are mapped to the temp files that are returned by the server.
-* Use the **Overrides** tab and don't run localhost.  Similar to **Workspace**.
-* Use the **Page** tab and run localhost.
-* Use the **Workspace** tab and run localhost.  Provides full functionality for saving changes made in DevTools, including HTML files, and refreshing from your localhost server, to persist changes across refreshes:
-  ![Workspace tab of Sources tool; Changes tool, and localhost](./index-images/workspace-localhost.png)
-* Use the **Overrides** tab and run localhost.
-* Use [Microsoft Edge DevTools extension for Visual Studio Code](../../visual-studio-code/microsoft-edge-devtools-extension.md) and run localhost.
-
-See also:
-* [Opening a local HTML file from the browser's File Open dialog and editing it from the Page tab of the Sources tool](../sample-code/sample-code.md#opening-a-local-html-file-from-the-browsers-file-open-dialog-and-editing-it-from-the-page-tab-of-the-sources-tool) in _Sample code for DevTools_.
-* [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
+Details are below.  Also below: [Using the Command Menu to open files](#using-the-command-menu-to-open-files).
 
 
 <!-- ------------------------------ -->
 #### Using the Page tab to explore resources that construct the current webpage
 
-Use the **Page** tab of the **Navigator** pane to explore the file system that's returned from the server to construct the current webpage.  Select a JavaScript file to view, edit, and debug it.  The **Page** tab lists all of the resources that the page has loaded.
+The **Page** tab in the **Sources** tool displays the resources that the current webpage uses, such as the webpage's HTML document, JavaScript files, CSS files, or images.  The resources displayed in the **Page** tab are organized in a tree that matches the file system or server path from which they were downloaded.
+
+Use the **Page** tab to view the resources that the browser downloaded from the server or file system, inspect their content, and debug code.
 
 ![The Page tab in the Navigator pane of the Sources tool](./index-images/sources-page-tab.png)
 <!--
@@ -180,15 +165,19 @@ To change how resources are grouped:
 
 
 <!-- ------------------------------ -->
-#### Select a local Workspace, to use DevTools to edit files and save changes to disk
+#### Add a local folder to the workspace, to use DevTools to edit files and save changes to disk
 
-Use the **Workspace** tab of the **Navigator** pane to add files to a Workspace, so that changes you make in DevTools get saved to your local file system.
+Use the **Workspace** tab in the **Sources** tool to view and edit local files in DevTools.  The **Workspace** tab is useful when used in conjunction with a local web server as you can then load your local website in Edge, and edit its source files in DevTools.
 
-<!-- Green dots do not appear anymore. -->
+When you add a folder to the **Workspace** tab, that files and subfolders in that folder are displayed in the tab, and you can open files to view and edit them. 
+
+The **Workspace** tab does not show the resources that the browser downloaded to display the webpage; the **Workspace** tab only shows the folders and files that are inside the local folders that you added.
+
+<!-- do green dots appear?  maybe un-comment -->
 <!-- A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools. -->
 
 ![The Workspace tab in the Sources tool](./index-images/sources-workspace-tab.png)
-<!--
+<!-- updating png:
 per section [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger) below:
 1. [Clone the Demos repo](../sample-code/sample-code.md#clone-the-demos-repo) in _Sample code for DevTools_.
 1. Go to https://microsoftedge.github.io/Demos/devtools-js-get-started/
@@ -218,15 +207,15 @@ See also:
 <!-- ------------------------------ -->
 #### Using the Overrides tab to override server files with local files
 
-Use the **Overrides** tab of the **Navigator** pane to override page assets (such as images) with files from a local folder.
+Use the **Overrides** tab in the **Sources** tool to override any response from a webserver with local files.  The **Overrides** tab is useful to make temporary changes to individual files, such as a CSS file, on any website.  Use **Overrides** when you want to experiment with changes to a webpage, and you need to keep the changes after you refresh the webpage, but you don't care about mapping your changes to the source code of the webpage.
 
-Items in this tab override what the server sends to the browser, even after the server has sent the assets.
+To start using the **Overrides** tab, create a new folder on your file system, and then select that folder in the **Overrides** tab.  From then on, any changes that you make in the **Styles** tab of the **Elements** tool, or in the **Page** tab of the **Sources** tool, are saved in the new folder.  DevTools uses the local files to override the server responses to<!-- todo: to? --> the matching resources.
 
 ![The Overrides tab of the Navigator pane](./index-images/overrides-tab.png)
 
-The **Overrides** feature is similar to Workspaces.  Use Overrides when you want to experiment with changes to a webpage, and you need to keep the changes after you refresh the webpage, but you don't care about mapping your changes to the source code of the webpage.
-
+<!-- todo: no purple dot shown
 A file that overrides a file that is returned by the server is indicated by a purple dot next to the file name, throughout DevTools.
+-->
 
 See also:
 * [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)
@@ -237,7 +226,16 @@ See also:
 <!-- ------------------------------ -->
 #### Using the Content scripts tab for Microsoft Edge extensions
 
-Use the **Content scripts** tab of the **Navigator** pane to view any content scripts that were loaded by a Microsoft Edge extension that you installed.
+Use the **Content scripts** tab of the **Navigator** pane to view any content scripts<!-- todo: define --> that were loaded by a Microsoft Edge extension that you installed.
+
+<!-- A _content script_ is a __. -->
+
+<!-- todo: define _content script_, like in
+* [Using the Content scripts tab for Microsoft Edge extensions](../../sources/index.md#using-the-content-scripts-tab-for-microsoft-edge-extensions) in _Sources tool overview_.
+* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts) in Chrome Extensions docs.
+https://developer.chrome.com/docs/devtools/settings/ignore-list
+-->
+
 
 ![The Content scripts tab of the Navigator pane](./index-images/content-scripts-tab.png)
 
@@ -298,7 +296,16 @@ For more information, see [Run commands with the Microsoft Edge DevTools Command
 <!-- ====================================================================== -->
 ## Using the Editor pane to view or edit files
 
-Use the **Editor** pane to view the front-end files that are returned from the server to compose the current webpage, including JavaScript, HTML, CSS, and image files.  When you edit the front-end files in the **Editor** pane, DevTools updates the webpage to run the modified code.
+Use the **Editor** pane to view or edit files, including JavaScript, HTML, CSS, and image files.  The **Editor** pane displays the content of whatever file you selected in any of the **Navigator** pane tabs:
+* **Page**
+* **Workspace**
+* **Overrides**
+* **Content scripts**
+* **Snippets**
+
+For example, the **Editor** pane can show:
+* The content of a **Snippet**.
+* The content of a **Workspace** file that's not actually used in your front-end code (because **Workspace** lets you edit the content of any folder you want).
 
 ![The Editor pane in the Sources tool](./index-images/editor-pane.png)
 
@@ -428,10 +435,10 @@ In this scenario, the **Sources** tool is useful for inspecting and stepping-thr
 #### Editing a CSS file
 
 There are two ways to edit CSS in DevTools:
-*  In the **Elements** tool, you work with one CSS property at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Get started viewing and changing CSS](../css/index.md).
+*  In the **Elements** tool, you work with one CSS property at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Get started viewing and changing CSS](../css/index.md).  Do not edit CSS in the **Elements** tool when using a **Workspace**; see [Editing a CSS file when using a Workspace](#editing-a-css-file-when-using-a-workspace), below.
 *  In the **Sources** tool, you use a text editor to edit CSS files.
 
-The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit and save files in a workspace](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
+The **Sources** tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit and save files in a workspace](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
 ```css
 h1 {
@@ -443,11 +450,25 @@ h1 {
 
 CSS changes take effect immediately; you don't need to manually save the changes.
 
-
 See also:
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 * [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
+
+
+<!-- ---------- -->
+###### Editing a CSS file when using a Workspace
+
+Do not use the **Elements** tool to edit CSS files when you are using the **Workspace** feature.
+
+If you are using a **Workspace**, edit the CSS in the **Sources** tool (not in the **Elements** tool), because the source files that you edit might be built or compiled by a build script before being served by your local server.
+When you edit in the **Elements** tool, you might be editing the compiled-and-built version of the file, not the source file.
+
+When you use a **Workspace**:
+1. Edit the file in the **Sources** tool.
+1. Save the change.
+1. Build again.  Some build systems do this automatically, when they detect a change.
+1. Reload the page.  Some servers do this automatically when they detect a change.
 
 
 <!-- ------------------------------ -->
@@ -504,7 +525,7 @@ To use the **Quick source** tool:
 
 1. Type **quick**, and then select **Show Quick source**.
 
-   The **Quick View** panel opens at the bottom of DevTools, with the **Quick source** tool selected.  The **Quick source** tool contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
+   The **Quick View** panel opens at the bottom of DevTools, with the **Quick source** tool selected.  The **Quick source** tool displays the same files that are open in the **Sources** tool, within a compact version of the DevTools code editor.
 
 1. Press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the **Open File** dialog.
 

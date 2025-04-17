@@ -10,9 +10,10 @@ ms.date: 03/07/2025
 ---
 # Display or edit source files using the Quick source tool
 <!-- https://developer.chrome.com/docs/devtools/quick-source -->
-<!-- first give the always-available GUI way, then keyboard shortcuts, then transient UI in instructions that aren't present when a file is open -->
+<!-- first give the always-available GUI way, then keyboard shortcuts
+don't doc the empty tool UI, which is transient and is designed for the Sources tool -->
 
-Use the **Quick source** tool to display or edit source files at the same time as displaying a tool other than the **Sources** tool.
+Use the **Quick source** tool to display or edit source files at the same time as displaying a tool other than the **Sources** tool.  The **Quick source** tool always displays the same files that are open in the **Sources** tool.
 
 ![The Quick source tool](./quick-source-tool-images/quick-source-tool.png)
 
@@ -32,7 +33,9 @@ If you open or close a file in one tool, the file is opened or closed in the oth
 <!-- ====================================================================== -->
 ## Open a file in the Quick source tool
 
-To make a file appear in the **Quick source** tool, open a file in the **Sources** tool, as follows:
+<!-- todo: run & show localhost in addr bar instead of github.io? -->
+
+To view source files while using a tool than the **Sources** tool in the **Activity Bar**, use the **Quick source** tool, as follows:
 
 1. Open a webpage; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.
 
@@ -40,21 +43,7 @@ To make a file appear in the **Quick source** tool, open a file in the **Sources
 
    DevTools opens.
 
-1. If the **Quick View** toolbar isn't shown at the bottom of DevTools, press **Esc**.
-
-1. In the **Quick View** toolbar at the bottom of DevTools, click the **More tools** button, and then select **Quick source**.
-
-   The **Quick source** tool opens in **Quick View**:
-
-   ![The Quick source tool, containing an Open file link](./quick-source-tool-images/quick-source-open-file.png)
-
-   The **Quick source** tool might show instructions including an **Open file** link, or it might display a file.  Instead of using that transient link, the following steps show how to use the **Page** tab in the **Sources** tool, to make a file appear in the **Quick source** tool.
-
-   **Open a file by using the Sources tool:**
-
 1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool.
-
-   The **Quick View** pane is minimized at the bottom of DevTools.
 
 1. In the **Sources** tool, in the **Page** tab, select one or more files, such as `to-do.js`.
 
@@ -62,13 +51,17 @@ To make a file appear in the **Quick source** tool, open a file in the **Sources
 
    ![The Sources tool > Page tab with a file selected](./quick-source-tool-images/sources-tool-page-tab-file-selected.png)
 
-1. In the **Activity Bar** at the top of DevTools, select a tool other than **Sources**, such as **Elements**.
+1. In the **Activity Bar** at the top of DevTools, select a tool other than **Sources**, such as **Elements** (![Elements icon](./quick-source-tool-images/elements-tool-icon.png)).
 
-   The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and has a tab for each open file:
+1. If the **Quick View** toolbar isn't shown at the bottom of DevTools, press **Esc**.
 
-   ![A file displayed in the Quick source tool.](./quick-source-tool-images/file-displayed-in-quick-source.png)<!-- 1st use -->
+1. In the **Quick View** toolbar at the bottom of DevTools, click the **More tools** button, and then select **Quick source**.
 
-You can now view or edit the file in the **Quick source** tool, at the same time as displaying a different tool.
+   The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and displays the same files that are open in the **Sources** tool:
+
+   ![A file displayed in the Quick source tool](./quick-source-tool-images/file-displayed-in-quick-source.png)
+
+You can now view or edit the file in the **Quick source** tool, at the same time as displaying a different tool in the main part of DevTools.
 
 See also:
 * [Using the Page tab to explore resources that construct the current webpage](../sources/index.md#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage) in _Sources tool overview_.
@@ -77,37 +70,15 @@ See also:
 <!-- ====================================================================== -->
 ## Edit local source files in DevTools by selecting a Workspace folder
 
-By selecting a local folder as a **Workspace**, you can edit files from within the **Quick source** tool at the same time as displaying a different tool (or from within the **Sources** tool), and have those edits be saved to your local drive.  This way, when you edit a file in DevTools, the edits are not only made to the transient file that's returned by the server, but are also saved to the source file on your local drive.
+By selecting a local folder as a **Workspace** in the **Sources** tool, you can then edit files from within the **Quick source** tool at the same time as displaying a different tool, and have those edits be saved to your local drive.  This way, you can edit files in the **Quick source** tool while using another tool, such as **Elements** or **Network**, and have your edits be saved to the corresponding source file on your local drive.
 
-To open a server webpage file in the **Quick source** tool and save any edits to your local **Workspace** folder of source files:
+To edit source files in the **Quick source** tool:
 
-1. Open the DevTools **Quick source** tool.
-1. Have local source files, such as a cloned repo.
-1. Select a local folder of source files as the Workspace.
+1. Have access to your source files locally, such as a cloned repo.  See [Have local source files, such as a cloned repo](#have-local-source-files-such-as-a-cloned-repo), below.
+1. In the **Workspace** tab in the **Sources** tool, add a local folder of source files.  See [Select a local folder of source files as the Workspace](#select-a-local-folder-of-source-files-as-the-workspace), below.
+1. In the **Activity Bar**, select a tool other than the **Sources** tool, such as the **Elements** tool.  Then in the **Quick View** panel at the bottom of DevTools, open the **Quick source** tool.  See [Open the Quick source tool](#open-the-quick-source-tool), below.
 
 These steps are detailed below.
-
-
-<!-- ------------------------------ -->
-#### Open the DevTools Quick source tool
-
-1. Open a webpage that's on a web server; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.  That page is hosted on the web server `microsoftedge.github.io`.
-
-1. Right-click the webpage and then select **Inspect**.
-
-   DevTools opens.
-
-1. If the **Quick View** toolbar isn't shown at the bottom of DevTools, press **Esc**.
-
-1. In the **Quick View** toolbar at the bottom of DevTools, click the **More tools** button, and then select **Quick source**.
-
-   The **Quick source** tool opens in **Quick View** at the bottom of DevTools:
-
-   ![The Quick source tool, containing a Select folder link](./quick-source-tool-images/quick-source-select-folder.png)
-
-   The **Quick source** tool might show instructions including an **Select folder** link, or it might display a file.  Instead of relying on that transient link, the steps further below show how to use the **Workspace** tab in the **Sources** tool, to select a local folder of source files.
-
-Continue with the next section.
 
 
 <!-- ------------------------------ -->
@@ -154,6 +125,8 @@ Continue with the next section.
 <!-- ------------------------------ -->
 #### Select a local folder of source files as the Workspace
 
+<!-- todo: start localhost server -->
+
 1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, select the **Workspace** tab (grouped with the **Page** tab), and then in the **Workspace** tab, click the **Add folder** button.
 
    The **Select Folder** dialog opens.
@@ -170,13 +143,32 @@ Continue with the next section.
 
    The file opens in the **Sources** tool:
 
-   ![The Sources tool with a file selected](./quick-source-tool-images/sources-tool-with-file-selected.png)
+   ![The Sources tool with a file selected](./quick-source-tool-images/sources-tool-with-file-selected.png)<!-- todo: localhost in addr bar -->
 
 1. In the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** tool, such as the **Elements** tool.
 
    The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and has a tab for each open file:
 
-   ![A file displayed in the Quick source tool](./quick-source-tool-images/file-displayed-in-quick-source.png)<!-- 2nd use -->
+   ![A file displayed in the Quick source tool.](./quick-source-tool-images/file-displayed-in-quick-source-2.png)<!-- copied from above then appended -2 --><!-- todo: localhost in addr bar -->
+
+Continue with the next section.
+
+
+<!-- ------------------------------ -->
+#### Open the Quick source tool
+
+1. In the **Activity Bar**, select a tool other than the **Sources** tool, such as the **Elements** tool.
+
+1. If the **Quick View** toolbar isn't shown at the bottom of DevTools, press **Esc**.
+
+1. In the **Quick View** toolbar at the bottom of DevTools, click the **More tools** button, and then select **Quick source**.
+
+   The **Quick source** tool opens in **Quick View** at the bottom of DevTools:
+
+   ![The Quick source tool, containing a Select folder link](./quick-source-tool-images/quick-source-select-folder.png)
+
+   The **Quick source** tool might show instructions including an **Select folder** link, or it might display a file.  Instead of relying on that transient link, the steps further below show how to use the **Workspace** tab in the **Sources** tool, to select a local folder of source files.
+
 
 Now, when you edit the folder's files in DevTools, the edits are not only made to the transient file that's returned by the server, but are also saved to the source files on your local drive.  You can edit the file from within the **Quick source** tool at the same time as displaying another tool (or from within the **Sources** tool).
 
@@ -189,7 +181,16 @@ See also:
 <!-- ====================================================================== -->
 ## Open a file by using the Command Menu
 
-Opening a file in the **Quick source** tool or **Sources** tool opens the file in both tools.
+Opening a file by using the **Command Menu** opens that file in both the **Quick source** tool and **Sources** tool.
+
+
+To open the **Command Menu**, do any of the following:
+
+* Select **Customize and control DevTools** > **Run command**.
+
+* Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
+
+* Click the **Run command** link in the empty **Quick source** tool (or **Sources** tool).
 
 
 To open a file by using the **Open File** prompt of the **Command Menu**, do any of the following:
@@ -209,36 +210,12 @@ To open a file by using the **Open File** prompt of the **Command Menu**, do any
   To display the **Open file** link in the instructions in the panel, you might need to scroll down, or drag the **Quick View** divider up to make the **Quick View** panel taller.
 
 
-<!-- ------------------------------ -->
-#### Close a file
+<!-- ====================================================================== -->
+## Close a file
 
 To close a file, click the **x** button in the file's tab.
 
 The file is closed in the **Quick source** tool and **Sources** tool.
-
-
-<!-- ------------------------------ -->
-#### Select a Workspace folder
-
-To save your DevTools edits to the source files on your local drive, do any of the following:
-
-* In the **Sources** tool, in the **Workspace** tab, click the **Add folder** button.
-
-* Click the **Select folder** link in the instructions, if no file is displayed in the **Quick source** tool.
-
-* Drag a folder that contains your source files onto the **Sources** tool, when no file is open in the tool.
-
-
-<!-- ------------------------------ -->
-#### Open the Command Menu
-
-To open the **Command Menu**, do any of the following:
-
-* Select **Customize and control DevTools** > **Run command**.
-
-* Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
-
-* Click the **Run command** link in the empty **Quick source** tool (or **Sources** tool).
 
 
 <!-- ====================================================================== -->

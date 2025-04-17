@@ -361,13 +361,8 @@ Continue with the next section.
 
 <!-- ====================================================================== -->
 ## Step 4: Save a JavaScript change to disk
-<!-- https://developer.chrome.com/docs/devtools/workspaces/#js -->
-<!--
-subsection order for Edge doc:
-1. Open the Quick source tool without using Command Menu.
-2. Open the Quick source tool by using Command Menu.
-3. Open a .js file in the Quick source tool without using Command Menu.
-4. Open a .js file in the Quick source tool by using Command Menu.
+<!-- https://developer.chrome.com/docs/devtools/workspaces/#js
+don't doc Quick source tool here
 -->
 
 Next, edit JavaScript and save changes to the source file.  To save edits to a JavaScript source file, you can use DevTools like an IDE, by adding the source code folder in the **Workspace** tab of the **Sources** tool.  You can then edit and save the JavaScript (or HTML or CSS) file either in the **Sources** tool's editor, or in the **Quick source** tool in the **Quick View** panel at the bottom of DevTools.
