@@ -176,7 +176,7 @@ Cloning a repo enables updating your local copy when the repo is updated.  Many 
 
 
 <!-- ====================================================================== -->
-## Clone the Edge Demos repo to your drive by using git commands
+## Clone the Edge Demos repo to your drive
 
 The **Microsoft Edge / Demos** repo is useful for following the various DevTools documentation.  You can clone the repo, start a localhost web server within a folder of the cloned repo, and then edit the demo files directly within DevTools, or within an editor such as VS Code.
 
@@ -208,8 +208,8 @@ For details about cloning a repo, see:
 Continue with the next section.
 
 
-<!-- ====================================================================== -->
-## Clone the Edge Demos repo to your drive by using VS Code
+<!-- ------------------------------ -->
+#### Clone the Edge Demos repo to your drive by using VS Code
 
 To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
@@ -264,21 +264,16 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Open a demo folder in the Sources tool and edit a file
+## Open a demo folder from the Workspace tab in the Sources tool
+<!-- todo: flatten article's TOC, then demote a few headings -->
 
-To use this section, first [Clone the Edge Demos repo to your drive by using git commands](#clone-the-edge-demos-repo-to-your-drive-by-using-git-commands), or clone the repo another way, or download the repo.
-
-To edit local files in the **Sources** tool, you might need to first click the **Allow** button to grant read/write access.  To do that, follow the steps in [Opening a folder from the Workspace tab in the Sources tool](#opening-a-folder-from-the-workspace-tab-in-the-sources-tool) below.
+To use this section, first do [Clone the Edge Demos repo to your drive](#clone-the-edge-demos-repo-to-your-drive), above.
 
 See also:
 * [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
 
 
-<!-- ====================================================================== -->
-## Open a folder from the Workspace tab in the Sources tool
-<!-- todo: flatten article's TOC, then demote a few headings -->
-
-After downloading or cloning the Demos repo:
+After cloning (or downloading) the Edge Demos repo:
 
 1. In Microsoft Edge, open a new tab.
 
@@ -300,7 +295,26 @@ After downloading or cloning the Demos repo:
 
 
 <!-- ====================================================================== -->
-## Starting the localhost server from the Demos directory
+## Start the localhost server
+
+If you start the localhost server from a specific demo folder, such as `\Demos\demo-to-do`, and then go to `localhost:8080` (or simply open the local file such as `C:\Users\localAccount\GitHub\Demos\demo-to-do\index.html` in Microsoft Edge), the specific demo immediately is displayed in the browser.  You can then add just the specific demo directory, such as `C:\Users\localAccount\GitHub\Demos\demo-to-do\`, to the **Workspace** tab of the **Sources** tool.  You then have full functionality for using DevTools as an IDE, for that specific demo.
+
+Starting the server from within a specific demo directory:
+
+```
+$ cd "C:\Users\localAccount\GitHub\Demos\demo-to-do"
+$ npx http-server
+```
+
+Example directory to add to the **Workspace** tab of the **Sources** tool: `C:\Users\localAccount\GitHub\Demos\demo-to-do`
+
+Result of going to `localhost:8080`:
+
+![Server started from the \Demos\demo-to-do directory](./sample-code-images/server-started-from-a-demo-dir.png)
+
+
+<!-- ------------------------------ -->
+#### Starting the localhost server from the Demos directory
 
 If you start the localhost server from within the entire `\Demos\` folder and then go to `localhost:8080`, you can navigate to each demo from within the browser.  You can add the entire cloned `/Demos/` folder to the **Workspace** tab of the **Sources** tool.  You then have full functionality for using DevTools as an IDE.
 
@@ -319,29 +333,30 @@ Result of going to `localhost:8080`:
 
 
 <!-- ====================================================================== -->
-## Starting the localhost server from a specific Demos subdirectory
-
-If you start the localhost server from a specific demo folder, such as `\Demos\demo-to-do`, and then go to `localhost:8080` (or simply open the local file such as `C:\Users\localAccount\GitHub\Demos\demo-to-do\index.html` in Microsoft Edge), the specific demo immediately is displayed in the browser.  You can then add just the specific demo directory, such as `C:\Users\localAccount\GitHub\Demos\demo-to-do\`, to the **Workspace** tab of the **Sources** tool.  You then have full functionality for using DevTools as an IDE, for that specific demo.
-
-Starting the server from within a specific demo directory:
-
-```
-$ cd "C:\Users\localAccount\GitHub\Demos\demo-to-do"
-$ npx http-server
-```
-
-Example directory to add to the **Workspace** tab of the **Sources** tool: `C:\Users\localAccount\GitHub\Demos\demo-to-do`
-
-Result of going to `localhost:8080`:
-
-![Server started from the \Demos\demo-to-do directory](./sample-code-images/server-started-from-a-demo-dir.png)
-
-
-<!-- ====================================================================== -->
-## Opening a local HTML file from browser's File Open dialog and editing it in DevTools
+## Opening a local HTML file from File Explorer and editing it in DevTools
 
 To edit files in the **Sources** tool, before doing the steps in this section, you might need to click the **Allow** button to grant read/write access by following the steps in [Opening a folder from the Workspace tab in the Sources tool](#opening-a-folder-from-the-workspace-tab-in-the-sources-tool) above.
 
+1. In File Explorer on Windows, or Finder on macOS, select an HTML file from the local copy of the **Demos** repo, such as `C:\Users\localAccount\Documents\GitHub\Demos\demo-to-do\index.html`.
+
+   The `.html` file is opened and rendered in Microsoft Edge.
+
+   The Address bar displays: **File | C:/Users/localAccount/GitHub/Demos/demo-to-do/index.html**
+
+   Selecting the URL in the address bar shows the URL format: `file:///C:/Users/localAccount/GitHub/Demos/demo-to-do/index.html`
+
+1. Right-click the rendered webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Select the **Sources** tool, and then select the **Page** tab or the **Workspace** tab.
+
+See also:
+* [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
+
+
+<!-- ------------------------------ -->
+#### Opening a local HTML file from the browser's File Open dialog and editing it in DevTools
 
 To open an `.html` file and edit it:
 
@@ -376,27 +391,6 @@ To open an `.html` file and edit it:
 1. Refresh the page.  The change is displayed in the rendered webpage; for example, the word **modified** is added to the title:
 
    ![The modified demo-to-do page after saving changes and refreshing](./sample-code-images/modified-demo-to-do-after-save-refresh.png)
-
-
-<!-- ====================================================================== -->
-## Opening a local HTML file from File Explorer and editing it in the browser
-
-1. In File Explorer on Windows, or Finder on macOS, select an HTML file from the local copy of the **Demos** repo, such as `C:\Users\localAccount\Documents\GitHub\Demos\demo-to-do\index.html`.
-
-   The `.html` file is opened and rendered in Microsoft Edge.
-
-   The Address bar displays: **File | C:/Users/localAccount/GitHub/Demos/demo-to-do/index.html**
-
-   Selecting the URL in the address bar shows the URL format: `file:///C:/Users/localAccount/GitHub/Demos/demo-to-do/index.html`
-
-1. Right-click the rendered webpage, and then select **Inspect**.
-
-   DevTools opens.
-
-1. Select the **Sources** tool, and then select the **Page** tab or the **Workspace** tab.
-
-See also:
-* [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
 
 
 <!-- ====================================================================== -->

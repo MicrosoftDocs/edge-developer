@@ -123,11 +123,11 @@ For example, if not done already, clone the **MicrosoftEdge / Demos** repo to yo
    ```
 
    For details about cloning a repo, see:
-   * [Clone the Demos repo](../sample-code/sample-code.md#clone-the-demos-repo) in _Sample code for DevTools_.<!-- todo: show git bash, not only VS Code's Source Control pane -->
+   * [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.<!-- todo: show git bash, not only VS Code's Source Control pane -->
    * [Clone the WebView2Samples repo](../../webview2/how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Shows a different sample repo, but shows steps for several tools.
    * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
 
-   Now you have a local folder of source files (such as `/demo-to-do/`) that match the files on the web server.
+Now you have a local folder of source files (such as `/demo-to-do/`) that match the files on the web server.
 
 Continue with the next section.
 
@@ -183,7 +183,7 @@ Continue with the next section.
 Now, when you edit the folder's files in DevTools, the edits are not only made to the transient file that's returned by the server, but are also saved to the source files on your local drive.  You can edit the file from within the **Quick source** tool at the same time as displaying another tool (or from within the **Sources** tool).
 
 See also:
-* [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
+* [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 * [Edit and save files in a workspace](../workspaces/index.md)
    * [Step 4: Save a JavaScript change to disk](../workspaces/index.md#step-4-save-a-javascript-change-to-disk) in _Edit and save files in a workspace_
 
