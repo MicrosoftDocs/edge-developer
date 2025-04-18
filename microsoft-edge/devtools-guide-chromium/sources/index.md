@@ -28,31 +28,7 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 
 **Detailed contents:**
 
-[Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
-
-
-* [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
-* [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
-   * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-   * [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
-   * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
-   * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
-   * [Using the Snippets tab to run JavaScript code snippets on any webpage](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
-   * [Using the Command Menu to open files](#using-the-command-menu-to-open-files)
-* [Using the Editor pane to view or edit files](#using-the-editor-pane-to-view-or-edit-files)
-   * [Editing a JavaScript file](#editing-a-javascript-file)
-   * [Reformatting a minified JavaScript file with pretty-print](#reformatting-a-minified-javascript-file-with-pretty-print)
-   * [Mapping minified code to your source code to show readable code](#mapping-minified-code-to-your-source-code-to-show-readable-code)
-   * [Transformations from source code to compiled front-end code](#transformations-from-source-code-to-compiled-front-end-code)
-   * [Editing a CSS file](#editing-a-css-file)
-   * [Editing an HTML file](#editing-an-html-file)
-   * [Going to a line number or function](#going-to-a-line-number-or-function)
-   * [Quick source tool, to display source files when using a different tool](#quick-source-tool-to-display-source-files-when-using-a-different-tool)
-* [Using the Debugger pane to debug JavaScript code](#using-the-debugger-pane-to-debug-javascript-code)
-   * [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
-   * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
-   * [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
-   * [Articles about debugging](#articles-about-debugging)
+todo: update
 
 <!-- omit h4s
       * [Icons in the Page tab](#icons-in-the-page-tab)
@@ -172,12 +148,13 @@ To change how resources are grouped:
 
 Use the **Workspace** tab in the **Sources** tool to view and edit local files in DevTools.  The **Workspace** tab is useful when used in conjunction with a local web server as you can then load your local website in Edge, and edit its source files in DevTools.
 
-When you add a folder to the **Workspace** tab, that files and subfolders in that folder are displayed in the tab, and you can open files to view and edit them. 
+When you add a folder to the **Workspace** tab, the files and subfolders in that folder are displayed in the tab, and you can open files to view and edit them. 
 
 The **Workspace** tab does not show the resources that the browser downloaded to display the webpage; the **Workspace** tab only shows the folders and files that are inside the local folders that you added.
 
-<!-- do green dots appear?  maybe un-comment -->
-<!-- A file that's in a Workspace is indicated by a green dot next to the file name, throughout DevTools. -->
+Throughout DevTools, a green "mapped" dot appears on a file for which DevTools was able to find a mapping between the workspace file and the webpage resource.  For example, if the page uses a stylesheet called `styles.css` and the workspace has a file called `styles.css`, DevTools maps the files to each other and displays a green "mapped" dot.
+
+The green "mapped" dot indicates that changes you make to webpage resources will be saved.  For example, when you make a change inside the **Styles** tab of the **Elements** tool, you're editing the webpage stylesheet (not the file).  If the CSS file name that's shown in the **Styles** tab has a green "mapped" dot, that stylesheet has been mapped to a file in your workspace, and your changes won't be lost.
 
 ![The Workspace tab in the Sources tool](./index-images/sources-workspace-tab.png)
 <!-- updating png:
@@ -212,7 +189,7 @@ See also:
 
 Use the **Overrides** tab in the **Sources** tool to override any response from a webserver with local files.  The **Overrides** tab is useful to make temporary changes to individual files, such as a CSS file, on any website.  Use **Overrides** when you want to experiment with changes to a webpage, and you need to keep the changes after you refresh the webpage, but you don't care about mapping your changes to the source code of the webpage.
 
-To start using the **Overrides** tab, create a new folder on your file system, and then select that folder in the **Overrides** tab.  From then on, any changes that you make in the **Styles** tab of the **Elements** tool, or in the **Page** tab of the **Sources** tool, are saved in the new folder.  DevTools uses the local files to override the server responses to<!-- todo: to? --> the matching resources.
+To start using the **Overrides** tab, create a new folder on your file system, and then select that folder in the **Overrides** tab.  From then on, any changes that you make in the **Styles** tab of the **Elements** tool, or in the **Page** tab of the **Sources** tool, are saved in the new folder.  DevTools uses the local files to override the matching server responses.
 
 ![The Overrides tab of the Navigator pane](./index-images/overrides-tab.png)
 
@@ -435,13 +412,26 @@ In this scenario, the **Sources** tool is useful for inspecting and stepping-thr
 
 
 <!-- ------------------------------ -->
-#### Editing a CSS file
+#### Editing CSS
 
-There are two ways to edit CSS in DevTools:
-*  In the **Elements** tool, you work with one CSS property at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Get started viewing and changing CSS](../css/index.md).  Do not edit CSS in the **Elements** tool when using a **Workspace**; see [Editing a CSS file when using a Workspace](#editing-a-css-file-when-using-a-workspace), below.
-*  In the **Sources** tool, you use a text editor to edit CSS files.
+There are two places to edit CSS rules and their properties in DevTools:
 
-The **Sources** tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit and save files in a workspace](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
+* In the **Styles** tab in the **Elements** tool, edit CSS properties through user interface controls.
+
+* In the **Page** tab or **Workspace** tab in the **Sources** tool, use the text editor to edit a CSS file.
+
+
+<!-- ---------- -->
+###### Editing CSS by using the Styles tab in the Elements tool, when using the Workspace tab of the Sources tool
+
+See also:
+* [Limitations of the workspace feature with transformed source code](../workspaces/index.md#limitations-of-the-workspace-feature-with-transformed-source-code)
+
+
+<!-- ---------- -->
+###### The Page tab or Workspace tab in the Sources tool
+
+The **Page** or **Workspace** tab in the **Sources** tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit and save files in a workspace](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
 ```css
 h1 {
@@ -454,24 +444,10 @@ h1 {
 CSS changes take effect immediately; you don't need to manually save the changes.
 
 See also:
+* [Get started viewing and changing CSS](../css/index.md).
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 * [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
-
-
-<!-- ---------- -->
-###### Editing a CSS file when using a Workspace
-
-Do not use the **Elements** tool to edit CSS files when you are using the **Workspace** feature.
-
-If you are using a **Workspace**, edit the CSS in the **Sources** tool (not in the **Elements** tool), because the source files that you edit might be built or compiled by a build script before being served by your local server.
-When you edit in the **Elements** tool, you might be editing the compiled-and-built version of the file, not the source file.
-
-When you use a **Workspace**:
-1. Edit the file in the **Sources** tool.
-1. Save the change.
-1. Build again.  Some build systems do this automatically, when they detect a change.
-1. Reload the page.  Some servers do this automatically when they detect a change.
 
 
 <!-- ------------------------------ -->

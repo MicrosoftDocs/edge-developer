@@ -157,25 +157,6 @@ This is the source code repo and its directory which stores the files for this d
 
 
 <!-- ====================================================================== -->
-## Tools that support cloning a repo and git commit/pull/push operations
-
-Cloning a repo enables updating your local copy when the repo is updated.  Many tools support cloning and syncing with a GitHub repo, such as:
-
-* git commands at a command prompt such as the "git bash" shell.  This is the main way that's documented here.
-
-* GitHub Desktop.  Integrates well with GitHub repos and pull requests, and with VS Code.
-
-* Visual Studio Code.  In the Activity Bar on the left, click **Source Control**.
-
-* Visual Studio > **Git Changes** tab next to the **Solution Explorer** tab in the lower right.
-
-* The "dot key" version of VS Code within the Edge browser.  At Github.com, when viewing a branch or a pull request (PR), press the period (**.**) key.  In the Activity Bar on the left, click:
-  * **Source Control**
-  * **GitHub Pull Requests**
-  * **GitHub Pull Request**
-
-
-<!-- ====================================================================== -->
 ## Clone the Edge Demos repo to your drive
 
 The **Microsoft Edge / Demos** repo is useful for following the various DevTools documentation.  You can clone the repo, start a localhost web server within a folder of the cloned repo, and then edit the demo files directly within DevTools, or within an editor such as VS Code.
@@ -238,6 +219,25 @@ To clone the **MicrosoftEdge / Demos** repo to your local drive:
 See also:
 * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
 * [Clone the WebView2Samples repo](../../webview2/how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
+
+
+<!-- ------------------------------ -->
+#### Tools that support cloning a repo and git commit/pull/push operations
+
+Cloning a repo enables updating your local copy when the repo is updated.  Many tools support cloning and syncing with a GitHub repo, such as:
+
+* git commands at a command prompt such as the "git bash" shell.  This is the main way that's documented here.
+
+* GitHub Desktop.  Integrates well with GitHub repos and pull requests, and with VS Code.
+
+* Visual Studio Code.  In the Activity Bar on the left, click **Source Control**.
+
+* Visual Studio > **Git Changes** tab next to the **Solution Explorer** tab in the lower right.
+
+* The "dot key" version of VS Code within the Edge browser.  At Github.com, when viewing a branch or a pull request (PR), press the period (**.**) key.  In the Activity Bar on the left, click:
+  * **Source Control**
+  * **GitHub Pull Requests**
+  * **GitHub Pull Request**
 
 
 <!-- ====================================================================== -->

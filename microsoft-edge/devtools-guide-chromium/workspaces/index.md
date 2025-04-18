@@ -53,7 +53,7 @@ Here's a typical scenario for using a workspace:
 
   Your website might use a build system which you need to run before you can see the changes.  Web developers often use a build system that watches for saved changes in the source code files.  When you save a change to a source code file, the build system builds those changes and then automatically refreshes the page in the browser.
 
-  If you use such an automated build system, when you make a change to a source file in the **Sources** tool and save it, you automatically immediately see those changes applied to the rendered web page.
+  If you use such an automated build system, when you make a change to a source file in the **Sources** tool and save it, you automatically see those changes applied to the rendered web page.
 
 The tutorial steps below walk you through this environment setup.
 
@@ -65,7 +65,32 @@ The tutorial steps below walk you through this environment setup.
 If you're using a modern framework, it might transform your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.  The **Workspace** tab in the **Sources** tool is usually able to map the optimized code back to the original source code, by using [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS.  However, there's a lot of variation in how each framework uses source maps.
 
 DevTools doesn't support every framework variation.  If you run into issues while using workspaces with your framework of choice, or you identify framework-specific steps that are needed, please reach out to use by opening an issue on the [MicrosoftEdge/DevTools](https://github.com/MicrosoftEdge/DevTools/issues) repository.
-                                                  
+
+
+<!-- ---------- -->
+###### Editing CSS by using the Styles tab in the Elements tool, when using the Workspace tab of the Sources tool
+<!-- todo: condense and integrate -->
+
+If you use a workspace, in some cases you can edit CSS in the **Styles** tab in the **Elements** tool and have the changes saved to the mapped file on disk:
+
+* Edits that you make in the **Styles** tab in the **Elements** tool _are_ saved to the CSS file on disk, if DevTools has mapped a style sheet on the webpage and the file in the workspace, such as by a source map, or by matching content.
+
+   If you use an automatic build system framework, changes are saved to your source file if DEvTools was able to map the style sheet to the workspace file, by using a source map.
+
+   Depending on the automated build system or framework that you use, DevTools may be able to save changes to disk, if there's no build step, or there's a build step and a source map.  The **Styles** tab is mapped to the CSS file on disk, and so edits in the **Styles** tab are saved to disk.
+
+* Edits that you make in the **Styles** tab in the **Elements** tool are _not_ saved to the CSS file on disk, if the stylesheet isn't mapped to a workspace file.  Editing CSS in the **Styles** tab of the **Elements** tool will lose changes; the changes aren't saved to disk.
+
+
+If you are using a **Workspace**, edit the CSS in the **Sources** tool (not in the **Elements** tool), because the source files that you edit might be built or compiled by a build script before being served by your local server.
+When you edit in the **Elements** tool, you might be editing the compiled-and-built version of the file, not the source file.
+
+When you use a **Workspace**:
+1. Edit the file in the **Sources** tool.
+1. Save the change.
+1. Build again.  Some build systems do this automatically, when they detect a change.
+1. Reload the page.  Some servers do this automatically when they detect a change.
+
 
 <!-- ------------------------------ -->
 #### Related feature: Local Overrides
@@ -82,7 +107,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Step 1: Setup
+## Step 1: Set up the code, server, and workspace
 <!-- https://developer.chrome.com/docs/devtools/workspaces/#setup -->
 
 * Install an up-to-date version of Node.js and npm from [Node.js](https://nodejs.org).
