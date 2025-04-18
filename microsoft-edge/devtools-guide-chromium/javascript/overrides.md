@@ -15,6 +15,13 @@ Sometimes you need to try out some possible fixes for a webpage, but you don't h
 
 You can now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser doesn't load the resource from the server; instead, the browser replaces the server resource with your local copy of the resource.
 
+<!-- todo: a note from review, maybe incorp:
+The overrides that you make are saved across reloads.
+You're not supposed to use this feature for mapping to your source files.
+When you set up a folder for local overrides the first time, that folder should be empty.
+DevTools will create all of the folders and sub-folders that it needs to store overrides within it.
+-->
+
 
 <!-- ====================================================================== -->
 ## Setting up your local folder to store Overrides

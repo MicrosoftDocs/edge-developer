@@ -19,6 +19,16 @@ Use the **Quick source** tool to display or edit source files at the same time a
 
 The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  Use the **Quick source** tool, which by default opens in the **Quick View** panel at the bottom of DevTools.
 
+<!-- incoming overflow: removed from Workspace tut so that can focus only on teaching Workspace, not also Quick source.
+You can edit and save the JavaScript (or HTML or CSS) file in the **Sources** tool's editor, or in the **Quick source** tool in the **Quick View** panel at the bottom of DevTools.
+
+The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console**, while editing files.  The **Quick source** tool gives you just the editor from the **Sources** tool (without the **Navigator** or **Debugger** pane), while any tool is open in the upper part of DevTools.
+
+We'll walk through a couple ways to open the **Quick source** tool and open a file in the **Quick source** tool:
+* The regular, GUI way.
+* The **Command Menu** shortcut way.
+-->
+
 
 <!-- ------------------------------ -->
 #### Use the Quick source tool in conjunction with the Sources tool
