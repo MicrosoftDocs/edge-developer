@@ -499,7 +499,7 @@ Next, learn how to use DevTools to change CSS and debug JavaScript:
 <!-- ====================================================================== -->
 ## See also
 
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
 * [Track changes to files using the Changes tool](../changes/changes-tool.md)
 * [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
 

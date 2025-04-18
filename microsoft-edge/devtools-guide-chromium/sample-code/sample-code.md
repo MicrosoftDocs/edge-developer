@@ -265,7 +265,6 @@ See also:
 
 <!-- ====================================================================== -->
 ## Open a demo folder from the Workspace tab in the Sources tool
-<!-- todo: flatten article's TOC, then demote a few headings -->
 
 To use this section, first do [Clone the Edge Demos repo to your drive](#clone-the-edge-demos-repo-to-your-drive), above.
 
@@ -335,7 +334,7 @@ Result of going to `localhost:8080`:
 <!-- ====================================================================== -->
 ## Opening a local HTML file from File Explorer and editing it in DevTools
 
-To edit files in the **Sources** tool, before doing the steps in this section, you might need to click the **Allow** button to grant read/write access by following the steps in [Opening a folder from the Workspace tab in the Sources tool](#opening-a-folder-from-the-workspace-tab-in-the-sources-tool) above.
+To edit files in the **Sources** tool, before doing the steps in this section, you might need to click the **Allow** button to grant read/write access by following the steps in [Open a demo folder from the Workspace tab in the Sources tool](#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool), above.
 
 1. In File Explorer on Windows, or Finder on macOS, select an HTML file from the local copy of the **Demos** repo, such as `C:\Users\localAccount\Documents\GitHub\Demos\demo-to-do\index.html`.
 
@@ -380,7 +379,7 @@ To open an `.html` file and edit it:
    <h1>📋 My modified tasks</h1>
    ```
 
-   If editing isn't enabled, click the **Allow** button to grant read/write access to the folder by doing the steps in [Opening a folder from the Workspace tab in the Sources tool](#opening-a-folder-from-the-workspace-tab-in-the-sources-tool) above.
+   If editing isn't enabled, click the **Allow** button to grant read/write access to the folder by doing the steps in [Open a demo folder from the Workspace tab in the Sources tool](#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) above.
 
    The change is displayed in the **Changes** tool in the **Quick View** panel, and an asterisk is added to the file name in the **index.html** tab in the **Sources** tool:
 
@@ -449,7 +448,7 @@ When you run a localhost server and start it within a cloned repo folder, such a
 
 Opening and editing files:
 * [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
-* [Select a local Workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
+* [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 * [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
 * [Microsoft Edge IDE integration](../../visual-studio-code/ide-integration.md) - Webpage app development using Visual Studio Code or Visual Studio, including Microsoft Edge DevTools.
 

@@ -28,10 +28,13 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 
 **Detailed contents:**
 
+[Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
+
+
 * [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
 * [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
    * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-   * [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
+   * [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
    * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
    * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
    * [Using the Snippets tab to run JavaScript code snippets on any webpage](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
@@ -108,7 +111,7 @@ The Navigator pane contains the following tabs:
 | Tab | Description | Docs |
 |---|---|
 | **Page** | View the resources that the browser downloaded from the server or file system, inspect their content, and debug code. | [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage) |
-| **Workspace** | View and edit local files in DevTools, to use DevTools as an Integrated Development Environment (IDE) within the browser. | [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) |
+| **Workspace** | View and edit local files in DevTools, to use DevTools as an Integrated Development Environment (IDE) within the browser. | [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) |
 | **Overrides** | Experiment with changes to a webpage, and keep the changes after you refresh the webpage, without mapping your changes to the source code of the webpage. | [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files) |
 | **Content scripts** | View content scripts that were loaded by a Microsoft Edge extension. | [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions) |
 | **Snippets** | Create and save JavaScript code snippets, so that you can easily run a snippet of JavaScript on any webpage. | [Using the Snippets tab to run JavaScript code snippets on any page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage) |
@@ -201,7 +204,7 @@ Workspaces work well when the JavaScript code that's returned by the server is t
 
 See also:
 * [Edit and save files in a workspace](../workspaces/index.md)
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
 
 
 <!-- ------------------------------ -->
@@ -318,7 +321,7 @@ The **Editor** pane has the following level of support for various file types:
 | HTML | View and edit. |
 | Images | View. |
 
-By default, edits are discarded when you refresh the webpage.  For information about how to save the changes to your file system, see [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk), above.
+By default, edits are discarded when you refresh the webpage.  For information about how to save the changes to your file system, see [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk), above.
 
 The following subsections cover the Editor pane:
 * [Editing a JavaScript file](#editing-a-javascript-file)
@@ -331,7 +334,7 @@ The following subsections cover the Editor pane:
 * [Quick source tool, to display source files when using a different tool](#quick-source-tool-to-display-source-files-when-using-a-different-tool)
 
 See also:
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
 
 
 <!-- ------------------------------ -->
@@ -344,7 +347,7 @@ To edit a JavaScript file in DevTools, use the **Editor** pane, within the **Sou
 To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** (**...**) and then select **Open File**.
 
 See also:
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
 
 
 ###### Save and Undo
@@ -453,7 +456,7 @@ CSS changes take effect immediately; you don't need to manually save the changes
 See also:
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
 
 
 <!-- ---------- -->
@@ -481,7 +484,7 @@ There are two ways to edit HTML in DevTools:
 ![The HTML editor of the Sources tool](./index-images/sources-html-editor.png)
 
 Unlike a JavaScript or CSS file, an HTML file that is returned by the web server cannot be directly edited in the Sources tool.  To edit an HTML file using the Editor of the Sources tool, the HTML file must be in a Workspace or on the **Overrides** tab.  See these subsections of the current article:
-* [Select a local Workspace, to use DevTools to edit files and save changes to disk](#select-a-local-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
+* [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
 * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 
 To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.  An edited file is marked by an asterisk.
@@ -493,7 +496,7 @@ To undo an edit, press **Ctrl+Z** on Windows/Linux or **Command+Z** on macOS.
 To view other commands while editing an HTML file, in the Editor pane, right-click the HTML file.
 
 See also:
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
 
 
 <!-- ------------------------------ -->
@@ -664,7 +667,7 @@ The following articles cover the **Debugger** pane and breakpoints:
 <!-- ====================================================================== -->
 ## See also
 
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_.
 * [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
 * [Track changes to files using the Changes tool](../changes/changes-tool.md)
