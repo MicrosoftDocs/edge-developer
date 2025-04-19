@@ -37,13 +37,14 @@ The DevTools extension for Visual Studio Code enables you to:
 
 <!-- ====================================================================== -->
 ## Approaches compared
+<!-- todo: x-link -->
 
 The DevTools extension for Visual Studio Code is one of several different ways to use DevTools to change your local files.
 
 | Approach | Pros and Cons | Article |
 |---|---|---|
 | Browser > DevTools > **Elements** tool | You have to manually copy changes from DevTools into your source files. | [Inspect, edit, and debug HTML and CSS with the Elements tool](../devtools-guide-chromium/elements-tool/elements-tool.md)| 
-| Browser > DevTools > **Sources** tool > **Filesystem** tab to define a **Workspace** | Always saves the changes, which could discourage experimenting | [Using the Filesystem tab to define a local Workspace](../devtools-guide-chromium/sources/index.md) in _Sources tool overview_ |
+| Browser > DevTools > **Sources** tool > **Workspace** tab to define a **Workspace** | Always saves the changes, which could discourage experimenting | [Select a local Workspace, to use DevTools to edit files and save changes to disk](../devtools-guide-chromium/sources/index.md) in _Sources tool overview_ |
 | Browser > DevTools > **Settings** > **Experiments** > **Open source files in Visual Studio Code** | Always saves the changes, which could discourage experimenting | Experiments > [Opening source files in Visual Studio Code](../devtools-guide-chromium/sources/opening-sources-in-vscode.md). |
 | Microsoft Edge DevTools extension for Visual Studio Code | Automatically opens and edits the CSS source file but doesn't automatically save the file, so you get to choose whether to save the edits. | The present article. |
 

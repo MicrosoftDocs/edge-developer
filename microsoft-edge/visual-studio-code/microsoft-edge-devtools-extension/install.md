@@ -77,12 +77,12 @@ The DevTools extension shows a popup suggestion to install Node.js and npm.  The
    ```
    $ npm version
    {
-      npm: '9.6.7',
-      node: '18.17.1',
+      npm: '10.9.2',
+      node: '22.14.0',
       ...
    }
    ```
-   <!-- Sep. 12, 2023 -->
+   <!-- Apr. 9, 2025 -->
 
 See also:
 * [Inline and live issue analysis](./inline-live-issue-analysis.md)

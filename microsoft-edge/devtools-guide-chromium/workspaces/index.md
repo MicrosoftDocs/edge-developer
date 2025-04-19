@@ -1,12 +1,12 @@
 ---
-title: Edit files with Workspaces (Filesystem tab)
-description: How to save webpage file changes made in DevTools to disk.
+title: Edit and save files in a workspace
+description: How to use DevTools as an IDE and save webpage file changes made in DevTools to your source files on disk.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 09/13/2023
+ms.date: 04/17/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,86 +21,189 @@ ms.date: 09/13/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Edit files with Workspaces (Filesystem tab)
+# Edit and save files in a workspace
+<!-- https://developer.chrome.com/docs/devtools/workspaces -->
 
-Use the **Filesystem** tab in the **Sources** tool to define a workspace, to save DevTools changes in your source code files rather than only in a transient copy of the files that are returned by the web server.
+To save edits to webpage source files, you can use DevTools like an IDE, by adding the source code folder of the webpage in the **Workspace** tab of the **Sources** tool.  You can then edit and save HTML, CSS, and JS files in the **Sources** tool's editor (or in the **Quick source** tool in the **Quick View** panel at the bottom of DevTools).
 
-This tutorial provides hands-on practice in setting up and using a workspace in DevTools. After you add files to a workspace, changes that you make in your source code by using DevTools are saved on your local computer. These changes are preserved across page refreshes.
+**Detailed contents:**
 
-To refresh your knowledge of the technologies used, see the following articles:
+* [Edit and save files in a workspace](#edit-and-save-files-in-a-workspace)
+  * [Overview of the DevTools workspace feature](#overview-of-the-devtools-workspace-feature)
+      * [Limitations of the workspace feature with transformed source code](#limitations-of-the-workspace-feature-with-transformed-source-code)
+          * [Editing CSS by using the Styles tab in the Elements tool, when using the Workspace tab of the Sources tool](#editing-css-by-using-the-styles-tab-in-the-elements-tool-when-using-the-workspace-tab-of-the-sources-tool)
+      * [Related feature: Local Overrides](#related-feature-local-overrides)
+  * [Step 1: Set up the code, server, and workspace](#step-1-set-up-the-code-server-and-workspace)
+      * [Clone the Edge Demos repo to your local drive](#clone-the-edge-demos-repo-to-your-local-drive)
+      * [Start the localhost server](#start-the-localhost-server)
+      * [Add a Workspace folder in the Sources tool](#add-a-workspace-folder-in-the-sources-tool)
+  * [Step 2: Save a CSS change to disk](#step-2-save-a-css-change-to-disk)
+  * [Step 3: Save an HTML change to disk](#step-3-save-an-html-change-to-disk)
+      * [Edited HTML in the DOM tree in the Elements tool isn't preserved after refresh](#edited-html-in-the-dom-tree-in-the-elements-tool-isnt-preserved-after-refresh)
+          * [Why it doesn't work](#why-it-doesnt-work)
+      * [Save HTML changes by opening a file via the Workspace tab of the Sources tool](#save-html-changes-by-opening-a-file-via-the-workspace-tab-of-the-sources-tool)
+  * [Step 4: Save a JavaScript change to disk](#step-4-save-a-javascript-change-to-disk)
+  * [Step 5: Add a .js file using DevTools](#step-5-add-a-.js-file-using-devtools)
+  * [Troubleshooting](#troubleshooting)
+  * [Next steps](#next-steps)
+  * [See also](#see-also)
 
-* Use HTML, CSS, and JavaScript to build a web page. See [Getting started with the web](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web)
+You can create, copy, rename, and delete source files from within the **Workspace** tab.
 
-* Use DevTools to make basic changes to CSS. See [Get started viewing and changing CSS](../css/index.md).
+Use the **Workspace** tab in the **Sources** tool to display and edit the contents of a folder on your computer from within the **Sources** tool.  The changes that you make to the files in a workspace are saved to your computer.
 
-* Run a local HTTP web server. See: 
+The typical way to set up a workspace is to set it up to display the source files of your website's frontend code.  This way, you use DevTools both to inspect your website, and to make changes to its source files.  This way, the changes that you make are saved on your computer, rather than lost when you refresh the page.
 
-  * Using Node.js (used for this tutorial): [Set up a localhost server](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
-  
-  * Using Python: [Running a simple local HTTP server](https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server) in _How do you set up a local testing server?_
+This tutorial provides hands-on practice in setting up and using a workspace in DevTools.  After you set up a workspace, the changes that you make to the files in the workspace, by using DevTools, are saved on your local computer.
 
 
 <!-- ====================================================================== -->
-## Introduction
+## Overview of the DevTools workspace feature
+<!-- Overview  https://developer.chrome.com/docs/devtools/workspaces#overview -->
 
-A DevTools _workspace_ lets you save changes that you make to a local copy of the source code to the same file on your computer, so that changes are retained across refreshes of the page. Here's a typical scenario for using a workspace:
+A DevTools _workspace_ lets you view your website's source code that's on your computer, and make changes to it, from the **Sources** tool, so that changes are retained across refreshes of the page.
 
-* You have the source code for the demo website on your desktop.
+Here's a typical scenario for using a workspace:
 
-* You are running a local web server from the source code directory, so that the site is accessible at `localhost:8080`. Note: If you use the Python server option, the default port number is `8000`.
+* You have the source code for your website on your computer.
 
-* You opened `localhost:8080` in Microsoft Edge, and you are using DevTools to change the website source code which includes the CSS, HTML, and JavaScript files. 
+* You are running a local web server from the source code directory, so that the site is accessible at a local development URL such as `http://localhost:8080`.
+
+* You open `http://localhost:8080` in Microsoft Edge, and use the **Sources** tool in DevTools to change the source code of your website, including the CSS, HTML, and JavaScript files.
+
+* You reload the page to see the changes.
+
+  Your website might use a build system which you need to run before you can see the changes.  Web developers often use a build system that watches for saved changes in the source code files.  When you save a change to a source code file, the build system builds those changes and then automatically refreshes the page in the browser.
+
+  If you use such an automated build system, when you make a change to a source file in the **Sources** tool and save it, you automatically see those changes applied to the rendered web page.
 
 The tutorial steps below walk you through this environment setup.
 
 
 <!-- ------------------------------ -->
-#### Limitations
+#### Limitations of the workspace feature with transformed source code
+<!-- Limitations  https://developer.chrome.com/docs/devtools/workspaces#limitations -->
 
-If you're using a modern framework, it probably transforms your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.  A workspace is usually able to map the optimized code back to the original source code, by using [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS.  However, there's a lot of variation in how each framework uses source maps.
+If you're using a modern framework, it might transform your source code from a format that's easy to maintain into a format that's optimized to run as quickly as possible.  The **Workspace** tab in the **Sources** tool is usually able to map the optimized code back to the original source code, by using [source maps](https://blog.teamtreehouse.com/introduction-source-maps) for JavaScript and CSS.  However, there's a lot of variation in how each framework uses source maps.
 
-DevTools doesn't support every framework variation; for example, the Workspaces feature (**Filesystem** tab) doesn't work with the Create React App framework.
+DevTools doesn't support every framework variation.  If you run into issues while using workspaces with your framework of choice, or you identify framework-specific steps that are needed, please reach out to use by opening an issue on the [MicrosoftEdge/DevTools](https://github.com/MicrosoftEdge/DevTools/issues) repository.
 
-If you run into issues while using workspaces with your framework of choice, or you identify framework-specific steps that are needed, [start a thread in the Chrome DevTools mailing list](https://groups.google.com/forum/#!forum/google-chrome-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=google-chrome-devtools) to exchange information with the rest of the DevTools community.
-                                                                     
+
+<!-- ---------- -->
+###### Editing CSS by using the Styles tab in the Elements tool, when using the Workspace tab of the Sources tool
+<!-- todo: condense and integrate -->
+
+If you use a workspace, in some cases you can edit CSS in the **Styles** tab in the **Elements** tool and have the changes saved to the mapped file on disk:
+
+* Edits that you make in the **Styles** tab in the **Elements** tool _are_ saved to the CSS file on disk, if DevTools has mapped a style sheet on the webpage and the file in the workspace, such as by a source map, or by matching content.
+
+   If you use an automatic build system framework, changes are saved to your source file if DEvTools was able to map the style sheet to the workspace file, by using a source map.
+
+   Depending on the automated build system or framework that you use, DevTools may be able to save changes to disk, if there's no build step, or there's a build step and a source map.  The **Styles** tab is mapped to the CSS file on disk, and so edits in the **Styles** tab are saved to disk.
+
+* Edits that you make in the **Styles** tab in the **Elements** tool are _not_ saved to the CSS file on disk, if the stylesheet isn't mapped to a workspace file.  Editing CSS in the **Styles** tab of the **Elements** tool will lose changes; the changes aren't saved to disk.
+
+
+If you are using a **Workspace**, edit the CSS in the **Sources** tool (not in the **Elements** tool), because the source files that you edit might be built or compiled by a build script before being served by your local server.
+When you edit in the **Elements** tool, you might be editing the compiled-and-built version of the file, not the source file.
+
+When you use a **Workspace**:
+1. Edit the file in the **Sources** tool.
+1. Save the change.
+1. Build again.  Some build systems do this automatically, when they detect a change.
+1. Reload the page.  Some servers do this automatically when they detect a change.
+
 
 <!-- ------------------------------ -->
-#### Related feature: Overrides
+#### Related feature: Local Overrides
+<!-- https://developer.chrome.com/docs/devtools/workspaces#overrides -->
 
-**Overrides** is a DevTools feature that's similar to a workspace. You can use an override when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage. However, your changes aren't saved when you refresh the webpage. 
+**Local overrides** is a DevTools feature that's similar to a workspace.  You can use an override when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage.
 
-The **Overrides** feature lets you store a local copy of the webpage files on the server. When you refresh the page, Microsoft Edge loads the local copy of files instead of the files on the server.  To learn more about overrides, see [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
+**Local Overrides** saves the changes you make to a webpage in a folder of your choice, and organizes them in a folder structure that matches the URL of overridden resources.
 
-<!-- todo: add section when content is ready (clarify this note) -->
+The **Overrides** feature stores a copy of the webpage resources that you edit in DevTools.  When you refresh the page, Microsoft Edge loads the local modified copy of files instead of the files on the server.
+
+See also:
+* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)
 
 
 <!-- ====================================================================== -->
-## Create the directory of source files
+## Step 1: Set up the code, server, and workspace
+<!-- https://developer.chrome.com/docs/devtools/workspaces/#setup -->
 
-We'll set up the demo files, and then set up DevTools.
+1. If not done already, [Download git](https://git-scm.com/downloads) and install it.
 
-1. In another window or tab, go to the [Workspaces demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
+* Install an up-to-date version of Node.js and npm from [Node.js](https://nodejs.org).
 
-1. Create an `app` directory, such as `~/Desktop/app` or `C:\Users\myusername\app\`.  Copy `index.html`, `../shared/img/logo.png`, `README.md`, `script.js`, and `styles.css` from the demo source code to your `app` directory.  For the rest of the tutorial, this directory is referred to as `~/Desktop/app` or `C:\Users\myusername\app\`, though you can use a different path.
-   <!-- 
-   on Windows with OneDrive, the result of creating an app dir on your desktop is 
-   "C:\Users\myusername\OneDrive - Microsoft\Desktop\app"
-   That is not accessible via `cd ~/Desktop/app`; it is accessible via the following (w/ backslashes):
-   cd "C:\Users\myusername\OneDrive - Microsoft\Desktop\app"
-   -->
+See also:
+* [Install Node.js and Node Package Manager (npm)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
 
-1. If you haven't already, install Node.js and npm.  For more information, see [Install Node.js and Node Package Manager (npm)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
+Continue with the next section.
+
+
+<!-- ------------------------------ -->
+#### Clone the Edge Demos repo to your local drive
+<!-- Set up the demo  https://developer.chrome.com/docs/devtools/workspaces#demo -->
+
+To start this tutorial, in this section, we set up the local directory containing web page source files, and start the localhost test server.
+
+To clone the **MicrosoftEdge / Demos** repo to your local drive, including the `/workspaces/` demo folder:
+
+1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+
+1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button.
+
+   The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
+
+   Or, if you have GitHub Desktop installed, click **Open with GitHub Desktop** to clone the repo, and skip the command prompt step below.
+
+   Or, you can use Visual Studio Code's **Source Control** pane to clone the repo, and skip the command prompt step below.
+
+1. Open a command prompt, such as git bash.
+
+1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo.  If you use a command prompt:
+
+   ```Shell
+   # example location where the repo directory will be added:
+   cd c:/users/localAccount/github/
+   git clone https://github.com/MicrosoftEdge/Demos.git
+   ```
+
+1. Create a working branch named "test" and switch to it:
+
+   ```
+   git checkout -b test
+   ```
+
+   That's equivalent to:
+
+   ```
+   git branch test
+   git switch test
+   ```
+
+For details about cloning a repo, see:
+* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
+
+Continue with the next section.
+
+
+<!-- ------------------------------ -->
+#### Start the localhost server
+<!-- Edge heading only -->
 
 1. Go to a command prompt, such as the git bash shell, or the Terminal pane in Microsoft Visual Studio Code.
 
-1. Go to the `app` directory that you created, such as `~/Desktop/app` or `C:/Users/myusername/app`.  If you use the git bash shell, it's a UNIX shell, so even on Windows, you need to wrap a directory path that has backslashes in quotes, or else use forward slashes rather than backslashes.
+1. Go to the cloned `/workspace/` directory, such as `C:\Users\localAccount\GitHub\Demos\workspaces\`.
 
-1. Run one of the following commands, to start up the web server:<br>
-Node.js option:
+   If you use the git bash shell, it's a UNIX shell, so even on Windows, you need to wrap a directory path that has backslashes in quotes, or else use forward slashes rather than backslashes.
+
+1. Run one of the following commands, to start the web server:
 
    ```bash
    # Node.js option
-   cd ~/Desktop/app  # or:  cd C:/Users/myusername/app
+   cd ~/GitHub/demos/workspaces
    npx http-server  # Node.js
    ```
 
@@ -108,69 +211,105 @@ Node.js option:
 
    ``` bash
    # Python 2 option
-   cd ~/Desktop/app  # or:  cd C:/Users/myusername/app
+   cd ~/GitHub/demos/workspaces
    python -m SimpleHTTPServer  # Python 2
    ```
   
    ``` bash
    # Python 3 option
-   cd ~/Desktop/app  # or:  cd C:/Users/myusername/app
+   cd ~/GitHub/demos/workspaces
    python -m http.server  # Python 3
    ```
 
 1. Open a tab in Microsoft Edge, and go to the locally hosted version of the site.  You should be able to access it by using `localhost:8080`:
 
-   ![The DevTools Workspaces Demo](./index-images/workspaces-workspaces-demo.png)
+   ![The DevTools Workspaces Demo](./index-images/workspaces-demo.png)
 
    Another common equivalent URL is `http://0.0.0.0:8080`.  The default port number for the Python server option is `8000`.  The exact [port number](https://wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
 
+   The **DevTools Workspaces Demo** webpage opens.
 
-<!-- ====================================================================== -->
-## Define a workspace in DevTools
+   (The link in the latest demo might say either "Edit file with workspaces" or "Edit and save files in a workspace".)
 
-1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS) to open the DevTools **Console**:
+See also:
+* [Running a simple local HTTP server](https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server) in _How do you set up a local testing server?_ at MDN - shows Python.
+<!--
+* [Set up a localhost server](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.  How to run a local HTTP web server by using Node.js. -->
 
-   ![The DevTools Console](./index-images/workspaces-workspaces-demo-console.png)
+Continue with the next section.
+
+
+<!-- ------------------------------ -->
+#### Add a Workspace folder in the Sources tool
+<!-- Set up DevTools  https://developer.chrome.com/docs/devtools/workspaces#devtools -->
+
+<!-- the always-available way -->
+Next, define a Workspace in DevTools:
+
+1. Right-click the locally hosted **DevTools Workspaces Demo** webpage and then select **Inspect**.  Or, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
+
+   DevTools opens.
 
 1. Click the **Sources** (![Sources tool icon](./index-images/sources-tool-icon.png)) tab.
 
-1. In the **Navigator** pane (on the left), click the **Filesystem** tab (which is grouped with the **Page** tab):
+1. In the **Navigator** pane (on the left), click the **Workspace** tab (which is grouped with the **Page** tab):
 
-   ![The Filesystem tab](./index-images/workspaces-workspaces-demo-sources-filesystem.png)
+   ![The Workspace tab](./index-images/sources-workspace.png)
 
-1. Click **Add folder to workspace**.  File Explorer or Finder opens.
+1. Click **Add folder** button.
 
-1. Go to the `/app/` directory that you created.  For example, in the **Folder:** text box, enter the path, such as `~/Desktop/app` or `C:\Users\myusername\app\`.  Then click the **Select Folder** button.
+   The **Select Folder** dialog opens.
 
-   DevTools prompts you whether to grant DevTools full access to your `app` directory.
+1. Go to the cloned `/Demos/workspace/` directory that you created.  For example, in the **Folder:** text box, enter the path, such as `C:\Users\localAccount\GitHub\Demos\workspaces\`.
+
+1. Click the **Select Folder** button.
+
+   DevTools prompts you whether to grant DevTools full access to your `/workspaces/` directory.
 
 1. Click the **Allow** button, to give DevTools permission to read and write to the directory.
 
-   In the **Filesystem** tab are page icons that have a green dot, for `index.html`, `script.js`, and `styles.css`. <!--(The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.)-->  The green dot indicates that DevTools has established a mapping between a network resource of the page that's received from the web server, and the local source file in your `app` directory:
+   In the **Workspace** tab are page icons that have a green "mapped" dot, for `index.html`, `script.js`, and `styles.css`. <!--(The two-way arrow colors are mapped to `.html`, `.js`, and `.css` file types.)-->  The green "mapped" dot indicates that DevTools has established a mapping between a network resource of the page that's received from the web server, and the local source file in your `/Demos/workspace/` directory:
 
-   ![The Filesystem tab has a green dot indicating a mapping between a resource received from the server and a local source file](./index-images/workspaces-workspaces-demo-sources-filesystem-folder.png)
+   ![The Workspace tab has a green "mapped" dot indicating a mapping between a resource received from the server and a local source file](./index-images/sources-workspace-folder.png)
+
+Continue with the next section.
 
 
 <!-- ====================================================================== -->
-## Edit CSS and save changes to the source file
+## Step 2: Save a CSS change to disk
+<!-- https://developer.chrome.com/docs/devtools/workspaces/#css -->
+
+Next, you edit CSS and save changes to the source file.
+
+Using the **Elements** might not always work for everyone.  Suppose your project uses a framework or pre-processor to write CSS, where you don't directly write CSS, but you write the equivalent of CSS by using a different language and a different file structure.  Such a project might use a build system which then translates, compiles, and combines the CSS-like code into something that the browser can understand.
+
+Such a project might generate source maps, so that DevTools allows you to see and edit your source files in the **Elements** tool.  But in some cases, that might not work, or the project might not use source maps.
+
+When that happens, any changes you make in the **Elements** are not saved to the workspace files.  In that case, edit your source files in the **Sources** tool instead.  In the above scenario, the files that use a different language are visible in the **Workspace** tab of the **Sources** tool, and you can edit the source files there.
+
+Then, behind the scenes, any saved changes need to be re-built and compiled (which may happen automatically), and then the changes are visible in the rendered web page after a page refresh (which may happen automatically).
 
 To make a change in the CSS file and save it to disk:
 
-1. In the **Sources** tool, in the **Filesystem** tab (grouped with the **Page** tab), select `styles.css` to open it in the editor pane.  The `color` property of the `h1` element is set to `fuchsia`:
+1. In the **Sources** tool, in the **Workspace** tab (grouped with the **Page** tab), select `styles.css` to open it in the editor pane.  The `color` property of the `h1` element is set to `fuchsia`:
 
-   ![View styles.css in a text editor](./index-images/workspaces-workspaces-demo-sources-filesystem-css.png)
+   ![View styles.css in a text editor](./index-images/sources-workspace-css.png)
 
 1. Select the **Elements** (![Elements tool icon](./index-images/elements-tool-icon.png)) tool, and then in the DOM tree, expand the `<body>` element, and then select the `<h1>` element.
 
-   The **Styles** pane displays the CSS rules that are applied to the `<h1>` element.  The **mapped file** (![Mapped file icon](./index-images/mapped-file-icon.png)) icon next to `styles.css:1` is a page with a green dot.  The green dot means that any changes that you make to this CSS rule are mapped to `styles.css` in your `app` directory:
+   The **Styles** pane displays the CSS rules that are applied to the `<h1>` element.  The **mapped file** (![Mapped file icon](./index-images/mapped-file-icon.png)) icon next to `styles.css:1` is a page with a green "mapped" dot.  The green "mapped" dot means that any changes that you make to this CSS rule are mapped to `styles.css` in your `/Demos/workspace/` directory:
 
-   ![The 'mapped file' icon, a page with two-way arrows](./index-images/workspaces-workspaces-demo-elements-styles-css.png)
+   ![The 'mapped file' icon, a page with two-way arrows](./index-images/elements-styles-css.png)
 
 1. Change the value of the `color` property of the `<h1>` element to orange.  To do this, select the `<h1>` element in the **DOM Tree**.  In the CSS rule for `h1`, click `fuchsia`, start typing **orange**, and then select **orange** from the color list:
 
-   ![Changing the color property in styles.css](./index-images/workspaces-workspaces-demo-elements-styles-css-pick-color.png)
+   ![Changing the color property in styles.css](./index-images/elements-styles-css-pick-color.png)
 
-1. Open the copy of `styles.css` that's in your `app` directory in a text editor, such as Visual Studio Code.  The `color` property is now set to the new color, which is orange in this example.  The change was not only made in the copy of the file returned from the web server; the change was also made in your mapped file in your `app` workspace directory.
+1. Select the **Sources** tool, right-click `styles.css`, and then select **Open in containing folder**.
+
+   File Explorer or Finder opens.
+
+1. Open the copy of `styles.css` that's in your `/Demos/workspace/` directory in a text editor, such as Visual Studio Code.  The `color` property is now set to the new color, which is orange in this example.  The change was not only made in the copy of the file returned from the web server; the change was also made in your mapped file in your `/Demos/workspace/` workspace directory.
 
 1. Refresh the page.
 
@@ -178,114 +317,242 @@ The color of the `<h1>` element is still set to the new color.  The change remai
 
 **Tip:** You can also change the color by clicking the fucshia-colored swatch to open the color picker to pick a new color. The HEX value for the color you pick is the color name.
 
+Continue with the next section.
+
 
 <!-- ====================================================================== -->
-## Edit HTML and save changes to the source file
+## Step 3: Save an HTML change to disk
+<!-- https://developer.chrome.com/docs/devtools/workspaces/#html -->
 
-In the **Elements** tool, it's possible to change HTML tagging in a copy of the file that's returned by the server.  However, to save your edits to a local source file, you need to use the **Sources** tool instead of the **Elements** tool.
+Next, edit HTML and save changes to the source file.
+
+In the **Elements** tool, it's possible to change the DOM representation of the HTML document, which the browser engine constructed when it loaded the page.  However, changes to the DOM can't be mapped back to HTML source files.  To make changes to an HTML source file, you need to use the **Sources** tool instead of the **Elements** tool.
+
+Continue with the next section.
 
 
 <!-- ------------------------------ -->
-#### Changing the DOM tree in the Elements tool doesn't save changes
+#### Edited HTML in the DOM tree in the Elements tool isn't preserved after refresh
+<!-- #### Try changing HTML from the Elements panel -->
+<!-- https://developer.chrome.com/docs/devtools/workspaces#elements -->
 
-You can make changes to the HTML content using the DOM tree in the **Elements** tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
+To edit an HTML file by using DevTools, use the **Workspace** tab of the **Sources** tool.  There are a couple other tools that display HTML, or allow a temporary edit, but these tools cannot save edits across refreshes of the page:
+
+* The **Page** tab of the **Sources** tool doesn't allow editing an HTML file.
+* You can make changes to the HTML content using the DOM tree in the **Elements** tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
 
 The following steps demonstrate that edits in the DOM tree aren't preserved across page refreshes:
 
-1. Continuing from above, select the **Elements** tool.
+1. Continuing from above, in DevTools, select the **Elements** (`</>`) tool.
 
-1. In the DOM tree, in the `<h1>` element, select the text string `DevTools Workspaces Demo`, delete it, type the text string `I Love Cake`, and then press **Enter**.  The rendered webpage shows the new heading text:
+1. In the DOM tree, in the `<h1>` element, select the text string `DevTools Workspaces Demo`, delete it, type the text string `I Love Cake`, and then press **Enter**.  The rendered webpage shows the new heading text, **I Love Cake**:
 
-   ![Attempting to change HTML from the DOM tree in the Elements tool](./index-images/workspaces-workspaces-demo-sources-page-h1.png)
+   ![Attempting to change HTML from the DOM tree in the Elements tool](./index-images/elements-tool-h1.png)
 
-1. Open the `index.html` file that's in your `app` directory in a text editor, such as Visual Studio Code.  The change that you just made doesn't appear; the heading still reads "DevTools Workspaces Demo".
+1. Select the **Sources** tool, right-click `index.html`, and then select **Open in containing folder**.
 
-1. In the browser, refresh the demo page.  The page reverts to the original heading, "DevTools Workspaces Demo", because the DOM tree with your edit was discarded, and the DOM was re-created from the unchanged `index.html` file in your `app` workspace directory.
+   File Explorer or Finder opens.
+
+1. Open the `index.html` file that's in your `/Demos/workspace/` directory in a text editor, such as Visual Studio Code.  The change that you just made doesn't appear; the heading still reads "DevTools Workspaces Demo", instead of "I Love Cake".
+
+1. In the browser, refresh the demo page.
+
+   The page reverts to the original heading, "DevTools Workspaces Demo", because the DOM tree with your edit was discarded, and the DOM was re-created from the unchanged `index.html` file that's in your `/Demos/workspace/` directory.
+
+Continue with the next section.
 
 
-<!-- ------------------------------
-#### Optional: Why it isn't working
+<!-- ---------- -->
+###### Why it doesn't work
+<!-- https://developer.chrome.com/docs/devtools/workspaces#why -->
 
-> [!NOTE]
-> This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) doesn't work.  You should skip this section if you don't care why.
+Changing the DOM tree in the **Elements**, per the above section, doesn't work.
 
-*  The tree of nodes that are displayed on the **Elements** tool represents the [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) of the page.
-*  To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.
-*  If the page has any JavaScript, that JavaScript can add, delete, or change DOM nodes.  CSS can change the DOM, too, by using the [`content`](https://developer.mozilla.org/docs/Web/CSS/content) property.
-*  The browser eventually uses the DOM to determine what content it should present to browser users.
-*  Therefore, the final state of the webpage displayed for users may be very different from the HTML that the browser fetched.
-*  This makes it difficult for DevTools to resolve where a change made in the **Elements** tool should be saved, because the DOM is affected by HTML, JavaScript, and CSS.
+* The tree of nodes that you see on the **Elements** tool represents the page's DOM.
 
-In short, the **DOM Tree** `!==` HTML.
--->
+* To display a page, a browser fetches HTML over the network, parses the HTML, and then converts it into a tree of DOM nodes.
+
+* If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes. CSS can change the DOM, too, via the `content` property.
+
+* The browser eventually uses the DOM to determine what content it should present to browser users.
+
+* Therefore, the final state of the page that users see may be very different from the HTML that the browser fetched.
+
+* This makes it difficult for DevTools to resolve where a change made in the **Elements** tool should be saved, because the DOM is affected by HTML, JavaScript, and CSS.
+
+In short, the DOM tree, which the browser engine constructed, is different from the HTML document that was downloaded from the server.
+
+Continue with the next section.
 
 
 <!-- ------------------------------ -->
-#### Changing HTML from the Sources tool saves changes
+#### Save HTML changes by opening a file via the Workspace tab of the Sources tool
+<!-- Change HTML from the Sources panel  https://developer.chrome.com/docs/devtools/workspaces#sources -->
 
-If you want to save a change to the webpage HTML, edit the HTML in the **Sources** tool with a workspace defined (in the **Filesystem** tab), rather than changing the HTML in the DOM tree in the **Elements** tool.
+To save changes to the webpage HTML file, add the source code folder in the **Workspace** tab, and then edit the HTML in the **Sources** tool, rather than changing the HTML in the DOM tree in the **Elements** tool.
 
-1. Continuing from above, click the **Sources** (![Sources tool icon.](./index-images/sources-tool-icon.png)) tab.
+Unlike the **Workspace** tab, the **Page** tab of the **Sources** tool doesn't allow you to save changes to the file system.
+* An HTML file that's opened via the **Page** tab can't be edited.
+* A CSS or JS file that's opened via the **Page** tab can be edited, but the edits are not preserved across refreshes of the webpage.
 
-1. In the **Navigator** pane on the left, select `index.html`.  The HTML for the page opens.
+The DevTools **Workspace** tab is similar to using an editor to edit the HTML source file, but enables editing the HTML source file directly within DevTools.
 
-1. Replace `<h1>DevTools Workspaces Demo</h1>` with `<h1>I Love Cake</h1>`, in the file listing (as opposed to the DOM tree in the **Elements** tool).
+1. Continuing from above, in DevTools, click the **Sources** (![Sources tool icon.](./index-images/sources-tool-icon.png)) tab.
 
-1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.
+1. In the **Navigator** pane on the left, in the **Workspace** tab (grouped with the **Page** tab), select `index.html`.
 
-1. Refresh the page.  The heading in the rendered page changes to "I Love Cake", because that string was saved in `index.html` in your mapped `app` directory:
+   The **index.html** tab opens in the **Sources** tool.
 
-   ![Change HTML from the Sources tool](./index-images/workspaces-workspaces-demo-sources-page-h1.png)
+1. In the the `<h1>` tag, replace "DevTools Workspaces Demo" with "I Love Cake".
 
-1. Open the copy of `index.html` that's in your `app` directory in a text editor, such as Visual Studio Code.
+   An asterisk appears next to `index.html`.
 
-   The `<h1>` element contains the new text, because you made the change using the **Sources** tool's editor to edit `index.html` and then saved the change, and that file was mapped in a workspace (the **Filesystem** tab), indicated by a green dot on the file's icon.
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS).
+
+   Your change is saved, and the asterisk disappears.
+
+   You made the change in the file listing, rather than in the DOM tree in the **Elements** tool.
+
+1. Refresh the page.  The heading in the rendered page changes to "I Love Cake", because that string was saved in `index.html` in your mapped `/Demos/workspace/` directory:
+
+   ![Change HTML from the Sources tool](./index-images/sources-tool-h1.png)
+
+1. In the **Sources** tool, right-click `index.html`, and then select **Open in containing folder**.
+
+   File Explorer or Finder opens.
+
+1. Open the copy of `index.html` that's in your `/Demos/workspace/` directory in a text editor, such as Visual Studio Code.
+
+   The `<h1>` element contains the new text, "I Love Cake", because you made the change using the **Sources** tool's editor to edit `index.html` and then saved the change, and that file was mapped in a workspace (the **Workspace** tab), indicated by a green "mapped" dot on the file's icon.
+
+   Many developers don't write HTML directly, but instead use approaches such as:
+   * A server-side language, such as Java, Python, or PHP.
+   * A site generator, such as Eleventy.
+   * A client-side framework that uses JavaScript code.
+   * A markup language other than HTML, such as Markdown.
+
+   This means that in practice, few developers change HTML files in the **Workspace** tab.  Most devs produce HTML files by using a different type of source file, such as a React component JS source file, and then rebuild and reload (which may happen automatically).
+
+1. Long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh** (**Ctrl+Shift+R**).
+
+   In the **Workspace** tab, green "mapped" dots appear on all the HTML, CSS, and JS files.
+
+Continue with the next section.
 
 
 <!-- ====================================================================== -->
-## Edit JavaScript and save changes to the source file
+## Step 4: Save a JavaScript change to disk
+<!-- https://developer.chrome.com/docs/devtools/workspaces/#js
+don't doc Quick source tool here
+-->
 
-The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console**, while editing files.  The **Quick source** tool gives you just the editor from the **Sources** tool, while any tool is open.
-<!-- todo: avoid Quick source tool and just use Sources tool for this section -->
+Continuing from above, next, you'll edit the Workspace demo's JavaScript file and save changes to the source file.  To save edits to a JavaScript source file, you can use DevTools like an IDE, after adding the source code folder in the **Workspace** tab of the **Sources** tool.  You can then edit and save the JavaScript file in the **Sources** tool's editor.
 
-To open the DevTools code editor alongside other tools:
+In the rendered demo webpage, to style the **Edit and save files in a workspace** hyperlink with italics:
 
-1. Continuing from above, select the **Elements** (![Elements tool icon.](./index-images/elements-tool-icon.png)) tool.
+1. In DevTools, select the **Sources** tool, and then select the **Workspace** tab, which is grouped with the **Page** tab.
 
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
+1. In the **Workspace** tab, select `script.js`.
 
-1. At the **Run** prompt, start typing **quick**, and then select **Show Quick source**:
+   `script.js` opens in a tab within the editor pane of the **Sources** tool.
 
-   ![Open the 'Quick source' tool by using the Command Menu](./index-images/workspaces-workspaces-demo-search-show-quick-source.png)
-   <!-- todo: resume here -->
+1. In the editor pane, add the following code to the bottom of **script.js**:
 
-   At the bottom of the DevTools window, the **Quick source** tool opens, displaying the contents of `index.html`, because that's the last file you edited in the **Sources** tool.  If needed, click **Expand Quick View**, and make sure the **Elements** tool is selected.
+   ```javascript
+   document.querySelector('a').style = 'font-style:italic';
+   ```
 
-1. Press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to display the **Open File** prompt of the **Command Menu**:
+   An asterisk appears on the `script.js` tab.
 
-   ![Opening script.js using the Open File dialog](./index-images/workspaces-workspaces-demo-search-script.png)
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS).
 
-1. Start typing **script**, and then select **script.js** that's in the **app/** directory.
+   `script.js` is saved, and the asterisk is removed from the `script.js` tab.
 
-   The file listing is displayed in the **Quick source** tool.  In the rendered demo webpage, the **Edit files with Workspaces** hyperlink is not styled with italic.
+1. Refresh the page.
 
-1. Use the **Quick source** tool to add the following code to the bottom of **script.js**:
+1. If there's no longer a green "mapped" dot on the HTML, JS, or CSS file, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh** (**Ctrl+Shift+R**).
 
-    ```javascript
-    document.querySelector('a').style = 'font-style:italic';
-    ```
+   The **Edit files with Workspaces** (or **Edit and save files in a workspace**) hyperlink on the page is now italicized:
 
-1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.
+   ![The link on the page is now italicized](./index-images/elements-styles-quick-source-script.png)
 
-1. Refresh the page.  If needed, click and hold the **Refresh** button and then select **Hard Refresh**.  The **Edit files with Workspaces** hyperlink on the page is now italicized:
+Continue with the next section.
 
-   ![The link on the page is now italicized](./index-images/workspaces-workspaces-demo-elements-styles-quick-source-script.png)
+
+<!-- ====================================================================== -->
+## Step 5: Add a .js file using DevTools
+<!-- section not in upstream -->
+
+1. In the **Sources** tool, in the **Workspace** tab, right-click the `/workspaces/` folder, and then select the **New file** menuitem.
+
+   A file named `NewFile` is added:
+
+   ![A new file added via the Workspace tab](./index-images/new-file.png)
+
+1. Right-click `NewFile` in the **Workspace** tab and then select **Rename**.
+
+1. Rename the file to `test.js`.
+
+1. In `test.js`, add the line: `console.log('hello from test.js');`
+
+1. In the **Sources** tool, in the **Workspace** tab, select `index.html`.
+
+1. In `index.html`, below the line `<script src="./script.js" defer></script>`, add the line: `<script src="./test.js" defer></script>`
+
+1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS).
+
+   `index.html` is saved.
+
+1. Long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh** (**Ctrl+Shift+R**).
+
+   In the **Workspace** tab, green "mapped" dots appear on all the HTML, CSS, and JS files:
+
+   ![Adding a reference to the JS file in the HTML file, and green "mapped" dots on all webpage files](./index-images/new-js-file.png)
+
+This completes the tutorial.
+
+If you want to revert the edits in your `/workspace/` folder, you can use git commands at a command prompt, or use GitHub Desktop, to revert the changes in the current branch, such as "main" or "test".
+
+
+<!-- ====================================================================== -->
+## Troubleshooting
+<!-- heading not in upstream -->
+
+A green "mapped" dot next to a file in DevTools indicates that DevTools has established a mapping between a network resource of the page that's received from the web server, and the local source file in your `/Demos/workspace/` directory.  The new file that you add in DevTools must be returned by the server, to be indicated as mapped.
+
+
+If green "mapped" dots stop appearing on files in DevTools, such as in the **Workspace** tab; or if the **Changes** tool doesn't show expected changes:
+
+* With DevTools displayed, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh** (**Ctrl+Shift+R**).
+
+If you want a green "sync" circle to appear on an added `.js` file, and have the file represented in the **Changes** tool:
+
+1. Reference the added `.js` file in the HTML file.
+
+1. Remove the folder from the workspace, and then add the folder to the workspace.
+
+<!-- 
+* In DevTools, select **Customize and Control DevTools** (**...**) > **Restore defaults and refresh**. -->
+
+See also:
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
+
+
+<!-- ====================================================================== -->
+## Next steps
+<!-- https://developer.chrome.com/docs/devtools/workspaces#next-steps -->
+
+Next, learn how to use DevTools to change CSS and debug JavaScript: 
+* [Get started viewing and changing CSS](../css/index.md)
+* [Get started debugging JavaScript](../javascript/index.md)
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Open a demo folder in the Sources tool and edit a file](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-in-the-sources-tool-and-edit-a-file) in _Sample code for DevTools_.
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
+* [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
 
 
 <!-- ====================================================================== -->

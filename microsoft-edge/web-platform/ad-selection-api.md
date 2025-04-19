@@ -12,6 +12,26 @@ ms.date: 10/10/2024
 
 The Ad Selection API provides user-relevant ads on your site without using third-party cookies.  See [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md) in the `privacy-preserving-ads` repo.
 
+**Detailed contents:**
+
+* [Attestation enrollment and alpha sign-up](#attestation-enrollment-and-alpha-sign-up)
+    * [When and where is the preview available?](#when-and-where-is-the-preview-available)
+    * [Flags for testing](#flags-for-testing)
+    * [Sign-up and attestation requirements and process](#sign-up-and-attestation-requirements-and-process)
+    * [Example JSON file](#example-json-file)
+        * [Important fields and values](#important-fields-and-values)
+* [Deploy the Ad Selection API services](#deploy-the-ad-selection-api-services)
+    * [Images for deploying services](#images-for-deploying-services)
+    * [Services for sellers](#services-for-sellers)
+    * [Services for buyers](#services-for-buyers)
+    * [User-Defined Functions](#user-defined-functions)
+        * [User-Defined Functions for sellers](#user-defined-functions-for-sellers)
+        * [User-Defined Functions for buyers](#user-defined-functions-for-buyers)
+    * [Deployment guide](#deployment-guide)
+* [Use the Ad Selection API on your website](#use-the-ad-selection-api-on-your-website)
+* [Provide feedback about the origin trial](#provide-feedback-about-the-origin-trial)
+* [See also](#see-also)
+
 The Ad Selection API can be used by:
 * **Sellers** running a supply-side platform (SSP), who can use the API to provide higher-quality ads for their publishers.
 * **Buyers** running a demand-side platform (DSP), who can use the API to improve the effectiveness of advertising campaigns.

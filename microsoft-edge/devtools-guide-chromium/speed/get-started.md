@@ -49,7 +49,7 @@ The source files for the website are at [MicrosoftEdge / Demos > travel-site](ht
 
 First, set up the website locally, so that you can make changes to it later:
 
-1. Get the website's source code locally: [Download or clone the Demos repo](../sample-code/sample-code.md#download-or-clone-the-demos-repo).
+1. Get the website's source code locally: [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
 
 1. Open the folder you just downloaded or cloned in Visual Studio Code.
 
