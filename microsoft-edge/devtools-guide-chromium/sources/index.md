@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/21/2023
+ms.date: 04/18/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -25,19 +25,39 @@ ms.date: 07/21/2023
 
 Use the **Sources** tool to view, modify, and debug front-end JavaScript code, and to inspect the resources that make up the current webpage.
 
-
 **Detailed contents:**
 
-todo: update
-
-<!-- omit h4s
-      * [Icons in the Page tab](#icons-in-the-page-tab)
-      * [Group files by folder or as a flat list](#group-files-by-folder-or-as-a-flat-list)
-
-      * [Save and Undo](#save-and-undo)
-      * [Find and Replace](#find-and-replace)
-      * [Showing the changes you made](#showing-the-changes-you-made)
-      * [Changes inside a function take effect](#changes-inside-a-function-take-effect) -->
+* [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
+* [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
+   * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
+         * [Icons in the Page tab](#icons-in-the-page-tab)
+         * [Group files by folder or as a flat list](#group-files-by-folder-or-as-a-flat-list)
+   * [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk)
+   * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
+   * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
+   * [Using the Snippets tab to run JavaScript code snippets on any webpage](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
+   * [Using the Command Menu to open files](#using-the-command-menu-to-open-files)
+* [Using the Editor pane to view or edit files](#using-the-editor-pane-to-view-or-edit-files)
+   * [Editing a JavaScript file](#editing-a-javascript-file)
+         * [Save and Undo](#save-and-undo)
+         * [Find and Replace](#find-and-replace)
+         * [Showing the changes you made](#showing-the-changes-you-made)
+         * [Changes inside a function take effect](#changes-inside-a-function-take-effect)
+   * [Reformatting a minified JavaScript file with pretty-print](#reformatting-a-minified-javascript-file-with-pretty-print)
+   * [Mapping minified code to your source code to show readable code](#mapping-minified-code-to-your-source-code-to-show-readable-code)
+   * [Transformations from source code to compiled front-end code](#transformations-from-source-code-to-compiled-front-end-code)
+   * [Editing CSS](#editing-css)
+         * [Editing CSS by using the Styles tab in the Elements tool, when using the Workspace tab of the Sources tool](#editing-css-by-using-the-styles-tab-in-the-elements-tool-when-using-the-workspace-tab-of-the-sources-tool)
+         * [The Page tab or Workspace tab in the Sources tool](#the-page-tab-or-workspace-tab-in-the-sources-tool)
+   * [Editing an HTML file](#editing-an-html-file)
+   * [Going to a line number or function](#going-to-a-line-number-or-function)
+   * [Quick source tool, to display source files when using a different tool](#quick-source-tool-to-display-source-files-when-using-a-different-tool)
+* [Using the Debugger pane to debug JavaScript code](#using-the-debugger-pane-to-debug-javascript-code)
+   * [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
+   * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-console.log)
+   * [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
+   * [Articles about debugging](#articles-about-debugging)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->

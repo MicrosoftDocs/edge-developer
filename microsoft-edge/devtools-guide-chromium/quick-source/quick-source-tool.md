@@ -10,24 +10,13 @@ ms.date: 03/07/2025
 ---
 # Display or edit source files using the Quick source tool
 <!-- https://developer.chrome.com/docs/devtools/quick-source -->
-<!-- first give the always-available GUI way, then keyboard shortcuts
-don't doc the empty tool UI, which is transient and is designed for the Sources tool -->
+<!-- give the always-available GUI way, don't doc the empty tool UI -->
 
 Use the **Quick source** tool to display or edit source files at the same time as displaying a tool other than the **Sources** tool.  The **Quick source** tool always displays the same files that are open in the **Sources** tool.
 
-![The Quick source tool](./quick-source-tool-images/quick-source-tool.png)
+![The Quick source tool](./quick-source-tool-images/quick-source-tool.png)<!-- todo: localhost -->
 
 The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  Use the **Quick source** tool, which by default opens in the **Quick View** panel at the bottom of DevTools.
-
-<!-- incoming overflow: removed from Workspace tut so that can focus only on teaching Workspace, not also Quick source.
-You can edit and save the JavaScript (or HTML or CSS) file in the **Sources** tool's editor, or in the **Quick source** tool in the **Quick View** panel at the bottom of DevTools.
-
-The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console**, while editing files.  The **Quick source** tool gives you just the editor from the **Sources** tool (without the **Navigator** or **Debugger** pane), while any tool is open in the upper part of DevTools.
-
-We'll walk through a couple ways to open the **Quick source** tool and open a file in the **Quick source** tool:
-* The regular, GUI way.
-* The **Command Menu** shortcut way.
--->
 
 
 <!-- ------------------------------ -->
@@ -43,11 +32,11 @@ If you open or close a file in one tool, the file is opened or closed in the oth
 <!-- ====================================================================== -->
 ## Open a file in the Quick source tool
 
-<!-- todo: run & show localhost in addr bar instead of github.io? -->
+<!-- todo: run & show localhost in addr bar instead of github.io -->
 
 To view source files while using a tool than the **Sources** tool in the **Activity Bar**, use the **Quick source** tool, as follows:
 
-1. Open a webpage; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.
+1. Open a webpage; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.<!-- todo: localhost -->
 
 1. Right-click the webpage and then select **Inspect**.
 
@@ -69,7 +58,7 @@ To view source files while using a tool than the **Sources** tool in the **Activ
 
    The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and displays the same files that are open in the **Sources** tool:
 
-   ![A file displayed in the Quick source tool](./quick-source-tool-images/file-displayed-in-quick-source.png)
+   ![A file displayed in the Quick source tool](./quick-source-tool-images/file-displayed-in-quick-source.png)<!-- todo: simpler display -->
 
 You can now view or edit the file in the **Quick source** tool, at the same time as displaying a different tool in the main part of DevTools.
 
@@ -91,12 +80,16 @@ To edit source files in the **Quick source** tool:
 These steps are detailed below.
 
 
-<!-- ------------------------------ -->
-#### Have local source files, such as a cloned repo
+<!-- ====================================================================== -->
+## Have local source files, such as a cloned repo
 
 To use the **Quick source** tool to save changes locally, you must have local source files that match the web server files.  Make sure there are source files on your local drive, that match the transient files that are returned by the web server.
 
 For example, if not done already, clone the **MicrosoftEdge / Demos** repo to your local drive, as follows:
+
+1. If not done already, [Download git](https://git-scm.com/downloads) and install it.
+
+1. If not done already, install an up-to-date version of Node.js and npm from [Node.js](https://nodejs.org).
 
 1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
 
@@ -132,10 +125,59 @@ Now you have a local folder of source files (such as `/demo-to-do/`) that match 
 Continue with the next section.
 
 
-<!-- ------------------------------ -->
-#### Select a local folder of source files as the Workspace
+<!-- ====================================================================== -->
+## Start a localhost server
 
-<!-- todo: start localhost server -->
+1. Go to a command prompt, such as the git bash shell, or the Terminal pane in Microsoft Visual Studio Code.
+
+1. Go to the cloned `/demo-to-do/` directory, such as `C:\Users\localAccount\GitHub\Demos\demo-to-do\`.
+
+   If you use the git bash shell, it's a UNIX shell, so even on Windows, you need to wrap a directory path that has backslashes in quotes, or else use forward slashes rather than backslashes.
+
+1. Run one of the following commands, to start the web server:
+
+   ```bash
+   # Node.js option
+   cd ~/GitHub/demos/demo-to-do
+   npx http-server  # Node.js
+   ```
+
+   For more information and options, see [Start the server (npx http-server)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#start-the-server-npx-http-server) in _Installing the DevTools extension for Visual Studio Code_.
+
+   ``` bash
+   # Python 2 option
+   cd ~/GitHub/demos/demo-to-do
+   python -m SimpleHTTPServer  # Python 2
+   ```
+  
+   ``` bash
+   # Python 3 option
+   cd ~/GitHub/demos/demo-to-do
+   python -m http.server  # Python 3
+   ```
+
+1. Open a tab in Microsoft Edge, and go to the locally hosted version of the site.  You should be able to access it by using `localhost:8080`:
+
+   ![The DevTools TODO app demo](./quick-source-tool-images/demo-to-do.png)
+
+   Another common equivalent URL is `http://0.0.0.0:8080`.  The default port number for the Python server option is `8000`.  The exact [port number](https://wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
+
+   The **DevTools Workspaces Demo** webpage opens.
+
+See also:
+* [Running a simple local HTTP server](https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server) in _How do you set up a local testing server?_ at MDN - shows Python.
+<!--
+* [Set up a localhost server](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.  How to run a local HTTP web server by using Node.js. -->
+
+Continue with the next section.
+
+
+<!-- ====================================================================== -->
+## Select a local folder of source files as the Workspace
+
+1. Continuing from above, right-click the demo webpage and then select **Inspect**.
+
+   DevTools opens.
 
 1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, select the **Workspace** tab (grouped with the **Page** tab), and then in the **Workspace** tab, click the **Add folder** button.
 
@@ -147,27 +189,31 @@ Continue with the next section.
 
 1. Click the **Allow** button.
 
-   The **Sources** tool is opened.
+   The tree of `demo-to-do` files appears in the **Workspace** tab of the **Sources** tool.  The HTML, JS, and CSS files have a green "mapped" dot.
 
-1. In the **Sources** tool, in the **Workspace** tab, expand the tree, and then click one or more files, such as `to-do.js`.
+1. In the **Workspace** tab, expand the file tree, and then click one or more files, such as `to-do.js`.
 
    The file opens in the **Sources** tool:
 
-   ![The Sources tool with a file selected](./quick-source-tool-images/sources-tool-with-file-selected.png)<!-- todo: localhost in addr bar -->
+   ![The Sources tool with a file selected](./quick-source-tool-images/sources-tool-with-file-selected.png)
 
 1. In the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** tool, such as the **Elements** tool.
 
    The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and has a tab for each open file:
 
-   ![A file displayed in the Quick source tool.](./quick-source-tool-images/file-displayed-in-quick-source-2.png)<!-- copied from above then appended -2 --><!-- todo: localhost in addr bar -->
+   ![A file displayed in the Quick source tool.](./quick-source-tool-images/file-displayed-in-quick-source-2.png)<!-- todo: localhost in addr bar -->
+
+1. If there's no longer a green "mapped" dot on the HTML, JS, or CSS file, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh** (**Ctrl+Shift+R**).
 
 Continue with the next section.
 
 
-<!-- ------------------------------ -->
-#### Open the Quick source tool
+<!-- ====================================================================== -->
+## Open the Quick source tool and edit a file
 
-1. In the **Activity Bar**, select a tool other than the **Sources** tool, such as the **Elements** tool.
+Suppose you want to continue viewing the **Elements** tool, but you want to simultaneously view and edit the source files that were opened via the **Sources** tool.
+
+1. Continuing from above, in the **Activity Bar**, select a tool other than the **Sources** tool, such as the **Elements** tool.
 
 1. If the **Quick View** toolbar isn't shown at the bottom of DevTools, press **Esc**.
 
@@ -175,10 +221,33 @@ Continue with the next section.
 
    The **Quick source** tool opens in **Quick View** at the bottom of DevTools:
 
-   ![The Quick source tool, containing a Select folder link](./quick-source-tool-images/quick-source-select-folder.png)
+   ![The Quick source tool, containing a Select folder link](./quick-source-tool-images/quick-source-select-folder.png)<!--todo:localhost-->
 
-   The **Quick source** tool might show instructions including an **Select folder** link, or it might display a file.  Instead of relying on that transient link, the steps further below show how to use the **Workspace** tab in the **Sources** tool, to select a local folder of source files.
+   `todo.js` is displayed, because that file is open in the **Sources** tool.
 
+1. In the demo To Do webpage, delete any tasks.
+
+1. Click the **Quick source** panel, and then press **Ctrl+F**.
+
+   In the **Quick source** tool, the **Find** UI appears.
+
+1. Enter **no tasks**, and then press **Enter**.
+
+1. In the line of code, change `no tasks` to `0 tasks`.
+
+   An asterisk appears on the file name tab.
+
+1. Press **Ctrl+S**.
+
+   The asterisk is removed from the file name tab.
+
+1. Refresh the demo webpage (**Ctrl+R**).
+
+1. If the rendered webpage doesn't change from "No" to "0", and there's no longer a green "mapped" dot on the JS file name tab, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh** (**Ctrl+Shift+R**).
+
+   The rendered webpage changes from "No" to "0", and there's a green "mapped" dot on the JS file name tab.
+
+   ![An edited .js file in the Quick source tool, with refreshed demo webpage](./quick-source-tool-images/edited-js-file.png)
 
 Now, when you edit the folder's files in DevTools, the edits are not only made to the transient file that's returned by the server, but are also saved to the source files on your local drive.  You can edit the file from within the **Quick source** tool at the same time as displaying another tool (or from within the **Sources** tool).
 
@@ -218,6 +287,18 @@ To open a file by using the **Open File** prompt of the **Command Menu**, do any
   The **Open File** prompt of the **Command Menu** is displayed.
 
   To display the **Open file** link in the instructions in the panel, you might need to scroll down, or drag the **Quick View** divider up to make the **Quick View** panel taller.
+
+
+<!-- ====================================================================== -->
+## Keyboard shortcuts in the Quick source tool
+
+The **Quick source** tool has a streamlined UI.  Use these keyboard shortcuts.
+
+* **Ctrl+F** - Find.
+
+* **Ctrl+S** - Save.  If there's no longer a green "mapped" dot on the HTML, JS, or CSS file name, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh** (**Ctrl+Shift+R**).
+
+* **Ctrl+P** - Open a file by using the **Command Menu**.  Same as going to the **Sources** tool and then clicking a file in the **Workspace** tab.
 
 
 <!-- ====================================================================== -->

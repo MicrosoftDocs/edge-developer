@@ -26,6 +26,28 @@ ms.date: 04/17/2025
 
 To save edits to webpage source files, you can use DevTools like an IDE, by adding the source code folder of the webpage in the **Workspace** tab of the **Sources** tool.  You can then edit and save HTML, CSS, and JS files in the **Sources** tool's editor (or in the **Quick source** tool in the **Quick View** panel at the bottom of DevTools).
 
+**Detailed contents:**
+
+* [Edit and save files in a workspace](#edit-and-save-files-in-a-workspace)
+  * [Overview of the DevTools workspace feature](#overview-of-the-devtools-workspace-feature)
+      * [Limitations of the workspace feature with transformed source code](#limitations-of-the-workspace-feature-with-transformed-source-code)
+          * [Editing CSS by using the Styles tab in the Elements tool, when using the Workspace tab of the Sources tool](#editing-css-by-using-the-styles-tab-in-the-elements-tool-when-using-the-workspace-tab-of-the-sources-tool)
+      * [Related feature: Local Overrides](#related-feature-local-overrides)
+  * [Step 1: Set up the code, server, and workspace](#step-1-set-up-the-code-server-and-workspace)
+      * [Clone the Edge Demos repo to your local drive](#clone-the-edge-demos-repo-to-your-local-drive)
+      * [Start the localhost server](#start-the-localhost-server)
+      * [Add a Workspace folder in the Sources tool](#add-a-workspace-folder-in-the-sources-tool)
+  * [Step 2: Save a CSS change to disk](#step-2-save-a-css-change-to-disk)
+  * [Step 3: Save an HTML change to disk](#step-3-save-an-html-change-to-disk)
+      * [Edited HTML in the DOM tree in the Elements tool isn't preserved after refresh](#edited-html-in-the-dom-tree-in-the-elements-tool-isnt-preserved-after-refresh)
+          * [Why it doesn't work](#why-it-doesnt-work)
+      * [Save HTML changes by opening a file via the Workspace tab of the Sources tool](#save-html-changes-by-opening-a-file-via-the-workspace-tab-of-the-sources-tool)
+  * [Step 4: Save a JavaScript change to disk](#step-4-save-a-javascript-change-to-disk)
+  * [Step 5: Add a .js file using DevTools](#step-5-add-a-.js-file-using-devtools)
+  * [Troubleshooting](#troubleshooting)
+  * [Next steps](#next-steps)
+  * [See also](#see-also)
+
 You can create, copy, rename, and delete source files from within the **Workspace** tab.
 
 Use the **Workspace** tab in the **Sources** tool to display and edit the contents of a folder on your computer from within the **Sources** tool.  The changes that you make to the files in a workspace are saved to your computer.
@@ -110,10 +132,14 @@ See also:
 ## Step 1: Set up the code, server, and workspace
 <!-- https://developer.chrome.com/docs/devtools/workspaces/#setup -->
 
+1. If not done already, [Download git](https://git-scm.com/downloads) and install it.
+
 * Install an up-to-date version of Node.js and npm from [Node.js](https://nodejs.org).
 
 See also:
 * [Install Node.js and Node Package Manager (npm)](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
+
+Continue with the next section.
 
 
 <!-- ------------------------------ -->
@@ -177,7 +203,7 @@ Continue with the next section.
 
    ```bash
    # Node.js option
-   cd "C:\Users\localAccount\GitHub\Demos\workspaces\"
+   cd ~/GitHub/demos/workspaces
    npx http-server  # Node.js
    ```
 
@@ -185,13 +211,13 @@ Continue with the next section.
 
    ``` bash
    # Python 2 option
-   cd "C:\Users\localAccount\GitHub\Demos\workspaces\"
+   cd ~/GitHub/demos/workspaces
    python -m SimpleHTTPServer  # Python 2
    ```
   
    ``` bash
    # Python 3 option
-   cd "C:\Users\localAccount\GitHub\Demos\workspaces\"
+   cd ~/GitHub/demos/workspaces
    python -m http.server  # Python 3
    ```
 
