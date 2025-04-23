@@ -30,56 +30,25 @@ If you open or close a file in one tool, the file is opened or closed in the oth
 
 
 <!-- ====================================================================== -->
-## Open a file in the Quick source tool
-
-<!-- todo: run & show localhost in addr bar instead of github.io -->
-
-To view source files while using a tool than the **Sources** tool in the **Activity Bar**, use the **Quick source** tool, as follows:
-
-1. Open a webpage; for example, open [Demo To Do](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or page.<!-- todo: localhost -->
-
-1. Right-click the webpage and then select **Inspect**.
-
-   DevTools opens.
-
-1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool.
-
-1. In the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, in the **Page** tab, select one or more files, such as `to-do.js`.
-
-   The tabs for the selected files are opened in the **Sources** tool:
-
-   ![The Sources tool > Page tab with a file selected](./quick-source-tool-images/sources-tool-page-tab-file-selected.png)
-
-1. In the **Activity Bar** at the top of DevTools, select a tool other than **Sources**, such as **Elements** (![Elements icon](./quick-source-tool-images/elements-tool-icon.png)).
-
-1. If the **Quick View** toolbar isn't shown at the bottom of DevTools, press **Esc**.
-
-1. In the **Quick View** toolbar at the bottom of DevTools, click the **More tools** button, and then select **Quick source**.
-
-   The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and displays the same files that are open in the **Sources** tool:
-
-   ![A file displayed in the Quick source tool](./quick-source-tool-images/file-displayed-in-quick-source.png)<!-- todo: simpler display -->
-
-You can now view or edit the file in the **Quick source** tool, at the same time as displaying a different tool in the main part of DevTools.
-
-See also:
-* [Using the Page tab to explore resources that construct the current webpage](../sources/index.md#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage) in _Sources tool overview_.
-
-
-<!-- ====================================================================== -->
 ## Edit local source files in DevTools by selecting a Workspace folder
+
+This is an end-to-end tutorial of all steps to demonstrate the **Quick source** tool, by using the ToDo web app in the **MicrosoftEdge / Demos** repo.
 
 By selecting a local folder as a **Workspace** in the **Sources** tool, you can then edit files from within the **Quick source** tool at the same time as displaying a different tool, and have those edits be saved to your local drive.  This way, you can edit files in the **Quick source** tool while using another tool, such as **Elements** or **Network**, and have your edits be saved to the corresponding source file on your local drive.
 
-To edit source files in the **Quick source** tool:
+To edit source files in the **Quick source** tool, you'll do the following:
 
-1. Have access to your source files locally, such as a cloned repo.  See [Have local source files, such as a cloned repo](#have-local-source-files-such-as-a-cloned-repo), below.
+1. Have access to the webpage source files locally, such as a cloned repo.
 
-1. In the **Workspace** tab in the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, add a local folder of source files.  See [Select a local folder of source files as the Workspace](#select-a-local-folder-of-source-files-as-the-workspace), below.
+1. In the **Workspace** tab in the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, add a local folder of source files.
 
-1. In the **Activity Bar**, select a tool other than the **Sources** tool, such as the **Elements** tool.  Then in the **Quick View** panel at the bottom of DevTools, open the **Quick source** tool.  See [Open the Quick source tool](#open-the-quick-source-tool), below.
+1. In the **Workspace** tab, open a file, such as a `.js` file.
 
-These steps are detailed below.
+1. In the **Activity Bar**, select a tool other than the **Sources** tool, such as the **Elements** tool.
+
+1. In the **Quick View** panel at the bottom of DevTools, open the **Quick source** tool.  The opened `.js` file is shown in a streamlined editor, and the **Elements** tool is still displayed.
+
+These steps are detailed in the tutorial below.
 
 
 <!-- ====================================================================== -->
@@ -113,7 +82,7 @@ For example, if not done already, clone the **MicrosoftEdge / Demos** repo to yo
 
    ```Shell
    # example location where the repo directory will be added:
-   cd c:/users/localAccount/github/
+   cd ~/GitHub
    git clone https://github.com/MicrosoftEdge/Demos.git
    ```
 
@@ -135,6 +104,19 @@ Continue with the next section.
 1. Go to the cloned `/demo-to-do/` directory, such as `C:\Users\localAccount\GitHub\Demos\demo-to-do\`.
 
    If you use the git bash shell, it's a UNIX shell, so even on Windows, you need to wrap a directory path that has backslashes in quotes, or else use forward slashes rather than backslashes.
+
+1. Create a working branch named "test" and switch to it (to avoid altering the demo's files in the "main" branch):
+
+   ```Shell
+   git checkout -b test
+   ```
+
+   That's equivalent to:
+
+   ```Shell
+   git branch test
+   git switch test
+   ```
 
 1. Run one of the following commands, to start the web server:
 
@@ -199,16 +181,6 @@ Continue with the next section.
 
    ![The Sources tool with a file selected](./quick-source-tool-images/sources-tool-with-file-selected.png)
 
-1. In the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, such as the **Elements**  (![The Elements tool icon](./quick-source-tool-images/elements-tool-icon.png)) tool.
-
-   The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and has a tab for each open file:
-
-   ![A file displayed in the Quick source tool.](./quick-source-tool-images/file-displayed-in-quick-source-2.png)<!-- todo: localhost in addr bar -->
-
-1. If there's no longer a green "mapped" dot on the HTML, JS, or CSS file, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh** (**Ctrl+Shift+R**).
-
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
 ## Open the Quick source tool and edit a file
@@ -223,7 +195,7 @@ Suppose you want to continue viewing the **Elements** tool, but you want to simu
 
    The **Quick source** tool opens in **Quick View** at the bottom of DevTools:
 
-   ![The Quick source tool, containing a Select folder link](./quick-source-tool-images/quick-source-select-folder.png)<!--todo:localhost-->
+   ![The Quick source tool, containing the opened .js file](./quick-source-tool-images/quick-source-with-js-file.png)
 
    `todo.js` is displayed, because that file is open in the **Sources** tool.
 
@@ -253,10 +225,12 @@ Suppose you want to continue viewing the **Elements** tool, but you want to simu
 
 Now, when you edit the folder's files in DevTools, the edits are not only made to the transient file that's returned by the server, but are also saved to the source files on your local drive.  You can edit the file from within the **Quick source** tool at the same time as displaying another tool (or from within the **Sources** tool).
 
+This is the end of the tutorial steps.
+
 See also:
 * [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 * [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md)
-   * [Step 4: Save a JavaScript change to disk](../workspaces/index.md#step-4-save-a-javascript-change-to-disk) in _Edit and save files in a workspace (Sources tool Workspace tab)_
+   * [Step 6: Save a JavaScript change to disk](../workspaces/workspace-tutorial.md#step-6-save-a-javascript-change-to-disk) in _Workspace tutorial (Sources tool Workspace tab)_
 
 
 <!-- ====================================================================== -->

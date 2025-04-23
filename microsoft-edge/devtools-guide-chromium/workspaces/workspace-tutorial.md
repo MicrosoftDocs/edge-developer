@@ -55,13 +55,7 @@ Clone the **MicrosoftEdge / Demos** repo to your local drive, including the `/wo
 
    ```Shell
    # Example location where the repo directory will be added:
-   pwd
-   # Result: /c/Users/localAccount
-   mkdir github
-   # Result: cannot create directory ‘github’: File exists
-   cd github
-   pwd
-   # Result: /c/Users/localAccount/github
+   cd ~/GitHub
    git clone https://github.com/MicrosoftEdge/Demos.git
    ```
 
@@ -88,8 +82,6 @@ Continue with the next section.
    cd ~/GitHub/Demos/workspaces
    pwd
    ```
-
-   Modify `\localAccount\` or other parts of the path shown above, as needed.  Example path: `"C:\Users\localAccount\GitHub\Demos\workspaces"`.
 
    A directory for use with the **Sources** tool's **Workspace** tab can have any name.  This demo directory is named `/workspaces/`.
 

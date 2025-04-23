@@ -48,13 +48,13 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
    * [Transformations from source code to compiled front-end code](#transformations-from-source-code-to-compiled-front-end-code)
    * [Editing CSS](#editing-css)
          * [Editing CSS by using the Styles tab in the Elements tool, when using the Workspace tab of the Sources tool](#editing-css-by-using-the-styles-tab-in-the-elements-tool-when-using-the-workspace-tab-of-the-sources-tool)
-         * [The Page tab or Workspace tab in the Sources tool](#the-page-tab-or-workspace-tab-in-the-sources-tool)
+         * [Editing CSS in the Page tab or Workspace tab in the Sources tool](#editing-css-in-the-page-tab-or-workspace-tab-in-the-sources-tool)
    * [Editing an HTML file](#editing-an-html-file)
    * [Going to a line number or function](#going-to-a-line-number-or-function)
    * [Quick source tool, to display source files when using a different tool](#quick-source-tool-to-display-source-files-when-using-a-different-tool)
 * [Using the Debugger pane to debug JavaScript code](#using-the-debugger-pane-to-debug-javascript-code)
    * [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
-   * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-console.log)
+   * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
    * [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
    * [Articles about debugging](#articles-about-debugging)
 * [See also](#see-also)
@@ -325,7 +325,7 @@ The following subsections cover the Editor pane:
 * [Reformatting a minified JavaScript file with pretty-print](#reformatting-a-minified-javascript-file-with-pretty-print)
 * [Mapping minified code to your source code to show readable code](#mapping-minified-code-to-your-source-code-to-show-readable-code)
 * [Transformations from source code to compiled front-end code](#transformations-from-source-code-to-compiled-front-end-code)
-* [Editing a CSS file](#editing-a-css-file)
+* [Editing CSS in the Page tab or Workspace tab in the Sources tool](#editing-css-in-the-page-tab-or-workspace-tab-in-the-sources-tool)
 * [Editing an HTML file](#editing-an-html-file)
 * [Going to a line number or function](#going-to-a-line-number-or-function)
 * [Quick source tool, to display source files when using a different tool](#quick-source-tool-to-display-source-files-when-using-a-different-tool)
@@ -449,7 +449,7 @@ See also:
 
 
 <!-- ---------- -->
-###### The Page tab or Workspace tab in the Sources tool
+###### Editing CSS in the Page tab or Workspace tab in the Sources tool
 
 The **Page** or **Workspace** tab in the **Sources** tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 

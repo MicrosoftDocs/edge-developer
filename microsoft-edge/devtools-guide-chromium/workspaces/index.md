@@ -33,7 +33,7 @@ Use the **Workspace** tab in the **Sources** tool to display and edit the conten
 The typical way to set up a workspace is to set it up to display the source files of your website's frontend code.  This way, you use DevTools both to inspect your website, and to make changes to its source files.  This way, the changes that you make are saved on your computer, rather than lost when you refresh the page.
 
 See also:
-* [Workspaces tutorial (Sources tool Workspace tab)](workspace-steps.md)
+* [Workspace tutorial (Sources tool Workspace tab)](./workspace-tutorial.md)
 
 
 <!-- ====================================================================== -->
@@ -143,7 +143,7 @@ The **Page** tab of the **Sources** tool doesn't allow you to save changes to th
 
 The following steps demonstrate that edits in the **Elements** tool DOM tree aren't preserved across page refreshes:
 
-1. Set up the Workspaces demo as described in [Workspaces tutorial (Sources tool Workspace tab)](./workspace-steps.md).
+1. Set up the Workspaces demo as described in [Workspace tutorial (Sources tool Workspace tab)](./workspace-tutorial.md).
 
 1. In DevTools, select the **Elements** (`</>`) tool.
 
@@ -211,7 +211,7 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
-* [Workspaces tutorial (Sources tool Workspace tab)](workspace-steps.md)
+* [Workspace tutorial (Sources tool Workspace tab)](./workspace-tutorial.md)
 * [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
 * [Track changes to files using the Changes tool](../changes/changes-tool.md)
 * [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
