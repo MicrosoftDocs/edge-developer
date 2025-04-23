@@ -105,7 +105,7 @@ If green circles stop appearing on files in DevTools, such as in the **Workspace
 <!-- ====================================================================== -->
 ## See also
 
-* [Edit and save files in a workspace](../workspaces/index.md) - **Sources** tool > **Workspace** tab
+* [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md)
 * [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md) - **Sources** tool > **Overrides** tab
 * [Sources tool overview](../sources/index.md)
    * [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)

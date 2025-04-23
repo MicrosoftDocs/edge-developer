@@ -200,7 +200,7 @@ In contrast, when you use a Workspace, changes that you make to your front-end c
 Workspaces work well when the JavaScript code that's returned by the server is the same as your local JavaScript source code.  Workspaces don't work as well when your workflow involves transformations on your source code, such as minification or [TypeScript](https://www.typescriptlang.org) compilation.
 
 See also:
-* [Edit and save files in a workspace](../workspaces/index.md)
+* [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md)
 * [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
 
 
@@ -355,7 +355,7 @@ If you change a file, an asterisk appears next to the file name.
 *  To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.
 *  To undo a change, press **Ctrl+Z** on Windows/Linux or **Command+Z** on macOS.
 
-By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit and save files in a workspace](../workspaces/index.md).
+By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md).
 
 
 ###### Find and Replace
@@ -451,7 +451,7 @@ See also:
 <!-- ---------- -->
 ###### The Page tab or Workspace tab in the Sources tool
 
-The **Page** or **Workspace** tab in the **Sources** tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit and save files in a workspace](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
+The **Page** or **Workspace** tab in the **Sources** tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
 ```css
 h1 {

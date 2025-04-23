@@ -24,7 +24,7 @@ The main place to view source files in the DevTools is within the **Sources** to
 
 To display the **Quick source** tool in **Quick View** at the bottom of DevTools, a tool other than the **Sources** tool must be open in the **Activity Bar** at the top of DevTools.
 
-The **Quick source** tool provides an alternative display of the files that are open in the **Sources** tool.  The **Quick source** tool has a subset of features.  For full features, temporarily switch to the **Sources** tool.
+The **Quick source** tool provides an alternative display of the files that are open in the **Sources** tool.  The **Quick source** tool has a subset of features.  For full features, use the **Sources** tool.
 
 If you open or close a file in one tool, the file is opened or closed in the other tool.  In both tools, there's a tab for each open file.
 
@@ -44,7 +44,7 @@ To view source files while using a tool than the **Sources** tool in the **Activ
 
 1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool.
 
-1. In the **Sources** tool, in the **Page** tab, select one or more files, such as `to-do.js`.
+1. In the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, in the **Page** tab, select one or more files, such as `to-do.js`.
 
    The tabs for the selected files are opened in the **Sources** tool:
 
@@ -74,7 +74,9 @@ By selecting a local folder as a **Workspace** in the **Sources** tool, you can 
 To edit source files in the **Quick source** tool:
 
 1. Have access to your source files locally, such as a cloned repo.  See [Have local source files, such as a cloned repo](#have-local-source-files-such-as-a-cloned-repo), below.
-1. In the **Workspace** tab in the **Sources** tool, add a local folder of source files.  See [Select a local folder of source files as the Workspace](#select-a-local-folder-of-source-files-as-the-workspace), below.
+
+1. In the **Workspace** tab in the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, add a local folder of source files.  See [Select a local folder of source files as the Workspace](#select-a-local-folder-of-source-files-as-the-workspace), below.
+
 1. In the **Activity Bar**, select a tool other than the **Sources** tool, such as the **Elements** tool.  Then in the **Quick View** panel at the bottom of DevTools, open the **Quick source** tool.  See [Open the Quick source tool](#open-the-quick-source-tool), below.
 
 These steps are detailed below.
@@ -116,7 +118,7 @@ For example, if not done already, clone the **MicrosoftEdge / Demos** repo to yo
    ```
 
    For details about cloning a repo, see:
-   * [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.<!-- todo: show git bash, not only VS Code's Source Control pane -->
+   * [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
    * [Clone the WebView2Samples repo](../../webview2/how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Shows a different sample repo, but shows steps for several tools.
    * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
 
@@ -197,7 +199,7 @@ Continue with the next section.
 
    ![The Sources tool with a file selected](./quick-source-tool-images/sources-tool-with-file-selected.png)
 
-1. In the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** tool, such as the **Elements** tool.
+1. In the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, such as the **Elements**  (![The Elements tool icon](./quick-source-tool-images/elements-tool-icon.png)) tool.
 
    The **Quick source** tool expands in **Quick View** at the bottom of DevTools, and has a tab for each open file:
 
@@ -213,7 +215,7 @@ Continue with the next section.
 
 Suppose you want to continue viewing the **Elements** tool, but you want to simultaneously view and edit the source files that were opened via the **Sources** tool.
 
-1. Continuing from above, in the **Activity Bar**, select a tool other than the **Sources** tool, such as the **Elements** tool.
+1. Continuing from above, in the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, such as the **Elements**  (![The Elements tool icon](./quick-source-tool-images/elements-tool-icon.png)) tool.
 
 1. If the **Quick View** toolbar isn't shown at the bottom of DevTools, press **Esc**.
 
@@ -253,8 +255,8 @@ Now, when you edit the folder's files in DevTools, the edits are not only made t
 
 See also:
 * [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
-* [Edit and save files in a workspace](../workspaces/index.md)
-   * [Step 4: Save a JavaScript change to disk](../workspaces/index.md#step-4-save-a-javascript-change-to-disk) in _Edit and save files in a workspace_
+* [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md)
+   * [Step 4: Save a JavaScript change to disk](../workspaces/index.md#step-4-save-a-javascript-change-to-disk) in _Edit and save files in a workspace (Sources tool Workspace tab)_
 
 
 <!-- ====================================================================== -->
@@ -298,7 +300,7 @@ The **Quick source** tool has a streamlined UI.  Use these keyboard shortcuts.
 
 * **Ctrl+S** - Save.  If there's no longer a green "mapped" dot on the HTML, JS, or CSS file name, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Hard refresh** (**Ctrl+Shift+R**).
 
-* **Ctrl+P** - Open a file by using the **Command Menu**.  Same as going to the **Sources** tool and then clicking a file in the **Workspace** tab.
+* **Ctrl+P** - Open a file by using the **Command Menu**.  This is the same as going to the **Sources** tool and then clicking a file in the **Workspace** tab.
 
 
 <!-- ====================================================================== -->

@@ -61,7 +61,7 @@ last sync'd April 16, 2024
 | Inspect Network Activity | Used for [Inspect network activity](../network/index.md). | [/network-tutorial/](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) | [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) |
 | Photo gallery | Used for [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/). | [/photo-gallery/](https://github.com/MicrosoftEdge/Demos/tree/main/photo-gallery) | [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) |
 | Slow Calendar | Simple calendar demo app to test various DevTools features such as the **Performance** tool and source map support. | [/slow-calendar/](https://github.com/MicrosoftEdge/Demos/tree/main/slow-calendar) | [Slow Calendar](https://microsoftedge.github.io/Demos/slow-calendar/public) |
-| Workspaces | Use for [Edit and save files in a workspace](../workspaces/index.md), in the **Sources** tool. | [/workspaces/](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) | [DevTools Workspaces Demo](https://microsoftedge.github.io/Demos/workspaces/) |
+| Workspaces | Used for [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md), in the **Sources** tool. | [/workspaces/](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) | [DevTools Workspaces Demo](https://microsoftedge.github.io/Demos/workspaces/) |
 
 A few of these samples are shown below.
 
@@ -302,6 +302,7 @@ Starting the server from within a specific demo directory:
 
 ```
 $ cd "C:\Users\localAccount\GitHub\Demos\demo-to-do"
+$ cd ~/GitHub/Demos/demo-to-do  # alt syntax
 $ npx http-server
 ```
 
@@ -321,6 +322,7 @@ Starting the server from within the entire `\Demos\` directory:
 
 ```
 $ cd "C:\Users\localAccount\GitHub\Demos"
+$ cd ~/GitHub/Demos  # alt syntax
 $ npx http-server
 ```
 
@@ -351,7 +353,7 @@ To edit files in the **Sources** tool, before doing the steps in this section, y
 1. Select the **Sources** tool, and then select the **Page** tab or the **Workspace** tab.
 
 See also:
-* [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
+* [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
 
 
 <!-- ------------------------------ -->
@@ -447,7 +449,7 @@ When you run a localhost server and start it within a cloned repo folder, such a
 ## See also
 
 Opening and editing files:
-* [Edit and save files in a workspace](../workspaces/index.md) - to open a local folder in the **Sources** tool of DevTools in the browser.
+* [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md) - Use DevTools as an in-browser Integrated Development Environment (IDE).
 * [Add a local folder to the workspace, to use DevTools to edit files and save changes to disk](../sources/index.md#add-a-local-folder-to-the-workspace-to-use-devtools-to-edit-files-and-save-changes-to-disk) in _Sources tool overview_.
 * [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
 * [Microsoft Edge IDE integration](../../visual-studio-code/ide-integration.md) - Webpage app development using Visual Studio Code or Visual Studio, including Microsoft Edge DevTools.
