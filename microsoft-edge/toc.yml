@@ -692,7 +692,7 @@
 # Network conditions tool -----------------------------------------------------
                 - name: Network conditions tool
                   items:
-                    - name: Network conditions tool  # new jump page
+                    - name: Network conditions tool  # starter page w/ png and links
                       href: ./devtools-guide-chromium/network-conditions/network-conditions-tool.md
                       displayName: Network conditions tool
 
@@ -717,11 +717,11 @@
                       href: ./devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
                       displayName: Performance monitor tool
 # Quick source tool -----------------------------------------------------------
-                - name: Quick source tool  # jump page
+                - name: Quick source tool
                   items:
                     - name: Display or edit source files using the Quick source tool
                       href: ./devtools-guide-chromium/quick-source/quick-source-tool.md
-                      displayName: Quick source tool  # also indexed elsewhere in this file
+                      displayName: Quick source tool  # also indexed in "Sources tool overview"
 # Recorder tool -----------------------------------------------------------
                 - name: Recorder tool
                   items:
