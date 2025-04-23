@@ -269,6 +269,7 @@ See also:
 To use this section, first do [Clone the Edge Demos repo to your drive](#clone-the-edge-demos-repo-to-your-drive), above.
 
 See also:
+* [Workspace tutorial (Sources tool Workspace tab)](../workspaces/workspace-tutorial.md)
 * [Approaches compared](../../visual-studio-code/microsoft-edge-devtools-extension.md#approaches-compared) in _Microsoft Edge DevTools extension for Visual Studio Code_.  Summarizes and compares several options for editing webpage files.
 
 
