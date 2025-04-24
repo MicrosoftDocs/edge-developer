@@ -29,7 +29,7 @@ This sample demonstrates several different deployment approaches:
 * Packaging the Evergreen WebView2 Runtime Bootstrapper with your app.
 * Packaging the Evergreen WebView2 Runtime Standalone Installer with your app.
 
-For information about these different approaches, see [Deploying the Evergreen WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
+For information about these different approaches, see [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_.
 
 
 <!-- ====================================================================== -->
