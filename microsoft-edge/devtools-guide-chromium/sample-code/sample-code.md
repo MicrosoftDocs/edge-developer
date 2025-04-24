@@ -179,7 +179,8 @@ To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
    ```Shell
    # example location where the repo directory will be added:
-   cd c:/users/localAccount/github/
+   cd ~/GitHub
+   cd c:/users/localAccount/GitHub/  # alt format
    git clone https://github.com/MicrosoftEdge/Demos.git
    ```
 
@@ -302,8 +303,7 @@ If you start the localhost server from a specific demo folder, such as `\Demos\d
 Starting the server from within a specific demo directory:
 
 ```
-$ cd "C:\Users\localAccount\GitHub\Demos\demo-to-do"
-$ cd ~/GitHub/Demos/demo-to-do  # alt syntax
+$ cd ~/GitHub/Demos/demo-to-do
 $ npx http-server
 ```
 
@@ -322,8 +322,8 @@ If you start the localhost server from within the entire `\Demos\` folder and th
 Starting the server from within the entire `\Demos\` directory:
 
 ```
-$ cd "C:\Users\localAccount\GitHub\Demos"
-$ cd ~/GitHub/Demos  # alt syntax
+$ cd ~/GitHub/Demos
+$ cd "C:\Users\localAccount\GitHub\Demos"  # alt syntax
 $ npx http-server
 ```
 

@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Add content scripts to the Ignore List
 
-<!-- todo: define _content script_, like in
+<!-- todo: define _content script_
 * [Using the Content scripts tab for Microsoft Edge extensions](../../sources/index.md#using-the-content-scripts-tab-for-microsoft-edge-extensions) in _Sources tool overview_.
 * [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts) in Chrome Extensions docs.
 -->
