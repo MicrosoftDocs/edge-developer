@@ -281,7 +281,7 @@ You can pass an `EdgeOptions` object to the `EdgeDriver` constructor to configur
 
 ###### Choose Specific Browser Binaries
 
-You can start a WebDriver session with specific Microsoft Edge binaries.  For example, you can run tests using the [Microsoft Edge preview channels](https://www.microsoft.com/edge/download/insider), such as Microsoft Edge Beta, Dev, or Canary, as follows:
+You can start a WebDriver session with specific Microsoft Edge binaries.  For example, you can run tests using the preview channels of Microsoft Edge (Beta, Dev, or Canary), as follows:
 
 ##### [C#](#tab/c-sharp)
 
@@ -325,6 +325,9 @@ let driver = edge.Driver.createSession(options);
 ```
 
 ---
+
+To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+
 
 ###### Pass extra command-line arguments
 

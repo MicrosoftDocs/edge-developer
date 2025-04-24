@@ -16,7 +16,7 @@ Puppeteer launches [headless browsers](https://wikipedia.org/wiki/Headless_brows
 
 By default, when you install Puppeteer, the installer downloads a recent version of [Chromium](https://www.chromium.org/Home), the open-source browser that [Microsoft Edge is also built upon](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration).
 
-If you have Microsoft Edge installed, you can use [puppeteer-core](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core).  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge.  To download Microsoft Edge, go to [Download Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider).
+If you have Microsoft Edge installed, you can use [puppeteer-core](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core).  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge.  To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 Puppeteer is a [Node](https://nodejs.org) library.
 
@@ -122,7 +122,7 @@ The preceding example demonstrates basic automation and testing scenarios that y
 
 #### Tools
 
-* [Download Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider)
+* [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download a preview channel of Microsoft Edge (Beta, Dev, or Canary).
 * [Chromium on The Chromium Projects](https://www.chromium.org/Home)
 * [Node.js](https://nodejs.org)
 * [Puppeteer](https://pptr.dev)
