@@ -75,7 +75,7 @@ If you use a workspace, in some cases you can edit CSS in the **Styles** tab in 
 
 * Edits that you make in the **Styles** tab in the **Elements** tool _are_ saved to the CSS file on disk, if DevTools has mapped a style sheet on the webpage and the file in the workspace, such as by a source map, or by matching content.
 
-   If you use an automatic build system framework, changes are saved to your source file if DEvTools was able to map the style sheet to the workspace file, by using a source map.
+   If you use an automatic build system framework, changes are saved to your source file if DevTools was able to map the style sheet to the workspace file, by using a source map.
 
    Depending on the automated build system or framework that you use, DevTools may be able to save changes to disk, if there's no build step, or there's a build step and a source map.  The **Styles** tab is mapped to the CSS file on disk, and so edits in the **Styles** tab are saved to disk.
 
