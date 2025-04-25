@@ -9,10 +9,15 @@ ms.subservice: devtools
 ms.date: 09/25/2023
 ---
 # Override webpage resources with local copies (Overrides tab)
+<!-- equiv https://developer.chrome.com/docs/devtools/overrides -->
 
 Sometimes you need to try out some possible fixes for a webpage, but you don't have access to the source files, or changing the page requires a slow and complex build process.  You can debug and fix all kind of problems in DevTools.  But the changes don't persist; after you refresh the local file, all your work is gone.  The Overrides feature in the [Sources](../sources/index.md) tool helps you solve this problem.
 
-You can now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser doesn't load the resource from the server; instead, the browser replaces the server resource with your local copy of the resource.
+You can take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser doesn't load the resource from the server; instead, the browser replaces the server resource with your local copy of the resource.  The overrides that you create are saved across reloads.
+
+The overrides feature is not intended for mapping to your source files.
+
+When you set up a folder for local overrides the first time, that folder should be empty.  DevTools then creates all of the folders and sub-folders that it needs to store overrides within it.
 
 
 <!-- ====================================================================== -->

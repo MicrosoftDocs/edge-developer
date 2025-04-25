@@ -250,7 +250,7 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
 
 1. Open DevTools (**F12**).
 
-1. In the **Activity bar**, select the **Sample Panel** tool (tab):
+1. In the **Activity Bar**, select the **Sample Panel** tool (tab):
 
    ![The new tool tab and panel in DevTools](./devtools-extension-images/devtools-extension-with-panel.png)
 

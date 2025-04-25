@@ -618,21 +618,22 @@ See also:
 
 <!-- todo: remove all but ~5 links -->
 
-* [About the list of tools](about-tools.md)<!--keep link-->
-* [Inspect and change the current webpage](dom/index.md)<!--keep link?-->
-* [Emulate how your product behaves on different devices](device-mode/index.md)<!--keep link?-->
-* [Inspect, tweak, and change the styles of elements](inspect-styles/edit-fonts.md)<!--keep link?-->
-* [Debug your JavaScript](javascript/index.md)<!--keep link?-->
-* [Live console](console/index.md)<!--keep link?-->
-* [Accessibility, performance, compatibility, and security issues](issues/index.md)<!--keep link?-->
-* [Inspect the network traffic](network/index.md)<!--keep link?-->
-* [Inspect where the browser stored content](storage/sessionstorage.md)<!--keep link?-->
-* [Evaluate the performance](evaluate-performance/index.md)<!--keep link?-->
-* [Memory problems](memory-problems/index.md)<!--keep link?-->
-* [Rendering issues](rendering-tools/index.md)<!--keep link?-->
-* [Use a development environment](sources/index.md)<!--keep link?-->
-* [Sync changes in DevTools with the file system](workspaces/index.md)<!--keep link?-->
-* [Override files from the web](javascript/overrides.md)<!--keep link?-->
+* [About the list of tools](./about-tools.md)<!--keep link-->
+* [Inspect and change the current webpage](./dom/index.md)<!--keep link?-->
+* [Emulate how your product behaves on different devices](./device-mode/index.md)<!--keep link?-->
+* [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)<!--keep link?-->
+* [Debug your JavaScript](./javascript/index.md)<!--keep link?-->
+* [Live console](./console/index.md)<!--keep link?-->
+* [Accessibility, performance, compatibility, and security issues](./issues/index.md)<!--keep link?-->
+* [Inspect the network traffic](./network/index.md)<!--keep link?-->
+* [Inspect where the browser stored content](./storage/sessionstorage.md)<!--keep link?-->
+* [Evaluate the performance](./evaluate-performance/index.md)<!--keep link?-->
+* [Memory problems](./memory-problems/index.md)<!--keep link?-->
+* [Rendering issues](./rendering-tools/index.md)<!--keep link?-->
+* [Use a development environment](./sources/index.md)<!--keep link?-->
+* [Sync changes in DevTools with the file system](./workspaces/index.md)<!--keep link?-->
+* [Override files from the web](./javascript/overrides.md)<!--keep link?-->
+* [Your first website](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web) (MDN) - How to use HTML, CSS, and JavaScript to build a web page.
 
 
 <!-- ====================================================================== -->
