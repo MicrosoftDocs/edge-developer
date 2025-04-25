@@ -9,8 +9,11 @@ ms.subservice: devtools
 ms.date: 11/30/2023
 ---
 # Track changes to files using the Changes tool
+<!-- https://developer.chrome.com/docs/devtools/changes (indep) -->
 
-The **Changes** tool tracks any changes that you've made to CSS or JavaScript in DevTools.  It shows you what changes to make to your actual source files after you've successfully used DevTools to modify a copy of your webpage files that are sent from the server:
+The **Changes** tool tracks any changes that you've made to CSS, JavaScript, or HTML files in DevTools.  The **Changes** tool is empty until you open files and edit them by using the **Sources** tool, **Quick source** tool, or **Elements** tool's **Styles** pane.
+
+The **Changes** tool shows you what changes to make to your actual source files after you've successfully used DevTools to modify a copy of your webpage files that are sent from the server:
 
 ![The Changes tool showing two files that have been modified, and the modifications of the selected file](changes-tool-images/changes-tool-open.png)
 
@@ -24,7 +27,7 @@ On the **Activity Bar** or **Quick View** toolbar, click the **More tools** (![T
 
 ![The 'More tools' (+) icon and menu in the Activity Bar, with the Changes tool selected](changes-tool-images/changes-tool-via-plus-menu.png)
 
-The **Changes** tool opens in the **Activity Bar** or in the **Quick View**, depending on which toolbar you used.
+The **Changes** tool opens in the **Activity Bar** or in the **Quick View** panel, depending on which toolbar you used.
 
 
 <!-- ====================================================================== -->
@@ -71,7 +74,7 @@ Clicking a modified line in the **Changes** tool opens the file in the [Sources]
 
 
 <!-- ====================================================================== -->
-## Undo all changes
+## Revert changes
 
 To undo all changes, at the bottom of the **Changes** tool, click the **Revert all changes to current file** (![The Revert all changes to current file icon](./changes-tool-images/revert-icon.png)) button:
 
@@ -86,3 +89,23 @@ When you've made a change to a minified file, the **Changes** tool enables you t
 ![Displaying a long line of code](changes-tool-images/changes.png)
 
 To scroll horizontally, click the horizontal scrollbar, or press the left or right arrow keys.
+
+
+<!-- ====================================================================== -->
+## Troubleshooting
+
+If green circles stop appearing on files in DevTools, such as in the **Workspace** tab; or if the **Changes** tool doesn't show expected changes:
+
+* With DevTools displayed, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Empty cache and hard refresh**.
+
+<!-- 
+* In DevTools, select **Customize and Control DevTools** (**...**) > **Restore defaults and refresh**. -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md)
+* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md) - **Sources** tool > **Overrides** tab
+* [Sources tool overview](../sources/index.md)
+   * [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
