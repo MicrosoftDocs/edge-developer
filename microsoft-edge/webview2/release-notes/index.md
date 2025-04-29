@@ -46,12 +46,11 @@ The following APIs have been promoted to Stable and are now included in this Rel
 
 
 <!-- ---------- -->
-<!-- ---------- -->
 ###### Track navigation history for nested iframes (FrameCreatedEvent API)
 
-The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe. Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame. Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of CoreWebView2Frame for the nested iframe.
+The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
 
-Use this API to manage iframe tracking on a page that contains multiple levels of iframes. You can choose to track any of the following:
+Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
 
 * Only the main page and first-level iframes (the default behavior).
 * A partial WebView2 frames tree with specific iframes of interest.
@@ -72,7 +71,9 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 * [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true)
   * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#add_framecreated)
   * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#remove_framecreated)
-* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3240.44&preserve-view=true)
+
+* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3240.44&preserve-view=true)<!-- win32 only -->
+
 ---
 
 
@@ -83,90 +84,10 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed issue with downloads on default browser frame does not work([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
-* Fixed the issue of incorrectly returning the pipename leading to UWP apps crash. 
-
-
-<!-- ---------- -->
+* Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
+* Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps. 
 
 <!-- end of May 2025 Release SDK -->
-
-
-<!-- May 2025 Prerelease SDK -->
-<!-- ====================================================================== -->
-## 1.0.####-prerelease
-
-Release Date: Monthname nn, 2025
-
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Experimental APIs
-
-No Experimental APIs have been added in this Prerelease SDK.
-The following Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
-
-<!-- end of May 2025 Prerelease SDK -->
 
 
 <!-- Apr 2025 Release SDK -->
@@ -227,9 +148,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ---------- -->
 ###### Track navigation history for nested iframes (FrameCreatedEvent API)
 
-The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe. Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame. Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of CoreWebView2Frame for the nested iframe.
+The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
 
-Use this API to manage iframe tracking on a page that contains multiple levels of iframes. You can choose to track any of the following:
+Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
 
 * Only the main page and first-level iframes (the default behavior).
 * A partial WebView2 frames tree with specific iframes of interest.
@@ -678,6 +599,7 @@ n/a
 The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
 
 Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
+
 * Only the main page and first-level iframes (the default behavior).
 * A partial WebView2 frames tree with specific iframes of interest.
 * The full WebView2 frames tree.
@@ -698,7 +620,7 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
   * [ICoreWebView2ExperimentalFrame8::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe8?view=webview2-1.0.3079-prerelease&preserve-view=true#add_framecreated)
   * [ICoreWebView2ExperimentalFrame8::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe8?view=webview2-1.0.3079-prerelease&preserve-view=true#remove_framecreated)
 
-* [ICoreWebView2ExperimentalFrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframechildframecreatedeventhandler?view=webview2-1.0.3079-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalFrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframechildframecreatedeventhandler?view=webview2-1.0.3079-prerelease&preserve-view=true)<!-- win32 only -->
 
 ---
 
