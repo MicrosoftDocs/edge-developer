@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 04/07/2025
+ms.date: 05/12/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -26,6 +26,83 @@ Nov 2024
 moved to archive:
 Oct 2024
 -->
+
+
+<!-- May 2025 Prerelease SDK -->
+<!-- ====================================================================== -->
+## 1.0.####-prerelease
+
+Release Date: May 12, 2025
+
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Experimental APIs
+
+No Experimental APIs have been added in this Prerelease SDK.
+The following Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of May 2025 Prerelease SDK -->
 
 
 <!-- Apr 2025 Release SDK -->
