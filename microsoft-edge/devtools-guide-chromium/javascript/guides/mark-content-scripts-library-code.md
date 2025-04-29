@@ -23,6 +23,11 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Add content scripts to the Ignore List
 
+<!-- todo: define _content script_
+* [Using the Content scripts tab for Microsoft Edge extensions](../../sources/index.md#using-the-content-scripts-tab-for-microsoft-edge-extensions) in _Sources tool overview_.
+* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts) in Chrome Extensions docs.
+-->
+
 When you use the **Sources** tool to step through code, sometimes you pause on code that you don't recognize and don't want to step through, such as code for a Microsoft Edge extension that's installed.
 
 To avoid pausing on extension code:
@@ -40,6 +45,7 @@ To avoid pausing on extension code:
 ## See also
 
 * [Step 4: Step through the code](../index.md#step-4-step-through-the-code) in _Get started debugging JavaScript_
+* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts) in Chrome Extensions docs.
 
 
 <!-- ====================================================================== -->
