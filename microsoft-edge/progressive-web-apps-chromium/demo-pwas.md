@@ -143,4 +143,4 @@ BPM Techno uses the following features:
 <!-- ====================================================================== -->
 ## See also
 
-* [Download or clone the Demos repo](../devtools-guide-chromium/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
+* [Clone the Edge Demos repo to your drive](../devtools-guide-chromium/sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.

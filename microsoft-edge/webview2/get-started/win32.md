@@ -60,9 +60,9 @@ The existing Visual Studio project we'll start with is part of the sample code f
 
 Clone or download the WebView2Samples repo, as follows:
 
-1. If you haven't already, clone or download the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) or [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
+1. If you haven't already, clone (or download) the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) (or in [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo)), in in _Set up your Dev environment for WebView2_.
 
-Then return here after you've copied the repo to your local drive, and continue with the steps below.
+Then continue with the steps below.
 
 
 <!-- ====================================================================== -->

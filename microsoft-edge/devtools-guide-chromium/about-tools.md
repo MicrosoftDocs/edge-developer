@@ -16,7 +16,7 @@ DevTools provides more than 30 tools, consisting of _Default tools_ and _More to
 <!-- ====================================================================== -->
 ## Default tools
 
-By default, the following tools are listed in the **Activity bar** at the top of DevTools:
+By default, the following tools are listed in the **Activity Bar** at the top of DevTools:
 
 * ![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png) **Inspect tool**
 * ![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png) **Device Emulation**
@@ -54,7 +54,7 @@ The **Elements**, **Console**, and **Sources** tools (tabs) are permanent, in th
 <!-- ====================================================================== -->
 ## More tools
 
-The **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) button on the **Activity bar** lists additional, optional tools that can be added to the **Activity bar**.
+The **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) button on the **Activity Bar** lists additional, optional tools that can be added to the **Activity Bar**.
 
 There's also a **More tools** (![More Tools icon](./about-tools-images/more-tools-icon-light-theme.png)) button on the **Quick View** toolbar at the bottom of DevTools.  To show or hide the **Quick View** panel, press **Esc**; or click **Customize and control DevTools** (**...**) in the upper right, and then click **Toggle Quick View panel**.
 
