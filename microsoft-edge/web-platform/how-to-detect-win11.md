@@ -141,7 +141,8 @@ Remember that `Critical-CH` and `Accept-CH` preferences persist until session co
 
 <!-- ====================================================================== -->
 ## Detecting specific Windows versions
-The definition of the platform versions returned by the `navigator.userAgentData.getHighEntropyValues` API for the `"platformVersion"` hint (and via the `Sec-CH-UA-Platform-Version` header) is specified in the [User-Agent Client Hints Draft Community Group Report](https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version). On Windows 10 and higher, the value is based on the [**Windows.Foundation.UniversalApiContract** version](/windows/uwp/debug-test-perf/version-adaptive-apps#api-contracts).
+
+The definition of the platform versions returned by the `navigator.userAgentData.getHighEntropyValues` API for the `"platformVersion"` hint (and via the `Sec-CH-UA-Platform-Version` header) is specified in the [User-Agent Client Hints Draft Community Group Report](https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version).  On Windows 10 and higher, the value is based on the [**Windows.Foundation.UniversalApiContract** version](/windows/uwp/debug-test-perf/version-adaptive-apps#api-contracts).
 
 To detect specific versions of Windows, use the following values for `platformVersion` in User-Agent Client Hints:
 
@@ -162,3 +163,51 @@ To detect specific versions of Windows, use the following values for `platformVe
 | Win10 21H1 | 10 |
 | Win10 21H2 | 10 |
 | Win11 | 13+ |
+
+<!-- todo: -->
+The above values are not accurate.  For example:
+
+* A Windows 21H2 Desktop has a value equal to 10.0.0 for: `navigator.userAgentData.getHighEntropyValues(["platformVersion"]) .then(r => r.platformVersion)`
+
+* The Hololens Windows edition: 12.0.0 for Hololens 2. 
+
+* Hololens 1: (11.0.0 ?)<!-- todo: confirm -->
+
+* Windows phones: todo
+
+
+The latest Windows platform on Hololens 2 is now 15.0.0.  That might also be the case for the Windows 11 desktop (no Hololens platform).  You can use this platform version to detect whether Edge is running on Hololens, because since version 112+ of Edge, the user agent of Edge is the same for the Windows Hololens 2 platform and the regular Windows Desktop platform.
+
+However, 15.0.0 is also the platform version when using Edge on the latest Windows 11 on a Desktop (Microsoft Surface), so it's not able to detect whether Edge is running on Hololens from the HTTP headers.
+
+Finding within the web browser API and the HTTP headers, doesn't find a difference between:
+* Edge running on a regular Windows 11 laptop up to date
+* Edge running on Hololens 2 up to date.
+<!-- todo: add help -->
+
+For example, suppose:
+* The latest Edge version on Hololens 2 is 117.0.2045.43.
+* The Edge version on a regular laptop Windows 11 up to date is 117.0.2045.47.
+
+But relying on the "117.0.2045.43" version as a condition for "I'm Edge running on Hololens 2" is not a solution.
+
+Try testing for WebXR support.  There might be differences in how the API is implemented or supported across devices.  Is the `XRInputSource.hand` property available, for example?
+
+<!-- todo: more info in subseq posts at https://github.com/MicrosoftDocs/edge-developer/issues/2579 -->
+
+This user agent model value for HoloLens: the following code prints "Holographic":
+
+```
+navigator.userAgentData.getHighEntropyValues(["model"]).then(values => {
+  console.log(values.model);
+});
+```
+
+
+<!-- ------------------------------ -->
+#### Hololens detection from Edge
+
+* [How to detect Hololens on Edge web browser](/answers/questions/1276118/how-to-detect-hololens-on-edge-web-browser)
+* [Detecting Hololens in the browser](https://stackoverflow.com/a/76166077/559811) - Stack Overflow thread.
+
+Windows platform version is 12.0.0 for "Windows Holographic for Business", which is the current Hololens 2 Windows edition.
