@@ -1,16 +1,23 @@
 ---
-title: Display content in the title bar
-description: Learn how to use the Window Controls Overlay API to make use of the entire window area for your app.
+title: Display content in the title bar area using Window Controls Overlay
+description: Use the Window Controls Overlay API to make use of the entire window area for your Progressive Web App, including the title bar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
-ms.date: 09/01/2022
+ms.service: microsoft-edge
+ms.subservice: pwa
+ms.date: 05/22/2024
 ---
-# Display content in the title bar
+# Display content in the title bar area using Window Controls Overlay
 
-A PWA can define how it should be displayed on mobile platforms, by using the [display](https://developer.mozilla.org/docs/Web/Manifest/display) member in the web app manifest file.  However, to create an immersive, native-like experience, _desktop_ PWAs can use another  approach.
+A Progressive Web App (PWA) that's installed on the desktop can display content where the title bar normally is, to make the PWA feel more native, by using the Window Controls Overlay API.
+
+The Window Controls Overlay API does the following:
+*  Allows you to display web content over the entire surface area of the app.
+*  Moves the critical system-required window controls into an overlay.
+*  Makes it possible for your content to stay clear of this overlay.
+
+A Progressive Web App (PWA) can define how it should be displayed on mobile platforms, by using the [display](https://developer.mozilla.org/docs/Web/Manifest/display) member in the web app manifest file.  However, to create an immersive, native-like experience, _desktop_ PWAs can use another approach.
 
 By default, a PWA installed on desktop can display content in an area that starts immediately below the reserved title bar area:
 
@@ -20,22 +27,22 @@ Displaying content where the title bar normally is can help PWAs feel more nativ
 
 ![Visual Studio Code displays content in the title bar area](./window-controls-overlay-images/vscode-titlebar.png)
 
-The Window Controls Overlay API does the following:
-*  Allows you to display web content over the entire surface area of the app.
-*  Moves the critical system-required window controls into an overlay.
-*  Makes it possible for your content to stay clear of this overlay.
-
 
 <!-- ====================================================================== -->
 ## Enable the Window Controls Overlay in your app
 
-The first thing to do is to enable the Window Controls Overlay feature in your app's [Web App Manifest file](web-app-manifests.md).  To do this, in the manifest file, set the `display_override` property:
+First, enable the Window Controls Overlay feature in your app's web app manifest file.  To do this, in the manifest file, set the `display_override` property:
 
 ```json
 {
   "display_override": ["window-controls-overlay"]
 }
 ```
+
+See also:
+* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN > References > Web app manifests.
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN > References.
+* [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN > References > Progressive web apps > Guides.
 
 
 <!-- ====================================================================== -->
@@ -86,11 +93,11 @@ The `env()` CSS function takes a second parameter that's useful for defining the
 
 
 <!-- ====================================================================== -->
-## Make regions of your app drag handlers for the window
+## Make a region a drag handle for the window
 
 When the title bar is hidden, only the system-critical window controls remain visible (the **Maximize**, **Minimize**, **Close**, and **App Info** icons).  This means that there is very little space available for users to move the application window around.
 
-You can use the `-webkit-app-region` CSS property to offer more ways for users to drag the app.  For example, if your app has its own titlebar, you can turn its titlebar into a window drag handler:
+You can use the `-webkit-app-region` CSS property to offer more ways for users to drag the app.  For example, if your app has its own titlebar, you can turn its titlebar into a window drag handle:
 
 ```css
 #title-bar {
@@ -145,13 +152,33 @@ if ('windowControlsOverlay' in navigator) {
 
 1DIV is a PWA demo app that uses the Window Controls Overlay feature.
 
-1. In Microsoft Edge, go to [1DIV](https://microsoftedge.github.io/Demos/1DIV/dist/) and install the app.
+1. In Microsoft Edge, open the [1DIV](https://microsoftedge.github.io/Demos/1DIV/dist/) demo app in a new window or tab.
 
-1. Click **Hide title bar** in the app title bar.
+1. In the Address bar, click the **App available. Install 1DIV** (![The "App App available. Install 1DIV" icon](./window-controls-overlay-images/app-available-install-icon.png)) button.  The **Install 1DIV app** dialog opens.
 
-   The app now displays content all the way to the top of the window frame, where the title bar used to be.  The top area of the app is a drag handler, to let users move the window.
+1. Click the **Install** button.  The 1DIV app opens in its own window, with the **App installed** dialog open:
+
+   ![The 1DIV app in its own window, displaying the "App installed" dialog](./window-controls-overlay-images/app-installed-dialog.png)
+
+1. Click the **Close** (X) button of the dialog.  (Or, select or clear checkboxes and then click the **Allow** button.)
+
+   The app's title bar contains at least the following window controls:
+
+   | Icon | Tooltip |
+   | --- | --- |
+   | ![The "Hide title bar" icon](./window-controls-overlay-images/hide-title-bar-icon.png) | **Hide title bar** |
+   | ![The "Settings and more" icon](./window-controls-overlay-images/settings-and-more-icon.png) | **Settings and more** |
+   | ![The "Minimize" icon](./window-controls-overlay-images/minimize-icon.png) | **Minimize** |
+   | ![The "Restore" icon](./window-controls-overlay-images/restore-icon.png) | **Restore** |
+   | ![The "Close" icon](./window-controls-overlay-images/close-icon.png) | **Close** |
+
+1. In the title bar, click the **Hide title bar** (![The "Hide title bar" icon](./window-controls-overlay-images/hide-title-bar-icon.png)) button.
+
+   The app now displays content all the way to the top of the window frame, where the title bar used to be:
 
    ![The top area of the map can be used to move the window](./window-controls-overlay-images/wco-draggable-titlebar.png)
+
+   The top area of the app is a drag handle, to let users move the window.
 
 The source code for this demo app is in the [1DIV](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV) repo.
 
@@ -163,8 +190,20 @@ The source code for this demo app is in the [1DIV](https://github.com/MicrosoftE
 
 
 <!-- ====================================================================== -->
+## Preview the custom overlay without installing the PWA
+
+In Microsoft Edge DevTools, in the **Application** tool, you can simulate the Window Controls Overlay (WCO) feature, without having to install the PWA first and enable the WCO feature.  By simulating the WCO feature from within DevTools, you can test CSS code changes for your title bar area more quickly than by re-installing the revised PWA.
+
+The simulated overlay is a static image.  The values of the CSS variables `env(titlebar-area-left)`, `env(titlebar-area-top)`, `env(titlebar-area-width)`, and `env(titlebar-area-height)` are set to match the platform that you select.
+
+See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
+
+
+<!-- ====================================================================== -->
 ## See also
 
-*   [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
-*   [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
-*   [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)
+* [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md) - DevTools feature.
+* [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
+* [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
+* [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)
+* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN.

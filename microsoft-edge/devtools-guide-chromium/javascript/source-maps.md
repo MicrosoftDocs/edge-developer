@@ -4,8 +4,9 @@ description: Keep your client-side code readable and debuggable even after you c
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 03/02/2022
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 01/29/2024
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -26,56 +27,36 @@ To see and work with your original source code when you're debugging JavaScript 
 
 Source mapping keeps your client-side code readable and debuggable, even after your build process compiles and minifies your code and combines it into a single file.  Source maps map your compiled, minified code to your original source code files.  In DevTools, you can then read and debug your familiar, original source code, instead of the unrecognizable transformed and compiled code.
 
-To use this source mapping technique, you must use pre-processors that can produce source maps.  Make sure your web server can serve source maps.
+To use source maps, you must use a tool when you build your code that can produce source maps. There are many tools available, such as:
 
-<!--
-no longer in original file:
-todo: add link to preprocessors capable of producing source maps when section is available
-/web/tools/setup/setup-preprocessors?#supported_preprocessors
--->
+* [Sass](https://sass-lang.com/) or [PostCSS](https://postcss.org/), which can produce source maps for CSS.
+* The [TypeScript](https://www.typescriptlang.org/) compiler, which compiles TypeScript to JavaScript and can produce source maps to debug the original TypeScript code.
+* The [Babel](https://babeljs.io/) transpiler which can produce both CSS and JavaScript source maps.
+* Build tools like [Webpack](https://webpack.js.org/), [Rollup](https://rollupjs.org/), [Vite](https://vitejs.dev/), and [Parcel](https://parceljs.org/), which can also produce source maps.
 
-
-<!-- ====================================================================== -->
-## Get started with preprocessors
-
-This article explains how to interact with JavaScript source maps in the **Sources** tool.  <!--For a first overview of what preprocessors are, how each may help, and how source maps work; see Set Up CSS & JS Preprocessors.  -->
-
-<!--
-no longer in original file:
-todo: add link to Set Up CSS & JS Preprocessors when section is available
-/web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content
--->
+This article explains how to enable source maps in DevTools, and how to use them to debug your code. It doesn't explain how to produce source maps in your build process. To learn more about publishing source maps to the Azure Artifacts symbol server, see [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](./publish-source-maps-to-azure.md).
 
 
 <!-- ====================================================================== -->
-## Use a supported preprocessor
+## Source maps in DevTools
 
-Use a minifier that is capable of creating source maps.  <!--For the most popular options, see the preprocessor support section.  -->  For an extended view, see the [Source maps: languages, tools and other info](https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info) wiki page.
+Source maps from build tools cause DevTools to load your original files in addition to your minified files, and replace the minified code with the original code. For example:
 
-<!--
-no longer in original file:
-todo: add link to display the preprocessor support section when section is available
-/web/tools/setup/setup-preprocessors?#supported_preprocessors
--->
+* In the **Sources** tool, you can see the original files and set breakpoints in them.
+* In the **Performance** tool, you can see your original function names in the flame chart.
+* In the **Console** tool, you can see your original file names and line numbers in stack traces.
 
-The following types of preprocessors are commonly used in combination with source maps:
+Meanwhile, Microsoft Edge actually runs your minified code to render the webpage. Source maps are only used by DevTools, and only for displaying source code to developers.
 
-*  Transpilers ([Babel](https://babeljs.io), [Traceur](https://github.com/google/traceur-compiler/wiki/Getting-Started)).
-*  Compilers ([Closure Compiler](https://github.com/google/closure-compiler), [TypeScript](https://www.typescriptlang.org), [CoffeeScript](https://coffeescript.org), [Dart](https://www.dartlang.org)).
-*  Minifiers ([UglifyJS](https://github.com/mishoo/UglifyJS)).
+DevTools knows how to load a source map when a `//# sourceMappingURL=` comment is found in a compiled file. For example, the following comment tells DevTools to load the source map from `http://example.com/path/to/your/sourcemap.map`:
+
+```javascript
+//# sourceMappingURL=http://example.com/path/to/your/sourcemap.map
+```
 
 
 <!-- ====================================================================== -->
-## Source maps in the Sources tool
-
-Source maps from preprocessors cause DevTools to load your original files in addition to your minified ones.  You then use the originals to set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code.  The running of the code gives you the illusion of running a development site in production.
-
-When running source maps in DevTools, you should notice that the JavaScript isn't compiled, and all of the individual JavaScript files that it references are displayed.  Source maps in DevTools is using source mapping, but the underlying functionality actually runs the compiled code.
-
-Any errors, logs, and breakpoints map to the original source code, for easier debugging.
-
-
-### Enable source maps in Settings
+## Enable source maps in DevTools
 
 Source maps are enabled by default.
 
@@ -83,38 +64,39 @@ To make sure that source maps are enabled:
 
 1. To open DevTools, in Microsoft Edge, right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, click **Settings** (![Settings icon](./source-maps-images/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, click **Customize and control DevTools** (![The Customize and control DevTools icon](./source-maps-images/customize-and-control-devtools-icon.png)) > **Settings** (![Settings icon](./source-maps-images/settings-gear-icon-light-theme.png)) > **Preferences**.
 
 1. In the **Preferences** page, in the **Sources** section, make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected:
 
    ![The Preferences page's Sources section with the 'Enable source maps' checkboxes selected](./source-maps-images/javascript-settings-preferences-sources-enable-javascript-source-maps.png)
 
-1. In the upper right of **Settings**, click the **Close** (**x**) button.
+1. In the upper right of **Settings**, click the **Close** (![The close icon](./source-maps-images/close-icon.png)) button.
 
 
-### Debugging with source maps
+<!-- ------------------------------ -->
+#### Enable loading source maps from remote file paths
 
-When [debugging your code](index.md#step-4-step-through-the-code) and source maps are enabled, source maps are used in several places:
+By default, DevTools doesn't load source maps when the source map URL is a remote file path, such as when the source map URL starts with `file://` and targets a file that's not on the current device.
 
-*  In the **Console** tool, links from log messages to source files go to the original files, not the compiled files.
+To enable loading source maps from file paths:
 
-*  When stepping through code in the **Sources** tool, the original files are displayed in the **Navigator** pane on the left.
+1. In DevTools, click **Customize and control DevTools** (![The Customize and control DevTools icon](./source-maps-images/customize-and-control-devtools-icon.png)) > **Settings** (![Settings icon](./source-maps-images/settings-gear-icon-light-theme.png)) > **Preferences**.
 
-*  In the **Sources** tool, the links to source files that appear in the **Call Stack** of the **Debugger** pane open the original source files.
+1. In the **Preferences** page, in the **Sources** section, select the checkbox **Allow DevTools to load resources, such as source maps, from remote file paths. Disabled by default for security reasons.**
 
 
 <!-- ====================================================================== -->
-## Use `//# sourceURL` to name evaluated files in the Sources tool
+## Debug with source maps
 
-The `//# sourceURL` pragma, such as `// # sourceURL=myFileName`, is a convention that allows you to make development much easier when working with evaluated JavaScript files.  There can be space characters before or after the `#`.
+When debugging your code and when source maps are enabled, source maps are used in several places:
 
-When loading JavaScript files and evaluating them using the `eval()` function, the **Sources** tool doesn't have a file name to display these files in the **Navigator** pane. By including the following special comment in your code, you can name evaluated files, inline scripts, and styles, so that each one appears as a recognizable file name in the **Sources** tool.  For example:
+*  In the **Console** tool, links from log messages to source files go to the original files, not the compiled files.
 
-```javascript
-//# sourceURL=source.coffee
-```
+*  When stepping through code in the **Sources** tool, the original files are displayed in the **Navigator** pane on the left. When you open an original file, its original code is displayed and you can set breakpoints in it. To learn more about debugging with breakpoints in the **Sources** tool, see [Pause code with breakpoints](./breakpoints.md).
 
-<!-- This pragma isn't part of the source map specification. -->
+*  In the **Sources** tool, the links to source files that appear in the **Call Stack** of the **Debugger** pane open the original source files.
+
+*  In the **Performance** tool, the flame chart displays the original function names, not the compiled function names.
 
 
 <!-- ====================================================================== -->
@@ -128,7 +110,7 @@ When loading JavaScript files and evaluating them using the `eval()` function, t
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/source-maps/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) and [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/source-maps/) and is authored by Meggin Kearney and Paul Bakaus.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

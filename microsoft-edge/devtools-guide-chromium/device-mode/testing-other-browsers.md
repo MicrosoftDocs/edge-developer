@@ -1,11 +1,12 @@
 ---
 title: Emulate and test other browsers
-description: Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though Device Emulation (Device Mode) can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
+description: Learn to test your website on other browsers, to make sure your website works well for all users.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 02/24/2023
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/17/2024
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -22,62 +23,63 @@ ms.date: 02/24/2023
    limitations under the License.  -->
 # Emulate and test other browsers
 
-Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though the [Device Emulation](index.md) tool can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
+To make sure your website works for all your users, test your website on other browsers and devices. Not all of your users will be using the browser and device that you used when developing. We encourage you to check out solutions for emulation provided by other browsers, in addition to using the **Device Emulation** tool in Microsoft Edge DevTools.
 
 
 <!-- ------------------------------ -->
 #### Summary
 
-*  When you don't have a particular device, or want to do a spot check on something, the best option is to emulate the device right inside your browser.
+There are several different levels of testing that you can do to test your website under different conditions:
 
-*  Device emulators and simulators enable you to mimic your development site on a range of devices, from your workstation.
+* **Browser emulators** help you to quickly test how your website looks and behaves at different screen sizes and resolutions, with touch event emulation, and by overriding the User-Agent string that the browser sends.  You use browser emulators from the browser that you're developing on.  See [Browser emulators](#browser-emulators), below.
 
-*  Cloud-based emulators enable you to automate unit tests for your site across different platforms.
+* **Device emulators and simulators** enable you to run other devices from your development machine and test your website as if you were using these other devices.  See [Device emulators and simulators](#device-emulators-and-simulators), below.
+
+* **Cloud-based emulators** enable you to run automated tests for your website across different platforms.  See [Cloud-based emulators and simulators](#cloud-based-emulators-and-simulators), below.
 
 
 <!-- ====================================================================== -->
 ## Browser emulators
 
-Browser emulators are great for testing the responsiveness of a site.  But a browser emulator doesn't emulate differences in API, CSS support, and certain behaviors that manifest only on a mobile browser on an actual device.  Test your site on browsers running on real devices, to be certain everything behaves as expected.
+Browser emulators are great for testing the way your website looks and behaves at different screen sizes and resolutions, or when touch events are enabled, or when the User-Agent string is set to another browser's User-Agent string.
 
+You use browser emulators from the browser you're developing on. For example, in Microsoft Edge, you can use the **Device Emulation** tool in DevTools to get an approximation of how your website looks and behaves on different devices.  For more information on how to use the **Device Emulation** tool in Microsoft Edge DevTools, see [Emulate mobile devices (Device Emulation)](./index.md).
 
-<!-- ------------------------------ -->
-#### Firefox Responsive Design View
+Browser emulators don't emulate differences in web API support or CSS support.  For example, the **Device Emulation** tool in Microsoft Edge doesn't emulate how the different web APIs or CSS features that your site might be using are supported in Firefox or Safari.  To be certain everything behaves as expected, test your site on browsers running on real devices.
 
-Firefox has a [responsive design view](https://developer.mozilla.org/docs/Tools/Responsive_Design_View) that encourages you to stop thinking in terms of specific devices and instead explore how your design changes at common screen sizes, or on your own screen size by dragging the edges of the window.
+Here are some browser emulators you can use to test your website on other browsers:
 
-
-<!-- ------------------------------ -->
-#### EdgeHTML emulation
-
-To emulate Windows Phones, use the Microsoft Edge (EdgeHTML) [built-in emulation](/archive/microsoft-edge/legacy/developer/devtools-guide/emulation).
-
-Use [IE 11 Emulation](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85)) to simulate how your page might look in older versions of Internet Explorer.
+* [Firefox Responsive Design Mode](https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/index.html).
+* [Chrome Device Mode](https://developer.chrome.com/docs/devtools/device-mode).
+* [Safari Responsive Design Mode](https://developer.apple.com/documentation/safari-developer-tools/responsive-design-mode).
 
 
 <!-- ====================================================================== -->
 ## Device emulators and simulators
 
-Device simulators and emulators simulate not just the browser environment but the entire device.  Each simulator is useful to test things that require OS integration, such as form input with virtual keyboards.
+Device simulators and emulators simulate the entire device, rather than just simulating the browser environment.  Each simulator is useful to test aspects that require integration with the particular operating system, such as form input by using mobile device keyboards.
+
+You install device emulators and simulators on your development machine, so that you can continue to test your website on the same machine on which you're developing, while simulating the experience of using a different device.
 
 
 <!-- ------------------------------ -->
 #### Android emulator
 
-<!--
-![Stock Browser in Android Emulator](../media/device-mode-android-emulator-stock-browser.png)
--->
+At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you can use the Android Browser, the Chromium Content Shell, and Firefox for Android, which are covered later in this article.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without browser-specific features.
 
-At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you can use the Android Browser, the Chromium Content Shell, and Firefox for Android, which we review later in this article.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without browser-specific features.
+To use the Android emulator:
 
-The Android emulator comes with the Android SDK which you need to download as part of [Android Studio](https://developer.android.com/sdk/installing/studio.html).  Then follow the instructions to [set up a virtual device](https://developer.android.com/tools/devices/managing-avds.html) and [start the emulator](https://developer.android.com/tools/devices/emulator.html).
-After your emulator is booted, select the **Browser** icon, and test your site on the old Stock Browser for Android.
+1. Download the Android emulator, which is packaged as part of the Android SDK, by downloading [Android Studio](https://developer.android.com/sdk/installing/studio.html).
 
+1. Set up a virtual device, by following the steps in [Create and manage virtual devices](https://developer.android.com/tools/devices/managing-avds.html).
+
+1. Start the emulator, by following the steps in [Run apps on the Android Emulator](https://developer.android.com/tools/devices/emulator.html).
+
+1. After your emulator is booted, select the **Browser** icon, and test your website on the old Stock Browser for Android.
+
+
+<!-- ---------- -->
 ###### Chromium content shell on Android
-
-<!--
-![Android Emulator Content Shell](../media/device-mode-android-avd-contentshell.png)
--->
 
 To install the Chromium Content Shell for Android, keep your emulator running and run the following command:
 
@@ -87,13 +89,11 @@ chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
 ```
 
-Now you can test your site with the Chromium Content Shell.
+Now you can test your website with the Chromium Content Shell.
 
+
+<!-- ---------- -->
 ###### Firefox on Android
-
-<!--
-![Firefox Icon on Android Emulator](../media/device-mode-ff-on-android-emulator.png)
--->
 
 Similar to the Chromium Content Shell, you can get an APK to install Firefox onto the emulator.
 
@@ -113,40 +113,57 @@ The iOS simulator for Mac OS X comes with Xcode, which you [install from the App
 
 When you are done, learn how to work with the simulator through [Apple Developer documentation](https://help.apple.com/simulator/mac/current).
 
-> [!NOTE]
-> To avoid having to open Xcode every time you want to use the iOS Simulator, open <!--Xcode, or iOS Simulator?-->it, right-click the iOS Simulator icon in your dock, and then select **Keep in Dock**.  Now just click the icon whenever you need it.
+To avoid having to open Xcode every time you want to use the iOS Simulator, open the iOS Simulator, right-click the iOS Simulator icon in your dock, and then select **Keep in Dock**.  Now you can just click the icon whenever you need it.
 
 
 <!-- ------------------------------ -->
-#### Microsoft Edge (EdgeHTML)
+#### Virtual machines
 
-If you need to test your website or app with Microsoft browsers and don't have the necessary versions of Windows to do so, you can use BrowserStack, which supports testing of many combinations of Microsoft browsers and operating systems both past and present.  For example, you can test all versions of Microsoft Edge (Chromium) from version 80 onwards, and Microsoft Edge (EdgeHTML) versions 15 through 18.  Testing of Microsoft Edge is free on BrowserStack.  For more information, see [Microsoft Edge Browser Testing](https://www.browserstack.com/test-on-microsoft-edge-browser) at BrowserStack.
+To test your website on other operating systems, you can run virtual machines on your development device. For example, **Hyper-V** is a virtualization tool that lets you run various versions of Windows and Linux. To learn more, see [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/).
+
+For other virtual machines, see [Virtual machines](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Testing_strategies#virtual_machines) in _Strategies for carrying out testing_ at MDN.
 
 
 <!-- ====================================================================== -->
 ## Cloud-based emulators and simulators
 
-If you aren't able to use the emulators and you don't have access to real devices, then cloud-based emulators are the next-best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you can automate unit tests for your site across different platforms.
+Cloud-based emulators and simulators are commercial solutions to test your website on different devices and browsers without installing anything on your development machine.  They are useful when you don't have access to real devices or when you can't use local emulators. Cloud-based solutions are also useful for automating tests across different platforms.
 
-The following list is a sample of cloud-based emulators and testing sites. Review the descriptions for features or capabilities to consider when selecting a testing site. Conduct your own search to find the best cloud-based emulator for your needs.
+See [Emulators](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Testing_strategies#emulators) in _Strategies for carrying out testing_ at MDN.
 
-* [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
 
-* [Mobileum](https://www.mobileum.com/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
+<!-- ====================================================================== -->
+## See also
+<!-- all links that are in the article -->
 
-* [HeadSpin](https://www.headspin.io/) helps you perform manual cross-browser testing on thousands of real devices, browsers, and operating systems.  You can record videos of complex bugs and share them through integration such as Slack, JIRA, and more.  Fast forward your go-to-market launch by testing in parallel.
+* [Emulate mobile devices (Device Emulation)](./index.md)
+* [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/)
 
-* [LambdaTest](https://www.lambdatest.com/) helps you perform manual cross-browser testing on a combination of various browsers and operating systems.  You can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more.  You can speed-up your testing by running tests in parallel.
+Responsive design:
+* [Responsive Design Mode](https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/index.html) - Firefox.
+* [Simulate mobile devices with device mode](https://developer.chrome.com/docs/devtools/device-mode) - Chrome.
+* [Responsive Design Mode](https://developer.apple.com/documentation/safari-developer-tools/responsive-design-mode) - Safari.
 
-* [SauceLabs](https://saucelabs.com) enables you to run unit tests inside of an emulator, which can be useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You can also do manual testing with your site.
+Android:
+* [Android Studio](https://developer.android.com/sdk/installing/studio.html)
+* [Create and manage virtual devices](https://developer.android.com/tools/devices/managing-avds.html) - to set up a virtual device.
+* [Run apps on the Android Emulator](https://developer.android.com/tools/devices/emulator.html) - to start the emulator.
+* [Choose which Firefox Browser to download in your language: Firefox Android Beta](https://www.mozilla.org/firefox/all/#product-android-beta) - to download the correct .apk file.
 
-* [TestingBot](https://testingbot.com/) helps you do both manual testing and automated testing on various browser and operating system combinations.  Test both your websites and mobile apps on TestingBot's emulators and physical devices.
+Apple:
+* [Xcode](https://itunes.apple.com/app/xcode/id497799835)
+* [Simulator Help](https://help.apple.com/simulator/mac/current)
+
+MDN:
+* [Strategies for carrying out testing](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Testing_strategies) at MDN.<!--present article doesn't have this non-anchor link-->
+   * [Emulators](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Testing_strategies#emulators)
+   * [Virtual machines](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Testing_strategies#virtual_machines)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/device-mode/testing-other-browsers/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) and [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate at Google | Tools, Performance, Animation, UX).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/device-mode/testing-other-browsers/) and is authored by Meggin Kearney and Paul Bakaus.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

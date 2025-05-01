@@ -1,0 +1,338 @@
+### YamlMime:Landing
+# WebView2 landing page
+title: WebView2 documentation
+summary: Embed web technologies (HTML, CSS, and JavaScript) in your native apps.
+
+metadata:
+  # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
+  # description: default to root title above. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-edge
+  ms.subservice: webview
+  ms.topic: landing-page
+  # ms.collection: collection # Optional; Remove if no collection is used.
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 11/19/2024
+
+# =============================================================================
+# Valid article types (sections of a card)
+
+      # - linkListType: architecture
+      # - linkListType: concept
+      # - linkListType: deploy
+      # - linkListType: download
+      # - linkListType: get-started
+      # - linkListType: how-to-guide
+      # - linkListType: overview
+      # - linkListType: quickstart
+      # - linkListType: reference
+      # - linkListType: sample
+      # - linkListType: training
+      # - linkListType: tutorial
+      # - linkListType: video
+      # - linkListType: whats-new
+
+# =============================================================================
+landingContent:
+
+# =============================================================================
+# Row 1
+# -----------------------------------------------------------------------------
+# Card r1c1
+  - title: Introduction and overview
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Introduction to Microsoft Edge WebView2
+            url: ../index.md
+
+          - text: Overview of WebView2 APIs
+            url: ../concepts/overview-features-apis.md
+
+          - text: Differences between Microsoft Edge and WebView2
+            url: ../concepts/browser-features.md
+
+          - text: Set up your Dev environment for WebView2
+            url: ../how-to/machine-setup.md
+
+      - linkListType: whats-new
+        links:
+          - text: Release Notes for the WebView2 SDK
+            url: ../release-notes/index.md
+
+      - linkListType: how-to-guide
+        links:
+          - text: WebView2 end-user FAQ
+            url: ../concepts/end-user-faq.md
+
+# -----------------------------------------------------------------------------
+# Card r1c2
+  - title: Platforms and samples
+    linkLists:
+      - linkListType: sample
+        links:
+          - text: WebView2 sample apps
+            url: ../code-samples-links.md  # delete & redir?
+
+          - text: Win32 sample app
+            url: ../samples/webview2apissample.md
+
+          - text: Win32 sample WebView2Browser
+            url: ../samples/webview2browser.md
+
+          - text: WinUI 2 (UWP) sample app
+            url: ../samples/webview2_sample_uwp.md
+
+          - text: WinUI 3 (Windows App SDK) sample app
+            url: ../samples/webview2-winui3-sample.md
+
+          - text: WPF sample app
+            url: ../samples/webview2wpfbrowser.md
+
+          - text: WinForms sample app
+            url: ../samples/webview2windowsformsbrowser.md
+
+      - linkListType: tutorial
+        links:
+          - text: Getting Started tutorials
+            url: ../get-started/get-started.md  # delete & redir?
+
+          - text: Get started with WebView2 in HoloLens 2 Unity apps (Preview)
+            url: ../get-started/hololens2.md
+
+# -----------------------------------------------------------------------------
+# Card r1c3
+  - title: Support and community
+    linkLists:
+      - linkListType: training
+        links:
+          - text: WebView2Announcements repo
+            url: https://github.com/MicrosoftEdge/WebView2Announcements
+
+          - text: WebView2Feedback repo
+            url: https://github.com/MicrosoftEdge/WebView2Feedback
+
+          - text: Contact the WebView2 team
+            url: ../contact.md
+
+# =============================================================================
+# Row 2
+# -----------------------------------------------------------------------------
+# Card r2c1
+  - title: Navigation, events, and authentication
+    linkLists:
+      - linkListType: architecture
+        links:
+          - text: "Main classes for WebView2: Environment, Controller, and Core"
+            url: ../concepts/environment-controller-core.md
+
+      - linkListType: how-to-guide
+        links:
+          - text: Navigation events for WebView2 apps
+            url: ../concepts/navigation-events.md
+
+          - text: Handling process-related events in WebView2
+            url: ../concepts/process-related-events.md
+
+          - text: Basic authentication for WebView2 apps
+            url: ../concepts/basic-authentication.md
+
+          - text: Windowed vs. visual hosting of WebView2
+            url: ../concepts/windowed-vs-visual-hosting.md
+
+# -----------------------------------------------------------------------------
+# Card r2c2
+  - title: Customization and UI
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Customizing the UI of WebView2 apps
+            url: ../how-to/customize-ui.md
+
+          - text: Custom management of network requests
+            url: ../how-to/webresourcerequested.md
+
+          - text: Using frames in WebView2 apps
+            url: ../concepts/frames.md
+
+          - text: Printing from WebView2 apps
+            url: ../how-to/print.md
+
+          - text: Using local content in WebView2 apps
+            url: ../concepts/working-with-local-content.md
+
+          - text: Customize context menus in WebView2
+            url: ../how-to/context-menus.md
+
+      - linkListType: reference
+        links:
+          - text: WebView2 browser flags
+            url: ../concepts/webview-features-flags.md
+
+# -----------------------------------------------------------------------------
+# Card r2c3
+  - title: Web and native interop
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Interop of native and web code
+            url: ../how-to/communicate-btwn-web-native.md
+
+          - text: Call web-side code from native-side code
+            url: ../how-to/javascript.md
+
+          - text: Call native-side code from web-side code
+            url: ../how-to/hostobject.md
+
+          - text: Call native-side WinRT code from web-side code
+            url: ../how-to/winrt-from-js.md
+
+      - linkListType: architecture
+        links:
+          - text: How WinRT types and members are represented in JavaScript
+            url: ../how-to/winrt-js-conversion.md
+
+# =============================================================================
+# Row 3
+# -----------------------------------------------------------------------------
+# Card r3c1
+  - title: Test and automation for WebView2 apps
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Test upcoming APIs and features
+            url: ../how-to/set-preview-channel.md
+
+          - text: Use the Chrome DevTools Protocol (CDP) in WebView2 apps
+            url: ../how-to/chromium-devtools-protocol.md
+
+          - text: Use Playwright to automate and test in WebView2
+            url: ../how-to/playwright.md
+
+          - text: Automate and test WebView2 apps with Microsoft Edge WebDriver
+            url: ../how-to/webdriver.md
+
+          - text: Prerelease testing using preview channels
+            url: ../how-to/prerelease-testing.md
+
+          - text: Self-host by deploying preview channels
+            url: ../how-to/self-hosting.md
+
+# -----------------------------------------------------------------------------
+# Card r3c2
+  - title: Best practices
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Development best practices for WebView2 apps
+            url: ../concepts/developer-guide.md
+
+          - text: Develop secure WebView2 apps
+            url: ../concepts/security.md
+
+# -----------------------------------------------------------------------------
+# Card r3c3
+  - title: Distribution and SDK versions
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Deployment and distribution
+            url: ../concepts/deployment-distribution.md
+
+          - text: Prerelease and Release SDKs for WebView2
+            url: ../concepts/versioning.md
+
+          - text: Distribute your app and the WebView2 Runtime
+            url: ../concepts/distribution.md
+
+          - text: Enterprise management of WebView2 Runtimes
+            url: ../concepts/enterprise.md
+
+          - text: Distribute an app as a single executable file
+            url: ../how-to/static.md
+
+          - text: Publish a UWP WebView2 app to the Microsoft Store
+            url: ../how-to/publish-uwp-app-store.md
+
+      - linkListType: sample
+        links:
+          - text: WebView2 deployment samples
+            url: ../samples/deployment-samples.md
+
+          - text: WebView2 Deployment Visual Studio installer
+            url: ../samples/wv2deploymentvsinstallersample.md
+
+          - text: WiX Burn Bundle to deploy the WebView2 Runtime
+            url: ../samples/wv2deploymentwixburnbundlesample.md
+
+          - text: WiX Custom Action to deploy the WebView2 Runtime
+            url: ../samples/wv2deploymentwixcustomactionsample.md
+
+# =============================================================================
+# Row 4
+# -----------------------------------------------------------------------------
+# Card r4c1
+  - title: Architecture and Reference
+    linkLists:
+      - linkListType: architecture
+        links:
+          - text: Process model for WebView2 apps
+            url: ../concepts/process-model.md
+
+          - text: Threading model for WebView2 apps
+            url: ../concepts/threading-model.md
+
+      - linkListType: reference
+        links:
+          - text: WebView2 API Reference
+            url: ../webview2-api-reference.md
+
+# -----------------------------------------------------------------------------
+# Card r4c2
+  - title: User data and history
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage user data folders
+            url: ../concepts/user-data-folder.md
+
+          - text: Support multiple profiles under a single user data folder
+            url: ../concepts/multi-profile-support.md
+
+          - text: Clear browsing data from the user data folder
+            url: ../concepts/clear-browsing-data.md
+
+      - linkListType: concept
+        links:
+          - text: Data and privacy in WebView2
+            url: ../concepts/data-privacy.md
+
+# -----------------------------------------------------------------------------
+# Card r4c3
+  - title: Debug WebView2 apps
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Debug WebView2 apps
+            url: ../how-to/debug.md
+
+          - text: Debug WebView2 apps with Microsoft Edge DevTools
+            url: ../how-to/debug-devtools.md
+
+          - text: Debug WebView2 apps with Visual Studio Code
+            url: ../how-to/debug-visual-studio-code.md
+
+          - text: Debug WebView2 apps with Visual Studio
+            url: ../how-to/debug-visual-studio.md
+
+          - text: Remote debugging WebView2 WinUI 2 (UWP) apps
+            url: ../how-to/remote-debugging.md
+
+          - text: Remote debugging desktop WebView2 WinUI 2 (UWP) apps
+            url: ../how-to/remote-debugging-desktop.md
+
+          - text: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
+            url: ../how-to/remote-debugging-hololens.md
+
+          - text: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
+            url: ../how-to/remote-debugging-xbox.md

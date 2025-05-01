@@ -4,8 +4,8 @@ description: This WebView2 sample demonstrates how to use the Chrome DevTools Pr
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 07/20/2022
 ---
 # WPF sample app with CDP extension
@@ -17,7 +17,7 @@ This WebView2 sample demonstrates how to use the WebView2 CDP extension to use t
 
 *  Sample name: **WV2CDPExtensionWPFSample**
 *  Repo directory: [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample)
-*  Solution file: **WV2CDPExtensionWPFSample.sln**
+*  Solution file: `WV2CDPExtensionWPFSample.sln`
 
 This sample, **WV2CDPExtensionWPFSample**, is built with the WebView2 CDP Extension (the **Microsoft.Web.WebView2.DevToolsProtocolExtension** NuGet package).  This sample calls Chrome DevTools Protocol methods on a `DevToolsProtocolHelper` object in WebView2.
 
@@ -38,17 +38,7 @@ If this is your first time using WebView2, we recommend first following the [Get
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install a preview channel of Microsoft Edge
-
-<!-- readme said "Prerequisites: Microsoft Edge (Chromium) installed on a supported OS. Currently we recommend the latest version of the Edge Canary channel." -->
-
-We recommend the latest version of the Canary channel.
-
-1.  If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 2 - Install Visual Studio with .NET support
+## Step 1 - Install Visual Studio with .NET support
 
 <!-- readme said "Prerequisites: Visual Studio with .NET support installed." -->
 Microsoft Visual Studio (with .NET support) is required.  Microsoft Visual Studio Code is not supported for this sample.
@@ -57,13 +47,13 @@ Microsoft Visual Studio (with .NET support) is required.  Microsoft Visual Studi
 
 
 <!-- ====================================================================== -->
-## Step 3 - Clone or download the WebView2Samples repo
+## Step 2 - Clone or download the WebView2Samples repo
 
-1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Open the solution in Visual Studio
+## Step 3 - Open the solution in Visual Studio
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
@@ -78,7 +68,7 @@ To use Visual Studio 2017, you might also need to install a recent Windows SDK.
 
 
 <!-- ====================================================================== -->
-## Step 5 - Install workloads if prompted
+## Step 4 - Install workloads if prompted
 
 1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
@@ -88,7 +78,7 @@ To use Visual Studio 2017, you might also need to install a recent Windows SDK.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Build and run the project with installed version of SDKs
+## Step 5 - Build and run the project with installed version of SDKs
 
 A version of the WebView2 SDK and the WebView2 DevToolsProtocolExtension are included as NuGet packages in this project.  In a later step, you'll update these by using Visual Studio's NuGet Package Manager.<!-- Right-click the project, and then select **Manage NuGet Packages**. -->
 
@@ -112,7 +102,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 7 - Update the WebView2 SDK
+## Step 6 - Update the WebView2 SDK
 
 <!-- readme said "Prerequisites: Latest version of our WebView2 SDK, which is included in this project."  doesn't specify "release" or "prerelease" -->
 1. In Solution Explorer, right-click the project (not the solution node) and then select **Manage NuGet Packages**.  **NuGet Package Manager** opens.
@@ -131,7 +121,7 @@ If you want to see details about this step, in a separate window or tab, see [In
 
 
 <!-- ====================================================================== -->
-## Step 8 - Update the WebView2 CDP Extension
+## Step 7 - Update the WebView2 CDP Extension
 
 A prerequisite for this sample is the latest release version of the WebView2 CDP Extension (**Microsoft.Web.WebView2.DevToolsProtocolExtension**), which is included in this project.  That package adds support for the Chrome DevTools Protocol (CDP) API.
 
@@ -153,7 +143,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Step 9 - Build and run the project with updated packages
+## Step 8 - Build and run the project with updated packages
 
 1. In Visual Studio, select **Debug** > **Start Debugging** (**F5**).
 
@@ -165,7 +155,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Step 10 - Inspect the code
+## Step 9 - Inspect the code
 
 1. In the Visual Studio code editor, inspect the code:
 

@@ -4,8 +4,8 @@ description: This WebView2 sample demonstrates how to deploy a WebView2 app by u
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 06/17/2022
 ---
 # WebView2 Deployment Visual Studio installer
@@ -143,7 +143,7 @@ If you want to package the Evergreen WebView2 Runtime Standalone Installer with 
 
 1. Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebView2RuntimeInstallerX64.exe"` so that the Visual Studio installer is using the Standalone Installer.
 
-1. If you're targeting non-X64 devices, edit the `MicrosoftEdgeWebView2RuntimeInstallerX64` filename to reflect the correct architecture.
+1. If you're targeting non-X64 devices, edit the `MicrosoftEdgeWebView2RuntimeInstallerX64` file name to reflect the correct architecture.
 
 1. Save the file.
 

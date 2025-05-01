@@ -4,7 +4,8 @@ description: Get started with remote debugging WebViews in native Android apps u
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Meggin Kearney
@@ -22,18 +23,16 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Remotely debug Android WebViews
 
-Debug Android WebViews in your native Android apps using Microsoft Edge Developer Tools.
+Debug Android WebViews in your native Android apps using Microsoft Edge Developer Tools, as follows:
+*  Turn on Android WebView debugging in your native Android app; debug Android WebViews in Microsoft Edge DevTools.
+*  To display the list of the Android WebViews with debugging turned on, go to `edge://inspect`.
+*  Debug Android WebViews in the same way you debug a webpage through [remote debugging](index.md).
+
+Details are below.
 
 On Android 4.4 (KitKat) or later, use DevTools to debug WebView content in native Android apps.
 
 Android WebView is not related to [Microsoft Edge WebView2](../../webview2/index.md).
-
-
-### Summary
-
-*  Turn on Android WebView debugging in your native Android app; debug Android WebViews in Microsoft Edge DevTools.
-*  To display the list of the Android WebViews with debugging turned on, go to `edge://inspect`.
-*  Debug Android WebViews in the same way you debug a webpage through [remote debugging](index.md).
 
 
 <!-- ====================================================================== -->
@@ -87,7 +86,7 @@ If your Android WebViews aren't displayed on the `edge://inspect` page:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/remote-debugging/webviews/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/remote-debugging/webviews/) and is authored by Meggin Kearney.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).

@@ -4,8 +4,9 @@ description: How to analyze HTML pages using the Inspect tool in Microsoft Edge 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 12/16/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/18/2023
 ---
 # Analyze pages using the Inspect tool
 
@@ -25,11 +26,11 @@ To try out the **Inspect** tool:
 
 1. Right-click anywhere in the demo webpage and then select **Inspect**, to open DevTools.
 
-1. In the upper left corner of DevTools, click the **Inspect tool** (![Inspect tool icon](./inspect-images/inspect-tool-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+C** (Windows, Linux) or **Command+Shift+C** (macOS).
+1. In the upper left corner of DevTools, click the **Inspect tool** (![Inspect tool icon](./inspect-images/icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+C** (Windows, Linux) or **Command+Shift+C** (macOS).
 
-   ![The Inspect tool button in the upper left of DevTools](./inspect-images/inspect-tool-button.png)
+   ![The Inspect tool button in the upper left of DevTools](./inspect-images/button.png)
 
-   The button icon turns blue (![The Inspect icon](./inspect-images/inspect-tool-icon-blue-light-theme.png)), indicating that the **Inspect** tool is active.
+   The button icon turns blue (![The Inspect icon](./inspect-images/icon-blue-light-theme.png)), indicating that the **Inspect** tool is active.
 
 1. In the rendered webpage, hover over items and watch the information overlay and grid highlighting.
 
@@ -43,7 +44,7 @@ To try out the **Inspect** tool:
 
 When the **Inspect** tool is active, hovering over any element on the rendered webpage displays the **Inspect** overlay.  The **Inspect** overlay displays general and accessibility information about that element.
 
-![The Inspect tool overlay on a rendered page, showing information about an `h1` heading element](./inspect-images/inspect-tool-padding-margin.png)
+![The Inspect tool overlay on a rendered page, showing information about an `h1` heading element](./inspect-images/padding-margin.png)
 
 When you hover over a page element on the rendered page, the DOM tree automatically expands to highlight the element that you are hovering over.
 
@@ -57,7 +58,7 @@ The **Inspect** overlay shows the following information about the element:
 
 Which information is shown depends on the type of element and the styles applied to it.  If the element is positioned using CSS grid or CSS flexbox, a different icon appears next to the element's name in the Inspect overlay:
 
-![An element that uses CSS flexbox has an extra icon next to its name in the Inspect overlay](./inspect-images/inspect-tool-flexbox-element.png)
+![An element that uses CSS flexbox has an extra icon next to its name in the Inspect overlay](./inspect-images/flexbox-element.png)
 
 The **Accessibility** section of the **Inspect** overlay displays information about:
 
@@ -67,7 +68,7 @@ The **Accessibility** section of the **Inspect** overlay displays information ab
 
 For example, in the [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect) page, for the `Bad Contrast` button, the **Inspect** overlay has a warning icon next to the contrast value of 1.77.  The **Inspect** overlay also shows that the button isn't focusable via keyboard.  The button can't be navigated to via keyboard, because the button is implemented as a `<div>` element with a class of `button`, instead of being implemented as a `<button>` element.
 
-![Elements that lack sufficient contrast have a warning icon](./inspect-images/inspect-tool-bad-contrast.png)
+![Elements that lack sufficient contrast have a warning icon](./inspect-images/bad-contrast.png)
 
 
 <!-- ====================================================================== -->
@@ -75,11 +76,11 @@ For example, in the [Inspect Demo](https://microsoftedge.github.io/Demos/devtool
 
 Elements that have the CSS property of `pointer-events: none` aren't available to the **Inspect** tool.  In the [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect) page, hover over the `Overlay Button` and you will see that the parent element (`div.wrapper`) is shown instead of the `Overlay Button`.
 
-![An element that has a CSS property of 'pointer events: none' can't be selected](./inspect-images/inspect-tool-element-element-without-pointer-events.png)
+![An element that has a CSS property of 'pointer events: none' can't be selected](./inspect-images/element-element-without-pointer-events.png)
 
 To inspect elements that have the CSS property of `pointer-events: none`, press **Shift** while hovering over the element.  There's also a color overlay on page layout regions, indicating that you are in an advanced selection mode.
 
-![Pressing the Shift key while selecting elements on the page allows you to select elements that have a CSS style property of 'pointer-events: none'](./inspect-images/inspect-tool-with-shift.png)
+![Pressing the Shift key while selecting elements on the page allows you to select elements that have a CSS style property of 'pointer-events: none'](./inspect-images/with-shift.png)
 
 
 <!-- ====================================================================== -->
@@ -91,7 +92,7 @@ When you click an element in the rendered page:
 *  The corresponding DOM node is highlighted.
 *  The **Styles** tool shows the CSS that's applied to the element.
 
-![When you click an element in the rendered page, the Styles tool shows the styles that are applied to the element](./inspect-images/inspect-tool-highlighted-styles.png)
+![When you click an element in the rendered page, the Styles tool shows the styles that are applied to the element](./inspect-images/highlighted-styles.png)
 
 
 <!-- ====================================================================== -->
@@ -112,4 +113,3 @@ To hide the **Inspect** tool's overlay while you move the mouse pointer over the
 ## See also
 
 * [Use the Inspect tool to detect accessibility issues by hovering over the webpage](../accessibility/test-inspect-tool.md)
-* [Overview of accessibility testing using DevTools](../accessibility/accessibility-testing-in-devtools.md) - long article that's a superset of the above linked article.

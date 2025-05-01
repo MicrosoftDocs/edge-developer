@@ -4,8 +4,8 @@ description: How to remotely debug desktop WebView2 WinUI 2 (UWP) apps by using 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 09/27/2023
 ---
 # Remote debugging desktop WebView2 WinUI 2 (UWP) apps
@@ -36,11 +36,11 @@ Attach Microsoft Edge DevTools remotely to a desktop WebView2 WinUI 2 (UWP) app 
 
     ![Install Windows Developer Mode package](./remote-debugging-desktop-images/install-developer-mode-package.png)
 
-    After the installation is complete, note the URL that will be used for the remote debugging connection. To find this URL, expand the **Device Portal** dropdown.  In this case, the Device Portal URL that will be used is `http://localhost:50080`:
+    After the installation is complete, note the URL that will be used for the remote debugging connection. To find this URL, expand the **Device Portal** dropdown list.  In this case, the Device Portal URL that will be used is `http://localhost:50080`:
 
     ![Remote Debugging URL](./remote-debugging-desktop-images/remote-debugging-url.png)
 
-1.  Install [Remote Tools for Microsoft Edge](https://www.microsoft.com/store/productId/9P6CMFV44ZLT) from the Microsoft Store.
+1.  Install [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) from the Microsoft Store.
 
 1.  In Microsoft Edge, go to the Device Portal URL that you previously noted.  Verify that the **Confirm security settings** page is loaded (in the **Windows Device Portal** tab):
 

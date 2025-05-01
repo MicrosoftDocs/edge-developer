@@ -4,12 +4,13 @@ description: Automatically test a webpage for accessibility issues by using the 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 06/07/2021
 ---
 # Automatically test a webpage for accessibility issues
 
-The **Issues** tool includes an **Accessibility** section that automatically reports issues such as missing alternative text on images, missing labels on form fields, and insufficient contrast of text colors.  The **Issues** tool is within the **Drawer** at the bottom of DevTools.  This article uses the accessibility-testing demo webpage to step through using the **Accessibility** section of the **Issues** tool.
+The **Issues** tool includes an **Accessibility** section that automatically reports issues such as missing alternative text on images, missing labels on form fields, and insufficient contrast of text colors.  By default, the **Issues** tool is open in the **Quick View** panel at the bottom of DevTools.  This article uses the accessibility-testing demo webpage to step through using the **Accessibility** section of the **Issues** tool.
 
 There are several ways to open the **Issues** tool, such as:
 
@@ -33,7 +34,7 @@ There are several ways to open the **Issues** tool, such as:
 
 1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
 
-1. Click the **Issues counter**.  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
+1. Click the **Issues counter**.  The **Issues** tool opens in the **Quick View** panel at the bottom of DevTools:
 
    ![Accessibility warnings displayed in the Issues tool](./test-issues-tool-images/a11y-testing-accessibility-issues.png)
 
@@ -49,7 +50,7 @@ To check whether input fields have labels connected to them, use the **Issues** 
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. In the upper right, click the **Issues counter** (![Issues counter](./test-issues-tool-images/issues-counter-icon.png)).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
+1. In the upper right, click the **Issues counter** (![Issues counter](./test-issues-tool-images/issues-counter-icon.png)).  The **Issues** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. On the **Issues** tab, expand the **Accessibility** section.
 
@@ -95,7 +96,7 @@ There's also another way to test for lack of connections between elements:
 
 Basic accessibility testing requires making sure alternative text (also called _alt text_) is provided for images.
 
-To automatically check whether alt text is provided for images, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.
+To automatically check whether alt text is provided for images, use the **Issues** tool, which has an **Accessibility** section.  By default, the **Issues** tool is open in the **Quick View** panel at the bottom of DevTools.
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
@@ -113,7 +114,7 @@ See [Images must have alternate text](https://dequeuniversity.com/rules/axe/4.1/
 <!-- ====================================================================== -->
 ## Verify that text colors have enough contrast
 
-To automatically check whether text colors have enough contrast, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.
+To automatically check whether text colors have enough contrast, use the **Issues** tool, which has an **Accessibility** section.  By default, the **Issues** tool is open in the **Quick View** panel at the bottom of DevTools.
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
@@ -132,7 +133,8 @@ To automatically check whether text colors have enough contrast, use the **Issue
    ![Element in the webpage highlighted after clicking a link in the Affected Resources section](./test-issues-tool-images/a11y-testing-element-with-contrast-issues.png)
 
 
-### Wavy underlines in the DOM tree indicate automatically detected issues
+<!-- ------------------------------ -->
+#### Wavy underlines in the DOM tree indicate automatically detected issues
 
 The DOM tree in the **Elements** tool flags issues directly in the HTML with wavy underlines.  These issues are reported by the **Issues** tool.  When you press **Shift** while clicking any element with a wavy underline, the **Issues tool** opens.
 
@@ -145,4 +147,3 @@ The DOM tree in the **Elements** tool flags issues directly in the HTML with wav
 ## See also
 
 *  [Find and fix problems using the Issues tool](../issues/index.md)
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

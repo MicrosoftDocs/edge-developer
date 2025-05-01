@@ -4,8 +4,8 @@ description: Using the WebResourceRequested event and the WebResourceResponseRec
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 08/03/2023
 ---
 # Custom management of network requests
@@ -165,7 +165,7 @@ webView.CoreWebView2.WebResourceRequested += delegate (
    }
    CoreWebView2HttpRequestHeaders requestHeaders = args.Request.Headers;
    requestHeaders.SetHeader("Custom", "Value");
-}
+};
 ```
 
 ##### [Win32](#tab/win32)
@@ -314,7 +314,8 @@ The `NavigateWithWebResourceRequest` method allows your host app to navigate the
 from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateWithWebResourceRequest.md#examples -->
 
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
+
 ##### [.NET](#tab/dotnet)
 
 ```csharp
@@ -337,7 +338,7 @@ environment.CreateWebResourceRequest("https://www.w3schools.com/action_page.php"
 webView.CoreWebView2.NavigateWithWebResourceRequest(webResourceRequest);
 ```
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
 
 ##### [Win32](#tab/win32)
 
@@ -384,7 +385,7 @@ The following code demonstrates how the `WebResourceResponseReceived` event can 
 <!-- from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WebResourceResponseReceived.md#examples -->
 
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
 
 ##### [.NET](#tab/dotnet)
 
@@ -430,7 +431,7 @@ private async void WebView_WebResourceResponseReceived(object sender, CoreWebVie
 }
 ```
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
 
 ##### [Win32](#tab/win32)
 
@@ -479,7 +480,7 @@ m_webView->add_WebResourceResponseReceived(
 <!-- ====================================================================== -->
 ## API Reference overview
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
 
 ##### [.NET](#tab/dotnet)
 
@@ -520,7 +521,7 @@ m_webView->add_WebResourceResponseReceived(
    * `StatusCode`
    * `GetContentAsync`
 
-<!-- -------------------------------------------------- -->
+<!-- ------------------------------ -->
 
 ##### [Win32](#tab/win32)
 
@@ -586,7 +587,7 @@ m_webView->add_WebResourceResponseReceived(
 ## See also
 
 * [Call native-side code from web-side code](hostobject.md)
-* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
+* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 APIs_.
 
 <!-- 
 * [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateWithWebResourceRequest.md)

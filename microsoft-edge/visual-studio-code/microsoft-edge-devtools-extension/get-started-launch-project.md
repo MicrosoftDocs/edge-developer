@@ -4,7 +4,7 @@ description: Get started using the DevTools extension for Visual Studio Code by 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/06/2022
 ---
 # Get started by clicking the Launch Project button
@@ -86,7 +86,7 @@ This section is in support of clicking the **Launch Project** button.
 
    Just like in the repo's [demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) folder, initially there's no `.vscode` folder, and no `launch.json` file in that folder.
 
-1. In the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-project-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
+1. In the **Activity Bar**, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-project-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** pane opens.
 
 1. Click the **Generate launch.json** button:
 
@@ -121,7 +121,7 @@ This section is in support of clicking the **Launch Project** button.
 <!-- ====================================================================== -->
 ## Step 4: Click the Launch Project button
 
-1. In Visual Studio Code, in the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-project-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens, now containing a **Launch Project** button but not a **Generate launch.json file** button:
+1. In Visual Studio Code, in the **Activity Bar**, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-project-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens, now containing a **Launch Project** button but not a **Generate launch.json file** button:
 
    ![Targets pane when a launch.json file exists](./get-started-launch-project-images/targets-pane-when-launch-json-exists.png)
 

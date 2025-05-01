@@ -4,7 +4,7 @@ description: Use the extension with the Visual Studio Code debugging workflow in
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Integration with Visual Studio Code debugging
@@ -47,14 +47,14 @@ Most of these approaches require a DevTools-generated `launch.json` file that co
 
 *  Right-click an `.html` file in **Explorer** > **Open with Edge**.  This approach essentially uses a file path rather than a URL, and doesn't require you to generate a `launch.json` file.
 
-*  Activity Bar > **Microsoft Edge Tools** > click the **Launch Project** button.
+*  **Activity Bar** > **Microsoft Edge Tools** > click the **Launch Project** button.
 
 
 #### Visual Studio Code UI features to open DevTools in Debug mode
 
 *  Press **F5**.
 
-*  On the Activity Bar, click the **Run and Debug** icon (![Run and Debug button](./debugging-a-webpage-images/run-and-debug-icon.png)), and then in the **Run and Debug** Side Bar, click the **Run and Debug** button.
+*  On the **Activity Bar**, click the **Run and Debug** icon (![Run and Debug button](./debugging-a-webpage-images/run-and-debug-icon.png)), and then in the **Run and Debug** Side Bar, click the **Run and Debug** button.
 
 *  Open the Visual Studio Code command palette, start typing the word **debug** after **>**, and then select **Debug: Open Link**.  See [Open Link command](https://code.visualstudio.com/docs/nodejs/browser-debugging#_open-link-command) in _Browser debugging in VS Code_.
 
@@ -66,11 +66,18 @@ You can open the **Edge DevTools: Browser** tab (the embedded DevTools browser) 
 
 ![Extension open in Visual Studio Code showing the browser preview below the source code and the DevTools to the right](./debugging-a-webpage-images/browser-split-down.png)
 
-You can use the DevTools extension with the usual Visual Studio Code debugging UI/workflow, as follows.  In this approach, to enter Debug mode, we are not using the DevTools UI; we are not right-clicking an `.html` file to select **Open with Edge**, and we are not clicking the Activity Bar > **Microsoft Edge Tools** > **Launch Project** button.
+You can use the DevTools extension with the usual Visual Studio Code debugging UI/workflow, as follows.  In this approach, to enter Debug mode, we are not using the DevTools UI; we are not right-clicking an `.html` file to select **Open with Edge**, and we are not clicking the **Activity Bar** > **Microsoft Edge Tools** > **Launch Project** button.
 
 JavaScript debugging is built in to Visual Studio Code; you can debug in Chrome, Microsoft Edge, or Node.js without installing extensions.  If you debug by using the Microsoft Edge option with the Visual Studio Code debugging features and UI, you can start Microsoft Edge DevTools from the JavaScript debugger.  If the DevTools extension isn't installed, you're prompted to optionally install it.
 
 The DevTools extension gives additional functionality, such as the embedded DevTools browser which has a Device Emulation toolbar, and provides additional ways to enter Debug mode in Visual Studio Code.
+
+See also:
+* [Limitations of the embedded DevTools browser](./external-browser-window.md#limitations-of-the-embedded-devtools-browser) in _Using an external browser window_.
+
+
+<!-- ------------------------------ -->
+#### Start the debugger
 
 To start the Visual Studio Code debugger along with DevTools, by using the usual UI that's part of Visual Studio Code:
 
@@ -84,7 +91,7 @@ To start the Visual Studio Code debugger along with DevTools, by using the usual
 
    *  Press **F5**.
 
-   *  On the Activity Bar, click the **Run and Debug** icon (![Run and Debug icon](./debugging-a-webpage-images/run-and-debug-icon.png)), and then in the **Run and Debug** Side Bar, click the **Run and Debug** button, as shown below.
+   *  On the **Activity Bar**, click the **Run and Debug** icon (![Run and Debug icon](./debugging-a-webpage-images/run-and-debug-icon.png)), and then in the **Run and Debug** Side Bar, click the **Run and Debug** button, as shown below.
 
    *  Open the Visual Studio Code command palette, start typing the word **debug**, and then select **Debug: Open Link**.
     
@@ -116,7 +123,7 @@ Continue below.
 
 Assuming that the opened folder doesn't contain a `.vscode` folder that contains a `launch.json` file already:
 
-1. Select Activity Bar > **Microsoft Edge Tools** > click the **Generate launch.json** button, and then press **F5**.  Or, see [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
+1. Select **Activity Bar** > **Microsoft Edge Tools** > click the **Generate launch.json** button, and then press **F5**.  Or, see [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md).
 
    After the DevTools extension is installed, when you open an `.html` file and then click the **Inspect** button on the Debug toolbar, the **Edge DevTools** tabs open inside of Visual Studio Code:
 
@@ -155,7 +162,7 @@ To debug your project, you might want to change the default page that opens in M
 
 1. Optionally select the checkbox **Trust the authors of all files in the parent folder**, and then click the **Yes, I trust the authors** button:
 
-   The first time you do this process, you must also select Activity Bar > **Microsoft Edge Tools** again.
+   The first time you do this process, you must also select **Activity Bar** > **Microsoft Edge Tools** again.
 
    The **Microsoft Edge Tools: Targets** panel now displays two buttons: **Launch Instance** and **Generate launch.json**:
 
@@ -181,7 +188,7 @@ Which webpage opens is in DevTools is set by `launch.json` if that file exists i
 
 *  Edit `launch.json` in your open folder to point to a URL (normally), or possibly a file path.  Then you can use the Visual Studio Code debugger workflow/UI, such as **F5**.
 
-*  Or, delete `launch.json`, then Activity Bar > **Explorer** > right-click your `.html` file > select **Open with Edge**.  This approach doesn't use the Visual Studio Code Debugger workflow/UI, such as **F5**.
+*  Or, delete `launch.json`, then **Activity Bar** > **Explorer** > right-click your `.html` file > select **Open with Edge**.  This approach doesn't use the Visual Studio Code Debugger workflow/UI, such as **F5**.
 
 
 <!-- ====================================================================== -->

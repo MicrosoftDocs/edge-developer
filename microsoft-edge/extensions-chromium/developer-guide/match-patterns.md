@@ -4,7 +4,8 @@ description: How host permission and content script pattern matching works, with
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 03/17/2021
 ---
 <!-- Copyright A. W. Fuchs
@@ -22,9 +23,9 @@ See the License for the specific language governing permissions and
 limitations under the License.  -->
 # Defining match patterns for an extension to access file URLs
 
-A Microsoft Edge Add-on (extension) can request access to `file` URLs.  To enable this feature, you need to explicitly configure this access.  Access to `file` URLs isn't automatic.  You must visit the **Extensions management** page at the Microsoft Edge Add-ons website to opt into `file` access for each Microsoft Edge extension that requests access to `file` URLs.
+A Microsoft Edge extension can request access to `file` URLs.  To enable this feature, you need to explicitly configure this access.  Access to `file` URLs isn't automatic.  You must visit the **Extensions management** page at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) to opt into `file` access for each Microsoft Edge extension that requests access to `file` URLs.
 
-For Microsoft Edge Add-ons (extensions), host permission and content script pattern matching works as follows.
+For Microsoft Edge extension, host permission and content script pattern matching works as follows.
 
 Host permissions and content script matching are based on a set of URLs defined by match patterns.  A match pattern is essentially a URL that begins with a permitted scheme (`http`, `https`, `file`, or `ftp`, and that can contain '`*`' characters.  The special pattern `<all_urls>` matches any URL that starts with a permitted scheme.  Each match pattern has 3 parts:
 
@@ -79,9 +80,11 @@ Here are some examples of `_invalid_` pattern matches:
 
 Some schemes aren't supported in all contexts.
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/extensions/match_patterns).
+> The original page is found [here](https://developer.chrome.com/docs/extensions/develop/concepts/match-patterns).
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -4,7 +4,7 @@ description: Error messages and how to restart DevTools in ways that avoid them.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Troubleshooting the DevTools extension
@@ -45,9 +45,9 @@ A powerful way of restarting DevTools is to close and reopen the folder:
 
 Normally, closing the two **DevTools** tabs closes any instances of DevTools and the DevTools browser.  If the Debug toolbar is open, click the **Stop** button.
 
-To reset the state of DevTools, close all instances of DevTools.  Make sure the **Launch Instance** button is shown in Visual Studio Code > Activity Bar > **Microsoft Edge Tools** Side Bar.  That indicates that no instance of DevTools is running.
+To reset the state of DevTools, close all instances of DevTools.  Make sure the **Launch Instance** button is shown in Visual Studio Code > **Activity Bar** > **Microsoft Edge Tools** Side Bar.  That indicates that no instance of DevTools is running.
 
-If necessary, close all Visual Studio Code instances, then open Visual Studio Code, and make sure the **Launch Instance** button is shown in Activity Bar > **Microsoft Edge Tools** Side Bar.
+If necessary, close all Visual Studio Code instances, then open Visual Studio Code, and make sure the **Launch Instance** button is shown in **Activity Bar** > **Microsoft Edge Tools** Side Bar.
 
 
 <!-- ====================================================================== -->
@@ -101,17 +101,17 @@ To re-create a fresh `launch.json` file for DevTools:
 
 1. Make a backup copy of the `launch.json` file.
 
-1. In Visual Studio Code > Activity Bar > **Explorer**, right-click `launch.json` > **Delete**.
+1. In Visual Studio Code > **Activity Bar** > **Explorer**, right-click `launch.json` > **Delete**.
 
-   Activity Bar > **Microsoft Edge Tools** now shows a **Launch Instance** button and a **Generate launch.json** button.
+   **Activity Bar** > **Microsoft Edge Tools** now shows a **Launch Instance** button and a **Generate launch.json** button.
 
-1. If you want use a `launch.json` file for DevTools, make sure you have the desired folder open in Visual Studio Code > Activity Bar > **Explorer**, and then click the **Generate launch.json** button.  See [Opening DevTools by clicking the Launch Project button](./open-devtools-and-embedded-browser.md#opening-devtools-by-clicking-the-launch-project-button) in _Opening DevTools and the DevTools browser_.
+1. If you want use a `launch.json` file for DevTools, make sure you have the desired folder open in Visual Studio Code > **Activity Bar** > **Explorer**, and then click the **Generate launch.json** button.  See [Opening DevTools by clicking the Launch Project button](./open-devtools-and-embedded-browser.md#opening-devtools-by-clicking-the-launch-project-button) in _Opening DevTools and the DevTools browser_.
 
 
 <!-- ====================================================================== -->
 ## launch.json requires well-formed JSON
 
-If Activity Bar > **Microsoft Edge Tools** contains a **Configure launch.json** button instead of the expected **Launch Project** button when a DevTools-generated `launch.json` file exists in the opened folder, this may be caused by adding a line with a missing comma or empty quotes.  Be sure `launch.json` contains well-formed JSON.
+If **Activity Bar** > **Microsoft Edge Tools** contains a **Configure launch.json** button instead of the expected **Launch Project** button when a DevTools-generated `launch.json` file exists in the opened folder, this may be caused by adding a line with a missing comma or empty quotes.  Be sure `launch.json` contains well-formed JSON.
 
 
 <!-- ====================================================================== -->

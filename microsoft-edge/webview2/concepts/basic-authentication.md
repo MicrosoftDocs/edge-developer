@@ -4,8 +4,8 @@ description: Basic authentication for WebView2 apps includes a sequence of authe
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 03/16/2022
 ---
 # Basic authentication for WebView2 apps
@@ -13,6 +13,15 @@ ms.date: 03/16/2022
 _Basic authentication_ is an [authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) approach that's part of the HTTP protocol.
 
 Basic authentication for WebView2 apps includes a sequence of authentication and navigation steps to retrieve a webpage from an HTTP server.  The WebView2 control acts as an intermediary for communication between the host app and the HTTP server.
+
+<!-- todo: table of terminology
+Terminology:
+| Term | Definition |
+|---|---|
+| _navigation event args_ | |
+| _navigations_, a _navigation_ | |
+| _basic authentication_ | A specific technical phrase.  See [HTTP authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) at MDN. |
+-->
 
 
 <!-- ====================================================================== -->
@@ -55,8 +64,8 @@ For more information, see [Navigation events for WebView2 apps](navigation-event
 The following diagram shows the flow of navigation events for basic authentication for WebView2 apps:
 
 ![Flow of navigation events for basic authentication for WebView2 apps](basic-authentication-images/basic-auth-page-nav-flow.png)
-<!-- initial Visio filename: https://microsoft-my.sharepoint.com/ ... "Basic Auth in Page Nav Flow.vsd"
-later, check:  Teams > Team > channel > Files > dir > filename -->
+<!-- initial Visio file name: https://microsoft-my.sharepoint.com/ ... "Basic Auth in Page Nav Flow.vsd"
+later, check:  Teams > Team > channel > Files > dir > file name -->
 
 <!-- diagram labels in comments: -->
 
@@ -109,8 +118,6 @@ This example isn't realistic, because:
 
 For more realistic code, see the subsequent section.
 
-<!-- ------------------------------ -->
-
 ##### [C#](#tab/csharp)
 
 ```csharp
@@ -126,11 +133,9 @@ For more realistic code, see the subsequent section.
 ```
 
 **APIs:**
-
 * [CoreWebView2.BasicAuthenticationRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
 * [CoreWebView2BasicAuthenticationRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
 
-<!-- ------------------------------ -->
 
 ##### [C++](#tab/cpp)
 
@@ -162,7 +167,6 @@ else
 ```
 
 **APIs:**
-
 * [ICoreWebView2BasicAuthenticationRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventhandler)
 * [ICoreWebView2BasicAuthenticationRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)
    * `get_Cancel`
@@ -183,8 +187,6 @@ This example demonstrates a host app prompting the user for credentials (user na
 This example builds upon the above sample, by adding the following features:
 *  Displays a dialog to prompt the user for their username and password.
 *  Calls the `GetDeferral` method on the `event` argument.
-
-<!-- ------------------------------ -->
 
 ##### [C#](#tab/csharp)
 
@@ -251,7 +253,6 @@ webView.CoreWebView2.BasicAuthenticationRequested += delegate (
 ```
 
 **APIs:**
-
 * [CoreWebView2BasicAuthenticationRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
    * Properties:
        * `Cancel`
@@ -260,8 +261,6 @@ webView.CoreWebView2.BasicAuthenticationRequested += delegate (
        * `Uri`
    * Methods:
       * `GetDeferral()`
-
-<!-- ------------------------------ -->
 
 ##### [C++](#tab/cpp)
 
@@ -368,7 +367,6 @@ else
 ```
 
 **APIs:**
-
 * [ICoreWebView2BasicAuthenticationRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)
    * `get_Cancel`
    * `put_Cancel`
@@ -421,15 +419,11 @@ Navigation `event args` has a property: the `NavigationId`.  The `NavigationId` 
 <!-- ====================================================================== -->
 ## API Reference overview
 
-<!-- ------------------------------ -->
-
 ##### [C#](#tab/csharp)
 
 * [CoreWebView2BasicAuthenticationRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
 * [CoreWebView2.BasicAuthenticationRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
 * [CoreWebView2Deferral Class](/dotnet/api/microsoft.web.webview2.core.corewebview2deferral)
-
-<!-- ------------------------------ -->
 
 ##### [C++](#tab/cpp)
 
@@ -445,12 +439,3 @@ Navigation `event args` has a property: the `NavigationId`.  The `NavigationId` 
 ## See also
 
 *  [HTTP authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) at MDN.
-
-<!--
-Terminology:
-| Term | Definition |
-|---|---|
-| _navigation event args_ | |
-| _navigations_, a _navigation_ | |
-| _basic authentication_ | A specific technical phrase.  See [HTTP authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) at MDN. |
--->

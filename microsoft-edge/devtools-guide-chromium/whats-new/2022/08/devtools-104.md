@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 104)
+title: What's New in DevTools (Microsoft Edge 104)
 description: "Use Layers in 3D View. Improved display of request URLs in Issues tool. Improving accessibility for the Detached Elements tool. Fix: Arrows representing web socket traffic now render correctly in the Network tool. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 08/02/2022
 ---
 # What's New in DevTools (Microsoft Edge 104)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 104
+
+[![Thumbnail image for video "What's new in DevTools 104"](./devtools-104-images/devtools-whatsnew-104.png)](https://www.youtube.com/watch?v=0_ZprFX8x0I)
 
 
 <!-- ====================================================================== -->
@@ -57,12 +64,14 @@ See also:
 <!-- Title: The Detached Elements tool now works better with assistive technology -->
 <!-- Subtitle: In Microsoft Edge 104, Screen readers announce the name of the table of detached elements in the tool. -->
 
-In previous versions of Microsoft Edge, when selecting the table of detached elements in the **Detached Elements** tool, assistive technology only announced "Table" and the number of rows and columns.  In Microsoft Edge version 104, this issue has been fixed.  When selecting the table of detached elements in the **Detached Elements** tool, assistive technology now announces "Detached Elements List, Table" and the number of rows and columns.
+March 2025 update: The **Detached Elements** tool has been removed.  To debug DOM memory leaks, use the **Detached elements** profiling type in the **Memory** tool.
+
+In previous versions of Microsoft Edge, when selecting the table of detached elements in the **Detached Elements** feature, assistive technology only announced "Table" and the number of rows and columns.  In Microsoft Edge version 104, this issue has been fixed.  When selecting the table of detached elements in the **Detached Elements** feature, assistive technology now announces "Detached Elements List, Table" and the number of rows and columns.
 
 ![Detached Elements List, Table, 5 rows, 3 columns](./devtools-104-images/a11y-detached-elements.png)
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
+* [Tools for investigating detached elements](../../../memory-problems/index.md#tools-for-investigating-detached-elements) in _Fix memory problems_.
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
@@ -103,7 +112,7 @@ Microsoft Edge 104 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 104)](https://developer.chrome.com/blog/new-in-devtools-104) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 104)](https://developer.chrome.com/blog/new-in-devtools-104) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -111,3 +120,10 @@ Microsoft Edge 104 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

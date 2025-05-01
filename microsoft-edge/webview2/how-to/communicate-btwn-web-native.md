@@ -1,14 +1,14 @@
 ---
-title: Interop of native-side and web-side code
+title: Interop of native and web code
 description: Embed web content into native applications using WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 2/24/2022
 ---
-# Interop of native-side and web-side code
+# Interop of native and web code
 
 The Microsoft Edge WebView2 control lets you embed web content into native applications.  You can use WebView2 in different ways, depending on what you need to accomplish.  This article describes how to communicate using simple messages, JavaScript code, and native objects.
 
@@ -23,7 +23,7 @@ Some common use cases include:
 
 This tutorial steps through the Sample App code to demonstrate some of the communication capabilities in WebView2.  Clone the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples), open a `.sln` file in Visual Studio, build the project, and run (debug) to follow along with the steps in this article.
 
-For detailed steps about cloning the repo, see [WebView2 samples](../code-samples-links.md).
+For detailed steps about cloning the repo, see [WebView2 sample apps](../code-samples-links.md).
 
 
 <!-- ====================================================================== -->
@@ -33,7 +33,7 @@ WebView2 controls let you exchange simple messages between web and native sides 
 
 
 <!-- ------------------------------ -->
-#### Send Messages from the host app to WebView2
+#### Send messages from the host app to WebView2
 
 This example shows how the sample app changes the color of text in the front end, based on a message from the host app.
 
@@ -194,6 +194,7 @@ The C++ file handles the title text and communicates it to the host app as a str
    }).Get(), &m_webMessageReceivedToken));
    ```
 
+
 <!-- ------------------------------ -->
 #### Round-trip messages
 
@@ -287,4 +288,4 @@ Congratulations! You've successfully embedded web content into native applicatio
 <!-- ====================================================================== -->
 ## See also
 
-* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
+* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 APIs_.

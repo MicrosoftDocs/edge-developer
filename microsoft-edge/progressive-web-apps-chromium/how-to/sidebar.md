@@ -1,16 +1,14 @@
 ---
-title: Build PWAs for the sidebar in Microsoft Edge
+title: Build a PWA for the sidebar in Microsoft Edge
 description: How to build your PWA for installation in the Microsoft Edge sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
-ms.date: 04/27/2023
+ms.service: microsoft-edge
+ms.subservice: pwa
+ms.date: 02/20/2024
 ---
-# Build PWAs for the sidebar in Microsoft Edge
-
-![Experimental feature](./sidebar-images/experimental-tag.png)
+# Build a PWA for the sidebar in Microsoft Edge
 
 Progressive Web Apps (PWAs) can opt-in to be pinned to the sidebar in Microsoft Edge.
 
@@ -24,35 +22,15 @@ By signaling intent to be pinned to the sidebar, your PWA gets the following ben
 
 
 <!-- ====================================================================== -->
-## Enable sidebar support of PWAs in Microsoft Edge
-
-To locally enable PWA sidebar support in Microsoft Edge:
-
-1. Download and install the Canary channel of Microsoft Edge from the [Microsoft Edge Insider website](https://www.microsoft.com/edge/download/insider).
-
-1. Start Microsoft Edge with sidebar support for PWAs, as follows:
-
-    * On Windows:
-        
-        1. Find the path where Microsoft Edge Canary is installed on your device. For example: `C:\Users\your_name\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe`.
-        1. Enter **cmd** in the Windows search text box, and then select the **Command Prompt** app.
-        1. Enter the following command: `"C:\Users\your_name\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe" --enable-features=msWebAppManifestSidePanel,msAddEdgeSidePaneBrandUA`
-
-    * On macOS:
-
-        1. Find the path where Microsoft Edge Canary is installed on your device. For example: `/Applications/Microsoft Edge Canary.app`.
-        1. Open the **Terminal** app.
-        1. Enter the following command: `/Applications/Microsoft Edge Canary.app --enable-features=msWebAppManifestSidePanel,msAddEdgeSidePaneBrandUA`
-
-
-<!-- ====================================================================== -->
 ## Enable sidebar support in your PWA
 
 To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `edge_side_panel` manifest member:
 
 1. Make sure your PWA has a web app manifest file that contains at least the `name`, `short_name`, `description`, and `icons` members.
 
-    To learn more, see [Use a web app manifest to integrate a Progressive Web App into the operating system](./web-app-manifests.md).
+   For details, see:
+   * [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
+   * [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN > References > Progressive web apps > Guides.
 
 1. Add the `edge_side_panel` member to your web app manifest. For example:
 
@@ -107,6 +85,7 @@ If your app's layout can't support the 376 pixels minimum width, you can define 
 When you define a preferred width in your app's manifest, the following happens:
 
 * When your app is opened in the sidebar, the sidebar is automatically resized to your preferred width.
+
 * Users can resize the sidebar to make it larger than your preferred width, or smaller, up to the 376 pixels minimum width.
 
 
@@ -117,7 +96,7 @@ One of the most important benefits of building an app as a PWA is that, from one
 
 The `edge_side_panel` manifest member makes your app installable as a standalone app and enables your app to be pinned to the sidebar in Microsoft Edge.
 
-However, if you prefer to build an app that can only be pinned to the sidebar but cannot be installed as a standalone app, omit the `display` member from your web app manifest, or set its value to `browser`:
+However, if you prefer to build an app that can only be pinned to the sidebar but cannot be installed as a standalone app, set the value of the `display` member to `browser`, as shown below (or, omit the `display` member from your web app manifest):
 
 ```json
 {
@@ -147,7 +126,7 @@ Detecting when your app is running in the sidebar can be useful to provide your 
 
 You can detect when your app runs in the sidebar by using User-Agent Client Hints. To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../web-platform/user-agent-guidance.md).
 
-To detect when your app runs in the sidebar, do one of the following:
+To detect when your app runs in the sidebar, do either of the following:
 
 * On your web server, read the `Sec-CH-UA` HTTPS request header and look for the `Edge Side Panel` brand. For example:
     
@@ -155,7 +134,7 @@ To detect when your app runs in the sidebar, do one of the following:
     Sec-CH-UA: "Microsoft Edge";v="112", "Edge Side Panel";v="1", "Placeholder;Browser Brand";v="99"
     ```
 
-* In the browser, use the `navigator.userAgentData` JavaScript API and read the value of the `brands` property. For example:
+* Or, in the browser, use the `navigator.userAgentData` JavaScript API and read the value of the `brands` property. For example:
 
     ```javascript
     const brands = navigator.userAgentData.brands;
@@ -179,6 +158,8 @@ User-Agent: ... (..., Edge Side Panel)...
 User-Agent: ... (Edge Side Panel, ...)...
 ```
 
+
+<!-- ------------------------------ -->
 #### Relationship with your mobile app
 
 Suppose you create a desktop variant of your app and a mobile variant of your app. In this scenario, the desktop variant is used when your app is pinned to the sidebar. By default, apps in the sidebar that use the `edge_side_panel` manifest member receive the Microsoft Edge desktop User Agent Client Hint:
@@ -194,7 +175,8 @@ You can, however, use the `Edge Side Panel` User Agent Client Hint brand to reus
 Follow these recommendations when using a mobile-variant of your app in the sidebar:
 
 * Remove all "Open in App" messages instructing users to download your app from an app store.
-* Test the accessibility and usability of your app with all input methods: mouse, keyboard, and touch. To learn about testing the accessibility of your app, see [Overview of accessibility testing using DevTools](../../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md).
+
+* Test the accessibility and usability of your app with all input methods: mouse, keyboard, and touch. To learn about testing the accessibility of your app, see [Accessibility-testing features](../../devtools-guide-chromium/accessibility/reference.md).
 
 
 <!-- ====================================================================== -->
@@ -202,28 +184,30 @@ Follow these recommendations when using a mobile-variant of your app in the side
 
 PWAmp is a music player PWA demo application that can be pinned to the sidebar in Microsoft Edge. To test PWAmp as a sidebar app:
 
-1. Enable sidebar support as described in [Enable sidebar support of PWAs in Microsoft Edge](#enable-sidebar-support-of-pwas-in-microsoft-edge).
-
 1. Open Microsoft Edge and make sure the sidebar is displayed. If the sidebar is not displayed, go to `edge://settings/sidebar` and then turn on the **Always show sidebar** toggle:
 
-    ![The Edge Settings page with the "Always show sidebar" setting](./sidebar-images/always-show-sidebar.png)
+   ![The Edge Settings page with the "Always show sidebar" setting](./sidebar-images/always-show-sidebar.png)
 
-1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/).
+1. Go to [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) in a new window or tab.  You don't need to install the app.
 
-1. In the sidebar, click **Customize sidebar**, and then click **Add current page**:
+1. Open the sidebar, click **Customize**, and then click **Open in sidebar**:
 
-    ![The "Customize sidebar" panel, with the "Add current page" button](./sidebar-images/add-pwamp-to-sidebar.png)
+   ![The "Customize sidebar" panel, with the "Open in sidebar" button](./sidebar-images/add-pwamp-to-sidebar.png)
 
-1. The PWAmp music player app now appears in the sidebar. Click the PWAmp icon in the sidebar to open the app and use it alongside your other tabs:
+   The PWAmp music player app appears in the sidebar.
 
-    ![Microsoft Edge with one tab opened on a TODO list app, and PWAmp in the sidebar](./sidebar-images/using-pwamp-in-sidebar.png)
+1. Click the PWAmp icon in the sidebar to open the app and use it alongside your other tabs:
 
-The parts of the PWAmp demo app source code that are relevant to the Microsoft Edge sidebar support are:
+   ![Microsoft Edge with one tab opened on a TODO list app, and PWAmp in the sidebar](./sidebar-images/using-pwamp-in-sidebar.png)
+
+
+The source code for the PWAmp demo app has the following, to support the Microsoft Edge sidebar:
 
 * The `edge_side_panel` member in the [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/pwamp/manifest.json) file.
+
 * The `isSidebarPWA` variable, which uses the `navigator.userAgentData` JavaScript API in the [app.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwamp/app.js#L14) file.
 
-You can find the entire PWAmp demo source code at [MicrosoftEdge / Demos > pwamp](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp). To download the source code locally, see [Download or clone the Demos repo](../../devtools-guide-chromium/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
+You can find the entire PWAmp demo source code at [MicrosoftEdge / Demos > pwamp](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp). To download the source code locally, see [Clone the Edge Demos repo to your drive](../../devtools-guide-chromium/sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
 
 
 <!-- ====================================================================== -->

@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 100)
+title: What's New in DevTools (Microsoft Edge 100)
 description: New DevTools repo at GitHub, to send feedback. Use filters to focus on parts of a heap snapshot. Czech and Vietnamese UI. Network tool displays how a request was fulfilled. Links in a performance profile map to your original code. Network tool's Waterfall view matches Visual Studio Code themes.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 03/31/2022
 ---
 # What's New in DevTools (Microsoft Edge 100)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 100
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 100"](./devtools-100-images/devtools-whatsnew-100.png)](https://www.youtube.com/watch?v=aP6d2PIU7hc)
 
 
 <!-- ====================================================================== -->
@@ -36,7 +43,7 @@ When looking at all the objects in a heap snapshot in the **Memory** tool, it ca
 ![Node Types in a heap snapshot in the Memory tool](devtools-100-images/node-types-heap-snapshot.png)
 
 See also:
-* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md) - taking a heap snapshot and analyzing the heap.
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../../../memory-problems/heap-snapshots.md) - taking a heap snapshot and analyzing the heap.
 
 
 <!-- ====================================================================== -->
@@ -68,7 +75,7 @@ If you don't have the **Fulfilled by** column, right-click the table headers in 
 
 See also:
 * [Filter requests by properties](../../../network/reference.md#display-a-log-of-requests) in _Network features reference_.
-* [Service Worker improvements](../../../service-workers/index.md).
+* [Service worker improvements](../../../service-workers/index.md).
 
 For the history of this feature, see [Issue #16](https://github.com/MicrosoftEdge/DevTools/issues/16).
 
@@ -127,6 +134,10 @@ See also:
 <!-- Title: Themes from Visual Studio Code now apply to the Waterfall view -->
 <!-- Subtitle: The Waterfall view of requests in the Network tool now match the VS Code themes. -->
 
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+* Light+
+* Dark+
+
 In previous versions of Microsoft Edge, the **Waterfall** view of requests in the **Network** tool didn't match the themes from Visual Studio Code that apply to the rest of DevTools.  In Microsoft Edge 100, this issue has been fixed.
 
 Before Microsoft Edge 100, the selected theme wasn't applied in the Waterfall view:
@@ -138,7 +149,6 @@ Now in Microsoft Edge 100, the selected theme is applied to the Waterfall view o
 ![The selected theme is now applied to the Waterfall view of requests in the Network tool](devtools-100-images/waterfall-view-requests-network.png)
 
 See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md) - using themes from Visual Studio Code in DevTools.
 * [Display the timing relationship of requests](../../../network/reference.md#display-the-timing-relationship-of-requests) in _Network features reference_ - the Waterfall view for requests in the Network tool.
 
 
@@ -157,7 +167,7 @@ Microsoft Edge version 100 also includes the following updates from the Chromium
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 100)](https://developer.chrome.com/blog/new-in-devtools-100) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 100)](https://developer.chrome.com/blog/new-in-devtools-100) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -165,3 +175,10 @@ Microsoft Edge version 100 also includes the following updates from the Chromium
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

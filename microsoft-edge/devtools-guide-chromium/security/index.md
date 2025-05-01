@@ -4,8 +4,9 @@ description: How to use the Security panel in DevTools to make sure that a page 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 11/22/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,25 +27,33 @@ ms.date: 05/04/2021
 
 <!--todo: add section when why-https is available -->
 
-Use the **Security** panel to inspect the security of a page.
-
-1. To open DevTools, right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
-
-1. In DevTools, on the main toolbar, click the **Security** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./index-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
-
-   The **Security** tool (or _panel_) opens:
-
-![The Security panel](./index-images/security-security-overview-secure.png)
+Use the **Security** tool to inspect the security of a page.
 
 
 <!-- ====================================================================== -->
-## Common problems
+## Open the Security tool
 
-### Non-secure main origins
+To open the **Security** tool:
+
+1. To open DevTools, right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+
+1. In DevTools, on the **Activity Bar**, click the **Security** tab.  If that tab isn't visible, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
+
+   The **Security** tool opens:
+
+   ![The Security panel](./index-images/overview-secure.png)
+
+
+<!-- ====================================================================== -->
+## Debug common security problems
+
+The **Security** tool is useful for debugging a variety of security issues. The sections below describe some common problems that you might use the **Security** tool for.
+
+#### Non-secure main origins
 
 When the main origin of a page isn't secure, the **Security Overview** says **This page is not secure**.
 
-![A non-secure page](./index-images/security-security-overview-non-secure.png)
+![A non-secure page](./index-images/overview-non-secure.png)
 
 This problem occurs when the URL that you visited was requested over HTTP.  To make it secure you need to request it over HTTPS.  For example, if you look at the URL in your address bar, it probably looks similar to `http://example.com`.  To make it secure the URL should be `https://example.com`.
 
@@ -55,37 +64,43 @@ If you haven't set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.
 > [!TIP]
 > The [Use HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only) hint in [webhint](https://webhint.io) can help automate the process of making sure that all HTTP requests are directed to HTTPS.
 
-### Mixed content
+#### Mixed content
 
-**Mixed content**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.
+**Mixed content**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to [man-in-the-middle attacks](https://wikipedia.org/wiki/Man-in-the-middle_attack).
 
-![Mixed content](./index-images/security-security-overview-mixed-secure.png)
+![Mixed content](./index-images/overview-mixed-secure.png)
 
-In the previous figure, select **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.
-
-![Mixed resources in the Network Log](./index-images/security-network-filter.png)
+In Microsoft Edge, mixed content requests are automatically upgraded to HTTPS when possible. If the resource is not available over HTTPS, the request is blocked.
 
 
 <!-- ====================================================================== -->
-## View details
+## View more details
 
-### View main origin certificate
+The **Security** tool provides more details about the origins which a webpage requested resources from, and the security of those origins. The sections below describe how to view more details.
 
-From the **Security Overview**, click **View certificate** to quickly inspect the certificate for the main origin.
+#### View main origin certificate
 
-![A main origin certificate](./index-images/security-security-overview-secure-view-certificate.png)
+To quickly inspect the certificate for the main origin, in the **Security Overview**, click **View certificate**. The **Certificate Viewer** opens:
 
-### View origin details
+![A main origin certificate](./index-images/overview-secure-view-certificate.png)
 
-Click one of the entries in the left-hand nav to view the details of the origin.  From the details page you can view connection and certificate information.  Certificate transparency information is also shown when available.
+#### View origin details
 
-![Main origin details](./index-images/security-security-overview-mixed-secure-main-origin.png)
+To view the details of an origin, in the left navigation panel, click one of the origins. Detailed information about the origin appears:
+
+![Main origin details](./index-images/overview-mixed-secure-main-origin.png)
+
+From the details page you can view:
+
+* **Connection** information.
+* **Certificate** information.
+* **Certificate transparency** information, when available.
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/security/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/security/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -4,8 +4,8 @@ description: How to pass WinRT host objects to JavaScript using the AddHostObjec
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 02/21/2023
 ---
 # Call native-side WinRT code from web-side code
@@ -81,6 +81,7 @@ First, we'll pick some WinRT APIs that we're interested in calling from JavaScri
 In the WebView2 host app, the web-side JavaScript code can then access methods and properties on the `Language` object that's in the native-side code.
 
 
+<!-- ---------- -->
 ###### Access projected APIs via DevTools Console
 
 At the end of this example walkthrough, you'll use the **Console** of Microsoft Edge DevTools to test reading the host's `displayName` property of the `Language` class:
@@ -98,6 +99,7 @@ You can similarly access [Windows.System.UserProfile Namespace](/uwp/api/windows
 <!-- todo: call Windows.System.UserProfile apis -->
 
 
+<!-- ---------- -->
 ###### Access projected APIs via source code files
 
 Similarly, in source code files rather than in the DevTools Console, you can access the projected host object.  First, you run setup code for the script:
@@ -123,16 +125,23 @@ Let's get started!
 <!-- ====================================================================== -->
 ## Step 1: Create or obtain a basic WebView2 project
 
+
 ##### [WinUI 2 (UWP)](#tab/winui2)
 
+
+<!-- ------------------------------ -->
 #### Install Visual Studio
 
 * If Visual Studio 2015 or later isn't already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.  The present article shows screenshots for Visual Studio Community Edition 2022.
 
+
+<!-- ------------------------------ -->
 #### Install a preview channel of Microsoft Edge
 
 * If a preview channel of Microsoft Edge (Beta, Dev, or Canary) isn't already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
+
+<!-- ------------------------------ -->
 #### Create or open a basic WebView2 project
 
 1. Do any of the following approaches to obtain a baseline starter project that contains a couple lines of WebView2 code that embeds the WebView2 control:
@@ -322,7 +331,7 @@ In the WinRTAdapter project, also install a prerelease version of the WebView2 S
 
 1. Click the **Microsoft.Web.WebView2** card.  Detailed info appears in the middle area of the window.
 
-1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  The version must be 1.0.1243.0 or higher.  Note which version number you select.
+1. In the **Version** dropdown list, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  The version must be 1.0.1243.0 or higher.  Note which version number you select.
 
    ![NuGet Package Manager, selecting the WebView2 SDK package, for the WinRTAdapter project](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
 
@@ -347,7 +356,7 @@ In the WinRTAdapter project, also install a prerelease version of the WebView2 S
 
 1. Click the **Microsoft.Web.WebView2** card.  Detailed info appears in the middle area of the window.
 
-1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  The version must be 1.0.1243.0 or higher.  Note which version number you select.
+1. In the **Version** dropdown list, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  The version must be 1.0.1243.0 or higher.  Note which version number you select.
 
    ![NuGet Package Manager, selecting the WebView2 SDK package, for the WinRTAdapter project (WinUI 3)](winrt-from-js-images/pkg-mgr-wv2-sdk-winui3.png)
 
@@ -378,7 +387,7 @@ In the main project, such as **MyUWPGetStartApp**, install the same prerelease v
 
 1. Click the **Microsoft.Web.WebView2** card.  Detailed information appears in the middle area of the window.
 
-1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  Make sure to use the same version as used by the **WinRTAdapter project**; for WinRT WebView2 apps that target WinUI 2 (UWP), this needs to be the same version as for the **WinRTAdapter** project.  The version must be 1.0.1243.0 or higher.
+1. In the **Version** dropdown list, select a **prerelease** version of the WebView2 SDK, or make sure **Latest prerelease** is selected.  Make sure to use the same version as used by the **WinRTAdapter project**; for WinRT WebView2 apps that target WinUI 2 (UWP), this needs to be the same version as for the **WinRTAdapter** project.  The version must be 1.0.1243.0 or higher.
 
 1. Click the **Install** button.  The Preview Changes dialog opens, to add WebView2 to the main project.
 
@@ -425,7 +434,7 @@ Specify the namespace and class as follows:
 
 1. Set **Use JavaScript case** to **Yes**.
 
-1. In the **Include filters** row, click the column on the right, click the drop-down menu in that cell, and then click **Edit**.  The **Include filters** dialog opens.
+1. In the **Include filters** row, click the column on the right, click the dropdown menu in that cell, and then click **Edit**.  The **Include filters** dialog opens.
 
 1. In the topmost text box, paste the following strings on separate lines, without leading or trailing whitespace:
 
@@ -772,6 +781,7 @@ The host app's web-side code (and the DevTools Console) can now call methods and
 ## Step 9: Call methods and properties on the host object from web-side JavaScript
 
 
+<!-- ------------------------------ -->
 #### Access projected APIs via DevTools Console
 
 Next, use the DevTools Console to demonstrate that web-side code can call the host-side APIs that were specified in the **wv2winrt** tool (the WebView2 WinRT JS Projection tool): 
@@ -833,6 +843,7 @@ Congratulations!  You've finished the sample demonstration of calling WinRT code
 ---
 
 
+<!-- ------------------------------ -->
 #### Access projected APIs via source code files
 
 Above, we used the DevTools console to run JavaScript statements that access the projected host object.  Similarly, you can access the projected host object from within source code files.  To do this, first you run setup code for the script:

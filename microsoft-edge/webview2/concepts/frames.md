@@ -4,8 +4,8 @@ description: Using frames, such as iframes, in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 11/16/2022
 ---
 # Using frames in WebView2 apps
@@ -21,7 +21,7 @@ WebView2 supports APIs to interact with iframes.  You can:
 * Allow the app to ignore the `X-Frame-Options` HTTP response header.
 
 See also:
-* [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
+* [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 APIs_.
 * [HTML <iframe\> Tag](https://www.w3schools.com/tags/tag_iframe.asp)<!-- keep escape -->
 
 
@@ -56,7 +56,7 @@ Your host app must monitor the lifetime of a frame by subscribing to the `CoreWe
 ---
 
 See also:
-* [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 features and APIs_.
+* [iframes](./overview-features-apis.md#iframes) in _Overview of WebView2 APIs_.
 
 
 <!-- ====================================================================== -->
@@ -137,8 +137,8 @@ Regarding the duplicated equivalent `NavigationStarting` and `NavigationComplete
 
 See also:
 * [Standard sequence of events](./navigation-events.md) in _Navigation events for WebView2 apps_.
-* [Navigation events](./overview-features-apis.md#navigation-events) in _Overview of WebView2 features and APIs_.
-* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 features and APIs_.
+* [Navigation events](./overview-features-apis.md#navigation-events) in _Overview of WebView2 APIs_.
+* [Block unwanted navigating](./overview-features-apis.md#block-unwanted-navigating) in _Overview of WebView2 APIs_.
 
 
 <!-- ====================================================================== -->
@@ -194,7 +194,7 @@ See [Step 6: Call AddHostObjectToScript to pass the host object to web-side code
 
 
 See also:
-* [Host/web object sharing](./overview-features-apis.md#hostweb-object-sharing) in _Overview of WebView2 features and APIs_.
+* [Host/web object sharing](./overview-features-apis.md#hostweb-object-sharing) in _Overview of WebView2 APIs_.
 
 
 <!-- ====================================================================== -->
@@ -250,7 +250,7 @@ window.chrome.webview.addEventListener('message', arg => {
 
 See also:
 * [Interop of native-side and web-side code](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)
-* [Web messaging](./overview-features-apis.md#web-messaging) in _Overview of WebView2 features and APIs_.
+* [Web messaging](./overview-features-apis.md#web-messaging) in _Overview of WebView2 APIs_.
 
 
 <!-- 
@@ -289,25 +289,27 @@ For information about the `ContentLoading` event, see [Navigation events for Web
 ---
 
 See also:
-* [Script execution](./overview-features-apis.md#script-execution) in _Overview of WebView2 features and APIs_.
+* [Script execution](./overview-features-apis.md#script-execution) in _Overview of WebView2 APIs_.
 
 
 <!-- ====================================================================== -->
 ## Modifying network events by using the `WebResourceRequested` event in iframes
 
-![This feature is experimental](./frames-images/experimental-tag.png)
+![This feature is experimental](./frames-images/experimental-tag.png)<!-- todo: remove flag, update section? -->
 
 For iframes, you can listen to network events and modify them, by using the `WebResourceRequested` event.
 
 See also:
-* [Manage network requests in WebView2](./overview-features-apis.md#manage-network-requests-in-webview2) in _Overview of WebView2 features and APIs_.
+* [Manage network requests in WebView2](./overview-features-apis.md#manage-network-requests-in-webview2) in _Overview of WebView2 APIs_.<!-- todo: delete the below tabset? -->
 * [Custom management of network requests](../how-to/webresourcerequested.md)
-* [Experimental APIs for 1.0.1222-prerelease](../release-notes.md#experimental-apis-for-101222-prerelease) in _Release Notes for the WebView2 SDK_.
+* [Experimental APIs for 1.0.1222-prerelease](../release-notes/archive.md#experimental-apis-for-101222-prerelease) in _Archived Release Notes for the WebView2 SDK_.
 
+
+<!-- todo: delete tabset? -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-See the latest prerelease APIs.  The following links contain `1.0.1466-prerelease`.  In the **Version** drop-down list in the upper left of the API Reference docs, select the latest prerelease.
+See the latest prerelease APIs.  The following links contain `1.0.1466-prerelease`.  In the **Version** dropdown list in the upper left of the API Reference docs, select the latest prerelease.
 
 <!-- keep ?view as long as experimental-only.  keep # updated. -->
 
@@ -318,7 +320,7 @@ See the latest prerelease APIs.  The following links contain `1.0.1466-prereleas
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-See the latest prerelease APIs.  The following links contain `1.0.1466-prerelease`.  In the **Version** drop-down list in the upper left of the API Reference docs, select the latest prerelease.
+See the latest prerelease APIs.  The following links contain `1.0.1466-prerelease`.  In the **Version** dropdown list in the upper left of the API Reference docs, select the latest prerelease.
 
 <!-- keep ?view as long as experimental-only.  keep # updated. -->
 
@@ -337,9 +339,10 @@ See the latest prerelease APIs.  The following links contain `1.0.1466-prereleas
 * [ICoreWebView2ExperimentalWebResourceRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs)
 
 <!-- 
-TODO: at next SDK release early December 2022, update enum link when it changes to a Globals page section/anchor eg:
+todo: at next SDK release early December 2022, update enum link when it changes to a Globals page section/anchor eg:
 https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.1418.22
 https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1418.22
+compare links in [Manage network requests in WebView2](./overview-features-apis?tabs=win32cpp#manage-network-requests-in-webview2)
 -->
 
 ---
@@ -477,7 +480,7 @@ if (webview2_4)
 <!-- ====================================================================== -->
 ## API Reference overview
 
-The following features, listed in [Overview of WebView2 features and APIs](./overview-features-apis.md), include frame-related APIs:
+The following features, listed in [Overview of WebView2 APIs](./overview-features-apis.md), include frame-related APIs:
 
 * [Host/web object sharing](./overview-features-apis.md#hostweb-object-sharing)
 * [iframes](./overview-features-apis.md#iframes)<!--same link is in h2 "Subscribing to the FrameCreated event" above-->
@@ -491,7 +494,7 @@ The following features, listed in [Overview of WebView2 features and APIs](./ove
 <!-- ====================================================================== -->
 ## See also
 
-* [Call native-side code from web-side code](../how-to/hostobject.md)
+* [Interop of native and web code](../how-to/hostobject.md)
 * [Navigation events for WebView2 apps](./navigation-events.md) - valid for frames as well as webpages.
 
 **External pages:**

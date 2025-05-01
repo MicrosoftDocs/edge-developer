@@ -1,10 +1,10 @@
 ---
-title: What's new in DevTools (Microsoft Edge 89)
+title: What's New in DevTools (Microsoft Edge 89)
 description: The What's New tool is now Welcome, Visual Font Editor in the Styles pane, CSS Flexbox debugging tools, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
 ---
@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 89)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ To turn on this experiment, see [Settings](../../../customize/index.md#settings)
 For the history of this feature in the Chromium open-source project, see Issue [1093229](https://crbug.com/1093229).
 
 See also:
-* [Enable the Font Editor tool within the Styles pane](../../../experimental-features/index.md#enable-the-font-editor-tool-within-the-styles-pane) in _Experimental features in Microsoft Edge DevTools_.
+* [Enable new font editor within the Styles tab](../../../experimental-features/index.md#enable-new-font-editor-within-the-styles-tab) in _Experimental features in Microsoft Edge DevTools_.
 * [Edit CSS font styles and settings in the Styles pane in DevTools](../../../inspect-styles/edit-fonts.md).
 
 
@@ -81,13 +81,12 @@ Update: This feature has been released and is no longer experimental.<!-- To tur
 
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
-* [Using the Inspect tool to detect accessibility issues](../../../accessibility/accessibility-testing-in-devtools.md#using-the-inspect-tool-to-detect-accessibility-issues) in _Overview of accessibility testing using DevTools_.
+* [Use the Inspect tool to detect accessibility issues by hovering over the webpage](../../../accessibility/test-inspect-tool.md).
 * [Update .css files from within the Styles tab (CSS mirror editing)](../../../../visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md).
 
 Grid:
 * [CSS grids](../../../css/grid.md)
-* [Improved CSS Grid tooling](../../2020/10/devtools.md#improved-css-grid-tooling) in _What's new in DevTools (Microsoft Edge 87)_.
+* [Improved CSS Grid tooling](../../2020/10/devtools.md#improved-css-grid-tooling) in _What's New in DevTools (Microsoft Edge 87)_.
 <!-- todo: doc flexbox, probably next to grid.md -->
 
 MDN:
@@ -121,7 +120,6 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
 * [Inspect CSS Grid](../../../css/grid.md).
 
 
@@ -149,7 +147,6 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
 * [Inspect CSS Grid](../../../css/grid.md).
 
 
@@ -196,7 +193,7 @@ See also:
 
 Test the appearance of your website or app on the following devices in Microsoft Edge.
 
-* [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo)
+* Surface Duo
 * [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold)
 
 To access the new CSS media screen-spanning feature and the `getWindowSegments` (now `visualViewport.segments`) JavaScript API, go to `edge://flags` and toggle the flag next to **Experimental Web Platform features**:<!-- present as of April 19, 2022: -->
@@ -252,7 +249,7 @@ In Microsoft Edge version 89, node screenshots are more accurate, capturing the 
 For the history of this feature in the Chromium open-source project, see Issue [1003629](https://crbug.com/1003629).
 
 See also:
-* [Capture node screenshots using the Elements tool context menu](../../2020/08/devtools.md#capture-node-screenshots-using-the-elements-tool-context-menu) in _What's new in DevTools (Microsoft Edge 86)_
+* [Capture node screenshots using the Elements tool context menu](../../2020/08/devtools.md#capture-node-screenshots-using-the-elements-tool-context-menu) in _What's New in DevTools (Microsoft Edge 86)_
 
 
 <!-- ------------------------------ -->
@@ -457,11 +454,11 @@ See also:
 In the **Application** tool, the **Frames** page has the following updates.
 
 
-###### Service Workers information in Frame details
+###### Service workers information in Frame details
 
-The **Application** tool now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers** and then click a service worker.
+The **Application** tool now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers**<!-- todo: when the below .png is updated to show "Service workers", change to "w" --> and then click a service worker.
 
-![Service Workers information in the Frames details](./devtools-images/application-frames-service-workers-details.png)
+![Service workers information in the Frames details](./devtools-images/application-frames-service-workers-details.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1122507](https://crbug.com/1122507).
 
@@ -491,7 +488,7 @@ When you analyze load performance in the Performance tool, the **Frames** sectio
 For the history of this feature in the Chromium open-source project, see Issue [1075865](https://crbug.com/1075865).
 
 See also:
-* [Record load performance](../../../evaluate-performance/reference.md#record-load-performance) in _Performance features reference_
+* [Record load performance](../../../performance/reference.md#record-load-performance) in _Performance features reference_
 
 
 ###### New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)
@@ -520,7 +517,14 @@ Edge 89)_.
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-89) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-89) and is authored by Jecelyn Yeen.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

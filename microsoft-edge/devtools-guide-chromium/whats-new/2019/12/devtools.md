@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 80)
+title: What's New in DevTools (Microsoft Edge 80)
 description: Accessibility improvements, using the DevTools in other languages, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/13/2021
 ---
 <!-- Copyright Kayce Basques
@@ -20,17 +21,17 @@ ms.date: 12/13/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's new in DevTools (Microsoft Edge 80)
+# What's New in DevTools (Microsoft Edge 80)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
 
-<!-- ====================================================================== -->
-### Accessibility improvements to the DevTools
+<!-- ------------------------------ -->
+#### Accessibility improvements to the DevTools
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -49,8 +50,8 @@ See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
-<!-- ====================================================================== -->
-### Using the DevTools in other languages
+<!-- ------------------------------ -->
+#### Using the DevTools in other languages
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -89,8 +90,8 @@ See also:
 * [Change DevTools language settings](../../../customize/localization.md)
 
 
-<!-- ====================================================================== -->
-### webhint Microsoft Edge extension
+<!-- ------------------------------ -->
+#### webhint Microsoft Edge extension
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -104,8 +105,8 @@ See also:
 * [The webhint extension for Visual Studio Code](../../../../test-and-automation/webhint.md)
 
 
-<!-- ====================================================================== -->
-### 3D View
+<!-- ------------------------------ -->
+#### 3D View
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -113,9 +114,9 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 ![The 3D View in DevTools](./devtools-images/3dview.png)
 
-To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press **F1** in DevTools, or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, press **Ctrl+Shift+P**, type in **3D View** and select **Show 3D View**.
+To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press **F1** in DevTools, or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, press **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS), type in **3D View**, and then select **Show 3D View**.
 
-We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](../../../contact.md).
+We're working on the UI and adding more functionality to the 3D View, so please send us your [feedback](../../../contact.md).
 
 Chromium issue [#987787](https://crbug.com/987787)
 
@@ -123,12 +124,14 @@ See also:
 * [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md)
 
 
-<!-- ====================================================================== -->
-### Visual Studio Code extensions
+<!-- ------------------------------ -->
+#### Visual Studio Code extensions
 
 The DevTools team has also released some extensions for [Visual Studio Code](https://aka.ms/vscode) that let you use the power of the DevTools directly from your text editor. Check out the following extensions.
 
-#### Elements for Microsoft Edge
+
+<!-- --------- -->
+###### Elements for Microsoft Edge
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -141,7 +144,8 @@ Update: As of 2022, the **Elements for Microsoft Edge** extension is now the **M
 For more information, check out [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
 
 
-#### Debugger for Microsoft Edge
+<!-- --------- -->
+###### Debugger for Microsoft Edge
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -153,7 +157,8 @@ With the Debugger for Microsoft Edge Visual Studio Code extension, debug JavaScr
 Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extension** has been replaced by a built-in debugger for Microsoft Edge in Visual Studio Code.  See [Debug Microsoft Edge in Visual Studio Code](../../../../visual-studio-code/debugger-for-edge.md).
 
 
-#### webhint
+<!-- --------- -->
+###### webhint
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -168,8 +173,8 @@ See also:
 * [The webhint extension for Visual Studio Code](../../../../visual-studio-code/webhint.md)
 
 
-<!-- ====================================================================== -->
-### Visual Studio integration
+<!-- ------------------------------ -->
+#### Visual Studio integration
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -182,9 +187,8 @@ In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to d
 To learn more about debugging Microsoft Edge from Visual Studio, see [Visual Studio for web development](../../../../visual-studio/index.md).
 
 
-
-<!-- ====================================================================== -->
-### Tracking prevention Console messages
+<!-- ------------------------------ -->
+#### Tracking prevention Console messages
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -205,8 +209,8 @@ See also:
 The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.
 
 
-<!-- ====================================================================== -->
-### Support for let and class redeclarations in the Console
+<!-- ------------------------------ -->
+#### Support for let and class redeclarations in the Console
 
 The **Console** now supports redeclarations of `let` and `class` statements.  The inability to redeclare was a common annoyance for web developers who use the Console to experiment with new JavaScript code.
 
@@ -228,8 +232,8 @@ See also:
 * [Run JavaScript in the Console](../../../console/console-javascript.md)
 
 
-<!-- ====================================================================== -->
-### Improved WebAssembly debugging
+<!-- ------------------------------ -->
+#### Improved WebAssembly debugging
 
 DevTools has started to support the DWARF Debugging Standard, which means increased support for stepping over code, setting breakpoints, and resolving stack traces in your source languages within DevTools.
 
@@ -243,13 +247,14 @@ DevTools has started to support the DWARF Debugging Standard, which means increa
 
 See also:
 * [Filter Wasm resource type in the Network tool](../../../whats-new/2021/05/devtools.md#filter-wasm-resource-type-in-the-network-tool) in _What's New in DevTools (Microsoft Edge 92)_.
-* [WebAssembly Debugging: Enable DWARF support](../../../experimental-features/index.md#webassembly-debugging-enable-dwarf-support) in _Experimental features_.
 
 
-<!-- ====================================================================== -->
-### Network panel updates
+<!-- ------------------------------ -->
+#### Network panel updates
 
-#### Request Initiator Chains in the Initiator panel
+
+<!-- --------- -->
+###### Request Initiator Chains in the Initiator panel
 
 You can now view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource (such as a script) caused.
 
@@ -266,7 +271,8 @@ Initiator and dependency information can also be accessed by holding **Shift** a
 Chromium issue [#842488](https://crbug.com/842488)
 
 
-#### Highlight the selected network request in the Overview
+<!-- --------- -->
+###### Highlight the selected network request in the Overview
 
 After you select a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This can help you detect if the network request is happening earlier or later than expected.
 
@@ -277,7 +283,8 @@ Chromium issue [#988253](https://crbug.com/988253)
 See [Hide the Overview pane](../../../network/reference.md#hide-the-overview-pane) in _Network features reference_.
 
 
-#### URL and path columns in the Network panel
+<!-- --------- -->
+###### URL and path columns in the Network panel
 
 Use the new **Path** and **URL** columns in the **Network** tool to display the absolute path or full URL of each network resource.
 
@@ -293,7 +300,8 @@ See also:
 * [Sort requests](../../../network/reference.md#sort-requests) in _Network features reference_ mentions the **Waterfall** column.
 
 
-#### Updated User-Agent strings
+<!-- --------- -->
+###### Updated User-Agent strings
 
 DevTools supports setting a custom User-Agent string through the **Network Conditions** panel.  The User-Agent string affects the `User-Agent` HTTP header attached to network resources, and also the value of `navigator.userAgent`.
 
@@ -313,12 +321,14 @@ See also:
 * [Override the user agent string](../../../device-mode/override-user-agent.md)
 
 
-<!-- ====================================================================== -->
-### Audits panel updates
+<!-- ------------------------------ -->
+#### Audits panel updates
 
 In a later release, the **Audits** panel was renamed as the **Lighthouse** panel.
 
-#### New configuration UI
+
+<!-- --------- -->
+###### New configuration UI
 
 The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  For more information on the throttling UI changes, see [Audits Panel Throttling](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling).<!-- changing master to main doesn't work 5/19/2022 -->
 
@@ -328,10 +338,12 @@ See also:
 * [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
-<!-- ====================================================================== -->
-### Coverage tool updates
+<!-- ------------------------------ -->
+#### Coverage tool updates
 
-#### Per-function or per-block coverage modes
+
+<!-- --------- -->
+###### Per-function or per-block coverage modes
 
 The **Coverage** tool has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.  **Per block** coverage is more detailed but also far more expensive to collect.  DevTools uses **per function** coverage by default now.
 
@@ -340,7 +352,9 @@ The **Coverage** tool has a new dropdown menu that lets you specify whether code
 
 ![The coverage mode dropdown menu](./devtools-images/modes.png)
 
-#### Coverage must now be initiated by a page refresh
+
+<!-- --------- -->
+###### Coverage must now be initiated by a page refresh
 
 Toggling code coverage without a page refresh has been removed because the coverage data was unreliable.  For example, a function may be reported as unused if the runtime was a long time ago and the V8 garbage collector has cleaned it up.
 
@@ -353,7 +367,14 @@ See also:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-80) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-80) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

@@ -4,7 +4,8 @@ description: How the heap snapshot files are structured, when exported from the 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 9/16/2022
 ---
 # The heap snapshot file format
@@ -29,7 +30,7 @@ To export a `.heapsnapshot` file, first you need to record a heap snapshot in th
 
 1. Select **Heap snapshot** and then click **Take snapshot**.
 
-For more information, see [Record heap snapshots using the Memory tool](heap-snapshots.md).
+For more information, see [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](heap-snapshots.md).
 
 
 <!-- ====================================================================== -->

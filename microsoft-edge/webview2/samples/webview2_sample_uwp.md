@@ -4,8 +4,8 @@ description: This WebView2 sample demonstrates how to use the WebView2 control a
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 07/13/2022
 ---
 # WinUI 2 (UWP) sample app
@@ -14,9 +14,10 @@ This WebView2 sample demonstrates how to use the WebView2 control and WebView2 A
 
 *  Sample name: **webview2_sample_uwp**
 *  Repo directory: [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
-*  Solution file: **webview2_sample_uwp.sln**
+*  Solution file: `webview2_sample_uwp.sln`
 
 
+<!-- ------------------------------ -->
 #### Installed NuGet packages
 
 This sample includes the following NuGet packages:
@@ -39,19 +40,13 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install a preview channel of Microsoft Edge
+## Step 2 - Clone or download the WebView2Samples repo
 
-1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 3 - Clone or download the WebView2Samples repo
-
-1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Open the solution in Visual Studio
+## Step 3 - Open the solution in Visual Studio
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
@@ -63,13 +58,13 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 5 - Install workloads if prompted
+## Step 4 - Install workloads if prompted
 
 1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Build and run the project using pre-installed packages
+## Step 5 - Build and run the project using pre-installed packages
 
 Solution Explorer shows the **webview2_sample_uwp** project:
 
@@ -103,7 +98,7 @@ Next, update the NuGet packages for the project, per the following sections.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Update the NuGet packages
+## Step 6 - Update the NuGet packages
 
 In this step, we'll update the project's NuGet packages, to get the latest prerelease version of the WinUI 2 SDK.  The WinUI 2 SDK includes a compatible prerelease or release version of the WebView2 SDK.
 
@@ -117,7 +112,7 @@ Update the project's NuGet packages:
 
 1. Select the **Include prerelease** check box.
 
-   A pre-release version of the **Microsoft.UI.Xaml** package is listed, indicating the WinUI 2 SDK.  The **Microsoft.UI.Xaml** package includes the WebView2 SDK; **Microsoft.Web.WebView2** is listed in the **Dependencies** section of the **Microsoft.UI.Xaml** package.  Updating the **Microsoft.UI.Xaml** package will also cause an update to the compatible WebView2 SDK.
+   A prerelease version of the **Microsoft.UI.Xaml** package is listed, indicating the WinUI 2 SDK.  The **Microsoft.UI.Xaml** package includes the WebView2 SDK; **Microsoft.Web.WebView2** is listed in the **Dependencies** section of the **Microsoft.UI.Xaml** package.  Updating the **Microsoft.UI.Xaml** package will also cause an update to the compatible WebView2 SDK.
 
 1. In the **NuGet Package Manager**, click the **Updates** tab.
 
@@ -166,7 +161,7 @@ Update the project's NuGet packages:
 
 
 <!-- ====================================================================== -->
-## Step 8 - Build and run the project with updated packages
+## Step 7 - Build and run the project with updated packages
 
 Now that the NuGet packages have been updated, build and run the project again:
 
@@ -188,7 +183,7 @@ Now that the NuGet packages have been updated, build and run the project again:
 
 
 <!-- ====================================================================== -->
-## Step 9 - Inspect the code
+## Step 10 - Inspect the code
 
 1. In the Visual Studio code editor, inspect the code:
 

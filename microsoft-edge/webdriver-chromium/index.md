@@ -4,9 +4,9 @@ description: How to test your website or app in Microsoft Edge, and how to autom
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
-ms.date: 06/15/2023
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 12/12/2024
 ---
 # Use WebDriver to automate Microsoft Edge
 
@@ -48,17 +48,25 @@ The following sections describe how to get started with WebDriver for Microsoft 
 <!-- ====================================================================== -->
 ## Download Microsoft Edge WebDriver
 
-To begin writing automated tests, make sure the Microsoft Edge WebDriver version you install matches your browser version, as follows:
+To begin writing automated tests, make sure the Microsoft Edge WebDriver version you install matches your version of Microsoft Edge.  The first three parts of the four-part version number must match.
 
-1.  Go to `edge://settings/help` and note your version of Microsoft Edge:
+Download and install a version of Microsoft Edge WebDriver that matches your browser version, as follows:
 
-    ![The build number for Microsoft Edge on April 15, 2021](./index-images/microsoft-edge-version.png)
+1.  Go to `edge://settings/help` and note your version of Microsoft Edge, a four-part number:
+
+    ![The build number for Microsoft Edge on September 28, 2024](./index-images/microsoft-edge-version.png)
 
 1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/).
 
-1.  In the **Get the latest version** section of the page, select a platform in the channel that matches your version number of Microsoft Edge:
+1.  In the **Downloads** section of the page, click a platform button (such as **x64**) under a version number that matches your version number of Microsoft Edge:
 
     ![The `Get the latest version` section of the Microsoft Edge WebDriver webpage](./index-images/microsoft-edge-driver-install.png)
+
+    The first three parts of the four-part version number must match, between Microsoft Edge and Microsoft Edge WebDriver.  For example, the following versions of Microsoft Edge and Microsoft Edge WebDriver will work together, because the first three numbers are the same:
+    * 128.0.2739.79
+    * 128.0.2739.84
+
+    To download older versions, click the **Go to full directory** button below the **Recent versions** section.
 
 1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
 
@@ -111,7 +119,7 @@ Selenium uses the `EdgeDriver` class to manage a Microsoft Edge session.  The fo
 
 To get started automating Microsoft Edge with WebDriver, copy and paste the code snippet for your preferred language:
 
-# [C#](#tab/c-sharp)
+##### [C#](#tab/c-sharp)
 
 ```csharp
 using OpenQA.Selenium;
@@ -144,7 +152,7 @@ namespace EdgeDriverSample
 }
 ```
 
-# [Python](#tab/python)
+##### [Python](#tab/python)
 
 ```python
 from selenium import webdriver
@@ -163,7 +171,7 @@ time.sleep(5)
 driver.quit()
 ```
 
-# [Java](#tab/java)
+##### [Java](#tab/java)
 
 ```java
 import org.openqa.selenium.By;
@@ -188,7 +196,7 @@ public class EdgeDriverSample {
 }
 ```
 
-# [JavaScript](#tab/javascript)
+##### [JavaScript](#tab/javascript)
 
 ```javascript
 const { Builder, By } = require('selenium-webdriver');
@@ -223,7 +231,7 @@ You can also use `EdgeDriverService` to configure command-line options for the M
 
 The following snippet creates a new `EdgeDriverService` and enables verbose log output:
 
-# [C#](#tab/c-sharp)
+##### [C#](#tab/c-sharp)
 
 ```csharp
 var service = EdgeDriverService.CreateDefaultService();
@@ -232,18 +240,18 @@ service.UseVerboseLogging = true;
 var driver = new EdgeDriver(service);
 ```
 
-# [Python](#tab/python)
+##### [Python](#tab/python)
 
 ```python
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service
 
-service = Service(verbose = True)
+service = Service(service_args=["--verbose"])
 
 driver = webdriver.Edge(service = service)
 ```
 
-# [Java](#tab/java)
+##### [Java](#tab/java)
 
 ```java
 System.setProperty("webdriver.edge.verboseLogging", "true");
@@ -252,7 +260,7 @@ EdgeDriverService service = EdgeDriverService.createDefaultService();
 EdgeDriver driver = new EdgeDriver(service);
 ```
 
-# [JavaScript](#tab/javascript)
+##### [JavaScript](#tab/javascript)
 
 ```javascript
 const edge = require('selenium-webdriver/edge');
@@ -273,9 +281,9 @@ You can pass an `EdgeOptions` object to the `EdgeDriver` constructor to configur
 
 ###### Choose Specific Browser Binaries
 
-You can start a WebDriver session with specific Microsoft Edge binaries.  For example, you can run tests using the [Microsoft Edge preview channels](https://www.microsoft.com/edge/download/insider), such as Microsoft Edge Beta, Dev, or Canary.
+You can start a WebDriver session with specific Microsoft Edge binaries.  For example, you can run tests using the preview channels of Microsoft Edge (Beta, Dev, or Canary), as follows:
 
-# [C#](#tab/c-sharp)
+##### [C#](#tab/c-sharp)
 
 ```csharp
 var options = new EdgeOptions();
@@ -284,7 +292,7 @@ options.BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge Beta\Applicatio
 var driver = new EdgeDriver(options);
 ```
 
-# [Python](#tab/python)
+##### [Python](#tab/python)
 
 ```python
 from selenium import webdriver
@@ -296,7 +304,7 @@ options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Applicati
 driver = webdriver.Edge(options = options)
 ```
 
-# [Java](#tab/java)
+##### [Java](#tab/java)
 
 ```java
 EdgeOptions options = new EdgeOptions();
@@ -305,7 +313,7 @@ options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Application\\m
 EdgeDriver driver = new EdgeDriver(options);
 ```
 
-# [JavaScript](#tab/javascript)
+##### [JavaScript](#tab/javascript)
 
 ```javascript
 const edge = require('selenium-webdriver/edge');
@@ -318,47 +326,50 @@ let driver = edge.Driver.createSession(options);
 
 ---
 
+To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+
+
 ###### Pass extra command-line arguments
 
-You can use `EdgeOptions` to configure command-line arguments that will be passed to the Microsoft Edge browser process when a session is created.  For example, you can configure the browser to run in headless mode.
+You can use `EdgeOptions` to configure command-line arguments that will be passed to the Microsoft Edge browser process when a session is created.  For example, you can configure the browser to run in headless mode, as follows:
 
-# [C#](#tab/c-sharp)
+##### [C#](#tab/c-sharp)
 
 ```csharp
 var options = new EdgeOptions();
-options.AddArgument("headless");
+options.AddArgument("--headless=new");
 
 var driver = new EdgeDriver(options);
 ```
 
-# [Python](#tab/python)
+##### [Python](#tab/python)
 
 ```python
 from selenium import webdriver
 from selenium.webdriver.edge.options import Options
 
 options = Options()
-options.add_argument("headless")
+options.add_argument("--headless=new")
 
 driver = webdriver.Edge(options = options)
 ```
 
-# [Java](#tab/java)
+##### [Java](#tab/java)
 
 ```java
 EdgeOptions options = new EdgeOptions();
-options.addArguments("headless");
+options.addArguments("--headless=new");
 
 EdgeDriver driver = new EdgeDriver(options);
 ```
 
-# [JavaScript](#tab/javascript)
+##### [JavaScript](#tab/javascript)
 
 ```javascript
 const edge = require('selenium-webdriver/edge');
 
 let options = new edge.Options();
-options.addArguments("headless");
+options.addArguments("--headless=new");
 
 let driver = edge.Driver.createSession(options);
 ```
@@ -400,7 +411,7 @@ For more information about Application Guard, see:
 <!-- ====================================================================== -->
 ## Opt out of diagnostic data collection
 
-By default, Microsoft Edge WebDriver sends diagnostic data such as the status of the [New Session](https://www.w3.org/TR/webdriver2/#new-session) WebDriver command to Microsoft.  To turn off diagnostic data collection for Microsoft Edge WebDriver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about the data that Microsoft Edge WebDriver collects, see the [Microsoft Edge Privacy Whitepaper](/microsoft-edge/privacy-whitepaper#microsoft-edge-webdriver).
+By default, Microsoft Edge WebDriver sends diagnostic data such as the status of the [New Session](https://www.w3.org/TR/webdriver2/#new-session) WebDriver command to Microsoft.  To turn off diagnostic data collection for Microsoft Edge WebDriver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about the data that Microsoft Edge WebDriver collects, see [Microsoft Edge WebDriver](/legal/microsoft-edge/privacy#microsoft-edge-webdriver) in _Microsoft Edge Privacy Whitepaper_.
 
 
 <!-- ====================================================================== -->

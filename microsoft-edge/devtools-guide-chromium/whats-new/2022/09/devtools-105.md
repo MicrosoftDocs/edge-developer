@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 105)
+title: What's New in DevTools (Microsoft Edge 105)
 description: "Focus Mode: Improved location controls for DevTools, Activity Bar, Quick View, and Improved reliability in Issues tool. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/01/2022
 ---
 # What's New in DevTools (Microsoft Edge 105)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 105
+
+[![Thumbnail image for video "What's new in DevTools 105"](./devtools-105-images/devtools-whatsnew-105.png)](https://www.youtube.com/watch?v=h0XJH_iLoUk)
 
 
 <!-- ====================================================================== -->
@@ -35,7 +42,7 @@ The **Application** tool will attempt to launch your PWA with the protocol and U
 See also:
 
 * [Test Progressive Web App (PWA) protocol handling](../../../progressive-web-apps/protocol-handlers.md)
-* [Handle protocols in Progressive Web Apps](../../../../progressive-web-apps-chromium/how-to/handle-protocols.md)
+* [Handle protocols in a PWA](../../../../progressive-web-apps-chromium/how-to/handle-protocols.md)
 
 
 <!-- ====================================================================== -->
@@ -46,7 +53,7 @@ See also:
 
 Previously in Microsoft Edge, selecting **Edit and resend** for a network request from the Network tool may not have reliably opened the **Network Console** tool and pre-populated it with the values from the request.
 
-In Microsoft Edge 105, this issue has been fixed in the default UI.  This issue will also be fixed in [Focus Mode](../../../experimental-features/focus-mode.md) in a future release.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you're looking to resend.  You can continue to modify these values before sending the request from the **Network Console** tool.  Thank you for sending us your feedback about this issue!
+In Microsoft Edge 105, this issue has been fixed in the legacy DevTools UI.  This issue will also be fixed in the Focus Mode DevTools UI in a future release.  **Edit and resend** now pre-populates the **Network Console** tool with the values for the network request that you're looking to resend.  You can continue to modify these values before sending the request from the **Network Console** tool.  Thank you for sending us your feedback about this issue!
 
 Right-click the network request that you want to change and resend, and then select **Edit and Resend**:
 
@@ -57,7 +64,7 @@ In the **Network Console**, edit the network request information, and then click
 ![Network Console Edit and Send](./devtools-105-images/networkconsole-edit.png)
 
 See also:
-* [Starting from the Network tool](../../../network-console/network-console-tool.md#starting-from-the-network-tool) in _Compose and send web API requests using the Network Console tool_.
+* [Opening the Network Console tool from within the Network tool](../../../network-console/network-console-tool.md#opening-the-network-console-tool-from-within-the-network-tool) in _Compose and send web API requests using the Network Console tool_.
 
 
 <!-- ====================================================================== -->
@@ -66,7 +73,7 @@ See also:
 <!-- Title: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View -->
 <!-- Subtitle: Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View. -->
 
-In Microsoft Edge 105, several improvements to location controls have been made in [Focus Mode](../../../experimental-features/focus-mode.md), including a new option for changing the orientation of **Quick View**.
+In Microsoft Edge 105, several improvements to location controls have been made, including a new option for changing the orientation of the **Quick View** panel.
 
 The **Customize and control DevTools** (**...**) menu now directly contains buttons to set the docking location of DevTools, instead of requiring opening a submenu.  The **Dock location** icons now have greater contrast, and the currently selected **Dock location** button is now highlighted.
 
@@ -80,20 +87,17 @@ Selecting the docking location in Focus Mode, in Microsoft Edge 105:
 
 ![Dock location menu icons after](./devtools-105-images/after-docking-menu.png)
 
-You can now change the orientation of the **Quick View** panel as well.  To display **Quick View** vertically instead of horizontally, click the **Dock Quick View to right** button:
+You can now change the orientation of the **Quick View** toolbar and panel as well.  To display the **Quick View** panel vertically instead of horizontally, click the **Dock Quick View to right** button:
 
 ![Docking Quick View to the right](./devtools-105-images/quickview-console.png)
 
-To return **Quick View** to the horizontal orientation, click the **Dock Quick View to bottom** button:
+To return the **Quick View** toolbar and panel to the horizontal orientation, click the **Dock Quick View to bottom** button:
 
 ![Docking Quick View to the bottom](./devtools-105-images/dock-quick-view-bottom.png)
 
-To minimize **Quick View** in either orientation, click the **Collapse Quick View** button, or press **Esc**:
+To minimize the **Quick View** panel in either orientation, click the **Collapse Quick View** button, or press **Esc**:
 
 ![Minimizing Quick View](./devtools-105-images/focus-mode-improved-location-controls.png)
-
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -113,7 +117,6 @@ To search in all files in the **Sources** tool, in the **Page** section, right-c
 ![Networking Search All](./devtools-105-images/sources-search-all-files.png)
 
 See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 * [Search network headers and responses](../../../network/index.md#search-network-headers-and-responses) in _Inspect network activity_.
 * [Find source files for a page using the Search tool](../../../search/search-tool.md)
 
@@ -147,7 +150,7 @@ Microsoft Edge 105 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 105)](https://developer.chrome.com/blog/new-in-devtools-105) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 105)](https://developer.chrome.com/blog/new-in-devtools-105) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -155,3 +158,10 @@ Microsoft Edge 105 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

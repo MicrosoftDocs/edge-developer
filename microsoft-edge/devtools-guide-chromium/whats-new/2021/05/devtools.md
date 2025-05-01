@@ -1,16 +1,16 @@
 ---
-title: What's new in DevTools (Microsoft Edge 92)
+title: What's New in DevTools (Microsoft Edge 92)
 description: The More Tools button, in-context documentation to get started using the DevTools extension, increased support for screen readers in the Console, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 06/02/2021
 ---
 # What's New in DevTools (Microsoft Edge 92)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 > [!TIP]
 > The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to DevTools:
@@ -36,18 +36,18 @@ In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools 
 <!-- Title: Add tools quickly with the new More Tools button -->
 <!-- Subtitle: Learn about a new convenient way to open tools in Microsoft Edge DevTools. -->
 
-There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu.  The **More Tools** menu appears on the toolbar in the main panel and on the toolbar of the drawer. Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
+There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu.  The **More Tools** menu appears on the toolbar in the main panel and on the toolbar of the **Drawer** (now **Quick View** panel). Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
 
 To reorder the tabs on either toolbar, select and drag the tabs.
 
 The **More Tools** menu was available as an experiment in Microsoft Edge version 89, and is now always present.
 
-![The More Tools button on the upper toolbar and drawer toolbar](./devtools-images/more-tools-button.png)
+![The More Tools button on the upper toolbar and Drawer toolbar](./devtools-images/more-tools-button.png)
 
 ![The More Tools menu](./devtools-images/more-tools-menu.png)
 
 See also:
-* [The More Tools menus](../../../about-tools.md#the-more-tools-menus) in _About the list of tools_
+* [More tools](../../../about-tools.md#more-tools) in _About the list of tools_
 
 
 <!-- ====================================================================== -->
@@ -56,7 +56,7 @@ See also:
 <!-- Title: Improvements to tab interactions -->
 <!-- Subtitle: Interactions related to hovering, selecting, and closing tools are more predictable. -->
 
-Tabs for each tool have been reformatted to reduce the chance of accidentally closing a tool.  On each tab in the main toolbar and in the toolbar of the drawer, we added:
+Tabs for each tool have been reformatted to reduce the chance of accidentally closing a tool.  On each tab in the main toolbar and in the toolbar of the **Drawer** (now **Quick View** panel), the following have been added:
 *  Spacing around the tab.
 *  Spacing around the close (`x`) button in the tab.
 *  A background color when hovering over the tab.
@@ -77,10 +77,10 @@ These improvements are especially relevant for users of localized DevTools, in w
 
 ![Localized DevTools with narrow tabs](./devtools-images/hovering-reduced-chance-of-closing-tab.png)
 
-We also made it easier to re-add a tool that you closed by adding a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) to the main toolbar and drawer toolbar.
+It's now easier to re-add a tool that you closed: a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) has been added to the main toolbar and the **Drawer** (now **Quick View**) toolbar.
 
 See also:
-* [About the list of tools](../../../about-tools.md#the-more-tools-menus)
+* [About the list of tools](../../../about-tools.md)
 
 
 <!-- ====================================================================== -->
@@ -143,8 +143,8 @@ The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
 
-<!-- ====================================================================== -->
-### In-context documentation and UI to make it easier to use the DevTools extension
+<!-- ------------------------------ -->
+#### In-context documentation and UI to make it easier to use the DevTools extension
 
 <!-- Title: In-context documentation and UI make it easier to get started using the Developer Tools extension -->
 <!-- Subtitle: The Microsoft Edge Developer Tools for Visual Studio Code extension now presents helpful text, buttons, and links, and opens a documentation page with guidance on how to get started. -->
@@ -167,8 +167,8 @@ See also:
 The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
-<!-- ====================================================================== -->
-### CSS Grid editor
+<!-- ------------------------------ -->
+#### CSS Grid editor
 
 You can now preview and author CSS Grid layouts, using the new CSS Grid editor.
 
@@ -184,8 +184,8 @@ See also:
 * [Inspect CSS Grid](../../../css/grid.md)
 
 
-<!-- ====================================================================== -->
-### Support for const redeclarations in the Console
+<!-- ------------------------------ -->
+#### Support for const redeclarations in the Console
 
 The Console now supports redeclaration of `const` variables across separate REPL scripts (such as when you run a statement in the Console), in addition to the existing `let` and `class` redeclarations.  This support allows you to experiment with different declarations for `const` variables without refreshing the page.  Previously, DevTools threw a syntax error if you redeclared a `const` binding.
 
@@ -201,8 +201,8 @@ To learn how to run a single REPL script or a multi-line REPL script, see [Run J
 For the history of this feature in the Chromium open-source project, see Issue [1076427](https://crbug.com/1076427).
 
 
-<!-- ====================================================================== -->
-### New shortcut to view iframe details
+<!-- ------------------------------ -->
+#### New shortcut to view iframe details
 
 To quickly view `iframe` details, you can now right-click an `iframe` element in the **Elements** tool, and then select **Show iframe details**.
 
@@ -221,8 +221,8 @@ See also:
 For the history of this feature in the Chromium open-source project, see Issue [1192084](https://crbug.com/1192084).
 
 
-<!-- ====================================================================== -->
-### Enhanced CORS debugging support
+<!-- ------------------------------ -->
+#### Enhanced CORS debugging support
 
 Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** tool.  There are various potential causes of CORS errors.  Click each issue to expand it and see potential causes and solutions.
 
@@ -237,8 +237,8 @@ See also:
 For the history of this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
 
 
-<!-- ====================================================================== -->
-### Renamed XHR filter to Fetch\/XHR
+<!-- ------------------------------ -->
+#### Renamed XHR filter to Fetch\/XHR
 
 In the **Network** tool, the **XHR** filter is now renamed to **Fetch/XHR**. This change makes it clearer that this filter includes both `XMLHttpRequest` and `Fetch` API network requests.
 
@@ -252,8 +252,8 @@ See also:
 For the history of this feature in the Chromium open-source project, see Issue [1201398](https://crbug.com/1201398).
 
 
-<!-- ====================================================================== -->
-### Filter Wasm resource type in the Network tool
+<!-- ------------------------------ -->
+#### Filter Wasm resource type in the Network tool
 
 In the **Network** tool, you can now select the new **Wasm** filter to filter the WebAssembly network requests.
 
@@ -266,8 +266,8 @@ See also:
 For the history of this feature in the Chromium open-source project, see Issue [1103638](https://crbug.com/1103638).
 
 
-<!-- ====================================================================== -->
-### Compute Intersections are now included in the Performance tool
+<!-- ------------------------------ -->
+#### Compute Intersections are now included in the Performance tool
 
 In the **Performance** tool, DevTools now displays **Compute Intersections** in the flame chart. These changes help you identify intersection observers events and debug the potential performance overhead of intersection observers.
 
@@ -276,7 +276,7 @@ In the **Performance** tool, DevTools now displays **Compute Intersections** in 
 
 See also:
 * [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2)
-* [Analyze a performance recording](../../../evaluate-performance/reference.md#analyze-a-performance-recording)
+* [Analyze a performance recording](../../../performance/reference.md#analyze-a-performance-recording)
 
 For the history of this feature in the Chromium open-source project, see Issue [1199137](https://crbug.com/1199137).
 
@@ -284,7 +284,14 @@ For the history of this feature in the Chromium open-source project, see Issue [
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-92) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate, Chrome DevTools).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-92) and is authored by Jecelyn Yeen.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

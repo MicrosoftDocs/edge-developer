@@ -4,8 +4,8 @@ description: How to clear browsing data from the user data folder for a WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2022
 ---
 # Clear browsing data from the user data folder

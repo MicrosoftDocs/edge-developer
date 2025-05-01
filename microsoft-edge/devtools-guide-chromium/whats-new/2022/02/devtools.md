@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 98)
-description: 2021 year-in-review blog post.  Automate IE mode with Internet Explorer Driver.  Emulate forced-colors mode.  Tooltips for Activity icons in the Performance tool Event Log.  Shallow sizes in the Memory tool now shown as decimal values.  Network tool's Search text box can now be resized.  And more.
+title: What's New in DevTools (Microsoft Edge 98)
+description: 2021 year-in-review blog post.  Automate IE mode with Internet Explorer Driver.  Emulate forced-colors mode.  Tooltips for Activity icons in the Performance tool Event log.  Shallow sizes in the Memory tool now shown as decimal values.  Network tool's Search text box can now be resized.  And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 02/02/2022
 ---
 # What's New in DevTools (Microsoft Edge 98)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 98
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 98"](./devtools-images/devtools-whatsnew-98.png)](https://www.youtube.com/watch?v=HpaRDwU_AZI)
 
 
 <!-- ====================================================================== -->
@@ -24,6 +31,10 @@ In 2021, developer tooling for Microsoft Edge has taken a massive leap forward. 
 Catch up on all of this news and more in our year-in-review blog post, [Looking back at Microsoft Edge for developers in 2021](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/).
 
 [![Screenshot of the blog post: Looking back at Microsoft Edge for developers in 2021](./devtools-images/blog-post-edge-devs-2021.png)](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/)
+
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+* Light+
+* Dark+
 
 
 <!-- ====================================================================== -->
@@ -61,17 +72,17 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Activity icons in the Event Log of the Performance tool now have tooltips
+## Activity icons in the Event log of the Performance tool now have tooltips
 
-<!-- Title: Analyze runtime performance better with the Event Log in the Performance tool -->
-<!-- Subtitle: Activity icons in the Event Log now have tooltips indicating the type of activity for each event, such as Scripting, Rendering, or Painting. -->
+<!-- Title: Analyze runtime performance better with the Event log in the Performance tool -->
+<!-- Subtitle: Activity icons in the Event log now have tooltips indicating the type of activity for each event, such as Scripting, Rendering, or Painting. -->
 
-In previous versions of Microsoft Edge, the **Event Log** tab in the **Performance** tool displays color-coded icons representing the type of activity for each event.  However, the Event Log doesn't display information about what type of activity is represented by each color.  In Microsoft Edge 98, tooltips have been added to the activity events in the **Event Log** tab, indicating **Scripting**, **Rendering**, **Painting**, **System**, and **Idle time**, for each event.
+In previous versions of Microsoft Edge, the **Event log** tab in the **Performance** tool displays color-coded icons representing the type of activity for each event.  However, the Event log doesn't display information about what type of activity is represented by each color.  In Microsoft Edge 98, tooltips have been added to the activity events in the **Event log** tab, indicating **Scripting**, **Rendering**, **Painting**, **System**, and **Idle time**, for each event.
 
-![In the Event Log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting"](./devtools-images/activity-event-tooltip.png)
+![In the Event log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting"](./devtools-images/activity-event-tooltip.png)
 
 See also:
-* [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance)
+* [Record runtime performance](../../../performance/reference.md#record-runtime-performance)
 
 
 <!-- ====================================================================== -->
@@ -108,7 +119,7 @@ See also:
 <!-- Title: Fix: Icons and tags in the DevTools are now aligned -->
 <!-- Subtitle: Icons for service workers and script tags in the Elements tool now appear as expected. -->
 
-In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon](./devtools-images/expand-collapse-triangle-icon.png)) icons in the **Service Workers** section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 98, this issue has been fixed:
+In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon](./devtools-images/expand-collapse-triangle-icon.png)) icons in the **Service Workers**<!-- todo: when the below .png is updated to show "Service workers", change to "w" --> section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 98, this issue has been fixed:
 
 ![The icons in the Service Workers section of the Application tool are now aligned, so the Expand/Collapse icons are now fully visible](./devtools-images/service-worker-icons-aligned-expand-icon-visible.png)
 
@@ -117,7 +128,7 @@ Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon](./de
 ![In the Elements tool, the Expand icon for \<script\> tags is now correctly aligned](./devtools-images/elements-script-tag-expand-icons-aligned.png)
 
 See also:
-* [Service workers](../../../progressive-web-apps/index.md#service-workers) in _Debug Progressive Web Apps (PWAs)_ - debugging service workers in DevTools.
+* [Service workers](../../../progressive-web-apps/index.md#service-workers) in _Debug a Progressive Web App (PWA)_ - debugging service workers in DevTools.
 
 
 <!-- ====================================================================== -->
@@ -149,7 +160,7 @@ Microsoft Edge version 98 also includes the following updates from the Chromium 
 <!--
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 98)](https://developer.chrome.com/blog/new-in-devtools-98) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 98)](https://developer.chrome.com/blog/new-in-devtools-98) and is authored by Jecelyn Yeen.
 -->
 
 
@@ -159,3 +170,10 @@ Microsoft Edge version 98 also includes the following updates from the Chromium 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 101)
+title: What's New in DevTools (Microsoft Edge 101)
 description: Console tool in VS Code.  Source maps cached with IndexedDB.  Track pending network requests when exporting HAR files.  Updated UI and camera controls in 3D View.  Switch themes without reloading DevTools.  And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 04/28/2022
 ---
 # What's New in DevTools (Microsoft Edge 101)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 101
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 101"](./devtools-101-images/devtools-whatsnew-101.png)](https://www.youtube.com/watch?v=kv6Q8a9bsbA)
 
 
 <!-- ====================================================================== -->
@@ -26,11 +33,11 @@ The Console is one of the most popular tools in DevTools.  You can now access th
 
 You can use the Console as the main tool, or use it together with the **Elements** and **Network** tools.
 
-The Console tool in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code:
+The Console tool open in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code:
 
 ![The Console tool in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code](devtools-101-images/console-tool-vsc-1.png)
 
-The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code:
+The Console tool open in the **Drawer** of the Microsoft Edge DevTools extension for Visual Studio Code:
 
 ![The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code](devtools-101-images/console-tool-vsc-2.png)
 
@@ -96,8 +103,6 @@ In previous versions of Microsoft Edge, switching themes in DevTools required re
 
 ![Switching themes without reloading DevTools](devtools-101-images/switching-theme.png)
 
-For more information about using themes from Visual Studio Code in DevTools, see [Apply a color theme to DevTools](../../../customize/theme.md).
-
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
@@ -114,7 +119,7 @@ Microsoft Edge 101 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 101)](https://developer.chrome.com/blog/new-in-devtools-101) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 101)](https://developer.chrome.com/blog/new-in-devtools-101) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -122,3 +127,10 @@ Microsoft Edge 101 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

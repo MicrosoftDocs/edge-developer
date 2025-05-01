@@ -1,19 +1,18 @@
 ### YamlMime:Landing
-
+# docset landing page
 title: Microsoft Edge Developer documentation # < 60 chars
 summary: Development using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more. # < 160 chars
 
 metadata:
   # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
   # description: default to root title above. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: app-service#Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: microsoft-edge
   ms.topic: landing-page # Required
   # ms.collection: collection # Optional; Remove if no collection is used.
   author: MSEdgeTeam #Required; your GitHub user alias, with correct capitalization.
   ms.author: msedgedevrel #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/02/2021 #Required; mm/dd/yyyy format.
-  ms.subservice: web-apps
-
+  ms.date: 02/15/2024 #Required; mm/dd/yyyy format.
+  
       # - linkListType: architecture
       # - linkListType: concept
       # - linkListType: deploy
@@ -43,210 +42,288 @@ landingContent:
 # https://review.learn.microsoft.com/help/contribute/contribute-how-to-write-landing-page?branch=main
 
 # =============================================================================
-# Row 1 with 3 cards
-# =============================================================================
-# Card r1c1
+# Row 1
+# -----------------------------------------------------------------------------
+# Card for toc bucket 1 (Release notes) & 2 (Experimental web platform features) - r1c1
+  - title: Web platform updates
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Release notes for Microsoft Edge web platform
+            url: ../web-platform/release-notes/index.md
+
+          - text: Site compatibility-impacting changes
+            url: ../web-platform/site-impacting-changes.md
+
+          - text: Use origin trials in Microsoft Edge
+            url: ../origin-trials/index.md
+
+# -----------------------------------------------------------------------------
+# Card for toc bucket 3 - r1c2
   - title: Microsoft Edge DevTools
     linkLists:
       - linkListType: overview
         links:
-          - text: Develop for the web with Microsoft Edge  # topmost article
-            url: /microsoft-edge/develop-web-microsoft-edge
+          - text: Microsoft Edge DevTools documentation  # devtools landing page
+            url: ../devtools-guide-chromium/landing/index.yml
 
-          - text: Microsoft Edge DevTools documentation  # DevTools landing page
-            url: /microsoft-edge/devtools-guide-chromium/landing/index
-
-          - text: Overview of DevTools  # renamed from index.md
-            url: /microsoft-edge/devtools-guide-chromium/overview
+          - text: Overview of DevTools
+            url: ../devtools-guide-chromium/overview.md
 
       - linkListType: whats-new
         links:
           - text: What's New in Microsoft Edge DevTools
-            url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+            url: ../devtools-guide-chromium/whats-new/whats-new.md
 
       - linkListType: how-to-guide
         links:
           - text: Command Menu
-            url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+            url: ../devtools-guide-chromium/command-menu/index.md
 
           - text: View and change CSS
-            url: /microsoft-edge/devtools-guide-chromium/css/index
+            url: ../devtools-guide-chromium/css/index.md
 
       - linkListType: reference
         links:
           - text: Keyboard shortcuts
-            url: /microsoft-edge/devtools-guide-chromium/shortcuts
-# =============================================================================
-# Card r1c2
-  - title: DevTools for Visual Studio Code
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: DevTools extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
-# =============================================================================
-# Card r1c3
+            url: ../devtools-guide-chromium/shortcuts/index.md
+
+# -----------------------------------------------------------------------------
+# Card for toc bucket 4 - r1c3
   - title: Microsoft Edge extensions
     linkLists:
       - linkListType: overview
         links:
+          - text: Microsoft Edge extensions documentation  # extensions landing page
+            url: ../extensions-chromium/landing/index.yml
+
           - text: Extensions overview
-            url: /microsoft-edge/extensions-chromium/index
+            url: ../extensions-chromium/index.md
 
           - text: Getting started tutorial
-            url: /microsoft-edge/extensions-chromium/getting-started/index
+            url: ../extensions-chromium/getting-started/index.md
 
-          - text: Port a Chromium extension to Microsoft Edge
-            url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
+          - text: Port a Chrome extension to Microsoft Edge
+            url: ../extensions-chromium/developer-guide/port-chrome-extension.md
       - linkListType: how-to-guide
         links:
-          - text: Alternate methods of distributing extensions
-            url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
+          - text: Alternative ways to distribute an extension
+            url: ../extensions-chromium/developer-guide/alternate-distribution-options.md
 
           - text: Step-wise publishing process
-            url: /microsoft-edge/extensions-chromium/publish/publish-extension
+            url: ../extensions-chromium/publish/publish-extension.md
 
           - text: Register as a Microsoft Edge extension developer
-            url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+            url: ../extensions-chromium/publish/create-dev-account.md
 
-          - text: Create a simple extension
-            url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
+          - text: "Sample: Picture viewer pop-up webpage"
+            url: ../extensions-chromium/getting-started/picture-viewer-popup-webpage.md
+
 # =============================================================================
-# Row 2 with 3 cards
-# =============================================================================
-# Card r2c1
-  - title: Progressive Web Apps
+# Row 2
+# -----------------------------------------------------------------------------
+# Card for toc bucket 5 - r2c1
+  - title: Progressive Web Apps (PWAs)
     linkLists:
       - linkListType: overview
         links:
-          - text: Progressive Web Apps overview
-            url: /microsoft-edge/progressive-web-apps-chromium/index
+          - text: Progressive Web Apps (PWAs) documentation  # pwa landing page
+            url: ../progressive-web-apps-chromium/landing/index.yml
 
-          - text: Get started with Progressive Web Apps
-            url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
-
-          - text: Debug Progressive Web Apps
-            url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
+          - text: Overview of Progressive Web Apps
+            url: ../progressive-web-apps-chromium/index.md
 
       - linkListType: whats-new
         links:
-          - text: What's New in Progressive Web Apps
-            url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
+          - text: What's New in PWAs
+            url: ../progressive-web-apps-chromium/whats-new/pwa.md
+
+      - linkListType: get-started
+        links:
+          - text: Get started with PWAs
+            url: ../progressive-web-apps-chromium/how-to/index.md
+
+          - text: Using Service Workers
+            url: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+
+          - text: The web app manifest  # in _Making PWAs installable_
+            url: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest
+
+      - linkListType: how-to-guide
+        links:
+          - text: Publish a PWA to the Microsoft Store
+            url: ../progressive-web-apps-chromium/how-to/microsoft-store.md
 
       - linkListType: concept
         links:
-          - text: Offline scenarios
-            url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
+          - text: Store data on the device
+            url: ../progressive-web-apps-chromium/how-to/offline.md
 
-          - text: Service Workers
-            url: /microsoft-edge/progressive-web-apps-chromium/how-to/service-workers
-
-          - text: Web App Manifests
-            url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
-# =============================================================================
-# Card r2c2
+# -----------------------------------------------------------------------------
+# Card for toc bucket 6 - r2c2
   - title: WebView2
     linkLists:
       - linkListType: overview
         links:
+          - text: WebView2 documentation  # wv2 landing page
+            url: ../webview2/landing/index.yml
+
           - text: Introduction to Microsoft Edge WebView2
-            url: /microsoft-edge/webview2/index
+            url: ../webview2/index.md
       - linkListType: concept
         links:
           - text: Differences between Microsoft Edge and WebView2
-            url: /microsoft-edge/webview2/concepts/browser-features
+            url: ../webview2/concepts/browser-features.md
+
           - text: Development best practices
-            url: /microsoft-edge/webview2/concepts/developer-guide
+            url: ../webview2/concepts/developer-guide.md
       - linkListType: get-started
         links:
           - text: Get started with WebView2
-            url: /microsoft-edge/webview2/get-started/get-started
+            url: ../webview2/get-started/get-started.md
       - linkListType: download
         links:
-          - text: Sample Code
-            url: /microsoft-edge/webview2/code-samples-links
+          - text: WebView2 sample apps
+            url: ../webview2/code-samples-links.md
       - linkListType: whats-new
         links:
           - text: Release Notes for the WebView2 SDK
-            url: /microsoft-edge/webview2/release-notes
+            url: ../webview2/release-notes/index.md
       - linkListType: reference
         links:
           - text: WebView2 API Reference
-            url: /microsoft-edge/webview2/webview2-api-reference
-# =============================================================================
-# Card r2c3
-  - title: Development tips for Microsoft Edge
+            url: ../webview2/webview2-api-reference.md
+
+# -----------------------------------------------------------------------------
+# Card for toc bucket 7 - r2c3
+  - title: Test and automation
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Development tips for Microsoft Edge
-            url: /microsoft-edge/web-platform/web-platform
+          - text: Test and automation in Microsoft Edge
+            url: ../test-and-automation/test-and-automation.md
 
-          - text: Site compatibility-impacting changes
-            url: /microsoft-edge/web-platform/site-impacting-changes
+          - text: DevTools Protocol
+            url: ../devtools-protocol-chromium/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol-chromium/
+
+          - text: Use Playwright to automate and test in Microsoft Edge
+            url: ../playwright/index.md
+
+          - text: Puppeteer overview
+            url: ../puppeteer/index.md
+
+          - text: Use WebDriver to automate Microsoft Edge
+            url: ../webdriver-chromium/index.md
+
+          - text: webhint extension for Visual Studio Code
+            url: ../visual-studio-code/webhint.md
+
+# =============================================================================
+# Row 3
+# -----------------------------------------------------------------------------
+# Card for toc bucket 8 - r3c1
+  - title: Edge-specific web development tips
+    linkLists:
+#     - linkListType: overview
+#       links:
+#         - text: Edge-specific web development tips  # jump page for overview of bucket, omit bc 10 max
+#           url: ../web-platform/web-platform.md
+      - linkListType: how-to-guide
+        links:
+          - text: Move users to Microsoft Edge from Internet Explorer
+            url: ../web-platform/ie-to-microsoft-edge-redirection.md
+
+          - text: Tracking prevention in Microsoft Edge
+            url: ../web-platform/tracking-prevention.md
 
           - text: Detect Microsoft Edge from your website
-            url: /microsoft-edge/web-platform/user-agent-guidance
+            url: ../web-platform/user-agent-guidance.md
 
-          - text: Detect Windows 11 using User-Agent Client Hints
-            url: /microsoft-edge/web-platform/how-to-detect-win11
-# =============================================================================
-# Row 3 with 3 cards
-# =============================================================================
-# Card r3c1
+          - text: Develop experiences for the sidebar in Microsoft Edge
+            url: ../web-platform/sidebar.md
+
+          - text: Detect Windows 11 and CPU architecture using User-Agent Client Hints
+            url: ../web-platform/how-to-detect-win11.md
+
+          - text: Customize the password reveal button
+            url: ../web-platform/password-reveal.md
+
+          - text: Display regional versions of your site, based on OS settings
+            url: ../web-platform/os-regional-settings.md
+
+          - text: View a JSON file or server response with formatting
+            url: ../web-platform/json-viewer.md
+
+          - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?
+            url: ../web-platform/ad-selection-api.md
+
+# -----------------------------------------------------------------------------
+# Card for toc bucket 9 - r3c2
   - title: Microsoft Edge IDE integration
     linkLists:
       - linkListType: overview
         links:
           - text: Microsoft Edge IDE integration
-            url: /microsoft-edge/visual-studio-code/ide-integration
+            url: ../visual-studio-code/ide-integration.md
+
+          - text: Microsoft Edge DevTools extension for Visual Studio Code
+            url: ../visual-studio-code/microsoft-edge-devtools-extension.md  # goes directly to main page, in DevTools
+
           - text: Debug Microsoft Edge in Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/debugger-for-edge
+            url: ../visual-studio-code/debugger-for-edge.md
       - linkListType: how-to-guide
         links:
-          - text: Open source files in Visual Studio Code
-            url: /microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode
+          - text: Opening source files in Visual Studio Code
+            url: ../devtools-guide-chromium/sources/opening-sources-in-vscode.md
+
           - text: Visual Studio for web development
-            url: /microsoft-edge/visual-studio/
-# =============================================================================
-# Card r3c2
+            url: ../visual-studio/index.md
+
+# -----------------------------------------------------------------------------
+# Card for toc bucket 10 - r3c3
   - title: Accessibility in Microsoft Edge
     linkLists:
       - linkListType: overview
         links:
           - text: Accessibility-testing features
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
+            url: ../devtools-guide-chromium/accessibility/reference.md
+
           - text: Accessibility in Microsoft Edge
-            url: /microsoft-edge/accessibility/
+            url: ../accessibility/index.md
       - linkListType: how-to-guide
         links:
-          - text: Overview of accessibility testing using DevTools
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
           - text: Accessibility testing
-            url: /microsoft-edge/accessibility/test
+            url: ../accessibility/test.md
+
 # =============================================================================
-# Card r3c3
-  - title: Test and automation
+# Row 4
+# -----------------------------------------------------------------------------
+# Card for toc bucket 11 - r4c1
+  - title: DualEngine
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Introduction to the Microsoft DualEngine API
+            url: ../dualengine/intro.md
+
+      - linkListType: get-started
+        links:
+          - text: Getting started with the DualEngine API
+            url: ../dualengine/get-started.md
+
       - linkListType: how-to-guide
         links:
-          - text: Test and automation in Microsoft Edge  # new firstchild article
-            url: /microsoft-edge/test-and-automation/test-and-automation
+          - text: Creating a DualEngine adapter plugin DLL
+            url: ../dualengine/concepts/adapter-dll.md
 
-          - text: DevTools Protocol
-            url: /microsoft-edge/devtools-protocol-chromium
+          - text: Launching Internet Explorer
+            url: ../dualengine/concepts/launching-internet-explorer.md
 
-          - text: Origin Trials
-            url: /microsoft-edge/origin-trials/index
+      - linkListType: reference
+        links:
+          - text: DualEngine Win32 C++ Reference
+            url: ../dualengine/reference/index.md
 
-          - text: Playwright
-            url: /microsoft-edge/playwright/index
-
-          - text: Puppeteer
-            url: /microsoft-edge/puppeteer
-
-          - text: WebDriver
-            url: /microsoft-edge/webdriver-chromium
-
-          - text: webhint extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/webhint
+# -----------------------------------------------------------------------------
+# Card r4c1
+# leaf articles at bottom of toc (videos, privacy, initiative) - omit

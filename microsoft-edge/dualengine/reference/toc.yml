@@ -1,0 +1,29 @@
+- name: DualEngine Win32 C++ Reference
+  href: index.md
+  items:
+    - name: DualEngineSessionFactory
+      href: dualenginesessionfactory.md
+    - name: IDualEngine20BrowserSessionObserver
+      href: idualengine20browsersessionobserver.md
+    - name: IDualEngine20BrowserSession
+      href: idualengine20browsersession.md
+    - name: IDualEngine20BrowserObserver
+      href: idualengine20browserobserver.md
+    - name: IDualEngine20Browser
+      href: idualengine20browser.md
+    - name: Structs
+      items:
+        - name: ACCELERATOR
+          href: accelerator.md
+        - name: CryptDataBlob
+          href: cryptdatablob.md
+        - name: Globals
+          href: dualengine-idl.md
+        - name: DualEngineCookie
+          href: dualenginecookie.md
+        - name: DualEngineNewWindowOptions
+          href: dualenginenewwindowoptions.md
+        - name: tagSentinelEntryInfo
+          href: tagsentinelentryinfo.md
+        - name: VisibleListUpdateEntry
+          href: visiblelistupdateentry.md

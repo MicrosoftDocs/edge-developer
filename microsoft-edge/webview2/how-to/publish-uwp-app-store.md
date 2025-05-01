@@ -4,8 +4,8 @@ description: How to publish a Universal Windows Platform (UWP) app that hosts th
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2022
 ---
 # Publish a UWP WebView2 app to the Microsoft Store
@@ -95,6 +95,7 @@ Once you're satisfied that your packaged app works, run the Windows App Certific
 The results page of the Windows App Certification Kit (WACK) app shows any tests that need to be resolved.
 
 
+<!-- ---------- -->
 ###### Restricted name-space
 
 If your app failed the **Restricted name-space** check, edit the `package.appxmanifest` file and remove the `restrictedcapabilities` line and any capabilities that use `rescap`.
@@ -102,21 +103,25 @@ If your app failed the **Restricted name-space** check, edit the `package.appxma
 WebView2 shouldn't require any restricted capabilities, to operate.  If your app needs restricted capabilities, you'll need to either ask for a store exception through [Partner Center](https://partner.microsoft.com), or only distribute the app through non-Store avenues.
 
 
+<!-- ---------- -->
 ###### Branding
 
 If your app failed the **Branding** checks, update all the Visual Assets in the manifest as described above.
 
 
+<!-- ---------- -->
 ###### App Capabilities
 
 If your app failed the **App Capabilities** tests, turn off any unneeded capabilities.  If you need a special use capability you will need to get Microsoft Store approval or use non-Store distribution methods.
 
 
+<!-- ---------- -->
 ###### General metadata correctness
 
 If your app failed the **General metadata correctness** tests with an error in `IPopup4`, update the **microsoft.UI.xaml** NuGet package to version **Microsoft.UI.Xaml.2.8.0-prerelease.220118001** or higher.  There was a bug in the manifests, prior to that version.
 
 
+<!-- ---------- -->
 ###### Supported API
 
 In this test, WACK checks the Windows APIs that your host app is calling, to make sure they're supported.

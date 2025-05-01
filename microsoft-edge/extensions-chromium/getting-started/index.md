@@ -4,10 +4,12 @@ description: The architecture of Microsoft Edge extensions, and core concepts to
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 02/06/2022
 ---
 # Extension concepts and architecture
+<!-- https://aka.ms/EdgeAddonsLearn -->
 
 This article introduces concepts about building a Microsoft Edge extension.  Follow along to understand how multi-tab browsers work.
 
@@ -71,4 +73,4 @@ An extension provides opt-in permissions at install time.  You specify the exten
 <!-- ====================================================================== -->
 ## Next steps
 
-For information on getting started with your extension, see [Create an extension tutorial, part 1](part1-simple-extension.md).
+Next, install, run, and study [Sample: Picture viewer pop-up webpage](./picture-viewer-popup-webpage.md).

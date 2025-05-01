@@ -4,7 +4,8 @@ description: Each stage in the pixel pipeline represents an opportunity to intro
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 2/22/2023
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
@@ -22,7 +23,7 @@ ms.date: 2/22/2023
    limitations under the License.  -->
 # Troubleshooting common performance issues
 
-<!-- not able to find this article or its strings in other repo; the link redirects.  "todo" items might not be actionable -->
+<!-- not able to find this article or its strings in other repo; the [here] link redirects.  "todo" items might not be actionable -->
 
 Users expect interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank (interruptions of rendering).  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.
 
@@ -53,20 +54,20 @@ Take a recording in the **Performance** tool and look for suspiciously long `Eva
 <!--todo: add Recording section when available  -->
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->
 
-If you notice quite a bit of jank (interruptions of rendering) in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  CPU profiles show where runtime is spent within the functions of your page.  Learn how to create CPU profiles in [Speed up JavaScript runtime](js-runtime.md).
+If you notice quite a bit of jank (interruptions of rendering) in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  CPU profiles show where runtime is spent within the functions of your page.  Learn how to create CPU profiles in [Speed up JavaScript runtime ("Allocation sampling" profiling type)](js-runtime.md).
 
 
 <!-- ------------------------------ -->
 #### JavaScript: Problems
 
-The following table describes some common JavaScript problems and potential solutions.
+The following are common JavaScript problems and potential solutions.
 
 | Problem | Example | Solution |
 |:--- |:--- |:--- |
-| Expensive input handlers affecting response or animation.  | Touch, parallax scrolling.  | Let the browser handle touch and scrolls, or bind the listener as late as possible.  See [Expensive Input Handlers in Paul Lewis' runtime performance checklist](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/).  |
-| Badly timed JavaScript affecting response, animation, load.  | User scrolls right after page load, setTimeout / setInterval.  | Optimize JavaScript runtime: use `requestAnimationFrame`, spread DOM manipulation over frames, use [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  |
-| Long-running JavaScript affecting response.  | The [DOMContentLoaded event](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers) stalls as it is swamped with JS work.  | Move pure computational work to [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  If you need DOM access, use `requestAnimationFrame`.  <!--See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution).  -->  |
-| Garbage-y scripts affecting response or animation.  | Garbage collection may happen anywhere.  | Write less garbage-y scripts.  See [Garbage Collection in Animation in Paul Lewis' runtime performance checklist](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/).  |
+| Expensive input handlers affecting response or animation.  | Touch, parallax scrolling.  | Let the browser handle touch and scrolls, or bind the listener as late as possible.  See [Expensive Input Handlers](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/#7_expensive_input_handlers) in _The Runtime Performance Checklist_ by Paul Lewis. |
+| Badly timed JavaScript affecting response, animation, load.  | User scrolls right after page load, setTimeout / setInterval.  | Optimize JavaScript runtime: use `requestAnimationFrame`, spread DOM manipulation over frames, use Web Workers; see [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  |
+| Long-running JavaScript affecting response.  | The [DOMContentLoaded event](https://developer.mozilla.org/docs/Web/API/Document/DOMContentLoaded_event) stalls, because it's swamped with JavaScript work.  | Move pure computational work to Web Workers; see [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  If you need DOM access, use `requestAnimationFrame`.  <!-- See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution). -->  |
+| Garbage-y scripts affecting response or animation.  | Garbage collection may happen anywhere.  | Write less garbage-y scripts.  See [Garbage Collection in Animations](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist#6_garbage_collection_in_animations) in _The Runtime Performance Checklist_ by Paul Lewis. |
 
 <!--todo: add "Optimize JavaScript runtime" section when available  -->
 
@@ -172,7 +173,14 @@ Compositing is where the painted parts of the page are put together for displayi
 <!-- ------------------------------ -->
 #### Paint and composite: Tools
 
-Want to know how long painting takes or how often painting occurs?  Check the [Enable advanced paint instrumentation](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation) setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.
+To find out how long painting takes, or how often painting occurs:
+
+1. In DevTools, in the **Performance** tool, click the **Capture settings** (![The 'Capture settings' icon](./index-images/capture-settings-icon.png)) button, and then select the **Enable advanced rendering instrumentation** checkbox.
+
+1. Take a recording.
+
+If most of your rendering time is spent painting, you have paint problems.  For more information, see [Enable advanced paint instrumentation](../performance/reference.md#enable-advanced-paint-instrumentation) in _Performance features reference_.
+
 
 <!--
 ![Long paint times in timeline recording](../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.png)
@@ -180,7 +188,7 @@ Want to know how long painting takes or how often painting occurs?  Check the [E
 
 <!--
 Check out the **Rendering** panel for further configurations that can help you diagnose paint problems.
-todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live.
+todo: link Rendering panel in ../performance/timeline-tool  sub-section when live.
 The Timeline Tool page is deprecated.
 -->
 
@@ -202,7 +210,7 @@ The following table describes some common paint and composite problems and poten
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/evaluate-performance/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/performance)<!-- orig page might no longer exist; got redir'd as shown --> and is authored by Kayce Basques and Meggin Kearney.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

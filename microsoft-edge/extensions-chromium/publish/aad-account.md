@@ -1,10 +1,11 @@
 ---
 title: Add users to the Microsoft Edge program
-description: Adding and managing users from your organization onto the Microsoft Edge program to help manage the Partner Center account.  Enable your other team members to publish Microsoft Edge extensions to the Microsoft Edge Add-ons website using your Partner Center account.
+description: Adding and managing users from your organization onto the Microsoft Edge program to help manage the Partner Center account.  Enable your other team members to publish extensions at Microsoft Edge Add-ons using your Partner Center account.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/03/2022
 ---
 # Add users to the Microsoft Edge program
@@ -95,7 +96,7 @@ To create an AD tenant, see [Create a new Microsoft Entra tenant to associate wi
 Also see [Associate an existing Microsoft Entra tenant with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center), in the Windows UWP documentation.  Associating a Microsoft Entra tenant with a Microsoft Edge Program account at Partner Center works the same way as associating a tenant with the Windows apps developer program.
 
 > [!IMPORTANT]
-> If you added users after associating your Microsoft Entra tenant with your Microsoft account on Partner Center, note that changing user roles or permissions isn't currently supported.  However, you can continue to add as many users as you require and use the filter option of the [user management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section to locate admins of specific roles.
+> If you added users after associating your Microsoft Entra tenant with your Microsoft account on Partner Center, changing user roles or permissions isn't supported.  However, you can continue to add as many users as you require and use the filter option of the [user management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section to locate admins of specific roles.
 
 
 <!-- ====================================================================== -->
@@ -109,7 +110,7 @@ For more information about adding users, see [Users, groups, and applications in
 <!-- ====================================================================== -->
 ## Contact us
 
-If you need help or assistance with associating your Microsoft Entra ID account or other related queries, [Contact Microsoft Edge extensions support](contact-extensions-team.md).
+If you need help or assistance with associating your Microsoft Entra ID account or other related queries, [Contact the Microsoft Edge extensions team](contact-extensions-team.md).
 
 
 <!-- ====================================================================== -->

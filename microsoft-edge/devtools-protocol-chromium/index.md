@@ -4,7 +4,7 @@ description: Use the DevTools Protocol to instrument, inspect, debug, and profil
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 04/06/2021
 ---
 # Microsoft Edge DevTools Protocol
@@ -129,13 +129,13 @@ String("Target is closing")
 
 
 <!-- ====================================================================== -->
-## Remote Tools for Microsoft Edge (Beta)
+## Remote Tools for Microsoft Edge
 
-You can install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
+You can install the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) from the [Microsoft Store](https://apps.microsoft.com).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
 
 To learn how to set up your Windows device and connect to it from your development machine, see [Get started with remote debugging Windows devices](../devtools-guide-chromium/remote-debugging/windows.md).
 
-The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge DevTools Protocol as [DevTools](../devtools-guide-chromium/overview.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
+The [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) uses the same Microsoft Edge DevTools Protocol as [DevTools](../devtools-guide-chromium/overview.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
 
 The following Reference sections are for Remote Tools for Microsoft Edge.
 
@@ -189,7 +189,7 @@ None.
         "devtoolsFrontendUrl": "https://devtools.azureedge.net/serve_file/@d6d5aea402510697e05382293a4c6d3da0183736/inspector.html?wss=172.17.75.195:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE",
         "faviconUrl": "https://learn.microsoft.com/favicon.ico",
         "id": "2AE2506D9FDB1C541FB36DD908ED51DE",
-        "title": "Remotely debug Windows devices - Microsoft Edge Development | Microsoft Learn",
+        "title": "Remotely debug Windows devices - Microsoft Edge Developer documentation | Microsoft Learn",
         "type": "page",
         "url": "https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
         "webSocketDebuggerUrl": "wss://172.17.75.195:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE"
@@ -226,7 +226,7 @@ None.
     "devtoolsFrontendUrl": "/msedge/23416/devtools/inspector.html?wss=localhost:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE",
     "faviconUrl": "https://learn.microsoft.com/favicon.ico",
     "id": "2AE2506D9FDB1C541FB36DD908ED51DE",
-    "title": "Remotely debug Windows devices - Microsoft Edge Development | Microsoft Learn",
+    "title": "Remotely debug Windows devices - Microsoft Edge Developer documentation | Microsoft Learn",
     "type": "page",
     "url": "https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
     "webSocketDebuggerUrl": "wss://localhost:50443/msedge/23416/devtools/page/2AE2506D9FDB1C541FB36DD908ED51DE"
@@ -277,5 +277,5 @@ JSON object which represents the available API surface for the version of the pr
 ## See also
 
 * [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
-* [Chrome DevTools Protocol (CDP)](../webview2/concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 features and APIs_
+* [Chrome DevTools Protocol (CDP)](../webview2/concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 APIs_
 * [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)

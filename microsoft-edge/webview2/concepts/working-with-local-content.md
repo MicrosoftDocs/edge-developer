@@ -1,14 +1,14 @@
 ---
-title: Working with local content in WebView2 apps
+title: Using local content in WebView2 apps
 description: Ways to work with local content in WebView2 apps, including navigating to a file URL, navigating to a string, virtual host name mapping, or the WebResourceRequested event.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-ms.date: 01/10/2023
+ms.service: microsoft-edge
+ms.subservice: webview
+ms.date: 02/21/2025
 ---
-# Working with local content in WebView2 apps
+# Using local content in WebView2 apps
 
 In addition to loading remote content, content can also be loaded locally into WebView2.  There are several approaches that can be used to load local content into a WebView2 control, including: 
 * Navigating to a file URL.
@@ -32,16 +32,23 @@ The various ways of loading local content into a WebView2 control support the fo
 | Additional web resources | ✔️ | ❌ | ✔️  | ✔️ |
 | Additional web resources resolved in WebView2 process | ✔️ | ❌ | ✔️ | ❌ |
 
+
 These scenarios are described in more detail below.
+
 
 <!-- ====================================================================== -->
 ## Loading local content by navigating to a file URL
 
 WebView2 allows navigations to file URLs, to load basic HTML or a PDF.  This is the simplest and most efficient approach to loading local content.  However, it is less flexible than the other approaches.  Like in a web browser, file URLs are limited in some capabilities:
+
 *  The document has an origin that is unique to its file path. This means that web APIs that require an origin such as `localStorage` or `indexedDB` will work, but the stored data will not be available to other local documents loaded from other file paths.
+
 *  Some web APIs are limited to secure HTTPS URLs only and are not available to documents loaded by file URLs. This includes APIs such as `navigator.mediaDevices.getUserMedia()` to acquire video or sound, `navigator.geolocation.getCurrentPosition()` to access the device's location, or `Notification.requestPermission()` to request the user's permission to display notifications.
+
 *  For each resource, the full path must be specified.
+
 *  To allow references to other local files from file URIs, or to display XML files with XSL transformations applied, you can set the `--allow-file-access-from-files` browser argument.  See [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments).
+
 
 <!-- ------------------------------ -->
 #### Considerations for loading local content by navigating to a file URL
@@ -55,31 +62,37 @@ file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html
 ```
 
 
+<!-- ---------- -->
 ###### Cross-origin resources
 
 When specifying a file URL, the app navigates to a file on disk, not to a domain on the network. As a result, it's not possible to use cross-origin resources in the resulting document.
 
 
+<!-- ---------- -->
 ###### Origin-based DOM APIs
 
 A document loaded via a file URL has an origin that is unique to its file path, just like in the browser. Web APIs that require an origin such as `localStorage` or `indexedDB` will work. However, different documents loaded from different file URLs are not considered to be from the same origin, and will not have access to the same stored data.
 
 
+<!-- ---------- -->
 ###### DOM APIs requiring secure context
 
 Some web APIs are limited to secure HTTPS URLs only and are not available to documents loaded by file URLs. This includes APIs such as `navigator.mediaDevices.getUserMedia()` to acquire video or sound, `navigator.geolocation.getCurrentPosition()` to access the device's location, or `Notification.requestPermission()` to request the user's permission to display notifications. See [Secure contexts](https://developer.mozilla.org/docs/Web/Security/Secure_Contexts) on MDN for more information.
 
 
+<!-- ---------- -->
 ###### Dynamic content
 
 When loading a document via a file URL, the document's content comes from a static files on disk. This means that it's not possible to dynamically modify this local content. This is different from loading documents from a web server, where each response can be dynamically generated.
 
 
+<!-- ---------- -->
 ###### Additional web resources
 
 Relative URL resolution also work for documents loaded via a file URL. This means that the loaded document can have references to additional web resources such as CSS, script, or image files which are also served via file URLs.
 
 
+<!-- ---------- -->
 ###### Additional web resources resolved in WebView2 process
 
 File URLs are resolved in WebView2 processes. This is a faster option than `WebResourceRequested`, which resolves in the host app process UI thread.
@@ -184,27 +197,34 @@ Another scenario where navigating to a string might be useful is if you want to 
 <!-- ------------------------------ -->
 #### Considerations for loading local content by navigating to an HTML string
 
+The HTML content string that's passed into the `NavigateToString` method has a size limit of 2MB.  This size limit may be easy to exceed, when the string includes inlined additional resources.  If this size limit is exceeded, an error is returned: "Value does not fall within the expected range".
 
+
+<!-- ---------- -->
 ###### Origin-based DOM APIs
 
 A document loaded by using the `NavigateToString` method has its location set to `about:blank` and its origin set to `null`. This means that web APIs that depend on an origin being defined, such as `localStorage` or `indexedDB`, can't be used.
 
 
+<!-- ---------- -->
 ###### DOM APIs requiring secure context
 
 Some web APIs are limited to secure HTTPS URLs only and are not available to documents loaded via the `NavigateToString` method because their location is set to `about:blank`. This includes APIs such as `navigator.mediaDevices.getUserMedia()` to acquire video or sound, `navigator.geolocation.getCurrentPosition()` to access the device's location, or `Notification.requestPermission()` to request the user's permission to display notifications. See [Secure contexts](https://developer.mozilla.org/docs/Web/Security/Secure_Contexts) on MDN for more information.
 
 
+<!-- ---------- -->
 ###### Dynamic content
 
 When loading local content via the `NavigateToString` method, you're directly providing the content as a parameter to the method. This means you are in control of the content at runtime, and you can dynamically generate it if needed.
 
 
+<!-- ---------- -->
 ###### Additional web resources
 
 Loading local content by using the `NavigateToString` method doesn't make it possible for the resulting document to reference additional web resources such as CSS, image, or script files. The method only lets you specify the string content of the HTML document. To reference additional web resources from your HTML document, use one of the other approaches described in this article, or represent those additional web resources inline in the HTML document.
 
 
+<!-- ---------- -->
 ###### Additional web resources resolved in WebView2 process
 
 `NavigateToString` does not support additional web resources, as mentioned above.
@@ -312,29 +332,48 @@ Due to a current limitation, media files that are accessed using a virtual host 
 #### Considerations for loading local content by using virtual host name mapping
 
 
+<!-- ---------- -->
 ###### Origin-based DOM APIs
 
 Local content loaded via virtual host name mapping results in a document that has an HTTP or HTTPS URL and a corresponding origin. This means that web APIs that require an origin such as `localStorage` or `indexedDB` will work, and other documents that belong to the same origin will be able to use the stored data. For more information, see [Same-origin policy](https://developer.mozilla.org/docs/Web/Security/Same-origin_policy) on MDN.
 
 
+<!-- ---------- -->
 ###### DOM APIs requiring secure context
 
 Some web APIs are limited to secure HTTPS URLs only. Using virtual host name mapping provides an HTTPS URL for your local content. This means that APIs such as `navigator.mediaDevices.getUserMedia()` to acquire video or sound, `navigator.geolocation.getCurrentPosition()` to access the device's location, or `Notification.requestPermission()` to request the user's permission to display notifications are available. See [Secure contexts](https://developer.mozilla.org/docs/Web/Security/Secure_Contexts) on MDN for more information.
 
 
+<!-- ---------- -->
 ###### Dynamic content
 
 When loading local content via a virtual host name mapping, you are mapping a virtual host name to a local folder that contains static files on disk. This means that it's not possible to dynamically modify this local content. This is different from loading documents from a web server, where each response can be dynamically generated.
 
 
+<!-- ---------- -->
 ###### Additional web resources
 
-Local content that's loaded via virtual host name mapping has an HTTP or HTTPS URL which supports relative URL resolution. This means that the loaded document can have references to additional web resources such as CSS, script, or image files which are also served via virtual host name mapping.
+Local content that's loaded via virtual host name mapping has an HTTP or HTTPS URL which supports relative URL resolution. This means that the loaded document can have references to additional web resources such as CSS, script, or image files which are also served via virtual host name mapping, except source maps; see [Source maps with virtual host name mapping](#source-maps-with-virtual-host-name-mapping), below.
 
 
+<!-- ---------- -->
 ###### Additional web resources resolved in WebView2 process
 
-Virtual host name URLs are resolved in WebView2 processes. This is a faster option than `WebResourceRequested`, which resolves in the host app process UI thread.
+Virtual host name URLs are resolved in WebView2 processes.  This is a faster option than `WebResourceRequested`, which resolves in the host app process UI thread.
+
+
+<!-- ---------- -->
+###### Source maps with virtual host name mapping
+
+Source maps are needed to debug the source code of compiled content, including:
+* Transpiled JavaScript, such as TypeScript or minified JavaScript.
+* Compiled CSS, such as SASS or SCSS.
+
+WebView2 doesn't load source maps that are referenced by content which was loaded by using virtual host name mapping.  
+
+For example, suppose WebView2 loads `main.js` via virtual host name mapping.  If `main.js` references `main.js.map` as its source map, `main.js.map` will not be loaded automatically.
+
+To use source maps along with virtual host name mapping, generate inline source maps during compilation of your content.  Inline source maps are embedded within the corresponding compiled file.
 
 
 <!-- ------------------------------ -->
@@ -397,7 +436,7 @@ webView->Navigate(L"https://demo/index.html");
 
 
 <!-- ====================================================================== -->
-## Loading local content by handling the WebResourceRequested event
+## Loading local content by handling the `WebResourceRequested` event
 
 Another way you can host local content in a WebView2 control is by relying on the `WebResourceRequested` event.  This event is triggered when the control attempts to load a resource.  You can use this event to intercept the request and provide the local content, as described in [Custom management of network requests](../how-to/webresourcerequested.md).
 
@@ -406,31 +445,41 @@ Another way you can host local content in a WebView2 control is by relying on th
 From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the cross-process communication and processing that's needed for each request.
 
 
+<!-- ------------------------------ -->
+#### Custom scheme registration
+
+If you want to use a custom scheme to make the Web Resource Request that generates the `WebResourceRequested` event, see [Custom scheme registration](./overview-features-apis.md#custom-scheme-registration) in _Overview of WebView2 APIs_.
+
 
 <!-- ------------------------------ -->
-#### Considerations for loading local content by handling the WebResourceRequested event
+#### Considerations for loading local content by handling the `WebResourceRequested` event
 
 
+<!-- ---------- -->
 ###### Origin-based DOM APIs
 
 Local content loaded via `WebResourceRequested` results in a document that has an HTTP or HTTPS URL and a corresponding origin. This means that web APIs that require an origin such as `localStorage` or `indexedDB` will work, and other documents that belong to the same origin will be able to use the stored data. For more information, see [Same-origin policy](https://developer.mozilla.org/docs/Web/Security/Same-origin_policy) on MDN.
 
 
+<!-- ---------- -->
 ###### DOM APIs requiring secure context
 
 Some web APIs are limited to secure HTTPS URLs only. Using `WebResourceRequested` allows you to replace HTTPS URL web resource requests with your own local content. This means that APIs such as `navigator.mediaDevices.getUserMedia()` to acquire video or sound, `navigator.geolocation.getCurrentPosition()` to access the device's location, or `Notification.requestPermission()` to request the user's permission to display notifications are available. See [Secure contexts](https://developer.mozilla.org/docs/Web/Security/Secure_Contexts) on MDN for more information.
 
 
+<!-- ---------- -->
 ###### Dynamic content
 
 When loading local content via `WebResourceRequested`, you specify the local content to load in your event handler. This means you are in control of the content at runtime, and you can dynamically generate it if needed.
 
 
+<!-- ---------- -->
 ###### Additional web resources
 
-`WebResourceRequested` modifies the content that's loaded via HTTP or HTTPS URLs, which support relative URL resolution. This means that the resulting document can have references to additional web resources such as CSS, script, or image files that are also served via `WebResourceRequested`.
+`WebResourceRequested` modifies the content that's loaded via HTTP or HTTPS URLs, which support relative URL resolution. This means that the resulting document can have references to additional web resources such as CSS, script, or image files that are also served via `WebResourceRequested`, except source maps; see [Source maps with the `WebResourceRequested` event](#source-maps-with-the-webresourcerequested-event), below.
 
 
+<!-- ---------- -->
 ###### Additional web resources resolved in WebView2 process
 
 When loading content via a file URL or a virtual host name mapping, the resolution happens in the WebView2 processes. However, the `WebResourceRequested` event is raised on the WebView2 UI thread of your host app process, which may lead to slower loading of the resulting document.
@@ -442,24 +491,47 @@ When loading content via a file URL or a virtual host name mapping, the resoluti
 This can take some time. Make sure to limit calls to `AddWebResourceRequestedFilter` to only the web resources that must raise the `WebResourceRequested` event.
 
 
+<!-- ---------- -->
+###### Source maps with the `WebResourceRequested` event
+
+Source maps are needed to debug the source code of compiled content, including:
+* Transpiled JavaScript, such as TypeScript or minified JavaScript.
+* Compiled CSS, such as SASS or SCSS.
+
+WebView2 doesn't load source maps that are referenced by content which was loaded by using the `WebResourceRequested` event.
+
+For example, suppose you load `main.js` in your `WebResourceRequested` event handler by setting the `Response` property of `CoreWebView2WebResourceRequestedEventArgs`.  If `main.js` references `main.js.map` as its source map:
+* `main.js.map` will not be loaded automatically.
+* Your `WebResourceRequested` event handler will not be called again to load `main.js.map`.
+
+To use source maps along with `WebResourceRequested`, use one of the following approaches:
+
+* Generate inline source maps during compilation of your content.  Inline source maps are embedded within the corresponding compiled file.
+
+* Or, inline separate source maps to the content at runtime in your `WebResourceRequested` event handler.  Use this approach only if your build system doesn't support inline source maps.
+
+
 <!-- ------------------------------ -->
-#### APIs for loading local content by handling the WebResourceRequested event
+#### APIs for loading local content by handling the `WebResourceRequested` event
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2.NavigateWithWebResourceRequest Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
 * [CoreWebView2.WebResourceRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
+* [CoreWebView2WebResourceRequestedEventArgs.Response Property](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs.response)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2.NavigateWithWebResourceRequest Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigatewithwebresourcerequest)
 * [CoreWebView2.WebResourceRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourcerequested)
+* [CoreWebView2WebResourceRequestedEventArgs.Response Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs#response)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2_2::NavigateWithWebResourceRequest method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
 * [ICoreWebView2::WebResourceRequested event (add](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested), [remove)](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)
+* [ICoreWebView2WebResourceRequestedEventArgs::get_Response](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs#get_response)
 
 ---
 
@@ -731,7 +803,6 @@ HRESULT AppWindow::WebResourceRequestedEventHandler(
     CHECK_FAILURE(request->get_Uri(&uri));
     std::wstring assetsFilePath = L"C:\\Demo";
     assetsFilePath += (uri.get() + ARRAYSIZE(L"https://demo"));
-    wil::com_ptr<IStream> stream;
     SHCreateStreamOnFileEx(
         assetsFilePath.c_str(), STGM_READ, FILE_ATTRIBUTE_NORMAL, FALSE,
         nullptr, &stream);
@@ -789,6 +860,6 @@ HRESULT AppWindow::WebResourceRequestedEventHandler(
 <!-- ====================================================================== -->
 ## See also
 
-* [Manage content loaded into WebView2](./overview-features-apis.md#manage-content-loaded-into-webview2) in _Overview of WebView2 features and APIs_
+* [Manage content loaded into WebView2](./overview-features-apis.md#manage-content-loaded-into-webview2) in _Overview of WebView2 APIs_
 * [Demo To Do rendered page](https://microsoftedge.github.io/Demos/demo-to-do/)
    * [Demo To Do source code](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)

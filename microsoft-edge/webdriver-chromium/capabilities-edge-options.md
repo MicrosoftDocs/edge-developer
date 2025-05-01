@@ -4,8 +4,7 @@ description: A reference for WebDriver capabilities and Microsoft Edge-specific 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
+ms.service: microsoft-edge
 ms.date: 06/09/2022
 ---
 # Capabilities and EdgeOptions

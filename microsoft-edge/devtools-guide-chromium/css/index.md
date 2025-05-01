@@ -4,8 +4,9 @@ description: Learn how to use Microsoft Edge DevTools to view and change the CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 11/16/2022
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 10/19/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,25 +23,25 @@ ms.date: 11/16/2022
    limitations under the License.  -->
 # Get started viewing and changing CSS
 
-Follow the interactive tutorial sections in this article to learn the basics of using DevTools to view and change the CSS for a page.
+To learn the basics of using DevTools to view and change the CSS for a page, follow the interactive tutorial sections in this article.
 
 
 <!-- ====================================================================== -->
 ## View the CSS for an element
 
-1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.  To open the examples, right-click the link, or press and hold **Ctrl** (for Windows, Linux) or **Command** (for macOS) and then click the link.
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab. (To open a link in a new window or tab, right-click the link. Or, press and hold **Ctrl** (for Windows, Linux) or **Command** (for macOS) and then click the link.)
 
    <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
-   In the **DOM Tree** panel under the **Elements tool**, the `Inspect Me!` element is highlighted.
+   In the **DOM Tree** panel under the **Elements tool**, the `Inspect Me!` element is highlighted:
 
-   ![The inspected element is highlighted in the DOM Tree](./index-images/css-elements-inspect-me.png)
+   ![The inspected element is highlighted in the DOM Tree](./index-images/inspect-me.png)
 
 1. In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.
 
-1. On the page view, enter the `data-message` value that you copied in the **Value of data-message:** text box.
+1. On the page view, enter the `data-message` value that you copied in the **Value of data-message** text box.
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
@@ -48,11 +49,11 @@ Follow the interactive tutorial sections in this article to learn the basics of 
 
 1. In the `Inspect Me!` element, find the `aloha` class rule.  This rule is displayed, because it's being applied to the `Inspect Me!` element.
 
-1. In the `aloha` class, find the value for the `padding` style and copy it.
+1. In the `aloha` class, find the value for the `padding` style and copy it:
 
-   ![CSS class applied to the inspected element is highlighted in the Styles panel](./index-images/css-elements-inspect-me-styles.png)
+   ![CSS class applied to the inspected element is highlighted in the Styles panel](./index-images/inspect-me-styles.png)
 
-1. On the page view, paste the `padding` value in the **Value of padding:** text box.
+1. On the page view, paste the `padding` value in the **Value of padding** text box.
 
 
 <!-- ====================================================================== -->
@@ -68,13 +69,13 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 
 1. Click `element.style` near the top of the **Styles** panel.
 
-1. Type `background-color` or select it from the drop-down list and then press **Enter**.
+1. Type `background-color` or select it from the dropdown list and then press **Enter**.
 
-1. Type `honeydew` or select it from the drop-down list of colors and then press **Enter**.  After you pick a color, an inline style declaration that's applied to the element is displayed In the **DOM Tree**, 
+1. Type `honeydew` or select it from the dropdown list of colors, and then press **Enter**.  After you pick a color, an inline style declaration that's applied to the element is displayed in the **DOM Tree**.
 
     The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel:
 
-   ![Add a CSS declaration to the element using the Styles panel](./index-images/css-elements-add-background-color-to-me-styles-p.png)
+   ![Add a CSS declaration to the element by using the Styles panel](./index-images/add-background-color-to-me-styles-p.png)
 
 
 <!-- ====================================================================== -->
@@ -88,13 +89,13 @@ To display how an element looks when a CSS class is applied to or removed from a
 
 1. Right-click the `Add A Class To Me!` text, and then select **Inspect**.
 
-1. Click **.cls**.  DevTools shows a text box where you can add CSS classes to the page element that you're inspecting.
+1. Click the **Element Classes** (**.cls**) button.  DevTools shows a text box where you can add CSS classes to the page element that you're inspecting.
 
-1. Type `color_me` in the **Add new class** text box and then press **Enter**.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you can also  toggle each class from here.
+1. Type `color_me` in the **Add new class** text box, and then press **Enter**.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you can also toggle each class from here.
 
    The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel:
 
-   ![Apply the color_me class to the element](./index-images/css-elements-add-a-class-to-me-styles-cls.png)
+   ![Apply the color_me class to the element](./index-images/add-a-class-to-me-styles-cls.png)
 
 
 <!-- ====================================================================== -->
@@ -106,17 +107,17 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
 
 1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
-1. Hover on the `Hover Over Me!` text.  The background color changes.
+1. Hover over the `Hover Over Me!` text.  The background color changes.
 
 1. Right-click the `Hover Over Me!` text, and then select **Inspect**.
 
-1. In the **Styles** panel, click **:hov**.
+1. In the **Styles** panel, click the **Toggle Element State** (**:hov**) button.
 
 1. Select the **:hover** checkbox.  The background color changes like it did in the first step, even though you aren't actually hovering over the element.
 
    The next screenshot shows the result of toggling the `:hover` pseudostate on an element.
 
-   ![Toggling the hover pseudostate on an element](./index-images/css-elements-hover-over-me-styles-hov-hover.png)
+   ![Toggling the hover pseudostate on an element](./index-images/hover-over-me-styles-hov-hover.png)
 
 
 <!-- ====================================================================== -->
@@ -130,7 +131,7 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
 1. Right-click the `Change My Margin!` text, and then select **Inspect**.
 
-1. In the **Box Model** diagram in the **Styles** panel, hover on **padding**.  The element's padding is highlighted in the viewport.
+1. In the **Box Model** diagram in the **Styles** panel, hover over **padding**.  The element's padding is highlighted in the viewport.
 
    Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** panel to display the **Box Model**.
 
@@ -140,49 +141,51 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
    Hovering over the element's padding:
 
-   ![Hovering over the element's padding](./index-images/css-elements-change-my-margin-styles-padding.png)
+   ![Hovering over the element's padding](./index-images/change-my-margin-styles-padding.png)
 
    Changing the element's left margin:
 
-   ![Changing the element's left margin](./index-images/css-elements-change-my-margin-styles-margin-edit.png)
+   ![Changing the element's left margin](./index-images/change-my-margin-styles-margin-edit.png)
 
 
 <!-- ====================================================================== -->
-## Debugging Media Queries
+## Debug media queries
 
-[Media Queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your website react to changes in the configuration settings for each user. The most common use case is to give your page a different CSS layout depending on the dimensions of the viewport.
+CSS [media queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your website react to changes in the configuration settings for each user. The most common use case is to give your page a different CSS layout depending on the dimensions of the viewport.
 
 Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there's more screen real estate available.
 
-Use the following steps to debug or test the Media Queries you defined in your CSS.
+To debug or test the media queries that you defined in your CSS:
 
-1. To open DevTools, you can right-click in a webpage and then select **Inspect**.
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
+
+1. To open DevTools, right-click in the webpage and then select **Inspect**.
 
 1. Click the **Toggle device emulation** (![Device Emulation icon](./index-images/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press **Ctrl+Shift+M** (Windows, Linux) or **Command+Shift+M** (macOS).
 
-   <!-- todo: update to show new tooltip: -->
+   The device toolbar opens in the webpage, and the webpage is now rendered within the Device Emulation pane:
 
-   ![Opening the device toolbar](./index-images/css-elements-media-queries-open-device-toolbar.png)
+   ![Opening the device toolbar](./index-images/media-queries-open-device-toolbar.png)
 
-1. With the device toolbar open, click the **...** menu on the top-right and then select **Show media queries**:
+1. With the device toolbar open, click the **More options** (![The more options icon](./index-images/more-options-icon.png)) button on the top-right, and then select **Show media queries**:
 
-   ![Showing Media Queries in the Device Toolbar](./index-images/css-elements-media-queries-showing-mq.png)
+   ![Showing media queries in the Device Toolbar](./index-images/media-queries-showing-mq.png)
 
    The colored bars above the webpage represent the different media queries.
        
-1. Hover on the boundaries in the bars to display the values of the different media queries.  Click each media query value to resize the web page to match.
+1. Hover over the boundaries in the bars to display the values of the different media queries.  Click each media query value to resize the web page to match.
 
-   ![Selecting a media query from the preview bar](./index-images/css-elements-media-queries-select-bar.png)
+   ![Selecting a media query from the preview bar](./index-images/media-queries-select-bar.png)
 
-1. To debug media queries and open the CSS file in the **Sources** editor, right-click a bar segment, and then select **Reveal in source code**:
+1. To open the CSS file that contains your media queries and edit their source code, right-click one of the colored bars and then select **Reveal in source code**. The **Sources** tool appears, and the corresponding media query is highlighted in the CSS file:
 
-   ![Reveal Media Queries in Sources Editor](./index-images/css-elements-media-queries-reveal-in-sources.png)
+   ![Showing media queries in the editor in the Sources tool](./index-images/media-queries-reveal-in-sources.png)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/css/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/css/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

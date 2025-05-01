@@ -4,7 +4,7 @@ description: The Microsoft Edge DevTools extension for Visual Studio Code lets y
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # DevTools extension for Visual Studio Code

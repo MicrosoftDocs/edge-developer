@@ -4,8 +4,8 @@ description: How to have different profiles of a WebView2 app running with diffe
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 10/25/2022
 ---
 # Support multiple profiles under a single user data folder
@@ -304,7 +304,7 @@ HRESULT AppWindow::OnCreateCoreWebView2ControllerCompleted(HRESULT result, ICore
 <!-- ====================================================================== -->
 ## See also
 
-* [Multiple profiles](./overview-features-apis.md#multiple-profiles) in _Overview of WebView2 features and APIs_.
+* [Multiple profiles](./overview-features-apis.md#multiple-profiles) in _Overview of WebView2 APIs_.
 * [Manage the user data folder](user-data-folder.md)
 * [Clear browsing data from the user data folder](clear-browsing-data.md)
 * [Spec for multiple profile support API](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/MultiProfile.md)

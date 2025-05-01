@@ -4,7 +4,8 @@ description: Copy declarations for a style rule in a way that's formatted for Ja
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 08/25/2021
 ---
 <!-- Copyright Alex Rudenko
@@ -47,8 +48,7 @@ To learn more about viewing and changing CSS, see [CSS features reference](refer
 
 <!-- ====================================================================== -->
 ## Editing style rules that were initially defined by a CSSOM function
-
-<!-- from https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
+<!-- from [Style editing for CSS-in-JS frameworks](../whats-new/2020/06/devtools.md#style-editing-for-css-in-js-frameworks) in _What's New in DevTools (Microsoft Edge 85)_. -->
 
 The **Styles** pane supports editing styles that were created with the [CSS Object Model (CSSOM)](https://developer.mozilla.org/docs/Web/API/CSS_Object_Model) APIs.  Many CSS-in-JS frameworks and libraries use the CSS Object Model APIs under the hood to construct styles.
 
@@ -130,7 +130,7 @@ The **Styles** pane supports CSS rules that you can modify by using the CSS Obje
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by [Alex Rudenko](https://developers.google.com/web/resources/contributors#alex-rudenko) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by Alex Rudenko.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

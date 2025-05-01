@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 111)
+title: What's New in DevTools (Microsoft Edge 111)
 description: "Remote debugging of Microsoft Edge, PWAs, and WebView2 controls on HoloLens 2 devices. Device Mode toolbar has emulation controls for themes and vision deficiencies. Performance tool unminifies file and function names while profiling. Styles tab easier to use in Focus Mode. Copy Selector Stats table from Performance tool. In Focus Mode, assistive tech announces tool moved to Quick View. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 03/15/2023
 ---
 # What's New in DevTools (Microsoft Edge 111)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 111
+
+[![Thumbnail image for video "What's new in DevTools 111"](./devtools-111-images/devtools-whatsnew-111.png)](https://www.youtube.com/watch?v=-0pWQsqlHAg)
 
 
 <!-- ====================================================================== -->
@@ -28,7 +35,7 @@ To give us feedback on the remote debugging flow for Microsoft Edge, leave a com
 See also:
 * [Remotely debug Windows devices](../../../remote-debugging/windows.md)
 * [Windows Device Portal for Desktop](/windows/uwp/debug-test-perf/device-portal-desktop)
-* [Remote debugging WebView2 WinUI 2 (UWP) apps](../../../../webview2/how-to/remote-debugging.md)
+* [Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps](../../../../webview2/how-to/remote-debugging-hololens.md)
 
 
 <!-- ====================================================================== -->
@@ -66,7 +73,7 @@ See also:
 
 <!-- Subtitle: As long as the Performance tool can find sourcemaps from Symbol Server, the Performance tool automatically presents the original file and function names in the flame chart. -->
 
-Microsoft Edge 99 added a new feature to the **Performance** tool called **Unminify**. This **Unminify** feature applied sourcemaps to a profile that was recorded with the **Performance** tool, and then downloaded the unminified profile to your machine. The **Unminify** feature is described in [Use your source maps to display original function names in performance profiles](../../2022/03/devtools.md#use-your-source-maps-to-display-original-function-names-in-performance-profiles) in _What's new in DevTools (Microsoft Edge 99)_.
+Microsoft Edge 99 added a new feature to the **Performance** tool called **Unminify**. This **Unminify** feature applied sourcemaps to a profile that was recorded with the **Performance** tool, and then downloaded the unminified profile to your machine. The **Unminify** feature is described in [Use your source maps to display original function names in performance profiles](../../2022/03/devtools.md#use-your-source-maps-to-display-original-function-names-in-performance-profiles) in _What's New in DevTools (Microsoft Edge 99)_.
 
 In Microsoft Edge 111, this feature has been removed, because the Performance tool now automatically provides the original file and function names while profiling production code, as long as source maps are loaded.  Source maps can be loaded reliably and securely by hosting them on Azure Artifacts Symbol Server.
 
@@ -81,7 +88,7 @@ Now in Microsoft Edge 111, the **Performance** tool automatically unminifies fun
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
-* [Record performance](../../../evaluate-performance/reference.md#record-performance) in _Performance features reference_.
+* [Record performance](../../../performance/reference.md#record-performance) in _Performance features reference_.
 
 
 <!-- ====================================================================== -->
@@ -99,7 +106,6 @@ To display only a few of the tabs within the **Styles** pane, click the **More t
 
 See also:
 * [CSS features reference](../../../css/reference.md)
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -107,7 +113,7 @@ See also:
 
 <!-- Subtitle: In Microsoft Edge 111, you can copy and paste Selector Stats data from the Performance tool for aggregate selector performance analysis. -->
 
-Microsoft Edge 109 introduced the **Selector Stats** feature in the **Performance** tool.  With the **Enable advanced rendering instrumentation (slow)** setting turned on in the **Performance** tool, selecting any **Recalculate Styles** event in the flame chart adds a **Selector Stats** tab in the bottom pane.  See [Debug long-running Recalculate Style events with new selector stats](../../2023/01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's new in DevTools (Microsoft Edge 109)_.
+Microsoft Edge 109 introduced the **Selector Stats** feature in the **Performance** tool.  With the **Enable advanced rendering instrumentation (slow)** setting turned on in the **Performance** tool, selecting any **Recalculate Styles** event in the flame chart adds a **Selector Stats** tab in the bottom pane.  See [Debug long-running Recalculate Style events with new selector stats](../../2023/01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's New in DevTools (Microsoft Edge 109)_.
 
 In Microsoft Edge 111, you can now export the **Selector Stats** table for each **Recalculate Styles** event to a Microsoft Excel workbook.  You can then use Excel to do aggregate selector performance analysis, and identify the most costly selectors over the lifetime of the profile.
 
@@ -120,18 +126,17 @@ To export the **Selector Stats** table:
 ![Selecting the entire Selector Stats table for copy-paste](./devtools-111-images/export-selector-stats-table.png)
 
 See also:
-* [Analyze selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->
 ## In Focus Mode, assistive technology announces when you move a tool to Quick View
 
-In previous versions of Microsoft Edge, assistive technology, such as screen readers, didn't announce confirmation when moving a tool from the Activity Bar to Quick View.  In Microsoft Edge 111, this issue has been fixed.  Screen readers now announce "Successfully added Network to Quick View" when you move the **Network** tool from the Activity Bar to Quick View:
+In previous versions of Microsoft Edge, assistive technology, such as screen readers, didn't announce confirmation when moving a tool from the **Activity Bar** to the **Quick View** toolbar.  In Microsoft Edge 111, this issue has been fixed.  Screen readers now announce "Successfully added Network to Quick View" when you move the **Network** tool from the **Activity Bar** to the **Quick View** toolbar:
 
-![Moving the Network tool from the Activity Bar to Quick View](./devtools-111-images/move-network-tool-to-quickview.png)
+![Moving the Network tool from the Activity Bar to the Quick View toolbar](./devtools-111-images/move-network-tool-to-quickview.png)
 
 See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
@@ -151,7 +156,7 @@ Microsoft Edge 111 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 111)](https://developer.chrome.com/blog/new-in-devtools-111) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 111)](https://developer.chrome.com/blog/new-in-devtools-111) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -159,3 +164,10 @@ Microsoft Edge 111 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

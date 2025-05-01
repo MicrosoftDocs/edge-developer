@@ -4,7 +4,7 @@ description: How to differentiate Windows 10 and Windows 11 and CPU architecture
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 05/11/2023
 ---
 # Detect Windows 11 and CPU architecture using User-Agent Client Hints

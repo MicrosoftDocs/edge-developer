@@ -1,0 +1,40 @@
+# This workflow checks if it's time to generate the next beta relnotes.
+# And if so, it generates the beta relnotes and opens a PR with them.
+
+name: Generate beta relnotes
+
+on:
+  workflow_dispatch:
+  schedule:
+    # once a day
+    - cron: '0 0 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          cd scripts
+          npm install
+
+      - name: Generate release notes
+        run: |
+          cd scripts
+          node web-platform-release-notes.js
+
+      - name: Commit changes
+        run: |
+          git checkout -b web-platform-release-notes
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --local user.name "${{ github.actor }}"
+          git add .
+          git commit -m "New beta web platform release notes"
+          git push origin web-platform-release-notes

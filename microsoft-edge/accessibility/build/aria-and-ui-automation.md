@@ -4,7 +4,7 @@ description: Learn how Microsoft Edge can recognize ARIA info, then expose it to
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.assetid: ffd1bc60-2ef1-4f11-8156-b63544cede77
 ms.custom: seodec18
 ms.date: 03/05/2020

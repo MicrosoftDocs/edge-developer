@@ -4,28 +4,36 @@ description: New features and fixes in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 08/18/2023
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 03/20/2024
 ---
 # What's New in Microsoft Edge DevTools
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](includes/edge-whats-new-note.md)]
+To check out the latest features of Microsoft Edge DevTools and the Microsoft Edge DevTools extension for Microsoft Visual Studio Code and Visual Studio, read these announcements.
 
 What's New articles correspond to historical releases of Microsoft Edge, and are not updated over time.  References to "new features" and "experiments" might become outdated as new versions of Microsoft Edge are released.
 
-<!-- maintenance notes:
-* add the new page to toc.yml
-* move eleventh oldest link into whats-new-archive.md
--->
 
-* [What's New in DevTools (Microsoft Edge 115)](2023/07/devtools-115.md)
-* [What's New in DevTools (Microsoft Edge 114)](2023/06/devtools-114.md)
-* [What's New in DevTools (Microsoft Edge 113)](2023/05/devtools-113.md)
-* [What's New in DevTools (Microsoft Edge 112)](2023/04/devtools-112.md)
-* [What's New in DevTools (Microsoft Edge 111)](2023/03/devtools-111.md)
-* [What's New in DevTools (Microsoft Edge 110)](2023/02/devtools-110.md)
-* [What's New in DevTools (Microsoft Edge 109)](2023/01/devtools-109.md)
-* [What's New in DevTools (Microsoft Edge 108)](2022/12/devtools-108.md)
-* [What's New in DevTools (Microsoft Edge 107)](2022/10/devtools-107.md)
-* [What's New in DevTools (Microsoft Edge 106)](2022/09/devtools-106.md)
+<!-- ====================================================================== -->
+## Download the preview channels
+
+To stay up to date and get the latest DevTools features, download an Insider channel (preview version) of Microsoft Edge.  Whether you're on Windows, Linux, or macOS, consider using Canary (or another preview channel) as your default development browser.
+
+The preview versions of Microsoft Edge run as separate apps, side-by-side with the stable, released version of Microsoft Edge.  To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+
+
+<!-- ====================================================================== -->
+## Get in touch with the Microsoft Edge DevTools team
+
+For the latest announcements, [follow the Microsoft Edge team on Twitter](https://twitter.com/MSEdgeDev).
+
+To report a problem with DevTools or ask for a new feature, file an issue in the [MicrosoftEdge/DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
+
+
+<!-- ====================================================================== -->
+## See also
+
 * [What's New in DevTools archive](./whats-new-archive.md)
+* [Experimental features in Microsoft Edge DevTools](../experimental-features/index.md)
+* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)

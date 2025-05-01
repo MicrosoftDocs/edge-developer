@@ -4,8 +4,9 @@ description: Learn all the ways to pause your code in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 11/10/2022
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 11/20/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -24,7 +25,7 @@ ms.date: 11/10/2022
 
 Use breakpoints to pause your JavaScript code.  This article explains each type of breakpoint available in DevTools, as well as when to use and how to set each type.
 
-For an introductory tutorial using an existing webpage, see [Get started debugging JavaScript](index.md).
+For an introductory tutorial using an existing webpage, see [Get started debugging JavaScript](./index.md).
 
 
 <!-- ====================================================================== -->
@@ -32,7 +33,7 @@ For an introductory tutorial using an existing webpage, see [Get started debuggi
 
 The most well-known type of breakpoint is line-of-code.  But line-of-code breakpoints may be inefficient to set, especially if you don't know exactly where to look, or if you are working with a large codebase.  You can save yourself time when debugging by knowing how and when to use the other types of breakpoints.
 
-| Breakpoint Type | Use This When You Want To Pause... |
+| Breakpoint type | Use this when you want to pause... |
 |:--- |:--- |
 | [Line-of-code](#line-of-code-breakpoints) | On an exact region of code.  |
 | [Conditional line-of-code](#conditional-line-of-code-breakpoints) | On an exact region of code, but only when some other condition is true.  |
@@ -55,15 +56,15 @@ To set a line-of-code breakpoint in DevTools:
 
 1. Open the file that contains the line of code that you want to break on.
 
-1. Go the line of code.
+1. Go to the line of code.
 
-1. To the left of the line of code is the line number column.  Click it.  A red icon (or more recently, a blue rectangle arrow) appears next to the line number column:
+1. To the left of the line of code is the line number column.  Click it.  A red icon appears next to the line number column:
 
-   ![A line-of-code breakpoint](./breakpoints-images/javascript-sources-page-js-breakpoint-30.png)
+   ![A line-of-code breakpoint](./breakpoints-images/breakpoint-30.png)
 
-### Line-of-code breakpoints in your code
+#### Line-of-code breakpoints in your code
 
-Run the `debugger` method from your code to pause on that line.  This is equivalent to a [line-of-code breakpoint](#line-of-code-breakpoints), except that the breakpoint is set in your code, not in the DevTools UI.
+Use the `debugger` statement from your code to pause on that line.  This is equivalent to a [line-of-code breakpoint](#line-of-code-breakpoints), except that the breakpoint is set in your code, not in the DevTools UI.
 
 ```javascript
 console.log('a');
@@ -72,7 +73,9 @@ debugger;
 console.log('c');
 ```
 
-### Conditional line-of-code breakpoints
+When the above code snippet runs in Microsoft Edge, DevTools pauses on the line that contains the `debugger` statement, just before running the `console.log('c');` line.
+
+#### Conditional line-of-code breakpoints
 
 Use a conditional line-of-code breakpoint when you know the exact region of code that you need to investigate, but you want to pause only when some other condition is true.
 
@@ -88,25 +91,29 @@ To set a conditional line-of-code breakpoint:
 
 1. Select **Add conditional breakpoint**.  A dialog is displayed underneath the line of code.
 
+   ![The dialog that appears when setting a conditional breakpoint](./breakpoints-images/conditional-breakpoint-dialog.png)
+
 1. Enter your condition in the dialog.
 
-1. Press **Enter** to activate the breakpoint.  A red diamond (or more recently, an orange icon) appears on top of the line number column:
+1. Press **Enter** to activate the breakpoint.  A red icon appears next to the line number column:
 
-   ![A conditional line-of-code breakpoint](./breakpoints-images/javascript-sources-page-js-conditional-breakpoint.png)
+   ![A conditional line-of-code breakpoint](./breakpoints-images/conditional-breakpoint.png)
 
-### Manage line-of-code breakpoints
+#### Manage line-of-code breakpoints
 
 Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from a single location.
 
-![The Breakpoints panel](./breakpoints-images/javascript-sources-page-js-breakpoints-16-33.png)
+![The Breakpoints panel](./breakpoints-images/breakpoints-16-33.png)
 
 *  Select the checkbox next to an entry to disable that breakpoint.
 
 *  Right-click an entry to remove that breakpoint.
 
-*  Right-click anywhere in the **Breakpoints** pane to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.
+*  Right-click anywhere in the **Breakpoints** pane to remove all breakpoints.
 
-![Deactivated breakpoints in the Breakpoints pane](./breakpoints-images/javascript-sources-page-js-breakpoints-deactivate-breakpoints.png)
+To disable all breakpoints, click the **Deactive breakpoints** (![The Deactivate breakpoints icon](./breakpoints-images/deactivate-breakpoints-icon.png)) button:
+
+![The Deactivate breakpoints button](./breakpoints-images/deactivate-breakpoints.png)
 
 
 <!-- ====================================================================== -->
@@ -120,11 +127,11 @@ To set a DOM change breakpoint:
 
 1. Go the element on which you want to set the breakpoint.
 
-1. Right-click the element, point to **Break on**, then select **Subtree modifications**, **Attribute modifications**, or **Node removal**.
+1. Right-click the element, click **Break on**, and then click **subtree modifications**, **attribute modifications**, or **node removal**:
 
-   ![The context menu for creating a DOM change breakpoint](./breakpoints-images/javascript-elements-break-on-subtree-modifications.png)
+   ![The context menu for creating a DOM change breakpoint](./breakpoints-images/break-on-subtree-modifications.png)
 
-### Types of DOM change breakpoints
+#### Types of DOM change breakpoints
 
 *  **Subtree modifications**.  Triggered when a child of the currently selected node is removed or added, or the contents of a child are changed.  Not triggered on child node attribute changes, or on any changes to the currently selected node.
 
@@ -134,28 +141,25 @@ To set a DOM change breakpoint:
 
 
 <!-- ====================================================================== -->
-## XHR/Fetch breakpoints
+## XHR/fetch breakpoints
 
-Use an XHR breakpoint when you want to break when the request URL of an XHR contains a specified string.  DevTools pauses on the line of code where the XHR runs the `send()` method.
+Use an XHR/fetch breakpoint when you want to break when an [XmlHttpRequest](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest) (XHR) or [Fetch](https://developer.mozilla.org/docs/Web/API/Fetch_API) request occurs. DevTools pauses on the line of code where the XHR or Fetch request occurs.
 
-> [!NOTE]
-> This feature also works with [Fetch API](https://developer.mozilla.org/docs/Web/API/Fetch_API) requests.
-
-One example of when this is helpful is when your webpage is requesting an incorrect URL, and you want to quickly find the AJAX or Fetch source code that is causing the incorrect request.
+One example of when this is helpful is when your webpage is requesting an incorrect URL, and you want to quickly find the XHR or Fetch source code that is causing the incorrect request.
 
 To set an XHR breakpoint:
 
 1. Select the **Sources** tool.
 
-1. Expand the **XHR Breakpoints** panel.
+1. Expand the **XHR/fetch Breakpoints** panel.
 
 1. Click **Add breakpoint**.
 
-1. Enter the string which you want to break on.  DevTools pauses when this string is present anywhere in an XHR request URL.
+1. Enter all or part of the URL that you want to break on.  DevTools pauses when the value you enter is present anywhere in an XHR or Fetch request URL.
 
 1. Press **Enter** to confirm.
 
-![Create an XHR breakpoint](./breakpoints-images/javascript-sources-page-js-xhr-fetch-breakpoints-org.png)
+   ![Create an XHR breakpoint](./breakpoints-images/xhr-fetch-breakpoints-org.png)
 
 
 <!-- ====================================================================== -->
@@ -167,9 +171,9 @@ Use event listener breakpoints when you want to pause on the event listener code
 
 1. Expand the **Event Listener Breakpoints** panel.  DevTools shows a list of event categories, such as **Animation**.
 
-1. Check one of these categories to pause whenever any event from that category is fired, or expand the category and check a specific event.
+1. Select a category, to pause whenever any event from that category is fired. Or, expand the category, and then select a specific event:
 
-![Create an event listener breakpoint](./breakpoints-images/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.png)
+   ![Create an event listener breakpoint](./breakpoints-images/event-listener-breakpoints.png)
 
 
 <!-- ====================================================================== -->
@@ -179,50 +183,60 @@ Use exception breakpoints when you want to pause on the line of code that is thr
 
 1. Select the **Sources** tool.
 
-1. Click **Pause on exceptions** (![Pause on exceptions](./breakpoints-images/pause-on-exceptions-icon.png)).  The icon turns blue when enabled.
+1. To pause when the code throws a JavaScript exception, in the **Breakpoints** pane, select the **Pause on uncaught exceptions** checkbox.
 
-   ![The Pause on exceptions button](./breakpoints-images/javascript-sources-page-js-pause-on-exceptions.png)
+1. To pause on caught exceptions, such as when an exception is caught by a `try/catch` block, select the **Pause on caught exceptions** checkbox:
 
-1. **Optional:** Check the **Pause On Caught Exceptions** checkbox if you also want to pause on caught exceptions, in addition to uncaught ones.
-
-   ![Paused on an uncaught exception](./breakpoints-images/javascript-sources-page-js-paused-on-exception.png)
+   ![The Pause on exceptions button](./breakpoints-images/pause-on-exceptions.png)
 
 
 <!-- ====================================================================== -->
 ## Function breakpoints
 
-Run the `debug(method)` method, where `method` is the command, function, or method you want to debug, when you want to pause whenever a specific function is run.  You can insert `debug()` into your code (such as a `console.log()` statement), or run the method from the DevTools Console.
+Run the `debug(function)` method, where `function` is the JavaScript function that you want to debug, when you want to pause whenever a specific function is run.  You can insert `debug()` into your code (such as when using a `console.log()` statement), or run the method from the DevTools **Console** tool.
 
 `debug()` is equivalent to setting a [line-of-code breakpoint](#line-of-code-breakpoints) on the first line of the function.
 
 ```javascript
 function sum(a, b) {
-    let result = a + b; // DevTools pauses on this line.
-    return result;
+  let result = a + b; // DevTools will pause before running this line.
+  return result;
 }
-debug(sum); // Pass the function object, not a string.
+
+// Call the debug method by passing a reference to the function object,
+// not its name as a string.
+debug(sum);
+
 sum();
 ```
 
-### Make sure the target function is in scope
+#### Make sure the target function is in scope
 
 DevTools throws a `ReferenceError` if the function you want to debug isn't in scope.
 
 ```javascript
 (function () {
-    function hey() {
-        console.log('hey');
-    }
-    function yo() {
-        console.log('yo');
-    }
-    debug(yo); // This works.
-    yo();
+  function foo() {
+    console.log('foo');
+  }
+
+  function bar() {
+    console.log('bar');
+  }
+
+  // Here, calling debug(bar) works because
+  // bar is defined in the current scope.
+  debug(bar);
+
+  bar();
 })();
-debug(hey); // This doesn't work.  hey() is out of scope.
+
+// Here, calling debug(foo) won't work, because foo
+// isn't defined in the current scope.
+debug(foo);
 ```
 
-When you're calling `debug()` from the DevTools Console, here's a technique to ensure that the target function is in scope:
+When you're calling `debug()` from the **Console** tool, here's a technique to ensure that the target function is in scope:
 
 1. Set a [line-of-code breakpoint](#line-of-code-breakpoints) somewhere where the function is in scope.
 
@@ -234,7 +248,7 @@ When you're calling `debug()` from the DevTools Console, here's a technique to e
 <!-- ====================================================================== -->
 ## Logpoints
 
-A Logpoint is a breakpoint variant that does not "break" in the debugger, but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint. 
+A Logpoint is a breakpoint variant that doesn't "break" in the debugger, but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint. 
 
 To set a logpoint:
 
@@ -244,13 +258,15 @@ To set a logpoint:
 
 1. Right-click on the left of the line of code, in the line number column.
 
-1. Select **Add Logpoint**. A dialog is displayed underneath the line of code.
+1. Select **Add logpoint**. A dialog is displayed underneath the line of code.
 
 1. Enter a message or a JavaScript expression that will get evaluated when the logpoint is hit.
 
-1. Press **Enter** to activate the logpoint. A red diamond (or more recently, an orange icon) appears on top of the line number column.
+1. Press **Enter** to activate the logpoint. A red icon appears next to the line number.
 
-For more information, see [Log messages in the Console tool](/microsoft-edge/devtools-guide-chromium/console/console-log).
+See also:
+* [Log messages in the Console tool](../console/console-log.md)
+
 
 <!-- ====================================================================== -->
 ## See also
@@ -263,7 +279,7 @@ For more information, see [Log messages in the Console tool](/microsoft-edge/dev
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/breakpoints/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/breakpoints/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

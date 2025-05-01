@@ -4,7 +4,8 @@ description: Features for viewing and changing CSS rules in Microsoft Edge DevTo
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/29/2021
 ---
 <!-- Copyright Kayce Basques
@@ -56,7 +57,7 @@ If the stylesheet is minified, click the **Format** (![Format](./reference-image
 
 In the following figure, after you click
 `https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --><!--keep /en-us--> you are taken to line 2 of
-`https://learn.microsoft.com/_themes/docs.theme/master/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
+`https://learn.microsoft.com/_themes/docs.theme/master/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- /master/ works but lines concated.  /main/ doesn't work -->
 
 ![Viewing the stylesheet where a rule is defined](./reference-images/css-elements-styles-h1-highlight.png)
 
@@ -216,6 +217,8 @@ To add an inline declaration:
 
 1. Enter a valid value for that property and press **Enter**.  In the **DOM Tree**, a `style` attribute has been added to the element.
 
+Alternatively, enter the value in the property field, and DevTools will then suggest a list of matching **property: value** pairs to select from. For example, if you enter `bold` in the property field, DevTools suggests `font-weight: bold` and `font-weight: bolder` as the possible rules. Press **Enter** to apply the rule.
+
 In the following figure, the `margin-top` and `background-color` properties have been applied to the selected element.  In the **DOM Tree**, the declarations are reflected in the element's `style` attribute.
 
 ![Add inline declarations](./reference-images/css-elements-styles-margin-top-background-color.png)
@@ -308,7 +311,8 @@ To add a new style rule:
    ![Add a new style rule](./reference-images/css-elements-styles-style-new.png)
 
 
-### Select a stylesheet to add a rule to
+<!-- ------------------------------ -->
+#### Select a stylesheet to add a rule to
 
 By default, when adding a style rule, DevTools creates a new stylesheet named `inspector-stylesheet` in the document and then adds the new style rule in this stylesheet.
 
@@ -319,7 +323,8 @@ To instead add the rule in an existing stylesheet:
 ![Selecting a stylesheet](./reference-images/css-elements-styles-style-new-select-existing.png)
 
 
-### Add a style rule to a specific location
+<!-- ------------------------------ -->
+#### Add a style rule to a specific location
 
 By default, adding a style rule by clicking on **New Style Rule** inserts the new rule beneath the **element.style** rule in the `inspector-stylesheet` stylesheet.
 
@@ -384,7 +389,8 @@ The following figure and list describes of each of the UI elements of the **Colo
 | 9 | **Color Palette Switcher** | Toggle between the [Material Design palette](https://material.io/guidelines/style/color.html#color-color-palette), a custom palette, or a page colors palette.  DevTools generates the page color palette based on the colors that it finds in your stylesheets. |
 
 
-### Sample a color off the page with the Eyedropper
+<!-- ------------------------------ -->
+#### Sample a color off the page with the Eyedropper
 
 To change the selected color to some other color on the page:
 
@@ -488,7 +494,7 @@ Use the **Easing Editor** to change the value of the [animation-timing-function]
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/css/reference/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/css/reference/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -4,7 +4,8 @@ description: Learn to export and import enhanced performance and memory traces i
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/06/2023
 ---
 # Share enhanced performance and memory traces
@@ -120,7 +121,7 @@ To choose a different trace type when exporting:
 
 1. Click either **.devtools (enhanced format for Microsoft Edge)** if you want to export an enhanced trace, or click **.json (works with Microsoft Edge and Chromium browsers)** if you want a normal trace.
 
-   ![The Performance tool, showing the contextual menu on the Save profile button, which allows to choose the type of trace](./share-traces-images/choose-trace-type-on-export.png)
+   ![The right-click menu on the Save Profile button in the Performance tool, to select the type of trace](./share-traces-images/choose-trace-type-on-export.png)
 
 
 <!-- ====================================================================== -->
@@ -152,7 +153,7 @@ To import a trace in the **Memory** tool:
 
 1. Open the **Memory** tool.
 
-1. Click **Load**.
+1. Click the **Load profile** button:
 
    ![Microsoft Edge, showing the Memory tool in DevTools, with the Load button](./share-traces-images/importing-memory-trace.png)
 

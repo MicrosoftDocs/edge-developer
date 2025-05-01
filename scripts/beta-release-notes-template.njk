@@ -1,0 +1,138 @@
+
+---
+title: Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthYear data.nextBetaReleaseDate %})
+description: Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthYear data.nextBetaReleaseDate %})
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: conceptual
+ms.service: microsoft-edge
+ms.date: 
+---
+# Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthYear data.nextBetaReleaseDate %})
+
+The following are the new web platform features and updates in Microsoft Edge {{ data.nextBetaVersion }}, which releases on {% monthDayYear data.nextBetaReleaseDate %}.
+
+To stay up-to-date and get the latest web platform features, download an Insiders version of Microsoft Edge, such as Canary, Dev, or Beta; see [Become a Microsoft Edge Insider](https://aka.ms/microsoftedge).
+
+**Detailed contents:**
+
+* [Edge DevTools](#edge-devtools)
+* [WebView2](#webview2)
+* [Web platform features](#web-platform-features)
+  * [Enabled features](#enabled-features)
+    {% for feature in data.csFeatures["Enabled by default"] %}
+    * [{{ feature.name }}](#{{ feature.name | slugify }})
+    {% endfor %}
+  * [Deprecated and removed features](#deprecated-and-removed-features)
+    {% for feature in data.csFeatures["Deprecated"] %}
+    * [{{ feature.name }}](#{{ feature.name | slugify }})
+    {% endfor %}
+    {% for feature in data.csFeatures["Removed"] %}
+    * [{{ feature.name }}](#{{ feature.name | slugify }})
+    {% endfor %}
+* [Origin trials](#origin-trials)
+  * [New Chromium origin trials](#new-chromium-origin-trials)
+    {% for trial in data.chromeOTs %}
+    * [{{ trial.title }}](#{{ trial.title | slugify }})
+    {% endfor %}
+  * [Microsoft Edge-only origin trials](#microsoft-edge-only-origin-trials)
+    {% for trial in data.edgeOTs %}
+    * [{{ trial.title }}](#{{ trial.title | slugify }})
+    {% endfor %}
+
+
+<!-- ====================================================================== -->
+## Edge DevTools
+
+See [What's New in Microsoft Edge DevTools](../../devtools-guide-chromium/whats-new/whats-new.md).
+
+
+<!-- ====================================================================== -->
+## WebView2
+
+See [Release Notes for the WebView2 SDK](../../webview2/release-notes/index.md).
+
+
+<!-- ====================================================================== -->
+## Web platform features
+
+
+<!-- ------------------------------ -->
+#### Enabled features
+{% for feature in data.csFeatures["Enabled by default"] %}
+
+<!-- ---------- -->
+###### {{ feature.name }}
+
+{{ feature.summary | safe }}
+{% endfor %}
+
+<!-- ------------------------------ -->
+#### Deprecated and removed features
+
+**TODO: CHECK THE FEATURES LISTED BELOW AND ADD THEM TO THE SITE-COMPAT-IMPACTING-CHANGES ARTICLE.**
+
+{% for feature in data.csFeatures["Deprecated"] %}
+
+<!-- ---------- -->
+###### {{ feature.name }}
+
+{{ feature.summary | safe }}
+{% endfor %}
+{% for feature in data.csFeatures["Removed"] %}
+
+<!-- ---------- -->
+###### {{ feature.name }}
+
+{{ feature.summary | safe }}
+{% endfor %}
+
+
+<!-- ====================================================================== -->
+## Origin trials
+
+The following are new experimental APIs which you can try on your own live website for a limited time.
+
+To learn more about origin trials, see [Use origin trials in Microsoft Edge](../../origin-trials/index.md).
+
+To see the full list of available origin trials, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials/).
+
+
+<!-- ------------------------------ -->
+#### New Chromium origin trials
+{% for trial in data.chromeOTs %}
+
+<!-- ---------- -->
+###### {{ trial.title }}
+
+Expires on {{ trial.expiration }}.
+
+{{ trial.description }}
+
+* [Explainer]({{ trial.explainer }})
+* [Feedback]({{ trial.feedback }})
+* [Register]({{ trial.registration }})
+{% endfor %}
+
+
+<!-- ------------------------------ -->
+#### Microsoft Edge-only origin trials
+{% for trial in data.edgeOTs %}
+
+<!-- ---------- -->
+###### {{ trial.title }}
+
+Expires on {{ trial.expiration }}.
+
+{{ trial.description }}
+
+* [Explainer]({{ trial.explainer }})
+* [Feedback]({{ trial.feedback }})
+* [Register]({{ trial.registration }})
+
+{% endfor %}
+
+
+<!-- ====================================================================== -->
+> [!NOTE]
+> Portions of this page are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

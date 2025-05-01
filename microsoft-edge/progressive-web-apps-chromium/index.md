@@ -4,8 +4,8 @@ description: Progressive Web Apps (PWAs) run natively on Windows 10 or later.  H
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 11/24/2022
 ---
 # Overview of Progressive Web Apps (PWAs)
@@ -14,7 +14,13 @@ Progressive Web Apps (PWAs) are applications that you build by using web technol
 
 PWAs provide native-like experiences to your users on supporting devices. They adapt to the capabilities supported by each device and they can also run in web browsers, like websites.
 
-To start building a PWA, see [Get started with Progressive Web Apps](./how-to/index.md).
+To start building a PWA, see [Get started with PWAs](./how-to/index.md).
+
+
+<!-- ------------------------------ -->
+#### Video: Ignite | March 2021 | Igniting the Web Apps Story
+
+[![Thumbnail image for video "Igniting the Web Apps Story"](./index-images/igniting-web-apps-story.png)](https://www.youtube.com/watch?v=xUNC8MjW_iI)
 
 
 <!-- ====================================================================== -->
@@ -88,11 +94,11 @@ To find examples of what PWAs can do, see [Myth Busting PWAs](https://www.davrou
 <!-- ====================================================================== -->
 ## The Microsoft Store
 
-Because Progressive Web Apps (PWAs) are just like other apps in the [Microsoft Store](https://www.microsoft.com/store/apps/windows), users can fully engage with them—from discovery, to installation, to execution—without<!-- em dashes--> ever opening the browser.
+Because Progressive Web Apps (PWAs) are just like other apps in the [Microsoft Store](https://apps.microsoft.com), users can fully engage with them—from discovery, to installation, to execution—without<!-- em dashes--> ever opening the browser.
 
 The Microsoft Store provides a trustworthy and familiar experience for users to install your app.  Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 
-Learn how to [publish your PWA to the Microsoft Store](how-to/microsoft-store.md).
+See [Publish a PWA to the Microsoft Store](how-to/microsoft-store.md).
 
 
 <!-- ====================================================================== -->

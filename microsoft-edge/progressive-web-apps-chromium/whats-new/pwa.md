@@ -1,17 +1,26 @@
 ---
-title: What's New in Progressive Web Apps
+title: What's New in PWAs
 description: New features and origin trials for Progressive Web Apps (PWAs).
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 10/24/2023
 ---
-# What's New in Progressive Web Apps
+# What's New in PWAs
 
-This page lists the updates to Progressive Web Apps (PWAs) and Web Apps from the Microsoft Edge Web Apps team.  To try new features, read these announcements.  To stay up to date with the latest and greatest features, download the [Microsoft Edge preview channels](https://www.microsoft.com/edge/download/insider) (Beta, Dev, and Canary).
+The following are the updates to Progressive Web Apps (PWAs) and Web Apps, from the Microsoft Edge Web Apps team.  To try new features, read these announcements.  
+
+To stay up to date with the latest and greatest features, download a preview channel of Microsoft Edge (Beta, Dev, or Canary); go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 Sections of this document correspond to historical releases of Microsoft Edge, and are not updated over time.  For example, references below to "new features" or "origin trials" might become outdated as new versions of Microsoft Edge are released.
+
+
+<!-- ====================================================================== -->
+## What's New in Microsoft Edge 121
+
+Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->
@@ -21,7 +30,7 @@ Starting with Microsoft Edge 114, you can detect when your PWA runs in the sideb
 
 To learn more, check out these resources:
 
-* [Detect usage in the sidebar](../how-to/sidebar.md#detect-usage-in-the-sidebar), in _Build PWAs for the sidebar in Microsoft Edge_.
+* [Detect usage in the sidebar](../how-to/sidebar.md#detect-usage-in-the-sidebar), in _Build a PWA for the sidebar in Microsoft Edge_.
 * [Detecting Microsoft Edge from your website](../../web-platform/user-agent-guidance.md).
 
 
@@ -36,7 +45,7 @@ To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `ed
 
 ![Microsoft Edge with one tab opened in a TODO list app, and PWAmp in the sidebar](./pwa-images/using-pwamp-in-sidebar.png)
 
-To learn more, see [Build PWAs for the sidebar in Microsoft Edge](../how-to/sidebar.md).
+To learn more, see [Build a PWA for the sidebar in Microsoft Edge](../how-to/sidebar.md).
 
 
 <!-- ====================================================================== -->
@@ -50,7 +59,7 @@ The following screenshot shows the Windows Widgets Board on the left and the PWA
 
 ![The PWAmp mini player widget, in the Windows Widgets board, next to the PWAmp app](./pwa-images/pwamp-widget.png)
 
-To learn more, see [Build PWA-driven widgets](../how-to/widgets.md).
+To learn more, see [Display a PWA widget in the Windows Widgets Board](../how-to/widgets.md).
 
 
 <!-- ====================================================================== -->
@@ -59,6 +68,7 @@ To learn more, see [Build PWA-driven widgets](../how-to/widgets.md).
 Microsoft Edge 105 brings the following new features for Progressive Web Apps.
 
 
+<!-- ------------------------------ -->
 #### Window Controls Overlay API
 
 The **Window Controls Overlay** API is now available by default, starting with Microsoft Edge 105. Use the Window Controls Overlay API to take control of the area that would normally be used by the title bar of an installed PWA window. The PWA code can use this area to render arbitrary web content such as a custom title area, navigation buttons, or a menu bar.
@@ -67,13 +77,13 @@ This feature makes PWAs that are installed on desktop operating systems such as 
 
 ![A PWA, with a custom titlebar](./pwa-images/custom-title-bar.png)
 
-To learn more, check out these resources:
-
-* [Display content in the title bar](../how-to/window-controls-overlay.md).
+See also:
+* [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md).
 * [Closing a 30 pixel gap between native and web](https://blogs.windows.com/msedgedev/2022/09/27/closing-pixel-gap-native-web-window-controls-overlay/).
 * [Window Controls Overlay API](https://developer.mozilla.org/docs/Web/API/Window_Controls_Overlay_API) on MDN.
 
 
+<!-- ------------------------------ -->
 #### Notifications from a PWA are now indicated as coming from the PWA
 
 In earlier versions, the notifications that were created by PWAs looked like they were emitted by Microsoft Edge.
@@ -104,6 +114,8 @@ To access **sidebar search**:
 
 Microsoft Edge Dev and Canary channels moved to version 100 on February 9, 2022.  In this milestone, we're testing the following new web app features.  We expect to see these new features rolling out to Stable following the testing period.
 
+
+<!-- ------------------------------ -->
 #### App Sync
 
 The sync service that powers features including Favorites, Settings, History, and more has been expanded to include your installed web apps - that is, PWAs and websites installed as apps.  The sync service works when you are signed in to your profile and have opted in to syncing.
@@ -111,6 +123,7 @@ The sync service that powers features including Favorites, Settings, History, an
 As we test and gradually release this feature over the coming weeks, users who have opted in to sync will start to see a **Your available apps** section in the `edge://apps` page, and a redesigned **Apps** menu.
 
 
+<!-- ------------------------------ -->
 #### The _Your available apps_ section
 
 The **Your available apps** section will show any apps you've installed on other devices with the same signed-in profile, that aren't currently installed in the Microsoft Edge instance you're using.  The available apps will be shown in their own section with gray icons.  Click the **Install** button on an app to install the app on that device:
@@ -120,6 +133,7 @@ The **Your available apps** section will show any apps you've installed on other
 App sync is available on desktop devices only, at this stage.  To keep your apps in sync across devices, adding an app on one device will add it to the **Your available apps** section on other devices.  Uninstalling an app on one device will remove it from other devices.
 
 
+<!-- ------------------------------ -->
 #### Redesigned Apps menu
 
 In Microsoft Edge, the **Apps** command in the **Settings and more** menu is being redesigned:
@@ -154,30 +168,34 @@ Users can choose the sort order of their apps:
 Microsoft Edge version 96 is scheduled to become the Stable release on November 18, 2021.  Microsoft Edge version 97 will move from Dev to Beta preview channel following that date.
 
 
+<!-- ------------------------------ -->
 #### Store apps registered as URL handlers hide custom tab UI 
 
-Store-installed PWAs that are participating in the [URL Handler Origin Trial](#url-handlers-origin-trial) will no longer show the Chrome Custom Tab (CCT) when redirecting from the PWA's domain to a matching domain name with a different top-level domain (TLD). This redirecting often happens in apps with locale-specific domains; for example, redirecting from `contoso.com` to `contoso.ca` for users in Canada.
+Store-installed PWAs that are participating in the [URL Handlers origin trial](#url-handlers-origin-trial) will no longer show the Chrome Custom Tab (CCT) when redirecting from the PWA's domain to a matching domain name with a different top-level domain (TLD). This redirecting often happens in apps with locale-specific domains; for example, redirecting from `contoso.com` to `contoso.ca` for users in Canada.
 
 
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 96
 
 
+<!-- ------------------------------ -->
 #### URL Protocol Handlers moves to Stable
 
 The origin trial has been concluded.  The URL Protocol Handlers capability is now shipping in Microsoft Edge 96 Stable.
 
 See also:
 *  [Protocol handlers origin trial](#protocol-handlers-origin-trial)
-*  [Handle protocols in Progressive Web Apps](../how-to/handle-protocols.md)
-*  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)
+*  [Handle protocols in a PWA](../how-to/handle-protocols.md)
+*  [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler) in Chrome Dev > Web Platform > Best Practices.
 
 
+<!-- ------------------------------ -->
 #### New hub design for managing your installed web apps
 
 Microsoft Edge Canary reached version 96 on October 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to `edge://apps` in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps.
 
 
+<!-- ---------- -->
 ###### Sort order
 
 You can sort your apps by any of the following:
@@ -186,6 +204,7 @@ You can sort your apps by any of the following:
 *  Date of installation.
 
 
+<!-- ---------- -->
 ###### List view or grid view
 
 You can arrange apps in a list or grid view, by using the **View as** dropdown list.  In this image, **Grid** view is selected:
@@ -195,11 +214,13 @@ You can arrange apps in a list or grid view, by using the **View as** dropdown l
 _To zoom: right-click > Open image in new tab._
 
 
+<!-- ---------- -->
 ###### Pin apps, create shortcuts to apps, run app on login
 
 You can easily pin apps to the taskbar or **Start** menu.  You can create a shortcut, and enable apps to run on user login.
 
 
+<!-- ---------- -->
 ###### App details page
 
 There's now an app details page, which provides way to easily access the following:
@@ -241,35 +262,41 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 Microsoft Edge version 93 became the Stable channel of Microsoft Edge on September 2, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
 
+<!-- ------------------------------ -->
 #### Measure usage of your Store-installed PWA
 
 Microsoft Edge now includes a referrer header with the request for the first navigation of your Microsoft Store-installed PWA.
 
 This feature was first introduced in Microsoft Edge version 91, and we shipped a bug fix in Microsoft Edge version 93.
 
-Learn more in [Publish a Progressive Web App to the Microsoft Store](../how-to/microsoft-store.md#measure-usage-of-your-pwa-installed-from-the-microsoft-store).
+Learn more in [Publish a PWA to the Microsoft Store](../how-to/microsoft-store.md#measure-usage-of-your-pwa-installed-from-the-microsoft-store).
 
 
+<!-- ------------------------------ -->
 #### Window Controls Overlay origin trials
 
 To have more control over the title bar area that's currently displayed in standalone display mode, you may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window. This layout frees up more space for the web content layer. WCO is available for installed desktop PWAs.
 
-Learn more about experimenting with Window Controls Overlay at [Display content in the title bar](../how-to/window-controls-overlay.md).
+See [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md).
 
-_2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and is available to all users, so the following no longer applies:_ Register your origin for the **Web App Window Controls Overlay** trial at the Origin Trials Developer Console.
+_2023 update: This feature is no longer an origin trial, and is available to all users, so the following no longer applies:_ Register your origin for the **Web App Window Controls Overlay** trial at [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
+
+_2024 update:_ Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature for a Progressive Web App (PWA), without having to install the PWA.  See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
+<!-- ------------------------------ -->
 #### URL Handlers origin trial
 
-Developers can now use the experimental feature Web App URL Handlers in origin trial. This feature allows the registration of an installed PWA to open links from other apps that refer to its scope.
+Developers can now use the experimental feature Web App URL Handlers, in an origin trial. This feature allows the registration of an installed PWA to open links from other apps that refer to its scope.
 
-_2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and has been removed, so the following no longer applies, and the PWA URL Handlers feature was removed from the Chromium browser engine:_ Register your domain for the **Web App URL Handlers** trial at the Origin Trials Developer Console.
+_2023 update: This feature is no longer an origin trial, and has been removed, so the following no longer applies, and the PWA URL Handlers feature was removed from the Chromium browser engine:_ Register your domain for the **Web App URL Handlers** trial at [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
 See also:
-* [Handle links to your Progressive Web Apps](../how-to/handle-urls.md)
+* [Handle links to a PWA](../how-to/handle-urls.md)
 * [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)
 
 
+<!-- ------------------------------ -->
 #### Support for the Share API on macOS
 
 We have implemented support for the `navigator.share` API for macOS. The feature is rolling out to stable Microsoft Edge browsers on macOS over the coming weeks.
@@ -283,13 +310,15 @@ Learn more about the [navigator.share() API](https://developer.mozilla.org/docs/
 Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
 
+<!-- ------------------------------ -->
 #### Protocol handlers origin trial
 
-You can now register your PWA to handle specific protocols with the host operating system.  Learn more about using protocol handlers with your PWA at [Handle protocols in Progressive Web Apps](../how-to/handle-protocols.md).
+You can now register your PWA to handle specific protocols with the host operating system.  Learn more about using protocol handlers with your PWA at [Handle protocols in a PWA](../how-to/handle-protocols.md).
 
-_2023 update: This feature is no longer in [Origin Trial](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) and is available to all users, so the following no longer applies:_ The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at the origin trial signup page.
+_2023 update: This feature is no longer an origin trial, and is available to all users, so the following no longer applies:_ The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
 
+<!-- ------------------------------ -->
 #### Streamlined App Info menu
 
 When a user selects the ellipses (**...**) button in the app's title bar, the **App info** menu is displayed.  We've updated the **App info** menu and streamlined the user experience in the following ways, to provide a user experience that's more like a desktop app than a browser UI:
@@ -307,6 +336,7 @@ When a user selects the ellipses (**...**) button in the app's title bar, the **
    ![Content-related tools are now found in the More Tools menu](./pwa-images/more-tools.png)
 
 
+<!-- ------------------------------ -->
 #### Post-install flyout dialog
 
 After a PWA is installed from the Microsoft Edge browser on Windows, users can now select from four options to easily launch their apps:
@@ -322,6 +352,7 @@ For convenience, this flyout dialog is shown the first time the app is launched:
 This feature is being rolled out gradually to all users.  In the meantime, if you'd like to use this feature, go to `edge://flags` and enable the flag **Web Apps Post Install Dialog**.
 
 
+<!-- ------------------------------ -->
 #### Restore Web Apps
 
 Installed sites and PWAs that were running before an unexpected shutdown will now restore (that is, they will be restarted) when the system recovers.
@@ -332,5 +363,5 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 <!-- ====================================================================== -->
 ## See also
 
-* [Experimental features and origin trials](../how-to/origin-trials.md)
-* [Use Origin Trials in Microsoft Edge](../../origin-trials/index.md)
+* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
+* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)

@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 103)
+title: What's New in DevTools (Microsoft Edge 103)
 description: "New node types in the Memory tool. DevTools extension for Visual Studio Code: Right-click an HTML file to launch, and Application tool. Focus Mode bug fixes. 3D View tool responsive layout. Fix: The Close button for DevTools is now accessible in high contrast mode. Welcome tool redesign. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 06/23/2022
 ---
 # What's New in DevTools (Microsoft Edge 103)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 103
+
+[![Thumbnail image for video "What's new in DevTools 103"](./devtools-103-images/devtools-whatsnew-103.png)](https://www.youtube.com/watch?v=aa0C6BRdaPA)
 
 
 <!-- ====================================================================== -->
@@ -27,7 +34,7 @@ In Microsoft Edge 103, when taking a heap snapshot in the **Memory** tool, there
 For history, see [Issue 12769: Improve categorization of objects in heap snapshots](https://bugs.chromium.org/p/v8/issues/detail?id=12769).
 
 See also:
-* [Constructor (group) entries in the heap profiler](../../../memory-problems/heap-snapshots.md#constructor-group-entries-in-the-heap-profiler) in _Record heap snapshots using the Memory tool_.
+* [Constructor entries](../../../memory-problems/heap-snapshots.md#constructor-entries) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 
 
 <!-- ====================================================================== -->
@@ -61,12 +68,9 @@ In the new **Focus Mode** DevTools UI, various bugs affecting controls and keybo
 *  Improved reliability of **Quick View** controls.
 *  Improved behavior of opening DevTools by using keyboard shortcuts.
 *  Fixed an issue with navigating to a specific line of code in the **Sources** tool by using keyboard shortcuts.
-*  Restored the keyboard shortcut to open **Search** in **Quick View**, which is **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS):
+*  Restored the keyboard shortcut to open **Search** in the **Quick View** panel, which is **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS):
 
-![The Search keyboard shortcut opens the Search tool in Quick View](devtools-103-images/focus-mode-search-shortcut.png)
-
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
+![The Search keyboard shortcut opens the Search tool in the Quick View panel](devtools-103-images/focus-mode-search-shortcut.png)
 
 
 <!-- ====================================================================== -->
@@ -136,7 +140,7 @@ Microsoft Edge 103 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 103)](https://developer.chrome.com/blog/new-in-devtools-103) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 103)](https://developer.chrome.com/blog/new-in-devtools-103) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -144,3 +148,10 @@ Microsoft Edge 103 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

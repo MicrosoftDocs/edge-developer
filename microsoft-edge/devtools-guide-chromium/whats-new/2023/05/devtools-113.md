@@ -1,15 +1,16 @@
 ---
-title: What's new in DevTools (Microsoft Edge 113)
+title: What's New in DevTools (Microsoft Edge 113)
 description: "Debug JavaScript error stack traces with the experimental Crash analyzer tool. The Memory tool can now unminify object names in heap snapshots. The Issues tool has better support for keyboard navigation. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/25/2023
 ---
 # What's New in DevTools (Microsoft Edge 113)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 > [!TIP]
 > The **Microsoft Build 2023** conference was on May 23-25, 2023.  Learn more about new features for memory, performance, and production debugging in DevTools, as well as new capabilities for PWAs in the sidebar, WebView2, and Chat Plugins, in the following videos:
@@ -17,6 +18,12 @@ ms.date: 05/25/2023
 > * [Microsoft Edge | Building Progressive Web Apps for the sidebar](https://www.youtube.com/watch?v=9u8lRzRUayw&list=PL4z1-7pjJU6zJT3PBQ4mTbNg2wtX7Lt52)
 > * [Microsoft Edge | Bringing WebView2 to Microsoft Teams and beyond](https://www.youtube.com/watch?v=s3tDUvaoCP4&list=PL4z1-7pjJU6zJT3PBQ4mTbNg2wtX7Lt52)
 > * [Building Chat Plugins for Microsoft Bing and Edge](https://www.youtube.com/watch?v=Q-5M7EYjl6U&list=PL4z1-7pjJU6zJT3PBQ4mTbNg2wtX7Lt52)
+
+
+<!-- ------------------------------ -->
+#### Video: What's New in DevTools 113 and 114
+
+[![Thumbnail image for video "What's New in DevTools 113 and 114"](./devtools-113-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
 
 
 <!-- ====================================================================== -->
@@ -42,7 +49,7 @@ You can report non-fatal JavaScript exceptions or similar data to tools such as 
 
 1. Click through the individual stack frames to see the lines in your original code that caused the error.
 
-<!-- todo: For more information, see [Crash Analyzer](../../../crash-analyzer/index.md). -->
+For more information, see [Crash analyzer tool](../../../crash-analyzer/index.md).
 
 See also:
 * [throw - JavaScript | MDN Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)
@@ -64,7 +71,7 @@ In the following image, the minified object name `e` is shown in a heap snapshot
 Now in Microsoft Edge 113, the **Memory** tool automatically unminifies object names in the heap snapshot:
 
 ![A heap snapshot in the Memory tool displays unminified object names](./devtools-113-images/unminified-object-name-memory-tool.png)
-<!-- todo
+<!-- png:
 1. Open Edge Stable.
 2. Go to: https://outlook-sdf.office.com/mail/
 3. Don't show the Outlook UI - undock DevTools.
@@ -76,7 +83,7 @@ Now in Microsoft Edge 113, the **Memory** tool automatically unminifies object n
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
-* [Take a snapshot](../../../memory-problems/heap-snapshots.md#take-a-snapshot) in _Record heap snapshots using the Memory tool_.
+* [Take a snapshot](../../../memory-problems/heap-snapshots.md#take-a-snapshot) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 
 
 <!-- ====================================================================== -->
@@ -98,12 +105,9 @@ See also:
 
 <!-- Subtitle: With the Activity Bar in the horizontal orientation, you can now see the name of each tool and hover over the tool icon to see a tooltip. -->
 
-In previous versions of Microsoft Edge, in Focus Mode, hovering over a tool's icon in the Activity Bar in horizontal mode caused the names of the other tools in the Activity Bar to disappear.  In Microsoft Edge 113, this issue has been fixed.  When you hover over a tool icon to see the name of the tool in a tooltip, the names of the other tools remain displayed in the Activity bar:
+In previous versions of Microsoft Edge, in Focus Mode, hovering over a tool's icon in the **Activity Bar** in horizontal mode caused the names of the other tools in the **Activity Bar** to disappear.  In Microsoft Edge 113, this issue has been fixed.  When you hover over a tool icon to see the name of the tool in a tooltip, the names of the other tools remain displayed in the **Activity Bar**:
 
 ![Hovering over a tool icon in the Activity Bar produces a tooltip with the name of the tool](./devtools-113-images/focus-mode-tooltip.png)
-
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -112,12 +116,15 @@ See also:
 <!-- Subtitle: Customize DevTools to match VS Code with themes like Solarized Light, Kimbie Dark, Monokai, or Tomorrow Night Blue. -->
 <!-- Reviewer: Irene Cho -->
 
+Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+* Light+
+* Dark+
+
 In previous versions of Microsoft Edge, applying themes from Microsoft Visual Studio Code such as Solarized Light or Kimbie Dark caused low-contrast issues when hovering over items in the **Customize and control DevTools** menu.  In Microsoft Edge 113, this issue has been fixed.  Items in the **Customize and control DevTools** menu are now displayed with sufficient color contrast:
 
 ![Sufficient color contrast in the Customize DevTools menu with the Solarized Light theme](./devtools-113-images/themes-contrast-in-context-menu.png)
 
 See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
 * [Test text-color contrast using the Color Picker](../../../accessibility/color-picker.md)
 * [Check text-color contrast in the default state using the Inspect tool](../../../accessibility/test-inspect-text-contrast.md)
 
@@ -139,7 +146,7 @@ In the **Containment** and **Statistics** views, the **Node Types** filter is no
 
 See also:
 * [Filter heap snapshots summary by node type](../../2022/03/devtools-100.md#filter-heap-snapshots-summary-by-node-type)  in _What's New in DevTools (Microsoft Edge 100)_
-* [Take a snapshot](../../../memory-problems/heap-snapshots.md#take-a-snapshot) in _Record heap snapshots using the Memory tool_.
+* [Take a snapshot](../../../memory-problems/heap-snapshots.md#take-a-snapshot) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 
 
 <!-- ====================================================================== -->
@@ -162,7 +169,7 @@ Microsoft Edge 113 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 113)](https://developer.chrome.com/blog/new-in-devtools-113) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 113)](https://developer.chrome.com/blog/new-in-devtools-113) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -170,3 +177,10 @@ Microsoft Edge 113 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

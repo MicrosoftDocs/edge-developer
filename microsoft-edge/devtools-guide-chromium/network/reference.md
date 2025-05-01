@@ -4,8 +4,9 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 07/19/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/18/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,9 +23,67 @@ ms.date: 07/19/2021
    limitations under the License.  -->
 # Network features reference
 
-This article is an outline of the various features of the **Network** tool, which is used for network analysis and inspecting network activity for a webpage.
+This article is a feature-driven inventory of the **Network** tool.  Use the **Network** tool to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
 
-See also [Inspect network activity](index.md), which is a step-by-step tutorial walkthrough of the **Network** tool.
+
+<!-- -------------- -->
+**Detailed contents:**
+
+<!-- compare https://developer.chrome.com/docs/devtools/network/reference/ -->
+<!-- updated 2025/01/31 -->
+* [Record network requests](#record-network-requests)
+   * [Stop recording network requests](#stop-recording-network-requests)
+   * [Clear requests](#clear-requests)
+   * [Save requests across page loads](#save-requests-across-page-loads)
+   * [Capture screenshots during page load](#capture-screenshots-during-page-load)
+* [Change loading behavior](#change-loading-behavior)
+   * [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache)
+      * [Disable the browser cache from the Network conditions tool](#disable-the-browser-cache-from-the-network-conditions-tool)
+   * [Manually clear the browser cache](#manually-clear-the-browser-cache)
+   * [Emulate offline](#emulate-offline)
+   * [Emulate slow network connections](#emulate-slow-network-connections)
+      * [Emulate slow network connections from the Network Conditions tool](#emulate-slow-network-connections-from-the-network-conditions-tool)
+   * [Manually clear browser cookies](#manually-clear-browser-cookies)
+   * [Override the user agent](#override-the-user-agent)
+* [Set user agent client hints](#set-user-agent-client-hints)
+* [Filter requests](#filter-requests)
+   * [Filter requests by properties](#filter-requests-by-properties)
+   * [Filter requests by type](#filter-requests-by-type)
+   * [Filter requests by time](#filter-requests-by-time)
+   * [Hide data URLs](#hide-data-urls)
+* [Sort requests](#sort-requests)
+   * [Sort by column](#sort-by-column)
+   * [Sort by activity phase](#sort-by-activity-phase)
+* [Analyze requests](#analyze-requests)
+   * [Display a log of requests](#display-a-log-of-requests)
+      * [Add or remove columns](#add-or-remove-columns)
+      * [Add columns for response headers](#add-columns-for-response-headers)
+   * [Display the timing relationship of requests](#display-the-timing-relationship-of-requests)
+   * [Display a preview of a response body](#display-a-preview-of-a-response-body)
+   * [Display a response body](#display-a-response-body)
+   * [Display HTTP headers](#display-http-headers)
+   * [Display query string parameters](#display-query-string-parameters)
+      * [Display URL-encoded query string parameters](#display-url-encoded-query-string-parameters)
+   * [Display cookies](#display-cookies)
+   * [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request)
+      * [Preview a timing breakdown](#preview-a-timing-breakdown)
+      * [Timing breakdown phases explained](#timing-breakdown-phases-explained)
+   * [Display initiators and dependencies](#display-initiators-and-dependencies)
+   * [Display load events](#display-load-events)
+   * [Display the total number of requests](#display-the-total-number-of-requests)
+   * [Display the total download size](#display-the-total-download-size)
+   * [Display the stack trace that caused a request](#display-the-stack-trace-that-caused-a-request)
+   * [Display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource)
+* [Export requests data](#export-requests-data)
+   * [Save all network requests to a HAR file](#save-all-network-requests-to-a-har-file)
+   * [Copy one or more requests to the clipboard](#copy-one-or-more-requests-to-the-clipboard)
+   * [Copy formatted response JSON to the clipboard](#copy-formatted-response-json-to-the-clipboard)
+   * [Copy property values from network requests to your clipboard](#copy-property-values-from-network-requests-to-your-clipboard)
+* [Change the layout of the Network panel](#change-the-layout-of-the-network-panel)
+   * [Hide the Filters pane](#hide-the-filters-pane)
+   * [Big request rows](#big-request-rows)
+   * [Hide the Overview pane](#hide-the-overview-pane)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -32,9 +91,11 @@ See also [Inspect network activity](index.md), which is a step-by-step tutorial 
 
 By default, DevTools records all network requests in the **Network** tool, so long as DevTools is open.
 
-![The Network panel](./reference-images/network-network-panel.png)
+![The Network panel](./reference-images/panel.png)
 
-### Stop recording network requests
+
+<!-- ------------------------------ -->
+#### Stop recording network requests
 
 To stop recording requests:
 
@@ -42,21 +103,29 @@ To stop recording requests:
 
 1. Press **Ctrl+E** (Windows, Linux) or **Command+E** (macOS) while the **Network** tool is in focus.
 
-### Clear requests
 
-Click the **Clear** (![Clear](./reference-images/clear-requests-icon.png)) button on the **Network** tool to clear all requests from the Requests table.
+<!-- ------------------------------ -->
+#### Clear requests
 
-![The Clear button](./reference-images/network-network-clear-button.png)
+To clear all requests from the Requests table, in the **Network** tool, click the **Clear network log** (![Clear](./reference-images/clear-requests-icon.png)) button:
 
-### Save requests across page loads
+![The 'Clear network log' button](./reference-images/clear-requests.png)
+
+Or, press **Ctrl+L** (Windows, Linux, macOS) or **Command+K** (macOS) while the **Network** tool has focus.
+
+
+<!-- ------------------------------ -->
+#### Save requests across page loads
 
 To save requests across page loads, on the **Network** tool, select the **Preserve log** checkbox:
 
-![The Preserve Log checkbox](./reference-images/network-network-preserve-log.png)
+![The Preserve Log checkbox](./reference-images/preserve-log.png)
 
 DevTools saves all requests until you disable **Preserve log**.
 
-### Capture screenshots during page load
+
+<!-- ------------------------------ -->
+#### Capture screenshots during page load
 
 You can capture screenshots to analyze what's displayed for users while waiting for your page to load.
 
@@ -68,17 +137,17 @@ To enable screenshots:
 
 1. Select the **Capture screenshots** checkbox:
 
-![Enabling 'Capture screenshots'](./reference-images/network-network-screenshot-box.png)
+   ![Enabling 'Capture screenshots'](./reference-images/screenshot-box.png)
 
 To capture a screenshot:
 
-1. While the **Network** tool has focus, press **Ctrl+F5** refresh the page.  Screenshot are captured and thumbnails are shown below the row of checkboxes.
+1. While the **Network** tool has focus, press **Ctrl+F5** to refresh the page.  Screenshots are captured during the page load and thumbnails are shown below the row of checkboxes.
 
    You can interact with the screenshots as follows.
 
 1. Hover over a screenshot to display the point at which that screenshot was captured.  A yellow vertical line is displayed on the **Overview** chart pane.
 
-   ![Hovering on a screenshot](./reference-images/network-network-screenshot-hover.png)
+   ![Hovering on a screenshot](./reference-images/screenshot-hover.png)
 
 1. Click the thumbnail of a screenshot to filter out any requests that occurred after the screenshot was captured.
 
@@ -98,83 +167,105 @@ To capture a screenshot:
 <!-- ====================================================================== -->
 ## Change loading behavior
 
-### Emulate a first-time visitor by disabling the browser cache
+
+<!-- ------------------------------ -->
+#### Emulate a first-time visitor by disabling the browser cache
 
 To emulate how a first-time user experiences your site, turn on the **Disable cache** checkbox.  DevTools disables the browser cache.  This feature more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.
 
 The **Disable Cache** checkbox:
 
-![The Disable Cache checkbox](./reference-images/network-network-disable-cache-checkbox.png)
-
-#### Disable the browser cache from the Network Conditions drawer
-
-If you want to disable the cache while working in other DevTools panels, use the Network Conditions drawer:
-
-1. Open the **Network Conditions** drawer.
-
-1. Select or clear the **Disable cache** checkbox.
-
-<!--todo: add network condition section when available -->
-
-### Manually clear the browser cache
-
-To manually clear the browser cache at any time, right-click anywhere in the Requests table, and then click **Clear Browser Cache**.
-
-Selecting **Clear Browser Cache**:
-
-![Selecting Clear Browser Cache](./reference-images/network-network-clear-browser-cache.png)
+![The Disable Cache checkbox](./reference-images/disable-cache-checkbox.png)
 
 
-### Emulate offline
+<!-- ---------- -->
+###### Disable the browser cache from the Network conditions tool
 
-A new class of web apps, named [Progressive Web Apps](../progressive-web-apps/index.md), functions offline with the help of **service workers**.<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> You may find it useful to quickly simulate a device that has no data connection, when you are building this type of app.
+From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel and then disable the browser cache from there:
+
+1. In the **Network** tool, click the **More network conditions** (![More network conditions icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
+
+1. In the **Network conditions** tool, select the **Disable cache** checkbox:
+
+   ![The Network Conditions tool in the Quick View panel, with the 'Disable cache' checkbox selected](./reference-images/network-conditions-cache.png)
+
+See also:
+* [Network conditions tool](../network-conditions/network-conditions-tool.md)
+
+
+<!-- ------------------------------ -->
+#### Manually clear the browser cache
+
+To manually clear the browser cache at any time, right-click anywhere in the **Requests** table, and then select **Clear browser cache**:
+
+![The 'Clear browser cache' right-click command](./reference-images/clear-browser-cache-menu.png)
+
+
+<!-- ------------------------------ -->
+#### Emulate offline
+
+A class of web apps, named [Progressive Web Apps](../progressive-web-apps/index.md) (PWA), are able to function offline with the help of **service workers**.<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> You may find it useful to quickly simulate a device that has no data connection, when you are building this type of app.
 
 To simulate an offline network experience, select the **No throttling** dropdown menu > **Presets** > **Offline**.
 
 The **Offline** dropdown menu:
 
-![The Offline dropdown menu](./reference-images/network-network-offline-dropdown.png)
+![The Offline dropdown menu](./reference-images/offline-dropdown.png)
 
 
-### Emulate slow network connections
+<!-- ------------------------------ -->
+#### Emulate slow network connections
 
 Emulate Slow 3G, Fast 3G, and other connection speeds from the **No throttling** dropdown menu.
 
 The **Throttling** dropdown menu:
 
-![The Throttling dropdown menu](./reference-images/network-network-throttling-menu.png)
+![The Throttling dropdown menu](./reference-images/throttling-menu.png)
 
-You can choose from different presets, such as Slow 3G or Fast 3G.  To add your own custom presets, open the Throttling menu, and select **Custom** > **Add**.
+You can choose from different presets, such as:
+* **Fast 4G**
+* **Slow 4G**
+* **3G**
+* **Offline**
 
-DevTools displays a warning icon next to the **Network** tool to remind you that throttling is enabled.
+To add your own custom presets, click the **Throttling** menu, and then select **Custom** > **Add**.
+
+A warning icon is displayed on the **Network** tool's tab, to remind you that throttling is enabled:
+
+![The Throttled warning icon on the Network tab in the Activity Bar](./reference-images/throttled-icon.png)
 
 See also [Simulate a slower network connection](../network/index.md#simulate-a-slower-network-connection) in _Inspect network activity_.
 
 
-#### Emulate slow network connections from the Network Conditions drawer
+<!-- ---------- -->
+###### Emulate slow network connections from the Network Conditions tool
 
-If you want to throttle the network connection while working in other DevTools panels, use the **Network Conditions** drawer tool:
+From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel and then throttle the network connection from there:
 
-1. Open the **Network Conditions** drawer.
+1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
 
-1. Select your connection speed from the **Throttling** menu.
+1. In the **Network conditions** tool, in the **Network throttling** menu, select a connection speed.
 
-<!--todo: add network condition section when available -->
+See also:
+* [Network conditions tool](../network-conditions/network-conditions-tool.md)
 
 
-### Manually clear browser cookies
+<!-- ------------------------------ -->
+#### Manually clear browser cookies
 
-To manually clear browser cookies at any time, right-click anywhere in the Requests table, and then select **Clear Browser Cookies**.
+To manually clear browser cookies at any time, right-click anywhere in the Requests table, and then select **Clear browser cookies**.
 
-![Selecting 'Clear Browser Cookies'](./reference-images/network-network-clear-browser-cookies.png)
+![The 'Clear browser cookies' right-click command in the Requests table of the Network tool](./reference-images/clear-browser-cookies-menu.png)
 
-### Override the user agent
+
+<!-- ------------------------------ -->
+#### Override the user agent
 
 To manually override the user agent:
 
-1. Open the **Network Conditions** drawer tool.
+1. In the **Network** tool, click the **More network conditions** (![More network conditions icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
 
-1. Clear the **Select automatically** checkbox.
+1. In the **Network conditions** tool, clear the **Use browser default** checkbox.  The other controls become available.
 
 1. Select a user agent option from the menu, or enter a custom user agent in the text box.
 
@@ -182,33 +273,33 @@ To manually override the user agent:
 <!-- ====================================================================== -->
 ## Set user agent client hints
 
-If your site employs [user agent client hints](../../web-platform/user-agent-guidance.md), use the **Network conditions** panel to provide different user agent client hints.
+If your site employs user agent client hints and you want to test them, you can set them either in the **Network conditions** tool or in [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
 
-1. Right-click the webpage and select **Inspect**.
+To set user agent client hints in the **Network conditions** tool:
 
-1. Select **Network** > **Network conditions**.
+1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
 
-1. In the User agent panel clear the **Use browser default** checkbox, then select **User agent client hints**.
+1. In the **User agent** section, clear the **Use browser default** checkbox, and then expand **User agent client hints**:
 
    ![Setting user agent client hints](./reference-images/network-conditions-user-agent-client-hints.png)
 
-1. Accept the default value of **Custom...**, or select a predefined browser and device from the dropdown list.
+1. In the **User agent** dropdown list, select a predefined browser and device.  Or, accept the default value of **Custom...**, and enter information in the **Enter a custom user agent** text box.
 
-1. For either choice, set User agent client hints as follows:
-    * **Brand** and **Version** such as *Edge* and *92*.  Click **+ Add Brand** to add multiple brand and version pairs.
-    * **Full Browser Version** such as *92.0.1111.0*.
-    * **Platform** and **Version** such as *Windows* and *10.0*.
-    * **Architecture** such as *x86*.
-    * **Device model** such as *Galaxy Nexus*.
+1. For either choice (predefined or custom), specify user agent client hints as follows:
+   * **Brand** and **Version** such as *Edge* and *92*.  To add multiple brand/version pairs, click **+ Add Brand**.
+   * **Full Browser Version** such as *92.0.1111.0*.
+   * **Platform** and **Version** such as *Windows* and *10.0*.
+   * **Architecture** such as *x86*.
+   * **Device model** such as *Galaxy Nexus*.
 
-    > [!NOTE]
-    > Set or change any of the user agent client hints. There are no required values.
+   You can set or change any of the user agent client hints; there are no required values.
 
 1. Select **Update**.
 
-1. To verify changes, click **Console** and type `navigator.userAgentData`. Expand the results as needed to view changes to user agent data.
+1. To verify changes, click **Console** and type `navigator.userAgentData`.  Expand the results as needed to view changes to user agent data.
 
-You can also set user agent client hints in [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
+See also:
+* [User-Agent Client Hints](../../web-platform/user-agent-guidance.md#user-agent-client-hints) in _Detecting Microsoft Edge from your website_.
 
 
 <!-- ====================================================================== -->
@@ -216,7 +307,9 @@ You can also set user agent client hints in [Emulate mobile devices (Device Emul
 
 You can filter requests by properties, by type, or by time, and you can hide data URLs.
 
-### Filter requests by properties
+
+<!-- ------------------------------ -->
+#### Filter requests by properties
 
 Use the **Filter** text box to filter requests by properties, such as the domain or size of the request.
 
@@ -225,7 +318,7 @@ For more information, see [Hide the Filters pane](#hide-the-filters-pane).
 
 The **Filter** text box:
 
-![The Filter text box](./reference-images/network-network-filters-textbox.png)
+![The Filter text box](./reference-images/filter-text-box.png)
 
 You can use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.
 
@@ -246,7 +339,9 @@ The complete list of supported properties:
 | `set-cookie-value` | Displays resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populate the autocomplete with all of the cookie values that are found. |
 | `status-code` | Displays resources that match the specific HTTP status code.  DevTools populates the autocomplete dropdown menu with all of the status codes that are found. |
 
-### Filter requests by type
+
+<!-- ------------------------------ -->
+#### Filter requests by type
 
 To filter requests by request type, click the buttons on the **Network** panel:
 *  **XHR**
@@ -266,23 +361,27 @@ To enable multiple type filters simultaneously, press and hold **Ctrl** (Windows
 
 Use the **Type** filters to display JS, CSS, and Document resources:
 
-![Using the Type filters to display JS, CSS, and Document resources](./reference-images/network-network-type-filters.png)
+![Using the Type filters to display JS, CSS, and Document resources](./reference-images/type-filters.png)
 
-### Filter requests by time
+
+<!-- ------------------------------ -->
+#### Filter requests by time
 
 Click and drag left or right on the **Overview** pane to only display requests that were active during that time frame.  The filter is inclusive.  Any request that was active during the highlighted time is shown.
 
 Filtering out any requests that were inactive around 300 ms:
 
-![Filtering out any requests that were inactive around 300 ms](./reference-images/network-network-overview-filter.png)
+![Filtering out any requests that were inactive around 300 ms](./reference-images/overview-filter.png)
 
-### Hide data URLs
+
+<!-- ------------------------------ -->
+#### Hide data URLs
 
 [Data URLs](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) are small files embedded into other documents.  Any request that displays in the Requests table that starts with `data:` is a data URL.
 
 To hide the requests, turn off the **Hide data URLs** checkbox:
 
-![The Hide Data URLs checkbox](./reference-images/network-network-hide-data-urls.png)
+![The Hide Data URLs checkbox](./reference-images/hide-data-urls.png)
 
 
 <!-- ====================================================================== -->
@@ -290,15 +389,19 @@ To hide the requests, turn off the **Hide data URLs** checkbox:
 
 By default, the requests in the Requests table are sorted by initiation time, but you can sort the table using other criteria.
 
-### Sort by column
+
+<!-- ------------------------------ -->
+#### Sort by column
 
 Click the header of any column in the Requests to sort requests by that column.
 
-### Sort by activity phase
+
+<!-- ------------------------------ -->
+#### Sort by activity phase
 
 To change how the Waterfall sorts requests:
 
-* Right-click the header of the Requests table, hover over **Waterfall**, and then select one of the following options:
+* Right-click the header of the Requests table, click **Waterfall**, and then select one of the following options:
 
    * **Start Time** - The first request that was initiated is placed at the top.
    
@@ -314,23 +417,25 @@ These descriptions assume that each respective option is ranked from shortest to
 
 The following shows sorting the Waterfall by total duration.  The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes:
 
-![Sorting the Waterfall by total duration](./reference-images/network-network-waterfall-total-duration.png)
+![Sorting the Waterfall by total duration](./reference-images/waterfall-total-duration.png)
 
 
 <!-- ====================================================================== -->
 ## Analyze requests
 
-So long as DevTools are open, it logs all requests in the **Network** tool.  Use the Network panel to analyze requests.
+So long as DevTools is open, it logs all requests in the **Network** tool.  Use the **Network** tool to analyze requests.
 
-### Display a log of requests
 
-Use the **Requests** table to display a log of all requests made while DevTools have been open.  To reveal more information about each item, click or hover on requests.
+<!-- ------------------------------ -->
+#### Display a log of requests
 
-![The Requests table](./reference-images/network-network-requests-table.png)
+Use the **Requests** table to display a log of all requests made while DevTools has been open.  To reveal more information about each item, click or hover on requests.
+
+![The Requests table](./reference-images/requests-table.png)
 
 The Requests table displays the following columns by default:
 
-- **Name**. The filename of, or an identifier for, the resource.
+- **Name**. The file name of the resource, or an identifier for the resource.
 - **Status**. The HTTP status code.
 - **Type**. The MIME type of the requested resource.
 - **Initiator**. The following objects or processes can initiate requests:
@@ -340,21 +445,28 @@ The Requests table displays the following columns by default:
   - **Other**. Some other process or action, such as navigating to a page via a link or entering a URL in the address bar.
 - **Size**. The combined size of the response headers plus the response body, as delivered by the server.
 - **Time**. The total duration, from the start of the request to the receipt of the final byte in the response.
+- **Fulfilled by**. Whether the request was fulfilled by the HTTP cache or the app's service worker.
 - [Waterfall](#display-the-timing-relationship-of-requests). A visual breakdown of each request's activity.
 
-#### Add or remove columns
 
-Right-click the header of the Requests table and select an option to hide or show it.  Currently displayed options have checkmarks next to them.
+<!-- ---------- -->
+###### Add or remove columns
 
-![Adding a column to the Requests table](./reference-images/network-network-requests-add-column.png)
+Right-click the header of the Requests table and select a column name to hide or show it.  The currently displayed columns have checkmarks next to them.
 
-#### Add custom columns
+![Adding a column to the Requests table](./reference-images/requests-add-column.png)
+
+
+<!-- ---------- -->
+###### Add columns for response headers
 
 To add a custom column to the Requests table, right-click the header of the Requests table and then select **Response Headers** > **Manage Header Columns**. The **Manage Header Columns** popup window opens.  Click the **Add custom header** button, enter the custom header name, and then click **Add**. 
 
-![Adding a custom column to the Requests table](./reference-images/network-network-requests-add-custom.png)
+![Adding a custom column to the Requests table](./reference-images/requests-add-custom-column.png)
 
-### Display the timing relationship of requests
+
+<!-- ------------------------------ -->
+#### Display the timing relationship of requests
 
 Use the Waterfall to display the timing relationships of requests.  The default organization of the Waterfall uses the start time of the requests.  So, requests that are farther to the left started earlier than the requests that are farther to the right.
 
@@ -362,7 +474,7 @@ To see the different ways that you can sort the Waterfall, go to [Sort by activi
 
 The Waterfall column of the **Requests** pane:
 
-![The Waterfall column of the Requests pane](./reference-images/network-network-requests-waterfall.png)
+![The Waterfall column of the Requests pane](./reference-images/requests-waterfall.png)
 
 <!-- ### Analyze the frames of a WebSocket Connection  -->
 
@@ -390,111 +502,116 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 *  WebSocket opcodes are light-yellow.
 *  Errors are light-red.  -->
 
-### Display a preview of a response body
 
-To display a preview of a response body, use the following steps.
+<!-- ------------------------------ -->
+#### Display a preview of a response body
 
-1. Click the URL of the request, under the **Name** column of the Requests table.
-1. Select the **Preview** tab.
+To preview the contents of an HTTP response body:
 
-The Preview tab is mostly useful to display images.
+1. In the Request table, click the name of the request.
+1. In the sidebar, select the **Preview** tab:
 
-![The Preview panel](./reference-images/network-network-resources-preview.png)
+   ![The Preview panel](./reference-images/resources-preview.png)
 
-### Display a response body
 
-To display the response body to a request, use the following steps.
+<!-- ------------------------------ -->
+#### Display a response body
 
-1. Click the URL of the request, under the **Name** column of the Requests table.
-1. Click the **Response** tab.
+To display the response body to a request:
 
-![The Response panel](./reference-images/network-network-resources-response.png)
+1. In the Request table, click the name of the request.
+1. In the sidebar, select the **Response** tab:
 
-### Display HTTP headers
+   ![The Response panel](./reference-images/resources-response.png)
 
-To display HTTP header data about a request, use the following steps.
 
-1. Click the URL of the request, under the **Name** column of the Requests table.
+<!-- ------------------------------ -->
+#### Display HTTP headers
 
-1. Click the **Headers** tab.
+To display HTTP header data about a request:
 
-![The Headers panel](./reference-images/network-resources-headers.png)
+1. In the Request table, click the name of the request.
+1. In the sidebar, select the **Headers** tab:
 
-#### Display HTTP header source
+   ![The Headers panel](./reference-images/resources-headers.png)
 
-By default, the **Headers** panel shows header names alphabetically.  To display the HTTP header names in the order received, use the following steps.
 
-1. Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers).
+<!-- ----------
+###### Display HTTP header source
+this feature doesn't exist anymore
 
-1. Click **view source**, next to the **Request Header** or **Response Header** section.
-
-### Display query string parameters
-
-To display the query string parameters of a URL in a human-readable format, use the following steps.
+By default, the **Headers** panel shows header names alphabetically.  To display the HTTP header names in the order received:
 
 1. Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers).
 
-1. Navigate to the **Query String Parameters** section.
+1. Click **view source**, next to the **Request Header** or **Response Header** section. -->
 
-![The Query String Parameters section](./reference-images/network-network-resources-headers-query-string-parameters.png)
 
-#### Display query string parameters source
+<!-- ------------------------------ -->
+#### Display query string parameters
 
-To display the query string parameter source of a request, use the following steps.
+To display the query string parameters of an HTTP request in a human-readable format:
 
-1. Navigate to the **Query String Parameters** section.  For more information, see [Display query string parameters](#display-query-string-parameters).
+1. In the Request table, click the name of the request.
+1. In the sidebar, select the **Payload** tab:
 
-1. Select **view source**.
+  ![The Query String Parameters section](./reference-images/resources-headers-query-string-parameters.png)
 
-#### Display URL-encoded query string parameters
+   To display the source of the query string parameters instead, click **view source**.
 
-To display query string parameters in a human-readable format, but with encodings preserved, use the following steps.
 
-1. Navigate to the **Query String Parameters** section.  For more information, see [Display query string parameters](#display-query-string-parameters).
+<!-- ---------- -->
+###### Display URL-encoded query string parameters
 
-1. Click **view URL encoded**.
+To display query string parameters in a human-readable format, but with encodings preserved:
 
-### Display cookies
+1. In the Request table, click the name of the request.
+1. In the sidebar, select the **Payload** tab.
+1. Click **view URL-encoded**.
 
-To display the cookies sent in the HTTP header of a request, use the following steps.
 
-1. Click the URL of the request, under the **Name** column of the Requests table.
-1. Click the **Cookies** tab.
+<!-- ------------------------------ -->
+#### Display cookies
+
+To display the cookies sent in the HTTP header of a request:
+
+1. In the Request table, click the name of the request.
+1. In the sidebar, select the **Cookies** tab:
+
+   ![The Cookies panel](./reference-images/resources-cookies.png)
 
 <!--For more information about each of the columns, see [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
 
-![The Cookies panel](./reference-images/network-network-resources-cookies.png)
 
-### Display the timing breakdown of a request
+<!-- ------------------------------ -->
+#### Display the timing breakdown of a request
 
-To display the timing breakdown of a request, use the following steps.
+To display the timing breakdown of a request:
 
-1. Click the URL of the request, under the **Name** column of the Requests table.
-1. Click the **Timing** tab.
+1. In the Request table, click the name of the request.
+1. In the sidebar, select the **Timing** tab.
 
-For a faster way to access the data, see [Preview a timing breakdown](#preview-a-timing-breakdown), in the present article.
+   ![The Timing panel](./reference-images/resources-timing.png)
 
-For more information about each of the phases that may be displayed in the **Timing** panel, see [Timing breakdown phases explained](#timing-breakdown-phases-explained), in the present article.
+For a faster way to access the data, see [Preview a timing breakdown](#preview-a-timing-breakdown).
 
-The **Timing** panel:
+For more information about each of the phases that may be displayed in the **Timing** panel, see [Timing breakdown phases explained](#timing-breakdown-phases-explained).
 
-![The Timing panel](./reference-images/network-network-resources-timing.png)
 
-More information about each of the phases.
-
-For more information about accessing the display, see [Display timing breakdown](#display-the-timing-breakdown-of-a-request).
-
-#### Preview a timing breakdown
+<!-- ---------- -->
+###### Preview a timing breakdown
 
 To display a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.
 
 Previewing the timing breakdown of a request:
 
-![Previewing the timing breakdown of a request](./reference-images/network-network-resources-waterfall-hover.png)
+![Previewing the timing breakdown of a request](./reference-images/resources-waterfall-hover.png)
 
 To view the data without hovering, see the top of the present section, [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request).
 
-#### Timing breakdown phases explained
+
+<!-- ---------- -->
+###### Timing breakdown phases explained
 
 Each of these phases may appear in the **Timing** tab:
 
@@ -525,55 +642,64 @@ Each of these phases may appear in the **Timing** tab:
 
 - **Reading Push**. The browser is reading the local data that was previously received.
 
-### Display initiators and dependencies
+
+<!-- ------------------------------ -->
+#### Display initiators and dependencies
 
 To display the initiators and dependencies of a request, hold **Shift** and hover on the request in the **Requests** table.
 
-DevTools colors: 
-*  Initiators are shown in green.
-*  Dependencies are shown in red.
+*  The requests that initiated the hovered request are shown in green.
+*  The dependencies of the hovered requests are shown in red.
 
-Displaying the initiators and dependencies of a request:
-
-![Displaying the initiators and dependencies of a request](./reference-images/network-network-resources-initiators-dependencies.png)
+![Displaying the initiators and dependencies of a request](./reference-images/resources-initiators-dependencies.png)
 
 When the Requests table is ordered chronologically, if you hover on a line, the line preceding it displays a green request.  The green request is the initiator of the dependency.  If another green request is displayed on the line before that, that higher request is the initiator of the initiator.  And so on.
 
-### Display load events
 
-DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the **Network** tool.  The `DOMContentLoaded` event is colored blue, and the `load` event is red.
+<!-- ------------------------------ -->
+#### Display load events
 
-The locations of the `DOMContentLoaded` and `load` events on the **Network** tool:
+DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the **Network** tool:
 
-![The locations of the DOMContentLoaded and load events on the Network panel](./reference-images/network-network-requests-load-events.png)
+* In the **Overview** pane with vertical lines.
+* In the **Waterfall** column of the Request table with vertical lines.
+* In the **Summary** pane, at the bottom of the **Network** tool, with timing labels.
 
-### Display the total number of requests
+The `DOMContentLoaded` event is colored blue, and the `load` event is red.
+
+![The locations of the DOMContentLoaded and load events on the Network panel](./reference-images/load-events.png)
+
+
+<!-- ------------------------------ -->
+#### Display the total number of requests
 
 The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.
+
+![The total number of requests since DevTools were opened](./reference-images/total-requests.png)
 
 > [!CAUTION]
 > This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests aren't counted.
 
-The total number of requests since DevTools were opened
 
-![The total number of requests since DevTools were opened](./reference-images/network-network-total-requests.png)
-
-### Display the total download size
+<!-- ------------------------------ -->
+#### Display the total download size
 
 The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.
+
+![The total download size of requests](./reference-images/total-download-size.png)
 
 > [!CAUTION]
 > This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, the previous requests aren't counted.
 
-The total download size of requests:
-
-![The total download size of requests](./reference-images/network-network-total-download-size.png)
-
 To verify how large resources are after the browser uncompresses each item, see [display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource).
 
-### Display the stack trace that caused a request
+
+<!-- ------------------------------ -->
+#### Display the stack trace that caused a request
 
 After a JavaScript statement requests a resource, hover on the **Initiator** column to display the stack trace leading up to the request.
+
+![The stack trace leading up to a resource request](./reference-images/requests-initiator-stack.png)
 
 <!-- [codepen.io/contoso/pen/yLBrOWa?editors=0010#0](https://codepen.io/contoso/pen/yLBrOWa?editors=0010#0) -->
 
@@ -584,45 +710,51 @@ function init() {
 }
 
 function getData() {
-  fetch('https:/httpbin.org/get?message=hi');
+  fetch('https://httpbin.org/get?message=hi');
 }
 
 init();
 ```
 -->
 
-The stack trace leading up to a resource request:
 
-![The stack trace leading up to a resource request](./reference-images/network-network-requests-initiator-stack.png)
+<!-- ------------------------------ -->
+#### Display the uncompressed size of a resource
 
-### Display the uncompressed size of a resource
+To see both the transferred size and the uncompressed size of a resource at the same time:
 
-Turn on the **Use large request rows** checkbox and then examine the bottom value of the **Size** column.
+1. In the upper right within the **Network** tool, click the **Network settings** (gear) icon.  A row of checkboxes appears.
 
-The following is an example of uncompressed resources.  The compressed size of the `jquery-3.3.1.min.js` file that was sent over the network was `29.9 KB`, whereas the uncompressed size was `84.9 KB`:
+1. Turn on the **Big request rows** checkbox.
 
-![An example of uncompressed resources](./reference-images/network-network-requests-uncompressed-compare.png)
+1. Examine the **Size** column in the Request table. The top value is the transferred size, and the bottom value is the size of the resource after the browser uncompresses it:
+
+   ![An example of uncompressed resources](./reference-images/requests-uncompressed-compare.png)
 
 
 <!-- ====================================================================== -->
 ## Export requests data
 
-### Save all network requests to a HAR file
+
+<!-- ------------------------------ -->
+#### Save all network requests to a HAR file
 
 To save all network requests to a HAR file:
 
-1. In the **Requests** table, right-click a request and then select **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You can't filter requests, and you can't save a single request.
+1. In the **Requests** table, right-click a request and then select **Save all as HAR with Content**.
 
-Once you save a HAR file, you can import it back into DevTools for analysis.  Drag-and-drop the HAR file into the **Requests** table.
+   ![Selecting 'Save all as HAR with Content'](./reference-images/save-har-content.png)
+
+1. DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You can't filter requests, and you can't save a single request.
+
+Once you save a HAR file, you can import it back into DevTools for analysis by drag-and-dropping the HAR file into the **Requests** table.
 <!--For more information, see also [HAR Analyzer](https://toolbox.alphabetapps.com/apps/har_analyzer)  Todo: add section link when content is available  -->
 
-Selecting **Save as HAR with Content**:
 
-![Selecting 'Save as HAR with Content'](./reference-images/network-network-requests-save-har-content.png)
+<!-- ------------------------------ -->
+#### Copy one or more requests to the clipboard
 
-### Copy one or more requests to the clipboard
-
-Under the **Name** column of the Requests table, right-click a request, hover over **Copy**, and select one of the following options:
+Under the **Name** column of the Requests table, right-click a request, click **Copy**, and then select one of the following options:
 
 | Name | Details |
 | --- | --- |
@@ -634,33 +766,36 @@ Under the **Name** column of the Requests table, right-click a request, hover ov
 | **Copy All as cURL** | Copy all requests as a chain of cURL commands. |
 | **Copy All as HAR** | Copy all requests as HAR data. |
 
-Select **Copy Response**:
+![Selecting 'Copy Response'](./reference-images/copy-response.png)
 
-![Selecting 'Copy Response'](./reference-images/network-network-requests-copy-response.png)
 
-### Copy formatted response JSON to the clipboard
+<!-- ------------------------------ -->
+#### Copy formatted response JSON to the clipboard
 
-Select a network request and then navigate to the **Headers** pane.  To copy the JSON value of a response, navigate to **Request payload**, right-click the JSON response content and then select **Copy Value**.
+To copy the formatted JSON data of a JSON response:
 
-![The Copy Value right-click command](./reference-images/network-header-copy-property-value.png)
+1. In the Request table, click the name of the request that led to a JSON response.
+1. In the sidebar, select the **Preview** tab.
+1. Right-click the first line of the formatted JSON response preview and then select **Copy value**. 
 
-Pasting the formatted response JSON in Microsoft Visual Studio Code:
+   ![The Copy Value right-click command](./reference-images/copy-json-value.png)
 
-![Microsoft Visual Studio Code with formatted response JSON](./reference-images/network-header-paste-property-value.png)
+   You can now paste the value into any editor to review it.
 
-### Copy property values from network requests to your clipboard
+
+<!-- ------------------------------ -->
+#### Copy property values from network requests to your clipboard
 
 To copy property values from network requests to your clipboard:
 
-1. Open the **Headers** pane.
-
-1. Open one of the following header sections.
+1. In the Request table, click the name of the request.
+1. In the sidebar, select the **Payload** tab:
+1. Expand one of the following sections.
     *  Request payload (JSON)
     *  Form Data
     *  Query String Parameters
     *  Request Headers
     *  Response Headers
-
 1. Right-click a value and then select **Copy value**.  You can now paste the value into any editor to review it.
 
 
@@ -669,31 +804,43 @@ To copy property values from network requests to your clipboard:
 
 You can expand or collapse sections of the **Network** tool UI to focus important information.
 
-### Hide the Filters pane
+
+<!-- ------------------------------ -->
+#### Hide the Filters pane
 
 By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, select **Filter** (![Filter](./reference-images/filter-icon.png)).
 
-![The Hide Filters button](./reference-images/network-network-resources-hide-filters-button.png)
+![The Hide Filters button](./reference-images/hide-filters-button.png)
 
-### Use large request rows
 
-Use large rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
+<!-- ------------------------------ -->
+#### Big request rows
 
-To enable large rows, select the **Use large request rows** checkbox.  An example of large request rows in the **Requests** pane:
+Use big request rows when you want more whitespace in your network requests table. Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
 
-![An example of large request rows in the Requests pane](./reference-images/network-network-requests-large-request-rows.png)
+To enable large rows, select the **Big request rows** checkbox. An example of large request rows in the **Requests** pane:
 
-### Hide the Overview pane
+![An example of big request rows in the Requests pane](./reference-images/big-request-rows.png)
+
+
+<!-- ------------------------------ -->
+#### Hide the Overview pane
 
 By default, DevTools displays the **Overview** pane.  To hide the **Overview** pane, clear the **Show Overview** checkbox.
 
-![The Show Overview checkbox](./reference-images/network-network-requests-show-overview-off.png)
+![The Show Overview checkbox](./reference-images/show-overview-off.png)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Inspect network activity](index.md) - step-by-step walkthrough and introduction to the **Network** tool.
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/network/reference/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/network/reference/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -4,17 +4,18 @@ description: Information for end users about WebView2 processes, memory and CPU 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 03/30/2023
 ---
 # WebView2 end-user FAQ
 
-This Frequently Asked Questions (FAQ) page is for end users, to explain the **WebView2** or **msedgewebview2.exe** processes that are listed in Task Manager.  See also [Contact the WebView2 Team](../contact.md).
+This Frequently Asked Questions (FAQ) page is for end users, to explain the **WebView2** or **msedgewebview2.exe** processes that are listed in Task Manager.  See also [Contact the WebView2 team](../contact.md).
 
 
 <!-- ====================================================================== -->
 ## What is WebView2?
+<!-- don't change heading words, b/c a Teams dialog links to this anchor.  nice to do: define a fwlink that includes this # anchor wording, tell team to use it in product code, & paste it here -->
 
 WebView2 is a way for app developers to embed web content (such as HTML, JavaScript, and CSS) in Windows applications. By including the WebView2 control in an app, a developer can write code for a website or web app, and then reuse that web code in their Windows application, saving time and effort.  See [Introduction to Microsoft Edge WebView2](../index.md).
 
@@ -81,4 +82,4 @@ Many apps that are built on WebView2 perform checks to re-install WebView2 when 
 ## See also
 
 * [Introduction to Microsoft Edge WebView2](../index.md)
-* [Contact the WebView2 Team](../contact.md)
+* [Contact the WebView2 team](../contact.md)

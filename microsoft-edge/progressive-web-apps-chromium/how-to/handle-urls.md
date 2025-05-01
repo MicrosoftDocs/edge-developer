@@ -1,22 +1,22 @@
 ---
-title: Handle links to your Progressive Web Apps
+title: Handle links to a PWA
 description: How links to your Progressive Web App (PWA) can be handled by your app rather than by the web browser.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 09/15/2022
 ---
-# Handle links to your Progressive Web Apps
+# Handle links to a PWA
 
-Native apps on many operating systems can handle links.  When associated URLs are activated, native apps can request to be launched instead of the web browser, to create a more engaging experience for these apps.
+A Progressive Web App (PWA) on the device's operating system can handle links, so that when an associated URL is activated, the PWA can request to be launched instead of the web browser, to create a more engaging experience.
 
-Progressive Web Apps (PWAs) can also handle links in a similar way.
+This link handling is like how native apps handle links on many operating systems.
 
 <!--
 link handling vs. url handling:
-Although the present filename is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.
+Although the present file name is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.
 The PWA URL handlers feature was removed from Chromium.
 See also [PWAs as URL Handlers](https://web.dev/pwa-url-handler/).
 -->
@@ -42,15 +42,22 @@ No code is required for automatic link handling to work, but end users can opt-o
 
 
 <!-- ====================================================================== -->
-## Handle links from other origins with scope extensions
+## Handle links from other origins by using scope extensions
 
-The manifest of a PWA defines which part of the hosting domain the PWA is scoped to. For example, the `www.contoso.com` domain name may have a PWA defined under `www.contoso.com/app` with its scope set to `/app`. In this case, all the web pages available within the `www.contoso.com/app` path are part of the PWA scope. However the web pages within the `www.contoso.com/foo` path are not part of the PWA scope. Furthermore, web pages available at `bar.contoso.com/app` or `www.contoso.co.uk` are also not part of the PWA scope.
+Scope extensions make it possible for a PWA to capture navigation to paths, subdomains, or even sites other than its own scope.  This can be useful for PWAs that span multiple domains for localization purposes.  For example, a PWA may span `contoso.com`, `contoso.co.uk`, and `contoso.fr`.
 
-Scope extensions make it possible for a PWA to capture navigation to paths, subdomains, or even sites other than its own scope. This can be useful for PWAs that span multiple domains for localization purposes. For example, a PWA may span `contoso.com`, `contoso.co.uk`, and `contoso.fr`.
+The manifest of a PWA defines which part of the hosting domain the PWA is scoped to.  For example, the `www.contoso.com` domain name may have a PWA defined under `www.contoso.com/app` with its scope set to `/app`.  In this case, all the web pages available within the `www.contoso.com/app` path are part of the PWA scope.  However, the web pages within the `www.contoso.com/foo` path are not part of the PWA scope.  Furthermore, web pages that are available at `bar.contoso.com/app` or `www.contoso.co.uk` are also not part of the PWA scope.
 
-**Note**: The scope extensions feature is in active development and isn't ready to be used yet. To find out more about the state of development of this feature in Chromium, check out the [Web app scope extensions feature](https://chromestatus.com/feature/5746537956114432) at Chrome Platform Status.
 
-Once the feature can be used in Microsoft Edge, we will document it here. In the meantime, to learn more about how scope extensions will work, see [the explainer document on the WICG repository](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md).
+<!-- ------------------------------ -->
+#### Origin trial
+
+As of October 17, 2024, the scope extensions feature is an origin trial.  For status, see [Web app scope extensions feature](https://chromestatus.com/feature/5746537956114432) at Chrome Platform Status.
+
+When the feature can be used in Microsoft Edge and is no longer in origin trial, the feature will be documented in the present article.  See [Scope Extensions for Web Apps](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md), an Explainer in the **manifest-incubations** repo.
+
+See also:
+* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
 
 
 <!-- ====================================================================== -->

@@ -4,7 +4,8 @@ description: How to debug Background Fetch, Background Sync, Notifications, and 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 04/06/2022
 ---
 <!-- Copyright Kayce Basques
@@ -130,7 +131,7 @@ The [Payment Handler API](https://web.dev/web-based-payment-apps-overview/) allo
 <!-- ====================================================================== -->
 ## Periodic Background Sync
 
-The **Periodic Background Sync API** enables the **service worker** of a Progressive Web App to retrieve data from a server, periodically, even when the website isn't opened. To learn more about the **Periodic Background Sync API**, see [Use the Periodic Background Sync API to regularly get fresh content](/microsoft-edge/progressive-web-apps-chromium/how-to/background-syncs#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
+The **Periodic Background Sync API** enables the **service worker** of a Progressive Web App to retrieve data from a server, periodically, even when the website isn't opened.  See [Use the Periodic Background Sync API to regularly get fresh content](../../progressive-web-apps-chromium/how-to/background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content) in _Synchronize and update a PWA in the background_.
 
 To log Periodic Background Sync events for 3 days, even when DevTools isn't open:
 
@@ -200,6 +201,6 @@ To see reports that have been sent by the browser using the **Reporting API**:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/background-services/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/background-services/) and is authored by Kayce Basques.
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

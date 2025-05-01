@@ -4,52 +4,49 @@ description: The Changes tool tracks any changes you've made to CSS or JavaScrip
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 10/28/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 11/30/2023
 ---
 # Track changes to files using the Changes tool
+<!-- https://developer.chrome.com/docs/devtools/changes (indep) -->
 
-The **Changes tool** tracks any changes you've made to CSS or JavaScript in DevTools.  It shows you what changes to make to your actual source files after you've successfully used DevTools to modify your webpage files sent from the server.
+The **Changes** tool tracks any changes that you've made to CSS, JavaScript, or HTML files in DevTools.  The **Changes** tool is empty until you open files and edit them by using the **Sources** tool, **Quick source** tool, or **Elements** tool's **Styles** pane.
 
-Use the **Changes** tool to quickly display all your changes in order to re-apply those changes to the actual source files in your editor (in your Integrated Development Environment; IDE).
+The **Changes** tool shows you what changes to make to your actual source files after you've successfully used DevTools to modify a copy of your webpage files that are sent from the server:
 
-![The Changes tool showing three files that have been modified, and the modifications of the selected file](changes-tool-images/changes-tool-open.png)
+![The Changes tool showing two files that have been modified, and the modifications of the selected file](changes-tool-images/changes-tool-open.png)
 
-In DevTools, use any of the following ways to open the **Changes** tool.  The **Changes tool** is a **Drawer** tool; by default, it opens in the **Drawer**.
-
-
-<!-- ====================================================================== -->
-## Open the Changes tool by right-clicking in a changed file
-
-In the [Sources](../sources/index.md) tool, right-click any file that shows that it was changed, and then select **Local modifications**:
-
-![Right-click a modified file, then select the 'Local Modifications' command](changes-tool-images/changes-tool-from-sources.png)
+Use the **Changes** tool to quickly display all your changes in order to re-apply those changes to the actual source files in your source code editor.
 
 
 <!-- ====================================================================== -->
 ## Open the Changes tool by clicking the More Tools icon
 
-On the main toolbar or **Drawer** toolbar, click the **More Tools** (`+`) icon and then select **Changes**:
+On the **Activity Bar** or **Quick View** toolbar, click the **More tools** (![The 'More tools' icon](./changes-tool-images/more-tools-icon.png)) button, and then select **Changes**:
 
-![The More Tools (+) icon and menu in the main toolbar, with the Changes tool selected](changes-tool-images/changes-tool-via-plus-menu.png)
+![The 'More tools' (+) icon and menu in the Activity Bar, with the Changes tool selected](changes-tool-images/changes-tool-via-plus-menu.png)
 
-The **Changes** tool appears in the main toolbar or in the **Drawer**, depending on which toolbar you used.
-
-
-<!-- ====================================================================== -->
-## Open the Changes tool by clicking the Customize DevTools icon
-
-Click **Customize and control DevTools** (`...`), point to **More tools**, and then select **Changes**:
-
-![Opening the 'More tools' menu by clicking the 'Customize and control DevTools' button](changes-tool-images/changes-tool-via-overflow-menu.png)
+The **Changes** tool opens in the **Activity Bar** or in the **Quick View** panel, depending on which toolbar you used.
 
 
 <!-- ====================================================================== -->
 ## Open the Changes tool by using the Command Menu
 
-Open the [Command Menu](../command-menu/index.md) by pressing **Ctrl+Shift+P** on Windows/Linux or **Command+Shift+P** on Mac, and then type **changes**.  The **Show Changes** command is highlighted; press **Enter**.
+To open the **Changes** tool using the **Command Menu**:
 
-![In the Command Menu, start typing 'changes', and then select the 'Show Changes' command](changes-tool-images/changes-tool-command-menu.png)
+1. To open the **Command Menu**, press **Ctrl+Shift+P** on Windows/Linux or **Command+Shift+P** on Mac.
+
+1. Start typing **changes**.  The **Show Changes** command is highlighted:
+
+   ![The Show Changes command in the Command Menu](changes-tool-images/changes-tool-command-menu.png)
+
+1. Press **Enter**.  The **Changes** tool opens in the **Quick View** panel:
+   
+   ![The Changes tool in the Quick View panel](changes-tool-images/changes-tool-in-quick-view.png)
+
+See also:
+* [Run commands in the Command Menu](../command-menu/index.md)
 
 
 <!-- ====================================================================== -->
@@ -57,7 +54,7 @@ Open the [Command Menu](../command-menu/index.md) by pressing **Ctrl+Shift+P** o
 
 Each modified file is listed in the side pane.  Selecting a file shows the modifications as a `diff` view.  You won't see the entire file, but only the lines that have changed, along with a few lines above and below the changed lines, for context.
 
-A diff view of the file shows that there were two modifications in different parts of the file.  One change is a deletion and an insertion, and one change is a deleted line.
+The following diff view shows that there were two modifications in different parts of a file.  One change is an insertion, and one change is several deleted lines:
 
 ![Diff view](changes-tool-images/changes-tool-diff-view.png)
 
@@ -77,9 +74,9 @@ Clicking a modified line in the **Changes** tool opens the file in the [Sources]
 
 
 <!-- ====================================================================== -->
-## Undo all changes
+## Revert changes
 
-To undo all changes, click the **Revert all changes to the current file** button, shown as a looped arrow:
+To undo all changes, at the bottom of the **Changes** tool, click the **Revert all changes to current file** (![The Revert all changes to current file icon](./changes-tool-images/revert-icon.png)) button:
 
 ![Reverting changes](changes-tool-images/changes-tool-undo-all.png)
 
@@ -87,6 +84,28 @@ To undo all changes, click the **Revert all changes to the current file** button
 <!-- ====================================================================== -->
 ## Horizontally scroll entries
 
-When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.  To scroll horizontally, click the horizontal scrollbar or press the arrow keys.
+When you've made a change to a minified file, the **Changes** tool enables you to scroll horizontally, to display all of your minified code:
 
 ![Displaying a long line of code](changes-tool-images/changes.png)
+
+To scroll horizontally, click the horizontal scrollbar, or press the left or right arrow keys.
+
+
+<!-- ====================================================================== -->
+## Troubleshooting
+
+If green circles stop appearing on files in DevTools, such as in the **Workspace** tab; or if the **Changes** tool doesn't show expected changes:
+
+* With DevTools displayed, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Empty cache and hard refresh**.
+
+<!-- 
+* In DevTools, select **Customize and Control DevTools** (**...**) > **Restore defaults and refresh**. -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md)
+* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md) - **Sources** tool > **Overrides** tab
+* [Sources tool overview](../sources/index.md)
+   * [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)

@@ -4,7 +4,7 @@ description: Inline and live issue analysis in the Microsoft Edge Developer Tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Inline and live issue analysis
@@ -15,7 +15,7 @@ Issues in your source code (`.html`, `.css`, or `.js` files) are highlighted wit
 
 This feature requires Node.js and npm (Node Package Manager).  See [Step 4: Install Node.js and Node Package Manager (npm)](./install.md#step-4-install-nodejs-and-node-package-manager-npm) in _Installing the DevTools extension for Visual Studio Code_.
 
-This feature is on by default; the **Webhint** checkbox is selected in **Settings**.  To turn this feature on or off, select Activity Bar > **Microsoft Edge Tools** > hover to the right of **Targets** > **More Actions** (**...**) > **Open Settings** > select or clear the **Webhint** checkbox:
+This feature is on by default; the **Webhint** checkbox is selected in **Settings**.  To turn this feature on or off, select **Activity Bar** > **Microsoft Edge Tools** > hover to the right of **Targets** > **More Actions** (**...**) > **Open Settings** > select or clear the **Webhint** checkbox:
 
 ![Webhint checkbox in Settings](./inline-live-issue-analysis-images/webhint-checkbox-settings.png)
 
@@ -27,6 +27,12 @@ To see all the issues in the file, click **View Problem**:
 The **Problems** tab in the lower panel lists all the issues that DevTools found in the currently open files:
 
 ![The Problems tab in the lower panel of Visual Studio Code, listing all the issues that are found in the project's files](./inline-live-issue-analysis-images/issues-in-lower-panel.png)
+
+
+<!-- ------------------------------ -->
+#### Video: Advanced issues filtering in Edge DevTools and VSCode
+
+[![Thumbnail image for video "Advanced issues filtering in Edge DevTools and VSCode"](./inline-live-issue-analysis-images/advanced-issues-filtering.png)](https://www.youtube.com/watch?v=_dePgo89bq0)
 
 
 <!-- ====================================================================== -->

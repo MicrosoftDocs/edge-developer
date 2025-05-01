@@ -4,7 +4,7 @@ description: A cross-browser initiative focused on identifying missing features 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 03/15/2021
 ---
 # The Web We Want initiative

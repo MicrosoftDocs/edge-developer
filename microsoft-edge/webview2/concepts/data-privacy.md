@@ -4,15 +4,15 @@ description: WebView2 data collection and practices, privacy, and the 'Diagnosti
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 06/02/2023
 ---
 # Data and privacy in WebView2
 
 WebView2 collects a set of optional and required diagnostic data to keep WebView2 secure and up to date, diagnose issues, and improve WebView2. By agreeing to the WebView2 Runtime Terms and Conditions License, WebView2 developers acknowledge that WebView2 will collect the data that's described in this article. To view the license, go to [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), where clicking any of the download buttons, such as **Get the Link**, **Download**, or **x64**, shows the license in a dialog.
 
-Additionally, WebView2 follows the standards that are outlined in the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md). WebView2 has mechanisms to ensure privacy. WebView2 data collection follows the same strict standards as Microsoft Edge. For more information, see [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/privacystatement).
+Additionally, WebView2 follows the standards that are outlined in [Microsoft Edge Privacy Whitepaper](/legal/microsoft-edge/privacy).  WebView2 has mechanisms to ensure privacy.  WebView2 data collection follows the same strict standards as Microsoft Edge.  For more information, see [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/privacystatement).
 
 The main diagnostic data sources are:
 *  Chromium and Microsoft Edge telemetry infrastructure.
@@ -55,7 +55,7 @@ These features are described below.
 
 Microsoft Defender SmartScreen ("SmartScreen") is a security feature that is enabled by default to help users safely browse the web.  The `IsReputationCheckingRequired` property controls whether SmartScreen is enabled.  Generally, all other services in `edge://settings/privacy` are turned off, for WebView2.
 
-If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and the [Microsoft Edge Privacy Whitepaper](../../privacy-whitepaper/index.md#smartscreen).
+If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and in [SmartScreen](/legal/microsoft-edge/privacy#smartscreen) in _Microsoft Edge Privacy Whitepaper_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -76,7 +76,7 @@ If you don't disable SmartScreen, you must provide notice to all users that your
 ---
 
 See also:
-* [SmartScreen](../concepts/overview-features-apis.md#smartscreen) in _Overview of WebView2 features and APIs_.
+* [SmartScreen](../concepts/overview-features-apis.md#smartscreen) in _Overview of WebView2 APIs_.
 * [Spec: Disable SmartScreen](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/IsSmartScreenRequired.md)
 
 
@@ -84,8 +84,8 @@ See also:
 ## Custom crash reporting
 
 If any WebView2 process crashes, one or more minidump files are created and sent to Microsoft for diagnosis.  Use this API to customize crash reporting when running diagnostics and doing analysis.
-*  To prevent crash dumps from being sent to Microsoft, set the `IsCustomCrashReportingEnabled` property to `false`.
-*  To locate crash dumps and do customization with them, use the `CrashDumpFolderPath` property.
+* When `IsCustomCrashReportingEnabled` is set to `true`, Windows won't send crash data to the Microsoft endpoint.
+* To locate crash dumps and do customization with them, use the `CrashDumpFolderPath` property.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -105,13 +105,14 @@ If any WebView2 process crashes, one or more minidump files are created and sent
 
 * `ICoreWebView2EnvironmentOptions3` interface:
    * [ICoreWebView2EnvironmentOptions3::get_IsCustomCrashReportingEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3#get_iscustomcrashreportingenabled)
+   * [ICoreWebView2EnvironmentOptions3::put_IsCustomCrashReportingEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions3#put_iscustomcrashreportingenabled)
 * `ICoreWebView2Environment11` interface:
    * [ICoreWebView2Environment11::get_FailureReportFolderPath](/microsoft-edge/webview2/reference/win32/icorewebview2environment11#get_failurereportfolderpath)
 
 ---
 
 See also:
-* [Custom crash reporting](../concepts/overview-features-apis.md#custom-crash-reporting) in _Overview of WebView2 features and APIs_.
+* [Custom crash reporting](../concepts/overview-features-apis.md#custom-crash-reporting) in _Overview of WebView2 APIs_.
 * [Spec: Custom Crash Reports](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/DisableCrashReporting.md)
 * [Minidump Files](/windows/win32/debug/minidump-files)
 
@@ -119,4 +120,4 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
-* [Security and privacy](../concepts/overview-features-apis.md#security-and-privacy) in _Overview of WebView2 features and APIs_.
+* [Security and privacy](../concepts/overview-features-apis.md#security-and-privacy) in _Overview of WebView2 APIs_.

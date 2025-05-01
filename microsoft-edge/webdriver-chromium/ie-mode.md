@@ -4,8 +4,8 @@ description: How to test your legacy website or app in IE mode in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/23/2021
 ---
 # Use Internet Explorer Driver to automate IE mode in Microsoft Edge
@@ -31,7 +31,8 @@ To begin automating tests in IE mode in Microsoft Edge, [download IEDriver](http
 To configure IEDriver, Windows, and Microsoft Edge correctly, complete the requirements for [Selenium's required configuration](https://www.selenium.dev/documentation/ie_driver_server/#required-configuration).
 
 
-### Place the driver executable in the PATH
+<!-- ------------------------------ -->
+#### Place the driver executable in the PATH
 
 The driver executable needs to be placed in the PATH; see [IE Driver Server](https://www.selenium.dev/documentation/ie_driver_server/).  The top of that page reads: "The standalone server executable must be downloaded from the Downloads page and placed in your PATH."
 
@@ -59,7 +60,7 @@ The next section shows the complete sample, and then the subsequent sections foc
 
 The following sample launches Microsoft Edge in IE mode, navigates to [bing.com](https://www.bing.com/), and then searches for "WebDriver".
 
-### [C#](#tab/c-sharp/)
+##### [C#](#tab/c-sharp/)
 
 ```csharp
 using System;
@@ -88,7 +89,7 @@ namespace IEDriverSample
 }
 ```
 
-### [Python](#tab/python/)
+##### [Python](#tab/python/)
 
 ```python
 from selenium import webdriver
@@ -108,7 +109,7 @@ elem.send_keys('WebDriver' + Keys.RETURN)
 driver.quit()
 ```
 
-### [Java](#tab/java/)
+##### [Java](#tab/java/)
 
 ```java
 import org.openqa.selenium.By;
@@ -135,7 +136,7 @@ public class IEDriverSample {
 }
 ```
 
-### [JavaScript](#tab/javascript/)
+##### [JavaScript](#tab/javascript/)
 
 ```javascript
 const {Builder, By, Key, until} = require('selenium-webdriver');
@@ -161,16 +162,17 @@ const {Options} = require('selenium-webdriver/ie');
 })();
 ```
 
-* * *
+---
 
 The following sections explain the steps in this sample in more detail.
+
 
 <!-- ====================================================================== -->
 ## Define InternetExplorerOptions with additional properties for Microsoft Edge
 
 Define `InternetExplorerOptions` with additional properties that point to the Microsoft Edge browser.
 
-### [C#](#tab/c-sharp/)
+##### [C#](#tab/c-sharp/)
 
 1. Define a new variable, `ieOptions`, by calling `InternetExplorerOptions()`.
 
@@ -183,7 +185,7 @@ ieOptions.AttachToEdgeChrome = true;
 ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
 ```
 
-### [Python](#tab/python/)
+##### [Python](#tab/python/)
 
 1. Define a new variable, `ie_options`, by calling `webdriver.IeOptions()`.
 
@@ -195,7 +197,7 @@ ie_options.attach_to_edge_chrome = True
 ie_options.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 ```
 
-### [Java](#tab/java/)
+##### [Java](#tab/java/)
 
 1. Define a new variable `ieOptions` of type `InternetExplorerOptions`, by calling `new InternetExplorerOptions()`.
 
@@ -207,7 +209,7 @@ ieOptions.attachToEdgeChrome();
 ieOptions.withEdgeExecutablePath("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
 ```
 
-### [JavaScript](#tab/javascript/)
+##### [JavaScript](#tab/javascript/)
 
 1. Define a new variable, `ieOptions`, by calling `Options()`.
 
@@ -219,7 +221,7 @@ ieOptions.setEdgeChromium(true);
 ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe');
 ```
 
-* * *
+---
 
 
 <!-- ====================================================================== -->
@@ -227,7 +229,7 @@ ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.
 
 Start IEDriver.  IEDriver launches Microsoft Edge and then loads your web content in IE mode.
 
-### [C#](#tab/c-sharp/)
+##### [C#](#tab/c-sharp/)
 
 Start `InternetExplorerDriver` and pass it the previously defined `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
@@ -235,7 +237,7 @@ Start `InternetExplorerDriver` and pass it the previously defined `ieOptions`.  
 var driver = new InternetExplorerDriver(ieOptions);
 ```
 
-### [Python](#tab/python/)
+##### [Python](#tab/python/)
 
 Start IEDriver by calling `webdriver.Ie` and passing it the previously defined `ie_options`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
@@ -243,7 +245,7 @@ Start IEDriver by calling `webdriver.Ie` and passing it the previously defined `
 driver = webdriver.Ie(options=ie_options)
 ```
 
-### [Java](#tab/java/)
+##### [Java](#tab/java/)
 
 Start IEDriver by calling `new InternetExplorerDriver()` and passing it the previously defined `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
@@ -251,7 +253,7 @@ Start IEDriver by calling `new InternetExplorerDriver()` and passing it the prev
 WebDriver driver = new InternetExplorerDriver(ieOptions);
 ```
 
-### [JavaScript](#tab/javascript)
+##### [JavaScript](#tab/javascript)
 
 Start IEDriver by calling `Builder.forBrowser('ie')` and `setIeoptions(ieOptions)`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
@@ -262,7 +264,7 @@ let driver = await new Builder().
                        build();
 ```
 
-* * *
+---
 
 
 <!-- ====================================================================== -->
@@ -270,7 +272,9 @@ let driver = await new Builder().
 
 This section covers known scenarios that previously worked with IEDriver and the IE11 desktop application but require workarounds when using IEDriver with Microsoft Edge in IE mode.
 
-### Opening new windows
+
+<!-- ------------------------------ -->
+#### Opening a new window
 
 If your test code creates a new browser window using one of the following methods, you may need to add a short wait operation afterwards to ensure that IEDriver has detected the new window:
 
@@ -281,7 +285,7 @@ To ensure the new window has been created successfully and IEDriver has detected
 
 The following sample demonstrates a possible way to wait for new window handles to be detected when opening new windows.
 
-### [C#](#tab/c-sharp/)
+##### [C#](#tab/c-sharp/)
 
 After the `Click` method is called on a button that opens a new window, the test code must wait until `driver.WindowHandles` contains the new window handle.
 
@@ -295,7 +299,7 @@ while (newHandles.Count == initialHandleCount)
 }
 ```
 
-### [Python](#tab/python/)
+##### [Python](#tab/python/)
 
 After the `click` method is called on a button that opens a new window, the test code must wait until `driver.window_handles` contains the new window handle.
 
@@ -307,7 +311,7 @@ while len(new_handles) == initial_handle_count:
     new_handles = driver.window_handles
 ```
 
-### [Java](#tab/java/)
+##### [Java](#tab/java/)
 
 After the `click` method is called on a button that opens a new window, the test code must wait until `driver.getWindowHandles()` contains the new window handle.
 
@@ -320,7 +324,7 @@ while (newHandles.size() == initialHandleCount) {
 }
 ```
 
-### [JavaScript](#tab/javascript/)
+##### [JavaScript](#tab/javascript/)
 
 After the `click` method is called on a button that opens a new window, IEDriver must wait with `await driver.getAllWindowHandles()`.
 
@@ -334,9 +338,11 @@ while (newHandles.length == initialHandleCount) {
 }
 ```
 
-* * *
+---
 
-### Creating and switching between tabs
+
+<!-- ------------------------------ -->
+#### Creating tabs and switching between tabs
 
 If your test code switches between multiple tabs in the same Microsoft Edge window, tabs that become inactive may not be included in the list of handles returned by [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles).  In the Internet Explorer 11 desktop application, IEDriver will return handles for all of the tabs in IE, regardless of activation state.
 
@@ -346,6 +352,6 @@ When using Microsoft Edge in IE mode, if your test switches focus away from a ce
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use WebDriver to automate Microsoft Edge](/microsoft-edge/webdriver-chromium) - An overview of automating Microsoft Edge with the WebDriver protocol.
+*  [Use WebDriver to automate Microsoft Edge](./index.md) - An overview of automating Microsoft Edge with the WebDriver protocol.
 *  [Selenium documentation](https://www.selenium.dev/documentation) - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
 *  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.

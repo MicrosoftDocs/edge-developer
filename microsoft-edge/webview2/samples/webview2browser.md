@@ -4,8 +4,8 @@ description: "A web browser built with the Microsoft Edge WebView2 control."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 07/18/2022
 ---
 # Win32 sample WebView2Browser
@@ -22,7 +22,7 @@ This sample has its own dedicated repo.
 
 *  Sample name: **WebView2Browser**
 *  Repo: [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser)
-*  Solution file: **WebViewBrowserApp.sln**
+*  Solution file: `WebViewBrowserApp.sln`
 
 ![The WebView2Browser sample app](./webview2browser-images/WebView2Browser.png)
 <!-- todo: remove png from other repo, in PR 140: -->
@@ -37,27 +37,19 @@ This sample is built as a Win32 [Visual Studio 2019](https://visualstudio.micros
 
 
 <!-- ====================================================================== -->
-## Step 1: Install a preview channel of Microsoft Edge
-
-*  If not installed yet, install a [preview channel of Microsoft Edge](https://www.microsoft.com/edge/download/insider/) on a supported OS.
-
-
-<!-- ====================================================================== -->
-## Step 2: Install Visual Studio
+## Step 1: Install Visual Studio
 
 1. Install [Visual Studio](https://visualstudio.microsoft.com/vs/), including C++ support.
 
-The [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) is recommended for the installation.<!-- TODO: give actionable steps/instructions.  Why preview channel and also Runtime? -->  The minimum version is 86.0.622.38.
-
 
 <!-- ====================================================================== -->
-## Step 3: Clone the WebView2Samples repo
+## Step 2: Clone the WebView2Samples repo
 
 * Clone (or download as `.zip`) the **WebView2Samples** repo.  See [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
 
 <!-- ====================================================================== -->
-## Step 4: Open the solution in Visual Studio
+## Step 3: Open the solution in Visual Studio
 
 1. Open the solution in Visual Studio 2019.  The WebView2 SDK is already included as a NuGet package in the project.  If you want to use Visual Studio 2017, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.  You might also need to change the Windows SDK to the latest version.
 
@@ -103,7 +95,7 @@ int BrowserWindow::GetDPIAwareBound(int bound)
 
 
 <!-- ====================================================================== -->
-## Step 5: Build and run the app
+## Step 4: Build and run the app
 
 1. Set the target you want to build (such as Debug or Release, targeting x86 or x64).
 
@@ -115,13 +107,13 @@ int BrowserWindow::GetDPIAwareBound(int bound)
 
 
 <!-- ====================================================================== -->
-## Step 6: Update the WebView2 SDK
+## Step 5: Update the WebView2 SDK
 
 * Update the version of the WebView2 SDK, in Visual Studio.  To do this, right-click the project and then click **Manage NuGet Packages**.
 
 
 <!-- ====================================================================== -->
-## Step 7: Build and run the app with updated WebView2 SDK
+## Step 6: Build and run the app with updated WebView2 SDK
 
 * Build and run the app again.
 
@@ -134,7 +126,7 @@ The WebView2Browser sample app uses multiple WebView2 instances.
 
 WebView2Browser has a multi-WebView approach to integrate web content and application UI into a Windows Desktop application. This allows the browser to use standard web technologies (HTML, CSS, JavaScript) to light up the interface but also enables the app to fetch favicons from the web and use IndexedDB for storing favorites and history.
 
-The multi-WebView approach involves using two separate WebView environments (each with its own user data directory): one for the UI WebViews and the other for all content WebViews. UI WebViews (controls and options dropdown) use the UI environment while web content WebViews (one per tab) use the content environment.
+The multi-WebView approach involves using two separate WebView environments (each with its own user data directory): one for the UI WebViews and the other for all content WebViews. UI WebViews (controls and options dropdown list) use the UI environment, while web content WebViews (one per tab) use the content environment.
 
 ![Browser layout](./webview2browser-images/layout.png)
 <!-- todo: remove png from other repo, in PR 140: 
@@ -169,14 +161,14 @@ API | Features
 `CreateCoreWebView2EnvironmentWithOptions` | Used to create the environments for UI and content WebViews. Different user data directories are passed to isolate UI from web content. |
 `ICoreWebView2` | There are several WebViews in WebView2Browser and most features make use of members in this interface, the table below shows how they're used.
 `ICoreWebView2DevToolsProtocolEventReceivedEventHandler` | Used along with add_DevToolsProtocolEventReceived to listen for CDP security events to update the lock icon in the browser UI. |
-`ICoreWebView2DevToolsProtocolEventReceiver` | Used along with add_DevToolsProtocolEventReceived to listen for CDP security events to update the lock icon in the browser UI. |
-`ICoreWebView2ExecuteScriptCompletedHandler` | Used along with ExecuteScript to get the title and favicon from the visited page. |
-`ICoreWebView2FocusChangedEventHandler` | Used along with add_LostFocus to hide the browser options dropdown when it loses focus.
-`ICoreWebView2HistoryChangedEventHandler` | Used along with add_HistoryChanged to update the navigation buttons in the browser UI. |
+`ICoreWebView2DevToolsProtocolEventReceiver` | Used along with `add_DevToolsProtocolEventReceived` to listen for CDP security events to update the lock icon in the browser UI. |
+`ICoreWebView2ExecuteScriptCompletedHandler` | Used along with `ExecuteScript` to get the title and favicon from the visited page. |
+`ICoreWebView2FocusChangedEventHandler` | Used along with `add_LostFocus` to hide the browser options dropdown list when it loses focus.
+`ICoreWebView2HistoryChangedEventHandler` | Used along with `add_HistoryChanged` to update the navigation buttons in the browser UI. |
 `ICoreWebView2Controller` | There are several WebViewControllers in WebView2Browser and we fetch the associated WebViews from them.
-`ICoreWebView2NavigationCompletedEventHandler` | Used along with add_NavigationCompleted to update the reload button in the browser UI.
+`ICoreWebView2NavigationCompletedEventHandler` | Used along with `add_NavigationCompleted` to update the reload button in the browser UI.
 `ICoreWebView2Settings` | Used to disable DevTools in the browser UI.
-`ICoreWebView2SourceChangedEventHandler` | Used along with add_SourceChanged to update the address bar in the browser UI. |
+`ICoreWebView2SourceChangedEventHandler` | Used along with `add_SourceChanged` to update the address bar in the browser UI. |
 `ICoreWebView2WebMessageReceivedEventHandler` | This is one of the most important APIs to WebView2Browser. Most functionalities involving communication across WebViews use this.
 
 ICoreWebView2 API | Features
@@ -193,21 +185,20 @@ ICoreWebView2 API | Features
 ICoreWebView2Controller API | Feature(s)
 :--- | :---
 `get_CoreWebView2` | Used to get the CoreWebView2 associated with this CoreWebView2Controller.
-`add_LostFocus` | Used to hide the options dropdown when the user clicks away from it.
+`add_LostFocus` | Used to hide the options dropdown list when the user clicks away from it.
 
 
 <!-- ====================================================================== -->
 ## Implementing the features
 
-The sections below describe how some of the features in WebView2Browser were implemented. You can look at the source code for more details about how everything works here.
+The sections below describe how some of the features in WebView2Browser were implemented. You can look at the source code for more details about how everything works here.  Outline:
 
-**Contents:**
-
-* [The basics](#the-basics)
-  * [Setting up the environment and creating a WebView](#setting-up-the-environment-and-creating-a-webview)
-  * [Navigating to a webpage](#navigating-to-a-webpage)
+* [The basics](#the-basics)<!-- h2 -->
+  * [Set up the environment, create a WebView](#set-up-the-environment-create-a-webview)<!-- h4 -->
+  * [Navigate to web page](#navigate-to-web-page)
   * [Updating the address bar](#updating-the-address-bar)
   * [Going back, going forward](#going-back-going-forward)
+  * [Reloading, stop navigation](#reloading-stop-navigation)
 * [Some interesting features](#some-interesting-features)
   * [Communicating the WebViews](#communicating-the-webviews)
   * [Tab handling](#tab-handling)
@@ -221,7 +212,7 @@ The sections below describe how some of the features in WebView2Browser were imp
 
 
 <!-- ------------------------------ -->
-#### Setting up the environment and creating a WebView
+#### Set up the environment, create a WebView
 
 WebView2 allows you to host web content in your Windows app. It exposes the globals [CreateCoreWebView2Environment](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) and [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions) from which we can create the two separate environments for the browser's UI and content.
 
@@ -321,7 +312,7 @@ We're setting up a few things here. The [ICoreWebView2Settings](/microsoft-edge/
 
 
 <!-- ------------------------------ -->
-#### Navigating to a webpage
+#### Navigate to web page
 
 You can navigate to a webpage by entering its URI in the address bar. When pressing Enter, the controls WebView will post a web message to the host app so it can navigate the active tab to the specified location. Code below shows how the host Win32 application will handle that message.
 
@@ -485,7 +476,7 @@ The host application side:
 
 
 <!-- ------------------------------ -->
-#### Reloading, stopping navigation
+#### Reloading, stop navigation
 
 We use the `NavigationStarting` event fired by a content WebView to update its associated tab loading state in the controls WebView. Similarly, when a WebView fires the `NavigationCompleted` event, we use that event to instruct the controls WebView to update the tab state. The active tab state in the controls WebView will determine whether to show the reload or the cancel button. Each of those will post a message back to the host application when clicked, so that the WebView for that tab can be reloaded or have its navigation canceled, accordingly.
 

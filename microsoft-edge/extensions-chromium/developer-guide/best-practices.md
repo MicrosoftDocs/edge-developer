@@ -1,22 +1,22 @@
 ---
-title: Best Practices for extensions
-description: Best Practices to implement an extension and list it on the Microsoft Edge Add-ons Store.  
+title: Best practices for extensions
+description: Best Practices to implement an extension and list it at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: extensions
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/20/2023
 ---
-# Best Practices for extensions
+# Best practices for extensions
 
-Follow these Best Practices to implement your extension and list it on the Microsoft Edge Add-ons Store.
+Follow these Best Practices to implement your extension and list it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 
 <!-- ====================================================================== -->
 ## Design a high-quality extension
 
-Build extensions that conform to Microsoft's standards for security, privacy, transparency, and user experience.
+Build an extension that conforms to Microsoft's standards for security, privacy, transparency, and user experience.
 
 **Security**: Make sure that your extension doesn't pose any security threats to users. 
 
@@ -26,4 +26,4 @@ Build extensions that conform to Microsoft's standards for security, privacy, tr
 
 **Store listing**: Make sure that your extension's store listing sets correct user expectations and clearly communicates what the extension does.
 
-We'll continue gathering input about Developer experiences with extensions and updating these Best Practices.
+We'll continue gathering input about Developer experiences with extensions, and updating these Best Practices.

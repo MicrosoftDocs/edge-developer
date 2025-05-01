@@ -4,11 +4,13 @@ description: Getting started guide for using WebView2 for WinForms apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 10/26/2022
 ---
 # Get started with WebView2 in WinForms apps
+
+This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WinForms sample app](../samples/webview2windowsformsbrowser.md).
 
 <!--
 todo: errors experienced with vs2022 by following these instructions:
@@ -168,7 +170,7 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
    ![The 'Add New Item' window, expanded to 'Visual C# Items' > 'Windows Forms', selecting 'Form (Windows Forms)'](./winforms-images/add-new-item-form-windows-forms.png)
 
-   The project now has an additional form, with filename `Form2.cs`, shown in the Form Designer and in Solution Explorer:
+   The project now has an additional form, with file name `Form2.cs`, shown in the Form Designer and in Solution Explorer:
 
    ![The added form, Form2.cs, in the Form Designer and in Solution Explorer](./winforms-images/winforms-added-form2.png)
 

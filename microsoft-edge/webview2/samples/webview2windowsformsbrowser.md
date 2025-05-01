@@ -4,8 +4,8 @@ description: This WebView2 sample demonstrates how to use the WebView2 control a
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2022
 ---
 # WinForms sample app
@@ -16,7 +16,7 @@ This sample, **WebView2WindowsFormsBrowser**, demonstrates how to use the WebVie
 
 *  Sample name: **WebView2WindowsFormsBrowser**
 *  Repo directory: [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser)
-*  Solution file: **WebView2WindowsFormsBrowser.sln**
+*  Solution file: `WebView2WindowsFormsBrowser.sln`
 
 ![WebView2WindowsFormsBrowser app window](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-app-window.png)
 
@@ -34,21 +34,13 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install a preview channel of Microsoft Edge
+## Step 2 - Clone or download the WebView2Samples repo
 
-1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
-
-1. To test the experimental APIs ahead of time and ensure your WebView2 app's forward-compatibility, see [Approaches to making your app use a specific browser channel](../how-to/set-preview-channel.md#approaches-to-making-your-app-use-a-specific-browser-channel) in _Test upcoming APIs and features_. Follow the steps in that section, and then return to this page and continue the steps below.
+1. If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Clone or download the WebView2Samples repo
-
-1. If not done already, clone or download the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
-
-
-<!-- ====================================================================== -->
-## Step 4 - Open .sln in Visual Studio
+## Step 3 - Open .sln in Visual Studio
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
@@ -59,13 +51,13 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
    *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
 <!-- ====================================================================== -->
-## Step 5 - Install workloads if prompted
+## Step 4 - Install workloads if prompted
 
 1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Build and run the project
+## Step 5 - Build and run the project
 
 The **WebView2WindowsFormsBrowser** project is now open in Visual Studio, from doing the above steps.  At the top of Visual Studio, set the build target, as follows:
 
@@ -91,7 +83,7 @@ The **WebView2WindowsFormsBrowser** project is now open in Visual Studio, from d
 
 
 <!-- ====================================================================== -->
-## Step 7 - Install .NET Framework 4.6.2 Developer Pack
+## Step 6 - Install .NET Framework 4.6.2 Developer Pack
 
 If you build the **WebView2WindowsFormsBrowser** project and get error messages about missing .NET Framework 4.6.2 Developer Pack, follow the steps below.  Otherwise, skip to the next major section below.
 
@@ -127,7 +119,7 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
 
 
 <!-- ====================================================================== -->
-## Step 8 - Update or install the WebView2 SDK
+## Step 7 - Update or install the WebView2 SDK
 
 <!-- a checkin comment at repo says "Update projects to use latest WebView2 SDK 1.0.781-prerelease (#74)" -->
 
@@ -138,7 +130,7 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
 
 
 <!-- ====================================================================== -->
-## Step 9 - Build and run the updated project
+## Step 8 - Build and run the updated project
 
 1. If you just now installed .NET Framework 4.6.2 Developer Pack above, close Visual Studio, and then open the solution file in Visual Studio again, from the directory:
 
@@ -172,7 +164,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 10 - Inspect the code
+## Step 9 - Inspect the code
 
 1. In the Visual Studio code editor, inspect the code:
 

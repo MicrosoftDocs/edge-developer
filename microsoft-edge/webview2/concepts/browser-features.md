@@ -4,8 +4,8 @@ description: Feature differences between Microsoft Edge and WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
 ms.date: 03/14/2022
 ---
@@ -45,13 +45,13 @@ The following table displays the WebView2 features that differ from the Microsof
 | Feature | Default state | Configurable | Details |
 | --- | --- | --- | --- |
 | Autofill for Addresses | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
-| Autofill for Passwords | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
+| Autofill for Passwords | Off | Yes | This feature is turned off by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
 | Autofill for Payments | Off | No | This feature is turned off. |
 | Browser Extensions | Off | No | This feature is turned off. |
 | Browser Task Manager | Off | No | This feature is turned off. |
 | Collections | Off | No | This feature is turned off. |
 | Continue-where-I-left-off prompt | Off | No | This feature is turned off. |
-| Downloads | On | Yes | WebView2 provides an API that allows you to customize the download UI to manipulate downloads. For example, you can block, redirect, save, pause, and so on.  For more information, see [Download API](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting). |
+| Downloads | On | Yes | WebView2 provides an API that allows you to customize the download UI to manipulate downloads.  For example, you can block, redirect, save, pause, and so on.  See [Downloads](./overview-features-apis.md#downloads) in _Overview of WebView2 APIs_. |
 | Edge Shopping | Off | No | This feature is turned off. |
 | Family Safety | Off | No | This feature is turned off. |
 | Favorites | Off | No | This feature is turned off. |
@@ -80,7 +80,7 @@ The following WebView2 platform features are currently unavailable:
 |:--- | :--- |
 | Push Notifications | This feature isn't implemented in WebView2. |
 | Web Payment API | This feature is turned off. |
-
+| Periodic Background Sync | Periodic Background Sync events will never trigger. |
 
 <!-- ====================================================================== -->
 ## Blocked internal URLs
@@ -155,7 +155,7 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Browser Task Manager `*` | **Shift+Escape** |
 | Edge Feedback `*` | **Shift+Alt+I** |
 | Mute Tab `*` | **Ctrl+M** |
-| New Incognito Window | **Ctrl+Shift+N** |
+| New InPrivate (Incognito) Window | **Ctrl+Shift+N** |
 | New Tab | **Ctrl+T** |
 | New Window | **Ctrl+N** |
 | Restore Last Closed Tab | **Ctrl+Shift+T** |
@@ -167,7 +167,6 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Home | **Alt+Home**, **Browser Home Key** |
 | Show App Menu | **Alt+E**, **Alt+F** |
 | Show Favorites | **Ctrl+Shift+O** |
-| Show Downloads | **Ctrl+J** |
 | Show History | **Ctrl+H** |
 | Show Reading Mode Bar `*` | **Shift+Alt+R** |
 | Show Collections `*` | **Ctrl+Shift+Y** |
@@ -210,12 +209,13 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Open / Close DevTools | **Ctrl+Shift+I** |
 | Open DevTools Console | **Ctrl+Shift+J** |
 | Open DevTools Inspect | **Ctrl+Shift+C** |
+| Show Downloads | **Ctrl+J** |
 
 
 <!-- ------------------------------ -->
 #### Customizing an individual key
 
-To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event.
+To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed) event.
 
 
 <!-- ====================================================================== -->

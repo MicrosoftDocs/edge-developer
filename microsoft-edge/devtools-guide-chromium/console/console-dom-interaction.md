@@ -4,291 +4,347 @@ description: How to interact with the current webpage in the browser by using th
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 10/18/2023
 ---
 # Interact with the DOM using the Console
 
-The **Console** tool is a great way to interact with the webpage in the browser.<!-- todo: add intro explanation -->  The **Console** is like a script-environment version of the [Inspect tool](../css/inspect.md).<!-- todo: add intro explanation -->
+The **Console** tool is a great way to interact with the webpage in the browser. In DevTools, you usually interact with the DOM by using the **Inspect** tool to select elements, and by using the **Elements** tool to modify the DOM, for example to add or change element attributes or styles.
+
+The **Console** tool can also be used to interact with the DOM by using JavaScript code. For example, you can find elements in the DOM tree and manipulate them by using DOM APIs.
+
+To learn more about the **Inspect** tool, see [Analyze pages using the Inspect tool](../css/inspect.md). To learn more about the **Elements** tool, see [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md).
 
 
 <!-- ====================================================================== -->
-## Read from the DOM
+## Find an element in the DOM tree
 
-To reference the header of the webpage:
+To find an element in the DOM tree from the **Console** tool:
 
-1. Open the DevTools **Console**.  To do this from a webpage, you can press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
+1. Go to the webpage that you want to inspect. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
 
-1. Type or paste the following code into the **Console**, and then press **Enter**:
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
+
+1. Type or paste the following code into the **Console**, and then press **Enter**.
 
    ```javascript
-   document.querySelector('header')
+   document.querySelector('main');
    ```
 
-   ![To get a reference to the header in console, use 'document.querySelector'](./console-dom-interaction-images/console-dom-get-reference.png)
+   The `<main>` element from the DOM tree is displayed in the **Console**:
 
-1. In the **Console**, hover over the resulting HTML `<header>` element, or press **Shift+Tab**.  In the rendered webpage, DevTools highlights the header:
+   ![The Console tool of DevTools, showing the document.querySelector expression, and the resulting main element](./console-dom-interaction-images/get-main-element.png)
 
-   ![DevTools highlights the section you select in the Console](./console-dom-interaction-images/console-dom-highlight-element.png)
+1. In the **Console**, hover over the resulting HTML `<main>` element, or press **Shift+Tab**.  In the rendered webpage, DevTools highlights the corresponding `<main>` element:
+
+   ![The main element, highlighted in the rendered webpage](./console-dom-interaction-images/highlight-on-hover.png)
 
 
 <!-- ====================================================================== -->
-## Manipulate the DOM
+## Change the DOM of the webpage
 
-You can manipulate the webpage from the **Console**, as follows.  In this example, you set a value in the DOM by using the Console, to affect the webpage styling: you add a green border around the header.
+You can make changes to the DOM tree of the webpage from the **Console** tool. In this example, you set the value of a DOM element attribute by using the Console, to affect the element's styling: you add a grey background to the `<h1>` title of the page.
 
-1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The Console opens in DevTools, next to the present webpage.
+1. Go to the webpage that you want to change. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
+
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
 1. Paste the following code into the **Console**:
 
    ```javascript
-   document.querySelector('header').style.border = '2em solid green'
+   document.querySelector("h1").style.backgroundColor = "lightgrey";
    ```
 
-   A green border appears around the header:
+   A grey background appears behind the page title:
 
-   ![Adding a border to an element by using the Console](./console-dom-interaction-images/console-dom-add-border.png)
-
-
-### Get a direct reference an element
-
-Depending on the complexity of the webpage, it can be daunting to find the right element to manipulate.  But you can use the **Inspect** tool to help you.  Suppose you want to manipulate the **Documentation** region within the header of the rendered page:
-
-![Display the element that you inspect on the screen](./console-dom-interaction-images/console-dom-highlight-documentation.png)
+   ![The Console tool, showing the above JavaScript code, and the webpage showing the grey title](./console-dom-interaction-images/set-style.png)
 
 
-To get a direct reference to the element that you want to manipulate:
+#### Get a reference to an element
 
-1. In DevTools, click the **Inspect** tool, and then in the rendered webpage, hover over the element:
+In a complex webpage, it can be hard to find the right element to change.  But you can use the **Inspect** tool to help you.  Suppose you want to change the text of the first link within the **Section 1** element of the rendered page:
 
-   ![To select an element, use the Inspect tool](./console-dom-interaction-images/console-dom-use-inspector-to-get-element.png)
+![The link that you want to change in the page](./console-dom-interaction-images/link-to-change.png)
 
-1. Click the element on the page, and DevTools jumps to the **Elements** tool.
+To get a reference to the link element that you want to change:
 
-1. Click the `...` menu next to the element in the DOM tree:
+1. Go to the webpage that you want to inspect. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
 
-   ![The clicked element appears in the DOM tree of the Elements tool.  Click the overflow menu to get more features](./console-dom-interaction-images/console-dom-overflow-menu-in-elements.png)
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-1. Right-click the element in the DOM tree and then select **Copy** > **Copy JS Path**.
+1. Click the **Inspect** (![Inspect tool icon](./console-dom-interaction-images/inspect-tool-icon.png)) tool, and then in the rendered webpage, hover over a link, such as **Link 1**:
 
-   ![Copy the JavaScript path from an element in the DOM tree of the Elements tool](./console-dom-interaction-images/console-dom-copy-JS-path.png)
+   ![When you hover over a link when using the Inspect tool, the link is highlighted](./console-dom-interaction-images/inspect-link-to-change.png)
 
-   <!-- could be useful to have code listings.  test this:
+1. Click the hovered link on the rendered webpage. DevTools opens the **Elements** tool, with the corresponding element selected:
+
+   ![The Elements tool in DevTools, with the link element selected](./console-dom-interaction-images/link-in-elements-tool.png)
+
+1. Click the `...` button next to the element in the DOM tree, and then select **Copy** > **Copy JS path**:
+
+   ![The Copy JS Path menu item in the Elements tool](./console-dom-interaction-images/copy-js-path-menu.png)
+
    Here's the JS path you copied:
 
    ```javascript
-   document.querySelector("#headerAreaHolder > header > div:nth-child(1) > div.nav-bar-item.is-hidden-tablet > div > button > span")
+   document.querySelector("body > main > section:nth-child(1) > ul > li:nth-child(1) > a")
    ```
 
-   Here's the result after you add text content:
-
-   ```javascript
-   document.querySelector("#headerAreaHolder > header > div:nth-child(1) > div.nav-bar-item.is-hidden-tablet > div > button > span").textContent = "My Playground"
-   ``` -->
+   The above path is a CSS selector that points to the link element you selected by using the **Inspect** tool.
 
 1. In the **Console**, paste the JavaScript path that you copied, but don't press **Enter** yet.
 
-1. Change the text of the link to `My Playground`.  To do that, add `.textContent = "My Playground"` to the JavaScript path that you previously pasted:
+1. Change the text of the link to `Updated link`.  To do that, add `.textContent = "Updated link"` to the JavaScript path that you previously pasted:
 
-   ![Using the Console to change the content of an element](./console-dom-interaction-images/console-dom-change-content.png)
+   ![The Console tool, with the JS path and textContent expression, and the webpage, showing the updated link text](./console-dom-interaction-images/updated-link-text.png)
 
-Use any JavaScript DOM manipulations you want in the **Console**.  To make it more convenient, the **Console** comes with a few helper utility methods.
+Use any DOM APIs you want to change the DOM tree in the **Console**.  To make it more convenient, the **Console** comes with a few helper utility methods.
 
 
 <!-- ====================================================================== -->
-## Helpful Console utility methods
+## Helpful console utility functions
 
-Many convenience methods and shortcuts are available to you as [Console Utilities](utilities.md).  Some of the methods are incredibly powerful and are much more effective than using `console.log()` statements.
-
-
-### The power of the $ functions
-
-The `$` has special powers in **Console**, and you may remember that from jQuery.
-
-*  `$_` stores the result of the last command.  So, if you type `2+2` and press **Enter**, and then type `$_`, the **Console** displays `4`.
-
-*  `$0` to `$4` is a stack of the last inspected elements.  `$0` is always the newest one.  So in the earlier example, you just select the element in the **Inspect** tool and type `$0.textContent = "My Playground"` to get the same effect.
-
-*  `$x()` allows you to select DOM elements using XPATH.
-
-*  `$()` and `$$()` are shorter versions of for `document.querySelector()` and `document.querySelectorAll()`.
+Many convenience methods and shortcuts are available to you as utility functions in the **Console** tool. Some of these utility functions are very useful for interacting with the DOM tree of a webpage, and are described below. To learn more, see [Console tool utility functions and selectors](./utilities.md).
 
 
-### Example: Extracting all links from a page, as a sortable table
+#### Get elements with the $ functions and shortcuts
 
-1. Enter the following code, which retrieves all the links in the webpage, and displays the links as a sortable table to copy and paste (for example, into Excel):
+The `$` character has a special meaning in the **Console** tool:
+
+*  The `$()` and `$$()` functions are shorter versions of the `document.querySelector()` and `document.querySelectorAll()` functions.
+
+*  `$0`, `$1`, `$2`, `$3`, and `$4` are shortcuts to elements that you recently selected in the **Elements** tool. `$0` is always the most recently selected element. So, in the earlier example [Get a reference to an element](#get-a-reference-to-an-element), once you've selected the element by using the **Inspect** tool, you can change its text by using `$0.textContent = "Updated link"` to get the same effect.
+
+*  `$x()` allows you to select DOM elements using [XPath](https://developer.mozilla.org/docs/Web/XPath).
+
+
+###### Get all links from the page
+
+In this example, you use the `$$()` utility function to list all links on the webpage.  You then use that function along with the `filter()` array method to get rid of the links that don't start with `https` (such as the anchor links in the present webpage), in order to filter the list to only include external links.
+
+1. Go to the webpage that you want to get the links from. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
+
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
+
+1. To get the list of all links in the page, enter the following code in the **Console**, and then press **Enter**:
 
    ```javascript
-   console.table($$('a'),['href','text']);
+   $$('a');
    ```
    
+   ![The result of the $$('a') function in the Console, which is an array of <a> elements](./console-dom-interaction-images/list-of-links.png)
+
    `$$('a')` is short for `document.querySelectorAll('a')`.
 
-   ![Get all links in the webpage and display the result as a table](./console-dom-interaction-images/console-dom-get-all-links.png)
+1. Expand the list of links that's logged in the **Console**, and then expand the first link object. The link's properties are displayed:
 
-   However, suppose you don't want to display all the information, but you want to grab it as data and then select only some of the data.
+   ![Expanding the first element in the array, its properties are displayed](./console-dom-interaction-images/link-properties.png)
 
-   The `$$('a')` shortcut helps with that: it selects the anchor links and all of the properties for each anchor link.  But the problem is that you only want the anchor links and the related text, not all the properties of the anchor links.
-
-   ![The $$ shortcut returns far too much information](./console-dom-interaction-images/console-dom-too-much-link-information.png)
-
-   To solve that problem, the `$$` shortcut has an interesting extra feature: instead of returning a pure `NodeList` like `document.querySelectorAll()`, the `$$` shortcut gives you all of the `Array` methods, including `map()`.
-
-1. Use the `map()` method of the `Array` object to reduce the information to what you need:
+1. To reduce the amount of information returned by the `$$()` function, use the `map()` array method. The `map()` method works because the `$$()` function returns an array.
 
    ```javascript
    $$('a').map(a => {
-      return {url: a.href, text: a.innerText}
-   })
+     return {url: a.getAttribute("href"), text: a.innerText}
+   });
    ```
 
-   The above code returns an `Array` of all the links, as objects with `url` and `text` properties.
+   The above code returns an array of all the links, where each link object is mapped to a JavaScript objects with the `url` and `text` properties.
 
-   ![Use map on $$ to filter information down to the bare minimum](./console-dom-interaction-images/console-dom-filter-link-data.png)
+1. Expand a few of the returned link objects to see their properties:
 
-   You aren't done yet; several links are internal links to the webpage or have empty text.
+   ![The list of links on the page, with each link's text and href attribute](./console-dom-interaction-images/mapped-links.png)
 
-1. Use the `filter` method to get rid of the internal links:
+1. To only list external links, use the `filter()` array method to get rid of the links that don't start with `https`:
 
    ```javascript
    $$('a').map(a => {
-      return {text: a.innerText, url: a.href}
+      return {url: a.getAttribute("href"), text: a.innerText}
    }).filter(a => {
-      return a.text !== '' && !a.url.match('learn.microsoft.com')
-   })
+      return a.url.startsWith("https");
+   });
    ```
 
-   ![Get the links that aren't empty and are external](./console-dom-interaction-images/console-dom-filter-out-empty-links.png)
-
-   By manipulating the DOM through issuing statements in the **Console**, you can change these elements in the rendered webpage.
-
-1. For example, enter the following code, which adds a green border around all external links:
-
-   ```javascript
-   $$('a[href^="https://"]').forEach(
-      a => a.style.border = '1px solid green'
-   )
-   ```
-
-   ![To highlight all external links, add a green border around each](./console-dom-interaction-images/console-dom-highlight-links.png)
-
-Instead of writing complex JavaScript to filter results, use the power of CSS selectors.
+   ![The list of external links on the page](./console-dom-interaction-images/external-links.png)
 
 
-### Creating a table
+###### Display DOM elements in a table
 
-To create a table of the `src` and `alt` information for all images on the webpage that aren't inline images:
+In the previous example, you displayed a list of elements from the page in the **Console**. The elements are displayed as a JavaScript array. To make it easier to use the list of elements in the **Console**, you can display them in a sortable table instead, by using the `console.table()` utility function:
 
-1. Open the **Console**.
+1. Go to the webpage that you want to inspect. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
+
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
 1. Paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
-   console.table($$('img:not([src^=data])'), ['src','alt'])
+   console.table($$('img'), ['src','alt'])
    ```
 
-   ![To programmatically select a set of elements, use a complex CSS selector](./console-dom-interaction-images/console-dom-complex-css-selector.png)
+   The list of `<img>` elements on the webpage is displayed in the **Console**, formatted as a table, with each image's `src` and `alt` attributes as columns:
 
-<!-- mystery wiggly line preventer -->
+   ![The console tool, showing the console.table() function and a table listing all images](./console-dom-interaction-images/images-in-table.png)
 
 
-### Example: Getting all page headings and anchor URLs
+###### Get all page headings and anchor URLs
 
-Ready for an even more complex example?  HTML webpages that are generated from Markdown tagging, like the present article, have automatic ID values for each heading, to allow you to deep-link directly to that section of the webpage.  For example, a `# New features` h1 heading in the Markdown source file becomes `<h1 id="new-features">New features</h1>` in the HTML file.
+In this example, you get all the headings on the webpage that have an `id` attribute, and you generate a URL that points to each heading.
 
-To list all of the automatic headings to copy and paste:
+1. Go to the webpage that you want to inspect. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
 
-1. Open the **Console**.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-1. Copy and paste the following code:
+1. Copy and paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
-   let out = '';
-   $$('#main [id]').filter(
-      elm => {return elm.nodeName.startsWith('H')}
-   ).forEach(elm => {
-      out += elm.innerText + "\n" +
-            document.location.href + '#' +
-            elm.id + "\n";
+   let headings = $$('main [id]').filter(el => {
+     return el.nodeName.startsWith('H');
+   }).map(el => {
+     return `${el.innerText}: ${document.location.href}#${el.id}\n`;
    });
-   console.log(out);
+   console.log(headings.join("\n"));
    ```
-    
-   The result is text that contains content for each heading followed by the full URL that points to it.
+   
+   The result is text that contains content for each section heading, followed by the full URL for the section heading:
 
-   ![Getting all the headings and the generated URLs from the webpage](./console-dom-interaction-images/console-dom-get-generated-headings.png)
-
-
-### Clean up with clear and copy
-
-When developing in the **Console**, things can get messy.  It can be difficult to select results to copy and paste.  The following two utility methods help you:
-
-* `copy()` copies whatever you give it to the clipboard.  The `copy()` method is especially useful when you mix it with `$_`, which copies the last result.
-
-* `clear()` clears the **Console**.
+   ![The Console tool, showing the list of all headings on the page, along with their URLs](./console-dom-interaction-images/heading-links.png)
 
 
-### Read and monitor events
+#### Copy information from the Console
 
-Two other interesting utility methods of **Console** deal with event handling:
+In the previous examples, you generated lists of elements and strings of information. It can be useful to copy the generated information from the **Console** and paste it somewhere else.
 
-* `getEventListeners(node)` lists all the event listeners of a node.
+To copy the return value from an expression that you run in the **Console**, use the `copy()` utility function:
 
-* `monitorEvents(node, events)` monitors and logs the events that happen on a node.
+1. Go to the webpage that you want to extract some information from. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
 
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-To list all of the event listeners that are assigned to the first form in the webpage:
-
-1. In DevTools, open the **Console**.
-
-1. Type or paste the following code into the **Console**:
+1. To copy the list of all image URLs on the page, enter the following code in the **Console**, and then press **Enter**:
 
    ```javascript
-   getEventListeners($('form'));
+   copy($$('img').map(img => img.src).join("\n"));
    ```
 
-   ![Get all events listeners for the first form in the webpage](./console-dom-interaction-images/console-dom-get-form-events.png)
+   The `copy()` utility function can take any argument that can be converted into a string and copies it to the clipboard. In this example, the argument is a string that contains all the image URLs on the page, separated by a new line.
 
-When you monitor, you to get a notification in the **Console** every time something changes to the specified elements.  You define the events you want to listen to as a second parameter.  It's important for you to define the events that you want to monitor, otherwise any event happening to the element is reported.
+1. Open a text editor, such as Visual Studio Code, and then paste the copied image URLs into the editor:
+
+   ![The list of image URLs in a text editor](./console-dom-interaction-images/pasted-strings.png)
 
 
-To get a notification in the **Console** every time you scroll, resize the window, or when the user types in the search form:
+#### Clear the Console
 
-1. In DevTools, open the **Console**.
+When running code in the **Console**, you often end up with many input statements and output results that you no longer need to display.  You can clear the **Console** by using the `clear()` utility function.
+
+
+#### List the event listeners that are assigned to an element
+
+To list all event listeners that are assigned to an element, use the `getEventListeners()` utility function:
+
+1. Go to the webpage that you want to inspect. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
+
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
+
+1. Click the **Inspect** tool, and then in the rendered webpage, click one of the images to select it. The **Elements** tool is displayed, and the image element you selected is highlighted in the DOM tree:
+
+   ![The Elements tool, with the image element selected](./console-dom-interaction-images/inspect-image.png)
+
+1. Open the **Console** tool, enter the following code, and then press **Enter**:
+
+   ```javascript
+   getEventListeners($0);
+   ```
+
+   In the above code snippet, `$0` is a shortcut to the currently selected `<img>` element in the **Elements** tool. The `getEventListeners()` utility function returns an object that contains all the event listeners that are assigned to the image.
+
+1. Expand the object, and then expand the only event listener in the list to see the listener's properties. The `listener` property shows the name of the function that's called when the event is triggered (in this example, `showImage`):
+
+   ![The expanded object, showing the listener property](./console-dom-interaction-images/event-listener-properties.png)
+
+
+#### Monitor events triggered on the page
+
+Websites that use JavaScript often react to user events that happen in the browser. It can be difficult to keep track of all the events that are triggered by the browser. The `monitorEvents()` utility function allows you to monitor events that are triggered on the webpage.
+
+
+###### Monitor all events on an element
+
+To start monitoring events:
+
+1. Go to the webpage that you want to monitor. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
+
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
+
+1. To start monitoring the events triggered on an element, for example on one of the `<img>` elements, enter the following code in the **Console**, and then press **Enter**:
+
+   ```javascript
+   monitorEvents(document.querySelector('img'));
+   ```
+
+   The above code monitors all events that are triggered on the first `<img>` element on the page.
+
+1. In the rendered webpage, hover over the image, and move your mouse, or tab to the image with the keyboard. Events such as `mouseover`, `mousemove`, and `focus` get logged to the **Console**:
+
+   ![The Console tool, showing the list of all mouse events that are triggered on the image](./console-dom-interaction-images/monitored-events.png)
+
+When you monitor events, you get logs in the **Console** every time an event is triggered by the browser. This can lead to a lot of noise in the **Console**. You can also monitor specific events on an element.
+
+
+###### Monitor specific events on an element
+
+To start monitoring specific events on an element:
+
+1. Go to the webpage that you want to monitor. For example, open the [DevTools Console tool DOM interactions demo page](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) in a new tab or window.
+
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
+
+1. To start monitoring only the mousedown, mouseup, and click events that are triggered on a the first `<img>` element on the page, enter the following code in the **Console**, and then press **Enter**:
+
+   ```javascript
+   monitorEvents(document.querySelector('img'), ['mousedown', 'mouseup', 'click']);
+   ```
+
+1. In the rendered webpage, click the first image. `mousedown`, `mouseup`, and `click` events get logged to the **Console**:
+
+   ![The Console tool, showing the list of mouse events that are triggered on the image](./console-dom-interaction-images/monitored-click-events.png)
+
+
+###### Monitor events on the Window
+
+To get a notification in the **Console** every time you scroll or resize the window:
 
 1. Paste the following code into the **Console**:
 
    ```javascript
    monitorEvents(window, ['resize', 'scroll']);
-   monitorEvents($0, 'keyup');
    ```
 
-   ![Console displays every scroll event that happens on the Window](./console-dom-interaction-images/console-dom-monitor-events.png)
+1. Scroll the page and resize the browser window. The **Console** logs the events that are triggered:
 
-1. To log any key action on the currently selected element, focus on the search form in the header and press some keys.
+   ![The Console tool, showing the list of resize and scroll events](./console-dom-interaction-images/window-events.png)
 
-   ![Console displays 'keyup' events that occur on the form](./console-dom-interaction-images/console-dom-monitor-key-events.png)
 
-1. To stop logging, remove the monitoring you set, enter the following code into the **Console**:
+###### Stop monitoring events
 
-   ```javascript
-   unmonitorEvents(window, ['resize', 'scroll']);
-   unmonitorEvents($0, 'key');
-   ```
+While monitoring events in the DOM, the **Console** can get noisy. To stop monitoring events, use the `unmonitorEvents()` utility function:
+
+```javascript
+unmonitorEvents(document.querySelector('img'));
+unmonitorEvents(document.querySelector('img'), ['mousedown', 'mouseup', 'click']);
+unmonitorEvents(window, ['resize', 'scroll']);
+```
    
 
 <!-- ====================================================================== -->
-## Reuse DOM manipulation scripts
+## Save DOM interaction scripts as snippets
 
-You may find it useful to manipulate the DOM from the **Console**.  You might soon run into the limitations of the **Console** as a development platform.  The good news is that the [Sources](../sources/index.md) tool in DevTools offers a fully featured development environment.  In the **Sources** tool, you can:
-
-*  Store your scripts for the **Console** as snippets; see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
-
-*  Run the scripts in a webpage by using a keyboard shortcut or the editor.
+If you enter the same DOM interaction code repeatedly in the **Console**, consider instead saving the code as a snippet and then running the snippet. Snippets are saved in the **Sources** tool, and you can run them from there or from the **Command Menu**.  To learn more, see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Log messages in the Console tool](console-log.md)
-* [Run JavaScript in the Console](console-javascript.md)
+* [Log messages in the Console tool](./console-log.md)
+* [Run JavaScript in the Console](./console-javascript.md)

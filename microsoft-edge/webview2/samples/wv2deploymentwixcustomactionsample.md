@@ -4,8 +4,8 @@ description: A WebView2 sample demonstrating how to use a WiX Custom Action to d
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2022
 ---
 # WiX Custom Action to deploy the WebView2 Runtime
@@ -14,7 +14,7 @@ This sample, **WV2DeploymentWiXCustomActionSample**, demonstrates how to use a W
 
 *  Sample name: **WV2DeploymentWiXCustomActionSample**
 *  Repo directory: [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample)
-*  Project file: **WV2DeploymentWiXCustomActionSample.wixproj**
+*  Project file: `WV2DeploymentWiXCustomActionSample.wixproj`
 
 <!-- todo: screenshot representing the success state -->
 
@@ -37,13 +37,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install a preview channel of Microsoft Edge
-
-1. **Preview channel of Microsoft Edge** - If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 3 - Install WiX Toolset build tools
+## Step 2 - Install WiX Toolset build tools
 
 If not done yet, install WiX Toolset:
 
@@ -81,7 +75,7 @@ Also install the WiX Visual Studio component, per the next section.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Install WiX Toolset Visual Studio Extension
+## Step 3 - Install WiX Toolset Visual Studio Extension
 
 If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 
@@ -111,19 +105,19 @@ If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 
 
 <!-- ====================================================================== -->
-## Step 5 - Clone the WebView2Samples repo
+## Step 4 - Clone the WebView2Samples repo
 
-1. If not done already, clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If not done already, clone the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Open the solution in Visual Studio
+## Step 5 - Open the solution in Visual Studio
 
 1. In your local copy of the WebView2Samples repo, open `<repo-location>\WebView2Samples\SampleApps\WebView2Samples.sln` with Visual Studio (not Visual Studio Code).
 
 
 <!-- ====================================================================== -->
-## Step 7 - Edit Product.wxs to configure how to distribute the WebView2 Runtime
+## Step 6 - Edit Product.wxs to configure how to distribute the WebView2 Runtime
 
 1. Open `Product.wxs` under the `WV2DeploymentWiXCustomActionSample` project. 
 
@@ -164,7 +158,7 @@ If you want to package the Evergreen WebView2 Runtime Standalone Installer with 
 
 1. Comment out other `<Binary>` and `<CustomAction>` elements under `Step 4`.
 
-1. If you're targeting non-X64 devices, you may also want to edit the `MicrosoftEdgeWebView2RuntimeInstallerX64` filename to reflect the correct architecture.
+1. If you're targeting non-X64 devices, you may also want to edit the `MicrosoftEdgeWebView2RuntimeInstallerX64` file name to reflect the correct architecture.
 
 1. Under `<!-- Step 5: Config execute sequence of custom action -->`, uncomment the `<Custom Action='InvokeStandalone' ...>` element below `<!-- [Package Standalone Installer] ...-->`.
 
@@ -172,7 +166,7 @@ If you want to package the Evergreen WebView2 Runtime Standalone Installer with 
 
 
 <!-- ====================================================================== -->
-## Step 8 - Put bootstrapper or installer in the folder
+## Step 7 - Put bootstrapper or installer in the folder
 
 If you plan to package either the Bootstrapper (Approach 2) or the Standalone Installer (Approach 3) with the app:
 
@@ -182,7 +176,7 @@ If you plan to package either the Bootstrapper (Approach 2) or the Standalone In
 
 
 <!-- ====================================================================== -->
-## Step 9 - Build the installer project
+## Step 8 - Build the installer project
 
 1. Build the `WV2DeploymentVSInstallerSample` project.
 

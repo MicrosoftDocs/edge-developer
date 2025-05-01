@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 86)
+title: What's New in DevTools (Microsoft Edge 86)
 description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo and Samsung Galaxy Fold, CSS grid overlay improvements, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Jecelyn Yeen
@@ -22,15 +23,15 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 86)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
 
-<!-- ====================================================================== -->
-### Match keyboard shortcuts in DevTools to Visual Studio Code
+<!-- ------------------------------ -->
+#### Match keyboard shortcuts in DevTools to Visual Studio Code
 
 In Microsoft Edge 86, you can match keyboard shortcuts in the DevTools to your shortcuts in [Microsoft Visual Studio Code](https://code.visualstudio.com).
 
@@ -43,10 +44,10 @@ For example, the keyboard shortcut for pausing or continuing running a script in
 Chromium issue [#174309](https://crbug.com/174309)
 
 
-<!-- ====================================================================== -->
-### Emulate Surface Duo and Samsung Galaxy Fold
+<!-- ------------------------------ -->
+#### Emulate Surface Duo and Samsung Galaxy Fold
 
-You can now test the look and feel of your website or app on two new devices: [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) and [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold) in Microsoft Edge.
+You can now test the look and feel of your website or app on two new devices: Surface Duo and [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold) in Microsoft Edge.
 
 To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device](../../../device-mode/index.md):
 
@@ -66,8 +67,8 @@ See also:
 Chromium issue: [#1054281](https://crbug.com/1054281)
 
 
-<!-- ====================================================================== -->
-### CSS grid overlay improvements and new experimental grid features
+<!-- ------------------------------ -->
+#### CSS grid overlay improvements and new experimental grid features
 
 The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool:
 
@@ -76,14 +77,14 @@ The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on add
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**. -->
 
 See also:
-* [CSS grid debugging features](../06/devtools.md#css-grid-debugging-features) in _What's new in DevTools (Microsoft Edge 85)_.
+* [CSS grid debugging features](../06/devtools.md#css-grid-debugging-features) in _What's New in DevTools (Microsoft Edge 85)_.
 * [Inspect CSS Grid in Microsoft Edge DevTools](../../../css/grid.md).
 
 Chromium issue: [#1047356](https://crbug.com/1047356)
 
 
-<!-- ====================================================================== -->
-### Table copied from the Console preserves formatting
+<!-- ------------------------------ -->
+#### Table copied from the Console preserves formatting
 
 In Microsoft Edge 85 or earlier, in the **Console**, the formatting of a copied `console.table` <!--where, what tool?--> was lost.  If you copied the output from the [table](../../../console/api.md#table) Console API, and pasted it, only the text of the table was kept.
 
@@ -111,8 +112,8 @@ See also:
 * [Console features reference](../../../console/reference.md)
 
 
-<!-- ====================================================================== -->
-### Source Order Viewer for easier accessibility testing
+<!-- ------------------------------ -->
+#### Source Order Viewer for easier accessibility testing
 
 The new accessibility helper displays the order in which elements reside in the source file:
 
@@ -128,9 +129,8 @@ See also:
 Chromium issue: [#1094406](https://crbug.com/1094406)
 
 
-<!-- ====================================================================== -->
-<!--
-### DevTools language enhancements
+<!-- ------------------------------ 
+#### DevTools language enhancements
 
 Your feedback and internal discoveries uncovered which text strings used in the Microsoft Edge feedback should remain untranslated or create confusion when translated.
 
@@ -151,8 +151,8 @@ See also:
 -->
 
 
-<!-- ====================================================================== -->
-### Highlight all search results in Elements tool
+<!-- ------------------------------ -->
+#### Highlight all search results in Elements tool
 
 In Microsoft Edge 84 and 85, the first search result in the **Elements** tool did not highlight.  The remaining search results were highlighted correctly.
 
@@ -174,8 +174,8 @@ See also:
 The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
-<!-- ====================================================================== -->
-### New Media tool
+<!-- ------------------------------ -->
+#### New Media tool
 
 DevTools now displays media players information in the [Media](../../../media-panel/index.md) tool.
 
@@ -190,8 +190,8 @@ View live content and inspect potential issues more quickly, such as investigati
 *  Why JavaScript is interacting with the player in an unexpected way.
 
 
-<!-- ====================================================================== -->
-### Capture node screenshots using the Elements tool context menu
+<!-- ------------------------------ -->
+#### Capture node screenshots using the Elements tool context menu
 
 You can now capture node screenshots using the right-click menu in the **Elements** tool.
 
@@ -202,11 +202,11 @@ For example, to take a screenshot of the table of contents, right-click the elem
 Chromium issue: [#1100253](https://crbug.com/1100253)
 
 See also:
-* [Capture node screenshot beyond viewport](../../2021/01/devtools.md#capture-node-screenshot-beyond-viewport) in _What's new in DevTools (Microsoft Edge 89)_
+* [Capture node screenshot beyond viewport](../../2021/01/devtools.md#capture-node-screenshot-beyond-viewport) in _What's New in DevTools (Microsoft Edge 89)_
 
 
-<!-- ====================================================================== -->
-### Issues tool updates
+<!-- ------------------------------ -->
+#### Issues tool updates
 
 The Issues warning bar on the **Console** tool is now replaced with a regular message.
 
@@ -217,7 +217,9 @@ The Issues warning bar on the **Console** tool is now replaced with a regular me
 See also:
 * [Find and fix problems using the Issues tool](../../../issues/index.md)
 
-#### Third-party issues
+
+<!-- ---------- -->
+###### Third-party issues
 
 Third-party issues are now hidden by default in the **Issues** tool.  Select the new **Include third-party issues** checkbox to view the issues.
 
@@ -225,13 +227,13 @@ Third-party issues are now hidden by default in the **Issues** tool.  Select the
 
 Chromium issues: [1096481](https://crbug.com/1096481), [1068116](https://crbug.com/1068116), [1080589](https://crbug.com/1080589)
 
-For more information, see [Filter by origin](../../../issues/index.md#filter-by-origin) in _Find and fix problems using the Issues tool_.
+For more information, see [Filter issues by origin](../../../issues/index.md#filter-issues-by-origin) in _Find and fix problems using the Issues tool_.
 
 
-<!-- ====================================================================== -->
-### Emulate missing local fonts
+<!-- ------------------------------ -->
+#### Emulate missing local fonts
 
-<!-- copied section to regular docs -->
+<!-- copied section to regular docs "Disable local fonts" h4 -->
 
 In the **Rendering** tool, use the new **Disable local fonts** checkbox to emulate missing `local()` sources in `@font-face` rules.
 
@@ -252,15 +254,15 @@ Use **Disable local fonts** to make it easier to:
 
 Chromium issue: [#384968](https://crbug.com/384968)
 
-For more information, see [Disable local fonts](../../../evaluate-performance/reference.md#disable-local-fonts) in _Performance features reference_.
+See also:
+* [Analyze rendering performance with the Rendering tool](../../../performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.<!-- line 864, h2 -->
+   * [Disable local fonts](../../../performance/reference.md#disable-local-fonts) in _Performance features reference_.<!-- line 937, h4 -->
 
-See also [Analyze rendering performance with the Rendering tool](../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_.
 
+<!-- ------------------------------ -->
+#### Emulate inactive users
 
-<!-- ====================================================================== -->
-### Emulate inactive users
-
-The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool from the [Drawer](../../../customize/index.md#drawer).
+The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool in the [Quick View](../../../customize/index.md#quick-view) panel at the bottom of DevTools.
 
 ![Emulate inactive users](./devtools-images/emulate-idle.png)
 
@@ -270,11 +272,10 @@ See also:
 * [Override geolocation with the Sensors tool](../../../device-mode/geolocation.md)
 
 
-<!-- ====================================================================== -->
-### Emulate prefers-reduced-data
+<!-- ------------------------------ -->
+#### Emulate prefers-reduced-data
 
-> [!NOTE]
-> In Microsoft Edge 86, to enable this feature, go to `edge://flags#enable-experimental-web-platform-features` and turn on the **Experimental Web Platform features** flag.  The emulation option is only displayed if the flag is enabled.
+In Microsoft Edge 86, to enable this feature, go to `edge://flags#enable-experimental-web-platform-features` and turn on the **Experimental Web Platform features** flag.  The emulation option is only displayed if the flag is enabled.
 
 The [prefers-reduced-data](https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data) media query detects user content preferences for reduced data.  If selected, the user receives alternate page content that uses less data.
 
@@ -288,8 +289,8 @@ See also:
 * [Emulate dark or light schemes in the rendered page](../../../accessibility/preferred-color-scheme-simulation.md)
 
 
-<!-- ====================================================================== -->
-### Support for new JavaScript features
+<!-- ------------------------------ -->
+#### Support for new JavaScript features
 
 DevTools now has better support for the following JavaScript language features:
 
@@ -305,8 +306,8 @@ See also:
 * [Using the Editor pane to view or edit files](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_
 
 
-<!-- ====================================================================== -->
-### Lighthouse 6.2 in the Lighthouse panel
+<!-- ------------------------------ -->
+#### Lighthouse 6.2 in the Lighthouse panel
 
 The **Lighthouse** tool is now running Lighthouse 6.2.  For a full list of changes, see the [Lighthouse release notes](https://github.com/GoogleChrome/lighthouse/releases/tag/v6.2.0).
 
@@ -315,24 +316,24 @@ Chromium issue: [#772558](https://crbug.com/772558)
 For more information, see [Lighthouse tool](../../../lighthouse/lighthouse-tool.md).
 
 
-<!-- ====================================================================== -->
-### Deprecation of other origins listing in the Service Workers pane
+<!-- ------------------------------ -->
+#### Deprecation of other origins listing in the Service workers pane
 
 The **Application** tool now provides a link from the **Service workers** pane to view the full list of service workers from other origins.  To access the list of service workers without opening DevTools, go to `edge://service-worker-internals/?devtools`.
 
-Previously DevTools displayed a list nested under the **Application** tool > **Service workers** pane.
+Previously DevTools displayed a list nested under the **Application** tool > **Service Workers** pane.<!-- keeping old W to match png -->
 
 ![Link to other origins](./devtools-images/sw-other-origins.png)
 
 Chromium issue: [#807440](https://crbug.com/807440)
 
 See also:
-* [Service Worker improvements](../../../service-workers/index.md)
+* [Service worker improvements](../../../service-workers/index.md)
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-### Show coverage summary for filtered items
+<!-- ------------------------------ -->
+#### Show coverage summary for filtered items
 
 DevTools now recalculates and displays a summary of coverage information dynamically.  The dynamic display is triggered when filters are applied in the [Coverage](../../../coverage/index.md) tool.  Previously, the **Coverage** tool always displayed a summary of all coverage information.
 
@@ -347,8 +348,8 @@ After CSS filtering is applied, the Coverage summary shows `26.8 kB of 408 kB (7
 Chromium issue: [#1061385](https://crbug.com/1090802)
 
 
-<!-- ====================================================================== -->
-### New frame details view in Application panel
+<!-- ------------------------------ -->
+#### New frame details view in Application panel
 
 In the **Application** tool, there's now a **Frames** section that provides a detailed view for each frame.  To access the detailed view, click a frame under the **Frames** menu in the **Application** tool.
 
@@ -360,8 +361,8 @@ See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-#### Frame details for opened windows
+<!-- ---------- -->
+###### Frame details for opened windows
 
 Open windows and pop-up windows now display under the frame tree as well.  The detailed view of the opened windows includes additional security information.
 
@@ -373,8 +374,8 @@ See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-#### Security and isolation information
+<!-- ---------- -->
+###### Security and isolation information
 
 Secure context, [Cross-Origin-Embedder-Policy (COEP)](https://web.dev/coop-coep), and [Cross-Origin-Opener-Policy (COOP)](https://web.dev/coop-coep) are now displayed in the frame details.
 
@@ -389,16 +390,16 @@ See also:
 * [Understand security issues using the Security tool](../../../security/index.md)
 
 
-<!-- ====================================================================== -->
-### Elements and Network panel updates
+<!-- ------------------------------ -->
+#### Elements and Network panel updates
 
 See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 * [Network features reference](../../../network/reference.md)
 
 
-<!-- ====================================================================== -->
-#### Accessible color suggestion in the Styles pane
+<!-- ---------- -->
+###### Accessible color suggestion in the Styles pane
 
 DevTools now provides color suggestions for low color contrast text.
 
@@ -413,8 +414,8 @@ See also:
 * [Test text-color contrast using the Color Picker](../../../accessibility/color-picker.md)
 
 
-<!-- ====================================================================== -->
-#### Reinstate Properties pane in the Elements panel
+<!-- ---------- -->
+###### Reinstate Properties pane in the Elements panel
 
 In the **Elements** tool, the **Properties** pane is back.  The **Properties** pane was [deprecated in Microsoft Edge 84](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel).  The Microsoft Edge DevTools team and the Chrome DevTools team are planning improvements for inspecting properties of elements.
 
@@ -426,9 +427,8 @@ See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
-<!-- ====================================================================== -->
-<!--
-#### Human-readable X-Client-Data header values in the Network panel
+<!-- ---------- 
+###### Human-readable X-Client-Data header values in the Network panel
 
 When inspecting a network resource in the Network panel, DevTools now formats any `X-Client-Data` header values in **Headers** pane as code.
 
@@ -443,8 +443,8 @@ See also:
 -->
 
 
-<!-- ====================================================================== -->
-#### Autocomplete custom fonts in the Styles pane
+<!-- ---------- -->
+###### Autocomplete custom fonts in the Styles pane
 
 Imported font faces are now added to the list of CSS autocompletion when editing the `font-family` property in the **Styles** pane.
 
@@ -459,8 +459,8 @@ See also:
 * [CSS features reference](../../../css/reference.md)
 
 
-<!-- ====================================================================== -->
-#### Consistently display resource type in Network panel
+<!-- ---------- -->
+###### Consistently display resource type in Network panel
 
 In the **Network** tool, DevTools now consistently displays the same resource type as the original network request.  When redirection (HTTP status code 302) happens, DevTools appends **/ Redirect** to the value in the **Type** column.
 
@@ -474,8 +474,8 @@ See also:
 * [Network features reference](../../../network/reference.md)
 
 
-<!-- ====================================================================== -->
-#### Clear buttons in the Elements and Network tools
+<!-- ---------- -->
+###### Clear buttons in the Elements and Network tools
 
 The following text boxes now have **Clear** buttons:
 
@@ -502,7 +502,14 @@ See also:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-86) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-86) and is authored by Jecelyn Yeen.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

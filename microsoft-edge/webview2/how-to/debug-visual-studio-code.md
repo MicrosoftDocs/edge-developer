@@ -4,9 +4,9 @@ description: How to debug WebView2 apps with Microsoft Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-ms.date: 02/11/2022
+ms.service: microsoft-edge
+ms.subservice: webview
+ms.date: 03/25/2025
 ---
 # Debug WebView2 apps with Visual Studio Code
 
@@ -17,9 +17,9 @@ Visual Studio Code has a built-in debugger for browser debugging.  See [Browser 
 <!-- ====================================================================== -->
 ## Create a launch.json file
 
-To debug your code, your project is required to have a `launch.json` file.  A `launch.json` file is a debugger configuration file to configure and customize the Visual Studio Code debugger. One of the properties that's needed to configure the debugger is the `request` property. There are two `request` types, `launch` and `attach`.
+To debug your code, your project must have a `launch.json` file.  A `launch.json` file is a debugger configuration file to configure and customize the Visual Studio Code debugger.  One of the properties that's needed to configure the debugger is the `request` property.  There are two `request` types: `launch` and `attach`.
 
-The following code demonstrates launching the app from Visual Studio Code (rather than attaching the debugger to a running instance of the app). To do this, the app must have been built previously. If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project and paste the following code into it:
+The following code demonstrates launching the app from Visual Studio Code (rather than attaching the debugger to a running instance of the app).  To do this, the app must have been built previously.  If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project, and paste the following code into it:
 
 ```json
 "name": "Hello debug world",
@@ -28,18 +28,27 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "request": "launch",
 "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
 "env": {
-   // Customize for your app location if needed
+   // The following variable is needed when the "runtimeExecutable" property is set.
+   // The port number below must match the value of the "port" property above.
+   "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS": "--remote-debugging-port=9222" 
+   // Customize for your app location.
    "Path": "%path%;e:/path/to/your/app/location; "
 },
 "useWebView": true,
-// The following two lines set up source path mapping, where `url` is the start page
-// of your app, and `webRoot` is the top level directory with all your code files.
+// The following two lines set up source path mapping, where "url" is the start page
+// of your app, and "webRoot" is the top-level directory containing all your code files.
 "url": "file:///${workspaceFolder}/path/to/your/toplevel/foo.html",
 "webRoot": "${workspaceFolder}/path/to/your/assets"
 ```
 
 
-<!-- ------------------------------ -->
+<!-- ---------------------------------- -->
+#### Using a registry value
+
+Instead of setting the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable, you can add a new registry value named `<myApp.exe>` with data `--remote-debugging-port=9222` to the registry under registry key `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port.  For more information, see [WewbView2 browser flags](../concepts/webview-features-flags.md).
+
+
+<!-- ---------------------------------- -->
 #### Command-line URL parameter passed in
 
 Visual Studio Code source path mapping now requires an URL, so your app now receives a `url` command-line parameter when it starts.  You can safely ignore the `url` parameter, if needed.
@@ -54,7 +63,7 @@ Visual Studio Code source path mapping now requires an URL, so your app now rece
 
 1. On the **Run** tab, select the launch configuration from the dropdown menu.
 
-1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown:
+1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown list:
 
    ![The Run tab in Visual Studio Code](./debug-visual-studio-code-images/run-vscode.png)
 
@@ -87,7 +96,7 @@ Open `launch.json` and complete the following actions to use targeted WebView2 d
 "urlFilter": "file://C:/path/to/my/index.ts",
 ```
 
-When debugging your app, you might need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
+When debugging your app, you might need to step through the code from the beginning of the rendering process.  If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
 
 
 <!-- ------------------------------ -->
@@ -106,35 +115,47 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "type": "msedge",
 "port": 9222,
 "request": "attach",
-"runtimeExecutable": "C:/path/to/your/webview2/app.exe",
+"runtimeExecutable": "C:/path/to/your/webview2/myApp.exe",
 "env": {
    "Path": "%path%;e:/path/to/your/build/location; "
-},
-"useWebView": true
+}
 ```
 
 Your WebView2 control must open the Chrome Developer Protocol (CDP) port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a CDP port open, before starting the debugger.
 
-You will also need to add a new REGKEY `*--remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` so that the debugger can find the proper port. To add this registry key:
+You also need to add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` under `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port.  To add this registry key:
 
-1. Open the Registry Editor by pressing the **Windows logo key** and then searching for **registry editor**. Open the **Registry Editor** application, and then select **Yes** to allow editing.
+1. Press the **Windows logo key** and then search for **registry editor**.  Open the **Registry Editor** app, and then click **Yes** to allow editing.
 
-1. Set the registry key `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` equal to `--remote-debugging-port=9222`.
+1. In the folder tree on the left, try to expand `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
 
-   To do this, in the editor, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments` by clicking on each subfolder under the path.
+1. If the `\Edge\WebView2\AdditionalBrowserArguments` part of that path doesn't exist, create those three nested subfolders, as follows:
 
-   If this path doesn't exist, navigate to `HKEY_CURRENT_USER\Software\Policies\Microsoft` in the editor, right-click the `Microsoft` folder, select **New**, and then select **Key**.  Enter `Edge` for the name of the new key.  Continue to do this for each subfolder until you have the full path: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
+   1. To create the `\Edge` subfolder: In the folder tree, right-click the `HKEY_CURRENT_USER\Software\Policies\Microsoft` folder, hover over **New**, and then select **Key**.  A folder is added as a child of the `Microsoft` folder, initially named `New Key #1`.  Right-click the `New Key #1` folder, and then select **Rename**.  Enter `Edge` for the name of the new key.
 
-1. Right-click the `AdditionalBrowserArguments` folder, select **New**, and then select **String Value**.
-Rename `New Value #1` to `*`.
+   1. Create the `\WebView2` subfolder, as in the previous step.
 
-1. Right click the **\*** value, and then select **Modify**.  Set the `Value Data` equal to `--remote-debugging-port=9222`.  Verify that the edit window matches the following:
+   1. Create the `\AdditionalBrowserArguments` subfolder, as in the previous step.
 
-   ![Set Registry Key](./debug-visual-studio-code-images/set-debugging-port.png)
+      The tree is now expanded to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`.
 
-1. Click **OK**, and then verify that the registry key is set in the editor and matches the following:
+1. Right-click the `AdditionalBrowserArguments` folder, hover over **New**, and then select **String Value**.  In the **Name** column, right-click `New Value #1`, select **Rename**, and then enter the file name of your app executable, such as `myApp.exe`.
 
-   ![Registry Key](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
+1. In the **Name** column, right-click your executable file name, such as `myApp.exe`, and then select **Modify**.  The **Edit String** dialog opens.
+
+1. In the **Value data** text box, enter `--remote-debugging-port=9222`:
+
+   ![The "Edit String" dialog, to set the registry key](./debug-visual-studio-code-images/set-debugging-port.png)
+
+1. Click the **OK** button, and then verify that the registry key matches the following (with the file name of your `.exe` file in the **Name** column):
+
+   ![The resulting registry key in the Registry Editor](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
+
+
+<!-- ---------------------------------- -->
+#### Using an environment variable
+
+Instead of adding the above registry key, you can set the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable to `--remote-debugging-port=9222`.  Make sure that your application is started after the environment variable is set, and make sure that your application inherits the environment variable.  For more information, see [WewbView2 browser flags](../concepts/webview-features-flags.md).
 
 
 <!-- ====================================================================== -->
@@ -165,7 +186,7 @@ Saving debug output to a log file:
 ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
 ```
 
-Visual Studio Code Debug Output with verbose tracing turned on:
+Visual Studio Code output in the **DEBUG CONSOLE** pane, with verbose tracing turned on:
 
 ![Visual Studio Code Debug Output with verbose tracing turned on](./debug-visual-studio-code-images/verbose.png)
 
@@ -210,6 +231,24 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 1. Click the **Start Debugging** button to attach to the process and begin debugging.
 
    ![Run and Debug](./debug-visual-studio-code-images/attach-uwp.png)
+
+
+<!-- ====================================================================== -->
+## Source maps with the `WebResourceRequested` event or virtual host name mapping
+
+Source maps are needed to debug the source code of compiled content, including:
+* Transpiled JavaScript, such as TypeScript or minified JavaScript.
+* Compiled CSS, such as SASS or SCSS.
+
+WebView2 doesn't load source maps that are referenced by content which was loaded by using either approach:
+
+* The `WebResourceRequested` event.  See:
+   * [Loading local content by handling the `WebResourceRequested` event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event) in _Using local content in WebView2 apps_.
+   * [Source maps with the `WebResourceRequested` event](../concepts/working-with-local-content.md#source-maps-with-the-webresourcerequested-event) in _Using local content in WebView2 apps_.
+
+* Virtual host name mapping.  See:
+   * [Loading local content by using virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping) in _Using local content in WebView2 apps_.
+   * [Source maps with virtual host name mapping](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping) in _Using local content in WebView2 apps_.
 
 
 <!-- ====================================================================== -->

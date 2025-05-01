@@ -4,7 +4,8 @@ description: Open the Network conditions tool, disable 'Select automatically', a
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 07/19/2021
 ---
 <!-- Copyright Kayce Basques
@@ -30,6 +31,8 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
     
 1. Type `network conditions`, select **Show Network conditions**, and then press **Enter** to open the **Network conditions** tool.
 
+   ![Network Conditions from Command Menu](./override-user-agent-images/device-mode-console-command-menu-network-conditions.png)
+
 1. In the **User agent** section, clear the **Use browser default** checkbox.
 
    ![Clearing the 'Use browser default' checkbox](./override-user-agent-images/clear-use-browser-default-checkbox.png)
@@ -48,7 +51,7 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

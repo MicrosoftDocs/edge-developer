@@ -4,8 +4,8 @@ description: How to manage user data folders in a WebView2 host app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 08/31/2022
 ---
 # Manage user data folders
@@ -78,16 +78,12 @@ The UDF is created on startup of the WebView2 host app, if the UDF doesn't exist
 <!-- ====================================================================== -->
 ## How many UDFs are created?
 
-Each instance of a WebView2 control is associated with a user data folder (UDF).
+Each instance of a WebView2 control is associated with a WebView2 session.
 
-Each WebView2 session must have a UDF.  There's only 1 active UDF per WebView2 session.
+* Each WebView2 session has exactly one UDF.
+* A UDF can only have at most one WebView2 session at a time.
 
-There is at least one UDF per app WebView2 session.  It's possible for your host app to overlap them, by specifying a custom UDF location.
-Or, you can have one UDF per machine.  This depends on how your host app configs the UDF.
-
-A UDF can be either per user, if the app was installed per-user.
-If the host app is installed per-user, each UDF is unique to a user, if not otherwise specified.
-
+A WebView2 control shares its WebView2 session with any other WebView2 control that uses the same UDF. This is true whether the WebView2 controls are in the same host app or different host apps. However, a UDF may only be shared among host apps that are in the same logon session (more specifically, only one HDESKTOP). See [Process model for WebView2 apps](../concepts/process-model.md).
 
 <!-- ====================================================================== -->
 ## How to move the UDF
@@ -96,7 +92,9 @@ To move a user data folder (UDF):
 
 1. Shut down all WebView2 sessions.
 
-1. Start a new WebView2 host app session, specifying a new custom UDF location.
+1. Move the contents of the UDF to the new custom UDF location.
+
+1. Start a new WebView2 host app session, specifying the new custom UDF location.
 
 
 <!-- ====================================================================== -->
@@ -113,7 +111,7 @@ The default user data folder (UDF) location varies per platform.
 <!--
 **What is the default UDF location?**
 -->
-On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The filename of the UDF is the executable (`exe`) path of your app + `.WebView2`.
+On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The file name of the UDF is the executable (`exe`) path of your app + `.WebView2`.
 
 For example, if you ran `D:\WebView2App\WebView2.exe`, a UDF folder would be created: `D:\WebView2App\WebView2.exe.WebView2\`.  As another example: `WebView2APISample.exe.WebView2\`.
 
@@ -136,7 +134,7 @@ Win32 MSIX packaging is a standalone `.exe`.
 <!--
 **What is the default UDF location?**
 -->
-On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The filename of the UDF is the executable (`exe`) path of your app + `.WebView2`.
+On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The file name of the UDF is the executable (`exe`) path of your app + `.WebView2`.
 
 For example, if you ran `D:\WebView2App\WebView2.exe`, a UDF folder would be created: `D:\WebView2App\WebView2.exe.WebView2\`.  As another example: `WebView2APISample.exe.WebView2\`.
 
@@ -434,7 +432,7 @@ After creation of the session and UDF, browser data from your WebView2 control i
 <!-- ====================================================================== -->
 ## Retrieving the UDF location
 
-To find out what the user data folder (UDF) location was set to, use the `UserDataFolder` property.  This read-only property returns the UDF location for the WebView2 app.
+To find out what the user data folder (UDF) location was set to, use the `CoreWebView2Environment.UserDataFolder` property.  This read-only property returns the UDF location for the WebView2 session.
 
 Reasons you might want to read the UDF location:
 
@@ -549,7 +547,7 @@ private void OnGetUDFClick(object sender, RoutedEventArgs e)
 <!-- ====================================================================== -->
 ## Clearing space in the UDF
 
-Instead of deleting the user data folder (UDF), clear browsing data from the UDF.  For example, clear user data and history when a user signs out.
+Instead of deleting the entire user data folder (UDF), you can use WebView2 APIs to clear specific browsing data from the UDF.  For example, you can clear user data and history when a user signs out of your app.
 
 See [Clear browsing data from the user data folder](clear-browsing-data.md).
 
@@ -649,7 +647,7 @@ Your host app or the uninstaller can delete the user data folder (UDF).  You mig
 
 To delete a user data folder (UDF), you must first end the WebView2 session.  You cannot delete a UDF if the WebView2 session is currently active.
 
-<!-- write a separate article about writing a WebView2 uninstaller -->
+<!-- todo: write a separate article about writing a WebView2 uninstaller -->
 
 
 <!-- ------------------------------ -->

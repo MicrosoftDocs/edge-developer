@@ -1,10 +1,11 @@
 ---
-title: Declare API permissions in extension manifests
+title: Declare API permissions in the manifest
 description: Learn how to declare permissions for APIs in your manifest.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 06/23/2023
 ---
 <!-- Copyright A. W. Fuchs
@@ -20,7 +21,7 @@ ms.date: 06/23/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Declare API permissions in extension manifests
+# Declare API permissions in the manifest
 
 To use most of the `chrome.*` APIs, your extension must declare its intent in the `permissions` fields of the manifest.  An extension can declare permissions using a permission string from the table that follows, or use a pattern to match similar strings.  Permissions help to constrain your extension if it gets compromised by malware.  Some permissions are displayed to users for their consent before installation of the extension, or at runtime, as needed; these are Permission Warnings.
 
@@ -73,7 +74,7 @@ The following table lists the currently available permission strings to use in y
 |:--- |:--- |
 | `activeTab` | Requests that the extension is granted permissions according to the `activeTab` specification. |
 | `alarms` | Gives your extension access to the `chrome.alarms` API. |
-| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions may have a longer life. <br/>When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into the user's computer, and before the user launches Microsoft Edge.  The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge. <br/>**Note:** Disabled extensions are treated as if they aren't installed. <br/>You should use the `background` permission with [background scripts](https://developer.chrome.com/docs/extensions/mv3/background_pages/).|
+| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions may have a longer life. <br/>When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into the user's computer, and before the user launches Microsoft Edge.  The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge. <br/>Disabled extensions are treated as if they aren't installed. <br/>You should use the `background` permission with [background scripts](https://developer.chrome.com/docs/extensions/mv3/background_pages/).|
 | `bookmarks` | Gives your extension access to the `chrome.bookmarks` API. |
 | `browsingData` | Gives your extension access to the `chrome.browsingData` API. |
 | `certificateProvider` | Gives your extension access to the `chrome.certificateProvider` API. |
@@ -119,7 +120,7 @@ The following table lists the currently available permission strings to use in y
 | `scripting` | Gives your extension access to the `chrome.scripting` API. |
 | `search` | Gives your extension access to the `chrome.search` API. |
 | `sessions` | Gives your extension access to the `chrome.sessions` API. |
-| `sidePanel` | Gives your extension access to the `chrome.sidePanel` API.  See [Extensions in the Microsoft Edge sidebar](../developer-guide/sidebar.md). |
+| `sidePanel` | Gives your extension access to the `chrome.sidePanel` API.  See [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md). |
 | `signedInDevices` | Gives your extension access to the `chrome.signedInDevices` API. |
 | `storage` | Gives your extension access to the `chrome.storage` API. |
 | `system.cpu` | Gives your extension access to the `chrome.system.cpu` API. |
@@ -143,7 +144,7 @@ The following table lists the currently available permission strings to use in y
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/).
+> The original page is found [here](https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions).
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

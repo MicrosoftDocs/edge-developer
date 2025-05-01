@@ -4,8 +4,9 @@ description: Check that webpages are usable by people with color blindness using
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 06/07/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 10/17/2023
 ---
 # Verify that a page is usable by people with color blindness
 
@@ -23,21 +24,20 @@ But you can't expect all of your users to experience these colors as intended.  
 
 To check whether a webpage is usable by people with color blindness:
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
+1. Open the webpage in a new window or tab, such as the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.  By default, the **Quick View** panel is open at the bottom of DevTools.
 
-1. Press **Esc** to open the Drawer at the bottom of DevTools.  Click the **+** icon at the top of the Drawer to see the list of tools, and then select **Rendering**.
+1. If the **Quick View** panel isn't open already, press **Esc** to open the **Quick View** panel (when focus is on DevTools).  In the **Quick View** panel, click the **More tools** (**+**) button, and then select the **Rendering** tool.
 
-1. In the **Emulate vision deficiencies** dropdown list, select **Protanopia**.  _Protanopia_ is reduced sensitivity to red light, making it hard to differentiate green, red, and yellow.
+1. Scroll down to the **Emulate vision deficiencies** dropdown list, and then select **Protanopia (no red)**.  _Protanopia_ is reduced sensitivity to red light, making it hard to differentiate green, red, and yellow:
 
    ![Showing the document as someone with protanopia would see it](./test-color-blindness-images/a11y-testing-simulating-protanopia.png)
 
-1. In the **Rendering** tool, below **Emulate vision deficiencies**, select **No emulation** to remove the simulation.
+1. To remove the simulation, in the **Emulate vision deficiencies** dropdown list, select **No emulation**.
 
 
 <!-- ====================================================================== -->
 ## See also
 
 *  [Emulate vision deficiencies](emulate-vision-deficiencies.md) - Defines the items in the **Emulate vision deficiencies** dropdown list, including Protanopia, Deuteranopia, Tritanopia, and Achromatopsia.
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

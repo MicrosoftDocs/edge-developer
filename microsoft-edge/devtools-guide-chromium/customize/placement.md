@@ -4,8 +4,9 @@ description: How to move Microsoft Edge DevTools to the bottom or left of the br
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 02/13/2022
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/17/2023
 ---
 # Change DevTools placement (Undock, Dock to bottom, Dock to left)
 
@@ -13,13 +14,13 @@ You can change where DevTools is docked in the browser.  By default, Microsoft E
 
 To change where DevTools is placed within the browser window:
 
-*  Click the **Customize and control DevTools** (![Customize and control DevTools icon](./placement-images/customize-devtools-icon-light-theme.png)) menu button, and then in the **Dock side** section, select a layout option:
+*  Click the **Customize and control DevTools** (![Customize and control DevTools icon](./placement-images/customize-icon.png)) menu button, and then in the **Dock location** section, select a layout option:
    *  **Undock into separate window** (![The 'Undock into separate window' icon](./placement-images/undock-into-separate-window-icon.png))
    *  **Dock to left** (![The 'Dock to left' icon](./placement-images/dock-to-left-icon.png))
    *  **Dock to bottom** (![The 'Dock to bottom' icon](./placement-images/dock-to-bottom-icon.png))
    *  **Dock to right** (![The 'Dock to right' icon](./placement-images/dock-to-right-icon.png))
 
-![the Dock side menu in DevTools](./placement-images/devtools-intro-docking-menu.png)
+![The Dock location menu in DevTools](./placement-images/docking-menu.png)
 
 **Dock to left** or **Dock to right** keeps DevTools side-by-side with your webpage, and is excellent when you [Emulate mobile devices (Device Emulation)](../device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
 
@@ -29,14 +30,11 @@ To change where DevTools is placed within the browser window:
 
 Undock DevTools into its own, separate window, when you want to work with several monitors, or if you need to work on a full-screen app and want a lot of space for the DevTools UI.  The following image shows DevTools undocked into its own, dedicated window:
 
-![DevTools undocked into a separate window](./placement-images/devtools-intro-docking-own-window.png)
+![DevTools undocked into a separate window](./placement-images/docking-own-window.png)
 
-Since WebTools now has its own dedicated window, the WebPage that's being designed now occupies an entire browser window:
+Since DevTools now has its own dedicated window, the page that's being designed now occupies an entire browser window:
 
-![WebPage that's under design, now separate from the DevTools window, which is undocked from the browser's webpage window](./placement-images/browser-webpage-window-devtools-undocked.png)
-
-
-See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
+![WebPage that's under design, now separate from the DevTools window, which is undocked from the browser's webpage window](./placement-images/full-browser-webpage.png)
 
 
 <!-- ====================================================================== -->
@@ -44,7 +42,7 @@ See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](plac
 
 The following image shows DevTools docked in the left side of the browser window:
 
-![DevTools docked to the left](./placement-images/devtools-intro-docking-left.png)
+![DevTools docked to the left](./placement-images/docking-left.png)
 
 
 <!-- ====================================================================== -->
@@ -52,7 +50,7 @@ The following image shows DevTools docked in the left side of the browser window
 
 **Dock to bottom** helps you when you don't have enough horizontal display space, or you want to debug long text in the DOM or **Console**.  The following image shows DevTools in the bottom of the browser window:
 
-![DevTools docked to the bottom](./placement-images/devtools-intro-docking-bottom.png)
+![DevTools docked to the bottom](./placement-images/docking-bottom.png)
 
 
 <!-- ====================================================================== -->
@@ -60,13 +58,13 @@ The following image shows DevTools docked in the left side of the browser window
 
 The following image shows DevTools in the right side the browser window, which is the default location:
 
-![DevTools docked to the right](./placement-images/devtools-intro-docking-right.png)
+![DevTools docked to the right](./placement-images/docking-right.png)
 
 
 <!-- ====================================================================== -->
 ## Change where DevTools is docked by using the Command Menu
 
-1. Open the Command Menu.  To do this, click the **Customize and control DevTools** (![Customize and control DevTools icon](./placement-images/customize-devtools-icon-light-theme.png)) menu button, and then click **Run command**.  Or, press **Shift+Ctrl+P** on Windows/Linux or **Command+Shift+P** on macOS.
+1. Open the **Command Menu**.  To do this, click the **Customize and control DevTools** (![Customize and control DevTools icon](./placement-images/customize-icon.png)) menu button, and then click **Run command**.  Or, press **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS).
 
 1. Type **dock**, and then select a dock command:
 

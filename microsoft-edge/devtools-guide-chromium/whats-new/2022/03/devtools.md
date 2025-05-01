@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 99)
+title: What's New in DevTools (Microsoft Edge 99)
 description: Host source maps on Azure DevOps Symbol Server to debug your original source code securely.  Use source maps to unminify performance profiles.  DevTools extension now for Microsoft Visual Studio.  3D View tool replaces Layers tool.  Improved accessibility in Network Console and 3D View tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 03/09/2022
 ---
 # What's New in DevTools (Microsoft Edge 99)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 99
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 99"](./devtools-images/devtools-whatsnew-99.png)](https://www.youtube.com/watch?v=Z5-tEE_cNTo)
 
 
 <!-- ====================================================================== -->
@@ -89,7 +96,7 @@ See also:
 <!-- Title: The Performance tool can now display unminified function names in the flame chart -->
 <!-- Subtitle: Use the new Unminify button in the Performance tool to download an unminified version of the performance profile you recorded. -->
 
-**Update:** In Microsoft Edge 111, this feature has been removed, because the **Performance** tool now automatically provides the original file and function names while profiling production code, as long as sourcemaps are hosted on Azure Artifacts Symbol Server.  See [Performance tool unminifies file and function names when profiling production code](../../2023/03/devtools-111.md#performance-tool-unminifies-file-and-function-names-when-profiling-production-code) in _What's new in DevTools (Microsoft Edge 111)_.
+**Update:** In Microsoft Edge 111, this feature has been removed, because the **Performance** tool now automatically provides the original file and function names while profiling production code, as long as sourcemaps are hosted on Azure Artifacts Symbol Server.  See [Performance tool unminifies file and function names when profiling production code](../../2023/03/devtools-111.md#performance-tool-unminifies-file-and-function-names-when-profiling-production-code) in _What's New in DevTools (Microsoft Edge 111)_.
 
 
 #### Deprecated What's New entry
@@ -113,7 +120,7 @@ After clicking **Unminify** (![Unminify icon](./devtools-images/unminify-icon.pn
 
 See also:
 * [Unminifying function names in DevTools performance profiles](https://blogs.windows.com/msedgedev/2022/02/03/unminifying-function-names-in-devtools-performance-profiles/) at the Microsoft Edge Blog.
-* [Display original function names in performance profiles](../../../evaluate-performance/unminify.md).
+* [Display original function names in performance profiles](../../../performance/unminify.md).
 
 
 <!-- ====================================================================== -->
@@ -170,7 +177,7 @@ Microsoft Edge version 99 also includes the following updates from the Chromium 
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 99)](https://developer.chrome.com/blog/new-in-devtools-99) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 99)](https://developer.chrome.com/blog/new-in-devtools-99) and is authored by Jecelyn Yeen.
 
 
 <!-- ====================================================================== -->
@@ -178,3 +185,10 @@ Microsoft Edge version 99 also includes the following updates from the Chromium 
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

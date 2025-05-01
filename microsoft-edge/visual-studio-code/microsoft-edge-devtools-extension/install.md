@@ -4,7 +4,7 @@ description: Installing the Microsoft Edge Developer Tools extension for Visual 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Installing the DevTools extension for Visual Studio Code
@@ -43,7 +43,7 @@ Install the Microsoft Edge DevTools extension for Visual Studio Code, as follows
 
 1. Open Visual Studio Code.
 
-1. In the Activity Bar on the left, click the **Extensions** (![Extensions icon](./install-images/extensions-icon.png)) button.  Or, press **Ctrl+Shift+X** on Windows/Linux or **Command+Shift+X** on macOS.  The **Extensions** Marketplace pane opens.
+1. In the **Activity Bar** on the left, click the **Extensions** (![Extensions icon](./install-images/extensions-icon.png)) button.  Or, press **Ctrl+Shift+X** on Windows/Linux or **Command+Shift+X** on macOS.  The **Extensions** Marketplace pane opens.
 
 1. In the **Search Extensions in Marketplace** text box, enter **Microsoft Edge Tools for VS Code**.
 
@@ -65,22 +65,24 @@ The DevTools extension shows a popup suggestion to install Node.js and npm.  The
 
 1. Install Node.js and npm from [Node.js](https://nodejs.org) > Downloads > LTS (long-term stable) (or, Current).
 
-   On Windows, the .msi file is downloaded, such as `node-v16.17.1-x64.msi`.
+   On Windows, a `.msi` file is downloaded, such as: `node-v18.17.1-x64.msi`
+   <!-- Sep. 12, 2023 -->
 
-1. In the browser's Downloads pane, Click **Show in folder**.  Run the downloaded file.  The Node.js Setup Wizard opens.  Click the **Next** button.  Follow the prompts.  
+1. In the browser's Downloads pane, click **Show in folder**, and then run the downloaded file.  The Node.js Setup Wizard opens.  Click the **Next** button, and then follow the prompts.  You can use the default options.
 
-   Confirm that Node.js and npm are installed:
+1. Confirm that Node.js and npm are installed, as follows: in Visual Studio Code, select **View** > **Terminal**.  Or, run the git bash app.
 
-1. In Visual Studio Code, select **View** > **Terminal**.  At the command prompt, enter `npm version`.  A version number is displayed for `npm` and for `node`, indicating that Node Package Manager and Node.js are installed, to support inline and live issue analysis:
+1. At the command prompt, enter `npm version`.  Version numbers are displayed for `npm` and for `node`, indicating that Node Package Manager and Node.js are installed, to support inline and live issue analysis.  For example:
 
    ```
    $ npm version
    {
-   npm: '8.15.0',
-   node: '16.17.1',
-   ...
+      npm: '10.9.2',
+      node: '22.14.0',
+      ...
    }
    ```
+   <!-- Apr. 9, 2025 -->
 
 See also:
 * [Inline and live issue analysis](./inline-live-issue-analysis.md)
@@ -109,7 +111,7 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
    ![Cloning the MicrosoftEdge/Demos repo](./install-images/clone-repo.png)
 
-1. In Visual Studio Code, in the Activity Bar, click the **Source Control** (![Source Control icon](./install-images/source-control-icon.png)) button, and then click the **Clone Repository** button.
+1. In Visual Studio Code, in the **Activity Bar**, click the **Source Control** (![Source Control icon](./install-images/source-control-icon.png)) button, and then click the **Clone Repository** button.
 
 1. In the **Provide repository URL** text box, paste the copied URL: **https://github.com/MicrosoftEdge/Demos.git** and then press **Enter**.  A folder selection dialog opens.
 
@@ -127,7 +129,7 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
 1. In Visual Studio Code, select **File** > **Close Folder**.
 
-1. In the Activity Bar, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./install-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens.
+1. In the **Activity Bar**, click the **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./install-images/microsoft-edge-tools-icon.png)) button.  The **Microsoft Edge Tools** pane opens.
 
 1. In the **Microsoft Edge Tools** > **Targets** pane, click the **Open Folder** button.  The **Open Folder** dialog opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
 
@@ -202,6 +204,8 @@ These steps start the server for the first time.
      http-server@14.1.1
    Ok to proceed? (y)
    ```
+
+   Or, if you get **no such file or directory**, you can run: `npm install --global http-server` and then run: `http-server`
 
 1. Enter **y**.
 

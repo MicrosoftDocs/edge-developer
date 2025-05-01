@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 96)
+title: What's New in DevTools (Microsoft Edge 96)
 description: Focus Mode and a vertical Activity Bar.  Auto-minimizing of the Console.  Display a webpage in Visual Studio Code, emulate devices, and see issues while editing.  Sources tool notifies you when sourcemaps can't be loaded.  If Sources is open, it's used rather than Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/16/2021
 ---
 # What's New in DevTools (Microsoft Edge 96)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: Microsoft Edge | What's New in DevTools 96
+
+[![Thumbnail image for video "Microsoft Edge | What's New in DevTools 96"](./devtools-images/devtools-whatsnew-96.png)](https://www.youtube.com/watch?v=H6dYeoGOIDk)
 
 
 <!-- ====================================================================== -->
@@ -18,7 +25,7 @@ ms.date: 11/16/2021
 <!-- Title: New DevTools UI available (in preview) -->
 <!-- Subtitle: A more minimal, modern UI is coming to Microsoft Edge DevTools. Enable the "Focus Mode" experiment to preview new UI features such a more compact toolbar that keeps DevTools uncluttered and better adapts to small window sizes. -->
 
-The Microsoft Edge DevTools team is experimenting with a new DevTools UI: **Focus Mode**.  Focus Mode reduces distractions and clutter with a more modern and simplified layout.  The new Activity Bar allows you to pin your favorite tools in a horizontal or vertical toolbar to use screen space more efficiently.
+The Microsoft Edge DevTools team is experimenting with a new DevTools UI: **Focus Mode**.  Focus Mode reduces distractions and clutter with a more modern and simplified layout.  The new **Activity Bar** allows you to pin your favorite tools in a horizontal or vertical toolbar to use screen space more efficiently.
 
 To give this new UI a try in Microsoft Edge version 96, select **Settings** (![the Settings gear icon in DevTools](./devtools-images/settings-gear-icon-light-mode.png)) > **Experiments** > **Focus Mode**.
 
@@ -29,7 +36,6 @@ This UI is still in development and may change in future versions of Microsoft E
 ![Focus Mode, including the Activity Bar](./devtools-images/focus-mode.png)
 
 See also:
-*  [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
 *  [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md) in the `MSEdgeExplainers` repo.
 
 
@@ -41,7 +47,7 @@ See also:
 
 Since Microsoft Edge version 87, you've been able to move any tool between the top and bottom panels, including the Console tool.  However, we heard from developers that moving the Console tool repeatedly was cumbersome.  As of Microsoft Edge version 96, the default experience for the Console tool has been restored, allowing you to quickly switch between a full-screen view of the Console (in the top panel) and a split-screen view (with the Console displayed in the bottom panel), without moving the Console tool.
 
-The **Console** can be opened in the bottom panel (the **Drawer**) while another tool is open:
+The **Console** can be opened in the **Drawer** (now **Quick View**) at the bottom of DevTools, alongside another tool:
 
 ![When a tool other than the Console is selected in the main toolbar, the Drawer opens and shows the Console](./devtools-images/console-displayed-when-elements-tab-selected.png)
 
@@ -53,10 +59,10 @@ If you want to only allow the Console tool to open in a single place, you can co
 
 1. In the main toolbar or the **Drawer** toolbar, right-click the **Console** tab, and then select **Configure console**.  The **Settings** > **Preferences** page is displayed.
 
-1. In the **Console** section, clear the checkbox **Show Console tab in main panel and drawer**, then click **Close** (**x**).
+1. In the **Console** section, clear the checkbox **Show Console tab in main panel and drawer**, and then click **Close** (**x**).
 
 See also:
-* [Panel tools vs. Drawer tools](../../../about-tools.md#panel-tools-vs-drawer-tools) in _About the list of tools_.
+* [Activity Bar tools vs. Quick View tools](../../../about-tools.md#activity-bar-tools-vs-quick-view-tools) in _About the list of tools_
 * [Move tools between top and bottom panels](../../2020/10/devtools.md#move-tools-between-top-and-bottom-panels) in _What's New in DevTools (Microsoft Edge 87)_.
 
 
@@ -69,7 +75,8 @@ For general information about this extension, see [Microsoft Edge DevTools exten
 <!-- Subtitle: Display your web project inside the editor, simulate different devices, and get notified about issues with your code while you develop it. --> 
 
 
-### Display your web project inside the editor, and simulate different devices
+<!-- ------------------------------ -->
+#### Display your web project inside the editor, and simulate different devices
 
 The Microsoft Edge DevTools for Visual Studio Code extension now features a dockable screencast and device emulation:
 
@@ -82,7 +89,8 @@ You can see your web project in a dedicated tab inside of Visual Studio Code, an
 For details about device emulation, see [Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md).
 
 
-### Live, inline issue reporting
+<!-- ------------------------------ -->
+#### Live, inline issue reporting
 
 The extension also now features live, inline issue reporting.  Instead of finding out about issues in a separate tool, Visual Studio Code highlights the issues in your source code and reports them live while you enter your code:
 
@@ -103,7 +111,7 @@ Selecting a file with the warning icon opens the file in the Sources tool with a
 
 ![The Sources tool displaying an issue that reads 'DevTools failed to load source map'](./devtools-images/source-map-not-found-buttons.png)
 
-From the infobar, you can learn more about the issue by selecting the **Open in Issues** button.  The **Issues** tool then opens in the **Drawer** and provides information about how to resolve the issue and get your sourcemap loaded correctly in DevTools:
+From the infobar, you can learn more about the issue by selecting the **Open in Issues** button.  The **Issues** tool then opens in the **Drawer** (now **Quick View** panel) at the bottom of DevTools, and provides information about how to resolve the issue and get your sourcemap loaded correctly in DevTools:
 
 ![The Issues tool in the Drawer, displaying the issue as 'Source map not found', along with information on how to resolve this issue](./devtools-images/source-map-not-found.png)
 
@@ -159,7 +167,14 @@ In Microsoft Edge version 96, this issue has been fixed.  Selecting the triangle
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 96)](https://developer.chrome.com/blog/new-in-devtools-96) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 96)](https://developer.chrome.com/blog/new-in-devtools-96) and is authored by Jecelyn Yeen.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

@@ -4,8 +4,9 @@ description: How to view and edit sessionStorage with the Session Storage pane a
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 10/06/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,19 +29,21 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 <!-- ====================================================================== -->
 ## View sessionStorage keys and values
 
-1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.
+To view the `sessionStorage` key-value pairs of a domain:
+
+1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default:
 
    ![The Manifest pane](./sessionstorage-images/storage-application-manifest.png)
 
-1. Expand the **Session Storage** menu.
+1. In the **Storage** section on the left, expand **Session storage**:
 
    ![The Session Storage Menu](./sessionstorage-images/storage-application-storage-session-storage.png)
 
-1. Click a domain to view the key-value pairs.
+1. In the **Session storage** on the left, select a domain.  The domain's key-value pairs are listed in the upper right:
 
    ![The sessionStorage key-value pairs](./sessionstorage-images/storage-application-storage-session-storage-domain.png)
 
-1. Click a row of the table to view the value in the viewer below the table.
+1. Select a row of the key-value table.  The value for the selected key is displayed below the key-value table:
 
    ![View the value of the x-sid key](./sessionstorage-images/storage-application-storage-session-storage-domain-key-value-selected.png)
 
@@ -48,9 +51,17 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 <!-- ====================================================================== -->
 ## Create a new sessionStorage key-value pair
 
-1. [View the sessionStorage key-value pairs of a domain](#view-sessionstorage-keys-and-values).
+To add a new key/value pair for session storage:
 
-1. Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.
+1. In DevTools, in the **Application** tool, in the **Storage** section on the left, expand **Session storage**, and then select a domain.  For details, see [View sessionStorage keys and values](#view-sessionstorage-keys-and-values), above.
+
+1. In the **Key/Value** table on the right, double-click an empty key/value row, to enter editing mode.
+
+1. In the **Key** field of the row, enter a key.
+
+1. In the **Value** field of the row, enter a value for the key.
+
+1. Press **Enter**, or click an empty area.  The value is then also displayed below the key/value table:
 
    ![The empty part of the table to double-click in order to create a new key-value pair](./sessionstorage-images/storage-application-storage-session-storage-domain-key-value-new.png)
 
@@ -58,9 +69,11 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 <!-- ====================================================================== -->
 ## Edit sessionStorage keys or values
 
-1. [View the sessionStorage key-value pairs of a domain](#view-sessionstorage-keys-and-values).
+To edit a key/value pair for session storage:
 
-1. Double-click a cell in the **Key** or **Value** column to edit that key or value.
+1. In DevTools, in the **Application** tool, in the **Storage** section on the left, expand **Session storage**, and then select a domain.  For details, see [View sessionStorage keys and values](#view-sessionstorage-keys-and-values), above.
+
+1. In the **Key/Value** table on the right, double-click a cell in the **Key** or **Value** column to edit that key or value:
 
    ![Edit a sessionStorage key](./sessionstorage-images/storage-application-storage-session-storage-domain-key-value-edit.png)
 
@@ -68,39 +81,64 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 <!-- ====================================================================== -->
 ## Delete sessionStorage key-value pairs
 
-1. [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
+To delete a key/value pair for session storage:
 
-1. Click the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
+1. In DevTools, in the **Application** tool, in the **Storage** section on the left, expand **Session storage**, and then select a domain.  For details, see [View sessionStorage keys and values](#view-sessionstorage-keys-and-values), above.
 
-1. Press `Delete` or click **Delete Selected** (![Delete Selected](./sessionstorage-images/delete-icon.png)).
+1. In the **Key/Value** table on the right, select a key-value pair to highlight it.
+
+1. Press `Delete`, or click the **Delete Selected** (![Delete Selected](./sessionstorage-images/delete-icon.png)) button, or right-click the row and then select **Delete**.
 
 
 <!-- ====================================================================== -->
 ## Delete all sessionStorage key-value pairs for a domain
 
-1. [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
+To delete all key/value pairs for session storage for a domain:
 
-1. Click **Clear All** (![Clear All](./sessionstorage-images/clear-icon.png)).
+1. In DevTools, in the **Application** tool, in the **Storage** section on the left, expand **Session storage**, and then select a domain.  For details, see [View sessionStorage keys and values](#view-sessionstorage-keys-and-values), above.
+
+1. Click the **Clear All** (![Clear All](./sessionstorage-images/clear-icon.png)) button.
 
 
 <!-- ====================================================================== -->
 ## Interact with sessionStorage from the Console
 
-Since you can run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it's possible to interact with `sessionStorage` from the **Console**.
+You can run JavaScript expressions and statements in the **Console**, and the **Console** has access to the JavaScript contexts of the page, including for `sessionStorage`.
 
-1. Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `sessionStorage` key-value pairs of a domain other than the page you are on.
+To interact with `sessionStorage` by using the **Console**:
+
+1. In DevTools, select the **Console** tool.  For example, press **Esc** to display the **Quick View** panel, which always includes a **Console** tab.
+
+1. If you want to access the `sessionStorage` key-value pairs of a domain other than the page you're on, use the **JavaScript contexts** menu to change the JavaScript context of the **Console**:
 
    ![Change the JavaScript context of the Console](./sessionstorage-images/storage-console-domain-selection.png)
 
-1. Run your `sessionStorage` expressions in the **Console**, the same as your JavaScript.
+   In this scenario, there would be multiple domains listed below **top**.
+
+1. Enter `sessionStorage` JavaScript expressions in the **Console**:
 
    ![Interact with sessionStorage from the Console](./sessionstorage-images/storage-console-session-storage-keys.png)
+
+   The above screenshot shows the following JavaScript expressions, and the resulting output:
+
+   ```js
+   > sessionStorage.key(0)
+   <· 'my-key-01'
+   > sessionStorage.key(1)
+   <· 'my-key-02'
+   > sessionStorage.setItem("my-key-01", "efgh-5678")
+   <· undefined
+   > sessionStorage.getItem("my-key-01")
+   <· 'efgh-5678'
+   ```
+
+   When you enter JavaScript assignment expressions by using the **Console**, the **Key/Value** pair table is updated.
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/storage/sessionstorage/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/storage/sessionstorage/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

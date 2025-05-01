@@ -4,8 +4,8 @@ description: How IT admins can manage WebView2 applications and the WebView2 Run
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 11/12/2021
 ---
 # Enterprise management of WebView2 Runtimes
@@ -51,8 +51,7 @@ Applying browser policies on WebView2 would have unintended consequences.  For e
 
 [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) enables information technology administrators to deploy the latest Microsoft product updates. You can use WSUS to fully manage the distribution of updates of WebView2 that are released through Microsoft Update to computers on your network.
 
-> [!NOTE]
-> The recommended way of receiving WebView2 updates is by using the default Microsoft Edge updater. Any modification of update and servicing paths should be done with caution.
+The recommended way of receiving WebView2 updates is by using the default Microsoft Edge updater.  Any modification of update and servicing paths should be done with caution.
 
 
 <!-- ------------------------------ -->

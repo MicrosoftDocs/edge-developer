@@ -4,7 +4,8 @@ description: How to host a site on a development machine web server, and then ac
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/11/2021
 ---
 <!-- Copyright Kayce Basques
@@ -24,13 +25,11 @@ ms.date: 05/11/2021
 
 Host a site on a development machine web server, then access the content from an Android device.
 
+Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.
+
+If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.
+
 With a USB cable and Microsoft Edge DevTools, run a site from a development machine and then view the site on an Android device.
-
-### Summary
-
-*  Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.
-
-*  If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.
 
 
 <!-- ====================================================================== -->
@@ -72,7 +71,9 @@ Custom domain mapping enables you to view content on an Android device from a we
 
 For example, suppose that your site uses a third-party JavaScript library that only works on the domain `microsoft-edge.devtools`.  So, you create an entry in your `hosts` file on your development machine to map this domain to `localhost` (for example, `127.0.0.1 microsoft-edge.devtools`).  After setting up custom domain mapping and port forwarding, view the site on your Android device at the URL `microsoft-edge.devtools`.
 
-### Set up port forwarding to proxy server
+
+<!-- ------------------------------ -->
+#### Set up port forwarding to proxy server
 
 To map a custom domain you must run a proxy server on your development machine.  Examples of proxy servers are [Charles](https://www.charlesproxy.com), [Squid](https://wiki.squid-cache.org), and [Fiddler](https://www.telerik.com/fiddler).
 
@@ -85,7 +86,9 @@ To set up port forwarding to a proxy:
 
 1. Set up [port forwarding](#set-up-port-forwarding) to your Android device.  For the **local address** field, enter `localhost:` followed by the port that your proxy server is running on.  For example, if it is running on port `8000`, go to `localhost:8000`.  In the **device port** field enter the number that you want your Android device to listen on, such as `3333`.
 
-### Configure proxy settings on your device
+
+<!-- ------------------------------ -->
+#### Configure proxy settings on your device
 
 Next, you need to configure your Android device to communicate with the proxy server.
 
@@ -121,7 +124,7 @@ If your web server is running off of a non-standard port, remember to specify th
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/remote-debugging/local-server/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/remote-debugging/local-server/) and is authored by Kayce Basques and Meggin Kearney.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

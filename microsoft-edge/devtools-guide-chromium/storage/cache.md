@@ -4,8 +4,9 @@ description: How to view Cache data from the Application panel of Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/21/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,38 +31,41 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 <!-- ====================================================================== -->
 ## View cache data
 
-1. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.
+1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
+
+1. In DevTools, on the **Activity Bar**, select the **Application** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./cache-images/more-tools-icon.png)) button, and then click **Application**. The **Manifest** pane usually opens by default:
 
    ![The Manifest pane](./cache-images/storage-application-manifest.png)
 
-1. Expand the **Cache Storage** section to view available caches.
+1. Expand the **Cache Storage** section to view available caches:
 
    ![Available caches](./cache-images/storage-application-cache-storage.png)
 
-1. Click a cache to view the contents.
+1. Click a cache to view the contents:
 
-   ![Viewing the contents of a cache](./cache-images/storage-application-cache-storage-domain-root-headers.png)
+   ![Viewing the contents of a cache](./cache-images/domain-root-headers.png)
 
-1. Click a resource to view the HTTP headers in the section below the table.
+1. Click a resource to view the HTTP headers in the section below the table:
 
-   ![Viewing the HTTP headers of a resource](./cache-images/storage-application-cache-storage-index-headers.png)
+   ![Viewing the HTTP headers of a resource](./cache-images/index-headers.png)
 
-1. Click **Preview** to view the content of a resource.
+1. Click **Preview** to view the content of a resource:
 
-   ![Viewing the content of a resource](./cache-images/storage-application-cache-storage-domain-js-preview.png)
+   ![Viewing the content of a resource](./cache-images/domain-js-preview.png)
 
-To learn more about cache data storage quota, see the [Quota usage](../progressive-web-apps/index.md#quota-usage) section of the Debug Progressive Web Apps article.
+To learn more about cache data storage quota, see [Quota usage](../progressive-web-apps/index.md#quota-usage) in _Debug a Progressive Web App (PWA)_.
 
 
 <!-- ====================================================================== -->
 ## Refresh a resource
 
 1. [View the data for a cache](#view-cache-data).
-1. Click the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.
 
-   ![Selecting a resource to refresh](./cache-images/storage-application-cache-storage-domain-refresh.png)
+1. Click the resource that you want to refresh. DevTools highlights it to indicate that it is selected.
 
-1. Click **Refresh** (![Refresh](./cache-images/refresh-icon.png)).
+1. Click **Refresh** (![Refresh](./cache-images/refresh-icon.png)):
+
+   ![Selecting a resource to refresh](./cache-images/domain-refresh.png)
 
 
 <!-- ====================================================================== -->
@@ -69,9 +73,9 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 
 1. [View the data for a cache](#view-cache-data).
 
-1. Use the **Filter by Path** text box to filter out any resources that don't match the path that you provide.
+1. Use the **Filter by Path** text box to filter out any resources that don't match the path that you provide:
 
-   ![Filtering out resources that don't match the specified path](./cache-images/storage-application-cache-storage-filter.png)
+   ![Filtering out resources that don't match the specified path](./cache-images/filter.png)
 
 
 <!-- ====================================================================== -->
@@ -81,29 +85,27 @@ To learn more about cache data storage quota, see the [Quota usage](../progressi
 
 1. Click the resource that you want to delete.  DevTools highlights it to indicate that it is selected.
 
-   ![Selecting a resource to delete](./cache-images/storage-application-cache-storage-delete-selected.png)
-
-1. Click **Delete Selected** (![Delete Selected](./cache-images/delete-icon.png)).
+1. Click **Delete Selected** (![Delete Selected](./cache-images/delete-icon.png)):
+   
+   ![Selecting a resource to delete](./cache-images/delete-selected.png)
 
 
 <!-- ====================================================================== -->
 ## Delete all cache data
 
-1. Open **Application** > **Clear storage**.
+1. In the **Application** tool, click **Storage**.
 
 1. Make sure that the **Cache storage** checkbox is selected.
 
-   ![The Cache Storage checkbox](./cache-images/storage-application-clear-storage-cache-storage-checkbox.png)
+1. Click the **Clear site data** button:
 
-1. Click the **Clear site data** button.
-
-   ![The 'Clear site data' button](./cache-images/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.png)
+   ![The 'Clear site data' button](./cache-images/cache-storage-checkbox-clear-site-data-button.png)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/storage/cache/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/storage/cache/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -4,20 +4,22 @@ description: How to do work in the background when the app isn't running, to syn
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 09/14/2021
 ---
 # Synchronize and update a PWA in the background
 
-Using a service worker, a Progressive Web App (PWA) can do work in the background, even when the user isn't using the app.  Service workers used to be reserved for native apps, but they are now also available to PWAs, providing a better offline experience.
+Using a service worker, a Progressive Web App (PWA) can do work in the background, even when the user isn't using the app, and provide a better offline experience.
 
 Consider the following use cases:
+
 *  An email app that lets users compose messages and send them at any time, even when offline.
 *  A news app that fetches new articles every day, for the user to read later when they open the app.
 *  A music app that lets users download songs for listening offline.
 
 All three of these use cases are possible with PWAs, by using the following APIs:
+
 *  Background Sync API
 *  Periodic Background Sync API
 *  Background Fetch API
@@ -109,7 +111,7 @@ To test background syncing:
 
 1.  Search for movies using the search input field.
 
-1.  Go offline.  To do this, open DevTools (**F12**), and then select the **Application** > **Service Workers** > **Offline** checkbox.
+1.  Go offline.  To do this, open DevTools (**F12**), and then select the **Application** > **Service Workers**<!-- todo: when the below .png is updated to show "Service workers", change to "w" --> > **Offline** checkbox.
 
     ![Simulate being offline with DevTools](./background-syncs-images/devtools-go-offline.png)
 
@@ -119,7 +121,7 @@ To test background syncing:
 
     ![The offline message](./background-syncs-images/my-movie-list-pwa-demo-offline.png)
 
-1.  Go online.  To do this, in DevTools, clear the **Application** > **Service Workers** > **Offline** checkbox.
+1.  Go online.  To do this, in DevTools, clear the **Application** > **Service Workers**<!-- todo: when the above .png is updated to show "Service workers", change to "w" --> > **Offline** checkbox.
 
 1.  Reload the app. The movie details now appear.
 
@@ -132,7 +134,7 @@ To test your background sync code, you don't have to go offline, then go online,
 To simulate a `sync` event:
 
 1. Open DevTools (**F12**).
-1. Select **Application** > **Service Workers**.
+1. Select **Application** > **Service Workers**.<!-- todo: when the below .png is updated to show "Service workers", change to "w" -->
 1. Type the tag name you used when registering the sync in the **Sync** input field.
 1. Select the **Sync** button.
 
@@ -238,7 +240,7 @@ You can use DevTools to simulate `periodicsync` events instead of waiting for th
 To simulate the event:
 
 1. Open DevTools (**F12**).
-1. Select **Application** > **Service Workers**.
+1. Select **Application** > **Service Workers**.<!-- todo: when the below .png is updated to show "Service workers", change to "w" -->
 1. Type the tag name you used when registering the periodic sync in the **Periodic Sync** input field.
 1. Select the **Periodic Sync** button.
 

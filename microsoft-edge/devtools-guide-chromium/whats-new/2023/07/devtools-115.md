@@ -1,15 +1,24 @@
 ---
-title: What's new in DevTools (Microsoft Edge 115)
+title: What's New in DevTools (Microsoft Edge 115)
 description: "Improvements for connecting DevTools to Azure Artifacts symbol server. Snapshotting improvements for the Memory tool. Refreshing the DevTools icons and buttons. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 08/18/2023
 ---
 # What's New in DevTools (Microsoft Edge 115)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ 
+todo video
+#### Video: What's new in DevTools 115-125
+
+[![Thumbnail image for video "What's new in DevTools 115-125"](./devtools-115-images/devtools-whatsnew-115-125.png)]
+-->
 
 
 <!-- ====================================================================== -->
@@ -63,7 +72,7 @@ See also:
 
 <!-- Subtitle: The "Allocation instrumentation on timeline" profiling type in the Memory tool now samples the heap at variable intervals, depending on the size of the heap. Heap snapshots are now more accurate and don't show objects that should have been garbage-collected. -->
 
-In previous versions of Microsoft Edge, in the **Memory** tool, when using the **Allocation instrumentation on timeline** option, the **Memory** tool takes a sample of the heap every 50 milliseconds.  However, taking a sample of the heap scales with the size of the heap, so with a heap size of 200 MB, the sample actually takes 1.5 seconds to generate.  As a result, there's little time left on the main thread for your website, outside of generating heap samples.  When **Allocation instrumentation on timeline** is running, it might look like your web content is hanging or blocked.
+In previous versions of Microsoft Edge, in the **Memory** tool, when using the **Allocation instrumentation on timeline** profiling type (later re-labelled as the **Allocations on timeline** option button), the **Memory** tool takes a sample of the heap every 50 milliseconds.  However, taking a sample of the heap scales with the size of the heap, so with a heap size of 200 MB, the sample actually takes 1.5 seconds to generate.  As a result, there's little time left on the main thread for your website, outside of generating heap samples.  When **Allocation instrumentation on timeline** is running, it might look like your web content is hanging or blocked.
 
 In Microsoft Edge 115, the sample rate for the heap now scales to the time it takes to generate a sample, freeing up the main thread so that you can interact with your web content while profiling.
 
@@ -85,13 +94,13 @@ In Microsoft Edge 115, the DevTools UI has gotten a makeover with new icons and 
 
 ![The right-pointing blue arrow icon for the current frame in the call stack](./devtools-115-images/icon-update-sources.png)
 
-In previous versions of Microsoft Edge, in the **Bottom-Up** view in the **Performance** tool, the triangle buttons for collapsing and expanding the recorded activities rendered incorrectly.  In Microsoft Edge 115, this issue has been fixed and you can now expand and collapse individual activities to see which functions are calling them:
+In previous versions of Microsoft Edge, in the **Bottom-up** view in the **Performance** tool, the triangle buttons for collapsing and expanding the recorded activities rendered incorrectly.  In Microsoft Edge 115, this issue has been fixed and you can now expand and collapse individual activities to see which functions are calling them:
 
-![The triangle icons for expanding and collapsing activities in the Bottom-Up view](./devtools-115-images/icon-update-performance.png)
+![The triangle icons for expanding and collapsing activities in the Bottom-up view](./devtools-115-images/icon-update-performance.png)
 
 See also:
 * [Step through code](../../../javascript/reference.md#step-through-code) in _JavaScript debugging features_.
-* [The Bottom-Up tab](../../../evaluate-performance/reference.md#the-bottom-up-tab) in _Performance features reference_.
+* [The Bottom-up tab](../../../performance/reference.md#the-bottom-up-tab) in _Performance features reference_.
 
 
 <!-- ====================================================================== -->
@@ -146,7 +155,7 @@ Microsoft Edge 115 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 115)](https://developer.chrome.com/blog/new-in-devtools-115) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 115)](https://developer.chrome.com/blog/new-in-devtools-115) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -154,3 +163,10 @@ Microsoft Edge 115 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

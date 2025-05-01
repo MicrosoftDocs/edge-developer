@@ -4,8 +4,9 @@ description: Customize keyboard shortcuts, including matching shortcuts from Vis
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 03/10/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/20/2023
 ---
 # Customize keyboard shortcuts
 
@@ -17,22 +18,21 @@ For the default keyboard shortcuts, see [Keyboard shortcuts](../shortcuts/index.
 <!-- ====================================================================== -->
 ## Match keyboard shortcuts from Visual Studio Code
 
-To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent action in Visual Studio Code:
+To match the keyboard shortcuts in Microsoft Edge DevTools to their equivalent actions in Visual Studio Code:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./shortcuts-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, in the **Activity Bar**, click the **Customize and control DevTools** (![Customize and control DevTools icon](./shortcuts-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./shortcuts-images/settings-icon.png)) button.  Or, press **F1**.
 
 1. In the **Settings** panel, select the **Shortcuts** page.
 
-1. In the upper right, in the **Match shortcuts from preset** dropdown list, select **Visual Studio Code** instead of **DevTools (Default)**.
+1. In the upper right, in the **Match shortcuts from preset** dropdown list, select **Visual Studio Code** instead of **DevTools (Default)**:
 
    ![Matching keyboard shortcuts in DevTools to Visual Studio Code](./shortcuts-images/match-keyboard-shortcuts-visual-studio-code.png)
 
 For example, to pause or continue running a script in Visual Studio Code, you press **F5**.  But with the **DevTools (Default)** preset, to pause or continue running a script, you press **F8**.  When you change the preset to **Visual Studio Code**, you now also press **F5** in DevTools, just like in Visual Studio Code.
 
-### See also
-
+See also:
 * [Microsoft Visual Studio Code](https://code.visualstudio.com)
 * [Visual Studio Code Keyboard shortcuts for Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) (PDF file)
 
@@ -42,46 +42,59 @@ For example, to pause or continue running a script in Visual Studio Code, you pr
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon](./shortcuts-images/settings-gear-icon-light-theme.png)) button.  Or, press **Shift+?**.
+1. In DevTools, in the **Activity Bar**, click the **Customize and control DevTools** (![Customize and control DevTools icon](./shortcuts-images/customize-icon.png)) button, and then click the **Settings** (![Settings icon](./shortcuts-images/settings-icon.png)) button.  Or, press **F1**.
 
 1. In the **Settings** panel, select the **Shortcuts** page.
 
-1. Select the action you want to customize.  For example, in the **Debugger** section, select the **Pause script execution** action.
+1. Select the action you want to customize.  For example, in the **Debugger** section, click anywhere in the **Pause script execution** row.  The row becomes highlighted.
 
-1. Click the **Edit** (![EditKeyboardShortcut](./shortcuts-images/edit-keyboard-shortcut-icon.png)) icon.
+1. Click the **Edit shortcut** (![The 'Edit shortcut' button](./shortcuts-images/edit-keyboard-shortcut-icon.png)) icon:
 
-   ![Select the action to customize from the Shortcuts page in Settings](./shortcuts-images/experiments-custom-keyboard-shortcuts-select-action.png)
+   ![Select the action to customize from the Shortcuts page in Settings](./shortcuts-images/select-action.png)
 
-1. To bind the shortcut keys to the action, ensure the text box next to the action has focus, and then use the keyboard to select the shortcut keys.
+1. To bind the shortcut keys to the action, make sure the text box next to the action has focus, and then use the keyboard to press the shortcut key combination.
 
-1. To bind more than one shortcut combination to an action, select **Add a shortcut**, make sure the text box next to the action has focus, and then use the keyboard to select the shortcut keys.
+1. To bind more than one shortcut combination to an action, click the **Add a shortcut** link, make sure the text box next to the action has focus, and then use the keyboard to press the additional shortcut key combination:
 
-   ![Select the keys you want to assign to the action](./shortcuts-images/experiments-custom-keyboard-shortcuts-enter-key.png)
+   ![Select the keys you want to assign to the action](./shortcuts-images/enter-key.png)
 
-1. To save your new keyboard shortcut, select the checkmark (![CheckmarkKeyboardShortcut](./shortcuts-images/checkmark-keyboard-shortcut-icon.png)) icon.
+1. Click the **Confirm changes** (!['Confirm changes' icon](./shortcuts-images/checkmark-keyboard-shortcut-icon.png)) button:
 
-   ![Select the checkmark icon to save your new keyboard shortcut](./shortcuts-images/experiments-custom-keyboard-shortcuts-save-shortcut.png)
-
-1. Select your new keyboard shortcut to trigger the action in DevTools.
+   ![The 'Confirm changes' button to save the keyboard shortcut](./shortcuts-images/save-shortcut.png)
 
 
-### Icons and buttons
+<!-- ====================================================================== -->
+## Icons and buttons
 
-<!-- keep in same order as screenshot: -->
+<!-- keep in same order as screenshot above: -->
 
-*  If there's a **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](./shortcuts-images/custom-keyboard-shortcut-icon.png)) icon displayed next to a checkbox, it indicates that you have customized the keyboard shortcut.
+| Tooltip and button icon | Description |
+|---|---|
+| **Edit shortcut** (!['Edit shortcut' icon](./shortcuts-images/edit-keyboard-shortcut-icon.png)) | Modifies an existing shortcut. |
+| **Remove shortcut** (![The 'Remove shortcut' icon](./shortcuts-images/delete-keyboard-shortcut-icon.png)) | Removes a keyboard shortcut for an action while you are editing the keyboard shortcuts for an action. |
+| The **Add a shortcut** link | Adds an additional keyboard shortcut for an action while you are editing the keyboard shortcuts for an action. |
+| **Reset shortcuts for action** (![The 'Reset shortcuts for action' icon](./shortcuts-images/custom-keyboard-shortcut-icon.png)) | This icon displayed next to a checkbox indicates that you have customized the keyboard shortcut. |
+| **Confirm changes** (![The 'Confirm changes' icon](./shortcuts-images/checkmark-keyboard-shortcut-icon.png)) | Saves a modified or added keyboard shortcut while you are editing the keyboard shortcuts for an action. |
+| **Discard changes** (![The 'Discard changes' icon](./shortcuts-images/discard-changes-keyboard-shortcut-icon.png)) | Discards your changes while you are editing the keyboard shortcuts for an action. |
+| The **Restore default shortcuts** button | Resets all shortcuts. |
 
-*  To remove a keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, click the **Delete shortcut** (![DeleteKeyboardShortcut](./shortcuts-images/delete-keyboard-shortcut-icon.png)) icon.
 
-*  To add an additional keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, click the **Add a shortcut** link, or click the **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](./shortcuts-images/custom-keyboard-shortcut-icon.png)) icon.
+<!-- ====================================================================== -->
+## Assign a shortcut key combination that's already in use
 
-*  To save a modified or added keyboard shortcut while you are editing the keyboard shortcuts for an action, click the checkmark (![CheckmarkKeyboardShortcut](./shortcuts-images/checkmark-keyboard-shortcut-icon.png)) icon.
+If a keyboard shortcut is currently assigned to one action, it can't be assigned to another action.
 
-*  To discard your changes while you are editing the keyboard shortcuts for an action, click the X (![XKeyboardShortcut](./shortcuts-images/discard-changes-keyboard-shortcut-icon.png)) icon.
+To assign a shortcut key combination that's already in use:
 
-*  To reset all shortcuts, click the **Restore default shortcuts** button.
+1. Try to assign the shortcut key combination to the new action.  An error message says which action the shortcut is already assigned to.
 
-If a keyboard shortcut is currently assigned to one action, it can't be assigned to another action.  Instead, delete the keyboard shortcut from the previous action, and then add that keyboard shortcut to the new action.
+1. Click the row for the action that already has the keyboard shortcut assigned to it.
+
+1. Delete its keyboard shortcut.
+
+1. Click the row for the action that you want to assign the shortcut key combination to.
+
+1. Add that keyboard shortcut to the new action, as described above.
 
 
 <!-- ====================================================================== -->

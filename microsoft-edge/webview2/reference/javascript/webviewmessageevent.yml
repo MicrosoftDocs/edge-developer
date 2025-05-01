@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: WebViewMessageEvent
+uid: 'WebView2Script!WebViewMessageEvent:class'
+package: WebView2Script!
+fullName: WebViewMessageEvent
+summary: >-
+  Event object for the `chrome.webview.webmessage` event. This event is dispatched when
+  `CoreWebView2.PostWebMessage*` is successfully called.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: additionalObjects
+    uid: 'WebView2Script!WebViewMessageEvent#additionalObjects:member'
+    package: WebView2Script!
+    fullName: additionalObjects
+    summary: |-
+      Additional DOM objects that are sent via `PostJSONMessageWithAdditionalObjects`. These objects can be of the following
+      types:
+
+      | DOM | Win32 |
+      | ------- | ------------ |
+      | [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle) | ICoreWebView2FileSystemHandle (kind `File`) |
+      | [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle) | ICoreWebView2FileSystemHandle (kind `Directory`) |
+
+      `nullptr` entries will be passed as `null` type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'additionalObjects: ArrayLike<any>'
+      return:
+        type: ArrayLike&lt;any&gt;
+  - name: source
+    uid: 'WebView2Script!WebViewMessageEvent#source:member'
+    package: WebView2Script!
+    fullName: source
+    summary: The source of the event is the `chrome.webview` object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: WebView;'
+      return:
+        type: '<xref uid="WebView2Script!WebView:class" />'
+extends: MessageEvent

@@ -4,8 +4,8 @@ description: Learn how to use the Notifications and Badging APIs to provide re-e
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 06/16/2023
 ---
 # Re-engage users with badges and notifications
@@ -31,7 +31,9 @@ Notifications are useful for apps to take part in the system's notification cent
 
 PWAs can display a badge on their app icon by using the [App Badging API](https://developer.mozilla.org/docs/Web/API/Badging_API).  The badge can be empty or it can contain a number.
 
-### Check for support
+
+<!-- ------------------------------ -->
+#### Check for support
 
 Before using the App Badging API, first check whether the App Badging API is supported in the browser engine that your app runs in, as follows:
 
@@ -41,7 +43,9 @@ if (navigator.setAppBadge) {
 }
 ```
 
-### Displaying the badge
+
+<!-- ------------------------------ -->
+#### Displaying the badge
 
 To set the badge, use the following code from your app frontend or service worker.
 
@@ -65,7 +69,9 @@ navigator.setAppBadge(42).then(() => {
 });
 ```
 
-### Clearing the badge
+
+<!-- ------------------------------ -->
+#### Clearing the badge
 
 To remove the badge on the app icon, use the following code from your frontend or service worker:
 
@@ -87,7 +93,9 @@ navigator.setAppBadge(0);
 
 PWAs can display notifications by using the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API).
 
-### Check for support
+
+<!-- ------------------------------ -->
+#### Check for support
 
 Before using the API, check that it is supported, as follows:
 
@@ -97,7 +105,9 @@ if ("Notification" in window) {
 }
 ```
 
-### Request permission
+
+<!-- ------------------------------ -->
+#### Request permission
 
 The Notifications API can only be used after having requested the user's permission to display messages. To request permission, use the `requestPermission` function, as shown below.
 
@@ -121,7 +131,9 @@ if (Notification.permission === "granted") {
 }
 ```
 
-### Display the notification
+
+<!-- ------------------------------ -->
+#### Display the notification
 
 Once you know that the API is supported and the user has accepted notifications, you can display a notification by creating a `Notification` object:
 
@@ -145,12 +157,14 @@ const notification = new Notification("Hello World!", {
 You can also display notifications from your app's service worker. This is useful because the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function:
 
 ```javascript
-self.registration.showNotification("Hello from the Service Worker!");
+self.registration.showNotification("Hello from the service worker!");
 ```
 
 The `showNotification` function supports the same arguments as the `Notification` constructor used in the previous example.  The `showNotification` function also supports the `actions` property, which is described in the following section.
 
-### Add actions to notifications
+
+<!-- ------------------------------ -->
+#### Add actions to notifications
 
 In a notification, it's possible to add actions for the user to perform.  This is only supported in persistent notifications which are shown by using the `ServiceWorkerRegistration.showNotification` function.
 

@@ -4,7 +4,8 @@ description: Learn how to publish source maps to the Azure Artifacts symbol serv
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/26/2022
 ---
 
@@ -160,18 +161,25 @@ module.exports = (env, args) => {
 <!-- ====================================================================== -->
 ## Step 3: Publish source maps to the Azure Artifacts symbol server
 
-Complete either one of the following options to publish source maps.
+To publish source maps to the Azure Artifacts symbol server, use either of the following approaches:
+* [Publish source maps using Azure DevOps Pipelines](#publish-source-maps-using-azure-devops-pipelines).
+* [Publish source maps using `symbol.exe`](#publish-source-maps-using-symbolexe).
 
-### Publish source maps using Azure DevOps Pipelines
+These approaches are described below.
+
+
+<!-- ------------------------------ -->
+#### Publish source maps using Azure DevOps Pipelines
 
 Azure DevOps comes with the [`PublishSymbols@2`](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) pipeline build task. This task can be used to publish your source maps to the Azure Artifacts symbol server.
 
-Make sure that you configure this task with the `indexableFileFormats` parameter set to either `All` or `SourceMap`.
+When configuring this task, set the `indexableFileFormats` parameter to either `All` or `SourceMap`.
 
 
-### Publish source maps using `symbol.exe`
+<!-- ------------------------------ -->
+#### Publish source maps using `symbol.exe`
 
-The Symbol Server team publishes a .NET Core application, `symbol.exe`, which [can be downloaded](/rest/api/azure/devops/symbol/client/get) automatically. After downloading `symbol.exe`, you can run a command to publish your source maps to the Azure Artifacts symbol server:
+The Symbol Server team publishes a .NET Core application, `symbol.exe`, which can be downloaded automatically.  To programmatically download `symbol.exe`, use the `GET` method of the `Client` endpoint in the Symbol Service REST API, as described in [Client - Get](/rest/api/azure/devops/symbol/client/get).  Then run the following command to publish your source maps to the Azure Artifacts symbol server:
 
 ```cmd
 symbol publish
@@ -182,7 +190,7 @@ symbol publish
         --indexableFileFormats SourceMap
 ```
 
-Note here that the `-n` parameter must be unique. Repetition of job names, even failed job names, will be rejected.
+The `-n` parameter must be unique.  Job names that are repeated will be rejected, including names of jobs that failed.
 
 
 <!-- ====================================================================== -->

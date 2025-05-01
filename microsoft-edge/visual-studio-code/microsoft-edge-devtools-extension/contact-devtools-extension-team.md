@@ -4,7 +4,7 @@ description: Getting in touch with the Microsoft Edge DevTools Extension team, f
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Getting in touch with the Microsoft Edge DevTools Extension team

@@ -1,10 +1,10 @@
 ---
-title: What's new in DevTools (Microsoft Edge 90)
+title: What's New in DevTools (Microsoft Edge 90)
 description: Debugging support for CSS Flexbox, performance heads-up display on the webpage, issues tool updates, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
 ---
@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 90)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -38,8 +38,6 @@ To turn on the experiment, see [Turning an experiment on or off](../../../experi
 
 ![Display the Activity Bar.](./devtools-images/focus-mode.png)
 
-See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
-
 
 <!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
@@ -49,6 +47,7 @@ See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mo
 
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
 
+<!-- todo: update for Focus Mode -->
 *  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
 *  Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
 *  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type **tooltips**.
@@ -66,16 +65,13 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 *  **Enable + button tab menus to open more tools**
 -->
 
-Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in [Focus Mode](../../../experimental-features/focus-mode.md).
+Note: As of May 2022, tooltips aren't supported from the **Activity Bar**.
 <!--Click the Help (**?**) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.-->
 <!-- ![Click the Help (?) icon in the Activity Bar to display tooltips](../../media/2021/02/focus-mode-and-tooltips-help.png) -->
 <!--
 See also:
 * [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features in Microsoft Edge DevTools_.
 -->
-
-See also:
-* [Display DevTools Tooltips](../../../overview.md#display-devtools-tooltips) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
@@ -176,7 +172,7 @@ For the history of this feature in the Chromium open-source project, see Issues 
 <!-- Title: Console improvements make filtering more consistent  -->
 <!-- Subtitle: The Log Levels dropdown list is more clearly disabled when using filters in the Console sidebar.  -->
 
-While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown list aren't available.  Previously, the **Log Levels** dropdown list was highlighted when you hovered over it, even while a filter from the **Console Sidebar** was selected.  In Microsoft Edge version 90, the **Log Levels** dropdown list is no longer highlighted when you hover over it while a filter from the **Console Sidebar** is selected.
+While you filter with the [Console Sidebar](../../../console/reference.md#open-the-sidebar-to-filter-messages), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown list aren't available.  Previously, the **Log Levels** dropdown list was highlighted when you hovered over it, even while a filter from the **Console Sidebar** was selected.  In Microsoft Edge version 90, the **Log Levels** dropdown list is no longer highlighted when you hover over it while a filter from the **Console Sidebar** is selected.
 
 To learn more about filtering in the **Console**, see [Filter Messages](../../../console/reference.md#filter-messages) in _Console features reference_.
 
@@ -195,8 +191,8 @@ Starting in Microsoft Edge 90, if you click the **Console sidebar** and hover on
 The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
-<!-- ====================================================================== -->
-### The Console now escapes double-quote characters
+<!-- ------------------------------ -->
+#### The Console now escapes double-quote characters
 
 Previously, the **Console** didn't output valid double-quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double-quote (`"`) characters:
 
@@ -208,8 +204,8 @@ See also:
 * [Console features reference](../../../console/reference.md)
 
 
-<!-- ====================================================================== -->
-### Emulate the CSS color-gamut media feature
+<!-- ------------------------------ -->
+#### Emulate the CSS color-gamut media feature
 
 The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media query emulates the approximate range of colors that are supported by the browser and device that you're testing.  The dropdown list under **Emulate CSS media feature color-gamut** contains color spaces that DevTools can emulate.  For example, to trigger a `color-gamut: p3` media query, select **color-gamut: p3** from the dropdown list.
 
@@ -217,7 +213,7 @@ To emulate the CSS color-gamut media feature:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 1. In DevTools, on the main toolbar, select the **Rendering** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./devtools-images/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon](./devtools-images/more-tools-icon-light-theme.png)) button.  The **Rendering** tool opens.
-1. In the **Emulate CSS media feature color-gamut** dropdown, select a **color-gamut** option:
+1. In the **Emulate CSS media feature color-gamut** dropdown list, select a **color-gamut** option:
 
 ![Emulate the CSS color-gamut media feature](./devtools-images/rendering-css-color-gamut.png)
 
@@ -230,12 +226,12 @@ See also:
 * [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../../../rendering-tools/rendering-tool.md)
 
 
-<!-- ====================================================================== -->
-### Improved tooling for Progressive Web Apps
+<!-- ------------------------------ -->
+#### Improved tooling for Progressive Web Apps
 
 
-<!-- ====================================================================== -->
-#### PWA installability warning in the Console
+<!-- ---------- -->
+###### PWA installability warning in the Console
 
 The **Console** now displays a more detailed installability warning message for Progressive Web Apps (PWAs), with a link to [Improving Progressive Web App offline support detection](https://developer.chrome.com/blog/improved-pwa-offline-detection).
 
@@ -245,8 +241,8 @@ See also:
 * [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps-chromium/index.md)
 
 
-<!-- ====================================================================== -->
-#### PWA description length warning in the Manifest pane
+<!-- ---------- -->
+###### PWA description length warning in the Manifest pane
 
 In the **Application** tool, the **Manifest** pane now displays a warning message if the manifest description exceeds 324 characters:
 
@@ -256,12 +252,12 @@ For the history of this feature in the Chromium open-source project, see Issues 
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-<!-- todo: the Application tool seems under-doc'd; contrast the TOC > Tools > Application tool vs. the left-side tree in the tool:
-https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/storage/application-tool -->
+<!-- todo: doc latest tree in Application tool; compare articles eg
+[Application tool, to manage storage](../../../storage/application-tool.md) - see outline of UI at top of page -->
 
 
-<!-- ====================================================================== -->
-### New Remote Address Space column in the Network tool
+<!-- ------------------------------ -->
+#### New Remote Address Space column in the Network tool
 
 <!-- doesn't work in canary 90.0.813.0 -->
 In the **Network** tool, the new **Remote Address Space** column displays the network IP address space of each network resource.  To display the new **Remote Address Space** column:
@@ -282,8 +278,8 @@ See also:
 * [Add or remove columns](../../../network/reference.md#add-or-remove-columns), in _Network features reference_.
 
 
-<!-- ====================================================================== -->
-### Display allowed and disallowed features in the Frame details view
+<!-- ------------------------------ -->
+#### Display allowed and disallowed features in the Frame details view
 
 In the **Application** tool, the **Frames** node in the lower left opens the Frame details view.  The Frame details view now includes a **Permissions Policy** section, which displays a list of allowed and disallowed browser features:
 
@@ -299,8 +295,8 @@ See also:
 <!-- todo: it seems like a new "Application > Webpage Frames" .md page is needed; many What's New items cover the Frame node/page in lower left of Application tool -->
 
 
-<!-- ====================================================================== -->
-### New SameParty column in the Cookies pane
+<!-- ------------------------------ -->
+#### New SameParty column in the Cookies pane
 
 The **Cookies** pane in the **Application** tool now displays the `SameParty` attribute for each cookie:
 
@@ -314,8 +310,8 @@ See also:
 * [View, edit, and delete cookies](../../../storage/cookies.md)
 
 
-<!-- ====================================================================== -->
-### fn.displayName property in the Console tool is now deprecated
+<!-- ------------------------------ -->
+#### fn.displayName property in the Console tool is now deprecated
 
 Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property:
 
@@ -331,8 +327,8 @@ See also:
 <!-- todo: is this function a partial overlap w/ devtools console & JS Ref?  do we have similar doc'n? -->
 
 
-<!-- ====================================================================== -->
-### Full accessibility tree view in the Elements tool
+<!-- ------------------------------ -->
+#### Full accessibility tree view in the Elements tool
 
 ![Experimental feature](./devtools-images/experimental-tag.png)<!-- valid 05/10/2022 -->
 
@@ -359,7 +355,14 @@ See also:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-90) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-90) and is authored by Jecelyn Yeen.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

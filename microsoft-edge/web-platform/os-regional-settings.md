@@ -1,13 +1,13 @@
 ---
-title: Operating System regional data display
+title: Display regional versions of your site, based on OS settings
 description: How users and web developers can use the OS regional format in Microsoft Edge for improved site experiences
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 08/19/2022
 ---
-# Operating System regional data display
+# Display regional versions of your site, based on OS settings
 
 Microsoft Edge provides operating system (OS) regional preference information to help website authors create regional experiences on their website, when viewing your site using Microsoft Edge. This feature allows website authors to deliver value to users who specifically change their regional preferences in the OS to reflect their personal preferences.
 
@@ -17,7 +17,7 @@ Users want to see dates, times, numbers, and other formatting printed according 
 <!-- ====================================================================== -->
 ## Regional format
 
-To reflect a user's regional preferences for how data is displayed (such as the date), Microsoft Edge has a new option in the **Language** section of **Settings**: the **Share additional OS regional format** menu.
+To reflect a user's regional preferences for how data is displayed (such as the date), Microsoft Edge has an option in the **Language** section of **Settings**: the **Share additional OS regional format** menu.
 
 ![The 'Share additional OS regional format' menu with the Limited (default) option selected](./os-regional-settings-images/os-regional-setting.png)
 

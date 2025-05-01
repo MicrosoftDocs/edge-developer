@@ -4,7 +4,8 @@ description: How to use Lighthouse and other tools in DevTools to find ways to m
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 02/15/2023
 ---
 <!-- Copyright Kayce Basques
@@ -48,7 +49,7 @@ The source files for the website are at [MicrosoftEdge / Demos > travel-site](ht
 
 First, set up the website locally, so that you can make changes to it later:
 
-1. Get the website's source code locally: [Download or clone the Demos repo](../sample-code/sample-code.md#download-or-clone-the-demos-repo).
+1. Get the website's source code locally: [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
 
 1. Open the folder you just downloaded or cloned in Visual Studio Code.
 
@@ -251,13 +252,13 @@ The reported JavaScript files are from the `www.bing.com` domain, which means th
 
 To confirm the amount of unused code and possibly find other resources that are unused, use the **Coverage** tool:
 
-1. In DevTools, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage** in the list.
+1. In DevTools, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**, start typing `Coverage`, and then select **Show Coverage** in the list.
 
     ![The Command Menu in DevTools, showing the Show Coverage command](./get-started-images/command-menu-coverage.png)
 
 1. In the **Coverage** tool, click **Start instrumenting coverage and refresh the page** (![Refresh icon](./get-started-images/reload-icon.png)). The **Coverage** tool provides an overview of how much of the JavaScript and CSS code that's loaded on the page was actually run.
 
-    ![The Coverage tool, in the Drawer panel, showing the report of how much code is unused](./get-started-images/coverage-report.png)
+    ![The Coverage tool in the Quick View panel at the bottom of DevTools, showing the report of how much code is unused](./get-started-images/coverage-report.png)
 
 The coverage report confirms that the Bing Map dependencies contain code that's unused when the page loads. The map on the demo website isn't visible when the page first loads. There's a good opportunity to improve performance by loading the Bing Map only when that section of the page becomes visible to users.
 
@@ -491,7 +492,7 @@ Optimize the `initRatings` function to make the page load faster:
     * The **Time to interactive** metric went down to 1.3 seconds.
     * The **Total Blocking Time** metric went down to 0 seconds.
 
-To learn more about how to analyze page performance, see [Performance features reference)](../evaluate-performance/reference.md).
+To learn more about how to analyze page performance, see [Performance features reference)](../performance/reference.md).
 
 ###### Doing less work in the main thread, in the real world
 
@@ -512,7 +513,7 @@ Webpages often load slowly when they use JavaScript for generating most of their
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/speed/get-started/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/lighthouse) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -4,8 +4,8 @@ description: How to use the Chrome DevTools Protocol in your WebView2 app by usi
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2023
 ---
 # Use the Chrome DevTools Protocol (CDP) in WebView2 apps
@@ -18,9 +18,9 @@ To use the Chrome DevTools Protocol API in a WebView2 app, do either of the foll
 
 *  Or, run one of the following methods:
 
-   *  .NET: [CallDevToolsProtocolAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_), [GetDevToolsProtocolEventReceiver](/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true)
+   *  .NET: [CallDevToolsProtocolAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_), [GetDevToolsProtocolEventReceiver](/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver)
 
-   *  Win32 C/C++: [CallDevToolsProtocolMethod](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.774.44&preserve-view=true#calldevtoolsprotocolmethod), [ICoreWebView2DevToolsProtocolEventReceiver](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-1.0.774.44&preserve-view=true)
+   *  Win32 C/C++: [CallDevToolsProtocolMethod](/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod), [ICoreWebView2DevToolsProtocolEventReceiver](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)
 
 
 <!-- ====================================================================== -->
@@ -73,7 +73,7 @@ To create an `HTML file` to find your geolocation, complete following the action
    </html>
    ```
 
-1. Save the `.html` file with the filename `geolocation.html`.
+1. Save the `.html` file with the file name `geolocation.html`.
 
 1. Open Microsoft Edge.
 
@@ -182,4 +182,4 @@ The Chrome DevTools Protocol is maintained by the open source Chromium project, 
 
 * [Microsoft Edge DevTools Protocol overview](../../devtools-protocol-chromium/index.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
-* [Chrome DevTools Protocol (CDP)](../concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 features and APIs_
+* [Chrome DevTools Protocol (CDP)](../concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 APIs_

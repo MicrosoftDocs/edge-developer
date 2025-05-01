@@ -4,7 +4,8 @@ description: How to use the Elements tool in Microsoft Edge DevTools to inspect,
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 02/15/2022
 ---
 # Inspect, edit, and debug HTML and CSS with the Elements tool
@@ -25,3 +26,4 @@ Debug your HTML using the DOM tree, and inspect and work on the CSS for your web
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 * [Style editing for CSS-in-JS frameworks](../css/css-in-js.md)
 * [Get started viewing and changing the DOM](../dom/index.md)
+* [Your first website](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web) (MDN) - How to use HTML, CSS, and JavaScript to build a web page.

@@ -4,7 +4,7 @@ description: Get started using the DevTools extension for Visual Studio Code by 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/06/2022
 ---
 # Get started by clicking the Launch Instance button
@@ -43,7 +43,7 @@ This way of opening DevTools is useful for these simple scenarios:
 
 1. In Visual Studio Code, select **File** > **New Window**.  Initially, no folder is opened.
 
-1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens:
+1. In **Activity Bar**, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens:
 
    ![The Launch Instance button with no folder open](./get-started-launch-instance-images/launch-instance-button-no-folder.png)
 
@@ -69,7 +69,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
 1. In the **Edge DevTools: Browser** tab, in the address bar, select and copy the file path, but not the file name, such as `C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/`.
 
-1. In Activity Bar > **Explorer**, click the **Open Folder** button.  In the **Open Folder** dialog, paste or select the path you copied above.  To paste, on Windows, you might need to change `/` to `\` throughout the path. Then click the **Select Folder** button.
+1. In **Activity Bar** > **Explorer**, click the **Open Folder** button.  In the **Open Folder** dialog, paste or select the path you copied above.  To paste, on Windows, you might need to change `/` to `\` throughout the path. Then click the **Select Folder** button.
 
    The first time you open a folder, you must confirm that you trust the authors of files in this folder:
 
@@ -81,7 +81,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
 <!-- if Trust requires re-trying these two steps: -->
 
-1. In Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools button](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens.
+1. In **Activity Bar**, click **Microsoft Edge Tools** (![Microsoft Edge Tools button](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)).  The **Microsoft Edge Tools** Side Bar opens.
 
 1. Click the **Launch Instance** button.  The **Edge DevTools** tab opens, and the **Edge DevTools: Browser** tab opens, displaying the default, Success page.
 
@@ -136,11 +136,11 @@ By entering a file path in the address bar of the **Edge DevTools: Browser** tab
 
 1. If prompted, click the **Yes, I trust the authors** button.  Aside from granting trust, the **Launch Instance** approach doesn't actually require opening a folder, if you specify a file path rather than a URL in the DevTools browser.
 
-1. If the **Edge DevTools** tabs aren't open already, in the Activity Bar, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)), and then click the **Launch Instance** button:
+1. If the **Edge DevTools** tabs aren't open already, in the **Activity Bar**, click **Microsoft Edge Tools** (![Microsoft Edge Tools icon](./get-started-launch-instance-images/microsoft-edge-tools-icon.png)), and then click the **Launch Instance** button:
 
    ![The Launch Instance button with no folder open](./get-started-launch-instance-images/launch-instance-button-no-folder.png)
 
-1. In the Activity Bar, select **Explorer**, and then right-click `\demo-to-do\index.html` > **Copy Path**.
+1. In the **Activity Bar**, select **Explorer**, and then right-click `\demo-to-do\index.html` > **Copy Path**.
 
 1. In Visual Studio Code, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The **demo-to-do** app opens.  In the address bar, the `file:///` prefix is added and (on Windows) backslashes are changed to forward slashes; for example: `file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html`.
 
@@ -168,7 +168,7 @@ The address bar that results from the **Launch Instance** button can be used to 
 
 1. Click **Close** (**x**) in the **Edge DevTools** tab and in the **Edge DevTools: Browser** tab, if these tabs are open.
 
-1. Select Activity Bar > **Microsoft Edge Tools**.  If the **Targets** section lists any targets, hover on the right side of the target instance and then click **Close instance** (**x**).  The **Launch Instance** button appears, indicating that all DevTools instances are closed.
+1. Select **Activity Bar** > **Microsoft Edge Tools**.  If the **Targets** section lists any targets, hover on the right side of the target instance and then click **Close instance** (**x**).  The **Launch Instance** button appears, indicating that all DevTools instances are closed.
 
    ![Closing DevTools opened via Launch Instance](./get-started-launch-instance-images/launch-instance-close-devtools.png)
 

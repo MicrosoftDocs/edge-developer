@@ -4,8 +4,9 @@ description: Testing text-color contrast using the Color Picker.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 06/07/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 12/01/2023
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -31,23 +32,31 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
 
 **To check the text-color contrast using the Color Picker:**
 
-1. In DevTools, select the **Elements** tool.
+1. In DevTools, open the **Elements** tool.
 
 1. In the **DOM Tree**, select the text element that you want to inspect.
 
-   ![Inspecting a paragraph in the DOM Tree](./color-picker-images/accessibility-elements-paragraph-highlight.png)
+1. On the **Styles** tab, locate the **color** property that's applied to the element, and then click the color square next to the **color** property.
 
-1. On the **Styles** tab, locate the **color** property that's applied to the element, and then select the color square next to the **color** property.
+   The Color Picker opens:
 
-   ![The 'color' property of the element](./color-picker-images/accessibility-elements-styles-paragraph-highlight-color.png)
+   ![The color picker, opened in the Styles tab, next to the color property of the element](./color-picker-images/accessibility-elements-styles-paragraph-highlight-color.png)
 
-1. Examine the **Contrast Ratio** section of the Color Picker.  One check mark means that the element meets the [minimum recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum).  Two check marks means that it meets the [enhanced recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced).
+1. Examine the **Contrast ratio** section of the Color Picker:
 
    ![The 'Contrast Ratio' section of the Color Picker shows two check marks and a value of 13.97](./color-picker-images/accessibility-elements-styles-paragraph-highlight-color-picker.png)
 
-1. For more information, select the **Contrast ratio** section to expand it.  In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color doesn't meet recommendations, then anything on the same side also doesn't meet recommendations.
+   The **Contrast ratio** section shows a score for the contrast ratio between the text and the background and an icon that indicates whether the contrast ratio meets recommendations:
+   
+   * A red crossed-out circle means that the element doesn't meet the [minimum recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum).
+   * One check mark means that the element meets the minimum recommendation.
+   * Two check marks means that the element meets the [enhanced recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced).
+
+1. For more information, click the **Contrast ratio** section to expand it:
 
    ![The 'Contrast Ratio' Line in the visual picker](./color-picker-images/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.png)
+
+   In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color doesn't meet recommendations, then anything on the same side also doesn't meet recommendations.
 
 1. To try different colors, click within the visual picker, or select a color swatch at the bottom of the Color Picker.
 
@@ -61,7 +70,7 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/accessibility/reference/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/accessibility/reference/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

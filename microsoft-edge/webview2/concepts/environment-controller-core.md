@@ -4,14 +4,14 @@ description: "Overview of how the top-level WebView2 classes or interfaces work 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 06/24/2022
 ---
 # Main classes for WebView2: Environment, Controller, and Core
 
 <!-- keep sync'd:
-* [Main classes: Environment, Controller, and Core](overview-features-apis.md#main-classes-environment-controller-and-core) in _Overview of WebView2 features and APIs_.
+* [Main classes: Environment, Controller, and Core](overview-features-apis.md#main-classes-environment-controller-and-core) in _Overview of WebView2 APIs_.
 * [Main classes for WebView2: Environment, Controller, and Core](environment-controller-core.md) - topmost content.
 -->
 

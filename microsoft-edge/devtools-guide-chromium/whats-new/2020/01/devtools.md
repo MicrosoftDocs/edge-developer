@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 81)
+title: What's New in DevTools (Microsoft Edge 81)
 description: 3D View, Visual Studio integration with Microsoft Edge, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
@@ -22,15 +23,15 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 81)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
 
-<!-- ====================================================================== -->
-### Accessibility improvements to the DevTools
+<!-- ------------------------------ -->
+#### Accessibility improvements to the DevTools
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -49,8 +50,8 @@ See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
-<!-- ====================================================================== -->
-### Using the DevTools in other languages
+<!-- ------------------------------ -->
+#### Using the DevTools in other languages
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -93,8 +94,8 @@ See also:
 * [Change DevTools language settings](../../../customize/localization.md)
 
 
-<!-- ====================================================================== -->
-### webhint Microsoft Edge extension
+<!-- ------------------------------ -->
+#### webhint Microsoft Edge extension
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -108,8 +109,8 @@ See also:
 * [The webhint extension for Visual Studio Code](../../../../test-and-automation/webhint.md)
 
 
-<!-- ====================================================================== -->
-### 3D View
+<!-- ------------------------------ -->
+#### 3D View
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -117,7 +118,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 ![The 3D View in the DevTools](./devtools-images/3dview.png)
 
-To access the 3D View, press **Ctrl+Shift+P** to open the Command Menu, start typing `3d view`, and then select **Show 3D View**.
+To open the **3D View** tool, press **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**, start typing `3d view`, and then select **Show 3D View**.
 
 The Microsoft Edge team is working with the Chromium team on the UI and adding more functionality to the 3D View, so please use the **Send Feedback** icon!
 
@@ -127,8 +128,8 @@ See also:
 * [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md)
 
 
-<!-- ====================================================================== -->
-### Visual Studio Code extensions
+<!-- ------------------------------ -->
+#### Visual Studio Code extensions
 
 The DevTools team has also released some extensions for [Visual Studio Code](https://code.visualstudio.com) that let you use the power of the DevTools directly from your text editor! Check out the extensions below:
 
@@ -137,8 +138,8 @@ See also:
 * [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
 
 
-<!-- ====================================================================== -->
-#### Elements for Microsoft Edge
+<!-- ---------- -->
+###### Elements for Microsoft Edge
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -151,8 +152,8 @@ Update: As of 2022, the **Elements for Microsoft Edge** extension is now the **M
 For more information, check out [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
 
 
-<!-- ====================================================================== -->
-#### Debugger for Microsoft Edge
+<!-- ---------- -->
+###### Debugger for Microsoft Edge
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -164,8 +165,8 @@ With the Debugger for Microsoft Edge Visual Studio Code extension, debug JavaScr
 Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extension** has been replaced by a built-in debugger for Microsoft Edge in Visual Studio Code.  See [Debug Microsoft Edge in Visual Studio Code](../../../../visual-studio-code/debugger-for-edge.md).
 
 
-<!-- ====================================================================== -->
-#### webhint
+<!-- ---------- -->
+###### webhint
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -180,8 +181,8 @@ See also:
 * [The webhint extension for Visual Studio Code](../../../../visual-studio-code/webhint.md)
 
 
-<!-- ====================================================================== -->
-### Visual Studio integration
+<!-- ------------------------------ -->
+#### Visual Studio integration
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -192,8 +193,8 @@ In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to d
 To learn more about debugging Microsoft Edge from Visual Studio, see [Visual Studio for web development](../../../../visual-studio/index.md).
 
 
-<!-- ====================================================================== -->
-### Tracking prevention Console messages
+<!-- ------------------------------ -->
+#### Tracking prevention Console messages
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
@@ -214,8 +215,8 @@ See also:
 The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.
 
 
-<!-- ====================================================================== -->
-### Moto G4 support in Device Mode
+<!-- ------------------------------ -->
+#### Moto G4 support in Device Mode
 
 After [enabling the Device Toolbar](../../../device-mode/index.md#simulate-a-mobile-viewport), simulate the dimensions of a Moto G4 viewport from the **Device** list.
 
@@ -233,16 +234,16 @@ Related features:
 Chromium issue [#924693](https://crbug.com/924693)
 
 
-<!-- ====================================================================== -->
-### Cookie-related updates
+<!-- ------------------------------ -->
+#### Cookie-related updates
 
 See also:
 * [View, edit, and delete cookies](../../../../devtools-guide-chromium/storage/cookies.md)
 * [Display cookies](../../../../devtools-guide-chromium/network/reference.md#display-cookies) in _Network features reference_
 
 
-<!-- ====================================================================== -->
-#### Blocked cookies in the Cookies pane
+<!-- ---------- -->
+###### Blocked cookies in the Cookies pane
 
 The **Cookies** pane in the **Application** panel now displays blocked cookies with a yellow background.
 
@@ -251,8 +252,8 @@ The **Cookies** pane in the **Application** panel now displays blocked cookies w
 Chromium issue [#1030258](https://crbug.com/1030258)  <!-- inaccessible  -->
 
 
-<!-- ====================================================================== -->
-#### Cookie priority in the Cookie pane
+<!-- ---------- -->
+###### Cookie priority in the Cookie pane
 
 The Cookies tables in the **Network** and **Application** tools now include a **Priority** column.
 
@@ -261,16 +262,16 @@ Caution: Chromium-based browsers, like Microsoft Edge, are the only browsers tha
 Chromium issue [#1026879](https://crbug.com/1026879)
 
 
-<!-- ====================================================================== -->
-#### Edit all cookie values
+<!-- ---------- -->
+###### Edit all cookie values
 
 All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes.  For an explanation of each column, see [Fields](../../../storage/cookies.md#fields)in _View, edit, and delete cookies_.
 
 ![Editing a cookie value](./devtools-images/editcookie.png)
 
 
-<!-- ====================================================================== -->
-#### Copy as Node.js fetch to include cookie data
+<!-- ---------- -->
+###### Copy as Node.js fetch to include cookie data
 
 To get a `fetch` expression that includes cookie data, right-click a network request, and then select **Copy** > **Copy as Node.js fetch**.
 
@@ -279,8 +280,8 @@ To get a `fetch` expression that includes cookie data, right-click a network req
 Chromium issue [#1029826](https://crbug.com/1029826)
 
 
-<!-- ====================================================================== -->
-### More accurate web app manifest icons
+<!-- ------------------------------ -->
+#### More accurate web app manifest icons
 
 Previously, the **Manifest** pane in the **Application** panel sent its own requests in order to display web app manifest icons.  DevTools now shows the exact same manifest icon that Microsoft Edge uses.
 
@@ -292,8 +293,8 @@ See also:
 * [Open the Cookies pane](../../../../devtools-guide-chromium/storage/cookies.md#open-the-cookies-pane) in _View, edit, and delete cookies_
 
 
-<!-- ====================================================================== -->
-### Hover on CSS content properties to display unescaped values
+<!-- ------------------------------ -->
+#### Hover on CSS content properties to display unescaped values
 
 In the **Styles** pane of the **Elements** tool, to display the unescaped version of a value of a `content` property, hover on the value.
 
@@ -309,8 +310,8 @@ See also:
 * [CSS features reference](../../../../devtools-guide-chromium/css/reference.md)
 
 
-<!-- ====================================================================== -->
-### More detailed source map errors in the Console
+<!-- ------------------------------ -->
+#### More detailed source map errors in the Console
 
 The Console now provides more detail on why a source map failed to load or parse.  Previously it just provided an error without explaining what went wrong.
 
@@ -321,8 +322,8 @@ See also:
 * [Map the processed code to your original source code, for debugging](../../../../devtools-guide-chromium/javascript/source-maps.md)
 
 
-<!-- ====================================================================== -->
-### Setting for disabling scrolling past the end of a file
+<!-- ------------------------------ -->
+#### Setting for disabling scrolling past the end of a file
 
 To prevent the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel, open [Settings](../../../customize/index.md#settings) and then clear the checkbox **Preferences** > **Sources** > **Allow scrolling past end of file**.
 
@@ -337,7 +338,14 @@ See also:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-81) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-81) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

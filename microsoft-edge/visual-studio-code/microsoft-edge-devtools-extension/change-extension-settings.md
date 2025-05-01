@@ -4,7 +4,7 @@ description: Article 1 about the Microsoft Edge Developer Tools extension for Vi
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Changing the extension settings

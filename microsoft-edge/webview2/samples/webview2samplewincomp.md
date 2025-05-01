@@ -4,8 +4,8 @@ description: This WebView2 sample demonstrates creating an application that embe
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 06/14/2022
 ---
 # Win32 sample app with Visual Composition
@@ -14,7 +14,7 @@ This WebView2 sample embeds a WebView2 control within a Win32 native application
 
 *  Sample name: **WebView2SampleWinComp**
 *  Repo directory: [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp)
-*  Solution file: **WebView2SampleWinComp.sln**
+*  Solution file: `WebView2SampleWinComp.sln`
 
 This sample is built as a Win32 Visual Studio 2019 project.  It uses C++ and HTML/CSS/JavaScript in the WebView2 environment.
 
@@ -28,15 +28,7 @@ See also [Readme file for WebView2SampleWinComp](https://github.com/MicrosoftEdg
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install a preview channel of Microsoft Edge
-
-We recommend the latest version of the Edge Canary channel.
-
-1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
-
-
-<!-- ====================================================================== -->
-## Step 2 - Install Visual Studio with C++ support
+## Step 1 - Install Visual Studio with C++ support
 
 Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
 
@@ -55,15 +47,13 @@ This sample is built as a Win32 Visual Studio 2019 project.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Clone or download the WebView2Samples repo
-
-The first step to build this sample is to get a local copy of the samples repo.
+## Step 2 - Clone or download the WebView2Samples repo
 
 1. If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Open the Solution and set the Windows SDK target
+## Step 3 - Open the Solution and set the Windows SDK target
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
@@ -85,7 +75,7 @@ If the solution is already open, you can change the target as follows:
 
 
 <!-- ====================================================================== -->
-## Step 5 - Install the Windows SDK
+## Step 4 - Install the Windows SDK
 
 By default, this sample app uses the latest Window 10 SDK version you have installed.  There's an issue with Windows 10 SDK, version 2004 (10.0.**19041**.0) that will stop this sample app from building.  If you run into this issue, either install (and retarget this project to use) a later version, such as Windows 10 SDK version 2104 (10.0.**20348**.0), or an earlier version, such as 10.0.**18362**.1.  
 
@@ -115,13 +105,13 @@ Do the previous step, "Open the Solution and set the Windows SDK target".  Or, i
 
 
 <!-- ====================================================================== -->
-## Step 6 - Install workloads if prompted
+## Step 5 - Install workloads if prompted
 
 *  If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Build and run the project
+## Step 6 - Build and run the project
 
 After opening the solution in Visual Studio (above) and responding to any setup or installation prompts, the project opens in Visual Studio, showing the **WebView2SampleWinComp** project in Solution Explorer:
 
@@ -147,7 +137,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 8 - Update the installed packages
+## Step 7 - Update the installed packages
 
 This step is optional.  The sample has preinstalled:
 *  A version of the WebView2 prerelease SDK.
@@ -173,7 +163,7 @@ This step is optional.  The sample has preinstalled:
 
 
 <!-- ====================================================================== -->
-## Step 9 - Inspect the code
+## Step 8 - Inspect the code
 
 1. In the Visual Studio code editor, inspect the code:
 

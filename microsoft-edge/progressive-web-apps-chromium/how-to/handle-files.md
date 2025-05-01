@@ -1,16 +1,16 @@
 ---
-title: Handle files in Progressive Web Apps
-description: How to register your PWA as a file handler to more deeply integrate it in the operating system.
+title: Handle files in a PWA
+description: How to register your Progressive Web App (PWA) as a file handler, to more deeply integrate the PWA into the operating system.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 04/03/2023
 ---
-# Handle files in Progressive Web Apps
+# Handle files in a PWA
 
-Progressive Web Apps that can handle files feel more native to users and better integrated in the operating system.
+A Progressive Web App (PWA) that can handle files feels more native to users and better integrated in the operating system.
 
 Websites can already let users upload files by [using the `<input type="file">` or drag and drop](https://developer.mozilla.org/docs/Web/API/File/Using_files_from_web_applications), but PWAs go one step further and can register as file handlers on the operating system.
 
@@ -19,9 +19,7 @@ When a PWA is registered as a file handler for certain file types, the operating
 <!-- ====================================================================== -->
 ## Define which files your app handles
 
-The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file](web-app-manifests.md), using the `file_handlers` array member.
-
-Each entry in the `file_handlers` array needs to have two properties:
+The first thing to do is to declare which types of files your app handles. This is done in your app manifest file, by using the `file_handlers` array member.  Each entry in the `file_handlers` array needs to have two properties:
 
 *  `action`: The URL the operating system should navigate to when launching your PWA.
 *  `accept`: An object of accepted file types. Keys are MIME-types (partial types, using the wildcard symbol `*`, are accepted), and values are arrays of accepted file extensions.
@@ -44,6 +42,10 @@ Consider the following example:
 ```
 
 In this example, the app registers a single file handler for that accepts text files. When a `.txt` file is opened by the user by, for example, double-clicking its icon on the desktop, then the operating system launches the app using the `/openFile` URL.
+
+See also:
+* [Associate files with your PWA](https://developer.mozilla.org/docs/Web/Progressive_web_apps/How_to/Associate_files_with_your_PWA) at MDN > References > Progressive web apps.
+* [file_handlers](https://developer.mozilla.org/docs/Web/Manifest/file_handlers) at MDN > References > Web app manifests.
 
 
 <!-- ====================================================================== -->

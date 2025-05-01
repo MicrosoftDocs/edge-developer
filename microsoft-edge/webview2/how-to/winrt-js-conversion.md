@@ -4,8 +4,8 @@ description: How to use WinRT types and members from within web-side JavaScript 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 01/13/2023
 ---
 # How WinRT types and members are represented in JavaScript
@@ -35,6 +35,10 @@ The WebView2 WinRT JS Projection tool (**wv2winrt**) converts from WinRT to Java
 | `Interface` | JavaScript object | A `RuntimeClass` interface is converted to a JavaScript object that has the same methods, properties, and events.  There is no support for implementing an interface in JavaScript. |
 | Class static member | JavaScript object property | See below. |
 | Class constructor | JavaScript constructor and function | See below. |
+
+When passing JavaScript objects to host objects:
+*  If JavaScript `Date` objects need to be passed to host objects as `VT_DATE`, set the host object's `shouldSerializeDates` property to `true`. By default, `Date` objects are passed to the host as `string`, by using `JSON.stringify`.
+*  If JavaScript typed arrays need to be passed to host objects as `array`, set the host object's `shouldPassTypedArraysAsArrays` property to `true`. By default, typed arrays are passed to the host as `IDispatch`.
 
 See also:
 * [Introduction to Microsoft Interface Definition Language 3.0](/uwp/midl-3/intro)
@@ -98,7 +102,7 @@ If there is more than one overload that has a matching number of parameters, the
 
 If a WinRT method has `out` parameters, when calling that method from JavaScript, the returned result will be a JavaScript object that a property for each `out` parameter.  If the method has a non-`void` return type, then the returned result object will also have a property named `value` that contains the return value of the method.
 
-When calling a WinRT method that has `out` parameters, any `out` parameters are skipped in the parameter list in the method call.  For example, suppose a WinRT method that has `out` parameters and a non-`void` return type is defined as follows, using MIDL3:
+When calling a WinRT method that has `out` parameters, any `out` parameters are skipped in the parameter list in the method call (unless they are array type).  For example, suppose a WinRT method that has `out` parameters and a non-`void` return type is defined as follows, using MIDL3:
 
 ```cpp
 String MethodWithOutParams(String stringParam1, 
@@ -123,6 +127,31 @@ console.assert(result.intParam2 == 1);
 
 console.assert(result.intParam3 == 2);
 ```
+
+For array type `out` parameters, the array needs to be passed into the method's parameter list when calling the method. For a non-`void` return type, the result array will replace the array that's passed in for the method call. For the `void` return type, the result array will be the result of the method call.
+
+```cpp
+// Both methods update input array values to index values
+String NonVoidMethodWithArrayOutParam(out Int[] intArrayParam);
+
+Void VoidMethodWithArrayOutParam(out Int[] intArrayParam);
+```
+
+```javascript
+let input_array1 = [0, 0, 0];
+
+let result1 = object.NonVoidMethodWithArrayOutParam(input_array1);
+
+console.assert(input_array1 == [0, 1, 2])
+
+let input_array2 = [0, 0, 0];
+
+let result2 = object.VoidMethodWithArrayOutParam(input_array2);
+
+console.assert(result2 == [0, 1, 2]);
+```
+
+If passing typed arrays as array `out` parameters, `chrome.webview.hostObjects.options.shouldPassTypedArraysAsArrays` needs to be set to `true`.
  
 See also:
 * [Issue #2788](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2788) about WebView2 SDK and Windows App SDK (WinUI3) in C++ WinRT

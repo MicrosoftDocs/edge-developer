@@ -4,7 +4,8 @@ description: The default keyboard shortcuts for Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
@@ -55,11 +56,11 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Toggle [Device emulation](../device-mode/index.md) | **Ctrl+Shift+M** | **Command+Shift+M** |
 | Toggle **Inspect Element Mode** | **Ctrl+Shift+C** | **Command+Shift+C** |
 | Open the [Command Menu](../command-menu/index.md) | **Ctrl+Shift+P** | **Command+Shift+P** |
-| Toggle the [Drawer](../customize/index.md#drawer) | **Esc** | **Esc** |
+| Toggle the [Quick View](../customize/index.md#quick-view) panel | **Esc** | **Esc** |
 | Normal refresh | **F5** or **Ctrl+R** | **Command+R** |
 | Hard refresh | **Ctrl+F5** or **Ctrl+Shift+R** | **Command+Shift+R** |
 | Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** tools | **Ctrl+F** | **Command+F** |
-| Opens the **Search** tab in the [Drawer](../customize/index.md#drawer), which lets you search for text across all loaded resources | **Ctrl+Shift+F** | **Command+Option+F** |
+| Opens the **Search** tool in the [Quick View](../customize/index.md#quick-view), which lets you search for text across all loaded resources | **Ctrl+Shift+F** | **Command+Option+F** |
 | Open a file in the **Sources** tool | **Ctrl+O** or **Ctrl+P** | **Command+O** or **Command+P** |
 | Zoom in | **Ctrl**+**+** | **Command**+**+** |
 | Zoom out | **Ctrl**+**-** | **Command**+**-** |
@@ -86,7 +87,9 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Hide the currently selected element | **H** | **H** |
 | Toggle **Edit as HTML** mode on the currently selected element | **Function+F2** | **F2** |
 
-### Styles pane keyboard shortcuts
+
+<!-- ------------------------------ -->
+#### Styles pane keyboard shortcuts
 
 | Action | Windows/Linux | macOS |
 |---|---|---|
@@ -122,7 +125,9 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | Press **Ctrl+Shift+O**, then type in the name of the declaration / rule set, or select it from the list of options | press **Command+Shift+O**, then type in the name of the declaration / rule set, or select it from the list of options |
 | Close the active tab | **Alt+W** | **Option+W** |
 
-### Code Editor keyboard shortcuts
+
+<!-- ------------------------------ -->
+#### Code Editor keyboard shortcuts
 
 | Action | Windows/Linux | macOS |
 |---|---|---|
@@ -178,7 +183,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/shortcuts/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/shortcuts/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

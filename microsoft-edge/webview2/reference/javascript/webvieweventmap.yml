@@ -1,0 +1,35 @@
+### YamlMime:TSType
+name: WebViewEventMap
+uid: 'WebView2Script!WebViewEventMap:class'
+package: WebView2Script!
+fullName: WebViewEventMap
+summary: Events of the `WebView` interface.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: message
+    uid: 'WebView2Script!WebViewEventMap#message:member'
+    package: WebView2Script!
+    fullName: message
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '"message": WebViewMessageEvent;'
+      return:
+        type: '<xref uid="WebView2Script!WebViewMessageEvent:class" />'
+  - name: sharedbufferreceived
+    uid: 'WebView2Script!WebViewEventMap#sharedbufferreceived:member'
+    package: WebView2Script!
+    fullName: sharedbufferreceived
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '"sharedbufferreceived": SharedBufferReceivedEvent;'
+      return:
+        type: '<xref uid="WebView2Script!SharedBufferReceivedEvent:class" />'

@@ -4,8 +4,9 @@ description: Convenience utility functions, commands, and DOM selectors that are
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 11/20/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -25,55 +26,51 @@ ms.date: 05/04/2021
 # Console Utilities API reference
 -->
 
-The Console Utilities API contains a collection of convenience functions for performing common tasks, such as:
+The Console Utilities API contains a collection of convenience variables and functions for performing common tasks, such as:
+
 *  Selecting and inspecting DOM elements.
 *  Displaying data in a readable format.
 *  Stopping and starting the profiler.
 *  Monitoring DOM events.
 
-These commands only work by entering them directly into the DevTools **Console**; you can't call these commands from scripts.
+These variables and functions only work by entering them directly into the DevTools **Console**; you can't use the variables and call the functions from scripts.
 
 
 <!-- ====================================================================== -->
 ## Summary
 
-| Function | Description |
+| Variable or function | Description |
 |---|---|
-| [$_](#recently-evaluated-expression) | Returns the value of the most recently evaluated expression. |
-| [$0 - $4](#recently-selected-element-or-javascript-object) | Returns a recently selected element or JavaScript object. |
-| [$(selector)](#query-selector) | Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`. |
-| [$$(selector, [startNode])](#query-selector-all) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
-| [$x(path, [startNode])](#xpath) | Returns an array of DOM elements that match the specified XPath expression. |
+| [Recently evaluated expression: $_](#recently-evaluated-expression-_) | Returns the value of the most recently evaluated expression. |
+| [Recently selected element or JavaScript object: $0-$4](#recently-selected-element-or-javascript-object-0-4) | Returns a recently selected element or JavaScript object. |
+| [Query selector: $(selector)](#query-selector-selector) | Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`. |
+| [Query selector all: \$\$(selector, \[startNode\])](#query-selector-all-selector-startnode) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
+| [XPath: \$x(path, \[startNode\])](#xpath-xpath-startnode) | Returns an array of DOM elements that match the specified XPath expression. |
 | [clear()](#clear) | Clears the console of its history. |
-| [copy(object)](#copy) | Copies a string representation of the specified object to the clipboard. |
-| [debug(function)](#debug) | When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel. |
-| [dir(object)](#dir) | Displays an object-style listing of all of the properties for the specified object, like `console.dir()`. |
-| [dirxml(object)](#dirxml) | Prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`. |
-| [inspect(object/function)](#inspect) | Opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript heap object in the **Memory** tool. |
-| [getEventListeners(object)](#geteventlisteners) | Returns the event listeners that are registered on the specified object. |
-| [keys(object)](#keys) | Returns an array containing the names of the properties belonging to the specified object. |
-| [monitor(function)](#monitor) | Logs a message to the console that indicates the function name, along with the arguments passed to the function as part of a request. |
-| [monitorEvents(object[, events])](#monitorevents) | When one of the specified events occurs on the specified object, the event object is logged to the console. |
-| [profile([name])](#profile) | Starts a JavaScript CPU profiling session with an optional name. |
-| [profileEnd([name])](#profileend) | Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool. |
-| [queryObjects(Constructor)](#queryobjects) | Returns an array of the objects that were created by the specified constructor. |
-| [table(data[, columns])](#table) | Logs object data, formatted as a table with column headings, for the specified data object. |
-| [undebug(function)](#undebug) | Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked. |
-| [unmonitor(function)](#unmonitor) | Stops the monitoring of the specified function. |
-| [unmonitorEvents(object[, events])](#unmonitorevents) | Stops monitoring events for the specified object and events. |
-| [values(object)](#values) | Returns an array containing the values of all properties belonging to the specified object. |
+| [copy(object)](#copyobject) | Copies a string representation of the specified object to the clipboard. |
+| [debug(function)](#debugfunction) | When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel. |
+| [dir(object)](#dirobject) | Displays an object-style listing of all of the properties for the specified object, like `console.dir()`. |
+| [dirxml(object)](#dirxmlobject) | Prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`. |
+| [inspect(object/function)](#inspectobjectfunction) | Opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript heap object in the **Memory** tool. |
+| [getEventListeners(object)](#geteventlistenersobject) | Returns the event listeners that are registered on the specified object. |
+| [keys(object)](#keysobject) | Returns an array containing the names of the properties belonging to the specified object. |
+| [monitor(function)](#monitorfunction) | Logs a message to the console that indicates the function name, along with the arguments passed to the function as part of a request. |
+| [monitorEvents(object[, events])](#monitoreventsobject-events) | When one of the specified events occurs on the specified object, the event object is logged to the console. |
+| [profile([name])](#profilename) | Starts a JavaScript CPU profiling session with an optional name. |
+| [profileEnd([name])](#profileendname) | Completes a JavaScript CPU profiling session and displays the results in the **Performance** tool. |
+| [queryObjects(constructor)](#queryobjectsconstructor) | Returns an array of the objects that were created by the specified constructor. |
+| [table(data[, columns])](#tabledata-columns) | Logs object data, formatted as a table with column headings, for the specified data object. |
+| [undebug(function)](#undebugfunction) | Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked. |
+| [unmonitor(function)](#unmonitorfunction) | Stops the monitoring of the specified function. |
+| [unmonitorEvents(object[, events])](#unmonitoreventsobject-events) | Stops monitoring events for the specified object and events. |
+| [values(object)](#valuesobject) | Returns an array containing the values of all properties belonging to the specified object. |
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## Recently evaluated expression
-<!-- planned new heading to troubleshoot: -->
-<!-- ## $_ (Recent expression value) -->
+## Recently evaluated expression: $_
 
-<!-- summary to bubble up: -->
-Returns the value of the most recently evaluated expression.
+<!-- summary bubbled up to Summary table: -->
+`$_` returns the value of the most recently evaluated expression.
 
 **Syntax:**
 
@@ -81,886 +78,749 @@ Returns the value of the most recently evaluated expression.
 $_
 ```
 
-### Example 1
+#### Example 1
 
-1. To open the **Console** tool: In Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tab.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-1. Click in the **Console**, type the expression `2+2`, and then press **Enter**:
+1. In the **Console** tool, type the expression `2+2`, and then press **Enter**.
 
-   In the following figure, a simple expression (`2+2`) is evaluated.  The `$_` property is then evaluated, which contains the same value:
+   The expression is evaluated, and the result is shown. The `$_` variable is also set to the result of the expression.
 
-   ![$_ is the most recently evaluated expression](./utilities-images/console-arithmatic.png)
+1. Type `$_`, and then press **Enter**:
 
-   ```javascript
-   2+2
-   ```
-   
-   The simple expression (`2+2`) is evaluated as you type, and the Console outputs the number `4`.  The `$_` property takes on the value `4`.
+   ![The Console tool showing that the $_ variable returns the result of the previous expression](./utilities-images/$_.png)
 
-1. Type the expression `$_`, and then press **Enter**:
+#### Example 2
 
-   ```javascript
-   $_
-   ```
-
-   The value of the `$_` property is the value of the previously evaluated expression; the number 4.
-
-   ![$_ represents the most recently evaluated expression, which is the number 4 from the previously entered statement](./utilities-images/console-arithmatic.png)
-
-
-### Example 2
-
-1. To open the **Console** tool: In Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tab.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
 1. Paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    ["john", "paul", "george", "ringo"]
    ```
-   
+
    The evaluated expression is an array of names.
 
-1. Type the following code into the **Console**, and then press **Enter**:
-
-   ```javascript
-   $_
-   ```
-
-   `$_` represents the previously evaluated expression, which is an array of names.
-
-   
 1. Type the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    $_.length
    ```
 
-   The expression `$_.length` is evaluated to find the length of the array, which is the number 4.  `$_` now takes on the value 4, instead of an array of names.
-   
+   The expression `$_.length` is evaluated and `4` is shown in the **Console** because `$_` refers to the previously evaluated expression, which is the array of names. `$_.length` is the length of the array of names.
+
 1. Type the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    $_
    ```
-   
-   `$_` represents the previously evaluated expression, which is now the number 4.
 
+   `$_` always refers to the previously evaluated expression, which is now the number 4.
 
-   ![The value of $_ changes to the value of the previously evaluated expression](./utilities-images/console-array-length.png)
+   ![The value of $_ changes to the value of the previously evaluated expression](./utilities-images/array-length.png)
 
-![$_ changes when new commands are evaluated](./utilities-images/console-array-length.png)
-
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## Recently selected element or JavaScript object
-<!-- planned new heading to troubleshoot: -->
-<!-- ## $0 - $4 -->
+## Recently selected element or JavaScript object: $0-$4
 
-<!-- summary to bubble up: -->
-Returns a recently selected element or JavaScript object.
+<!-- summary bubbled up to Summary table: -->
+`$0`, `$1`, `$2`, `$3`, and `$4` return recently selected elements or JavaScript objects.
 
 <!-- add'l info -->
-`$0` returns the most recently selected element or JavaScript object, `$1` returns the second most recently selected one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements that were inspected within the **Elements** tool, or the last five JavaScript heap objects that were selected in the **Memory** tool.
+`$0` returns the most recently selected element or JavaScript object, `$1` returns the second most recently selected one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` variables work as a historical reference to the last five DOM elements that were inspected within the **Elements** tool, or the last five JavaScript heap objects that were selected in the **Memory** tool.
 
-### Syntax
+#### Syntax
 
 ```javascript
 $0
 ```
 
-### Example
+#### Example
 
-In the following figure, an `img` element is selected in the **Elements** tool.  In the **Console** drawer, `$0` has been evaluated and displays the same element:
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-![The $0 command](./utilities-images/console-image-highlighted-$0.png)
+1. In the **Elements** tool, select an element, for example an `<input>` element.
 
-The following image shows a different element selected in the same webpage.  The `$0` now refers to the newly selected element, while `$1` returns the previously selected element:
+1. Open the **Console** tool in the **Quick View** panel, at the bottom of DevTools.
 
-![The $1 command](./utilities-images/console-image-highlighted-$1.png)
+1. Type `$0` in the **Console** tool, and then press **Enter**.
 
-<br/><br/>
+   The `$0` variable returns the selected `<input>` element:
 
----
+   ![The result of evaluating the $0 command in the Console](./utilities-images/image-highlighted-$0.png)
+
+1. Select a different element in the **Elements** tool, for example a `<div>` element.
+
+1. In the **Console** tool, type `$0`, and then press **Enter**.
+
+   `$0` refers to the newly selected element, which is the `<div>` element.
+
+1. Type `$1`, and then press **Enter**.
+
+   `$1` refers to the previously selected element, which is the `<input>` element:
+
+   ![The result of evaluating the $0 and the $1 commands](./utilities-images/image-highlighted-$1.png)
+
 
 <!-- ====================================================================== -->
-## Query selector
-<!-- planned new heading to troubleshoot: -->
-<!-- ## $(selector) -->
+## Query selector: $(selector)
 
-<!-- summary to bubble up: -->
-Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`.
+<!-- summary bubbled up to Summary table: -->
+`$(selector)` returns the reference to the first DOM element that matches the specified CSS selector `selector`.
 
 <!-- add'l info -->
-This function is an alias for the [document.querySelector()](https://developer.mozilla.org/docs/Web/API/Document/querySelector) function.
+This function is similar to the [document.querySelector()](https://developer.mozilla.org/docs/Web/API/Document/querySelector) function.
 
-### Syntax
+If you are using a library such as jQuery that uses `$`, the functionality is overwritten, and `$` corresponds to the implementation from that library.
 
-```javascript
-$(selector, [startNode])
-```
-
-### Example
-
-In the following figure, `$('img')` returns a reference to the first `<img>` element in the webpage:
-
-![$('img') returns a reference to the first <img> element in the webpage](./utilities-images/console-element-selector-image.png)
-
-Right-click the returned result and then select **Reveal in Elements Panel** to find it in the DOM, or **Scroll in to View** to show it on the page.
-
-### Example
-
-The following example returns a reference to the currently selected element and displays its `src` property:
+#### Syntax
 
 ```javascript
-$('img').src
+$(selector, [parentElement])
 ```
 
-Result:
+#### Example 1
 
-![The result of $('img').src](./utilities-images/console-element-selector-image-source.png)
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-This function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
+1. In the **Console** tool, type `$('input')`. The first element that matches the `input` CSS selector is displayed:
 
-### Example
+   ![$('input') returns a reference to the first <input> element in the webpage](./utilities-images/element-selector-image.png)
 
-```javascript
-$('img', document.querySelector('title--image')).src
-```
+1. Right-click the returned result and then select **Reveal in Elements Panel** to find it in the DOM, or **Scroll in to View** to show it on the page.
 
-Result: the first `img` element after the `title--image` element is found, and the `src` property of the `img` element is returned:
+#### Example 2
 
-![The result of $('img', document.querySelector('title--image')).src](./utilities-images/console-element-selector-image-filter-source.png)
+The `$()` function accepts a second parameter, `parentElement`, that specifies a parent element which to search in. The default value of the parameter is `document`, which means that the entire webpage is searched by default. By specifying a parent element, you can search for elements within a specific part of the webpage.
 
-> [!NOTE]
-> If you are using a library such as jQuery that uses `$`, the functionality is overwritten, and `$` corresponds to the implementation from that library.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-<br/><br/>
+1. In the **Console** tool, type `$('input', $('ul'))`
 
----
+   The first element that matches the `input` CSS selector found within the first `ul` element is retruned:
+
+   ![The result of $('input', $('ul'))](./utilities-images/element-selector-image-filter-source.png)
+
 
 <!-- ====================================================================== -->
-## Query selector all
-<!-- planned new heading to troubleshoot: -->
-<!-- ## \$\$(selector, \[startNode\]) -->
+## Query selector all: \$\$(selector, \[startNode\])
 
-<!-- summary to bubble up: -->
-Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`.
+<!-- summary bubbled up to Summary table: -->
+`$$()` returns a list of elements that match the specified CSS selector, like `document.querySelectorAll()`.
 
 <!-- add'l info -->
-This function is equivalent to [document.querySelectorAll()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll).
+This function is similar to [document.querySelectorAll()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll) but returns an `array` of element, instead of a `NodeList`.
 
-### Syntax
-
-```javascript
-$$(selector, [startNode])
-```
-
-### Example
-
-In the following example, `$$()` creates an array of all `<img>` elements in the current webpage, and displays the value of the `src` property for each element:
+#### Syntax
 
 ```javascript
-var images = $$('img');
-for (each in images) {
-    console.log(images[each].src);
-}
+$$(selector, [parentElement])
 ```
 
-Result:
+#### Example 1
 
-![Using $$() to select all images in the webpage and display the sources](./utilities-images/console-element-selector-image-all.png)
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-This query selector function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
+1. In the **Console** tool, type `$$('button')`. All the `<button>` elements in the webpage are displayed:
 
-### Example
+   ![The result of $$('button')](./utilities-images/element-selector-image-all.png)
 
-The following, modified version of the previous example uses `$$()` to create an array of all `<img>` elements that appear in the current webpage after the selected node:
+#### Example 2
 
-```javascript
-var images = $$('img', document.querySelector(`title--image`));
-for (each in images) {
-   console.log(images[each].src);
-}
-```
+This `$$()` function also supports a second parameter, `parentElement`, that specifies a parent element which to search in. The default value of the parameter is `document`, which means that the entire webpage is searched by default. By specifying a parent element, you can search for elements within a specific part of the webpage.
 
-Here's the result.  `$$()` selects all images that appear after the specified `<div>` element in the webpage, and displays the sources:
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-![Using $$() to select all images that appear after the specified <div> element in the webpage and display the sources](./utilities-images/console-element-selector-image-filter-all.png)
+1. In the **Console** tool, type `$$('button', $('li.task'))`. All the `<button>` elements that are descendants of the first `<li class="task">` element are displayed:
 
+   ![The result of $$('button', $('li.task'))](./utilities-images/element-selector-image-all-descendants.png)
 
-###### Entering a newline character 
-
-In the **Console**, to start a new line without running the script, press **Shift+Enter**.
-
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## XPath
-<!-- planned new heading to troubleshoot: -->
-<!-- ## \$x(path, \[startNode\]) -->
+## XPath: \$x(path, \[startNode\])
 
-<!-- summary to bubble up: -->
-Returns an array of DOM elements that match the specified XPath expression.
+<!-- summary bubbled up to Summary table: -->
+`$x(path)` returns an array of DOM elements that match the specified XPath expression `path`.
 
 <!-- add'l info: n/a -->
 
-### Syntax
+#### Syntax
 
 ```javascript
-$x(path, [startNode])
+$x(path, [parentElement])
 ```
 
-### Example
+#### Example 1
 
-In the following example, all of the `<p>` elements on the webpage are returned:
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-```javascript
-$x("//p")
-```
+1. In the **Console** tool, type `$x("//li")`. All the `<li>` elements in the webpage are displayed:
 
-Result:
+   ![Using an XPath selector](./utilities-images/array-xpath.png)
 
-![Using an XPath selector](./utilities-images/console-array-xpath.png)
+#### Example 2
 
-### Example
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-In the following example, all of the `<p>` elements that contain `<a>` elements are returned:
+1. In the **Console** tool, type `$x("//li[button]")`. All the `<li>` elements that contain `<button>` elements are displayed:
 
-```javascript
-$x("//p[a]")
-```
+   ![Using a more complicated XPath selector](./utilities-images/array-xpath-sub-element.png)
 
-Result:
+Similar to the other selector commands, `$x(path)` has an optional second parameter, `parentElement`, that specifies an element or node in which to search for elements.
 
-![Using a more complicated XPath selector](./utilities-images/console-array-xpath-sub-element.png)
-
-Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or node from which to search for elements:
-
-![Using an XPath selector with startNode](./utilities-images/console-array-xpath-startnode.png)
-
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## clear
-<!-- planned new heading to troubleshoot: -->
-<!-- ## clear() -->
+## clear()
 
-<!-- summary to bubble up: -->
-Clears the console of its history.
+<!-- summary bubbled up to Summary table: -->
+`clear()` clears the console of its history.
 
 <!-- add'l info: n/a -->
 
-### Syntax
+#### Syntax
 
 ```javascript
 clear()
 ```
 
-### Example
+#### Example
 
-```javascript
-clear()
-```
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-<br/><br/>
+1. To create history in the **Console** tool, enter multiple JavaScript expressions. For example:
 
----
+   ```javascript
+   for (let i = 0; i < 10; i++) {
+       console.log(i);
+   }
+   ```
+
+1. To clear the history, type `clear()` in the **Console** tool, and then press **Enter**:
+
+   ![The result of the clear() command, the console is empty and the message "console was cleared" appears](./utilities-images/clear.png)
+
 
 <!-- ====================================================================== -->
-## copy
-<!-- ## copy(object) -->
+## copy(object)
 
-<!-- summary to bubble up: -->
-Copies a string representation of the specified object to the clipboard.
+<!-- summary bubbled up to Summary table: -->
+`copy(object)` copies a string representation of the specified object to the clipboard.
 
 <!-- add'l info: n/a -->
 
-### Syntax
+#### Syntax
 
 ```javascript
 copy(object)
 ```
 
-### Example
+#### Example
 
-```javascript
-copy($0)
-```
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-<br/><br/>
+1. Enter the following code in the **Console** tool, and then press **Enter**:
 
----
+   ```javascript
+   copy($$('*').map(element => element.tagName));
+   ```
+
+   The code snippet selects all elements in the webpage by using the `$$(selector)` function, and then maps the `tagName` property of each element to an array. The array is then copied to the clipboard by using the `copy()` function.
+
+1. Paste the contents of the clipboard into a text editor. The contents of the clipboard is a list of all the HTML tags in the webpage, for example:
+
+   ```javascript
+   ["HTML", "HEAD", "META", "TITLE", "LINK", "BODY", "H1", "FORM", "DIV", "LABEL", ...]
+   ```
+
 
 <!-- ====================================================================== -->
-## debug
-<!-- ## debug(function) -->
+## debug(function)
 
-<!-- summary to bubble up: -->
-When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel.
+<!-- summary bubbled up to Summary table: -->
+`debug(function)` pauses  inside the specified function `function` in the **Sources** tool, when that function is called.
 
 <!-- add'l info -->
 After the debugger is paused, you can then step through the code and debug it.
 
-### Syntax
+#### Syntax
 
 ```javascript
 debug(function)
 ```
 
->[!NOTE]
-> The [Chromium issue #1050237](https://crbug.com/1050237) is tracking a bug with the `debug()` function.  If you encounter the issue, try using [breakpoints](../javascript/breakpoints.md) instead.
+#### Example
 
-### Example
+1. Open a new tab or window, and then go to a page that contains a JavaScript function you want to debug.  For example, go to the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page.
 
-```javascript
-debug("debug");
-```
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-Result:
+1. In the **Console** tool, type `debug(updateList)`.
 
-![Breaking inside a function with debug()](./utilities-images/console-debug-text.png)
+1. In the rendered webpage, add a new TODO item to the list by typing **test** in the **Add a task** text field and then pressing **Enter**.
+
+   The debugger pauses inside the `updateList()` function in the **Sources** tool:
+
+   ![The debugger pauses inside the updateList() function](./utilities-images/debug-text.png)
 
 Use `undebug(function)` to stop breaking on the function, or use the UI to turn off all breakpoints.
 
 For more information on breakpoints, see [Pause your code with breakpoints](../javascript/breakpoints.md).
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## dir
-<!-- ## dir(object) -->
+## dir(object)
 
-<!-- summary to bubble up: -->
-Displays an object-style listing of all of the properties for the specified object, like `console.dir()`.
+<!-- summary bubbled up to Summary table: -->
+`dir(object)` displays an object-style listing of all of the properties for the specified object, like `console.dir()`.
 
 <!-- add'l info -->
 This function is an alias for [console.dir()](https://developer.mozilla.org/docs/Web/API/Console/dir).
 
-### Syntax
+#### Syntax
 
 ```javascript
 dir(object)
 ```
 
-Evaluate `document.head` in the **Console** to display the HTML between the `<head>` and `</head>` tags.
+#### Example
 
-### Example
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-In the following example, an object-style listing is displayed after using `console.dir()` in the **Console**:
+1. In the **Console** tool, enter `document.head` and then press **Enter**.
 
-```javascript
-document.head;
-dir(document.head);
-```
+   An HTML representation of the `<head>` element is displayed.
 
-Result:
+1. Enter `dir(document.head)` and then press **Enter**.
 
-![Logging 'document.head' with the 'dir()' function](./utilities-images/console-dir-document-head-expanded.png)
+   An object-style listing of all of the properties for the `<head>` element is displayed:
+
+   ![Logging 'document.head' with the 'dir()' function](./utilities-images/dir-document-head-expanded.png)
 
 For more information, see [console.dir()](api.md#dir) in the Console API.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## dirxml
-<!-- ## dirxml(object) -->
+## dirxml(object)
 
-<!-- summary to bubble up: -->
-Prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`.
+<!-- summary bubbled up to Summary table: -->
+`dirxml(object)` prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`.
 
 <!-- add'l info -->
 This function is equivalent to [console.dirxml()](https://developer.mozilla.org/docs/Web/API/Console/dirxml).
 
-### Syntax
+#### Syntax
 
 ```javascript
 dirxml(object)
 ```
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## inspect
-<!-- ## inspect(object/function) -->
+## inspect(object/function)
 
-<!-- summary to bubble up: -->
-Opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript heap object in the **Memory** tool.
+<!-- summary bubbled up to Summary table: -->
+`inspect(element/function)` opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript function in the **Sources** tool.
 
 <!-- add'l info -->
 * For a DOM element, this function opens and selects the specified DOM element in the **Elements** tool.
-* For a JavaScript heap object, this function opens the specified JavaScript heap object in the **Memory** tool.
+* For a JavaScript function, this function opens the specified JavaScript function in the **Sources** tool.
 
-### Syntax
-
-```javascript
-inspect(object/function)
-```
-
-### Example
-
-In the following example, the `document.body` opens in the **Elements** tool:
+#### Syntax
 
 ```javascript
-inspect(document.body);
+inspect(element/function)
 ```
 
-Result:
+#### Example
 
-![Inspecting an element with inspect()](./utilities-images/console-inspect-document-body.png)
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
+
+1. In the **Console** tool, enter `inspect(document.body)` and then press **Enter**.
+
+   The **Elements** tool opens and the `<body>` element is selected:
+
+   ![Inspecting an element with inspect()](./utilities-images/inspect-document-body.png)
 
 When passing a function to inspect, the function opens the webpage in the **Sources** tool for you to inspect.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## getEventListeners
-<!-- ## getEventListeners(object) -->
+## getEventListeners(object)
 
-<!-- summary to bubble up: -->
-Returns the event listeners that are registered on the specified object.
+<!-- summary bubbled up to Summary table: -->
+`getEventListeners(object)` returns the event listeners that are registered on the specified object.
 
 <!-- add'l info -->
-The return value is an object that contains an array for each registered event type (such as `click` or `keydown`).  The members of each array are objects that describe the listener registered for each type.
+The return value is an object that contains an array for each registered event type (such as `click` or `keydown`).  The items in each array are objects that describe the listener registered for each type.
 
-### Syntax
+#### Syntax
 
 ```javascript
 getEventListeners(object)
 ```
 
-### Example
+#### Example
 
-In the following example, all of the event listeners that are registered on the `document` object are listed:
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-```javascript
-getEventListeners(document);
-```
+1. In the **Console** tool, enter `getEventListeners($('form'))` and then press **Enter**.
 
-Result:
+   The event listeners that are registered on the first `<form>` element are displayed:
 
-![Output of using getEventListeners(document)](./utilities-images/console-elements-event-listeners-console-get-event-listeners-document.png)
+   ![Output of using getEventListeners(form)](./utilities-images/elements-event-listeners-console-get-event-listeners-form.png)
 
 If more than one listener is registered on the specified object, then the array contains a member for each listener.  In the following figure, two event listeners are registered on the `document` element for the `click` event:
 
-![Multiple event listeners registered on the 'document' element for the 'click' event](./utilities-images/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.png)
+![Multiple event listeners registered on the 'document' element for the 'click' event](./utilities-images/elements-event-listeners-console-get-event-listeners-document-expanded-1.png)
 
-You can further expand each of the following objects to explore their properties.  Here's an expanded view of the listener object:
-
-![Expanded view of listener object](./utilities-images/console-elements-event-listeners-console-get-event-listeners-document-2.png)
-
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## keys
-<!-- ## keys(object) -->
+## keys(object)
 
-<!-- summary to bubble up: -->
-Returns an array containing the names of the properties belonging to the specified object.
+<!-- summary bubbled up to Summary table: -->
+`keys(object)` returns an array containing the names of the properties belonging to the specified object.
 
 <!-- add'l info -->
-To get the associated values of the same properties, use `values()`.
+To get the associated values of the same properties, see [values(object)](#valuesobject), below.
 
-### Syntax
+#### Syntax
 
 ```javascript
 keys(object)
 ```
 
-### Example
+#### Example
 
-Suppose your application defines the following object:
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-```javascript
-var player1 = {"name": "Ted", "level": 42}
-```
+1. In the **Console** tool, enter the following code, and then press **Enter**:
 
-In the following code, the result assumes `player1` was defined in the global namespace (for simplicity) before you type `keys(player1)` and `values(player1)` in the console:
+   ```javascript
+   var player1 = {"name": "Ted", "level": 42}
+   ```
 
-```javascript
-keys(player1)
+   The above code snippet defines an object in the global namespace named `player1`, which contains two properties.
 
-values(player1)
-```
+1. To get the names of the properties belonging to the `player1` object, enter `keys(player1)` in the **Console** tool, and then press **Enter**:
 
-Result:
+   ![The result of the keys() function](./utilities-images/keys.png)
 
-![The keys() and values() commands](./utilities-images/console-keys-values.png)
+1. To get the values of the properties belonging to the `player1` object, enter `values(player1)` in the **Console** tool, and then press **Enter**:
 
-<br/><br/>
+   ![The result of the values() function](./utilities-images/values.png)
 
----
 
 <!-- ====================================================================== -->
-## monitor
-<!-- ## monitor(function) -->
+## monitor(function)
 
-<!-- summary to bubble up: -->
-Logs a message to the console that indicates the function name, along with the arguments passed to the function as part of a request.
+<!-- summary bubbled up to Summary table: -->
+`monitor(function)` logs a message to the console everytime the specified function is called. The message indicates the function name and the arguments passed to the function.
 
 <!-- add'l info: n/a -->
 
-### Syntax
+#### Syntax
 
 ```javascript
 monitor(function)
 ```
 
-### Example
+#### Example
 
-```javascript
-function sum(x, y) {
-    return x + y;
-}
-monitor(sum);
-```
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-Result:
+1. In the **Console** tool, enter the following code and then press **Enter**:
 
-![Result of the monitor() function](./utilities-images/console-function-monitor-sum.png)
+   ```javascript
+   function sum(x, y) {
+     return x + y;
+   }
+   ```
+
+   The above code snippet defines a function named `sum`, which accepts two arguments.
+
+1. To start monitoring the `sum` function, enter `monitor(sum)` in the **Console** tool, and then press **Enter**:
+
+1. To call the function, enter `sum(1, 2)` and press **Enter**. A message appears, indicating that the `sum` function was called, and the arguments passed to the function:
+
+   ![The result of the monitor() function](./utilities-images/function-monitor-sum.png)
 
 To end monitoring, use `unmonitor(function)`.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## monitorEvents
-<!-- ## monitorEvents(object\[, events\]) -->
+## monitorEvents(object\[, events\])
 
-<!-- summary to bubble up: -->
-When one of the specified events occurs on the specified object, the event object is logged to the console.
+<!-- summary bubbled up to Summary table: -->
+`monitorEvents(object[, events])` logs an event object to the console every time the specified events occur on the specified object.
 
 <!-- add'l info -->
 You can specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.
 
-### Syntax
+#### Syntax
 
 ```javascript
 monitorEvents(object[, events])
 ```
 
-### Example
+#### Example 1
 
-The following code monitors all resize events on the window object:
+To monitor a single event:
 
-```javascript
-monitorEvents(window, "resize");
-```
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-Result:
+1. In the **Console** tool, enter the following code and then press **Enter**:
 
-![Monitoring window resize events](./utilities-images/console-monitor-events-resize-window.png)
+   ```javascript
+   monitorEvents(window, "resize");
+   ```
 
-### Example
+   The previous code snippet monitors all resize events on the window object.
 
-The following code defines an array to monitor both `resize` and `scroll` events on the window object:
+1. Resize the window, for example by making DevTools larger or smaller. Resize events appear in the **Console** tool:
 
-```javascript
-monitorEvents(window, ["resize", "scroll"]);
-```
+   ![Monitoring window resize events](./utilities-images/monitor-events-resize-window.png)
 
-### Specifying an event type
+#### Example 2
 
-You can also specify one of the available types of events, strings that map to predefined sets of events.  The following table shows the available event types and the associated event mappings:
+To monitor multiple events:
+
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
+
+1. In the **Console** tool, enter the following code and then press **Enter**:
+
+   ```javascript
+   monitorEvents(window, ["resize", "scroll"]);
+   ```
+
+   The previous code snippet defines an array of event names to monitor both `resize` and `scroll` eevents on the window object.
+
+1. Resize the window, for example by making it shorter, and then scroll in the rendered webpage. Resize and scroll events appear in the **Console** tool:
+
+   ![Monitoring window resize and scroll events](./utilities-images/monitor-events-resize-scroll-window.png)
+
+#### Example 3
+
+You can also specify a collection of events by using one of the predefined sets of events.  The following table shows the available event types and the associated event mappings:
 
 | Event type | Corresponding mapped events |
 |:--- |:--- |
 | `mouse` | "click", "dblclick", "mousedown", "mousemove", "mouseout", "mouseover", "mouseup", "mousewheel" |
 | `key` | "keydown", "keypress", "keyup", "textInput" |
 | `touch` | "touchcancel", "touchend", "touchmove", "touchstart" |
-| `Ctrl` | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |
+| `control` | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |
 
-### Example
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-In the following code, the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** tool:
+1. In the **Console** tool, enter the following code and then press **Enter**:
 
-```javascript
-monitorEvents($0, "key");
-```
+   ```javascript
+   monitorEvents(window, "key");
+   ```
 
-Here's the sample output after typing a character in the text field:
+   The previous code snippet monitors all keyboard events on the window object.
 
-![Monitoring key events](./utilities-images/console-monitor-events-type-t-y.png)
+1. In the rendered webpage, press any keys. Keyboard events appear in the **Console** tool:
 
-<br/><br/>
+   ![Monitoring key events](./utilities-images/monitor-events-type-t-y.png)
 
----
 
 <!-- ====================================================================== -->
-## profile
-<!-- ## profile([name]) -->
+## profile([name])
 
-<!-- summary to bubble up: -->
-Starts a JavaScript CPU profiling session with an optional name.
+<!-- summary bubbled up to Summary table: -->
+`profile([name])` starts a JavaScript CPU profiling session with an optional name.
 
 <!-- add'l info -->
-To complete the profile and display the results in the **Memory** tool, call [profileEnd()](#profileend).  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+To complete the profile and display the results in the **Performance** tool, call [profileEnd([name])](#profileendname).  <!-- See [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md).  -->
 
-### Syntax
+#### Syntax
 
 ```javascript
 profile([name])
 ```
 
-### Example
+#### Example
 
-To start profiling, call `profile()`:
+1. Open the page that you want to profile in a new tab or window.  For example, go to the [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo page.
 
-```javascript
-profile("My profile")
-```
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-To stop profiling and display the results in the **Memory** tool, call [profileEnd()](#profileend).
+1. To start profiling, in the **Console** tool, type `profile("My profile)`, and then press **Enter**.
 
-Profiles can also be nested:
+1. To stop profiling, after some time has passed, type `profileEnd("My profile")`, and then press **Enter**.
+
+   The profile results appear in the **Performance** tool:
+
+   ![The result of the profile() function](./utilities-images/memory-cpu-profile.png)
+
+You can create multiple profiles at the same time, and you aren't required to end each profile in creation order. For example, the following code creates two profiles, and then ends them in the opposite order:
 
 ```javascript
 profile('A');
 profile('B');
-profileEnd('A');
 profileEnd('B');
+profileEnd('A');
 ```
 
-The result is the same, regardless of the order.  The result appears as a Heap Snapshot in the **Memory** tool, with grouped profiles:
-
-![Grouped profiles](./utilities-images/console-memory-multiple-cpu-profiles.png)
-
-> [!NOTE]
-> Multiple CPU profiles can operate at the same time, and you aren't required to close-out each profile in creation order.
-
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## profileEnd
-<!-- ## profileEnd([name]) -->
+## profileEnd([name])
 
-<!-- summary to bubble up: -->
-Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.
+<!-- summary bubbled up to Summary table: -->
+`profileEnd([name])` completes a JavaScript CPU profiling session and displays the results in the **Performance** tool.
 
 <!-- add'l info -->
-To call this function, you must be running the [profile()](#profile) function.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+To call this function, you must be running the [profile([name])](#profilename) function.  <!-- See [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md).  -->
 
-### Syntax
+#### Syntax
 
 ```javascript
 profileEnd([name])
 ```
 
-### Example
+For more information, see [profile([name])](#profilename), above.
 
-1. Run the [profile()](#profile) function to start profiling.
-
-1. Run the `profileEnd()` function to stop profiling and display the results in the **Memory** tool:
-
-    ```javascript
-    profileEnd("My profile")
-    ```
-
-For more information, see [profile](#profile), above.
-
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## queryObjects
-<!-- ## queryObjects(Constructor) -->
+## queryObjects(constructor)
 
-<!-- summary to bubble up: -->
-Returns an array of the objects that were created by the specified constructor.
+<!-- summary bubbled up to Summary table: -->
+`queryObjects(constructor)` returns an array of the objects that were created by the specified constructor.
 
 <!-- add'l info -->
 The scope of `queryObjects()` is the currently selected runtime context in the **Console**.
 
-### Syntax
+#### Syntax
 
 ```javascript
-queryObjects(Constructor)
+queryObjects(constructor)
 ```
 
-### Example
+#### Example
 
-* `queryObjects(promise)` returns all instances of `Promise`.
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-* `queryObjects(HTMLElement)` returns all HTML elements.
+1. To return all instances of HTML elements, enter `queryObjects(HTMLElement)` in the **Console** tool, and then press **Enter**:
 
-*  `queryObjects(functionName)` returns all objects that were instantiated using `new functionName()`.
+   ![The result of the queryObjects() function](./utilities-images/query-objects.png)
 
-<br/><br/>
+Other examples:
 
----
+* Use `queryObjects(Promise)` to return all instances of `Promise` objects if your webpage uses `Promise` objects.
+* Use `queryObjects(ClassName)` to return all instances of the `ClassName` class if your webpage uses JavaScript classes.
+
 
 <!-- ====================================================================== -->
-## table
-<!-- ## table(data\[, columns\]) -->
+## table(data\[, columns\])
 
-<!-- summary to bubble up: -->
-Logs object data, formatted as a table with column headings, for the specified data object.
+<!-- summary bubbled up to Summary table: -->
+`table(data[, columns])` logs object data, formatted as a table with column headings, for the specified data object.
 
 <!-- add'l info: n/a -->
-For example, using this function, you can display a list of people's names as a table, in the **Console**.
+This function is an alias for [console.table()](https://developer.mozilla.org/docs/Web/API/Console/table).
 
-### Syntax
+#### Syntax
 
 ```javascript
 table(data[, columns])
 ```
 
-### Example
+#### Example
 
-The following code displays a list of names using a table in the console, with the column headings defaulting to the variable names:
+To display a list of people's names as a table, in the **Console**:
 
-```javascript
-var names = {
-    0: {
-        firstName:  "John",
-        lastName:  "Smith"
-    },
-    1:  {
-        firstName:  "Jane",
-        lastName:  "Doe"
-    }
-};
-table(names);
-```
+1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the webpage.
 
-Result:
+1. Enter the following code in the **Console**, and then press **Enter**:
 
-![The result of the table() function](./utilities-images/console-table-display.png)
+   ```javascript
+   var names = {
+     0: {
+       firstName: "John",
+       lastName: "Smith"
+     },
+     1:  {
+       firstName: "Jane",
+       lastName: "Doe"
+     }
+   };
+   ```
 
-<br/><br/>
+   The above code snippet defines an object in the global namespace named `names`, which contains two properties.
 
----
+1. To display the `names` object as a table, enter `table(names)` in the **Console**, and then press **Enter**:
+
+   ![The result of the table() function](./utilities-images/table-display.png)
+
 
 <!-- ====================================================================== -->
-## undebug
-<!-- ## undebug(function) -->
+## undebug(function)
 
-<!-- summary to bubble up: -->
-Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked.
+<!-- summary bubbled up to Summary table: -->
+`undebug(function)` stops the debug of the specified function, so that when the function runs, the debugger no longer pauses in the function.
 
 <!-- add'l info: n/a -->
+For more information, see [debug(function)](#debugfunction), above.
 
-### Syntax
+#### Syntax
 
 ```javascript
 undebug(function)
 ```
 
-### Example
-
-```javascript
-undebug(getData);
-```
-
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## unmonitor
-<!-- ## unmonitor(function) -->
+## unmonitor(function)
 
-<!-- summary to bubble up: -->
-Stops the monitoring of the specified function.
+<!-- summary bubbled up to Summary table: -->
+`unmonitor(function)` stops the monitoring of the specified function.
 
 <!-- add'l info -->
-This function is used together with [monitor()](#monitor).
+For more information, see [monitor(function)](#monitorfunction), above.
 
-### Syntax
+#### Syntax
 
 ```javascript
 unmonitor(function)
 ```
 
-### Example
-
-```javascript
-unmonitor(getData);
-```
-
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## unmonitorEvents
-<!-- ## unmonitorEvents(object\[, events\]) -->
+## unmonitorEvents(object\[, events\])
 
-<!-- summary to bubble up: -->
-Stops monitoring events for the specified object and events.
+<!-- summary bubbled up to Summary table: -->
+`unmonitorEvents(object[, events])` stops monitoring events for the specified object and events.
 
 <!-- add'l info: n/a -->
+For more information, see [monitorEvents(object[, events])](#monitoreventsobject-events), above.
 
-### Syntax
+#### Syntax
 
 ```javascript
 unmonitorEvents(object[, events])
 ```
 
-### Example
-
-The following code stops all event monitoring on the `window` object:
-
-```javascript
-unmonitorEvents(window);
-```
-
-You can also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently selected element, and then stops monitoring `mousemove` events (perhaps to reduce noise in the console output):
-
-```javascript
-monitorEvents($0, "mouse");
-unmonitorEvents($0, "mousemove");
-```
-
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
-## values
-<!-- ## values(object) -->
+## values(object)
 
-<!-- summary to bubble up: -->
-Returns an array containing the values of all properties belonging to the specified object.
+<!-- summary bubbled up to Summary table: -->
+`values(object)` returns an array containing the values of all properties belonging to the specified object.
 
 <!-- add'l info: n/a -->
+To get the associated keys of the same properties, see [keys(object)](#keysobject), above.
 
-### Syntax
+#### Syntax
 
 ```javascript
 values(object)
 ```
 
-### Example
+#### Example
 
-```javascript
-values(object);
-```
+See the example in [keys(object)](#keysobject), above.
 
-<br/><br/>
-
----
 
 <!-- ====================================================================== -->
 ## See also
@@ -973,7 +833,7 @@ values(object);
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/console/utilities/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/console/utilities/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

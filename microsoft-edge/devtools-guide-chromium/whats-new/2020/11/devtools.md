@@ -1,10 +1,10 @@
 ---
-title: What's new in DevTools (Microsoft Edge 88)
+title: What's New in DevTools (Microsoft Edge 88)
 description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, new service worker debugging features, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
 ---
@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 88)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -122,11 +122,11 @@ The following new features in the **Network** tool, **Application** tool, and **
 The routing of a request displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.
 
 See also:
-* [Service Worker improvements](../../../service-workers/index.md)
+* [Service worker improvements](../../../service-workers/index.md)
 
 
-<!-- ====================================================================== -->
-### Application tool
+<!-- ------------------------------ -->
+#### Application tool
 
 <!-- Title: Open Network tool from the Service Workers pane  -->
 <!-- Subtitle: Display additional context when debugging a service worker.  -->
@@ -135,27 +135,27 @@ In the **Application** tool, view all service worker request routing information
 
 To display additional context when debugging a service worker:
 
-1. In the **Application** tool, on the left, select **Service Workers**.
+1. In the **Application** tool, on the left, select **Service Workers**.<!-- keeping old W, to match png, in this section -->
 
 1. Click the **Network requests** link:
 
    ![Opening the Network tool from the Service Workers pane](./devtools-images/service-worker-application-network-requests.png)
 
-   The **Network** tool opens in the **Drawer** and displays all service worker-related network requests.  The network requests are filtered using `is:service-worker-intercepted`:
+   The **Network** tool opens in the **Quick View** panel at the bottom of DevTools, and displays all service worker-related network requests.  The network requests are filtered using `is:service-worker-intercepted`:
 
-   ![The Network tool in the Drawer](./devtools-images/service-worker-application-network-drawer.png)
+   ![The Network tool in Quick View](./devtools-images/service-worker-application-network-quick-view.png)
 
-1. To move the **Network** tool to the top panel, close the **Drawer**:
+1. To move the **Network** tool to the top panel, close the **Quick View** panel:
 
-   ![Close the Drawer to move the Network tool to the main toolbar](./devtools-images/service-worker-application-network-return.png)
+   ![Close Quick View to move the Network tool to the main toolbar](./devtools-images/service-worker-application-network-return.png)
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-* [Service Worker improvements](../../../service-workers/index.md)
+* [Service worker improvements](../../../service-workers/index.md)
 
 
-<!-- ====================================================================== -->
-### Network tool
+<!-- ------------------------------ -->
+#### Network tool
 
 In the **Network** tool, you can debug network requests that are run by service workers.  (You can also open network requests from within the **Application** tool, instead of the **Network** tool.)  In the **Timing** pane of the **Network** tool, for each request, DevTools displays the following information:
 
@@ -168,11 +168,11 @@ In the **Network** tool, you can debug network requests that are run by service 
 
 See also:
 * [Display the timing breakdown of a request](../../../network/reference.md#display-the-timing-breakdown-of-a-request) in _Network features reference_.
-* [Service Worker improvements](../../../service-workers/index.md)
+* [Service worker improvements](../../../service-workers/index.md)
 
 
-<!-- ====================================================================== -->
-### Sources tool
+<!-- ------------------------------ -->
+#### Sources tool
 
 In previous versions of Microsoft Edge, the level of depth in the call stack was limited to the JavaScript code in your service worker.  In Microsoft Edge 88, the call stack now displays the initiator of requests that run through your service worker.
 
@@ -186,7 +186,7 @@ In the following figure, the reference is selected, and has opened the initiator
 
 See also:
 * [View the call stack](../../../javascript/reference.md#view-the-call-stack) in _JavaScript debugging features_
-* [Service Worker improvements](../../../service-workers/index.md)
+* [Service worker improvements](../../../service-workers/index.md)
 
 
 <!-- ====================================================================== -->
@@ -250,8 +250,8 @@ In Microsoft Edge version 87, if you turned on the **Match browser language** se
 The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
-<!-- ====================================================================== -->
-### New CSS angle visualization tools
+<!-- ------------------------------ -->
+#### New CSS angle visualization tools
 
 DevTools now has better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, click the clock icon.  To change the angle, click anywhere in the clock, drag the needle, or use mouse and keyboard shortcuts.
 
@@ -268,8 +268,8 @@ For more information, see [Change angle value with the Angle Clock](../../../css
 For updates on this feature in the Chromium open-source project, see Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
 
 
-<!-- ====================================================================== -->
-### Simulate storage quota size in the Storage pane
+<!-- ------------------------------ -->
+#### Simulate storage quota size in the Storage pane
 
 You can now override storage quota size in the **Storage** pane.  This feature allows you to simulate different devices and test the behavior of your website or app in low disk availability scenarios.  To simulate the storage quota:
 
@@ -282,8 +282,8 @@ You can now override storage quota size in the **Storage** pane.  This feature a
 For more information, see [Emulate mobile devices (Device Emulation)](../../../device-mode/index.md).  To see updates on this feature in the Chromium open-source project, see Issues [945786](https://crbug.com/945786) and [1146985](https://crbug.com/1146985).
 
 
-<!-- ====================================================================== -->
-### Report CORS errors in the Network tool
+<!-- ------------------------------ -->
+#### Report CORS errors in the Network tool
 
 Try out this feature by navigating to [CORS error demo](https://cors-errors.glitch.me).  Open the **Network** tool, refresh the page, and observe the failed CORS network request.  The status column displays the **CORS error**.  When you hover on the error, the tooltip now displays the error code.  In Microsoft Edge version 87 and earlier, DevTools only displayed generic **(failed)** status for CORS errors.
 
@@ -296,8 +296,8 @@ See also:
 * [Network features reference](../../../network/reference.md)
 
 
-<!-- ====================================================================== -->
-### Frame details view updates
+<!-- ------------------------------ -->
+#### Frame details view updates
 
 In the **Application** tool, there's a **Frames** section that provides a detailed view for each frame.  
 
@@ -305,8 +305,8 @@ See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-#### Cross-origin isolation information in the Frame details view
+<!-- ---------- -->
+###### Cross-origin isolation information in the Frame details view
 
 In the **Application** tool, there's a **Frames** section that provides a detailed view for each frame.  When you select a frame, the frame detail page appears, including the **Security & Isolation** section.
 
@@ -322,8 +322,8 @@ See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-#### New Web Workers information in the Frame details view
+<!-- ---------- -->
+###### New Web Workers information in the Frame details view
 
 DevTools now organizes web workers under the relevant parent frame.  For example, if the `someName` frame creates `worker.js`, then `worker.js` appears under `someName` in the **Frames** list.  To view the details of the web worker:
 
@@ -340,8 +340,8 @@ See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-#### Display opener frame details for opened windows
+<!-- ---------- -->
+###### Display opener frame details for opened windows
 
 DevTools now organizes opened [Windows](https://developer.mozilla.org/docs/Web/API/Window#Constructors) under the relevant parent [frame](https://developer.mozilla.org/docs/Web/API/Window/frames).  For example, if the `top` frame opens a `Window` to `https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium`, then the `Window` appears under `top` in the **Frames** list.
 
@@ -367,8 +367,8 @@ See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- ====================================================================== -->
-### Copy stacktrace for network initiator
+<!-- ------------------------------ -->
+#### Copy stacktrace for network initiator
 
 In the **Network** tool, to copy the stacktrace to your clipboard, right-click the stacktrace, and then select **Copy** > **Copy stacktrace**:
 
@@ -380,8 +380,8 @@ See also:
 * [Display the stack trace that caused a request](../../../network/reference.md#display-the-stack-trace-that-caused-a-request) in _Network features reference_
 
 
-<!-- ====================================================================== -->
-### Preview Wasm variable value on mouseover
+<!-- ------------------------------ -->
+#### Preview Wasm variable value on mouseover
 
 In the **Sources** tool, use this feature to see the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable:
 
@@ -393,8 +393,8 @@ See also:
 * [Using the Debugger pane to debug JavaScript code](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code) in _Sources tool overview_
 
 
-<!-- ====================================================================== -->
-### Consistent units of measurement for sizes of files and memory
+<!-- ------------------------------ -->
+#### Consistent units of measurement for sizes of files and memory
 
 DevTools now consistently uses `kB` for displaying sizes of files and memory.  Previously, DevTools mixed `kB` and `KiB`.
 
@@ -409,7 +409,14 @@ For the history of this feature in the Chromium open-source project, see Issue [
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-88) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-88) and is authored by Jecelyn Yeen.
 
 [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

@@ -4,8 +4,9 @@ description: Open the Sensors tool in DevTools and select coordinates from the G
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/21/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,16 +31,18 @@ If you are building a UI that changes depending on where the user is located, yo
 
 1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-   ![The Command Menu](./geolocation-images/device-mode-console-command-menu.png)
+   ![The Command Menu](./geolocation-images/command-menu.png)
 
-1. Type `sensors`, select **Drawer: Show Sensors**, and then press **Enter**.  The **Sensors** tool opens at the bottom of the DevTools window.
+1. Type `sensors`, select **Show Sensors**, and then press **Enter**.  The **Sensors** tool opens at the bottom of the DevTools window.
+
+   ![Show Sensors from Command Menu](./geolocation-images/command-menu-sensors.png)
 
 1. Click the **Location** dropdown list, and then:
    *  Select a city, such as `Tokyo`.
    *  Click **Other** to enter custom longitude and latitude coordinates.
    *  Click **Location unavailable** to see how your site behaves when the user's location isn't available.
 
-   ![Selecting Tokyo from the Location list](./geolocation-images/device-mode-console-sensors-geolocation-tokyo.png)
+   ![Selecting Tokyo from the Location list](./geolocation-images/sensors-geolocation-tokyo.png)
 
 <!-- /web/fundamentals/native-hardware/user-location/index -->
 
@@ -47,7 +50,7 @@ If you are building a UI that changes depending on where the user is located, yo
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/device-mode/geolocation/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/sensors#geolocation) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

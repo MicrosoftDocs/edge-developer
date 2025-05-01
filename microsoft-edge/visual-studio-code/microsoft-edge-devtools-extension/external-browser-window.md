@@ -4,7 +4,7 @@ description: "Using an external browser window rather than the embedded (headles
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Using an external browser window
@@ -43,12 +43,25 @@ This tab is also called:
 *  The _embedded DevTools browser_.
 
 
+<!-- ------------------------------ -->
+#### Limitations of the embedded DevTools browser
+
+The embedded Edge DevTools Browser in the Visual Studio Code DevTools extension provides a simple preview with many restrictions, and doesn't support all the features of a real web browser.  When you need a full-featured browser, use an external browser window instead of the embedded browser.  The embedded DevTools browser is a browser instance that runs without a user interface, and from which screen captures are being streamed.  Therefore, not all user interactions are implemented.
+
+The embedded DevTools browser has limitations including the following:
+
+* Drag-and-drop isn't supported.
+* `onPasteCapture` and `onPaste` events don't trigger.
+* The CSS `cursor` property isn't respected.
+* There might be visual performance issues.
+
+
 <!-- ====================================================================== -->
 ## Changing the setting
 
 To change or check the setting for which type of browser window to use:
 
-1. In Visual Studio Code, select Activity Bar > **Microsoft Edge Tools**.  The **Microsoft Edge Tools** Side Bar opens.
+1. In Visual Studio Code, select **Activity Bar** > **Microsoft Edge Tools**.  The **Microsoft Edge Tools** Side Bar opens.
 
 1. Hover to the right of **Targets**, and then click **More Actions** (**...**) > **Open Settings**.
 

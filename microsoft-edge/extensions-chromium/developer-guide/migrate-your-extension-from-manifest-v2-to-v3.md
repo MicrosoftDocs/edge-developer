@@ -4,7 +4,8 @@ description: Updating your extension from Manifest V2 to V3.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 05/26/2021
 ---
 # Migrate an extension from Manifest V2 to V3
@@ -15,7 +16,9 @@ This article lists important changes being implemented as part of Manifest V3, w
 <!-- ====================================================================== -->
 ## Remotely hosted code
 
-Today, some parts of the extensions code are hosted remotely, and aren't included as part of the extension package during the validation process.  While this offers flexibility to change code without resubmitting the extension to the store, it's possible to exploit the code after installation.  To ensure that [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons) lists validated extensions, the Microsoft Edge extensions team disallows extensions from using remotely hosted code.  This change makes extensions more secure.
+Today, some parts of the extensions code are hosted remotely, and aren't included as part of the extension package during the validation process.  Although this offers the flexibility to change code without resubmitting the extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), it's possible to exploit the code after installation.
+
+To ensure that the extensions at Microsoft Edge Add-ons are validated, the Microsoft Edge extensions team disallows extensions from using remotely hosted code.  This change makes extensions more secure.
 
 Developers will need to package and submit all code that is used by the extension, for validation.  Alternatively, you can use the `eval()` function in a [sandboxed environment](https://developer.chrome.com/docs/extensions/mv2/sandboxingEval).
 
@@ -47,7 +50,7 @@ Enterprises can continue to use the blocking behavior of the Web Request API for
 <!-- ====================================================================== -->
 ## Background service workers
 
-Service workers are available for testing in the Canary preview channel of Microsoft Edge.  To migrate your extensions from background pages to service workers, see [Migrating from Background Pages to Service Workers](https://developer.chrome.com/docs/extensions/mv3/migrating_to_service_workers).  The Microsoft Edge extensions team is evaluating and investigating the impact that this change brings to both developers and users.
+Service workers are available for testing in the Canary preview channel of Microsoft Edge.  To migrate your extensions from background pages to service workers, see [Migrate to a service worker](https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers).  The Microsoft Edge extensions team is evaluating and investigating the impact that this change brings to both developers and users.
 
 
 <!-- ====================================================================== -->

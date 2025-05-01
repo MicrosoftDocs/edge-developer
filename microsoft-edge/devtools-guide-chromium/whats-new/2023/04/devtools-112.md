@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 112)
-description: "The Performance tool can now unminify JavaScript running in out-of-process iframes, the CSS Overview tool displays a list of non-simple selectors for quick performance wins, and more."
+title: What's New in DevTools (Microsoft Edge 112)
+description: "The Performance tool can now unminify JavaScript running in out-of-process iframes, the CSS overview tool displays a list of non-simple selectors for quick performance wins, and more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 04/11/2023
 ---
 # What's New in DevTools (Microsoft Edge 112)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 112
+
+[![Thumbnail image for video "What's new in DevTools 112"](./devtools-112-images/devtools-whatsnew-112.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
 
 
 <!-- ====================================================================== -->
@@ -32,25 +39,25 @@ In Microsoft Edge 112, the **Performance** tool now loads sourcemaps and applies
 ![The unminified call stack from a profile recorded in the Performance tool](./devtools-112-images/unminification-in-oopifs-after.png)
 
 <!-- maint:
-1. Connect Symbol Server via a PAT to the Office org. https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/consume-source-maps-from-azure
+1. Connect Symbol Server via a PAT to the Office org. [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
 2. Repeat the above steps to show the original file and function names in the flame chart.
 -->
 
 See also:
-* [Performance tool unminifies file and function names when profiling production code](../03/devtools-111.md#performance-tool-unminifies-file-and-function-names-when-profiling-production-code) in _What's new in DevTools (Microsoft Edge 111)_.
+* [Performance tool unminifies file and function names when profiling production code](../03/devtools-111.md#performance-tool-unminifies-file-and-function-names-when-profiling-production-code) in _What's New in DevTools (Microsoft Edge 111)_.
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
-* [Record performance](../../../evaluate-performance/reference.md#record-performance) in _Performance features reference_.
+* [Record performance](../../../performance/reference.md#record-performance) in _Performance features reference_.
 
 
 <!-- ====================================================================== -->
-## CSS Overview tool displays non-simple selectors for quick performance gains
+## CSS overview tool displays non-simple selectors for quick performance gains
 
-<!-- Subtitle: Non-simple selectors can be common culprits for long-running Recalculate Styles events in the Performance tool. Take a quick snapshot in the CSS Overview tool to see your non-simple selectors. -->
+<!-- Subtitle: Non-simple selectors can be common culprits for long-running Recalculate Styles events in the Performance tool. Take a quick snapshot in the CSS overview tool to see your non-simple selectors. -->
 
-The **CSS Overview** tool has a new **Non-simple selectors** section, which displays a list of non-simple CSS selectors when you take an overview snapshot of your webpage's CSS.  This list of non-simple CSS selectors in the **CSS Overview** tool provides a quick way to identify common culprits that might be causing long-running **Recalculate Styles** events:
+The **CSS overview** tool has a new **Non-simple selectors** section, which displays a list of non-simple CSS selectors when you take an overview snapshot of your webpage's CSS.  This list of non-simple CSS selectors in the **CSS overview** tool provides a quick way to identify common culprits that might be causing long-running **Recalculate Styles** events:
 
-![The new, Non-simple selectors list in the CSS Overview tool](./devtools-112-images/non-simple-selectors-in-css-overview.png)
+![The new, Non-simple selectors list in the CSS overview tool](./devtools-112-images/non-simple-selectors-in-css-overview.png)
 
 This is a list of selectors that could possibly reduce performance.  To determine whether these selectors are actually reducing performance, use the **Selector Stats** feature in the **Performance** tool.
 
@@ -63,8 +70,8 @@ You can try to change these selectors so that they are more specific and match f
 To analyze individual CSS selector performance and analyze the impact of your changes, use the **Selector Stats** feature in the **Performance** tool.
 
 See also:
-* [Optimize CSS styles with the CSS Overview tool](../../../css/css-overview-tool.md)
-* [Analyze selector performance during Recalculate Style events](../../../evaluate-performance/selector-stats.md)
+* [Optimize CSS styles with the CSS overview tool](../../../css/css-overview-tool.md)
+* [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
 
 
 <!-- ====================================================================== -->
@@ -95,7 +102,7 @@ With code folding turned on, you can now expand and collapse objects and arrays 
 Please send us your [feedback](../../../contact.md)!
 
 See also:
-* [View formatted JSON](../../../json-viewer/json-viewer.md)
+* [View a JSON file or server response with formatting](../../../../web-platform/json-viewer.md)
 
 
 <!-- ====================================================================== -->
@@ -109,15 +116,15 @@ See also:
 <!-- ------------------------------ -->
 #### Pressing Esc shows or entirely hides Quick View
 
-In previous versions of Microsoft Edge, in **Focus Mode**, **Quick View** was always displayed, as either collapsed or expanded.  Pressing **Esc** expanded **Quick View** if it was collapsed, and vice versa.  However, when the **Console** tool was selected in the **Activity Bar**, pressing **Esc** when the **Quick View** was collapsed displayed a blank view.  In Microsoft Edge 112, this issue has been fixed.
+In previous versions of Microsoft Edge, in **Focus Mode**, the **Quick View** panel was always displayed, as either collapsed or expanded.  Pressing **Esc** expanded the **Quick View** panel if it was collapsed, and vice versa.  However, when the **Console** tool was selected in the **Activity Bar**, pressing **Esc** when the **Quick View** panel was collapsed displayed a blank view.  In Microsoft Edge 112, this issue has been fixed.
 
-Pressing **Esc** now shows or entirely hides **Quick View**.  If **Quick View** is currently hidden, pressing **Esc** shows **Quick View**, expanded:
+Pressing **Esc** now shows or entirely hides the **Quick View** panel.  If the **Quick View** panel is currently hidden, pressing **Esc** shows the **Quick View** panel, expanded:
 
-![Quick View expanded, by pressing Esc](./devtools-112-images/focus-mode-esc-shows-quick-view.png)
+![The Quick View panel expanded, by pressing Esc](./devtools-112-images/focus-mode-esc-shows-quick-view.png)
 
-If **Quick View** is currently shown (whether collapsed or expanded), pressing **Esc** entirely hides **Quick View**:
+If the **Quick View** toolbar is currently displayed (whether the **Quick View** panel is collapsed or expanded), pressing **Esc** entirely hides the **Quick View** toolbar and panel:
 
-![Quick View entirely hidden by pressing Esc, not just collapsed](./devtools-112-images/focus-mode-esc-hides-quick-view.png)
+![The Quick View toolbar and panel entirely hidden by pressing Esc](./devtools-112-images/focus-mode-esc-hides-quick-view.png)
 
 
 <!-- ------------------------------ -->
@@ -144,9 +151,6 @@ Previously, selecting an icon with the keyboard or hovering over an icon with th
 
 ![A label is displayed when hovering over an icon in the Activity Bar](./devtools-112-images/focus-mode-label-vertical-activity-bar.png)
 
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
-
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
@@ -166,7 +170,7 @@ Microsoft Edge 112 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 112)](https://developer.chrome.com/blog/new-in-devtools-112) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 112)](https://developer.chrome.com/blog/new-in-devtools-112) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -174,3 +178,10 @@ Microsoft Edge 112 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

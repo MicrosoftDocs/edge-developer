@@ -4,14 +4,17 @@ description: To quickly see the tab order of the sections of a page, use the Sou
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 06/07/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 12/05/2023
 ---
 # Test keyboard support using the Source Order Viewer
 
-The source order of a document is important for assistive technology, and can be different than the order in which elements appear on the rendered page.  Using CSS, you can re-order page elements in a visual way, but that doesn't mean that assistive technology such as screen readers would represent page elements in the same order.
+The source order of a document is important for assistive technology, and can be different than the order in which elements appear on the rendered page.  The _source order_ is the order in which the elements of the webpage appear in the HTML source code.  Using CSS, you can re-order page elements in a visual way, which means that it's possible for the visual and source order of a webpage to be different.
 
-To ensure that the document has a logical order, you can use the **Source Order Viewer** to label different page elements with numbers that specify the order in the source code of the document.  The **Source Order Viewer** is in the **Accessibility** tab (near the **Styles** tab).
+Assistive technology, such as screen readers, usually follow the source order and ignore the visual order of the elements in the webpage.
+
+To ensure that the document has a logical order, whether it's being access with assistive technology or not, use the **Source Order Viewer** to label different page elements with numbers that specify the order in the source code of the document.  The **Source Order Viewer** is in the **Accessibility** tab (near the **Styles** tab).
 
 
 <!-- ====================================================================== -->
@@ -40,39 +43,35 @@ In the source code of the document, the sidebar navigation menu appears after th
 You can test the order of page elements by using the **Source Order Viewer** in the **Accessibility** tab.
 
 
-### Turning on the Source Order Viewer
-
-To turn on the Source Order Viewer:
-
-1. In DevTools, in the upper right, select the **Settings** (![Settings button](./test-tab-key-source-order-viewer-images/settings-button-icon.png)) button.
-
-1. Below **Settings**, select **Experiments**.
-
-1. Select the **Source Order Viewer** checkbox.
-
-1. In the upper-right corner of the **Settings** page, click **X** to close the Settings page.  At the top of DevTools, the message **One or more settings have changed which require a reload to take effect.** is displayed.  Click the **Reload DevTools** button.
-
-
-### Activating and using the Source Order Viewer
+<!-- ====================================================================== -->
+## Activating and using the Source Order Viewer
 
 To activate and use the Source Order Viewer, with the demo page:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+
+1. In DevTools, on the **Activity Bar**, select the **Elements** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./test-tab-key-source-order-viewer-images/more-tools-icon.png)) button.
 
 1. In the **Elements** tool, to the right of the **Styles** tab, select the **Accessibility** tab.
 
-1. In the **Source Order Viewer** section, select the **Show source order** checkbox.  In the rendered webpage, numbers appear, indicating the **Tab** order as controlled by the order of lines of code in the source file.
+1. In the **Source Order Viewer** section, select the **Show source order** checkbox.
 
-1. In the DOM tree in the **Elements** tool, select a major layout element, such as the `header` element.  Numeric overlays are now displayed on sections of the rendered page, which indicate the source order of the different elements.
+   In the rendered webpage, numbers appear, indicating the **Tab** order as controlled by the order of lines of code in the source file:
 
-   ![Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page](./test-tab-key-source-order-viewer-images/a11y-testing-source-order-viewer.png)
+   ![The Accessibility tab in the Elements tool, with the Source Order Viewer enabled](./test-tab-key-source-order-viewer-images/enable-source-order-viewer.png)
 
-1. Scroll the page to see all of the numeric overlays, including on the page footer section.
+1. In the DOM tree in the **Elements** tool, select a major layout element, such as the `section` element.
+
+   The tab order numbers are now displayed on children of the `section` element, indicating the source order of the different children:
+
+   ![The Source Order Viewer overlay on the section element](./test-tab-key-source-order-viewer-images/section-source-order.png)
+
+1. Scroll the page to see all of the numbers and check how the source order of the different elements differs from the visual order of the elements.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
+* [Accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/)

@@ -114,7 +114,7 @@ methods:
           description: Name of the property of which to set the value.
           type: string
         - id: propertyValue
-          description: Value to set the property.
+          description: Value to set the property to.
           type: any
       return:
         type: any
@@ -135,7 +135,7 @@ methods:
       content: 'setLocalProperty(propertyName: string, propertyValue: any): any;'
       parameters:
         - id: propertyName
-          description: Name of the property to get the value of.
+          description: Name of the property of which to set the value.
           type: string
         - id: propertyValue
           description: Value to set the property to.
@@ -143,4 +143,4 @@ methods:
       return:
         type: any
         description: The value of the property after it is set.
-extends: <a href="https://microsoft.github.io/PowerBI-JavaScript/interfaces/_node_modules_typedoc_node_modules_typescript_lib_lib_es5_d_.callablefunction.html">CallableFunction</a>
+extends: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a>

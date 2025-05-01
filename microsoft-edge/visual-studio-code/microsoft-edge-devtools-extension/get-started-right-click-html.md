@@ -4,7 +4,7 @@ description: Get started using the DevTools extension for Visual Studio Code by 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/06/2022
 ---
 # Get started by right-clicking an HTML file
@@ -105,7 +105,7 @@ In the **Edge DevTools** tab, in the **Elements** tool > **Styles** tab, you can
 <!-- ====================================================================== -->
 ## Step 5: Step through JavaScript code in the Debugger
 
-1. Select Activity Bar > Explorer (![Explorer icon in Activity Bar](./get-started-right-click-html-images/explorer-icon.png)).
+1. Select **Activity Bar** > Explorer (![Explorer icon in Activity Bar](./get-started-right-click-html-images/explorer-icon.png)).
 
 1. In the **demo-to-do** directory, click **to-do.js** to open it.  Scroll down to the `changeTask` function and then click to the left of a line number to set a breakpoint:
 

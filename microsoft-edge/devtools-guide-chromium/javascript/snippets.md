@@ -4,8 +4,9 @@ description: Snippets are small scripts that you can author and run within the S
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 10/17/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,157 +23,169 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Run snippets of JavaScript on any webpage
 
-If you are running the same code in the [Console](../console/index.md) repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [Sources](../sources/index.md) tool.  Snippets have access to the JavaScript context of the webpage, and you can run Snippets on any webpage.  The security settings of most webpages block from loading other scripts in Snippets.  For that reason, you must include all your code in one file.
+If you're entering the same code into the **Console** tool repeatedly, consider saving the code as a snippet instead, and then running the snippet.  Snippets are scripts that you author in the **Sources** tool.  Snippets have access to the JavaScript context of the webpage, and you can run snippets on any webpage.  Snippets can be used to alter a webpage, such as to change its content or appearance, or to extract data.
 
-Snippets are an alternative to [bookmarklets](https://wikipedia.org/wiki/Bookmarklet) with the difference that Snippets only run in DevTools and aren't limited to the allowed length of a URL.
+The following screenshot shows Microsoft Edge with a webpage on the left and DevTools on the right. The **Sources** tool is open, displaying the source code of the snippet that's selected in the **Snippets** tab. The snippet code was run, making changes to the webpage:
 
-Using Snippets is an excellent way to change a few things in a third-party webpage.  Code changes in Snippets are added to the current webpage and run in the same context.  For more information about changing the existing code of a webpage, see [Overrides](overrides.md).
+![The webpage, altered by the snippet](./snippets-images/snippets-overview.png)
 
-The following figure shows the DevTools homepage on the left and some Snippet source code on the right.
-
-The webpage before running the Snippet:
-
-![The webpage before running the Snippet](./snippets-images/javascript-sources-snippets-split-screen.png)
-
-The Snippet source code from the webpage before running the Snippet:
+The snippet source code is shown below:
 
 ```javascript
-console.log('Hello, Snippets!');
-document.body.innerHTML = '';
-var p = document.createElement('p');
-p.textContent = 'Hello, Snippets!';
+// Change the background color to "dimgrey".
+document.body.style.backgroundColor = "dimgrey";
+
+// Add a paragraph at the bottom of the document.
+const p = document.createElement("p");
+p.textContent = "Hello world";
+p.style.color = "white";
+p.style.fontSize = "2rem";
 document.body.appendChild(p);
+
+// Log a message to the console.
+console.log("Hello world");
 ```
 
-In the following figure, the webpage appears after running the Snippet.  The **Console Drawer** pops up to display the **Hello, Snippets!** message that the Snippet logs, and the content of the webpage changes completely:
+The code changes the background color of the webpage to dimgrey, adds a new line of text at the bottom of the webpage, and logs a message to the **Console** tool.
 
-![The webpage after running the Snippet](./snippets-images/javascript-sources-snippets-split-screen-after.png)
+When you run a snippet on a webpage, the snippet's source code is added to the current webpage. For more information about changing the existing code of a webpage instead of adding new code, see [Override webpage resources with local copies (Overrides tab)](./overrides.md).
+
+#### Include all your code in one file
+
+The security settings of most webpages block from loading other scripts in snippets. For this reason, you must include all your code in one file.
 
 
 <!-- ====================================================================== -->
 ## Open the Snippets tab
 
-The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets.  When you want to edit a Snippet, you need to open it from the **Snippets** tab:
+The **Snippets** tab is grouped with the **Page** tab in the **Navigator** pane, on the left of the **Sources** tool.
 
-![The Snippets tab](./snippets-images/javascript-sources-snippets-pane.png)
+To open the **Snippets** tab:
 
-### Open the Snippets tab with a mouse
+1. To open DevTools, right-click the webpage, and then select **Inspect**. Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS). DevTools opens.
 
-1. Select the **Sources** tab.  The **Sources** tool appears:
+1. In DevTools, on the **Activity Bar**, select the **Sources** tab. If that tab isn't visible, click the **More tools** (![More tools icon](./snippets-images/more-tools-icon.png)) button.
 
-   ![The Sources tool with the Page tab open on the left](./snippets-images/javascript-sources-page-pane.png)
+   ![The Sources tool with the Page tab open on the left](./snippets-images/sources-tool-page-pane.png)
 
 1. In the **Navigator** pane (on the left), select the **Snippets** tab.  To access the **Snippets** option, you might need to click the **More tabs** (![More tabs](./snippets-images/more-tabs-icon.png)) button.
 
-### Open the Snippets tab with the Command Menu
+
+#### Open the Snippets tab from the Command Menu
+
+You can also open the **Snippets** tab by using the **Command Menu**:
 
 1. Select anything in DevTools, so that DevTools has focus.
 
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-1. Type **Snippets**, select **Show Snippets**, and then press **Enter** to run the command:
+1. Start typing "snippets", select **Show Snippets**, and then press **Enter** to run the command:
 
-   ![The Show Snippets command](./snippets-images/javascript-search-show-snippets.png)
+   ![The Show Snippets command](./snippets-images/command-menu.png)
 
 
 <!-- ====================================================================== -->
-## Create Snippets
+## Create a new snippet
 
-### Create a Snippet through the Sources tool
+To create a new snippet from the **Snippets** tab:
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
-1. Click **New snippet**.
+1. Click **New snippet** (**+**).
 
-1. Enter a name for your Snippet, and then press **Enter**:
+1. Enter a name for your snippet, and then press **Enter**:
 
-   ![Name a Snippet](./snippets-images/javascript-sources-snippets-naming.png)
+   ![A new, empty, snippet in the Sources tool](./snippets-images/new-snippet.png)
 
-### Create a Snippet through the Command Menu
+#### Create a new snippet from the Command Menu
 
 1. Focus your cursor somewhere in DevTools.
 
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-1. Start typing **snippet**, select **Create new snippet**, and then press **Enter**:
+1. Start typing "snippet", select **Create new snippet**, and then press **Enter**:
 
-   ![The command for creating a new Snippet](./snippets-images/javascript-search-create-new-snippet.png)
+   ![The command for creating a new snippet](./snippets-images/new-snippet-command-menu.png)
 
-To rename your new Snippet with a custom name, see [Rename Snippets](#rename-snippets).
-
-
-<!-- ====================================================================== -->
-## Edit Snippets
-
-1. [Open the Snippets tab](#open-the-snippets-tab).
-
-1. In the **Snippets** tab, select the name of the Snippet that you want to edit.  The Snippet opens in the **Code Editor**:
-
-   ![The Code Editor](./snippets-images/javascript-sources-snippets-editor-saved.png)
-
-1. Use the **Code Editor** to add JavaScript to your Snippet.
-
-1. When an asterisk appears next to the name of your Snippet, it means you have unsaved code.  Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save:
-
-   ![An asterisk next to the Snippet name indicates unsaved code](./snippets-images/javascript-sources-snippets-editor-unsaved.png)
+To rename your new snippet, see [Rename a snippet](#rename-a-snippet), below.
 
 
 <!-- ====================================================================== -->
-## Run Snippets
+## Edit a snippet
 
-### Run a Snippet from the Sources tool
+To edit the source code of a snippet:
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
-1. Click the name of the Snippet that you want to run.  The Snippet opens in the **Code Editor**:
+1. In the **Snippets** tab, click the name of the snippet that you want to edit.  The snippet opens in the **Code Editor**:
 
-1. Click **Run snippet** (![Run Snippet](./snippets-images/run-snippet-icon.png)).
+   ![The Code Editor](./snippets-images/edit-snippet.png)
 
-### Run a Snippet with the Command Menu
+1. Use the **Code Editor** to add JavaScript to your snippet.
+
+1. When an asterisk appears next to the name of your snippet, it means you have unsaved code.  Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save:
+
+   ![An asterisk next to the snippet name indicates unsaved code](./snippets-images/unsaved-changes.png)
+
+
+<!-- ====================================================================== -->
+## Run a snippet
+
+#### Run a snippet from the Sources tool
+
+1. [Open the Snippets tab](#open-the-snippets-tab).
+
+1. Click the name of the snippet that you want to run.  The snippet opens in the **Code Editor**:
+
+1. Click the **Run snippet** (![Run snippet](./snippets-images/run-snippet-icon.png)) button, or press **Ctrl+Enter** (Windows, Linux) or **Command+Enter** (macOS):
+
+   ![The run snippet button at the bottom of the code editor](./snippets-images/run-snippet-from-sources-tool.png)
+
+#### Run a snippet from the Command Menu
 
 1. Focus your cursor somewhere in DevTools.
 
-1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the Command Menu.
+1. Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
 
-1. Delete the **>** character and type the **!** character followed by the name of the Snippet that you want to run:
+1. Delete the **>** character and type the **!** character followed by the name of the snippet that you want to run:
 
-   ![Running a Snippet from the Command Menu](./snippets-images/javascript-search-run-command.png)
+   ![Running a snippet from the Command Menu](./snippets-images/run-snippet-from-command-menu.png)
 
-1. Press **Enter** to run the Snippet.
-
-
-<!-- ====================================================================== -->
-## Rename Snippets
-
-1. [Open the Snippets tab](#open-the-snippets-tab).
-
-1. Right-click the Snippet name, and then select **Rename**.
+1. Press **Enter** to run the snippet.
 
 
 <!-- ====================================================================== -->
-## Delete Snippets
+## Rename a snippet
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
-1. Right-click the Snippet name, and then select **Remove**.
+1. Right-click the snippet name, and then select **Rename**.
 
 
 <!-- ====================================================================== -->
-## Save Snippets
-
-By default, Snippets are only available within DevTools, but you can also save them to disk.
+## Delete a snippet
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
-1. Right-click the Snippet name, and then select **Save as**.
+1. Right-click the snippet name, and then select **Remove**.
 
-1. Enter a file name and location when prompted.
+
+<!-- ====================================================================== -->
+## Save a snippet
+
+By default, snippets are only available within DevTools, but you can also save them to disk.
+
+1. [Open the Snippets tab](#open-the-snippets-tab).
+
+1. Right-click the snippet name, and then select **Save as**.
+
+1. When prompted, enter a file name and location.
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/snippets/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/snippets/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

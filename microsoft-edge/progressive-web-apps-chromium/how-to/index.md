@@ -1,24 +1,26 @@
 ---
-title: Get started with Progressive Web Apps
+title: Get started with PWAs
 description: Learn to build your first Progressive Web App.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 11/24/2022
 ---
-# Get started with Progressive Web Apps
+# Get started with PWAs
 
 Progressive Web Apps (PWAs) are applications that you build by using web technologies, and that can be installed and can run on all devices, from one codebase.
 
 To learn more about what PWAs are and their benefits, see [Overview of Progressive Web Apps (PWAs)](../index.md).
 
 <!-- link is placed here per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->
-This guide is targeted at web developers who want to learn to build PWAs. To learn more about installing and running PWAs, see [Installing a PWA](../ux.md#installing-a-pwa) in _Use Progressive Web Apps in Microsoft Edge_.
+This guide is targeted at web developers who want to learn to build PWAs. To learn more about installing and running PWAs, see [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
 
 In this guide, you first learn how PWAs work, then create your first simple PWA, which will be a temperature converter app, and then learn more about how to make great PWAs.
 
 You can find the final source code of the app you will be building in this guide on the [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
+
 
 
 <!-- ====================================================================== -->
@@ -45,9 +47,9 @@ Your front-end code uses HTML, CSS, JavaScript, and a JSON manifest only.
 
 You use HTML to describe the content in your app, such as the text, images, text fields, or buttons that appear in the user interface. You then use CSS to organize the HTML content in a layout, and provide styles to elements. You use JavaScript to add user interactions to your user interface. And finally, you use a JSON manifest file that describes your application to the host operating system.
 
-Note that although your front-end code runs by using the device's web browser, the browser user interface may not be visible as your app can choose to run in a standalone window.
+Although your front-end code runs by using the device's web browser, the browser user interface might not be visible, because your app can choose to run in a standalone window.
 
-On top of the user interface code, you also use JavaScript to make your application faster, more reliable, and network-independent by using a service worker file. Finally, your front-end code also contains a JSON manifest file that describes your application to the host operating system.
+On top of the user interface code, you can also use JavaScript to make your application faster, more reliable, and network-independent by using a service worker file. Finally, your front-end code also contains a JSON manifest file that describes your application to the host operating system.
 
 The following diagram shows the high-level architecture of a PWA.  The web server is on one side of the PWA, and the device is on the other side. The device contains the front-end code, including HTML, CSS, JavaScript, the service worker, and the manifest:
 
@@ -79,7 +81,7 @@ To start developing your PWA, you can use a local web server instead. To start a
 
 You now have a simple local web server running at `http://localhost:8080`.
 
-Key parts of the Progressive Web Apps platform, such as Service Workers, require using HTTPS.  When your PWA goes live, you must publish it to an HTTPS URL.  Many hosts now offer HTTPS by default, but if your host doesn't, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
+Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS.  When your PWA goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
 
 For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
 
@@ -122,7 +124,11 @@ The app runs in the browser for now, and can't be installed. To make the app ins
 <!-- ====================================================================== -->
 ## Step 3 - Create a web app manifest
 
-A [Web App Manifest](web-app-manifests.md) is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.
+A _web app manifest_ is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.
+
+See:
+* [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN > References > Progressive web apps > Guides.
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN > References.
 
 To add an app manifest to your app:
 
@@ -160,7 +166,7 @@ To add an app manifest to your app:
 
 Your VS Code project should now look somewhat like this:
 
-![Screenshot of VS Code showing the sample PWA project, with the index.html, manifest.json, and icon files](./index-images/visual-studio-project-with-manifest.png)
+![VS Code showing the sample PWA project, with the index.html, manifest.json, and icon files](./index-images/visual-studio-project-with-manifest.png)
 
 
 <!-- ====================================================================== -->
@@ -168,7 +174,7 @@ Your VS Code project should now look somewhat like this:
 
 Now that your app has a web app manifest file, and a start page, it's time to build out the main app functionality.
 
-In this step of the tutorial, we'll create a basic temperature unit conversion app.
+In this step of the tutorial, we'll create a temperature unit conversion app.
 
 1. To create the main user interface content, copy the following HTML code and paste it into the `index.html` file, replacing the `<h1>` HTML tag:
 
@@ -247,7 +253,7 @@ In this step of the tutorial, we'll create a basic temperature unit conversion a
     <script src="converter.js"></script>
     ```
 
-1. Now add some CSS style to the app, to make it more visually interesting. Create a new file called `converter.css` in your project and add the following code to it:
+1. Now add some CSS style to the app, to make it more visually appealing. Create a new file called `converter.css` in your project and add the following code to it:
 
     ```css
     html {
@@ -304,21 +310,22 @@ In this step of the tutorial, we'll create a basic temperature unit conversion a
 
     ![Running your new PWA, with the frontend code, on localhost](./index-images/sample-pwa-app-with-frontend-code.png)
 
-Your app does something useful now, but it can't be installed yet, because there's no service worker. You'll make your app installable in the next step, by creating a service worker.
+Your app does something useful now, and it can be installed as a standalone app by users.  Before installing the app, create a service worker to make the app work offline.
 
 
 <!-- ====================================================================== -->
 ## Step 5 - Add a service worker
 
-Service workers are a key technology that help make PWAs faster and independent of network conditions.
+Service workers are a key technology that help make PWAs fast and independent of network conditions.
 
-Service workers are specialized [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) that intercept network requests from your PWA and enable scenarios that were previously limited to native apps, including:
-
-*  Offline support.
+A service worker is a specialized web worker that can intercept network requests from your PWA, and enables scenarios such as:
+*  Offline support, including intermittent connections.
 *  Advanced caching.
 *  Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
 
-For Microsoft Edge to be able to install the app, your app must have a service worker file.
+See [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN.
+
+A PWA doesn't need to have a service worker for Microsoft Edge to be able to install the app.  However, we recommend adding a service worker to your PWA to make it faster, and to make your PWA more reliable, such as when your device has an intermittent network connection or is offline.
 
 A service worker is defined in a JavaScript file that's loaded by your app. To add a service worker to your project:
 
@@ -363,8 +370,8 @@ A service worker is defined in a JavaScript file that's loaded by your app. To a
     });
     ```
 
-    The `sw.js` file will act as your PWA's service worker. The code above listens to the `install` event and uses it to cache all resources the app needs to function: the start HTML page, the converter JavaScript file, and the converter CSS file.
-    
+    The `sw.js` file will act as your PWA's service worker. The code above listens to the `install` event, which is triggered when the user installs your app, and uses it to cache the resources that your app needs to function offline, such as the initial HTML page, the converter JavaScript file, and the converter CSS file.
+
     The code also intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy. The service worker returns cached resources so your app can work offline, and if that fails attempts to download from the server.
 
 1.  Open `index.html` and add the following code at the end of the `<body>` tag to register your service worker:
@@ -383,9 +390,9 @@ To confirm that your service worker is running:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. Open the **Application** tool, then **Service Workers**.  If the service worker isn't displayed, refresh the page.
+1. Open the **Application** tool, then click **Service workers**.  If the service worker isn't displayed, refresh the page.
 
-    ![The DevTools Application tool, showing the Service Workers panel, with the new sw.js worker running](./index-images/devtools-sw-overview.png)
+    ![The DevTools Application tool, showing the Service workers panel, with the new sw.js worker running](./index-images/devtools-sw-overview.png)
 
 1.  View the service worker cache by expanding **Cache Storage** and selecting **temperature-converter-v1**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, and the initial page.
 
@@ -401,7 +408,7 @@ To confirm that your service worker is running:
 <!-- ====================================================================== -->
 ## Step 6 - Install the app
 
-Now that your app has a web app manifest and a service worker, supporting browsers can install it as a PWA.
+Now that your app has a web app manifest, supporting browsers can install your app as a PWA.
 
 In Microsoft Edge, once you refresh your app, the **App available** button appears in the address bar. Clicking the **App available** button prompts you to install the app locally.
 
@@ -411,13 +418,13 @@ Click **Install** to install the app locally. After the installation completes, 
 
 ![The sample PWA, installed and running in its own window](./index-images/sample-pwa-installed.png)
 
-To learn more about installing PWAs, see [Use Progressive Web Apps in Microsoft Edge](../ux.md).
+To learn more about installing PWAs, see [Use PWAs in Microsoft Edge](../ux.md).
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
-The simple temperature converter PWA you built so far only scratches the surface of what PWAs can do. The previous steps are important prerequisites for any PWA, but there are important best practices that will make your PWA feel like a real app when installed.
+The temperature converter PWA that you built so far is only a small sample of what PWAs can do. The previous steps are important prerequisites for any PWA, but there are important best practices that will make your PWA feel like a real app when installed.
 
 When users install applications, they have certain expectations of what these applications can do; for example:
 
@@ -431,5 +438,26 @@ To build a great PWA, see [Best practices for PWAs](./best-practices.md).
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article -->
 
-*  [Getting Started with Progressive Web Apps (Workshop)](https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop).
+Local:
+* [Overview of Progressive Web Apps (PWAs)](../index.md)
+* [Use PWAs in Microsoft Edge](../ux.md)
+* [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
+* [Best practices for PWAs](./best-practices.md)
+
+MDN:
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN.
+
+External Microsoft:
+* [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started)
+* [Visual Studio Code](https://code.visualstudio.com)
+* [Azure free account](https://azure.microsoft.com/free)
+* [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web)
+
+External:
+* [Getting Started with Progressive Web Apps (Workshop)](https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop).
+* [GitHub Pages](https://pages.github.com/)
+* [Node.js](https://nodejs.org)
+* [Let's Encrypt](https://letsencrypt.org/)

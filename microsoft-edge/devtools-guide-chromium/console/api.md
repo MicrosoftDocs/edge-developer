@@ -4,7 +4,8 @@ description: Use the Console API to write messages to the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
@@ -24,6 +25,7 @@ ms.date: 05/04/2021
 <!-- orig:
 # Console API reference
 -->
+<!-- todo: since headings markdown was normalized, possibly remove br's & triple-hyphen horiz rule/line, if section breaks are clear -->
 
 Use the `console` object's methods to write messages to the **Console** from your JavaScript.
 
@@ -39,6 +41,7 @@ You can also enter these methods into the **Console**.  For example, in the **Co
 
 ---
 
+
 <!-- ====================================================================== -->
 ## assert
 
@@ -50,7 +53,9 @@ console.assert(expression, object)
 
 [Log level](reference.md#persist-messages-across-page-loads): `Error`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 const x = 5;
@@ -59,13 +64,16 @@ const reason = 'x is expected to be less than y';
 console.assert(x < y, {x, y, reason});
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.assert() example](./api-images/console-demo-assert-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## clear
@@ -78,13 +86,16 @@ If [Preserve Log](reference.md#filter-by-log-level) is turned on, the [clear](#c
 console.clear()
 ```
 
-### See also
+
+<!-- ------------------------------ -->
+#### See also
 
 * [Clear the Console](reference.md#clear-the-console)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## count
@@ -97,7 +108,9 @@ console.count([label])
 
 [Log level](reference.md#persist-messages-across-page-loads): `Info`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.count();
@@ -106,13 +119,16 @@ console.count();
 console.count();
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.count() example](./api-images/console-demo-count-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## countReset
@@ -123,7 +139,9 @@ Resets a count.
 console.countReset([label])
 ```
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.countReset();
@@ -133,6 +151,7 @@ console.countReset('coffee');
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## debug
@@ -145,19 +164,24 @@ console.debug(object [, object, ...])
 
 [Log level](reference.md#persist-messages-across-page-loads): `Verbose`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.debug('debug');
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.debug() example](./api-images/console-demo-debug-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## dir
@@ -170,19 +194,24 @@ console.dir(object)
 
 [Log level](reference.md#persist-messages-across-page-loads): `Info`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.dir(document.head);
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.dir() example](./api-images/console-demo-dir-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## dirxml
@@ -195,19 +224,24 @@ console.dirxml(node)
 
 [Log level](reference.md#persist-messages-across-page-loads): `Info`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.dirxml(document);
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.dirxml() example](./api-images/console-demo-dirxml-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## error
@@ -220,19 +254,24 @@ console.error(object [, object, ...])
 
 [Log level](reference.md#persist-messages-across-page-loads): `Error`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.error() example](./api-images/console-demo-error-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## group
@@ -243,7 +282,9 @@ Visually groups messages together until the [groupEnd](#groupend) method is used
 console.group(label)
 ```
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 const label = 'Adolescent Irradiated Espionage Tortoises';
@@ -255,13 +296,16 @@ console.info('Raph');
 console.groupEnd(label);
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.group() example](./api-images/console-demo-group-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## groupCollapsed
@@ -276,6 +320,7 @@ console.groupCollapsed(label)
 
 ---
 
+
 <!-- ====================================================================== -->
 ## groupEnd
 
@@ -289,6 +334,7 @@ console.groupEnd(label)
 
 ---
 
+
 <!-- ====================================================================== -->
 ## info
 
@@ -300,19 +346,24 @@ console.info(object [, object, ...])
 
 [Log level](reference.md#persist-messages-across-page-loads): `Info`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.info('info');
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.info() example](./api-images/console-demo-info-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## log
@@ -325,19 +376,24 @@ console.log(object [, object, ...])
 
 [Log level](reference.md#persist-messages-across-page-loads): `Info`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.log('log');
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.log() example](./api-images/console-demo-log-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## table
@@ -350,7 +406,9 @@ console.table(array)
 
 [Log level](reference.md#persist-messages-across-page-loads): `Info`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.table([
@@ -370,13 +428,16 @@ console.table([
 ]);
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.table() example](./api-images/console-demo-table-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## time
@@ -387,7 +448,9 @@ Starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and pr
 console.time([label])
 ```
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.time();
@@ -397,13 +460,16 @@ for (var i = 0; i < 100000; i++) {
 console.timeEnd();
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.time() example](./api-images/console-demo-time-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## timeEnd
@@ -420,6 +486,7 @@ console.timeEnd([label])
 
 ---
 
+
 <!-- ====================================================================== -->
 ## trace
 
@@ -431,7 +498,9 @@ console.trace()
 
 [Log level](reference.md#persist-messages-across-page-loads): `Info`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 const first = () => { second(); };
@@ -441,13 +510,16 @@ const fourth = () => { console.trace(); };
 first();
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.trace() example](./api-images/console-demo-trace-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## warn
@@ -460,19 +532,24 @@ console.warn(object [, object, ...])
 
 [Log level](reference.md#persist-messages-across-page-loads): `Warning`
 
-### Example
+
+<!-- ------------------------------ -->
+#### Example
 
 ```javascript
 console.warn('warn');
 ```
 
-#### Output
+
+<!-- ---------- -->
+###### Output
 
 ![The result of the console.warn() example](./api-images/console-demo-warn-button.png)
 
 <br/><br/>
 
 ---
+
 
 <!-- ====================================================================== -->
 ## See also
@@ -486,7 +563,7 @@ console.warn('warn');
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/console/api/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools & Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/console/api/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

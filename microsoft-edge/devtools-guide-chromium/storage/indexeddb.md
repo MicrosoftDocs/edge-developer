@@ -1,11 +1,12 @@
 ---
 title: View and change IndexedDB data
-description: How to view and change IndexedDB data with the Application panel and Snippets.
+description: How to view and change IndexedDB data by using the Application tool and snippets.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 10/17/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,45 +29,37 @@ To view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/Indexe
 <!-- ====================================================================== -->
 ## View IndexedDB data
 
-1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.
+1. Open a webpage that uses IndexedDB in a new window or tab. You can use [the PWAmp demo application](https://microsoftedge.github.io/Demos/pwamp/).
 
-   ![The Manifest pane](./indexeddb-images/storage-application-manifest-empty.png)
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. Expand the **IndexedDB** menu to review which databases are available.
+1. In DevTools, on the **Activity Bar**, select the **Application** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./indexeddb-images/more-tools-icon.png)) button.
 
-   ![The IndexedDB menu](./indexeddb-images/storage-application-storage-indexeddb.png)
+   The **Manifest** pane usually opens by default:
 
-   * (![Database icon](./indexeddb-images/database-icon.png)) `notes - https://mdn.github.io` represents a database, where `notes` is the name of the database and `https://mdn.github.io` is the origin that accesses the database.
+   ![The Manifest pane of the Application tool](./indexeddb-images/application-tool-manifest-panel.png)
 
-   * (![Object Store icon](./indexeddb-images/object-store-icon.png)) `notes` is an object store.
+1. In the sidebar, under **Storage**, expand the **IndexedDB** menu to see which databases are available:
 
-   *  **title** and **body** are [indexes](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index).
+   ![The IndexedDB menu](./indexeddb-images/expanded-indexeddb-menu.png)
 
-   > [!NOTE]
-   > **Known Limitation**  Third-party databases aren't visible.  For example, if you use an `<iframe>` to embed an ad on your page, and your ad network uses IndexedDB, the IndexedDB data for your ad network isn't visible.  See [issue #943770](https://crbug.com/943770).
+   * (![Database icon](./indexeddb-images/database-icon.png)) `keyval-store` represents a database.
 
-1. Select a database, to see the origin and version number.
+   * (![Object Store icon](./indexeddb-images/object-store-icon.png)) `keyval` is an object store in the database.
 
-   ![The notes database](./indexeddb-images/storage-application-storage-indexeddb-notes_db.png)
+1. Select the `keyval-store` database, to see its origin, version number, and other information about the database:
 
-1. Click an object store, to see the key-value pairs.
+   ![Information about the keyval-store database, in the Application tool](./indexeddb-images/database-information.png)
 
-   > [!NOTE]
-   > IndexedDB data doesn't update in real-time.  See [Refresh IndexedDB data](#refresh-indexeddb-data).
+1. Click the `keyval` object store, to see the key-value pairs:
 
-   ![The notes object store](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os.png)
+   ![The notes object store](./indexeddb-images/object-store-key-values.png)
 
-   *  **Total entries** is the total number of key-value pairs in the object store.
+   **Note:** IndexedDB data doesn't update in real-time. If you see outdated data displayed in an object store, refresh the object store view. See [Refresh IndexedDB data](#refresh-indexeddb-data).
 
-   *  **Key generator value** is the next available key.  The field is only shown when using [key generators](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator).
+1. Click a cell in the **Value** column to expand the value:
 
-1. Click a cell in the **Value** column to expand the value.
-
-   ![View an IndexedDB value](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.png)
-
-1. Click an index, such as **title** or **body** in the following figure, to sort the object store according to the values of that index.
-
-   ![Sort an object store by an index](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os-title.png)
+   ![View an IndexedDB value](./indexeddb-images/expanded-value.png)
 
 
 <!-- ====================================================================== -->
@@ -74,70 +67,101 @@ To view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/Indexe
 
 IndexedDB values in the **Application** tool don't update in real-time.
 
-*  To refresh the data, view an object store and then click **Refresh** (![Refresh](./indexeddb-images/reload-icon.png)).
-*  To refresh all data, view a database and click **Refresh database**.
+*  To refresh the data, view an object store and then click the **Refresh** (![Refresh](./indexeddb-images/reload-icon.png)) button.
 
-![View a database](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.png)
+*  To refresh all data in an IndexedDB database, view a database and then click **Refresh database**:
+
+   ![The database view, with the refresh button](./indexeddb-images/refresh-db.png)
 
 
 <!-- ====================================================================== -->
 ## Edit IndexedDB data
 
-IndexedDB keys and values aren't editable from the **Application** tool.  However, since DevTools has access to page context, you can run JavaScript code within DevTools to edit IndexedDB data.
+IndexedDB keys and values aren't editable from the **Application** tool.  However, since DevTools has access to the page context, you can run JavaScript code within DevTools to edit the data stored in an IndexedDB database.
 
-### Edit IndexedDB data with Snippets
+#### Edit IndexedDB data by using the Console tool
 
-[Snippets](../javascript/snippets.md) are a way to store and run blocks of JavaScript code within DevTools.  When you run a Snippet, the result is logged to the **Console**.  You can use a Snippet to run JavaScript code to edit an IndexedDB database.
+1. In DevTools, on the **Activity Bar**, select the **Console** tab.
 
-![Using a Snippet to interact with IndexedDB](./indexeddb-images/storage-sources-snippets-indexeddb-output.png)
+1. In the **Console** tool, run JavaScript code to edit the IndexedDB data. For example, to add a new value to the `keyval` object store, run the following code:
+   
+   ```javascript
+   let connection = indexedDB.open("keyval-store", 1);
+
+   connection.onsuccess = e => {
+     const database = e.target.result;
+     const transaction = database.transaction("keyval", "readwrite");
+     const objectStore = transaction.objectStore("keyval");
+     const request = objectStore.add({foo: "bar"}, "new-key");
+     request.onsuccess = e => {
+       console.log(e.target.result);
+     }
+   }
+   ```
+
+#### Edit IndexedDB data by using snippets
+
+[Snippets](../javascript/snippets.md) are a way to store and run JavaScript code repeatedly, within DevTools.  If you need to edit IndexedDB data often, store it in a new snippet, and then run the snippet. To learn more, see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
+
+![Using a Snippet to interact with IndexedDB](./indexeddb-images/edit-from-snippet.png)
 
 
 <!-- ====================================================================== -->
 ## Delete IndexedDB data
 
-### Delete an IndexedDB key-value pair
+
+You can delete any of the following:
+* An IndexedDB key-value pair.
+* All key-value pairs in an object store.
+* An IndexedDB database.
+* All IndexedDB storage.
+
+These options are described below.
+
+
+#### Delete an IndexedDB key-value pair
 
 1. [View an IndexedDB object store](#view-indexeddb-data).
 
-1. Click the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.
+1. Click the key-value pair that you want to delete.  DevTools highlights the key-value pair to indicate that it's selected:
 
-   ![Click a key-value pair in order to delete it](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os2.png)
+   ![A key-value pair item is selected in the object store view](./indexeddb-images/select-keyval.png)
 
-1. Press `Delete` or click **Delete Selected** (![Delete Selected](./indexeddb-images/delete-icon.png)).
+1. Press `Delete`, or click the **Delete selected** (![Delete Selected icon](./indexeddb-images/delete-icon.png)) button:
 
-   ![How the object store looks after the key-value pair has been deleted](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.png)
+   ![The delete key value button in the toolbar of the object store view](./indexeddb-images/delete-keyval.png)
 
-### Delete all key-value pairs in an object store
+#### Delete all key-value pairs in an object store
 
 1. [View an IndexedDB object store](#view-indexeddb-data).
 
-   ![View an object store](./indexeddb-images/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.png)
+1. Click the **Clear object store** (![Clear object store](./indexeddb-images/clear-icon.png)) button.
 
-1. Click **Clear object store** (![Clear object store](./indexeddb-images/clear-icon.png)).
+   ![The clear object store button in the toolbar of the object store view](./indexeddb-images/clear-object-store.png)
 
-### Delete an IndexedDB database
+#### Delete an IndexedDB database
 
 1. [View the IndexedDB database](#view-indexeddb-data) that you want to delete.
 
 1. Click **Delete database**.
 
-   ![The Delete database button](./indexeddb-images/storage-application-storage-indexeddb-notes_db-delete-database.png)
+   ![The Delete database button](./indexeddb-images/delete-database.png)
 
-### Delete all IndexedDB storage
+#### Delete all IndexedDB storage
 
-1. Open the **Clear storage** pane.
+1. In the sidebar of the **Application** tool, click **Storage**.
 
-1. Make sure that the **IndexedDB** checkbox is enabled.
+1. Scroll down to the **Storage** checkboxes and make sure that the **IndexedDB** checkbox is selected.
 
-1. Click **Clear site data**.
+1. Click the **Clear site data** button.
 
-   ![The Clear storage pane](./indexeddb-images/storage-application-clear-storage-indexeddb-clear-site-data.png)
+   ![The Storage pane, showing the various storage checkboxes and the Clear site data button](./indexeddb-images/clear-site-data.png)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/storage/indexeddb/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/storage/indexeddb/) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

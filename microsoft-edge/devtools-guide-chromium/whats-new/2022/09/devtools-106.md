@@ -1,19 +1,28 @@
 ---
-title: What's new in DevTools (Microsoft Edge 106)
+title: What's New in DevTools (Microsoft Edge 106)
 description: "Introducing the Command Palette. Filter and automatically fix code issues in DevTools for Visual Studio Code. DevTools now uses less disk space when caching sourcemaps. Chromium color themes have been deprecated. Accessibility improvements in Focus Mode and high contrast mode. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/29/2022
 ---
 # What's New in DevTools (Microsoft Edge 106)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 106
+
+[![Thumbnail image for video "What's new in DevTools 106"](./devtools-106-images/devtools-whatsnew-106.png)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
 
 
 <!-- ====================================================================== -->
 ## Introducing the Command Palette
+
+_The Command Palette experiment was removed in Microsoft Edge 123._
 
 <!-- Subtitle: Your favorite browser management and DevTools commands in one place. -->
 
@@ -36,9 +45,6 @@ To enable the Command Palette experiment:
 
 1. Click the **Restart** button, which appears in the lower right when you select **Enabled**.
 
-   For more information, see [Enable Command Palette](../../../experimental-features/edge-command-palette.md#enable-command-palette) in _Run commands via keyboard with Command Palette_.
-
-
 To quickly access the available browser management commands and DevTools commands, after you've enabled the experiment:
 
 1. In Microsoft Edge (with or without DevTools open), press **Ctrl+Shift+Spacebar**.
@@ -53,9 +59,6 @@ To quickly access the available browser management commands and DevTools command
 
 
 Let us know what commands you'd like to see in future versions of Microsoft Edge, by posting a comment in [Issue 73: [feedback] Command Palette experiment](https://github.com/MicrosoftEdge/DevTools/issues/73) in the **MicrosoftEdge/DevTools** repo!
-
-See also:
-* [Run commands via keyboard with Command Palette](../../../experimental-features/edge-command-palette.md)
 
 
 <!-- ====================================================================== -->
@@ -96,7 +99,7 @@ When you refresh the webpage, the **Source Maps Monitor** tool shows that the ca
 
 ![Source Maps Monitor tool, upon second load](./devtools-106-images/source-maps-indexeddb-second-load.png)
 
-To clear the IndexedDB cache and force DevTools to re-load sourcemaps, run the **Clear source maps cache** command in the Command Menu.  See [Run commands in the Command Menu](../../../command-menu/index.md).
+To clear the IndexedDB cache and force DevTools to re-load sourcemaps, run the **Clear source maps cache** command in the **Command Menu**.  See [Run commands in the Command Menu](../../../command-menu/index.md).
 
 For history, see [Issue 89](https://github.com/MicrosoftEdge/DevTools/issues/89).
 
@@ -123,9 +126,6 @@ There are many DevTools color themes to choose from, such as **Monokai** and **S
 
 ![Setting the DevTools theme to Monokai](./devtools-106-images/set-theme-monokai.png)
 
-See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
-
 
 <!-- ====================================================================== -->
 ## Accessibility improvements in Focus Mode and high contrast mode
@@ -142,9 +142,8 @@ Screen readers now announce which **Dock location** button or which **Activity B
 ![The redesigned Docking menu in Focus Mode](./devtools-106-images/focus-mode-redesigned-docking-menu.png)
 
 See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
-* [Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View](../../../whats-new/2022/09/devtools-105.md#focus-mode-improved-location-controls-for-devtools-activity-bar-and-quick-view) in _What's new in DevTools (Microsoft Edge 105)_.
+* [Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View](../../../whats-new/2022/09/devtools-105.md#focus-mode-improved-location-controls-for-devtools-activity-bar-and-quick-view) in _What's New in DevTools (Microsoft Edge 105)_.
 
 
 #### Computed styles are easier to see in high contrast mode
@@ -177,7 +176,7 @@ Microsoft Edge 106 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 106)](https://developer.chrome.com/blog/new-in-devtools-106) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 106)](https://developer.chrome.com/blog/new-in-devtools-106) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -185,3 +184,10 @@ Microsoft Edge 106 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

@@ -4,7 +4,7 @@ description: Device and state emulation in the Microsoft Edge Developer Tools ex
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Device emulation
@@ -14,6 +14,9 @@ In the **Edge DevTools: Browser** tab, the Device Emulation toolbar on the botto
 ![Browser preview in the extension with emulation tool bar showing](./device-state-emulation-images/edge-for-code-screencast-v2.png)
 
 To reproduce the UI shown here, see [Opening DevTools by right-clicking an HTML file](./open-devtools-and-embedded-browser.md#opening-devtools-by-right-clicking-an-html-file) in _Opening DevTools and the DevTools browser_.
+
+See also:
+* [Limitations of the embedded DevTools browser](./external-browser-window.md#limitations-of-the-embedded-devtools-browser) in _Using an external browser window_.
 
 
 <!-- ====================================================================== -->

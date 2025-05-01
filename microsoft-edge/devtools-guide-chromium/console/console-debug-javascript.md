@@ -4,8 +4,9 @@ description: Debugging and resolving JavaScript-related errors that are reported
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/12/2023
 ---
 # Fix JavaScript errors that are reported in the Console
 
@@ -15,20 +16,19 @@ This article walks you through six demo pages to demonstrate resolving JavaScrip
 <!-- ====================================================================== -->
 ## Fix JavaScript errors
 
-The first experience you have with the **Console** is likely to be errors in scripts.
+A major role of the **Console** is to display any JavaScript errors that are found in the webpage.
 
 
-### Demo page: JavaScript error reported in the Console tool
+<!-- ------------------------------ -->
+#### Demo page: JavaScript error reported in the Console tool
 
 1. Open the demo webpage [JavaScript error reported in the Console tool](https://microsoftedge.github.io/Demos/devtools-console/error.html) in a new window or tab.
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-   In the top right of DevTools, the **Open Console to view errors** button displays an error about the webpage.
+1. Click the **Console** button in the **Activity Bar**.  In DevTools, the **Console** gives you more information about the error:
 
-1. Click the **Open Console to view errors** button on the top right.  In DevTools, the **Console** gives you more information about the error:
-
-   ![DevTools gives detailed information about the error in the Console](./console-debug-javascript-images/console-debug-displays-error.png)
+   ![DevTools gives detailed information about the error in the Console](./console-debug-javascript-images/displays-error.png)
 
    Many error messages in the **Console** have a **Search for this message on the Web** button, shown as a magnifying glass.  For more information, see [Search the web for a Console error message string](index.md#search-the-web-for-a-console-error-message-string).
 
@@ -36,7 +36,7 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Click the `error.html:16` link on the right of the error message in the **Console**.  The **Sources** tool opens and highlights the line of code with the error:
 
-   ![The Sources tool highlights the line of code that caused the error](./console-debug-javascript-images/console-debug-displays-in-sources.png)
+   ![The Sources tool highlights the line of code that caused the error](./console-debug-javascript-images/displays-in-sources.png)
 
    The script tries to get the first `h2` element in the document and paint a red border around it.  But no `h2` element exists, so the script fails.
 
@@ -44,16 +44,17 @@ The first experience you have with the **Console** is likely to be errors in scr
 <!-- ====================================================================== -->
 ## Find and debug network issues
 
-The **Console** also reports network errors.
+The **Console** reports network errors.
 
 
-### Demo page: Network error reported in Console
+<!-- ------------------------------ -->
+#### Demo page: Network error reported in Console
 
 1. Open the demo webpage [Network error reported in Console](https://microsoftedge.github.io/Demos/devtools-console/network-error.html) in a new window or tab.
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-   ![Console displays a Network and a JavaScript error](./console-debug-javascript-images/console-debug-network-error.png)
+   ![Console displays a Network and a JavaScript error](./console-debug-javascript-images/network-error.png)
 
    The table displays `loading`, but nothing changes on the webpage, because the data is never retrieved.  In the **Console**, the following two errors occurred:
 
@@ -63,13 +64,13 @@ The **Console** also reports network errors.
 
 1. Click the link to the webpage and line of code where the error occurs, to open the Sources tool.  That is, click the `network-error.html:40` link in the **Console**:
 
-   ![Select the link to the webpage and line of code where the error occurs, to open the Sources tool](./console-debug-javascript-images/console-debug-network-error-code-line.png)
+   ![Select the link to the webpage and line of code where the error occurs, to open the Sources tool](./console-debug-javascript-images/network-error-code-line.png)
 
    The **Sources** tool opens.  The problematic line of code is highlighted and followed by an `error` (`x`) button.
 
 1. Click the **error** (`x`) button.  The message `Failed to load resource: the server responded with a status of 404 ()` appears.
 
-   ![To find the error in JavaScript, use the Sources tool](./console-debug-javascript-images/console-debug-network-error-sources.png)
+   ![To find the error in JavaScript, use the Sources tool](./console-debug-javascript-images/network-error-sources.png)
 
    This error informs you that the requested URL isn't found.
 
@@ -77,38 +78,41 @@ The **Console** also reports network errors.
 
    The Console displays an HTTP status code of the error after a resource isn't loaded:
 
-   ![The Console displays an HTTP status code of the error after a resource isn't loaded](./console-debug-javascript-images/console-debug-network-error-url.png)
+   ![The Console displays an HTTP status code of the error after a resource isn't loaded](./console-debug-javascript-images/network-error-url.png)
 
    The **Network** tool displays more information about the failed request:
 
-   ![The Network tool displays more information about the failed request](./console-debug-javascript-images/console-debug-network-error-network.png)
+   ![The Network tool displays more information about the failed request](./console-debug-javascript-images/network-error-network.png)
 
 1. Inspect the headers in the **Network** tool to get more insight:
 
-   ![Inspecting the headers in the Network tool may give more insight](./console-debug-javascript-images/console-debug-network-error-network-detail.png)
+   ![Inspecting the headers in the Network tool may give more insight](./console-debug-javascript-images/network-error-network-detail.png)
 
    What was the problem?  Two slash characters (`//`) occur in the requested URI after the word `repos`.
 
 1. Open the **Sources** tool and inspect line 26.  A trailing slash character (`/`) occurs at the end of the base URI.  The **Sources** tool displays the line of code with the error:
 
-   ![The Sources tool displays the line of code with the error](./console-debug-javascript-images/console-debug-network-error-code-error.png)
+   ![The Sources tool displays the line of code with the error](./console-debug-javascript-images/network-error-code-error.png)
 
 
-### Viewing the resulting page when there are no errors in the Console
+<!-- ------------------------------ -->
+#### Viewing the resulting page when there are no errors in the Console
 
 Next, we'll look at the resulting page when there are no errors in the **Console**.
 
 
-#### Demo page: Fixed network error reported in Console
+<!-- ---------- -->
+###### Demo page: Fixed network error reported in Console
 
 1. Open the demo webpage [Fixed network error reported in Console](https://microsoftedge.github.io/Demos/devtools-console/network-error-fixed.html) in a new window or tab.
 
    The example without any errors loads information from GitHub and displays it:
 
-   ![The example without any errors loads information from GitHub and displays it](./console-debug-javascript-images/console-debug-network-error-fixed.png)
+   ![The example without any errors loads information from GitHub and displays it](./console-debug-javascript-images/network-error-fixed.png)
 
 
-#### Demo page: Network error reporting in Console and UI
+<!-- ---------- -->
+###### Demo page: Network error reporting in Console and UI
 
 Use defensive coding techniques to avoid the previous user experiences.  Make sure your code catches errors and displays each error in the **Console**, as follows:
 
@@ -124,7 +128,7 @@ Use defensive coding techniques to avoid the previous user experiences.  Make su
 
    The example catches and reports errors:
 
-   ![An example that catches and reports errors](./console-debug-javascript-images/console-debug-network-error-report.png)
+   ![An example that catches and reports errors](./console-debug-javascript-images/network-error-report.png)
 
    The following code in the demo catches and reports errors using the `handleErrors` method, specifically the `throw Error` line:
 
@@ -148,7 +152,8 @@ Use defensive coding techniques to avoid the previous user experiences.  Make su
 Besides the `throw Error` example in the previous section, you can also create different errors and trace problems in the **Console**.
 
 
-### Demo page: Creating error reports and assertions in Console
+<!-- ------------------------------ -->
+#### Demo page: Creating error reports and assertions in Console
 
 To display two created error messages in the **Console**:
 
@@ -158,7 +163,7 @@ To display two created error messages in the **Console**:
 
    Error messages appear in the **Console**:
 
-   ![Error messages appear in the Console](./console-debug-javascript-images/console-debug-error-assert.png)
+   ![Error messages appear in the Console](./console-debug-javascript-images/error-assert.png)
 
    The demo page uses the following code:
 
@@ -210,7 +215,8 @@ To display two created error messages in the **Console**:
    *  You test for `x >= 40` for the assertion.
 
 
-### Demo page: Creating traces in Console
+<!-- ------------------------------ -->
+#### Demo page: Creating traces in Console
 
 If you aren't sure which function requests another function, use the `console.trace()` method to track which functions are requested in order to get to the current function.
 
@@ -236,7 +242,7 @@ To display the trace in the **Console**:
 
    Here's the trace that's produced, in the **Console**:
 
-   ![The trace, displayed in the Console](./console-debug-javascript-images/console-debug-trace.png)
+   ![The trace, displayed in the Console](./console-debug-javascript-images/trace.png)
 
 
 <!-- ====================================================================== -->

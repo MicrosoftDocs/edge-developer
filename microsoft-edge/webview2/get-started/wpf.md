@@ -4,11 +4,13 @@ description: Get started guide with WebView2 for Windows Presentation Foundation
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 09/19/2022
 ---
 # Get started with WebView2 in WPF apps
+
+This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WPF sample app](../samples/webview2wpfbrowser.md).
 
 This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.
 
@@ -55,17 +57,7 @@ This tutorial also works with Visual Studio 2017.  See [Visual Studio older down
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install a preview channel of Microsoft Edge
-
-1. Download any [Microsoft Edge Insider (preview) Channel](https://www.microsoft.com/edge/download/insider) (Beta, Dev, or Canary) on a supported operating system (OS):
-   *  Windows 10
-   *  Windows 11
-
-   We recommend using the Canary channel of Microsoft Edge.  The minimum required version is 82.0.488.0.
-
-
-<!-- ====================================================================== -->
-## Step 3 - Create a single-window WebView2 app
+## Step 2 - Create a single-window WebView2 app
 
 Start by creating a basic desktop project that contains a single main window.
 
@@ -76,6 +68,7 @@ Start by creating a basic desktop project that contains a single main window.
 1. Follow the applicable section below.
 
 
+<!-- ------------------------------ -->
 #### Creating a .NET Core/5/6 project
 
 If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise, skip to [Creating a WPF App (.NET Framework) project](#creating-a-wpf-app-net-framework-project).
@@ -93,7 +86,7 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
    If you're using Visual Studio 2019, click a project template that has the title **WPF Application** and the description text **A project for creating a .NET Core WPF Application**:
 
    ![Selecting the template 'WPF Application: .NET Core WPF Application' in the 2019 'Create a new project' dialog](./wpf-images/wpf-getting-started-wpf-core.png)
-   <!--todo: after move png to article's dedicated images dir, change filename like for vs2022 above -->
+   <!--todo: after move png to article's dedicated images dir, change file name like for vs2022 above -->
 
    If the above project template isn't listed, see [Step 1 - Install Visual Studio with .NET support](#step-1---install-visual-studio-with-net-support) above, to install **.NET desktop development tools**.
 
@@ -118,13 +111,14 @@ If you are creating a .NET Core/5/6 project, do the following steps.  Otherwise,
 
    ![Initial project in Visual Studio 2022 using .NET Core WPF Application template](wpf-images/initial-project-core-2022.png)
 
-Skip to [Step 4 - Build and run the initial project without WebView2](#step-4---build-and-run-the-initial-project-without-webview2) below.
+Skip to [Step 3 - Build and run the initial project without WebView2](#step-3---build-and-run-the-initial-project-without-webview2) below.
 
 
-<!-- project template title: WPF App (.NET Framework) -->
+<!-- ------------------------------ -->
 #### Creating a WPF App (.NET Framework) project
+<!-- project template title: WPF App (.NET Framework) -->
 
-If you are creating a WPF App (.NET Framework) project, do the following steps.  Otherwise, skip to [Step 4 - Build and run the initial project without WebView2](#step-4---build-and-run-the-initial-project-without-webview2).
+If you are creating a WPF App (.NET Framework) project, do the following steps.  Otherwise, skip to [Step 3 - Build and run the initial project without WebView2](#step-3---build-and-run-the-initial-project-without-webview2).
 
 1. Open Microsoft Visual Studio, such as Visual Studio 2022.
 
@@ -159,7 +153,7 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 
 
 <!-- ====================================================================== -->
-## Step 4 - Build and run the initial project without WebView2
+## Step 3 - Build and run the initial project without WebView2
 
 1. Select **File** > **Save All** to save the project.
 
@@ -198,7 +192,7 @@ If you are creating a WPF App (.NET Framework) project, do the following steps. 
 [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## Step 5 - Install the WebView2 SDK
+## Step 4 - Install the WebView2 SDK
 
 In Visual Studio, use NuGet Package Manager to add the WebView2 SDK to the project, as follows:
 
@@ -228,7 +222,7 @@ In Visual Studio, use NuGet Package Manager to add the WebView2 SDK to the proje
 
 
 <!-- ====================================================================== -->
-## Step 6 - Create a single WebView2 control
+## Step 5 - Create a single WebView2 control
 
 Add a WebView2 control to your app.
 
@@ -279,7 +273,7 @@ Add a WebView2 control to your app.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Navigation
+## Step 6 - Navigation
 
 Enable users to change the URL that the WebView2 control displays, by adding an address bar to the app.
 
@@ -373,7 +367,7 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## Step 8 - Navigation events
+## Step 7 - Navigation events
 
 During webpage navigation, the WebView2 control raises events. The app that hosts WebView2 controls listens for the following events:
 
@@ -455,7 +449,7 @@ To demonstrate how to use the events, register a handler for `NavigationStarting
 
 
 <!-- ====================================================================== -->
-## Step 9 - Scripting
+## Step 8 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime.  You can task WebView2 to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.
 
@@ -490,7 +484,7 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
 
 
 <!-- ====================================================================== -->
-## Step 10 - Communication between host and web content
+## Step 9 - Communication between host and web content
 
 The host and web content can communicate in the following ways using `postMessage`:
 
@@ -577,7 +571,7 @@ developer.microsoft.com:
 Local pages:
 * [WPF sample app](../samples/webview2wpfbrowser.md)
 * [Manage user data folders](../concepts/user-data-folder.md)
-* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
+* [WebView2 sample apps](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
 
 GitHub:

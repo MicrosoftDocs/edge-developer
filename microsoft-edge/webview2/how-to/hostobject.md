@@ -4,8 +4,8 @@ description: How to pass host objects to JavaScript using the AddHostObjectToScr
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 11/16/2022
 ---
 # Call native-side code from web-side code
@@ -483,13 +483,13 @@ To find out what other APIs there are in the host object ecosystem, see [WebView
 <!-- ====================================================================== -->
 ## API Reference overview
 
-See [Host/web object sharing](../concepts/overview-features-apis.md#hostweb-object-sharing) in _Overview of WebView2 features and APIs_.
+See [Host/web object sharing](../concepts/overview-features-apis.md#hostweb-object-sharing) in _Overview of WebView2 APIs_.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
+* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 APIs_.
 * [Using frames in WebView2 apps](../concepts/frames.md)
 * [Call native-side WinRT code from web-side code](./winrt-from-js.md)
 

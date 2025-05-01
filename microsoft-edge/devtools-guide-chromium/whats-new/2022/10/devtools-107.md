@@ -1,15 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 107)
+title: What's New in DevTools (Microsoft Edge 107)
 description: "Automate WebView2 with Playwright. Focus Mode Activity Bar icons have tooltips. New shortcut key for Command Palette. Memory tool loads larger heap snapshots. Links in Application tool render in high contrast mode. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/31/2022
 ---
 # What's New in DevTools (Microsoft Edge 107)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
+
+
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 107
+
+[![Thumbnail image for video "What's new in DevTools 107"](./devtools-107-images/devtools-whatsnew-107.png)](https://www.youtube.com/watch?v=QcAnrbfJN0s)
 
 
 <!-- ====================================================================== -->
@@ -32,26 +39,23 @@ See also:
 
 <!-- Subtitle: When text labels are not visible in the Activity Bar, the name of the tool will appear while hovering over the icon. -->
 
-Starting in Microsoft Edge 107, in Focus Mode, the Activity Bar now displays tooltips when you hover over tool icons.  These tooltips appear immediately and help you quickly identify and switch between tools:
+Starting in Microsoft Edge 107, in Focus Mode, the **Activity Bar** now displays tooltips when you hover over tool icons.  These tooltips appear immediately and help you quickly identify and switch between tools:
 
 ![Activity Bar tooltips](./devtools-107-images/activity-bar-tooltips.png)
 
-When the Activity Bar is horizontal, a tooltip appears when a tool icon doesn't already have a text label next to it:
+When the **Activity Bar** is horizontal, a tooltip appears when a tool icon doesn't already have a text label next to it:
 
 ![Tooltips for horizontal Activity Bar icons](./devtools-107-images/activity-bar-tooltips-horizontal.png)
-
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
 ## New keyboard shortcut for the Command Palette experiment
 
+_The Command Palette experiment was removed in Microsoft Edge 123._
+
 <!-- Subtitle: Enable the Command Palette experiment in Microsoft Edge 107 and open it with Ctrl+Q (Command+Q on macOS). -->
 
 In [Microsoft Edge 106](../09/devtools-106.md#introducing-the-command-palette), we introduced the Command Palette, an experimental feature for accessing browser management and developer tools commands.  In Microsoft Edge 107, the keyboard shortcut for opening the Command Palette has been updated from **Shift+Ctrl+Spacebar** to **Ctrl+Q** on Windows, macOS, and Linux.
-
-To enable the Command Palette experiment, see [Enable Command Palette](../../../experimental-features/edge-command-palette.md#enable-command-palette) in _Run commands via keyboard with Command Palette_.  After the Command Palette experiment is enabled, press **Ctrl+Q** to open the Command Palette.
 
 ![Command Palette](./devtools-107-images/command-palette.png)
 
@@ -75,7 +79,7 @@ In Microsoft Edge 107, this issue has been fixed.  The **Memory** tool can now s
 If you still encounter issues when loading large heap snapshots, please open an issue in the [DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues/new?assignees=&labels=bug&template=bug.md)!
 
 See also:
-* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
+* [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../../../memory-problems/heap-snapshots.md)
 * [Issue 9126: Hardcoded memory limits of Map (backed by FixedArray)](https://bugs.chromium.org/p/v8/issues/detail?id=9126)
 
 
@@ -90,7 +94,7 @@ In previous versions of Microsoft Edge, links in the **Application** tool didn't
  
 See also:
 * [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
-* [Debug Progressive Web Apps (PWAs)](../../../progressive-web-apps/index.md)
+* [Debug a Progressive Web App (PWA)](../../../progressive-web-apps/index.md)
 
 
 <!-- ====================================================================== -->
@@ -109,7 +113,7 @@ Microsoft Edge 107 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 107)](https://developer.chrome.com/blog/new-in-devtools-107) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 107)](https://developer.chrome.com/blog/new-in-devtools-107) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -117,3 +121,10 @@ Microsoft Edge 107 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

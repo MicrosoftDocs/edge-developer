@@ -1,21 +1,24 @@
 ---
-title: Verify the company account information associated with your Microsoft Partner Center account
-description: Learn how to verify your account information when your company enrolls in the Microsoft Edge program on Partner Center to publish extensions to the Microsoft Edge Add-ons website.
+title: Verify your company account information
+description: Learn how to verify your account information when your company enrolls in the Microsoft Edge program on Partner Center to publish extensions at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/02/2022
 ---
-# Verify the company account information associated with your Microsoft Partner Center account
+# Verify your company account information
 
-When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide. This information can include your company name, company address, and primary contact details. During the verification process, Microsoft might send email to your primary contact to request confirmation of the information that was provided.
+Before using this article, do the steps in [Register as a Microsoft Edge extension developer](./create-dev-account.md), for a company account rather than for an individual account.  Information specifically about company accounts starts in the [Account types](./create-dev-account.md#account-types) section within that article.
+
+When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide.  This information can include your company name, company address, and primary contact details.  During the verification process, Microsoft might send email to your primary contact to request confirmation of the information that was provided.
 
 You can go to [Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) in Partner Center to monitor verification status for the Microsoft Edge Developer program.
 
-When account verification is complete, you can use your Partner Center dashboard to publish your extension to the Microsoft Edge Add-ons website.
+When account verification is complete, you can use your Partner Center dashboard to publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
-Verification usually takes three to five business days. If more than five days have passed, you can contact [Microsoft Edge Extensions support](/microsoft-edge/extensions-chromium/publish/contact-extensions-team/) for help.
+Verification usually takes three to five business days.  If more than five days have passed, you can [Contact the Microsoft Edge extensions team](./contact-extensions-team.md) for help.
 
 
 <!-- ====================================================================== -->
@@ -23,6 +26,8 @@ Verification usually takes three to five business days. If more than five days h
 
 This section describes the types of verification, what is verified, and suggestions for meeting verification requirements.
 
+
+<!-- ------------------------------ -->
 #### Verify Email ownership
 
 Email ownership verifies that the primary contact (primary email) address is valid.
@@ -31,12 +36,16 @@ Email ownership verifies that the primary contact (primary email) address is val
 * Don't use a personal email address.  You must use an email address associated with a company domain, such as \<alias\>@contoso.com.
 * Don't use a tenant user credential that's not associated with email, such as \<alias\>@contoso on microsoft.com.
 
-##### Suggestions
+
+<!-- ---------- -->
+###### Suggestions
 
 Be sure to flag email from Microsoft.com as a **safe** domain, and check your junk email folders.
 
 If you don't receive the email ownership verification email message within one business day, you can ask us to send the email again. On to your Partner Center account, go to **Home > Account settings**. On the **Account settings | My profile** page, select **Resend verification email**.
 
+
+<!-- ------------------------------ -->
 #### Verify Employment
 
 Employment verification confirms that your primary contact is an employee of the enrolling company and that the domain entered in the registration form belongs to the enrolling company. The following information is used to verify employment:
@@ -44,7 +53,9 @@ Employment verification confirms that your primary contact is an employee of the
 * The company's public website has the same domain that was entered in the registration form.
 * The contact has an active email address on an email domain owned by the company.
 
-##### Suggestions
+
+<!-- ---------- -->
+###### Suggestions
 
 For verification proof, you can submit a screenshot of the website showing the name, address, contact information, and domain of the organization.
 
@@ -54,11 +65,15 @@ If employment verification is rejected, or if the domain of the registered email
 * Domain ownership records, such as [whois](https://www.whois.com/whois).
 * Domain purchase invoices or registry confirmation records.
 
+
+<!-- ------------------------------ -->
 #### Verify Business
 
 Business verification confirms that the enrolling company is a legitimate business entity and at the address in the application.
 
-##### Suggestions
+
+<!-- ---------- -->
+###### Suggestions
 
 Submit one of the following documents for business verification:
 
@@ -80,12 +95,18 @@ Microsoft uses these documents to verify that the company is authorized to do bu
 <!-- ====================================================================== -->
 ## Checking your verification status
 
-You can check verification status at Partner Center in **[Account Settings | Legal Info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)**, where you can see:
+You can check verification status at Partner Center in **[Account Settings | Legal Info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)**, where you can see the following:
 
 1. One or more tabs such as **Partner**, **Developer**, or **Reseller**, depending on the programs in which your organization is enrolled.
-1. The **Developer** tab includes the **Account details** progress bar showing the stages of verification and any pending stages.
-1. Your verification status: **Pending**, **Authorized/Accepted**, or **Action Required/Rejected**, with a status icon. For more information, see [Verification status](#verification-status).
+
+1. The **Developer** tab includes a status icon (from **Account details**):
+
+   ![The Account details status icon](./verify-microsoft-edge-program-images/status-icon.png)
+
+1. Your verification status: **Pending**, **Authorized/Accepted**, or **Action Required/Rejected**, with a status icon.  See [Verification status](#verification-status), below.
+
 1. The **Legal business profile** progress bar with an information icon you can select to get more information.
+
 1. A **Fix now** button to start resolving verification issues.
 
 
@@ -115,9 +136,7 @@ The amount of time required to review an appeal varies. You can return to **[Acc
 
 ![Account Settings | Legal Info](./verify-microsoft-edge-program-images/account-settings-legal-info-microsoft-edge-partner-center.png)
 
-
-> [!NOTE]
-> Switching back to an individual account from an enterprise account isn't possible. Refer to the documentation to make an informed decision.
+Switching back to an individual account from an enterprise account isn't possible.  To make an informed decision, see the documentation.
 
 
 <!-- ====================================================================== -->

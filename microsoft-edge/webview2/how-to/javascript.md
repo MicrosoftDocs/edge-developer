@@ -4,8 +4,8 @@ description: Learn how to use JavaScript in complex scenarios in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: how-to
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 4/1/2022
 ---
 # Call web-side code from native-side code
@@ -153,4 +153,4 @@ To begin, explore the current functionality of the right-click menu:
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](../webview2-api-reference.md)
-* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.
+* [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 APIs_.

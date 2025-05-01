@@ -4,7 +4,7 @@ description: Microsoft Edge and Visual Studio web development.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 07/27/2021
 ---
 # Visual Studio for web development
@@ -36,7 +36,8 @@ Follow the steps in this section to use Visual Studio to do the following:
 The simplified workflow allows you to debug JavaScript that runs in Microsoft Edge directly from your IDE.
 
 
-### Create a new ASP.NET Core web app
+<!-- ------------------------------ -->
+#### Create a new ASP.NET Core web app
 
 First, create a new ASP.NET Core web app, as follows:
 
@@ -53,7 +54,8 @@ This **React.js** template specifies how to integrate React.js with an ASP.NET C
 You've now created a project for an ASP.NET Core web app.
 
 
-### Launch Microsoft Edge from Visual Studio
+<!-- ------------------------------ -->
+#### Launch Microsoft Edge from Visual Studio
 
 Next, run and debug the ASP.NET Core web app project in Visual Studio, as follows:
 
@@ -67,9 +69,11 @@ Next, run and debug the ASP.NET Core web app project in Visual Studio, as follow
 
    ![Turn on script debugging in Visual Studio](./index-images/enable-script-debugging.png)
 
-1. In the same dropdown list, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.  If you aren't already using one of the Microsoft Edge preview channels, go to [Download Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider) to download one.
-
+1. In the same dropdown list, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.
+ 
    ![Select the preview channel of Microsoft Edge that you want Visual Studio to launch](./index-images/set-web-browser.png)
+
+   To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. Select the green **Play** button.  Visual Studio builds your app, starts the web server, launches Microsoft Edge, and navigates to `https://localhost:44362/` or whatever port is specified in `launchSettings.json`.
 
@@ -78,7 +82,8 @@ Next, run and debug the ASP.NET Core web app project in Visual Studio, as follow
 Continue with the steps below.
 
 
-### Debug JavaScript code that's running in Microsoft Edge
+<!-- ------------------------------ -->
+#### Debug JavaScript code that's running in Microsoft Edge
 
 1. Switch back to Visual Studio to set a breakpoint.
 
@@ -137,7 +142,7 @@ The Visual Studio debugger is now attached to Microsoft Edge.  You can pause the
 <!-- ====================================================================== -->
 ## Edge DevTools extension for Visual Studio
 
-Debug your ASP.NET projects in Visual Studio with the Edge Developer Tools.  You can embed the Microsoft Edge Developer Tools in Microsoft Visual Studio to debug your ASP.NET projects live.  Download the [Microsoft Edge Developer Tools for Visual Studio](https://aka.ms/edgetools-for-vs). 
+Debug your ASP.NET projects in Visual Studio with the Edge Developer Tools.  You can embed the Microsoft Edge Developer Tools in Microsoft Visual Studio to debug your ASP.NET projects live.  Download the [Microsoft Edge Developers Tools for Visual Studio (PREVIEW)](https://aka.ms/edgetools-for-vs) from the Visual Studio Marketplace.
 
 To use the extension:
 
@@ -161,19 +166,16 @@ The **Network** tool is also open by default:
 
 ![Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools](./index-images/devtools-extension-visual-studio-network.png)
 
-The **Inspect tool** (![Inspect tool icon](./index-images/v-s-edge-devtools-inspect-tool-icon.png)) and **Toggle screencast** (![Toggle screencast icon](./index-images/v-s-edge-devtools-toggle-screencast-icon.png)) are available, and the **More Tools** (![More Tools icon](./index-images/more-tools-v-s-icon.png)) menu offers the [Issues](../devtools-guide-chromium/issues/index.md), [Network conditions](../devtools-guide-chromium/network-conditions/network-conditions-tool.md), and [Network request blocking](../devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md) tools:
+The **Inspect tool** (![Inspect tool icon](./index-images/v-s-edge-devtools-inspect-tool-icon.png)) and **Toggle screencast** (![Toggle screencast icon](./index-images/v-s-edge-devtools-toggle-screencast-icon.png)) are available, and the **More Tools** (![More Tools icon](./index-images/more-tools-v-s-icon.png)) menu offers the **Issues** tool, the **Network conditions** tool, and the **Network request blocking** tool:
 
 ![The Edge DevTools window of Visual Studio, undocked](./index-images/edge-devtools-v-s-window-undocked.png)
 
-
-**See also:**
-
-<!-- todo: update url from preview to release: -->
-* [Edge Developer Tools for Visual Studio](https://devblogs.microsoft.com/visualstudio/?p=237066&preview=1&_ppp=7aa7aef54f), at Visual Studio DevBlogs.
-
-<!--
+See also:
+* [Find and fix problems using the Issues tool](../devtools-guide-chromium/issues/index.md)
+* [Network conditions tool](../devtools-guide-chromium/network-conditions/network-conditions-tool.md)
+* [Network request blocking tool](../devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md)
+* [Edge Developer Tools for Visual Studio (Preview)](https://devblogs.microsoft.com/visualstudio/edge-developer-tools-for-visual-studio-preview/), at Visual Studio DevBlogs.<!-- todo: update from preview to release (this link is Sep 16, 2024) -->
 * [Microsoft Edge DevTools extension for Visual Studio](../devtools-guide-chromium/whats-new/2022/03/devtools.md#microsoft-edge-devtools-extension-for-visual-studio) in _What's New in DevTools (Microsoft Edge 99)_.
--->
 
 
 <!-- ====================================================================== -->
@@ -182,3 +184,20 @@ The **Inspect tool** (![Inspect tool icon](./index-images/v-s-edge-devtools-insp
 The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio, or tweet [@VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools).
 
 ![The Send Feedback icon in Visual Studio](./index-images/feedback-icon.png)
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article: -->
+
+* [Microsoft Edge DevTools extension for Visual Studio](../devtools-guide-chromium/whats-new/2022/03/devtools.md#microsoft-edge-devtools-extension-for-visual-studio) in _What's New in DevTools (Microsoft Edge 99)_.
+* [Find and fix problems using the Issues tool](../devtools-guide-chromium/issues/index.md)
+* [Network conditions tool](../devtools-guide-chromium/network-conditions/network-conditions-tool.md)
+* [Network request blocking tool](../devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md)
+
+External:
+* [Visual Studio](https://visualstudio.microsoft.com/vs)
+* [Download Visual Studio](https://visualstudio.microsoft.com/downloads)
+* [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download a preview channel of Microsoft Edge (Beta, Dev, or Canary).
+* [Microsoft Edge Developers Tools for Visual Studio (PREVIEW)](https://aka.ms/edgetools-for-vs) at Visual Studio Marketplace.
+* [Edge Developer Tools for Visual Studio (Preview)](https://devblogs.microsoft.com/visualstudio/edge-developer-tools-for-visual-studio-preview/), at Visual Studio DevBlogs.<!-- todo: update from preview to release (this link is Sep 16, 2024) -->

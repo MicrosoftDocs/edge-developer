@@ -4,8 +4,8 @@ description: Learn how to define an app icon for your PWA, a theme color for the
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 09/27/2021
 ---
 # Define icons and a theme color
@@ -73,7 +73,7 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 44x44 - app icon
     * 71x71 - small tile
     * 150x150 - medium tile
-    * 350x150 - wide tile
+    * 310x150 - wide tile
     * 310x310 - large tile
     * 50x50 - store logo
     * 620x300 - splash screen
@@ -95,7 +95,7 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 225x225 - medium tile 1.5x display scale
     * 300x300 - medium tile 2x display scale
     * 600x600 - medium tile 4x display scale
-    * 350x150 - wide tile
+    * 310x150 - wide tile
     * 388x188 - wide tile 1.25x display scale
     * 465x225 - wide tile 1.5x display scale
     * 620x300 - wide tile 2x display scale
@@ -133,7 +133,7 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 225x225 - medium tile 1.5x display scale
     * 300x300 - medium tile 2x display scale
     * 600x600 - medium tile 4x display scale
-    * 350x150 - wide tile
+    * 310x150 - wide tile
     * 388x188 - wide tile 1.25x display scale
     * 465x225 - wide tile 1.5x display scale
     * 620x300 - wide tile 2x display scale
@@ -169,7 +169,9 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 96x96 - target size for taskbar, start menu, task manager
     * 256x256 - target size for taskbar, start menu, task manager
 
-### Image level summary
+
+<!-- ------------------------------ -->
+#### Image level summary
 
 Consider, for example, how your app icon might show different content depending on the available surface area:
 
@@ -187,7 +189,9 @@ Consider, for example, how your app icon might show different content depending 
 
 Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users.  
 
-### Icon descriptions
+
+<!-- ------------------------------ -->
+#### Icon descriptions
 
 Below you'll find a description of each app icon and where they show up in Windows.
 
@@ -261,7 +265,9 @@ The splash screen asset is shown as the splash screen for your app. Currently su
 * 1240x600 (2x scale)
 * 2480x1200 (4x scale)
 
-### Target sized images
+
+<!-- ------------------------------ -->
+#### Target sized images
 
 In addition to the standard scale factor sizes described above, we also recommend creating "target-size" assets. We call these assets target-size because they target specific sizes, such as 16 pixels, rather than specific scale factors, such as 400. Target-size assets are for Windows surfaces that don't use the scaling plateau system. 
 
@@ -306,8 +312,11 @@ To define a theme color, use the `theme_color` web app manifest member:
 
 Individual web pages can also define a theme color, by using the [`theme-color` meta tag](https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color). When this meta tag is present on the page, its defined color overrides the color that's found in the web app manifest.
 
-> [!NOTE]
-> You can use the [Window Controls Overlay](window-controls-overlay.md) feature to display your app content in the title bar area.
+
+<!-- ------------------------------ -->
+#### Display app content in the title bar area
+
+You can display your app content in the title bar area, by using the Window Controls Overlay feature.  See [Display content in the title bar area using Window Controls Overlay](./window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->

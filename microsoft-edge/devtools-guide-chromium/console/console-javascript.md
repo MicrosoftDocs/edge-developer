@@ -4,8 +4,9 @@ description: An introduction to using the Console tool inside the Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/12/2023
 ---
 # Run JavaScript in the Console
 
@@ -28,11 +29,11 @@ To enter JavaScript statements and expressions interactively in the **Console**:
 
    The **Console** immediately displays the result `4` on the next line while you type.  The `Eager evaluation` feature helps you write valid JavaScript.  The **Console** displays the result while you type, regardless of whether your JavaScript is correct, and regardless of whether a valid result exists.
 
-   ![Console displays the result of the expression '2+2', interactively as you type it](./console-javascript-images/console-javascript-eager-evaluation.png)
+   ![Console displays the result of the expression '2+2', interactively as you type it](./console-javascript-images/eager-evaluation.png)
 
 1. When you press **Enter**, the **Console** runs the JavaScript command (expression or statement), displays the result, and then moves the cursor down to allow you to enter the next JavaScript command.
 
-   ![Run several JavaScript expressions in succession](./console-javascript-images/console-javascript-several-expressions.png)
+   ![Run several JavaScript expressions in succession](./console-javascript-images/several-expressions.png)
 
 
 <!-- ====================================================================== -->
@@ -54,7 +55,7 @@ To try autocompletion while writing multi-part expressions:
 
 1. Type another `.` to get a large list of possible properties and methods available on the body of the current webpage.
 
-   ![Console autocompletion of JavaScript expressions](./console-javascript-images/console-javascript-autocomplete.png)
+   ![Console autocompletion of JavaScript expressions](./console-javascript-images/autocomplete.png)
 
 
 <!-- ====================================================================== -->
@@ -66,7 +67,7 @@ Similarly, autocompletion keeps a history of the commands you previously typed. 
 
 Also, the **Console** also offers quite a few [utility methods](utilities.md) that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.
 
-![The $_ expression in the Console always contains the last result](./console-javascript-images/console-javascript-console-history.png)
+![The $_ expression in the Console always contains the last result](./console-javascript-images/console-history.png)
 
 
 <!-- ====================================================================== -->
@@ -74,11 +75,11 @@ Also, the **Console** also offers quite a few [utility methods](utilities.md) th
 
 By default, the **Console** only gives you one line to write your JavaScript expression.  You code runs when you press **Enter**. The one line limitation may frustrate you.  To work around the 1-line limitation, press **Shift+Enter** instead of **Enter**.  In the following example, the value displayed is the result of all the lines (statements) run in order:
 
-![Press Shift+Enter to write several lines of JavaScript.  The resulting value is output](./console-javascript-images/console-javascript-multiline.png)
+![Press Shift+Enter to write several lines of JavaScript.  The resulting value is output](./console-javascript-images/multiline.png)
 
 If you start a multi-line statement in the **Console**, the code block is automatically recognized and indented.  For example, if you start a block statement, by entering a curly brace, the next line is automatically indented:
 
-![The Console recognizes multiline expressions using curly braces and indents](./console-javascript-images/console-javascript-automatic-lineindent.png)
+![The Console recognizes multiline expressions using curly braces and indents](./console-javascript-images/automatic-lineindent.png)
 
 
 <!-- ====================================================================== -->
@@ -98,13 +99,13 @@ To get the last 50 issues that were filed on the [Microsoft Edge Developer Tools
    )).json();
    ```
 
-   ![Console displays the result of a top-level async fetch request](./console-javascript-images/console-javascript-top-level-await.png)
+   ![Console displays the result of a top-level async fetch request](./console-javascript-images/top-level-await.png)
 
    The 10 entries are hard to recognize, since a lot of information is displayed.
 
 1. Optionally, use the `console.table()` log method to only receive the information in which you're interested:
 
-   ![Displaying the last result in a human-readable format using 'console.table'](./console-javascript-images/console-javascript-filtered-with-table.png)
+   ![Displaying the last result in a human-readable format using 'console.table'](./console-javascript-images/filtered-with-table.png)
 
    To reuse the data returned from an expression, use the `copy()` utility method of the **Console**.
 

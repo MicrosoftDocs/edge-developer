@@ -4,8 +4,9 @@ description: The Application tool, to manage storage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 04/15/2022
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 10/17/2023
 ---
 # Application tool, to manage storage
 
@@ -13,34 +14,47 @@ Use the **Application** tool to manage storage for web app pages, including mani
 
 ![The Application tool](./application-tool-images/application-tool.png)
 
-The Application tool has the following pages:
+The **Application** tool has the following pages, listed on the left:
 
-*  Application
-   *  Manifest
-   *  Service Workers
-   *  Storage
+* Application
+   * Manifest
+   * Service workers
+   * Storage
 
-*  Storage
-   *  Local Storage
-   *  IndexedDB
-   *  Web SQL
-   *  Cookies
-   *  Trust Tokens
-   *  Interest Groups
+* Storage
+   * Local storage
+   * Session storage
+   * IndexedDB
+   * Web SQL
+   * Cookies
+   * Private state tokens
+   * Interest groups
+   * Shared storage
+   * Cache storage
 
-*  Cache
-   *  Cache Storage
-   *  Back/forward cache
+* Background services
+   * Back/forward cache
+   * Background fetch
+   * Background sync
+   * Bounce tracking mitigations
+   * Notifications
+   * Payment handler
+   * Periodic background sync
+   * Push messaging
+   * Reporting API
 
-*  Background Services
-   *  Background Fetch
-   *  Background Sync
-   *  Notifications
-   *  Payment Handler
-   *  Periodic Background Sync
-   *  Push Messaging
-   *  Reporting API
+* Preloading
+   * Speculation rules
+   * Preloads
+   * This page
 
-*  Frames 
+* Frames 
+   * top
 
-Note: to accurately interpret the **Storage Usage** chart in the **Application** tool, see the [Quota usage](../progressive-web-apps/index.md#quota-usage) section of the Debug Progressive Web Apps article.
+To interpret the **Storage** > **Usage** section in the **Application** tool, see [Quota usage](../progressive-web-apps/index.md#quota-usage) in _Debug a Progressive Web App (PWA)_.
+
+
+<!-- ====================================================================== -->
+<!--
+## See also
+-->

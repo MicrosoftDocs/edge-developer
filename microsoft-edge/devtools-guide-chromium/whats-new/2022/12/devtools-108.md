@@ -1,17 +1,22 @@
 ---
-title: What's new in DevTools (Microsoft Edge 108)
+title: What's New in DevTools (Microsoft Edge 108)
 description: "Microsoft Edge WebDriver is now available for macOS running on Apple M1. Improved DevTools navigation via Command Palette. Better support for high contrast mode in DevTools. In Focus Mode, disabling JavaScript now produces a warning icon for the Sources tool.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 12/01/2022
 ---
 # What's New in DevTools (Microsoft Edge 108)
 
-[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+These are the latest features in the Stable release of Microsoft Edge DevTools.
 
-<!-- find "todo" in this .md file -->
+
+<!-- ------------------------------ -->
+#### Video: What's new in DevTools 108
+
+[![Thumbnail image for video "What's new in DevTools 108"](./devtools-108-images/devtools-whatsnew-108.png)](https://www.youtube.com/watch?v=KmGXnsSCtI4)
 
 
 <!-- ====================================================================== -->
@@ -42,6 +47,8 @@ See also:
 <!-- ====================================================================== -->
 ## Improved DevTools navigation via Command Palette
 
+_The Command Palette experiment was removed in Microsoft Edge 123._
+
 <!-- Subtitle: This update fixes a bug related to opening DevTools from the Command Palette in Microsoft Edge. -->
 
 The Microsoft Edge Command Palette is an experimental feature that allows users to perform common tasks in Microsoft Edge.  In previous versions of Microsoft Edge, DevTools-related commands for opening specific parts of a tool didn't navigate correctly, such as the **Styles** tab in the **Elements** tool or the **Snippets** tab in the **Sources** tool.  In Microsoft Edge 108, this issue is fixed, improving the usability of commands such as **Sources: Show Snippets**:
@@ -53,7 +60,6 @@ Now, when you select **Sources: Show Snippets**, the **Sources** tool opens with
 ![Snippets tab of the Sources tool opened from Command Palette](./devtools-108-images/command-palette-opened-snippets.png)
 
 See also:
-* [Run commands via keyboard with Command Palette](../../../experimental-features/edge-command-palette.md)
 * [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md)
 
 
@@ -75,7 +81,6 @@ The UI controls now have high contrast:
 <!-- Desert theme, Edge 109 -->
 
 See also:
-* [Apply a color theme to DevTools](../../../customize/theme.md)
 * [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
 * [Change color contrast in Windows](https://support.microsoft.com/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696)
 
@@ -85,7 +90,7 @@ See also:
 
 <!-- Subtitle: The Sources tool in Focus Mode will warn you when you disable JavaScript in the DevTools. -->
 
-In previous versions of Microsoft Edge, in Focus Mode, disabling JavaScript in the DevTools didn't produce a visual indication in the **Sources** tool.  In Microsoft Edge version 107, this issue has been fixed.  Disabling JavaScript will now produce a warning icon (![JavaScript Disabled warning icon](./devtools-108-images/javascript-disabled-warning-icon.png)) next to the **Sources** tool icon on the Activity Bar.
+In previous versions of Microsoft Edge, in Focus Mode, disabling JavaScript in the DevTools didn't produce a visual indication in the **Sources** tool.  In Microsoft Edge version 107, this issue has been fixed.  Disabling JavaScript will now produce a warning icon (![JavaScript Disabled warning icon](./devtools-108-images/javascript-disabled-warning-icon.png)) next to the **Sources** tool icon on the **Activity Bar**.
 
 1. Open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
@@ -93,7 +98,7 @@ In previous versions of Microsoft Edge, in Focus Mode, disabling JavaScript in t
 
    ![Using Command Menu to select Disable JavaScript](./devtools-108-images/disable-javascript.png)
 
-   A yellow warning icon is added to the **Sources** tool icon on the Activity Bar to indicate that JavaScript is disabled:
+   A yellow warning icon is added to the **Sources** tool icon on the **Activity Bar** to indicate that JavaScript is disabled:
 
    ![JavaScript Disabled indicator next to Sources tool icon on Activity Bar](./devtools-108-images/javascript-disabled.png)
 
@@ -117,7 +122,7 @@ Microsoft Edge 108 also includes the following updates from the Chromium project
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 108)](https://developer.chrome.com/blog/new-in-devtools-108) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google). -->
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 108)](https://developer.chrome.com/blog/new-in-devtools-108) and is authored by Jecelyn Yeen. -->
 
 
 <!-- ====================================================================== -->
@@ -125,3 +130,10 @@ Microsoft Edge 108 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)
