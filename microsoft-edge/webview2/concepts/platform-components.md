@@ -4,9 +4,8 @@ description: Which parts of WebView2 reside on the Dev and user machine.  How na
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.localizationpriority: high
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/21/2023
 ---
 # Overview of the components of the WebView2 platform
