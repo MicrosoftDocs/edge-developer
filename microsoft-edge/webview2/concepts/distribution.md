@@ -418,3 +418,10 @@ Example managed app folder structure:
         \win-x64\native\WebView2Loader.dll (x64)
         \win-x86\native\WebView2Loader.dll (x86)
 ```
+
+
+<!-- ====================================================================== -->
+## See also
+
+<!-- External: -->
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
