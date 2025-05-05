@@ -171,7 +171,7 @@ JavaScript library to help modern web applications with accessibility concerns b
 <!-- ------------------------------ -->
 #### OpenAjax examples
 
-The [OpenAjax Alliance website](http://oaa-accessibility.org) is an excellent resource for verifying the rules for WAI-ARIA and provides a number of examples of WAI-ARIA implementations.
+[OpenAjax Alliance](http://www.openajax.org) is an excellent resource for verifying the rules for WAI-ARIA and provides a number of examples of WAI-ARIA implementations.
 
 
 <!-- ------------------------------ -->

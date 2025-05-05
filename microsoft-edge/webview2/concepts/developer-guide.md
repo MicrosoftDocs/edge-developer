@@ -111,3 +111,11 @@ WebView2 enables you to host web content in your native applications, providing 
 However, hosting web content can also introduce vulnerabilities.  To avoid vulnerabilities that can arise from hosting web content within a native application, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application.
 
 Follow the guidance in [Develop secure WebView2 apps](../concepts/security.md).
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- todo: all links in article body -->
+
+<!-- External: -->
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)

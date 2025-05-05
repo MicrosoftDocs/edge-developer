@@ -39,7 +39,7 @@ There are normally a few processes:
 *  Utility processes, such as network or audio, depending on the content.
 *  Renderer processes.
 
-Your machine will have one set of processes for each app that uses WebView2, and typically one renderer process for each WebView2 control that's in the app, similar to how you have one renderer process per tab in a browser.  For details, see [Process model for WebView2 apps](/microsoft-edge/webview2/concepts/process-model).
+Your machine will have one set of processes for each app that uses WebView2, and typically one renderer process for each WebView2 control that's in the app, similar to how you have one renderer process per tab in a browser.  For details, see [Process model for WebView2 apps](./process-model.md).
 
 
 <!-- ====================================================================== -->
