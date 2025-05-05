@@ -45,7 +45,7 @@ After you select a root folder, you need to grant DevTools full access to the fo
 
 ![DevTools asking to get access to the folder](./opening-sources-in-vscode-images/allow-access.png)
 
-After you grant permission, the folder you select is added as a Workspace in DevTools, in the **Filesystem** tab of the **Sources** tool.  This means that any file you edit in DevTools now opens in Microsoft Visual Studio Code instead of in the Sources tool. As an indicator, we show a `linked` icon next to the file name.  In this example, we'll select the `base.css` link in the **Styles** tool.
+After you grant permission, the folder you select is added as a Workspace in DevTools, in the **Workspace** tab of the **Sources** tool.  This means that any file you edit in DevTools now opens in Microsoft Visual Studio Code instead of in the Sources tool. As an indicator, we show a `linked` icon next to the file name.  In this example, we'll select the `base.css` link in the **Styles** tool.
 
 ![Selecting a file link in the Styles tool opens the file in Visual Studio Code](./opening-sources-in-vscode-images/selecting-link.png)
 

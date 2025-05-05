@@ -53,7 +53,7 @@
 # Experimental web platform features
     - name: Experimental web platform features
       items:
-#       - name: Experimental web platform features  # firstchild overview/nav for toc bucket
+#       - name: Experimental web platform features
 #         href: ./dir/filename.md
 
         - name: Use origin trials in Microsoft Edge
@@ -328,21 +328,21 @@
 # Inspect tool ----------------------------------------------------------------
             - name: Inspect tool
               items:
-                - name: Analyze pages using the Inspect tool  # added article
+                - name: Analyze pages using the Inspect tool
                   href: ./devtools-guide-chromium/css/inspect.md
                   displayName: Inspect tool
 # Device Emulation ------------------------------------------------------------
-            - name: Device Emulation  # orig: Mobile simulation
+            - name: Device Emulation
               items:
-                - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
+                - name: Emulate mobile devices (Device Emulation)
                   href: ./devtools-guide-chromium/device-mode/index.md
-                  displayName: device emulator, device mode, device simulation, device simulator  # also Network conditions tool (1x), Settings > Devices (1x)
+                  displayName: device emulator, device mode, device simulation, device simulator, throttle, throttling  # also Network conditions tool (1x), Settings > Devices (1x)
 
-                - name: Emulate dual-screen and foldable devices  # added article
+                - name: Emulate dual-screen and foldable devices
                   href: ./devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
                   displayName: Device Emulation, Device Emulator, Device Mode
 
-                - name: Emulate and test other browsers  # orig: Emulate and Test Other Browsers (orphaned)
+                - name: Emulate and test other browsers
                   href: ./devtools-guide-chromium/device-mode/testing-other-browsers.md
                   displayName: Device Emulation, Device Emulator, Device Mode
 # Welcome tool ----------------------------------------------------------------
@@ -370,11 +370,11 @@
                   href: ./devtools-guide-chromium/css/grid.md
                   displayName: Elements tool
 
-                - name: Edit CSS font styles and settings in the Styles pane  # added article
+                - name: Edit CSS font styles and settings in the Styles pane
                   href: ./devtools-guide-chromium/inspect-styles/edit-fonts.md
                   displayName: Elements tool
 
-                - name: Style editing for CSS-in-JS frameworks  # added article from blog
+                - name: Style editing for CSS-in-JS frameworks
                   href: ./devtools-guide-chromium/css/css-in-js.md
                   displayName: Elements tool
 
@@ -416,15 +416,15 @@
                   href: ./devtools-guide-chromium/console/live-expressions.md
                   displayName: Console tool
 
-                - name: Fix JavaScript errors that are reported in the Console  # added article
+                - name: Fix JavaScript errors that are reported in the Console
                   href: ./devtools-guide-chromium/console/console-debug-javascript.md
                   displayName: Console tool, Sources tool, Network tool
 
-                - name: Interact with the DOM using the Console  # added article
+                - name: Interact with the DOM using the Console
                   href: ./devtools-guide-chromium/console/console-dom-interaction.md
                   displayName: Console tool
 
-                - name: Filter Console messages  # added article
+                - name: Filter Console messages
                   href: ./devtools-guide-chromium/console/console-filters.md
                   displayName: Console tool
 # Sources tool ----------------------------------------------------------------
@@ -442,7 +442,7 @@
                   href: ./devtools-guide-chromium/javascript/breakpoints.md
                   displayName: Sources tool
 
-                - name: JavaScript debugging features  # orig: "JavaScript debugging reference"
+                - name: JavaScript debugging features
                   href: ./devtools-guide-chromium/javascript/reference.md
                   displayName: Sources tool
 
@@ -454,11 +454,15 @@
                   href: ./devtools-guide-chromium/javascript/snippets.md
                   displayName: Sources tool
 
-                - name: Edit files with Workspaces (Filesystem tab)
+                - name: Edit and save files in a workspace (Sources tool Workspace tab)  # Use DevTools as an in-browser IDE
                   href: ./devtools-guide-chromium/workspaces/index.md
-                  displayName: Sources tool, Quick source tool  # Quick source tool is covered in section "Step 4: Save a JavaScript change to disk"
+                  displayName: Sources tool
 
-                - name: Override webpage resources with local copies (Overrides tab)  # added article
+                - name: Workspace tutorial (Sources tool Workspace tab)
+                  href: ./devtools-guide-chromium/workspaces/workspace-tutorial.md
+                  displayName: Sources tool
+
+                - name: Override webpage resources with local copies (Overrides tab)
                   href: ./devtools-guide-chromium/javascript/overrides.md
                   displayName: Sources tool
 
@@ -492,7 +496,7 @@
                   href: ./devtools-guide-chromium/network/reference.md
                   displayName: Network tool
 
-                - name: Network issues guide  # added article
+                - name: Network issues guide
                   href: ./devtools-guide-chromium/network/issues.md
                   displayName: Network tool
 
@@ -500,7 +504,7 @@
                   href: ./devtools-guide-chromium/resources/index.md
                   displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
 
-                - name: Service worker improvements  # added article
+                - name: Service worker improvements
                   href: ./devtools-guide-chromium/service-workers/index.md
                   displayName: Network tool, Application tool, Sources tool
 # Performance tool ------------------------------------------------------------
@@ -672,7 +676,7 @@
                       href: ./devtools-guide-chromium/issues/index.md
                       displayName: Issues tool
 # Lighthouse tool -------------------------------------------------------------
-                - name: Lighthouse tool  # new jump page  # main article is in Accessibility
+                - name: Lighthouse tool  # jump page; main article is in Accessibility
                   items:
                     - name: Lighthouse tool
                       href: ./devtools-guide-chromium/lighthouse/lighthouse-tool.md
@@ -692,7 +696,7 @@
 # Network conditions tool -----------------------------------------------------
                 - name: Network conditions tool
                   items:
-                    - name: Network conditions tool  # new jump page
+                    - name: Network conditions tool  # starter page w/ png and links
                       href: ./devtools-guide-chromium/network-conditions/network-conditions-tool.md
                       displayName: Network conditions tool
 
@@ -713,15 +717,15 @@
 # Performance monitor tool ----------------------------------------------------
                 - name: Performance monitor tool
                   items:
-                    - name: Measure runtime performance of a page using the Performance monitor tool  # added article
+                    - name: Measure runtime performance of a page using the Performance monitor tool
                       href: ./devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
                       displayName: Performance monitor tool
 # Quick source tool -----------------------------------------------------------
-                - name: Quick source tool  # jump page
+                - name: Quick source tool
                   items:
                     - name: Display or edit source files using the Quick source tool
                       href: ./devtools-guide-chromium/quick-source/quick-source-tool.md
-                      displayName: Quick source tool  # also indexed elsewhere in this file
+                      displayName: Quick source tool  # also indexed in "Sources tool overview"
 # Recorder tool -----------------------------------------------------------
                 - name: Recorder tool
                   items:
@@ -736,7 +740,7 @@
                       href: ./devtools-guide-chromium/rendering-tools/rendering-tool.md
                       displayName: Rendering tool
 
-                    - name: Emulate dark or light schemes in the rendered page  # added article
+                    - name: Emulate dark or light schemes in the rendered page
                       href: ./devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                       displayName: Rendering tool
 
@@ -746,7 +750,7 @@
 # Search tool -----------------------------------------------------------------
                 - name: Search tool
                   items:
-                    - name: Find source files for a page using the Search tool  # added article
+                    - name: Find source files for a page using the Search tool
                       href: ./devtools-guide-chromium/search/search-tool.md
                       displayName: Search tool
 # Security tool ---------------------------------------------------------------
@@ -758,17 +762,17 @@
 # Sensors tool ----------------------------------------------------------------
                 - name: Sensors tool
                   items:
-                    - name: Override geolocation with the Sensors tool  # orig: was in "Mobile simulation"
+                    - name: Override geolocation with the Sensors tool
                       href: ./devtools-guide-chromium/device-mode/geolocation.md
                       displayName: Sensors tool, Device Emulation
 
-                    - name: Simulate device orientation with the Sensors tool  # orig: was in "Mobile simulation"
+                    - name: Simulate device orientation with the Sensors tool
                       href: ./devtools-guide-chromium/device-mode/orientation.md
                       displayName: Sensors tool, Device Emulation
-# Source Maps Monitor tool ----------------------------------------------------
+# Source maps monitor tool ----------------------------------------------------
                 - name: Source Maps Monitor tool
                   items:
-                    - name: Source Maps Monitor tool  # no article yet
+                    - name: Source Maps Monitor tool
                       href: ./devtools-guide-chromium/source-maps-monitor/source-maps-monitor-tool.md
                       displayName: Source maps monitor tool
 # WebAudio tool ---------------------------------------------------------------
@@ -847,7 +851,7 @@
               displayName: Elements tool, Accessibility tab
 
 # Inspect tool (distinct from Tools > Inspect tool bucket)
-            - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage  # added article
+            - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage
               href: ./devtools-guide-chromium/accessibility/test-inspect-tool.md
               displayName: Inspect tool  # tests Screen reader support, Keyboard support, Text contrast
 
@@ -867,25 +871,25 @@
 
             - name: Alt-text for images
               items:
-                - name: Automatically test a webpage for accessibility issues  # added article
+                - name: Automatically test a webpage for accessibility issues
                   href: ./devtools-guide-chromium/accessibility/test-issues-tool.md
                   displayName: Issues tool
 
             - name: Keyboard support
               items:
-                - name: Check for keyboard support by using the Tab and Enter keys  # added article
+                - name: Check for keyboard support by using the Tab and Enter keys
                   href: ./devtools-guide-chromium/accessibility/test-tab-enter-keys.md
                   displayName: keyboard support
 
-                - name: Analyze the lack of indication of keyboard focus  # added article
+                - name: Analyze the lack of indication of keyboard focus
                   href: ./devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
                   displayName: keyboard focus
 
-                - name: Analyze keyboard support on forms  # added article
+                - name: Analyze keyboard support on forms
                   href: ./devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
                   displayName: keyboard support
 
-                - name: Test keyboard support using the Source Order Viewer  # added article
+                - name: Test keyboard support using the Source Order Viewer
                   href: ./devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
                   displayName: Elements tool, Accessibility tab
 
@@ -895,15 +899,15 @@
                   href: ./devtools-guide-chromium/accessibility/color-picker.md
                   displayName: Elements tool, Styles tab, Color Picker
 
-                - name: Check text-color contrast in the default state using the Inspect tool  # added article
+                - name: Check text-color contrast in the default state using the Inspect tool
                   href: ./devtools-guide-chromium/accessibility/test-inspect-text-contrast.md
                   displayName: Inspect tool
 
-                - name: Verify accessibility of all states of elements  # added article
+                - name: Verify accessibility of all states of elements
                   href: ./devtools-guide-chromium/accessibility/test-inspect-states.md
                   displayName: Elements tool, Styles tab, hov, Toggle Element State, Force element state
 
-                - name: Check for contrast issues with dark theme and light theme  # added article
+                - name: Check for contrast issues with dark theme and light theme
                   href: ./devtools-guide-chromium/accessibility/test-dark-mode.md
                   displayName: Rendering tool, dark mode, light mode, dark scheme, light scheme
 
@@ -913,37 +917,37 @@
                   href: ./devtools-guide-chromium/accessibility/accessibility-tab.md
                   displayName: Elements tool, Accessibility tab, screen readers, Accessibility Tree, ARIA attributes, Computed Properties
 
-                - name: Check the Accessibility Tree for keyboard and screen reader support  # added article
+                - name: Check the Accessibility Tree for keyboard and screen reader support
                   href: ./devtools-guide-chromium/accessibility/test-accessibility-tree.md
                   displayName: Elements tool, Accessibility tab, screen readers
 
 # Rendering tool (distinct from Tools > Rendering tool)
             - name: Vision deficiencies (Rendering tool)
               items:
-                - name: Emulate vision deficiencies  # added article
+                - name: Emulate vision deficiencies
                   href: ./devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
                   displayName: Rendering tool
 
-                - name: Verify that a page is usable by people with color blindness  # added article
+                - name: Verify that a page is usable by people with color blindness
                   href: ./devtools-guide-chromium/accessibility/test-color-blindness.md
                   displayName: Rendering tool
 
-                - name: Verify that a page is usable with blurred vision  # added article
+                - name: Verify that a page is usable with blurred vision
                   href: ./devtools-guide-chromium/accessibility/test-blurred-vision.md
                   displayName: Rendering tool
 
-                - name: Simulate reduced motion  # added article
+                - name: Simulate reduced motion
                   href: ./devtools-guide-chromium/accessibility/reduced-motion-simulation.md
                   displayName: Rendering tool
 
-                - name: Verify that a page is usable with UI animation turned off  # added article
+                - name: Verify that a page is usable with UI animation turned off
                   href: ./devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
                   displayName: Rendering tool
 
 # Device Emulation (distinct from Tools > Device Emulation)
             - name: Usable when narrow (Device Emulation)
               items:
-                - name: Verify that the webpage layout is usable when narrow  # added article
+                - name: Verify that the webpage layout is usable when narrow
                   href: ./devtools-guide-chromium/accessibility/narrow.md
                   displayName: Device Emulation, Device Emulator
 # /Accessibility
@@ -952,15 +956,15 @@
           href: ./devtools-guide-chromium/sample-code/sample-code.md
           displayName: sample code, demo
 # IE mode ---------------------------------------------------------------------
-        - name: Use DevTools in Internet Explorer mode (IE mode)  # added article
+        - name: Use DevTools in Internet Explorer mode (IE mode)
           href: ./devtools-guide-chromium/ie-mode/index.md
           displayName: IE mode
 # DevTools Protocol -----------------------------------------------------------
-        - name: Microsoft Edge DevTools Protocol  # added article
+        - name: Microsoft Edge DevTools Protocol
           href: devtools-protocol-chromium/index.md
           displayName: DevTools Protocol
 # Contact ---------------------------------------------------------------------
-        - name: Contact the Microsoft Edge DevTools team  # added article
+        - name: Contact the Microsoft Edge DevTools team
           href: ./devtools-guide-chromium/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
 # =============================================================================
@@ -970,6 +974,9 @@
 
             - name: Microsoft Edge DevTools extension for Visual Studio Code
               href: ./visual-studio-code/microsoft-edge-devtools-extension.md
+
+          # - name: Use DevTools as an IDE
+          #   href: 
 
             - name: Get started
               items:
@@ -1420,11 +1427,11 @@
                   displayName: HoloLens2_GettingStarted  # repo dir name
 
             - name: Getting Started tutorials
-              href: ./webview2/get-started/get-started.md  # delete & redir?
+              href: ./webview2/get-started/get-started.md
               displayName: GettingStartedGuides  # repo dir name
 
             - name: WebView2 sample apps
-              href: ./webview2/code-samples-links.md  # delete & redir?
+              href: ./webview2/code-samples-links.md
 
 # -----------------------------------------------------------------------------
         - name: Navigation, events, and authentication
@@ -1543,7 +1550,7 @@
               href: ./webview2/concepts/security.md
 
 # -----------------------------------------------------------------------------
-        - name: Test and automation for WebView2 apps  # vs. Edge "Test and automation"
+        - name: Test and automation for WebView2 apps
           items:
             - name: Test upcoming APIs and features
               href: ./webview2/how-to/set-preview-channel.md
@@ -1569,7 +1576,7 @@
         - name: Debug WebView2 apps
           items:
             - name: Debug WebView2 apps
-              href: ./webview2/how-to/debug.md  # can delete
+              href: ./webview2/how-to/debug.md
 
             - name: Debug WebView2 apps with Microsoft Edge DevTools
               href: ./webview2/how-to/debug-devtools.md
@@ -1599,7 +1606,7 @@
                   displayName: remotely debug
 
 # -----------------------------------------------------------------------------
-        - name: Process and threading model  # can change to Architecture after arch article added
+        - name: Process and threading model
           items:
           # - name: Architecture of WebView2
           #   href: ./webview2/concepts/architecture.md  # not created
@@ -1644,7 +1651,7 @@
           items:
             - name: WebView2 API Reference
               href: ./webview2/webview2-api-reference.md
-              displayName: functions, methods, .NET, HoloLens, WinRT, Win32, JavaScript  # buckets not in "Filter by title"
+              displayName: functions, methods, .NET, HoloLens, WinRT, Win32, JavaScript  # toc bucket names
 
             - name: .NET
               items:
@@ -1706,7 +1713,7 @@
                   uid: 'WebView2Script!WebView:class'
 # -----------------------------------------------------------------------------
         - name: WebView2 end-user FAQ
-          href: ./webview2/concepts/end-user-faq.md  # move to SMC docset
+          href: ./webview2/concepts/end-user-faq.md
 
         - name: Contact the WebView2 team
           href: ./webview2/contact.md
@@ -1716,7 +1723,7 @@
 # Test and automation
     - name: Test and automation
       items:
-        - name: Test and automation in Microsoft Edge  # firstchild overview/nav for toc bucket
+        - name: Test and automation in Microsoft Edge
           href: ./test-and-automation/test-and-automation.md
 
         - name: DevTools Protocol
@@ -1785,6 +1792,9 @@
       items:
         - name: Microsoft Edge IDE integration
           href: ./visual-studio-code/ide-integration.md
+
+      # - name: Use DevTools as an IDE
+      #   href: 
 
         - name: DevTools extension for Visual Studio Code # aux jump page
           href: ./visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md

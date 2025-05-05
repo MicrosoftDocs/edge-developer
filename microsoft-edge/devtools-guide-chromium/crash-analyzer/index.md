@@ -143,7 +143,7 @@ DevTools doesn't cache source maps when the domain name is `localhost`.  This me
 <!-- ------------------------------ -->
 #### Open the Crash analyzer tool
 
-The **Crash analyzer** tool is a Quick View tool; by default, it opens in the **Quick View** panel, so that you can use it alongside the other tools that are open in the **Activity bar**.
+The **Crash analyzer** tool is a Quick View tool; by default, it opens in the **Quick View** panel, so that you can use it alongside the other tools that are open in the **Activity Bar**.
 
 
 <!-- ---------- -->
@@ -177,7 +177,7 @@ If you want to test the **Crash analyzer** tool but you don't have a stack trace
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the **Activity bar**, click **Console** (![Console icon](./index-images/console-icon.png)).  The **Console** tool opens.
+1. In DevTools, on the **Activity Bar**, click **Console** (![Console icon](./index-images/console-icon.png)).  The **Console** tool opens.
 
 1. Select the error stack trace that's displayed in the **Console** tool and copy it.
 
