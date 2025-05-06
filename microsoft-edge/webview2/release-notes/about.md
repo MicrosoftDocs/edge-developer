@@ -18,6 +18,9 @@ Generally, release notes apply across the supported platforms, which are listed 
 
 Release Notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
 
+See also:
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+
 
 <!-- ====================================================================== -->
 ## Phases of adding APIs
@@ -101,3 +104,4 @@ Async methods:
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md)
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)

@@ -185,3 +185,10 @@ When you develop a WebView2 app using a recent version of the WebView2 SDK, if y
 *  **.NET and WinUI**.  Use `try/catch` and check for a `No such interface supported` exception when using methods, properties, and events that were added to more recent versions of the WebView2 SDK.  This exception likely indicates that the client's WebView2 Runtime is an older version that doesn't support that API.
 
 If your code determines that an API is unavailable in the client's installed WebView2 Runtime, you should provide graceful fallback for the associated feature, or inform the user that they must update the WebView2 Runtime to use the feature.
+
+
+<!-- ====================================================================== -->
+## See also
+
+<!-- External: -->
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)

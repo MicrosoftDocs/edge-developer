@@ -157,6 +157,9 @@ After your environment is set up and the samples build and run on your machine, 
 * [Overview of WebView2 APIs](concepts/overview-features-apis.md)
 * [Distribute your app and the WebView2 Runtime](concepts/distribution.md)
 
+Edge Enterprise docs:
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+
 developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 

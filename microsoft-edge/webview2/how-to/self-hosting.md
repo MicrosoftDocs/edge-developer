@@ -85,6 +85,9 @@ If you are using the API, then we recommend building UI in your app that allows 
 
 * [Test upcoming APIs and features](./set-preview-channel.md)
 * [Prerelease testing using preview channels](./prerelease-testing.md)
-* [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
 * [Site compatibility-impacting changes coming to Microsoft Edge](../../web-platform/site-impacting-changes.md)
+
+External:
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+* [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
 * [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download the Canary, Dev, or Beta channel of Microsoft Edge.

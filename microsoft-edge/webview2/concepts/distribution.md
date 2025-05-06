@@ -431,3 +431,4 @@ Example managed app folder structure:
 ## See also
 
 * [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) - a section of the **Microsoft Edge WebView2** page, which links to the present article.
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
