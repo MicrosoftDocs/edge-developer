@@ -67,7 +67,7 @@ This article is a feature-driven inventory of the **Network** tool.  Use the **N
    * [Display a log of requests](#display-a-log-of-requests)
       * [Add or remove columns](#add-or-remove-columns)
       * [Add custom columns for response headers](#add-custom-columns-for-response-headers)
-   * [Group requests by inline frames](#group-by-frames)
+   * [Group requests by inline frames](#group-requests-by-inline-frames)
    * [Display the timing relationship of requests](#display-the-timing-relationship-of-requests)
    * [Analyze the messages of a WebSocket connection](#analyze-the-messages-of-a-websocket-connection)
    * [Analyze events in a stream](#analyze-events-in-a-stream)
@@ -272,15 +272,16 @@ See also [Simulate a slower network connection](../network/index.md#simulate-a-s
 <!-- ---------- -->
 ###### Create custom throttling profiles
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#throttling-profile -->
-<!-- todo: clean up text -->
 
 In addition to presets, such as slow or fast 4G, you can also add your own custom throttling profiles:
 
-1. Open the **Throttling** menu and select **Custom** > **Add**.
+1. At the top of the **Network** tool, click the **Throttling** dropdown menu, and then select **Custom** > **Add**.
 
-1. Set up a new throttling profile as described in <!--todo: settings icon--> **Settings** > **Throttling**.<!-- https://developer.chrome.com/docs/devtools/settings/throttling -->
+   The DevTools **Settings** page opens, with the **Throttling** page selected.  This is the same as selecting **Customize and control DevTools**,<!-- todo: (![Gear icon]()) --> and then selecting the **Throttling** page.
 
-1. Back on the **Network** panel, select your new profile from the **Throttling** drop-down menu.
+1. Set up a new throttling profile as described in [Set up custom network throttling profile](../settings/throttling.md#set-up-custom-network-throttling-profile) in _Throttling_.
+
+1. In the **Network** tool, click the **Throttling** dropdown menu, and then select your custom throttling profile.
 
    <!-- ![A custom profile selected from the throttling menu. The Network panel displays a warning icon.](todo: a-custom-profile-selected.png) -->
 
@@ -292,7 +293,7 @@ DevTools displays a <!--todo: Warning icon--> warning icon next to the **Network
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#throttle-websocket -->
 <!-- todo: clean up text -->
 
-In addition to HTTP requests, DevTools throttles WebSocket connections since version 99.
+In addition to HTTP requests, DevTools throttles WebSocket connections.
 
 To observe WebSocket throttling:
 
@@ -304,7 +305,7 @@ To observe WebSocket throttling:
 
 1. On the **Network** panel, select the profile and send another message.
 
-1. Toggle the **WS** filter, click your connection name, open the Messages tab, and check the time difference between sent and echoed messages with and without throttling. For example:
+1. Toggle the **WS** filter, click your connection name, open the **Messages** tab, and check the time difference between sent and echoed messages with and without throttling. <!--For example:-->
 
 <!-- ![Messages sent and echoed with and without throttling](todo: messages-sent-echoed-an.png) -->
 
@@ -336,8 +337,9 @@ To manually clear browser cookies at any time, right-click anywhere in the Reque
 #### Override HTTP response headers
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#override-headers -->
 
-<!-- todo: update link -->
-See [Override files and HTTP response headers](https://developer.chrome.com/docs/devtools/overrides#override-headers) in _Override web content and HTTP response headers locally_.
+See also:
+* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)<!-- todo: add upstream section about headers -->
+* [Override files and HTTP response headers](https://developer.chrome.com/docs/devtools/overrides#override-headers) in _Override web content and HTTP response headers locally_.
 
 
 <!-- ------------------------------ -->
@@ -660,6 +662,19 @@ To add a custom column to the Requests table:
 
 
 <!-- ------------------------------ -->
+#### Group requests by inline frames
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#group-by-frames -->
+
+If inline frames on a page initiate a lot of requests, you can make the request log friendlier by grouping them.
+
+To group requests by iframes, in the **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Group by frame** checkbox.
+
+<!-- ![The network request log with requests grouped by iframes](todo: png) -->
+
+To view a request initiated by an inline frame, expand it in the request log.
+
+
+<!-- ------------------------------ -->
 #### Display the timing relationship of requests
 <!-- View the timing of requests in relation to one another  https://developer.chrome.com/docs/devtools/network/reference/#waterfall -->
 
@@ -778,7 +793,7 @@ By default, the **Headers** panel shows header names alphabetically.  To display
 <!-- ---------- -->
 ###### Provisional headers warning
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#provisional-headers -->
-<!-- todo: cleanup -->
+<!-- todo: clean up -->
 
 Sometimes the Headers tab shows the Provisional headers are shown... warning message. This may be due to the following reasons:
 
@@ -809,7 +824,7 @@ To view the request's payload, that is, its query string parameters and form dat
 <!-- ---------- -->
 ###### View payload source
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#payload-source -->
-<!-- todo: cleanup -->
+<!-- todo: clean up -->
 
 By default, the **Network** tool shows the payload in a human-readable form.
 

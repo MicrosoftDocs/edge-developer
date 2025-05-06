@@ -10,6 +10,7 @@ ms.date: 09/25/2023
 ---
 # Override webpage resources with local copies (Overrides tab)
 <!-- equiv https://developer.chrome.com/docs/devtools/overrides -->
+<!-- todo: add upstream section "Override HTTP response headers"  https://developer.chrome.com/docs/devtools/overrides#override-headers -->
 
 Sometimes you need to try out some possible fixes for a webpage, but you don't have access to the source files, or changing the page requires a slow and complex build process.  You can debug and fix all kind of problems in DevTools.  But the changes don't persist; after you refresh the local file, all your work is gone.  The Overrides feature in the [Sources](../sources/index.md) tool helps you solve this problem.
 
