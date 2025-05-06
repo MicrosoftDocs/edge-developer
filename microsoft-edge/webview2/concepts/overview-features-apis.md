@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 11/18/2024
+ms.date: 05/05/2025
 ---
 # Overview of WebView2 APIs
 
@@ -2507,6 +2507,38 @@ See also:
 * [ICoreWebView2FrameInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)
 * [ICoreWebView2FrameInfoCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollection)<!--C++ only-->
 * [ICoreWebView2FrameInfoCollectionIterator interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollectioniterator)<!--C++ only-->
+
+---
+
+
+<!-- ------------------------------ -->
+#### Track navigation history for nested iframes (FrameCreatedEvent API)
+
+The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
+
+Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
+
+* Only the main page and first-level iframes (the default behavior).
+* A partial WebView2 frames tree with specific iframes of interest.
+* The full WebView2 frames tree.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#framecreated)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7)
+  * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7#add_framecreated)
+  * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7#remove_framecreated)
+
+* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler)<!-- win32 only -->
 
 ---
 
