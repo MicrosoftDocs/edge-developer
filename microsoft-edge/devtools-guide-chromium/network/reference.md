@@ -1,6 +1,6 @@
 ---
 title: Network features reference
-description: A comprehensive reference of Microsoft Edge DevTools Network panel features.
+description: A comprehensive reference of Microsoft Edge DevTools Network tool features.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -107,7 +107,7 @@ This article is a feature-driven inventory of the **Network** tool.  Use the **N
 
 By default, DevTools records all network requests in the **Network** tool, so long as DevTools is open.
 
-![The Network panel](./reference-images/panel.png)
+![The Network tool](./reference-images/panel.png)
 
 
 <!-- ------------------------------ -->
@@ -186,7 +186,7 @@ To replay an XHR request, do one of the following in the **Requests** table:
 * Right-click the request and select **Replay XHR**.
 
 <!--
-![Click Replay XHR](../media/todo: network-replay-xhr.png)  upstream: selecting-replay-xhr.png
+![Click Replay XHR](todo: selecting-replay-xhr.png)
 -->
 
 
@@ -277,21 +277,20 @@ In addition to presets, such as slow or fast 4G, you can also add your own custo
 
 1. At the top of the **Network** tool, click the **Throttling** dropdown menu, and then select **Custom** > **Add**.
 
-   The DevTools **Settings** page opens, with the **Throttling** page selected.  This is the same as selecting **Customize and control DevTools**,<!-- todo: (![Gear icon]()) --> and then selecting the **Throttling** page.
+   The DevTools **Settings** page opens, with the **Throttling** page selected.  This is the same as selecting **Customize and control DevTools**, and then selecting the **Throttling** page.
 
 1. Set up a new throttling profile as described in [Set up custom network throttling profile](../settings/throttling.md#set-up-custom-network-throttling-profile) in _Throttling_.
 
 1. In the **Network** tool, click the **Throttling** dropdown menu, and then select your custom throttling profile.
 
-   <!-- ![A custom profile selected from the throttling menu. The Network panel displays a warning icon.](todo: a-custom-profile-selected.png) -->
+   <!-- ![A custom profile selected from the throttling menu. The Network tool displays a warning icon.](todo: a-custom-profile-selected.png) -->
 
-DevTools displays a <!--todo: Warning icon--> warning icon next to the **Network** panel to remind you that throttling is enabled.
+DevTools displays a <!--todo: Warning icon--> warning icon next to the **Network** tool to remind you that throttling is enabled.
 
 
 <!-- ---------- -->
 ###### Throttle WebSocket connections
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#throttle-websocket -->
-<!-- todo: clean up text -->
 
 In addition to HTTP requests, DevTools throttles WebSocket connections.
 
@@ -299,13 +298,13 @@ To observe WebSocket throttling:
 
 1. Initiate a new connection, for example, by using a [test tool](https://www.piesocket.com/websocket-tester).
 
-1. On the **Network** panel, select **No throttling** and send a message through the connection.
+1. On the **Network** tool, select **No throttling** and send a message through the connection.
 
-1. Create a very slow [custom throttling profile](https://developer.chrome.com/docs/devtools/network/reference/#throttling-profile), for example, 10 kbit/s.  Such a slow profile will help you notice the difference.
+1. Create a very slow [custom throttling profile](#create-custom-throttling-profiles) (per above), for example, 10 kbit/s.  Such a slow profile will help you notice the difference.
 
-1. On the **Network** panel, select the profile and send another message.
+1. On the **Network** tool, select the profile and send another message.
 
-1. Toggle the **WS** filter, click your connection name, open the **Messages** tab, and check the time difference between sent and echoed messages with and without throttling. <!--For example:-->
+1. Toggle the **WS** filter, click your connection name, open the **Messages** tab, and check the time difference between sent and echoed messages with and without throttling. <!--todo: For example:-->
 
 <!-- ![Messages sent and echoed with and without throttling](todo: messages-sent-echoed-an.png) -->
 
@@ -391,24 +390,26 @@ See also:
 <!-- ====================================================================== -->
 ## Search requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#search -->
-<!-- todo: clean up text/links, add png -->
 
 To search across request headers, payloads, and responses:
 
-1. Press the following shortcut to open the Search tab on the right:
+1. In the **Network** tool, click the **Search** (![Search icon](./reference-images/search-icon.png)) button.  Or, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).
 
-   * On macOS, Command + F.
-   * On Windows or Linux, Control + F.
+   The **Search** tab opens on the left side of the **Network** tool.
 
-1. In the Search tab, enter your query and press Enter. Optionally click match_case or regular_expression to turn on case sensitivity or regular expressions respectively.
+1. In the **Find** text box, enter your query string, and then press **Enter**.
 
-1. Click one of the search results. The Network panel highlights in yellow the request that matched. Additionally, the panel also opens the Headers or Response tab and highlights the string that matched there, if any.
+   Optionally click the **Match case** button to turn on case sensitivity.  Optionally click the **Regular expression** button to turn on regular expressions.
 
-<!-- ![The Search tab on the right in the Network panel](todo: png) -->
+1. Click one of the search results.  The **Network** tool highlights in yellow the request that matched.  The **Network** tool also opens the **Headers** or **Response** tab and highlights the string that matched there, if any.
 
-To refresh search results, click refresh Refresh. To clear results, click block Clear.
+<!-- ![The Search tab on the right in the Network tool](todo: search-requests.png) -->
 
-For more information on all the ways you can search in DevTools, see Search: Find text across all loaded resources.
+To refresh search results, in the **Search** tab, click the **Refresh** (![Refresh icon](./reference-images/refresh-search-icon.png)) button.
+
+To clear search results, in the **Search** tab, click the **Clear search** (![Clear search icon](./reference-images/clear-search-icon.png)) button.
+
+For more information on all the ways you can search in DevTools, see [Search: Find text across all loaded resources](https://developer.chrome.com/docs/devtools/search).<!-- todo: local link -->
 
 
 <!-- ====================================================================== -->
@@ -425,7 +426,7 @@ You can filter requests by properties, by type, or by time, and you can hide dat
 
 Use the **Filter** text box to filter requests by properties, such as the domain or size of the request.
 
-If the text box isn't displayed, the **Filters** pane is probably hidden; see [Hide the Filters pane](#hide-the-filters-pane).
+If the text box isn't displayed, the **Filters** pane is probably hidden; see [Hide the Filters pane](#hide-the-filters-pane), below.
 
 The **Filter** text box:
 
@@ -433,7 +434,7 @@ The **Filter** text box:
 
 To invert your filter, select the **Invert** checkbox next to the **Filter** box.
 
-You can use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.
+You can use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations aren't supported.
 
 The complete list of supported properties:
 
@@ -453,11 +454,11 @@ The complete list of supported properties:
 | `mixed-content` | Show all mixed content resources (`mixed-content:all`) or just the ones that are currently displayed (`mixed-content:displayed`). |
 | `priority` | Show resources whose priority level matches the specified value. |
 | `resource-type` | Show resources of a resource type, for example, image. DevTools populates the autocomplete drop-down with all resource types it has encountered. |
-| `response-header-set-cookie` | Show raw Set-Cookie headers in the **Issues** tab.  Malformed cookies with incorrect `Set-Cookie` headers will be flagged in the Network panel. |
+| `response-header-set-cookie` | Show raw `Set-Cookie` headers in the **Issues** tab.  Malformed cookies with incorrect `Set-Cookie` headers will be flagged in the **Network** tool. |
 | `scheme` | Displays resources retrieved over unprotected HTTP (`scheme:http`) or protected HTTPS (`scheme:https`). |
-| `set-cookie-domain` | Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populate the autocomplete with all of the cookie domains that are found. |
-| `set-cookie-name` | Displays resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populate the autocomplete with all of the cookie names that are found. |
-| `set-cookie-value` | Displays resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populate the autocomplete with all of the cookie values that are found. |
+| `set-cookie-domain` | Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populates the autocomplete with all of the cookie domains that are found. |
+| `set-cookie-name` | Displays resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populates the autocomplete with all of the cookie names that are found. |
+| `set-cookie-value` | Displays resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populates the autocomplete with all of the cookie values that are found. |
 | `status-code` | Displays resources that match the specific HTTP status code.  DevTools populates the autocomplete dropdown menu with all of the status codes that are found. |
 | `url` | Show the resources that have a url matching the specified value. |
 
@@ -466,25 +467,12 @@ The complete list of supported properties:
 #### Filter requests by type
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#filter-by-type -->
 
-To filter requests by request type, click the buttons on the **Network** panel:
-*  **All**
-*  **Fetch/XHR**
-*  **Doc**
-*  **CSS**
-*  **JS**
-*  **Font**
-*  **Img**
-*  **Media**
-*  **Manifest**
-*  **WS** - WebSocket.
-*  **Wasm** - WebAssembly.
-*  **Other** - Any other type not listed here.
+<!-- horiz list -->
+To filter requests by request type, click the buttons on the **Network** tool: **All**, **Fetch/XHR**, **Doc**, **CSS**, **JS**, **Font**, **Img**, **Media**, **Manifest**, **WS** (WebSocket), **Wasm** (WebAssembly), or **Other** (any other type not listed here).
 
-If the buttons don't appear, the **Filters** pane might be hidden.  See [Hide the Filters pane](#hide-the-filters-pane).
+If the buttons don't appear, the **Filters** pane might be hidden.  See [Hide the Filters pane](#hide-the-filters-pane), below.
 
 To enable multiple type filters simultaneously, press and hold **Ctrl** (Windows, Linux) or **Command** (macOS) and then click the filters.
-
-Use the **Type** filters to display JS, CSS, and Document resources:
 
 ![Using the Type filters to display JS, CSS, and Document resources](./reference-images/type-filters.png)
 
@@ -514,13 +502,12 @@ To hide the requests, turn off the **Hide data URLs** checkbox:
 <!-- ------------------------------ -->
 #### Hide extension URLs
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#hide-extension-urls -->
-<!-- todo: clean up -->
 
-To focus on the code you author, you can filter out irrelevant requests sent by extensions you may have installed in Chrome. Extension requests have URLs that start with chrome-extension://.
+To focus on the code you author, you can filter out irrelevant requests sent by extensions you may have installed in Microsoft Edge.  Extension requests have URLs that start with chrome-extension://.<!-- todo: edge? -->
 
-To hide extension requests, in the Filters action bar, select More filters > check_box Hide extension URLs.
+To hide extension requests, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Hide extension URLs** so that a checkmark appears next to it.
 
-Extension URLs hidden from the Requests table.
+<!-- ![Extension URLs hidden from the Requests table](todo: png) -->
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
@@ -530,15 +517,15 @@ The status bar at the bottom displays the number of the shown requests out of th
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#show-blocked-cookies -->
 <!-- todo: clean up -->
 
-To filter out everything except the requests with response cookies blocked for any reason, in the Filters action bar, select More filters > check_box Blocked response cookies. Try it on this demo page.
+To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Blocked response cookies** so that a checkmark appears next to it.  <!--Try it on this [demo page](https://samesite-sandbox.glitch.me/). todo: Demos repo -->
 
-The Requests table shows only the requests with blocked response cookies.
+<!-- ![The Requests table shows only the requests with blocked response cookies](todo: png) -->
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
-To find out the reason why a response cookie was blocked, select the request, open its Cookies tab, and hover over the info information icon.
+To find out the reason why a response cookie was blocked, select the request, open its **Cookies** tab, and hover over the **information** (**(i)**)<!-- todo: icon --> icon.
 
-Additionally, the Network panel shows a warning warning icon next to a request with cookies blocked either because of Chrome flags or configuration. Hover over the icon to see a tooltip with a clue and click it to go to the Issues panel for more information.
+Additionally, the **Network** tool shows a warning warning icon next to a request with cookies blocked either because of Chrome flags or configuration. Hover over the icon to see a tooltip with a clue and click it to go to the Issues panel for more information.
 
 Warning icons next to a request blocked by Chrome flags or configuration.
 
@@ -585,7 +572,9 @@ Click the header of any column in the Requests to sort requests by that column.
 #### Sort by activity phase
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#sort-by-activity -->
 
-To change how the Waterfall sorts requests:
+The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+
+To change how the **Waterfall** column sorts requests:
 
 * Right-click the header of the Requests table, click **Waterfall**, and then select one of the following options:
 
@@ -634,7 +623,8 @@ The Requests table displays the following columns by default:
 - **Size**. The combined size of the response headers plus the response body, as delivered by the server.
 - **Time**. The total duration, from the start of the request to the receipt of the final byte in the response.
 - **Fulfilled by**. Whether the request was fulfilled by the HTTP cache or the app's service worker.
-- [Waterfall](#display-the-timing-relationship-of-requests). A visual breakdown of each request's activity.
+
+The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 
 <!-- ---------- -->
@@ -679,6 +669,8 @@ To view a request initiated by an inline frame, expand it in the request log.
 <!-- View the timing of requests in relation to one another  https://developer.chrome.com/docs/devtools/network/reference/#waterfall -->
 
 Use the **Waterfall** column of the **Requests** pane to view the timing relationships of requests.  The default organization of the **Waterfall** column uses the start time of the requests.  So, requests that are farther to the left started earlier than the requests that are farther to the right.
+
+The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 To see the different ways that you can sort the Waterfall, see [Sort by activity phase](#sort-by-activity-phase), above.
 
@@ -880,7 +872,7 @@ For more information about each of the phases that may be displayed in the **Tim
 
 To display a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.
 
-Previewing the timing breakdown of a request:
+The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 ![Previewing the timing breakdown of a request](./reference-images/resources-waterfall-hover.png)
 
@@ -942,12 +934,14 @@ When the Requests table is ordered chronologically, if you hover on a line, the 
 DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the **Network** tool:
 
 * In the **Overview** pane with vertical lines.
-* In the **Waterfall** column of the Request table with vertical lines.
+
+* In the **Waterfall** column of the Request table with vertical lines.  The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+
 * In the **Summary** pane, at the bottom of the **Network** tool, with timing labels.
 
 The `DOMContentLoaded` event is colored blue, and the `load` event is red.
 
-![The locations of the DOMContentLoaded and load events on the Network panel](./reference-images/load-events.png)
+![The locations of the DOMContentLoaded and load events on the Network tool](./reference-images/load-events.png)
 
 
 <!-- ------------------------------ -->
@@ -1050,7 +1044,7 @@ To save all network requests to a HAR file, pick one of the two ways:
 
   <!-- ![Selecting 'Save all listed as HAR (sanitized)'](todo: png) -->
 
-* Click download Export HAR (sanitized)... in the action bar at the top of the Network panel.
+* Click download Export HAR (sanitized)... in the action bar at the top of the **Network** tool.
 
 To export with sensitive data, first, turn on settings Settings > Preferences > Network > check_box Allow to generate HAR with sensitive data, then click the download Export button and select Export HAR (with sensitive data) from the drop-down menu.
 
@@ -1059,9 +1053,9 @@ To export with sensitive data, first, turn on settings Settings > Preferences > 
 Once you have a HAR file, you can import it back into DevTools for analysis in two ways:
 
 * Drag-and-drop the HAR file into the Requests table.
-* Click upload Import HAR in the action bar at the top of the Network panel.
+* Click upload Import HAR in the action bar at the top of the **Network** tool.
 
-The Network panel reads and shows initiators for the requests imported from HAR files.
+The **Network** tool reads and shows initiators for the requests imported from HAR files.
 
 
 <!-- ------------------------------ -->
