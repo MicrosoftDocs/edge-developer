@@ -42,6 +42,8 @@ async function main() {
 
   const today = new Date();
   let nextBetaReleaseDate = null;
+  let nextBetaReleaseDateYear = null;
+  let nextBetaReleaseDateMonth = null;
   let nextBetaVersion = null;
 
   for (let i = 0; i < releasesAsArray.length; i++) {
@@ -55,6 +57,8 @@ async function main() {
       // Find the next item in the list.
       nextBetaVersion = releasesAsArray[i + 1].engine_version;
       nextBetaReleaseDate = releasesAsArray[i + 1].release_date;
+      nextBetaReleaseDateYear = nextBetaReleaseDate?.split("-")[0];
+      nextBetaReleaseDateMonth = nextBetaReleaseDate?.split("-")[1];
       break;
     }
   }
@@ -153,6 +157,8 @@ async function main() {
     JSON.stringify({
       nextBetaVersion,
       nextBetaReleaseDate,
+      nextBetaReleaseDateYear,
+      nextBetaReleaseDateMonth,
       csFeatures,
       edgeOTs,
       chromeOTs,
@@ -165,8 +171,8 @@ async function main() {
         const date = new Date(releaseDate);
 
         const dtf = new Intl.DateTimeFormat("en-US", { month: "short" });
-        const shortMonthWithDot = dtf.format(date) + ".";
-
+        const shortMonth = dtf.format(date);
+        const shortMonthWithDot = shortMonth.length > 3 ? dtf.format(date) + "." : shortMonth;
         return `${shortMonthWithDot} ${date.getFullYear()}`;
       });
 
