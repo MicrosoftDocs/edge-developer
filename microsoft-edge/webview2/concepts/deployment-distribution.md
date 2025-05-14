@@ -17,3 +17,10 @@ Articles in this section:
 * [Enterprise management of WebView2 Runtimes](enterprise.md).
 * [Distribute an app as a single executable file](../how-to/static.md) - How to statically link the WebView2 loader library, to create a single-file app.
 * [Publish a UWP WebView2 app to the Microsoft Store](../how-to/publish-uwp-app-store.md)
+
+
+<!-- ====================================================================== -->
+## See also
+
+<!-- External: -->
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
