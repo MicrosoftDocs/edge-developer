@@ -2480,65 +2480,55 @@ Embed other webpages into your own webpage.  Detect when embedded webpages are c
 See also:
 * [Host/web object sharing](#hostweb-object-sharing), above
 * [Using frames in WebView2 apps](./frames.md)
+<!-- if need detail about CoreWebView2Frame.FrameCreated if that detail is not in API Ref:
+* [Track navigation history for nested iframes (FrameCreatedEvent API)](../release-notes/index.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Release Notes for the WebView2 SDK_.
+-->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2` Class:
    * [CoreWebView2.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framecreated)
+
 * [CoreWebView2Frame Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frame)
+   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated)
+
 * [CoreWebView2FrameCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2framecreatedeventargs)
+
 * [CoreWebView2FrameInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
    * [CoreWebView2.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framecreated)
+
 * [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame)
+   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#framecreated)
+
 * [CoreWebView2FrameCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framecreatedeventargs)
+
 * [CoreWebView2FrameInfo Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2_4` interface:
-   * [ICoreWebView2_4::add_FrameCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)
-   * [ICoreWebView2_4::remove_FrameCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_framecreated)
-* [ICoreWebView2Frame interface](/microsoft-edge/webview2/reference/win32/icorewebview2frame)
-* [ICoreWebView2FrameCreatedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)
-* [ICoreWebView2FrameInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)
-* [ICoreWebView2FrameInfoCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollection)<!--C++ only-->
-* [ICoreWebView2FrameInfoCollectionIterator interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollectioniterator)<!--C++ only-->
+   * [ICoreWebView2_4::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)
+   * [ICoreWebView2_4::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_framecreated)
 
----
-
-
-<!-- ------------------------------ -->
-#### Track navigation history for nested iframes (FrameCreatedEvent API)
-
-The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
-
-Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
-
-* Only the main page and first-level iframes (the default behavior).
-* A partial WebView2 frames tree with specific iframes of interest.
-* The full WebView2 frames tree.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#framecreated)
-
-##### [Win32/C++](#tab/win32cpp)
+* [ICoreWebView2Frame](/microsoft-edge/webview2/reference/win32/icorewebview2frame)
 
 * [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7)
   * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7#add_framecreated)
   * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7#remove_framecreated)
 
 * [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler)<!-- win32 only -->
+
+* [ICoreWebView2FrameCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)
+
+* [ICoreWebView2FrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)
+
+* [ICoreWebView2FrameInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollection)<!--C++ only-->
+
+* [ICoreWebView2FrameInfoCollectionIterator](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollectioniterator)<!--C++ only-->
 
 ---
 
