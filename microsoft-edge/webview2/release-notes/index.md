@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 04/07/2025
+ms.date: 05/12/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -16,16 +16,140 @@ These Release Notes provide information about new features and bug fixes that ar
 the template to copy for incoming sections is at end of this file
 
 this webpage covers the most recent ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers: 
+May 2025
 Apr 2025
 Mar 2025
 Feb 2025
 Jan 2025
 [Dec 2024]
-Nov 2024
 
 moved to archive:
-Oct 2024
+Nov 2024
 -->
+
+
+<!-- May 2025 Release SDK -->
+<!-- ====================================================================== -->
+## 1.0.3240.44
+
+Release Date: May 05, 2025
+
+[NuGet package for WebView2 SDK 1.0.3240.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3240.44)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 136.0.3240.44 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### Track navigation history for nested iframes (FrameCreatedEvent API)
+
+The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
+
+Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
+
+* Only the main page and first-level iframes (the default behavior).
+* A partial WebView2 frames tree with specific iframes of interest.
+* The full WebView2 frames tree.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated?view=webview2-dotnet-1.0.3240.44&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3240.44&preserve-view=true#framecreated)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true)
+  * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#add_framecreated)
+  * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#remove_framecreated)
+
+* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3240.44&preserve-view=true)<!-- win32 only -->
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
+* Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps. 
+
+<!-- end of May 2025 Release SDK -->
+
+
+<!-- May 2025 Prerelease SDK -->
+<!-- ====================================================================== -->
+## 1.0.3296-prerelease
+
+Release Date: May 12, 2025
+
+[NuGet package for WebView2 SDK 1.0.3296-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 137.0.3296.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Experimental APIs
+
+No Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
+
+The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296-prerelease&preserve-view=true#defaultbackgroundcolor)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true)
+  * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true#get_defaultbackgroundcolor)
+  * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true#put_defaultbackgroundcolor)
+ 
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed the **Find** bar no longer appearing after the window is shifted.
+* Fixed a bug where the app wasn't able to cancel navigation to login pages via the `NavigationStarting` event.
+* Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
+* Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps. 
+
+<!-- end of May 2025 Prerelease SDK -->
 
 
 <!-- Apr 2025 Release SDK -->
@@ -86,9 +210,9 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- ---------- -->
 ###### Track navigation history for nested iframes (FrameCreatedEvent API)
 
-The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe. Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame. Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of CoreWebView2Frame for the nested iframe.
+The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
 
-Use this API to manage iframe tracking on a page that contains multiple levels of iframes. You can choose to track any of the following:
+Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
 
 * Only the main page and first-level iframes (the default behavior).
 * A partial WebView2 frames tree with specific iframes of interest.
@@ -306,10 +430,10 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 
 ---
 
-
 <!-- end of Feb 2025 Prerelease SDK -->
 
 
+<!-- Jan 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.2957.106
 
@@ -371,10 +495,10 @@ n/a
 
 * Fixed an issue in the WPF `WebView2CompositionControl` where it's not displayed if it's initialized with size (0,0), such as when it's initialized in a `TabItem` of a `TabControl`.  ([Issue #4941](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4941))
 
-
 <!-- end of Jan 2025 Release SDK -->
 
 
+<!-- Jan 2024 Prerelease SDK -->
 <!-- ====================================================================== -->
 ## 1.0.3079-prerelease
 
@@ -537,6 +661,7 @@ n/a
 The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
 
 Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
+
 * Only the main page and first-level iframes (the default behavior).
 * A partial WebView2 frames tree with specific iframes of interest.
 * The full WebView2 frames tree.
@@ -557,7 +682,7 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
   * [ICoreWebView2ExperimentalFrame8::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe8?view=webview2-1.0.3079-prerelease&preserve-view=true#add_framecreated)
   * [ICoreWebView2ExperimentalFrame8::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe8?view=webview2-1.0.3079-prerelease&preserve-view=true#remove_framecreated)
 
-* [ICoreWebView2ExperimentalFrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframechildframecreatedeventhandler?view=webview2-1.0.3079-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalFrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframechildframecreatedeventhandler?view=webview2-1.0.3079-prerelease&preserve-view=true)<!-- win32 only -->
 
 ---
 
@@ -642,160 +767,7 @@ n/a
 
 * Fixed an issue in the WPF `WebView2CompositionControl` where it's not displayed if it's initialized with size (0,0), such as when it's initialized in a `TabItem` of a `TabControl`.  ([Issue #4941](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4941))
 
-
-
 <!-- end of Jan 2024 Prerelease SDK -->
-
-
-<!-- ====================================================================== -->
-## 1.0.2903.40
-
-Release Date: November 18, 2024
-
-[NuGet package for WebView2 SDK 1.0.2903.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2903.40)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 131.0.2903.40 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-The following APIs have been promoted to Stable and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### Control whether the screen capture UI is shown (ScreenCaptureStarting event)
-
-Added a new `ScreenCaptureStarting` event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown.  The app can then block the UI from being displayed, or allow the UI to be displayed.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.ScreenCaptureStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.screencapturestarting?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.ScreenCaptureStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.screencapturestarting?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-
-* `CoreWebView2NonClientRegionKind` Enum:
-   * [CoreWebView2NonClientRegionKind.Minimize](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2NonClientRegionKind.Maximize](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2NonClientRegionKind.Close](/dotnet/api/microsoft.web.webview2.core.corewebview2nonclientregionkind?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-
-* [CoreWebView2ScreenCaptureStartingEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2screencapturestartingeventargs?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2ScreenCaptureStartingEventArgs.Cancel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2screencapturestartingeventargs.cancel?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2ScreenCaptureStartingEventArgs.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2screencapturestartingeventargs.handled?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2ScreenCaptureStartingEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2screencapturestartingeventargs.originalsourceframeinfo?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2ScreenCaptureStartingEventArgs.GetDeferral Method](/dotnet/api/microsoft.web.webview2.core.corewebview2screencapturestartingeventargs.getdeferral?view=webview2-dotnet-1.0.2903.40&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.ScreenCaptureStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.2903.40&preserve-view=true#screencapturestarting)
-
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.ScreenCaptureStarting Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.2903.40&preserve-view=true#screencapturestarting)
-
-* `CoreWebView2NonClientRegionKind` Enum:
-   * [CoreWebView2NonClientRegionKind.Minimize](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2nonclientregionkind?view=webview2-winrt-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2NonClientRegionKind.Maximize](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2nonclientregionkind?view=webview2-winrt-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2NonClientRegionKind.Close](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2nonclientregionkind?view=webview2-winrt-1.0.2903.40&preserve-view=true)
-
-* [CoreWebView2ScreenCaptureStartingEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2ScreenCaptureStartingEventArgs.Cancel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2ScreenCaptureStartingEventArgs.Handled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2ScreenCaptureStartingEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
-   * [CoreWebView2ScreenCaptureStartingEventArgs.GetDeferral Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2screencapturestartingeventargs?view=webview2-winrt-1.0.2903.40&preserve-view=true)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2_27](/microsoft-edge/webview2/reference/win32/icorewebview2_27?view=webview2-1.0.2903.40&preserve-view=true)
-  * [ICoreWebView2_27::add_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2_27?view=webview2-1.0.2903.40&preserve-view=true#add_screencapturestarting)
-  * [ICoreWebView2_27::remove_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2_27?view=webview2-1.0.2903.40&preserve-view=true#remove_screencapturestarting)
-
-* [ICoreWebView2Frame6](/microsoft-edge/webview2/reference/win32/icorewebview2frame6?view=webview2-1.0.2903.40&preserve-view=true)
-  * [ICoreWebView2Frame6::add_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2frame6?view=webview2-1.0.2903.40&preserve-view=true#add_screencapturestarting)
-  * [ICoreWebView2Frame6::remove_ScreenCaptureStarting](/microsoft-edge/webview2/reference/win32/icorewebview2frame6?view=webview2-1.0.2903.40&preserve-view=true#remove_screencapturestarting)
-
-* [ICoreWebView2FrameScreenCaptureStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framescreencapturestartingeventhandler?view=webview2-1.0.2903.40&preserve-view=true)<!-- win32 only -->
-
-* [ICoreWebView2ScreenCaptureStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true)
-  * [ICoreWebView2ScreenCaptureStartingEventArgs::get_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#get_cancel)
-  * [ICoreWebView2ScreenCaptureStartingEventArgs::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#get_handled)
-  * [ICoreWebView2ScreenCaptureStartingEventArgs::get_OriginalSourceFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#get_originalsourceframeinfo)
-  * [ICoreWebView2ScreenCaptureStartingEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#getdeferral)
-  * [ICoreWebView2ScreenCaptureStartingEventArgs::put_Cancel](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#put_cancel)
-  * [ICoreWebView2ScreenCaptureStartingEventArgs::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventargs?view=webview2-1.0.2903.40&preserve-view=true#put_handled)
-
-* [ICoreWebView2ScreenCaptureStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2screencapturestartingeventhandler?view=webview2-1.0.2903.40&preserve-view=true)<!-- win32 only -->
-
-* `COREWEBVIEW2_NON_CLIENT_REGION_KIND` enum:
-  * [COREWEBVIEW2_NON_CLIENT_REGION_KIND_MINIMIZE](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2903.40&preserve-view=true#corewebview2_non_client_region_kind)
-  * [COREWEBVIEW2_NON_CLIENT_REGION_KIND_MAXIMIZE](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2903.40&preserve-view=true#corewebview2_non_client_region_kind)
-  * [COREWEBVIEW2_NON_CLIENT_REGION_KIND_CLOSE](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2903.40&preserve-view=true#corewebview2_non_client_region_kind)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Allowed the **Download** dialog to receive initial focus on launch.
-
-
-<!-- ------------------------------ -->
-#### General changes
-
-* The Microsoft Edge WebView2 Runtime is no longer listed in Windows **Settings** > **Apps** > **Installed apps**, because it is a persistent system component.
-
-
-<!-- end of Nov 2024 Release SDK -->
-
-
-<!-- ====================================================================== -->
-## 1.0.2950-prerelease
-
-Release Date: November 18, 2024
-
-[NuGet package for WebView2 SDK 1.0.2950-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2950-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 132.0.2950.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Experimental APIs
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Allowed the **Download** dialog to receive initial focus on launch.
-* Fixed a crash while cancelling navigation to certain sites in `FrameNavigationStarting`.  ([Issue #4843](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4843))
-* Postponed customizing the context menu when the touch selection menu is being displayed.  ([Issue #4737](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4737))
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Added Arm64ec support.
-* Fixed an issue where WebView2 running in "Window to Visual" mode couldn't receive accelerator input.
-
-<!-- end of Nov 2024 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->
@@ -812,8 +784,8 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 template for Release and Prerelease
 omit the "Experimental APIs" section from actual Release section
 -->
-<!-- May 2025 Release SDK --
-<!-- May 2025 Prerelease SDK --
+<!-- June 2025 Release SDK --
+<!-- June 2025 Prerelease SDK --
 <!-- ====================================================================== --
 ## 1.0.####.##
 ## 1.0.####-prerelease
@@ -896,6 +868,6 @@ description
 -->
 
 
-<!-- end of May 2025 Release SDK -->
-<!-- end of May 2025 Prerelease SDK -->
+<!-- end of June 2025 Release SDK -->
+<!-- end of June 2025 Prerelease SDK -->
 <!-- end of template -->
