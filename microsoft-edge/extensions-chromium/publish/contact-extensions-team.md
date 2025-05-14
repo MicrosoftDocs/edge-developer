@@ -66,12 +66,6 @@ If you think an item at [Microsoft Edge Add-ons](https://microsoftedge.microsoft
 
 
 <!-- ====================================================================== -->
-## Feature an extension in a collection
-
-To feature your extension in a collection at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), see [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u) and complete the form.
-
-
-<!-- ====================================================================== -->
 ## Microsoft Edge Insider forum at Tech Community
 
 You can stay tuned to recent updates and announcements via the [Microsoft Edge Insider](https://techcommunity.microsoft.com/category/MicrosoftEdgeInsider) product community at Tech Community, or search there for [Edge extensions](https://techcommunity.microsoft.com/search?q=edge+extensions&location=category%3AMicrosoftEdgeInsider) or [Edge Add-on](https://techcommunity.microsoft.com/search?q=edge+add-on&location=category%3AMicrosoftEdgeInsider).

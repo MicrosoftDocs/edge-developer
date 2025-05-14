@@ -63,4 +63,7 @@ WebView2 options in Configuration Manager exist under the Microsoft Edge Managem
 <!-- ====================================================================== -->
 ## See also
 
-* [Distribute your app and the WebView2 Runtime](distribution.md) - About the Evergreen, self-updating WebView2 Runtime.
+* [Distribute your app and the WebView2 Runtime](./distribution.md) - About the Evergreen, self-updating WebView2 Runtime.
+
+<!-- External: -->
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
