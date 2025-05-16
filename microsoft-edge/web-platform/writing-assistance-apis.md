@@ -5,21 +5,46 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 05/16/2025
+ms.date: 05/19/2025
 ---
 # Summarize, write, and rewrite text with the Writing Assistance APIs
 <!-- https://aka.ms/edge-writing-assistance-api-docs -->
 
-<!-- todo: 
-format bold & inline code
-check inline todo's
--->
+<!-- Find "todo" -->
 
-The [Writing Assistance APIs](https://github.com/webmachinelearning/writing-assistance-apis) are experimental web APIs that allow you to summarize, write, and rewrite text by using a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code
+The Writing Assistance APIs are experimental web APIs that allow you to summarize, write, and rewrite text by using a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code
 
-<!-- **Contents:** -->
+For introductory information about the Summarizer API, Writer API, and Rewriter API, see [Writing Assistance APIs Explainer](https://github.com/webmachinelearning/writing-assistance-apis).
 
-<!-- todo: paste from WebToc using GitHub preview of .md file after upload the branch to fork of repo -->
+
+**Contents:**
+
+* [Availability of the Writing Assistance APIs](#availability-of-the-writing-assistance-apis)
+* [Alternatives to and benefits of the Writing Assistance APIs](#alternatives-to-and-benefits-of-the-writing-assistance-apis)
+* [The Azure Phi-4-mini model](#the-azure-phi-4-mini-model)
+    * [Disclaimer](#disclaimer)
+    * [Hardware requirements](#hardware-requirements)
+    * [Model availability](#model-availability)
+* [Enable the Writing Assistance APIs](#enable-the-writing-assistance-apis)
+* [See working examples](#see-working-examples)
+* [Use the Writing Assistance APIs](#use-the-writing-assistance-apis)
+    * [Check if the APIs are enabled](#check-if-the-apis-are-enabled)
+    * [Check if the model can be used](#check-if-the-model-can-be-used)
+    * [Create a new session](#create-a-new-session)
+        * [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download)
+        * [Set the type of summary](#set-the-type-of-summary)
+        * [Set the tone of the generated text](#set-the-tone-of-the-generated-text)
+        * [Set the length of the generated text](#set-the-length-of-the-generated-text)
+        * [Set the format of the generated text](#set-the-format-of-the-generated-text)
+    * [Run the Writing Assistance APIs](#run-the-writing-assistance-apis)
+        * [Wait for the text to be generated](#wait-for-the-text-to-be-generated)
+        * [Display tokens as they are generated](#display-tokens-as-they-are-generated)
+    * [Stop generating text](#stop-generating-text)
+    * [Destroy a session](#destroy-a-session)
+        * [Destroy a session by using the destroy() method](#destroy-a-session-by-using-the-destroy-method)
+        * [Destroy a session by using an AbortController](#destroy-a-session-by-using-an-abortcontroller)
+* [Send feedback](#send-feedback)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->

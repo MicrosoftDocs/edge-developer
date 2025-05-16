@@ -5,22 +5,47 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 05/15/2025
+ms.date: 05/19/2025
 ---
 # Prompt a built-in language model with the Prompt API
 <!-- https://aka.ms/edge-prompt-api-docs -->
 
-<!-- todo: 
-format bold & inline code
-curly quotes
-inline to do's
--->
+<!-- Find "todo" -->
 
 The [Prompt API](https://github.com/webmachinelearning/prompt-api) is an experimental web API that allows you to prompt a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code.  Use the Prompt API to generate and analyze text or create application logic based on user input – and discover innovative ways to integrate prompt engineering capabilities into your web application.
 
-<!-- **Contents:** -->
 
-<!-- todo: paste from WebToc using GitHub preview of .md file after upload the branch to fork of repo -->
+**Contents:**
+
+* [Prompt a built-in language model with the Prompt API](#prompt-a-built-in-language-model-with-the-prompt-api)
+  * [Availability of the Prompt API](#availability-of-the-prompt-api)
+  * [Alternatives to and benefits of the Prompt API](#alternatives-to-and-benefits-of-the-prompt-api)
+  * [The Azure Phi-4-mini model](#the-azure-phi-4-mini-model)
+      * [Disclaimer](#disclaimer)
+      * [Hardware requirements](#hardware-requirements)
+      * [Model availability](#model-availability)
+  * [Enable the Prompt API](#enable-the-prompt-api)
+  * [See a working example](#see-a-working-example)
+  * [Use the Prompt API](#use-the-prompt-api)
+      * [Check if the API is enabled](#check-if-the-api-is-enabled)
+      * [Check if the model can be used](#check-if-the-model-can-be-used)
+      * [Create a new session](#create-a-new-session)
+          * [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download)
+          * [Provide the model with a system prompt](#provide-the-model-with-a-system-prompt)
+          * [N-shot prompting with initialPrompts](#n-shot-prompting-with-initialprompts)
+          * [Set topK and temperature](#set-topk-and-temperature)
+      * [Clone a session to start the conversation again with the same options](#clone-a-session-to-start-the-conversation-again-with-the-same-options)
+      * [Prompt the model](#prompt-the-model)
+          * [Wait for the final response](#wait-for-the-final-response)
+          * [Display tokens as they are generated](#display-tokens-as-they-are-generated)
+          * [Constrain the model output by using a JSON schema or regular expression](#constrain-the-model-output-by-using-a-json-schema-or-regular-expression)
+          * [Send multiple messages per prompt](#send-multiple-messages-per-prompt)
+      * [Stop generating text](#stop-generating-text)
+      * [Destroy a session](#destroy-a-session)
+          * [Destroy a session by using the destroy() method](#destroy-a-session-by-using-the-destroy-method)
+          * [Destroy a session by using an AbortController](#destroy-a-session-by-using-an-abortcontroller)
+  * [Send feedback](#send-feedback)
+  * [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -547,7 +572,7 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.  We're very interested in learning about the range of scenarios for which you intend to use the Prompt API, any issues with the API or language models, and whether more specific Task APIs,<!-- todo: task-specific APIS, --> such as APIs for Writing Assistance or Translation, would be useful.
+The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.  We're very interested in learning about the range of scenarios for which you intend to use the Prompt API, any issues with the API or language models, and whether more specific Task APIs,<!-- todo: alts: task-specific APIS; APIs that are more task-specific --> such as APIs for Writing Assistance or Translation, would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Prompt API feedback issue](https://aka.ms/edge-prompt-api-feedback).
 
