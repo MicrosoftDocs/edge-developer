@@ -17,7 +17,7 @@ The Writing Assistance APIs are experimental web APIs that allow you to summariz
 For introductory information about the Summarizer API, Writer API, and Rewriter API, see [Writing Assistance APIs Explainer](https://github.com/webmachinelearning/writing-assistance-apis).
 
 
-**Contents:**
+**Detailed contents:**
 
 * [Availability of the Writing Assistance APIs](#availability-of-the-writing-assistance-apis)
 * [Alternatives to and benefits of the Writing Assistance APIs](#alternatives-to-and-benefits-of-the-writing-assistance-apis)
