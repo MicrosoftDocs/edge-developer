@@ -21,7 +21,7 @@ For introductory information about the Summarizer API, Writer API, and Rewriter 
 
 * [Availability of the Writing Assistance APIs](#availability-of-the-writing-assistance-apis)
 * [Alternatives to and benefits of the Writing Assistance APIs](#alternatives-to-and-benefits-of-the-writing-assistance-apis)
-* [The Azure Phi-4-mini model](#the-azure-phi-4-mini-model)
+* [The Phi-4-mini model](#the-phi-4-mini-model)
     * [Disclaimer](#disclaimer)
     * [Hardware requirements](#hardware-requirements)
     * [Model availability](#model-availability)
@@ -50,7 +50,7 @@ For introductory information about the Summarizer API, Writer API, and Rewriter 
 <!-- ====================================================================== -->
 ## Availability of the Writing Assistance APIs
 
-The Summarizer, Writer, and Rewriter APIs are available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 138.0.3323.0.
+The Summarizer, Writer, and Rewriter APIs are available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 138.0.3324.0.
 
 The Writing Assistance APIs are optimized for tasks specific to generating, modifying, and summarizing text content.  To learn more about an alternative for more custom prompt engineering scenarios that may not be served by these APIs, see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
@@ -82,15 +82,15 @@ The Writing Assistance APIs use a model that's provided by Microsoft Edge and bu
 
 
 <!-- ====================================================================== -->
-## The Azure Phi-4-mini model
+## The Phi-4-mini model
 
-The Prompt API allows you to prompt Azure Phi-4-mini — a powerful small language model that excels at text-based tasks — built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
+The Prompt API allows you to prompt Phi-4-mini — a powerful small language model that excels at text-based tasks — built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
 
 
 <!-- ------------------------------ -->
 #### Disclaimer
 
-Like other language models, the Azure Phi family of models can potentially behave in ways that are unfair, unreliable, or offensive.  To learn more about the model's AI considerations, see [Responsible AI Considerations](https://huggingface.co/microsoft/Phi-4-mini-instruct#responsible-ai-considerations).
+Like other language models, the Phi family of models can potentially behave in ways that are unfair, unreliable, or offensive.  To learn more about the model's AI considerations, see [Responsible AI Considerations](https://huggingface.co/microsoft/Phi-4-mini-instruct#responsible-ai-considerations).
 
 
 <!-- ------------------------------ -->
@@ -125,7 +125,7 @@ An initial download of the model will be required the first time a website calls
 
 To use any of the Writing Assistance APIs in Microsoft Edge:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3323.0 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3324.0 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
 
