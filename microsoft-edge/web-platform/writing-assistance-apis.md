@@ -10,8 +10,6 @@ ms.date: 05/19/2025
 # Summarize, write, and rewrite text with the Writing Assistance APIs
 <!-- https://aka.ms/edge-writing-assistance-api-docs -->
 
-<!-- Find "todo" -->
-
 The Writing Assistance APIs are experimental web APIs that allow you to summarize, write, and rewrite text by using a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code
 
 For introductory information about the Summarizer API, Writer API, and Rewriter API, see [Writing Assistance APIs Explainer](https://github.com/webmachinelearning/writing-assistance-apis).
@@ -108,7 +106,6 @@ The Prompt API is currently limited to:
 
 * **Network:** Unlimited data plan or unmetered connection.  The model is not downloaded if using a metered connection.
 
-<!-- todo: whether to divulge the performance class value on the on-device-internals page -->
 To check if your device supports the Writing Assistance APIs developer preview, see [Enable the Writing Assistance APIs](#enable-the-writing-assistance-apis) below and check your device performance class.
 
 Due to the experimental nature of the Writing Assistance APIs, you might observe issues on specific hardware configurations.  If you see issues on specific hardware configurations, please provide feedback by [opening a new issue](https://aka.ms/edge-writing-assistance-api-bug) at the MSEdgeExplainers repository.
@@ -145,7 +142,7 @@ To use any of the Writing Assistance APIs in Microsoft Edge:
 
 1. Restart Microsoft Edge Canary or Dev.
 
-1. To check if your device meets the hardware requirements for the Writing Assistance APIs developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.<!-- todo: whether to say to use this special page -->
+1. To check if your device meets the hardware requirements for the Writing Assistance APIs developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.
 
    If your device performance class is **High** or greater, the Writing Assistance APIs should be supported on your device.  If you continue to notice issues, please [file a new issue](https://aka.ms/edge-writing-assistance-api-bug).
 

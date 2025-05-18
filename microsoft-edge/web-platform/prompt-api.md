@@ -10,8 +10,6 @@ ms.date: 05/19/2025
 # Prompt a built-in language model with the Prompt API
 <!-- https://aka.ms/edge-prompt-api-docs -->
 
-<!-- Find "todo" -->
-
 The [Prompt API](https://github.com/webmachinelearning/prompt-api) is an experimental web API that allows you to prompt a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code.  Use the Prompt API to generate and analyze text or create application logic based on user input – and discover innovative ways to integrate prompt engineering capabilities into your web application.
 
 
@@ -572,7 +570,7 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.  We're very interested in learning about the range of scenarios for which you intend to use the Prompt API, any issues with the API or language models, and whether more specific Task APIs,<!-- todo: alts: task-specific APIS; APIs that are more task-specific --> such as APIs for Writing Assistance or Translation, would be useful.
+The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.  We're very interested in learning about the range of scenarios for which you intend to use the Prompt API, any issues with the API or language models, and whether more specific task-specific APIs, such as APIs for Writing Assistance or Translation, would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Prompt API feedback issue](https://aka.ms/edge-prompt-api-feedback).
 
