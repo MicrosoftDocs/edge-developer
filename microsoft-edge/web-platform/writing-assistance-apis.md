@@ -65,18 +65,17 @@ To leverage AI capabilities in websites and browser extensions, you can also use
 
 The Writing Assistance APIs use a small language model (SLM) that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This has the following benefits compared to cloud-based solutions:
 
-* **Reduced cost:**  There's no cost associated with using a cloud AI service.
+* **Reduced cost:** There's no cost associated with using a cloud AI service.
 
-* **Network independence:**  Beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
+* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
 
-* **Improved privacy:**  The data input to the model never leaves the device and is not collected to train AI models.
-
+* **Improved privacy:** The data input to the model never leaves the device and is not collected to train AI models.
 
 The Writing Assistance APIs use a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
-* **Shared one-time cost:**  The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
+* **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
 
-* **Simplified usage for web developers:**  The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
+* **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
 
 
 <!-- ====================================================================== -->
