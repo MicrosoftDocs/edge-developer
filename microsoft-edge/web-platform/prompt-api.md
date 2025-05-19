@@ -53,9 +53,9 @@ The Prompt API is available as a developer preview in Microsoft Edge Canary or D
 
 The Prompt API is intended to help discover use cases and understand challenges for built-in SLMs.  This API is expected to be succeeded by other experimental APIs for specific AI-powered tasks such as writing assistance and text translation.  To learn more about these other APIs, see:
 
-* [Summarize, write, and rewrite text with the writing assistance APIs](https://aka.ms/edge-writing-assistance-api-docs)
+* [Summarize, write, and rewrite text with the writing assistance APIs](./writing-assistance-apis.md)
 
-* The [webmachinelearning/translation-api](https://aka.ms/edge-writing-assistance-api-docs) repo.
+* The [webmachinelearning/translation-api](https://github.com/webmachinelearning/translation-api) repo.
 
 
 <!-- ====================================================================== -->
@@ -151,7 +151,7 @@ To see the Prompt API in action, and review existing code that uses the API:
 
 1. [Enable the Prompt API](#enable-the-prompt-api), as described above.
 
-1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Built-in AI playground](https://aka.ms/edge-ai-api-playground).
+1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Built-in AI playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/prompt-api/).
 
 1. Under the left navigation, click **Prompt**.
 
@@ -177,7 +177,7 @@ To see the Prompt API in action, and review existing code that uses the API:
 
 1. To stop generating the response, at any time, click the **Stop** button.
 
-To view the source code of the Prompt API playground, see the [MicrosoftEdge/Demos](https://aka.ms/edge-ai-api-playground-code) repo at GitHub.
+To view the source code of the Prompt API playground, see the [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) repo at GitHub.
 
 
 <!-- ====================================================================== -->
@@ -572,7 +572,7 @@ controller.abort();
 
 The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.  We're very interested in learning about the range of scenarios for which you intend to use the Prompt API, any issues with the API or language models, and whether more specific task-specific APIs, such as APIs for Writing Assistance or Translation, would be useful.
 
-To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Prompt API feedback issue](https://aka.ms/edge-prompt-api-feedback).
+To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Prompt API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012).
 
 If you notice any issues when using the API instead, please [report it on the repo](https://aka.ms/edge-prompt-api-bug).
 
@@ -584,4 +584,4 @@ You can also contribute to the discussion about the design of the Prompt API at 
 
 * [Explainer for the Prompt API](https://github.com/webmachinelearning/prompt-api), on the Web Machine Learning GitHub repo.
 
-* [Write, rewrite, and summarize text with the Writing Assistance APIs](https://aka.ms/edge-writing-assistance-api-docs)
+* [Write, rewrite, and summarize text with the Writing Assistance APIs](./writing-assistance-apis.md)

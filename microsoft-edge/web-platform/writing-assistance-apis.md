@@ -154,7 +154,7 @@ To see the Writing Assistance APIs in action, and review existing code that uses
 
 1. [Enable the Writing Assistance APIs](#enable-the-writing-assistance-apis), as described above.
 
-1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Built-in AI playground](https://aka.ms/edge-ai-api-playground).
+1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Built-in AI playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/summarizer-api/).
 
 1. Under the left navigation:
 
@@ -184,7 +184,7 @@ To see the Writing Assistance APIs in action, and review existing code that uses
 
    ![The Stop button](./writing-assistance-apis-images/summarizing.png)
 
-To view the source code of the Writing Assistance APIs playground, see the [MicrosoftEdge/Demos](https://aka.ms/edge-ai-api-playground-code) repo at GitHub.
+To view the source code of the Writing Assistance APIs playground, see the [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) repo at GitHub.
 
 
 <!-- ====================================================================== -->
@@ -539,7 +539,7 @@ controller.abort();
 
 We're very interested in learning about the range of scenarios for which you intend to use the Writing Assistance APIs, any issues with the APIs or language models, and whether new APIs, such as APIs for proofreading would be useful.
 
-To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Writing Assistance APIs feedback issue](https://aka.ms/edge-writing-assistance-api-feedback).
+To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Writing Assistance APIs feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1031).
 
 If you notice any issues when using the APIs instead, please [report it on the repo](https://aka.ms/edge-writing-assistance-api-bug).
 
