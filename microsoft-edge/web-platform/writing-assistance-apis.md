@@ -108,7 +108,7 @@ The Prompt API is currently limited to:
 
 To check if your device supports the Writing Assistance APIs developer preview, see [Enable the Writing Assistance APIs](#enable-the-writing-assistance-apis) below and check your device performance class.
 
-Due to the experimental nature of the Writing Assistance APIs, you might observe issues on specific hardware configurations.  If you see issues on specific hardware configurations, please provide feedback by [opening a new issue](https://aka.ms/edge-writing-assistance-api-bug) at the MSEdgeExplainers repository.
+Due to the experimental nature of the Writing Assistance APIs, you might observe issues on specific hardware configurations.  If you see issues on specific hardware configurations, please provide feedback by [opening a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=writing-assistance-api.md) at the MSEdgeExplainers repository.
 
 
 <!-- ------------------------------ -->
@@ -144,7 +144,7 @@ To use any of the Writing Assistance APIs in Microsoft Edge:
 
 1. To check if your device meets the hardware requirements for the Writing Assistance APIs developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.
 
-   If your device performance class is **High** or greater, the Writing Assistance APIs should be supported on your device.  If you continue to notice issues, please [file a new issue](https://aka.ms/edge-writing-assistance-api-bug).
+   If your device performance class is **High** or greater, the Writing Assistance APIs should be supported on your device.  If you continue to notice issues, please [file a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=writing-assistance-api.md).
 
 
 <!-- ====================================================================== -->
@@ -541,7 +541,7 @@ We're very interested in learning about the range of scenarios for which you int
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Writing Assistance APIs feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1031).
 
-If you notice any issues when using the APIs instead, please [report it on the repo](https://aka.ms/edge-writing-assistance-api-bug).
+If you notice any issues when using the APIs instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=writing-assistance-api.md).
 
 You can also contribute to the discussion about the design of the Writing Assistance APIs at the [W3C Web Machine Learning Working Group repository](https://github.com/webmachinelearning/writing-assistance-apis).
 

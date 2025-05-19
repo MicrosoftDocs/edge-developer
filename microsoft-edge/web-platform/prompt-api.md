@@ -109,7 +109,7 @@ The Prompt API developer preview is intended to work on devices with hardware ca
 
 To check if your device supports the Prompt API developer preview, see [Enable the Prompt API](#enable-the-prompt-api) below and check your device performance class.
 
-Due to the experimental nature of the Prompt API, you might observe issues on specific hardware configurations.  If you see issues on specific hardware configurations, please provide feedback by [opening a new issue](https://aka.ms/edge-prompt-api-bug) at the MSEdgeExplainers repository.
+Due to the experimental nature of the Prompt API, you might observe issues on specific hardware configurations.  If you see issues on specific hardware configurations, please provide feedback by [opening a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=prompt-api.md) at the MSEdgeExplainers repository.
 
 
 <!-- ------------------------------ -->
@@ -141,7 +141,7 @@ To use the Prompt API in Microsoft Edge:
 
 1. To check if your device meets the hardware requirements for the Prompt API developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.
 
-   If your device performance class is **High** or greater, the Prompt API should be supported on your device.  If you continue to notice issues, please [Create a new issue](https://aka.ms/edge-prompt-api-bug) in the MSEdgeExplainers repo.
+   If your device performance class is **High** or greater, the Prompt API should be supported on your device.  If you continue to notice issues, please [Create a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=prompt-api.md) in the MSEdgeExplainers repo.
 
 
 <!-- ====================================================================== -->
@@ -574,7 +574,7 @@ The Prompt API developer preview is intended to help discover use-cases for brow
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Prompt API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012).
 
-If you notice any issues when using the API instead, please [report it on the repo](https://aka.ms/edge-prompt-api-bug).
+If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=prompt-api.md).
 
 You can also contribute to the discussion about the design of the Prompt API at the [W3C Web Machine Learning Working Group repository](https://github.com/webmachinelearning/prompt-api).
 
