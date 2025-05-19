@@ -49,7 +49,7 @@ The [Prompt API](https://github.com/webmachinelearning/prompt-api) is an experim
 <!-- ====================================================================== -->
 ## Availability of the Prompt API
 
-The Prompt API is available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 138.0.3324.0.
+The Prompt API is available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 138.0.3309.2.
 
 The Prompt API is intended to help discover use cases and understand challenges for built-in SLMs.  This API is expected to be succeeded by other experimental APIs for specific AI-powered tasks such as writing assistance and text translation.  To learn more about these other APIs, see:
 
@@ -123,7 +123,7 @@ An initial download of the model will be required the first time a website calls
 
 To use the Prompt API in Microsoft Edge:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3324.0 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
 

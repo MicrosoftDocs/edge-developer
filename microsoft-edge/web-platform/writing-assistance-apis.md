@@ -48,7 +48,7 @@ For introductory information about the Summarizer API, Writer API, and Rewriter 
 <!-- ====================================================================== -->
 ## Availability of the Writing Assistance APIs
 
-The Summarizer, Writer, and Rewriter APIs are available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 138.0.3324.0.
+The Summarizer, Writer, and Rewriter APIs are available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 138.0.3309.2.
 
 The Writing Assistance APIs are optimized for tasks specific to generating, modifying, and summarizing text content.  To learn more about an alternative for more custom prompt engineering scenarios that may not be served by these APIs, see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
@@ -122,7 +122,7 @@ An initial download of the model will be required the first time a website calls
 
 To use any of the Writing Assistance APIs in Microsoft Edge:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3324.0 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
 
