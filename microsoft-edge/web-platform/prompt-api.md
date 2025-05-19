@@ -84,7 +84,7 @@ The Prompt API uses a model that's provided by Microsoft Edge and built into the
 <!-- ====================================================================== -->
 ## The Phi-4-mini model
 
-The Prompt API allows you to prompt Phi-4-mini -- a powerful small language model that excels at text-based tasks -- built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
+The Prompt API allows you to prompt Phi-4-mini — a powerful small language model that excels at text-based tasks — built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
 
 
 <!-- ------------------------------ -->
