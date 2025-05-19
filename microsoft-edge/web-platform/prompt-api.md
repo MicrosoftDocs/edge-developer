@@ -570,7 +570,7 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.  We're very interested in learning about the range of scenarios for which you intend to use the Prompt API, any issues with the API or language models, and whether more specific task-specific APIs, such as APIs for Writing Assistance or Translation, would be useful.
+The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.  We're very interested in learning about the range of scenarios for which you intend to use the Prompt API, any issues with the API or language models, and whether new APIs, such as APIs for translation, would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Prompt API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012).
 
