@@ -9,7 +9,7 @@
 # Progressive Web Apps
 # WebView2
 # Test and automation
-# Edge-specific web development tips
+# Edge-specific web development tips (/web-platform/)
 # Microsoft Edge IDE integration
 # Accessibility in Microsoft Edge
 # DualEngine
@@ -65,6 +65,12 @@
 
         - name: Sign up for the Ad Selection API
           href: ./web-platform/ad-selection-api.md
+
+        - name: Prompting a built-in language model with the Prompt API
+          href: ./web-platform/prompt-api.md
+
+        - name: Summarize, write, and rewrite text with the Writing Assistance APIs
+          href: ./web-platform/writing-assistance-apis.md
 # /Experimental web platform features
 # =============================================================================
 # Microsoft Edge DevTools
@@ -1757,7 +1763,7 @@
           href: ./test-and-automation/webhint.md
 # /Test and automation
 # =============================================================================
-# Edge-specific web development tips
+# Edge-specific web development tips (/web-platform/)
     - name: Edge-specific web development tips
       items:
         - name: Edge-specific web development tips
@@ -1789,7 +1795,7 @@
         - name: View a JSON file or server response with formatting
           href: ./web-platform/json-viewer.md
           displayName: JSON viewer, view JSON
-# /Edge-specific web development tips
+# /Edge-specific web development tips (/web-platform/)
 # =============================================================================
 # Microsoft Edge IDE integration
     - name: Microsoft Edge IDE integration
