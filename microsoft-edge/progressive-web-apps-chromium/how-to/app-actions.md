@@ -120,7 +120,7 @@ The `ActionEntityKind` enumeration specifies the types of entities that are supp
 
 
 <!-- -------------------- -->
-##### How does Windows App Actions framework call App Actions in a PWA?
+##### What happens when a PWA action is called
 
 
 <!-- ---------- -->
