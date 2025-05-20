@@ -61,12 +61,7 @@ App developers can build actions to increase discoverability and engagement for 
 
 The Windows App Actions framework is for exposing and executing key pieces of app functionality – it is not for generic user activities like opening context menus or right-clicking.
 
-See [Recommended scenarios for App Actions](https://learn.microsoft.com/en-us/windows/ai/app-actions#recommended-scenarios-for-app-actions).
-<!-- external link eg
-https://learn.microsoft.com/windows/ai/app-actions/#recommended-scenarios-for-app-actions
-ie:
-/windows/ai/app-actions/#recommended-scenarios-for-app-actions
--->
+See [Recommended scenarios for App Actions](/windows/ai/app-actions#recommended-scenarios-for-app-actions) in _App Actions on Windows Overview_.
 
 
 <!-- ====================================================================== -->
@@ -120,7 +115,7 @@ The **Paint** action accepts the image file that user selected and returns the s
 <!-- ---------- -->
 ###### Understanding the fields in ActionsManifest
 
-For the definition of each JSON property, see [Action definition JSON properties](https://learn.microsoft.com/en-us/windows/ai/app-actions/actions-json#action-definition-json-properties)<!-- updated link --> in _todo: top-of-page title for actions-json.md_.
+For the definition of each JSON property, see [Action definition JSON properties](/windows/ai/app-actions/actions-json#action-definition-json-properties) in _Action definition JSON schema for App Actions on Windows_.
 
 Under `Invocation`, only the `uri` type is supported.  The `com` type is not applicable for PWAs.
 
@@ -128,9 +123,9 @@ Under `Invocation`, only the `uri` type is supported.  The `com` type is not app
 <!-- ---------- -->
 ###### Supported Entity types for PWA
 
-The `ActionEntityKind` enumeration specifies the types of entities that are supported by App Actions on Windows.  In the context of a JSON action definition, the entity kinds are string literals that are case-sensitive.  The supported entities are listed in [ActionEntityKind enumeration](https://learn.microsoft.com/en-us/windows/ai/app-actions/actions-json#actionentitykind-enumeration)<!-- updated link --> in _todo: top-of-page title per actions-json.md_.
+The `ActionEntityKind` enumeration specifies the types of entities that are supported by App Actions on Windows.  In the context of a JSON action definition, the entity kinds are string literals that are case-sensitive.  The supported entities are listed in [ActionEntityKind enumeration](/windows/ai/app-actions/actions-json#actionentitykind-enumeration) in _Action definition JSON schema for App Actions on Windows_.
 
-`StreamingText` and `RemoteFile` are not yet supported for PWA.  For `File`, `Photo`, `Document` and `Text` entity kinds, see [Entity properties](https://learn.microsoft.com/windows/ai/app-actions/actions-json#entity-properties)<!-- todo: link --> in _todo: top-of-page title for actions-json.md_.
+`StreamingText` and `RemoteFile` are not yet supported for PWA.  For `File`, `Photo`, `Document` and `Text` entity kinds, see [Entity properties](/windows/ai/app-actions/actions-json#entity-properties) in _Action definition JSON schema for App Actions on Windows_.
 
 
 <!-- -------------------- -->
@@ -290,7 +285,7 @@ The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like
 
 1. Click the **Download** button.
 
-1. Unzip your download archive.  Then you can [publish your PWA to the Microsoft Store](./microsoft-store.md) and install the app from <!-- todo: from within? 05/19 updated the wording--> the Store, or install it directly by running `install.ps1`.
+1. Unzip your download archive.  Then you can [publish your PWA to the Microsoft Store](./microsoft-store.md) and install the app from the Store, or install it directly by running `install.ps1`.
 
 1. Launch your PWA by clicking the PWA icon.
 
@@ -382,9 +377,9 @@ Before testing, make sure that you have set up and packaged your PWA successfull
 
    Your PWA must be launched at least one time, to initialize your PWA for action, before being called by the App Actions runtime.
 
-1. Use the [App Actions Testing Playground app](https://learn.microsoft.com/windows/ai/app-actions/actions-test-tool)<!-- link updated--> to test the actions for your PWA.
+1. Use the [App Actions Testing Playground app](/windows/ai/app-actions/actions-test-tool) to test the actions for your PWA.
 
-1. Add an entity that action needs, for example, if the action processes images, add an image. Then run action.<!-- todo: clarify 05/19 updated with clarification -->
+1. Add an entity that that action needs.  For example, if the action processes images, add an image.  Then run the action.
 
    The PWA will be launched and execute the action.
 
