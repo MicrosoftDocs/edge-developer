@@ -178,7 +178,7 @@ To see the Prompt API in action, and review existing code that uses the API:
 
    The response is generated in the response section of the page:
 
-   ![Prompting and the Stop button](./prompt-api-images/prompting.png)
+   ![The Prompt demo page with settings and a Prompt button](./prompt-api-images/prompting.png)
 
 1. To stop generating the response, at any time, click the **Stop** button.
 

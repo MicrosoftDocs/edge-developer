@@ -177,11 +177,11 @@ To see the Writing Assistance APIs in action, and review existing code that uses
 
 1. Click the **Summarize**, **Write**, or **Rewrite** button, at the bottom of the page.
 
-   The output is generated in the response section of the page.
+   The output is generated in the response section of the page:
 
-1. Click the **Stop** button at any time to stop generating text:
+   ![The Summarizer demo page with settings and a Summarize button](./writing-assistance-apis-images/summarizing.png)
 
-   ![The Stop button](./writing-assistance-apis-images/summarizing.png)
+1. To stop generating the response, at any time, click the **Stop** button.
 
 To view the source code of the Writing Assistance APIs playground, see the [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) repo at GitHub.
 
