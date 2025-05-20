@@ -150,7 +150,7 @@ For example:
 
 
 <!-- ---------- -->
-###### Receiving ValueSet data from Windows and mapping it to Share Target
+###### Receive ValueSet data and map it to Share Target
 
 The activated protocol URI will be mapped to the "url" field of the share target data.
 
