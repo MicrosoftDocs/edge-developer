@@ -185,7 +185,7 @@ Example `protocol_handlers` declaration as below. Please see also [Handle protoc
 
 * The method must be "POST".
 * The `enctype` must be `multipart/form-data`.
-* `title`, `text` and `url` in `params` are required.  `files` is optional if you don't want your PWA to support the normal _share target_ feature.
+* `title`, `text` and `url` in `params` are required.  `files` is optional if you don't want your PWA to support the normal _share target_ feature. Please see [Receiving shared content](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/share#receiving-shared-content) for more info. 
 
 Example `share_target` declaration:
 
