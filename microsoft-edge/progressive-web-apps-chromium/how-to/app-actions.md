@@ -83,32 +83,26 @@ The **Paint** action accepts the image file that user selected and returns the s
 
 ```json
 {
-    "version": 1,
-    "actions": [
-      {
-        "id": "Wami.Paint",
-        "description": "Convert the image to oil paint style",
-        "kind": "Search",
-        "inputs": [
-          {
-            "name": "File",
-            "kind": "Photo"
-          }
-        ],
-        "outputs": [],
-        "invocation": {
-          "type": "Uri",
-          "uri": "web+wami://paint"
-        },
-        "inputCombinations": [
-          {
-            "inputs": [ "File" ],
-            "description": "Photo to be converted to oil paint style."
-          }
-        ]
-      }
-    ]
-  }
+   "version": 1,
+   "actions": [{
+      "id": "Wami.Paint",
+      "description": "Convert the image to oil paint style",
+      "kind": "Search",
+      "inputs": [{
+         "name": "File",
+         "kind": "Photo"
+        }],
+      "outputs": [],
+      "invocation": {
+         "type": "Uri",
+         "uri": "web+wami://paint"
+      },
+      "inputCombinations": [{
+         "inputs": [ "File" ],
+         "description": "Photo to be converted to oil paint style."
+      }]
+   }]
+}
 ```
 
 
@@ -181,12 +175,10 @@ The app's web app manifest must correctly configure the `share_target` field to 
 Example `protocol_handlers` declaration:
 
 ```json
-"protocol_handlers": [
-    {
-        "protocol": "web+wami",
-        "url": "./?url=%s"
-    }
-]
+"protocol_handlers": [{
+   "protocol": "web+wami",
+   "url": "./?url=%s"
+}]
 ```
 
 
@@ -203,14 +195,14 @@ Example `share_target` declaration:
 
 ```json
 "share_target": {
-    "action": "./share-target",
-    "method": "POST",
-    "enctype": "multipart/form-data",
-    "params": {
-        "title": "title",
-        "text": "text",
-        "url": "url"
-    }
+   "action": "./share-target",
+   "method": "POST",
+   "enctype": "multipart/form-data",
+   "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+   }
 }
 ```
 
@@ -224,7 +216,7 @@ Example declaration:
 
 ```json
 "launch_handler": {
-    "client_mode": " navigate-existing"
+   "client_mode": " navigate-existing"
 }
 ```
 
@@ -254,9 +246,9 @@ The meaning of all `formData` is as follows:
 ```csharp
 // Extract data
 const data = {
-  title: formData.get('title') || '',
-  text: formData.get('text') || '',
-  url: formData.get('url') || ''
+   title: formData.get('title') || '',
+   text: formData.get('text') || '',
+   url: formData.get('url') || ''
 };
 const files = formData.getAll('windowsActionFiles');
 ```
@@ -303,37 +295,37 @@ Edge Canary gives a preview of the functionalities that's not available in stabl
 
 1. Follow the configs below to input your PWA configs in the input box.
 
-    * `name`: Your PWA's name.
-    * `packageId`: Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
-    * `url`: Your PWA's url.
-    * `publisher` -> `displayName`: The publisher's name.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
-    * `publisher` -> `commonName`: Your Publisher ID.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
-    * `startUrl`: Your PWA's `startUrl`.
+   * `name`: Your PWA's name.
+   * `packageId`: Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
+   * `url`: Your PWA's url.
+   * `publisher` -> `displayName`: The publisher's name.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
+   * `publisher` -> `commonName`: Your Publisher ID.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
+   * `startUrl`: Your PWA's `startUrl`.
 
    Example:
 
-    ```json
-    {
-        "name": "Wami for Canary",
-        "packageId": "",
-        "url": "https://microsoftedge.github.io/Demos/wami",
-        "version": "1.0.2",
-        "allowSigning": true,
-        "classicPackage": {
-            "generate": true,
-            "version": "1.0.0"
-        },
-        "publisher": {
-            "displayName": "",
-            "commonName": ""
-        },
-        "edgeChannel": "canary",
-        "appUserModelId": "Microsoft.Canary_8wekyb3d8bbwe!MSEDGE",
-        "generateModernPackage": true,
-        "resourceLanguage": "EN-US",
-        "startUrl": "https://microsoftedge.github.io/Demos/wami"
-    }
-    ```
+   ```json
+   {
+      "name": "Wami for Canary",
+      "packageId": "",
+      "url": "https://microsoftedge.github.io/Demos/wami",
+      "version": "1.0.2",
+      "allowSigning": true,
+      "classicPackage": {
+         "generate": true,
+         "version": "1.0.0"
+      },
+      "publisher": {
+         "displayName": "",
+         "commonName": ""
+      },
+      "edgeChannel": "canary",
+      "appUserModelId": "Microsoft.Canary_8wekyb3d8bbwe!MSEDGE",
+      "generateModernPackage": true,
+      "resourceLanguage": "EN-US",
+      "startUrl": "https://microsoftedge.github.io/Demos/wami"
+   }
+   ```
 
    Replace the above attributes with your app's actual attributes.
 
