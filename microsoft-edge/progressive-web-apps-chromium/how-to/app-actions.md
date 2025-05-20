@@ -139,7 +139,7 @@ A custom protocol URI should be used, not an HTTPS URI.
 For PWAs with many actions, use syntax:
 
 ```json
-"uri": "web+{app name://}{custom action name}"
+"uri": "web+{app name}://{custom action name}"
 ```
 
 For example:
