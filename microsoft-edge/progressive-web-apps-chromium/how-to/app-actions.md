@@ -19,10 +19,6 @@ App Actions are used for Windows apps and non-Windows apps.
 See also:
 * [App Actions on Windows Overview](/windows/ai/app-actions/)
 
-<!-- **Detailed contents:**
-not needed if flat list of h2 headings
--->
-
 
 <!-- ====================================================================== -->
 ## About App Actions
@@ -95,13 +91,13 @@ In the context of a JSON App Action definition, the entity kinds are string lite
 <!-- ====================================================================== -->
 ## How a PWA is launched through URI activation
 
-When a PWA's App Action is called, the PWA App Action is launched by Windows through custom protocol URI activation.  A PWA must register for custom protocol handling by using the `protocol_handlers` field in the PWA's web app manifest (vs. `ActionsManifest.json`).
+When a PWA's App Action is called, the PWA App Action is launched by Windows through custom protocol URI activation.  A PWA must register for custom protocol handling by using the `protocol_handlers` field in the PWA's web app manifest, such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json).
 
 Windows' `LaunchUriAsync(Uri, LauncherOptions, ValueSet)` method is used by the Action Framework for URI activation.  `LaunchUriAsync` doesn't return a value or error status.
 
 
 <!-- ====================================================================== -->
-## The URI field in the JSON file
+## The URI field in ActionsManifest.json
 
 Use a custom protocol URI, not an HTTPS URI.
 
@@ -117,23 +113,25 @@ For example:
 "uri": "web+wami://paint"
 ```
 
+That line is shown in context in [Define the App Actions that your PWA supports, in ActionsManifest.json](#define-the-app-actions-that-your-pwa-supports-in-actionsmanifestjson), above.
+
 
 <!-- ====================================================================== -->
 ## Receive ValueSet data and map it to a Share Target
 
 The activated protocol URI will be mapped to the `url` field of the share target data.
 
-The input `ValueSet` will be converted to a valid JSON string and mapped to the `text` field of the share target data.  That enables Edge to determine that the protocol handler launch actually represents an App Action.
+The input `ValueSet` will be converted to a valid JSON string and mapped to the `text` field of the share target data.  That enables Microsoft Edge to determine that the protocol handler launch represents an App Action.
 
-The app's web app manifest must correctly configure the `share_target` field to enable being launched as a share target for an App Action.  See [Prerequisites for your PWA](#prerequisites-for-your-pwa), below.
+The app's web app manifest (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)) must correctly configure the `share_target` field, to enable being launched as a share target for an App Action.  See [Web Manifest validation for `share_target`](#web-manifest-validation-for-share_target), below.
 
 
 <!-- ====================================================================== -->
 ## Web Manifest validation for `protocol_handlers`
 
-For a PWA to use App Actions, the `protocol_handlers` field must be present in the PWA's manifest file, and the protocol field must be the same as the invocation uri in the `ActionsManifest.json` file.
+For a PWA to use App Actions, the `protocol_handlers` field must be present in the PWA's manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)), and the protocol field must be the same as the invocation uri in the `ActionsManifest.json` file.
 
-Example `protocol_handlers` declaration:
+Example `protocol_handlers` declaration, from [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
 
 ```json
 "protocol_handlers": [{
@@ -149,14 +147,14 @@ See also:
 <!-- ====================================================================== -->
 ## Web Manifest validation for `share_target`
 
-For a PWA to use App Actions, the `share_target` field must be present in the PWA's manifest file (vs. the `ActionsManifest.json` file):
+For a PWA to use App Actions, the `share_target` field must be present in the PWA's manifest file, such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json).
 
 * The method must be "POST".
 * The `enctype` must be `multipart/form-data`.
 * `title`, `text` and `url` in `params` are required.
 * `files` is optional.  You can omit `files` if you don't want your PWA to support the normal _share target_ feature.
 
-Example `share_target` declaration, from [https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
+Example `share_target` declaration, from [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
 
 ```json
 "share_target": {
@@ -178,7 +176,7 @@ See also:
 <!-- ====================================================================== -->
 ## Web Manifest validation for `launch_handler`
 
-You can set [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) as `navigate-existing` into your PWA's manifest file (vs. the `ActionsManifest.json` file), if you want to keep a single PWA window.
+If you want to keep a single PWA window, you can set [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) as `navigate-existing` in your PWA's manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).
 
 Example declaration:
 
@@ -188,8 +186,7 @@ Example declaration:
 }
 ```
 
-The above code is not in [https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
-
+The above code is not in [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json).
 
 
 <!-- ====================================================================== -->
@@ -212,12 +209,10 @@ For the App Action scenario of using a service worker (approach 2?) to handle PO
 * [share_target - Receiving share data using POST](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_share_data_using_post)
 * [share_target - Receiving shared files](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_shared_files)
 
-Here is the example service worker handler: [Support AI Action launch for Wami Web App](https://github.com/MicrosoftEdge/Demos/blob/main/wami/sw.js) - `/wami/sw.js`.
-
-The following code is from `/wami/sw.js`, as an example of a service worker handler:
+The following code is from the wami demo's example service worker handler, to support AI Action launch for the app.  This code is from [Demos/wami/sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/wami/sw.js):
 
 ```csharp
-// Extract data.
+// Extract data
 const data = {
    title: formData.get('title') || '',
    text: formData.get('text') || '',
@@ -242,9 +237,9 @@ The above code uses the following `formData`:
 <!-- ====================================================================== -->
 ## Package a store PWA in Edge Stable
 
-At the current stage, your PWA needs to be packaged as a Microsoft Store PWA, to be called by the Windows App Actions framework.  You need an Edge browser with version number greater than 137.
+At the current stage, your PWA needs to be packaged as a Microsoft Store PWA, to be called by the Windows App Actions framework.  You must use Microsoft Edge 137 or greater.
 
-The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like to try it out before May 29, 2025, you can package your PWA in Edge Canary; see [How to package store PWA in Edge Canary](#how-to-package-store-pwa-in-edge-canary), below.
+The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like to try it out before May 29, 2025, you can package your PWA in Edge Canary; see [Package a store PWA in Edge Canary](#package-a-store-pwa-in-edge-canary), below.
 
 1. Upgrade to Edge Stable 137 version.  (Edge 137 stable will be available after May 29, 2025.)
 
@@ -252,7 +247,7 @@ The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like
 
 1. In **All settings**, scroll down to **Actions – Enable Actions** at the bottom.
 
-1. Make sure your PWA has `protocol_handlers` and `share_target` fields.  PWABuilder.com will run a check, and if these two fields are absent from the web manifest, the **Enable Actions** checkbox will be greyed out.
+1. Make sure your PWA's manifest (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)) has `protocol_handlers` and `share_target` fields.  PWABuilder.com will run a check, and if either field is missing from the app's web app manifest, the **Enable Actions** checkbox will be greyed out.
 
 1. In the **Actions** section, click **Choose File**, and upload the `ActionsManifest.json` file that you prepared for your PWA.
 
@@ -274,20 +269,20 @@ If you want to try out App Actions for PWAs before May 29, 2025, you can package
 
 1. Install [Edge Canary](https://www.microsoft.com/edge/download/insider) and upgrade to the latest version.
 
-1. Follow this guidance to get the **Package ID**, **Publisher ID**, and **Publisher display name** of your PWA: [Publish a PWA to the Microsoft Store](./microsoft-store.md).
+1. Get the **Package ID**, **Publisher ID**, and **Publisher display name** of your PWA; see [Publish a PWA to the Microsoft Store](./microsoft-store.md).
 
 1. Go to [PWABuilder.Windows.Chromium tester](https://pwabuilder-windows-docker.azurewebsites.net/).
 
-1. Follow the configs below to input your PWA configs in the input box.
+1. Enter your PWA configs in the input box, for the following fields:
 
    * `name`: Your PWA's name.
-   * `packageId`: Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
+   * `packageId`: Not needed if you won't publish the Canary-bind app<!-- todo: is "Canary-bind app" meaningful? 3x --> to the store; can be an empty string.
    * `url`: Your PWA's url.
    * `publisher` > `displayName`: The publisher's name.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
    * `publisher` > `commonName`: Your Publisher ID.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
    * `startUrl`: Your PWA's `startUrl`.
 
-   Example of `ActionsManifest.json`:<!-- todo: correct?  need a lead-in, to introduce each code snippet and give context: -->
+   Example of a JSON listing:<!-- todo: which file?  where is this snippet from?  need a lead-in, to introduce each code snippet and give context: --><!-- todo: is this the complete file/ JSON object? -->
 
    ```json
    {
@@ -342,9 +337,9 @@ To test App Actions for your PWA:
 
 1. Make sure Windows is updated to support App Actions; see [Windows 11 Insider Preview Build 26120.4151 (Beta Channel)](https://blogs.windows.com/windows-insider/2025/05/19/announcing-windows-11-insider-preview-build-26120-4151-beta-channel/).
 
-1. Make sure Microsoft Edge is updated to the latest version, and install your PWA successfully; see [Package your PWA](#package-your-pwa), above.
+1. Make sure Microsoft Edge is updated to the latest version, and install your PWA successfully; see [Package a store PWA in Edge Stable](#package-a-store-pwa-in-edge-stable) or [Package a store PWA in Edge Canary](#package-a-store-pwa-in-edge-canary), above.
 
-1. Launch Edge Canary or Edge Stable, whichever channel you installed the PWA on.
+1. Launch Edge Canary or Edge Stable (whichever channel you installed the PWA on).
 
 1. Go to `edge://flags`, search for **App Actions**, and locate the entry **Enable App Actions on Windows for web apps**.  (The flag name is `#edge-app-actions-on-windows-for-web-apps`.)
 
