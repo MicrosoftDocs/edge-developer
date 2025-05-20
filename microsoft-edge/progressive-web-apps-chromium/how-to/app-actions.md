@@ -218,7 +218,7 @@ Example declaration:
 
 
 <!-- ---------- -->
-###### Accept entity info from Windows App Actions framework
+###### Accept entity info on Windows
 
 You can do either of the following:
 
