@@ -46,7 +46,7 @@ Here's how to author and test an app action for the App Actions on Windows frame
 <!-- ------------------------------ -->
 #### What's App Actions on Windows
 
-An App Action on Windows is an individual unit of behavior that a Windows app can implement and register.  The App Action can then be accessed from other apps and experiences, seamlessly integrating into user workflows.
+An App Action on Windows is an individual unit of behavior that a Windows app can implement and register.  The App Action can then be accessed from other apps and experiences, seamlessly integrating into user workflows. To learn more about App Actions on Windows, see [App Actions on Windows](https://learn.microsoft.com/en-us/windows/ai/app-actions/).
 
 An App Action is an atomic unit of functionality.  An app builds and registers actions, and then Windows or other apps can recommend registered actions to the user at contextually relevant times and locations within the user workflow.
 
