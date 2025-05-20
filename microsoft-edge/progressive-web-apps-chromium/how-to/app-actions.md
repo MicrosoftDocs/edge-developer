@@ -206,7 +206,7 @@ Example `share_target` declaration:
 <!-- ---------- -->
 ###### Web Manifest validation for `launch_handler`
 
-[Optional] You can set [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) as `navigate-existing` into your PWA manifest, if you want to keep a single PWA window.
+You can set [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) as `navigate-existing` into your PWA manifest, if you want to keep a single PWA window.
 
 Example declaration:
 
