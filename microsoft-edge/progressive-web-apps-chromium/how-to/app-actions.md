@@ -181,7 +181,7 @@ Example `protocol_handlers` declaration as below. Please see also [Handle protoc
 <!-- ---------- -->
 ###### Web Manifest validation for `share_target`
 
-[Required] The `share_target` field must be present in the manifest:
+The `share_target` field must be present in the manifest:
 
 * The method must be "POST".
 * The `enctype` must be `multipart/form-data`.
