@@ -345,7 +345,7 @@ Your PWA has now been installed as a Store PWA in Edge Canary.
 
 
 <!-- ------------------------------ -->
-#### Testing your PWA in Windows
+#### Test your PWA for App Actions
 
 Before testing your PWA, make sure it has been set up and packaged successfully, as discussed in the above sections.
 
