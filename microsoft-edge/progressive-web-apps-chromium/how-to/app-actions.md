@@ -351,7 +351,6 @@ Before testing your PWA, make sure it has been set up and packaged successfully,
 
 
 <!-- -------------------- -->
-##### Using Windows actions test tool
 
 1. Make sure Windows is updated to support App Actions; see [Windows 11 Insider Preview Build 26120.4151 (Beta Channel)](https://blogs.windows.com/windows-insider/2025/05/19/announcing-windows-11-insider-preview-build-26120-4151-beta-channel/).
 
