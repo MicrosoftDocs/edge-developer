@@ -166,7 +166,7 @@ The app's web app manifest must correctly configure the `share_target` field to 
 <!-- ---------- -->
 ###### Web Manifest validation for `protocol_handlers`
 
-[Required] The `protocol_handlers` field must be present in the manifest, and the protocol field must be the same as the invocation uri in the `ActionsManifest.json` file.
+The `protocol_handlers` field must be present in the manifest, and the protocol field must be the same as the invocation uri in the `ActionsManifest.json` file.
 
 Example `protocol_handlers` declaration:
 
