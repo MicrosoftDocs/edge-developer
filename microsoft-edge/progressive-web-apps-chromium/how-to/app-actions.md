@@ -240,7 +240,7 @@ The meaning of all `formData` is as follows:
 
 * `formData[<share_target.params.url>]`: The invocation uri, through which you can know which action this launch came from and handle related parameters if needed.
 
-* `FormData["windowsActionFiles"]`:<!-- todo: lowercase formData? --> All files' data from action.
+* `formData["windowsActionFiles"]`: All files' data from action.
 
 ```csharp
 // Extract data
