@@ -168,7 +168,7 @@ The app's web app manifest must correctly configure the `share_target` field to 
 
 The `protocol_handlers` field must be present in the manifest, and the protocol field must be the same as the invocation uri in the `ActionsManifest.json` file.
 
-Example `protocol_handlers` declaration:
+Example `protocol_handlers` declaration as below. Please see also [Handle protocols in a PWA](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/handle-protocols). 
 
 ```json
 "protocol_handlers": [{
