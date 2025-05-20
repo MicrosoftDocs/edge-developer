@@ -173,7 +173,7 @@ To see the Writing Assistance APIs in action, and review existing code that uses
 
    The Writing Assistance APIs are only supported on devices that meet certain hardware requirements.  For more information, see [Hardware requirements](#hardware-requirements), above.
 
-1. To run the APIs, optionally change the settings in the playground pages, such as the text to summarize, write, or rewrite or the length and format of the expected output.
+1. Optionally change the settings in the playground pages, such as the text to summarize, write, or rewrite, or the length and format of the expected output.
 
 1. Click the **Summarize**, **Write**, or **Rewrite** button, at the bottom of the page.
 

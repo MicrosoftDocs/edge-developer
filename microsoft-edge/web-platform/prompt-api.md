@@ -166,7 +166,13 @@ To see the Prompt API in action, and review existing code that uses the API:
 
    The Prompt API is only supported on devices that meet certain hardware requirements.  For more information, see [Hardware requirements](#hardware-requirements), above.
 
-1. Either use the provided default prompt and setting values or modify them by changing values such as **User prompt**, **System prompt**, **Response constraint schema**, **N-shot prompt instructions**, **TopK**, or **Temperature**.
+1. Optionally change the prompt settings values, such as:
+      * **User prompt**
+      * **System prompt**
+      * **Response constraint schema**
+      * **More settings** > **N-shot prompt instructions**
+      * **TopK**
+      * **Temperature**
 
 1. Click the **Prompt** button, at the bottom of the page.
 
