@@ -52,7 +52,7 @@ An App Action is an atomic unit of functionality.  An app builds and registers a
 
 
 <!-- ------------------------------ -->
-#### Why should you build an Action?
+#### Why should you build actions for your app
 
 App developers can build actions to increase discoverability and engagement for their features with app-to-app and agentic interactions.
 
