@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 136)
-description: "DOM tree adorners in Elements panel for semantic errors. And more."
+description: "DOM tree in Elements tool highlights semantic errors. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,16 +14,16 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
-## DOM tree adorners in Elements panel highlight semantic errors
+## DOM tree in Elements tool highlights semantic errors
 
-<!-- Subtitle: DOM elements with semantic errors will be highlighted with a squiggly line and tooltip. -->
+<!-- Subtitle: DOM elements with semantic errors are highlighted with a wavy line and a tooltip with a link. -->
 
-You can now easily identify semantic issues in the DOM tree of the Elements panel, such as: 
+You can now easily identify semantic issues in the DOM tree of the **Elements** tool, such as: 
 * An invalid descendant of `<select>`.
 * Mismatched ARIA definitions.
 * Missing ARIA attributes.
 
-Each DOM node that has an issue displays a red wavy line, and has a tooltip with details about the specific issue and a link to the entry in the **Issues** tool. 
+Each DOM node that has a semantic issue displays a red wavy line, and has a tooltip with details about the specific issue and a link to the entry in the **Issues** tool:
 
 ![DOM adorner in Elements](./devtools-136-images/dom-adorner.png)
 
