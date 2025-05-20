@@ -1,30 +1,63 @@
 ---
 title: Enable App Actions on Windows for PWA
-description: How to author and test an app action for Windows App Actions framework, for a Progressive Web App (PWA) that you've created.
+description: How to author and test an app action for the App Actions on Windows framework, for a Progressive Web App (PWA) that you've created.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 05/15/2025
+ms.date: 05/19/2025
 ---
 # Enable App Actions on Windows for PWA
 <!-- h2/h4/h5/h6 -->
 
-<!-- **Contents:** -->
-<!-- todo: copy from WebToc from GH MD Preview -->
+**Detailed contents:**
+
+<!-- todo: update, after update body -->
+* [Introduction](#introduction)
+  * [What's App Actions on Windows](#whats-app-actions-on-windows)
+  * [Why should you build an Action?](#why-should-you-build-an-action)
+  * [Basic concepts: Action and Entity](#basic-concepts-action-and-entity)
+* [Get started](#get-started)
+  * [Define the actions your PWA supports](#define-the-actions-your-pwa-supports)
+    * [Prepare ActionsManifest.json](#prepare-actionsmanifest.json)
+      * [Understanding the fields in ActionsManifest](#understanding-the-fields-in-actionsmanifest)
+      * [JSON Properties](#json-properties)
+      * [Action](#action)
+      * [Input](#input)
+      * [Output](#output)
+      * [InputCombination](#inputcombination)
+      * [Invocation](#invocation)
+      * [Supported Entity types for PWA](#supported-entity-types-for-pwa)
+      * [ActionEntityKinds Definition](#actionentitykinds-definition)
+      * [File](#file)
+      * [Document](#document)
+      * [Photo](#photo)
+      * [Text](#text)
+    * [How does it work with Windows App Actions framework](#how-does-it-work-with-windows-app-actions-framework)
+      * [PWA launch through URI Activation](#pwa-launch-through-uri-activation)
+      * [URI scheme](#uri-scheme)
+      * [Receiving ValueSet data from Windows and mapping it to Share Target](#receiving-valueset-data-from-windows-and-mapping-it-to-share-target)
+    * [Prerequisites for your PWA](#prerequisites-for-your-pwa)
+      * [Web Manifest validation](#web-manifest-validation)
+      * [Accept entity info from Windows App Actions framework](#accept-entity-info-from-windows-app-actions-framework)
+  * [Package your PWA](#package-your-pwa)
+    * [How to package store PWA in Edge Stable](#how-to-package-store-pwa-in-edge-stable)
+    * [How to package store PWA in Edge Canary](#how-to-package-store-pwa-in-edge-canary)
+  * [Testing your PWA in Windows](#testing-your-pwa-in-windows)
+    * [Using Windows actions test tool](#using-windows-actions-test-tool)
 
 
 <!-- ====================================================================== -->
 ## Introduction
 
-Here's how to author and test an app action for Windows App Actions framework, for a Progressive Web App (PWA) that you've created.
+Here's how to author and test an app action for the App Actions on Windows framework, for a Progressive Web App (PWA) that you've created.
 
 
 <!-- ------------------------------ -->
-#### What’s App Actions on Windows
+#### What's App Actions on Windows
 
-<!-- todo: reused Windows’ doc and need link to the public Windows doc -->
+<!-- todo: reused Windows' doc and need link to the public Windows doc -->
 
 An App Action on Windows is an individual unit of behavior that a Windows app can implement and register.  The App Action can then be accessed from other apps and experiences, seamlessly integrating into user workflows.
 
@@ -36,7 +69,7 @@ An App Action is an atomic unit of functionality.  An app builds and registers a
 
 App developers can build actions to increase discoverability and engagement for their features with app-to-app and agentic interactions.
 
-The Windows App Actions is for exposing and executing key pieces of app functionality – it is not for generic user activities like opening context menus or right-clicking.
+The Windows App Actions framework is for exposing and executing key pieces of app functionality – it is not for generic user activities like opening context menus or right-clicking.
 
 See [Recommended scenarios for App Actions](https://review.learn.microsoft.com/en-us/windows/ai/app-actions/?branch=pr-en-us-583#recommended-scenarios-for-app-actions).
 <!-- todo: external link eg
@@ -44,14 +77,6 @@ https://learn.microsoft.com/windows/ai/app-actions/#recommended-scenarios-for-ap
 ie:
 /windows/ai/app-actions/#recommended-scenarios-for-app-actions
 -->
-
-
-<!-- ------------------------------ -->
-#### Basic concepts: Action and Entity
-
-See: 
-* Windows’ doc: [What’s an Action?](https://aka.ms/AppActionsOnWindows) (The link to the specific section needs to be updated.)<!-- todo: scroll to a specific section?? -->
-* [What’s an Entity?] (need link here).<!-- todo: link -->
 
 
 <!-- ====================================================================== -->
@@ -105,142 +130,28 @@ The **Paint** action accepts the image file that user selected and returns the s
 <!-- ---------- -->
 ###### Understanding the fields in ActionsManifest
 
-todo: this part needs further edit to quote Windows doc directly.  The below table refers to the Windows doc with edits that makes it only apply to PWA.  "WCAF Onboarding March 2025.docx"
+For the definition of each JSON property, see [Action definition JSON properties](https://review.learn.microsoft.com/en-us/windows/ai/app-actions/actions-json?branch=pr-en-us-583#action-definition-json-properties)<!-- todo: update link --> in _todo: top-of-page title for actions-json.md_.
+
+Under `Invocation`, only the `uri` type is supported.  The `com` type is not applicable for PWAs.
 
 
 <!-- ---------- -->
-###### JSON Properties<!-- parent -->
+###### Supported Entity types for PWA
 
-The tables below outline the action definition JSON’s properties and their attributes.
+The `ActionEntityKind` enumeration specifies the types of entities that are supported by App Actions on Windows.  In the context of a JSON action definition, the entity kinds are string literals that are case-sensitive.  The supported entities are listed in [ActionEntityKind enumeration](https://review.learn.microsoft.com/en-us/windows/ai/app-actions/actions-json?branch=pr-en-us-583#actionentitykind-enumeration)<!-- todo: link --> in _todo: top-of-page title per actions-json.md_.
 
-| Property | Type | Description | Required |
-|---|---|---|---|
-| `version` | `string` | Schema version. When new functionality is added, the version increments by one. | Yes |
-| `actions` | `Action[]` | Defines all actions provided by this application. | Yes |
-
-
-<!-- ---------- -->
-###### Action
-
-| Property | Type | Description | Required |
-|---|---|---|---|
-| `id` | `string` | Package-unique action name.  Not localizable. | Yes |
-| `description` | `string` | User-facing description for this action. Localizable. | Yes |
-| `icon` | `string` | Localizable icon for the action.  You should provide an ms-resource string for an icon that's deployed with your app. | No |
-| `inputs` | `Input[]` | List of entities that this action accepts as input. | Yes |
-| `inputCombinations` | `InputCombination[]` | Provide descriptions for different instantiations of the actions. | No |
-| `outputs` | `Output[]` | If specified, must be an empty array.<!-- todo: for now --> | No |
-| `invocation` | `Invocation` | Describes how the action is to be executed. | Yes |
-| `contentAgeRating` | `UserAgeConsentGroup` | Indicates the appropriate age rating for the action.  For example, `Adult` means content is suitable for adults and older.  If absent, the default behavior allows access to all ages. | No |
-
-
-<!-- ---------- -->
-###### Input
-
-| Property | Type | Description | Required |
-|---|---|---|---|
-| `name` | `string` | This entity's variable name.  Not localizable. | Yes |
-| `kind` | `ActionEntityKind` | Specifies this entity’s type.  Not localizable. | Yes |
-
-
-<!-- ---------- -->
-###### Output
-
-| Property | Type | Description | Required |
-|---|---|---|---|
-| `name` | `string` | This entity's variable name. Not localizable. | Yes |
-| `kind` | `ActionEntityKind` | Specifies this entity’s type.  Not localizable. | Yes |
-
-
-<!-- ---------- -->
-###### InputCombination
-
-| Property | Type | Description | Required |
-|---|---|---|---|
-| `inputs` | `string[]` | List of inputs for this invocation (may be empty). | Yes |
-| `description` | `string` | Localizable description for the action instantiation. | No |
-| `where` | `string[]` | Conditionals describing when the action is applicable. | No |
-
-
-<!-- ---------- -->
-###### Invocation
-
-| Property | Type | Description | Required |
-|---|---|---|---|
-| `type` | `string` | Type of instantiation. For PWA only uri type is supported. | Yes |
-| `uri` | `string` | Specified absolute URI to launch. Can include entity usage within the string. | Yes |
-| `clsid` | `string` | Class ID for the COM Action Provider. | Yes, for COM actions |
-| `inputData` | `Dictionary<string, JsonValue>` | Additional data to provide for URI actions. | No; only valid for URI actions |
-
-
-<!-- ---------- -->
-###### Supported Entity types for PWA<!-- parent -->
-<!-- reuse Windows’ doc, but removing entities that PWA don’t support yet -->
-
-
-<!-- ---------- -->
-###### ActionEntityKinds Definition
-
-The entities that are supported for ActionEntityKinds are shown below and each entity type has properties that can be utilized in your JSON. This portion of the document will describe which properties are for each entity kind.
-
-| Entity | Description |
-|---|---|
-| Photo | Supports JPG, JPEG, and PNG. |
-| Document | Supports doc, docx, pdf, and txt file types. |
-| File | Supports all file types that are not supported by photo or document entity types. |
-| Text | Supports strings of text. |
-
-
-<!-- ---------- -->
-###### File
-
-This also includes the subclasses:
-* Photo
-* Document
-
-| Property | Type | Description |
-|---|---|---|
-| `FileName` | `string` | The name of the file. |
-| `Path` | `string` | The path of the file. |
-| `Extension` | `string` | The extension of the file name. |
-
-
-<!-- ---------- -->
-###### Document
-
-The `Document` entity has the same properties as `File`.  See [File](#file), above.
-
-
-<!-- ---------- -->
-###### Photo
-
-| Property | Type | Description |
-|---|---|---|
-| `IsTemporaryPath` | `Boolean` | Whether the photo is stored in a temporary path, for example the Photo was created from a bitmap, not a file path. |
-
-
-<!-- ---------- -->
-###### Text
-
-| Property | Type | Description |
-|---|---|---|
-| `Text` | `String` | The full text. |
-| `TextFormat` | `ActionEntityTextFormat` | The format of the text. |
-| `ShortText` | `String` | A shortened version of the text, suitable for UI display. |
-| `Title` | `String` | The title of the text. |
-| `Description` | `String` | A description of the text. |
-| `Length` | `Double` | The length of the text in characters. |
-| `WordCount` | `Double` | The number of words in the text. |
+`StreamingText` and `RemoteFile` are not yet supported for PWA.  For `File`, `Photo`, `Document` and `Text` entity kinds, see [Entity properties](https://learn.microsoft.com/windows/ai/app-actions/actions-json?branch=pr-en-us-583#entity-properties)<!-- todo: link --> in _todo: top-of-page title for actions-json.md_.
 
 
 <!-- -------------------- -->
 ##### How does it work with Windows App Actions framework
+<!-- todo: what is "it"?  add "?" -->
 
 
 <!-- ---------- -->
 ###### PWA launch through URI Activation
 
-A PWA action is launched by Windows through custom protocol URI activation.  A PWA must register for custom protocol handling with the `protocol_handlers` field in the web app manifest.  Windows’ `LaunchUriAsync(Uri, LauncherOptions, ValueSet)` method is used by the Action Framework for URI activation.
+A PWA action is launched by Windows through custom protocol URI activation.  A PWA must register for custom protocol handling with the `protocol_handlers` field in the web app manifest.  Windows' `LaunchUriAsync(Uri, LauncherOptions, ValueSet)` method is used by the Action Framework for URI activation.
 
 `LaunchUriAsync` doesn't yet return a value or error status.<!-- todo -->
 
@@ -266,11 +177,11 @@ For example:
 <!-- ---------- -->
 ###### Receiving ValueSet data from Windows and mapping it to Share Target
 
-The activated protocol URI will be mapped to the “url” field of the share target data.
+The activated protocol URI will be mapped to the "url" field of the share target data.
 
-The input `ValueSet` will be converted to a valid JSON string and mapped to the “text” field of the share target data. That way Edge would determine the protocol handler launch actually represents an Action.
+The input `ValueSet` will be converted to a valid JSON string and mapped to the "text" field of the share target data. That way Edge would determine the protocol handler launch actually represents an Action.
 
-The app’s web app manifest must correctly configure the `share_target` field to enable being launched as a share target for an Action.  See [Web Manifest validation](#web-manifest-validation), below.
+The app's web app manifest must correctly configure the `share_target` field to enable being launched as a share target for an Action.  See [Web Manifest validation](#web-manifest-validation), below.
 
 
 <!-- -------------------- -->
@@ -278,10 +189,7 @@ The app’s web app manifest must correctly configure the `share_target` field t
 
 
 <!-- ---------- -->
-###### Web Manifest validation
-
-
-**protocol_handlers:**
+###### Web Manifest validation for `protocol_handlers`
 
 [Required] The `protocol_handlers` field must be present in the manifest, and the protocol field must be the same as the invocation uri in the `ActionsManifest.json` file.
 
@@ -297,13 +205,14 @@ Example `protocol_handlers` declaration:
 ```
 
 
-**share_target:**
+<!-- ---------- -->
+###### Web Manifest validation for `share_target`
 
 [Required] The `share_target` field must be present in the manifest:
 
-* The method must be “POST”.
+* The method must be "POST".
 * The `enctype` must be `multipart/form-data`.
-* `title`, `text` and `url` in `params` are required.  `files` is optional if you don’t want your PWA to support the normal _share target_ feature.
+* `title`, `text` and `url` in `params` are required.  `files` is optional if you don't want your PWA to support the normal _share target_ feature.
 
 Example `share_target` declaration:
 
@@ -321,7 +230,8 @@ Example `share_target` declaration:
 ```
 
 
-**launch_handler:**
+<!-- ---------- -->
+###### Web Manifest validation for `launch_handler`
 
 [Optional] You can set [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) as `navigate-existing` into your PWA manifest, if you want to keep a single PWA window.
 
@@ -350,7 +260,7 @@ Here is the example service worker handler: [Support AI Action launch for Wami W
 
 The meaning of all `formData` is as follows:
 
-* `formData[<share_target.params.text>]`: All entity info with JSON format (the users’ file path will be sanitized).
+* `formData[<share_target.params.text>]`: All entity info with JSON format (the users' file path will be sanitized).
 
 * `formData[<share_target.params.url>]`: The invocation uri, through which you can know which action this launch came from and handle related parameters if needed.
 
@@ -372,7 +282,7 @@ const files = formData.getAll('windowsActionFiles');
 
 At the current stage, your PWA needs to be packaged as a Microsoft Store PWA, to be called by the Windows App Actions framework.  You would need an Edge browser with version number greater than 137.
 
-The Stable release of Edge 137 will be available on May 29, 2025.  If you’d like to try it out before May 29, 2025, you can package your PWA in Edge Canary; see [How to package store PWA in Edge Canary](#how-to-package-store-pwa-in-edge-canary), below.
+The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like to try it out before May 29, 2025, you can package your PWA in Edge Canary; see [How to package store PWA in Edge Canary](#how-to-package-store-pwa-in-edge-canary), below.
 
 
 <!-- -------------------- -->
@@ -386,9 +296,7 @@ The Stable release of Edge 137 will be available on May 29, 2025.  If you’d li
 
 1. Make sure your PWA has `protocol_handlers` and `share_target` fields.  PWABuilder.com will run a check, and if these two fields are absent from the web manifest, the **Enable Actions** checkbox will be greyed out.
 
-1. In the **Actions** section, click **Choose File**, and upload the `ActionsManifest.json` file that you prepared for your PWA:
-
-   ![The Windows Package Options dialog](./app-actions-images/windows-package-options.png)
+1. In the **Actions** section, click **Choose File**, and upload the `ActionsManifest.json` file that you prepared for your PWA.
 
 1. Click the **Download** button.
 
@@ -400,7 +308,7 @@ The Stable release of Edge 137 will be available on May 29, 2025.  If you’d li
 <!-- -------------------- -->
 ##### How to package store PWA in Edge Canary
 
-Edge Canary gives a preview of the functionalities that’s not available in stable yet.
+Edge Canary gives a preview of the functionalities that's not available in stable yet.
 
 1. Install [Edge Canary](https://www.microsoft.com/edge/download/insider) and upgrade to the latest version.
 
@@ -410,12 +318,12 @@ Edge Canary gives a preview of the functionalities that’s not available in sta
 
 1. Follow the configs below to input your PWA configs in the input box.
 
-    * `name`: Your PWA’s name.
-    * `packageId`: Not needed if you won’t publish the Canary-bind app to the store; can be an empty string.
-    * `url`: Your PWA’s url.
-    * `publisher` -> `displayName`: The publisher’s name.  Not needed if you won’t publish the Canary-bind app to the store; can be an empty string.
-    * `publisher` -> `commonName`: Your Publisher ID.  Not needed if you won’t publish the Canary-bind app to the store; can be an empty string.
-    * `startUrl`: Your PWA’s `startUrl`.
+    * `name`: Your PWA's name.
+    * `packageId`: Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
+    * `url`: Your PWA's url.
+    * `publisher` -> `displayName`: The publisher's name.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
+    * `publisher` -> `commonName`: Your Publisher ID.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
+    * `startUrl`: Your PWA's `startUrl`.
 
    Example:
 
@@ -442,17 +350,23 @@ Edge Canary gives a preview of the functionalities that’s not available in sta
     }
     ```
 
-   Replace the above attributes with your app’s actual attributes.
+   Replace the above attributes with your app's actual attributes.
 
 1. Upload your `ActionsManifest.json` file, and then click the **Download** button.
 
-1. Your download is a `.zip` archive that contains files such as `.msix` and `.msixbundle` files.  Unzip it and run `install.ps1` to install your PWA directly:
+1. Your download is a `.zip` archive that contains files such as `.msix` and `.msixbundle` files.  Unzip it and run `install.ps1` to install your PWA directly.
 
-   ![The install.ps1 file in the Downloads folder](./app-actions-images/install-ps1-file-in-downloads.png)
+1. Click the icon for your PWA.
 
-1. Launch your PWA by clicking on the PWA icon.
+   Your PWA starts.
 
-1. Launch Edge Canary and go to `edge://apps`, you will find your PWA.  Click the **Details** button, you can find that your PWA is installed from Microsoft Store.
+1. Launch Edge Canary, and then go to `edge://apps`.
+
+   Your PWA is listed.
+
+1. Click the **Details** button.
+
+   Your PWA is indicated as installed from Microsoft Store.
 
 Your PWA was successfully installed as a Store PWA in Edge Canary.
 
@@ -466,39 +380,24 @@ Before testing, make sure that you have set up and packaged your PWA successfull
 <!-- -------------------- -->
 ##### Using Windows actions test tool
 
-1. Make sure Windows is updated to support App Actions:
-
-   * Update Windows version to _nnn_ (todo) (todo: link to Windows documentation for Windows system set up).
+1. Make sure Windows is updated to support App Actions: Update Windows version to the retail 24H2 build.<!-- todo: link? -->
 
 1. Make sure Microsoft Edge is updated to the latest version, and install your PWA successfully; see [Package your PWA](#package-your-pwa), above.
 
-   1. Launch Edge Canary or Edge Stable, this depends on which channel you installed the PWA on.  Go to `edge://flags` and enable `#edge-webapp-windows-app-actions-framework`.
+1. Launch Edge Canary or Edge Stable, whichever channel you installed the PWA on.
 
-   1. Before being called by the Action runtime, you need to launch your PWA at least once, to initialize your PWA for action.
+1. Go to `edge://flags`, and then enable `#edge-app-actions-on-windows-for-web-apps`.<!-- todo: clarify UI step -->
 
-1. Download and install the Windows action testing tool:
+1. Launch your PWA.
 
-   1. Go to [https://github.com/zhangkun902/WCAF-Test-Package](https://github.com/zhangkun902/WCAF-Test-Package) and download the **WindowsActionsTestApp** package.
+   Your PWA must be launched at least one time, to initialize your PWA for action, before being called by the App Actions runtime.
 
-   1. Install test app by running `add-appxpackage –path "<package path>" -allowunsigned` at a PowerShell command prompt.
+1. Use the [App Actions Testing Playground app](https://review.learn.microsoft.com/windows/ai/app-actions/actions-test-tool?branch=pr-en-us-583)<!-- todo: link --> to test the actions for your PWA.
 
-   Then you will find the test tool:
+1. Add an entity that action needs, Run action.<!-- todo: clarify -->
 
-   ![Finding and starting the Windows actions test tool](./app-actions-images/windows-actions-test-tool-start.png)
-
-1. Initiate an action from Windows action testing tool:
-
-   1. Launch the Windows Actions Test Tool.
-
-      You will see the actions from your installed PWA.
-
-   1. Add an entity that action needs, Run action.<!-- todo: clarify -->
-
-      The PWA will be launched and execute the action.
-
-   ![The Action catalog, with the "Add an entity" button](./app-actions-images/action-catalog.png)<!-- todo: relate png to steps -->
+   The PWA will be launched and execute the action.
 
 
 <!-- ====================================================================== -->
 <!-- ## See also -->
-
