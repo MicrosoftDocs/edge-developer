@@ -156,7 +156,7 @@ The activated protocol URI will be mapped to the "url" field of the share target
 
 The input `ValueSet` will be converted to a valid JSON string and mapped to the "text" field of the share target data.  That way Edge would determine the protocol handler launch actually represents an Action.
 
-The app's web app manifest must correctly configure the `share_target` field to enable being launched as a share target for an Action.  See [Web Manifest validation for `share_target`](#web-manifest-validation-for-share_target), below.
+The app's web app manifest must correctly configure the `share_target` field to enable being launched as a share target for an Action.  See [Prerequisites for your PWA](#prerequisites-for-your-pwa), below.
 
 
 <!-- -------------------- -->
