@@ -341,13 +341,13 @@ Edge Canary gives a preview of the functionalities that's not available in stabl
 
    Your PWA is indicated as installed from Microsoft Store.
 
-Your PWA was successfully installed as a Store PWA in Edge Canary.
+Your PWA has now been installed as a Store PWA in Edge Canary.
 
 
 <!-- ------------------------------ -->
 #### Testing your PWA in Windows
 
-Before testing, make sure that you have set up and packaged your PWA successfully as discussed in the above sections.
+Before testing your PWA, make sure it has been set up and packaged successfully, as discussed in the above sections.
 
 
 <!-- -------------------- -->
@@ -371,7 +371,7 @@ Before testing, make sure that you have set up and packaged your PWA successfull
 
 1. Add an entity that that action needs.  For example, if the action processes images, add an image.  Then run the action.
 
-   The PWA will be launched and execute the action.
+   The PWA is launched, and executes the action.
 
 
 <!-- ====================================================================== -->
