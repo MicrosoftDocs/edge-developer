@@ -46,8 +46,6 @@ Here's how to author and test an app action for the App Actions on Windows frame
 <!-- ------------------------------ -->
 #### What's App Actions on Windows
 
-<!-- todo: reused Windows' doc and need link to the public Windows doc -->
-
 An App Action on Windows is an individual unit of behavior that a Windows app can implement and register.  The App Action can then be accessed from other apps and experiences, seamlessly integrating into user workflows.
 
 An App Action is an atomic unit of functionality.  An app builds and registers actions, and then Windows or other apps can recommend registered actions to the user at contextually relevant times and locations within the user workflow.
@@ -131,7 +129,7 @@ The `ActionEntityKind` enumeration specifies the types of entities that are supp
 
 A PWA action is launched by Windows through custom protocol URI activation.  A PWA must register for custom protocol handling with the `protocol_handlers` field in the web app manifest.  Windows' `LaunchUriAsync(Uri, LauncherOptions, ValueSet)` method is used by the Action Framework for URI activation.
 
-`LaunchUriAsync` doesn't yet return a value or error status.<!-- todo -->
+`LaunchUriAsync` doesn't return a value or error status.
 
 
 <!-- ---------- -->
@@ -362,7 +360,9 @@ Before testing, make sure that you have set up and packaged your PWA successfull
 
 1. Launch Edge Canary or Edge Stable, whichever channel you installed the PWA on.
 
-1. Go to `edge://flags`, and then enable `#edge-app-actions-on-windows-for-web-apps`.<!-- todo: clarify UI step -->
+1. Go to `edge://flags`, search for **app actions**, and locate the entry **Enable App Actions on Windows for web apps**.  (The flag name is `#edge-app-actions-on-windows-for-web-apps`.)
+
+1. Change the status to **Enabled**, and then click the **Restart** button in the lower right.
 
 1. Launch your PWA.
 
