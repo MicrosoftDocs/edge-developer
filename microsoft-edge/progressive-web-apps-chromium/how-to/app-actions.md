@@ -18,7 +18,7 @@ ms.date: 05/19/2025
    * [Why should you build an Action?](#why-should-you-build-an-action)
 * [Get started](#get-started)
    * [Define the actions your PWA supports](#define-the-actions-your-pwa-supports)
-      * [Prepare ActionsManifest.json](#prepare-actionsmanifest.json)
+      * [Prepare ActionsManifest.json](#prepare-actionsmanifestjson)
          * [Understanding the fields in ActionsManifest](#understanding-the-fields-in-actionsmanifest)
          * [Supported Entity types for PWA](#supported-entity-types-for-pwa)
       * [How does Windows App Actions framework call App Actions in a PWA?](#how-does-windows-app-actions-framework-call-app-actions-in-a-pwa)
@@ -70,9 +70,9 @@ See [Recommended scenarios for App Actions](/windows/ai/app-actions#recommended-
 <!-- ------------------------------ -->
 #### Define the actions your PWA supports
 
-This guide illustrates how to author an action using one of the sample PWAs, [Wami](https://github.com/MicrosoftEdge/Demos/tree/main/wami). Wami supports image manipulation tasks, such as resizing or applying post-processing styles. The following example demonstrates the creation of the Paint action, which generates an oil-painting-style version of the image.
+This guide illustrates how to author an action using one of the sample PWAs, [wami, the Web App to Manipulate Images](https://github.com/MicrosoftEdge/Demos/tree/main/wami).  The Wami demo supports image manipulation tasks, such as resizing or applying post-processing styles.  The following example demonstrates creating a **Paint** action, which generates an oil-painting-style version of the image.
 
-The **Paint** action accepts the image file that user selected and returns the stylized output.  The next step is to define the action in a descriptive file that's named `ActionsManifest.json`.
+The **Paint** action accepts the image file that user selected and returns the stylized output.  The **Paint** action is defined in a descriptive file named `ActionsManifest.json`, per the next section.
 
 
 <!-- -------------------- -->
@@ -159,7 +159,7 @@ The activated protocol URI will be mapped to the "url" field of the share target
 
 The input `ValueSet` will be converted to a valid JSON string and mapped to the "text" field of the share target data. That way Edge would determine the protocol handler launch actually represents an Action.
 
-The app's web app manifest must correctly configure the `share_target` field to enable being launched as a share target for an Action.  See [Web Manifest validation](#web-manifest-validation-for-protocol_handlers), below.
+The app's web app manifest must correctly configure the `share_target` field to enable being launched as a share target for an Action.  See [Web Manifest validation for `share_target`](#web-manifest-validation-for-share_target), below.
 
 
 <!-- -------------------- -->
