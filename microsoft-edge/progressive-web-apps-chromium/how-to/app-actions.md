@@ -294,8 +294,8 @@ Edge Canary gives a preview of the functionalities that's not available in stabl
    * `name`: Your PWA's name.
    * `packageId`: Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
    * `url`: Your PWA's url.
-   * `publisher` -> `displayName`: The publisher's name.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
-   * `publisher` -> `commonName`: Your Publisher ID.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
+   * `publisher` > `displayName`: The publisher's name.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
+   * `publisher` > `commonName`: Your Publisher ID.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
    * `startUrl`: Your PWA's `startUrl`.
 
    Example:
