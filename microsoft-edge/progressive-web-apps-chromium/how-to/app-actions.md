@@ -121,7 +121,6 @@ The `ActionEntityKind` enumeration specifies the types of entities that are supp
 
 <!-- -------------------- -->
 ##### How does Windows App Actions framework call App Actions in a PWA?
-<!-- updated -->
 
 
 <!-- ---------- -->
@@ -146,7 +145,7 @@ For PWAs with many actions, use syntax:
 For example:
 
 ```json
-"uri": "web+wami://paint".
+"uri": "web+wami://paint"
 ```
 
 
@@ -155,7 +154,7 @@ For example:
 
 The activated protocol URI will be mapped to the "url" field of the share target data.
 
-The input `ValueSet` will be converted to a valid JSON string and mapped to the "text" field of the share target data. That way Edge would determine the protocol handler launch actually represents an Action.
+The input `ValueSet` will be converted to a valid JSON string and mapped to the "text" field of the share target data.  That way Edge would determine the protocol handler launch actually represents an Action.
 
 The app's web app manifest must correctly configure the `share_target` field to enable being launched as a share target for an Action.  See [Web Manifest validation for `share_target`](#web-manifest-validation-for-share_target), below.
 
@@ -230,7 +229,7 @@ For action scenario, suggest using service worker to handle POST share data:
 * [share_target - Receiving share data using POST](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_share_data_using_post)
 * [share_target - Receiving shared files](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_shared_files)
 
-Here is the example service worker handler: [Support AI Action launch for Wami Web App](https://github.com/MicrosoftEdge/Demos/blob/main/wami/sw.js).<!-- cleaner link -->
+Here is the example service worker handler: [Support AI Action launch for Wami Web App](https://github.com/MicrosoftEdge/Demos/blob/main/wami/sw.js).
 
 The meaning of all `formData` is as follows:
 
@@ -241,7 +240,7 @@ The meaning of all `formData` is as follows:
 * `formData["windowsActionFiles"]`: All files' data from action.
 
 ```csharp
-// Extract data
+// Extract data.
 const data = {
    title: formData.get('title') || '',
    text: formData.get('text') || '',
@@ -354,7 +353,7 @@ Before testing, make sure that you have set up and packaged your PWA successfull
 <!-- -------------------- -->
 ##### Using Windows actions test tool
 
-1. Make sure Windows is updated to support App Actions. Please see [Windows 11 Insider Preview Build 26120.4151 (Beta Channel)](https://blogs.windows.com/windows-insider/2025/05/19/announcing-windows-11-insider-preview-build-26120-4151-beta-channel/) for more information. <!-- link updated -->
+1. Make sure Windows is updated to support App Actions; see [Windows 11 Insider Preview Build 26120.4151 (Beta Channel)](https://blogs.windows.com/windows-insider/2025/05/19/announcing-windows-11-insider-preview-build-26120-4151-beta-channel/).
 
 1. Make sure Microsoft Edge is updated to the latest version, and install your PWA successfully; see [Package your PWA](#package-your-pwa), above.
 
