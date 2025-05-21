@@ -1276,6 +1276,9 @@
             - name: Build a PWA for the sidebar in Microsoft Edge
               href: ./progressive-web-apps-chromium/how-to/sidebar.md
 
+            - name: Enable App Actions on Windows for a PWA
+              href: ./progressive-web-apps-chromium/how-to/app-actions.md
+
         - name: Distribute a PWA with the Microsoft Store
           items:
             - name: Publish a PWA to the Microsoft Store
