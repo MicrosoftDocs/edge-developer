@@ -205,9 +205,9 @@ const files = formData.getAll('windowsActionFiles');
 
 Explanation of the `formData` keys:
 
-* **text:** A JSON string that lists all input entities.  The input parameter value must be identical to the value you set in your PWA's web manifest `share_target.params.text`.  The file paths that are contained in **text** are safe to consume.  To protect users' privacy, Edge sanitizes any user-supplied path information before it reaches your service worker, leaving only the file name.
+* **text:** A JSON string that lists all input entities.  The input parameter value must be identical to the value you set in your PWA's web app manifest `share_target.params.text`.  The file paths that are contained in **text** are safe to consume.  To protect users' privacy, Edge sanitizes any user-supplied path information before it reaches your service worker, leaving only the file name.
 
-* **url:** The protocol URI (for example, `web+wami://paint` in the sample) that identifies which App Action triggered the launch.  The input parameter value must be identical to the value that you set in the PWA's web manifest `share_target.params.url`.
+* **url:** The protocol URI (for example, `web+wami://paint` in the sample) that identifies which App Action triggered the launch.  The input parameter value must be identical to the value that you set in the PWA's web app manifest `share_target.params.url`.
 
 * **files:** File objects attached to the App Action invocation. 
 
