@@ -10,34 +10,30 @@ ms.date: 05/19/2025
 ---
 # Enable App Actions on Windows for a PWA
 
-You can author and test an App Action for the App Actions on Windows framework, for a Progressive Web App (PWA) that you've created.
+You can author and test an App Action for the App Actions on Windows framework, for a Progressive Web App (PWA) that you've created.  An App Action on Windows is an individual unit of behavior that a Windows app can implement and register.  The App Action can then be accessed from other apps and experiences, seamlessly integrating into user workflows.
 
-An App Action on Windows is an individual unit of behavior that a Windows app can implement and register.  The App Action can then be accessed from other apps and experiences, seamlessly integrating into user workflows.
+An app builds and registers each App Action, and then Windows apps or non-Windows apps can recommend registered App Actions to the user at contextually relevant times and locations within the user's workflow.
 
-App Actions are used for Windows apps and non-Windows apps.
+You can build Windows App Actions to increase discoverability and engagement of your app's features by using app-to-app and agentic interactions.  The Windows App Actions framework makes it possible to integrate your app with other apps or with AI agents.
 
 See also:
 * [App Actions on Windows Overview](/windows/ai/app-actions/)
 
 
-<!-- ====================================================================== -->
-## About App Actions
-
-An App Action is an atomic unit of functionality.  An app builds and register each App Action, and then Windows or other apps can recommend registered App Actions to the user at contextually relevant times and locations within the user's workflow.
-
-You can build Windows App Actions to increase discoverability and engagement of your app's features by using app-to-app and agentic interactions.  The Windows App Actions framework makes it possible to integrate your app with other apps or with AI agents.
+<!-- ------------------------------ -->
+#### Recommended scenarios
 
 The Windows App Actions framework is for exposing and executing key pieces of app functionality, not generic user activities such as opening a right-click menu (context menu).  See [Recommended scenarios for App Actions](/windows/ai/app-actions#recommended-scenarios-for-app-actions) in _App Actions on Windows Overview_.
 
 
 <!-- ====================================================================== -->
-## Define the App Actions that your PWA supports, in the action definition manifest
+## Define App Actions in the action definition manifest
 
-You define App Actions in an action definition manifest file, such as `ActionsManifest.json`.  This is an action definition JSON file for App Actions on Windows.
+You define App Actions that your PWA supports in an action definition manifest file (such as `ActionsManifest.json`).  This is an action definition JSON file for App Actions on Windows.
 
-This guide illustrates how to author an App Action that uses a sample PWA, [wami, the Web App to Manipulate Images](https://github.com/MicrosoftEdge/Demos/tree/main/wami).  The wami demo supports image manipulation tasks, such as resizing or applying post-processing styles.
+The present article shows how to author an App Action that uses the sample PWA, [wami, the Web App to Manipulate Images](https://github.com/MicrosoftEdge/Demos/tree/main/wami).  The wami demo supports image manipulation tasks, such as resizing or applying post-processing styles.
 
-The following example `ActionsManifest.json` file defines a **Paint** App Action for the Paint feature of the wami sample app.  The Paint feature, referenced by the **Paint** App Action, generates an oil-painting-style version of the image.
+The following example action definition manifest file (named `ActionsManifest.json`), defines a **Paint** App Action for the Paint feature of the wami sample app.  The Paint feature, referenced by the **Paint** App Action, generates an oil-painting-style version of the image.
 
 ```json
 {
@@ -71,7 +67,7 @@ The **Paint** App Action returns the stylized output.
 <!-- ====================================================================== -->
 ## Properties supported in an action definition manifest
 
-The action definition JSON file for App Actions on Windows, such as `ActionsManifest.json`, is a descriptive file which is used by Windows App Actions Runtime for an app, to declare the App Actions that the app supports.
+The action definition manifest file (such as `ActionsManifest.json`) is a descriptive file which is used by Windows App Actions Runtime for an app, to declare the App Actions that the app supports.
 
 For the definition of each supported JSON property, see [Action definition JSON properties](/windows/ai/app-actions/actions-json#action-definition-json-properties) in _Action definition JSON schema for App Actions on Windows_.
 
@@ -81,7 +77,7 @@ Under `Invocation`, only the `uri` type is supported.  The `com` type is not app
 <!-- ====================================================================== -->
 ## Supported Entity types for App Actions for PWAs
 
-In the action definition manifest file, such as `ActionsManifest.json`, the `ActionEntityKind` enumeration specifies the types of entities that are supported by App Actions on Windows.
+In the action definition manifest file (such as `ActionsManifest.json`), the `ActionEntityKind` enumeration specifies the types of entities that are supported by App Actions on Windows.
 
 In the context of a JSON App Action definition, the entity kinds are string literals that are case-sensitive.  The supported entities are listed in [ActionEntityKind enumeration](/windows/ai/app-actions/actions-json#actionentitykind-enumeration) in _Action definition JSON schema for App Actions on Windows_.
 
@@ -129,7 +125,7 @@ The app's web app manifest (such as [Demos/wami/manifest.json](https://github.co
 <!-- ====================================================================== -->
 ## `protocol_handlers` in the web app manifest
 
-For a PWA to use App Actions, the `protocol_handlers` field must be present in the PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).  The `protocol_handlers` > `protocol` field must match the first part of the `invocation` > `uri` in the `ActionsManifest.json` file.
+For a PWA to use App Actions, the `protocol_handlers` field must be present in the PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).  The `protocol_handlers` > `protocol` field must match the first part of the `invocation` > `uri` in the action definition manifest file (such as `ActionsManifest.json`).
 
 Example `protocol_handlers` declaration, from [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
 
@@ -149,7 +145,7 @@ The matching `invocation` > `uri` field from `ActionsManifest.json`:
 },
 ```
 
-The above snippet is shown in context in [Define the App Actions that your PWA supports, in ActionsManifest.json](#define-the-app-actions-that-your-pwa-supports-in-actionsmanifestjson), above.
+The above snippet is shown in context in [Define App Actions in the action definition manifest](#define-app-actions-your-pwa-supports-in-the-action-definition-manifest), above.
 
 See also:
 * [Handle protocols in a PWA](./handle-protocols.md)
@@ -201,9 +197,9 @@ The above code is not in [Demos/wami/manifest.json](https://github.com/Microsoft
 
 
 <!-- ====================================================================== -->
-## Accept entity info on Windows
+## Accept entity info on Windows<!-- todo: heading + sentence 1: clarify, what is this section about?  what is "entity info"?  what is the task/accomplishment covered in this section? -->
 
-You can use or combine the following approaches:
+<!-- todo: To accomplish ABC, -->You can use or combine the following approaches:
 
 * Handle POST share data by using server-side code.
    * For online users.
@@ -260,7 +256,7 @@ The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like
 
 1. Make sure your PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)) has `protocol_handlers` and `share_target` fields.  PWABuilder.com will run a check, and if either field is missing from the app's web app manifest, the **Enable Actions** checkbox will be greyed out.
 
-1. In the **Actions** section, click **Choose File**, and upload the action definition JSON file (such as `ActionsManifest.json`) that you prepared for your PWA.
+1. In the **Actions** section, click **Choose File**, and upload the action definition manifest file (such as `ActionsManifest.json`) that you prepared for your PWA.
 
 1. Click the **Download** button.
 
@@ -320,7 +316,7 @@ If you want to try out App Actions for PWAs before May 29, 2025, you can package
 
    Replace the above attributes with your app's actual attributes.
 
-1. Upload the action definition JSON file (such as `ActionsManifest.json`), and then click the **Download** button.
+1. Upload the action definition manifest file (such as `ActionsManifest.json`), and then click the **Download** button.
 
 1. Your download is a `.zip` archive that contains files such as `.msix` and `.msixbundle` files.  Unzip it and run `install.ps1` to install your PWA directly.
 
@@ -371,7 +367,6 @@ To test App Actions for your PWA:
 ## See also
 <!-- all links in file -->
 
-Local articles:
 * [Receiving shared content](./share.md#receiving-shared-content)
 * [Package your PWA for the Store](./microsoft-store.md#package-your-pwa-for-the-store) in _Publish a PWA to the Microsoft Store_.
 * [Publish a PWA to the Microsoft Store](./microsoft-store.md) 
@@ -399,4 +394,4 @@ MDN:
 
 Demos repo:
 * [wami, the Web App to Manipulate Images](https://github.com/MicrosoftEdge/Demos/tree/main/wami)
-   * [Support AI Action launch for Wami Web App](https://github.com/MicrosoftEdge/Demos/blob/main/wami/sw.js) - `/wami/sw.js`.
+   * [Demos/wami/sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/wami/sw.js) - supports AI Action launch.
