@@ -215,7 +215,7 @@ Explanation of the `formData` keys:
 <!-- ------------------------------ -->
 #### `protocol_handlers` in the web app manifest
 
-For a PWA to use App Actions, the `protocol_handlers` field must be present in the PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).  The `protocol_handlers` > `protocol` field must match the first part of the `invocation` > `uri` in the action definition manifest file (such as `ActionsManifest.json`).
+For a PWA to use App Actions, the `protocol_handlers` field must be present in the PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).  The `protocol_handlers.protocol` field must match the first part of the `invocation.uri` in the action definition manifest file (such as `ActionsManifest.json`).
 
 Example `protocol_handlers` declaration, from [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
 
@@ -226,7 +226,7 @@ Example `protocol_handlers` declaration, from [Demos/wami/manifest.json](https:/
 }]
 ```
 
-The matching `invocation` > `uri` field from `ActionsManifest.json`:
+The matching `invocation.uri` field from `ActionsManifest.json`:
 
 ```json
 "invocation": {
@@ -301,8 +301,8 @@ If you want to try out App Actions for PWAs before May 29, 2025, you can package
    * `name`: Your PWA's name.
    * `packageId`: Not needed if you won't publish the Edge Canary version of your app to the store; can be an empty string.
    * `url`: Your PWA's url.
-   * `publisher` > `displayName`: The publisher's name.  Not needed if you won't publish the Edge Canary version of your app to the store; can be an empty string.
-   * `publisher` > `commonName`: Your Publisher ID.  Not needed if you won't publish the Edge Canary version of your app to the store; can be an empty string.
+   * `publisher.displayName`: The publisher's name.  Not needed if you won't publish the Edge Canary version of your app to the store; can be an empty string.
+   * `publisher.commonName`: Your Publisher ID.  Not needed if you won't publish the Edge Canary version of your app to the store; can be an empty string.
    * `startUrl`: Your PWA's `startUrl`.
 
    Example JSON listing that you can copy and paste into the text field of the [PWABuilder.Windows.Chromium tester](https://pwabuilder-windows-docker.azurewebsites.net/):
