@@ -12,9 +12,9 @@ ms.date: 05/19/2025
 
 You can author and test an App Action for the App Actions on Windows framework, for a Progressive Web App (PWA) that you've created.  An App Action on Windows is an individual unit of behavior that a Windows app can implement and register.  The App Action can then be accessed from other apps and experiences, seamlessly integrating into user workflows.
 
-An app builds and registers each App Action, and then Windows apps or non-Windows apps can recommend registered App Actions to the user at contextually relevant times and locations within the user's workflow.
+An app builds and registers each App Action, and then Windows apps and experiences can recommend registered App Actions to the user at contextually relevant times and locations within the user's workflow.
 
-You can build Windows App Actions to increase discoverability and engagement of your app's features by using app-to-app and agentic interactions.  The Windows App Actions framework makes it possible to integrate your app with other apps or with AI agents.
+You can build Windows App Actions to increase discoverability and engagement of your app's features.
 
 See also:
 * [App Actions on Windows Overview](/windows/ai/app-actions/)
@@ -30,9 +30,9 @@ See also:
    * [Receive ValueSet data and map it to a share target](#receive-valueset-data-and-map-it-to-a-share-target)
 * [Prerequisites for your PWA to support app actions](#prerequisites-for-your-pwa-to-support-app-actions)
    * [share_target in the web app manifest](#share_target-in-the-web-app-manifest)
+     * [Handle the entity of an app action](#handle-the-entity-of-an-app-action)
    * [protocol_handlers in the web app manifest](#protocol_handlers-in-the-web-app-manifest)
    * [launch_handler in the web app manifest](#launch_handler-in-the-web-app-manifest)
-   * [Handle the entity of an app action](#handle-the-entity-of-an-app-action)
 * [Package a store PWA in Edge Stable](#package-a-store-pwa-in-edge-stable)
 * [Package a store PWA in Edge Canary](#package-a-store-pwa-in-edge-canary)
 * [Test App Actions for a PWA](#test-app-actions-for-a-pwa)
@@ -83,7 +83,7 @@ As the input, the **Paint** App Action accepts the image file that user selected
 The **Paint** App Action returns the stylized output.
 
 
-<!-- ====================================================================== -->
+<!-- ------------------------------ -->
 #### Properties supported in an action definition manifest
 
 The action definition manifest file (such as `ActionsManifest.json`) is a descriptive file which is used by Windows App Actions Runtime for an app, to declare the App Actions that the app supports.
@@ -93,7 +93,7 @@ For the definition of each supported JSON property, see [Action definition JSON 
 Under `Invocation`, only the `uri` type is supported.  The `com` type is not applicable for PWAs.
 
 
-<!-- ====================================================================== -->
+<!-- ------------------------------ -->
 #### Supported Entity types for App Actions for PWAs
 
 In the action definition manifest file (such as `ActionsManifest.json`), the `ActionEntityKind` enumeration specifies the types of entities that are supported by App Actions on Windows.
@@ -111,7 +111,7 @@ When a PWA's App Action is called, the PWA App Action is launched by Windows thr
 Windows' `LaunchUriAsync(Uri, LauncherOptions, ValueSet)` method is used by the Action Framework for URI activation.  `LaunchUriAsync` doesn't return a value or error status.
 
 
-<!-- ====================================================================== -->
+<!-- ------------------------------ -->
 #### `uri` in the action definition manifest
 
 Use a custom protocol URI, not an HTTPS URI.
@@ -131,7 +131,7 @@ For example:
 The above line is shown in context in [Define App Actions in the action definition manifest](#define-app-actions-in-the-action-definition-manifest), above.
 
 
-<!-- ====================================================================== -->
+<!-- ------------------------------ -->
 #### Receive `ValueSet` data and map it to a share target
 
 The activated protocol URI will be mapped to the `url` field of the share target data.
@@ -140,8 +140,18 @@ The input `ValueSet` will be converted to a valid JSON string and mapped to the 
 
 The app's web app manifest (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)) must correctly configure the `share_target` field, to enable being launched as a share target for an App Action.  See [`share_target` in the web app manifest](#share_target-in-the-web-app-manifest), below.
 
+
 <!-- ====================================================================== -->
 ## Prerequisites for your PWA to support app actions
+
+To correctly integrate your PWA with the App Actions on Windows framework, the following web app manifest members are required:
+
+* `share_target`
+* `protocol_handlers`
+* `launch_handler`
+
+
+<!-- ------------------------------ -->
 #### `share_target` in the web app manifest
 
 For a PWA to use App Actions, the `share_target` field must be present in the PWA's web app manifest file, such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json).
@@ -169,7 +179,40 @@ Example `share_target` declaration, from [Demos/wami/manifest.json](https://gith
 See also:
 * [Receiving shared content](./share.md#receiving-shared-content)
 
-<!-- ====================================================================== -->
+
+<!-- ---------- -->
+###### Handle the entity of an app action
+
+The entity of an App Action is passed to the PWA through POST share data.  To handle POST share data, you can use or combine the following approaches:
+
+* Handle POST share data by using server-side code. 
+
+* In a service worker, use a fetch event listener to intercept the HTTP POST request.  This provides a better experience for offline users.  See:
+
+  * [share_target - Receiving share data using POST](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_share_data_using_post)
+  * [share_target - Receiving shared files](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_shared_files)
+
+The following code is from the wami demo's example service worker handler in [Demos/wami/sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/wami/sw.js), to support App Action launch for the app:
+
+```javascript
+// Extract data
+const data = {
+   text: formData.get('text') || '',
+   url: formData.get('url') || ''
+};
+const files = formData.getAll('windowsActionFiles');
+```
+
+Explanation of the `formData` keys:
+
+* **text:** A JSON string that lists all input entities.  The input parameter value must be identical to the value you set in your PWA's web manifest `share_target.params.text`.  The file paths that are contained in **text** are safe to consume.  To protect users' privacy, Edge sanitizes any user-supplied path information before it reaches your service worker, leaving only the file name.
+
+* **url:** The protocol URI (for example, `web+wami://paint` in the sample) that identifies which App Action triggered the launch.  The input parameter value must be identical to the value that you set in the PWA's web manifest `share_target.params.url`.
+
+* **files:** File objects attached to the app action invocation. 
+
+
+<!-- ------------------------------ -->
 #### `protocol_handlers` in the web app manifest
 
 For a PWA to use App Actions, the `protocol_handlers` field must be present in the PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).  The `protocol_handlers` > `protocol` field must match the first part of the `invocation` > `uri` in the action definition manifest file (such as `ActionsManifest.json`).
@@ -198,7 +241,7 @@ See also:
 * [Handle protocols in a PWA](./handle-protocols.md)
 
 
-<!-- ====================================================================== -->
+<!-- ------------------------------ -->
 #### `launch_handler` in the web app manifest
 
 If you want to keep a single PWA window, you can set [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) as `navigate-existing` in your PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).
@@ -212,38 +255,6 @@ Example declaration:
 ```
 
 The above code is not in [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json).
-
-
-<!-- ====================================================================== -->
-#### Handle the entity of an app action
-
-The entity of an app action is passed to the PWA through POST share data. To handle POST share data, you can use or combine the following approaches:
-
-* Handle POST share data by using server-side code. 
-
-* In a service worker, use a fetch event listener to intercept the HTTP POST request. This provides a better experience for offline users. See below links for more reference.  
-
-  * [share_target - Receiving share data using POST](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_share_data_using_post)
-  * [share_target - Receiving shared files](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_shared_files)
-
-The following code is from the wami demo's example service worker handler, to support App Action launch for the app.  This code is from [Demos/wami/sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/wami/sw.js):
-
-```javascript
-// Extract data
-const data = {
-   text: formData.get('text') || '',
-   url: formData.get('url') || ''
-};
-const files = formData.getAll('windowsActionFiles');
-```
-
-Explanation of the `formData` keys:
-
-* **text:** A JSON string that lists all input entities. The input parameter value must be identical to the value you set in your PWA's web manifest `share_target.params.text`. To protect users' privacy, Edge sanitizes any user-supplied path information before it reaches your service worker, leaving only the file name. So the file paths contained in **text** are safe to consume.
-
-* **url:** The protocol URI (for example, `web+wami://paint` in the sample) that identifies which App Action triggered the launch. The input parameter value must be identical to the value you set in your PWA's web manifest `share_target.params.url`.
-
-* **files:** File objects attached to the app action invocation. 
 
 
 <!-- ====================================================================== -->
