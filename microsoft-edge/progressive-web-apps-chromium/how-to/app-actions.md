@@ -28,9 +28,9 @@ See also:
 * [How a PWA is launched through URI activation](#how-a-pwa-is-launched-through-uri-activation)
    * [uri in the action definition manifest](#uri-in-the-action-definition-manifest)
    * [Receive ValueSet data and map it to a share target](#receive-valueset-data-and-map-it-to-a-share-target)
-* [Prerequisites for your PWA to support app actions](#prerequisites-for-your-pwa-to-support-app-actions)
+* [Prerequisites for your PWA to support App Actions](#prerequisites-for-your-pwa-to-support-app-actions)
    * [share_target in the web app manifest](#share_target-in-the-web-app-manifest)
-     * [Handle the entity of an app action](#handle-the-entity-of-an-app-action)
+     * [Handle the entity of an App Action](#handle-the-entity-of-an-app-action)
    * [protocol_handlers in the web app manifest](#protocol_handlers-in-the-web-app-manifest)
    * [launch_handler in the web app manifest](#launch_handler-in-the-web-app-manifest)
 * [Package a store PWA in Edge Stable](#package-a-store-pwa-in-edge-stable)
@@ -142,7 +142,7 @@ The app's web app manifest (such as [Demos/wami/manifest.json](https://github.co
 
 
 <!-- ====================================================================== -->
-## Prerequisites for your PWA to support app actions
+## Prerequisites for your PWA to support App Actions
 
 To correctly integrate your PWA with the App Actions on Windows framework, the following web app manifest members are required:
 
@@ -158,7 +158,7 @@ For a PWA to use App Actions, the `share_target` field must be present in the PW
 
 * The method must be "POST".
 * The `enctype` must be `multipart/form-data`.
-* `text` and `url` in `params` are required to support app actions. 
+* `text` and `url` in `params` are required to support App Actions. 
 * `files` is optional.  You can omit `files` if you don't want your PWA to support the normal _share target_ feature.
 
 Example `share_target` declaration, from [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
@@ -181,7 +181,7 @@ See also:
 
 
 <!-- ---------- -->
-###### Handle the entity of an app action
+###### Handle the entity of an App Action
 
 The entity of an App Action is passed to the PWA through POST share data.  To handle POST share data, you can use or combine the following approaches:
 
@@ -209,7 +209,7 @@ Explanation of the `formData` keys:
 
 * **url:** The protocol URI (for example, `web+wami://paint` in the sample) that identifies which App Action triggered the launch.  The input parameter value must be identical to the value that you set in the PWA's web manifest `share_target.params.url`.
 
-* **files:** File objects attached to the app action invocation. 
+* **files:** File objects attached to the App Action invocation. 
 
 
 <!-- ------------------------------ -->
