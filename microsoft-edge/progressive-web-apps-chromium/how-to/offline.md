@@ -18,18 +18,18 @@ The following table describes the different options, and the rest of this articl
 
 | Storage option | Description |
 |:--- |:--- |
-| Web Storage | Web Storage has two types: session and local. Web Storage is useful to store small amounts of data from your app's front-end code. The data is structured as key-value pairs and is only available to the current app origin. In the case of session storage, the data is cleared when the session ends, for example when the app is closed, or when the user browses to another origin in the same window or tab. Local storage persists until the app removes the data. |
-| IndexedDB | IndexedDB is an API for storing larger amounts of structured data. The API is asynchronous and can be used both from your app's front-end code and service worker code. Use the IndexedDB API to store a significant amount of structured data on the client, or binary data, such as encrypted media objects or files. |
-| Cache | The Cache API can be used to manage cached resources. The Cache API is Promise-based and allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a service worker, but it's also available to your app's front-end code. |
+| Web Storage | Web Storage has two types: session and local.  Web Storage is useful to store small amounts of data from your app's front-end code.  The data is structured as key-value pairs and is only available to the current app origin.  In the case of session storage, the data is cleared when the session ends, for example when the app is closed, or when the user browses to another origin in the same window or tab.  Local storage persists until the app removes the data. |
+| IndexedDB | IndexedDB is an API for storing larger amounts of structured data.  The API is asynchronous and can be used both from your app's front-end code and service worker code.  Use the IndexedDB API to store a significant amount of structured data on the client, or binary data, such as encrypted media objects or files. |
+| Cache | The Cache API can be used to manage cached resources.  The Cache API is Promise-based and allows developers to store and retrieve many web resources — HTML, CSS, JavaScript, images, JSON, and so on.  Usually, the Cache API is used within the context of a service worker, but it's also available to your app's front-end code. |
 | File System Access | The File System Access API allows your PWA to read files and folders on the user's device and save changes back to them. |
 
-**Note**: Do not use WebSQL or Application Cache. While these are two other browser storage mechanisms, they have both been deprecated. Instead of WebSQL, use IndexedDB. Instead of Application Cache, use the Cache API.
+**Note**: Do not use WebSQL or Application Cache.  While these are two other browser storage mechanisms, they have both been deprecated.  Instead of WebSQL, use IndexedDB. Instead of Application Cache, use the Cache API.
 
 
 <!-- ====================================================================== -->
 ## Web Storage
 
-Web Storage is useful for storing small amounts of string data on the user's device. The simplicity of the key-value pair system of Web Storage makes it easy to use.
+Web Storage is useful for storing small amounts of string data on the user's device.  The simplicity of the key-value pair system of Web Storage makes it easy to use.
 
 Web Storage works synchronously in your app's main thread only. This means that Web Storage isn't available for use within service workers, and that heavy usage of Web Storage may create performance issues for your application.
 
