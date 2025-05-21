@@ -301,11 +301,11 @@ If you want to try out App Actions for PWAs before May 29, 2025, you can package
    * `name`: Your PWA's name.
    * `packageId`: Not needed if you won't publish the Edge Canary version of your app to the store; can be an empty string.
    * `url`: Your PWA's url.
-   * `publisher` > `displayName`: The publisher's name.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
-   * `publisher` > `commonName`: Your Publisher ID.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
+   * `publisher` > `displayName`: The publisher's name.  Not needed if you won't publish the Edge Canary version of your app to the store; can be an empty string.
+   * `publisher` > `commonName`: Your Publisher ID.  Not needed if you won't publish the Edge Canary version of your app to the store; can be an empty string.
    * `startUrl`: Your PWA's `startUrl`.
 
-   Example of a JSON listing you can copy and paste into the text field of the [PWABuilder.Windows.Chromium tester](https://pwabuilder-windows-docker.azurewebsites.net/). 
+   Example JSON listing that you can copy and paste into the text field of the [PWABuilder.Windows.Chromium tester](https://pwabuilder-windows-docker.azurewebsites.net/):
 
    ```json
    {
