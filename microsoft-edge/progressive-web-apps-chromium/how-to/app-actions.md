@@ -129,7 +129,7 @@ For a PWA to use App Actions, the `share_target` field must be present in the PW
 
 * The method must be "POST".
 * The `enctype` must be `multipart/form-data`.
-* `title`, `text` and `url` in `params` are required.
+* `text` and `url` in `params` are required to support app actions. 
 * `files` is optional.  You can omit `files` if you don't want your PWA to support the normal _share target_ feature.
 
 Example `share_target` declaration, from [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
