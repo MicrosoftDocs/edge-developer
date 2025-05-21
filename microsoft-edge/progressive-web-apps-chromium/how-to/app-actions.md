@@ -65,7 +65,7 @@ The **Paint** App Action returns the stylized output.
 
 
 <!-- ====================================================================== -->
-## Properties supported in an action definition manifest
+#### Properties supported in an action definition manifest
 
 The action definition manifest file (such as `ActionsManifest.json`) is a descriptive file which is used by Windows App Actions Runtime for an app, to declare the App Actions that the app supports.
 
@@ -75,7 +75,7 @@ Under `Invocation`, only the `uri` type is supported.  The `com` type is not app
 
 
 <!-- ====================================================================== -->
-## Supported Entity types for App Actions for PWAs
+#### Supported Entity types for App Actions for PWAs
 
 In the action definition manifest file (such as `ActionsManifest.json`), the `ActionEntityKind` enumeration specifies the types of entities that are supported by App Actions on Windows.
 
@@ -93,7 +93,7 @@ Windows' `LaunchUriAsync(Uri, LauncherOptions, ValueSet)` method is used by the 
 
 
 <!-- ====================================================================== -->
-## `uri` in the action definition manifest
+#### `uri` in the action definition manifest
 
 Use a custom protocol URI, not an HTTPS URI.
 
@@ -113,7 +113,7 @@ The above line is shown in context in [Define App Actions in the action definiti
 
 
 <!-- ====================================================================== -->
-## Receive `ValueSet` data and map it to a share target
+#### Receive `ValueSet` data and map it to a share target
 
 The activated protocol URI will be mapped to the `url` field of the share target data.
 
@@ -121,9 +121,37 @@ The input `ValueSet` will be converted to a valid JSON string and mapped to the 
 
 The app's web app manifest (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)) must correctly configure the `share_target` field, to enable being launched as a share target for an App Action.  See [`share_target` in the web app manifest](#share_target-in-the-web-app-manifest), below.
 
+<!-- ====================================================================== -->
+## Prerequisites for your PWA to support app actions
+#### `share_target` in the web app manifest
+
+For a PWA to use App Actions, the `share_target` field must be present in the PWA's web app manifest file, such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json).
+
+* The method must be "POST".
+* The `enctype` must be `multipart/form-data`.
+* `title`, `text` and `url` in `params` are required.
+* `files` is optional.  You can omit `files` if you don't want your PWA to support the normal _share target_ feature.
+
+Example `share_target` declaration, from [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
+
+```json
+"share_target": {
+   "action": "./share-target",
+   "method": "POST",
+   "enctype": "multipart/form-data",
+   "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+   }
+}
+```
+
+See also:
+* [Receiving shared content](./share.md#receiving-shared-content)
 
 <!-- ====================================================================== -->
-## `protocol_handlers` in the web app manifest
+#### `protocol_handlers` in the web app manifest
 
 For a PWA to use App Actions, the `protocol_handlers` field must be present in the PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).  The `protocol_handlers` > `protocol` field must match the first part of the `invocation` > `uri` in the action definition manifest file (such as `ActionsManifest.json`).
 
@@ -152,36 +180,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## `share_target` in the web app manifest
-
-For a PWA to use App Actions, the `share_target` field must be present in the PWA's web app manifest file, such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json).
-
-* The method must be "POST".
-* The `enctype` must be `multipart/form-data`.
-* `title`, `text` and `url` in `params` are required.
-* `files` is optional.  You can omit `files` if you don't want your PWA to support the normal _share target_ feature.
-
-Example `share_target` declaration, from [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
-
-```json
-"share_target": {
-   "action": "./share-target",
-   "method": "POST",
-   "enctype": "multipart/form-data",
-   "params": {
-      "title": "title",
-      "text": "text",
-      "url": "url"
-   }
-}
-```
-
-See also:
-* [Receiving shared content](./share.md#receiving-shared-content)
-
-
-<!-- ====================================================================== -->
-## `launch_handler` in the web app manifest
+#### `launch_handler` in the web app manifest
 
 If you want to keep a single PWA window, you can set [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) as `navigate-existing` in your PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).
 
@@ -197,48 +196,35 @@ The above code is not in [Demos/wami/manifest.json](https://github.com/Microsoft
 
 
 <!-- ====================================================================== -->
-## Accept entity info on Windows<!-- todo: heading + sentence 1: clarify, what is this section about?  what is "entity info"?  what is the task/accomplishment covered in this section? -->
+#### Handle the entity of an app action
 
-<!-- todo: To accomplish ABC, -->You can use or combine the following approaches:
+The entity of an app action is passed to the PWA through POST share data. To handle POST share data, you can use or combine the following approaches:
 
-* Handle POST share data by using server-side code.
-   * For online users.
+* Handle POST share data by using server-side code. 
 
-* Use a fetch event listener to intercept the HTTP <!-- todo: POST? --> request.  This approach allows accessing the data in a service worker.
-   * This provides a better experience for offline users.
+* In a service worker, use a fetch event listener to intercept the HTTP POST request. This provides a better experience for offline users. See below links for more reference.  
 
-To use a service worker to handle POST share data:
-<!-- todo:
-does this apply to both approaches above?
-use same wording as one of the above options.  which of the above options is this about?
-For the App Action scenario of using a service worker (approach 2?) to handle POST (approach 1?) share data, 
--->
-* [share_target - Receiving share data using POST](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_share_data_using_post)
-* [share_target - Receiving shared files](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_shared_files)
+  * [share_target - Receiving share data using POST](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_share_data_using_post)
+  * [share_target - Receiving shared files](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_shared_files)
 
-The following code is from the wami demo's example service worker handler, to support AI Action launch for the app.  This code is from [Demos/wami/sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/wami/sw.js):
+The following code is from the wami demo's example service worker handler, to support App Action launch for the app.  This code is from [Demos/wami/sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/wami/sw.js):
 
-```csharp
+```javascript
 // Extract data
 const data = {
-   title: formData.get('title') || '',
    text: formData.get('text') || '',
    url: formData.get('url') || ''
 };
 const files = formData.getAll('windowsActionFiles');
 ```
 
-The above code uses the following `formData`:
+Explanation of the `formData` keys:
 
-<!-- todo
-* **title:** 
--->
+* **text:** A JSON string that lists all input entities. The input parameter value must be identical to the value you set in your PWA's web manifest `share_target.params.text`. To protect users' privacy, Edge sanitizes any user-supplied path information before it reaches your service worker, leaving only the file name. So the file paths contained in **text** are safe to consume.
 
-* **text:** `formData[<share_target.params.text>]`: All entity info with JSON format.  The users' file path will be sanitized.<!-- todo: what is formData[<share_target.params.text>], where is that code from?  how does that relate to text: formData.get('text') above? -->
+* **url:** The protocol URI (for example, `web+wami://paint` in the sample) that identifies which App Action triggered the launch. The input parameter value must be identical to the value you set in your PWA's web manifest `share_target.params.url`.
 
-* **url:** `formData[<share_target.params.url>]`: The invocation uri, through which you can know which App Action this launch came from and handle related parameters if needed.
-
-* **files:** `formData["windowsActionFiles"]`: All files' data from the App Action.
+* **files:** File objects attached to the app action invocation. 
 
 
 <!-- ====================================================================== -->
@@ -283,13 +269,13 @@ If you want to try out App Actions for PWAs before May 29, 2025, you can package
 1. Enter your PWA configs in the input box, for the following fields:
 
    * `name`: Your PWA's name.
-   * `packageId`: Not needed if you won't publish the Canary-bind app<!-- todo: is "Canary-bind app" meaningful? 3x --> to the store; can be an empty string.
+   * `packageId`: Not needed if you won't publish the Edge Canary version of your app to the store; can be an empty string.
    * `url`: Your PWA's url.
    * `publisher` > `displayName`: The publisher's name.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
    * `publisher` > `commonName`: Your Publisher ID.  Not needed if you won't publish the Canary-bind app to the store; can be an empty string.
    * `startUrl`: Your PWA's `startUrl`.
 
-   Example of a JSON listing:<!-- todo: which file?  where is this snippet from?  need a lead-in, to introduce each code snippet and give context: --><!-- todo: is this the complete file/ JSON object? -->
+   Example of a JSON listing you can copy and paste into the text field of the [PWABuilder.Windows.Chromium tester](https://pwabuilder-windows-docker.azurewebsites.net/). 
 
    ```json
    {
