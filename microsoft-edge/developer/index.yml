@@ -58,6 +58,12 @@ landingContent:
           - text: Use origin trials in Microsoft Edge
             url: ../origin-trials/index.md
 
+          - text: Prompt a built-in language model with the Prompt API
+            url: ../web-platform/prompt-api.md
+
+          - text: Summarize, write, and rewrite text with the Writing Assistance APIs
+            url: ../web-platform/writing-assistance-apis.md
+
 # -----------------------------------------------------------------------------
 # Card for toc bucket 3 - r1c2
   - title: Microsoft Edge DevTools
