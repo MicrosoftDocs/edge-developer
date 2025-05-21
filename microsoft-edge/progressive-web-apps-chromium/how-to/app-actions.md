@@ -81,7 +81,7 @@ In the action definition manifest file (such as `ActionsManifest.json`), the `Ac
 
 In the context of a JSON App Action definition, the entity kinds are string literals that are case-sensitive.  The supported entities are listed in [ActionEntityKind enumeration](/windows/ai/app-actions/actions-json#actionentitykind-enumeration) in _Action definition JSON schema for App Actions on Windows_.
 
-`StreamingText` and `RemoteFile` are not yet supported for PWA.  For `File`, `Photo`, `Document` and `Text` entity kinds, see [Entity properties](/windows/ai/app-actions/actions-json#entity-properties) in _Action definition JSON schema for App Actions on Windows_.
+`StreamingText` and `RemoteFile` are not yet supported for PWAs.  For `File`, `Photo`, `Document` and `Text` entity kinds, see [Entity properties](/windows/ai/app-actions/actions-json#entity-properties) in _Action definition JSON schema for App Actions on Windows_.
 
 
 <!-- ====================================================================== -->
@@ -93,7 +93,7 @@ Windows' `LaunchUriAsync(Uri, LauncherOptions, ValueSet)` method is used by the 
 
 
 <!-- ====================================================================== -->
-## `uri` in the action definition manifest file
+## `uri` in the action definition manifest
 
 Use a custom protocol URI, not an HTTPS URI.
 
@@ -109,7 +109,7 @@ For example:
 "uri": "web+wami://paint"
 ```
 
-That line is shown in context in [Define the App Actions that your PWA supports, in the action definition manifest](#define-the-app-actions-that-your-pwa-supports-in-the-action-definition-manifest), above.
+The above line is shown in context in [Define App Actions in the action definition manifest](#define-app-actions-in-the-action-definition-manifest), above.
 
 
 <!-- ====================================================================== -->
@@ -145,7 +145,7 @@ The matching `invocation` > `uri` field from `ActionsManifest.json`:
 },
 ```
 
-The above snippet is shown in context in [Define App Actions in the action definition manifest](#define-app-actions-your-pwa-supports-in-the-action-definition-manifest), above.
+The above snippet is shown in context in [Define App Actions in the action definition manifest](#define-app-actions-in-the-action-definition-manifest), above.
 
 See also:
 * [Handle protocols in a PWA](./handle-protocols.md)
