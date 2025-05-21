@@ -9,7 +9,7 @@
 # Progressive Web Apps
 # WebView2
 # Test and automation
-# Edge-specific web development tips
+# Edge-specific web development tips (/web-platform/)
 # Microsoft Edge IDE integration
 # Accessibility in Microsoft Edge
 # DualEngine
@@ -65,6 +65,12 @@
 
         - name: Sign up for the Ad Selection API
           href: ./web-platform/ad-selection-api.md
+
+        - name: Prompt a built-in language model with the Prompt API
+          href: ./web-platform/prompt-api.md
+
+        - name: Summarize, write, and rewrite text with the Writing Assistance APIs
+          href: ./web-platform/writing-assistance-apis.md
 # /Experimental web platform features
 # =============================================================================
 # Microsoft Edge DevTools
@@ -83,6 +89,10 @@
               href: ./devtools-guide-chromium/whats-new/whats-new.md
               displayName: release notes, announcements
 # latest 10 What's New
+            - name: Microsoft Edge 136
+              href: ./devtools-guide-chromium/whats-new/2025/05/devtools-136.md
+              displayName: What's New in DevTools (Microsoft Edge 136)  # page title
+
             - name: Microsoft Edge 135
               href: ./devtools-guide-chromium/whats-new/2025/04/devtools-135.md
               displayName: What's New in DevTools (Microsoft Edge 135)  # page title
@@ -119,15 +129,15 @@
               href: ./devtools-guide-chromium/whats-new/2024/07/devtools-127.md
               displayName: What's New in DevTools (Microsoft Edge 127)  # page title
 
-            - name: Microsoft Edge 126
-              href: ./devtools-guide-chromium/whats-new/2024/06/devtools-126.md
-              displayName: What's New in DevTools (Microsoft Edge 126)  # page title
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: ./devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 126
+                  href: ./devtools-guide-chromium/whats-new/2024/06/devtools-126.md
+                  displayName: What's New in DevTools (Microsoft Edge 126)  # page title
 
                 - name: Microsoft Edge 125
                   href: ./devtools-guide-chromium/whats-new/2024/05/devtools-125.md
@@ -1274,6 +1284,9 @@
             - name: Build a PWA for the sidebar in Microsoft Edge
               href: ./progressive-web-apps-chromium/how-to/sidebar.md
 
+            - name: Enable App Actions on Windows for a PWA
+              href: ./progressive-web-apps-chromium/how-to/app-actions.md
+
         - name: Distribute a PWA with the Microsoft Store
           items:
             - name: Publish a PWA to the Microsoft Store
@@ -1761,7 +1774,7 @@
           href: ./test-and-automation/webhint.md
 # /Test and automation
 # =============================================================================
-# Edge-specific web development tips
+# Edge-specific web development tips (/web-platform/)
     - name: Edge-specific web development tips
       items:
         - name: Edge-specific web development tips
@@ -1793,7 +1806,7 @@
         - name: View a JSON file or server response with formatting
           href: ./web-platform/json-viewer.md
           displayName: JSON viewer, view JSON
-# /Edge-specific web development tips
+# /Edge-specific web development tips (/web-platform/)
 # =============================================================================
 # Microsoft Edge IDE integration
     - name: Microsoft Edge IDE integration
