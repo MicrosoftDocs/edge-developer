@@ -19,6 +19,25 @@ You can build Windows App Actions to increase discoverability and engagement of 
 See also:
 * [App Actions on Windows Overview](/windows/ai/app-actions/)
 
+**Detailed contents:**
+
+* [Recommended scenarios](#recommended-scenarios)
+* [Define App Actions in the action definition manifest](#define-app-actions-in-the-action-definition-manifest)
+   * [Properties supported in an action definition manifest](#properties-supported-in-an-action-definition-manifest)
+   * [Supported Entity types for App Actions for PWAs](#supported-entity-types-for-app-actions-for-pwas)
+* [How a PWA is launched through URI activation](#how-a-pwa-is-launched-through-uri-activation)
+   * [uri in the action definition manifest](#uri-in-the-action-definition-manifest)
+   * [Receive ValueSet data and map it to a share target](#receive-valueset-data-and-map-it-to-a-share-target)
+* [Prerequisites for your PWA to support app actions](#prerequisites-for-your-pwa-to-support-app-actions)
+   * [share_target in the web app manifest](#share_target-in-the-web-app-manifest)
+   * [protocol_handlers in the web app manifest](#protocol_handlers-in-the-web-app-manifest)
+   * [launch_handler in the web app manifest](#launch_handler-in-the-web-app-manifest)
+   * [Handle the entity of an app action](#handle-the-entity-of-an-app-action)
+* [Package a store PWA in Edge Stable](#package-a-store-pwa-in-edge-stable)
+* [Package a store PWA in Edge Canary](#package-a-store-pwa-in-edge-canary)
+* [Test App Actions for a PWA](#test-app-actions-for-a-pwa)
+* [See also](#see-also)
+
 
 <!-- ------------------------------ -->
 #### Recommended scenarios
@@ -354,8 +373,8 @@ To test App Actions for your PWA:
 <!-- all links in file -->
 
 * [Receiving shared content](./share.md#receiving-shared-content)
-* [Package your PWA for the Store](./microsoft-store.md#package-your-pwa-for-the-store) in _Publish a PWA to the Microsoft Store_.
 * [Publish a PWA to the Microsoft Store](./microsoft-store.md) 
+   * [Package your PWA for the Store](./microsoft-store.md#package-your-pwa-for-the-store) in _Publish a PWA to the Microsoft Store_.
 
 Windows articles:
 * [App Actions on Windows Overview](/windows/ai/app-actions/)
