@@ -2474,15 +2474,10 @@ iframes allow you to embed other webpages into your own webpage.  In WebView2, y
 *  Find out when iframes are navigating.
 *  Allow bypassing x-frame options.
 
-<!-- wording per overview table:
-Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. -->
-
 See also:
 * [Host/web object sharing](#hostweb-object-sharing), above
 * [Using frames in WebView2 apps](./frames.md)
-<!-- if need detail about CoreWebView2Frame.FrameCreated if that detail is not in API Ref:
 * [Track navigation history for nested iframes (FrameCreatedEvent API)](../release-notes/index.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Release Notes for the WebView2 SDK_.
--->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
