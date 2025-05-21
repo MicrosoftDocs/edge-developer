@@ -23,8 +23,6 @@ See also:
 <!-- ====================================================================== -->
 ## About App Actions
 
-<!-- todo: are there App Actions other than Windows App Actions? -->
-
 An App Action is an atomic unit of functionality.  An app builds and register each App Action, and then Windows or other apps can recommend registered App Actions to the user at contextually relevant times and locations within the user's workflow.
 
 You can build Windows App Actions to increase discoverability and engagement of your app's features by using app-to-app and agentic interactions.  The Windows App Actions framework makes it possible to integrate your app with other apps or with AI agents.
@@ -33,7 +31,9 @@ The Windows App Actions framework is for exposing and executing key pieces of ap
 
 
 <!-- ====================================================================== -->
-## Define the App Actions that your PWA supports, in ActionsManifest.json
+## Define the App Actions that your PWA supports, in the action definition manifest
+
+You define App Actions in an action definition manifest file, such as `ActionsManifest.json`.  This is an action definition JSON file for App Actions on Windows.
 
 This guide illustrates how to author an App Action that uses a sample PWA, [wami, the Web App to Manipulate Images](https://github.com/MicrosoftEdge/Demos/tree/main/wami).  The wami demo supports image manipulation tasks, such as resizing or applying post-processing styles.
 
@@ -69,9 +69,9 @@ The **Paint** App Action returns the stylized output.
 
 
 <!-- ====================================================================== -->
-## Properties supported in ActionsManifest.json
+## Properties supported in an action definition manifest
 
-`ActionsManifest.json` is a descriptive file which is used by Windows App Actions Runtime for an app, to declare the App Actions that the app supports.
+The action definition JSON file for App Actions on Windows, such as `ActionsManifest.json`, is a descriptive file which is used by Windows App Actions Runtime for an app, to declare the App Actions that the app supports.
 
 For the definition of each supported JSON property, see [Action definition JSON properties](/windows/ai/app-actions/actions-json#action-definition-json-properties) in _Action definition JSON schema for App Actions on Windows_.
 
@@ -81,7 +81,7 @@ Under `Invocation`, only the `uri` type is supported.  The `com` type is not app
 <!-- ====================================================================== -->
 ## Supported Entity types for App Actions for PWAs
 
-The `ActionEntityKind` enumeration specifies the types of entities that are supported by App Actions on Windows.
+In the action definition manifest file, such as `ActionsManifest.json`, the `ActionEntityKind` enumeration specifies the types of entities that are supported by App Actions on Windows.
 
 In the context of a JSON App Action definition, the entity kinds are string literals that are case-sensitive.  The supported entities are listed in [ActionEntityKind enumeration](/windows/ai/app-actions/actions-json#actionentitykind-enumeration) in _Action definition JSON schema for App Actions on Windows_.
 
@@ -97,7 +97,7 @@ Windows' `LaunchUriAsync(Uri, LauncherOptions, ValueSet)` method is used by the 
 
 
 <!-- ====================================================================== -->
-## The URI field in ActionsManifest.json
+## `uri` in the action definition manifest file
 
 Use a custom protocol URI, not an HTTPS URI.
 
@@ -113,23 +113,23 @@ For example:
 "uri": "web+wami://paint"
 ```
 
-That line is shown in context in [Define the App Actions that your PWA supports, in ActionsManifest.json](#define-the-app-actions-that-your-pwa-supports-in-actionsmanifestjson), above.
+That line is shown in context in [Define the App Actions that your PWA supports, in the action definition manifest](#define-the-app-actions-that-your-pwa-supports-in-the-action-definition-manifest), above.
 
 
 <!-- ====================================================================== -->
-## Receive ValueSet data and map it to a Share Target
+## Receive `ValueSet` data and map it to a share target
 
 The activated protocol URI will be mapped to the `url` field of the share target data.
 
 The input `ValueSet` will be converted to a valid JSON string and mapped to the `text` field of the share target data.  That enables Microsoft Edge to determine that the protocol handler launch represents an App Action.
 
-The app's web app manifest (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)) must correctly configure the `share_target` field, to enable being launched as a share target for an App Action.  See [Web Manifest validation for `share_target`](#web-manifest-validation-for-share_target), below.
+The app's web app manifest (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)) must correctly configure the `share_target` field, to enable being launched as a share target for an App Action.  See [`share_target` in the web app manifest](#share_target-in-the-web-app-manifest), below.
 
 
 <!-- ====================================================================== -->
-## Web Manifest validation for `protocol_handlers`
+## `protocol_handlers` in the web app manifest
 
-For a PWA to use App Actions, the `protocol_handlers` field must be present in the PWA's manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)), and the protocol field must be the same as the invocation uri in the `ActionsManifest.json` file.
+For a PWA to use App Actions, the `protocol_handlers` field must be present in the PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).  The `protocol_handlers` > `protocol` field must match the first part of the `invocation` > `uri` in the `ActionsManifest.json` file.
 
 Example `protocol_handlers` declaration, from [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
 
@@ -140,14 +140,25 @@ Example `protocol_handlers` declaration, from [Demos/wami/manifest.json](https:/
 }]
 ```
 
+The matching `invocation` > `uri` field from `ActionsManifest.json`:
+
+```json
+"invocation": {
+   "type": "Uri",
+   "uri": "web+wami://paint"
+},
+```
+
+The above snippet is shown in context in [Define the App Actions that your PWA supports, in ActionsManifest.json](#define-the-app-actions-that-your-pwa-supports-in-actionsmanifestjson), above.
+
 See also:
 * [Handle protocols in a PWA](./handle-protocols.md)
 
 
 <!-- ====================================================================== -->
-## Web Manifest validation for `share_target`
+## `share_target` in the web app manifest
 
-For a PWA to use App Actions, the `share_target` field must be present in the PWA's manifest file, such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json).
+For a PWA to use App Actions, the `share_target` field must be present in the PWA's web app manifest file, such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json).
 
 * The method must be "POST".
 * The `enctype` must be `multipart/form-data`.
@@ -174,9 +185,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Web Manifest validation for `launch_handler`
+## `launch_handler` in the web app manifest
 
-If you want to keep a single PWA window, you can set [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) as `navigate-existing` in your PWA's manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).
+If you want to keep a single PWA window, you can set [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) as `navigate-existing` in your PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)).
 
 Example declaration:
 
@@ -247,9 +258,9 @@ The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like
 
 1. In **All settings**, scroll down to **Actions – Enable Actions** at the bottom.
 
-1. Make sure your PWA's manifest (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)) has `protocol_handlers` and `share_target` fields.  PWABuilder.com will run a check, and if either field is missing from the app's web app manifest, the **Enable Actions** checkbox will be greyed out.
+1. Make sure your PWA's web app manifest file (such as [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json)) has `protocol_handlers` and `share_target` fields.  PWABuilder.com will run a check, and if either field is missing from the app's web app manifest, the **Enable Actions** checkbox will be greyed out.
 
-1. In the **Actions** section, click **Choose File**, and upload the `ActionsManifest.json` file that you prepared for your PWA.
+1. In the **Actions** section, click **Choose File**, and upload the action definition JSON file (such as `ActionsManifest.json`) that you prepared for your PWA.
 
 1. Click the **Download** button.
 
@@ -309,7 +320,7 @@ If you want to try out App Actions for PWAs before May 29, 2025, you can package
 
    Replace the above attributes with your app's actual attributes.
 
-1. Upload your `ActionsManifest.json` file, and then click the **Download** button.
+1. Upload the action definition JSON file (such as `ActionsManifest.json`), and then click the **Download** button.
 
 1. Your download is a `.zip` archive that contains files such as `.msix` and `.msixbundle` files.  Unzip it and run `install.ps1` to install your PWA directly.
 
