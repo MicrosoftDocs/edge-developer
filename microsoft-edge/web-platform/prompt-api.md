@@ -10,40 +10,39 @@ ms.date: 05/19/2025
 # Prompt a built-in language model with the Prompt API
 <!-- https://aka.ms/edge-prompt-api-docs -->
 
-The [Prompt API](https://github.com/webmachinelearning/prompt-api) is an experimental web API that allows you to prompt a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code.  Use the Prompt API to generate and analyze text or create application logic based on user input – and discover innovative ways to integrate prompt engineering capabilities into your web application.
+The [Prompt API](https://github.com/webmachinelearning/prompt-api) is an experimental web API that allows you to prompt a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code.  Use the Prompt API to generate and analyze text or create application logic based on user input, and discover innovative ways to integrate prompt engineering capabilities into your web application.
 
 
 **Detailed contents:**
 
-* [Prompt a built-in language model with the Prompt API](#prompt-a-built-in-language-model-with-the-prompt-api)
-  * [Availability of the Prompt API](#availability-of-the-prompt-api)
-  * [Alternatives to and benefits of the Prompt API](#alternatives-to-and-benefits-of-the-prompt-api)
-  * [The Phi-4-mini model](#the-phi-4-mini-model)
-      * [Disclaimer](#disclaimer)
-      * [Hardware requirements](#hardware-requirements)
-      * [Model availability](#model-availability)
-  * [Enable the Prompt API](#enable-the-prompt-api)
-  * [See a working example](#see-a-working-example)
-  * [Use the Prompt API](#use-the-prompt-api)
-      * [Check if the API is enabled](#check-if-the-api-is-enabled)
-      * [Check if the model can be used](#check-if-the-model-can-be-used)
-      * [Create a new session](#create-a-new-session)
-          * [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download)
-          * [Provide the model with a system prompt](#provide-the-model-with-a-system-prompt)
-          * [N-shot prompting with initialPrompts](#n-shot-prompting-with-initialprompts)
-          * [Set topK and temperature](#set-topk-and-temperature)
-      * [Clone a session to start the conversation again with the same options](#clone-a-session-to-start-the-conversation-again-with-the-same-options)
-      * [Prompt the model](#prompt-the-model)
-          * [Wait for the final response](#wait-for-the-final-response)
-          * [Display tokens as they are generated](#display-tokens-as-they-are-generated)
-          * [Constrain the model output by using a JSON schema or regular expression](#constrain-the-model-output-by-using-a-json-schema-or-regular-expression)
-          * [Send multiple messages per prompt](#send-multiple-messages-per-prompt)
-      * [Stop generating text](#stop-generating-text)
-      * [Destroy a session](#destroy-a-session)
-          * [Destroy a session by using the destroy() method](#destroy-a-session-by-using-the-destroy-method)
-          * [Destroy a session by using an AbortController](#destroy-a-session-by-using-an-abortcontroller)
-  * [Send feedback](#send-feedback)
-  * [See also](#see-also)
+* [Availability of the Prompt API](#availability-of-the-prompt-api)
+* [Alternatives to and benefits of the Prompt API](#alternatives-to-and-benefits-of-the-prompt-api)
+* [The Phi-4-mini model](#the-phi-4-mini-model)
+    * [Disclaimer](#disclaimer)
+    * [Hardware requirements](#hardware-requirements)
+    * [Model availability](#model-availability)
+* [Enable the Prompt API](#enable-the-prompt-api)
+* [See a working example](#see-a-working-example)
+* [Use the Prompt API](#use-the-prompt-api)
+    * [Check if the API is enabled](#check-if-the-api-is-enabled)
+    * [Check if the model can be used](#check-if-the-model-can-be-used)
+    * [Create a new session](#create-a-new-session)
+        * [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download)
+        * [Provide the model with a system prompt](#provide-the-model-with-a-system-prompt)
+        * [N-shot prompting with initialPrompts](#n-shot-prompting-with-initialprompts)
+        * [Set topK and temperature](#set-topk-and-temperature)
+    * [Clone a session to start the conversation again with the same options](#clone-a-session-to-start-the-conversation-again-with-the-same-options)
+    * [Prompt the model](#prompt-the-model)
+        * [Wait for the final response](#wait-for-the-final-response)
+        * [Display tokens as they are generated](#display-tokens-as-they-are-generated)
+        * [Constrain the model output by using a JSON schema or regular expression](#constrain-the-model-output-by-using-a-json-schema-or-regular-expression)
+        * [Send multiple messages per prompt](#send-multiple-messages-per-prompt)
+    * [Stop generating text](#stop-generating-text)
+    * [Destroy a session](#destroy-a-session)
+        * [Destroy a session by using the destroy() method](#destroy-a-session-by-using-the-destroy-method)
+        * [Destroy a session by using an AbortController](#destroy-a-session-by-using-an-abortcontroller)
+* [Send feedback](#send-feedback)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -69,23 +68,23 @@ To leverage AI capabilities in websites and browser extensions, you can also use
 
 The Prompt API uses an SLM that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This has the following benefits compared to cloud-based solutions:
 
-* Reduced cost: there's no cost associated with using a cloud AI service.
+* **Reduced cost:** There's no cost associated with using a cloud AI service.
 
-* Network independence: beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
+* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
 
-* Improved privacy: the data input to the model never leaves the device and is not collected to train AI models.
+* **Improved privacy:** The data input to the model never leaves the device and is not collected to train AI models.
 
 The Prompt API uses a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
-* Shared one-time cost: the browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
+* **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
 
-* Simplified usage for web developers: the built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
+* **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
 
 
 <!-- ====================================================================== -->
 ## The Phi-4-mini model
 
-The Prompt API allows you to prompt Phi-4-mini -- a powerful small language model that excels at text-based tasks -- built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
+The Prompt API allows you to prompt Phi-4-mini — a powerful small language model that excels at text-based tasks — built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
 
 
 <!-- ------------------------------ -->
@@ -167,13 +166,19 @@ To see the Prompt API in action, and review existing code that uses the API:
 
    The Prompt API is only supported on devices that meet certain hardware requirements.  For more information, see [Hardware requirements](#hardware-requirements), above.
 
-1. Either use the provided default prompt and setting values or modify them by changing values such as **User prompt**, **System prompt**, **Response constraint schema**, **N-shot prompt instructions**, **TopK**, or **Temperature**.
+1. Optionally change the prompt settings values, such as:
+      * **User prompt**
+      * **System prompt**
+      * **Response constraint schema**
+      * **More settings** > **N-shot prompt instructions**
+      * **TopK**
+      * **Temperature**
 
 1. Click the **Prompt** button, at the bottom of the page.
 
    The response is generated in the response section of the page:
 
-   ![Prompting and the Stop button](./prompt-api-images/prompting.png)
+   ![The Prompt demo page with settings and a Prompt button](./prompt-api-images/prompting.png)
 
 1. To stop generating the response, at any time, click the **Stop** button.
 
@@ -570,7 +575,7 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.  We're very interested in learning about the range of scenarios for which you intend to use the Prompt API, any issues with the API or language models, and whether more specific task-specific APIs, such as APIs for Writing Assistance or Translation, would be useful.
+The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.  We're very interested in learning about the range of scenarios for which you intend to use the Prompt API, any issues with the API or language models, and whether new task-specific APIs, such as for proofreading or translation, would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Prompt API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012).
 

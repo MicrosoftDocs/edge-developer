@@ -66,7 +66,7 @@
         - name: Sign up for the Ad Selection API
           href: ./web-platform/ad-selection-api.md
 
-        - name: Prompting a built-in language model with the Prompt API
+        - name: Prompt a built-in language model with the Prompt API
           href: ./web-platform/prompt-api.md
 
         - name: Summarize, write, and rewrite text with the Writing Assistance APIs

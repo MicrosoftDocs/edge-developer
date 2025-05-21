@@ -245,7 +245,7 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 94
 
-Microsoft Edge version 94 moved to Stable on September 23, 2021. This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable, as we snapped to the new [4-week release cycle](https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/).  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html).
+Microsoft Edge version 94 moved to Stable on September 23, 2021. This release cycle was short — just 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable, as we snapped to the new [4-week release cycle](https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/).  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html).
 
 Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and we shifted feature development to Microsoft Edge version 95.
 
@@ -259,7 +259,7 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 93
 
-Microsoft Edge version 93 became the Stable channel of Microsoft Edge on September 2, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
+Microsoft Edge version 93 became the Stable channel of Microsoft Edge on September 2, 2021.  This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
 
 <!-- ------------------------------ -->

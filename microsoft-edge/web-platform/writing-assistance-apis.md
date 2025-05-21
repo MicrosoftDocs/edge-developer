@@ -65,18 +65,17 @@ To leverage AI capabilities in websites and browser extensions, you can also use
 
 The Writing Assistance APIs use a small language model (SLM) that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This has the following benefits compared to cloud-based solutions:
 
-* **Reduced cost:**  There's no cost associated with using a cloud AI service.
+* **Reduced cost:** There's no cost associated with using a cloud AI service.
 
-* **Network independence:**  Beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
+* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
 
-* **Improved privacy:**  The data input to the model never leaves the device and is not collected to train AI models.
-
+* **Improved privacy:** The data input to the model never leaves the device and is not collected to train AI models.
 
 The Writing Assistance APIs use a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
-* **Shared one-time cost:**  The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
+* **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
 
-* **Simplified usage for web developers:**  The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
+* **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
 
 
 <!-- ====================================================================== -->
@@ -174,15 +173,15 @@ To see the Writing Assistance APIs in action, and review existing code that uses
 
    The Writing Assistance APIs are only supported on devices that meet certain hardware requirements.  For more information, see [Hardware requirements](#hardware-requirements), above.
 
-1. To run the APIs, optionally change the settings in the playground pages, such as the text to summarize, write, or rewrite or the length and format of the expected output.
+1. Optionally change the settings in the playground pages, such as the text to summarize, write, or rewrite, or the length and format of the expected output.
 
 1. Click the **Summarize**, **Write**, or **Rewrite** button, at the bottom of the page.
 
-   The output is generated in the response section of the page.
+   The output is generated in the response section of the page:
 
-1. Click the **Stop** button at any time to stop generating text:
+   ![The Summarizer demo page with settings and a Summarize button](./writing-assistance-apis-images/summarizing.png)
 
-   ![The Stop button](./writing-assistance-apis-images/summarizing.png)
+1. To stop generating the response, at any time, click the **Stop** button.
 
 To view the source code of the Writing Assistance APIs playground, see the [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) repo at GitHub.
 
@@ -537,7 +536,7 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-We're very interested in learning about the range of scenarios for which you intend to use the Writing Assistance APIs, any issues with the APIs or language models, and whether new APIs, such as APIs for proofreading would be useful.
+We're very interested in learning about the range of scenarios for which you intend to use the Writing Assistance APIs, any issues with the APIs or language models, and whether new task-specific APIs, such as for proofreading or translation, would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Writing Assistance APIs feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1031).
 
