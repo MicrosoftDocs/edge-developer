@@ -23,7 +23,7 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 | Type of account | Description |
 |---|---|
 | _Microsoft account (MSA)_ | An Outlook.com, Live.com, or Hotmail.com account. |
-| _GitHub account_ | A user account at GitHub.com.  You can use your personal GitHub account to sign in to Partner Center—a Microsoft account (MSA) will be created for you. |
+| _GitHub account_ | A user account at GitHub.com.  You can use your personal GitHub account to sign in to Partner Center — a Microsoft account (MSA) will be created for you. |
 | _Partner Center account_, _Partner Center developer account_ | A _Partner Center account_ is an account on partner.microsoft.com.  To submit Microsoft Edge extensions, you need a _Partner Center developer account_, which is a Partner Center account that has a Microsoft account (MSA) as the Primary Owner. |
 | _Microsoft Edge Program account_ | Enables multiple users to work with Microsoft Edge extensions at Partner Center. |
 | _Microsoft Entra ID_ | A Microsoft Entra ID account; see [What is Microsoft Entra ID?](/entra/fundamentals/whatis) |
