@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 03/07/2025
+ms.date: 05/23/2025
 ---
 <!-- Copyright Kayce Basques and Sofia Emelianova
 
@@ -25,11 +25,12 @@ ms.date: 03/07/2025
 
 Use the **Sensors** tool to emulate sensor input of any device.
 
-<!-- ![The Sensors tool](todo: png) -->
+![The Sensors tool](./index-images/sensors-tool.png)
 
 
 <!-- ====================================================================== -->
 ## Overview
+<!-- https://developer.chrome.com/docs/devtools/sensors#overview -->
 
 The **Sensors** tool lets you do the following:
 
@@ -40,147 +41,184 @@ The **Sensors** tool lets you do the following:
 * [Emulate hardware concurrency](#emulate-hardware-concurrency)
 * [Emulate CPU pressure](#emulate-cpu-pressure)
 
-To simulate a viewport of a mobile device and throttle the network and CPU, see [Device Mode](https://developer.chrome.com/docs/devtools/device-mode).
+To simulate a viewport of a mobile device and throttle the network and CPU, see [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
 
 
 <!-- ====================================================================== -->
 ## Open the Sensors tool
+<!-- https://developer.chrome.com/docs/devtools/sensors#open-sensors -->
 
-1. Open a webpage, such as the [foo]() demo page, right-click the webpage and then select **Inspect**.  DevTools opens.
+1. Open a webpage, such as the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page, right-click the webpage and then select **Inspect**.  DevTools opens.
 
 1. If **Quick View** isn't shown at bottom of DevTools, press **Esc** to display it.
 
 1. In **Quick View** at the bottom of DevTools, click the **More tools** button, and then select **Sensors**.
 
 
+<!-- ------------------------------ -->
 #### Open the Sensors tool by using the Command Menu
+<!-- no heading upstream -->
 
 1. Depending on your operating system, press the following to open the Command Menu:
-   * On MacOS, **Command+Shift+P**.
    * On Windows, Linux, or ChromeOS, **Control+Shift+P**.
+   * On MacOS, **Command+Shift+P**.
 
-   <!-- ![Using the Command Menu to open the Sensors tool](todo: png) -->
+   ![Using the Command Menu to open the Sensors tool](./index-images/using-command-menu-open.png)
 
 1. Type **sensors**, select **Show Sensors**, and then press **Enter**.
 
-   The **Sensors** tool opens up at the bottom of your DevTools window.
+   The **Sensors** tool opens in **Quick View** at the bottom of DevTools.
 
 
 <!-- ====================================================================== -->
 ## Override geolocation
+<!-- https://developer.chrome.com/docs/devtools/sensors#geolocation -->
 
-Many websites take advantage of user location https://web.dev/user-location/ in order to provide a more relevant experience for their users. For example, a weather website might show the local forecast for a user's area, once the user has granted the website permission to access their location.
+Many websites take advantage of [user location](https://web.dev/user-location/) in order to provide a more relevant experience for their users.  For example, a weather website might show the local forecast for a user's area, once the user has granted the website permission to access their location.
 
 If you're building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.
 
-To override your geolocation, open the **Sensors** tool https://developer.chrome.com/docs/devtools/sensors#open-sensors and, from the Geolocation list select one of the following:
+To override your geolocation, [open the Sensors tool](#open-the-sensors-tool) and, from the **Location** list select one of the following:
 
-* One of the preset cities, like Tokyo.
-* Custom location to enter custom longitude and latitude coordinates.
-* Select Location unavailable to see how your site behaves when the user's location is not available.
+* One of the preset cities, like **Tokyo**.
+* **Other** to enter custom longitude and latitude coordinates.
+* Select **Location unavailable** to see how your site behaves when the user's location is not available.
 
-<!-- ![Selecting 'Tokyo' from the 'Geolocation' list](todo: png) -->
+![Selecting Tokyo from the Location list](./index-images/override-geolocation.png)
 
 
 <!-- ====================================================================== -->
 ## Simulate device orientation
+<!-- https://developer.chrome.com/docs/devtools/sensors#orientation -->
 
-To simulate different device orientations https://web.dev/device-orientation/ ,   open the **Sensors** tool  https://developer.chrome.com/docs/devtools/sensors#open-sensors , and, from the Orientation list, select one of the following:
+To simulate different [device orientations](https://web.dev/device-orientation/), [open the Sensors tool](#open-the-sensors-tool), and then, from the **Orientation** list, select one of the following:
 
-* One of the preset orientations, like Portrait upside down.
-* Custom orientation to provide your own exact orientation.
+* One of the preset orientations, like **Portrait upside down**:
 
-<!-- ![Selecting 'Portrait upside down' from the 'Orientation' list](todo: png) -->
+   ![Selecting 'Portrait upside down' from the 'Orientation' list](./index-images/selecting-portrait-upside-down.png)
 
-After selecting **Custom orientation**, the **alpha**, **beta**, and **gamma** fields are enabled.  See Alpha https://web.dev/device-orientation/#alpha, Beta https://web.dev/device-orientation/#beta, and Gamma https://web.dev/device-orientation/#gamma to understand how these axes work.
+* **Custom orientation** to provide your own exact orientation.
 
-You can also set a custom orientation by dragging the **Orientation Model**.  Hold **Shift** before dragging to rotate along the alpha axis.
+   After selecting **Custom orientation**, the **alpha**, **beta**, and **gamma** fields are enabled.  See [Alpha](https://web.dev/device-orientation/#alpha), [Beta](https://web.dev/device-orientation/#beta), and [Gamma](https://web.dev/device-orientation/#gamma) to understand how these axes work.
 
-<!-- ![The Orientation Model](todo: png) -->
+   After selecting **Custom orientation**, you can also set a custom orientation by dragging the **Orientation Model**.  Hold **Shift** before dragging, to rotate along the alpha axis:
+
+   ![The Orientation Model](./index-images/orientation-model.png)
 
 
 <!-- ====================================================================== -->
 ## Force touch
+<!-- https://developer.chrome.com/docs/devtools/sensors#touch -->
 
 To test touch events on your website, you can force touch instead of click even if you're testing on a device without a touch screen.
 
 To trigger touch events with your pointer:
 
-1. Open the **Sensors** tool. https://developer.chrome.com/docs/devtools/sensors#open-sensors
+1. [Open the Sensors tool](#open-the-sensors-tool).
 
-1. Under the **Touch** drop-down list, select **Force touch**.
+1. Under the **Touch** drop-down list, select **Force enabled**:
 
-   <!-- ![Forcing touch instead of click](todo: png) -->
+   ![Forcing touch instead of click](./index-images/force-touch.png)
 
-1. Click **Reload DevTools** in the prompt at the top.
+1. Click the **Reload DevTools** button at the top of DevTools.
 
 
 <!-- ====================================================================== -->
 ## Emulate idle detector state
+<!-- https://developer.chrome.com/docs/devtools/sensors#idle -->
 
-The Idle Detection API https://developer.chrome.com/articles/idle-detection lets you detect inactive users and react on idle state changes.  With DevTools, you can emulate idle state changes for both the user state and screen state instead of waiting for the actual idle state to change.
+The [Idle Detection API](https://developer.chrome.com/articles/idle-detection)<!-- "Detect inactive users with the Idle Detection API" --> lets you detect inactive users and react on idle state changes.  With DevTools, you can emulate idle state changes for both the user state and screen state instead of waiting for the actual idle state to change.
 
 To emulate idle states:
 
-1. Open the **Sensors** tool.  For this tutorial, you can try it on this demo page. https://idle-detection.glitch.me/
+1. [Open the Sensors tool](#open-the-sensors-tool).  For this tutorial, you can try it on the [Ephemeral Canvas](https://idle-detection.glitch.me/) demo page.
 
-1. Enable the checkbox next to _Ephemeral_ and, in the prompt, grant the demo page the idle detection permission. Then, reload the page.
+1. In the demo page, select the **Ephemeral** checkbox, and then click the **Allow** button to grant the demo page the idle detection permission.
 
-   <!-- ![Granting the idle detection permission on a demo page](todo: png) -->
+   <!-- ![Granting the idle detection permission on a demo page](./index-images/granting-idle-detection.png) can't get dialog again -->
 
-1. Under the **Emulate Idle detector State** drop-down, select one of the following:
+1. Reload the page.
+
+1. From the **Emulate Idle Detector state** drop-down, select one of the following:
    * **No idle emulation**
    * **User active, screen unlocked**
    * **User active, screen locked**
    * **User idle, screen unlocked**
    * **User idle, screen locked**
 
-   <!-- ![Selecting an idle and locked state on a demo page](todo: png) -->
+   ![Selecting an idle and locked state on a demo page](./index-images/idle-detection-demo.png)
 
-In this example, DevTools emulates a **User idle, screen locked** state and, in this case, the demo page starts the 10 second countdown to clear the canvas.
+In this example, DevTools emulates a **User idle, screen locked** state and, in this case, the demo page starts the 60 second countdown to clear the canvas.
 
 
 <!-- ====================================================================== -->
 ## Emulate hardware concurrency
+<!-- https://developer.chrome.com/docs/devtools/sensors#hardware-concurrency -->
 
-To emulate how your website performs on devices with different numbers of processor cores, you can override the value reported by the navigator.hardwareConcurrency https://developer.mozilla.org/docs/Web/API/Navigator/hardwareConcurrency property. Some applications use this property to control the degree of parallelism of their application, for example, to control Emscripten pthread https://emscripten.org/docs/porting/pthreads.html pool size.
+To emulate how your website performs on devices with different numbers of processor cores, you can override the value reported by the [navigator.hardwareConcurrency](https://developer.mozilla.org/docs/Web/API/Navigator/hardwareConcurrency) property.  Some applications use this property to control the degree of parallelism of their application, for example, to control [Emscripten `pthread`](https://emscripten.org/docs/porting/pthreads.html) pool size.
 
 To emulate hardware concurrency:
 
-1. Open the **Sensors** tool.
+1. [Open the Sensors tool](#open-the-sensors-tool).
 
-1. Near the bottom of the panel, find and turn on check_box Hardware concurrency.
+1. Near the bottom, select the **Hardware concurrency** checkbox.
 
-1. In the number input box, enter the number of cores you want to emulate.
+1. In the number input box, enter the number of cores you want to emulate:
 
-   <!-- ![Turned on 'Hardware concurrency' with the number of cores set to 10](todo: png) -->
+   ![Turned on 'Hardware concurrency' with the number of cores set to 10](./index-images/hardware-concurrency.png)
 
-   Caution: Exceeding the default value of 12 may degrade performance.
+   Caution: Exceeding the default value may degrade performance.
 
-To revert to the default value, click the **Reset** <!--(![undo](todo: icon png in Sensors tab at Drawer next to control))--> button.
+To revert to the default value, click the **Reset** (![Reset icon](./index-images/reset-icon.png)) button.
 
 
 <!-- ====================================================================== -->
 ## Emulate CPU pressure
+<!-- https://developer.chrome.com/docs/devtools/sensors#cpu-pressure -->
 
-CPU or compute pressure https://developer.chrome.com/docs/web-platform/compute-pressure is a set of reported states that give you an idea of how much workload the system's compute is undergoing and whether it's near to the limit or not. This information lets you adapt your real-time application, for example, video conferencing or video game, to take advantage of all the available processing power while keeping the system responsive by adapting the workloads in real time.
+[CPU or compute pressure](https://developer.chrome.com/docs/web-platform/compute-pressure) is a set of reported states that give you an idea of how much workload the system's compute is undergoing and whether it's near to the limit or not.  This information lets you adapt your real-time application, for example, video conferencing or video game, to take advantage of all the available processing power while keeping the system responsive by adapting the workloads in real time.
 
-The **Sensors** panel lets you emulate the states that can be reported by the Compute Pressure API. https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API
+The **Sensors** tool lets you emulate the states that can be reported by the [Compute Pressure API](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API).
 
 To emulate CPU pressure on your website:
 
-1. Open the **Sensors** tool. https://developer.chrome.com/docs/devtools/sensors#open-sensors
+1. [Open the Sensors tool](#open-the-sensors-tool).
 
-1. Near the bottom of the panel, find the **CPU pressure** section, and select one of the human-readable pressure states https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states : **No override**, **Nominal**, **Fair**, **Serious**, or **Critical**.
+1. Near the bottom, in the **CPU pressure** section, select one of the [human-readable pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states): **No override**, **Nominal**, **Fair**, **Serious**, or **Critical**.
 
-1. In the prompt at the top of DevTools, click **Reload DevTools**.
+1. At the top of DevTools, click the **Reload DevTools** button:
 
-   <!-- ![Emulating 'Serious' CPU pressure](todo: png) -->
+   ![Emulating 'Serious' CPU pressure](./index-images/emulate-cpu-pressure.png)
 
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
+
+* [Emulate mobile devices (Device Emulation)](../device-mode/index.md)
+
+MDN:
+* [Navigator: hardwareConcurrency property](https://developer.mozilla.org/docs/Web/API/Navigator/hardwareConcurrency)
+* [Compute Pressure API](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API)
+* [human-readable pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states)
+
+Demos:
+* [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) 
+* [Ephemeral Canvas](https://idle-detection.glitch.me/) demo page.
+
+Web.dev:
+* [User Location](https://web.dev/user-location/)
+* [Device Orientation & Motion](https://web.dev/device-orientation/)
+   * [Alpha](https://web.dev/device-orientation/#alpha)
+   * [Beta](https://web.dev/device-orientation/#beta)
+   * [Gamma](https://web.dev/device-orientation/#gamma)
+
+Chrome:
+* [Compute Pressure API](https://developer.chrome.com/docs/web-platform/compute-pressure)
+* [Detect inactive users with the Idle Detection API](https://developer.chrome.com/articles/idle-detection)
+
+Emscripten:
+* [Pthreads support](https://emscripten.org/docs/porting/pthreads.html)
 
 
 <!-- ====================================================================== -->
