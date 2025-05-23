@@ -199,8 +199,8 @@ To emulate CPU pressure on your website:
 
 MDN:
 * [Navigator: hardwareConcurrency property](https://developer.mozilla.org/docs/Web/API/Navigator/hardwareConcurrency)
-* [Compute Pressure API](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API)
-* [human-readable pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states)
+* [Compute Pressure API](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API) at MDN.
+   * [Pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states) in _Compute Pressure API_.
 
 Demos:
 * [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) 
@@ -214,7 +214,7 @@ Web.dev:
    * [Gamma](https://web.dev/device-orientation/#gamma)
 
 Chrome:
-* [Compute Pressure API](https://developer.chrome.com/docs/web-platform/compute-pressure)
+* [Compute Pressure API](https://developer.chrome.com/docs/web-platform/compute-pressure) at developer.chrome.com.
 * [Detect inactive users with the Idle Detection API](https://developer.chrome.com/articles/idle-detection)
 
 Emscripten:
