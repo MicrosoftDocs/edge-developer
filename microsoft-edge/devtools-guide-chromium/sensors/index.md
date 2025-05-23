@@ -1,6 +1,6 @@
 ---
 title: Emulate device sensors (Sensors tool)
-description: How to use the Sensors tool to emulate sensor input of any device, in Microsoft Edge DevTools.
+description: Use the Sensors tool in DevTools to emulate sensor input of a device, such as override geolocation, simulate device orientation, force touch events when clicking, and emulate device idle state.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -36,7 +36,7 @@ The **Sensors** tool lets you do the following:
 
 * [Override geolocation](#override-geolocation)
 * [Simulate device orientation](#simulate-device-orientation)
-* [Force touch](#force-touch)
+* [Force touch events when clicking](#force-touch-events-when-clicking)
 * [Emulate idle detector state](#emulate-idle-detector-state)
 * [Emulate hardware concurrency](#emulate-hardware-concurrency)
 * [Emulate CPU pressure](#emulate-cpu-pressure)
@@ -107,7 +107,7 @@ To simulate different [device orientations](https://web.dev/device-orientation/)
 
 
 <!-- ====================================================================== -->
-## Force touch
+## Force touch events when clicking
 <!-- https://developer.chrome.com/docs/devtools/sensors#touch -->
 
 To test touch events on your website, you can force touch instead of click even if you're testing on a device without a touch screen.
