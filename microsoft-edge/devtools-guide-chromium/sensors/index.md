@@ -36,7 +36,7 @@ The **Sensors** tool lets you do the following:
 
 * [Override geolocation](#override-geolocation)
 * [Simulate device orientation](#simulate-device-orientation)
-* [Force touch events when clicking](#force-touch-events-when-clicking)
+* [Simulate touch events when clicking](#simulate-touch-events-when-clicking)
 * [Emulate idle detector state](#emulate-idle-detector-state)
 * [Emulate hardware concurrency](#emulate-hardware-concurrency)
 * [Emulate CPU pressure](#emulate-cpu-pressure)
