@@ -48,11 +48,17 @@ To simulate a viewport of a mobile device and throttle the network and CPU, see 
 ## Open the Sensors tool
 <!-- https://developer.chrome.com/docs/devtools/sensors#open-sensors -->
 
-1. Open a webpage, such as the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page, right-click the webpage and then select **Inspect**.  DevTools opens.
+1. Open a webpage, such as the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page, in a new window or tab.
 
-1. If **Quick View** isn't shown at bottom of DevTools, press **Esc** to display it.
+1. Right-click the webpage, and then select **Inspect**.
 
-1. In **Quick View** at the bottom of DevTools, click the **More tools** button, and then select **Sensors**.
+   DevTools opens.
+
+1. Press **Esc** once or twice, so that the **Quick View** panel is open at the bottom of DevTools.
+
+1. In the **Quick View** panel, click the **More tools** button, and then select **Sensors**.
+
+   The **Sensors** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 
 <!-- ------------------------------ -->
@@ -116,9 +122,19 @@ To simulate different device orientations, [open the Sensors tool](#open-the-sen
 
 To test touch events on your website, even if you're testing on a device without a touch screen:
 
-1. [Open the Sensors tool](#open-the-sensors-tool).
+1. Open a webpage, such as the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page, in a new window or tab.
 
-1. Under the **Touch** drop-down list, select **Force enabled**:
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Press **Esc** once or twice, so that the **Quick View** panel is open at the bottom of DevTools.
+
+1. In the **Quick View** panel, click the **More tools** button, and then select **Sensors**.
+
+   The **Sensors** tool opens in the **Quick View** panel at the bottom of DevTools.
+
+1. In the **Sensors** tool, scroll down to the **Touch** dropdown menu, and then select **Force enabled**:
 
    ![Forcing touch instead of click](./index-images/force-touch.png)
 
@@ -133,24 +149,37 @@ The Idle Detection API lets you detect inactive users and react on idle state ch
 
 To emulate idle states:
 
-1. Go to the [Idle detection demo](https://microsoftedge.github.io/Demos/idle-detection/) page.
+1. Open a webpage, such as the [Idle detection demo](https://microsoftedge.github.io/Demos/idle-detection/), in a new window or tab.
 
-1. [Open the Sensors tool](#open-the-sensors-tool).
+1. Right-click the page and then select **Inspect**.
+
+   DevTools opens.
+
+1. Press **Esc** once or twice so that **Quick View** opens at the bottom of DevTools.
+
+1. In the **Quick View** toolbar, click the **More tools** button, and then select **Sensors**.
+
+   The **Sensors** tool opens in the **Quick View** panel.
 
 1. In the demo page, click the **Start detecting idle state** button.
 
-1. Click the **Allow** button to grant the demo page the idle detection permission.
+   The first time only, an **Allow** dialog opens.
 
-1. In DevTools, in the **Sensors** tool, from the **Emulate Idle Detector state** drop-down, select one of the following:
+1. Click the **Allow** button.
+
+   The demo page is granted the idle detection permission.
+
+1. In DevTools, in the **Sensors** tool, scroll down to the **Emulate Idle Detector state** drop-down, and then select an option:
+
    * **No idle emulation**
    * **User active, screen unlocked**
    * **User active, screen locked**
    * **User idle, screen unlocked**
    * **User idle, screen locked**
 
-   ![Selecting an idle and locked state on a demo page](./index-images/idle-detection-demo.png)<!-- todo: re-create -->
+   The demo page displays the emulated user and screen states:
 
-   The demo page displays the emulated user and screen states.
+   ![Selecting an idle and locked state on a demo page](./index-images/idle-detection-demo.png)
 
 See also:
 * [Idle Detection API](https://developer.mozilla.org/docs/Web/API/Idle_Detection_API) at MDN.
@@ -165,9 +194,19 @@ To emulate how your website performs on devices with different numbers of proces
 
 To emulate hardware concurrency:
 
-1. [Open the Sensors tool](#open-the-sensors-tool).
+1. Open a webpage, such as the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page, in a new window or tab.
 
-1. Near the bottom, select the **Hardware concurrency** checkbox.
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Press **Esc** once or twice, so that the **Quick View** panel is open at the bottom of DevTools.
+
+1. In the **Quick View** panel, click the **More tools** button, and then select **Sensors**.
+
+   The **Sensors** tool opens in the **Quick View** panel at the bottom of DevTools.
+
+1. In the **Sensors** tool, scroll down to the **Hardware concurrency** checkbox, and then select it.
 
 1. In the number input box, enter the number of cores you want to emulate:
 
@@ -188,9 +227,25 @@ The **Sensors** tool lets you emulate the states that can be reported by the [Co
 
 To emulate CPU pressure on your website:
 
-1. [Open the Sensors tool](#open-the-sensors-tool).
+1. Open a webpage, such as the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page, in a new window or tab.
 
-1. Near the bottom, in the **CPU pressure** section, select one of the [human-readable pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states): **No override**, **Nominal**, **Fair**, **Serious**, or **Critical**.
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Press **Esc** once or twice, so that the **Quick View** panel is open at the bottom of DevTools.
+
+1. In the **Quick View** panel, click the **More tools** button, and then select **Sensors**.
+
+   The **Sensors** tool opens in the **Quick View** panel at the bottom of DevTools.
+
+1. In the **Sensors** tool, scroll down to the **CPU pressure** section, and then select one of the [human-readable pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states): 
+
+   * **No override**
+   * **Nominal**
+   * **Fair**
+   * **Serious**
+   * **Critical**
 
 1. At the top of DevTools, click the **Reload DevTools** button:
 
