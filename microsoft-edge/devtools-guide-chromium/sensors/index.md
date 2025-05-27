@@ -1,5 +1,5 @@
 ---
-title: Emulate device sensors (Sensors tool)
+title: Emulate device sensors
 description: Use the Sensors tool in DevTools to emulate sensor input of a device, such as override geolocation, simulate device orientation, force touch events when clicking, and emulate device idle state.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/23/2025
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Emulate device sensors (Sensors tool)
+# Emulate device sensors
 
 Use the **Sensors** tool to emulate sensor input of any device.
 
@@ -74,7 +74,7 @@ To simulate a viewport of a mobile device and throttle the network and CPU, see 
 ## Override geolocation
 <!-- https://developer.chrome.com/docs/devtools/sensors#geolocation -->
 
-Many websites take advantage of [user location](https://web.dev/user-location/) in order to provide a more relevant experience for their users.  For example, a weather website might show the local forecast for a user's area, once the user has granted the website permission to access their location.
+Many websites take advantage of user location in order to provide a more relevant experience for their users.  For example, a weather website might show the local forecast for a user's area, once the user has granted the website permission to access their location.  To access a user's geolocation from your website, see [Geolocation API](https://developer.mozilla.org/docs/Web/API/Geolocation_API), at MDN.
 
 If you're building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.
 
@@ -91,13 +91,17 @@ To override your geolocation, [open the Sensors tool](#open-the-sensors-tool) an
 ## Simulate device orientation
 <!-- https://developer.chrome.com/docs/devtools/sensors#orientation -->
 
-To simulate different [device orientations](https://web.dev/device-orientation/), [open the Sensors tool](#open-the-sensors-tool), and then, from the **Orientation** list, select one of the following:
+Mobile devices have sensors which can detect their physical orientation.  Websites such as web-based games or mapping applications can make use of the device orientation to provide a better experience.  To learn about how to detect the device orientation, see [Device orientation events](https://developer.mozilla.org/docs/Web/API/Device_orientation_events), at MDN.
+    
+If you're building a UI that changes depending on the orientation of the user's device, you need to test your UI under different device orientations.
+    
+To simulate different device orientations, [open the Sensors tool](#open-the-sensors-tool), and then, from the **Orientation** list, select one of the following:
 
 * One of the preset orientations, like **Portrait upside down**:
 
    ![Selecting 'Portrait upside down' from the 'Orientation' list](./index-images/selecting-portrait-upside-down.png)
 
-* **Custom orientation** to provide your own exact orientation.
+* **Custom orientation**, to provide your own exact orientation.
 
    After selecting **Custom orientation**, the **alpha**, **beta**, and **gamma** fields are enabled.  See [Alpha](https://web.dev/device-orientation/#alpha), [Beta](https://web.dev/device-orientation/#beta), and [Gamma](https://web.dev/device-orientation/#gamma) to understand how these axes work.
 
@@ -107,12 +111,10 @@ To simulate different [device orientations](https://web.dev/device-orientation/)
 
 
 <!-- ====================================================================== -->
-## Force touch events when clicking
+## Simulate touch events when clicking
 <!-- https://developer.chrome.com/docs/devtools/sensors#touch -->
 
-To test touch events on your website, you can force touch instead of click even if you're testing on a device without a touch screen.
-
-To trigger touch events with your pointer:
+To test touch events on your website, even if you're testing on a device without a touch screen:
 
 1. [Open the Sensors tool](#open-the-sensors-tool).
 
@@ -127,28 +129,32 @@ To trigger touch events with your pointer:
 ## Emulate idle detector state
 <!-- https://developer.chrome.com/docs/devtools/sensors#idle -->
 
-The [Idle Detection API](https://developer.chrome.com/articles/idle-detection)<!-- "Detect inactive users with the Idle Detection API" --> lets you detect inactive users and react on idle state changes.  With DevTools, you can emulate idle state changes for both the user state and screen state instead of waiting for the actual idle state to change.
+The Idle Detection API lets you detect inactive users and react on idle state changes.  With DevTools, you can emulate idle state changes for both the user state and screen state instead of waiting for the actual idle state to change.
 
 To emulate idle states:
 
-1. [Open the Sensors tool](#open-the-sensors-tool).  For this tutorial, you can try it on the [Ephemeral Canvas](https://idle-detection.glitch.me/) demo page.
+1. Go to the [Idle detection demo](https://microsoftedge.github.io/Demos/idle-detection/) page.
 
-1. In the demo page, select the **Ephemeral** checkbox, and then click the **Allow** button to grant the demo page the idle detection permission.
+1. [Open the Sensors tool](#open-the-sensors-tool).
 
-   <!-- ![Granting the idle detection permission on a demo page](./index-images/granting-idle-detection.png) can't get dialog again -->
+1. In the demo page, click the **Start detecting idle state** button.
 
-1. Reload the page.
+1. Click the **Allow** button to grant the demo page the idle detection permission.
 
-1. From the **Emulate Idle Detector state** drop-down, select one of the following:
+1. In DevTools, in the **Sensors** tool, from the **Emulate Idle Detector state** drop-down, select one of the following:
    * **No idle emulation**
    * **User active, screen unlocked**
    * **User active, screen locked**
    * **User idle, screen unlocked**
    * **User idle, screen locked**
 
-   ![Selecting an idle and locked state on a demo page](./index-images/idle-detection-demo.png)
+   ![Selecting an idle and locked state on a demo page](./index-images/idle-detection-demo.png)<!-- todo: re-create -->
 
-In this example, DevTools emulates a **User idle, screen locked** state and, in this case, the demo page starts the 60 second countdown to clear the canvas.
+   The demo page displays the emulated user and screen states.
+
+See also:
+* [Idle Detection API](https://developer.mozilla.org/docs/Web/API/Idle_Detection_API) at MDN.
+* [Idle detection demo](https://microsoftedge.github.io/Demos/idle-detection/)
 
 
 <!-- ====================================================================== -->
@@ -176,7 +182,7 @@ To revert to the default value, click the **Reset** (![Reset icon](./index-image
 ## Emulate CPU pressure
 <!-- https://developer.chrome.com/docs/devtools/sensors#cpu-pressure -->
 
-[CPU or compute pressure](https://developer.chrome.com/docs/web-platform/compute-pressure) is a set of reported states that give you an idea of how much workload the system's compute is undergoing and whether it's near to the limit or not.  This information lets you adapt your real-time application, for example, video conferencing or video game, to take advantage of all the available processing power while keeping the system responsive by adapting the workloads in real time.
+_CPU or compute pressure_ is a set of reported states that give you an idea of how much workload the system's compute is undergoing, and whether it's near the limit.  This information lets you adapt your real-time application, for example, video conferencing or video game, to take advantage of all the available processing power while keeping the system responsive by adapting the workloads in real time.
 
 The **Sensors** tool lets you emulate the states that can be reported by the [Compute Pressure API](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API).
 

@@ -776,7 +776,7 @@
 # Sensors tool ----------------------------------------------------------------
                 - name: Sensors tool
                   items:
-                    - name: Emulate device sensors (Sensors tool)
+                    - name: Emulate device sensors
                       href: ./devtools-guide-chromium/sensors/index.md
                       displayName: Device Emulation
 # Source Maps Monitor tool ----------------------------------------------------

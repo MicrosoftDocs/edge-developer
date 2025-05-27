@@ -177,7 +177,7 @@ To try a demo, see [Locale-dependent code example](https://mathiasbynens.be/demo
 Chromium issue [#1051822](https://crbug.com/1051822)
 
 See also:
-* [Override geolocation](../../../sensors/index.md#override-geolocation) in _Emulate device sensors (Sensors tool)_.
+* [Override geolocation](../../../sensors/index.md#override-geolocation) in _Emulate device sensors_.
 
 
 <!-- ------------------------------ -->
