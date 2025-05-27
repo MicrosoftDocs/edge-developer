@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/12/2025
+ms.date: 06/02/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -53,12 +53,12 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2ControllerOptions` Class:
-* [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296.44&preserve-view=true)
+  * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296.44&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2ControllerOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true)
-* [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true#defaultbackgroundcolor)
+  * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true#defaultbackgroundcolor)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -74,21 +74,9 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 
 
 <!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* Fixed messed up margins in printed pdf
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
+* Fixed the margins in the printed PDF.
 
 <!-- end of June 2025 Release SDK -->
 
@@ -107,21 +95,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-The following Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
+No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -131,22 +105,25 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ---------- -->
-######  input messages to pass through the browser window
+###### Allow input event messages to pass through the browser window
 
-The CoreWebView2ControllerOptions class now has an AllowHostInputProcessing property, which allows user input messages (keyboard, mouse, touch, and pen) to pass through the browser window to be received by an app process window.
+The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* `CoreWebView2ControllerOptions` Class:
+  * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3344-prerelease&preserve-view=true)<!-- todo: check link/format; manually constructed -->
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2ControllerOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3344-prerelease&preserve-view=true)
+* `CoreWebView2ControllerOptions` Class:
+  * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3344-prerelease&preserve-view=true#allowhostinputprocessing)<!-- todo: check link/format; added # member suffix -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3344-prerelease&preserve-view=true)
   * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3344-prerelease&preserve-view=true#get_allowhostinputprocessing)
   * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3344-prerelease&preserve-view=true#put_allowhostinputprocessing)
-
 
 ---
 
@@ -156,25 +133,13 @@ The CoreWebView2ControllerOptions class now has an AllowHostInputProcessing prop
 
 
 <!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* Fixed a bug where mouse event doesn't work after touch
-* Disabled Web capture on Webveiw2
-* Fixed downloads dialogue box not working
-* Fixed issue with downloads on default browser frame does not work ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
-* Fixed messed up margins in printed pdf
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
+* Fixed a bug where a mouse event doesn't fire after a touch event.
+* Disabled Web capture on the WebView2 control.
+* Fixed the **Downloads** dialog.<!-- todo: **Download**? -->
+* Fixed an issue with downloads in the default browser frame.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
+* Fixed the margins in the printed PDF.
 
 <!-- end of June 2025 Prerelease SDK -->
 
