@@ -209,6 +209,14 @@ conceptualContent:
               url: ./origin-trials/index.md
               itemType: whats-new
 
+            - text: Prompt a built-in language model with the Prompt API
+              url: ./web-platform/prompt-api.md
+              itemType: whats-new
+
+            - text: Summarize, write, and rewrite text with the Writing Assistance APIs
+              url: ./web-platform/writing-assistance-apis.md
+              itemType: whats-new
+
 # -----------------------------------------------------------------------------
 # Card for toc bucket 3 - r1c2
         - title: Microsoft Edge DevTools
