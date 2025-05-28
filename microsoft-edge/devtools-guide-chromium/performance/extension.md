@@ -58,6 +58,8 @@ This API offers two approaches to achieve this:
    This API leverages the existing [User Timings API](https://developer.mozilla.org/docs/Web/API/Performance_API/User_timing).  It also adds entries to the browser's internal performance timeline, allowing for further analysis and integration with other performance tools; see [Performance APIs](https://developer.mozilla.org/docs/Web/API/Performance_API) at MDN.
 
 ![An example of how custom tracks look in the Performance tool](./extension-images/example.png)
+<!-- upstream toolbar shows localhost:4200/ -->
+<!-- upstream "Main" timeline shows http://localhost:4200/ -->
 
 
 <!-- ====================================================================== -->
@@ -101,8 +103,15 @@ Both APIs offer:
 
 The `console.timeStamp` API is extended to allow for the creation of custom timing entries in the **Performance** tool with minimal overhead, especially when DevTools is not recording a trace.
 
+Syntax:
+
 ```javascript
-console.timeStamp(label: string, start?: string|number, end?: string|number, trackName?: string, trackGroup?: string, color?: DevToolsColor);
+console.timeStamp(label: string, 
+                  start?: string|number, 
+                  end?: string|number, 
+                  trackName?: string, 
+                  trackGroup?: string, 
+                  color?: DevToolsColor);
 ```
 
 * `label`:
@@ -189,6 +198,9 @@ interface ExtensionMarkerPayload {
 To see your custom data in the timeline, in the **Performance** tool, make sure the setting is on: click **Capture settings** (![Capture settings icon](./extension-images/capture-settings-icon.png)), and then select the **Show custom tracks** checkbox:
 
 ![The 'Show custom tracks' checkbox in the 'Capture settings' of the Performance tool](./extension-images/custom-tracks-setting.png)
+<!-- Addr bar shows github.io -->
+<!-- upstream toolbar shows localhost:4200/ -->
+<!-- upstream "Main" timeline shows http://localhost:4200/ -->
 
 To see the custom perf measures in the demo:
 
@@ -224,6 +236,98 @@ To see the custom perf measures in the demo:
 1. Expand each of these three tracks to see the custom performance measures:
 
    ![Expanded custom tracks](./extension-images/expanded-custom-tracks.png)
+   <!-- toolbar shows https://microsoftedge.github.io/Demos/photo-gallery/ -->
+   <!-- "Main" timeline shows https://microsoftedge.github.io/Demos/photo-gallery/ -->
+
+
+<!-- ------------------------------ -->
+#### Source code from Gallery demo
+<!-- not upstream -->
+
+The Gallery demo uses the [performance.measure()](https://developer.mozilla.org/docs/Web/API/Performance/measure#detail) method from the User Timings API.  The demo doesn't use `performance.mark()` or the `console.timeStamp` API.
+
+Below are excerpts from the demo's source code and which keywords are used for custom perf data, from [photo-gallery/gallery.js](https://github.com/MicrosoftEdge/Demos/blob/main/photo-gallery/gallery.js):
+
+```javascript
+const customPerformanceTrackGroupName = "Custom performance timings";
+```
+
+```javascript
+const imageCreationStart = performance.now();
+```
+
+To inject custom data, the Gallery demo includes a `devtools` object within the `detail` property of the `performance.measure` method:
+
+```javascript
+const perfMeasureDescription = `Image ${file} created`;
+performance.measure(perfMeasureDescription, {
+   start: imageCreationStart,
+   end: performance.now(),
+   detail: {
+      devtools: {
+         dataType: "track-entry",
+         color: "primary",
+         trackGroup: customPerformanceTrackGroupName,
+         track: "Photo creation",
+         properties: [
+            ['File', file],
+            ['Width', w],
+            ['Height', h],
+            ['User', user],
+         ],
+         tooltipText: perfMeasureDescription
+      }
+   },
+});
+```
+
+```javascript
+const filterStartTime = performance.now();
+```
+
+```javascript
+const description = `Filter applied: ${filter.id}`;
+performance.measure(description, {
+   start: filterStartTime,
+   end: performance.now(),
+   detail: {
+      devtools: {
+         dataType: "track-entry",
+         color: "secondary",
+         trackGroup: customPerformanceTrackGroupName,
+         track: "Filtering",
+         properties: [
+            ['Filter Value', filter.value]
+         ],
+         tooltipText: description
+      }
+   },
+});
+```
+
+```javascript
+const loadStartTime = performance.now();
+const perfMeasureDescription = `Loading photo: ${fileName}`;
+```
+
+```javascript
+performance.measure(perfMeasureDescription, {
+   start: loadStartTime,
+   end: performance.now(),
+   detail: {
+      devtools: {
+         dataType: "track-entry",
+         color: "tertiary",
+         trackGroup: customPerformanceTrackGroupName,
+         track: "Loading",
+         properties: [
+            ['Photo', fileName]
+         ],
+         tooltipText: perfMeasureDescription
+      }
+   },
+});
+```
 
 
 <!-- ====================================================================== -->
@@ -254,6 +358,8 @@ console.timeStamp("measure 2", start, end, "My Track", "My Group", "secondary-da
 This results in the following custom track entry in the performance timeline:
 
 ![A custom track with custom entries added with the console.timeStamp API](./extension-images/custom-track-console-timestamp.png)<!-- todo: png -->
+<!-- upstream toolbar shows about:blank -->
+<!-- upstream "Main" timeline shows about:blank -->
 
 
 <!-- ------------------------------ -->
@@ -275,7 +381,7 @@ Create custom tracks and populate them with entries to visualize your performanc
 ```javascript
 // Mark used to represent the start of the image processing task
 // The start time is defaulted to now
-const imageProcessinTimeStart = performance.now();
+const imageProcessingTimeStart = performance.now();
 
 // ... later in your code
 
@@ -284,7 +390,7 @@ const imageProcessinTimeStart = performance.now();
 // The start time is a marker from earlier
 // The end time is defaulted to now
 performance.measure("Image Processing Complete", {
-  start: imageProcessinTimeStart,
+  start: imageProcessingTimeStart,
   detail: {
     devtools: {
       dataType: "track-entry",
@@ -304,6 +410,8 @@ performance.measure("Image Processing Complete", {
 This results in the following custom track entry in the performance timeline, along with its tooltip text and properties:
 
 ![A custom track in the performance timeline](./extension-images/custom-track.png)<!-- todo: png -->
+<!-- upstream toolbar shows web.dev/ -->
+<!-- upstream "Main" timeline shows https://web.dev/ -->
 
 
 <!-- ---------- -->
@@ -332,6 +440,8 @@ performance.mark("Image Upload", {
 This results in the following marker in the **Timings** track, along with its tooltip text and properties:
 
 ![A custom marker in the Timings track](./extension-images/marker-in-timings.png)<!-- todo: png -->
+<!-- upstream toolbar shows web.dev/ -->
+<!-- upstream "Main" timeline shows https://web.dev/ -->
 
 
 <!-- ====================================================================== -->
@@ -348,7 +458,8 @@ MDN:
 * [Performance: timeOrigin property](https://developer.mozilla.org/docs/Web/API/Performance/timeOrigin)
 
 Demos:
-* [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/)
+* [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) - the running web app.
+   * [photo-gallery/gallery.js](https://github.com/MicrosoftEdge/Demos/blob/main/photo-gallery/gallery.js) - Source code.
 
 
 <!-- ====================================================================== -->
