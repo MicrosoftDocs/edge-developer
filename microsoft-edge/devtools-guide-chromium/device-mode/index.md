@@ -366,7 +366,7 @@ To enter a custom location, select **Other** and enter the coordinates of your c
 To test how your page behaves when location information is unavailable, select **Location unavailable**.
 
 See also:
-* [Override geolocation with the Sensors tool](./geolocation.md)
+* [Override geolocation](../sensors/index.md#override-geolocation) in _Emulate device sensors_.
 
 
 <!-- ------------------------------ -->
@@ -391,7 +391,7 @@ To set the device orientation:
    ![Orientation options on the Sensors tool](./index-images/device-toolbar-sensors-tokyo-portrait-upside-down.png)
 
 See also:
-* [Simulate device orientation with the Sensors tool](./orientation.md)
+* [Simulate device orientation](../sensors/index.md#simulate-device-orientation) in _Emulate device sensors_.
 
 
 <!-- ====================================================================== -->
