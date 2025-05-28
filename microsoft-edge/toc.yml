@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+        - name: Microsoft Edge 138
+          href: ./web-platform/release-notes/138.md
+          displayName: Microsoft Edge 137 web platform release notes (Jun. 2025)  # page title
+
         - name: Microsoft Edge 137
           href: ./web-platform/release-notes/137.md
           displayName: Microsoft Edge 137 web platform release notes (May 2025)  # page title
@@ -780,14 +784,10 @@
 # Sensors tool ----------------------------------------------------------------
                 - name: Sensors tool
                   items:
-                    - name: Override geolocation with the Sensors tool
-                      href: ./devtools-guide-chromium/device-mode/geolocation.md
-                      displayName: Sensors tool, Device Emulation
-
-                    - name: Simulate device orientation with the Sensors tool
-                      href: ./devtools-guide-chromium/device-mode/orientation.md
-                      displayName: Sensors tool, Device Emulation
-# Source maps monitor tool ----------------------------------------------------
+                    - name: Emulate device sensors
+                      href: ./devtools-guide-chromium/sensors/index.md
+                      displayName: Device Emulation
+# Source Maps Monitor tool ----------------------------------------------------
                 - name: Source Maps Monitor tool
                   items:
                     - name: Source Maps Monitor tool
