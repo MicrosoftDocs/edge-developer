@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+        - name: Microsoft Edge 138
+          href: ./web-platform/release-notes/138.md
+          displayName: Microsoft Edge 137 web platform release notes (Jun. 2025)  # page title
+
         - name: Microsoft Edge 137
           href: ./web-platform/release-notes/137.md
           displayName: Microsoft Edge 137 web platform release notes (May 2025)  # page title
