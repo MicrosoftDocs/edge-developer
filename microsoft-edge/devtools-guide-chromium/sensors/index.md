@@ -109,7 +109,10 @@ To simulate different device orientations, [open the Sensors tool](#open-the-sen
 
 * **Custom orientation**, to provide your own exact orientation.
 
-   After selecting **Custom orientation**, the **alpha**, **beta**, and **gamma** fields are enabled.  See [Alpha](https://web.dev/device-orientation/#alpha), [Beta](https://web.dev/device-orientation/#beta), and [Gamma](https://web.dev/device-orientation/#gamma) to understand how these axes work.
+   After selecting **Custom orientation**, the **alpha**, **beta**, and **gamma** fields are enabled.  To understand how these axes work, see:
+   * [DeviceOrientationEvent: alpha property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/alpha)
+   * [DeviceOrientationEvent: beta property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/beta)
+   * [DeviceOrientationEvent: gamma property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/gamma)
 
    After selecting **Custom orientation**, you can also set a custom orientation by dragging the **Orientation Model**.  Hold **Shift** before dragging, to rotate along the alpha axis:
 
@@ -259,24 +262,22 @@ To emulate CPU pressure on your website:
 * [Emulate mobile devices (Device Emulation)](../device-mode/index.md)
 
 MDN:
+* [Geolocation API](https://developer.mozilla.org/docs/Web/API/Geolocation_API)
+* [Device orientation events](https://developer.mozilla.org/docs/Web/API/Device_orientation_events)
+* [DeviceOrientationEvent: alpha property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/alpha)
+* [DeviceOrientationEvent: beta property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/beta)
+* [DeviceOrientationEvent: gamma property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/gamma)
+
 * [Navigator: hardwareConcurrency property](https://developer.mozilla.org/docs/Web/API/Navigator/hardwareConcurrency)
 * [Compute Pressure API](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API) at MDN.
    * [Pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states) in _Compute Pressure API_.
 
 Demos:
 * [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) 
-* [Ephemeral Canvas](https://idle-detection.glitch.me/) demo page.
+* [Idle detection demo](https://microsoftedge.github.io/Demos/idle-detection/)
 
 Web.dev:
 * [User Location](https://web.dev/user-location/)
-* [Device Orientation & Motion](https://web.dev/device-orientation/)
-   * [Alpha](https://web.dev/device-orientation/#alpha)
-   * [Beta](https://web.dev/device-orientation/#beta)
-   * [Gamma](https://web.dev/device-orientation/#gamma)
-
-Chrome:
-* [Compute Pressure API](https://developer.chrome.com/docs/web-platform/compute-pressure) at developer.chrome.com.
-* [Detect inactive users with the Idle Detection API](https://developer.chrome.com/articles/idle-detection)
 
 Emscripten:
 * [Pthreads support](https://emscripten.org/docs/porting/pthreads.html)
