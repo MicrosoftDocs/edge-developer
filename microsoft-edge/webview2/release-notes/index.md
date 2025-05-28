@@ -57,7 +57,7 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2ControllerOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true)
+* `CoreWebView2ControllerOptions` Class:
   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true#defaultbackgroundcolor)
 
 ##### [Win32/C++](#tab/win32cpp)
