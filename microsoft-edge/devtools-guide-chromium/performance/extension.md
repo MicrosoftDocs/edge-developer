@@ -214,7 +214,7 @@ To see the custom perf measures in the demo:
 
    The profile is displayed.
 
-1. Expand the ***Custom performance timings — Custom track** track group.
+1. Expand the **Custom performance timings — Custom track** track group.
 
    The following custom tracks are shown:
    * **Photo creation**
