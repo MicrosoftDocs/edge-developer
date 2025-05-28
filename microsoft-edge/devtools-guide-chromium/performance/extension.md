@@ -55,7 +55,7 @@ This API offers two approaches to achieve this:
 
 1. **The User Timings API (using `performance.mark` and `performance.measure`)**
 
-   This API leverages the existing [User Timings API](https://developer.mozilla.org/docs/Web/API/Performance_API/User_timing).  It also adds entries to the browser's internal [performance timeline](https://developer.mozilla.org/docs/Web/API/Performance_API), allowing for further analysis and integration with other performance tools.
+   This API leverages the existing [User Timings API](https://developer.mozilla.org/docs/Web/API/Performance_API/User_timing).  It also adds entries to the browser's internal performance timeline, allowing for further analysis and integration with other performance tools; see [Performance APIs](https://developer.mozilla.org/docs/Web/API/Performance_API) at MDN.
 
 ![An example of how custom tracks look in the Performance tool](./extension-images/example.png)
 
@@ -335,9 +335,20 @@ This results in the following marker in the **Timings** track, along with its to
 
 
 <!-- ====================================================================== -->
-<!-- ## See also -->
+## See also
 <!-- not upstream -->
-<!-- todo: all links in article -->
+<!-- all links in article -->
+
+MDN:
+* [Performance APIs](https://developer.mozilla.org/docs/Web/API/Performance_API)
+   * [User timing](https://developer.mozilla.org/docs/Web/API/Performance_API/User_timing) in Web APIs > Performance APIs.
+* [Performance: now() method](https://developer.mozilla.org/docs/Web/API/Performance/now)
+* [Performance: mark() method](https://developer.mozilla.org/docs/Web/API/Performance/mark)
+* [Performance: measure() method](https://developer.mozilla.org/docs/Web/API/Performance/measure)
+* [Performance: timeOrigin property](https://developer.mozilla.org/docs/Web/API/Performance/timeOrigin)
+
+Demos:
+* [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/)
 
 
 <!-- ====================================================================== -->
