@@ -776,14 +776,10 @@
 # Sensors tool ----------------------------------------------------------------
                 - name: Sensors tool
                   items:
-                    - name: Override geolocation with the Sensors tool
-                      href: ./devtools-guide-chromium/device-mode/geolocation.md
-                      displayName: Sensors tool, Device Emulation
-
-                    - name: Simulate device orientation with the Sensors tool
-                      href: ./devtools-guide-chromium/device-mode/orientation.md
-                      displayName: Sensors tool, Device Emulation
-# Source maps monitor tool ----------------------------------------------------
+                    - name: Emulate device sensors
+                      href: ./devtools-guide-chromium/sensors/index.md
+                      displayName: Device Emulation
+# Source Maps Monitor tool ----------------------------------------------------
                 - name: Source Maps Monitor tool
                   items:
                     - name: Source Maps Monitor tool

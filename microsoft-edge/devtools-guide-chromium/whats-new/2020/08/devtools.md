@@ -269,7 +269,7 @@ The [Idle Detection API](https://web.dev/idle-detection) allows developers to de
 Chromium issue: [#1090802](https://crbug.com/1090802)
 
 See also:
-* [Override geolocation with the Sensors tool](../../../device-mode/geolocation.md)
+* [Override geolocation](../../../sensors/index.md#override-geolocation) in _Emulate device sensors_.
 
 
 <!-- ------------------------------ -->
