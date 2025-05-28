@@ -112,12 +112,12 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2ControllerOptions` Class:
-  * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3344-prerelease&preserve-view=true)<!-- todo: check link/format; manually constructed -->
+  * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3344-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2ControllerOptions` Class:
-  * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3344-prerelease&preserve-view=true#allowhostinputprocessing)<!-- todo: check link/format; added # member suffix -->
+  * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3344-prerelease&preserve-view=true#allowhostinputprocessing)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -137,7 +137,7 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 
 * Fixed a bug where a mouse event doesn't fire after a touch event.
 * Disabled Web capture on the WebView2 control.
-* Fixed the **Downloads** dialog.<!-- todo: **Download**? -->
+* Fixed the **Downloads** dialog.
 * Fixed an issue with downloads in the default browser frame.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
 * Fixed the margins in the printed PDF.
 
