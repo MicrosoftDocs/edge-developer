@@ -32,7 +32,7 @@ Jan 2025
 <!-- ====================================================================== -->
 ## 1.0.3296.44
 
-Release Date: June 02, 2025
+Release Date: June 03, 2025
 
 [NuGet package for WebView2 SDK 1.0.3296.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296.44)
 
@@ -85,7 +85,7 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 <!-- ====================================================================== -->
 ## 1.0.3344-prerelease
 
-Release Date: June 02, 2025
+Release Date: June 03, 2025
 
 [NuGet package for WebView2 SDK 1.0.3344-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3344-prerelease)
 
