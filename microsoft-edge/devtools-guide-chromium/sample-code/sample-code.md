@@ -165,6 +165,10 @@ Cloning the repo is recommended over downloading the repo, so that you can pull 
 
 To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
+1. In a command prompt, enter `git` to check whether git is installed.
+
+1. If not done already, [Download git](https://git-scm.com/downloads) and install it.
+
 1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
 
 1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button.
