@@ -16,19 +16,10 @@ You can contact the Microsoft Edge extensions support team to request help, subm
 <!-- ====================================================================== -->
 ## Inquire about an extension's review status or certification status
 
-For questions about a specific developer account, or questions about the review status or certification status of your extension after submitting the extension via Partner Center, email extensions developer support at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
-
-For questions about a specific developer account or the certification status of a specific extension, don't use the public **Issues** tab or the **Discussions** tab in the MicrosoftEdge-Extensions repo; use email instead.
+For questions about a specific developer account, or questions about the review status or certification status of your extension after submitting the extension via Partner Center, please contact us via **Issues** tab or the **Discussions** tab in the MicrosoftEdge-Extensions repo in Github.
 
 See also:
 * [Publish a Microsoft Edge extension](./publish-extension.md)
-
-
-<!-- ====================================================================== -->
-## Send email to extensions developer support
-
-To discuss issues about a specific developer account or extension, you can privately contact extensions developer support at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
-
 
 <!-- ====================================================================== -->
 ## Discussion forum in the MicrosoftEdge-Extensions repo
