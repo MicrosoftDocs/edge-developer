@@ -109,7 +109,7 @@ To use the Microsoft Edge Add-ons API, you first need to enable the API for your
 
 ##### [v1.1](#tab/v1-1)
 
-1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), sign in to the account that you used to publish an add-on.
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), sign in to the account that you used to publish an Edge extension.
 
 1. Under the **Microsoft Edge** program, select **Publish API**.
 
@@ -138,7 +138,7 @@ To use the Microsoft Edge Add-ons API, you first need to enable the API for your
 
 ##### [v1](#tab/v1)
 
-1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), sign in to the account that you used to publish an add-on.
+1. At your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), sign in to the account that you used to publish an Edge extension.
 
 1. Under the **Microsoft Edge** program, select **Publish API**.
 
