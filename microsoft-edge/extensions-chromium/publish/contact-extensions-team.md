@@ -52,14 +52,14 @@ https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md#discus
 
 Use the [Discussions](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) page of the **MicrosoftEdge-Extensions** repo for:
 
-* Discussing with the Extensions team:
+* Discussions with the Extensions team:
    * Follow the latest announcements and updates from the Microsoft Edge extensions team.
    * Request a feature for Edge extensions.
    * Discuss how to improve UI features that are at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
    * Discuss how to improve extension publishing, management and listing processes or workflows.
    * Provide feedback about features for extensions publishing, extensions management, or processes or workflows for extensions listings.
 
-* Discussing with other extension developers:
+* Discussions with other extension developers:
    * Discuss technical questions about developing an Edge extension.
    * Share best practices, tips, and tricks with other developers on building, publishing, managing, or acquiring more users for their browser extension.
    * Share ideas about features for Microsoft Edge extensions.
