@@ -61,8 +61,9 @@ Upon finding issues, you can report them via the [Microsoft Edge / WebView2Feedb
 
 * [Self-host by deploying preview channels](./self-hosting.md)
 * [Test upcoming APIs and features](./set-preview-channel.md)
-* [Automate and test WebView2 apps with Microsoft Edge WebDriver](/microsoft-edge/webdriver)
+* [Automate and test WebView2 apps with Microsoft Edge WebDriver](./webdriver.md)
+* [Site compatibility-impacting changes coming to Microsoft Edge](../../web-platform/site-impacting-changes.md)
 * [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
-* [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes)
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 * [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels)
 * [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download a preview channel of Microsoft Edge (Beta, Dev, or Canary).
