@@ -36,9 +36,6 @@ Participate in the [Discussions](https://github.com/microsoft/MicrosoftEdge-Exte
    * Discuss how to improve extension publishing, management and listing processes or workflows.
    * Provide early feedback to the Microsoft Edge extensions team about new features for managing and publishing extensions.
 
-See also:
-* [README.md](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md) of the **MicrosoftEdge-Extensions** repo.
-
 
 <!-- ====================================================================== -->
 ## Issues page in the MicrosoftEdge-Extensions repo
@@ -76,3 +73,10 @@ You can follow what's happening with Microsoft Edge extensions via [#EdgeExtensi
 <!-- not specific to extensions -->
 
 For news and updates about developing for the web with Microsoft Edge, follow the [Microsoft Edge Dev (@MSEdgeDev)](https://x.com/msedgedev/) team on X (Twitter).
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [README.md](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md) of the **MicrosoftEdge-Extensions** repo.
+* [Communicating on GitHub](https://docs.github.com/en/get-started/using-github/communicating-on-github) - When to use **Issues** vs. **Discussions**.
