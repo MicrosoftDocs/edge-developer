@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 02/11/2025
+ms.date: 05/30/2025
 ---
 # Contact the Microsoft Edge extensions team
 
@@ -16,10 +16,14 @@ You can contact the Microsoft Edge extensions support team to request help, subm
 <!-- ====================================================================== -->
 ## Inquire about an extension's review status or certification status
 
-For questions about a specific developer account, or questions about the review status or certification status of your extension after submitting the extension via Partner Center, please contact us via **Issues** tab or the **Discussions** tab in the MicrosoftEdge-Extensions repo in Github.
+For questions about a specific developer account, or questions about the review status or certification status of your extension after submitting the extension via Partner Center, use either:
+
+* The [Issues](https://github.com/microsoft/MicrosoftEdge-Extensions/issues) tab of the **MicrosoftEdge-Extensions** repo.
+* The [Discussions](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions) tab of the **MicrosoftEdge-Extensions** repo.<!-- todo: strike Discussions, tighten Issues link/sentence.  if keep Discussions, add list item in Discussions section like in Issues section -->
 
 See also:
 * [Publish a Microsoft Edge extension](./publish-extension.md)
+
 
 <!-- ====================================================================== -->
 ## Discussion forum in the MicrosoftEdge-Extensions repo
@@ -34,6 +38,8 @@ Participate in the [Discussions](https://github.com/microsoft/MicrosoftEdge-Exte
    * Share inputs or suggestions to the Microsoft Edge extensions team.
    * Discuss how to improve extension publishing, management and listing processes or workflows.
    * Provide early feedback to the Microsoft Edge extensions team about new features for managing and publishing extensions.
+<!-- todo: if keep "Discussions" in section above, add here:
+* Questions about a specific developer account, or questions about the review status or certification status of your extension after submitting the extension via Partner Center. -->
 
 See also:
 * [README.md](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md) of the **MicrosoftEdge-Extensions** repo.
@@ -42,12 +48,13 @@ See also:
 <!-- ====================================================================== -->
 ## Issues page in the MicrosoftEdge-Extensions repo
 
-To publicly report or discuss an issue about extensions, use the [Issues](https://github.com/microsoft/MicrosoftEdge-Extensions/issues) page in the **MicrosoftEdge-Extensions** repo.
+To report or discuss an issue about extensions, use the [Issues](https://github.com/microsoft/MicrosoftEdge-Extensions/issues) page in the **MicrosoftEdge-Extensions** repo.
 
 Use this **Issues** page for: 
 * Aspects of Microsoft Partner Center that affect all extension developers.
 * Aspects of extensions that affect all extension developers or all Microsoft Edge extension users.
 * Aspects of the UI that's at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) that affect all extension developers or all Microsoft Edge extension users.
+* Questions about a specific developer account, or questions about the review status or certification status of your extension after submitting the extension via Partner Center.
 
 
 <!-- ====================================================================== -->
