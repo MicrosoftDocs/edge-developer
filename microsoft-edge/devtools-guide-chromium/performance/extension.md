@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 03/13/2025
+ms.date: 05/29/2025
 ---
 <!-- Copyright Andrés Olivares and Sofia Emelianova
 
@@ -34,8 +34,8 @@ ms.date: 03/13/2025
 * [Code examples](#code-examples)
    * [`console.timeStamp` API examples](#consoletimestamp-api-examples)
    * [User Timings API examples](#user-timings-api-examples)
-      * [Add custom tracks and entries to the timeline](#add-custom-tracks-and-entries-to-the-timeline)
-      * [Add markers to the Timings track](#add-markers-to-the-timings-track)
+      * [Add custom tracks and entries to the timeline (`performance.measure()`)](#add-custom-tracks-and-entries-to-the-timeline-performancemeasure)
+      * [Add markers to the Timings track (`performance.mark()`)](#add-markers-to-the-timings-track-performancemark)
 * [See also](#see-also)
 
 
@@ -194,17 +194,17 @@ interface ExtensionMarkerPayload {
 <!-- ====================================================================== -->
 ## View your data in the timeline
 <!-- https://developer.chrome.com/docs/devtools/performance/extension#view-custom-data -->
+<!-- how to view a custom track, not how to create it -->
 
-To see your custom data in the timeline, in the **Performance** tool, make sure the setting is on: click **Capture settings** (![Capture settings icon](./extension-images/capture-settings-icon.png)), and then select the **Show custom tracks** checkbox:
+To see the custom performance measures in the demo:
 
-![The 'Show custom tracks' checkbox in the 'Capture settings' of the Performance tool](./extension-images/custom-tracks-setting.png)
-<!-- Addr bar shows github.io -->
-<!-- upstream toolbar shows localhost:4200/ -->
-<!-- upstream "Main" timeline shows http://localhost:4200/ -->
+1. Optionally, clone the "MicrosoftEdge / Demos" repo, and then start a localhost server in the cloned `demos/photo-gallery` directory.  See [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) and [Start the localhost server](../sample-code/sample-code.md#start-the-localhost-server), in _Sample code for DevTools_.  This approach enables you to modify the sample code.
 
-To see the custom perf measures in the demo:
+1. In the browser, go to `http://localhost:8080` or equivalent, in a new window or tab.
 
-1. Open the [Photo Gallery demo page](https://microsoftedge.github.io/Demos/photo-gallery/) in a new window or tab.
+   Or, instead of cloning the repo and starting the server, open the [Photo Gallery demo page](https://microsoftedge.github.io/Demos/photo-gallery/) in a new window or tab.  This approach doesn't enable you to modify the sample code.
+
+   **Open the Performance tool:**
 
 1. Right-click the demo webpage, and then select **Inspect**.
 
@@ -212,11 +212,15 @@ To see the custom perf measures in the demo:
 
 1. In DevTools, select the **Performance** (![Performance icon](./extension-images/performance-icon.png)) tool.
 
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./extension-images/capture-settings-icon.png)) button, and then make sure that the **Show custom tracks** checkbox is selected:
+
+   ![The 'Show custom tracks' checkbox in the 'Capture settings' of the Performance tool](./extension-images/custom-tracks-setting.png)
+
 1. Click the **Record** (![Record icon](./extension-images/record-icon.png)) button.
 
 1. Reload the page.
 
-1. Change the camera model filter.  For example, at the top of the demo page, in the **Camera** dropdown menu, change from **All** to **Apple iPhone 12**.
+1. Change the camera model filter.  For example, at the top of the demo page, in the **Camera** dropdown menu on the left, change from **All** to **Apple iPhone 12**.
 
 1. Click a photo, such as the first photo.
 
@@ -226,25 +230,79 @@ To see the custom perf measures in the demo:
 
    The profile is displayed.
 
-1. Expand the **Custom performance timings — Custom track** track group.
+1. Scroll down to the **Custom performance timings — Custom track** track group, and expand it.
 
    The following custom tracks are shown:
    * **Photo creation**
    * **Filtering**
    * **Loading**
 
-1. Expand each of these three tracks to see the custom performance measures:
+1. Expand each of these three tracks.
+
+1. Use the mouse and/or arrow keys to shift and zoom the profile, to display the custom performance measures.
 
    ![Expanded custom tracks](./extension-images/expanded-custom-tracks.png)
-   <!-- toolbar shows https://microsoftedge.github.io/Demos/photo-gallery/ -->
-   <!-- "Main" timeline shows https://microsoftedge.github.io/Demos/photo-gallery/ -->
+
+1. In the custom track, select a marker.  A custom tooltip is displayed.
+
+   In the **Summary** tab at the bottom of the **Performance** tool, details are shown for the marker.
+
+The code that defines these custom performance measures is shown in [Add custom tracks and entries to the timeline (`performance.measure()`)](#add-custom-tracks-and-entries-to-the-timeline-performancemeasure), below.
+
+
+<!-- ====================================================================== -->
+## Code examples
+<!-- https://developer.chrome.com/docs/devtools/performance/extension#code_examples -->
+
+Below are a few examples of how to use the API to add your own data to the **Performance** tool by using each available mechanism.
 
 
 <!-- ------------------------------ -->
-#### Source code from Gallery demo
-<!-- not upstream -->
+#### `console.timeStamp` API examples
+<!-- https://developer.chrome.com/docs/devtools/performance/extension#consoletimestamp_api_examples -->
 
-The Gallery demo uses the [performance.measure()](https://developer.mozilla.org/docs/Web/API/Performance/measure#detail) method from the User Timings API.  The demo doesn't use `performance.mark()` or the `console.timeStamp` API.
+To add `console.timeStamp` to the Photo Gallery demo:
+
+1. Clone the Demos repo and start the localhost server as described in [View your data in the timeline](#view-your-data-in-the-timeline), above.
+
+1. In `\Demos\photo-gallery\gallery.js`, in the top of the `loadPhoto()` method, add the following code:
+
+   ```javascript
+   // Take a start timestamp
+   const start = performance.now();
+   // Measure duration from start to now
+   console.timeStamp("measure 1", start, undefined, "My Track", "My Group", "primary-light");
+   // Take an end timestamp
+   const end = performance.now();
+   // Measure duration from start to end
+   console.timeStamp("measure 2", start, end, "My Track", "My Group", "secondary-dark");
+   ```
+   
+1. Make a recording and then view it, as described in [View your data in the timeline](#view-your-data-in-the-timeline), above.
+
+   This results in the following custom track entry in the performance timeline:
+
+   ![A custom track with custom entries added with the console.timeStamp API](./extension-images/custom-track-console-timestamp.png)
+
+
+<!-- ------------------------------ -->
+#### User Timings API examples
+<!-- https://developer.chrome.com/docs/devtools/performance/extension#user_timings_api_examples -->
+
+In the next sections, see the examples of code that showcase how to do the following:
+
+* [Add custom tracks and entries to the timeline](#add-custom-tracks-and-entries-to-the-timeline)
+* [Add markers to the Timings track](#add-markers-to-the-timings-track)
+
+
+<!-- ---------- -->
+###### Add custom tracks and entries to the timeline (`performance.measure()`)
+<!-- https://developer.chrome.com/docs/devtools/performance/extension#tracks -->
+
+Create custom tracks and populate them with entries to visualize your performance data in a custom track.
+
+<!-- not upstream: -->
+For example, the above Photo Gallery demo uses the [performance.measure()](https://developer.mozilla.org/docs/Web/API/Performance/measure#detail) method from the User Timings API.  (The provided demo doesn't use `performance.mark()` or the `console.timeStamp` API.)
 
 Below are excerpts from the demo's source code and which keywords are used for custom perf data, from [photo-gallery/gallery.js](https://github.com/MicrosoftEdge/Demos/blob/main/photo-gallery/gallery.js):
 
@@ -329,54 +387,11 @@ performance.measure(perfMeasureDescription, {
 });
 ```
 
-
-<!-- ====================================================================== -->
-## Code examples
-<!-- https://developer.chrome.com/docs/devtools/performance/extension#code_examples -->
-
-Below are a few examples of how to use the API to add your own data to the **Performance** tool using each available mechanism.
-
-
-<!-- ------------------------------ -->
-#### `console.timeStamp` API examples
-<!-- https://developer.chrome.com/docs/devtools/performance/extension#consoletimestamp_api_examples -->
-
-```javascript
-// Take a start timestamp
-const start = performance.now();
-
-// Measure duration from start to now
-console.timeStamp("measure 1", start, undefined, "My Track", "My Group", "primary-light");
-
-// Take an end timestamp
-const end = performance.now();
-
-// Measure duration from start to end
-console.timeStamp("measure 2", start, end, "My Track", "My Group", "secondary-dark");
-```
-
-This results in the following custom track entry in the performance timeline:
-
-![A custom track with custom entries added with the console.timeStamp API](./extension-images/custom-track-console-timestamp.png)<!-- todo: png -->
-<!-- upstream toolbar shows about:blank -->
-<!-- upstream "Main" timeline shows about:blank -->
-
-
-<!-- ------------------------------ -->
-#### User Timings API examples
-<!-- https://developer.chrome.com/docs/devtools/performance/extension#user_timings_api_examples -->
-
-In the next sections, see the examples of code that showcase how to do the following:
-
-* [Add custom tracks and entries to the timeline](#add-custom-tracks-and-entries-to-the-timeline)
-* [Add markers to the Timings track](#add-markers-to-the-timings-track)
+The result is shown in [View your data in the timeline](#view-your-data-in-the-timeline), above.
 
 
 <!-- ---------- -->
-###### Add custom tracks and entries to the timeline
-<!-- https://developer.chrome.com/docs/devtools/performance/extension#tracks -->
-
-Create custom tracks and populate them with entries to visualize your performance data in a custom track. For example:
+**Example 2, not used in photo-gallery demo:**
 
 ```javascript
 // Mark used to represent the start of the image processing task
@@ -407,18 +422,56 @@ performance.measure("Image Processing Complete", {
 });
 ```
 
-This results in the following custom track entry in the performance timeline, along with its tooltip text and properties:
 
-![A custom track in the performance timeline](./extension-images/custom-track.png)<!-- todo: png -->
-<!-- upstream toolbar shows web.dev/ -->
-<!-- upstream "Main" timeline shows https://web.dev/ -->
+<!-- ---------- -->
+###### Add markers to the Timings track (`performance.mark()`)
+<!-- https://developer.chrome.com/docs/devtools/performance/extension#markers -->
+
+Visually highlight specific points of interest in the timeline with custom markers that span across all tracks.
+
+For example:
+
+Within `\Demos\photo-gallery\gallery.js`, within the `addEventListener('input', e => {` body, below the `performance.measure()` call, add the following `performance.mark()` call:
+
+```javascript
+performance.mark("Filter Applied", {
+   detail: {
+      devtools: {
+         dataType: "marker",
+         color: "secondary",
+         properties: [
+            ['Filter Value', filter.value]
+         ],
+         tooltipText: "Filter Applied"
+      }
+   }
+});
+```
+
+Within `\Demos\photo-gallery\gallery.js`, within the `function loadPhoto()` body, below the `performance.measure()` call, add the following `performance.mark()` call:
+
+```javascript
+performance.mark("Photo Loaded", {
+   detail: {
+      devtools: {
+      dataType: "marker",
+      color: "secondary",
+      properties: [
+         ['Photo', fileName]
+      ],
+      tooltipText: "Photo Loaded"
+      }
+   }
+});
+```
+
+This results in the **Filter Applied** and **Photo Loaded** markers in the **Timings** track, along with tooltip text and properties:
+
+![Custom markers in the Timings track: "Filter Applied" and "Photo Loaded"](./extension-images/marker-in-timings.png)
 
 
 <!-- ---------- -->
-###### Add markers to the Timings track
-<!-- https://developer.chrome.com/docs/devtools/performance/extension#markers -->
-
-Visually highlight specific points of interest in the timeline with custom markers that span across all tracks.  For example:
+**Example 3, not used in photo-gallery demo:**
 
 ```javascript
 // Marker indicating when the processed image was uploaded
@@ -436,12 +489,6 @@ performance.mark("Image Upload", {
   }
 });
 ```
-
-This results in the following marker in the **Timings** track, along with its tooltip text and properties:
-
-![A custom marker in the Timings track](./extension-images/marker-in-timings.png)<!-- todo: png -->
-<!-- upstream toolbar shows web.dev/ -->
-<!-- upstream "Main" timeline shows https://web.dev/ -->
 
 
 <!-- ====================================================================== -->
