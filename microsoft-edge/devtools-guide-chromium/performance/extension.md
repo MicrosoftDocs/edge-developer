@@ -146,6 +146,9 @@ console.timeStamp(label: string,
 
    * The color of the entry.
 
+See also:
+* [console: timeStamp() static method](https://developer.mozilla.org/docs/Web/API/console/timeStamp_static)<!-- todo: better link? only lists 1 param, not 6 -->
+
 
 <!-- ====================================================================== -->
 ## Inject your data with the User Timings API
@@ -497,11 +500,12 @@ performance.mark("Image Upload", {
 <!-- all links in article -->
 
 MDN:
+* [console: timeStamp() static method](https://developer.mozilla.org/docs/Web/API/console/timeStamp_static)<!-- todo: better link? only lists 1 param, not 6 -->
 * [Performance APIs](https://developer.mozilla.org/docs/Web/API/Performance_API)
    * [User timing](https://developer.mozilla.org/docs/Web/API/Performance_API/User_timing) in Web APIs > Performance APIs.
-* [Performance: now() method](https://developer.mozilla.org/docs/Web/API/Performance/now)
 * [Performance: mark() method](https://developer.mozilla.org/docs/Web/API/Performance/mark)
 * [Performance: measure() method](https://developer.mozilla.org/docs/Web/API/Performance/measure)
+* [Performance: now() method](https://developer.mozilla.org/docs/Web/API/Performance/now)
 * [Performance: timeOrigin property](https://developer.mozilla.org/docs/Web/API/Performance/timeOrigin)
 
 Demos:
