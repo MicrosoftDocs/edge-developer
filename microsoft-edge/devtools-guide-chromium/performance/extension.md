@@ -289,10 +289,9 @@ To add `console.timeStamp` to the Photo Gallery demo:
 #### User Timings API examples
 <!-- https://developer.chrome.com/docs/devtools/performance/extension#user_timings_api_examples -->
 
-In the next sections, see the examples of code that showcase how to do the following:
-
-* [Add custom tracks and entries to the timeline](#add-custom-tracks-and-entries-to-the-timeline)
-* [Add markers to the Timings track](#add-markers-to-the-timings-track)
+In the next sections, see the examples of code that showcase how to add the following to the performance timeline:
+* [Add custom tracks and entries to the timeline (`performance.measure()`)](#add-custom-tracks-and-entries-to-the-timeline-performancemeasure)
+* [Add markers to the Timings track (`performance.mark()`)](#add-markers-to-the-timings-track-performancemark)
 
 
 <!-- ---------- -->
@@ -431,6 +430,7 @@ Visually highlight specific points of interest in the timeline with custom marke
 
 For example:
 
+<!-- not upstream -->
 Within `\Demos\photo-gallery\gallery.js`, within the `addEventListener('input', e => {` body, below the `performance.measure()` call, add the following `performance.mark()` call:
 
 ```javascript
