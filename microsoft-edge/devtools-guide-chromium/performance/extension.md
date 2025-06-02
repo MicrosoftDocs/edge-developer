@@ -30,7 +30,7 @@ ms.date: 05/29/2025
 * [Inject your data with `console.timeStamp`](#inject-your-data-with-consoletimestamp)
 * [Inject your data with the User Timings API](#inject-your-data-with-the-user-timings-api)
    * [`devtools` object](#devtools-object)
-* [View your data in the timeline](#view-your-data-in-the-timeline)
+* [View your custom data in the performance profile](#view-your-custom-data-in-the-performance-profile)
 * [Code examples](#code-examples)
    * [`console.timeStamp` API examples](#consoletimestamp-api-examples)
    * [User Timings API examples](#user-timings-api-examples)
@@ -63,9 +63,7 @@ The performance extensibility APIs are two approaches to achieve this:
 
    This API leverages the existing [User Timings API](https://developer.mozilla.org/docs/Web/API/Performance_API/User_timing).  It also adds entries to the browser's internal performance timeline, allowing for further analysis and integration with other performance tools; see [Performance APIs](https://developer.mozilla.org/docs/Web/API/Performance_API) at MDN.
 
-![An example of how custom tracks look in the Performance tool](./extension-images/example.png)
-<!-- upstream toolbar shows localhost:4200/ -->
-<!-- upstream "Main" timeline shows http://localhost:4200/ -->
+![An example of how custom tracks look in the Performance tool](./extension-images/example.png)<!-- copy of expanded-custom-tracks.png -->
 
 
 <!-- ====================================================================== -->
@@ -106,6 +104,8 @@ Use the User Timings API (`performance.mark`, `performance.measure`) when:
 * You require the data to be available not only in DevTools but also in the browser's internal performance timeline for broader analysis or other tools.
 
 * You're already familiar with or using the User Timings API.
+
+The Photo Gallery demo demonstrates all of these APIs.
 
 
 <!-- ====================================================================== -->
@@ -158,8 +158,8 @@ console.timeStamp(label: string,
    The color of the entry.
 
 See also:
-* [Specification for console.timeStamp Extension](https://docs.google.com/document/d/1juT7esZ62ydio-SQwEVsY7pdidKhjAphvUghWrlw0II/edit?tab=t.0) - Explainer document that proposed the 6-parameter version of the method.
-* [console: timeStamp() static method](https://developer.mozilla.org/docs/Web/API/console/timeStamp_static) - single-parameter version of the method.
+* [Specification for console.timeStamp Extension](https://docs.google.com/document/d/1juT7esZ62ydio-SQwEVsY7pdidKhjAphvUghWrlw0II/edit?tab=t.0) - 6-parameter version of the method.
+   * [console: timeStamp() static method](https://developer.mozilla.org/docs/Web/API/console/timeStamp_static) - 1-parameter version of the method.
 
 
 <!-- ====================================================================== -->
@@ -189,19 +189,19 @@ type DevToolsColor =
   "error";
 
 interface ExtensionTrackEntryPayload {
-  dataType?: "track-entry"; // Defaults to "track-entry"
-  color?: DevToolsColor;    // Defaults to "primary"
-  track: string;            // Required: Name of the custom track
-  trackGroup?: string;      // Optional: Group for organizing tracks
+  dataType?: "track-entry";        // Defaults to "track-entry"
+  color?: DevToolsColor;           // Defaults to "primary"
+  track: string;                   // Required: Name of the custom track
+  trackGroup?: string;             // Optional: Group for organizing tracks
   properties?: [string, string][]; // Key-value pairs for detailed view
-  tooltipText?: string;     // Short description for tooltip
+  tooltipText?: string;            // Short description for tooltip
 }
 
 interface ExtensionMarkerPayload {
-  dataType: "marker";       // Required: Identifies as a marker
-  color?: DevToolsColor;    // Defaults to "primary"
+  dataType: "marker";              // Required: Identifies as a marker
+  color?: DevToolsColor;           // Defaults to "primary"
   properties?: [string, string][]; // Key-value pairs for detailed view
-  tooltipText?: string;     // Short description for tooltip
+  tooltipText?: string;            // Short description for tooltip
 }
 ```
 
@@ -215,13 +215,12 @@ To see your custom data in a recorded performance profile, in the **Performance*
 
 To record a profile and view the custom performance data of the Photo Gallery demo page:
 
-1. Optionally, clone the "MicrosoftEdge / Demos" repo, and then start a localhost server in the cloned `demos/photo-gallery` directory.  See [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) and [Start the localhost server](../sample-code/sample-code.md#start-the-localhost-server), in _Sample code for DevTools_.  This approach enables you to modify the sample code.
+1. Open the [Photo Gallery demo page](https://microsoftedge.github.io/Demos/photo-gallery/) in a new window or tab.
 
-1. In the browser, go to `http://localhost:8080` or equivalent, in a new window or tab.
-
-   Or, instead of cloning the repo and starting the server, open the [Photo Gallery demo page](https://microsoftedge.github.io/Demos/photo-gallery/) in a new window or tab.  This approach doesn't enable you to modify the sample code.
-
-   **Open the Performance tool:**
+   Or, to be able to modify the sample code:
+   1. Clone the "MicrosoftEdge / Demos" repo, per [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive).
+   1. Start a localhost server in the cloned `demos/photo-gallery` directory, per [Start the localhost server](../sample-code/sample-code.md#start-the-localhost-server), in _Sample code for DevTools_.
+   1. In the browser, go to `http://localhost:8080` or equivalent, in a new window or tab.
 
 1. Right-click the demo webpage, and then select **Inspect**.
 
@@ -250,17 +249,22 @@ To record a profile and view the custom performance data of the Photo Gallery de
 1. Scroll down to the **Custom performance timings — Custom track** track group, and expand it.
 
    The following custom tracks are shown:
+   * **Console timestamp track**
    * **Photo creation**
    * **Filtering**
    * **Loading**
 
-1. Expand each of these three tracks.
+1. Expand each of these four tracks.
 
-1. Use the mouse and/or arrow keys to shift and zoom the profile, to display the custom performance measures.
+1. Use the mouse and arrow keys to shift and zoom the profile, to display the custom performance measures:
 
    ![Expanded custom tracks](./extension-images/expanded-custom-tracks.png)
 
-1. In the custom track, select a marker.  A custom tooltip is displayed.
+1. Hover over a marker in a custom track, such as a **Loading** marker in the **Loading** track.
+
+   A custom tooltip is displayed, including duration and caption.
+
+1. Select a marker in a custom track.
 
    In the **Summary** tab at the bottom of the **Performance** tool, details are shown for the marker.
 
@@ -278,28 +282,112 @@ Below are a few examples of how to use the API to add your own data to the **Per
 #### `console.timeStamp` API examples
 <!-- https://developer.chrome.com/docs/devtools/performance/extension#consoletimestamp_api_examples -->
 
-How `console.timeStamp` works in the Photo Gallery demo:
+In the `populateGallery()` function of the Photo Gallery demo, `console.timeStamp()` is used as follows:
 
-1. In `\Demos\photo-gallery\gallery.js`, in the top of the `loadPhoto()` method, is the following code:
+```javascript
+function populateGallery(images) {
+...
+    const perfMeasureDescription = `Image ${file} created`;
+    performance.measure(perfMeasureDescription, {
+      start: imageCreationStart,
+      end: performance.now(),
+      detail: {
+        devtools: {
+          dataType: "track-entry",
+          color: "primary",
+          trackGroup: customPerformanceTrackGroupName,
+          track: "Photo creation",
+          properties: [
+            ['File', file],
+            ['Width', w],
+            ['Height', h],
+            ['User', user],
+          ],
+          tooltipText: perfMeasureDescription
+        }
+      },
+    });
 
-   ```javascript
-   // Record the start timestamp of some task.
-   const start = performance.now();
+    console.timeStamp("Photo created",                 // label
+                      imageCreationStart,              // start
+                      undefined,                       // end
+                      "Console timestamp track",       // trackName
+                      customPerformanceTrackGroupName, // trackGroup
+                      "tertiary-dark");                // color
+```
 
-   // Later, once the task has been done, record the end timestamp by using console.timeStamp.
-   // Because the end timestamp is undefined, the value of performance.now() will be used.
-   console.timeStamp("measure 1", start, undefined, "My Track", "My Group", "primary-light");
+In the `loadPhoto()` function of the Photo Gallery demo, `console.timeStamp()` is used as follows:
 
-   // Alternatively, you can provide an end timestamp.
-   const end = performance.now();
-   console.timeStamp("measure 2", start, end, "My Track", "My Group", "secondary-dark");
-   ```
+```javascript
+function loadPhoto(fileName) {
+  const loadStartTime = performance.now();
+  const perfMeasureDescription = `Loading photo: ${fileName}`;
 
-1. Make a recording and then view it, as described in [View your data in the timeline](#view-your-data-in-the-timeline), above.
+  return new Promise(resolve => {
+    const imageEl = document.createElement("img");
+    imageEl.src = fileName;
+    imageEl.addEventListener('load', () => {
+      performance.measure(perfMeasureDescription, {
+        start: loadStartTime,
+        end: performance.now(),
+        detail: {
+          devtools: {
+            dataType: "track-entry",
+            color: "tertiary",
+            trackGroup: customPerformanceTrackGroupName,
+            track: "Loading",
+            properties: [
+              ['Photo', fileName]
+            ],
+            tooltipText: perfMeasureDescription
+          }
+        },
+      });
 
-   This results in the following custom track entry in the performance timeline:
+      performance.mark("Photo loaded", {
+        detail: {
+          devtools: {
+            dataType: "marker",
+            color: "secondary",
+            properties: [
+              ['Photo', fileName]
+            ],
+            tooltipText: "Photo Loaded"
+          }
+        }
+      });
 
-   ![A custom track with custom entries added with the console.timeStamp API](./extension-images/custom-track-console-timestamp.png)
+      console.timeStamp("Photo loaded",                  // label
+                        loadStartTime,                   // start
+                        undefined,                       // end
+                        "Console timestamp track",       // trackName
+                        customPerformanceTrackGroupName, // trackGroup
+                        "primary-light");                // color
+
+      resolve(imageEl);
+    }, { once: true });
+  });
+}
+```
+
+**Example 2 (not used in `\Demos\photo-gallery\gallery.js`):**
+
+```javascript
+// Record the start timestamp of some task.
+const start = performance.now();
+
+// Later, once the task has been done, record the end timestamp by using console.timeStamp.
+// Because the end timestamp is undefined, the value of performance.now() will be used.
+console.timeStamp("measure 1", start, undefined, "My Track", "My Group", "primary-light");
+
+// Alternatively, you can provide an end timestamp.
+const end = performance.now();
+console.timeStamp("measure 2", start, end, "My Track", "My Group", "secondary-dark");
+```
+
+This results in the following custom track entry in the performance timeline:
+
+![A custom track with custom entries added with the console.timeStamp API](./extension-images/custom-track-console-timestamp.png)
 
 
 <!-- ------------------------------ -->
@@ -322,15 +410,19 @@ For example, the above Photo Gallery demo uses the [performance.measure()](https
 
 Below are excerpts from the demo's source code and which keywords are used for custom perf data, from [photo-gallery/gallery.js](https://github.com/MicrosoftEdge/Demos/blob/main/photo-gallery/gallery.js):
 
+Define a custom performance track group name:
+
 ```javascript
 const customPerformanceTrackGroupName = "Custom performance timings";
 ```
+
+Define image creation start time:
 
 ```javascript
 const imageCreationStart = performance.now();
 ```
 
-To inject custom data, the Gallery demo includes a `devtools` object within the `detail` property of the `performance.measure` method:
+To inject custom data, a `devtools` object is defined within the `detail` property of the `performance.measure` method, at start of image creation:
 
 ```javascript
 const perfMeasureDescription = `Image ${file} created`;
@@ -353,11 +445,22 @@ performance.measure(perfMeasureDescription, {
       }
    },
 });
+
+console.timeStamp("Photo created",                 // label
+                  imageCreationStart,              // start
+                  undefined,                       // end
+                  "Console timestamp track",       // trackName
+                  customPerformanceTrackGroupName, // trackGroup
+                  "tertiary-dark");                // color
 ```
+
+Define the filter start time:
 
 ```javascript
 const filterStartTime = performance.now();
 ```
+
+The Photo Gallery demo includes a `devtools` object within the `detail` property of the `performance.measure` method for when a filter is selected, to show a subset of photos:
 
 ```javascript
 const description = `Filter applied: ${filter.id}`;
@@ -379,10 +482,14 @@ performance.measure(description, {
 });
 ```
 
+In the demo's `loadPhoto()` function, set the photo load start time and the "loading photo" description:
+
 ```javascript
 const loadStartTime = performance.now();
 const perfMeasureDescription = `Loading photo: ${fileName}`;
 ```
+
+In the demo's `loadPhoto()` function, in the `load` event listener, a `devtools` object is defined within the `performance.measure()` call:
 
 ```javascript
 performance.measure(perfMeasureDescription, {
@@ -403,11 +510,11 @@ performance.measure(perfMeasureDescription, {
 });
 ```
 
-The result is shown in [View your data in the timeline](#view-your-data-in-the-timeline), above.
+The result is shown in [View your custom data in the performance profile](#view-your-custom-data-in-the-performance-profile), above.
 
 
 <!-- ---------- -->
-**Example 2, not used in photo-gallery demo:**
+**Example 2 (not used in photo-gallery demo):**
 
 ```javascript
 // Mark used to represent the start of the image processing task
@@ -445,11 +552,10 @@ performance.measure("Image Processing Complete", {
 
 Visually highlight specific points of interest in the timeline with custom markers that span across all tracks.
 
-For example:
+For example, from `\Demos\photo-gallery\gallery.js`:
 
 <!-- not upstream -->
-Within `\Demos\photo-gallery\gallery.js`, within the `addEventListener('input', e => {` body, below the `performance.measure()` call, is the following `performance.mark()` call:
-<!-- todo: update leadin & code -->
+Within the `addEventListener('input', e => {` body, below the `performance.measure()` call, is the following `performance.mark()` call:
 
 ```javascript
 performance.mark("Filter Applied", {
@@ -466,11 +572,10 @@ performance.mark("Filter Applied", {
 });
 ```
 
-Within `\Demos\photo-gallery\gallery.js`, within the `function loadPhoto()` body, below the `performance.measure()` call, is the following `performance.mark()` call:
-<!-- todo: update leadin & code -->
+Within the `function loadPhoto()` body, below the `performance.measure()` call, is the following `performance.mark()` call:
 
 ```javascript
-performance.mark("Photo Loaded", {
+performance.mark("Photo loaded", {
    detail: {
       devtools: {
       dataType: "marker",
@@ -482,6 +587,13 @@ performance.mark("Photo Loaded", {
       }
    }
 });
+
+console.timeStamp("Photo loaded",                  // label
+                  loadStartTime,                   // start
+                  undefined,                       // end
+                  "Console timestamp track",       // trackName 
+                  customPerformanceTrackGroupName, // trackGroup 
+                  "primary-light");                // color
 ```
 
 This results in the **Filter Applied** and **Photo Loaded** markers in the **Timings** track, along with tooltip text and properties:
@@ -516,8 +628,8 @@ performance.mark("Image Upload", {
 <!-- all links in article -->
 
 MDN:
-* [Specification for console.timeStamp Extension](https://docs.google.com/document/d/1juT7esZ62ydio-SQwEVsY7pdidKhjAphvUghWrlw0II/edit?tab=t.0) - Explainer document that proposed the 6-parameter version of the method.
-   * [console: timeStamp() static method](https://developer.mozilla.org/docs/Web/API/console/timeStamp_static) - single-parameter version of the method.
+* [Specification for console.timeStamp Extension](https://docs.google.com/document/d/1juT7esZ62ydio-SQwEVsY7pdidKhjAphvUghWrlw0II/edit?tab=t.0) - 6-parameter version of the method.
+   * [console: timeStamp() static method](https://developer.mozilla.org/docs/Web/API/console/timeStamp_static) - 1-parameter version of the method.
 * [Performance APIs](https://developer.mozilla.org/docs/Web/API/Performance_API)
    * [User timing](https://developer.mozilla.org/docs/Web/API/Performance_API/User_timing) in Web APIs > Performance APIs.
 * [Performance: mark() method](https://developer.mozilla.org/docs/Web/API/Performance/mark)
