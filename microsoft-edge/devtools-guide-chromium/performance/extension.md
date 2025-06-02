@@ -1,5 +1,5 @@
 ---
-title: Customize your performance data with extensibility API
+title: Customize performance profile with extensibility APIs
 description: Customize performance data with the extensibility API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/29/2025
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Customize your performance data with extensibility API
+# Customize performance profile with extensibility APIs
 <!-- https://developer.chrome.com/docs/devtools/performance/extension -->
 
 **Detailed contents:**
@@ -43,11 +43,17 @@ ms.date: 05/29/2025
 ## Overview
 <!-- https://developer.chrome.com/docs/devtools/performance/extension#overview -->
 
-Want deeper insights into your application's performance beyond the browser's built-in metrics?  The **Performance** tool empowers you to bring your own performance data directly into the timeline.  Whether you're a framework author needing to visualize internal processes, a library developer tracking the impact of your code, or building a complex application with custom instrumentation, the performance extensibility API provides the tools to gain a truly comprehensive understanding of what's happening under the hood.
+The **Performance** tool can display your own performance data, in addition to the browser's built-in metrics.  Displaying your own custom performance data in the **Performance** tool can be useful in cases such as when you are:
 
-By injecting your custom measurements and events, you can create tailored visualizations within the **Performance** tool.  Imagine seeing your framework's component lifecycle events alongside standard browser performance metrics, or tracking the execution flow of your custom rendering engine in perfect synchronization with the browser's rendering pipeline.
+* Building a framework and you need to visualize internal processes.
+* Developing a library and you want to track the impact of your code.
+* Building a complex web application with a lot of client-side processing.
+    
+The performance extensibility APIs make it possible to understand what's happening in your code.
 
-This API offers two approaches to achieve this:
+By injecting custom measurements and events, you can create tailored visualizations within the **Performance** tool.
+
+The performance extensibility APIs are two approaches to achieve this:
 
 1. **The `console.timeStamp` API (extended for DevTools)**
 
@@ -68,33 +74,38 @@ This API offers two approaches to achieve this:
 
 Both APIs offer:
 
-* **Custom Tracks:** Add dedicated tracks and track groups to represent the unique performance aspects of your code.
+* **Custom Tracks:** Add dedicated tracks and track groups, in a performance profile, to represent the unique performance aspects of your code.
 
 * **Entries:** Populate these tracks with entries that clearly mark important events or the duration of specific operation.
 
 * **Color Customization:** Use color-coding to visually distinguish different types of events or measurements at a glance.
 
-**Choosing the right API for your needs:**
 
-* `console.timeStamp` API:
+<!-- ------------------------------ -->
+#### Choose the right API
+<!-- heading not upstream -->
 
-   * Performance impact of instrumentation is a primary concern, especially in production builds.
+The `console.timeStamp` and User Timings API serve different needs.
 
-   * You need a quick and efficient way to mark durations or events without the need for extra metadata.
+Use the `console.timeStamp` API when:
 
-   * You only need the data to be visualized within the **Performance** tool.
+* Performance impact of instrumentation is a primary concern, especially in production builds.
 
-* **User Timings API (performance.mark, performance.measure):**
+* You need a quick and efficient way to mark durations or events without the need for extra metadata.
 
-   * Use when you need to store extra data with each entry, and when you are already using the User Timings API.
+* You only need the data to be visualized within the **Performance** tool.
 
-   * You need to associate rich data (tooltips, detailed properties) with your performance entries.
+Use the User Timings API (`performance.mark`, `performance.measure`) when:
 
-   * You want to add visual markers to highlight specific moments.
+* You need to store extra data with each entry, and when you are already using the User Timings API.
 
-   * You require the data to be available not only in DevTools but also in the browser's internal performance timeline for broader analysis or other tools.
+* You need to associate rich data (tooltips, detailed properties) with your performance entries.
 
-   * You are already familiar with or using the User Timings API.
+* You want to add visual markers to highlight specific moments.
+
+* You require the data to be available not only in DevTools but also in the browser's internal performance timeline for broader analysis or other tools.
+
+* You're already familiar with or using the User Timings API.
 
 
 <!-- ====================================================================== -->
@@ -120,34 +131,35 @@ console.timeStamp(label: string,
 
 * `start` (optional):
 
-   * If defined as string: the name of a previously recorded timestamp (using `console.timeStamp(timeStampName)`).
+   * If defined as a string: the name of a previously recorded timestamp (using `console.timeStamp(timeStampName)`).
 
-   * If defined as number: a timestamp in milliseconds relative to [Performance.timeOrigin](https://developer.mozilla.org/docs/Web/API/Performance/timeOrigin) (for example, taken with [performance.now()](https://developer.mozilla.org/docs/Web/API/Performance/now)) that represents the start time of the timing entry.
+   * If defined as a number: a timestamp in milliseconds relative to [Performance.timeOrigin](https://developer.mozilla.org/docs/Web/API/Performance/timeOrigin) (for example, taken with [performance.now()](https://developer.mozilla.org/docs/Web/API/Performance/now)) that represents the start time of the timing entry.
 
    * If undefined, the current time is used as start time.
 
 * `end`:
 
-   * If defined as string: The name of a previously recorded timestamp.
+   * If defined as a string: The name of a previously recorded timestamp.
 
-   * If defined as number: a timestamp in milliseconds relative to [Performance.timeOrigin](https://developer.mozilla.org/docs/Web/API/Performance/timeOrigin) (for example, taken with [performance.now()](https://developer.mozilla.org/docs/Web/API/Performance/now)) that represents the end time of the timing entry.
+   * If defined as a number: a timestamp in milliseconds relative to [Performance.timeOrigin](https://developer.mozilla.org/docs/Web/API/Performance/timeOrigin) (for example, taken with [performance.now()](https://developer.mozilla.org/docs/Web/API/Performance/now)) that represents the end time of the timing entry.
 
    * If undefined, the current time is used as end time.
 
 * `trackName`:
 
-   * The name of the custom track.
+   The name of the custom track.
 
 * `trackGroup`:
 
-   * The name of the track group.
+   The name of the track group.
 
 * `color`:
 
-   * The color of the entry.
+   The color of the entry.
 
 See also:
-* [console: timeStamp() static method](https://developer.mozilla.org/docs/Web/API/console/timeStamp_static)<!-- todo: better link? only lists 1 param, not 6 -->
+* [Specification for console.timeStamp Extension](https://docs.google.com/document/d/1juT7esZ62ydio-SQwEVsY7pdidKhjAphvUghWrlw0II/edit?tab=t.0) - Explainer document that proposed the 6-parameter version of the method.
+* [console: timeStamp() static method](https://developer.mozilla.org/docs/Web/API/console/timeStamp_static) - single-parameter version of the method.
 
 
 <!-- ====================================================================== -->
@@ -195,11 +207,13 @@ interface ExtensionMarkerPayload {
 
 
 <!-- ====================================================================== -->
-## View your data in the timeline
-<!-- https://developer.chrome.com/docs/devtools/performance/extension#view-custom-data -->
+## View your custom data in the performance profile
+<!-- View your data in the timeline  https://developer.chrome.com/docs/devtools/performance/extension#view-custom-data -->
 <!-- how to view a custom track, not how to create it -->
 
-To see the custom performance measures in the demo:
+To see your custom data in a recorded performance profile, in the **Performance** tool, first use one of the performance extensibility APIs, and then record a profile.  The [Photo Gallery demo page](https://microsoftedge.github.io/Demos/photo-gallery/) already uses the performance extensibility APIs, as demonstrated and then explained below.
+
+To record a profile and view the custom performance data of the Photo Gallery demo page:
 
 1. Optionally, clone the "MicrosoftEdge / Demos" repo, and then start a localhost server in the cloned `demos/photo-gallery` directory.  See [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) and [Start the localhost server](../sample-code/sample-code.md#start-the-localhost-server), in _Sample code for DevTools_.  This approach enables you to modify the sample code.
 
@@ -264,23 +278,23 @@ Below are a few examples of how to use the API to add your own data to the **Per
 #### `console.timeStamp` API examples
 <!-- https://developer.chrome.com/docs/devtools/performance/extension#consoletimestamp_api_examples -->
 
-To add `console.timeStamp` to the Photo Gallery demo:
+How `console.timeStamp` works in the Photo Gallery demo:
 
-1. Clone the Demos repo and start the localhost server as described in [View your data in the timeline](#view-your-data-in-the-timeline), above.
-
-1. In `\Demos\photo-gallery\gallery.js`, in the top of the `loadPhoto()` method, add the following code:
+1. In `\Demos\photo-gallery\gallery.js`, in the top of the `loadPhoto()` method, is the following code:
 
    ```javascript
-   // Take a start timestamp
+   // Record the start timestamp of some task.
    const start = performance.now();
-   // Measure duration from start to now
+
+   // Later, once the task has been done, record the end timestamp by using console.timeStamp.
+   // Because the end timestamp is undefined, the value of performance.now() will be used.
    console.timeStamp("measure 1", start, undefined, "My Track", "My Group", "primary-light");
-   // Take an end timestamp
+
+   // Alternatively, you can provide an end timestamp.
    const end = performance.now();
-   // Measure duration from start to end
    console.timeStamp("measure 2", start, end, "My Track", "My Group", "secondary-dark");
    ```
-   
+
 1. Make a recording and then view it, as described in [View your data in the timeline](#view-your-data-in-the-timeline), above.
 
    This results in the following custom track entry in the performance timeline:
@@ -434,7 +448,8 @@ Visually highlight specific points of interest in the timeline with custom marke
 For example:
 
 <!-- not upstream -->
-Within `\Demos\photo-gallery\gallery.js`, within the `addEventListener('input', e => {` body, below the `performance.measure()` call, add the following `performance.mark()` call:
+Within `\Demos\photo-gallery\gallery.js`, within the `addEventListener('input', e => {` body, below the `performance.measure()` call, is the following `performance.mark()` call:
+<!-- todo: update leadin & code -->
 
 ```javascript
 performance.mark("Filter Applied", {
@@ -451,7 +466,8 @@ performance.mark("Filter Applied", {
 });
 ```
 
-Within `\Demos\photo-gallery\gallery.js`, within the `function loadPhoto()` body, below the `performance.measure()` call, add the following `performance.mark()` call:
+Within `\Demos\photo-gallery\gallery.js`, within the `function loadPhoto()` body, below the `performance.measure()` call, is the following `performance.mark()` call:
+<!-- todo: update leadin & code -->
 
 ```javascript
 performance.mark("Photo Loaded", {
@@ -500,7 +516,8 @@ performance.mark("Image Upload", {
 <!-- all links in article -->
 
 MDN:
-* [console: timeStamp() static method](https://developer.mozilla.org/docs/Web/API/console/timeStamp_static)<!-- todo: better link? only lists 1 param, not 6 -->
+* [Specification for console.timeStamp Extension](https://docs.google.com/document/d/1juT7esZ62ydio-SQwEVsY7pdidKhjAphvUghWrlw0II/edit?tab=t.0) - Explainer document that proposed the 6-parameter version of the method.
+   * [console: timeStamp() static method](https://developer.mozilla.org/docs/Web/API/console/timeStamp_static) - single-parameter version of the method.
 * [Performance APIs](https://developer.mozilla.org/docs/Web/API/Performance_API)
    * [User timing](https://developer.mozilla.org/docs/Web/API/Performance_API/User_timing) in Web APIs > Performance APIs.
 * [Performance: mark() method](https://developer.mozilla.org/docs/Web/API/Performance/mark)

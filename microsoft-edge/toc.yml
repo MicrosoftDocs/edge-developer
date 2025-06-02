@@ -560,7 +560,7 @@
                   href: ./devtools-guide-chromium/performance/selector-stats.md
                   displayName: Performance tool, css selector stats, css selectors, selector stats, selector statistics, css selector statistics
 
-                - name: Customize your performance data with extensibility API
+                - name: Customize performance profile with extensibility APIs
                   href: ./devtools-guide-chromium/performance/extension.md
                   displayName: Performance tool
 # Memory tool -----------------------------------------------------------------
