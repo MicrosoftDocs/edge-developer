@@ -27,6 +27,7 @@ ms.date: 05/29/2025
 **Detailed contents:**
 * [Overview](#overview)
 * [Key benefits](#key-benefits)
+   * [Choose the right API](#choose-the-right-api)
 * [Inject your data with `console.timeStamp`](#inject-your-data-with-consoletimestamp)
 * [Inject your data with the User Timings API](#inject-your-data-with-the-user-timings-api)
    * [`devtools` object](#devtools-object)
