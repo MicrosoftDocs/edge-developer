@@ -6,16 +6,98 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 11/18/2024
+ms.date: 05/05/2025
 ---
 # Overview of WebView2 APIs
 
-Embedding the WebView2 control in your app gives your app access to various methods and properties that are provided through the WebView2 classes or interfaces.  WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities, to enabling your app to modify browser experiences.  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
+Embedding the WebView2 control in your app gives your app access to various methods and properties that are provided through the WebView2 classes or interfaces.
+
+WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities, to enabling your app to modify browser experiences.  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
 
 <!-- maintenance notes:
 when adding an h2 heading, add row in table
 when adding an h4 heading, add nav link below the h2
 -->
+
+**Detailed contents:**
+* [Overview of top-level feature areas](#overview-of-top-level-feature-areas)
+* [Main classes: Environment, Controller, and Core](#main-classes-environment-controller-and-core)
+* [Web/native interop](#webnative-interop)
+   * [Host/web object sharing](#hostweb-object-sharing)
+   * [Script execution](#script-execution)
+   * [Web messaging](#web-messaging)
+   * [Script dialogs](#script-dialogs)
+   * [Shared buffer](#shared-buffer)
+* [Browser features](#browser-features)
+   * [Printing](#printing)
+   * [Cookies](#cookies)
+   * [Image capture](#image-capture)
+      * [Control whether the screen capture UI is shown](#control-whether-the-screen-capture-ui-is-shown)
+   * [Downloads](#downloads)
+   * [Save as](#save-as)
+      * [Configure the security warning when saving a file](#configure-the-security-warning-when-saving-a-file)
+   * [Web notification handling](#web-notification-handling)
+   * [Permissions](#permissions)
+   * [Context menus](#context-menus)
+   * [Status bar](#status-bar)
+   * [Fluent overlay scrollbars](#fluent-overlay-scrollbars)
+   * [User Agent](#user-agent)
+   * [Autofill](#autofill)
+   * [Audio](#audio)
+   * [Hit-testing of mouse-clicks in regions](#hit-testing-of-mouse-clicks-in-regions)
+   * [Swipe gesture navigation](#swipe-gesture-navigation)
+   * [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys)
+   * [Fullscreen](#fullscreen)
+   * [PDF toolbar](#pdf-toolbar)
+   * [Theming](#theming)
+   * [Language](#language)
+   * [New window](#new-window)
+   * [Close window](#close-window)
+   * [Document title](#document-title)
+   * [Favicon](#favicon)
+   * [Security and privacy](#security-and-privacy)
+      * [Tracking prevention](#tracking-prevention)
+      * [SmartScreen](#smartscreen)
+      * [Custom crash reporting](#custom-crash-reporting)
+   * [Browser extensions](#browser-extensions)
+* [Process management](#process-management)
+   * [Frame process info](#frame-process-info)
+* [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content)
+   * [Manage content loaded into WebView2](#manage-content-loaded-into-webview2)
+   * [Navigation history](#navigation-history)
+   * [Navigation kind](#navigation-kind)
+   * [Block unwanted navigating](#block-unwanted-navigating)
+   * [Navigation events](#navigation-events)
+   * [Manage network requests in WebView2](#manage-network-requests-in-webview2)
+   * [Custom scheme registration](#custom-scheme-registration)
+   * [Client certificates](#client-certificates)
+   * [Server certificates](#server-certificates)
+   * [Launch an external URI scheme](#launch-an-external-uri-scheme)
+* [iframes](#iframes)
+* [Authentication](#authentication)
+* [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps)
+   * [When to use these APIs](#when-to-use-these-apis)
+   * [Sizing, positioning, and visibility](#sizing-positioning-and-visibility)
+   * [Zooming](#zooming)
+   * [Rasterization scale](#rasterization-scale)
+   * [Focus and tabbing](#focus-and-tabbing)
+   * [Parent window](#parent-window)
+   * [Keyboard accelerators](#keyboard-accelerators)
+   * [Default background color](#default-background-color)
+* [Rendering WebView2 using Composition](#rendering-webview2-using-composition)
+   * [Connecting to the visual tree](#connecting-to-the-visual-tree)
+   * [Forwarding input](#forwarding-input)
+   * [Drag and drop](#drag-and-drop)
+   * [Accessibility](#accessibility)
+* [Environment options](#environment-options)
+   * [User data](#user-data)
+      * [Multiple profiles](#multiple-profiles)
+      * [Delete a profile](#delete-a-profile)
+   * [Runtime selection](#runtime-selection)
+* [Performance and debugging](#performance-and-debugging)
+   * [Memory usage target](#memory-usage-target)
+* [Chrome DevTools Protocol (CDP)](#chrome-devtools-protocol-cdp)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -2474,39 +2556,56 @@ iframes allow you to embed other webpages into your own webpage.  In WebView2, y
 *  Find out when iframes are navigating.
 *  Allow bypassing x-frame options.
 
-<!-- wording per overview table:
-Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. -->
-
 See also:
 * [Host/web object sharing](#hostweb-object-sharing), above
 * [Using frames in WebView2 apps](./frames.md)
+* [Track navigation history for nested iframes (FrameCreatedEvent API)](../release-notes/index.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Release Notes for the WebView2 SDK_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2` Class:
    * [CoreWebView2.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framecreated)
+
 * [CoreWebView2Frame Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frame)
+   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated)
+
 * [CoreWebView2FrameCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2framecreatedeventargs)
+
 * [CoreWebView2FrameInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
    * [CoreWebView2.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framecreated)
+
 * [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame)
+   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#framecreated)
+
 * [CoreWebView2FrameCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framecreatedeventargs)
+
 * [CoreWebView2FrameInfo Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2_4` interface:
-   * [ICoreWebView2_4::add_FrameCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)
-   * [ICoreWebView2_4::remove_FrameCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_framecreated)
-* [ICoreWebView2Frame interface](/microsoft-edge/webview2/reference/win32/icorewebview2frame)
-* [ICoreWebView2FrameCreatedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)
-* [ICoreWebView2FrameInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)
-* [ICoreWebView2FrameInfoCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollection)<!--C++ only-->
-* [ICoreWebView2FrameInfoCollectionIterator interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollectioniterator)<!--C++ only-->
+   * [ICoreWebView2_4::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)
+   * [ICoreWebView2_4::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_framecreated)
+
+* [ICoreWebView2Frame](/microsoft-edge/webview2/reference/win32/icorewebview2frame)
+
+* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7)
+  * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7#add_framecreated)
+  * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7#remove_framecreated)
+
+* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler)<!-- win32 only -->
+
+* [ICoreWebView2FrameCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)
+
+* [ICoreWebView2FrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)
+
+* [ICoreWebView2FrameInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollection)<!--C++ only-->
+
+* [ICoreWebView2FrameInfoCollectionIterator](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollectioniterator)<!--C++ only-->
 
 ---
 
