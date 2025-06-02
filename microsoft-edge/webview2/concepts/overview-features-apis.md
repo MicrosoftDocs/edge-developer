@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 05/05/2025
+ms.date: 06/03/2025
 ---
 # Overview of WebView2 APIs
 
@@ -2925,21 +2925,36 @@ See also [Enable or disable the browser responding to accelerator keys (shortcut
 
 WebView2 can specify a default background color.  The color can be any opaque color, or transparent.  This color will be used if the HTML page doesn't set its own background color.
 
+<!-- todo: maybe link, after PR 3449 merged
+See also:
+* [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](../release-notes/index.md#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api) in _Release Notes for the WebView2 SDK_.
+-->
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2Controller` Class:
    * [CoreWebView2Controller.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor)
+
+* `CoreWebView2ControllerOptions` Class:
+  * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Controller` Class:
    * [CoreWebView2Controller.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#defaultbackgroundcolor)
 
+* `CoreWebView2ControllerOptions` Class:
+  * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions#defaultbackgroundcolor)
+
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2Controller2` interface:
-   * [ICoreWebView2Controller2::get_DefaultBackgroundColor method](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor)
-   * [ICoreWebView2Controller2::put_DefaultBackgroundColor method](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+   * [ICoreWebView2Controller2::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor)
+   * [ICoreWebView2Controller2::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+
+* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3)
+  * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3#get_defaultbackgroundcolor)
+  * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3#put_defaultbackgroundcolor)
 
 ---
 
