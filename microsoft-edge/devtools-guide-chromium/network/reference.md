@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 05/05/2025
+ms.date: 06/02/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,7 +28,6 @@ ms.date: 05/05/2025
 This article is a feature-driven inventory of the **Network** tool.  Use the **Network** tool to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
 
 
-<!-- -------------- -->
 **Detailed contents:**
 
 * [Record network requests](#record-network-requests)
@@ -337,7 +336,7 @@ To manually clear browser cookies at any time, right-click anywhere in the Reque
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#override-headers -->
 
 See also:
-* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)<!-- todo: add upstream section about headers -->
+* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)<!-- todo: add upstream section about HTTP response headers -->
 * [Override files and HTTP response headers](https://developer.chrome.com/docs/devtools/overrides#override-headers) in _Override web content and HTTP response headers locally_.
 
 
@@ -409,7 +408,7 @@ To refresh search results, in the **Search** tab, click the **Refresh** (![Refre
 
 To clear search results, in the **Search** tab, click the **Clear search** (![Clear search icon](./reference-images/clear-search-icon.png)) button.
 
-For more information on all the ways you can search in DevTools, see [Search: Find text across all loaded resources](https://developer.chrome.com/docs/devtools/search).<!-- todo: local link -->
+For more information on all the ways you can search in DevTools, see [Find source files for a page using the Search tool](../search/search-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -503,7 +502,7 @@ To hide the requests, turn off the **Hide data URLs** checkbox:
 #### Hide extension URLs
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#hide-extension-urls -->
 
-To focus on the code you author, you can filter out irrelevant requests sent by extensions you may have installed in Microsoft Edge.  Extension requests have URLs that start with chrome-extension://.<!-- todo: edge? -->
+To focus on the code you author, you can filter out irrelevant requests sent by extensions you may have installed in Microsoft Edge.  Extension requests have URLs that start with `chrome-extension://`.
 
 To hide extension requests, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Hide extension URLs** so that a checkmark appears next to it.
 
@@ -525,7 +524,7 @@ The status bar at the bottom displays the number of the shown requests out of th
 
 To find out the reason why a response cookie was blocked, select the request, open its **Cookies** tab, and hover over the **information** (**(i)**)<!-- todo: icon --> icon.
 
-Additionally, the **Network** tool shows a warning warning icon next to a request with cookies blocked either because of Chrome flags or configuration. Hover over the icon to see a tooltip with a clue and click it to go to the Issues panel for more information.
+Additionally, the **Network** tool shows a warning warning icon next to a request with cookies blocked either because of Chrome flags or configuration.  Hover over the icon to see a tooltip with a clue and click it to go to the Issues panel for more information.
 
 Warning icons next to a request blocked by Chrome flags or configuration.
 
@@ -535,21 +534,20 @@ Warning icons next to a request blocked by Chrome flags or configuration.
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#show-blocked -->
 <!-- todo: clean up -->
 
-To filter out everything except blocked requests, in the Filters action bar, select More filters > check_box Blocked requests. To test this, you can use the Network request blocking tab in the drawer.
+To filter out everything except blocked requests, in the **Filters** action bar, select **More filters** > **Blocked requests**, so that a checkmark appears.  To test this, you can use the **Network request blocking** tool in the **Quick View** panel at the bottom of DevTools; see [Block requests](./index.md#block-requests) in _Inspect network activity_.
 
-The Requests table shows only blocked requests.
+<!-- ![The Requests table shows only blocked requests](todo: blocked-requests.png) -->
 
-The Requests table highlights blocked requests in red. The status bar at the bottom displays the number of the shown requests out of the total.
+The **Requests** table highlights blocked requests in red.  The status bar at the bottom displays the number of the shown requests out of the total.
 
 
 <!-- ------------------------------ -->
 #### Show only third-party requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#third-party -->
-<!-- todo: clean up -->
 
-To filter out everything except the requests with origin that differs from page origin, in the Filters action bar, select More filters > check_box 3rd-party requests. Try it on this demo page.
+To filter out everything except the requests with origin that differs from page origin, in the **Filters** action bar, select **More filters** > **3rd-party requests**, so that a checkmark appears.  Try it on this [demo page](https://samesite-sandbox.glitch.me/).<!-- todo: which demo? -->
 
-The Requests table shows only the third-party requests.
+<!-- ![The Requests table shows only the third-party requests](todo: third-party-requests.png) -->
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
@@ -558,21 +556,22 @@ The status bar at the bottom displays the number of the shown requests out of th
 ## Sort requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#sort_requests -->
 
-By default, the requests in the Requests table are sorted by initiation time, but you can sort the table using other criteria.
+By default, the requests in the **Requests** table are sorted by initiation time, but you can sort the table using other criteria.
 
 
 <!-- ------------------------------ -->
 #### Sort by column
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#sort-by-column -->
 
-Click the header of any column in the Requests to sort requests by that column.
+Click the header of any column in the **Requests** to sort requests by that column.
 
 
 <!-- ------------------------------ -->
 #### Sort by activity phase
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#sort-by-activity -->
+<!-- Waterfall column was formerly on by default, as shown throughout upstream -->
 
-The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+The **Waterfall** column is off by default.  To turn on the **Waterfall** column: right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 To change how the **Waterfall** column sorts requests:
 
@@ -682,7 +681,6 @@ The **Waterfall** column of the **Requests** pane:
 <!-- ------------------------------ -->
 #### Analyze the messages of a WebSocket connection
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#frames -->
-<!-- todo: clean up text/links -->
 
 To view the messages of a WebSocket connection:
 
@@ -692,7 +690,7 @@ To view the messages of a WebSocket connection:
 
 To refresh the table, re-click the name of the WebSocket connection under the **Name** column of the **Requests** table.
 
-![The Frames panel](todo: network-frames.png)
+<!-- ![The Frames panel](todo: network-frames.png) -->
 
 The table contains the following three columns:
 
@@ -720,17 +718,17 @@ Messages are color-coded according to each type:
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#event-stream -->
 <!-- todo: clean up text/links -->
 
-To view the events that servers stream through Fetch API, EventSource API, and XHR:
+To view the events that servers stream through [Fetch API](https://web.dev/articles/introduction-to-fetch), [EventSource API](https://web.dev/articles/eventsource-basics#event_stream_format), and XHR:
 
-1. Record network requests on a page that streams events. For example, open this demo page and click any of the three buttons.
+1. [Record network](https://developer.chrome.com/docs/devtools/network/reference#record) requests on a page that streams events.  For example, open this [demo page](https://fetch-eventstream.glitch.me/) and click any of the three buttons.
 
-1. In Network, select a request and open the EventStream tab.
+1. In the **Network** tool, select a request, and then open the **EventStream** tab.
 
    <!-- ![The EventStream tab](todo: png) -->
 
-To filter events, specify a regular expression in the filter bar at the top of the EventStream tab.
+To filter events, specify a regular expression in the filter bar at the top of the **EventStream** tab.
 
-To clear the list of captured events, click block-icon Clear.
+To clear the list of captured events, click the **Clear** <!--(![EventStream Clear icon](todo: eventstream-clear-icon.png))--> button.
 
 
 <!-- ------------------------------ -->
@@ -739,10 +737,13 @@ To clear the list of captured events, click block-icon Clear.
 
 To preview the contents of an HTTP response body:
 
-1. In the Request table, click the name of the request.
+1. In the **Network** tool, In the **Requests** table, in the **Name** column, click the name of a request.
+
 1. In the sidebar, select the **Preview** tab:
 
-   ![The Preview panel](./reference-images/resources-preview.png)
+   ![The Preview tab in the Network tool](./reference-images/resources-preview.png)
+
+The **Preview** tab is mostly useful for viewing images.
 
 
 <!-- ------------------------------ -->
@@ -751,10 +752,11 @@ To preview the contents of an HTTP response body:
 
 To display the response body to a request:
 
-1. In the Request table, click the name of the request.
+1. In the **Requests** table, in the **Name** column, click the name of the request.
+
 1. In the sidebar, select the **Response** tab:
 
-   ![The Response panel](./reference-images/resources-response.png)
+   ![The Response tab](./reference-images/resources-response.png)
 
 
 <!-- ------------------------------ -->
@@ -763,8 +765,13 @@ To display the response body to a request:
 
 To display HTTP header data about a request:
 
-1. In the Request table, click the name of the request.
-1. In the sidebar, select the **Headers** tab:
+1. In the **Requests** table, click the name of the request.
+
+1. In the sidebar, select the **Headers** tab, and then scroll down to the various sections:
+   * **General**
+   * **Early Hints Headers** (optional)
+   * **Response Headers**
+   * **Request Headers**
 
    ![The Headers panel](./reference-images/resources-headers.png)
 
@@ -773,11 +780,11 @@ To display HTTP header data about a request:
 ###### View HTTP header source
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#header-source -->
 
-This feature doesn't exist anymore.
+This feature doesn't exist anymore.<!-- todo -->
 
 By default, the **Headers** panel shows header names alphabetically.  To display the HTTP header names in the order received:
 
-1. Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers).
+1. Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers), above.
 
 1. Click **view source**, next to the **Request Header** or **Response Header** section.
 
@@ -787,11 +794,15 @@ By default, the **Headers** panel shows header names alphabetically.  To display
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#provisional-headers -->
 <!-- todo: clean up -->
 
-Sometimes the Headers tab shows the Provisional headers are shown... warning message. This may be due to the following reasons:
+Sometimes the **Headers** tab shows the warning message **Provisional headers are shown...**.  This may be due to the following reasons:
 
-* The request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers. In this case, you can disable caching to see the full request headers. Provisional headers warning message.
+* The request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can disable caching to see the full request headers; see [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache), above.
 
-* The network resource isn't valid. For example, execute fetch("https://jec.fish.com/unknown-url/") in the Console. Provisional headers warning message.
+  <!-- ![Provisional headers warning message](todo: provisional-headers-warning.png) -->
+
+* The network resource isn't valid.  For example, execute `fetch("https://jec.fish.com/unknown-url/")` in the **Console** tool.
+
+  <!-- ![Provisional headers warning message](todo: provisional-headers-warning-2.png) -->
 
 DevTools can also display only provisional headers due to security reasons.
 
@@ -805,7 +816,8 @@ To display the query string parameters and form data of an HTTP request in a hum
 <!-- upstream:
 To view the request's payload, that is, its query string parameters and form data, select a request from the Requests table and open the Payload tab. -->
 
-1. In the Requests table, click the name of the request.
+1. In the **Requests** table, click the name of the request.
+
 1. In the sidebar, select the **Payload** tab:
 
   ![The Query String Parameters section in the Payload tab](./reference-images/resources-headers-query-string-parameters.png)
@@ -816,13 +828,12 @@ To view the request's payload, that is, its query string parameters and form dat
 <!-- ---------- -->
 ###### View payload source
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#payload-source -->
-<!-- todo: clean up -->
 
 By default, the **Network** tool shows the payload in a human-readable form.
 
-To view the sources of query string parameters and form data, on the **Payload** tab, click view source next to the **Query String Parameters** or **Form Data** sections.
+To view the sources of query string parameters and form data, on the **Payload** tab, click **view source** next to the **Query String Parameters** or **Form Data** sections.
 
-![The view source buttons](todo: .png)
+<!-- ![The view source buttons](todo: the-view-source-buttons.png) -->
 
 
 <!-- ---------- -->
@@ -831,9 +842,13 @@ To view the sources of query string parameters and form data, on the **Payload**
 
 To display query string parameters in a human-readable format, but with encodings preserved:
 
-1. In the Request table, click the name of the request.
+1. In the **Requests** table, click the name of the request.
+
 1. In the sidebar, select the **Payload** tab.
-1. Click **view URL-encoded**.
+
+1. Click **view decoded** or **view URL-encoded**.
+
+   <!-- ![Toggle URL-encoding](todo: toggle-url-encoding.png) -->
 
 
 <!-- ------------------------------ -->
@@ -842,12 +857,15 @@ To display query string parameters in a human-readable format, but with encoding
 
 To display the cookies sent in the HTTP header of a request:
 
-1. In the Request table, click the name of the request.
+1. In the **Requests** table, click the name of the request.
+
 1. In the sidebar, select the **Cookies** tab:
 
    ![The Cookies panel](./reference-images/resources-cookies.png)
 
-<!--For more information about each of the columns, see [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
+For more information about each of the columns, see [Fields](../storage/cookies.md#fields) in _View, edit, and delete cookies_.
+
+To modify cookies, see [View, edit, and delete cookies](../storage/cookies.md).
 
 
 <!-- ------------------------------ -->
@@ -857,6 +875,7 @@ To display the cookies sent in the HTTP header of a request:
 To display the timing breakdown of a request:
 
 1. In the Request table, click the name of the request.
+
 1. In the sidebar, select the **Timing** tab.
 
    ![The Timing panel](./reference-images/resources-timing.png)
