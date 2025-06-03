@@ -13,7 +13,7 @@ ms.date: 06/30/2025
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
 
 <!--
-the templates to copy for incoming sections are in template.md
+the templates to copy for incoming sections are in ./includes/templates.md
 
 this webpage covers the most recent ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers: 
 Jun B 2025
