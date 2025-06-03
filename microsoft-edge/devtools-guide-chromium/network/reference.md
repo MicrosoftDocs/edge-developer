@@ -1,12 +1,12 @@
 ---
 title: Network features reference
-description: A comprehensive reference of Microsoft Edge DevTools Network panel features.
+description: A comprehensive reference of Microsoft Edge DevTools Network tool features.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/18/2023
+ms.date: 06/02/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,47 +22,61 @@ ms.date: 07/18/2023
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Network features reference
+<!-- https://developer.chrome.com/docs/devtools/network/reference/ -->
+<!-- todo: update article per upstream, esp [Filter requests](#filter-requests) -->
 
 This article is a feature-driven inventory of the **Network** tool.  Use the **Network** tool to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
 
 
-<!-- -------------- -->
 **Detailed contents:**
 
-<!-- compare https://developer.chrome.com/docs/devtools/network/reference/ -->
-<!-- updated 2025/01/31 -->
 * [Record network requests](#record-network-requests)
    * [Stop recording network requests](#stop-recording-network-requests)
    * [Clear requests](#clear-requests)
    * [Save requests across page loads](#save-requests-across-page-loads)
    * [Capture screenshots during page load](#capture-screenshots-during-page-load)
+   * [Replay XHR request](#replay-xhr-request)
 * [Change loading behavior](#change-loading-behavior)
    * [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache)
       * [Disable the browser cache from the Network conditions tool](#disable-the-browser-cache-from-the-network-conditions-tool)
    * [Manually clear the browser cache](#manually-clear-the-browser-cache)
    * [Emulate offline](#emulate-offline)
    * [Emulate slow network connections](#emulate-slow-network-connections)
+      * [Create custom throttling profiles](#create-custom-throttling-profiles)
+      * [Throttle WebSocket connections](#throttle-websocket-connections)
       * [Emulate slow network connections from the Network Conditions tool](#emulate-slow-network-connections-from-the-network-conditions-tool)
    * [Manually clear browser cookies](#manually-clear-browser-cookies)
+   * [Override HTTP response headers](#override-http-response-headers)
    * [Override the user agent](#override-the-user-agent)
 * [Set user agent client hints](#set-user-agent-client-hints)
+* [Search requests](#search-requests)
 * [Filter requests](#filter-requests)
    * [Filter requests by properties](#filter-requests-by-properties)
    * [Filter requests by type](#filter-requests-by-type)
    * [Filter requests by time](#filter-requests-by-time)
    * [Hide data URLs](#hide-data-urls)
+   * [Hide extension URLs](#hide-extension-urls)
+   * [Show only the requests with blocked response cookies](#show-only-the-requests-with-blocked-response-cookies)
+   * [Show only blocked requests](#show-only-blocked-requests)
+   * [Show only third-party requests](#show-only-third-party-requests)
 * [Sort requests](#sort-requests)
    * [Sort by column](#sort-by-column)
    * [Sort by activity phase](#sort-by-activity-phase)
 * [Analyze requests](#analyze-requests)
    * [Display a log of requests](#display-a-log-of-requests)
       * [Add or remove columns](#add-or-remove-columns)
-      * [Add columns for response headers](#add-columns-for-response-headers)
+      * [Add custom columns for response headers](#add-custom-columns-for-response-headers)
+   * [Group requests by inline frames](#group-requests-by-inline-frames)
    * [Display the timing relationship of requests](#display-the-timing-relationship-of-requests)
+   * [Analyze the messages of a WebSocket connection](#analyze-the-messages-of-a-websocket-connection)
+   * [Analyze events in a stream](#analyze-events-in-a-stream)
    * [Display a preview of a response body](#display-a-preview-of-a-response-body)
    * [Display a response body](#display-a-response-body)
    * [Display HTTP headers](#display-http-headers)
+      * [View HTTP header source](#view-http-header-source)
+      * [Provisional headers warning](#provisional-headers-warning)
    * [Display query string parameters](#display-query-string-parameters)
+      * [View payload source](#view-payload-source)
       * [Display URL-encoded query string parameters](#display-url-encoded-query-string-parameters)
    * [Display cookies](#display-cookies)
    * [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request)
@@ -79,7 +93,7 @@ This article is a feature-driven inventory of the **Network** tool.  Use the **N
    * [Copy one or more requests to the clipboard](#copy-one-or-more-requests-to-the-clipboard)
    * [Copy formatted response JSON to the clipboard](#copy-formatted-response-json-to-the-clipboard)
    * [Copy property values from network requests to your clipboard](#copy-property-values-from-network-requests-to-your-clipboard)
-* [Change the layout of the Network panel](#change-the-layout-of-the-network-panel)
+* [Change the layout of the Network tool](#change-the-layout-of-the-network-tool)
    * [Hide the Filters pane](#hide-the-filters-pane)
    * [Big request rows](#big-request-rows)
    * [Hide the Overview pane](#hide-the-overview-pane)
@@ -88,14 +102,16 @@ This article is a feature-driven inventory of the **Network** tool.  Use the **N
 
 <!-- ====================================================================== -->
 ## Record network requests
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#record -->
 
 By default, DevTools records all network requests in the **Network** tool, so long as DevTools is open.
 
-![The Network panel](./reference-images/panel.png)
+![The Network tool](./reference-images/panel.png)
 
 
 <!-- ------------------------------ -->
 #### Stop recording network requests
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#stop-recording -->
 
 To stop recording requests:
 
@@ -106,6 +122,7 @@ To stop recording requests:
 
 <!-- ------------------------------ -->
 #### Clear requests
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#clear -->
 
 To clear all requests from the Requests table, in the **Network** tool, click the **Clear network log** (![Clear](./reference-images/clear-requests-icon.png)) button:
 
@@ -116,6 +133,7 @@ Or, press **Ctrl+L** (Windows, Linux, macOS) or **Command+K** (macOS) while the 
 
 <!-- ------------------------------ -->
 #### Save requests across page loads
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#preserve-log -->
 
 To save requests across page loads, on the **Network** tool, select the **Preserve log** checkbox:
 
@@ -126,6 +144,7 @@ DevTools saves all requests until you disable **Preserve log**.
 
 <!-- ------------------------------ -->
 #### Capture screenshots during page load
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#screenshots -->
 
 You can capture screenshots to analyze what's displayed for users while waiting for your page to load.
 
@@ -155,21 +174,29 @@ To capture a screenshot:
  
 1. Press **Esc** to close the screenshot viewer.
 
-<!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, right-click the request in the Requests table, and then click **Replay XHR**.  -->
+<!-- ------------------------------ -->
+#### Replay XHR request
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#replay-xhr -->
+
+To replay an XHR request, do one of the following in the **Requests** table:
+
+* Select the request and press **R**.
+* Right-click the request and select **Replay XHR**.
 
 <!--
-![Click Replay XHR](../media/network-replay-xhr.png)
+![Click Replay XHR](todo: selecting-replay-xhr.png)
 -->
 
 
 <!-- ====================================================================== -->
 ## Change loading behavior
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#change_loading_behavior -->
 
 
 <!-- ------------------------------ -->
 #### Emulate a first-time visitor by disabling the browser cache
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#disable-cache -->
 
 To emulate how a first-time user experiences your site, turn on the **Disable cache** checkbox.  DevTools disables the browser cache.  This feature more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.
 
@@ -180,6 +207,7 @@ The **Disable Cache** checkbox:
 
 <!-- ---------- -->
 ###### Disable the browser cache from the Network conditions tool
+<!-- Disable the browser cache from the Network conditions drawer  https://developer.chrome.com/docs/devtools/network/reference/#disable-cache-network-conditions -->
 
 From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel and then disable the browser cache from there:
 
@@ -195,6 +223,7 @@ See also:
 
 <!-- ------------------------------ -->
 #### Manually clear the browser cache
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#clear-cache -->
 
 To manually clear the browser cache at any time, right-click anywhere in the **Requests** table, and then select **Clear browser cache**:
 
@@ -203,6 +232,7 @@ To manually clear the browser cache at any time, right-click anywhere in the **R
 
 <!-- ------------------------------ -->
 #### Emulate offline
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#offline -->
 
 A class of web apps, named [Progressive Web Apps](../progressive-web-apps/index.md) (PWA), are able to function offline with the help of **service workers**.<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> You may find it useful to quickly simulate a device that has no data connection, when you are building this type of app.
 
@@ -215,6 +245,7 @@ The **Offline** dropdown menu:
 
 <!-- ------------------------------ -->
 #### Emulate slow network connections
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#throttling -->
 
 Emulate Slow 3G, Fast 3G, and other connection speeds from the **No throttling** dropdown menu.
 
@@ -238,7 +269,48 @@ See also [Simulate a slower network connection](../network/index.md#simulate-a-s
 
 
 <!-- ---------- -->
+###### Create custom throttling profiles
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#throttling-profile -->
+
+In addition to presets, such as slow or fast 4G, you can also add your own custom throttling profiles:
+
+1. At the top of the **Network** tool, click the **Throttling** dropdown menu, and then select **Custom** > **Add**.
+
+   The DevTools **Settings** page opens, with the **Throttling** page selected.  This is the same as selecting **Customize and control DevTools**, and then selecting the **Throttling** page.
+
+1. Set up a new throttling profile as described in [Set up custom network throttling profile](../settings/throttling.md#set-up-custom-network-throttling-profile) in _Throttling_.
+
+1. In the **Network** tool, click the **Throttling** dropdown menu, and then select your custom throttling profile.
+
+   <!-- ![A custom profile selected from the throttling menu. The Network tool displays a warning icon.](todo: a-custom-profile-selected.png) -->
+
+DevTools displays a <!--todo: Warning icon--> warning icon next to the **Network** tool to remind you that throttling is enabled.
+
+
+<!-- ---------- -->
+###### Throttle WebSocket connections
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#throttle-websocket -->
+
+In addition to HTTP requests, DevTools throttles WebSocket connections.
+
+To observe WebSocket throttling:
+
+1. Initiate a new connection, for example, by using a [test tool](https://www.piesocket.com/websocket-tester).
+
+1. On the **Network** tool, select **No throttling** and send a message through the connection.
+
+1. Create a very slow [custom throttling profile](#create-custom-throttling-profiles) (per above), for example, 10 kbit/s.  Such a slow profile will help you notice the difference.
+
+1. On the **Network** tool, select the profile and send another message.
+
+1. Toggle the **WS** filter, click your connection name, open the **Messages** tab, and check the time difference between sent and echoed messages with and without throttling. <!--todo: For example:-->
+
+<!-- ![Messages sent and echoed with and without throttling](todo: messages-sent-echoed-an.png) -->
+
+
+<!-- ---------- -->
 ###### Emulate slow network connections from the Network Conditions tool
+<!-- Emulate slow network connections from the Network conditions drawer  https://developer.chrome.com/docs/devtools/network/reference/#throttling-network-conditions -->
 
 From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel and then throttle the network connection from there:
 
@@ -252,6 +324,7 @@ See also:
 
 <!-- ------------------------------ -->
 #### Manually clear browser cookies
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#clear-cookies -->
 
 To manually clear browser cookies at any time, right-click anywhere in the Requests table, and then select **Clear browser cookies**.
 
@@ -259,7 +332,17 @@ To manually clear browser cookies at any time, right-click anywhere in the Reque
 
 
 <!-- ------------------------------ -->
+#### Override HTTP response headers
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#override-headers -->
+
+See also:
+* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)<!-- todo: add upstream section about HTTP response headers -->
+* [Override files and HTTP response headers](https://developer.chrome.com/docs/devtools/overrides#override-headers) in _Override web content and HTTP response headers locally_.
+
+
+<!-- ------------------------------ -->
 #### Override the user agent
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#user-agent -->
 
 To manually override the user agent:
 
@@ -272,6 +355,7 @@ To manually override the user agent:
 
 <!-- ====================================================================== -->
 ## Set user agent client hints
+<!-- downstream only section -->
 
 If your site employs user agent client hints and you want to test them, you can set them either in the **Network conditions** tool or in [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
 
@@ -303,69 +387,98 @@ See also:
 
 
 <!-- ====================================================================== -->
+## Search requests
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#search -->
+
+To search across request headers, payloads, and responses:
+
+1. In the **Network** tool, click the **Search** (![Search icon](./reference-images/search-icon.png)) button.  Or, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).
+
+   The **Search** tab opens on the left side of the **Network** tool.
+
+1. In the **Find** text box, enter your query string, and then press **Enter**.
+
+   Optionally click the **Match case** button to turn on case sensitivity.  Optionally click the **Regular expression** button to turn on regular expressions.
+
+1. Click one of the search results.  The **Network** tool highlights in yellow the request that matched.  The **Network** tool also opens the **Headers** or **Response** tab and highlights the string that matched there, if any.
+
+<!-- ![The Search tab on the right in the Network tool](todo: search-requests.png) -->
+
+To refresh search results, in the **Search** tab, click the **Refresh** (![Refresh icon](./reference-images/refresh-search-icon.png)) button.
+
+To clear search results, in the **Search** tab, click the **Clear search** (![Clear search icon](./reference-images/clear-search-icon.png)) button.
+
+For more information on all the ways you can search in DevTools, see [Find source files for a page using the Search tool](../search/search-tool.md)
+
+
+<!-- ====================================================================== -->
 ## Filter requests
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#filter -->
+<!-- todo: update.  check also https://developer.chrome.com/blog/new-in-devtools-130#network -->
 
 You can filter requests by properties, by type, or by time, and you can hide data URLs.
 
 
 <!-- ------------------------------ -->
 #### Filter requests by properties
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#filter-by-property -->
 
 Use the **Filter** text box to filter requests by properties, such as the domain or size of the request.
 
-If the text box isn't displayed, the **Filters** pane is probably hidden.
-For more information, see [Hide the Filters pane](#hide-the-filters-pane).
+If the text box isn't displayed, the **Filters** pane is probably hidden; see [Hide the Filters pane](#hide-the-filters-pane), below.
 
 The **Filter** text box:
 
 ![The Filter text box](./reference-images/filter-text-box.png)
 
-You can use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.
+To invert your filter, select the **Invert** checkbox next to the **Filter** box.
+
+You can use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations aren't supported.
 
 The complete list of supported properties:
 
 | Property | Details |
 |:--- | :--- |
+| `cookie-domain` | Show the resources that set a specific cookie domain. |
+| `cookie-name` | Show the resources that set a specific cookie name. |
+| `cookie-path` | Show the resources that set a specific cookie path. |
+| `cookie-value` | Show the resources that set a specific cookie value. |
 | `domain` | Only display resources from the specified domain.  You can use a wildcard character (`*`) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populates the autocomplete dropdown menu with all of the domains that are found. |
+| `has-overrides` | Show requests that have overridden content, headers, any overrides (yes), or no overrides (no). You can add the corresponding Has overrides column to the request table. |
 | `has-response-header` | Displays the resources that contain the specified HTTP response header.  DevTools populates the autocomplete dropdown menu with all of the response headers that are found. |
 | `is` | Use `is:running` to find `WebSocket` resources. |
 | `larger-than` | Displays resources that are larger than the specified size, in bytes.  Setting a value of `1000` is equivalent to setting a value of `1k`. |
-| `method` | Displays resources that were retrieved over a specified HTTP method type.  DevTools populates the dropdown menu with all of the HTTP methods  that are found. |
-| `mime-type` | Displays resources of a specified MIME type.  DevTools populates the dropdown menu with all MIME types  that are found. |
+| `method` | Displays resources that were retrieved over a specified HTTP method type.  DevTools populates the dropdown menu with all of the HTTP methods that are found. |
+| `mime-type` | Displays resources of a specified MIME type.  DevTools populates the dropdown menu with all MIME types that are found. |
 | `mixed-content` | Show all mixed content resources (`mixed-content:all`) or just the ones that are currently displayed (`mixed-content:displayed`). |
+| `priority` | Show resources whose priority level matches the specified value. |
+| `resource-type` | Show resources of a resource type, for example, image. DevTools populates the autocomplete drop-down with all resource types it has encountered. |
+| `response-header-set-cookie` | Show raw `Set-Cookie` headers in the **Issues** tab.  Malformed cookies with incorrect `Set-Cookie` headers will be flagged in the **Network** tool. |
 | `scheme` | Displays resources retrieved over unprotected HTTP (`scheme:http`) or protected HTTPS (`scheme:https`). |
-| `set-cookie-domain` | Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populate the autocomplete with all of the cookie domains that are found. |
-| `set-cookie-name` | Displays resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populate the autocomplete with all of the cookie names that are found. |
-| `set-cookie-value` | Displays resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populate the autocomplete with all of the cookie values that are found. |
+| `set-cookie-domain` | Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populates the autocomplete with all of the cookie domains that are found. |
+| `set-cookie-name` | Displays resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populates the autocomplete with all of the cookie names that are found. |
+| `set-cookie-value` | Displays resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populates the autocomplete with all of the cookie values that are found. |
 | `status-code` | Displays resources that match the specific HTTP status code.  DevTools populates the autocomplete dropdown menu with all of the status codes that are found. |
+| `url` | Show the resources that have a url matching the specified value. |
 
 
 <!-- ------------------------------ -->
 #### Filter requests by type
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#filter-by-type -->
 
-To filter requests by request type, click the buttons on the **Network** panel:
-*  **XHR**
-*  **JS**
-*  **CSS**
-*  **Img**
-*  **Media**
-*  **Font**
-*  **Doc**
-*  **WS** - WebSocket.
-*  **Manifest**
-*  **Other** - Any other type not listed here.
+<!-- horiz list -->
+To filter requests by request type, click the buttons on the **Network** tool: **All**, **Fetch/XHR**, **Doc**, **CSS**, **JS**, **Font**, **Img**, **Media**, **Manifest**, **WS** (WebSocket), **Wasm** (WebAssembly), or **Other** (any other type not listed here).
 
-If the buttons don't appear, the **Filters** pane might be hidden.  See [Hide the Filters pane](#hide-the-filters-pane).
+If the buttons don't appear, the **Filters** pane might be hidden.  See [Hide the Filters pane](#hide-the-filters-pane), below.
 
 To enable multiple type filters simultaneously, press and hold **Ctrl** (Windows, Linux) or **Command** (macOS) and then click the filters.
-
-Use the **Type** filters to display JS, CSS, and Document resources:
 
 ![Using the Type filters to display JS, CSS, and Document resources](./reference-images/type-filters.png)
 
 
 <!-- ------------------------------ -->
 #### Filter requests by time
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#filter-by-time -->
 
 Click and drag left or right on the **Overview** pane to only display requests that were active during that time frame.  The filter is inclusive.  Any request that was active during the highlighted time is shown.
 
@@ -376,6 +489,7 @@ Filtering out any requests that were inactive around 300 ms:
 
 <!-- ------------------------------ -->
 #### Hide data URLs
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#hide_data_urls -->
 
 [Data URLs](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) are small files embedded into other documents.  Any request that displays in the Requests table that starts with `data:` is a data URL.
 
@@ -384,22 +498,82 @@ To hide the requests, turn off the **Hide data URLs** checkbox:
 ![The Hide Data URLs checkbox](./reference-images/hide-data-urls.png)
 
 
+<!-- ------------------------------ -->
+#### Hide extension URLs
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#hide-extension-urls -->
+
+To focus on the code you author, you can filter out irrelevant requests sent by extensions you may have installed in Microsoft Edge.  Extension requests have URLs that start with `chrome-extension://`.
+
+To hide extension requests, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Hide extension URLs** so that a checkmark appears next to it.
+
+<!-- ![Extension URLs hidden from the Requests table](todo: png) -->
+
+The status bar at the bottom displays the number of the shown requests out of the total.
+
+
+<!-- ------------------------------ -->
+#### Show only the requests with blocked response cookies
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#show-blocked-cookies -->
+<!-- todo: clean up -->
+
+To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Blocked response cookies** so that a checkmark appears next to it.  <!--Try it on this [demo page](https://samesite-sandbox.glitch.me/). todo: Demos repo -->
+
+<!-- ![The Requests table shows only the requests with blocked response cookies](todo: png) -->
+
+The status bar at the bottom displays the number of the shown requests out of the total.
+
+To find out the reason why a response cookie was blocked, select the request, open its **Cookies** tab, and hover over the **information** (**(i)**)<!-- todo: icon --> icon.
+
+Additionally, the **Network** tool shows a warning warning icon next to a request with cookies blocked either because of Chrome flags or configuration.  Hover over the icon to see a tooltip with a clue and click it to go to the Issues panel for more information.
+
+Warning icons next to a request blocked by Chrome flags or configuration.
+
+
+<!-- ------------------------------ -->
+#### Show only blocked requests
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#show-blocked -->
+<!-- todo: clean up -->
+
+To filter out everything except blocked requests, in the **Filters** action bar, select **More filters** > **Blocked requests**, so that a checkmark appears.  To test this, you can use the **Network request blocking** tool in the **Quick View** panel at the bottom of DevTools; see [Block requests](./index.md#block-requests) in _Inspect network activity_.
+
+<!-- ![The Requests table shows only blocked requests](todo: blocked-requests.png) -->
+
+The **Requests** table highlights blocked requests in red.  The status bar at the bottom displays the number of the shown requests out of the total.
+
+
+<!-- ------------------------------ -->
+#### Show only third-party requests
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#third-party -->
+
+To filter out everything except the requests with origin that differs from page origin, in the **Filters** action bar, select **More filters** > **3rd-party requests**, so that a checkmark appears.  Try it on this [demo page](https://samesite-sandbox.glitch.me/).<!-- todo: which demo? -->
+
+<!-- ![The Requests table shows only the third-party requests](todo: third-party-requests.png) -->
+
+The status bar at the bottom displays the number of the shown requests out of the total.
+
+
 <!-- ====================================================================== -->
 ## Sort requests
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#sort_requests -->
 
-By default, the requests in the Requests table are sorted by initiation time, but you can sort the table using other criteria.
+By default, the requests in the **Requests** table are sorted by initiation time, but you can sort the table using other criteria.
 
 
 <!-- ------------------------------ -->
 #### Sort by column
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#sort-by-column -->
 
-Click the header of any column in the Requests to sort requests by that column.
+Click the header of any column in the **Requests** to sort requests by that column.
 
 
 <!-- ------------------------------ -->
 #### Sort by activity phase
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#sort-by-activity -->
+<!-- Waterfall column was formerly on by default, as shown throughout upstream -->
 
-To change how the Waterfall sorts requests:
+The **Waterfall** column is off by default.  To turn on the **Waterfall** column: right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+
+To change how the **Waterfall** column sorts requests:
 
 * Right-click the header of the Requests table, click **Waterfall**, and then select one of the following options:
 
@@ -422,12 +596,14 @@ The following shows sorting the Waterfall by total duration.  The lighter portio
 
 <!-- ====================================================================== -->
 ## Analyze requests
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#analyze -->
 
 So long as DevTools is open, it logs all requests in the **Network** tool.  Use the **Network** tool to analyze requests.
 
 
 <!-- ------------------------------ -->
 #### Display a log of requests
+<!-- View a log of requests  https://developer.chrome.com/docs/devtools/network/reference/#requests -->
 
 Use the **Requests** table to display a log of all requests made while DevTools has been open.  To reveal more information about each item, click or hover on requests.
 
@@ -446,11 +622,13 @@ The Requests table displays the following columns by default:
 - **Size**. The combined size of the response headers plus the response body, as delivered by the server.
 - **Time**. The total duration, from the start of the request to the receipt of the final byte in the response.
 - **Fulfilled by**. Whether the request was fulfilled by the HTTP cache or the app's service worker.
-- [Waterfall](#display-the-timing-relationship-of-requests). A visual breakdown of each request's activity.
+
+The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 
 <!-- ---------- -->
 ###### Add or remove columns
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#columns -->
 
 Right-click the header of the Requests table and select a column name to hide or show it.  The currently displayed columns have checkmarks next to them.
 
@@ -458,137 +636,246 @@ Right-click the header of the Requests table and select a column name to hide or
 
 
 <!-- ---------- -->
-###### Add columns for response headers
+###### Add custom columns for response headers
+<!-- Add custom columns https://developer.chrome.com/docs/devtools/network/reference/#custom-columns -->
 
-To add a custom column to the Requests table, right-click the header of the Requests table and then select **Response Headers** > **Manage Header Columns**. The **Manage Header Columns** popup window opens.  Click the **Add custom header** button, enter the custom header name, and then click **Add**. 
+To add a custom column to the Requests table:
 
-![Adding a custom column to the Requests table](./reference-images/requests-add-custom-column.png)
+1. Right-click the header of the Requests table and then select **Response Headers** > **Manage Header Columns**.
+
+   The **Manage Header Columns** popup window opens.
+
+1. Click the **Add custom header** button, enter the custom header name, and then click **Add**. 
+
+   ![Adding a custom column to the Requests table](./reference-images/requests-add-custom-column.png)
+
+
+<!-- ------------------------------ -->
+#### Group requests by inline frames
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#group-by-frames -->
+
+If inline frames on a page initiate a lot of requests, you can make the request log friendlier by grouping them.
+
+To group requests by iframes, in the **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Group by frame** checkbox.
+
+<!-- ![The network request log with requests grouped by iframes](todo: png) -->
+
+To view a request initiated by an inline frame, expand it in the request log.
 
 
 <!-- ------------------------------ -->
 #### Display the timing relationship of requests
+<!-- View the timing of requests in relation to one another  https://developer.chrome.com/docs/devtools/network/reference/#waterfall -->
 
-Use the Waterfall to display the timing relationships of requests.  The default organization of the Waterfall uses the start time of the requests.  So, requests that are farther to the left started earlier than the requests that are farther to the right.
+Use the **Waterfall** column of the **Requests** pane to view the timing relationships of requests.  The default organization of the **Waterfall** column uses the start time of the requests.  So, requests that are farther to the left started earlier than the requests that are farther to the right.
 
-To see the different ways that you can sort the Waterfall, go to [Sort by activity phase](#sort-by-activity-phase).
+The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
-The Waterfall column of the **Requests** pane:
+To see the different ways that you can sort the Waterfall, see [Sort by activity phase](#sort-by-activity-phase), above.
+
+The **Waterfall** column of the **Requests** pane:
 
 ![The Waterfall column of the Requests pane](./reference-images/requests-waterfall.png)
 
-<!-- ### Analyze the frames of a WebSocket Connection  -->
 
-<!--To view the frames of a WebSocket connection:
+<!-- ------------------------------ -->
+#### Analyze the messages of a WebSocket connection
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#frames -->
 
-1. Click the URL of the WebSocket connection, under the **Name** column of the Requests table.
-1. Click the **Frames** panel.  The table shows the last 100 frames.
+To view the messages of a WebSocket connection:
 
-To refresh the table, re-select the name of the WebSocket connection under the **Name** column of the Requests table.  -->
+1. Under the **Name** column of the **Requests** table, click the URL of the WebSocket connection.
 
-<!--
-![The Frames panel](../media/network-frames.png)
--->
+1. Click the **Messages** tab.  The table shows the last 100 messages.
 
-<!--The table contains the following three columns.
+To refresh the table, re-click the name of the WebSocket connection under the **Name** column of the **Requests** table.
 
-*  **Data**.  The message payload.  If the message is plain text, it is displayed here.  For binary opcodes, this column displays the name and code of the opcode.  The following opcodes are supported: Continuation Frame, Binary Frame, Connection Close Frame, Ping Frame, and Pong Frame.
+<!-- ![The Frames panel](todo: network-frames.png) -->
+
+The table contains the following three columns:
+
+*  **Data**.  The message payload.  If the message is plain text, it is displayed here.  For binary opcodes, this column displays the name and code of the opcode.  The following opcodes are supported: 
+   * Continuation Frame
+   * Binary Frame
+   * Connection Close Frame
+   * Ping Frame
+   * Pong Frame
+
 *  **Length**.  The length of the message payload, in bytes.
-*  **Time**.  The time when the message was received or sent.  -->
 
-<!--Messages are color-coded according to each type.
+*  **Time**.  The time when the message was received or sent.
+
+Messages are color-coded according to each type:
 
 *  Outgoing text messages are light-green.
 *  Incoming text messages are white.
 *  WebSocket opcodes are light-yellow.
-*  Errors are light-red.  -->
+*  Errors are light-red.
+
+
+<!-- ------------------------------ -->
+#### Analyze events in a stream
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#event-stream -->
+<!-- todo: clean up text/links -->
+
+To view the events that servers stream through [Fetch API](https://web.dev/articles/introduction-to-fetch), [EventSource API](https://web.dev/articles/eventsource-basics#event_stream_format), and XHR:
+
+1. [Record network](https://developer.chrome.com/docs/devtools/network/reference#record) requests on a page that streams events.  For example, open this [demo page](https://fetch-eventstream.glitch.me/) and click any of the three buttons.
+
+1. In the **Network** tool, select a request, and then open the **EventStream** tab.
+
+   <!-- ![The EventStream tab](todo: png) -->
+
+To filter events, specify a regular expression in the filter bar at the top of the **EventStream** tab.
+
+To clear the list of captured events, click the **Clear** <!--(![EventStream Clear icon](todo: eventstream-clear-icon.png))--> button.
 
 
 <!-- ------------------------------ -->
 #### Display a preview of a response body
+<!-- View a preview of a response body  https://developer.chrome.com/docs/devtools/network/reference/#preview -->
 
 To preview the contents of an HTTP response body:
 
-1. In the Request table, click the name of the request.
+1. In the **Network** tool, In the **Requests** table, in the **Name** column, click the name of a request.
+
 1. In the sidebar, select the **Preview** tab:
 
-   ![The Preview panel](./reference-images/resources-preview.png)
+   ![The Preview tab in the Network tool](./reference-images/resources-preview.png)
+
+The **Preview** tab is mostly useful for viewing images.
 
 
 <!-- ------------------------------ -->
 #### Display a response body
+<!-- View a response body  https://developer.chrome.com/docs/devtools/network/reference/#response -->
 
 To display the response body to a request:
 
-1. In the Request table, click the name of the request.
+1. In the **Requests** table, in the **Name** column, click the name of the request.
+
 1. In the sidebar, select the **Response** tab:
 
-   ![The Response panel](./reference-images/resources-response.png)
+   ![The Response tab](./reference-images/resources-response.png)
 
 
 <!-- ------------------------------ -->
 #### Display HTTP headers
+<!-- View HTTP headers  https://developer.chrome.com/docs/devtools/network/reference/#headers -->
 
 To display HTTP header data about a request:
 
-1. In the Request table, click the name of the request.
-1. In the sidebar, select the **Headers** tab:
+1. In the **Requests** table, click the name of the request.
+
+1. In the sidebar, select the **Headers** tab, and then scroll down to the various sections:
+   * **General**
+   * **Early Hints Headers** (optional)
+   * **Response Headers**
+   * **Request Headers**
 
    ![The Headers panel](./reference-images/resources-headers.png)
 
 
-<!-- ----------
-###### Display HTTP header source
-this feature doesn't exist anymore
+<!-- ---------- -->
+###### View HTTP header source
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#header-source -->
+
+This feature doesn't exist anymore.<!-- todo -->
 
 By default, the **Headers** panel shows header names alphabetically.  To display the HTTP header names in the order received:
 
-1. Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers).
+1. Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers), above.
 
-1. Click **view source**, next to the **Request Header** or **Response Header** section. -->
+1. Click **view source**, next to the **Request Header** or **Response Header** section.
+
+
+<!-- ---------- -->
+###### Provisional headers warning
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#provisional-headers -->
+<!-- todo: clean up -->
+
+Sometimes the **Headers** tab shows the warning message **Provisional headers are shown...**.  This may be due to the following reasons:
+
+* The request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can disable caching to see the full request headers; see [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache), above.
+
+  <!-- ![Provisional headers warning message](todo: provisional-headers-warning.png) -->
+
+* The network resource isn't valid.  For example, execute `fetch("https://jec.fish.com/unknown-url/")` in the **Console** tool.
+
+  <!-- ![Provisional headers warning message](todo: provisional-headers-warning-2.png) -->
+
+DevTools can also display only provisional headers due to security reasons.
 
 
 <!-- ------------------------------ -->
 #### Display query string parameters
+<!-- View request payload  https://developer.chrome.com/docs/devtools/network/reference/#payload -->
 
-To display the query string parameters of an HTTP request in a human-readable format:
+To display the query string parameters and form data of an HTTP request in a human-readable format:
 
-1. In the Request table, click the name of the request.
+<!-- upstream:
+To view the request's payload, that is, its query string parameters and form data, select a request from the Requests table and open the Payload tab. -->
+
+1. In the **Requests** table, click the name of the request.
+
 1. In the sidebar, select the **Payload** tab:
 
-  ![The Query String Parameters section](./reference-images/resources-headers-query-string-parameters.png)
+  ![The Query String Parameters section in the Payload tab](./reference-images/resources-headers-query-string-parameters.png)
 
    To display the source of the query string parameters instead, click **view source**.
 
 
 <!-- ---------- -->
+###### View payload source
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#payload-source -->
+
+By default, the **Network** tool shows the payload in a human-readable form.
+
+To view the sources of query string parameters and form data, on the **Payload** tab, click **view source** next to the **Query String Parameters** or **Form Data** sections.
+
+<!-- ![The view source buttons](todo: the-view-source-buttons.png) -->
+
+
+<!-- ---------- -->
 ###### Display URL-encoded query string parameters
+<!-- View URL-decoded arguments of query string parameters  https://developer.chrome.com/docs/devtools/network/reference/#payload-encodings -->
 
 To display query string parameters in a human-readable format, but with encodings preserved:
 
-1. In the Request table, click the name of the request.
+1. In the **Requests** table, click the name of the request.
+
 1. In the sidebar, select the **Payload** tab.
-1. Click **view URL-encoded**.
+
+1. Click **view decoded** or **view URL-encoded**.
+
+   <!-- ![Toggle URL-encoding](todo: toggle-url-encoding.png) -->
 
 
 <!-- ------------------------------ -->
 #### Display cookies
+<!-- View cookies  https://developer.chrome.com/docs/devtools/network/reference/#cookies -->
 
 To display the cookies sent in the HTTP header of a request:
 
-1. In the Request table, click the name of the request.
+1. In the **Requests** table, click the name of the request.
+
 1. In the sidebar, select the **Cookies** tab:
 
    ![The Cookies panel](./reference-images/resources-cookies.png)
 
-<!--For more information about each of the columns, see [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
+For more information about each of the columns, see [Fields](../storage/cookies.md#fields) in _View, edit, and delete cookies_.
+
+To modify cookies, see [View, edit, and delete cookies](../storage/cookies.md).
 
 
 <!-- ------------------------------ -->
 #### Display the timing breakdown of a request
+<!-- View the timing breakdown of a request  https://developer.chrome.com/docs/devtools/network/reference/#timing -->
 
 To display the timing breakdown of a request:
 
 1. In the Request table, click the name of the request.
+
 1. In the sidebar, select the **Timing** tab.
 
    ![The Timing panel](./reference-images/resources-timing.png)
@@ -600,10 +887,11 @@ For more information about each of the phases that may be displayed in the **Tim
 
 <!-- ---------- -->
 ###### Preview a timing breakdown
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#timing-preview -->
 
 To display a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.
 
-Previewing the timing breakdown of a request:
+The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 ![Previewing the timing breakdown of a request](./reference-images/resources-waterfall-hover.png)
 
@@ -612,6 +900,7 @@ To view the data without hovering, see the top of the present section, [Display 
 
 <!-- ---------- -->
 ###### Timing breakdown phases explained
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#timing-explanation -->
 
 Each of these phases may appear in the **Timing** tab:
 
@@ -645,6 +934,7 @@ Each of these phases may appear in the **Timing** tab:
 
 <!-- ------------------------------ -->
 #### Display initiators and dependencies
+<!-- View initiators and dependencies  https://developer.chrome.com/docs/devtools/network/reference/#initiators-dependencies -->
 
 To display the initiators and dependencies of a request, hold **Shift** and hover on the request in the **Requests** table.
 
@@ -658,44 +948,48 @@ When the Requests table is ordered chronologically, if you hover on a line, the 
 
 <!-- ------------------------------ -->
 #### Display load events
+<!-- View load events  https://developer.chrome.com/docs/devtools/network/reference/#load -->
 
 DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the **Network** tool:
 
 * In the **Overview** pane with vertical lines.
-* In the **Waterfall** column of the Request table with vertical lines.
+
+* In the **Waterfall** column of the Request table with vertical lines.  The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+
 * In the **Summary** pane, at the bottom of the **Network** tool, with timing labels.
 
 The `DOMContentLoaded` event is colored blue, and the `load` event is red.
 
-![The locations of the DOMContentLoaded and load events on the Network panel](./reference-images/load-events.png)
+![The locations of the DOMContentLoaded and load events on the Network tool](./reference-images/load-events.png)
 
 
 <!-- ------------------------------ -->
 #### Display the total number of requests
+<!-- View the total number of requests  https://developer.chrome.com/docs/devtools/network/reference/#total-number -->
 
 The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.
 
 ![The total number of requests since DevTools were opened](./reference-images/total-requests.png)
 
-> [!CAUTION]
-> This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests aren't counted.
+Caution: This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests aren't counted.
 
 
 <!-- ------------------------------ -->
 #### Display the total download size
+<!-- View the total size of transferred and loaded resources  https://developer.chrome.com/docs/devtools/network/reference/#total-size -->
 
 The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.
 
 ![The total download size of requests](./reference-images/total-download-size.png)
 
-> [!CAUTION]
-> This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, the previous requests aren't counted.
+Caution: This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, the previous requests aren't counted.
 
 To verify how large resources are after the browser uncompresses each item, see [display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource).
 
 
 <!-- ------------------------------ -->
 #### Display the stack trace that caused a request
+<!-- View the stack trace that caused a request  https://developer.chrome.com/docs/devtools/network/reference/#initiator-stack-trace -->
 
 After a JavaScript statement requests a resource, hover on the **Initiator** column to display the stack trace leading up to the request.
 
@@ -720,6 +1014,7 @@ init();
 
 <!-- ------------------------------ -->
 #### Display the uncompressed size of a resource
+<!-- View the uncompressed size of a resource  https://developer.chrome.com/docs/devtools/network/reference/#uncompressed -->
 
 To see both the transferred size and the uncompressed size of a resource at the same time:
 
@@ -734,10 +1029,14 @@ To see both the transferred size and the uncompressed size of a resource at the 
 
 <!-- ====================================================================== -->
 ## Export requests data
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#export -->
+
+You can export or copy the list of requests, with filters applied, in several ways described next.
 
 
 <!-- ------------------------------ -->
 #### Save all network requests to a HAR file
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#save-as-har -->
 
 To save all network requests to a HAR file:
 
@@ -751,8 +1050,37 @@ Once you save a HAR file, you can import it back into DevTools for analysis by d
 <!--For more information, see also [HAR Analyzer](https://toolbox.alphabetapps.com/apps/har_analyzer)  Todo: add section link when content is available  -->
 
 
+<!-- incoming upstream content: -->
+<!-- todo: clean up -->
+
+HAR (HTTP Archive) is a file format used by several HTTP session tools to export the captured data.  The format is a JSON object with a particular set of fields.
+
+To reduce the chances of accidental leaks of sensitive information, by default you can export the "sanitized" network log in HAR format that excludes sensitive information such as Cookie, Set-Cookie, and Authorization headers.  If required, you can also export the log with sensitive data.
+
+To save all network requests to a HAR file, pick one of the two ways:
+
+* Right-click any request in the Requests table and select Copy > Save all [listed] as HAR (sanitized) or Save all [listed] as HAR (with sensitive data).
+
+  <!-- ![Selecting 'Save all listed as HAR (sanitized)'](todo: png) -->
+
+* Click download Export HAR (sanitized)... in the action bar at the top of the **Network** tool.
+
+To export with sensitive data, first, turn on settings Settings > Preferences > Network > check_box Allow to generate HAR with sensitive data, then click the download Export button and select Export HAR (with sensitive data) from the drop-down menu.
+
+<!-- ![The 'Export HAR' button in the action bar at the top with two export options enabled](todo: png) -->
+
+Once you have a HAR file, you can import it back into DevTools for analysis in two ways:
+
+* Drag-and-drop the HAR file into the Requests table.
+* Click upload Import HAR in the action bar at the top of the **Network** tool.
+
+The **Network** tool reads and shows initiators for the requests imported from HAR files.
+
+
 <!-- ------------------------------ -->
 #### Copy one or more requests to the clipboard
+<!-- todo: different than upstream -->
+<!-- Copy a request, a filtered set of requests, or all of them to the clipboard  https://developer.chrome.com/docs/devtools/network/reference/#copy -->
 
 Under the **Name** column of the Requests table, right-click a request, click **Copy**, and then select one of the following options:
 
@@ -771,6 +1099,7 @@ Under the **Name** column of the Requests table, right-click a request, click **
 
 <!-- ------------------------------ -->
 #### Copy formatted response JSON to the clipboard
+<!-- not in upstream -->
 
 To copy the formatted JSON data of a JSON response:
 
@@ -785,6 +1114,7 @@ To copy the formatted JSON data of a JSON response:
 
 <!-- ------------------------------ -->
 #### Copy property values from network requests to your clipboard
+<!-- not in upstream -->
 
 To copy property values from network requests to your clipboard:
 
@@ -800,13 +1130,15 @@ To copy property values from network requests to your clipboard:
 
 
 <!-- ====================================================================== -->
-## Change the layout of the Network panel
+## Change the layout of the Network tool
+<!-- Change the layout of the Network panel  https://developer.chrome.com/docs/devtools/network/reference/#change_the_layout_of_the_network_panel -->
 
 You can expand or collapse sections of the **Network** tool UI to focus important information.
 
 
 <!-- ------------------------------ -->
 #### Hide the Filters pane
+<!-- Hide the Filters action bar  https://developer.chrome.com/docs/devtools/network/reference/#hide-filters -->
 
 By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, select **Filter** (![Filter](./reference-images/filter-icon.png)).
 
@@ -815,8 +1147,9 @@ By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, 
 
 <!-- ------------------------------ -->
 #### Big request rows
+<!-- Use big request rows  https://developer.chrome.com/docs/devtools/network/reference/#request-rows -->
 
-Use big request rows when you want more whitespace in your network requests table. Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
+Use big request rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
 
 To enable large rows, select the **Big request rows** checkbox. An example of large request rows in the **Requests** pane:
 
@@ -825,6 +1158,7 @@ To enable large rows, select the **Big request rows** checkbox. An example of la
 
 <!-- ------------------------------ -->
 #### Hide the Overview pane
+<!-- Hide the Overview track  https://developer.chrome.com/docs/devtools/network/reference/#hide-overview -->
 
 By default, DevTools displays the **Overview** pane.  To hide the **Overview** pane, clear the **Show Overview** checkbox.
 
@@ -833,6 +1167,7 @@ By default, DevTools displays the **Overview** pane.  To hide the **Overview** p
 
 <!-- ====================================================================== -->
 ## See also
+<!-- not in upstream -->
 
 * [Inspect network activity](index.md) - step-by-step walkthrough and introduction to the **Network** tool.
 
