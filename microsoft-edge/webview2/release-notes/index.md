@@ -42,7 +42,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ------------------------------ -->
 #### Promotions
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ---------- -->
