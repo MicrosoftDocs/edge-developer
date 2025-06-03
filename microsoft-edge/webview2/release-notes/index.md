@@ -6,26 +6,158 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/03/2025
+ms.date: 06/30/2025
 ---
 # Release Notes for the WebView2 SDK
 
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
 
 <!--
-the template to copy for incoming sections is at end of this file
+the templates to copy for incoming sections are in template.md
 
 this webpage covers the most recent ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers: 
+Jun B 2025
 Jun 2025
 May 2025
 Apr 2025
 Mar 2025
-Feb 2025
 
 moved to archive:
-Jan 2025
-[Dec 2024]
+Feb 2025
 -->
+
+
+<!-- Jun B 2025 Release SDK -->
+<!-- ====================================================================== -->
+## 1.0.####.##
+
+Release Date: Monthname nn, 2025
+
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+No additional APIs have been promoted to Stable and added in this Release SDK.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of Jun B 2025 Release SDK -->
+
+
+<!-- Jun B 2025 Prerelease SDK -->
+<!-- ====================================================================== -->
+## 1.0.####-prerelease
+
+Release Date: Monthname nn, 2025
+
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Experimental APIs
+
+No Experimental APIs have been added in this Prerelease SDK.
+The following Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of Jun B 2025 Prerelease SDK -->
 
 
 <!-- June 2025 Release SDK -->
@@ -42,7 +174,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ------------------------------ -->
 #### Promotions
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -461,94 +593,6 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 <!-- end of Mar 2025 Prerelease SDK -->
 
 
-<!-- Feb 2025 Release SDK -->
-<!-- ====================================================================== -->
-## 1.0.3065.39
-
-Release Date: February 10, 2025
-
-[NuGet package for WebView2 SDK 1.0.3065.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3065.39)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 133.0.3065.39 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-No additional APIs have been promoted to Stable and added in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Added the missing **Close** button in the **Download** flyout.
-* Fixed a race condition that occurred when the Web Request Response event never occurs.
-
-<!-- end of Feb 2025 Release SDK -->
-
-
-<!-- Feb 2025 Prerelease SDK -->
-<!-- ====================================================================== -->
-## 1.0.3116-prerelease
-
-Release Date: February 10, 2025
-
-[NuGet package for WebView2 SDK 1.0.3116-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3116-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 134.0.3116.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Experimental APIs
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Added the missing **Close** button in the **Download** flyout.
-* Fixed a race condition that occurred when the Web Request Response event never occurs.
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed .NET and Win32 documentation of the `CoreWebView2Find.FindNext` method that incorrectly mentioned `FindPrevious`.  The method summary now mentions `FindNext` instead.  ([Issue #5059](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5059))
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2Find.FindNext Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findnext?view=webview2-dotnet-1.0.3116-prerelease&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2Find.FindNext Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3116-prerelease&preserve-view=true#findnext)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ExperimentalFind::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalfind?view=webview2-1.0.3116-prerelease&preserve-view=true#findnext)
-<!-- todo: make sure Win32 API Ref 3116 has "Next" not "Previous" in summary -->
-
----
-
-<!-- end of Feb 2025 Prerelease SDK -->
-
-
 <!-- ====================================================================== -->
 ## See also
 
@@ -557,96 +601,3 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
-
-
-<!--
-template for Release and Prerelease
-omit the "Experimental APIs" section from actual Release section
--->
-<!-- June 2025 Release SDK --
-<!-- June 2025 Prerelease SDK --
-<!-- ====================================================================== --
-## 1.0.####.##
-## 1.0.####-prerelease
-
-Release Date: Monthname nn, 2025
-
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
-
-
-<!-- ------------------------------ --
-#### Experimental APIs
-
-No Experimental APIs have been added in this Prerelease SDK.
-The following Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ---------- --
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ --
-#### Promotions
-
-No additional APIs have been promoted to Stable and added in this Release SDK.
-The following APIs have been promoted to Stable and are now included in this Release SDK.
-
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-
-<!-- ---------- --
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ --
-#### Bug fixes
-
-
-<!-- ---------- --
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- --
-###### Runtime-only
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- --
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
-
--->
-
-
-<!-- end of June 2025 Release SDK -->
-<!-- end of June 2025 Prerelease SDK -->
-<!-- end of template -->
