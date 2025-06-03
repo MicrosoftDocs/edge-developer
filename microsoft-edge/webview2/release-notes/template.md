@@ -1,3 +1,16 @@
+---
+title: Templates for WebView2 RelNotes
+description: Templates for WebView2 RelNotes.
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: conceptual
+ms.service: microsoft-edge
+ms.subservice: webview
+ms.date: 06/30/2025
+---
+# Templates for WebView2 RelNotes
+
+
 <!-- Jul 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.####.##
