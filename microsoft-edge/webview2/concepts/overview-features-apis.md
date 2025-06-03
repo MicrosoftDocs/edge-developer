@@ -2925,10 +2925,8 @@ See also [Enable or disable the browser responding to accelerator keys (shortcut
 
 WebView2 can specify a default background color.  The color can be any opaque color, or transparent.  This color will be used if the HTML page doesn't set its own background color.
 
-<!-- todo: maybe link, after PR 3449 merged
 See also:
 * [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](../release-notes/index.md#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api) in _Release Notes for the WebView2 SDK_.
--->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
