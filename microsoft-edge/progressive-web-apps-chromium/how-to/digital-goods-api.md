@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 12/19/2024
+ms.date: 06/04/2025
 ---
 # Provide in-app purchases with the Digital Goods API
 
@@ -41,6 +41,8 @@ See:
 
 The Digital Goods API is currently available for all channels in Microsoft Edge. To test the API, make sure your Edge version is `134.0.3124.51` or higher.
 
+
+<!-- ====================================================================== -->
 ## Checking whether the Digital Goods API is available
 
 To detect whether you have access to the API on your website, check whether the `getDigitalGoodsService` method exists on the `window` object:
@@ -95,7 +97,7 @@ See also:
 
 Use the `getDetails` method of the `DigitalGoodsService` interface to query item details.
 
-After connecting the Digital Goods service to Microsoft Store, you can use the API to access product and purchase information.  The `getDetails` method lets you get information about the items you’ve set up in the Partner Center.  Display information such as the product title, description, and price in your app UI, so the user knows what's available for purchase.
+After connecting the Digital Goods service to Microsoft Store, you can use the API to access product and purchase information.  The `getDetails` method lets you get information about the items you've set up in the Partner Center.  Display information such as the product title, description, and price in your app UI, so the user knows what's available for purchase.
 
 The `getDetails` method takes a list of item IDs, which correspond to the product IDs of the in-app products and subscriptions you created in the Partner Center.
 
