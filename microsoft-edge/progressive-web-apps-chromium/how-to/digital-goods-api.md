@@ -39,35 +39,11 @@ See:
 <!-- ====================================================================== -->
 ## Enable the Digital Goods API
 
-The Digital Goods API is currently available for testing in Microsoft Edge.  To test the API, use either of the following ways:
-* To test your code locally: [Use a supported preview channel of Microsoft Edge on your dev machine](#use-a-supported-preview-channel-of-microsoft-edge-on-your-dev-machine).
-* To test your code in your Microsoft Store PWA: [Register for the origin trial, then use your token at your website](#register-for-the-origin-trial-then-use-your-token-at-your-website).
+The Digital Goods API is currently available for all channels in Microsoft Edge. To test the API, make sure your Edge version is `134.0.3124.51` or higher.
 
-Details are below.
-
-
-<!-- ------------------------------ -->
-#### Use a supported preview channel of Microsoft Edge on your dev machine
-
-To test the Digital Goods API locally, before deploying your app to production, run Edge Dev or Edge Canary.  These preview versions of Edge have the API enabled, as part of a running experiment.
-
-To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
-
-
-<!-- ------------------------------ -->
-#### Register for the origin trial, then use your token at your website
-
-To test the Digital Goods API in production, with your users, use an origin trial token.  With this approach, when your users download your PWA from the Microsoft Store, they will have the API enabled.
-
-See: 
-* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
-* [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Origin Trials_.
-
-
-<!-- ====================================================================== -->
 ## Checking whether the Digital Goods API is available
 
-To detect whether you've correctly enabled the API on your website by using your origin trial token, check whether the `getDigitalGoodsService` method exists on the `window` object:
+To detect whether you have access to the API on your website, check whether the `getDigitalGoodsService` method exists on the `window` object:
 
 ```javascript
 if ('getDigitalGoodsService' in window) {
@@ -268,10 +244,6 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article: -->
-
-Origin trials:
-* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
-* [Digital Goods API](https://developer.microsoft.com/microsoft-edge/origin-trials/trials/4b4a9ead-d912-4349-87b3-25e5e50b4f13) at _Origin Trials_.
 
 GitHub:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
