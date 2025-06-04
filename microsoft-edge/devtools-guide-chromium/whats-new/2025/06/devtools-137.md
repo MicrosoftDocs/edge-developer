@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 137)
-description: "Enable settings sync lets you sync your DevTools settings across devices. And more."
+description: "The Enable settings sync checkbox lets you sync your DevTools settings across devices. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -18,14 +18,40 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 <!-- Subtitle: Enable settings sync lets you sync your DevTools settings across devices. -->
 
-You can now easily sync your DevTools settings across multiple devices with your Microsoft Edge profile. This ensures your preferences remain consistent and makes it easier to work across different devices without needing to reconfigure the same settings. To enable this feature, navigate to Settings > Preferences > Sync > Enable settings sync.
+You can now easily sync your DevTools settings across multiple devices by using your signed-in Microsoft Edge browser profile.  This ensures that your preferences remain consistent, and makes it easier to work across different devices without needing to reconfigure the same settings.
 
+To enable DevTools **Settings** sync:
+
+1. In DevTools, select **Customize and control DevTools** (![Customize and control DevTools icon](./devtools-137-images/customize-and-control-devtools-icon.png)) > **Settings** (![Settings icon](./devtools-137-images/settings-icon.png)).
+
+   DevTools **Settings** appears, with the **Preferences** page selected.
+
+1. Scroll down to the **Sync** section at the bottom, and then select the **Enable settings sync** checkbox:
+
+   ![The "Enable settings sync" checkbox](./devtools-137-images/enable-settings-sync.png)
+
+1. In DevTools **Settings**, click the **Close** (![Close button](./devtools-137-images/close-button.png)) button. 
 
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 Microsoft Edge 137 also includes the following updates from the Chromium project:
+
+* [Google I/O 2025 edition](https://developer.chrome.com/blog/new-in-devtools-137#io-edition)
+* [Modify and save CSS changes to your workspace with Gemini](https://developer.chrome.com/blog/new-in-devtools-137#ai-styling)
+* [Connect a workspace folder and save changes back to your source files](https://developer.chrome.com/blog/new-in-devtools-137#workspace)
+* [Ask Gemini about performance insights](https://developer.chrome.com/blog/new-in-devtools-137#ai-insights)
+* [Annotate performance findings with Gemini](https://developer.chrome.com/blog/new-in-devtools-137#ai-annotations)
+* [Add screenshots to your chats with Gemini](https://developer.chrome.com/blog/new-in-devtools-137#ai-screenshot)
+* [New insights in the Performance panel](https://developer.chrome.com/blog/new-in-devtools-137#new-perf-insights)
+   * [Duplicated JavaScript](https://developer.chrome.com/blog/new-in-devtools-137#duplicated-js)
+   * [Legacy JavaScript](https://developer.chrome.com/blog/new-in-devtools-137#legacy-js)
+* [Speculations now support rule tags](https://developer.chrome.com/blog/new-in-devtools-137#speculation-rule-tags)
+* [Lighthouse 12.6.0](https://developer.chrome.com/blog/new-in-devtools-137#lighthouse)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-137#misc)
+* [Accessibility](https://developer.chrome.com/blog/new-in-devtools-137#accessibility)
+<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
