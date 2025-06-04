@@ -18,7 +18,7 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 <!-- Subtitle: Enable settings sync lets you sync your DevTools settings across devices. -->
 
-You can now easily sync your DevTools settings across multiple devices by using your signed-in Microsoft Edge browser profile.  This ensures that your preferences remain consistent, and makes it easier to work across different devices without needing to reconfigure the same settings.
+You can now easily sync your DevTools settings across multiple devices by using your signed-in Microsoft Edge profile.  This ensures that your preferences remain consistent, and makes it easier to work across different devices without needing to reconfigure the same settings.
 
 To enable DevTools **Settings** sync:
 
@@ -29,6 +29,8 @@ To enable DevTools **Settings** sync:
 1. Scroll down to the **Sync** section at the bottom, and then select the **Enable settings sync** checkbox:
 
    ![The "Enable settings sync" checkbox](./devtools-137-images/enable-settings-sync.png)
+
+   Your signed-in Microsoft Edge profile is displayed.
 
 1. In DevTools **Settings**, click the **Close** (![Close button](./devtools-137-images/close-button.png)) button. 
 
