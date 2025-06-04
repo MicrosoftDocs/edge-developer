@@ -40,21 +40,11 @@ To enable DevTools **Settings** sync:
 
 Microsoft Edge 137 also includes the following updates from the Chromium project:
 
-* [Google I/O 2025 edition](https://developer.chrome.com/blog/new-in-devtools-137#io-edition)
-* [Modify and save CSS changes to your workspace with Gemini](https://developer.chrome.com/blog/new-in-devtools-137#ai-styling)
 * [Connect a workspace folder and save changes back to your source files](https://developer.chrome.com/blog/new-in-devtools-137#workspace)
-* [Ask Gemini about performance insights](https://developer.chrome.com/blog/new-in-devtools-137#ai-insights)
-* [Annotate performance findings with Gemini](https://developer.chrome.com/blog/new-in-devtools-137#ai-annotations)
-* [Add screenshots to your chats with Gemini](https://developer.chrome.com/blog/new-in-devtools-137#ai-screenshot)
 * [New insights in the Performance panel](https://developer.chrome.com/blog/new-in-devtools-137#new-perf-insights)
    * [Duplicated JavaScript](https://developer.chrome.com/blog/new-in-devtools-137#duplicated-js)
    * [Legacy JavaScript](https://developer.chrome.com/blog/new-in-devtools-137#legacy-js)
 * [Speculations now support rule tags](https://developer.chrome.com/blog/new-in-devtools-137#speculation-rule-tags)
-* [Lighthouse 12.6.0](https://developer.chrome.com/blog/new-in-devtools-137#lighthouse)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-137#misc)
-* [Accessibility](https://developer.chrome.com/blog/new-in-devtools-137#accessibility)
-<!-- todo: maybe remove some links -->
-
 
 <!-- ====================================================================== -->
 ## See also
