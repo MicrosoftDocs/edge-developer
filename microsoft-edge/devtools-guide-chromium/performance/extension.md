@@ -523,9 +523,9 @@ To view the resulting profile:
 
 1. Use the mouse and arrow keys to shift and zoom the profile, to display the custom performance measures.
 
-   The **Timings** track displays **Start filtering**, **Done filtering**, and **Photo loaded** custom markers:
+   The **Timings** track displays **Start filtering**, **Done filtering**, and **Photo selected** custom markers:
 
-   ![Custom markers in the Timings track: "Filter Applied" and "Photo Loaded"](./extension-images/marker-in-timings.png)
+   ![Custom markers in the Timings track](./extension-images/marker-in-timings.png)
 
    The events (markers) created by `performance.mark()` have no duration; they just mark some interesting events in a profile: the start and end of a filter change (using the demo page's dropdown menus), and the moment a photo was selected (the **Photo selected** marker).
 
