@@ -563,6 +563,10 @@
                 - name: Analyze CSS selector performance during Recalculate Style events
                   href: ./devtools-guide-chromium/performance/selector-stats.md
                   displayName: Performance tool, css selector stats, css selectors, selector stats, selector statistics, css selector statistics
+
+                - name: Customize performance profile with extensibility APIs
+                  href: ./devtools-guide-chromium/performance/extension.md
+                  displayName: Performance tool
 # Memory tool -----------------------------------------------------------------
             - name: Memory tool
               items:
