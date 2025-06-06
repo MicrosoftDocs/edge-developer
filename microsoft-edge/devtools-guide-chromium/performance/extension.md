@@ -338,6 +338,14 @@ To view the resulting profile:
 
 1. In DevTools, select the **Performance** (![Performance icon](./extension-images/performance-icon.png)) tool.
 
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./extension-images/capture-settings-icon.png)) button, and then make sure that the **Show custom tracks** checkbox is selected:
+
+   ![The 'Show custom tracks' checkbox in the 'Capture settings' of the Performance tool](./extension-images/custom-tracks-setting.png)
+
+1. In the **CPU throttling** dropdown list, select **4x slowdown - recommended**.
+
+   A throttling warning indicator is added to the **Performance** tab.
+
 1. Refresh the page, to clear any selections.
 
 1. Click the **Record** (![Record icon](./extension-images/record-icon.png)) button.
@@ -448,6 +456,14 @@ To view the resulting profile:
    DevTools opens.
 
 1. In DevTools, select the **Performance** (![Performance icon](./extension-images/performance-icon.png)) tool.
+
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./extension-images/capture-settings-icon.png)) button, and then make sure that the **Show custom tracks** checkbox is selected:
+
+   ![The 'Show custom tracks' checkbox in the 'Capture settings' of the Performance tool](./extension-images/custom-tracks-setting.png)
+
+1. In the **CPU throttling** dropdown list, select **4x slowdown - recommended**.
+
+   A throttling warning indicator is added to the **Performance** tab.
 
 1. Refresh the page, to clear any selections.
 
@@ -589,6 +605,14 @@ To view the resulting profile:
    DevTools opens.
 
 1. In DevTools, select the **Performance** (![Performance icon](./extension-images/performance-icon.png)) tool.
+
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./extension-images/capture-settings-icon.png)) button, and then make sure that the **Show custom tracks** checkbox is selected:
+
+   ![The 'Show custom tracks' checkbox in the 'Capture settings' of the Performance tool](./extension-images/custom-tracks-setting.png)
+
+1. In the **CPU throttling** dropdown list, select **4x slowdown - recommended**.
+
+   A throttling warning indicator is added to the **Performance** tab.
 
 1. Refresh the page, to clear any selections.
 
