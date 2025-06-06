@@ -229,7 +229,7 @@ To record a profile and view the custom performance data of the Photo Gallery de
    1. Start a localhost server in the cloned `/demos/` directory, per [Start the localhost server](../sample-code/sample-code.md#start-the-localhost-server), in _Sample code for DevTools_.
    1. In the browser, go to `http://localhost:8080/photo-gallery/` or equivalent, in a new window or tab.
 
-1. Right-click the demo webpage, and then select **Inspect**.
+1. Right-click the webpage, and then select **Inspect**.
 
    DevTools opens.
 
@@ -258,6 +258,12 @@ To record a profile and view the custom performance data of the Photo Gallery de
 1. In DevTools, click the **Stop** button.
 
    The profile is displayed.
+
+1. Click **Customize and control DevTools** (![Customize and control DevTools icon](./extension-images/customize-and-control-devtools-icon.png)), and then next to **Dock location**, select **Undock into separate window** (![Undock into separate window icon](./extension-images/undock-into-separate-window-icon.png)).
+
+   DevTools is detached into its own window, so it's easier to see more data.
+
+   <!-- unique steps for this list: -->
 
 1. Scroll down to the **Custom performance timings — Custom track** track group, and expand it.
 
@@ -325,46 +331,7 @@ function loadPhoto(fileName) {
 
 To view the resulting profile: 
 
-1. Open the [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) demo webpage in a new window or tab.
-
-   Or, to be able to modify the sample code:
-   1. Clone the "MicrosoftEdge / Demos" repo, per [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive).
-   1. Start a localhost server in the cloned `/demos/` directory, per [Start the localhost server](../sample-code/sample-code.md#start-the-localhost-server), in _Sample code for DevTools_.
-   1. In the browser, go to `http://localhost:8080/photo-gallery/` or equivalent, in a new window or tab.
-
-1. Right-click the webpage, and then select **Inspect**.
-
-   DevTools opens.
-
-1. In DevTools, select the **Performance** (![Performance icon](./extension-images/performance-icon.png)) tool.
-
-1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./extension-images/capture-settings-icon.png)) button, and then make sure that the **Show custom tracks** checkbox is selected:
-
-   ![The 'Show custom tracks' checkbox in the 'Capture settings' of the Performance tool](./extension-images/custom-tracks-setting.png)
-
-1. In the **CPU throttling** dropdown list, select **4x slowdown - recommended**.
-
-   A throttling warning indicator is added to the **Performance** tab.
-
-1. Refresh the page, to clear any selections.
-
-1. Click the **Record** (![Record icon](./extension-images/record-icon.png)) button.
-
-1. At the top of the demo page, in the **Camera** (![Camera icon](./extension-images/camera-icon.png)) dropdown menu on the left, change from **All** to **Apple iPhone 12**.
-
-1. Change the **Camera** filter back to **All**.
-
-1. Click the first photo.
-
-   The photo expands.
-
-1. In DevTools, click the **Stop** button.
-
-   The profile is displayed.
-
-1. Click **Customize and control DevTools** (![Customize and control DevTools icon](./extension-images/customize-and-control-devtools-icon.png)), and then next to **Dock location**, select **Undock into separate window** (![Undock into separate window icon](./extension-images/undock-into-separate-window-icon.png)).
-
-   DevTools is detached into its own window, so it's easier to see more data.
+1. Do the steps in [View your custom data in the performance profile](#view-your-custom-data-in-the-performance-profile), above.
 
 1. Scroll down to the **Custom performance timings — Custom track** track group, and expand it.
 
@@ -374,7 +341,7 @@ To view the resulting profile:
 
    ![A custom track with custom entries added with the console.timeStamp API](./extension-images/custom-track-console-timestamp.png)
 
-   Highlighted in green, in the bottom-most track, is an event that's created by using `console.timeStamp()`.  This event has a duration, because it's created with a start and an end time.  This event corresponds to the time it takes to load the full-screen version of the photo that you clicked.
+   The **Loading photo** event was created by using `console.timeStamp()`.  This event has a duration, because it's created with a start and an end time.  This event corresponds to the time it takes to load the full-screen version of the photo that you clicked.
 
 See also:
 * [Inject your data with `console.timeStamp()`](#inject-your-data-with-consoletimestamp) (above) - syntax.
@@ -444,46 +411,7 @@ function populateGallery(images) {
 
 To view the resulting profile: 
 
-1. Open the [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) demo webpage in a new window or tab.
-
-   Or, to be able to modify the sample code:
-   1. Clone the "MicrosoftEdge / Demos" repo, per [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive).
-   1. Start a localhost server in the cloned `/demos/` directory, per [Start the localhost server](../sample-code/sample-code.md#start-the-localhost-server), in _Sample code for DevTools_.
-   1. In the browser, go to `http://localhost:8080/photo-gallery/` or equivalent, in a new window or tab.
-
-1. Right-click the webpage, and then select **Inspect**.
-
-   DevTools opens.
-
-1. In DevTools, select the **Performance** (![Performance icon](./extension-images/performance-icon.png)) tool.
-
-1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./extension-images/capture-settings-icon.png)) button, and then make sure that the **Show custom tracks** checkbox is selected:
-
-   ![The 'Show custom tracks' checkbox in the 'Capture settings' of the Performance tool](./extension-images/custom-tracks-setting.png)
-
-1. In the **CPU throttling** dropdown list, select **4x slowdown - recommended**.
-
-   A throttling warning indicator is added to the **Performance** tab.
-
-1. Refresh the page, to clear any selections.
-
-1. Click the **Record** (![Record icon](./extension-images/record-icon.png)) button.
-
-1. At the top of the demo page, in the **Camera** (![Camera icon](./extension-images/camera-icon.png)) dropdown menu on the left, change from **All** to **Apple iPhone 12**.
-
-1. Change the **Camera** filter back to **All**.
-
-1. Click the first photo.
-
-   The photo expands.
-
-1. In DevTools, click the **Stop** button.
-
-   The profile is displayed.
-
-1. Click **Customize and control DevTools** (![Customize and control DevTools icon](./extension-images/customize-and-control-devtools-icon.png)), and then next to **Dock location**, select **Undock into separate window** (![Undock into separate window icon](./extension-images/undock-into-separate-window-icon.png)).
-
-   DevTools is detached into its own window, so it's easier to see more data.
+1. Do the steps in [View your custom data in the performance profile](#view-your-custom-data-in-the-performance-profile), above.
 
 1. Scroll down to the **Custom performance timings — Custom track** track group, and expand it.
 
@@ -495,7 +423,7 @@ To view the resulting profile:
 
    ![The Photo creation custom track](./extension-images/custom-track.png)
 
-   The events that are created by `performance.measure()` have a duration, but they are quite fast, so you must zoom in to see them in the profile.  Each of these events record the creation of an image, which happens when you change the filter (dropdown list) value, and when the whole gallery UI is refreshed.
+   The events that are created by `performance.measure()` have a short duration, so you must zoom in to see them in the profile.  Each of these events record the creation of an image, which happens when you change the filter (dropdown list) value, and when the whole gallery UI is refreshed.
 
    The **Photo creation** events appear between the `Start filtering` and `Done filtering` performance marks that result from `performance.mark()` (covered in the next section):
 
@@ -593,46 +521,7 @@ addEventListener('click', e => {
 
 To view the resulting profile: 
 
-1. Open the [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) demo webpage in a new window or tab.
-
-   Or, to be able to modify the sample code:
-   1. Clone the "MicrosoftEdge / Demos" repo, per [Clone the Edge Demos repo to your drive](../sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive).
-   1. Start a localhost server in the cloned `/demos/` directory, per [Start the localhost server](../sample-code/sample-code.md#start-the-localhost-server), in _Sample code for DevTools_.
-   1. In the browser, go to `http://localhost:8080/photo-gallery/` or equivalent, in a new window or tab.
-
-1. Right-click the webpage, and then select **Inspect**.
-
-   DevTools opens.
-
-1. In DevTools, select the **Performance** (![Performance icon](./extension-images/performance-icon.png)) tool.
-
-1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./extension-images/capture-settings-icon.png)) button, and then make sure that the **Show custom tracks** checkbox is selected:
-
-   ![The 'Show custom tracks' checkbox in the 'Capture settings' of the Performance tool](./extension-images/custom-tracks-setting.png)
-
-1. In the **CPU throttling** dropdown list, select **4x slowdown - recommended**.
-
-   A throttling warning indicator is added to the **Performance** tab.
-
-1. Refresh the page, to clear any selections.
-
-1. Click the **Record** (![Record icon](./extension-images/record-icon.png)) button.
-
-1. At the top of the demo page, in the **Camera** (![Camera icon](./extension-images/camera-icon.png)) dropdown menu on the left, change from **All** to **Apple iPhone 12**.
-
-1. Change the **Camera** filter back to **All**.
-
-1. Click the first photo.
-
-   The photo expands.
-
-1. In DevTools, click the **Stop** button.
-
-   The profile is displayed.
-
-1. Click **Customize and control DevTools** (![Customize and control DevTools icon](./extension-images/customize-and-control-devtools-icon.png)), and then next to **Dock location**, select **Undock into separate window** (![Undock into separate window icon](./extension-images/undock-into-separate-window-icon.png)).
-
-   DevTools is detached into its own window, so it's easier to see more data.
+1. Do the steps in [View your custom data in the performance profile](#view-your-custom-data-in-the-performance-profile), above.
 
 1. Use the mouse and arrow keys to shift and zoom the profile, to display the custom performance measures.
 
