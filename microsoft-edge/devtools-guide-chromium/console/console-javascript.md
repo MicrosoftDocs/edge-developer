@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/12/2023
+ms.date: 06/06/2025
 ---
 # Run JavaScript in the Console
 
