@@ -263,8 +263,6 @@ To record a profile and view the custom performance data of the Photo Gallery de
 
    DevTools is detached into its own window, so it's easier to see more data.
 
-   <!-- unique steps for this list: -->
-
 1. Scroll down to the **Custom performance timings — Custom track** track group, and expand it.
 
 1. Expand the custom tracks:
