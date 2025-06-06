@@ -438,7 +438,7 @@ See also:
 
 Visually highlight specific points of interest in the timeline with custom markers that span across all tracks.
 
-For example, in [photo-gallery/gallery.js](https://github.com/MicrosoftEdge/Demos/blob/main/photo-gallery/gallery.js), an event listener handles `select` events on the demo page's `.filter` dropdown lists.  The event listener calls `performance.mark()` for the `Start filtering` event<!-- todo: correct use of "event"? --> and for the `Done filtering` event:<!-- todo: correct use of "event"? -->
+For example, in [photo-gallery/gallery.js](https://github.com/MicrosoftEdge/Demos/blob/main/photo-gallery/gallery.js), an event listener handles `input` events on the demo page's filter dropdown lists.  The event listener calls `performance.mark()` twice: before the new filter is applied, and after the new filter has been applied:
 
 ```javascript
 // Handle input events on the filter selects.
