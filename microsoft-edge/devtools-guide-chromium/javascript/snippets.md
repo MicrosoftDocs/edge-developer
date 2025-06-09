@@ -22,6 +22,7 @@ ms.date: 10/17/2023
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Run snippets of JavaScript on any webpage
+<!-- https://developer.chrome.com/docs/devtools/javascript/snippets/ -->
 
 If you're entering the same code into the **Console** tool repeatedly, consider saving the code as a snippet instead, and then running the snippet.  Snippets are scripts that you author in the **Sources** tool.  Snippets have access to the JavaScript context of the webpage, and you can run snippets on any webpage.  Snippets can be used to alter a webpage, such as to change its content or appearance, or to extract data.
 
@@ -50,13 +51,17 @@ The code changes the background color of the webpage to dimgrey, adds a new line
 
 When you run a snippet on a webpage, the snippet's source code is added to the current webpage. For more information about changing the existing code of a webpage instead of adding new code, see [Override webpage resources with local copies (Overrides tab)](./overrides.md).
 
+
+<!-- ------------------------------ -->
 #### Include all your code in one file
+<!-- not upstream -->
 
 The security settings of most webpages block from loading other scripts in snippets. For this reason, you must include all your code in one file.
 
 
 <!-- ====================================================================== -->
 ## Open the Snippets tab
+<!-- Open the Snippets pane  https://developer.chrome.com/docs/devtools/javascript/snippets/#open -->
 
 The **Snippets** tab is grouped with the **Page** tab in the **Navigator** pane, on the left of the **Sources** tool.
 
@@ -71,7 +76,9 @@ To open the **Snippets** tab:
 1. In the **Navigator** pane (on the left), select the **Snippets** tab.  To access the **Snippets** option, you might need to click the **More tabs** (![More tabs](./snippets-images/more-tabs-icon.png)) button.
 
 
+<!-- ------------------------------ -->
 #### Open the Snippets tab from the Command Menu
+<!-- no separate heading upstream -->
 
 You can also open the **Snippets** tab by using the **Command Menu**:
 
@@ -85,7 +92,17 @@ You can also open the **Snippets** tab by using the **Command Menu**:
 
 
 <!-- ====================================================================== -->
+<!-- ## Create snippets -->
+<!-- Create snippets  https://developer.chrome.com/docs/devtools/javascript/snippets/#create -->
+
+<!-- You can create snippets in the **Snippets** pane, or by running the **Create new snippet** command from the **Command Menu** anywhere in DevTools. -->
+
+<!-- The **Snippets** pane sorts your snippets in alphabetical order. -->
+
+
+<!-- ====================================================================== -->
 ## Create a new snippet
+<!-- Create a snippet in the Sources panel  https://developer.chrome.com/docs/devtools/javascript/snippets/#create-sources -->
 
 To create a new snippet from the **Snippets** tab:
 
@@ -97,7 +114,10 @@ To create a new snippet from the **Snippets** tab:
 
    ![A new, empty, snippet in the Sources tool](./snippets-images/new-snippet.png)
 
+
+<!-- ------------------------------ -->
 #### Create a new snippet from the Command Menu
+<!-- Create a snippet from the Command Menu  https://developer.chrome.com/docs/devtools/javascript/snippets/#create-command-menu -->
 
 1. Focus your cursor somewhere in DevTools.
 
@@ -112,6 +132,7 @@ To rename your new snippet, see [Rename a snippet](#rename-a-snippet), below.
 
 <!-- ====================================================================== -->
 ## Edit a snippet
+<!-- Edit snippets  https://developer.chrome.com/docs/devtools/javascript/snippets/#edit -->
 
 To edit the source code of a snippet:
 
@@ -130,8 +151,12 @@ To edit the source code of a snippet:
 
 <!-- ====================================================================== -->
 ## Run a snippet
+<!-- Run snippets  https://developer.chrome.com/docs/devtools/javascript/snippets/#run -->
 
+
+<!-- ------------------------------ -->
 #### Run a snippet from the Sources tool
+<!-- Run a snippet in the Sources panel  https://developer.chrome.com/docs/devtools/javascript/snippets/#run-sources -->
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
@@ -141,7 +166,10 @@ To edit the source code of a snippet:
 
    ![The run snippet button at the bottom of the code editor](./snippets-images/run-snippet-from-sources-tool.png)
 
+
+<!-- ------------------------------ -->
 #### Run a snippet from the Command Menu
+<!-- https://developer.chrome.com/docs/devtools/javascript/snippets/#run-command-menu -->
 
 1. Focus your cursor somewhere in DevTools.
 
@@ -156,6 +184,7 @@ To edit the source code of a snippet:
 
 <!-- ====================================================================== -->
 ## Rename a snippet
+<!-- Rename snippets  https://developer.chrome.com/docs/devtools/javascript/snippets/#rename -->
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
@@ -164,6 +193,7 @@ To edit the source code of a snippet:
 
 <!-- ====================================================================== -->
 ## Delete a snippet
+<!-- Delete snippets  https://developer.chrome.com/docs/devtools/javascript/snippets/#delete -->
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
@@ -171,15 +201,75 @@ To edit the source code of a snippet:
 
 
 <!-- ====================================================================== -->
-## Save a snippet
+## Save a snippet to disk as a file
+<!-- not upstream -->
 
-By default, snippets are only available within DevTools, but you can also save them to disk.
+By default, snippets are only available within DevTools, but you can also save snippets to disk.
 
 1. [Open the Snippets tab](#open-the-snippets-tab).
 
 1. Right-click the snippet name, and then select **Save as**.
 
-1. When prompted, enter a file name and location.
+   The **Save As** dialog opens.
+
+1. Select a folder, enter a file name (such as `Script snippet #1.js`), and then click the **Save** button.
+
+
+<!-- ====================================================================== -->
+## Disable self-XSS warnings by typing "allow pasting"
+<!-- not upstream -->
+
+When you first try to paste content into the **Sources** tool > **Snippets** tab > **New snippet**, instead of pasting, a dialog is displayed:
+
+"Do you trust this code?  Don't paste code you do not understand or have not reviewed yourself into DevTools.  This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below to allow pasting."
+
+![Sources tool's Snippets tab editor displaying the self-XSS warning](./snippets-images/sources-self-xss-warning.png)
+
+This is a cross-site scripting (XSS) warning.  To paste code, for the current session, type **allow pasting** in the dialog, and then click the **Allow** button.  Then paste the content.  Or, start Edge with the flag below.
+
+
+<!-- ------------------------------ -->
+#### Console
+<!-- not upstream -->
+
+When you first try to paste content into the **Console** tool, instead of pasting, a message is displayed: "Warning: Don't paste code into the DevTools Console that you don't understand or haven't reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below and press Enter to allow pasting."
+
+![Console displaying the self-XSS warning](./snippets-images/console-self-xss-warning.png)
+
+To paste code, for the current session, type **allow pasting** in the console, and then press **Enter**.  Then paste the content.  Or, start Edge with the flag below.
+
+
+<!-- ====================================================================== -->
+## Disable self-XSS warnings by starting Edge with a command-line flag
+<!-- not upstream -->
+
+To prevent the above warnings and immediately allow pasting, such as for automated testing, start Microsoft Edge from the command line, using the following flag: `--unsafely-disable-devtools-self-xss-warnings`.  The flag applies to a single session of Microsoft Edge.
+
+For example, on Windows:
+
+Edge Stable:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
+
+Edge Beta:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge Beta\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
+
+Edge Dev:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge Dev\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
+
+Edge Canary:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
 
 
 <!-- ====================================================================== -->
