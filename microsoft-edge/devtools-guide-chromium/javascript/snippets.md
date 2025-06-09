@@ -92,16 +92,16 @@ You can also open the **Snippets** tab by using the **Command Menu**:
 
 
 <!-- ====================================================================== -->
-<!-- ## Create snippets -->
+## Create a snippet
 <!-- Create snippets  https://developer.chrome.com/docs/devtools/javascript/snippets/#create -->
 
-<!-- You can create snippets in the **Snippets** pane, or by running the **Create new snippet** command from the **Command Menu** anywhere in DevTools. -->
+You can create a snippet from within the **Snippets** tool, or by running the **Create new snippet** command from the **Command Menu** anywhere in DevTools.
 
-<!-- The **Snippets** pane sorts your snippets in alphabetical order. -->
+The **Snippets** pane sorts your snippets in alphabetical order.
 
 
-<!-- ====================================================================== -->
-## Create a new snippet
+<!-- ------------------------------ -->
+#### Create a snippet in the Sources tool
 <!-- Create a snippet in the Sources panel  https://developer.chrome.com/docs/devtools/javascript/snippets/#create-sources -->
 
 To create a new snippet from the **Snippets** tab:
@@ -116,7 +116,7 @@ To create a new snippet from the **Snippets** tab:
 
 
 <!-- ------------------------------ -->
-#### Create a new snippet from the Command Menu
+#### Create a snippet from the Command Menu
 <!-- Create a snippet from the Command Menu  https://developer.chrome.com/docs/devtools/javascript/snippets/#create-command-menu -->
 
 1. Focus your cursor somewhere in DevTools.
@@ -147,6 +147,54 @@ To edit the source code of a snippet:
 1. When an asterisk appears next to the name of your snippet, it means you have unsaved code.  Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save:
 
    ![An asterisk next to the snippet name indicates unsaved code](./snippets-images/unsaved-changes.png)
+
+
+<!-- ====================================================================== -->
+## Allow pasting into the Snippet editor
+<!-- not upstream -->
+
+<!-- Disable self-XSS warnings by typing "allow pasting" -->
+
+When you first try to paste content into the **Sources** tool > **Snippets** tab > **New snippet** editor, instead of pasting, a **Do you trust this code?** dialog is displayed, with the message: Don't paste code you do not understand or have not reviewed yourself into DevTools.  This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below to allow pasting."
+
+![Sources tool's Snippets tab editor displaying the self-XSS warning](./snippets-images/sources-self-xss-warning.png)
+
+This is a cross-site scripting (XSS) warning.  To paste code, for the current session, type **allow pasting** in the dialog, and then click the **Allow** button.  Then paste the content.  Or, start Edge with the flag below.
+
+Pasting into the **Console** is similar; see [Allow pasting into the Console](../console/console-javascript.md#allow-pasting-into-the-console) in _Run JavaScript in the Console_.
+
+
+<!-- ------------------------------ -->
+#### Disable self-XSS warnings by starting Edge with a command-line flag
+<!-- not upstream -->
+
+To prevent the above warnings and immediately allow pasting, such as for automated testing, start Microsoft Edge from the command line, using the following flag: `--unsafely-disable-devtools-self-xss-warnings`.  The flag applies to a single session of Microsoft Edge.
+
+For example, on Windows:
+
+Edge Stable:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
+
+Edge Beta:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge Beta\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
+
+Edge Dev:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge Dev\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
+
+Edge Canary:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
 
 
 <!-- ====================================================================== -->
@@ -213,61 +261,6 @@ By default, snippets are only available within DevTools, but you can also save s
    The **Save As** dialog opens.
 
 1. Select a folder, enter a file name (such as `Script snippet #1.js`), and then click the **Save** button.
-
-
-<!-- ====================================================================== -->
-## Disable self-XSS warnings by typing "allow pasting"
-<!-- not upstream -->
-
-When you first try to paste content into the **Sources** tool > **Snippets** tab > **New snippet**, instead of pasting, a **Do you trust this code?** dialog is displayed, with the message: Don't paste code you do not understand or have not reviewed yourself into DevTools.  This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below to allow pasting."
-
-![Sources tool's Snippets tab editor displaying the self-XSS warning](./snippets-images/sources-self-xss-warning.png)
-
-This is a cross-site scripting (XSS) warning.  To paste code, for the current session, type **allow pasting** in the dialog, and then click the **Allow** button.  Then paste the content.  Or, start Edge with the flag below.
-
-
-<!-- ------------------------------ -->
-#### Console
-<!-- not upstream -->
-
-When you first try to paste content into the **Console** tool, instead of pasting, a message is displayed: "Warning: Don't paste code into the DevTools Console that you don't understand or haven't reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below and press Enter to allow pasting."
-
-![Console displaying the self-XSS warning](./snippets-images/console-self-xss-warning.png)
-
-To paste code, for the current session, type **allow pasting** in the console, and then press **Enter**.  Then paste the content.  Or, start Edge with the flag below.
-
-
-<!-- ====================================================================== -->
-## Disable self-XSS warnings by starting Edge with a command-line flag
-<!-- not upstream -->
-
-To prevent the above warnings and immediately allow pasting, such as for automated testing, start Microsoft Edge from the command line, using the following flag: `--unsafely-disable-devtools-self-xss-warnings`.  The flag applies to a single session of Microsoft Edge.
-
-For example, on Windows:
-
-Edge Stable:
-
-```shell
-"C:\Users\localAccount\AppData\Local\Microsoft\Edge\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
-```
-
-Edge Beta:
-
-```shell
-"C:\Users\localAccount\AppData\Local\Microsoft\Edge Beta\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
-```
-
-Edge Dev:
-
-```shell
-"C:\Users\localAccount\AppData\Local\Microsoft\Edge Dev\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
-```
-
-Edge Canary:
-
-```shell
-"C:\Users\localAccount\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
-```
 
 
 <!-- ====================================================================== -->
