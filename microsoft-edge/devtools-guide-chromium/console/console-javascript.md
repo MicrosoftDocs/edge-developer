@@ -91,15 +91,15 @@ When you first try to paste content into the **Console** tool, instead of pastin
 
 ![Console displaying the self-XSS warning](./console-javascript-images/console-self-xss-warning.png)
 
-This is a cross-site scripting (XSS) warning.  To paste code, for the current session, type **allow pasting** in the console, and then press **Enter**.  Then paste the content.  Or, start Edge with the flag below.
+This is a cross-site scripting (XSS) warning.  To paste code, for the current session, type **allow pasting** in the **Console**, and then press **Enter**.  Then paste the content.  Or, start Edge with the flag below.
 
-Pasting into the **Sources** tool > **Snippets** tab > **New snippet** editor is similar; see [Allow pasting into the Snippet editor](../javascript/snippets.md#allow-pasting-into-the-snippet-editor) in _Run snippets of JavaScript on any webpage_.
+Pasting into the **Sources** tool's snippet editor is similar; see [Allow pasting into the Snippet editor](../javascript/snippets.md#allow-pasting-into-the-snippet-editor) in _Run snippets of JavaScript on any webpage_.
 
 
 <!-- ------------------------------ -->
 #### Disable self-XSS warnings by starting Edge with a command-line flag
 
-To prevent the above warnings and immediately allow pasting, such as for automated testing, start Microsoft Edge from the command line, using the following flag: `--unsafely-disable-devtools-self-xss-warnings`.  The flag applies to a single session of Microsoft Edge.
+To prevent the above warnings and immediately allow pasting into the **Console** tool and the **Sources** tool's snippet editor, such as for automated testing, start Microsoft Edge from the command line, using the following flag: `--unsafely-disable-devtools-self-xss-warnings`.  The flag applies to a single session of Microsoft Edge.
 
 For example, on Windows:
 
