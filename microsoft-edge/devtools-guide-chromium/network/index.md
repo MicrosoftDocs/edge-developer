@@ -151,11 +151,13 @@ The columns of the Network Log are configurable.  You can hide columns that you 
 
 The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.  By throttling the page, you get a better idea of how long a page takes to load on a mobile device.
 
-1. Select the **Throttling** dropdown list in the top toolbar. It is set to **No throttling** by default.
+1. Click the **Throttling** dropdown list in the top toolbar.  **No throttling** is selected by default.
 
-1. Select **Slow 3G** or **Slow 4G**:
+   ![The Throttling dropdown list](./index-images/enable-throttling.png)
 
-   ![Select Slow 3G](./index-images/throttling-slow-3g.png)
+1. Select **3G**:
+
+   ![Select 3G](./index-images/enable-3g.png)<!-- todo: update -->
 
    A warning icon is displayed on the **Network** tool's tab, to remind you that throttling is enabled.
 

@@ -247,9 +247,7 @@ The **Offline** dropdown menu:
 #### Emulate slow network connections
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#throttling -->
 
-Emulate Slow 3G, Fast 3G, and other connection speeds from the **No throttling** dropdown menu.
-
-The **Throttling** dropdown menu:
+To emulate fast 4G, slow 4G, or 3G, select the corresponding preset from the **Throttling** dropdown menu in the action bar at the top:
 
 ![The Throttling dropdown menu](./reference-images/throttling-menu.png)
 
