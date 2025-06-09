@@ -135,9 +135,7 @@ This is a cross-site scripting (XSS) warning.  To paste code, for the current se
 <!-- ------------------------------ -->
 #### Sources tool's Snippets tab
 
-When you first try to paste content into the **Sources** tool > **Snippets** tab > **New snippet**, instead of pasting, a dialog is displayed:
-
-"Do you trust this code?  Don't paste code you do not understand or have not reviewed yourself into DevTools.  This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below to allow pasting."
+When you first try to paste content into the **Sources** tool > **Snippets** tab > **New snippet** editor, instead of pasting, a **Do you trust this code?** dialog is displayed, with the message: Don't paste code you do not understand or have not reviewed yourself into DevTools.  This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below to allow pasting."
 
 ![Sources tool's Snippets tab editor displaying the self-XSS warning](./console-javascript-images/sources-self-xss-warning.png)
 
