@@ -153,13 +153,11 @@ To edit the source code of a snippet:
 ## Allow pasting into the Snippet editor
 <!-- not upstream -->
 
-<!-- Disable self-XSS warnings by typing "allow pasting" -->
-
 When you first try to paste content into the **Sources** tool > **Snippets** tab > snippet editor, instead of pasting, a **Do you trust this code?** dialog is displayed, with the message: "Don't paste code you do not understand or have not reviewed yourself into DevTools.  This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below to allow pasting."
 
 ![Sources tool's Snippets tab editor displaying the self-XSS warning](./snippets-images/sources-self-xss-warning.png)
 
-This is a cross-site scripting (XSS) warning.  To paste code, for the current session, type **allow pasting** in the dialog, and then click the **Allow** button.  Then paste the content.  Or, start Edge with the flag below.
+This warning helps prevent self cross-site scripting attacks (self-XSS) on end-users.  To paste code, first type **allow pasting** in the dialog's text box, and then click the **Allow** button.  Then paste the content.  Or, start Edge with the flag below.
 
 Pasting into the **Console** tool is similar; see [Allow pasting into the Console](../console/console-javascript.md#allow-pasting-into-the-console) in _Run JavaScript in the Console_.
 

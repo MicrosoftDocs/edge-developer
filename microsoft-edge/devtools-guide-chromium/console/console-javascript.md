@@ -91,7 +91,7 @@ When you first try to paste content into the **Console** tool, instead of pastin
 
 ![Console displaying the self-XSS warning](./console-javascript-images/console-self-xss-warning.png)
 
-This is a cross-site scripting (XSS) warning.  To paste code, for the current session, type **allow pasting** in the **Console**, and then press **Enter**.  Then paste the content.  Or, start Edge with the flag below.
+This warning helps prevent self cross-site scripting attacks (self-XSS) on end-users.  To paste code, first type **allow pasting** in the **Console**, and then press **Enter**.  Then paste the content.  Or, start Edge with the flag below.
 
 Pasting into the **Sources** tool's snippet editor is similar; see [Allow pasting into the Snippet editor](../javascript/snippets.md#allow-pasting-into-the-snippet-editor) in _Run snippets of JavaScript on any webpage_.
 
