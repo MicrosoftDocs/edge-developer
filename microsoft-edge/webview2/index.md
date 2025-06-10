@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.subservice: webview
-ms.date: 10/28/2024
+ms.date: 06/10/2025
 ---
 # Introduction to Microsoft Edge WebView2
 
@@ -63,7 +63,7 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 
 <!-- ====================================================================== -->
-## Supported platforms
+## Supported programming environments and devices
 
 The following programming environments are supported:
 
@@ -74,20 +74,40 @@ The following programming environments are supported:
 *  [WinUI 2.0](/windows/apps/winui/winui2/)
 *  [WinUI 3.0](/windows/apps/winui/winui3/)
 
-WebView2 apps can run on the following versions of Windows:
-
-*  Windows 11
-*  Windows 10
-*  Windows 10 IoT Enterprise LTSC x32 2019
-*  Windows 10 IoT Enterprise LTSC x64 2019
-*  Windows 10 IoT Enterprise 21h1 x64
-*  Windows Server 2022
-*  Windows Server 2019
-*  Windows Server 2016
-
-WebView2 is also supported on the following devices:
+WebView2 is also supported on the following devices: 
 *  Xbox
 *  HoloLens 2
+
+
+<!-- ====================================================================== -->
+## Supported Windows versions
+
+The Windows operating systems that are supported by Webview2 are the same as those supported by Microsoft Edge.
+
+WebView2 apps can run on the following versions of Windows Client:
+
+* Windows 10 SAC 1709 and later **
+* Windows 10 Enterprise 2015 LTSC
+* Windows 10 Enterprise 2016 LTSC
+* Windows 10 Enterprise 2019 LTSC
+* Windows 10 Enterprise 2021 LTSC
+* Windows 10 Enterprise multi-session
+* Windows 10 IoT Enterprise SAC ****
+* Windows 10 IoT Enterprise 2019 LTSC ****
+* Windows 11
+* Windows 11 Enterprise multi-session
+
+For details, see [Windows Client](/deployedge/microsoft-edge-supported-operating-systems#windows-client) in _Microsoft Edge supported Operating Systems_.
+
+
+WebView2 apps can run on the following versions of Windows Server:
+
+* Windows Server 2016 (LTSC)
+* Windows Server 2019 (LTSC)
+* Windows Server 2022 (LTSC)
+* Windows Server (SAC)
+
+For details, see [Windows Server](/deployedge/microsoft-edge-supported-operating-systems#windows-server) in _Microsoft Edge supported Operating Systems_.
 
 
 <!-- ------------------------------ -->
