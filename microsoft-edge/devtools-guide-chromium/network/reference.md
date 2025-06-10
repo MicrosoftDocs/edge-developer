@@ -185,7 +185,7 @@ To replay an XHR request, do one of the following in the **Requests** table:
 * Right-click the request and select **Replay XHR**.
 
 <!--
-![Click Replay XHR](todo: selecting-replay-xhr.png)
+![Click Replay XHR](todo png: selecting-replay-xhr.png)
 -->
 
 
@@ -280,7 +280,7 @@ In addition to presets, such as slow or fast 4G, you can also add your own custo
 
 1. In the **Network** tool, click the **Throttling** dropdown menu, and then select your custom throttling profile.
 
-   <!-- ![A custom profile selected from the throttling menu. The Network tool displays a warning icon.](todo: a-custom-profile-selected.png) -->
+   <!-- ![A custom profile selected from the throttling menu. The Network tool displays a warning icon.](todo png: a-custom-profile-selected.png) -->
 
 DevTools displays a <!--todo: Warning icon--> warning icon next to the **Network** tool to remind you that throttling is enabled.
 
@@ -303,7 +303,7 @@ To observe WebSocket throttling:
 
 1. Toggle the **WS** filter, click your connection name, open the **Messages** tab, and check the time difference between sent and echoed messages with and without throttling. <!--todo: For example:-->
 
-<!-- ![Messages sent and echoed with and without throttling](todo: messages-sent-echoed-an.png) -->
+<!-- ![Messages sent and echoed with and without throttling](todo png: messages-sent-echoed-an.png) -->
 
 
 <!-- ---------- -->
@@ -400,7 +400,7 @@ To search across request headers, payloads, and responses:
 
 1. Click one of the search results.  The **Network** tool highlights in yellow the request that matched.  The **Network** tool also opens the **Headers** or **Response** tab and highlights the string that matched there, if any.
 
-<!-- ![The Search tab on the right in the Network tool](todo: search-requests.png) -->
+<!-- ![The Search tab on the right in the Network tool](todo png: search-requests.png) -->
 
 To refresh search results, in the **Search** tab, click the **Refresh** (![Refresh icon](./reference-images/refresh-search-icon.png)) button.
 
@@ -504,7 +504,7 @@ To focus on the code you author, you can filter out irrelevant requests sent by 
 
 To hide extension requests, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Hide extension URLs** so that a checkmark appears next to it.
 
-<!-- ![Extension URLs hidden from the Requests table](todo: png) -->
+<!-- ![Extension URLs hidden from the Requests table](todo png: extension-urls-hidden.png, for Filter Requests) -->
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
@@ -514,13 +514,13 @@ The status bar at the bottom displays the number of the shown requests out of th
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#show-blocked-cookies -->
 <!-- todo: clean up -->
 
-To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Blocked response cookies** so that a checkmark appears next to it.  <!--Try it on this [demo page](https://samesite-sandbox.glitch.me/). todo: Demos repo -->
+To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Blocked response cookies** so that a checkmark appears next to it.  <!--Try it on this [demo page](https://samesite-sandbox.glitch.me/). todo demo: create downstream demo for Filter Requests -->
 
-<!-- ![The Requests table shows only the requests with blocked response cookies](todo: png) -->
+<!-- ![The Requests table shows only the requests with blocked response cookies](todo png: blocked-response-cookies.png, for Filter Requests) -->
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
-To find out the reason why a response cookie was blocked, select the request, open its **Cookies** tab, and hover over the **information** (**(i)**)<!-- todo: icon --> icon.
+To find out the reason why a response cookie was blocked, select the request, open its **Cookies** tab, and hover over the **information** (**(i)**)<!-- todo: icon, for Filter Requests --> icon.
 
 Additionally, the **Network** tool shows a warning warning icon next to a request with cookies blocked either because of Chrome flags or configuration.  Hover over the icon to see a tooltip with a clue and click it to go to the Issues panel for more information.
 
@@ -534,7 +534,7 @@ Warning icons next to a request blocked by Chrome flags or configuration.
 
 To filter out everything except blocked requests, in the **Filters** action bar, select **More filters** > **Blocked requests**, so that a checkmark appears.  To test this, you can use the **Network request blocking** tool in the **Quick View** panel at the bottom of DevTools; see [Block requests](./index.md#block-requests) in _Inspect network activity_.
 
-<!-- ![The Requests table shows only blocked requests](todo: blocked-requests.png) -->
+<!-- ![The Requests table shows only blocked requests](todo png: blocked-requests.png, for Filter Requests) -->
 
 The **Requests** table highlights blocked requests in red.  The status bar at the bottom displays the number of the shown requests out of the total.
 
@@ -543,9 +543,9 @@ The **Requests** table highlights blocked requests in red.  The status bar at th
 #### Show only third-party requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#third-party -->
 
-To filter out everything except the requests with origin that differs from page origin, in the **Filters** action bar, select **More filters** > **3rd-party requests**, so that a checkmark appears.  Try it on this [demo page](https://samesite-sandbox.glitch.me/).<!-- todo: which demo? -->
+To filter out everything except the requests with origin that differs from page origin, in the **Filters** action bar, select **More filters** > **3rd-party requests**, so that a checkmark appears.  <!-- Try it on this [demo page](https://samesite-sandbox.glitch.me/). todo demo: create downstream demo for Filter Requests -->
 
-<!-- ![The Requests table shows only the third-party requests](todo: third-party-requests.png) -->
+<!-- ![The Requests table shows only the third-party requests](todo png: third-party-requests.png, for Filter Requests -->
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
@@ -656,7 +656,7 @@ If inline frames on a page initiate a lot of requests, you can make the request 
 
 To group requests by iframes, in the **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Group by frame** checkbox.
 
-<!-- ![The network request log with requests grouped by iframes](todo: png) -->
+<!-- ![The network request log with requests grouped by iframes](todo png: network-request-log-iframes.png) -->
 
 To view a request initiated by an inline frame, expand it in the request log.
 
@@ -688,7 +688,7 @@ To view the messages of a WebSocket connection:
 
 To refresh the table, re-click the name of the WebSocket connection under the **Name** column of the **Requests** table.
 
-<!-- ![The Frames panel](todo: network-frames.png) -->
+<!-- ![The Frames panel](todo png: network-frames.png) -->
 
 The table contains the following three columns:
 
@@ -716,13 +716,13 @@ Messages are color-coded according to each type:
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#event-stream -->
 <!-- todo: clean up text/links -->
 
-To view the events that servers stream through [Fetch API](https://web.dev/articles/introduction-to-fetch), [EventSource API](https://web.dev/articles/eventsource-basics#event_stream_format), and XHR:
+To view the events that servers stream through [Fetch API](https://web.dev/articles/introduction-to-fetch),<!-- todo: link to MDN instead --> [EventSource API](https://web.dev/articles/eventsource-basics#event_stream_format),<!-- todo: link to MDN instead --> and XHR:
 
-1. [Record network](https://developer.chrome.com/docs/devtools/network/reference#record) requests on a page that streams events.  For example, open this [demo page](https://fetch-eventstream.glitch.me/) and click any of the three buttons.
+1. [Record network](https://developer.chrome.com/docs/devtools/network/reference#record)<!-- todo: link to anchor here instead --> requests on a page that streams events.  For example, open this [demo page](https://fetch-eventstream.glitch.me/)<!-- todo demo: own demo --> and click any of the three buttons.
 
 1. In the **Network** tool, select a request, and then open the **EventStream** tab.
 
-   <!-- ![The EventStream tab](todo: png) -->
+   <!-- ![The EventStream tab](todo png: event-stream.png) -->
 
 To filter events, specify a regular expression in the filter bar at the top of the **EventStream** tab.
 
@@ -796,11 +796,11 @@ Sometimes the **Headers** tab shows the warning message **Provisional headers ar
 
 * The request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can disable caching to see the full request headers; see [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache), above.
 
-  <!-- ![Provisional headers warning message](todo: provisional-headers-warning.png) -->
+  <!-- ![Provisional headers warning message](todo png: provisional-headers-warning.png) -->
 
 * The network resource isn't valid.  For example, execute `fetch("https://jec.fish.com/unknown-url/")` in the **Console** tool.
 
-  <!-- ![Provisional headers warning message](todo: provisional-headers-warning-2.png) -->
+  <!-- ![Provisional headers warning message](todo png: provisional-headers-warning-2.png) -->
 
 DevTools can also display only provisional headers due to security reasons.
 
@@ -831,7 +831,7 @@ By default, the **Network** tool shows the payload in a human-readable form.
 
 To view the sources of query string parameters and form data, on the **Payload** tab, click **view source** next to the **Query String Parameters** or **Form Data** sections.
 
-<!-- ![The view source buttons](todo: the-view-source-buttons.png) -->
+<!-- ![The view source buttons](todo png: the-view-source-buttons.png) -->
 
 
 <!-- ---------- -->
@@ -846,7 +846,7 @@ To display query string parameters in a human-readable format, but with encoding
 
 1. Click **view decoded** or **view URL-encoded**.
 
-   <!-- ![Toggle URL-encoding](todo: toggle-url-encoding.png) -->
+   <!-- ![Toggle URL-encoding](todo png: toggle-url-encoding.png) -->
 
 
 <!-- ------------------------------ -->
@@ -1045,27 +1045,26 @@ To save all network requests to a HAR file:
 1. DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You can't filter requests, and you can't save a single request.
 
 Once you save a HAR file, you can import it back into DevTools for analysis by drag-and-dropping the HAR file into the **Requests** table.
-<!--For more information, see also [HAR Analyzer](https://toolbox.alphabetapps.com/apps/har_analyzer)  Todo: add section link when content is available  -->
 
 
 <!-- incoming upstream content: -->
 <!-- todo: clean up -->
 
-HAR (HTTP Archive) is a file format used by several HTTP session tools to export the captured data.  The format is a JSON object with a particular set of fields.
+HAR (HTTP Archive) is a file format used by several HTTP session tools to export the captured data.  The format is a JSON object with a particular set of fields.  See [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/).
 
-To reduce the chances of accidental leaks of sensitive information, by default you can export the "sanitized" network log in HAR format that excludes sensitive information such as Cookie, Set-Cookie, and Authorization headers.  If required, you can also export the log with sensitive data.
+To reduce the chances of accidental leaks of sensitive information, by default you can export the "sanitized" network log in HAR format that excludes sensitive information such as `Cookie`, `Set-Cookie`, and `Authorization` headers.  If required, you can also export the log _with_ sensitive data.
 
 To save all network requests to a HAR file, pick one of the two ways:
 
-* Right-click any request in the Requests table and select Copy > Save all [listed] as HAR (sanitized) or Save all [listed] as HAR (with sensitive data).
+* Right-click any request in the **Requests** table and select **Copy** > **Save all [listed] as HAR (sanitized)** or **Save all [listed] as HAR (with sensitive data)**.
 
-  <!-- ![Selecting 'Save all listed as HAR (sanitized)'](todo: png) -->
+  <!-- ![Selecting 'Save all listed as HAR (sanitized)'](todo png: png) -->
 
-* Click download Export HAR (sanitized)... in the action bar at the top of the **Network** tool.
+* Click **Export HAR (sanitized)** <!-- todo: ![Download icon]() --> in the action bar at the top of the **Network** tool.
 
-To export with sensitive data, first, turn on settings Settings > Preferences > Network > check_box Allow to generate HAR with sensitive data, then click the download Export button and select Export HAR (with sensitive data) from the drop-down menu.
+To export with sensitive data, first, turn on **Settings** <!-- todo: ![Settings icon]() -->  > **Preferences** > **Network** > the checkbox **Allow to generate HAR with sensitive data**, then click the download Export button and select Export HAR (with sensitive data) from the drop-down menu.<!-- todo: clean up -->
 
-<!-- ![The 'Export HAR' button in the action bar at the top with two export options enabled](todo: png) -->
+<!-- ![The 'Export HAR' button in the action bar at the top with two export options enabled](todo png: export-har-button.png) -->
 
 Once you have a HAR file, you can import it back into DevTools for analysis in two ways:
 
@@ -1076,12 +1075,19 @@ The **Network** tool reads and shows initiators for the requests imported from H
 
 
 <!-- ------------------------------ -->
-#### Copy one or more requests to the clipboard
-<!-- todo: different than upstream -->
-<!-- Copy a request, a filtered set of requests, or all of them to the clipboard  https://developer.chrome.com/docs/devtools/network/reference/#copy -->
+#### Copy a request, a filtered set of requests, or all of them to the clipboard
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#copy -->
+<!-- todo: different than upstream content outline, which has lists:
+Copy as
+Copy all
+Copy all listed
+-->
+
+<!-- old content to replace: -->
 
 Under the **Name** column of the Requests table, right-click a request, click **Copy**, and then select one of the following options:
 
+<!-- todo: update per latest ui -->
 | Name | Details |
 | --- | --- |
 | **Copy Link Address** | Copy the URL of the request to the clipboard. |
@@ -1091,8 +1097,48 @@ Under the **Name** column of the Requests table, right-click a request, click **
 | **Copy All as Fetch** | &nbsp; |
 | **Copy All as cURL** | Copy all requests as a chain of cURL commands. |
 | **Copy All as HAR** | Copy all requests as HAR data. |
+<!-- todo: add "Copy all listed" items -->
 
-![Selecting 'Copy Response'](./reference-images/copy-response.png)
+![Selecting 'Copy Response'](./reference-images/copy-response.png)<!-- todo: update per latest ui -->
+
+
+<!-- the new, upstream content: -->
+
+Under the **Name** column of the **Requests** table, right-click a request, hover over **Copy**, and then select one of the following options.
+
+To copy a single request, its response, or stack trace:
+
+* **Copy URL**. Copy the request's URL to the clipboard.
+* **Copy as cURL**. Copy the request as a cURL command.
+* **Copy as PowerShell**. Copy the request as a PowerShell command.
+* **Copy as fetch**. Copy the request as a fetch call.
+* **Copy as fetch (Node.js)**. Copy the request as a Node.js fetch call.
+* **Copy response**. Copy the response body to the clipboard.
+* **Copy stack trace**. Copy the request's stack track to the clipboard.
+
+To copy all requests:
+
+* **Copy all URLs**. Copy URLs of all requests to the clipboard.
+* **Copy all as cURL**. Copy all requests as a chain of cURL commands.
+* **Copy all as PowerShell**. Copy all requests as a chain of PowerShell commands.
+* **Copy all as fetch**. Copy all requests as a chain of fetch calls.
+* **Copy all as fetch (Node.js)**. Copy all requests as a chain of Node.js fetch calls.
+* **Copy all as HAR (sanitized)**. Copy all requests as HAR data without sensitive data such as `Cookie`, `Set-Cookie`, and `Authorization` headers.
+* **Copy all as HAR (with sensitive data)**. Copy all requests as HAR data with sensitive data.
+
+<!-- ![Options for copying all requests](todo png: copy-options.png) -->
+
+To copy a filtered set of requests, apply a filter (see [Filter requests](#filter-requests), above) to the network log, right-click a request, and then select:
+
+* **Copy all listed URLs**. Copy URLs of all filtered requests to the clipboard.
+* **Copy all listed as cURL**. Copy all filtered requests as a chain of cURL commands.
+* **Copy all listed as PowerShell**. Copy all filtered requests as a chain of PowerShell commands.
+* **Copy all listed as fetch**. Copy all filtered requests as a chain of fetch calls.
+* **Copy all listed as fetch (Node.js)**. Copy all filtered requests as a chain of Node.js fetch calls.
+* **Copy all listed as HAR (sanitized)**. Copy all filtered requests as HAR data without sensitive data such as `Cookie`, `Set-Cookie`, and `Authorization` headers.
+* **Copy all listed as HAR (with sensitive data)**. Copy all filtered requests as HAR data with sensitive data.
+
+<!-- ![Copy options for a filtered set of requests](todo png: copy-filtered.png) -->
 
 
 <!-- ------------------------------ -->
@@ -1102,12 +1148,14 @@ Under the **Name** column of the Requests table, right-click a request, click **
 To copy the formatted JSON data of a JSON response:
 
 1. In the Request table, click the name of the request that led to a JSON response.
+
 1. In the sidebar, select the **Preview** tab.
+
 1. Right-click the first line of the formatted JSON response preview and then select **Copy value**. 
 
    ![The Copy Value right-click command](./reference-images/copy-json-value.png)
 
-   You can now paste the value into any editor to review it.
+   You can now paste the value into any editor.
 
 
 <!-- ------------------------------ -->
@@ -1117,14 +1165,17 @@ To copy the formatted JSON data of a JSON response:
 To copy property values from network requests to your clipboard:
 
 1. In the Request table, click the name of the request.
+
 1. In the sidebar, select the **Payload** tab:
+
 1. Expand one of the following sections.
     *  Request payload (JSON)
     *  Form Data
     *  Query String Parameters
     *  Request Headers
     *  Response Headers
-1. Right-click a value and then select **Copy value**.  You can now paste the value into any editor to review it.
+
+1. Right-click a value and then select **Copy value**.  You can now paste the value into any editor.
 
 
 <!-- ====================================================================== -->
@@ -1144,14 +1195,27 @@ By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, 
 
 
 <!-- ------------------------------ -->
-#### Big request rows
-<!-- Use big request rows  https://developer.chrome.com/docs/devtools/network/reference/#request-rows -->
+#### Use big request rows
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#request-rows -->
 
+<!-- old content: -->
 Use big request rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
 
-To enable large rows, select the **Big request rows** checkbox. An example of large request rows in the **Requests** pane:
+To enable large rows, select the **Big request rows** checkbox.  An example of large request rows in the **Requests** pane:
 
 ![An example of big request rows in the Requests pane](./reference-images/big-request-rows.png)
+
+
+<!-- todo: merge -->
+<!-- new upstream content: -->
+Use big rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using big rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request, and the **Priority** column shows both the initial (bottom value) and final (top value) fetch priority.
+
+Open **Settings**, and then click **Big request rows** to see big rows.
+
+Big request rows turned on.
+
+Hide the Over
+
 
 
 <!-- ------------------------------ -->
