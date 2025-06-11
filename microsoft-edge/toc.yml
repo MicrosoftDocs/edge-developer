@@ -835,10 +835,6 @@
             - name: Add custom UI to DevTools using extensions
               href: ./devtools-guide-chromium/customize/extensions.md
               displayName: Extensions
-
-            - name: Throttling
-              href: ./devtools-guide-chromium/settings/throttling.md
-              displayName: Settings
 # Remote debugging ------------------------------------------------------------
         - name: Remote debugging
           items:
