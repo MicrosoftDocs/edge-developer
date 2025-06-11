@@ -22,6 +22,7 @@ ms.date: 02/12/2025
    See the License for the specific language governing permissions and
    limitations under the License. -->
 # Inspect network activity
+<!-- https://developer.chrome.com/docs/devtools/network -->
 
 Use the **Network** tool to make sure the resources your webpage needs to run are downloaded as expected and that the requests to server-side APIs are sent correctly.  Inspect the properties of individual HTTP requests and responses, such as the HTTP headers, content, or size.
 
@@ -32,6 +33,7 @@ For an overview of the network-related DevTools features, see [Network features 
 
 <!-- ------------------------------ -->
 #### Video: Learn to Use the Network Tool
+<!-- equiv. to top of upstream -->
 
 For a video version of this tutorial, view the following video:
 
@@ -42,6 +44,7 @@ For a video version of this tutorial, view the following video:
 
 <!-- ====================================================================== -->
 ## When to use the Network tool
+<!-- https://developer.chrome.com/docs/devtools/network#overview -->
 
 In general, use the **Network** tool when you need to make sure that resources are being downloaded correctly and requests to server-side APIs are being sent as expected.  The most common use cases for the **Network** tool are:
 
@@ -54,6 +57,7 @@ If you're looking for ways to improve page load performance, the **Network** too
 
 <!-- ====================================================================== -->
 ## Open the Network tool
+<!-- https://developer.chrome.com/docs/devtools/network#open -->
 
 To get the most out of this tutorial, open the demo and try out the features on the demo page.
 
@@ -80,6 +84,7 @@ The **Network** tool is initially empty.  DevTools only logs network activity af
 
 <!-- ====================================================================== -->
 ## Understand the Network tool user interface
+<!-- not upstream -->
 
 The Network tool is divided in three main parts:
 
@@ -92,6 +97,7 @@ The Network tool is divided in three main parts:
 
 <!-- ====================================================================== -->
 ## Log network activity
+<!-- https://developer.chrome.com/docs/devtools/network#load -->
 
 To view the network activity that a page causes:
 
@@ -128,6 +134,7 @@ To view the network activity that a page causes:
 
 <!-- ====================================================================== -->
 ## Show more information
+<!-- https://developer.chrome.com/docs/devtools/network#information -->
 
 The columns of the Network Log are configurable.  You can hide columns that you aren't using.  There are also many columns that are hidden by default which you might find useful.
 
@@ -140,14 +147,17 @@ The columns of the Network Log are configurable.  You can hide columns that you 
 
 <!-- ====================================================================== -->
 ## Simulate a slower network connection
+<!-- https://developer.chrome.com/docs/devtools/network#throttle -->
 
 The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.  By throttling the page, you get a better idea of how long a page takes to load on a mobile device.
 
-1. Select the **Throttling** dropdown list in the top toolbar. It is set to **No throttling** by default.
+1. Click the **Throttling** dropdown list in the top toolbar.  **No throttling** is selected by default.
 
-1. Select **Slow 3G** or **Slow 4G**:
+   ![The Throttling dropdown list](./index-images/enable-throttling.png)
 
-   ![Select Slow 3G](./index-images/throttling-slow-3g.png)
+1. Select **3G**:
+
+   ![Select 3G](./index-images/enable-3g.png)<!-- todo: update -->
 
    A warning icon is displayed on the **Network** tool's tab, to remind you that throttling is enabled.
 
@@ -164,6 +174,7 @@ See also [Emulate slow network connections](../network/reference.md#emulate-slow
 
 <!-- ====================================================================== -->
 ## Capture screenshots
+<!-- https://developer.chrome.com/docs/devtools/network#screenshots -->
 
 Screenshots display how a webpage looks over time while it loads.
 
@@ -188,6 +199,7 @@ Screenshots display how a webpage looks over time while it loads.
 
 <!-- ====================================================================== -->
 ## Inspect the details of the resource
+<!-- https://developer.chrome.com/docs/devtools/network#details -->
 
 Select a resource to learn more information about it.
 
@@ -220,6 +232,7 @@ Select a resource to learn more information about it.
 
 <!-- ====================================================================== -->
 ## Search network headers and responses
+<!-- https://developer.chrome.com/docs/devtools/network#search -->
 
 Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.
 
@@ -244,6 +257,7 @@ For example, suppose you want to verify that your resources are using reasonable
 
 <!-- ====================================================================== -->
 ## Filter resources
+<!-- https://developer.chrome.com/docs/devtools/network#filter -->
 
 DevTools provides numerous workflows for filtering out resources that aren't relevant to the task at hand.
 
@@ -254,6 +268,7 @@ The **Filters** toolbar should be turned on by default.  If the **Filters** tool
 
 <!-- ------------------------------ -->
 #### Filter by string, regular expression, or property
+<!-- https://developer.chrome.com/docs/devtools/network#filterbox -->
 
 The **Filter** text box supports many different types of filtering.
 
@@ -274,6 +289,7 @@ The **Filter** text box supports many different types of filtering.
 
 <!-- ------------------------------ -->
 #### Filter by resource type
+<!-- https://developer.chrome.com/docs/devtools/network#type -->
 
 To focus in on a certain type of file, such as stylesheets:
 
@@ -290,6 +306,7 @@ For other filtering workflows, see [Filter requests](reference.md#filter-request
 
 <!-- ====================================================================== -->
 ## Block requests
+<!-- https://developer.chrome.com/docs/devtools/network#block -->
 
 How does a page look and behave when some of the page resources aren't available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:
 
@@ -299,7 +316,9 @@ How does a page look and behave when some of the page resources aren't available
 
    ![Show Network Request Blocking](./index-images/command-menu-block-requests.png)
 
-1. Click **Add Pattern** (![Add Pattern](./index-images/add-icon.png)), then type `main.css`, and then click **Add**:
+   The **Network request blocking** tool opens in the **Quick View** panel at the bottom of DevTools.
+
+1. Click the **Add Pattern** (![Add Pattern icon](./index-images/add-icon.png)) button, type `main.css`, and then click the **Add** button:
 
    ![Blocking 'main.css'](./index-images/add-block-pattern.png)
 
@@ -317,6 +336,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Conclusion
+<!-- not upstream -->
 
 Congratulations, you have completed the tutorial!  You now know how to use the **Network** tool in Microsoft Edge DevTools.
 
