@@ -74,7 +74,7 @@ The following programming environments are supported:
 *  [WinUI 2.0](/windows/apps/winui/winui2/)
 *  [WinUI 3.0](/windows/apps/winui/winui3/)
 
-WebView2 is also supported on the following devices: 
+In addition to Windows devices, WebView2 is also supported on the following devices:
 *  Xbox
 *  HoloLens 2
 
@@ -86,14 +86,14 @@ The Windows operating systems that are supported by Webview2 are the same as tho
 
 WebView2 apps can run on the following versions of Windows Client:
 
-* Windows 10 SAC 1709 and later **
+* Windows 10 SAC 1709 and later
 * Windows 10 Enterprise 2015 LTSC
 * Windows 10 Enterprise 2016 LTSC
 * Windows 10 Enterprise 2019 LTSC
 * Windows 10 Enterprise 2021 LTSC
 * Windows 10 Enterprise multi-session
-* Windows 10 IoT Enterprise SAC ****
-* Windows 10 IoT Enterprise 2019 LTSC ****
+* Windows 10 IoT Enterprise SAC
+* Windows 10 IoT Enterprise 2019 LTSC
 * Windows 11
 * Windows 11 Enterprise multi-session
 
