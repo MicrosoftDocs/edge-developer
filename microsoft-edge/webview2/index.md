@@ -63,29 +63,17 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 
 <!-- ====================================================================== -->
-## Supported programming environments and devices
-
-The following programming environments are supported:
-
-*  Win32 C/C++
-*  .NET Framework 4.6.2 or later
-*  .NET Core 3.1 or later
-*  .NET 5 or later
-*  [WinUI 2.0](/windows/apps/winui/winui2/)
-*  [WinUI 3.0](/windows/apps/winui/winui3/)
-
-In addition to Windows devices, WebView2 is also supported on the following devices:
-*  Xbox
-*  HoloLens 2
-
-
-<!-- ====================================================================== -->
 ## Supported Windows versions
 
 The Windows operating systems that are supported by Webview2 are the same as those supported by Microsoft Edge.
 
+
+<!-- ------------------------------ -->
+#### Windows Client
+
 WebView2 apps can run on the following versions of Windows Client:
 
+<!-- newest last, per linked page -->
 * Windows 10 SAC 1709 and later
 * Windows 10 Enterprise 2015 LTSC
 * Windows 10 Enterprise 2016 LTSC
@@ -99,6 +87,9 @@ WebView2 apps can run on the following versions of Windows Client:
 
 For details, see [Windows Client](/deployedge/microsoft-edge-supported-operating-systems#windows-client) in _Microsoft Edge supported Operating Systems_.
 
+
+<!-- ------------------------------ -->
+#### Windows Server
 
 WebView2 apps can run on the following versions of Windows Server:
 
@@ -115,15 +106,32 @@ For details, see [Windows Server](/deployedge/microsoft-edge-supported-operating
 
 WebView2 Runtime version 109 is the final version that supports the following versions of Windows.  WebView2 Runtime and SDK version 110.0.1519.0 and higher don't support these operating systems.
 
-*  Windows 8/8.1
-*  Windows 7
-*  Windows Server 2012 R2
-*  Windows Server 2012
 *  Windows Server 2008 R2
+*  Windows Server 2012
+*  Windows Server 2012 R2
+*  Windows 7
+*  Windows 8/8.1
 
 See also:
 * [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems) - WebView2 support for Windows 7 and Windows Server 2008 R2 have the same support timeline as Microsoft Edge.
 * [Microsoft Edge and WebView2 ending support for Windows 7 and Windows 8/8.1](https://blogs.windows.com/msedgedev/2022/12/09/microsoft-edge-and-webview2-ending-support-for-windows-7-and-windows-8-8-1/)
+
+
+<!-- ====================================================================== -->
+## Supported programming environments and devices
+
+The following programming environments are supported for WebView2:
+
+*  Win32 C/C++
+*  .NET Framework 4.6.2 or later
+*  .NET Core 3.1 or later
+*  .NET 5 or later
+*  [WinUI 2.0](/windows/apps/winui/winui2/)
+*  [WinUI 3.0](/windows/apps/winui/winui3/)
+
+In addition to Windows devices, WebView2 is also supported on the following devices:
+*  Xbox
+*  HoloLens 2
 
 
 <!-- ====================================================================== -->
