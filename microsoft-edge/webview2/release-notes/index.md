@@ -106,7 +106,6 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 description 
 
-
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
