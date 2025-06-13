@@ -599,7 +599,7 @@ $UploadHeaders = @{
     "X-ClientID" = "$ClientID"
 }
 
-$uploadResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/draft/package" -Headers $UploadHeaders  -Method 'POST' -InFile $FilePATH
+$uploadResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/draft/package" -Headers $UploadHeaders -Method 'POST' -InFile $FilePATH
 
 $uploadResponse
 
@@ -610,7 +610,7 @@ if($uploadResponse.StatusCode -eq 202) {
     $uploadOperationId = ReadLocationFromRawContent($uploadResponse.RawContent)
 }
 
-$uploadStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/draft/package/operations/$UploadOperationId" -Headers $UploadHeaders  -Method 'GET'
+$uploadStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/draft/package/operations/$UploadOperationId" -Headers $UploadHeaders -Method 'GET'
 
 $uploadStatusResponse
 
@@ -623,14 +623,14 @@ if($uploadStatusResponse.StatusCode -eq 202) {
         if($retryCount -gt $RetryLimit) {
             Exit-PSSession
         }
-        $uploadStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/draft/package/operations/$UploadOperationId" -Headers $UploadHeaders  -Method 'GET'
+        $uploadStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/draft/package/operations/$UploadOperationId" -Headers $UploadHeaders -Method 'GET'
         $retryCount = $retryCount + 1
         Start-Sleep -Seconds $RetryAfterPeriod
         $uploadStatus = ReadKeyFromJSON($uploadStatusResponse.Content, 'status')
     }
 }
 
-$publishResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$productID/submissions" -Headers $UploadHeaders  -Method 'POST' -Body $PublishNotesBody
+$publishResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$productID/submissions" -Headers $UploadHeaders -Method 'POST' -Body $PublishNotesBody
 
 $publishResponse
 
@@ -643,7 +643,7 @@ if($publishResponse.StatusCode -eq 202) {
 
 $PublishOperationId
 
-$publishStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/operations/$PublishOperationId" -Headers $UploadHeaders  -Method 'GET'
+$publishStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/operations/$PublishOperationId" -Headers $UploadHeaders -Method 'GET'
 
 $publishStatusResponse
 
@@ -658,7 +658,7 @@ if($publishStatusResponse.StatusCode -eq 202) {
         if($retryCount -gt $RetryLimit) {
             Exit-PSSession
         }
-        $publishStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/operations/$PublishOperationId" -Headers $UploadHeaders  -Method 'GET'
+        $publishStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/operations/$PublishOperationId" -Headers $UploadHeaders -Method 'GET'
         $retryCount = $retryCount + 1
         Start-Sleep -Seconds $RetryAfterPeriod
         $publishStatus = ReadKeyFromJSON($publishStatusResponse.Content, 'status')
