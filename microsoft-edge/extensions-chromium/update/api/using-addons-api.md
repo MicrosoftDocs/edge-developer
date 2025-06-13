@@ -547,11 +547,13 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Script to check publication status and publish your extension
+## Example: Check publication status and publish an extension with a PowerShell script
 
-The following is an example script that you can use to check the publication status and publish your extension.  Fill in the values for `ClientID`, `ClientSecret`, `ProductID`, and `FilePATH`, in the empty strings at the top.
+The following code is an example of a PowerShell script that uses the REST API to check the publication status of an extension, and publish that extension.
 
-```javascript
+To use this script, fill in the `$ClientID`, `$ClientSecret`, `$ProductID`, and `$FilePATH` values at the top of the script.
+
+```powershell
 Param(
     [string] $ClientID = '',
     [string] $ClientSecret = '',
@@ -560,7 +562,7 @@ Param(
     [int] $RetryLimit = 10,
     [int] $RetryAfterPeriod = 5,
     [string] $ApiEndpoint = 'https://api.addons.microsoftedge.microsoft.com',
-    [string] $PublishNotes = 'This is test publish'
+    [string] $PublishNotes = 'This is a test publish'
 )
 
 function ReadKeyFromJSON($jsonContent, $keyToFetch){
