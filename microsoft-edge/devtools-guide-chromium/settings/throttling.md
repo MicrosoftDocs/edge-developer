@@ -28,7 +28,7 @@ In the **Throttling** page of **Customize and control DevTools** (![Customize an
 
 * Calibrate CPU throttling presets to approximate the typical performance of low- and mid-tier mobile devices.
 
-* Set up custom throttling profiles.  You can use your custom throttling profiles to test custom connection speeds in the **Network** tool, per [Create custom throttling profiles](../network/reference.md#create-custom-throttling-profiles) in _Network features reference_.
+* Set up custom throttling profiles.  You can use your custom throttling profiles to test custom connection speeds in the **Network** tool.<!--, per [Create custom throttling profiles](../network/reference.md#create-custom-throttling-profiles) in _Network features reference_.  todo: after https://github.com/MicrosoftDocs/edge-developer/pull/3405 is merged, link -->
 
 ![The Throttling tab in DevTools Settings](./throttling-images/settings-throttling.png)
 
