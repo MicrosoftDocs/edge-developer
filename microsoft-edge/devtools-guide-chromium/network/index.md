@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/12/2025
+ms.date: 06/12/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -40,8 +40,6 @@ For a video version of this tutorial, view the following video:
 [![Thumbnail image for video "Learn to Use the Network Tool"](./index-images/network-tool-intro-video.png)](https://www.youtube.com/watch?v=niG_Ck6E5L8)
 
 
-<!-- TODO: entire section needs a Microsoft Edge DevTools rewrite  -->
-
 <!-- ====================================================================== -->
 ## When to use the Network tool
 <!-- https://developer.chrome.com/docs/devtools/network#overview -->
@@ -52,7 +50,11 @@ In general, use the **Network** tool when you need to make sure that resources a
 
 *  Verifying the request parameters and responses of server-side API calls.
 
-If you're looking for ways to improve page load performance, the **Network** tool can help understand how much data is being downloaded and how long it takes to download it, but there are many other types of load performance issues that aren't related to network activity.  To further investigate page load performance issues, you can use the **Performance tool**, the **Issues** tool, and the **Lighthouse** tool, because it gives you targeted suggestions on how to improve your page.  For example, see [Optimize website speed using Lighthouse](../speed/get-started.md).
+If you're looking for ways to improve page load performance, the **Network** tool can help understand how much data is being downloaded and how long it takes to download it, but there are many other types of load performance issues that aren't related to network activity.  To further investigate page load performance issues, you can use:
+
+* The **Performance tool**.  See [Performance tool: Analyze your website's performance](../performance/overview.md).
+* The **Issues** tool.  See [Find and fix problems using the Issues tool](../issues/index.md).
+* The **Lighthouse** tool, which gives you targeted suggestions on how to improve your page.  For example, see [Optimize website speed using Lighthouse](../speed/get-started.md).
 
 
 <!-- ====================================================================== -->
@@ -71,11 +73,13 @@ To get the most out of this tutorial, open the demo and try out the features on 
    ![The demo in one window and this tutorial in a different window](../media/network-tutorial/windows.png)
    -->
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  DevTools opens.
+1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-1. In DevTools, on the **Activity Bar**, select the **Network** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button:
+   DevTools opens.
 
-   You might prefer to [dock DevTools to the bottom of your window](../customize/placement.md):
+1. In DevTools, on the **Activity Bar**, select the **Network** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button.
+
+1. Optionally, dock DevTools to the bottom of the window.  See [Dock DevTools in the bottom of the browser](../customize/placement.md#dock-devtools-in-the-bottom-of-the-browser) in _Change DevTools placement (Undock, Dock to bottom, Dock to left)_.
 
    ![Network tool in DevTools, with DevTools docked to the bottom of the window](./index-images/network-bottom.png)
 
@@ -89,7 +93,9 @@ The **Network** tool is initially empty.  DevTools only logs network activity af
 The Network tool is divided in three main parts:
 
 * The top toolbar contains options to customize the tool and filter network requests.
+
 * Below the top toolbar, the **Overview** graph provides a high-level overview of the network traffic over time and allows to filter network requests.
+
 * Below the **Overview** graph, the **Network Log** section shows the network activity and allows to inspect individual requests.
 
 ![The three main parts of the Network tool](./index-images/network-ui-sections.png)
@@ -157,7 +163,7 @@ The network connection of the computer that you use to build sites is probably f
 
 1. Select **3G**:
 
-   ![Select 3G](./index-images/enable-3g.png)<!-- todo: update -->
+   ![Select 3G](./index-images/enable-3g.png)
 
    A warning icon is displayed on the **Network** tool's tab, to remind you that throttling is enabled.
 
@@ -236,23 +242,25 @@ Select a resource to learn more information about it.
 
 Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.
 
-For example, suppose you want to verify that your resources are using reasonable **cache policies**.<!--[cache policies](../../../web/tools/lighthouse/audits/cache-policy) -->
+For example, suppose you want to verify that your resources are using reasonable cache policies.<!-- todo: add & link to cache policies section: [cache policies](https://web.dev/uses-long-cache-ttl/) ends up at [Serve static assets with an efficient cache policy](https://developer.chrome.com/docs/lighthouse/performance/uses-long-cache-ttl) -->
 
-<!--TODO: add cache policies section when available  -->
-
-1. Select **Search** (![Search](./index-images/search-icon.png)).  The Search pane opens to the left of the Network log:
+1. Select **Search** (![Search](./index-images/search-icon.png)).  The **Search** pane opens to the left of the **Network log**:
 
    ![The Search pane](./index-images/search-empty.png)
 
-1. Type `no-cache` and press **Enter**.  The Search pane lists all instances of `no-cache` that it finds in resource headers or content:
+1. Type `no-cache` and press **Enter**.  The **Search** pane lists all instances of `no-cache` that it finds in resource headers or content:
 
    ![Search results for no-cache](./index-images/search-cache-control.png)
 
-1. Click a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the **Headers** panel opens.   If the query was found in content, the **Response** panel opens:
+1. Click a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the **Headers** tab opens:
 
    ![A search result highlighted in the Headers panel](./index-images/search-cache-control-headers-response-headers.png)
 
-1. Close the Search pane and the **Headers** panel.
+   If the query was found in content, the **Response** tab opens.
+
+1. Close the **Search** pane by clicking the **Close** (X) button on the right.
+
+1. Close the **Headers** pane by clicking the **Close** (X) button on the left.
 
 
 <!-- ====================================================================== -->
