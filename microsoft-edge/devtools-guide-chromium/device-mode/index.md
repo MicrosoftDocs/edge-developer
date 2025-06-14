@@ -44,7 +44,7 @@ Some aspects of mobile devices aren't emulated in DevTools.  For example, the ar
 Use [Remote Debugging](../remote-debugging/index.md) to interact with the code of a page from your machine while your page actually runs on a mobile device.  You can view, change, debug, profile, or all four while you interact with the code.  Your machine can be a notebook or desktop computer.
 
 
-**Detailed contents:**<!--Jan. 30, 2025. compare page toc at https://developer.chrome.com/docs/devtools/device-mode/-->
+**Detailed contents:**
 * [Simulate a mobile viewport](#simulate-a-mobile-viewport)
    * [Responsive Viewport Mode](#responsive-viewport-mode)
    * [Show media queries](#show-media-queries)
@@ -52,6 +52,8 @@ Use [Remote Debugging](../remote-debugging/index.md) to interact with the code o
    * [Set the device type](#set-the-device-type)
    * [Mobile Device Viewport Mode](#mobile-device-viewport-mode)
    * [Rotate the viewport to landscape orientation](#rotate-the-viewport-to-landscape-orientation)
+   * [Toggle dual-screen mode](#toggle-dual-screen-mode)
+   * [Set device posture](#set-device-posture)
    * [Show device frame](#show-device-frame)
    * [Add a custom mobile device](#add-a-custom-mobile-device)
    * [Show rulers](#show-rulers)
