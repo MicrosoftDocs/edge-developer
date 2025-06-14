@@ -184,8 +184,11 @@ To replay an XHR request, do one of the following in the **Requests** table:
 * Select the request and press **R**.
 * Right-click the request and select **Replay XHR**.
 
+<!-- For example, the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page: -->
+
 <!--
 ![Click Replay XHR](todo png: selecting-replay-xhr.png)
+todo: need demo page that has XHR; else no Replay XHR menuitem
 -->
 
 
@@ -209,9 +212,9 @@ The **Disable Cache** checkbox:
 ###### Disable the browser cache from the Network conditions tool
 <!-- Disable the browser cache from the Network conditions drawer  https://developer.chrome.com/docs/devtools/network/reference/#disable-cache-network-conditions -->
 
-From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel and then disable the browser cache from there:
+From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel at the bottom of DevTools, and then disable the browser cache from there:
 
-1. In the **Network** tool, click the **More network conditions** (![More network conditions icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
+1. In the **Network** tool, click the **More network conditions** (![More network conditions icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. In the **Network conditions** tool, select the **Disable cache** checkbox:
 
@@ -276,13 +279,13 @@ In addition to presets, such as slow or fast 4G, you can also add your own custo
 
    The DevTools **Settings** page opens, with the **Throttling** page selected.  This is the same as selecting **Customize and control DevTools**, and then selecting the **Throttling** page.
 
-1. Set up a new throttling profile as described in [Set up custom network throttling profile](../settings/throttling.md#set-up-custom-network-throttling-profile) in _Throttling_.
+1. Set up a new throttling profile as described in [Set up custom network throttling profile](../settings/throttling.md#set-up-custom-network-throttling-profile) in _Throttling_.<!-- todo: test this link after merging https://github.com/MicrosoftDocs/edge-developer/pull/3473 to "main" then merging "main" into this PR 3405 -->
 
-1. In the **Network** tool, click the **Throttling** dropdown menu, and then select your custom throttling profile.
+1. In the **Network** tool, click the **Throttling** dropdown menu, and then select your custom throttling profile, such as **Profile1**:
 
-   <!-- ![A custom profile selected from the throttling menu. The Network tool displays a warning icon.](todo png: a-custom-profile-selected.png) -->
+   ![A custom profile selected from the Throttling menu, causing a warning icon on the Network tab](./reference-images/custom-profile-selected.png)
 
-DevTools displays a <!--todo: Warning icon--> warning icon next to the **Network** tool to remind you that throttling is enabled.
+A warning (![Throttling warning icon](./reference-images/throttling-warning-icon.png)) icon is displayed in the **Network** tab, to remind you that throttling is enabled.
 
 
 <!-- ---------- -->
@@ -293,7 +296,7 @@ In addition to HTTP requests, DevTools throttles WebSocket connections.
 
 To observe WebSocket throttling:
 
-1. Initiate a new connection, for example, by using a [test tool](https://www.piesocket.com/websocket-tester).
+1. Initiate a new connection, for example, by using a test tool such as [Online Websocket Tester](https://www.piesocket.com/websocket-tester).
 
 1. On the **Network** tool, select **No throttling** and send a message through the connection.
 
@@ -310,9 +313,9 @@ To observe WebSocket throttling:
 ###### Emulate slow network connections from the Network Conditions tool
 <!-- Emulate slow network connections from the Network conditions drawer  https://developer.chrome.com/docs/devtools/network/reference/#throttling-network-conditions -->
 
-From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel and then throttle the network connection from there:
+From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel at the bottom of DevTools, and then throttle the network connection from there:
 
-1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
+1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. In the **Network conditions** tool, in the **Network throttling** menu, select a connection speed.
 
@@ -344,7 +347,7 @@ See also:
 
 To manually override the user agent:
 
-1. In the **Network** tool, click the **More network conditions** (![More network conditions icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
+1. In the **Network** tool, click the **More network conditions** (![More network conditions icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. In the **Network conditions** tool, clear the **Use browser default** checkbox.  The other controls become available.
 
@@ -359,7 +362,7 @@ If your site employs user agent client hints and you want to test them, you can 
 
 To set user agent client hints in the **Network conditions** tool:
 
-1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel.
+1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. In the **User agent** section, clear the **Use browser default** checkbox, and then expand **User agent client hints**:
 
@@ -411,10 +414,20 @@ For more information on all the ways you can search in DevTools, see [Find sourc
 
 <!-- ====================================================================== -->
 ## Filter requests
-<!-- https://developer.chrome.com/docs/devtools/network/reference/#filter -->
-<!-- todo: update.  check also https://developer.chrome.com/blog/new-in-devtools-130#network -->
+<!-- https://developer.chrome.com/docs/devtools/network/reference/#filter - upstream section empty; below is like https://developer.chrome.com/blog/new-in-devtools-130#network-filters -->
 
-You can filter requests by properties, by type, or by time, and you can hide data URLs.
+You can filter requests by properties, by type, or by time, and you can hide data URLs.  The **Show only/hide requests** dropdown list contains the following options and status checkmarks:
+* **Hide data URLs**
+* **Hide extension URLs**
+* **Blocked response cookies**
+* **Blocked requests**
+* **3rd-party requests**
+
+![The "Show only/hide requests" dropdown list](./reference-images/show-only-hide-requests-dropdown-list.png)
+
+The dropdown list has a number on the left that tells you how many filters are selected within the dropdown list.
+
+To bring back the old filter design (separate checkboxes), clear the DevTools **Settings** > **Experiments** > **Redesign of the filter bar in the Network panel** checkbox; see [Redesign of the filter bar in the Network panel](../experimental-features/index.md#redesign-of-the-filter-bar-in-the-network-panel) in _Experimental features in Microsoft Edge DevTools_.
 
 
 <!-- ------------------------------ -->
@@ -512,25 +525,24 @@ The status bar at the bottom displays the number of the shown requests out of th
 <!-- ------------------------------ -->
 #### Show only the requests with blocked response cookies
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#show-blocked-cookies -->
-<!-- todo: clean up -->
 
-To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Blocked response cookies** so that a checkmark appears next to it.  <!--Try it on this [demo page](https://samesite-sandbox.glitch.me/). todo demo: create downstream demo for Filter Requests -->
+To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, in the **3rd-party requests** (**More filters**) dropdown list, and then select **Blocked response cookies** so that a checkmark appears next to it.<!-- Try it on this [demo page](https://samesite-sandbox.glitch.me/). -->  Try it on the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, though there are no blocked response cookies:
 
-<!-- ![The Requests table shows only the requests with blocked response cookies](todo png: blocked-response-cookies.png, for Filter Requests) -->
+![The Requests table shows only the requests with blocked response cookies](./reference-images/blocked-response-cookies.png)
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
-To find out the reason why a response cookie was blocked, select the request, open its **Cookies** tab, and hover over the **information** (**(i)**)<!-- todo: icon, for Filter Requests --> icon.
+To find out the reason why a response cookie was blocked, select the request (under **Name**), open its **Cookies** tab (to the right), and then hover over the **information** (![Information icon](./reference-images/information-icon-for-blocked-response-cookies.png)) button.
 
-Additionally, the **Network** tool shows a warning warning icon next to a request with cookies blocked either because of Chrome flags or configuration.  Hover over the icon to see a tooltip with a clue and click it to go to the Issues panel for more information.
+<!-- not in latest ui
+Additionally, the **Network** tool shows a warning icon next to a request with cookies blocked either because of Edge flags or configuration.  Hover over the icon to see a tooltip with a clue and click it to go to the **Issues** tool for more information. -->
 
-Warning icons next to a request blocked by Chrome flags or configuration.
+<!-- ![Warning icons next to a request blocked by Edge flags or configuration](./x/3pc-blocked.png) -->
 
 
 <!-- ------------------------------ -->
 #### Show only blocked requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#show-blocked -->
-<!-- todo: clean up -->
 
 To filter out everything except blocked requests, in the **Filters** action bar, select **More filters** > **Blocked requests**, so that a checkmark appears.  To test this, you can use the **Network request blocking** tool in the **Quick View** panel at the bottom of DevTools; see [Block requests](./index.md#block-requests) in _Inspect network activity_.
 
@@ -543,9 +555,9 @@ The **Requests** table highlights blocked requests in red.  The status bar at th
 #### Show only third-party requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#third-party -->
 
-To filter out everything except the requests with origin that differs from page origin, in the **Filters** action bar, select **More filters** > **3rd-party requests**, so that a checkmark appears.  <!-- Try it on this [demo page](https://samesite-sandbox.glitch.me/). todo demo: create downstream demo for Filter Requests -->
+To filter out everything except the requests with origin that differs from page origin, in the **Filters** action bar, select **More filters** > **3rd-party requests**, so that a checkmark appears.  Try it on the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.
 
-<!-- ![The Requests table shows only the third-party requests](todo png: third-party-requests.png, for Filter Requests -->
+![The Requests table shows only the third-party requests](./reference-images/third-party-requests.png)
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
@@ -682,13 +694,23 @@ The **Waterfall** column of the **Requests** pane:
 
 To view the messages of a WebSocket connection:
 
+1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, or the [Online Websocket Tester](https://www.piesocket.com/websocket-tester).
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Select the **Network** tool.
+
+1. Refresh the webpage.
+
 1. Under the **Name** column of the **Requests** table, click the URL of the WebSocket connection.
 
 1. Click the **Messages** tab.  The table shows the last 100 messages.
 
 To refresh the table, re-click the name of the WebSocket connection under the **Name** column of the **Requests** table.
 
-<!-- ![The Frames panel](todo png: network-frames.png) -->
+![The Messages tab](./reference-images/messages-tab.png)<!-- todo: sign up, show Messages tab -->
 
 The table contains the following three columns:
 
@@ -714,19 +736,18 @@ Messages are color-coded according to each type:
 <!-- ------------------------------ -->
 #### Analyze events in a stream
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#event-stream -->
-<!-- todo: clean up text/links -->
 
-To view the events that servers stream through [Fetch API](https://web.dev/articles/introduction-to-fetch),<!-- todo: link to MDN instead --> [EventSource API](https://web.dev/articles/eventsource-basics#event_stream_format),<!-- todo: link to MDN instead --> and XHR:
+To view the events that servers stream through [Fetch API](https://web.dev/articles/introduction-to-fetch),<!-- todo: link to MDN instead --> EventSource API (see [Server-sent events](https://developer.mozilla.org/docs/Web/API/Server-sent_events)), and XHR:
 
-1. [Record network](https://developer.chrome.com/docs/devtools/network/reference#record)<!-- todo: link to anchor here instead --> requests on a page that streams events.  For example, open this [demo page](https://fetch-eventstream.glitch.me/)<!-- todo demo: own demo --> and click any of the three buttons.
+1. Record network requests on a page that streams events, per [Record network requests](#record-network-requests), above.
 
 1. In the **Network** tool, select a request, and then open the **EventStream** tab.
 
-   <!-- ![The EventStream tab](todo png: event-stream.png) -->
+   <!-- ![The EventStream tab](./reference-images/event-stream.png) - not created -->
 
 To filter events, specify a regular expression in the filter bar at the top of the **EventStream** tab.
 
-To clear the list of captured events, click the **Clear** <!--(![EventStream Clear icon](todo: eventstream-clear-icon.png))--> button.
+To clear the list of captured events, click the **Clear** (![EventStream Clear icon](./reference-images/eventstream-clear-icon.png)) button.
 
 
 <!-- ------------------------------ -->
@@ -780,25 +801,24 @@ To display HTTP header data about a request:
 
 This feature doesn't exist anymore.<!-- todo -->
 
-By default, the **Headers** panel shows header names alphabetically.  To display the HTTP header names in the order received:
+By default, the **Headers** tab shows header names alphabetically.  To display the HTTP header names in the order they were received:
 
-1. Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers), above.
+1. Open the **Headers** tab for a request.  For more information, see [Display HTTP headers](#display-http-headers), above.
 
-1. Click **view source**, next to the **Request Header** or **Response Header** section.
+1. Click **view source**, next to the **Request Headers** or **Response Headers** section.
 
 
 <!-- ---------- -->
 ###### Provisional headers warning
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#provisional-headers -->
-<!-- todo: clean up -->
 
-Sometimes the **Headers** tab shows the warning message **Provisional headers are shown...**.  This may be due to the following reasons:
+Sometimes the **Headers** tab shows the warning message **Provisional headers are shown**.  This may be due to the following reasons:
 
 * The request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can disable caching to see the full request headers; see [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache), above.
 
   <!-- ![Provisional headers warning message](todo png: provisional-headers-warning.png) -->
 
-* The network resource isn't valid.  For example, execute `fetch("https://jec.fish.com/unknown-url/")` in the **Console** tool.
+* The network resource isn't valid.  For example, execute `fetch("https://jec.fish.com/unknown-url/")`<!-- todo: ok url? --> in the **Console** tool.
 
   <!-- ![Provisional headers warning message](todo png: provisional-headers-warning-2.png) -->
 
@@ -1048,7 +1068,7 @@ Once you save a HAR file, you can import it back into DevTools for analysis by d
 
 
 <!-- incoming upstream content: -->
-<!-- todo: clean up -->
+<!-- todo: clean up/ merge with above -->
 
 HAR (HTTP Archive) is a file format used by several HTTP session tools to export the captured data.  The format is a JSON object with a particular set of fields.  See [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/).
 
@@ -1062,16 +1082,16 @@ To save all network requests to a HAR file, pick one of the two ways:
 
 * Click **Export HAR (sanitized)** <!-- todo: ![Download icon]() --> in the action bar at the top of the **Network** tool.
 
-To export with sensitive data, first, turn on **Settings** <!-- todo: ![Settings icon]() -->  > **Preferences** > **Network** > the checkbox **Allow to generate HAR with sensitive data**, then click the download Export button and select Export HAR (with sensitive data) from the drop-down menu.<!-- todo: clean up -->
+To export with sensitive data, first, turn on **Settings** <!-- todo: ![Settings icon]() -->  > **Preferences** > **Network** > the checkbox **Allow to generate HAR with sensitive data**, then click the **Export**<!--todo: "download" icon--> button and select **Export HAR (with sensitive data)** from the drop-down menu.<!-- todo: clean up; colon -->
 
 <!-- ![The 'Export HAR' button in the action bar at the top with two export options enabled](todo png: export-har-button.png) -->
 
-Once you have a HAR file, you can import it back into DevTools for analysis in two ways:
+Once you have a HAR file, you can import it back into DevTools for analysis using [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/) in two ways:
 
-* Drag-and-drop the HAR file into the Requests table.
-* Click upload Import HAR in the action bar at the top of the **Network** tool.
+* Drag-and-drop the HAR file into the **Requests** table.
+* Click **Import HAR**<!--todo: "upload" icon--> in the action bar at the top of the **Network** tool.
 
-The **Network** tool reads and shows initiators for the requests imported from HAR files.
+The **Network** tool reads and shows initiators for the requests imported from HAR files.  For initiators, see [Display a log of requests](#display-a-log-of-requests), above.
 
 
 <!-- ------------------------------ -->
