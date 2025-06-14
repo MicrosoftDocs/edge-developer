@@ -416,7 +416,7 @@ For more information on all the ways you can search in DevTools, see [Find sourc
 ## Filter requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#filter - upstream section empty; below is like https://developer.chrome.com/blog/new-in-devtools-130#network-filters -->
 
-You can filter requests by properties, by type, or by time, and you can hide data URLs.  The **Show only/hide requests** dropdown list contains the following options and status checkmarks:
+You can filter requests by properties, by type, or by time, and you can hide data URLs.  The **More filters**<!-- constant label; tooltip varies --> dropdown list contains the following options and status checkmarks:
 * **Hide data URLs**
 * **Hide extension URLs**
 * **Blocked response cookies**
