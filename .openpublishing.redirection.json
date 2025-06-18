@@ -4236,12 +4236,12 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
-// conflict, want to resume using this source_path but for Edge-Chromium article, not EdgeHTML article:
+      /* reused this source_path for Edge Chromium article
       {
         "source_path": "./microsoft-edge/webdriver/index.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
-      },
+      },*/
       {
         "source_path": "./microsoft-edge/webdriver/dialogs.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
