@@ -6,9 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 11/24/2022
+ms.date: 06/17/2025
 ---
 # Get started with PWAs
+
+# Sample: Temperature Convertor
+
+<!-- todo: convert from:
+tut article (action steps to build-up the app) 
+to:
+sample article (steps to obtain/install/run it; explain how it works)
+-->
 
 Progressive Web Apps (PWAs) are applications that you build by using web technologies, and that can be installed and can run on all devices, from one codebase.
 
@@ -21,6 +29,9 @@ In this guide, you first learn how PWAs work, then create your first simple PWA,
 
 You can find the final source code of the app you will be building in this guide on the [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
 
+See also:
+* [Temperature convertor](https://microsoftedge.github.io/Demos/pwa-getting-started/) running at github.io web server (rather than localhost).
+* [Source code: /pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started)
 
 
 <!-- ====================================================================== -->
