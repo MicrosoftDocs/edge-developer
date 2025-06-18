@@ -1362,7 +1362,7 @@
       },
       {
         "source_path": "./microsoft-edge/webdriver-chromium/index.md",
-        "redirect_url": "/microsoft-edge/webdriver/",
+        "redirect_url": "/microsoft-edge/webdriver/index",
         "redirect_document_id": false
       },
 // /WebDriver: "microsoft / edge-selenium-tools" repo
