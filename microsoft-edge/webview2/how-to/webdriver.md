@@ -9,7 +9,7 @@ ms.subservice: webview
 ms.date: 04/27/2022
 ---
 # Automate and test WebView2 apps with Microsoft Edge WebDriver
-<!-- old title: # Automate and test WebView2 apps with Microsoft Edge WebDriver  -->
+<!-- old title: # Automate and test WebView2 apps with Microsoft Edge WebDriver -->
 
 This article explains how to automate and test your WebView2 app with Microsoft Edge WebDriver, by using the Selenium framework for browser test automation.
 
