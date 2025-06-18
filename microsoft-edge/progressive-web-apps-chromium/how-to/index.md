@@ -1,6 +1,6 @@
 ---
-title: Get started with PWAs
-description: Learn to build your first Progressive Web App.
+title: Temperature convertor sample
+description: How to obtain, install, and run the Temperature convertor Progressive Web App sample.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,9 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 06/17/2025
 ---
-# Get started with PWAs
-
-# Sample: Temperature Convertor
+# Temperature convertor sample
 
 <!-- todo: convert from:
 tut article (action steps to build-up the app) 

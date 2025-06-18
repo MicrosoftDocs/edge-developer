@@ -1265,7 +1265,7 @@
               href: ./progressive-web-apps-chromium/whats-new/pwa.md
               displayName: release notes, announcements
 
-            - name: Get started with PWAs
+            - name: Temperature convertor sample
               href: ./progressive-web-apps-chromium/how-to/index.md
 
             - name: Use PWAs in Microsoft Edge
