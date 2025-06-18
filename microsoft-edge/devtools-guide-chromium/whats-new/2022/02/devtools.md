@@ -46,7 +46,7 @@ Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature 
 Starting June 15, 2022, Internet Explorer 11 will no longer be supported on certain versions of Windows 10.  IE mode is a feature of Microsoft Edge for organizations that still need Internet Explorer 11 for compatibility with legacy websites or apps.  To support testing of those legacy websites and apps, you can now automate IE mode with Selenium 4 and Internet Explorer Driver.
 
 See also:
-* [Use Internet Explorer Driver to automate IE mode in Microsoft Edge](../../../../webdriver/ie-mode.md)
+* [Use Internet Explorer Driver to automate IE mode in Microsoft Edge](../../../../webdriver-chromium/ie-mode.md)
 
 
 <!-- ====================================================================== -->

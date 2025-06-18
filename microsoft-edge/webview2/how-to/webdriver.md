@@ -19,7 +19,7 @@ To create automated tests that simulate user interactions for your WebView2 app,
 
 Test authors write tests that use WebDriver commands to tell the browser to perform specific actions.  Microsoft Edge WebDriver receives these commands and then asks the browser to perform the requested action.  Microsoft Edge WebDriver supports automating both the Microsoft Edge Browser, and WebView2 apps.
 
-For the relationship between the WebDriver protocol, Microsoft Edge WebDriver as an implementation of that protocol, and the Selenium test framework, see [WebDriver overview](../../webdriver/index.md#relationship-between-webdriver-and-other-software).
+For the relationship between the WebDriver protocol, Microsoft Edge WebDriver as an implementation of that protocol, and the Selenium test framework, see [WebDriver overview](../../webdriver-chromium/index.md#relationship-between-webdriver-and-other-software).
 
 
 <!-- ====================================================================== -->
@@ -35,7 +35,7 @@ Once you've cloned the repo, build the project in Visual Studio.  It should look
 <!-- ====================================================================== -->
 ## Step 2: Install Microsoft Edge WebDriver
 
-Follow the instructions to install [Microsoft Edge WebDriver](../../webdriver/index.md#download-microsoft-edge-webdriver).  Microsoft Edge WebDriver is the browser-specific driver required by Selenium to automate and test WebView2.
+Follow the instructions to install [Microsoft Edge WebDriver](../../webdriver-chromium/index.md#download-microsoft-edge-webdriver).  Microsoft Edge WebDriver is the browser-specific driver required by Selenium to automate and test WebView2.
 
 Make sure the version of Microsoft Edge WebDriver matches the version of the WebView2 Runtime that your app uses.  For the WebView2API Sample to work, make sure your version of the WebView2 Runtime is greater than or equal to the supported version of the latest WebView2 SDK release.
 
@@ -233,7 +233,7 @@ EdgeDriver e = new EdgeDriver(eo);
 
 At `localhost:9222` above, the port number given on this line should match the port number that you chose when setting `--remote-debugging-port` above.
 
-For more info about the `DebuggerAddress` property of the `EdgeOptions` object, see [EdgeOptions object](../../webdriver/capabilities-edge-options.md#edgeoptions-object).
+For more info about the `DebuggerAddress` property of the `EdgeOptions` object, see [EdgeOptions object](../../webdriver-chromium/capabilities-edge-options.md#edgeoptions-object).
 
 
 <!-- ------------------------------ -->
@@ -284,4 +284,4 @@ You can override parameters by values that are specified in the WEBVIEW2_ADDITIO
 
 * [WebDriver on Selenium documentation](https://www.selenium.dev/documentation/en/webdriver) - How the APIs Selenium drives WebView2 or Microsoft Edge.
 * [Introduction to Microsoft Edge WebView2](../index.md) - How to use the WebView2 control to embed web content in your native app.
-* [Use WebDriver for test automation](../../webdriver/index.md) - Automating Microsoft Edge.
+* [Use WebDriver for test automation](../../webdriver-chromium/index.md) - Automating Microsoft Edge.

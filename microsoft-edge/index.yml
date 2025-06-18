@@ -380,7 +380,7 @@ conceptualContent:
               itemType: how-to-guide
 
             - text: Use WebDriver to automate Microsoft Edge
-              url: ./webdriver/index.md
+              url: ./webdriver-chromium/index.md
               itemType: how-to-guide
 
             - text: webhint extension for Visual Studio Code

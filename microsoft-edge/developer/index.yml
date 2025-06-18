@@ -219,7 +219,7 @@ landingContent:
             url: ../puppeteer/index.md
 
           - text: Use WebDriver to automate Microsoft Edge
-            url: ../webdriver/index.md
+            url: ../webdriver-chromium/index.md
 
           - text: webhint extension for Visual Studio Code
             url: ../visual-studio-code/webhint.md

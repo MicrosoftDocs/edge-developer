@@ -1345,26 +1345,6 @@
         "redirect_url": "https://github.com/microsoft/edge-selenium-tools/wiki/using-gpg-to-verify-selenium-tools-for-microsoft-edge-releases",
         "redirect_document_id": false
       },
-      {
-        "source_path": "./microsoft-edge/webdriver-chromium/capabilities-edge-options.md",
-        "redirect_url": "/microsoft-edge/webdriver/capabilities-edge-options",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webdriver-chromium/contact.md",
-        "redirect_url": "/microsoft-edge/webdriver/contact",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webdriver-chromium/ie-mode.md",
-        "redirect_url": "/microsoft-edge/webdriver/ie-mode",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webdriver-chromium/index.md",
-        "redirect_url": "/microsoft-edge/webdriver/",
-        "redirect_document_id": false
-      },
 // /WebDriver: "microsoft / edge-selenium-tools" repo
 // ============================================================================
 // Archived EdgeHTML content

@@ -75,7 +75,7 @@ Microsoft Edge doesn't support automating IE mode through the `InternetExplorer`
 
 If your automation application doesn't require IE mode for the website (or app) content to function correctly, we recommend updating your application to use Microsoft Edge instead of Internet Explorer 11. Many available automation tools support Microsoft Edge, including WebDriver and Playwright.
 
-*  To learn more about automating Microsoft Edge using WebDriver, see [Use WebDriver to automate Microsoft Edge](../../webdriver/index.md).
+*  To learn more about automating Microsoft Edge using WebDriver, see [Use WebDriver to automate Microsoft Edge](../../webdriver-chromium/index.md).
 *  To learn more about using Playwright, see [Use Playwright to automate and test in Microsoft Edge](../../playwright/index.md).
 
 Applications that require IE mode for the website (or app) content to function correctly should use the `WebBrowser` control.  The `WebBrowser` control uses the Internet Explorer platform (MSHTML/Trident) to render web content, and will work even if the Internet Explorer 11 desktop application isn't available.

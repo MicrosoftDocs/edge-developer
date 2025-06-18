@@ -38,7 +38,7 @@ npx playwright install
 <!-- ====================================================================== -->
 ## Run a basic test
 
-The approach used by Playwright will be familiar to users of other browser-testing frameworks, such as [WebDriver](../webdriver/index.md) or [Puppeteer](../puppeteer/index.md).  You can create an instance of the browser, open a page in the browser, and then manipulate the page by using the [Playwright API](https://playwright.dev/docs/api/class-playwright).
+The approach used by Playwright will be familiar to users of other browser-testing frameworks, such as [WebDriver](../webdriver-chromium/index.md) or [Puppeteer](../puppeteer/index.md).  You can create an instance of the browser, open a page in the browser, and then manipulate the page by using the [Playwright API](https://playwright.dev/docs/api/class-playwright).
 
 [Playwright Test](https://playwright.dev/docs/intro), which is Playwright's test-runner, launches a browser and context for you. An isolated page is then passed into every test, as shown in the following, basic test:
 
