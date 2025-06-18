@@ -23,6 +23,8 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 86)
 
+<!-- todo: mdn links -->
+
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
@@ -262,7 +264,7 @@ See also:
 <!-- ------------------------------ -->
 #### Emulate inactive users
 
-The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool in the [Quick View](../../../customize/index.md#quick-view) panel at the bottom of DevTools.
+The [Idle Detection API](https://web.dev/idle-detection)<!-- todo: mdn link --> allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool in the [Quick View](../../../customize/index.md#quick-view) panel at the bottom of DevTools.
 
 ![Emulate inactive users](./devtools-images/emulate-idle.png)
 

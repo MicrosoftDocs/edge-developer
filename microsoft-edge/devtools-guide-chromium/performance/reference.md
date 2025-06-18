@@ -24,6 +24,8 @@ ms.date: 02/24/2025
 # Performance features reference
 <!-- https://developer.chrome.com/docs/devtools/performance/reference -->
 
+<!-- todo: mdn links -->
+
 This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
 For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Analyze runtime performance (tutorial)](index.md).
@@ -788,7 +790,7 @@ Clear the **Loading**, **Scripting**, **Rendering**, or **Painting** checkboxes 
 In an overlay with vertical lines across the performance trace, you can see important performance markers, such as:
 
 * [First Paint (FP)](https://developer.mozilla.org/docs/Glossary/First_paint)
-* [First Contentful Paint (FCP)](https://web.dev/articles/fcp)
+* [First Contentful Paint (FCP)](https://web.dev/articles/fcp)<!-- todo: mdn link -->
 * [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp)
 * [DOMContentLoaded Event (DCL)](https://developer.mozilla.org/docs/Web/API/Window/DOMContentLoaded_event)
 * [Onload Event (L)](https://developer.mozilla.org/docs/Web/API/Window/load_event)
