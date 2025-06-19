@@ -547,6 +547,129 @@ See also:
 
 
 <!-- ====================================================================== -->
+## Example: Check publication status and publish an extension with a PowerShell script
+
+The following code is an example of a PowerShell script that uses the REST API to check the publication status of an extension, and publish that extension.
+
+To use this script, fill in the `$ClientID`, `$ClientSecret`, `$ProductID`, and `$FilePATH` values at the top of the script.
+
+```powershell
+Param(
+    [string] $ClientID = '',
+    [string] $ClientSecret = '',
+    [string] $ProductID = '',
+    [string] $FilePATH = '',
+    [int] $RetryLimit = 10,
+    [int] $RetryAfterPeriod = 5,
+    [string] $ApiEndpoint = 'https://api.addons.microsoftedge.microsoft.com',
+    [string] $PublishNotes = 'This is a test publish'
+)
+
+function ReadKeyFromJSON($jsonContent, $keyToFetch){
+    $jsonContent.TrimStart('{').TrimEnd('}').Split(',') |ForEach-Object {
+        $key,$value = $_.Split(':')
+        if($key.Trim('"') -eq $keyToFetch) {
+            return $value.Trim('"')
+        }
+    }
+    return ''
+}
+
+function ReadLocationFromRawContent($jsonRawContent) {
+    $jsonRawContent.Split([System.Environment]::NewLine, [System.StringSplitOptions]::RemoveEmptyEntries) | ForEach-Object {
+        $key,$value = $_.Split(':')
+        if ($key -eq 'Location') {
+            return $value
+        }
+    }
+    return ''
+}
+
+$PublishNotesBody = @{
+    notes = $PublishNotes
+}
+
+$GetTokenHeaders = @{
+    'Content-Type' = 'application/x-www-form-urlencoded'
+}
+
+$UploadHeaders = @{
+    "Authorization" = "ApiKey $ClientSecret"
+    "Content-Type" = "application/zip"
+    "X-ClientID" = "$ClientID"
+}
+
+$uploadResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/draft/package" -Headers $UploadHeaders -Method 'POST' -InFile $FilePATH
+
+$uploadResponse
+
+$uploadOperationId = ''
+
+if($uploadResponse.StatusCode -eq 202) {
+    "Upload Successful"
+    $uploadOperationId = ReadLocationFromRawContent($uploadResponse.RawContent)
+}
+
+$uploadStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/draft/package/operations/$UploadOperationId" -Headers $UploadHeaders -Method 'GET'
+
+$uploadStatusResponse
+
+$uploadStatus = 'InProgress'
+
+if($uploadStatusResponse.StatusCode -eq 202) {
+    "Upload Status Received Successfully"
+    $retryCount = 1;
+    while($uploadStatus -eq 'InProgress') {
+        if($retryCount -gt $RetryLimit) {
+            Exit-PSSession
+        }
+        $uploadStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/draft/package/operations/$UploadOperationId" -Headers $UploadHeaders -Method 'GET'
+        $retryCount = $retryCount + 1
+        Start-Sleep -Seconds $RetryAfterPeriod
+        $uploadStatus = ReadKeyFromJSON($uploadStatusResponse.Content, 'status')
+    }
+}
+
+$publishResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$productID/submissions" -Headers $UploadHeaders -Method 'POST' -Body $PublishNotesBody
+
+$publishResponse
+
+$PublishOperationId = ''
+
+if($publishResponse.StatusCode -eq 202) {
+    "Published Successfully"
+    $PublishOperationId = ReadLocationFromRawContent($publishResponse.RawContent)
+}
+
+$PublishOperationId
+
+$publishStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/operations/$PublishOperationId" -Headers $UploadHeaders -Method 'GET'
+
+$publishStatusResponse
+
+$publishStatus = 'InProgress'
+
+$publishStatusResponse.Content
+
+if($publishStatusResponse.StatusCode -eq 202) {
+    "Publish Status Received Successfully"
+    $retryCount = 1;
+    while($publishStatus -eq 'InProgress') {
+        if($retryCount -gt $RetryLimit) {
+            Exit-PSSession
+        }
+        $publishStatusResponse = Invoke-WebRequest "$ApiEndpoint/v1/products/$ProductID/submissions/operations/$PublishOperationId" -Headers $UploadHeaders -Method 'GET'
+        $retryCount = $retryCount + 1
+        Start-Sleep -Seconds $RetryAfterPeriod
+        $publishStatus = ReadKeyFromJSON($publishStatusResponse.Content, 'status')
+    }
+}
+
+$publishStatus
+```
+
+
+<!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
