@@ -983,7 +983,7 @@
           displayName: IE mode
 # DevTools Protocol -----------------------------------------------------------
         - name: Microsoft Edge DevTools Protocol
-          href: devtools-protocol-chromium/index.md
+          href: ./devtools-guide-chromium/protocol/index.md
           displayName: DevTools Protocol
 # Contact ---------------------------------------------------------------------
         - name: Contact the Microsoft Edge DevTools team
