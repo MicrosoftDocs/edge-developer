@@ -236,26 +236,7 @@
 // /Microsoft Edge extensions
 // ============================================================================
 // Progressive Web Apps
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps/index.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/serviceworker.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/service-workers",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/web-app-manifests",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/get-started.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/index",
-        "redirect_document_id": false
-      },
+      // older entries that don't match current pwa toc:
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/experimental-features/index.md",
         "redirect_url": "/microsoft-edge/origin-trials/index",
@@ -267,17 +248,12 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/offline.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/offline",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests.md",
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
         "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
         "redirect_document_id": false
       },
       {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/service-workers.md",
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/serviceworker.md",
         "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
         "redirect_document_id": false
       },
@@ -295,6 +271,12 @@
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/whats-new/pwa.md",
         "redirect_url": "/microsoft-edge/progressive-web-apps/whats-new/pwa",
+        "redirect_document_id": false
+      },
+      // older entry:
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/get-started.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/index",
         "redirect_document_id": false
       },
       {
@@ -380,6 +362,12 @@
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/icon-theme-color.md",
         "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/icon-theme-color",
+        "redirect_document_id": false
+      },
+      // older entry:
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/offline.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/offline",
         "redirect_document_id": false
       },
       {
