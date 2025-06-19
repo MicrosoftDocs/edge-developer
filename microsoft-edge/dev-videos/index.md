@@ -120,7 +120,7 @@ Covers:
 
 See also:
 * [What's New in DevTools (Microsoft Edge 112)](../devtools/whats-new/2023/04/devtools-112.md)<!-- has Video section -->
-* [Analyze CSS selector performance during Recalculate Style events](../devtools/evaluate-performance/selector-stats.md) - CSS selector stats.
+* [Analyze CSS selector performance during Recalculate Style events](../devtools/performance/selector-stats.md) - CSS selector stats.
 * [View a JSON file or server response with formatting](../web-platform/json-viewer.md)
 
 
@@ -184,7 +184,7 @@ Covers:
 See also:
 * [What's New in DevTools (Microsoft Edge 109)](../devtools/whats-new/2023/01/devtools-109.md)<!-- has Video section -->
 * [Share enhanced performance and memory traces](../devtools/experimental-features/share-traces.md)
-* [Analyze CSS selector performance during Recalculate Style events](../devtools/evaluate-performance/selector-stats.md) - selector stats.
+* [Analyze CSS selector performance during Recalculate Style events](../devtools/performance/selector-stats.md) - selector stats.
 * [Investigate memory allocation, with reduced garbage ("Include objects" checkboxes)](../devtools/rendering-tools/js-runtime.md#investigate-memory-allocation-with-reduced-garbage-include-objects-checkboxes) in _Speed up JavaScript runtime ("Allocation sampling" profiling type)_.
 * [Trash talk: the Orinoco garbage collector](https://v8.dev/blog/trash-talk)
 * [Heap Snapshot visualizer](https://microsoftedge.microsoft.com/addons/detail/heap-snapshot-visualizer/fceldlhognbemkgfacnffkdanocidgce) extension.
@@ -573,7 +573,7 @@ March 17, 2022
 
 Microsoft Edge provides auto-generated alt text for images that don't include it. Auto-generated alt text helps users of assistive technology such as screen readers discover the meaning or intent of an images on the web.
 
-Many people who are blind or low-vision experience the web primarily through a screen reader: an assistive technology that reads the content of each page aloud.  Screen readers depend on having image labels (alternative text or "alt text") provided that allows them to describe visual content - like images and charts - so the user can understand the full content of the page.  Alt text is critical for making the web accessible, yet it’s often overlooked.  More than half of the images processed by screen readers are missing alt text. 
+Many people who are blind or low-vision experience the web primarily through a screen reader: an assistive technology that reads the content of each page aloud.  Screen readers depend on having image labels (alternative text or "alt text") provided that allows them to describe visual content - like images and charts - so the user can understand the full content of the page.  Alt text is critical for making the web accessible, yet it's often overlooked.  More than half of the images processed by screen readers are missing alt text. 
 
 See also:
 * [Appears to say: Microsoft Edge now provides auto-generated image labels](https://blogs.windows.com/msedgedev/2022/03/17/appears-to-say-microsoft-edge-auto-generated-image-labels/) - blog post

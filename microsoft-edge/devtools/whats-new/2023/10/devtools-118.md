@@ -59,7 +59,7 @@ To enable the "explain Console errors using Copilot" feature, do either of the f
 * Start Microsoft Edge from the command line using the feature flag `msEdgeAIExplainConsoleError`.
 
 See also:
-* [Explain DevTools Console errors and source code using Copilot in Edge](../../../experimental-features/copilot-explain.md)
+* [Explain Console errors and warnings using Copilot in Edge](../../../console/copilot-explain-console.md)
 
 
 <!-- ====================================================================== -->

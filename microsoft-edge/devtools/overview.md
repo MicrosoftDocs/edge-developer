@@ -438,7 +438,7 @@ See [Inspect network activity](network/index.md).
 <!-- ------------------------------ -->
 #### Performance tool
 
-See [Analyze runtime performance (tutorial)](evaluate-performance/index.md).
+See [Analyze runtime performance (tutorial)](./performance/index.md).
 
 
 <!-- ------------------------------ -->
@@ -627,7 +627,7 @@ See also:
 * [Accessibility, performance, compatibility, and security issues](./issues/index.md)<!--keep link?-->
 * [Inspect the network traffic](./network/index.md)<!--keep link?-->
 * [Inspect where the browser stored content](./storage/sessionstorage.md)<!--keep link?-->
-* [Evaluate the performance](./evaluate-performance/index.md)<!--keep link?-->
+* [Evaluate the performance](./performance/index.md)<!--keep link?-->
 * [Memory problems](./memory-problems/index.md)<!--keep link?-->
 * [Rendering issues](./rendering-tools/index.md)<!--keep link?-->
 * [Use a development environment](./sources/index.md)<!--keep link?-->
