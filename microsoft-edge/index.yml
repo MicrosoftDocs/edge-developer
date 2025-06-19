@@ -175,11 +175,11 @@ conceptualContent:
 
             - itemType: reference
               text: Defining match patterns to access file URLs
-              url: ./extensions-chromium/enterprise/match-patterns.md
+              url: ./extensions/enterprise/match-patterns.md
 
             - itemType: reference
               text: Extension hosting
-              url: ./extensions-chromium/enterprise/hosting-and-updating.md
+              url: ./extensions/enterprise/hosting-and-updating.md
 
 # -----------------------------------------------------------------------------
 # Card r2c4
@@ -254,35 +254,35 @@ conceptualContent:
         - title: Microsoft Edge extensions
           links:
             - text: Microsoft Edge extensions documentation  # extensions landing page
-              url: ./extensions-chromium/landing/index.yml
+              url: ./extensions/landing/index.yml
               itemType: overview
 
             - text: Extensions overview
-              url: ./extensions-chromium/index.md
+              url: ./extensions/index.md
               itemType: overview
 
             - text: Getting started tutorial
-              url: ./extensions-chromium/getting-started/index.md
+              url: ./extensions/getting-started/index.md
               itemType: overview
 
             - text: Port a Chrome extension to Microsoft Edge
-              url: ./extensions-chromium/developer-guide/port-chrome-extension.md
+              url: ./extensions/developer-guide/port-chrome-extension.md
               itemType: overview
 
             - text: Alternative ways to distribute an extension
-              url: ./extensions-chromium/developer-guide/alternate-distribution-options.md
+              url: ./extensions/developer-guide/alternate-distribution-options.md
               itemType: how-to-guide
 
             - text: Step-wise publishing process
-              url: ./extensions-chromium/publish/publish-extension.md
+              url: ./extensions/publish/publish-extension.md
               itemType: how-to-guide
 
             - text: Register as a Microsoft Edge extension developer
-              url: ./extensions-chromium/publish/create-dev-account.md
+              url: ./extensions/publish/create-dev-account.md
               itemType: how-to-guide
 
             - text: "Sample: Picture viewer pop-up webpage"
-              url: ./extensions-chromium/getting-started/picture-viewer-popup-webpage.md
+              url: ./extensions/getting-started/picture-viewer-popup-webpage.md
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
