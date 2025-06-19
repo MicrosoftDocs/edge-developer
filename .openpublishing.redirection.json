@@ -238,11 +238,6 @@
 // Progressive Web Apps
       // older entries:
       {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/web-app-manifests",
-        "redirect_document_id": false
-      },
-      {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/get-started.md",
         "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/index",
         "redirect_document_id": false
@@ -262,6 +257,12 @@
         "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/offline",
         "redirect_document_id": false
       },
+      // two related entries:
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
+        "redirect_document_id": false
+      },
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests.md",
         "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
@@ -278,7 +279,7 @@
         "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
         "redirect_document_id": false
       },
-      // // pwa toc 2025/06/19:
+      // pwa toc 2025/06/19:
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/landing/index.yml",
         "redirect_url": "/microsoft-edge/progressive-web-apps/landing/index",
