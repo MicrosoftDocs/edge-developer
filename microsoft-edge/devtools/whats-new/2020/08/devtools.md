@@ -147,7 +147,7 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 The current effort to improve translation quality enables easier support for more languages in the future.
 
 See also:
-* [Change DevTools language settings](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/localization)
+* [Change DevTools language settings](https://learn.microsoft.com/microsoft-edge/devtools/customize/localization)
 -->
 
 

@@ -30,14 +30,14 @@ The following demos demonstrate DevTools features.
 <!-- 
 keep DevTools table sync'd:
 https://github.com/MicrosoftEdge/Demos#readme
-https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/sample-code/sample-code#list-of-devtools-samples
+https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#list-of-devtools-samples
 last sync'd April 16, 2024
 -->
 
 | Demo name | Description | Repo directory | Live demo page |
 |:---|:---|:---|:---|
 | CSS mirroring sourcemaps | Used for [Update .css files from within the Styles tab (CSS mirror editing)](../../visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md) for the DevTools extension for Visual Studio Code. | [/css-mirroring-sourcemaps-demo/](https://github.com/MicrosoftEdge/Demos/tree/main/css-mirroring-sourcemaps-demo) | n/a |
-| TODO app | Simple To Do app with vanilla JavaScript.  Used for screenshots in the [Microsoft Edge DevTools documentation](/microsoft-edge/devtools-guide-chromium/landing/), and for [Opening DevTools and the DevTools browser](../../visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md) for the DevTools extension for Visual Studio Code. | [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) | [My tasks](https://microsoftedge.github.io/Demos/demo-to-do/) |
+| TODO app | Simple To Do app with vanilla JavaScript.  Used for screenshots in the [Microsoft Edge DevTools documentation](/microsoft-edge/devtools/landing/), and for [Opening DevTools and the DevTools browser](../../visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md) for the DevTools extension for Visual Studio Code. | [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) | [My tasks](https://microsoftedge.github.io/Demos/demo-to-do/) |
 | Detached elements | Chat-like demo.  Used for [Debug DOM memory leaks ("Detached elements" profiling type)](../memory-problems/dom-leaks-memory-tool-detached-elements.md). | [/detached-elements/](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) | [Simulate traffic](https://microsoftedge.github.io/Demos/detached-elements/) |
 | 3D View | Used for [Navigate webpage layers, z-index, and DOM using the 3D View tool](../3d-view/index.md). | [/devtools-3d/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-3d) | [Microsoft Edge DevTools 3D View tool demo](https://microsoftedge.github.io/Demos/devtools-3d/) |
 | Accessibility testing | Used for [Accessibility-testing features](../accessibility/reference.md). | [/devtools-a11y-testing/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) | [Animal shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) |

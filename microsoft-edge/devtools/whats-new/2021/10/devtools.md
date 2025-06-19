@@ -92,7 +92,7 @@ When the filter string doesn't match a group label, neither the group nor its me
 ![When the filter string doesn't match a group label, neither the group nor its members are displayed](./devtools-images/filter-matches-group-label-asdf.png)
 
 See also:
-* [group](../../../../devtools-guide-chromium/console/api.md#group) in _Console object API Reference_.
+* [group](../../../../devtools/console/api.md#group) in _Console object API Reference_.
 
 To view the history of this feature in the Chromium open-source project, see [Issue 363796: ☂ Console filter inappropriately hides grouped content and doesn't hide group titles](https://bugs.chromium.org/p/chromium/issues/detail?id=363796).
 

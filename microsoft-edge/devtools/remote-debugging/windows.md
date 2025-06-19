@@ -154,7 +154,7 @@ Determine the content you want to debug, and then click **inspect**.  Microsoft 
 ![The Microsoft Edge DevTools on the client debugging a tab in Microsoft Edge on the host](./windows-images/remote-debugging-windows-media-devtools-client.png)
 
 See also:
-* [Microsoft Edge DevTools documentation](/microsoft-edge/devtools-guide-chromium/landing/)
+* [Microsoft Edge DevTools documentation](/microsoft-edge/devtools/landing/)
 
 
 <!-- ------------------------------ -->

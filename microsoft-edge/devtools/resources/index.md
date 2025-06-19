@@ -36,7 +36,7 @@ Resources are the files that make up a webpage.  Examples of resources include:
 
 See also:
 *  [Learn web development](https://developer.mozilla.org/docs/Learn) at Mozilla.org
-*  [Overview of DevTools](../../devtools-guide-chromium/overview.md)
+*  [Overview of DevTools](../../devtools/overview.md)
 
 
 <!-- ====================================================================== -->

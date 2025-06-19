@@ -108,7 +108,7 @@ The preceding example demonstrates basic automation and testing scenarios that y
 #### Local articles
 
 * [WebDriver](../webdriver-chromium/index.md)
-* [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using Puppeteer, puppeteer-core, and Microsoft Edge.
+* [Contact the Microsoft Edge DevTools team](../devtools/contact.md) to send feedback about using Puppeteer, puppeteer-core, and Microsoft Edge.
 * [Chrome DevTools Protocol (CDP)](../webview2/concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 APIs_
 * [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)
 

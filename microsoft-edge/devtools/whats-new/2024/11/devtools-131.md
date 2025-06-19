@@ -23,7 +23,7 @@ The Visual Studio Code themes feature is now deprecated.  These themes will reve
 ![The Theme menu in DevTools Preferences](./devtools-131-images/themes-preferences.png)
 
 See also:
-* [Check for contrast issues with dark theme and light theme](../../../../devtools-guide-chromium/accessibility/test-dark-mode.md)
+* [Check for contrast issues with dark theme and light theme](../../../../devtools/accessibility/test-dark-mode.md)
 
 
 <!-- ====================================================================== -->

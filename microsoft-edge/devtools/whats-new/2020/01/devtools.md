@@ -238,8 +238,8 @@ Chromium issue [#924693](https://crbug.com/924693)
 #### Cookie-related updates
 
 See also:
-* [View, edit, and delete cookies](../../../../devtools-guide-chromium/storage/cookies.md)
-* [Display cookies](../../../../devtools-guide-chromium/network/reference.md#display-cookies) in _Network features reference_
+* [View, edit, and delete cookies](../../../../devtools/storage/cookies.md)
+* [Display cookies](../../../../devtools/network/reference.md#display-cookies) in _Network features reference_
 
 
 <!-- ---------- -->
@@ -290,7 +290,7 @@ Previously, the **Manifest** pane in the **Application** panel sent its own requ
 Chromium issue [#985402](https://crbug.com/985402)
 
 See also:
-* [Open the Cookies pane](../../../../devtools-guide-chromium/storage/cookies.md#open-the-cookies-pane) in _View, edit, and delete cookies_
+* [Open the Cookies pane](../../../../devtools/storage/cookies.md#open-the-cookies-pane) in _View, edit, and delete cookies_
 
 
 <!-- ------------------------------ -->
@@ -307,7 +307,7 @@ When you hover on the `content` value, the unescaped value is displayed.
 ![The unescaped value](./devtools-images/unescapedstring.png)
 
 See also:
-* [CSS features reference](../../../../devtools-guide-chromium/css/reference.md)
+* [CSS features reference](../../../../devtools/css/reference.md)
 
 
 <!-- ------------------------------ -->
@@ -318,8 +318,8 @@ The Console now provides more detail on why a source map failed to load or parse
 ![A source map loading error in the Console](./devtools-images/sourcemap.png)
 
 See also:
-* [Console overview](../../../../devtools-guide-chromium/console/index.md)
-* [Map the processed code to your original source code, for debugging](../../../../devtools-guide-chromium/javascript/source-maps.md)
+* [Console overview](../../../../devtools/console/index.md)
+* [Map the processed code to your original source code, for debugging](../../../../devtools/javascript/source-maps.md)
 
 
 <!-- ------------------------------ -->
@@ -332,7 +332,7 @@ To prevent the default UI behavior that allows you to scroll well past the end o
 ![Scrolling past the end of a file is now disabled in the Sources panel](./devtools-images/scrollingsources.png)
 
 See also:
-* [Using the Editor pane to view or edit files](../../../../devtools-guide-chromium/sources/index.md#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_.
+* [Using the Editor pane to view or edit files](../../../../devtools/sources/index.md#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_.
 
 
 <!-- ====================================================================== -->

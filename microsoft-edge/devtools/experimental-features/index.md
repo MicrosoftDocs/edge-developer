@@ -302,7 +302,7 @@ Status:
 <!-- ====================================================================== -->
 ## Sync CSS changes in the Styles tab
 <!-- checkbox has a "(?)" link
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#sync-css-changes-in-the-styles-pane
+https://docs.microsoft.com/microsoft-edge/devtools/experimental-features/#sync-css-changes-in-the-styles-pane
 pointing to this anchor wording -->
 
 Whether to sync CSS changes in the **Styles** tab in the **Elements** tool.
@@ -542,7 +542,7 @@ Status:
 <!-- ====================================================================== -->
 ## Log DevTools uncaught exceptions to Console
 <!-- checkbox has a "(?)" link
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#log-devtools-uncaught-exceptions-to-console
+https://docs.microsoft.com/microsoft-edge/devtools/experimental-features/#log-devtools-uncaught-exceptions-to-console
 pointing to this anchor wording -->
 
 Controls whether to log DevTools uncaught exceptions in the **Console** tool.
@@ -559,7 +559,7 @@ Status:
 <!-- ====================================================================== -->
 ## Enable webhint
 <!-- checkbox has a "(?)" link
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#enable-webhint
+https://docs.microsoft.com/microsoft-edge/devtools/experimental-features/#enable-webhint
 pointing to this anchor wording -->
 
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint](https://webhint.io) includes:
@@ -586,7 +586,7 @@ Status:
 <!-- ====================================================================== -->
 ## Show issues in Elements
 <!-- checkbox has a "(?)" link
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-issues-in-elements
+https://docs.microsoft.com/microsoft-edge/devtools/experimental-features/#show-issues-in-elements
 pointing to this anchor wording -->
 
 Displays syntax errors as wavy underlines under DOM nodes in the **Elements** tool.
@@ -602,7 +602,7 @@ Status:
 <!-- ====================================================================== -->
 ## Open source files in Visual Studio Code
 <!-- checkbox has a "(?)" link
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#open-source-files-in-visual-studio-code
+https://docs.microsoft.com/microsoft-edge/devtools/experimental-features/#open-source-files-in-visual-studio-code
 pointing to this anchor wording -->
 
 The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files. When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.
@@ -625,7 +625,7 @@ Status:
 ## Emulate Microsoft-recommended hardware and network performance presets
 internal only
 checkbox has a "(?)" link
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#device-performance-profiles
+https://docs.microsoft.com/microsoft-edge/devtools/experimental-features/#device-performance-profiles
 pointing to this anchor wording
 
 _new as of Microsoft Edge 114_

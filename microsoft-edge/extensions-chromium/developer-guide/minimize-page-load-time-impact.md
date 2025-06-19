@@ -28,7 +28,7 @@ To profile the performance of your extension's content script, use Microsoft Edg
 
 DevTools provides a set of features for inspecting, debugging, and profiling the code that a webpage uses. DevTools can also be used to profile your extension's code.
 
-In this section, you'll learn how to use the **Performance** tool in DevTools to profile your extension's content script. To learn more about the **Performance** tool, see [Analyze runtime performance (tutorial)](../../devtools-guide-chromium/evaluate-performance/index.md).
+In this section, you'll learn how to use the **Performance** tool in DevTools to profile your extension's content script. To learn more about the **Performance** tool, see [Analyze runtime performance (tutorial)](../../devtools/evaluate-performance/index.md).
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
@@ -261,7 +261,7 @@ onmessage = event => {
 <!-- ====================================================================== -->
 ## See also
 
-* [Analyze runtime performance (tutorial)](../../devtools-guide-chromium/evaluate-performance/index.md)
+* [Analyze runtime performance (tutorial)](../../devtools/evaluate-performance/index.md)
 
 Chrome Extension docs:
 * [Manifest - content scripts](https://developer.chrome.com/docs/extensions/reference/manifest/content-scripts)
