@@ -174,12 +174,12 @@ conceptualContent:
               url: /deployedge/microsoft-edge-manage-extensions
 
             - itemType: reference
-              text: Defining match patterns to access file URLs
-              url: ./extensions/enterprise/match-patterns.md
+              text: Defining match patterns for an extension to access file URLs
+              url: ./extensions/developer-guide/match-patterns.md
 
             - itemType: reference
               text: Extension hosting
-              url: ./extensions/enterprise/hosting-and-updating.md
+              url: ./extensions/publish/hosting-and-updating.md
 
 # -----------------------------------------------------------------------------
 # Card r2c4

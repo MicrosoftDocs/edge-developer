@@ -3422,11 +3422,12 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      /* reusing this old source_path as a new redirect_url, above
       {
         "source_path": "./microsoft-edge/extensions/index.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
-      },
+      },*/
       {
         "source_path": "./microsoft-edge/extensions/api-support.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
