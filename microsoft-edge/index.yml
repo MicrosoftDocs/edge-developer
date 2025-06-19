@@ -290,19 +290,19 @@ conceptualContent:
         - title: Progressive Web Apps (PWAs)
           links:
             - text: Progressive Web Apps (PWAs) documentation  # pwa landing page
-              url: ./progressive-web-apps-chromium/landing/index.yml
+              url: ./progressive-web-apps/landing/index.yml
               itemType: overview
 
             - text: Overview of Progressive Web Apps
-              url: ./progressive-web-apps-chromium/index.md
+              url: ./progressive-web-apps/index.md
               itemType: overview
 
             - text: What's New in PWAs
-              url: ./progressive-web-apps-chromium/whats-new/pwa.md
+              url: ./progressive-web-apps/whats-new/pwa.md
               itemType: whats-new
 
             - text: Get started with PWAs
-              url: ./progressive-web-apps-chromium/how-to/index.md
+              url: ./progressive-web-apps/how-to/index.md
               itemType: get-started
 
             - text: Using Service Workers
@@ -314,11 +314,11 @@ conceptualContent:
               itemType: get-started
 
             - text: Publish a PWA to the Microsoft Store
-              url: ./progressive-web-apps-chromium/how-to/microsoft-store.md
+              url: ./progressive-web-apps/how-to/microsoft-store.md
               itemType: how-to-guide
 
             - text: Store data on the device
-              url: ./progressive-web-apps-chromium/how-to/offline.md
+              url: ./progressive-web-apps/how-to/offline.md
               itemType: how-to-guide
 
 # =============================================================================

@@ -768,7 +768,7 @@ Covers:
 * Get involved with PWAs on Windows.
 
 See also:
-* [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md)<!-- has Video section -->
+* [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps/index.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->

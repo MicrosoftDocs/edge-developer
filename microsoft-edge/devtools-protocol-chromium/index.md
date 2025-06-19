@@ -161,7 +161,7 @@ None.
 <!-- ====================================================================== -->
 ## /msedge/json/list
 
-Provides a candidate list of all Microsoft Edge and WebView2 Runtime processes running on the connected device (including [PWAs](../progressive-web-apps-chromium/index.md)) and all tabs or targets in each process available for debugging.
+Provides a candidate list of all Microsoft Edge and WebView2 Runtime processes running on the connected device (including [PWAs](../progressive-web-apps/index.md)) and all tabs or targets in each process available for debugging.
 
 **Parameters**
 
