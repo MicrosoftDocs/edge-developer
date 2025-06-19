@@ -133,7 +133,7 @@ String("Target is closing")
 
 You can install the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) from the [Microsoft Store](https://apps.microsoft.com).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
 
-To learn how to set up your Windows device and connect to it from your development machine, see [Remotely debug Windows devices](../remote-debugging/windows.md).
+To learn how to set up your Windows device and connect to it from your development machine, see [Remotely debug Windows devices](../../devtools-guide-chromium/remote-debugging/windows.md).
 
 The [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) app uses the same Microsoft Edge DevTools Protocol as used by Microsoft Edge DevTools, to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.
 
