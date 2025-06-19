@@ -6,11 +6,11 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/12/2023
+ms.date: 06/06/2025
 ---
 # Run JavaScript in the Console
 
-You can enter any JavaScript expression, statement, or code snippet in the **Console**, and it runs immediately and interactively as you type.  This is possible because the **Console** tool in DevTools is a [REPL](https://wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  _REPL_ stands for Read, Evaluate, Print, and Loop.
+You can enter any JavaScript expression, statement, or code snippet in the **Console**, and it runs immediately and interactively as you type.  This is possible because the **Console** tool in DevTools is a [Read–eval–print loop (REPL)](https://wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.
 
 The **Console**:
 1. Reads the JavaScript that you type into it.
@@ -65,7 +65,7 @@ As with many other command-line environments, a history of the commands that you
 
 Similarly, autocompletion keeps a history of the commands you previously typed.  You can type the first few letters of earlier commands, and your previous choices appear in a text box.
 
-Also, the **Console** also offers quite a few [utility methods](utilities.md) that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.
+Also, the **Console** also offers quite a few utility methods that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.  See [Console tool utility functions and selectors](./utilities.md).
 
 ![The $_ expression in the Console always contains the last result](./console-javascript-images/console-history.png)
 
@@ -73,13 +73,59 @@ Also, the **Console** also offers quite a few [utility methods](utilities.md) th
 <!-- ====================================================================== -->
 ## Multiline edits
 
-By default, the **Console** only gives you one line to write your JavaScript expression.  You code runs when you press **Enter**. The one line limitation may frustrate you.  To work around the 1-line limitation, press **Shift+Enter** instead of **Enter**.  In the following example, the value displayed is the result of all the lines (statements) run in order:
+By default, the **Console** only gives you one line to write your JavaScript expression.  You code runs when you press **Enter**.  To work around the 1-line limitation, press **Shift+Enter** instead of **Enter**.
+
+In the following example, the value displayed is the result of all the lines (statements) run in order:
 
 ![Press Shift+Enter to write several lines of JavaScript.  The resulting value is output](./console-javascript-images/multiline.png)
 
 If you start a multi-line statement in the **Console**, the code block is automatically recognized and indented.  For example, if you start a block statement, by entering a curly brace, the next line is automatically indented:
 
 ![The Console recognizes multiline expressions using curly braces and indents](./console-javascript-images/automatic-lineindent.png)
+
+
+<!-- ====================================================================== -->
+## Allow pasting into the Console
+
+When you first try to paste content into the **Console** tool, instead of pasting, a message is displayed: "Warning: Don't paste code into the DevTools Console that you don't understand or haven't reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type 'allow pasting' below and press Enter to allow pasting."
+
+![Console displaying the self-XSS warning](./console-javascript-images/console-self-xss-warning.png)
+
+This warning helps prevent self cross-site scripting attacks (self-XSS) on end-users.  To paste code, first type **allow pasting** in the **Console**, and then press **Enter**.  Then paste the content.  Or, start Edge with the flag below.
+
+Pasting into the **Sources** tool's snippet editor is similar; see [Allow pasting into the Snippet editor](../javascript/snippets.md#allow-pasting-into-the-snippet-editor) in _Run snippets of JavaScript on any webpage_.
+
+
+<!-- ------------------------------ -->
+#### Disable self-XSS warnings by starting Edge with a command-line flag
+
+To prevent the above warnings and immediately allow pasting into the **Console** tool and the **Sources** tool's snippet editor, such as for automated testing, start Microsoft Edge from the command line, using the following flag: `--unsafely-disable-devtools-self-xss-warnings`.  The flag applies to a single session of Microsoft Edge.
+
+For example, on Windows:
+
+Edge Stable:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
+
+Edge Beta:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge Beta\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
+
+Edge Dev:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge Dev\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
+
+Edge Canary:
+
+```shell
+"C:\Users\localAccount\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
+```
 
 
 <!-- ====================================================================== -->
@@ -120,3 +166,21 @@ To get the last 50 issues that were filed on the [Microsoft Edge Developer Tools
    ```
    
 The **Console** is a great way to practice JavaScript and to do some quick calculations.  The real power is the fact that you have access to the [window](https://developer.mozilla.org/docs/Web/API/Window) object.  See [Interact with the DOM using the Console](console-dom-interaction.md).
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article -->
+
+* [Interact with the DOM using the Console](console-dom-interaction.md)
+* [Console tool utility functions and selectors](./utilities.md)
+
+GitHub:
+* [ECMAScript proposal: Top-level `await`](https://github.com/tc39/proposal-top-level-await)
+* [Microsoft Edge Developer Tools for Visual Studio Code](https://github.com/microsoft/vscode-edge-devtools)
+
+MDN:
+* [Window](https://developer.mozilla.org/docs/Web/API/Window) object.
+
+Wikipedia:
+* [Read–eval–print loop (REPL)](https://wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
