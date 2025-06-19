@@ -349,7 +349,7 @@ Covers:
 
 See also:
 * [What's New in DevTools 104](../devtools-guide-chromium/whats-new/2022/08/devtools-104.md)<!-- has Video section -->
-* [Debug the web in 3D with the 3D View tool](https://aka.ms/debug-in-3d) - blog post.
+* [Debug the web in 3D with the 3D View tool](https://aka.ms/debug-in-3d)<!-- todo: 404 --> - blog post.
 
 
 <!-- ====================================================================== -->
@@ -386,7 +386,7 @@ The **3D View** tool in Microsoft Edge DevTools provides a 3-dimensional represe
 
 See also:
 * [Navigate webpage layers, z-index, and DOM using the 3D View tool](../devtools-guide-chromium/3d-view/index.md)<!-- has Video section -->
-* [Debug the web in 3D with the 3D View tool](https://blogs.windows.com/msedgedev/2022/06/21/debug-the-web-in-3d-with-the-3d-view-tool/) - blog post.
+* [Debug the web in 3D with the 3D View tool](https://blogs.windows.com/msedgedev/2022/06/21/debug-the-web-in-3d-with-the-3d-view-tool/)<!-- todo: 404 --> - blog post.
 
 
 <!-- ====================================================================== -->
@@ -433,7 +433,7 @@ June 2024 update: This new element is still experimental.  The `<selectmenu>` el
 
 See also:
 * [Open UI's `<selectlist>` demos](https://microsoftedge.github.io/Demos/selectlist/)
-* [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/) - blog post about styling `<select>` elements and the `<selectmenu>` element.
+* [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/)<!-- todo: 404 --> - blog post about styling `<select>` elements and the `<selectmenu>` element.
 
 
 <!-- ====================================================================== -->
@@ -573,7 +573,7 @@ March 17, 2022
 
 Microsoft Edge provides auto-generated alt text for images that don't include it. Auto-generated alt text helps users of assistive technology such as screen readers discover the meaning or intent of an images on the web.
 
-Many people who are blind or low-vision experience the web primarily through a screen reader: an assistive technology that reads the content of each page aloud.  Screen readers depend on having image labels (alternative text or "alt text") provided that allows them to describe visual content - like images and charts - so the user can understand the full content of the page.  Alt text is critical for making the web accessible, yet it’s often overlooked.  More than half of the images processed by screen readers are missing alt text. 
+Many people who are blind or low-vision experience the web primarily through a screen reader: an assistive technology that reads the content of each page aloud.  Screen readers depend on having image labels (alternative text or "alt text") provided that allows them to describe visual content - like images and charts - so the user can understand the full content of the page.  Alt text is critical for making the web accessible, yet it's often overlooked.  More than half of the images processed by screen readers are missing alt text. 
 
 See also:
 * [Appears to say: Microsoft Edge now provides auto-generated image labels](https://blogs.windows.com/msedgedev/2022/03/17/appears-to-say-microsoft-edge-auto-generated-image-labels/) - blog post
