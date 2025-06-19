@@ -156,7 +156,7 @@
       },
       {
         "source_path": "./microsoft-edge/devtools-protocol-chromium/index.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/protocol/index",
+        "redirect_url": "/microsoft-edge/devtools/protocol/index",
         "redirect_document_id": false
       },
 // /Microsoft Edge DevTools
