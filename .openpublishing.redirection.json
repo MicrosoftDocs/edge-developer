@@ -238,11 +238,6 @@
 // Progressive Web Apps
       // older entries:
       {
-        "source_path": "./microsoft-edge/progressive-web-apps/index.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/index",
-        "redirect_document_id": false
-      },
-      {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/serviceworker.md",
         "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/service-workers",
         "redirect_document_id": false
