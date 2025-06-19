@@ -189,7 +189,7 @@ There are several responses, for different scenarios.
 ###### Response when the operation fails with errors
 
 ```json
- {
+{
     "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": "Date Time",
