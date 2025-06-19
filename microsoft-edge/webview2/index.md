@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.subservice: webview
-ms.date: 10/28/2024
+ms.date: 06/10/2025
 ---
 # Introduction to Microsoft Edge WebView2
 
@@ -82,14 +82,64 @@ Developing a WebView2 app involves software residing in the following places:
 For details, see [Overview of the components of the WebView2 platform](./concepts/platform-components.md).
 
 
-<!-- ====================================================================== -->
-## Supported platforms
+## Supported Windows versions
+
+The Windows operating systems that are supported by Webview2 are the same as those supported by Microsoft Edge.
 
 
 <!-- ------------------------------ -->
-#### Frameworks and coding languages supported
+#### Windows Client
 
-The following programming environments are supported:
+WebView2 apps can run on the following versions of Windows Client:
+
+<!-- newest last, per linked page -->
+* Windows 10 SAC 1709 and later
+* Windows 10 Enterprise 2015 LTSC
+* Windows 10 Enterprise 2016 LTSC
+* Windows 10 Enterprise 2019 LTSC
+* Windows 10 Enterprise 2021 LTSC
+* Windows 10 Enterprise multi-session
+* Windows 10 IoT Enterprise SAC
+* Windows 10 IoT Enterprise 2019 LTSC
+* Windows 11
+* Windows 11 Enterprise multi-session
+
+For details, see [Windows Client](/deployedge/microsoft-edge-supported-operating-systems#windows-client) in _Microsoft Edge supported Operating Systems_.
+
+
+<!-- ------------------------------ -->
+#### Windows Server
+
+WebView2 apps can run on the following versions of Windows Server:
+
+* Windows Server 2016 (LTSC)
+* Windows Server 2019 (LTSC)
+* Windows Server 2022 (LTSC)
+* Windows Server (SAC)
+
+For details, see [Windows Server](/deployedge/microsoft-edge-supported-operating-systems#windows-server) in _Microsoft Edge supported Operating Systems_.
+
+
+<!-- ------------------------------ -->
+#### Windows 7 and 8
+
+WebView2 Runtime version 109 is the final version that supports the following versions of Windows.  WebView2 Runtime and SDK version 110.0.1519.0 and higher don't support these operating systems.
+
+*  Windows Server 2008 R2
+*  Windows Server 2012
+*  Windows Server 2012 R2
+*  Windows 7
+*  Windows 8/8.1
+
+See also:
+* [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems) - WebView2 support for Windows 7 and Windows Server 2008 R2 have the same support timeline as Microsoft Edge.
+* [Microsoft Edge and WebView2 ending support for Windows 7 and Windows 8/8.1](https://blogs.windows.com/msedgedev/2022/12/09/microsoft-edge-and-webview2-ending-support-for-windows-7-and-windows-8-8-1/)
+
+
+<!-- ====================================================================== -->
+## Supported programming environments and devices
+
+The following programming environments are supported for WebView2:
 
 *  Win32 C/C++
 *  .NET Framework 4.6.2 or later
@@ -98,40 +148,9 @@ The following programming environments are supported:
 *  [WinUI 2.0](/windows/apps/winui/winui2/)
 *  [WinUI 3.0](/windows/apps/winui/winui3/)
 
-
-<!-- ------------------------------ -->
-#### Windows versions supported
-
-WebView2 apps can run on the following versions of Windows:
-
-*  Windows 11
-*  Windows 10
-*  Windows 10 IoT Enterprise LTSC x32 2019
-*  Windows 10 IoT Enterprise LTSC x64 2019
-*  Windows 10 IoT Enterprise 21h1 x64
-*  Windows Server 2022
-*  Windows Server 2019
-*  Windows Server 2016
-
-WebView2 is also supported on the following devices:
+In addition to Windows devices, WebView2 is also supported on the following devices:
 *  Xbox
 *  HoloLens 2
-
-
-<!-- ------------------------------ -->
-#### Windows 7 and 8
-
-WebView2 Runtime version 109 is the final version that supports the following versions of Windows.  WebView2 Runtime and SDK version 110.0.1519.0 and higher don't support these operating systems.
-
-*  Windows 8/8.1
-*  Windows 7
-*  Windows Server 2012 R2
-*  Windows Server 2012
-*  Windows Server 2008 R2
-
-See also:
-* [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems) - WebView2 support for Windows 7 and Windows Server 2008 R2 have the same support timeline as Microsoft Edge.
-* [Microsoft Edge and WebView2 ending support for Windows 7 and Windows 8/8.1](https://blogs.windows.com/msedgedev/2022/12/09/microsoft-edge-and-webview2-ending-support-for-windows-7-and-windows-8-8-1/)
 
 
 <!-- ====================================================================== -->
