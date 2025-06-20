@@ -195,8 +195,8 @@ Make sure the most important scenarios of your app work everywhere, and progress
 To test your app in multiple environments, consider the following techniques:
 
 * [Cross browser testing](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing).
-* [Emulate and test other browsers](../../devtools-guide-chromium/device-mode/testing-other-browsers.md) from Microsoft Edge, by using DevTools.
-* Create a remote debugging session on [Windows](../../devtools-guide-chromium/remote-debugging/windows.md) or [Android](../../devtools-guide-chromium/remote-debugging/index.md).
+* [Emulate and test other browsers](../../devtools/device-mode/testing-other-browsers.md) from Microsoft Edge, by using DevTools.
+* Create a remote debugging session on [Windows](../../devtools/remote-debugging/windows.md) or [Android](../../devtools/remote-debugging/index.md).
 * [Test and automation in Microsoft Edge](../../test-and-automation/test-and-automation.md) to automate your testing.
 * Test on [virtual machines](https://developer.microsoft.com/microsoft-edge/tools/).<!-- todo: redirects to https://developer.microsoft.com/en-us/microsoft-edge/tools/?cs=2233647189&form=MA13LH - vm not listed -->
 
@@ -234,9 +234,9 @@ Local: PWA:
 * [Test and automation in Microsoft Edge](../../test-and-automation/test-and-automation.md)
 
 Local: DevTools:
-* [Emulate and test other browsers](../../devtools-guide-chromium/device-mode/testing-other-browsers.md)
-* [Windows](../../devtools-guide-chromium/remote-debugging/windows.md)
-* [Android](../../devtools-guide-chromium/remote-debugging/index.md)
+* [Emulate and test other browsers](../../devtools/device-mode/testing-other-browsers.md)
+* [Windows](../../devtools/remote-debugging/windows.md)
+* [Android](../../devtools/remote-debugging/index.md)
 
 MDN:
 * [beforeinstallprompt](https://developer.mozilla.org/docs/Web/API/Window/beforeinstallprompt_event) at MDN > References > Web APIs > Window.

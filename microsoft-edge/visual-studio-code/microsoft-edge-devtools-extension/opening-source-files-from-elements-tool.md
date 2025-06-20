@@ -19,7 +19,7 @@ The source file name and line number are shown as a clickable link.  Clicking a 
 
 ![Opening source files from Elements tool](./opening-source-files-from-elements-tool-images/elements-files.png)
 
-For more information about the **Elements** tool, see [Inspect, edit, and debug HTML and CSS with the Elements tool](../../devtools-guide-chromium/elements-tool/elements-tool.md).
+For more information about the **Elements** tool, see [Inspect, edit, and debug HTML and CSS with the Elements tool](../../devtools/elements-tool/elements-tool.md).
 
 
 <!-- ====================================================================== -->

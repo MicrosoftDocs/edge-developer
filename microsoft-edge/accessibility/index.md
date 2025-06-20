@@ -34,7 +34,7 @@ Microsoft Edge DevTools is built into the Microsoft Edge browser, and includes m
 
 See:
 
-* [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md) - a list of accessibility aspects to test and the corresponding DevTools features.
+* [Accessibility-testing features](../devtools/accessibility/reference.md) - a list of accessibility aspects to test and the corresponding DevTools features.
 
 
 <!-- ====================================================================== -->

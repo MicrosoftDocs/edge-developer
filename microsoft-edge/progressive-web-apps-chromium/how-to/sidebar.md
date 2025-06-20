@@ -58,7 +58,7 @@ To make your PWA ready for pinning to the sidebar in Microsoft Edge, use the `ed
 
 The sidebar in Microsoft Edge has a default minimum width of 376 pixels and can be resized by users. Therefore, your app's layout should support the 376 pixels minimum width, and should be responsive.
 
-While building your app, you can test whether the app's layout is usable when narrow, and make sure the design is responsive at different widths, by using the **Device Emulation** tool in Microsoft Edge DevTools. To learn more, see [Verify that the webpage layout is usable when narrow](../../devtools-guide-chromium/accessibility/narrow.md).
+While building your app, you can test whether the app's layout is usable when narrow, and make sure the design is responsive at different widths, by using the **Device Emulation** tool in Microsoft Edge DevTools. To learn more, see [Verify that the webpage layout is usable when narrow](../../devtools/accessibility/narrow.md).
 
 If your app's layout can't support the 376 pixels minimum width, you can define your preferred width by using the `preferred_width` property in your web app manifest. For example:
 
@@ -176,7 +176,7 @@ Follow these recommendations when using a mobile-variant of your app in the side
 
 * Remove all "Open in App" messages instructing users to download your app from an app store.
 
-* Test the accessibility and usability of your app with all input methods: mouse, keyboard, and touch. To learn about testing the accessibility of your app, see [Accessibility-testing features](../../devtools-guide-chromium/accessibility/reference.md).
+* Test the accessibility and usability of your app with all input methods: mouse, keyboard, and touch. To learn about testing the accessibility of your app, see [Accessibility-testing features](../../devtools/accessibility/reference.md).
 
 
 <!-- ====================================================================== -->
@@ -207,7 +207,7 @@ The source code for the PWAmp demo app has the following, to support the Microso
 
 * The `isSidebarPWA` variable, which uses the `navigator.userAgentData` JavaScript API in the [app.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwamp/app.js#L14) file.
 
-You can find the entire PWAmp demo source code at [MicrosoftEdge / Demos > pwamp](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp). To download the source code locally, see [Clone the Edge Demos repo to your drive](../../devtools-guide-chromium/sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
+You can find the entire PWAmp demo source code at [MicrosoftEdge / Demos > pwamp](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp). To download the source code locally, see [Clone the Edge Demos repo to your drive](../../devtools/sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
 
 
 <!-- ====================================================================== -->

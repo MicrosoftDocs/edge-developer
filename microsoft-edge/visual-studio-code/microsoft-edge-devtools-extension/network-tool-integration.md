@@ -23,7 +23,7 @@ Use the **Network** tool to:
 
 * Simulate different user agents to see how your product appears to a search engine bot or a browser that you can't test in.
 
-For more information about the **Network** tool in DevTools, see [Inspect network activity](../../devtools-guide-chromium/network/index.md).
+For more information about the **Network** tool in DevTools, see [Inspect network activity](../../devtools/network/index.md).
 
 
 <!-- ====================================================================== -->

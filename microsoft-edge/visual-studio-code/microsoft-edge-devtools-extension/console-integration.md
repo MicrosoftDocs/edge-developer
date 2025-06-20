@@ -14,9 +14,9 @@ In the **Edge DevTools** tab's **Console** tool in Visual Studio Code with this 
 ![The DevTools Console inside the extension as an own tab](./console-integration-images/console-full.png)
 
 You can:
-*  View [log messages](../../devtools-guide-chromium/console/console-log.md).
-*  Access the `window` object and use the [DOM interaction convenience methods](../../devtools-guide-chromium/console/console-dom-interaction.md).
-*  [Filter the Console](../../devtools-guide-chromium/console/console-filters.md) and set [live expressions](../../devtools-guide-chromium/console/live-expressions.md).
+*  View [log messages](../../devtools/console/console-log.md).
+*  Access the `window` object and use the [DOM interaction convenience methods](../../devtools/console/console-dom-interaction.md).
+*  [Filter the Console](../../devtools/console/console-filters.md) and set [live expressions](../../devtools/console/live-expressions.md).
 
 
 <!-- ====================================================================== -->
@@ -38,7 +38,7 @@ If you launch the DevTools extension from the Run and Debug workflow, the **Debu
 <!-- ====================================================================== -->
 ## See also
 
-* [Console overview](../../devtools-guide-chromium/console/index.md)
+* [Console overview](../../devtools/console/index.md)
 * [Debugging](https://code.visualstudio.com/Docs/editor/debugging) - the Debug Console of Visual Studio Code.
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

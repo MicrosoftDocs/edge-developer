@@ -13,7 +13,7 @@ ms.date: 11/25/2022
 A Progressive Web App (PWA) is built by using web technologies.  Therefore, all the tools available in Microsoft Edge DevTools are also helpful for a PWA.  A PWA also uses a web app manifest, and can use service workers and other specific features and APIs that require special debugging tools.
 
 See also:
-* [Microsoft Edge DevTools documentation](../../devtools-guide-chromium/landing/index.yml)
+* [Microsoft Edge DevTools documentation](../../devtools/landing/index.yml)
 
 
 <!-- ====================================================================== -->
@@ -27,7 +27,7 @@ You can open DevTools on your PWA in the same way in both cases.  To open DevToo
 * Press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 * Press **F12**.
 
-To learn more, see [Open DevTools](../../devtools-guide-chromium/overview.md#open-devtools) in _Overview of DevTools_.
+To learn more, see [Open DevTools](../../devtools/overview.md#open-devtools) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
@@ -54,13 +54,13 @@ Your PWA service worker is responsible for making your app faster and more relia
 
 The service worker does this by running in parallel to your app and intercepting network requests. It has its own lifecycle that's independent from your app's lifecycle.
 
-To check if your service worker was installed correctly, and which state of its lifecycle it currently is in, use the **Service workers** pane of the **Application** tool. To learn more, see [Service workers](../../devtools-guide-chromium/progressive-web-apps/index.md#service-workers) in _Debug a Progressive Web App (PWA)_.
+To check if your service worker was installed correctly, and which state of its lifecycle it currently is in, use the **Service workers** pane of the **Application** tool. To learn more, see [Service workers](../../devtools/progressive-web-apps/index.md#service-workers) in _Debug a Progressive Web App (PWA)_.
 
-To debug the JavaScript code running in the service worker thread, by using breakpoints, switch to the service worker thread in the **Sources** tool. To learn more, see [Change the thread context](../../devtools-guide-chromium/javascript/reference.md#change-the-thread-context) in _JavaScript debugging features_.
+To debug the JavaScript code running in the service worker thread, by using breakpoints, switch to the service worker thread in the **Sources** tool. To learn more, see [Change the thread context](../../devtools/javascript/reference.md#change-the-thread-context) in _JavaScript debugging features_.
 
 Service workers can run even when your app isn't running and execute background tasks to keep your app up to date. For example, they can fetch data from the server or receive push messages.
 
-To debug your service worker background tasks, use the **Background Services** section of the **Application** tool. To learn more, see [Debug background services](../../devtools-guide-chromium/javascript/background-services.md).
+To debug your service worker background tasks, use the **Background Services** section of the **Application** tool. To learn more, see [Debug background services](../../devtools/javascript/background-services.md).
 
 
 <!-- ====================================================================== -->
@@ -68,9 +68,9 @@ To debug your service worker background tasks, use the **Background Services** s
 
 Your web app manifest defines the name, description, icon, and features of your application. Whether these features work correctly can depend on whether they were correctly entered in the manifest JSON file.
 
-To check if Microsoft Edge detects your manifest file and the features in it, use the **Manifest** pane of the **Application** tool. To learn more, see [Web app manifest](../../devtools-guide-chromium/progressive-web-apps/index.md#web-app-manifest) in _Debug a Progressive Web App (PWA)_.
+To check if Microsoft Edge detects your manifest file and the features in it, use the **Manifest** pane of the **Application** tool. To learn more, see [Web app manifest](../../devtools/progressive-web-apps/index.md#web-app-manifest) in _Debug a Progressive Web App (PWA)_.
 
-Certain PWA manifest features have dedicated tools. For example, you can [Test Progressive Web App (PWA) protocol handling](../../devtools-guide-chromium/progressive-web-apps/protocol-handlers.md).
+Certain PWA manifest features have dedicated tools. For example, you can [Test Progressive Web App (PWA) protocol handling](../../devtools/progressive-web-apps/protocol-handlers.md).
 
 
 <!-- ====================================================================== -->
@@ -78,12 +78,12 @@ Certain PWA manifest features have dedicated tools. For example, you can [Test P
 
 To provide a rich and fast experience to your users, your PWA can store data locally. To view, edit, and delete the stored data, refer to the following DevTools documentation, depending on the storage option you chose:
 
-* [View Cache data](../../devtools-guide-chromium/storage/cache.md).
-* [View and change IndexedDB data](../../devtools-guide-chromium/storage/indexeddb.md).
-* [View and edit local storage](../../devtools-guide-chromium/storage/localstorage.md).
-* [View and edit session storage](../../devtools-guide-chromium/storage/sessionstorage.md).
+* [View Cache data](../../devtools/storage/cache.md).
+* [View and change IndexedDB data](../../devtools/storage/indexeddb.md).
+* [View and edit local storage](../../devtools/storage/localstorage.md).
+* [View and edit session storage](../../devtools/storage/sessionstorage.md).
 
-To view the total amount of stored data used by your PWA, the available quota, and delete the data, use the **Storage** pane of the **Application** tool. To learn more, see [Storage](../../devtools-guide-chromium/progressive-web-apps/index.md#storage) in _Debug a Progressive Web App (PWA)_.
+To view the total amount of stored data used by your PWA, the available quota, and delete the data, use the **Storage** pane of the **Application** tool. To learn more, see [Storage](../../devtools/progressive-web-apps/index.md#storage) in _Debug a Progressive Web App (PWA)_.
 
 
 <!-- ====================================================================== -->
@@ -91,6 +91,6 @@ To view the total amount of stored data used by your PWA, the available quota, a
 
 With Progressive Web Apps, you deliver an app for all devices, from one codebase. To make sure your app adapts to all device's screen sizes, use the **Device Emulation** tool in DevTools.
 
-To learn more, see [Emulate mobile devices (Device Emulation)](../../devtools-guide-chromium/device-mode/index.md).
+To learn more, see [Emulate mobile devices (Device Emulation)](../../devtools/device-mode/index.md).
 
 Note that the **Device Emulation** tool is only available when DevTools is used in the browser, and not when DevTools is used in an installed PWA. Installed PWAs have their own standalone windows that are very easy to resize to test your app under different screen sizes.

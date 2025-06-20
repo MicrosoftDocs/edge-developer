@@ -431,7 +431,7 @@ These are troubleshooting considerations when using WebDriver to automate Micros
 <!-- ------------------------------ -->
 #### Developer Tools Availability policy
 
-If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`, Microsoft Edge WebDriver is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
+If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`, Microsoft Edge WebDriver is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools/overview.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
 
 
 <!-- ------------------------------ -->

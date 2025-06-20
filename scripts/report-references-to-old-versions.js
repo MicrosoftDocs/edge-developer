@@ -6,12 +6,12 @@ import github from '@actions/github';
 const FILES_TO_INCLUDE = '../microsoft-edge/**/*.md';
 const FILES_TO_IGNORE = [
     // What's new/release notes articles are bound to always have version numbers in them. That's ok.
-    '../microsoft-edge/devtools-guide-chromium/whats-new/**/*.md',
+    '../microsoft-edge/devtools/whats-new/**/*.md',
     '../microsoft-edge/webview2/release-notes/index.md',
     '../microsoft-edge/webview2/release-notes/archive.md',
     '../microsoft-edge/progressive-web-apps-chromium/whats-new/*.md',
     // Experimental features also often have version numbers in them. Let's ignore them too.
-    '../microsoft-edge/devtools-guide-chromium/experimental-features/index.md',
+    '../microsoft-edge/devtools/experimental-features/index.md',
     // Ignore the site-impacting-changes article, since this references older versions on purpose.
     '../microsoft-edge/web-platform/site-impacting-changes.md'
 ];
