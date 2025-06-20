@@ -368,7 +368,7 @@ conceptualContent:
               itemType: overview
 
             - text: DevTools Protocol
-              url: ./test-and-automation/devtools-protocol.md
+              url: ./test-and-automation/devtools-protocol.md  # jump page
               itemType: how-to-guide
 
             - text: Use Playwright to automate and test in Microsoft Edge
@@ -380,7 +380,7 @@ conceptualContent:
               itemType: how-to-guide
 
             - text: Use WebDriver to automate Microsoft Edge
-              url: ./webdriver-chromium/index.md
+              url: ./webdriver/index.md
               itemType: how-to-guide
 
             - text: webhint extension for Visual Studio Code
