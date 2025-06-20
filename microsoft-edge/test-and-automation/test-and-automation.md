@@ -81,7 +81,7 @@ WebDriver allows you to automate Microsoft Edge by simulating user interaction. 
 
 *  Runs multiple sessions of Microsoft Edge on a specific machine.
 
-See [Use WebDriver to automate Microsoft Edge](../webdriver-chromium/index.md).
+See [Use WebDriver to automate Microsoft Edge](../webdriver/index.md).
 
 
 <!-- ====================================================================== -->
