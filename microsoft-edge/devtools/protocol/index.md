@@ -9,12 +9,7 @@ ms.date: 04/06/2021
 ---
 # Microsoft Edge DevTools Protocol
 
-Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.  The Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.  For reference documentation, go to [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot).
-
-> [!NOTE]
-> With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) won't be receiving any further updates.  Going forward, the Microsoft Edge DevTools Protocol will match the APIs of the Chrome DevTools Protocol.
->
-> Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) are no longer supported in the Microsoft Edge DevTools Protocol.
+Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.  The Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.  For Reference documentation, see [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot).
 
 
 <!-- ====================================================================== -->
@@ -133,11 +128,11 @@ String("Target is closing")
 
 You can install the [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) from the [Microsoft Store](https://apps.microsoft.com).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
 
-To learn how to set up your Windows device and connect to it from your development machine, see [Get started with remote debugging Windows devices](../devtools/remote-debugging/windows.md).
+To learn how to set up your Windows device and connect to it from your development machine, see [Remotely debug Windows devices](../remote-debugging/windows.md).
 
-The [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) uses the same Microsoft Edge DevTools Protocol as [DevTools](../devtools/overview.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
+The [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) app uses the same Microsoft Edge DevTools Protocol as used by Microsoft Edge DevTools, to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.
 
-The following Reference sections are for Remote Tools for Microsoft Edge.
+The Remote Tools for Microsoft Edge app supports the following HTTP endpoints; the Reference sections below are for Remote Tools for Microsoft Edge.
 
 
 <!-- ====================================================================== -->
@@ -161,7 +156,7 @@ None.
 <!-- ====================================================================== -->
 ## /msedge/json/list
 
-Provides a candidate list of all Microsoft Edge and WebView2 Runtime processes running on the connected device (including [PWAs](../progressive-web-apps-chromium/index.md)) and all tabs or targets in each process available for debugging.
+Provides a candidate list of all Microsoft Edge and WebView2 Runtime processes running on the connected device (including PWAs) and all tabs or targets in each process available for debugging.
 
 **Parameters**
 
@@ -200,6 +195,9 @@ None.
   ...
 ]
 ```
+
+See also:
+* [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps-chromium/index.md)
 
 
 <!-- ====================================================================== -->
@@ -274,8 +272,16 @@ JSON object which represents the available API surface for the version of the pr
 
 
 <!-- ====================================================================== -->
+## EdgeHTML DevTools Protocol
+
+With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) won't be receiving any further updates.  Going forward, the Microsoft Edge DevTools Protocol will match the APIs of the Chrome DevTools Protocol.
+
+Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) are no longer supported in the Microsoft Edge DevTools Protocol.
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
-* [Chrome DevTools Protocol (CDP)](../webview2/concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 APIs_
-* [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)
+* [Chrome DevTools Protocol (CDP)](../../webview2/concepts/overview-features-apis.md#chrome-devtools-protocol-cdp) in _Overview of WebView2 APIs_.
+* [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../../webview2/how-to/chromium-devtools-protocol.md)

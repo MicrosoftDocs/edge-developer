@@ -485,3 +485,6 @@ Don't use Selenium 4 with Selenium Tools for Microsoft Edge, because Selenium 4 
 * [The Selenium Browser Automation Project](https://www.selenium.dev/documentation) - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
 * [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver) NuGet package.
 * [Contact the Microsoft Edge WebDriver team](contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.
+
+Archived:
+* [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/)

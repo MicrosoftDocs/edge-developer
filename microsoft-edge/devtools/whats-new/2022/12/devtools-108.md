@@ -39,7 +39,7 @@ To download Microsoft Edge WebDriver on Apple M1 devices:
 Thank you for your feedback on this issue!
 
 See also:
-* [Use WebDriver to automate Microsoft Edge](../../../../webdriver-chromium/index.md)
+* [Use WebDriver to automate Microsoft Edge](../../../../webdriver/index.md)
 * [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/)
 * [Issue #17: Support for Apple silicon](https://github.com/MicrosoftEdge/EdgeWebDriver/issues/17)
 
