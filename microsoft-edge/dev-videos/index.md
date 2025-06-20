@@ -573,7 +573,7 @@ March 17, 2022
 
 Microsoft Edge provides auto-generated alt text for images that don't include it. Auto-generated alt text helps users of assistive technology such as screen readers discover the meaning or intent of an images on the web.
 
-Many people who are blind or low-vision experience the web primarily through a screen reader: an assistive technology that reads the content of each page aloud.  Screen readers depend on having image labels (alternative text or "alt text") provided that allows them to describe visual content - like images and charts - so the user can understand the full content of the page.  Alt text is critical for making the web accessible, yet it’s often overlooked.  More than half of the images processed by screen readers are missing alt text. 
+Many people who are blind or low-vision experience the web primarily through a screen reader: an assistive technology that reads the content of each page aloud.  Screen readers depend on having image labels (alternative text or "alt text") provided that allows them to describe visual content - like images and charts - so the user can understand the full content of the page.  Alt text is critical for making the web accessible, yet it's often overlooked.  More than half of the images processed by screen readers are missing alt text. 
 
 See also:
 * [Appears to say: Microsoft Edge now provides auto-generated image labels](https://blogs.windows.com/msedgedev/2022/03/17/appears-to-say-microsoft-edge-auto-generated-image-labels/) - blog post
@@ -681,7 +681,7 @@ The Microsoft Edge team specified and implemented the new EyeDropper API in coll
 Many creative applications enable users to pick colors from parts of an app window or even from the entire screen, typically using an eyedropper metaphor. The EyeDropper API enables authors to use a browser-supplied eyedropper in the construction of custom color pickers on the web.
 
 See also:
-* [Picking colors of any pixel on the screen with the EyeDropper API | web.dev](https://web.dev/eyedropper/)
+* [Picking colors of any pixel on the screen with the EyeDropper API | web.dev](https://web.dev/eyedropper/)<!-- todo: mdn link -->
 * [EyeDropper API - Web APIs | MDN developer.mozilla.org](https://developer.mozilla.org/docs/Web/API/EyeDropper_API)
 
 
