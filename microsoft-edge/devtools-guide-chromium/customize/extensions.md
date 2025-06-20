@@ -52,4 +52,4 @@ To install a Microsoft Edge extension that extends DevTools:
 
 You can create your own DevTools extension to add new tabs in the DevTools **Activity Bar**, and to interact with the inspected page.
 
-See [Create a DevTools extension](../../extensions-chromium/developer-guide/devtools-extension.md).
+See [Create a DevTools extension](../../extensions/developer-guide/devtools-extension.md).

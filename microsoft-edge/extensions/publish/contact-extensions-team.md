@@ -16,7 +16,7 @@ You can contact the Microsoft Edge extensions support team to request help, subm
 <!-- ====================================================================== -->
 ## Issues page in the MicrosoftEdge-Extensions repo
 <!-- sync:
-https://learn.microsoft.com/microsoft-edge/extensions-chromium/publish/contact-extensions-team#issues-page-in-the-microsoftedge-extensions-repo
+https://learn.microsoft.com/microsoft-edge/extensions/publish/contact-extensions-team#issues-page-in-the-microsoftedge-extensions-repo
 https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md#issues
 -->
 
@@ -41,7 +41,7 @@ See also:
 <!-- ====================================================================== -->
 ## Discussion forum in the MicrosoftEdge-Extensions repo
 <!-- sync:
-https://learn.microsoft.com/microsoft-edge/extensions-chromium/publish/contact-extensions-team#discussion-forum-in-the-microsoftedge-extensions-repo
+https://learn.microsoft.com/microsoft-edge/extensions/publish/contact-extensions-team#discussion-forum-in-the-microsoftedge-extensions-repo
 https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md#discussions
 -->
 

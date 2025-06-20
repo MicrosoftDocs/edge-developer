@@ -101,29 +101,29 @@ landingContent:
       - linkListType: overview
         links:
           - text: Microsoft Edge extensions documentation  # extensions landing page
-            url: ../extensions-chromium/landing/index.yml
+            url: ../extensions/landing/index.yml
 
           - text: Extensions overview
-            url: ../extensions-chromium/index.md
+            url: ../extensions/index.md
 
           - text: Getting started tutorial
-            url: ../extensions-chromium/getting-started/index.md
+            url: ../extensions/getting-started/index.md
 
           - text: Port a Chrome extension to Microsoft Edge
-            url: ../extensions-chromium/developer-guide/port-chrome-extension.md
+            url: ../extensions/developer-guide/port-chrome-extension.md
       - linkListType: how-to-guide
         links:
           - text: Alternative ways to distribute an extension
-            url: ../extensions-chromium/developer-guide/alternate-distribution-options.md
+            url: ../extensions/developer-guide/alternate-distribution-options.md
 
           - text: Step-wise publishing process
-            url: ../extensions-chromium/publish/publish-extension.md
+            url: ../extensions/publish/publish-extension.md
 
           - text: Register as a Microsoft Edge extension developer
-            url: ../extensions-chromium/publish/create-dev-account.md
+            url: ../extensions/publish/create-dev-account.md
 
           - text: "Sample: Picture viewer pop-up webpage"
-            url: ../extensions-chromium/getting-started/picture-viewer-popup-webpage.md
+            url: ../extensions/getting-started/picture-viewer-popup-webpage.md
 
 # =============================================================================
 # Row 2
