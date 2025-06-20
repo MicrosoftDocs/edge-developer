@@ -210,7 +210,7 @@ landingContent:
             url: ../test-and-automation/test-and-automation.md
 
           - text: DevTools Protocol
-            url: ../devtools-protocol-chromium/index.md   # https://learn.microsoft.com/microsoft-edge/devtools-protocol-chromium/
+            url: ../test-and-automation/devtools-protocol.md  # jump page
 
           - text: Use Playwright to automate and test in Microsoft Edge
             url: ../playwright/index.md

@@ -368,7 +368,7 @@ conceptualContent:
               itemType: overview
 
             - text: DevTools Protocol
-              url: ./test-and-automation/devtools-protocol.md
+              url: ./test-and-automation/devtools-protocol.md  # jump page
               itemType: how-to-guide
 
             - text: Use Playwright to automate and test in Microsoft Edge
