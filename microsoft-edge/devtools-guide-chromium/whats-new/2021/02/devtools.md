@@ -238,7 +238,7 @@ The **Console** now displays a more detailed installability warning message for 
 ![PWA installability warning in Console tool](./devtools-images/console-pwa-installability.png)
 
 See also:
-* [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps-chromium/index.md)
+* [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps/index.md)
 
 
 <!-- ---------- -->

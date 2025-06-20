@@ -42,7 +42,7 @@ The features that are discussed below are features of the **Application** tool a
 * [View and edit local storage](../storage/localstorage.md)
 
 See also:
-* [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps-chromium/index.md)
+* [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps/index.md)
 
 
 <!-- ====================================================================== -->

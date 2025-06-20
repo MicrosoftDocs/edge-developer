@@ -9,7 +9,7 @@ const FILES_TO_IGNORE = [
     '../microsoft-edge/devtools-guide-chromium/whats-new/**/*.md',
     '../microsoft-edge/webview2/release-notes/index.md',
     '../microsoft-edge/webview2/release-notes/archive.md',
-    '../microsoft-edge/progressive-web-apps-chromium/whats-new/*.md',
+    '../microsoft-edge/progressive-web-apps/whats-new/*.md',
     // Experimental features also often have version numbers in them. Let's ignore them too.
     '../microsoft-edge/devtools-guide-chromium/experimental-features/index.md',
     // Ignore the site-impacting-changes article, since this references older versions on purpose.

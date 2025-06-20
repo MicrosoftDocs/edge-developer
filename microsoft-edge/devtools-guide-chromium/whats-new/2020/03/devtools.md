@@ -35,7 +35,7 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 <!-- ------------------------------ -->
 #### Remotely debug Microsoft Edge on Windows 10 or later Devices
 
-The [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) app is now available in the [Microsoft Store](https://apps.microsoft.com). This app extends the [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal).  You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets.  This list of targets includes all tabs in Microsoft Edge and [PWAs](../../../../progressive-web-apps-chromium/index.md) open on the Windows device.  Use DevTools on your development machine against a target running on the remote Windows device.
+The [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) app is now available in the [Microsoft Store](https://apps.microsoft.com). This app extends the [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal).  You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets.  This list of targets includes all tabs in Microsoft Edge and [PWAs](../../../../progressive-web-apps/index.md) open on the Windows device.  Use DevTools on your development machine against a target running on the remote Windows device.
 
 ![The Remote Tools for Microsoft Edge app available in the Microsoft Store](./devtools-images/remote-tools.png)
 
@@ -290,7 +290,7 @@ Chromium issue [#1054447](https://crbug.com/1054447)
 
 There's a new checkbox, **Show only the minimum safe area for maskable icons**, in the **Manifest** pane of the **Application** tool.
 
-Android Oreo introduced adaptive icons, which display app icons in a variety of shapes across different device models.  **Maskable icons** are a new icon format that support adaptive icons, which enable you to ensure that your [PWA](../../../../progressive-web-apps-chromium/index.md) icon looks good on devices that support the maskable icons standard.
+Android Oreo introduced adaptive icons, which display app icons in a variety of shapes across different device models.  **Maskable icons** are a new icon format that support adaptive icons, which enable you to ensure that your [PWA](../../../../progressive-web-apps/index.md) icon looks good on devices that support the maskable icons standard.
 
 To check that your maskable icon looks good on Android Oreo devices, in the **Manifest** pane of the **Application** tool, select the new checkbox **Show only the minimum safe area for maskable icons**:
 

@@ -82,7 +82,7 @@ Progressive Web Apps combine the best of the web and compiled apps, to provide u
 
 Progressive Web Apps have a much lower cross-platform development cost than compiled apps that require a specific codebase for each platform, such as a separate codebase for Android, for iOS, and for each desktop operating system.
 
-See [Overview of Progressive Web Apps (PWAs)](./progressive-web-apps-chromium/index.md).
+See [Overview of Progressive Web Apps (PWAs)](./progressive-web-apps/index.md).
 
 
 <!-- ====================================================================== -->

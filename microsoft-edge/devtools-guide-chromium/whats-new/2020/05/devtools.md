@@ -87,7 +87,7 @@ With the Surface Duo emulator, you can test how your web content renders on a ne
 
 ![The Microsoft Edge app running on the Surface Duo emulator](./devtools-images/surface-duo-emulator.png)
 
-The `edge://inspect` page in a desktop instance of Microsoft Edge shows the **SurfaceDuoEmulator** with a list of the open tabs or [PWAs](../../../../progressive-web-apps-chromium/index.md) that are running on the Surface Duo emulator:
+The `edge://inspect` page in a desktop instance of Microsoft Edge shows the **SurfaceDuoEmulator** with a list of the open tabs or [PWAs](../../../../progressive-web-apps/index.md) that are running on the Surface Duo emulator:
 
 ![The edge://inspect page displays a list of the open tabs in the Microsoft Edge app running on the emulator](./devtools-images/edge-inspect.png)
 
@@ -310,7 +310,7 @@ In the **Application** tool, the **Manifest** page now shows app shortcuts.  App
 ![App shortcuts in the Manifest pane of the Application tool](./devtools-images/app-shortcuts.png)
 
 See also:
-* [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps-chromium/index.md)
+* [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps/index.md)
 * [Debug a Progressive Web App (PWA)](../../../progressive-web-apps/index.md)
 
 
