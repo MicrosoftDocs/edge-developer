@@ -1,6 +1,7 @@
 {
   "redirections": [
 // Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
+// Update "redirect_url" to current url; avoid chaining via old path; group entries that point to same "redirect_url".
 // Sections:
 
 // Release notes
