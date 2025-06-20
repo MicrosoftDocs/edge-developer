@@ -154,6 +154,11 @@
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/sensors/#simulate-device-orientation",
         "redirect_document_id": false
       },
+      {
+        "source_path": "./microsoft-edge/devtools-protocol-chromium/index.md",
+        "redirect_url": "/microsoft-edge/devtools/protocol/index",
+        "redirect_document_id": false
+      },
 // /Microsoft Edge DevTools
 // ============================================================================
 // Microsoft Edge extensions
@@ -1462,6 +1467,26 @@
       {
         "source_path": "./microsoft-edge/webdriver-chromium/verify-selenium-tools.md",
         "redirect_url": "https://github.com/microsoft/edge-selenium-tools/wiki/using-gpg-to-verify-selenium-tools-for-microsoft-edge-releases",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/webdriver-chromium/capabilities-edge-options.md",
+        "redirect_url": "/microsoft-edge/webdriver/capabilities-edge-options",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/webdriver-chromium/contact.md",
+        "redirect_url": "/microsoft-edge/webdriver/contact",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/webdriver-chromium/ie-mode.md",
+        "redirect_url": "/microsoft-edge/webdriver/ie-mode",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/webdriver-chromium/index.md",
+        "redirect_url": "/microsoft-edge/webdriver/index",
         "redirect_document_id": false
       },
 // /WebDriver: "microsoft / edge-selenium-tools" repo
@@ -4335,11 +4360,12 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      /* reused this source_path for Edge Chromium article
       {
         "source_path": "./microsoft-edge/webdriver/index.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
-      },
+      },*/
       {
         "source_path": "./microsoft-edge/webdriver/dialogs.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
