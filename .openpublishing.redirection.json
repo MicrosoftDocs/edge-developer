@@ -164,6 +164,21 @@
 // Microsoft Edge extensions
       // entries older than 2025/06/19:
       {
+        "source_path": "./microsoft-edge/extensions-chromium/getting-started/part1-simple-extension.md",
+        "redirect_url": "/microsoft-edge/extensions/getting-started/picture-viewer-popup-webpage",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/getting-started/part2-content-scripts.md",
+        "redirect_url": "/microsoft-edge/extensions/getting-started/picture-inserter-content-script",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/store-policies/csp.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/csp",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "./microsoft-edge/extensions-chromium/enterprise/declare-permissions.md",
         "redirect_url": "/microsoft-edge/extensions/developer-guide/declare-permissions",
         "redirect_document_id": false
@@ -179,39 +194,24 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/contact-us.md",
-        "redirect_url": "/microsoft-edge/extensions/publish/contact-extensions-team",
-        "redirect_document_id": false
-      },
-      {
         "source_path": "./microsoft-edge/extensions-chromium/publish/upload-video.md",
         "redirect_url": "/microsoft-edge/extensions/publish/publish-extension",
         "redirect_document_id": false
       },
       {
-        "source_path": "./microsoft-edge/extensions-chromium/store-policies/csp.md",
-        "redirect_url": "/microsoft-edge/extensions/developer-guide/csp",
+        "source_path": "./microsoft-edge/extensions-chromium/publish/add-ons-store-curation.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/add-ons-curation",
         "redirect_document_id": false
       },
       {
-        "source_path": "./microsoft-edge/extensions-chromium/getting-started/part1-simple-extension.md",
-        "redirect_url": "/microsoft-edge/extensions/getting-started/picture-viewer-popup-webpage",
+        "source_path": "./microsoft-edge/extensions-chromium/publish/contact-us.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/contact-extensions-team",
         "redirect_document_id": false
       },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/getting-started/part2-content-scripts.md",
-        "redirect_url": "/microsoft-edge/extensions/getting-started/picture-inserter-content-script",
-        "redirect_document_id": false
-      },
-      // extensions > update
+      // two entries go to same:
       {
         "source_path": "./microsoft-edge/extensions-chromium/publish/update.md",
-        "redirect_url": "/microsoft-edge/extensions/publish/update-extension",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/enterprise/auto-update.md",
-        "redirect_url": "/microsoft-edge/extensions/publish/auto-update",
+        "redirect_url": "/microsoft-edge/extensions/update/update-extension",
         "redirect_document_id": false
       },
       {
@@ -229,17 +229,17 @@
         "redirect_url": "/microsoft-edge/extensions/update/api/addons-api-reference",
         "redirect_document_id": false
       },
+      // two entries go to same:
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/enterprise/auto-update.md",
+        "redirect_url": "/microsoft-edge/extensions/update/auto-update",
+        "redirect_document_id": false
+      },
       {
         "source_path": "./microsoft-edge/extensions-chromium/publish/auto-update.md",
         "redirect_url": "/microsoft-edge/extensions/update/auto-update",
         "redirect_document_id": false
       },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/add-ons-store-curation.md",
-        "redirect_url": "/microsoft-edge/extensions/publish/add-ons-curation",
-        "redirect_document_id": false
-      },
-      // /extensions > update
       // /entries older than 2025/06/19
       // extensions toc 2025/06/19:
       {
