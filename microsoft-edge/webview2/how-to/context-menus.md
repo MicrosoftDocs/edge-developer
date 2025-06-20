@@ -728,7 +728,7 @@ When the user selects a WebView2 context menu command (a default menu item that'
 ---
 
 
-<!-- ---------------------------------- -->
+<!-- ------------------------------ -->
 #### Custom menu items
 
 If your host app reports a custom menu item as the selected menu item, then the `CustomMenuItemSelected` event will be fired for the custom menu item.
