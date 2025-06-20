@@ -983,7 +983,7 @@
           displayName: IE mode
 # DevTools Protocol -----------------------------------------------------------
         - name: Microsoft Edge DevTools Protocol
-          href: devtools-protocol-chromium/index.md
+          href: ./devtools/protocol/index.md
           displayName: DevTools Protocol
 # Contact ---------------------------------------------------------------------
         - name: Contact the Microsoft Edge DevTools team
@@ -1763,16 +1763,16 @@
         - name: WebDriver
           items:
             - name: Use WebDriver to automate Microsoft Edge
-              href: ./webdriver-chromium/index.md
+              href: ./webdriver/index.md
 
             - name: Use Internet Explorer Driver to automate IE mode in Microsoft Edge
-              href: ./webdriver-chromium/ie-mode.md
+              href: ./webdriver/ie-mode.md
 
             - name: Capabilities and EdgeOptions
-              href: ./webdriver-chromium/capabilities-edge-options.md
+              href: ./webdriver/capabilities-edge-options.md
 
             - name: Contact the Microsoft Edge WebDriver team
-              href: ./webdriver-chromium/contact.md
+              href: ./webdriver/contact.md
 
         - name: webhint extension for Visual Studio Code
           href: ./test-and-automation/webhint.md
