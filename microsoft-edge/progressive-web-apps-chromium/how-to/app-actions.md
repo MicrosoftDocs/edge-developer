@@ -276,9 +276,13 @@ The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like
 
 1. Click the **Download** button.
 
-1. Unzip your download archive.  Then you can [publish your PWA to the Microsoft Store](./microsoft-store.md) and install the app from the Store, or install it directly by running `install.ps1`.
+1. Unzip your download archive. Install it by running `install.ps1`.
 
 1. Launch your PWA by clicking the PWA icon.
+
+1. Test your PWA actions locally by following <Test App Actions for a PWA> to validate the functionality. However, since this is a new feature in the Edge browser and is currently in the developer trial stage, the feature is disabled by default. Therefore, before publishing your package, we recommend setting the initial availability to false in the Actions definition JSON file. Please refer to [Toggle availability of an App Action for Windows | Microsoft Learn](https://learn.microsoft.com/en-us/windows/ai/app-actions/actions-availability#set-initial-availability). Otherwise, your action will only work if the user manually enables the feature flag `#edge-app-actions-on-windows-for-web-apps` in the Edge browser by navigating to edge://flags. When the feature is officially rolled out later this year, Edge will automatically switch the actions from disabled to enabled, allowing end users to utilize your app's actions without requiring any further changes on your part. 
+
+1. Once you finished the above steps, you can [publish your PWA to the Microsoft Store](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/microsoft-store).
 
 
 <!-- ====================================================================== -->
