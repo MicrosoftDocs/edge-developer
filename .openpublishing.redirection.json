@@ -456,7 +456,7 @@
       },
       {
         "source_path": "./microsoft-edge/extensions-chromium/publish/contact-extensions-team.md",
-        "redirect_url": "/microsoft-edge/extensions/publish/contact-extensions-team",
+        "redirect_url": "/microsoft-edge/extensions/contact",
         "redirect_document_id": false
       },
       // /extensions toc 2025/06/19

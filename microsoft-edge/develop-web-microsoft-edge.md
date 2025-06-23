@@ -208,7 +208,7 @@ The full-text search page initially searches all _Microsoft Edge_ documentation.
 To provide feedback or enter issues:
 
 * [Contact the Microsoft Edge DevTools team](./devtools-guide-chromium/contact.md)
-* [Contact the Microsoft Edge extensions team](./extensions/publish/contact-extensions-team.md)
+* [Contact the Microsoft Edge extensions team](./extensions/contact.md)
 * [Contact the WebView2 team](./webview2/contact.md)
 
 To submit and view feedback for a specific page of the documentation, at the bottom of the page, click the **This page** button.

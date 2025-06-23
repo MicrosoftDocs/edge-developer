@@ -1245,7 +1245,7 @@
 
 # -------------------------------------
         - name: Contact the Microsoft Edge extensions team
-          href: ./extensions/publish/contact-extensions-team.md
+          href: ./extensions/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues
 # /Microsoft Edge extensions
 # =============================================================================
