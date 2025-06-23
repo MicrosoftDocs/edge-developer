@@ -92,6 +92,6 @@ For news and updates about developing for the web with Microsoft Edge, follow th
 <!-- ====================================================================== -->
 ## See also
 
-* [Publish a Microsoft Edge extension](./publish-extension.md)
+* [Publish a Microsoft Edge extension](./publish/publish-extension.md)
 * [README.md](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md) of the **MicrosoftEdge-Extensions** repo.
-* [Communicating on GitHub](https://docs.github.com/en/get-started/using-github/communicating-on-github) - When to use **Issues** vs. **Discussions**.
+* [Communicating on GitHub](https://docs.github.com/en/get-started/using-github/communicating-on-github) - When to use the **Issues** vs. **Discussions** page of a repo.
