@@ -1,1495 +1,11 @@
 {
   "redirections": [
 // Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
-// Sections:
 
-// Release notes
-// Experimental web platform features
-// Microsoft Edge DevTools
-// Microsoft Edge extensions
-// Progressive Web Apps
-// WebView2
-// Test and automation
-// Edge-specific web development tips
-// Microsoft Edge IDE integration
-// Accessibility in Microsoft Edge
-// DualEngine
-// Redirects to Legal
-//    DevTools
-//    Extensions
-//    Privacy
-// Redirects to MDN
-// Redirects to external webpages
-// WebDriver: "microsoft / edge-selenium-tools" repo
+// Sections:
 // Archived EdgeHTML content
 // Old redirects (to /archive/)
 
-// ============================================================================
-// Release notes
-// /Release notes
-// ============================================================================
-// Experimental web platform features
-// /Experimental web platform features
-// ============================================================================
-// Microsoft Edge DevTools
-      {
-        // legacy "Overview of DevTools" url redirects to DevTools landing
-        "source_path": "./microsoft-edge/devtools-guide-chromium/index.md", 
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/landing/index",
-        "redirect_document_id": false
-      },
-      {
-        // "Open DevTools" url redirects to "Overview of DevTools"
-        "source_path": "./microsoft-edge/devtools-guide-chromium/open/index.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/overview",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/overview",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/experimental-features/copilot-explain.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/console/copilot-explain-console",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/experimental-features/edge-command-palette.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/whats-new/2024/03/devtools-123#command-palette-experimental-feature-has-been-removed",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/beginners/css.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/css",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/beginners/html.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/dom",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/console/javascript.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/console/console-javascript",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/layers/layers-tool.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/3d-view/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/console/log.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/console/console-log",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/storage/applicationcache.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/customize/dark-theme.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/landing/",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/customize/theme.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/landing/",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/about-panel-drawer-tools.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/accessibility/reference",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/index.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/reference.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/reference",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/performance-reference.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/performance-reference",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/unminify.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/unminify",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/selector-stats.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/selector-stats",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/device-mode/geolocation.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/sensors/#override-geolocation",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/device-mode/orientation.md",
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/sensors/#simulate-device-orientation",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-protocol-chromium/index.md",
-        "redirect_url": "/microsoft-edge/devtools/protocol/index",
-        "redirect_document_id": false
-      },
-// /Microsoft Edge DevTools
-// ============================================================================
-// Microsoft Edge extensions
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/enterprise/declare-permissions.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/declare-permissions",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/enterprise/match-patterns.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/match-patterns",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/enterprise/hosting-and-updating.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/hosting-and-updating",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/contact-us.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/contact-extensions-team",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/upload-video.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/publish-extension",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/store-policies/csp.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/csp",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/getting-started/part1-simple-extension.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/getting-started/picture-viewer-popup-webpage",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/getting-started/part2-content-scripts.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/getting-started/picture-inserter-content-script",
-        "redirect_document_id": false
-      },
-// Extensions > Update
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/update.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/update-extension",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/enterprise/auto-update.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/auto-update",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/update-extension.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/update/update-extension",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/api/using-addons-api.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/update/api/using-addons-api",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/api/addons-api-reference.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/update/api/addons-api-reference",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/auto-update.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/update/auto-update",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/add-ons-store-curation.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/add-ons-curation",
-        "redirect_document_id": false
-      },
-// /Microsoft Edge extensions
-// ============================================================================
-// Progressive Web Apps
-      // older entries:
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/get-started.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/experimental-features/index.md",
-        "redirect_url": "/microsoft-edge/origin-trials/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/origin-trials.md",
-        "redirect_url": "/microsoft-edge/origin-trials/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/offline.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/offline",
-        "redirect_document_id": false
-      },
-      // two related entries:
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
-        "redirect_document_id": false
-      },
-      // two related entries:
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/serviceworker.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/service-workers.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
-        "redirect_document_id": false
-      },
-      // pwa toc 2025/06/19:
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/landing/index.yml",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/landing/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/index.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/whats-new/pwa.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/whats-new/pwa",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/index.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/ux.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/ux",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/window-controls-overlay.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/window-controls-overlay",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/share.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/share",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/shortcuts.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/shortcuts",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/widgets.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/widgets",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/sidebar.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/sidebar",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/app-actions.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/app-actions",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/microsoft-store.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/microsoft-store",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/digital-goods-api.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/digital-goods-api",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/background-syncs.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/background-syncs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/notifications-badges.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/notifications-badges",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/push.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/push",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/handle-files.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/handle-files",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/handle-urls.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/handle-urls",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/handle-protocols.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/handle-protocols",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/icon-theme-color.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/icon-theme-color",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/offline.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/offline",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/best-practices.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/best-practices",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/debug.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/debug",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/demo-pwas.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps/demo-pwas",
-        "redirect_document_id": false
-      },
-// /Progressive Web Apps
-// ============================================================================
-// WebView2
-      {
-        "source_path": "./microsoft-edge/hosting/webview2.md",
-        "redirect_url": "/microsoft-edge/webview2/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/hosting/webview2/gettingstarted.md",
-        "redirect_url": "/microsoft-edge/webview2/get-started/win32",
-        "redirect_document_id": false
-      },
-
-      // WebView2 Concepts:
-      {
-        "source_path": "./microsoft-edge/webview2/concepts/browserfeatures.md",
-        "redirect_url": "/microsoft-edge/webview2/concepts/browser-features",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/concepts/userdatafolder.md",
-        "redirect_url": "/microsoft-edge/webview2/concepts/user-data-folder",
-        "redirect_document_id": false
-      },
-
-      // WebView2 Getting started:
-      {
-        "source_path": "./microsoft-edge/webview2/gettingstarted/win32.md",
-        "redirect_url": "/microsoft-edge/webview2/get-started/win32",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/gettingstarted/winforms.md",
-        "redirect_url": "/microsoft-edge/webview2/get-started/winforms",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/gettingstarted/winui.md",
-        "redirect_url": "/microsoft-edge/webview2/get-started/winui",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/gettingstarted/wpf.md",
-        "redirect_url": "/microsoft-edge/webview2/get-started/wpf",
-        "redirect_document_id": false
-      },
-
-      // WebView2 How-to:
-      {
-        "source_path": "./microsoft-edge/webview2/howto/chromium-devtools-protocol.md",
-        "redirect_url": "/microsoft-edge/webview2/how-to/chromium-devtools-protocol",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/howto/debug.md",
-        "redirect_url": "/microsoft-edge/webview2/how-to/debug",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/howto/js.md",
-        "redirect_url": "/microsoft-edge/webview2/how-to/javascript",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/howto/static.md",
-        "redirect_url": "/microsoft-edge/webview2/how-to/static",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/howto/webdriver.md",
-        "redirect_url": "/microsoft-edge/webview2/how-to/webdriver",
-        "redirect_document_id": false
-      },
-
-      // WebView2 Release Notes:
-      {
-        "source_path": "./microsoft-edge/hosting/webview2/releasenotes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/releasenotes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/release-notes.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/release-notes/template-prerelease.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/roadmap.md",
-        "redirect_url": "/microsoft-edge/webview2/release-notes/index",
-        "redirect_document_id": false
-      },
-
-      // WebView2 Reference:
-      {
-        "source_path": "./microsoft-edge/hosting/webview2/reference/icorewebview2.md",
-        "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/hosting/webview2/reference-webview2.md",
-        "redirect_url": "/microsoft-edge/webview2/webview2-api-reference",
-        "redirect_document_id": false
-      },
-
-      // WebView2 Reference > .NET:
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515-reference-webview2.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538-reference-webview2.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628-reference-webview2.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/namespace-microsoft-web-webview2-core.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/namespace-microsoft-web-webview2-core.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/namespace-microsoft-web-webview2-core.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2contentloadingeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2contentloadingeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2controller.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2controller",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2deferral.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2deferral",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceivedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceivedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceiver",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2environment.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environment",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2environmentoptions.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2movefocusrequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2navigationstartingeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2newwindowrequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2permissionrequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2physicalkeystatus.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2processfailedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2scriptdialogopeningeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogopeningeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2settings.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2settings",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2sourcechangedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-edgenotfoundexception.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.edgenotfoundexception",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2compositioncontroller.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2contentloadingeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2contentloadingeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2controller.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2controller",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2deferral.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2deferral",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceivedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceivedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceiver",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environment",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environmentoptions.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2matrix4x4.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2matrix4x4",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2movefocusrequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2navigationstartingeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2newwindowrequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2permissionrequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2physicalkeystatus.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2pointerinfo.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2processfailedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2scriptdialogopeningeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogopeningeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2settings",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2sourcechangedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2windowfeatures.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2windowfeatures",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-edgenotfoundexception.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.edgenotfoundexception",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2compositioncontroller.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2contentloadingeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2contentloadingeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2controller.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2controller",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2deferral.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2deferral",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceivedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceivedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceiver",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environment",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environmentoptions.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2httpheaderscollectioniterator.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2httpheaderscollectioniterator",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2httprequestheaders.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2httprequestheaders",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2httpresponseheaders.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2httpresponseheaders",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2matrix4x4.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2matrix4x4",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2movefocusrequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2navigationstartingeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2newwindowrequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2permissionrequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2physicalkeystatus.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2pointerinfo.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2processfailedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2scriptdialogopeningeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogopeningeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2settings.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2settings",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2sourcechangedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2webresourcerequest.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2webresourceresponse.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponse",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2windowfeatures.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2windowfeatures",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-edgenotfoundexception.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.core.edgenotfoundexception",
-        "redirect_document_id": false
-      },
-
-      // WebView2 Reference > WinForms:
-      {
-        "source_path": "./microsoft-edge/webview2/reference/winforms/0-9-515-reference-webview2.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.winforms",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.winforms.webview2",
-        "redirect_document_id": false
-      },
-
-      // WebView2 Reference > WPF:
-      {
-        "source_path": "./microsoft-edge/webview2/reference/wpf/0-9-515-reference-webview2.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/wpf/0-9-515/microsoft-web-webview2-wpf-corewebview2creationproperties.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webview2/reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md",
-        "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf.webview2",
-        "redirect_document_id": false
-      },
-// /WebView2
-// ============================================================================
-// Test and automation
-// /Test and automation
-// ============================================================================
-// Edge-specific web development tips
-      {
-        "source_path": "./microsoft-edge/web-platform/user-agent-string.md",
-        "redirect_url": "/microsoft-edge/web-platform/user-agent-guidance",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer.md",
-        "redirect_url": "/microsoft-edge/web-platform/json-viewer",
-        "redirect_document_id": false
-      },
-// /Edge-specific web development tips
-// ============================================================================
-// Microsoft Edge IDE integration
-      {
-        "source_path": "./microsoft-edge/visual-studio-code/index.md",
-        "redirect_url": "/microsoft-edge/visual-studio-code/ide-integration",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/visual-studio-code/elements-for-edge.md",
-        "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/visual-studio-code/webhint.md",
-        "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
-        "redirect_document_id": false
-      },
-// /Microsoft Edge IDE integration
-// ============================================================================
-// Accessibility in Microsoft Edge
-// /Accessibility in Microsoft Edge
-// ============================================================================
-// DualEngine
-// /DualEngine
-// ============================================================================
-// Redirects to Legal
-      // DevTools:
-      {
-        "source_path": "./microsoft-edge/devtools-guide/devtools-preview_software-license-terms.md",
-        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/devtools-preview_software-license-terms",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/devtools-guide/devtools_software-license-terms.md",
-        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
-        "redirect_document_id": false
-      },
-      // Extensions:
-      {
-        "source_path": "./microsoft-edge/extensions/microsoft-browser-extension-policy.md",
-        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/microsoft-browser-extension-policy",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/store-policies/ada-addendum.md",
-        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/ada-addendum",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/store-policies/developer-policies.md",
-        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/developer-policies",
-        "redirect_document_id": false
-      },
-      // Privacy:
-      {
-        "source_path": "./microsoft-edge/privacy-whitepaper/index.md",
-        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/privacy",
-        "redirect_document_id": false
-      },
-// /Redirects to Legal
-// ============================================================================
-// Redirects to MDN
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/animations.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Animations/Using_CSS_animations",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/calc-function.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/calc",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/filter-effects.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/filter",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/flexbox.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Glossary/Flexbox",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/gradients.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Images/Using_CSS_gradients",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/grid-layout.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/length-units-relative-and-absolute.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Values_and_units",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/media-queries.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/Media_Queries",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/media-query-listeners.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/MediaQueryList",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/multi-column-layout.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Columns",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/supports-at-rule.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/@supports",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/transforms.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Transforms",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/css/transitions.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/device/fullscreen-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Fullscreen_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/device/geolocation.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Geolocation",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/device/high-dpi-support.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/device/screen-orientation-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/ScreenOrientation",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/dom.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Glossary/DOM",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/dom/index.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Glossary/DOM",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/dom/dom-event-constructors.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Glossary/DOM",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/dom/gamepad-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Gamepad_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/dom/input-method-editor-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Mozilla/IME_handling_guide",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/dom/mutation-observers.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/MutationObserver",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/dom/pointer-events.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/PointerEvent",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/dom/pointer-lock.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Pointer_Lock_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/dom/touch-events.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/TouchEvent",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/dom/xpath.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/TouchEvent",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/graphics.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/Guide/Graphics",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/graphics/index.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/Guide/Graphics",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/graphics/canvas.md",
-        "redirect_url": "https://developer.mozilla.org/docs/HTML/Canvas",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/graphics/svg.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/SVG",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/graphics/webgl.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/WebGL",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/html5.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Glossary/HTML5",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/html5/index.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Glossary/HTML5",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/html5/audio.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/html5/file-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/HTML/Element/input/file",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/html5/folder-upload.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/File_and_Directory_Entries_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/html5/sandbox.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/HTML/Attributes",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/html5/selection-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Selection_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/html5/video.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/multimedia.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/multimedia/index.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/multimedia/encrypted-media-extensions.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/multimedia/media-capture-and-streams.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Media_Streams_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/multimedia/media-source-extensions.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Media_Source_Extensions_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/multimedia/web-audio.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Web_Audio_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/multimedia/web-speech-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Web_Speech_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/networking-and-connectivity.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/networking-and-connectivity/index.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/networking-and-connectivity/application-cache.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Window/applicationCache",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/networking-and-connectivity/http2.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Glossary/HTTP",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/networking-and-connectivity/websocket.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/WebSocket",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/index.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/animation-timing-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/beacon-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/efficient-script-yielding.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Window/setImmediate",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/fetch-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Fetch_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/navigation-timing-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Navigation_timing_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/page-visibility-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Page_Visibility_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/prerender-and-prefetch-support.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/HTTP/Link_prefetching_FAQ",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/resource-timing-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Resource_Timing_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/streams-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Streams_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/user-timing-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/PerformanceMark",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/performance/xmlhttprequest.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Glossary/XHR_(XMLHttpRequest)",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/realtime-communication.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/realtime-communication/index.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/realtime-communication/message-channels.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/MessageChannel/MessageChannel",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/security.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/security/index.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/security/content-security-policy.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Content_Security_Policy",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/security/hsts.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Glossary/HSTS",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/security/meta-referrer.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Document/referrer",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/security/web-cryptography-api.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Web_Crypto_API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/storage.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/storage/index.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/storage/indexeddb.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Glossary/IndexedDB",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/dev-guide/storage/web-and-offline-storage.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Web_Storage_API",
-        "redirect_document_id": false
-      },
-// /Redirects to MDN
-// ============================================================================
-// Redirects to external webpages
-      {
-        "source_path": "./microsoft-edge/dev-guide/realtime-communication/object-rtc-api.md",
-        "redirect_url": "https://ortc.org",
-        "redirect_document_id": false
-      },
-// /Redirects to external webpages
-// ============================================================================
-// WebDriver: "microsoft / edge-selenium-tools" repo
-      {
-        "source_path": "./microsoft-edge/webdriver-chromium/verify-selenium-tools.md",
-        "redirect_url": "https://github.com/microsoft/edge-selenium-tools/wiki/using-gpg-to-verify-selenium-tools-for-microsoft-edge-releases",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webdriver-chromium/capabilities-edge-options.md",
-        "redirect_url": "/microsoft-edge/webdriver/capabilities-edge-options",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webdriver-chromium/contact.md",
-        "redirect_url": "/microsoft-edge/webdriver/contact",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webdriver-chromium/ie-mode.md",
-        "redirect_url": "/microsoft-edge/webdriver/ie-mode",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/webdriver-chromium/index.md",
-        "redirect_url": "/microsoft-edge/webdriver/index",
-        "redirect_document_id": false
-      },
-// /WebDriver: "microsoft / edge-selenium-tools" repo
 // ============================================================================
 // Archived EdgeHTML content
       {
@@ -1582,6 +98,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml/devtools-guide:
       {
         "source_path": "./microsoft-edge/edgehtml/devtools-guide/console.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -1697,6 +214,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml/devtools-protocol:
       {
         "source_path": "./microsoft-edge/edgehtml/devtools-protocol/0.1/clients.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -1802,6 +320,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml/extensions:
       {
         "source_path": "./microsoft-edge/edgehtml/extensions/api-support.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -1927,6 +446,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml/hosting:
       {
         "source_path": "./microsoft-edge/edgehtml/hosting/chakra-hosting/hosting-the-javascript-runtime.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -2672,11 +1192,13 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml/hosting:
       {
         "source_path": "./microsoft-edge/edgehtml/hosting/javascript-runtime-hosting.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml/hosting/webview:
       {
         "source_path": "./microsoft-edge/edgehtml/hosting/webview/deferredpermissionrequest.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -2752,16 +1274,19 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml:
       {
         "source_path": "./microsoft-edge/edgehtml/index.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml/performance-analysis:
       {
         "source_path": "./microsoft-edge/edgehtml/performance-analysis/index.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml/progressive-web-apps:
       {
         "source_path": "./microsoft-edge/edgehtml/progressive-web-apps/get-started.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -2787,11 +1312,13 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml/webdriver:
       {
         "source_path": "./microsoft-edge/edgehtml/webdriver/index.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // edgehtml/windows-runtime:
       {
         "source_path": "./microsoft-edge/edgehtml/windows-runtime/considerations-when-using-the-windows-runtime-api.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -3060,6 +1587,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // devtools-guide:
       {
         "source_path": "./microsoft-edge/devtools-guide.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -3225,6 +1753,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // devtools-protocol:
       {
         "source_path": "./microsoft-edge/devtools-protocol/index.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -3340,6 +1869,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // extensions:
       {
         "source_path": "./microsoft-edge/extensions.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -3490,6 +2020,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // f12-devtools-guide:
       {
         "source_path": "./microsoft-edge/f12-devtools-guide.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -3625,6 +2156,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // hosting/chakra-hosting:
       {
         "source_path": "./microsoft-edge/hosting/chakra-hosting.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -4230,6 +2762,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // hosting:
       {
         "source_path": "./microsoft-edge/hosting/javascript-runtime-hosting.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -4315,6 +2848,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // performance-analysis:
       {
         "source_path": "./microsoft-edge/performance-analysis.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -4325,6 +2859,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // pwa:
       {
         "source_path": "./microsoft-edge/progressive-web-apps-edgehtml.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -4355,6 +2890,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // webdriver:
       {
         "source_path": "./microsoft-edge/webdriver.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -4411,6 +2947,7 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      // webview:
       {
         "source_path": "./microsoft-edge/webview.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
@@ -4491,6 +3028,5 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       }
-// /Old redirects (to /archive/)
     ]
 }
