@@ -18,7 +18,7 @@ In DevTools, in the **Application** tool, you can simulate the Window Controls O
 <!-- ====================================================================== -->
 ## Using the WCO feature in your PWA
 
-In your Progressive Web App (PWA), use the Window Controls Overlay (WCO) to have control over the title bar area that's currently displayed in standalone display mode.  Window Controls Overlay is a set of features that work together to provide just the essential controls needed for the app window.  This layout frees up more space for the web content layer.  See [Display content in the title bar area using Window Controls Overlay](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md).
+In your Progressive Web App (PWA), use the Window Controls Overlay (WCO) to have control over the title bar area that's currently displayed in standalone display mode.  Window Controls Overlay is a set of features that work together to provide just the essential controls needed for the app window.  This layout frees up more space for the web content layer.  See [Display content in the title bar area using Window Controls Overlay](../../progressive-web-apps/how-to/window-controls-overlay.md).
 
 To simulate the WCO feature for Windows, Linux, and macOS in your PWA without having to install the PWA first, use the **Window Controls Overlay** section of the **Application** tool in DevTools.
 
@@ -50,5 +50,5 @@ To simulate the WCO feature for Windows, Linux, and macOS in your PWA without ha
 <!-- ====================================================================== -->
 ## See also
 
-* [Display content in the title bar area using Window Controls Overlay](../../progressive-web-apps-chromium/how-to/window-controls-overlay.md) - the Window Controls Overlay feature for PWAs.
+* [Display content in the title bar area using Window Controls Overlay](../../progressive-web-apps/how-to/window-controls-overlay.md) - the Window Controls Overlay feature for PWAs.
 * [Tooling for PWA Window Controls Overlay](../whats-new/2024/01/devtools-121.md#tooling-for-pwa-window-controls-overlay) in _What's New in DevTools (Microsoft Edge 121)_.
