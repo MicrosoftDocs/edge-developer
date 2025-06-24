@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 05/19/2025
+ms.date: 06/24/2025
 ---
 # Enable App Actions on Windows for a PWA
 
@@ -280,9 +280,17 @@ The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like
 
 1. Launch your PWA by clicking the PWA icon.
 
-1. Test your PWA actions locally by following <Test App Actions for a PWA> to validate the functionality. However, since this is a new feature in the Edge browser and is currently in the developer trial stage, the feature is disabled by default. Therefore, before publishing your package, we recommend setting the initial availability to false in the Actions definition JSON file. Please refer to [Toggle availability of an App Action for Windows | Microsoft Learn](https://learn.microsoft.com/en-us/windows/ai/app-actions/actions-availability#set-initial-availability). Otherwise, your action will only work if the user manually enables the feature flag `#edge-app-actions-on-windows-for-web-apps` in the Edge browser by navigating to edge://flags. When the feature is officially rolled out later this year, Edge will automatically switch the actions from disabled to enabled, allowing end users to utilize your app's actions without requiring any further changes on your part. 
+1. Test your PWA actions locally by following [Test App Actions for a PWA](#test-app-actions-for-a-pwa), below, to validate the functionality.
 
-1. Once you finished the above steps, you can [publish your PWA to the Microsoft Store](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/microsoft-store).
+1. Open the the Actions definition JSON file.<!-- todo: file name & location? -->
+
+1. Set the initial availability of the app action<!-- todo: of which app action?  `#edge-app-actions-on-windows-for-web-apps`? --> to `false`, as described in [Set initial availability](/windows/ai/app-actions/actions-availability#set-initial-availability) in _Toggle availability of an App Action for Windows_.
+
+   The feature `#edge-app-actions-on-windows-for-web-apps`<!-- todo: which feature?  name of feature? --> is disabled by default, because this is a new feature in the Edge browser and is currently in Developer <!--todo: change to "Origin"?  link to OT?--> Trial stage.  Therefore, before publishing your package, we recommend the above step.
+
+   If you don't set the initial availability of the app action to `false`, your action will only work if the user manually goes to `edge://flags` in Microsoft Edge and then enables the feature flag `#edge-app-actions-on-windows-for-web-apps`.  When the feature is officially rolled out later this year, Edge will automatically switch the actions <!--todo: which actions?--> from `Disabled` to `Enabled`, allowing end users to utilize your app's actions without requiring any further changes on your part.
+
+1. Publish your PWA, per [Publish a PWA to the Microsoft Store](/microsoft-edge/progressive-web-apps-chromium/how-to/microsoft-store).
 
 
 <!-- ====================================================================== -->
