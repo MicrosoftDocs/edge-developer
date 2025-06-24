@@ -1,0 +1,97 @@
+{
+  "redirections": [
+// Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/enterprise/declare-permissions.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/declare-permissions",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/enterprise/match-patterns.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/match-patterns",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/enterprise/hosting-and-updating.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/hosting-and-updating",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/contact-us.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/contact-extensions-team",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/upload-video.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/publish-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/store-policies/csp.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/csp",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/getting-started/part1-simple-extension.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/getting-started/picture-viewer-popup-webpage",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/getting-started/part2-content-scripts.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/getting-started/picture-inserter-content-script",
+        "redirect_document_id": false
+      },
+// Extensions > Update
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/update.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/update-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/enterprise/auto-update.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/auto-update",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/update-extension.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/update/update-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/api/using-addons-api.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/update/api/using-addons-api",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/api/addons-api-reference.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/update/api/addons-api-reference",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/auto-update.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/update/auto-update",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/add-ons-store-curation.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/add-ons-curation",
+        "redirect_document_id": false
+      },
+      // Legal:
+      {
+        "source_path": "./microsoft-edge/extensions/microsoft-browser-extension-policy.md",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/microsoft-browser-extension-policy",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/store-policies/ada-addendum.md",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/ada-addendum",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/store-policies/developer-policies.md",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/extensions/developer-policies",
+        "redirect_document_id": false
+      }
+    ]
+}

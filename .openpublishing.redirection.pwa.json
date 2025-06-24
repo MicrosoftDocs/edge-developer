@@ -1,0 +1,50 @@
+{
+  "redirections": [
+// Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps/index.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/serviceworker.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/service-workers",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/get-started.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/experimental-features/index.md",
+        "redirect_url": "/microsoft-edge/origin-trials/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/origin-trials.md",
+        "redirect_url": "/microsoft-edge/origin-trials/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/offline.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/offline",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests.md",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/service-workers.md",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
+        "redirect_document_id": false
+      }
+    ]
+}

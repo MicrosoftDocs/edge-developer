@@ -1,0 +1,143 @@
+{
+  "redirections": [
+// Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
+      {
+        // legacy "Overview of DevTools" url redirects to DevTools landing
+        "source_path": "./microsoft-edge/devtools-guide-chromium/index.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/landing/index",
+        "redirect_document_id": false
+      },
+      {
+        // "Open DevTools" url redirects to "Overview of DevTools"
+        "source_path": "./microsoft-edge/devtools-guide-chromium/open/index.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/overview",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/overview",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/experimental-features/copilot-explain.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/console/copilot-explain-console",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/experimental-features/edge-command-palette.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/whats-new/2024/03/devtools-123#command-palette-experimental-feature-has-been-removed",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/beginners/css.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/css",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/beginners/html.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/dom",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/console/javascript.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/console/console-javascript",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/layers/layers-tool.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/3d-view/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/console/log.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/console/console-log",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/storage/applicationcache.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/customize/dark-theme.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/landing/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/customize/theme.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/landing/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/about-panel-drawer-tools.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/accessibility/reference",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/index.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/reference.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/reference",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/performance-reference.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/performance-reference",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/unminify.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/unminify",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/evaluate-performance/selector-stats.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/performance/selector-stats",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/device-mode/geolocation.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/sensors/#override-geolocation",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide-chromium/device-mode/orientation.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/sensors/#simulate-device-orientation",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-protocol-chromium/index.md",
+        "redirect_url": "/microsoft-edge/devtools/protocol/index",
+        "redirect_document_id": false
+      },
+      // Legal:
+      {
+        "source_path": "./microsoft-edge/devtools-guide/devtools-preview_software-license-terms.md",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/devtools-preview_software-license-terms",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/devtools-guide/devtools_software-license-terms.md",
+        "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
+        "redirect_document_id": false
+      }
+    ]
+}
