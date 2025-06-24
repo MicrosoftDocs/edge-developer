@@ -11,7 +11,7 @@ ms.date: 08/23/2022
 
 # Test Progressive Web App (PWA) protocol handling
 
-This article assumes that you have already defined protocol handlers in your PWA web app manifest and are debugging your app with the DevTools. To learn about how to define and register protocols in your PWA, see [Handle protocols in a PWA](../../progressive-web-apps-chromium/how-to/handle-protocols.md).  
+This article assumes that you have already defined protocol handlers in your PWA web app manifest and are debugging your app with the DevTools. To learn about how to define and register protocols in your PWA, see [Handle protocols in a PWA](../../progressive-web-apps/how-to/handle-protocols.md).  
 
 Use the **Application** tool to verify and test that Microsoft Edge has successfully registered your app as a handler for protocols defined in your web app manifest.
 
@@ -45,7 +45,7 @@ The **Protocol Handlers** section also makes it possible to test the protocol ha
 <!-- ====================================================================== -->
 ## Test protocols from the Application tool
 
-To test your protocol handlers from the **Application** tool, you must have already installed your PWA. To learn how to install your PWA, see [Installing a PWA](../../progressive-web-apps-chromium/ux.md#installing-a-pwa).
+To test your protocol handlers from the **Application** tool, you must have already installed your PWA. To learn how to install your PWA, see [Installing a PWA](../../progressive-web-apps/ux.md#installing-a-pwa).
 
 The **Application** tool detects all the protocol handlers from your web app manifest. To test a handler:
 
@@ -63,6 +63,6 @@ In the following screenshot, the `web+amp://files.freemusicarchive.org/storage-f
 ## See also
 
 *  [Debug a Progressive Web App (PWA)](./index.md)
-*  [Handle protocols in a PWA](../../progressive-web-apps-chromium/how-to/handle-protocols.md)
+*  [Handle protocols in a PWA](../../progressive-web-apps/how-to/handle-protocols.md)
 *  [Getting started with Protocol Handlers for your web app](https://blogs.windows.com/msedgedev/2022/01/20/getting-started-url-protocol-handlers-microsoft-edge/)
 *  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)
