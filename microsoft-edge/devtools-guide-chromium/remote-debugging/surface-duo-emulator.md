@@ -55,7 +55,7 @@ If the `edge://inspect` page doesn't recognize the [Surface Duo emulator](/dual-
 
 1. Switch back to the desktop instance of [Microsoft Edge](https://www.microsoft.com/edge).
 
-   The `edge://inspect` page now shows the **SurfaceDuoEmulator** with a list of the open tabs or [PWAs](../../progressive-web-apps-chromium/index.md) that are running on the [Surface Duo emulator](/dual-screen/android/use-emulator):
+   The `edge://inspect` page now shows the **SurfaceDuoEmulator** with a list of the open tabs or [PWAs](../../progressive-web-apps/index.md) that are running on the [Surface Duo emulator](/dual-screen/android/use-emulator):
 
    ![The edge://inspect page shows a list of the open tabs in the Microsoft Edge app running on the emulator](./surface-duo-emulator-images/remote-debugging-surface-duo-inspect-page-with-targets.png)
 
