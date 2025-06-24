@@ -117,7 +117,7 @@ See also:
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->
 
-The following new features in the **Network** tool, **Application** tool, and **Sources** tool help you build your [PWA](../../../../progressive-web-apps-chromium/index.md).  Use the following features when you have difficulty debugging your service worker.
+The following new features in the **Network** tool, **Application** tool, and **Sources** tool help you build your [PWA](../../../../progressive-web-apps/index.md).  Use the following features when you have difficulty debugging your service worker.
 
 The routing of a request displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.
 

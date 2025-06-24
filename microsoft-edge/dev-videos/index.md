@@ -433,7 +433,7 @@ June 2024 update: This new element is still experimental.  The `<selectmenu>` el
 
 See also:
 * [Open UI's `<selectlist>` demos](https://microsoftedge.github.io/Demos/selectlist/)
-* [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/) - blog post about styling `<select>` elements and the `<selectmenu>` element.
+* [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/)<!-- todo: 404 --> - blog post about styling `<select>` elements and the `<selectmenu>` element.
 
 
 <!-- ====================================================================== -->
@@ -768,7 +768,7 @@ Covers:
 * Get involved with PWAs on Windows.
 
 See also:
-* [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md)<!-- has Video section -->
+* [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps/index.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->

@@ -1254,24 +1254,10 @@
 // /Microsoft Edge extensions
 // ============================================================================
 // Progressive Web Apps
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps/index.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/serviceworker.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/service-workers",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests",
-        "redirect_document_id": false
-      },
+      // older entries:
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/get-started.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/index",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/index",
         "redirect_document_id": false
       },
       {
@@ -1286,7 +1272,13 @@
       },
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/offline.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/offline",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/offline",
+        "redirect_document_id": false
+      },
+      // two related entries:
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
         "redirect_document_id": false
       },
       {
@@ -1294,9 +1286,136 @@
         "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
         "redirect_document_id": false
       },
+      // two related entries:
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/serviceworker.md",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
+        "redirect_document_id": false
+      },
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/service-workers.md",
         "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
+        "redirect_document_id": false
+      },
+      // pwa toc 2025/06/19:
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/landing/index.yml",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/landing/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/index.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/whats-new/pwa.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/whats-new/pwa",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/index.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/ux.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/ux",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/window-controls-overlay.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/window-controls-overlay",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/share.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/share",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/shortcuts.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/shortcuts",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/widgets.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/widgets",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/sidebar.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/sidebar",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/app-actions.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/app-actions",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/microsoft-store.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/microsoft-store",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/digital-goods-api.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/digital-goods-api",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/background-syncs.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/background-syncs",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/notifications-badges.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/notifications-badges",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/push.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/push",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/handle-files.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/handle-files",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/handle-urls.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/handle-urls",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/handle-protocols.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/handle-protocols",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/icon-theme-color.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/icon-theme-color",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/offline.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/offline",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/best-practices.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/best-practices",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/debug.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/debug",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/demo-pwas.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/demo-pwas",
         "redirect_document_id": false
       },
 // /Progressive Web Apps
