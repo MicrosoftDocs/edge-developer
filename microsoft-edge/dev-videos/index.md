@@ -349,7 +349,7 @@ Covers:
 
 See also:
 * [What's New in DevTools 104](../devtools-guide-chromium/whats-new/2022/08/devtools-104.md)<!-- has Video section -->
-* [Debug the web in 3D with the 3D View tool](https://aka.ms/debug-in-3d) - blog post.
+* [Debug the web in 3D with the 3D View tool](https://aka.ms/debug-in-3d)<!-- todo: 404 --> - blog post.
 
 
 <!-- ====================================================================== -->
@@ -386,7 +386,7 @@ The **3D View** tool in Microsoft Edge DevTools provides a 3-dimensional represe
 
 See also:
 * [Navigate webpage layers, z-index, and DOM using the 3D View tool](../devtools-guide-chromium/3d-view/index.md)<!-- has Video section -->
-* [Debug the web in 3D with the 3D View tool](https://blogs.windows.com/msedgedev/2022/06/21/debug-the-web-in-3d-with-the-3d-view-tool/) - blog post.
+* [Debug the web in 3D with the 3D View tool](https://blogs.windows.com/msedgedev/2022/06/21/debug-the-web-in-3d-with-the-3d-view-tool/)<!-- todo: 404 --> - blog post.
 
 
 <!-- ====================================================================== -->
@@ -433,7 +433,7 @@ June 2024 update: This new element is still experimental.  The `<selectmenu>` el
 
 See also:
 * [Open UI's `<selectlist>` demos](https://microsoftedge.github.io/Demos/selectlist/)
-* [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/) - blog post about styling `<select>` elements and the `<selectmenu>` element.
+* [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/)<!-- todo: 404 --> - blog post about styling `<select>` elements and the `<selectmenu>` element.
 
 
 <!-- ====================================================================== -->
@@ -768,7 +768,7 @@ Covers:
 * Get involved with PWAs on Windows.
 
 See also:
-* [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps-chromium/index.md)<!-- has Video section -->
+* [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps/index.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->

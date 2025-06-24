@@ -131,7 +131,7 @@ The [Payment Handler API](https://web.dev/web-based-payment-apps-overview/)<!-- 
 <!-- ====================================================================== -->
 ## Periodic Background Sync
 
-The **Periodic Background Sync API** enables the **service worker** of a Progressive Web App to retrieve data from a server, periodically, even when the website isn't opened.  See [Use the Periodic Background Sync API to regularly get fresh content](../../progressive-web-apps-chromium/how-to/background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content) in _Synchronize and update a PWA in the background_.
+The **Periodic Background Sync API** enables the **service worker** of a Progressive Web App to retrieve data from a server, periodically, even when the website isn't opened.  See [Use the Periodic Background Sync API to regularly get fresh content](../../progressive-web-apps/how-to/background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content) in _Synchronize and update a PWA in the background_.
 
 To log Periodic Background Sync events for 3 days, even when DevTools isn't open:
 
