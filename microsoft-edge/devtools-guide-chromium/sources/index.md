@@ -144,6 +144,7 @@ To display the URL or path for a resource, hover over the resource.
 To load a file into a new tab of the browser, or to display other actions, right-click on the file name.
 
 
+<!-- ---------- -->
 ###### Icons in the Page tab
 
 The **Page** tab uses the following icons:
@@ -153,6 +154,7 @@ The **Page** tab uses the following icons:
 *  The **page** icon represents a resource: ![The page icon](./index-images/file-icon.png)
 
 
+<!-- ---------- -->
 ###### Group files by folder or as a flat list
 
 The **Page** tab displays files or resources grouped by server and directory, or as a flat list.
@@ -347,6 +349,7 @@ See also:
 * [Open a demo folder from the Workspace tab in the Sources tool](../../devtools-guide-chromium/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
 
 
+<!-- ---------- -->
 ###### Save and Undo
 
 For JavaScript changes to take effect, press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS).
@@ -358,6 +361,7 @@ If you change a file, an asterisk appears next to the file name.
 By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md).
 
 
+<!-- ---------- -->
 ###### Find and Replace
 
 To find text in the current file, select the **Editor** pane to give it focus, and then press **Ctrl+F** on Windows/Linux, or **Command+F** on macOS.

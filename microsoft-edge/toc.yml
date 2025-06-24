@@ -93,6 +93,10 @@
               href: ./devtools-guide-chromium/whats-new/whats-new.md
               displayName: release notes, announcements
 # latest 10 What's New
+            - name: Microsoft Edge 137
+              href: ./devtools-guide-chromium/whats-new/2025/06/devtools-137.md
+              displayName: What's New in DevTools (Microsoft Edge 137)  # page title
+
             - name: Microsoft Edge 136
               href: ./devtools-guide-chromium/whats-new/2025/05/devtools-136.md
               displayName: What's New in DevTools (Microsoft Edge 136)  # page title
@@ -129,15 +133,15 @@
               href: ./devtools-guide-chromium/whats-new/2024/08/devtools-128.md
               displayName: What's New in DevTools (Microsoft Edge 128)  # page title
 
-            - name: Microsoft Edge 127
-              href: ./devtools-guide-chromium/whats-new/2024/07/devtools-127.md
-              displayName: What's New in DevTools (Microsoft Edge 127)  # page title
-
             # keep 10 items above
             - name: Archive
               items:
                 - name: What's New in DevTools archive
                   href: ./devtools-guide-chromium/whats-new/whats-new-archive.md
+
+                - name: Microsoft Edge 127
+                  href: ./devtools-guide-chromium/whats-new/2024/07/devtools-127.md
+                  displayName: What's New in DevTools (Microsoft Edge 127)  # page title
 
                 - name: Microsoft Edge 126
                   href: ./devtools-guide-chromium/whats-new/2024/06/devtools-126.md
@@ -559,6 +563,10 @@
                 - name: Analyze CSS selector performance during Recalculate Style events
                   href: ./devtools-guide-chromium/performance/selector-stats.md
                   displayName: Performance tool, css selector stats, css selectors, selector stats, selector statistics, css selector statistics
+
+                - name: Customize performance profile with extensibility APIs
+                  href: ./devtools-guide-chromium/performance/extension.md
+                  displayName: Performance tool
 # Memory tool -----------------------------------------------------------------
             - name: Memory tool
               items:
@@ -780,14 +788,10 @@
 # Sensors tool ----------------------------------------------------------------
                 - name: Sensors tool
                   items:
-                    - name: Override geolocation with the Sensors tool
-                      href: ./devtools-guide-chromium/device-mode/geolocation.md
-                      displayName: Sensors tool, Device Emulation
-
-                    - name: Simulate device orientation with the Sensors tool
-                      href: ./devtools-guide-chromium/device-mode/orientation.md
-                      displayName: Sensors tool, Device Emulation
-# Source maps monitor tool ----------------------------------------------------
+                    - name: Emulate device sensors
+                      href: ./devtools-guide-chromium/sensors/index.md
+                      displayName: Device Emulation
+# Source Maps Monitor tool ----------------------------------------------------
                 - name: Source Maps Monitor tool
                   items:
                     - name: Source Maps Monitor tool
@@ -979,7 +983,7 @@
           displayName: IE mode
 # DevTools Protocol -----------------------------------------------------------
         - name: Microsoft Edge DevTools Protocol
-          href: devtools-protocol-chromium/index.md
+          href: ./devtools/protocol/index.md
           displayName: DevTools Protocol
 # Contact ---------------------------------------------------------------------
         - name: Contact the Microsoft Edge DevTools team
@@ -1759,16 +1763,16 @@
         - name: WebDriver
           items:
             - name: Use WebDriver to automate Microsoft Edge
-              href: ./webdriver-chromium/index.md
+              href: ./webdriver/index.md
 
             - name: Use Internet Explorer Driver to automate IE mode in Microsoft Edge
-              href: ./webdriver-chromium/ie-mode.md
+              href: ./webdriver/ie-mode.md
 
             - name: Capabilities and EdgeOptions
-              href: ./webdriver-chromium/capabilities-edge-options.md
+              href: ./webdriver/capabilities-edge-options.md
 
             - name: Contact the Microsoft Edge WebDriver team
-              href: ./webdriver-chromium/contact.md
+              href: ./webdriver/contact.md
 
         - name: webhint extension for Visual Studio Code
           href: ./test-and-automation/webhint.md
