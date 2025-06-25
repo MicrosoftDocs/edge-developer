@@ -1,6 +1,7 @@
 {
   "redirections": [
 // Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
+// Update "redirect_url" to current url; avoid chaining via old path; group entries that point to same "redirect_url".
 // Sections:
 
 // Release notes
@@ -162,103 +163,310 @@
 // /Microsoft Edge DevTools
 // ============================================================================
 // Microsoft Edge extensions
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/enterprise/declare-permissions.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/declare-permissions",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/enterprise/match-patterns.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/match-patterns",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/enterprise/hosting-and-updating.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/hosting-and-updating",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/contact-us.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/contact-extensions-team",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/upload-video.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/publish-extension",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/store-policies/csp.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/csp",
-        "redirect_document_id": false
-      },
+      // entries older than 2025/06/19:
       {
         "source_path": "./microsoft-edge/extensions-chromium/getting-started/part1-simple-extension.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/getting-started/picture-viewer-popup-webpage",
+        "redirect_url": "/microsoft-edge/extensions/getting-started/picture-viewer-popup-webpage",
         "redirect_document_id": false
       },
       {
         "source_path": "./microsoft-edge/extensions-chromium/getting-started/part2-content-scripts.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/getting-started/picture-inserter-content-script",
-        "redirect_document_id": false
-      },
-// Extensions > Update
-      {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/update.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/update-extension",
+        "redirect_url": "/microsoft-edge/extensions/getting-started/picture-inserter-content-script",
         "redirect_document_id": false
       },
       {
-        "source_path": "./microsoft-edge/extensions-chromium/enterprise/auto-update.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/auto-update",
+        "source_path": "./microsoft-edge/extensions-chromium/store-policies/csp.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/csp",
         "redirect_document_id": false
       },
       {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/update-extension.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/update/update-extension",
+        "source_path": "./microsoft-edge/extensions-chromium/enterprise/declare-permissions.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/declare-permissions",
         "redirect_document_id": false
       },
       {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/api/using-addons-api.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/update/api/using-addons-api",
+        "source_path": "./microsoft-edge/extensions-chromium/enterprise/match-patterns.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/match-patterns",
         "redirect_document_id": false
       },
       {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/api/addons-api-reference.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/update/api/addons-api-reference",
+        "source_path": "./microsoft-edge/extensions-chromium/enterprise/hosting-and-updating.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/hosting-and-updating",
         "redirect_document_id": false
       },
       {
-        "source_path": "./microsoft-edge/extensions-chromium/publish/auto-update.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/update/auto-update",
+        "source_path": "./microsoft-edge/extensions-chromium/publish/upload-video.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/publish-extension",
         "redirect_document_id": false
       },
       {
         "source_path": "./microsoft-edge/extensions-chromium/publish/add-ons-store-curation.md",
-        "redirect_url": "/microsoft-edge/extensions-chromium/publish/add-ons-curation",
+        "redirect_url": "/microsoft-edge/extensions/publish/add-ons-curation",
         "redirect_document_id": false
       },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/contact-us.md",
+        "redirect_url": "/microsoft-edge/extensions/contact",
+        "redirect_document_id": false
+      },
+      // two entries go to same:
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/update.md",
+        "redirect_url": "/microsoft-edge/extensions/update/update-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/update-extension.md",
+        "redirect_url": "/microsoft-edge/extensions/update/update-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/api/using-addons-api.md",
+        "redirect_url": "/microsoft-edge/extensions/update/api/using-addons-api",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/api/addons-api-reference.md",
+        "redirect_url": "/microsoft-edge/extensions/update/api/addons-api-reference",
+        "redirect_document_id": false
+      },
+      // two entries go to same:
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/enterprise/auto-update.md",
+        "redirect_url": "/microsoft-edge/extensions/update/auto-update",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/auto-update.md",
+        "redirect_url": "/microsoft-edge/extensions/update/auto-update",
+        "redirect_document_id": false
+      },
+      // /entries older than 2025/06/19
+      // extensions toc 2025/06/19:
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/landing/index.yml",
+        "redirect_url": "/microsoft-edge/extensions/landing/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/index.md",
+        "redirect_url": "/microsoft-edge/extensions/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/whats-new/released-features.md",
+        "redirect_url": "/microsoft-edge/extensions/whats-new/released-features",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/whats-new/roadmap.md",
+        "redirect_url": "/microsoft-edge/extensions/whats-new/roadmap",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/getting-started/index.md",
+        "redirect_url": "/microsoft-edge/extensions/getting-started/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/getting-started/picture-viewer-popup-webpage.md",
+        "redirect_url": "/microsoft-edge/extensions/getting-started/picture-viewer-popup-webpage",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/getting-started/picture-inserter-content-script.md",
+        "redirect_url": "/microsoft-edge/extensions/getting-started/picture-inserter-content-script",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/getting-started/extension-sideloading.md",
+        "redirect_url": "/microsoft-edge/extensions/getting-started/extension-sideloading",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/port-chrome-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/getting-started/manifest-format.md",
+        "redirect_url": "/microsoft-edge/extensions/getting-started/manifest-format",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/csp.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/csp",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/manifest-v3.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/manifest-v3",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/migrate-your-extension-from-manifest-v2-to-v3",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/api-support.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/api-support",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/declare-permissions.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/declare-permissions",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/devtools-extension.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/devtools-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/sidebar.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/sidebar",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/native-messaging.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/native-messaging",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/run-compiled-code.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/run-compiled-code",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/match-patterns.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/match-patterns",
+        "redirect_document_id": false
+      },
+      /* placeholders to match toc, n/a, external entries in toc:
+      {
+        "source_path": "/legal/microsoft-edge/extensions/ada-addendum",
+        "redirect_url": "/legal/microsoft-edge/extensions/ada-addendum",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "/legal/microsoft-edge/extensions/developer-policies",
+        "redirect_url": "/legal/microsoft-edge/extensions/developer-policies",
+        "redirect_document_id": false
+      },*/
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/create-dev-account.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/create-dev-account",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/verify-microsoft-edge-program.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/verify-microsoft-edge-program",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/aad-account.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/aad-account",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/github.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/github",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/manage-settings.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/manage-settings",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/publish-extension.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/publish-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/hosting-and-updating.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/hosting-and-updating",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/submission-states.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/submission-states",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/alternate-distribution-options",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/add-ons-curation.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/add-ons-curation",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/update/update-extension.md",
+        "redirect_url": "/microsoft-edge/extensions/update/update-extension",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/update/api/using-addons-api.md",
+        "redirect_url": "/microsoft-edge/extensions/update/api/using-addons-api",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/update/api/addons-api-reference.md",
+        "redirect_url": "/microsoft-edge/extensions/update/api/addons-api-reference",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/update/auto-update.md",
+        "redirect_url": "/microsoft-edge/extensions/update/auto-update",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/update/transfer-ownership.md",
+        "redirect_url": "/microsoft-edge/extensions/update/transfer-ownership",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/extensions-analytics.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/extensions-analytics",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/reply-user-reviews.md",
+        "redirect_url": "/microsoft-edge/extensions/publish/reply-user-reviews",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/best-practices.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/best-practices",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/developer-guide/minimize-page-load-time-impact.md",
+        "redirect_url": "/microsoft-edge/extensions/developer-guide/minimize-page-load-time-impact",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/samples.md",
+        "redirect_url": "/microsoft-edge/extensions/samples",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/extensions-chromium/publish/contact-extensions-team.md",
+        "redirect_url": "/microsoft-edge/extensions/contact",
+        "redirect_document_id": false
+      },
+      // /extensions toc 2025/06/19
 // /Microsoft Edge extensions
 // ============================================================================
 // Progressive Web Apps
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps/index.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/index",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/serviceworker.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/service-workers",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "./microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests",
-        "redirect_document_id": false
-      },
+      // older entries:
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/get-started.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/index",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/index",
         "redirect_document_id": false
       },
       {
@@ -273,7 +481,13 @@
       },
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/offline.md",
-        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/offline",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/offline",
+        "redirect_document_id": false
+      },
+      // two related entries:
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
         "redirect_document_id": false
       },
       {
@@ -281,9 +495,136 @@
         "redirect_url": "https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest",
         "redirect_document_id": false
       },
+      // two related entries:
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/serviceworker.md",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
+        "redirect_document_id": false
+      },
       {
         "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/service-workers.md",
         "redirect_url": "https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers",
+        "redirect_document_id": false
+      },
+      // pwa toc 2025/06/19:
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/landing/index.yml",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/landing/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/index.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/whats-new/pwa.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/whats-new/pwa",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/index.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/ux.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/ux",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/window-controls-overlay.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/window-controls-overlay",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/share.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/share",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/shortcuts.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/shortcuts",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/widgets.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/widgets",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/sidebar.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/sidebar",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/app-actions.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/app-actions",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/microsoft-store.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/microsoft-store",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/digital-goods-api.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/digital-goods-api",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/background-syncs.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/background-syncs",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/notifications-badges.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/notifications-badges",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/push.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/push",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/handle-files.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/handle-files",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/handle-urls.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/handle-urls",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/handle-protocols.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/handle-protocols",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/icon-theme-color.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/icon-theme-color",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/offline.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/offline",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/best-practices.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/best-practices",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/how-to/debug.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/how-to/debug",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "./microsoft-edge/progressive-web-apps-chromium/demo-pwas.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps/demo-pwas",
         "redirect_document_id": false
       },
 // /Progressive Web Apps
@@ -3226,11 +3567,12 @@
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
       },
+      /* reusing this old source_path as a new redirect_url, above
       {
         "source_path": "./microsoft-edge/extensions/index.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",
         "redirect_document_id": false
-      },
+      },*/
       {
         "source_path": "./microsoft-edge/extensions/api-support.md",
         "redirect_url": "/archive/microsoft-edge/legacy/developer",

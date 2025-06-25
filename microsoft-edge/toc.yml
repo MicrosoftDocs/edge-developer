@@ -1073,41 +1073,41 @@
     - name: Microsoft Edge extensions
       items:
         - name: Microsoft Edge extensions documentation
-          href: ./extensions-chromium/landing/index.yml  # landing page
+          href: ./extensions/landing/index.yml  # landing page
           displayName: add-ons, landing
 
         - name: Overview of Microsoft Edge extensions
-          href: ./extensions-chromium/index.md
+          href: ./extensions/index.md
 
 # -------------------------------------
         - name: What's new
           items:
             - name: Released features for Microsoft Edge extensions
-              href: ./extensions-chromium/whats-new/released-features.md
+              href: ./extensions/whats-new/released-features.md
 
             - name: Roadmap for Microsoft Edge extensions
-              href: ./extensions-chromium/whats-new/roadmap.md
+              href: ./extensions/whats-new/roadmap.md
 
 # -------------------------------------
         - name: Get started
           items:
             - name: Extension concepts and architecture
-              href: ./extensions-chromium/getting-started/index.md
+              href: ./extensions/getting-started/index.md
 
             - name: "Sample: Picture viewer pop-up webpage"
-              href: ./extensions-chromium/getting-started/picture-viewer-popup-webpage.md
+              href: ./extensions/getting-started/picture-viewer-popup-webpage.md
 
             - name: "Sample: Picture inserter using content script"
-              href: ./extensions-chromium/getting-started/picture-inserter-content-script.md
+              href: ./extensions/getting-started/picture-inserter-content-script.md
 
             - name: Sideload an extension to install and test it locally
-              href: ./extensions-chromium/getting-started/extension-sideloading.md
+              href: ./extensions/getting-started/extension-sideloading.md
 
 # -------------------------------------
         - name: Port an extension to Microsoft Edge
           items:
             - name: Port a Chrome extension to Microsoft Edge
-              href: ./extensions-chromium/developer-guide/port-chrome-extension.md
+              href: ./extensions/developer-guide/port-chrome-extension.md
 
 # -------------------------------------
         - name: Develop an extension
@@ -1115,41 +1115,41 @@
             - name: Manifest files
               items:
                 - name: Manifest file format for extensions
-                  href: ./extensions-chromium/getting-started/manifest-format.md
+                  href: ./extensions/getting-started/manifest-format.md
 
                 - name: Using Content Security Policy (CSP) to control which resources can be run
-                  href: ./extensions-chromium/developer-guide/csp.md
+                  href: ./extensions/developer-guide/csp.md
                   displayName: policies
 
                 - name: Overview and timelines for migrating to Manifest V3
-                  href: ./extensions-chromium/developer-guide/manifest-v3.md
+                  href: ./extensions/developer-guide/manifest-v3.md
 
                 - name: Migrate an extension from Manifest V2 to V3
-                  href: ./extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+                  href: ./extensions/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
 
             - name: JavaScript APIs
               items:
                 - name: Supported APIs for Microsoft Edge extensions
-                  href: ./extensions-chromium/developer-guide/api-support.md
+                  href: ./extensions/developer-guide/api-support.md
 
                 - name: Declare API permissions in the manifest
-                  href: ./extensions-chromium/developer-guide/declare-permissions.md
+                  href: ./extensions/developer-guide/declare-permissions.md
 
             - name: Create a DevTools extension, adding a custom tool tab and panel
-              href: ./extensions-chromium/developer-guide/devtools-extension.md
+              href: ./extensions/developer-guide/devtools-extension.md
 
             - name: Develop an extension for the Microsoft Edge sidebar
-              href: ./extensions-chromium/developer-guide/sidebar.md
+              href: ./extensions/developer-guide/sidebar.md
               displayName: sidebar extensions, sidepanel, side panel
 
             - name: Native messaging
-              href: ./extensions-chromium/developer-guide/native-messaging.md
+              href: ./extensions/developer-guide/native-messaging.md
 
             - name: Run compiled code in an extension
-              href: extensions-chromium/developer-guide/run-compiled-code.md
+              href: ./extensions/developer-guide/run-compiled-code.md
 
             - name: Defining match patterns for an extension to access file URLs
-              href: ./extensions-chromium/developer-guide/match-patterns.md
+              href: ./extensions/developer-guide/match-patterns.md
 
             - name: Policies for extensions
               items:
@@ -1165,87 +1165,87 @@
         - name: Register as an extension developer
           items:
             - name: Register as a Microsoft Edge extension developer
-              href: ./extensions-chromium/publish/create-dev-account.md
+              href: ./extensions/publish/create-dev-account.md
 
             - name: Register as an enterprise developer
               items:
                 - name: Verify your company account information
-                  href: ./extensions-chromium/publish/verify-microsoft-edge-program.md
+                  href: ./extensions/publish/verify-microsoft-edge-program.md
 
                 - name: Add users to the Microsoft Edge program
-                  href: ./extensions-chromium/publish/aad-account.md
+                  href: ./extensions/publish/aad-account.md
 
             - name: Register and sign in to Partner Center using a GitHub account
-              href: ./extensions-chromium/publish/github.md
+              href: ./extensions/publish/github.md
 
             - name: Manage account settings
-              href: ./extensions-chromium/publish/manage-settings.md
+              href: ./extensions/publish/manage-settings.md
 
 # -------------------------------------
         - name: Publish an extension
           items:
             - name: Publish a Microsoft Edge extension
-              href: ./extensions-chromium/publish/publish-extension.md
+              href: ./extensions/publish/publish-extension.md
 
             - name: Extension hosting
-              href: ./extensions-chromium/publish/hosting-and-updating.md
+              href: ./extensions/publish/hosting-and-updating.md
 
             - name: Submission states for extensions at Microsoft Edge Add-ons
-              href: ./extensions-chromium/publish/submission-states.md
+              href: ./extensions/publish/submission-states.md
 
             - name: Alternative ways to distribute an extension
-              href: ./extensions-chromium/developer-guide/alternate-distribution-options.md
+              href: ./extensions/developer-guide/alternate-distribution-options.md
 
             - name: Curation and review process for extensions at Microsoft Edge Add-ons
-              href: ./extensions-chromium/publish/add-ons-curation.md
+              href: ./extensions/publish/add-ons-curation.md
 
 # -------------------------------------
         - name: Update an extension
           items:
             - name: Update a Microsoft Edge extension
-              href: ./extensions-chromium/update/update-extension.md
+              href: ./extensions/update/update-extension.md
 
             - name: REST API for updating an extension
               items:
                 - name: Use the REST API to update an extension at Microsoft Edge Add-ons
-                  href: ./extensions-chromium/update/api/using-addons-api.md
+                  href: ./extensions/update/api/using-addons-api.md
 
                 - name: REST API Reference for updating an extension at Microsoft Edge Add-ons
-                  href: ./extensions-chromium/update/api/addons-api-reference.md
+                  href: ./extensions/update/api/addons-api-reference.md
 
             - name: Set an externally installed extension to automatically update
-              href: ./extensions-chromium/update/auto-update.md
+              href: ./extensions/update/auto-update.md
 
             - name: Transfer ownership of an extension
-              href: ./extensions-chromium/update/transfer-ownership.md
+              href: ./extensions/update/transfer-ownership.md
 
 # -------------------------------------
         - name: Analytics and user reviews
           items:
             - name: View Microsoft Edge extensions analytics dashboard
-              href: ./extensions-chromium/publish/extensions-analytics.md
+              href: ./extensions/publish/extensions-analytics.md
 
             - name: Reply to user reviews of an extension
-              href: ./extensions-chromium/publish/reply-user-reviews.md
+              href: ./extensions/publish/reply-user-reviews.md
               displayName: Respond to user reviews
 
 # -------------------------------------
         - name: Best practices
           items:
             - name: Best practices for extensions
-              href: ./extensions-chromium/developer-guide/best-practices.md
+              href: ./extensions/developer-guide/best-practices.md
             - name: Minimize an extension's impact on page load time
-              href: ./extensions-chromium/developer-guide/minimize-page-load-time-impact.md
+              href: ./extensions/developer-guide/minimize-page-load-time-impact.md
 
 # -------------------------------------
         - name: Samples
           items:
             - name: Samples for Microsoft Edge extensions
-              href: ./extensions-chromium/samples.md
+              href: ./extensions/samples.md
 
 # -------------------------------------
         - name: Contact the Microsoft Edge extensions team
-          href: ./extensions-chromium/publish/contact-extensions-team.md
+          href: ./extensions/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues
 # /Microsoft Edge extensions
 # =============================================================================
@@ -1253,89 +1253,89 @@
     - name: Progressive Web Apps
       items:
         - name: Progressive Web Apps (PWAs) documentation
-          href: ./progressive-web-apps-chromium/landing/index.yml
+          href: ./progressive-web-apps/landing/index.yml
           displayName: landing
 
         - name: Overview and getting started
           items:
             - name: Overview of Progressive Web Apps (PWAs)
-              href: ./progressive-web-apps-chromium/index.md
+              href: ./progressive-web-apps/index.md
 
             - name: What's New in PWAs
-              href: ./progressive-web-apps-chromium/whats-new/pwa.md
+              href: ./progressive-web-apps/whats-new/pwa.md
               displayName: release notes, announcements
 
             - name: Get started with PWAs
-              href: ./progressive-web-apps-chromium/how-to/index.md
+              href: ./progressive-web-apps/how-to/index.md
 
             - name: Use PWAs in Microsoft Edge
-              href: ./progressive-web-apps-chromium/ux.md
+              href: ./progressive-web-apps/ux.md
 
         - name: Integrate a PWA into Windows
           items:
             - name: Display content in the title bar area using Window Controls Overlay  # todo: add "Share dialog" to title
-              href: ./progressive-web-apps-chromium/how-to/window-controls-overlay.md
+              href: ./progressive-web-apps/how-to/window-controls-overlay.md
 
             - name: Share content with other apps  # todo: add "jump lists" to title
-              href: ./progressive-web-apps-chromium/how-to/share.md
+              href: ./progressive-web-apps/how-to/share.md
 
             - name: Define app shortcuts (long-press or right-click menus)
-              href: ./progressive-web-apps-chromium/how-to/shortcuts.md
+              href: ./progressive-web-apps/how-to/shortcuts.md
 
             - name: Display a PWA widget in the Windows Widgets Board
-              href: ./progressive-web-apps-chromium/how-to/widgets.md
+              href: ./progressive-web-apps/how-to/widgets.md
 
             - name: Build a PWA for the sidebar in Microsoft Edge
-              href: ./progressive-web-apps-chromium/how-to/sidebar.md
+              href: ./progressive-web-apps/how-to/sidebar.md
 
             - name: Enable App Actions on Windows for a PWA
-              href: ./progressive-web-apps-chromium/how-to/app-actions.md
+              href: ./progressive-web-apps/how-to/app-actions.md
 
         - name: Distribute a PWA with the Microsoft Store
           items:
             - name: Publish a PWA to the Microsoft Store
-              href: ./progressive-web-apps-chromium/how-to/microsoft-store.md
+              href: ./progressive-web-apps/how-to/microsoft-store.md
 
             - name: Provide in-app purchases with the Digital Goods API
-              href: ./progressive-web-apps-chromium/how-to/digital-goods-api.md
+              href: ./progressive-web-apps/how-to/digital-goods-api.md
 
         - name: Update a PWA, show badges, notifications, push messages
           items:
             - name: Synchronize and update a PWA in the background
-              href: ./progressive-web-apps-chromium/how-to/background-syncs.md
+              href: ./progressive-web-apps/how-to/background-syncs.md
 
             - name: Re-engage users with badges and notifications
-              href: ./progressive-web-apps-chromium/how-to/notifications-badges.md
+              href: ./progressive-web-apps/how-to/notifications-badges.md
 
             - name: Re-engage users with push messages
-              href: ./progressive-web-apps-chromium/how-to/push.md
+              href: ./progressive-web-apps/how-to/push.md
 
         - name: Handle files, links, and protocols
           items:
             - name: Handle files in a PWA
-              href: ./progressive-web-apps-chromium/how-to/handle-files.md
+              href: ./progressive-web-apps/how-to/handle-files.md
 
             - name: Handle links to a PWA
-              href: ./progressive-web-apps-chromium/how-to/handle-urls.md
+              href: ./progressive-web-apps/how-to/handle-urls.md
               displayName: handle urls
 
             - name: Handle protocols in a PWA
-              href: ./progressive-web-apps-chromium/how-to/handle-protocols.md
+              href: ./progressive-web-apps/how-to/handle-protocols.md
 
         - name: Define icons and a theme color
-          href: ./progressive-web-apps-chromium/how-to/icon-theme-color.md
+          href: ./progressive-web-apps/how-to/icon-theme-color.md
 
         - name: Store data on the device
-          href: ./progressive-web-apps-chromium/how-to/offline.md
+          href: ./progressive-web-apps/how-to/offline.md
 
         - name: Best practices for PWAs
-          href: ./progressive-web-apps-chromium/how-to/best-practices.md
+          href: ./progressive-web-apps/how-to/best-practices.md
 
         - name: Debug a PWA
-          href: ./progressive-web-apps-chromium/how-to/debug.md
+          href: ./progressive-web-apps/how-to/debug.md
 
         - name: Progressive Web App demos
-          href: ./progressive-web-apps-chromium/demo-pwas.md
+          href: ./progressive-web-apps/demo-pwas.md
 # /Progressive Web Apps
 # =============================================================================
 # WebView2
