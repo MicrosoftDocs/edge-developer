@@ -32,7 +32,7 @@ The two different ways in which you can leverage the sidebar are designed to mee
 | Context | The app runs in its own web context, separate from the main tab. | The extension can access the current webpage and modify the webpage via the extension's content script. |
 | Installation | The user installs the app by interacting with the sidebar when visiting the app's website. | The extension is installed by users from Microsoft Edge Add-ons. |
 | User experience | The app has its own icon in the sidebar. Clicking the icon opens the sidebar if it was closed and displays the app's contents. | The user experience depends on the extension. The extension can open the sidebar depending on the websites the user visits in the browser. |
-| Technologies used | Web development and PWA. See [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps/index.md). | Extension development.  See [Overview of Microsoft Edge extensions](../extensions-chromium/index.md). |
+| Technologies used | Web development and PWA.  See [Overview of Progressive Web Apps (PWAs)](../progressive-web-apps/index.md). | Extension development.  See [Overview of Microsoft Edge extensions](../extensions/index.md). |
 
 
 <!-- ====================================================================== -->
@@ -54,6 +54,6 @@ If your app's experience relies on powerful extensions APIs, for example to read
 
 The Microsoft Edge team continues to evolve these sidebar extensibility models and welcomes your feedback.  To leave feedback, [create a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new/) on the repo, or [search for existing issues](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues) and join existing conversations.
 
-To learn more about Microsoft Edge extensions and how to create them, see [Overview of Microsoft Edge extensions](../extensions-chromium/index.md).
+To learn more about Microsoft Edge extensions and how to create them, see [Overview of Microsoft Edge extensions](../extensions/index.md).
 
-To learn more about using the sidebar API in your extension, see [Develop an extension for the Microsoft Edge sidebar](../extensions-chromium/developer-guide/sidebar.md).
+To learn more about using the sidebar API in your extension, see [Develop an extension for the Microsoft Edge sidebar](../extensions/developer-guide/sidebar.md).
