@@ -9,6 +9,7 @@ ms.subservice: devtools
 ms.date: 07/01/2025
 ---
 # What's New in DevTools (Microsoft Edge 138)
+<!-- todo: desc todo on line 3 above -->
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.  Microsoft Edge 138 includes the following updates from the Chromium project:
 
@@ -26,7 +27,6 @@ These are the latest features in the Stable release of Microsoft Edge DevTools. 
    * [has-request-header filter](https://developer.chrome.com/blog/new-in-devtools-138#has-request-header)
    * [Direct Sockets in Isolated Web Apps](https://developer.chrome.com/blog/new-in-devtools-138#direct-sockets)
 * [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-138#misc)
-
 <!-- todo: maybe delete some links -->
 
 
