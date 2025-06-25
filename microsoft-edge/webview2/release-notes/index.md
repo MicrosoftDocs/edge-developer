@@ -41,20 +41,29 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ------------------------------ -->
 #### Promotions
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
 The following APIs have been promoted to Stable and are now included in this Release SDK.
 
 
 <!-- ---------- -->
-###### heading
+###### Allow input event messages to pass through the browser window
 
-description
+The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* `CoreWebView2ControllerOptions` Class:
+  * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3351.48&preserve-view=true)
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+* `CoreWebView2ControllerOptions` Class:
+  * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3351.48&preserve-view=true#allowhostinputprocessing)
+
 ##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true)
+  * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#get_allowhostinputprocessing)
+  * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#put_allowhostinputprocessing)
 
 ---
 
@@ -72,7 +81,7 @@ description
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Fixed a blackbox issue on dialogs in visual hosting.
 
 
 <!-- ---------- -->
@@ -87,7 +96,7 @@ description
 <!-- ====================================================================== -->
 ## 1.0.####-prerelease
 
-Release Date: Monthname nn, 2025
+Release Date: June 30, 2025
 
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
 
@@ -122,25 +131,17 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 
 <!-- ---------- -->
+###### heading
 
-###### Allow input event messages to pass through the browser window
-
-The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
-
+description
 
 ##### [.NET/C#](#tab/dotnetcsharp)
-* [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3351.48&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
-* [CoreWebView2ControllerOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3351.48&preserve-view=true)
-* [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3351.48&preserve-view=true#allowhostinputprocessing)
 
 ##### [Win32/C++](#tab/win32cpp)
-* [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true)
-  * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#get_allowhostinputprocessing)
-  * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#put_allowhostinputprocessing)
 
-
+---
 
 
 <!-- ------------------------------ -->
@@ -156,7 +157,8 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed blackbox issue on dialogs in visual hosting 
+* Fixed behavior.  ([Issue #]())
+
 
 <!-- ---------- -->
 ###### SDK-only
