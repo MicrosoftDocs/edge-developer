@@ -70,7 +70,7 @@ A Microsoft Edge extension is structured similarly to a regular web app, and usu
 *  A JavaScript file that defines the behavior of the browser extension.
 *  HTML and CSS files that define the user interface.
 
-See [Overview of Microsoft Edge extensions](./extensions-chromium/index.md).
+See [Overview of Microsoft Edge extensions](./extensions/index.md).
 
 
 <!-- ====================================================================== -->
@@ -82,7 +82,7 @@ Progressive Web Apps combine the best of the web and compiled apps, to provide u
 
 Progressive Web Apps have a much lower cross-platform development cost than compiled apps that require a specific codebase for each platform, such as a separate codebase for Android, for iOS, and for each desktop operating system.
 
-See [Overview of Progressive Web Apps (PWAs)](./progressive-web-apps-chromium/index.md).
+See [Overview of Progressive Web Apps (PWAs)](./progressive-web-apps/index.md).
 
 
 <!-- ====================================================================== -->
@@ -208,7 +208,7 @@ The full-text search page initially searches all _Microsoft Edge_ documentation.
 To provide feedback or enter issues:
 
 * [Contact the Microsoft Edge DevTools team](./devtools-guide-chromium/contact.md)
-* [Contact the Microsoft Edge extensions team](./extensions-chromium/publish/contact-extensions-team.md)
+* [Contact the Microsoft Edge extensions team](./extensions/contact.md)
 * [Contact the WebView2 team](./webview2/contact.md)
 
 To submit and view feedback for a specific page of the documentation, at the bottom of the page, click the **This page** button.
