@@ -1891,7 +1891,7 @@ See also:
 Your app can embed a WebView2 control that uses a Microsoft Edge extension.  A Microsoft Edge extension is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.
 
 See also:
-* [Overview of Microsoft Edge extensions](../../extensions-chromium/index.md)
+* [Overview of Microsoft Edge extensions](../../extensions/index.md)
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
