@@ -87,7 +87,7 @@
       },
       {
         "source_path": "./microsoft-edge/devtools-guide-chromium/storage/applicationcache.md",
-        "redirect_url": "/microsoft-edge/devtools/index",
+        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Window/applicationCache",
         "redirect_document_id": false
       },
       {
@@ -102,7 +102,7 @@
       },
       {
         "source_path": "./microsoft-edge/devtools-guide-chromium/about-panel-drawer-tools.md",
-        "redirect_url": "/microsoft-edge/devtools/index",
+        "redirect_url": "/microsoft-edge/devtools/about-tools",
         "redirect_document_id": false
       },
       {
