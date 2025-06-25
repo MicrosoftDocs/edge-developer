@@ -63,7 +63,7 @@ The Microsoft Edge team will independently decide on MV3 migration timelines for
 Manifest V2 extensions will continue to be supported through Enterprise policies at least until the date in the Chromium Manifest V2 support timeline.
 
 Microsoft continues to iteratively improve the platform and address the feedback shared by extension developers.  Share your questions, comments, and concerns:
-* [Contact the Microsoft Edge extensions team](../publish/contact-extensions-team.md)
+* [Contact the Microsoft Edge extensions team](../contact.md)
 * [Microsoft Edge Insider](https://techcommunity.microsoft.com/t5/microsoft-edge-insider/ct-p/MicrosoftEdgeInsider) - forum about Microsoft Edge at Microsoft Tech Community.
 * [@MSEdgeDev](https://twitter.com/msedgedev/) - Microsoft Edge team on X (Twitter).
 

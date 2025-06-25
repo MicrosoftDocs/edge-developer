@@ -110,7 +110,7 @@ For more information about adding users, see [Users, groups, and applications in
 <!-- ====================================================================== -->
 ## Contact us
 
-If you need help or assistance with associating your Microsoft Entra ID account or other related queries, [Contact the Microsoft Edge extensions team](contact-extensions-team.md).
+If you need help or assistance with associating your Microsoft Entra ID account or other related queries, [Contact the Microsoft Edge extensions team](../contact.md).
 
 
 <!-- ====================================================================== -->
