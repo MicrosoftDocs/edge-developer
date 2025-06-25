@@ -18,7 +18,7 @@ You can go to [Legal info](https://partner.microsoft.com/dashboard/account/v3/or
 
 When account verification is complete, you can use your Partner Center dashboard to publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
-Verification usually takes three to five business days.  If more than five days have passed, you can [Contact the Microsoft Edge extensions team](./contact-extensions-team.md) for help.
+Verification usually takes three to five business days.  If more than five days have passed, you can [Contact the Microsoft Edge extensions team](../contact.md) for help.
 
 
 <!-- ====================================================================== -->

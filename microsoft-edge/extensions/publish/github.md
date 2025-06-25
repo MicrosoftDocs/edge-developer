@@ -54,7 +54,7 @@ After you're registered for the Microsoft Edge program, you can port your Chrome
 <!-- ====================================================================== -->
 ## Contact us
 
-Let us know if this article was helpful or if you have any feedback.  For help with signing into Partner Center using GitHub or other related questions, see [Contact the Microsoft Edge extensions team](contact-extensions-team.md).
+Let us know if this article was helpful or if you have any feedback.  For help with signing into Partner Center using GitHub or other related questions, see [Contact the Microsoft Edge extensions team](../contact.md).
 
 
 <!-- ====================================================================== -->
