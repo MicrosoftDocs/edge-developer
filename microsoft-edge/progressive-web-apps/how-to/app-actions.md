@@ -262,9 +262,7 @@ The above code is not in [Demos/wami/manifest.json](https://github.com/Microsoft
 
 At the current stage, your PWA needs to be packaged as a Microsoft Store PWA, to be called by the Windows App Actions framework.  You must use Microsoft Edge 137 or greater.
 
-The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like to try it out before May 29, 2025, you can package your PWA in Edge Canary; see [Package a store PWA in Edge Canary](#package-a-store-pwa-in-edge-canary), below.
-
-1. Upgrade to Edge Stable 137 version.  (Edge 137 stable will be available after May 29, 2025.)
+1. Upgrade to Edge Stable 137 version.
 
 1. Package your PWA for [PWABuilder.com](https://www.pwabuilder.com); see [Package your PWA for the Store](./microsoft-store.md#package-your-pwa-for-the-store) in _Publish a PWA to the Microsoft Store_.
 
@@ -282,13 +280,13 @@ The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like
 
 1. Test your PWA actions locally by following [Test App Actions for a PWA](#test-app-actions-for-a-pwa), below, to validate the functionality.
 
-1. Open the the Actions definition JSON file.<!-- todo: file name & location? -->
+1. Open the Actions definition JSON file you used when packaging in PWAbuilder.com.
 
-1. Set the initial availability of the app action<!-- todo: of which app action?  `#edge-app-actions-on-windows-for-web-apps`? --> to `false`, as described in [Set initial availability](/windows/ai/app-actions/actions-availability#set-initial-availability) in _Toggle availability of an App Action for Windows_.
+1. Set the initial availability of each of the app actions to `false`, as described in [Set initial availability](/windows/ai/app-actions/actions-availability#set-initial-availability) in _Toggle availability of an App Action for Windows_.
 
-   The feature `#edge-app-actions-on-windows-for-web-apps`<!-- todo: which feature?  name of feature? --> is disabled by default, because this is a new feature in the Edge browser and is currently in Developer <!--todo: change to "Origin"?  link to OT?--> Trial stage.  Therefore, before publishing your package, we recommend the above step.  If you don't set the initial availability of the app action to `false`, your action will only work if the user manually goes to `edge://flags` in Microsoft Edge and then enables the feature flag `#edge-app-actions-on-windows-for-web-apps`.
+   Please note that Edge's support of App Actions on Windows in PWAs is controlled by the feature flag `#edge-app-actions-on-windows-for-web-apps` and is disabled by default, because this is a new feature in the Edge browser and is currently in Developer <!--This is not Origin Trial, just developer trial.--> Trial stage. Therefore, before publishing your package, we recommend the above step. If you don't set the initial availability of the app action to `false`, your action will only work if the user manually goes to `edge://flags` in Microsoft Edge and then enables the feature flag `#edge-app-actions-on-windows-for-web-apps`.
 
-   When the feature<!--todo: which feature?--> is officially rolled out (later in 2025), Microsoft Edge will automatically switch the actions <!--todo: which actions?--> from `Disabled` to `Enabled`, allowing end users to utilize your app's actions without requiring any further changes on your part.
+   When the feature flag `#edge-app-actions-on-windows-for-web-apps` is officially rolled out (later in 2025), Microsoft Edge will automatically switch the actions you defined in the Actions definition JSON file from `Disabled` to `Enabled`, allowing end users to utilize your app's actions without requiring any further changes on your part.
 
 1. Publish your PWA, as described in [Publish a PWA to the Microsoft Store](/microsoft-edge/progressive-web-apps-chromium/how-to/microsoft-store).
 
@@ -296,11 +294,9 @@ The Stable release of Edge 137 will be available on May 29, 2025.  If you'd like
 <!-- ====================================================================== -->
 ## Package a store PWA in Edge Canary
 
-The Stable release of Edge 137 will be available on May 29, 2025; see [Package a store PWA in Edge Stable](#package-a-store-pwa-in-edge-stable), above.
-
 Edge Canary gives a preview of the functionalities that's not available in stable yet.
 
-If you want to try out App Actions for PWAs before May 29, 2025, you can package your PWA in Edge Canary, as follows:
+If you want to try out the latest capabilities of App Actions in Edge Canary, you can package your PWA in Edge Canary, as follows:
 
 1. Install [Edge Canary](https://www.microsoft.com/edge/download/insider) and upgrade to the latest version.
 
