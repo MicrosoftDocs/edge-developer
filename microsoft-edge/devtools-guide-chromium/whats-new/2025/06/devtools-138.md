@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 138)
-description: todo. And more.  # key words before col 158
+description: Server response and redirection times in 'Document request latency' insight. Redirects in Summary of network requests. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -9,12 +9,10 @@ ms.subservice: devtools
 ms.date: 07/01/2025
 ---
 # What's New in DevTools (Microsoft Edge 138)
-<!-- todo: desc todo on line 3 above -->
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.  Microsoft Edge 138 includes the following updates from the Chromium project:
 
 * [Performance panel improvements](https://developer.chrome.com/blog/new-in-devtools-138#perf)
-   * [Preconnected origins in 'Network dependency tree' insight](https://developer.chrome.com/blog/new-in-devtools-138#preconnect)
    * [Server response and redirection times in 'Document request latency' insight](https://developer.chrome.com/blog/new-in-devtools-138#doc-req-latency-times)
    * [Redirects in Summary of network requests](https://developer.chrome.com/blog/new-in-devtools-138#redirects)
    * [Reduced noise in the performance trace](https://developer.chrome.com/blog/new-in-devtools-138#perf-compile-disabled)
@@ -26,8 +24,6 @@ These are the latest features in the Stable release of Microsoft Edge DevTools. 
 * [Network panel improvements](https://developer.chrome.com/blog/new-in-devtools-138#network)
    * [has-request-header filter](https://developer.chrome.com/blog/new-in-devtools-138#has-request-header)
    * [Direct Sockets in Isolated Web Apps](https://developer.chrome.com/blog/new-in-devtools-138#direct-sockets)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-138#misc)
-<!-- todo: maybe delete some links -->
 
 
 <!-- ====================================================================== -->
