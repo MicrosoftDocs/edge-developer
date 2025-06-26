@@ -88,7 +88,7 @@
       },
       {
         "source_path": "./microsoft-edge/devtools-guide-chromium/storage/applicationcache.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Window/applicationCache",
+        "redirect_url": "/microsoft-edge/devtools/landing/index",
         "redirect_document_id": false
       },
       {
@@ -2545,7 +2545,8 @@
       },
       {
         "source_path": "./microsoft-edge/dev-guide/networking-and-connectivity/application-cache.md",
-        "redirect_url": "https://developer.mozilla.org/docs/Web/API/Window/applicationCache",
+        "redirect_url": "/microsoft-edge/devtools/landing/index",
+     // "redirect_url": "https://developer.mozilla.org/docs/Web/API/Window/applicationCache",
         "redirect_document_id": false
       },
       {
