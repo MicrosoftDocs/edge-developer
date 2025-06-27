@@ -376,6 +376,9 @@ This API is ideal for apps that require a modern, immersive UI experience.
   * [ICoreWebView2ExperimentalWindowControlsOverlay::put_Height](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwindowcontrolsoverlay?view=webview2-1.0.3404-prerelease&preserve-view=true#put_height)
   * [ICoreWebView2ExperimentalWindowControlsOverlay::put_IsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwindowcontrolsoverlay?view=webview2-1.0.3404-prerelease&preserve-view=true#put_isenabled)
 
+---
+
+
 <!-- ------------------------------ -->
 #### Promotions
 
