@@ -343,7 +343,7 @@ See also:
 <!-- ---------- -->
 ###### Display opener frame details for opened windows
 
-DevTools now organizes opened [Windows](https://developer.mozilla.org/docs/Web/API/Window#Constructors) under the relevant parent [frame](https://developer.mozilla.org/docs/Web/API/Window/frames).  For example, if the `top` frame opens a `Window` to `https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium`, then the `Window` appears under `top` in the **Frames** list.
+DevTools now organizes opened [Windows](https://developer.mozilla.org/docs/Web/API/Window#Constructors) under the relevant parent [frame](https://developer.mozilla.org/docs/Web/API/Window/frames).  For example, if the `top` frame opens a `Window` to `https://learn.microsoft.com/microsoft-edge/devtools`, then the `Window` appears under `top` in the **Frames** list.
 
 To reveal the frame that's responsible for opening another Window, and see that frame in the **Elements** tool:
 
