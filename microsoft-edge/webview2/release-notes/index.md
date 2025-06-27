@@ -280,10 +280,6 @@ These APIs are part of a broader effort to bring full worker support to WebView2
    * [ICoreWebView2Experimental30::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimental30?view=webview2-1.0.3404-prerelease&preserve-view=true#add_dedicatedworkercreated)
    * [ICoreWebView2Experimental30::remove_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimental30?view=webview2-1.0.3404-prerelease&preserve-view=true#remove_dedicatedworkercreated)
 
-<!-- todo: "overlay" isn't in .NET or WinRT tabs, add there? -->
-* [ICoreWebView2Experimental31](/microsoft-edge/webview2/reference/win32/icorewebview2experimental31?view=webview2-1.0.3404-prerelease&preserve-view=true)
-   * [ICoreWebView2Experimental31::get_WindowControlsOverlay](/microsoft-edge/webview2/reference/win32/icorewebview2experimental31?view=webview2-1.0.3404-prerelease&preserve-view=true#get_windowcontrolsoverlay)
-
 <!-- 2 -->
 * [ICoreWebView2ExperimentalDedicatedWorker](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworker?view=webview2-1.0.3404-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalDedicatedWorker::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworker?view=webview2-1.0.3404-prerelease&preserve-view=true#add_dedicatedworkercreated)
@@ -438,7 +434,7 @@ This API is ideal for apps that require a modern, immersive UI experience.
 
 * [CoreWebView2WindowControlsOverlay Class](/dotnet/api/microsoft.web.webview2.core.corewebview2windowcontrolsoverlay?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
    * [CoreWebView2WindowControlsOverlay.BackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2windowcontrolsoverlay.backgroundcolor?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
-   * [CoreWebView2WindowControlsOverlay.HeightProperty](/dotnet/api/microsoft.web.webview2.core.corewebview2windowcontrolsoverlay.height?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
+   * [CoreWebView2WindowControlsOverlay.Height Property](/dotnet/api/microsoft.web.webview2.core.corewebview2windowcontrolsoverlay.height?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
    * [CoreWebView2WindowControlsOverlay.IsEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2windowcontrolsoverlay.isenabled?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
@@ -449,15 +445,13 @@ This API is ideal for apps that require a modern, immersive UI experience.
 * [CoreWebView2WindowControlsOverlay Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true)
    * [CoreWebView2WindowControlsOverlay.BackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#backgroundcolor)
    * [CoreWebView2WindowControlsOverlay.Height Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#height)
-   * [CoreWebView2WindowControlsOverlay.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#originalsourceframeinfo)
+   * [CoreWebView2WindowControlsOverlay.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#originalsourceframeinfo)<!-- todo: delete, or propagate?  compare/Find: DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo which is likely the correct place -->
+   <!-- todo: add IsEnabled, like .NET & Win32? -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
-<!-- todo: add?
-* [ICoreWebView2Experimental31]()
-   * [ICoreWebView2Experimental31::get_WindowControlsOverlay]()
-   * [ICoreWebView2Experimental31::put_WindowControlsOverlay]()
--->
+* [ICoreWebView2Experimental31](/microsoft-edge/webview2/reference/win32/icorewebview2experimental31?view=webview2-1.0.3404-prerelease&preserve-view=true)
+   * [ICoreWebView2Experimental31::get_WindowControlsOverlay](/microsoft-edge/webview2/reference/win32/icorewebview2experimental31?view=webview2-1.0.3404-prerelease&preserve-view=true#get_windowcontrolsoverlay)
 
 * [ICoreWebView2ExperimentalWindowControlsOverlay](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwindowcontrolsoverlay?view=webview2-1.0.3404-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalWindowControlsOverlay::get_BackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwindowcontrolsoverlay?view=webview2-1.0.3404-prerelease&preserve-view=true#get_backgroundcolor)
