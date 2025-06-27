@@ -22,7 +22,7 @@ Use the **Application** tool to:
 
 * Analyze services such as Notification, Payment handler, or background sync.
 
-For more information, see [Application tool, to manage storage](../../devtools-guide-chromium/storage/application-tool.md).
+For more information, see [Application tool, to manage storage](../../devtools/storage/application-tool.md).
 
 
 <!-- ====================================================================== -->

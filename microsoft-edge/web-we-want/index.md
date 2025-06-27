@@ -31,9 +31,9 @@ We've successfully shipped a few Wants into DevTools, such as:
 
 *  Source Order Viewer
    *  The [Want](https://webwewant.fyi/wants/64).
-   *  The docs: [Test keyboard support using the Source Order Viewer](../devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md).
+   *  The docs: [Test keyboard support using the Source Order Viewer](../devtools/accessibility/test-tab-key-source-order-viewer.md).
 
 *  3D View
-   * [Navigate z-index, DOM, and layers using the 3D View tool](../devtools-guide-chromium/3d-view/index.md) - similar to what was in the Firefox DevTools.
+   * [Navigate z-index, DOM, and layers using the 3D View tool](../devtools/3d-view/index.md) - similar to what was in the Firefox DevTools.
 
 There are also other Wants that have previous proposals in standards groups.  Join us in driving the future of the web forward with the Web We Want!

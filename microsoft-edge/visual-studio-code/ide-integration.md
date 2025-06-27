@@ -37,7 +37,7 @@ The **Open source files in Visual Studio Code** experiment allows you to use Mic
 When you use this experiment, if you use Visual Studio Code and you use DevTools to change your CSS rules, you no longer have to use the code editor in the Sources tool of DevTools.  You can simply use the code editor in Visual Studio Code.  When you turn on this experiment,
 local files will get a different treatment.<!--TODO: be specific-->
 
-See [Opening source files in Visual Studio Code](../devtools-guide-chromium/sources/opening-sources-in-vscode.md).
+See [Opening source files in Visual Studio Code](../devtools/sources/opening-sources-in-vscode.md).
 
 
 <!-- ====================================================================== -->

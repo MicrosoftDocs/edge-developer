@@ -9,7 +9,7 @@ assignees: ''
 <!--
 ⚠ If your feedback isn't about the Microsoft Edge developer documentation, consider submitting it here instead:
 
-* For DevTools: https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/contact
+* For DevTools: https://learn.microsoft.com/microsoft-edge/devtools/contact
 * For WebView2: https://github.com/MicrosoftEdge/WebView2Feedback/issues
 -->
 

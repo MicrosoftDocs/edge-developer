@@ -117,7 +117,7 @@ If an assistive technology isn't available on your OS or you not possible to ins
 
 *  [Assistiv Labs](https://assistivlabs.com) (a commercial product) enables you to manually test with assistive technologies through any modern web browser.  Select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device that you can interact with.
 
-See also [Cloud-based emulators and simulators](../../devtools-guide-chromium/device-mode/testing-other-browsers.md#cloud-based-emulators-and-simulators).
+See also [Cloud-based emulators and simulators](../../devtools/device-mode/testing-other-browsers.md#cloud-based-emulators-and-simulators).
 
 
 <!-- ====================================================================== -->
