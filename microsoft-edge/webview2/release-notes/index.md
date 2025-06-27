@@ -215,6 +215,7 @@ These APIs are part of a broader effort to bring full worker support to WebView2
 <!-- 3 -->
 * [CoreWebView2DedicatedWorkerCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true)
    * [CoreWebView2DedicatedWorkerCreatedEventArgs.Worker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#worker)
+   <!-- * [CoreWebView2DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo Property]() todo: add? (above the previous member) -->
 
 <!-- 4 -->
 * `CoreWebView2Frame` Class:
@@ -446,7 +447,7 @@ This API is ideal for apps that require a modern, immersive UI experience.
    * [CoreWebView2WindowControlsOverlay.BackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#backgroundcolor)
    * [CoreWebView2WindowControlsOverlay.Height Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#height)
    * [CoreWebView2WindowControlsOverlay.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#originalsourceframeinfo)<!-- todo: delete, or propagate?  compare/Find: DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo which is likely the correct place -->
-   <!-- todo: add IsEnabled, like .NET & Win32? -->
+   <!-- * [CoreWebView2WindowControlsOverlay.IsEnabled Property]() todo: add, like .NET & Win32? -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
