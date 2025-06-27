@@ -41,7 +41,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ------------------------------ -->
 #### Promotions
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -108,8 +108,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs
 
-
-The following Experimental APIs have been added in this Prerelease SDK.
+The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -327,11 +326,11 @@ These APIs are part of a broader effort to bring full worker support to WebView2
 <!-- ---------- -->
 ###### Render Custom Title Bars with Window Controls Overlay
 
-This API enables developers to create custom title bars by rendering caption buttons (minimize, maximize, restore, close) directly inside the WebView2 window. The Window Controls Overlay appears in the top corner of the WebView and integrates seamlessly with your app’s UI.
+This API enables developers to create custom title bars by rendering caption buttons (minimize, maximize, restore, close) directly inside the WebView2 window. The Window Controls Overlay appears in the top corner of the WebView and integrates seamlessly with your app's UI.
 
 Use this API when:
 * You want to replace the default OS title bar with a fully customized in-app title bar.
-* You’re working with non-client region features, such as app-region: drag and IsNonClientRegionSupportEnabled.
+* You're working with non-client region features, such as app-region: drag and IsNonClientRegionSupportEnabled.
 
 This API is ideal for apps that require a modern, immersive UI experience.
 
@@ -368,7 +367,7 @@ This API is ideal for apps that require a modern, immersive UI experience.
 <!-- ------------------------------ -->
 #### Promotions
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
