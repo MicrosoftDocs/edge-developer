@@ -30,17 +30,15 @@ New APIs are introduced in phases as follows:
 
 | API status | Description |
 |---|---|
-| _Experimental_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
+| _Experimental in a Prerelease SDK_ | 1. First an API is Experimental in a Prerelease SDK.  You can test these APIs and provide feedback.  The API isn't in a Release SDK yet. |
 | _Stable in a Prerelease SDK_ | 2. Then the API is promoted to Stable in the Prerelease SDK.  The API isn't in a Release SDK yet. |
 | _Stable in a Release SDK_ | 3. Then the Stable API is promoted to be included in the Release SDK.  This typically happens 1 month after the API is promoted to Stable in a Prerelease SDK.  The API also remains in the Prerelease SDK. |
 
 ![Diagram of phases of introducing new APIs](./versioning-images/phases-of-adding-apis.png)
 <!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
 
-<!-- terminology:
-APIs are Experimental or Stable
-SDKs/packages are Prerelease or Release
--->
+See also:
+* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release Notes for the WebView2 SDK_.
 
 
 <!-- ------------------------------ -->
