@@ -119,21 +119,10 @@ The WebView2 Worker APIs allow host applications to interact with Web Workers—
 
 These APIs provide:
 * Lifecycle Events: Monitor creation and destruction of workers.
-* Messaging Interfaces: Communicate with workers using PostMessage and WorkerMessageReceived.
+* Messaging Interfaces: Communicate with workers using PostMessage and WebMessageReceived.
 * Worker Management: Query and retrieve worker registrations and instances.
 
-Use these APIs to:
-* Run CPU-intensive tasks in the background.
-* Maintain WebSocket connections across multiple contexts.
-* Enable offline experiences and push notifications via service workers.
-
-Key Interfaces and Events
-* DedicatedWorkerCreated: Raised when a dedicated worker is created.
-* SharedWorkerCreated: Raised when a shared worker is created.
-* ServiceWorkerRegistered: Raised when a service worker is registered.
-* GetServiceWorkerRegistrations: Retrieves all service worker registrations.
-
-These APIs are part of a broader effort to bring full worker support to WebView2, with future plans to include additional worker types and capabilities.
+These APIs are part of a broader effort to bring full worker support to WebView2, with future plans to include worker types and capabilities.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
