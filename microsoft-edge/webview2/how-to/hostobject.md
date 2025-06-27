@@ -405,7 +405,7 @@ The web-side code of the Win32 sample app is now able to access the properties a
 
     ![Top of Host Objects demo page](./hostobject-images/sample-app-top.png)
 
-1.  The webpage suggests using the **Console** tool of DevTools to run JavaScript statements on the `chrome.webview.hostObjects.sample` object.  If you want to open DevTools from the sample app, right-click the page and then select **Inspect**.  Then select the **Console** tab.  For more information, see [Console overview](../../devtools-guide-chromium/console/index.md).
+1.  The webpage suggests using the **Console** tool of DevTools to run JavaScript statements on the `chrome.webview.hostObjects.sample` object.  If you want to open DevTools from the sample app, right-click the page and then select **Inspect**.  Then select the **Console** tab.  For more information, see [Console overview](../../devtools/console/index.md).
 
     To open DevTools, pressing **F12** might not work in this context, and might trigger an exception.  If so, in Visual Studio, select **Stop Debugging**, and then press **F5** to restart debugging.  In the sample app, select **Scenario** > **Host Objects** again.  For more information, see [Open DevTools using an approach other than F12](./debug-visual-studio.md#open-devtools-using-an-approach-other-than-f12) in _Debug WebView2 apps with Visual Studio_.
 
