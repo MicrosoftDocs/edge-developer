@@ -72,5 +72,5 @@ Click the **Emulate vision deficiencies** (![The Emulate vision deficiencies but
 <!-- ====================================================================== -->
 ## See also
 
-* [Emulate mobile devices (Device Emulation)](../../devtools-guide-chromium/device-mode/index.md)
+* [Emulate mobile devices (Device Emulation)](../../devtools/device-mode/index.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
