@@ -640,7 +640,7 @@ See also:
 You can use cookies in WebView2 to manage user sessions, store user personalization preferences, and track user behavior.
 
 See also:
-* [View, edit, and delete cookies](../../devtools-guide-chromium/storage/cookies.md)
+* [View, edit, and delete cookies](../../devtools/storage/cookies.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1335,7 +1335,7 @@ The user agent is a string that represents the identity of the program on behalf
 
 See also:
 * [Detect Windows 11 and CPU architecture using User-Agent Client Hints](../../web-platform/how-to-detect-win11.md)
-* [Override the user agent string](../../devtools-guide-chromium/device-mode/override-user-agent.md)
+* [Override the user agent string](../../devtools/device-mode/override-user-agent.md)
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -1891,7 +1891,7 @@ See also:
 Your app can embed a WebView2 control that uses a Microsoft Edge extension.  A Microsoft Edge extension is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.
 
 See also:
-* [Overview of Microsoft Edge extensions](../../extensions-chromium/index.md)
+* [Overview of Microsoft Edge extensions](../../extensions/index.md)
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)

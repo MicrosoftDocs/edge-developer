@@ -174,12 +174,12 @@ conceptualContent:
               url: /deployedge/microsoft-edge-manage-extensions
 
             - itemType: reference
-              text: Defining match patterns to access file URLs
-              url: ./extensions-chromium/enterprise/match-patterns.md
+              text: Defining match patterns for an extension to access file URLs
+              url: ./extensions/developer-guide/match-patterns.md
 
             - itemType: reference
               text: Extension hosting
-              url: ./extensions-chromium/enterprise/hosting-and-updating.md
+              url: ./extensions/publish/hosting-and-updating.md
 
 # -----------------------------------------------------------------------------
 # Card r2c4
@@ -226,27 +226,27 @@ conceptualContent:
               itemType: overview
 
             - text: Microsoft Edge DevTools documentation  # devtools landing page
-              url: ./devtools-guide-chromium/landing/index.yml
+              url: ./devtools/landing/index.yml
               itemType: overview
 
             - text: Overview of DevTools
-              url: ./devtools-guide-chromium/overview.md
+              url: ./devtools/overview.md
               itemType: overview
 
             - text: What's New in Microsoft Edge DevTools
-              url: ./devtools-guide-chromium/whats-new/whats-new.md
+              url: ./devtools/whats-new/whats-new.md
               itemType: whats-new
 
             - text: Command Menu
-              url: ./devtools-guide-chromium/command-menu/index.md
+              url: ./devtools/command-menu/index.md
               itemType: how-to-guide
 
             - text: View and change CSS
-              url: ./devtools-guide-chromium/css/index.md
+              url: ./devtools/css/index.md
               itemType: how-to-guide
 
             - text: Keyboard shortcuts
-              url: ./devtools-guide-chromium/shortcuts/index.md
+              url: ./devtools/shortcuts/index.md
               itemType: reference
 
 # -----------------------------------------------------------------------------
@@ -254,35 +254,35 @@ conceptualContent:
         - title: Microsoft Edge extensions
           links:
             - text: Microsoft Edge extensions documentation  # extensions landing page
-              url: ./extensions-chromium/landing/index.yml
+              url: ./extensions/landing/index.yml
               itemType: overview
 
             - text: Extensions overview
-              url: ./extensions-chromium/index.md
+              url: ./extensions/index.md
               itemType: overview
 
             - text: Getting started tutorial
-              url: ./extensions-chromium/getting-started/index.md
+              url: ./extensions/getting-started/index.md
               itemType: overview
 
             - text: Port a Chrome extension to Microsoft Edge
-              url: ./extensions-chromium/developer-guide/port-chrome-extension.md
+              url: ./extensions/developer-guide/port-chrome-extension.md
               itemType: overview
 
             - text: Alternative ways to distribute an extension
-              url: ./extensions-chromium/developer-guide/alternate-distribution-options.md
+              url: ./extensions/developer-guide/alternate-distribution-options.md
               itemType: how-to-guide
 
             - text: Step-wise publishing process
-              url: ./extensions-chromium/publish/publish-extension.md
+              url: ./extensions/publish/publish-extension.md
               itemType: how-to-guide
 
             - text: Register as a Microsoft Edge extension developer
-              url: ./extensions-chromium/publish/create-dev-account.md
+              url: ./extensions/publish/create-dev-account.md
               itemType: how-to-guide
 
             - text: "Sample: Picture viewer pop-up webpage"
-              url: ./extensions-chromium/getting-started/picture-viewer-popup-webpage.md
+              url: ./extensions/getting-started/picture-viewer-popup-webpage.md
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
@@ -440,7 +440,7 @@ conceptualContent:
               itemType: how-to-guide
 
             - text: Opening source files in Visual Studio Code
-              url: ./devtools-guide-chromium/sources/opening-sources-in-vscode.md
+              url: ./devtools/sources/opening-sources-in-vscode.md
               itemType: how-to-guide
 
             - text: Debug Microsoft Edge in Visual Studio Code
@@ -459,7 +459,7 @@ conceptualContent:
 #       - title: Accessibility in Microsoft Edge
 #         links:
 #           - text: Accessibility-testing features
-#             url: ./devtools-guide-chromium/accessibility/reference.md
+#             url: ./devtools/accessibility/reference.md
 #             itemType: overview
 
 #           - text: Accessibility overview
