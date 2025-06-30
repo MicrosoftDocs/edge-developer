@@ -2,17 +2,17 @@
   "redirections": [
 // Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
     {
-      "source_path": "./microsoft-edge/visual-studio-code/index.md",
+      "source_path": "../microsoft-edge/visual-studio-code/index.md",
       "redirect_url": "/microsoft-edge/visual-studio-code/ide-integration",
       "redirect_document_id": false
     },
     {
-      "source_path": "./microsoft-edge/visual-studio-code/elements-for-edge.md",
+      "source_path": "../microsoft-edge/visual-studio-code/elements-for-edge.md",
       "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
       "redirect_document_id": false
     },
     {
-      "source_path": "./microsoft-edge/visual-studio-code/webhint.md",
+      "source_path": "../microsoft-edge/visual-studio-code/webhint.md",
       "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
       "redirect_document_id": false
     }

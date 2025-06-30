@@ -2,12 +2,12 @@
   "redirections": [
 // Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
     {
-      "source_path": "./microsoft-edge/web-platform/user-agent-string.md",
+      "source_path": "../microsoft-edge/web-platform/user-agent-string.md",
       "redirect_url": "/microsoft-edge/web-platform/user-agent-guidance",
       "redirect_document_id": false
     },
     {
-      "source_path": "./microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer.md",
+      "source_path": "../microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer.md",
       "redirect_url": "/microsoft-edge/web-platform/json-viewer",
       "redirect_document_id": false
     }
