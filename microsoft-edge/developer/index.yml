@@ -71,28 +71,28 @@ landingContent:
       - linkListType: overview
         links:
           - text: Microsoft Edge DevTools documentation  # devtools landing page
-            url: ../devtools-guide-chromium/landing/index.yml
+            url: ../devtools/landing/index.yml
 
           - text: Overview of DevTools
-            url: ../devtools-guide-chromium/overview.md
+            url: ../devtools/overview.md
 
       - linkListType: whats-new
         links:
           - text: What's New in Microsoft Edge DevTools
-            url: ../devtools-guide-chromium/whats-new/whats-new.md
+            url: ../devtools/whats-new/whats-new.md
 
       - linkListType: how-to-guide
         links:
           - text: Command Menu
-            url: ../devtools-guide-chromium/command-menu/index.md
+            url: ../devtools/command-menu/index.md
 
           - text: View and change CSS
-            url: ../devtools-guide-chromium/css/index.md
+            url: ../devtools/css/index.md
 
       - linkListType: reference
         links:
           - text: Keyboard shortcuts
-            url: ../devtools-guide-chromium/shortcuts/index.md
+            url: ../devtools/shortcuts/index.md
 
 # -----------------------------------------------------------------------------
 # Card for toc bucket 4 - r1c3
@@ -280,7 +280,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Opening source files in Visual Studio Code
-            url: ../devtools-guide-chromium/sources/opening-sources-in-vscode.md
+            url: ../devtools/sources/opening-sources-in-vscode.md
 
           - text: Visual Studio for web development
             url: ../visual-studio/index.md
@@ -292,7 +292,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Accessibility-testing features
-            url: ../devtools-guide-chromium/accessibility/reference.md
+            url: ../devtools/accessibility/reference.md
 
           - text: Accessibility in Microsoft Edge
             url: ../accessibility/index.md
