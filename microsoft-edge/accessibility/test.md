@@ -20,7 +20,7 @@ Use the following tools and testing procedures to evaluate your website for acce
 
 DevTools includes accessibility-testing features, such as tools that automatically generate accessibility reports for a webpage, including the **Issues** tool and the **Lighthouse** tool.
 
-To learn more about the accessibility testing features of DevTools, see [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md).
+To learn more about the accessibility testing features of DevTools, see [Accessibility-testing features](../devtools/accessibility/reference.md).
 
 
 <!-- ====================================================================== -->
