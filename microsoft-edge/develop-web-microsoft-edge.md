@@ -34,7 +34,7 @@ See:
 ## Microsoft Edge DevTools
 <!-- ====================================================================== -->
 <!-- keep sync'd:
-* [Overview of DevTools](devtools-guide-chromium/overview.md) - intro section
+* [Overview of DevTools](devtools/overview.md) - intro section
 * [Microsoft Edge DevTools](../develop-web-microsoft-edge.md#microsoft-edge-devtools) in _Develop for the web with Microsoft Edge_
 -->
 
