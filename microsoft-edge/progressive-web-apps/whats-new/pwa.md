@@ -20,7 +20,7 @@ Sections of this document correspond to historical releases of Microsoft Edge, a
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 121
 
-Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
+Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->
@@ -281,7 +281,7 @@ See [Display content in the title bar area using Window Controls Overlay](../how
 
 _2023 update: This feature is no longer an origin trial, and is available to all users, so the following no longer applies:_ Register your origin for the **Web App Window Controls Overlay** trial at [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
-_2024 update:_ Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature for a Progressive Web App (PWA), without having to install the PWA.  See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
+_2024 update:_ Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature for a Progressive Web App (PWA), without having to install the PWA.  See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
 <!-- ------------------------------ -->
