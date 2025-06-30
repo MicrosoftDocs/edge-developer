@@ -119,8 +119,6 @@ These APIs provide:
 * **Messaging Interfaces:** Communicate with workers using `PostMessage` and `WebMessageReceived`.
 * **Worker Management:** Query and retrieve worker registrations and instances.
 
-These APIs are part of a broader effort to bring full worker support to WebView2, with future plans<!-- todo: omit future promises?  https://developers.google.com/style/timeless-documentation --> to include worker types and capabilities.
-
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- 1 -->
@@ -246,7 +244,6 @@ These APIs are part of a broader effort to bring full worker support to WebView2
 
 <!-- 9 -->
 * [CoreWebView2ServiceWorkerRegisteredEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregisteredeventargs?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true)
-   * [CoreWebView2ServiceWorkerRegisteredEventArgs.IsEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregisteredeventargs?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#isenabled)<!-- todo: missing from .NET, Win32: propagate to there, or delete from here? -->
    * [CoreWebView2ServiceWorkerRegisteredEventArgs.ServiceWorkerRegistration Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregisteredeventargs?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#serviceworkerregistration)
 
 <!-- 10 -->
@@ -434,9 +431,10 @@ This API is ideal for apps that require a modern, immersive UI experience.
    * [CoreWebView2.WindowControlsOverlay Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.windowcontrolsoverlay?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
 
 * [CoreWebView2WindowControlsOverlay Class](/dotnet/api/microsoft.web.webview2.core.corewebview2windowcontrolsoverlay?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
+   * [CoreWebView2WindowControlsOverlay.IsEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2windowcontrolsoverlay.isenabled?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
    * [CoreWebView2WindowControlsOverlay.BackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2windowcontrolsoverlay.backgroundcolor?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
    * [CoreWebView2WindowControlsOverlay.Height Property](/dotnet/api/microsoft.web.webview2.core.corewebview2windowcontrolsoverlay.height?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
-   * [CoreWebView2WindowControlsOverlay.IsEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2windowcontrolsoverlay.isenabled?view=webview2-dotnet-1.0.3404-prerelease&preserve-view=true)
+   
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -444,6 +442,7 @@ This API is ideal for apps that require a modern, immersive UI experience.
    * [CoreWebView2.WindowControlsOverlay Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#windowcontrolsoverlay)
 
 * [CoreWebView2WindowControlsOverlay Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true)
+    * [CoreWebView2WindowControlsOverlay.IsEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#isenabled)
    * [CoreWebView2WindowControlsOverlay.BackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#backgroundcolor)
    * [CoreWebView2WindowControlsOverlay.Height Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#height)
    * [CoreWebView2WindowControlsOverlay.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3404-prerelease&preserve-view=true#originalsourceframeinfo)<!-- todo: delete, or propagate?  compare/Find: DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo which is likely the correct place -->
