@@ -2965,6 +2965,7 @@ For composition-based WebView2 rendering, use `CoreWebView2Environment` to creat
 **Subsections below:**
 * [Connecting to the visual tree](#connecting-to-the-visual-tree)
 * [Forwarding input](#forwarding-input)
+* [Allow input event messages to pass through the browser window](#allow-input-event-messages-to-pass-through-the-browser-window)
 * [Drag and drop](#drag-and-drop)
 * [Accessibility](#accessibility)
 
@@ -3062,6 +3063,30 @@ https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_we
 * `ICoreWebView2Environment3` interface:
    * [ICoreWebView2Environment3::CreateCoreWebView2PointerInfo method](/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2pointerinfo)
 * [ICoreWebView2PointerInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2pointerinfo)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Allow input event messages to pass through the browser window
+
+Allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4)
+   * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4#get_allowhostinputprocessing)
+   * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4#put_allowhostinputprocessing)
 
 ---
 
