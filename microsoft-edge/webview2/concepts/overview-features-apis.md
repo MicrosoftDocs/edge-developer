@@ -87,6 +87,7 @@ when adding an h4 heading, add nav link below the h2
 * [Rendering WebView2 using Composition](#rendering-webview2-using-composition)
    * [Connecting to the visual tree](#connecting-to-the-visual-tree)
    * [Forwarding input](#forwarding-input)
+   * [Allow input event messages to pass through the browser window](#allow-input-event-messages-to-pass-through-the-browser-window)
    * [Drag and drop](#drag-and-drop)
    * [Accessibility](#accessibility)
 * [Environment options](#environment-options)
