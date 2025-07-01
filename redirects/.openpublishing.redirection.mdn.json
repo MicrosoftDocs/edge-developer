@@ -1,6 +1,5 @@
 {
   "redirections": [
-// Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
     {
       "source_path": "../microsoft-edge/dev-guide/css/animations.md",
       "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Animations/Using_CSS_animations",

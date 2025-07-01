@@ -1,6 +1,5 @@
 {
   "redirections": [
-// Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
     {
       "source_path": "../microsoft-edge/visual-studio-code/index.md",
       "redirect_url": "/microsoft-edge/visual-studio-code/ide-integration",

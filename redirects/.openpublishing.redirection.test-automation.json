@@ -1,6 +1,5 @@
 {
   "redirections": [
-// Instructions: https://review.learn.microsoft.com/help/platform/redirect-articles
     {
       "source_path": "../microsoft-edge/webdriver-chromium/verify-selenium-tools.md",
       "redirect_url": "https://github.com/microsoft/edge-selenium-tools/wiki/using-gpg-to-verify-selenium-tools-for-microsoft-edge-releases",
