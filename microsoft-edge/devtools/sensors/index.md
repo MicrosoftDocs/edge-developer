@@ -277,7 +277,7 @@ Demos:
 * [Idle detection demo](https://microsoftedge.github.io/Demos/idle-detection/)
 
 Web.dev:
-* [User Location](https://web.dev/user-location/)
+* [User Location](https://web.dev/user-location/)<!-- todo: mdn link -->
 
 Emscripten:
 * [Pthreads support](https://emscripten.org/docs/porting/pthreads.html)
