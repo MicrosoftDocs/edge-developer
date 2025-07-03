@@ -567,6 +567,7 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
+* [Samples for Microsoft Edge extensions](../samples.md)
 * [Manifest V3](https://developer.chrome.com/docs/extensions/mv3)
 * [Extending DevTools](https://developer.chrome.com/docs/extensions/mv3/devtools/)
 * [CDP API Reference](https://developer.chrome.com/docs/extensions/reference/)
