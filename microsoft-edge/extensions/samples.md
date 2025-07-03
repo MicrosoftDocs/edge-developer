@@ -18,7 +18,8 @@ Use the extensions demos to learn how to develop extensions for Microsoft Edge.
 <!-- 
 sync:
 https://learn.microsoft.com/microsoft-edge/extensions/samples#list-of-samples
-https://github.com/MicrosoftEdge/Demos/blob/main/README.md#microsoft-edge-extensions - todo: in that Demos Readme, in Extensions section, add links for the two samples that are at: https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md#code
+https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md#code
+https://github.com/MicrosoftEdge/Demos/blob/main/README.md#microsoft-edge-extensions
 -->
 
 | Demo name | Description | Repo directory | Docs |
