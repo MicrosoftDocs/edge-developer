@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path": "../microsoft-edge/privacy-whitepaper/index.md",
+      "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/privacy",
+      "redirect_document_id": false
+    }
+  ]
+}
