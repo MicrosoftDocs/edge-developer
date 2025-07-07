@@ -171,13 +171,6 @@ See also:
 
 The Microsoft Edge WebView2 control lets you embed web content into native applications.  You can communicate between native code and web code using simple messages, JavaScript code, and native objects.  The following are the main APIs for communicating between web and native code.
 
-**Subsections below:**
-* [Host/web object sharing](#hostweb-object-sharing)
-* [Script execution](#script-execution)
-* [Web messaging](#web-messaging)
-* [Script dialogs](#script-dialogs)
-* [Shared buffer](#shared-buffer)
-
 Common use cases for web/native interop:
 *  Update the native host window title after navigating to a different website.
 *  Send a native camera object and use its methods from a web app.
@@ -546,38 +539,6 @@ See also:
 ## Browser features
 
 The WebView2 control gives your app access to many browser features.  You can modify these browser features and turn them on or off.
-
-**Subsections below:**
-* [Printing](#printing)
-* [Cookies](#cookies)
-* [Image capture](#image-capture)
-   * [Control whether the screen capture UI is shown](#control-whether-the-screen-capture-ui-is-shown)
-* [Downloads](#downloads)
-* [Save as](#save-as)
-* [Web notification handling](#web-notification-handling)
-* [Permissions](#permissions)
-* [Context menus](#context-menus)
-* [Status bar](#status-bar)
-* [Fluent overlay scrollbars](#fluent-overlay-scrollbars)
-* [User Agent](#user-agent)
-* [Autofill](#autofill)
-* [Audio](#audio)
-* [Hit-testing of mouse-clicks in regions](#hit-testing-of-mouse-clicks-in-regions)
-* [Swipe gesture navigation](#swipe-gesture-navigation)
-* [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys)
-* [Fullscreen](#fullscreen)
-* [PDF toolbar](#pdf-toolbar)
-* [Theming](#theming)
-* [Language](#language)
-* [New window](#new-window)
-* [Close window](#close-window)
-* [Document title](#document-title)
-* [Favicon](#favicon)
-* [Security and privacy](#security-and-privacy)
-   * [Tracking prevention](#tracking-prevention)
-   * [SmartScreen](#smartscreen)
-   * [Custom crash reporting](#custom-crash-reporting)
-* [Browser extensions](#browser-extensions)
 
 
 <!-- ------------------------------ -->
@@ -1964,9 +1925,6 @@ See also:
 
 Get information about running WebView2 processes, exiting processes, and failed processes, so that your app can take action accordingly.
 
-**Subsections below:**
-* [Frame process info](#frame-process-info)
-
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2` Class:
@@ -2104,18 +2062,6 @@ The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snap
 ## Navigate to pages and manage loaded content
 
 Through the WebView2 control, your app can manage navigation to webpages and manage content that's loaded in the webpages.
-
-**Subsections below:**
-* [Manage content loaded into WebView2](#manage-content-loaded-into-webview2)
-* [Navigation history](#navigation-history)
-* [Navigation kind](#navigation-kind)
-* [Block unwanted navigating](#block-unwanted-navigating)
-* [Navigation events](#navigation-events)
-* [Manage network requests in WebView2](#manage-network-requests-in-webview2)
-* [Custom scheme registration](#custom-scheme-registration)
-* [Client certificates](#client-certificates)
-* [Server certificates](#server-certificates)
-* [Launch an external URI scheme](#launch-an-external-uri-scheme)
 
 
 <!-- ------------------------------ -->
@@ -2672,17 +2618,6 @@ Use these APIs to set up the WebView2 rendering system if your host app doesn't 
 
 * **No UI framework, and using Composition** - If your app UI is built using [DirectComposition](/windows/win32/directcomp/directcomposition-portal) or [Windows.UI.Composition](/uwp/api/Windows.UI.Composition), you should use `CoreWebView2CompositionController` rather than using these APIs; see [Rendering WebView2 using Composition](#rendering-webview2-using-composition), below.
 
-
-**Subsections below:**
-* [Sizing, positioning, and visibility](#sizing-positioning-and-visibility)
-* [Zooming](#zooming)
-* [Rasterization scale](#rasterization-scale)
-* [Focus and tabbing](#focus-and-tabbing)
-* [Parent window](#parent-window)
-* [Keyboard accelerators](#keyboard-accelerators)
-* [Default background color](#default-background-color)
-
-
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2Controller` Class:
@@ -2963,14 +2898,6 @@ See also:
 
 For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  `CoreWebView2CompositionController` provides the same APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering.
 
-**Subsections below:**
-* [Connecting to the visual tree](#connecting-to-the-visual-tree)
-* [Forwarding input](#forwarding-input)
-* [Allow input event messages to pass through the browser window](#allow-input-event-messages-to-pass-through-the-browser-window)
-* [Drag and drop](#drag-and-drop)
-* [Accessibility](#accessibility)
-
-
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2CompositionController Class](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller)
@@ -3151,19 +3078,11 @@ Not applicable.
 <!-- ====================================================================== -->
 ## Environment options
 
-**Subsections below:**
-* [User data](#user-data)
-* [Runtime selection](#runtime-selection)
-
 
 <!-- ------------------------------ -->
 #### User data
 
 Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
-
-**Subsections below:**
-* [Multiple profiles](#multiple-profiles)
-* [Delete a profile](#delete-a-profile)
 
 See also:
 * [Manage user data folders](./user-data-folder.md)
@@ -3399,10 +3318,6 @@ See also:
 ## Performance and debugging
 
 Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app.
-
-**Subsections below:**
-* [Memory usage target](#memory-usage-target)
-
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
