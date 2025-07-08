@@ -52,19 +52,19 @@ highlightedContent:
 # Card r2c1
     - title: "Microsoft Edge help & learning"  # end-user info at SMC
       url: https://support.microsoft.com/microsoft-edge
-      itemType: learn
+      itemType: training
 
 # -----------------------------------------------------------------------------
 # Card r2c2
     - title: "Microsoft Edge for Business"  # scroll downs to "Microsoft Edge for Business" hub page section
       url: /microsoft-edge/index#microsoft-edge-for-business  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-business
-      itemType: learn
+      itemType: training
 
 # -----------------------------------------------------------------------------
 # Card r2c3
     - title: "Microsoft Edge for Developers"  # scrolls down to "Microsoft Edge for Developers" hub page section
       url: /microsoft-edge/index#microsoft-edge-for-developers  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-developers
-      itemType: learn
+      itemType: training
 
 # -----------------------------------------------------------------------------
 # Card r2c4
@@ -88,7 +88,7 @@ conceptualContent:
 # Card r1c1
         - title: Learn about Microsoft Edge for Business
           links:
-            - text: Microsoft Edge channel overview
+            - text: Overview of the Microsoft Edge channels
               url: /deployedge/microsoft-edge-channels  # https://learn.microsoft.com/deployedge/microsoft-edge-channels
               itemType: overview
 
@@ -102,19 +102,19 @@ conceptualContent:
           links:
             - text: Deploy to Windows
               url: /configmgr/apps/deploy-use/deploy-edge  # https://learn.microsoft.com/configmgr/apps/deploy-use/deploy-edge
-              itemType: how-to-guide
+              itemType: deploy
 
             - text: Deploy to macOS
               url: /mem/intune/apps/apps-edge-macos  # https://learn.microsoft.com/mem/intune/apps/apps-edge-macos
-              itemType: how-to-guide
+              itemType: deploy
 
             - text: Deploy to BYOD devices
               url: /deployedge/microsoft-edge-for-business-config-recommendations#protecting-users-and-devices  # https://learn.microsoft.com/deployedge/microsoft-edge-for-business-config-recommendations#protecting-users-and-devices
-              itemType: how-to-guide
+              itemType: deploy
 
             - text: Deploy to mobile
               url: /intune/intune-service/fundamentals/guided-scenarios-edge  # https://learn.microsoft.com/intune/intune-service/fundamentals/guided-scenarios-edge
-              itemType: how-to-guide
+              itemType: deploy
 
 # -----------------------------------------------------------------------------
 # Card r1c3
@@ -122,27 +122,27 @@ conceptualContent:
           links:
             - text: Configure Microsoft Edge for Business on Windows and macOS
               url: /deployedge/configure-microsoft-edge  # https://learn.microsoft.com/deployedge/configure-microsoft-edge
-              itemType: reference
+              itemType: how-to-guide
 
             - text: Set Microsoft Edge for Business as the default browser
               url: /deployedge/edge-default-browser  # https://learn.microsoft.com/deployedge/edge-default-browser
-              itemType: reference
+              itemType: how-to-guide
 
             - text: Manage Microsoft Edge for Business on iOS and Android with Intune
               url: /mem/intune/apps/manage-microsoft-edge  # https://learn.microsoft.com/mem/intune/apps/manage-microsoft-edge
-              itemType: reference
+              itemType: reference  # or how-to-guide
 
 # -----------------------------------------------------------------------------
 # Card r1c4
         - title: Manage security and privacy
           links:
-            - text: Security
+            - text: Security  # dest: Microsoft Edge security for your business
               url: /deployedge/ms-edge-security-for-business  # https://learn.microsoft.com/deployedge/ms-edge-security-for-business
-              itemType: reference
+              itemType: reference  # or: concept, overview
 
-            - text: Privacy
+            - text: Privacy  # dest: Configure Microsoft Edge policies to support enterprise privacy
               url: /deployedge/microsoft-edge-enterprise-privacy-settings  # https://learn.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings
-              itemType: reference
+              itemType: reference  # or how-to-guide
 
 # =============================================================================
 # Row 2 (3 cards, max 4)
@@ -150,11 +150,11 @@ conceptualContent:
 # Card r2c1
         - title: Policy reference
           links:
-            - text: Browser policy reference
+            - text: Browser policy reference  # dest: Microsoft Edge - Policies
               url: /deployedge/microsoft-edge-policies  # https://learn.microsoft.com/deployedge/microsoft-edge-policies
               itemType: reference
 
-            - text: Update policy reference
+            - text: Update policy reference  # dest: Microsoft Edge - Update policies
               url: /deployedge/microsoft-edge-update-policies  # https://learn.microsoft.com/deployedge/microsoft-edge-update-policies
               itemType: reference
 
@@ -164,11 +164,7 @@ conceptualContent:
           links:
             - text: Enterprise tech community (Insider Focused)
               url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
-              itemType: reference
-
-          # - text: Troubleshoot Microsoft Edge
-          #   url: /deployedge/microsoft-edge-troubleshooting
-          #   itemType: reference
+              itemType: reference  # forum-posts filter
 
 # -----------------------------------------------------------------------------
 # Card r2c3
@@ -179,11 +175,11 @@ conceptualContent:
               itemType: overview
 
             - text: Defining match patterns for an extension to access file URLs
-              url: ./extensions/developer-guide/match-patterns.md
+              url: ./extensions/developer-guide/match-patterns.md  # https://learn.microsoft.com/microsoft-edge/extensions/developer-guide/match-patterns
               itemType: reference
 
             - text: Extension hosting
-              url: ./extensions/publish/hosting-and-updating.md
+              url: ./extensions/publish/hosting-and-updating.md  # https://learn.microsoft.com/microsoft-edge/extensions/publish/hosting-and-updating
               itemType: reference
 
 # -----------------------------------------------------------------------------
@@ -516,13 +512,13 @@ additionalContent:
           url: /answers/topics/ms-edge.html  # https://learn.microsoft.com/answers/tags/781/microsoft-edge
 # -----------------------------------------------------------------------------
 # Card
-        - summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available using a variety of plans to help you get your required level of support.
-          title: Microsoft Support for Business
+        - summary: If your business needs immediate technical support for Microsoft Edge, 1-on-1 support from Microsoft is available using a variety of plans to help you get your required level of support.
+          title: Microsoft Support for business
           url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
 # -----------------------------------------------------------------------------
 # Card
-        - summary: Helpful support resources for users is available.
-          title: User Support
+        - summary: Helpful support resources for end-users.
+          title: Microsoft Edge help & learning
           url: https://support.microsoft.com/microsoft-edge
 
 # =============================================================================
