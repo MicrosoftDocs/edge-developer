@@ -195,7 +195,11 @@ Status:
 
 _new as of Microsoft Edge 139_
 
-This checkbox is ignored for Microsoft Edge DevTools, because the **Quick View** panel in Microsoft Edge DevTools already has a UI that enables moving the **Quick View** panel to be vertical.  The **Quick View** panel in Microsoft Edge is similar to the **Drawer** in Chrome.
+This checkbox has no effect.
+
+* In Microsoft Edge DevTools, the **Quick View** panel's toolbar has a **Dock Quick View to the right** button, or a **Dock Quick View to the bottom** button.
+
+* In Google Chrome DevTools, this checkbox adds a **Toggle drawer orientation** button on the **Drawer** toolbar.
 
 See also:
 * [Features of the Quick View toolbar](../overview.md#features-of-the-quick-view-toolbar) in _Overview of DevTools_.
