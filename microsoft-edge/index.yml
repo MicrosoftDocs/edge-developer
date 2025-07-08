@@ -26,7 +26,7 @@ highlightedContent:
 # Card r1c1
     - title: "WebView2"
       itemType: download
-      url: https://developer.microsoft.com/microsoft-edge/webview2/
+      url: https://developer.microsoft.com/microsoft-edge/webview2/#download
 
 # -----------------------------------------------------------------------------
 # Card r1c2
@@ -111,15 +111,11 @@ conceptualContent:
 
             - itemType: how-to-guide
               text: Deploy to BYOD devices
-              url: /deployedge/microsoft-edge-for-business-config-recommendations?form=MA13FQ#protecting-users-and-devices  # todo: omit ?form=MA13FQ
-              # https://learn.microsoft.com/deployedge/microsoft-edge-for-business-config-recommendations?form=MA13FQ#protecting-users-and-devices
-              # https://learn.microsoft.com/deployedge/microsoft-edge-for-business-config-recommendations#protecting-users-and-devices
+              url: /deployedge/microsoft-edge-for-business-config-recommendations#protecting-users-and-devices  # https://learn.microsoft.com/deployedge/microsoft-edge-for-business-config-recommendations#protecting-users-and-devices
 
             - itemType: how-to-guide
               text: Deploy to mobile
-              url: /intune/intune-service/fundamentals/guided-scenarios-edge?form=MA13FJ  # todo: omit ?form=MA13FJ
-              # https://learn.microsoft.com/intune/intune-service/fundamentals/guided-scenarios-edge?form=MA13FJ
-              # https://learn.microsoft.com/intune/intune-service/fundamentals/guided-scenarios-edge
+              url: /intune/intune-service/fundamentals/guided-scenarios-edge  # https://learn.microsoft.com/intune/intune-service/fundamentals/guided-scenarios-edge
 
 # -----------------------------------------------------------------------------
 # Card r1c3
@@ -180,7 +176,7 @@ conceptualContent:
         - title: Extensions for enterprise
           links:
             - itemType: overview
-              text: Manage Microsoft Edge extensions
+              text: Manage extensions for Microsoft Edge for Business
               url: /deployedge/microsoft-edge-manage-extensions  # https://learn.microsoft.com/deployedge/microsoft-edge-manage-extensions
 
             - itemType: reference
