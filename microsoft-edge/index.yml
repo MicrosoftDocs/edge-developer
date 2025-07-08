@@ -25,53 +25,53 @@ highlightedContent:
 # -----------------------------------------------------------------------------
 # Card r1c1
     - title: "WebView2"
-      itemType: download
       url: https://developer.microsoft.com/microsoft-edge/webview2/#download
+      itemType: download
 
 # -----------------------------------------------------------------------------
 # Card r1c2
     - title: "Microsoft Edge for Business"
-      itemType: download
       url: https://www.microsoft.com/edge/business/download
+      itemType: download
 
 # -----------------------------------------------------------------------------
 # Card r1c3
     - title: "Microsoft Edge Insider Channels"
-      itemType: download
       url: https://www.microsoft.com/edge/download/insider
+      itemType: download
 
 # -----------------------------------------------------------------------------
 # Card r1c4
     - title: "Microsoft Edge Roadmap"
-      itemType: reference
       url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # https://www.microsoft.com/edge/update/latest (shows 1 at a time)
+      itemType: reference
 
 # =============================================================================
 # Row 2 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r2c1
     - title: "Get support"  # scrolls down to "Help and Support" hub page section
-      itemType: reference
       url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
+      itemType: reference
 
 # -----------------------------------------------------------------------------
 # Card r2c2
     - title: "How to use Microsoft Edge"  # end-user info at Support site
-      itemType: learn
       url: https://support.microsoft.com/microsoft-edge?ocid=DMC-End-User-Support
+      itemType: learn
 
 # -----------------------------------------------------------------------------
 # Card r2c3
     - title: "Administer Microsoft Edge for Business"  # todo: goes to "Microsoft Edge Enterprise documentation" landing page, should instead scroll down to "Microsoft Edge for Business" hub page section, for consistent nav design
-      itemType: learn
       url: /deployedge/index  # https://learn.microsoft.com/deployedge/
     # url: /microsoft-edge/index#microsoft-edge-for-business  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-business
+      itemType: learn
 
 # -----------------------------------------------------------------------------
 # Card r2c4
     - title: "Discover web developer features"  # scrolls down to "Microsoft Edge for Developers" hub page section
-      itemType: learn
       url: /microsoft-edge/index#microsoft-edge-for-developers  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-developers
+      itemType: learn
 
 # =============================================================================
 # "Microsoft Edge for Enterprise" section of hub page: 2 rows of up to 4 cards
