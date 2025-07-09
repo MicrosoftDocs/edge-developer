@@ -512,12 +512,12 @@ additionalContent:
           url: /answers/topics/ms-edge.html  # https://learn.microsoft.com/answers/tags/781/microsoft-edge
 # -----------------------------------------------------------------------------
 # Card
-        - summary: If your business needs immediate technical support for Microsoft Edge, 1-on-1 support from Microsoft is available using a variety of plans to help you get your required level of support.
+        - summary: If your business needs immediate technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
           title: Microsoft Support for business
           url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
 # -----------------------------------------------------------------------------
 # Card
-        - summary: Helpful support resources for end-users.
+        - summary: Support for end users (and Devs) about how to use Microsoft Edge features.
           title: Microsoft Edge help & learning
           url: https://support.microsoft.com/microsoft-edge
 
