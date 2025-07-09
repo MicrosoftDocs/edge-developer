@@ -24,25 +24,25 @@ highlightedContent:
 # Row 1 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r1c1
-    - title: "WebView2"
-      url: https://developer.microsoft.com/microsoft-edge/webview2/#download
-      itemType: download
-
-# -----------------------------------------------------------------------------
-# Card r1c2
-    - title: "Microsoft Edge for Business"
+    - title: Microsoft Edge for Business
       url: https://www.microsoft.com/edge/business/download
       itemType: download
 
 # -----------------------------------------------------------------------------
-# Card r1c3
-    - title: "Microsoft Edge Insider Channels"
+# Card r1c2
+    - title: Microsoft Edge Insider Channels
       url: https://www.microsoft.com/edge/download/insider
       itemType: download
 
 # -----------------------------------------------------------------------------
+# Card r1c3
+    - title: WebView2
+      url: https://developer.microsoft.com/microsoft-edge/webview2/#download
+      itemType: download
+
+# -----------------------------------------------------------------------------
 # Card r1c4
-    - title: "Microsoft Edge Roadmap"
+    - title: Microsoft Edge Roadmap
       url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # https://www.microsoft.com/edge/update/latest (shows 1 at a time)
       itemType: reference
 
@@ -50,27 +50,27 @@ highlightedContent:
 # Row 2 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r2c1
-    - title: "Microsoft Edge help & learning"  # end-user info at SMC
-      url: https://support.microsoft.com/microsoft-edge
-      itemType: training
-
-# -----------------------------------------------------------------------------
-# Card r2c2
-    - title: "Microsoft Edge for Business"  # scroll downs to "Microsoft Edge for Business" hub page section
+    - title: Microsoft Edge for Business  # scrolls down to hub page section
       url: /microsoft-edge/index#microsoft-edge-for-business  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-business
       itemType: training
 
 # -----------------------------------------------------------------------------
-# Card r2c3
-    - title: "Microsoft Edge for Developers"  # scrolls down to "Microsoft Edge for Developers" hub page section
+# Card r2c2
+    - title: Microsoft Edge for Developers  # scrolls down to hub page section
       url: /microsoft-edge/index#microsoft-edge-for-developers  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-developers
       itemType: training
 
 # -----------------------------------------------------------------------------
-# Card r2c4
-    - title: "Help and Support"  # scrolls down to "Help and Support" hub page section
+# Card r2c3
+    - title: Help and Support  # scrolls down to hub page section
       url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
-      itemType: reference
+      itemType: training
+
+# -----------------------------------------------------------------------------
+# Card r2c4
+    - title: Microsoft Edge help & learning  # end-user info at SMC (member of above)
+      url: https://support.microsoft.com/microsoft-edge
+      itemType: training
 
 # =============================================================================
 # "Microsoft Edge for Enterprise" section of hub page: 2 rows of up to 4 cards
@@ -507,18 +507,18 @@ additionalContent:
       items:
 # -----------------------------------------------------------------------------
 # Card
-        - summary: Get advice and answers from community experts.
-          title: Community Support on Microsoft Q&A
+        - title: Community Support on Microsoft Q&A
+          summary: Get advice and answers from community experts.
           url: /answers/topics/ms-edge.html  # https://learn.microsoft.com/answers/tags/781/microsoft-edge
 # -----------------------------------------------------------------------------
 # Card
-        - summary: If your business needs immediate technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
-          title: Microsoft Support for business
+        - title: Microsoft Support for business
+          summary: If your business needs immediate technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
           url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
 # -----------------------------------------------------------------------------
 # Card
-        - summary: Support for end users (and Devs) about how to use Microsoft Edge features.
-          title: Microsoft Edge help & learning
+        - title: Microsoft Edge help & learning
+          summary: Support for end users about how to use Microsoft Edge features.
           url: https://support.microsoft.com/microsoft-edge
 
 # =============================================================================
