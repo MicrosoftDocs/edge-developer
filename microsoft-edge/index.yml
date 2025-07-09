@@ -130,7 +130,7 @@ conceptualContent:
 
             - text: Manage Microsoft Edge for Business on iOS and Android with Intune
               url: /mem/intune/apps/manage-microsoft-edge  # https://learn.microsoft.com/mem/intune/apps/manage-microsoft-edge
-              itemType: reference  # or how-to-guide
+              itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
 # Card r1c4
@@ -138,11 +138,11 @@ conceptualContent:
           links:
             - text: Security  # dest: Microsoft Edge security for your business
               url: /deployedge/ms-edge-security-for-business  # https://learn.microsoft.com/deployedge/ms-edge-security-for-business
-              itemType: reference  # or: concept, overview
+              itemType: concept
 
             - text: Privacy  # dest: Configure Microsoft Edge policies to support enterprise privacy
               url: /deployedge/microsoft-edge-enterprise-privacy-settings  # https://learn.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings
-              itemType: reference  # or how-to-guide
+              itemType: how-to-guide
 
 # =============================================================================
 # Row 2 (3 cards, max 4)
@@ -453,7 +453,7 @@ conceptualContent:
               itemType: how-to-guide
 
 # =============================================================================
-# Row 3 (4 cards max) - adding cards changes layout to 3 per row
+# Row 3 (4 cards max) - hid b/c adding cards changes layout to 3 per row instead of 4 per row
 # -----------------------------------------------------------------------------
 # Card for toc bucket 10 - r_c_
 # Card r2c4
