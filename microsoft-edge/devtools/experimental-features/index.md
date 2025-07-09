@@ -195,11 +195,7 @@ Status:
 
 _new as of Microsoft Edge 139_
 
-This checkbox has no effect.
-
-* In Microsoft Edge DevTools, the **Quick View** panel's toolbar has a **Dock Quick View to the right** button, or a **Dock Quick View to the bottom** button.
-
-* In Google Chrome DevTools, this checkbox adds a **Toggle drawer orientation** button on the **Drawer** toolbar.
+This checkbox has no effect.  Regardless of this checkbox, the **Quick View** panel's toolbar has a **Dock Quick View to the right** button, or a **Dock Quick View to the bottom** button.
 
 See also:
 * [Features of the Quick View toolbar](../overview.md#features-of-the-quick-view-toolbar) in _Overview of DevTools_.
