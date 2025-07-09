@@ -195,7 +195,7 @@ Status:
 
 _new as of Microsoft Edge 139_
 
-This checkbox has no effect.  Regardless of this checkbox, the **Quick View** panel's toolbar has a **Dock Quick View to the right** button, or a **Dock Quick View to the bottom** button.
+This checkbox has no effect.  To move the **Quick View** panel, on the **Quick View** toolbar, click the **Dock Quick View to the right** button.
 
 See also:
 * [Features of the Quick View toolbar](../overview.md#features-of-the-quick-view-toolbar) in _Overview of DevTools_.
