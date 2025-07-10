@@ -23,9 +23,8 @@ ms.date: 06/02/2025
    limitations under the License.  -->
 # Network features reference
 <!-- https://developer.chrome.com/docs/devtools/network/reference/ -->
-<!-- todo: update article per upstream, esp [Filter requests](#filter-requests) -->
 
-This article is a feature-driven inventory of the **Network** tool.  Use the **Network** tool to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
+The **Network** tool has the following features, to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
 
 
 **Detailed contents:**
@@ -275,7 +274,7 @@ See also [Simulate a slower network connection](../network/index.md#simulate-a-s
 
 In addition to presets, such as slow or fast 4G, you can also add your own custom throttling profiles:
 
-1. At the top of the **Network** tool, click the **Throttling** dropdown menu, and then select **Custom** > **Add**.
+1. In DevTools, at the top of the **Network** tool, click the **Throttling** dropdown menu, and then select **Custom** > **Add**.
 
    The DevTools **Settings** page opens, with the **Throttling** page selected.  This is the same as selecting **Customize and control DevTools**, and then selecting the **Throttling** page.
 
@@ -294,19 +293,92 @@ A warning (![Throttling warning icon](./reference-images/throttling-warning-icon
 
 In addition to HTTP requests, DevTools throttles WebSocket connections.
 
+We'll create a slow custom throttling profile, to show the difference between non-throttled and throttled WebSocket connections.  We'll initiate a new connection by using a test tool, Online Websocket Tester.
+
 To observe WebSocket throttling:
 
-1. Initiate a new connection, for example, by using a test tool such as [Online Websocket Tester](https://www.piesocket.com/websocket-tester).
+1. Go to a WebSocket test page, such as [Online WebSocket Tester](https://www.piesocket.com/websocket-tester), in a new window or tab.
 
-1. On the **Network** tool, select **No throttling** and send a message through the connection.
+1. In the **Online WebSocket Tester** webpage, click the **Connect** button.
 
-1. Create a very slow [custom throttling profile](#create-custom-throttling-profiles) (per above), for example, 10 kbit/s.  Such a slow profile will help you notice the difference.
+1. Right-click the webpage and then select **Inspect**.
 
-1. On the **Network** tool, select the profile and send another message.
+   DevTools opens.
 
-1. Toggle the **WS** filter, click your connection name, open the **Messages** tab, and check the time difference between sent and echoed messages with and without throttling. <!--todo: For example:-->
+   **Create a custom throttling profile:**
 
-<!-- ![Messages sent and echoed with and without throttling](todo png: messages-sent-echoed-an.png) -->
+1. Select **Customize and control DevTools** > **Settings** > **Throttling**.
+
+1. In the **Network throttling profiles** section, click the **Add profile** button.
+
+1. In the **Profile Name** text box, enter **10kbps**.
+
+1. In the **Download** text box, enter **10** (for 10 kbit/s).
+
+1. In the **Upload** text box, enter **10** (for 10 kbit/s).
+
+1. In the **Latency** text box, enter **10** (for 10 ms).
+
+1. In the **Packet Loss** text box, enter **1** (for 1%).
+
+1. In the **Packet Queue Length** text box, enter **10**.
+
+1. Select the **Packet Reordering** checkbox.
+
+   ![Creating a slow custom throttling profile in DevTools > Settings > Throttling](./reference-images/create-custom-10kbps-network-throttling-profile.png)
+
+1. Click the **Add** button.
+
+   The custom throttling profile is displayed:
+
+   ![Created a slow custom throttling profile in DevTools > Settings > Throttling](./reference-images/created-custom-10kbps-network-throttling-profile.png)
+
+1. In the **Settings** pane, click the **Close** (X) button.
+
+1. In DevTools, select the **Network** tool.
+
+   **Without throttling:**
+
+1. In the **Network** tool, in the **Throttling** dropdown list, make sure **No throttling** is selected.
+
+1. In the **Online WebSocket Tester** webpage, in the message text box, delete **Hello PieSocket!**, and enter **DevTools no throttling**.
+
+1. In the **Online WebSocket Tester** webpage, click the **Send** button.
+
+   The console within the **Online WebSocket Tester** webpage displays **DevTools no throttling**:
+
+   ![UI of Online WebSocket Tester webpage](./reference-images/websockets-tester-ui.png)
+
+1. At the top of the **Network** tool, select the **Socket** button (shown below).
+
+1. In the table, click your connection name, such as **channel_123?api_key=...**.
+
+   Tabs appear.
+
+1. Select the **Messages** tab (shown below).
+
+1. Select the message **DevTools no throttling**.
+
+1. Note the number in the **Length** column.
+
+   **With throttling:**
+
+1. In DevTools, in the **Network** tool, in the **Throttling** dropdown list, select **Custom** > **10kbps**.
+
+1. In the **Online WebSocket Tester** webpage, in the message text box, delete **DevTools no throttling**, and enter **DevTools with throttling**.
+
+1. In the **Online WebSocket Tester** webpage, click the **Send** button.
+
+   The console within the **Online WebSocket Tester** webpage displays **DevTools with throttling**.
+
+1. In the **Network** tool, in the **Messages** tab, select the message **DevTools with throttling**.
+
+1. Note the number in the **Length** column:
+
+![Messages sent and without throttling](./reference-images/messages-with-without-throttling.png)
+
+See also:
+* [Custom throttling profile](#create-custom-throttling-profiles), above.
 
 
 <!-- ---------- -->
