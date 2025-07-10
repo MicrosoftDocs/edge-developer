@@ -195,7 +195,7 @@ Status:
 
 _new as of Microsoft Edge 139_
 
-This checkbox has no effect.  To move the **Quick View** panel, on the **Quick View** toolbar, click the **Dock Quick View to the right** button.
+This checkbox has no effect.  To move the **Quick View** panel, on the **Quick View** toolbar, click the **Dock Quick View to the right** (!["Dock Quick View to the right" icon](./index-images/dock-quick-view-to-the-right-icon.png)) button.
 
 See also:
 * [Features of the Quick View toolbar](../overview.md#features-of-the-quick-view-toolbar) in _Overview of DevTools_.
