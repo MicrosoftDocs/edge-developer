@@ -17,7 +17,7 @@ metadata:
 # topmost section of hub page; 2 rows of 4 cards
 # Maximum of 8 items
 highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | overview | quickstart | reference | sample | training | tutorial | video | whats-new
   items:
 
 # =============================================================================
@@ -75,7 +75,7 @@ highlightedContent:
 # =============================================================================
 # "Microsoft Edge for Enterprise" section of hub page: 2 rows of up to 4 cards
 conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | overview | quickstart | reference | sample | training | tutorial | video | whats-new
 # Supports up to 3 subsections
   sections:
     - title: Microsoft Edge for Business # < 60 chars (optional)

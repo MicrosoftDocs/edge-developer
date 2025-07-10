@@ -24,11 +24,11 @@ metadata:
       # - linkListType: download
       # - linkListType: get-started
       # - linkListType: how-to-guide
-      # - linkListType: training
       # - linkListType: overview
       # - linkListType: quickstart
       # - linkListType: reference
       # - linkListType: sample
+      # - linkListType: training
       # - linkListType: tutorial
       # - linkListType: video
       # - linkListType: whats-new
