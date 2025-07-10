@@ -110,27 +110,6 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 
 <!-- ---------- -->
-###### ReleaseChannels enum
-
-<!-- todo: which feature is this enum for?  move it to there  -->
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2ReleaseChannels Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2releasechannels?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
-   * `Internal`
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2ReleaseChannels Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2releasechannels?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
-   * `Internal`
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [COREWEBVIEW2_RELEASE_CHANNELS enum]()
-  * `COREWEBVIEW2_RELEASE_CHANNELS_INTERNAL`
-
-
-<!-- ---------- -->
 ###### Enable background processing and offline support (WebView2 Worker APIs)
 
 The WebView2 Worker APIs allow host applications to interact with Web Workers to offload tasks from the main thread, improve responsiveness, and support background operations.  These Web Workers include Dedicated Workers, Shared Workers, and Service Workers.
@@ -234,7 +213,7 @@ These APIs provide:
 <!-- 3 -->
 * [CoreWebView2DedicatedWorkerCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2DedicatedWorkerCreatedEventArgs.Worker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#worker)
-   <!-- * [CoreWebView2DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo Property]() todo: add, like in .NET & Win32 tabs?  it goes above the Worker property -->
+   * [CoreWebView2DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#originalsourceframeinfo)
 
 <!-- 4 -->
 * `CoreWebView2Frame` Class:
@@ -465,7 +444,6 @@ This API is ideal for apps that require a modern, immersive UI experience.
     * [CoreWebView2WindowControlsOverlay.IsEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#isenabled)
    * [CoreWebView2WindowControlsOverlay.BackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#backgroundcolor)
    * [CoreWebView2WindowControlsOverlay.Height Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#height)
-   * [CoreWebView2WindowControlsOverlay.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowcontrolsoverlay?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#originalsourceframeinfo)<!-- todo: delete from RT tab, or add to the .NET & Win32 tabs?  compare/search other type: DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
