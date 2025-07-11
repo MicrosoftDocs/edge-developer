@@ -853,7 +853,7 @@
               displayName: Extensions
 
             - name: Throttling
-              href: ./devtools-guide-chromium/settings/throttling.md
+              href: ./devtools/settings/throttling.md
               displayName: Settings
 # Remote debugging ------------------------------------------------------------
         - name: Remote debugging

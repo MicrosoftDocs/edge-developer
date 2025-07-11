@@ -242,7 +242,7 @@ Select a resource to learn more information about it.
 
 Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.
 
-For example, suppose you want to verify that your resources are using reasonable cache policies.<!-- todo: add & link to cache policies section: [cache policies](https://web.dev/uses-long-cache-ttl/) ends up at [Serve static assets with an efficient cache policy](https://developer.chrome.com/docs/lighthouse/performance/uses-long-cache-ttl) -->
+For example, use the **Search** pane to verify that your resources are using the correct cache policies, as follows:
 
 1. Select **Search** (![Search](./index-images/search-icon.png)).  The **Search** pane opens to the left of the **Network log**:
 
@@ -261,6 +261,9 @@ For example, suppose you want to verify that your resources are using reasonable
 1. Close the **Search** pane by clicking the **Close** (X) button on the right.
 
 1. Close the **Headers** pane by clicking the **Close** (X) button on the left.
+
+See also:
+* [HTTP caching](https://developer.mozilla.org/docs/Web/HTTP/Guides/Caching) at MDN.
 
 
 <!-- ====================================================================== -->
