@@ -417,7 +417,7 @@ To observe WebSocket throttling:
 ![Messages sent and without throttling](./reference-images/messages-with-without-throttling.png)
 
 See also:
-* [Custom throttling profile](#create-custom-throttling-profiles), above.
+* [Create a custom throttling profile](#create-a-custom-throttling-profile), above.
 
 
 <!-- ---------- -->
