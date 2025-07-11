@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-# PWA landing page
+# PWA landing page; https://learn.microsoft.com/microsoft-edge/progressive-web-apps/landing/
 title: Progressive Web Apps (PWAs) documentation
 summary: Develop a web app that can be installed and run on all devices, from one codebase. Provide a native-like UX, or run in the browser.
 # summary < 160 chars; cursor 169
@@ -24,11 +24,11 @@ metadata:
       # - linkListType: download
       # - linkListType: get-started
       # - linkListType: how-to-guide
-      # - linkListType: learn
       # - linkListType: overview
       # - linkListType: quickstart
       # - linkListType: reference
       # - linkListType: sample
+      # - linkListType: training
       # - linkListType: tutorial
       # - linkListType: video
       # - linkListType: whats-new
