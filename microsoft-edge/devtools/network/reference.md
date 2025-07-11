@@ -41,7 +41,7 @@ The **Network** tool has the following features, to inspect network activity for
    * [Manually clear the browser cache](#manually-clear-the-browser-cache)
    * [Emulate offline](#emulate-offline)
    * [Emulate slow network connections](#emulate-slow-network-connections)
-      * [Create custom throttling profiles](#create-custom-throttling-profiles)
+      * [Create a custom throttling profile](#create-a-custom-throttling-profile)
       * [Throttle WebSocket connections](#throttle-websocket-connections)
       * [Emulate slow network connections from the Network Conditions tool](#emulate-slow-network-connections-from-the-network-conditions-tool)
    * [Manually clear browser cookies](#manually-clear-browser-cookies)
@@ -94,7 +94,7 @@ The **Network** tool has the following features, to inspect network activity for
    * [Copy property values from network requests to your clipboard](#copy-property-values-from-network-requests-to-your-clipboard)
 * [Change the layout of the Network tool](#change-the-layout-of-the-network-tool)
    * [Hide the Filters pane](#hide-the-filters-pane)
-   * [Big request rows](#big-request-rows)
+   * [Use big request rows](#use-big-request-rows)
    * [Hide the Overview pane](#hide-the-overview-pane)
 * [See also](#see-also)
 
@@ -269,22 +269,61 @@ See also [Simulate a slower network connection](../network/index.md#simulate-a-s
 
 
 <!-- ---------- -->
-###### Create custom throttling profiles
-<!-- https://developer.chrome.com/docs/devtools/network/reference/#throttling-profile -->
+###### Create a custom throttling profile
+<!-- Create custom throttling profiles  https://developer.chrome.com/docs/devtools/network/reference/#throttling-profile -->
 
-In addition to presets, such as slow or fast 4G, you can also add your own custom throttling profiles:
+In addition to presets, such as slow or fast 4G, you can also add your own custom throttling profiles.
 
-1. In DevTools, at the top of the **Network** tool, click the **Throttling** dropdown menu, and then select **Custom** > **Add**.
+To create a custom throttling profile:
 
-   The DevTools **Settings** page opens, with the **Throttling** page selected.  This is the same as selecting **Customize and control DevTools**, and then selecting the **Throttling** page.
+1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
-1. Set up a new throttling profile as described in [Set up custom network throttling profile](../settings/throttling.md#set-up-custom-network-throttling-profile) in _Throttling_.<!-- todo: test this link after merging https://github.com/MicrosoftDocs/edge-developer/pull/3473 to "main" then merging "main" into this PR 3405 -->
+1. Right-click the webpage and then select **Inspect**.
 
-1. In the **Network** tool, click the **Throttling** dropdown menu, and then select your custom throttling profile, such as **Profile1**:
+   DevTools opens.
 
-   ![A custom profile selected from the Throttling menu, causing a warning icon on the Network tab](./reference-images/custom-profile-selected.png)
+1. Select **Customize and control DevTools** (...) > **Settings** > **Throttling**.
 
-A warning (![Throttling warning icon](./reference-images/throttling-warning-icon.png)) icon is displayed in the **Network** tab, to remind you that throttling is enabled.
+   Or, at the top of the **Network** tool, click the **Throttling** dropdown menu, and then select **Custom** > **Add**.  The DevTools **Settings** page opens, with the **Throttling** page selected.
+
+1. In the **Network throttling profiles** section, click the **Add profile** button.
+
+1. In the **Profile Name** text box, enter **10kbps** (for example).
+
+1. In the **Download** text box, enter **10** (for 10 kbit/s).
+
+1. In the **Upload** text box, enter **10** (for 10 kbit/s).
+
+1. In the **Latency** text box, enter **10** (for 10 ms).
+
+1. In the **Packet Loss** text box, enter **1** (for 1%).
+
+1. In the **Packet Queue Length** text box, enter **10**.
+
+1. Select the **Packet Reordering** checkbox.
+
+   ![Creating a custom throttling profile in DevTools > Settings > Throttling](./reference-images/create-custom-network-throttling-profile.png)
+
+1. Click the **Add** button.
+
+   The custom throttling profile is displayed:
+
+   ![Created a custom throttling profile in DevTools > Settings > Throttling](./reference-images/created-custom-network-throttling-profile.png)
+
+1. In the **Settings** pane, click the **Close** (X) button.
+
+1. Select the **Network** tool.
+
+1. In the **Throttling** dropdown menu, in the **Custom** section, select your custom throttling profile, such as **10kbps**:
+
+   ![Selecting a custom profile in the Throttling dropdown menu](./reference-images/custom-profile-selected.png)
+
+   A warning (![Throttling warning icon](./reference-images/throttling-warning-icon.png)) icon is displayed in the **Network** tab, to remind you that throttling is enabled.
+
+<!-- todo: un-comment after merge https://github.com/MicrosoftDocs/edge-developer/pull/3473
+See also:
+* [Set up custom network throttling profile](../settings/throttling.md#set-up-custom-network-throttling-profile) in _Throttling_.
+-->
 
 
 <!-- ---------- -->
@@ -293,7 +332,7 @@ A warning (![Throttling warning icon](./reference-images/throttling-warning-icon
 
 In addition to HTTP requests, DevTools throttles WebSocket connections.
 
-We'll create a slow custom throttling profile, to show the difference between non-throttled and throttled WebSocket connections.  We'll initiate a new connection by using a test tool, Online Websocket Tester.
+We'll create a slow custom throttling profile, to show the difference between non-throttled and throttled WebSocket connections.
 
 To observe WebSocket throttling:
 
@@ -339,7 +378,7 @@ To observe WebSocket throttling:
 
    **Without throttling:**
 
-1. In the **Network** tool, in the **Throttling** dropdown list, make sure **No throttling** is selected.
+1. In the **Network** tool, in the **Throttling** dropdown menu, make sure **No throttling** is selected.
 
 1. In the **Online WebSocket Tester** webpage, in the message text box, delete **Hello PieSocket!**, and enter **DevTools no throttling**.
 
@@ -363,7 +402,7 @@ To observe WebSocket throttling:
 
    **With throttling:**
 
-1. In DevTools, in the **Network** tool, in the **Throttling** dropdown list, select **Custom** > **10kbps**.
+1. In DevTools, in the **Network** tool, in the **Throttling** dropdown menu, select **Custom** > **10kbps**.
 
 1. In the **Online WebSocket Tester** webpage, in the message text box, delete **DevTools no throttling**, and enter **DevTools with throttling**.
 
@@ -1167,8 +1206,8 @@ The **Network** tool reads and shows initiators for the requests imported from H
 
 
 <!-- ------------------------------ -->
-#### Copy a request, a filtered set of requests, or all of them to the clipboard
-<!-- https://developer.chrome.com/docs/devtools/network/reference/#copy -->
+#### Copy one or more requests to the clipboard
+<!-- Copy a request, a filtered set of requests, or all of them to the clipboard  https://developer.chrome.com/docs/devtools/network/reference/#copy -->
 <!-- todo: different than upstream content outline, which has lists:
 Copy as
 Copy all
