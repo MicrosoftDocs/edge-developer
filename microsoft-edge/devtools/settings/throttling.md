@@ -41,13 +41,13 @@ To calibrate CPU throttling presets:
 
 1. Go to a webpage, such as the [Peer connection](https://webrtc.github.io/samples/src/content/peerconnection/pc1/) WebRTC sample.
 
-1. Right-click the webpage and then select **Inspect**.
+1. Right-click the webpage, and then select **Inspect**.
 
    DevTools opens.
 
 1. Select the **Performance** tool.
 
-1. Select the **Capture settings** (![Capture settings icon](./throttling-images/capture-settings-icon.png)) button, and then in the **CPU throttling** dropdown menu, select **Calibrate**.
+1. Click the **Capture settings** (![Capture settings icon](./throttling-images/capture-settings-icon.png)) button, and then in the **CPU throttling** dropdown menu, select **Calibrate**.
 
    ![The CPU throttling dropdown menu before calibrating](./throttling-images/cpu-throttling-menu-before-calibrate.png)
 
@@ -57,7 +57,7 @@ To calibrate CPU throttling presets:
 
    ![The CPU throttling dropdown menu before calibrating, in Environment settings](./throttling-images/envir-cpu-throttling-menu-before-calibrate.png)
 
-   <!-- Or, click the **Customize and control DevTools** (![Customize and control DevTools icon](./throttling-images/customize-and-control-devtools-icon.png)) button, and then select **Settings** (![Settings icon](./throttling-images/settings-icon.png)), and then on the left, select the **Throttling** settings page. -->
+   <!-- Or, click the **Customize and control DevTools** (![Customize and control DevTools icon](./throttling-images/customize-and-control-devtools-icon.png)) button, select **Settings** (![Settings icon](./throttling-images/settings-icon.png)), and then on the left, select the **Throttling** settings page. -->
 
    The DevTools **Settings** > **Throttling** page opens.
 
@@ -80,7 +80,7 @@ To use your calibrated CPU throttling rates:
 
 1. In DevTools, select the **Performance** tool.
 
-1. Select the **Capture settings** (![Capture settings icon](./throttling-images/capture-settings-icon.png)) button, and then use the **CPU throttling** dropdown menu.
+1. Click the **Capture settings** (![Capture settings icon](./throttling-images/capture-settings-icon.png)) button, and then use the **CPU throttling** dropdown menu.
 
    Or, in the **Environment settings** section, use the **CPU throttling** dropdown menu.
 
@@ -97,7 +97,7 @@ To add a custom network throttling profile:
 
 1. Go to a webpage, such as the [Peer connection](https://webrtc.github.io/samples/src/content/peerconnection/pc1/) WebRTC sample.
 
-1. Right-click the webpage and then select **Inspect**.
+1. Right-click the webpage, and then select **Inspect**.
 
    DevTools opens.
 
@@ -122,9 +122,13 @@ To add a custom network throttling profile:
    * **Packet Queue Length** as a number.
    * **Packet Reordering** flag, on or off.
 
-1. Click the **Add** button to save the new profile.  You can now select the custom profile from the **Throttling** dropdown menu in the **Network** tool.
+1. Click the **Add** button to save the new profile.
 
-   By using packet-related parameters, you can throttle [WebRTC](https://webrtc.org) applications without using third-party software.  You can try these parameters in the [Peer connection](https://webrtc.github.io/samples/src/content/peerconnection/pc1/) WebRTC sample:
+1. In DevTools **Settings**, click the **Close** (![Close icon](./throttling-images/close-settings-icon.png)) button.
+
+You can now select the custom profile from the **Throttling** dropdown menu in the **Network** tool.
+
+By using packet-related parameters, you can throttle [WebRTC](https://webrtc.org) applications without using third-party software.  You can try these parameters in the [Peer connection](https://webrtc.github.io/samples/src/content/peerconnection/pc1/) WebRTC sample:
 
    ![Peer connection sample](./throttling-images/peer-connection-sample.png)<!-- cleaned strings -->
 
