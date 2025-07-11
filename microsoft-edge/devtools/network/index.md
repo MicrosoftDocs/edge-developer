@@ -244,7 +244,7 @@ Use the **Search** pane when you need to search the HTTP headers and responses o
 
 For example, use the **Search** pane to verify that your resources are using the correct cache policies, as follows:
 
-1. Select **Search** (![Search](./index-images/search-icon.png)).  The **Search** pane opens to the left of the **Network log**:
+1. Click the **Search** (![Search](./index-images/search-icon.png)) button.  The **Search** pane opens to the left of the **Network log**:
 
    ![The Search pane](./index-images/search-empty.png)
 

@@ -57,7 +57,7 @@ To calibrate CPU throttling presets:
 
    ![The CPU throttling dropdown menu before calibrating, in Environment settings](./throttling-images/envir-cpu-throttling-menu-before-calibrate.png)
 
-   Or, click the **Customize and control DevTools** (![Customize and control DevTools icon](./throttling-images/customize-and-control-devtools-icon.png)) button, and then select **Settings** (![Settings icon](./throttling-images/settings-icon.png)), and then on the left, select the **Throttling** settings page.
+   <!-- Or, click the **Customize and control DevTools** (![Customize and control DevTools icon](./throttling-images/customize-and-control-devtools-icon.png)) button, and then select **Settings** (![Settings icon](./throttling-images/settings-icon.png)), and then on the left, select the **Throttling** settings page. -->
 
    The DevTools **Settings** > **Throttling** page opens.
 
