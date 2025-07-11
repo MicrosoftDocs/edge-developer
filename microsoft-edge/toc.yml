@@ -851,6 +851,10 @@
             - name: Add custom UI to DevTools using extensions
               href: ./devtools/customize/extensions.md
               displayName: Extensions
+
+            - name: Throttling
+              href: ./devtools/settings/throttling.md
+              displayName: Settings
 # Remote debugging ------------------------------------------------------------
         - name: Remote debugging
           items:
