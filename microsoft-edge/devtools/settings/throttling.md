@@ -47,7 +47,7 @@ To calibrate CPU throttling presets:
 
 1. Select the **Performance** tool.
 
-1. Click the **Capture settings** (![Capture settings icon](./throttling-images/capture-settings-icon.png)) button, and then in the **CPU throttling** dropdown menu, select **Calibrate**.
+1. Click the **Capture settings** (![Capture settings icon](./throttling-images/capture-settings-icon.png)) button, and then in the **CPU throttling** dropdown menu, select **Calibrate**:
 
    ![The CPU throttling dropdown menu before calibrating](./throttling-images/cpu-throttling-menu-before-calibrate.png)
 
@@ -132,7 +132,20 @@ By using packet-related parameters, you can throttle [WebRTC](https://webrtc.org
 
    ![Peer connection sample](./throttling-images/peer-connection-sample.png)<!-- cleaned strings -->
 
-To edit or remove an existing profile, click the **Edit** (pencil) or **Delete** (wastebasket) buttons that appear on hover.
+
+<!-- ====================================================================== -->
+## Edit or remove a custom network throttling profile
+<!-- bottom of https://developer.chrome.com/docs/devtools/settings/throttling#network-throttling -->
+
+To edit or remove an existing profile:
+
+1. In DevTools, in the **Network** tool, select the **Throttling** dropdown menu, and then in the **Custom** section, select **Add**.
+
+   Or, select **Customize and control DevTools** (![Customize and control DevTools icon](./throttling-images/customize-and-control-devtools-icon.png)) > **Settings** (![Settings icon](./throttling-images/settings-icon.png)) > **Throttling**.
+
+   The DevTools **Settings** > **Throttling** page opens.
+
+1. In the **Network throttling profiles** section, hover over a profile, and then click the **Edit** (![Edit icon](./throttling-images/edit-icon.png)) or **Remove** (![Remove icon](./throttling-images/remove-icon.png)) button.
 
 
 <!-- ====================================================================== -->
