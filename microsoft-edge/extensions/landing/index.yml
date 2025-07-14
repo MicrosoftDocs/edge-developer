@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-# Extensions landing page
+# Extensions landing page; https://learn.microsoft.com/microsoft-edge/extensions/landing/
 title: Microsoft Edge extensions documentation
 summary: Develop an extension (add-on) for Microsoft Edge.
 
@@ -23,11 +23,11 @@ metadata:
       # - linkListType: download
       # - linkListType: get-started
       # - linkListType: how-to-guide
-      # - linkListType: learn
       # - linkListType: overview
       # - linkListType: quickstart
       # - linkListType: reference
       # - linkListType: sample
+      # - linkListType: training
       # - linkListType: tutorial
       # - linkListType: video
       # - linkListType: whats-new
