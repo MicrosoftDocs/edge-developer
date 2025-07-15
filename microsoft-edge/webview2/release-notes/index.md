@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/01/2025
+ms.date: 08/11/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -16,8 +16,8 @@ These Release Notes provide information about new features and bug fixes that ar
 the templates to copy for incoming sections are in ./includes/templates.md
 
 this webpage covers the most recent ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers: 
-July 2025
-Jun B 2025
+Aug 2025
+Jul 2025
 Jun 2025
 May 2025
 Apr 2025
@@ -27,11 +27,11 @@ Mar 2025
 -->
 
 
-<!-- Jul 2025 Release SDK -->
+<!-- Aug 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.####.##
 
-Release Date: Monthname nn, 2025
+Release Date: August 11, 2025
 
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
 
@@ -80,14 +80,14 @@ description
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Jul 2025 Release SDK -->
+<!-- end of Aug 2025 Release SDK -->
 
 
-<!-- Jul 2025 Prerelease SDK -->
+<!-- Aug 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
 ## 1.0.####-prerelease
 
-Release Date: Monthname nn, 2025
+Release Date: August 11, 2025
 
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
 
@@ -157,10 +157,10 @@ description
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Jul 2025 Prerelease SDK -->
+<!-- end of Aug 2025 Prerelease SDK -->
 
 
-<!-- Jun B 2025 Release SDK -->
+<!-- Jul 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.3351.48
 
@@ -222,10 +222,10 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 
 <!-- * Fixed behavior.  ([Issue #]()) -->
 
-<!-- end of Jun B 2025 Release SDK -->
+<!-- end of Jul 2025 Release SDK -->
 
 
-<!-- Jun B 2025 Prerelease SDK -->
+<!-- Jul 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
 ## 1.0.3415-prerelease
 
@@ -727,7 +727,7 @@ We're actively investigating these issues, and we encourage you to report any pr
 
 <!-- * Fixed behavior.  ([Issue #]()) -->
 
-<!-- end of Jun B 2025 Prerelease SDK -->
+<!-- end of Jul 2025 Prerelease SDK -->
 
 
 <!-- Jun 2025 Release SDK -->
