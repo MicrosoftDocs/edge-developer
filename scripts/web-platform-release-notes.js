@@ -7,7 +7,8 @@ import playwright from "playwright";
 
 const EDGE_OT_ROOT = "https://developer.microsoft.com/en-us";
 const EDGE_OT_PAGE = `${EDGE_OT_ROOT}/microsoft-edge/origin-trials/trials`;
-// If the next beta becomes stable within the next N days, start working on the next next beta.
+// If Beta becomes stable within the next N coming days, generate the release notes for Canary.
+// This way, the release notes are ready for when Canary becomes Beta.
 const DAYS_NUMBER_BEFORE_RELNOTES_NOTICE = 15;
 
 async function fetchChromeStatusAPI(url) {
