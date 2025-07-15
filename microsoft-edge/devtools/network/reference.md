@@ -105,6 +105,20 @@ The **Network** tool has the following features, to inspect network activity for
 
 By default, DevTools records all network requests in the **Network** tool, so long as DevTools is open.
 
+For example: 
+
+1. Go to [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or tab.
+
+1. Right-click the webpage and then select **Inspect**.
+
+   DevTools opens.
+
+1. In DevTools, select the **Network** tool.
+
+1. Refresh the webpage.
+
+   The **Stop recording network log** button is red and is available:
+
 ![The Network tool](./reference-images/panel.png)
 
 
@@ -123,7 +137,7 @@ To stop recording requests:
 #### Clear requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#clear -->
 
-To clear all requests from the Requests table, in the **Network** tool, click the **Clear network log** (![Clear](./reference-images/clear-requests-icon.png)) button:
+To clear all requests from the **Requests** table, in the **Network** tool, click the **Clear network log** (![Clear](./reference-images/clear-requests-icon.png)) button:
 
 ![The 'Clear network log' button](./reference-images/clear-requests.png)
 
@@ -438,9 +452,9 @@ See also:
 #### Manually clear browser cookies
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#clear-cookies -->
 
-To manually clear browser cookies at any time, right-click anywhere in the Requests table, and then select **Clear browser cookies**.
+To manually clear browser cookies at any time, right-click anywhere in the **Requests** table, and then select **Clear browser cookies**.
 
-![The 'Clear browser cookies' right-click command in the Requests table of the Network tool](./reference-images/clear-browser-cookies-menu.png)
+![The 'Clear browser cookies' right-click command in the **Requests** table of the Network tool](./reference-images/clear-browser-cookies-menu.png)
 
 
 <!-- ------------------------------ -->
@@ -448,8 +462,11 @@ To manually clear browser cookies at any time, right-click anywhere in the Reque
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#override-headers -->
 
 See also:
-* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)<!-- todo: add upstream section about HTTP response headers -->
+* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)
 * [Override files and HTTP response headers](https://developer.chrome.com/docs/devtools/overrides#override-headers) in _Override web content and HTTP response headers locally_.
+<!-- todo: link to section when exists, and remove first link
+* [Override HTTP response headers](../javascript/overrides.md#override-http-response-headers) in _Override webpage resources with local copies (Overrides tab)_.
+-->
 
 
 <!-- ------------------------------ -->
@@ -514,7 +531,8 @@ To search across request headers, payloads, and responses:
 
 1. Click one of the search results.  The **Network** tool highlights in yellow the request that matched.  The **Network** tool also opens the **Headers** or **Response** tab and highlights the string that matched there, if any.
 
-<!-- ![The Search tab on the right in the Network tool](todo png: search-requests.png) -->
+![The Search tab on the right in the Network tool](./reference-images/search-requests.png)
+<!-- https://microsoftedge.github.io/Demos/network-tutorial/ -->
 
 To refresh search results, in the **Search** tab, click the **Refresh** (![Refresh icon](./reference-images/refresh-search-icon.png)) button.
 
@@ -613,7 +631,7 @@ Filtering out any requests that were inactive around 300 ms:
 #### Hide data URLs
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#hide_data_urls -->
 
-[Data URLs](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) are small files embedded into other documents.  Any request that displays in the Requests table that starts with `data:` is a data URL.
+[Data URLs](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) are small files embedded into other documents.  Any request that displays in the **Requests** table that starts with `data:` is a data URL.
 
 To hide the requests, turn off the **Hide data URLs** checkbox:
 
@@ -626,11 +644,12 @@ To hide the requests, turn off the **Hide data URLs** checkbox:
 
 To focus on the code you author, you can filter out irrelevant requests sent by extensions you may have installed in Microsoft Edge.  Extension requests have URLs that start with `chrome-extension://`.
 
-To hide extension requests, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Hide extension URLs** so that a checkmark appears next to it.
+To hide extension requests, in the **Filters** action bar, select the **More filters** dropdown menu, and then select **Hide extension URLs** so that a checkmark appears next to it:
 
-<!-- ![Extension URLs hidden from the Requests table](todo png: extension-urls-hidden.png, for Filter Requests) -->
+![Extension URLs hidden from the **Requests** table](./reference-images/extension-urls-hidden.png)<!-- better would be "5 / 10 requests" instead of "5 requests" -->
+<!-- https://microsoftedge.github.io/Demos/network-tutorial/ -->
 
-The status bar at the bottom displays the number of the shown requests out of the total.
+The status bar at the bottom displays the number of the shown requests out of the total, such as **5 / 10 requests**.
 
 
 <!-- ------------------------------ -->
@@ -639,7 +658,7 @@ The status bar at the bottom displays the number of the shown requests out of th
 
 To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, in the **3rd-party requests** (**More filters**) dropdown list, and then select **Blocked response cookies** so that a checkmark appears next to it.<!-- Try it on this [demo page](https://samesite-sandbox.glitch.me/). -->  Try it on the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, though there are no blocked response cookies:
 
-![The Requests table shows only the requests with blocked response cookies](./reference-images/blocked-response-cookies.png)
+![The **Requests** table shows only the requests with blocked response cookies](./reference-images/blocked-response-cookies.png)
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
@@ -657,9 +676,10 @@ Additionally, the **Network** tool shows a warning icon next to a request with c
 
 To filter out everything except blocked requests, in the **Filters** action bar, select **More filters** > **Blocked requests**, so that a checkmark appears.  To test this, you can use the **Network request blocking** tool in the **Quick View** panel at the bottom of DevTools; see [Block requests](./index.md#block-requests) in _Inspect network activity_.
 
-<!-- ![The Requests table shows only blocked requests](todo png: blocked-requests.png, for Filter Requests) -->
+![The **Requests** table shows only blocked requests](./reference-images/blocked-requests.png)
+<!-- https://microsoftedge.github.io/Demos/network-tutorial/ -->
 
-The **Requests** table highlights blocked requests in red.  The status bar at the bottom displays the number of the shown requests out of the total.
+The **Requests** table highlights blocked requests in red.  The status bar at the bottom displays the number of the shown requests out of the total, such as **15 / 17 requests**.
 
 
 <!-- ------------------------------ -->
@@ -668,7 +688,7 @@ The **Requests** table highlights blocked requests in red.  The status bar at th
 
 To filter out everything except the requests with origin that differs from page origin, in the **Filters** action bar, select **More filters** > **3rd-party requests**, so that a checkmark appears.  Try it on the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.
 
-![The Requests table shows only the third-party requests](./reference-images/third-party-requests.png)
+![The **Requests** table shows only the third-party requests](./reference-images/third-party-requests.png)
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
@@ -696,7 +716,7 @@ The **Waterfall** column is off by default.  To turn on the **Waterfall** column
 
 To change how the **Waterfall** column sorts requests:
 
-* Right-click the header of the Requests table, click **Waterfall**, and then select one of the following options:
+* Right-click the header of the **Requests** table, click **Waterfall**, and then select one of the following options:
 
    * **Start Time** - The first request that was initiated is placed at the top.
    
@@ -728,9 +748,9 @@ So long as DevTools is open, it logs all requests in the **Network** tool.  Use 
 
 Use the **Requests** table to display a log of all requests made while DevTools has been open.  To reveal more information about each item, click or hover on requests.
 
-![The Requests table](./reference-images/requests-table.png)
+![The **Requests** table](./reference-images/requests-table.png)
 
-The Requests table displays the following columns by default:
+The **Requests** table displays the following columns by default:
 
 - **Name**. The file name of the resource, or an identifier for the resource.
 - **Status**. The HTTP status code.
@@ -744,31 +764,31 @@ The Requests table displays the following columns by default:
 - **Time**. The total duration, from the start of the request to the receipt of the final byte in the response.
 - **Fulfilled by**. Whether the request was fulfilled by the HTTP cache or the app's service worker.
 
-The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 
 <!-- ---------- -->
 ###### Add or remove columns
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#columns -->
 
-Right-click the header of the Requests table and select a column name to hide or show it.  The currently displayed columns have checkmarks next to them.
+Right-click the header of the **Requests** table and select a column name to hide or show it.  The currently displayed columns have checkmarks next to them.
 
-![Adding a column to the Requests table](./reference-images/requests-add-column.png)
+![Adding a column to the **Requests** table](./reference-images/requests-add-column.png)
 
 
 <!-- ---------- -->
 ###### Add custom columns for response headers
 <!-- Add custom columns https://developer.chrome.com/docs/devtools/network/reference/#custom-columns -->
 
-To add a custom column to the Requests table:
+To add a custom column to the **Requests** table:
 
-1. Right-click the header of the Requests table and then select **Response Headers** > **Manage Header Columns**.
+1. Right-click the header of the **Requests** table and then select **Response Headers** > **Manage Header Columns**.
 
    The **Manage Header Columns** popup window opens.
 
 1. Click the **Add custom header** button, enter the custom header name, and then click **Add**. 
 
-   ![Adding a custom column to the Requests table](./reference-images/requests-add-custom-column.png)
+   ![Adding a custom column to the **Requests** table](./reference-images/requests-add-custom-column.png)
 
 
 <!-- ------------------------------ -->
@@ -779,7 +799,8 @@ If inline frames on a page initiate a lot of requests, you can make the request 
 
 To group requests by iframes, in the **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Group by frame** checkbox.
 
-<!-- ![The network request log with requests grouped by iframes](todo png: network-request-log-iframes.png) -->
+![The network request log with requests grouped by iframes](./reference-images/network-request-log-iframes.png)<!-- todo: redo showing grouped requests, using different demo page -->
+<!-- try https://microsoftedge.github.io/Demos/network-tutorial/ -->
 
 To view a request initiated by an inline frame, expand it in the request log.
 
@@ -790,7 +811,7 @@ To view a request initiated by an inline frame, expand it in the request log.
 
 Use the **Waterfall** column of the **Requests** pane to view the timing relationships of requests.  The default organization of the **Waterfall** column uses the start time of the requests.  So, requests that are farther to the left started earlier than the requests that are farther to the right.
 
-The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 To see the different ways that you can sort the Waterfall, see [Sort by activity phase](#sort-by-activity-phase), above.
 
@@ -805,7 +826,7 @@ The **Waterfall** column of the **Requests** pane:
 
 To view the messages of a WebSocket connection:
 
-1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, or the [Online Websocket Tester](https://www.piesocket.com/websocket-tester).
+1. Go to a webpage, such as the [Online Websocket Tester](https://www.piesocket.com/websocket-tester).
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -815,15 +836,15 @@ To view the messages of a WebSocket connection:
 
 1. Refresh the webpage.
 
-1. Under the **Name** column of the **Requests** table, click the URL of the WebSocket connection.
+1. In the **Name** pane, click the URL of the WebSocket connection, such as **channel_1?api_key=...**.
 
-1. Click the **Messages** tab.  The table shows the last 100 messages.
+1. Click the **Messages** tab.  The table shows the last 100 messages:
 
-To refresh the table, re-click the name of the WebSocket connection under the **Name** column of the **Requests** table.
+![The Messages tab](./reference-images/messages-tab.png)
 
-![The Messages tab](./reference-images/messages-tab.png)<!-- todo: sign up, show Messages tab -->
+To refresh the **Requests** table, in the **Name** pane, click the name of the WebSocket connection again.
 
-The table contains the following three columns:
+The **Requests** table contains the following three columns:
 
 *  **Data**.  The message payload.  If the message is plain text, it is displayed here.  For binary opcodes, this column displays the name and code of the opcode.  The following opcodes are supported: 
    * Continuation Frame
@@ -836,7 +857,7 @@ The table contains the following three columns:
 
 *  **Time**.  The time when the message was received or sent.
 
-Messages are color-coded according to each type:
+Messages are color-coded according to each type:<!-- todo: true? -->
 
 *  Outgoing text messages are light-green.
 *  Incoming text messages are white.
@@ -848,17 +869,22 @@ Messages are color-coded according to each type:
 #### Analyze events in a stream
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#event-stream -->
 
-To view the events that servers stream through [Fetch API](https://web.dev/articles/introduction-to-fetch),<!-- todo: link to MDN instead --> EventSource API (see [Server-sent events](https://developer.mozilla.org/docs/Web/API/Server-sent_events)), and XHR:
+To view the events that servers stream through the Fetch API, the EventSource API, and XHR:
 
-1. Record network requests on a page that streams events, per [Record network requests](#record-network-requests), above.
+1. Record network requests on a page that streams events, per [Record network requests](#record-network-requests),<!-- todo: inline those steps here --> above.<!-- For example, open this [demo page](https://fetch-eventstream.glitch.me) [hosting no longer supported] and click any of the three buttons. -->
 
 1. In the **Network** tool, select a request, and then open the **EventStream** tab.
 
-   <!-- ![The EventStream tab](./reference-images/event-stream.png) - not created -->
+   <!-- ![The EventStream tab](./reference-images/event-stream.png) - todo png -->
 
 To filter events, specify a regular expression in the filter bar at the top of the **EventStream** tab.
 
 To clear the list of captured events, click the **Clear** (![EventStream Clear icon](./reference-images/eventstream-clear-icon.png)) button.
+
+See also:
+* [Using the Fetch API](https://developer.mozilla.org/docs/Web/API/Fetch_API/Using_Fetch)
+* [Server-sent events](https://developer.mozilla.org/docs/Web/API/Server-sent_events)) - EventSource API.
+* [XMLHttpRequest)](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) - XHR.
 
 
 <!-- ------------------------------ -->
@@ -943,7 +969,7 @@ DevTools can also display only provisional headers due to security reasons.
 To display the query string parameters and form data of an HTTP request in a human-readable format:
 
 <!-- upstream:
-To view the request's payload, that is, its query string parameters and form data, select a request from the Requests table and open the Payload tab. -->
+To view the request's payload, that is, its query string parameters and form data, select a request from the **Requests** table and open the Payload tab. -->
 
 1. In the **Requests** table, click the name of the request.
 
@@ -1018,9 +1044,9 @@ For more information about each of the phases that may be displayed in the **Tim
 ###### Preview a timing breakdown
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#timing-preview -->
 
-To display a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.
+To display a preview of the timing breakdown of a request, in the **Waterfall** column of the **Requests** table, hover on the entry for the request.
 
-The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 ![Previewing the timing breakdown of a request](./reference-images/resources-waterfall-hover.png)
 
@@ -1072,7 +1098,7 @@ To display the initiators and dependencies of a request, hold **Shift** and hove
 
 ![Displaying the initiators and dependencies of a request](./reference-images/resources-initiators-dependencies.png)
 
-When the Requests table is ordered chronologically, if you hover on a line, the line preceding it displays a green request.  The green request is the initiator of the dependency.  If another green request is displayed on the line before that, that higher request is the initiator of the initiator.  And so on.
+When the **Requests** table is ordered chronologically, if you hover on a line, the line preceding it displays a green request.  The green request is the initiator of the dependency.  If another green request is displayed on the line before that, that higher request is the initiator of the initiator.  And so on.
 
 
 <!-- ------------------------------ -->
@@ -1083,7 +1109,7 @@ DevTools displays the timing of the `DOMContentLoaded` and `load` events in mult
 
 * In the **Overview** pane with vertical lines.
 
-* In the **Waterfall** column of the Request table with vertical lines.  The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a Requests table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+* In the **Waterfall** column of the Request table with vertical lines.  The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 * In the **Summary** pane, at the bottom of the **Network** tool, with timing labels.
 
@@ -1216,7 +1242,7 @@ Copy all listed
 
 <!-- old content to replace: -->
 
-Under the **Name** column of the Requests table, right-click a request, click **Copy**, and then select one of the following options:
+Under the **Name** column of the **Requests** table, right-click a request, click **Copy**, and then select one of the following options:
 
 <!-- todo: update per latest ui -->
 | Name | Details |
