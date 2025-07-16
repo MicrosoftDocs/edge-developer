@@ -879,13 +879,13 @@ Messages are color-coded according to each type:
 
 To view the events that servers stream through the Fetch API, the EventSource API, and XHR:
 
-1. Go to a webpage that streams events.<!-- todo in later PR: use EventSource API in a demo webpage - For example, open the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page. -->
+1. Go to a webpage that streams events.<!-- For example, open the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.  todo: add EventSource API to the demo -->
 
    Network requests are automatically recorded by DevTools.
 
 1. In the **Network** tool, select a request, and then open the **EventStream** tab.<!-- not present for https://microsoftedge.github.io/Demos/network-tutorial/ -->
 
-   <!-- ![The EventStream tab](./reference-images/event-stream.png) - todo png: find site that uses EventSource -->
+   <!-- ![The EventStream tab](./reference-images/event-stream.png) - todo png -->
 
 To filter events, specify a regular expression in the filter bar at the top of the **EventStream** tab.
 
@@ -1337,7 +1337,9 @@ The **Network** tool reads and shows initiators for the requests that are import
 <!-- ------------------------------ -->
 #### Copy one or more requests to the clipboard
 <!-- Copy a request, a filtered set of requests, or all of them to the clipboard  https://developer.chrome.com/docs/devtools/network/reference/#copy -->
-<!-- todo: different than upstream content outline, which has lists:
+
+<!-- reconcile old downstream & new upstream section layout
+upstream content outline, has lists:
 Copy as
 Copy all
 Copy all listed
@@ -1458,24 +1460,32 @@ By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, 
 #### Use big request rows
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#request-rows -->
 
-<!-- old content: -->
-Use big request rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.
+Use big request rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using big rows; for example:
 
-To enable large rows, select the **Big request rows** checkbox.  An example of large request rows in the **Requests** pane:
+* The bottom value of the **Size** column is the uncompressed size of a request.
 
-![An example of big request rows in the Requests pane](./reference-images/big-request-rows.png)
+* The **Priority** column (not shown by default) shows both the initial (bottom value) and final (top value) fetch priority.
 
 
-<!-- todo: merge -->
-<!-- new upstream content: -->
-Use big rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using big rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request, and the **Priority** column shows both the initial (bottom value) and final (top value) fetch priority.
+To enable big rows:
 
-Open **Settings**, and then click **Big request rows** to see big rows.
+1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
-Big request rows turned on.
+1. Right-click the webpage, and then select **Inspect**.
 
-Hide the Over
+   DevTools opens.
 
+1. In DevTools, select the **Network** tool.
+
+1. Refresh the webpage.
+
+   Requests are shown in small rows.
+
+1. In the **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Big request rows** checkbox.
+
+   Requests are shown in big rows:
+
+   ![An example of big request rows in the Requests pane](./reference-images/big-request-rows.png)
 
 
 <!-- ------------------------------ -->
