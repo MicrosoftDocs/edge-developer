@@ -22,7 +22,7 @@ When you set up a folder for local overrides the first time, that folder should 
 
 <!-- ====================================================================== -->
 <!-- ## Override HTTP response headers -->
-<!-- todo: add section equiv to https://developer.chrome.com/docs/devtools/overrides#override-headers -->
+<!-- todo: in later PR: add section equiv to https://developer.chrome.com/docs/devtools/overrides#override-headers -->
 
 
 <!-- ====================================================================== -->

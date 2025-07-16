@@ -24,6 +24,14 @@ ms.date: 06/02/2025
 # Network features reference
 <!-- https://developer.chrome.com/docs/devtools/network/reference/ -->
 
+<!-- for each png, decide if we want to create screenshot or not -->
+
+<!-- variants of "to do":
+todo png:
+todo: 
+to do png: = later PR
+-->
+
 The **Network** tool has the following features, to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
 
 
@@ -107,7 +115,7 @@ By default, DevTools records all network requests in the **Network** tool, so lo
 
 For example: 
 
-1. Go to [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or tab.
+1. Go to [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) (or the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page) in a new window or tab.
 
 1. Right-click the webpage and then select **Inspect**.
 
@@ -192,16 +200,18 @@ To capture a screenshot:
 #### Replay XHR request
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#replay-xhr -->
 
+<!-- UI doesn't currently have a "Replay fetch" right-click menuitem -->
+
 To replay an XHR request, do one of the following in the **Requests** table:
 
-* Select the request and press **R**.
 * Right-click the request and select **Replay XHR**.
+* Select the request and press **R**.
 
 <!-- For example, the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page: -->
 
 <!--
-![Click Replay XHR](todo png: selecting-replay-xhr.png)
-todo: need demo page that has XHR; else no Replay XHR menuitem
+![Click Replay XHR](to do png: selecting-replay-xhr.png)
+no demo of XHR
 -->
 
 
@@ -334,10 +344,8 @@ To create a custom throttling profile:
 
    A warning (![Throttling warning icon](./reference-images/throttling-warning-icon.png)) icon is displayed in the **Network** tab, to remind you that throttling is enabled.
 
-<!-- todo: un-comment after merge https://github.com/MicrosoftDocs/edge-developer/pull/3473
 See also:
-* [Set up custom network throttling profile](../settings/throttling.md#set-up-custom-network-throttling-profile) in _Throttling_.
--->
+* [Set up custom network throttling profile](../settings/throttling.md#set-up-a-custom-network-throttling-profile) in _Throttling_.
 
 
 <!-- ---------- -->
@@ -801,6 +809,12 @@ To group requests by iframes, in the **Network** tool, click the **Network setti
 
 ![The network request log with requests grouped by iframes](./reference-images/network-request-log-iframes.png)<!-- todo: redo showing grouped requests, using different demo page -->
 <!-- try https://microsoftedge.github.io/Demos/network-tutorial/ -->
+<!-- options:
+tell ppl to run their own server, give them code at Demos repo
+expand demo to use iframes; have new button
+find MS (or MDN) page that uses iframes
+go to upstream docs url /elements/badges in Edge, don't show webpage in png
+-->
 
 To view a request initiated by an inline frame, expand it in the request log.
 
@@ -840,7 +854,7 @@ To view the messages of a WebSocket connection:
 
 1. Click the **Messages** tab.  The table shows the last 100 messages:
 
-![The Messages tab](./reference-images/messages-tab.png)
+![The Messages tab](./reference-images/messages-tab.png)<!-- todo: get an api key, redo to show green arrow & red arrow -->
 
 To refresh the **Requests** table, in the **Name** pane, click the name of the WebSocket connection again.
 
@@ -857,12 +871,14 @@ The **Requests** table contains the following three columns:
 
 *  **Time**.  The time when the message was received or sent.
 
-Messages are color-coded according to each type:<!-- todo: true? -->
+<!-- no coloring now
+Messages are color-coded according to each type:
 
 *  Outgoing text messages are light-green.
 *  Incoming text messages are white.
 *  WebSocket opcodes are light-yellow.
 *  Errors are light-red.
+-->
 
 
 <!-- ------------------------------ -->
@@ -871,11 +887,13 @@ Messages are color-coded according to each type:<!-- todo: true? -->
 
 To view the events that servers stream through the Fetch API, the EventSource API, and XHR:
 
-1. Record network requests on a page that streams events, per [Record network requests](#record-network-requests),<!-- todo: inline those steps here --> above.<!-- For example, open this [demo page](https://fetch-eventstream.glitch.me) [hosting no longer supported] and click any of the three buttons. -->
+1. Go to a webpage that streams events.<!-- to do: need demo webpage - For example, open the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page. -->
 
-1. In the **Network** tool, select a request, and then open the **EventStream** tab.
+   Network requests are automatically recorded by DevTools.
 
-   <!-- ![The EventStream tab](./reference-images/event-stream.png) - todo png -->
+1. In the **Network** tool, select a request, and then open the **EventStream** tab.<!-- not present for https://microsoftedge.github.io/Demos/network-tutorial/ -->
+
+   <!-- ![The EventStream tab](./reference-images/event-stream.png) - todo png: find site that uses EventSource -->
 
 To filter events, specify a regular expression in the filter bar at the top of the **EventStream** tab.
 
@@ -936,13 +954,23 @@ To display HTTP header data about a request:
 ###### View HTTP header source
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#header-source -->
 
-This feature doesn't exist anymore.<!-- todo -->
-
 By default, the **Headers** tab shows header names alphabetically.  To display the HTTP header names in the order they were received:
+
+1. Go to a webpage that uses XHR, such as [Removing -ms-high-contrast and embracing standards-based forced colors in Microsoft Edge](https://blogs.windows.com/msedgedev/2025/06/30/removing-ms-high-contrast-and-embracing-standards-based-forced-colors-in-microsoft-edge/).
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Select the **Network** tool.
+
+1. In the **Requests** table, select a **collect** request.
+
+   <!-- ![](view-http-header-source.png)  todo png: -->
 
 1. Open the **Headers** tab for a request.  For more information, see [Display HTTP headers](#display-http-headers), above.
 
-1. Click **view source**, next to the **Request Headers** or **Response Headers** section.
+1. Click **view source**,<!-- todo: in Edge, a checkbox.  In Chrome, a **view source** control --> next to the **Request Headers** or **Response Headers** section.
 
 
 <!-- ---------- -->
@@ -951,13 +979,13 @@ By default, the **Headers** tab shows header names alphabetically.  To display t
 
 Sometimes the **Headers** tab shows the warning message **Provisional headers are shown**.  This may be due to the following reasons:
 
-* The request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can disable caching to see the full request headers; see [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache), above.
+* The request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can select the **Disable cache** checkbox to see the full request headers, per [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache), above.  For example, go to [todo](https://microsoftedge.github.io/Demos/demo-to-do/), view DevTools Network tool, then refresh the webpage, then select the .js message.
 
-  <!-- ![Provisional headers warning message](todo png: provisional-headers-warning.png) -->
+  ![Provisional headers warning message](./reference-images/provisional-headers-warning.png)<!-- todo: redo smaller -->
 
-* The network resource isn't valid.  For example, execute `fetch("https://jec.fish.com/unknown-url/")`<!-- todo: ok url? --> in the **Console** tool.
+* The network resource isn't valid. <!-- For example, execute `fetch("https://jec.fish.com/unknown-url/")`  todo: Microsoft url --> in the **Console** tool.
 
-  <!-- ![Provisional headers warning message](todo png: provisional-headers-warning-2.png) -->
+  <!-- ![Provisional headers warning message](provisional-headers-warning-2.png) -->
 
 DevTools can also display only provisional headers due to security reasons.
 
@@ -989,6 +1017,7 @@ By default, the **Network** tool shows the payload in a human-readable form.
 To view the sources of query string parameters and form data, on the **Payload** tab, click **view source** next to the **Query String Parameters** or **Form Data** sections.
 
 <!-- ![The view source buttons](todo png: the-view-source-buttons.png) -->
+<!-- use which webpage?  need server-side processing - plan to expand /network-tutorial/ demo -->
 
 
 <!-- ---------- -->
@@ -1003,7 +1032,7 @@ To display query string parameters in a human-readable format, but with encoding
 
 1. Click **view decoded** or **view URL-encoded**.
 
-   <!-- ![Toggle URL-encoding](todo png: toggle-url-encoding.png) -->
+   ![Toggle URL-encoding](./reference-images/toggle-url-encoding.png)<!-- todo: redo placeholder -->
 
 
 <!-- ------------------------------ -->
@@ -1207,6 +1236,9 @@ Once you save a HAR file, you can import it back into DevTools for analysis by d
 <!-- incoming upstream content: -->
 <!-- todo: clean up/ merge with above -->
 
+<!-- todo: resume here -->
+
+
 HAR (HTTP Archive) is a file format used by several HTTP session tools to export the captured data.  The format is a JSON object with a particular set of fields.  See [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/).
 
 To reduce the chances of accidental leaks of sensitive information, by default you can export the "sanitized" network log in HAR format that excludes sensitive information such as `Cookie`, `Set-Cookie`, and `Authorization` headers.  If required, you can also export the log _with_ sensitive data.
@@ -1215,7 +1247,7 @@ To save all network requests to a HAR file, pick one of the two ways:
 
 * Right-click any request in the **Requests** table and select **Copy** > **Save all [listed] as HAR (sanitized)** or **Save all [listed] as HAR (with sensitive data)**.
 
-  <!-- ![Selecting 'Save all listed as HAR (sanitized)'](todo png: png) -->
+  ![Selecting 'Save all listed as HAR (sanitized)'](./reference-images/selecting-save-as-har.png)<!-- todo: redo placeholder.  lacks 2nd menuitem -->
 
 * Click **Export HAR (sanitized)** <!-- todo: ![Download icon]() --> in the action bar at the top of the **Network** tool.
 
