@@ -1,5 +1,5 @@
 # This workflow checks if it's time to generate the next beta relnotes.
-# And if so, it generates the beta relnotes and opens a PR with them.
+# And if so, it generates a draft and opens an issue to notify the team.
 
 name: Generate beta relnotes
 
@@ -28,13 +28,17 @@ jobs:
       - name: Generate release notes
         run: |
           cd scripts
-          node web-platform-release-notes.js
+          token=${{ secrets.GITHUB_TOKEN }} node web-platform-release-notes.js
 
       - name: Commit changes
         run: |
-          git checkout -b web-platform-release-notes
-          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
-          git config --local user.name "${{ github.actor }}"
-          git add .
-          git commit -m "New beta web platform release notes"
-          git push origin web-platform-release-notes
+          if ! git diff --quiet; then
+            git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+            git config --local user.name "${{ github.actor }}"
+            git checkout -b web-platform-release-notes
+            git add .
+            git commit -m "New beta web platform release notes"
+            git push origin web-platform-release-notes
+          else
+            echo "No changes to commit."
+          fi
