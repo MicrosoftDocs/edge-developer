@@ -24,13 +24,7 @@ ms.date: 06/02/2025
 # Network features reference
 <!-- https://developer.chrome.com/docs/devtools/network/reference/ -->
 
-<!-- for each png, decide if we want to create screenshot or not -->
-
-<!-- variants of "to do":
-todo png:
-todo: 
-to do png: = later PR
--->
+<!-- for each png, decide whether to create screenshot -->
 
 The **Network** tool has the following features, to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
 
@@ -115,9 +109,9 @@ By default, DevTools records all network requests in the **Network** tool, so lo
 
 For example: 
 
-1. Go to [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) (or the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page) in a new window or tab.
+1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
-1. Right-click the webpage and then select **Inspect**.
+1. Right-click the webpage, and then select **Inspect**.
 
    DevTools opens.
 
@@ -202,16 +196,17 @@ To capture a screenshot:
 
 <!-- UI doesn't currently have a "Replay fetch" right-click menuitem -->
 
-To replay an XHR request, do one of the following in the **Requests** table:
+To replay an XHR request, in the **Requests** table:
 
-* Right-click the request and select **Replay XHR**.
-* Select the request and press **R**.
+* Right-click the request, and then select **Replay XHR**.
 
-<!-- For example, the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page: -->
+* Or, select the request, and then press **R**.
 
 <!--
-![Click Replay XHR](to do png: selecting-replay-xhr.png)
-no demo of XHR
+For example, the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page:
+
+![Click Replay XHR](./network-reference/selecting-replay-xhr.png)
+todo in later PR: add XHR to the demo
 -->
 
 
@@ -472,7 +467,7 @@ To manually clear browser cookies at any time, right-click anywhere in the **Req
 See also:
 * [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)
 * [Override files and HTTP response headers](https://developer.chrome.com/docs/devtools/overrides#override-headers) in _Override web content and HTTP response headers locally_.
-<!-- todo: link to section when exists, and remove first link
+<!-- todo in later PR: link to section when exists, and remove first link
 * [Override HTTP response headers](../javascript/overrides.md#override-http-response-headers) in _Override webpage resources with local copies (Overrides tab)_.
 -->
 
@@ -805,13 +800,12 @@ If inline frames on a page initiate a lot of requests, you can make the request 
 
 To group requests by iframes, in the **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Group by frame** checkbox.
 
-![The network request log with requests grouped by iframes](./reference-images/network-request-log-iframes.png)<!-- todo: redo showing grouped requests, using different demo page -->
-<!-- try https://microsoftedge.github.io/Demos/network-tutorial/ -->
+![The network request log with requests grouped by iframes](./reference-images/network-request-log-iframes.png)<!-- todo in later PR: redo showing grouped requests -->
 <!-- options:
-tell ppl to run their own server, give them code at Demos repo
-expand demo to use iframes; have new button
-find MS (or MDN) page that uses iframes
-go to upstream docs url /elements/badges in Edge, don't show webpage in png
+* tell ppl to run their own server, give them code at Demos repo
+* expand https://microsoftedge.github.io/Demos/network-tutorial/ to use iframes; have new button
+* find MS (or MDN) page that uses iframes
+* go to upstream docs url /elements/badges in Edge, don't show webpage in png
 -->
 
 To view a request initiated by an inline frame, expand it in the request log.
@@ -852,7 +846,7 @@ To view the messages of a WebSocket connection:
 
 1. Click the **Messages** tab.  The table shows the last 100 messages:
 
-![The Messages tab](./reference-images/messages-tab.png)<!-- todo: get an api key, redo to show green arrow & red arrow -->
+![The Messages tab](./reference-images/messages-tab.png)<!-- todo now: get an api key, redo to show green arrow & red arrow -->
 
 To refresh the **Requests** table, in the **Name** pane, click the name of the WebSocket connection again.
 
@@ -885,7 +879,7 @@ Messages are color-coded according to each type:
 
 To view the events that servers stream through the Fetch API, the EventSource API, and XHR:
 
-1. Go to a webpage that streams events.<!-- to do: need demo webpage - For example, open the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page. -->
+1. Go to a webpage that streams events.<!-- todo in later PR: use EventSource API in a demo webpage - For example, open the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page. -->
 
    Network requests are automatically recorded by DevTools.
 
@@ -954,7 +948,9 @@ To display HTTP header data about a request:
 
 By default, the **Headers** tab shows header names alphabetically.  To display the HTTP header names in the order they were received:
 
-1. Go to a webpage that uses XHR, such as [Removing -ms-high-contrast and embracing standards-based forced colors in Microsoft Edge](https://blogs.windows.com/msedgedev/2025/06/30/removing-ms-high-contrast-and-embracing-standards-based-forced-colors-in-microsoft-edge/).
+<!-- setup steps, not in upstream: -->
+
+1. Go to a webpage that uses XHR, such as [Removing -ms-high-contrast and embracing standards-based forced colors in Microsoft Edge](https://blogs.windows.com/msedgedev/2025/06/30/removing-ms-high-contrast-and-embracing-standards-based-forced-colors-in-microsoft-edge/), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -962,30 +958,66 @@ By default, the **Headers** tab shows header names alphabetically.  To display t
 
 1. Select the **Network** tool.
 
+1. Refresh the webpage.
+
+1. Click the red **Stop recording network log** (![Stop recording network log icon](./reference-images/stop-recording-network-log-icon.png)) button at the top.
+
 1. In the **Requests** table, select a **collect** request.
 
-   <!-- ![](view-http-header-source.png)  todo png: -->
+   <!-- upstream steps: -->
 
-1. Open the **Headers** tab for a request.  For more information, see [Display HTTP headers](#display-http-headers), above.
+1. Select the **Headers** tab:
 
-1. Click **view source**,<!-- todo: in Edge, a checkbox.  In Chrome, a **view source** control --> next to the **Request Headers** or **Response Headers** section.
+   ![Headers tab > View source](./reference-images/view-http-header-source.png)
+
+1. Select the **Raw** checkbox next to the **Response Headers** or **Request Headers** section.
+
+See also:
+* [Display HTTP headers](#display-http-headers), above.
 
 
 <!-- ---------- -->
 ###### Provisional headers warning
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#provisional-headers -->
 
-Sometimes the **Headers** tab shows the warning message **Provisional headers are shown**.  This may be due to the following reasons:
+Sometimes the **Headers** tab shows the warning message **Provisional headers are shown.**  This may be due to the following reasons:
 
-* The request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can select the **Disable cache** checkbox to see the full request headers, per [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache), above.  For example, go to [todo](https://microsoftedge.github.io/Demos/demo-to-do/), view DevTools Network tool, then refresh the webpage, then select the .js message.
+* The request wasn't sent over the network, but was served from a local cache, which doesn't store the original request headers.
+* The network resource isn't valid.
+* Due to security reasons.
 
-  ![Provisional headers warning message](./reference-images/provisional-headers-warning.png)<!-- todo: redo smaller -->
+Suppose the request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can select the **Disable cache** checkbox at the top of the **Network** tool, to see the full request headers:
 
-* The network resource isn't valid. <!-- For example, execute `fetch("https://jec.fish.com/unknown-url/")`  todo: Microsoft url --> in the **Console** tool.
+1. Go to the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.
 
-  <!-- ![Provisional headers warning message](provisional-headers-warning-2.png) -->
+1. Right-click the webpage and then select **Inspect**.
 
-DevTools can also display only provisional headers due to security reasons.
+   DevTools opens.
+
+1. Select the **Network** tool.
+
+1. Refresh the webpage.
+
+1. Select the **getstarted.js** network request.
+
+   The **Request Headers** section displays **Provisional headers are shown**:
+
+   ![Provisional headers warning message](./reference-images/provisional-headers-warning.png)
+
+1. Select the **Disable cache** checkbox at the top of the **Network** tool.
+
+1. Refresh the webpage.
+
+1. Select the **getstarted.js** network request.
+
+   The **Request Headers** section no longer displays **Provisional headers are shown**.  The full request headers are shown.
+
+See also:
+* [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache), above.
+
+<!-- As another case, suppose the network resource isn't valid.  For example, execute `fetch("https://jec.fish.com/unknown-url/")` in the **Console** tool.  todo: Microsoft url -->
+
+<!-- ![Provisional headers warning message](provisional-headers-warning-2.png) -->
 
 
 <!-- ------------------------------ -->
@@ -1015,7 +1047,7 @@ By default, the **Network** tool shows the payload in a human-readable form.
 To view the sources of query string parameters and form data, on the **Payload** tab, click **view source** next to the **Query String Parameters** or **Form Data** sections.
 
 <!-- ![The view source buttons](todo png: the-view-source-buttons.png) -->
-<!-- use which webpage?  need server-side processing - plan to expand /network-tutorial/ demo -->
+<!-- add server-side processing in /network-tutorial/ demo -->
 
 
 <!-- ---------- -->
@@ -1024,13 +1056,32 @@ To view the sources of query string parameters and form data, on the **Payload**
 
 To display query string parameters in a human-readable format, but with encodings preserved:
 
-1. In the **Requests** table, click the name of the request.
+1. Go to a webpage that uses query string parameters, such as [Removing -ms-high-contrast and embracing standards-based forced colors in Microsoft Edge](https://blogs.windows.com/msedgedev/2025/06/30/removing-ms-high-contrast-and-embracing-standards-based-forced-colors-in-microsoft-edge/), in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In DevTools, select the **Network** tool.
+
+1. Refresh the webpage.
+
+1. In the **Requests** table, select a request, such as **1.0/?cors=true&content-type=...**.
 
 1. In the sidebar, select the **Payload** tab.
 
-1. Click **view decoded** or **view URL-encoded**.
+1. Click the **View decoded** button or **View URL-encoded** button:
 
-   ![Toggle URL-encoding](./reference-images/toggle-url-encoding.png)<!-- todo: redo placeholder -->
+   ![Toggle URL-encoding](./reference-images/toggle-url-encoding-2.png)
+
+   | Encoded character | Decoded character |
+   |---|---|
+   | `%3D` | `=` |
+   | `%26` | `&` |
+
+   In the query string, the character or encoding is shown; and the button label switches between **View decoded** and **View URL-encoded**:
+
+   ![Toggle URL-encoding](./reference-images/toggle-url-encoding.png)
 
 
 <!-- ------------------------------ -->
@@ -1220,45 +1271,67 @@ You can export or copy the list of requests, with filters applied, in several wa
 #### Save all network requests to a HAR file
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#save-as-har -->
 
-To save all network requests to a HAR file:
-
-1. In the **Requests** table, right-click a request and then select **Save all as HAR with Content**.
-
-   ![Selecting 'Save all as HAR with Content'](./reference-images/save-har-content.png)
-
-1. DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You can't filter requests, and you can't save a single request.
-
-Once you save a HAR file, you can import it back into DevTools for analysis by drag-and-dropping the HAR file into the **Requests** table.
-
-
-<!-- incoming upstream content: -->
-<!-- todo: clean up/ merge with above -->
-
-<!-- todo: resume here -->
-
-
 HAR (HTTP Archive) is a file format used by several HTTP session tools to export the captured data.  The format is a JSON object with a particular set of fields.  See [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/).
 
 To reduce the chances of accidental leaks of sensitive information, by default you can export the "sanitized" network log in HAR format that excludes sensitive information such as `Cookie`, `Set-Cookie`, and `Authorization` headers.  If required, you can also export the log _with_ sensitive data.
 
-To save all network requests to a HAR file, pick one of the two ways:
+To save all network requests to a HAR file, without sensitive data:
 
-* Right-click any request in the **Requests** table and select **Copy** > **Save all [listed] as HAR (sanitized)** or **Save all [listed] as HAR (with sensitive data)**.
+1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
-  ![Selecting 'Save all listed as HAR (sanitized)'](./reference-images/selecting-save-as-har.png)<!-- todo: redo placeholder.  lacks 2nd menuitem -->
+1. Right-click the webpage, and then select **Inspect**.
 
-* Click **Export HAR (sanitized)** <!-- todo: ![Download icon]() --> in the action bar at the top of the **Network** tool.
+   DevTools opens.
 
-To export with sensitive data, first, turn on **Settings** <!-- todo: ![Settings icon]() -->  > **Preferences** > **Network** > the checkbox **Allow to generate HAR with sensitive data**, then click the **Export**<!--todo: "download" icon--> button and select **Export HAR (with sensitive data)** from the drop-down menu.<!-- todo: clean up; colon -->
+1. In DevTools, select the **Network** tool.
 
-<!-- ![The 'Export HAR' button in the action bar at the top with two export options enabled](todo png: export-har-button.png) -->
+1. Refresh the webpage.
 
-Once you have a HAR file, you can import it back into DevTools for analysis using [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/) in two ways:
+1. Right-click any request in the **Requests** table, and then select **Copy** > **Copy all as HAR (sanitized)**:
 
-* Drag-and-drop the HAR file into the **Requests** table.
-* Click **Import HAR**<!--todo: "upload" icon--> in the action bar at the top of the **Network** tool.
+   ![Selecting 'Save all listed as HAR (sanitized)'](./reference-images/selecting-copy-as-har.png)
 
-The **Network** tool reads and shows initiators for the requests imported from HAR files.  For initiators, see [Display a log of requests](#display-a-log-of-requests), above.
+   Or, in the action bar at the top of the **Network** tool, click the **Export HAR (sanitized)** (![Export HAR (sanitized) icon](./reference-images/export-har-sanitized-icon.png)) button.
+
+<!-- older para: -->
+DevTools saves all requests that have occurred since you opened DevTools to the HAR file.
+
+<!-- older para: -->
+You can't filter requests, and you can't save a single request.
+
+
+To save all network requests to a HAR file, including sensitive data:
+
+1. In DevTools, select **Customized and control DevTools** > **Settings**.
+
+   The **Settings** > **Preferences** page opens.
+
+1. Scroll down to the **Network** section.
+
+1. Select the checkbox **Allow to generate HAR with sensitive data**.
+
+1. Click the **Close** (![Close Settings button](./reference-images/close-settings-button.png)) button.
+
+1. In the **Network** tool, right-click any request in the **Requests** table, and then select **Copy** > **Copy all as HAR (with sensitive data)**.
+
+   Or, in the action bar at the top, click the **Export HAR (either sanitized or with sensitive data)** (![Export HAR icon](./reference-images/export-har-sanitized-icon.png)) button, and then select **Export HAR (with sensitive data)**:
+
+   ![Selecting 'Copy all as HAR (with sensitive data)'](./reference-images/export-har-button.png)
+
+
+<!-- ------------------------------ -->
+#### Import a HAR file into DevTools for analysis
+<!-- bottom of https://developer.chrome.com/docs/devtools/network/reference/#save-as-har -->
+
+After you have a HAR file, you can import it back into DevTools for analysis by using [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/).
+
+To import a HAR file into DevTools for analysis:
+
+* In the action bar at the top of the **Network** tool, click the **Import HAR file** (![Import HAR file icon](./reference-images/import-har-file-icon.png)) button.
+
+* Or, drag the HAR file onto the **Requests** table.
+
+The **Network** tool reads and shows initiators for the requests that are imported from the HAR file.  For initiators, see [Display a log of requests](#display-a-log-of-requests), above.
 
 
 <!-- ------------------------------ -->
