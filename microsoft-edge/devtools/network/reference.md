@@ -564,8 +564,6 @@ You can filter requests by properties, by type, or by time, and you can hide dat
 
 The dropdown list has a number on the left that tells you how many filters are selected within the dropdown list.
 
-To bring back the old filter design (separate checkboxes), clear the DevTools **Settings** > **Experiments** > **Redesign of the filter bar in the Network panel** checkbox; see [Redesign of the filter bar in the Network panel](../experimental-features/index.md#redesign-of-the-filter-bar-in-the-network-panel) in _Experimental features in Microsoft Edge DevTools_.
-
 
 <!-- ------------------------------ -->
 #### Filter requests by properties
