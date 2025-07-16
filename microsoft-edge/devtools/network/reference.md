@@ -1072,7 +1072,7 @@ To display query string parameters in a human-readable format, but with encoding
 
 1. Click the **View decoded** button or **View URL-encoded** button:
 
-   ![Toggle URL-encoding](./reference-images/toggle-url-encoding-2.png)
+   ![Query string parameters shown with URL-encoded characters](./reference-images/toggle-url-encoding-2.png)
 
    | Encoded character | Decoded character |
    |---|---|
@@ -1081,7 +1081,7 @@ To display query string parameters in a human-readable format, but with encoding
 
    In the query string, the character or encoding is shown; and the button label switches between **View decoded** and **View URL-encoded**:
 
-   ![Toggle URL-encoding](./reference-images/toggle-url-encoding.png)
+   ![Query string parameters shown with decoded characters](./reference-images/toggle-url-encoding.png)
 
 
 <!-- ------------------------------ -->
