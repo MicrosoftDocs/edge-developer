@@ -408,10 +408,6 @@ With the **Classic** option button selected:
 
 You can also pan left and right by pressing the **A** and **D** keys, and zoom by pressing the **W** or **S** keys.
 
-See also:
-* [Performance panel: enable a switch to an alternative timeline navigation option](../experimental-features/index.md#performance-panel-enable-a-switch-to-an-alternative-timeline-navigation-option) in _Experimental features in Microsoft Edge DevTools_.
-<!-- this checkbox is selected by default for Stable 133 & Canary 135 -->
-
 
 <!-- ---------- -->
 ###### Select a portion of a recording
