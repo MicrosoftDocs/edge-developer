@@ -194,20 +194,34 @@ To capture a screenshot:
 #### Replay XHR request
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#replay-xhr -->
 
-<!-- UI doesn't currently have a "Replay fetch" right-click menuitem -->
+To replay an XHR request:
 
-To replay an XHR request, in the **Requests** table:
+1. Go to a webpage, such as the [DevTools Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
 
-* Right-click the request, and then select **Replay XHR**.
+1. Right-click the webpage, and then select **Inspect**.
 
-* Or, select the request, and then press **R**.
+   DevTools opens.
 
-<!--
-For example, the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page:
+1. In DevTools, select the **Network** tool.
 
-![Click Replay XHR](./network-reference/selecting-replay-xhr.png)
-todo in later PR: add XHR to the demo
--->
+1. Refresh the webpage.
+
+   In the **Network** tool's **Requests** table, rows appear for:
+   * `devtools-network-reference/` (`index.html`)
+   * `style.css`
+   * `script.js`
+
+1. In the demo webpage, click the **Send an XHR request** button.
+
+   In the **Network** tool's **Requests** table, a `data.json` row is added.  The **Initiator** column reads `script.js:20`.
+
+1. In the **Requests** table, right-click the `data.json` request, and then select **Replay XHR**.<!-- no "Replay fetch" menuitem -->
+
+   Or, select the request, and then press **R**.
+
+   In the **Network** tool's **Requests** table, a second `data.json` row is added.  The **Initiator** column reads **Other**:
+
+   ![Click Replay XHR](./reference-images/selecting-replay-xhr.png)
 
 
 <!-- ====================================================================== -->
