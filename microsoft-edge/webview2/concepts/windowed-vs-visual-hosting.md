@@ -167,7 +167,7 @@ Key compatibility limitations include the operating system and rendering in fram
 All hosting modes are supported wherever WebView2 is supported.
 
 See also:
-* [Support Windows versions](../index.md#supported-windows-versions) in _Introduction to Microsoft Edge WebView2_.
+* [Supported Windows versions](../index.md#supported-windows-versions) in _Introduction to Microsoft Edge WebView2_.
 
 
 <!-- ------------------------------ -->
