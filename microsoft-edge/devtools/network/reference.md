@@ -384,7 +384,11 @@ To observe WebSocket throttling:
 
    The console within the **Online WebSocket Tester** webpage displays **DevTools no throttling**, once or twice:
 
+   If you don't register at the PieSocket site:
+
    ![UI of Online WebSocket Tester webpage](./reference-images/websockets-tester-ui.png)
+
+   If you register at the PieSocket site (as described at the end of this section):
 
    ![UI of Online WebSocket Tester webpage, if registered](./reference-images/websockets-tester-ui-registered.png)
 
