@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 06/02/2025
+ms.date: 07/17/2025
 ---
 <!-- Copyright Kayce Basques
 
@@ -804,17 +804,38 @@ To add a custom column to the **Requests** table:
 
 If inline frames on a page initiate a lot of requests, you can make the request log friendlier by grouping them.
 
-To group requests by iframes, in the **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Group by frame** checkbox.
+To group requests by iframes:
 
-![The network request log with requests grouped by iframes](./reference-images/network-request-log-iframes.png)<!-- todo in later PR: redo showing grouped requests -->
-<!-- options:
-* tell ppl to run their own server, give them code at Demos repo
-* expand https://microsoftedge.github.io/Demos/network-tutorial/ to use iframes; have new button
-* find MS (or MDN) page that uses iframes
-* go to upstream docs url /elements/badges in Edge, don't show webpage in png
--->
+1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
-To view a request initiated by an inline frame, expand it in the request log.
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In DevTools, select the **Network** tool.
+
+1. Refresh the webpage.
+
+   In the **Network** tool's **Requests** table, rows appear for:
+   * `devtools-network-reference/` (`index.html`)
+   * `style.css`
+   * `script.js`
+
+1. In the demo webpage, click the **Load iframes** button.
+
+   Many rows are added in the **Requests** table:
+
+   ![The network request log with requests not grouped](./reference-images/network-request-log-iframes-initial.png)
+
+1. In the **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Group by frame** checkbox.
+
+   In the **Requests** table, expandable frame names are displayed.
+
+1. In the **Requests** table, click an expander triangle on a frame.
+
+   The requests that were initiated by the inline frame are displayed:
+
+   ![The network request log with requests grouped by iframes](./reference-images/network-request-log-iframes.png)<!-- todo -->
 
 
 <!-- ------------------------------ -->
