@@ -301,13 +301,19 @@ To create a custom throttling profile:
 
    DevTools opens.
 
-1. Select **Customize and control DevTools** (...) > **Settings** > **Throttling**.
+1. Select the **Network** tool.
 
-   Or, at the top of the **Network** tool, click the **Throttling** dropdown menu, and then select **Custom** > **Add**.  The DevTools **Settings** page opens, with the **Throttling** page selected.
+1. In the **Throttling** menu, in the **Custom** section, select **Add**.
+
+   Or, select **Customize and control DevTools** > **Settings** > **Throttling**.
+
+   The DevTools **Settings** page opens, with the **Throttling** page selected.
 
 1. In the **Network throttling profiles** section, click the **Add profile** button.
 
-1. In the **Profile Name** text box, enter **10kbps** (for example).
+   Example values are shown below, and are used in the next section.
+
+1. In the **Profile Name** text box, enter **10kbps**.
 
 1. In the **Download** text box, enter **10** (for 10 kbit/s).
 
@@ -319,7 +325,7 @@ To create a custom throttling profile:
 
 1. In the **Packet Queue Length** text box, enter **10**.
 
-1. Select the **Packet Reordering** checkbox.
+1. Select the **Packet Reordering** checkbox:
 
    ![Creating a custom throttling profile in DevTools > Settings > Throttling](./reference-images/create-custom-network-throttling-profile.png)
 
@@ -349,9 +355,11 @@ See also:
 
 In addition to HTTP requests, DevTools throttles WebSocket connections.
 
-We'll create a slow custom throttling profile, to show the difference between non-throttled and throttled WebSocket connections.
+We'll use the slow custom throttling profile that's created in the previous section, to show the difference between non-throttled and throttled WebSocket connections, in the number in the **Length** column for **Messages**.
 
 To observe WebSocket throttling:
+
+1. Do the steps in the previous section, [Create a custom throttling profile](#create-a-custom-throttling-profile).
 
 1. Go to a WebSocket test page, such as [Online WebSocket Tester](https://www.piesocket.com/websocket-tester), in a new window or tab.
 
@@ -364,45 +372,6 @@ To observe WebSocket throttling:
 1. Right-click the webpage and then select **Inspect**.
 
    DevTools opens.
-
-
-   **Create a custom throttling profile:**
-
-   These steps are the same as in [Create a custom throttling profile](#create-a-custom-throttling-profile), above:
-
-1. Select the **Network** tool.
-
-1. In the **Throttling** menu, in the **Custom** section, select **Add**.
-
-   Or, select **Customize and control DevTools** > **Settings** > **Throttling**.
-
-   The DevTools **Settings** page opens, with the **Throttling** page selected.
-
-1. In the **Network throttling profiles** section, click the **Add profile** button.
-
-1. In the **Profile Name** text box, enter **10kbps**, as shown below.
-
-1. In the **Download** text box, enter **10** (for 10 kbit/s).
-
-1. In the **Upload** text box, enter **10** (for 10 kbit/s).
-
-1. In the **Latency** text box, enter **10** (for 10 ms).
-
-1. In the **Packet Loss** text box, enter **1** (for 1%).
-
-1. In the **Packet Queue Length** text box, enter **10**.
-
-1. Select the **Packet Reordering** checkbox:
-
-   ![Creating a slow custom throttling profile in DevTools > Settings > Throttling](./reference-images/create-custom-10kbps-network-throttling-profile.png)
-
-1. Click the **Add** button.
-
-   The custom throttling profile is displayed:
-
-   ![Created a slow custom throttling profile in DevTools > Settings > Throttling](./reference-images/created-custom-10kbps-network-throttling-profile.png)
-
-1. In the **Settings** pane, click the **Close** (X) button.
 
 
    **Without throttling:**
@@ -445,7 +414,7 @@ To observe WebSocket throttling:
 ![Messages sent and without throttling](./reference-images/messages-with-without-throttling.png)
 
 
-Note: To get red down-arrow messages (echoed from the server), as well as green up-arrow messages, you would need to:
+Optional: To get red down-arrow messages (echoed from the server), as well as green up-arrow messages:
 
 1. Create an account at the PieSocket site.  This creates an API Token.
 
