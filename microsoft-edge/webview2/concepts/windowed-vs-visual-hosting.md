@@ -164,10 +164,10 @@ Key compatibility limitations include the operating system and rendering in fram
 <!-- ------------------------------ -->
 #### Operating systems
 
-All hosting modes are supported wherever WebView2 is supported; that is, Windows 10 and later, and certain Windows Server versions.  Windows 7, 8 and 8.1 are no longer supported; Windows 7 and Windows 8 only support Windowed hosting, not Visual hosting.
+All hosting modes are supported wherever WebView2 is supported.
 
 See also:
-* [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
+* [Support Windows versions](../index.md#supported-windows-versions) in _Introduction to Microsoft Edge WebView2_.
 
 
 <!-- ------------------------------ -->
@@ -181,7 +181,6 @@ See also:
 <!-- all links in article, except api ref docs -->
 
 * [Overview of WebView2 APIs](./overview-features-apis.md)
-* [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
 <!-- omit:
 * [Enhance UI with the Visual layer (Windows App SDK/WinUI 3)](https://learn.microsoft.com/windows/apps/windows-app-sdk/composition) - Windows App Development. -->
 
