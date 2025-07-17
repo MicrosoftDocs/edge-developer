@@ -365,9 +365,9 @@ To observe WebSocket throttling:
 
 1. In the **Online WebSocket Tester** webpage, click the **Connect** button.
 
-   If you didn't create a PieSocket account, the webpage displays "Connection Established - {"error":"Unknown api key"}".
+   If you don't create a PieSocket account to get an API Token, the webpage displays "Connection Established - {"error":"Unknown api key"}".
 
-   If you create a PieSocket account and go through the PieSocket account page, and then click the **Test online** button, the webpage simply displays "Connection Established".  More details are below, for this optional procedure.
+   If you create a PieSocket account to get an API Token (as described at the end of this section), the webpage simply displays "Connection Established".
 
 1. Right-click the webpage and then select **Inspect**.
 
@@ -427,9 +427,6 @@ Optional: To get red down-arrow messages (echoed from the server), as well as gr
    The [Online WebSocket Tester](https://piehost.com/websocket-tester) page opens, with your query parameters.
 
 1. Click the **Connect** button.
-
-See also:
-* [Create a custom throttling profile](#create-a-custom-throttling-profile), above.
 
 
 <!-- ---------- -->
