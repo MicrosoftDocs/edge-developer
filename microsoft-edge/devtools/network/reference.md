@@ -357,17 +357,30 @@ To observe WebSocket throttling:
 
 1. In the **Online WebSocket Tester** webpage, click the **Connect** button.
 
+   If you didn't create a PieSocket account, the webpage displays "Connection Established - {"error":"Unknown api key"}".
+
+   If you create a PieSocket account and go through the PieSocket account page, and then click the **Test online** button, the webpage simply displays "Connection Established".  More details are below, for this optional procedure.
+
 1. Right-click the webpage and then select **Inspect**.
 
    DevTools opens.
 
+
    **Create a custom throttling profile:**
 
-1. Select **Customize and control DevTools** > **Settings** > **Throttling**.
+   These steps are the same as in [Create a custom throttling profile](#create-a-custom-throttling-profile), above:
+
+1. Select the **Network** tool.
+
+1. In the **Throttling** menu, in the **Custom** section, select **Add**.
+
+   Or, select **Customize and control DevTools** > **Settings** > **Throttling**.
+
+   The DevTools **Settings** page opens, with the **Throttling** page selected.
 
 1. In the **Network throttling profiles** section, click the **Add profile** button.
 
-1. In the **Profile Name** text box, enter **10kbps**.
+1. In the **Profile Name** text box, enter **10kbps**, as shown below.
 
 1. In the **Download** text box, enter **10** (for 10 kbit/s).
 
@@ -379,7 +392,7 @@ To observe WebSocket throttling:
 
 1. In the **Packet Queue Length** text box, enter **10**.
 
-1. Select the **Packet Reordering** checkbox.
+1. Select the **Packet Reordering** checkbox:
 
    ![Creating a slow custom throttling profile in DevTools > Settings > Throttling](./reference-images/create-custom-10kbps-network-throttling-profile.png)
 
@@ -391,21 +404,22 @@ To observe WebSocket throttling:
 
 1. In the **Settings** pane, click the **Close** (X) button.
 
-1. In DevTools, select the **Network** tool.
 
    **Without throttling:**
 
-1. In the **Network** tool, in the **Throttling** dropdown menu, make sure **No throttling** is selected.
+1. In the DevTools **Network** tool, in the **Throttling** dropdown menu, make sure **No throttling** is selected.
 
 1. In the **Online WebSocket Tester** webpage, in the message text box, delete **Hello PieSocket!**, and enter **DevTools no throttling**.
 
 1. In the **Online WebSocket Tester** webpage, click the **Send** button.
 
-   The console within the **Online WebSocket Tester** webpage displays **DevTools no throttling**:
+   The console within the **Online WebSocket Tester** webpage displays **DevTools no throttling**, once or twice:
 
    ![UI of Online WebSocket Tester webpage](./reference-images/websockets-tester-ui.png)
 
-1. At the top of the **Network** tool, select the **Socket** button (shown below).
+   ![UI of Online WebSocket Tester webpage, if registered](./reference-images/websockets-tester-ui-registered.png)
+
+1. At the top of the **Network** tool, select the **Socket** filter button (shown below).
 
 1. In the table, click your connection name, such as **channel_123?api_key=...**.
 
@@ -413,9 +427,8 @@ To observe WebSocket throttling:
 
 1. Select the **Messages** tab (shown below).
 
-1. Select the message **DevTools no throttling**.
+1. For the message **DevTools no throttling**, note the number in the **Length** column.
 
-1. Note the number in the **Length** column.
 
    **With throttling:**
 
@@ -427,11 +440,22 @@ To observe WebSocket throttling:
 
    The console within the **Online WebSocket Tester** webpage displays **DevTools with throttling**.
 
-1. In the **Network** tool, in the **Messages** tab, select the message **DevTools with throttling**.
-
-1. Note the number in the **Length** column:
+1. In the **Network** tool, in the **Messages** tab, for the message **DevTools with throttling**, note the number in the **Length** column:
 
 ![Messages sent and without throttling](./reference-images/messages-with-without-throttling.png)
+
+
+Note: To get red down-arrow messages (echoed from the server), as well as green up-arrow messages, you would need to:
+
+1. Create an account at the PieSocket site.  This creates an API Token.
+
+1. Create a cluster at the PieSocket site.
+
+1. In the **PieSocket** dashboard page, click the **Test online** button.
+
+   The [Online WebSocket Tester](https://piehost.com/websocket-tester) page opens, with your query parameters.
+
+1. Click the **Connect** button.
 
 See also:
 * [Create a custom throttling profile](#create-a-custom-throttling-profile), above.
@@ -844,9 +868,27 @@ To view the messages of a WebSocket connection:
 
 1. In the **Name** pane, click the URL of the WebSocket connection, such as **channel_1?api_key=...**.
 
-1. Click the **Messages** tab.  The table shows the last 100 messages:
+1. Click the **Messages** tab.
 
-![The Messages tab](./reference-images/messages-tab.png)<!-- todo now: get an api key, redo to show green arrow & red arrow -->
+1. At the top of the **Network** tool, select the **Socket** filter button.
+
+The table shows the last 100 messages:
+
+![The Messages tab](./reference-images/messages-tab.png)
+
+
+Note: To get red down-arrow messages (echoed from the server), as well as green up-arrow messages, you would need to:
+
+1. Create an account at the PieSocket site.  This creates an API Token.
+
+1. Create a cluster at the PieSocket site.
+
+1. In the **PieSocket** dashboard page, click the **Test online** button.
+
+   The [Online WebSocket Tester](https://piehost.com/websocket-tester) page opens, with your query parameters.
+
+1. Click the **Connect** button.
+
 
 To refresh the **Requests** table, in the **Name** pane, click the name of the WebSocket connection again.
 
