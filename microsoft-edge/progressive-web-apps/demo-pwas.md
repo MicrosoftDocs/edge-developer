@@ -12,28 +12,24 @@ ms.date: 07/17/2025
 <!-- sync:
 https://learn.microsoft.com/microsoft-edge/progressive-web-apps/demo-pwas
 https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas
+last sync'd July 17, 2025
 -->
 
-todo: re-seq sections
+todo: reorder h2 sections
 
-todo: create Demos repo PR: re-seq rows in Readme section https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas
-
-todo: add hidden "sync" comment in Readme; copy/paste hidden comment above
-
+temp:
 
 List from Readme:
 
 | Demo name | Dir in Demos repo | In present article? |
 |---|---|---|
 | 1DIV | /1DIV/ | yes |
-| Email client | /email-client/ | NO, ADD - todo |
+| Email client | /email-client/ | no, added |
 | PWAmp | /pwamp/ | yes |
 | wami | /wami/ | yes |
-| Temperature converter | /pwa-getting-started/ | NO, ADD - todo.  https://github.com/MicrosoftDocs/edge-developer/pull/3476 |
-| Application Title Meta Tag | /pwa-application-title/ | NO, ADD - todo |
-| Edge demos | /pwa-pwastore/ | NO, ADD - todo |
-
-todo: in https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas add a See Also link pointing to the present article
+| Temperature converter | /pwa-getting-started/ | no, added |
+| Application Title Meta Tag | /pwa-application-title/ | no, added |
+| Edge demos | /pwa-pwastore/ | no, added |
 
 
 List from present article section headings:
@@ -183,23 +179,13 @@ BPM Techno uses the following features:
 <!-- ====================================================================== -->
 ## Temperature converter
 
-todo
-
 A simple PWA demo app that converts temperatures.  Used for [Get started with PWAs](./how-to/index.md).
 
-todo: in https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas  change link text from "Get started with Progressive Web Apps" to "Get started with PWAs".  title will change to "Temperature convertor sample" per https://github.com/MicrosoftDocs/edge-developer/pull/3476
-
 [App](https://microsoftedge.github.io/Demos/pwa-getting-started/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
-
-[Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/)
-
-[/pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started)
 
 
 <!-- ====================================================================== -->
 ## Email client
-
-todo
 
 A simulated email client PWA that demonstrates how to use PWA protocol handlers.    
 
@@ -209,31 +195,17 @@ A simulated email client PWA that demonstrates how to use PWA protocol handlers.
 <!-- ====================================================================== -->
 ## Application Title Meta Tag
 
-todo
-
 A demo web app to showcase the `application-title` meta tag.
 
 [App](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-application-title), [source code and Readme file](https://microsoftedge.github.io/Demos/pwa-application-title/).
-
-[/pwa-application-title/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-application-title)
-
-[application-title](https://microsoftedge.github.io/Demos/pwa-application-title/)
 
 
 <!-- ====================================================================== -->
 ## Edge demos (/pwa-pwastore) (Web Install API and CSS Masonry)
 
-todo
-
-Edge demos
-
 A demo web app to showcase `Web Install API` and `CSS Masonry`.
 
 [App](https://microsoftedge.github.io/Demos/pwa-pwastore/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-pwastore).
-
-[pwa-pwastore](https://microsoftedge.github.io/Demos/pwa-pwastore/)
-
-[/pwa-pwastore/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-pwastore)
 
 
 <!-- ====================================================================== -->
