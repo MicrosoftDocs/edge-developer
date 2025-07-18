@@ -122,15 +122,19 @@ A simple PWA demo app that converts temperatures.  Used for [Get started with PW
 <!-- ====================================================================== -->
 ## PWA installer
 
-A demo web app to showcase `Web Install API` and `CSS Masonry`.
-    
-[App](https://microsoftedge.github.io/Demos/pwa-installer/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-installer/).
+A PWA<!-- todo: web app? --> that uses the Web Install API to install other PWAs.  Also uses CSS Masonry.
 
-Edge demos uses the following features:
+[App](https://microsoftedge.github.io/Demos/pwa-pwastore/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-pwastore).
+<!-- todo: new:
+[App](https://microsoftedge.github.io/Demos/pwa-installer/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-installer/).
+-->
+
+PWA installer uses the following features:
 
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| Web Install API | The PWA uses the `navigator.install()` API to install other PWAs on the device. | [Web Install API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebInstall/explainer.md) |
+| Web Install API | PWA installer uses the `navigator.install()` API to install other PWAs on the device. | [Web Install API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebInstall/explainer.md) |
+| CSS Masonry | Instead of a strict grid that has gaps below shorter items, the items in the following row are raised up to fill the gaps. | [Masonry layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Masonry_layout) |
 
 
 <!-- ====================================================================== -->
