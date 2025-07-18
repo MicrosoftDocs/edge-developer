@@ -924,13 +924,34 @@ Messages are color-coded according to each type:
 
 To view the events that servers stream through the Fetch API, the EventSource API, and XHR:
 
-1. Go to a webpage that streams events.<!-- For example, open the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.  todo: add EventSource API to the demo -->
+1. Go to a webpage that streams events, such as the [DevTools Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
 
-   Network requests are automatically recorded by DevTools.
+1. Right-click the webpage, and then select **Inspect**.
 
-1. In the **Network** tool, select a request, and then open the **EventStream** tab.<!-- not present for https://microsoftedge.github.io/Demos/network-tutorial/ -->
+   DevTools opens.
 
-   <!-- ![The EventStream tab](./reference-images/event-stream.png) - todo png -->
+1. In DevTools, select the **Network** tool.
+
+1. Refresh the webpage.
+
+   In the **Network** tool's **Requests** table, rows appear for:
+   * `devtools-network-reference/` (`index.html`)
+   * `style.css`
+   * `script.js`
+
+1. In the demo webpage, click the **Stream server-sent events** button.
+
+   In the **Requests** table, an `sse` (server-sent event) row is added.
+
+1. Select the `sse` (server-sent event) request.
+
+   The sidebar opens, including an **EventStream** tab.
+
+1. Select the **EventStream** tab:
+
+   ![The EventStream tab](./reference-images/event-stream.png)
+
+   A new "hello" message is received and displayed once per second.
 
 To filter events, specify a regular expression in the filter bar at the top of the **EventStream** tab.
 
@@ -1060,9 +1081,11 @@ Suppose the request wasn't sent over the network but was served from a local cac
 See also:
 * [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache), above.
 
-<!-- As another case, suppose the network resource isn't valid.  For example, execute `fetch("https://jec.fish.com/unknown-url/")` in the **Console** tool.  todo: Microsoft url -->
+<!-- upstream, omit:
+As another case, suppose the network resource isn't valid.  For example, execute `fetch("https://jec.fish.com/unknown-url/")` in the **Console** tool:
 
-<!-- ![Provisional headers warning message](provisional-headers-warning-2.png) -->
+![Provisional headers warning message](provisional-headers-warning-2.png)
+-->
 
 
 <!-- ------------------------------ -->
@@ -1096,7 +1119,7 @@ To display the query string parameters and form data of an HTTP request in a hum
 
 1. Select the **Payload** tab.
 
-   The request's payload is displayed, including query string parameters<!-- todo: true? --> and form data:
+   The request's payload is displayed, including a **Query String Parameters** section<!-- todo: true? --> and a **Form Data** section:
 
   ![The Query String Parameters section in the Payload tab](./reference-images/resources-headers-query-string-parameters.png)<!-- todo: expect **Query String Parameters** section, not only **Form Data** section -->
 
@@ -1109,10 +1132,9 @@ To display the query string parameters and form data of an HTTP request in a hum
 
 By default, the **Network** tool shows the payload in a human-readable form.
 
-To view the sources of query string parameters and form data, on the **Payload** tab, click **view source** next to the **Query String Parameters** or **Form Data** sections.
+To view the sources of query string parameters or form data, on the **Payload** tab, click the **View source** button next to the **Query String Parameters** or **Form Data** section heading.
 
-<!-- ![The view source buttons](todo png: the-view-source-buttons.png) -->
-<!-- add server-side processing in /network-tutorial/ demo -->
+![The view source buttons](./reference-images/view-source-buttons.png)<!-- todo: redo to show **Query String Parameters** & **Form Data** sections -->
 
 
 <!-- ---------- -->
