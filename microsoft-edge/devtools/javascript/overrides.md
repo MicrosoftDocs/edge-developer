@@ -21,6 +21,11 @@ When you set up a folder for local overrides the first time, that folder should 
 
 
 <!-- ====================================================================== -->
+<!-- ## Override HTTP response headers -->
+<!-- todo: in later PR: add section equiv to https://developer.chrome.com/docs/devtools/overrides#override-headers -->
+
+
+<!-- ====================================================================== -->
 ## Setting up your local folder to store Overrides
 
 1. Right-click a webpage, such as https://microsoftedge.github.io/Demos/demo-to-do/, and then select **Inspect**.  DevTools opens.
