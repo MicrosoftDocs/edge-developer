@@ -1108,22 +1108,40 @@ To display the query string parameters and form data of an HTTP request in a hum
    * `devtools-network-reference/` (`index.html`)
    * `style.css`
    * `script.js`
+   * `favicon.png`
 
 1. In the demo webpage, click the **Send form data** button.
 
-   In the **Network** tool's **Requests** table, a `form-data-endpoint` row is added.
+   In the **Network** tool's **Requests** table, a row is added:
 
-1. Select the `form-data-endpoint` row.
+   * `form-data-endpoint?hasfile=true`
+
+1. Select the row `form-data-endpoint?hasfile=true`.
 
    The sidebar opens, including a **Payload** tab.
 
 1. Select the **Payload** tab.
 
-   The request's payload is displayed, including a **Query String Parameters** section<!-- todo: true? --> and a **Form Data** section:
+   The request's payload is displayed, including a **Query String Parameters** section and a **Form Data** section:
 
-  ![The Query String Parameters section in the Payload tab](./reference-images/resources-headers-query-string-parameters.png)<!-- todo: expect **Query String Parameters** section, not only **Form Data** section -->
+  ![The Query String Parameters section in the Payload tab](./reference-images/resources-headers-query-string-parameters.png)
 
-   To display the source of the query string parameters instead, click the **View source** button.
+To display the source of the query string parameters instead, click the **View source** button.
+
+
+In the **Console** tab of DevTools is the error:
+
+* `POST https://microsoftedge.github.io/Demos/devtools-network-reference/form-data-endpoint?hasfile=true 405 (Method Not Allowed) (anonymous) @ script.js:49`
+
+Or, if you use git bash, change directory to `/Demos/devtools-network-reference/`, run `npx http-server`, and then go to `http://localhost:8080/`, the **Console** error is:
+
+* `POST http://localhost:8080/form-data-endpoint?hasfile=true net::ERR_ABORTED 405 (Method Not Allowed) (anonymous) @ script.js:49`
+
+A harmless **Method Not Allowed** error appears in the **Console**, because there's no `form-data-endpoint` POST handler on the demo server.
+
+<!-- detail:
+The error is expected, because github.io hosting or the localhost npx server doesn't run application servers, only static files.
+-->
 
 
 <!-- ---------- -->
@@ -1134,7 +1152,7 @@ By default, the **Network** tool shows the payload in a human-readable form.
 
 To view the sources of query string parameters or form data, on the **Payload** tab, click the **View source** button next to the **Query String Parameters** or **Form Data** section heading.
 
-![The view source buttons](./reference-images/view-source-buttons.png)<!-- todo: redo to show **Query String Parameters** & **Form Data** sections -->
+![The view source buttons](./reference-images/view-source-buttons.png)<!-- todo: redo to show **Query String Parameters** & **Form Data** sections, show both sections in the alt mode -->
 
 
 <!-- ---------- -->
