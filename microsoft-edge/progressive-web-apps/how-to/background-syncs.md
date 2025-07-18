@@ -125,7 +125,7 @@ To test background syncing:
 
 1.  Reload the app. The movie details now appear.
 
-To see the sample code, check out the [movies-db-pwa](https://github.com/captainbrosset/movies-db-pwa/) repo.
+To see the sample code, check out the [movies-db-pwa](https://github.com/captainbrosset/movies-db-pwa/) repo.<!-- todo: move demo to Demos repo -->
 
 #### Debug background syncs with DevTools
 
@@ -231,7 +231,7 @@ For more information about the `PeriodicSync` event, the `ServiceWorkerRegistrat
 
 ![The DevTools Tips app](./background-syncs-images/devtools-tips-demo.png)
 
-Go to the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/). In particular, the app registers the periodic sync in the [registerPeriodicSync](https://github.com/captainbrosset/devtools-tips/blob/a4a5277ee6b67e5cc61eee642bf3d9c68130094f/src/layouts/home.njk#L72) function.  The [service worker code](https://github.com/captainbrosset/devtools-tips/blob/ebfb2c7631464149ce3cc7700d77564656971ff4/src/sw.js#L115) is where the app listens to the `periodicsync` event.
+Go to the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/).<!-- todo: move demo to Demos repo --> In particular, the app registers the periodic sync in the [registerPeriodicSync](https://github.com/captainbrosset/devtools-tips/blob/a4a5277ee6b67e5cc61eee642bf3d9c68130094f/src/layouts/home.njk#L72) function.  The [service worker code](https://github.com/captainbrosset/devtools-tips/blob/ebfb2c7631464149ce3cc7700d77564656971ff4/src/sw.js#L115) is where the app listens to the `periodicsync` event.
 
 #### Debug periodic background syncs with DevTools
 
