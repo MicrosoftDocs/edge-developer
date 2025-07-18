@@ -835,7 +835,7 @@ To group requests by iframes:
 
    The requests that were initiated by the inline frame are displayed:
 
-   ![The network request log with requests grouped by iframes](./reference-images/network-request-log-iframes.png)<!-- todo -->
+   ![The network request log with requests grouped by iframes](./reference-images/network-request-log-iframes.png)
 
 
 <!-- ------------------------------ -->
@@ -1071,16 +1071,36 @@ See also:
 
 To display the query string parameters and form data of an HTTP request in a human-readable format:
 
-<!-- upstream:
-To view the request's payload, that is, its query string parameters and form data, select a request from the **Requests** table and open the Payload tab. -->
+1. Go to a webpage, such as the [DevTools Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
 
-1. In the **Requests** table, click the name of the request.
+1. Right-click the webpage, and then select **Inspect**.
 
-1. In the sidebar, select the **Payload** tab:
+   DevTools opens.
 
-  ![The Query String Parameters section in the Payload tab](./reference-images/resources-headers-query-string-parameters.png)
+1. In DevTools, select the **Network** tool.
 
-   To display the source of the query string parameters instead, click **view source**.
+1. Refresh the webpage.
+
+   In the **Network** tool's **Requests** table, rows appear for:
+   * `devtools-network-reference/` (`index.html`)
+   * `style.css`
+   * `script.js`
+
+1. In the demo webpage, click the **Send form data** button.
+
+   In the **Network** tool's **Requests** table, a `form-data-endpoint` row is added.
+
+1. Select the `form-data-endpoint` row.
+
+   The sidebar opens, including a **Payload** tab.
+
+1. Select the **Payload** tab.
+
+   The request's payload is displayed, including query string parameters<!-- todo: true? --> and form data:
+
+  ![The Query String Parameters section in the Payload tab](./reference-images/resources-headers-query-string-parameters.png)<!-- todo: expect **Query String Parameters** section, not only **Form Data** section -->
+
+   To display the source of the query string parameters instead, click the **View source** button.
 
 
 <!-- ---------- -->
