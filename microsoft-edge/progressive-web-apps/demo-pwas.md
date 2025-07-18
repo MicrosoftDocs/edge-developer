@@ -111,7 +111,7 @@ My Tracks is useful for visualizing GPS tracks (`*.gpx` files) on a map.
 
 ![The My Tracks app](./demo-pwas-images/my-tracks.png)
 
-[App](https://captainbrosset.github.io/mytracks/), [source code and Readme file](https://github.com/captainbrosset/mytracks/).
+[App](https://captainbrosset.github.io/mytracks/),<!-- todo: move demo to Demos repo--> [source code and Readme file](https://github.com/captainbrosset/mytracks/).
 
 My Tracks uses the following features:
 
@@ -130,7 +130,7 @@ This simple PWA demo lets you search for made up movies and store them locally.
 
 ![The My Movies app](./demo-pwas-images/my-movies.png)
 
-[App](https://quirky-rosalind-ac1e65.netlify.app/), [source code](https://github.com/captainbrosset/movies-db-pwa/).<!-- todo: link to readme when exists -->
+[App](https://quirky-rosalind-ac1e65.netlify.app/), [source code](https://github.com/captainbrosset/movies-db-pwa/).<!-- todo: link to readme when exists --><!-- todo: move to Demos repo, then update repo's Readme and the article and demo-pwas.md -->
 
 My Movies uses the following features:
 
