@@ -54,7 +54,7 @@ The Prompt API is intended to help discover use cases and understand challenges 
 
 * [Summarize, write, and rewrite text with the writing assistance APIs](./writing-assistance-apis.md)
 
-* The [webmachinelearning/translation-api](https://github.com/webmachinelearning/translation-api) repo.
+* The [webmachinelearning / translation-api](https://github.com/webmachinelearning/translation-api) repo.
 
 
 <!-- ====================================================================== -->
@@ -182,7 +182,7 @@ To see the Prompt API in action, and review existing code that uses the API:
 
 1. To stop generating the response, at any time, click the **Stop** button.
 
-To view the source code of the Prompt API playground, see the [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) repo at GitHub.
+To view the source code of the Prompt API playground, see [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) in the Demos repo.
 
 
 <!-- ====================================================================== -->
@@ -587,6 +587,6 @@ You can also contribute to the discussion about the design of the Prompt API at 
 <!-- ====================================================================== -->
 ## See also
 
-* [Explainer for the Prompt API](https://github.com/webmachinelearning/prompt-api), on the Web Machine Learning GitHub repo.
-
 * [Write, rewrite, and summarize text with the Writing Assistance APIs](./writing-assistance-apis.md)
+
+* [Explainer for the Prompt API](https://github.com/webmachinelearning/prompt-api), on the Web Machine Learning GitHub repo.
