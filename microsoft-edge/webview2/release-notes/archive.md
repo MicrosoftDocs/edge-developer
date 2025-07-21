@@ -8594,7 +8594,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 80.0.314.0 or h
 <!-- ------------------------------ -->
 #### Changes
 
-*  Added support for Windows 7, Windows 8, and Windows 8.1.  See [Windows 7 and 8](../index.md#windows-7-and-8) in _Introduction to Microsoft Edge WebView2_.
+*  Added support for Windows 7, Windows 8, and Windows 8.1.  See [Supported Windows versions](../index.md#supported-windows-versions) in _Introduction to Microsoft Edge WebView2_.
 *  Added Visual Studio and Visual Studio Code debug support for WebView2.  Now, debug your script in the WebView2 right from your IDE.  See [How to debug when developing with WebView2 controls](../how-to/debug.md).
 *  Added `Native Object Injection` for the running script in WebView2 to access an IDispatch object from the Win32 component of the app and access the properties of the IDispatch object.  See [AddRemoteObject](/microsoft-edge/webview2/reference/win32/iwebview2webview4?view=webview2-0.8.355&preserve-view=true#addremoteobject) ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).
 *  Added `AcceleratorKeyPressed` event.  See [add_AcceleratorKeyPressed](/microsoft-edge/webview2/reference/win32/iwebview2webview4?view=webview2-0.8.355&preserve-view=true#add_acceleratorkeypressed) ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
