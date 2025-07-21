@@ -181,7 +181,7 @@ To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
 1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo.  If you use a command prompt:
 
-   ```Shell
+   ```shell
    # example location where the repo directory will be added:
    cd ~/GitHub
    cd c:/users/localAccount/GitHub/  # alt format
