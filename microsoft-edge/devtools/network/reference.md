@@ -1052,7 +1052,7 @@ Sometimes the **Headers** tab shows the warning message **Provisional headers ar
 * The network resource isn't valid.
 * Due to security reasons.
 
-Suppose the request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can select the **Disable cache** checkbox at the top of the **Network** tool, to see the full request headers:
+Suppose the request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can select the **Disable cache** checkbox at the top of the **Network** tool, to see the full request headers.  For example:
 
 1. Go to the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.
 
@@ -1066,7 +1066,7 @@ Suppose the request wasn't sent over the network but was served from a local cac
 
 1. Select the **getstarted.js** network request.
 
-   The **Request Headers** section displays **Provisional headers are shown**:
+   The **Request Headers** section displays the message: **Provisional headers are shown.  Disable cache to see full headers.**
 
    ![Provisional headers warning message](./reference-images/provisional-headers-warning.png)
 
@@ -1076,7 +1076,7 @@ Suppose the request wasn't sent over the network but was served from a local cac
 
 1. Select the **getstarted.js** network request.
 
-   The **Request Headers** section no longer displays **Provisional headers are shown**.  The full request headers are shown.
+   The **Request Headers** section no longer displays the message; the full request headers are shown.
 
 See also:
 * [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache), above.
@@ -1089,10 +1089,10 @@ As another case, suppose the network resource isn't valid.  For example, execute
 
 
 <!-- ------------------------------ -->
-#### Display query string parameters
+#### View request payload (query string parameters and form data)
 <!-- View request payload  https://developer.chrome.com/docs/devtools/network/reference/#payload -->
 
-To display the query string parameters and form data of an HTTP request in a human-readable format:
+To view an HTTP request's payload (query string parameters and form data), select a request from the **Requests** table and then select the **Payload** tab in the sidebar, as follows:
 
 1. Go to a webpage, such as the [DevTools Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
 
@@ -1126,9 +1126,6 @@ To display the query string parameters and form data of an HTTP request in a hum
 
   ![The Query String Parameters section in the Payload tab](./reference-images/resources-headers-query-string-parameters.png)
 
-To display the source of the query string parameters instead, click the **View source** button.
-
-
 In the **Console** tab of DevTools is the error:
 
 * `POST https://microsoftedge.github.io/Demos/devtools-network-reference/form-data-endpoint?hasfile=true 405 (Method Not Allowed) (anonymous) @ script.js:49`
@@ -1137,11 +1134,7 @@ Or, if you use git bash, change directory to `/Demos/devtools-network-reference/
 
 * `POST http://localhost:8080/form-data-endpoint?hasfile=true net::ERR_ABORTED 405 (Method Not Allowed) (anonymous) @ script.js:49`
 
-A harmless **Method Not Allowed** error appears in the **Console**, because there's no `form-data-endpoint` POST handler on the demo server.
-
-<!-- detail:
-The error is expected, because github.io hosting or the localhost npx server doesn't run application servers, only static files.
--->
+A harmless **Method Not Allowed** error appears in the **Console**, because there's no `form-data-endpoint` POST handler on the demo server.  The error is expected, because github.io hosting or the localhost npx server doesn't run application servers, only static files.
 
 
 <!-- ---------- -->
@@ -1150,9 +1143,21 @@ The error is expected, because github.io hosting or the localhost npx server doe
 
 By default, the **Network** tool shows the payload in a human-readable form.
 
-To view the sources of query string parameters or form data, on the **Payload** tab, click the **View source** button next to the **Query String Parameters** or **Form Data** section heading.
+To instead view the sources of query string parameters or form data:
 
-![The view source buttons](./reference-images/view-source-buttons.png)<!-- todo: redo to show **Query String Parameters** & **Form Data** sections, show both sections in the alt mode -->
+1. Do the steps in the previous section, above.
+
+   In the **Payload** tab, the **Query String Parameters** section shows the payload in a human-readable form, for `hasfile`.  The **Form Data** section show the payload in a human-readable form, for `username`, `timestamp`, and `file`:
+
+  ![The View source buttons](./reference-images/resources-headers-query-string-parameters-2.png)<!-- adds red boxes on View source button 2x -->
+
+1. Next to the **Query String Parameters** section heading, click the **View source** button.
+
+1. Next to the **Form Data** section heading, click the **View source** button.
+
+   The source information for the payload is displayed:
+
+   ![Payload tab > Query String Parameters section and Form Data section > the "View source" button](./reference-images/view-source-buttons.png)<!-- todo: shows: text/plain, though previous png says: (binary) -->
 
 
 <!-- ---------- -->
