@@ -30,6 +30,7 @@ The Ad Selection API provides user-relevant ads on your site without using third
     * [Deployment guide](#deployment-guide)
 * [Use the Ad Selection API on your website](#use-the-ad-selection-api-on-your-website)
 * [Provide feedback about the origin trial](#provide-feedback-about-the-origin-trial)
+* [Terms of Use](#terms-of-use)
 * [See also](#see-also)
 
 The Ad Selection API can be used by:
@@ -309,6 +310,25 @@ To provide feedback about the Ad Selection API origin trial, create a new issue 
 * To view existing issues, go to the [Issues tab of the WICG/privacy-preserving-ads repo](https://github.com/WICG/privacy-preserving-ads/issues).
 
 * To submit a new issue, go to the [new issue form](https://github.com/WICG/privacy-preserving-ads/issues/new?labels=Ad+Selection%20API,OriginTrialFeedback&title=%5BAd%20Selection%20API%5D+Feedback).
+
+<!-- ====================================================================== -->
+## Terms of Use
+
+* Your use of the Ad Selection API and related features (“API”) is subject to the terms contained herein and the Microsoft API Terms of Use, currently available at https://learn.microsoft.com/en-us/legal/microsoft-apis/terms-of-use, except that Section 3(b)(12) of the Terms of Use does not apply to your use of the API. 
+
+* The Data Protection Addendum, currently available at [Ad Selection API Data Protection Agreement](./ad-selection-api-data-protection-agreement.md), sets forth your and Microsoft’s obligations with respect to the processing and security of personal data through the API.  
+
+* You agree that you will not use the API to re-identify end users or to track end users across unaffiliated websites. 
+
+* Microsoft will retain and use your contact information in accordance with the Microsoft Privacy statement, which is currently available at https://www.microsoft.com/en-us/privacy/privacystatement  
+
+* You agree that Microsoft may contact you to notify you of issues and/or updates to the API, to request feedback on your use of the API, and to send information regarding other APIs and trials of potential interest .  including, but not limited to, issues and updates surveys asking you for feedback on your use of the API.  
+
+* The API may change at any time, and Microsoft may suspend, end, and/or restore the API at any time without notice. Where possible, you agree to feature degradation / graceful degradation to handle scenarios where the API may be unavailable.  
+
+* The API is experimental and may interfere with your experiences and the experiences of users who browse your websites, including potentially on other Chromium-compatible web browsers. The API may be unstable or include bugs. You understand that, when using the API, you may experience occasional crashes or data loss. By using the API, you agree that you should frequently back up your data.  
+
+* Microsoft may make non-material changes to these Terms of Use at any time without advance notice, but we will provide at least fifteen (15) calendar days prior notice of any material changes. You agree that we may provide notice via the email address you gave us. Notices emailed to you are deemed given when sent. All changes will apply prospectively, and using the API after the changes become effective means you accept the changes. If you do not accept the changes, you must stop using the API. 
 
 
 <!-- ====================================================================== -->
