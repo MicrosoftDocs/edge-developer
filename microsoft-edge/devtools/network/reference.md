@@ -109,7 +109,7 @@ By default, DevTools records all network requests in the **Network** tool, so lo
 
 For example: 
 
-1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
+1. Go to a webpage, such as the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -145,6 +145,9 @@ To clear all requests from the **Requests** table, in the **Network** tool, clic
 
 Or, press **Ctrl+L** (Windows, Linux, macOS) or **Command+K** (macOS) while the **Network** tool has focus.
 
+See also:
+* [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)
+
 
 <!-- ------------------------------ -->
 #### Save requests across page loads
@@ -156,6 +159,9 @@ To save requests across page loads, on the **Network** tool, select the **Preser
 
 DevTools saves all requests until you disable **Preserve log**.
 
+See also:
+* [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)
+
 
 <!-- ------------------------------ -->
 #### Capture screenshots during page load
@@ -165,6 +171,12 @@ You can capture screenshots to analyze what's displayed for users while waiting 
 
 To enable screenshots:
 
+1. Go to a webpage, such as [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/), in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
 1. In DevTools, open the **Network** tool.
 
 1. In the upper right within the **Network** tool, click the **Network settings** (gear) icon.  A row of checkboxes appears.
@@ -172,6 +184,7 @@ To enable screenshots:
 1. Select the **Capture screenshots** checkbox:
 
    ![Enabling 'Capture screenshots'](./reference-images/screenshot-box.png)
+
 
 To capture a screenshot:
 
@@ -196,7 +209,7 @@ To capture a screenshot:
 
 To replay an XHR request:
 
-1. Go to a webpage, such as the [DevTools Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
+1. Go to a webpage, such as the [Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -264,6 +277,9 @@ To manually clear the browser cache at any time, right-click anywhere in the **R
 
 ![The 'Clear browser cache' right-click command](./reference-images/clear-browser-cache-menu.png)
 
+See also:
+* [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)
+
 
 <!-- ------------------------------ -->
 #### Emulate offline
@@ -298,7 +314,9 @@ A warning icon is displayed on the **Network** tool's tab, to remind you that th
 
 ![The Throttled warning icon on the Network tab in the Activity Bar](./reference-images/throttled-icon.png)
 
-See also [Simulate a slower network connection](../network/index.md#simulate-a-slower-network-connection) in _Inspect network activity_.
+See also:
+* [Simulate a slower network connection](../network/index.md#simulate-a-slower-network-connection) in _Inspect network activity_.
+* [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)
 
 
 <!-- ---------- -->
@@ -309,7 +327,7 @@ In addition to presets, such as slow or fast 4G, you can also add your own custo
 
 To create a custom throttling profile:
 
-1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
+1. Go to a webpage, such as the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
 1. Right-click the webpage and then select **Inspect**.
 
@@ -663,7 +681,7 @@ The status bar at the bottom displays the number of the shown requests out of th
 #### Show only the requests with blocked response cookies
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#show-blocked-cookies -->
 
-To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, in the **3rd-party requests** (**More filters**) dropdown list, and then select **Blocked response cookies** so that a checkmark appears next to it.<!-- Try it on this [demo page](https://samesite-sandbox.glitch.me/). -->  Try it on the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, though there are no blocked response cookies:
+To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, in the **3rd-party requests** (**More filters**) dropdown list, and then select **Blocked response cookies** so that a checkmark appears next to it.<!-- Try it on this [demo page](https://samesite-sandbox.glitch.me/). -->  Try it on the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, though there are no blocked response cookies:
 
 ![The **Requests** table shows only the requests with blocked response cookies](./reference-images/blocked-response-cookies.png)
 
@@ -693,7 +711,7 @@ The **Requests** table highlights blocked requests in red.  The status bar at th
 #### Show only third-party requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#third-party -->
 
-To filter out everything except the requests with origin that differs from page origin, in the **Filters** action bar, select **More filters** > **3rd-party requests**, so that a checkmark appears.  Try it on the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.
+To filter out everything except the requests with origin that differs from page origin, in the **Filters** action bar, select **More filters** > **3rd-party requests**, so that a checkmark appears.  Try it on the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.
 
 ![The **Requests** table shows only the third-party requests](./reference-images/third-party-requests.png)
 
@@ -806,7 +824,7 @@ If inline frames on a page initiate a lot of requests, you can make the request 
 
 To group requests by iframes:
 
-1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
+1. Go to a webpage, such as the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -924,7 +942,7 @@ Messages are color-coded according to each type:
 
 To view the events that servers stream through the Fetch API, the EventSource API, and XHR:
 
-1. Go to a webpage that streams events, such as the [DevTools Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
+1. Go to a webpage that streams events, such as the [Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -1054,7 +1072,7 @@ Sometimes the **Headers** tab shows the warning message **Provisional headers ar
 
 Suppose the request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can select the **Disable cache** checkbox at the top of the **Network** tool, to see the full request headers.  For example:
 
-1. Go to the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.
+1. Go to the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.
 
 1. Right-click the webpage and then select **Inspect**.
 
@@ -1094,7 +1112,7 @@ As another case, suppose the network resource isn't valid.  For example, execute
 
 To view an HTTP request's payload (query string parameters and form data), select a request from the **Requests** table and then select the **Payload** tab in the sidebar, as follows:
 
-1. Go to a webpage, such as the [DevTools Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
+1. Go to a webpage, such as the [Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -1387,7 +1405,7 @@ To reduce the chances of accidental leaks of sensitive information, by default y
 
 To save all network requests to a HAR file, without sensitive data:
 
-1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
+1. Go to a webpage, such as the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -1564,7 +1582,7 @@ Use big request rows when you want more whitespace in your network requests tabl
 
 To enable big rows:
 
-1. Go to a webpage, such as the [Network tutorial](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
+1. Go to a webpage, such as the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -1597,6 +1615,11 @@ By default, DevTools displays the **Overview** pane.  To hide the **Overview** p
 <!-- not in upstream -->
 
 * [Inspect network activity](index.md) - step-by-step walkthrough and introduction to the **Network** tool.
+
+Demo webpages:
+* [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/)
+* [Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/)
+* [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)
 
 
 <!-- ====================================================================== -->
