@@ -316,7 +316,7 @@ To provide feedback about the Ad Selection API origin trial, create a new issue 
 
 * Your use of the Ad Selection API and related features ("Ad API") is subject to the terms contained herein and the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use), except that Section 3(b)(12) of the Terms of Use ("Use or transfer any data accessed ... for advertising or marketing purposes") does not apply to your use of the Ad API.
 
-* The Data Protection Addendum ([Data Protection Agreement for the Ad Selection API](./ad-selection-api-data-protection-agreement.md)) sets forth your and Microsoft's obligations with respect to the processing and security of personal data through the Ad API.
+* The Data Protection Addendum ([Data Protection Agreement for the Ad Selection API](./ad-selection-api-dpa.md)) sets forth your and Microsoft's obligations with respect to the processing and security of personal data through the Ad API.
 
 * You agree that you will not use the Ad API to re-identify end users or to track end users across unaffiliated websites.
 
@@ -340,7 +340,7 @@ Origin trials:
 * [Use origin trials in Microsoft Edge](../origin-trials/index.md)<!-- not in article body -->
 
 Legal:
-* [Data Protection Agreement for the Ad Selection API](./ad-selection-api-data-protection-agreement.md)
+* [Data Protection Agreement for the Ad Selection API](./ad-selection-api-dpa.md)
 * [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use)
 * [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement)
 

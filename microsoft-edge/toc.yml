@@ -71,8 +71,14 @@
         - name: Use origin trials in Microsoft Edge
           href: ./origin-trials/index.md
 
-        - name: Sign up for the Ad Selection API
-          href: ./web-platform/ad-selection-api.md
+        - name: Ad Selection API
+          items:
+            - name: Sign up for the Ad Selection API
+              href: ./web-platform/ad-selection-api.md
+
+            - name: Data Protection Agreement for the Ad Selection API
+              href: ./web-platform/ad-selection-api-dpa.md  # move to Legal repo
+            # href: /legal/microsoft-edge/ad-selection-api/ad-selection-api-dpa.md
 
         - name: Prompt a built-in language model with the Prompt API
           href: ./web-platform/prompt-api.md
