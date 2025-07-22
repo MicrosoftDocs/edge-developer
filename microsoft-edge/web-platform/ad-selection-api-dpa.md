@@ -11,7 +11,7 @@ ms.date: 07/22/2025
 
 This Ad Selection API Data Protection Agreement ("Ad Selection DPA") forms part of the Customer Agreement between Customer ("Customer" or "you") and Microsoft Corporation ("Microsoft" or "we") covering Customer's use of the Ad Selection API ("Ad API").  It sets forth the parties' obligations with respect to Customer Personal Data processed by Microsoft.
 
-This Ad Selection DPA incorporates by reference the terms of the [Microsoft Products and Services Data Protection Addendum ("DPA")](http://aka.ms/dpa) ("general DPA").  Capitalized terms not defined herein shall have the meanings given to them in the Customer Agreement or the general DPA, as applicable.
+This Ad Selection DPA incorporates by reference the terms of the [Microsoft Products and Services Data Protection Addendum ("DPA")](https://aka.ms/dpa) ("general DPA").  Capitalized terms not defined herein shall have the meanings given to them in the Customer Agreement or the general DPA, as applicable.
 
 Microsoft may make non-material changes to this Ad Selection DPA at any time without advance notice, but we will provide at least fifteen (15) calendar days prior notice of any material changes.  We may give you notice via the email address you gave us.  Notices emailed to you are deemed given when sent.  All changes will apply prospectively, and using the Ad API after the changes become effective means you accept the changes.  If you do not accept the changes, you must stop using the Ad API.
 
