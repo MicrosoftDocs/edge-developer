@@ -19,7 +19,7 @@ This Ad Selection DPA applies solely to Customer's use of the Ad API and not to 
 
 1.  The Ad API is not a Core Online Service.
 
-1.  The following terms of the general DPA shall not apply to the Ad API:
+2.  The following terms of the general DPA shall not apply to the Ad API:
 
     * "Data Subject Rights; Assistance with Requests"
     * "Data Retention and Deletion"
@@ -33,12 +33,12 @@ This Ad Selection DPA applies solely to Customer's use of the Ad API and not to 
     * "Appendix C – Additional Safeguards Addendum"
     * "Attachment 1 – European Union General Data Protection Regulation Terms"
 
-1.  The following changes are made to the general DPA for the Ad API only:
+3.  The following changes are made to the general DPA for the Ad API only:
 
-    1. The following is added to the end of "Nature of Data Processing; Ownership": Customer agrees that Customer's agreement (including the DPA Terms and any applicable updates), along with the product documentation and Customer's use and configuration of features in the Ad API, are Customer's complete documented instructions to Microsoft for the processing of Personal Data.
+    a. The following is added to the end of "Nature of Data Processing; Ownership": Customer agrees that Customer's agreement (including the DPA Terms and any applicable updates), along with the product documentation and Customer's use and configuration of features in the Ad API, are Customer's complete documented instructions to Microsoft for the processing of Personal Data.
 
-    1. The following is added to the end of "Data Subject Rights; Assistance with Requests": Microsoft makes available settings within the Edge browser that enable data subjects to exercise their rights under the General Data Protection Regulation (GDPR) without requiring such data subjects to contact Customer to do so.
+    b. The following is added to the end of "Data Subject Rights; Assistance with Requests": Microsoft makes available settings within the Edge browser that enable data subjects to exercise their rights under the General Data Protection Regulation (GDPR) without requiring such data subjects to contact Customer to do so.
 
-    1. The final four paragraphs<!-- In addition, ...; Each Core Online...; Microsoft implements...; Microsoft may... --> of "Security Practices and Policies" do not apply to the Ad API.
+    c. The final four paragraphs<!-- In addition, ...; Each Core Online...; Microsoft implements...; Microsoft may... --> of "Security Practices and Policies" do not apply to the Ad API.
 
-    1. The terms in the section entitled "Data Transfers and Location" shall only apply to the extent that any data is stored within the cloud environment and not on the Customer's or end users' devices directly.
+    d. The terms in the section entitled "Data Transfers and Location" shall only apply to the extent that any data is stored within the cloud environment and not on the Customer's or end users' devices directly.
