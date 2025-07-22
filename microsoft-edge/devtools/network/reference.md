@@ -76,7 +76,7 @@ The **Network** tool has the following features, to inspect network activity for
    * [Display HTTP headers](#display-http-headers)
       * [View HTTP header source](#view-http-header-source)
       * [Provisional headers warning](#provisional-headers-warning)
-   * [Display query string parameters](#display-query-string-parameters)
+   * [View request payload (query string parameters and form data)](#view-request-payload-query-string-parameters-and-form-data)
       * [View payload source](#view-payload-source)
       * [Display URL-encoded query string parameters](#display-url-encoded-query-string-parameters)
    * [Display cookies](#display-cookies)
@@ -91,7 +91,7 @@ The **Network** tool has the following features, to inspect network activity for
    * [Display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource)
 * [Export requests data](#export-requests-data)
    * [Save all network requests to a HAR file](#save-all-network-requests-to-a-har-file)
-   * [Copy one or more requests to the clipboard](#copy-one-or-more-requests-to-the-clipboard)
+   * [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard)
    * [Copy formatted response JSON to the clipboard](#copy-formatted-response-json-to-the-clipboard)
    * [Copy property values from network requests to your clipboard](#copy-property-values-from-network-requests-to-your-clipboard)
 * [Change the layout of the Network tool](#change-the-layout-of-the-network-tool)
@@ -1149,7 +1149,7 @@ To instead view the sources of query string parameters or form data:
 
    In the **Payload** tab, the **Query String Parameters** section shows the payload in a human-readable form, for `hasfile`.  The **Form Data** section show the payload in a human-readable form, for `username`, `timestamp`, and `file`:
 
-  ![The View source buttons](./reference-images/resources-headers-query-string-parameters-2.png)<!-- adds red boxes on View source button 2x -->
+   ![The View source buttons](./reference-images/resources-headers-query-string-parameters-2.png)<!-- adds red boxes on View source button 2x -->
 
 1. Next to the **Query String Parameters** section heading, click the **View source** button.
 
@@ -1445,72 +1445,57 @@ The **Network** tool reads and shows initiators for the requests that are import
 
 
 <!-- ------------------------------ -->
-#### Copy one or more requests to the clipboard
+#### Copy network requests to the clipboard
 <!-- Copy a request, a filtered set of requests, or all of them to the clipboard  https://developer.chrome.com/docs/devtools/network/reference/#copy -->
-
-<!-- reconcile old downstream & new upstream section layout
-upstream content outline, has lists:
-Copy as
-Copy all
-Copy all listed
--->
-
-<!-- old content to replace: -->
-
-Under the **Name** column of the **Requests** table, right-click a request, click **Copy**, and then select one of the following options:
-
-<!-- todo: update per latest ui -->
-| Name | Details |
-| --- | --- |
-| **Copy Link Address** | Copy the URL of the request to the clipboard. |
-| **Copy Response** | Copy the response body to the clipboard. |
-| **Copy as Fetch** | &nbsp; |
-| **Copy as cURL** | Copy the request as a cURL command. |
-| **Copy All as Fetch** | &nbsp; |
-| **Copy All as cURL** | Copy all requests as a chain of cURL commands. |
-| **Copy All as HAR** | Copy all requests as HAR data. |
-<!-- todo: add "Copy all listed" items -->
-
-![Selecting 'Copy Response'](./reference-images/copy-response.png)<!-- todo: update per latest ui -->
-
-
-<!-- the new, upstream content: -->
 
 Under the **Name** column of the **Requests** table, right-click a request, hover over **Copy**, and then select one of the following options.
 
-To copy a single request, its response, or stack trace:
+To copy a single request, its response, or <!-- todo: its? -->stack trace:
 
-* **Copy URL**. Copy the request's URL to the clipboard.
-* **Copy as cURL**. Copy the request as a cURL command.
-* **Copy as PowerShell**. Copy the request as a PowerShell command.
-* **Copy as fetch**. Copy the request as a fetch call.
-* **Copy as fetch (Node.js)**. Copy the request as a Node.js fetch call.
-* **Copy response**. Copy the response body to the clipboard.
-* **Copy stack trace**. Copy the request's stack track to the clipboard.
+| Name | Details |
+| --- | --- |
+| **Copy URL** | Copy the URL of the request to the clipboard. |
+| **Copy as cURL (cmd)** | Copy the request as a cURL command. |
+| **Copy as cURL (bash)** |  |
+| **Copy as PowerShell** | Copy the request as a PowerShell command. |
+| **Copy as fetch** | Copy the request as a fetch call. |
+| **Copy as fetch (Node.js)** | Copy the request as a Node.js fetch call. |
+| **Copy response** | Copy the response body to the clipboard. |
+| **Copy stack trace** | Copy the request's stack track to the clipboard. |
+<!-- todo: "Copy stack trace" is listed in upstream, but is not in any screenshots, not seeing in UI --> 
 
 To copy all requests:
 
-* **Copy all URLs**. Copy URLs of all requests to the clipboard.
-* **Copy all as cURL**. Copy all requests as a chain of cURL commands.
-* **Copy all as PowerShell**. Copy all requests as a chain of PowerShell commands.
-* **Copy all as fetch**. Copy all requests as a chain of fetch calls.
-* **Copy all as fetch (Node.js)**. Copy all requests as a chain of Node.js fetch calls.
-* **Copy all as HAR (sanitized)**. Copy all requests as HAR data without sensitive data such as `Cookie`, `Set-Cookie`, and `Authorization` headers.
-* **Copy all as HAR (with sensitive data)**. Copy all requests as HAR data with sensitive data.
+| Name | Details |
+| --- | --- |
+| **Copy all URLs** | Copy URLs of all requests to the clipboard. |
+| **Copy all as cURL (cmd)** | Copy all requests as a chain of cURL commands. |
+| **Copy all as cURL (bash)** |  |
+| **Copy all as PowerShell** | Copy all requests as a chain of PowerShell commands. |
+| **Copy all as fetch** | Copy all requests as a chain of fetch calls. |
+| **Copy all as fetch (Node.js)** | Copy all requests as a chain of Node.js fetch calls. |
+| **Copy all as HAR (sanitized)** | Copy all requests as HAR data without sensitive data such as `Cookie`, `Set-Cookie`, and `Authorization` headers. |
+| **Copy all as HAR (with sensitive data)** | Copy all requests as HAR data with sensitive data.  Command appears if you select the checkbox **Customize and control DevTools** > **Settings** > **Preferences** page >  **Network** section > **Allow to generate HAR with sensitive data**. |
 
-<!-- ![Options for copying all requests](todo png: copy-options.png) -->
+![The Copy menu](./reference-images/copy-options.png)
 
-To copy a filtered set of requests, apply a filter (see [Filter requests](#filter-requests), above) to the network log, right-click a request, and then select:
+To copy a filtered set of requests, apply a filter to the network log, right-click a request, and then select:
 
-* **Copy all listed URLs**. Copy URLs of all filtered requests to the clipboard.
-* **Copy all listed as cURL**. Copy all filtered requests as a chain of cURL commands.
-* **Copy all listed as PowerShell**. Copy all filtered requests as a chain of PowerShell commands.
-* **Copy all listed as fetch**. Copy all filtered requests as a chain of fetch calls.
-* **Copy all listed as fetch (Node.js)**. Copy all filtered requests as a chain of Node.js fetch calls.
-* **Copy all listed as HAR (sanitized)**. Copy all filtered requests as HAR data without sensitive data such as `Cookie`, `Set-Cookie`, and `Authorization` headers.
-* **Copy all listed as HAR (with sensitive data)**. Copy all filtered requests as HAR data with sensitive data.
+| Name | Details |
+| --- | --- |
+| **Copy all listed URLs** | Copy URLs of all filtered requests to the clipboard. |
+| **Copy all listed as cURL (cmd)** | Copy all filtered requests as a chain of cURL commands. |
+| **Copy all listed as cURL (bash)** | Copy all filtered requests as a chain of cURL commands. |
+| **Copy all listed as PowerShell** | Copy all filtered requests as a chain of PowerShell commands. |
+| **Copy all listed as fetch** | Copy all filtered requests as a chain of fetch calls. |
+| **Copy all listed as fetch (Node.js)** | Copy all filtered requests as a chain of Node.js fetch calls. |
+| **Copy all listed as HAR (sanitized)** | Copy all filtered requests as HAR data without sensitive data such as `Cookie`, `Set-Cookie`, and `Authorization` headers. |
+| **Copy all listed as HAR (with sensitive data)** | Copy all filtered requests as HAR data with sensitive data.  Command appears if you select the checkbox **Customize and control DevTools** > **Settings** > **Preferences** page >  **Network** section > **Allow to generate HAR with sensitive data**. |
 
-<!-- ![Copy options for a filtered set of requests](todo png: copy-filtered.png) -->
+![Copy options for a filtered set of requests](./reference-images/copy-filtered.png)
+
+See also:
+* [Filter requests](#filter-requests), above.
 
 
 <!-- ------------------------------ -->
@@ -1519,7 +1504,7 @@ To copy a filtered set of requests, apply a filter (see [Filter requests](#filte
 
 To copy the formatted JSON data of a JSON response:
 
-1. In the Request table, click the name of the request that led to a JSON response.
+1. In the **Requests** table, click the name of the request that led to a JSON response.
 
 1. In the sidebar, select the **Preview** tab.
 
