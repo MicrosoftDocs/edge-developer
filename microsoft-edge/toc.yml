@@ -76,9 +76,12 @@
             - name: Sign up for the Ad Selection API
               href: ./web-platform/ad-selection-api.md
 
+          # - name: Terms of Use for the Ad Selection API
+          #   href: /legal/microsoft-edge/ad-selection-api/terms-of-use.md  # todo: move h2 from above to Legal repo
+
             - name: Data Protection Agreement for the Ad Selection API
-              href: ./web-platform/ad-selection-api-dpa.md  # move to Legal repo
-            # href: /legal/microsoft-edge/ad-selection-api/ad-selection-api-dpa.md
+              href: ./web-platform/ad-selection-api-dpa.md  
+            # href: /legal/microsoft-edge/ad-selection-api/dpa.md  # todo: move to Legal repo
 
         - name: Prompt a built-in language model with the Prompt API
           href: ./web-platform/prompt-api.md

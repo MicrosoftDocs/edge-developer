@@ -39,6 +39,6 @@ This Ad Selection DPA applies solely to Customer's use of the Ad API and not to 
 
     b. The following is added to the end of "Data Subject Rights; Assistance with Requests": Microsoft makes available settings within the Edge browser that enable data subjects to exercise their rights under the General Data Protection Regulation (GDPR) without requiring such data subjects to contact Customer to do so.
 
-    c. The final four paragraphs<!-- In addition, ...; Each Core Online...; Microsoft implements...; Microsoft may... --> of "Security Practices and Policies" do not apply to the Ad API.
+    c. The final four paragraphs of "Security Practices and Policies" (which begin "In addition, ..."; "Each Core Online..."; "Microsoft implements..."; and "Microsoft may...") do not apply to the Ad API.
 
     d. The terms in the section entitled "Data Transfers and Location" shall only apply to the extent that any data is stored within the cloud environment and not on the Customer's or end users' devices directly.
