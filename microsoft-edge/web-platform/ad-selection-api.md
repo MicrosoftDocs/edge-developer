@@ -30,6 +30,7 @@ The Ad Selection API provides user-relevant ads on your site without using third
     * [Deployment guide](#deployment-guide)
 * [Use the Ad Selection API on your website](#use-the-ad-selection-api-on-your-website)
 * [Provide feedback about the origin trial](#provide-feedback-about-the-origin-trial)
+* [Terms of Use](#terms-of-use)
 * [See also](#see-also)
 
 The Ad Selection API can be used by:
@@ -117,7 +118,7 @@ To sign up for the **Ad Selection API** origin trial for a domain:
    The `ad-selection-attestations.json` file must be published within **30 days** of receiving the OT token.  Hosting this JSON file is required, in order to complete your attestation and allow your code to access the Ad Selection API, to test the Ad Selection API with supported Microsoft Edge clients.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 #### Renewing the origin trial token
 todo -->
 
@@ -310,15 +311,38 @@ To provide feedback about the Ad Selection API origin trial, create a new issue 
 
 * To submit a new issue, go to the [new issue form](https://github.com/WICG/privacy-preserving-ads/issues/new?labels=Ad+Selection%20API,OriginTrialFeedback&title=%5BAd%20Selection%20API%5D+Feedback).
 
+<!-- ====================================================================== -->
+## Terms of Use
+
+* Your use of the Ad Selection API and related features ("Ad API") is subject to the terms contained herein and the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use), except that Section 3(b)(12) of the Terms of Use ("Use or transfer any data accessed ... for advertising or marketing purposes") does not apply to your use of the Ad API.
+
+* The Data Protection Addendum ([Data Protection Agreement for the Ad Selection API](./ad-selection-api-dpa.md)) sets forth your and Microsoft's obligations with respect to the processing and security of personal data through the Ad API.
+
+* You agree that you will not use the Ad API to re-identify end users or to track end users across unaffiliated websites.
+
+* Microsoft will retain and use your contact information in accordance with the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement).
+
+* You agree that Microsoft may contact you to notify you of issues and/or updates to the Ad API, to request feedback on your use of the Ad API, and to send information regarding other APIs and trials of potential interest, including, but not limited to, issues and updates surveys asking you for feedback on your use of the Ad API.
+
+* The Ad API may change at any time, and Microsoft may suspend, end, and/or restore the Ad API at any time without notice.  Where possible, you agree to feature graceful degradation to handle scenarios where the Ad API may be unavailable.
+
+* The Ad API is experimental and may interfere with your experiences and the experiences of users who browse your websites, including potentially on other Chromium-compatible web browsers.  The Ad API may be unstable or include bugs.  You understand that, when using the Ad API, you may experience occasional crashes or data loss.  By using the Ad API, you agree that you should frequently back up your data.
+
+* Microsoft may make non-material changes to these Terms of Use at any time without advance notice, but we will provide at least fifteen (15) calendar days prior notice of any material changes.  You agree that we may provide notice via the email address you gave us.  Notices emailed to you are deemed given when sent.  All changes will apply prospectively, and using the Ad API after the changes become effective means you accept the changes.  If you do not accept the changes, you must stop using the Ad API.
+
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
 Origin trials:
-
 * [Ad Selection API Origin Trial Registration in Microsoft Edge](https://forms.office.com/r/eBhJt58Lks)
 * [Use origin trials in Microsoft Edge](../origin-trials/index.md)<!-- not in article body -->
+
+Legal:
+* [Data Protection Agreement for the Ad Selection API](./ad-selection-api-dpa.md)
+* [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use)
+* [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement)
 
 Design and technical documents:
 
