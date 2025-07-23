@@ -41,7 +41,7 @@ The current owner of the extension must send an email, as follows:
 <!-- ---------------------------------------------------------------------- -->
 ## Processing the ownership transfer request
 
-The Microsoft Edge extensions team will review the request and, to ensure legal compliance, will initiate an explicit confirmation process with **both the source and target publishers** before proceeding with the original request.
+The Microsoft Edge extensions team will review the request and, to ensure legal compliance, will initiate an explicit confirmation process with both the source and target publishers before proceeding with the original request.
 
 
 <!-- ------------------------------ -->
