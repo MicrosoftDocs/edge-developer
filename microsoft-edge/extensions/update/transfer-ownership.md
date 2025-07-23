@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 02/10/2025
+ms.date: 07/23/2025
 ---
 # Transfer ownership of an extension
 
@@ -41,7 +41,7 @@ The current owner of the extension must send an email, as follows:
 <!-- ---------------------------------------------------------------------- -->
 ## Processing the ownership transfer request
 
-The Microsoft Edge extensions team will review the request and ask for confirmation from both publishers.
+The Microsoft Edge extensions team will review the request and, to ensure legal compliance, will initiate an explicit confirmation process with both the source and target publishers before proceeding with the original request.
 
 
 <!-- ------------------------------ -->

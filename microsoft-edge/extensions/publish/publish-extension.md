@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 01/08/2025
+ms.date: 07/23/2025
 ---
 # Publish a Microsoft Edge extension
 
@@ -30,7 +30,9 @@ Before publishing your extension, you should have a working prototype of your ex
 <!-- ---------------------------------- -->
 #### Create a developer account
 
-To publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register for the Microsoft Edge program, see [Developer registration](./create-dev-account.md).
+To get started, visit [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  This is where every developer (new or existing) must go to publish or manage their extensions.
+
+Use your active developer account to submit your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  If you don't have a developer account, create a new developer account.  To open a new developer account and register for the Microsoft Edge program, see [Register as a Microsoft Edge extension developer](./create-dev-account.md).
 
 
 <!-- ---------------------------------- -->
@@ -330,7 +332,7 @@ If you encounter any issues in the submission or registration process, file a su
 
 * [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md)
 * [Extension concepts and architecture](../getting-started/index.md)
-* [Developer registration](./create-dev-account.md)
+* [Register as a Microsoft Edge extension developer](./create-dev-account.md)
 
 Partner Center:
 * [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
