@@ -213,7 +213,7 @@ See also [Set orientation](#set-orientation), below.
 #### Toggle dual-screen mode
 <!-- https://developer.chrome.com/docs/devtools/device-mode/#dual-screen -->
 
-Some devices, for example, Surface Duo,<!-- todo: omit? --> have two screens and two ways to use them: with one or both screens active.
+Some devices have two screens and two ways to use them: with one or both screens active.
 
 To toggle between dual and single screen, click the **Toggle dual-screen mode** button in the toolbar.
 
@@ -224,7 +224,7 @@ To toggle between dual and single screen, click the **Toggle dual-screen mode** 
 #### Set device posture
 <!-- https://developer.chrome.com/docs/devtools/device-mode/#posture -->
 
-Some devices, such as Asus Zenbook Fold, have a foldable screen.  Foldable screens have a posture: continuous or folded.  The continuous posture refers to a "flat" position and folded forms an angle between sections of the display.
+Some devices have a foldable screen.  Foldable screens have a posture: continuous or folded.  The continuous posture refers to a "flat" position and folded forms an angle between sections of the display.
 
 To set the device posture, select **Continuous** or **Folded** from the corresponding dropdown menu in the toolbar.
 

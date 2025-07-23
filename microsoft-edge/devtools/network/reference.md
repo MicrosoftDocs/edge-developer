@@ -236,6 +236,10 @@ To replay an XHR request:
 
    ![Click Replay XHR](./reference-images/selecting-replay-xhr.png)
 
+For information about initiators, see:
+* [Display initiators and dependencies](#display-initiators-and-dependencies), below.
+* [Log network activity](./index.md#log-network-activity) in _Inspect network activity_.
+
 
 <!-- ====================================================================== -->
 ## Change loading behavior
@@ -384,58 +388,31 @@ See also:
 <!-- ---------- -->
 ###### Throttle WebSocket connections
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#throttle-websocket -->
+<!-- todo: test these steps and re-create pngs -->
 
-In addition to HTTP requests, DevTools throttles WebSocket connections.
-
-We'll use the slow custom throttling profile that's created in the previous section, to show the difference between non-throttled and throttled WebSocket connections, in the number in the **Length** column for **Messages**.
+In addition to HTTP requests, DevTools can throttle WebSocket connections.  We'll use the slow custom throttling profile that's created in the previous section, to show the effect of a throttled WebSocket connection on your webpage.
 
 To observe WebSocket throttling:
 
 1. Do the steps in the previous section, [Create a custom throttling profile](#create-a-custom-throttling-profile).
 
-1. Go to a WebSocket test page, such as [Online WebSocket Tester](https://www.piesocket.com/websocket-tester), in a new window or tab.
+1. Go to a page that uses WebSockets, such as [Online WebSocket Tester](https://www.piesocket.com/websocket-tester), in a new window or tab.
 
-1. In the **Online WebSocket Tester** webpage, click the **Connect** button.
+1. On the page, establish the WebSocket connection.
+    
+   If you use the **Online WebSocket Tester** webpage, click the **Connect** button.
 
    If you don't create a PieSocket account to get an API Token, the webpage displays "Connection Established - {"error":"Unknown api key"}".
 
-   If you create a PieSocket account to get an API Token (as described at the end of this section), the webpage simply displays "Connection Established".
+   If you create a PieSocket account to get an API Token, the webpage simply displays "Connection Established".
 
 1. Right-click the webpage and then select **Inspect**.
 
    DevTools opens.
 
-
-   **Without throttling:**
-
-1. In the DevTools **Network** tool, in the **Throttling** dropdown menu, make sure **No throttling** is selected.
-
-1. In the **Online WebSocket Tester** webpage, in the message text box, delete **Hello PieSocket!**, and enter **DevTools no throttling**.
-
-1. In the **Online WebSocket Tester** webpage, click the **Send** button.
-
-   The console within the **Online WebSocket Tester** webpage displays the sent message **DevTools no throttling**:
-
-   ![UI of Online WebSocket Tester webpage](./reference-images/websockets-tester-ui.png)
-
-   If you register at the PieSocket site (as described at the end of this section), the webpage also displays that message echoed from the server:
-
-   ![UI of Online WebSocket Tester webpage, if registered](./reference-images/websockets-tester-ui-registered.png)
-
-1. At the top of the **Network** tool, select the **Socket** filter button (shown below).
-
-1. In the table, click your connection name, such as **channel_123?api_key=...**.
-
-   Tabs appear.
-
-1. Select the **Messages** tab (shown below).
-
-1. For the message **DevTools no throttling**, note the number in the **Length** column.
-
-
-   **With throttling:**
-
 1. In DevTools, in the **Network** tool, in the **Throttling** dropdown menu, select **Custom** > **10kbps**.
+
+   That option was created in the previous section, [Create a custom throttling profile](#create-a-custom-throttling-profile).
 
 1. In the **Online WebSocket Tester** webpage, in the message text box, delete **DevTools no throttling**, and enter **DevTools with throttling**.
 
@@ -443,11 +420,23 @@ To observe WebSocket throttling:
 
    The console within the **Online WebSocket Tester** webpage displays **DevTools with throttling**.
 
-1. In the **Network** tool, in the **Messages** tab, for the message **DevTools with throttling**, note the number in the **Length** column:
+1. At the top of the **Network** tool, select the **Socket** filter button (shown below).
+    
+1. In the table, click your connection name, such as **channel_123?api_key=...**.
 
-![Messages sent and without throttling](./reference-images/messages-with-without-throttling.png)
+   Tabs appear.
 
+1. Select the **Messages** tab (shown below).
 
+   The WebSocket messages that were sent between the client and server appear.
+
+   The **Time** column shows when messages were received or sent.  These time values reflect the throttled network connection.
+
+   <!-- end new -->
+
+![Messages sent and without throttling](./reference-images/messages-with-without-throttling.png)<!-- todo: update -->
+
+<!--
 Optional: To get red down-arrow messages (echoed from the server), as well as green up-arrow messages:
 
 1. Create an account at the PieSocket site.  This creates an API Token.
@@ -459,6 +448,7 @@ Optional: To get red down-arrow messages (echoed from the server), as well as gr
    The [Online WebSocket Tester](https://piehost.com/websocket-tester) page opens, with your query parameters.
 
 1. Click the **Connect** button.
+-->
 
 
 <!-- ---------- -->
@@ -467,7 +457,7 @@ Optional: To get red down-arrow messages (echoed from the server), as well as gr
 
 From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel at the bottom of DevTools, and then throttle the network connection from there:
 
-1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
+1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon](./reference-images/more-network-conditions-icon.png)) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. In the **Network conditions** tool, in the **Network throttling** menu, select a connection speed.
 
@@ -681,9 +671,19 @@ The status bar at the bottom displays the number of the shown requests out of th
 #### Show only the requests with blocked response cookies
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#show-blocked-cookies -->
 
-To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, in the **3rd-party requests** (**More filters**) dropdown list, and then select **Blocked response cookies** so that a checkmark appears next to it.<!-- Try it on this [demo page](https://samesite-sandbox.glitch.me/). -->  Try it on the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, though there are no blocked response cookies:
+To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, select the **More filters** dropdown list, and then select **Blocked response cookies** so that a checkmark appears next to it.<!-- Try it on this [demo page](https://samesite-sandbox.glitch.me/). -->  Try it on the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, though there are no blocked response cookies:
 
-![The **Requests** table shows only the requests with blocked response cookies](./reference-images/blocked-response-cookies.png)
+<!-- todo:
+don't use that demo page, since it doesn't show blocked response cookies.
+
+To get blocked response cookies:
+1. Open an InPrivate window.
+1. Go to microsoft.com.
+
+change the steps to that.   this will show requests with blocked response cookies in the screenshot, and we can show the info icon.
+-->
+
+![The **Requests** table shows only the requests with blocked response cookies](./reference-images/blocked-response-cookies.png)<!-- todo: redo -->
 
 The status bar at the bottom displays the number of the shown requests out of the total.
 
@@ -701,7 +701,7 @@ Additionally, the **Network** tool shows a warning icon next to a request with c
 
 To filter out everything except blocked requests, in the **Filters** action bar, select **More filters** > **Blocked requests**, so that a checkmark appears.  To test this, you can use the **Network request blocking** tool in the **Quick View** panel at the bottom of DevTools; see [Block requests](./index.md#block-requests) in _Inspect network activity_.
 
-![The **Requests** table shows only blocked requests](./reference-images/blocked-requests.png)
+![The **Requests** table shows only blocked requests](./reference-images/blocked-requests.png)<!-- todo: show **Network request blocking** tool in Quick View, showing at least one blocking pattern created, per png in PR Comment https://github.com/MicrosoftDocs/edge-developer/pull/3405/files#r2221865631 -->
 <!-- https://microsoftedge.github.io/Demos/network-tutorial/ -->
 
 The **Requests** table highlights blocked requests in red.  The status bar at the bottom displays the number of the shown requests out of the total, such as **15 / 17 requests**.
@@ -824,7 +824,7 @@ If inline frames on a page initiate a lot of requests, you can make the request 
 
 To group requests by iframes:
 
-1. Go to a webpage, such as the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
+1. Go to a webpage, such as the [Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -977,8 +977,8 @@ To clear the list of captured events, click the **Clear** (![EventStream Clear i
 
 See also:
 * [Using the Fetch API](https://developer.mozilla.org/docs/Web/API/Fetch_API/Using_Fetch)
-* [Server-sent events](https://developer.mozilla.org/docs/Web/API/Server-sent_events)) - EventSource API.
-* [XMLHttpRequest)](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) - XHR.
+* [Server-sent events](https://developer.mozilla.org/docs/Web/API/Server-sent_events) - EventSource API.
+* [XMLHttpRequest](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest) - XHR.
 
 
 <!-- ------------------------------ -->
@@ -1148,11 +1148,7 @@ In the **Console** tab of DevTools is the error:
 
 * `POST https://microsoftedge.github.io/Demos/devtools-network-reference/form-data-endpoint?hasfile=true 405 (Method Not Allowed) (anonymous) @ script.js:49`
 
-Or, if you use git bash, change directory to `/Demos/devtools-network-reference/`, run `npx http-server`, and then go to `http://localhost:8080/`, the **Console** error is:
-
-* `POST http://localhost:8080/form-data-endpoint?hasfile=true net::ERR_ABORTED 405 (Method Not Allowed) (anonymous) @ script.js:49`
-
-A harmless **Method Not Allowed** error appears in the **Console**, because there's no `form-data-endpoint` POST handler on the demo server.  The error is expected, because github.io hosting or the localhost npx server doesn't run application servers, only static files.
+This harmless **Method Not Allowed** error appears in the **Console**, because there's no `form-data-endpoint` POST handler on the demo server.  The error is expected, because github.io hosting or the localhost npx server doesn't run application servers, only static files.
 
 
 <!-- ---------- -->
@@ -1175,16 +1171,25 @@ To instead view the sources of query string parameters or form data:
 
    The source information for the payload is displayed:
 
-   ![Payload tab > Query String Parameters section and Form Data section > the "View source" button](./reference-images/view-source-buttons.png)<!-- todo: shows: text/plain, though previous png says: (binary) -->
+   ![Payload tab > Query String Parameters section and Form Data section > the "View source" button](./reference-images/view-source-buttons.png)<!-- todo: lower right: one big box only -->
 
 
 <!-- ---------- -->
 ###### Display URL-encoded query string parameters
 <!-- View URL-decoded arguments of query string parameters  https://developer.chrome.com/docs/devtools/network/reference/#payload-encodings -->
+<!-- todo: redo section, showing new test button "Send encoded query parameters" at https://microsoftedge.github.io/Demos/devtools-network-reference/ -->
 
 To display query string parameters in a human-readable format, but with encodings preserved:
 
+   <!-- old: -->
+
 1. Go to a webpage that uses query string parameters, such as [Removing -ms-high-contrast and embracing standards-based forced colors in Microsoft Edge](https://blogs.windows.com/msedgedev/2025/06/30/removing-ms-high-contrast-and-embracing-standards-based-forced-colors-in-microsoft-edge/), in a new window or tab.
+
+   <!-- new: -->
+
+1. Go to a webpage that uses query string parameters, such as the [Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
+
+   <!-- see pngs in PR Comment https://github.com/MicrosoftDocs/edge-developer/pull/3405/files#r2221950996 -->
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -1194,18 +1199,13 @@ To display query string parameters in a human-readable format, but with encoding
 
 1. Refresh the webpage.
 
-1. In the **Requests** table, select a request, such as **1.0/?cors=true&content-type=...**.
+1. In the **Requests** table, select a request, such as **1.0/?cors=true&content-type=...**.<!-- todo: change per new demo -->
 
 1. In the sidebar, select the **Payload** tab.
 
 1. Click the **View decoded** button or **View URL-encoded** button:
 
    ![Query string parameters shown with URL-encoded characters](./reference-images/toggle-url-encoding-2.png)
-
-   | Encoded character | Decoded character |
-   |---|---|
-   | `%3D` | `=` |
-   | `%26` | `&` |
 
    In the query string, the character or encoding is shown; and the button label switches between **View decoded** and **View URL-encoded**:
 
@@ -1468,7 +1468,7 @@ The **Network** tool reads and shows initiators for the requests that are import
 
 Under the **Name** column of the **Requests** table, right-click a request, hover over **Copy**, and then select one of the following options.
 
-To copy a single request, its response, or <!-- todo: its? -->stack trace:
+To copy a single request, its response, or its stack trace:
 
 | Name | Details |
 | --- | --- |
@@ -1479,8 +1479,8 @@ To copy a single request, its response, or <!-- todo: its? -->stack trace:
 | **Copy as fetch** | Copy the request as a fetch call. |
 | **Copy as fetch (Node.js)** | Copy the request as a Node.js fetch call. |
 | **Copy response** | Copy the response body to the clipboard. |
-| **Copy stack trace** | Copy the request's stack track to the clipboard. |
-<!-- todo: "Copy stack trace" is listed in upstream, but is not in any screenshots, not seeing in UI --> 
+| **Copy stack trace** | Copy the request's stack track<!-- todo: trace? --> to the clipboard.  This menuitem only appears for requests that are triggered by JavaScript code, such as Fetch or XHR requests. |
+<!-- todo: to see the menuitem "Copy stack trace", can use devtools-network-reference demo and "Send an XHR request" button  -->
 
 To copy all requests:
 
