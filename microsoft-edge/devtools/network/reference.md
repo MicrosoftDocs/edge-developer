@@ -885,15 +885,44 @@ To view the messages of a WebSocket connection:
 
 1. Select the **Network** tool.
 
+   The **All** filter button is selected by default.  The **Network** panel is empty, displaying no messages.
+
 1. Refresh the webpage.
 
-1. In the **Name** pane, click the URL of the WebSocket connection, such as **channel_1?api_key=...**.
+   In the **Network** tool's **Requests** table, many requests are listed.
 
-1. Click the **Messages** tab.
+1. At the top of the **Network** tool, select the **Socket** filter button, with tooltip: **WebSocket | Web Transport | DirectSocket**.
 
-1. At the top of the **Network** tool, select the **Socket** filter button.
+   The filtered list of requests is empty.
 
-The table shows the last 100 messages:
+1. In the Online Websocket Tester webpage, click the **Connect** button.
+
+   If you haven't set up an account and API Token, the page displays:
+
+   * **Connection Established**
+   * **{"error":"Unknown api key"}** with a triangle pointing down; sent from the server to the browser.
+
+   In the **Network** tool, in the **Messages** tab, the request is displayed:
+
+   * **channel_123?api_key=...**
+
+1. In the list of requests, select the WebSocket connection, such as **channel_123?api_key=...**.
+
+   The sidebar opens, with tabs.
+
+1. Select the **Messages** tab.
+
+   If you didn't register for an API Token, the **Messages** tab lists the message:
+
+   * **{"error":"Unknown api key"}** with a red down-arrow; sent from the server to the browser.
+
+1. In the Online Websocket Tester webpage, in the text box, change **Hello PieSocket!** to **Hello world!**, and then click the **Send** button.
+
+   In the webpage, the console shows the message **Hello world!** with a triangle pointing up; sent from the browser to the server.
+
+   In the **Network** tool, in the **Messages** tab, the table shows the last 100 messages; in this case, the message is added:
+
+   * **Hello world!** with a green up-arrow; sent from the browser to the server:
 
 ![The Messages tab](./reference-images/messages-tab.png)
 
@@ -1181,15 +1210,7 @@ To instead view the sources of query string parameters or form data:
 
 To display query string parameters in a human-readable format, but with encodings preserved:
 
-   <!-- old: -->
-
-1. Go to a webpage that uses query string parameters, such as [Removing -ms-high-contrast and embracing standards-based forced colors in Microsoft Edge](https://blogs.windows.com/msedgedev/2025/06/30/removing-ms-high-contrast-and-embracing-standards-based-forced-colors-in-microsoft-edge/), in a new window or tab.
-
-   <!-- new: -->
-
 1. Go to a webpage that uses query string parameters, such as the [Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
-
-   <!-- see pngs in PR Comment https://github.com/MicrosoftDocs/edge-developer/pull/3405/files#r2221950996 -->
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -1206,6 +1227,7 @@ To display query string parameters in a human-readable format, but with encoding
 1. Click the **View decoded** button or **View URL-encoded** button:
 
    ![Query string parameters shown with URL-encoded characters](./reference-images/toggle-url-encoding-2.png)
+   <!-- see pngs in PR Comment https://github.com/MicrosoftDocs/edge-developer/pull/3405/files#r2221950996 -->
 
    In the query string, the character or encoding is shown; and the button label switches between **View decoded** and **View URL-encoded**:
 
