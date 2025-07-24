@@ -410,9 +410,9 @@ To confirm that your service worker is running:
 
 Now that your app has a web app manifest, supporting browsers can install your app as a PWA.
 
-In Microsoft Edge, once you refresh your app, the **App available** button appears in the address bar. Clicking the **App available** button prompts you to install the app locally.
+In Microsoft Edge, once you refresh your app, the **App available** button appears in the Address bar. Clicking the **App available** button prompts you to install the app locally.
 
-![Microsoft Edge, with the sample PWA in a tab. The App available button in the address bar has been clicked and the installation prompt is displayed](./index-images/sample-pwa-app-available-button.png)
+![Microsoft Edge, with the sample PWA in a tab. The App available button in the Address bar has been clicked and the installation prompt is displayed](./index-images/sample-pwa-app-available-button.png)
 
 Click **Install** to install the app locally. After the installation completes, your app is displayed in its own window, and its own application icon in the Taskbar.
 

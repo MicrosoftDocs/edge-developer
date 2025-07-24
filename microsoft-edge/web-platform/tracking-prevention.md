@@ -72,7 +72,7 @@ To provide protection from tracking actions on the web, Microsoft Edge takes two
 
 *  **Block resource loads** - If a known tracking resource is being loaded on a website, Microsoft Edge may block that load before the request reaches the network depending on compatibility impact of the load and the tracking prevention setting a user has set.  Blocked loads may include tracking scripts, pixels, iframes, and more.  This prevents any data potentially being sent to the tracking domain and may even improve load times and page performance as a side effect.
 
-A user may choose the page info flyout icon on the left side of the address bar to find out which trackers were blocked on a specific page:
+A user may choose the page info flyout icon on the left side of the Address bar to find out which trackers were blocked on a specific page:
 
 ![Blocked trackers in the page info flyout](./tracking-prevention-images/page-info-flyout.png)
 

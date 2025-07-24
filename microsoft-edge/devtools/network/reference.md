@@ -671,28 +671,53 @@ The status bar at the bottom displays the number of the shown requests out of th
 #### Show only the requests with blocked response cookies
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#show-blocked-cookies -->
 
-To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, select the **More filters** dropdown list, and then select **Blocked response cookies** so that a checkmark appears next to it.<!-- Try it on this [demo page](https://samesite-sandbox.glitch.me/). -->  Try it on the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, though there are no blocked response cookies:
+To filter out everything except the requests with response cookies blocked for any reason, in the **Filters** action bar, select the **More filters** dropdown list, and then select **Blocked response cookies** so that a checkmark appears next to it.
 
-<!-- todo:
-don't use that demo page, since it doesn't show blocked response cookies.
+Then, to find out why a response cookie was blocked, select the request (under **Name**), open its **Cookies** tab (to the right), and then hover over the information (![Information icon](./reference-images/information-icon-for-blocked-response-cookies.png)) icon.
 
-To get blocked response cookies:
-1. Open an InPrivate window.
-1. Go to microsoft.com.
+For example:
 
-change the steps to that.   this will show requests with blocked response cookies in the screenshot, and we can show the info icon.
--->
+1. In Microsoft Edge, select **Settings and more** > **New InPrivate window**.
 
-![The **Requests** table shows only the requests with blocked response cookies](./reference-images/blocked-response-cookies.png)<!-- todo: redo -->
+1. In the Address bar, enter **Microsoft.com**.
 
-The status bar at the bottom displays the number of the shown requests out of the total.
+1. Right-click the webpage, and then select **Inspect**.
 
-To find out the reason why a response cookie was blocked, select the request (under **Name**), open its **Cookies** tab (to the right), and then hover over the **information** (![Information icon](./reference-images/information-icon-for-blocked-response-cookies.png)) button.
+   DevTools opens.
 
-<!-- not in latest ui
-Additionally, the **Network** tool shows a warning icon next to a request with cookies blocked either because of Edge flags or configuration.  Hover over the icon to see a tooltip with a clue and click it to go to the **Issues** tool for more information. -->
+1. Select the **Network** tool.
 
-<!-- ![Warning icons next to a request blocked by Edge flags or configuration](./x/3pc-blocked.png) -->
+1. Make sure the **All** filter button is selected.
+
+1. Refresh the webpage.
+
+   Many messages are listed in the **Network** tool.
+
+1. In the **Filters** action bar, select the **More filters** dropdown list, and then select **Blocked response cookies**.
+
+   In the menu, a checkmark appears next to **Blocked response cookies**.
+
+1. Click outside the dropdown list to close it.
+
+   Requests that have blocked response cookies are displayed, such as **id?d_visid_ver=...**.
+
+1. Select a request, such as **id?d_visid_ver=...**.
+
+   The sidebar opens, with tabs.
+
+1. Select the **Cookies** tab.
+
+1. Hover over the info (![Info icon](./reference-images/info-icon-blocked-response-cookies.png)) icon.
+
+   The tooltip reads, for example: "This attempt to set a cookie via a Set-Cookie header was blocked due to user preferences."
+
+   ![The **Requests** table shows only the requests with blocked response cookies](./reference-images/blocked-response-cookies.png)<!-- todo: redo -->
+
+   The status bar at the bottom displays the number of the shown requests out of the total.
+
+Additionally, the **Network** tool shows a warning icon (![Warning icon](./reference-images/warning-icon-cookies-blocked.png)) next to a request with cookies blocked either because of Edge flags or configuration.  Hover over the icon to see a tooltip with a clue and click it to go to the **Issues** tool for more information.
+
+<!-- ![Warning icons next to a request blocked by Edge flags or configuration](./reference-images/3pc-blocked.png) -->
 
 
 <!-- ------------------------------ -->
@@ -784,7 +809,7 @@ The **Requests** table displays the following columns by default:
   - **Parser**. The HTML parser.
   - **Redirect**. An HTTP redirect.
   - **Script**. A JavaScript function.
-  - **Other**. Some other process or action, such as navigating to a page via a link or entering a URL in the address bar.
+  - **Other**. Some other process or action, such as navigating to a page via a link or entering a URL in the Address bar.
 - **Size**. The combined size of the response headers plus the response body, as delivered by the server.
 - **Time**. The total duration, from the start of the request to the receipt of the final byte in the response.
 - **Fulfilled by**. Whether the request was fulfilled by the HTTP cache or the app's service worker.

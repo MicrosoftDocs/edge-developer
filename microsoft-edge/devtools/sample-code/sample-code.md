@@ -349,7 +349,7 @@ To edit files in the **Sources** tool, before doing the steps in this section, y
 
    The Address bar displays: **File | C:/Users/localAccount/GitHub/Demos/demo-to-do/index.html**
 
-   Selecting the URL in the address bar shows the URL format: `file:///C:/Users/localAccount/GitHub/Demos/demo-to-do/index.html`
+   Selecting the URL in the Address bar shows the URL format: `file:///C:/Users/localAccount/GitHub/Demos/demo-to-do/index.html`
 
 1. Right-click the rendered webpage, and then select **Inspect**.
 
