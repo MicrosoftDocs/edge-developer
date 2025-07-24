@@ -99,7 +99,7 @@ console.table(document.body.getBoundingClientRect());
 let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
 console.groupCollapsed('Technolgies');
 technologies.forEach(tech => {console.info(tech);})
-console.groupEnd('Technolgies');
+console.groupEnd();
 ```
 
 <!-- typos in the demo page are preserved above, at `Technolgies` -->
