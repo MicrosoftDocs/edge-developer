@@ -101,9 +101,10 @@ console.groupCollapsed('Technolgies');
 technologies.forEach(tech => {console.info(tech);})
 console.groupEnd();
 ```
-
-<!-- typos in the demo page are preserved above, at `Technolgies` -->
-
+<!-- typos in the demo page https://microsoftedge.github.io/Demos/devtools-console/logging-demo.html are preserved above:
+techologies
+Technolgies
+-->
 
 To log information to display in the Console:
 
