@@ -1131,6 +1131,10 @@ By default, the **Headers** tab shows header names alphabetically.  To display t
 
 1. Go to a webpage that uses XHR, such as [Removing -ms-high-contrast and embracing standards-based forced colors in Microsoft Edge](https://blogs.windows.com/msedgedev/2025/06/30/removing-ms-high-contrast-and-embracing-standards-based-forced-colors-in-microsoft-edge/), in a new window or tab.
 
+1. Accept cookies in the banner prompt, if it appears.
+
+   In regions where General Data Protection Regulation (GDPR) is enforced, this site shows a cookie banner, and won't send a `collect` request (below) unless you accept cookies in the banner.
+
 1. Right-click the webpage, and then select **Inspect**.
 
    DevTools opens.
@@ -1139,9 +1143,13 @@ By default, the **Headers** tab shows header names alphabetically.  To display t
 
 1. Refresh the webpage.
 
+   In the **Requests** table, many requests are listed.
+
 1. Click the red **Stop recording network log** (![Stop recording network log icon](./reference-images/stop-recording-network-log-icon.png)) button at the top.
 
-1. In the **Requests** table, select a **collect** request.
+1. In the **Requests** table, click the **Name** column to sort requests alphabetically, and then select a **collect** request.
+
+   The sidebar opens, with tabs.
 
    <!-- upstream steps: -->
 
