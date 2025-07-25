@@ -711,7 +711,7 @@ For example:
 
    The tooltip reads, for example: "This attempt to set a cookie via a Set-Cookie header was blocked due to user preferences."
 
-   ![The **Requests** table shows only the requests with blocked response cookies](./reference-images/blocked-response-cookies.png)<!-- todo: redo -->
+   ![The **Requests** table shows only the requests with blocked response cookies](./reference-images/blocked-response-cookies.png)
 
    The status bar at the bottom displays the number of the shown requests out of the total.
 
@@ -726,10 +726,51 @@ Additionally, the **Network** tool shows a warning icon (![Warning icon](./refer
 
 To filter out everything except blocked requests, in the **Filters** action bar, select **More filters** > **Blocked requests**, so that a checkmark appears.  To test this, you can use the **Network request blocking** tool in the **Quick View** panel at the bottom of DevTools; see [Block requests](./index.md#block-requests) in _Inspect network activity_.
 
-![The **Requests** table shows only blocked requests](./reference-images/blocked-requests.png)<!-- todo: show **Network request blocking** tool in Quick View, showing at least one blocking pattern created, per png in PR Comment https://github.com/MicrosoftDocs/edge-developer/pull/3405/files#r2221865631 -->
-<!-- https://microsoftedge.github.io/Demos/network-tutorial/ -->
+For example:
 
-The **Requests** table highlights blocked requests in red.  The status bar at the bottom displays the number of the shown requests out of the total, such as **15 / 17 requests**.
+1. Go to a webpage, such as the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In DevTools, select the **Network** tool.
+
+1. Refresh the webpage.
+
+   The **Requests** table lists `.html`, `.css`, `.png`, and `.js` files.
+
+1. In the **More filters** dropdown list (with tooltip of **Show only/hide requests**), select **Blocked requests**.
+
+   In the dropdown list, a checkmark is displayed next to **Blocked requests**.
+
+1. Click outside of the dropdown list, to close it.
+
+   The **Requests** table is empty, because DevTools is not blocking any requests, and requests are now filtered to only show blocked requests.
+
+1. Press **Esc** once or twice, so that the **Quick View** panel is open at the bottom of DevTools.
+
+1. In the **Quick View** toolbar, click the **More tools** (![More tools icon](./reference-images/more-tools-icon-quick-view.png)) button, and then select **Network request blocking**.
+
+   The **Network request blocking** tool opens in the **Quick view** panel.
+
+1. In the **Network request blocking** tool, click the **Add network request blocking pattern** (!["Add network request blocking pattern" icon](./reference-images/add-network-request-blocking-pattern-icon.png)) button.
+
+1. In the **Text pattern to block matching requests** text box, enter **\*.png**, and then click the **Add** button.
+
+   **\*.png** is listed, with a checkmark.
+
+   In the **Network** tool, the **Requests** table is still empty, because no requests have been actively blocked yet.
+
+1. Refresh the webpage.
+
+   ![The **Requests** table shows only blocked requests](./reference-images/blocked-requests.png)
+
+   * In the demo webpage, instead of an Edge logo next to the heading, a broken-image icon is shown, along with the image's alt-text (**The Microsoft Edge DevTools logo**).
+
+   * In the **Network** tool, the **Requests** table lists `.png` files, only.  The **Requests** table highlights blocked requests as red text.
+
+   * In the **Network** tool, the status bar at the bottom displays the number of the shown requests out of the total, such as **2 / 5 requests**.
 
 
 <!-- ------------------------------ -->
