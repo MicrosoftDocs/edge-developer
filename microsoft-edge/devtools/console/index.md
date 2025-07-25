@@ -95,15 +95,12 @@ console.log(document.body.getBoundingClientRect());
 // prints the geometry of the document body as a table
 console.table(document.body.getBoundingClientRect());
 
-// shows a list of techologies as a collapsed group
+// shows a list of technologies as a collapsed group
 let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
-console.groupCollapsed('Technolgies');
+console.groupCollapsed('Technologies');
 technologies.forEach(tech => {console.info(tech);})
-console.groupEnd('Technolgies');
+console.groupEnd();
 ```
-
-<!-- typos in the demo page are preserved above, at `Technolgies` -->
-
 
 To log information to display in the Console:
 

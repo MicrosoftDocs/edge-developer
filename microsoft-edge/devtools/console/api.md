@@ -293,7 +293,7 @@ console.info('Leo');
 console.info('Mike');
 console.info('Don');
 console.info('Raph');
-console.groupEnd(label);
+console.groupEnd();
 ```
 
 
@@ -327,7 +327,7 @@ console.groupCollapsed(label)
 Stops visually grouping messages.  See the [group](#group) method.
 
 ```javascript
-console.groupEnd(label)
+console.groupEnd()
 ```
 
 <br/><br/>
