@@ -1245,7 +1245,7 @@ To view an HTTP request's payload (query string parameters and form data), selec
 
    The request's payload is displayed, including a **Query String Parameters** section and a **Form Data** section:
 
-  ![The Query String Parameters section in the Payload tab](./reference-images/resources-headers-query-string-parameters.png)
+  ![The Query String Parameters section in the Payload tab](./reference-images/resources-headers-query-string-parameters.png)<!-- copy 2 of png is below -->
 
 In the **Console** tab of DevTools is the error:
 
@@ -1266,7 +1266,7 @@ To instead view the sources of query string parameters or form data:
 
    In the **Payload** tab, the **Query String Parameters** section shows the payload in a human-readable form, for `hasfile`.  The **Form Data** section show the payload in a human-readable form, for `username`, `timestamp`, and `file`:
 
-   ![The View source buttons](./reference-images/resources-headers-query-string-parameters-2.png)<!-- adds red boxes on View source button 2x -->
+   ![The View source buttons](./reference-images/resources-headers-query-string-parameters-2.png)<!-- copy of png, adds red boxes on "View source" button -->
 
 1. Next to the **Query String Parameters** section heading, click the **View source** button.
 
@@ -1274,7 +1274,7 @@ To instead view the sources of query string parameters or form data:
 
    The source information for the payload is displayed:
 
-   ![Payload tab > Query String Parameters section and Form Data section > the "View source" button](./reference-images/view-source-buttons.png)<!-- todo: lower right: one big box only -->
+   ![Payload tab > Query String Parameters section and Form Data section > the "View source" button](./reference-images/view-source-buttons-clicked.png)
 
 
 <!-- ---------- -->
