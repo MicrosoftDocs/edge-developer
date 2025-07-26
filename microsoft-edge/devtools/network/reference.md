@@ -240,6 +240,8 @@ For information about initiators, see:
 * [Display initiators and dependencies](#display-initiators-and-dependencies), below.
 * [Log network activity](./index.md#log-network-activity) in _Inspect network activity_.
 
+After you click the demo's **Send an XHR request** button (which causes JavaScript to send a request), the **Copy stack trace** menuitem appears in the right-click > **Copy** menu for requests.  See [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard), below.
+
 
 <!-- ====================================================================== -->
 ## Change loading behavior
@@ -1589,8 +1591,7 @@ To copy a single request, its response, or its stack trace:
 | **Copy as fetch** | Copy the request as a fetch call. |
 | **Copy as fetch (Node.js)** | Copy the request as a Node.js fetch call. |
 | **Copy response** | Copy the response body to the clipboard. |
-| **Copy stack trace** | Copy the request's stack track<!-- todo: trace? --> to the clipboard.  This menuitem only appears for requests that are triggered by JavaScript code, such as Fetch or XHR requests. |
-<!-- todo: to see the menuitem "Copy stack trace", can use devtools-network-reference demo and "Send an XHR request" button  -->
+| **Copy stack trace** | Copy the request's stack trace to the clipboard.  This menuitem only appears for requests that are triggered by JavaScript code, such as Fetch or XHR requests.  See [Replay XHR request](#replay-xhr-request), above. |
 
 To copy all requests:
 
