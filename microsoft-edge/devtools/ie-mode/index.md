@@ -19,9 +19,9 @@ Support for the following technologies is included in IE mode:
 *  ActiveX controls.
 *  Other legacy components.
 
-In IE mode, the rendering process is based on Internet Explorer 11. The Microsoft Edge process manager handles the lifetime of the rendering process.  The rendering process is constrained to the lifetime of the tab for a specific site (or app).  When a tab renders in IE mode, the IE mode indicator icon appears in the address bar for the specific tab.
+In IE mode, the rendering process is based on Internet Explorer 11. The Microsoft Edge process manager handles the lifetime of the rendering process.  The rendering process is constrained to the lifetime of the tab for a specific site (or app).  When a tab renders in IE mode, the IE mode indicator icon appears in the Address bar for the specific tab.
 
-![The IE mode indicator icon in the address bar](./index-images/badge.png)
+![The IE mode indicator icon in the Address bar](./index-images/badge.png)
 
 IE mode is available on Windows 10 Version 1903 (May 2019 Update), and is coming to all supported Windows platforms.
 
@@ -29,7 +29,7 @@ IE mode is available on Windows 10 Version 1903 (May 2019 Update), and is coming
 <!-- ====================================================================== -->
 ## Open DevTools on a tab in IE mode
 
-The IE mode indicator icon appears in the address bar if the Enterprise admin has configured the website to appear in IE mode.  To view the compatibility mode of a website in IE mode, click the IE mode indicator icon in the address bar:
+The IE mode indicator icon appears in the Address bar if the Enterprise admin has configured the website to appear in IE mode.  To view the compatibility mode of a website in IE mode, click the IE mode indicator icon in the Address bar:
 
 ![View document mode using the IE mode indicator icon](./index-images/badge-doc-mode.png)
 
@@ -61,7 +61,7 @@ Launch Microsoft Edge with remote debugging turned on from the command-line inte
 start msedge --remote-debugging-port=9222
 ```
 
-After you launch Microsoft Edge using a command-line argument, IE mode is unavailable.  You can still navigate to websites (or apps) that are otherwise displayed in IE mode.  The website (or app) content renders using Chromium, not Internet Explorer 11. Parts of the webpages that rely on Internet Explorer 11, such as ActiveX controls, might not render correctly.  The IE mode indicator icon doesn't appear in the address bar.
+After you launch Microsoft Edge using a command-line argument, IE mode is unavailable.  You can still navigate to websites (or apps) that are otherwise displayed in IE mode.  The website (or app) content renders using Chromium, not Internet Explorer 11. Parts of the webpages that rely on Internet Explorer 11, such as ActiveX controls, might not render correctly.  The IE mode indicator icon doesn't appear in the Address bar.
 
 IE mode remains unavailable until you close and restart Microsoft Edge.
 

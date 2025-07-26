@@ -6185,7 +6185,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 *  Fixed drag and drop within the WebView2 for composition-hosted WebViews.
 
-*  Removed read-aloud icon in address bar in a WebView2 popup window.
+*  Removed read-aloud icon in Address bar in a WebView2 popup window.
 
 *  Fixed unexpected items in the context menu of popup windows in WebView2.
 
@@ -6360,7 +6360,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 *  Fixed a bug where the app crashes when trying to move focus to WebView2 when it is disabled.
 
-*  Remove read aloud icon in address bar in a WebView2 popup window.
+*  Remove read aloud icon in Address bar in a WebView2 popup window.
 
 *  Fixed an issue where context menu shows unexpected items in WebView2 popup window.
 

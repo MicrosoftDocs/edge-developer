@@ -20,7 +20,7 @@ This page assumes that you already have a PWA. To learn more about building a si
 <!-- ====================================================================== -->
 ## Provide a custom installation
 
-Your app can already be installed using the **App available** button in the browser address bar if you follow the steps in [Get started with PWAs](./index.md).
+Your app can already be installed using the **App available** button in the browser Address bar if you follow the steps in [Get started with PWAs](./index.md).
 
 A custom installation experience, in the app user interface, can be more obvious to your users and lead to more installations.
 

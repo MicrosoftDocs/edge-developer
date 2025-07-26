@@ -37,7 +37,7 @@ Browsing notification and prompt to import data and preferences:
 
 If the user doesn't consent by selecting the **Always bring over my browsing data and preferences from Internet Explorer** checkbox, the user may choose **Continue browsing** to continue the browsing session.
 
-Finally, a website incompatibility banner is displayed under the address bar for each redirection.  An example of a website incompatibility banner is displayed in following figure.
+Finally, a website incompatibility banner is displayed under the Address bar for each redirection.  An example of a website incompatibility banner is displayed in following figure.
 
 ![Notification about modern sites and prompt to set Microsoft Edge as default browser or explore Microsoft Edge](./ie-to-microsoft-edge-redirection-images/neededge-banner.png)
 

@@ -16,7 +16,7 @@ Any device that's running Microsoft Edge gets full access to the technologies an
 <!-- ====================================================================== -->
 ## Installing a PWA
 
-When Microsoft Edge determines that a website is an installable Progressive Web App (PWA), the **App available** (![The "App available" icon](./ux-images/app-available-icon.png)) icon appears in the address bar.
+When Microsoft Edge determines that a website is an installable Progressive Web App (PWA), the **App available** (![The "App available" icon](./ux-images/app-available-icon.png)) icon appears in the Address bar.
 
 1.  Click the **App available** (![The "App available" icon](./ux-images/app-available-icon.png)) icon to install the PWA.
 
