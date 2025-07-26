@@ -1280,7 +1280,6 @@ To instead view the sources of query string parameters or form data:
 <!-- ---------- -->
 ###### Display URL-encoded query string parameters
 <!-- View URL-decoded arguments of query string parameters  https://developer.chrome.com/docs/devtools/network/reference/#payload-encodings -->
-<!-- todo: redo section, showing new test button "Send encoded query parameters" at https://microsoftedge.github.io/Demos/devtools-network-reference/ -->
 
 To display query string parameters in a human-readable format, but with encodings preserved:
 
@@ -1294,18 +1293,33 @@ To display query string parameters in a human-readable format, but with encoding
 
 1. Refresh the webpage.
 
-1. In the **Requests** table, select a request, such as **1.0/?cors=true&content-type=...**.<!-- todo: change per new demo -->
+   The **Requests** table lists `.html`, `.css`, `.js`, and `.png` files.
+
+1. In the demo webpage, click the **Send encoded query parameters** button.
+
+   The **Requests** table adds a row:
+
+   `encoded-query-params-endpoint?name=Danas+Barkus&url=https%3A%2F%2Fcontoso.com%2F%C3%A0%C3%A9%C3%A8%C3%B4%C3%A7%D0%BB`
+
+1. Select the `encoded-query-params-endpoint` row.
+
+   The sidebar opens, with tabs.
 
 1. In the sidebar, select the **Payload** tab.
 
-1. Click the **View decoded** button or **View URL-encoded** button:
+   The **Query String Parameters** section displays the URL decoded, as: `https://contoso.com/àéèôçл`:
 
-   ![Query string parameters shown with URL-encoded characters](./reference-images/toggle-url-encoding-2.png)
-   <!-- see pngs in PR Comment https://github.com/MicrosoftDocs/edge-developer/pull/3405/files#r2221950996 -->
+   ![Query string parameters shown with decoded characters](./reference-images/view-url-decoded.png)
 
-   In the query string, the character or encoding is shown; and the button label switches between **View decoded** and **View URL-encoded**:
+1. In the **Query String Parameters** section, click the **View URL-encoded** button.
 
-   ![Query string parameters shown with decoded characters](./reference-images/toggle-url-encoding.png)
+   The **url** is now displayed with encoded characters (such as `%3A` and `%2F`); and the button label changes to **View decoded**:
+
+   ![Query string parameters shown with URL-encoded characters](./reference-images/view-url-encoded.png)
+
+1. Click the **View decoded** button.
+
+   The **url** is again displayed with decoded characters, as: `https://contoso.com/àéèôçл`, and the button label changes back to **View URL-encoded**.
 
 
 <!-- ------------------------------ -->
