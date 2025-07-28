@@ -24,6 +24,7 @@ jobs:
         run: |
           cd scripts
           npm install
+          npx playwright install
 
       - name: Generate release notes
         run: |
