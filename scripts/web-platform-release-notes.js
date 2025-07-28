@@ -10,6 +10,9 @@ const EDGE_OT_PAGE = `${EDGE_OT_ROOT}/microsoft-edge/origin-trials/trials`;
 // If Beta becomes stable within the next N coming days, generate the release notes for Canary.
 // This way, the release notes are ready for when Canary becomes Beta.
 const DAYS_NUMBER_BEFORE_RELNOTES_NOTICE = 15;
+// The Git branch name where the release notes will be generated.
+// Keep this in sync with thge webplat-releasenotes.yaml workflow file.
+const BRANCH_NAME = "web-platform-release-notes";
 
 async function fetchChromeStatusAPI(url) {
   const response = await fetch(url);
@@ -266,8 +269,8 @@ async function main() {
   // --------------------------------------------------
 
   console.log("Opening an issue to notify the team about the new release notes draft.");
-  const title = `New beta web platform release notes for ${nextBetaVersion}`;
-  const body = `The release notes draft for the next beta version ${nextBetaVersion} has been generated in [${releaseNotesPath}](${releaseNotesPath}) on the web-platform-release-notes branch.\n\nPlease update the content as needed.`;
+  const title = `Microsoft Edge Beta ${nextBetaVersion} web platform release notes ready for review`;
+  const body = `The release notes draft for the next Microsoft Edge beta version ${nextBetaVersion} has been generated in [${nextBetaVersion}.md](https://github.com/MicrosoftDocs/edge-developer/blob/web-platform-release-notes/microsoft-edge/web-platform/release-notes/${nextBetaVersion}.md) on the ${BRANCH_NAME} branch.\n\nPlease [create a pull request](https://github.com/MicrosoftDocs/edge-developer/compare/main...${BRANCH_NAME}), update the content as needed, and close this issue.`;
 
   const octokit = github.getOctokit(process.env.token);
   const { data: issue } = await octokit.rest.issues.create({
