@@ -218,8 +218,8 @@ console.log('Arthur');
 console.log('Marvin');
 console.groupCollapsed("Hidden");
 console.log('(Frankie & Benjy)');
-console.groupEnd("Hidden");
-console.groupEnd("Passengers: Heart of Gold");
+console.groupEnd();
+console.groupEnd();
 
 
 // Example 2:
@@ -230,7 +230,7 @@ let technologies = {
 for (tech in technologies) {
   console.groupCollapsed(tech);
   technologies[tech].forEach(t => console.log(t));
-  console.groupEnd(tech);
+  console.groupEnd();
 }
 ```
 
