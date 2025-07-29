@@ -354,4 +354,4 @@ When using Microsoft Edge in IE mode, if your test switches focus away from a ce
 
 *  [Use WebDriver to automate Microsoft Edge](./index.md) - An overview of automating Microsoft Edge with the WebDriver protocol.
 *  [Selenium documentation](https://www.selenium.dev/documentation) - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
-*  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.
+*  [Contact the Microsoft Edge DevTools team](../devtools/contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.

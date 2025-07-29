@@ -17,7 +17,7 @@ This article first shows how to install and run the provided DevTools extension 
 This article then presents a tutorial that shows how you can optionally create that sample from scratch, and explains each step of developing the sample, and how the added code works.  These tutorial steps are a good way to experience everything that's needed for typical development.
 
 See also:
-* [Overview of DevTools](../../devtools-guide-chromium/overview.md)
+* [Overview of DevTools](../../devtools/overview.md)
 
 
 <!-- ====================================================================== -->
@@ -567,6 +567,7 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
+* [Samples for Microsoft Edge extensions](../samples.md)
 * [Manifest V3](https://developer.chrome.com/docs/extensions/mv3)
 * [Extending DevTools](https://developer.chrome.com/docs/extensions/mv3/devtools/)
 * [CDP API Reference](https://developer.chrome.com/docs/extensions/reference/)

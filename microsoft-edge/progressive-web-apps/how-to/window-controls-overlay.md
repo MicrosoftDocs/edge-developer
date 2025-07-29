@@ -196,13 +196,13 @@ In Microsoft Edge DevTools, in the **Application** tool, you can simulate the Wi
 
 The simulated overlay is a static image.  The values of the CSS variables `env(titlebar-area-left)`, `env(titlebar-area-top)`, `env(titlebar-area-width)`, and `env(titlebar-area-height)` are set to match the platform that you select.
 
-See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md).
+See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Simulate the Window Controls Overlay API without installing your PWA](../../devtools-guide-chromium/progressive-web-apps/simulate-window-controls-overlay.md) - DevTools feature.
+* [Simulate the Window Controls Overlay API without installing your PWA](../../devtools/progressive-web-apps/simulate-window-controls-overlay.md) - DevTools feature.
 * [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
 * [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
 * [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)

@@ -1,7 +1,7 @@
 ### YamlMime:Hub
-# hub page for Enterprise docset & Edge Dev docset
+# hub page for Enterprise docset & Edge Dev docset; https://learn.microsoft.com/microsoft-edge/
 title: Microsoft Edge documentation
-summary: Learn to use Microsoft Edge by browsing documentation, tutorials, and samples.  Includes information for users, developers, and administrators.
+summary: Explore documentation, references, and code samples to help you deploy, manage, and build with Microsoft Edge.
 brand: m365
 metadata:
   title: Microsoft Edge documentation
@@ -17,68 +17,68 @@ metadata:
 # topmost section of hub page; 2 rows of 4 cards
 # Maximum of 8 items
 highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | overview | quickstart | reference | sample | training | tutorial | video | whats-new
   items:
 
 # =============================================================================
 # Row 1 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r1c1
-    - title: "Microsoft Edge (Official Stable Channel)"
+    - title: Microsoft Edge for Business
+      url: https://www.microsoft.com/edge/business/download
       itemType: download
-      url: https://www.microsoft.com/edge
 
 # -----------------------------------------------------------------------------
 # Card r1c2
-    - title: "Download Microsoft Edge for Business"
+    - title: Microsoft Edge Insider Channels
+      url: https://www.microsoft.com/edge/download/insider
       itemType: download
-      url: https://www.microsoft.com/edge/business/download
 
 # -----------------------------------------------------------------------------
 # Card r1c3
-    - title: "Microsoft Edge Insider Channels"
+    - title: WebView2
+      url: https://developer.microsoft.com/microsoft-edge/webview2/#download
       itemType: download
-      url: https://www.microsoft.com/edge/download/insider
 
 # -----------------------------------------------------------------------------
 # Card r1c4
-    - title: "Find out what's new"
-      itemType: learn
-      url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # or https://www.microsoft.com/edge/update/latest (1 at a time)
+    - title: Microsoft Edge Roadmap
+      url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # https://www.microsoft.com/edge/update/latest (shows 1 at a time)
+      itemType: reference
 
 # =============================================================================
 # Row 2 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r2c1
-    - title: "Get support"
-      itemType: reference
-      url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
+    - title: Microsoft Edge for Business  # scrolls down to hub page section
+      url: /microsoft-edge/index#microsoft-edge-for-business  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-business
+      itemType: training
 
 # -----------------------------------------------------------------------------
 # Card r2c2
-    - title: "How to use Microsoft Edge"
-      itemType: learn
-      url: https://support.microsoft.com/microsoft-edge?ocid=DMC-End-User-Support
+    - title: Microsoft Edge for Developers  # scrolls down to hub page section
+      url: /microsoft-edge/index#microsoft-edge-for-developers  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-developers
+      itemType: training
 
 # -----------------------------------------------------------------------------
 # Card r2c3
-    - title: "Administer Microsoft Edge in the Enterprise"
-      itemType: learn
-      url: /deployedge/index
+    - title: Help and Support  # scrolls down to hub page section
+      url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
+      itemType: training
 
 # -----------------------------------------------------------------------------
 # Card r2c4
-    - title: "Discover web developer features"
-      itemType: learn
-      url: /microsoft-edge/index#microsoft-edge-for-developers  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-developers
+    - title: Microsoft Edge help & learning  # end-user info at SMC (member of above)
+      url: https://support.microsoft.com/microsoft-edge
+      itemType: training
 
 # =============================================================================
 # "Microsoft Edge for Enterprise" section of hub page: 2 rows of up to 4 cards
 conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | overview | quickstart | reference | sample | training | tutorial | video | whats-new
 # Supports up to 3 subsections
   sections:
-    - title: Microsoft Edge for Enterprise # < 60 chars (optional)
+    - title: Microsoft Edge for Business # < 60 chars (optional)
       # summary:  # < 160 chars (optional)
       items:
 
@@ -86,59 +86,63 @@ conceptualContent:
 # Row 1 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r1c1
-        - title: Learn about Microsoft Edge in the enterprise
+        - title: Learn about Microsoft Edge for Business
           links:
-            - url: /deployedge/microsoft-edge-channels
+            - text: Overview of the Microsoft Edge channels
+              url: /deployedge/microsoft-edge-channels  # https://learn.microsoft.com/deployedge/microsoft-edge-channels
               itemType: overview
-              text: Microsoft Edge channel overview
 
-            - url: /deployedge/edge-ie-mode
+            - text: Use enterprise features  # dest: Microsoft Edge for Business
+              url: /deployedge/microsoft-edge-for-business  # https://learn.microsoft.com/deployedge/microsoft-edge-for-business
               itemType: reference
-              text: Use enterprise features
 
 # -----------------------------------------------------------------------------
 # Card r1c2
-        - title: Deploy and update Microsoft Edge
+        - title: Deploy and update Microsoft Edge for Business
           links:
-            - itemType: reference
-              text: Video - Deploy Microsoft Edge
-              url: /deployedge/microsoft-edge-video-deploy
+            - text: Deploy to Windows
+              url: /configmgr/apps/deploy-use/deploy-edge  # https://learn.microsoft.com/configmgr/apps/deploy-use/deploy-edge
+              itemType: deploy
 
-            - itemType: reference
-              text: Deploy to Windows
-              url: /configmgr/apps/deploy-use/deploy-edge
+            - text: Deploy to macOS
+              url: /mem/intune/apps/apps-edge-macos  # https://learn.microsoft.com/mem/intune/apps/apps-edge-macos
+              itemType: deploy
 
-            - itemType: reference
-              text: Deploy to macOS
-              url: /mem/intune/apps/apps-edge-macos
+            - text: Deploy to BYOD devices
+              url: /deployedge/microsoft-edge-for-business-config-recommendations#protecting-users-and-devices  # https://learn.microsoft.com/deployedge/microsoft-edge-for-business-config-recommendations#protecting-users-and-devices
+              itemType: deploy
+
+            - text: Deploy to mobile
+              url: /intune/intune-service/fundamentals/guided-scenarios-edge  # https://learn.microsoft.com/intune/intune-service/fundamentals/guided-scenarios-edge
+              itemType: deploy
 
 # -----------------------------------------------------------------------------
 # Card r1c3
-        - title: Configure Microsoft Edge
+        - title: Configure Microsoft Edge for Business
           links:
-            - itemType: reference
-              text: Configure Microsoft Edge on Windows and macOS
-              url: /deployedge/configure-microsoft-edge
+            - text: Configure Microsoft Edge for Business on Windows and macOS
+              url: /deployedge/configure-microsoft-edge  # https://learn.microsoft.com/deployedge/configure-microsoft-edge
+              itemType: how-to-guide
 
-            - itemType: reference
-              text: Set Microsoft Edge as the default browser
-              url: /deployedge/edge-default-browser
+            - text: Set Microsoft Edge for Business as the default browser
+              url: /deployedge/edge-default-browser  # https://learn.microsoft.com/deployedge/edge-default-browser
+              itemType: how-to-guide
 
-            - itemType: reference
-              text: Manage Microsoft Edge on iOS and Android with Intune
-              url: /mem/intune/apps/manage-microsoft-edge
+            - text: Manage Microsoft Edge for Business on iOS and Android with Intune
+              url: /mem/intune/apps/manage-microsoft-edge  # https://learn.microsoft.com/mem/intune/apps/manage-microsoft-edge
+              itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
 # Card r1c4
         - title: Manage security and privacy
           links:
-            - itemType: reference
-              text: Security
-              url: /deployedge/ms-edge-security-for-business
+            - text: Security  # dest: Microsoft Edge security for your business
+              url: /deployedge/ms-edge-security-for-business  # https://learn.microsoft.com/deployedge/ms-edge-security-for-business
+              itemType: concept
 
-            - itemType: reference
-              text: Privacy
-              url: /deployedge/microsoft-edge-enterprise-privacy-settings
+            - text: Privacy  # dest: Configure Microsoft Edge policies to support enterprise privacy
+              url: /deployedge/microsoft-edge-enterprise-privacy-settings  # https://learn.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings
+              itemType: how-to-guide
 
 # =============================================================================
 # Row 2 (3 cards, max 4)
@@ -146,40 +150,37 @@ conceptualContent:
 # Card r2c1
         - title: Policy reference
           links:
-            - itemType: reference
-              text: Browser policy reference
-              url: /deployedge/microsoft-edge-policies
+            - text: Browser policy reference  # dest: Microsoft Edge - Policies
+              url: /deployedge/microsoft-edge-policies  # https://learn.microsoft.com/deployedge/microsoft-edge-policies
+              itemType: reference
 
-            - itemType: reference
-              text: Update policy reference
-              url: /deployedge/microsoft-edge-update-policies
+            - text: Update policy reference  # dest: Microsoft Edge - Update policies
+              url: /deployedge/microsoft-edge-update-policies  # https://learn.microsoft.com/deployedge/microsoft-edge-update-policies
+              itemType: reference
 
 # -----------------------------------------------------------------------------
 # Card r2c2
         - title: Engage with enterprise community
           links:
-            - itemType: reference
-              text: Enterprise tech community (Insider Focused)
+            - text: Enterprise tech community (Insider Focused)
               url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
-            # - itemType: reference
-            #   text: Troubleshoot Microsoft Edge
-            #   url: /deployedge/microsoft-edge-troubleshooting
+              itemType: reference  # forum-posts filter
 
 # -----------------------------------------------------------------------------
 # Card r2c3
         - title: Extensions for enterprise
           links:
-            - itemType: overview
-              text: Manage Microsoft Edge extensions in the enterprise
-              url: /deployedge/microsoft-edge-manage-extensions
+            - text: Manage extensions for Microsoft Edge for Business
+              url: /deployedge/microsoft-edge-manage-extensions  # https://learn.microsoft.com/deployedge/microsoft-edge-manage-extensions
+              itemType: overview
 
-            - itemType: reference
-              text: Defining match patterns for an extension to access file URLs
-              url: ./extensions/developer-guide/match-patterns.md
+            - text: Defining match patterns for an extension to access file URLs
+              url: ./extensions/developer-guide/match-patterns.md  # https://learn.microsoft.com/microsoft-edge/extensions/developer-guide/match-patterns
+              itemType: reference
 
-            - itemType: reference
-              text: Extension hosting
-              url: ./extensions/publish/hosting-and-updating.md
+            - text: Extension hosting
+              url: ./extensions/publish/hosting-and-updating.md  # https://learn.microsoft.com/microsoft-edge/extensions/publish/hosting-and-updating
+              itemType: reference
 
 # -----------------------------------------------------------------------------
 # Card r2c4
@@ -226,27 +227,27 @@ conceptualContent:
               itemType: overview
 
             - text: Microsoft Edge DevTools documentation  # devtools landing page
-              url: ./devtools-guide-chromium/landing/index.yml
+              url: ./devtools/landing/index.yml
               itemType: overview
 
             - text: Overview of DevTools
-              url: ./devtools-guide-chromium/overview.md
+              url: ./devtools/overview.md
               itemType: overview
 
             - text: What's New in Microsoft Edge DevTools
-              url: ./devtools-guide-chromium/whats-new/whats-new.md
+              url: ./devtools/whats-new/whats-new.md
               itemType: whats-new
 
             - text: Command Menu
-              url: ./devtools-guide-chromium/command-menu/index.md
+              url: ./devtools/command-menu/index.md
               itemType: how-to-guide
 
             - text: View and change CSS
-              url: ./devtools-guide-chromium/css/index.md
+              url: ./devtools/css/index.md
               itemType: how-to-guide
 
             - text: Keyboard shortcuts
-              url: ./devtools-guide-chromium/shortcuts/index.md
+              url: ./devtools/shortcuts/index.md
               itemType: reference
 
 # -----------------------------------------------------------------------------
@@ -440,7 +441,7 @@ conceptualContent:
               itemType: how-to-guide
 
             - text: Opening source files in Visual Studio Code
-              url: ./devtools-guide-chromium/sources/opening-sources-in-vscode.md
+              url: ./devtools/sources/opening-sources-in-vscode.md
               itemType: how-to-guide
 
             - text: Debug Microsoft Edge in Visual Studio Code
@@ -452,14 +453,14 @@ conceptualContent:
               itemType: how-to-guide
 
 # =============================================================================
-# Row 3 (4 cards max) - adding cards changes layout to 3 per row
+# Row 3 (4 cards max) - hid b/c adding cards changes layout to 3 per row instead of 4 per row
 # -----------------------------------------------------------------------------
 # Card for toc bucket 10 - r_c_
 # Card r2c4
 #       - title: Accessibility in Microsoft Edge
 #         links:
 #           - text: Accessibility-testing features
-#             url: ./devtools-guide-chromium/accessibility/reference.md
+#             url: ./devtools/accessibility/reference.md
 #             itemType: overview
 
 #           - text: Accessibility overview
@@ -506,18 +507,18 @@ additionalContent:
       items:
 # -----------------------------------------------------------------------------
 # Card
-        - summary: Get advice and answers from community experts.
-          title: Community Support on Microsoft Q&A
-          url: /answers/topics/ms-edge.html
+        - title: Community Support on Microsoft Q&A
+          summary: Get advice and answers from community experts.
+          url: /answers/topics/ms-edge.html  # https://learn.microsoft.com/answers/tags/781/microsoft-edge
 # -----------------------------------------------------------------------------
 # Card
-        - summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available using a variety of plans to help you get your required level of support.
-          title: Microsoft Support for Business
+        - title: Microsoft Support for business
+          summary: If your business needs immediate technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
           url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
 # -----------------------------------------------------------------------------
 # Card
-        - summary: Helpful support resources for users is available.
-          title: User Support
+        - title: Microsoft Edge help & learning
+          summary: Support for end users about how to use Microsoft Edge features.
           url: https://support.microsoft.com/microsoft-edge
 
 # =============================================================================
@@ -536,10 +537,10 @@ additionalContent:
               url: ./visual-studio-code/index.md
 
             - text: Microsoft Edge Privacy Whitepaper
-              url: /legal/microsoft-edge/privacy
+              url: /legal/microsoft-edge/privacy  # https://learn.microsoft.com/legal/microsoft-edge/privacy
 # -----------------------------------------------------------------------------
 # Card
         - title: Microsoft Edge Legacy documentation
           links:
             - text: Microsoft Edge Legacy documentation
-              url: /archive/microsoft-edge/legacy/developer/
+              url: /archive/microsoft-edge/legacy/developer/  # https://learn.microsoft.com/archive/microsoft-edge/legacy/developer/

@@ -34,7 +34,7 @@ See:
 ## Microsoft Edge DevTools
 <!-- ====================================================================== -->
 <!-- keep sync'd:
-* [Overview of DevTools](devtools-guide-chromium/overview.md) - intro section
+* [Overview of DevTools](devtools/overview.md) - intro section
 * [Microsoft Edge DevTools](../develop-web-microsoft-edge.md#microsoft-edge-devtools) in _Develop for the web with Microsoft Edge_
 -->
 
@@ -54,7 +54,7 @@ With DevTools, you can do the following:
 
 <!-- /keep sync'd -->
 
-See [Overview of DevTools](./devtools-guide-chromium/overview.md).
+See [Overview of DevTools](./devtools/overview.md).
 
 
 <!-- ====================================================================== -->
@@ -207,7 +207,7 @@ The full-text search page initially searches all _Microsoft Edge_ documentation.
 
 To provide feedback or enter issues:
 
-* [Contact the Microsoft Edge DevTools team](./devtools-guide-chromium/contact.md)
+* [Contact the Microsoft Edge DevTools team](./devtools/contact.md)
 * [Contact the Microsoft Edge extensions team](./extensions/contact.md)
 * [Contact the WebView2 team](./webview2/contact.md)
 

@@ -18,10 +18,11 @@ To stay up-to-date and get the latest web platform features, download a preview 
 ## See also
 
 * [Site compatibility-impacting changes coming to Microsoft Edge](../site-impacting-changes.md)
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 
 Microsoft Edge DevTools
-* [What's New in Microsoft Edge DevTools](../../devtools-guide-chromium/whats-new/whats-new.md)
-* [Experimental features in Microsoft Edge DevTools](../../devtools-guide-chromium/experimental-features/index.md)
+* [What's New in Microsoft Edge DevTools](../../devtools/whats-new/whats-new.md)
+* [Experimental features in Microsoft Edge DevTools](../../devtools/experimental-features/index.md)
 
 Microsoft Edge extensions
 * [Released features for Microsoft Edge extensions](../../extensions/whats-new/released-features.md)

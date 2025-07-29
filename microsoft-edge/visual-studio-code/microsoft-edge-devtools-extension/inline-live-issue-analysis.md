@@ -73,6 +73,6 @@ You can select whichever **Quick Fix** you want to use to resolve the issue or t
 <!-- ====================================================================== -->
 ## See also
 
-* [Find and fix problems using the Issues tool](../../devtools-guide-chromium/issues/index.md)
+* [Find and fix problems using the Issues tool](../../devtools/issues/index.md)
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

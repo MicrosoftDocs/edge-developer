@@ -1,0 +1,225 @@
+### YamlMime:Landing
+# DevTools landing page; https://learn.microsoft.com/microsoft-edge/devtools/landing/
+title: Microsoft Edge DevTools documentation
+summary: Development using DevTools in Microsoft Edge.
+
+metadata:
+  # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
+  # description: default to root title above. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-edge
+  ms.subservice: devtools
+  ms.topic: landing-page
+  # ms.collection: collection # Optional; Remove if no collection is used.
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 12/10/2024
+
+# =============================================================================
+# Valid article types (sections of a card)
+
+      # - linkListType: architecture
+      # - linkListType: concept
+      # - linkListType: deploy
+      # - linkListType: download
+      # - linkListType: get-started
+      # - linkListType: how-to-guide
+      # - linkListType: overview
+      # - linkListType: quickstart
+      # - linkListType: reference
+      # - linkListType: sample
+      # - linkListType: training
+      # - linkListType: tutorial
+      # - linkListType: video
+      # - linkListType: whats-new
+
+# =============================================================================
+landingContent:
+
+# =============================================================================
+# Row 1
+# -----------------------------------------------------------------------------
+# Card r1c1
+  - title: Getting started with DevTools
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Overview of DevTools
+            url: ../overview.md
+
+          - text: Change DevTools placement (Undock, Dock to bottom, Dock to left)
+            url: ../customize/placement.md
+
+          - text: Run commands in the Command Menu
+            url: ../command-menu/index.md
+
+          - text: Console overview
+            url: ../console/index.md
+      - linkListType: whats-new
+        links:
+          - text: What's New in Microsoft Edge DevTools
+            url: ../whats-new/whats-new.md
+
+          - text: Contact the Microsoft Edge DevTools team
+            url: ../contact.md
+
+# -----------------------------------------------------------------------------
+# Card r1c2
+  - title: Customizing DevTools
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Customize DevTools
+            url: ../customize/index.md
+      - linkListType: whats-new
+        links:
+          - text: Experimental features in Microsoft Edge DevTools
+            url: ../experimental-features/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Change DevTools language settings
+            url: ../customize/localization.md
+
+          - text: Customize keyboard shortcuts
+            url: ../customize/shortcuts.md
+
+# -----------------------------------------------------------------------------
+# Card r1c3
+  - title: Debugging web projects
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Analyze pages using the Inspect tool
+            url: ../css/inspect.md
+      - linkListType: tutorial
+        links:
+          - text: Get started viewing and changing CSS
+            url: ../css/index.md
+
+          - text: Get started viewing and changing the DOM
+            url: ../dom/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Find and fix problems using the Issues tool
+            url: ../issues/index.md
+
+          - text: Navigate webpage layers, z-index, and DOM using the 3D View tool
+            url: ../3d-view/index.md
+
+          - text: Inspect animations
+            url: ../inspect-styles/animations.md
+
+          - text: Debug a Progressive Web App (PWA)
+            url: ../progressive-web-apps/index.md
+
+          - text: Inspect network activity
+            url: ../network/index.md
+
+# =============================================================================
+# Row 2
+# -----------------------------------------------------------------------------
+# Card r2c1
+  - title: Emulation and Testing
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Emulate mobile devices (Device Emulation)
+            url: ../device-mode/index.md
+
+          - text: Accessibility-testing features
+            url: ../accessibility/reference.md
+
+          - text: Emulate dark or light schemes in the rendered page
+            url: ../accessibility/preferred-color-scheme-simulation.md
+
+          - text: Test keyboard support using the Source Order Viewer
+            url: ../accessibility/test-tab-key-source-order-viewer.md
+
+          - text: Force print preview mode
+            url: ../css/print-preview.md
+
+          - text: Emulate vision deficiencies
+            url: ../accessibility/emulate-vision-deficiencies.md
+
+          - text: Simulate reduced motion
+            url: ../accessibility/reduced-motion-simulation.md
+
+# -----------------------------------------------------------------------------
+# Card r2c2
+  - title: JavaScript and performance
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Run JavaScript in the Console
+            url: ../console/console-javascript.md
+
+          - text: Fix JavaScript errors that are reported in the Console
+            url: ../console/console-debug-javascript.md
+
+          - text: Sources tool overview
+            url: ../sources/index.md
+
+          - text: JavaScript debugging features
+            url: ../javascript/reference.md
+
+          - text: Find unused JavaScript and CSS code with the Coverage tool
+            url: ../coverage/index.md
+
+          - text: Fix memory problems
+            url: ../memory-problems/index.md
+
+          - text: Understand security issues using the Security tool
+            url: ../security/index.md
+
+          - text: Troubleshooting common performance issues
+            url: ../rendering-tools/index.md
+
+# -----------------------------------------------------------------------------
+# Card r2c3
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Keyboard shortcuts
+            url: ../shortcuts/index.md
+
+          - text: CSS features reference
+            url: ../css/reference.md
+
+          - text: Console features reference
+            url: ../console/reference.md
+
+          - text: Console object API Reference
+            url: ../console/api.md
+      - linkListType: how-to-guide
+        links:
+          - text: Performance features reference
+            url: ../performance/reference.md
+      - linkListType: sample
+        links:
+          - text: Sample code for DevTools
+            url: ../sample-code/sample-code.md
+
+# =============================================================================
+# Row 3
+# -----------------------------------------------------------------------------
+# Card r3c1
+  - title: Microsoft Edge IDE integration
+    linkLists:
+      - linkListType: overview
+        links:
+            - text: Microsoft Edge IDE integration
+              url: ../../visual-studio-code/ide-integration.md
+
+            - text: Debug Microsoft Edge in Visual Studio Code
+              url: ../../visual-studio-code/debugger-for-edge.md
+
+      - linkListType: how-to-guide
+        links:
+            - text: Microsoft Edge DevTools extension for Visual Studio Code
+              url: ../../visual-studio-code/microsoft-edge-devtools-extension.md  # goes directly to main page, in DevTools
+
+            - text: Opening source files in Visual Studio Code
+              url: ../sources/opening-sources-in-vscode.md
+
+            - text: Visual Studio for web development
+              url: ../../visual-studio-code/index.md
