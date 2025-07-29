@@ -16,20 +16,58 @@ to:
 sample article (steps to obtain/install/run it; explain how it works)
 -->
 
-Progressive Web Apps (PWAs) are applications that you build by using web technologies, and that can be installed and can run on all devices, from one codebase.
+<!-- ====================================================================== -->
+## About the sample
+
+This Temperature Convertor sample is a Progressive Web App (PWA).  Obtain, install, and run the sample app, as follows.
+
+A Progressive Web App is an app that's built by using web technologies.  A PWA can be installed and run on all devices, from a single codebase.
 
 To learn more about what PWAs are and their benefits, see [Overview of Progressive Web Apps (PWAs)](../index.md).
 
 <!-- link is placed here per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->
-This guide is targeted at web developers who want to learn to build PWAs. To learn more about installing and running PWAs, see [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
-
-In this guide, you first learn how PWAs work, then create your first simple PWA, which will be a temperature converter app, and then learn more about how to make great PWAs.
+This sample is for web developers who want to learn to build PWAs.  To learn more about installing and running PWAs, see [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
 
 You can find the final source code of the app you will be building in this guide on the [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
 
+
+<!-- ====================================================================== -->
+## Preview the sample
+
+1. 
+
+
+![]()
+
+
 See also:
-* [Temperature convertor](https://microsoftedge.github.io/Demos/pwa-getting-started/) running at github.io web server (rather than localhost).
-* [Source code: /pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started)
+* [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) - sample app hosted at github.io (rather than localhost).
+* [Temperature converter - PWA getting started demo app](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started) - source code.
+
+
+<!-- ====================================================================== -->
+## Clone the Demos repo
+
+
+<!-- ====================================================================== -->
+## Start the localhost server
+
+
+<!-- ====================================================================== -->
+## Install the sample
+
+
+<!-- ====================================================================== -->
+## Run the sample
+
+
+<!-- ====================================================================== -->
+## How the sample code works
+
+
+<!-- ====================================================================== -->
+## SORT
+
 
 
 <!-- ====================================================================== -->
@@ -449,23 +487,26 @@ To build a great PWA, see [Best practices for PWAs](./best-practices.md).
 ## See also
 <!-- all links in article -->
 
-Local:
+<!-- Local: -->
 * [Overview of Progressive Web Apps (PWAs)](../index.md)
 * [Use PWAs in Microsoft Edge](../ux.md)
 * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
 * [Best practices for PWAs](./best-practices.md)
 
+Demos repo:
+* [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) - sample app hosted at github.io (rather than localhost).
+* [Temperature converter - PWA getting started demo app](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started) - source code.
+
 MDN:
 * [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
 * [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN.
 
-External Microsoft:
-* [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started)
+External Microsoft sites:
 * [Visual Studio Code](https://code.visualstudio.com)
 * [Azure free account](https://azure.microsoft.com/free)
 * [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web)
 
-External:
+External sites:
 * [Getting Started with Progressive Web Apps (Workshop)](https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop).
 * [GitHub Pages](https://pages.github.com/)
 * [Node.js](https://nodejs.org)
