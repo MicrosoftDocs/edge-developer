@@ -1253,7 +1253,7 @@ In the **Console** tab of DevTools is the error:
 
 * `POST https://microsoftedge.github.io/Demos/devtools-network-reference/form-data-endpoint?hasfile=true 405 (Method Not Allowed) (anonymous) @ script.js:49`
 
-This harmless **Method Not Allowed** error appears in the **Console**, because there's no `form-data-endpoint` POST handler on the demo server.  The error is expected, because github.io hosting or the localhost npx server doesn't run application servers, only static files.
+This harmless **Method Not Allowed** error appears in the **Console**, because there's no `form-data-endpoint` POST handler on the demo server.  The error is expected, because github.io hosting doesn't run application servers, only static files.
 
 
 <!-- ---------- -->
