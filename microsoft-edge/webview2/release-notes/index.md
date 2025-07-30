@@ -31,7 +31,7 @@ none b/c changed from 5 mo to 6 mo
 <!-- Aug 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.####.##
-##Test
+##Test from command line
 
 Release Date: August 11, 2025
 
