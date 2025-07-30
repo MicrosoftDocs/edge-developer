@@ -32,7 +32,7 @@ jobs:
           cd scripts
           token=${{ secrets.GITHUB_TOKEN }} node web-platform-release-notes.js
 
-      - name: Commit changes
+      - name: Commit changes if needed
         run: |
           files=$(git ls-files --others --exclude-standard)
           if [ -n "$files" ]; then
