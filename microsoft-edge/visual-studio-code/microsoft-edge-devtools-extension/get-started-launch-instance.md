@@ -15,7 +15,7 @@ This way of opening DevTools is useful for these simple scenarios:
 
 *  If you want to experiment with editing the default, Success page by using DevTools.
 
-*  If you want to inspect a page that's specified by using a URL, and don't need Debug mode.  To open a different webpage, you can paste a URL or file path, in the address bar.
+*  If you want to inspect a page that's specified by using a URL, and don't need Debug mode.  To open a different webpage, you can paste a URL or file path, in the Address bar.
 
 *  If you don't have a folder open and you want to experiment with changing CSS on a page that's specified by using a URL, without editing a local source file.
 
@@ -26,8 +26,8 @@ This way of opening DevTools is useful for these simple scenarios:
 * Step 4: Edit CSS
 * Step 5: Arrange tabs
 * Step 6: View JavaScript
-* Step 7: Open a different .html file by using the address bar
-* Step 8: Open a URL by using the address bar
+* Step 7: Open a different .html file by using the Address bar
+* Step 8: Open a URL by using the Address bar
 * Step 9: Close DevTools
 -->
 
@@ -53,21 +53,21 @@ This way of opening DevTools is useful for these simple scenarios:
 
    The Success page source file is a self-contained `.html` file in a directory on your drive.  This is a single `.html` file that includes CSS rules (in a `<style>` element).  It also includes a JavaScript `console` statement (in a `<script>` element).
 
-   In the address bar of the DevTools browser, there is a `file:///` path (rather than a URL), such as `file:///C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html`.
+   In the Address bar of the DevTools browser, there is a `file:///` path (rather than a URL), such as `file:///C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html`.
 
    The Debug toolbar doesn't open, **Debug Console** doesn't open at bottom, and the **Run and Debug** Side Bar with **Watch** pane doesn't open.  This indicates that Visual Studio Code is not in Debug mode.
 
-   You can modify CSS of the local files, and you can enter local file paths or localhost URLs in the address bar and interact with local web app pages.
+   You can modify CSS of the local files, and you can enter local file paths or localhost URLs in the Address bar and interact with local web app pages.
 
 
 <!-- ====================================================================== -->
 ## Step 3: Open a folder, to ensure editing is allowed
 
-Note that no folder is open in Visual Studio Code.  In many cases, to use DevTools to edit rather than merely inspect a webpage, you must open a folder that contains source files that match the displayed webpage.  Opening a folder gives the most flexibility so you can open either a URL or a file path in the address bar of the **Edge DevTools: Browser** tab and have full DevTools functionality.
+Note that no folder is open in Visual Studio Code.  In many cases, to use DevTools to edit rather than merely inspect a webpage, you must open a folder that contains source files that match the displayed webpage.  Opening a folder gives the most flexibility so you can open either a URL or a file path in the Address bar of the **Edge DevTools: Browser** tab and have full DevTools functionality.
 
 Opening a folder gives you the opportunity to grant trust to the folder, so that you don't get an error message when you try to change the source files.  Otherwise you might get an error message because the folder that contains the Success page is not trusted, and CSS mirror editing is trying to edit the CSS in the `index.html` source file in that folder.
 
-1. In the **Edge DevTools: Browser** tab, in the address bar, select and copy the file path, but not the file name, such as `C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/`.
+1. In the **Edge DevTools: Browser** tab, in the Address bar, select and copy the file path, but not the file name, such as `C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/`.
 
 1. In **Activity Bar** > **Explorer**, click the **Open Folder** button.  In the **Open Folder** dialog, paste or select the path you copied above.  To paste, on Windows, you might need to change `/` to `\` throughout the path. Then click the **Select Folder** button.
 
@@ -128,9 +128,9 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
 
 <!-- ====================================================================== -->
-## Step 7: Open a different .html file by using the address bar
+## Step 7: Open a different .html file by using the Address bar
 
-By entering a file path in the address bar of the **Edge DevTools: Browser** tab, the **Launch Instance** button can also be used to open a different `.html` file instead of the Success page.  We'll demonstrate that below.  However, right-clicking an `.html` file in the **Explorer** is the main way to open an `.html` file other than the **Success** webpage, and the tools open in Debug mode.
+By entering a file path in the Address bar of the **Edge DevTools: Browser** tab, the **Launch Instance** button can also be used to open a different `.html` file instead of the Success page.  We'll demonstrate that below.  However, right-clicking an `.html` file in the **Explorer** is the main way to open an `.html` file other than the **Success** webpage, and the tools open in Debug mode.
 
 1. In Visual Studio Code, select **File** > **Open Folder** (or **Open Recent**).  Open the `\Demos\demo-to-do\` folder of the Demos repo that you cloned, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\`.
 
@@ -142,7 +142,7 @@ By entering a file path in the address bar of the **Edge DevTools: Browser** tab
 
 1. In the **Activity Bar**, select **Explorer**, and then right-click `\demo-to-do\index.html` > **Copy Path**.
 
-1. In Visual Studio Code, in the **Edge DevTools: Browser** tab, in the address bar, paste the local filepath that you obtained above, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The **demo-to-do** app opens.  In the address bar, the `file:///` prefix is added and (on Windows) backslashes are changed to forward slashes; for example: `file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html`.
+1. In Visual Studio Code, in the **Edge DevTools: Browser** tab, in the Address bar, paste the local filepath that you obtained above, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\index.html`.  The **demo-to-do** app opens.  In the Address bar, the `file:///` prefix is added and (on Windows) backslashes are changed to forward slashes; for example: `file:///C:/Users/username/Documents/GitHub/Demos/demo-to-do/index.html`.
 
 1. In the demo app, enter a task, such as **test**.
 
@@ -150,9 +150,9 @@ By entering a file path in the address bar of the **Edge DevTools: Browser** tab
 
 
 <!-- ====================================================================== -->
-## Step 8: Open a URL by using the address bar
+## Step 8: Open a URL by using the Address bar
 
-The address bar that results from the **Launch Instance** button can be used to open a URL on a server.  However, the **Launch Project** button, along with a URL stored in `launch.json`, is the main way to open a webpage by specifying a URL, and the tools then open in Debug mode.
+The Address bar that results from the **Launch Instance** button can be used to open a URL on a server.  However, the **Launch Project** button, along with a URL stored in `launch.json`, is the main way to open a webpage by specifying a URL, and the tools then open in Debug mode.
 
 1. If your localhost server is running, paste a localhost URL, such as `http://localhost:8080`.  Or, paste the github.io server URL, [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
