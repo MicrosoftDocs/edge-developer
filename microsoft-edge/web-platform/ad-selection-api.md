@@ -30,6 +30,8 @@ The Ad Selection API provides user-relevant ads on your site without using third
     * [Deployment guide](#deployment-guide)
 * [Use the Ad Selection API on your website](#use-the-ad-selection-api-on-your-website)
 * [Provide feedback about the origin trial](#provide-feedback-about-the-origin-trial)
+* [Terms of Use](#terms-of-use)
+* [Data Protection Addendum](#data-protection-addendum)
 * [See also](#see-also)
 
 The Ad Selection API can be used by:
