@@ -1,15 +1,15 @@
 ---
-title: Data Protection Agreement for the Ad Selection API
-description: Data Protection Agreement for the Ad Selection API.
+title: Data Protection Addendum for the Ad Selection API
+description: Data Protection Addendum for the Ad Selection API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.date: 07/22/2025
 ---
-# Data Protection Agreement for the Ad Selection API
+# Data Protection Addendum for the Ad Selection API
 
-This Ad Selection API Data Protection Agreement ("Ad Selection DPA") forms part of the Customer Agreement between Customer ("Customer" or "you") and Microsoft Corporation ("Microsoft" or "we") covering Customer's use of the Ad Selection API ("Ad API").  It sets forth the parties' obligations with respect to Customer Personal Data processed by Microsoft.
+This Ad Selection API Data Protection Addendum ("Ad Selection DPA") forms part of the Customer Agreement between Customer ("Customer" or "you") and Microsoft Corporation ("Microsoft" or "we") covering Customer's use of the Ad Selection API ("Ad API").  It sets forth the parties' obligations with respect to Customer Personal Data processed by Microsoft.
 
 This Ad Selection DPA incorporates by reference the terms of the [Microsoft Products and Services Data Protection Addendum ("DPA")](https://aka.ms/dpa) ("general DPA").  Capitalized terms not defined herein shall have the meanings given to them in the Customer Agreement or the general DPA, as applicable.
 

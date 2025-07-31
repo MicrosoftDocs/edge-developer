@@ -83,7 +83,7 @@
           # - name: Terms of Use for the Ad Selection API
           #   href: /legal/microsoft-edge/ad-selection-api/terms-of-use.md  # todo: move h2 from above to Legal repo
 
-            - name: Data Protection Agreement for the Ad Selection API
+            - name: Data Protection Addendum for the Ad Selection API
               href: ./web-platform/ad-selection-api-dpa.md  
             # href: /legal/microsoft-edge/ad-selection-api/dpa.md  # todo: move to Legal repo
 
