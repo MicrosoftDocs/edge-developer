@@ -446,7 +446,7 @@
                   href: ./devtools/console/live-expressions.md
                   displayName: Console tool
 
-                - name: Fix JavaScript errors that are reported in the Console
+                - name: Fix JavaScript errors reported in the Console
                   href: ./devtools/console/console-debug-javascript.md
                   displayName: Console tool, Sources tool, Network tool
 
