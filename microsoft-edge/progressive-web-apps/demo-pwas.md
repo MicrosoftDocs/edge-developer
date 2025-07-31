@@ -114,7 +114,7 @@ Application Title Meta Tag uses the following features:
 <!-- ====================================================================== -->
 ## Temperature converter
 
-A simple PWA demo app that converts temperatures.  Used for [Get started with PWAs](./how-to/index.md).
+A simple PWA demo app that converts temperatures.  Used for [Get started with PWAs](./how-to/index.md).<!-- todo: change from [Get started with PWAs] to [Temperature convertor sample] after merge https://github.com/MicrosoftDocs/edge-developer/pull/3476 -->
 
 [App](https://microsoftedge.github.io/Demos/pwa-getting-started/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
 
@@ -122,7 +122,7 @@ A simple PWA demo app that converts temperatures.  Used for [Get started with PW
 <!-- ====================================================================== -->
 ## PWA installer
 
-A PWA<!-- todo: web app? --> that uses the Web Install API to install other PWAs.  Also uses CSS Masonry.
+A PWA that uses the Web Install API to install other PWAs.  Also uses CSS Masonry.
 
 [App](https://microsoftedge.github.io/Demos/pwa-pwastore/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-pwastore).
 <!-- todo: new:
@@ -135,6 +135,22 @@ PWA installer uses the following features:
 |:--- |:--- |:--- |
 | Web Install API | PWA installer uses the `navigator.install()` API to install other PWAs on the device. | [Web Install API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebInstall/explainer.md) |
 | CSS Masonry | Instead of a strict grid that has gaps below shorter items, the items in the following row are raised up to fill the gaps. | [Masonry layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Masonry_layout) |
+
+
+<!-- ====================================================================== -->
+## Timer PWA
+
+Has a **Set timer** button, and you can set the duration of the timer.
+
+[App](https://microsoftedge.github.io/Demos/pwa-timer/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-timer).
+
+
+<!-- ====================================================================== -->
+## PWA To Do
+
+Create lists of tasks locally in your browser, or by installing the app.  Click the **About** link in the rendered demo.
+
+[App](https://microsoftedge.github.io/Demos/pwa-to-do/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-to-do).
 
 
 <!-- ====================================================================== -->
