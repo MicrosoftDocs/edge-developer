@@ -6,6 +6,7 @@
     // Microsoft Edge DevTools extension for Visual Studio Code
     // devtools articles outside of devtools toc bucket
     // Legal
+    // catch typos
 
     // ======================================================================
     // entries before 2025/06/19
@@ -28,6 +29,11 @@
     },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/experimental-features/copilot-explain.md",
+      "redirect_url": "/microsoft-edge/devtools/console/copilot-explain-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/experimental-features/copilot-explain.md",
       "redirect_url": "/microsoft-edge/devtools/console/copilot-explain-console",
       "redirect_document_id": false
     },
@@ -118,6 +124,11 @@
     },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks.md",
+      "redirect_url": "/microsoft-edge/devtools/memory-problems/dom-leaks-memory-tool-detached-elements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/memory-problems/dom-leaks.md",
       "redirect_url": "/microsoft-edge/devtools/memory-problems/dom-leaks-memory-tool-detached-elements",
       "redirect_document_id": false
     },
@@ -1166,7 +1177,16 @@
       "source_path": "../microsoft-edge/devtools-guide/devtools_software-license-terms.md",
       "redirect_url": "https://learn.microsoft.com/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
       "redirect_document_id": false
-    }
+    },
     // /Legal
+    // ======================================================================
+    // catch typos
+    // never existed, but was a 404 in https://github.com/MicrosoftEdge/Demos/blob/main/demo-to-do/README.md:
+    {
+      "source_path": "../microsoft-edge/devtools/index.yml",
+      "redirect_url": "/microsoft-edge/devtools/landing",
+      "redirect_document_id": false
+    }
+    // /catch typos
   ]
 }

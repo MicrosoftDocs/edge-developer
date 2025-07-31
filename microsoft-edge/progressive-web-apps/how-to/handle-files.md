@@ -99,9 +99,11 @@ The `launchQueue` object queues all the launched files until a consumer is set w
 <!-- ====================================================================== -->
 ## Demo
 
+<!-- todo: Find "captainbrosset", move demo to Demos repo -->
+
 My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx` files. To try the feature with this demo app:
 
-*  Go to [My Tracks](https://captainbrosset.github.io/mytracks/)<!-- todo: move demo to Demos repo --> and install the app.
+*  Go to [My Tracks](https://captainbrosset.github.io/mytracks/) and install the app.
 *  Download a GPX file on your computer. You can use this [test GPX file](https://www.visugpx.com/download.php?id=okB1eM4fzj).
 *  Open the downloaded GPX file.
 
@@ -113,7 +115,7 @@ If you allow the app to handle the file, a new entry appears in the app's sideba
 
 ![The new GPS track handled by the My Tracks app](./handle-files-images/my-tracks-new-file.png)
 
-The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).<!-- todo: move demo to Demos repo -->
+The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).
 
 * The [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json) source file uses the `file_handlers` array to request handling `.gpx` files.
-* The [file.js](https://github.com/captainbrosset/mytracks/blob/main/src/file.js)<!-- todo: move demo to Demos repo --> source file uses the `launchQueue` object to handle incoming files.
+* The [file.js](https://github.com/captainbrosset/mytracks/blob/main/src/file.js) source file uses the `launchQueue` object to handle incoming files.

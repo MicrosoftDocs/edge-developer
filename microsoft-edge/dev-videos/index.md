@@ -421,19 +421,22 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Fully style the drop-down part of a HTML `<select>` with the new `<selectmenu>` element
+## Fully style the drop-down part of a HTML `<select>` with the `<selectmenu>` element
 
 May 31, 2022
 
 [![Thumbnail image for video "Fully style the drop-down part of a HTML select with the new selectmenu element"](./index-images/selectmenu.png)](https://www.youtube.com/watch?v=Ts7jvRyQACY)
 
-Styling `<select>` elements has been challenging. The experimental `<selectmenu>` (or `<selectlist>`) element promises to overcome the remaining limitations by enabling web developers to style all parts of the element.
+Styling `<select>` elements has been challenging. The experimental `<selectmenu>` (or `<selectlist>`) element promises to overcome the remaining limitations, by enabling web developers to style all parts of the element.
 
-June 2024 update: This new element is still experimental.  The `<selectmenu>` element was renamed to `<selectlist>` in 2023.
+June 2024 update: This element is still experimental.  The `<selectmenu>` element was renamed to `<selectlist>` in 2023.
 
 See also:
 * [Open UI's `<selectlist>` demos](https://microsoftedge.github.io/Demos/selectlist/)
-* [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/)<!-- todo: 404 --> - blog post about styling `<select>` elements and the `<selectmenu>` element.
+   * [/selectlist/](https://github.com/MicrosoftEdge/Demos/tree/main/selectlist) - Source code and Readme.
+* [Reader demo app](https://microsoftedge.github.io/Demos/reader/)
+   * [/reader/](https://github.com/MicrosoftEdge/Demos/tree/main/reader) - Source code and Readme.
+* [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/) - blog post about styling `<select>` elements and the `<selectmenu>` element.
 
 
 <!-- ====================================================================== -->
@@ -467,7 +470,7 @@ As of July 21, 2023, this feature is no longer experimental, and is now supporte
 
 See also:
 * [Reader demo](https://microsoftedge.github.io/Demos/reader/) - demo app that's shown in the video.
-* [Source code for Reader demo](https://github.com/MicrosoftEdge/Demos/tree/main/reader)
+  * [Source code and Readme for Reader demo](https://github.com/MicrosoftEdge/Demos/tree/main/reader)
 * [CSS scroll-driven animations](https://developer.mozilla.org/docs/Web/CSS/CSS_scroll-driven_animations) at MDN.
 * [@scroll-timeline](https://developer.mozilla.org/docs/Web/CSS/@scroll-timeline) at MDN: original page about the experimental CSS scroll-linked animations feature.
 
@@ -506,6 +509,7 @@ The [CSS Custom Highlight API](https://www.w3.org/TR/css-highlight-api-1/) is th
 
 See also:
 * [CSS Custom Highlight API: The Future of Highlighting Text Ranges on the Web](https://css-tricks.com/css-custom-highlight-api-early-loo/)
+* [CSS Custom Highlight API demo](https://github.com/MicrosoftEdge/Demos/tree/main/custom-highlight-api)
 
 
 <!-- ====================================================================== -->
@@ -683,6 +687,7 @@ Many creative applications enable users to pick colors from parts of an app wind
 See also:
 * [Picking colors of any pixel on the screen with the EyeDropper API | web.dev](https://web.dev/eyedropper/)
 * [EyeDropper API - Web APIs | MDN developer.mozilla.org](https://developer.mozilla.org/docs/Web/API/EyeDropper_API)
+* [EyeDropper API demos](https://github.com/MicrosoftEdge/Demos/tree/main/eyedropper)
 
 
 <!-- ====================================================================== -->
