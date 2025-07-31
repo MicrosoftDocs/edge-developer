@@ -481,7 +481,7 @@ private void WebView2_NavigationCompleted(WebView2 sender, CoreWebView2Navigatio
 {
     StatusUpdate("Navigation complete");
 
-    // Update the address bar with the full URL that was navigated to.
+    // Update the Address bar with the full URL that was navigated to.
     AddressBar.Text = sender.Source.ToString();
 }
 ```
