@@ -89,7 +89,7 @@ These steps assume that initially, no folder is open in Visual Studio Code, and 
    *  The Debug toolbar and debug UI of Visual Studio Code doesn't open.
    *  In the **Microsoft Edge Tools** pane, the **Targets** section opens, listing a target, and the **Launch Instance** button is removed.
 
-1. In the **Edge DevTools: Browser** tab, in the address bar, paste a file path or a URL, that matches the folder that's open in Visual Studio Code.
+1. In the **Edge DevTools: Browser** tab, in the Address bar, paste a file path or a URL, that matches the folder that's open in Visual Studio Code.
 
    If you want to obtain a file path: in Visual Studio Code > **Activity Bar** > **Explorer** (![Explorer button](./open-devtools-and-embedded-browser-images/explorer-icon.png)) > right-click an `.html` file > **Copy Path**.
 
@@ -180,7 +180,7 @@ Continue below.
 
    The URL string can be a local file path, although in that case, you don't need a `launch.json` file; to start DevTools, you can simply right-click an `.html` file in Visual Studio Code's **Explorer** instead.
 
-   (If you keep the URL as-is, the default, **Success** page is displayed, and you can paste a localhost URL or a file path into the address bar of the **Edge DevTools: Browser** tab.)
+   (If you keep the URL as-is, the default, **Success** page is displayed, and you can paste a localhost URL or a file path into the Address bar of the **Edge DevTools: Browser** tab.)
 
 1. Copy and paste the modified URL line to the other places in the `launch.json` file.  To modify all instances at the same time, you can copy an updated URL string, then select an instance of the initial URL string, press **Ctrl+Shift+L** to select all instances, and then paste the updated string.
 
@@ -227,7 +227,7 @@ For example:
 
 1. Open DevTools, as described above.
 
-1. In the **Edge DevTools: Browser** tab, in the address bar, paste a remote `github.io` URL, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
+1. In the **Edge DevTools: Browser** tab, in the Address bar, paste a remote `github.io` URL, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
    The files at that address actually reside as source files at GitHub at [https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do), not on your drive.
 
@@ -235,7 +235,7 @@ For example:
 
    ![Able to change CSS values if a mappable folder is open](./open-devtools-and-embedded-browser-images/edit-css-when-folder-opened.png)
 
-   The above image shows using the **Styles** tab with **CSS mirror editing** checkbox selected, used to enlarge the body text to **24pt**.  The **Edge DevTools: Browser** tab renders the page as you change the value.  The tab's address bar contains a URL rather than a file path.  Because **CSS mirror editing** checkbox selected and the corresponding `.css` file is found in a writeable local folder, the `.css` file on the local drive is automatically edited to `24pt;`.
+   The above image shows using the **Styles** tab with **CSS mirror editing** checkbox selected, used to enlarge the body text to **24pt**.  The **Edge DevTools: Browser** tab renders the page as you change the value.  The tab's Address bar contains a URL rather than a file path.  Because **CSS mirror editing** checkbox selected and the corresponding `.css` file is found in a writeable local folder, the `.css` file on the local drive is automatically edited to `24pt;`.
 
 
 #### Avoiding error messages about mirroring or mapping
@@ -246,7 +246,7 @@ Next, try changing CSS without a matching folder opened:
 
 1. Start DevTools by clicking the **Launch Instance** button, as described above.
 
-1. In the **Edge DevTools: Browser** tab, in the address bar, paste a remote `github.io` URL, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
+1. In the **Edge DevTools: Browser** tab, in the Address bar, paste a remote `github.io` URL, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
    Now that the folder containing source files is closed, if you try to change CSS values in the **Elements** tool, you get a DevTools error message.  You can inspect webpages, but not edit them.  You can interact with the page and see it in different devices and rendering states by using the Device Emulation toolbar at the bottom of the **Edge DevTools: Browser** tab.
 
@@ -274,9 +274,9 @@ See also:
 
 In some cases, behavior of DevTools is different for file paths than for URLs.
 
-*  If you enter a file path in the address bar of the DevTools browser, and you edit the CSS in DevTools, the browser knows where to find the source files.  You might need to open that folder to grant trust to it, to be able to use CSS mirror editing.  Or, clear the **CSS mirror editing** checkbox.
+*  If you enter a file path in the Address bar of the DevTools browser, and you edit the CSS in DevTools, the browser knows where to find the source files.  You might need to open that folder to grant trust to it, to be able to use CSS mirror editing.  Or, clear the **CSS mirror editing** checkbox.
 
-*  If you enter a URL in the address bar of the DevTools browser, the browser knows where to find the downloaded copy of the source files, if you are only inspecting webpages and experimenting with CSS.  If you want to use CSS mirror editing (to have DevTools edit CSS in source files), the **CSS mirror editing** checkbox must be selected and you must open a folder in Visual Studio Code containing source files that match the webpage.
+*  If you enter a URL in the Address bar of the DevTools browser, the browser knows where to find the downloaded copy of the source files, if you are only inspecting webpages and experimenting with CSS.  If you want to use CSS mirror editing (to have DevTools edit CSS in source files), the **CSS mirror editing** checkbox must be selected and you must open a folder in Visual Studio Code containing source files that match the webpage.
 
 
 <!-- ====================================================================== -->

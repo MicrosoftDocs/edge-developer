@@ -103,7 +103,7 @@ This section is in support of clicking the **Launch Project** button.
 
 1. In a web browser, go to the `http://localhost/` URL where the **demo-to-do** `.html` file is on the server, such as the common standard URL, `http://localhost:8080`.
 
-1. Copy the URL from the address bar.
+1. Copy the URL from the Address bar.
 
 1. In `launch.json`, in each URL string, paste the URL for your cloned copy of the **demo-to-do** app, such as: `http://localhost:8080`.  Paste the path inside the quoted path string in one of the `"url"` strings.  For example:
 

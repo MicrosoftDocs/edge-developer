@@ -55,7 +55,7 @@ When the main origin of a page isn't secure, the **Security Overview** says **Th
 
 ![A non-secure page](./index-images/overview-non-secure.png)
 
-This problem occurs when the URL that you visited was requested over HTTP.  To make it secure you need to request it over HTTPS.  For example, if you look at the URL in your address bar, it probably looks similar to `http://example.com`.  To make it secure the URL should be `https://example.com`.
+This problem occurs when the URL that you visited was requested over HTTP.  To make it secure you need to request it over HTTPS.  For example, if you look at the URL in your Address bar, it probably looks similar to `http://example.com`.  To make it secure the URL should be `https://example.com`.
 
 If you already set up HTTPS on your server, all you need to do to fix this problem is configure your server to redirect all HTTP requests to HTTPS.
 
