@@ -11,6 +11,7 @@ ms.date: 07/30/2025
 <!-- sync:
 https://learn.microsoft.com/microsoft-edge/web-platform/samples.md
 https://github.com/MicrosoftEdge/Demos/blob/main/README.md#cross-browser-api-samples
+sync'd July 30, 2025
 -->
 
 <!-- todo: delete table and link to https://github.com/MicrosoftEdge/Demos/blob/main/README.md#cross-browser-api-samples ? -->
