@@ -147,8 +147,8 @@ If you installed Node.js and npm, as described above, `npx http-server` is a sim
 
 In many cases, you don't need to enter a URL or run a localhost server.  For example, you can:
 *  Open a folder that contains webpage source files, and then right-click an `.html` file.
-*  Enter a local file path in the address bar, such as `C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html` (the default, Success page).
-*  Enter a remote server URL in the address bar of the **Edge DevTools: Browser** tab, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
+*  Enter a local file path in the Address bar, such as `C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html` (the default, Success page).
+*  Enter a remote server URL in the Address bar of the **Edge DevTools: Browser** tab, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
 If your webpage uses certain APIs that require the webpage to be running on a web server, to use DevTools, you must start a local web server for testing.  If you don't serve out your project on a webserver, but only instead, you use local files, you can still use DevTools, with debugging ability, by right-clicking a local `.html` file.  Functionality of your app which specifically requires your app to be on a server won't work, and DevTools will have limited utility.
 

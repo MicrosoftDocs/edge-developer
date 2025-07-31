@@ -22,17 +22,29 @@ ms.date: 01/30/2025
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Emulate mobile devices (Device Emulation)
+<!-- https://developer.chrome.com/docs/devtools/device-mode/ -->
+
+
+<!-- ====================================================================== -->
+<!-- ## Overview -->
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#overview -->
+<!-- different content -->
 
 Use the **Device Emulation** tool, sometimes called _Device Mode_, to approximate how your page looks and behaves on a mobile device.
 
 **Device Emulation** is a [first-order approximation](https://wikipedia.org/wiki/Order_of_approximation#First-order) of the look and feel of your page on a mobile device.  **Device Emulation** doesn't actually run your code on a mobile device.  Instead, you simulate the mobile user experience from your laptop or desktop.
+
+
+<!-- ====================================================================== -->
+<!-- ## Limitations -->
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#limitations -->
 
 Some aspects of mobile devices aren't emulated in DevTools.  For example, the architecture of mobile CPUs is different than the architecture of laptop or desktop CPUs.  For the most robust testing, run your page on a mobile device.
 
 Use [Remote Debugging](../remote-debugging/index.md) to interact with the code of a page from your machine while your page actually runs on a mobile device.  You can view, change, debug, profile, or all four while you interact with the code.  Your machine can be a notebook or desktop computer.
 
 
-**Detailed contents:**<!--Jan. 30, 2025. compare page toc at https://developer.chrome.com/docs/devtools/device-mode/-->
+**Detailed contents:**
 * [Simulate a mobile viewport](#simulate-a-mobile-viewport)
    * [Responsive Viewport Mode](#responsive-viewport-mode)
    * [Show media queries](#show-media-queries)
@@ -40,6 +52,8 @@ Use [Remote Debugging](../remote-debugging/index.md) to interact with the code o
    * [Set the device type](#set-the-device-type)
    * [Mobile Device Viewport Mode](#mobile-device-viewport-mode)
    * [Rotate the viewport to landscape orientation](#rotate-the-viewport-to-landscape-orientation)
+   * [Toggle dual-screen mode](#toggle-dual-screen-mode)
+   * [Set device posture](#set-device-posture)
    * [Show device frame](#show-device-frame)
    * [Add a custom mobile device](#add-a-custom-mobile-device)
    * [Show rulers](#show-rulers)
@@ -57,7 +71,14 @@ Use [Remote Debugging](../remote-debugging/index.md) to interact with the code o
 
 
 <!-- ====================================================================== -->
+<!-- ## Open the device toolbar -->
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#open_the_device_toolbar -->
+<!-- omitted -->
+
+
+<!-- ====================================================================== -->
 ## Simulate a mobile viewport
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#viewport -->
 
 To open the UI that enables you to simulate a mobile viewport:
 
@@ -72,6 +93,7 @@ To open the UI that enables you to simulate a mobile viewport:
 
 <!-- ------------------------------ -->
 #### Responsive Viewport Mode
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#responsive -->
 
 To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.  You can enter any numeric values in the width and height boxes.  If you select a size larger than available in the browser window, the viewport will be automatically scaled to accommodate for the larger viewport.
 
@@ -84,6 +106,7 @@ If you need more space on your screen, you can change where DevTools is docked i
 
 <!-- ------------------------------ -->
 #### Show media queries
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#queries -->
 
 If you have defined media queries on your page, jump to the viewport dimensions where those media queries take effect by showing media query breakpoints above your viewport.  Select **More options** (![More Options icon](./index-images/more-options-icon.png)) > **Show media queries**.
 
@@ -115,6 +138,7 @@ See also:
 
 <!-- ------------------------------ -->
 #### Set device pixel ratio
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#dpr -->
 
 [Device pixel ratio (DPR)](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio) is the ratio between physical pixels on the hardware screen and logical (CSS) pixels.  In other words, DPR tells the browser how many screen pixels to use to draw a CSS pixel.  Microsoft Edge uses the DPR value when drawing on HiDPI (High Dots Per Inch) displays.
 
@@ -135,6 +159,7 @@ To remove the device pixel ratio:
 
 <!-- ------------------------------ -->
 #### Set the device type
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#type -->
 
 To simulate a mobile device or desktop device, use the **Device Type** list:
 
@@ -162,6 +187,7 @@ Key for columns in the above table:
 
 <!-- ------------------------------ -->
 #### Mobile Device Viewport Mode
+<!-- Device-specific mode  https://developer.chrome.com/docs/devtools/device-mode/#device -->
 
 To simulate the dimensions of a specific mobile device, select the device from the **Device** list:
 
@@ -170,6 +196,7 @@ To simulate the dimensions of a specific mobile device, select the device from t
 
 <!-- ------------------------------ -->
 #### Rotate the viewport to landscape orientation
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#landscape -->
 
 Test your webpage in landscape orientation.
 
@@ -183,7 +210,30 @@ See also [Set orientation](#set-orientation), below.
 
 
 <!-- ------------------------------ -->
+#### Toggle dual-screen mode
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#dual-screen -->
+
+Some devices have two screens and two ways to use them: with one or both screens active.
+
+To toggle between dual and single screen, click the **Toggle dual-screen mode** button in the toolbar.
+
+<!-- ![](todo: toggle-dual-screen.png) -->
+
+
+<!-- ------------------------------ -->
+#### Set device posture
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#posture -->
+
+Some devices have a foldable screen.  Foldable screens have a posture: continuous or folded.  The continuous posture refers to a "flat" position and folded forms an angle between sections of the display.
+
+To set the device posture, select **Continuous** or **Folded** from the corresponding dropdown menu in the toolbar.
+
+<!-- ![](todo: posture.png) -->
+
+
+<!-- ------------------------------ -->
 #### Show device frame
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#frame -->
 
 To simulate the dimensions of a specific mobile device, click **More options** (![The More Options button.](./index-images/more-options-icon.png)), and then select **Show device frame** to show the physical device frame around the viewport:
 
@@ -198,6 +248,7 @@ The device frame for the iPhone 6/7/8:
 
 <!-- ------------------------------ -->
 #### Add a custom mobile device
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#custom -->
 
 If the mobile device option that you need isn't included on the default list, you can add a custom device.  
 
@@ -239,6 +290,7 @@ To remove a custom device:
 
 <!-- ------------------------------ -->
 #### Show rulers
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#rulers -->
 
 If you need to measure screen dimensions, you can use rulers to measure the screen size in pixels.
 
@@ -255,6 +307,7 @@ To display rulers above and to the left of your viewport:
 
 <!-- ------------------------------ -->
 #### Zoom the viewport
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#zoom -->
 
 To test the look and feel of your page at multiple zoom levels, use the **Zoom** list to zoom in or out.
 
@@ -263,6 +316,7 @@ To test the look and feel of your page at multiple zoom levels, use the **Zoom**
 
 <!-- ------------------------------ -->
 #### Capture a screenshot
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#screenshot -->
 
 To capture a screenshot of what you currently see in the viewport, click **More options** (![The More Options icon](./index-images/more-options-icon.png)) > **Capture screenshot**:
 
@@ -273,6 +327,7 @@ To capture a screenshot of the whole page including the content that isn't curre
 
 <!-- ====================================================================== -->
 ## Throttle the network and CPU
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#throttle -->
 
 Mobile devices often have network and CPU constraints.
 
@@ -293,6 +348,7 @@ All of the throttling is based upon the normal capability of your laptop or desk
 
 <!-- ------------------------------ -->
 #### Network and Performance tabs have warning icon when throttled
+<!-- not upstream -->
 
 When throttling is enabled in **Device Emulation**, a warning icon is displayed in the **Network** and **Performance** tool tabs on the **Activity Bar**, to help you know that performance is impacted by throttling:
 
@@ -301,6 +357,7 @@ When throttling is enabled in **Device Emulation**, a warning icon is displayed 
 
 <!-- ------------------------------ -->
 #### Throttle the CPU only
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#cpu -->
 
 To throttle the CPU only, and not the network:
 
@@ -315,6 +372,7 @@ To throttle the CPU only, and not the network:
 
 <!-- ------------------------------ -->
 #### Throttle the network only
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#network -->
 
 To throttle the network only and not the CPU:
 
@@ -335,15 +393,16 @@ You can also set network throttling from within the **Performance** tool:
 
 <!-- ====================================================================== -->
 ## Emulate sensors
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#emulate-sensors -->
 
 Use the **Sensors** tab to override geolocation, simulate device orientation, force touch, and emulate idle state.
 
-The sections below provide a quick look on how to override geolocation and set device orientation.
-<!-- For a complete list of features, see [Emulate device sensors](). -->
+The sections below provide a quick look on how to override geolocation and set device orientation.  For a complete list of features, see [Emulate device sensors](../sensors/index.md).
 
 
 <!-- ------------------------------ -->
 #### Override geolocation
+<!-- https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sensors/ -->
 
 Use the **Sensors** tool to override geolocation and simulate device orientation.
 
@@ -371,6 +430,7 @@ See also:
 
 <!-- ------------------------------ -->
 #### Set orientation
+<!-- https://developer.chrome.com/docs/devtools/device-mode/#orientation -->
 
 If your page depends on orientation information from a mobile device to render properly, open the orientation UI.
 
@@ -396,6 +456,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Set the user agent string
+<!-- not upstream -->
 
 If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** tool to specify a different user agent string.
 
@@ -424,6 +485,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Set user-agent client hints
+<!-- not upstream -->
 
 If your site employs [user-agent client hints](../../web-platform/user-agent-guidance.md), use the **Emulated Devices** tool to add devices and set user-agent client hints:
 
