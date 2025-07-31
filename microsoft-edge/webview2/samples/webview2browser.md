@@ -146,7 +146,7 @@ The **WebView2Browser** sample implements the following features:
 * Multiple tabs
 * History
 * Favorites
-* Search from the address bar
+* Search from the Address bar
 * Page security status
 * Clearing cache and cookies
 
@@ -168,13 +168,13 @@ API | Features
 `ICoreWebView2Controller` | There are several WebViewControllers in WebView2Browser and we fetch the associated WebViews from them.
 `ICoreWebView2NavigationCompletedEventHandler` | Used along with `add_NavigationCompleted` to update the reload button in the browser UI.
 `ICoreWebView2Settings` | Used to disable DevTools in the browser UI.
-`ICoreWebView2SourceChangedEventHandler` | Used along with `add_SourceChanged` to update the address bar in the browser UI. |
+`ICoreWebView2SourceChangedEventHandler` | Used along with `add_SourceChanged` to update the Address bar in the browser UI. |
 `ICoreWebView2WebMessageReceivedEventHandler` | This is one of the most important APIs to WebView2Browser. Most functionalities involving communication across WebViews use this.
 
 ICoreWebView2 API | Features
 :--- | :---
 `add_NavigationStarting` | Used to display the cancel navigation button in the controls WebView.
-`add_SourceChanged` | Used to update the address bar.
+`add_SourceChanged` | Used to update the Address bar.
 `add_HistoryChanged` | Used to update go back/forward buttons.
 `add_NavigationCompleted` | Used to display the reload button once a navigation completes.
 `ExecuteScript` | Used to get the title and favicon of a visited page.
@@ -196,7 +196,7 @@ The sections below describe how some of the features in WebView2Browser were imp
 * [The basics](#the-basics)<!-- h2 -->
   * [Set up the environment, create a WebView](#set-up-the-environment-create-a-webview)<!-- h4 -->
   * [Navigate to web page](#navigate-to-web-page)
-  * [Updating the address bar](#updating-the-address-bar)
+  * [Updating the Address bar](#updating-the-address-bar)
   * [Going back, going forward](#going-back-going-forward)
   * [Reloading, stop navigation](#reloading-stop-navigation)
 * [Some interesting features](#some-interesting-features)
@@ -314,7 +314,7 @@ We're setting up a few things here. The [ICoreWebView2Settings](/microsoft-edge/
 <!-- ------------------------------ -->
 #### Navigate to web page
 
-You can navigate to a web page by entering its URI in the address bar. When pressing Enter, the controls WebView will post a web message to the host app so it can navigate the active tab to the specified location. Code below shows how the host Win32 application will handle that message.
+You can navigate to a web page by entering its URI in the Address bar. When pressing Enter, the controls WebView will post a web message to the host app so it can navigate the active tab to the specified location. Code below shows how the host Win32 application will handle that message.
 
 ```cpp
         case MG_NAVIGATE:
@@ -353,16 +353,16 @@ WebView2Browser will check the URI against browser pages (i.e. favorites, settin
 
 
 <!-- ------------------------------ -->
-#### Updating the address bar
+#### Updating the Address bar
 
-The address bar is updated every time there is a change in the active tab's document source and along with other controls when switching tabs. Each WebView will fire an event when the state of the document changes, we can use this event to get the new source on updates and forward the change to the controls WebView (we'll also update the go back and go forward buttons).
+The Address bar is updated every time there is a change in the active tab's document source and along with other controls when switching tabs. Each WebView will fire an event when the state of the document changes, we can use this event to get the new source on updates and forward the change to the controls WebView (we'll also update the go back and go forward buttons).
 
 ```cpp
         // Register event handler for doc state change
         RETURN_IF_FAILED(m_contentWebView->add_SourceChanged(Callback<ICoreWebView2SourceChangedEventHandler>(
             [this, browserWindow](ICoreWebView2* webview, ICoreWebView2SourceChangedEventArgs* args) -> HRESULT
         {
-            BrowserWindow::CheckFailure(browserWindow->HandleTabURIUpdate(m_tabId, webview), L"Can't update address bar");
+            BrowserWindow::CheckFailure(browserWindow->HandleTabURIUpdate(m_tabId, webview), L"Can't update Address bar");
 
             return S_OK;
         }).Get(), &m_uriUpdateForwarderToken));
@@ -692,7 +692,7 @@ HRESULT Tab::Init(ICoreWebView2Environment* env, bool shouldBeActive)
         RETURN_IF_FAILED(m_contentWebView->add_SourceChanged(Callback<ICoreWebView2SourceChangedEventHandler>(
             [this, browserWindow](ICoreWebView2* webview, ICoreWebView2SourceChangedEventArgs* args) -> HRESULT
         {
-            BrowserWindow::CheckFailure(browserWindow->HandleTabURIUpdate(m_tabId, webview), L"Can't update address bar");
+            BrowserWindow::CheckFailure(browserWindow->HandleTabURIUpdate(m_tabId, webview), L"Can't update Address bar");
 
             return S_OK;
         }).Get(), &m_uriUpdateForwarderToken));

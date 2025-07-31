@@ -117,7 +117,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Try the new Heap Snapshot visualizer extension for DevTools
+## Heap Snapshot visualizer extension for DevTools
 
 <!-- Subtitle: Visualize the data in your heap snapshot like you've never seen before, as a directed graph or a tree. -->
 
