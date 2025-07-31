@@ -77,6 +77,11 @@ The Writing Assistance APIs use a model that's provided by Microsoft Edge and bu
 
 * **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
 
+<!-- todo: reveal draft-demo link?
+See also:
+* [/webnn/](https://github.com/MicrosoftEdge/Demos/tree/main/webnn/) - Source code and Readme for the WebNN demo in the `MicrosoftEdge / Demos` repo.
+-->
+
 
 <!-- ====================================================================== -->
 ## The Phi-4-mini model
@@ -153,13 +158,13 @@ To see the Writing Assistance APIs in action, and review existing code that uses
 
 1. [Enable the Writing Assistance APIs](#enable-the-writing-assistance-apis), as described above.
 
-1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Built-in AI playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/summarizer-api/).
+1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Summarizer API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/summarizer-api/).
 
-1. Under the left navigation:
+1. In the **Built-in AI playgrounds** navigation on the left:
 
-   * For the Summarizer API, click **Summarizer**.
-   * For the Writer API, click **Writer**.
-   * For the Rewriter API, click **Rewriter**.
+   * For the Summarizer API playground, click **Summarizer**.
+   * For the Writer API playground, click **Writer**.
+   * For the Rewriter API playground, click **Rewriter**.
 
 1. In the information banner at the top, check the status: it initially reads **Model downloading, please wait**:
 
@@ -183,7 +188,8 @@ To see the Writing Assistance APIs in action, and review existing code that uses
 
 1. To stop generating the response, at any time, click the **Stop** button.
 
-To view the source code of the Writing Assistance APIs playground, see the [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) repo at GitHub.
+See also:
+* [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
 
 
 <!-- ====================================================================== -->
@@ -549,5 +555,7 @@ You can also contribute to the discussion about the design of the Writing Assist
 ## See also
 
 * [Writing Assistance APIs Explainer](https://github.com/webmachinelearning/writing-assistance-apis), on the Web Machine Learning GitHub repo.
-
 * [Prompt a built-in language model with the Prompt API](./prompt-api.md).
+* [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
+<!-- todo: reveal draft-demo link?
+* [/webnn/](https://github.com/MicrosoftEdge/Demos/tree/main/webnn/) - Source code and Readme for the WebNN demo in the `MicrosoftEdge / Demos` repo. -->

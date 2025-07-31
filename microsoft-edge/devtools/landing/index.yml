@@ -152,7 +152,7 @@ landingContent:
           - text: Run JavaScript in the Console
             url: ../console/console-javascript.md
 
-          - text: Fix JavaScript errors that are reported in the Console
+          - text: Fix JavaScript errors reported in the Console
             url: ../console/console-debug-javascript.md
 
           - text: Sources tool overview

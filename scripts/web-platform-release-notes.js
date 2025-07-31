@@ -10,6 +10,9 @@ const EDGE_OT_PAGE = `${EDGE_OT_ROOT}/microsoft-edge/origin-trials/trials`;
 // If Beta becomes stable within the next N coming days, generate the release notes for Canary.
 // This way, the release notes are ready for when Canary becomes Beta.
 const DAYS_NUMBER_BEFORE_RELNOTES_NOTICE = 15;
+// The Git branch name where the release notes will be generated.
+// Keep this in sync with thge webplat-releasenotes.yaml workflow file.
+const BRANCH_NAME = "web-platform-release-notes";
 
 async function fetchChromeStatusAPI(url) {
   const response = await fetch(url);
@@ -26,6 +29,14 @@ function longDate(dateString) {
     day: "numeric",
     year: "numeric",
   });
+}
+
+function getReleaseNoteMDFilePath(version) {
+  return `https://github.com/MicrosoftDocs/edge-developer/blob/${BRANCH_NAME}/microsoft-edge/web-platform/release-notes/${version}.md`;
+}
+
+function getReleaseNoteRawMDFilePath(version) {
+  return `https://raw.githubusercontent.com/MicrosoftDocs/edge-developer/refs/heads/${BRANCH_NAME}/microsoft-edge/web-platform/release-notes/${version}.md`;
 }
 
 async function getActiveEdgeOTs() {
@@ -152,7 +163,17 @@ async function main() {
   );
 
   // --------------------------------------------------
-  // 2. Fetch Chrome Status features for the N+1 milestone.
+  // 2. Check if there isn't already a release notes draft for the next beta version.
+  // --------------------------------------------------
+
+  const rawFileResponse = await fetch(getReleaseNoteRawMDFilePath(nextBetaVersion));
+  if (rawFileResponse.status === 200) {
+    console.error(`A PR is already open for the next beta release notes. File exists: ${getReleaseNoteMDFilePath(nextBetaVersion)}.`);
+    process.exit(0);
+  }
+
+  // --------------------------------------------------
+  // 3. Fetch Chrome Status features for the N+1 milestone.
   // --------------------------------------------------
 
   console.log(
@@ -164,7 +185,7 @@ async function main() {
   const csFeatures = csMilestoneData.features_by_type;
 
   // --------------------------------------------------
-  // 3. Fetch Chrome Status new origin trials in N+1.
+  // 4. Fetch Chrome Status new origin trials in N+1.
   // --------------------------------------------------
 
   console.log(
@@ -190,7 +211,7 @@ async function main() {
     });
 
   // --------------------------------------------------
-  // 4. Fetch current Edge origin trials.
+  // 5. Fetch current Edge origin trials.
   // --------------------------------------------------
 
   console.log(
@@ -199,7 +220,7 @@ async function main() {
   const edgeOTs = await getActiveEdgeOTs();
 
   // --------------------------------------------------
-  // 5. Generate the release notes draft content.
+  // 6. Generate the release notes draft content.
   // --------------------------------------------------
   // Write the fetched data locally for 11ty to use, run 11ty, and then delete the file.
 
@@ -252,7 +273,7 @@ async function main() {
   await fs.rmdir("_data", { recursive: true, force: true });
 
   // --------------------------------------------------
-  // 6. Write the release notes draft content to a file.
+  // 7. Write the release notes draft content to a file.
   // --------------------------------------------------
   // All release notes go into /microsoft-edge/web-platform/release-notes/.
   // The file name should be the next beta version number.
@@ -262,12 +283,12 @@ async function main() {
   await fs.writeFile(releaseNotesPath, releaseNotesContent);
 
   // --------------------------------------------------
-  // 7. Open an issue on the repo to notify the team about the new release notes draft.
+  // 8. Open an issue on the repo to notify the team about the new release notes draft.
   // --------------------------------------------------
 
   console.log("Opening an issue to notify the team about the new release notes draft.");
-  const title = `New beta web platform release notes for ${nextBetaVersion}`;
-  const body = `The release notes draft for the next beta version ${nextBetaVersion} has been generated in [${releaseNotesPath}](${releaseNotesPath}) on the web-platform-release-notes branch.\n\nPlease update the content as needed.`;
+  const title = `Microsoft Edge Beta ${nextBetaVersion} web platform release notes ready for review`;
+  const body = `The release notes draft for the next Microsoft Edge beta version ${nextBetaVersion} has been generated in [${nextBetaVersion}.md](${getReleaseNoteMDFilePath(nextBetaVersion)}) on the ${BRANCH_NAME} branch.\n\nPlease [create a pull request](https://github.com/MicrosoftDocs/edge-developer/compare/main...${BRANCH_NAME}), update the content as needed, and close this issue.`;
 
   const octokit = github.getOctokit(process.env.token);
   const { data: issue } = await octokit.rest.issues.create({
