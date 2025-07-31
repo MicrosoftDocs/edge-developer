@@ -312,6 +312,18 @@ To provide feedback about the Ad Selection API origin trial, create a new issue 
 
 
 <!-- ====================================================================== -->
+## Terms of Use
+
+See [Terms of Use for Ad Selection API](/legal/microsoft-edge/ad-selection-api/terms-of-use).
+
+
+<!-- ====================================================================== -->
+## Data Protection Addendum
+
+See [Data Protection Addendum for the Ad Selection API](/legal/microsoft-edge/ad-selection-api/dpa).
+
+
+<!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
