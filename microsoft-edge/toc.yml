@@ -1822,6 +1822,9 @@
         - name: View a JSON file or server response with formatting
           href: ./web-platform/json-viewer.md
           displayName: JSON viewer, view JSON
+
+        - name: Cross-browser API samples
+          href: ./web-platform/samples.md
 # /Edge-specific web development tips (/web-platform/)
 # =============================================================================
 # Microsoft Edge IDE integration
