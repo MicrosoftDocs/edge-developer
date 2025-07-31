@@ -14,7 +14,7 @@ The **Console** is like an intelligent, rich command line within DevTools, and i
 
 The **Console** tool helps with several tasks, which are covered in more detail in the following articles:
 
-* **Track down problems** to find out why something isn't working in the current project.  See [Fix JavaScript errors that are reported in the Console](console-debug-javascript.md).
+* **Track down problems** to find out why something isn't working in the current project.  See [Fix JavaScript errors reported in the Console](console-debug-javascript.md).
 * **Get information about the web project** in the browser as log messages.  See [Filter Console messages](console-filters.md).
 * **Log information** in scripts for debugging purposes.  See [Log messages in the Console tool](console-log.md).
 * **Try JavaScript expressions** live in a [REPL](https://wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  See [Run JavaScript in the Console](console-javascript.md).
@@ -48,7 +48,7 @@ Search the web for your **Console** error messages, right from within DevTools. 
 
 ![The 'Search for this message on the Web' button on an error message in the Console](./index-images/search-console-icon.png)
 <!-- https://microsoftedge.github.io/Demos/devtools-console/error.html
-[Fix JavaScript errors that are reported in the Console](./console-debug-javascript.md) -->
+[Fix JavaScript errors reported in the Console](./console-debug-javascript.md) -->
 
 When you click the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message:
 
