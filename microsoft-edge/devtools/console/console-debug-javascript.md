@@ -1,5 +1,5 @@
 ---
-title: Fix JavaScript errors that are reported in the Console
+title: Fix JavaScript errors reported in the Console
 description: Debugging and resolving JavaScript-related errors that are reported in the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/12/2023
 ---
-# Fix JavaScript errors that are reported in the Console
+# Fix JavaScript errors reported in the Console
 
 This article walks you through six demo pages to demonstrate resolving JavaScript errors that are reported in the Console.
 
