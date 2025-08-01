@@ -79,6 +79,8 @@ IndexedDB values in the **Application** tool don't update in real-time.
 
 IndexedDB keys and values aren't editable from the **Application** tool.  However, since DevTools has access to the page context, you can run JavaScript code within DevTools to edit the data stored in an IndexedDB database.
 
+
+<!-- ------------------------------ -->
 #### Edit IndexedDB data by using the Console tool
 
 1. In DevTools, on the **Activity Bar**, select the **Console** tab.
@@ -99,6 +101,8 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
    }
    ```
 
+
+<!-- ------------------------------ -->
 #### Edit IndexedDB data by using snippets
 
 [Snippets](../javascript/snippets.md) are a way to store and run JavaScript code repeatedly, within DevTools.  If you need to edit IndexedDB data often, store it in a new snippet, and then run the snippet. To learn more, see [Run snippets of JavaScript on any webpage](../javascript/snippets.md).
@@ -119,6 +123,7 @@ You can delete any of the following:
 These options are described below.
 
 
+<!-- ------------------------------ -->
 #### Delete an IndexedDB key-value pair
 
 1. [View an IndexedDB object store](#view-indexeddb-data).
@@ -131,6 +136,8 @@ These options are described below.
 
    ![The delete key value button in the toolbar of the object store view](./indexeddb-images/delete-keyval.png)
 
+
+<!-- ------------------------------ -->
 #### Delete all key-value pairs in an object store
 
 1. [View an IndexedDB object store](#view-indexeddb-data).
@@ -139,6 +146,8 @@ These options are described below.
 
    ![The clear object store button in the toolbar of the object store view](./indexeddb-images/clear-object-store.png)
 
+
+<!-- ------------------------------ -->
 #### Delete an IndexedDB database
 
 1. [View the IndexedDB database](#view-indexeddb-data) that you want to delete.
@@ -147,6 +156,8 @@ These options are described below.
 
    ![The Delete database button](./indexeddb-images/delete-database.png)
 
+
+<!-- ------------------------------ -->
 #### Delete all IndexedDB storage
 
 1. In the sidebar of the **Application** tool, click **Storage**.
@@ -156,6 +167,12 @@ These options are described below.
 1. Click the **Clear site data** button.
 
    ![The Storage pane, showing the various storage checkboxes and the Clear site data button](./indexeddb-images/clear-site-data.png)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [IndexedDB: getAllRecords() demo](https://github.com/MicrosoftEdge/Demos/tree/main/idb-getallrecords)
 
 
 <!-- ====================================================================== -->
