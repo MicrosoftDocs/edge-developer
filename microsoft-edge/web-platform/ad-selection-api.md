@@ -30,6 +30,8 @@ The Ad Selection API provides user-relevant ads on your site without using third
     * [Deployment guide](#deployment-guide)
 * [Use the Ad Selection API on your website](#use-the-ad-selection-api-on-your-website)
 * [Provide feedback about the origin trial](#provide-feedback-about-the-origin-trial)
+* [Terms of Use](#terms-of-use)
+* [Data Protection Addendum](#data-protection-addendum)
 * [See also](#see-also)
 
 The Ad Selection API can be used by:
@@ -309,6 +311,18 @@ To provide feedback about the Ad Selection API origin trial, create a new issue 
 * To view existing issues, go to the [Issues tab of the WICG/privacy-preserving-ads repo](https://github.com/WICG/privacy-preserving-ads/issues).
 
 * To submit a new issue, go to the [new issue form](https://github.com/WICG/privacy-preserving-ads/issues/new?labels=Ad+Selection%20API,OriginTrialFeedback&title=%5BAd%20Selection%20API%5D+Feedback).
+
+
+<!-- ====================================================================== -->
+## Terms of Use
+
+See [Terms of Use for Ad Selection API](/legal/microsoft-edge/ad-selection-api/terms-of-use).
+
+
+<!-- ====================================================================== -->
+## Data Protection Addendum
+
+See [Data Protection Addendum for the Ad Selection API](/legal/microsoft-edge/ad-selection-api/dpa).
 
 
 <!-- ====================================================================== -->
