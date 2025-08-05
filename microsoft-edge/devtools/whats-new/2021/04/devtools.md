@@ -110,7 +110,7 @@ See also:
 
 In [Microsoft Edge version 90](../02/devtools.md) or earlier, if the Web App Manifest of your PWA included a non-square icon, a warning was displayed in the **Errors and Warnings**  section for each non-square icon.  In Microsoft Edge version 91 or later, the **Manifest** section in the **Application** tool displays no warnings if you provide at least one square icon.  If you don't provide any square icons, the following warning message appears:
 
-```output
+```console
 Most operating systems require square icons.  Please include at least one square icon in the array.
 ```
 

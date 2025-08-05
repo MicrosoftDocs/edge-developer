@@ -78,6 +78,6 @@ This export is called after Internet Explorer has finished all of its initial se
 
 Internet Explorer has a requirement that for an adapter DLL to be loaded, it must be signed with a trusted signature.  For testing and development purposes, this check can be bypassed, by turning on `TestSigning` for the device that you're testing on, as follows:
 
-```cmd
+```console
 Bcdedit.exe -set TESTSIGNING ON
 ```

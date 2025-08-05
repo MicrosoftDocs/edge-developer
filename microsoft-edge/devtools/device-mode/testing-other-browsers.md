@@ -83,7 +83,7 @@ To use the Android emulator:
 
 To install the Chromium Content Shell for Android, keep your emulator running and run the following command:
 
-```shell
+```console
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
 chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
@@ -101,7 +101,7 @@ Similar to the Chromium Content Shell, you can get an APK to install Firefox ont
 
 To install the file onto an open emulator or connected Android device, run the following command:
 
-```shell
+```console
 adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 ```
 

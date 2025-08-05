@@ -81,7 +81,7 @@ To see messaging in action:
 
 1. `ScenarioWebMessage.html` includes the following JavaScript in the header:
 
-   ```JavaScript
+   ```javascript
    window.chrome.webview.addEventListener('message', arg => {
       if ("SetColor" in arg.data) {
          document.getElementById("colorable").style.color = 
