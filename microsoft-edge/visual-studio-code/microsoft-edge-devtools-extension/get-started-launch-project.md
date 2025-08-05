@@ -43,7 +43,7 @@ These steps explain how to start http-server by using the cross-platform git bas
 
 1. If you haven't already, set up and start a web server for the first time, serving out the **demo-to-do** app from the Demos repo.  To do this, see [Step 6: Set up a localhost server](./install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
 
-1. Open git bash.  For example, on Windows, press **Start** and then enter **git bash**.
+1. Open git bash, or another command prompt.  For example, on Windows, press **Start** and then enter **git bash**.
 
 1. `cd` into the the specific folder you want to serve via http, `Demos\demo-to-do\`:
 
@@ -63,7 +63,7 @@ These steps explain how to start http-server by using the cross-platform git bas
 
    Information about the server and localhost URL is displayed, such as:
 
-   ```Output
+   ```bash
    Starting up http-server, serving ./
    
    Available on:

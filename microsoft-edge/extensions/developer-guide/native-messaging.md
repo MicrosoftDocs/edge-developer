@@ -147,7 +147,7 @@ The native messaging host manifest file may be located anywhere in the file syst
 
 The following locations are examples of registry keys:
 
-```output
+```
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_app
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_app
@@ -181,7 +181,7 @@ If Microsoft Edge finds the registry key at any of the previously listed locatio
 
 The search order for the registry locations is:
 
-```output
+```
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\
 HKEY_CURRENT_USER\SOFTWARE\Chromium\NativeMessagingHosts\
 HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\

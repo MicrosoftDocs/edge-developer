@@ -177,7 +177,7 @@ For information about http-server, see [http-server: a simple static HTTP server
 
    Or, if you are using a different command prompt on Windows, use backslashes, such as:
 
-   ```bash
+   ```console
    cd C:\Users\username\Documents\GitHub\Demos\demo-to-do\
    ```
 
@@ -199,7 +199,7 @@ These steps start the server for the first time.
 
    You might receive a message like:
 
-   ```Output
+   ```console
    Need to install the following packages:
      http-server@14.1.1
    Ok to proceed? (y)
@@ -217,7 +217,7 @@ These steps start the server for the first time.
 
    Information about the server and localhost URL is displayed, such as:
 
-   ```Output
+   ```console
    Starting up http-server, serving ./
    
    Available on:
