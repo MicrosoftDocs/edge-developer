@@ -280,7 +280,7 @@ These methods are not available inside content scripts, only inside your extensi
 
 The following example creates a [`runtime.Port`](https://developer.chrome.com/docs/extensions/reference/runtime/#type-Port) object that's connected to native messaging host `com.my_company.my_application`, starts listening for messages from that port and sends one outgoing message:
 
-```js
+```javascript
 var port = chrome.runtime.connectNative('com.my_company.my_application');
 port.onMessage.addListener(function (msg) {
   console.log('Received' + msg);
@@ -293,7 +293,7 @@ port.postMessage({text: 'Hello, my_application'});
 
 Use [`runtime.sendNativeMessage`](https://developer.chrome.com/docs/extensions/reference/api/runtime#method-sendNativeMessage) to send a message to the native application without creating a port; for example:
 
-```js
+```javascript
 chrome.runtime.sendNativeMessage(
   'com.my_company.my_application',
   {text: 'Hello'},

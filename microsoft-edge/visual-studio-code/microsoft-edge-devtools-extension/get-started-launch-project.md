@@ -96,7 +96,7 @@ This section is in support of clicking the **Launch Project** button.
 
 1. In several places in the `launch.json` file, on each of the `"url"` lines, scroll to the right , and note the comment, "Provide your project's url":
 
-   ```js
+   ```javascript
    "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", 
    // Provide your project's url to finish configuring
    ```
@@ -107,7 +107,7 @@ This section is in support of clicking the **Launch Project** button.
 
 1. In `launch.json`, in each URL string, paste the URL for your cloned copy of the **demo-to-do** app, such as: `http://localhost:8080`.  Paste the path inside the quoted path string in one of the `"url"` strings.  For example:
 
-   ```js
+   ```javascript
    "url": "http://localhost:8080", // Provide your project's url to finish configuring
    ```
 

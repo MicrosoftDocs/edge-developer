@@ -386,7 +386,7 @@ let driver = edge.Driver.createSession(options);
 
 If you use [Docker](https://hub.docker.com), run the following command to download a pre-configured image that has Microsoft Edge and Microsoft Edge WebDriver pre-installed.
 
-```console
+```shell
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 ```
 

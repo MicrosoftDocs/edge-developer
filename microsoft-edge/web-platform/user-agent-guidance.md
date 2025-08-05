@@ -96,7 +96,7 @@ User-Agent Client Hints are only sent over secure connections using `HTTPS`.
 
 You can access User-Agent Client Hints by using JavaScript on the client side. When you call the default `navigator.userAgentData`, it returns the following response.
 
-```JSON
+```json
 {
   "brands": [
     {

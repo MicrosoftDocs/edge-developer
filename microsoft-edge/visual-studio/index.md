@@ -116,7 +116,7 @@ To attach the Visual Studio debugger to an instance of Microsoft Edge that's alr
 
 1. From your command line, run the following command:
 
-   ```console
+   ```shell
    start msedge --remote-debugging-port=9222
    ```
     

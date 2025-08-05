@@ -194,7 +194,7 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 
 For example, to get an access token, send a POST request to the access token URL, by entering a `curl` command at the command prompt, as follows:
 
-```console
+```shell
 > curl \
 -X POST \
 -H "Content-Type: application/x-www-form-urlencoded" \
@@ -312,7 +312,7 @@ To upload a package to update an existing submission, use the `curl` command at 
 
 ##### [v1.1](#tab/v1-1)
 
-```console
+```shell
 > curl \
 -H "Authorization: ApiKey $ApiKey" \
 -H "X-ClientID: $ClientID" \
@@ -325,7 +325,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 ##### [v1](#tab/v1)
 
-```console
+```shell
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -H "Content-Type: application/zip" \
@@ -385,7 +385,7 @@ To check the status of a package upload, use the `curl` command at the command p
 
 ##### [v1.1](#tab/v1-1)
 
-```console
+```shell
 > curl \
 -H "Authorization: ApiKey $ApiKey" \
 -H "X-ClientID: $ClientID" \
@@ -396,7 +396,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 ##### [v1](#tab/v1)
 
-```console
+```shell
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X GET \
@@ -451,7 +451,7 @@ To publish the submission, use the `curl` command at the command prompt as follo
 
 ##### [v1.1](#tab/v1-1)
 
-```console
+```shell
 > curl \
 -H "Authorization: ApiKey $ApiKey" \
 -H "X-ClientID: $ClientID" \
@@ -463,7 +463,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 ##### [v1](#tab/v1)
 
-```console
+```shell
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X POST \
@@ -521,7 +521,7 @@ To check the publishing status, use the `curl` command at the command prompt as 
 
 ##### [v1.1](#tab/v1-1)
 
-```console
+```shell
 > curl \
 -H "Authorization: ApiKey $ApiKey" \
 -H "X-ClientID: $ClientID" \
@@ -532,7 +532,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 ##### [v1](#tab/v1)
 
-```console
+```shell
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X GET \
@@ -553,7 +553,7 @@ The following code is an example of a PowerShell script that uses the REST API t
 
 To use this script, fill in the `$ClientID`, `$ClientSecret`, `$ProductID`, and `$FilePATH` values at the top of the script.
 
-```powershell
+```shell
 Param(
     [string] $ClientID = '',
     [string] $ClientSecret = '',
