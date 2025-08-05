@@ -181,7 +181,7 @@ When configuring this task, set the `indexableFileFormats` parameter to either `
 
 The Symbol Server team publishes a .NET Core application, `symbol.exe`, which can be downloaded automatically.  To programmatically download `symbol.exe`, use the `GET` method of the `Client` endpoint in the Symbol Service REST API, as described in [Client - Get](/rest/api/azure/devops/symbol/client/get).  Then run the following command to publish your source maps to the Azure Artifacts symbol server:
 
-```shell
+```console
 symbol publish
         -d {root directory containing your source maps}
         -n {a unique name for this job}

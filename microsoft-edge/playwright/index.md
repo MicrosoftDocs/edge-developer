@@ -24,13 +24,13 @@ Playwright launches [headless browsers](https://wikipedia.org/wiki/Headless_brow
 
 First, install [Playwright Test](https://playwright.dev/docs/intro) to test your website or app:
 
-```shell
+```console
 npm i -D @playwright/test
 ```
 
 To install browsers, run the following command, which downloads [Chromium](https://www.chromium.org/Home), [Firefox](https://www.mozilla.org/firefox), and [WebKit](https://webkit.org):
 
-```shell
+```console
 npx playwright install 
 ```
 
@@ -55,7 +55,7 @@ test('basic test', async ({ page }) => {
 
 Now run your tests, as follows:
 
-```shell
+```console
 npx playwright test
 ```
 
@@ -88,13 +88,13 @@ export default config
 
 If Microsoft Edge isn't already installed on your system, install it through Playwright, as follows:
 
-```shell
+```console
 npx playwright install msedge
 ```
 
 When using the above `playwright.config.ts` file, Playwright Test uses Microsoft Edge to run your tests, as follows:
 
-```shell
+```console
 npx playwright test --headed
 ```
 

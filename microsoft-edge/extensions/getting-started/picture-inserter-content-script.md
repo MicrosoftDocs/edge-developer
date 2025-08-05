@@ -90,7 +90,7 @@ Clone the **MicrosoftEdge-Extensions** repo to your local drive, and then switch
 
 1. Check the list of directories:
 
-   ```shell
+   ```console
    ls
    ```
 
@@ -98,19 +98,19 @@ Clone the **MicrosoftEdge-Extensions** repo to your local drive, and then switch
 
 1. Switch to the new directory:
 
-   ```shell
+   ```console
    cd MicrosoftEdge-Extensions
    ```
 
 1. Create a working branch:
 
-   ```shell
+   ```console
    git branch test
    ```
 
 1. Switch to the working branch:
 
-   ```shell
+   ```console
    git switch test
    ```
 
@@ -252,7 +252,7 @@ Example path for the sample:
 
 Directories and files in the `/picture-inserter-content-script/` directory:
 
-```shell
+```console
 /content-scripts/
    content.js
 /icons/

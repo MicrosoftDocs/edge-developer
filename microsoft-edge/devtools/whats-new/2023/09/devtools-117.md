@@ -32,7 +32,7 @@ This feature is available as an experiment starting in Microsoft Edge 117.  This
 
 By default, this experiment is turned off.  To enable this experiment, specify the feature flag `msEdgeAIExplainConsoleError`; for example, run Microsoft Edge from the command line using the `enable-features` command-line option, as follows:
 
-```shell
+```console
 msedge.exe --enable-features=msEdgeAIExplainConsoleError
 ```
 

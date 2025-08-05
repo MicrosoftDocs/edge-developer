@@ -225,7 +225,7 @@ If you have an online-only deployment scenario where users are assumed to have i
 
    If you run the following command from an elevated process or command prompt, it triggers a _per-machine_ install.  If you don't run the command from an elevated process or command prompt, a _per-user_ install will take place.  However, a _per-user_ install is automatically replaced by a _per-machine_ install, if a _per-machine_ Microsoft Edge Updater is in place.  A _per-machine_ Microsoft Edge Updater is provided as part of Microsoft Edge, except for the Canary preview channel of Microsoft Edge.  For more information, see [Installing the Runtime as per-machine or per-user](#installing-the-runtime-as-per-machine-or-per-user).<!-- since this link is provided, the present paragraph could be shortened -->
 
-   ```shell
+   ```console
    MicrosoftEdgeWebview2Setup.exe /silent /install
    ```
 
@@ -259,7 +259,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
    If you run the following command from an elevated process or command prompt, it triggers a _per-machine_ install.  If you don't run the command from an elevated process or command prompt, a _per-user_ install will take place.  However, a _per-user_ install is automatically replaced by a _per-machine_ install, if a _per-machine_ Microsoft Edge Updater is in place.  A _per-machine_ Microsoft Edge Updater is provided as part of Microsoft Edge, except for the Canary preview channel of Microsoft Edge.  For more information, see [Installing the Runtime as per-machine or per-user](#installing-the-runtime-as-per-machine-or-per-user).<!-- since this link is provided, the present paragraph could be shortened -->
 
-   ```shell
+   ```console
    MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
    ```
 
@@ -370,7 +370,7 @@ To use the Fixed Version distribution mode:
 
    1. Run the following commands on the user's device:
 
-      ```shell
+      ```console
       icacls {Fixed Version path} /grant *S-1-15-2-2:(OI)(CI)(RX)
       icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
       ```

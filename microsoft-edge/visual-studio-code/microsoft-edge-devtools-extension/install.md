@@ -191,7 +191,7 @@ These steps start the server for the first time.
 
 1. Enter the command `npx http-server`:
 
-   ```shell
+   ```console
    npx http-server
    ```
 
