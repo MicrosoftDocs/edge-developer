@@ -100,7 +100,7 @@ Continue with the next section.
 
 1. Run one of the following commands, to start the web server:
 
-   ```shell
+   ```bash
    # Node.js option
    npx http-server
    ```
