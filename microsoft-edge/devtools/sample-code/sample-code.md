@@ -310,7 +310,7 @@ If you start the localhost server from a specific demo folder, such as `\Demos\d
 
 Starting the server from within a specific demo directory:
 
-```
+```bash
 $ cd ~/GitHub/Demos/demo-to-do
 $ npx http-server
 ```
@@ -329,7 +329,7 @@ If you start the localhost server from within the entire `\Demos\` folder and th
 
 Starting the server from within the entire `\Demos\` directory:
 
-```
+```bash
 $ cd ~/GitHub/Demos
 $ cd "C:\Users\localAccount\GitHub\Demos"  # alt syntax
 $ npx http-server

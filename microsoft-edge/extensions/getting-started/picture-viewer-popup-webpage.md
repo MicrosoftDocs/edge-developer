@@ -43,7 +43,7 @@ Clone the **MicrosoftEdge-Extensions** repo to your local drive, and then switch
 
 1. Change to the directory where you want to clone the **MicrosoftEdge-Extensions** repo to.  For example:
 
-   ```
+   ```bash
    cd C:/Users/localAccount/GitHub/
    ```
 
@@ -53,7 +53,7 @@ Clone the **MicrosoftEdge-Extensions** repo to your local drive, and then switch
 
 1. In the command prompt window, enter the command:
 
-   ```
+   ```bash
    git clone https://github.com/microsoft/MicrosoftEdge-Extensions.git
    ```
 
@@ -65,7 +65,7 @@ Clone the **MicrosoftEdge-Extensions** repo to your local drive, and then switch
 
 1. Check the list of directories:
 
-   ```
+   ```shell
    ls
    ```
 
@@ -73,19 +73,19 @@ Clone the **MicrosoftEdge-Extensions** repo to your local drive, and then switch
 
 1. Switch to the new directory:
 
-   ```
+   ```shell
    cd MicrosoftEdge-Extensions
    ```
 
 1. Create a working branch:
 
-   ```
+   ```shell
    git branch test
    ```
 
 1. Switch to the working branch:
 
-   ```
+   ```shell
    git switch test
    ```
 

@@ -49,13 +49,13 @@ These steps explain how to start http-server by using the cross-platform git bas
 
    In git bash, use forward slashes for file paths.  For example:
 
-   ```
+   ```bash
    cd C:/Users/username/Documents/GitHub/Demos/demo-to-do
    ```
 
 1. Enter the command `npx http-server`.  A local webserver starts on port 8080.
 
-   ```
+   ```bash
    npx http-server
    ```
    
@@ -63,7 +63,7 @@ These steps explain how to start http-server by using the cross-platform git bas
 
    Information about the server and localhost URL is displayed, such as:
 
-   ```
+   ```Output
    Starting up http-server, serving ./
    
    Available on:

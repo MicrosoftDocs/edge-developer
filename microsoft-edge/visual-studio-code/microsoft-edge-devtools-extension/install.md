@@ -74,7 +74,7 @@ The DevTools extension shows a popup suggestion to install Node.js and npm.  The
 
 1. At the command prompt, enter `npm version`.  Version numbers are displayed for `npm` and for `node`, indicating that Node Package Manager and Node.js are installed, to support inline and live issue analysis.  For example:
 
-   ```
+   ```bash
    $ npm version
    {
       npm: '10.9.2',
@@ -171,13 +171,13 @@ For information about http-server, see [http-server: a simple static HTTP server
 
    In the git bash shell, use forward slashes, such as:
 
-   ```
+   ```bash
    cd C:/Users/username/Documents/GitHub/Demos/demo-to-do/
    ```
 
    Or, if you are using a different command prompt on Windows, use backslashes, such as:
 
-   ```
+   ```bash
    cd C:\Users\username\Documents\GitHub\Demos\demo-to-do\
    ```
 
@@ -191,7 +191,7 @@ These steps start the server for the first time.
 
 1. Enter the command `npx http-server`:
 
-   ```
+   ```shell
    npx http-server
    ```
 
@@ -199,7 +199,7 @@ These steps start the server for the first time.
 
    You might receive a message like:
 
-   ```
+   ```Output
    Need to install the following packages:
      http-server@14.1.1
    Ok to proceed? (y)
@@ -217,7 +217,7 @@ These steps start the server for the first time.
 
    Information about the server and localhost URL is displayed, such as:
 
-   ```
+   ```Output
    Starting up http-server, serving ./
    
    Available on:
