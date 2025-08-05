@@ -553,7 +553,7 @@ The following code is an example of a PowerShell script that uses the REST API t
 
 To use this script, fill in the `$ClientID`, `$ClientSecret`, `$ProductID`, and `$FilePATH` values at the top of the script.
 
-```shell
+```powershell
 Param(
     [string] $ClientID = '',
     [string] $ClientSecret = '',
