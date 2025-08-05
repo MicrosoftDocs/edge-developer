@@ -219,7 +219,7 @@ Example path for the sample:
 
 Directories and files in the `/picture-viewer-popup-webpage/` directory:
 
-```console
+```
 /icons/
    extension-icon16x16.png
    extension-icon32x32.png

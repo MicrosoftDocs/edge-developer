@@ -252,7 +252,7 @@ Example path for the sample:
 
 Directories and files in the `/picture-inserter-content-script/` directory:
 
-```console
+```
 /content-scripts/
    content.js
 /icons/
