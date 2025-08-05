@@ -160,7 +160,7 @@ Continue below.
 
 1. In several places in the `launch.json` file, on each of the `"url"` lines, scroll to the right, and note the comment, "Provide your project's url to finish configuring":
 
-   ```js
+   ```javascript
    "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", 
    // Provide your project's url to finish configuring
    ```
@@ -174,7 +174,7 @@ Continue below.
 
 1. Paste the path inside the quoted path string in one of the `"url"` strings.  For example:
 
-   ```js
+   ```javascript
    "url": "http://localhost:8080", // Provide your project's url to finish configuring
    ```
 

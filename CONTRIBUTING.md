@@ -38,7 +38,7 @@ To make substantial changes to an existing article, add or change images, or con
 
 2. Click the green **Clone or download** button, copy to your clipboard, then run the following code at your command prompt:
 
-   ```Shell
+   ```console
    git clone {paste_your_repo_clone_link}
    ```
    
