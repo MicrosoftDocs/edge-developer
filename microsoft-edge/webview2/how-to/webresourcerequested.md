@@ -108,7 +108,6 @@ Another example is if the host app is only interested in all requests that are u
 
 ---
 
-
 For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequestedFilter Method > Remarks](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter#remarks)
 
 
@@ -143,6 +142,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 
 <!-- ------------------------------ -->
 #### Example: Intercepting a request, to monitor or modify it
+<!-- ## Example: Header modification when making a request -->
 
 <!-- this example doesn't exist in the sample repo -->
 
@@ -483,7 +483,6 @@ m_webView->add_WebResourceResponseReceived(
 <!-- ------------------------------ -->
 
 ##### [.NET](#tab/dotnet)
-
 
 **Request:**
 
