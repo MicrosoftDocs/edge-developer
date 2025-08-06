@@ -106,13 +106,13 @@ Take advantage of the fact that some parameters added to the update manifest req
 
 The following example demonstrates the format of the request parameters of update URL:
 
-```url
+```HTTP
 ?x={extension_data}
 ```
 
 In this example, `{extension_data}` is a URL-encoded string that uses the following format.
 
-```url
+```HTTP
 id={id}&v={version}
 ```
 

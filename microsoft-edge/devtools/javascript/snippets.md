@@ -172,25 +172,25 @@ For example, on Windows:
 
 Edge Stable:
 
-```shell
+```console
 "C:\Users\localAccount\AppData\Local\Microsoft\Edge\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
 ```
 
 Edge Beta:
 
-```shell
+```console
 "C:\Users\localAccount\AppData\Local\Microsoft\Edge Beta\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
 ```
 
 Edge Dev:
 
-```shell
+```console
 "C:\Users\localAccount\AppData\Local\Microsoft\Edge Dev\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
 ```
 
 Edge Canary:
 
-```shell
+```console
 "C:\Users\localAccount\AppData\Local\Microsoft\Edge SxS\Application\msedge.exe" --unsafely-disable-devtools-self-xss-warnings
 ```
 

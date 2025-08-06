@@ -147,7 +147,7 @@ The native messaging host manifest file may be located anywhere in the file syst
 
 The following locations are examples of registry keys:
 
-```output
+```
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_app
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_app
@@ -157,7 +157,7 @@ To add a registry key to the directory with the manifest key, do either of the f
 
 *  Run a command in the command prompt:
 
-   ```shell
+   ```console
    REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_app" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
    ```
 
@@ -165,7 +165,7 @@ To add a registry key to the directory with the manifest key, do either of the f
 
     1. Copy the following command into a `.reg` file:
 
-        ```shell
+        ```console
         Windows Registry Editor Version 5.00
         [HKEY_CURRENT_USER\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_app]
         @="C:\\path\\to\\nmh-manifest.json"
@@ -181,7 +181,7 @@ If Microsoft Edge finds the registry key at any of the previously listed locatio
 
 The search order for the registry locations is:
 
-```output
+```
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\
 HKEY_CURRENT_USER\SOFTWARE\Chromium\NativeMessagingHosts\
 HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\
@@ -280,7 +280,7 @@ These methods are not available inside content scripts, only inside your extensi
 
 The following example creates a [`runtime.Port`](https://developer.chrome.com/docs/extensions/reference/runtime/#type-Port) object that's connected to native messaging host `com.my_company.my_application`, starts listening for messages from that port and sends one outgoing message:
 
-```js
+```javascript
 var port = chrome.runtime.connectNative('com.my_company.my_application');
 port.onMessage.addListener(function (msg) {
   console.log('Received' + msg);
@@ -293,7 +293,7 @@ port.postMessage({text: 'Hello, my_application'});
 
 Use [`runtime.sendNativeMessage`](https://developer.chrome.com/docs/extensions/reference/api/runtime#method-sendNativeMessage) to send a message to the native application without creating a port; for example:
 
-```js
+```javascript
 chrome.runtime.sendNativeMessage(
   'com.my_company.my_application',
   {text: 'Hello'},
