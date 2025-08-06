@@ -161,7 +161,7 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 
 1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo:
 
-   ```Shell
+   ```console
    # example location where the repo directory will be added:
    cd c:/users/myusername/documents/github/
    git clone https://github.com/MicrosoftEdge/WebView2Samples.git
